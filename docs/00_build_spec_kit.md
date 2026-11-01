@@ -1,6 +1,8 @@
 # Family Quiz Build Spec Kit
 
-Snapshot from Nov 1, 2026 of the live doc at https://claude.ai/artifact/UQA5Hd1S8UzTiAANuSngNJ. Edit and comment there; copy changes here.
+Snapshot from Nov 1, 2026 of the live doc at https://claude.ai/artifact/UQA5Hd1S8UzTiAANuSngNJ. **This repo copy holds the current status** (updated Nov 2, 2026 for game night 1).
+
+**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`.
 
 ## How to use this kit
 
@@ -23,27 +25,27 @@ Update the Status column as you go; the kit is ready when every row says Done.
 
 | # | Document | Group | Status | Repo file |
 | --- | --- | --- | --- | --- |
-| 1 | Vision and pillars | Game design | Partial | `docs/01_vision.md` |
-| 2 | Show flow | Game design | Covered | `docs/02_show_flow.md` |
-| 3 | Rules and numbers | Game design | Partial | `docs/03_rules.md` + `content/config.json` |
-| 4 | Question format catalog | Game design | Partial | `docs/04_formats.md` |
-| 5 | Mini game catalog | Game design | Missing | `docs/05_minigames.md` |
-| 6 | Phone screens and user flow | Game design | Partial | `docs/06_phone_screens.md` |
-| 7 | Host bibles and line list | Game design | Partial | `docs/07_hosts.md` |
-| 8 | Content guidelines | Game design | Partial | `docs/08_content.md` |
-| 9 | Settings and accessibility | Game design | Partial | `docs/09_settings.md` |
-| 10 | Visual style guide | Look and feel | Missing | `docs/10_visual_style.md` |
-| 11 | Motion and feedback spec | Look and feel | Partial | `docs/11_motion.md` |
-| 12 | Audio direction and sound list | Look and feel | Partial | `docs/12_audio.md` |
-| 13 | Tech spec and architecture | Technical | Covered | `docs/13_architecture.md` |
-| 14 | Message protocol | Technical | Partial | `docs/PROTOCOL.md` |
-| 15 | Data schemas and sample content | Technical | Missing | `docs/15_schemas.md` + `content/samples/` |
-| 16 | Asset list | Technical | Missing | `docs/16_assets.md` |
+| 1 | Vision and pillars | Game design | Done | `docs/01_vision.md` |
+| 2 | Show flow | Game design | Done for game night 1 | `docs/02_show_flow.md` |
+| 3 | Rules and numbers | Game design | Done for game night 1 | `docs/03_rules.md` + `content/config.json` |
+| 4 | Question format catalog | Game design | Done for game night 1 | `docs/04_formats.md` |
+| 5 | Mini game catalog | Game design | Later | `docs/05_minigames.md` |
+| 6 | Phone screens and user flow | Game design | Done for game night 1 | `docs/06_phone_screens.md` |
+| 7 | Host bibles and line list | Game design | Later | `docs/07_hosts.md` |
+| 8 | Content guidelines | Game design | Later | `docs/08_content.md` |
+| 9 | Settings and accessibility | Game design | Partial (settings listed in 03 and 06) | `docs/09_settings.md` |
+| 10 | Visual style guide | Look and feel | Later | `docs/10_visual_style.md` |
+| 11 | Motion and feedback spec | Look and feel | Later | `docs/11_motion.md` |
+| 12 | Audio direction and sound list | Look and feel | Later | `docs/12_audio.md` |
+| 13 | Tech spec and architecture | Technical | Done for game night 1 | `docs/13_architecture.md` |
+| 14 | Message protocol | Technical | Done for game night 1 | `docs/PROTOCOL.md` |
+| 15 | Data schemas and sample content | Technical | Done for game night 1 | `docs/15_schemas.md` + `content/` |
+| 16 | Asset list | Technical | Later | `docs/16_assets.md` |
 | 17 | Build rules for AI | Technical | Partial | `CLAUDE.md` |
-| 18 | Edge cases | Proof | Missing | `docs/18_edge_cases.md` |
-| 19 | Acceptance criteria | Proof | Partial | `docs/19_acceptance.md` |
-| 20 | Playtest plan | Proof | Covered | `docs/20_playtest.md` |
-| 21 | Decisions log | Proof | Partial | `docs/decisions/` |
+| 18 | Edge cases | Proof | Done for game night 1 | `docs/18_edge_cases.md` |
+| 19 | Acceptance criteria | Proof | Done for game night 1 | `docs/19_acceptance.md` |
+| 20 | Playtest plan | Proof | Done for game night 1 | `docs/20_playtest.md` |
+| 21 | Decisions log | Proof | Done | `docs/decisions/` |
 
 ## Game design documents
 

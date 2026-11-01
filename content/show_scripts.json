@@ -1,0 +1,5 @@
+{
+  "standard": ["intro", "round", "round", "round", "round", "finalIntro", "finalRace", "results", "poll"],
+  "quick": ["intro", "round", "round", "finalIntro", "finalRace", "results", "poll"],
+  "long": ["intro", "round", "round", "round", "round", "round", "round", "finalIntro", "finalRace", "results", "poll"]
+}

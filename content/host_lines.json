@@ -1,0 +1,302 @@
+[
+  {
+    "id": "k_gameStart_01",
+    "host": "konstantin",
+    "trigger": "gameStart",
+    "text": {
+      "ru": "Добрый вечер! Сегодня узнаем, кто тут самый умный. Спойлер: не Илья.",
+      "en": "Good evening! Tonight we find out who's the smartest. Spoiler: not Ilja."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_gameStart_01",
+    "host": "ilja",
+    "trigger": "gameStart",
+    "text": {
+      "ru": "Начинаем, пока Костя не начал петь.",
+      "en": "Let's start before Konstantin starts singing."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_roundStart_01",
+    "host": "konstantin",
+    "trigger": "roundStart",
+    "text": {
+      "ru": "Новый раунд, новые шансы опозориться.",
+      "en": "New round, new chances to embarrass yourselves."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_roundStart_01",
+    "host": "ilja",
+    "trigger": "roundStart",
+    "text": {
+      "ru": "Очки растут, ставки тоже.",
+      "en": "Points go up, and so do the stakes."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_roundStart_02",
+    "host": "ilja",
+    "trigger": "roundStart",
+    "text": {
+      "ru": "Выбирайте тему с умом. Или как обычно.",
+      "en": "Pick the topic wisely. Or like you usually do."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_everyoneCorrect_01",
+    "host": "konstantin",
+    "trigger": "everyoneCorrect",
+    "text": {
+      "ru": "Все правы. Скучно, но красиво.",
+      "en": "Everyone got it. Boring, but beautiful."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_everyoneCorrect_01",
+    "host": "ilja",
+    "trigger": "everyoneCorrect",
+    "text": {
+      "ru": "Слишком лёгкий вопрос. Это Костя писал.",
+      "en": "Too easy. Konstantin wrote that one."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_nobodyCorrect_01",
+    "host": "konstantin",
+    "trigger": "nobodyCorrect",
+    "text": {
+      "ru": "Никто? Серьёзно? Я в вас верил.",
+      "en": "Nobody? Really? I believed in you."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_nobodyCorrect_01",
+    "host": "ilja",
+    "trigger": "nobodyCorrect",
+    "text": {
+      "ru": "Ноль правильных ответов. Новый рекорд.",
+      "en": "Zero correct answers. A new record."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_fastAnswer_01",
+    "host": "ilja",
+    "trigger": "fastAnswer",
+    "text": {
+      "ru": "{name}: быстрее, чем я понял вопрос!",
+      "en": "{name} answered before I understood the question."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_fastAnswer_01",
+    "host": "konstantin",
+    "trigger": "fastAnswer",
+    "text": {
+      "ru": "{name}, признавайся, ты подглядывал?",
+      "en": "{name}, be honest, did you peek?"
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_newLeader_01",
+    "host": "konstantin",
+    "trigger": "newLeader",
+    "text": {
+      "ru": "{name} впереди! Все видели? Все видели.",
+      "en": "{name} takes the lead! Everyone saw that? Everyone saw that."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_newLeader_01",
+    "host": "ilja",
+    "trigger": "newLeader",
+    "text": {
+      "ru": "Новый лидер: {name}. Наслаждайся, пока можешь.",
+      "en": "New leader: {name}. Enjoy it while it lasts."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_streak3_01",
+    "host": "ilja",
+    "trigger": "streak3",
+    "text": {
+      "ru": "{name}, три подряд! Кто нибудь, заморозьте это.",
+      "en": "{name}, three in a row! Somebody freeze that."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_streak3_01",
+    "host": "konstantin",
+    "trigger": "streak3",
+    "text": {
+      "ru": "{name} в ударе. Это подозрительно.",
+      "en": "{name} is on fire. Suspicious."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_powerUpUsed_01",
+    "host": "konstantin",
+    "trigger": "powerUpUsed",
+    "text": {
+      "ru": "{name} против {target}. Записываю.",
+      "en": "{name} versus {target}. I'm taking notes."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_powerUpUsed_01",
+    "host": "ilja",
+    "trigger": "powerUpUsed",
+    "text": {
+      "ru": "{target}, похоже, это было личное.",
+      "en": "{target}, looks like that was personal."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_powerUpUsed_02",
+    "host": "ilja",
+    "trigger": "powerUpUsed",
+    "text": {
+      "ru": "Ох, {name}. Жёстко, но справедливо.",
+      "en": "Oh, {name}. Harsh, but fair."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_closestExact_01",
+    "host": "ilja",
+    "trigger": "closestExact",
+    "text": {
+      "ru": "{name}, прямо в точку! Знал или угадал?",
+      "en": "{name} nailed it! Knew it or guessed it?"
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_closestExact_01",
+    "host": "konstantin",
+    "trigger": "closestExact",
+    "text": {
+      "ru": "Точно в цель. {name}, ты пугаешь.",
+      "en": "Spot on. {name}, you're scaring me."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_lastPlaceCorrect_01",
+    "host": "konstantin",
+    "trigger": "lastPlaceCorrect",
+    "text": {
+      "ru": "{name} просыпается! Камбэк начинается.",
+      "en": "{name} wakes up! The comeback starts."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_lastPlaceCorrect_01",
+    "host": "ilja",
+    "trigger": "lastPlaceCorrect",
+    "text": {
+      "ru": "Последние станут первыми. Ну, может быть.",
+      "en": "The last shall be first. Well, maybe."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_roundEnd_01",
+    "host": "ilja",
+    "trigger": "roundEnd",
+    "text": {
+      "ru": "Раунд окончен. Кто то доволен, кто то не очень.",
+      "en": "Round over. Some are happy, some not so much."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_roundEnd_01",
+    "host": "konstantin",
+    "trigger": "roundEnd",
+    "text": {
+      "ru": "Перерыв на три секунды. Дышим.",
+      "en": "Three second break. Breathe."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_finalStart_01",
+    "host": "konstantin",
+    "trigger": "finalStart",
+    "text": {
+      "ru": "Финальная гонка! Всё решается сейчас.",
+      "en": "The final race! It all comes down to this."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_finalStart_01",
+    "host": "ilja",
+    "trigger": "finalStart",
+    "text": {
+      "ru": "Правда или ложь. Быстро. Без паники.",
+      "en": "True or false. Fast. Don't panic."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_raceWinner_01",
+    "host": "konstantin",
+    "trigger": "raceWinner",
+    "text": {
+      "ru": "{name} побеждает! Аплодисменты!",
+      "en": "{name} wins! Applause!"
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_raceWinner_01",
+    "host": "ilja",
+    "trigger": "raceWinner",
+    "text": {
+      "ru": "{name}, чемпион вечера. Пока что.",
+      "en": "{name}, champion of the evening. For now."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_lastCall_01",
+    "host": "ilja",
+    "trigger": "lastCall",
+    "text": {
+      "ru": "Ждём одного человека. Не будем показывать пальцем.",
+      "en": "Waiting for one person. No pointing fingers."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_lastCall_01",
+    "host": "konstantin",
+    "trigger": "lastCall",
+    "text": {
+      "ru": "Пять секунд! Время пошло.",
+      "en": "Five seconds! Clock's ticking."
+    },
+    "weight": 1
+  }
+]

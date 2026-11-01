@@ -36,3 +36,7 @@ Thumbs.db
 # Secrets
 .env
 .env.*
+
+# Machine settings for the TV app
+unity/Assets/StreamingAssets/local.json
+unity/Assets/StreamingAssets/local.json.meta

@@ -1,0 +1,54 @@
+{
+  "configVersion": 1,
+  "timers": {
+    "intro": 30,
+    "topicVote": 10,
+    "questionShow": 4,
+    "answer": { "multipleChoice": 15, "closestValue": 20 },
+    "lastCall": 5,
+    "reveal": 3.5,
+    "scores": 3.5,
+    "roundEnd": 4,
+    "finalIntro": 8,
+    "results": 20
+  },
+  "rounds": {
+    "count": 4,
+    "questionsPerRound": 4,
+    "multipliers": [1, 1, 1.5, 2],
+    "difficultyOrder": ["easy", "medium", "medium", "hard"],
+    "formatOrder": ["multipleChoice", "multipleChoice", "multipleChoice", "closestValue"]
+  },
+  "topics": { "doors": 4, "minUnseenToOffer": 4, "mixedTopicId": "mixed" },
+  "scoring": { "maxPoints": 1000, "speedPenalty": 0.5, "roundTo": 10 },
+  "closestValue": { "closestBonus": 200 },
+  "powerUps": {
+    "enabled": true,
+    "types": ["freeze", "slime", "fog"],
+    "targeting": "free",
+    "drawChanceLeader": 0.3,
+    "maxHeld": 1,
+    "maxHitsPerQuestion": 1,
+    "immunityQuestions": 1,
+    "onPhone": true,
+    "freeze": { "taps": 6 },
+    "slime": { "blobs": 3 },
+    "fog": { "seconds": 3 }
+  },
+  "race": {
+    "maxHeadStart": 3,
+    "finishSteps": 10,
+    "maxQuestions": 12,
+    "stepsPerCorrect": 1,
+    "answer": 8,
+    "reveal": 2
+  },
+  "players": {
+    "min": 2,
+    "max": 8,
+    "timerMultiplierOptions": [1, 1.5, 2],
+    "seatHoldSeconds": 300
+  },
+  "hosts": { "minGapSeconds": 3, "bubbleSeconds": 3.5 },
+  "poll": { "enabled": true }
+}

@@ -1,0 +1,14 @@
+[
+  { "id": "fun", "kind": "text", "text": { "ru": "Самый весёлый момент?", "en": "The most fun moment?" } },
+  { "id": "frustrating", "kind": "text", "text": { "ru": "Что раздражало или было непонятно?", "en": "What was frustrating or confusing?" } },
+  { "id": "waiting", "kind": "choice", "text": { "ru": "Когда ты ждал без дела?", "en": "When were you waiting with nothing to do?" },
+    "options": [ { "ru": "Никогда", "en": "Never" }, { "ru": "Между вопросами", "en": "Between questions" }, { "ru": "Во время результатов", "en": "During results" }, { "ru": "В финале", "en": "In the final" } ] },
+  { "id": "time", "kind": "choice", "text": { "ru": "Хватало времени на ответ?", "en": "Was there enough time to answer?" },
+    "options": [ { "ru": "Слишком мало", "en": "Too little" }, { "ru": "В самый раз", "en": "Just right" }, { "ru": "Слишком много", "en": "Too much" } ] },
+  { "id": "tvMissed", "kind": "choice", "text": { "ru": "Пропускал, что происходит на экране, из за телефона?", "en": "Did you miss what happened on the TV because of your phone?" },
+    "options": [ { "ru": "Часто", "en": "Often" }, { "ru": "Иногда", "en": "Sometimes" }, { "ru": "Нет", "en": "No" } ] },
+  { "id": "unfair", "kind": "choice", "text": { "ru": "Была ли атака нечестной?", "en": "Was any attack unfair?" },
+    "options": [ { "ru": "Да", "en": "Yes" }, { "ru": "Немного", "en": "A bit" }, { "ru": "Нет", "en": "No" } ] },
+  { "id": "again", "kind": "choice", "text": { "ru": "Сыграешь ещё в следующий раз?", "en": "Play again next game night?" },
+    "options": [ { "ru": "Да", "en": "Yes" }, { "ru": "Может быть", "en": "Maybe" }, { "ru": "Нет", "en": "No" } ] }
+]

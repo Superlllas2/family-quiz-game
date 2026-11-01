@@ -11,9 +11,14 @@ A party quiz game for families, inspired by Knowledge is Power. A Unity app on a
 Read these before building anything:
 
 1. `docs/00_build_spec_kit.md`: the list of every spec document and its status. Do not build a feature whose spec documents are not marked Done.
-2. `docs/master_plan.md`: pillars, show flow, architecture, build order, decisions.
-3. `docs/research_party_quiz_fun.md`: the research behind every timing, rule and threshold.
-4. `docs/decisions/`: logged decisions. Never reopen a logged decision on your own; ask first.
+2. The spec documents `docs/01_*.md` to `docs/19_*.md` and `docs/PROTOCOL.md`. When a spec and the master plan disagree, the spec wins.
+3. `docs/decisions/`: logged decisions. Never reopen a logged decision on your own; ask first.
+4. `docs/master_plan.md`: pillars, architecture, build order. Background.
+5. `docs/research_party_quiz_fun.md`: the research behind every timing, rule and threshold. Background.
+
+The current goal is **game night 1** (weekend of Nov 7 and 8, 2026). Its scope and acceptance checks are in `docs/19_acceptance.md`. Daily build prompts are in `docs/prompts/`. Do not build beyond that scope unless asked.
+
+Development happens on both Windows and macOS. Use cross platform paths and scripts (no bash only tooling for required steps; Node scripts are fine).
 
 If a spec is missing something you would have to guess, stop and list the question instead of picking a default.
 
@@ -22,7 +27,7 @@ If a spec is missing something you would have to guess, stop and list the questi
 Every feature must pass all five. A feature that breaks one is redesigned or cut.
 
 1. **Never wait:** things happen at the same time; a phase ends the moment everyone is done.
-2. **Everyone can win:** capped speed scoring, attacks only aim up, last place can still win the final.
+2. **Everyone can win:** capped speed scoring and a final race that last place can still win. Targeting is free by default (ganging up is part of the fun); "aim up only" is a setting.
 3. **Every tap feels good:** phone feedback within 0.1 s, celebrations sized to what the player did.
 4. **Hosts react, never block:** host lines never extend a phase and never repeat in an evening.
 5. **Fun is measured:** every build logs events; every game night ends with a phone poll.

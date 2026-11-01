@@ -1,0 +1,218 @@
+[
+  {
+    "id": "race_001",
+    "statement": {
+      "ru": "У осьминога три сердца.",
+      "en": "An octopus has three hearts."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Octopus"
+  },
+  {
+    "id": "race_002",
+    "statement": {
+      "ru": "С точки зрения ботаники банан это ягода.",
+      "en": "Botanically, a banana is a berry."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Banana"
+  },
+  {
+    "id": "race_003",
+    "statement": {
+      "ru": "Великую Китайскую стену видно с Луны невооружённым глазом.",
+      "en": "The Great Wall of China can be seen from the Moon with the naked eye."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+  },
+  {
+    "id": "race_004",
+    "statement": {
+      "ru": "Венера самая горячая планета Солнечной системы.",
+      "en": "Venus is the hottest planet in the Solar System."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Venus"
+  },
+  {
+    "id": "race_005",
+    "statement": {
+      "ru": "Звук в воде распространяется быстрее, чем в воздухе.",
+      "en": "Sound travels faster in water than in air."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Speed_of_sound"
+  },
+  {
+    "id": "race_006",
+    "statement": {
+      "ru": "Молния никогда не бьёт в одно место дважды.",
+      "en": "Lightning never strikes the same place twice."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lightning"
+  },
+  {
+    "id": "race_007",
+    "statement": {
+      "ru": "В России 11 часовых поясов.",
+      "en": "Russia has 11 time zones."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Time_in_Russia"
+  },
+  {
+    "id": "race_008",
+    "statement": {
+      "ru": "В Нидерландах велосипедов больше, чем людей.",
+      "en": "The Netherlands has more bicycles than people."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cycling_in_the_Netherlands"
+  },
+  {
+    "id": "race_009",
+    "statement": {
+      "ru": "Память золотой рыбки длится всего три секунды.",
+      "en": "A goldfish's memory lasts only three seconds."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Goldfish"
+  },
+  {
+    "id": "race_010",
+    "statement": {
+      "ru": "Помидор с точки зрения ботаники это фрукт.",
+      "en": "Botanically, a tomato is a fruit."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tomato"
+  },
+  {
+    "id": "race_011",
+    "statement": {
+      "ru": "Летучие мыши слепые.",
+      "en": "Bats are blind."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bat"
+  },
+  {
+    "id": "race_012",
+    "statement": {
+      "ru": "Эйфелеву башню построили к Всемирной выставке 1889 года.",
+      "en": "The Eiffel Tower was built for the 1889 World's Fair."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+  },
+  {
+    "id": "race_013",
+    "statement": {
+      "ru": "Пингвины живут на Северном полюсе.",
+      "en": "Penguins live at the North Pole."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Penguin"
+  },
+  {
+    "id": "race_014",
+    "statement": {
+      "ru": "Сутки на Венере длиннее, чем год на Венере.",
+      "en": "A day on Venus is longer than a year on Venus."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Venus"
+  },
+  {
+    "id": "race_015",
+    "statement": {
+      "ru": "Пушкин родился в XVIII веке.",
+      "en": "Pushkin was born in the 18th century."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Alexander_Pushkin"
+  },
+  {
+    "id": "race_016",
+    "statement": {
+      "ru": "В горах вода закипает при более низкой температуре.",
+      "en": "In the mountains, water boils at a lower temperature."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Boiling_point"
+  },
+  {
+    "id": "race_017",
+    "statement": {
+      "ru": "Коала это медведь.",
+      "en": "A koala is a bear."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Koala"
+  },
+  {
+    "id": "race_018",
+    "statement": {
+      "ru": "Сахара самая большая пустыня на Земле.",
+      "en": "The Sahara is the largest desert on Earth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_deserts_by_area"
+  },
+  {
+    "id": "race_019",
+    "statement": {
+      "ru": "В теле взрослого человека больше 200 костей.",
+      "en": "An adult human body has more than 200 bones."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "race_020",
+    "statement": {
+      "ru": "Шахматы появились в Индии.",
+      "en": "Chess originated in India."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/History_of_chess"
+  },
+  {
+    "id": "race_021",
+    "statement": {
+      "ru": "Акулы это млекопитающие.",
+      "en": "Sharks are mammals."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Shark"
+  },
+  {
+    "id": "race_022",
+    "statement": {
+      "ru": "Мёд может не портиться тысячи лет.",
+      "en": "Honey can stay edible for thousands of years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Honey"
+  },
+  {
+    "id": "race_023",
+    "statement": {
+      "ru": "Луна больше Земли.",
+      "en": "The Moon is bigger than Earth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Moon"
+  },
+  {
+    "id": "race_024",
+    "statement": {
+      "ru": "Страусы прячут голову в песок, когда боятся.",
+      "en": "Ostriches bury their heads in sand when scared."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Common_ostrich"
+  }
+]

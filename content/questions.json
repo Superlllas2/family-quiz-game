@@ -1,0 +1,1314 @@
+[
+  {
+    "id": "geo_001",
+    "topic": "geography",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какая река самая длинная в Европе?",
+      "en": "Which is the longest river in Europe?"
+    },
+    "options": [
+      {
+        "ru": "Волга",
+        "en": "Volga"
+      },
+      {
+        "ru": "Дунай",
+        "en": "Danube"
+      },
+      {
+        "ru": "Рейн",
+        "en": "Rhine"
+      },
+      {
+        "ru": "Днепр",
+        "en": "Dnieper"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/Volga"
+  },
+  {
+    "id": "geo_002",
+    "topic": "geography",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой город столица Австралии?",
+      "en": "What is the capital of Australia?"
+    },
+    "options": [
+      {
+        "ru": "Сидней",
+        "en": "Sydney"
+      },
+      {
+        "ru": "Мельбурн",
+        "en": "Melbourne"
+      },
+      {
+        "ru": "Канберра",
+        "en": "Canberra"
+      },
+      {
+        "ru": "Перт",
+        "en": "Perth"
+      }
+    ],
+    "correct": 2,
+    "source": "https://en.wikipedia.org/wiki/Canberra"
+  },
+  {
+    "id": "geo_003",
+    "topic": "geography",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "У какой страны самая длинная береговая линия?",
+      "en": "Which country has the longest coastline?"
+    },
+    "options": [
+      {
+        "ru": "Россия",
+        "en": "Russia"
+      },
+      {
+        "ru": "Канада",
+        "en": "Canada"
+      },
+      {
+        "ru": "Норвегия",
+        "en": "Norway"
+      },
+      {
+        "ru": "Австралия",
+        "en": "Australia"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_by_length_of_coastline"
+  },
+  {
+    "id": "geo_004",
+    "topic": "geography",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какое озеро самое глубокое в мире?",
+      "en": "Which lake is the deepest in the world?"
+    },
+    "options": [
+      {
+        "ru": "Байкал",
+        "en": "Baikal"
+      },
+      {
+        "ru": "Танганьика",
+        "en": "Tanganyika"
+      },
+      {
+        "ru": "Каспийское море",
+        "en": "Caspian Sea"
+      },
+      {
+        "ru": "Верхнее",
+        "en": "Superior"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/Lake_Baikal"
+  },
+  {
+    "id": "geo_005",
+    "topic": "geography",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Какова высота Эвереста в метрах?",
+      "en": "How tall is Mount Everest in metres?"
+    },
+    "answer": 8849,
+    "range": [
+      6000,
+      11000
+    ],
+    "step": 10,
+    "tolerance": 1500,
+    "unit": {
+      "ru": "м",
+      "en": "m"
+    },
+    "source": "https://en.wikipedia.org/wiki/Mount_Everest"
+  },
+  {
+    "id": "geo_006",
+    "topic": "geography",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Со сколькими странами Россия граничит по суше?",
+      "en": "How many countries share a land border with Russia?"
+    },
+    "answer": 14,
+    "range": [
+      0,
+      30
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "",
+      "en": ""
+    },
+    "source": "https://en.wikipedia.org/wiki/Borders_of_Russia"
+  },
+  {
+    "id": "his_001",
+    "topic": "history",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "В каком году Гагарин полетел в космос?",
+      "en": "In which year did Gagarin fly into space?"
+    },
+    "options": [
+      {
+        "ru": "1957",
+        "en": "1957"
+      },
+      {
+        "ru": "1961",
+        "en": "1961"
+      },
+      {
+        "ru": "1965",
+        "en": "1965"
+      },
+      {
+        "ru": "1969",
+        "en": "1969"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/Vostok_1"
+  },
+  {
+    "id": "his_002",
+    "topic": "history",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто был первым президентом США?",
+      "en": "Who was the first president of the USA?"
+    },
+    "options": [
+      {
+        "ru": "Вашингтон",
+        "en": "Washington"
+      },
+      {
+        "ru": "Линкольн",
+        "en": "Lincoln"
+      },
+      {
+        "ru": "Джефферсон",
+        "en": "Jefferson"
+      },
+      {
+        "ru": "Франклин",
+        "en": "Franklin"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/George_Washington"
+  },
+  {
+    "id": "his_003",
+    "topic": "history",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой город был столицей России с 1712 по 1918 год?",
+      "en": "Which city was the capital of Russia from 1712 to 1918?"
+    },
+    "options": [
+      {
+        "ru": "Санкт Петербург",
+        "en": "Saint Petersburg"
+      },
+      {
+        "ru": "Новгород",
+        "en": "Novgorod"
+      },
+      {
+        "ru": "Киев",
+        "en": "Kyiv"
+      },
+      {
+        "ru": "Казань",
+        "en": "Kazan"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/Saint_Petersburg"
+  },
+  {
+    "id": "his_004",
+    "topic": "history",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какое из семи чудес света сохранилось до наших дней?",
+      "en": "Which of the Seven Wonders of the Ancient World still stands?"
+    },
+    "options": [
+      {
+        "ru": "Колосс Родосский",
+        "en": "Colossus of Rhodes"
+      },
+      {
+        "ru": "Александрийский маяк",
+        "en": "Lighthouse of Alexandria"
+      },
+      {
+        "ru": "Висячие сады",
+        "en": "Hanging Gardens"
+      },
+      {
+        "ru": "Пирамида Хеопса",
+        "en": "Great Pyramid of Giza"
+      }
+    ],
+    "correct": 3,
+    "source": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+  },
+  {
+    "id": "his_005",
+    "topic": "history",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году пала Берлинская стена?",
+      "en": "In which year did the Berlin Wall fall?"
+    },
+    "answer": 1989,
+    "range": [
+      1950,
+      2010
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "source": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+  },
+  {
+    "id": "his_006",
+    "topic": "history",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Колумб доплыл до Америки?",
+      "en": "In which year did Columbus reach the Americas?"
+    },
+    "answer": 1492,
+    "range": [
+      1300,
+      1700
+    ],
+    "step": 1,
+    "tolerance": 120,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "source": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus"
+  },
+  {
+    "id": "sci_001",
+    "topic": "science",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой химический символ у золота?",
+      "en": "What is the chemical symbol for gold?"
+    },
+    "options": [
+      {
+        "ru": "Ag",
+        "en": "Ag"
+      },
+      {
+        "ru": "Au",
+        "en": "Au"
+      },
+      {
+        "ru": "Gd",
+        "en": "Gd"
+      },
+      {
+        "ru": "Go",
+        "en": "Go"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/Gold"
+  },
+  {
+    "id": "sci_002",
+    "topic": "science",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой газ растения поглощают для фотосинтеза?",
+      "en": "Which gas do plants take in for photosynthesis?"
+    },
+    "options": [
+      {
+        "ru": "Кислород",
+        "en": "Oxygen"
+      },
+      {
+        "ru": "Азот",
+        "en": "Nitrogen"
+      },
+      {
+        "ru": "Углекислый газ",
+        "en": "Carbon dioxide"
+      },
+      {
+        "ru": "Водород",
+        "en": "Hydrogen"
+      }
+    ],
+    "correct": 2,
+    "source": "https://en.wikipedia.org/wiki/Photosynthesis"
+  },
+  {
+    "id": "sci_003",
+    "topic": "science",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой природный минерал самый твёрдый?",
+      "en": "Which natural mineral is the hardest?"
+    },
+    "options": [
+      {
+        "ru": "Алмаз",
+        "en": "Diamond"
+      },
+      {
+        "ru": "Кварц",
+        "en": "Quartz"
+      },
+      {
+        "ru": "Топаз",
+        "en": "Topaz"
+      },
+      {
+        "ru": "Корунд",
+        "en": "Corundum"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/Mohs_scale"
+  },
+  {
+    "id": "sci_004",
+    "topic": "science",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто создал периодическую таблицу элементов?",
+      "en": "Who created the periodic table of elements?"
+    },
+    "options": [
+      {
+        "ru": "Менделеев",
+        "en": "Mendeleev"
+      },
+      {
+        "ru": "Ломоносов",
+        "en": "Lomonosov"
+      },
+      {
+        "ru": "Ньютон",
+        "en": "Newton"
+      },
+      {
+        "ru": "Кюри",
+        "en": "Curie"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/Dmitri_Mendeleev"
+  },
+  {
+    "id": "sci_005",
+    "topic": "science",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "При какой температуре по Фаренгейту кипит вода?",
+      "en": "At what temperature in Fahrenheit does water boil?"
+    },
+    "answer": 212,
+    "range": [
+      100,
+      400
+    ],
+    "step": 1,
+    "tolerance": 80,
+    "unit": {
+      "ru": "°F",
+      "en": "°F"
+    },
+    "source": "https://en.wikipedia.org/wiki/Boiling_point"
+  },
+  {
+    "id": "sci_006",
+    "topic": "science",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько костей в теле взрослого человека?",
+      "en": "How many bones are in an adult human body?"
+    },
+    "answer": 206,
+    "range": [
+      50,
+      400
+    ],
+    "step": 1,
+    "tolerance": 100,
+    "unit": {
+      "ru": "",
+      "en": ""
+    },
+    "source": "https://en.wikipedia.org/wiki/List_of_bones_of_the_human_skeleton"
+  },
+  {
+    "id": "nat_001",
+    "topic": "nature",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какое животное самое большое на Земле?",
+      "en": "Which animal is the largest on Earth?"
+    },
+    "options": [
+      {
+        "ru": "Африканский слон",
+        "en": "African elephant"
+      },
+      {
+        "ru": "Синий кит",
+        "en": "Blue whale"
+      },
+      {
+        "ru": "Китовая акула",
+        "en": "Whale shark"
+      },
+      {
+        "ru": "Жираф",
+        "en": "Giraffe"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/Blue_whale"
+  },
+  {
+    "id": "nat_002",
+    "topic": "nature",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько ног у паука?",
+      "en": "How many legs does a spider have?"
+    },
+    "options": [
+      {
+        "ru": "6",
+        "en": "6"
+      },
+      {
+        "ru": "8",
+        "en": "8"
+      },
+      {
+        "ru": "10",
+        "en": "10"
+      },
+      {
+        "ru": "12",
+        "en": "12"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/Spider"
+  },
+  {
+    "id": "nat_003",
+    "topic": "nature",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какое сухопутное животное самое быстрое?",
+      "en": "Which land animal is the fastest?"
+    },
+    "options": [
+      {
+        "ru": "Гепард",
+        "en": "Cheetah"
+      },
+      {
+        "ru": "Лев",
+        "en": "Lion"
+      },
+      {
+        "ru": "Вилорог",
+        "en": "Pronghorn"
+      },
+      {
+        "ru": "Борзая",
+        "en": "Greyhound"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/Cheetah"
+  },
+  {
+    "id": "nat_004",
+    "topic": "nature",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая птица откладывает самые большие яйца?",
+      "en": "Which bird lays the largest eggs?"
+    },
+    "options": [
+      {
+        "ru": "Страус",
+        "en": "Ostrich"
+      },
+      {
+        "ru": "Эму",
+        "en": "Emu"
+      },
+      {
+        "ru": "Альбатрос",
+        "en": "Albatross"
+      },
+      {
+        "ru": "Пингвин",
+        "en": "Penguin"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/Common_ostrich"
+  },
+  {
+    "id": "nat_005",
+    "topic": "nature",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько месяцев длится беременность африканского слона?",
+      "en": "How many months is an African elephant pregnant?"
+    },
+    "answer": 22,
+    "range": [
+      6,
+      36
+    ],
+    "step": 1,
+    "tolerance": 10,
+    "unit": {
+      "ru": "мес.",
+      "en": "months"
+    },
+    "source": "https://en.wikipedia.org/wiki/African_bush_elephant"
+  },
+  {
+    "id": "nat_006",
+    "topic": "nature",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько глаз у медоносной пчелы?",
+      "en": "How many eyes does a honeybee have?"
+    },
+    "answer": 5,
+    "range": [
+      0,
+      20
+    ],
+    "step": 1,
+    "tolerance": 6,
+    "unit": {
+      "ru": "",
+      "en": ""
+    },
+    "source": "https://en.wikipedia.org/wiki/Western_honey_bee"
+  },
+  {
+    "id": "food_001",
+    "topic": "food",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Из какой страны родом пицца?",
+      "en": "Which country does pizza come from?"
+    },
+    "options": [
+      {
+        "ru": "Италия",
+        "en": "Italy"
+      },
+      {
+        "ru": "Греция",
+        "en": "Greece"
+      },
+      {
+        "ru": "Франция",
+        "en": "France"
+      },
+      {
+        "ru": "Испания",
+        "en": "Spain"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/Pizza"
+  },
+  {
+    "id": "food_002",
+    "topic": "food",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что главный ингредиент гуакамоле?",
+      "en": "What is the main ingredient of guacamole?"
+    },
+    "options": [
+      {
+        "ru": "Авокадо",
+        "en": "Avocado"
+      },
+      {
+        "ru": "Горошек",
+        "en": "Peas"
+      },
+      {
+        "ru": "Огурец",
+        "en": "Cucumber"
+      },
+      {
+        "ru": "Кабачок",
+        "en": "Courgette"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/Guacamole"
+  },
+  {
+    "id": "food_003",
+    "topic": "food",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая пряность самая дорогая по весу?",
+      "en": "Which spice is the most expensive by weight?"
+    },
+    "options": [
+      {
+        "ru": "Ваниль",
+        "en": "Vanilla"
+      },
+      {
+        "ru": "Шафран",
+        "en": "Saffron"
+      },
+      {
+        "ru": "Кардамон",
+        "en": "Cardamom"
+      },
+      {
+        "ru": "Корица",
+        "en": "Cinnamon"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/Saffron"
+  },
+  {
+    "id": "food_004",
+    "topic": "food",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что даёт борщу красный цвет?",
+      "en": "What gives borscht its red colour?"
+    },
+    "options": [
+      {
+        "ru": "Помидоры",
+        "en": "Tomatoes"
+      },
+      {
+        "ru": "Свёкла",
+        "en": "Beetroot"
+      },
+      {
+        "ru": "Красный перец",
+        "en": "Red pepper"
+      },
+      {
+        "ru": "Паприка",
+        "en": "Paprika"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/Borscht"
+  },
+  {
+    "id": "food_005",
+    "topic": "food",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году изобрели кока колу?",
+      "en": "In which year was Coca Cola invented?"
+    },
+    "answer": 1886,
+    "range": [
+      1800,
+      1980
+    ],
+    "step": 1,
+    "tolerance": 50,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "source": "https://en.wikipedia.org/wiki/Coca-Cola"
+  },
+  {
+    "id": "food_006",
+    "topic": "food",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько процентов арбуза составляет вода?",
+      "en": "What percentage of a watermelon is water?"
+    },
+    "answer": 92,
+    "range": [
+      0,
+      100
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "%",
+      "en": "%"
+    },
+    "source": "https://en.wikipedia.org/wiki/Watermelon"
+  },
+  {
+    "id": "spo_001",
+    "topic": "sport",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько игроков одной команды на поле в футболе?",
+      "en": "How many players per team are on the pitch in football?"
+    },
+    "options": [
+      {
+        "ru": "9",
+        "en": "9"
+      },
+      {
+        "ru": "10",
+        "en": "10"
+      },
+      {
+        "ru": "11",
+        "en": "11"
+      },
+      {
+        "ru": "12",
+        "en": "12"
+      }
+    ],
+    "correct": 2,
+    "source": "https://en.wikipedia.org/wiki/Association_football"
+  },
+  {
+    "id": "spo_002",
+    "topic": "sport",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько колец на олимпийском флаге?",
+      "en": "How many rings are on the Olympic flag?"
+    },
+    "options": [
+      {
+        "ru": "4",
+        "en": "4"
+      },
+      {
+        "ru": "5",
+        "en": "5"
+      },
+      {
+        "ru": "6",
+        "en": "6"
+      },
+      {
+        "ru": "7",
+        "en": "7"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/Olympic_symbols"
+  },
+  {
+    "id": "spo_003",
+    "topic": "sport",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В каком городе прошли первые современные Олимпийские игры в 1896 году?",
+      "en": "Which city hosted the first modern Olympic Games in 1896?"
+    },
+    "options": [
+      {
+        "ru": "Париж",
+        "en": "Paris"
+      },
+      {
+        "ru": "Афины",
+        "en": "Athens"
+      },
+      {
+        "ru": "Лондон",
+        "en": "London"
+      },
+      {
+        "ru": "Рим",
+        "en": "Rome"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/1896_Summer_Olympics"
+  },
+  {
+    "id": "spo_004",
+    "topic": "sport",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В какой стране появился современный хоккей с шайбой?",
+      "en": "In which country did modern ice hockey begin?"
+    },
+    "options": [
+      {
+        "ru": "Канада",
+        "en": "Canada"
+      },
+      {
+        "ru": "США",
+        "en": "USA"
+      },
+      {
+        "ru": "Россия",
+        "en": "Russia"
+      },
+      {
+        "ru": "Швеция",
+        "en": "Sweden"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/History_of_ice_hockey"
+  },
+  {
+    "id": "spo_005",
+    "topic": "sport",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько метров в марафонской дистанции?",
+      "en": "How many metres is a marathon?"
+    },
+    "answer": 42195,
+    "range": [
+      30000,
+      60000
+    ],
+    "step": 5,
+    "tolerance": 8000,
+    "unit": {
+      "ru": "м",
+      "en": "m"
+    },
+    "source": "https://en.wikipedia.org/wiki/Marathon"
+  },
+  {
+    "id": "spo_006",
+    "topic": "sport",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "На какой высоте в сантиметрах висит баскетбольное кольцо?",
+      "en": "How high is a basketball hoop in centimetres?"
+    },
+    "answer": 305,
+    "range": [
+      200,
+      400
+    ],
+    "step": 1,
+    "tolerance": 60,
+    "unit": {
+      "ru": "см",
+      "en": "cm"
+    },
+    "source": "https://en.wikipedia.org/wiki/Basketball_court"
+  },
+  {
+    "id": "cul_001",
+    "topic": "culture",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто написал «Войну и мир»?",
+      "en": "Who wrote War and Peace?"
+    },
+    "options": [
+      {
+        "ru": "Достоевский",
+        "en": "Dostoevsky"
+      },
+      {
+        "ru": "Толстой",
+        "en": "Tolstoy"
+      },
+      {
+        "ru": "Чехов",
+        "en": "Chekhov"
+      },
+      {
+        "ru": "Пушкин",
+        "en": "Pushkin"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/War_and_Peace"
+  },
+  {
+    "id": "cul_002",
+    "topic": "culture",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько струн у обычной гитары?",
+      "en": "How many strings does a standard guitar have?"
+    },
+    "options": [
+      {
+        "ru": "4",
+        "en": "4"
+      },
+      {
+        "ru": "5",
+        "en": "5"
+      },
+      {
+        "ru": "6",
+        "en": "6"
+      },
+      {
+        "ru": "7",
+        "en": "7"
+      }
+    ],
+    "correct": 2,
+    "source": "https://en.wikipedia.org/wiki/Guitar"
+  },
+  {
+    "id": "cul_003",
+    "topic": "culture",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто написал музыку к балету «Лебединое озеро»?",
+      "en": "Who composed the ballet Swan Lake?"
+    },
+    "options": [
+      {
+        "ru": "Чайковский",
+        "en": "Tchaikovsky"
+      },
+      {
+        "ru": "Рахманинов",
+        "en": "Rachmaninoff"
+      },
+      {
+        "ru": "Моцарт",
+        "en": "Mozart"
+      },
+      {
+        "ru": "Стравинский",
+        "en": "Stravinsky"
+      }
+    ],
+    "correct": 0,
+    "source": "https://en.wikipedia.org/wiki/Swan_Lake"
+  },
+  {
+    "id": "cul_004",
+    "topic": "culture",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой голландский художник отрезал себе часть уха?",
+      "en": "Which Dutch painter cut off part of his own ear?"
+    },
+    "options": [
+      {
+        "ru": "Рембрандт",
+        "en": "Rembrandt"
+      },
+      {
+        "ru": "Вермеер",
+        "en": "Vermeer"
+      },
+      {
+        "ru": "Ван Гог",
+        "en": "Van Gogh"
+      },
+      {
+        "ru": "Мондриан",
+        "en": "Mondrian"
+      }
+    ],
+    "correct": 2,
+    "source": "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+  },
+  {
+    "id": "cul_005",
+    "topic": "culture",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году вышла первая книга о Гарри Поттере?",
+      "en": "In which year was the first Harry Potter book published?"
+    },
+    "answer": 1997,
+    "range": [
+      1980,
+      2015
+    ],
+    "step": 1,
+    "tolerance": 12,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "source": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone"
+  },
+  {
+    "id": "cul_006",
+    "topic": "culture",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько клавиш у обычного пианино?",
+      "en": "How many keys does a standard piano have?"
+    },
+    "answer": 88,
+    "range": [
+      40,
+      150
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "",
+      "en": ""
+    },
+    "source": "https://en.wikipedia.org/wiki/Piano"
+  },
+  {
+    "id": "spa_001",
+    "topic": "space",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какая планета ближе всего к Солнцу?",
+      "en": "Which planet is closest to the Sun?"
+    },
+    "options": [
+      {
+        "ru": "Венера",
+        "en": "Venus"
+      },
+      {
+        "ru": "Меркурий",
+        "en": "Mercury"
+      },
+      {
+        "ru": "Марс",
+        "en": "Mars"
+      },
+      {
+        "ru": "Земля",
+        "en": "Earth"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/Mercury_(planet)"
+  },
+  {
+    "id": "spa_002",
+    "topic": "space",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какую планету называют Красной?",
+      "en": "Which planet is called the Red Planet?"
+    },
+    "options": [
+      {
+        "ru": "Юпитер",
+        "en": "Jupiter"
+      },
+      {
+        "ru": "Венера",
+        "en": "Venus"
+      },
+      {
+        "ru": "Марс",
+        "en": "Mars"
+      },
+      {
+        "ru": "Сатурн",
+        "en": "Saturn"
+      }
+    ],
+    "correct": 2,
+    "source": "https://en.wikipedia.org/wiki/Mars"
+  },
+  {
+    "id": "spa_003",
+    "topic": "space",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая планета самая большая в Солнечной системе?",
+      "en": "Which planet is the largest in the Solar System?"
+    },
+    "options": [
+      {
+        "ru": "Сатурн",
+        "en": "Saturn"
+      },
+      {
+        "ru": "Юпитер",
+        "en": "Jupiter"
+      },
+      {
+        "ru": "Нептун",
+        "en": "Neptune"
+      },
+      {
+        "ru": "Уран",
+        "en": "Uranus"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/Jupiter"
+  },
+  {
+    "id": "spa_004",
+    "topic": "space",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Как назывался первый искусственный спутник Земли?",
+      "en": "What was the first artificial satellite called?"
+    },
+    "options": [
+      {
+        "ru": "Восток 1",
+        "en": "Vostok 1"
+      },
+      {
+        "ru": "Спутник 1",
+        "en": "Sputnik 1"
+      },
+      {
+        "ru": "Эксплорер 1",
+        "en": "Explorer 1"
+      },
+      {
+        "ru": "Луна 1",
+        "en": "Luna 1"
+      }
+    ],
+    "correct": 1,
+    "source": "https://en.wikipedia.org/wiki/Sputnik_1"
+  },
+  {
+    "id": "spa_005",
+    "topic": "space",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько минут свет Солнца летит до Земли?",
+      "en": "How many minutes does sunlight take to reach Earth?"
+    },
+    "answer": 8,
+    "range": [
+      0,
+      60
+    ],
+    "step": 1,
+    "tolerance": 15,
+    "unit": {
+      "ru": "мин",
+      "en": "min"
+    },
+    "source": "https://en.wikipedia.org/wiki/Sunlight"
+  },
+  {
+    "id": "spa_006",
+    "topic": "space",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году человек впервые высадился на Луну?",
+      "en": "In which year did humans first land on the Moon?"
+    },
+    "answer": 1969,
+    "range": [
+      1940,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 15,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "source": "https://en.wikipedia.org/wiki/Apollo_11"
+  }
+]

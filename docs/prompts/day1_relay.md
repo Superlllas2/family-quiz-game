@@ -1,0 +1,32 @@
+# Day 1 prompt: relay, phone join, Unity connection (Tuesday)
+
+Copy everything in the box into Claude Code, started in the repo folder.
+
+```
+Read CLAUDE.md, docs/13_architecture.md, docs/PROTOCOL.md, docs/06_phone_screens.md and docs/19_acceptance.md (section "Day 1") fully before starting.
+
+Goal for today: a phone joins a room by QR link and its taps reach the Unity TV app, with acks back to the phone, through the Cloudflare relay. This proves the riskiest part of the architecture.
+
+Build, in this order, on a branch called day1-relay:
+
+1. relay/: a Cloudflare Worker with one Durable Object per room, in TypeScript, exactly as in PROTOCOL.md section 2 (URLs, envelope, room codes, tvSecret, close codes 4001 and 4004, 8 KB and 20 messages per second limits, room closes 10 minutes after the TV leaves). It also serves the built phone page as static assets. Write Vitest tests for: forwarding only within a room, the TV secret rule, and the phone rejected when no TV is present.
+
+2. phone/: a Preact + TypeScript + Vite page. Today it only needs: the join screen (room code from ?room=, name, RU/EN toggle), the reconnect logic with the token in localStorage (PROTOCOL.md section 5), the lobby screen, a temporary test screen with four buttons A to D that sends `input` messages of kind `choice` with inputId, phaseId and ms, and shows "Sent" then a check mark on ack. Locale files phone/src/locales/ru.json and en.json. Wake lock after the first tap. Touch feedback on pointerdown.
+
+3. unity/: create the assembly definitions and folders from docs/13_architecture.md (Core with No Engine References, Net, Presentation, Tests). In Net: RelayClient using System.Net.WebSockets.ClientWebSocket on a background task, a thread safe MessageQueue drained on the main thread, and protocol DTOs. In Core: just enough to accept join, rejoin and input commands and keep a player list. In Presentation: a plain lobby view on the TV showing the room code, a QR code for https://<relayHost>/?room=CODE, and the joined players. Show the last input received per player on screen, and send ack back. Read relayHost from Assets/StreamingAssets/local.json (add local.example.json to git and local.json to .gitignore).
+
+4. Deploy the relay with `npx wrangler deploy` and put the URL in local.json.
+
+Rules: follow CLAUDE.md. Do not add packages beyond those named in docs/13_architecture.md without asking me. Run the relay and phone tests from the command line. Commit after each green step.
+
+When done, give me: the relay URL, how to start everything, and a checklist of the manual Day 1 checks from docs/19_acceptance.md for me to try with my phones.
+```
+
+## Your manual checks after it finishes
+
+- [ ] Phone opens the QR link and joins; name shows on the TV within 1 s
+- [ ] Taps on A to D show on the TV, and the phone shows a check mark quickly
+- [ ] Lock the phone for 60 s, unlock: it reconnects and keeps its seat (iPhone and Android)
+- [ ] Two phones at once work
+
+If something fails, paste the error to Claude Code first. If it is stuck after two tries, tell Claude in the Family Quiz chat.

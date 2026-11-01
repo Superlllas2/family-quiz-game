@@ -1,0 +1,66 @@
+[
+  {
+    "id": "geography",
+    "title": {
+      "ru": "География",
+      "en": "Geography"
+    }
+  },
+  {
+    "id": "history",
+    "title": {
+      "ru": "История",
+      "en": "History"
+    }
+  },
+  {
+    "id": "science",
+    "title": {
+      "ru": "Наука",
+      "en": "Science"
+    }
+  },
+  {
+    "id": "nature",
+    "title": {
+      "ru": "Животные",
+      "en": "Animals"
+    }
+  },
+  {
+    "id": "food",
+    "title": {
+      "ru": "Еда",
+      "en": "Food"
+    }
+  },
+  {
+    "id": "sport",
+    "title": {
+      "ru": "Спорт",
+      "en": "Sport"
+    }
+  },
+  {
+    "id": "culture",
+    "title": {
+      "ru": "Книги и музыка",
+      "en": "Books and music"
+    }
+  },
+  {
+    "id": "space",
+    "title": {
+      "ru": "Космос",
+      "en": "Space"
+    }
+  },
+  {
+    "id": "mixed",
+    "title": {
+      "ru": "Обо всём",
+      "en": "A bit of everything"
+    },
+    "mixed": true
+  }
+]
