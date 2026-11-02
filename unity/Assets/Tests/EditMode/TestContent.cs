@@ -8,6 +8,7 @@ namespace FamilyQuiz.Tests
     public static class TestContent
     {
         private static string _folder;
+        private static GameContent _content;
 
         public static string Folder
         {
@@ -44,6 +45,12 @@ namespace FamilyQuiz.Tests
         public static IReadOnlyList<CharacterDef> Characters(GameConfig config)
         {
             return CharacterLoader.Parse(Read(CharacterLoader.FileName), config);
+        }
+
+        /// <summary>All of content/ through the ContentLoader, loaded once (tests never change it).</summary>
+        public static GameContent Content()
+        {
+            return _content ?? (_content = new ContentLoader(Read).Load());
         }
     }
 }

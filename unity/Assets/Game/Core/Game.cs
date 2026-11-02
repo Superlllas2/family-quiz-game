@@ -4,6 +4,7 @@ using FamilyQuiz.Core.Commands;
 using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.Events;
 using FamilyQuiz.Core.Rules;
+using FamilyQuiz.Core.Show;
 using FamilyQuiz.Core.State;
 
 namespace FamilyQuiz.Core
@@ -17,6 +18,8 @@ namespace FamilyQuiz.Core
         private readonly IClock _clock;
         private readonly Roster _roster;
         private readonly InputRules _inputs;
+        private readonly SettingsRules _settings;
+        private readonly ShowDirector _director;
         private bool _started;
 
         /// <param name="content">Loaded and validated content.</param>
@@ -31,7 +34,9 @@ namespace FamilyQuiz.Core
             if (newSeed == null) throw new ArgumentNullException(nameof(newSeed));
             State = new GameState();
             _roster = new Roster(State, Config, content.Characters, clock, tokenRandom);
-            _inputs = new InputRules(State, clock);
+            _director = new ShowDirector(State, content, clock, newSeed);
+            _inputs = new InputRules(State, _director, content.Characters);
+            _settings = new SettingsRules(State, Config);
         }
 
         public GameState State { get; }
@@ -84,16 +89,19 @@ namespace FamilyQuiz.Core
             var output = new List<IGameEvent>();
             if (_started) return output;
             _started = true;
-            State.Phase = GamePhase.Lobby;
-            State.PhaseId++;
-            State.PhaseStartedAtMs = _clock.NowMs;
-            output.Add(new PhaseStarted(State.Phase, State.PhaseId));
+            _director.OpenLobby(output);
             return output;
         }
 
+        /// <summary>
+        /// Applies one command. Phases already due by the clock end first; after the command the end checks run at once
+        /// (a countdown left with too few players, the Answer end and last call), so a phase ends on the same call as
+        /// the last lock in, leave or disconnect.
+        /// </summary>
         public IReadOnlyList<IGameEvent> Handle(IGameCommand command)
         {
             var output = new List<IGameEvent>();
+            if (_started) _director.Advance(output);
             switch (command)
             {
                 case PlayerJoin c: _roster.Join(c, output); break;
@@ -105,17 +113,23 @@ namespace FamilyQuiz.Core
                 case SubmitAnswer c: _inputs.Submit(c, output); break;
                 case LobbyAction c: _inputs.Lobby(c, output); break;
                 case PickCharacter c: _inputs.Character(c, output); break;
-                case ChangeSettings _: break; // Day 2: ShowDirector
+                case ChangeSettings c: _settings.Change(c, output); break;
             }
 
+            if (_started) _director.Reevaluate(output);
             return output;
         }
 
-        /// <summary>Called once per frame: time based rules (phase ends, deadlines, the seat hold).</summary>
+        /// <summary>
+        /// Called once per frame: time based rules. Every phase that is due ends at its scheduled time (looping, so a
+        /// late frame catches up exactly), then the seat hold, then the end checks after a freed seat.
+        /// </summary>
         public IReadOnlyList<IGameEvent> Tick()
         {
             var output = new List<IGameEvent>();
+            if (_started) _director.Advance(output);
             _roster.ExpireSeats(output);
+            if (_started) _director.Reevaluate(output);
             return output;
         }
     }

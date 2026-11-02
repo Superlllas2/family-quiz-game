@@ -2,78 +2,64 @@ using System.Linq;
 using FamilyQuiz.Core.Commands;
 using FamilyQuiz.Core.Events;
 using FamilyQuiz.Core.Rules;
+using FamilyQuiz.Core.State;
 using NUnit.Framework;
 
 namespace FamilyQuiz.Tests
 {
-    /// <summary>PROTOCOL.md section 3 (inputId, duplicate), section 4 (ack).</summary>
+    /// <summary>PROTOCOL.md section 3 (inputId, duplicate), section 4 (ack), the Day 2 refusal rules.</summary>
     public sealed class InputTests
     {
-        private static SubmitAnswer Choice(string conn, string inputId, int choice, long ms, long phaseId = 1)
-        {
-            return new SubmitAnswer(conn, inputId, phaseId, InputKinds.Choice, choice, ms);
-        }
-
         [Test]
-        public void AChoiceIsRecordedAndAcked()
+        public void AChoiceIsLockedAndAcked()
         {
             var f = new LobbyFixture();
-            var a = f.Seat("c1", "A");
-            var events = f.Send(Choice("c1", "a1", 2, 3410, f.State.PhaseId));
+            var seats = f.ToFirstAnswer(3);
+            var events = f.Choice("c1", 2, 3410, "a1");
 
-            var ack = events.OfType<InputAcked>().Single();
+            var ack = LobbyFixture.AckOf(events);
             Assert.That(ack.Conn, Is.EqualTo("c1"));
             Assert.That(ack.InputId, Is.EqualTo("a1"));
             Assert.That(ack.Ok, Is.True);
             Assert.That(ack.Reason, Is.Null);
-            Assert.That(events.OfType<AnswerReceived>().Single().PlayerId, Is.EqualTo(a.PlayerId));
-            Assert.That(a.LastAnswer.Choice, Is.EqualTo(2));
-            Assert.That(a.LastAnswer.Ms, Is.EqualTo(3410));
-            Assert.That(a.LastAnswer.InputId, Is.EqualTo("a1"));
-        }
-
-        [Test]
-        public void TheLastInputPerPlayerIsKept()
-        {
-            var f = new LobbyFixture();
-            var a = f.Seat("c1", "A");
-            var b = f.Seat("c2", "B");
-            f.Send(Choice("c1", "a1", 0, 1000));
-            f.Send(Choice("c2", "b1", 3, 2000));
-            f.Send(Choice("c1", "a2", 1, 1500));
-
-            Assert.That(a.LastAnswer.Choice, Is.EqualTo(1));
-            Assert.That(a.LastAnswer.Ms, Is.EqualTo(1500));
-            Assert.That(b.LastAnswer.Choice, Is.EqualTo(3));
+            var locked = events.OfType<AnswerLocked>().Single();
+            Assert.That(locked.PlayerId, Is.EqualTo(seats[0].PlayerId));
+            Assert.That(locked.PhaseId, Is.EqualTo(f.State.PhaseId));
+            Assert.That(locked.Choice, Is.EqualTo(2));
+            Assert.That(locked.Ms, Is.EqualTo(3410));
+            Assert.That(seats[0].Turn.Choice, Is.EqualTo(2));
+            Assert.That(seats[0].Turn.Ms, Is.EqualTo(3410));
+            Assert.That(seats[0].Turn.InputId, Is.EqualTo("a1"));
+            Assert.That(seats[0].Turn.LockedAtMs, Is.EqualTo(f.Clock.NowMs));
         }
 
         [Test]
         public void ADuplicateInputIdIsAckedAgainButNotAppliedTwice()
         {
             var f = new LobbyFixture();
-            var a = f.Seat("c1", "A");
-            f.Send(Choice("c1", "a1", 2, 3410));
-            var first = a.LastAnswer;
+            var seats = f.ToFirstAnswer(3);
+            f.Choice("c1", 2, 3410, "a1");
 
-            var events = f.Send(Choice("c1", "a1", 0, 9999));
-            var ack = events.OfType<InputAcked>().Single();
+            var events = f.Choice("c1", 0, 9999, "a1");
+            var ack = LobbyFixture.AckOf(events);
             Assert.That(ack.Ok, Is.True);
             Assert.That(ack.Reason, Is.EqualTo(AckReasons.Duplicate));
-            Assert.That(events.OfType<AnswerReceived>(), Is.Empty);
-            Assert.That(a.LastAnswer, Is.SameAs(first));
+            Assert.That(events.OfType<AnswerLocked>(), Is.Empty);
+            Assert.That(seats[0].Turn.Choice, Is.EqualTo(2));
+            Assert.That(seats[0].Turn.Ms, Is.EqualTo(3410));
         }
 
         [Test]
         public void ADuplicateKeepsWorkingAfterARejoinOnANewSocket()
         {
             var f = new LobbyFixture();
-            var a = f.Seat("c1", "A");
-            f.Send(Choice("c1", "a1", 2, 3410));
+            var seats = f.ToFirstAnswer(3);
+            f.Choice("c1", 2, 3410, "a1");
             f.Send(new ConnectionClosed("c1"));
-            f.Send(new PlayerRejoin("c2", a.Token));
+            f.Send(new PlayerRejoin("c9", seats[0].Token));
 
-            var ack = f.Send(Choice("c2", "a1", 2, 3410)).OfType<InputAcked>().Single();
-            Assert.That(ack.Conn, Is.EqualTo("c2"));
+            var ack = LobbyFixture.AckOf(f.Choice("c9", 2, 3410, "a1"));
+            Assert.That(ack.Conn, Is.EqualTo("c9"));
             Assert.That(ack.Reason, Is.EqualTo(AckReasons.Duplicate));
         }
 
@@ -81,13 +67,12 @@ namespace FamilyQuiz.Tests
         public void TheSameInputIdFromTwoPlayersIsAppliedForBoth()
         {
             var f = new LobbyFixture();
-            var a = f.Seat("c1", "A");
-            var b = f.Seat("c2", "B");
-            f.Send(Choice("c1", "x", 1, 100));
-            var ack = f.Send(Choice("c2", "x", 2, 200)).OfType<InputAcked>().Single();
+            var seats = f.ToFirstAnswer(3);
+            f.Choice("c1", 1, 100, "x");
+            var ack = LobbyFixture.AckOf(f.Choice("c2", 2, 200, "x"));
             Assert.That(ack.Reason, Is.Null);
-            Assert.That(b.LastAnswer.Choice, Is.EqualTo(2));
-            Assert.That(a.LastAnswer.Choice, Is.EqualTo(1));
+            Assert.That(seats[1].Turn.Choice, Is.EqualTo(2));
+            Assert.That(seats[0].Turn.Choice, Is.EqualTo(1));
         }
 
         [TestCase(-1)]
@@ -95,36 +80,83 @@ namespace FamilyQuiz.Tests
         public void AChoiceOutsideZeroToThreeIsInvalid(int choice)
         {
             var f = new LobbyFixture();
-            var a = f.Seat("c1", "A");
-            var ack = f.Send(Choice("c1", "a1", choice, 100)).OfType<InputAcked>().Single();
+            var seats = f.ToFirstAnswer(2);
+            var events = f.Choice("c1", choice, 100);
+            var ack = LobbyFixture.AckOf(events);
             Assert.That(ack.Ok, Is.False);
             Assert.That(ack.Reason, Is.EqualTo(AckReasons.Invalid));
-            Assert.That(a.LastAnswer, Is.Null);
+            var refused = events.OfType<InputRefused>().Single();
+            Assert.That(refused.PlayerId, Is.EqualTo(seats[0].PlayerId));
+            Assert.That(refused.Reason, Is.EqualTo(AckReasons.Invalid));
+            Assert.That(refused.Kind, Is.EqualTo(InputKinds.Choice));
+            Assert.That(seats[0].Turn.Locked, Is.False);
         }
 
         [Test]
-        public void AnInputWithoutASeatIsInvalid()
+        public void AChoiceWithoutMsIsInvalid()
         {
             var f = new LobbyFixture();
-            var ack = f.Send(Choice("nobody", "a1", 1, 100)).OfType<InputAcked>().Single();
-            Assert.That(ack.Ok, Is.False);
+            var seats = f.ToFirstAnswer(2);
+            var ack = LobbyFixture.AckOf(f.Choice("c1", 1, null));
             Assert.That(ack.Reason, Is.EqualTo(AckReasons.Invalid));
+            Assert.That(seats[0].Turn.Locked, Is.False);
         }
 
         [Test]
-        public void LobbyAndCharacterAreInvalidForNow()
+        public void ASecondInputAfterLockingInIsInvalid()
         {
             var f = new LobbyFixture();
-            f.Seat("c1", "A");
-            var lobby = f.Send(new LobbyAction("c1", "l1", "start")).OfType<InputAcked>().Single();
-            var character = f.Send(new PickCharacter("c1", "k1", 3)).OfType<InputAcked>().Single();
-            Assert.That(lobby.Ok, Is.False);
-            Assert.That(lobby.Reason, Is.EqualTo(AckReasons.Invalid));
-            Assert.That(character.Ok, Is.False);
-            Assert.That(character.Reason, Is.EqualTo(AckReasons.Invalid));
+            var seats = f.ToFirstAnswer(3);
+            f.Choice("c1", 1, 100);
+            var ack = LobbyFixture.AckOf(f.Choice("c1", 2, 200));
+            Assert.That(ack.Ok, Is.False);
+            Assert.That(ack.Reason, Is.EqualTo(AckReasons.Invalid));
+            Assert.That(seats[0].Turn.Choice, Is.EqualTo(1));
+        }
 
-            var again = f.Send(new LobbyAction("c1", "l1", "start")).OfType<InputAcked>().Single();
-            Assert.That(again.Reason, Is.EqualTo(AckReasons.Invalid));
+        [Test]
+        public void AnotherInputKindInAnswerIsInvalid()
+        {
+            var f = new LobbyFixture();
+            f.ToFirstAnswer(2);
+            var events = f.Send(new SubmitAnswer("c1", "v1", f.State.PhaseId, InputKinds.Vote, 1, 100));
+            Assert.That(LobbyFixture.AckOf(events).Reason, Is.EqualTo(AckReasons.Invalid));
+        }
+
+        [Test]
+        public void AChoiceNamingAPhaseThatTakesNoChoiceIsInvalid()
+        {
+            var f = new LobbyFixture();
+            f.SeatPlayers(2);
+            Assert.That(LobbyFixture.AckOf(f.Choice("c1", 1, 100)).Reason, Is.EqualTo(AckReasons.Invalid), "Lobby");
+            f.Lobby("c1", LobbyActions.Start);
+            f.Advance(f.CountdownMs);
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.QuestionShow));
+            Assert.That(LobbyFixture.AckOf(f.Choice("c1", 1, 100)).Reason, Is.EqualTo(AckReasons.Invalid), "QuestionShow");
+        }
+
+        [Test]
+        public void AnInputWithoutASeatIsInvalidAndNotLoggedAsRefused()
+        {
+            var f = new LobbyFixture();
+            f.ToFirstAnswer(2);
+            var events = f.Send(new SubmitAnswer("nobody", "a1", f.State.PhaseId, InputKinds.Choice, 1, 100));
+            var ack = LobbyFixture.AckOf(events);
+            Assert.That(ack.Ok, Is.False);
+            Assert.That(ack.Reason, Is.EqualTo(AckReasons.Invalid));
+            Assert.That(events.OfType<InputRefused>(), Is.Empty);
+        }
+
+        [Test]
+        public void ARefusedInputResentGetsTheSameAckWithoutASecondRefusedEvent()
+        {
+            var f = new LobbyFixture();
+            f.ToFirstAnswer(2);
+            f.Choice("c1", 7, 100, "bad");
+            var events = f.Choice("c1", 1, 100, "bad");
+            Assert.That(LobbyFixture.AckOf(events).Reason, Is.EqualTo(AckReasons.Invalid));
+            Assert.That(events.OfType<InputRefused>(), Is.Empty);
+            Assert.That(events.OfType<AnswerLocked>(), Is.Empty);
         }
     }
 }

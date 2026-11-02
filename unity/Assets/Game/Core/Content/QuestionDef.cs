@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace FamilyQuiz.Core.Content
 {
-    /// <summary>One entry of content/questions.json (docs/15_schemas.md). Closest value fields arrive on Day 3.</summary>
+    /// <summary>One entry of content/questions.json (docs/15_schemas.md).</summary>
     public sealed class QuestionDef
     {
         public const string MultipleChoice = "multipleChoice";
@@ -23,5 +23,20 @@ namespace FamilyQuiz.Core.Content
 
         /// <summary>Multiple choice: index of the right option in Options (0 to 3).</summary>
         [JsonProperty("correct")] public int Correct { get; set; } = -1;
+
+        /// <summary>Closest value: the true value.</summary>
+        [JsonProperty("answer")] public double? Answer { get; set; }
+
+        /// <summary>Closest value: slider limits [min, max]; the answer lies strictly inside.</summary>
+        [JsonProperty("range")] public double[] Range { get; set; }
+
+        /// <summary>Closest value: slider step.</summary>
+        [JsonProperty("step")] public double? Step { get; set; }
+
+        /// <summary>Closest value: distance at which points reach zero.</summary>
+        [JsonProperty("tolerance")] public double? Tolerance { get; set; }
+
+        /// <summary>Closest value: the unit, for example {"ru": "год", "en": "year"}; may be empty strings.</summary>
+        [JsonProperty("unit")] public LocalizedText Unit { get; set; }
     }
 }

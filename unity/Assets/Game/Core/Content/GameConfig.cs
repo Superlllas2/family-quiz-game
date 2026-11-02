@@ -17,6 +17,9 @@ namespace FamilyQuiz.Core.Content
         [JsonProperty("rounds", Required = Required.Always)]
         public RoundsConfig Rounds { get; set; }
 
+        [JsonProperty("topics", Required = Required.Always)]
+        public TopicsConfig Topics { get; set; }
+
         [JsonProperty("scoring", Required = Required.Always)]
         public ScoringConfig Scoring { get; set; }
 
