@@ -14,7 +14,7 @@ Do these once before Tuesday. Claude Code cannot do steps 1 to 4 for you.
 The `unity/` folder in the repo only holds empty placeholder folders. Replace it with a real project:
 
 1. Delete the `unity` folder in the repo.
-2. In Unity Hub: New project, template **Universal 2D**, project name `unity`, location: the repo folder (`D:\Unity Projects\family-quiz-game` on Windows). Create.
+2. In Unity Hub: New project, template **Universal 3D** (done Nov 2 with Unity 6000.3.23f1), project name `unity`, location: the repo folder (`D:\Unity Projects\family-quiz-game` on Windows). Create.
 3. Close Unity once it has opened.
 4. Commit: `git add .` then `git commit -m "Create Unity project"`.
 

@@ -37,7 +37,7 @@ Each check is automated (a unit test or a simulated game in the test code) unles
 ### Day 3: the full show (Thu)
 
 - [ ] A simulated Standard game with the six simulated players runs every phase in order and lasts 8 to 12 minutes of game clock from the end of the start countdown to the end of Results, without mini games (simulated game, 100 runs). With simulated players that always use the full answer window it must not exceed 12 minutes
-- [ ] No stretch without input lasts longer than 10 s outside Intro, FinalIntro and Results. The idle share is printed and logged, not asserted (simulated game). Note: fails with the current timers until the open issue in `decisions/0002_spec_review.md` is resolved
+- [ ] No stretch without input lasts longer than 11 s outside Intro, FinalIntro and Results. The current timers give exactly 11 s (QuestionShow + Reveal + Scores, and Reveal + Scores + RoundEnd), so the simulation must end each phase at its exact budget on the fake clock, never a frame later. The idle share is printed and logged, not asserted (simulated game)
 - [ ] Topic vote: doors follow the rules in `02_show_flow.md`; ties resolve as specified (unit tests)
 - [ ] Ranks: equal scores share the better rank (1, 1, 3) (unit tests)
 - [ ] Closest value: distance scoring and the closest bonus work, including ties for closest (unit tests)

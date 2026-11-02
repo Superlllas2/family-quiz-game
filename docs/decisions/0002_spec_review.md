@@ -51,6 +51,9 @@ Each fills a gap the decisions above left open. Change any of them by asking for
 | The `players` poll kind is removed (no poll question used it) | 15 |
 | Protocol version stays 1: nothing was built yet when fields were removed | PROTOCOL |
 
-## Open issue
+## Open issue (resolved)
+
+Resolved on Nov 2, 2026 by D42 in `0003_3d_and_idle_limit.md`: the limit is now 11 s.
+
 
 D35's 10 s check fails with the current timers whenever nobody holds a power up. QuestionShow 4 s + Reveal 3.5 s + Scores 3.5 s = 11 s without input between two answer windows, and Reveal + Scores + RoundEnd = 11 s before each topic vote. Day 3 has no power ups at all, so its simulated game will fail this check. One timer must shrink by at least 1 s, or the threshold must rise to 11 s, before Day 3.

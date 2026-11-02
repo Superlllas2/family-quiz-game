@@ -250,5 +250,5 @@ Allowed values:
 Computed by `tools/analyze_log`:
 
 - **Idle:** a moment is idle when no connected phone can send an answer, vote, prediction, power up pick or poll input. Idle share = idle time divided by game time (from `gameStarted` to `gameEnded`). Reported only, no pass or fail in game night 1.
-- **Longest idle stretch** outside Intro, FinalIntro and Results. Must stay at or under 10 s (`19_acceptance.md`).
+- **Longest idle stretch** outside Intro, FinalIntro and Results. Must stay at or under 11 s (`19_acceptance.md`).
 - Phase durations, correct rate per question, power ups drawn versus used, who targets whom.

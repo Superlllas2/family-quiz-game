@@ -16,6 +16,10 @@ A fast, chaotic family quiz show in the living room: the TV is the stage, every 
 
 In game night 1 a Standard game lasts about 10 to 12 minutes, without mini games. With the 3 mini games planned for later it lasts 15 to 19 minutes. Quick and Long modes exist in config. An evening holds two or three games.
 
+## Look
+
+Stylized real time 3D, not photoreal (D43). The TV shows a 3D studio with the two hosts as 3D characters, and the question UI sits over it. The phone stays a flat 2D controller. Game night 1 still uses grey box placeholders; the art direction is chosen after it.
+
 ## Languages
 
 - Russian and English.
@@ -43,4 +47,4 @@ Players may gang up on anyone, including the leader or a relative, the way they 
 
 ## What it is not (for now)
 
-An online game with accounts, a mobile app to install, a 3D game, or a game with user generated question packs.
+An online game with accounts, a mobile app to install, a photoreal game, or a game with user generated question packs.

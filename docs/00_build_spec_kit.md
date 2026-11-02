@@ -34,7 +34,7 @@ Update the Status column as you go; the kit is ready when every row says Done.
 | 7 | Host bibles and line list | Game design | Later | `docs/07_hosts.md` |
 | 8 | Content guidelines | Game design | Later | `docs/08_content.md` |
 | 9 | Settings and accessibility | Game design | Partial (game night 1 settings listed in 02, 03 and 06) | `docs/09_settings.md` |
-| 10 | Visual style guide | Look and feel | Later | `docs/10_visual_style.md` |
+| 10 | Visual style guide | Look and feel | Later (stylized 3D, `decisions/0003_3d_and_idle_limit.md`) | `docs/10_visual_style.md` |
 | 11 | Motion and feedback spec | Look and feel | Later | `docs/11_motion.md` |
 | 12 | Audio direction and sound list | Look and feel | Later | `docs/12_audio.md` |
 | 13 | Tech spec and architecture | Technical | Done for game night 1 | `docs/13_architecture.md` |

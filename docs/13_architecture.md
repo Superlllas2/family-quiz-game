@@ -6,7 +6,7 @@ Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `deci
 
 | Program | Stack | Folder |
 | --- | --- | --- |
-| TV app | Unity 6.3 LTS, C#, Universal Render Pipeline 2D, UGUI with TextMeshPro for all TV UI (no UI Toolkit), Unity Test Framework. JSON: Newtonsoft Json.NET (`com.unity.nuget.newtonsoft-json`). WebSocket client: `System.Net.WebSockets.ClientWebSocket` (no extra package) | `unity/` |
+| TV app | Unity 6.3 LTS, C#, Universal Render Pipeline in 3D (the Universal 3D template; D43), UGUI screen space overlay over the 3D camera for the question UI, UGUI with TextMeshPro for all TV UI (no UI Toolkit), Unity Test Framework. JSON: Newtonsoft Json.NET (`com.unity.nuget.newtonsoft-json`). WebSocket client: `System.Net.WebSockets.ClientWebSocket` (no extra package) | `unity/` |
 | Phone page | Preact, TypeScript, Vite. No UI library. Plain CSS | `phone/` |
 | Relay | Cloudflare Workers with Durable Objects (one object per room), TypeScript, Wrangler. Serves the built phone page as static assets | `relay/` |
 | Tools | Node 20+ scripts in TypeScript or plain JS, run with `node` or `npx tsx` | `tools/` |
