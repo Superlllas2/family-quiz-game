@@ -199,14 +199,43 @@ namespace FamilyQuiz.Core.Show
                 }
             }
 
-            if (!anyOpen)
+            if (!anyOpen && HasConnectedTurn())
             {
                 reason = PhaseEndReasons.AllDone;
                 return lastLock;
             }
 
+            if (!anyOpen)
+            {
+                // Nobody is connected (for example the laptop lost the relay and every phone counts as away): there is
+                // nobody to end the phase early, so it runs to the latest deadline plus grace of the players who have
+                // not locked in. The core clock is paused while the relay is down, so the question waits.
+                foreach (var p in _state.Players)
+                {
+                    if (p.Turn == null || p.Turn.Locked) continue;
+                    anyOpen = true;
+                    latestOpen = Math.Max(latestOpen, p.Turn.DeadlineMs + grace);
+                }
+
+                if (!anyOpen)
+                {
+                    reason = PhaseEndReasons.AllDone;
+                    return lastLock;
+                }
+            }
+
             reason = PhaseEndReasons.Timeout;
             return latestOpen;
+        }
+
+        private bool HasConnectedTurn()
+        {
+            foreach (var p in _state.Players)
+            {
+                if (p.Connected && p.Turn != null) return true;
+            }
+
+            return false;
         }
 
         /// <summary>

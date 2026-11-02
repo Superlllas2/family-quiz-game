@@ -214,10 +214,7 @@ namespace FamilyQuiz.Bootstrap
         /// <summary>Loads and validates every content file; throws ContentException naming the file, item and field.</summary>
         private static GameContent LoadContent()
         {
-            var strings = UiStrings.Parse(ReadContent(UiStrings.FileName));
-            var config = ConfigLoader.Parse(ReadContent(ConfigLoader.FileName));
-            var characters = CharacterLoader.Parse(ReadContent(CharacterLoader.FileName), config);
-            return new GameContent(config, characters, new List<QuestionDef>(), strings);
+            return new ContentLoader(ReadContent).Load();
         }
 
         /// <summary>The TV texts alone, so a content error can still show its title; null if they are broken too.</summary>

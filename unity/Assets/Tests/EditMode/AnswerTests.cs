@@ -471,15 +471,30 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void AnAnswerWithNobodyConnectedEndsAtOnce()
+        public void AnAnswerWithNobodyConnectedRunsToTheLatestDeadline()
         {
-            // D73 read literally: every connected player is done when nobody is connected.
+            // Losing every phone (or the relay) must not skip the question: with nobody connected nothing ends it early.
             var f = new LobbyFixture();
             f.ToFirstAnswer(2);
             f.Send(new ConnectionClosed("c1"));
             var events = f.Send(new ConnectionClosed("c2"));
+            Assert.That(events.OfType<PhaseEnded>(), Is.Empty);
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Answer));
+            f.Advance(f.WindowMs + f.GraceMs - 1);
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Answer));
+            var end = f.Advance(1);
+            Assert.That(end.OfType<PhaseEnded>().Single().Reason, Is.EqualTo(PhaseEndReasons.Timeout));
+        }
+
+        [Test]
+        public void AnAnswerWhereEveryoneLockedInThenDisconnectedEndsAtTheLastLockIn()
+        {
+            var f = new LobbyFixture();
+            f.ToFirstAnswer(2);
+            f.Choice("c1", f.Right, 1);
+            f.Send(new ConnectionClosed("c1"));
+            var events = f.Choice("c2", f.Right, 1);
             Assert.That(events.OfType<PhaseEnded>().Single().Reason, Is.EqualTo(PhaseEndReasons.AllDone));
-            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Reveal));
         }
 
         [Test]

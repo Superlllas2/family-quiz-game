@@ -75,6 +75,7 @@ namespace FamilyQuiz.Net
                     break;
                 case RosterChanged _:
                 case PlayerConnectionChanged _:
+                case PlayerTimedOut _: // a player past deadline plus grace drops out of the pending lists
                     RefreshAfterRosterChange();
                     break;
                 case PlayerUpdated updated:
