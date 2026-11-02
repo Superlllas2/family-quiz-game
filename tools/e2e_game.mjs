@@ -1,8 +1,14 @@
 // End to end check of the Day 2 skeleton: three scripted phones play a whole game against the live relay and a
 // running TV app, then test Cancel on the Play again countdown.
-// Usage: node tools/e2e_game.mjs <ROOM> [relayHost]  (start the TV app first; ROOM is the code on the TV)
-const room = process.argv[2];
-const host = process.argv[3] ?? "family-quiz-relay.stenakirpichnaya.workers.dev";
+// Usage: node tools/e2e_game.mjs <ROOM> [relayHost] [--dump <file>]  (start the TV app first; ROOM is the code on the TV)
+// --dump writes every text frame the phones received to a JSON file (the phone page tests parse such a capture).
+import { writeFileSync } from "node:fs";
+const args = process.argv.slice(2);
+const dumpAt = args.indexOf("--dump");
+const dump = dumpAt >= 0 ? args.splice(dumpAt, 2)[1] : null;
+const room = args[0];
+const host = args[1] ?? "family-quiz-relay.stenakirpichnaya.workers.dev";
+const received = [];
 const url = `wss://${host}/ws/phone?room=${room}`;
 let failures = 0;
 const ok = (c, m) => { console.log(`${c ? "ok  " : "FAIL"} ${m}`); if (!c) failures++; };
@@ -14,6 +20,7 @@ function phone(label) {
   const inbox = [];
   const waiters = [];
   ws.onmessage = (e) => {
+    received.push(e.data);
     const m = JSON.parse(e.data);
     m.at = performance.now();
     inbox.push(m);
@@ -123,5 +130,6 @@ const left = await a.screen("pollDone", t);
 ok(left?.data?.canPlayAgain === true, "two players left: Play again still enabled");
 
 phones.forEach((p) => p.close());
+if (dump) writeFileSync(dump, JSON.stringify(received, null, 1) + "\n");
 console.log(failures === 0 ? "\nALL OK" : `\n${failures} FAILED`);
 process.exit(failures === 0 ? 0 : 1);
