@@ -9,6 +9,8 @@ Date: Nov 2, 2026. Decided by Ilia. The AI building the game never reopens one o
 
 **Amended Nov 2, 2026 by D56 (`0005_staging_answers.md`):** the 11 s limit of D42 is a suggested starting value like every timer, set again whenever timers or staging extras change after a playtest.
 
+**Amended Nov 2, 2026 by D62 (`0006_art_direction.md`):** "stylized, not photoreal" in D43 now applies only to the guest characters; everything else is realistic in style.
+
 ## Details added while applying these (not yet confirmed by Ilia)
 
 | Detail | Where |

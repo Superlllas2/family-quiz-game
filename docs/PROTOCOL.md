@@ -91,7 +91,7 @@ The relay itself sends two messages to phones:
 | --- | --- | --- |
 | `join` | `name`, `lang` (`ru` or `en`) | First join, only in the Lobby |
 | `rejoin` | `token` | After a reload or reconnect, or on `tvBack`, if a token is stored |
-| `character` | `inputId`, `characterId` (an id from `content/characters.json`, 0 to 9) | On `pickCharacter`. Answered with `ack`; `ok: false`, reason `characterTaken` if another player has it |
+| `character` | `inputId`, `characterId` (an id from `content/characters.json`, 0 to 15) | On `pickCharacter`. Answered with `ack`; `ok: false`, reason `characterTaken` if another player has it |
 | `input` | `inputId`, `phaseId`, `kind`, plus kind fields (below) | Any player decision in a game phase |
 | `lobby` | `inputId`, `action`: `start`, `cancelStart` or `playAgain` | Start in the Lobby, Cancel during the countdown, Play again after the poll |
 | `settings` | `lang`, `timerMultiplier` (1, 1.5 or 2) | Settings changed |

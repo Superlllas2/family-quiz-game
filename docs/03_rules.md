@@ -159,7 +159,7 @@ Starting values for playtests. Config validation also checks that each staging a
 | `staging.extraSeconds.reveal` | 0 | The same, for Reveal |
 | `staging.extraSeconds.scores` | 0 | The same, for Scores |
 | `staging.extraSeconds.roundEnd` | 0 | The same, for RoundEnd |
-| `staging.lobby.seatPopSeconds` | 0.5 | A joining player's guest pops into their seat |
+| `staging.lobby.seatPopSeconds` | 0.5 | The pop when a character leaves its seat on a swap, and when a grey box capsule appears |
 | `staging.intro.establishSeconds` | 6 | Establishing shot at the start of the Intro |
 | `staging.questionShow.curtainOpenSeconds` | 1.2 | The stage curtain opens |
 | `staging.questionShow.questionInSeconds` | 0.4 | The question panel fades in |

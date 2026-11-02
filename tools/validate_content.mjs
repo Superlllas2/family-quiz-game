@@ -86,7 +86,7 @@ characters.forEach((c, i) => {
     charColors.add(c.color.toUpperCase());
     if (contrast(c.color, "#14161C") < 4.5) err("characters.json", c.id, "color needs a contrast of 4.5 with #14161C");
   }
-  for (const f of ["look", "idlePose", "happyReaction", "sadReaction", "cardHold"]) {
+  for (const f of ["look", "entrance", "idlePose", "happyReaction", "sadReaction", "cardHold", "victory"]) {
     if (typeof c[f] !== "string" || !c[f].trim()) err("characters.json", c.id, f + " missing");
   }
 });

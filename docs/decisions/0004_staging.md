@@ -1,6 +1,6 @@
 # Decision record 0004: staging the TV as a late night show
 
-Date: Nov 2, 2026. Decided by Ilia. The AI building the game never reopens one of these on its own; it asks first. The full concept is in `21_staging.md`. Amended by `0005_staging_answers.md`: D52 confirms both hosts at the desk, D55 replaces the guest variants detail with a character roster, D56 lets staging extras go above 0 after the first playtest. This record was asked for as `0003_staging.md`; number 0003 was already taken by `0003_3d_and_idle_limit.md`.
+Date: Nov 2, 2026. Decided by Ilia. The AI building the game never reopens one of these on its own; it asks first. The full concept is in `21_staging.md`. Amended by `0005_staging_answers.md`: D52 confirms both hosts at the desk, D55 replaces the guest variants detail with a character roster, D56 lets staging extras go above 0 after the first playtest. Amended by `0006_art_direction.md`: D62 makes everything realistic except the guests, who are cartoonish and may be mixed media, replacing "characters stylized with believable proportions" in D45. This record was asked for as `0003_staging.md`; number 0003 was already taken by `0003_3d_and_idle_limit.md`.
 
 | # | Question | Decision | Replaces |
 | --- | --- | --- | --- |

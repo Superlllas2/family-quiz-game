@@ -2,7 +2,7 @@
 
 Snapshot from Nov 1, 2026 of the live doc at https://claude.ai/artifact/UQA5Hd1S8UzTiAANuSngNJ. **This repo copy holds the current status** (updated Nov 2, 2026 for game night 1).
 
-**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`. Decisions from the spec review are in `docs/decisions/0002_spec_review.md`; the staging concept is in `docs/decisions/0004_staging.md` and `0005_staging_answers.md`.
+**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`. Decisions from the spec review are in `docs/decisions/0002_spec_review.md`; the staging concept is in `docs/decisions/0004_staging.md` and `0005_staging_answers.md`; the art direction is in `0006_art_direction.md`.
 
 ## How to use this kit
 
@@ -34,7 +34,7 @@ Update the Status column as you go; the kit is ready when every row says Done.
 | 7 | Host bibles and line list | Game design | Later | `docs/07_hosts.md` |
 | 8 | Content guidelines | Game design | Later | `docs/08_content.md` |
 | 9 | Settings and accessibility | Game design | Partial (game night 1 settings listed in 02, 03 and 06) | `docs/09_settings.md` |
-| 10 | Visual style guide | Look and feel | Partial (stylized 3D, D43; late night set and matte look in `21_staging.md`, `decisions/0004_staging.md`) | `docs/10_visual_style.md` |
+| 10 | Visual style guide | Look and feel | Partial (3D, D43; late night set in `21_staging.md`, `decisions/0004_staging.md`; a realistic world with cartoon, mixed media guests, `decisions/0006_art_direction.md`) | `docs/10_visual_style.md` |
 | 11 | Motion and feedback spec | Look and feel | Later | `docs/11_motion.md` |
 | 12 | Audio direction and sound list | Look and feel | Partial (placeholder music sources and license rules; final music open; band cues in `21_staging.md`) | `docs/12_audio.md` |
 | 13 | Tech spec and architecture | Technical | Done for game night 1 | `docs/13_architecture.md` |
@@ -80,7 +80,7 @@ These say what the game is and how it plays. Each lists what it must contain, th
 ### 6. Phone screens and user flow
 
 - **Contains:** every phone screen (join, name and character, lobby, waiting, vote, each answer type, power up pick, target pick, sabotage effect, mini game, result, poll, reconnecting), each with its one decision, its buttons and where it leads. A flow diagram of how screens connect.
-- **Open:** Decided for game night 1: a roster of 10 characters to pick from (0005, replacing the 12 avatar presets of 0002) and no host phone (0002); every phone has the same rights.
+- **Open:** Decided for game night 1: a roster of 16 characters to pick from (0005, replacing the 12 avatar presets of 0002) and no host phone (0002); every phone has the same rights.
 
 ### 7. Host bibles and line list
 

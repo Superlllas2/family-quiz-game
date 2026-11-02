@@ -2,171 +2,305 @@
   {
     "id": 0,
     "name": {
-      "ru": "Дед Аркадий",
-      "en": "Grandpa Arkady"
+      "ru": "Робот",
+      "en": "The Robot"
     },
     "personality": {
-      "ru": "Знает всё. Особенно то, о чём не спрашивали.",
-      "en": "Knows everything, especially what nobody asked."
+      "ru": "Работает на фактах. Глючит, когда ошибается.",
+      "en": "Runs on facts. Glitches when it's wrong."
     },
-    "look": "Retired engineer in his seventies, tall and wiry, grey cardigan over a pressed shirt, flat cap, reading glasses on a cord, bushy eyebrows",
-    "color": "#C9A227",
-    "idlePose": "Arms crossed, leans back, one eyebrow raised at the stage",
-    "happyReaction": "A slow satisfied nod and one finger up: told you so",
-    "sadReaction": "Waves the question away with a grumble: the question was wrong",
-    "cardHold": "Holds it up stiffly at arm's length without looking at it"
+    "look": "Boxy retro robot with a matte painted metal shell and rounded corners, a screen for a face that shows simple expressions, an antenna with a bulb, dials on the chest, stubby legs and long arms",
+    "color": "#5B9BD5",
+    "entrance": "Rolls in on hidden wheels, unfolds into the seat with whirs and clicks",
+    "idlePose": "Screen face blinks, the antenna bulb pulses, small whirring calculations",
+    "happyReaction": "Antenna lights up, a stiff robot dance with both arms",
+    "sadReaction": "Screen shows an error, a few sparks, powers down and slumps, then reboots",
+    "cardHold": "The card pops out of a slot in its chest; it holds it up on a telescoping arm",
+    "victory": "Spins its head all the way round and fires a confetti cannon from its chest"
   },
   {
     "id": 1,
     "name": {
-      "ru": "Тимка",
-      "en": "Timka"
+      "ru": "Дива",
+      "en": "The Diva"
     },
     "personality": {
-      "ru": "Восемь лет и сто вопросов в минуту.",
-      "en": "Eight years old, a hundred questions a minute."
+      "ru": "Уверена, что каждый вопрос про неё.",
+      "en": "Sure every question is about her."
     },
-    "look": "Boy of about eight, striped hoodie, light up sneakers, hair that never stays flat, a plaster on one knee",
-    "color": "#FF8A3D",
-    "idlePose": "Bounces on the seat and swings his legs",
-    "happyReaction": "Jumps up on the cushion with both arms in the air",
-    "sadReaction": "Flops back into the sofa like a falling tree, then pops up again",
-    "cardHold": "Waves it high above his head with both hands"
+    "look": "Glamorous star with an enormous hairdo, oversized sunglasses, a velvet gown, a feather boa and a hand mirror",
+    "color": "#E57A9A",
+    "entrance": "Sweeps in blowing kisses to the audience and settles into the seat with a flick of the boa",
+    "idlePose": "Checks her reflection in the hand mirror and fluffs her hair",
+    "happyReaction": "Deep bow, throws invisible roses to the audience",
+    "sadReaction": "Faints dramatically onto the armrest, the back of a hand on her forehead",
+    "cardHold": "Holds it like an award, the other hand on her heart",
+    "victory": "Accepts invisible flowers and gives a tearful thank you speech"
   },
   {
     "id": 2,
     "name": {
-      "ru": "Лера",
-      "en": "Lera"
+      "ru": "Призрак",
+      "en": "The Ghost"
     },
     "personality": {
-      "ru": "Подросток. Делает вид, что ей всё равно.",
-      "en": "Teenager. Pretends she couldn't care less."
+      "ru": "Очень старается пугать. Никому не страшно.",
+      "en": "Tries so hard to be scary. Nobody is scared."
     },
-    "look": "Girl of about fifteen, oversized hoodie, big headphones around her neck, phone in hand, chunky sneakers",
-    "color": "#8E7CC3",
-    "idlePose": "Scrolls her phone and glances up now and then",
-    "happyReaction": "A small fist pump she tries to hide",
-    "sadReaction": "Rolls her eyes and pulls her hood up",
-    "cardHold": "Flicks it up with two fingers without looking up from her phone"
+    "look": "Friendly ghost made of a soft matte sheet with two small arms and a tiny toy chain, no legs; hovers just above the seat",
+    "color": "#DDE3EA",
+    "entrance": "Rises through the seat with a big BOO; nobody reacts",
+    "idlePose": "Bobs up and down, rattles the tiny chain, practises scary faces",
+    "happyReaction": "A spooky laugh and a loop in the air",
+    "sadReaction": "Deflates into a puddle of sheet, then slowly floats back up",
+    "cardHold": "The card floats up beside it, wobbling spookily",
+    "victory": "Splits into three ghosts that all shout boo at once, then back into one"
   },
   {
     "id": 3,
     "name": {
-      "ru": "Баба Нина",
-      "en": "Granny Nina"
+      "ru": "Пещерный человек",
+      "en": "The Caveman"
     },
     "personality": {
-      "ru": "Милая бабушка, которая играет на победу.",
-      "en": "Sweet granny who plays to win."
+      "ru": "Книг не читал. Верит чутью.",
+      "en": "Never read a book. Trusts the gut."
     },
-    "look": "Woman in her seventies, knitted vest, pearl earrings, neat grey bun, a knitting bag on her lap",
-    "color": "#E57A9A",
-    "idlePose": "Knits calmly",
-    "happyReaction": "Raises both knitting needles like a trophy",
-    "sadReaction": "Tuts and knits twice as fast",
-    "cardHold": "Holds it up neatly with both hands and a sweet smile"
+    "look": "Shaggy hair, a fur tunic with a bone necklace, bare feet, a small stone club and a fur bag of rocks",
+    "color": "#C08457",
+    "entrance": "Stomps in dragging the club, sniffs the seat, then sits",
+    "idlePose": "Gnaws a bone, scratches the head, sniffs the air",
+    "happyReaction": "Beats the chest and roars",
+    "sadReaction": "Bonks their own head gently with the club; little stars circle",
+    "cardHold": "Chisels the answer onto a stone tablet and lifts it overhead",
+    "victory": "Discovers fire: a tiny flame on the club, a dance around it"
   },
   {
     "id": 4,
     "name": {
-      "ru": "Ольга",
-      "en": "Olga"
+      "ru": "Супергерой",
+      "en": "The Superhero"
     },
     "personality": {
-      "ru": "Всё по плану. Даже веселье.",
-      "en": "Everything goes to plan, even the fun."
+      "ru": "Плащ есть. Суперсил нет.",
+      "en": "Has a cape. Has no superpowers."
     },
-    "look": "Woman around forty, smart blazer, tidy ponytail, a notebook full of colored sticky notes and a pen",
-    "color": "#4FA3A5",
-    "idlePose": "Writes notes in her notebook",
-    "happyReaction": "Ticks a box in the notebook with a satisfied nod",
-    "sadReaction": "Crosses something out and sighs",
-    "cardHold": "Presents it like a slide in a meeting, pointing with her pen"
+    "look": "Homemade hero outfit: a knitted mask, a cape made from a bath towel, rubber boots, a lightning bolt sewn onto a sweater",
+    "color": "#E0533D",
+    "entrance": "Runs in with both arms forward, flying, and trips into the seat",
+    "idlePose": "Strikes heroic poses while the cape flutters with no wind",
+    "happyReaction": "Leaps up into the classic flying pose",
+    "sadReaction": "The cape flops over the whole face",
+    "cardHold": "Thrusts it toward the sky with a clenched fist",
+    "victory": "Rips open the sweater to show another sweater with a bigger lightning bolt"
   },
   {
     "id": 5,
     "name": {
-      "ru": "Борис",
-      "en": "Boris"
+      "ru": "Волшебник",
+      "en": "The Wizard"
     },
     "personality": {
-      "ru": "Шутит в каждой паузе и смеётся первым.",
-      "en": "A joke for every pause, and he laughs first."
+      "ru": "Видит ответ в хрустальном шаре. Обычно не тот.",
+      "en": "Sees answers in a crystal ball. Mostly wrong."
     },
-    "look": "Man in his forties, checked flannel shirt, short beard, comfortable slippers, a big mug of tea",
-    "color": "#8DB255",
-    "idlePose": "Sips his tea and chuckles at his own thought",
-    "happyReaction": "Double finger guns at the camera",
-    "sadReaction": "Clutches his heart theatrically",
-    "cardHold": "Holds it next to his face and winks"
+    "look": "Pointy hat far too big for the head (it covers the eyes), a long robe with moons and stars, a crystal ball and a short wand",
+    "color": "#8E7CC3",
+    "entrance": "Appears in a puff of smoke, coughing",
+    "idlePose": "Rubs the crystal ball, which glows faintly",
+    "happyReaction": "The wand shoots a small firework",
+    "sadReaction": "The wand fizzles and the hat droops down over the whole face",
+    "cardHold": "Conjures it out of thin air with a flick of the wand",
+    "victory": "Makes a swirl of little stars rain from the hat"
   },
   {
     "id": 6,
     "name": {
-      "ru": "Вика",
-      "en": "Vika"
+      "ru": "Шеф",
+      "en": "The Chef"
     },
     "personality": {
-      "ru": "Студентка. Знает факт на любой случай.",
-      "en": "Student with a fact for every occasion."
+      "ru": "Каждый вопрос — как рецепт. Вспыльчивый.",
+      "en": "Treats every question like a recipe. Hot tempered."
     },
-    "look": "Young woman about twenty, round glasses, T shirt with a planet print, a backpack covered in pins, a small book",
-    "color": "#5B9BD5",
-    "idlePose": "Reads a tiny book and turns a page",
-    "happyReaction": "Pushes her glasses up and does a quick seated victory dance",
-    "sadReaction": "Flips through her book in a panic",
-    "cardHold": "Holds it up and taps the answer with a pen"
+    "look": "Very tall chef's hat, an apron with sauce stains, rolled up sleeves, a ladle and a kitchen towel over the shoulder",
+    "color": "#FF8A3D",
+    "entrance": "Bursts in through invisible swing doors carrying a tray",
+    "idlePose": "Tastes from the ladle and adds an invisible pinch of salt",
+    "happyReaction": "Chef's kiss, then tosses the hat into the air",
+    "sadReaction": "Steam puffs from the ears; slaps the towel onto the shoulder",
+    "cardHold": "Serves it on a silver tray, lifting the lid",
+    "victory": "A big harmless flambé whoosh from a pan, then a bow"
   },
   {
     "id": 7,
     "name": {
-      "ru": "Макс",
-      "en": "Max"
+      "ru": "Соня",
+      "en": "The Sleepyhead"
     },
     "personality": {
-      "ru": "Спортивный дядя. Всё — соревнование.",
-      "en": "Sporty uncle. Everything is a competition."
+      "ru": "Всегда полусонный. Иногда гений.",
+      "en": "Always half asleep. Sometimes a genius."
     },
-    "look": "Man in his thirties, tracksuit jacket, headband, a whistle on a cord, athletic build",
-    "color": "#E0533D",
-    "idlePose": "Stretches and rolls his shoulders",
-    "happyReaction": "Flexes both arms like a champion",
-    "sadReaction": "Hands on his head, like a missed penalty",
-    "cardHold": "Snaps it up like a referee showing a card"
+    "look": "Pajamas, a long nightcap with a pompom, fluffy slippers, a pillow under the arm, permanently heavy eyelids",
+    "color": "#8DB255",
+    "entrance": "Shuffles in yawning and falls asleep the moment they sit",
+    "idlePose": "Dozes; a snore bubble grows and pops",
+    "happyReaction": "Wakes with a start, a sleepy thumbs up, nods off again",
+    "sadReaction": "Yawns and pulls the pillow over the head",
+    "cardHold": "Holds it up with one floppy arm, eyes still closed",
+    "victory": "Wide awake for one second, cheers, then falls asleep standing up"
   },
   {
     "id": 8,
     "name": {
-      "ru": "Лёва",
-      "en": "Lyova"
+      "ru": "Чемпион",
+      "en": "The Champ"
     },
     "personality": {
-      "ru": "Художник. Отвечает по вдохновению.",
-      "en": "Artist who answers on inspiration."
+      "ru": "Бьётся с каждым вопросом. Перчатки не снимает.",
+      "en": "Fights every question. Gloves never come off."
     },
-    "look": "Man in his thirties, beret, paint stained scarf, rolled up sleeves, a sketchbook under his arm",
+    "look": "Boxer in a hooded matte robe and a headband, huge boxing gloves that never come off, a big mouthguard grin",
     "color": "#F2C14E",
-    "idlePose": "Doodles in his sketchbook",
-    "happyReaction": "Spins in his seat and blows a kiss to the audience",
-    "sadReaction": "Shrugs serenely: it's art",
-    "cardHold": "Holds it tilted, with a little doodle in the corner"
+    "entrance": "Walks in like a fighter: hood up, bouncing, punching the air",
+    "idlePose": "Bounces in the seat and shadowboxes",
+    "happyReaction": "Gloves up, a champion's strut",
+    "sadReaction": "A dramatic knockout fall; little birds circle the head",
+    "cardHold": "Clamps it between both gloves",
+    "victory": "Lifts an invisible title belt and runs a lap of honour"
   },
   {
     "id": 9,
     "name": {
-      "ru": "Тётя Зарина",
-      "en": "Aunt Zarina"
+      "ru": "Шпион",
+      "en": "The Spy"
     },
     "personality": {
-      "ru": "Лучший повар в семье и самый громкий болельщик.",
-      "en": "Best cook in the family and the loudest fan."
+      "ru": "Никому не верит. Ответы шепчет.",
+      "en": "Trusts no one. Whispers every answer."
     },
-    "look": "Woman in her fifties, apron over a bright dress, sleeves rolled up, a wooden spoon in her pocket",
-    "color": "#D98C5F",
-    "idlePose": "Tastes something from her wooden spoon",
-    "happyReaction": "Bangs the spoon on her palm like a gong and cheers",
-    "sadReaction": "Taps her forehead with the spoon and laughs it off",
-    "cardHold": "Balances it on her wooden spoon and lifts it high"
+    "look": "Trench coat with the collar up, a hat pulled low, dark glasses, a fake moustache that keeps slipping, a newspaper with eye holes",
+    "color": "#4FA3A5",
+    "entrance": "Rolls in sideways like in a spy film and checks the seat for bugs",
+    "idlePose": "Peeks over the newspaper through the eye holes, looks left and right",
+    "happyReaction": "A smug collar adjust; the fake moustache flies off",
+    "sadReaction": "Slides down behind the newspaper until only the hat shows",
+    "cardHold": "Flashes it like a badge for a moment, then hides it",
+    "victory": "Rips off the disguise to reveal an identical disguise underneath"
+  },
+  {
+    "id": 10,
+    "name": {
+      "ru": "Джентльмен",
+      "en": "The Gentleman"
+    },
+    "personality": {
+      "ru": "Безупречные манеры. Извиняется за ошибки.",
+      "en": "Impeccable manners. Apologises for wrong answers."
+    },
+    "look": "Three piece tweed suit, a bowler hat, a monocle, a neat bow tie, a folded umbrella and a teacup on a saucer",
+    "color": "#D2B48C",
+    "entrance": "Tips the bowler to everyone, dusts the seat with a handkerchief, sits with legs crossed",
+    "idlePose": "Sips tea with the little finger raised, checks a pocket watch",
+    "happyReaction": "A restrained golf clap; the monocle gleams",
+    "sadReaction": "The monocle pops out and plops into the tea",
+    "cardHold": "Draws it from the breast pocket and presents it with a slight bow",
+    "victory": "One wild jolly good fist pump, then straightens the bow tie, embarrassed"
+  },
+  {
+    "id": 11,
+    "name": {
+      "ru": "Красотка",
+      "en": "The Bombshell"
+    },
+    "personality": {
+      "ru": "Слишком хороша, чтобы стараться.",
+      "en": "Too gorgeous to try. Winks at every answer."
+    },
+    "look": "Retro pin up glamour, family friendly: big wavy hair, a polka dot dress with a modest neckline, heart shaped sunglasses, bubble gum",
+    "color": "#F25CC6",
+    "entrance": "Struts in in slow motion while a wind machine blows her hair, sits with a hair flip",
+    "idlePose": "Blows a bubble gum bubble, files her nails, glances at the camera",
+    "happyReaction": "Lowers the heart sunglasses and winks; a sparkle pings off her smile",
+    "sadReaction": "The gum bubble pops all over her face",
+    "cardHold": "Holds it up between two fingers without even looking",
+    "victory": "A slow motion hair flip in front of the wind machine, then finger guns"
+  },
+  {
+    "id": 12,
+    "name": {
+      "ru": "Интроверт",
+      "en": "The Introvert"
+    },
+    "personality": {
+      "ru": "Знает все ответы. Лучше промолчит.",
+      "en": "Knows every answer. Would rather not say it."
+    },
+    "look": "Oversized hoodie with the hood up, sleeves over the hands, big headphones, a very thick book",
+    "color": "#9AA8BA",
+    "entrance": "Edges in along the wall and perches on the very edge of the seat",
+    "idlePose": "Reads the book, peeks at the others over it, looks away fast",
+    "happyReaction": "A tiny fist pump, hidden behind the book",
+    "sadReaction": "Pulls the hood strings tight until only the nose shows",
+    "cardHold": "Slides it up from behind the book, barely visible",
+    "victory": "The spotlight hits; hides behind the book, then peeks out with a tiny wave"
+  },
+  {
+    "id": 13,
+    "name": {
+      "ru": "Эмо",
+      "en": "The Emo"
+    },
+    "personality": {
+      "ru": "Никто не понимает. Даже вопросы.",
+      "en": "Nobody understands. Not even the questions."
+    },
+    "look": "All black, a long side fringe over one eye, striped arm warmers, black nail polish, a notebook of sad poems, a tiny personal rain cloud",
+    "color": "#B784F0",
+    "entrance": "Drags in under the personal rain cloud and slumps into the seat",
+    "idlePose": "Blows the fringe out of the eye; it falls straight back",
+    "happyReaction": "Almost smiles, catches itself; the cloud lets one ray of sun through",
+    "sadReaction": "A content sigh, finally at home; the rain gets heavier",
+    "cardHold": "Tears the answer out of the poem notebook and holds it up limply",
+    "victory": "The cloud turns into a rainbow; horrified, pushes it away and pulls the cloud back"
+  },
+  {
+    "id": 14,
+    "name": {
+      "ru": "Пришелец",
+      "en": "The Alien"
+    },
+    "personality": {
+      "ru": "Изучает Землю. Понимает всё не так.",
+      "en": "Studying Earth. Gets Earth very wrong."
+    },
+    "look": "Small body, a big head with three eyes on stalks, a matte silver jumpsuit, a beeping scanner gadget",
+    "color": "#6EE07A",
+    "entrance": "Beamed down in a tractor beam, lands in the seat upside down, turns itself the right way up",
+    "idlePose": "Scans the other guests and the furniture with the beeping gadget",
+    "happyReaction": "Copies an Earth celebration wrong: claps with its feet",
+    "sadReaction": "The eyes droop on their stalks; it phones home on the gadget",
+    "cardHold": "Holds the card upside down, then turns it round",
+    "victory": "The tractor beam lifts it up spinning; it plants a tiny flag on the seat"
+  },
+  {
+    "id": 15,
+    "name": {
+      "ru": "Мим",
+      "en": "The Mime"
+    },
+    "personality": {
+      "ru": "Не говорит ни слова. Живёт в коробке.",
+      "en": "Never says a word. Lives in an invisible box."
+    },
+    "look": "White face paint with one painted tear, a striped shirt, braces, white gloves and a beret; makes no sound at all",
+    "color": "#7FDBE8",
+    "entrance": "Walks in against an invisible wind, sits on an invisible chair, then on the real one",
+    "idlePose": "Feels the walls of an invisible box",
+    "happyReaction": "A silent belly laugh, slapping the knee without a sound",
+    "sadReaction": "An invisible rope pulls it down into the seat; wipes the painted tear",
+    "cardHold": "Pulls the card out of the air on an invisible rope and holds it up",
+    "victory": "Climbs an invisible ladder and waves from the top"
   }
 ]

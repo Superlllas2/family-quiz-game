@@ -115,26 +115,28 @@ Example:
 
 ## characters.json
 
-The guest characters players pick from (`21_staging.md`). The roster is a draft until Ilia approves it.
+The guest characters players pick from (`21_staging.md`): personas, not people, with no real names, nationality or age (D60). The roster is a draft until Ilia approves it.
 
 ```json
 [
   {
     "id": 0,
     "name": {
-      "ru": "Дед Аркадий",
-      "en": "Grandpa Arkady"
+      "ru": "Робот",
+      "en": "The Robot"
     },
     "personality": {
-      "ru": "Знает всё. Особенно то, о чём не спрашивали.",
-      "en": "Knows everything, especially what nobody asked."
+      "ru": "Работает на фактах. Глючит, когда ошибается.",
+      "en": "Runs on facts. Glitches when it's wrong."
     },
-    "look": "Retired engineer in his seventies, tall and wiry, grey cardigan over a pressed shirt, flat cap, reading glasses on a cord, bushy eyebrows",
-    "color": "#C9A227",
-    "idlePose": "Arms crossed, leans back, one eyebrow raised at the stage",
-    "happyReaction": "A slow satisfied nod and one finger up: told you so",
-    "sadReaction": "Waves the question away with a grumble: the question was wrong",
-    "cardHold": "Holds it up stiffly at arm's length without looking at it"
+    "look": "Boxy retro robot with a matte painted metal shell and rounded corners, a screen for a face that shows simple expressions, an antenna with a bulb, dials on the chest, stubby legs and long arms",
+    "color": "#5B9BD5",
+    "entrance": "Rolls in on hidden wheels, unfolds into the seat with whirs and clicks",
+    "idlePose": "Screen face blinks, the antenna bulb pulses, small whirring calculations",
+    "happyReaction": "Antenna lights up, a stiff robot dance with both arms",
+    "sadReaction": "Screen shows an error, a few sparks, powers down and slumps, then reboots",
+    "cardHold": "The card pops out of a slot in its chest; it holds it up on a telescoping arm",
+    "victory": "Spins its head all the way round and fires a confetti cannon from its chest"
   }
 ]
 ```
@@ -146,7 +148,7 @@ The guest characters players pick from (`21_staging.md`). The roster is a draft 
 | `personality` | Localized, one line, at most 60 characters; shown on the `pickCharacter` card |
 | `look` | English, for artists: age, build, clothes, props |
 | `color` | Signature color, `#RRGGBB`, unique, with a contrast ratio of at least 4.5 against `#14161C` (the chip text color) |
-| `idlePose`, `happyReaction`, `sadReaction`, `cardHold` | English, for animators: the four signature animations |
+| `entrance`, `idlePose`, `happyReaction`, `sadReaction`, `cardHold`, `victory` | English, for animators: the six signature animations, each played the way the persona would |
 
 Until the 3D characters exist, the TV and the phone draw a player's character as a chip: a rounded card in `color` with the player's name in `#14161C`. The `pickCharacter` card also shows the character's name and personality line. In the grey box (`21_staging.md`) a character is a capsule in `color` with its name above it. No emoji. The colors are placeholders until the visual style guide exists.
 

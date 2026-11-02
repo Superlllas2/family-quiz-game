@@ -18,13 +18,17 @@ These details from `0004_staging.md` are approved: the seat layout and fill orde
 | D57 | Music | Free placeholder loops for the prototype (sources and licenses in `12_audio.md`). The final music is decided later | |
 | D58 | Host line at Start | New trigger `startCountdown`: a short host line when the start countdown begins, 2 lines per host. `gameStart` stays at the start of the Intro | |
 | D59 | Reference images | `content/ideation/` is ignored by git. Real show stills never go into the repo. Only original generated images go into `docs/moodboard/`, added by Ilia | |
+| D60 | Who the characters are | Personas, not people: no real names, no nationality, no age. Unserious and not realistic, like the contestants in Knowledge is Power (but original). As different from one another as possible. Each persona drives its animations and emotions | The first draft roster (10 named family members) |
+| D61 | More characters | The roster grows to 16. Added: a gentleman in a suit, an introvert, an emo, a family friendly bombshell, and two more of Claude's choosing (an alien and a mime) | The roster of 10 in D55 |
 
 ## Details added while applying these (not yet confirmed by Ilia)
 
 | Detail | Where |
 | --- | --- |
-| The roster itself (names, personalities, looks, colors, animations) is a draft to approve | `content/characters.json`, 21 |
-| Character ids are integers 0 to 9, like the avatar ids were; the protocol version stays 1 (nothing is built yet) | PROTOCOL, 15 |
+| The roster itself (personas, looks, colors, animations) is a draft to approve. The ghost changed from shy to "tries to be scary" so it does not overlap the introvert | `content/characters.json`, 21 |
+| Two more signature animations per character, entrance and victory, so the persona shows when they join and when they win (six in all) | `content/characters.json`, 15, 21, validator |
+| D45's matte, textured materials apply to the cast; its believable proportions now apply to the hosts only, since the cast may be cartoonish. Superseded by D62 in `0006_art_direction.md` | 21 |
+| Character ids are integers 0 to 15, like the avatar ids were; the protocol version stays 1 (nothing is built yet) | PROTOCOL, 15 |
 | Name tag on the TV: the character's name, with the player's name under it in smaller text | 21 |
 | On join the TV gives the first free character (lowest id), as it did with avatars | 02, PROTOCOL |
 | In flat UI (TV lock in row, vote chips, phone top bar and waiting list) a player is shown as a character chip: a rounded card in the signature color with the player's name in `#14161C`. The validator checks that each signature color has a contrast of at least 4.5 with `#14161C` | 06, 15, validator |

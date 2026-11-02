@@ -1,6 +1,6 @@
 # 21 Staging: the TV as a late night show
 
-Status: Draft for prototyping (Nov 2, 2026; `decisions/0004_staging.md`, answers in `decisions/0005_staging_answers.md`). The final race staging is decided after game night 1. The character roster is a draft waiting for approval. The look itself (materials, palette, fonts) is written up later in `10_visual_style.md`; game night 1 gets at most a grey box version.
+Status: Draft for prototyping (Nov 2, 2026; `decisions/0004_staging.md`, answers in `decisions/0005_staging_answers.md`, art direction in `decisions/0006_art_direction.md`). The final race staging is decided after game night 1. The character roster is a draft waiting for approval. The look itself (materials, palette, fonts) is written up later in `10_visual_style.md`; game night 1 gets at most a grey box version.
 
 **Every duration here is a suggested starting point to tune in playtests, not a hard rule.** Each one is a config key under `staging` in `content/config.json` (table in `03_rules.md`), or an existing phase timer. The column "Test" marks the numbers that are pure guesses (**guess**) and those that follow from an existing timer (**timer**).
 
@@ -10,7 +10,8 @@ The TV shows a 3D late night talk show set. The players are the guests, each pla
 
 - **Set:** a guest area with a sofa and armchairs, the host desk next to it, a curtain stage with stage lamps, and a band riser with drums, bass, keys and, if the budget allows, guitar. An evening city view behind the windows.
 - **Original design:** inspired by Russian late night TV, never a copy. No real show's name, logo, floor projection, signature set piece or color scheme. Real show stills never go into the repo (D59); only original generated images go into `docs/moodboard/`.
-- **Look:** not plastic, not glossy, not toy like. Matte, slightly textured materials (wood, fabric, a worn wooden floor), warm practical lights (desk lamps, pendants, stage lamps, bulb strips), soft shadows, a cinematic TV broadcast feel (light film grain and vignette, shallow depth of field on close shots). Characters are stylized but with believable proportions and fabrics.
+- **Look:** a realistic world with cartoon guests (D62). The set, props, lights and hosts are realistic: physically based materials at real world scale, never plastic, glossy or toy like; matte, slightly textured wood, fabric and a worn wooden floor; warm practical lights (desk lamps, pendants, stage lamps, bulb strips), soft shadows, and a cinematic TV broadcast feel (light film grain and vignette, shallow depth of field on close shots), as far as the laptop runs it smoothly.
+- **Guests:** the one exception. They are cartoonish and may be mixed media: 2D billboards in the 3D space, or funny looking cartoonish 3D models. The clash is the joke: they look like they walked in from a cartoon, but the set's lights light them and they cast shadows on it, so they sit in the scene instead of floating on top of it.
 - **Overlay:** all game information (question, options, timer, leaderboard, race track, room code) stays flat UGUI over the 3D camera (`13_architecture.md`). The 3D scene frames it. The only information a player reads in 3D is the name tags and the answer cards.
 
 ## Camera shots
@@ -40,7 +41,7 @@ The phase timers in `02_show_flow.md` stay as they are. In game night 1 every `s
 
 | Phase | Shot | What moves | Music cue | Overlay | Suggested durations (config key) | Test |
 | --- | --- | --- | --- | --- | --- | --- |
-| Lobby | `Wide`, slow drift | When a player joins, their character pops into a free seat with a small pop sound and a name tag; a host turns to them and greets them (`playerJoined` line). A player who picks another character swaps with a pop. When a player leaves, their character stands up and walks off. A disconnected player's character turns grey | Lobby loop | Room code, QR code, "Waiting for players" | Pop in 0.5 s (`staging.lobby.seatPopSeconds`) | guess |
+| Lobby | `Wide`, slow drift | When a player joins, their character makes its signature entrance into a free seat, starting with a small pop sound, and gets a name tag; a host turns to them and greets them (`playerJoined` line). A player who picks another character swaps: the old one leaves with a pop, the new one makes its entrance. When a player leaves, their character stands up and walks off. A disconnected player's character turns grey | Lobby loop | Room code, QR code, "Waiting for players" | Swap pop 0.5 s (`staging.lobby.seatPopSeconds`); entrances about 1.5 s, no timer in the Lobby | guess |
 | StartCountdown | `Wide` | Guests sit up; a host says a short `startCountdown` line; the drummer counts in with the sticks | Lobby loop ends on the count | Big 3, 2, 1 | 3 s (`lobby.startCountdownSeconds`) | timer |
 | Intro | `Establish`, then `Desk`, then `Band`, then `Wide` | Boom down over the studio; the hosts say their `gameStart` lines at the desk; a short band cutaway; guests wave | Show open played over the lobby loop | Title card, then "Who wins tonight?" with prediction counts | Establishing shot 6 s (`staging.intro.establishSeconds`); the rest follows the host lines inside `timers.intro` (30 s) | guess |
 | TopicVote | `Curtain` | Curtain closed; stage lamps sweep slowly over it | Lobby loop, quieter | Four topic cards in front of the curtain with live votes (voters' character chips) | 10 s (`timers.topicVote`) | timer |
@@ -51,7 +52,7 @@ The phase timers in `02_show_flow.md` stay as they are. In game night 1 every `s
 | RoundEnd | `Wide` | The round winner stands up and waves; the others clap | Round end cue | Round leaderboard and round winner | 4 s (`timers.roundEnd`) | timer |
 | FinalIntro | `Wide` | Guests sit up | Final race cue starts | Flat race track overlay with head starts, one line of rules | 8 s (`timers.finalIntro`) | timer |
 | RaceQuestion | `Wide` | Guests react with their happy or sad reaction on each race reveal | Final race loop | Statement, flat race track overlay | `race.answer`, `race.reveal` | timer |
-| Results | `Wide`, then `Band`, then `Desk` | The winner walks to the center of the floor under a spotlight; the others applaud | Winner cue, then the lobby loop | Winner, top 3, two awards | Winner walk 3 s (`staging.results.winnerWalkSeconds`) inside 20 s | guess |
+| Results | `Wide`, then `Band`, then `Desk` | The winner walks to the center of the floor under a spotlight and plays their victory; the others applaud | Winner cue, then the lobby loop | Winner, top 3, two awards | Winner walk 3 s (`staging.results.winnerWalkSeconds`) inside 20 s | guess |
 | Poll | `Wide` | Guests look at their phones | Lobby loop, quiet | "Fill in the poll on your phone", count of submitted polls | | |
 | PlayAgain | `Wide` | Idle | Lobby loop | Final standings, "Play again?" | | |
 
@@ -71,17 +72,22 @@ Eight seats for `players.max` = 8: a four seat sofa in the middle and two armcha
 
 ### Guests: a cast to pick from
 
-The guests are a cast of 10 distinct characters (D55), like the contestants in Knowledge is Power: each player picks one on the phone (`pickCharacter`), and each character can be taken by one player at a time. The roster lives in `content/characters.json` (schema in `15_schemas.md`). **The roster below is a draft for Ilia to approve.**
+The guests are a cast of 16 distinct characters (D55, D61), like the contestants in Knowledge is Power: each player picks one on the phone (`pickCharacter`), and each character can be taken by one player at a time. They are personas, not people: no real names, no nationality and no age; unserious and not realistic (a robot, a ghost, a self made superhero); and as different from each other as possible in silhouette, color and temperament (D60). The persona drives every signature animation and emotion. The roster lives in `content/characters.json` (schema in `15_schemas.md`). **The roster below is a draft for Ilia to approve.**
 
-Each character is its own model with its own proportions and clothes, rigged as a Unity Humanoid so the shared animations retarget onto all of them. Playful, never mocking appearance, ethnicity, weight or disability.
+Each character has its own silhouette and is one of three media, chosen per character later (D62, D64; until then testing uses grey 3D boxes):
+
+- **3D model:** cartoonish proportions, rigged as a Unity Humanoid so the shared animations retarget onto it.
+- **2D billboard:** a flat drawn character on a card in the 3D space that turns to face the active camera. Every shared and signature animation is drawn for it (15 per character), as flipbook frames or a cutout rig, decided only if a character becomes 2D (D64).
+- **Mixed:** for example a 3D body with a drawn 2D face.
+
+However unrealistic, each one has a head, two arms and a way to sit (the ghost hovers over its seat with its legs hidden). Playful, never mocking appearance, ethnicity, weight or disability.
 
 **Name tag:** the character's name, with the player's name under it in smaller text.
 
-**Shared animations** (one set, retargeted to every character):
+**Shared animations** (one set, retargeted onto every 3D character and drawn for every 2D one):
 
 | Animation | When | Plays |
 | --- | --- | --- |
-| Pop in and sit | Join, or a character swap in the Lobby | Once, 0.5 s |
 | Stand up and walk off | Leave | Once |
 | Wave | Intro, round winner | Once |
 | Lock in nod | The player locks in an answer | Once, short |
@@ -90,29 +96,35 @@ Each character is its own model with its own proportions and clothes, rigged as 
 | Hit flinch | A power up lands on this player | Once |
 | Applaud | Someone else wins a round or the game | Loop |
 | Look at phone | Poll | Loop |
-| Walk to center and celebrate | Game winner in Results | Once, then loop |
+| Walk to center | Game winner in Results, before their victory | Once |
 | Away (grey material, no animation) | Disconnected | |
 
-**Signature animations** (four per character, 40 in all): an idle pose (loop), a happy reaction and a sad reaction (once each, about 1.5 s to fit `staging.reveal.reactionSeconds`), and the way they raise and hold their answer card (raise once, then a hold loop).
+**Signature animations** (six per character, 96 in all), each played the way the persona would: an entrance (on join and on a character swap, about 1.5 s; the Lobby has no timer), an idle pose (loop), a happy and a sad reaction (once each, about 1.5 s to fit `staging.reveal.reactionSeconds`), the way they raise and hold their answer card (raise once, then a hold loop), and a victory (game winner in Results, then loop).
 
 **Draft roster** (`content/characters.json`; looks are in the file):
 
-| Id | Character | Color | Personality | Idle pose (loop) | Happy reaction | Sad reaction | Card hold |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | Grandpa Arkady (Дед Аркадий) | `#C9A227` | Knows everything, especially what nobody asked. | Arms crossed, leans back, one eyebrow raised at the stage | A slow satisfied nod and one finger up: told you so | Waves the question away with a grumble: the question was wrong | Holds it up stiffly at arm's length without looking at it |
-| 1 | Timka (Тимка) | `#FF8A3D` | Eight years old, a hundred questions a minute. | Bounces on the seat and swings his legs | Jumps up on the cushion with both arms in the air | Flops back into the sofa like a falling tree, then pops up again | Waves it high above his head with both hands |
-| 2 | Lera (Лера) | `#8E7CC3` | Teenager. Pretends she couldn't care less. | Scrolls her phone and glances up now and then | A small fist pump she tries to hide | Rolls her eyes and pulls her hood up | Flicks it up with two fingers without looking up from her phone |
-| 3 | Granny Nina (Баба Нина) | `#E57A9A` | Sweet granny who plays to win. | Knits calmly | Raises both knitting needles like a trophy | Tuts and knits twice as fast | Holds it up neatly with both hands and a sweet smile |
-| 4 | Olga (Ольга) | `#4FA3A5` | Everything goes to plan, even the fun. | Writes notes in her notebook | Ticks a box in the notebook with a satisfied nod | Crosses something out and sighs | Presents it like a slide in a meeting, pointing with her pen |
-| 5 | Boris (Борис) | `#8DB255` | A joke for every pause, and he laughs first. | Sips his tea and chuckles at his own thought | Double finger guns at the camera | Clutches his heart theatrically | Holds it next to his face and winks |
-| 6 | Vika (Вика) | `#5B9BD5` | Student with a fact for every occasion. | Reads a tiny book and turns a page | Pushes her glasses up and does a quick seated victory dance | Flips through her book in a panic | Holds it up and taps the answer with a pen |
-| 7 | Max (Макс) | `#E0533D` | Sporty uncle. Everything is a competition. | Stretches and rolls his shoulders | Flexes both arms like a champion | Hands on his head, like a missed penalty | Snaps it up like a referee showing a card |
-| 8 | Lyova (Лёва) | `#F2C14E` | Artist who answers on inspiration. | Doodles in his sketchbook | Spins in his seat and blows a kiss to the audience | Shrugs serenely: it's art | Holds it tilted, with a little doodle in the corner |
-| 9 | Aunt Zarina (Тётя Зарина) | `#D98C5F` | Best cook in the family and the loudest fan. | Tastes something from her wooden spoon | Bangs the spoon on her palm like a gong and cheers | Taps her forehead with the spoon and laughs it off | Balances it on her wooden spoon and lifts it high |
+| Id | Character | Color | Persona | Entrance | Idle pose (loop) | Happy | Sad | Card hold | Victory |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | The Robot (Робот) | `#5B9BD5` | Runs on facts. Glitches when it's wrong. | Rolls in on hidden wheels, unfolds into the seat with whirs and clicks | Screen face blinks, the antenna bulb pulses, small whirring calculations | Antenna lights up, a stiff robot dance with both arms | Screen shows an error, a few sparks, powers down and slumps, then reboots | The card pops out of a slot in its chest; it holds it up on a telescoping arm | Spins its head all the way round and fires a confetti cannon from its chest |
+| 1 | The Diva (Дива) | `#E57A9A` | Sure every question is about her. | Sweeps in blowing kisses to the audience and settles into the seat with a flick of the boa | Checks her reflection in the hand mirror and fluffs her hair | Deep bow, throws invisible roses to the audience | Faints dramatically onto the armrest, the back of a hand on her forehead | Holds it like an award, the other hand on her heart | Accepts invisible flowers and gives a tearful thank you speech |
+| 2 | The Ghost (Призрак) | `#DDE3EA` | Tries so hard to be scary. Nobody is scared. | Rises through the seat with a big BOO; nobody reacts | Bobs up and down, rattles the tiny chain, practises scary faces | A spooky laugh and a loop in the air | Deflates into a puddle of sheet, then slowly floats back up | The card floats up beside it, wobbling spookily | Splits into three ghosts that all shout boo at once, then back into one |
+| 3 | The Caveman (Пещерный человек) | `#C08457` | Never read a book. Trusts the gut. | Stomps in dragging the club, sniffs the seat, then sits | Gnaws a bone, scratches the head, sniffs the air | Beats the chest and roars | Bonks their own head gently with the club; little stars circle | Chisels the answer onto a stone tablet and lifts it overhead | Discovers fire: a tiny flame on the club, a dance around it |
+| 4 | The Superhero (Супергерой) | `#E0533D` | Has a cape. Has no superpowers. | Runs in with both arms forward, flying, and trips into the seat | Strikes heroic poses while the cape flutters with no wind | Leaps up into the classic flying pose | The cape flops over the whole face | Thrusts it toward the sky with a clenched fist | Rips open the sweater to show another sweater with a bigger lightning bolt |
+| 5 | The Wizard (Волшебник) | `#8E7CC3` | Sees answers in a crystal ball. Mostly wrong. | Appears in a puff of smoke, coughing | Rubs the crystal ball, which glows faintly | The wand shoots a small firework | The wand fizzles and the hat droops down over the whole face | Conjures it out of thin air with a flick of the wand | Makes a swirl of little stars rain from the hat |
+| 6 | The Chef (Шеф) | `#FF8A3D` | Treats every question like a recipe. Hot tempered. | Bursts in through invisible swing doors carrying a tray | Tastes from the ladle and adds an invisible pinch of salt | Chef's kiss, then tosses the hat into the air | Steam puffs from the ears; slaps the towel onto the shoulder | Serves it on a silver tray, lifting the lid | A big harmless flambé whoosh from a pan, then a bow |
+| 7 | The Sleepyhead (Соня) | `#8DB255` | Always half asleep. Sometimes a genius. | Shuffles in yawning and falls asleep the moment they sit | Dozes; a snore bubble grows and pops | Wakes with a start, a sleepy thumbs up, nods off again | Yawns and pulls the pillow over the head | Holds it up with one floppy arm, eyes still closed | Wide awake for one second, cheers, then falls asleep standing up |
+| 8 | The Champ (Чемпион) | `#F2C14E` | Fights every question. Gloves never come off. | Walks in like a fighter: hood up, bouncing, punching the air | Bounces in the seat and shadowboxes | Gloves up, a champion's strut | A dramatic knockout fall; little birds circle the head | Clamps it between both gloves | Lifts an invisible title belt and runs a lap of honour |
+| 9 | The Spy (Шпион) | `#4FA3A5` | Trusts no one. Whispers every answer. | Rolls in sideways like in a spy film and checks the seat for bugs | Peeks over the newspaper through the eye holes, looks left and right | A smug collar adjust; the fake moustache flies off | Slides down behind the newspaper until only the hat shows | Flashes it like a badge for a moment, then hides it | Rips off the disguise to reveal an identical disguise underneath |
+| 10 | The Gentleman (Джентльмен) | `#D2B48C` | Impeccable manners. Apologises for wrong answers. | Tips the bowler to everyone, dusts the seat with a handkerchief, sits with legs crossed | Sips tea with the little finger raised, checks a pocket watch | A restrained golf clap; the monocle gleams | The monocle pops out and plops into the tea | Draws it from the breast pocket and presents it with a slight bow | One wild jolly good fist pump, then straightens the bow tie, embarrassed |
+| 11 | The Bombshell (Красотка) | `#F25CC6` | Too gorgeous to try. Winks at every answer. | Struts in in slow motion while a wind machine blows her hair, sits with a hair flip | Blows a bubble gum bubble, files her nails, glances at the camera | Lowers the heart sunglasses and winks; a sparkle pings off her smile | The gum bubble pops all over her face | Holds it up between two fingers without even looking | A slow motion hair flip in front of the wind machine, then finger guns |
+| 12 | The Introvert (Интроверт) | `#9AA8BA` | Knows every answer. Would rather not say it. | Edges in along the wall and perches on the very edge of the seat | Reads the book, peeks at the others over it, looks away fast | A tiny fist pump, hidden behind the book | Pulls the hood strings tight until only the nose shows | Slides it up from behind the book, barely visible | The spotlight hits; hides behind the book, then peeks out with a tiny wave |
+| 13 | The Emo (Эмо) | `#B784F0` | Nobody understands. Not even the questions. | Drags in under the personal rain cloud and slumps into the seat | Blows the fringe out of the eye; it falls straight back | Almost smiles, catches itself; the cloud lets one ray of sun through | A content sigh, finally at home; the rain gets heavier | Tears the answer out of the poem notebook and holds it up limply | The cloud turns into a rainbow; horrified, pushes it away and pulls the cloud back |
+| 14 | The Alien (Пришелец) | `#6EE07A` | Studying Earth. Gets Earth very wrong. | Beamed down in a tractor beam, lands in the seat upside down, turns itself the right way up | Scans the other guests and the furniture with the beeping gadget | Copies an Earth celebration wrong: claps with its feet | The eyes droop on their stalks; it phones home on the gadget | Holds the card upside down, then turns it round | The tractor beam lifts it up spinning; it plants a tiny flag on the seat |
+| 15 | The Mime (Мим) | `#7FDBE8` | Never says a word. Lives in an invisible box. | Walks in against an invisible wind, sits on an invisible chair, then on the real one | Feels the walls of an invisible box | A silent belly laugh, slapping the knee without a sound | An invisible rope pulls it down into the seat; wipes the painted tear | Pulls the card out of the air on an invisible rope and holds it up | Climbs an invisible ladder and waves from the top |
 
 ### Hosts
 
-Two unique characters based on Konstantin and Ilja, with the same proportions and material rules as the guests. Both sit at the desk (D52).
+Two unique characters based on Konstantin and Ilja, in the realistic style of the set, not the cartoon style of the guests (D62, D63). Both sit at the desk (D52).
 
 | Animation | When | Plays |
 | --- | --- | --- |
@@ -169,6 +181,8 @@ Decided after game night 1 (D54). Until then the race is the flat track overlay 
 ## Ideas for later
 
 - **Sidekick by the band:** one host moves from the desk to a spot by the band for some segments, as a sidekick who heckles and cues the band. For now both hosts sit at the desk (D52).
+- **Medium per character (D64):** which characters are 3D, 2D billboards or mixed. Then a `medium` field goes into `content/characters.json` and its schema in `15_schemas.md`.
+- **2D animation (D64), only if a character becomes 2D:** plain flipbook frames (no package), or a cutout rig with Unity's 2D Animation package (a new package needs asking first).
 
 ## Grey box version (game night 1 stretch)
 
