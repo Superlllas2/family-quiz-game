@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { AnswerClock } from './answerClock';
+import { AnswerClock, screenDrawn } from './answerClock';
 
 describe('answer clock (ms)', () => {
   it('measures from the moment the options first appeared', () => {
@@ -29,5 +29,37 @@ describe('answer clock (ms)', () => {
     now = 6000;
     expect(clock.ms(17)).toBe(1000);
     expect(clock.ms(16)).toBe(6000);
+  });
+});
+
+describe('answer clock and drawn screens', () => {
+  const answer = (phaseId: number, endsInMs: number) => ({ phaseId, id: 'answerChoice', endsInMs, data: {} });
+
+  it('last call: a second answerChoice with the same phaseId and a smaller endsInMs keeps the clock', () => {
+    let now = 500;
+    const clock = new AnswerClock(() => now);
+    screenDrawn(clock, answer(16, 15000));
+    now = 9000;
+    screenDrawn(clock, answer(16, 3000)); // last call
+    now = 10200;
+    expect(clock.ms(16)).toBe(9700);
+  });
+
+  it('screens without options do not start the clock', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    screenDrawn(clock, { phaseId: 15, id: 'getReady', endsInMs: 4000, data: {} });
+    screenDrawn(clock, { phaseId: 16, id: 'waiting', endsInMs: 4000, data: {} });
+    now = 1000;
+    expect(clock.ms(15)).toBe(0);
+    expect(clock.ms(16)).toBe(0);
+  });
+
+  it('after a reload (a new clock) it starts when the restored screen is drawn', () => {
+    let now = 40000;
+    const clock = new AnswerClock(() => now);
+    screenDrawn(clock, answer(16, 6000));
+    now = 41500;
+    expect(clock.ms(16)).toBe(1500);
   });
 });

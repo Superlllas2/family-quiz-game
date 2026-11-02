@@ -11,6 +11,7 @@
 //   (without deleting it for the newer tab); Back leads to a fresh join.
 // - Close code 4004: with a token, a lost connection (the TV may be restarting); without one, error `roomNotFound`.
 // - `refused` `badToken`: delete the token, show join. Other reasons: error screen until back().
+// - leave(): called after `leave` is acked. Deletes the token for this room (and tab), closes the socket, shows join.
 
 import { NO_CONNECTION_MS, PING_INTERVAL_MS, RETRY_MS } from '../constants';
 import {
@@ -143,6 +144,21 @@ export class Session {
     this.suspended = false;
     this.pendingJoin = null;
     this.clearTimer('joinTimer');
+    this.setStatus({ kind: 'join', problem: null });
+  }
+
+  /**
+   * Leave game, after the TV app acked `leave` (PROTOCOL.md section 4): the seat is gone, so the token for this
+   * room (under the `&tab=<n>` key if any) is deleted and the socket closed; nothing reconnects. Join is shown,
+   * with the room code kept.
+   */
+  leave(): void {
+    this.deps.tokens.remove(this.room);
+    this.pendingJoin = null;
+    this.suspended = false;
+    this.clearTimer('joinTimer');
+    this.clearTimer('retryTimer');
+    this.dropSocket();
     this.setStatus({ kind: 'join', problem: null });
   }
 

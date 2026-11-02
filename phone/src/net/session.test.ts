@@ -321,6 +321,46 @@ describe('session: connection and reconnects (PROTOCOL.md sections 2, 4, 5)', ()
     expect(sock.sent).toHaveLength(count);
   });
 
+  it('leave deletes the token, closes the socket and shows join; nothing reconnects', () => {
+    const sock = joinAndWelcome();
+    session.leave();
+    expect(tokens.get('ABCD')).toBeNull();
+    expect(sharedStore.getItem('fq.token.ABCD')).toBeNull();
+    expect(sock.closedByClient).toBe(true);
+    expect(status()).toEqual({ kind: 'join', problem: null });
+    expect(session.currentRoom).toBe('ABCD');
+    session.onVisible();
+    session.resume('tvBack');
+    vi.advanceTimersByTime(10000);
+    expect(sockets).toHaveLength(1);
+    // A fresh join opens a new socket and sends join, not rejoin.
+    session.join('ABCD', 'Mama', 'ru');
+    lastSocket().open();
+    expect(sockets).toHaveLength(2);
+    expect(lastSocket().types()).toEqual(['join']);
+  });
+
+  it('leave with &tab=<n> deletes only the token of that tab', () => {
+    const store = memoryStore();
+    store.setItem('fq.token.ABCD', 'other-tab-seat');
+    tokens = new TokenStore(store, '2');
+    session = new Session({
+      createSocket: (url) => {
+        const sock = new FakeSocket(url);
+        sockets.push(sock);
+        return sock;
+      },
+      urlFor: (room) => room,
+      tokens,
+      timers: globalTimers(() => Date.now()),
+    });
+    joinAndWelcome('tabtok');
+    expect(store.getItem('fq.token.ABCD.2')).toBe('tabtok');
+    session.leave();
+    expect(store.getItem('fq.token.ABCD.2')).toBeNull();
+    expect(store.getItem('fq.token.ABCD')).toBe('other-tab-seat');
+  });
+
   it('passes TV messages on and ignores unknown ones without crashing', () => {
     const got: unknown[] = [];
     session.subscribe({ message: (m) => got.push(m.type) });

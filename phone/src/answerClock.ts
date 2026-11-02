@@ -1,7 +1,7 @@
 // The answer clock (`ms`): starts when the options first appear for a phaseId.
 // A new screen with the same phaseId (last call) never restarts it (PROTOCOL.md section 3, D28).
 
-import type { PhaseId } from './protocol';
+import type { PhaseId, ScreenState } from './protocol';
 
 export class AnswerClock {
   private readonly shownAt = new Map<PhaseId, number>();
@@ -19,4 +19,12 @@ export class AnswerClock {
     if (start === undefined) return 0;
     return Math.max(0, Math.round(this.now() - start));
   }
+}
+
+/** Screen ids that show answer options; drawing one starts the clock for its phaseId. */
+const ANSWER_SCREENS: readonly string[] = ['answerChoice'];
+
+/** Called when a screen is drawn. After a page reload this is the restored screen, so the clock starts then. */
+export function screenDrawn(clock: AnswerClock, screen: ScreenState): void {
+  if (ANSWER_SCREENS.includes(screen.id)) clock.shown(screen.phaseId);
 }
