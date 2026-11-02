@@ -65,6 +65,7 @@ export function App({ deps }: { deps: AppDeps }) {
     const showScreen = (next: ScreenState): void => {
       // Always a new arrival time, also for a last call with the same phaseId (the countdown re-syncs).
       setCurrent({ screen: next, receivedAt: deps.now() });
+      clock.arrived(next.phaseId);
       // The pick status lives as long as pickCharacter is showing: its refresh after characterTaken may or may
       // not carry a new phaseId, and the note must survive it.
       if (next.id !== 'pickCharacter') {
@@ -105,6 +106,7 @@ export function App({ deps }: { deps: AppDeps }) {
           setSettingsOpen(false);
           setChoice(null);
           answeredPhase.current = null;
+          clock.reset();
         }
       },
       message: onMessage,
@@ -114,7 +116,7 @@ export function App({ deps }: { deps: AppDeps }) {
       offSession();
       offInputs();
     };
-  }, [session, sender, deps]);
+  }, [session, sender, deps, clock]);
 
   useEffect(() => {
     document.documentElement.lang = lang;

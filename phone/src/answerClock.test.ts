@@ -63,3 +63,39 @@ describe('answer clock and drawn screens', () => {
     expect(clock.ms(16)).toBe(1500);
   });
 });
+
+describe('answer clock across games and TV restarts (phaseIds start again at 1)', () => {
+  it('a screen with another phaseId forgets the old start, so a reused phaseId starts fresh', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    clock.shown(4); // first TV session, question 1
+    now = 200000;
+    clock.arrived(1); // the restarted TV's lobby
+    clock.arrived(4);
+    clock.shown(4); // the new game's question 1, same phaseId
+    now = 201300;
+    expect(clock.ms(4)).toBe(1300);
+  });
+
+  it('a screen with the same phaseId (last call, waiting) keeps the start', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    clock.shown(4);
+    now = 5000;
+    clock.arrived(4);
+    clock.shown(4);
+    now = 6000;
+    expect(clock.ms(4)).toBe(6000);
+  });
+
+  it('reset forgets every start (back to join)', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    clock.shown(13);
+    clock.reset();
+    now = 90000;
+    clock.shown(13);
+    now = 91000;
+    expect(clock.ms(13)).toBe(1000);
+  });
+});
