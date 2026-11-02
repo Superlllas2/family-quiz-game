@@ -134,6 +134,27 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
+        public void ACommandAlsoRaisesATimeoutThatIsDueWithoutATick()
+        {
+            var (f, seats) = SlowSecondPlayer();
+            f.Clock.Advance(f.WindowMs + f.GraceMs); // no Tick: the next command finds c1 done
+            var events = f.Choice("c2", f.Right, 100);
+            Assert.That(Names(events).Take(3), Is.EqualTo(new[] { "PlayerTimedOut", "InputAcked(True)", "AnswerLocked" }));
+            Assert.That(events.OfType<PlayerTimedOut>().Single().PlayerId, Is.EqualTo(seats[0].PlayerId));
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Reveal));
+        }
+
+        [Test]
+        public void ADisconnectedPlayerTimesOutToo()
+        {
+            var (f, seats) = SlowSecondPlayer();
+            f.Send(new ConnectionClosed("c1"));
+            var events = f.Advance(f.WindowMs + f.GraceMs);
+            Assert.That(events.OfType<PlayerTimedOut>().Single().PlayerId, Is.EqualTo(seats[0].PlayerId));
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Answer), "the connected c2 still has time");
+        }
+
+        [Test]
         public void ATimerMultiplierChangedDuringAnswerAppliesFromTheNextAnswer()
         {
             var f = new LobbyFixture();
