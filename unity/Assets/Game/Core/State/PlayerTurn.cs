@@ -32,6 +32,9 @@ namespace FamilyQuiz.Core.State
 
         public bool Locked => Choice.HasValue;
 
+        /// <summary>True once the player reached DeadlineMs plus net.inputGraceMs without locking in (PlayerTimedOut raised).</summary>
+        public bool TimedOut { get; internal set; }
+
         /// <summary>Shared rank before this question.</summary>
         public int RankBefore { get; internal set; }
 

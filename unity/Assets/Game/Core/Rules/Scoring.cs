@@ -6,6 +6,8 @@ namespace FamilyQuiz.Core.Rules
     /// <summary>Points per answer (docs/03_rules.md, "Scoring"). Pure functions of the config and the answer.</summary>
     public static class Scoring
     {
+        private const int FloatDecimals = 6;
+
         /// <summary>
         /// Multiple choice: points = roundTo(maxPoints x (1 - speedPenalty x t / T)) x multiplier, with t clamped to 0..T,
         /// rounded to the nearest scoring.roundTo before the multiplier (midpoints away from zero). Wrong or no answer: 0.
@@ -20,7 +22,8 @@ namespace FamilyQuiz.Core.Rules
         {
             if (!correct || windowMs <= 0) return 0;
             long t = ClampMs(ms, windowMs);
-            double raw = scoring.MaxPoints * (1.0 - scoring.SpeedPenalty * t / windowMs);
+            // Rounded to 6 decimals first so a value that is a midpoint on paper (875) is not 874.9999999 in floating point.
+            double raw = Math.Round(scoring.MaxPoints * (1.0 - scoring.SpeedPenalty * t / windowMs), FloatDecimals);
             double rounded = RoundTo(raw, scoring.RoundTo);
             double points = Math.Round(rounded * multiplier, MidpointRounding.AwayFromZero);
             return points <= 0 ? 0 : (int)points;

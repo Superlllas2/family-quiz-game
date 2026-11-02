@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using FamilyQuiz.Core.Commands;
 using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.Events;
@@ -138,6 +139,7 @@ namespace FamilyQuiz.Core.Show
             }
 
             if (_state.Phase != GamePhase.Answer) return;
+            RaiseTimeouts(now, output);
             if (AnswerDueAt(out var reason) <= now)
             {
                 EndAnswer(reason, now, output);
@@ -145,6 +147,7 @@ namespace FamilyQuiz.Core.Show
             }
 
             CheckLastCall(now, output);
+            _state.PhaseEndsAtMs = LatestDeadlinePlusGrace();
         }
 
         /// <summary>Ends every phase that is due by the clock, each at its scheduled time, and starts the next.</summary>
@@ -160,6 +163,7 @@ namespace FamilyQuiz.Core.Show
                         return;
                     case GamePhase.Answer:
                         long due = AnswerDueAt(out var reason);
+                        RaiseTimeouts(Math.Min(now, due), output);
                         if (due > now) return;
                         EndAnswer(reason, due, output);
                         break;
@@ -205,6 +209,30 @@ namespace FamilyQuiz.Core.Show
             return latestOpen;
         }
 
+        /// <summary>
+        /// PlayerTimedOut, once per player per Answer phase, for every player (connected or not) who has not locked in
+        /// and whose deadline plus net.inputGraceMs is at or before the given time; earliest first.
+        /// </summary>
+        private void RaiseTimeouts(long upTo, List<IGameEvent> output)
+        {
+            long grace = _config.Net.InputGraceMs;
+            List<PlayerState> due = null;
+            foreach (var p in _state.Players)
+            {
+                var turn = p.Turn;
+                if (turn == null || turn.Locked || turn.TimedOut || turn.DeadlineMs + grace > upTo) continue;
+                (due ?? (due = new List<PlayerState>())).Add(p);
+            }
+
+            if (due == null) return;
+            // Stable: equal deadlines keep the join order.
+            foreach (var p in due.OrderBy(x => x.Turn.DeadlineMs))
+            {
+                p.Turn.TimedOut = true;
+                output.Add(new PlayerTimedOut(p.PlayerId, _state.PhaseId));
+            }
+        }
+
         private void CheckLastCall(long now, List<IGameEvent> output)
         {
             PlayerState remaining = null;
@@ -232,15 +260,21 @@ namespace FamilyQuiz.Core.Show
             output.Add(new LastCallStarted(remaining.PlayerId, _state.PhaseId, turn.DeadlineMs));
         }
 
+        /// <summary>
+        /// The latest moment the Answer can end (D73): the latest deadline plus grace over the players who have not
+        /// locked in, connected or not. When everyone has locked in it stays where it was (the phase ends at once).
+        /// </summary>
         private long LatestDeadlinePlusGrace()
         {
-            long latest = _state.PhaseStartedAtMs;
+            long? latest = null;
             foreach (var p in _state.Players)
             {
-                if (p.Turn != null) latest = Math.Max(latest, p.Turn.DeadlineMs + _config.Net.InputGraceMs);
+                if (p.Turn == null || p.Turn.Locked) continue;
+                long end = p.Turn.DeadlineMs + _config.Net.InputGraceMs;
+                if (!latest.HasValue || end > latest.Value) latest = end;
             }
 
-            return latest;
+            return latest ?? _state.PhaseEndsAtMs ?? _state.PhaseStartedAtMs;
         }
 
         // ---------------------------------------------------------------- phase changes
