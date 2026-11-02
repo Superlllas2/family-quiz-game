@@ -2,7 +2,7 @@
 
 Snapshot from Nov 1, 2026 of the live doc at https://claude.ai/artifact/UQA5Hd1S8UzTiAANuSngNJ. **This repo copy holds the current status** (updated Nov 2, 2026 for game night 1).
 
-**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`.
+**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`. Decisions from the spec review are in `docs/decisions/0002_spec_review.md`.
 
 ## How to use this kit
 
@@ -33,7 +33,7 @@ Update the Status column as you go; the kit is ready when every row says Done.
 | 6 | Phone screens and user flow | Game design | Done for game night 1 | `docs/06_phone_screens.md` |
 | 7 | Host bibles and line list | Game design | Later | `docs/07_hosts.md` |
 | 8 | Content guidelines | Game design | Later | `docs/08_content.md` |
-| 9 | Settings and accessibility | Game design | Partial (settings listed in 03 and 06) | `docs/09_settings.md` |
+| 9 | Settings and accessibility | Game design | Partial (game night 1 settings listed in 02, 03 and 06) | `docs/09_settings.md` |
 | 10 | Visual style guide | Look and feel | Later | `docs/10_visual_style.md` |
 | 11 | Motion and feedback spec | Look and feel | Later | `docs/11_motion.md` |
 | 12 | Audio direction and sound list | Look and feel | Later | `docs/12_audio.md` |
@@ -79,7 +79,7 @@ These say what the game is and how it plays. Each lists what it must contain, th
 ### 6. Phone screens and user flow
 
 - **Contains:** every phone screen (join, name and avatar, lobby, waiting, vote, each answer type, power up pick, target pick, sabotage effect, mini game, result, poll, reconnecting), each with its one decision, its buttons and where it leads. A flow diagram of how screens connect.
-- **Open:** Avatar system: photos, drawn faces or presets? What the first player who joined (the host phone) can do that others cannot.
+- **Open:** Decided for game night 1 (0002): 12 preset avatars (colored shape plus first letter) and no host phone; every phone has the same rights.
 
 ### 7. Host bibles and line list
 
@@ -93,8 +93,8 @@ These say what the game is and how it plays. Each lists what it must contain, th
 
 ### 9. Settings and accessibility
 
-- **Contains:** every toggle and slider with its default and where it is changed (TV menu or host phone): game length, chaos level, each power up, kid timers, volume sliders, reduce motion, show question on phone, language.
-- **Open:** Is there a settings screen on the TV, or only on the host phone?
+- **Contains:** every toggle and slider with its default and where it is changed (TV settings panel or the player's own phone): game length, chaos level, each power up, kid timers, volume sliders, reduce motion, show question on phone, language.
+- **Open:** Decided for game night 1 (0002): game settings live in a TV settings panel (Tab key, mouse); phones keep only language, more time and leave.
 
 ## Look and feel documents
 
@@ -174,7 +174,7 @@ AI skips these unless they are listed. Each needs one line saying what the game 
 - Only 2 players, or 8 players
 - A player joins mid game, or joins twice from the same phone
 - A phone locks, reloads, or loses WiFi during a question
-- The host phone (first joined) leaves
+- A player leaves on purpose
 - Nobody answers a question; everyone answers wrong
 - Two players tie for the win, or tie for a rank that decides targeting
 - A power up targets a player who just disconnected

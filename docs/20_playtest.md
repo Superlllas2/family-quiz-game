@@ -1,11 +1,12 @@
 # 20 Playtest plan
 
-Status: Done for game night 1 (Nov 2, 2026). Background and reasons: `research_party_quiz_fun.md`, section "Family game nights prove fun only when you measure behavior".
+Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`). Background and reasons: `research_party_quiz_fun.md`, section "Family game nights prove fun only when you measure behavior".
 
 ## Before the game night
 
 - Charge the laptop, test the HDMI connection and the TV sound.
-- Run one full game with bots and two of your own phones on the WiFi you will use.
+- Run one full game with two of your own phones and extra browser tabs on the laptop (`?room=ABCD&tab=2`, `&tab=3`, ...) on the WiFi you will use.
+- Before the first game with friends, press Tab on the laptop and use Reset seen questions, so the rehearsal does not use up the questions.
 - Print or open the observation sheet. Ask one friend who is not playing to fill it in, or record audio with everyone's consent.
 - Read the same short intro every time: "We are testing the game, not you. Be honest; problems help us more than praise."
 
@@ -21,7 +22,7 @@ Status: Done for game night 1 (Nov 2, 2026). Background and reasons: `research_p
 
 ## The poll (on the phones, after Results, before any group talk)
 
-Stored in `content/poll.json`. Anonymous: the log stores answers without player ids.
+Stored in `content/poll.json`. Anonymous: the log stores answers without player ids. The poll closes when every connected phone has submitted, or after 90 s (`poll.maxSeconds`).
 
 | id | Question (RU / EN) | Kind |
 | --- | --- | --- |
@@ -36,5 +37,5 @@ Stored in `content/poll.json`. Anonymous: the log stores answers without player 
 ## After the game night
 
 1. Copy the log folder and the poll results into `playtests/2026-11-07/` (or the actual date) in the repo.
-2. Run `tools/analyze_log` and write `playtests/<date>/notes.md`: idle share, phase durations, the observation sheet, poll answers, and the top 3 problems.
+2. Run `tools/analyze_log` and write `playtests/<date>/notes.md`: idle share (reported, no target for game night 1), longest idle stretch outside Intro, FinalIntro and Results (should stay at or under 10 s), phase durations, the observation sheet, poll answers, and the top 3 problems.
 3. For each of the three open questions (D15 power ups on the phone, D14 targeting, D16 timer), write keep, change or drop with the evidence.

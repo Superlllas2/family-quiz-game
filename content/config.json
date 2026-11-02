@@ -20,7 +20,7 @@
     "formatOrder": ["multipleChoice", "multipleChoice", "multipleChoice", "closestValue"]
   },
   "topics": { "doors": 4, "minUnseenToOffer": 4, "mixedTopicId": "mixed" },
-  "scoring": { "maxPoints": 1000, "speedPenalty": 0.5, "roundTo": 10 },
+  "scoring": { "maxPoints": 1000, "speedPenalty": 0.5, "roundTo": 10, "fastAnswerMs": 2000 },
   "closestValue": { "closestBonus": 200 },
   "powerUps": {
     "enabled": true,
@@ -49,6 +49,8 @@
     "timerMultiplierOptions": [1, 1.5, 2],
     "seatHoldSeconds": 300
   },
-  "hosts": { "minGapSeconds": 3, "bubbleSeconds": 3.5 },
-  "poll": { "enabled": true }
+  "lobby": { "startCountdownSeconds": 3 },
+  "net": { "inputGraceMs": 500, "tvReconnectSeconds": 2 },
+  "hosts": { "minGapSeconds": 3, "bubbleSeconds": 3.5, "streakTrigger": 3 },
+  "poll": { "enabled": true, "maxSeconds": 90 }
 }

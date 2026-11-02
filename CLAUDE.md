@@ -38,7 +38,7 @@ Every feature must pass all five. A feature that breaks one is redesigned or cut
 - The TV app owns every rule and every second. Phones and the relay hold no game logic.
 - `Assets/Game/Core` is plain C#: no `UnityEngine`, no network, no audio. Its assembly definition has "No Engine References" on.
 - Dependencies point one way: every layer may use `Core`; `Core` uses nothing. `Presentation` may reference `Core`, never the reverse.
-- Commands in, events out. Only commands (`SubmitAnswer`, `VoteTopic`, `UsePowerUp`, `Skip`) change the game state. Only events (`PhaseStarted`, `AnswerLocked`, `Revealed`, `ScoreChanged`, `PowerUpApplied`) report what happened.
+- Commands in, events out. Only commands (`SubmitAnswer`, `VoteTopic`, `UsePowerUp`, `LobbyAction`) change the game state. Only events (`PhaseStarted`, `AnswerLocked`, `Revealed`, `ScoreChanged`, `PowerUpApplied`) report what happened.
 - Listeners (Presentation, Dialogue, Audio, Telemetry) only listen. They can never change state or delay a phase.
 - The core owns the clock. Clock and random numbers are injected so tests run at 100x speed and seeds replay games exactly.
 - Network messages are queued and handled once per frame on Unity's main thread.
@@ -49,7 +49,7 @@ Every feature must pass all five. A feature that breaks one is redesigned or cut
 ## How to work
 
 1. Read the spec for the feature in `docs/`.
-2. Write the tests first: a unit test or a bot simulation, straight from the spec's acceptance criteria.
+2. Write the tests first: a unit test or a simulated game (simulated players exist only in test code; the game has no bots), straight from the spec's acceptance criteria.
 3. Build until the tests pass, inside the rules above.
 4. Run the tests from the command line after every change.
 5. One branch per feature; commit after every green test run.
@@ -72,8 +72,8 @@ unity/               the TV app (Unity 6.3 LTS)
   Assets/Game/Dialogue/       line rules, shuffle bags
   Assets/Game/Audio/
   Assets/Game/Telemetry/
-  Assets/Game/DevTools/       bots, overlay, phase skips
-  Assets/Tests/               unit tests and bot simulations
+  Assets/Game/DevTools/       debug overlay, phase skip keys
+  Assets/Tests/               unit tests and simulated games
 phone/               the phone page (TypeScript)
 relay/               the room server
 content/             questions, host lines, show scripts, config

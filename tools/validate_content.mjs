@@ -1,4 +1,4 @@
-// Validates the files in content/ against docs/15_schemas.md.
+// Validates the files in content/ against docs/15_schemas.md and docs/03_rules.md.
 // Usage: node tools/validate_content.mjs
 import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -57,9 +57,47 @@ for (const l of lines) {
   if (!TRIGGERS.includes(l.trigger)) err("host_lines.json", l.id, "unknown trigger");
   if (!isLoc(l.text, 90)) err("host_lines.json", l.id, "text must have ru and en, max 90");
 }
+for (const host of ["konstantin", "ilja"]) {
+  if (!lines.some((l) => l.host === host && l.trigger === "gameStart")) err("host_lines.json", host, "needs a gameStart line (the Intro plays one per host)");
+}
+
+const SHAPES = ["circle", "square", "triangle", "diamond", "star", "hexagon"];
+const avatars = load("avatars.json");
+if (!Array.isArray(avatars) || avatars.length !== 12) err("avatars.json", "-", "must hold exactly 12 avatars");
+const avatarIds = new Set();
+for (const a of avatars) {
+  if (!Number.isInteger(a.id) || a.id < 0 || a.id > 11) err("avatars.json", a.id, "id must be 0 to 11");
+  if (avatarIds.has(a.id)) err("avatars.json", a.id, "duplicate id");
+  avatarIds.add(a.id);
+  if (!/^#[0-9A-Fa-f]{6}$/.test(a.color ?? "")) err("avatars.json", a.id, "color must be #RRGGBB");
+  if (!SHAPES.includes(a.shape)) err("avatars.json", a.id, `shape must be one of ${SHAPES.join(", ")}`);
+}
 
 const cfg = load("config.json");
-if (cfg.race.finishSteps > cfg.race.maxQuestions) err("config.json", "race", "last place could not win: finishSteps > maxQuestions");
+// Every key in the table of docs/03_rules.md must exist.
+const REQUIRED = [
+  "configVersion", "timers.intro", "timers.topicVote", "timers.questionShow", "timers.answer.multipleChoice",
+  "timers.answer.closestValue", "timers.lastCall", "timers.reveal", "timers.scores", "timers.roundEnd",
+  "timers.finalIntro", "timers.results", "rounds.count", "rounds.questionsPerRound", "rounds.multipliers",
+  "rounds.difficultyOrder", "rounds.formatOrder", "topics.doors", "topics.minUnseenToOffer", "topics.mixedTopicId",
+  "scoring.maxPoints", "scoring.speedPenalty", "scoring.roundTo", "scoring.fastAnswerMs", "closestValue.closestBonus",
+  "powerUps.enabled", "powerUps.types", "powerUps.targeting", "powerUps.drawChanceLeader", "powerUps.maxHeld",
+  "powerUps.maxHitsPerQuestion", "powerUps.immunityQuestions", "powerUps.onPhone", "powerUps.freeze.taps",
+  "powerUps.slime.blobs", "powerUps.fog.seconds", "race.maxHeadStart", "race.finishSteps", "race.maxQuestions",
+  "race.stepsPerCorrect", "race.answer", "race.reveal", "players.min", "players.max", "players.timerMultiplierOptions",
+  "players.seatHoldSeconds", "lobby.startCountdownSeconds", "net.inputGraceMs", "net.tvReconnectSeconds",
+  "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds",
+];
+for (const key of REQUIRED) {
+  if (key.split(".").reduce((o, k) => (o == null ? undefined : o[k]), cfg) === undefined) err("config.json", key, "missing key");
+}
+if (!topics.some((t) => t.id === cfg.topics?.mixedTopicId && t.mixed)) err("config.json", "topics.mixedTopicId", "must name the mixed topic");
+
+// lastPlaceCanWin (docs/02_show_flow.md): with the largest head start gap (leader maxHeadStart, last place 0),
+// (leader head start - last place head start) < maxQuestions and (finishSteps - last place head start) <= maxQuestions.
+const r = cfg.race ?? {};
+if (!(r.maxHeadStart - 0 < r.maxQuestions)) err("config.json", "race", "last place could not win: maxHeadStart must be less than maxQuestions");
+if (!(r.finishSteps - 0 <= r.maxQuestions)) err("config.json", "race", "last place could not win: finishSteps must be at most maxQuestions");
 
 // Coverage report for game night 1
 const perTopic = {};
@@ -68,7 +106,7 @@ for (const q of questions) {
   perTopic[q.topic][q.format]++;
 }
 console.log("Questions per topic:", JSON.stringify(perTopic));
-console.log(`${questions.length} questions, ${race.length} race statements, ${lines.length} host lines`);
+console.log(`${questions.length} questions, ${race.length} race statements, ${lines.length} host lines, ${avatars.length} avatars`);
 
 if (errors.length) {
   console.error(`\n${errors.length} error(s):\n` + errors.join("\n"));

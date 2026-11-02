@@ -40,3 +40,7 @@ Thumbs.db
 # Machine settings for the TV app
 unity/Assets/StreamingAssets/local.json
 unity/Assets/StreamingAssets/local.json.meta
+
+# Content copied into the TV app by the editor script (source of truth is content/)
+unity/Assets/StreamingAssets/content/
+unity/Assets/StreamingAssets/content.meta

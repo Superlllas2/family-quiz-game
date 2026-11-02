@@ -1,6 +1,6 @@
 # 01 Vision and pillars
 
-Status: Done (Nov 2, 2026). Live doc: https://claude.ai/artifact/WMgZzMWcpUEjSvjmDHXaTc
+Status: Done (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`). Live doc: https://claude.ai/artifact/WMgZzMWcpUEjSvjmDHXaTc
 
 ## Pitch
 
@@ -14,12 +14,12 @@ A fast, chaotic family quiz show in the living room: the TV is the stage, every 
 
 ## Session length
 
-A Standard game lasts 15 to 19 minutes. Quick and Long modes exist in config. An evening holds two or three games.
+In game night 1 a Standard game lasts about 10 to 12 minutes, without mini games. With the 3 mini games planned for later it lasts 15 to 19 minutes. Quick and Long modes exist in config. An evening holds two or three games.
 
 ## Languages
 
 - Russian and English.
-- The game language (TV text, host text) is set in the settings by the host phone (the first player who joined).
+- The game language (TV text, host text) is set in the TV settings panel on the laptop. Default: Russian. No phone has special rights.
 - Each player picks their own language for their phone in the phone settings. Default: the game language.
 - Host voices, when they exist, are in Russian, with English subtitles on the TV when switched on. Version 1 has text only hosts.
 
