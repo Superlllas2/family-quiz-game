@@ -6,9 +6,12 @@ using FamilyQuiz.Core;
 using FamilyQuiz.Core.Commands;
 using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.Events;
+using FamilyQuiz.DevTools;
 using FamilyQuiz.Net;
 using FamilyQuiz.Presentation;
+using FamilyQuiz.Telemetry;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 
 namespace FamilyQuiz.Bootstrap
@@ -24,7 +27,12 @@ namespace FamilyQuiz.Bootstrap
         private readonly MessageQueue _inbox = new MessageQueue();
         private readonly Stopwatch _stopwatch = Stopwatch.StartNew();
 
-        private LobbyView _view;
+        private const string PlaytestFolder = "playtests";
+
+        private TvPresenter _view;
+        private DebugOverlay _debug;
+        private EventLogWriter _eventLog;
+        private TelemetryListener _telemetry;
         private Game _game;
         private PausableClock _clock;
         private CryptoRandom _random;
@@ -33,6 +41,7 @@ namespace FamilyQuiz.Bootstrap
         private ProtocolRouter _router;
         private PhoneOutbox _outbox;
         private string _loggedRoomCode;
+        private bool _sessionLogged;
 
         private void Awake()
         {
@@ -43,30 +52,32 @@ namespace FamilyQuiz.Bootstrap
 
         private void Start()
         {
-            _view = LobbyView.Create();
+            _view = TvPresenter.Create();
+            _clock = new PausableClock(() => _stopwatch.ElapsedMilliseconds);
+            _clock.Pause(); // the core clock runs only while the relay is connected
+            _eventLog = CreateEventLog(_clock);
 
-            GameConfig config;
-            IReadOnlyList<CharacterDef> characters;
-            UiStrings strings = null;
+            GameContent content;
             try
             {
-                strings = UiStrings.Parse(ReadContent(UiStrings.FileName));
-                config = ConfigLoader.Parse(ReadContent(ConfigLoader.FileName));
-                characters = CharacterLoader.Parse(ReadContent(CharacterLoader.FileName), config);
+                content = LoadContent();
             }
             catch (Exception e) when (e is ContentException || e is IOException)
             {
                 TvLog.Error("Content error: " + e.Message);
+                _eventLog.Write(TelemetryListener.EventError, new JObject { ["where"] = "content", ["message"] = e.Message });
+                var strings = TryLoadStrings();
                 if (strings != null) _view.Configure(strings, null, Languages.Default);
                 _view.ShowContentError(e.Message);
                 return;
             }
 
-            _clock = new PausableClock(() => _stopwatch.ElapsedMilliseconds);
-            _clock.Pause(); // the core clock runs only while the relay is connected
+            var config = content.Config;
             _random = new CryptoRandom();
-            _game = new Game(new GameContent(config, characters, new List<QuestionDef>(), strings), _clock, _random, () => _random.Next(int.MaxValue));
-            _view.Configure(strings, characters, _game.State.GameLanguage);
+            _game = new Game(content, _clock, _random, () => _random.Next(int.MaxValue));
+            _telemetry = new TelemetryListener(_game, _eventLog);
+            _view.Attach(_game); // before Start(): the presenter ignores events until it has a game
+            _debug = DebugOverlay.Create(_game);
 
             _endpoint = LoadEndpoint();
             if (_endpoint == null)
@@ -108,6 +119,21 @@ namespace FamilyQuiz.Bootstrap
         {
             _relay?.Dispose();
             _random?.Dispose();
+            if (_telemetry != null) _telemetry.Dispose();
+            else _eventLog?.Dispose();
+        }
+
+        /// <summary>The event log (docs/15_schemas.md): persistentDataPath/playtests/yyyy-mm-dd/events_session.jsonl.</summary>
+        private static EventLogWriter CreateEventLog(IClock clock)
+        {
+            var now = DateTime.Now;
+            var session = now.ToString("yyyy-MM-dd'T'HH-mm-ss");
+            var path = Path.Combine(Application.persistentDataPath, PlaytestFolder, now.ToString("yyyy-MM-dd"),
+                "events_" + session + ".jsonl");
+            var writer = new EventLogWriter(path, session, Application.version, clock,
+                message => TvLog.Error("Event log: " + message));
+            TvLog.Info("Event log: " + path);
+            return writer;
         }
 
         private void Handle(RelayInboxItem item)
@@ -124,6 +150,12 @@ namespace FamilyQuiz.Bootstrap
                     else
                     {
                         TvLog.Info("Relay connected again, room " + item.RoomCode);
+                    }
+
+                    if (!_sessionLogged)
+                    {
+                        _telemetry.SessionStarted(item.RoomCode);
+                        _sessionLogged = true;
                     }
 
                     _view.ShowRoom(item.RoomCode, _endpoint.JoinUrl(item.RoomCode));
@@ -147,14 +179,10 @@ namespace FamilyQuiz.Bootstrap
         {
             if (events.Count == 0) return;
             _outbox?.OnEvents(events);
-            bool refresh = false;
-            foreach (var e in events)
-            {
-                LogEvent(e);
-                if (e is RosterChanged || e is PlayerConnectionChanged || e is AnswerReceived) refresh = true;
-            }
-
-            if (refresh) _view.Refresh(_game.State);
+            _view.OnEvents(events);
+            _debug?.OnEvents(events);
+            _telemetry?.OnEvents(events);
+            foreach (var e in events) LogEvent(e);
         }
 
         private static void LogEvent(IGameEvent e)
@@ -180,6 +208,28 @@ namespace FamilyQuiz.Bootstrap
                 case PhaseStarted phase:
                     TvLog.Info("phase " + phase.Phase + " started, phaseId=" + phase.PhaseId);
                     break;
+            }
+        }
+
+        /// <summary>Loads and validates every content file; throws ContentException naming the file, item and field.</summary>
+        private static GameContent LoadContent()
+        {
+            var strings = UiStrings.Parse(ReadContent(UiStrings.FileName));
+            var config = ConfigLoader.Parse(ReadContent(ConfigLoader.FileName));
+            var characters = CharacterLoader.Parse(ReadContent(CharacterLoader.FileName), config);
+            return new GameContent(config, characters, new List<QuestionDef>(), strings);
+        }
+
+        /// <summary>The TV texts alone, so a content error can still show its title; null if they are broken too.</summary>
+        private static UiStrings TryLoadStrings()
+        {
+            try
+            {
+                return UiStrings.Parse(ReadContent(UiStrings.FileName));
+            }
+            catch (ContentException)
+            {
+                return null;
             }
         }
 
