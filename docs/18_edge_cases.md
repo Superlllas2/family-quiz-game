@@ -6,7 +6,7 @@ Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `deci
 | --- | --- |
 | Only 2 players | Everything works. Power ups target the other player. Final race head start: leader 3, other 0; with equal scores both 3 (test) |
 | 8 players | Ninth join gets `refused: roomFull` (test) |
-| 1 player left after others leave mid game | The game continues to the end; Start and Play again need 2 players |
+| 1 player left after others leave mid game | The game continues to the end; the next start needs 2 connected players, all ready |
 | A new name joins during a game | `refused: gameStarted`; they can join at the next Lobby (after Back to lobby on the TV) (test) |
 | Same phone opens the page in two tabs | Both tabs find the same token and rejoin the same seat; the newer socket wins and the TV app closes the older one with close code 4002, which shows "Game open in another tab" and does not reconnect (test). Testing alone uses `&tab=<n>` so tabs do not share a token |
 | Duplicate names | `refused: nameTaken` (case insensitive) |
@@ -15,9 +15,11 @@ Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `deci
 | Phone locks, reloads or loses WiFi | Seat held 300 s; phases stop waiting for that player; `rejoin` restores the current screen with the remaining time; an answer already locked stays locked (test) |
 | Player taps Leave | Seat freed at once; the player is out for the rest of the game; in the Lobby they disappear from the list (test) |
 | Seat hold runs out | Same as Leave |
-| Start tapped on two phones at once | One countdown runs; the later tap gets `ack` with `ok: false`, reason `invalid` |
-| A player leaves during the start countdown and fewer than 2 remain | The countdown is cancelled; back to the Lobby (or PlayAgain) |
-| Nobody taps Play again | The TV waits in PlayAgain; the TV settings panel offers Back to lobby |
+| The last two players tap Ready at once | One countdown runs; both taps get `ok` (test) |
+| A player leaves or disconnects during the start countdown and fewer than 2 remain connected | The countdown is cancelled; back to the Lobby (test) |
+| A player joins, or a not ready player reconnects, during the start countdown | The countdown is cancelled; back to the Lobby, where the new player picks a character and taps Ready (test) |
+| One player never taps Ready | The TV waits in the Lobby; the others ask them, or that player taps Leave (no fallback on game night 1, D76) |
+| A ready player's phone locks in the Lobby | They stop counting; if everyone still connected is ready, the game starts and they rejoin into it |
 | A phone never submits the poll | The poll ends after 90 s (`poll.maxSeconds`) |
 | Nobody answers a question | Phase ends at the last personal deadline; everyone gets 0; trigger `nobodyCorrect` |
 | Everyone answers wrong | Same as above |

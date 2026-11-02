@@ -4,7 +4,7 @@ Status: Done (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_r
 
 ## Scope
 
-**Must have:** relay, phone page, lobby with QR join, character pick from the roster, language per phone, Start and Play again from any phone with the start countdown, the TV settings panel, the Standard show (intro, 4 rounds, final race, results, poll), topic vote, multiple choice, closest value, scoring with speed curve and multipliers, 3 power ups with free targeting, final race with true or false, host text bubbles, debug overlay, event log, play again, reconnects and leave, macOS build.
+**Must have:** relay, phone page, lobby with QR join, character pick from the roster, language per phone, Ready on every phone with the start countdown (D76), the TV settings panel, the Standard show (intro, 4 rounds, final race, results, poll, back to the Lobby), topic vote, multiple choice, closest value, scoring with speed curve and multipliers, 3 power ups with free targeting, final race with true or false, host text bubbles, debug overlay, event log, the next game from the Lobby, reconnects and leave, macOS build.
 
 **Stretch, only after every must have passes:** clue by clue format, one mini game, a Windows build, Russian text to speech for host lines, and the TV staging grey box (`21_staging.md`; only after every Day 4 check passes, checks below).
 
@@ -26,11 +26,11 @@ Each check is automated (a unit test or a simulated game in the test code) unles
 
 ### Day 2: walking skeleton (Wed)
 
-- [ ] 1 real phone and 3 browser tabs on the laptop finish a game of 4 multiple choice questions with scores and Play again, without errors (manual)
+- [ ] 1 real phone and 3 browser tabs on the laptop finish a game of 4 multiple choice questions with scores, back to the Lobby and a second game after everyone taps Ready, without errors (manual)
 - [ ] Scoring: a correct answer at 0 ms gets 1000, at the full window 500, wrong 0; in round 3 every point is multiplied by 1.5; a 2x timer multiplier doubles `T` (unit tests)
 - [ ] A question ends within 200 ms after the last connected player locks in (simulated game)
 - [ ] Personal deadlines: an input after the player's own deadline plus `net.inputGraceMs` gets `closed`; last call resends the screen with the same phaseId (unit tests)
-- [ ] Start from any phone runs the 3 s countdown; Cancel from any phone stops it; Start needs 2 players (unit tests)
+- [ ] When every connected player is ready (2 or more) the 3 s countdown runs; Not ready from any phone stops it; a join stops it; after Results everyone is back in the Lobby with ready cleared and scores at 0 (unit tests)
 - [ ] Names: only Latin and Cyrillic letters, digits and spaces, 1 to 16 characters; `characterTaken` when a character was just taken; `leave` frees the seat (unit tests)
 - [ ] The event log is written with `phaseStarted`, `phaseEnded` and `input` lines
 
@@ -63,7 +63,7 @@ Each check is automated (a unit test or a simulated game in the test code) unles
 
 ### Day 5: rehearsal (Sat)
 
-- [ ] A full Standard game with 2 real phones and 4 browser tabs on the laptop, twice in a row with Play again, without a restart (manual)
+- [ ] A full Standard game with 2 real phones and 4 browser tabs on the laptop, twice in a row (back to the Lobby, everyone Ready), without a restart (manual)
 - [ ] Every screen in `06_phone_screens.md` has been seen on a real iPhone and a real Android phone (manual)
 - [ ] Text on the TV is readable from the sofa at 3 m (manual)
 - [ ] macOS build starts from Finder and connects to the deployed relay (manual)

@@ -19,7 +19,7 @@ The TV shows a 3D late night talk show set. The players are the guests, each pla
 | Shot | Frames | Used in |
 | --- | --- | --- |
 | `Establish` | The whole studio from high at the back, slowly booming down | Intro start |
-| `Wide` | Guest area and desk; every seat and its name tag visible | Lobby, StartCountdown, Reveal, Scores, RoundEnd, FinalIntro, the race, Results, Poll, PlayAgain |
+| `Wide` | Guest area and desk; every seat and its name tag visible | Lobby, StartCountdown, Reveal, Scores, RoundEnd, FinalIntro, the race, Results, Poll |
 | `Desk` | Both hosts at the desk, medium shot | Intro host lines, Results host line |
 | `Curtain` | The closed curtain and the stage lamps, medium wide | TopicVote |
 | `Stage` | The stage opening, framed so the question panel fills it | QuestionShow, Answer |
@@ -54,7 +54,6 @@ The phase timers in `02_show_flow.md` stay as they are. In game night 1 every `s
 | RaceQuestion | `Wide` | Guests react with their happy or sad reaction on each race reveal | Final race loop | Statement, flat race track overlay | `race.answer`, `race.reveal` | timer |
 | Results | `Wide`, then `Band`, then `Desk` | The winner walks to the center of the floor under a spotlight and plays their victory; the others applaud | Winner cue, then the lobby loop | Winner, top 3, two awards | Winner walk 3 s (`staging.results.winnerWalkSeconds`) inside 20 s | guess |
 | Poll | `Wide` | Guests look at their phones | Lobby loop, quiet | "Fill in the poll on your phone", count of submitted polls | | |
-| PlayAgain | `Wide` | Idle | Lobby loop | Final standings, "Play again?" | | |
 
 **Between questions** the curtain closes off camera at the start of Reveal, so every QuestionShow opens it again without costing time.
 
@@ -156,7 +155,7 @@ All lengths are suggestions (**guess**). Every cue is played by the band on scre
 
 | Cue | Where | Suggested length | Mood |
 | --- | --- | --- | --- |
-| Lobby loop | Lobby, TopicVote (quieter), Scores (quiet), Poll, PlayAgain, and under Results after the winner cue | 60 to 90 s, seamless loop | Warm late night groove: keys, bass, brushed drums, about 100 BPM |
+| Lobby loop | Lobby, TopicVote (quieter), Scores (quiet), Poll, and under Results after the winner cue | 60 to 90 s, seamless loop | Warm late night groove: keys, bass, brushed drums, about 100 BPM |
 | Suspense loop with a rising last 5 s | Answer | A 16 s loop, plus a separate 5 s riser that ends exactly on the deadline | Low pulse and a ticking hi hat; the riser adds drum rolls and a rising bass line |
 | Right stinger | Reveal: at least half of those who answered were right | 1.5 to 2 s | Bright and major, a short brass or keys hit |
 | Wrong stinger | Reveal: fewer than half were right | 1.5 to 2 s | Comic and gentle (a falling trombone line), never mean |

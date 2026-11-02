@@ -201,8 +201,8 @@ Texts the phone page draws on its own (buttons, reconnecting, the messages for `
 
 | Trigger | Fires when | Fills |
 | --- | --- | --- |
-| `playerJoined` | Lobby: a new player joins. Not for a rejoin, and not for players kept by Play again or Back to lobby | `{name}` |
-| `startCountdown` | StartCountdown begins, after Start or after Play again | |
+| `playerJoined` | Lobby: a new player joins. Not for a rejoin, and not for players kept after a game or Back to lobby | `{name}` |
+| `startCountdown` | StartCountdown begins, when every connected player is ready | |
 | `gameStart` | Intro starts | |
 | `roundStart` | TopicVote starts | |
 | `everyoneCorrect` | Reveal: every connected player answered correctly | |
@@ -242,7 +242,7 @@ Lines show in the game language, with `{name}` and `{target}` filled in.
 }
 ```
 
-Mini games are added later as a `"miniGame"` segment. Play again starts at the first `round` (no intro).
+Mini games are added later as a `"miniGame"` segment. The next game from the Lobby starts at the first `round` (no intro).
 
 ## poll.json
 
@@ -266,7 +266,7 @@ Every event type, with its fields. `session` and `build` are shortened to `"..."
 {"t":5210,"session":"...","build":"...","event":"playerJoined","playerId":"p1","name":"Mama","lang":"ru","characterId":0}
 {"t":9100,"session":"...","build":"...","event":"playerLeft","playerId":"p3","reason":"disconnected"}
 {"t":12000,"session":"...","build":"...","event":"playerRejoined","playerId":"p3","awayMs":2900}
-{"t":20000,"session":"...","build":"...","event":"lobbyAction","playerId":"p2","action":"start","ok":true}
+{"t":20000,"session":"...","build":"...","event":"lobbyAction","playerId":"p2","action":"ready","ok":true}
 {"t":20500,"session":"...","build":"...","event":"settingsChanged","source":"tv","setting":"targeting","value":"aimUp"}
 {"t":23000,"session":"...","build":"...","seed":918273,"event":"gameStarted","game":1,"mode":"standard","players":["p1","p2","p3"],"settings":{"gameLang":"ru","powerUps":["freeze","slime","fog"],"targeting":"free"}}
 {"t":40000,"session":"...","build":"...","event":"phaseStarted","phase":"Answer","phaseId":16,"round":1,"slot":2,"questionId":"geo_003","budgetMs":15000,"stagingExtraMs":0}
@@ -289,7 +289,7 @@ Allowed values:
 | Field | Values |
 | --- | --- |
 | `playerLeft.reason` | `disconnected` (seat still held), `left` (tapped Leave), `seatExpired` |
-| `lobbyAction.action` | `start`, `cancelStart`, `playAgain` |
+| `lobbyAction.action` | `ready`, `notReady` |
 | `settingsChanged.source` | `tv` (settings panel: `gameLang`, `powerUps`, `powerUpTypes`, `targeting`, `resetSeen`, `backToLobby`) or `phone` (with `playerId`: `lang`, `timerMultiplier`) |
 | `phaseStarted.budgetMs`, `stagingExtraMs` | The phase budget in ms with any staging extra included, and that extra alone (`staging.extraSeconds`, `21_staging.md`); 0 for phases without one. Answer budgets are the base window, before timer multipliers |
 | `phaseEnded.reason` | `timeout`, `allDone`, `cancelled` (countdown), `abandoned` (Back to lobby), `skip` (developer phase skip key only) |

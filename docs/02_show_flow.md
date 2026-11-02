@@ -10,7 +10,7 @@ What the camera, the set, the guests and the band do in each phase is in `21_sta
 
 ```
 Lobby
-StartCountdown              3 s, any phone can cancel
+StartCountdown              3 s, starts when every connected player is ready; any Not ready stops it
 Intro
 Round 1  (multiplier 1.0)   TopicVote, then 4 x QuestionCycle, then RoundEnd
 Round 2  (multiplier 1.0)
@@ -20,7 +20,7 @@ FinalIntro
 FinalRace                   up to 12 x RaceQuestion
 Results
 Poll
-PlayAgain                   any phone taps Play again: StartCountdown, then Round 1 (no intro)
+Lobby                       back to the Lobby: everyone taps Ready again for the next game (no intro)
 ```
 
 "Back to lobby" in the TV settings panel returns everyone to the Lobby from any phase.
@@ -31,8 +31,8 @@ Mini games are not in game night 1. When added later, one goes after rounds 1, 2
 
 | Phase | Suggested max duration (config key) | Ends early when | TV shows | Every phone shows |
 | --- | --- | --- | --- | --- |
-| Lobby | none | Any phone taps Start (enabled at 2 or more players, `players.min`) | Room code, QR code, joined players as their characters, "Waiting for players"; a host greets each new player (`playerJoined` line) | `join`, then `pickCharacter`, then `lobby` with Start |
-| StartCountdown | 3 s (`lobby.startCountdownSeconds`) | Any phone taps Cancel, or fewer than 2 players remain: back to Lobby (or to PlayAgain) | Big 3, 2, 1 and a short host line (`startCountdown`) | `countdown` with Cancel |
+| Lobby | none | Every connected player tapped Ready and 2 or more are connected (`players.min`) | Room code, QR code, joined players as their characters with a ready mark each, "Tap Ready on your phone"; a host greets each new player (`playerJoined` line) | `join`, then `pickCharacter`, then `lobby` with Ready |
+| StartCountdown | 3 s (`lobby.startCountdownSeconds`) | A connected player is not ready (taps Not ready, or a new player joined) or fewer than 2 are connected: back to Lobby | Big 3, 2, 1 and a short host line (`startCountdown`) | `countdown` with Not ready |
 | Intro | 30 s (`timers.intro`) | Never early | Title card and one `gameStart` line from each host, one after the other | "Get ready" plus prediction: "Who wins tonight?" (tap a player) |
 | TopicVote | 10 s (`timers.topicVote`) | Every connected player voted | Four topic doors and live vote counts | Four topic buttons |
 | QuestionShow | 4 s (`timers.questionShow`) | Never early | Question text, read time bar | Question text, "Get ready" |
@@ -44,9 +44,8 @@ Mini games are not in game night 1. When added later, one goes after rounds 1, 2
 | RaceQuestion | 8 s answer times each player's timer multiplier (`race.answer`) plus 2 s reveal (`race.reveal`) | Answer ends when every connected player answered or passed their personal deadline. No last call in the race | Statement, track, players move on reveal | True and False buttons |
 | Results | 20 s (`timers.results`) | Never early | Winner, top 3, two awards (most correct, best comeback) | Own placement and stats |
 | Poll | 90 s (`poll.maxSeconds`) | Every connected phone submitted | "Thanks! Fill in the poll on your phone" and a count of submitted polls | Poll questions, then "Thanks!" while others finish |
-| PlayAgain | none | Any phone taps Play again (needs 2 or more players): StartCountdown, then Round 1 | Final standings and "Play again? Tap on your phone" | "Thanks!" with Play again |
 
-With `poll.enabled` = false, Results goes straight to PlayAgain.
+After the Poll (with `poll.enabled` = false, after Results) the show returns to the Lobby (D76).
 
 A question cycle is QuestionShow, Answer, Reveal, Scores: about 26 s with a full multiple choice window (31 s for closest value), less when everyone answers early.
 
@@ -74,7 +73,7 @@ Rank is the position by total score, highest first. Equal scores share the bette
 
 ## Seen questions
 
-Every game marks each question and race statement it uses as seen, when it is shown. The list is saved to disk, so it survives Play again, Back to lobby and app restarts. Only "Reset seen questions" in the TV settings panel clears it. The current bank holds exactly 2 Standard games without a repeat (16 medium questions, 24 race statements).
+Every game marks each question and race statement it uses as seen, when it is shown. The list is saved to disk, so it survives the next game, Back to lobby and app restarts. Only "Reset seen questions" in the TV settings panel clears it. The current bank holds exactly 2 Standard games without a repeat (16 medium questions, 24 race statements).
 
 ## The final race
 
@@ -93,13 +92,13 @@ Ghosts and a chasing threat are left for after game night 1.
 - A player who disconnects keeps their seat for `players.seatHoldSeconds` (300 s) and can always rejoin it with their token. Phases do not wait for disconnected players.
 - When the hold runs out, or the player taps Leave on their phone, the seat is freed at once. The player is out for the rest of the game: removed from the leaderboard, ranks and target lists. In the Lobby they disappear from the player list.
 
-## Starting, play again, back to lobby
+## Starting, the next game, back to lobby
 
 There is no host phone: no player has special rights.
 
-- **Start:** every phone shows Start in the Lobby, enabled at 2 or more players. Anyone can press it. Start runs the 3 s StartCountdown on the TV and all phones; any phone can tap Cancel during it.
+- **Ready (D76):** every phone shows Ready in the Lobby; the TV shows who is ready. When every connected player is ready and 2 or more are connected, the 3 s StartCountdown runs on the TV and all phones. Any phone can tap Not ready during it, which stops it; so does a new player joining. Disconnected players never hold the start up.
 - **No skipping:** Intro, FinalIntro and Results run on their timers.
-- **Play again:** after the poll every phone shows Play again. Anyone can press it; it runs the same countdown with Cancel. It keeps the same players, seats, characters, phone languages and timer multipliers, resets scores, skips Lobby and Intro, and keeps the seen questions.
+- **The next game:** after the poll everyone returns to the Lobby with ready marks cleared and scores reset to 0. Seats, characters, phone languages and timer multipliers are kept, so nobody picks a character again; new players can join and others can leave. Everyone taps Ready again. The next game skips the Intro and keeps the seen questions.
 - **Back to lobby:** in the TV settings panel. Everyone returns to the Lobby with their seats and characters kept, so new players can join or others can leave. A running game is abandoned (logged as `gameEnded` with reason `backToLobby`).
 
 ## TV settings panel

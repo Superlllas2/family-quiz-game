@@ -93,7 +93,7 @@ The relay itself sends two messages to phones:
 | `rejoin` | `token` | After a reload or reconnect, or on `tvBack`, if a token is stored |
 | `character` | `inputId`, `characterId` (an id from `content/characters.json`, 0 to 15) | On `pickCharacter`. Answered with `ack`; `ok: false`, reason `characterTaken` if another player has it |
 | `input` | `inputId`, `phaseId`, `kind`, plus kind fields (below) | Any player decision in a game phase |
-| `lobby` | `inputId`, `action`: `start`, `cancelStart` or `playAgain` | Start in the Lobby, Cancel during the countdown, Play again after the poll |
+| `lobby` | `inputId`, `action`: `ready` or `notReady` | Ready in the Lobby, Not ready in the Lobby or during the countdown |
 | `settings` | `lang`, `timerMultiplier` (1, 1.5 or 2) | Settings changed |
 | `leave` | `inputId` | Leave game in settings. Frees the seat at once; the player is out for the rest of the game |
 | `poll` | `inputId`, `answers` (object) | Poll submitted |
@@ -107,11 +107,12 @@ The relay itself sends two messages to phones:
 
 | action | Valid when | Effect |
 | --- | --- | --- |
-| `start` | Lobby, 2 or more players (`players.min`), no countdown running | Starts the countdown (`lobby.startCountdownSeconds`) |
-| `cancelStart` | A countdown is running | Stops it; back to the Lobby or PlayAgain |
-| `playAgain` | PlayAgain phase, 2 or more players, no countdown running | Starts the countdown, then Round 1 |
+| `ready` | Lobby or StartCountdown, the player has picked a character | Marks the player ready (already ready: no change, still `ok`) |
+| `notReady` | Lobby or StartCountdown | Clears the player's ready mark (already not ready: no change, still `ok`) |
 
 Any other case gets `ack` with `ok: false`, reason `invalid`.
+
+The TV app starts and stops the countdown itself, never on a tap alone (D76): in the Lobby, the moment every connected player is ready and `players.min` (2) or more players are connected, the countdown (`lobby.startCountdownSeconds`) starts. During it, the moment a connected player is not ready (`notReady`, or a new player joined) or fewer than `players.min` players are connected, it stops and the Lobby comes back. Disconnected players never hold the start up. Ready marks are cleared when a game starts.
 
 ### `input` kinds
 
@@ -180,7 +181,7 @@ All texts are already in the player's language. Screens not listed have `data: {
 
 | id | data |
 | --- | --- |
-| `lobby` | `players`: list of `{playerId, name, characterId}`, `canStart` (bool: 2 or more players) |
+| `lobby` | `players`: list of `{playerId, name, characterId, ready}` (`ready`: bool), `ready` (bool: this player is ready), `enoughPlayers` (bool: `players.min` or more players connected) |
 | `pickCharacter` | `taken`: list of character ids taken by other players, `current`: this player's character id |
 | `countdown` | `text` (`endsInMs` carries the countdown) |
 | `getReady` | `text`, optional `prediction`: list of `{playerId, name, characterId}` |
@@ -194,7 +195,6 @@ All texts are already in the player's language. Screens not listed have `data: {
 | `raceResult` | `correct`, `position`, `finish` |
 | `results` | `place`, `correctCount`, `awards`: list of strings |
 | `poll` | `questions`: list of `{id, text, kind, options}` (kinds in `15_schemas.md`) |
-| `pollDone` | `canPlayAgain` (bool: the poll phase is over and 2 or more players remain) |
 | `error` | `text` |
 
 Characters come from `content/characters.json` (name and personality line in both languages, signature color); the phone page bundles a copy of that file at build time.

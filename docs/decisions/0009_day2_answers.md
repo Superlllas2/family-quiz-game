@@ -17,7 +17,7 @@ Date: Nov 2, 2026. Decided by Ilia, answering the open questions found while bui
 | Seen questions are kept in memory on Day 2; saving them to disk comes with Day 3 | Core |
 | Results awards on Day 2: "Most correct" only; "Best comeback" needs round 2 and the race (Day 3) | Core, Net |
 | Day 2 winner (no race yet): the highest score; ties broken by the game's seeded random | Core |
-| Lobby and PlayAgain end with `phaseEnded` reason `allDone` when the countdown starts | Core, Telemetry |
+| The Lobby ends with `phaseEnded` reason `allDone` when the countdown starts | Core, Telemetry |
 | A player whose deadline passed without an answer keeps the `answerChoice` screen (countdown at 0); a late tap gets `closed` ("Time's up") | Core, Net |
 | Input refusals: a `choice` without `ms`, a second input after locking in, or the right phaseId in a phase that takes no such input are `invalid`; a wrong phaseId is `stale`, except an input for the Answer phase that just closed, which is `closed` | Core |
 | `gameStarted.settings` carries only `gameLang` until the TV settings panel exists (Day 4) | Telemetry |
@@ -36,7 +36,6 @@ Date: Nov 2, 2026. Decided by Ilia, answering the open questions found while bui
 | The `pickCharacter` grid scrolls inside the screen: 16 cards with personality lines do not fit (Lobby only, never during play) | phone |
 | The phone countdown stops at 1 (never shows 0); the answer countdown can show 0 | phone |
 | A `settings` message has no ack: one sent while the socket is down is lost; the phone's saved language wins on rejoin | phone |
-| The TV PlayAgain view shows every seated player with rank, chip, score and a correct answers column | Presentation |
 | The correct tile on the TV turns `#3DF586` with a white rim and grows 1.08 times; wrong tiles fade to 25 % | Presentation |
 | TV animation durations (chip pop 0.25 s, leaderboard rows move after 0.5 s over 0.7 s) are constants in `Presentation/TvMotion.cs`, not in `content/config.json`; they never hold a phase. **Open:** move them under `staging.*` in config? | Presentation |
 | The Day 1 key `tv.lobby.lastInput` (the lobby test pad) is removed | `content/ui_strings.json` |
