@@ -11,7 +11,6 @@ import {
   parseIncoming,
   pickCharacterData,
   playerView,
-  pollDoneData,
   resultData,
   resultsData,
   textData,
@@ -70,7 +69,8 @@ describe('the phone page parses every frame the TV app sent in a whole game', ()
     for (const s of screens('lobby')) {
       const d = lobbyData(s.data);
       expect(d.players).toEqual(s.data.players);
-      expect(d.canStart).toBe(s.data.canStart);
+      expect(d.ready).toBe(s.data.ready);
+      expect(d.enoughPlayers).toBe(s.data.enoughPlayers);
     }
     for (const s of [...screens('countdown'), ...screens('getReady')]) {
       expect(textData(s.data).text).toBe(s.data.text);
@@ -107,7 +107,7 @@ describe('the phone page parses every frame the TV app sent in a whole game', ()
       expect(d.awards).toEqual(s.data.awards);
     }
     for (const s of screens('pollDone')) {
-      expect(pollDoneData(s.data).canPlayAgain).toBe(s.data.canPlayAgain);
+      expect(s.data).toEqual({}); // D76: no Play again, so no canPlayAgain
     }
   });
 

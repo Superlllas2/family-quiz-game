@@ -1,5 +1,5 @@
 // Screen `countdown` (06): the TV's text ("Игра начинается / Starting"), a big 3, 2, 1 from `endsInMs`,
-// and Cancel on every phone (`lobby` action `cancelStart`).
+// and Not ready on every phone (`lobby` action `notReady`): the TV app stops the countdown and sends `lobby` (D76).
 
 import { wholeSeconds } from '../countdown';
 import { t } from '../i18n';
@@ -14,8 +14,8 @@ interface Props {
   screen: ScreenState;
   receivedAt: number;
   now: () => number;
-  cancelInput: TrackedInput | null;
-  onCancel(): void;
+  notReadyInput: TrackedInput | null;
+  onNotReady(): void;
 }
 
 export function CountdownScreen(props: Props) {
@@ -30,10 +30,10 @@ export function CountdownScreen(props: Props) {
       <p class="big-text">{text}</p>
       <div class="countdown-number">{shown}</div>
       <div class="bottom-block">
-        <PressButton class="big" onClick={props.onCancel}>
-          {t(lang, 'countdown.cancel')}
+        <PressButton class="big" onClick={props.onNotReady}>
+          {t(lang, 'lobby.notReady')}
         </PressButton>
-        <InputStatus lang={lang} input={props.cancelInput} />
+        <InputStatus lang={lang} input={props.notReadyInput} />
       </div>
     </div>
   );

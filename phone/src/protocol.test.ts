@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
   answerChoiceData, characterMessage, choiceInputMessage, getReadyData, joinMessage, leaveMessage, lobbyData,
-  lobbyMessage, parseIncoming, pickCharacterData, pingMessage, playerView, pollDoneData, rejoinMessage, resultData,
+  lobbyMessage, parseIncoming, pickCharacterData, pingMessage, playerView, rejoinMessage, resultData,
   resultsData, settingsMessage, textData, waitingData,
 } from './protocol';
 import { socketUrl } from './net/socketUrl';
@@ -21,13 +21,15 @@ describe('message builders match PROTOCOL.md section 3 exactly', () => {
     expect(JSON.stringify(msg)).toBe('{"v":1,"type":"input","inputId":"a2","phaseId":16,"kind":"choice","choice":1,"ms":3410}');
   });
 
-  it('lobby start', () => {
-    expect(lobbyMessage('x1', 'start')).toStrictEqual({ v: 1, type: 'lobby', inputId: 'x1', action: 'start' });
+  it('lobby ready', () => {
+    expect(lobbyMessage('x1', 'ready')).toStrictEqual({ v: 1, type: 'lobby', inputId: 'x1', action: 'ready' });
+    expect(JSON.stringify(lobbyMessage('x1', 'ready'))).toBe('{"v":1,"type":"lobby","inputId":"x1","action":"ready"}');
   });
 
-  it('lobby cancelStart and playAgain', () => {
-    expect(lobbyMessage('x2', 'cancelStart')).toStrictEqual({ v: 1, type: 'lobby', inputId: 'x2', action: 'cancelStart' });
-    expect(lobbyMessage('x3', 'playAgain')).toStrictEqual({ v: 1, type: 'lobby', inputId: 'x3', action: 'playAgain' });
+  it('lobby notReady', () => {
+    expect(lobbyMessage('x2', 'notReady')).toStrictEqual({ v: 1, type: 'lobby', inputId: 'x2', action: 'notReady' });
+    expect(JSON.stringify(lobbyMessage('x2', 'notReady')))
+      .toBe('{"v":1,"type":"lobby","inputId":"x2","action":"notReady"}');
   });
 
   it('character', () => {
@@ -54,7 +56,7 @@ describe('incoming messages', () => {
     const snap = parseIncoming(JSON.stringify({
       v: 1, type: 'snapshot',
       player: { playerId: 'p3', name: 'Mama', characterId: 4 },
-      screen: { phaseId: 2, id: 'lobby', endsInMs: null, data: { players: [], canStart: false } },
+      screen: { phaseId: 2, id: 'lobby', endsInMs: null, data: { players: [], ready: false, enoughPlayers: false } },
     }));
     expect(snap).toMatchObject({ type: 'snapshot', screen: { phaseId: 2, id: 'lobby' }, player: { playerId: 'p3' } });
     expect(parseIncoming('{"v":1,"type":"screen","phaseId":5,"id":"lobby","endsInMs":null,"data":{}}'))
@@ -74,9 +76,27 @@ describe('incoming messages', () => {
   });
 
   it('reads lobby data defensively', () => {
-    expect(lobbyData({ players: [{ playerId: 'p1', name: 'A', characterId: 2 }, 'junk'], canStart: true }))
-      .toEqual({ players: [{ playerId: 'p1', name: 'A', characterId: 2 }], canStart: true });
-    expect(lobbyData({})).toEqual({ players: [], canStart: false });
+    expect(lobbyData({
+      players: [
+        { playerId: 'p1', name: 'A', characterId: 2, ready: true },
+        { playerId: 'p2', name: 'B', characterId: 5, ready: false },
+        'junk',
+      ],
+      ready: true,
+      enoughPlayers: true,
+    })).toStrictEqual({
+      players: [
+        { playerId: 'p1', name: 'A', characterId: 2, ready: true },
+        { playerId: 'p2', name: 'B', characterId: 5, ready: false },
+      ],
+      ready: true,
+      enoughPlayers: true,
+    });
+    expect(lobbyData({})).toStrictEqual({ players: [], ready: false, enoughPlayers: false });
+    // Only a real true counts; a missing ready mark is not ready.
+    expect(lobbyData({ players: [{ playerId: 'p1', name: 'A', characterId: 2, ready: 'yes' }], ready: 1, enoughPlayers: 'yes' }))
+      .toStrictEqual({ players: [{ playerId: 'p1', name: 'A', characterId: 2, ready: false }], ready: false, enoughPlayers: false });
+    expect(lobbyData({ players: [{ playerId: 'p1', name: 'A', characterId: 2 }] }).players[0].ready).toBe(false);
   });
 
   it('parses the player message', () => {
@@ -140,11 +160,6 @@ describe('screen data readers (PROTOCOL.md section 4) never crash', () => {
     expect(resultsData({ place: 2, correctCount: 3, awards: ['Fastest', 4, ''] }))
       .toEqual({ place: 2, correctCount: 3, awards: ['Fastest'] });
     expect(resultsData({})).toEqual({ place: null, correctCount: 0, awards: [] });
-  });
-
-  it('pollDone', () => {
-    expect(pollDoneData({ canPlayAgain: true })).toEqual({ canPlayAgain: true });
-    expect(pollDoneData({ canPlayAgain: 'yes' })).toEqual({ canPlayAgain: false });
   });
 });
 
