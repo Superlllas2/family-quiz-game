@@ -62,16 +62,28 @@ export function App({ deps }: { deps: AppDeps }) {
 
   // Layout effects run during the first render's commit, before main.tsx starts the session.
   useLayoutEffect(() => {
+    const showScreen = (next: ScreenState): void => {
+      // Always a new arrival time, also for a last call with the same phaseId (the countdown re-syncs).
+      setCurrent({ screen: next, receivedAt: deps.now() });
+      // The pick status lives as long as pickCharacter is showing: its refresh after characterTaken may or may
+      // not carry a new phaseId, and the note must survive it.
+      if (next.id !== 'pickCharacter') {
+        setSlots((all) => {
+          if (!all.character) return all;
+          const { character: _gone, ...rest } = all;
+          return rest;
+        });
+      }
+    };
     const onMessage = (msg: IncomingMessage): void => {
       switch (msg.type) {
         case 'snapshot':
           if (msg.player) setPlayer(playerView(msg.player));
-          if (msg.screen) setCurrent({ screen: msg.screen, receivedAt: deps.now() });
+          if (msg.screen) showScreen(msg.screen);
           break;
         case 'screen': {
           const { type: _type, ...next } = msg;
-          // Always a new arrival time, also for a last call with the same phaseId (the countdown re-syncs).
-          setCurrent({ screen: next, receivedAt: deps.now() });
+          showScreen(next);
           break;
         }
         case 'player':
@@ -186,7 +198,7 @@ export function App({ deps }: { deps: AppDeps }) {
     switch (screen.id) {
       case 'pickCharacter': {
         const s = slots.character;
-        const pick = s && s.phaseId === screen.phaseId && s.characterId !== undefined
+        const pick = s && s.characterId !== undefined
           ? { characterId: s.characterId, input: inputs[s.inputId] ?? null }
           : null;
         body = (
