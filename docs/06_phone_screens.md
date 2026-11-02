@@ -12,7 +12,7 @@ The phone page draws exactly one screen at a time, the one named in the last `sc
 - Top bar on every screen during a game: player name with their character chip, score, and a gear icon for settings.
 - Placeholder look: dark background `#14161C`, white text, answer colors A `#E74C3C` (triangle), B `#3498DB` (diamond), C `#F1C40F` (circle), D `#2ECC71` (square). These are placeholders until the visual style guide exists.
 - Characters: the roster in `content/characters.json` (`21_staging.md`). Until the 3D characters exist, a player's character is drawn as a chip: a rounded card in the character's signature color with the player's name in `#14161C`. No emoji anywhere. The TV draws chips the same way.
-- Every visible text comes from the phone's locale file (`phone/src/locales/ru.json`, `en.json`) or from content in the player's chosen language.
+- Every visible text comes from the phone's locale file (`phone/src/locales/ru.json`, `en.json`) or from content in the player's chosen language. Texts the TV app sends in screen data (`countdown.text`, `getReady.text`, `results.awards`, `error.text`) come from `content/ui_strings.json` (D65). The phone page uses the system font for now.
 - Request a Screen Wake Lock after the first tap, and again whenever the page becomes visible.
 - No sounds on the phone.
 - The answer clock (`ms`) starts when the options appear and keeps running under a sabotage overlay. A new `screen` message with the same phaseId (last call) updates the countdown but never restarts the clock.

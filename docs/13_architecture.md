@@ -11,6 +11,8 @@ Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `deci
 | Relay | Cloudflare Workers with Durable Objects (one object per room), TypeScript, Wrangler. Serves the built phone page as static assets | `relay/` |
 | Tools | Node 20+ scripts in TypeScript or plain JS, run with `node` or `npx tsx` | `tools/` |
 
+**TV font:** Inter (SIL Open Font License 1.1) as a placeholder (D66; may change with `10_visual_style.md`). Font files and `OFL.txt` in `unity/Assets/Fonts/Inter/`, from the official release (github.com/rsms/inter); a TextMeshPro font asset with Latin and Cyrillic is the default TMP font. TV texts come from `content/ui_strings.json` (D65); no Unity Localization package.
+
 Allowed packages beyond these: `com.unity.nuget.newtonsoft-json` (TV app, including Core: it is plain .NET), and `qrcode` (phone or TV QR generation, or a C# QR library vendored as source with an MIT license). Anything else: ask first.
 
 ## TV app structure

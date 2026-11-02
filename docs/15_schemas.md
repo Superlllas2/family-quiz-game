@@ -20,6 +20,7 @@ Check the content with `node tools/validate_content.mjs` after every edit. The T
 | `content/show_scripts.json` | The segments of each mode |
 | `content/poll.json` | Poll questions |
 | `content/characters.json` | The roster of guest characters players pick from |
+| `content/ui_strings.json` | The TV app's own texts: TV labels and texts it sends to phones (D65) |
 | `unity/Assets/StreamingAssets/local.json` | Machine settings: `relayHost`. Not in git (`local.example.json` is) |
 
 ## topics.json
@@ -151,6 +152,27 @@ The guest characters players pick from (`21_staging.md`): personas, not people, 
 | `entrance`, `idlePose`, `happyReaction`, `sadReaction`, `cardHold`, `victory` | English, for animators: the six signature animations, each played the way the persona would |
 
 Until the 3D characters exist, the TV and the phone draw a player's character as a chip: a rounded card in `color` with the player's name in `#14161C`. The `pickCharacter` card also shows the character's name and personality line. In the grey box (`21_staging.md`) a character is a capsule in `color` with its name above it. No emoji. The colors are placeholders until the visual style guide exists.
+
+## ui_strings.json
+
+Every text the TV app shows or sends to a phone that is not question, host line or other content (D65). One object from key to a localized string:
+
+```json
+{
+  "tv.lobby.roomCode": { "ru": "Код комнаты", "en": "Room code" },
+  "screen.countdown.text": { "ru": "Игра начинается", "en": "Starting" },
+  "tv.results.winner": { "ru": "Победитель: {name}", "en": "Winner: {name}" }
+}
+```
+
+| Rule | |
+| --- | --- |
+| Key | Dotted lower camel case. `tv.*` for text drawn on the TV (in the game language), `screen.*` for text sent to a phone (in that player's language) |
+| Value | Localized, both languages non empty |
+| Placeholders | `{name}` style, the same set in `ru` and `en` |
+| Adding keys | In the same commit as the code that uses them. Code never contains a player facing text |
+
+Texts the phone page draws on its own (buttons, reconnecting, the messages for `refused` reasons and close code 4002) live in the phone locale files (`06_phone_screens.md`).
 
 ## host_lines.json
 

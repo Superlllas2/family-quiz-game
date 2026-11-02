@@ -7,7 +7,7 @@ Goal for today: the thinnest real game that runs end to end. Lobby with Start fr
 
 Build on a branch called day2-skeleton, tests first:
 
-1. Core: IClock and IRandom (injected), GameState, PlayerState, shared ranks (1, 1, 3), the ShowDirector running phases Lobby, StartCountdown, QuestionShow, Answer, Reveal, Scores, Results and PlayAgain on the clock with every duration from content/config.json. Start, cancelStart and playAgain from the `lobby` message (any player, 2 or more players). Personal deadlines per player (window times timer multiplier), ending Answer early when every connected player locked in or passed their deadline, and the last call rule (new screen, same phaseId). Inputs after a player's own deadline plus net.inputGraceMs are refused as closed. Scoring for multiple choice exactly as docs/03_rules.md. Leave frees the seat at once. Content loading and validation with Newtonsoft for config.json, questions.json and characters.json (a broken file must produce a clear error). Option order shuffled with IRandom.
+1. Core: IClock and IRandom (injected), GameState, PlayerState, shared ranks (1, 1, 3), the ShowDirector running phases Lobby, StartCountdown, QuestionShow, Answer, Reveal, Scores, Results and PlayAgain on the clock with every duration from content/config.json. Start, cancelStart and playAgain from the `lobby` message (any player, 2 or more players). Personal deadlines per player (window times timer multiplier), ending Answer early when every connected player locked in or passed their deadline, and the last call rule (new screen, same phaseId). Inputs after a player's own deadline plus net.inputGraceMs are refused as closed. Scoring for multiple choice exactly as docs/03_rules.md. Leave frees the seat at once. Content loading and validation with Newtonsoft for config.json, questions.json, characters.json and ui_strings.json (a broken file must produce a clear error). Option order shuffled with IRandom.
 
 2. Editor script: copy content/ into Assets/StreamingAssets/content/ before Play mode and before every build (docs/13_architecture.md).
 
@@ -15,7 +15,7 @@ Build on a branch called day2-skeleton, tests first:
 
 4. Simulated game in Tests/EditMode: 3 simulated players (inside the test code only) plus the game loop on a fake clock; asserts a question ends within 200 ms of the last answer.
 
-5. Net: ScreenBuilder turning core events into the screen messages for lobby, pickCharacter, countdown, getReady, answerChoice, waiting, result, results and pollDone (with canPlayAgain; the poll itself comes on Day 4, so for now PlayAgain follows Results), in each player's language.
+5. Net: ScreenBuilder turning core events into the screen messages for lobby, pickCharacter, countdown, getReady, answerChoice, waiting, result, results and pollDone (with canPlayAgain; the poll itself comes on Day 4, so for now PlayAgain follows Results), in each player's language, with every text from content/ui_strings.json (add the keys you need there, D65).
 
 6. Phone: screens join, pickCharacter (character cards from content/characters.json: signature color, name and personality line; taken ones greyed), lobby (Start on every phone), countdown (Cancel), getReady, answerChoice, waiting, result, results, pollDone (Play again), settings (language, more time, leave), reconnecting, error. Replace yesterday's test screen.
 

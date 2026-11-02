@@ -2,7 +2,7 @@
 
 Snapshot from Nov 1, 2026 of the live doc at https://claude.ai/artifact/UQA5Hd1S8UzTiAANuSngNJ. **This repo copy holds the current status** (updated Nov 2, 2026 for game night 1).
 
-**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`. Decisions from the spec review are in `docs/decisions/0002_spec_review.md`; the staging concept is in `docs/decisions/0004_staging.md` and `0005_staging_answers.md`; the art direction is in `0006_art_direction.md`.
+**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`. Decisions from the spec review are in `docs/decisions/0002_spec_review.md`; the staging concept is in `docs/decisions/0004_staging.md` and `0005_staging_answers.md`; the art direction is in `0006_art_direction.md`; TV text and the TV font are in `0007_tv_text_and_font.md`.
 
 ## How to use this kit
 
@@ -34,7 +34,7 @@ Update the Status column as you go; the kit is ready when every row says Done.
 | 7 | Host bibles and line list | Game design | Later | `docs/07_hosts.md` |
 | 8 | Content guidelines | Game design | Later | `docs/08_content.md` |
 | 9 | Settings and accessibility | Game design | Partial (game night 1 settings listed in 02, 03 and 06) | `docs/09_settings.md` |
-| 10 | Visual style guide | Look and feel | Partial (3D, D43; late night set in `21_staging.md`, `decisions/0004_staging.md`; a realistic world with cartoon, mixed media guests, `decisions/0006_art_direction.md`) | `docs/10_visual_style.md` |
+| 10 | Visual style guide | Look and feel | Partial (3D, D43; late night set in `21_staging.md`, `decisions/0004_staging.md`; a realistic world with cartoon, mixed media guests, `decisions/0006_art_direction.md`; placeholder TV font Inter, open, `decisions/0007_tv_text_and_font.md`) | `docs/10_visual_style.md` |
 | 11 | Motion and feedback spec | Look and feel | Later | `docs/11_motion.md` |
 | 12 | Audio direction and sound list | Look and feel | Partial (placeholder music sources and license rules; final music open; band cues in `21_staging.md`) | `docs/12_audio.md` |
 | 13 | Tech spec and architecture | Technical | Done for game night 1 | `docs/13_architecture.md` |
@@ -121,7 +121,7 @@ This is the largest gap: the master plan has no visual decisions yet, so an AI w
 - **Layout:** TV safe area margins, a grid for the question screen, the score bar, character positions for 2 to 8 players. One wireframe per TV screen.
 - **Components:** buttons, answer tiles, character chip, timer, score row, power up icon, each with its states (idle, pressed, locked, correct, wrong, disabled).
 - **Host look:** portrait size and position, the list of expressions (neutral, smug, shocked, laughing), mouth flap frames.
-- **Open:** Style sentence, mood board, palette, fonts, logo or title treatment. Light or dark phone page.
+- **Open:** Style sentence, mood board, palette, fonts (Inter is the placeholder TV font, D66; keep it or change it), logo or title treatment. Light or dark phone page.
 
 ### 11. Motion and feedback spec
 

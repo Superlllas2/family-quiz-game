@@ -137,6 +137,16 @@ const r = cfg.race ?? {};
 if (!(r.maxHeadStart - 0 < r.maxQuestions)) err("config.json", "race", "last place could not win: maxHeadStart must be less than maxQuestions");
 if (!(r.finishSteps - 0 <= r.maxQuestions)) err("config.json", "race", "last place could not win: finishSteps must be at most maxQuestions");
 
+// UI strings (docs/15_schemas.md, D65): dotted lower camel case keys, both languages non empty, same placeholders.
+const ui = load("ui_strings.json");
+const holes = (s) => (s.match(/\{[a-zA-Z]+\}/g) ?? []).sort().join(",");
+if (!ui || typeof ui !== "object" || Array.isArray(ui)) err("ui_strings.json", "-", "must be an object from key to {ru, en}");
+else for (const [k, v] of Object.entries(ui)) {
+  if (!/^(tv|screen)(\.[a-z][a-zA-Z0-9]*)+$/.test(k)) err("ui_strings.json", k, "key must start with tv. or screen. and use dotted lower camel case");
+  if (!isLoc(v) || !v.ru.trim() || !v.en.trim()) err("ui_strings.json", k, "must have non empty ru and en");
+  else if (holes(v.ru) !== holes(v.en)) err("ui_strings.json", k, "placeholders differ between ru and en");
+}
+
 // Coverage report for game night 1
 const perTopic = {};
 for (const q of questions) {
@@ -144,7 +154,7 @@ for (const q of questions) {
   perTopic[q.topic][q.format]++;
 }
 console.log("Questions per topic:", JSON.stringify(perTopic));
-console.log(`${questions.length} questions, ${race.length} race statements, ${lines.length} host lines, ${characters.length} characters`);
+console.log(`${questions.length} questions, ${race.length} race statements, ${lines.length} host lines, ${characters.length} characters, ${Object.keys(ui ?? {}).length} UI strings`);
 
 if (errors.length) {
   console.error(`\n${errors.length} error(s):\n` + errors.join("\n"));
