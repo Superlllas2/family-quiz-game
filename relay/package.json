@@ -1,0 +1,19 @@
+{
+  "name": "family-quiz-relay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p test/tsconfig.json",
+    "types": "wrangler types",
+    "smoke": "node scripts/smoke.mjs",
+    "deploy": "npm --prefix ../phone run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vitest": "5.0.5",
+    "wrangler": "4.156.1"
+  }
+}

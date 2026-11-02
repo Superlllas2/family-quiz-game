@@ -1,0 +1,7 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["es2022", "dom"]
+  },
+  "include": ["./**/*.ts", "../src/protocol.ts", "../src/routing.ts", "../src/roomLogic.ts"]
+}
