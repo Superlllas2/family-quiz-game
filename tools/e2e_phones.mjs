@@ -57,7 +57,7 @@ b.send({ type: "join", name: "Papa", lang: "en" });
 const welcomeB = await b.wait((m) => m.type === "welcome");
 ok(!!welcomeB, "B joined");
 const lobbyA = await a.wait((m) => m.type === "screen" && m.screen?.data?.players?.length === 2 || m.type === "screen" && m.data?.players?.length === 2);
-ok(!!lobbyA, `A got a lobby screen with 2 players, canStart ${lobbyA?.data?.canStart ?? lobbyA?.screen?.data?.canStart}`);
+ok(!!lobbyA, `A got a lobby screen with 2 players, enoughPlayers ${lobbyA?.data?.enoughPlayers ?? lobbyA?.screen?.data?.enoughPlayers}`);
 
 const phaseId = (lobbyA?.phaseId ?? snapA?.screen?.phaseId);
 const rtts = [];
@@ -80,9 +80,9 @@ a.send({ type: "ping", t: 1 });
 const pong = await a.wait((m) => m.type === "pong");
 ok(pong?.t === 1, `pong in ${Math.round(performance.now() - t0)} ms`);
 
-a.send({ type: "lobby", inputId: "s1", action: "start" });
+a.send({ type: "lobby", inputId: "s1", action: "ready" });
 const startAck = await a.wait((m) => m.type === "ack" && m.inputId === "s1");
-ok(startAck && startAck.ok === false, `lobby start acked ok=${startAck?.ok} reason ${startAck?.reason}`);
+ok(startAck && startAck.ok === false, `lobby ready before a character pick acked ok=${startAck?.ok} reason ${startAck?.reason}`);
 
 // Same-conn rejoin is a refresh (no 4002)
 a.send({ type: "rejoin", token: welcomeA.token });

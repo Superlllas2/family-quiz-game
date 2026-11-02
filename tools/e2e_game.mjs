@@ -1,5 +1,5 @@
-// End to end check of the Day 2 skeleton: three scripted phones play a whole game against the live relay and a
-// running TV app, then test Cancel on the Play again countdown.
+// End to end check of the Day 2 skeleton: three scripted phones tap Ready (D76), play a whole game against the live
+// relay and a running TV app, land back in the Lobby, and one leaves.
 // Usage: node tools/e2e_game.mjs <ROOM> [relayHost] [--dump <file>]  (start the TV app first; ROOM is the code on the TV)
 // --dump writes every text frame the phones received to a JSON file (the phone page tests parse such a capture).
 import { writeFileSync } from "node:fs";
@@ -60,13 +60,33 @@ for (const [i, p] of phones.entries()) {
 }
 
 const [a, b, c] = phones;
+const readyMarks = (s) => (s?.data?.players ?? []).map((p) => p.ready);
 let t = performance.now();
 let ack = await b.acked({ type: "lobby", action: "start" });
-ok(ack?.ok === true, "B taps Start");
-const late = await c.acked({ type: "lobby", action: "start" });
-ok(late?.ok === false && late.reason === "invalid", "a second Start gets invalid");
-const cd = await a.screen("countdown", t);
+ok(ack?.ok === false && ack.reason === "invalid", "the old Start action is gone (invalid)");
+ack = await b.acked({ type: "lobby", action: "ready" });
+ok(ack?.ok === true, "B taps Ready");
+let seen = await a.wait((m) => m.type === "screen" && m.id === "lobby" && m.at >= t && readyMarks(m)[1] === true);
+ok(seen && seen.data.ready === false && seen.data.enoughPlayers === true, `A's lobby shows B ready: ${JSON.stringify(readyMarks(seen))}`);
+ack = await a.acked({ type: "lobby", action: "ready" });
+ok(ack?.ok === true, "A taps Ready");
+await sleep(300);
+ok(!a.inbox.some((m) => m.type === "screen" && m.id === "countdown"), "two of three ready: no countdown yet");
+t = performance.now();
+ack = await c.acked({ type: "lobby", action: "ready" });
+ok(ack?.ok === true, "C taps Ready, the last one");
+let cd = await a.screen("countdown", t);
 ok(cd && cd.endsInMs > 2000 && cd.endsInMs <= 3000, `countdown on A (${cd?.endsInMs} ms, text "${cd?.data?.text}")`);
+t = performance.now();
+ack = await c.acked({ type: "lobby", action: "notReady" });
+ok(ack?.ok === true, "C taps Not ready during the countdown");
+seen = await a.screen("lobby", t);
+ok(seen && readyMarks(seen).join() === "true,true,false", `everyone back in the lobby, marks ${JSON.stringify(readyMarks(seen))}`);
+t = performance.now();
+ack = await c.acked({ type: "lobby", action: "ready" });
+ok(ack?.ok === true, "C taps Ready again");
+cd = await a.screen("countdown", t);
+ok(cd && cd.endsInMs > 2000, `the countdown runs again (${cd?.endsInMs} ms)`);
 
 let questions = 0;
 for (;;) {
@@ -110,24 +130,16 @@ ok(questions === 4, `4 questions played (${questions})`);
 
 const results = await a.screen("results", 0, 40000);
 ok(!!results, `results on A: place ${results?.data?.place}, ${results?.data?.correctCount} correct, awards ${JSON.stringify(results?.data?.awards)}`);
-t = performance.now();
-const done = await b.screen("pollDone", t - 30000, 30000);
-ok(done?.data?.canPlayAgain === true, "after Results, pollDone with Play again enabled");
-
-t = performance.now();
-ack = await c.acked({ type: "lobby", action: "playAgain" });
-ok(ack?.ok === true, "C taps Play again");
-ok(!!(await a.screen("countdown", t)), "the countdown starts on A");
-ack = await a.acked({ type: "lobby", action: "cancelStart" });
-ok(ack?.ok === true, "A taps Cancel");
-const back = await b.screen("pollDone", t);
-ok(!!back, "everyone is back on pollDone");
+const back = await b.screen("lobby", results.at, 30000);
+ok(back && back.data.ready === false && readyMarks(back).every((r) => r === false), `after Results, B is back in the lobby, nobody ready ${JSON.stringify(readyMarks(back))}`);
+const zero = await a.wait((m) => m.type === "player" && m.at >= results.at && m.player?.score === 0, 30000);
+ok(!!zero, "A's score is back to 0");
 
 t = performance.now();
 ack = await b.acked({ type: "leave" });
 ok(ack?.ok === true, "B leaves");
-const left = await a.screen("pollDone", t);
-ok(left?.data?.canPlayAgain === true, "two players left: Play again still enabled");
+const left = await a.wait((m) => m.type === "screen" && m.id === "lobby" && m.at >= t && m.data.players.length === 2);
+ok(left?.data?.enoughPlayers === true, "two players left: still enough to start");
 
 phones.forEach((p) => p.close());
 if (dump) writeFileSync(dump, JSON.stringify(received, null, 1) + "\n");
