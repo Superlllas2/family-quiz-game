@@ -4,7 +4,9 @@
     "references": [
         "FamilyQuiz.Core",
         "FamilyQuiz.Net",
-        "FamilyQuiz.Presentation"
+        "FamilyQuiz.Presentation",
+        "FamilyQuiz.Telemetry",
+        "FamilyQuiz.DevTools"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

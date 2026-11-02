@@ -11,10 +11,25 @@ namespace FamilyQuiz.Core.Content
         [JsonProperty("configVersion", Required = Required.Always)]
         public int ConfigVersion { get; set; }
 
+        [JsonProperty("timers", Required = Required.Always)]
+        public TimersConfig Timers { get; set; }
+
+        [JsonProperty("rounds", Required = Required.Always)]
+        public RoundsConfig Rounds { get; set; }
+
+        [JsonProperty("scoring", Required = Required.Always)]
+        public ScoringConfig Scoring { get; set; }
+
         [JsonProperty("players", Required = Required.Always)]
         public PlayersConfig Players { get; set; }
 
+        [JsonProperty("lobby", Required = Required.Always)]
+        public LobbyConfig Lobby { get; set; }
+
         [JsonProperty("net", Required = Required.Always)]
         public NetConfig Net { get; set; }
+
+        [JsonProperty("staging", Required = Required.Always)]
+        public StagingConfig Staging { get; set; }
     }
 }

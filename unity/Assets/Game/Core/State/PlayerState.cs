@@ -39,6 +39,15 @@ namespace FamilyQuiz.Core.State
         /// <summary>The last input applied for this player, or null.</summary>
         public AnswerRecord LastAnswer { get; internal set; }
 
+        /// <summary>True once the player picked a character on the pickCharacter screen; then they see the lobby.</summary>
+        public bool CharacterPicked { get; internal set; }
+
+        /// <summary>Correct answers in rounds in the current game ("results.correctCount", "Most correct").</summary>
+        public int CorrectCount { get; internal set; }
+
+        /// <summary>This player's part of the current question, or null outside question cycles.</summary>
+        public PlayerTurn Turn { get; internal set; }
+
         internal bool TryGetAck(string inputId, out AckRecord ack)
         {
             return _acks.TryGetValue(inputId, out ack);

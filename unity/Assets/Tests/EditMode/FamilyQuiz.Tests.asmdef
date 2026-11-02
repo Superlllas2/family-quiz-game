@@ -3,6 +3,8 @@
     "rootNamespace": "FamilyQuiz.Tests",
     "references": [
         "FamilyQuiz.Core",
+        "FamilyQuiz.Net",
+        "FamilyQuiz.Telemetry",
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],

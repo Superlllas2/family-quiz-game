@@ -17,7 +17,7 @@ namespace FamilyQuiz.Tests
             Config = TestContent.Config();
             Characters = TestContent.Characters(Config);
             Clock = new ManualClock();
-            Game = new Game(Config, Characters, Clock, new SeededRandom(1234));
+            Game = new Game(new GameContent(Config, Characters, new List<QuestionDef>(), null), Clock, new SeededRandom(1234), () => 42);
             Game.Start();
         }
 

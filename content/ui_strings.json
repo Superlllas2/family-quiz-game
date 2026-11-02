@@ -3,7 +3,6 @@
   "tv.lobby.scanToJoin": { "ru": "Наведи камеру телефона на QR-код", "en": "Point your phone camera at the QR code" },
   "tv.lobby.waiting": { "ru": "Ждём игроков", "en": "Waiting for players" },
   "tv.lobby.tapStart": { "ru": "Нажми «Старт» на любом телефоне", "en": "Tap Start on any phone" },
-  "tv.lobby.lastInput": { "ru": "{letter} · {ms} мс", "en": "{letter} · {ms} ms" },
   "tv.countdown.title": { "ru": "Игра начинается", "en": "Starting" },
   "tv.scores.title": { "ru": "Счёт", "en": "Scores" },
   "tv.results.winner": { "ru": "Победитель: {name}", "en": "Winner: {name}" },
@@ -16,5 +15,15 @@
   "screen.getReady.intro": { "ru": "Приготовься! Кто победит?", "en": "Get ready! Who wins tonight?" },
   "screen.getReady.finalIntro": { "ru": "Финальная гонка: отвечай «правда» или «ложь», быстро", "en": "Final race: answer true or false, fast" },
   "screen.awards.mostCorrect": { "ru": "Больше всех верных", "en": "Most correct" },
-  "screen.awards.bestComeback": { "ru": "Лучший камбэк", "en": "Best comeback" }
+  "screen.awards.bestComeback": { "ru": "Лучший камбэк", "en": "Best comeback" },
+  "tv.question.number": { "ru": "Вопрос {number} из {total}", "en": "Question {number} of {total}" },
+  "tv.question.answered": { "ru": "Ответили: {count} из {total}", "en": "Answered: {count} of {total}" },
+  "tv.reveal.points": { "ru": "+{points}", "en": "+{points}" },
+  "tv.reveal.wrong": { "ru": "Мимо", "en": "Wrong" },
+  "tv.reveal.noAnswer": { "ru": "Нет ответа", "en": "No answer" },
+  "tv.results.title": { "ru": "Итоги", "en": "Final standings" },
+  "tv.results.correctCount": { "ru": "Верных ответов: {count}", "en": "Correct answers: {count}" },
+  "tv.awards.mostCorrect": { "ru": "Больше всех верных: {names}", "en": "Most correct: {names}" },
+  "screen.waiting.locked": { "ru": "{letter} · {text}", "en": "{letter} · {text}" },
+  "screen.result.correctText": { "ru": "Правильный ответ: {letter} · {text}", "en": "Right answer: {letter} · {text}" }
 }

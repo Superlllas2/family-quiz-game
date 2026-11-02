@@ -65,7 +65,7 @@ namespace FamilyQuiz.Bootstrap
             _clock = new PausableClock(() => _stopwatch.ElapsedMilliseconds);
             _clock.Pause(); // the core clock runs only while the relay is connected
             _random = new CryptoRandom();
-            _game = new Game(config, characters, _clock, _random);
+            _game = new Game(new GameContent(config, characters, new List<QuestionDef>(), strings), _clock, _random, () => _random.Next(int.MaxValue));
             _view.Configure(strings, characters, _game.State.GameLanguage);
 
             _endpoint = LoadEndpoint();

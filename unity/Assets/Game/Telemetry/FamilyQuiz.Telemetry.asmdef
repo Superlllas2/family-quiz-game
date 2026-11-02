@@ -1,0 +1,18 @@
+{
+    "name": "FamilyQuiz.Telemetry",
+    "rootNamespace": "FamilyQuiz.Telemetry",
+    "references": [
+        "FamilyQuiz.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}
