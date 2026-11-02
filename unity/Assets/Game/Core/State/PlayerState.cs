@@ -36,9 +36,6 @@ namespace FamilyQuiz.Core.State
         public string HeldPowerUp { get; internal set; }
         public double TimerMultiplier { get; internal set; }
 
-        /// <summary>The last input applied for this player, or null.</summary>
-        public AnswerRecord LastAnswer { get; internal set; }
-
         /// <summary>True once the player picked a character on the pickCharacter screen; then they see the lobby.</summary>
         public bool CharacterPicked { get; internal set; }
 
