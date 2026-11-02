@@ -8,11 +8,14 @@ using FamilyQuiz.Net.Protocol;
 namespace FamilyQuiz.Net
 {
     /// <summary>
-    /// Listens to Core events and sends the phones what they need: welcome, snapshot, screen, refused, ack,
+    /// Listens to Core events and sends the phones what they need: welcome, snapshot, screen, player, refused, ack,
     /// and the close control message for a superseded socket. Only reads the state.
     /// </summary>
     public sealed class PhoneOutbox
     {
+        /// <summary>SettingsChanged.Setting for the phone language (docs/15_schemas.md, settingsChanged).</summary>
+        public const string LangSetting = "lang";
+
         private readonly Game _game;
         private readonly IRelaySender _sender;
         private readonly ScreenBuilder _screens;
@@ -58,9 +61,28 @@ namespace FamilyQuiz.Net
                     Send(ack.Conn, new AckMessage { InputId = ack.InputId, Ok = ack.Ok, Reason = ack.Reason });
                     _log("ack sent conn=" + ack.Conn + " inputId=" + ack.InputId + " ok=" + ack.Ok
                          + (ack.Reason != null ? " reason=" + ack.Reason : ""));
+                    if (!ack.Ok && ack.Reason == AckReasons.CharacterTaken) SendScreen(_game.State.FindByConn(ack.Conn));
+                    break;
+                case PhaseStarted _:
+                    SendScreenToEveryone();
+                    break;
+                case AnswerLocked _:
+                    // The locker now waits; every other locked player's pending list just lost a name.
+                    SendScreenToLockedPlayers();
+                    break;
+                case LastCallStarted lastCall:
+                    SendScreen(_game.State.FindById(lastCall.PlayerId));
                     break;
                 case RosterChanged _:
-                    SendScreenToEveryone();
+                case PlayerConnectionChanged _:
+                    RefreshAfterRosterChange();
+                    break;
+                case PlayerUpdated updated:
+                    SendPlayer(_game.State.FindById(updated.PlayerId));
+                    break;
+                case SettingsChanged settings:
+                    if (settings.Setting == LangSetting && settings.PlayerId != null)
+                        SendScreen(_game.State.FindById(settings.PlayerId));
                     break;
             }
         }
@@ -73,12 +95,43 @@ namespace FamilyQuiz.Net
             Send(conn, new SnapshotMessage { Player = _screens.Player(player), Screen = _screens.CurrentScreen(player) });
         }
 
+        /// <summary>The pending lists changed (Answer), or the player list did (Lobby, PlayAgain).</summary>
+        private void RefreshAfterRosterChange()
+        {
+            switch (_game.State.Phase)
+            {
+                case GamePhase.Answer:
+                    SendScreenToLockedPlayers();
+                    break;
+                case GamePhase.Lobby:
+                case GamePhase.PlayAgain:
+                    SendScreenToEveryone();
+                    break;
+            }
+        }
+
         private void SendScreenToEveryone()
         {
+            foreach (var player in _game.State.Players) SendScreen(player);
+        }
+
+        private void SendScreenToLockedPlayers()
+        {
+            if (_game.State.Phase != GamePhase.Answer) return;
             foreach (var player in _game.State.Players)
             {
-                if (IsReachable(player)) Send(player.Conn, new ScreenMessage(_screens.CurrentScreen(player)));
+                if (player.Turn != null && player.Turn.Locked) SendScreen(player);
             }
+        }
+
+        private void SendScreen(PlayerState player)
+        {
+            if (player != null && IsReachable(player)) Send(player.Conn, new ScreenMessage(_screens.CurrentScreen(player)));
+        }
+
+        private void SendPlayer(PlayerState player)
+        {
+            if (player != null && IsReachable(player)) Send(player.Conn, new PlayerMessage { Player = _screens.Player(player) });
         }
 
         private static bool IsReachable(PlayerState player)
