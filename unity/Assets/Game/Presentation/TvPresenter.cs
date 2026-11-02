@@ -26,6 +26,7 @@ namespace FamilyQuiz.Presentation
         private GameObject _relayBannerRoot;
         private TextMeshProUGUI _relayBanner;
         private TextMeshProUGUI _contentError;
+        private GameObject _current;
         private GamePhase _phase = GamePhase.Lobby;
         private bool _relayDown = true;
         private bool _broken;
@@ -137,33 +138,32 @@ namespace FamilyQuiz.Presentation
         private void Enter(GamePhase phase)
         {
             _phase = phase;
-            HideViews();
             switch (phase)
             {
                 case GamePhase.Lobby:
-                    _lobby.gameObject.SetActive(true);
+                    Show(_lobby.gameObject);
                     _lobby.Refresh();
                     break;
                 case GamePhase.StartCountdown:
-                    _countdown.gameObject.SetActive(true);
+                    Show(_countdown.gameObject);
                     _countdown.Enter();
                     break;
                 case GamePhase.QuestionShow:
                 case GamePhase.Answer:
                 case GamePhase.Reveal:
-                    _question.gameObject.SetActive(true);
+                    Show(_question.gameObject);
                     _question.Enter(phase);
                     break;
                 case GamePhase.Scores:
-                    _leaderboard.gameObject.SetActive(true);
+                    Show(_leaderboard.gameObject);
                     _leaderboard.Enter();
                     break;
                 case GamePhase.Results:
-                    _results.gameObject.SetActive(true);
+                    Show(_results.gameObject);
                     _results.Enter();
                     break;
                 case GamePhase.PlayAgain:
-                    _standings.gameObject.SetActive(true);
+                    Show(_standings.gameObject);
                     _standings.Enter();
                     break;
             }
@@ -206,8 +206,21 @@ namespace FamilyQuiz.Presentation
             _relayBannerRoot.SetActive(!_broken && _relayDown && _phase != GamePhase.Lobby);
         }
 
+        /// <summary>
+        /// Shows one view and hides the others. A view that stays (QuestionShow, Answer, Reveal) is not toggled, so
+        /// a pop that started in the same batch (the last lock in, then Reveal) keeps playing.
+        /// </summary>
+        private void Show(GameObject view)
+        {
+            if (_current == view && view.activeSelf) return;
+            HideViews();
+            view.SetActive(true);
+            _current = view;
+        }
+
         private void HideViews()
         {
+            _current = null;
             _lobby.gameObject.SetActive(false);
             _countdown.gameObject.SetActive(false);
             _question.gameObject.SetActive(false);
@@ -247,7 +260,7 @@ namespace FamilyQuiz.Presentation
             _contentError.gameObject.SetActive(false);
 
             HideViews();
-            _lobby.gameObject.SetActive(true);
+            Show(_lobby.gameObject);
             UpdateRelayBanner();
         }
     }
