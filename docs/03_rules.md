@@ -1,8 +1,10 @@
 # 03 Rules and numbers
 
-Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`).
+Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; starting values and staging keys from `decisions/0004_staging.md`).
 
-Every number in the game lives in `content/config.json`. This document explains each rule; the table at the end lists every key with its default. Code never contains these numbers as literals.
+Every number in the game lives in `content/config.json`. This document explains each rule; the table at the end lists every key with its starting value. Code never contains these numbers as literals.
+
+**Every timer and every staging duration is a suggested starting value to tune in playtests, not a fixed rule** (D48). That covers `timers.*`, `race.answer`, `race.reveal`, `lobby.startCountdownSeconds`, `poll.maxSeconds`, `hosts.minGapSeconds`, `hosts.bubbleSeconds` and every `staging.*` key. Tune them in config only; tests read them from config, and the timing checks in `19_acceptance.md` must still pass after a change.
 
 ## Ranks
 
@@ -95,7 +97,9 @@ Standard is the only mode for game night 1. Quick and Long in `show_scripts.json
 
 ## Config keys
 
-| Key | Default | Meaning |
+Starting values for playtests. Config validation also checks that each staging animation fits inside its phase (the phase timer plus its staging extra): the curtain and the question fade in within QuestionShow, cards up plus reactions within Reveal, the leaderboard overlay within Scores, the suspense riser within the shortest answer window, the establishing shot within the Intro, and the winner walk within Results.
+
+| Key | Starting value | Meaning |
 | --- | --- | --- |
 | `configVersion` | 1 | Version of the config format |
 | `timers.intro` | 30 | Seconds |
@@ -151,3 +155,16 @@ Standard is the only mode for game night 1. Quick and Long in `show_scripts.json
 | `hosts.streakTrigger` | 3 | Streak length that fires `streak3` |
 | `poll.enabled` | true | |
 | `poll.maxSeconds` | 90 | The poll ends after this even if phones have not submitted |
+| `staging.extraSeconds.questionShow` | 0 | Seconds staging adds to QuestionShow (`21_staging.md`). Above 0 breaks the 11 s idle limit (D42), so it needs a decision first |
+| `staging.extraSeconds.reveal` | 0 | The same, for Reveal |
+| `staging.extraSeconds.scores` | 0 | The same, for Scores |
+| `staging.extraSeconds.roundEnd` | 0 | The same, for RoundEnd |
+| `staging.lobby.seatPopSeconds` | 0.5 | A joining player's guest pops into their seat |
+| `staging.intro.establishSeconds` | 6 | Establishing shot at the start of the Intro |
+| `staging.questionShow.curtainOpenSeconds` | 1.2 | The stage curtain opens |
+| `staging.questionShow.questionInSeconds` | 0.4 | The question panel fades in |
+| `staging.answer.suspenseRiseSeconds` | 5 | The suspense riser starts this long before the latest deadline |
+| `staging.reveal.cardsUpSeconds` | 0.5 | Guests raise their answer cards |
+| `staging.reveal.reactionSeconds` | 1.5 | Happy or slumped reactions after the cards are up |
+| `staging.scores.overlayInSeconds` | 0.4 | The leaderboard overlay slides in |
+| `staging.results.winnerWalkSeconds` | 3 | The winner walks to the center of the floor |

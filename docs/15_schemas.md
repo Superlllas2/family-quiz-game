@@ -1,6 +1,6 @@
 # 15 Data schemas and sample content
 
-Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`).
+Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; `playerJoined` trigger and `stagingExtraMs` from `decisions/0004_staging.md`).
 
 All content is JSON, UTF 8, in `content/`. The TV app parses it with Newtonsoft Json.NET. It reads it at startup from `unity/Assets/StreamingAssets/content/`, where an editor script copies `content/` before Play mode and before every build (`13_architecture.md`; the copy is not in git). It validates everything; any error stops the game with a clear message naming the file, the item id and the field.
 
@@ -157,6 +157,7 @@ The TV and the phone draw an avatar as its shape filled with its color, with the
 
 | Trigger | Fires when | Fills |
 | --- | --- | --- |
+| `playerJoined` | Lobby: a new player joins. Not for a rejoin, and not for players kept by Play again or Back to lobby | `{name}` |
 | `gameStart` | Intro starts | |
 | `roundStart` | TopicVote starts | |
 | `everyoneCorrect` | Reveal: every connected player answered correctly | |
@@ -179,6 +180,8 @@ The TV and the phone draw an avatar as its shape filled with its color, with the
 3. **Which host:** the host who has been silent longer speaks. The line comes from that host's lines for the trigger that have not been shown yet (shuffle bag per trigger and host, saved to disk across evenings), drawn by weight. If that host has none left but the other host has, the other host speaks. When both are used up, both bags refill.
 4. **Gap:** a host speaks only after `hosts.minGapSeconds` of silence. If the chosen host is still inside the gap, the line is dropped, never delayed. A bubble stays for `hosts.bubbleSeconds`; at most one bubble per host at a time.
 5. **Intro exception:** the Intro plays one `gameStart` line from each host, one after the other: the second starts when the first bubble ends.
+
+`playerJoined` follows the normal gap rule, so when players join within a few seconds of each other some are not greeted. It shares its name with the `playerJoined` log event; the `hostLine` event's `trigger` field holds the trigger.
 
 Lines show in the game language, with `{name}` and `{target}` filled in.
 
@@ -219,7 +222,7 @@ Every event type, with its fields. `session` and `build` are shortened to `"..."
 {"t":20000,"session":"...","build":"...","event":"lobbyAction","playerId":"p2","action":"start","ok":true}
 {"t":20500,"session":"...","build":"...","event":"settingsChanged","source":"tv","setting":"targeting","value":"aimUp"}
 {"t":23000,"session":"...","build":"...","seed":918273,"event":"gameStarted","game":1,"mode":"standard","players":["p1","p2","p3"],"settings":{"gameLang":"ru","powerUps":["freeze","slime","fog"],"targeting":"free"}}
-{"t":40000,"session":"...","build":"...","event":"phaseStarted","phase":"Answer","phaseId":16,"round":1,"slot":2,"questionId":"geo_003","budgetMs":15000}
+{"t":40000,"session":"...","build":"...","event":"phaseStarted","phase":"Answer","phaseId":16,"round":1,"slot":2,"questionId":"geo_003","budgetMs":15000,"stagingExtraMs":0}
 {"t":49800,"session":"...","build":"...","event":"phaseEnded","phase":"Answer","phaseId":16,"reason":"allDone","durationMs":9800}
 {"t":43410,"session":"...","build":"...","event":"input","playerId":"p2","kind":"choice","phaseId":16,"ms":3410,"correct":true,"points":890}
 {"t":56100,"session":"...","build":"...","event":"inputRefused","playerId":"p4","kind":"choice","phaseId":16,"reason":"closed"}
@@ -241,6 +244,7 @@ Allowed values:
 | `playerLeft.reason` | `disconnected` (seat still held), `left` (tapped Leave), `seatExpired` |
 | `lobbyAction.action` | `start`, `cancelStart`, `playAgain` |
 | `settingsChanged.source` | `tv` (settings panel: `gameLang`, `powerUps`, `powerUpTypes`, `targeting`, `resetSeen`, `backToLobby`) or `phone` (with `playerId`: `lang`, `timerMultiplier`) |
+| `phaseStarted.budgetMs`, `stagingExtraMs` | The phase budget in ms with any staging extra included, and that extra alone (`staging.extraSeconds`, `21_staging.md`); 0 for phases without one. Answer budgets are the base window, before timer multipliers |
 | `phaseEnded.reason` | `timeout`, `allDone`, `cancelled` (countdown), `abandoned` (Back to lobby), `skip` (developer phase skip key only) |
 | `gameEnded.reason` | `finished`, `backToLobby` |
 | `poll` | Never carries a player id |
@@ -251,4 +255,4 @@ Computed by `tools/analyze_log`:
 
 - **Idle:** a moment is idle when no connected phone can send an answer, vote, prediction, power up pick or poll input. Idle share = idle time divided by game time (from `gameStarted` to `gameEnded`). Reported only, no pass or fail in game night 1.
 - **Longest idle stretch** outside Intro, FinalIntro and Results. Must stay at or under 11 s (`19_acceptance.md`).
-- Phase durations, correct rate per question, power ups drawn versus used, who targets whom.
+- Phase durations (real, from `phaseEnded.durationMs`, next to the budget and its staging extra), correct rate per question, power ups drawn versus used, who targets whom.

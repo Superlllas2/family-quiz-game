@@ -20,6 +20,8 @@ Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `deci
 | 4 | | | | | |
 | Final | | | | | |
 
+When the staging grey box or the set is in the build, also note per round: which shots felt slow, which cut was confusing, and whether everyone could read the answer cards from the sofa.
+
 ## The poll (on the phones, after Results, before any group talk)
 
 Stored in `content/poll.json`. Anonymous: the log stores answers without player ids. The poll closes when every connected phone has submitted, or after 90 s (`poll.maxSeconds`).
@@ -37,5 +39,6 @@ Stored in `content/poll.json`. Anonymous: the log stores answers without player 
 ## After the game night
 
 1. Copy the log folder and the poll results into `playtests/2026-11-07/` (or the actual date) in the repo.
-2. Run `tools/analyze_log` and write `playtests/<date>/notes.md`: idle share (reported, no target for game night 1), longest idle stretch outside Intro, FinalIntro and Results (should stay at or under 11 s), phase durations, the observation sheet, poll answers, and the top 3 problems.
+2. Run `tools/analyze_log` and write `playtests/<date>/notes.md`: idle share (reported, no target for game night 1), longest idle stretch outside Intro, FinalIntro and Results (should stay at or under 11 s), phase durations with any staging extras, the observation sheet, poll answers, and the top 3 problems.
 3. For each of the three open questions (D15 power ups on the phone, D14 targeting, D16 timer), write keep, change or drop with the evidence.
+4. Every timer and staging duration is a starting value (D48). Write which ones to change, with the evidence, and change them only in `content/config.json`.

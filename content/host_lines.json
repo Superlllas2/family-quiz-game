@@ -1,5 +1,45 @@
 [
   {
+    "id": "k_playerJoined_01",
+    "host": "konstantin",
+    "trigger": "playerJoined",
+    "text": {
+      "ru": "{name}, проходи, садись! Диван мягкий, вопросы жёсткие.",
+      "en": "{name}, come in, take a seat! Soft sofa, hard questions."
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_playerJoined_02",
+    "host": "konstantin",
+    "trigger": "playerJoined",
+    "text": {
+      "ru": "А вот и {name}! Аплодисменты, пожалуйста.",
+      "en": "And here comes {name}! A round of applause, please."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_playerJoined_01",
+    "host": "ilja",
+    "trigger": "playerJoined",
+    "text": {
+      "ru": "{name} в студии! Теперь точно не скучно.",
+      "en": "{name} is in the studio! Now it won't be boring."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_playerJoined_02",
+    "host": "ilja",
+    "trigger": "playerJoined",
+    "text": {
+      "ru": "Добро пожаловать, {name}. Костя уже волнуется.",
+      "en": "Welcome, {name}. Konstantin is already nervous."
+    },
+    "weight": 1
+  },
+  {
     "id": "k_gameStart_01",
     "host": "konstantin",
     "trigger": "gameStart",

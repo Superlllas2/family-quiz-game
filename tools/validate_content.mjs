@@ -13,7 +13,7 @@ const isLoc = (v, max) =>
   v && typeof v.ru === "string" && typeof v.en === "string" &&
   (max === undefined || (v.ru.length <= max && v.en.length <= max));
 
-const TRIGGERS = ["gameStart", "roundStart", "everyoneCorrect", "nobodyCorrect", "fastAnswer", "newLeader",
+const TRIGGERS = ["playerJoined", "gameStart", "roundStart", "everyoneCorrect", "nobodyCorrect", "fastAnswer", "newLeader",
   "streak3", "powerUpUsed", "closestExact", "lastPlaceCorrect", "roundEnd", "finalStart", "raceWinner", "lastCall"];
 
 const topics = load("topics.json");
@@ -87,11 +87,31 @@ const REQUIRED = [
   "race.stepsPerCorrect", "race.answer", "race.reveal", "players.min", "players.max", "players.timerMultiplierOptions",
   "players.seatHoldSeconds", "lobby.startCountdownSeconds", "net.inputGraceMs", "net.tvReconnectSeconds",
   "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds",
+  "staging.extraSeconds.questionShow", "staging.extraSeconds.reveal", "staging.extraSeconds.scores",
+  "staging.extraSeconds.roundEnd", "staging.lobby.seatPopSeconds", "staging.intro.establishSeconds",
+  "staging.questionShow.curtainOpenSeconds", "staging.questionShow.questionInSeconds",
+  "staging.answer.suspenseRiseSeconds", "staging.reveal.cardsUpSeconds", "staging.reveal.reactionSeconds",
+  "staging.scores.overlayInSeconds", "staging.results.winnerWalkSeconds",
 ];
 for (const key of REQUIRED) {
   if (key.split(".").reduce((o, k) => (o == null ? undefined : o[k]), cfg) === undefined) err("config.json", key, "missing key");
 }
 if (!topics.some((t) => t.id === cfg.topics?.mixedTopicId && t.mixed)) err("config.json", "topics.mixedTopicId", "must name the mixed topic");
+
+// Staging (docs/21_staging.md): extras are 0 or more, and every staging animation fits inside its phase
+// (the phase timer plus its staging extra).
+const st = cfg.staging ?? {};
+const tm = cfg.timers ?? {};
+const ex = st.extraSeconds ?? {};
+const fit = (ok, key, msg) => { if (!ok) err("config.json", key, msg); };
+for (const [k, v] of Object.entries(ex)) fit(typeof v === "number" && v >= 0, "staging.extraSeconds." + k, "must be 0 or more");
+fit(st.questionShow?.curtainOpenSeconds <= tm.questionShow + ex.questionShow, "staging.questionShow.curtainOpenSeconds", "must fit inside QuestionShow");
+fit(st.questionShow?.questionInSeconds < tm.questionShow + ex.questionShow, "staging.questionShow.questionInSeconds", "must be shorter than QuestionShow");
+fit(st.reveal?.cardsUpSeconds + st.reveal?.reactionSeconds <= tm.reveal + ex.reveal, "staging.reveal", "cards up plus reactions must fit inside Reveal");
+fit(st.scores?.overlayInSeconds < tm.scores + ex.scores, "staging.scores.overlayInSeconds", "must be shorter than Scores");
+fit(st.answer?.suspenseRiseSeconds <= Math.min(tm.answer?.multipleChoice, tm.answer?.closestValue), "staging.answer.suspenseRiseSeconds", "must fit inside the shortest answer window");
+fit(st.intro?.establishSeconds < tm.intro, "staging.intro.establishSeconds", "must be shorter than the Intro");
+fit(st.results?.winnerWalkSeconds < tm.results, "staging.results.winnerWalkSeconds", "must be shorter than Results");
 
 // lastPlaceCanWin (docs/02_show_flow.md): with the largest head start gap (leader maxHeadStart, last place 0),
 // (leader head start - last place head start) < maxQuestions and (finishSteps - last place head start) <= maxQuestions.

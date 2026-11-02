@@ -22,13 +22,14 @@ unity/Assets/Game/
     Events/        PhaseStarted, PhaseEnded, AnswerLocked, Revealed, ScoreChanged, PowerUpApplied, HostLineRequested, ...
     State/         GameState, PlayerState, RoundState, RaceState
     Rules/         Scoring, Ranking, PowerUpDealer, Targeting, TopicPicker, QuestionPicker, RaceRules
-    Show/          ShowDirector (runs phases on the injected clock)
+    Show/          ShowDirector (runs phases on the injected clock; adds staging.extraSeconds to a phase budget)
     Content/       content and config models plus the validator (parsed with Newtonsoft)
     IClock, IRandom
   Net/             FamilyQuiz.Net.asmdef       references Core
     RelayClient, MessageQueue (thread safe), Protocol DTOs, ScreenBuilder (events to per phone screens)
   Presentation/    FamilyQuiz.Presentation.asmdef  references Core
     TV views per phase (UGUI + TextMeshPro), avatars drawn from avatars.json, host text bubbles, TV settings panel, debug overlay
+    StagingDirector (stretch, 21_staging.md): listens to phase events, switches cameras, places guests and answer cards; never delays a phase
   Dialogue/        references Core: line selection with shuffle bags
   Telemetry/       references Core: JSONL writer
   DevTools/        references Core, Net: F1 debug overlay, phase skip keys
@@ -39,6 +40,8 @@ unity/Assets/Tests/
 ```
 
 There are no bots in the game: every seat is a real phone or browser tab.
+
+Staging uses plain Unity cameras and, later, Timeline (already in the project). Cinemachine or any other camera package needs asking first.
 
 ## Core loop
 

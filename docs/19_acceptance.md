@@ -6,9 +6,9 @@ Status: Done (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_r
 
 **Must have:** relay, phone page, lobby with QR join, preset avatars, language per phone, Start and Play again from any phone with the start countdown, the TV settings panel, the Standard show (intro, 4 rounds, final race, results, poll), topic vote, multiple choice, closest value, scoring with speed curve and multipliers, 3 power ups with free targeting, final race with true or false, host text bubbles, debug overlay, event log, play again, reconnects and leave, macOS build.
 
-**Stretch, only after every must have passes:** clue by clue format, one mini game, a Windows build, Russian text to speech for host lines.
+**Stretch, only after every must have passes:** clue by clue format, one mini game, a Windows build, Russian text to speech for host lines, and the TV staging grey box (`21_staging.md`; only after every Day 4 check passes, checks below).
 
-**Not in game night 1:** art, music, voices, Quick and Long modes as tested features, family photos, an installer, bots or computer players in the game.
+**Not in game night 1:** art, music, voices, the 3D set, characters and band (at most the grey box), Quick and Long modes as tested features, family photos, an installer, bots or computer players in the game.
 
 ## Checks
 
@@ -49,10 +49,17 @@ Each check is automated (a unit test or a simulated game in the test code) unles
 - [ ] Draw chances by rank match the formula in `03_rules.md` over 10,000 simulated draws within 2% (unit test)
 - [ ] Targeting free and aim up both follow `03_rules.md`; caps and immunity hold (unit tests)
 - [ ] Freeze, slime and fog appear on the target's phone at the start of the next answer phase and can be cleared (manual)
-- [ ] Host lines: at most one line per question cycle, chosen by the priority in `15_schemas.md`; `fastAnswer` only for the single fastest correct player; the host silent longer speaks; never more than one bubble at a time per host; no line repeats in an evening while others of its trigger remain (unit tests)
+- [ ] Host lines: at most one line per question cycle, chosen by the priority in `15_schemas.md`; `fastAnswer` only for the single fastest correct player; `playerJoined` fires for each new player in the Lobby, never for a rejoin or Play again; the host silent longer speaks; never more than one bubble at a time per host; no line repeats in an evening while others of its trigger remain (unit tests)
 - [ ] The poll appears on every phone after Results, ends when every connected phone submitted or after 90 s, and answers land in the log without player ids
 - [ ] The TV settings panel opens with Tab and changes game language, power ups, each power up type and targeting; Reset seen questions and Back to lobby work (manual)
 - [ ] All content files load and validate; a broken file shows a clear error (unit test with a broken fixture)
+
+### Stretch: staging grey box (only after every Day 4 check passes)
+
+- [ ] The TV cuts between two cameras by phase: `Stage` during QuestionShow, Answer, FinalIntro and the race, `Wide` in every other phase (manual)
+- [ ] A joining player appears as a capsule in their avatar color in the first free seat, with a name tag, and disappears when they leave (manual)
+- [ ] On Reveal every capsule shows a colored card with its letter or number, an empty card for no answer, readable from the sofa at 3 m; the cards hide when Scores ends (manual)
+- [ ] Every `staging.extraSeconds` value is 0 and every Day 3 timing check still passes (simulated game)
 
 ### Day 5: rehearsal (Sat)
 

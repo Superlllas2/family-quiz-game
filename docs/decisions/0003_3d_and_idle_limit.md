@@ -12,5 +12,5 @@ Date: Nov 2, 2026. Decided by Ilia. The AI building the game never reopens one o
 | Detail | Where |
 | --- | --- |
 | Game night 1 scope does not change: grey box TV views, no art. They render as UGUI over the camera of the Universal 3D project. The 3D studio and characters come after game night 1 | 01, 13 |
-| The art direction is chosen from six 3D options (published as a separate page) and then written up as spec document 10 | 00 |
+| The art direction is chosen from six 3D options (published as a separate page) and then written up as spec document 10. Superseded by D44 and D45 in `0004_staging.md` | 00 |
 | The 11 s limit equals the current timers exactly, so simulated games must end each phase at its exact budget on the fake clock | 19, prompts |

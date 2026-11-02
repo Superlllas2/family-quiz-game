@@ -1,8 +1,10 @@
 # 02 Show flow
 
-Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`).
+Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; timers marked as starting values and staging linked in `decisions/0004_staging.md`).
 
-Every phase, in order, with its timer, what the TV shows, what the phones show, and what ends it early. All durations are config keys in `content/config.json`; the numbers below are their defaults. Durations are maximums: a phase ends early the moment its end condition is met.
+Every phase, in order, with its timer, what the TV shows, what the phones show, and what ends it early. All durations are config keys in `content/config.json`; the numbers below are their defaults. **Every timer in this document is a suggested starting value to tune in playtests, not a fixed rule** (D48): change it in config, never in code, and re-run the timing checks in `19_acceptance.md`. Durations are maximums: a phase ends early the moment its end condition is met.
+
+What the camera, the set, the guests and the band do in each phase is in `21_staging.md`. Staging adds no time in game night 1 (every `staging.extraSeconds` value is 0).
 
 ## Phase list (Standard mode)
 
@@ -27,9 +29,9 @@ Mini games are not in game night 1. When added later, one goes after rounds 1, 2
 
 ## The phases
 
-| Phase | Max duration (config key) | Ends early when | TV shows | Every phone shows |
+| Phase | Suggested max duration (config key) | Ends early when | TV shows | Every phone shows |
 | --- | --- | --- | --- | --- |
-| Lobby | none | Any phone taps Start (enabled at 2 or more players, `players.min`) | Room code, QR code, joined players with avatars, "Waiting for players" | `join`, then `pickAvatar`, then `lobby` with Start |
+| Lobby | none | Any phone taps Start (enabled at 2 or more players, `players.min`) | Room code, QR code, joined players with avatars, "Waiting for players"; a host greets each new player (`playerJoined` line) | `join`, then `pickAvatar`, then `lobby` with Start |
 | StartCountdown | 3 s (`lobby.startCountdownSeconds`) | Any phone taps Cancel, or fewer than 2 players remain: back to Lobby (or to PlayAgain) | Big 3, 2, 1 | `countdown` with Cancel |
 | Intro | 30 s (`timers.intro`) | Never early | Title card and one `gameStart` line from each host, one after the other | "Get ready" plus prediction: "Who wins tonight?" (tap a player) |
 | TopicVote | 10 s (`timers.topicVote`) | Every connected player voted | Four topic doors and live vote counts | Four topic buttons |

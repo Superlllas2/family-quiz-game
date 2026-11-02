@@ -2,11 +2,11 @@
 
 Snapshot from Nov 1, 2026 of the live doc at https://claude.ai/artifact/UQA5Hd1S8UzTiAANuSngNJ. **This repo copy holds the current status** (updated Nov 2, 2026 for game night 1).
 
-**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`. Decisions from the spec review are in `docs/decisions/0002_spec_review.md`.
+**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`. Decisions from the spec review are in `docs/decisions/0002_spec_review.md`; the staging concept is in `docs/decisions/0004_staging.md`.
 
 ## How to use this kit
 
-The spec is complete when an AI building any part of the game has nothing left to guess. Twenty one documents in four groups cover the whole game. The master plan already covers 3 of them, covers 12 in part, and leaves 6 untouched.
+The spec is complete when an AI building any part of the game has nothing left to guess. Twenty two documents in four groups cover the whole game. The master plan already covers 3 of them, covers 12 in part, and leaves 7 untouched (document 21, Staging, was added on Nov 2, 2026; the Decisions log moved from 21 to 22).
 
 **The test for every line:** if two good developers could build it two different ways, the spec must say which way. Anything left open becomes a generic default.
 
@@ -34,9 +34,9 @@ Update the Status column as you go; the kit is ready when every row says Done.
 | 7 | Host bibles and line list | Game design | Later | `docs/07_hosts.md` |
 | 8 | Content guidelines | Game design | Later | `docs/08_content.md` |
 | 9 | Settings and accessibility | Game design | Partial (game night 1 settings listed in 02, 03 and 06) | `docs/09_settings.md` |
-| 10 | Visual style guide | Look and feel | Later (stylized 3D, `decisions/0003_3d_and_idle_limit.md`) | `docs/10_visual_style.md` |
+| 10 | Visual style guide | Look and feel | Partial (stylized 3D, D43; late night set and matte look in `21_staging.md`, `decisions/0004_staging.md`) | `docs/10_visual_style.md` |
 | 11 | Motion and feedback spec | Look and feel | Later | `docs/11_motion.md` |
-| 12 | Audio direction and sound list | Look and feel | Later | `docs/12_audio.md` |
+| 12 | Audio direction and sound list | Look and feel | Partial (band music cues in `21_staging.md`) | `docs/12_audio.md` |
 | 13 | Tech spec and architecture | Technical | Done for game night 1 | `docs/13_architecture.md` |
 | 14 | Message protocol | Technical | Done for game night 1 | `docs/PROTOCOL.md` |
 | 15 | Data schemas and sample content | Technical | Done for game night 1 | `docs/15_schemas.md` + `content/` |
@@ -45,7 +45,8 @@ Update the Status column as you go; the kit is ready when every row says Done.
 | 18 | Edge cases | Proof | Done for game night 1 | `docs/18_edge_cases.md` |
 | 19 | Acceptance criteria | Proof | Done for game night 1 | `docs/19_acceptance.md` |
 | 20 | Playtest plan | Proof | Done for game night 1 | `docs/20_playtest.md` |
-| 21 | Decisions log | Proof | Done | `docs/decisions/` |
+| 21 | Staging and camera | Look and feel | Partial (draft for prototyping; final race open) | `docs/21_staging.md` |
+| 22 | Decisions log | Proof | Done | `docs/decisions/` |
 
 ## Game design documents
 
@@ -191,7 +192,12 @@ AI skips these unless they are listed. Each needs one line saying what the game 
 
 - **Contains:** what is logged, the observation sheet, the 3 minute poll, and the keep, change or drop rules. Fully covered by the research; move it into its own file.
 
-### 21. Decisions log
+### 21. Staging and camera
+
+- **Contains:** the set, the camera shots and camera rules, a shot list per phase with suggested durations as config keys, the character plan with animation lists, the band's music cues, and the grey box version.
+- **Open:** the final race staging, where the second host sits, the stinger rule, guest body types, music source.
+
+### 22. Decisions log
 
 - **Contains:** one short record per decision: date, question, options, choice, reason. Start with the ten decisions in the master plan, then add one per risk spike.
 - **Rule:** the AI may never reopen a logged decision on its own.
@@ -200,9 +206,9 @@ AI skips these unless they are listed. Each needs one line saying what the game 
 
 Fill the documents in this order. Each step leans on the one before, and steps 1 to 4 need your decisions most.
 
-1. **Decide:** Vision (1) and the Decisions log (21), so every later doc has fixed ground.
+1. **Decide:** Vision (1) and the Decisions log (22), so every later doc has fixed ground.
 2. **Design the game:** Show flow (2), Rules and numbers (3), Question formats (4), Mini games (5).
-3. **Design the look:** Visual style guide (10), Motion (11), Audio (12).
+3. **Design the look:** Visual style guide (10), Motion (11), Audio (12), Staging (21).
 4. **Design the players' view:** Phone screens (6), Settings (9).
 5. **Write the people and words:** Hosts (7), Content guidelines (8).
 6. **Translate into tech:** Tech spec (13), Protocol (14), Schemas and samples (15), Asset list (16), CLAUDE.md (17).
