@@ -75,7 +75,8 @@ namespace FamilyQuiz.Telemetry
             _rejoinedInBatch.Clear();
         }
 
-        public void OnEvent(IGameEvent e)
+        /// <summary>Private: a rejoin is told apart from a socket coming back by looking at the whole batch (OnEvents).</summary>
+        private void OnEvent(IGameEvent e)
         {
             Safe(() => Log(e));
         }
