@@ -1,6 +1,6 @@
 # 15 Data schemas and sample content
 
-Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; `playerJoined` trigger and `stagingExtraMs` from `decisions/0004_staging.md`).
+Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; `playerJoined` trigger and `stagingExtraMs` from `decisions/0004_staging.md`; characters and `startCountdown` from `decisions/0005_staging_answers.md`).
 
 All content is JSON, UTF 8, in `content/`. The TV app parses it with Newtonsoft Json.NET. It reads it at startup from `unity/Assets/StreamingAssets/content/`, where an editor script copies `content/` before Play mode and before every build (`13_architecture.md`; the copy is not in git). It validates everything; any error stops the game with a clear message naming the file, the item id and the field.
 
@@ -19,7 +19,7 @@ Check the content with `node tools/validate_content.mjs` after every edit. The T
 | `content/host_lines.json` | Host text lines and their triggers |
 | `content/show_scripts.json` | The segments of each mode |
 | `content/poll.json` | Poll questions |
-| `content/avatars.json` | The 12 preset avatars |
+| `content/characters.json` | The roster of guest characters players pick from |
 | `unity/Assets/StreamingAssets/local.json` | Machine settings: `relayHost`. Not in git (`local.example.json` is) |
 
 ## topics.json
@@ -113,22 +113,42 @@ Example:
 ]
 ```
 
-## avatars.json
+## characters.json
+
+The guest characters players pick from (`21_staging.md`). The roster is a draft until Ilia approves it.
 
 ```json
 [
-  { "id": 0, "color": "#E74C3C", "shape": "circle" },
-  { "id": 1, "color": "#3498DB", "shape": "square" }
+  {
+    "id": 0,
+    "name": {
+      "ru": "Дед Аркадий",
+      "en": "Grandpa Arkady"
+    },
+    "personality": {
+      "ru": "Знает всё. Особенно то, о чём не спрашивали.",
+      "en": "Knows everything, especially what nobody asked."
+    },
+    "look": "Retired engineer in his seventies, tall and wiry, grey cardigan over a pressed shirt, flat cap, reading glasses on a cord, bushy eyebrows",
+    "color": "#C9A227",
+    "idlePose": "Arms crossed, leans back, one eyebrow raised at the stage",
+    "happyReaction": "A slow satisfied nod and one finger up: told you so",
+    "sadReaction": "Waves the question away with a grumble: the question was wrong",
+    "cardHold": "Holds it up stiffly at arm's length without looking at it"
+  }
 ]
 ```
 
 | Field | Rule |
 | --- | --- |
-| `id` | 0 to 11, unique, exactly 12 entries |
-| `color` | `#RRGGBB` |
-| `shape` | `circle`, `square`, `triangle`, `diamond`, `star` or `hexagon` |
+| `id` | Integer; the ids are 0, 1, 2, ... in file order. At least `players.max` characters |
+| `name` | Localized, at most 16 characters per language, unique |
+| `personality` | Localized, one line, at most 60 characters; shown on the `pickCharacter` card |
+| `look` | English, for artists: age, build, clothes, props |
+| `color` | Signature color, `#RRGGBB`, unique, with a contrast ratio of at least 4.5 against `#14161C` (the chip text color) |
+| `idlePose`, `happyReaction`, `sadReaction`, `cardHold` | English, for animators: the four signature animations |
 
-The TV and the phone draw an avatar as its shape filled with its color, with the player's first letter, uppercase, in `#14161C` in the middle. No emoji. The colors are placeholders until the visual style guide exists.
+Until the 3D characters exist, the TV and the phone draw a player's character as a chip: a rounded card in `color` with the player's name in `#14161C`. The `pickCharacter` card also shows the character's name and personality line. In the grey box (`21_staging.md`) a character is a capsule in `color` with its name above it. No emoji. The colors are placeholders until the visual style guide exists.
 
 ## host_lines.json
 
@@ -158,6 +178,7 @@ The TV and the phone draw an avatar as its shape filled with its color, with the
 | Trigger | Fires when | Fills |
 | --- | --- | --- |
 | `playerJoined` | Lobby: a new player joins. Not for a rejoin, and not for players kept by Play again or Back to lobby | `{name}` |
+| `startCountdown` | StartCountdown begins, after Start or after Play again | |
 | `gameStart` | Intro starts | |
 | `roundStart` | TopicVote starts | |
 | `everyoneCorrect` | Reveal: every connected player answered correctly | |
@@ -182,6 +203,8 @@ The TV and the phone draw an avatar as its shape filled with its color, with the
 5. **Intro exception:** the Intro plays one `gameStart` line from each host, one after the other: the second starts when the first bubble ends.
 
 `playerJoined` follows the normal gap rule, so when players join within a few seconds of each other some are not greeted. It shares its name with the `playerJoined` log event; the `hostLine` event's `trigger` field holds the trigger.
+
+`startCountdown` plays one line when the countdown begins. The host who says it is still inside the gap when the Intro starts 3 s later, so the other host says the first `gameStart` line; the Intro rule is otherwise unchanged.
 
 Lines show in the game language, with `{name}` and `{target}` filled in.
 
@@ -216,7 +239,7 @@ Every event type, with its fields. `session` and `build` are shortened to `"..."
 
 ```json
 {"t":0,"session":"2026-11-07T19-30-00","build":"0.1.0","event":"sessionStarted","room":"KXQT","configVersion":1}
-{"t":5210,"session":"...","build":"...","event":"playerJoined","playerId":"p1","name":"Mama","lang":"ru","avatarId":0}
+{"t":5210,"session":"...","build":"...","event":"playerJoined","playerId":"p1","name":"Mama","lang":"ru","characterId":0}
 {"t":9100,"session":"...","build":"...","event":"playerLeft","playerId":"p3","reason":"disconnected"}
 {"t":12000,"session":"...","build":"...","event":"playerRejoined","playerId":"p3","awayMs":2900}
 {"t":20000,"session":"...","build":"...","event":"lobbyAction","playerId":"p2","action":"start","ok":true}
@@ -254,5 +277,5 @@ Allowed values:
 Computed by `tools/analyze_log`:
 
 - **Idle:** a moment is idle when no connected phone can send an answer, vote, prediction, power up pick or poll input. Idle share = idle time divided by game time (from `gameStarted` to `gameEnded`). Reported only, no pass or fail in game night 1.
-- **Longest idle stretch** outside Intro, FinalIntro and Results. Must stay at or under 11 s (`19_acceptance.md`).
+- **Longest idle stretch** outside Intro, FinalIntro and Results. Starting limit 11 s (`19_acceptance.md`); a suggested starting value like every timer (D56).
 - Phase durations (real, from `phaseEnded.durationMs`, next to the budget and its staging extra), correct rate per question, power ups drawn versus used, who targets whom.

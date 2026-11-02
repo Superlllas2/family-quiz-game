@@ -15,7 +15,7 @@ Build on a branch called day3-show, tests first:
 
 4. Phone: topicVote, answerSlider (slider, big value with unit, plus and minus, Lock), answerTrueFalse, roundEnd, raceResult.
 
-5. TV: topic doors with live votes, the closest value number line reveal with avatars and a flag, the race track with head starts and movement, Results with top 3 and awards. Grey boxes are fine.
+5. TV: topic doors with live votes, the closest value number line reveal with character chips and a flag, the race track with head starts and movement, Results with top 3 and awards. Grey boxes are fine.
 
 Commit after every green test run. When done, list the Day 3 checks and anything you had to guess.
 ```

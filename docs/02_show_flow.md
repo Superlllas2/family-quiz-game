@@ -1,6 +1,6 @@
 # 02 Show flow
 
-Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; timers marked as starting values and staging linked in `decisions/0004_staging.md`).
+Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; timers marked as starting values and staging linked in `decisions/0004_staging.md`; characters and `startCountdown` from `decisions/0005_staging_answers.md`).
 
 Every phase, in order, with its timer, what the TV shows, what the phones show, and what ends it early. All durations are config keys in `content/config.json`; the numbers below are their defaults. **Every timer in this document is a suggested starting value to tune in playtests, not a fixed rule** (D48): change it in config, never in code, and re-run the timing checks in `19_acceptance.md`. Durations are maximums: a phase ends early the moment its end condition is met.
 
@@ -31,12 +31,12 @@ Mini games are not in game night 1. When added later, one goes after rounds 1, 2
 
 | Phase | Suggested max duration (config key) | Ends early when | TV shows | Every phone shows |
 | --- | --- | --- | --- | --- |
-| Lobby | none | Any phone taps Start (enabled at 2 or more players, `players.min`) | Room code, QR code, joined players with avatars, "Waiting for players"; a host greets each new player (`playerJoined` line) | `join`, then `pickAvatar`, then `lobby` with Start |
-| StartCountdown | 3 s (`lobby.startCountdownSeconds`) | Any phone taps Cancel, or fewer than 2 players remain: back to Lobby (or to PlayAgain) | Big 3, 2, 1 | `countdown` with Cancel |
+| Lobby | none | Any phone taps Start (enabled at 2 or more players, `players.min`) | Room code, QR code, joined players as their characters, "Waiting for players"; a host greets each new player (`playerJoined` line) | `join`, then `pickCharacter`, then `lobby` with Start |
+| StartCountdown | 3 s (`lobby.startCountdownSeconds`) | Any phone taps Cancel, or fewer than 2 players remain: back to Lobby (or to PlayAgain) | Big 3, 2, 1 and a short host line (`startCountdown`) | `countdown` with Cancel |
 | Intro | 30 s (`timers.intro`) | Never early | Title card and one `gameStart` line from each host, one after the other | "Get ready" plus prediction: "Who wins tonight?" (tap a player) |
 | TopicVote | 10 s (`timers.topicVote`) | Every connected player voted | Four topic doors and live vote counts | Four topic buttons |
 | QuestionShow | 4 s (`timers.questionShow`) | Never early | Question text, read time bar | Question text, "Get ready" |
-| Answer | 15 s multiple choice, 20 s closest value (`timers.answer.multipleChoice`, `timers.answer.closestValue`), times each player's timer multiplier | Every connected player locked in or passed their personal deadline. When all but one have locked in, the remaining player's time is cut to at most 5 s (`timers.lastCall`) | Question, options, countdown, avatars pop as players lock in (not what they chose) | Answer screen for the format; active sabotage effect on top if hit |
+| Answer | 15 s multiple choice, 20 s closest value (`timers.answer.multipleChoice`, `timers.answer.closestValue`), times each player's timer multiplier | Every connected player locked in or passed their personal deadline. When all but one have locked in, the remaining player's time is cut to at most 5 s (`timers.lastCall`) | Question, options, countdown, character chips pop as players lock in (not what they chose) | Answer screen for the format; active sabotage effect on top if hit |
 | Reveal | 3.5 s (`timers.reveal`) | Never early | Correct answer highlighted, who got it right, points per player | "Correct +850" or "Wrong" plus streak and rank. Power up pick opens here if the player holds one |
 | Scores | 3.5 s (`timers.scores`) | Never early | Leaderboard rows move to new ranks | The same result screen with the same phaseId: power up pick continues (pick, then target) |
 | RoundEnd | 4 s (`timers.roundEnd`) | Never early | Round leaderboard, round winner, host line | "Round 2 coming", own rank |
@@ -89,7 +89,7 @@ Ghosts and a chasing threat are left for after game night 1.
 ## Joining and seats
 
 - Players join only in the Lobby, up to `players.max`. Once a game starts, the roster is fixed until the game ends; a new join gets `refused: gameStarted`.
-- On join the TV app gives the player the first free avatar; the `pickAvatar` screen lets them change it.
+- On join the TV app gives the player the first free character (lowest id in `content/characters.json`); the `pickCharacter` screen lets them pick another free one. Each character can be taken by one player at a time.
 - A player who disconnects keeps their seat for `players.seatHoldSeconds` (300 s) and can always rejoin it with their token. Phases do not wait for disconnected players.
 - When the hold runs out, or the player taps Leave on their phone, the seat is freed at once. The player is out for the rest of the game: removed from the leaderboard, ranks and target lists. In the Lobby they disappear from the player list.
 
@@ -99,8 +99,8 @@ There is no host phone: no player has special rights.
 
 - **Start:** every phone shows Start in the Lobby, enabled at 2 or more players. Anyone can press it. Start runs the 3 s StartCountdown on the TV and all phones; any phone can tap Cancel during it.
 - **No skipping:** Intro, FinalIntro and Results run on their timers.
-- **Play again:** after the poll every phone shows Play again. Anyone can press it; it runs the same countdown with Cancel. It keeps the same players, seats, avatars, phone languages and timer multipliers, resets scores, skips Lobby and Intro, and keeps the seen questions.
-- **Back to lobby:** in the TV settings panel. Everyone returns to the Lobby with their seats and avatars kept, so new players can join or others can leave. A running game is abandoned (logged as `gameEnded` with reason `backToLobby`).
+- **Play again:** after the poll every phone shows Play again. Anyone can press it; it runs the same countdown with Cancel. It keeps the same players, seats, characters, phone languages and timer multipliers, resets scores, skips Lobby and Intro, and keeps the seen questions.
+- **Back to lobby:** in the TV settings panel. Everyone returns to the Lobby with their seats and characters kept, so new players can join or others can leave. A running game is abandoned (logged as `gameEnded` with reason `backToLobby`).
 
 ## TV settings panel
 

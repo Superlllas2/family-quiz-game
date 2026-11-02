@@ -40,6 +40,46 @@
     "weight": 1
   },
   {
+    "id": "k_startCountdown_01",
+    "host": "konstantin",
+    "trigger": "startCountdown",
+    "text": {
+      "ru": "Камеры, свет, мотор! Поехали!",
+      "en": "Cameras, lights, action! Here we go!"
+    },
+    "weight": 1
+  },
+  {
+    "id": "k_startCountdown_02",
+    "host": "konstantin",
+    "trigger": "startCountdown",
+    "text": {
+      "ru": "Телефоны в руки, сомнения в сторону.",
+      "en": "Phones in hand, doubts aside."
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_startCountdown_01",
+    "host": "ilja",
+    "trigger": "startCountdown",
+    "text": {
+      "ru": "Три, два, один… Костя, улыбайся, мы в эфире!",
+      "en": "Three, two, one… Konstantin, smile, we're on air!"
+    },
+    "weight": 1
+  },
+  {
+    "id": "i_startCountdown_02",
+    "host": "ilja",
+    "trigger": "startCountdown",
+    "text": {
+      "ru": "Пристегнитесь, сейчас будет умно.",
+      "en": "Buckle up, things are about to get smart."
+    },
+    "weight": 1
+  },
+  {
     "id": "k_gameStart_01",
     "host": "konstantin",
     "trigger": "gameStart",

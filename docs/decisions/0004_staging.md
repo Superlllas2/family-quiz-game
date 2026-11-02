@@ -1,6 +1,6 @@
 # Decision record 0004: staging the TV as a late night show
 
-Date: Nov 2, 2026. Decided by Ilia. The AI building the game never reopens one of these on its own; it asks first. The full concept is in `21_staging.md`. This record was asked for as `0003_staging.md`; number 0003 was already taken by `0003_3d_and_idle_limit.md`.
+Date: Nov 2, 2026. Decided by Ilia. The AI building the game never reopens one of these on its own; it asks first. The full concept is in `21_staging.md`. Amended by `0005_staging_answers.md`: D52 confirms both hosts at the desk, D55 replaces the guest variants detail with a character roster, D56 lets staging extras go above 0 after the first playtest. This record was asked for as `0003_staging.md`; number 0003 was already taken by `0003_3d_and_idle_limit.md`.
 
 | # | Question | Decision | Replaces |
 | --- | --- | --- | --- |
@@ -21,7 +21,7 @@ Date: Nov 2, 2026. Decided by Ilia. The AI building the game never reopens one o
 | Staging can lengthen only QuestionShow, Reveal, Scores and RoundEnd (`staging.extraSeconds.*`); the core adds the extra to the budget, Presentation never waits for an animation | 21, 03, config |
 | `phaseStarted` gains `stagingExtraMs`; its `budgetMs` includes the extra | 15 |
 | Seats: a four seat sofa and two armchairs on each side; first free seat from the middle of the sofa outward; players keep their seat through Play again and Back to lobby | 21 |
-| Guest variants: outfit color from the avatar color, one accessory per avatar shape | 21 |
+| Guest variants: outfit color from the avatar color, one accessory per avatar shape. Replaced by D55 (character roster) | 21 |
 | Both hosts sit at the desk; the first `gameStart` line of the Intro is the opening line (the Intro rule of D31 is unchanged) | 21 |
 | The suspense riser follows the latest personal deadline of the players still answering, and starts at once on last call | 21 |
 | Stinger rule: right when at least half of those who answered were right | 21 |

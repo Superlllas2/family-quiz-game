@@ -1,0 +1,172 @@
+[
+  {
+    "id": 0,
+    "name": {
+      "ru": "Дед Аркадий",
+      "en": "Grandpa Arkady"
+    },
+    "personality": {
+      "ru": "Знает всё. Особенно то, о чём не спрашивали.",
+      "en": "Knows everything, especially what nobody asked."
+    },
+    "look": "Retired engineer in his seventies, tall and wiry, grey cardigan over a pressed shirt, flat cap, reading glasses on a cord, bushy eyebrows",
+    "color": "#C9A227",
+    "idlePose": "Arms crossed, leans back, one eyebrow raised at the stage",
+    "happyReaction": "A slow satisfied nod and one finger up: told you so",
+    "sadReaction": "Waves the question away with a grumble: the question was wrong",
+    "cardHold": "Holds it up stiffly at arm's length without looking at it"
+  },
+  {
+    "id": 1,
+    "name": {
+      "ru": "Тимка",
+      "en": "Timka"
+    },
+    "personality": {
+      "ru": "Восемь лет и сто вопросов в минуту.",
+      "en": "Eight years old, a hundred questions a minute."
+    },
+    "look": "Boy of about eight, striped hoodie, light up sneakers, hair that never stays flat, a plaster on one knee",
+    "color": "#FF8A3D",
+    "idlePose": "Bounces on the seat and swings his legs",
+    "happyReaction": "Jumps up on the cushion with both arms in the air",
+    "sadReaction": "Flops back into the sofa like a falling tree, then pops up again",
+    "cardHold": "Waves it high above his head with both hands"
+  },
+  {
+    "id": 2,
+    "name": {
+      "ru": "Лера",
+      "en": "Lera"
+    },
+    "personality": {
+      "ru": "Подросток. Делает вид, что ей всё равно.",
+      "en": "Teenager. Pretends she couldn't care less."
+    },
+    "look": "Girl of about fifteen, oversized hoodie, big headphones around her neck, phone in hand, chunky sneakers",
+    "color": "#8E7CC3",
+    "idlePose": "Scrolls her phone and glances up now and then",
+    "happyReaction": "A small fist pump she tries to hide",
+    "sadReaction": "Rolls her eyes and pulls her hood up",
+    "cardHold": "Flicks it up with two fingers without looking up from her phone"
+  },
+  {
+    "id": 3,
+    "name": {
+      "ru": "Баба Нина",
+      "en": "Granny Nina"
+    },
+    "personality": {
+      "ru": "Милая бабушка, которая играет на победу.",
+      "en": "Sweet granny who plays to win."
+    },
+    "look": "Woman in her seventies, knitted vest, pearl earrings, neat grey bun, a knitting bag on her lap",
+    "color": "#E57A9A",
+    "idlePose": "Knits calmly",
+    "happyReaction": "Raises both knitting needles like a trophy",
+    "sadReaction": "Tuts and knits twice as fast",
+    "cardHold": "Holds it up neatly with both hands and a sweet smile"
+  },
+  {
+    "id": 4,
+    "name": {
+      "ru": "Ольга",
+      "en": "Olga"
+    },
+    "personality": {
+      "ru": "Всё по плану. Даже веселье.",
+      "en": "Everything goes to plan, even the fun."
+    },
+    "look": "Woman around forty, smart blazer, tidy ponytail, a notebook full of colored sticky notes and a pen",
+    "color": "#4FA3A5",
+    "idlePose": "Writes notes in her notebook",
+    "happyReaction": "Ticks a box in the notebook with a satisfied nod",
+    "sadReaction": "Crosses something out and sighs",
+    "cardHold": "Presents it like a slide in a meeting, pointing with her pen"
+  },
+  {
+    "id": 5,
+    "name": {
+      "ru": "Борис",
+      "en": "Boris"
+    },
+    "personality": {
+      "ru": "Шутит в каждой паузе и смеётся первым.",
+      "en": "A joke for every pause, and he laughs first."
+    },
+    "look": "Man in his forties, checked flannel shirt, short beard, comfortable slippers, a big mug of tea",
+    "color": "#8DB255",
+    "idlePose": "Sips his tea and chuckles at his own thought",
+    "happyReaction": "Double finger guns at the camera",
+    "sadReaction": "Clutches his heart theatrically",
+    "cardHold": "Holds it next to his face and winks"
+  },
+  {
+    "id": 6,
+    "name": {
+      "ru": "Вика",
+      "en": "Vika"
+    },
+    "personality": {
+      "ru": "Студентка. Знает факт на любой случай.",
+      "en": "Student with a fact for every occasion."
+    },
+    "look": "Young woman about twenty, round glasses, T shirt with a planet print, a backpack covered in pins, a small book",
+    "color": "#5B9BD5",
+    "idlePose": "Reads a tiny book and turns a page",
+    "happyReaction": "Pushes her glasses up and does a quick seated victory dance",
+    "sadReaction": "Flips through her book in a panic",
+    "cardHold": "Holds it up and taps the answer with a pen"
+  },
+  {
+    "id": 7,
+    "name": {
+      "ru": "Макс",
+      "en": "Max"
+    },
+    "personality": {
+      "ru": "Спортивный дядя. Всё — соревнование.",
+      "en": "Sporty uncle. Everything is a competition."
+    },
+    "look": "Man in his thirties, tracksuit jacket, headband, a whistle on a cord, athletic build",
+    "color": "#E0533D",
+    "idlePose": "Stretches and rolls his shoulders",
+    "happyReaction": "Flexes both arms like a champion",
+    "sadReaction": "Hands on his head, like a missed penalty",
+    "cardHold": "Snaps it up like a referee showing a card"
+  },
+  {
+    "id": 8,
+    "name": {
+      "ru": "Лёва",
+      "en": "Lyova"
+    },
+    "personality": {
+      "ru": "Художник. Отвечает по вдохновению.",
+      "en": "Artist who answers on inspiration."
+    },
+    "look": "Man in his thirties, beret, paint stained scarf, rolled up sleeves, a sketchbook under his arm",
+    "color": "#F2C14E",
+    "idlePose": "Doodles in his sketchbook",
+    "happyReaction": "Spins in his seat and blows a kiss to the audience",
+    "sadReaction": "Shrugs serenely: it's art",
+    "cardHold": "Holds it tilted, with a little doodle in the corner"
+  },
+  {
+    "id": 9,
+    "name": {
+      "ru": "Тётя Зарина",
+      "en": "Aunt Zarina"
+    },
+    "personality": {
+      "ru": "Лучший повар в семье и самый громкий болельщик.",
+      "en": "Best cook in the family and the loudest fan."
+    },
+    "look": "Woman in her fifties, apron over a bright dress, sleeves rolled up, a wooden spoon in her pocket",
+    "color": "#D98C5F",
+    "idlePose": "Tastes something from her wooden spoon",
+    "happyReaction": "Bangs the spoon on her palm like a gong and cheers",
+    "sadReaction": "Taps her forehead with the spoon and laughs it off",
+    "cardHold": "Balances it on her wooden spoon and lifts it high"
+  }
+]

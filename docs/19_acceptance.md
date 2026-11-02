@@ -4,7 +4,7 @@ Status: Done (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_r
 
 ## Scope
 
-**Must have:** relay, phone page, lobby with QR join, preset avatars, language per phone, Start and Play again from any phone with the start countdown, the TV settings panel, the Standard show (intro, 4 rounds, final race, results, poll), topic vote, multiple choice, closest value, scoring with speed curve and multipliers, 3 power ups with free targeting, final race with true or false, host text bubbles, debug overlay, event log, play again, reconnects and leave, macOS build.
+**Must have:** relay, phone page, lobby with QR join, character pick from the roster, language per phone, Start and Play again from any phone with the start countdown, the TV settings panel, the Standard show (intro, 4 rounds, final race, results, poll), topic vote, multiple choice, closest value, scoring with speed curve and multipliers, 3 power ups with free targeting, final race with true or false, host text bubbles, debug overlay, event log, play again, reconnects and leave, macOS build.
 
 **Stretch, only after every must have passes:** clue by clue format, one mini game, a Windows build, Russian text to speech for host lines, and the TV staging grey box (`21_staging.md`; only after every Day 4 check passes, checks below).
 
@@ -31,13 +31,13 @@ Each check is automated (a unit test or a simulated game in the test code) unles
 - [ ] A question ends within 200 ms after the last connected player locks in (simulated game)
 - [ ] Personal deadlines: an input after the player's own deadline plus `net.inputGraceMs` gets `closed`; last call resends the screen with the same phaseId (unit tests)
 - [ ] Start from any phone runs the 3 s countdown; Cancel from any phone stops it; Start needs 2 players (unit tests)
-- [ ] Names: only Latin and Cyrillic letters, digits and spaces, 1 to 16 characters; `avatarTaken` when an avatar was just taken; `leave` frees the seat (unit tests)
+- [ ] Names: only Latin and Cyrillic letters, digits and spaces, 1 to 16 characters; `characterTaken` when a character was just taken; `leave` frees the seat (unit tests)
 - [ ] The event log is written with `phaseStarted`, `phaseEnded` and `input` lines
 
 ### Day 3: the full show (Thu)
 
 - [ ] A simulated Standard game with the six simulated players runs every phase in order and lasts 8 to 12 minutes of game clock from the end of the start countdown to the end of Results, without mini games (simulated game, 100 runs). With simulated players that always use the full answer window it must not exceed 12 minutes
-- [ ] No stretch without input lasts longer than 11 s outside Intro, FinalIntro and Results. The current timers give exactly 11 s (QuestionShow + Reveal + Scores, and Reveal + Scores + RoundEnd), so the simulation must end each phase at its exact budget on the fake clock, never a frame later. The idle share is printed and logged, not asserted (simulated game)
+- [ ] No stretch without input lasts longer than the idle limit outside Intro, FinalIntro and Results. The limit starts at 11 s; like every timer it is a starting value (D56), set again whenever timers or staging extras change after a playtest. The current timers give exactly 11 s (QuestionShow + Reveal + Scores, and Reveal + Scores + RoundEnd), so the simulation must end each phase at its exact budget on the fake clock, never a frame later. The idle share is printed and logged, not asserted (simulated game)
 - [ ] Topic vote: doors follow the rules in `02_show_flow.md`; ties resolve as specified (unit tests)
 - [ ] Ranks: equal scores share the better rank (1, 1, 3) (unit tests)
 - [ ] Closest value: distance scoring and the closest bonus work, including ties for closest (unit tests)
@@ -49,15 +49,15 @@ Each check is automated (a unit test or a simulated game in the test code) unles
 - [ ] Draw chances by rank match the formula in `03_rules.md` over 10,000 simulated draws within 2% (unit test)
 - [ ] Targeting free and aim up both follow `03_rules.md`; caps and immunity hold (unit tests)
 - [ ] Freeze, slime and fog appear on the target's phone at the start of the next answer phase and can be cleared (manual)
-- [ ] Host lines: at most one line per question cycle, chosen by the priority in `15_schemas.md`; `fastAnswer` only for the single fastest correct player; `playerJoined` fires for each new player in the Lobby, never for a rejoin or Play again; the host silent longer speaks; never more than one bubble at a time per host; no line repeats in an evening while others of its trigger remain (unit tests)
+- [ ] Host lines: at most one line per question cycle, chosen by the priority in `15_schemas.md`; `fastAnswer` only for the single fastest correct player; `playerJoined` fires for each new player in the Lobby, never for a rejoin or Play again; `startCountdown` fires when the countdown begins; the host silent longer speaks; never more than one bubble at a time per host; no line repeats in an evening while others of its trigger remain (unit tests)
 - [ ] The poll appears on every phone after Results, ends when every connected phone submitted or after 90 s, and answers land in the log without player ids
 - [ ] The TV settings panel opens with Tab and changes game language, power ups, each power up type and targeting; Reset seen questions and Back to lobby work (manual)
 - [ ] All content files load and validate; a broken file shows a clear error (unit test with a broken fixture)
 
 ### Stretch: staging grey box (only after every Day 4 check passes)
 
-- [ ] The TV cuts between two cameras by phase: `Stage` during QuestionShow, Answer, FinalIntro and the race, `Wide` in every other phase (manual)
-- [ ] A joining player appears as a capsule in their avatar color in the first free seat, with a name tag, and disappears when they leave (manual)
+- [ ] The TV cuts between two cameras by phase: `Stage` during QuestionShow and Answer, `Wide` in every other phase, with the flat race track over `Wide` in the race (manual)
+- [ ] A joining player appears as a capsule in their character's signature color in the first free seat, with the character's name above it, and disappears when they leave (manual)
 - [ ] On Reveal every capsule shows a colored card with its letter or number, an empty card for no answer, readable from the sofa at 3 m; the cards hide when Scores ends (manual)
 - [ ] Every `staging.extraSeconds` value is 0 and every Day 3 timing check still passes (simulated game)
 

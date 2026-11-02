@@ -28,7 +28,7 @@ unity/Assets/Game/
   Net/             FamilyQuiz.Net.asmdef       references Core
     RelayClient, MessageQueue (thread safe), Protocol DTOs, ScreenBuilder (events to per phone screens)
   Presentation/    FamilyQuiz.Presentation.asmdef  references Core
-    TV views per phase (UGUI + TextMeshPro), avatars drawn from avatars.json, host text bubbles, TV settings panel, debug overlay
+    TV views per phase (UGUI + TextMeshPro), character chips from characters.json, host text bubbles, TV settings panel, debug overlay
     StagingDirector (stretch, 21_staging.md): listens to phase events, switches cameras, places guests and answer cards; never delays a phase
   Dialogue/        references Core: line selection with shuffle bags
   Telemetry/       references Core: JSONL writer

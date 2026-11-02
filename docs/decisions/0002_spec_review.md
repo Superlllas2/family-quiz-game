@@ -1,6 +1,6 @@
 # Decision record 0002: spec review for game night 1
 
-Date: Nov 2, 2026. Decided by Ilia after an AI review of every spec for days 1 to 4. The AI building the game never reopens one of these on its own; it asks first. D23 replaces the host phone part of D3 (the game language is now set in the TV settings panel).
+Date: Nov 2, 2026. Decided by Ilia after an AI review of every spec for days 1 to 4. The AI building the game never reopens one of these on its own; it asks first. D23 replaces the host phone part of D3 (the game language is now set in the TV settings panel). The avatar presets of D33 were later replaced by the character roster (D55 in `0005_staging_answers.md`).
 
 ## Decisions
 

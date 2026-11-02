@@ -7,6 +7,8 @@ Date: Nov 2, 2026. Decided by Ilia. The AI building the game never reopens one o
 | D42 | Idle limit in simulated games | No stretch without input may last longer than 11 s outside Intro, FinalIntro and Results. The timers stay as they are | The 10 s limit in D35; resolves the open issue in 0002 |
 | D43 | Look of the game | Stylized real time 3D in Unity, not photoreal. The hosts become 3D characters. The TV shows the 3D studio with the question UI over it. The phone stays a flat 2D controller | "Not a 3D game" in 01 and D10 (2D portraits). D2's "3D hosts possible later" now applies |
 
+**Amended Nov 2, 2026 by D56 (`0005_staging_answers.md`):** the 11 s limit of D42 is a suggested starting value like every timer, set again whenever timers or staging extras change after a playtest.
+
 ## Details added while applying these (not yet confirmed by Ilia)
 
 | Detail | Where |

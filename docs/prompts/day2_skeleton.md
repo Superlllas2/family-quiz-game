@@ -7,19 +7,19 @@ Goal for today: the thinnest real game that runs end to end. Lobby with Start fr
 
 Build on a branch called day2-skeleton, tests first:
 
-1. Core: IClock and IRandom (injected), GameState, PlayerState, shared ranks (1, 1, 3), the ShowDirector running phases Lobby, StartCountdown, QuestionShow, Answer, Reveal, Scores, Results and PlayAgain on the clock with every duration from content/config.json. Start, cancelStart and playAgain from the `lobby` message (any player, 2 or more players). Personal deadlines per player (window times timer multiplier), ending Answer early when every connected player locked in or passed their deadline, and the last call rule (new screen, same phaseId). Inputs after a player's own deadline plus net.inputGraceMs are refused as closed. Scoring for multiple choice exactly as docs/03_rules.md. Leave frees the seat at once. Content loading and validation with Newtonsoft for config.json, questions.json and avatars.json (a broken file must produce a clear error). Option order shuffled with IRandom.
+1. Core: IClock and IRandom (injected), GameState, PlayerState, shared ranks (1, 1, 3), the ShowDirector running phases Lobby, StartCountdown, QuestionShow, Answer, Reveal, Scores, Results and PlayAgain on the clock with every duration from content/config.json. Start, cancelStart and playAgain from the `lobby` message (any player, 2 or more players). Personal deadlines per player (window times timer multiplier), ending Answer early when every connected player locked in or passed their deadline, and the last call rule (new screen, same phaseId). Inputs after a player's own deadline plus net.inputGraceMs are refused as closed. Scoring for multiple choice exactly as docs/03_rules.md. Leave frees the seat at once. Content loading and validation with Newtonsoft for config.json, questions.json and characters.json (a broken file must produce a clear error). Option order shuffled with IRandom.
 
 2. Editor script: copy content/ into Assets/StreamingAssets/content/ before Play mode and before every build (docs/13_architecture.md).
 
-3. Unit tests: scoring (0 ms gives 1000, full window gives 500, wrong gives 0, rounding to 10, multiplier, a 2x timer multiplier doubling T), early phase end, personal deadlines, last call, clamping of ms, stale and closed inputs, the start countdown and Cancel, name rules, avatarTaken, leave.
+3. Unit tests: scoring (0 ms gives 1000, full window gives 500, wrong gives 0, rounding to 10, multiplier, a 2x timer multiplier doubling T), early phase end, personal deadlines, last call, clamping of ms, stale and closed inputs, the start countdown and Cancel, name rules, characterTaken, leave.
 
 4. Simulated game in Tests/EditMode: 3 simulated players (inside the test code only) plus the game loop on a fake clock; asserts a question ends within 200 ms of the last answer.
 
-5. Net: ScreenBuilder turning core events into the screen messages for lobby, pickAvatar, countdown, getReady, answerChoice, waiting, result, results and pollDone (with canPlayAgain; the poll itself comes on Day 4, so for now PlayAgain follows Results), in each player's language.
+5. Net: ScreenBuilder turning core events into the screen messages for lobby, pickCharacter, countdown, getReady, answerChoice, waiting, result, results and pollDone (with canPlayAgain; the poll itself comes on Day 4, so for now PlayAgain follows Results), in each player's language.
 
-6. Phone: screens join, pickAvatar (12 presets from content/avatars.json drawn as colored shapes with the first letter), lobby (Start on every phone), countdown (Cancel), getReady, answerChoice, waiting, result, results, pollDone (Play again), settings (language, more time, leave), reconnecting, error. Replace yesterday's test screen.
+6. Phone: screens join, pickCharacter (character cards from content/characters.json: signature color, name and personality line; taken ones greyed), lobby (Start on every phone), countdown (Cancel), getReady, answerChoice, waiting, result, results, pollDone (Play again), settings (language, more time, leave), reconnecting, error. Replace yesterday's test screen.
 
-7. TV Presentation (UGUI with TextMeshPro): plain grey box views for each phase: question and options in a 2x2 grid with letters and placeholder colors from docs/06_phone_screens.md, countdown bar, avatars (colored shape with first letter) that pop on lock in, reveal, leaderboard, the start countdown. Text big enough to read from a sofa.
+7. TV Presentation (UGUI with TextMeshPro): plain grey box views for each phase: question and options in a 2x2 grid with letters and placeholder colors from docs/06_phone_screens.md, countdown bar, character chips (signature color with the player's name) that pop on lock in, reveal, leaderboard, the start countdown. Text big enough to read from a sofa.
 
 8. DevTools: F1 debug overlay with phase, budget, time left and the live idle share.
 

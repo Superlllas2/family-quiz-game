@@ -11,7 +11,7 @@ Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `deci
 | Same phone opens the page in two tabs | Both tabs find the same token and rejoin the same seat; the newer socket wins and the TV app closes the older one with close code 4002, which shows "Game open in another tab" and does not reconnect (test). Testing alone uses `&tab=<n>` so tabs do not share a token |
 | Duplicate names | `refused: nameTaken` (case insensitive) |
 | Name with emoji, symbols, or more than 16 characters | Only Latin and Cyrillic letters, digits and spaces are allowed; the name is trimmed; anything else, an empty name or more than 16 characters is refused with `badName` (test) |
-| Two players pick the same avatar at once | The first wins; the second gets `ack` reason `avatarTaken` and a refreshed `pickAvatar` screen (test) |
+| Two players pick the same character at once | The first wins; the second gets `ack` reason `characterTaken` and a refreshed `pickCharacter` screen (test) |
 | Phone locks, reloads or loses WiFi | Seat held 300 s; phases stop waiting for that player; `rejoin` restores the current screen with the remaining time; an answer already locked stays locked (test) |
 | Player taps Leave | Seat freed at once; the player is out for the rest of the game; in the Lobby they disappear from the list (test) |
 | Seat hold runs out | Same as Leave |

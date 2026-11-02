@@ -13,7 +13,7 @@ const isLoc = (v, max) =>
   v && typeof v.ru === "string" && typeof v.en === "string" &&
   (max === undefined || (v.ru.length <= max && v.en.length <= max));
 
-const TRIGGERS = ["playerJoined", "gameStart", "roundStart", "everyoneCorrect", "nobodyCorrect", "fastAnswer", "newLeader",
+const TRIGGERS = ["playerJoined", "startCountdown", "gameStart", "roundStart", "everyoneCorrect", "nobodyCorrect", "fastAnswer", "newLeader",
   "streak3", "powerUpUsed", "closestExact", "lastPlaceCorrect", "roundEnd", "finalStart", "raceWinner", "lastCall"];
 
 const topics = load("topics.json");
@@ -61,17 +61,35 @@ for (const host of ["konstantin", "ilja"]) {
   if (!lines.some((l) => l.host === host && l.trigger === "gameStart")) err("host_lines.json", host, "needs a gameStart line (the Intro plays one per host)");
 }
 
-const SHAPES = ["circle", "square", "triangle", "diamond", "star", "hexagon"];
-const avatars = load("avatars.json");
-if (!Array.isArray(avatars) || avatars.length !== 12) err("avatars.json", "-", "must hold exactly 12 avatars");
-const avatarIds = new Set();
-for (const a of avatars) {
-  if (!Number.isInteger(a.id) || a.id < 0 || a.id > 11) err("avatars.json", a.id, "id must be 0 to 11");
-  if (avatarIds.has(a.id)) err("avatars.json", a.id, "duplicate id");
-  avatarIds.add(a.id);
-  if (!/^#[0-9A-Fa-f]{6}$/.test(a.color ?? "")) err("avatars.json", a.id, "color must be #RRGGBB");
-  if (!SHAPES.includes(a.shape)) err("avatars.json", a.id, `shape must be one of ${SHAPES.join(", ")}`);
-}
+// Characters (docs/15_schemas.md): ids 0..N-1 in order, at least players.max of them, unique names and colors,
+// and every color readable behind the chip text color #14161C (contrast ratio 4.5 or more).
+const characters = load("characters.json");
+const lin = (c) => { c /= 255; return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4; };
+const lum = (h) => { const n = parseInt(h.slice(1), 16); return 0.2126 * lin(n >> 16) + 0.7152 * lin((n >> 8) & 255) + 0.0722 * lin(n & 255); };
+const contrast = (a, b) => (Math.max(lum(a), lum(b)) + 0.05) / (Math.min(lum(a), lum(b)) + 0.05);
+const maxPlayers = load("config.json").players?.max ?? 0;
+if (!Array.isArray(characters) || characters.length < maxPlayers) err("characters.json", "-", "needs at least players.max characters");
+const charNames = { ru: new Set(), en: new Set() };
+const charColors = new Set();
+characters.forEach((c, i) => {
+  if (c.id !== i) err("characters.json", c.id, "ids must be 0, 1, 2, ... in order");
+  if (!isLoc(c.name, 16)) err("characters.json", c.id, "name must have ru and en, max 16");
+  else for (const l of ["ru", "en"]) {
+    const k = c.name[l].toLowerCase();
+    if (charNames[l].has(k)) err("characters.json", c.id, "duplicate " + l + " name");
+    charNames[l].add(k);
+  }
+  if (!isLoc(c.personality, 60)) err("characters.json", c.id, "personality must have ru and en, max 60");
+  if (!/^#[0-9A-Fa-f]{6}$/.test(c.color ?? "")) err("characters.json", c.id, "color must be #RRGGBB");
+  else {
+    if (charColors.has(c.color.toUpperCase())) err("characters.json", c.id, "duplicate color");
+    charColors.add(c.color.toUpperCase());
+    if (contrast(c.color, "#14161C") < 4.5) err("characters.json", c.id, "color needs a contrast of 4.5 with #14161C");
+  }
+  for (const f of ["look", "idlePose", "happyReaction", "sadReaction", "cardHold"]) {
+    if (typeof c[f] !== "string" || !c[f].trim()) err("characters.json", c.id, f + " missing");
+  }
+});
 
 const cfg = load("config.json");
 // Every key in the table of docs/03_rules.md must exist.
@@ -126,7 +144,7 @@ for (const q of questions) {
   perTopic[q.topic][q.format]++;
 }
 console.log("Questions per topic:", JSON.stringify(perTopic));
-console.log(`${questions.length} questions, ${race.length} race statements, ${lines.length} host lines, ${avatars.length} avatars`);
+console.log(`${questions.length} questions, ${race.length} race statements, ${lines.length} host lines, ${characters.length} characters`);
 
 if (errors.length) {
   console.error(`\n${errors.length} error(s):\n` + errors.join("\n"));

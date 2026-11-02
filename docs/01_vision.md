@@ -18,7 +18,7 @@ In game night 1 a Standard game lasts about 10 to 12 minutes, without mini games
 
 ## Look
 
-Stylized real time 3D, not photoreal (D43): an original late night talk show set with matte, textured materials and warm practical lights, never plastic or toy like (D44, D45, D49). The players sit on the set as guests and raise answer cards, the two hosts sit at the desk, and a small live band plays the music cues. The question UI sits over the 3D scene; the phone stays a flat 2D controller. Staging is in `21_staging.md`. Game night 1 uses the flat UI over the 3D camera, with a grey box version of the set as a stretch goal.
+Stylized real time 3D, not photoreal (D43): an original late night talk show set with matte, textured materials and warm practical lights, never plastic or toy like (D44, D45, D49). The players pick characters from a cast and sit on the set as guests, raising answer cards; the two hosts sit at the desk, and a small live band plays the music cues. The question UI sits over the 3D scene; the phone stays a flat 2D controller. Staging is in `21_staging.md`. Game night 1 uses the flat UI over the 3D camera, with a grey box version of the set as a stretch goal.
 
 ## Languages
 

@@ -9,7 +9,7 @@ Game night 1 has three formats: multiple choice and closest value in rounds, tru
 | | |
 | --- | --- |
 | Used in | Round slots 1 to 3 |
-| TV | Question at the top (max 2 lines), four option tiles in a 2x2 grid labelled A, B, C, D, countdown bar, avatars along the bottom |
+| TV | Question at the top (max 2 lines), four option tiles in a 2x2 grid labelled A, B, C, D, countdown bar, character chips along the bottom |
 | Phone | During QuestionShow: question text only. During Answer: four big buttons in a 2x2 grid, same order, letter and color as the TV, option text on each button |
 | Timer | 15 s times the player's timer multiplier, ends early when all locked in; last call cuts the last player to 5 s |
 | Input | One tap locks the answer. No changing after the tap |
@@ -22,12 +22,12 @@ Game night 1 has three formats: multiple choice and closest value in rounds, tru
 | | |
 | --- | --- |
 | Used in | Round slot 4 (the hard question) |
-| TV | Question, the range written as "from 1800 to 2000", the unit, countdown, avatars |
+| TV | Question, the range written as "from 1800 to 2000", the unit, countdown, character chips |
 | Phone | A horizontal slider across the full width from `range.min` to `range.max`, a big number above it showing the current value with its unit, plus and minus buttons for fine steps of `step`, and a Lock button. The slider starts in the middle |
 | Timer | 20 s times the player's timer multiplier, ends early when all locked in; last call cuts the last player to 5 s |
 | Input | Move the slider, then tap Lock. No changing after Lock. If time runs out without Lock, no answer |
 | Scoring | By distance with `tolerance`, plus +200 for the closest (`03_rules.md`) |
-| Reveal | The TV shows a number line with every player's guess as their avatar and the true answer as a flag; the closest avatar gets a crown |
+| Reveal | The TV shows a number line with every player's guess as their character chip and the true answer as a flag; the closest chip gets a crown |
 
 ## True or false (`trueFalse`)
 

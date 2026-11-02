@@ -2,7 +2,7 @@
 
 Snapshot from Nov 1, 2026 of the live doc at https://claude.ai/artifact/UQA5Hd1S8UzTiAANuSngNJ. **This repo copy holds the current status** (updated Nov 2, 2026 for game night 1).
 
-**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`. Decisions from the spec review are in `docs/decisions/0002_spec_review.md`; the staging concept is in `docs/decisions/0004_staging.md`.
+**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`. Decisions from the spec review are in `docs/decisions/0002_spec_review.md`; the staging concept is in `docs/decisions/0004_staging.md` and `0005_staging_answers.md`.
 
 ## How to use this kit
 
@@ -36,7 +36,7 @@ Update the Status column as you go; the kit is ready when every row says Done.
 | 9 | Settings and accessibility | Game design | Partial (game night 1 settings listed in 02, 03 and 06) | `docs/09_settings.md` |
 | 10 | Visual style guide | Look and feel | Partial (stylized 3D, D43; late night set and matte look in `21_staging.md`, `decisions/0004_staging.md`) | `docs/10_visual_style.md` |
 | 11 | Motion and feedback spec | Look and feel | Later | `docs/11_motion.md` |
-| 12 | Audio direction and sound list | Look and feel | Partial (band music cues in `21_staging.md`) | `docs/12_audio.md` |
+| 12 | Audio direction and sound list | Look and feel | Partial (placeholder music sources and license rules; final music open; band cues in `21_staging.md`) | `docs/12_audio.md` |
 | 13 | Tech spec and architecture | Technical | Done for game night 1 | `docs/13_architecture.md` |
 | 14 | Message protocol | Technical | Done for game night 1 | `docs/PROTOCOL.md` |
 | 15 | Data schemas and sample content | Technical | Done for game night 1 | `docs/15_schemas.md` + `content/` |
@@ -79,8 +79,8 @@ These say what the game is and how it plays. Each lists what it must contain, th
 
 ### 6. Phone screens and user flow
 
-- **Contains:** every phone screen (join, name and avatar, lobby, waiting, vote, each answer type, power up pick, target pick, sabotage effect, mini game, result, poll, reconnecting), each with its one decision, its buttons and where it leads. A flow diagram of how screens connect.
-- **Open:** Decided for game night 1 (0002): 12 preset avatars (colored shape plus first letter) and no host phone; every phone has the same rights.
+- **Contains:** every phone screen (join, name and character, lobby, waiting, vote, each answer type, power up pick, target pick, sabotage effect, mini game, result, poll, reconnecting), each with its one decision, its buttons and where it leads. A flow diagram of how screens connect.
+- **Open:** Decided for game night 1: a roster of 10 characters to pick from (0005, replacing the 12 avatar presets of 0002) and no host phone (0002); every phone has the same rights.
 
 ### 7. Host bibles and line list
 
@@ -114,12 +114,12 @@ This is the largest gap: the master plan has no visual decisions yet, so an AI w
 | Correct | | Right answer |
 | Wrong | | Wrong answer, always calmer than Correct |
 | Answer A, B, C, D | | Four button colors, each also with a shape |
-| Player 1 to 8 | | Avatar rings and score rows |
+| Player 1 to 8 | | Character chips and score rows |
 | Text on dark, text on light | | Body text |
 
 - **Typography:** font for headings, font for body, both with Cyrillic and Latin glyphs and a license that allows selling. Sizes at 1080p: question text 52 to 78 px, options, scores, small labels.
-- **Layout:** TV safe area margins, a grid for the question screen, the score bar, avatar positions for 2 to 8 players. One wireframe per TV screen.
-- **Components:** buttons, answer tiles, avatar, timer, score row, power up icon, each with its states (idle, pressed, locked, correct, wrong, disabled).
+- **Layout:** TV safe area margins, a grid for the question screen, the score bar, character positions for 2 to 8 players. One wireframe per TV screen.
+- **Components:** buttons, answer tiles, character chip, timer, score row, power up icon, each with its states (idle, pressed, locked, correct, wrong, disabled).
 - **Host look:** portrait size and position, the list of expressions (neutral, smug, shocked, laughing), mouth flap frames.
 - **Open:** Style sentence, mood board, palette, fonts, logo or title treatment. Light or dark phone page.
 
@@ -195,7 +195,7 @@ AI skips these unless they are listed. Each needs one line saying what the game 
 ### 21. Staging and camera
 
 - **Contains:** the set, the camera shots and camera rules, a shot list per phase with suggested durations as config keys, the character plan with animation lists, the band's music cues, and the grey box version.
-- **Open:** the final race staging, where the second host sits, the stinger rule, guest body types, music source.
+- **Open:** approval of the draft character roster; the final race staging (after game night 1).
 
 ### 22. Decisions log
 

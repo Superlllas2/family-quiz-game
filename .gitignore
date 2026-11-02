@@ -44,3 +44,6 @@ unity/Assets/StreamingAssets/local.json.meta
 # Content copied into the TV app by the editor script (source of truth is content/)
 unity/Assets/StreamingAssets/content/
 unity/Assets/StreamingAssets/content.meta
+
+# Reference images: never committed (real show stills stay out of the repo, D59)
+content/ideation/

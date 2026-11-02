@@ -1,6 +1,6 @@
 # PROTOCOL.md
 
-Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`). Protocol version: **1**.
+Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; avatar renamed to character in `decisions/0005_staging_answers.md`, version unchanged because nothing was built yet). Protocol version: **1**.
 
 The single source of truth for every message between the phone page, the relay and the TV app. Both sides are checked against this file. Changing it requires asking Ilia first (`CLAUDE.md`).
 
@@ -91,7 +91,7 @@ The relay itself sends two messages to phones:
 | --- | --- | --- |
 | `join` | `name`, `lang` (`ru` or `en`) | First join, only in the Lobby |
 | `rejoin` | `token` | After a reload or reconnect, or on `tvBack`, if a token is stored |
-| `avatar` | `inputId`, `avatarId` (0 to 11) | On `pickAvatar`. Answered with `ack`; `ok: false`, reason `avatarTaken` if another player has it |
+| `character` | `inputId`, `characterId` (an id from `content/characters.json`, 0 to 9) | On `pickCharacter`. Answered with `ack`; `ok: false`, reason `characterTaken` if another player has it |
 | `input` | `inputId`, `phaseId`, `kind`, plus kind fields (below) | Any player decision in a game phase |
 | `lobby` | `inputId`, `action`: `start`, `cancelStart` or `playAgain` | Start in the Lobby, Cancel during the countdown, Play again after the poll |
 | `settings` | `lang`, `timerMultiplier` (1, 1.5 or 2) | Settings changed |
@@ -145,15 +145,15 @@ An object from poll question id to the answer: a string for `text` questions (ma
 | `refused` | `reason`: `roomFull`, `nameTaken`, `badName`, `gameStarted`, `badToken`, `badVersion` | Join or rejoin failed |
 | `snapshot` | `player`, `screen` | Right after `welcome`, and whenever the phone needs a full refresh |
 | `screen` | `phaseId`, `id`, `endsInMs` (or null), `data` | Every time this phone's screen changes, and at last call |
-| `ack` | `inputId`, `ok`, `reason` (if not ok) | After every `avatar`, `input`, `lobby`, `leave`, `poll` |
+| `ack` | `inputId`, `ok`, `reason` (if not ok) | After every `character`, `input`, `lobby`, `leave`, `poll` |
 | `effect` | `effect`, `from` (name), `params` | Sabotage starts on this phone, at the start of an Answer phase |
-| `player` | the `player` object | When score, rank, held power up, avatar or settings change |
+| `player` | the `player` object | When score, rank, held power up, character or settings change |
 | `pong` | `t` (echo), `tv` (TV clock ms) | Reply to `ping` |
 
 - `gameStarted`: a new name cannot join during a game; it may join at the next Lobby. A `rejoin` with a valid token always works while the seat is held.
 - `token`: random 24 characters, stored by the phone in `localStorage` under `fq.token.<room>`. Valid while the seat is held (`players.seatHoldSeconds`). A page opened with `&tab=<n>` in the URL (for testing alone with several browser tabs on one computer) stores it under `fq.token.<room>.<n>` instead, so each tab keeps its own seat.
 - `endsInMs`: how long this player has left when the message was sent: until their personal deadline in answer phases, until the phase end otherwise. The phone shows a countdown from it; it is only for display. The TV app decides when a phase ends.
-- Ack reasons: `stale`, `closed` (past the player's deadline or phase over), `duplicate` (already applied; still `ok: true`), `invalid`, `immune` (power up target cannot be hit), `noPowerUp`, `avatarTaken`.
+- Ack reasons: `stale`, `closed` (past the player's deadline or phase over), `duplicate` (already applied; still `ok: true`), `invalid`, `immune` (power up target cannot be hit), `noPowerUp`, `characterTaken`.
 - After `leave` is acked, the phone deletes its token and shows `join`.
 
 ### The `player` object
@@ -162,7 +162,7 @@ An object from poll question id to the answer: a string for `text` questions (ma
 {
   "playerId": "p3",
   "name": "Mama",
-  "avatarId": 4,
+  "characterId": 4,
   "lang": "ru",
   "score": 2350,
   "rank": 2,
@@ -180,15 +180,15 @@ All texts are already in the player's language. Screens not listed have `data: {
 
 | id | data |
 | --- | --- |
-| `lobby` | `players`: list of `{playerId, name, avatarId}`, `canStart` (bool: 2 or more players) |
-| `pickAvatar` | `taken`: list of avatar ids taken by other players, `current`: this player's avatar id |
+| `lobby` | `players`: list of `{playerId, name, characterId}`, `canStart` (bool: 2 or more players) |
+| `pickCharacter` | `taken`: list of character ids taken by other players, `current`: this player's character id |
 | `countdown` | `text` (`endsInMs` carries the countdown) |
-| `getReady` | `text`, optional `prediction`: list of `{playerId, name, avatarId}` |
+| `getReady` | `text`, optional `prediction`: list of `{playerId, name, characterId}` |
 | `topicVote` | `doors`: list of 4 `{title}` |
 | `answerChoice` | `question`, `options`: list of 4 strings in display order, `windowMs` (the player's personal window) |
 | `answerSlider` | `question`, `min`, `max`, `step`, `unit`, `windowMs` |
 | `answerTrueFalse` | `statement`, `windowMs` |
-| `waiting` | `locked`: text of what was locked, `pending`: list of `{name, avatarId}` still answering |
+| `waiting` | `locked`: text of what was locked, `pending`: list of `{name, characterId}` still answering |
 | `result` | `correct` (bool), `points`, `correctText`, `streak`, `rank`, `powerUp` (or null), `targets`: list of `{playerId, name, available}` |
 | `roundEnd` | `rank`, `score`, `nextRound` |
 | `raceResult` | `correct`, `position`, `finish` |
@@ -197,14 +197,14 @@ All texts are already in the player's language. Screens not listed have `data: {
 | `pollDone` | `canPlayAgain` (bool: the poll phase is over and 2 or more players remain) |
 | `error` | `text` |
 
-Avatars are drawn from `content/avatars.json`; the phone page bundles a copy of that file at build time.
+Characters come from `content/characters.json` (name and personality line in both languages, signature color); the phone page bundles a copy of that file at build time.
 
 ## 5. Reconnects and leaving
 
 1. The phone stores `token` per room in `localStorage`.
 2. On load, on `visibilitychange` to visible, when the socket closes (except with 4002), and on `tvBack`, the phone opens a new socket if needed and sends `rejoin` with the token.
 3. The TV app answers `welcome`, then `snapshot` with the current screen and remaining time.
-4. While a player is disconnected, the TV shows a sleeping badge on their avatar, and phases do not wait for them: "every connected player answered" ignores disconnected players.
+4. While a player is disconnected, the TV shows a sleeping badge on their character, and phases do not wait for them: "every connected player answered" ignores disconnected players.
 5. After `players.seatHoldSeconds` (300 s) the seat is freed.
 6. If a second socket rejoins a seat that already has an open socket (two tabs with the same token), the newer socket wins and the TV app closes the older one with `{"close": "<conn>", "code": 4002}`.
 7. `leave` frees the seat at once, the same as an expired hold.

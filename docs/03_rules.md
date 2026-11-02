@@ -4,7 +4,7 @@ Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `deci
 
 Every number in the game lives in `content/config.json`. This document explains each rule; the table at the end lists every key with its starting value. Code never contains these numbers as literals.
 
-**Every timer and every staging duration is a suggested starting value to tune in playtests, not a fixed rule** (D48). That covers `timers.*`, `race.answer`, `race.reveal`, `lobby.startCountdownSeconds`, `poll.maxSeconds`, `hosts.minGapSeconds`, `hosts.bubbleSeconds` and every `staging.*` key. Tune them in config only; tests read them from config, and the timing checks in `19_acceptance.md` must still pass after a change.
+**Every timer and every staging duration is a suggested starting value to tune in playtests, not a fixed rule** (D48). That covers `timers.*`, `race.answer`, `race.reveal`, `lobby.startCountdownSeconds`, `poll.maxSeconds`, `hosts.minGapSeconds`, `hosts.bubbleSeconds` and every `staging.*` key. Tune them in config only; tests read them from config, and the timing checks in `19_acceptance.md` must still pass after a change; the 11 s idle limit there is a starting value too and is set again with them (D56).
 
 ## Ranks
 
@@ -58,7 +58,7 @@ On closest value questions the same effects cover the slider instead of the butt
 
 - The pick window is Reveal plus Scores. Both show the same result screen with the same phaseId, so a pick during Scores is valid. The phone shows the held power up; the player taps it, then taps a target. Two taps.
 - If the player does not pick, they keep it for a later question. Unused power ups are lost at the end of round 4.
-- The effect lands on the target's phone at the start of the next Answer phase. The TV shows a small icon next to the target's avatar and the attacker's name ("Dad → Freeze"), and fires the `powerUpUsed` host line trigger.
+- The effect lands on the target's phone at the start of the next Answer phase. The TV shows a small icon next to the target's character and the attacker's name ("Dad → Freeze"), and fires the `powerUpUsed` host line trigger.
 - **Targeting:** free by default (`powerUps.targeting` = `free`): any other player. With `aimUp`, only players with a better rank than yours; tied players cannot target each other, and a leader cannot attack (in game night 1 the leader just keeps the power up).
 - **Caps:** at most 1 effect per target per question (`powerUps.maxHitsPerQuestion`). A target that is already hit, or immune, shows greyed out. After being hit, a player is immune for 1 question (`powerUps.immunityQuestions`).
 - Using a power up on the last question of round 4 does nothing; the pick window is hidden on that question.
@@ -155,7 +155,7 @@ Starting values for playtests. Config validation also checks that each staging a
 | `hosts.streakTrigger` | 3 | Streak length that fires `streak3` |
 | `poll.enabled` | true | |
 | `poll.maxSeconds` | 90 | The poll ends after this even if phones have not submitted |
-| `staging.extraSeconds.questionShow` | 0 | Seconds staging adds to QuestionShow (`21_staging.md`). Above 0 breaks the 11 s idle limit (D42), so it needs a decision first |
+| `staging.extraSeconds.questionShow` | 0 | Seconds staging adds to QuestionShow (`21_staging.md`). 0 for game night 1; may go above 0 after the first playtest, with the idle limit set again (D56) |
 | `staging.extraSeconds.reveal` | 0 | The same, for Reveal |
 | `staging.extraSeconds.scores` | 0 | The same, for Scores |
 | `staging.extraSeconds.roundEnd` | 0 | The same, for RoundEnd |
