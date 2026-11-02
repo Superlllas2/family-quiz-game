@@ -21,3 +21,22 @@ Date: Nov 2, 2026. Decided by Ilia, answering the open questions found while bui
 | A player whose deadline passed without an answer keeps the `answerChoice` screen (countdown at 0); a late tap gets `closed` ("Time's up") | Core, Net |
 | Input refusals: a `choice` without `ms`, a second input after locking in, or the right phaseId in a phase that takes no such input are `invalid`; a wrong phaseId is `stale`, except an input for the Answer phase that just closed, which is `closed` | Core |
 | `gameStarted.settings` carries only `gameLang` until the TV settings panel exists (Day 4) | Telemetry |
+| An Answer phase with nobody connected is not ended early: it runs to the latest deadline plus grace. Read literally, D73 would end it at once ("every connected player is done" when nobody is connected), so a laptop WiFi drop would skip the question; the core clock is paused while the relay is down, so the question waits instead | Core `ShowDirector` |
+| `allDone` only when every connected player locked in; any Answer end caused by a deadline plus grace is `timeout` | Core, Telemetry |
+| A player who reaches deadline plus grace without an answer raises `PlayerTimedOut` (new Core event, once per player per question); the other phones' `waiting.pending` lists drop them then | Core, Net |
+| Last call is sent even when the cut does not move the deadline (the player already had less than `timers.lastCall` left). It fires after a lock in, disconnect, leave or rejoin, never by time alone | Core |
+| `closed` answers an input for the most recently closed Answer phaseId (until the next Answer closes); older phaseIds get `stale` | Core |
+| When a game starts, every seated player counts as having picked a character, so after the game nobody is sent back to `pickCharacter` | Core |
+| A config, content or protocol helper error message lists every problem, one per line, as `file id: field problem` | Core `ContentLoader` |
+| The content loader also checks the bank holds one Day 2 game without a repeat (one question per slot difficulty) | Core `ContentLoader` |
+| The `player` message nests the object like `snapshot.player`: `{"v":1,"type":"player","player":{...}}` | Net, phone |
+| `result` is sent at Reveal and again at Scores (same phaseId); `endsInMs` counts to the end of the current one | Net |
+| `pickCharacter.taken` includes disconnected seats that are still held | Net |
+| The phone asks "Leave for real?" with Stay and Leave before sending `leave` (a step beyond `06_phone_screens.md`) | phone |
+| The `pickCharacter` grid scrolls inside the screen: 16 cards with personality lines do not fit (Lobby only, never during play) | phone |
+| The phone countdown stops at 1 (never shows 0); the answer countdown can show 0 | phone |
+| A `settings` message has no ack: one sent while the socket is down is lost; the phone's saved language wins on rejoin | phone |
+| The TV PlayAgain view shows every seated player with rank, chip, score and a correct answers column | Presentation |
+| The correct tile on the TV turns `#3DF586` with a white rim and grows 1.08 times; wrong tiles fade to 25 % | Presentation |
+| TV animation durations (chip pop 0.25 s, leaderboard rows move after 0.5 s over 0.7 s) are constants in `Presentation/TvMotion.cs`, not in `content/config.json`; they never hold a phase. **Open:** move them under `staging.*` in config? | Presentation |
+| The Day 1 key `tv.lobby.lastInput` (the lobby test pad) is removed | `content/ui_strings.json` |

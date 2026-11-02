@@ -5,6 +5,8 @@
         "FamilyQuiz.Core",
         "FamilyQuiz.Net",
         "FamilyQuiz.Telemetry",
+        "FamilyQuiz.Presentation",
+        "FamilyQuiz.DevTools",
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],
