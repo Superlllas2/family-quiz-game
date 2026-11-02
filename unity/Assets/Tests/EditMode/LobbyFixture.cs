@@ -4,28 +4,60 @@ using FamilyQuiz.Core;
 using FamilyQuiz.Core.Commands;
 using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.Events;
+using FamilyQuiz.Core.Rules;
+using FamilyQuiz.Core.Show;
 using FamilyQuiz.Core.State;
 using NUnit.Framework;
 
 namespace FamilyQuiz.Tests
 {
-    /// <summary>A game in the Lobby on a fake clock, with helpers that send commands like the phones would.</summary>
+    /// <summary>
+    /// A game in the Lobby on a fake clock with the real content/, with helpers that send commands like the phones
+    /// would and step the clock like the frame loop would.
+    /// </summary>
     public sealed class LobbyFixture
     {
-        public LobbyFixture()
+        private int _inputNumber;
+
+        public LobbyFixture(int seed = 42, GameContent content = null)
         {
-            Config = TestContent.Config();
-            Characters = TestContent.Characters(Config);
+            Content = content ?? TestContent.Content();
+            Config = Content.Config;
+            Characters = Content.Characters;
             Clock = new ManualClock();
-            Game = new Game(new GameContent(Config, Characters, new List<QuestionDef>(), null), Clock, new SeededRandom(1234), () => 42);
+            Seeds = new List<int>();
+            int nextSeed = seed;
+            Game = new Game(Content, Clock, new SeededRandom(1234), () =>
+            {
+                Seeds.Add(nextSeed);
+                return nextSeed++;
+            });
             Game.Start();
         }
 
+        public GameContent Content { get; }
         public GameConfig Config { get; }
         public IReadOnlyList<CharacterDef> Characters { get; }
         public ManualClock Clock { get; }
         public Game Game { get; }
         public GameState State => Game.State;
+
+        /// <summary>Every seed the game asked for, in order.</summary>
+        public List<int> Seeds { get; }
+
+        public static long Ms(double seconds)
+        {
+            return ShowDirector.ToMs(seconds);
+        }
+
+        public long CountdownMs => Ms(Config.Lobby.StartCountdownSeconds);
+        public long QuestionShowMs => Ms(Config.Timers.QuestionShow) + Ms(Config.Staging.ExtraSeconds.QuestionShow);
+        public long RevealMs => Ms(Config.Timers.Reveal) + Ms(Config.Staging.ExtraSeconds.Reveal);
+        public long ScoresMs => Ms(Config.Timers.Scores) + Ms(Config.Staging.ExtraSeconds.Scores);
+        public long ResultsMs => Ms(Config.Timers.Results);
+        public long WindowMs => Ms(Config.Timers.Answer.MultipleChoice);
+        public long GraceMs => Config.Net.InputGraceMs;
+        public long LastCallMs => Ms(Config.Timers.LastCall);
 
         public IReadOnlyList<IGameEvent> Send(IGameCommand command)
         {
@@ -47,14 +79,100 @@ namespace FamilyQuiz.Tests
             return State.FindById(joined.PlayerId);
         }
 
+        /// <summary>Seats players c1, c2, ... named P1, P2, ...</summary>
+        public PlayerState[] SeatPlayers(int count)
+        {
+            var seats = new PlayerState[count];
+            for (int i = 0; i < count; i++) seats[i] = Seat("c" + (i + 1), "P" + (i + 1));
+            return seats;
+        }
+
+        public string NextInputId()
+        {
+            return "in" + ++_inputNumber;
+        }
+
+        public IReadOnlyList<IGameEvent> Lobby(string conn, string action)
+        {
+            return Game.Handle(new LobbyAction(conn, NextInputId(), action));
+        }
+
+        /// <summary>A choice for the current phase.</summary>
+        public IReadOnlyList<IGameEvent> Choice(string conn, int choice, long? ms, string inputId = null)
+        {
+            return Game.Handle(new SubmitAnswer(conn, inputId ?? NextInputId(), State.PhaseId, InputKinds.Choice, choice, ms));
+        }
+
+        /// <summary>The right display index of the current question.</summary>
+        public int Right => State.Question.CorrectDisplayIndex;
+
+        public int Wrong => (State.Question.CorrectDisplayIndex + 1) % ProtocolLimits.ChoiceCount;
+
+        /// <summary>Moves the clock by ms and runs one frame.</summary>
+        public IReadOnlyList<IGameEvent> Advance(long ms)
+        {
+            Clock.Advance(ms);
+            return Game.Tick();
+        }
+
+        /// <summary>Steps the clock in small frames until the phase changes or maxMs passed; returns every event.</summary>
+        public List<IGameEvent> RunUntilPhase(GamePhase phase, long maxMs = 600000, long stepMs = 10)
+        {
+            var all = new List<IGameEvent>();
+            long waited = 0;
+            while (State.Phase != phase)
+            {
+                Assert.That(waited, Is.LessThanOrEqualTo(maxMs), "phase " + phase + " never came; now in " + State.Phase);
+                all.AddRange(Advance(stepMs));
+                waited += stepMs;
+            }
+
+            return all;
+        }
+
+        /// <summary>Seats count players, taps Start and runs the countdown and QuestionShow: the first Answer phase is open.</summary>
+        public PlayerState[] ToFirstAnswer(int count)
+        {
+            var seats = SeatPlayers(count);
+            Lobby("c1", LobbyActions.Start);
+            Advance(CountdownMs);
+            Assert.That(State.Phase, Is.EqualTo(GamePhase.QuestionShow));
+            Advance(QuestionShowMs);
+            Assert.That(State.Phase, Is.EqualTo(GamePhase.Answer));
+            return seats;
+        }
+
+        /// <summary>Runs a whole game from the current phase to PlayAgain with nobody answering.</summary>
+        public List<IGameEvent> RunToPlayAgain()
+        {
+            return RunUntilPhase(GamePhase.PlayAgain, 3600000, 50);
+        }
+
         public static string RefusalOf(IReadOnlyList<IGameEvent> events)
         {
             return events.OfType<JoinRefused>().Select(r => r.Reason).SingleOrDefault();
         }
 
-        public static string Describe(IReadOnlyList<IGameEvent> events)
+        public static InputAcked AckOf(IReadOnlyList<IGameEvent> events)
         {
-            return string.Join(", ", events.Select(e => e is JoinRefused r ? "refused " + r.Reason : e.GetType().Name));
+            return events.OfType<InputAcked>().Single();
+        }
+
+        public static string Describe(IEnumerable<IGameEvent> events)
+        {
+            return string.Join(", ", events.Select(Describe));
+        }
+
+        public static string Describe(IGameEvent e)
+        {
+            switch (e)
+            {
+                case JoinRefused r: return "refused " + r.Reason;
+                case PhaseStarted s: return "PhaseStarted(" + s.Phase + ")";
+                case PhaseEnded p: return "PhaseEnded(" + p.Phase + ", " + p.Reason + ")";
+                case InputAcked a: return "InputAcked(" + a.Ok + (a.Reason != null ? ", " + a.Reason : "") + ")";
+                default: return e.GetType().Name;
+            }
         }
     }
 }

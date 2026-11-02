@@ -9,6 +9,10 @@ namespace FamilyQuiz.Core.Events
         public const string SourcePhone = "phone";
         public const string SourceTv = "tv";
 
+        /// <summary>Phone setting names (docs/15_schemas.md, "settingsChanged.source").</summary>
+        public const string SettingLang = "lang";
+        public const string SettingTimerMultiplier = "timerMultiplier";
+
         public SettingsChanged(string source, string playerId, string setting, string value)
         {
             Source = source;
