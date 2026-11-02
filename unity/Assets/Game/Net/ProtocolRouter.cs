@@ -10,7 +10,8 @@ namespace FamilyQuiz.Net
 {
     /// <summary>
     /// Turns relay envelopes (PROTOCOL.md section 2) into Core commands. Answers ping and a wrong version
-    /// itself, ignores settings and unknown types, and never throws on bad input.
+    /// itself, ignores unknown types, and never throws on bad input. Input kinds are passed on as sent: Core
+    /// answers a kind it does not take with "invalid".
     /// </summary>
     public sealed class ProtocolRouter
     {
@@ -69,7 +70,7 @@ namespace FamilyQuiz.Net
                     return new PlayerLeave(conn, Str(msg["inputId"]));
                 case "input":
                     var input = new SubmitAnswer(conn, Str(msg["inputId"]), Num(msg["phaseId"]) ?? -1, Str(msg["kind"]),
-                        (int?)Num(msg["choice"]), Num(msg["ms"]));
+                        Int(msg["choice"]), Num(msg["ms"]));
                     _log("input received conn=" + conn + " inputId=" + input.InputId + " kind=" + input.Kind
                          + " choice=" + input.Choice + " ms=" + input.Ms + " phaseId=" + input.PhaseId
                          + " (socket at " + item.ReceivedAt.ToString("HH:mm:ss.fff") + ")");
@@ -77,12 +78,14 @@ namespace FamilyQuiz.Net
                 case "lobby":
                     return new LobbyAction(conn, Str(msg["inputId"]), Str(msg["action"]));
                 case "character":
-                    return new PickCharacter(conn, Str(msg["inputId"]), (int?)Num(msg["characterId"]) ?? -1);
+                    return new PickCharacter(conn, Str(msg["inputId"]), Int(msg["characterId"]) ?? -1);
+                case "settings":
+                    return new ChangeSettings(conn, Str(msg["lang"]), Dbl(msg["timerMultiplier"]));
                 case "ping":
                     Send(conn, new PongMessage { T = msg["t"]?.DeepClone(), Tv = _clock.NowMs });
                     return null;
                 default:
-                    // settings (Day 2 and later) and unknown types are ignored.
+                    // poll (Day 4) and unknown types are ignored.
                     return null;
             }
         }
@@ -109,6 +112,24 @@ namespace FamilyQuiz.Net
             }
 
             return null;
+        }
+
+        /// <summary>A whole number that fits an int, or null.</summary>
+        private static int? Int(JToken token)
+        {
+            var n = Num(token);
+            if (!n.HasValue || n.Value < int.MinValue || n.Value > int.MaxValue) return null;
+            return (int)n.Value;
+        }
+
+        /// <summary>A finite number as a double, not rounded (timerMultiplier 1.5 stays 1.5), or null.</summary>
+        private static double? Dbl(JToken token)
+        {
+            if (token == null) return null;
+            if (token.Type != JTokenType.Integer && token.Type != JTokenType.Float) return null;
+            var d = (double)token;
+            if (double.IsNaN(d) || double.IsInfinity(d)) return null;
+            return d;
         }
     }
 }
