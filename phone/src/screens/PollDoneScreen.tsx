@@ -1,30 +1,12 @@
-// Screen `pollDone` (06): "Спасибо! / Thanks!" and Play again on every phone, enabled by `canPlayAgain`.
+// Screen `pollDone` (06): "Спасибо! / Thanks!" until the poll phase is over; then the TV sends `lobby` (D76).
 
 import { t } from '../i18n';
-import type { TrackedInput } from '../net/inputs';
-import { pollDoneData, type Lang, type ScreenState } from '../protocol';
-import { InputStatus } from './InputStatus';
-import { PressButton } from './PressButton';
+import type { Lang } from '../protocol';
 
-interface Props {
-  lang: Lang;
-  screen: ScreenState;
-  playAgainInput: TrackedInput | null;
-  onPlayAgain(): void;
-}
-
-export function PollDoneScreen(props: Props) {
-  const { lang } = props;
-  const { canPlayAgain } = pollDoneData(props.screen.data);
+export function PollDoneScreen(props: { lang: Lang }) {
   return (
     <div class="body center">
-      <p class="result-head">{t(lang, 'pollDone.thanks')}</p>
-      <div class="bottom-block">
-        <PressButton class="primary big" disabled={!canPlayAgain} onClick={props.onPlayAgain}>
-          {t(lang, 'pollDone.playAgain')}
-        </PressButton>
-        <InputStatus lang={lang} input={props.playAgainInput} />
-      </div>
+      <p class="result-head">{t(props.lang, 'pollDone.thanks')}</p>
     </div>
   );
 }

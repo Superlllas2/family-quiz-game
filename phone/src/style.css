@@ -418,6 +418,24 @@ h1 {
   min-height: 0;
 }
 
+/* The ready mark (D76): a check mark in front of the name. */
+.chip.ready-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chip.ready-chip .check {
+  flex: none;
+  width: 18px;
+  height: 18px;
+}
+
+.chip-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* ---- pickCharacter: the grid scrolls inside the screen ---- */
 
 .pick-title {

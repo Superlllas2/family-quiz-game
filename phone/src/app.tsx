@@ -8,9 +8,11 @@ import { t } from './i18n';
 import type { InputSender, TrackedInput } from './net/inputs';
 import type { Session, SessionStatus } from './net/session';
 import {
-  answerChoiceData, characterMessage, choiceInputMessage, leaveMessage, lobbyMessage, playerView, settingsMessage,
+  answerChoiceData, characterMessage, choiceInputMessage, leaveMessage, lobbyData, lobbyMessage, playerView,
+  settingsMessage,
   type AckedMessage, type IncomingMessage, type Lang, type PhaseId, type PlayerView, type ScreenState,
 } from './protocol';
+import { shownReady, toggleReady } from './readyToggle';
 import { AnswerChoiceScreen } from './screens/AnswerChoiceScreen';
 import { CountdownScreen } from './screens/CountdownScreen';
 import {
@@ -43,7 +45,7 @@ export interface AppDeps {
 interface Current { screen: ScreenState; receivedAt: number }
 
 /** One button's input on one screen: its status shows only while that screen's phaseId is current. */
-type Slot = 'start' | 'cancel' | 'playAgain' | 'character' | 'choice';
+type Slot = 'ready' | 'character' | 'choice';
 interface SlotInput { inputId: string; phaseId: PhaseId; characterId?: number }
 
 export function App({ deps }: { deps: AppDeps }) {
@@ -55,6 +57,8 @@ export function App({ deps }: { deps: AppDeps }) {
   const [inputs, setInputs] = useState<Record<string, TrackedInput>>({});
   const [slots, setSlots] = useState<Partial<Record<Slot, SlotInput>>>({});
   const [choice, setChoice] = useState<{ phaseId: PhaseId; index: number } | null>(null);
+  /** The last Ready or Not ready tap, shown at once until the TV's next screen (D76). */
+  const [readyTap, setReadyTap] = useState<boolean | null>(null);
   /** The phaseId already answered: set at once, so a second tap before the re-render is ignored too. */
   const answeredPhase = useRef<PhaseId | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -66,6 +70,8 @@ export function App({ deps }: { deps: AppDeps }) {
       // Always a new arrival time, also for a last call with the same phaseId (the countdown re-syncs).
       setCurrent({ screen: next, receivedAt: deps.now() });
       clock.arrived(next.phaseId);
+      // From here the TV's own ready flag shows again.
+      setReadyTap(null);
       // The pick status lives as long as pickCharacter is showing: its refresh after characterTaken may or may
       // not carry a new phaseId, and the note must survive it.
       if (next.id !== 'pickCharacter') {
@@ -213,16 +219,25 @@ export function App({ deps }: { deps: AppDeps }) {
         );
         break;
       }
-      case 'lobby':
+      case 'lobby': {
+        const d = lobbyData(screen.data);
+        const ready = shownReady(d.ready, readyTap);
         body = (
           <LobbyScreen
             lang={lang}
-            screen={screen}
-            startInput={slotInput('start')}
-            onStart={() => sendFor('start', lobbyMessage(deps.newInputId(), 'start'))}
+            players={d.players}
+            ready={ready}
+            enoughPlayers={d.enoughPlayers}
+            readyInput={slotInput('ready')}
+            onToggle={() => {
+              const next = toggleReady(ready);
+              setReadyTap(next.ready);
+              sendFor('ready', lobbyMessage(deps.newInputId(), next.action));
+            }}
           />
         );
         break;
+      }
       case 'countdown':
         body = (
           <CountdownScreen
@@ -230,8 +245,8 @@ export function App({ deps }: { deps: AppDeps }) {
             screen={screen}
             receivedAt={current.receivedAt}
             now={deps.now}
-            cancelInput={slotInput('cancel')}
-            onCancel={() => sendFor('cancel', lobbyMessage(deps.newInputId(), 'cancelStart'))}
+            notReadyInput={slotInput('ready')}
+            onNotReady={() => sendFor('ready', lobbyMessage(deps.newInputId(), 'notReady'))}
           />
         );
         break;
@@ -263,14 +278,7 @@ export function App({ deps }: { deps: AppDeps }) {
         body = <ResultsScreen lang={lang} screen={screen} />;
         break;
       case 'pollDone':
-        body = (
-          <PollDoneScreen
-            lang={lang}
-            screen={screen}
-            playAgainInput={slotInput('playAgain')}
-            onPlayAgain={() => sendFor('playAgain', lobbyMessage(deps.newInputId(), 'playAgain'))}
-          />
-        );
+        body = <PollDoneScreen lang={lang} />;
         break;
       case 'error':
         body = <TvErrorScreen lang={lang} screen={screen} />;

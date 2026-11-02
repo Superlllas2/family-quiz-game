@@ -64,7 +64,7 @@ describe('input sender (06: sent, ack, resend once, no connection)', () => {
   });
 
   it('an ack after the resend still resolves it; a duplicate ack changes nothing', () => {
-    sender.send(lobbyMessage('s1', 'start'));
+    sender.send(lobbyMessage('s1', 'ready'));
     vi.advanceTimersByTime(1200);
     sender.handleAck({ type: 'ack', inputId: 's1', ok: true });
     const count = changes.length;
@@ -74,7 +74,7 @@ describe('input sender (06: sent, ack, resend once, no connection)', () => {
   });
 
   it('an ack with ok false shows refused with the reason', () => {
-    sender.send(lobbyMessage('s1', 'start'));
+    sender.send(lobbyMessage('s1', 'ready'));
     sender.handleAck({ type: 'ack', inputId: 's1', ok: false, reason: 'invalid' });
     expect(last()).toMatchObject({ state: 'refused', reason: 'invalid' });
   });

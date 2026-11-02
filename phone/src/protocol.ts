@@ -7,7 +7,7 @@ export type Lang = 'ru' | 'en';
 
 export type RefusedReason = 'roomFull' | 'nameTaken' | 'badName' | 'gameStarted' | 'badToken' | 'badVersion';
 
-export type LobbyAction = 'start' | 'cancelStart' | 'playAgain';
+export type LobbyAction = 'ready' | 'notReady';
 
 export type PhaseId = number;
 
@@ -69,6 +69,9 @@ export function pingMessage(t: number): PingMessage {
 // ---- TV app (and relay) to phone (sections 2 and 4) ----
 
 export interface LobbyPlayer { playerId: string; name: string; characterId: number }
+
+/** A player in the `lobby` screen, with the TV's ready mark (D76). */
+export interface ReadyPlayer extends LobbyPlayer { ready: boolean }
 
 export interface ScreenState {
   phaseId: PhaseId;
@@ -226,9 +229,25 @@ export function playerView(p: PlayerInfo): PlayerView {
   };
 }
 
-/** Screen `lobby`. */
-export function lobbyData(data: Record<string, unknown>): { players: LobbyPlayer[]; canStart: boolean } {
-  return { players: lobbyPlayers(data.players), canStart: data.canStart === true };
+export interface LobbyData {
+  players: ReadyPlayer[];
+  /** This player is ready. */
+  ready: boolean;
+  /** `players.min` or more players are connected. */
+  enoughPlayers: boolean;
+}
+
+/** Screen `lobby`. A missing ready mark is not ready. */
+export function lobbyData(data: Record<string, unknown>): LobbyData {
+  const players: ReadyPlayer[] = [];
+  for (const p of list(data.players)) {
+    if (isObj(p) && typeof p.playerId === 'string') {
+      players.push({
+        playerId: p.playerId, name: str(p.name), characterId: num(p.characterId, -1), ready: p.ready === true,
+      });
+    }
+  }
+  return { players, ready: data.ready === true, enoughPlayers: data.enoughPlayers === true };
 }
 
 /** Screen `pickCharacter`: ids taken by other players, and this player's character (null if missing). */
@@ -303,9 +322,4 @@ export function resultsData(
 ): { place: number | null; correctCount: number; awards: string[] } {
   const awards = list(data.awards).filter((x): x is string => typeof x === 'string' && x !== '');
   return { place: numOrNull(data.place), correctCount: num(data.correctCount, 0), awards };
-}
-
-/** Screen `pollDone`. */
-export function pollDoneData(data: Record<string, unknown>): { canPlayAgain: boolean } {
-  return { canPlayAgain: data.canPlayAgain === true };
 }
