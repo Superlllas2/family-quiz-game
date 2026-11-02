@@ -1,0 +1,95 @@
+using System;
+using System.Collections.Generic;
+using FamilyQuiz.Core;
+using FamilyQuiz.Core.Events;
+using FamilyQuiz.Core.State;
+using FamilyQuiz.Net.Protocol;
+
+namespace FamilyQuiz.Net
+{
+    /// <summary>
+    /// Listens to Core events and sends the phones what they need: welcome, snapshot, screen, refused, ack,
+    /// and the close control message for a superseded socket. Only reads the state.
+    /// </summary>
+    public sealed class PhoneOutbox
+    {
+        private readonly Game _game;
+        private readonly IRelaySender _sender;
+        private readonly ScreenBuilder _screens;
+        private readonly Func<string> _roomCode;
+        private readonly Action<string> _log;
+
+        public PhoneOutbox(Game game, IRelaySender sender, Func<string> roomCode, Action<string> log)
+        {
+            _game = game;
+            _sender = sender;
+            _screens = new ScreenBuilder(game);
+            _roomCode = roomCode;
+            _log = log ?? (_ => { });
+        }
+
+        public void OnEvents(IReadOnlyList<IGameEvent> events)
+        {
+            foreach (var e in events) OnEvent(e);
+        }
+
+        public void OnEvent(IGameEvent e)
+        {
+            switch (e)
+            {
+                case PlayerJoined joined:
+                    Welcome(joined.PlayerId, joined.Conn);
+                    break;
+                case PlayerRejoined rejoined:
+                    Welcome(rejoined.PlayerId, rejoined.Conn);
+                    break;
+                case JoinRefused refused:
+                    Send(refused.Conn, new RefusedMessage { Reason = refused.Reason });
+                    break;
+                case ConnectionSuperseded superseded:
+                    _sender.Send(ProtocolJson.Serialize(new CloseControl
+                    {
+                        Close = superseded.OldConn,
+                        Code = ProtocolConstants.CloseReplacedByNewerSocket
+                    }));
+                    _log("closed older socket " + superseded.OldConn + " of " + superseded.PlayerId + " (4002)");
+                    break;
+                case InputAcked ack:
+                    Send(ack.Conn, new AckMessage { InputId = ack.InputId, Ok = ack.Ok, Reason = ack.Reason });
+                    _log("ack sent conn=" + ack.Conn + " inputId=" + ack.InputId + " ok=" + ack.Ok
+                         + (ack.Reason != null ? " reason=" + ack.Reason : ""));
+                    break;
+                case RosterChanged _:
+                    SendScreenToEveryone();
+                    break;
+            }
+        }
+
+        private void Welcome(string playerId, string conn)
+        {
+            var player = _game.State.FindById(playerId);
+            if (player == null) return;
+            Send(conn, new WelcomeMessage { PlayerId = player.PlayerId, Token = player.Token, Room = _roomCode() });
+            Send(conn, new SnapshotMessage { Player = _screens.Player(player), Screen = _screens.CurrentScreen(player) });
+        }
+
+        private void SendScreenToEveryone()
+        {
+            foreach (var player in _game.State.Players)
+            {
+                if (IsReachable(player)) Send(player.Conn, new ScreenMessage(_screens.CurrentScreen(player)));
+            }
+        }
+
+        private static bool IsReachable(PlayerState player)
+        {
+            return player.Connected && player.Conn != null;
+        }
+
+        private void Send(string conn, object msg)
+        {
+            if (conn == null) return;
+            _sender.Send(ProtocolJson.Serialize(new OutboundEnvelope { To = conn, Msg = msg }));
+        }
+    }
+}

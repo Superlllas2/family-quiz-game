@@ -1,0 +1,20 @@
+{
+    "name": "FamilyQuiz.Bootstrap",
+    "rootNamespace": "FamilyQuiz.Bootstrap",
+    "references": [
+        "FamilyQuiz.Core",
+        "FamilyQuiz.Net",
+        "FamilyQuiz.Presentation"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,20 @@
+{
+    "name": "FamilyQuiz.Editor",
+    "rootNamespace": "FamilyQuiz.EditorTools",
+    "references": [
+        "FamilyQuiz.Bootstrap",
+        "Unity.TextMeshPro",
+        "Unity.TextMeshPro.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
