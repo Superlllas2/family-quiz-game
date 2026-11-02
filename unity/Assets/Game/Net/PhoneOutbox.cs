@@ -76,6 +76,7 @@ namespace FamilyQuiz.Net
                 case RosterChanged _:
                 case PlayerConnectionChanged _:
                 case PlayerTimedOut _: // a player past deadline plus grace drops out of the pending lists
+                case ReadyChanged _: // every lobby screen shows everyone's ready mark (D76)
                     RefreshAfterRosterChange();
                     break;
                 case PlayerUpdated updated:
@@ -96,7 +97,7 @@ namespace FamilyQuiz.Net
             Send(conn, new SnapshotMessage { Player = _screens.Player(player), Screen = _screens.CurrentScreen(player) });
         }
 
-        /// <summary>The pending lists changed (Answer), or the player list did (Lobby, PlayAgain).</summary>
+        /// <summary>The pending lists changed (Answer), or the player list or ready marks did (Lobby).</summary>
         private void RefreshAfterRosterChange()
         {
             switch (_game.State.Phase)
@@ -105,7 +106,6 @@ namespace FamilyQuiz.Net
                     SendScreenToLockedPlayers();
                     break;
                 case GamePhase.Lobby:
-                case GamePhase.PlayAgain:
                     SendScreenToEveryone();
                     break;
             }

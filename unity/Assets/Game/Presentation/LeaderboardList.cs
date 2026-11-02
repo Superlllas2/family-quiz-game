@@ -6,7 +6,7 @@ namespace FamilyQuiz.Presentation
 {
     /// <summary>
     /// A column of leaderboard rows inside its rect. Rows are placed by index from the top, with the step shrinking
-    /// when many players do not fit. Used by the Scores, Results and PlayAgain views.
+    /// when many players do not fit. Used by the Scores and Results views.
     /// </summary>
     public sealed class LeaderboardList : MonoBehaviour
     {

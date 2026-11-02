@@ -22,7 +22,6 @@ namespace FamilyQuiz.Presentation
         private QuestionView _question;
         private LeaderboardView _leaderboard;
         private ResultsView _results;
-        private StandingsView _standings;
         private GameObject _relayBannerRoot;
         private TextMeshProUGUI _relayBanner;
         private TextMeshProUGUI _contentError;
@@ -108,6 +107,7 @@ namespace FamilyQuiz.Presentation
                     case PlayerConnectionChanged _:
                     case PlayerUpdated _:
                     case PlayerLeft _:
+                    case ReadyChanged _:
                         dirty = true;
                         break;
                 }
@@ -162,10 +162,6 @@ namespace FamilyQuiz.Presentation
                     Show(_results.gameObject);
                     _results.Enter();
                     break;
-                case GamePhase.PlayAgain:
-                    Show(_standings.gameObject);
-                    _standings.Enter();
-                    break;
             }
 
             UpdateRelayBanner();
@@ -188,9 +184,6 @@ namespace FamilyQuiz.Presentation
                     break;
                 case GamePhase.Results:
                     _results.Refresh();
-                    break;
-                case GamePhase.PlayAgain:
-                    _standings.Refresh();
                     break;
             }
         }
@@ -226,7 +219,6 @@ namespace FamilyQuiz.Presentation
             _question.gameObject.SetActive(false);
             _leaderboard.gameObject.SetActive(false);
             _results.gameObject.SetActive(false);
-            _standings.gameObject.SetActive(false);
         }
 
         private void Build()
@@ -246,7 +238,6 @@ namespace FamilyQuiz.Presentation
             _question = QuestionView.Create(root, _context);
             _leaderboard = LeaderboardView.Create(root, _context);
             _results = ResultsView.Create(root, _context);
-            _standings = StandingsView.Create(root, _context);
 
             var banner = UiBuilder.Image("RelayBanner", root, TvColors.Background);
             UiBuilder.Anchor(banner.rectTransform, 0, 0.9f, 1, 1);

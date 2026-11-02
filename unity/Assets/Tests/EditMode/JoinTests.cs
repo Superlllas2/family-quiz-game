@@ -132,16 +132,18 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void CanStartNeedsPlayersMin()
+        public void EnoughPlayersCountsConnectedPlayers()
         {
             var f = new LobbyFixture();
             for (int i = 0; i < f.Config.Players.Min; i++)
             {
-                Assert.That(f.Game.CanStart, Is.False);
+                Assert.That(f.Game.EnoughPlayers, Is.False);
                 f.Seat("c" + i, "P " + i);
             }
 
-            Assert.That(f.Game.CanStart, Is.True);
+            Assert.That(f.Game.EnoughPlayers, Is.True);
+            f.Send(new FamilyQuiz.Core.Commands.ConnectionClosed("c0"));
+            Assert.That(f.Game.EnoughPlayers, Is.False, "a dropped seat does not count");
         }
     }
 }

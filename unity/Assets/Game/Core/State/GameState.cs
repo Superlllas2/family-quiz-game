@@ -20,7 +20,7 @@ namespace FamilyQuiz.Core.State
         public long PhaseStartedAtMs { get; internal set; }
 
         /// <summary>
-        /// Core clock time the current phase ends at the latest, or null for phases without a timer (Lobby, PlayAgain).
+        /// Core clock time the current phase ends at the latest, or null for phases without a timer (Lobby).
         /// In Answer: the latest personal deadline plus net.inputGraceMs (D73), moved earlier by last call.
         /// </summary>
         public long? PhaseEndsAtMs { get; internal set; }
@@ -34,8 +34,6 @@ namespace FamilyQuiz.Core.State
         /// <summary>The game language for TV texts, Russian by default (D34).</summary>
         public string GameLanguage { get; internal set; } = Languages.Default;
 
-        /// <summary>Where a cancelled StartCountdown returns: Lobby or PlayAgain.</summary>
-        public GamePhase CountdownReturnPhase { get; internal set; } = GamePhase.Lobby;
 
         /// <summary>Games started this session, 1 based; 0 before the first.</summary>
         public int GameNumber { get; internal set; }
@@ -78,6 +76,18 @@ namespace FamilyQuiz.Core.State
         public bool IsOpen(string conn)
         {
             return conn != null && _openConns.Contains(conn);
+        }
+
+        /// <summary>Seated players with an open socket.</summary>
+        public int ConnectedPlayerCount()
+        {
+            int count = 0;
+            foreach (var p in _players)
+            {
+                if (p.Connected) count++;
+            }
+
+            return count;
         }
 
         public PlayerState FindById(string playerId)

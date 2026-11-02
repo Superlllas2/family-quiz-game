@@ -11,7 +11,7 @@ namespace FamilyQuiz.Core.Show
 {
     /// <summary>
     /// Runs the show on the injected clock (docs/02_show_flow.md, Day 2 scope from D75): Lobby, StartCountdown, then
-    /// GameState.QuestionCount x (QuestionShow, Answer, Reveal, Scores), Results, PlayAgain. Every duration comes from
+    /// GameState.QuestionCount x (QuestionShow, Answer, Reveal, Scores), Results, then the Lobby again (D76). Every duration comes from
     /// config, with staging.extraSeconds added where a phase has one. A phase that ends on its timer ends at its
     /// scheduled time and the next one starts at that same time, so on a fake clock every phase lasts its budget exactly.
     /// </summary>
@@ -53,36 +53,45 @@ namespace FamilyQuiz.Core.Show
 
         // ---------------------------------------------------------------- lobby actions
 
-        /// <summary>PROTOCOL.md, "lobby actions": start in the Lobby, playAgain in PlayAgain (both players.min or more), cancelStart in the countdown.</summary>
-        public bool CanLobbyAction(string action)
+        /// <summary>
+        /// PROTOCOL.md, "lobby actions" (D76): ready and notReady in the Lobby or the countdown; ready only once the
+        /// player picked a character. Taps never start or stop the countdown themselves: <see cref="Reevaluate"/> does.
+        /// </summary>
+        public bool CanLobbyAction(PlayerState player, string action)
         {
+            bool lobbyOrCountdown = _state.Phase == GamePhase.Lobby || _state.Phase == GamePhase.StartCountdown;
             switch (action)
             {
-                case LobbyActions.Start:
-                    return _state.Phase == GamePhase.Lobby && _state.Players.Count >= _config.Players.Min;
-                case LobbyActions.PlayAgain:
-                    return _state.Phase == GamePhase.PlayAgain && _state.Players.Count >= _config.Players.Min;
-                case LobbyActions.CancelStart:
-                    return _state.Phase == GamePhase.StartCountdown;
+                case LobbyActions.Ready:
+                    return lobbyOrCountdown && player.CharacterPicked;
+                case LobbyActions.NotReady:
+                    return lobbyOrCountdown;
                 default:
                     return false;
             }
         }
 
-        /// <summary>Applies a lobby action that <see cref="CanLobbyAction"/> allowed.</summary>
-        public void ApplyLobbyAction(string action, List<IGameEvent> output)
+        /// <summary>Sets the ready mark for a lobby action that <see cref="CanLobbyAction"/> allowed; no change, no event.</summary>
+        public void ApplyLobbyAction(PlayerState player, string action, List<IGameEvent> output)
         {
-            long now = Now;
-            if (action == LobbyActions.CancelStart)
+            bool ready = action == LobbyActions.Ready;
+            if (player.Ready == ready) return;
+            player.Ready = ready;
+            output.Add(new ReadyChanged(player.PlayerId, ready));
+        }
+
+        /// <summary>Every connected player is ready and players.min or more are connected (D76).</summary>
+        private bool EveryoneReady()
+        {
+            int connected = 0;
+            foreach (var p in _state.Players)
             {
-                CancelCountdown(now, output);
-                return;
+                if (!p.Connected) continue;
+                if (!p.Ready) return false;
+                connected++;
             }
 
-            var from = _state.Phase;
-            EndPhase(PhaseEndReasons.AllDone, now, output);
-            _state.CountdownReturnPhase = from;
-            BeginTimed(GamePhase.StartCountdown, now, ToMs(_config.Lobby.StartCountdownSeconds), 0, output);
+            return connected >= _config.Players.Min;
         }
 
         // ---------------------------------------------------------------- answers
@@ -125,14 +134,22 @@ namespace FamilyQuiz.Core.Show
         // ---------------------------------------------------------------- the clock
 
         /// <summary>
-        /// Rules that react to a changed state, run after every command and every tick: a countdown left with fewer than
-        /// players.min players is cancelled; in Answer, the phase ends at once when every connected player has locked in
+        /// Rules that react to a changed state, run after every command and every tick (D76): the Lobby starts the
+        /// countdown once every connected player is ready and players.min or more are connected; the countdown stops
+        /// (back to the Lobby) once that is no longer true (a Not ready, a join, a disconnect, a leave); in Answer, the phase ends at once when every connected player has locked in
         /// or reached their deadline plus grace (D73), else last call may cut the one remaining player (D74).
         /// </summary>
         public void Reevaluate(List<IGameEvent> output)
         {
             long now = Now;
-            if (_state.Phase == GamePhase.StartCountdown && _state.Players.Count < _config.Players.Min)
+            if (_state.Phase == GamePhase.Lobby && EveryoneReady())
+            {
+                EndPhase(PhaseEndReasons.AllDone, now, output);
+                BeginTimed(GamePhase.StartCountdown, now, ToMs(_config.Lobby.StartCountdownSeconds), 0, output);
+                return;
+            }
+
+            if (_state.Phase == GamePhase.StartCountdown && !EveryoneReady())
             {
                 CancelCountdown(now, output);
                 return;
@@ -159,7 +176,6 @@ namespace FamilyQuiz.Core.Show
                 switch (_state.Phase)
                 {
                     case GamePhase.Lobby:
-                    case GamePhase.PlayAgain:
                         return;
                     case GamePhase.Answer:
                         long due = AnswerDueAt(out var reason);
@@ -336,7 +352,7 @@ namespace FamilyQuiz.Core.Show
         private void CancelCountdown(long at, List<IGameEvent> output)
         {
             EndPhase(PhaseEndReasons.Cancelled, at, output);
-            BeginUntimed(_state.CountdownReturnPhase, at, output);
+            BeginUntimed(GamePhase.Lobby, at, output);
         }
 
         private void StartGame(long at, List<IGameEvent> output)
@@ -356,12 +372,13 @@ namespace FamilyQuiz.Core.Show
             var ids = new List<string>();
             foreach (var p in _state.Players)
             {
-                // Play again resets scores, streaks and correct counts and keeps everything else (D24).
+                // Scores were reset when the last game ended (D76); a game always starts from 0.
                 p.Score = 0;
                 p.Streak = 0;
                 p.CorrectCount = 0;
                 p.Turn = null;
                 p.CharacterPicked = true;
+                p.Ready = false;
                 ids.Add(p.PlayerId);
             }
 
@@ -484,7 +501,20 @@ namespace FamilyQuiz.Core.Show
         {
             _state.GameRunning = false;
             output.Add(new GameEnded(_state.GameNumber, GameEnded.ReasonFinished, _state.WinnerId, at - _state.GameStartedAtMs));
-            BeginUntimed(GamePhase.PlayAgain, at, output);
+
+            // Back to the Lobby (D76): scores, streaks and correct counts go to 0; seats, characters, languages and
+            // timer multipliers stay. Ready marks were cleared when the game started.
+            foreach (var p in _state.Players)
+            {
+                p.Score = 0;
+                p.Streak = 0;
+                p.CorrectCount = 0;
+                p.Turn = null;
+                p.Ready = false;
+                output.Add(new PlayerUpdated(p.PlayerId));
+            }
+
+            BeginUntimed(GamePhase.Lobby, at, output);
         }
 
         /// <summary>Day 2 winner (no race yet): the highest score; ties broken by the game's seeded random.</summary>

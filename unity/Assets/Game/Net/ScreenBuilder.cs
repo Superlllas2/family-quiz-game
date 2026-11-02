@@ -38,7 +38,7 @@ namespace FamilyQuiz.Net
                     if (player.CharacterPicked)
                     {
                         id = ScreenIds.Lobby;
-                        data = Lobby();
+                        data = Lobby(player);
                     }
                     else
                     {
@@ -77,13 +77,9 @@ namespace FamilyQuiz.Net
                     id = ScreenIds.Results;
                     data = Results(player);
                     break;
-                case GamePhase.PlayAgain:
-                    id = ScreenIds.PollDone;
-                    data = new PollDoneScreenData { CanPlayAgain = _game.CanPlayAgain };
-                    break;
                 default:
                     id = ScreenIds.Lobby;
-                    data = Lobby();
+                    data = Lobby(player);
                     break;
             }
 
@@ -125,15 +121,15 @@ namespace FamilyQuiz.Net
             return pending;
         }
 
-        private LobbyScreenData Lobby()
+        private LobbyScreenData Lobby(PlayerState player)
         {
             var players = new List<LobbyPlayerDto>(_game.State.Players.Count);
             foreach (var p in _game.State.Players)
             {
-                players.Add(new LobbyPlayerDto { PlayerId = p.PlayerId, Name = p.Name, CharacterId = p.CharacterId });
+                players.Add(new LobbyPlayerDto { PlayerId = p.PlayerId, Name = p.Name, CharacterId = p.CharacterId, Ready = p.Ready });
             }
 
-            return new LobbyScreenData { Players = players, CanStart = _game.CanStart };
+            return new LobbyScreenData { Players = players, Ready = player.Ready, EnoughPlayers = _game.EnoughPlayers };
         }
 
         private PickCharacterScreenData PickCharacter(PlayerState player)

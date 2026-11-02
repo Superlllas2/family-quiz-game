@@ -97,6 +97,29 @@ namespace FamilyQuiz.Tests
             return Game.Handle(new LobbyAction(conn, NextInputId(), action));
         }
 
+        /// <summary>Picks the TV assigned character for a seat that has not picked one yet (the phone's pickCharacter tap).</summary>
+        public IReadOnlyList<IGameEvent> Pick(PlayerState player)
+        {
+            return Game.Handle(new PickCharacter(player.Conn, NextInputId(), player.CharacterId));
+        }
+
+        /// <summary>
+        /// Every connected seat picks its character (if it has not) and taps Ready, in seat order (D76). With players.min
+        /// or more connected, the last Ready starts the countdown. Returns every event.
+        /// </summary>
+        public List<IGameEvent> ReadyAll()
+        {
+            var all = new List<IGameEvent>();
+            foreach (var p in State.Players.ToList())
+            {
+                if (!p.Connected) continue;
+                if (!p.CharacterPicked) all.AddRange(Pick(p));
+                all.AddRange(Lobby(p.Conn, LobbyActions.Ready));
+            }
+
+            return all;
+        }
+
         /// <summary>A choice for the current phase.</summary>
         public IReadOnlyList<IGameEvent> Choice(string conn, int choice, long? ms, string inputId = null)
         {
@@ -130,11 +153,11 @@ namespace FamilyQuiz.Tests
             return all;
         }
 
-        /// <summary>Seats count players, taps Start and runs the countdown and QuestionShow: the first Answer phase is open.</summary>
+        /// <summary>Seats count players, everyone taps Ready, and runs the countdown and QuestionShow: the first Answer phase is open.</summary>
         public PlayerState[] ToFirstAnswer(int count)
         {
             var seats = SeatPlayers(count);
-            Lobby("c1", LobbyActions.Start);
+            ReadyAll();
             Advance(CountdownMs);
             Assert.That(State.Phase, Is.EqualTo(GamePhase.QuestionShow));
             Advance(QuestionShowMs);
@@ -142,10 +165,11 @@ namespace FamilyQuiz.Tests
             return seats;
         }
 
-        /// <summary>Runs a whole game from the current phase to PlayAgain with nobody answering.</summary>
-        public List<IGameEvent> RunToPlayAgain()
+        /// <summary>Runs a running game to its end and back to the Lobby (D76) with nobody answering.</summary>
+        public List<IGameEvent> RunToLobby()
         {
-            return RunUntilPhase(GamePhase.PlayAgain, 3600000, 50);
+            Assert.That(State.Phase, Is.Not.EqualTo(GamePhase.Lobby), "no game is running");
+            return RunUntilPhase(GamePhase.Lobby, 3600000, 50);
         }
 
         public static string RefusalOf(IReadOnlyList<IGameEvent> events)

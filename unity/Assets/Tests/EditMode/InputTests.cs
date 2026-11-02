@@ -129,7 +129,7 @@ namespace FamilyQuiz.Tests
             var f = new LobbyFixture();
             f.SeatPlayers(2);
             Assert.That(LobbyFixture.AckOf(f.Choice("c1", 1, 100)).Reason, Is.EqualTo(AckReasons.Invalid), "Lobby");
-            f.Lobby("c1", LobbyActions.Start);
+            f.ReadyAll();
             f.Advance(f.CountdownMs);
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.QuestionShow));
             Assert.That(LobbyFixture.AckOf(f.Choice("c1", 1, 100)).Reason, Is.EqualTo(AckReasons.Invalid), "QuestionShow");

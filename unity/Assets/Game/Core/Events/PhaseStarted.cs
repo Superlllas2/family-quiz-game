@@ -25,7 +25,7 @@ namespace FamilyQuiz.Core.Events
 
         public long StagingExtraMs { get; }
 
-        /// <summary>Core clock time the phase ends at the latest, or null (Lobby, PlayAgain).</summary>
+        /// <summary>Core clock time the phase ends at the latest, or null (Lobby).</summary>
         public long? EndsAtMs { get; }
     }
 }

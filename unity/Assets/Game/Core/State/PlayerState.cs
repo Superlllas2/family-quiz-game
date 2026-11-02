@@ -39,6 +39,9 @@ namespace FamilyQuiz.Core.State
         /// <summary>True once the player picked a character on the pickCharacter screen; then they see the lobby.</summary>
         public bool CharacterPicked { get; internal set; }
 
+        /// <summary>Tapped Ready in the Lobby (D76). Cleared when a game starts.</summary>
+        public bool Ready { get; internal set; }
+
         /// <summary>Correct answers in rounds in the current game ("results.correctCount", "Most correct").</summary>
         public int CorrectCount { get; internal set; }
 

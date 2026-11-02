@@ -47,14 +47,14 @@ namespace FamilyQuiz.Core.Rules
             var player = SeatOf(cmd.Conn, cmd.InputId, output);
             if (player == null || Resent(player, cmd.Conn, cmd.InputId, output)) return;
 
-            bool ok = _director.CanLobbyAction(cmd.Action);
+            bool ok = _director.CanLobbyAction(player, cmd.Action);
             Answer(player, cmd.Conn, cmd.InputId, ok, ok ? null : AckReasons.Invalid, output);
             output.Add(new LobbyActionHandled(player.PlayerId, cmd.Action, ok));
-            if (ok) _director.ApplyLobbyAction(cmd.Action, output);
+            if (ok) _director.ApplyLobbyAction(player, cmd.Action, output);
         }
 
         /// <summary>
-        /// A character pick: only in the Lobby and PlayAgain, for an id in characters.json (else invalid), and not one
+        /// A character pick: only in the Lobby, for an id in characters.json (else invalid), and not one
         /// another seated player has (characterTaken, docs/18_edge_cases.md).
         /// </summary>
         public void Character(PickCharacter cmd, List<IGameEvent> output)
@@ -63,7 +63,7 @@ namespace FamilyQuiz.Core.Rules
             if (player == null || Resent(player, cmd.Conn, cmd.InputId, output)) return;
 
             string reason = null;
-            if (_state.Phase != GamePhase.Lobby && _state.Phase != GamePhase.PlayAgain) reason = AckReasons.Invalid;
+            if (_state.Phase != GamePhase.Lobby) reason = AckReasons.Invalid;
             else if (!CharacterExists(cmd.CharacterId)) reason = AckReasons.Invalid;
             else if (TakenByOther(player, cmd.CharacterId)) reason = AckReasons.CharacterTaken;
             if (reason != null)

@@ -47,11 +47,11 @@ namespace FamilyQuiz.Core
 
         public long NowMs => _clock.NowMs;
 
-        /// <summary>Start in the Lobby needs players.min seated players and no countdown running (PROTOCOL.md, "lobby actions").</summary>
-        public bool CanStart => State.Phase == GamePhase.Lobby && State.Players.Count >= Config.Players.Min;
+        /// <summary>Connected seated players: the count the ready start uses (D76).</summary>
+        public int ConnectedPlayers => State.ConnectedPlayerCount();
 
-        /// <summary>Play again in PlayAgain needs players.min seated players (pollDone.canPlayAgain).</summary>
-        public bool CanPlayAgain => State.Phase == GamePhase.PlayAgain && State.Players.Count >= Config.Players.Min;
+        /// <summary>players.min or more players are connected (lobby.enoughPlayers, D76).</summary>
+        public bool EnoughPlayers => ConnectedPlayers >= Config.Players.Min;
 
         /// <summary>
         /// Milliseconds this player has left, for screen.endsInMs: until their personal deadline in Answer, until the

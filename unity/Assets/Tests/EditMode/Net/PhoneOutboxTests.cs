@@ -118,11 +118,10 @@ namespace FamilyQuiz.Tests.NetScreens
             Assert.That(_t.Sender.MessagesTo("c1"), Is.Empty);
         }
 
-        [TestCase(GamePhase.Lobby)]
-        [TestCase(GamePhase.PlayAgain)]
-        public void ConnectionAndRosterChangesInLobbyAndPlayAgainResendEveryScreen(GamePhase phase)
+        [Test]
+        public void ConnectionRosterAndReadyChangesInTheLobbyResendEveryScreen()
         {
-            _t.SetPhase(phase, 1, null);
+            _t.SetPhase(GamePhase.Lobby, 1, null);
             _t.Outbox.OnEvent(new PlayerConnectionChanged("p2", true));
             Assert.That(_t.Sender.MessagesTo("c1", "screen").Count, Is.EqualTo(1));
             Assert.That(_t.Sender.MessagesTo("c3", "screen").Count, Is.EqualTo(1));
@@ -131,6 +130,11 @@ namespace FamilyQuiz.Tests.NetScreens
             _t.Outbox.OnEvent(new RosterChanged());
             Assert.That(_t.Sender.MessagesTo("c1", "screen").Count, Is.EqualTo(1));
             Assert.That(_t.Sender.MessagesTo("c2", "screen").Count, Is.EqualTo(1));
+
+            _t.Sender.Clear();
+            _t.Outbox.OnEvent(new ReadyChanged("p2", true));
+            Assert.That(_t.Sender.MessagesTo("c1", "screen").Count, Is.EqualTo(1));
+            Assert.That(_t.Sender.MessagesTo("c3", "screen").Count, Is.EqualTo(1));
         }
 
         [Test]

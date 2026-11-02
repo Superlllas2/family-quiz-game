@@ -7,7 +7,8 @@ namespace FamilyQuiz.Presentation
 {
     /// <summary>
     /// The Lobby on the TV: room code and QR code (or the relay down text instead), the seated players as character
-    /// chips (dimmed while disconnected), and "Tap Start on any phone" once Start is possible. Only reads state.
+    /// chips (dimmed while disconnected) with a white rim and "Ready" once they tapped Ready (D76), and "Everyone taps
+    /// Ready on their phone" once enough players are connected. Only reads state.
     /// Sizes are for a 1920 x 1080 canvas, large enough to read at 3 m.
     /// </summary>
     public sealed class LobbyView : MonoBehaviour
@@ -15,6 +16,7 @@ namespace FamilyQuiz.Presentation
         private const float QrTargetSize = 480f;
         private const float ChipWidth = 620f;
         private const float ChipHeight = 76f;
+        private const float ReadyWidth = 240f;
 
         private readonly List<CharacterChip> _chips = new List<CharacterChip>();
         private TvContext _context;
@@ -26,7 +28,8 @@ namespace FamilyQuiz.Presentation
         private TextMeshProUGUI _relayDown;
         private TextMeshProUGUI _playersTitle;
         private RectTransform _playerList;
-        private TextMeshProUGUI _tapStart;
+        private readonly List<GameObject> _rows = new List<GameObject>();
+        private TextMeshProUGUI _tapReady;
         private Texture2D _qrTexture;
         private bool _hasRoom;
         private bool _relayIsDown = true;
@@ -47,7 +50,7 @@ namespace FamilyQuiz.Presentation
             _scanToJoin.text = _context.T("tv.lobby.scanToJoin");
             _relayDown.text = _context.T("tv.error.relayDown");
             _playersTitle.text = _context.T("tv.lobby.waiting");
-            _tapStart.text = _context.T("tv.lobby.tapStart");
+            _tapReady.text = _context.T("tv.lobby.tapReady");
         }
 
         public void ShowRoom(string code, string joinUrl)
@@ -70,18 +73,37 @@ namespace FamilyQuiz.Presentation
             _relayDown.gameObject.SetActive(down);
         }
 
-        /// <summary>Rebuilds the player chips from the roster.</summary>
+        /// <summary>Rebuilds the player rows (chip and ready mark) from the roster.</summary>
         public void Refresh()
         {
-            foreach (var chip in _chips) Destroy(chip.gameObject);
+            foreach (var row in _rows) Destroy(row);
+            _rows.Clear();
             _chips.Clear();
             var game = _context.Game;
             if (game == null) return;
             foreach (var player in game.State.Players)
             {
-                var chip = CharacterChip.Create(_playerList, player.PlayerId, 48);
+                var row = UiBuilder.Rect("Row " + player.PlayerId, _playerList);
+                UiBuilder.Size(row, ChipWidth + ReadyWidth, ChipHeight);
+                var rowLayout = row.gameObject.AddComponent<HorizontalLayoutGroup>();
+                rowLayout.spacing = 24;
+                rowLayout.childAlignment = TextAnchor.MiddleLeft;
+                rowLayout.childControlWidth = true;
+                rowLayout.childControlHeight = true;
+                rowLayout.childForceExpandWidth = false;
+                rowLayout.childForceExpandHeight = false;
+
+                var chip = CharacterChip.Create(row, player.PlayerId, 48);
                 UiBuilder.Size(chip, ChipWidth, ChipHeight);
                 chip.Set(player.Name, _context.ChipColor(player.CharacterId), player.Connected);
+                chip.SetLocked(player.Ready);
+
+                var ready = UiBuilder.Text("Ready", row, 48, TvColors.Correct, true, TextAlignmentOptions.Left);
+                ready.textWrappingMode = TextWrappingModes.NoWrap;
+                UiBuilder.Size(ready, ReadyWidth, ChipHeight);
+                ready.text = player.Ready ? _context.T("tv.lobby.ready") : "";
+
+                _rows.Add(row.gameObject);
                 _chips.Add(chip);
             }
 
@@ -91,7 +113,7 @@ namespace FamilyQuiz.Presentation
         public void Tick()
         {
             var game = _context.Game;
-            _tapStart.gameObject.SetActive(game != null && game.CanStart && !_relayIsDown);
+            _tapReady.gameObject.SetActive(game != null && game.EnoughPlayers && !_relayIsDown);
         }
 
         private void OnDestroy()
@@ -157,9 +179,9 @@ namespace FamilyQuiz.Presentation
             listLayout.childForceExpandWidth = false;
             listLayout.childForceExpandHeight = false;
 
-            _tapStart = UiBuilder.Text("TapStart", root, 56, TvColors.Text, true, TextAlignmentOptions.Left);
-            UiBuilder.Anchor(_tapStart.rectTransform, 0.51f, 0.03f, 0.98f, 0.13f);
-            _tapStart.gameObject.SetActive(false);
+            _tapReady = UiBuilder.Text("TapReady", root, 56, TvColors.Text, true, TextAlignmentOptions.Left);
+            UiBuilder.Anchor(_tapReady.rectTransform, 0.51f, 0.03f, 0.98f, 0.13f);
+            _tapReady.gameObject.SetActive(false);
 
             SetRelayDown(true);
         }

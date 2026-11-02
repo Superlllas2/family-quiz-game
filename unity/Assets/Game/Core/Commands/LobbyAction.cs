@@ -1,6 +1,6 @@
 namespace FamilyQuiz.Core.Commands
 {
-    /// <summary>Phone message "lobby": start, cancelStart or playAgain (PROTOCOL.md section 3).</summary>
+    /// <summary>Phone message "lobby": ready or notReady (PROTOCOL.md section 3, D76).</summary>
     public sealed class LobbyAction : IGameCommand
     {
         public LobbyAction(string conn, string inputId, string action)

@@ -82,16 +82,17 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void PicksOnlyInTheLobbyAndPlayAgain()
+        public void PicksOnlyInTheLobbyAlsoAfterAGame()
         {
             var f = new LobbyFixture();
             f.SeatPlayers(2);
-            f.Lobby("c1", LobbyActions.Start);
+            f.ReadyAll();
+            Assert.That(f.State.Phase, Is.EqualTo(FamilyQuiz.Core.State.GamePhase.StartCountdown));
             Assert.That(LobbyFixture.AckOf(f.Send(new PickCharacter("c1", "k1", 9))).Reason, Is.EqualTo(AckReasons.Invalid), "countdown");
             f.Advance(f.CountdownMs);
             Assert.That(LobbyFixture.AckOf(f.Send(new PickCharacter("c1", "k2", 9))).Reason, Is.EqualTo(AckReasons.Invalid), "game");
-            f.RunToPlayAgain();
-            Assert.That(LobbyFixture.AckOf(f.Send(new PickCharacter("c1", "k3", 9))).Ok, Is.True, "PlayAgain");
+            f.RunToLobby();
+            Assert.That(LobbyFixture.AckOf(f.Send(new PickCharacter("c1", "k3", 9))).Ok, Is.True, "back in the Lobby");
             Assert.That(f.State.Players[0].CharacterId, Is.EqualTo(9));
         }
 
@@ -100,7 +101,7 @@ namespace FamilyQuiz.Tests
         {
             var f = new LobbyFixture();
             var seats = f.SeatPlayers(2);
-            f.Lobby("c1", LobbyActions.Start);
+            f.ReadyAll();
             f.Advance(f.CountdownMs);
             Assert.That(seats.All(p => p.CharacterPicked), Is.True);
         }

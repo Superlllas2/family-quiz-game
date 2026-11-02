@@ -68,7 +68,7 @@ namespace FamilyQuiz.Tests
         {
             var f = new LobbyFixture(seed);
             f.SeatPlayers(2);
-            f.Lobby("c1", LobbyActions.Start);
+            f.ReadyAll();
             var seen = new List<string>();
             for (int q = 0; q < f.Config.Rounds.QuestionsPerRound; q++)
             {
@@ -105,7 +105,7 @@ namespace FamilyQuiz.Tests
             var f = new LobbyFixture();
             var rounds = f.Config.Rounds;
             f.SeatPlayers(2);
-            f.Lobby("c1", LobbyActions.Start);
+            f.ReadyAll();
             for (int slot = 0; slot < rounds.QuestionsPerRound; slot++)
             {
                 f.RunUntilPhase(GamePhase.QuestionShow, 3600000, 50);
@@ -126,12 +126,12 @@ namespace FamilyQuiz.Tests
         {
             var f = new LobbyFixture();
             f.SeatPlayers(2);
-            f.Lobby("c1", LobbyActions.Start);
+            f.ReadyAll();
             var first = QuestionsOf(f);
             Assert.That(first.Distinct().Count(), Is.EqualTo(first.Count));
             Assert.That(f.State.SeenQuestionIds, Is.EquivalentTo(first));
 
-            f.Lobby("c1", LobbyActions.PlayAgain);
+            f.ReadyAll();
             var second = QuestionsOf(f);
             Assert.That(second.Intersect(first), Is.Empty, "the bank still has unseen ones, so none repeats");
             Assert.That(f.State.SeenQuestionIds.Count, Is.EqualTo(first.Count + second.Count));
@@ -148,7 +148,7 @@ namespace FamilyQuiz.Tests
                 if (ids.Count == f.State.QuestionCount) break;
             }
 
-            f.RunToPlayAgain();
+            f.RunToLobby();
             return ids;
         }
 

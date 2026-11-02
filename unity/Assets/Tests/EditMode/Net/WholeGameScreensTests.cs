@@ -11,8 +11,8 @@ using NUnit.Framework;
 namespace FamilyQuiz.Tests.NetScreens
 {
     /// <summary>
-    /// The real Core and the real PhoneOutbox together: three phones play a whole game and a Play again, and each
-    /// phone receives the screens of docs/06_phone_screens.md in order.
+    /// The real Core and the real PhoneOutbox together: three phones tap Ready, play a whole game, land back in the
+    /// Lobby and start a second one (D76), and each phone receives the screens of docs/06_phone_screens.md in order.
     /// </summary>
     public sealed class WholeGameScreensTests
     {
@@ -67,13 +67,34 @@ namespace FamilyQuiz.Tests.NetScreens
             Do(_f.Game.Handle(new PickCharacter(conn, _f.NextInputId(), player.CharacterId)));
         }
 
+        private void Ready(string conn)
+        {
+            Do(_f.Game.Handle(new LobbyAction(conn, _f.NextInputId(), LobbyActions.Ready)));
+        }
+
+        private JObject LastScreen(string conn)
+        {
+            return _sender.MessagesTo(conn, "screen").Last();
+        }
+
         [Test]
-        public void ThreePhonesSeeEveryScreenInOrderThroughPlayAgain()
+        public void ThreePhonesSeeEveryScreenInOrderBackToTheLobby()
         {
             JoinAndPick("c1", "Mama", "ru");
             JoinAndPick("c2", "Papa", "en");
             JoinAndPick("c3", "Kid", "ru");
-            Do(_f.Game.Handle(new LobbyAction("c2", _f.NextInputId(), LobbyActions.Start)));
+
+            // Each Ready refreshes every lobby screen with the marks; the last one starts the countdown.
+            Ready("c2");
+            var mamaSees = LastScreen("c1");
+            Assert.That((string)mamaSees["id"], Is.EqualTo("lobby"));
+            Assert.That((bool)mamaSees["data"]["ready"], Is.False);
+            Assert.That(((JArray)mamaSees["data"]["players"]).Select(p => (bool)p["ready"]), Is.EqualTo(new[] { false, true, false }));
+            Assert.That((bool)LastScreen("c2")["data"]["ready"], Is.True);
+            Ready("c1");
+            Assert.That(_f.State.Phase, Is.EqualTo(GamePhase.Lobby));
+            Ready("c3");
+            Assert.That(_f.State.Phase, Is.EqualTo(GamePhase.StartCountdown));
 
             for (int q = 0; q < _f.State.QuestionCount || _f.State.Phase == GamePhase.StartCountdown; q++)
             {
@@ -84,36 +105,41 @@ namespace FamilyQuiz.Tests.NetScreens
                 RunUntil(GamePhase.Reveal);
             }
 
-            RunUntil(GamePhase.PlayAgain);
+            RunUntil(GamePhase.Results);
+            var results = _sender.MessagesTo("c1", "screen").Last(m => (string)m["id"] == "results");
+            RunUntil(GamePhase.Lobby);
 
             var expected = new List<string> { "pickCharacter", "lobby", "countdown" };
             for (int q = 0; q < _f.State.QuestionCount; q++) expected.AddRange(new[] { "getReady", "answerChoice", "waiting", "result" });
-            expected.AddRange(new[] { "results", "pollDone" });
+            expected.AddRange(new[] { "results", "lobby" });
             Assert.That(ScreenIds("c1"), Is.EqualTo(expected), "c1");
             Assert.That(ScreenIds("c2"), Is.EqualTo(expected), "c2");
 
             // c3 never answers: last call after the others locked in, then the result. No waiting screen.
             var c3 = new List<string> { "pickCharacter", "lobby", "countdown" };
             for (int q = 0; q < _f.State.QuestionCount; q++) c3.AddRange(new[] { "getReady", "answerChoice", "result" });
-            c3.AddRange(new[] { "results", "pollDone" });
+            c3.AddRange(new[] { "results", "lobby" });
             Assert.That(ScreenIds("c3"), Is.EqualTo(c3), "c3");
 
             // Texts in each phone's language; c1 always right, so it has the most points.
             var lastResult = _sender.MessagesTo("c2", "screen").Last(m => (string)m["id"] == "result");
             StringAssert.StartsWith("Right answer:", (string)lastResult["data"]["correctText"]);
-            var results = _sender.MessagesTo("c1", "screen").Last(m => (string)m["id"] == "results");
             Assert.That((int)results["data"]["place"], Is.EqualTo(1));
             Assert.That((int)results["data"]["correctCount"], Is.EqualTo(_f.State.QuestionCount));
             Assert.That(((JArray)results["data"]["awards"]).Select(a => (string)a), Is.EqualTo(new[] { "Больше всех верных" }));
-            var pollDone = _sender.MessagesTo("c3", "screen").Last();
-            Assert.That((bool)pollDone["data"]["canPlayAgain"], Is.True);
+            // Back in the Lobby: nobody ready, scores at 0, characters kept.
+            var lobby = LastScreen("c3");
+            Assert.That((bool)lobby["data"]["ready"], Is.False);
+            Assert.That(((JArray)lobby["data"]["players"]).All(p => !(bool)p["ready"]), Is.True);
+            Assert.That((int)_sender.MessagesTo("c1", "player").Last()["player"]["score"], Is.EqualTo(0), "scores reset");
 
-            // Play again from any phone: the countdown, then the first question again.
+            // Everyone taps Ready again: the countdown, then the first question of the second game.
             _sender.Clear();
-            Do(_f.Game.Handle(new LobbyAction("c3", _f.NextInputId(), LobbyActions.PlayAgain)));
+            Ready("c3");
+            Ready("c1");
+            Ready("c2");
             RunUntil(GamePhase.QuestionShow);
-            Assert.That(ScreenIds("c1"), Is.EqualTo(new[] { "countdown", "getReady" }));
-            Assert.That(_sender.MessagesTo("c1", "player").Any(m => (int)m["player"]["score"] == 0), Is.True, "scores reset");
+            Assert.That(ScreenIds("c1"), Is.EqualTo(new[] { "lobby", "countdown", "getReady" }));
         }
 
         [Test]
@@ -121,7 +147,8 @@ namespace FamilyQuiz.Tests.NetScreens
         {
             JoinAndPick("c1", "Mama", "ru");
             JoinAndPick("c2", "Papa", "ru");
-            Do(_f.Game.Handle(new LobbyAction("c1", _f.NextInputId(), LobbyActions.Start)));
+            Ready("c1");
+            Ready("c2");
             RunUntil(GamePhase.Answer);
             long phaseId = _f.State.PhaseId;
             _sender.Clear();

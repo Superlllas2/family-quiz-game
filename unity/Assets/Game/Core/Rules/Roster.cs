@@ -43,7 +43,8 @@ namespace FamilyQuiz.Core.Rules
                 return;
             }
 
-            if (_state.Phase != GamePhase.Lobby)
+            // A join during the start countdown is welcome: the new player is not ready, so the countdown stops (D76).
+            if (_state.Phase != GamePhase.Lobby && _state.Phase != GamePhase.StartCountdown)
             {
                 output.Add(new JoinRefused(cmd.Conn, RefusalReasons.GameStarted));
                 return;

@@ -10,7 +10,8 @@ namespace FamilyQuiz.Tests
 {
     /// <summary>
     /// Headless games on a fake clock with 3 simulated players (fast, normal, slow; docs/13_architecture.md), driving the
-    /// real Game from Start through Results, PlayAgain, Play again and a second game (docs/19_acceptance.md, Day 2).
+    /// real Game from everyone tapping Ready through Results, back to the Lobby, Ready again and a second game
+    /// (docs/19_acceptance.md, Day 2; D76).
     /// </summary>
     public sealed class SimulatedGameTests
     {
@@ -66,16 +67,20 @@ namespace FamilyQuiz.Tests
             foreach (var s in sims) f.Seat(s.Conn, s.Name);
             var run = NewRun(f);
 
-            Record(f, run, f.Lobby("c2", LobbyActions.Start));
+            Record(f, run, f.ReadyAll());
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.StartCountdown));
-            Drive(f, sims, run, GamePhase.PlayAgain);
+            Drive(f, sims, run, GamePhase.Results);
             CheckGame(f, run, 1);
+            Drive(f, sims, run, GamePhase.Lobby);
+            CheckBackInTheLobby(f, run, 1);
 
             run.PointsThisGame.Clear();
-            Record(f, run, f.Lobby("c3", LobbyActions.PlayAgain));
+            Record(f, run, f.ReadyAll());
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.StartCountdown));
-            Drive(f, sims, run, GamePhase.PlayAgain);
+            Drive(f, sims, run, GamePhase.Results);
             CheckGame(f, run, 2);
+            Drive(f, sims, run, GamePhase.Lobby);
+            CheckBackInTheLobby(f, run, 2);
 
             CheckOrder(f, run);
             CheckTiming(f, run);
@@ -158,9 +163,16 @@ namespace FamilyQuiz.Tests
             int most = f.State.Players.Max(p => p.CorrectCount);
             var mostIds = most == 0 ? new List<string>() : f.State.Players.Where(p => p.CorrectCount == most).Select(p => p.PlayerId).ToList();
             Assert.That(f.State.MostCorrectIds, Is.EquivalentTo(mostIds));
+        }
+
+        /// <summary>After Results: the game ended with the Results winner, and everyone is back in the Lobby at 0 (D76).</summary>
+        private static void CheckBackInTheLobby(LobbyFixture f, Run run, int game)
+        {
             var ended = run.Events.OfType<GameEnded>().Last();
             Assert.That(ended.Game, Is.EqualTo(game));
+            Assert.That(ended.Reason, Is.EqualTo(GameEnded.ReasonFinished));
             Assert.That(ended.WinnerId, Is.EqualTo(f.State.WinnerId));
+            Assert.That(f.State.Players.All(p => p.Score == 0 && !p.Ready && p.CharacterPicked), Is.True);
         }
 
         private static void CheckOrder(LobbyFixture f, Run run)
@@ -172,7 +184,7 @@ namespace FamilyQuiz.Tests
                 for (int q = 0; q < f.Config.Rounds.QuestionsPerRound; q++)
                     expected.AddRange(new[] { GamePhase.QuestionShow, GamePhase.Answer, GamePhase.Reveal, GamePhase.Scores });
                 expected.Add(GamePhase.Results);
-                expected.Add(GamePhase.PlayAgain);
+                expected.Add(GamePhase.Lobby);
             }
 
             Assert.That(run.Phases.Select(p => p.Phase), Is.EqualTo(expected));
@@ -249,8 +261,8 @@ namespace FamilyQuiz.Tests
             };
             foreach (var s in sims) f.Seat(s.Conn, s.Name);
             var run = NewRun(f);
-            Record(f, run, f.Lobby("c1", LobbyActions.Start));
-            Drive(f, sims, run, GamePhase.PlayAgain);
+            Record(f, run, f.ReadyAll());
+            Drive(f, sims, run, GamePhase.Results);
 
             var answers = run.Phases.Where(p => p.Phase == GamePhase.Answer).ToList();
             Assert.That(answers.Count, Is.EqualTo(f.Config.Rounds.QuestionsPerRound));

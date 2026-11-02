@@ -213,7 +213,7 @@ namespace FamilyQuiz.Tests
             var f = new LobbyFixture();
             var seats = f.SeatPlayers(2);
             f.Send(new ChangeSettings("c2", null, f.Config.Players.TimerMultiplierOptions.Max()));
-            f.Lobby("c1", LobbyActions.Start);
+            f.ReadyAll();
             f.Advance(f.CountdownMs);
             f.Advance(f.QuestionShowMs);
             Assert.That(seats[1].Turn.WindowMs, Is.GreaterThan(seats[0].Turn.WindowMs));

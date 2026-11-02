@@ -8,5 +8,6 @@ namespace FamilyQuiz.Net.Protocol
         [JsonProperty("playerId")] public string PlayerId { get; set; }
         [JsonProperty("name")] public string Name { get; set; }
         [JsonProperty("characterId")] public int CharacterId { get; set; }
+        [JsonProperty("ready")] public bool Ready { get; set; }
     }
 }

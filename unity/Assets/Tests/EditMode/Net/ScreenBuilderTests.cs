@@ -21,23 +21,33 @@ namespace FamilyQuiz.Tests.NetScreens
         private PlayerState Kid => _t.State.FindById("p3");
 
         [Test]
-        public void LobbyAfterThePickListsThePlayersAndCanStart()
+        public void LobbyAfterThePickListsThePlayersWithTheirReadyMarks()
         {
+            Papa.Ready = true;
             AssertJson(@"{'v':1,'type':'screen','phaseId':1,'id':'lobby','endsInMs':null,'data':{'players':[
-                {'playerId':'p1','name':'Mama','characterId':0},
-                {'playerId':'p2','name':'Papa','characterId':1},
-                {'playerId':'p3','name':'Kid','characterId':2}],'canStart':true}}",
+                {'playerId':'p1','name':'Mama','characterId':0,'ready':false},
+                {'playerId':'p2','name':'Papa','characterId':1,'ready':true},
+                {'playerId':'p3','name':'Kid','characterId':2,'ready':false}],'ready':false,'enoughPlayers':true}}",
                 ScreenMessage(_t.Screens.CurrentScreen(Mama)));
+            Assert.That((bool)ScreenMessage(_t.Screens.CurrentScreen(Papa))["data"]["ready"], Is.True, "ready is this player's own mark");
         }
 
         [Test]
-        public void LobbyCannotStartWithOnePlayer()
+        public void LobbyWithOneConnectedPlayerIsNotEnough()
         {
             var t = new NetTestGame();
             var solo = t.AddPlayer("p1", "Mama", "ru", 0, "c1");
             AssertJson(@"{'v':1,'type':'screen','phaseId':1,'id':'lobby','endsInMs':null,'data':{'players':[
-                {'playerId':'p1','name':'Mama','characterId':0}],'canStart':false}}",
+                {'playerId':'p1','name':'Mama','characterId':0,'ready':false}],'ready':false,'enoughPlayers':false}}",
                 ScreenMessage(t.Screens.CurrentScreen(solo)));
+        }
+
+        [Test]
+        public void EnoughPlayersCountsOnlyConnectedPlayers()
+        {
+            Papa.Connected = false;
+            Kid.Connected = false;
+            Assert.That((bool)ScreenMessage(_t.Screens.CurrentScreen(Mama))["data"]["enoughPlayers"], Is.False);
         }
 
         [Test]
@@ -202,23 +212,6 @@ namespace FamilyQuiz.Tests.NetScreens
                 ScreenMessage(_t.Screens.CurrentScreen(Mama)));
             AssertJson("{'place':1,'correctCount':3,'awards':['Most correct']}", ScreenMessage(_t.Screens.CurrentScreen(Papa))["data"]);
             AssertJson("{'place':3,'correctCount':1,'awards':[]}", ScreenMessage(_t.Screens.CurrentScreen(Kid))["data"]);
-        }
-
-        [Test]
-        public void PlayAgainShowsPollDone()
-        {
-            _t.SetPhase(GamePhase.PlayAgain, 10, null);
-            AssertJson("{'v':1,'type':'screen','phaseId':10,'id':'pollDone','endsInMs':null,'data':{'canPlayAgain':true}}",
-                ScreenMessage(_t.Screens.CurrentScreen(Mama)));
-        }
-
-        [Test]
-        public void PlayAgainNeedsTwoPlayers()
-        {
-            var t = new NetTestGame();
-            var solo = t.AddPlayer("p1", "Mama", "ru", 0, "c1");
-            t.SetPhase(GamePhase.PlayAgain, 10, null);
-            AssertJson("{'canPlayAgain':false}", ScreenMessage(t.Screens.CurrentScreen(solo))["data"]);
         }
 
         [Test]
