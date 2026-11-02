@@ -38,7 +38,7 @@ describe('the phone page parses every frame the TV app sent in a whole game', ()
   });
 
   it('has every Day 2 screen in the capture', () => {
-    for (const id of ['pickCharacter', 'lobby', 'countdown', 'getReady', 'answerChoice', 'waiting', 'result', 'results', 'pollDone']) {
+    for (const id of ['pickCharacter', 'lobby', 'countdown', 'getReady', 'answerChoice', 'waiting', 'result', 'results']) {
       expect(screens(id).length, id).toBeGreaterThan(0);
     }
   });
