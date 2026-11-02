@@ -43,6 +43,7 @@ const deps: AppDeps = {
     return () => inputListeners.delete(listener);
   },
   clock: new AnswerClock(now),
+  now,
   initialRoom: launch.room,
   initialLang: loadLang(store),
   saveLang: (lang) => saveLang(store, lang),

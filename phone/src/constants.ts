@@ -15,3 +15,9 @@ export const NO_CONNECTION_MS = 3000;
 
 /** `ping` every 5 s (PROTOCOL.md section 3). */
 export const PING_INTERVAL_MS = 5000;
+
+/** "More time" choices in settings: `timerMultiplier` is 1, 1.5 or 2 (PROTOCOL.md section 3, `settings`). */
+export const TIMER_MULTIPLIERS: readonly number[] = [1, 1.5, 2];
+
+/** How often a countdown on screen redraws. Display only; the TV app owns time (PROTOCOL.md section 6). */
+export const COUNTDOWN_TICK_MS = 100;

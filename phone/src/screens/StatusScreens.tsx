@@ -1,4 +1,4 @@
-// Screens `reconnecting` and `error` (06), plus a neutral screen for screen ids this build does not draw yet.
+// Screens `reconnecting` and `error` (06) driven by the connection, outside a game screen (no top bar).
 
 import { t, type TextKey } from '../i18n';
 import type { ErrorReason } from '../net/session';
@@ -33,14 +33,6 @@ export function ErrorScreen(props: { lang: Lang; reason: ErrorReason; onBack(): 
       <PressButton class="primary big" onClick={props.onBack}>
         {t(props.lang, 'error.back')}
       </PressButton>
-    </div>
-  );
-}
-
-export function WatchTvScreen(props: { lang: Lang }) {
-  return (
-    <div class="screen center">
-      <p class="big-text">{t(props.lang, 'screen.watchTv')}</p>
     </div>
   );
 }

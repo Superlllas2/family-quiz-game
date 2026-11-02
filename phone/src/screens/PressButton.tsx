@@ -11,6 +11,7 @@ interface Props {
   disabled?: boolean;
   type?: 'button' | 'submit';
   ariaPressed?: boolean;
+  ariaLabel?: string;
   onPress?: () => void;
   onClick?: () => void;
   children: ComponentChildren;
@@ -33,6 +34,7 @@ export function PressButton(props: Props) {
       style={props.style}
       disabled={props.disabled}
       aria-pressed={props.ariaPressed}
+      aria-label={props.ariaLabel}
       onPointerDown={down}
       onPointerUp={release}
       onPointerCancel={release}
