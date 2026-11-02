@@ -52,21 +52,59 @@ export function safeStore(get: () => KeyValueStore | undefined): KeyValueStore {
   };
 }
 
+/** Per tab key (sessionStorage) for a token this tab gave up after close code 4002. */
+export function forgottenKey(room: string, tab: string | null): string {
+  return `fq.forgotten.${room}${tab ? `.${tab}` : ''}`;
+}
+
+function memoryKeyValueStore(): KeyValueStore {
+  const data = new Map<string, string>();
+  return {
+    getItem: (k) => data.get(k) ?? null,
+    setItem: (k, v) => void data.set(k, v),
+    removeItem: (k) => void data.delete(k),
+  };
+}
+
+/**
+ * The seat token per room. `store` is shared by every tab of the browser (localStorage); `tabStore`
+ * belongs to this tab only (sessionStorage, kept across reloads of the tab).
+ */
 export class TokenStore {
-  constructor(private readonly store: KeyValueStore, private readonly tab: string | null) {}
+  constructor(
+    private readonly store: KeyValueStore,
+    private readonly tab: string | null,
+    private readonly tabStore: KeyValueStore = memoryKeyValueStore(),
+  ) {}
 
   get(room: string): string | null {
     if (!room) return null;
     const token = this.store.getItem(tokenKey(room, this.tab));
-    return token ? token : null;
+    if (!token) return null;
+    // A token this tab gave up (4002) now belongs to the newer tab: this tab must not use it.
+    return token === this.tabStore.getItem(forgottenKey(room, this.tab)) ? null : token;
   }
 
   set(room: string, token: string): void {
-    if (room) this.store.setItem(tokenKey(room, this.tab), token);
+    if (!room) return;
+    this.store.setItem(tokenKey(room, this.tab), token);
+    this.tabStore.removeItem(forgottenKey(room, this.tab));
   }
 
   remove(room: string): void {
-    if (room) this.store.removeItem(tokenKey(room, this.tab));
+    if (!room) return;
+    this.store.removeItem(tokenKey(room, this.tab));
+    this.tabStore.removeItem(forgottenKey(room, this.tab));
+  }
+
+  /**
+   * Close code 4002: another tab took this seat. This tab forgets the token without deleting it from the
+   * shared store, because the newer tab holds the same token and still needs it.
+   */
+  forget(room: string): void {
+    if (!room) return;
+    const token = this.store.getItem(tokenKey(room, this.tab));
+    if (token) this.tabStore.setItem(forgottenKey(room, this.tab), token);
   }
 }
 

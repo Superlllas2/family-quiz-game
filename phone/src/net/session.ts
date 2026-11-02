@@ -7,7 +7,8 @@
 //   open a socket if needed and send `rejoin`. While disconnected: status `reconnecting`, retry every 2 s.
 //   A `rejoin` with no `welcome` or `refused` within 2 s counts as a lost connection (the socket is replaced).
 // - `tvAway`: status `reconnecting`, keep the socket, wait for `tvBack`.
-// - Close code 4002: error `otherTab`, and no reconnect of any kind until back().
+// - Close code 4002: error `otherTab`, no reconnect of any kind, and this tab forgets the seat token
+//   (without deleting it for the newer tab); Back leads to a fresh join.
 // - Close code 4004: with a token, a lost connection (the TV may be restarting); without one, error `roomNotFound`.
 // - `refused` `badToken`: delete the token, show join. Other reasons: error screen until back().
 
@@ -244,6 +245,8 @@ export class Session {
 
     if (code === CLOSE_OTHER_TAB) {
       this.blocked = true;
+      // The newer tab holds this seat now; this tab forgets it, so Back leads to a fresh join (decision D67).
+      this.deps.tokens.forget(this.room);
       this.pendingJoin = null;
       this.clearTimer('joinTimer');
       this.clearTimer('retryTimer');

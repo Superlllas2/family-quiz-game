@@ -40,6 +40,21 @@ describe('token key (PROTOCOL.md section 4)', () => {
   });
 });
 
+describe('forgetting a seat after 4002 (D67)', () => {
+  it('hides the token from this tab only, also after a reload, until a new token is stored', () => {
+    const shared = memoryStore();
+    const oldTab = memoryStore();
+    const old = new TokenStore(shared, null, oldTab);
+    old.set('ABCD', 'tok1');
+    old.forget('ABCD');
+    expect(old.get('ABCD')).toBeNull();
+    expect(new TokenStore(shared, null, oldTab).get('ABCD')).toBeNull(); // the old tab reloaded
+    expect(new TokenStore(shared, null, memoryStore()).get('ABCD')).toBe('tok1'); // the newer tab
+    old.set('ABCD', 'tok2');
+    expect(old.get('ABCD')).toBe('tok2');
+  });
+});
+
 describe('storage fallbacks', () => {
   it('falls back to memory when storage throws', () => {
     const s = safeStore(() => {

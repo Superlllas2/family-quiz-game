@@ -2,7 +2,7 @@
 
 Snapshot from Nov 1, 2026 of the live doc at https://claude.ai/artifact/UQA5Hd1S8UzTiAANuSngNJ. **This repo copy holds the current status** (updated Nov 2, 2026 for game night 1).
 
-**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`. Decisions from the spec review are in `docs/decisions/0002_spec_review.md`; the staging concept is in `docs/decisions/0004_staging.md` and `0005_staging_answers.md`; the art direction is in `0006_art_direction.md`; TV text and the TV font are in `0007_tv_text_and_font.md`.
+**Game night 1:** the documents needed for the technical prototype are done. "Later" means not needed before game night 1. Daily build prompts are in `docs/prompts/`. Decisions from the spec review are in `docs/decisions/0002_spec_review.md`; the staging concept is in `docs/decisions/0004_staging.md` and `0005_staging_answers.md`; the art direction is in `0006_art_direction.md`; TV text and the TV font are in `0007_tv_text_and_font.md`; the answers after the Day 1 build are in `0008_day1_answers.md`.
 
 ## How to use this kit
 

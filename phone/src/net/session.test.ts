@@ -62,8 +62,11 @@ describe('session: connection and reconnects (PROTOCOL.md sections 2, 4, 5)', ()
   const lastSocket = () => sockets[sockets.length - 1];
   const status = () => session.status;
 
+  let sharedStore: KeyValueStore;
+
   function makeSession(tab: string | null = null): Session {
-    tokens = new TokenStore(memoryStore(), tab);
+    sharedStore = memoryStore();
+    tokens = new TokenStore(sharedStore, tab, memoryStore());
     const s = new Session({
       createSocket: (url) => {
         const sock = new FakeSocket(url);
@@ -222,11 +225,28 @@ describe('session: connection and reconnects (PROTOCOL.md sections 2, 4, 5)', ()
     session.join('ABCD', 'Mama', 'ru');
     expect(sockets).toHaveLength(1);
     expect(status()).toEqual({ kind: 'error', reason: 'otherTab' });
-    // The token stays: the other tab legitimately holds the seat.
-    expect(tokens.get('ABCD')).toBe('tok123');
+    // This tab forgets the seat (D67); the shared store keeps it for the newer tab.
+    expect(tokens.get('ABCD')).toBeNull();
+    expect(sharedStore.getItem('fq.token.ABCD')).toBe('tok123');
     session.back();
     expect(status()).toEqual({ kind: 'join', problem: null });
     expect(sockets).toHaveLength(1); // Back alone does not reconnect
+  });
+
+  it('after 4002 and Back, nothing rejoins the old seat; a fresh join gets a new one', () => {
+    joinAndWelcome();
+    lastSocket().serverClose(4002);
+    session.back();
+    session.onVisible();
+    session.resume('tvBack');
+    vi.advanceTimersByTime(10000);
+    expect(sockets).toHaveLength(1);
+    session.join('ABCD', 'Mama2', 'ru');
+    const sock = lastSocket();
+    sock.open();
+    expect(sock.types()).toEqual(['join']);
+    sock.receive({ type: 'welcome', playerId: 'p2', token: 'tok456', room: 'ABCD' });
+    expect(tokens.get('ABCD')).toBe('tok456');
   });
 
   it('close code 4004 with a token: reconnecting, retry every 2 s', () => {

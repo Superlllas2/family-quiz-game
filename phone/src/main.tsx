@@ -22,7 +22,7 @@ const timers = globalTimers(now);
 const session = new Session({
   createSocket: (url) => new WebSocket(url) as unknown as SocketLike,
   urlFor: (room) => socketUrl(location, room, import.meta.env.VITE_RELAY_HOST as string | undefined),
-  tokens: new TokenStore(store, launch.tab),
+  tokens: new TokenStore(store, launch.tab, safeStore(() => window.sessionStorage)),
   timers,
   log,
 });

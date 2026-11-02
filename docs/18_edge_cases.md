@@ -34,7 +34,7 @@ Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `deci
 | Fewer than 3 unused topics have 4 unseen questions | Fill the doors with the other unused topics that have the most unseen questions, then with topics chosen earlier in this game; the mixed door is always door 4 (test) |
 | Race statements run out of unseen ones | Seen statements, picked with the seeded random generator (test) |
 | The laptop loses internet | TV shows "Нет соединения с сервером / Lost connection to the server" and pauses the core clock; reconnects every `net.tvReconnectSeconds` (2 s) with the same room code and secret. The relay sends phones `tvAway` (they show reconnecting) and `tvBack` on return (they rejoin). Phone messages sent meanwhile are dropped |
-| The relay is down at start | Lobby shows the error and a Retry button; no room code shown |
+| The relay is down at start | Lobby shows the error and reconnects on its own every `net.tvReconnectSeconds` (no Retry button, D72); no room code shown |
 | A phone sends more than 20 messages per second | The relay drops the extra messages; the socket stays open (test) |
 | Config or content file is broken | The app shows the validation errors at startup and does not start a game |
 | App closed by accident mid game | Not recovered in game night 1; seen questions are kept on disk |
