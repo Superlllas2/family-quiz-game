@@ -7,6 +7,7 @@ using FamilyQuiz.Core.Commands;
 using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.Events;
 using FamilyQuiz.DevTools;
+using FamilyQuiz.Dialogue;
 using FamilyQuiz.Net;
 using FamilyQuiz.Presentation;
 using FamilyQuiz.Telemetry;
@@ -41,6 +42,7 @@ namespace FamilyQuiz.Bootstrap
         private RelayEndpoint _endpoint;
         private ProtocolRouter _router;
         private PhoneOutbox _outbox;
+        private HostDialogue _dialogue;
         private string _loggedRoomCode;
         private bool _sessionLogged;
 
@@ -84,7 +86,13 @@ namespace FamilyQuiz.Bootstrap
             _game = new Game(content, _clock, _random, () => _random.Next(int.MaxValue), seenQuestions, seenRace, seenFacts);
             _seen.Attach(_game);
             _telemetry = new TelemetryListener(_game, _eventLog);
+            // Host lines (docs/15_schemas.md, "Selection"): the bags survive across evenings in host_bags.json.
+            var bags = new HostBagFile(Path.Combine(Application.persistentDataPath, HostBagFile.FileName),
+                message => TvLog.Error("Host bags: " + message));
+            _dialogue = new HostDialogue(content, _clock, seed => new SeededRandom(seed), bags, _random.Next(int.MaxValue));
             _view.Attach(_game); // before Start(): the presenter ignores events until it has a game
+            // The TV settings panel sends commands like any other input (docs/13_architecture.md).
+            _view.SetCommandSink(cmd => Dispatch(_game.Handle(cmd)));
             _debug = DebugOverlay.Create(_game);
 
             _endpoint = LoadEndpoint();
@@ -121,6 +129,7 @@ namespace FamilyQuiz.Bootstrap
             }
 
             Dispatch(_game.Tick());
+            if (_dialogue != null) Speak(_dialogue.Tick());
         }
 
         private void OnDestroy()
@@ -191,7 +200,19 @@ namespace FamilyQuiz.Bootstrap
             _view.OnEvents(events);
             _debug?.OnEvents(events);
             _telemetry?.OnEvents(events);
+            if (_dialogue != null) Speak(_dialogue.OnEvents(events));
             foreach (var e in events) LogEvent(e);
+        }
+
+        /// <summary>Lines the hosts start saying now: a bubble on the TV and a hostLine log line.</summary>
+        private void Speak(IReadOnlyList<SpokenLine> lines)
+        {
+            foreach (var line in lines)
+            {
+                _view.ShowHostLine(line.Host, line.Text, line.EndMs);
+                _telemetry?.HostLine(line.LineId, line.Host, line.Trigger);
+                TvLog.Info("host " + line.Host + " (" + line.Trigger + "): " + line.Text(_game.State.GameLanguage));
+            }
         }
 
         private static void LogEvent(IGameEvent e)

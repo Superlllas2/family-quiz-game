@@ -6,7 +6,8 @@
         "FamilyQuiz.Net",
         "FamilyQuiz.Presentation",
         "FamilyQuiz.Telemetry",
-        "FamilyQuiz.DevTools"
+        "FamilyQuiz.DevTools",
+        "FamilyQuiz.Dialogue"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
