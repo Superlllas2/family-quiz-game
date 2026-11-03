@@ -1,4 +1,5 @@
 using System;
+using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.State;
 using TMPro;
 using UnityEngine;
@@ -8,7 +9,9 @@ namespace FamilyQuiz.Presentation
     /// <summary>
     /// One question cycle on the TV (docs/02_show_flow.md): QuestionShow (question and read time bar), Answer
     /// (question, 2x2 options, countdown, chips that pop on lock in, never what anyone chose) and Reveal (the correct
-    /// tile grows green, the others fade, each chip shows its points). Reads GameState; changes nothing.
+    /// tile grows green, the others fade, each chip shows its points). A closest value question (docs/04_formats.md)
+    /// shows its range and unit instead of the options, and on Reveal the number line with every guess and the flag.
+    /// Reads GameState; changes nothing.
     /// </summary>
     public sealed class QuestionView : MonoBehaviour
     {
@@ -24,6 +27,9 @@ namespace FamilyQuiz.Presentation
         private TextMeshProUGUI _answered;
         private TimerBar _bar;
         private RectTransform _tilesRoot;
+        private TextMeshProUGUI _range;
+        private TextMeshProUGUI _unit;
+        private ValueLine _valueLine;
         private ChipRow _chips;
         private GamePhase _mode;
         private long _answerSpanMs;
@@ -47,15 +53,18 @@ namespace FamilyQuiz.Presentation
             var question = state.Question;
             var lang = _context.Lang;
             _number.text = question != null
-                ? _context.Format("tv.question.number", "number", question.Number.ToString(), "total", state.QuestionCount.ToString())
+                ? _context.Format("tv.question.number", "number", (question.Slot + 1).ToString(), "total", state.QuestionCount.ToString())
                 : string.Empty;
             _question.text = question != null ? question.Def.Text.Get(lang) : string.Empty;
 
             bool show = phase == GamePhase.QuestionShow;
             bool answer = phase == GamePhase.Answer;
             bool reveal = phase == GamePhase.Reveal;
+            bool closest = question != null && question.IsClosestValue;
             LayoutQuestion(show);
-            _tilesRoot.gameObject.SetActive(!show);
+            _tilesRoot.gameObject.SetActive(!show && !closest);
+            ShowRange(question, closest && !reveal, show);
+            _valueLine.gameObject.SetActive(closest && reveal);
             _chips.gameObject.SetActive(!show);
             _bar.SetVisible(show || answer);
             _seconds.gameObject.SetActive(answer);
@@ -74,7 +83,7 @@ namespace FamilyQuiz.Presentation
             if (show || answer)
             {
                 _revealApplied = false;
-                _answerSpanMs = answer ? AnswerSpan(state) : 0;
+                _answerSpanMs = answer ? AnswerClock.Span(state) : 0;
                 foreach (var chip in _chips.Chips) chip.SetCaption(null, TvColors.Text);
             }
 
@@ -95,6 +104,8 @@ namespace FamilyQuiz.Presentation
                 chip.SetLocked(_mode == GamePhase.Answer && player.Turn != null && player.Turn.Locked);
                 if (_mode == GamePhase.Reveal) SetResultCaption(chip, player);
             }
+
+            if (_mode == GamePhase.Reveal && _revealApplied && IsClosestValue()) _valueLine.Show(state, false);
         }
 
         public void OnAnswerLocked(string playerId)
@@ -126,28 +137,24 @@ namespace FamilyQuiz.Presentation
             }
 
             if (_mode != GamePhase.Answer) return;
-            long left = Math.Max(0, LatestOpenDeadline(state, now) - now);
+            long left = Math.Max(0, AnswerClock.LatestOpenDeadline(state, now) - now);
             bool lastCall = left <= (long)(game.Config.Timers.LastCall * 1000);
             _bar.Set(_answerSpanMs > 0 ? (float)left / _answerSpanMs : 0f, lastCall ? TvColors.Error : TvColors.Text);
             _seconds.text = ((left + 999) / 1000).ToString();
             _seconds.color = lastCall ? TvColors.Error : TvColors.Text;
 
-            int locked = 0;
-            int total = 0;
-            foreach (var p in state.Players)
-            {
-                if (p.Turn == null) continue;
-                // Answered of those the phase waits for: connected players, plus anyone who locked in before leaving.
-                if (p.Turn.Locked) locked++;
-                if (p.Turn.Locked || p.Connected) total++;
-            }
-
+            AnswerClock.Count(state, out int locked, out int total);
             _answered.text = _context.Format("tv.question.answered", "count", locked.ToString(), "total", total.ToString());
         }
 
         private void ApplyReveal(int correct)
         {
-            for (int i = 0; i < OptionCount; i++) _tiles[i].Reveal(i == correct);
+            bool closest = IsClosestValue();
+            if (!closest)
+            {
+                for (int i = 0; i < OptionCount; i++) _tiles[i].Reveal(i == correct);
+            }
+
             if (_revealApplied) return;
             _revealApplied = true;
             var state = _context.Game.State;
@@ -156,7 +163,41 @@ namespace FamilyQuiz.Presentation
                 var turn = state.Players[i].Turn;
                 _chips.Chips[i].SetLocked(false);
                 SetResultCaption(_chips.Chips[i], state.Players[i]);
-                if (turn != null && turn.Correct) _chips.Chips[i].Pop();
+                if (turn != null && (turn.Correct || turn.Closest)) _chips.Chips[i].Pop();
+            }
+
+            if (closest) _valueLine.Show(state, true);
+        }
+
+        private bool IsClosestValue()
+        {
+            var question = _context.Game.State.Question;
+            return question != null && question.IsClosestValue;
+        }
+
+        /// <summary>
+        /// A closest value question's range ("from 1800 to 2000") and unit, under the question: below the read time bar
+        /// in QuestionShow, where the options would be in Answer.
+        /// </summary>
+        private void ShowRange(QuestionInPlay question, bool visible, bool centered)
+        {
+            var range = question?.Def.Range;
+            visible = visible && range != null && range.Length > 1;
+            _range.gameObject.SetActive(visible);
+            string unit = visible && question.Def.Unit != null ? question.Def.Unit.Get(_context.Lang) : string.Empty;
+            _unit.gameObject.SetActive(visible && !string.IsNullOrEmpty(unit));
+            if (!visible) return;
+            _range.text = _context.Format("tv.closestValue.range", "min", NumberText.Format(range[0]), "max", NumberText.Format(range[1]));
+            _unit.text = unit;
+            if (centered)
+            {
+                UiBuilder.Anchor(_range.rectTransform, 0.06f, 0.17f, 0.94f, 0.27f);
+                UiBuilder.Anchor(_unit.rectTransform, 0.06f, 0.1f, 0.94f, 0.17f);
+            }
+            else
+            {
+                UiBuilder.Anchor(_range.rectTransform, 0.06f, 0.42f, 0.94f, 0.58f);
+                UiBuilder.Anchor(_unit.rectTransform, 0.06f, 0.32f, 0.94f, 0.42f);
             }
         }
 
@@ -165,38 +206,10 @@ namespace FamilyQuiz.Presentation
             var turn = player.Turn;
             if (turn == null || !turn.Locked)
                 chip.SetCaption(_context.T("tv.reveal.noAnswer"), TvColors.DimText);
-            else if (turn.Correct)
+            else if (turn.Correct || turn.Points > 0) // a closest guess scores its bonus even when it is not "correct"
                 chip.SetCaption(_context.Format("tv.reveal.points", "points", turn.Points.ToString()), TvColors.Correct);
             else
                 chip.SetCaption(_context.T("tv.reveal.wrong"), TvColors.DimText);
-        }
-
-        /// <summary>From the options appearing to the latest personal deadline (last call only moves deadlines earlier).</summary>
-        private static long AnswerSpan(GameState state)
-        {
-            var question = state.Question;
-            long start = question != null ? question.AnswerStartedAtMs : state.PhaseStartedAtMs;
-            long latest = long.MinValue;
-            foreach (var p in state.Players)
-            {
-                if (p.Turn != null) latest = Math.Max(latest, p.Turn.DeadlineMs);
-            }
-
-            long span = latest == long.MinValue ? 0 : latest - start;
-            if (span <= 0 && question != null) span = question.BaseWindowMs;
-            return Math.Max(1, span);
-        }
-
-        /// <summary>The latest deadline among players the phase still waits for; now when nobody is left.</summary>
-        private static long LatestOpenDeadline(GameState state, long now)
-        {
-            long latest = now;
-            foreach (var p in state.Players)
-            {
-                if (p.Connected && p.Turn != null && !p.Turn.Locked) latest = Math.Max(latest, p.Turn.DeadlineMs);
-            }
-
-            return latest;
         }
 
         private void LayoutQuestion(bool centered)
@@ -250,6 +263,19 @@ namespace FamilyQuiz.Presentation
                 tile.offsetMin = new Vector2(column == 1 ? TileGap / 2 : 0, row == 0 ? TileGap / 2 : 0);
                 tile.offsetMax = new Vector2(column == 0 ? -TileGap / 2 : 0, row == 1 ? -TileGap / 2 : 0);
             }
+
+            _range = UiBuilder.Text("Range", root, 96, TvColors.Text, true, TextAlignmentOptions.Center);
+            _range.textWrappingMode = TextWrappingModes.NoWrap;
+            _range.enableAutoSizing = true;
+            _range.fontSizeMin = 64;
+            _range.fontSizeMax = 96;
+            _unit = UiBuilder.Text("Unit", root, 64, TvColors.DimText, true, TextAlignmentOptions.Center);
+            _unit.textWrappingMode = TextWrappingModes.NoWrap;
+
+            _valueLine = ValueLine.Create(root, _context);
+            // Over the options' place, up to the question; the chip row with every player's result stays below.
+            UiBuilder.Anchor(_valueLine.Rect, 0.03f, 0.13f, 0.97f, 0.64f);
+            _valueLine.gameObject.SetActive(false);
 
             _answered = UiBuilder.Text("Answered", root, 44, TvColors.DimText, false, TextAlignmentOptions.Center);
             UiBuilder.Anchor(_answered.rectTransform, 0.04f, 0.185f, 0.96f, 0.25f);

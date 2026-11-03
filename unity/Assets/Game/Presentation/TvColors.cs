@@ -23,6 +23,12 @@ namespace FamilyQuiz.Presentation
         /// <summary>The correct tile on Reveal and the "+points" captions. Brighter than answer D's green so it reads as "right".</summary>
         public static readonly Color Correct = new Color32(0x3D, 0xF5, 0x86, 0xFF);
 
+        /// <summary>The crown on the closest chip of a closest value reveal, and the round winners' names.</summary>
+        public static readonly Color Crown = new Color32(0xF5, 0xC5, 0x18, 0xFF);
+
+        /// <summary>The finish cell of the race track.</summary>
+        public static readonly Color Finish = new Color32(0x2E, 0x5E, 0x45, 0xFF);
+
         /// <summary>Answer tile colors A to D (docs/06_phone_screens.md).</summary>
         private static readonly Color[] AnswerColors =
         {
