@@ -74,7 +74,7 @@ namespace FamilyQuiz.Presentation
             if (show || answer)
             {
                 _revealApplied = false;
-                _answerSpanMs = answer ? AnswerSpan(state) : 0;
+                _answerSpanMs = answer ? AnswerClock.Span(state) : 0;
                 foreach (var chip in _chips.Chips) chip.SetCaption(null, TvColors.Text);
             }
 
@@ -126,22 +126,13 @@ namespace FamilyQuiz.Presentation
             }
 
             if (_mode != GamePhase.Answer) return;
-            long left = Math.Max(0, LatestOpenDeadline(state, now) - now);
+            long left = Math.Max(0, AnswerClock.LatestOpenDeadline(state, now) - now);
             bool lastCall = left <= (long)(game.Config.Timers.LastCall * 1000);
             _bar.Set(_answerSpanMs > 0 ? (float)left / _answerSpanMs : 0f, lastCall ? TvColors.Error : TvColors.Text);
             _seconds.text = ((left + 999) / 1000).ToString();
             _seconds.color = lastCall ? TvColors.Error : TvColors.Text;
 
-            int locked = 0;
-            int total = 0;
-            foreach (var p in state.Players)
-            {
-                if (p.Turn == null) continue;
-                // Answered of those the phase waits for: connected players, plus anyone who locked in before leaving.
-                if (p.Turn.Locked) locked++;
-                if (p.Turn.Locked || p.Connected) total++;
-            }
-
+            AnswerClock.Count(state, out int locked, out int total);
             _answered.text = _context.Format("tv.question.answered", "count", locked.ToString(), "total", total.ToString());
         }
 
@@ -169,34 +160,6 @@ namespace FamilyQuiz.Presentation
                 chip.SetCaption(_context.Format("tv.reveal.points", "points", turn.Points.ToString()), TvColors.Correct);
             else
                 chip.SetCaption(_context.T("tv.reveal.wrong"), TvColors.DimText);
-        }
-
-        /// <summary>From the options appearing to the latest personal deadline (last call only moves deadlines earlier).</summary>
-        private static long AnswerSpan(GameState state)
-        {
-            var question = state.Question;
-            long start = question != null ? question.AnswerStartedAtMs : state.PhaseStartedAtMs;
-            long latest = long.MinValue;
-            foreach (var p in state.Players)
-            {
-                if (p.Turn != null) latest = Math.Max(latest, p.Turn.DeadlineMs);
-            }
-
-            long span = latest == long.MinValue ? 0 : latest - start;
-            if (span <= 0 && question != null) span = question.BaseWindowMs;
-            return Math.Max(1, span);
-        }
-
-        /// <summary>The latest deadline among players the phase still waits for; now when nobody is left.</summary>
-        private static long LatestOpenDeadline(GameState state, long now)
-        {
-            long latest = now;
-            foreach (var p in state.Players)
-            {
-                if (p.Connected && p.Turn != null && !p.Turn.Locked) latest = Math.Max(latest, p.Turn.DeadlineMs);
-            }
-
-            return latest;
         }
 
         private void LayoutQuestion(bool centered)
