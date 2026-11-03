@@ -6,13 +6,11 @@ namespace FamilyQuiz.Net.Protocol
         public const string Lobby = "lobby";
         public const string PickCharacter = "pickCharacter";
         public const string Countdown = "countdown";
-        public const string GetReady = "getReady";
+        public const string Watch = "watch";
         public const string TopicVote = "topicVote";
         public const string AnswerChoice = "answerChoice";
         public const string AnswerSlider = "answerSlider";
         public const string AnswerTrueFalse = "answerTrueFalse";
-        public const string RoundEnd = "roundEnd";
-        public const string RaceResult = "raceResult";
         public const string Waiting = "waiting";
         public const string Result = "result";
         public const string Results = "results";

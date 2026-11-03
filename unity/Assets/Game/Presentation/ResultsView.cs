@@ -6,19 +6,18 @@ using UnityEngine;
 namespace FamilyQuiz.Presentation
 {
     /// <summary>
-    /// Results (docs/02_show_flow.md): the title, the winner, the top 3 from the final order (GameState.Placement: the
-    /// race order with its tie breaks, so places are never shared) with their score and correct answers, the two awards
-    /// (Most correct and Best comeback, every tied name), and a draining bar with the seconds until everyone is back in
-    /// the Lobby for the next game (D78), so the jump never surprises anyone.
+    /// Results (docs/02_show_flow.md): the title, the one winner and a line that their prize is on their phone (D87), the
+    /// two awards (Most correct and Best comeback, every tied name), every other player with their funny tag in seat
+    /// order, never a place (D86), and a draining bar with the seconds until everyone is back in the Lobby (D78).
     /// </summary>
     public sealed class ResultsView : MonoBehaviour
     {
-        private const int TopPlaces = 3;
         private const string NameSeparator = ", ";
 
         private TvContext _context;
         private TextMeshProUGUI _title;
         private TextMeshProUGUI _winner;
+        private TextMeshProUGUI _prize;
         private LeaderboardList _list;
         private TextMeshProUGUI _award;
         private TextMeshProUGUI _comeback;
@@ -74,22 +73,28 @@ namespace FamilyQuiz.Presentation
 
             var winner = state.WinnerId != null ? state.FindById(state.WinnerId) : null;
             _winner.gameObject.SetActive(winner != null);
+            _prize.gameObject.SetActive(winner != null && state.WinnerFact != null);
             if (winner != null)
             {
                 _winner.text = _context.Format("tv.results.winner", "name", winner.Name);
                 _winner.color = _context.ChipColor(winner.CharacterId);
+                _prize.text = _context.T("tv.results.prize");
             }
 
-            var top = Standings.Top(state, TopPlaces);
-            _list.Rebuild(top);
-            float height = _list.RowHeight();
-            for (int i = 0; i < top.Count; i++)
+            var tagged = new List<FamilyQuiz.Core.State.PlayerState>();
+            foreach (var p in state.Players)
             {
-                var p = top[i];
+                if (state.TagsByPlayer.ContainsKey(p.PlayerId)) tagged.Add(p);
+            }
+
+            _list.Rebuild(tagged);
+            float height = _list.RowHeight();
+            for (int i = 0; i < tagged.Count; i++)
+            {
+                var p = tagged[i];
                 var row = _list.Find(p.PlayerId);
-                row.Set(i + 1, p.Name, _context.ChipColor(p.CharacterId), p.Connected,
-                    _context.Format("tv.results.correctCount", "count", p.CorrectCount.ToString()), TvColors.DimText);
-                row.SetScore(p.Score);
+                row.SetTag(p.Name, _context.ChipColor(p.CharacterId), p.Connected,
+                    _context.T("tv.tags." + state.TagsByPlayer[p.PlayerId]), TvColors.Text);
                 row.Place(_list.Y(i), height);
             }
 
@@ -115,20 +120,25 @@ namespace FamilyQuiz.Presentation
         private void Build()
         {
             _title = UiBuilder.Text("Title", transform, 64, TvColors.DimText, true, TextAlignmentOptions.Center);
-            UiBuilder.Anchor(_title.rectTransform, 0.05f, 0.88f, 0.95f, 0.97f);
+            UiBuilder.Anchor(_title.rectTransform, 0.05f, 0.9f, 0.95f, 0.97f);
 
             _winner = UiBuilder.Text("Winner", transform, 104, TvColors.Text, true, TextAlignmentOptions.Center);
             _winner.enableAutoSizing = true;
             _winner.fontSizeMin = 72;
             _winner.fontSizeMax = 104;
             _winner.textWrappingMode = TextWrappingModes.NoWrap;
-            UiBuilder.Anchor(_winner.rectTransform, 0.03f, 0.74f, 0.97f, 0.87f);
+            UiBuilder.Anchor(_winner.rectTransform, 0.03f, 0.78f, 0.97f, 0.9f);
 
+            _prize = UiBuilder.Text("Prize", transform, 44, TvColors.DimText, false, TextAlignmentOptions.Center);
+            _prize.textWrappingMode = TextWrappingModes.NoWrap;
+            UiBuilder.Anchor(_prize.rectTransform, 0.05f, 0.72f, 0.95f, 0.78f);
+
+            _award = AwardLine("MostCorrect", 0.64f, 0.71f);
+            _comeback = AwardLine("BestComeback", 0.57f, 0.64f);
+
+            // Up to seven tagged players (players.max 8, minus the winner).
             _list = LeaderboardList.Create(transform);
-            UiBuilder.Anchor(_list.Rect, 0.05f, 0.4f, 0.95f, 0.72f);
-
-            _award = AwardLine("MostCorrect", 0.28f, 0.37f);
-            _comeback = AwardLine("BestComeback", 0.18f, 0.27f);
+            UiBuilder.Anchor(_list.Rect, 0.05f, 0.13f, 0.95f, 0.555f);
 
             _lobbyIn = UiBuilder.Text("LobbyIn", transform, 44, TvColors.DimText, false, TextAlignmentOptions.Center);
             _lobbyIn.textWrappingMode = TextWrappingModes.NoWrap;

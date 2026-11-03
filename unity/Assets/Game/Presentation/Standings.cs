@@ -6,7 +6,7 @@ namespace FamilyQuiz.Presentation
 {
     /// <summary>
     /// Players ordered for the TV leaderboards: by score, highest first; equal scores keep join order. Also the round
-    /// winners for RoundEnd and the top places for Results.
+    /// winners for RoundEnd.
     /// </summary>
     public static class Standings
     {
@@ -55,23 +55,6 @@ namespace FamilyQuiz.Presentation
             }
 
             return winners;
-        }
-
-        /// <summary>
-        /// The first places of the final order (GameState.Placement, winner first), at most count of them; players who
-        /// are no longer seated are passed over. Place n is index n - 1.
-        /// </summary>
-        public static List<PlayerState> Top(GameState state, int count)
-        {
-            var top = new List<PlayerState>();
-            foreach (var id in state.Placement)
-            {
-                if (top.Count >= count) break;
-                var p = state.FindById(id);
-                if (p != null) top.Add(p);
-            }
-
-            return top;
         }
 
         private static List<PlayerState> By(GameState state, Func<PlayerState, int> score)

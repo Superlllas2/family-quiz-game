@@ -3,11 +3,9 @@ using Newtonsoft.Json;
 
 namespace FamilyQuiz.Net.Protocol
 {
-    /// <summary>screen.data for id "answerChoice" (PROTOCOL.md section 4).</summary>
+    /// <summary>screen.data for id "answerChoice" (PROTOCOL.md section 4). No question text: it is on the TV only (D88).</summary>
     public sealed class AnswerChoiceScreenData
     {
-        [JsonProperty("question")] public string Question { get; set; }
-
         /// <summary>The 4 option texts in display order; the index of each is the "choice" the phone sends.</summary>
         [JsonProperty("options")] public List<string> Options { get; set; } = new List<string>();
 

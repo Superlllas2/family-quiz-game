@@ -3,8 +3,8 @@ namespace FamilyQuiz.Net
     /// <summary>Values fixed by docs/PROTOCOL.md.</summary>
     public static class ProtocolConstants
     {
-        /// <summary>PROTOCOL.md section 7: every message carries "v": 1.</summary>
-        public const int Version = 1;
+        /// <summary>PROTOCOL.md section 7: every message carries "v": 2 (version 2 since D88).</summary>
+        public const int Version = 2;
 
         /// <summary>PROTOCOL.md section 2, close codes: wrong secret for this room (sent to the TV app).</summary>
         public const int CloseWrongSecret = 4001;

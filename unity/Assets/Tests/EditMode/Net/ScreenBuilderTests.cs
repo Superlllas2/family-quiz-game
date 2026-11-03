@@ -24,7 +24,7 @@ namespace FamilyQuiz.Tests.NetScreens
         public void LobbyAfterThePickListsThePlayersWithTheirReadyMarks()
         {
             Papa.Ready = true;
-            AssertJson(@"{'v':1,'type':'screen','phaseId':1,'id':'lobby','endsInMs':null,'data':{'players':[
+            AssertJson(@"{'v':2,'type':'screen','phaseId':1,'id':'lobby','endsInMs':null,'data':{'players':[
                 {'playerId':'p1','name':'Mama','characterId':0,'ready':false},
                 {'playerId':'p2','name':'Papa','characterId':1,'ready':true},
                 {'playerId':'p3','name':'Kid','characterId':2,'ready':false}],'ready':false,'enoughPlayers':true}}",
@@ -37,7 +37,7 @@ namespace FamilyQuiz.Tests.NetScreens
         {
             var t = new NetTestGame();
             var solo = t.AddPlayer("p1", "Mama", "ru", 0, "c1");
-            AssertJson(@"{'v':1,'type':'screen','phaseId':1,'id':'lobby','endsInMs':null,'data':{'players':[
+            AssertJson(@"{'v':2,'type':'screen','phaseId':1,'id':'lobby','endsInMs':null,'data':{'players':[
                 {'playerId':'p1','name':'Mama','characterId':0,'ready':false}],'ready':false,'enoughPlayers':false}}",
                 ScreenMessage(t.Screens.CurrentScreen(solo)));
         }
@@ -54,7 +54,7 @@ namespace FamilyQuiz.Tests.NetScreens
         public void LobbyBeforeThePickShowsPickCharacterWithTheOthersTaken()
         {
             var newcomer = _t.AddPlayer("p4", "Gran", "en", 5, "c4", characterPicked: false);
-            AssertJson("{'v':1,'type':'screen','phaseId':1,'id':'pickCharacter','endsInMs':null,'data':{'taken':[0,1,2],'current':5}}",
+            AssertJson("{'v':2,'type':'screen','phaseId':1,'id':'pickCharacter','endsInMs':null,'data':{'taken':[0,1,2],'current':5}}",
                 ScreenMessage(_t.Screens.CurrentScreen(newcomer)));
         }
 
@@ -73,28 +73,33 @@ namespace FamilyQuiz.Tests.NetScreens
             var player = lang == "ru" ? Mama : Papa;
             _t.SetPhase(GamePhase.StartCountdown, 2, 3000);
             _t.Clock.Advance(1000);
-            AssertJson("{'v':1,'type':'screen','phaseId':2,'id':'countdown','endsInMs':2000,'data':{'text':'" + text + "'}}",
+            AssertJson("{'v':2,'type':'screen','phaseId':2,'id':'countdown','endsInMs':2000,'data':{'text':'" + text + "'}}",
                 ScreenMessage(_t.Screens.CurrentScreen(player)));
         }
 
-        [TestCase("ru", "Какая река самая длинная в Европе?")]
-        [TestCase("en", "Which is the longest river in Europe?")]
-        public void QuestionShowSendsGetReadyWithTheQuestion(string lang, string text)
+        [TestCase(GamePhase.Intro)]
+        [TestCase(GamePhase.QuestionShow)]
+        [TestCase(GamePhase.Reveal)]
+        [TestCase(GamePhase.Scores)]
+        [TestCase(GamePhase.RoundEnd)]
+        [TestCase(GamePhase.FinalIntro)]
+        [TestCase(GamePhase.RaceReveal)]
+        public void PhasesWithoutADecisionSendWatch(GamePhase phase)
         {
-            var player = lang == "ru" ? Mama : Papa;
+            // The phone is for decisions only (D88): no question, result, rank or track on it.
             _t.StartQuestion(4);
-            _t.SetPhase(GamePhase.QuestionShow, 3, 4000);
-            AssertJson("{'v':1,'type':'screen','phaseId':3,'id':'getReady','endsInMs':4000,'data':{'text':'" + text + "'}}",
-                ScreenMessage(_t.Screens.CurrentScreen(player)));
+            _t.SetPhase(phase, 3, 4000);
+            AssertJson("{'v':2,'type':'screen','phaseId':3,'id':'watch','endsInMs':4000,'data':{}}",
+                ScreenMessage(_t.Screens.CurrentScreen(Mama)));
         }
 
         [Test]
-        public void AnswerChoiceHasTheOptionsInDisplayOrderInRussian()
+        public void AnswerChoiceHasTheOptionsInDisplayOrderInRussianAndNoQuestion()
         {
             _t.EnterAnswer(4);
             _t.Clock.Advance(2500);
-            AssertJson(@"{'v':1,'type':'screen','phaseId':4,'id':'answerChoice','endsInMs':12500,'data':{
-                'question':'Какая река самая длинная в Европе?','options':['Рейн','Волга','Днепр','Дунай'],'windowMs':15000}}",
+            AssertJson(@"{'v':2,'type':'screen','phaseId':4,'id':'answerChoice','endsInMs':12500,'data':{
+                'options':['Рейн','Волга','Днепр','Дунай'],'windowMs':15000}}",
                 ScreenMessage(_t.Screens.CurrentScreen(Mama)));
         }
 
@@ -102,8 +107,8 @@ namespace FamilyQuiz.Tests.NetScreens
         public void AnswerChoiceHasTheOptionsInDisplayOrderInEnglish()
         {
             _t.EnterAnswer(4);
-            AssertJson(@"{'v':1,'type':'screen','phaseId':4,'id':'answerChoice','endsInMs':15000,'data':{
-                'question':'Which is the longest river in Europe?','options':['Rhine','Volga','Dnieper','Danube'],'windowMs':15000}}",
+            AssertJson(@"{'v':2,'type':'screen','phaseId':4,'id':'answerChoice','endsInMs':15000,'data':{
+                'options':['Rhine','Volga','Dnieper','Danube'],'windowMs':15000}}",
                 ScreenMessage(_t.Screens.CurrentScreen(Papa)));
         }
 
@@ -129,12 +134,11 @@ namespace FamilyQuiz.Tests.NetScreens
         }
 
         [Test]
-        public void WaitingShowsTheLockedLetterAndTextAndWhoIsStillAnswering()
+        public void WaitingShowsOnlyTheLockedLetterAndText()
         {
             _t.EnterAnswer(4);
             _t.Lock(Mama, 1, 3000);
-            AssertJson(@"{'v':1,'type':'screen','phaseId':4,'id':'waiting','endsInMs':15000,'data':{
-                'locked':'B · Волга','pending':[{'name':'Papa','characterId':1},{'name':'Kid','characterId':2}]}}",
+            AssertJson(@"{'v':2,'type':'screen','phaseId':4,'id':'waiting','endsInMs':15000,'data':{'locked':'B · Волга'}}",
                 ScreenMessage(_t.Screens.CurrentScreen(Mama)));
         }
 
@@ -143,75 +147,27 @@ namespace FamilyQuiz.Tests.NetScreens
         {
             _t.EnterAnswer(4);
             _t.Lock(Papa, 3, 3000);
-            _t.Lock(Mama, 0, 3000);
-            AssertJson(@"{'locked':'D · Danube','pending':[{'name':'Kid','characterId':2}]}",
-                ScreenMessage(_t.Screens.CurrentScreen(Papa))["data"]);
+            AssertJson(@"{'locked':'D · Danube'}", ScreenMessage(_t.Screens.CurrentScreen(Papa))["data"]);
         }
 
         [Test]
-        public void PendingLeavesOutDisconnectedPlayersAndThosePastDeadlinePlusGrace()
+        public void ResultsSendTheFactToTheWinnerAndWatchToEveryoneElse()
         {
-            _t.AddPlayer("p4", "Away", "ru", 4, "c4", connected: false);
-            var slow = _t.AddPlayer("p5", "Gran", "ru", 5, "c5", timerMultiplier: 2);
-            _t.EnterAnswer(4);
-            _t.Lock(Mama, 0, 1000);
-
-            // Inside the grace after the 1x deadline: Papa and Kid can still send (D73).
-            _t.Clock.Advance(_t.BaseWindowMs + _t.Config.Net.InputGraceMs - 1);
-            AssertJson("[{'name':'Papa','characterId':1},{'name':'Kid','characterId':2},{'name':'Gran','characterId':5}]",
-                ScreenMessage(_t.Screens.CurrentScreen(Mama))["data"]["pending"]);
-
-            // At deadline plus grace they are done; only the 2x player is still answering.
-            _t.Clock.Advance(1);
-            AssertJson("[{'name':'Gran','characterId':5}]", ScreenMessage(_t.Screens.CurrentScreen(Mama))["data"]["pending"]);
-            Assert.That(slow.Turn.Locked, Is.False);
-        }
-
-        [TestCase(GamePhase.Reveal)]
-        [TestCase(GamePhase.Scores)]
-        public void ResultInRussianForACorrectAnswer(GamePhase phase)
-        {
-            _t.EnterAnswer(4);
-            _t.Lock(Mama, 1, 2000);
-            Score(Mama, 900, true, 900, 2);
-            Score(Papa, 900, true, 900, 1);
-            Score(Kid, 400, false, 0, 0);
-            _t.SetPhase(phase, 5, 3500);
-            AssertJson(@"{'v':1,'type':'screen','phaseId':5,'id':'result','endsInMs':3500,'data':{
-                'correct':true,'points':900,'correctText':'Правильный ответ: B · Волга','streak':2,'rank':1,
-                'powerUp':null,'targets':[]}}",
-                ScreenMessage(_t.Screens.CurrentScreen(Mama)));
-        }
-
-        [Test]
-        public void ResultInEnglishForAWrongAnswerHasTheSharedRank()
-        {
-            _t.EnterAnswer(4);
-            Score(Mama, 900, true, 900, 1);
-            Score(Papa, 400, false, 0, 0);
-            Score(Kid, 900, true, 900, 1);
-            _t.SetPhase(GamePhase.Reveal, 5, 3500);
-            AssertJson(@"{'correct':false,'points':0,'correctText':'Right answer: B · Volga','streak':0,'rank':3,
-                'powerUp':null,'targets':[]}",
-                ScreenMessage(_t.Screens.CurrentScreen(Papa))["data"]);
-        }
-
-        [Test]
-        public void ResultsHaveThePlaceTheCorrectCountAndTheAwards()
-        {
-            Mama.Score = 2000;
-            Mama.CorrectCount = 3;
-            Papa.Score = 2000;
-            Papa.CorrectCount = 3;
-            Kid.Score = 500;
-            Kid.CorrectCount = 1;
-            _t.State.MutableMostCorrectIds.Add("p1");
-            _t.State.MutableMostCorrectIds.Add("p2");
+            _t.State.WinnerId = "p2";
+            _t.State.WinnerFact = new FamilyQuiz.Core.Content.FactDef
+            {
+                Id = "f001",
+                Text = new FamilyQuiz.Core.Content.LocalizedText { Ru = "У осьминога три сердца.", En = "An octopus has three hearts." },
+                Source = "s"
+            };
             _t.SetPhase(GamePhase.Results, 9, 20000);
-            AssertJson("{'v':1,'type':'screen','phaseId':9,'id':'results','endsInMs':20000,'data':{'place':1,'correctCount':3,'awards':['Больше всех верных']}}",
+            AssertJson("{'v':2,'type':'screen','phaseId':9,'id':'results','endsInMs':20000,'data':{'fact':'An octopus has three hearts.'}}",
+                ScreenMessage(_t.Screens.CurrentScreen(Papa)));
+            AssertJson("{'v':2,'type':'screen','phaseId':9,'id':'watch','endsInMs':20000,'data':{}}",
                 ScreenMessage(_t.Screens.CurrentScreen(Mama)));
-            AssertJson("{'place':1,'correctCount':3,'awards':['Most correct']}", ScreenMessage(_t.Screens.CurrentScreen(Papa))["data"]);
-            AssertJson("{'place':3,'correctCount':1,'awards':[]}", ScreenMessage(_t.Screens.CurrentScreen(Kid))["data"]);
+            Mama.Lang = "ru";
+            _t.State.WinnerId = "p1";
+            AssertJson("{'fact':'У осьминога три сердца.'}", ScreenMessage(_t.Screens.CurrentScreen(Mama))["data"]);
         }
 
         [Test]
@@ -226,13 +182,5 @@ namespace FamilyQuiz.Tests.NetScreens
                 Newtonsoft.Json.Linq.JObject.Parse(FamilyQuiz.Net.ProtocolJson.Serialize(_t.Screens.Player(Mama))));
         }
 
-        private static void Score(PlayerState player, int score, bool correct, int points, int streak)
-        {
-            player.Score = score;
-            player.Streak = streak;
-            player.Turn.Revealed = true;
-            player.Turn.Correct = correct;
-            player.Turn.Points = points;
-        }
     }
 }

@@ -100,20 +100,29 @@ namespace FamilyQuiz.Tests.NetScreens
             PlayUntil(GamePhase.Results);
             int statements = _f.State.Race.StatementNumber;
             var results = _sender.MessagesTo("c1", "screen").Last(m => (string)m["id"] == "results");
+            var winnerFactRu = _f.State.WinnerFact.Text.Ru;
+            Assert.That(_f.State.WinnerId, Is.EqualTo(_f.State.FindByConn("c1").PlayerId));
             PlayUntil(GamePhase.Lobby);
 
             var rounds = _f.Config.Rounds;
             var closest = rounds.FormatOrder.Select(x => x == QuestionDef.ClosestValue).ToArray();
             var head = new List<string> { "pickCharacter", "lobby", "countdown" };
-            var expected = head.Concat(Expected(rounds.Count, statements, true, true, closest)).ToList();
-            Assert.That(ScreenIds("c1"), Is.EqualTo(expected), "c1");
-            Assert.That(ScreenIds("c2"), Is.EqualTo(expected), "c2");
+            // c1 always right wins the race and gets the fact; the others watch the TV (D87, D88).
+            Assert.That(ScreenIds("c1"), Is.EqualTo(head.Concat(Expected(rounds.Count, statements, true, true, closest, true)).ToList()), "c1");
+            Assert.That(ScreenIds("c2"), Is.EqualTo(head.Concat(Expected(rounds.Count, statements, true, true, closest, false)).ToList()), "c2");
             // c3 never sends anything: no waiting screens (last call resends the answer screen with the same id).
-            Assert.That(ScreenIds("c3"), Is.EqualTo(head.Concat(Expected(rounds.Count, statements, false, true, closest)).ToList()), "c3");
+            Assert.That(ScreenIds("c3"), Is.EqualTo(head.Concat(Expected(rounds.Count, statements, false, true, closest, false)).ToList()), "c3");
 
-            // The Intro lists the players to predict; the vote shows four doors, the mixed one last.
-            var intro = _sender.MessagesTo("c2", "screen").First(m => (string)m["id"] == "getReady");
-            Assert.That(((JArray)intro["data"]["prediction"]).Count, Is.EqualTo(3));
+            // No screen carries a question, a statement, a pending list or a result (D88).
+            foreach (var m in _sender.MessagesTo("c2", "screen"))
+            {
+                var data = (JObject)m["data"];
+                Assert.That(data.ContainsKey("question") || data.ContainsKey("statement") || data.ContainsKey("pending"), Is.False,
+                    (string)m["id"]);
+                if ((string)m["id"] == "watch") Assert.That(data.Count, Is.EqualTo(0));
+            }
+
+            // The vote shows four doors, the mixed one last.
             var vote = _sender.MessagesTo("c2", "screen").First(m => (string)m["id"] == "topicVote");
             Assert.That(((JArray)vote["data"]["doors"]).Count, Is.EqualTo(_f.Config.Topics.Doors));
             Assert.That((string)vote["data"]["doors"][3]["title"], Is.EqualTo("A bit of everything"), "the mixed door in English");
@@ -123,22 +132,11 @@ namespace FamilyQuiz.Tests.NetScreens
             Assert.That(slider["data"]["unit"], Is.Not.Null);
             var tf = _sender.MessagesTo("c2", "screen").First(m => (string)m["id"] == "answerTrueFalse");
             Assert.That((long)tf["data"]["windowMs"], Is.EqualTo(_f.RaceWindowMs));
-            var roundEnds = _sender.MessagesTo("c1", "screen").Where(m => (string)m["id"] == "roundEnd").ToList();
-            Assert.That(roundEnds.Select(m => m["data"]["nextRound"].Type == JTokenType.Null ? 0 : (int)m["data"]["nextRound"]),
-                Is.EqualTo(new[] { 2, 3, 4, 0 }), "after round 4 the final race comes next (null)");
-            var race = _sender.MessagesTo("c1", "screen").Last(m => (string)m["id"] == "raceResult");
-            Assert.That((int)race["data"]["position"], Is.EqualTo(_f.Config.Race.FinishSteps));
-            Assert.That((bool)race["data"]["correct"], Is.True);
-            Assert.That((int)race["data"]["finish"], Is.EqualTo(_f.Config.Race.FinishSteps));
             var waitingTf = _sender.MessagesTo("c2", "screen").Last(m => (string)m["id"] == "waiting");
             Assert.That((string)waitingTf["data"]["locked"], Is.EqualTo("True").Or.EqualTo("False"));
 
-            // Texts in each phone's language; c1 always right, so it wins the race and has the most correct answers.
-            var lastResult = _sender.MessagesTo("c2", "screen").Last(m => (string)m["id"] == "result");
-            StringAssert.StartsWith("Right answer:", (string)lastResult["data"]["correctText"]);
-            Assert.That((int)results["data"]["place"], Is.EqualTo(1));
-            Assert.That((int)results["data"]["correctCount"], Is.EqualTo(rounds.Count * rounds.QuestionsPerRound));
-            Assert.That(((JArray)results["data"]["awards"]).Select(a => (string)a), Is.EqualTo(new[] { "Больше всех верных" }));
+            // The winner's fact, in the winner's language (c1 plays in Russian).
+            Assert.That((string)results["data"]["fact"], Is.EqualTo(winnerFactRu));
             // Back in the Lobby: nobody ready, scores at 0, characters kept.
             var lobby = LastScreen("c3");
             Assert.That((bool)lobby["data"]["ready"], Is.False);
@@ -198,36 +196,43 @@ namespace FamilyQuiz.Tests.NetScreens
             Assert.That(_f.State.Phase, Is.EqualTo(phase));
         }
 
-        private static List<string> Expected(int rounds, int statements, bool answers, bool intro, bool[] closest)
+        /// <summary>The screen ids one phone sees, with repeats in a row merged (as <see cref="ScreenIds"/> does).</summary>
+        private static List<string> Expected(int rounds, int statements, bool answers, bool intro, bool[] closest, bool winner)
         {
             var list = new List<string>();
-            if (intro) list.Add("getReady");
+            if (intro) list.Add("watch");
             for (int r = 0; r < rounds; r++)
             {
                 list.Add("topicVote");
                 if (answers) list.Add("waiting");
                 foreach (var cv in closest)
                 {
-                    list.Add("getReady");
+                    list.Add("watch"); // QuestionShow
                     list.Add(cv ? "answerSlider" : "answerChoice");
                     if (answers) list.Add("waiting");
-                    list.Add("result");
+                    list.Add("watch"); // Reveal and Scores
                 }
 
-                list.Add("roundEnd");
+                list.Add("watch"); // RoundEnd
             }
 
-            list.Add("getReady");
+            list.Add("watch"); // FinalIntro
             for (int s = 0; s < statements; s++)
             {
                 list.Add("answerTrueFalse");
                 if (answers) list.Add("waiting");
-                list.Add("raceResult");
+                list.Add("watch"); // RaceReveal
             }
 
-            list.Add("results");
+            list.Add(winner ? "results" : "watch");
             list.Add("lobby");
-            return list;
+            var merged = new List<string>();
+            foreach (var id in list)
+            {
+                if (merged.Count == 0 || merged[merged.Count - 1] != id) merged.Add(id);
+            }
+
+            return merged;
         }
 
         [Test]
@@ -242,7 +247,6 @@ namespace FamilyQuiz.Tests.NetScreens
             var waiting = LastScreen("c2");
             Assert.That((string)waiting["id"], Is.EqualTo("waiting"));
             Assert.That((string)waiting["data"]["locked"], Is.EqualTo("A bit of everything"));
-            Assert.That(((JArray)waiting["data"]["pending"]).Select(p => (string)p["name"]), Is.EqualTo(new[] { "Mama" }));
             Do(_f.Vote("c1", 3));
 
             while (!(_f.State.Phase == GamePhase.Answer && _f.State.Question.IsClosestValue)) Step(50);
@@ -251,9 +255,7 @@ namespace FamilyQuiz.Tests.NetScreens
             Do(_f.Value("c2", answer, 2000));
             Assert.That((string)LastScreen("c2")["data"]["locked"], Is.EqualTo((NumberText.Format(answer) + " " + unit).Trim()));
             RunUntil(GamePhase.Reveal);
-            var result = LastScreen("c2");
-            Assert.That((string)result["data"]["correctText"], Is.EqualTo(("Right answer: " + NumberText.Format(answer) + " " + unit).Trim()));
-            Assert.That((bool)result["data"]["correct"], Is.True);
+            Assert.That((string)LastScreen("c2")["id"], Is.EqualTo("watch"), "the result is on the TV only (D88)");
         }
 
         [Test]

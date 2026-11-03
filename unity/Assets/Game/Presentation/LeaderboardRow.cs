@@ -53,6 +53,21 @@ namespace FamilyQuiz.Presentation
             _extra.color = extraColor;
         }
 
+        /// <summary>
+        /// A row with no rank and no score: the chip and a line of text that takes the score's place too (the funny tags
+        /// on Results, D86).
+        /// </summary>
+        public void SetTag(string name, Color color, bool connected, string tag, Color tagColor)
+        {
+            _rank.text = string.Empty;
+            _score.text = string.Empty;
+            _chip.Set(name, color, connected);
+            _extra.text = tag ?? string.Empty;
+            _extra.color = tagColor;
+            float x = RankWidth + Gap + ChipWidth + Gap;
+            Column(_extra.rectTransform, x, Width - x - Gap, 0);
+        }
+
         public void SetScore(int score)
         {
             _score.text = score.ToString();

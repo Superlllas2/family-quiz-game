@@ -1,17 +1,11 @@
-using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace FamilyQuiz.Net.Protocol
 {
-    /// <summary>screen.data for id "results" (PROTOCOL.md section 4).</summary>
+    /// <summary>screen.data for id "results" (PROTOCOL.md section 4): sent only to the winner, with their fact (D87).</summary>
     public sealed class ResultsScreenData
     {
-        /// <summary>Shared rank at the end of the game.</summary>
-        [JsonProperty("place")] public int Place { get; set; }
-
-        [JsonProperty("correctCount")] public int CorrectCount { get; set; }
-
-        /// <summary>The awards this player won, as texts in their language.</summary>
-        [JsonProperty("awards")] public List<string> Awards { get; set; } = new List<string>();
+        /// <summary>The winner's reward fact in their language.</summary>
+        [JsonProperty("fact")] public string Fact { get; set; }
     }
 }

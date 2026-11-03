@@ -30,9 +30,9 @@ namespace FamilyQuiz.Tests.NetScreens
             _t.SetPhase(GamePhase.StartCountdown, 2, 3000);
             _t.Outbox.OnEvents(new IGameEvent[] { new PhaseEnded(GamePhase.Lobby, 1, PhaseEndReasons.AllDone, 5000), new PhaseStarted(GamePhase.StartCountdown, 2, 3000) });
 
-            AssertJson("{'v':1,'type':'screen','phaseId':2,'id':'countdown','endsInMs':3000,'data':{'text':'Игра начинается'}}",
+            AssertJson("{'v':2,'type':'screen','phaseId':2,'id':'countdown','endsInMs':3000,'data':{'text':'Игра начинается'}}",
                 _t.Sender.MessagesTo("c1").Single());
-            AssertJson("{'v':1,'type':'screen','phaseId':2,'id':'countdown','endsInMs':3000,'data':{'text':'Starting'}}",
+            AssertJson("{'v':2,'type':'screen','phaseId':2,'id':'countdown','endsInMs':3000,'data':{'text':'Starting'}}",
                 _t.Sender.MessagesTo("c2").Single());
             Assert.That(_t.Sender.MessagesTo("c3").Count, Is.EqualTo(1));
             Assert.That(_t.Sender.MessagesTo("c4"), Is.Empty, "a disconnected player gets nothing");
@@ -52,7 +52,7 @@ namespace FamilyQuiz.Tests.NetScreens
         }
 
         [Test]
-        public void AnswerLockedSendsWaitingToTheLockerAndRefreshesOtherLockedPlayers()
+        public void AnswerLockedSendsWaitingToTheLockerOnly()
         {
             _t.EnterAnswer(4);
             _t.Lock(Mama, 0, 1000);
@@ -65,10 +65,9 @@ namespace FamilyQuiz.Tests.NetScreens
 
             var papa = _t.Sender.MessagesTo("c2");
             Assert.That(papa.Select(m => (string)m["type"]), Is.EqualTo(new[] { "ack", "screen" }), "ack first, then the screen");
-            AssertJson("{'v':1,'type':'screen','phaseId':4,'id':'waiting','endsInMs':15000,'data':{'locked':'C · Dnieper','pending':[{'name':'Kid','characterId':2}]}}",
+            AssertJson("{'v':2,'type':'screen','phaseId':4,'id':'waiting','endsInMs':15000,'data':{'locked':'C · Dnieper'}}",
                 papa[1]);
-            AssertJson("{'v':1,'type':'screen','phaseId':4,'id':'waiting','endsInMs':15000,'data':{'locked':'A · Рейн','pending':[{'name':'Kid','characterId':2}]}}",
-                _t.Sender.MessagesTo("c1").Single());
+            Assert.That(_t.Sender.MessagesTo("c1"), Is.Empty, "no phone lists who is still answering (D88)");
             Assert.That(_t.Sender.MessagesTo("c3"), Is.Empty, "a player still answering keeps their buttons");
         }
 
@@ -88,34 +87,23 @@ namespace FamilyQuiz.Tests.NetScreens
                 new LastCallStarted("p3", 4, cut)
             });
 
-            AssertJson(@"{'v':1,'type':'screen','phaseId':4,'id':'answerChoice','endsInMs':5000,'data':{
-                'question':'Какая река самая длинная в Европе?','options':['Рейн','Волга','Днепр','Дунай'],'windowMs':15000}}",
+            AssertJson(@"{'v':2,'type':'screen','phaseId':4,'id':'answerChoice','endsInMs':5000,'data':{
+                'options':['Рейн','Волга','Днепр','Дунай'],'windowMs':15000}}",
                 _t.Sender.MessagesTo("c3").Single());
         }
 
         [Test]
-        public void ConnectionChangeInAnswerRefreshesOnlyTheWaitingLists()
+        public void ConnectionAndRosterChangesInAnswerSendNoScreens()
         {
+            // The waiting screen lists nobody any more (D88), so nothing changes on any phone.
             _t.EnterAnswer(4);
             _t.Lock(Mama, 0, 1000);
             Kid.Connected = false;
             _t.Outbox.OnEvent(new PlayerConnectionChanged("p3", false));
-
-            AssertJson("{'locked':'A · Рейн','pending':[{'name':'Papa','characterId':1}]}", _t.Sender.MessagesTo("c1").Single()["data"]);
-            Assert.That(_t.Sender.MessagesTo("c2"), Is.Empty);
-            Assert.That(_t.Sender.MessagesTo("c3"), Is.Empty);
-        }
-
-        [Test]
-        public void RosterChangeInAnswerRefreshesOnlyTheWaitingLists()
-        {
-            _t.EnterAnswer(4);
-            _t.Lock(Papa, 0, 1000);
             _t.State.MutablePlayers.Remove(Kid);
             _t.Outbox.OnEvents(new IGameEvent[] { new PlayerLeft("p3", "Kid", "c3", PlayerLeft.ReasonLeft), new RosterChanged() });
-
-            AssertJson("{'locked':'A · Rhine','pending':[{'name':'Mama','characterId':0}]}", _t.Sender.MessagesTo("c2").Single()["data"]);
-            Assert.That(_t.Sender.MessagesTo("c1"), Is.Empty);
+            Assert.That(_t.Sender.MessagesTo("c1", "screen"), Is.Empty);
+            Assert.That(_t.Sender.MessagesTo("c2", "screen"), Is.Empty);
         }
 
         [Test]
@@ -156,8 +144,8 @@ namespace FamilyQuiz.Tests.NetScreens
             });
 
             var messages = _t.Sender.MessagesTo("c4");
-            AssertJson("{'v':1,'type':'ack','inputId':'k1','ok':false,'reason':'characterTaken'}", messages[0]);
-            AssertJson("{'v':1,'type':'screen','phaseId':1,'id':'pickCharacter','endsInMs':null,'data':{'taken':[0,1,2],'current':5}}", messages[1]);
+            AssertJson("{'v':2,'type':'ack','inputId':'k1','ok':false,'reason':'characterTaken'}", messages[0]);
+            AssertJson("{'v':2,'type':'screen','phaseId':1,'id':'pickCharacter','endsInMs':null,'data':{'taken':[0,1,2],'current':5}}", messages[1]);
             Assert.That(messages.Count, Is.EqualTo(2));
             Assert.That(gran.CharacterPicked, Is.False);
         }
@@ -183,7 +171,7 @@ namespace FamilyQuiz.Tests.NetScreens
             Mama.Score = 850;
             Mama.Streak = 1;
             _t.Outbox.OnEvent(new PlayerUpdated("p1"));
-            AssertJson(@"{'v':1,'type':'player','player':{'playerId':'p1','name':'Mama','characterId':0,'lang':'ru',
+            AssertJson(@"{'v':2,'type':'player','player':{'playerId':'p1','name':'Mama','characterId':0,'lang':'ru',
                 'score':850,'rank':1,'streak':1,'heldPowerUp':null,'timerMultiplier':1.0}}",
                 _t.Sender.MessagesTo("c1").Single());
             Assert.That(_t.Sender.MessagesTo("c2"), Is.Empty);
@@ -201,7 +189,7 @@ namespace FamilyQuiz.Tests.NetScreens
             });
 
             var messages = _t.Sender.MessagesTo("c1");
-            AssertJson("{'v':1,'type':'screen','phaseId':2,'id':'countdown','endsInMs':3000,'data':{'text':'Starting'}}", messages[0]);
+            AssertJson("{'v':2,'type':'screen','phaseId':2,'id':'countdown','endsInMs':3000,'data':{'text':'Starting'}}", messages[0]);
             Assert.That((string)messages[1]["player"]["lang"], Is.EqualTo("en"));
             Assert.That(messages.Count, Is.EqualTo(2));
         }
@@ -229,8 +217,8 @@ namespace FamilyQuiz.Tests.NetScreens
             _t.Outbox.OnEvent(new PlayerJoined("p4", "c4"));
 
             var messages = _t.Sender.MessagesTo("c4");
-            AssertJson("{'v':1,'type':'welcome','playerId':'p4','token':'token_p4','room':'KXQT'}", messages[0]);
-            AssertJson(@"{'v':1,'type':'snapshot',
+            AssertJson("{'v':2,'type':'welcome','playerId':'p4','token':'token_p4','room':'KXQT'}", messages[0]);
+            AssertJson(@"{'v':2,'type':'snapshot',
                 'player':{'playerId':'p4','name':'Gran','characterId':3,'lang':'ru','score':0,'rank':1,'streak':0,'heldPowerUp':null,'timerMultiplier':1.0},
                 'screen':{'phaseId':1,'id':'pickCharacter','endsInMs':null,'data':{'taken':[0,1,2],'current':3}}}",
                 messages[1]);
@@ -260,14 +248,14 @@ namespace FamilyQuiz.Tests.NetScreens
         public void RefusedIsSentToTheConn()
         {
             _t.Outbox.OnEvent(new JoinRefused("c9", "nameTaken"));
-            AssertJson("{'to':'c9','msg':{'v':1,'type':'refused','reason':'nameTaken'}}", _t.Sender.Frames.Single());
+            AssertJson("{'to':'c9','msg':{'v':2,'type':'refused','reason':'nameTaken'}}", _t.Sender.Frames.Single());
         }
 
         [Test]
         public void ADuplicateAckIsOkWithItsReason()
         {
             _t.Outbox.OnEvent(new InputAcked("c1", "a1", true, AckReasons.Duplicate));
-            AssertJson("{'v':1,'type':'ack','inputId':'a1','ok':true,'reason':'duplicate'}", _t.Sender.MessagesTo("c1").Single());
+            AssertJson("{'v':2,'type':'ack','inputId':'a1','ok':true,'reason':'duplicate'}", _t.Sender.MessagesTo("c1").Single());
         }
     }
 }

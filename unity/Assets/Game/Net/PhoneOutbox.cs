@@ -66,17 +66,18 @@ namespace FamilyQuiz.Net
                 case PhaseStarted _:
                     SendScreenToEveryone();
                     break;
-                case AnswerLocked _:
-                case VoteCast _:
-                    // The sender now waits; every other waiting player's pending list just lost a name.
-                    SendScreenToWaitingPlayers();
+                case AnswerLocked locked:
+                    // Only the sender's screen changes (waiting); no other phone lists who is still answering (D88).
+                    SendScreen(_game.State.FindById(locked.PlayerId));
+                    break;
+                case VoteCast vote:
+                    SendScreen(_game.State.FindById(vote.PlayerId));
                     break;
                 case LastCallStarted lastCall:
                     SendScreen(_game.State.FindById(lastCall.PlayerId));
                     break;
                 case RosterChanged _:
                 case PlayerConnectionChanged _:
-                case PlayerTimedOut _: // a player past deadline plus grace drops out of the pending lists
                 case ReadyChanged _: // every lobby screen shows everyone's ready mark (D76)
                     RefreshAfterRosterChange();
                     break;
@@ -98,34 +99,15 @@ namespace FamilyQuiz.Net
             Send(conn, new SnapshotMessage { Player = _screens.Player(player), Screen = _screens.CurrentScreen(player) });
         }
 
-        /// <summary>The pending lists changed (TopicVote, Answer, RaceQuestion), or the player list or ready marks did (Lobby).</summary>
+        /// <summary>The player list or ready marks changed: every lobby screen shows them (D76). Game screens list nobody (D88).</summary>
         private void RefreshAfterRosterChange()
         {
-            switch (_game.State.Phase)
-            {
-                case GamePhase.Answer:
-                case GamePhase.TopicVote:
-                case GamePhase.RaceQuestion:
-                    SendScreenToWaitingPlayers();
-                    break;
-                case GamePhase.Lobby:
-                    SendScreenToEveryone();
-                    break;
-            }
+            if (_game.State.Phase == GamePhase.Lobby) SendScreenToEveryone();
         }
 
         private void SendScreenToEveryone()
         {
             foreach (var player in _game.State.Players) SendScreen(player);
-        }
-
-        /// <summary>The players on the waiting screen (voted, or locked in): their pending lists changed.</summary>
-        private void SendScreenToWaitingPlayers()
-        {
-            foreach (var player in _game.State.Players)
-            {
-                if (_screens.IsWaiting(player)) SendScreen(player);
-            }
         }
 
         private void SendScreen(PlayerState player)

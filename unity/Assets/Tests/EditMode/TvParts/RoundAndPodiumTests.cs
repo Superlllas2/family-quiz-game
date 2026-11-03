@@ -7,7 +7,7 @@ using NUnit.Framework;
 
 namespace FamilyQuiz.Tests.TvParts
 {
-    /// <summary>The round winners on RoundEnd and the top places on Results.</summary>
+    /// <summary>The round winners on RoundEnd.</summary>
     public sealed class RoundAndPodiumTests
     {
         private static PlayerState Player(GameState state, string id)
@@ -61,26 +61,6 @@ namespace FamilyQuiz.Tests.TvParts
             var a = Player(s, "a");
             Assert.AreEqual(0, Standings.RoundPoints(s, a));
             Assert.IsEmpty(Standings.RoundWinners(s));
-        }
-
-        [Test]
-        public void TheTopComesFromTheFinalOrder()
-        {
-            var s = new GameState();
-            foreach (var id in new[] { "a", "b", "c", "d", "e" }) Player(s, id);
-            s.MutablePlacement.AddRange(new[] { "d", "a", "e", "b", "c" });
-            CollectionAssert.AreEqual(new[] { "d", "a", "e" }, Standings.Top(s, 3).Select(p => p.PlayerId).ToArray());
-        }
-
-        [Test]
-        public void TheTopIsShorterWithFewerPlayersAndSkipsUnknownIds()
-        {
-            var s = new GameState();
-            Player(s, "a");
-            Player(s, "b");
-            s.MutablePlacement.AddRange(new[] { "b", "gone", "a" });
-            CollectionAssert.AreEqual(new[] { "b", "a" }, Standings.Top(s, 3).Select(p => p.PlayerId).ToArray());
-            Assert.IsEmpty(Standings.Top(new GameState(), 3));
         }
     }
 }

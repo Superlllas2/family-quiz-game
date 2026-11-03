@@ -3,21 +3,13 @@ using Newtonsoft.Json;
 
 namespace FamilyQuiz.Net.Protocol
 {
-    /// <summary>screen.data for id "result", shown in Reveal and Scores (PROTOCOL.md section 4).</summary>
+    /// <summary>
+    /// screen.data for id "result" (PROTOCOL.md section 4): the power up pick in Reveal and Scores, sent only to a player
+    /// holding a power up (D88). Power ups come on Day 4; until then nobody holds one and the screen is never sent.
+    /// </summary>
     public sealed class ResultScreenData
     {
-        [JsonProperty("correct")] public bool Correct { get; set; }
-        [JsonProperty("points")] public int Points { get; set; }
-
-        /// <summary>The right answer, for example "Right answer: A · Volga".</summary>
-        [JsonProperty("correctText")] public string CorrectText { get; set; }
-
-        [JsonProperty("streak")] public int Streak { get; set; }
-
-        /// <summary>Shared rank after this question.</summary>
-        [JsonProperty("rank")] public int Rank { get; set; }
-
-        /// <summary>The held power up, or null (always written; power ups arrive on Day 4).</summary>
+        /// <summary>The held power up.</summary>
         [JsonProperty("powerUp")] public string PowerUp { get; set; }
 
         [JsonProperty("targets")] public List<PowerUpTargetDto> Targets { get; set; } = new List<PowerUpTargetDto>();
