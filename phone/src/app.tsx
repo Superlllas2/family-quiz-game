@@ -275,7 +275,7 @@ export function App({ deps }: { deps: AppDeps }) {
         body = <ResultScreen lang={lang} screen={screen} />;
         break;
       case 'results':
-        body = <ResultsScreen lang={lang} screen={screen} />;
+        body = <ResultsScreen lang={lang} screen={screen} receivedAt={current.receivedAt} now={deps.now} />;
         break;
       case 'pollDone':
         body = <PollDoneScreen lang={lang} />;

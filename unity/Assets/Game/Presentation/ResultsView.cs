@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using FamilyQuiz.Core.Rules;
 using FamilyQuiz.Core.State;
@@ -8,7 +9,8 @@ namespace FamilyQuiz.Presentation
 {
     /// <summary>
     /// Results (docs/02_show_flow.md, Day 2): the title, the winner, the top 3 (every player with shared rank 3 or
-    /// better, so a tie for third is not cut) with their correct answers, and the Most correct award.
+    /// better, so a tie for third is not cut) with their correct answers, the Most correct award, and a draining bar
+    /// with the seconds until everyone is back in the Lobby for the next game, so the jump never surprises anyone.
     /// </summary>
     public sealed class ResultsView : MonoBehaviour
     {
@@ -20,6 +22,9 @@ namespace FamilyQuiz.Presentation
         private TextMeshProUGUI _winner;
         private LeaderboardList _list;
         private TextMeshProUGUI _award;
+        private TextMeshProUGUI _lobbyIn;
+        private TimerBar _bar;
+        private long _shownSeconds = -1;
 
         public static ResultsView Create(Transform parent, TvContext context)
         {
@@ -32,7 +37,34 @@ namespace FamilyQuiz.Presentation
 
         public void Enter()
         {
+            _shownSeconds = -1;
             Refresh();
+            Tick();
+        }
+
+        /// <summary>Every frame: the bar drains with the core clock; the text changes once a second (ceil, never 0).</summary>
+        public void Tick()
+        {
+            var game = _context.Game;
+            var state = game.State;
+            if (!state.PhaseEndsAtMs.HasValue)
+            {
+                _bar.SetVisible(false);
+                _lobbyIn.gameObject.SetActive(false);
+                return;
+            }
+
+            _bar.SetVisible(true);
+            _lobbyIn.gameObject.SetActive(true);
+            long end = state.PhaseEndsAtMs.Value;
+            long left = Math.Max(0, end - game.NowMs);
+            long span = end - state.PhaseStartedAtMs;
+            _bar.Set(span > 0 ? (float)left / span : 0f, TvColors.DimText);
+
+            long seconds = Math.Max(1, (left + 999) / 1000);
+            if (seconds == _shownSeconds) return;
+            _shownSeconds = seconds;
+            _lobbyIn.text = _context.Format("tv.results.lobbyIn", "seconds", seconds.ToString());
         }
 
         public void Refresh()
@@ -90,13 +122,20 @@ namespace FamilyQuiz.Presentation
             UiBuilder.Anchor(_winner.rectTransform, 0.03f, 0.74f, 0.97f, 0.87f);
 
             _list = LeaderboardList.Create(transform);
-            UiBuilder.Anchor(_list.Rect, 0.05f, 0.15f, 0.95f, 0.71f);
+            UiBuilder.Anchor(_list.Rect, 0.05f, 0.24f, 0.95f, 0.71f);
 
             _award = UiBuilder.Text("Award", transform, 52, TvColors.Text, true, TextAlignmentOptions.Center);
             _award.enableAutoSizing = true;
             _award.fontSizeMin = 40;
             _award.fontSizeMax = 52;
-            UiBuilder.Anchor(_award.rectTransform, 0.04f, 0.03f, 0.96f, 0.13f);
+            UiBuilder.Anchor(_award.rectTransform, 0.04f, 0.13f, 0.96f, 0.22f);
+
+            _lobbyIn = UiBuilder.Text("LobbyIn", transform, 44, TvColors.DimText, false, TextAlignmentOptions.Center);
+            _lobbyIn.textWrappingMode = TextWrappingModes.NoWrap;
+            UiBuilder.Anchor(_lobbyIn.rectTransform, 0.05f, 0.055f, 0.95f, 0.115f);
+
+            _bar = TimerBar.Create(transform);
+            UiBuilder.Anchor(_bar.Root, 0.2f, 0.03f, 0.8f, 0.042f);
         }
     }
 }

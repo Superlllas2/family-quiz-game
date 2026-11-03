@@ -2,10 +2,12 @@
 // "Look at the TV" for screen ids this build does not draw. Texts come from the TV's screen data or the locales.
 
 import { characterColor } from '../characters';
+import { wholeSeconds } from '../countdown';
 import { t } from '../i18n';
 import {
   getReadyData, resultData, resultsData, textData, waitingData, type Lang, type ScreenState,
 } from '../protocol';
+import { useRemaining } from './useRemaining';
 
 interface Props { lang: Lang; screen: ScreenState }
 
@@ -60,10 +62,14 @@ export function ResultScreen(props: Props) {
   );
 }
 
-/** `results`: own place, correct answers and the awards won (award texts come from the TV). */
-export function ResultsScreen(props: Props) {
+/**
+ * `results`: own place, correct answers, the awards won (award texts come from the TV), and how long until
+ * everyone is back in the Lobby for the next game (from `endsInMs`), so the jump never comes as a surprise.
+ */
+export function ResultsScreen(props: Props & { receivedAt: number; now: () => number }) {
   const { lang } = props;
   const r = resultsData(props.screen.data);
+  const remaining = useRemaining(props.screen.endsInMs, props.receivedAt, props.now);
   return (
     <div class="body center">
       {r.place !== null ? <p class="result-head">{t(lang, 'results.place', { place: r.place })}</p> : null}
@@ -75,6 +81,9 @@ export function ResultsScreen(props: Props) {
             {r.awards.map((a, i) => <li key={i}>{a}</li>)}
           </ul>
         </div>
+      ) : null}
+      {remaining !== null ? (
+        <p class="muted-text">{t(lang, 'results.lobbyIn', { seconds: Math.max(1, wholeSeconds(remaining)) })}</p>
       ) : null}
     </div>
   );

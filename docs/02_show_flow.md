@@ -42,7 +42,7 @@ Mini games are not in game night 1. When added later, one goes after rounds 1, 2
 | RoundEnd | 4 s (`timers.roundEnd`) | Never early | Round leaderboard, round winner, host line | "Round 2 coming", own rank |
 | FinalIntro | 8 s (`timers.finalIntro`) | Never early | Race track with head starts by rank, one line of rules | "Final race: answer true or false, fast" |
 | RaceQuestion | 8 s answer times each player's timer multiplier (`race.answer`) plus 2 s reveal (`race.reveal`) | Answer ends when every connected player answered or passed their personal deadline. No last call in the race | Statement, track, players move on reveal | True and False buttons |
-| Results | 20 s (`timers.results`) | Never early | Winner, top 3, two awards (most correct, best comeback) | Own placement and stats |
+| Results | 20 s (`timers.results`) | Never early | Winner, top 3, two awards (most correct, best comeback), a draining bar and "Back to the lobby in N" (D78) | Own placement and stats, "Back to the lobby in N" |
 | Poll | 90 s (`poll.maxSeconds`) | Every connected phone submitted | "Thanks! Fill in the poll on your phone" and a count of submitted polls | Poll questions, then "Thanks!" while others finish |
 
 After the Poll (with `poll.enabled` = false, after Results) the show returns to the Lobby (D76).

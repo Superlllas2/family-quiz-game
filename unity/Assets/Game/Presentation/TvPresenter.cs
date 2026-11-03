@@ -127,6 +127,9 @@ namespace FamilyQuiz.Presentation
                 case GamePhase.StartCountdown:
                     _countdown.Tick();
                     break;
+                case GamePhase.Results:
+                    _results.Tick();
+                    break;
                 case GamePhase.QuestionShow:
                 case GamePhase.Answer:
                 case GamePhase.Reveal:

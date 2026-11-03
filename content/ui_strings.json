@@ -23,6 +23,7 @@
   "tv.reveal.noAnswer": { "ru": "Нет ответа", "en": "No answer" },
   "tv.results.title": { "ru": "Итоги", "en": "Final standings" },
   "tv.results.correctCount": { "ru": "Верных ответов: {count}", "en": "Correct answers: {count}" },
+  "tv.results.lobbyIn": { "ru": "Сбор на новую игру через {seconds}", "en": "Back to the lobby in {seconds}" },
   "tv.awards.mostCorrect": { "ru": "Больше всех верных: {names}", "en": "Most correct: {names}" },
   "screen.waiting.locked": { "ru": "{letter} · {text}", "en": "{letter} · {text}" },
   "screen.result.correctText": { "ru": "Правильный ответ: {letter} · {text}", "en": "Right answer: {letter} · {text}" }

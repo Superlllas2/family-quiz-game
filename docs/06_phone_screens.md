@@ -22,7 +22,7 @@ The phone page draws exactly one screen at a time, the one named in the last `sc
 | Screen id | Shown during | Content | Decision | Next |
 | --- | --- | --- | --- | --- |
 | `join` | Opening the link or QR | Room code field (filled from the URL), name field (1 to 16 characters: letters, Latin or Cyrillic, digits and spaces), language toggle RU or EN (default: Russian), Join button | Join | `pickCharacter` |
-| `pickCharacter` | After joining, in the Lobby | A grid of character cards from `characters.json`, each in its signature color with the character's name and personality line; taken ones greyed; the one the TV assigned is selected | Pick one (ack; `characterTaken` if someone just took it, then the screen refreshes) | `lobby` |
+| `pickCharacter` | After joining, in the Lobby | A grid of character cards from `characters.json`, each in its signature color with the character's name and personality line; taken ones greyed; the one the TV assigned starts selected; a Confirm button below the grid (D77) | Tap a card to select it (phone only), Confirm to pick it (ack; `characterTaken` if someone just took it, then the screen refreshes; a selected card someone else takes falls back to the assigned one) | `lobby` |
 | `lobby` | Lobby | "Ты в игре! / You're in!", list of players with a ready mark each, a Ready button that becomes Not ready once tapped; "Ждём игроков / Waiting for more players" while fewer than 2 are connected, else "Ждём остальных / Waiting for everyone" once ready | Ready or Not ready | `countdown` when everyone is ready |
 | `countdown` | StartCountdown, when everyone is ready | "Игра начинается / Starting" and a big 3, 2, 1, Not ready button | Not ready | `lobby` if stopped, else the next screen sent |
 | `getReady` | Intro, FinalIntro, QuestionShow | A short text sent by the TV app (for QuestionShow: the question). In Intro: prediction "Кто победит? / Who wins tonight?" with player buttons | Prediction tap (Intro only) | Next screen sent |
@@ -35,7 +35,7 @@ The phone page draws exactly one screen at a time, the one named in the last `sc
 | `result` | Reveal and Scores (one phaseId) | "Верно! +850 / Correct! +850" or "Мимо / Wrong", streak, rank. If the player holds a power up: its card, tap it, then a row of target buttons (greyed if hit or immune) | Use power up (optional) | Next screen sent |
 | `roundEnd` | RoundEnd | Own rank and score, "Раунд 3 / Round 3 next" | None | Next screen sent |
 | `raceResult` | Race reveal | "Верно, +1 шаг / Right, +1 step" or "Мимо / Missed", own position on a small track | None | Next screen sent |
-| `results` | Results | Own place, correct answers, awards won | None | `poll`, or `lobby` with the poll off |
+| `results` | Results | Own place, correct answers, awards won, "Сбор на новую игру через N / Back to the lobby in N" from `endsInMs` (D78) | None | `poll`, or `lobby` with the poll off |
 | `poll` | Poll | One question per page, seven pages (`20_playtest.md` lists them); Next and Submit | Answer | `pollDone` |
 | `pollDone` | After submitting, until the poll phase is over | "Спасибо! / Thanks!" | None | `lobby` once the poll phase is over (everyone submitted or 90 s passed) |
 | `settings` | Gear icon, any time | Language RU or EN, "More time" 1x, 1.5x or 2x, Leave game (sends `leave`; the player is out for the rest of the game) | Change | Back to the screen before, or `join` after Leave |
