@@ -49,7 +49,7 @@ Each check is automated (a unit test or a simulated game in the test code) unles
 - [ ] Draw chances by rank match the formula in `03_rules.md` over 10,000 simulated draws within 2% (unit test)
 - [ ] Targeting free and aim up both follow `03_rules.md`; caps and immunity hold (unit tests)
 - [ ] Freeze, slime and fog appear on the target's phone at the start of the next answer phase and can be cleared (manual)
-- [ ] Host lines: at most one line per question cycle, chosen by the priority in `15_schemas.md`; `fastAnswer` only for the single fastest correct player; `playerJoined` fires for each new player in the Lobby, never for a rejoin or Play again; `startCountdown` fires when the countdown begins; the host silent longer speaks; never more than one bubble at a time per host; no line repeats in an evening while others of its trigger remain (unit tests)
+- [ ] Host lines: at most one line per question cycle, chosen by the priority in `15_schemas.md`; `fastAnswer` only for the single fastest correct player; `playerJoined` fires for each new player in the Lobby, never for a rejoin or for players kept after a game; `startCountdown` fires when the countdown begins; the host silent longer speaks; never more than one bubble at a time per host; no line repeats in an evening while others of its trigger remain (unit tests)
 - [ ] The poll appears on every phone after Results, ends when every connected phone submitted or after 90 s, and answers land in the log without player ids
 - [ ] The TV settings panel opens with Tab and changes game language, power ups, each power up type and targeting; Reset seen questions and Back to lobby work (manual)
 - [ ] All content files load and validate; a broken file shows a clear error (unit test with a broken fixture)

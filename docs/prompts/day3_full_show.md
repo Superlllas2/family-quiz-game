@@ -3,7 +3,7 @@
 ```
 Read CLAUDE.md and re-read docs/02_show_flow.md, docs/03_rules.md, docs/04_formats.md, docs/06_phone_screens.md, docs/13_architecture.md, docs/15_schemas.md, docs/18_edge_cases.md and docs/19_acceptance.md (section "Day 3") before starting.
 
-Goal for today: the complete Standard show without power ups: Intro (30 s, no skip), 4 rounds with topic vote and round multipliers, closest value questions, RoundEnd, FinalIntro, the final race with true or false, Results, Play again, and seen questions and race statements remembered across games and app restarts.
+Goal for today: the complete Standard show without power ups: Intro (30 s, no skip), 4 rounds with topic vote and round multipliers, closest value questions, RoundEnd, FinalIntro, the final race with true or false, Results, back to the Lobby for the next game (D76: everyone taps Ready again; the next game skips the Intro), and seen questions and race statements remembered across games and app restarts.
 
 Build on a branch called day3-show, tests first:
 

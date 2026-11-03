@@ -143,11 +143,11 @@ Starting values for playtests. Config validation also checks that each staging a
 | `race.stepsPerCorrect` | 1 | |
 | `race.answer` | 8 | Seconds, times the player's timer multiplier |
 | `race.reveal` | 2 | Seconds |
-| `players.min` | 2 | Needed for Start and Play again |
+| `players.min` | 2 | Needed for the start countdown (every connected player Ready, D76) |
 | `players.max` | 8 | |
 | `players.timerMultiplierOptions` | [1, 1.5, 2] | |
 | `players.seatHoldSeconds` | 300 | Seat kept after a disconnect |
-| `lobby.startCountdownSeconds` | 3 | Countdown after Start or Play again |
+| `lobby.startCountdownSeconds` | 3 | Countdown once every connected player is Ready (D76) |
 | `net.inputGraceMs` | 500 | Grace after a personal deadline for network delay |
 | `net.tvReconnectSeconds` | 2 | TV app retry interval after losing the relay |
 | `hosts.minGapSeconds` | 3 | Silence after a line, per host |

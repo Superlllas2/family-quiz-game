@@ -5,7 +5,7 @@ Do the rehearsal first, then give Claude Code the problems you found.
 ## Rehearsal (you, about 1 hour)
 
 1. Connect the laptop to the TV. Start the game, join with 2 real phones (one iPhone, one Android) and 4 browser tabs on the laptop (`?room=ABCD&tab=2` to `&tab=5`).
-2. Play a full Standard game, then Play again for a second one.
+2. Play a full Standard game, then everyone taps Ready in the Lobby for a second one.
 3. Write down every problem: crashes, confusing screens, text too small, anything slow, anything that felt boring or unfair.
 4. Check every phone screen from `docs/06_phone_screens.md` appeared at least once on both phones.
 5. Afterwards press Tab on the laptop and use Reset seen questions, so game night starts with unseen questions.

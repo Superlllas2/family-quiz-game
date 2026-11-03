@@ -65,7 +65,7 @@ The phase timers in `02_show_flow.md` stay as they are. In game night 1 every `s
 
 ### Seats
 
-Eight seats for `players.max` = 8: a four seat sofa in the middle and two armchairs on each side, in a shallow arc facing `Wide`, with the desk at one end. A new player takes the first free seat in this order: the two middle sofa seats, the two outer sofa seats, the inner armchairs, the outer armchairs. Two to four players therefore sit together on the sofa. Seat positions are markers in the scene, not config numbers. Players keep their seat through Play again and Back to lobby, like their character.
+Eight seats for `players.max` = 8: a four seat sofa in the middle and two armchairs on each side, in a shallow arc facing `Wide`, with the desk at one end. A new player takes the first free seat in this order: the two middle sofa seats, the two outer sofa seats, the inner armchairs, the outer armchairs. Two to four players therefore sit together on the sofa. Seat positions are markers in the scene, not config numbers. Players keep their seat through the return to the Lobby after a game and Back to lobby, like their character.
 
 ## Characters
 
