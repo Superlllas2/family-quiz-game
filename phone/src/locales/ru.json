@@ -63,5 +63,18 @@
   "settings.leaveYes": "Выйти",
   "settings.leaveNo": "Остаться",
   "settings.close": "Готово",
-  "input.closed": "Время вышло"
+  "input.closed": "Время вышло",
+  "topicVote.title": "Выбери тему",
+  "slider.lock": "Ответить",
+  "slider.minus": "Меньше",
+  "slider.plus": "Больше",
+  "trueFalse.true": "Правда",
+  "trueFalse.false": "Ложь",
+  "roundEnd.rank": "Твоё место: {rank}",
+  "roundEnd.score": "Счёт: {score}",
+  "roundEnd.next": "Раунд {round}",
+  "roundEnd.finalNext": "Дальше финальная гонка",
+  "race.right": "Верно, +1 шаг",
+  "race.missed": "Мимо",
+  "race.step": "Шаг {position} из {finish}"
 }

@@ -63,5 +63,18 @@
   "settings.leaveYes": "Leave",
   "settings.leaveNo": "Stay",
   "settings.close": "Done",
-  "input.closed": "Time's up"
+  "input.closed": "Time's up",
+  "topicVote.title": "Pick a topic",
+  "slider.lock": "Lock",
+  "slider.minus": "Less",
+  "slider.plus": "More",
+  "trueFalse.true": "True",
+  "trueFalse.false": "False",
+  "roundEnd.rank": "Your rank: {rank}",
+  "roundEnd.score": "Score: {score}",
+  "roundEnd.next": "Round {round} next",
+  "roundEnd.finalNext": "Final race next",
+  "race.right": "Right, +1 step",
+  "race.missed": "Missed",
+  "race.step": "Step {position} of {finish}"
 }
