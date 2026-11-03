@@ -120,18 +120,22 @@ namespace FamilyQuiz.Presentation
         private void Build()
         {
             _title = UiBuilder.Text("Title", transform, 64, TvColors.DimText, true, TextAlignmentOptions.Center);
-            UiBuilder.Anchor(_title.rectTransform, 0.05f, 0.9f, 0.95f, 0.97f);
+            _title.textWrappingMode = TextWrappingModes.NoWrap;
+            // The 64 pt line is taller than a short box: with the default ellipsis TMP would hide it entirely.
+            _title.overflowMode = TextOverflowModes.Overflow;
+            UiBuilder.Anchor(_title.rectTransform, 0.05f, 0.885f, 0.95f, 0.975f);
 
             _winner = UiBuilder.Text("Winner", transform, 104, TvColors.Text, true, TextAlignmentOptions.Center);
             _winner.enableAutoSizing = true;
             _winner.fontSizeMin = 72;
             _winner.fontSizeMax = 104;
             _winner.textWrappingMode = TextWrappingModes.NoWrap;
-            UiBuilder.Anchor(_winner.rectTransform, 0.03f, 0.78f, 0.97f, 0.9f);
+            UiBuilder.Anchor(_winner.rectTransform, 0.03f, 0.77f, 0.97f, 0.885f);
 
             _prize = UiBuilder.Text("Prize", transform, 44, TvColors.DimText, false, TextAlignmentOptions.Center);
             _prize.textWrappingMode = TextWrappingModes.NoWrap;
-            UiBuilder.Anchor(_prize.rectTransform, 0.05f, 0.72f, 0.95f, 0.78f);
+            _prize.overflowMode = TextOverflowModes.Overflow;
+            UiBuilder.Anchor(_prize.rectTransform, 0.05f, 0.71f, 0.95f, 0.77f);
 
             _award = AwardLine("MostCorrect", 0.64f, 0.71f);
             _comeback = AwardLine("BestComeback", 0.57f, 0.64f);

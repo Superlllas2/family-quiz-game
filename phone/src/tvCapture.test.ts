@@ -3,10 +3,8 @@
 // screen reader must return the TV's own values, not its defaults: a field name or shape mismatch between the TV app
 // and the phone page fails here.
 //
-// The capture is still from a protocol version 1 game. Version 2 (D88) removed the `getReady`, `roundEnd` and
-// `raceResult` screens, the question, statement and pending fields, and changed `result` (power up only) and `results`
-// (the winner's fact only). Those are skipped here; the fields that did not change are still checked. The fixture
-// will be recaptured from a real version 2 game, and then `watch` and the new `results` are checked too.
+// The capture is from a protocol version 2 game (D88): the phone gets `watch` between decisions, and only the winner
+// gets `results` with the fact. Power ups come on Day 4, so the capture holds no `result` screen yet.
 
 import { describe, expect, it } from 'vitest';
 import capture from './fixtures/tvCapture.json';
@@ -17,6 +15,7 @@ import {
   lobbyData,
   parseIncoming,
   pickCharacterData,
+  resultsData,
   playerView,
   textData,
   topicVoteData,
@@ -43,9 +42,15 @@ describe('the phone page parses every frame the TV app sent in a whole game', ()
     frames.forEach((f, i) => expect(parsed[i], f).not.toBeNull());
   });
 
+  it('every frame is version 2, and no removed screen appears', () => {
+    raw.forEach((m, i) => expect(m.v, frames[i]).toBe(2));
+    for (const id of ['getReady', 'roundEnd', 'raceResult']) expect(screens(id), id).toHaveLength(0);
+  });
+
   it('has every screen that version 2 kept in the capture', () => {
     const kept = [
       'pickCharacter', 'lobby', 'countdown', 'topicVote', 'answerChoice', 'answerSlider', 'answerTrueFalse', 'waiting',
+      'watch', 'results',
     ];
     for (const id of kept) {
       expect(screens(id).length, id).toBeGreaterThan(0);
@@ -118,8 +123,16 @@ describe('the phone page parses every frame the TV app sent in a whole game', ()
     for (const s of screens('pollDone')) {
       expect(s.data).toEqual({}); // D76: no Play again, so no canPlayAgain
     }
-    // Not checked until the recapture: `getReady`, `roundEnd`, `raceResult` (gone in version 2), `result` and
-    // `results` (their version 1 fields are gone), `watch` (new in version 2).
+    for (const s of screens('watch')) {
+      expect(s.data).toEqual({});
+    }
+    // One winner per game, and the fact is all the screen carries (D87).
+    const results = screens('results');
+    for (const s of results) {
+      expect(Object.keys(s.data)).toEqual(['fact']);
+      expect(resultsData(s.data).fact).toBe(s.data.fact);
+      expect(resultsData(s.data).fact).not.toBe('');
+    }
   });
 
   it('reads every ack', () => {
