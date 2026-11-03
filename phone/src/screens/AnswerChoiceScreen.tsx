@@ -1,4 +1,5 @@
-// Screen `answerChoice` (06): four big buttons 2x2, each a quarter of the space below the top bar.
+// Screen `answerChoice` (06): four big buttons 2x2 with the option texts, each a quarter of the space below the top
+// bar. No question text: it is on the TV (D88).
 // The answer clock starts when this screen is first drawn for a phaseId; a last call (same phaseId, smaller
 // `endsInMs`) only moves the countdown. One tap locks: the pressed button stays highlighted, the others dim,
 // and later taps are ignored. The countdown lives in the top bar (app.tsx).

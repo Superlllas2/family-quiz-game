@@ -9,7 +9,7 @@ import type { InputSender, TrackedInput } from './net/inputs';
 import type { Session, SessionStatus } from './net/session';
 import {
   answerWindowMs, characterMessage, choiceInputMessage, leaveMessage, lobbyData, lobbyMessage, playerView,
-  predictionInputMessage, settingsMessage, trueFalseInputMessage, valueInputMessage, voteInputMessage,
+  settingsMessage, trueFalseInputMessage, valueInputMessage, voteInputMessage,
   type AckedMessage, type IncomingMessage, type Lang, type PhaseId, type PlayerView, type ScreenState,
 } from './protocol';
 import { shownReady, toggleReady } from './readyToggle';
@@ -17,10 +17,7 @@ import { AnswerChoiceScreen } from './screens/AnswerChoiceScreen';
 import { AnswerSliderScreen } from './screens/AnswerSliderScreen';
 import { AnswerTrueFalseScreen } from './screens/AnswerTrueFalseScreen';
 import { CountdownScreen } from './screens/CountdownScreen';
-import {
-  GetReadyScreen, RaceResultScreen, ResultScreen, ResultsScreen, RoundEndScreen, TvErrorScreen, WaitingScreen,
-  WatchTvBody,
-} from './screens/InfoScreens';
+import { ResultsScreen, TvErrorScreen, WaitingScreen, WatchScreen } from './screens/InfoScreens';
 import { JoinScreen } from './screens/JoinScreen';
 import { LobbyScreen } from './screens/LobbyScreen';
 import { PickCharacterScreen } from './screens/PickCharacterScreen';
@@ -30,6 +27,7 @@ import { ErrorScreen, ReconnectingScreen } from './screens/StatusScreens';
 import { TopicVoteScreen } from './screens/TopicVoteScreen';
 import { TopBar } from './screens/TopBar';
 import { useRemaining } from './screens/useRemaining';
+import { shownScreen } from './shownScreen';
 
 export interface AppDeps {
   session: Session;
@@ -50,7 +48,7 @@ interface Current { screen: ScreenState; receivedAt: number }
 
 /**
  * One button's input on one screen: its status shows only while that screen's phaseId is current. `answer` is the one
- * decision of a game phase: a prediction, a vote, a choice, a value or true or false.
+ * decision of a game phase: a vote, a choice, a value or true or false.
  */
 type Slot = 'ready' | 'character' | 'answer';
 interface SlotInput { inputId: string; phaseId: PhaseId; characterId?: number }
@@ -63,8 +61,8 @@ export function App({ deps }: { deps: AppDeps }) {
   const [lang, setLangState] = useState<Lang>(deps.initialLang);
   const [inputs, setInputs] = useState<Record<string, TrackedInput>>({});
   const [slots, setSlots] = useState<Partial<Record<Slot, SlotInput>>>({});
-  /** What this phone sent for the current phase's one decision (door, choice, value, true or false, playerId). */
-  const [answer, setAnswer] = useState<{ phaseId: PhaseId; value: number | boolean | string } | null>(null);
+  /** What this phone sent for the current phase's one decision (door, choice, value, true or false). */
+  const [answer, setAnswer] = useState<{ phaseId: PhaseId; value: number | boolean } | null>(null);
   /** The last Ready or Not ready tap, shown at once until the TV's next screen (D76). */
   const [readyTap, setReadyTap] = useState<boolean | null>(null);
   /** The phaseId already answered: set at once, so a second tap before the re-render is ignored too. */
@@ -177,7 +175,7 @@ export function App({ deps }: { deps: AppDeps }) {
    */
   const decide = (
     screenId: string,
-    value: number | boolean | string,
+    value: number | boolean,
     build: (inputId: string, phaseId: PhaseId, ms: number) => AckedMessage,
   ): void => {
     if (!screen || screen.id !== screenId) return;
@@ -194,8 +192,6 @@ export function App({ deps }: { deps: AppDeps }) {
     answer && screen && answer.phaseId === screen.phaseId && typeof answer.value === 'number' ? answer.value : null;
   const sentBoolean = (): boolean | null =>
     answer && screen && answer.phaseId === screen.phaseId && typeof answer.value === 'boolean' ? answer.value : null;
-  const sentString = (): string | null =>
-    answer && screen && answer.phaseId === screen.phaseId && typeof answer.value === 'string' ? answer.value : null;
 
   const multiplier = player?.timerMultiplier ?? 1;
 
@@ -225,9 +221,10 @@ export function App({ deps }: { deps: AppDeps }) {
   let body;
 
   if (!current || !screen) {
-    body = <WatchTvBody lang={lang} />;
+    body = <WatchScreen lang={lang} player={player} />;
   } else {
-    switch (screen.id) {
+    // Anything the phone does not draw (an unknown id, or `result` until power ups exist) is `watch` (shownScreen.ts).
+    switch (shownScreen(screen.id)) {
       case 'pickCharacter': {
         const s = slots.character;
         const pick = s && s.characterId !== undefined
@@ -271,18 +268,6 @@ export function App({ deps }: { deps: AppDeps }) {
             now={deps.now}
             notReadyInput={slotInput('ready')}
             onNotReady={() => sendFor('ready', lobbyMessage(deps.newInputId(), 'notReady'))}
-          />
-        );
-        break;
-      case 'getReady':
-        body = (
-          <GetReadyScreen
-            lang={lang}
-            screen={screen}
-            predicted={sentString()}
-            predictionInput={slotInput('answer')}
-            onPredict={(playerId) =>
-              decide('getReady', playerId, (id, phaseId) => predictionInputMessage(id, phaseId, playerId))}
           />
         );
         break;
@@ -349,17 +334,8 @@ export function App({ deps }: { deps: AppDeps }) {
       case 'waiting':
         body = <WaitingScreen lang={lang} screen={screen} />;
         break;
-      case 'result':
-        body = <ResultScreen lang={lang} screen={screen} />;
-        break;
-      case 'roundEnd':
-        body = <RoundEndScreen lang={lang} screen={screen} />;
-        break;
-      case 'raceResult':
-        body = <RaceResultScreen lang={lang} screen={screen} characterId={player?.characterId ?? null} />;
-        break;
       case 'results':
-        body = <ResultsScreen lang={lang} screen={screen} receivedAt={current.receivedAt} now={deps.now} />;
+        body = <ResultsScreen lang={lang} screen={screen} />;
         break;
       case 'pollDone':
         body = <PollDoneScreen lang={lang} />;
@@ -367,8 +343,8 @@ export function App({ deps }: { deps: AppDeps }) {
       case 'error':
         body = <TvErrorScreen lang={lang} screen={screen} />;
         break;
-      default:
-        body = <WatchTvBody lang={lang} />;
+      case 'watch':
+        body = <WatchScreen lang={lang} player={player} />;
         break;
     }
   }

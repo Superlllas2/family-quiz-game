@@ -1,4 +1,4 @@
-// Message types and builders for the phone side of docs/PROTOCOL.md (protocol version 1).
+// Message types and builders for the phone side of docs/PROTOCOL.md (protocol version 2).
 // The phone sends and receives the inner messages only; there is no envelope between relay and phone.
 
 import { PROTOCOL_VERSION } from './constants';
@@ -13,32 +13,28 @@ export type PhaseId = number;
 
 // ---- Phone to TV app (section 3) ----
 
-export interface JoinMessage { v: 1; type: 'join'; name: string; lang: Lang }
-export interface RejoinMessage { v: 1; type: 'rejoin'; token: string }
+export interface JoinMessage { v: 2; type: 'join'; name: string; lang: Lang }
+export interface RejoinMessage { v: 2; type: 'rejoin'; token: string }
 export interface ChoiceInputMessage {
-  v: 1; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'choice'; choice: number; ms: number;
+  v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'choice'; choice: number; ms: number;
 }
 export interface VoteInputMessage {
-  v: 1; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'vote'; door: number;
+  v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'vote'; door: number;
 }
 export interface ValueInputMessage {
-  v: 1; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'value'; value: number; ms: number;
+  v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'value'; value: number; ms: number;
 }
 export interface TrueFalseInputMessage {
-  v: 1; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'trueFalse'; answer: boolean; ms: number;
-}
-export interface PredictionInputMessage {
-  v: 1; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'prediction'; playerId: string;
+  v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'trueFalse'; answer: boolean; ms: number;
 }
 /** Every `input` kind the phone sends (PROTOCOL.md section 3, `input` kinds). */
-export type InputMessage =
-  | ChoiceInputMessage | VoteInputMessage | ValueInputMessage | TrueFalseInputMessage | PredictionInputMessage;
-export interface LobbyMessage { v: 1; type: 'lobby'; inputId: string; action: LobbyAction }
-export interface CharacterMessage { v: 1; type: 'character'; inputId: string; characterId: number }
+export type InputMessage = ChoiceInputMessage | VoteInputMessage | ValueInputMessage | TrueFalseInputMessage;
+export interface LobbyMessage { v: 2; type: 'lobby'; inputId: string; action: LobbyAction }
+export interface CharacterMessage { v: 2; type: 'character'; inputId: string; characterId: number }
 /** No inputId and no ack (PROTOCOL.md section 3). */
-export interface SettingsMessage { v: 1; type: 'settings'; lang: Lang; timerMultiplier: number }
-export interface LeaveMessage { v: 1; type: 'leave'; inputId: string }
-export interface PingMessage { v: 1; type: 'ping'; t: number }
+export interface SettingsMessage { v: 2; type: 'settings'; lang: Lang; timerMultiplier: number }
+export interface LeaveMessage { v: 2; type: 'leave'; inputId: string }
+export interface PingMessage { v: 2; type: 'ping'; t: number }
 
 export type PhoneMessage =
   | JoinMessage | RejoinMessage | InputMessage | LobbyMessage | CharacterMessage
@@ -47,7 +43,7 @@ export type PhoneMessage =
 /** A message that is answered with an `ack` and goes through the input sender. */
 export type AckedMessage = InputMessage | LobbyMessage | CharacterMessage | LeaveMessage;
 
-const v = PROTOCOL_VERSION as 1;
+const v = PROTOCOL_VERSION as 2;
 
 export function joinMessage(name: string, lang: Lang): JoinMessage {
   return { v, type: 'join', name, lang };
@@ -73,10 +69,6 @@ export function trueFalseInputMessage(
   inputId: string, phaseId: PhaseId, answer: boolean, ms: number,
 ): TrueFalseInputMessage {
   return { v, type: 'input', inputId, phaseId, kind: 'trueFalse', answer, ms };
-}
-
-export function predictionInputMessage(inputId: string, phaseId: PhaseId, playerId: string): PredictionInputMessage {
-  return { v, type: 'input', inputId, phaseId, kind: 'prediction', playerId };
 }
 
 export function lobbyMessage(inputId: string, action: LobbyAction): LobbyMessage {
@@ -232,22 +224,13 @@ function list(x: unknown): unknown[] {
   return Array.isArray(x) ? x : [];
 }
 
-function lobbyPlayers(x: unknown): LobbyPlayer[] {
-  const players: LobbyPlayer[] = [];
-  for (const p of list(x)) {
-    if (isObj(p) && typeof p.playerId === 'string') {
-      players.push({ playerId: p.playerId, name: str(p.name), characterId: num(p.characterId, -1) });
-    }
-  }
-  return players;
-}
-
-/** The `player` object (PROTOCOL.md section 4) as the top bar and settings need it. */
+/**
+ * The `player` object (PROTOCOL.md section 4) as the top bar and settings need it. Score and rank are not read: they
+ * are on the TV only (D88).
+ */
 export interface PlayerView {
   name: string;
   characterId: number;
-  score: number;
-  rank: number | null;
   /** 1 when missing: the TV app's default. */
   timerMultiplier: number;
 }
@@ -256,8 +239,6 @@ export function playerView(p: PlayerInfo): PlayerView {
   return {
     name: p.name,
     characterId: p.characterId,
-    score: num(p.score, 0),
-    rank: numOrNull(p.rank),
     timerMultiplier: num(p.timerMultiplier, 1),
   };
 }
@@ -289,22 +270,18 @@ export function pickCharacterData(data: Record<string, unknown>): { taken: numbe
   return { taken, current: numOrNull(data.current) };
 }
 
-/** Screens `countdown`, `error`, and the text of `getReady`. */
+/** Screens `countdown` and `error`. */
 export function textData(data: Record<string, unknown>): { text: string } {
   return { text: str(data.text) };
 }
 
-/** Screen `getReady`. `prediction` (Intro only) lists the players to tap for "Who wins tonight?"; empty otherwise. */
-export function getReadyData(data: Record<string, unknown>): { text: string; prediction: LobbyPlayer[] } {
-  return { text: str(data.text), prediction: lobbyPlayers(data.prediction) };
-}
-
-/** Screen `answerChoice`: up to 4 options in display order; the index of each is the `choice` sent. */
-export function answerChoiceData(
-  data: Record<string, unknown>,
-): { question: string; options: string[]; windowMs: number | null } {
+/**
+ * Screen `answerChoice`: up to 4 options in display order; the index of each is the `choice` sent. The question is on
+ * the TV only (D88).
+ */
+export function answerChoiceData(data: Record<string, unknown>): { options: string[]; windowMs: number | null } {
   const options = list(data.options).slice(0, 4).map(str);
-  return { question: str(data.question), options, windowMs: numOrNull(data.windowMs) };
+  return { options, windowMs: numOrNull(data.windowMs) };
 }
 
 /** Screen `topicVote`: the door titles in order; the index of each is the `door` sent. */
@@ -314,7 +291,6 @@ export function topicVoteData(data: Record<string, unknown>): { doors: string[] 
 }
 
 export interface AnswerSliderData {
-  question: string;
   min: number;
   max: number;
   step: number;
@@ -322,10 +298,12 @@ export interface AnswerSliderData {
   windowMs: number | null;
 }
 
-/** Screen `answerSlider` (closest value). A missing or broken number reads as 0 (step: 1); the slider guards the range. */
+/**
+ * Screen `answerSlider` (closest value). A missing or broken number reads as 0 (step: 1); the slider guards the range.
+ * The question is on the TV only (D88).
+ */
 export function answerSliderData(data: Record<string, unknown>): AnswerSliderData {
   return {
-    question: str(data.question),
     min: num(data.min, 0),
     max: num(data.max, 0),
     step: num(data.step, 1),
@@ -334,9 +312,9 @@ export function answerSliderData(data: Record<string, unknown>): AnswerSliderDat
   };
 }
 
-/** Screen `answerTrueFalse` (final race). */
-export function answerTrueFalseData(data: Record<string, unknown>): { statement: string; windowMs: number | null } {
-  return { statement: str(data.statement), windowMs: numOrNull(data.windowMs) };
+/** Screen `answerTrueFalse` (final race). The statement is on the TV only (D88). */
+export function answerTrueFalseData(data: Record<string, unknown>): { windowMs: number | null } {
+  return { windowMs: numOrNull(data.windowMs) };
 }
 
 /**
@@ -354,44 +332,22 @@ export function answerWindowMs(screen: ScreenState): number | null {
   }
 }
 
-/** Screen `roundEnd`. `nextRound` is null after the last round: the final race comes next. */
-export function roundEndData(
-  data: Record<string, unknown>,
-): { rank: number | null; score: number; nextRound: number | null } {
-  return { rank: numOrNull(data.rank), score: num(data.score, 0), nextRound: numOrNull(data.nextRound) };
-}
-
-/** Screen `raceResult`: right or not, the player's step on the track, and the finish step. */
-export function raceResultData(
-  data: Record<string, unknown>,
-): { correct: boolean; position: number; finish: number } {
-  return { correct: data.correct === true, position: num(data.position, 0), finish: num(data.finish, 0) };
-}
-
-export interface PendingPlayer { name: string; characterId: number }
-
-/** Screen `waiting`. */
-export function waitingData(data: Record<string, unknown>): { locked: string; pending: PendingPlayer[] } {
-  const pending: PendingPlayer[] = [];
-  for (const p of list(data.pending)) {
-    if (isObj(p)) pending.push({ name: str(p.name), characterId: num(p.characterId, -1) });
-  }
-  return { locked: str(data.locked), pending };
+/** Screen `waiting`: the text of what was locked. */
+export function waitingData(data: Record<string, unknown>): { locked: string } {
+  return { locked: str(data.locked) };
 }
 
 export interface PowerUpTarget { playerId: string; name: string; available: boolean }
 
 export interface ResultData {
-  correct: boolean;
-  points: number;
-  correctText: string;
-  streak: number;
-  rank: number | null;
   powerUp: string | null;
   targets: PowerUpTarget[];
 }
 
-/** Screen `result`. `powerUp` and `targets` are read but not drawn yet (Day 2: always null and empty). */
+/**
+ * Screen `result`: sent only to a player holding a power up (power ups come on Day 4). Read here but not drawn yet:
+ * the phone shows `watch` for it (shownScreen.ts).
+ */
 export function resultData(data: Record<string, unknown>): ResultData {
   const targets: PowerUpTarget[] = [];
   for (const p of list(data.targets)) {
@@ -399,21 +355,10 @@ export function resultData(data: Record<string, unknown>): ResultData {
       targets.push({ playerId: p.playerId, name: str(p.name), available: p.available === true });
     }
   }
-  return {
-    correct: data.correct === true,
-    points: num(data.points, 0),
-    correctText: str(data.correctText),
-    streak: num(data.streak, 0),
-    rank: numOrNull(data.rank),
-    powerUp: typeof data.powerUp === 'string' ? data.powerUp : null,
-    targets,
-  };
+  return { powerUp: typeof data.powerUp === 'string' ? data.powerUp : null, targets };
 }
 
-/** Screen `results`. */
-export function resultsData(
-  data: Record<string, unknown>,
-): { place: number | null; correctCount: number; awards: string[] } {
-  const awards = list(data.awards).filter((x): x is string => typeof x === 'string' && x !== '');
-  return { place: numOrNull(data.place), correctCount: num(data.correctCount, 0), awards };
+/** Screen `results`, sent only to the winner: the reward fact, already in the player's language (D87). */
+export function resultsData(data: Record<string, unknown>): { fact: string } {
+  return { fact: str(data.fact) };
 }

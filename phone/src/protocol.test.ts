@@ -1,98 +1,98 @@
 import { describe, expect, it } from 'vitest';
 import {
   answerChoiceData, answerSliderData, answerTrueFalseData, answerWindowMs, characterMessage, choiceInputMessage,
-  getReadyData, joinMessage, leaveMessage, lobbyData, lobbyMessage, parseIncoming, pickCharacterData, pingMessage,
-  playerView, predictionInputMessage, raceResultData, rejoinMessage, resultData, resultsData, roundEndData,
-  settingsMessage, textData, topicVoteData, trueFalseInputMessage, valueInputMessage, voteInputMessage, waitingData,
+  joinMessage, leaveMessage, lobbyData, lobbyMessage, parseIncoming, pickCharacterData, pingMessage, playerView,
+  rejoinMessage, resultData, resultsData, settingsMessage, textData, topicVoteData, trueFalseInputMessage,
+  valueInputMessage, voteInputMessage, waitingData,
 } from './protocol';
+import { PROTOCOL_VERSION } from './constants';
 import { socketUrl } from './net/socketUrl';
 
 describe('message builders match PROTOCOL.md section 3 exactly', () => {
+  it('protocol version 2 (PROTOCOL.md section 7, D88)', () => {
+    expect(PROTOCOL_VERSION).toBe(2);
+  });
+
   it('join', () => {
-    expect(joinMessage('Mama', 'ru')).toStrictEqual({ v: 1, type: 'join', name: 'Mama', lang: 'ru' });
+    expect(joinMessage('Mama', 'ru')).toStrictEqual({ v: 2, type: 'join', name: 'Mama', lang: 'ru' });
   });
 
   it('rejoin', () => {
-    expect(rejoinMessage('t0k3n')).toStrictEqual({ v: 1, type: 'rejoin', token: 't0k3n' });
+    expect(rejoinMessage('t0k3n')).toStrictEqual({ v: 2, type: 'rejoin', token: 't0k3n' });
   });
 
   it('input of kind choice', () => {
     const msg = choiceInputMessage('a2', 16, 1, 3410);
-    expect(msg).toStrictEqual({ v: 1, type: 'input', inputId: 'a2', phaseId: 16, kind: 'choice', choice: 1, ms: 3410 });
-    expect(JSON.stringify(msg)).toBe('{"v":1,"type":"input","inputId":"a2","phaseId":16,"kind":"choice","choice":1,"ms":3410}');
+    expect(msg).toStrictEqual({ v: 2, type: 'input', inputId: 'a2', phaseId: 16, kind: 'choice', choice: 1, ms: 3410 });
+    expect(JSON.stringify(msg)).toBe('{"v":2,"type":"input","inputId":"a2","phaseId":16,"kind":"choice","choice":1,"ms":3410}');
   });
 
   it('input of kind vote', () => {
     expect(JSON.stringify(voteInputMessage('a1', 14, 2)))
-      .toBe('{"v":1,"type":"input","inputId":"a1","phaseId":14,"kind":"vote","door":2}');
+      .toBe('{"v":2,"type":"input","inputId":"a1","phaseId":14,"kind":"vote","door":2}');
   });
 
   it('input of kind value', () => {
     expect(JSON.stringify(valueInputMessage('a3', 31, 1889, 11200)))
-      .toBe('{"v":1,"type":"input","inputId":"a3","phaseId":31,"kind":"value","value":1889,"ms":11200}');
+      .toBe('{"v":2,"type":"input","inputId":"a3","phaseId":31,"kind":"value","value":1889,"ms":11200}');
     expect(valueInputMessage('a5', 31, 2.5, 900)).toStrictEqual({
-      v: 1, type: 'input', inputId: 'a5', phaseId: 31, kind: 'value', value: 2.5, ms: 900,
+      v: 2, type: 'input', inputId: 'a5', phaseId: 31, kind: 'value', value: 2.5, ms: 900,
     });
   });
 
   it('input of kind trueFalse', () => {
     expect(JSON.stringify(trueFalseInputMessage('a4', 80, true, 2100)))
-      .toBe('{"v":1,"type":"input","inputId":"a4","phaseId":80,"kind":"trueFalse","answer":true,"ms":2100}');
+      .toBe('{"v":2,"type":"input","inputId":"a4","phaseId":80,"kind":"trueFalse","answer":true,"ms":2100}');
     expect(trueFalseInputMessage('a6', 80, false, 0).answer).toBe(false);
   });
 
-  it('input of kind prediction', () => {
-    expect(JSON.stringify(predictionInputMessage('a7', 3, 'p2')))
-      .toBe('{"v":1,"type":"input","inputId":"a7","phaseId":3,"kind":"prediction","playerId":"p2"}');
-  });
-
   it('lobby ready', () => {
-    expect(lobbyMessage('x1', 'ready')).toStrictEqual({ v: 1, type: 'lobby', inputId: 'x1', action: 'ready' });
-    expect(JSON.stringify(lobbyMessage('x1', 'ready'))).toBe('{"v":1,"type":"lobby","inputId":"x1","action":"ready"}');
+    expect(lobbyMessage('x1', 'ready')).toStrictEqual({ v: 2, type: 'lobby', inputId: 'x1', action: 'ready' });
+    expect(JSON.stringify(lobbyMessage('x1', 'ready'))).toBe('{"v":2,"type":"lobby","inputId":"x1","action":"ready"}');
   });
 
   it('lobby notReady', () => {
-    expect(lobbyMessage('x2', 'notReady')).toStrictEqual({ v: 1, type: 'lobby', inputId: 'x2', action: 'notReady' });
+    expect(lobbyMessage('x2', 'notReady')).toStrictEqual({ v: 2, type: 'lobby', inputId: 'x2', action: 'notReady' });
     expect(JSON.stringify(lobbyMessage('x2', 'notReady')))
-      .toBe('{"v":1,"type":"lobby","inputId":"x2","action":"notReady"}');
+      .toBe('{"v":2,"type":"lobby","inputId":"x2","action":"notReady"}');
   });
 
   it('character', () => {
-    expect(JSON.stringify(characterMessage('c1', 7))).toBe('{"v":1,"type":"character","inputId":"c1","characterId":7}');
+    expect(JSON.stringify(characterMessage('c1', 7))).toBe('{"v":2,"type":"character","inputId":"c1","characterId":7}');
   });
 
   it('settings has no inputId', () => {
-    expect(settingsMessage('en', 1.5)).toStrictEqual({ v: 1, type: 'settings', lang: 'en', timerMultiplier: 1.5 });
+    expect(settingsMessage('en', 1.5)).toStrictEqual({ v: 2, type: 'settings', lang: 'en', timerMultiplier: 1.5 });
   });
 
   it('leave', () => {
-    expect(JSON.stringify(leaveMessage('l1'))).toBe('{"v":1,"type":"leave","inputId":"l1"}');
+    expect(JSON.stringify(leaveMessage('l1'))).toBe('{"v":2,"type":"leave","inputId":"l1"}');
   });
 
   it('ping', () => {
-    expect(pingMessage(1234)).toStrictEqual({ v: 1, type: 'ping', t: 1234 });
+    expect(pingMessage(1234)).toStrictEqual({ v: 2, type: 'ping', t: 1234 });
   });
 });
 
 describe('incoming messages', () => {
   it('parses welcome, snapshot, screen, ack and pong', () => {
-    expect(parseIncoming('{"v":1,"type":"welcome","playerId":"p3","token":"abc","room":"ABCD"}'))
+    expect(parseIncoming('{"v":2,"type":"welcome","playerId":"p3","token":"abc","room":"ABCD"}'))
       .toEqual({ type: 'welcome', playerId: 'p3', token: 'abc', room: 'ABCD' });
     const snap = parseIncoming(JSON.stringify({
-      v: 1, type: 'snapshot',
+      v: 2, type: 'snapshot',
       player: { playerId: 'p3', name: 'Mama', characterId: 4 },
       screen: { phaseId: 2, id: 'lobby', endsInMs: null, data: { players: [], ready: false, enoughPlayers: false } },
     }));
     expect(snap).toMatchObject({ type: 'snapshot', screen: { phaseId: 2, id: 'lobby' }, player: { playerId: 'p3' } });
-    expect(parseIncoming('{"v":1,"type":"screen","phaseId":5,"id":"lobby","endsInMs":null,"data":{}}'))
+    expect(parseIncoming('{"v":2,"type":"screen","phaseId":5,"id":"lobby","endsInMs":null,"data":{}}'))
       .toEqual({ type: 'screen', phaseId: 5, id: 'lobby', endsInMs: null, data: {} });
-    expect(parseIncoming('{"v":1,"type":"ack","inputId":"a1","ok":false,"reason":"invalid"}'))
+    expect(parseIncoming('{"v":2,"type":"ack","inputId":"a1","ok":false,"reason":"invalid"}'))
       .toEqual({ type: 'ack', inputId: 'a1', ok: false, reason: 'invalid' });
-    expect(parseIncoming('{"v":1,"type":"pong","t":10,"tv":99}')).toEqual({ type: 'pong', t: 10, tv: 99 });
+    expect(parseIncoming('{"v":2,"type":"pong","t":10,"tv":99}')).toEqual({ type: 'pong', t: 10, tv: 99 });
   });
 
   it('never crashes on unknown or broken messages', () => {
-    expect(parseIncoming('{"v":1,"type":"effect","effect":"freeze"}')).toBeNull();
+    expect(parseIncoming('{"v":2,"type":"effect","effect":"freeze"}')).toBeNull();
     expect(parseIncoming('not json')).toBeNull();
     expect(parseIncoming('[1,2]')).toBeNull();
     expect(parseIncoming('null')).toBeNull();
@@ -126,7 +126,7 @@ describe('incoming messages', () => {
 
   it('parses the player message', () => {
     const msg = parseIncoming(JSON.stringify({
-      v: 1, type: 'player',
+      v: 2, type: 'player',
       player: { playerId: 'p3', name: 'Mama', characterId: 4, lang: 'ru', score: 2350, rank: 2, streak: 1, timerMultiplier: 1.5 },
     }));
     expect(msg).toMatchObject({ type: 'player', player: { playerId: 'p3', score: 2350 } });
@@ -134,11 +134,11 @@ describe('incoming messages', () => {
 });
 
 describe('screen data readers (PROTOCOL.md section 4) never crash', () => {
-  it('player view, with defaults for missing fields', () => {
+  it('player view: name, character and timer multiplier; no score or rank on the phone (D88)', () => {
     expect(playerView({ playerId: 'p3', name: 'Mama', characterId: 4, score: 2350, rank: 2, timerMultiplier: 1.5 }))
-      .toEqual({ name: 'Mama', characterId: 4, score: 2350, rank: 2, timerMultiplier: 1.5 });
-    expect(playerView({ playerId: 'p3', name: 'Mama', characterId: 4, score: 'x' }))
-      .toEqual({ name: 'Mama', characterId: 4, score: 0, rank: null, timerMultiplier: 1 });
+      .toStrictEqual({ name: 'Mama', characterId: 4, timerMultiplier: 1.5 });
+    expect(playerView({ playerId: 'p3', name: 'Mama', characterId: 4, timerMultiplier: 'x' }))
+      .toStrictEqual({ name: 'Mama', characterId: 4, timerMultiplier: 1 });
   });
 
   it('pickCharacter', () => {
@@ -151,18 +151,13 @@ describe('screen data readers (PROTOCOL.md section 4) never crash', () => {
     expect(textData({ text: 5 })).toEqual({ text: '' });
   });
 
-  it('getReady, with or without prediction', () => {
-    expect(getReadyData({ text: 'Q?' })).toEqual({ text: 'Q?', prediction: [] });
-    expect(getReadyData({ text: 'Intro', prediction: [{ playerId: 'p1', name: 'A', characterId: 2 }, null] }))
-      .toEqual({ text: 'Intro', prediction: [{ playerId: 'p1', name: 'A', characterId: 2 }] });
-  });
-
-  it('answerChoice', () => {
-    expect(answerChoiceData({ question: 'Q', options: ['a', 'b', 'c', 'd'], windowMs: 15000 }))
-      .toEqual({ question: 'Q', options: ['a', 'b', 'c', 'd'], windowMs: 15000 });
-    expect(answerChoiceData({ options: ['a', 2, 'c', 'd', 'e'] }))
-      .toEqual({ question: '', options: ['a', '', 'c', 'd'], windowMs: null });
-    expect(answerChoiceData({})).toEqual({ question: '', options: [], windowMs: null });
+  it('answerChoice: the options and the window, no question (D88)', () => {
+    expect(answerChoiceData({ options: ['a', 'b', 'c', 'd'], windowMs: 15000 }))
+      .toStrictEqual({ options: ['a', 'b', 'c', 'd'], windowMs: 15000 });
+    // A question field from an old TV build is not read.
+    expect(answerChoiceData({ question: 'Q', options: ['a', 2, 'c', 'd', 'e'] }))
+      .toStrictEqual({ options: ['a', '', 'c', 'd'], windowMs: null });
+    expect(answerChoiceData({})).toStrictEqual({ options: [], windowMs: null });
   });
 
   it('topicVote: door titles in order, at most 4', () => {
@@ -173,17 +168,16 @@ describe('screen data readers (PROTOCOL.md section 4) never crash', () => {
     expect(topicVoteData({})).toEqual({ doors: [] });
   });
 
-  it('answerSlider', () => {
-    expect(answerSliderData({ question: 'Q', min: 1800, max: 2000, step: 10, unit: 'year', windowMs: 20000 }))
-      .toEqual({ question: 'Q', min: 1800, max: 2000, step: 10, unit: 'year', windowMs: 20000 });
+  it('answerSlider: range, step, unit and window, no question (D88)', () => {
+    expect(answerSliderData({ min: 1800, max: 2000, step: 10, unit: 'year', windowMs: 20000 }))
+      .toStrictEqual({ min: 1800, max: 2000, step: 10, unit: 'year', windowMs: 20000 });
     expect(answerSliderData({ min: 'x', max: null, step: Number.NaN }))
-      .toEqual({ question: '', min: 0, max: 0, step: 1, unit: '', windowMs: null });
+      .toStrictEqual({ min: 0, max: 0, step: 1, unit: '', windowMs: null });
   });
 
-  it('answerTrueFalse', () => {
-    expect(answerTrueFalseData({ statement: 'The sun is a star', windowMs: 8000 }))
-      .toEqual({ statement: 'The sun is a star', windowMs: 8000 });
-    expect(answerTrueFalseData({})).toEqual({ statement: '', windowMs: null });
+  it('answerTrueFalse: the window only, no statement (D88)', () => {
+    expect(answerTrueFalseData({ windowMs: 8000 })).toStrictEqual({ windowMs: 8000 });
+    expect(answerTrueFalseData({})).toStrictEqual({ windowMs: null });
   });
 
   it('the answer window for the countdown bar comes from every answer screen', () => {
@@ -195,37 +189,22 @@ describe('screen data readers (PROTOCOL.md section 4) never crash', () => {
     expect(answerWindowMs(s('topicVote', { windowMs: 10000 }))).toBeNull();
   });
 
-  it('roundEnd, with a next round or null after the last one', () => {
-    expect(roundEndData({ rank: 2, score: 3400, nextRound: 3 })).toEqual({ rank: 2, score: 3400, nextRound: 3 });
-    expect(roundEndData({ rank: 1, score: 9000, nextRound: null })).toEqual({ rank: 1, score: 9000, nextRound: null });
-    expect(roundEndData({})).toEqual({ rank: null, score: 0, nextRound: null });
+  it('waiting: the locked text only, no pending list (D88)', () => {
+    expect(waitingData({ locked: 'B' })).toStrictEqual({ locked: 'B' });
+    expect(waitingData({ locked: 'B', pending: [{ name: 'Papa', characterId: 3 }] })).toStrictEqual({ locked: 'B' });
+    expect(waitingData({})).toStrictEqual({ locked: '' });
   });
 
-  it('raceResult', () => {
-    expect(raceResultData({ correct: true, position: 4, finish: 10 })).toEqual({ correct: true, position: 4, finish: 10 });
-    expect(raceResultData({ correct: 'yes' })).toEqual({ correct: false, position: 0, finish: 0 });
+  it('result: the power up and its targets only (Day 4)', () => {
+    expect(resultData({ powerUp: 'freeze', targets: [{ playerId: 'p2', name: 'B', available: true }, {}] }))
+      .toStrictEqual({ powerUp: 'freeze', targets: [{ playerId: 'p2', name: 'B', available: true }] });
+    expect(resultData({})).toStrictEqual({ powerUp: null, targets: [] });
   });
 
-  it('waiting', () => {
-    expect(waitingData({ locked: 'B', pending: [{ name: 'Papa', characterId: 3 }, 7] }))
-      .toEqual({ locked: 'B', pending: [{ name: 'Papa', characterId: 3 }] });
-    expect(waitingData({})).toEqual({ locked: '', pending: [] });
-  });
-
-  it('result, with powerUp null and no targets (Day 2)', () => {
-    expect(resultData({ correct: true, points: 850, correctText: 'Paris', streak: 2, rank: 1, powerUp: null, targets: [] }))
-      .toEqual({ correct: true, points: 850, correctText: 'Paris', streak: 2, rank: 1, powerUp: null, targets: [] });
-    expect(resultData({})).toEqual({
-      correct: false, points: 0, correctText: '', streak: 0, rank: null, powerUp: null, targets: [],
-    });
-    expect(resultData({ powerUp: 'freeze', targets: [{ playerId: 'p2', name: 'B', available: true }, {}] }).targets)
-      .toEqual([{ playerId: 'p2', name: 'B', available: true }]);
-  });
-
-  it('results', () => {
-    expect(resultsData({ place: 2, correctCount: 3, awards: ['Fastest', 4, ''] }))
-      .toEqual({ place: 2, correctCount: 3, awards: ['Fastest'] });
-    expect(resultsData({})).toEqual({ place: null, correctCount: 0, awards: [] });
+  it('results: the winner\'s fact (D87)', () => {
+    expect(resultsData({ fact: 'Octopuses have three hearts.' })).toStrictEqual({ fact: 'Octopuses have three hearts.' });
+    expect(resultsData({ place: 1, fact: 7 })).toStrictEqual({ fact: '' });
+    expect(resultsData({})).toStrictEqual({ fact: '' });
   });
 });
 

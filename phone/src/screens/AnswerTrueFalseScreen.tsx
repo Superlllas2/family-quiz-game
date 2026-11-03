@@ -1,13 +1,13 @@
-// Screen `answerTrueFalse` (04 true or false, 06): the statement, then two huge buttons, "Правда / True" in the top
-// half (green) and "Ложь / False" in the bottom half (red). One tap locks: the tapped button stays highlighted, the
-// other dims, later taps are ignored. The answer clock starts when this screen is first drawn for a phaseId.
-// The countdown is in the top bar (app.tsx).
+// Screen `answerTrueFalse` (04 true or false, 06): two huge buttons, "Правда / True" in the top half (green) and
+// "Ложь / False" in the bottom half (red). No statement text: it is on the TV (D88). One tap locks: the tapped button
+// stays highlighted, the other dims, later taps are ignored. The answer clock starts when this screen is first drawn
+// for a phaseId. The countdown is in the top bar (app.tsx).
 
 import { useLayoutEffect } from 'preact/hooks';
 import { screenDrawn, type AnswerClock } from '../answerClock';
 import { t, type TextKey } from '../i18n';
 import type { TrackedInput } from '../net/inputs';
-import { answerTrueFalseData, type Lang, type ScreenState } from '../protocol';
+import type { Lang, ScreenState } from '../protocol';
 import { InputStatus } from './InputStatus';
 import { PressButton } from './PressButton';
 
@@ -29,7 +29,6 @@ interface Props {
 
 export function AnswerTrueFalseScreen(props: Props) {
   const { lang, screen, clock, chosen } = props;
-  const { statement } = answerTrueFalseData(screen.data);
 
   useLayoutEffect(() => {
     screenDrawn(clock, screen);
@@ -37,7 +36,6 @@ export function AnswerTrueFalseScreen(props: Props) {
 
   return (
     <div class="body true-false">
-      {statement ? <p class="tf-statement">{statement}</p> : null}
       <div class="tf-buttons">
         {BUTTONS.map((b) => {
           const state = chosen === null ? '' : chosen === b.answer ? ' chosen' : ' dim';

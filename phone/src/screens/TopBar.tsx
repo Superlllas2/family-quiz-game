@@ -1,5 +1,6 @@
-// Top bar on every screen during a game (06): the player's name on their character chip, the score, and the
-// gear for settings. On answer screens it also carries the countdown (a number and a thin bar underneath).
+// Top bar on every screen during a game (06): the player's name on their character chip and the gear for settings.
+// No score or rank: those are on the TV only (D88). On answer screens it also carries the countdown (a number and a
+// thin bar underneath).
 
 import { characterColor } from '../characters';
 import { t } from '../i18n';
@@ -33,7 +34,6 @@ export function TopBar(props: Props) {
           <span class="top-chip-space" />
         )}
         {timer ? <span class="top-timer">{timer.seconds}</span> : null}
-        <span class="top-score">{player ? t(lang, 'topBar.score', { score: player.score }) : ''}</span>
         <PressButton class="gear-button" ariaLabel={t(lang, 'topBar.settings')} onClick={props.onSettings}>
           <GearIcon />
         </PressButton>

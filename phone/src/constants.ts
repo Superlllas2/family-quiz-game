@@ -2,7 +2,7 @@
 // content/config.json has no phone keys yet, so they live here in one place (open question in the Day 1 report).
 
 /** Protocol version carried by every message (PROTOCOL.md section 7). */
-export const PROTOCOL_VERSION = 1;
+export const PROTOCOL_VERSION = 2;
 
 /** Reconnecting screen: retry every 2 s (06, screen `reconnecting`). Also the wait for `welcome` after a `rejoin`. */
 export const RETRY_MS = 2000;
