@@ -55,3 +55,27 @@ Date: Nov 3, 2026. Built on branch `day4-powerups`. None of these is a decision 
 | A cycle line dropped by the gap leaves the cycle open, so a later `powerUpUsed` of that question may still play | Dialogue |
 | The Intro's two `gameStart` lines ignore the gap (they never overlap a host's own bubble) | Dialogue |
 | The host bags are saved in `<persistentDataPath>/host_bags.json`; "Reset seen questions" does not reset them | Dialogue, Bootstrap |
+| Two players joining a few seconds apart are both greeted (the second by the other host, who is silent longer); a third inside both gaps is not | Dialogue |
+| A missing host_bags.json means full bags without a warning (first run); a broken one is reported and treated as empty | Dialogue `HostBagFile` |
+| If the highest cycle trigger has no lines at all, nothing plays and lower ones are not tried; the cycle stays open | Dialogue |
+| Played cycles are cleared at every game start (question numbers restart at 1) | Dialogue |
+
+## Phone page
+
+| Detail | Where |
+| --- | --- |
+| An `effect` attaches to the phaseId on screen when it arrives; a new screen with the same phaseId (last call) keeps it; the overlay also covers `answerTrueFalse` (never sent there today) | phone `sabotage.ts` |
+| Slime: only a swipe through a blob wipes it (0.6 of its radius of movement, `SLIME_WIPE_SHARE`); a tap does not. Fog: "rubbing" is a finger down that moved in the last 150 ms (`FOG_RUB_IDLE_MS`), and it counts time twice as fast (`FOG_RUB_SPEEDUP = 2`). These are phone constants, not config keys | phone `constants.ts` |
+| Overlay texts: freeze "{name} заморозил тебя! / {name} froze you!", slime "{name} облил тебя слизью! / {name} slimed you!", fog "{name} напустил туман! / {name} fogged you!" (the Russian verbs are masculine) | phone locales |
+| After an `immune` refusal the phone greys that target for the rest of the window; `noPowerUp`, `closed`, `stale`, `invalid` end the pick | phone |
+| The poll shows one question per page with Back and Next, no countdown | phone |
+
+## TV
+
+| Detail | Where |
+| --- | --- |
+| A host's portrait box shows only while that host has a bubble (boxes in the corners all the time would cover chips and rows) | Presentation |
+| Back to lobby needs a second click within 4 s in a game (`TvSettingsPanel.BackToLobbyConfirmSeconds`, a UI constant); Reset seen questions is one click | Presentation |
+| The panel docks on the right without dimming the game; Russian label for power ups is "Бонусы" | Presentation |
+| The poll count is "submitted of connected" (a phone that submitted and then disconnected still counts in both) | Presentation |
+| Power up markers: on the Answer view above the target's chip ("Папа → Заморозка"); on Scores at the end of the target's row once a pick is made | Presentation |
