@@ -1,12 +1,17 @@
-// End to end check of the Day 3 show, protocol version 2 (the phone is input only, D88): three scripted phones tap
+// End to end check of the Day 4 show, protocol version 2 (the phone is input only, D88): three scripted phones tap
 // Ready (D76) and play a whole Standard show against the live relay and a running TV app: 4 rounds of topic vote and
 // 4 questions (3 multiple choice, 1 closest value on the slider; the answer screens carry no question text), the final
-// race with true or false (no statement on the phone), Results (`results` with a fact for the winner only, D87), then
-// back in the Lobby; one leaves. Between decisions every phone gets `watch` (Intro, QuestionShow, Reveal and Scores,
-// RoundEnd, FinalIntro, RaceReveal, Results for the others).
+// race with true or false (no statement on the phone), Results (`results` with a fact for the winner only, D87), the
+// poll (`poll`, then `pollDone`), then back in the Lobby; one leaves. Between decisions every phone gets `watch`
+// (Intro, QuestionShow, Reveal and Scores, RoundEnd, FinalIntro, RaceReveal, Results for the others).
+// Power ups (Day 4): a phone holding one gets `result` in Reveal and Scores (one phaseId) and uses it on a random
+// available target with probability 0.7, once per phaseId. A phone hit gets `effect` at the start of the next Answer,
+// clears it after 1 to 3 s (an `effectCleared` input with that Answer's phaseId) and only then answers. Every phone
+// answers the whole poll at once, so the poll ends when everyone submitted, long before its 90 s timeout.
 // Usage: node tools/e2e_game.mjs <ROOM> [relayHost] [--dump <file>]  (start the TV app first; ROOM is the code on the TV)
 // --dump writes every text frame the phones received to a JSON file (the phone page tests parse such a capture).
 import { writeFileSync } from "node:fs";
+import { sliderMiddle, valueText, pickTarget, clearDelayMs, pollAnswers } from "./e2e_helpers.mjs";
 const args = process.argv.slice(2);
 const dumpAt = args.indexOf("--dump");
 const dump = dumpAt >= 0 ? args.splice(dumpAt, 2)[1] : null;
@@ -103,25 +108,45 @@ ok(ack?.ok === true, "C taps Ready again");
 cd = await a.screen("countdown", t);
 ok(cd && cd.endsInMs > 2000, `the countdown runs again (${cd?.endsInMs} ms)`);
 
-// The slider's start value, as the phone page computes it (phone/src/sliderValue.ts): the value on the grid
-// min + k * step nearest the middle of the range, the upper one on a tie.
-function sliderMiddle(min, max, step) {
-  const s = step > 0 ? step : 1;
-  const last = max > min ? Math.floor((max - min) / s + 1e-9) : 0;
-  const k = Math.min(last, Math.max(0, Math.round((max - min) / 2 / s)));
-  const decimals = (x) => { const t = String(x); return t.includes("e") ? 10 : t.includes(".") ? Math.min(10, t.length - t.indexOf(".") - 1) : 0; };
-  return Number((min + k * s).toFixed(Math.max(decimals(min), decimals(s))));
-}
-// How the phone writes a value: no thousands separator, at most 2 decimals (the TV writes it the same way).
-const valueText = (v) => String(Number(v.toFixed(2)) || 0);
+const POWER_UP_USE_CHANCE = 0.7;
 
 // Each phone plays the show on its own, screen by screen, with its own timing: A always answers first, B after
-// 1 s, C after 2 s; C leaves its second question open to get a last call.
+// 1 s, C after 2 s (plus the time to clear a sabotage); C leaves its second question open to get a last call.
 async function play(p, i) {
-  const log = { votes: 0, questions: 0, sliders: 0, race: 0, watches: 0, results: null, beforeLobby: null, lobby: null };
-  let lastAnswer = null; // the input sent in the last Answer, resent on the next watch (Reveal) to check it is refused
+  const log = {
+    votes: 0, questions: 0, sliders: 0, race: 0, watches: 0, results: null, beforeLobby: null, lobby: null,
+    pickWindows: 0, powerUpsUsed: 0, powerUpsRefused: 0, effects: 0, effectsCleared: 0,
+    beforePoll: null, poll: null, pollsSent: 0, pollsAcked: 0, pollDone: null,
+  };
+  let lastAnswer = null; // the input sent in the last Answer, resent on the next watch or result (Reveal) to check it is refused
   let prev = null; // the id of the screen before this one
   const say = (m) => `${p.label} ${m}`;
+  const picked = new Set(); // phaseIds of the pick windows already decided (use or keep): once per phaseId
+  const effectsHandled = new Set();
+  // A sabotage lands with the answer screen (same TV frame, just before or after it): take the one not handled yet,
+  // clear it after 1 to 3 s with an effectCleared input for this Answer, and only then answer. Returns the delay.
+  const clearEffect = async (s, q) => {
+    const fx = await p.wait((m) => m.type === "effect" && !effectsHandled.has(m), 400);
+    if (!fx) return 0;
+    effectsHandled.add(fx);
+    log.effects++;
+    ok(typeof fx.effect === "string" && typeof fx.from === "string" && fx.from !== "",
+      say(`Q${q}: hit by ${fx.effect} from "${fx.from}" ${JSON.stringify(fx.params ?? {})}`));
+    const ms = clearDelayMs(Math.random);
+    await sleep(ms);
+    const r = await p.acked({ type: "input", phaseId: s.phaseId, kind: "effectCleared", effect: fx.effect, ms });
+    ok(r?.ok === true, say(`Q${q}: clears the ${fx.effect} after ${ms} ms (${r?.ok === true ? "ok" : r?.reason}), then answers`));
+    if (r?.ok === true) log.effectsCleared++;
+    return ms;
+  };
+  // Reveal: the Answer is closed, so A's answer sent again is refused.
+  const checkStale = async () => {
+    if (i === 0 && lastAnswer) {
+      const stale = await p.acked({ ...lastAnswer, ms: 100 });
+      ok(stale?.ok === false, say(`an input for the closed Answer is refused (${stale?.reason})`));
+    }
+    lastAnswer = null;
+  };
   // Version 2 sends no question, statement or pending list to the phones (D88).
   const lacks = (s, ...fields) => fields.every((f) => !Object.hasOwn(s.data ?? {}, f));
   for (;;) {
@@ -140,13 +165,33 @@ async function play(p, i) {
       case "watch":
         log.watches++;
         if (Object.keys(s.data ?? {}).length !== 0) ok(false, say(`watch has no data: ${JSON.stringify(s.data)}`));
-        if (i === 0 && lastAnswer) {
-          // Reveal: the Answer is closed.
-          const stale = await p.acked({ ...lastAnswer, ms: 100 });
-          ok(stale?.ok === false, say(`an input for the closed Answer is refused (${stale?.reason})`));
-        }
-        lastAnswer = null;
+        await checkStale();
         break;
+      case "result": {
+        // Reveal and Scores for a player holding a power up: one phaseId, so the Scores resend is skipped.
+        log.pickWindows++;
+        const targets = s.data?.targets;
+        ok(typeof s.data?.powerUp === "string" && Array.isArray(targets)
+          && targets.every((x) => typeof x.playerId === "string" && typeof x.name === "string" && typeof x.available === "boolean"),
+          say(`holds ${s.data?.powerUp}: result with targets ${JSON.stringify((targets ?? []).map((x) => `${x.name}${x.available ? "" : " (greyed)"}`))}`));
+        await checkStale();
+        const target = pickTarget(targets, Math.random);
+        if (target === null || picked.has(s.phaseId)) break;
+        picked.add(s.phaseId);
+        if (Math.random() >= POWER_UP_USE_CHANCE) break; // keeps it for a later question
+        await sleep(300 + Math.floor(Math.random() * 700));
+        const r = await p.acked({ type: "input", phaseId: s.phaseId, kind: "powerUp", powerUp: s.data.powerUp, target });
+        const name = targets.find((x) => x.playerId === target)?.name;
+        if (r?.ok === true) {
+          log.powerUpsUsed++;
+          ok(true, say(`uses ${s.data.powerUp} on ${name}`));
+        } else {
+          // Two phones may pick the same target in one window: the second gets immune (one hit per question).
+          log.powerUpsRefused++;
+          ok(r?.reason === "immune", say(`uses ${s.data.powerUp} on ${name}: refused (${r?.reason})`));
+        }
+        break;
+      }
       case "topicVote": {
         log.votes++;
         ok(Array.isArray(s.data.doors) && s.data.doors.length === 4 && s.data.doors.every((d) => typeof d.title === "string" && d.title !== ""),
@@ -166,6 +211,7 @@ async function play(p, i) {
         const q = log.questions;
         ok(s.data.options?.length === 4 && s.data.windowMs > 0 && lacks(s, "question"),
           say(`Q${q}: answerChoice with 4 options and no question text ${JSON.stringify(s.data.options)}`));
+        const cleared = await clearEffect(s, q);
         if (i === 2 && q === 2) {
           // C leaves this one open: once A and B locked in, C gets a last call with the same phaseId.
           const lastCall = await p.wait((m) => m.type === "screen" && m.id === "answerChoice" && m.phaseId === s.phaseId && m !== s, 20000);
@@ -173,7 +219,7 @@ async function play(p, i) {
           break;
         }
         await sleep(i * 1000);
-        const msg = { type: "input", phaseId: s.phaseId, kind: "choice", choice: i, ms: 800 + i * 1000 };
+        const msg = { type: "input", phaseId: s.phaseId, kind: "choice", choice: i, ms: 800 + i * 1000 + cleared };
         const r = await p.acked(msg);
         ok(r?.ok === true, say(`Q${q}: locked in choice ${i}`));
         lastAnswer = msg;
@@ -194,12 +240,13 @@ async function play(p, i) {
         const value = sliderMiddle(min, max, step);
         const k = (value - min) / step;
         ok(value >= min && value <= max && Math.abs(k - Math.round(k)) < 1e-6, say(`Q${q}: the middle ${value} is on the step grid`));
+        const cleared = await clearEffect(s, q);
         if (i === 1) {
           const r = await p.acked({ type: "input", phaseId: s.phaseId, kind: "value", value: max + step, ms: 500 });
           ok(r?.ok === false && r.reason === "invalid", say(`Q${q}: a value outside the range is refused (${r?.reason})`));
         }
         await sleep(i * 1000);
-        const msg = { type: "input", phaseId: s.phaseId, kind: "value", value, ms: 1500 + i * 1000 };
+        const msg = { type: "input", phaseId: s.phaseId, kind: "value", value, ms: 1500 + i * 1000 + cleared };
         const r = await p.acked(msg);
         ok(r?.ok === true, say(`Q${q}: locked in ${value}`));
         lastAnswer = msg;
@@ -222,13 +269,37 @@ async function play(p, i) {
         ok(typeof s.data.fact === "string" && s.data.fact !== "" && Object.keys(s.data).length === 1,
           say(`wins: results with only the fact "${s.data.fact}"`));
         break;
+      case "poll": {
+        log.beforePoll = before;
+        log.poll = s;
+        const questions = s.data?.questions;
+        ok(Array.isArray(questions) && questions.length > 0 && questions.every((q) => typeof q.id === "string" && typeof q.text === "string"
+          && (q.kind === "text" || (q.kind === "choice" && Array.isArray(q.options) && q.options.length > 0))),
+          say(`poll with ${questions?.length} questions ${JSON.stringify((questions ?? []).map((q) => `${q.id}:${q.kind}`))}`));
+        await sleep(300 + i * 400);
+        const answers = pollAnswers(questions, Math.random, p.label);
+        log.pollsSent++;
+        const r = await p.acked({ type: "poll", answers });
+        if (r?.ok === true) log.pollsAcked++;
+        ok(r?.ok === true, say(`submits the poll ${JSON.stringify(answers)} (${r?.ok === true ? "ok" : r?.reason})`));
+        break;
+      }
+      case "pollDone":
+        log.pollDone = s;
+        ok(log.pollsAcked === 1, say("sees pollDone after submitting the poll"));
+        break;
       case "lobby":
         ok(log.race >= 1, say("is back in the lobby after the race"));
+        ok(!!log.pollDone && before === "pollDone", say(`is back in the lobby after pollDone (${before})`));
+        if (log.poll) {
+          const pollMs = Math.round(s.at - log.poll.at);
+          ok(pollMs < 30000, say(`the poll closed ${pollMs} ms after it opened, once everyone submitted (not the 90 s timeout)`));
+        }
         log.beforeLobby = before;
         log.lobby = s;
         return log;
       default:
-        // getReady, roundEnd and raceResult are gone in version 2; result only comes with power ups (Day 4).
+        // getReady, roundEnd and raceResult are gone in version 2.
         ok(false, say(`gets an unexpected screen ${s.id} ${JSON.stringify(s.data)}`));
         break;
     }
@@ -252,8 +323,21 @@ const winners = logs.filter((l) => l.results);
 ok(winners.length === 1, `exactly one phone gets results, the winner (${winners.length})`);
 logs.forEach((l, i) => {
   const want = l.results ? "results" : "watch";
-  ok(l.beforeLobby === want, `${phones[i].label} sees ${want} on Results (${l.beforeLobby})`);
+  ok(l.beforePoll === want, `${phones[i].label} sees ${want} on Results, before the poll (${l.beforePoll})`);
 });
+
+// Day 4: power ups, sabotage, poll.
+const sum = (f) => logs.reduce((n, l) => n + f(l), 0);
+const used = sum((l) => l.powerUpsUsed);
+const effectsReceived = phones.reduce((n, p) => n + p.inbox.filter((m) => m.type === "effect").length, 0);
+console.log(`power ups: ${sum((l) => l.pickWindows)} pick windows, ${used} used, ${sum((l) => l.powerUpsRefused)} refused (immune); `
+  + `effects: ${effectsReceived} received, ${sum((l) => l.effects)} handled, ${sum((l) => l.effectsCleared)} cleared; `
+  + `polls: ${sum((l) => l.pollsSent)} sent, ${sum((l) => l.pollsAcked)} acked, ${logs.filter((l) => l.pollDone).length} pollDone`);
+ok(effectsReceived === used, `every power up used lands as one effect at the next Answer (${used} used, ${effectsReceived} effects)`);
+ok(sum((l) => l.effects) === effectsReceived && sum((l) => l.effectsCleared) === effectsReceived,
+  `every effect is cleared with an acked effectCleared (${sum((l) => l.effectsCleared)} of ${effectsReceived})`);
+ok(logs.every((l) => l.pollsSent === 1 && l.pollsAcked === 1 && l.pollDone),
+  `every phone sends one poll, gets it acked, then pollDone (${logs.map((l) => `${l.pollsAcked}/${l.pollsSent}`)})`);
 
 const resultsAt = winners[0]?.results.at ?? logA.lobby?.at ?? 0;
 const back = logs[1].lobby;
