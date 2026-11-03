@@ -19,8 +19,12 @@ namespace FamilyQuiz.Presentation
         private readonly TvContext _context = new TvContext();
         private LobbyView _lobby;
         private CountdownView _countdown;
+        private IntroView _intro;
+        private TopicVoteView _topicVote;
         private QuestionView _question;
         private LeaderboardView _leaderboard;
+        private RoundEndView _roundEnd;
+        private RaceView _race;
         private ResultsView _results;
         private GameObject _relayBannerRoot;
         private TextMeshProUGUI _relayBanner;
@@ -95,9 +99,19 @@ namespace FamilyQuiz.Presentation
                         break;
                     case AnswerLocked locked:
                         if (_phase == GamePhase.Answer) _question.OnAnswerLocked(locked.PlayerId);
+                        else if (_phase == GamePhase.RaceQuestion) _race.OnAnswerLocked(locked.PlayerId);
                         break;
                     case Revealed revealed:
                         if (_phase == GamePhase.Reveal) _question.OnRevealed(revealed.CorrectDisplayIndex);
+                        break;
+                    case VoteCast vote:
+                        if (_phase == GamePhase.TopicVote) _topicVote.OnVoteCast(vote.PlayerId);
+                        break;
+                    case PredictionMade prediction:
+                        if (_phase == GamePhase.Intro) _intro.OnPredictionMade(prediction.PlayerId);
+                        break;
+                    case RaceRevealed _:
+                        if (_phase == GamePhase.RaceReveal) _race.OnRaceRevealed();
                         break;
                     case SettingsChanged _:
                         Relabel();
@@ -127,6 +141,9 @@ namespace FamilyQuiz.Presentation
                 case GamePhase.StartCountdown:
                     _countdown.Tick();
                     break;
+                case GamePhase.TopicVote:
+                    _topicVote.Tick();
+                    break;
                 case GamePhase.Results:
                     _results.Tick();
                     break;
@@ -134,6 +151,9 @@ namespace FamilyQuiz.Presentation
                 case GamePhase.Answer:
                 case GamePhase.Reveal:
                     _question.Tick();
+                    break;
+                case GamePhase.RaceQuestion:
+                    _race.Tick();
                     break;
             }
         }
@@ -151,6 +171,14 @@ namespace FamilyQuiz.Presentation
                     Show(_countdown.gameObject);
                     _countdown.Enter();
                     break;
+                case GamePhase.Intro:
+                    Show(_intro.gameObject);
+                    _intro.Enter();
+                    break;
+                case GamePhase.TopicVote:
+                    Show(_topicVote.gameObject);
+                    _topicVote.Enter();
+                    break;
                 case GamePhase.QuestionShow:
                 case GamePhase.Answer:
                 case GamePhase.Reveal:
@@ -160,6 +188,16 @@ namespace FamilyQuiz.Presentation
                 case GamePhase.Scores:
                     Show(_leaderboard.gameObject);
                     _leaderboard.Enter();
+                    break;
+                case GamePhase.RoundEnd:
+                    Show(_roundEnd.gameObject);
+                    _roundEnd.Enter();
+                    break;
+                case GamePhase.FinalIntro:
+                case GamePhase.RaceQuestion:
+                case GamePhase.RaceReveal:
+                    Show(_race.gameObject);
+                    _race.Enter(phase);
                     break;
                 case GamePhase.Results:
                     Show(_results.gameObject);
@@ -177,6 +215,12 @@ namespace FamilyQuiz.Presentation
                 case GamePhase.Lobby:
                     _lobby.Refresh();
                     break;
+                case GamePhase.Intro:
+                    _intro.Refresh();
+                    break;
+                case GamePhase.TopicVote:
+                    _topicVote.Refresh();
+                    break;
                 case GamePhase.QuestionShow:
                 case GamePhase.Answer:
                 case GamePhase.Reveal:
@@ -184,6 +228,14 @@ namespace FamilyQuiz.Presentation
                     break;
                 case GamePhase.Scores:
                     _leaderboard.Refresh();
+                    break;
+                case GamePhase.RoundEnd:
+                    _roundEnd.Refresh();
+                    break;
+                case GamePhase.FinalIntro:
+                case GamePhase.RaceQuestion:
+                case GamePhase.RaceReveal:
+                    _race.Refresh();
                     break;
                 case GamePhase.Results:
                     _results.Refresh();
@@ -203,8 +255,8 @@ namespace FamilyQuiz.Presentation
         }
 
         /// <summary>
-        /// Shows one view and hides the others. A view that stays (QuestionShow, Answer, Reveal) is not toggled, so
-        /// a pop that started in the same batch (the last lock in, then Reveal) keeps playing.
+        /// Shows one view and hides the others. A view that stays (QuestionShow, Answer, Reveal; FinalIntro, RaceQuestion,
+        /// RaceReveal) is not toggled, so a pop that started in the same batch (the last lock in, then Reveal) keeps playing.
         /// </summary>
         private void Show(GameObject view)
         {
@@ -219,8 +271,12 @@ namespace FamilyQuiz.Presentation
             _current = null;
             _lobby.gameObject.SetActive(false);
             _countdown.gameObject.SetActive(false);
+            _intro.gameObject.SetActive(false);
+            _topicVote.gameObject.SetActive(false);
             _question.gameObject.SetActive(false);
             _leaderboard.gameObject.SetActive(false);
+            _roundEnd.gameObject.SetActive(false);
+            _race.gameObject.SetActive(false);
             _results.gameObject.SetActive(false);
         }
 
@@ -238,8 +294,12 @@ namespace FamilyQuiz.Presentation
 
             _lobby = LobbyView.Create(root, _context);
             _countdown = CountdownView.Create(root, _context);
+            _intro = IntroView.Create(root, _context);
+            _topicVote = TopicVoteView.Create(root, _context);
             _question = QuestionView.Create(root, _context);
             _leaderboard = LeaderboardView.Create(root, _context);
+            _roundEnd = RoundEndView.Create(root, _context);
+            _race = RaceView.Create(root, _context);
             _results = ResultsView.Create(root, _context);
 
             var banner = UiBuilder.Image("RelayBanner", root, TvColors.Background);

@@ -1,20 +1,19 @@
 using System;
 using System.Collections.Generic;
-using FamilyQuiz.Core.Rules;
-using FamilyQuiz.Core.State;
 using TMPro;
 using UnityEngine;
 
 namespace FamilyQuiz.Presentation
 {
     /// <summary>
-    /// Results (docs/02_show_flow.md, Day 2): the title, the winner, the top 3 (every player with shared rank 3 or
-    /// better, so a tie for third is not cut) with their correct answers, the Most correct award, and a draining bar
-    /// with the seconds until everyone is back in the Lobby for the next game, so the jump never surprises anyone.
+    /// Results (docs/02_show_flow.md): the title, the winner, the top 3 from the final order (GameState.Placement: the
+    /// race order with its tie breaks, so places are never shared) with their score and correct answers, the two awards
+    /// (Most correct and Best comeback, every tied name), and a draining bar with the seconds until everyone is back in
+    /// the Lobby for the next game (D78), so the jump never surprises anyone.
     /// </summary>
     public sealed class ResultsView : MonoBehaviour
     {
-        private const int TopRanks = 3;
+        private const int TopPlaces = 3;
         private const string NameSeparator = ", ";
 
         private TvContext _context;
@@ -22,6 +21,7 @@ namespace FamilyQuiz.Presentation
         private TextMeshProUGUI _winner;
         private LeaderboardList _list;
         private TextMeshProUGUI _award;
+        private TextMeshProUGUI _comeback;
         private TextMeshProUGUI _lobbyIn;
         private TimerBar _bar;
         private long _shownSeconds = -1;
@@ -80,33 +80,36 @@ namespace FamilyQuiz.Presentation
                 _winner.color = _context.ChipColor(winner.CharacterId);
             }
 
-            var top = new List<PlayerState>();
-            foreach (var p in Standings.ByScore(state))
-            {
-                if (Ranking.SharedRank(state, p) <= TopRanks) top.Add(p);
-            }
-
+            var top = Standings.Top(state, TopPlaces);
             _list.Rebuild(top);
             float height = _list.RowHeight();
             for (int i = 0; i < top.Count; i++)
             {
                 var p = top[i];
                 var row = _list.Find(p.PlayerId);
-                row.Set(Ranking.SharedRank(state, p), p.Name, _context.ChipColor(p.CharacterId), p.Connected,
+                row.Set(i + 1, p.Name, _context.ChipColor(p.CharacterId), p.Connected,
                     _context.Format("tv.results.correctCount", "count", p.CorrectCount.ToString()), TvColors.DimText);
                 row.SetScore(p.Score);
                 row.Place(_list.Y(i), height);
             }
 
+            ShowAward(_award, "tv.awards.mostCorrect", state.MostCorrectIds);
+            ShowAward(_comeback, "tv.awards.bestComeback", state.BestComebackIds);
+        }
+
+        /// <summary>An award line with every tied name; hidden when nobody earned it.</summary>
+        private void ShowAward(TextMeshProUGUI line, string key, IReadOnlyList<string> ids)
+        {
+            var state = _context.Game.State;
             var names = new List<string>();
-            foreach (var id in state.MostCorrectIds)
+            foreach (var id in ids)
             {
                 var p = state.FindById(id);
                 if (p != null) names.Add(p.Name);
             }
 
-            _award.gameObject.SetActive(names.Count > 0);
-            _award.text = names.Count > 0 ? _context.Format("tv.awards.mostCorrect", "names", string.Join(NameSeparator, names)) : string.Empty;
+            line.gameObject.SetActive(names.Count > 0);
+            line.text = names.Count > 0 ? _context.Format(key, "names", string.Join(NameSeparator, names)) : string.Empty;
         }
 
         private void Build()
@@ -122,13 +125,10 @@ namespace FamilyQuiz.Presentation
             UiBuilder.Anchor(_winner.rectTransform, 0.03f, 0.74f, 0.97f, 0.87f);
 
             _list = LeaderboardList.Create(transform);
-            UiBuilder.Anchor(_list.Rect, 0.05f, 0.24f, 0.95f, 0.71f);
+            UiBuilder.Anchor(_list.Rect, 0.05f, 0.4f, 0.95f, 0.72f);
 
-            _award = UiBuilder.Text("Award", transform, 52, TvColors.Text, true, TextAlignmentOptions.Center);
-            _award.enableAutoSizing = true;
-            _award.fontSizeMin = 40;
-            _award.fontSizeMax = 52;
-            UiBuilder.Anchor(_award.rectTransform, 0.04f, 0.13f, 0.96f, 0.22f);
+            _award = AwardLine("MostCorrect", 0.28f, 0.37f);
+            _comeback = AwardLine("BestComeback", 0.18f, 0.27f);
 
             _lobbyIn = UiBuilder.Text("LobbyIn", transform, 44, TvColors.DimText, false, TextAlignmentOptions.Center);
             _lobbyIn.textWrappingMode = TextWrappingModes.NoWrap;
@@ -136,6 +136,16 @@ namespace FamilyQuiz.Presentation
 
             _bar = TimerBar.Create(transform);
             UiBuilder.Anchor(_bar.Root, 0.2f, 0.03f, 0.8f, 0.042f);
+        }
+
+        private TextMeshProUGUI AwardLine(string name, float minY, float maxY)
+        {
+            var line = UiBuilder.Text(name, transform, 52, TvColors.Text, true, TextAlignmentOptions.Center);
+            line.enableAutoSizing = true;
+            line.fontSizeMin = 40;
+            line.fontSizeMax = 52;
+            UiBuilder.Anchor(line.rectTransform, 0.04f, minY, 0.96f, maxY);
+            return line;
         }
     }
 }
