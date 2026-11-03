@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import {
   answerChoiceData, answerSliderData, answerTrueFalseData, answerWindowMs, characterMessage, choiceInputMessage,
-  joinMessage, leaveMessage, lobbyData, lobbyMessage, parseIncoming, pickCharacterData, pingMessage, playerView,
-  rejoinMessage, resultData, resultsData, settingsMessage, textData, topicVoteData, trueFalseInputMessage,
-  valueInputMessage, voteInputMessage, waitingData,
+  effectClearedInputMessage, joinMessage, leaveMessage, lobbyData, lobbyMessage, parseIncoming, pickCharacterData,
+  pingMessage, playerView, pollData, pollMessage, powerUpInputMessage, rejoinMessage, resultData, resultsData,
+  settingsMessage, textData, topicVoteData, trueFalseInputMessage, valueInputMessage, voteInputMessage, waitingData,
 } from './protocol';
 import { PROTOCOL_VERSION } from './constants';
 import { socketUrl } from './net/socketUrl';
@@ -72,6 +72,51 @@ describe('message builders match PROTOCOL.md section 3 exactly', () => {
   it('ping', () => {
     expect(pingMessage(1234)).toStrictEqual({ v: 2, type: 'ping', t: 1234 });
   });
+
+  it('input of kind powerUp: the power up and the target playerId, no ms', () => {
+    expect(JSON.stringify(powerUpInputMessage('u1', 22, 'freeze', 'p4')))
+      .toBe('{"v":2,"type":"input","inputId":"u1","phaseId":22,"kind":"powerUp","powerUp":"freeze","target":"p4"}');
+    expect(powerUpInputMessage('u2', 22, 'fog', 'p1')).toStrictEqual({
+      v: 2, type: 'input', inputId: 'u2', phaseId: 22, kind: 'powerUp', powerUp: 'fog', target: 'p1',
+    });
+  });
+
+  it('input of kind effectCleared: the effect and the time to clear it', () => {
+    expect(JSON.stringify(effectClearedInputMessage('e1', 23, 'slime', 2140)))
+      .toBe('{"v":2,"type":"input","inputId":"e1","phaseId":23,"kind":"effectCleared","effect":"slime","ms":2140}');
+  });
+
+  it('poll: answers by question id, a string for text and an option index for choice', () => {
+    expect(JSON.stringify(pollMessage('p9', { fun: 'The freeze on Dad', waiting: 1, again: 0 })))
+      .toBe('{"v":2,"type":"poll","inputId":"p9","answers":{"fun":"The freeze on Dad","waiting":1,"again":0}}');
+    expect(pollMessage('p8', {})).toStrictEqual({ v: 2, type: 'poll', inputId: 'p8', answers: {} });
+  });
+});
+
+describe('the effect message (sabotage on this phone)', () => {
+  it('parses freeze, slime and fog with their params', () => {
+    expect(parseIncoming('{"v":2,"type":"effect","effect":"freeze","from":"Papa","params":{"taps":6}}'))
+      .toStrictEqual({ type: 'effect', effect: 'freeze', from: 'Papa', params: { taps: 6, blobs: 3, seconds: 3 } });
+    expect(parseIncoming('{"v":2,"type":"effect","effect":"slime","from":"Мама","params":{"blobs":4}}'))
+      .toStrictEqual({ type: 'effect', effect: 'slime', from: 'Мама', params: { taps: 6, blobs: 4, seconds: 3 } });
+    expect(parseIncoming('{"v":2,"type":"effect","effect":"fog","from":"Bo","params":{"seconds":2.5}}'))
+      .toStrictEqual({ type: 'effect', effect: 'fog', from: 'Bo', params: { taps: 6, blobs: 3, seconds: 2.5 } });
+  });
+
+  it('falls back to 6 taps, 3 blobs and 3 seconds for missing or broken params', () => {
+    expect(parseIncoming('{"v":2,"type":"effect","effect":"freeze"}'))
+      .toStrictEqual({ type: 'effect', effect: 'freeze', from: '', params: { taps: 6, blobs: 3, seconds: 3 } });
+    expect(parseIncoming('{"v":2,"type":"effect","effect":"slime","from":5,"params":{"taps":0,"blobs":-2,"seconds":"x"}}'))
+      .toStrictEqual({ type: 'effect', effect: 'slime', from: '', params: { taps: 6, blobs: 3, seconds: 3 } });
+    // Counts are whole numbers.
+    expect(parseIncoming('{"v":2,"type":"effect","effect":"freeze","params":{"taps":4.6,"blobs":2.2}}'))
+      .toMatchObject({ params: { taps: 5, blobs: 2 } });
+  });
+
+  it('ignores an unknown effect, never a crash', () => {
+    expect(parseIncoming('{"v":2,"type":"effect","effect":"lava","from":"Papa","params":{}}')).toBeNull();
+    expect(parseIncoming('{"v":2,"type":"effect","from":"Papa"}')).toBeNull();
+  });
 });
 
 describe('incoming messages', () => {
@@ -92,7 +137,7 @@ describe('incoming messages', () => {
   });
 
   it('never crashes on unknown or broken messages', () => {
-    expect(parseIncoming('{"v":2,"type":"effect","effect":"freeze"}')).toBeNull();
+    expect(parseIncoming('{"v":2,"type":"somethingNew"}')).toBeNull();
     expect(parseIncoming('not json')).toBeNull();
     expect(parseIncoming('[1,2]')).toBeNull();
     expect(parseIncoming('null')).toBeNull();
@@ -198,7 +243,39 @@ describe('screen data readers (PROTOCOL.md section 4) never crash', () => {
   it('result: the power up and its targets only (Day 4)', () => {
     expect(resultData({ powerUp: 'freeze', targets: [{ playerId: 'p2', name: 'B', available: true }, {}] }))
       .toStrictEqual({ powerUp: 'freeze', targets: [{ playerId: 'p2', name: 'B', available: true }] });
+    expect(resultData({ powerUp: 'slime', targets: [{ playerId: 'p3', name: 'C', available: false }, { playerId: 'p4' }] }))
+      .toStrictEqual({
+        powerUp: 'slime',
+        targets: [{ playerId: 'p3', name: 'C', available: false }, { playerId: 'p4', name: '', available: false }],
+      });
+    expect(resultData({ powerUp: 'fog' }).powerUp).toBe('fog');
+    // An unknown power up reads as none: the phone then shows watch.
+    expect(resultData({ powerUp: 'lava', targets: [] }).powerUp).toBeNull();
     expect(resultData({})).toStrictEqual({ powerUp: null, targets: [] });
+  });
+
+  it('poll: the questions, options only for choice', () => {
+    expect(pollData({
+      questions: [
+        { id: 'fun', text: 'The most fun moment?', kind: 'text' },
+        { id: 'time', text: 'Was there enough time?', kind: 'choice', options: ['Too little', 'Just right', 7] },
+      ],
+    })).toStrictEqual({
+      questions: [
+        { id: 'fun', text: 'The most fun moment?', kind: 'text', options: [] },
+        { id: 'time', text: 'Was there enough time?', kind: 'choice', options: ['Too little', 'Just right', ''] },
+      ],
+    });
+    // A text question with options from a broken file keeps none; junk and unknown kinds are left out.
+    expect(pollData({
+      questions: [
+        { id: 'a', text: 'A', kind: 'text', options: ['x'] },
+        { id: 'b', text: 'B', kind: 'rating' },
+        { text: 'no id', kind: 'text' },
+        'junk',
+      ],
+    })).toStrictEqual({ questions: [{ id: 'a', text: 'A', kind: 'text', options: [] }] });
+    expect(pollData({})).toStrictEqual({ questions: [] });
   });
 
   it('results: the winner\'s fact (D87)', () => {

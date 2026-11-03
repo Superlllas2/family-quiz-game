@@ -1,9 +1,18 @@
 // Message types and builders for the phone side of docs/PROTOCOL.md (protocol version 2).
 // The phone sends and receives the inner messages only; there is no envelope between relay and phone.
 
-import { PROTOCOL_VERSION } from './constants';
+import { DEFAULT_FOG_SECONDS, DEFAULT_FREEZE_TAPS, DEFAULT_SLIME_BLOBS, PROTOCOL_VERSION } from './constants';
 
 export type Lang = 'ru' | 'en';
+
+/** The three power ups (03 "Power ups"); an effect on a phone has the same names. */
+export type PowerUpKind = 'freeze' | 'slime' | 'fog';
+
+export const POWER_UPS: readonly PowerUpKind[] = ['freeze', 'slime', 'fog'];
+
+function isPowerUp(x: unknown): x is PowerUpKind {
+  return typeof x === 'string' && (POWER_UPS as readonly string[]).includes(x);
+}
 
 export type RefusedReason = 'roomFull' | 'nameTaken' | 'badName' | 'gameStarted' | 'badToken' | 'badVersion';
 
@@ -27,21 +36,32 @@ export interface ValueInputMessage {
 export interface TrueFalseInputMessage {
   v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'trueFalse'; answer: boolean; ms: number;
 }
+export interface PowerUpInputMessage {
+  v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'powerUp'; powerUp: PowerUpKind; target: string;
+}
+export interface EffectClearedInputMessage {
+  v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'effectCleared'; effect: PowerUpKind; ms: number;
+}
 /** Every `input` kind the phone sends (PROTOCOL.md section 3, `input` kinds). */
-export type InputMessage = ChoiceInputMessage | VoteInputMessage | ValueInputMessage | TrueFalseInputMessage;
+export type InputMessage =
+  | ChoiceInputMessage | VoteInputMessage | ValueInputMessage | TrueFalseInputMessage
+  | PowerUpInputMessage | EffectClearedInputMessage;
 export interface LobbyMessage { v: 2; type: 'lobby'; inputId: string; action: LobbyAction }
 export interface CharacterMessage { v: 2; type: 'character'; inputId: string; characterId: number }
 /** No inputId and no ack (PROTOCOL.md section 3). */
 export interface SettingsMessage { v: 2; type: 'settings'; lang: Lang; timerMultiplier: number }
 export interface LeaveMessage { v: 2; type: 'leave'; inputId: string }
+/** Poll answers: question id to an option index (`choice`) or a string (`text`); unanswered ones left out. */
+export type PollAnswers = Record<string, number | string>;
+export interface PollMessage { v: 2; type: 'poll'; inputId: string; answers: PollAnswers }
 export interface PingMessage { v: 2; type: 'ping'; t: number }
 
 export type PhoneMessage =
   | JoinMessage | RejoinMessage | InputMessage | LobbyMessage | CharacterMessage
-  | SettingsMessage | LeaveMessage | PingMessage;
+  | SettingsMessage | LeaveMessage | PollMessage | PingMessage;
 
 /** A message that is answered with an `ack` and goes through the input sender. */
-export type AckedMessage = InputMessage | LobbyMessage | CharacterMessage | LeaveMessage;
+export type AckedMessage = InputMessage | LobbyMessage | CharacterMessage | LeaveMessage | PollMessage;
 
 const v = PROTOCOL_VERSION as 2;
 
@@ -91,6 +111,24 @@ export function pingMessage(t: number): PingMessage {
   return { v, type: 'ping', t };
 }
 
+/** Use the held power up on a target, in Reveal and Scores (one phaseId). */
+export function powerUpInputMessage(
+  inputId: string, phaseId: PhaseId, powerUp: PowerUpKind, target: string,
+): PowerUpInputMessage {
+  return { v, type: 'input', inputId, phaseId, kind: 'powerUp', powerUp, target };
+}
+
+/** A sabotage overlay was cleared, `ms` after the `effect` arrived (telemetry only). */
+export function effectClearedInputMessage(
+  inputId: string, phaseId: PhaseId, effect: PowerUpKind, ms: number,
+): EffectClearedInputMessage {
+  return { v, type: 'input', inputId, phaseId, kind: 'effectCleared', effect, ms };
+}
+
+export function pollMessage(inputId: string, answers: PollAnswers): PollMessage {
+  return { v, type: 'poll', inputId, answers };
+}
+
 // ---- TV app (and relay) to phone (sections 2 and 4) ----
 
 export interface LobbyPlayer { playerId: string; name: string; characterId: number }
@@ -122,9 +160,20 @@ export interface PongMessage { type: 'pong'; t: number; tv?: number }
 export interface TvAwayMessage { type: 'tvAway' }
 export interface TvBackMessage { type: 'tvBack' }
 
+/** Sabotage params, every one filled in (the fallbacks from constants.ts when the TV did not send it). */
+export interface EffectParams {
+  /** Freeze: taps to break the ice. */
+  taps: number;
+  /** Slime: blobs to wipe. */
+  blobs: number;
+  /** Fog: seconds until it has cleared by itself. */
+  seconds: number;
+}
+export interface EffectMessage { type: 'effect'; effect: PowerUpKind; from: string; params: EffectParams }
+
 export type IncomingMessage =
   | WelcomeMessage | RefusedMessage | SnapshotMessage | ScreenMessage | AckMessage
-  | PlayerMessage | PongMessage | TvAwayMessage | TvBackMessage;
+  | PlayerMessage | PongMessage | TvAwayMessage | TvBackMessage | EffectMessage;
 
 type Obj = Record<string, unknown>;
 
@@ -201,9 +250,25 @@ export function parseIncoming(text: unknown): IncomingMessage | null {
       return { type: 'tvAway' };
     case 'tvBack':
       return { type: 'tvBack' };
+    case 'effect':
+      if (!isPowerUp(m.effect)) return null;
+      return { type: 'effect', effect: m.effect, from: str(m.from), params: effectParams(m.params) };
     default:
       return null;
   }
+}
+
+/** A whole count of at least 1, else the fallback. */
+function count(x: unknown, fallback: number): number {
+  return typeof x === 'number' && Number.isFinite(x) && Math.round(x) >= 1 ? Math.round(x) : fallback;
+}
+
+function effectParams(x: unknown): EffectParams {
+  const p = isObj(x) ? x : {};
+  const seconds = typeof p.seconds === 'number' && Number.isFinite(p.seconds) && p.seconds > 0
+    ? p.seconds
+    : DEFAULT_FOG_SECONDS;
+  return { taps: count(p.taps, DEFAULT_FREEZE_TAPS), blobs: count(p.blobs, DEFAULT_SLIME_BLOBS), seconds };
 }
 
 // ---- defensive readers: a missing or broken field gets a harmless default, never a crash ----
@@ -340,13 +405,14 @@ export function waitingData(data: Record<string, unknown>): { locked: string } {
 export interface PowerUpTarget { playerId: string; name: string; available: boolean }
 
 export interface ResultData {
-  powerUp: string | null;
+  /** The held power up; null when missing or unknown (the phone then shows `watch`). */
+  powerUp: PowerUpKind | null;
   targets: PowerUpTarget[];
 }
 
 /**
- * Screen `result`: sent only to a player holding a power up (power ups come on Day 4). Read here but not drawn yet:
- * the phone shows `watch` for it (shownScreen.ts).
+ * Screen `result`: the power up pick in Reveal and Scores, sent only to a player holding a power up. Only a real
+ * `available: true` can be tapped.
  */
 export function resultData(data: Record<string, unknown>): ResultData {
   const targets: PowerUpTarget[] = [];
@@ -355,7 +421,33 @@ export function resultData(data: Record<string, unknown>): ResultData {
       targets.push({ playerId: p.playerId, name: str(p.name), available: p.available === true });
     }
   }
-  return { powerUp: typeof data.powerUp === 'string' ? data.powerUp : null, targets };
+  return { powerUp: isPowerUp(data.powerUp) ? data.powerUp : null, targets };
+}
+
+export type PollKind = 'choice' | 'text';
+
+export interface PollQuestion {
+  id: string;
+  /** Already in the player's language. */
+  text: string;
+  kind: PollKind;
+  /** The option texts of a `choice` question, in order; the index is the answer sent. Empty for `text`. */
+  options: string[];
+}
+
+/**
+ * Screen `poll` (20_playtest.md): the questions in order. A question without an id or with an unknown kind is left
+ * out, never a crash.
+ */
+export function pollData(data: Record<string, unknown>): { questions: PollQuestion[] } {
+  const questions: PollQuestion[] = [];
+  for (const q of list(data.questions)) {
+    if (!isObj(q) || typeof q.id !== 'string' || q.id === '') continue;
+    if (q.kind !== 'choice' && q.kind !== 'text') continue;
+    const options = q.kind === 'choice' ? list(q.options).map(str) : [];
+    questions.push({ id: q.id, text: str(q.text), kind: q.kind, options });
+  }
+  return { questions };
 }
 
 /** Screen `results`, sent only to the winner: the reward fact, already in the player's language (D87). */

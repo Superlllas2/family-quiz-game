@@ -1,6 +1,6 @@
 // Which screen the phone draws for a screen id from the TV app (06, D88). The phone is an input device: anything it
-// has nothing to draw for shows `watch` ("Смотри на экран / Eyes on the TV"), never a crash. That covers ids this
-// build does not draw yet (`result`, the power up pick, comes on Day 4; `poll`) and ids it does not know at all.
+// has nothing to draw for shows `watch` ("Смотри на экран / Eyes on the TV"), never a crash: ids it does not know,
+// and the screens version 2 removed.
 
 /** The screen ids the phone page draws itself. */
 export type ShownScreen =
@@ -13,7 +13,9 @@ export type ShownScreen =
   | 'answerSlider'
   | 'answerTrueFalse'
   | 'waiting'
+  | 'result'
   | 'results'
+  | 'poll'
   | 'pollDone'
   | 'error';
 
@@ -27,7 +29,9 @@ const DRAWN: ReadonlySet<string> = new Set<ShownScreen>([
   'answerSlider',
   'answerTrueFalse',
   'waiting',
+  'result',
   'results',
+  'poll',
   'pollDone',
   'error',
 ]);

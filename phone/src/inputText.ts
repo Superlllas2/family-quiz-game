@@ -15,6 +15,8 @@ export function inputStatusKey(input: TrackedInput): TextKey {
     case 'refused':
       if (input.reason === 'closed') return 'input.closed';
       if (input.reason === 'characterTaken') return 'pick.taken';
+      if (input.reason === 'immune') return 'powerUp.immune';
+      if (input.reason === 'noPowerUp') return 'powerUp.noPowerUp';
       return 'input.refused';
   }
 }

@@ -366,11 +366,13 @@ describe('session: connection and reconnects (PROTOCOL.md sections 2, 4, 5)', ()
     session.subscribe({ message: (m) => got.push(m.type) });
     const sock = joinAndWelcome();
     sock.onmessage?.({ data: 'garbage' });
-    sock.receive({ type: 'effect', effect: 'freeze' });
+    sock.receive({ type: 'somethingNew', effect: 'freeze' });
+    sock.receive({ type: 'effect', effect: 'lava', from: 'Papa' });
     sock.receive({ type: 'screen', phaseId: 3, id: 'lobby', endsInMs: null, data: {} });
     sock.receive({ type: 'ack', inputId: 'a1', ok: true });
     sock.receive({ type: 'pong', t: 1 });
-    expect(got).toEqual(['welcome', 'screen', 'ack']);
+    sock.receive({ type: 'effect', effect: 'freeze', from: 'Papa', params: { taps: 6 } });
+    expect(got).toEqual(['welcome', 'screen', 'ack', 'effect']);
     expect(status().kind).toBe('online');
   });
 });
