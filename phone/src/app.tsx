@@ -343,6 +343,8 @@ export function App({ deps }: { deps: AppDeps }) {
       case 'error':
         body = <TvErrorScreen lang={lang} screen={screen} />;
         break;
+      case 'result':
+      case 'poll':
       case 'watch':
         body = <WatchScreen lang={lang} player={player} />;
         break;

@@ -21,3 +21,28 @@ export const TIMER_MULTIPLIERS: readonly number[] = [1, 1.5, 2];
 
 /** How often a countdown on screen redraws. Display only; the TV app owns time (PROTOCOL.md section 6). */
 export const COUNTDOWN_TICK_MS = 100;
+
+// ---- sabotage overlays (03 "Power ups", 06 `sabotage`) ----
+// The TV app sends the real values in the `effect` params, from content/config.json `powerUps.freeze.taps`,
+// `powerUps.slime.blobs` and `powerUps.fog.seconds`. These are only the fallbacks for a message without them.
+
+/** Freeze: taps on the ice to break it, if the `effect` params do not say. */
+export const DEFAULT_FREEZE_TAPS = 6;
+
+/** Slime: blobs to wipe off, if the `effect` params do not say. */
+export const DEFAULT_SLIME_BLOBS = 3;
+
+/** Fog: seconds until it has cleared by itself, if the `effect` params do not say. */
+export const DEFAULT_FOG_SECONDS = 3;
+
+/** Fog: rubbing the screen makes the fog clear this many times faster (03: "Rubbing the screen clears it 2x faster"). */
+export const FOG_RUB_SPEEDUP = 2;
+
+/** Fog: a finger that is down counts as rubbing while it moved within this many ms (the gap between move events). */
+export const FOG_RUB_IDLE_MS = 150;
+
+/** Slime: a blob is wiped once the swipes through it add up to this share of its radius (a tap alone never wipes). */
+export const SLIME_WIPE_SHARE = 0.6;
+
+/** Poll: the longest answer to a text question (PROTOCOL.md section 3, `poll` answers). */
+export const POLL_TEXT_MAX = 200;
