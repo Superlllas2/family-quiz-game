@@ -67,8 +67,9 @@ namespace FamilyQuiz.Net
                     SendScreenToEveryone();
                     break;
                 case AnswerLocked _:
-                    // The locker now waits; every other locked player's pending list just lost a name.
-                    SendScreenToLockedPlayers();
+                case VoteCast _:
+                    // The sender now waits; every other waiting player's pending list just lost a name.
+                    SendScreenToWaitingPlayers();
                     break;
                 case LastCallStarted lastCall:
                     SendScreen(_game.State.FindById(lastCall.PlayerId));
@@ -97,13 +98,15 @@ namespace FamilyQuiz.Net
             Send(conn, new SnapshotMessage { Player = _screens.Player(player), Screen = _screens.CurrentScreen(player) });
         }
 
-        /// <summary>The pending lists changed (Answer), or the player list or ready marks did (Lobby).</summary>
+        /// <summary>The pending lists changed (TopicVote, Answer, RaceQuestion), or the player list or ready marks did (Lobby).</summary>
         private void RefreshAfterRosterChange()
         {
             switch (_game.State.Phase)
             {
                 case GamePhase.Answer:
-                    SendScreenToLockedPlayers();
+                case GamePhase.TopicVote:
+                case GamePhase.RaceQuestion:
+                    SendScreenToWaitingPlayers();
                     break;
                 case GamePhase.Lobby:
                     SendScreenToEveryone();
@@ -116,12 +119,12 @@ namespace FamilyQuiz.Net
             foreach (var player in _game.State.Players) SendScreen(player);
         }
 
-        private void SendScreenToLockedPlayers()
+        /// <summary>The players on the waiting screen (voted, or locked in): their pending lists changed.</summary>
+        private void SendScreenToWaitingPlayers()
         {
-            if (_game.State.Phase != GamePhase.Answer) return;
             foreach (var player in _game.State.Players)
             {
-                if (player.Turn != null && player.Turn.Locked) SendScreen(player);
+                if (_screens.IsWaiting(player)) SendScreen(player);
             }
         }
 

@@ -70,9 +70,11 @@ namespace FamilyQuiz.Net
                     return new PlayerLeave(conn, Str(msg["inputId"]));
                 case "input":
                     var input = new SubmitAnswer(conn, Str(msg["inputId"]), Num(msg["phaseId"]) ?? -1, Str(msg["kind"]),
-                        Int(msg["choice"]), Num(msg["ms"]));
+                        Int(msg["choice"]), Num(msg["ms"]), Int(msg["door"]), Dbl(msg["value"]), Bool(msg["answer"]),
+                        Str(msg["playerId"]));
                     _log("input received conn=" + conn + " inputId=" + input.InputId + " kind=" + input.Kind
-                         + " choice=" + input.Choice + " ms=" + input.Ms + " phaseId=" + input.PhaseId
+                         + " choice=" + input.Choice + " door=" + input.Door + " value=" + input.Value + " answer=" + input.Answer
+                         + " ms=" + input.Ms + " phaseId=" + input.PhaseId
                          + " (socket at " + item.ReceivedAt.ToString("HH:mm:ss.fff") + ")");
                     return input;
                 case "lobby":
@@ -120,6 +122,12 @@ namespace FamilyQuiz.Net
             var n = Num(token);
             if (!n.HasValue || n.Value < int.MinValue || n.Value > int.MaxValue) return null;
             return (int)n.Value;
+        }
+
+        /// <summary>A JSON true or false, or null.</summary>
+        private static bool? Bool(JToken token)
+        {
+            return token != null && token.Type == JTokenType.Boolean ? (bool)token : (bool?)null;
         }
 
         /// <summary>A finite number as a double, not rounded (timerMultiplier 1.5 stays 1.5), or null.</summary>

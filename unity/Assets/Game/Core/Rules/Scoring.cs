@@ -29,6 +29,27 @@ namespace FamilyQuiz.Core.Rules
             return points <= 0 ? 0 : (int)points;
         }
 
+        /// <summary>
+        /// Closest value distance points: roundTo(maxPoints x max(0, 1 - |guess - answer| / tolerance)) x multiplier,
+        /// rounded to the nearest scoring.roundTo before the multiplier. No speed component. The closest bonus is apart
+        /// (<see cref="ClosestBonus"/>).
+        /// </summary>
+        public static int ClosestValue(ScoringConfig scoring, double guess, double answer, double tolerance, double multiplier)
+        {
+            if (tolerance <= 0) return 0;
+            double share = Math.Max(0.0, 1.0 - Math.Abs(guess - answer) / tolerance);
+            double raw = Math.Round(scoring.MaxPoints * share, FloatDecimals);
+            double rounded = RoundTo(raw, scoring.RoundTo);
+            double points = Math.Round(rounded * multiplier, MidpointRounding.AwayFromZero);
+            return points <= 0 ? 0 : (int)points;
+        }
+
+        /// <summary>The closest bonus (closestValue.closestBonus) times the round multiplier, rounded to a whole point.</summary>
+        public static int ClosestBonus(ClosestValueConfig config, double multiplier)
+        {
+            return (int)Math.Round(config.ClosestBonus * multiplier, MidpointRounding.AwayFromZero);
+        }
+
         /// <summary>The phone's ms clamped to 0..windowMs (PROTOCOL.md section 6).</summary>
         public static long ClampMs(long ms, long windowMs)
         {

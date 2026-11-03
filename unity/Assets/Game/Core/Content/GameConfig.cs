@@ -23,6 +23,12 @@ namespace FamilyQuiz.Core.Content
         [JsonProperty("scoring", Required = Required.Always)]
         public ScoringConfig Scoring { get; set; }
 
+        [JsonProperty("closestValue", Required = Required.Always)]
+        public ClosestValueConfig ClosestValue { get; set; }
+
+        [JsonProperty("race", Required = Required.Always)]
+        public RaceConfig Race { get; set; }
+
         [JsonProperty("players", Required = Required.Always)]
         public PlayersConfig Players { get; set; }
 

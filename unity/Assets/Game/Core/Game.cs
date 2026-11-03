@@ -26,7 +26,10 @@ namespace FamilyQuiz.Core
         /// <param name="clock">The core clock.</param>
         /// <param name="tokenRandom">Random for seat tokens (not seeded in the app).</param>
         /// <param name="newSeed">Gives the seed for each new game; the game's IRandom is a SeededRandom of it, so a seed replays a game.</param>
-        public Game(GameContent content, IClock clock, IRandom tokenRandom, Func<int> newSeed)
+        /// <param name="seenQuestions">Question ids seen in earlier sessions (docs/02_show_flow.md, "Seen questions"), or null.</param>
+        /// <param name="seenRace">Race statement ids seen in earlier sessions, or null.</param>
+        public Game(GameContent content, IClock clock, IRandom tokenRandom, Func<int> newSeed,
+            IEnumerable<string> seenQuestions = null, IEnumerable<string> seenRace = null)
         {
             Content = content ?? throw new ArgumentNullException(nameof(content));
             Config = content.Config ?? throw new ArgumentNullException(nameof(content.Config));
@@ -35,6 +38,7 @@ namespace FamilyQuiz.Core
             State = new GameState();
             _roster = new Roster(State, Config, content.Characters, clock, tokenRandom);
             _director = new ShowDirector(State, content, clock, newSeed);
+            _director.LoadSeen(seenQuestions, seenRace);
             _inputs = new InputRules(State, _director, content.Characters);
             _settings = new SettingsRules(State, Config);
         }
@@ -59,24 +63,38 @@ namespace FamilyQuiz.Core
         /// </summary>
         public long? EndsInMs(PlayerState player)
         {
-            long? end = State.Phase == GamePhase.Answer && player?.Turn != null ? player.Turn.DeadlineMs : State.PhaseEndsAtMs;
+            bool turnPhase = State.Phase == GamePhase.Answer || State.Phase == GamePhase.RaceQuestion;
+            long? end = turnPhase && player?.Turn != null ? player.Turn.DeadlineMs : State.PhaseEndsAtMs;
             if (!end.HasValue) return null;
             return Math.Max(0, end.Value - _clock.NowMs);
         }
 
         /// <summary>
         /// True when at least one connected player can still send a game input right now (docs/15_schemas.md, "Idle"):
-        /// in Answer, a connected player who has not locked in and is before their deadline plus net.inputGraceMs.
+        /// a prediction in the Intro or a vote in TopicVote from a connected player who has not sent one; in Answer and
+        /// RaceQuestion, a connected player who has not locked in and is before their deadline plus net.inputGraceMs.
         /// </summary>
         public bool AnyoneCanAnswer
         {
             get
             {
-                if (State.Phase != GamePhase.Answer) return false;
                 var now = _clock.NowMs;
                 foreach (var p in State.Players)
                 {
-                    if (p.Connected && p.Turn != null && !p.Turn.Locked && now < p.Turn.DeadlineMs + Config.Net.InputGraceMs) return true;
+                    if (!p.Connected) continue;
+                    switch (State.Phase)
+                    {
+                        case GamePhase.Intro:
+                            if (!State.Predictions.ContainsKey(p.PlayerId)) return true;
+                            break;
+                        case GamePhase.TopicVote:
+                            if (State.Round != null && !State.Round.Votes.ContainsKey(p.PlayerId)) return true;
+                            break;
+                        case GamePhase.Answer:
+                        case GamePhase.RaceQuestion:
+                            if (p.Turn != null && !p.Turn.Locked && now < p.Turn.DeadlineMs + Config.Net.InputGraceMs) return true;
+                            break;
+                    }
                 }
 
                 return false;
@@ -114,6 +132,7 @@ namespace FamilyQuiz.Core
                 case LobbyAction c: _inputs.Lobby(c, output); break;
                 case PickCharacter c: _inputs.Character(c, output); break;
                 case ChangeSettings c: _settings.Change(c, output); break;
+                case ResetSeen _: _director.ResetSeen(output); break;
             }
 
             if (_started) _director.Reevaluate(output);

@@ -103,8 +103,8 @@ namespace FamilyQuiz.Tests
             double two = f.Config.Players.TimerMultiplierOptions.Max();
             Assert.That(two, Is.EqualTo(2));
             f.Send(new FamilyQuiz.Core.Commands.ChangeSettings("c2", null, two));
-            f.ReadyAll();
-            f.Advance(f.CountdownMs);
+            f.StartNextGame();
+            f.Advance(f.TopicVoteMs);
             f.Advance(f.QuestionShowMs);
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Answer));
             Assert.That(seats[0].Turn.WindowMs, Is.EqualTo(f.WindowMs));

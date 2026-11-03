@@ -136,6 +136,15 @@ namespace FamilyQuiz.Core.Content
             e.Check(Num(root, "staging.results.winnerWalkSeconds") < t.Results, "staging.results.winnerWalkSeconds",
                 "must be shorter than Results");
 
+            e.Check(c.ClosestValue.ClosestBonus >= 0, "closestValue.closestBonus", "must be 0 or more");
+            var race = c.Race;
+            e.Check(race.MaxHeadStart >= 0, "race.maxHeadStart", "must be 0 or more");
+            e.Check(race.FinishSteps > race.MaxHeadStart, "race.finishSteps", "must be more than race.maxHeadStart");
+            e.Check(race.MaxQuestions >= 1, "race.maxQuestions", "must be 1 or more");
+            e.Check(race.StepsPerCorrect >= 1, "race.stepsPerCorrect", "must be 1 or more");
+            Positive(e, "race.answer", race.Answer);
+            Positive(e, "race.reveal", race.Reveal);
+
             // lastPlaceCanWin (docs/02_show_flow.md) with the largest head start gap: leader maxHeadStart, last place 0.
             double maxHeadStart = Num(root, "race.maxHeadStart");
             double maxQuestions = Num(root, "race.maxQuestions");

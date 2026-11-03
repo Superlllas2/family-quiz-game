@@ -5,9 +5,9 @@ namespace FamilyQuiz.Core.Content
 {
     /// <summary>
     /// Loads and validates the content the game uses (docs/15_schemas.md): config.json, topics.json, questions.json,
-    /// characters.json and ui_strings.json. Files are read through the injected reader, so Core never touches the disk.
-    /// Any error throws a <see cref="ContentException"/> naming the file, the item id and the field; the game must not
-    /// start then.
+    /// race.json, show_scripts.json, characters.json and ui_strings.json. Files are read through the injected reader,
+    /// so Core never touches the disk. Any error throws a <see cref="ContentException"/> naming the file, the item id
+    /// and the field; the game must not start then.
     /// </summary>
     public sealed class ContentLoader
     {
@@ -26,9 +26,11 @@ namespace FamilyQuiz.Core.Content
             CheckMixedTopic(config, topics);
             var questions = QuestionLoader.Parse(_read(QuestionLoader.FileName), topics);
             CheckBankHoldsAGame(config, questions);
+            var race = RaceLoader.Parse(_read(RaceLoader.FileName), config);
+            var scripts = ShowScripts.Parse(_read(ShowScripts.FileName), config);
             var characters = CharacterLoader.Parse(_read(CharacterLoader.FileName), config);
             var strings = UiStrings.Parse(_read(UiStrings.FileName));
-            return new GameContent(config, characters, questions, strings, topics);
+            return new GameContent(config, characters, questions, strings, topics, race, scripts);
         }
 
         /// <summary>topics.mixedTopicId must name the topic marked mixed (tools/validate_content.mjs).</summary>
@@ -46,16 +48,16 @@ namespace FamilyQuiz.Core.Content
         }
 
         /// <summary>
-        /// The bank must hold one game without a repeat (D75, Day 2): for every slot difficulty, as many unused multiple
-        /// choice questions as the slots that draw it.
+        /// The bank must hold one Standard game without a repeat (docs/02_show_flow.md, "Questions"): for every slot kind
+        /// (rounds.formatOrder and rounds.difficultyOrder), rounds.count times as many questions as the slots of that kind.
         /// </summary>
         private static void CheckBankHoldsAGame(GameConfig config, IReadOnlyList<QuestionDef> questions)
         {
-            var needed = new Dictionary<string, int>();
+            var needed = new Dictionary<(string Format, string Difficulty), int>();
             for (int slot = 0; slot < config.Rounds.QuestionsPerRound; slot++)
             {
-                var d = Rules.QuestionPicker.SlotDifficulty(config.Rounds, slot);
-                needed[d] = needed.TryGetValue(d, out var n) ? n + 1 : 1;
+                var kind = (config.Rounds.FormatOrder[slot], config.Rounds.DifficultyOrder[slot]);
+                needed[kind] = (needed.TryGetValue(kind, out var n) ? n : 0) + config.Rounds.Count;
             }
 
             var errors = new ContentErrors(QuestionLoader.FileName);
@@ -64,11 +66,12 @@ namespace FamilyQuiz.Core.Content
                 int have = 0;
                 foreach (var q in questions)
                 {
-                    if (q.Format == QuestionDef.MultipleChoice && q.Difficulty == pair.Key) have++;
+                    if (q.Format == pair.Key.Format && q.Difficulty == pair.Key.Difficulty) have++;
                 }
 
                 errors.Check(have >= pair.Value, "-",
-                    "needs at least " + pair.Value + " multipleChoice questions of difficulty " + pair.Key + " for one game, has " + have);
+                    "needs at least " + pair.Value + " " + pair.Key.Format + " questions of difficulty " + pair.Key.Difficulty
+                    + " for one game, has " + have);
             }
 
             errors.ThrowIfAny();

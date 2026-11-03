@@ -35,7 +35,9 @@ namespace FamilyQuiz.Tests.EventLog
             _clock = new ManualClock();
             _clock.Advance(50000);
             var config = TestContent.Config();
-            _game = new Game(new GameContent(config, TestContent.Characters(config), new List<QuestionDef>(), null), _clock,
+            var real = TestContent.Content();
+            _game = new Game(new GameContent(config, TestContent.Characters(config), new List<QuestionDef>(), null, real.Topics,
+                    real.Race, real.Scripts), _clock,
                 new SeededRandom(1), () => 42);
             _writer = new EventLogWriter(_path, Session, Build, _clock);
             _log = new TelemetryListener(_game, _writer);

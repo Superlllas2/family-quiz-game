@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using FamilyQuiz.Core.Commands;
+using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.Events;
 using FamilyQuiz.Core.State;
 using NUnit.Framework;
@@ -210,7 +211,7 @@ namespace FamilyQuiz.Tests
             var events = f.Lobby("c2", LobbyActions.NotReady);
             Assert.That(events.OfType<GameStarted>().Count(), Is.EqualTo(1));
             Assert.That(LobbyFixture.AckOf(events).Reason, Is.EqualTo(AckReasons.Invalid));
-            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.QuestionShow));
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Intro));
         }
 
         [Test]
@@ -261,7 +262,7 @@ namespace FamilyQuiz.Tests
             f.Send(new PlayerLeave("c2", "bye"));
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.StartCountdown));
             f.Advance(f.CountdownMs);
-            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.QuestionShow));
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Intro));
         }
 
         [Test]
@@ -283,7 +284,7 @@ namespace FamilyQuiz.Tests
             f.Send(new ConnectionClosed("c2"));
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.StartCountdown));
             f.Advance(f.CountdownMs);
-            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.QuestionShow));
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Intro));
             Assert.That(f.State.Players.Count, Is.EqualTo(3), "the dropped seat is held and plays");
         }
 
@@ -299,7 +300,7 @@ namespace FamilyQuiz.Tests
             Assert.That(Names(events), Is.EqualTo(new[]
             {
                 "PhaseEnded(StartCountdown, timeout)", "GameStarted", "PlayerUpdated", "PlayerUpdated", "PlayerUpdated",
-                "PhaseStarted(QuestionShow)"
+                "PhaseStarted(Intro)"
             }));
             var started = events.OfType<GameStarted>().Single();
             Assert.That(started.Game, Is.EqualTo(1));
@@ -313,14 +314,13 @@ namespace FamilyQuiz.Tests
             Assert.That(f.State.GameStartedAtMs, Is.EqualTo(countdownStart + f.CountdownMs));
             Assert.That(f.State.QuestionCount, Is.EqualTo(f.Config.Rounds.QuestionsPerRound));
             Assert.That(f.State.PhaseStartedAtMs, Is.EqualTo(countdownStart + f.CountdownMs));
-            Assert.That(f.State.Question, Is.Not.Null);
-            Assert.That(f.State.Question.Number, Is.EqualTo(1));
-            Assert.That(f.State.Question.AnswerPhaseId, Is.EqualTo(0));
+            Assert.That(f.State.Question, Is.Null);
+            Assert.That(f.State.RoundCount, Is.EqualTo(f.Config.Rounds.Count));
             Assert.That(seats.All(p => p.Turn == null), Is.True);
             Assert.That(seats.All(p => !p.Ready), Is.True, "ready marks are cleared when a game starts");
-            var show = events.OfType<PhaseStarted>().Single();
-            Assert.That(show.BudgetMs, Is.EqualTo(f.QuestionShowMs));
-            Assert.That(show.StagingExtraMs, Is.EqualTo(LobbyFixture.Ms(f.Config.Staging.ExtraSeconds.QuestionShow)));
+            var intro = events.OfType<PhaseStarted>().Single();
+            Assert.That(intro.BudgetMs, Is.EqualTo(f.IntroMs));
+            Assert.That(intro.StagingExtraMs, Is.EqualTo(0));
         }
 
         [Test]
@@ -343,31 +343,55 @@ namespace FamilyQuiz.Tests
             f.ReadyAll();
             var events = f.RunToLobby();
 
-            var expected = new List<GamePhase> { GamePhase.QuestionShow };
-            for (int q = 0; q < f.Config.Rounds.QuestionsPerRound; q++)
+            // Nobody answers: everyone keeps rank 1, so everyone starts the race on the same step, nobody moves, and the
+            // race runs race.maxQuestions statements.
+            var expected = new List<GamePhase> { GamePhase.Intro };
+            for (int r = 0; r < f.Config.Rounds.Count; r++)
             {
-                if (q > 0) expected.Add(GamePhase.QuestionShow);
-                expected.AddRange(new[] { GamePhase.Answer, GamePhase.Reveal, GamePhase.Scores });
+                expected.Add(GamePhase.TopicVote);
+                for (int q = 0; q < f.Config.Rounds.QuestionsPerRound; q++)
+                    expected.AddRange(new[] { GamePhase.QuestionShow, GamePhase.Answer, GamePhase.Reveal, GamePhase.Scores });
+                expected.Add(GamePhase.RoundEnd);
             }
 
+            expected.Add(GamePhase.FinalIntro);
+            for (int q = 0; q < f.Config.Race.MaxQuestions; q++) expected.AddRange(new[] { GamePhase.RaceQuestion, GamePhase.RaceReveal });
             expected.Add(GamePhase.Results);
             expected.Add(GamePhase.Lobby);
             var started = events.OfType<PhaseStarted>().ToList();
             Assert.That(started.Select(s => s.Phase), Is.EqualTo(expected));
 
+            // Every phase lasts its budget; Answer and RaceQuestion their window plus net.inputGraceMs (D73).
             var budgets = new Dictionary<GamePhase, long>
             {
-                { GamePhase.StartCountdown, f.CountdownMs },
+                { GamePhase.Intro, f.IntroMs },
+                { GamePhase.TopicVote, f.TopicVoteMs },
                 { GamePhase.QuestionShow, f.QuestionShowMs },
-                { GamePhase.Answer, f.WindowMs + f.GraceMs },
                 { GamePhase.Reveal, f.RevealMs },
                 { GamePhase.Scores, f.ScoresMs },
+                { GamePhase.RoundEnd, f.RoundEndMs },
+                { GamePhase.FinalIntro, f.FinalIntroMs },
+                { GamePhase.RaceQuestion, f.RaceWindowMs + f.GraceMs },
+                { GamePhase.RaceReveal, f.RaceRevealMs },
                 { GamePhase.Results, f.ResultsMs }
             };
-            foreach (var ended in events.OfType<PhaseEnded>())
+            var ended = events.OfType<PhaseEnded>().Where(e => e.Phase != GamePhase.StartCountdown).ToList();
+            Assert.That(ended.Count, Is.EqualTo(started.Count - 1));
+            for (int i = 0; i < ended.Count; i++)
             {
-                Assert.That(ended.Reason, Is.EqualTo(PhaseEndReasons.Timeout), ended.Phase.ToString());
-                Assert.That(ended.DurationMs, Is.EqualTo(budgets[ended.Phase]), ended.Phase.ToString());
+                var e = ended[i];
+                Assert.That(e.Phase, Is.EqualTo(started[i].Phase));
+                Assert.That(e.Reason, Is.EqualTo(PhaseEndReasons.Timeout), e.Phase.ToString());
+                long budget = e.Phase == GamePhase.Answer ? started[i].BudgetMs + f.GraceMs : budgets[e.Phase];
+                Assert.That(e.DurationMs, Is.EqualTo(budget), e.Phase + " " + i);
+            }
+
+            // Slot 4 of every round is closest value with its own window.
+            var answerBudgets = started.Where(s => s.Phase == GamePhase.Answer).Select(s => s.BudgetMs).ToList();
+            for (int i = 0; i < answerBudgets.Count; i++)
+            {
+                bool closest = f.Config.Rounds.FormatOrder[i % f.Config.Rounds.QuestionsPerRound] == QuestionDef.ClosestValue;
+                Assert.That(answerBudgets[i], Is.EqualTo(closest ? f.ClosestWindowMs : f.WindowMs));
             }
 
             // Scores keeps Reveal's phaseId; every other phase gets a new one.
@@ -469,8 +493,8 @@ namespace FamilyQuiz.Tests
             var seats = f.SeatPlayers(2);
             f.Send(new PickCharacter("c1", "k1", 5));
             f.Send(new ChangeSettings("c2", "en", f.Config.Players.TimerMultiplierOptions.Max()));
-            f.ReadyAll();
-            f.Advance(f.CountdownMs);
+            f.StartNextGame();
+            f.Advance(f.TopicVoteMs);
             f.Advance(f.QuestionShowMs);
             f.Choice("c1", f.Right, 0);
             f.Choice("c2", f.Right, 0);
@@ -507,7 +531,7 @@ namespace FamilyQuiz.Tests
             f.ReadyAll();
             f.Advance(f.CountdownMs);
             f.Send(new PlayerLeave("c2", "bye"));
-            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.QuestionShow), "a game goes on with one player");
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Intro), "a game goes on with one player");
             f.RunToLobby();
             Assert.That(f.Game.EnoughPlayers, Is.False);
             f.ReadyAll();

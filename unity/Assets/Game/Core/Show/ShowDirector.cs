@@ -10,10 +10,13 @@ using FamilyQuiz.Core.State;
 namespace FamilyQuiz.Core.Show
 {
     /// <summary>
-    /// Runs the show on the injected clock (docs/02_show_flow.md, Day 2 scope from D75): Lobby, StartCountdown, then
-    /// GameState.QuestionCount x (QuestionShow, Answer, Reveal, Scores), Results, then the Lobby again (D76). Every duration comes from
-    /// config, with staging.extraSeconds added where a phase has one. A phase that ends on its timer ends at its
-    /// scheduled time and the next one starts at that same time, so on a fake clock every phase lasts its budget exactly.
+    /// Runs the show on the injected clock (docs/02_show_flow.md): Lobby, StartCountdown, then the segments of the
+    /// Standard show script (content/show_scripts.json): Intro (first game of the session only), rounds of TopicVote,
+    /// questions x (QuestionShow, Answer, Reveal, Scores) and RoundEnd, FinalIntro, the race as RaceQuestion and
+    /// RaceReveal per statement, Results, then back to the Lobby (D76). The poll segment is not built yet (Day 4) and is
+    /// passed over. Every duration comes from config, with staging.extraSeconds added where a phase has one. A phase that
+    /// ends on its timer ends at its scheduled time and the next one starts at that same time, so on a fake clock every
+    /// phase lasts its budget exactly.
     /// </summary>
     public sealed class ShowDirector
     {
@@ -23,11 +26,16 @@ namespace FamilyQuiz.Core.Show
         private readonly IClock _clock;
         private readonly Func<int> _newSeed;
         private readonly HashSet<string> _usedInGame = new HashSet<string>();
+        private readonly HashSet<string> _usedRaceInGame = new HashSet<string>();
+        private readonly HashSet<string> _chosenTopics = new HashSet<string>();
+        private readonly List<string> _segments = new List<string>();
         private IRandom _random;
+        private int _segmentIndex;
+        private int _roundIndex;
         private int _questionIndex;
 
-        /// <summary>phaseId of the Answer phase that closed last: an input naming it gets "closed", not "stale".</summary>
-        private long _closedAnswerPhaseId;
+        /// <summary>phaseId of the input phase (TopicVote, Answer, RaceQuestion) that closed last: an input naming it gets "closed", not "stale".</summary>
+        private long _closedInputPhaseId;
 
         public ShowDirector(GameState state, GameContent content, IClock clock, Func<int> newSeed)
         {
@@ -49,6 +57,26 @@ namespace FamilyQuiz.Core.Show
         public void OpenLobby(List<IGameEvent> output)
         {
             BeginUntimed(GamePhase.Lobby, Now, output);
+        }
+
+        // ---------------------------------------------------------------- seen lists
+
+        /// <summary>The seen lists saved by an earlier session (docs/02_show_flow.md, "Seen questions").</summary>
+        public void LoadSeen(IEnumerable<string> questions, IEnumerable<string> race)
+        {
+            if (questions != null)
+                foreach (var id in questions) _state.MutableSeenQuestionIds.Add(id);
+            if (race != null)
+                foreach (var id in race) _state.MutableSeenRaceIds.Add(id);
+        }
+
+        /// <summary>"Reset seen questions" (TV settings panel): clears both seen lists at once.</summary>
+        public void ResetSeen(List<IGameEvent> output)
+        {
+            _state.MutableSeenQuestionIds.Clear();
+            _state.MutableSeenRaceIds.Clear();
+            output.Add(new SeenChanged(true));
+            output.Add(new SettingsChanged(SettingsChanged.SourceTv, null, SettingsChanged.SettingResetSeen, "true"));
         }
 
         // ---------------------------------------------------------------- lobby actions
@@ -94,50 +122,154 @@ namespace FamilyQuiz.Core.Show
             return connected >= _config.Players.Min;
         }
 
-        // ---------------------------------------------------------------- answers
+        // ---------------------------------------------------------------- inputs
 
         /// <summary>
-        /// Why a choice input is refused, or null when it is accepted. Order: wrong phaseId (stale, or closed for the
-        /// Answer phase that just closed), a phase or kind that takes no choice (invalid), no turn or already locked
-        /// (invalid), a bad choice or no ms (invalid), at or after the deadline plus net.inputGraceMs (closed, D73).
+        /// Why an input is refused, or null when it is accepted. Order: wrong phaseId (stale, or closed for the input
+        /// phase that just closed), a phase or kind that takes no such input, no turn, already answered, or a bad field
+        /// (invalid), at or after the deadline plus net.inputGraceMs (closed, D73).
         /// </summary>
-        public string CheckChoice(PlayerState player, SubmitAnswer cmd)
+        public string CheckInput(PlayerState player, SubmitAnswer cmd)
         {
             if (cmd.PhaseId != _state.PhaseId)
-                return _closedAnswerPhaseId != 0 && cmd.PhaseId == _closedAnswerPhaseId ? AckReasons.Closed : AckReasons.Stale;
-            if (_state.Phase != GamePhase.Answer || cmd.Kind != InputKinds.Choice) return AckReasons.Invalid;
-            var turn = player.Turn;
-            if (turn == null || turn.Locked) return AckReasons.Invalid;
-            int options = _state.Question.DisplayOrder.Length;
-            if (!cmd.Choice.HasValue || cmd.Choice.Value < 0 || cmd.Choice.Value >= options || !cmd.Ms.HasValue)
-                return AckReasons.Invalid;
-            if (Now >= turn.DeadlineMs + _config.Net.InputGraceMs) return AckReasons.Closed;
+                return _closedInputPhaseId != 0 && cmd.PhaseId == _closedInputPhaseId ? AckReasons.Closed : AckReasons.Stale;
+            switch (_state.Phase)
+            {
+                case GamePhase.Intro:
+                    return CheckPrediction(player, cmd);
+                case GamePhase.TopicVote:
+                    return CheckVote(player, cmd);
+                case GamePhase.Answer:
+                    return CheckAnswer(player, cmd);
+                case GamePhase.RaceQuestion:
+                    return CheckRaceAnswer(player, cmd);
+                default:
+                    return AckReasons.Invalid;
+            }
+        }
+
+        private string CheckPrediction(PlayerState player, SubmitAnswer cmd)
+        {
+            if (cmd.Kind != InputKinds.Prediction || _state.MutablePredictions.ContainsKey(player.PlayerId)) return AckReasons.Invalid;
+            return _state.FindById(cmd.PlayerId) == null ? AckReasons.Invalid : null;
+        }
+
+        private string CheckVote(PlayerState player, SubmitAnswer cmd)
+        {
+            var round = _state.Round;
+            if (cmd.Kind != InputKinds.Vote || round == null || round.Votes.ContainsKey(player.PlayerId)) return AckReasons.Invalid;
+            if (!cmd.Door.HasValue || cmd.Door.Value < 0 || cmd.Door.Value >= round.Doors.Count) return AckReasons.Invalid;
             return null;
         }
 
-        /// <summary>Locks a choice that <see cref="CheckChoice"/> accepted. The end check runs after the command.</summary>
-        public void LockChoice(PlayerState player, SubmitAnswer cmd, List<IGameEvent> output)
+        private string CheckAnswer(PlayerState player, SubmitAnswer cmd)
+        {
+            var question = _state.Question;
+            var turn = player.Turn;
+            if (question == null || turn == null || turn.Locked || !cmd.Ms.HasValue) return AckReasons.Invalid;
+            if (question.IsClosestValue)
+            {
+                if (cmd.Kind != InputKinds.Value || !cmd.Value.HasValue) return AckReasons.Invalid;
+                double v = cmd.Value.Value;
+                var range = question.Def.Range;
+                if (double.IsNaN(v) || double.IsInfinity(v) || v < range[0] || v > range[1]) return AckReasons.Invalid;
+            }
+            else
+            {
+                if (cmd.Kind != InputKinds.Choice) return AckReasons.Invalid;
+                if (!cmd.Choice.HasValue || cmd.Choice.Value < 0 || cmd.Choice.Value >= question.DisplayOrder.Length)
+                    return AckReasons.Invalid;
+            }
+
+            return Now >= turn.DeadlineMs + _config.Net.InputGraceMs ? AckReasons.Closed : null;
+        }
+
+        private string CheckRaceAnswer(PlayerState player, SubmitAnswer cmd)
+        {
+            var turn = player.Turn;
+            if (cmd.Kind != InputKinds.TrueFalse || turn == null || turn.Locked || !cmd.Answer.HasValue || !cmd.Ms.HasValue)
+                return AckReasons.Invalid;
+            return Now >= turn.DeadlineMs + _config.Net.InputGraceMs ? AckReasons.Closed : null;
+        }
+
+        /// <summary>Applies an input that <see cref="CheckInput"/> accepted. The end checks run after the command.</summary>
+        public void LockInput(PlayerState player, SubmitAnswer cmd, List<IGameEvent> output)
+        {
+            switch (_state.Phase)
+            {
+                case GamePhase.Intro:
+                    _state.MutablePredictions[player.PlayerId] = cmd.PlayerId;
+                    output.Add(new PredictionMade(player.PlayerId, _state.PhaseId, cmd.PlayerId));
+                    break;
+                case GamePhase.TopicVote:
+                    _state.Round.MutableVotes[player.PlayerId] = cmd.Door.Value;
+                    output.Add(new VoteCast(player.PlayerId, _state.PhaseId, cmd.Door.Value));
+                    break;
+                case GamePhase.Answer:
+                    LockAnswer(player, cmd, output);
+                    break;
+                case GamePhase.RaceQuestion:
+                    LockRaceAnswer(player, cmd, output);
+                    break;
+            }
+        }
+
+        private void LockAnswer(PlayerState player, SubmitAnswer cmd, List<IGameEvent> output)
         {
             var turn = player.Turn;
             var question = _state.Question;
-            int choice = cmd.Choice.Value;
+            Lock(turn, cmd);
+            if (question.IsClosestValue)
+            {
+                var def = question.Def;
+                double value = cmd.Value.Value;
+                turn.Value = value;
+                int points = Scoring.ClosestValue(_config.Scoring, value, def.Answer.Value, def.Tolerance.Value, question.Multiplier);
+                output.Add(new AnswerLocked(player.PlayerId, _state.PhaseId, InputKinds.Value, -1, turn.Ms.Value, points > 0, points,
+                    value: value));
+            }
+            else
+            {
+                int choice = cmd.Choice.Value;
+                turn.Choice = choice;
+                bool correct = choice == question.CorrectDisplayIndex;
+                int points = Scoring.MultipleChoice(_config.Scoring, correct, turn.Ms.Value, turn.WindowMs, question.Multiplier);
+                output.Add(new AnswerLocked(player.PlayerId, _state.PhaseId, InputKinds.Choice, choice, turn.Ms.Value, correct, points));
+            }
+        }
+
+        private void LockRaceAnswer(PlayerState player, SubmitAnswer cmd, List<IGameEvent> output)
+        {
+            var turn = player.Turn;
+            Lock(turn, cmd);
+            bool answer = cmd.Answer.Value;
+            turn.TrueFalse = answer;
+            bool correct = answer == _state.Race.Statement.Answer;
+            output.Add(new AnswerLocked(player.PlayerId, _state.PhaseId, InputKinds.TrueFalse, -1, turn.Ms.Value, correct, 0,
+                trueFalse: answer));
+        }
+
+        private void Lock(PlayerTurn turn, SubmitAnswer cmd)
+        {
             turn.InputId = cmd.InputId;
-            turn.Choice = choice;
+            turn.Locked = true;
             turn.RawMs = cmd.Ms.Value;
             turn.Ms = Scoring.ClampMs(cmd.Ms.Value, turn.WindowMs);
             turn.LockedAtMs = Now;
-            bool correct = choice == question.CorrectDisplayIndex;
-            int points = Scoring.MultipleChoice(_config.Scoring, correct, turn.Ms.Value, turn.WindowMs, question.Multiplier);
-            output.Add(new AnswerLocked(player.PlayerId, _state.PhaseId, InputKinds.Choice, choice, turn.Ms.Value, correct, points));
         }
 
         // ---------------------------------------------------------------- the clock
 
+        /// <summary>True in the phases where players answer with personal deadlines: Answer and RaceQuestion.</summary>
+        private bool InTurnPhase => _state.Phase == GamePhase.Answer || _state.Phase == GamePhase.RaceQuestion;
+
         /// <summary>
         /// Rules that react to a changed state, run after every command and every tick (D76): the Lobby starts the
         /// countdown once every connected player is ready and players.min or more are connected; the countdown stops
-        /// (back to the Lobby) once that is no longer true (a Not ready, a join, a disconnect, a leave); in Answer, the phase ends at once when every connected player has locked in
-        /// or reached their deadline plus grace (D73), else last call may cut the one remaining player (D74).
+        /// (back to the Lobby) once that is no longer true (a Not ready, a join, a disconnect, a leave); TopicVote ends
+        /// at once when every connected player voted; Answer and RaceQuestion end at once when every connected player
+        /// has locked in or reached their deadline plus grace (D73), else last call may cut the one remaining player in
+        /// Answer (D74; the race has no last call).
         /// </summary>
         public void Reevaluate(List<IGameEvent> output)
         {
@@ -155,15 +287,21 @@ namespace FamilyQuiz.Core.Show
                 return;
             }
 
-            if (_state.Phase != GamePhase.Answer) return;
-            RaiseTimeouts(now, output);
-            if (AnswerDueAt(out var reason) <= now)
+            if (_state.Phase == GamePhase.TopicVote)
             {
-                EndAnswer(reason, now, output);
+                if (EveryConnectedPlayerVoted()) EndTopicVote(PhaseEndReasons.AllDone, now, output);
                 return;
             }
 
-            CheckLastCall(now, output);
+            if (!InTurnPhase) return;
+            RaiseTimeouts(now, output);
+            if (TurnPhaseDueAt(out var reason) <= now)
+            {
+                EndTurnPhase(reason, now, output);
+                return;
+            }
+
+            if (_state.Phase == GamePhase.Answer) CheckLastCall(now, output);
             _state.PhaseEndsAtMs = LatestDeadlinePlusGrace();
         }
 
@@ -178,10 +316,11 @@ namespace FamilyQuiz.Core.Show
                     case GamePhase.Lobby:
                         return;
                     case GamePhase.Answer:
-                        long due = AnswerDueAt(out var reason);
+                    case GamePhase.RaceQuestion:
+                        long due = TurnPhaseDueAt(out var reason);
                         RaiseTimeouts(Math.Min(now, due), output);
                         if (due > now) return;
-                        EndAnswer(reason, due, output);
+                        EndTurnPhase(reason, due, output);
                         break;
                     default:
                         if (!_state.PhaseEndsAtMs.HasValue || _state.PhaseEndsAtMs.Value > now) return;
@@ -191,11 +330,27 @@ namespace FamilyQuiz.Core.Show
             }
         }
 
+        /// <summary>Every connected player voted; false when nobody is connected (the vote then runs to its timer).</summary>
+        private bool EveryConnectedPlayerVoted()
+        {
+            var round = _state.Round;
+            bool any = false;
+            foreach (var p in _state.Players)
+            {
+                if (!p.Connected) continue;
+                any = true;
+                if (!round.Votes.ContainsKey(p.PlayerId)) return false;
+            }
+
+            return any;
+        }
+
         /// <summary>
-        /// When Answer is done (D73): every connected player locked in (reason allDone, at the last lock in; at once when
-        /// nobody is connected) or reached their deadline plus net.inputGraceMs (reason timeout, at the latest of those).
+        /// When Answer or RaceQuestion is done (D73): every connected player locked in (reason allDone, at the last lock
+        /// in; at once when nobody is connected) or reached their deadline plus net.inputGraceMs (reason timeout, at the
+        /// latest of those).
         /// </summary>
-        private long AnswerDueAt(out string reason)
+        private long TurnPhaseDueAt(out string reason)
         {
             long grace = _config.Net.InputGraceMs;
             long latestOpen = long.MinValue;
@@ -255,8 +410,8 @@ namespace FamilyQuiz.Core.Show
         }
 
         /// <summary>
-        /// PlayerTimedOut, once per player per Answer phase, for every player (connected or not) who has not locked in
-        /// and whose deadline plus net.inputGraceMs is at or before the given time; earliest first.
+        /// PlayerTimedOut, once per player per Answer or RaceQuestion phase, for every player (connected or not) who has
+        /// not locked in and whose deadline plus net.inputGraceMs is at or before the given time; earliest first.
         /// </summary>
         private void RaiseTimeouts(long upTo, List<IGameEvent> output)
         {
@@ -306,7 +461,7 @@ namespace FamilyQuiz.Core.Show
         }
 
         /// <summary>
-        /// The latest moment the Answer can end (D73): the latest deadline plus grace over the players who have not
+        /// The latest moment the turn phase can end (D73): the latest deadline plus grace over the players who have not
         /// locked in, connected or not. When everyone has locked in it stays where it was (the phase ends at once).
         /// </summary>
         private long LatestDeadlinePlusGrace()
@@ -327,11 +482,23 @@ namespace FamilyQuiz.Core.Show
         private void EndTimedPhase(long at, List<IGameEvent> output)
         {
             var phase = _state.Phase;
+            if (phase == GamePhase.TopicVote)
+            {
+                EndTopicVote(PhaseEndReasons.Timeout, at, output);
+                return;
+            }
+
             EndPhase(PhaseEndReasons.Timeout, at, output);
             switch (phase)
             {
                 case GamePhase.StartCountdown:
                     StartGame(at, output);
+                    break;
+                case GamePhase.Intro:
+                case GamePhase.RoundEnd:
+                case GamePhase.FinalIntro:
+                case GamePhase.Results:
+                    NextSegment(at, output);
                     break;
                 case GamePhase.QuestionShow:
                     BeginAnswer(at, output);
@@ -341,12 +508,23 @@ namespace FamilyQuiz.Core.Show
                     break;
                 case GamePhase.Scores:
                     if (_questionIndex + 1 < _state.QuestionCount) BeginQuestionShow(at, output);
-                    else BeginResults(at, output);
+                    else BeginRoundEnd(at, output);
                     break;
-                case GamePhase.Results:
-                    EndGame(at, output);
+                case GamePhase.RaceReveal:
+                    if (_state.Race.Finished) NextSegment(at, output);
+                    else BeginRaceQuestion(at, output);
                     break;
             }
+        }
+
+        private void EndTurnPhase(string reason, long at, List<IGameEvent> output)
+        {
+            var phase = _state.Phase;
+            if (_state.Question != null && phase == GamePhase.Answer) _state.Question.AnswerClosed = true;
+            _closedInputPhaseId = _state.PhaseId;
+            EndPhase(reason, at, output);
+            if (phase == GamePhase.Answer) BeginReveal(at, output);
+            else BeginRaceReveal(at, output);
         }
 
         private void CancelCountdown(long at, List<IGameEvent> output)
@@ -364,10 +542,30 @@ namespace FamilyQuiz.Core.Show
             _state.GameRunning = true;
             _state.QuestionCount = _config.Rounds.QuestionsPerRound;
             _state.Question = null;
+            _state.Round = null;
+            _state.Race = null;
             _state.WinnerId = null;
+            _state.MutablePlacement.Clear();
             _state.MutableMostCorrectIds.Clear();
+            _state.MutableBestComebackIds.Clear();
+            _state.MutableRanksAfterRound2.Clear();
+            _state.MutablePredictions.Clear();
             _usedInGame.Clear();
+            _usedRaceInGame.Clear();
+            _chosenTopics.Clear();
+            _roundIndex = -1;
             _questionIndex = -1;
+
+            // The Standard script; the next game from the Lobby starts at the first round (no intro, docs/15_schemas.md).
+            _segments.Clear();
+            foreach (var segment in _content.Scripts.Mode(ShowScripts.Standard))
+            {
+                if (segment == ShowSegments.Intro && _state.GameNumber > 1) continue;
+                _segments.Add(segment);
+            }
+
+            _segmentIndex = -1;
+            _state.RoundCount = _segments.Count(s => s == ShowSegments.Round);
 
             var ids = new List<string>();
             foreach (var p in _state.Players)
@@ -384,20 +582,113 @@ namespace FamilyQuiz.Core.Show
 
             output.Add(new GameStarted(_state.GameNumber, _state.Seed, GameStarted.ModeStandard, ids, _state.GameLanguage));
             foreach (var p in _state.Players) output.Add(new PlayerUpdated(p.PlayerId));
+            NextSegment(at, output);
+        }
+
+        /// <summary>Starts the next segment of the show script, or ends the game after the last one.</summary>
+        private void NextSegment(long at, List<IGameEvent> output)
+        {
+            while (true)
+            {
+                _segmentIndex++;
+                if (_segmentIndex >= _segments.Count)
+                {
+                    EndGame(at, output);
+                    return;
+                }
+
+                switch (_segments[_segmentIndex])
+                {
+                    case ShowSegments.Intro:
+                        BeginTimed(GamePhase.Intro, at, ToMs(_config.Timers.Intro), 0, output);
+                        return;
+                    case ShowSegments.Round:
+                        BeginTopicVote(at, output);
+                        return;
+                    case ShowSegments.FinalIntro:
+                    {
+                        bool isNew = SetUpRace();
+                        BeginTimed(GamePhase.FinalIntro, at, ToMs(_config.Timers.FinalIntro), 0, output);
+                        if (isNew) RaiseRaceStarted(output);
+                        return;
+                    }
+                    case ShowSegments.FinalRace:
+                    {
+                        bool isNew = SetUpRace();
+                        if (isNew) RaiseRaceStarted(output);
+                        BeginRaceQuestion(at, output);
+                        return;
+                    }
+                    case ShowSegments.Results:
+                        BeginResults(at, output);
+                        return;
+                    default:
+                        // poll (Day 4) and miniGame (after game night 1) are not built yet: passed over.
+                        continue;
+                }
+            }
+        }
+
+        // ---------------------------------------------------------------- rounds
+
+        private void BeginTopicVote(long at, List<IGameEvent> output)
+        {
+            _roundIndex++;
+            _questionIndex = -1;
+            _state.Question = null;
+            foreach (var p in _state.Players) p.Turn = null;
+            var doors = TopicPicker.Doors(_content.Topics, _content.Questions, _config.Topics, _chosenTopics,
+                _state.SeenQuestionIds, _random);
+            _state.Round = new RoundState(_roundIndex, _config.Rounds.Multipliers[_roundIndex], doors);
+            BeginTimed(GamePhase.TopicVote, at, ToMs(_config.Timers.TopicVote), 0, output);
+        }
+
+        private void EndTopicVote(string reason, long at, List<IGameEvent> output)
+        {
+            var round = _state.Round;
+            // Votes of players who left the game no longer count.
+            var votes = round.Votes.Where(v => _state.FindById(v.Key) != null).ToDictionary(v => v.Key, v => v.Value);
+            var counts = new int[round.Doors.Count];
+            foreach (var d in votes.Values) counts[d]++;
+            int most = counts.Length > 0 ? counts.Max() : 0;
+            bool nobodyVoted = most == 0;
+            bool tie = !nobodyVoted && counts.Count(c => c == most) > 1;
+
+            int door = TopicPicker.ResolveVote(votes, round.Doors.Count, RankOf, _random);
+            round.ChosenDoor = door;
+            _chosenTopics.Add(round.Topic.Id);
+            output.Add(new TopicChosen(round.Index + 1, door, round.Topic.Id, tie, nobodyVoted));
+
+            _closedInputPhaseId = _state.PhaseId;
+            EndPhase(reason, at, output);
             BeginQuestionShow(at, output);
+        }
+
+        private int RankOf(string playerId)
+        {
+            var player = _state.FindById(playerId);
+            return player == null ? int.MaxValue : Ranking.SharedRank(_state, player);
         }
 
         private void BeginQuestionShow(long at, List<IGameEvent> output)
         {
             _questionIndex++;
             var rounds = _config.Rounds;
-            int slot = _questionIndex % rounds.QuestionsPerRound;
-            int roundIndex = _questionIndex / rounds.QuestionsPerRound;
-            var def = QuestionPicker.Pick(_content.Questions, rounds, slot, _state.SeenQuestionIds, _usedInGame, _random);
+            var round = _state.Round;
+            int slot = _questionIndex;
+            var topic = round.Topic;
+            string topicId = topic.Mixed ? null : topic.Id;
+            var def = QuestionPicker.Pick(_content.Questions, rounds.FormatOrder[slot], rounds.DifficultyOrder[slot], topicId,
+                _state.SeenQuestionIds, _usedInGame, _random, out int group);
+            if (group != QuestionPicker.GroupUnseenTopic)
+                output.Add(new QuestionFallback(round.Index + 1, slot + 1, topic.Id, def.Id, group));
             _usedInGame.Add(def.Id);
             _state.MutableSeenQuestionIds.Add(def.Id);
-            var order = OptionShuffle.DisplayOrder(def.Options.Count, _random);
-            _state.Question = new QuestionInPlay(def, _questionIndex + 1, slot, roundIndex, rounds.Multipliers[roundIndex], order);
+            output.Add(new SeenChanged(false));
+
+            var order = def.Format == QuestionDef.MultipleChoice ? OptionShuffle.DisplayOrder(def.Options.Count, _random) : new int[0];
+            int number = round.Index * rounds.QuestionsPerRound + slot + 1;
+            _state.Question = new QuestionInPlay(def, number, slot, round.Index, round.Multiplier, order) { PickGroup = group };
             foreach (var p in _state.Players) p.Turn = null;
 
             long extra = ToMs(_config.Staging.ExtraSeconds.QuestionShow);
@@ -407,19 +698,26 @@ namespace FamilyQuiz.Core.Show
         private void BeginAnswer(long at, List<IGameEvent> output)
         {
             var question = _state.Question;
-            long baseWindow = ToMs(_config.Timers.Answer.MultipleChoice);
-            _state.Phase = GamePhase.Answer;
+            double seconds = question.IsClosestValue ? _config.Timers.Answer.ClosestValue : _config.Timers.Answer.MultipleChoice;
+            long baseWindow = ToMs(seconds);
+            question.AnswerStartedAtMs = at;
+            question.BaseWindowMs = baseWindow;
+            BeginTurnPhase(GamePhase.Answer, at, seconds, output);
+            question.AnswerPhaseId = _state.PhaseId;
+        }
+
+        /// <summary>Answer or RaceQuestion: a fresh turn per player with their personal window and deadline.</summary>
+        private void BeginTurnPhase(GamePhase phase, long at, double windowSeconds, List<IGameEvent> output)
+        {
+            long baseWindow = ToMs(windowSeconds);
+            _state.Phase = phase;
             _state.PhaseId++;
             _state.PhaseStartedAtMs = at;
             _state.PhaseBudgetMs = baseWindow;
             _state.PhaseStagingExtraMs = 0;
-            question.AnswerPhaseId = _state.PhaseId;
-            question.AnswerStartedAtMs = at;
-            question.BaseWindowMs = baseWindow;
             foreach (var p in _state.Players)
             {
-                long window = (long)Math.Round(_config.Timers.Answer.MultipleChoice * 1000.0 * p.TimerMultiplier,
-                    MidpointRounding.AwayFromZero);
+                long window = (long)Math.Round(windowSeconds * 1000.0 * p.TimerMultiplier, MidpointRounding.AwayFromZero);
                 p.Turn = new PlayerTurn
                 {
                     WindowMs = window,
@@ -429,15 +727,7 @@ namespace FamilyQuiz.Core.Show
             }
 
             _state.PhaseEndsAtMs = LatestDeadlinePlusGrace();
-            output.Add(new PhaseStarted(GamePhase.Answer, _state.PhaseId, baseWindow, 0, _state.PhaseEndsAtMs));
-        }
-
-        private void EndAnswer(string reason, long at, List<IGameEvent> output)
-        {
-            _state.Question.AnswerClosed = true;
-            _closedAnswerPhaseId = _state.PhaseId;
-            EndPhase(reason, at, output);
-            BeginReveal(at, output);
+            output.Add(new PhaseStarted(phase, _state.PhaseId, baseWindow, 0, _state.PhaseEndsAtMs));
         }
 
         private void BeginReveal(long at, List<IGameEvent> output)
@@ -446,22 +736,21 @@ namespace FamilyQuiz.Core.Show
             BeginTimed(GamePhase.Reveal, at, ToMs(_config.Timers.Reveal) + extra, extra, output);
 
             var question = _state.Question;
+            if (question.IsClosestValue) ScoreClosestValue(question);
+            else ScoreMultipleChoice(question);
+
             var deltas = new Dictionary<string, int>();
+            var roundPoints = _state.Round.MutablePoints;
             foreach (var p in _state.Players)
             {
                 var turn = p.Turn;
                 if (turn == null) continue;
-                bool correct = turn.Locked && turn.Choice.Value == question.CorrectDisplayIndex;
-                int points = correct
-                    ? Scoring.MultipleChoice(_config.Scoring, true, turn.Ms ?? 0, turn.WindowMs, question.Multiplier)
-                    : 0;
-                turn.Correct = correct;
-                turn.Points = points;
                 turn.Revealed = true;
-                p.Score += points;
-                p.Streak = correct ? p.Streak + 1 : 0;
-                if (correct) p.CorrectCount++;
-                deltas[p.PlayerId] = points;
+                p.Score += turn.Points;
+                p.Streak = turn.Correct ? p.Streak + 1 : 0;
+                if (turn.Correct) p.CorrectCount++;
+                roundPoints[p.PlayerId] = (roundPoints.TryGetValue(p.PlayerId, out var sum) ? sum : 0) + turn.Points;
+                deltas[p.PlayerId] = turn.Points;
             }
 
             output.Add(new Revealed(_state.PhaseId, question.Def.Id, question.CorrectDisplayIndex));
@@ -472,6 +761,57 @@ namespace FamilyQuiz.Core.Show
             }
 
             foreach (var p in _state.Players) output.Add(new PlayerUpdated(p.PlayerId));
+        }
+
+        private void ScoreMultipleChoice(QuestionInPlay question)
+        {
+            foreach (var p in _state.Players)
+            {
+                var turn = p.Turn;
+                if (turn == null) continue;
+                bool correct = turn.Locked && turn.Choice == question.CorrectDisplayIndex;
+                turn.Correct = correct;
+                turn.Points = correct
+                    ? Scoring.MultipleChoice(_config.Scoring, true, turn.Ms ?? 0, turn.WindowMs, question.Multiplier)
+                    : 0;
+            }
+        }
+
+        /// <summary>
+        /// Distance points per guess, plus closestValue.closestBonus times the multiplier for the closest guess or guesses
+        /// (ties: all of them), even when their distance score is 0. No answer: 0 and no bonus (docs/03_rules.md).
+        /// </summary>
+        private void ScoreClosestValue(QuestionInPlay question)
+        {
+            var def = question.Def;
+            double? best = null;
+            foreach (var p in _state.Players)
+            {
+                var turn = p.Turn;
+                if (turn == null || !turn.Value.HasValue) continue;
+                turn.Distance = Math.Abs(turn.Value.Value - def.Answer.Value);
+                if (!best.HasValue || turn.Distance.Value < best.Value) best = turn.Distance.Value;
+            }
+
+            int bonus = Scoring.ClosestBonus(_config.ClosestValue, question.Multiplier);
+            foreach (var p in _state.Players)
+            {
+                var turn = p.Turn;
+                if (turn == null) continue;
+                if (!turn.Value.HasValue)
+                {
+                    turn.Correct = false;
+                    turn.Points = 0;
+                    continue;
+                }
+
+                int points = Scoring.ClosestValue(_config.Scoring, turn.Value.Value, def.Answer.Value, def.Tolerance.Value,
+                    question.Multiplier);
+                turn.Correct = points > 0;
+                turn.Closest = turn.Distance.Value == best.Value;
+                turn.Bonus = turn.Closest ? bonus : 0;
+                turn.Points = points + turn.Bonus;
+            }
         }
 
         private void BeginScores(long at, List<IGameEvent> output)
@@ -487,13 +827,120 @@ namespace FamilyQuiz.Core.Show
             output.Add(new PhaseStarted(GamePhase.Scores, _state.PhaseId, budget, extra, _state.PhaseEndsAtMs));
         }
 
-        private void BeginResults(long at, List<IGameEvent> output)
+        private void BeginRoundEnd(long at, List<IGameEvent> output)
         {
             _state.Question = null;
             foreach (var p in _state.Players) p.Turn = null;
-            _state.WinnerId = PickWinner();
+            // "Best comeback" counts from the end of round 2 (docs/03_rules.md).
+            if (_roundIndex == 1)
+            {
+                _state.MutableRanksAfterRound2.Clear();
+                foreach (var p in _state.Players) _state.MutableRanksAfterRound2[p.PlayerId] = Ranking.SharedRank(_state, p);
+            }
+
+            long extra = ToMs(_config.Staging.ExtraSeconds.RoundEnd);
+            BeginTimed(GamePhase.RoundEnd, at, ToMs(_config.Timers.RoundEnd) + extra, extra, output);
+        }
+
+        // ---------------------------------------------------------------- the final race
+
+        /// <summary>Creates the race with head starts by shared rank; false when it already exists.</summary>
+        private bool SetUpRace()
+        {
+            if (_state.Race != null) return false;
+            var race = new RaceState();
+            var cfg = _config.Race;
+            int players = _state.Players.Count;
+            foreach (var p in _state.Players)
+            {
+                int start = RaceRules.HeadStart(Ranking.SharedRank(_state, p), players, cfg.MaxHeadStart);
+                race.MutableHeadStarts[p.PlayerId] = start;
+                race.MutablePositions[p.PlayerId] = start;
+                race.MutableScoresBefore[p.PlayerId] = p.Score;
+                race.MutableAnswerMs[p.PlayerId] = 0;
+            }
+
+            race.LastPlaceCanWin = RaceRules.LastPlaceCanWin(race.HeadStarts.Values, cfg);
+            _state.Round = null;
+            _state.Race = race;
+            return true;
+        }
+
+        private void RaiseRaceStarted(List<IGameEvent> output)
+        {
+            var race = _state.Race;
+            output.Add(new RaceStarted(new Dictionary<string, int>(race.MutableHeadStarts), race.LastPlaceCanWin));
+        }
+
+        private void BeginRaceQuestion(long at, List<IGameEvent> output)
+        {
+            var race = _state.Race;
+            var statement = RaceRules.PickStatement(_content.Race, _state.SeenRaceIds, _usedRaceInGame, _random);
+            race.StatementNumber++;
+            race.Statement = statement;
+            _usedRaceInGame.Add(statement.Id);
+            _state.MutableSeenRaceIds.Add(statement.Id);
+            output.Add(new SeenChanged(false));
+            BeginTurnPhase(GamePhase.RaceQuestion, at, _config.Race.Answer, output);
+        }
+
+        private void BeginRaceReveal(long at, List<IGameEvent> output)
+        {
+            BeginTimed(GamePhase.RaceReveal, at, ToMs(_config.Race.Reveal), 0, output);
+            var race = _state.Race;
+            var cfg = _config.Race;
+            foreach (var p in _state.Players)
+            {
+                var turn = p.Turn;
+                if (turn == null) continue;
+                bool correct = turn.Locked && turn.TrueFalse == race.Statement.Answer;
+                turn.Correct = correct;
+                turn.Revealed = true;
+                // Total answer time (second race tie break): the answer's ms, or the whole window without an answer.
+                long ms = turn.Locked ? turn.Ms ?? turn.WindowMs : turn.WindowMs;
+                race.MutableAnswerMs[p.PlayerId] = (race.AnswerMs.TryGetValue(p.PlayerId, out var sum) ? sum : 0) + ms;
+                race.MutablePositions[p.PlayerId] = RaceRules.Move(race.PositionOf(p.PlayerId), correct, cfg);
+            }
+
+            var seated = _state.Players.Select(p => p.PlayerId).ToList();
+            race.Finished = RaceRules.IsFinished(seated.Select(race.PositionOf), race.StatementNumber, cfg);
+            if (race.Finished)
+            {
+                race.MutablePlacement.Clear();
+                race.MutablePlacement.AddRange(RaceRules.Order(seated, race.Positions, race.ScoresBefore, race.AnswerMs, _random));
+            }
+
+            output.Add(new RaceRevealed(_state.PhaseId, race.Statement.Id, race.Statement.Answer, race.Finished));
+        }
+
+        // ---------------------------------------------------------------- results
+
+        private void BeginResults(long at, List<IGameEvent> output)
+        {
+            _state.Question = null;
+            _state.Round = null;
+            foreach (var p in _state.Players) p.Turn = null;
+
+            var placement = _state.MutablePlacement;
+            placement.Clear();
+            var race = _state.Race;
+            if (race != null && race.Finished)
+            {
+                placement.AddRange(race.Placement.Where(id => _state.FindById(id) != null));
+            }
+            else
+            {
+                // No race in this script: by score, ties in seeded random order.
+                var ids = _state.Players.Select(p => p.PlayerId).ToList();
+                var shuffled = ids.Count < 2 ? ids : OptionShuffle.DisplayOrder(ids.Count, _random).Select(i => ids[i]).ToList();
+                placement.AddRange(shuffled.OrderByDescending(id => _state.FindById(id).Score));
+            }
+
+            _state.WinnerId = placement.Count > 0 ? placement[0] : null;
             _state.MutableMostCorrectIds.Clear();
-            _state.MutableMostCorrectIds.AddRange(MostCorrect());
+            _state.MutableMostCorrectIds.AddRange(Awards.MostCorrect(_state.Players));
+            _state.MutableBestComebackIds.Clear();
+            _state.MutableBestComebackIds.AddRange(Awards.BestComeback(_state.RanksAfterRound2, placement));
             BeginTimed(GamePhase.Results, at, ToMs(_config.Timers.Results), 0, output);
         }
 
@@ -515,42 +962,6 @@ namespace FamilyQuiz.Core.Show
             }
 
             BeginUntimed(GamePhase.Lobby, at, output);
-        }
-
-        /// <summary>Day 2 winner (no race yet): the highest score; ties broken by the game's seeded random.</summary>
-        private string PickWinner()
-        {
-            var best = new List<PlayerState>();
-            foreach (var p in _state.Players)
-            {
-                if (best.Count == 0 || p.Score > best[0].Score)
-                {
-                    best.Clear();
-                    best.Add(p);
-                }
-                else if (p.Score == best[0].Score)
-                {
-                    best.Add(p);
-                }
-            }
-
-            if (best.Count == 0) return null;
-            return best.Count == 1 ? best[0].PlayerId : best[_random.Next(best.Count)].PlayerId;
-        }
-
-        /// <summary>"Most correct": every player with the highest correct count; nobody when nobody got one right.</summary>
-        private List<string> MostCorrect()
-        {
-            int most = 0;
-            foreach (var p in _state.Players) most = Math.Max(most, p.CorrectCount);
-            var ids = new List<string>();
-            if (most == 0) return ids;
-            foreach (var p in _state.Players)
-            {
-                if (p.CorrectCount == most) ids.Add(p.PlayerId);
-            }
-
-            return ids;
         }
 
         private void EndPhase(string reason, long at, List<IGameEvent> output)

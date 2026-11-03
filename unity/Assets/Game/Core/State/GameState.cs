@@ -9,7 +9,11 @@ namespace FamilyQuiz.Core.State
         private readonly List<PlayerState> _players = new List<PlayerState>();
         private readonly HashSet<string> _openConns = new HashSet<string>();
         private readonly HashSet<string> _seenQuestionIds = new HashSet<string>();
+        private readonly HashSet<string> _seenRaceIds = new HashSet<string>();
         private readonly List<string> _mostCorrectIds = new List<string>();
+        private readonly List<string> _bestComebackIds = new List<string>();
+        private readonly Dictionary<string, int> _ranksAfterRound2 = new Dictionary<string, int>();
+        private readonly Dictionary<string, string> _predictions = new Dictionary<string, string>();
 
         public GamePhase Phase { get; internal set; }
 
@@ -50,21 +54,60 @@ namespace FamilyQuiz.Core.State
         /// <summary>The question of the current cycle, or null outside question cycles.</summary>
         public QuestionInPlay Question { get; internal set; }
 
-        /// <summary>Questions in this game (rounds.questionsPerRound on Day 2).</summary>
+        /// <summary>Questions per round (rounds.questionsPerRound).</summary>
         public int QuestionCount { get; internal set; }
 
-        /// <summary>Question ids already shown. In memory on Day 2; saved to disk from Day 3.</summary>
+        /// <summary>Rounds in this game (the round segments of the show script).</summary>
+        public int RoundCount { get; internal set; }
+
+        /// <summary>The current round, or null outside rounds.</summary>
+        public RoundState Round { get; internal set; }
+
+        /// <summary>The final race of this game, or null before it starts.</summary>
+        public RaceState Race { get; internal set; }
+
+        /// <summary>Question ids already shown, across games and app restarts until "Reset seen questions" (SeenChanged).</summary>
         public IReadOnlyCollection<string> SeenQuestionIds => _seenQuestionIds;
 
         internal HashSet<string> MutableSeenQuestionIds => _seenQuestionIds;
 
-        /// <summary>Set when Results starts: the winner (highest score; ties by seeded random), or null.</summary>
+        /// <summary>Race statement ids already shown, kept like <see cref="SeenQuestionIds"/>.</summary>
+        public IReadOnlyCollection<string> SeenRaceIds => _seenRaceIds;
+
+        internal HashSet<string> MutableSeenRaceIds => _seenRaceIds;
+
+        /// <summary>Set when Results starts: the race winner (docs/03_rules.md, "Winner and ties"), or null.</summary>
         public string WinnerId { get; internal set; }
+
+        /// <summary>
+        /// Set when Results starts: every player in final order, winner first (the race order; without a race, by
+        /// score). results.place and the top 3 come from it.
+        /// </summary>
+        public IReadOnlyList<string> Placement => _placement;
+
+        internal List<string> MutablePlacement => _placement;
+
+        private readonly List<string> _placement = new List<string>();
 
         /// <summary>Set when Results starts: the players with the most correct answers ("Most correct"; ties: all of them).</summary>
         public IReadOnlyList<string> MostCorrectIds => _mostCorrectIds;
 
         internal List<string> MutableMostCorrectIds => _mostCorrectIds;
+
+        /// <summary>Set when Results starts: the players with the biggest rank gain from the end of round 2 ("Best comeback").</summary>
+        public IReadOnlyList<string> BestComebackIds => _bestComebackIds;
+
+        internal List<string> MutableBestComebackIds => _bestComebackIds;
+
+        /// <summary>Shared rank of each player when round 2 ended (for "Best comeback").</summary>
+        public IReadOnlyDictionary<string, int> RanksAfterRound2 => _ranksAfterRound2;
+
+        internal Dictionary<string, int> MutableRanksAfterRound2 => _ranksAfterRound2;
+
+        /// <summary>Intro predictions "Who wins tonight?": playerId to the playerId they tapped.</summary>
+        public IReadOnlyDictionary<string, string> Predictions => _predictions;
+
+        internal Dictionary<string, string> MutablePredictions => _predictions;
 
         /// <summary>Seated players in join order.</summary>
         public IReadOnlyList<PlayerState> Players => _players;

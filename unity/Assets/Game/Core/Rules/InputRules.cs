@@ -31,7 +31,7 @@ namespace FamilyQuiz.Core.Rules
             var player = SeatOf(cmd.Conn, cmd.InputId, output);
             if (player == null || Resent(player, cmd.Conn, cmd.InputId, output)) return;
 
-            var reason = _director.CheckChoice(player, cmd);
+            var reason = _director.CheckInput(player, cmd);
             if (reason != null)
             {
                 Refuse(player, cmd.Conn, cmd.InputId, cmd.Kind, cmd.PhaseId, reason, output);
@@ -39,7 +39,7 @@ namespace FamilyQuiz.Core.Rules
             }
 
             Answer(player, cmd.Conn, cmd.InputId, true, null, output);
-            _director.LockChoice(player, cmd, output);
+            _director.LockInput(player, cmd, output);
         }
 
         public void Lobby(LobbyAction cmd, List<IGameEvent> output)

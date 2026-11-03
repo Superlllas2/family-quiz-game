@@ -19,7 +19,8 @@ namespace FamilyQuiz.Tests
     {
         private int _inputNumber;
 
-        public LobbyFixture(int seed = 42, GameContent content = null)
+        public LobbyFixture(int seed = 42, GameContent content = null, IEnumerable<string> seenQuestions = null,
+            IEnumerable<string> seenRace = null)
         {
             Content = content ?? TestContent.Content();
             Config = Content.Config;
@@ -31,7 +32,7 @@ namespace FamilyQuiz.Tests
             {
                 Seeds.Add(nextSeed);
                 return nextSeed++;
-            });
+            }, seenQuestions, seenRace);
             Game.Start();
         }
 
@@ -55,6 +56,13 @@ namespace FamilyQuiz.Tests
         public long RevealMs => Ms(Config.Timers.Reveal) + Ms(Config.Staging.ExtraSeconds.Reveal);
         public long ScoresMs => Ms(Config.Timers.Scores) + Ms(Config.Staging.ExtraSeconds.Scores);
         public long ResultsMs => Ms(Config.Timers.Results);
+        public long IntroMs => Ms(Config.Timers.Intro);
+        public long TopicVoteMs => Ms(Config.Timers.TopicVote);
+        public long RoundEndMs => Ms(Config.Timers.RoundEnd) + Ms(Config.Staging.ExtraSeconds.RoundEnd);
+        public long FinalIntroMs => Ms(Config.Timers.FinalIntro);
+        public long RaceWindowMs => Ms(Config.Race.Answer);
+        public long RaceRevealMs => Ms(Config.Race.Reveal);
+        public long ClosestWindowMs => Ms(Config.Timers.Answer.ClosestValue);
         public long WindowMs => Ms(Config.Timers.Answer.MultipleChoice);
         public long GraceMs => Config.Net.InputGraceMs;
         public long LastCallMs => Ms(Config.Timers.LastCall);
@@ -126,6 +134,25 @@ namespace FamilyQuiz.Tests
             return Game.Handle(new SubmitAnswer(conn, inputId ?? NextInputId(), State.PhaseId, InputKinds.Choice, choice, ms));
         }
 
+        /// <summary>A topic vote for the current phase.</summary>
+        public IReadOnlyList<IGameEvent> Vote(string conn, int door, string inputId = null)
+        {
+            return Game.Handle(new SubmitAnswer(conn, inputId ?? NextInputId(), State.PhaseId, InputKinds.Vote, null, null, door: door));
+        }
+
+        /// <summary>A closest value guess for the current phase.</summary>
+        public IReadOnlyList<IGameEvent> Value(string conn, double value, long? ms, string inputId = null)
+        {
+            return Game.Handle(new SubmitAnswer(conn, inputId ?? NextInputId(), State.PhaseId, InputKinds.Value, null, ms, value: value));
+        }
+
+        /// <summary>A race answer for the current phase.</summary>
+        public IReadOnlyList<IGameEvent> TrueFalse(string conn, bool answer, long? ms, string inputId = null)
+        {
+            return Game.Handle(new SubmitAnswer(conn, inputId ?? NextInputId(), State.PhaseId, InputKinds.TrueFalse, null, ms,
+                answer: answer));
+        }
+
         /// <summary>The right display index of the current question.</summary>
         public int Right => State.Question.CorrectDisplayIndex;
 
@@ -153,16 +180,55 @@ namespace FamilyQuiz.Tests
             return all;
         }
 
-        /// <summary>Seats count players, everyone taps Ready, and runs the countdown and QuestionShow: the first Answer phase is open.</summary>
-        public PlayerState[] ToFirstAnswer(int count)
+        /// <summary>
+        /// Seats count players, everyone taps Ready, and runs the countdown and the Intro (first game only): the first
+        /// TopicVote is open.
+        /// </summary>
+        public PlayerState[] ToFirstVote(int count)
         {
             var seats = SeatPlayers(count);
+            StartNextGame();
+            return seats;
+        }
+
+        /// <summary>From the Lobby: everyone taps Ready, then the countdown and the Intro (first game only) run: TopicVote is open.</summary>
+        public void StartNextGame()
+        {
             ReadyAll();
+            Assert.That(State.Phase, Is.EqualTo(GamePhase.StartCountdown));
             Advance(CountdownMs);
+            if (State.Phase == GamePhase.Intro) Advance(IntroMs);
+            Assert.That(State.Phase, Is.EqualTo(GamePhase.TopicVote));
+        }
+
+        /// <summary>
+        /// Seats count players, everyone taps Ready, and runs the countdown, the Intro, the topic vote (nobody votes) and
+        /// QuestionShow: the first Answer phase (multiple choice) is open.
+        /// </summary>
+        public PlayerState[] ToFirstAnswer(int count)
+        {
+            var seats = ToFirstVote(count);
+            Advance(TopicVoteMs);
             Assert.That(State.Phase, Is.EqualTo(GamePhase.QuestionShow));
             Advance(QuestionShowMs);
             Assert.That(State.Phase, Is.EqualTo(GamePhase.Answer));
             return seats;
+        }
+
+        /// <summary>Steps the clock in 50 ms frames until the given phase starts again (at most maxMs of game clock).</summary>
+        public List<IGameEvent> SkipTo(GamePhase phase, long maxMs = 3600000)
+        {
+            // Waits for the phase to start anew, so it never returns at once when the game is already in it.
+            var all = new List<IGameEvent>();
+            long waited = 0;
+            while (true)
+            {
+                Assert.That(waited, Is.LessThanOrEqualTo(maxMs), "phase " + phase + " never started; now in " + State.Phase);
+                var events = Advance(50);
+                all.AddRange(events);
+                waited += 50;
+                if (events.OfType<PhaseStarted>().Any(p => p.Phase == phase)) return all;
+            }
         }
 
         /// <summary>Runs a running game to its end and back to the Lobby (D76) with nobody answering.</summary>

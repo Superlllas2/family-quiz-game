@@ -12,6 +12,9 @@ namespace FamilyQuiz.Core.Content
         /// <summary>questions.json "options": a list of 4.</summary>
         public const int OptionCount = 4;
 
+        /// <summary>race.json "statement": at most 120 characters per language (tools/validate_content.mjs).</summary>
+        public const int RaceStatementMax = 120;
+
         /// <summary>topics.json "title": at most 30 characters (tools/validate_content.mjs).</summary>
         public const int TopicTitleMax = 30;
 

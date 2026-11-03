@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 namespace FamilyQuiz.Tests
 {
-    /// <summary>Shared ranks (D22), the option shuffle (docs/04_formats.md) and question picking (D75).</summary>
+    /// <summary>Shared ranks (D22), the option shuffle (docs/04_formats.md) and the Day 3 question rules are in QuestionPickerTests.</summary>
     public sealed class RankingAndQuestionTests
     {
         [Test]
@@ -97,78 +97,6 @@ namespace FamilyQuiz.Tests
                 var locked = f.Choice("c1", q.CorrectDisplayIndex, 0).OfType<FamilyQuiz.Core.Events.AnswerLocked>().Single();
                 Assert.That(locked.Correct, Is.True);
             }
-        }
-
-        [Test]
-        public void SlotsFollowTheDifficultyOrderWithMediumForNonMultipleChoiceSlots()
-        {
-            var f = new LobbyFixture();
-            var rounds = f.Config.Rounds;
-            f.SeatPlayers(2);
-            f.ReadyAll();
-            for (int slot = 0; slot < rounds.QuestionsPerRound; slot++)
-            {
-                f.RunUntilPhase(GamePhase.QuestionShow, 3600000, 50);
-                var q = f.State.Question;
-                Assert.That(q.Slot, Is.EqualTo(slot));
-                Assert.That(q.Number, Is.EqualTo(slot + 1));
-                Assert.That(q.RoundIndex, Is.EqualTo(0));
-                Assert.That(q.Multiplier, Is.EqualTo(rounds.Multipliers[0]));
-                Assert.That(q.Def.Format, Is.EqualTo(QuestionDef.MultipleChoice));
-                string expected = rounds.FormatOrder[slot] == QuestionDef.MultipleChoice ? rounds.DifficultyOrder[slot] : Difficulties.Medium;
-                Assert.That(q.Def.Difficulty, Is.EqualTo(expected), "slot " + slot);
-                f.RunUntilPhase(GamePhase.Answer, 3600000, 50);
-            }
-        }
-
-        [Test]
-        public void NoQuestionTwiceInAGameAndUnseenFirstAcrossGames()
-        {
-            var f = new LobbyFixture();
-            f.SeatPlayers(2);
-            f.ReadyAll();
-            var first = QuestionsOf(f);
-            Assert.That(first.Distinct().Count(), Is.EqualTo(first.Count));
-            Assert.That(f.State.SeenQuestionIds, Is.EquivalentTo(first));
-
-            f.ReadyAll();
-            var second = QuestionsOf(f);
-            Assert.That(second.Intersect(first), Is.Empty, "the bank still has unseen ones, so none repeats");
-            Assert.That(f.State.SeenQuestionIds.Count, Is.EqualTo(first.Count + second.Count));
-        }
-
-        private static List<string> QuestionsOf(LobbyFixture f)
-        {
-            var ids = new List<string>();
-            while (true)
-            {
-                f.RunUntilPhase(GamePhase.QuestionShow, 3600000, 50);
-                ids.Add(f.State.Question.Def.Id);
-                f.RunUntilPhase(GamePhase.Scores, 3600000, 50);
-                if (ids.Count == f.State.QuestionCount) break;
-            }
-
-            f.RunToLobby();
-            return ids;
-        }
-
-        [Test]
-        public void SeenQuestionsAreUsedWhenNoUnseenOneIsLeft()
-        {
-            var bank = TestContent.Content().Questions;
-            var rounds = TestContent.Content().Config.Rounds;
-            var seen = new HashSet<string>(bank.Where(q => q.Format == QuestionDef.MultipleChoice).Select(q => q.Id));
-            var used = new HashSet<string>();
-            var q1 = QuestionPicker.Pick(bank, rounds, 0, seen, used, new SeededRandom(1));
-            Assert.That(q1.Difficulty, Is.EqualTo(rounds.DifficultyOrder[0]));
-            Assert.That(seen.Contains(q1.Id), Is.True);
-
-            seen.Remove(q1.Id);
-            var unseenOne = bank.First(q => q.Format == QuestionDef.MultipleChoice && q.Difficulty == rounds.DifficultyOrder[0] && q.Id != q1.Id);
-            seen.Remove(unseenOne.Id);
-            used.Add(q1.Id);
-            Assert.That(QuestionPicker.Pick(bank, rounds, 0, seen, used, new SeededRandom(9)).Id, Is.EqualTo(unseenOne.Id),
-                "the one unseen and unused question wins");
         }
     }
 }

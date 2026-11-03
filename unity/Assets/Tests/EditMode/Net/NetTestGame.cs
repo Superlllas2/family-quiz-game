@@ -38,7 +38,9 @@ namespace FamilyQuiz.Tests.NetScreens
                 Source = "https://www.wikidata.org/wiki/Q626"
             };
             var strings = UiStrings.Parse(TestContent.Read(UiStrings.FileName));
-            var content = new GameContent(Config, TestContent.Characters(Config), new List<QuestionDef> { Question }, strings);
+            var real = TestContent.Content();
+            var content = new GameContent(Config, TestContent.Characters(Config), new List<QuestionDef> { Question }, strings,
+                real.Topics, real.Race, real.Scripts);
             Game = new Game(content, Clock, new SeededRandom(1), () => 42);
             Game.Start();
             Sender = new CapturingRelaySender();
@@ -130,6 +132,7 @@ namespace FamilyQuiz.Tests.NetScreens
         public void Lock(PlayerState player, int displayIndex, long ms)
         {
             player.Turn.InputId = "in_" + player.PlayerId;
+            player.Turn.Locked = true;
             player.Turn.Choice = displayIndex;
             player.Turn.RawMs = ms;
             player.Turn.Ms = ms;

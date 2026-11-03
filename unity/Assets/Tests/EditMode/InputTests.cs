@@ -131,6 +131,12 @@ namespace FamilyQuiz.Tests
             Assert.That(LobbyFixture.AckOf(f.Choice("c1", 1, 100)).Reason, Is.EqualTo(AckReasons.Invalid), "Lobby");
             f.ReadyAll();
             f.Advance(f.CountdownMs);
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Intro));
+            Assert.That(LobbyFixture.AckOf(f.Choice("c1", 1, 100)).Reason, Is.EqualTo(AckReasons.Invalid), "Intro");
+            f.Advance(f.IntroMs);
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.TopicVote));
+            Assert.That(LobbyFixture.AckOf(f.Choice("c1", 1, 100)).Reason, Is.EqualTo(AckReasons.Invalid), "TopicVote");
+            f.Advance(f.TopicVoteMs);
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.QuestionShow));
             Assert.That(LobbyFixture.AckOf(f.Choice("c1", 1, 100)).Reason, Is.EqualTo(AckReasons.Invalid), "QuestionShow");
         }
