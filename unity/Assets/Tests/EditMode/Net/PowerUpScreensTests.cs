@@ -185,6 +185,9 @@ namespace FamilyQuiz.Tests.NetScreens
             Phone("c3", "{'v':2,'type':'poll','inputId':'p3','answers':{'again':0}}");
             Assert.That(_f.State.Phase, Is.EqualTo(GamePhase.Lobby), "everyone submitted");
             Assert.That((string)Last("c2")["id"], Is.EqualTo("lobby"));
+            // The last submitter ended the poll: it still gets "Thanks!" before the lobby.
+            var kidScreens = _sender.MessagesTo("c3", "screen").Select(m => (string)m["id"]).ToList();
+            Assert.That(kidScreens.Skip(kidScreens.Count - 2), Is.EqualTo(new[] { "pollDone", "lobby" }));
         }
 
         [Test]

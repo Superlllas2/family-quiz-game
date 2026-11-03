@@ -23,6 +23,9 @@ namespace FamilyQuiz.Net
         private readonly Func<string> _roomCode;
         private readonly Action<string> _log;
 
+        /// <summary>phaseId of the Poll phase in progress (for the last submitter's pollDone after the poll ended).</summary>
+        private long _pollPhaseId;
+
         public PhoneOutbox(Game game, IRelaySender sender, Func<string> roomCode, Action<string> log)
         {
             _game = game;
@@ -64,7 +67,8 @@ namespace FamilyQuiz.Net
                          + (ack.Reason != null ? " reason=" + ack.Reason : ""));
                     if (!ack.Ok && ack.Reason == AckReasons.CharacterTaken) SendScreen(_game.State.FindByConn(ack.Conn));
                     break;
-                case PhaseStarted _:
+                case PhaseStarted started:
+                    if (started.Phase == GamePhase.Poll) _pollPhaseId = started.PhaseId;
                     SendScreenToEveryone();
                     break;
                 case AnswerLocked locked:
@@ -85,8 +89,24 @@ namespace FamilyQuiz.Net
                     SendEffect(_game.State.FindById(applied.TargetId), applied.PowerUp, applied.AttackerName);
                     break;
                 case PollSubmitted poll:
-                    SendScreen(_game.State.FindById(poll.PlayerId));
+                {
+                    var player = _game.State.FindById(poll.PlayerId);
+                    if (_game.State.Phase == GamePhase.Poll)
+                    {
+                        SendScreen(player);
+                    }
+                    else if (player != null && IsReachable(player))
+                    {
+                        // The last poll ended the phase in the same command: this phone still gets its "Thanks!"
+                        // before the lobby screen that follows in this batch.
+                        Send(player.Conn, new ScreenMessage(new ScreenDto
+                        {
+                            PhaseId = _pollPhaseId, Id = ScreenIds.PollDone, EndsInMs = 0, Data = new WatchScreenData()
+                        }));
+                    }
+
                     break;
+                }
                 case RosterChanged _:
                 case PlayerConnectionChanged _:
                 case ReadyChanged _: // every lobby screen shows everyone's ready mark (D76)

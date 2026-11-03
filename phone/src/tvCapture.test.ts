@@ -4,7 +4,8 @@
 // and the phone page fails here.
 //
 // The capture is from a protocol version 2 game (D88): the phone gets `watch` between decisions, and only the winner
-// gets `results` with the fact. Power ups come on Day 4, so the capture holds no `result` screen yet.
+// gets `results` with the fact. Since Day 4 it also holds the power up pick (`result`), the `effect` messages, and the
+// `poll` and `pollDone` screens.
 
 import { describe, expect, it } from 'vitest';
 import capture from './fixtures/tvCapture.json';
@@ -17,6 +18,8 @@ import {
   pickCharacterData,
   resultsData,
   playerView,
+  pollData,
+  resultData,
   textData,
   topicVoteData,
   waitingData,
@@ -50,7 +53,7 @@ describe('the phone page parses every frame the TV app sent in a whole game', ()
   it('has every screen that version 2 kept in the capture', () => {
     const kept = [
       'pickCharacter', 'lobby', 'countdown', 'topicVote', 'answerChoice', 'answerSlider', 'answerTrueFalse', 'waiting',
-      'watch', 'results',
+      'watch', 'results', 'result', 'poll', 'pollDone',
     ];
     for (const id of kept) {
       expect(screens(id).length, id).toBeGreaterThan(0);
@@ -133,6 +136,39 @@ describe('the phone page parses every frame the TV app sent in a whole game', ()
       expect(resultsData(s.data).fact).toBe(s.data.fact);
       expect(resultsData(s.data).fact).not.toBe('');
     }
+  });
+
+  it('reads the power up pick, the effects and the poll with the values the TV sent', () => {
+    for (const s of screens('result')) {
+      const d = resultData(s.data);
+      expect(d.powerUp, JSON.stringify(s.data)).toBe(s.data.powerUp);
+      const sent = s.data.targets as { playerId: string; name: string; available: boolean }[];
+      expect(d.targets).toEqual(sent.map((t) => ({ playerId: t.playerId, name: t.name, available: t.available })));
+      expect(d.targets.length).toBeGreaterThan(0);
+    }
+    const effects = raw.filter((m) => m.type === 'effect');
+    expect(effects.length).toBeGreaterThan(0);
+    raw.forEach((m, i) => {
+      if (m.type !== 'effect') return;
+      const e = parsed[i] as IncomingMessage;
+      expect(e.type).toBe('effect');
+      if (e.type === 'effect') {
+        expect(e.effect).toBe(m.effect);
+        expect(e.from).toBe(m.from);
+        expect(e.from).not.toBe('');
+        const p = m.params as Record<string, number>;
+        if (m.effect === 'freeze') expect(e.params.taps).toBe(p.taps);
+        if (m.effect === 'slime') expect(e.params.blobs).toBe(p.blobs);
+        if (m.effect === 'fog') expect(e.params.seconds).toBe(p.seconds);
+      }
+    });
+    for (const s of screens('poll')) {
+      const d = pollData(s.data);
+      const sent = s.data.questions as { id: string; kind: string; options?: string[] }[];
+      expect(d.questions.map((q) => q.id)).toEqual(sent.map((q) => q.id));
+      d.questions.forEach((q, i) => expect(q.options).toEqual(sent[i].options ?? []));
+    }
+    for (const s of screens('pollDone')) expect(s.data).toEqual({});
   });
 
   it('reads every ack', () => {
