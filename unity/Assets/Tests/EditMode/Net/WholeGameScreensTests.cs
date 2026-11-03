@@ -131,7 +131,7 @@ namespace FamilyQuiz.Tests.NetScreens
             Assert.That((bool)race["data"]["correct"], Is.True);
             Assert.That((int)race["data"]["finish"], Is.EqualTo(_f.Config.Race.FinishSteps));
             var waitingTf = _sender.MessagesTo("c2", "screen").Last(m => (string)m["id"] == "waiting");
-            Assert.That((string)waitingTf["data"]["locked"], Is.AnyOf("True", "False"));
+            Assert.That((string)waitingTf["data"]["locked"], Is.EqualTo("True").Or.EqualTo("False"));
 
             // Texts in each phone's language; c1 always right, so it wins the race and has the most correct answers.
             var lastResult = _sender.MessagesTo("c2", "screen").Last(m => (string)m["id"] == "result");
