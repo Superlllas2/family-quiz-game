@@ -41,5 +41,5 @@ export const CONN_ID_PREFIX = "c_";
 export const CONN_ID_HEX_CHARS = 6;
 
 /** Messages the relay itself sends to phones. */
-export const MSG_TV_AWAY = '{"v":1,"type":"tvAway"}';
-export const MSG_TV_BACK = '{"v":1,"type":"tvBack"}';
+export const MSG_TV_AWAY = '{"v":2,"type":"tvAway"}';
+export const MSG_TV_BACK = '{"v":2,"type":"tvBack"}';

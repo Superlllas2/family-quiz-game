@@ -13,8 +13,8 @@ import {
 } from "../src/protocol";
 import { FakeSocket, FakeStorage, SECRET_A, SECRET_B, TestRoom } from "./fakes";
 
-const TV_AWAY = { v: 1, type: "tvAway" };
-const TV_BACK = { v: 1, type: "tvBack" };
+const TV_AWAY = { v: 2, type: "tvAway" };
+const TV_BACK = { v: 2, type: "tvBack" };
 const join = (name: string) => JSON.stringify({ v: 1, type: "join", name, lang: "ru" });
 
 let room: TestRoom;
