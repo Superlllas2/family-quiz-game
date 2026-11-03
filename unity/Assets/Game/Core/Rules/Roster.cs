@@ -83,6 +83,8 @@ namespace FamilyQuiz.Core.Rules
             _state.MutablePlayers.Add(player);
             output.Add(new PlayerJoined(player.PlayerId, cmd.Conn));
             output.Add(new RosterChanged());
+            // A host greets each new player in the Lobby; never a rejoin or a player kept after a game (docs/15_schemas.md).
+            output.Add(new HostLineRequested(Content.HostTriggers.PlayerJoined, player.Name));
         }
 
         public void Rejoin(PlayerRejoin cmd, List<IGameEvent> output)

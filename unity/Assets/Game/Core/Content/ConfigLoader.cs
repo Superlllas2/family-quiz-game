@@ -158,7 +158,8 @@ namespace FamilyQuiz.Core.Content
                     e.Check(PowerUpTypes.IsValid(type), "powerUps.types", "\"" + type + "\" must be freeze, slime or fog");
             e.Check(TargetingModes.IsValid(pu.Targeting), "powerUps.targeting", "must be free or aimUp");
             e.Check(pu.DrawChanceLeader >= 0 && pu.DrawChanceLeader <= 1, "powerUps.drawChanceLeader", "must be 0 to 1");
-            e.Check(pu.MaxHeld >= 1, "powerUps.maxHeld", "must be 1 or more");
+            // The player object carries one heldPowerUp (PROTOCOL.md section 4), so one is all a player can hold.
+            e.Check(pu.MaxHeld == 1, "powerUps.maxHeld", "must be 1 (the phone shows one held power up)");
             e.Check(pu.MaxHitsPerQuestion >= 1, "powerUps.maxHitsPerQuestion", "must be 1 or more");
             e.Check(pu.ImmunityQuestions >= 0, "powerUps.immunityQuestions", "must be 0 or more");
             e.Check(pu.Freeze.Taps >= 1, "powerUps.freeze.taps", "must be 1 or more");

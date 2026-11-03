@@ -38,6 +38,24 @@ namespace FamilyQuiz.Core.State
         public string GameLanguage { get; internal set; } = Languages.Default;
 
 
+        /// <summary>The TV settings panel values for the next game (power ups, types, targeting); they apply at the next game start.</summary>
+        public TvSettings PendingSettings { get; internal set; } = new TvSettings();
+
+        /// <summary>The settings the current game uses: a copy of PendingSettings taken when it started.</summary>
+        public TvSettings Settings { get; internal set; } = new TvSettings();
+
+        /// <summary>Players who submitted the poll in the current Poll phase.</summary>
+        public IReadOnlyCollection<string> PollSubmittedIds => _pollSubmitted;
+
+        internal HashSet<string> MutablePollSubmitted => _pollSubmitted;
+
+        public bool SubmittedPoll(string playerId)
+        {
+            return playerId != null && _pollSubmitted.Contains(playerId);
+        }
+
+        private readonly HashSet<string> _pollSubmitted = new HashSet<string>();
+
         /// <summary>Games started this session, 1 based; 0 before the first.</summary>
         public int GameNumber { get; internal set; }
 

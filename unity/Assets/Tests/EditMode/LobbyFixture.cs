@@ -56,6 +56,7 @@ namespace FamilyQuiz.Tests
         public long RevealMs => Ms(Config.Timers.Reveal) + Ms(Config.Staging.ExtraSeconds.Reveal);
         public long ScoresMs => Ms(Config.Timers.Scores) + Ms(Config.Staging.ExtraSeconds.Scores);
         public long ResultsMs => Ms(Config.Timers.Results);
+        public long PollMs => Ms(Config.Poll.MaxSeconds);
         public long IntroMs => Ms(Config.Timers.Intro);
         public long TopicVoteMs => Ms(Config.Timers.TopicVote);
 
@@ -249,6 +250,24 @@ namespace FamilyQuiz.Tests
         public static InputAcked AckOf(IReadOnlyList<IGameEvent> events)
         {
             return events.OfType<InputAcked>().Single();
+        }
+
+        /// <summary>The events without host line triggers and power up draws, for tests of the phase flow.</summary>
+        public static IEnumerable<IGameEvent> FlowEvents(IEnumerable<IGameEvent> events)
+        {
+            return events.Where(e => !(e is HostLineRequested) && !(e is PowerUpDrawn));
+        }
+
+        /// <summary>Uses a power up for the current pick window.</summary>
+        public IReadOnlyList<IGameEvent> UsePowerUp(string conn, string powerUp, string target, string inputId = null)
+        {
+            return Game.Handle(new UsePowerUp(conn, inputId ?? NextInputId(), State.PhaseId, powerUp, target));
+        }
+
+        /// <summary>Switches power ups off or on for the next game (TV settings panel).</summary>
+        public IReadOnlyList<IGameEvent> SetPowerUps(bool on, IReadOnlyList<string> types = null, string targeting = null)
+        {
+            return Game.Handle(new ChangeTvSettings(powerUpsEnabled: on, powerUpTypes: types, targeting: targeting));
         }
 
         public static string Describe(IEnumerable<IGameEvent> events)

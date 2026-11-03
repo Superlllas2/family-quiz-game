@@ -6,6 +6,9 @@ namespace FamilyQuiz.Core.Events
         /// <summary>Kind of a refused "character" message (the message type; it is not an input kind of PROTOCOL.md).</summary>
         public const string KindCharacter = "character";
 
+        /// <summary>Kind of a refused "poll" message (the message type).</summary>
+        public const string KindPoll = "poll";
+
         public InputRefused(string playerId, string kind, long phaseId, string reason)
         {
             PlayerId = playerId;

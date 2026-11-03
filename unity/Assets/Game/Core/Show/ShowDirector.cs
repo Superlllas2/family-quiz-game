@@ -13,8 +13,9 @@ namespace FamilyQuiz.Core.Show
     /// Runs the show on the injected clock (docs/02_show_flow.md): Lobby, StartCountdown, then the segments of the
     /// Standard show script (content/show_scripts.json): Intro (first game of the session only), rounds of TopicVote,
     /// questions x (QuestionShow, Answer, Reveal, Scores) and RoundEnd, FinalIntro, the race as RaceQuestion and
-    /// RaceReveal per statement, Results, then back to the Lobby (D76). The poll segment is not built yet (Day 4) and is
-    /// passed over. Every duration comes from config, with staging.extraSeconds added where a phase has one. A phase that
+    /// RaceReveal per statement, Results, the Poll, then back to the Lobby (D76). Power ups are drawn at Reveal, used in
+    /// the pick window (Reveal and Scores, one phaseId) and land when the next Answer starts. Host line triggers are
+    /// raised as HostLineRequested; Dialogue picks the lines. Every duration comes from config, with staging.extraSeconds added where a phase has one. A phase that
     /// ends on its timer ends at its scheduled time and the next one starts at that same time, so on a fake clock every
     /// phase lasts its budget exactly.
     /// </summary>
@@ -36,6 +37,9 @@ namespace FamilyQuiz.Core.Show
 
         /// <summary>phaseId of the input phase (TopicVote, Answer, RaceQuestion) that closed last: an input naming it gets "closed", not "stale".</summary>
         private long _closedInputPhaseId;
+
+        /// <summary>phaseId of the pick window (Reveal and Scores) that closed last: a power up naming it gets "closed".</summary>
+        private long _closedPickPhaseId;
 
         public ShowDirector(GameState state, GameContent content, IClock clock, Func<int> newSeed)
         {
@@ -251,6 +255,180 @@ namespace FamilyQuiz.Core.Show
             turn.LockedAtMs = Now;
         }
 
+        // ---------------------------------------------------------------- power ups (docs/03_rules.md, "Power ups")
+
+        /// <summary>
+        /// The pick window is open: Reveal or Scores of a round question, power ups on in this game, and not the last
+        /// question of the last round (there the pick is hidden, docs/03_rules.md "Using").
+        /// </summary>
+        public bool PickWindowOpen
+        {
+            get
+            {
+                if (_state.Phase != GamePhase.Reveal && _state.Phase != GamePhase.Scores) return false;
+                var question = _state.Question;
+                if (question == null || _state.Settings.DrawableTypes.Count == 0) return false;
+                return !IsLastQuestionOfGame(question);
+            }
+        }
+
+        /// <summary>The game question number a power up used now lands on: the next question.</summary>
+        public int LandsOnQuestion => (_state.Question?.Number ?? 0) + 1;
+
+        private bool IsLastQuestionOfGame(QuestionInPlay question)
+        {
+            return question.RoundIndex >= _state.RoundCount - 1 && question.Slot >= _state.QuestionCount - 1;
+        }
+
+        /// <summary>
+        /// Why a power up use is refused, or null: wrong phaseId (stale, or closed for the pick window that just closed),
+        /// no open pick window or a bad field (invalid), not holding that power up (noPowerUp), a target that is the
+        /// player, not seated or not allowed by the targeting mode (invalid), a target already hit for the next question
+        /// or immune (immune).
+        /// </summary>
+        public string CheckPowerUp(PlayerState player, UsePowerUp cmd)
+        {
+            if (cmd.PhaseId != _state.PhaseId)
+                return _closedPickPhaseId != 0 && cmd.PhaseId == _closedPickPhaseId ? AckReasons.Closed : AckReasons.Stale;
+            if (!PickWindowOpen || !PowerUpTypes.IsValid(cmd.PowerUp)) return AckReasons.Invalid;
+            if (player.HeldPowerUp == null || player.HeldPowerUp != cmd.PowerUp) return AckReasons.NoPowerUp;
+            var target = _state.FindById(cmd.Target);
+            if (target == null || target == player) return AckReasons.Invalid;
+            if (!Targeting.AllowedByRank(_state.Settings.Targeting, Ranking.SharedRank(_state, player), Ranking.SharedRank(_state, target)))
+                return AckReasons.Invalid;
+            if (Targeting.Blocked(target, LandsOnQuestion, _config.PowerUps)) return AckReasons.Immune;
+            return null;
+        }
+
+        /// <summary>Uses a power up that <see cref="CheckPowerUp"/> accepted: it waits on the target for the next Answer.</summary>
+        public void ApplyPowerUp(PlayerState player, UsePowerUp cmd, List<IGameEvent> output)
+        {
+            var target = _state.FindById(cmd.Target);
+            player.HeldPowerUp = null;
+            player.UsedPowerUpInPhaseId = _state.PhaseId;
+            player.UsedPowerUp = cmd.PowerUp;
+            player.UsedPowerUpTarget = target.PlayerId;
+            target.MutablePendingEffects.Add(new PendingEffect(cmd.PowerUp, player.PlayerId, player.Name));
+            output.Add(new PowerUpUsed(player.PlayerId, cmd.PowerUp, target.PlayerId, _state.PhaseId));
+            output.Add(new PlayerUpdated(player.PlayerId));
+            output.Add(new HostLineRequested(HostTriggers.PowerUpUsed, player.Name, target.Name, _state.Question.Number));
+        }
+
+        /// <summary>
+        /// Why an effectCleared input is refused, or null: wrong phaseId (stale, or closed for the Answer that just
+        /// closed), not in Answer, no effect on this player in this Answer, already cleared, another effect, no ms (invalid).
+        /// </summary>
+        public string CheckClearEffect(PlayerState player, ClearEffect cmd)
+        {
+            if (cmd.PhaseId != _state.PhaseId)
+                return _closedInputPhaseId != 0 && cmd.PhaseId == _closedInputPhaseId ? AckReasons.Closed : AckReasons.Stale;
+            var turn = player.Turn;
+            if (_state.Phase != GamePhase.Answer || turn == null || turn.Effect == null || turn.EffectCleared) return AckReasons.Invalid;
+            if (cmd.Effect != turn.Effect || !cmd.Ms.HasValue || cmd.Ms.Value < 0) return AckReasons.Invalid;
+            return null;
+        }
+
+        public void ApplyClearEffect(PlayerState player, ClearEffect cmd, List<IGameEvent> output)
+        {
+            player.Turn.EffectCleared = true;
+            output.Add(new EffectCleared(player.PlayerId, cmd.Effect, cmd.Ms.Value));
+        }
+
+        /// <summary>At Reveal, after scoring: each correct player not holding a power up may draw one (docs/03_rules.md, "Earning").</summary>
+        private void DrawPowerUps(QuestionInPlay question, List<IGameEvent> output)
+        {
+            if (IsLastQuestionOfGame(question)) return; // nothing to use it on: unused power ups are lost after this question
+            var types = _state.Settings.DrawableTypes;
+            if (types.Count == 0) return;
+            int players = _state.Players.Count;
+            foreach (var p in _state.Players)
+            {
+                var turn = p.Turn;
+                if (turn == null || !turn.Correct || p.HeldPowerUp != null) continue; // powerUps.maxHeld is 1
+                double chance = PowerUpDealer.Chance(turn.RankBefore, players, _config.PowerUps.DrawChanceLeader);
+                var drawn = PowerUpDealer.Draw(_random, chance, types);
+                if (drawn == null) continue;
+                p.HeldPowerUp = drawn;
+                output.Add(new PowerUpDrawn(p.PlayerId, drawn, turn.RankBefore, chance));
+            }
+        }
+
+        /// <summary>When an Answer phase starts: every power up waiting on a player lands on them (docs/03_rules.md, "Using").</summary>
+        private void ApplyEffects(QuestionInPlay question, List<IGameEvent> output)
+        {
+            foreach (var p in _state.Players)
+            {
+                if (p.PendingEffects.Count == 0 || p.Turn == null) continue;
+                foreach (var effect in p.PendingEffects)
+                {
+                    p.Turn.Effect = effect.PowerUp;
+                    p.Turn.EffectFrom = effect.AttackerName;
+                    output.Add(new PowerUpApplied(p.PlayerId, effect.AttackerId, effect.AttackerName, effect.PowerUp, _state.PhaseId));
+                }
+
+                p.LastHitQuestion = question.Number;
+                p.MutablePendingEffects.Clear();
+            }
+        }
+
+        // ---------------------------------------------------------------- the poll
+
+        /// <summary>Why a poll is refused, or null: not in the Poll phase (closed), no answers object or a second poll (invalid).</summary>
+        public string CheckPoll(PlayerState player, SubmitPoll cmd)
+        {
+            if (_state.Phase != GamePhase.Poll) return AckReasons.Closed;
+            if (cmd.Answers == null || _state.SubmittedPoll(player.PlayerId)) return AckReasons.Invalid;
+            return null;
+        }
+
+        public void ApplyPoll(PlayerState player, SubmitPoll cmd, List<IGameEvent> output)
+        {
+            _state.MutablePollSubmitted.Add(player.PlayerId);
+            output.Add(new PollSubmitted(player.PlayerId, PollAnswers.Clean(_content.Poll, cmd.Answers)));
+        }
+
+        /// <summary>Every connected player submitted; false when nobody is connected (the poll then runs to its timer).</summary>
+        private bool EveryConnectedPlayerSubmittedPoll()
+        {
+            bool any = false;
+            foreach (var p in _state.Players)
+            {
+                if (!p.Connected) continue;
+                any = true;
+                if (!_state.SubmittedPoll(p.PlayerId)) return false;
+            }
+
+            return any;
+        }
+
+        private void BeginPoll(long at, List<IGameEvent> output)
+        {
+            _state.MutablePollSubmitted.Clear();
+            BeginTimed(GamePhase.Poll, at, ToMs(_config.Poll.MaxSeconds), 0, output);
+        }
+
+        // ---------------------------------------------------------------- back to lobby
+
+        /// <summary>
+        /// "Back to lobby" (docs/02_show_flow.md): from any phase everyone returns to the Lobby with seats and characters
+        /// kept and ready cleared; a running game is abandoned (phaseEnded abandoned, gameEnded backToLobby).
+        /// </summary>
+        public void BackToLobby(List<IGameEvent> output)
+        {
+            long now = Now;
+            output.Add(new SettingsChanged(SettingsChanged.SourceTv, null, SettingsChanged.SettingBackToLobby, "true"));
+            if (_state.Phase == GamePhase.Lobby) return;
+            if (_state.Question != null && _state.Phase == GamePhase.Answer) _state.Question.AnswerClosed = true;
+            EndPhase(PhaseEndReasons.Abandoned, now, output);
+            if (_state.GameRunning)
+            {
+                _state.GameRunning = false;
+                output.Add(new GameEnded(_state.GameNumber, GameEnded.ReasonBackToLobby, null, now - _state.GameStartedAtMs));
+            }
+
+            ReturnToLobby(now, output);
+        }
+
         // ---------------------------------------------------------------- the clock
 
         /// <summary>True in the phases where players answer with personal deadlines: Answer and RaceQuestion.</summary>
@@ -271,6 +449,7 @@ namespace FamilyQuiz.Core.Show
             {
                 EndPhase(PhaseEndReasons.AllDone, now, output);
                 BeginTimed(GamePhase.StartCountdown, now, ToMs(_config.Lobby.StartCountdownSeconds), 0, output);
+                output.Add(new HostLineRequested(HostTriggers.StartCountdown));
                 return;
             }
 
@@ -283,6 +462,17 @@ namespace FamilyQuiz.Core.Show
             if (_state.Phase == GamePhase.TopicVote)
             {
                 if (EveryConnectedPlayerVoted()) EndTopicVote(PhaseEndReasons.AllDone, now, output);
+                return;
+            }
+
+            if (_state.Phase == GamePhase.Poll)
+            {
+                if (EveryConnectedPlayerSubmittedPoll())
+                {
+                    EndPhase(PhaseEndReasons.AllDone, now, output);
+                    NextSegment(now, output);
+                }
+
                 return;
             }
 
@@ -451,6 +641,7 @@ namespace FamilyQuiz.Core.Show
             turn.DeadlineMs = Math.Min(turn.DeadlineMs, now + ToMs(_config.Timers.LastCall));
             _state.PhaseEndsAtMs = LatestDeadlinePlusGrace();
             output.Add(new LastCallStarted(remaining.PlayerId, _state.PhaseId, turn.DeadlineMs));
+            output.Add(new HostLineRequested(HostTriggers.LastCall));
         }
 
         /// <summary>
@@ -490,7 +681,11 @@ namespace FamilyQuiz.Core.Show
                 case GamePhase.Intro:
                 case GamePhase.RoundEnd:
                 case GamePhase.FinalIntro:
+                case GamePhase.Poll:
+                    NextSegment(at, output);
+                    break;
                 case GamePhase.Results:
+                    FinishGame(at, output);
                     NextSegment(at, output);
                     break;
                 case GamePhase.QuestionShow:
@@ -500,6 +695,7 @@ namespace FamilyQuiz.Core.Show
                     BeginScores(at, output);
                     break;
                 case GamePhase.Scores:
+                    _closedPickPhaseId = _state.PhaseId;
                     if (_questionIndex + 1 < _state.QuestionCount) BeginQuestionShow(at, output);
                     else BeginRoundEnd(at, output);
                     break;
@@ -533,6 +729,8 @@ namespace FamilyQuiz.Core.Show
             _random = new SeededRandom(_state.Seed);
             _state.GameStartedAtMs = at;
             _state.GameRunning = true;
+            // The TV settings panel's power up settings apply from the next game start (docs/02_show_flow.md).
+            _state.Settings = _state.PendingSettings.Clone();
             _state.QuestionCount = _config.Rounds.QuestionsPerRound;
             _state.Question = null;
             _state.Round = null;
@@ -570,10 +768,12 @@ namespace FamilyQuiz.Core.Show
                 p.Turn = null;
                 p.CharacterPicked = true;
                 p.Ready = false;
+                ClearPowerUps(p);
                 ids.Add(p.PlayerId);
             }
 
-            output.Add(new GameStarted(_state.GameNumber, _state.Seed, GameStarted.ModeStandard, ids, _state.GameLanguage));
+            output.Add(new GameStarted(_state.GameNumber, _state.Seed, GameStarted.ModeStandard, ids, _state.GameLanguage,
+                _state.Settings.DrawableTypes, _state.Settings.Targeting));
             foreach (var p in _state.Players) output.Add(new PlayerUpdated(p.PlayerId));
             NextSegment(at, output);
         }
@@ -586,7 +786,8 @@ namespace FamilyQuiz.Core.Show
                 _segmentIndex++;
                 if (_segmentIndex >= _segments.Count)
                 {
-                    EndGame(at, output);
+                    if (_state.GameRunning) FinishGame(at, output);
+                    ReturnToLobby(at, output);
                     return;
                 }
 
@@ -594,6 +795,7 @@ namespace FamilyQuiz.Core.Show
                 {
                     case ShowSegments.Intro:
                         BeginTimed(GamePhase.Intro, at, ToMs(_config.Timers.Intro), 0, output);
+                        output.Add(new HostLineRequested(HostTriggers.GameStart));
                         return;
                     case ShowSegments.Round:
                         BeginTopicVote(at, output);
@@ -603,6 +805,7 @@ namespace FamilyQuiz.Core.Show
                         bool isNew = SetUpRace();
                         BeginTimed(GamePhase.FinalIntro, at, ToMs(_config.Timers.FinalIntro), 0, output);
                         if (isNew) RaiseRaceStarted(output);
+                        output.Add(new HostLineRequested(HostTriggers.FinalStart));
                         return;
                     }
                     case ShowSegments.FinalRace:
@@ -615,8 +818,15 @@ namespace FamilyQuiz.Core.Show
                     case ShowSegments.Results:
                         BeginResults(at, output);
                         return;
+                    case ShowSegments.Poll:
+                        // The poll comes after Results; the game itself already ended. Off in config (or no
+                        // questions): passed over.
+                        if (!_config.Poll.Enabled || _content.Poll.Count == 0) continue;
+                        if (_state.GameRunning) FinishGame(at, output);
+                        BeginPoll(at, output);
+                        return;
                     default:
-                        // poll (Day 4) and miniGame (after game night 1) are not built yet: passed over.
+                        // miniGame (after game night 1) is not built yet: passed over.
                         continue;
                 }
             }
@@ -645,6 +855,7 @@ namespace FamilyQuiz.Core.Show
             _state.PhaseStagingExtraMs = 0;
             _state.PhaseEndsAtMs = round.VoteDeadlineMs + _config.Net.InputGraceMs;
             output.Add(new PhaseStarted(GamePhase.TopicVote, _state.PhaseId, vote, 0, _state.PhaseEndsAtMs));
+            output.Add(new HostLineRequested(HostTriggers.RoundStart));
         }
 
         private void EndTopicVote(string reason, long at, List<IGameEvent> output)
@@ -713,6 +924,7 @@ namespace FamilyQuiz.Core.Show
             question.BaseWindowMs = baseWindow;
             BeginTurnPhase(GamePhase.Answer, at, seconds, output);
             question.AnswerPhaseId = _state.PhaseId;
+            ApplyEffects(question, output);
         }
 
         /// <summary>Answer or RaceQuestion: a fresh turn per player with their personal window and deadline.</summary>
@@ -773,6 +985,8 @@ namespace FamilyQuiz.Core.Show
                     output.Add(new ScoreChanged(p.PlayerId, delta, p.Score, Ranking.SharedRank(_state, p)));
             }
 
+            DrawPowerUps(question, output);
+            output.AddRange(RevealTriggers.Fired(_state, _config, _random));
             foreach (var p in _state.Players) output.Add(new PlayerUpdated(p.PlayerId));
         }
 
@@ -851,8 +1065,20 @@ namespace FamilyQuiz.Core.Show
                 foreach (var p in _state.Players) _state.MutableRanksAfterRound2[p.PlayerId] = Ranking.SharedRank(_state, p);
             }
 
+            // Unused power ups are lost at the end of the last round (docs/03_rules.md, "Using").
+            if (_roundIndex >= _state.RoundCount - 1)
+            {
+                foreach (var p in _state.Players)
+                {
+                    if (p.HeldPowerUp == null && p.PendingEffects.Count == 0) continue;
+                    ClearPowerUps(p);
+                    output.Add(new PlayerUpdated(p.PlayerId));
+                }
+            }
+
             long extra = ToMs(_config.Staging.ExtraSeconds.RoundEnd);
             BeginTimed(GamePhase.RoundEnd, at, ToMs(_config.Timers.RoundEnd) + extra, extra, output);
+            output.Add(new HostLineRequested(HostTriggers.RoundEnd));
         }
 
         // ---------------------------------------------------------------- the final race
@@ -967,6 +1193,8 @@ namespace FamilyQuiz.Core.Show
             }
 
             BeginTimed(GamePhase.Results, at, ToMs(_config.Timers.Results), 0, output);
+            var winner = _state.WinnerId != null ? _state.FindById(_state.WinnerId) : null;
+            if (winner != null) output.Add(new HostLineRequested(HostTriggers.RaceWinner, winner.Name));
         }
 
         /// <summary>One revealed answer (question or race statement) in the player's stats for the funny tags (D86).</summary>
@@ -987,13 +1215,23 @@ namespace FamilyQuiz.Core.Show
             if (ms < _config.Scoring.FastAnswerMs) stats.HastyWrong++;
         }
 
-        private void EndGame(long at, List<IGameEvent> output)
+        /// <summary>The game is over at the end of Results (log gameEnded, reason finished); the Poll may follow.</summary>
+        private void FinishGame(long at, List<IGameEvent> output)
         {
             _state.GameRunning = false;
             output.Add(new GameEnded(_state.GameNumber, GameEnded.ReasonFinished, _state.WinnerId, at - _state.GameStartedAtMs));
+        }
 
-            // Back to the Lobby (D76): scores, streaks and correct counts go to 0; seats, characters, languages and
-            // timer multipliers stay. Ready marks were cleared when the game started.
+        /// <summary>
+        /// Back to the Lobby (D76), after the Poll, after Results with the poll off, or by Back to lobby: scores, streaks,
+        /// correct counts and power ups go to 0 and ready marks are cleared; seats, characters, languages and timer
+        /// multipliers stay.
+        /// </summary>
+        private void ReturnToLobby(long at, List<IGameEvent> output)
+        {
+            _state.Question = null;
+            _state.Round = null;
+            _state.MutablePollSubmitted.Clear();
             foreach (var p in _state.Players)
             {
                 p.Score = 0;
@@ -1001,10 +1239,21 @@ namespace FamilyQuiz.Core.Show
                 p.CorrectCount = 0;
                 p.Turn = null;
                 p.Ready = false;
+                ClearPowerUps(p);
                 output.Add(new PlayerUpdated(p.PlayerId));
             }
 
             BeginUntimed(GamePhase.Lobby, at, output);
+        }
+
+        private static void ClearPowerUps(PlayerState p)
+        {
+            p.HeldPowerUp = null;
+            p.MutablePendingEffects.Clear();
+            p.LastHitQuestion = null;
+            p.UsedPowerUpInPhaseId = 0;
+            p.UsedPowerUp = null;
+            p.UsedPowerUpTarget = null;
         }
 
         private void EndPhase(string reason, long at, List<IGameEvent> output)

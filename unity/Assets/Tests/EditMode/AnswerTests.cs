@@ -16,7 +16,7 @@ namespace FamilyQuiz.Tests
     {
         private static List<string> Names(IEnumerable<IGameEvent> events)
         {
-            return events.Select(LobbyFixture.Describe).ToList();
+            return LobbyFixture.FlowEvents(events).Select(LobbyFixture.Describe).ToList();
         }
 
         [Test]

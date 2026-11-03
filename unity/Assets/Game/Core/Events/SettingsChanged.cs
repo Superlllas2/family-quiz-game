@@ -15,6 +15,11 @@ namespace FamilyQuiz.Core.Events
 
         /// <summary>TV setting names (docs/15_schemas.md, "settingsChanged.source").</summary>
         public const string SettingResetSeen = "resetSeen";
+        public const string SettingGameLang = "gameLang";
+        public const string SettingPowerUps = "powerUps";
+        public const string SettingPowerUpTypes = "powerUpTypes";
+        public const string SettingTargeting = "targeting";
+        public const string SettingBackToLobby = "backToLobby";
 
         public SettingsChanged(string source, string playerId, string setting, string value)
         {

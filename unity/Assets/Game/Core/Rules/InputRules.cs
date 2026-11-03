@@ -8,7 +8,7 @@ using FamilyQuiz.Core.State;
 namespace FamilyQuiz.Core.Rules
 {
     /// <summary>
-    /// Inputs that get an ack: input, lobby and character (PROTOCOL.md sections 3 and 4).
+    /// Inputs that get an ack: input (answers, votes, power ups, effectCleared), lobby, character and poll (PROTOCOL.md sections 3 and 4).
     /// A resent inputId gets the same ack again and is never applied twice; a first ok ack comes back
     /// as ok with reason "duplicate". A refused input from a seated player also raises InputRefused.
     /// What is valid when is decided by the ShowDirector (answers, lobby actions) and here (character picks).
@@ -40,6 +40,57 @@ namespace FamilyQuiz.Core.Rules
 
             Answer(player, cmd.Conn, cmd.InputId, true, null, output);
             _director.LockInput(player, cmd, output);
+        }
+
+        /// <summary>Input kind powerUp: use the held power up in the pick window (ack reasons stale, closed, invalid, noPowerUp, immune).</summary>
+        public void PowerUp(UsePowerUp cmd, List<IGameEvent> output)
+        {
+            var player = SeatOf(cmd.Conn, cmd.InputId, output);
+            if (player == null || Resent(player, cmd.Conn, cmd.InputId, output)) return;
+
+            var reason = _director.CheckPowerUp(player, cmd);
+            if (reason != null)
+            {
+                Refuse(player, cmd.Conn, cmd.InputId, InputKinds.PowerUp, cmd.PhaseId, reason, output);
+                return;
+            }
+
+            Answer(player, cmd.Conn, cmd.InputId, true, null, output);
+            _director.ApplyPowerUp(player, cmd, output);
+        }
+
+        /// <summary>Input kind effectCleared: the sabotage overlay was cleared on the phone (telemetry only; never locks an answer).</summary>
+        public void EffectCleared(ClearEffect cmd, List<IGameEvent> output)
+        {
+            var player = SeatOf(cmd.Conn, cmd.InputId, output);
+            if (player == null || Resent(player, cmd.Conn, cmd.InputId, output)) return;
+
+            var reason = _director.CheckClearEffect(player, cmd);
+            if (reason != null)
+            {
+                Refuse(player, cmd.Conn, cmd.InputId, InputKinds.EffectCleared, cmd.PhaseId, reason, output);
+                return;
+            }
+
+            Answer(player, cmd.Conn, cmd.InputId, true, null, output);
+            _director.ApplyClearEffect(player, cmd, output);
+        }
+
+        /// <summary>The poll message: once per player in the Poll phase.</summary>
+        public void Poll(SubmitPoll cmd, List<IGameEvent> output)
+        {
+            var player = SeatOf(cmd.Conn, cmd.InputId, output);
+            if (player == null || Resent(player, cmd.Conn, cmd.InputId, output)) return;
+
+            var reason = _director.CheckPoll(player, cmd);
+            if (reason != null)
+            {
+                Refuse(player, cmd.Conn, cmd.InputId, InputRefused.KindPoll, _state.PhaseId, reason, output);
+                return;
+            }
+
+            Answer(player, cmd.Conn, cmd.InputId, true, null, output);
+            _director.ApplyPoll(player, cmd, output);
         }
 
         public void Lobby(LobbyAction cmd, List<IGameEvent> output)

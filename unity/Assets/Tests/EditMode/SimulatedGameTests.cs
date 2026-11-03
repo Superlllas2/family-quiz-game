@@ -59,6 +59,11 @@ namespace FamilyQuiz.Tests
             public long DurationMs;
             public long IdleMs;
             public long LongestIdleMs;
+            public int Drawn;
+            public int Used;
+            public int Applied;
+            public int Cleared;
+            public int Polls;
             public double IdleShare => DurationMs > 0 ? (double)IdleMs / DurationMs : 0;
         }
 
@@ -90,7 +95,7 @@ namespace FamilyQuiz.Tests
                     if (input == null) continue;
                     var events = f.Send(input);
                     Assert.That(LobbyFixture.AckOf(events).Ok, Is.True,
-                        s.Profile + " " + input.Kind + " refused in " + f.State.Phase + ": " + LobbyFixture.Describe(events));
+                        s.Profile + " " + input.GetType().Name + " refused in " + f.State.Phase + ": " + LobbyFixture.Describe(events));
                     Record(f, record, events);
                 }
             }
@@ -136,6 +141,25 @@ namespace FamilyQuiz.Tests
                     }
                     case AnswerLocked locked:
                         r.LastLockMs[locked.PhaseId] = now;
+                        break;
+                    case PowerUpDrawn _:
+                        r.Drawn++;
+                        Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Reveal), "draws happen at Reveal");
+                        break;
+                    case PowerUpUsed _:
+                        r.Used++;
+                        Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Reveal).Or.EqualTo(GamePhase.Scores));
+                        break;
+                    case PowerUpApplied applied:
+                        r.Applied++;
+                        Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Answer), "effects land when Answer starts");
+                        Assert.That(applied.PhaseId, Is.EqualTo(f.State.PhaseId));
+                        break;
+                    case EffectCleared _:
+                        r.Cleared++;
+                        break;
+                    case PollSubmitted _:
+                        r.Polls++;
                         break;
                     case ScoreChanged score:
                         r.ScoreDeltas[score.PlayerId] = (r.ScoreDeltas.TryGetValue(score.PlayerId, out var sum) ? sum : 0) + score.Delta;
@@ -188,7 +212,8 @@ namespace FamilyQuiz.Tests
         /// </summary>
         private static void Measure(GameRecord r)
         {
-            var game = r.Phases.Where(p => p.Phase != GamePhase.Lobby).ToList();
+            // The poll comes after the game ended (gameEnded at the end of Results): not game time.
+            var game = r.Phases.Where(p => p.Phase != GamePhase.Lobby && p.Phase != GamePhase.Poll).ToList();
             r.DurationMs = r.Ended.DurationMs;
             long stretch = 0;
             foreach (var p in game)
@@ -229,6 +254,7 @@ namespace FamilyQuiz.Tests
             expected.Add(GamePhase.FinalIntro);
             for (int s = 0; s < r.Statements.Count; s++) expected.AddRange(new[] { GamePhase.RaceQuestion, GamePhase.RaceReveal });
             expected.Add(GamePhase.Results);
+            if (f.Config.Poll.Enabled) expected.Add(GamePhase.Poll);
             expected.Add(GamePhase.Lobby);
             return expected;
         }
@@ -259,6 +285,12 @@ namespace FamilyQuiz.Tests
                 {
                     Assert.That(duration, Is.LessThanOrEqualTo(f.VoteEndMs));
                     if (p.Reason == PhaseEndReasons.Timeout) Assert.That(duration, Is.EqualTo(f.VoteEndMs));
+                }
+                else if (p.Phase == GamePhase.Poll)
+                {
+                    // Ends when every connected phone submitted, or after poll.maxSeconds.
+                    Assert.That(duration, Is.LessThanOrEqualTo(f.PollMs));
+                    if (p.Reason == PhaseEndReasons.Timeout) Assert.That(duration, Is.EqualTo(f.PollMs));
                 }
                 else
                 {
@@ -298,6 +330,17 @@ namespace FamilyQuiz.Tests
             }
 
             Assert.That(all.Count, Is.EqualTo(2 * Sessions));
+            // Power ups run in the simulation: drawn, used, landed and cleared; every phone answers the poll.
+            Assert.That(all.Sum(g => g.Drawn), Is.GreaterThan(0));
+            Assert.That(all.Sum(g => g.Used), Is.GreaterThan(0));
+            foreach (var g in all)
+            {
+                Assert.That(g.Used, Is.LessThanOrEqualTo(g.Drawn), "a power up is used at most once");
+                Assert.That(g.Applied, Is.EqualTo(g.Used), "every used power up lands on the next question");
+                Assert.That(g.Cleared, Is.EqualTo(g.Applied), "every landed effect is cleared");
+                Assert.That(g.Polls, Is.EqualTo(6), "every phone answers the poll");
+            }
+
             Print("Six profiles, " + all.Count + " Standard games", all);
         }
 
@@ -362,6 +405,8 @@ namespace FamilyQuiz.Tests
             TestContext.WriteLine(string.Format("idle share % (report) min {0:0.0}  avg {1:0.0}  max {2:0.0}", shares.Min(), shares.Average(), shares.Max()));
             TestContext.WriteLine(string.Format("longest idle ms       min {0}  max {1} (limit {2}, outside Intro, FinalIntro, Results)",
                 idle.Min(), idle.Max(), IdleLimitMs));
+            TestContext.WriteLine(string.Format("power ups per game    drawn {0:0.0}  used {1:0.0}  landed {2:0.0}  cleared {3:0.0}",
+                games.Average(g => g.Drawn), games.Average(g => g.Used), games.Average(g => g.Applied), games.Average(g => g.Cleared)));
             var races = games.Select(g => g.Statements.Count).ToList();
             TestContext.WriteLine(string.Format("race statements       min {0}  avg {1:0.0}  max {2}", races.Min(), races.Average(), races.Max()));
         }

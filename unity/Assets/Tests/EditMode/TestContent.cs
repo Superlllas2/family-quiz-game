@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using FamilyQuiz.Core.Content;
+using Newtonsoft.Json.Linq;
 
 namespace FamilyQuiz.Tests
 {
@@ -45,6 +47,15 @@ namespace FamilyQuiz.Tests
         public static IReadOnlyList<CharacterDef> Characters(GameConfig config)
         {
             return CharacterLoader.Parse(Read(CharacterLoader.FileName), config);
+        }
+
+        /// <summary>All of content/ with a changed config.json (a test of a rule at another setting).</summary>
+        public static GameContent WithConfig(Action<JObject> change)
+        {
+            var config = JObject.Parse(Read(ConfigLoader.FileName));
+            change(config);
+            var text = config.ToString();
+            return new ContentLoader(name => name == ConfigLoader.FileName ? text : Read(name)).Load();
         }
 
         /// <summary>All of content/ through the ContentLoader, loaded once (tests never change it).</summary>

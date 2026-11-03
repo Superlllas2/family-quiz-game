@@ -34,6 +34,24 @@ namespace FamilyQuiz.Core.State
         public int Score { get; internal set; }
         public int Streak { get; internal set; }
         public string HeldPowerUp { get; internal set; }
+
+        /// <summary>Power ups used on this player that land at the start of the next Answer phase (docs/03_rules.md, "Caps").</summary>
+        public IReadOnlyList<PendingEffect> PendingEffects => _pendingEffects;
+
+        internal List<PendingEffect> MutablePendingEffects => _pendingEffects;
+
+        private readonly List<PendingEffect> _pendingEffects = new List<PendingEffect>();
+
+        /// <summary>The game question number (QuestionInPlay.Number) a power up last landed on, for immunity; null if never hit this game.</summary>
+        public int? LastHitQuestion { get; internal set; }
+
+        /// <summary>The phaseId of the pick window (Reveal and Scores) in which this player used a power up, else 0.</summary>
+        public long UsedPowerUpInPhaseId { get; internal set; }
+
+        /// <summary>The power up this player used in that pick window and its target, for the waiting screen.</summary>
+        public string UsedPowerUp { get; internal set; }
+
+        public string UsedPowerUpTarget { get; internal set; }
         public double TimerMultiplier { get; internal set; }
 
         /// <summary>True once the player picked a character on the pickCharacter screen; then they see the lobby.</summary>

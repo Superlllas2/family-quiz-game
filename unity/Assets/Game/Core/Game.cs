@@ -19,6 +19,7 @@ namespace FamilyQuiz.Core
         private readonly Roster _roster;
         private readonly InputRules _inputs;
         private readonly SettingsRules _settings;
+        private readonly TvSettingsRules _tvSettings;
         private readonly ShowDirector _director;
         private bool _started;
 
@@ -38,11 +39,14 @@ namespace FamilyQuiz.Core
             _clock = clock ?? throw new ArgumentNullException(nameof(clock));
             if (newSeed == null) throw new ArgumentNullException(nameof(newSeed));
             State = new GameState();
+            State.PendingSettings = TvSettings.FromConfig(Config.PowerUps);
+            State.Settings = State.PendingSettings.Clone();
             _roster = new Roster(State, Config, content.Characters, clock, tokenRandom);
             _director = new ShowDirector(State, content, clock, newSeed);
             _director.LoadSeen(seenQuestions, seenRace, seenFacts);
             _inputs = new InputRules(State, _director, content.Characters);
             _settings = new SettingsRules(State, Config);
+            _tvSettings = new TvSettingsRules(State);
         }
 
         public GameState State { get; }
@@ -73,10 +77,36 @@ namespace FamilyQuiz.Core
             return Math.Max(0, end.Value - _clock.NowMs);
         }
 
+        /// <summary>The power up pick window is open (Reveal or Scores of a round question but the last one, power ups on).</summary>
+        public bool PickWindowOpen => _director.PickWindowOpen;
+
+        /// <summary>
+        /// The players this one may aim a power up at now (docs/03_rules.md, "Targeting"), in join order, each with whether
+        /// it can be hit (not greyed). Empty when the pick window is closed.
+        /// </summary>
+        public List<(PlayerState Target, bool Available)> PowerUpTargets(PlayerState player)
+        {
+            if (player == null || !_director.PickWindowOpen) return new List<(PlayerState, bool)>();
+            return Targeting.Targets(State, player, State.Settings.Targeting, _director.LandsOnQuestion, Config.PowerUps);
+        }
+
+        /// <summary>The player holds a power up, the pick window is open, and at least one target can be hit.</summary>
+        public bool CanPickPowerUp(PlayerState player)
+        {
+            if (player?.HeldPowerUp == null || !_director.PickWindowOpen) return false;
+            foreach (var t in PowerUpTargets(player))
+            {
+                if (t.Available) return true;
+            }
+
+            return false;
+        }
+
         /// <summary>
         /// True when at least one connected player can still send a game input right now (docs/15_schemas.md, "Idle"):
         /// a vote in TopicVote from a connected player who has not sent one; in Answer and
-        /// RaceQuestion, a connected player who has not locked in and is before their deadline plus net.inputGraceMs.
+        /// RaceQuestion, a connected player who has not locked in and is before their deadline plus net.inputGraceMs; in
+        /// Reveal and Scores, a connected player who can use a power up; in the Poll, a connected player who has not submitted.
         /// </summary>
         public bool AnyoneCanAnswer
         {
@@ -94,6 +124,13 @@ namespace FamilyQuiz.Core
                         case GamePhase.Answer:
                         case GamePhase.RaceQuestion:
                             if (p.Turn != null && !p.Turn.Locked && now < p.Turn.DeadlineMs + Config.Net.InputGraceMs) return true;
+                            break;
+                        case GamePhase.Reveal:
+                        case GamePhase.Scores:
+                            if (CanPickPowerUp(p)) return true;
+                            break;
+                        case GamePhase.Poll:
+                            if (!State.SubmittedPoll(p.PlayerId)) return true;
                             break;
                     }
                 }
@@ -134,6 +171,11 @@ namespace FamilyQuiz.Core
                 case PickCharacter c: _inputs.Character(c, output); break;
                 case ChangeSettings c: _settings.Change(c, output); break;
                 case ResetSeen _: _director.ResetSeen(output); break;
+                case UsePowerUp c: _inputs.PowerUp(c, output); break;
+                case ClearEffect c: _inputs.EffectCleared(c, output); break;
+                case SubmitPoll c: _inputs.Poll(c, output); break;
+                case ChangeTvSettings c: _tvSettings.Change(c, output); break;
+                case BackToLobby _: if (_started) _director.BackToLobby(output); break;
             }
 
             if (_started) _director.Reevaluate(output);

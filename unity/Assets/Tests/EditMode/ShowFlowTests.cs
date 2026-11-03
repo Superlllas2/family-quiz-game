@@ -14,9 +14,10 @@ namespace FamilyQuiz.Tests
     /// </summary>
     public sealed class ShowFlowTests
     {
+        /// <summary>The flow events; host line triggers and power up draws have their own tests (Day4 tests).</summary>
         private static List<string> Names(IEnumerable<IGameEvent> events)
         {
-            return events.Select(LobbyFixture.Describe).ToList();
+            return LobbyFixture.FlowEvents(events).Select(LobbyFixture.Describe).ToList();
         }
 
         private static string[] ReadyNoStart => new[] { "InputAcked(True)", "LobbyActionHandled", "ReadyChanged" };
@@ -357,6 +358,7 @@ namespace FamilyQuiz.Tests
             expected.Add(GamePhase.FinalIntro);
             for (int q = 0; q < f.Config.Race.MaxQuestions; q++) expected.AddRange(new[] { GamePhase.RaceQuestion, GamePhase.RaceReveal });
             expected.Add(GamePhase.Results);
+            expected.Add(GamePhase.Poll);
             expected.Add(GamePhase.Lobby);
             var started = events.OfType<PhaseStarted>().ToList();
             Assert.That(started.Select(s => s.Phase), Is.EqualTo(expected));
@@ -373,7 +375,8 @@ namespace FamilyQuiz.Tests
                 { GamePhase.FinalIntro, f.FinalIntroMs },
                 { GamePhase.RaceQuestion, f.RaceWindowMs + f.GraceMs },
                 { GamePhase.RaceReveal, f.RaceRevealMs },
-                { GamePhase.Results, f.ResultsMs }
+                { GamePhase.Results, f.ResultsMs },
+                { GamePhase.Poll, f.PollMs }
             };
             var ended = events.OfType<PhaseEnded>().Where(e => e.Phase != GamePhase.StartCountdown).ToList();
             Assert.That(ended.Count, Is.EqualTo(started.Count - 1));
@@ -404,7 +407,8 @@ namespace FamilyQuiz.Tests
             var gameEnded = events.OfType<GameEnded>().Single();
             Assert.That(gameEnded.Reason, Is.EqualTo(GameEnded.ReasonFinished));
             Assert.That(gameEnded.Game, Is.EqualTo(1));
-            Assert.That(gameEnded.DurationMs, Is.EqualTo(f.State.PhaseStartedAtMs - f.State.GameStartedAtMs));
+            // The game ends with Results (measured to its end); the poll that follows is not game time.
+            Assert.That(gameEnded.DurationMs, Is.EqualTo(f.State.PhaseStartedAtMs - f.PollMs - f.State.GameStartedAtMs));
             Assert.That(f.State.GameRunning, Is.False);
             Assert.That(f.State.PhaseEndsAtMs, Is.Null);
             Assert.That(f.State.Question, Is.Null);
@@ -418,9 +422,12 @@ namespace FamilyQuiz.Tests
             f.ReadyAll();
             f.RunUntilPhase(GamePhase.Results, 3600000, 50);
             var events = f.Advance(f.ResultsMs);
+            Assert.That(Names(events), Is.EqualTo(new[] { "PhaseEnded(Results, timeout)", "GameEnded", "PhaseStarted(Poll)" }));
+            Assert.That(f.State.GameRunning, Is.False, "the game ends with Results; the poll comes after it");
+            events = f.Advance(f.PollMs);
             Assert.That(Names(events), Is.EqualTo(new[]
             {
-                "PhaseEnded(Results, timeout)", "GameEnded", "PlayerUpdated", "PlayerUpdated", "PhaseStarted(Lobby)"
+                "PhaseEnded(Poll, timeout)", "PlayerUpdated", "PlayerUpdated", "PhaseStarted(Lobby)"
             }));
             Assert.That(f.State.PhaseEndsAtMs, Is.Null);
             f.Advance(60000);

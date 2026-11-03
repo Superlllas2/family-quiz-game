@@ -7,8 +7,11 @@ namespace FamilyQuiz.Core.Events
     {
         public const string ModeStandard = "standard";
 
-        public GameStarted(int game, int seed, string mode, IReadOnlyList<string> playerIds, string gameLang)
+        public GameStarted(int game, int seed, string mode, IReadOnlyList<string> playerIds, string gameLang,
+            IReadOnlyList<string> powerUps = null, string targeting = null)
         {
+            PowerUps = powerUps ?? new string[0];
+            Targeting = targeting;
             Game = game;
             Seed = seed;
             Mode = mode;
@@ -21,5 +24,11 @@ namespace FamilyQuiz.Core.Events
         public string Mode { get; }
         public IReadOnlyList<string> PlayerIds { get; }
         public string GameLang { get; }
+
+        /// <summary>The power ups this game draws from (empty with power ups off; log gameStarted.settings.powerUps).</summary>
+        public IReadOnlyList<string> PowerUps { get; }
+
+        /// <summary>free or aimUp for this game.</summary>
+        public string Targeting { get; }
     }
 }

@@ -64,6 +64,15 @@ namespace FamilyQuiz.Core.State
         /// <summary>Closest value: one of the closest guesses (gets the closest bonus and the crown).</summary>
         public bool Closest { get; internal set; }
 
+        /// <summary>The power up that landed on this player when this Answer phase started, or null (one per question, maxHitsPerQuestion).</summary>
+        public string Effect { get; internal set; }
+
+        /// <summary>The attacker name of <see cref="Effect"/>.</summary>
+        public string EffectFrom { get; internal set; }
+
+        /// <summary>True once the phone reported the effect cleared (input effectCleared).</summary>
+        public bool EffectCleared { get; internal set; }
+
         /// <summary>Closest value: the closest bonus included in Points (multiplier applied), else 0.</summary>
         public int Bonus { get; internal set; }
     }
