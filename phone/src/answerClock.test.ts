@@ -45,14 +45,30 @@ describe('answer clock and drawn screens', () => {
     expect(clock.ms(16)).toBe(9700);
   });
 
+  it('the slider and the true or false buttons start the clock too, and keep it on last call', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    screenDrawn(clock, { phaseId: 31, id: 'answerSlider', endsInMs: 20000, data: {} });
+    now = 8000;
+    screenDrawn(clock, { phaseId: 31, id: 'answerSlider', endsInMs: 5000, data: {} }); // last call
+    now = 11200;
+    expect(clock.ms(31)).toBe(11200);
+    clock.arrived(80);
+    screenDrawn(clock, { phaseId: 80, id: 'answerTrueFalse', endsInMs: 8000, data: {} });
+    now = 13300;
+    expect(clock.ms(80)).toBe(2100);
+  });
+
   it('screens without options do not start the clock', () => {
     let now = 0;
     const clock = new AnswerClock(() => now);
     screenDrawn(clock, { phaseId: 15, id: 'getReady', endsInMs: 4000, data: {} });
     screenDrawn(clock, { phaseId: 16, id: 'waiting', endsInMs: 4000, data: {} });
+    screenDrawn(clock, { phaseId: 17, id: 'topicVote', endsInMs: 10000, data: {} });
     now = 1000;
     expect(clock.ms(15)).toBe(0);
     expect(clock.ms(16)).toBe(0);
+    expect(clock.ms(17)).toBe(0);
   });
 
   it('after a reload (a new clock) it starts when the restored screen is drawn', () => {

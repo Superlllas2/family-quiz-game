@@ -1,8 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import {
-  answerChoiceData, characterMessage, choiceInputMessage, getReadyData, joinMessage, leaveMessage, lobbyData,
-  lobbyMessage, parseIncoming, pickCharacterData, pingMessage, playerView, rejoinMessage, resultData,
-  resultsData, settingsMessage, textData, waitingData,
+  answerChoiceData, answerSliderData, answerTrueFalseData, answerWindowMs, characterMessage, choiceInputMessage,
+  getReadyData, joinMessage, leaveMessage, lobbyData, lobbyMessage, parseIncoming, pickCharacterData, pingMessage,
+  playerView, predictionInputMessage, raceResultData, rejoinMessage, resultData, resultsData, roundEndData,
+  settingsMessage, textData, topicVoteData, trueFalseInputMessage, valueInputMessage, voteInputMessage, waitingData,
 } from './protocol';
 import { socketUrl } from './net/socketUrl';
 
@@ -19,6 +20,30 @@ describe('message builders match PROTOCOL.md section 3 exactly', () => {
     const msg = choiceInputMessage('a2', 16, 1, 3410);
     expect(msg).toStrictEqual({ v: 1, type: 'input', inputId: 'a2', phaseId: 16, kind: 'choice', choice: 1, ms: 3410 });
     expect(JSON.stringify(msg)).toBe('{"v":1,"type":"input","inputId":"a2","phaseId":16,"kind":"choice","choice":1,"ms":3410}');
+  });
+
+  it('input of kind vote', () => {
+    expect(JSON.stringify(voteInputMessage('a1', 14, 2)))
+      .toBe('{"v":1,"type":"input","inputId":"a1","phaseId":14,"kind":"vote","door":2}');
+  });
+
+  it('input of kind value', () => {
+    expect(JSON.stringify(valueInputMessage('a3', 31, 1889, 11200)))
+      .toBe('{"v":1,"type":"input","inputId":"a3","phaseId":31,"kind":"value","value":1889,"ms":11200}');
+    expect(valueInputMessage('a5', 31, 2.5, 900)).toStrictEqual({
+      v: 1, type: 'input', inputId: 'a5', phaseId: 31, kind: 'value', value: 2.5, ms: 900,
+    });
+  });
+
+  it('input of kind trueFalse', () => {
+    expect(JSON.stringify(trueFalseInputMessage('a4', 80, true, 2100)))
+      .toBe('{"v":1,"type":"input","inputId":"a4","phaseId":80,"kind":"trueFalse","answer":true,"ms":2100}');
+    expect(trueFalseInputMessage('a6', 80, false, 0).answer).toBe(false);
+  });
+
+  it('input of kind prediction', () => {
+    expect(JSON.stringify(predictionInputMessage('a7', 3, 'p2')))
+      .toBe('{"v":1,"type":"input","inputId":"a7","phaseId":3,"kind":"prediction","playerId":"p2"}');
   });
 
   it('lobby ready', () => {
@@ -138,6 +163,47 @@ describe('screen data readers (PROTOCOL.md section 4) never crash', () => {
     expect(answerChoiceData({ options: ['a', 2, 'c', 'd', 'e'] }))
       .toEqual({ question: '', options: ['a', '', 'c', 'd'], windowMs: null });
     expect(answerChoiceData({})).toEqual({ question: '', options: [], windowMs: null });
+  });
+
+  it('topicVote: door titles in order, at most 4', () => {
+    expect(topicVoteData({ doors: [{ title: 'Space' }, { title: 'Food' }, { title: 'Films' }, { title: 'A bit of everything' }] }))
+      .toEqual({ doors: ['Space', 'Food', 'Films', 'A bit of everything'] });
+    expect(topicVoteData({ doors: [{ title: 'A' }, 'junk', { title: 5 }, { title: 'D' }, { title: 'E' }] }))
+      .toEqual({ doors: ['A', '', '', 'D'] });
+    expect(topicVoteData({})).toEqual({ doors: [] });
+  });
+
+  it('answerSlider', () => {
+    expect(answerSliderData({ question: 'Q', min: 1800, max: 2000, step: 10, unit: 'year', windowMs: 20000 }))
+      .toEqual({ question: 'Q', min: 1800, max: 2000, step: 10, unit: 'year', windowMs: 20000 });
+    expect(answerSliderData({ min: 'x', max: null, step: Number.NaN }))
+      .toEqual({ question: '', min: 0, max: 0, step: 1, unit: '', windowMs: null });
+  });
+
+  it('answerTrueFalse', () => {
+    expect(answerTrueFalseData({ statement: 'The sun is a star', windowMs: 8000 }))
+      .toEqual({ statement: 'The sun is a star', windowMs: 8000 });
+    expect(answerTrueFalseData({})).toEqual({ statement: '', windowMs: null });
+  });
+
+  it('the answer window for the countdown bar comes from every answer screen', () => {
+    const s = (id: string, data: Record<string, unknown>) => ({ phaseId: 1, id, endsInMs: 5000, data });
+    expect(answerWindowMs(s('answerChoice', { windowMs: 15000 }))).toBe(15000);
+    expect(answerWindowMs(s('answerSlider', { windowMs: 30000 }))).toBe(30000);
+    expect(answerWindowMs(s('answerTrueFalse', { windowMs: 8000 }))).toBe(8000);
+    expect(answerWindowMs(s('answerTrueFalse', {}))).toBeNull();
+    expect(answerWindowMs(s('topicVote', { windowMs: 10000 }))).toBeNull();
+  });
+
+  it('roundEnd, with a next round or null after the last one', () => {
+    expect(roundEndData({ rank: 2, score: 3400, nextRound: 3 })).toEqual({ rank: 2, score: 3400, nextRound: 3 });
+    expect(roundEndData({ rank: 1, score: 9000, nextRound: null })).toEqual({ rank: 1, score: 9000, nextRound: null });
+    expect(roundEndData({})).toEqual({ rank: null, score: 0, nextRound: null });
+  });
+
+  it('raceResult', () => {
+    expect(raceResultData({ correct: true, position: 4, finish: 10 })).toEqual({ correct: true, position: 4, finish: 10 });
+    expect(raceResultData({ correct: 'yes' })).toEqual({ correct: false, position: 0, finish: 0 });
   });
 
   it('waiting', () => {

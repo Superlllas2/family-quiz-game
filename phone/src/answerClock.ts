@@ -34,7 +34,7 @@ export class AnswerClock {
 }
 
 /** Screen ids that show answer options; drawing one starts the clock for its phaseId. */
-const ANSWER_SCREENS: readonly string[] = ['answerChoice'];
+const ANSWER_SCREENS: readonly string[] = ['answerChoice', 'answerSlider', 'answerTrueFalse'];
 
 /** Called when a screen is drawn. After a page reload this is the restored screen, so the clock starts then. */
 export function screenDrawn(clock: AnswerClock, screen: ScreenState): void {

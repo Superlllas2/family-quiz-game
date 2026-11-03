@@ -8,15 +8,18 @@ import { t } from './i18n';
 import type { InputSender, TrackedInput } from './net/inputs';
 import type { Session, SessionStatus } from './net/session';
 import {
-  answerChoiceData, characterMessage, choiceInputMessage, leaveMessage, lobbyData, lobbyMessage, playerView,
-  settingsMessage,
+  answerWindowMs, characterMessage, choiceInputMessage, leaveMessage, lobbyData, lobbyMessage, playerView,
+  predictionInputMessage, settingsMessage, trueFalseInputMessage, valueInputMessage, voteInputMessage,
   type AckedMessage, type IncomingMessage, type Lang, type PhaseId, type PlayerView, type ScreenState,
 } from './protocol';
 import { shownReady, toggleReady } from './readyToggle';
 import { AnswerChoiceScreen } from './screens/AnswerChoiceScreen';
+import { AnswerSliderScreen } from './screens/AnswerSliderScreen';
+import { AnswerTrueFalseScreen } from './screens/AnswerTrueFalseScreen';
 import { CountdownScreen } from './screens/CountdownScreen';
 import {
-  GetReadyScreen, ResultScreen, ResultsScreen, TvErrorScreen, WaitingScreen, WatchTvBody,
+  GetReadyScreen, RaceResultScreen, ResultScreen, ResultsScreen, RoundEndScreen, TvErrorScreen, WaitingScreen,
+  WatchTvBody,
 } from './screens/InfoScreens';
 import { JoinScreen } from './screens/JoinScreen';
 import { LobbyScreen } from './screens/LobbyScreen';
@@ -24,6 +27,7 @@ import { PickCharacterScreen } from './screens/PickCharacterScreen';
 import { PollDoneScreen } from './screens/PollDoneScreen';
 import { SettingsOverlay } from './screens/SettingsOverlay';
 import { ErrorScreen, ReconnectingScreen } from './screens/StatusScreens';
+import { TopicVoteScreen } from './screens/TopicVoteScreen';
 import { TopBar } from './screens/TopBar';
 import { useRemaining } from './screens/useRemaining';
 
@@ -44,8 +48,11 @@ export interface AppDeps {
 /** The last screen from the TV app and when it arrived. */
 interface Current { screen: ScreenState; receivedAt: number }
 
-/** One button's input on one screen: its status shows only while that screen's phaseId is current. */
-type Slot = 'ready' | 'character' | 'choice';
+/**
+ * One button's input on one screen: its status shows only while that screen's phaseId is current. `answer` is the one
+ * decision of a game phase: a prediction, a vote, a choice, a value or true or false.
+ */
+type Slot = 'ready' | 'character' | 'answer';
 interface SlotInput { inputId: string; phaseId: PhaseId; characterId?: number }
 
 export function App({ deps }: { deps: AppDeps }) {
@@ -56,7 +63,8 @@ export function App({ deps }: { deps: AppDeps }) {
   const [lang, setLangState] = useState<Lang>(deps.initialLang);
   const [inputs, setInputs] = useState<Record<string, TrackedInput>>({});
   const [slots, setSlots] = useState<Partial<Record<Slot, SlotInput>>>({});
-  const [choice, setChoice] = useState<{ phaseId: PhaseId; index: number } | null>(null);
+  /** What this phone sent for the current phase's one decision (door, choice, value, true or false, playerId). */
+  const [answer, setAnswer] = useState<{ phaseId: PhaseId; value: number | boolean | string } | null>(null);
   /** The last Ready or Not ready tap, shown at once until the TV's next screen (D76). */
   const [readyTap, setReadyTap] = useState<boolean | null>(null);
   /** The phaseId already answered: set at once, so a second tap before the re-render is ignored too. */
@@ -110,7 +118,7 @@ export function App({ deps }: { deps: AppDeps }) {
           setCurrent(null);
           setPlayer(null);
           setSettingsOpen(false);
-          setChoice(null);
+          setAnswer(null);
           answeredPhase.current = null;
           clock.reset();
         }
@@ -163,15 +171,31 @@ export function App({ deps }: { deps: AppDeps }) {
     return inputs[s.inputId] ?? null;
   };
 
-  const onChoose = (index: number): void => {
-    if (!screen || screen.id !== 'answerChoice') return;
+  /**
+   * Sends the one decision of the current phase from screen `screenId`. One tap locks: a second tap on the same phaseId
+   * is ignored. `ms` comes from the answer clock (0 on screens that do not start it).
+   */
+  const decide = (
+    screenId: string,
+    value: number | boolean | string,
+    build: (inputId: string, phaseId: PhaseId, ms: number) => AckedMessage,
+  ): void => {
+    if (!screen || screen.id !== screenId) return;
     const phaseId = screen.phaseId;
     if (answeredPhase.current === phaseId) return; // one tap locks
     answeredPhase.current = phaseId;
     const ms = clock.ms(phaseId);
-    setChoice({ phaseId, index });
-    sendFor('choice', choiceInputMessage(deps.newInputId(), phaseId, index, ms));
+    setAnswer({ phaseId, value });
+    sendFor('answer', build(deps.newInputId(), phaseId, ms));
   };
+
+  /** What was sent on the current screen's phaseId, if it is of that type. */
+  const sentNumber = (): number | null =>
+    answer && screen && answer.phaseId === screen.phaseId && typeof answer.value === 'number' ? answer.value : null;
+  const sentBoolean = (): boolean | null =>
+    answer && screen && answer.phaseId === screen.phaseId && typeof answer.value === 'boolean' ? answer.value : null;
+  const sentString = (): string | null =>
+    answer && screen && answer.phaseId === screen.phaseId && typeof answer.value === 'string' ? answer.value : null;
 
   const multiplier = player?.timerMultiplier ?? 1;
 
@@ -251,7 +275,27 @@ export function App({ deps }: { deps: AppDeps }) {
         );
         break;
       case 'getReady':
-        body = <GetReadyScreen lang={lang} screen={screen} />;
+        body = (
+          <GetReadyScreen
+            lang={lang}
+            screen={screen}
+            predicted={sentString()}
+            predictionInput={slotInput('answer')}
+            onPredict={(playerId) =>
+              decide('getReady', playerId, (id, phaseId) => predictionInputMessage(id, phaseId, playerId))}
+          />
+        );
+        break;
+      case 'topicVote':
+        body = (
+          <TopicVoteScreen
+            lang={lang}
+            screen={screen}
+            chosen={sentNumber()}
+            voteInput={slotInput('answer')}
+            onVote={(door) => decide('topicVote', door, (id, phaseId) => voteInputMessage(id, phaseId, door))}
+          />
+        );
         break;
       case 'answerChoice':
         topBar = (
@@ -262,9 +306,43 @@ export function App({ deps }: { deps: AppDeps }) {
             lang={lang}
             screen={screen}
             clock={clock}
-            chosen={choice && choice.phaseId === screen.phaseId ? choice.index : null}
-            choiceInput={slotInput('choice')}
-            onChoose={onChoose}
+            chosen={sentNumber()}
+            choiceInput={slotInput('answer')}
+            onChoose={(index) =>
+              decide('answerChoice', index, (id, phaseId, ms) => choiceInputMessage(id, phaseId, index, ms))}
+          />
+        );
+        break;
+      case 'answerSlider':
+        topBar = (
+          <AnswerTopBar lang={lang} player={player} current={current} now={deps.now} onSettings={openSettings} />
+        );
+        body = (
+          <AnswerSliderScreen
+            key={screen.phaseId}
+            lang={lang}
+            screen={screen}
+            clock={clock}
+            locked={sentNumber()}
+            valueInput={slotInput('answer')}
+            onLock={(value) =>
+              decide('answerSlider', value, (id, phaseId, ms) => valueInputMessage(id, phaseId, value, ms))}
+          />
+        );
+        break;
+      case 'answerTrueFalse':
+        topBar = (
+          <AnswerTopBar lang={lang} player={player} current={current} now={deps.now} onSettings={openSettings} />
+        );
+        body = (
+          <AnswerTrueFalseScreen
+            lang={lang}
+            screen={screen}
+            clock={clock}
+            chosen={sentBoolean()}
+            answerInput={slotInput('answer')}
+            onAnswer={(value) =>
+              decide('answerTrueFalse', value, (id, phaseId, ms) => trueFalseInputMessage(id, phaseId, value, ms))}
           />
         );
         break;
@@ -273,6 +351,12 @@ export function App({ deps }: { deps: AppDeps }) {
         break;
       case 'result':
         body = <ResultScreen lang={lang} screen={screen} />;
+        break;
+      case 'roundEnd':
+        body = <RoundEndScreen lang={lang} screen={screen} />;
+        break;
+      case 'raceResult':
+        body = <RaceResultScreen lang={lang} screen={screen} characterId={player?.characterId ?? null} />;
         break;
       case 'results':
         body = <ResultsScreen lang={lang} screen={screen} receivedAt={current.receivedAt} now={deps.now} />;
@@ -315,7 +399,7 @@ export function App({ deps }: { deps: AppDeps }) {
   );
 }
 
-/** The top bar with the answer countdown: whole seconds and a bar of the player's window. */
+/** The top bar with the answer countdown on every answer screen: whole seconds and a bar of the player's window. */
 function AnswerTopBar(props: {
   lang: Lang;
   player: PlayerView | null;
@@ -325,7 +409,7 @@ function AnswerTopBar(props: {
 }) {
   const { screen, receivedAt } = props.current;
   const remaining = useRemaining(screen.endsInMs, receivedAt, props.now);
-  const total = answerChoiceData(screen.data).windowMs ?? screen.endsInMs;
+  const total = answerWindowMs(screen) ?? screen.endsInMs;
   const timer = remaining === null ? null : { seconds: wholeSeconds(remaining), share: remainingShare(remaining, total) };
   return <TopBar lang={props.lang} player={props.player} timer={timer} onSettings={props.onSettings} />;
 }

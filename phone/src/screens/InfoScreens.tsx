@@ -1,22 +1,60 @@
-// Screens without a decision (06): `getReady`, `waiting`, `result`, `results`, a TV sent `error`, and a neutral
-// "Look at the TV" for screen ids this build does not draw. Texts come from the TV's screen data or the locales.
+// Screens without a decision (06): `getReady` (except its Intro prediction), `waiting`, `result`, `roundEnd`,
+// `raceResult`, `results`, a TV sent `error`, and a neutral "Look at the TV" for screen ids this build does not draw.
+// Texts come from the TV's screen data or the locales.
 
 import { characterColor } from '../characters';
 import { wholeSeconds } from '../countdown';
 import { t } from '../i18n';
+import type { TrackedInput } from '../net/inputs';
 import {
-  getReadyData, resultData, resultsData, textData, waitingData, type Lang, type ScreenState,
+  getReadyData, raceResultData, resultData, resultsData, roundEndData, textData, waitingData, type Lang,
+  type ScreenState,
 } from '../protocol';
+import { raceTrack } from '../raceTrack';
+import { roundEndNext } from '../roundEnd';
+import { InputStatus } from './InputStatus';
+import { PressButton } from './PressButton';
 import { useRemaining } from './useRemaining';
 
 interface Props { lang: Lang; screen: ScreenState }
 
-/** `getReady`: a short text from the TV (for QuestionShow: the question). `prediction` is not drawn yet. */
-export function GetReadyScreen(props: Props) {
-  const { text } = getReadyData(props.screen.data);
+/**
+ * `getReady`: a short text from the TV (for QuestionShow: the question). In the Intro the TV also sends `prediction`
+ * (its text already asks "Кто победит? / Who wins tonight?"): the players as character chips, one tap sends the
+ * prediction and marks that chip, the others dim. The screen stays until the TV sends the next one.
+ */
+export function GetReadyScreen(props: Props & {
+  /** The playerId predicted on this phaseId, if any. */
+  predicted: string | null;
+  predictionInput: TrackedInput | null;
+  onPredict(playerId: string): void;
+}) {
+  const { lang, predicted } = props;
+  const { text, prediction } = getReadyData(props.screen.data);
   return (
     <div class="body center">
       <p class="big-text">{text}</p>
+      {prediction.length > 0 ? (
+        <div class="prediction">
+          <div class="prediction-chips">
+            {prediction.map((p) => {
+              const state = predicted === null ? '' : predicted === p.playerId ? ' chosen' : ' dim';
+              return (
+                <PressButton
+                  key={p.playerId}
+                  class={`chip prediction-chip${state}`}
+                  style={{ background: characterColor(p.characterId) }}
+                  ariaPressed={predicted === p.playerId}
+                  onPress={() => props.onPredict(p.playerId)}
+                >
+                  {p.name}
+                </PressButton>
+              );
+            })}
+          </div>
+          <InputStatus lang={lang} input={props.predictionInput} />
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -53,11 +91,57 @@ export function ResultScreen(props: Props) {
       <p class={r.correct ? 'result-head good' : 'result-head bad'}>
         {r.correct ? t(lang, 'result.correct', { points: r.points }) : t(lang, 'result.wrong')}
       </p>
-      {r.correctText ? <p class="big-text">{t(lang, 'result.correctText', { text: r.correctText })}</p> : null}
+      {r.correctText ? <p class="big-text">{r.correctText}</p> : null}
       <div class="result-stats">
         {r.streak > 0 ? <span>{t(lang, 'result.streak', { streak: r.streak })}</span> : null}
         {r.rank !== null ? <span>{t(lang, 'result.rank', { rank: r.rank })}</span> : null}
       </div>
+    </div>
+  );
+}
+
+/** `roundEnd`: own rank and score, and what comes next: "Раунд 3 / Round 3 next" or the final race. */
+export function RoundEndScreen(props: Props) {
+  const { lang } = props;
+  const r = roundEndData(props.screen.data);
+  const next = roundEndNext(r.nextRound);
+  return (
+    <div class="body center">
+      {r.rank !== null ? <p class="result-head">{t(lang, 'roundEnd.rank', { rank: r.rank })}</p> : null}
+      <p class="big-text">{t(lang, 'roundEnd.score', { score: r.score })}</p>
+      <p class="next-text">{t(lang, next.key, next.params)}</p>
+    </div>
+  );
+}
+
+/**
+ * `raceResult`: "Верно, +1 шаг / Right, +1 step" or "Мимо / Missed", and the player's step on a small track of
+ * `finish` steps (the own step in the player's character color).
+ */
+export function RaceResultScreen(props: Props & { characterId: number | null }) {
+  const { lang } = props;
+  const r = raceResultData(props.screen.data);
+  const cells = raceTrack(r.position, r.finish);
+  const color = props.characterId === null ? undefined : characterColor(props.characterId);
+  return (
+    <div class="body center">
+      <p class={r.correct ? 'result-head good' : 'result-head bad'}>
+        {t(lang, r.correct ? 'race.right' : 'race.missed')}
+      </p>
+      {cells.length > 0 ? (
+        <div class="race">
+          <ol class="race-track" aria-hidden="true">
+            {cells.map((cell, step) => (
+              <li
+                key={step}
+                class={`race-cell ${cell}${step === cells.length - 1 ? ' finish' : ''}`}
+                style={cell === 'here' && color ? { background: color } : undefined}
+              />
+            ))}
+          </ol>
+          <p class="muted-text">{t(lang, 'race.step', { position: r.position, finish: r.finish })}</p>
+        </div>
+      ) : null}
     </div>
   );
 }

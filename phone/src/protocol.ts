@@ -18,6 +18,21 @@ export interface RejoinMessage { v: 1; type: 'rejoin'; token: string }
 export interface ChoiceInputMessage {
   v: 1; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'choice'; choice: number; ms: number;
 }
+export interface VoteInputMessage {
+  v: 1; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'vote'; door: number;
+}
+export interface ValueInputMessage {
+  v: 1; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'value'; value: number; ms: number;
+}
+export interface TrueFalseInputMessage {
+  v: 1; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'trueFalse'; answer: boolean; ms: number;
+}
+export interface PredictionInputMessage {
+  v: 1; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'prediction'; playerId: string;
+}
+/** Every `input` kind the phone sends (PROTOCOL.md section 3, `input` kinds). */
+export type InputMessage =
+  | ChoiceInputMessage | VoteInputMessage | ValueInputMessage | TrueFalseInputMessage | PredictionInputMessage;
 export interface LobbyMessage { v: 1; type: 'lobby'; inputId: string; action: LobbyAction }
 export interface CharacterMessage { v: 1; type: 'character'; inputId: string; characterId: number }
 /** No inputId and no ack (PROTOCOL.md section 3). */
@@ -26,11 +41,11 @@ export interface LeaveMessage { v: 1; type: 'leave'; inputId: string }
 export interface PingMessage { v: 1; type: 'ping'; t: number }
 
 export type PhoneMessage =
-  | JoinMessage | RejoinMessage | ChoiceInputMessage | LobbyMessage | CharacterMessage
+  | JoinMessage | RejoinMessage | InputMessage | LobbyMessage | CharacterMessage
   | SettingsMessage | LeaveMessage | PingMessage;
 
 /** A message that is answered with an `ack` and goes through the input sender. */
-export type AckedMessage = ChoiceInputMessage | LobbyMessage | CharacterMessage | LeaveMessage;
+export type AckedMessage = InputMessage | LobbyMessage | CharacterMessage | LeaveMessage;
 
 const v = PROTOCOL_VERSION as 1;
 
@@ -44,6 +59,24 @@ export function rejoinMessage(token: string): RejoinMessage {
 
 export function choiceInputMessage(inputId: string, phaseId: PhaseId, choice: number, ms: number): ChoiceInputMessage {
   return { v, type: 'input', inputId, phaseId, kind: 'choice', choice, ms };
+}
+
+export function voteInputMessage(inputId: string, phaseId: PhaseId, door: number): VoteInputMessage {
+  return { v, type: 'input', inputId, phaseId, kind: 'vote', door };
+}
+
+export function valueInputMessage(inputId: string, phaseId: PhaseId, value: number, ms: number): ValueInputMessage {
+  return { v, type: 'input', inputId, phaseId, kind: 'value', value, ms };
+}
+
+export function trueFalseInputMessage(
+  inputId: string, phaseId: PhaseId, answer: boolean, ms: number,
+): TrueFalseInputMessage {
+  return { v, type: 'input', inputId, phaseId, kind: 'trueFalse', answer, ms };
+}
+
+export function predictionInputMessage(inputId: string, phaseId: PhaseId, playerId: string): PredictionInputMessage {
+  return { v, type: 'input', inputId, phaseId, kind: 'prediction', playerId };
 }
 
 export function lobbyMessage(inputId: string, action: LobbyAction): LobbyMessage {
@@ -261,7 +294,7 @@ export function textData(data: Record<string, unknown>): { text: string } {
   return { text: str(data.text) };
 }
 
-/** Screen `getReady`. `prediction` is read but not drawn yet (Day 2). */
+/** Screen `getReady`. `prediction` (Intro only) lists the players to tap for "Who wins tonight?"; empty otherwise. */
 export function getReadyData(data: Record<string, unknown>): { text: string; prediction: LobbyPlayer[] } {
   return { text: str(data.text), prediction: lobbyPlayers(data.prediction) };
 }
@@ -272,6 +305,67 @@ export function answerChoiceData(
 ): { question: string; options: string[]; windowMs: number | null } {
   const options = list(data.options).slice(0, 4).map(str);
   return { question: str(data.question), options, windowMs: numOrNull(data.windowMs) };
+}
+
+/** Screen `topicVote`: the door titles in order; the index of each is the `door` sent. */
+export function topicVoteData(data: Record<string, unknown>): { doors: string[] } {
+  const doors = list(data.doors).slice(0, 4).map((d) => (isObj(d) ? str(d.title) : ''));
+  return { doors };
+}
+
+export interface AnswerSliderData {
+  question: string;
+  min: number;
+  max: number;
+  step: number;
+  unit: string;
+  windowMs: number | null;
+}
+
+/** Screen `answerSlider` (closest value). A missing or broken number reads as 0 (step: 1); the slider guards the range. */
+export function answerSliderData(data: Record<string, unknown>): AnswerSliderData {
+  return {
+    question: str(data.question),
+    min: num(data.min, 0),
+    max: num(data.max, 0),
+    step: num(data.step, 1),
+    unit: str(data.unit),
+    windowMs: numOrNull(data.windowMs),
+  };
+}
+
+/** Screen `answerTrueFalse` (final race). */
+export function answerTrueFalseData(data: Record<string, unknown>): { statement: string; windowMs: number | null } {
+  return { statement: str(data.statement), windowMs: numOrNull(data.windowMs) };
+}
+
+/**
+ * The player's answer window for the top bar's countdown bar, from any answer screen's `windowMs`; null for other
+ * screens or when it is missing.
+ */
+export function answerWindowMs(screen: ScreenState): number | null {
+  switch (screen.id) {
+    case 'answerChoice':
+    case 'answerSlider':
+    case 'answerTrueFalse':
+      return numOrNull(screen.data.windowMs);
+    default:
+      return null;
+  }
+}
+
+/** Screen `roundEnd`. `nextRound` is null after the last round: the final race comes next. */
+export function roundEndData(
+  data: Record<string, unknown>,
+): { rank: number | null; score: number; nextRound: number | null } {
+  return { rank: numOrNull(data.rank), score: num(data.score, 0), nextRound: numOrNull(data.nextRound) };
+}
+
+/** Screen `raceResult`: right or not, the player's step on the track, and the finish step. */
+export function raceResultData(
+  data: Record<string, unknown>,
+): { correct: boolean; position: number; finish: number } {
+  return { correct: data.correct === true, position: num(data.position, 0), finish: num(data.finish, 0) };
 }
 
 export interface PendingPlayer { name: string; characterId: number }
