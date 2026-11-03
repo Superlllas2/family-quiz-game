@@ -136,7 +136,7 @@ namespace FamilyQuiz.Tests
             f.Advance(f.IntroMs);
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.TopicVote));
             Assert.That(LobbyFixture.AckOf(f.Choice("c1", 1, 100)).Reason, Is.EqualTo(AckReasons.Invalid), "TopicVote");
-            f.Advance(f.TopicVoteMs);
+            f.Advance(f.VoteEndMs);
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.QuestionShow));
             Assert.That(LobbyFixture.AckOf(f.Choice("c1", 1, 100)).Reason, Is.EqualTo(AckReasons.Invalid), "QuestionShow");
         }

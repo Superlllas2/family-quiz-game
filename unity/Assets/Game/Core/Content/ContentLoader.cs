@@ -5,7 +5,7 @@ namespace FamilyQuiz.Core.Content
 {
     /// <summary>
     /// Loads and validates the content the game uses (docs/15_schemas.md): config.json, topics.json, questions.json,
-    /// race.json, show_scripts.json, characters.json and ui_strings.json. Files are read through the injected reader,
+    /// race.json, facts.json, show_scripts.json, characters.json and ui_strings.json. Files are read through the injected reader,
     /// so Core never touches the disk. Any error throws a <see cref="ContentException"/> naming the file, the item id
     /// and the field; the game must not start then.
     /// </summary>
@@ -30,7 +30,8 @@ namespace FamilyQuiz.Core.Content
             var scripts = ShowScripts.Parse(_read(ShowScripts.FileName), config);
             var characters = CharacterLoader.Parse(_read(CharacterLoader.FileName), config);
             var strings = UiStrings.Parse(_read(UiStrings.FileName));
-            return new GameContent(config, characters, questions, strings, topics, race, scripts);
+            var facts = FactLoader.Parse(_read(FactLoader.FileName));
+            return new GameContent(config, characters, questions, strings, topics, race, scripts, facts);
         }
 
         /// <summary>topics.mixedTopicId must name the topic marked mixed (tools/validate_content.mjs).</summary>

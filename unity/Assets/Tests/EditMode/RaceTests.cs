@@ -343,7 +343,8 @@ namespace FamilyQuiz.Tests
             var (f, _) = ToFinalIntro(2, 0);
             var events = f.SkipTo(GamePhase.Results);
             Assert.That(f.State.SeenRaceIds.Count, Is.EqualTo(f.Config.Race.MaxQuestions));
-            Assert.That(events.OfType<SeenChanged>().Count(), Is.EqualTo(f.Config.Race.MaxQuestions));
+            // One SeenChanged per statement, and one for the winner's fact when Results starts (D87).
+            Assert.That(events.OfType<SeenChanged>().Count(), Is.EqualTo(f.Config.Race.MaxQuestions + 1));
         }
 
         [Test]

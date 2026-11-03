@@ -45,6 +45,9 @@ namespace FamilyQuiz.Core.State
         /// <summary>Correct answers in rounds in the current game ("results.correctCount", "Most correct").</summary>
         public int CorrectCount { get; internal set; }
 
+        /// <summary>What the player did in the current game, for the funny tags on Results (D86).</summary>
+        public PlayerStats Stats { get; internal set; } = new PlayerStats();
+
         /// <summary>This player's part of the current question, or null outside question cycles.</summary>
         public PlayerTurn Turn { get; internal set; }
 

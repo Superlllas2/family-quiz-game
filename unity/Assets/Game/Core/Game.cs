@@ -28,8 +28,10 @@ namespace FamilyQuiz.Core
         /// <param name="newSeed">Gives the seed for each new game; the game's IRandom is a SeededRandom of it, so a seed replays a game.</param>
         /// <param name="seenQuestions">Question ids seen in earlier sessions (docs/02_show_flow.md, "Seen questions"), or null.</param>
         /// <param name="seenRace">Race statement ids seen in earlier sessions, or null.</param>
+        /// <param name="seenFacts">Winner fact ids given in earlier sessions, or null.</param>
         public Game(GameContent content, IClock clock, IRandom tokenRandom, Func<int> newSeed,
-            IEnumerable<string> seenQuestions = null, IEnumerable<string> seenRace = null)
+            IEnumerable<string> seenQuestions = null, IEnumerable<string> seenRace = null,
+            IEnumerable<string> seenFacts = null)
         {
             Content = content ?? throw new ArgumentNullException(nameof(content));
             Config = content.Config ?? throw new ArgumentNullException(nameof(content.Config));
@@ -38,7 +40,7 @@ namespace FamilyQuiz.Core
             State = new GameState();
             _roster = new Roster(State, Config, content.Characters, clock, tokenRandom);
             _director = new ShowDirector(State, content, clock, newSeed);
-            _director.LoadSeen(seenQuestions, seenRace);
+            _director.LoadSeen(seenQuestions, seenRace, seenFacts);
             _inputs = new InputRules(State, _director, content.Characters);
             _settings = new SettingsRules(State, Config);
         }
@@ -64,14 +66,16 @@ namespace FamilyQuiz.Core
         public long? EndsInMs(PlayerState player)
         {
             bool turnPhase = State.Phase == GamePhase.Answer || State.Phase == GamePhase.RaceQuestion;
-            long? end = turnPhase && player?.Turn != null ? player.Turn.DeadlineMs : State.PhaseEndsAtMs;
+            long? end = turnPhase && player?.Turn != null ? player.Turn.DeadlineMs
+                : State.Phase == GamePhase.TopicVote && State.Round != null ? State.Round.VoteDeadlineMs
+                : State.PhaseEndsAtMs;
             if (!end.HasValue) return null;
             return Math.Max(0, end.Value - _clock.NowMs);
         }
 
         /// <summary>
         /// True when at least one connected player can still send a game input right now (docs/15_schemas.md, "Idle"):
-        /// a prediction in the Intro or a vote in TopicVote from a connected player who has not sent one; in Answer and
+        /// a vote in TopicVote from a connected player who has not sent one; in Answer and
         /// RaceQuestion, a connected player who has not locked in and is before their deadline plus net.inputGraceMs.
         /// </summary>
         public bool AnyoneCanAnswer
@@ -84,9 +88,6 @@ namespace FamilyQuiz.Core
                     if (!p.Connected) continue;
                     switch (State.Phase)
                     {
-                        case GamePhase.Intro:
-                            if (!State.Predictions.ContainsKey(p.PlayerId)) return true;
-                            break;
                         case GamePhase.TopicVote:
                             if (State.Round != null && !State.Round.Votes.ContainsKey(p.PlayerId)) return true;
                             break;

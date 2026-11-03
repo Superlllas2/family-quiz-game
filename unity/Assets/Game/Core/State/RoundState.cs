@@ -31,6 +31,9 @@ namespace FamilyQuiz.Core.State
         internal Dictionary<string, int> MutableVotes => _votes;
 
         /// <summary>The door that won the vote, or null while the vote runs.</summary>
+        /// <summary>When the vote timer runs out (timers.topicVote); votes are still taken for net.inputGraceMs after it (D84).</summary>
+        public long VoteDeadlineMs { get; internal set; }
+
         public int? ChosenDoor { get; internal set; }
 
         /// <summary>The chosen door's topic, or null while the vote runs.</summary>

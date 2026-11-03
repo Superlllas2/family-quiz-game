@@ -7,7 +7,6 @@ namespace FamilyQuiz.Core.Rules
         public const string Choice = "choice";
         public const string Value = "value";
         public const string TrueFalse = "trueFalse";
-        public const string Prediction = "prediction";
         public const string PowerUp = "powerUp";
         public const string EffectCleared = "effectCleared";
     }

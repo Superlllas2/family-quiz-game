@@ -257,8 +257,8 @@ namespace FamilyQuiz.Tests
                 }
                 else if (p.Phase == GamePhase.TopicVote)
                 {
-                    Assert.That(duration, Is.LessThanOrEqualTo(f.TopicVoteMs));
-                    if (p.Reason == PhaseEndReasons.Timeout) Assert.That(duration, Is.EqualTo(f.TopicVoteMs));
+                    Assert.That(duration, Is.LessThanOrEqualTo(f.VoteEndMs));
+                    if (p.Reason == PhaseEndReasons.Timeout) Assert.That(duration, Is.EqualTo(f.VoteEndMs));
                 }
                 else
                 {

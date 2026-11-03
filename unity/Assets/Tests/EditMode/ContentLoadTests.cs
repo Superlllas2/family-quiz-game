@@ -45,7 +45,7 @@ namespace FamilyQuiz.Tests
             }).Load();
             Assert.That(read, Is.EquivalentTo(new[]
             {
-                ConfigLoader.FileName, TopicLoader.FileName, QuestionLoader.FileName, RaceLoader.FileName, ShowScripts.FileName,
+                ConfigLoader.FileName, TopicLoader.FileName, QuestionLoader.FileName, RaceLoader.FileName, FactLoader.FileName, ShowScripts.FileName,
                 CharacterLoader.FileName, UiStrings.FileName
             }));
         }

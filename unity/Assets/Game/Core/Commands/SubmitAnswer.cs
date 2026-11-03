@@ -2,12 +2,12 @@ namespace FamilyQuiz.Core.Commands
 {
     /// <summary>
     /// Phone message "input" (PROTOCOL.md section 3). The kind decides which fields count: vote (Door), choice (Choice,
-    /// Ms), value (Value, Ms), trueFalse (Answer, Ms) and prediction (PlayerId). Missing fields are null.
+    /// Ms), value (Value, Ms), and trueFalse (Answer, Ms). Missing fields are null.
     /// </summary>
     public sealed class SubmitAnswer : IGameCommand
     {
         public SubmitAnswer(string conn, string inputId, long phaseId, string kind, int? choice, long? ms,
-            int? door = null, double? value = null, bool? answer = null, string playerId = null)
+            int? door = null, double? value = null, bool? answer = null)
         {
             Conn = conn;
             InputId = inputId;
@@ -18,7 +18,6 @@ namespace FamilyQuiz.Core.Commands
             Door = door;
             Value = value;
             Answer = answer;
-            PlayerId = playerId;
         }
 
         public string Conn { get; }
@@ -36,8 +35,5 @@ namespace FamilyQuiz.Core.Commands
 
         /// <summary>trueFalse: true or false.</summary>
         public bool? Answer { get; }
-
-        /// <summary>prediction: the playerId the player thinks wins.</summary>
-        public string PlayerId { get; }
     }
 }

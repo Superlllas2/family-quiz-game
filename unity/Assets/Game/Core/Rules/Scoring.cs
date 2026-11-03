@@ -30,18 +30,40 @@ namespace FamilyQuiz.Core.Rules
         }
 
         /// <summary>
-        /// Closest value distance points: roundTo(maxPoints x max(0, 1 - |guess - answer| / tolerance)) x multiplier,
-        /// rounded to the nearest scoring.roundTo before the multiplier. No speed component. The closest bonus is apart
-        /// (<see cref="ClosestBonus"/>).
+        /// Closest value distance points (docs/03_rules.md, D83). With d = |guess - answer| and the exact band
+        /// e = exactShare x tolerance: d above the tolerance scores 0; d up to e scores maxPoints; in between the points fall
+        /// in a straight line from maxPoints at e to minPoints at the tolerance edge (included). Rounded to the nearest
+        /// scoring.roundTo before the multiplier. No speed component. The closest bonus is apart (<see cref="ClosestBonus"/>).
         /// </summary>
-        public static int ClosestValue(ScoringConfig scoring, double guess, double answer, double tolerance, double multiplier)
+        public static int ClosestValue(ScoringConfig scoring, ClosestValueConfig closest, double guess, double answer,
+            double tolerance, double multiplier)
         {
-            if (tolerance <= 0) return 0;
-            double share = Math.Max(0.0, 1.0 - Math.Abs(guess - answer) / tolerance);
-            double raw = Math.Round(scoring.MaxPoints * share, FloatDecimals);
+            if (!ClosestValueCorrect(guess, answer, tolerance)) return 0;
+            double d = Distance(guess, answer);
+            double exact = Math.Round(closest.ExactShare * tolerance, FloatDecimals);
+            double raw;
+            if (d <= exact) raw = scoring.MaxPoints;
+            else
+            {
+                double share = (tolerance - d) / (tolerance - exact);
+                raw = Math.Round(closest.MinPoints + (scoring.MaxPoints - closest.MinPoints) * share, FloatDecimals);
+            }
+
             double rounded = RoundTo(raw, scoring.RoundTo);
             double points = Math.Round(rounded * multiplier, MidpointRounding.AwayFromZero);
             return points <= 0 ? 0 : (int)points;
+        }
+
+        /// <summary>A closest value guess is correct when it lies within the tolerance of the answer, edge included (D83).</summary>
+        public static bool ClosestValueCorrect(double guess, double answer, double tolerance)
+        {
+            return tolerance > 0 && Distance(guess, answer) <= Math.Round(tolerance, FloatDecimals);
+        }
+
+        /// <summary>|guess - answer|, rounded to 6 decimals so slider steps like 0.1 compare cleanly.</summary>
+        public static double Distance(double guess, double answer)
+        {
+            return Math.Round(Math.Abs(guess - answer), FloatDecimals);
         }
 
         /// <summary>The closest bonus (closestValue.closestBonus) times the round multiplier, rounded to a whole point.</summary>

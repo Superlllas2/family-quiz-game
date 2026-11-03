@@ -62,19 +62,22 @@ namespace FamilyQuiz.Core.Show
         // ---------------------------------------------------------------- seen lists
 
         /// <summary>The seen lists saved by an earlier session (docs/02_show_flow.md, "Seen questions").</summary>
-        public void LoadSeen(IEnumerable<string> questions, IEnumerable<string> race)
+        public void LoadSeen(IEnumerable<string> questions, IEnumerable<string> race, IEnumerable<string> facts = null)
         {
+            if (facts != null)
+                foreach (var id in facts) _state.MutableSeenFactIds.Add(id);
             if (questions != null)
                 foreach (var id in questions) _state.MutableSeenQuestionIds.Add(id);
             if (race != null)
                 foreach (var id in race) _state.MutableSeenRaceIds.Add(id);
         }
 
-        /// <summary>"Reset seen questions" (TV settings panel): clears both seen lists at once.</summary>
+        /// <summary>"Reset seen questions" (TV settings panel): clears every seen list at once (questions, race, facts).</summary>
         public void ResetSeen(List<IGameEvent> output)
         {
             _state.MutableSeenQuestionIds.Clear();
             _state.MutableSeenRaceIds.Clear();
+            _state.MutableSeenFactIds.Clear();
             output.Add(new SeenChanged(true));
             output.Add(new SettingsChanged(SettingsChanged.SourceTv, null, SettingsChanged.SettingResetSeen, "true"));
         }
@@ -135,8 +138,6 @@ namespace FamilyQuiz.Core.Show
                 return _closedInputPhaseId != 0 && cmd.PhaseId == _closedInputPhaseId ? AckReasons.Closed : AckReasons.Stale;
             switch (_state.Phase)
             {
-                case GamePhase.Intro:
-                    return CheckPrediction(player, cmd);
                 case GamePhase.TopicVote:
                     return CheckVote(player, cmd);
                 case GamePhase.Answer:
@@ -146,12 +147,6 @@ namespace FamilyQuiz.Core.Show
                 default:
                     return AckReasons.Invalid;
             }
-        }
-
-        private string CheckPrediction(PlayerState player, SubmitAnswer cmd)
-        {
-            if (cmd.Kind != InputKinds.Prediction || _state.MutablePredictions.ContainsKey(player.PlayerId)) return AckReasons.Invalid;
-            return _state.FindById(cmd.PlayerId) == null ? AckReasons.Invalid : null;
         }
 
         private string CheckVote(PlayerState player, SubmitAnswer cmd)
@@ -197,10 +192,6 @@ namespace FamilyQuiz.Core.Show
         {
             switch (_state.Phase)
             {
-                case GamePhase.Intro:
-                    _state.MutablePredictions[player.PlayerId] = cmd.PlayerId;
-                    output.Add(new PredictionMade(player.PlayerId, _state.PhaseId, cmd.PlayerId));
-                    break;
                 case GamePhase.TopicVote:
                     _state.Round.MutableVotes[player.PlayerId] = cmd.Door.Value;
                     output.Add(new VoteCast(player.PlayerId, _state.PhaseId, cmd.Door.Value));
@@ -224,8 +215,10 @@ namespace FamilyQuiz.Core.Show
                 var def = question.Def;
                 double value = cmd.Value.Value;
                 turn.Value = value;
-                int points = Scoring.ClosestValue(_config.Scoring, value, def.Answer.Value, def.Tolerance.Value, question.Multiplier);
-                output.Add(new AnswerLocked(player.PlayerId, _state.PhaseId, InputKinds.Value, -1, turn.Ms.Value, points > 0, points,
+                int points = Scoring.ClosestValue(_config.Scoring, _config.ClosestValue, value, def.Answer.Value, def.Tolerance.Value,
+                    question.Multiplier);
+                bool correct = Scoring.ClosestValueCorrect(value, def.Answer.Value, def.Tolerance.Value);
+                output.Add(new AnswerLocked(player.PlayerId, _state.PhaseId, InputKinds.Value, -1, turn.Ms.Value, correct, points,
                     value: value));
             }
             else
@@ -549,7 +542,6 @@ namespace FamilyQuiz.Core.Show
             _state.MutableMostCorrectIds.Clear();
             _state.MutableBestComebackIds.Clear();
             _state.MutableRanksAfterRound2.Clear();
-            _state.MutablePredictions.Clear();
             _usedInGame.Clear();
             _usedRaceInGame.Clear();
             _chosenTopics.Clear();
@@ -574,6 +566,7 @@ namespace FamilyQuiz.Core.Show
                 p.Score = 0;
                 p.Streak = 0;
                 p.CorrectCount = 0;
+                p.Stats = new PlayerStats();
                 p.Turn = null;
                 p.CharacterPicked = true;
                 p.Ready = false;
@@ -639,8 +632,19 @@ namespace FamilyQuiz.Core.Show
             foreach (var p in _state.Players) p.Turn = null;
             var doors = TopicPicker.Doors(_content.Topics, _content.Questions, _config.Topics, _chosenTopics,
                 _state.SeenQuestionIds, _random);
-            _state.Round = new RoundState(_roundIndex, _config.Rounds.Multipliers[_roundIndex], doors);
-            BeginTimed(GamePhase.TopicVote, at, ToMs(_config.Timers.TopicVote), 0, output);
+            var round = new RoundState(_roundIndex, _config.Rounds.Multipliers[_roundIndex], doors);
+            _state.Round = round;
+            // Votes get the same network grace as answers (D84): the timer shows timers.topicVote, and the phase waits
+            // net.inputGraceMs past it unless everyone has voted.
+            long vote = ToMs(_config.Timers.TopicVote);
+            round.VoteDeadlineMs = at + vote;
+            _state.Phase = GamePhase.TopicVote;
+            _state.PhaseId++;
+            _state.PhaseStartedAtMs = at;
+            _state.PhaseBudgetMs = vote;
+            _state.PhaseStagingExtraMs = 0;
+            _state.PhaseEndsAtMs = round.VoteDeadlineMs + _config.Net.InputGraceMs;
+            output.Add(new PhaseStarted(GamePhase.TopicVote, _state.PhaseId, vote, 0, _state.PhaseEndsAtMs));
         }
 
         private void EndTopicVote(string reason, long at, List<IGameEvent> output)
@@ -656,6 +660,11 @@ namespace FamilyQuiz.Core.Show
 
             int door = TopicPicker.ResolveVote(votes, round.Doors.Count, RankOf, _random);
             round.ChosenDoor = door;
+            foreach (var v in votes)
+            {
+                if (v.Value != door) _state.FindById(v.Key).Stats.LostVotes++;
+            }
+
             _chosenTopics.Add(round.Topic.Id);
             output.Add(new TopicChosen(round.Index + 1, door, round.Topic.Id, tie, nobodyVoted));
 
@@ -749,6 +758,10 @@ namespace FamilyQuiz.Core.Show
                 p.Score += turn.Points;
                 p.Streak = turn.Correct ? p.Streak + 1 : 0;
                 if (turn.Correct) p.CorrectCount++;
+                CountStats(p, turn);
+                if (turn.LastCall) p.Stats.LastCalls++;
+                if (question.IsClosestValue && turn.Distance.HasValue && question.Def.Tolerance > 0)
+                    p.Stats.WorstMiss = Math.Max(p.Stats.WorstMiss, turn.Distance.Value / question.Def.Tolerance.Value);
                 roundPoints[p.PlayerId] = (roundPoints.TryGetValue(p.PlayerId, out var sum) ? sum : 0) + turn.Points;
                 deltas[p.PlayerId] = turn.Points;
             }
@@ -789,7 +802,7 @@ namespace FamilyQuiz.Core.Show
             {
                 var turn = p.Turn;
                 if (turn == null || !turn.Value.HasValue) continue;
-                turn.Distance = Math.Abs(turn.Value.Value - def.Answer.Value);
+                turn.Distance = Scoring.Distance(turn.Value.Value, def.Answer.Value);
                 if (!best.HasValue || turn.Distance.Value < best.Value) best = turn.Distance.Value;
             }
 
@@ -805,9 +818,9 @@ namespace FamilyQuiz.Core.Show
                     continue;
                 }
 
-                int points = Scoring.ClosestValue(_config.Scoring, turn.Value.Value, def.Answer.Value, def.Tolerance.Value,
-                    question.Multiplier);
-                turn.Correct = points > 0;
+                int points = Scoring.ClosestValue(_config.Scoring, _config.ClosestValue, turn.Value.Value, def.Answer.Value,
+                    def.Tolerance.Value, question.Multiplier);
+                turn.Correct = Scoring.ClosestValueCorrect(turn.Value.Value, def.Answer.Value, def.Tolerance.Value);
                 turn.Closest = turn.Distance.Value == best.Value;
                 turn.Bonus = turn.Closest ? bonus : 0;
                 turn.Points = points + turn.Bonus;
@@ -899,7 +912,10 @@ namespace FamilyQuiz.Core.Show
                 // Total answer time (second race tie break): the answer's ms, or the whole window without an answer.
                 long ms = turn.Locked ? turn.Ms ?? turn.WindowMs : turn.WindowMs;
                 race.MutableAnswerMs[p.PlayerId] = (race.AnswerMs.TryGetValue(p.PlayerId, out var sum) ? sum : 0) + ms;
-                race.MutablePositions[p.PlayerId] = RaceRules.Move(race.PositionOf(p.PlayerId), correct, cfg);
+                int from = race.PositionOf(p.PlayerId);
+                race.MutablePositions[p.PlayerId] = RaceRules.Move(from, correct, cfg);
+                p.Stats.RaceSteps += race.PositionOf(p.PlayerId) - from;
+                CountStats(p, turn);
             }
 
             var seated = _state.Players.Select(p => p.PlayerId).ToList();
@@ -941,7 +957,34 @@ namespace FamilyQuiz.Core.Show
             _state.MutableMostCorrectIds.AddRange(Awards.MostCorrect(_state.Players));
             _state.MutableBestComebackIds.Clear();
             _state.MutableBestComebackIds.AddRange(Awards.BestComeback(_state.RanksAfterRound2, placement));
+            _state.MutableTags.Clear();
+            foreach (var pair in Tags.Assign(_state.Players, _state.WinnerId, _random)) _state.MutableTags[pair.Key] = pair.Value;
+            _state.WinnerFact = _state.WinnerId != null ? FactPicker.Pick(_content.Facts, _state.SeenFactIds, _random) : null;
+            if (_state.WinnerFact != null)
+            {
+                _state.MutableSeenFactIds.Add(_state.WinnerFact.Id);
+                output.Add(new SeenChanged(false));
+            }
+
             BeginTimed(GamePhase.Results, at, ToMs(_config.Timers.Results), 0, output);
+        }
+
+        /// <summary>One revealed answer (question or race statement) in the player's stats for the funny tags (D86).</summary>
+        private void CountStats(PlayerState p, PlayerTurn turn)
+        {
+            var stats = p.Stats;
+            if (!turn.Locked)
+            {
+                stats.Unanswered++;
+                return;
+            }
+
+            stats.Answered++;
+            long ms = Scoring.ClampMs(turn.Ms ?? turn.WindowMs, turn.WindowMs);
+            if (turn.WindowMs > 0) stats.WindowShareSum += (double)ms / turn.WindowMs;
+            if (turn.Correct) return;
+            stats.Wrong++;
+            if (ms < _config.Scoring.FastAnswerMs) stats.HastyWrong++;
         }
 
         private void EndGame(long at, List<IGameEvent> output)

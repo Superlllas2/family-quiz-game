@@ -107,9 +107,6 @@ namespace FamilyQuiz.Presentation
                     case VoteCast vote:
                         if (_phase == GamePhase.TopicVote) _topicVote.OnVoteCast(vote.PlayerId);
                         break;
-                    case PredictionMade prediction:
-                        if (_phase == GamePhase.Intro) _intro.OnPredictionMade(prediction.PlayerId);
-                        break;
                     case RaceRevealed _:
                         if (_phase == GamePhase.RaceReveal) _race.OnRaceRevealed();
                         break;

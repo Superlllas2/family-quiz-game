@@ -39,24 +39,6 @@ namespace FamilyQuiz.Tests
             Assert.That(f.State.GameNumber, Is.EqualTo(2));
         }
 
-        [Test]
-        public void APredictionInTheIntroIsAcceptedOnce()
-        {
-            var f = new LobbyFixture();
-            var seats = f.SeatPlayers(2);
-            f.ReadyAll();
-            f.Advance(f.CountdownMs);
-            Assert.That(f.Game.AnyoneCanAnswer, Is.True, "a prediction is an input");
-            var ok = f.Send(new SubmitAnswer("c1", "p1", f.State.PhaseId, InputKinds.Prediction, null, null, playerId: seats[1].PlayerId));
-            Assert.That(LobbyFixture.AckOf(ok).Ok, Is.True);
-            Assert.That(ok.OfType<PredictionMade>().Single().PredictedPlayerId, Is.EqualTo(seats[1].PlayerId));
-            var again = f.Send(new SubmitAnswer("c1", "p2", f.State.PhaseId, InputKinds.Prediction, null, null, playerId: seats[0].PlayerId));
-            Assert.That(LobbyFixture.AckOf(again).Reason, Is.EqualTo(AckReasons.Invalid));
-            var unknown = f.Send(new SubmitAnswer("c2", "p3", f.State.PhaseId, InputKinds.Prediction, null, null, playerId: "nobody"));
-            Assert.That(LobbyFixture.AckOf(unknown).Reason, Is.EqualTo(AckReasons.Invalid));
-            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Intro), "the Intro never ends early");
-        }
-
         // ---------------------------------------------------------------- the topic vote
 
         [Test]
@@ -67,7 +49,8 @@ namespace FamilyQuiz.Tests
             var round = f.State.Round;
             Assert.That(round.Doors.Count, Is.EqualTo(f.Config.Topics.Doors));
             Assert.That(round.Doors.Last().Id, Is.EqualTo(f.Config.Topics.MixedTopicId));
-            Assert.That(f.State.PhaseEndsAtMs - f.State.PhaseStartedAtMs, Is.EqualTo(f.TopicVoteMs));
+            Assert.That(f.State.Round.VoteDeadlineMs - f.State.PhaseStartedAtMs, Is.EqualTo(f.TopicVoteMs));
+            Assert.That(f.State.PhaseEndsAtMs - f.State.PhaseStartedAtMs, Is.EqualTo(f.VoteEndMs), "plus the grace (D84)");
         }
 
         [Test]
@@ -111,9 +94,29 @@ namespace FamilyQuiz.Tests
             var f = new LobbyFixture();
             f.ToFirstVote(2);
             long voteId = f.State.PhaseId;
-            f.Advance(f.TopicVoteMs);
+            f.Advance(f.VoteEndMs);
             var late = f.Send(new SubmitAnswer("c1", "late", voteId, InputKinds.Vote, null, null, door: 0));
             Assert.That(LobbyFixture.AckOf(late).Reason, Is.EqualTo(AckReasons.Closed));
+        }
+
+        [Test]
+        public void AVoteInsideTheGraceAfterTheTimerCounts()
+        {
+            var f = new LobbyFixture();
+            f.ToFirstVote(2);
+            f.Advance(f.TopicVoteMs + f.GraceMs - 1);
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.TopicVote));
+            Assert.That(LobbyFixture.AckOf(f.Vote("c1", 1)).Ok, Is.True, "sent at the buzzer, arrived inside the grace");
+            var events = f.Advance(1);
+            Assert.That(events.OfType<TopicChosen>().Single().Door, Is.EqualTo(1));
+        }
+
+        [Test]
+        public void ThePhoneCountdownShowsTheVoteTimerWithoutTheGrace()
+        {
+            var f = new LobbyFixture();
+            var seats = f.ToFirstVote(2);
+            Assert.That(f.Game.EndsInMs(seats[0]), Is.EqualTo(f.TopicVoteMs));
         }
 
         [Test]
@@ -124,7 +127,7 @@ namespace FamilyQuiz.Tests
             {
                 var f = new LobbyFixture(seed);
                 f.ToFirstVote(2);
-                var events = f.Advance(f.TopicVoteMs);
+                var events = f.Advance(f.VoteEndMs);
                 var chosen = events.OfType<TopicChosen>().Single();
                 Assert.That(chosen.NobodyVoted, Is.True);
                 Assert.That(events.OfType<PhaseEnded>().First().Reason, Is.EqualTo(PhaseEndReasons.Timeout));
@@ -154,7 +157,7 @@ namespace FamilyQuiz.Tests
             // Round 2: P1 on door 0, P3 on door 2, P2 does not vote: a 1 to 1 tie, P3 is ranked lower and decides.
             f.Vote("c1", 0);
             f.Vote("c3", 2);
-            var events = f.Advance(f.TopicVoteMs);
+            var events = f.Advance(f.VoteEndMs);
             var chosen = events.OfType<TopicChosen>().Single();
             Assert.That(chosen.ByTieBreak, Is.True);
             Assert.That(chosen.Door, Is.EqualTo(2));

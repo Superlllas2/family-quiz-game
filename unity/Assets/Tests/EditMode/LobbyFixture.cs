@@ -20,7 +20,7 @@ namespace FamilyQuiz.Tests
         private int _inputNumber;
 
         public LobbyFixture(int seed = 42, GameContent content = null, IEnumerable<string> seenQuestions = null,
-            IEnumerable<string> seenRace = null)
+            IEnumerable<string> seenRace = null, IEnumerable<string> seenFacts = null)
         {
             Content = content ?? TestContent.Content();
             Config = Content.Config;
@@ -32,7 +32,7 @@ namespace FamilyQuiz.Tests
             {
                 Seeds.Add(nextSeed);
                 return nextSeed++;
-            }, seenQuestions, seenRace);
+            }, seenQuestions, seenRace, seenFacts);
             Game.Start();
         }
 
@@ -58,6 +58,9 @@ namespace FamilyQuiz.Tests
         public long ResultsMs => Ms(Config.Timers.Results);
         public long IntroMs => Ms(Config.Timers.Intro);
         public long TopicVoteMs => Ms(Config.Timers.TopicVote);
+
+        /// <summary>A vote nobody finishes: the vote timer plus net.inputGraceMs (D84).</summary>
+        public long VoteEndMs => TopicVoteMs + Config.Net.InputGraceMs;
         public long RoundEndMs => Ms(Config.Timers.RoundEnd) + Ms(Config.Staging.ExtraSeconds.RoundEnd);
         public long FinalIntroMs => Ms(Config.Timers.FinalIntro);
         public long RaceWindowMs => Ms(Config.Race.Answer);
@@ -208,7 +211,7 @@ namespace FamilyQuiz.Tests
         public PlayerState[] ToFirstAnswer(int count)
         {
             var seats = ToFirstVote(count);
-            Advance(TopicVoteMs);
+            Advance(VoteEndMs);
             Assert.That(State.Phase, Is.EqualTo(GamePhase.QuestionShow));
             Advance(QuestionShowMs);
             Assert.That(State.Phase, Is.EqualTo(GamePhase.Answer));

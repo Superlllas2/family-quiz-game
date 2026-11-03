@@ -15,6 +15,9 @@ namespace FamilyQuiz.Core.Content
         /// <summary>race.json "statement": at most 120 characters per language (tools/validate_content.mjs).</summary>
         public const int RaceStatementMax = 120;
 
+        /// <summary>facts.json "text": at most 160 characters per language (the winner's phone shows it).</summary>
+        public const int FactTextMax = 160;
+
         /// <summary>topics.json "title": at most 30 characters (tools/validate_content.mjs).</summary>
         public const int TopicTitleMax = 30;
 

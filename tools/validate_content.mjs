@@ -50,6 +50,14 @@ for (const r of race) {
   if (typeof r.answer !== "boolean") err("race.json", r.id, "answer must be true or false");
 }
 
+const facts = load("facts.json");
+if (!Array.isArray(facts) || facts.length < 1) err("facts.json", "-", "needs at least one fact");
+for (const f of facts ?? []) {
+  unique("facts.json", f.id);
+  if (!isLoc(f.text, 160)) err("facts.json", f.id, "text must have ru and en, max 160");
+  if (typeof f.source !== "string" || !f.source.trim()) err("facts.json", f.id, "source is missing");
+}
+
 const lines = load("host_lines.json");
 for (const l of lines) {
   unique("host_lines.json", l.id);
@@ -99,6 +107,7 @@ const REQUIRED = [
   "timers.finalIntro", "timers.results", "rounds.count", "rounds.questionsPerRound", "rounds.multipliers",
   "rounds.difficultyOrder", "rounds.formatOrder", "topics.doors", "topics.minUnseenToOffer", "topics.mixedTopicId",
   "scoring.maxPoints", "scoring.speedPenalty", "scoring.roundTo", "scoring.fastAnswerMs", "closestValue.closestBonus",
+  "closestValue.minPoints", "closestValue.exactShare",
   "powerUps.enabled", "powerUps.types", "powerUps.targeting", "powerUps.drawChanceLeader", "powerUps.maxHeld",
   "powerUps.maxHitsPerQuestion", "powerUps.immunityQuestions", "powerUps.onPhone", "powerUps.freeze.taps",
   "powerUps.slime.blobs", "powerUps.fog.seconds", "race.maxHeadStart", "race.finishSteps", "race.maxQuestions",
@@ -181,7 +190,7 @@ for (const q of questions) {
   perTopic[q.topic][q.format]++;
 }
 console.log("Questions per topic:", JSON.stringify(perTopic));
-console.log(`${questions.length} questions, ${race.length} race statements, ${lines.length} host lines, ${characters.length} characters, ${Object.keys(ui ?? {}).length} UI strings`);
+console.log(`${questions.length} questions, ${race.length} race statements, ${facts.length} facts, ${lines.length} host lines, ${characters.length} characters, ${Object.keys(ui ?? {}).length} UI strings`);
 
 if (errors.length) {
   console.error(`\n${errors.length} error(s):\n` + errors.join("\n"));

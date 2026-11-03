@@ -21,7 +21,7 @@
   },
   "topics": { "doors": 4, "minUnseenToOffer": 4, "mixedTopicId": "mixed" },
   "scoring": { "maxPoints": 1000, "speedPenalty": 0.5, "roundTo": 10, "fastAnswerMs": 2000 },
-  "closestValue": { "closestBonus": 200 },
+  "closestValue": { "closestBonus": 200, "minPoints": 100, "exactShare": 0.05 },
   "powerUps": {
     "enabled": true,
     "types": ["freeze", "slime", "fog"],

@@ -20,6 +20,7 @@ namespace FamilyQuiz.Core.Content
             "timers.finalIntro", "timers.results", "rounds.count", "rounds.questionsPerRound", "rounds.multipliers",
             "rounds.difficultyOrder", "rounds.formatOrder", "topics.doors", "topics.minUnseenToOffer", "topics.mixedTopicId",
             "scoring.maxPoints", "scoring.speedPenalty", "scoring.roundTo", "scoring.fastAnswerMs", "closestValue.closestBonus",
+            "closestValue.minPoints", "closestValue.exactShare",
             "powerUps.enabled", "powerUps.types", "powerUps.targeting", "powerUps.drawChanceLeader", "powerUps.maxHeld",
             "powerUps.maxHitsPerQuestion", "powerUps.immunityQuestions", "powerUps.onPhone", "powerUps.freeze.taps",
             "powerUps.slime.blobs", "powerUps.fog.seconds", "race.maxHeadStart", "race.finishSteps", "race.maxQuestions",
@@ -137,6 +138,10 @@ namespace FamilyQuiz.Core.Content
                 "must be shorter than Results");
 
             e.Check(c.ClosestValue.ClosestBonus >= 0, "closestValue.closestBonus", "must be 0 or more");
+            e.Check(c.ClosestValue.MinPoints >= 0 && c.ClosestValue.MinPoints <= s.MaxPoints, "closestValue.minPoints",
+                "must be 0 to scoring.maxPoints");
+            e.Check(c.ClosestValue.ExactShare >= 0 && c.ClosestValue.ExactShare < 1, "closestValue.exactShare",
+                "must be 0 or more and below 1");
             var race = c.Race;
             e.Check(race.MaxHeadStart >= 0, "race.maxHeadStart", "must be 0 or more");
             e.Check(race.FinishSteps > race.MaxHeadStart, "race.finishSteps", "must be more than race.maxHeadStart");

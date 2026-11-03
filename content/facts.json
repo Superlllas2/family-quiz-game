@@ -1,0 +1,152 @@
+[
+  {
+    "id": "f001",
+    "text": { "ru": "У осьминога три сердца и голубая кровь.", "en": "An octopus has three hearts and blue blood." },
+    "source": "Britannica, Octopus"
+  },
+  {
+    "id": "f002",
+    "text": { "ru": "Мёд из гробниц Древнего Египта оставался съедобным спустя около 3000 лет.", "en": "Honey found in ancient Egyptian tombs was still edible after about 3,000 years." },
+    "source": "Smithsonian Magazine, The Science Behind Honey's Eternal Shelf Life"
+  },
+  {
+    "id": "f003",
+    "text": { "ru": "Сутки на Венере длиннее её года: оборот вокруг оси занимает 243 земных дня, а вокруг Солнца 225.", "en": "A day on Venus is longer than its year: one spin takes 243 Earth days, one trip around the Sun 225." },
+    "source": "NASA, Venus facts"
+  },
+  {
+    "id": "f004",
+    "text": { "ru": "С точки зрения ботаники банан — ягода, а клубника — нет.", "en": "To a botanist, a banana is a berry and a strawberry is not." },
+    "source": "Britannica, Berry"
+  },
+  {
+    "id": "f005",
+    "text": { "ru": "Летом Эйфелева башня становится выше примерно на 15 см: железо расширяется от жары.", "en": "In summer the Eiffel Tower grows up to about 15 cm taller, because its iron expands in the heat." },
+    "source": "toureiffel.paris, official site"
+  },
+  {
+    "id": "f006",
+    "text": { "ru": "В Байкале около 20% всей незамёрзшей пресной воды на поверхности Земли.", "en": "Lake Baikal holds about 20% of the world's unfrozen fresh surface water." },
+    "source": "UNESCO World Heritage, Lake Baikal"
+  },
+  {
+    "id": "f007",
+    "text": { "ru": "Россия раскинулась на 11 часовых поясов.", "en": "Russia spans 11 time zones." },
+    "source": "Federal law on the calculation of time, Russia (2011, 2014)"
+  },
+  {
+    "id": "f008",
+    "text": { "ru": "Акулы появились раньше деревьев: акулам около 450 миллионов лет, деревьям около 385.", "en": "Sharks are older than trees: sharks appeared about 450 million years ago, trees about 385." },
+    "source": "Natural History Museum, London"
+  },
+  {
+    "id": "f009",
+    "text": { "ru": "Ленивец может задерживать дыхание до 40 минут, замедляя сердце.", "en": "A sloth can hold its breath for up to 40 minutes by slowing its heart." },
+    "source": "Sloth Conservation Foundation"
+  },
+  {
+    "id": "f010",
+    "text": { "ru": "Коала спит до 18–22 часов в сутки: листья эвкалипта дают очень мало энергии.", "en": "A koala sleeps 18 to 22 hours a day: eucalyptus leaves give it very little energy." },
+    "source": "Australian Koala Foundation"
+  },
+  {
+    "id": "f011",
+    "text": { "ru": "Колибри — единственные птицы, которые умеют летать задом наперёд.", "en": "Hummingbirds are the only birds that can fly backwards." },
+    "source": "Britannica, Hummingbird"
+  },
+  {
+    "id": "f012",
+    "text": { "ru": "Самая короткая война в истории, англо-занзибарская 1896 года, длилась меньше часа.", "en": "The shortest war in history, the Anglo-Zanzibar War of 1896, lasted less than an hour." },
+    "source": "Guinness World Records"
+  },
+  {
+    "id": "f013",
+    "text": { "ru": "Клеопатра жила ближе по времени к высадке на Луну, чем к постройке пирамиды Хеопса.", "en": "Cleopatra lived closer in time to the Moon landing than to the building of the Great Pyramid of Giza." },
+    "source": "Britannica: Great Pyramid about 2560 BC, Cleopatra 69 to 30 BC, Apollo 11 in 1969"
+  },
+  {
+    "id": "f014",
+    "text": { "ru": "Луна удаляется от Земли примерно на 3,8 см в год.", "en": "The Moon drifts away from Earth by about 3.8 cm a year." },
+    "source": "NASA, Lunar Laser Ranging"
+  },
+  {
+    "id": "f015",
+    "text": { "ru": "Свет от Солнца идёт до Земли около 8 минут 20 секунд.", "en": "Sunlight takes about 8 minutes and 20 seconds to reach Earth." },
+    "source": "NASA"
+  },
+  {
+    "id": "f016",
+    "text": { "ru": "Вомбаты — единственные животные, чей помёт имеет форму кубиков.", "en": "Wombats are the only animals known to make cube-shaped poop." },
+    "source": "Soft Matter journal, 2021, How do wombats make cubed poo?"
+  },
+  {
+    "id": "f017",
+    "text": { "ru": "Императорский пингвин может нырнуть глубже чем на 500 метров.", "en": "An emperor penguin can dive deeper than 500 metres." },
+    "source": "British Antarctic Survey"
+  },
+  {
+    "id": "f018",
+    "text": { "ru": "Транссибирская магистраль от Москвы до Владивостока — около 9300 км, самая длинная железная дорога в мире.", "en": "The Trans-Siberian Railway from Moscow to Vladivostok is about 9,300 km, the longest railway line in the world." },
+    "source": "Britannica, Trans-Siberian Railroad"
+  },
+  {
+    "id": "f019",
+    "text": { "ru": "Пётр I ввёл налог на бороды: заплатившему выдавали медный «бородовой знак».", "en": "Peter the Great taxed beards: whoever paid got a copper beard token to carry." },
+    "source": "Britannica, Peter I; State Historical Museum, Moscow"
+  },
+  {
+    "id": "f020",
+    "text": { "ru": "Тетрис придумал в Москве в 1984 году программист Алексей Пажитнов.", "en": "Tetris was invented in Moscow in 1984 by programmer Alexey Pajitnov." },
+    "source": "The Tetris Company"
+  },
+  {
+    "id": "f021",
+    "text": { "ru": "Первым животным на орбите Земли была собака Лайка: «Спутник-2», 1957 год.", "en": "The first animal to orbit Earth was Laika the dog, on Sputnik 2 in 1957." },
+    "source": "NASA History"
+  },
+  {
+    "id": "f022",
+    "text": { "ru": "Плотность Сатурна меньше плотности воды.", "en": "Saturn is less dense than water." },
+    "source": "NASA, Saturn facts"
+  },
+  {
+    "id": "f023",
+    "text": { "ru": "Молния примерно в пять раз горячее поверхности Солнца.", "en": "A bolt of lightning is about five times hotter than the surface of the Sun." },
+    "source": "US National Weather Service"
+  },
+  {
+    "id": "f024",
+    "text": { "ru": "Бабочки чувствуют вкус лапками.", "en": "Butterflies taste with their feet." },
+    "source": "Smithsonian, Butterflies"
+  },
+  {
+    "id": "f025",
+    "text": { "ru": "Великую Китайскую стену не видно с Луны невооружённым глазом.", "en": "The Great Wall of China cannot be seen from the Moon with the naked eye." },
+    "source": "NASA, Earth Observatory"
+  },
+  {
+    "id": "f026",
+    "text": { "ru": "В Эрмитаже живут коты: они охраняют коллекцию от мышей с XVIII века.", "en": "The Hermitage museum keeps cats: they have guarded its collection from mice since the 18th century." },
+    "source": "State Hermitage Museum"
+  },
+  {
+    "id": "f027",
+    "text": { "ru": "Самая большая пустыня в мире — Антарктида.", "en": "The largest desert in the world is Antarctica." },
+    "source": "Britannica, Desert"
+  },
+  {
+    "id": "f028",
+    "text": { "ru": "Каланы спят на воде, держась за лапы, чтобы их не разнесло течением.", "en": "Sea otters hold paws while they sleep on the water so they don't drift apart." },
+    "source": "Monterey Bay Aquarium"
+  },
+  {
+    "id": "f029",
+    "text": { "ru": "Самое высокое дерево в мире, секвойя «Гиперион», выше 115 метров.", "en": "The tallest known tree, a redwood called Hyperion, is over 115 metres tall." },
+    "source": "Redwood National and State Parks, NPS"
+  },
+  {
+    "id": "f030",
+    "text": { "ru": "Венера — самая горячая планета, хотя Меркурий ближе к Солнцу.", "en": "Venus is the hottest planet, even though Mercury is closer to the Sun." },
+    "source": "NASA, Venus facts"
+  }
+]

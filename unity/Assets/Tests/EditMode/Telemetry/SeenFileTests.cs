@@ -38,9 +38,20 @@ namespace FamilyQuiz.Tests.Telemetry
         [Test]
         public void AMissingFileMeansNothingSeen()
         {
-            var (questions, race) = new SeenFile(_path).Load();
+            var (questions, race, _) = new SeenFile(_path).Load();
             Assert.That(questions, Is.Empty);
             Assert.That(race, Is.Empty);
+        }
+
+        [Test]
+        public void AFileFromBeforeFactsLoadsWithNoFacts()
+        {
+            Directory.CreateDirectory(_folder);
+            File.WriteAllText(_path, "{\"questions\": [\"geo_001\"], \"race\": [\"race_001\"]}");
+            var (questions, race, facts) = new SeenFile(_path).Load();
+            Assert.That(questions, Is.EqualTo(new[] { "geo_001" }));
+            Assert.That(race, Is.EqualTo(new[] { "race_001" }));
+            Assert.That(facts, Is.Empty);
         }
 
         [Test]
@@ -49,7 +60,7 @@ namespace FamilyQuiz.Tests.Telemetry
             Directory.CreateDirectory(_folder);
             File.WriteAllText(_path, "{ not json");
             var errors = new List<string>();
-            var (questions, _) = new SeenFile(_path, errors.Add).Load();
+            var (questions, _, _) = new SeenFile(_path, errors.Add).Load();
             Assert.That(questions, Is.Empty);
             Assert.That(errors.Count, Is.EqualTo(1));
         }
@@ -66,11 +77,14 @@ namespace FamilyQuiz.Tests.Telemetry
             while (first.State.Phase != GamePhase.Lobby || first.State.GameNumber == 0) file.OnEvents(first.Advance(100));
             var seenQuestions = first.State.SeenQuestionIds.ToList();
             var seenRace = first.State.SeenRaceIds.ToList();
+            var seenFacts = first.State.SeenFactIds.ToList();
+            Assert.That(seenFacts.Count, Is.EqualTo(1), "the winner's fact (D87)");
             Assert.That(File.Exists(_path), Is.True);
 
             // The app restarts: the next Game starts from the file.
             var restarted = new SeenFile(_path);
-            var (questions, race) = restarted.Load();
+            var (questions, race, facts) = restarted.Load();
+            Assert.That(facts, Is.EquivalentTo(seenFacts));
             Assert.That(questions, Is.EquivalentTo(seenQuestions));
             Assert.That(race, Is.EquivalentTo(seenRace));
             var second = new LobbyFixture(4, seenQuestions: questions, seenRace: race);
@@ -79,7 +93,8 @@ namespace FamilyQuiz.Tests.Telemetry
 
             // Reset seen questions: the file is cleared at once.
             restarted.OnEvents(second.Send(new ResetSeen()));
-            var (afterQ, afterR) = new SeenFile(_path).Load();
+            var (afterQ, afterR, afterF) = new SeenFile(_path).Load();
+            Assert.That(afterF, Is.Empty);
             Assert.That(afterQ, Is.Empty);
             Assert.That(afterR, Is.Empty);
             Assert.That(File.Exists(_path + ".tmp"), Is.False);

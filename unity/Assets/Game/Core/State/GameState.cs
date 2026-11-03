@@ -13,7 +13,6 @@ namespace FamilyQuiz.Core.State
         private readonly List<string> _mostCorrectIds = new List<string>();
         private readonly List<string> _bestComebackIds = new List<string>();
         private readonly Dictionary<string, int> _ranksAfterRound2 = new Dictionary<string, int>();
-        private readonly Dictionary<string, string> _predictions = new Dictionary<string, string>();
 
         public GamePhase Phase { get; internal set; }
 
@@ -76,12 +75,29 @@ namespace FamilyQuiz.Core.State
 
         internal HashSet<string> MutableSeenRaceIds => _seenRaceIds;
 
+        /// <summary>Fact ids already given to a winner, kept like <see cref="SeenQuestionIds"/> (D87).</summary>
+        public IReadOnlyCollection<string> SeenFactIds => _seenFactIds;
+
+        internal HashSet<string> MutableSeenFactIds => _seenFactIds;
+
+        private readonly HashSet<string> _seenFactIds = new HashSet<string>();
+
+        /// <summary>Set when Results starts: the winner's reward fact (D87), or null without a winner or facts.</summary>
+        public Content.FactDef WinnerFact { get; internal set; }
+
+        /// <summary>Set when Results starts: playerId to funny tag id for every player but the winner (D86).</summary>
+        public IReadOnlyDictionary<string, string> TagsByPlayer => _tags;
+
+        internal Dictionary<string, string> MutableTags => _tags;
+
+        private readonly Dictionary<string, string> _tags = new Dictionary<string, string>();
+
         /// <summary>Set when Results starts: the race winner (docs/03_rules.md, "Winner and ties"), or null.</summary>
         public string WinnerId { get; internal set; }
 
         /// <summary>
         /// Set when Results starts: every player in final order, winner first (the race order; without a race, by
-        /// score). results.place and the top 3 come from it.
+        /// score). The winner and "Best comeback" come from it.
         /// </summary>
         public IReadOnlyList<string> Placement => _placement;
 
@@ -103,11 +119,6 @@ namespace FamilyQuiz.Core.State
         public IReadOnlyDictionary<string, int> RanksAfterRound2 => _ranksAfterRound2;
 
         internal Dictionary<string, int> MutableRanksAfterRound2 => _ranksAfterRound2;
-
-        /// <summary>Intro predictions "Who wins tonight?": playerId to the playerId they tapped.</summary>
-        public IReadOnlyDictionary<string, string> Predictions => _predictions;
-
-        internal Dictionary<string, string> MutablePredictions => _predictions;
 
         /// <summary>Seated players in join order.</summary>
         public IReadOnlyList<PlayerState> Players => _players;

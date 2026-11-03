@@ -78,9 +78,10 @@ namespace FamilyQuiz.Bootstrap
             // Seen questions and race statements survive app restarts (docs/02_show_flow.md, "Seen questions").
             _seen = new SeenFile(Path.Combine(Application.persistentDataPath, SeenFile.FileName),
                 message => TvLog.Error("Seen questions: " + message));
-            var (seenQuestions, seenRace) = _seen.Load();
-            TvLog.Info("Seen questions: " + seenQuestions.Count + ", race statements: " + seenRace.Count + " (" + _seen.Path + ")");
-            _game = new Game(content, _clock, _random, () => _random.Next(int.MaxValue), seenQuestions, seenRace);
+            var (seenQuestions, seenRace, seenFacts) = _seen.Load();
+            TvLog.Info("Seen questions: " + seenQuestions.Count + ", race statements: " + seenRace.Count + ", facts: "
+                       + seenFacts.Count + " (" + _seen.Path + ")");
+            _game = new Game(content, _clock, _random, () => _random.Next(int.MaxValue), seenQuestions, seenRace, seenFacts);
             _seen.Attach(_game);
             _telemetry = new TelemetryListener(_game, _eventLog);
             _view.Attach(_game); // before Start(): the presenter ignores events until it has a game

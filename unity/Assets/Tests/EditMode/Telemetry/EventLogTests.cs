@@ -287,8 +287,16 @@ namespace FamilyQuiz.Tests.EventLog
         [Test]
         public void GameEndedLine()
         {
-            AssertBody("{'event':'gameEnded','game':1,'reason':'finished','winner':'p2','durationMs':617000}",
+            // No Results ran in this fixture: no fact and no tags yet (D86, D87).
+            AssertBody("{'event':'gameEnded','game':1,'reason':'finished','winner':'p2','durationMs':617000,'factId':null,'tags':{}}",
                 LogOne(new GameEnded(1, GameEnded.ReasonFinished, "p2", 617000)));
+        }
+
+        [Test]
+        public void ABackToLobbyGameEndedLineHasNoRewards()
+        {
+            AssertBody("{'event':'gameEnded','game':1,'reason':'backToLobby','winner':null,'durationMs':5000}",
+                LogOne(new GameEnded(1, GameEnded.ReasonBackToLobby, null, 5000)));
         }
 
         [Test]

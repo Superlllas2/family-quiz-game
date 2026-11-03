@@ -89,9 +89,10 @@ namespace FamilyQuiz.Presentation
             }
 
             _bar.SetVisible(true);
-            long end = state.PhaseEndsAtMs.Value;
+            // The bar shows the vote timer; the grace after it (D84) is not shown.
+            long end = state.Round != null ? state.Round.VoteDeadlineMs : state.PhaseEndsAtMs.Value;
             long span = end - state.PhaseStartedAtMs;
-            long left = end - game.NowMs;
+            long left = System.Math.Max(0, end - game.NowMs);
             _bar.Set(span > 0 ? (float)left / span : 0f, TvColors.Text);
         }
 

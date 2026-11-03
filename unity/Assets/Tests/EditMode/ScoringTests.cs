@@ -104,7 +104,7 @@ namespace FamilyQuiz.Tests
             Assert.That(two, Is.EqualTo(2));
             f.Send(new FamilyQuiz.Core.Commands.ChangeSettings("c2", null, two));
             f.StartNextGame();
-            f.Advance(f.TopicVoteMs);
+            f.Advance(f.VoteEndMs);
             f.Advance(f.QuestionShowMs);
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Answer));
             Assert.That(seats[0].Turn.WindowMs, Is.EqualTo(f.WindowMs));

@@ -190,15 +190,6 @@ namespace FamilyQuiz.Telemetry
                         ["topicId"] = state.Round != null && vote.Door < state.Round.Doors.Count ? state.Round.Doors[vote.Door].Id : null
                     });
                     break;
-                case PredictionMade prediction:
-                    _writer.Write(EventInput, new JObject
-                    {
-                        ["playerId"] = prediction.PlayerId,
-                        ["kind"] = "prediction",
-                        ["phaseId"] = prediction.PhaseId,
-                        ["predicted"] = prediction.PredictedPlayerId
-                    });
-                    break;
                 case RaceStarted race:
                 {
                     var heads = new JObject();
@@ -234,14 +225,26 @@ namespace FamilyQuiz.Telemetry
                     });
                     break;
                 case GameEnded ended:
-                    _writer.Write(EventGameEnded, new JObject
+                {
+                    var fields = new JObject
                     {
                         ["game"] = ended.Game,
                         ["reason"] = ended.Reason,
                         ["winner"] = ended.WinnerId,
                         ["durationMs"] = ended.DurationMs
-                    });
+                    };
+                    if (ended.Reason == GameEnded.ReasonFinished)
+                    {
+                        // The Results rewards (D86, D87): the winner's fact and every other player's tag.
+                        fields["factId"] = state.WinnerFact?.Id;
+                        var tags = new JObject();
+                        foreach (var pair in state.TagsByPlayer) tags[pair.Key] = pair.Value;
+                        fields["tags"] = tags;
+                    }
+
+                    _writer.Write(EventGameEnded, fields);
                     break;
+                }
             }
         }
 

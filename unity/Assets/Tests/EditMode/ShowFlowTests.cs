@@ -365,7 +365,7 @@ namespace FamilyQuiz.Tests
             var budgets = new Dictionary<GamePhase, long>
             {
                 { GamePhase.Intro, f.IntroMs },
-                { GamePhase.TopicVote, f.TopicVoteMs },
+                { GamePhase.TopicVote, f.VoteEndMs },
                 { GamePhase.QuestionShow, f.QuestionShowMs },
                 { GamePhase.Reveal, f.RevealMs },
                 { GamePhase.Scores, f.ScoresMs },
@@ -494,7 +494,7 @@ namespace FamilyQuiz.Tests
             f.Send(new PickCharacter("c1", "k1", 5));
             f.Send(new ChangeSettings("c2", "en", f.Config.Players.TimerMultiplierOptions.Max()));
             f.StartNextGame();
-            f.Advance(f.TopicVoteMs);
+            f.Advance(f.VoteEndMs);
             f.Advance(f.QuestionShowMs);
             f.Choice("c1", f.Right, 0);
             f.Choice("c2", f.Right, 0);

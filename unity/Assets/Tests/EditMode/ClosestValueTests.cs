@@ -12,25 +12,75 @@ namespace FamilyQuiz.Tests
     public sealed class ClosestValueTests
     {
         private static readonly ScoringConfig Cfg = TestContent.Config().Scoring;
+        private static readonly ClosestValueConfig Cv = TestContent.Config().ClosestValue;
+
+        private static int Points(double guess, double answer, double tolerance, double multiplier = 1)
+        {
+            return Core.Rules.Scoring.ClosestValue(Cfg, Cv, guess, answer, tolerance, multiplier);
+        }
 
         [Test]
-        public void DistanceScoringFallsToZeroAtTheTolerance()
+        public void TheTestConfigHasTheStartingValues()
         {
-            // Everest: answer 8849, tolerance 1500.
-            Assert.That(Core.Rules.Scoring.ClosestValue(Cfg, 8849, 8849, 1500, 1), Is.EqualTo(1000));
-            Assert.That(Core.Rules.Scoring.ClosestValue(Cfg, 8099, 8849, 1500, 1), Is.EqualTo(500));
-            Assert.That(Core.Rules.Scoring.ClosestValue(Cfg, 9599, 8849, 1500, 1), Is.EqualTo(500), "above and below the same");
-            Assert.That(Core.Rules.Scoring.ClosestValue(Cfg, 7349, 8849, 1500, 1), Is.EqualTo(0));
-            Assert.That(Core.Rules.Scoring.ClosestValue(Cfg, 6000, 8849, 1500, 1), Is.EqualTo(0), "never negative");
+            Assert.That(Cfg.MaxPoints, Is.EqualTo(1000));
+            Assert.That(Cv.MinPoints, Is.EqualTo(100));
+            Assert.That(Cv.ExactShare, Is.EqualTo(0.05));
+        }
+
+        [Test]
+        public void AGuessInsideTheExactBandScoresMaxPoints()
+        {
+            // Everest: answer 8849, tolerance 1500, exact band 5 % of it: 75.
+            Assert.That(Points(8849, 8849, 1500), Is.EqualTo(1000));
+            Assert.That(Points(8849 + 75, 8849, 1500), Is.EqualTo(1000), "the band edge is inside");
+            Assert.That(Points(8849 - 75, 8849, 1500), Is.EqualTo(1000));
+            // Just past the band the points round back up to 1000 (996.8); 150 off gives 952.6 -> 950.
+            Assert.That(Points(8849 + 150, 8849, 1500), Is.EqualTo(950));
+        }
+
+        [Test]
+        public void TheToleranceEdgeScoresMinPointsAndPastItNothing()
+        {
+            Assert.That(Points(8849 - 1500, 8849, 1500), Is.EqualTo(100));
+            Assert.That(Points(8849 + 1500, 8849, 1500), Is.EqualTo(100), "above and below the same");
+            Assert.That(Points(8849 + 1501, 8849, 1500), Is.EqualTo(0));
+            Assert.That(Points(6000, 8849, 1500), Is.EqualTo(0), "never negative");
+        }
+
+        [Test]
+        public void BetweenTheBandAndTheEdgeThePointsFallInAStraightLine()
+        {
+            // d = 750: 100 + 900 x (1500 - 750) / (1500 - 75) = 573.7 -> 570.
+            Assert.That(Points(8849 - 750, 8849, 1500), Is.EqualTo(570));
+            Assert.That(Points(8849 + 750, 8849, 1500), Is.EqualTo(570));
         }
 
         [Test]
         public void DistancePointsAreRoundedToTenBeforeTheMultiplier()
         {
-            // 1 - 100/1500 = 0.9333 -> 933.3 -> 930, times 1.5 = 1395.
-            Assert.That(Core.Rules.Scoring.ClosestValue(Cfg, 8949, 8849, 1500, 1), Is.EqualTo(930));
-            Assert.That(Core.Rules.Scoring.ClosestValue(Cfg, 8949, 8849, 1500, 1.5), Is.EqualTo(1395));
-            Assert.That(Core.Rules.Scoring.ClosestValue(Cfg, 8949, 8849, 1500, 2), Is.EqualTo(1860));
+            // d = 100: 100 + 900 x 1400 / 1425 = 984.2 -> 980, times 1.5 = 1470.
+            Assert.That(Points(8949, 8849, 1500), Is.EqualTo(980));
+            Assert.That(Points(8949, 8849, 1500, 1.5), Is.EqualTo(1470));
+            Assert.That(Points(8949, 8849, 1500, 2), Is.EqualTo(1960));
+        }
+
+        [Test]
+        public void CorrectMeansInsideTheToleranceEdgeIncluded()
+        {
+            Assert.That(Core.Rules.Scoring.ClosestValueCorrect(7349, 8849, 1500), Is.True);
+            Assert.That(Core.Rules.Scoring.ClosestValueCorrect(7348, 8849, 1500), Is.False);
+            // Decimal steps: 0.1 + 0.2 must still land on the edge.
+            Assert.That(Core.Rules.Scoring.ClosestValueCorrect(0.1 + 0.2, 0.6, 0.3), Is.True);
+            Assert.That(Points(0.1 + 0.2, 0.6, 0.3), Is.EqualTo(100));
+        }
+
+        [Test]
+        public void AZeroExactShareMeansOnlyTheExactAnswerScoresMaxPoints()
+        {
+            var cv = new ClosestValueConfig { ClosestBonus = 200, MinPoints = 100, ExactShare = 0 };
+            Assert.That(Core.Rules.Scoring.ClosestValue(Cfg, cv, 1989, 1989, 25, 1), Is.EqualTo(1000));
+            Assert.That(Core.Rules.Scoring.ClosestValue(Cfg, cv, 1990, 1989, 25, 1), Is.EqualTo(960));
+            Assert.That(Core.Rules.Scoring.ClosestValue(Cfg, cv, 2014, 1989, 25, 1), Is.EqualTo(100));
         }
 
         [Test]
@@ -104,7 +154,7 @@ namespace FamilyQuiz.Tests
             f.Value("c1", answer - off, 4000);
             f.Value("c2", answer + off, 1000);
             f.Value("c3", answer + off * 3, 1000);
-            int distance = Core.Rules.Scoring.ClosestValue(f.Config.Scoring, answer - off, answer, Tolerance(f), f.State.Question.Multiplier);
+            int distance = Core.Rules.Scoring.ClosestValue(f.Config.Scoring, f.Config.ClosestValue, answer - off, answer, Tolerance(f), f.State.Question.Multiplier);
             Assert.That(seats[0].Turn.Points, Is.EqualTo(distance + Bonus(f)));
             Assert.That(seats[1].Turn.Points, Is.EqualTo(distance + Bonus(f)));
             Assert.That(seats[2].Turn.Closest, Is.False);

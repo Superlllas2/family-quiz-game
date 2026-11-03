@@ -214,7 +214,7 @@ namespace FamilyQuiz.Tests
             var seats = f.SeatPlayers(2);
             f.Send(new ChangeSettings("c2", null, f.Config.Players.TimerMultiplierOptions.Max()));
             f.StartNextGame();
-            f.Advance(f.TopicVoteMs);
+            f.Advance(f.VoteEndMs);
             f.Advance(f.QuestionShowMs);
             Assert.That(seats[1].Turn.WindowMs, Is.GreaterThan(seats[0].Turn.WindowMs));
             return (f, seats);
