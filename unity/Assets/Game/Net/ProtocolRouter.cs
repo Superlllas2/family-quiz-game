@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using FamilyQuiz.Core;
 using FamilyQuiz.Core.Commands;
 using FamilyQuiz.Core.Events;
@@ -68,6 +69,12 @@ namespace FamilyQuiz.Net
                     return new PlayerRejoin(conn, Str(msg["token"]));
                 case "leave":
                     return new PlayerLeave(conn, Str(msg["inputId"]));
+                case "input" when Str(msg["kind"]) == "powerUp":
+                    return new UsePowerUp(conn, Str(msg["inputId"]), Num(msg["phaseId"]) ?? -1, Str(msg["powerUp"]), Str(msg["target"]));
+                case "input" when Str(msg["kind"]) == "effectCleared":
+                    return new ClearEffect(conn, Str(msg["inputId"]), Num(msg["phaseId"]) ?? -1, Str(msg["effect"]), Num(msg["ms"]));
+                case "poll":
+                    return new SubmitPoll(conn, Str(msg["inputId"]), Answers(msg["answers"] as JObject));
                 case "input":
                     var input = new SubmitAnswer(conn, Str(msg["inputId"]), Num(msg["phaseId"]) ?? -1, Str(msg["kind"]),
                         Int(msg["choice"]), Num(msg["ms"]), Int(msg["door"]), Dbl(msg["value"]), Bool(msg["answer"]));
@@ -86,9 +93,27 @@ namespace FamilyQuiz.Net
                     Send(conn, new PongMessage { T = msg["t"]?.DeepClone(), Tv = _clock.NowMs });
                     return null;
                 default:
-                    // poll (Day 4) and unknown types are ignored.
+                    // Unknown types are ignored.
                     return null;
             }
+        }
+
+        /// <summary>poll answers as sent: strings stay strings, whole numbers become long, other numbers double; the rest is left out. Null when not an object.</summary>
+        private static Dictionary<string, object> Answers(JObject answers)
+        {
+            if (answers == null) return null;
+            var dict = new Dictionary<string, object>();
+            foreach (var p in answers.Properties())
+            {
+                switch (p.Value.Type)
+                {
+                    case JTokenType.String: dict[p.Name] = (string)p.Value; break;
+                    case JTokenType.Integer: dict[p.Name] = (long)p.Value; break;
+                    case JTokenType.Float: dict[p.Name] = (double)p.Value; break;
+                }
+            }
+
+            return dict;
         }
 
         private void Send(string conn, object msg)

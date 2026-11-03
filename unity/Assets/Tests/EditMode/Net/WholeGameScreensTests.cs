@@ -27,6 +27,8 @@ namespace FamilyQuiz.Tests.NetScreens
             _f = new LobbyFixture();
             _sender = new CapturingRelaySender();
             _outbox = new PhoneOutbox(_f.Game, _sender, () => "ABCD", null);
+            // These games check the plain screen order; PowerUpScreensTests covers the pick and the effects.
+            _f.SetPowerUps(false);
         }
 
         private IReadOnlyList<IGameEvent> Do(IReadOnlyList<IGameEvent> events)
@@ -174,6 +176,11 @@ namespace FamilyQuiz.Tests.NetScreens
                     Do(_f.TrueFalse("c1", state.Race.Statement.Answer, 900));
                     Do(_f.TrueFalse("c2", !state.Race.Statement.Answer, 1200));
                     break;
+                case GamePhase.Poll:
+                    // c3 never answers the poll: it runs to poll.maxSeconds.
+                    Do(_f.Send(new SubmitPoll("c1", _f.NextInputId(), new Dictionary<string, object> { { "again", 0L } })));
+                    Do(_f.Send(new SubmitPoll("c2", _f.NextInputId(), new Dictionary<string, object>())));
+                    break;
             }
         }
 
@@ -225,6 +232,8 @@ namespace FamilyQuiz.Tests.NetScreens
             }
 
             list.Add(winner ? "results" : "watch");
+            list.Add("poll");
+            if (answers) list.Add("pollDone");
             list.Add("lobby");
             var merged = new List<string>();
             foreach (var id in list)

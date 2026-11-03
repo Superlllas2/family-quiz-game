@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using FamilyQuiz.Core;
+using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.Events;
 using FamilyQuiz.Core.State;
 using FamilyQuiz.Net.Protocol;
@@ -76,6 +77,16 @@ namespace FamilyQuiz.Net
                 case LastCallStarted lastCall:
                     SendScreen(_game.State.FindById(lastCall.PlayerId));
                     break;
+                case PowerUpUsed _:
+                    // The attacker's screen turns to waiting, and every other holder's target list may grey a target.
+                    SendScreenToEveryone();
+                    break;
+                case PowerUpApplied applied:
+                    SendEffect(_game.State.FindById(applied.TargetId), applied.PowerUp, applied.AttackerName);
+                    break;
+                case PollSubmitted poll:
+                    SendScreen(_game.State.FindById(poll.PlayerId));
+                    break;
                 case RosterChanged _:
                 case PlayerConnectionChanged _:
                 case ReadyChanged _: // every lobby screen shows everyone's ready mark (D76)
@@ -97,12 +108,37 @@ namespace FamilyQuiz.Net
             if (player == null) return;
             Send(conn, new WelcomeMessage { PlayerId = player.PlayerId, Token = player.Token, Room = _roomCode() });
             Send(conn, new SnapshotMessage { Player = _screens.Player(player), Screen = _screens.CurrentScreen(player) });
+            // A reload under a sabotage that was not cleared yet gets the overlay back.
+            var turn = player.Turn;
+            if (_game.State.Phase == GamePhase.Answer && turn != null && turn.Effect != null && !turn.EffectCleared && !turn.Locked)
+                Send(conn, new EffectMessage { Effect = turn.Effect, From = turn.EffectFrom, Params = EffectParams(turn.Effect) });
         }
 
         /// <summary>The player list or ready marks changed: every lobby screen shows them (D76). Game screens list nobody (D88).</summary>
         private void RefreshAfterRosterChange()
         {
-            if (_game.State.Phase == GamePhase.Lobby) SendScreenToEveryone();
+            // Game screens list nobody (D88), except the power up targets of the pick window.
+            var phase = _game.State.Phase;
+            if (phase == GamePhase.Lobby || phase == GamePhase.Reveal || phase == GamePhase.Scores) SendScreenToEveryone();
+        }
+
+        /// <summary>The "effect" message with its params from config (PROTOCOL.md section 4).</summary>
+        private void SendEffect(PlayerState target, string effect, string from)
+        {
+            if (target == null || !IsReachable(target)) return;
+            Send(target.Conn, new EffectMessage { Effect = effect, From = from, Params = EffectParams(effect) });
+        }
+
+        private object EffectParams(string effect)
+        {
+            var cfg = _game.Config.PowerUps;
+            switch (effect)
+            {
+                case PowerUpTypes.Freeze: return new Dictionary<string, object> { { "taps", cfg.Freeze.Taps } };
+                case PowerUpTypes.Slime: return new Dictionary<string, object> { { "blobs", cfg.Slime.Blobs } };
+                case PowerUpTypes.Fog: return new Dictionary<string, object> { { "seconds", cfg.Fog.Seconds } };
+                default: return new Dictionary<string, object>();
+            }
         }
 
         private void SendScreenToEveryone()

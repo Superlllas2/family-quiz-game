@@ -21,6 +21,8 @@ namespace FamilyQuiz.Net
         private const string WaitingValueKey = "screen.waiting.value";
         private const string TrueKey = "screen.trueFalse.true";
         private const string FalseKey = "screen.trueFalse.false";
+        private const string WaitingPowerUpKey = "screen.waiting.powerUp";
+        private const string PowerUpNameKeyPrefix = "screen.powerUps.";
 
         private readonly Game _game;
 
@@ -85,10 +87,42 @@ namespace FamilyQuiz.Net
                     }
 
                     break;
+                case GamePhase.Reveal:
+                case GamePhase.Scores:
+                    // The power up pick (one phaseId over Reveal and Scores): "result" for a holder with someone to aim
+                    // at, "waiting" once they used it, "watch" for everyone else (D88).
+                    if (player.UsedPowerUpInPhaseId == state.PhaseId && player.UsedPowerUp != null)
+                    {
+                        id = ScreenIds.Waiting;
+                        data = new WaitingScreenData { Locked = UsedPowerUpText(player) };
+                    }
+                    else if (player.HeldPowerUp != null && _game.PickWindowOpen && _game.PowerUpTargets(player).Count > 0)
+                    {
+                        id = ScreenIds.Result;
+                        data = Result(player);
+                    }
+                    else
+                    {
+                        id = ScreenIds.Watch;
+                        data = new WatchScreenData();
+                    }
+
+                    break;
+                case GamePhase.Poll:
+                    if (state.SubmittedPoll(player.PlayerId))
+                    {
+                        id = ScreenIds.PollDone;
+                        data = new WatchScreenData();
+                    }
+                    else
+                    {
+                        id = ScreenIds.Poll;
+                        data = Poll(player);
+                    }
+
+                    break;
                 case GamePhase.Intro:
                 case GamePhase.QuestionShow:
-                case GamePhase.Reveal: // and Scores: the power up pick ("result") comes on Day 4, for holders only
-                case GamePhase.Scores:
                 case GamePhase.RoundEnd:
                 case GamePhase.FinalIntro:
                 case GamePhase.RaceReveal:
@@ -145,6 +179,46 @@ namespace FamilyQuiz.Net
                 HeldPowerUp = player.HeldPowerUp,
                 TimerMultiplier = player.TimerMultiplier
             };
+        }
+
+        private ResultScreenData Result(PlayerState player)
+        {
+            var data = new ResultScreenData { PowerUp = player.HeldPowerUp };
+            foreach (var t in _game.PowerUpTargets(player))
+                data.Targets.Add(new PowerUpTargetDto { PlayerId = t.Target.PlayerId, Name = t.Target.Name, Available = t.Available });
+            return data;
+        }
+
+        /// <summary>"Заморозка → Мама" after a power up was used.</summary>
+        private string UsedPowerUpText(PlayerState player)
+        {
+            var strings = _game.Content.Strings;
+            if (strings == null) return player.UsedPowerUp;
+            var target = _game.State.FindById(player.UsedPowerUpTarget);
+            var values = new Dictionary<string, string>
+            {
+                { "powerUp", strings.Get(PowerUpNameKeyPrefix + player.UsedPowerUp, player.Lang) },
+                { "target", target?.Name ?? "" }
+            };
+            return strings.Format(WaitingPowerUpKey, player.Lang, values);
+        }
+
+        private PollScreenData Poll(PlayerState player)
+        {
+            var data = new PollScreenData();
+            foreach (var q in _game.Content.Poll)
+            {
+                var dto = new PollQuestionDto { Id = q.Id, Text = q.Text.Get(player.Lang), Kind = q.Kind };
+                if (q.IsChoice)
+                {
+                    dto.Options = new List<string>();
+                    foreach (var o in q.Options) dto.Options.Add(o.Get(player.Lang));
+                }
+
+                data.Questions.Add(dto);
+            }
+
+            return data;
         }
 
         private LobbyScreenData Lobby(PlayerState player)
