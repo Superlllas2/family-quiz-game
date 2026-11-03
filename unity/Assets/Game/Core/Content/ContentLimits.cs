@@ -32,5 +32,17 @@ namespace FamilyQuiz.Core.Content
 
         /// <summary>characters.json "color": a contrast ratio of at least 4.5 against <see cref="ChipTextColor"/>.</summary>
         public const double MinChipContrast = 4.5;
+
+        /// <summary>host_lines.json "text": at most 90 characters per language.</summary>
+        public const int HostLineTextMax = 90;
+
+        /// <summary>poll.json "text": one line on the phone (not set by docs/15_schemas.md; chosen like a question text).</summary>
+        public const int PollQuestionTextMax = 120;
+
+        /// <summary>poll.json "options": one button each (chosen like an answer option).</summary>
+        public const int PollOptionTextMax = 40;
+
+        /// <summary>A poll answer to a text question: at most 200 characters (PROTOCOL.md, "poll answers").</summary>
+        public const int PollTextAnswerMax = 200;
     }
 }

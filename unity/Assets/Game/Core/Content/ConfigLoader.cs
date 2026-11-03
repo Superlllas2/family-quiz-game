@@ -150,6 +150,26 @@ namespace FamilyQuiz.Core.Content
             Positive(e, "race.answer", race.Answer);
             Positive(e, "race.reveal", race.Reveal);
 
+            var pu = c.PowerUps;
+            if (pu.Types == null)
+                e.Add("powerUps.types", "must be a list");
+            else
+                foreach (var type in pu.Types)
+                    e.Check(PowerUpTypes.IsValid(type), "powerUps.types", "\"" + type + "\" must be freeze, slime or fog");
+            e.Check(TargetingModes.IsValid(pu.Targeting), "powerUps.targeting", "must be free or aimUp");
+            e.Check(pu.DrawChanceLeader >= 0 && pu.DrawChanceLeader <= 1, "powerUps.drawChanceLeader", "must be 0 to 1");
+            e.Check(pu.MaxHeld >= 1, "powerUps.maxHeld", "must be 1 or more");
+            e.Check(pu.MaxHitsPerQuestion >= 1, "powerUps.maxHitsPerQuestion", "must be 1 or more");
+            e.Check(pu.ImmunityQuestions >= 0, "powerUps.immunityQuestions", "must be 0 or more");
+            e.Check(pu.Freeze.Taps >= 1, "powerUps.freeze.taps", "must be 1 or more");
+            e.Check(pu.Slime.Blobs >= 1, "powerUps.slime.blobs", "must be 1 or more");
+            Positive(e, "powerUps.fog.seconds", pu.Fog.Seconds);
+
+            e.Check(c.Hosts.MinGapSeconds >= 0, "hosts.minGapSeconds", "must be 0 or more");
+            Positive(e, "hosts.bubbleSeconds", c.Hosts.BubbleSeconds);
+            e.Check(c.Hosts.StreakTrigger >= 1, "hosts.streakTrigger", "must be 1 or more");
+            Positive(e, "poll.maxSeconds", c.Poll.MaxSeconds);
+
             // lastPlaceCanWin (docs/02_show_flow.md) with the largest head start gap: leader maxHeadStart, last place 0.
             double maxHeadStart = Num(root, "race.maxHeadStart");
             double maxQuestions = Num(root, "race.maxQuestions");

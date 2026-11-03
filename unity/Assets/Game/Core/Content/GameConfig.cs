@@ -38,6 +38,15 @@ namespace FamilyQuiz.Core.Content
         [JsonProperty("net", Required = Required.Always)]
         public NetConfig Net { get; set; }
 
+        [JsonProperty("powerUps", Required = Required.Always)]
+        public PowerUpsConfig PowerUps { get; set; }
+
+        [JsonProperty("hosts", Required = Required.Always)]
+        public HostsConfig Hosts { get; set; }
+
+        [JsonProperty("poll", Required = Required.Always)]
+        public PollConfig Poll { get; set; }
+
         [JsonProperty("staging", Required = Required.Always)]
         public StagingConfig Staging { get; set; }
     }
