@@ -194,10 +194,11 @@ namespace FamilyQuiz.Tests.EventLog
         [Test]
         public void GameStartedHasTheSeedBeforeTheEvent()
         {
-            var line = LogOne(new GameStarted(1, 918273, GameStarted.ModeStandard, new[] { "p1", "p2", "p3" }, "ru"));
+            var line = LogOne(new GameStarted(1, 918273, GameStarted.ModeStandard, new[] { "p1", "p2", "p3" }, "ru",
+                new[] { "freeze", "slime", "fog" }, "free"));
             Assert.That(line.Properties().Select(p => p.Name).Take(5), Is.EqualTo(new[] { "t", "session", "build", "seed", "event" }));
-            AssertBody("{'seed':918273,'event':'gameStarted','game':1,'mode':'standard','players':['p1','p2','p3'],'settings':{'gameLang':'ru'}}",
-                line);
+            AssertBody("{'seed':918273,'event':'gameStarted','game':1,'mode':'standard','players':['p1','p2','p3'],"
+                       + "'settings':{'gameLang':'ru','powerUps':['freeze','slime','fog'],'targeting':'free'}}", line);
         }
 
         [Test]
@@ -334,6 +335,50 @@ namespace FamilyQuiz.Tests.EventLog
                 Assert.That(writer.LinesWritten, Is.EqualTo(0));
                 Assert.That(reported.Count, Is.EqualTo(1), "the first error is reported once");
             }
+        }
+
+        [Test]
+        public void PowerUpLines()
+        {
+            _log.OnEvents(new IGameEvent[]
+            {
+                new PowerUpDrawn("p4", "slime", 4, 1.0),
+                new PowerUpUsed("p4", "slime", "p1", 17),
+                new PowerUpApplied("p1", "p4", "Dad", "slime", 18),
+                new EffectCleared("p1", "slime", 2650)
+            });
+            var lines = Lines();
+            Assert.That(lines.Count, Is.EqualTo(3), "applied has no log line of its own");
+            AssertBody("{'event':'powerUpDrawn','playerId':'p4','powerUp':'slime','rank':4,'chance':1.0}", lines[0]);
+            AssertBody("{'event':'powerUpUsed','playerId':'p4','powerUp':'slime','target':'p1','phaseId':17}", lines[1]);
+            AssertBody("{'event':'effectCleared','playerId':'p1','effect':'slime','ms':2650}", lines[2]);
+        }
+
+        [Test]
+        public void ThePollLineHasNoPlayerId()
+        {
+            var answers = new List<KeyValuePair<string, object>>
+            {
+                new KeyValuePair<string, object>("fun", "The freeze on Dad"),
+                new KeyValuePair<string, object>("waiting", 1),
+                new KeyValuePair<string, object>("again", 0)
+            };
+            AssertBody("{'event':'poll','answers':{'fun':'The freeze on Dad','waiting':1,'again':0}}",
+                LogOne(new PollSubmitted("p2", answers)));
+        }
+
+        [Test]
+        public void HostLineLine()
+        {
+            _log.HostLine("k_newLeader_01", "konstantin", "newLeader");
+            AssertBody("{'event':'hostLine','lineId':'k_newLeader_01','host':'konstantin','trigger':'newLeader'}", Lines().Single());
+        }
+
+        [Test]
+        public void AnAbandonedGameHasNoRewards()
+        {
+            AssertBody("{'event':'gameEnded','game':1,'reason':'backToLobby','winner':null,'durationMs':5000}",
+                LogOne(new GameEnded(1, GameEnded.ReasonBackToLobby, null, 5000)));
         }
 
         [Test]

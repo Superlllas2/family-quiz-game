@@ -28,6 +28,11 @@ namespace FamilyQuiz.Telemetry
         public const string EventGameEnded = "gameEnded";
         public const string EventRaceStarted = "raceStarted";
         public const string EventError = "error";
+        public const string EventPowerUpDrawn = "powerUpDrawn";
+        public const string EventPowerUpUsed = "powerUpUsed";
+        public const string EventEffectCleared = "effectCleared";
+        public const string EventHostLine = "hostLine";
+        public const string EventPoll = "poll";
 
         /// <summary>playerLeft.reason when the phone went away and the seat is still held.</summary>
         public const string ReasonDisconnected = "disconnected";
@@ -55,6 +60,12 @@ namespace FamilyQuiz.Telemetry
                 ["room"] = room,
                 ["configVersion"] = _game.Config.ConfigVersion
             }));
+        }
+
+        /// <summary>Writes a hostLine line for a line a host said (Dialogue reports it through the composition root).</summary>
+        public void HostLine(string lineId, string host, string trigger)
+        {
+            Safe(() => _writer.Write(EventHostLine, new JObject { ["lineId"] = lineId, ["host"] = host, ["trigger"] = trigger }));
         }
 
         /// <summary>Writes an error line, for example where "content" or "relay".</summary>
@@ -149,7 +160,12 @@ namespace FamilyQuiz.Telemetry
                         ["game"] = started.Game,
                         ["mode"] = started.Mode,
                         ["players"] = started.PlayerIds != null ? JArray.FromObject(started.PlayerIds) : new JArray(),
-                        ["settings"] = new JObject { ["gameLang"] = started.GameLang }
+                        ["settings"] = new JObject
+                        {
+                            ["gameLang"] = started.GameLang,
+                            ["powerUps"] = JArray.FromObject(started.PowerUps),
+                            ["targeting"] = started.Targeting
+                        }
                     }, started.Seed);
                     break;
                 case PhaseStarted phase:
@@ -224,6 +240,40 @@ namespace FamilyQuiz.Telemetry
                         ["rank"] = score.Rank
                     });
                     break;
+                case PowerUpDrawn drawn:
+                    _writer.Write(EventPowerUpDrawn, new JObject
+                    {
+                        ["playerId"] = drawn.PlayerId,
+                        ["powerUp"] = drawn.PowerUp,
+                        ["rank"] = drawn.Rank,
+                        ["chance"] = Math.Round(drawn.Chance, 4)
+                    });
+                    break;
+                case PowerUpUsed used:
+                    _writer.Write(EventPowerUpUsed, new JObject
+                    {
+                        ["playerId"] = used.PlayerId,
+                        ["powerUp"] = used.PowerUp,
+                        ["target"] = used.TargetId,
+                        ["phaseId"] = used.PhaseId
+                    });
+                    break;
+                case EffectCleared cleared:
+                    _writer.Write(EventEffectCleared, new JObject
+                    {
+                        ["playerId"] = cleared.PlayerId,
+                        ["effect"] = cleared.Effect,
+                        ["ms"] = cleared.Ms
+                    });
+                    break;
+                case PollSubmitted poll:
+                {
+                    // Anonymous: never the player id (docs/15_schemas.md).
+                    var answers = new JObject();
+                    foreach (var pair in poll.Answers) answers[pair.Key] = JToken.FromObject(pair.Value);
+                    _writer.Write(EventPoll, new JObject { ["answers"] = answers });
+                    break;
+                }
                 case GameEnded ended:
                 {
                     var fields = new JObject
