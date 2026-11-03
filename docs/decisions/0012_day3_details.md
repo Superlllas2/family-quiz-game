@@ -2,6 +2,8 @@
 
 Date: Nov 3, 2026. Built on branch `day3-show`. None of these is a decision by Ilia yet: each is the reading the AI chose where the spec left room. Confirm, change or turn each into a D number. The AI never reopens a confirmed one on its own.
 
+Ilia answered on Nov 3, 2026: see `0013_day3_answers.md` (D79 to D88). Where a row here disagrees with 0013 (closest value "correct", the vote grace, the Intro prediction, places 2 and 3, the phone screens), 0013 holds.
+
 ## Show flow and phases
 
 | Detail | Where |

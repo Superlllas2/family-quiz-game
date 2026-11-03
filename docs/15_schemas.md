@@ -16,6 +16,7 @@ Check the content with `node tools/validate_content.mjs` after every edit. The T
 | `content/topics.json` | Topic list |
 | `content/questions.json` | Round questions (multiple choice, closest value) |
 | `content/race.json` | True or false statements for the final race |
+| `content/facts.json` | Interesting facts, the winner's reward on Results (D87) |
 | `content/host_lines.json` | Host text lines and their triggers |
 | `content/show_scripts.json` | The segments of each mode |
 | `content/poll.json` | Poll questions |
@@ -110,6 +111,20 @@ Example:
     "statement": { "ru": "У осьминога три сердца.", "en": "An octopus has three hearts." },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Octopus"
+  }
+]
+```
+
+## facts.json
+
+The winner's reward on Results (D87): one fact, shown on the winner's phone only. At least one fact; `text` at most 160 characters per language; `source` names where the fact can be checked. The fact ids given to winners are kept in the TV app's seen file (`<persistentDataPath>/seen.json`, `"facts"` next to `"questions"` and `"race"`), so a fact repeats only once every fact was given; "Reset seen questions" clears them too.
+
+```json
+[
+  {
+    "id": "f001",
+    "text": { "ru": "У осьминога три сердца и голубая кровь.", "en": "An octopus has three hearts and blue blood." },
+    "source": "Britannica, Octopus"
   }
 ]
 ```
@@ -279,7 +294,7 @@ Every event type, with its fields. `session` and `build` are shortened to `"..."
 {"t":49900,"session":"...","build":"...","event":"scoreChanged","playerId":"p2","delta":890,"score":2350,"rank":1}
 {"t":49950,"session":"...","build":"...","event":"hostLine","lineId":"k_newLeader_01","host":"konstantin","trigger":"newLeader"}
 {"t":520000,"session":"...","build":"...","event":"raceStarted","headStarts":{"p1":3,"p2":1,"p3":0},"lastPlaceCanWin":true}
-{"t":640000,"session":"...","build":"...","event":"gameEnded","game":1,"reason":"finished","winner":"p2","durationMs":617000}
+{"t":640000,"session":"...","build":"...","event":"gameEnded","game":1,"reason":"finished","winner":"p2","durationMs":617000,"factId":"f014","tags":{"p1":"slowest","p3":"darkHorse"}}
 {"t":700000,"session":"...","build":"...","event":"poll","answers":{"fun":"The freeze on Dad","waiting":1,"time":1,"again":0}}
 {"t":700500,"session":"...","build":"...","event":"error","where":"content","message":"questions.json geo_009: bad difficulty"}
 ```
@@ -294,12 +309,13 @@ Allowed values:
 | `phaseStarted.budgetMs`, `stagingExtraMs` | The phase budget in ms with any staging extra included, and that extra alone (`staging.extraSeconds`, `21_staging.md`); 0 for phases without one. Answer budgets are the base window, before timer multipliers |
 | `phaseEnded.reason` | `timeout`, `allDone`, `cancelled` (countdown), `abandoned` (Back to lobby), `skip` (developer phase skip key only) |
 | `gameEnded.reason` | `finished`, `backToLobby` |
+| `gameEnded.factId`, `tags` | Only with reason `finished`: the winner's fact id (or null) and playerId to funny tag id for every other player (D86, D87) |
 | `poll` | Never carries a player id |
 
 ### Derived numbers
 
 Computed by `tools/analyze_log`:
 
-- **Idle:** a moment is idle when no connected phone can send an answer, vote, prediction, power up pick or poll input. Idle share = idle time divided by game time (from `gameStarted` to `gameEnded`). Reported only, no pass or fail in game night 1.
+- **Idle:** a moment is idle when no connected phone can send an answer, vote, power up pick or poll input. Idle share = idle time divided by game time (from `gameStarted` to `gameEnded`). Reported only, no pass or fail in game night 1.
 - **Longest idle stretch** outside Intro, FinalIntro and Results. Starting limit 11 s (`19_acceptance.md`); a suggested starting value like every timer (D56).
 - Phase durations (real, from `phaseEnded.durationMs`, next to the budget and its staging extra), correct rate per question, power ups drawn versus used, who targets whom.

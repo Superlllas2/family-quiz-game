@@ -25,14 +25,19 @@ Rank is the position by total score, highest first. Equal scores share the bette
 ### Closest value
 
 - Each question has a `range` (min, max) shown on the slider and a `tolerance`.
-- `points = round(maxPoints × max(0, 1 − |guess − answer| / tolerance)) × roundMultiplier`, rounded to the nearest 10 before the multiplier.
+- Distance `d = |guess − answer|`, exact band `e = exactShare × tolerance` (`closestValue.exactShare` = 0.05) (D83):
+  - `d ≤ e`: `maxPoints` (1000).
+  - `e < d ≤ tolerance`: `minPoints + (maxPoints − minPoints) × (tolerance − d) / (tolerance − e)`, so the points fall in a straight line from 1000 to 100 (`closestValue.minPoints`) at the tolerance edge.
+  - `d > tolerance`: 0.
+  - Rounded to the nearest 10 before the multiplier, then times the round multiplier. Example (Everest, 8849 m, tolerance 1500 m): 8849 ± 75 m scores 1000, 750 m off 570, 1500 m off 100, 1501 m off 0.
+- A guess is correct when `d ≤ tolerance` (the edge included): it counts for streaks and "Most correct".
 - No speed component.
 - Closest bonus: the player or players with the smallest distance get +200 (`closestValue.closestBonus`) times the multiplier, even if their distance score is 0.
 - No answer: 0 and no bonus.
 
 ### Streaks
 
-A streak counts correct answers in a row in rounds (closest value counts as correct when it scores above 0). The streak is shown on the phone and the TV. It gives no points in game night 1; it exists for host lines (`hosts.streakTrigger` = 3) and later rules.
+A streak counts correct answers in a row in rounds (closest value counts as correct when the guess is within the tolerance, D83). The streak is shown on the TV only (D88). It gives no points in game night 1; it exists for host lines (`hosts.streakTrigger` = 3) and later rules.
 
 ## Power ups
 
@@ -89,7 +94,10 @@ See `02_show_flow.md`. Head start = `floor(maxHeadStart × (rankFromBottom / (pl
 
 - Game winner = final race winner.
 - Race ties: higher total score before the race, then faster total answer time in the race, then a seeded random pick.
-- Awards on the Results screen: "Most correct" (most correct answers in rounds) and "Best comeback" (biggest rank gain from the end of round 2 to the end of the race). Ties: both shown.
+- Race ties, total answer time: each statement counts the answer's `ms`, or the player's whole window when they did not answer (D81).
+- Results show one winner; there are no places 2 and 3 (D86). The winner's phone gets an interesting fact from `content/facts.json`, one not given before (kept in the seen file; once all were given, any) (D87).
+- Awards on the Results screen: "Most correct" (most correct answers in rounds) and "Best comeback" (biggest rank gain from the end of round 2, by shared rank, to the end of the race, by the race order; only a gain above 0 wins it) (D82). Ties: all shown.
+- Funny tags (D86): every player except the winner gets one tag, never the same tag twice in a game. A stat tag goes only to the player who really is the most of all players (the winner included); ties among untagged players are broken by the seeded random. The stat tags are tried in a seeded order: most wrong answers, slowest average answer (share of the window), most wrong answers faster than `scoring.fastAnswerMs`, the furthest closest value guess outside the tolerance, most last calls, most unanswered questions, most topic votes for a losing door, fewest race steps. Players left without one get a kind tag (dark horse, life of the party and others). Texts: `tv.tags.*` in `ui_strings.json`.
 
 ## Modes
 
@@ -126,6 +134,8 @@ Starting values for playtests. Config validation also checks that each staging a
 | `scoring.roundTo` | 10 | |
 | `scoring.fastAnswerMs` | 2000 | A correct answer faster than this can fire `fastAnswer` |
 | `closestValue.closestBonus` | 200 | |
+| `closestValue.minPoints` | 100 | Distance points at the tolerance edge (D83) |
+| `closestValue.exactShare` | 0.05 | The exact band as a share of the tolerance: this close or closer scores `scoring.maxPoints` (D83) |
 | `powerUps.enabled` | true | Default for the TV settings panel |
 | `powerUps.types` | freeze, slime, fog | Enabled list, default for the TV settings panel |
 | `powerUps.targeting` | free | free or aimUp, default for the TV settings panel |

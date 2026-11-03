@@ -1,6 +1,6 @@
 # PROTOCOL.md
 
-Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; avatar renamed to character in `decisions/0005_staging_answers.md`, version unchanged because nothing was built yet). Protocol version: **1**.
+Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; avatar renamed to character in `decisions/0005_staging_answers.md`, version unchanged because nothing was built yet; the phone became input only in `decisions/0013_day3_answers.md` (D88), version 2 because screen fields and screens were removed). Protocol version: **2**.
 
 The single source of truth for every message between the phone page, the relay and the TV app. Both sides are checked against this file. Changing it requires asking Ilia first (`CLAUDE.md`).
 
@@ -14,7 +14,7 @@ Phone page (browser)  <--WebSocket-->  Relay (Cloudflare)  <--WebSocket-->  TV a
 - The **TV app** owns every rule. It sends each phone the screen to draw.
 - The **phone page** draws screens and sends inputs.
 
-All messages are JSON text frames, UTF 8. Every message from the phone or the TV app carries `"v": 1`. There is no host phone: every player may send every message below.
+All messages are JSON text frames, UTF 8. Every message from the phone or the TV app carries `"v": 2`. There is no host phone: every player may send every message below.
 
 ## 2. Relay
 
@@ -49,13 +49,13 @@ Relay to TV app:
 ```json
 { "relay": "connected", "conn": "c_7f3a9b" }
 { "relay": "disconnected", "conn": "c_7f3a9b" }
-{ "relay": "message", "conn": "c_7f3a9b", "msg": { "v": 1, "type": "join", "...": "..." } }
+{ "relay": "message", "conn": "c_7f3a9b", "msg": { "v": 2, "type": "join", "...": "..." } }
 ```
 
 TV app to relay:
 
 ```json
-{ "to": "c_7f3a9b", "msg": { "v": 1, "type": "screen", "...": "..." } }
+{ "to": "c_7f3a9b", "msg": { "v": 2, "type": "screen", "...": "..." } }
 { "to": "all", "msg": { "...": "..." } }
 { "close": "c_7f3a9b", "code": 4002 }
 ```
@@ -75,8 +75,8 @@ The relay itself sends two messages to phones:
 | `tvBack` | The TV app reconnected with the right secret | Sends `rejoin` with its token; the TV app answers `welcome` and `snapshot` |
 
 ```json
-{ "v": 1, "type": "tvAway" }
-{ "v": 1, "type": "tvBack" }
+{ "v": 2, "type": "tvAway" }
+{ "v": 2, "type": "tvBack" }
 ```
 
 ### Limits
@@ -118,11 +118,10 @@ The TV app starts and stops the countdown itself, never on a tap alone (D76): in
 
 | kind | Extra fields | Example |
 | --- | --- | --- |
-| `vote` | `door` (0 to 3) | `{"v":1,"type":"input","inputId":"a1","phaseId":14,"kind":"vote","door":2}` |
-| `choice` | `choice` (0 to 3, index in the displayed order), `ms` | `{"v":1,"type":"input","inputId":"a2","phaseId":16,"kind":"choice","choice":1,"ms":3410}` |
-| `value` | `value` (number), `ms` | `{"v":1,"type":"input","inputId":"a3","phaseId":31,"kind":"value","value":1889,"ms":11200}` |
-| `trueFalse` | `answer` (true or false), `ms` | `{"v":1,"type":"input","inputId":"a4","phaseId":80,"kind":"trueFalse","answer":true,"ms":2100}` |
-| `prediction` | `playerId` | Intro prediction |
+| `vote` | `door` (0 to 3) | `{"v":2,"type":"input","inputId":"a1","phaseId":14,"kind":"vote","door":2}` |
+| `choice` | `choice` (0 to 3, index in the displayed order), `ms` | `{"v":2,"type":"input","inputId":"a2","phaseId":16,"kind":"choice","choice":1,"ms":3410}` |
+| `value` | `value` (number), `ms` | `{"v":2,"type":"input","inputId":"a3","phaseId":31,"kind":"value","value":1889,"ms":11200}` |
+| `trueFalse` | `answer` (true or false), `ms` | `{"v":2,"type":"input","inputId":"a4","phaseId":80,"kind":"trueFalse","answer":true,"ms":2100}` |
 | `powerUp` | `powerUp` (`freeze`, `slime`, `fog`), `target` (playerId) | During Reveal and Scores (one phaseId) |
 | `effectCleared` | `effect`, `ms` (time to clear) | When a sabotage overlay is cleared, for telemetry |
 
@@ -135,7 +134,7 @@ The TV app starts and stops the countdown itself, never on a tap alone (D76): in
 An object from poll question id to the answer: a string for `text` questions (max 200 characters), an option index (0 based) for `choice` questions. Unanswered questions are left out.
 
 ```json
-{ "v": 1, "type": "poll", "inputId": "p9", "answers": { "fun": "The freeze on Dad", "waiting": 1, "again": 0 } }
+{ "v": 2, "type": "poll", "inputId": "p9", "answers": { "fun": "The freeze on Dad", "waiting": 1, "again": 0 } }
 ```
 
 ## 4. TV app to phone messages
@@ -179,21 +178,23 @@ An object from poll question id to the answer: a string for `text` questions (ma
 
 All texts are already in the player's language. Screens not listed have `data: {}`.
 
+The phone is an input device (D88): it shows a screen with a decision (join, character, Ready, a vote, an answer, a power up pick, the poll, settings) and `watch` the rest of the time. Questions, statements, results, ranks, scores and the race track are on the TV only.
+
+Which screen each phase sends: Lobby `lobby` (or `join`, `pickCharacter`), StartCountdown `countdown`, Intro `watch`, TopicVote `topicVote` then `waiting`, QuestionShow `watch`, Answer the answer screen then `waiting`, Reveal and Scores `watch` (or `result` with a power up), RoundEnd `watch`, FinalIntro `watch`, RaceQuestion `answerTrueFalse` then `waiting`, RaceReveal `watch`, Results `results` to the winner and `watch` to everyone else, Poll `poll` then `pollDone`.
+
 | id | data |
 | --- | --- |
 | `lobby` | `players`: list of `{playerId, name, characterId, ready}` (`ready`: bool), `ready` (bool: this player is ready), `enoughPlayers` (bool: `players.min` or more players connected) |
 | `pickCharacter` | `taken`: list of character ids taken by other players, `current`: this player's character id |
 | `countdown` | `text` (`endsInMs` carries the countdown) |
-| `getReady` | `text`, optional `prediction`: list of `{playerId, name, characterId}` |
+| `watch` | none: "look at the TV" between inputs (D88) |
 | `topicVote` | `doors`: list of 4 `{title}` |
-| `answerChoice` | `question`, `options`: list of 4 strings in display order, `windowMs` (the player's personal window) |
-| `answerSlider` | `question`, `min`, `max`, `step`, `unit`, `windowMs` |
-| `answerTrueFalse` | `statement`, `windowMs` |
-| `waiting` | `locked`: text of what was locked, `pending`: list of `{name, characterId}` still answering |
-| `result` | `correct` (bool), `points`, `correctText`, `streak`, `rank`, `powerUp` (or null), `targets`: list of `{playerId, name, available}` |
-| `roundEnd` | `rank`, `score`, `nextRound` |
-| `raceResult` | `correct`, `position`, `finish` |
-| `results` | `place`, `correctCount`, `awards`: list of strings |
+| `answerChoice` | `options`: list of 4 strings in display order, `windowMs` (the player's personal window). The question is on the TV only |
+| `answerSlider` | `min`, `max`, `step`, `unit`, `windowMs`. The question is on the TV only |
+| `answerTrueFalse` | `windowMs`. The statement is on the TV only |
+| `waiting` | `locked`: text of what was locked |
+| `result` | `powerUp`, `targets`: list of `{playerId, name, available}`. Sent in Reveal and Scores only to a player holding a power up (power ups come on Day 4); everyone else gets `watch` |
+| `results` | `fact`: the winner's reward fact (D87). Sent only to the winner; everyone else gets `watch` |
 | `poll` | `questions`: list of `{id, text, kind, options}` (kinds in `15_schemas.md`) |
 | `error` | `text` |
 
@@ -214,8 +215,9 @@ Characters come from `content/characters.json` (name and personality line in bot
 - The TV app owns time. Phase ends are decided only by the core clock.
 - Each player has a personal deadline in answer phases: window times their timer multiplier, cut to `timers.lastCall` at last call (`03_rules.md`).
 - Scoring uses the phone's `ms`, clamped to 0 to the player's personal window (`windowMs`). The TV app accepts an input only if it arrives before the player's personal deadline plus `net.inputGraceMs` (500 ms) of grace for network delay; later inputs get `closed`.
+- Votes get the same grace (D84): the vote timer (`timers.topicVote`, the `endsInMs` of `topicVote`) plus `net.inputGraceMs`. The vote still ends the moment every connected player voted.
 - `ping`/`pong` measures round trip time per phone for telemetry. Game night 1 does not need clock offset correction.
 
 ## 7. Versioning
 
-Every message carries `v`. The TV app refuses a phone with a different major version with `refused` reason `badVersion` and the phone shows "Обнови страницу / Please reload the page". Adding an optional field does not change `v`; renaming or removing one does. This rule applies from the first build: the Nov 2 revision removed the `host` message and the `isHost`, `canSkip`, `canContinue` and `canChoose` fields before any code existed, so the version stays 1.
+Every message carries `v`. Version 2 (Nov 3, 2026) removed the `prediction` input, the `getReady`, `roundEnd` and `raceResult` screens and the question and result fields of the phone screens (D88). The TV app refuses a phone with a different major version with `refused` reason `badVersion` and the phone shows "Обнови страницу / Please reload the page". Adding an optional field does not change `v`; renaming or removing one does. This rule applies from the first build: the Nov 2 revision removed the `host` message and the `isHost`, `canSkip`, `canContinue` and `canChoose` fields before any code existed, so the version stays 1.
