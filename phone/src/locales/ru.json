@@ -48,7 +48,6 @@
   "result.wrong": "Мимо",
   "result.streak": "Серия: {streak}",
   "result.rank": "Место: {rank}",
-  "result.correctText": "Правильный ответ: {text}",
   "results.place": "Твоё место: {place}",
   "results.correctCount": "Верных ответов: {count}",
   "results.awards": "Награды",

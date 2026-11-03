@@ -91,7 +91,7 @@ export function ResultScreen(props: Props) {
       <p class={r.correct ? 'result-head good' : 'result-head bad'}>
         {r.correct ? t(lang, 'result.correct', { points: r.points }) : t(lang, 'result.wrong')}
       </p>
-      {r.correctText ? <p class="big-text">{t(lang, 'result.correctText', { text: r.correctText })}</p> : null}
+      {r.correctText ? <p class="big-text">{r.correctText}</p> : null}
       <div class="result-stats">
         {r.streak > 0 ? <span>{t(lang, 'result.streak', { streak: r.streak })}</span> : null}
         {r.rank !== null ? <span>{t(lang, 'result.rank', { rank: r.rank })}</span> : null}

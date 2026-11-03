@@ -48,7 +48,6 @@
   "result.wrong": "Wrong",
   "result.streak": "Streak: {streak}",
   "result.rank": "Rank: {rank}",
-  "result.correctText": "Answer: {text}",
   "results.place": "Your place: {place}",
   "results.correctCount": "Correct answers: {count}",
   "results.awards": "Awards",
