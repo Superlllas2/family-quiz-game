@@ -1,5 +1,7 @@
-// End to end check of the Day 2 skeleton: three scripted phones tap Ready (D76), play a whole game against the live
-// relay and a running TV app, land back in the Lobby, and one leaves.
+// End to end check of the Day 3 show: three scripted phones tap Ready (D76) and play a whole Standard show against
+// the live relay and a running TV app: the Intro prediction (first game since the TV app started only), 4 rounds of
+// topic vote and 4 questions (3 multiple choice, 1 closest value on the slider), RoundEnd, the final race with true or
+// false, Results, then back in the Lobby; one leaves.
 // Usage: node tools/e2e_game.mjs <ROOM> [relayHost] [--dump <file>]  (start the TV app first; ROOM is the code on the TV)
 // --dump writes every text frame the phones received to a JSON file (the phone page tests parse such a capture).
 import { writeFileSync } from "node:fs";
@@ -33,6 +35,17 @@ function phone(label) {
     acked(m) { const inputId = `${label}${nextInput++}`; p.send({ ...m, inputId }); return p.wait((x) => x.type === "ack" && x.inputId === inputId); },
     // The next screen message with this id that arrives after `since` (performance.now()).
     screen(id, since = 0, ms = 30000) { return p.wait((x) => x.type === "screen" && x.id === id && x.at >= since, ms); },
+    // Reading the screens in order: the next screen after the cursor that is not a resend of the last one (same
+    // phaseId and id: last call, a waiting list update). Null after `ms` without one.
+    cursor: 0,
+    last: null,
+    async nextScreen(ms = 45000) {
+      const fresh = (x) => x.type === "screen" && inbox.indexOf(x) >= p.cursor
+        && !(p.last && x.phaseId === p.last.phaseId && x.id === p.last.id);
+      const s = await p.wait(fresh, ms);
+      if (s) { p.cursor = inbox.indexOf(s) + 1; p.last = s; }
+      return s;
+    },
     wait(pred, ms = 5000) {
       const hit = inbox.find(pred);
       if (hit) return Promise.resolve(hit);
@@ -88,51 +101,177 @@ ok(ack?.ok === true, "C taps Ready again");
 cd = await a.screen("countdown", t);
 ok(cd && cd.endsInMs > 2000, `the countdown runs again (${cd?.endsInMs} ms)`);
 
-let questions = 0;
-for (;;) {
-  const since = performance.now();
-  const ready = await Promise.race([a.screen("getReady", since - 50), a.screen("results", since - 50)]);
-  if (!ready || ready.id === "results") break;
-  questions++;
-  const ans = await a.screen("answerChoice", ready.at);
-  const ansB = await b.screen("answerChoice", ready.at);
-  const ansC = await c.screen("answerChoice", ready.at);
-  ok(ans && ans.data.options.length === 4 && ansB.phaseId === ans.phaseId, `Q${questions}: answerChoice with 4 options, same phaseId on every phone`);
-  ok(ansB.data.question !== ans.data.question || ans.data.question === ansB.data.question, `Q${questions}: A (ru) "${ans.data.question}" / B (en) "${ansB.data.question}"`);
-  // A answers fast, B answers 2 s later; C answers only on odd questions (even ones test last call).
-  let r = await a.acked({ type: "input", phaseId: ans.phaseId, kind: "choice", choice: 0, ms: 800 });
-  ok(r?.ok, `Q${questions}: A locked in`);
-  const waiting = await a.screen("waiting", ans.at);
-  ok(waiting?.data?.pending?.length === 2, `Q${questions}: A waits for ${waiting?.data?.pending?.length} players, locked "${waiting?.data?.locked}"`);
-  await sleep(2000);
-  r = await b.acked({ type: "input", phaseId: ansB.phaseId, kind: "choice", choice: 1, ms: 2800 });
-  ok(r?.ok, `Q${questions}: B locked in`);
-  let lastLock = performance.now();
-  if (questions % 2 === 0) {
-    const lastCall = await c.wait((m) => m.type === "screen" && m.id === "answerChoice" && m.phaseId === ansC.phaseId && m.at > lastLock - 300, 3000);
-    ok(lastCall && lastCall.endsInMs <= 5000, `Q${questions}: C gets last call, same phaseId, ${lastCall?.endsInMs} ms left`);
-    const res = await c.screen("result", lastLock, 8000);
-    ok(res && res.data.points === 0 && res.at - lastLock < 5000 + 500 + 800, `Q${questions}: C (no answer) gets result after ${Math.round(res?.at - lastLock)} ms`);
-  } else {
-    await sleep(500);
-    lastLock = performance.now();
-    r = await c.acked({ type: "input", phaseId: ansC.phaseId, kind: "choice", choice: 2, ms: 3300 });
-    ok(r?.ok, `Q${questions}: C locked in`);
-    const res = await c.screen("result", lastLock - 50, 5000);
-    ok(res && res.at - lastLock < 400, `Q${questions}: everyone locked in, result ${Math.round(res?.at - lastLock)} ms after the last tap was sent (includes the network round trip)`);
-  }
-  const resA = await a.screen("result", lastLock - 50);
-  ok(resA && typeof resA.data.points === "number", `Q${questions}: A result ${resA?.data?.correct ? "correct" : "wrong"} ${resA?.data?.points}, rank ${resA?.data?.rank}, "${resA?.data?.correctText}"`);
-  const stale = await a.acked({ type: "input", phaseId: ans.phaseId, kind: "choice", choice: 0, ms: 100 });
-  ok(stale?.ok === false, `Q${questions}: an input for the closed Answer is refused (${stale?.reason})`);
+// The slider's start value, as the phone page computes it (phone/src/sliderValue.ts): the value on the grid
+// min + k * step nearest the middle of the range, the upper one on a tie.
+function sliderMiddle(min, max, step) {
+  const s = step > 0 ? step : 1;
+  const last = max > min ? Math.floor((max - min) / s + 1e-9) : 0;
+  const k = Math.min(last, Math.max(0, Math.round((max - min) / 2 / s)));
+  const decimals = (x) => { const t = String(x); return t.includes("e") ? 10 : t.includes(".") ? Math.min(10, t.length - t.indexOf(".") - 1) : 0; };
+  return Number((min + k * s).toFixed(Math.max(decimals(min), decimals(s))));
 }
-ok(questions === 4, `4 questions played (${questions})`);
+// How the phone writes a value: no thousands separator, at most 2 decimals (the TV writes it the same way).
+const valueText = (v) => String(Number(v.toFixed(2)) || 0);
 
-const results = await a.screen("results", 0, 40000);
-ok(!!results, `results on A: place ${results?.data?.place}, ${results?.data?.correctCount} correct, awards ${JSON.stringify(results?.data?.awards)}`);
-const back = await b.screen("lobby", results.at, 30000);
+// Each phone plays the show on its own, screen by screen, with its own timing: A always answers first, B after
+// 1 s, C after 2 s; C leaves its second question open to get a last call.
+async function play(p, i) {
+  const log = { questions: 0, sliders: 0, roundEnds: [], race: 0, position: null, finish: null, intro: false, results: null, lobby: null };
+  let lastAnswer = null; // the input sent in the last Answer, resent on its result to check it is refused
+  let expectZero = false;
+  const say = (m) => `${p.label} ${m}`;
+  for (;;) {
+    const s = await p.nextScreen();
+    if (!s) { ok(false, say(`gets no new screen for 45 s (last: ${p.last?.id})`)); return log; }
+    switch (s.id) {
+      case "countdown":
+      case "waiting":
+        break;
+      case "getReady": {
+        const players = s.data.prediction;
+        if (!Array.isArray(players)) break; // QuestionShow (the question) and FinalIntro have no prediction
+        log.intro = true;
+        ok(players.length === 3 && players.every((x) => typeof x.playerId === "string" && typeof x.characterId === "number"),
+          say(`Intro: prediction lists ${players.length} players, text "${s.data.text}"`));
+        const pick = players[(i + 1) % players.length];
+        let r = await p.acked({ type: "input", phaseId: s.phaseId, kind: "prediction", playerId: pick.playerId });
+        ok(r?.ok === true, say(`predicts ${pick.name} wins`));
+        if (i === 0) {
+          r = await p.acked({ type: "input", phaseId: s.phaseId, kind: "prediction", playerId: players[0].playerId });
+          ok(r?.ok === false && r.reason === "invalid", say(`a second prediction is refused (${r?.reason})`));
+          await sleep(300);
+          ok(!p.inbox.some((m) => m.type === "screen" && m.phaseId === s.phaseId && m.id !== "getReady"), say("getReady stays after the prediction (no waiting screen)"));
+        }
+        break;
+      }
+      case "topicVote": {
+        ok(Array.isArray(s.data.doors) && s.data.doors.length === 4 && s.data.doors.every((d) => typeof d.title === "string" && d.title !== ""),
+          say(`round ${log.roundEnds.length + 1}: topicVote doors ${JSON.stringify(s.data.doors.map((d) => d.title))}`));
+        await sleep(i * 700);
+        const r = await p.acked({ type: "input", phaseId: s.phaseId, kind: "vote", door: i % 4 });
+        ok(r?.ok === true, say(`votes for door ${i % 4}`));
+        if (i === 0) {
+          const w = await p.wait((m) => m.type === "screen" && m.id === "waiting" && m.phaseId === s.phaseId, 3000);
+          ok(w?.data?.pending?.length === 2, say(`waits for ${w?.data?.pending?.length} voters, locked "${w?.data?.locked}"`));
+        }
+        break;
+      }
+      case "answerChoice": {
+        log.questions++;
+        const q = log.questions;
+        ok(s.data.options?.length === 4 && s.data.windowMs > 0, say(`Q${q}: answerChoice with 4 options, "${s.data.question}"`));
+        if (i === 2 && q === 2) {
+          // C leaves this one open: once A and B locked in, C gets a last call with the same phaseId.
+          const lastCall = await p.wait((m) => m.type === "screen" && m.id === "answerChoice" && m.phaseId === s.phaseId && m !== s, 20000);
+          ok(lastCall && lastCall.endsInMs <= 5000, say(`Q${q}: gets last call, same phaseId, ${lastCall?.endsInMs} ms left`));
+          expectZero = true;
+          break;
+        }
+        await sleep(i * 1000);
+        const msg = { type: "input", phaseId: s.phaseId, kind: "choice", choice: i, ms: 800 + i * 1000 };
+        const r = await p.acked(msg);
+        ok(r?.ok === true, say(`Q${q}: locked in choice ${i}`));
+        lastAnswer = msg;
+        if (i === 0) {
+          const w = await p.wait((m) => m.type === "screen" && m.id === "waiting" && m.phaseId === s.phaseId, 3000);
+          ok(w?.data?.pending?.length === 2, say(`Q${q}: waits for ${w?.data?.pending?.length} players, locked "${w?.data?.locked}"`));
+        }
+        break;
+      }
+      case "answerSlider": {
+        log.questions++;
+        log.sliders++;
+        const q = log.questions;
+        const { min, max, step, unit, windowMs } = s.data;
+        ok(typeof min === "number" && typeof max === "number" && max > min && step > 0 && windowMs > 0,
+          say(`Q${q}: answerSlider from ${min} to ${max}, step ${step}, unit "${unit}", "${s.data.question}"`));
+        const value = sliderMiddle(min, max, step);
+        const k = (value - min) / step;
+        ok(value >= min && value <= max && Math.abs(k - Math.round(k)) < 1e-6, say(`Q${q}: the middle ${value} is on the step grid`));
+        if (i === 1) {
+          const r = await p.acked({ type: "input", phaseId: s.phaseId, kind: "value", value: max + step, ms: 500 });
+          ok(r?.ok === false && r.reason === "invalid", say(`Q${q}: a value outside the range is refused (${r?.reason})`));
+        }
+        await sleep(i * 1000);
+        const msg = { type: "input", phaseId: s.phaseId, kind: "value", value, ms: 1500 + i * 1000 };
+        const r = await p.acked(msg);
+        ok(r?.ok === true, say(`Q${q}: locked in ${value}`));
+        lastAnswer = msg;
+        if (i === 0) {
+          const w = await p.wait((m) => m.type === "screen" && m.id === "waiting" && m.phaseId === s.phaseId, 3000);
+          ok(typeof w?.data?.locked === "string" && w.data.locked.startsWith(valueText(value)), say(`Q${q}: waiting shows the value, locked "${w?.data?.locked}"`));
+        }
+        break;
+      }
+      case "result":
+        if (expectZero) {
+          ok(s.data.points === 0, say(`(no answer) gets ${s.data.points} points`));
+          expectZero = false;
+        } else if (i === 0) {
+          ok(typeof s.data.points === "number", say(`result ${s.data.correct ? "correct" : "wrong"} ${s.data.points}, rank ${s.data.rank}, "${s.data.correctText}"`));
+          if (lastAnswer) {
+            const stale = await p.acked({ ...lastAnswer, ms: 100 });
+            ok(stale?.ok === false, say(`an input for the closed Answer is refused (${stale?.reason})`));
+          }
+        }
+        lastAnswer = null;
+        break;
+      case "roundEnd":
+        log.roundEnds.push(s.data.nextRound ?? null);
+        ok(typeof s.data.rank === "number" && typeof s.data.score === "number",
+          say(`round end: rank ${s.data.rank}, score ${s.data.score}, next round ${s.data.nextRound}`));
+        break;
+      case "answerTrueFalse": {
+        log.race++;
+        ok(typeof s.data.statement === "string" && s.data.statement !== "" && s.data.windowMs > 0, say(`race ${log.race}: "${s.data.statement}"`));
+        await sleep(i * 500);
+        const r = await p.acked({ type: "input", phaseId: s.phaseId, kind: "trueFalse", answer: i % 2 === 0, ms: 900 + i * 500 });
+        ok(r?.ok === true, say(`race ${log.race}: answers ${i % 2 === 0}`));
+        break;
+      }
+      case "raceResult": {
+        const { correct, position, finish } = s.data;
+        ok(typeof correct === "boolean" && finish > 0 && position >= 0 && position <= finish,
+          say(`race ${log.race}: ${correct ? "right" : "missed"}, step ${position} of ${finish}`));
+        log.position = position;
+        log.finish = finish;
+        break;
+      }
+      case "results":
+        log.results = s;
+        ok(true, say(`results: place ${s.data.place}, ${s.data.correctCount} correct, awards ${JSON.stringify(s.data.awards)}`));
+        break;
+      case "lobby":
+        ok(!!log.results, say("is back in the lobby after Results"));
+        log.lobby = s;
+        return log;
+      default:
+        ok(false, say(`gets an unexpected screen ${s.id}`));
+        break;
+    }
+  }
+}
+
+// Each phone reads the show from its own countdown screen on (a lobby update just before it is not the end).
+for (const p of phones) {
+  const start = await p.screen("countdown", t);
+  ok(!!start, `${p.label} sees the countdown`);
+  p.cursor = start ? p.inbox.indexOf(start) + 1 : p.inbox.length;
+  p.last = start;
+}
+const logs = await Promise.all(phones.map((p, i) => play(p, i)));
+const [logA] = logs;
+console.log(logA.intro ? "(the Intro ran: first game since the TV app started)" : "(no Intro: the TV app already played a game)");
+ok(logA.questions === 16 && logA.sliders === 4, `16 questions played, 4 of them closest value (${logA.questions}, ${logA.sliders})`);
+ok(JSON.stringify(logA.roundEnds) === "[2,3,4,null]", `4 round ends, next rounds ${JSON.stringify(logA.roundEnds)}`);
+const furthest = Math.max(...logs.map((l) => l.position ?? -1));
+ok(logA.race >= 1 && logA.race <= 12 && (furthest >= logA.finish || logA.race === 12),
+  `the race ends at the finish or after 12 questions (${logA.race} questions, furthest step ${furthest} of ${logA.finish})`);
+
+const results = logA.results;
+const back = logs[1].lobby;
 ok(back && back.data.ready === false && readyMarks(back).every((r) => r === false), `after Results, B is back in the lobby, nobody ready ${JSON.stringify(readyMarks(back))}`);
-const zero = await a.wait((m) => m.type === "player" && m.at >= results.at && m.player?.score === 0, 30000);
+const zero = await a.wait((m) => m.type === "player" && m.at >= (results?.at ?? 0) && m.player?.score === 0, 30000);
 ok(!!zero, "A's score is back to 0");
 
 t = performance.now();
