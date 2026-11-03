@@ -1,6 +1,7 @@
 // Screen `answerSlider` (04 closest value, 06): a horizontal slider across the full width from min to max, a big
-// number above it with the unit, minus and plus for one step, and Lock. The slider starts at the grid value nearest
-// the middle and only ever holds grid values (sliderValue.ts). Lock sends the value; no changing after Lock.
+// number above it with the unit, minus and plus for one step, and Lock. No question text: it is on the TV (D88).
+// The slider starts at the grid value nearest the middle and only ever holds grid values (sliderValue.ts). Lock sends
+// the value; no changing after Lock.
 // The answer clock starts when this screen is first drawn for a phaseId; a last call (same phaseId) keeps both the
 // clock and the slider where they are (app.tsx mounts this screen with key = phaseId). The countdown is in the top bar.
 
@@ -42,7 +43,6 @@ export function AnswerSliderScreen(props: Props) {
 
   return (
     <div class="body slider-screen">
-      {d.question ? <p class="slider-question">{d.question}</p> : null}
       <p class="slider-value">
         <span class="slider-number">{shown}</span>
         {unit ? <span class="slider-unit">{unit}</span> : null}

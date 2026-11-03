@@ -62,7 +62,7 @@ describe('answer clock and drawn screens', () => {
   it('screens without options do not start the clock', () => {
     let now = 0;
     const clock = new AnswerClock(() => now);
-    screenDrawn(clock, { phaseId: 15, id: 'getReady', endsInMs: 4000, data: {} });
+    screenDrawn(clock, { phaseId: 15, id: 'watch', endsInMs: 4000, data: {} });
     screenDrawn(clock, { phaseId: 16, id: 'waiting', endsInMs: 4000, data: {} });
     screenDrawn(clock, { phaseId: 17, id: 'topicVote', endsInMs: 10000, data: {} });
     now = 1000;

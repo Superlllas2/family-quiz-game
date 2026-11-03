@@ -31,7 +31,7 @@ class FakeSocket implements SocketLike {
   }
 
   receive(msg: Record<string, unknown>): void {
-    this.onmessage?.({ data: JSON.stringify({ v: 1, ...msg }) });
+    this.onmessage?.({ data: JSON.stringify({ v: 2, ...msg }) });
   }
 
   serverClose(code: number): void {
@@ -114,7 +114,7 @@ describe('session: connection and reconnects (PROTOCOL.md sections 2, 4, 5)', ()
     expect(status().kind).toBe('joining');
     expect(lastSocket().url).toBe('wss://relay.test/ws/phone?room=ABCD');
     lastSocket().open();
-    expect(lastSocket().sent).toEqual([{ v: 1, type: 'join', name: 'Mama', lang: 'en' }]);
+    expect(lastSocket().sent).toEqual([{ v: 2, type: 'join', name: 'Mama', lang: 'en' }]);
     lastSocket().receive({ type: 'welcome', playerId: 'p1', token: 'tok123', room: 'ABCD' });
     expect(status().kind).toBe('online');
     expect(tokens.get('ABCD')).toBe('tok123');
@@ -144,7 +144,7 @@ describe('session: connection and reconnects (PROTOCOL.md sections 2, 4, 5)', ()
     expect(status().kind).toBe('reconnecting');
     expect(sockets).toHaveLength(1);
     lastSocket().open();
-    expect(lastSocket().sent).toEqual([{ v: 1, type: 'rejoin', token: 'tok123' }]);
+    expect(lastSocket().sent).toEqual([{ v: 2, type: 'rejoin', token: 'tok123' }]);
     lastSocket().receive({ type: 'welcome', playerId: 'p1', token: 'tok123', room: 'ABCD' });
     expect(status().kind).toBe('online');
   });
@@ -207,8 +207,8 @@ describe('session: connection and reconnects (PROTOCOL.md sections 2, 4, 5)', ()
     expect(noPings().map((m) => m.type)).toEqual(['join']); // no rejoin while the TV is away
     sock.receive({ type: 'tvBack' });
     expect(noPings()).toEqual([
-      { v: 1, type: 'join', name: 'Mama', lang: 'ru' },
-      { v: 1, type: 'rejoin', token: 'tok123' },
+      { v: 2, type: 'join', name: 'Mama', lang: 'ru' },
+      { v: 2, type: 'rejoin', token: 'tok123' },
     ]);
     sock.receive({ type: 'welcome', playerId: 'p1', token: 'tok123', room: 'ABCD' });
     expect(status().kind).toBe('online');
@@ -296,7 +296,7 @@ describe('session: connection and reconnects (PROTOCOL.md sections 2, 4, 5)', ()
       // Joining again reuses the open socket.
       session.join('ABCD', 'Papa', 'ru');
       expect(sockets).toHaveLength(1);
-      expect(lastSocket().sent[1]).toEqual({ v: 1, type: 'join', name: 'Papa', lang: 'ru' });
+      expect(lastSocket().sent[1]).toEqual({ v: 2, type: 'join', name: 'Papa', lang: 'ru' });
     },
   );
 
@@ -311,7 +311,7 @@ describe('session: connection and reconnects (PROTOCOL.md sections 2, 4, 5)', ()
   it('sends ping every 5 s while connected, and stops after close', () => {
     const sock = joinAndWelcome();
     vi.advanceTimersByTime(5000);
-    expect(sock.sent[sock.sent.length - 1]).toMatchObject({ v: 1, type: 'ping' });
+    expect(sock.sent[sock.sent.length - 1]).toMatchObject({ v: 2, type: 'ping' });
     expect(typeof sock.sent[sock.sent.length - 1].t).toBe('number');
     vi.advanceTimersByTime(5000);
     expect(sock.types().filter((x) => x === 'ping')).toHaveLength(2);
