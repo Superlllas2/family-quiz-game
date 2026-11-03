@@ -28,6 +28,12 @@ namespace FamilyQuiz.Presentation
         /// <summary>Leaderboard rows take this long to move to their new place.</summary>
         public const float RowMoveSeconds = 0.7f;
 
+        /// <summary>Race chips wait this long on RaceReveal before they step forward (the right answer shows first).</summary>
+        public const float RaceMoveDelaySeconds = 0.3f;
+
+        /// <summary>Race chips take this long to slide to their new step; well inside the race reveal.</summary>
+        public const float RaceMoveSeconds = 0.6f;
+
         /// <summary>Opacity of a disconnected player's chip.</summary>
         public const float DisconnectedAlpha = 0.35f;
     }
