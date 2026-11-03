@@ -126,7 +126,7 @@ test("two games in one file, the second abandoned, names and connections carried
 
   const out = formatText(report);
   assert.match(out, /Game 2 \(ABANDONED: Back to lobby\)/);
-  assert.match(out, /Longest idle stretch .*11\.5 s \(limit 11\.0 s\) OVER/);
+  assert.match(out, /Longest idle stretch .*11500 ms \(limit 11000 ms\) OVER by 500 ms/);
 });
 
 test("a cut off log: the game ends at its last line and is incomplete", () => {

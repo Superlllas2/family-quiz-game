@@ -42,7 +42,9 @@
 //     phaseEnded and the next phaseStarted, and the time before the first phaseStarted are idle.
 // - Longest idle stretch: like IdleMeter, Intro, FinalIntro and Results count as idle in the idle share but are left
 //   out of the stretch and break it (a stretch never joins across them). Compared with the starting limit of 11 s
-//   (docs/19_acceptance.md, D56); OVER only when above it.
+//   (docs/19_acceptance.md, D56); OVER only when above it. A live log's `t` is the frame the line was written in, so
+//   a phase can last a few ms longer by `t` than its `durationMs` (RoundEnd 4004 ms for 4000): the current timers
+//   then read a few ms OVER the 11 s limit. The amount is printed; no tolerance is applied.
 // - Phase durations: every phase that started in the game's lines except Lobby and StartCountdown (those belong to
 //   the time between games), matched to its phaseEnded by phase name and phaseId. Budget and staging extra come from
 //   phaseStarted (Answer budgets are the base window before timer multipliers). A phase with no phaseEnded is counted
@@ -468,8 +470,10 @@ export function formatText(report, file = "") {
     w(`Players (${g.players.length}): ${g.players.map((p) => p.name).join(", ")}${g.winner ? `; winner ${g.winner}` : ""}`);
     w(`Game time ${sec(g.endT - g.startT)} (t ${g.startT} to ${g.endT})`);
     const L = g.idle.longestStretch;
-    w(`Idle share ${pct(g.idle.idleShare)} (${sec(g.idle.idleMs)} of ${sec(g.idle.gameMs)}); idle by phase: ${Object.entries(g.idle.idleByPhase).map(([k, v]) => `${k} ${sec(v)}`).join(", ") || "-"}`);
-    w(`Longest idle stretch outside Intro, FinalIntro, Results: ${sec(L.ms)} (limit ${sec(L.limitMs)})${L.over ? " OVER" : ""}${L.startT != null ? `, t ${L.startT} to ${L.endT}: ${L.phases.join(" > ")}` : ""}`);
+    w(`Idle share ${pct(g.idle.idleShare)} (${sec(g.idle.idleMs)} of ${sec(g.idle.gameMs)}); idle by phase: ${Object.entries(g.idle.idleByPhase).filter(([, v]) => v >= 50).map(([k, v]) => `${k} ${sec(v)}`).join(", ") || "-"}`);
+    // Idle by phase leaves out entries under 50 ms (frame gaps between a phaseEnded and the next phase; --json has them).
+    // Milliseconds here: a live log can be over the limit by a frame (11006 ms), which one decimal would hide.
+    w(`Longest idle stretch outside Intro, FinalIntro, Results: ${L.ms} ms (limit ${L.limitMs} ms)${L.over ? ` OVER by ${L.ms - L.limitMs} ms` : ""}${L.startT != null ? `, t ${L.startT} to ${L.endT}: ${L.phases.join(" > ")}` : ""}`);
     w();
     w("Phase durations: count, min / avg / max, budget, staging extra, reasons");
     for (const [phase, p] of Object.entries(g.phaseDurations)) {
