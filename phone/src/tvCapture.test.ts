@@ -7,13 +7,19 @@ import { describe, expect, it } from 'vitest';
 import capture from './fixtures/tvCapture.json';
 import {
   answerChoiceData,
+  answerSliderData,
+  answerTrueFalseData,
+  getReadyData,
   lobbyData,
   parseIncoming,
   pickCharacterData,
   playerView,
+  raceResultData,
   resultData,
   resultsData,
+  roundEndData,
   textData,
+  topicVoteData,
   waitingData,
   type IncomingMessage,
   type ScreenState,
@@ -105,6 +111,41 @@ describe('the phone page parses every frame the TV app sent in a whole game', ()
       expect(d.place).toBe(s.data.place);
       expect(d.correctCount).toBe(s.data.correctCount);
       expect(d.awards).toEqual(s.data.awards);
+    }
+    // Day 3 screens: checked once the fixture is re-captured from a Day 3 TV build (none in a Day 2 capture).
+    for (const s of screens('getReady')) {
+      const raw = (s.data.prediction ?? []) as unknown[];
+      expect(getReadyData(s.data).prediction).toEqual(raw);
+    }
+    for (const s of screens('topicVote')) {
+      const d = topicVoteData(s.data);
+      expect(d.doors).toEqual((s.data.doors as Array<{ title: string }>).map((x) => x.title));
+      expect(d.doors).toHaveLength(4);
+    }
+    for (const s of screens('answerSlider')) {
+      const d = answerSliderData(s.data);
+      expect(d).toEqual({
+        question: s.data.question, min: s.data.min, max: s.data.max, step: s.data.step, unit: s.data.unit,
+        windowMs: s.data.windowMs,
+      });
+      expect(d.max).toBeGreaterThan(d.min);
+      expect(d.step).toBeGreaterThan(0);
+    }
+    for (const s of screens('answerTrueFalse')) {
+      const d = answerTrueFalseData(s.data);
+      expect(d.statement).toBe(s.data.statement);
+      expect(d.statement).not.toBe('');
+      expect(d.windowMs).toBe(s.data.windowMs);
+    }
+    for (const s of screens('roundEnd')) {
+      const d = roundEndData(s.data);
+      expect(d.rank).toBe(s.data.rank);
+      expect(d.score).toBe(s.data.score);
+      expect(d.nextRound).toBe(s.data.nextRound ?? null);
+    }
+    for (const s of screens('raceResult')) {
+      const d = raceResultData(s.data);
+      expect(d).toEqual({ correct: s.data.correct, position: s.data.position, finish: s.data.finish });
     }
     for (const s of screens('pollDone')) {
       expect(s.data).toEqual({}); // D76: no Play again, so no canPlayAgain

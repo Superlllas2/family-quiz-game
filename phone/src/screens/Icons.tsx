@@ -37,3 +37,18 @@ export function AnswerShape(props: { shape: AnswerShapeKind }) {
     </svg>
   );
 }
+
+/** Minus and plus on the slider's fine step buttons. */
+export function StepIcon(props: { kind: 'minus' | 'plus' }) {
+  return (
+    <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d={props.kind === 'plus' ? 'M12 4v16M4 12h16' : 'M4 12h16'}
+        fill="none"
+        stroke="currentColor"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+    </svg>
+  );
+}
