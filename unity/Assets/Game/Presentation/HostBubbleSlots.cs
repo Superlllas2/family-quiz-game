@@ -11,50 +11,41 @@ namespace FamilyQuiz.Presentation
     /// </summary>
     public sealed class HostBubbleSlots
     {
-        private readonly Dictionary<string, Slot> _slots = new Dictionary<string, Slot>();
+        private readonly Dictionary<string, Func<string, string>> _texts = new Dictionary<string, Func<string, string>>();
+        private readonly Dictionary<string, long> _endsAtMs = new Dictionary<string, long>();
 
         /// <summary>Puts up a bubble for the host until endsAtMs, replacing that host's bubble. False for an unknown host or no text.</summary>
         public bool Show(string host, Func<string, string> textInLang, long endsAtMs)
         {
             if (!HostIds.IsValid(host) || textInLang == null) return false;
-            _slots[host] = new Slot(textInLang, endsAtMs);
+            _texts[host] = textInLang;
+            _endsAtMs[host] = endsAtMs;
             return true;
         }
 
         /// <summary>True while the host has a bubble whose end time is still ahead of now.</summary>
         public bool Visible(string host, long nowMs)
         {
-            return host != null && _slots.TryGetValue(host, out var slot) && nowMs < slot.EndsAtMs;
+            return host != null && _endsAtMs.TryGetValue(host, out long end) && nowMs < end;
         }
 
         /// <summary>The host's bubble text in the language, or null without a bubble.</summary>
         public string Text(string host, string lang)
         {
-            if (host == null || !_slots.TryGetValue(host, out var slot)) return null;
-            return slot.TextInLang(lang) ?? string.Empty;
+            if (host == null || !_texts.TryGetValue(host, out var text)) return null;
+            return text(lang) ?? string.Empty;
         }
 
         /// <summary>The end time of the host's bubble on the core clock, or null without one.</summary>
         public long? EndsAtMs(string host)
         {
-            return host != null && _slots.TryGetValue(host, out var slot) ? slot.EndsAtMs : (long?)null;
+            return host != null && _endsAtMs.TryGetValue(host, out long end) ? end : (long?)null;
         }
 
         public void Clear()
         {
-            _slots.Clear();
-        }
-
-        private readonly struct Slot
-        {
-            public Slot(Func<string, string> textInLang, long endsAtMs)
-            {
-                TextInLang = textInLang;
-                EndsAtMs = endsAtMs;
-            }
-
-            public Func<string, string> TextInLang { get; }
-            public long EndsAtMs { get; }
+            _texts.Clear();
+            _endsAtMs.Clear();
         }
     }
 }

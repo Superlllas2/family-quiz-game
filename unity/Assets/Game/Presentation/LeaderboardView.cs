@@ -6,7 +6,8 @@ namespace FamilyQuiz.Presentation
 {
     /// <summary>
     /// Scores (docs/02_show_flow.md): the leaderboard with shared ranks (1, 1, 3), each player's chip, score and the
-    /// points just earned. Rows start in the order before the question and glide to their new places.
+    /// points just earned. Rows start in the order before the question and glide to their new places. A player a power up
+    /// was used on in this pick window shows a marker with the attacker and the power up.
     /// </summary>
     public sealed class LeaderboardView : MonoBehaviour
     {
@@ -64,12 +65,29 @@ namespace FamilyQuiz.Presentation
             }
         }
 
+        /// <summary>A power up was used in the pick window: its target's row shows the hit at once (docs/03_rules.md, "Using").</summary>
+        public void RefreshHits()
+        {
+            foreach (var player in _context.Game.State.Players)
+            {
+                var row = _list.Find(player.PlayerId);
+                if (row != null) SetHit(row, player);
+            }
+        }
+
         private void Fill(LeaderboardRow row, Core.State.PlayerState player)
         {
             int points = Standings.PointsNow(player);
             string extra = points > 0 ? _context.Format("tv.reveal.points", "points", points.ToString()) : string.Empty;
             row.Set(Ranking.SharedRank(_context.Game.State, player), player.Name, _context.ChipColor(player.CharacterId),
                 player.Connected, extra, TvColors.Correct);
+            SetHit(row, player);
+        }
+
+        private void SetHit(LeaderboardRow row, Core.State.PlayerState player)
+        {
+            var hit = PowerUpHit.For(player, Core.State.GamePhase.Scores);
+            row.SetHit(_context.HitText(hit), hit != null ? TvColors.PowerUp(hit.PowerUp) : TvColors.Text);
         }
 
         private void Build()

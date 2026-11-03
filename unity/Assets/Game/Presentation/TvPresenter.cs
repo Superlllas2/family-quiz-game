@@ -1,18 +1,25 @@
+using System;
 using System.Collections.Generic;
 using FamilyQuiz.Core;
+using FamilyQuiz.Core.Commands;
 using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.Events;
 using FamilyQuiz.Core.State;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.UI;
 using UnityEngine.UI;
 
 namespace FamilyQuiz.Presentation
 {
     /// <summary>
     /// The TV's root view: one screen space overlay canvas (1920 x 1080 reference) with one plain view per phase,
-    /// switched on PhaseStarted. A listener only: it reads Game and GameState and the events it is handed, and never
-    /// changes state or delays a phase; animations run on unscaled time and are simply cut when the phase changes.
+    /// switched on PhaseStarted, the hosts' text bubbles above the views and the TV settings panel (Tab) above
+    /// everything. A listener only: it reads Game and GameState and the events it is handed, and never changes state
+    /// or delays a phase; animations run on unscaled time and are simply cut when the phase changes. The settings
+    /// panel's commands go out through the command sink like any other input.
     /// </summary>
     public sealed class TvPresenter : MonoBehaviour
     {
@@ -26,6 +33,9 @@ namespace FamilyQuiz.Presentation
         private RoundEndView _roundEnd;
         private RaceView _race;
         private ResultsView _results;
+        private PollView _poll;
+        private HostBubblesView _hosts;
+        private TvSettingsPanel _settings;
         private GameObject _relayBannerRoot;
         private TextMeshProUGUI _relayBanner;
         private TextMeshProUGUI _contentError;
@@ -73,11 +83,33 @@ namespace FamilyQuiz.Presentation
             UpdateRelayBanner();
         }
 
+        /// <summary>
+        /// Where the TV settings panel sends its commands (ChangeTvSettings, ResetSeen, BackToLobby); the composition
+        /// root passes cmd => Dispatch(game.Handle(cmd)), so the events come back through OnEvents.
+        /// </summary>
+        public void SetCommandSink(Action<IGameCommand> send)
+        {
+            _settings.SetCommandSink(send);
+        }
+
+        /// <summary>
+        /// A host line that starts now (docs/15_schemas.md, "Selection"): the host's portrait box and text bubble until
+        /// endsAtMs on the core clock (Game.NowMs), replacing that host's bubble. textInLang gives the text in a language;
+        /// the bubble is redrawn when the game language changes. Unknown hosts are ignored.
+        /// </summary>
+        public void ShowHostLine(string host, Func<string, string> textInLang, long endsAtMs)
+        {
+            if (_broken) return;
+            _hosts.Show(host, textInLang, endsAtMs);
+        }
+
         /// <summary>A broken config or content file: the error instead of everything else, for good.</summary>
         public void ShowContentError(string message)
         {
             _broken = true;
             HideViews();
+            _hosts.HideAll();
+            _settings.SetOpen(false);
             _relayBannerRoot.SetActive(false);
             var title = _context.Has("tv.error.content") ? _context.T("tv.error.content") + "\n\n" : string.Empty;
             _contentError.text = title + message;
@@ -110,6 +142,16 @@ namespace FamilyQuiz.Presentation
                     case RaceRevealed _:
                         if (_phase == GamePhase.RaceReveal) _race.OnRaceRevealed();
                         break;
+                    case PowerUpApplied _:
+                        if (_phase == GamePhase.Answer) _question.RefreshHits();
+                        break;
+                    case PowerUpUsed _:
+                        if (_phase == GamePhase.Reveal) _question.RefreshHits();
+                        else if (_phase == GamePhase.Scores) _leaderboard.RefreshHits();
+                        break;
+                    case PollSubmitted _:
+                        if (_phase == GamePhase.Poll) _poll.Refresh();
+                        break;
                     case SettingsChanged _:
                         Relabel();
                         dirty = true;
@@ -125,11 +167,16 @@ namespace FamilyQuiz.Presentation
             }
 
             if (dirty) RefreshCurrent();
+            // Settings, the running game's copy (GameStarted, GameEnded), seen questions: whatever changed shows at once.
+            if (_settings.IsOpen) _settings.Refresh();
         }
 
         private void Update()
         {
             if (_broken || _context.Game == null) return;
+            var keyboard = Keyboard.current;
+            if (keyboard != null && keyboard.tabKey.wasPressedThisFrame) _settings.Toggle();
+            _hosts.Tick();
             switch (_phase)
             {
                 case GamePhase.Lobby:
@@ -143,6 +190,9 @@ namespace FamilyQuiz.Presentation
                     break;
                 case GamePhase.Results:
                     _results.Tick();
+                    break;
+                case GamePhase.Poll:
+                    _poll.Tick();
                     break;
                 case GamePhase.QuestionShow:
                 case GamePhase.Answer:
@@ -200,6 +250,10 @@ namespace FamilyQuiz.Presentation
                     Show(_results.gameObject);
                     _results.Enter();
                     break;
+                case GamePhase.Poll:
+                    Show(_poll.gameObject);
+                    _poll.Enter();
+                    break;
             }
 
             UpdateRelayBanner();
@@ -236,6 +290,9 @@ namespace FamilyQuiz.Presentation
                     break;
                 case GamePhase.Results:
                     _results.Refresh();
+                    break;
+                case GamePhase.Poll:
+                    _poll.Refresh();
                     break;
             }
         }
@@ -275,6 +332,7 @@ namespace FamilyQuiz.Presentation
             _roundEnd.gameObject.SetActive(false);
             _race.gameObject.SetActive(false);
             _results.gameObject.SetActive(false);
+            _poll.gameObject.SetActive(false);
         }
 
         private void Build()
@@ -285,6 +343,8 @@ namespace FamilyQuiz.Presentation
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             scaler.referenceResolution = new Vector2(1920, 1080);
             scaler.matchWidthOrHeight = 0.5f;
+            gameObject.AddComponent<GraphicRaycaster>(); // the settings panel's buttons take mouse clicks
+            EnsureEventSystem();
 
             var root = (RectTransform)transform;
             UiBuilder.Anchor(UiBuilder.Image("Background", root, TvColors.Background).rectTransform, 0, 0, 1, 1);
@@ -298,12 +358,18 @@ namespace FamilyQuiz.Presentation
             _roundEnd = RoundEndView.Create(root, _context);
             _race = RaceView.Create(root, _context);
             _results = ResultsView.Create(root, _context);
+            _poll = PollView.Create(root, _context);
+
+            // Overlays in drawing order: the host bubbles above the views, then the relay banner, then the settings panel.
+            _hosts = HostBubblesView.Create(root, _context);
 
             var banner = UiBuilder.Image("RelayBanner", root, TvColors.Background);
             UiBuilder.Anchor(banner.rectTransform, 0, 0.9f, 1, 1);
             _relayBanner = UiBuilder.Text("Text", banner.transform, 56, TvColors.Error, true, TextAlignmentOptions.Center);
             UiBuilder.Anchor(_relayBanner.rectTransform, 0.02f, 0, 0.98f, 1);
             _relayBannerRoot = banner.gameObject;
+
+            _settings = TvSettingsPanel.Create(root, _context);
 
             _contentError = UiBuilder.Text("ContentError", root, 40, TvColors.Error, false, TextAlignmentOptions.TopLeft);
             UiBuilder.Anchor(_contentError.rectTransform, 0.05f, 0.05f, 0.95f, 0.95f);
@@ -313,6 +379,14 @@ namespace FamilyQuiz.Presentation
             HideViews();
             Show(_lobby.gameObject);
             UpdateRelayBanner();
+        }
+
+        /// <summary>UGUI needs one EventSystem for mouse clicks; with the new Input System only, its UI input module.</summary>
+        private static void EnsureEventSystem()
+        {
+            if (EventSystem.current != null || FindFirstObjectByType<EventSystem>() != null) return;
+            var go = new GameObject("EventSystem", typeof(EventSystem));
+            go.AddComponent<InputSystemUIInputModule>(); // assigns the default UI actions when enabled
         }
     }
 }

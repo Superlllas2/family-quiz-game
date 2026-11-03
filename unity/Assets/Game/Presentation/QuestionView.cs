@@ -11,7 +11,7 @@ namespace FamilyQuiz.Presentation
     /// (question, 2x2 options, countdown, chips that pop on lock in, never what anyone chose) and Reveal (the correct
     /// tile grows green, the others fade, each chip shows its points). A closest value question (docs/04_formats.md)
     /// shows its range and unit instead of the options, and on Reveal the number line with every guess and the flag.
-    /// Reads GameState; changes nothing.
+    /// A power up's target shows a small marker above their chip ("Dad → Freeze"). Reads GameState; changes nothing.
     /// </summary>
     public sealed class QuestionView : MonoBehaviour
     {
@@ -106,6 +106,21 @@ namespace FamilyQuiz.Presentation
             }
 
             if (_mode == GamePhase.Reveal && _revealApplied && IsClosestValue()) _valueLine.Show(state, false);
+            RefreshHits();
+        }
+
+        /// <summary>
+        /// Power up markers next to the chips (docs/03_rules.md, "Using"): in Answer the effect that landed on each target
+        /// (PowerUpApplied), in Reveal the hits used in this pick window (PowerUpUsed) that land at the next Answer.
+        /// </summary>
+        public void RefreshHits()
+        {
+            var state = _context.Game.State;
+            for (int i = 0; i < state.Players.Count && i < _chips.Chips.Count; i++)
+            {
+                var hit = PowerUpHit.For(state.Players[i], _mode);
+                _chips.Chips[i].SetHit(_context.HitText(hit), hit != null ? TvColors.PowerUp(hit.PowerUp) : TvColors.Text);
+            }
         }
 
         public void OnAnswerLocked(string playerId)

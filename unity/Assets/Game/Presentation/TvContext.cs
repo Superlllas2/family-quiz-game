@@ -58,6 +58,13 @@ namespace FamilyQuiz.Presentation
             return _strings.Format(key, Lang, new Dictionary<string, string> { { name1, value1 }, { name2, value2 } });
         }
 
+        /// <summary>A power up marker's text: "Dad → Freeze" (docs/03_rules.md, "Using").</summary>
+        public string HitText(PowerUpHit hit)
+        {
+            if (hit == null) return string.Empty;
+            return Format("tv.powerUps.hit", "name", hit.AttackerName, "powerUp", T("tv.powerUps." + hit.PowerUp));
+        }
+
         /// <summary>The character's signature color from content/characters.json.</summary>
         public Color ChipColor(int characterId)
         {

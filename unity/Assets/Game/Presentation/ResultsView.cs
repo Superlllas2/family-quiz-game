@@ -8,7 +8,8 @@ namespace FamilyQuiz.Presentation
     /// <summary>
     /// Results (docs/02_show_flow.md): the title, the one winner and a line that their prize is on their phone (D87), the
     /// two awards (Most correct and Best comeback, every tied name), every other player with their funny tag in seat
-    /// order, never a place (D86), and a draining bar with the seconds until everyone is back in the Lobby (D78).
+    /// order, never a place (D86), and a draining bar with the seconds until the Poll, or with the poll off until everyone
+    /// is back in the Lobby (D78).
     /// </summary>
     public sealed class ResultsView : MonoBehaviour
     {
@@ -63,12 +64,20 @@ namespace FamilyQuiz.Presentation
             long seconds = Math.Max(1, (left + 999) / 1000);
             if (seconds == _shownSeconds) return;
             _shownSeconds = seconds;
-            _lobbyIn.text = _context.Format("tv.results.lobbyIn", "seconds", seconds.ToString());
+            _lobbyIn.text = _context.Format(CountdownKey(), "seconds", seconds.ToString());
+        }
+
+        /// <summary>"Poll in N" when the Poll follows, else "Back to the lobby in N" (D78).</summary>
+        private string CountdownKey()
+        {
+            var game = _context.Game;
+            return ResultsCountdown.Key(game.Config.Poll.Enabled, game.Content.Poll.Count);
         }
 
         public void Refresh()
         {
             var state = _context.Game.State;
+            _shownSeconds = -1; // the countdown line is redrawn on the next Tick, in the language now set
             _title.text = _context.T("tv.results.title");
 
             var winner = state.WinnerId != null ? state.FindById(state.WinnerId) : null;

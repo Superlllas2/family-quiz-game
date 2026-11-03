@@ -3,6 +3,7 @@
     "rootNamespace": "FamilyQuiz.Presentation",
     "references": [
         "FamilyQuiz.Core",
+        "Unity.InputSystem",
         "Unity.TextMeshPro",
         "UnityEngine.UI"
     ],

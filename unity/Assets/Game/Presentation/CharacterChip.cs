@@ -7,18 +7,22 @@ namespace FamilyQuiz.Presentation
     /// <summary>
     /// A player's character until the 3D characters exist: a rounded card in the character's signature color with
     /// the player's name in #14161C (docs/15_schemas.md, characters.json). Dimmed while disconnected, a white rim
-    /// once locked in, a quick pop on lock in, and an optional caption above it (Reveal results).
+    /// once locked in, a quick pop on lock in, an optional caption above it (Reveal results) and a power up marker above
+    /// that (docs/03_rules.md, "Using").
     /// </summary>
     public sealed class CharacterChip : MonoBehaviour
     {
         private const float CaptionHeight = 60f;
         private const float CaptionGap = 6f;
+        private const float MarkerHeight = 44f;
+        private const float MarkerFontSize = 30f;
 
         private Image _card;
         private TextMeshProUGUI _name;
         private TextMeshProUGUI _caption;
         private CanvasGroup _group;
         private Outline _rim;
+        private PowerUpMarker _marker;
         private float _popAge = -1f;
 
         public string PlayerId { get; private set; }
@@ -52,9 +56,27 @@ namespace FamilyQuiz.Presentation
         {
             bool show = !string.IsNullOrEmpty(text);
             _caption.gameObject.SetActive(show);
+            PlaceMarker();
             if (!show) return;
             _caption.text = text;
             _caption.color = color;
+        }
+
+        /// <summary>
+        /// Shows a power up marker ("Dad → Freeze") above the chip, above the caption while one shows; null or empty
+        /// hides it.
+        /// </summary>
+        public void SetHit(string text, Color color)
+        {
+            _marker.Set(text, color);
+            PlaceMarker();
+        }
+
+        private void PlaceMarker()
+        {
+            if (_marker == null) return;
+            float y = CaptionGap + (_caption.gameObject.activeSelf ? CaptionHeight + CaptionGap : 0f);
+            _marker.Root.anchoredPosition = new Vector2(0, y);
         }
 
         /// <summary>A quick scale up and back on unscaled time; it never waits for anything.</summary>
@@ -121,6 +143,14 @@ namespace FamilyQuiz.Presentation
             caption.anchoredPosition = new Vector2(0, CaptionGap);
             caption.sizeDelta = new Vector2(0, CaptionHeight);
             _caption.gameObject.SetActive(false);
+
+            _marker = PowerUpMarker.Create(transform, MarkerFontSize);
+            var marker = _marker.Root;
+            marker.anchorMin = new Vector2(0, 1);
+            marker.anchorMax = new Vector2(1, 1);
+            marker.pivot = new Vector2(0.5f, 0);
+            marker.sizeDelta = new Vector2(0, MarkerHeight);
+            PlaceMarker();
         }
     }
 }

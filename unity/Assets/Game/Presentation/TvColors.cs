@@ -29,6 +29,39 @@ namespace FamilyQuiz.Presentation
         /// <summary>The finish cell of the race track.</summary>
         public static readonly Color Finish = new Color32(0x2E, 0x5E, 0x45, 0xFF);
 
+        /// <summary>The freeze power up's marker: icy blue.</summary>
+        public static readonly Color Freeze = new Color32(0x8F, 0xD8, 0xF8, 0xFF);
+
+        /// <summary>The slime power up's marker: green.</summary>
+        public static readonly Color Slime = new Color32(0x7E, 0xD9, 0x57, 0xFF);
+
+        /// <summary>The fog power up's marker: grey.</summary>
+        public static readonly Color Fog = new Color32(0xA9, 0xAE, 0xB8, 0xFF);
+
+        /// <summary>The host portrait placeholders and their text bubbles.</summary>
+        public static readonly Color HostCard = new Color32(0x3A, 0x3F, 0x4D, 0xFF);
+
+        public static readonly Color Bubble = new Color32(0xF4, 0xF5, 0xF7, 0xFF);
+
+        /// <summary>The TV settings panel's card and its buttons: off, on (selected) and the Back to lobby button.</summary>
+        public static readonly Color Panel = new Color32(0x1B, 0x1E, 0x26, 0xF5);
+
+        public static readonly Color ButtonOff = new Color32(0x34, 0x38, 0x44, 0xFF);
+
+        public static readonly Color ButtonOn = new Color32(0x34, 0x98, 0xDB, 0xFF);
+
+        /// <summary>A power up's marker color; Text for an unknown one.</summary>
+        public static Color PowerUp(string powerUp)
+        {
+            switch (powerUp)
+            {
+                case FamilyQuiz.Core.Content.PowerUpTypes.Freeze: return Freeze;
+                case FamilyQuiz.Core.Content.PowerUpTypes.Slime: return Slime;
+                case FamilyQuiz.Core.Content.PowerUpTypes.Fog: return Fog;
+                default: return Text;
+            }
+        }
+
         /// <summary>Answer tile colors A to D (docs/06_phone_screens.md).</summary>
         private static readonly Color[] AnswerColors =
         {

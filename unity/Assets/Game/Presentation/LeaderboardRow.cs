@@ -15,11 +15,15 @@ namespace FamilyQuiz.Presentation
         private const float ChipWidth = 520f;
         private const float ScoreWidth = 300f;
         private const float Gap = 24f;
+        private const float MarkerWidth = 250f;
+        private const float MarkerHeight = 52f;
+        private const float MarkerFontSize = 30f;
 
         private TextMeshProUGUI _rank;
         private CharacterChip _chip;
         private TextMeshProUGUI _score;
         private TextMeshProUGUI _extra;
+        private PowerUpMarker _marker;
         private float _fromY;
         private float _toY;
         private int _fromScore;
@@ -66,6 +70,19 @@ namespace FamilyQuiz.Presentation
             _extra.color = tagColor;
             float x = RankWidth + Gap + ChipWidth + Gap;
             Column(_extra.rectTransform, x, Width - x - Gap, 0);
+        }
+
+        /// <summary>
+        /// A power up marker ("Dad → Freeze") at the right end of the row, the extra note making room for it; null or
+        /// empty hides it (docs/03_rules.md, "Using").
+        /// </summary>
+        public void SetHit(string text, Color color)
+        {
+            _marker.Set(text, color);
+            float x = ExtraX();
+            float width = Width - x - Gap;
+            if (_marker.Visible) width -= MarkerWidth + Gap;
+            Column(_extra.rectTransform, x, width, 0);
         }
 
         public void SetScore(int score)
@@ -149,6 +166,20 @@ namespace FamilyQuiz.Presentation
             _extra.fontSizeMin = 32;
             _extra.fontSizeMax = 48;
             Column(_extra.rectTransform, x, Width - x - Gap, 0);
+
+            _marker = PowerUpMarker.Create(transform, MarkerFontSize);
+            var marker = _marker.Root;
+            marker.anchorMin = new Vector2(1, 0.5f);
+            marker.anchorMax = new Vector2(1, 0.5f);
+            marker.pivot = new Vector2(1, 0.5f);
+            marker.anchoredPosition = new Vector2(-Gap, 0);
+            marker.sizeDelta = new Vector2(MarkerWidth, MarkerHeight);
+        }
+
+        /// <summary>The extra note's left edge: after the rank, the chip and the score.</summary>
+        private static float ExtraX()
+        {
+            return RankWidth + Gap + ChipWidth + Gap + ScoreWidth + Gap;
         }
 
         /// <summary>A column at x from the row's left edge, full height minus an inset at the top and bottom.</summary>
