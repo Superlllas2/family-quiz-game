@@ -156,6 +156,8 @@ namespace FamilyQuiz.Presentation
 
             _answer = UiBuilder.Text("Answer", root, 88, TvColors.Correct, true, TextAlignmentOptions.Center);
             _answer.textWrappingMode = TextWrappingModes.NoWrap;
+            // The 88 pt line is taller than its box: with the default ellipsis TMP would hide it entirely.
+            _answer.overflowMode = TextOverflowModes.Overflow;
             UiBuilder.Anchor(_answer.rectTransform, 0.2f, 0.585f, 0.8f, 0.68f);
 
             _track = RaceTrack.Create(root, _context);

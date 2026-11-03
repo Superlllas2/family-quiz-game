@@ -59,3 +59,27 @@ Date: Nov 3, 2026. Built on branch `day3-show`. None of these is a decision by I
 | `raceResult.finish` is the finish step (`race.finishSteps`), so the phone can draw the small track | Net |
 | `waiting.locked` is the door title after a vote, "1889 m" (value and unit) after a closest value Lock, "True"/"False" after a race answer | Net |
 | Closest value numbers are written with no thousands separator and at most 2 decimals | Core `NumberText` |
+
+## Phone page
+
+| Detail | Where |
+| --- | --- |
+| The Lock button reads "Ответить / Lock" | phone locales |
+| The slider starts on the grid value nearest the middle of the range (the upper one on a tie); it only ever sends min + k × step inside the range; plus and minus stay enabled at the ends and do nothing there | phone `sliderValue.ts` |
+| The slider screen shows the question text above the big number | phone |
+| The topic doors are four full width rows in a neutral color under a "Выбери тему / Pick a topic" title | phone |
+| The race track on `raceResult` draws steps 0 to finish, the own step in the character color, with "Шаг N из M / Step N of M"; "+1 шаг / +1 step" is fixed text | phone |
+| `roundEnd` shows "Твоё место / Your rank" and "Счёт / Score", then "Раунд N" or "Дальше финальная гонка / Final race next" | phone |
+| After a reload during the Intro the phone does not know it already predicted (`getReady` has no flag); a second tap is refused | phone |
+| Fixed on the way: the result screen showed "Right answer:" twice (the TV already sends the whole sentence) | phone |
+
+## TV
+
+| Detail | Where |
+| --- | --- |
+| "Question N of M" counts within the round (it read "Question 5 of 4" from round 2 on) | Presentation |
+| Closest value: the range and the unit show instead of the option tiles; on Reveal each guess is a chip on the number line with its value, overlapping chips stack in lanes, the closest chips get a crown, the flag shows the answer; a bonus only guess shows "+N" | Presentation |
+| RoundEnd: the leaderboard by total score with each player's round points, and the round winner line (hidden when the best is 0) | Presentation |
+| Race: one cell per step from 0 to the finish, one lane per player in join order, chips slide 0.3 s after the reveal starts over 0.6 s (inside the 2 s reveal); no last call colour | Presentation `TvMotion` |
+| Intro and TopicVote: a player's chip gets a rim once they predicted or voted, never what they picked; "Points × 1" shows in rounds 1 and 2 | Presentation |
+| Results: places 1 to 3 from the race order, never shared; each award lists every tied name and hides when nobody earned it | Presentation |
