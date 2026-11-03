@@ -138,6 +138,33 @@ if (!(r.maxHeadStart - 0 < r.maxQuestions)) err("config.json", "race", "last pla
 if (!(r.finishSteps - 0 <= r.maxQuestions)) err("config.json", "race", "last place could not win: finishSteps must be at most maxQuestions");
 
 // UI strings (docs/15_schemas.md, D65): dotted lower camel case keys, both languages non empty, same placeholders.
+// show_scripts.json (docs/15_schemas.md): known segments; standard has rounds.count rounds and one results.
+const SEGMENTS = ["intro", "round", "finalIntro", "finalRace", "results", "poll", "miniGame"];
+const scripts = load("show_scripts.json") ?? {};
+for (const [mode, segments] of Object.entries(scripts)) {
+  if (!Array.isArray(segments) || segments.length === 0) { err("show_scripts.json", mode, "must be a non empty list of segment names"); continue; }
+  for (const s of segments) if (!SEGMENTS.includes(s)) err("show_scripts.json", mode, `unknown segment "${s}"`);
+}
+if (!Array.isArray(scripts.standard)) err("show_scripts.json", "standard", "the standard mode is missing");
+else {
+  const rounds = scripts.standard.filter((s) => s === "round").length;
+  if (rounds !== cfg.rounds?.count) err("show_scripts.json", "standard", `has ${rounds} rounds, must match rounds.count`);
+  if (scripts.standard.filter((s) => s === "results").length !== 1) err("show_scripts.json", "standard", "must hold exactly one results");
+}
+
+// One Standard game without a repeat: every slot kind rounds.count times, and race.maxQuestions statements.
+const slotNeeds = {};
+(cfg.rounds?.formatOrder ?? []).forEach((f, i) => {
+  const key = f + " " + cfg.rounds.difficultyOrder[i];
+  slotNeeds[key] = (slotNeeds[key] ?? 0) + cfg.rounds.count;
+});
+for (const [key, need] of Object.entries(slotNeeds)) {
+  const [format, difficulty] = key.split(" ");
+  const have = questions.filter((q) => q.format === format && q.difficulty === difficulty).length;
+  if (have < need) err("questions.json", "-", `needs at least ${need} ${format} questions of difficulty ${difficulty} for one game, has ${have}`);
+}
+if (race.length < (cfg.race?.maxQuestions ?? 0)) err("race.json", "-", "needs at least race.maxQuestions statements for one race");
+
 const ui = load("ui_strings.json");
 const holes = (s) => (s.match(/\{[a-zA-Z]+\}/g) ?? []).sort().join(",");
 if (!ui || typeof ui !== "object" || Array.isArray(ui)) err("ui_strings.json", "-", "must be an object from key to {ru, en}");

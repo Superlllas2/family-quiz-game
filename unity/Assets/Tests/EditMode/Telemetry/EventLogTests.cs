@@ -236,6 +236,41 @@ namespace FamilyQuiz.Tests.EventLog
         }
 
         [Test]
+        public void InputFromAClosestValueAndARaceAnswer()
+        {
+            _log.OnEvents(new IGameEvent[]
+            {
+                new AnswerLocked("p2", 31, InputKinds.Value, -1, 11200, true, 640, value: 1889),
+                new AnswerLocked("p3", 80, InputKinds.TrueFalse, -1, 2100, false, 0, trueFalse: true)
+            });
+            var lines = Lines();
+            AssertBody("{'event':'input','playerId':'p2','kind':'value','phaseId':31,'value':1889.0,'ms':11200,'correct':true,'points':640}", lines[0]);
+            AssertBody("{'event':'input','playerId':'p3','kind':'trueFalse','phaseId':80,'answer':true,'ms':2100,'correct':false,'points':0}", lines[1]);
+        }
+
+        [Test]
+        public void AVoteIsAnInputLineWithTheDoor()
+        {
+            AssertBody("{'event':'input','playerId':'p1','kind':'vote','phaseId':14,'door':2,'topicId':null}",
+                LogOne(new VoteCast("p1", 14, 2)));
+        }
+
+        [Test]
+        public void RaceStartedLogsHeadStartsAndLastPlaceCanWin()
+        {
+            var heads = new Dictionary<string, int> { { "p1", 3 }, { "p2", 1 }, { "p3", 0 } };
+            AssertBody("{'event':'raceStarted','headStarts':{'p1':3,'p2':1,'p3':0},'lastPlaceCanWin':true}",
+                LogOne(new RaceStarted(heads, true)));
+        }
+
+        [Test]
+        public void AQuestionFallbackIsAContentWarning()
+        {
+            AssertBody("{'event':'error','where':'content','message':'round 2 slot 3: no unseen question in topic geography, used his_004 from group 2'}",
+                LogOne(new QuestionFallback(2, 3, "geography", "his_004", 2)));
+        }
+
+        [Test]
         public void InputRefusedLine()
         {
             AssertBody("{'event':'inputRefused','playerId':'p4','kind':'choice','phaseId':16,'reason':'closed'}",

@@ -5,7 +5,7 @@ namespace FamilyQuiz.DevTools
     /// <summary>
     /// The live idle share of the current game (docs/15_schemas.md, "Idle"): a moment is idle when no connected phone
     /// can send an input. Fed once per frame with the core clock; each interval counts with the state seen at its
-    /// start. Also keeps the longest idle stretch outside Results. Plain C#, no engine.
+    /// start. Also keeps the longest idle stretch outside the phases left out of it. Plain C#, no engine.
     /// </summary>
     public sealed class IdleMeter
     {
@@ -31,7 +31,7 @@ namespace FamilyQuiz.DevTools
 
         /// <summary>A new game started at startMs (GameStarted): clears everything.</summary>
         /// <param name="idle">Whether that moment is idle.</param>
-        /// <param name="countsForStretch">False in phases left out of the longest stretch (Results).</param>
+        /// <param name="countsForStretch">False in phases left out of the longest stretch (Intro, FinalIntro, Results).</param>
         public void Start(long startMs, bool idle, bool countsForStretch)
         {
             Running = true;

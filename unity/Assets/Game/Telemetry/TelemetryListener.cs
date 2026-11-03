@@ -26,6 +26,7 @@ namespace FamilyQuiz.Telemetry
         public const string EventInputRefused = "inputRefused";
         public const string EventScoreChanged = "scoreChanged";
         public const string EventGameEnded = "gameEnded";
+        public const string EventRaceStarted = "raceStarted";
         public const string EventError = "error";
 
         /// <summary>playerLeft.reason when the phone went away and the seat is still held.</summary>
@@ -164,14 +165,54 @@ namespace FamilyQuiz.Telemetry
                     });
                     break;
                 case AnswerLocked locked:
-                    _writer.Write(EventInput, new JObject
+                {
+                    var fields = new JObject
                     {
                         ["playerId"] = locked.PlayerId,
                         ["kind"] = locked.Kind,
-                        ["phaseId"] = locked.PhaseId,
-                        ["ms"] = locked.Ms,
-                        ["correct"] = locked.Correct,
-                        ["points"] = locked.Points
+                        ["phaseId"] = locked.PhaseId
+                    };
+                    if (locked.Value.HasValue) fields["value"] = locked.Value.Value;
+                    if (locked.TrueFalse.HasValue) fields["answer"] = locked.TrueFalse.Value;
+                    fields["ms"] = locked.Ms;
+                    fields["correct"] = locked.Correct;
+                    fields["points"] = locked.Points;
+                    _writer.Write(EventInput, fields);
+                    break;
+                }
+                case VoteCast vote:
+                    _writer.Write(EventInput, new JObject
+                    {
+                        ["playerId"] = vote.PlayerId,
+                        ["kind"] = "vote",
+                        ["phaseId"] = vote.PhaseId,
+                        ["door"] = vote.Door,
+                        ["topicId"] = state.Round != null && vote.Door < state.Round.Doors.Count ? state.Round.Doors[vote.Door].Id : null
+                    });
+                    break;
+                case PredictionMade prediction:
+                    _writer.Write(EventInput, new JObject
+                    {
+                        ["playerId"] = prediction.PlayerId,
+                        ["kind"] = "prediction",
+                        ["phaseId"] = prediction.PhaseId,
+                        ["predicted"] = prediction.PredictedPlayerId
+                    });
+                    break;
+                case RaceStarted race:
+                {
+                    var heads = new JObject();
+                    foreach (var pair in race.HeadStarts) heads[pair.Key] = pair.Value;
+                    _writer.Write(EventRaceStarted, new JObject { ["headStarts"] = heads, ["lastPlaceCanWin"] = race.LastPlaceCanWin });
+                    break;
+                }
+                case QuestionFallback fallback:
+                    // docs/02_show_flow.md: a warning whenever the chosen topic had no unseen question for a slot.
+                    _writer.Write(EventError, new JObject
+                    {
+                        ["where"] = "content",
+                        ["message"] = "round " + fallback.Round + " slot " + fallback.Slot + ": no unseen question in topic "
+                                      + fallback.TopicId + ", used " + fallback.QuestionId + " from group " + fallback.Group
                     });
                     break;
                 case InputRefused refused:
@@ -204,7 +245,10 @@ namespace FamilyQuiz.Telemetry
             }
         }
 
-        /// <summary>phase, phaseId, then round, slot and questionId (1 based) in question phases, then the budget.</summary>
+        /// <summary>
+        /// phase, phaseId, then round, slot and questionId (1 based) in question phases, round in TopicVote and RoundEnd,
+        /// the statement id as questionId in the race, then the budget.
+        /// </summary>
         private JObject PhaseStartedFields(PhaseStarted phase)
         {
             var fields = new JObject
@@ -212,12 +256,21 @@ namespace FamilyQuiz.Telemetry
                 ["phase"] = phase.Phase.ToString(),
                 ["phaseId"] = phase.PhaseId
             };
-            var question = _game.State.Question;
+            var state = _game.State;
+            var question = state.Question;
             if (question != null && IsQuestionPhase(phase.Phase))
             {
                 fields["round"] = question.RoundIndex + 1;
                 fields["slot"] = question.Slot + 1;
                 fields["questionId"] = question.Def.Id;
+            }
+            else if (state.Round != null && (phase.Phase == GamePhase.TopicVote || phase.Phase == GamePhase.RoundEnd))
+            {
+                fields["round"] = state.Round.Index + 1;
+            }
+            else if (state.Race?.Statement != null && (phase.Phase == GamePhase.RaceQuestion || phase.Phase == GamePhase.RaceReveal))
+            {
+                fields["questionId"] = state.Race.Statement.Id;
             }
 
             fields["budgetMs"] = phase.BudgetMs;

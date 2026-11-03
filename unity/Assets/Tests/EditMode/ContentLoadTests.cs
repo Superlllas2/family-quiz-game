@@ -359,6 +359,103 @@ namespace FamilyQuiz.Tests
             Assert.That(ex.Message, Does.Contain("multipleChoice questions of difficulty medium"));
         }
 
+        [Test]
+        public void TheBankMustHoldEverySlotKindOfOneGame()
+        {
+            // Only multiple choice questions: the closest value slots of a game cannot be filled.
+            var mcOnly = "[" + string.Join(",", TestContent.Content().Questions
+                .Where(q => q.Format == QuestionDef.MultipleChoice)
+                .Select(q => JObject.FromObject(q, Newtonsoft.Json.JsonSerializer.Create(new Newtonsoft.Json.JsonSerializerSettings
+                    { NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore })).ToString())) + "]";
+            var ex = Assert.Throws<ContentException>(() => new ContentLoader(name => name == QuestionLoader.FileName
+                ? mcOnly
+                : TestContent.Read(name)).Load());
+            Assert.That(ex.Message, Does.Contain("closestValue questions of difficulty hard"));
+        }
+
+        // ---------------------------------------------------------------- race.json
+
+        private static readonly GameConfig RealConfig = TestContent.Config();
+
+        private static string Statement(string id, Action<JObject> change = null)
+        {
+            var s = new JObject
+            {
+                ["id"] = id,
+                ["statement"] = new JObject { ["ru"] = "У осьминога три сердца.", ["en"] = "An octopus has three hearts." },
+                ["answer"] = true,
+                ["source"] = "https://en.wikipedia.org/wiki/Octopus"
+            };
+            change?.Invoke(s);
+            return s.ToString();
+        }
+
+        private static string Statements(int n, Func<int, Action<JObject>> change = null)
+        {
+            return "[" + string.Join(",", Enumerable.Range(1, n).Select(i => Statement("race_" + i, change?.Invoke(i)))) + "]";
+        }
+
+        [Test]
+        public void TheRealRaceFileLoads()
+        {
+            var race = RaceLoader.Parse(TestContent.Read(RaceLoader.FileName), RealConfig);
+            Assert.That(race.Count, Is.GreaterThanOrEqualTo(2 * RealConfig.Race.MaxQuestions), "the bank holds 2 games");
+        }
+
+        [Test]
+        public void ARaceFileNeedsOneRaceOfStatements()
+        {
+            var ex = Assert.Throws<ContentException>(() => RaceLoader.Parse(Statements(RealConfig.Race.MaxQuestions - 1), RealConfig));
+            Assert.That(ex.Message, Does.Contain("race.maxQuestions"));
+        }
+
+        [Test]
+        public void BrokenStatementsAreNamedByIdAndField()
+        {
+            var ex = Assert.Throws<ContentException>(() => RaceLoader.Parse(Statements(RealConfig.Race.MaxQuestions, i => i == 2
+                ? s => s["statement"] = new JObject { ["ru"] = "", ["en"] = "x" }
+                : i == 3 ? s => s["id"] = "race_1" : i == 4 ? (Action<JObject>)(s => s["answer"] = "yes") : null), RealConfig));
+            Assert.That(ex.Message, Does.Contain("race.json race_2: statement must have non empty ru and en"));
+            Assert.That(ex.Message, Does.Contain("race.json race_1: id is used twice"));
+            Assert.That(ex.Message, Does.Contain("race.json race_4:"));
+        }
+
+        // ---------------------------------------------------------------- show_scripts.json
+
+        [Test]
+        public void TheRealShowScriptsLoad()
+        {
+            var scripts = ShowScripts.Parse(TestContent.Read(ShowScripts.FileName), RealConfig);
+            Assert.That(scripts.Mode(ShowScripts.Standard).Count(s => s == ShowSegments.Round), Is.EqualTo(RealConfig.Rounds.Count));
+            Assert.That(scripts.Mode(ShowScripts.Standard)[0], Is.EqualTo(ShowSegments.Intro));
+            Assert.That(scripts.Mode("nope"), Is.Null);
+        }
+
+        [Test]
+        public void ShowScriptsAreChecked()
+        {
+            var ex = Assert.Throws<ContentException>(() => ShowScripts.Parse(
+                "{\"standard\": [\"intro\", \"round\", \"dance\", \"results\"], \"quick\": []}", RealConfig));
+            Assert.That(ex.Message, Does.Contain("show_scripts.json standard: unknown segment \"dance\""));
+            Assert.That(ex.Message, Does.Contain("show_scripts.json standard: has 1 rounds, must match rounds.count"));
+            Assert.That(ex.Message, Does.Contain("show_scripts.json quick: must be a non empty list"));
+            var missing = Assert.Throws<ContentException>(() => ShowScripts.Parse("{\"quick\": [\"round\"]}", RealConfig));
+            Assert.That(missing.Message, Does.Contain("the standard mode is missing"));
+        }
+
+        [Test]
+        public void TheRaceKeysAreCheckedInTheConfig()
+        {
+            var json = JObject.Parse(TestContent.Read(ConfigLoader.FileName));
+            json["race"]["stepsPerCorrect"] = 0;
+            json["race"]["answer"] = 0;
+            json["closestValue"]["closestBonus"] = -5;
+            var ex = Assert.Throws<ContentException>(() => ConfigLoader.Parse(json.ToString()));
+            Assert.That(ex.Message, Does.Contain("race.stepsPerCorrect"));
+            Assert.That(ex.Message, Does.Contain("race.answer"));
+            Assert.That(ex.Message, Does.Contain("closestValue.closestBonus"));
+        }
+
         // ---------------------------------------------------------------- characters.json
 
         private static string Character(int id, string name, string color, Action<JObject> change = null)

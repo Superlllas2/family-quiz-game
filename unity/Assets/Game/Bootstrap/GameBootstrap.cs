@@ -33,6 +33,7 @@ namespace FamilyQuiz.Bootstrap
         private DebugOverlay _debug;
         private EventLogWriter _eventLog;
         private TelemetryListener _telemetry;
+        private SeenFile _seen;
         private Game _game;
         private PausableClock _clock;
         private CryptoRandom _random;
@@ -74,7 +75,13 @@ namespace FamilyQuiz.Bootstrap
 
             var config = content.Config;
             _random = new CryptoRandom();
-            _game = new Game(content, _clock, _random, () => _random.Next(int.MaxValue));
+            // Seen questions and race statements survive app restarts (docs/02_show_flow.md, "Seen questions").
+            _seen = new SeenFile(Path.Combine(Application.persistentDataPath, SeenFile.FileName),
+                message => TvLog.Error("Seen questions: " + message));
+            var (seenQuestions, seenRace) = _seen.Load();
+            TvLog.Info("Seen questions: " + seenQuestions.Count + ", race statements: " + seenRace.Count + " (" + _seen.Path + ")");
+            _game = new Game(content, _clock, _random, () => _random.Next(int.MaxValue), seenQuestions, seenRace);
+            _seen.Attach(_game);
             _telemetry = new TelemetryListener(_game, _eventLog);
             _view.Attach(_game); // before Start(): the presenter ignores events until it has a game
             _debug = DebugOverlay.Create(_game);
@@ -178,6 +185,7 @@ namespace FamilyQuiz.Bootstrap
         private void Dispatch(IReadOnlyList<IGameEvent> events)
         {
             if (events.Count == 0) return;
+            _seen?.OnEvents(events);
             _outbox?.OnEvents(events);
             _view.OnEvents(events);
             _debug?.OnEvents(events);

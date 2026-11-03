@@ -16,7 +16,7 @@ namespace FamilyQuiz.DevTools
     /// <summary>
     /// F1 debug overlay for developers (not player facing, so plain English): phase, phaseId, budget, time left, the
     /// latest personal deadline in Answer, players connected and locked in, and the live idle share of the current
-    /// game with its longest idle stretch outside Results. A listener only: reads Game and events, changes nothing.
+    /// game with its longest idle stretch outside Intro, FinalIntro and Results. A listener only: reads Game and events, changes nothing.
     /// </summary>
     public sealed class DebugOverlay : MonoBehaviour
     {
@@ -77,7 +77,9 @@ namespace FamilyQuiz.DevTools
 
         private bool CountsForStretch()
         {
-            return _game.State.Phase != GamePhase.Results;
+            // The longest idle stretch leaves out Intro, FinalIntro and Results (docs/19_acceptance.md, Day 3).
+            var phase = _game.State.Phase;
+            return phase != GamePhase.Results && phase != GamePhase.Intro && phase != GamePhase.FinalIntro;
         }
 
         private StringBuilder Describe()
@@ -92,7 +94,7 @@ namespace FamilyQuiz.DevTools
             _text.Append('\n');
             _text.Append("left   ").Append(state.PhaseEndsAtMs.HasValue ? Seconds(Math.Max(0, state.PhaseEndsAtMs.Value - now)) : "no timer").Append('\n');
 
-            if (state.Phase == GamePhase.Answer)
+            if (state.Phase == GamePhase.Answer || state.Phase == GamePhase.RaceQuestion)
             {
                 long latest = long.MinValue;
                 foreach (var p in state.Players)
