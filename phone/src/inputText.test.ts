@@ -20,4 +20,9 @@ describe('input status text', () => {
     expect(inputStatusKey(input('refused', 'invalid'))).toBe('input.refused');
     expect(inputStatusKey(input('refused'))).toBe('input.refused');
   });
+
+  it('power up refusals get their own note: immune and noPowerUp', () => {
+    expect(inputStatusKey(input('refused', 'immune'))).toBe('powerUp.immune');
+    expect(inputStatusKey(input('refused', 'noPowerUp'))).toBe('powerUp.noPowerUp');
+  });
 });
