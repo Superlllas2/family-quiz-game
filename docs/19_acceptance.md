@@ -26,13 +26,13 @@ Each check is automated (a unit test or a simulated game in the test code) unles
 
 ### Day 2: walking skeleton (Wed)
 
-- [ ] 1 real phone and 3 browser tabs on the laptop finish a game of 4 multiple choice questions with scores, back to the Lobby and a second game after everyone taps Ready, without errors (manual)
-- [ ] Scoring: a correct answer at 0 ms gets 1000, at the full window 500, wrong 0; in round 3 every point is multiplied by 1.5; a 2x timer multiplier doubles `T` (unit tests)
-- [ ] A question ends within 200 ms after the last connected player locks in (simulated game)
-- [ ] Personal deadlines: an input after the player's own deadline plus `net.inputGraceMs` gets `closed`; last call resends the screen with the same phaseId (unit tests)
-- [ ] When every connected player is ready (2 or more) the 3 s countdown runs; Not ready from any phone stops it; a join stops it; after Results everyone is back in the Lobby with ready cleared and scores at 0 (unit tests)
-- [ ] Names: only Latin and Cyrillic letters, digits and spaces, 1 to 16 characters; `characterTaken` when a character was just taken; `leave` frees the seat (unit tests)
-- [ ] The event log is written with `phaseStarted`, `phaseEnded` and `input` lines
+- [x] 1 real phone and 3 browser tabs on the laptop finish a game of 4 multiple choice questions with scores, back to the Lobby and a second game after everyone taps Ready, without errors (manual)
+- [x] Scoring: a correct answer at 0 ms gets 1000, at the full window 500, wrong 0; in round 3 every point is multiplied by 1.5; a 2x timer multiplier doubles `T` (unit tests)
+- [x] A question ends within 200 ms after the last connected player locks in (simulated game)
+- [x] Personal deadlines: an input after the player's own deadline plus `net.inputGraceMs` gets `closed`; last call resends the screen with the same phaseId (unit tests)
+- [x] When every connected player is ready (2 or more) the 3 s countdown runs; Not ready from any phone stops it; a join stops it; after Results everyone is back in the Lobby with ready cleared and scores at 0 (unit tests)
+- [x] Names: only Latin and Cyrillic letters, digits and spaces, 1 to 16 characters; `characterTaken` when a character was just taken; `leave` frees the seat (unit tests)
+- [x] The event log is written with `phaseStarted`, `phaseEnded` and `input` lines
 
 ### Day 3: the full show (Thu)
 
