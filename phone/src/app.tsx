@@ -7,12 +7,16 @@ import { remainingShare, wholeSeconds } from './countdown';
 import { t } from './i18n';
 import type { InputSender, TrackedInput } from './net/inputs';
 import type { Session, SessionStatus } from './net/session';
+import { chooseOption, pollAnswers, writeText, type PollDraft } from './pollAnswers';
+import { addAttempt, armPick, canTarget, pickFor, pickView, type PickState } from './powerUpPick';
 import {
-  answerWindowMs, characterMessage, choiceInputMessage, leaveMessage, lobbyData, lobbyMessage, playerView,
-  settingsMessage, trueFalseInputMessage, valueInputMessage, voteInputMessage,
+  answerWindowMs, characterMessage, choiceInputMessage, effectClearedInputMessage, leaveMessage, lobbyData,
+  lobbyMessage, playerView, pollData, pollMessage, powerUpInputMessage, resultData, settingsMessage,
+  trueFalseInputMessage, valueInputMessage, voteInputMessage,
   type AckedMessage, type IncomingMessage, type Lang, type PhaseId, type PlayerView, type ScreenState,
 } from './protocol';
 import { shownReady, toggleReady } from './readyToggle';
+import { attachEffect, clearEffect, effectForScreen, overlayShown, type ActiveEffect } from './sabotage';
 import { AnswerChoiceScreen } from './screens/AnswerChoiceScreen';
 import { AnswerSliderScreen } from './screens/AnswerSliderScreen';
 import { AnswerTrueFalseScreen } from './screens/AnswerTrueFalseScreen';
@@ -22,6 +26,9 @@ import { JoinScreen } from './screens/JoinScreen';
 import { LobbyScreen } from './screens/LobbyScreen';
 import { PickCharacterScreen } from './screens/PickCharacterScreen';
 import { PollDoneScreen } from './screens/PollDoneScreen';
+import { PollScreen } from './screens/PollScreen';
+import { ResultScreen } from './screens/ResultScreen';
+import { SabotageOverlay } from './screens/SabotageOverlay';
 import { SettingsOverlay } from './screens/SettingsOverlay';
 import { ErrorScreen, ReconnectingScreen } from './screens/StatusScreens';
 import { TopicVoteScreen } from './screens/TopicVoteScreen';
@@ -53,6 +60,12 @@ interface Current { screen: ScreenState; receivedAt: number }
 type Slot = 'ready' | 'character' | 'answer';
 interface SlotInput { inputId: string; phaseId: PhaseId; characterId?: number }
 
+/** The poll in progress on one phaseId: the page shown, the answers so far and the submit, if sent. */
+interface PollState { phaseId: PhaseId; page: number; draft: PollDraft; inputId: string | null }
+
+/** Answer screens: drawn inside the answer area, where a sabotage overlay can cover them. */
+const ANSWER_SCREENS: readonly string[] = ['answerChoice', 'answerSlider', 'answerTrueFalse'];
+
 export function App({ deps }: { deps: AppDeps }) {
   const { session, sender, clock } = deps;
   const [status, setStatus] = useState<SessionStatus>(() => session.status);
@@ -69,6 +82,23 @@ export function App({ deps }: { deps: AppDeps }) {
   const answeredPhase = useRef<PhaseId | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [leaveId, setLeaveId] = useState<string | null>(null);
+  /** The sabotage on this phone, tied to the phaseId showing when the `effect` arrived (sabotage.ts). */
+  const [effect, setEffect] = useState<ActiveEffect | null>(null);
+  /** The phaseId of the last screen, read when an `effect` arrives (the message handler is made once). */
+  const phaseRef = useRef<PhaseId | null>(null);
+  /** The power up pick and the poll; refs too, so a second tap before the re-render sees the first one. */
+  const [pick, setPickState] = useState<PickState | null>(null);
+  const pickRef = useRef<PickState | null>(null);
+  const [poll, setPollState] = useState<PollState | null>(null);
+  const pollRef = useRef<PollState | null>(null);
+  const setPick = (next: PickState | null): void => {
+    pickRef.current = next;
+    setPickState(next);
+  };
+  const setPoll = (next: PollState | null): void => {
+    pollRef.current = next;
+    setPollState(next);
+  };
 
   // Layout effects run during the first render's commit, before main.tsx starts the session.
   useLayoutEffect(() => {
@@ -76,6 +106,9 @@ export function App({ deps }: { deps: AppDeps }) {
       // Always a new arrival time, also for a last call with the same phaseId (the countdown re-syncs).
       setCurrent({ screen: next, receivedAt: deps.now() });
       clock.arrived(next.phaseId);
+      // A last call (same phaseId) keeps the sabotage; any other phaseId drops it.
+      phaseRef.current = next.phaseId;
+      setEffect((e) => effectForScreen(e, next.phaseId));
       // From here the TV's own ready flag shows again.
       setReadyTap(null);
       // The pick status lives as long as pickCharacter is showing: its refresh after characterTaken may or may
@@ -105,6 +138,9 @@ export function App({ deps }: { deps: AppDeps }) {
         case 'ack':
           sender.handleAck(msg);
           break;
+        case 'effect':
+          setEffect(attachEffect(msg, phaseRef.current, deps.now()));
+          break;
         default:
           break; // welcome and refused are handled by the session.
       }
@@ -119,6 +155,12 @@ export function App({ deps }: { deps: AppDeps }) {
           setAnswer(null);
           answeredPhase.current = null;
           clock.reset();
+          phaseRef.current = null;
+          setEffect(null);
+          pickRef.current = null;
+          setPickState(null);
+          pollRef.current = null;
+          setPollState(null);
         }
       },
       message: onMessage,
@@ -179,6 +221,7 @@ export function App({ deps }: { deps: AppDeps }) {
     build: (inputId: string, phaseId: PhaseId, ms: number) => AckedMessage,
   ): void => {
     if (!screen || screen.id !== screenId) return;
+    if (overlayShown(effect, screen)) return; // the overlay takes every tap until it is cleared
     const phaseId = screen.phaseId;
     if (answeredPhase.current === phaseId) return; // one tap locks
     answeredPhase.current = phaseId;
@@ -334,20 +377,106 @@ export function App({ deps }: { deps: AppDeps }) {
       case 'waiting':
         body = <WaitingScreen lang={lang} screen={screen} />;
         break;
+      case 'result': {
+        const d = resultData(screen.data);
+        const powerUp = d.powerUp;
+        if (!powerUp) {
+          body = <WatchScreen lang={lang} player={player} />; // nothing to pick with
+          break;
+        }
+        const phaseId = screen.phaseId;
+        const state = pickFor(pick, phaseId);
+        body = (
+          <ResultScreen
+            lang={lang}
+            powerUp={powerUp}
+            targets={d.targets}
+            armed={state.armed}
+            view={pickView(state, inputs)}
+            canTarget={(target) => canTarget(state, inputs, target)}
+            onArm={() => setPick(armPick(pickFor(pickRef.current, phaseId)))}
+            onTarget={(target) => {
+              // The ref, not the render's state: a second tap before the re-render must see the first send.
+              const latest = pickFor(pickRef.current, phaseId);
+              if (!canTarget(latest, inputs, target)) return;
+              const inputId = deps.newInputId();
+              setPick(addAttempt(latest, inputId, target.playerId));
+              track(sender.send(powerUpInputMessage(inputId, phaseId, powerUp, target.playerId)));
+            }}
+          />
+        );
+        break;
+      }
       case 'results':
         body = <ResultsScreen lang={lang} screen={screen} />;
         break;
+      case 'poll': {
+        const { questions } = pollData(screen.data);
+        const phaseId = screen.phaseId;
+        const pollFor = (s: PollState | null): PollState =>
+          s && s.phaseId === phaseId ? s : { phaseId, page: 0, draft: {}, inputId: null };
+        const state = pollFor(poll);
+        const edit = (change: (s: PollState) => PollState): void => {
+          const latest = pollFor(pollRef.current);
+          if (latest.inputId === null) setPoll(change(latest));
+        };
+        body = (
+          <PollScreen
+            lang={lang}
+            questions={questions}
+            page={state.page}
+            draft={state.draft}
+            sent={state.inputId !== null}
+            pollInput={state.inputId ? inputs[state.inputId] ?? null : null}
+            onPage={(page) => setPoll({ ...pollFor(pollRef.current), page })}
+            onChoose={(id, index) => edit((s) => ({ ...s, draft: chooseOption(s.draft, id, index) }))}
+            onText={(id, text) => edit((s) => ({ ...s, draft: writeText(s.draft, id, text) }))}
+            onSubmit={() => {
+              const latest = pollFor(pollRef.current);
+              if (latest.inputId !== null) return; // one submit
+              const inputId = deps.newInputId();
+              setPoll({ ...latest, inputId });
+              track(sender.send(pollMessage(inputId, pollAnswers(questions, latest.draft))));
+            }}
+          />
+        );
+        break;
+      }
       case 'pollDone':
         body = <PollDoneScreen lang={lang} />;
         break;
       case 'error':
         body = <TvErrorScreen lang={lang} screen={screen} />;
         break;
-      case 'result':
-      case 'poll':
       case 'watch':
         body = <WatchScreen lang={lang} player={player} />;
         break;
+    }
+
+    // Answer screens sit in the answer area, always, so the answer screen is never remounted when an overlay comes
+    // or goes. The sabotage overlay covers that area only: the top bar's countdown stays visible.
+    if (ANSWER_SCREENS.includes(screen.id)) {
+      const hit = effect && overlayShown(effect, screen) ? effect : null;
+      body = (
+        <div class="answer-area">
+          {body}
+          {hit ? (
+            <SabotageOverlay
+              key={`${hit.phaseId}-${hit.arrivedAt}`}
+              lang={lang}
+              effect={hit}
+              now={deps.now}
+              onCleared={() => {
+                const done = clearEffect(hit, deps.now());
+                if (!done) return;
+                setEffect((e) => (e && e.phaseId === hit.phaseId && e.arrivedAt === hit.arrivedAt ? done.effect : e));
+                // Telemetry only: acked like every input, but no status is shown.
+                sender.send(effectClearedInputMessage(deps.newInputId(), hit.phaseId, hit.effect, done.ms));
+              }}
+            />
+          ) : null}
+        </div>
+      );
     }
   }
 

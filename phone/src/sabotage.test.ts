@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { AnswerClock, screenDrawn } from './answerClock';
 import type { EffectMessage, ScreenState } from './protocol';
 import { attachEffect, clearEffect, effectForScreen, effectTextKey, overlayShown } from './sabotage';
 
@@ -44,6 +45,28 @@ describe('a sabotage effect belongs to the phaseId showing when it arrives (06 `
     expect(first!.effect.cleared).toBe(true);
     expect(clearEffect(first!.effect, 4000)).toBeNull();
     expect(clearEffect(null, 4000)).toBeNull();
+  });
+
+  it('the answer clock keeps running under the overlay: an effect, a last call and the clear never reset it', () => {
+    let now = 1000;
+    const clock = new AnswerClock(() => now);
+    const answer = screen('answerChoice', 16);
+    // The app's order: the screen arrives and is drawn, then the effect arrives right after it.
+    clock.arrived(answer.phaseId);
+    screenDrawn(clock, answer);
+    now = 1040;
+    let e = attachEffect(freeze, answer.phaseId, now);
+    now = 3000;
+    // Last call: the same phaseId again.
+    const lastCall = { ...answer, endsInMs: 5000 };
+    clock.arrived(lastCall.phaseId);
+    screenDrawn(clock, lastCall);
+    e = effectForScreen(e, lastCall.phaseId);
+    expect(overlayShown(e, lastCall)).toBe(true);
+    now = 4200;
+    e = clearEffect(e, now)!.effect;
+    now = 4500;
+    expect(clock.ms(answer.phaseId)).toBe(3500);
   });
 
   it('names the attacker in the player\'s language', () => {

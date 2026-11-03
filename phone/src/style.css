@@ -837,3 +837,308 @@ h1 {
   color: var(--bad);
   box-shadow: 0 0 0 2px var(--bad) inset;
 }
+
+/* ---- power ups: placeholder colors (freeze icy blue, slime green, fog grey) ---- */
+
+:root {
+  --freeze: #8fd8f7;
+  --slime: #7ed957;
+  --fog: #aab2bf;
+}
+
+/* ---- result: the power up card, then the target row ---- */
+
+.power-pick {
+  gap: 12px;
+}
+
+.btn.power-card {
+  flex: 1 1 40%;
+  min-height: 140px;
+  max-height: 46%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--chip-text);
+  border: 4px solid transparent;
+  border-radius: 22px;
+}
+
+.btn.power-card.power-freeze {
+  background: var(--freeze);
+}
+
+.btn.power-card.power-slime {
+  background: var(--slime);
+}
+
+.btn.power-card.power-fog {
+  background: var(--fog);
+}
+
+.btn.power-card.armed {
+  flex-grow: 0;
+  min-height: 96px;
+  border-color: var(--text);
+}
+
+.power-name {
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.power-hint {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.power-title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.power-keep {
+  text-align: center;
+}
+
+.target-list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(64px, auto);
+  gap: 8px;
+  align-content: start;
+}
+
+.btn.target {
+  min-height: 64px;
+  padding: 8px 12px;
+  border: 4px solid transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn.target.chosen {
+  border-color: var(--text);
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+.btn.target.dim {
+  opacity: 0.25;
+}
+
+.btn.target:disabled {
+  filter: grayscale(1);
+}
+
+.input-status.power-status {
+  flex: none;
+}
+
+/* ---- the answer area: answer screens sit here; a sabotage overlay covers only this, not the top bar ---- */
+
+.answer-area {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sabotage {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  border-radius: 18px;
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--chip-text);
+  text-align: center;
+}
+
+.sabotage-caption {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  padding: 0 16px;
+}
+
+.sabotage-text {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 900;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.sabotage-hint {
+  margin: 6px 0 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Freeze: an ice sheet; cracks (white lines) show more with every tap. */
+.sabotage-freeze {
+  --cracks: 0;
+  background:
+    linear-gradient(115deg, transparent 46%, rgba(255, 255, 255, calc(var(--cracks) * 0.9)) 47%, transparent 48%),
+    linear-gradient(35deg, transparent 58%, rgba(255, 255, 255, calc(var(--cracks) * 0.8)) 59%, transparent 60%),
+    linear-gradient(160deg, transparent 30%, rgba(255, 255, 255, calc(var(--cracks) * 0.7)) 31%, transparent 32%),
+    linear-gradient(180deg, #c9efff 0%, var(--freeze) 100%);
+  box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.6);
+}
+
+.ice-count {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+  animation: ice-pop 120ms ease-out;
+}
+
+@keyframes ice-pop {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Slime: a thin green film over the whole area, and the blobs to wipe. */
+.sabotage-slime {
+  background: rgba(126, 217, 87, 0.18);
+  color: var(--text);
+}
+
+.slime-blob {
+  position: absolute;
+  border-radius: 46% 54% 52% 48% / 55% 45% 55% 45%;
+  background: radial-gradient(circle at 35% 30%, #c4f5a8 0%, var(--slime) 35%, #3f9a2a 100%);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  transition: opacity 80ms linear;
+}
+
+.sabotage-slime .sabotage-caption {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* Fog: a grey blur over the options; app code lowers its opacity to 0. */
+.sabotage-fog {
+  background: rgba(170, 178, 191, 0.82);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ice-count {
+    animation: none;
+  }
+}
+
+/* ---- poll: one question per page ---- */
+
+.poll {
+  gap: 12px;
+}
+
+.poll-page {
+  margin: 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.poll-question {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.poll-options {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn.poll-option {
+  flex: none;
+  min-height: 60px;
+  border: 3px solid transparent;
+  text-align: left;
+}
+
+.btn.poll-option.selected {
+  border-color: var(--text);
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+.poll-text {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.poll-textarea {
+  flex: 1;
+  min-height: 96px;
+  width: 100%;
+  resize: none;
+  font: inherit;
+  font-size: 1.3rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 2px solid transparent;
+  border-radius: 14px;
+  padding: 12px 14px;
+  outline: none;
+}
+
+.poll-textarea:focus {
+  border-color: var(--muted);
+}
+
+.poll-text-foot {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.poll-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.poll-nav .btn {
+  flex: 1;
+  min-height: 60px;
+}
