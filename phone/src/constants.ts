@@ -35,7 +35,7 @@ export const DEFAULT_SLIME_BLOBS = 3;
 /** Fog: seconds until it has cleared by itself, if the `effect` params do not say. */
 export const DEFAULT_FOG_SECONDS = 3;
 
-/** Fog: rubbing the screen makes the fog clear this many times faster (03: "Rubbing the screen clears it 2x faster"). */
+/** Fog: rubbing makes the fog clear this many times faster (03: "Rubbing the screen clears it 2x faster"). */
 export const FOG_RUB_SPEEDUP = 2;
 
 /** Fog: a finger that is down counts as rubbing while it moved within this many ms (the gap between move events). */
