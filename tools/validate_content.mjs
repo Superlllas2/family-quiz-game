@@ -69,6 +69,20 @@ for (const host of ["konstantin", "ilja"]) {
   if (!lines.some((l) => l.host === host && l.trigger === "gameStart")) err("host_lines.json", host, "needs a gameStart line (the Intro plays one per host)");
 }
 
+// Poll (docs/15_schemas.md, docs/20_playtest.md): the same checks as the TV app's PollLoader.
+const poll = load("poll.json");
+if (!Array.isArray(poll) || poll.length < 1) err("poll.json", "-", "needs at least one question");
+for (const q of poll ?? []) {
+  unique("poll.json", q.id);
+  if (!isLoc(q.text, 120) || !q.text.ru.trim() || !q.text.en.trim()) err("poll.json", q.id, "text must have non empty ru and en, max 120");
+  if (q.kind === "choice") {
+    if (!Array.isArray(q.options) || q.options.length < 2) err("poll.json", q.id, "options must list 2 or more choices");
+    else q.options.forEach((o, i) => { if (!isLoc(o, 40)) err("poll.json", q.id, `options[${i}] must have ru and en, max 40`); });
+  } else if (q.kind === "text") {
+    if (Array.isArray(q.options) && q.options.length) err("poll.json", q.id, "options are only for choice questions");
+  } else err("poll.json", q.id, "kind must be choice or text");
+}
+
 // Characters (docs/15_schemas.md): ids 0..N-1 in order, at least players.max of them, unique names and colors,
 // and every color readable behind the chip text color #14161C (contrast ratio 4.5 or more).
 const characters = load("characters.json");
