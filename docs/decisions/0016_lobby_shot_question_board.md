@@ -25,4 +25,8 @@ Date: Nov 4, 2026. Decided by Ilia after a review of the reference pictures. The
 | Lighting stays as written in 0015: Blender only models, the lighting is done and baked in Unity (Ilia left this to the AI) | 0015 |
 | `HostSolo` plays only in the Intro and FinalIntro, never where players need the set to read the game (not yet confirmed) | 21 |
 | The Intro opens on the hosts: `HostSolo` for each `gameStart` line in the dark studio, then `Establish` with the lights coming up, then `Wide`. Both lines start in the first 7 s (D58 keeps `gameStart` at the Intro start), so the establishing shot cannot come first without hiding the host solo. `Curtain` stays for TopicVote, so game night 1 has six shots (AI's pick, not yet confirmed) | 21 |
+| The look picked under D99: warm late night (screenshots of all three were shown to Ilia, who can overrule it) | 21 |
+| Stand ins until the props come (D98): capsules with eyes; the hosts are cubes with eyes, Konstantin dark red, Ilja navy (not yet confirmed) | 21 |
+| The board is a dark matte felt, so the light question overlay reads on it; it is 16:9 so the `Stage` shot fills the screen with it | 21 |
+| The 3D set adds no time: every staging extra stays 0 and the core is untouched apart from reading the new config key; a full scripted game passed with it on | 21 |
 | The on/off switch of 0015 is a toggle in the TV settings panel: on shows the 3D set behind the overlay, off shows the current flat views (confirmed by Ilia) | 21, Presentation |

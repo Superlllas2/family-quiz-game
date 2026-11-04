@@ -45,7 +45,7 @@ Update the Status column as you go; the kit is ready when every row says Done.
 | 18 | Edge cases | Proof | Done for game night 1 | `docs/18_edge_cases.md` |
 | 19 | Acceptance criteria | Proof | Done for game night 1 | `docs/19_acceptance.md` |
 | 20 | Playtest plan | Proof | Done for game night 1 | `docs/20_playtest.md` |
-| 21 | Staging and camera | Look and feel | Partial (draft for prototyping; final race open) | `docs/21_staging.md` |
+| 21 | Staging and camera | Look and feel | Game night 1 version built (decisions 0015, 0016); the rest stays a draft (final race open, character props and realistic hosts after game night 1) | `docs/21_staging.md` |
 | 22 | Decisions log | Proof | Done | `docs/decisions/` |
 
 ## Game design documents

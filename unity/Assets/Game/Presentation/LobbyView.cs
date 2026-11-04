@@ -74,8 +74,8 @@ namespace FamilyQuiz.Presentation
         public void SetStudioMode(bool on)
         {
             _roomPanel.pivot = new Vector2(0, 1);
-            UiBuilder.Anchor(_roomPanel, 0, on ? 0.3f : 0f, 0.48f, 1);
-            _roomPanel.localScale = Vector3.one * (on ? 0.72f : 1f);
+            UiBuilder.Anchor(_roomPanel, 0, 0, 0.48f, 1);
+            _roomPanel.localScale = Vector3.one * (on ? 0.68f : 1f);
             _roomBackdrop.enabled = on;
             _playerList.gameObject.SetActive(!on);
         }
