@@ -180,7 +180,7 @@ namespace FamilyQuiz.Presentation
         private void LayoutOptions(int correct)
         {
             bool banner = _studio && _mode == GamePhase.Reveal && correct >= 0;
-            UiBuilder.Anchor(_tilesRoot, banner ? 0.27f : 0.04f, banner ? 0.12f : 0.27f, banner ? 0.73f : 0.96f, banner ? 0.235f : 0.625f);
+            UiBuilder.Anchor(_tilesRoot, banner ? 0.3f : 0.04f, banner ? 0.225f : 0.27f, banner ? 0.7f : 0.96f, banner ? 0.32f : 0.625f);
             UiBuilder.Anchor(_valueLine.Rect, 0.03f, 0.13f, 0.97f, _studio ? 0.4f : 0.64f);
             for (int i = 0; i < OptionCount; i++)
             {
