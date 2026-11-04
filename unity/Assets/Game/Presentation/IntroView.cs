@@ -23,6 +23,12 @@ namespace FamilyQuiz.Presentation
             return view;
         }
 
+        /// <summary>With the 3D studio on (decisions 0016) the title moves up out of the way of the host solo shot.</summary>
+        public void SetStudioMode(bool on)
+        {
+            UiBuilder.Anchor(_title.rectTransform, 0.05f, on ? 0.8f : 0.5f, 0.95f, on ? 0.97f : 0.8f);
+        }
+
         public void Enter()
         {
             Refresh();

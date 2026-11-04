@@ -339,7 +339,7 @@ namespace FamilyQuiz.EditorTools.Studio
 
             var shots = new GameObject("Shots").transform;
             shots.SetParent(parent, false);
-            rig.WideShot = Shot(shots, "Wide", new Vector3(-3.0f, 2.7f, -8.0f), new Vector3(-3.0f, 0.95f, 3.6f));
+            rig.WideShot = Shot(shots, "Wide", new Vector3(-3.1f, 2.5f, -6.9f), new Vector3(-3.1f, 1.05f, 3.6f));
             rig.SeatsShot = Shot(shots, "Seats", new Vector3(-4.6f, 1.45f, -5.6f), new Vector3(-4.6f, 1.45f, 3.6f));
             rig.EstablishStart = Shot(shots, "EstablishStart", new Vector3(0.8f, 7.4f, -11.5f), new Vector3(1.2f, 1.6f, 3.5f));
             rig.EstablishEnd = Shot(shots, "EstablishEnd", new Vector3(0.2f, 4.0f, -9.8f), new Vector3(0.6f, 1.4f, 3.5f));

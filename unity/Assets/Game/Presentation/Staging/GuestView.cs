@@ -75,6 +75,14 @@ namespace FamilyQuiz.Presentation.Staging
             _playerTag.color = highlight ? TvColors.Correct : TvColors.Text;
         }
 
+        /// <summary>Neighbours on the sofa alternate between two tag heights so their names never overlap.</summary>
+        public void SetTagRow(int row)
+        {
+            float drop = row % 2 == 1 ? 0.3f : 0f;
+            _characterTag.transform.localPosition = new Vector3(0, -0.02f - drop, 0.62f);
+            _playerTag.transform.localPosition = new Vector3(0, -0.16f - drop, 0.62f);
+        }
+
         public void SetAway(bool away)
         {
             if (_away == away) return;
@@ -208,9 +216,9 @@ namespace FamilyQuiz.Presentation.Staging
             if (_cardUp)
             {
                 float p = Mathf.Clamp01((now - _cardUpSince) / _cardUpSeconds);
-                float y = Mathf.LerpUnclamped(0.45f, 1.2f, EaseOutBack(p)) + Mathf.Sin(_phase * 2.2f) * 0.01f;
+                float y = Mathf.LerpUnclamped(0.45f, 1.26f, EaseOutBack(p)) + Mathf.Sin(_phase * 2.2f) * 0.01f;
                 _card.position = transform.position + transform.forward * 0.22f + Vector3.up * y + _root.localPosition * 0.6f;
-                _card.localScale = new Vector3(0.52f, 0.4f, 0.02f) * Mathf.Clamp01(p * 3f);
+                _card.localScale = new Vector3(0.62f, 0.46f, 0.02f) * Mathf.Clamp01(p * 3f);
             }
 
             if (Gone) gameObject.SetActive(false);
@@ -245,8 +253,8 @@ namespace FamilyQuiz.Presentation.Staging
                 Sphere("Pupil", eye.transform, new Vector3(0, -0.05f, 0.45f), new Vector3(0.5f, 0.5f, 0.4f), dark);
             }
 
-            _characterTag = Tag("CharacterTag", new Vector3(0, -0.12f, 0.62f), 2.0f, true);
-            _playerTag = Tag("PlayerTag", new Vector3(0, -0.3f, 0.62f), 1.6f, false);
+            _characterTag = Tag("CharacterTag", new Vector3(0, -0.02f, 0.62f), 1.3f, false);
+            _playerTag = Tag("PlayerTag", new Vector3(0, -0.16f, 0.62f), 1.9f, true);
 
             var card = GameObject.CreatePrimitive(PrimitiveType.Cube);
             card.name = "Card";
@@ -257,12 +265,12 @@ namespace FamilyQuiz.Presentation.Staging
             _cardText = new GameObject("Text").AddComponent<TextMeshPro>();
             _cardText.transform.SetParent(_card, false);
             _cardText.transform.localPosition = new Vector3(0, 0, -0.6f);
-            _cardText.transform.localScale = new Vector3(1f / 0.52f, 1f / 0.4f, 1f) * 0.1f;
-            _cardText.rectTransform.sizeDelta = new Vector2(4.6f, 3.6f);
-            _cardText.fontSize = 26;
+            _cardText.transform.localScale = new Vector3(1f / 0.62f, 1f / 0.46f, 1f) * 0.1f;
+            _cardText.rectTransform.sizeDelta = new Vector2(5.6f, 4.2f);
+            _cardText.fontSize = 32;
             _cardText.enableAutoSizing = true;
             _cardText.fontSizeMin = 8;
-            _cardText.fontSizeMax = 26;
+            _cardText.fontSizeMax = 32;
             _cardText.fontStyle = FontStyles.Bold;
             _cardText.alignment = TextAlignmentOptions.Center;
             _cardText.textWrappingMode = TextWrappingModes.NoWrap;
@@ -274,7 +282,7 @@ namespace FamilyQuiz.Presentation.Staging
             var text = new GameObject(name).AddComponent<TextMeshPro>();
             text.transform.SetParent(transform, false);
             text.transform.localPosition = local;
-            text.rectTransform.sizeDelta = new Vector2(1.05f, 0.3f);
+            text.rectTransform.sizeDelta = new Vector2(0.68f, 0.16f);
             text.fontSize = size;
             text.enableAutoSizing = true;
             text.fontSizeMin = size * 0.5f;

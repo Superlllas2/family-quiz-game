@@ -34,6 +34,7 @@ namespace FamilyQuiz.Presentation
         private GamePhase _mode;
         private long _answerSpanMs;
         private bool _revealApplied;
+        private bool _studio;
 
         public static QuestionView Create(Transform parent, TvContext context)
         {
@@ -79,6 +80,8 @@ namespace FamilyQuiz.Presentation
                     _tiles[i].ResetLook(has ? question.OptionText(i, lang) : string.Empty);
                 }
             }
+
+            if (!reveal) LayoutOptions(-1);
 
             if (show || answer)
             {
@@ -162,12 +165,43 @@ namespace FamilyQuiz.Presentation
             _answered.text = _context.Format("tv.question.answered", "count", locked.ToString(), "total", total.ToString());
         }
 
+        /// <summary>
+        /// With the 3D studio behind the overlay (decisions 0016) the Reveal is played on the Wide shot, where the
+        /// guests hold up their cards: only the correct option stays, as a banner over the empty floor at the bottom,
+        /// and the closest value line moves down there too. Off, the flat layout comes back.
+        /// </summary>
+        public void SetStudioMode(bool on)
+        {
+            _studio = on;
+            var question = _context.Game?.State.Question;
+            LayoutOptions(question != null ? question.CorrectDisplayIndex : -1);
+        }
+
+        private void LayoutOptions(int correct)
+        {
+            bool banner = _studio && _mode == GamePhase.Reveal && correct >= 0;
+            UiBuilder.Anchor(_tilesRoot, banner ? 0.27f : 0.04f, banner ? 0.12f : 0.27f, banner ? 0.73f : 0.96f, banner ? 0.235f : 0.625f);
+            UiBuilder.Anchor(_valueLine.Rect, 0.03f, 0.13f, 0.97f, _studio ? 0.4f : 0.64f);
+            for (int i = 0; i < OptionCount; i++)
+            {
+                int column = i % 2;
+                int row = i / 2;
+                float minX = column * 0.5f;
+                float minY = row == 0 ? 0.5f : 0f;
+                var tile = banner ? UiBuilder.Anchor(_tiles[i].Rect, 0, 0, 1, 1) : UiBuilder.Anchor(_tiles[i].Rect, minX, minY, minX + 0.5f, minY + 0.5f);
+                tile.offsetMin = banner ? Vector2.zero : new Vector2(column == 1 ? TileGap / 2 : 0, row == 0 ? TileGap / 2 : 0);
+                tile.offsetMax = banner ? Vector2.zero : new Vector2(column == 0 ? -TileGap / 2 : 0, row == 1 ? -TileGap / 2 : 0);
+                if (banner) _tiles[i].gameObject.SetActive(i == correct);
+            }
+        }
+
         private void ApplyReveal(int correct)
         {
             bool closest = IsClosestValue();
             if (!closest)
             {
                 for (int i = 0; i < OptionCount; i++) _tiles[i].Reveal(i == correct);
+                LayoutOptions(correct);
             }
 
             if (_revealApplied) return;

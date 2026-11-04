@@ -262,6 +262,7 @@ namespace FamilyQuiz.Presentation.Staging
                     _guests[p.PlayerId] = view;
                     _guestCharacter[p.PlayerId] = p.CharacterId;
                     view.Configure(_context.ChipColor(p.CharacterId), popSeconds, cardSeconds);
+                    view.SetTagRow(TagRow(seat));
                     if (animate) view.Play(GuestView.Move.Enter);
                 }
                 else if (_guestCharacter[p.PlayerId] != p.CharacterId)
@@ -275,6 +276,16 @@ namespace FamilyQuiz.Presentation.Staging
                 view.SetLabels(CharacterName(p.CharacterId), p.Name, state.Phase == GamePhase.Lobby && p.Ready);
                 view.SetAway(!p.Connected);
             }
+        }
+
+        /// <summary>The seat's place from the left, odd or even, so neighbours get different tag heights.</summary>
+        private int TagRow(int seat)
+        {
+            int rank = 0;
+            float x = _rig.Seats[seat].position.x;
+            foreach (var s in _rig.Seats)
+                if (s != null && s.position.x < x - 0.01f) rank++;
+            return rank % 2;
         }
 
         private string CharacterName(int id)

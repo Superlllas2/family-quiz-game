@@ -403,6 +403,8 @@ namespace FamilyQuiz.Presentation
         {
             _background.enabled = !visible;
             _lobby.SetStudioMode(visible);
+            _question.SetStudioMode(visible);
+            _intro.SetStudioMode(visible);
         }
 
         /// <summary>UGUI needs one EventSystem for mouse clicks; with the new Input System only, its UI input module.</summary>
