@@ -1,6 +1,6 @@
 # 21 Staging: the TV as a late night show
 
-Status: Draft for prototyping (Nov 2, 2026; `decisions/0004_staging.md`, answers in `decisions/0005_staging_answers.md`, art direction in `decisions/0006_art_direction.md`). The final race staging is decided after game night 1. The character roster is a draft waiting for approval. The look itself (materials, palette, fonts) is written up later in `10_visual_style.md`; game night 1 gets at most a grey box version.
+Status: Draft for prototyping (Nov 2, 2026; `decisions/0004_staging.md`, answers in `decisions/0005_staging_answers.md`, art direction in `decisions/0006_art_direction.md`, game night 1 art in `decisions/0015_art_for_game_night_1.md`, the Seats shot, the question board and the set pieces in `decisions/0016_lobby_shot_question_board.md`). The final race staging is decided after game night 1. The character roster is a draft waiting for approval. The look itself (materials, palette, fonts) is written up later in `10_visual_style.md`; game night 1 gets the version at the end of this document (D89, D90).
 
 **Every duration here is a suggested starting point to tune in playtests, not a hard rule.** Each one is a config key under `staging` in `content/config.json` (table in `03_rules.md`), or an existing phase timer. The column "Test" marks the numbers that are pure guesses (**guess**) and those that follow from an existing timer (**timer**).
 
@@ -8,21 +8,32 @@ Status: Draft for prototyping (Nov 2, 2026; `decisions/0004_staging.md`, answers
 
 The TV shows a 3D late night talk show set. The players are the guests, each playing a character they picked, two hosts run the show from the desk, and a small live band plays the music cues.
 
-- **Set:** a guest area with a sofa and armchairs, the host desk next to it, a curtain stage with stage lamps, and a band riser with drums, bass, keys and, if the budget allows, guitar. An evening city view behind the windows.
-- **Original design:** inspired by Russian late night TV, never a copy. No real show's name, logo, floor projection, signature set piece or color scheme. Real show stills never go into the repo (D59); only original generated images go into `docs/moodboard/`.
+- **Set:** a guest area with a sofa and armchairs, the host desk next to it, a curtain stage with stage lamps, and a band riser with drums, bass, keys and, if the budget allows, guitar. An evening city view behind the windows. Seen from the audience, left to right: the guest area in front of the windows, the desk, the curtain stage, the band riser.
+- **Question board:** behind the curtain stands a plain flat board, lit by the stage lamps (D92). It has no screen bezel and no frame of bulbs. The question is never drawn on it in 3D: the `Stage` shot frames the board, and the flat question overlay sits inside it.
+- **Original design:** inspired by Russian late night TV, never a copy. No real show's name, logo, floor projection, signature set piece or color scheme. Real show stills never go into the repo (D59); only original generated images go into `docs/moodboard/`. The pieces seen in the reference footage are replaced like this (D93):
+
+  | Seen in the reference footage | In our set |
+  | --- | --- |
+  | A teal curtain inside an arch of light bulbs | A deep green velvet curtain, lit by plain stage lamps on stands |
+  | The show's logo projected on the floor | A worn wooden floor with rugs, no projection |
+  | A recognizable Moscow skyline | An invented evening city |
+  | A desk built from stacked wood blocks | A ribbed wooden desk with a warm light strip under the top |
+  | A teal tufted sofa and teal armchairs | Muted dark green or brown fabric, so the characters' signature colors stand out against the set |
 - **Look:** a realistic world with cartoon guests (D62). The set, props, lights and hosts are realistic: physically based materials at real world scale, never plastic, glossy or toy like; matte, slightly textured wood, fabric and a worn wooden floor; warm practical lights (desk lamps, pendants, stage lamps, bulb strips), soft shadows, and a cinematic TV broadcast feel (light film grain and vignette, shallow depth of field on close shots), as far as the laptop runs it smoothly.
 - **Guests:** the one exception. They are cartoonish and may be mixed media: 2D billboards in the 3D space, or funny looking cartoonish 3D models. The clash is the joke: they look like they walked in from a cartoon, but the set's lights light them and they cast shadows on it, so they sit in the scene instead of floating on top of it.
-- **Overlay:** all game information (question, options, timer, leaderboard, race track, room code) stays flat UGUI over the 3D camera (`13_architecture.md`). The 3D scene frames it. The only information a player reads in 3D is the name tags and the answer cards.
+- **Overlay:** all game information (question, options, timer, leaderboard, race track, room code) stays flat UGUI over the 3D camera (`13_architecture.md`). The 3D scene frames it. The only information a player reads in 3D is the name tags and the answer cards. In `Stage` the question overlay sits inside the question board, so it looks printed on the board but stays sharp.
 
 ## Camera shots
 
 | Shot | Frames | Used in |
 | --- | --- | --- |
-| `Establish` | The whole studio from high at the back, slowly booming down | Intro start |
-| `Wide` | Guest area and desk; every seat and its name tag visible | Lobby, StartCountdown, Reveal, Scores, RoundEnd, FinalIntro, the race, Results, Poll |
+| `Seats` | Only the 8 seats, close, every seat and its name tag visible. The rest of the studio is dark; only the lamps over the seats are on (D91) | Lobby, StartCountdown |
+| `Establish` | The whole studio from high at the back, slowly booming down. The first time the players see the whole set: the studio lights come up as the shot starts (D91) | Intro start |
+| `Wide` | Guest area and desk; every seat and its name tag visible | Reveal, Scores, RoundEnd, FinalIntro, the race, Results, Poll |
 | `Desk` | Both hosts at the desk, medium shot | Intro host lines, Results host line |
+| `HostSolo` | The speaking host alone at the desk, close; the other host out of frame (D97) | While a `gameStart` line shows in the Intro and while a `finalStart` line shows in FinalIntro: rule explanations and jokes |
 | `Curtain` | The closed curtain and the stage lamps, medium wide | TopicVote |
-| `Stage` | The stage opening, framed so the question panel fills it | QuestionShow, Answer |
+| `Stage` | The stage opening, framed so the question board fills it and the question overlay sits inside the board with a margin (D92) | QuestionShow, Answer |
 | `Band` | The band on its riser | Short cutaways in Intro and Results only |
 
 ### Camera rules
@@ -30,10 +41,11 @@ The TV shows a 3D late night talk show set. The players are the guests, each pla
 1. **Shots follow phases; staging never holds a phase.** The Presentation layer only listens to events (`CLAUDE.md`). When a phase ends, the next shot cuts in even if an animation is still running; that animation jumps to its end pose. Only the core can make a phase longer, and only through the config keys under `staging.extraSeconds`.
 2. **Hard cuts** between shots. Moves inside a shot are slow (a push in or a drift of a few percent of the frame), never a whip pan or a shake.
 3. **No cut during Answer.** The question and options stay in the same place on screen for the whole window.
-4. **Every guest stays in frame** in `Wide`, with the name tag and, on Reveal, the card readable from the sofa at 3 m.
+4. **Every guest stays in frame** in `Seats` and `Wide`, with the name tag and, on Reveal, the card readable from the sofa at 3 m.
 5. **Host lines never force a cut** during Reveal and Scores. The speaking host turns toward the guests; when no host is in the shot, the bubble shows with the placeholder portrait as in game night 1.
 6. The `Band` shot is a cutaway only where no player needs information (Intro, Results).
-7. A shot lasts at least about 1.5 s, unless a phase that ends early forces the cut (**guess**).
+7. **Host solo:** `HostSolo` cuts in when a `gameStart` or `finalStart` line starts and cuts back to the phase's shot when its bubble ends. It frames the host who speaks, so the two Intro lines cut from one host to the other. Never in Answer, Reveal, Scores, TopicVote, QuestionShow, RoundEnd or Results: there the players need the guests, the cards or the stage. The overlay stays on top, so in FinalIntro the race track and its rules stay readable. A line that explains a rule says it out loud in the bubble; a dedicated rules trigger is an idea for later.
+8. A shot lasts at least about 1.5 s, unless a phase that ends early forces the cut (**guess**).
 
 ## Shot list per phase
 
@@ -41,11 +53,11 @@ The phase timers in `02_show_flow.md` stay as they are. In game night 1 every `s
 
 | Phase | Shot | What moves | Music cue | Overlay | Suggested durations (config key) | Test |
 | --- | --- | --- | --- | --- | --- | --- |
-| Lobby | `Wide`, slow drift | When a player joins, their character makes its signature entrance into a free seat, starting with a small pop sound, and gets a name tag; a host turns to them and greets them (`playerJoined` line). A player who picks another character swaps: the old one leaves with a pop, the new one makes its entrance. When a player leaves, their character stands up and walks off. A disconnected player's character turns grey | Lobby loop | Room code, QR code, "Waiting for players" | Swap pop 0.5 s (`staging.lobby.seatPopSeconds`); entrances about 1.5 s, no timer in the Lobby | guess |
-| StartCountdown | `Wide` | Guests sit up; a host says a short `startCountdown` line; the drummer counts in with the sticks | Lobby loop ends on the count | Big 3, 2, 1 | 3 s (`lobby.startCountdownSeconds`) | timer |
-| Intro | `Establish`, then `Desk`, then `Band`, then `Wide` | Boom down over the studio; the hosts say their `gameStart` lines at the desk; a short band cutaway; guests wave | Show open played over the lobby loop | Title card, then "Who wins tonight?" with prediction counts | Establishing shot 6 s (`staging.intro.establishSeconds`); the rest follows the host lines inside `timers.intro` (30 s) | guess |
+| Lobby | `Seats`, slow drift; the studio around the seats stays dark | When a player joins, their character makes its signature entrance into a free seat, starting with a small pop sound, and gets a name tag; a host turns to them and greets them (`playerJoined` line). A player who picks another character swaps: the old one leaves with a pop, the new one makes its entrance. When a player leaves, their character stands up and walks off. A disconnected player's character turns grey | Lobby loop | Room code, QR code, "Waiting for players" | Swap pop 0.5 s (`staging.lobby.seatPopSeconds`); entrances about 1.5 s, no timer in the Lobby | guess |
+| StartCountdown | `Seats`, still dark around the seats | Guests sit up; a host says a short `startCountdown` line; the drummer counts in with the sticks | Lobby loop ends on the count | Big 3, 2, 1 | 3 s (`lobby.startCountdownSeconds`) | timer |
+| Intro | `Establish`, then `Desk`, then `Band`, then `Wide` | The studio lights come up and the camera booms down over the whole set for the first time; the hosts say their `gameStart` lines at the desk; a short band cutaway; guests wave | Show open played over the lobby loop | Title card, then "Who wins tonight?" with prediction counts | Establishing shot 6 s (`staging.intro.establishSeconds`), the lights come up over its first 1.5 s (`staging.intro.lightsUpSeconds`, D94); the rest follows the host lines inside `timers.intro` (30 s) | guess |
 | TopicVote | `Curtain` | Curtain closed; stage lamps sweep slowly over it | Lobby loop, quieter | Four topic cards in front of the curtain with live votes (voters' character chips) | 10 s (`timers.topicVote`) | timer |
-| QuestionShow | Cut to `Stage` | The curtains open; the stage lamps swing onto the opening; the question panel appears full screen on the stage, lit by the lamps | The band stops on one held chord | Question text, read time bar | Curtain opens in 1.2 s (`staging.questionShow.curtainOpenSeconds`); the question fades in within 0.4 s (`staging.questionShow.questionInSeconds`), so it is readable for almost the whole 4 s | guess |
+| QuestionShow | Cut to `Stage` | The curtains open on the question board; the stage lamps swing onto it; the question appears inside the board, as if lit by the lamps | The band stops on one held chord | Question text, read time bar | Curtain opens in 1.2 s (`staging.questionShow.curtainOpenSeconds`); the question fades in within 0.4 s (`staging.questionShow.questionInSeconds`), so it is readable for almost the whole 4 s | guess |
 | Answer | `Stage`, slow push in | Lamps brighten in the last seconds | Suspense loop; it rises in the last 5 s (`staging.answer.suspenseRiseSeconds`, see below) | Question, four options (or the slider prompt), countdown, character chips popping as players lock in, power up icons | Answer window as in `03_rules.md` | timer |
 | Reveal | Cut to `Wide` | Every guest raises a card with their answer (A to D, or their number for closest value), each in their character's own way. Right answers play the character's happy reaction, wrong ones the sad reaction, no answer shrugs with an empty card. The speaking host reacts | One stinger as the cards go up (see "Which stinger") | Correct answer banner; points above each guest who scored; the closest guess marked on closest value | Cards up in 0.5 s (`staging.reveal.cardsUpSeconds`), reactions 1.5 s (`staging.reveal.reactionSeconds`), then hold until the end of the 3.5 s | guess |
 | Scores | `Wide`, no cut | Cards go down; guests settle | Stinger tail, then the lobby loop quietly | The leaderboard as a flat overlay slides in; rows move to their new ranks | Overlay in 0.4 s (`staging.scores.overlayInSeconds`) inside 3.5 s | guess |
@@ -183,14 +195,19 @@ Decided after game night 1 (D54). Until then the race is the flat track overlay 
 - **Medium per character (D64):** which characters are 3D, 2D billboards or mixed. Then a `medium` field goes into `content/characters.json` and its schema in `15_schemas.md`.
 - **2D animation (D64), only if a character becomes 2D:** plain flipbook frames (no package), or a cutout rig with Unity's 2D Animation package (a new package needs asking first).
 
-## Grey box version (game night 1 stretch)
+## Game night 1 version
 
-Only after every Day 4 check in `19_acceptance.md` passes.
+Replaces the grey box version (D51) with option B (D89, D90, `decisions/0015_art_for_game_night_1.md`) and the Seats shot, question board and set pieces of `decisions/0016_lobby_shot_question_board.md`. A toggle in the TV settings panel switches it on and off (0016); with it off, the current flat views run as they are.
 
-- **Scene:** a box stage with an opening, a box desk, and 8 box chairs in the seat order above. Each seated player is a capsule in their character's signature color, with the character's name above it and the player's name under it. No curtains, hosts, band, lights work or music.
-- **Cameras:** two plain Unity cameras, `Stage` and `Wide`, switched by a listener in Presentation (`StagingDirector`) on phase events: `Stage` for QuestionShow and Answer, `Wide` for every other phase, with the flat race track overlay over `Wide` in the race. No Cinemachine (a new package needs asking first).
-- **Reveal:** a colored card above each capsule with its answer: the letter in its option color from the TV and phone for multiple choice, the number for closest value, an empty card for no answer. The cards hide when Scores ends.
-- **Timing:** the overlay UI stays as it is. Every `staging.extraSeconds` value stays 0, so all timing checks still pass.
+- **Scene:** the set built in Blender and exported as FBX: the sofa and armchairs in the seat order above, the desk, the curtain stage with the question board behind the curtain, the band riser (empty, no band members), and the windows with an invented evening city. Real materials, warm lights and a light film look. Lighting is baked in Unity for the static set, with light probes and one or two realtime shadow lights for the guests and hosts.
+- **Guests:** each seated player is a capsule in their character's signature color with one signature prop, animated in code. The character's name is above it and the player's name under it. Capsules come first; the 16 props follow once everything else works (D98).
+- **Hosts:** two cubes at the desk with a small idle animation and a speaking animation while their bubble shows (D90).
+- **Cameras:** plain Unity cameras switched by a listener in Presentation (`StagingDirector`) on phase events. No Cinemachine (a new package needs asking first). Five shots (D96): `Seats`, `Establish`, `HostSolo` (on a cube), `Stage` and `Wide`, following the shot list above. `HostSolo` replaces `Desk` in the Intro, and `Wide` plays wherever the list names `Desk` or `Band`, so the Intro is `Establish`, `HostSolo` for each `gameStart` line, then `Wide`, and Results stays on `Wide`. The flat race track overlay sits over `Wide` in the race.
+- **Look:** three lighting setups of the `Wide` shot (warm late night, retro 70s, modern night) are captured in Unity and compared; the AI picks one and shows Ilia all three (D99).
+- **Lights up (D91, D95):** the studio around the seats is dark in `Seats` and lights up in `Establish`. The bake has the studio fully lit; `Seats` darkens it with post processing (exposure and a strong vignette) and the seat lamps, and `Establish` lifts that over `staging.intro.lightsUpSeconds`.
+- **Reveal:** each guest holds up a colored card with its answer: the letter in its option color from the TV and phone for multiple choice, the number for closest value, an empty card for no answer. The cards go down in Scores.
+- **Overlay:** the opaque full screen background of the flat views becomes transparent so the set shows behind them. Each view keeps only what the Overlay column of the shot list says (for example the Lobby keeps the room code, QR code and "Waiting for players"; the seats show the players).
+- **Timing:** every `staging.extraSeconds` value stays 0, so all timing checks still pass.
 
 ## Open questions
 

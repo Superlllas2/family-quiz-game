@@ -20,7 +20,7 @@ Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `deci
 | 4 | | | | | |
 | Final | | | | | |
 
-When the staging grey box or the set is in the build, also note per round: which shots felt slow, which cut was confusing, and whether everyone could read the answer cards from the sofa.
+When the staging grey box or the set is in the build, also note per round: which shots felt slow, which cut was confusing, and whether everyone could read the answer cards from the sofa. With the 3D set on, also note whether the lights coming up at the start felt like the show beginning or just slow (`staging.intro.lightsUpSeconds`), and whether the host solo shots in the Intro and FinalIntro were fun or felt like waiting. Those values were picked by the AI as first guesses (D94, D97).
 
 ## The poll (on the phones, after Results, before any group talk)
 
