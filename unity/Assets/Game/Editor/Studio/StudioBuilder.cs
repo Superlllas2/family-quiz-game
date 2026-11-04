@@ -29,8 +29,8 @@ namespace FamilyQuiz.EditorTools.Studio
 
         private static readonly string[] ProbeLitPieces =
         {
-            "HostShelfBooks", "LeftShelfBooks", "DeskProps", "DrumKit", "Keyboard", "Amps", "PlantBig", "PlantStage",
-            "PlantShelf1", "PlantShelf2", "PlantBand", "Pendants", "FloorLamp", "SideTable", "Sconces", "Truss",
+            "HostShelfBooks", "CornerShelfBooks", "DeskProps", "DrumKit", "Keyboard", "Amps", "PlantBig", "PlantStage",
+            "PlantShelf1", "PlantShelf2", "PlantBand", "Pendants", "FloorLamp", "SideTable", "Sconces", "BandSconce", "Truss",
             "SofaLegs", "ArmchairLegs", "HostChairs", "StageLamp1", "StageLamp2", "ProsceniumTrim", "QuestionBoardFrame"
         };
 
@@ -96,8 +96,8 @@ namespace FamilyQuiz.EditorTools.Studio
             var lights = new GameObject("Lights").transform;
             lights.SetParent(root.transform);
             AddLights(look, markers, lights, rig);
-            AddProbes(root.transform);
-            AddCameraAndShots(root.transform, rig);
+            AddProbes(root.transform, markers);
+            AddCameraAndShots(root.transform, rig, markers);
             rig.Volume = AddVolume(root.transform, look);
 
             RenderSettings.skybox = null;
@@ -160,7 +160,7 @@ namespace FamilyQuiz.EditorTools.Studio
                 var scale = so.FindProperty("m_ScaleInLightmap");
                 if (scale != null)
                 {
-                    scale.floatValue = go.name == "Floor" || go.name == "BackWall" || go.name == "SideWalls" ? 0.6f : 1f;
+                    scale.floatValue = go.name == "Ceiling" ? 0.05f : go.name == "Floor" ? 0.5f : go.name.EndsWith("Wall") ? 0.7f : 1f;
                     so.ApplyModifiedPropertiesWithoutUndo();
                 }
             }
@@ -196,11 +196,13 @@ namespace FamilyQuiz.EditorTools.Studio
                         Point(parent, pair.Key, at, p, 6f * look.PracticalScale, 4f, 0.08f);
                         break;
                     case "DeskStrip":
-                        Area(parent, pair.Key, at, Quaternion.LookRotation(new Vector3(0, -0.55f, -1f)), new Vector2(2.5f, 0.06f),
-                            look.Strip, 6f, 3f);
+                        // Directions are in the marker's frame: its zone may be turned (build_studio.py, ZONES).
+                        Area(parent, pair.Key, at, DesignFrame(pair.Value) * Quaternion.LookRotation(new Vector3(0, -0.55f, -1f)),
+                            new Vector2(2.5f, 0.06f), look.Strip, 6f, 3f);
                         break;
                     case "Window":
-                        Area(parent, pair.Key, at + new Vector3(0, 0, -0.1f), Quaternion.LookRotation(new Vector3(0.1f, -0.25f, -1f)),
+                        Area(parent, pair.Key, at + DesignFrame(pair.Value) * new Vector3(0, 0, -0.1f),
+                            DesignFrame(pair.Value) * Quaternion.LookRotation(new Vector3(0.1f, -0.7f, -1f)),
                             new Vector2(7.6f, 3.6f), look.Window, look.WindowIntensity, 12f);
                         break;
                     case "StageLamp":
@@ -216,32 +218,45 @@ namespace FamilyQuiz.EditorTools.Studio
                 }
             }
 
-            // Soft fill from the audience side, like the big soft lights of a TV studio.
-            Area(parent, "Fill", new Vector3(-1.5f, 5.2f, -7.5f), Quaternion.LookRotation(new Vector3(0, -0.35f, 1f)),
-                new Vector2(16f, 4f), look.Fill, look.FillIntensity, 25f);
-
-            // Uplights grazing the back wall between the window, the shelves and the stage.
-            foreach (float x in new[] { -8.95f, -0.62f, 2.6f, 8.65f, 12.1f })
+            // The set's own light markers, LK_<name> aimed at LKT_<name>, placed per zone in build_studio.py.
+            foreach (var pair in markers.Where(p => p.Key.StartsWith("LK_")).OrderBy(p => p.Key))
             {
-                var l = Spot(parent, "Uplight", new Vector3(x, 0.25f, 6.2f), new Vector3(x, 5.5f, 6.55f), look.Accent, look.AccentIntensity, 6f, 55f,
-                    LightmapBakeType.Baked);
-                l.shadowRadius = 0.05f;
+                string name = pair.Key.Substring(3);
+                var at = pair.Value.position;
+                var target = Find(markers, "LKT_" + name).position;
+                if (name == "Fill")
+                {
+                    // Soft fill from the audience side, like the big soft lights of a TV studio.
+                    Area(parent, "Fill", at, Quaternion.LookRotation(target - at), new Vector2(18f, 4f), look.Fill, look.FillIntensity, 28f);
+                }
+                else if (name.StartsWith("Uplight"))
+                {
+                    // Uplights grazing the walls beside the window, the proscenium and the band.
+                    Spot(parent, name, at, target, look.Accent, look.AccentIntensity, 6f, 55f, LightmapBakeType.Baked).shadowRadius = 0.05f;
+                }
+                else if (name == "BandTop")
+                {
+                    // A dim light over the empty band riser.
+                    Spot(parent, name, at, target, look.Practical, 25f, 10f, 70f, LightmapBakeType.Baked);
+                }
+                else if (name == "CurtainWash")
+                {
+                    // A soft realtime wash on the curtain (it moves, so it cannot be baked).
+                    Spot(parent, name, at, target, look.StageLamp, 80f, 12f, 56f, LightmapBakeType.Realtime).shadows = LightShadows.None;
+                }
+                else if (name == "GuestKey")
+                {
+                    // Realtime keys: the guests and hosts move, so their light and shadows are realtime (0015).
+                    rig.GuestKey = Spot(parent, name, at, target, look.Key, look.GuestKeyIntensity, 14f, 62f, LightmapBakeType.Mixed);
+                    rig.GuestKey.shadows = LightShadows.Soft;
+                }
+                else if (name == "HostKey")
+                {
+                    rig.HostKey = Spot(parent, name, at, target, look.Key, look.HostKeyIntensity, 10f, 48f, LightmapBakeType.Mixed);
+                    rig.HostKey.shadows = LightShadows.Soft;
+                }
+                else Debug.LogWarning("Studio: no light for marker " + pair.Key);
             }
-
-            // A dim light over the empty band riser.
-            Spot(parent, "BandTop", new Vector3(10.3f, 6.6f, 3.2f), new Vector3(10.3f, 0.4f, 4.2f), look.Practical, 25f, 10f, 70f, LightmapBakeType.Baked);
-
-            // A soft realtime wash on the curtain (it moves, so it cannot be baked).
-            Spot(parent, "CurtainWash", new Vector3(5.5f, 7.0f, 0.2f), new Vector3(5.5f, 2.4f, 4.3f), look.StageLamp, 80f, 12f, 56f,
-                LightmapBakeType.Realtime).shadows = LightShadows.None;
-
-            // Realtime keys: the guests and hosts move, so their light and shadows are realtime (0015).
-            rig.GuestKey = Spot(parent, "GuestKey", new Vector3(-4.0f, 6.2f, -2.2f), new Vector3(-4.6f, 0.7f, 3.7f), look.Key,
-                look.GuestKeyIntensity, 14f, 62f, LightmapBakeType.Mixed);
-            rig.GuestKey.shadows = LightShadows.Soft;
-            rig.HostKey = Spot(parent, "HostKey", new Vector3(1.0f, 5.0f, 0.2f), new Vector3(1.25f, 1.0f, 3.9f), look.Key,
-                look.HostKeyIntensity, 10f, 48f, LightmapBakeType.Mixed);
-            rig.HostKey.shadows = LightShadows.Soft;
         }
 
         private static Light NewLight(Transform parent, string name, LightType type, Color color, float intensity, float range,
@@ -292,8 +307,17 @@ namespace FamilyQuiz.EditorTools.Studio
 
         // ------------------------------------------------------------------------ probes, camera, look
 
-        private static void AddProbes(Transform parent)
+        /// <summary>
+        /// Light probes laid out per zone in the zone's own frame (Zone_* markers from build_studio.py: x along its wall,
+        /// z towards the wall), so they follow the bay when the layout changes.
+        /// </summary>
+        private static void AddProbes(Transform parent, Dictionary<string, Transform> markers)
         {
+            var guests = Find(markers, "Zone_Guests");
+            var stage = Find(markers, "Zone_Stage");
+            var band = Find(markers, "Zone_Band");
+            CheckZoneFrame(guests, markers);
+
             var go = new GameObject("LightProbes");
             go.transform.SetParent(parent, false);
             var group = go.AddComponent<LightProbeGroup>();
@@ -301,26 +325,68 @@ namespace FamilyQuiz.EditorTools.Studio
             for (float x = -9.5f; x <= 3.01f; x += 1f)
             for (float z = 2.0f; z <= 4.81f; z += 0.9f)
             foreach (float y in new[] { 0.45f, 1.1f, 1.9f })
-                points.Add(new Vector3(x, y, z));
+                points.Add(ZonePoint(guests, new Vector3(x, y, z)));
             for (float x = 3.5f; x <= 7.51f; x += 1f)
             foreach (float z in new[] { 4.3f, 5.3f })
             foreach (float y in new[] { 0.9f, 2.1f, 3.4f })
-                points.Add(new Vector3(x, y, z));
-            for (float x = -9f; x <= 9.01f; x += 3f)
-            foreach (float z in new[] { -4f, 0f })
-                points.Add(new Vector3(x, 1.2f, z));
+                points.Add(ZonePoint(stage, new Vector3(x, y, z)));
+            for (float x = 9.0f; x <= 11.51f; x += 1.25f)
+            foreach (float z in new[] { 3.0f, 4.5f })
+            foreach (float y in new[] { 0.9f, 1.9f })
+                points.Add(ZonePoint(band, new Vector3(x, y, z)));
+            // Beside the proscenium, where the corners meet.
+            foreach (float x in new[] { 1.6f, 2.4f, 8.7f, 9.4f })
+            foreach (float y in new[] { 0.6f, 1.6f })
+                points.Add(ZonePoint(stage, new Vector3(x, y, 3.2f)));
+            // The open floor of the bay, kept clear of the walls.
+            for (float x = -8f; x <= 13.01f; x += 2.5f)
+            for (float z = -9f; z <= 2.51f; z += 2.5f)
+            {
+                var p = new Vector3(x, 1.2f, z);
+                if (InZone(guests, p).z < 1.6f && InZone(stage, p).z < 2.6f && InZone(band, p).z < 2.2f)
+                    points.Add(p);
+            }
+
             group.probePositions = points.ToArray();
 
             var probe = new GameObject("ReflectionProbe").AddComponent<ReflectionProbe>();
             probe.transform.SetParent(parent, false);
-            probe.transform.position = new Vector3(0f, 2.5f, 2.5f);
+            probe.transform.position = new Vector3(2f, 2.5f, -1.5f);
             probe.mode = ReflectionProbeMode.Baked;
-            probe.size = new Vector3(25f, 7f, 10f);
+            probe.size = new Vector3(30f, 7f, 20f);
             probe.boxProjection = true;
-            probe.resolution = 256;
+            probe.resolution = 512;
         }
 
-        private static void AddCameraAndShots(Transform parent, StudioRig rig)
+        /// <summary>
+        /// A marker's design frame: x along its wall, z towards the wall. Empties arrive from the FBX turned half a turn
+        /// about y (their forward faces the audience), so the design frame is that rotation turned back.
+        /// </summary>
+        private static Quaternion DesignFrame(Transform marker)
+        {
+            return marker.rotation * Quaternion.Euler(0f, 180f, 0f);
+        }
+
+        private static Vector3 ZonePoint(Transform zone, Vector3 local)
+        {
+            return zone.position + DesignFrame(zone) * local;
+        }
+
+        private static Vector3 InZone(Transform zone, Vector3 world)
+        {
+            return Quaternion.Inverse(DesignFrame(zone)) * (world - zone.position);
+        }
+
+        /// <summary>The guest zone's frame must map its design points to where the model put them (CAMT_Seats).</summary>
+        private static void CheckZoneFrame(Transform guests, Dictionary<string, Transform> markers)
+        {
+            var expected = Find(markers, "CAMT_Seats").position;
+            var got = ZonePoint(guests, new Vector3(-4.6f, 1.45f, 3.6f));
+            if (Vector3.Distance(expected, got) > 0.05f)
+                throw new InvalidOperationException("Zone_Guests frame is off: " + got + " instead of " + expected);
+        }
+
+        private static void AddCameraAndShots(Transform parent, StudioRig rig, Dictionary<string, Transform> markers)
         {
             var cameraGo = new GameObject("StudioCamera");
             cameraGo.transform.SetParent(parent, false);
@@ -337,23 +403,27 @@ namespace FamilyQuiz.EditorTools.Studio
             data.antialiasingQuality = AntialiasingQuality.High;
             rig.Camera = camera;
 
+            // Every shot is a CAM_<name> marker aimed at CAMT_<name>, placed per zone in build_studio.py.
             var shots = new GameObject("Shots").transform;
             shots.SetParent(parent, false);
-            rig.WideShot = Shot(shots, "Wide", new Vector3(-3.1f, 2.5f, -6.9f), new Vector3(-3.1f, 1.05f, 3.6f));
-            rig.SeatsShot = Shot(shots, "Seats", new Vector3(-4.6f, 1.45f, -5.6f), new Vector3(-4.6f, 1.45f, 3.6f));
-            rig.EstablishStart = Shot(shots, "EstablishStart", new Vector3(0.8f, 7.4f, -11.5f), new Vector3(1.2f, 1.6f, 3.5f));
-            rig.EstablishEnd = Shot(shots, "EstablishEnd", new Vector3(0.2f, 4.0f, -9.8f), new Vector3(0.6f, 1.4f, 3.5f));
-            rig.HostSoloKonstantin = Shot(shots, "HostSoloKonstantin", new Vector3(0.55f, 1.62f, 0.5f), new Vector3(0.7f, 1.32f, 3.85f));
-            rig.HostSoloIlja = Shot(shots, "HostSoloIlja", new Vector3(1.95f, 1.62f, 0.5f), new Vector3(1.8f, 1.32f, 3.85f));
-            rig.CurtainShot = Shot(shots, "Curtain", new Vector3(5.5f, 2.3f, -4.0f), new Vector3(5.5f, 2.55f, 4.0f));
-            rig.StageShot = Shot(shots, "Stage", new Vector3(5.5f, 2.075f, -2.0f), new Vector3(5.5f, 2.075f, 5.9f));
-            rig.StagePushIn = Shot(shots, "StagePushIn", new Vector3(5.5f, 2.075f, -1.65f), new Vector3(5.5f, 2.075f, 5.9f));
+            Transform Shot(string name) => ShotFrom(shots, markers, name);
+            rig.WideShot = Shot("Wide");
+            rig.SeatsShot = Shot("Seats");
+            rig.EstablishStart = Shot("EstablishStart");
+            rig.EstablishEnd = Shot("EstablishEnd");
+            rig.HostSoloKonstantin = Shot("HostSoloKonstantin");
+            rig.HostSoloIlja = Shot("HostSoloIlja");
+            rig.CurtainShot = Shot("Curtain");
+            rig.StageShot = Shot("Stage");
+            rig.StagePushIn = Shot("StagePushIn");
             camera.transform.SetPositionAndRotation(rig.WideShot.position, rig.WideShot.rotation);
             camera.fieldOfView = rig.WideFieldOfView;
         }
 
-        private static Transform Shot(Transform parent, string name, Vector3 at, Vector3 lookAt)
+        private static Transform ShotFrom(Transform parent, Dictionary<string, Transform> markers, string name)
         {
+            var at = Find(markers, "CAM_" + name).position;
+            var lookAt = Find(markers, "CAMT_" + name).position;
             var t = new GameObject("Shot_" + name).transform;
             t.SetParent(parent, false);
             t.SetPositionAndRotation(at, Quaternion.LookRotation(lookAt - at));
@@ -430,11 +500,11 @@ namespace FamilyQuiz.EditorTools.Studio
             settings.realtimeGI = false;
             settings.mixedBakeMode = MixedLightingMode.IndirectOnly;
             settings.lightmapper = LightingSettings.Lightmapper.ProgressiveGPU;
-            settings.lightmapResolution = 14f;
+            settings.lightmapResolution = 30f;
             settings.lightmapPadding = 3;
-            settings.lightmapMaxSize = 2048;
-            settings.directSampleCount = 32;
-            settings.indirectSampleCount = 256;
+            settings.lightmapMaxSize = 4096;
+            settings.directSampleCount = 64;
+            settings.indirectSampleCount = 512;
             settings.environmentSampleCount = 64;
             settings.maxBounces = 3;
             settings.lightmapCompression = LightmapCompression.HighQuality;

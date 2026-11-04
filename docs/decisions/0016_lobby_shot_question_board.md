@@ -20,7 +20,7 @@ Date: Nov 4, 2026. Decided by Ilia after a review of the reference pictures. The
 | --- | --- |
 | StartCountdown stays in `Seats` with the studio dark, so the lights come up on "go" at the start of the Intro | 21 |
 | The question overlay sits inside the board with a margin, so the slow push in during Answer only makes the board grow around the text; the text never crosses the board's edge | 21 |
-| Layout seen from the audience, left to right: guest area in front of the windows, desk, curtain stage, band riser (from `Concept of wide angle.png`, a map of the studio, not a camera view) | 21 |
+| Layout seen from the audience, left to right: guest area in front of the windows, desk, curtain stage, band riser (from `Concept of wide angle.png`, a map of the studio, not a camera view). **Amended Nov 4, 2026 by Ilia:** not in one line but a bay, like the reference pictures: guests and desk along the window wall, a 45 degree turn to the curtain wall, another to the band, so the studio is compact and cosy | 21 |
 | The set fabric is muted dark green or brown so the 16 signature colors stand out | 21 |
 | Lighting stays as written in 0015: Blender only models, the lighting is done and baked in Unity (Ilia left this to the AI) | 0015 |
 | `HostSolo` plays only in the Intro and FinalIntro, never where players need the set to read the game (not yet confirmed) | 21 |

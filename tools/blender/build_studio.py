@@ -3,11 +3,15 @@ Builds the late night studio set (docs/21_staging.md, "Game night 1 version"; de
 unity/Assets/Game/Art/Models/Studio.fbx. Original design (D49, D93): no real show's set pieces.
 
 Run headless from the repo root (Windows or macOS):
-    blender --background --python tools/blender/build_studio.py -- unity/Assets/Game/Art/Models/Studio.fbx
+    blender --background --python tools/blender/build_studio.py -- unity/Assets/Game/Art/Models/Studio.fbx [--plan plan.png]
 
-Design space: metres, x to the right as seen from the audience, y away from the audience (the back wall is at +y),
+Design space: metres, x to the right as seen from the audience, y away from the audience (the walls are at +y),
 z up. Unity receives the same layout as x right, y up, z away from the audience (the export turns the set 180 degrees
 about z, because the FBX exporter maps Blender (x, y, z) to Unity (-x, z, -y)).
+
+The walls form a bay (ZONES below): the guests and the desk along the window wall, a 45 degree turn to the curtain
+wall, another to the band wall. Each zone is modelled straight in its own design frame and turned into place at the
+end, so every number inside a build_* function is in that zone's frame.
 
 Blender only models. Lighting is done and baked in Unity (0015). Empties mark where Unity puts things:
     Seat_1 .. Seat_8   guest seats in fill order (two middle sofa seats, two outer sofa seats, inner armchairs,
@@ -15,6 +19,9 @@ Blender only models. Lighting is done and baked in Unity (0015). Empties mark wh
     Host_konstantin, Host_ilja   host places behind the desk
     LP_<kind>_<n>      practical lights (pendant, floor lamp, desk lamp, sconce, stage lamp, shelf, window)
     LT_Board           what the stage lamps aim at
+    LK_<name>, LKT_<name>     Unity lights (keys, fill, uplights, washes) and what each aims at
+    CAM_<name>, CAMT_<name>   camera shots (StudioRig) and what each looks at
+    Zone_<name>        each zone's design origin and turn, for Unity's light probe grids
 Objects named Dyn_* move at runtime (the curtain halves); everything else is static and lightmapped.
 Material slot names (M_*) are matched by name in Unity.
 """
@@ -32,6 +39,17 @@ random.seed(7)
 # ------------------------------------------------------------------------------------------------ helpers
 
 COLLECTION = None
+
+# Zones: each part of the set is modelled in its own straight design frame and then turned into place, so the walls
+# form a bay around the cameras (guests and desk along the windows, a 45 degree turn to the curtain wall, another to
+# the band). A zone is (pivot in its design frame, where that pivot lands, turn about z in degrees).
+CURRENT_ZONE = "World"
+OBJ_ZONE = {}
+
+
+def set_zone(name):
+    global CURRENT_ZONE
+    CURRENT_ZONE = name
 
 
 def material(name):
@@ -118,6 +136,7 @@ class Piece:
         self.bm.free()
         obj = bpy.data.objects.new(self.name, mesh)
         COLLECTION.objects.link(obj)
+        OBJ_ZONE[obj.name] = CURRENT_ZONE
         obj.location = Vector(origin)
         for m in self.mats:
             mesh.materials.append(material(m))
@@ -138,7 +157,15 @@ def empty(name, loc, yaw=0.0):
     obj.location = Vector(loc)
     obj.rotation_euler = (0, 0, yaw)
     COLLECTION.objects.link(obj)
+    OBJ_ZONE[obj.name] = CURRENT_ZONE
     return obj
+
+
+def aimed(name, at, target):
+    """A light or camera marker, PREFIX_Name, and the point it looks at, PREFIXT_Name (LK_Fill and LKT_Fill)."""
+    prefix, rest = name.split("_", 1)
+    empty(name, at)
+    empty(prefix + "T_" + rest, target)
 
 
 def box_uvs(obj):
@@ -169,7 +196,23 @@ def box_uvs(obj):
 
 PLATFORM_TOP = 0.18           # the guest and desk riser
 STAGE_TOP = 0.45              # the curtain stage floor
-WALL_Y = 6.5                  # front face of the back wall
+WALL_Y = 6.5                  # back of the stage box (stage zone)
+WALL_TOP = 6.0                # height of every wall: lower than a real studio, so the room feels cosy
+GUEST_WALL_Y = 5.5            # front face of the window wall (guest zone)
+GUEST_X = (-10.0, 4.55)       # the window wall's ends (guest zone)
+BAND_WALL_Y = 6.0             # front face of the band wall (band zone)
+BAND_X = (7.17, 12.4)         # the band wall's ends (band zone)
+CENTER_X = (1.1, 9.85)        # the curtain wall's ends; its front face is the proscenium's (stage zone = world)
+CORNER_L = (CENTER_X[0], 3.7)
+CORNER_R = (CENTER_X[1], 3.7)
+# Every zone's wall end lands on a corner of the curtain wall. A zone's riser stops before the corner by about 0.41 of
+# its depth (tan 22.5 degrees), so neighbouring zones never overlap.
+ZONES = {
+    "World": ((0.0, 0.0), (0.0, 0.0), 0.0),
+    "Stage": ((0.0, 0.0), (0.0, 0.0), 0.0),
+    "Guests": ((GUEST_X[1], GUEST_WALL_Y), CORNER_L, 45.0),
+    "Band": ((BAND_X[0], BAND_WALL_Y), CORNER_R, -45.0),
+}
 WINDOW_X = (-8.6, -1.0)
 WINDOW_Z = (1.05, 4.7)
 OPENING_X = (3.4, 7.6)        # the proscenium opening
@@ -185,32 +228,113 @@ DESK_CX, DESK_Y = 1.25, 2.55  # desk centre (x) and front face (y)
 
 # ------------------------------------------------------------------------------------------------ the room
 
-def build_room():
-    floor = Piece("Floor", smooth=False)
-    floor.box(-12.5, 12.5, -9.0, WALL_Y + 0.05, -0.05, 0.0, "M_FloorWood")
-    floor.build()
+def wall_trim(piece, x0, x1, y0, battens, top=WALL_TOP, wainscot=True):
+    """Skirting, a dado rail, a cornice, vertical battens and framed wainscot panels on a wall face at y0."""
+    piece.box(x0, x1, y0 - 0.06, y0, 0.0, 0.14, "M_WoodDark")            # skirting
+    piece.box(x0, x1, y0 - 0.05, y0, 0.95, 1.02, "M_WoodDark")           # dado rail
+    piece.box(x0, x1, y0 - 0.09, y0, top - 0.22, top - 0.12, "M_WoodDark")   # cornice
+    piece.box(x0, x1, y0 - 0.05, y0, top - 0.32, top - 0.22, "M_WoodDark")
+    for x in battens:
+        piece.box(x - 0.04, x + 0.04, y0 - 0.03, y0, 1.02, top - 0.32, "M_WoodDark")
+    if wainscot:
+        n = max(1, int(round((x1 - x0) / 1.1)))
+        w = (x1 - x0) / n
+        for i in range(n):
+            a, b = x0 + i * w + 0.12, x0 + (i + 1) * w - 0.12
+            if b - a < 0.2:
+                continue
+            for z0, z1 in [(0.26, 0.3), (0.79, 0.83)]:
+                piece.box(a, b, y0 - 0.025, y0, z0, z1, "M_WoodDark")
+            piece.box(a, a + 0.04, y0 - 0.025, y0, 0.3, 0.79, "M_WoodDark")
+            piece.box(b - 0.04, b, y0 - 0.025, y0, 0.3, 0.79, "M_WoodDark")
 
-    # Back wall with the big window behind the guest area.
-    wall = Piece("BackWall", bevel=0.01)
+
+def room_side(p, margin=0.0):
+    """True when the design point p is inside the bay, at least margin from every wall."""
+    s = math.sqrt(0.5)
+    gx, gy = CORNER_L
+    bx, by = CORNER_R
+    return ((p[0] - gx) * s - (p[1] - gy) * s >= margin and gy - p[1] >= margin
+            and -(p[0] - bx) * s - (p[1] - by) * s >= margin)
+
+
+def clip_to_room(a, b, margin):
+    """The part of the straight run a..b inside the bay, or None."""
+    inside = [i / 200 for i in range(201) if room_side((a[0] + (b[0] - a[0]) * i / 200, a[1] + (b[1] - a[1]) * i / 200), margin)]
+    if not inside:
+        return None
+    t0, t1 = inside[0], inside[-1]
+    return ((a[0] + (b[0] - a[0]) * t0, a[1] + (b[1] - a[1]) * t0), (a[0] + (b[0] - a[0]) * t1, a[1] + (b[1] - a[1]) * t1))
+
+
+def build_room():
+    set_zone("World")
+    floor = Piece("Floor", smooth=False)
+    floor.box(-14.0, 17.0, -15.0, 8.0, -0.05, 0.0, "M_FloorWood")
+    floor.build()
+    # A dark ceiling over everything, so no shot sees the city over the top of the walls.
+    ceiling = Piece("Ceiling", smooth=False)
+    ceiling.box(-14.0, 17.0, -15.0, 8.0, WALL_TOP, WALL_TOP + 0.05, "M_BackCloth")
+    ceiling.build()
+
+    # Pilasters on the two corners of the bay, on the bisector, so the turn reads as a design, not a seam.
+    posts = Piece("CornerPosts", bevel=0.01)
+    for (cx, cy), yaw in ((CORNER_L, math.radians(22.5)), (CORNER_R, math.radians(-22.5))):
+        posts.box(cx - 0.26, cx + 0.26, cy - 0.12, cy + 0.3, 0.0, WALL_TOP, "M_WoodDark", yaw, (cx, cy, 0))
+    posts.build()
+
+    # Ceiling trusses with lamp cans, kept inside the bay: a TV studio above a living room.
+    truss = Piece("Truss", bevel=0.005)
+    tz = WALL_TOP - 0.45
+    cans = []
+    for y in [-4.0, -1.0, 2.0]:
+        run = clip_to_room((-16.0, y), (18.0, y), 0.35)
+        if run:
+            (xa, _), (xb, _) = run
+            truss.box(xa, xb, y - 0.12, y + 0.12, tz, tz + 0.25, "M_Truss")
+            cans += [(x, y) for x in [xa + (xb - xa) * k / 4 for k in (0.5, 1.5, 2.5, 3.5)]]
+    for x in [-6.0, -2.0, 2.0, 6.0, 10.0]:
+        run = clip_to_room((x, -9.0), (x, 3.5), 0.35)
+        if run:
+            (_, ya), (_, yb) = run
+            truss.box(x - 0.12, x + 0.12, ya, yb, tz + 0.25, tz + 0.4, "M_Truss")
+    for x, y in cans:
+        truss.cyl((x, y, tz - 0.25), 0.17, 0.42, "M_MetalBlack", segments=16)
+        truss.box(x - 0.02, x + 0.02, y - 0.02, y + 0.02, tz - 0.05, tz, "M_MetalBlack")
+    truss.build()
+
+    # Soft fill from the audience side, like the big soft lights of a TV studio (a Unity area light).
+    aimed("LK_Fill", (2.5, -14.0, 4.8), (2.5, 0.0, 1.4))
+    # The establishing shot looks into the bay from the front, high, and comes down (Unity lerps between the two).
+    aimed("CAM_EstablishStart", (1.0, -17.5, 5.3), (1.5, 0.0, 1.8))
+    aimed("CAM_EstablishEnd", (1.0, -15.0, 3.6), (1.5, 0.0, 1.4))
+
+    build_guest_wall()
+    build_curtain_wall()
+    build_band_wall()
+
+
+def build_guest_wall():
+    """The window wall behind the guests and the desk (guest zone)."""
+    set_zone("Guests")
+    wall = Piece("GuestWall", bevel=0.01)
     t = 0.3
-    y0, y1 = WALL_Y, WALL_Y + t
-    top = 7.0
+    y0, y1 = GUEST_WALL_Y, GUEST_WALL_Y + t
+    x0, x1 = GUEST_X
+    top = WALL_TOP
     wx0, wx1 = WINDOW_X
     wz0, wz1 = WINDOW_Z
-    wall.box(-12.5, wx0, y0, y1, 0, top, "M_WoodPanel")
-    wall.box(wx1, 12.5, y0, y1, 0, top, "M_WoodPanel")
+    wall.box(x0, wx0, y0, y1, 0, top, "M_WoodPanel")
+    wall.box(wx1, x1, y0, y1, 0, top, "M_WoodPanel")
     wall.box(wx0, wx1, y0, y1, 0, wz0, "M_WoodPanel")
     wall.box(wx0, wx1, y0, y1, wz1, top, "M_WoodPanel")
-    # Panel trim: a dado rail and vertical battens across the solid wall.
-    wall.box(-12.5, 12.5, y0 - 0.04, y0, 0.95, 1.02, "M_WoodDark")
-    wall.box(-12.5, 12.5, y0 - 0.06, y0, 0.0, 0.14, "M_WoodDark")   # skirting
-    for x in [-12.0, -10.8, -9.6, -0.2, 2.4, 8.6, 9.8, 11.0, 12.2]:
-        wall.box(x - 0.04, x + 0.04, y0 - 0.03, y0, 1.02, top, "M_WoodDark")
+    wall_trim(wall, x0, x1, y0, [wx0 - 0.35, wx1 + 0.35], top)
+    wall.box(x0 - 0.3, x0, y0 - 0.12, y1, 0, top, "M_WoodDark")        # end pilaster
     wall.build()
 
     # Window frame and mullions.
     win = Piece("Window", bevel=0.008)
-    fy0, fy1 = WALL_Y - 0.05, WALL_Y + 0.12
+    fy0, fy1 = GUEST_WALL_Y - 0.05, GUEST_WALL_Y + 0.12
     win.box(wx0 - 0.12, wx1 + 0.12, fy0, fy1, wz0 - 0.12, wz0, "M_WoodDark")      # sill
     win.box(wx0 - 0.12, wx1 + 0.12, fy0, fy1, wz1, wz1 + 0.12, "M_WoodDark")
     win.box(wx0 - 0.12, wx0, fy0, fy1, wz0, wz1, "M_WoodDark")
@@ -222,42 +346,63 @@ def build_room():
     for z in [wz0 + (wz1 - wz0) * 0.36, wz0 + (wz1 - wz0) * 0.7]:
         win.box(wx0, wx1, fy0 + 0.04, fy1, z - 0.03, z + 0.03, "M_MetalBlack")
     win.build()
-    empty("LP_Window_1", ((wx0 + wx1) / 2, WALL_Y + 0.4, (wz0 + wz1) / 2))
+    empty("LP_Window_1", ((wx0 + wx1) / 2, GUEST_WALL_Y + 0.4, (wz0 + wz1) / 2))
 
     # The invented evening city far behind the window: a lit backdrop.
     city = Piece("CityBackdrop", smooth=False)
-    city.box(-26.0, 8.0, 17.0, 17.05, -2.0, 15.0, "M_City")
+    city.box(-26.0, 8.0, GUEST_WALL_Y + 10.5, GUEST_WALL_Y + 10.55, -2.0, 15.0, "M_City")
     city.build()
 
-    # Side walls, so the wide shots end in wood, not in black.
-    side = Piece("SideWalls", bevel=0.01)
-    side.box(-12.8, -12.5, -6.0, WALL_Y + 0.3, 0, 7.0, "M_WoodPanel")
-    side.box(12.5, 12.8, -6.0, WALL_Y + 0.3, 0, 7.0, "M_WoodPanel")
-    side.build()
+    # Uplights grazing the wall beside the window.
+    for i, x in enumerate([WINDOW_X[0] - 0.35, WINDOW_X[1] + 0.38]):
+        aimed("LK_Uplight_G%d" % (i + 1), (x, GUEST_WALL_Y - 0.3, 0.25), (x, GUEST_WALL_Y + 0.05, 5.0))
 
-    # Ceiling trusses with lamp cans: a TV studio above a living room.
-    truss = Piece("Truss", bevel=0.005)
-    for y in [-1.5, 1.5, 4.5]:
-        truss.box(-12.4, 12.4, y - 0.12, y + 0.12, 7.2, 7.45, "M_Truss")
-    for x in [-9.0, -3.0, 3.0, 9.0]:
-        truss.box(x - 0.12, x + 0.12, -1.6, 4.6, 7.45, 7.6, "M_Truss")
-    for i, (x, y) in enumerate([(-7.5, -1.5), (-4.0, -1.5), (-0.5, -1.5), (4.0, -1.5), (7.5, -1.5),
-                                (-6.0, 1.5), (1.0, 1.5), (5.5, 1.5), (10.0, 1.5)]):
-        truss.cyl((x, y, 6.95), 0.17, 0.42, "M_MetalBlack", segments=16)
-        truss.box(x - 0.02, x + 0.02, y - 0.02, y + 0.02, 7.15, 7.2, "M_MetalBlack")
-    truss.build()
+
+def build_curtain_wall():
+    """The wall around the proscenium, between the two corners (stage zone, which is the world frame)."""
+    set_zone("Stage")
+    wall = Piece("CurtainWall", bevel=0.01)
+    y0, y1 = PROSC_Y
+    for a, b in [(CENTER_X[0], 2.55), (8.45, CENTER_X[1])]:
+        wall.box(a, b, y0, y1, 0, WALL_TOP, "M_WoodPanel")
+        wall_trim(wall, a, b, y0, [], WALL_TOP, wainscot=False)
+    wall.box(2.55, 8.45, y0 - 0.09, y0, WALL_TOP - 0.22, WALL_TOP - 0.12, "M_WoodDark")
+    wall.build()
+    for i, x in enumerate([1.85, 9.15]):
+        aimed("LK_Uplight_C%d" % (i + 1), (x, y0 - 0.3, 0.25), (x, y0 + 0.05, 5.0))
+
+
+def build_band_wall():
+    set_zone("Band")
+    wall = Piece("BandWall", bevel=0.01)
+    y0, y1 = BAND_WALL_Y, BAND_WALL_Y + 0.3
+    x0, x1 = BAND_X
+    wall.box(x0, x1, y0, y1, 0, WALL_TOP, "M_WoodPanel")
+    wall_trim(wall, x0, x1, y0, [9.0, 11.0], WALL_TOP)
+    wall.box(x1, x1 + 0.3, y0 - 0.12, y1, 0, WALL_TOP, "M_WoodDark")    # end pilaster
+    wall.build()
+    aimed("LK_Uplight_B1", (12.05, y0 - 0.3, 0.25), (12.05, y0 + 0.05, 5.0))
 
 
 # ------------------------------------------------------------------------------------------------ guest area
 
 def build_guest_area():
+    set_zone("Guests")
     # The riser under the guests and the desk, with a warm light strip along its front edge.
     riser = Piece("GuestRiser", bevel=0.02)
-    riser.box(-9.4, 2.9, 1.2, 5.2, 0.0, PLATFORM_TOP, "M_WoodDark")
+    riser.box(-9.95, 2.9, 2.0, GUEST_WALL_Y, 0.0, PLATFORM_TOP, "M_WoodDark")
     riser.build()
     strip = Piece("GuestRiserStrip", smooth=False)
-    strip.box(-9.35, 2.85, 1.17, 1.2, 0.05, 0.11, "M_GlowStrip")
+    strip.box(-9.9, 2.85, 1.97, 2.0, 0.05, 0.11, "M_GlowStrip")
     strip.build()
+
+    # Keys and cameras for the guests and hosts (Unity reads these markers; docs/21_staging.md, shot table).
+    aimed("LK_GuestKey", (-4.0, -2.2, 5.5), (-4.6, 3.7, 0.7))
+    aimed("LK_HostKey", (1.0, 0.2, 5.0), (1.25, 3.9, 1.0))
+    aimed("CAM_Wide", (-3.1, -6.9, 2.5), (-3.1, 3.6, 1.05))
+    aimed("CAM_Seats", (-4.6, -5.6, 1.45), (-4.6, 3.6, 1.45))
+    aimed("CAM_HostSoloKonstantin", (0.55, 0.5, 1.62), (0.7, 3.85, 1.32))
+    aimed("CAM_HostSoloIlja", (1.95, 0.5, 1.62), (1.8, 3.85, 1.32))
 
     rug = Piece("Rug", bevel=0.004)
     rug.box(-9.0, -0.9, 2.1, 4.9, PLATFORM_TOP, PLATFORM_TOP + 0.012, "M_Rug")
@@ -334,7 +479,7 @@ def build_guest_area():
 
     pend = Piece("Pendants", bevel=0.003)
     for i, x in enumerate([-5.45, -3.85]):
-        pend.cyl((x, 3.75, 5.2), 0.006, 3.6, "M_MetalBlack", segments=6)
+        pend.cyl((x, 3.75, (3.4 + WALL_TOP) / 2), 0.006, WALL_TOP - 3.4, "M_MetalBlack", segments=6)
         pend.cyl((x, 3.75, 3.28), 0.3, 0.26, "M_MetalBrass", segments=32, radius2=0.05, caps=False)
         pend.sphere((x, 3.75, 3.18), 0.06, "M_Bulb")
         empty("LP_Pendant_%d" % (i + 1), (x, 3.75, 3.12))
@@ -354,6 +499,7 @@ def build_guest_area():
 # ------------------------------------------------------------------------------------------------ the desk
 
 def build_desk():
+    set_zone("Guests")
     z0 = PLATFORM_TOP + 0.01
     x0, x1 = DESK_CX - 1.25, DESK_CX + 1.25
     top_z = z0 + 1.0
@@ -413,7 +559,7 @@ def build_desk():
     # Bookshelf behind the hosts: the cosy backdrop of the host solo shot.
     shelf = Piece("HostShelf", bevel=0.006)
     sx0, sx1 = DESK_CX - 1.5, DESK_CX + 1.5
-    sy0, sy1 = WALL_Y - 0.42, WALL_Y - 0.02
+    sy0, sy1 = GUEST_WALL_Y - 0.42, GUEST_WALL_Y - 0.02
     shelf.box(sx0, sx0 + 0.05, sy0, sy1, 0, 3.6, "M_WoodDark")
     shelf.box(sx1 - 0.05, sx1, sy0, sy1, 0, 3.6, "M_WoodDark")
     shelf.box((sx0 + sx1) / 2 - 0.025, (sx0 + sx1) / 2 + 0.025, sy0, sy1, 0, 3.6, "M_WoodDark")
@@ -463,6 +609,11 @@ def fill_books(name, x0, x1, y0, y1, levels, skip_mid=None):
 # ------------------------------------------------------------------------------------------------ the curtain stage
 
 def build_stage():
+    set_zone("Stage")
+    aimed("LK_CurtainWash", (5.5, 0.2, WALL_TOP - 0.4), (5.5, 4.3, 2.4))
+    aimed("CAM_Curtain", (5.5, -4.0, 2.3), (5.5, 4.0, 2.55))
+    aimed("CAM_Stage", (5.5, -2.0, 2.075), (5.5, 5.9, 2.075))
+    aimed("CAM_StagePushIn", (5.5, -1.65, 2.075), (5.5, 5.9, 2.075))
     stage = Piece("Stage", bevel=0.015)
     stage.box(2.75, 8.25, 3.05, WALL_Y, 0.0, STAGE_TOP, "M_WoodDark")
     stage.box(2.85, 8.15, 3.1, WALL_Y, STAGE_TOP - 0.005, STAGE_TOP, "M_StageFloor")
@@ -473,7 +624,7 @@ def build_stage():
 
     # Proscenium: a wooden front with an arched opening (original shape: no bulbs around it, D93).
     plate = Piece("Proscenium", bevel=0.0, smooth=False)
-    plate.box(2.55, 8.45, PROSC_Y[0], PROSC_Y[1], 0.0, 5.6, "M_WoodPanel")
+    plate.box(2.55, 8.45, PROSC_Y[0], PROSC_Y[1], 0.0, WALL_TOP, "M_WoodPanel")
     plate_obj = plate.build()
     cut = Piece("ProsceniumCut", smooth=False)
     cx = (OPENING_X[0] + OPENING_X[1]) / 2
@@ -612,6 +763,8 @@ def build_stage_lamp(name, x, y, index):
 # ------------------------------------------------------------------------------------------------ band riser (no band yet)
 
 def build_band():
+    set_zone("Band")
+    aimed("LK_BandTop", (10.3, 3.2, WALL_TOP - 0.4), (10.3, 4.2, 0.4))
     riser = Piece("BandRiser", bevel=0.015)
     riser.box(8.85, 11.9, 2.4, 5.9, 0.0, 0.4, "M_WoodDark")
     riser.build()
@@ -661,40 +814,41 @@ def build_band():
 # ------------------------------------------------------------------------------------------------ dressing
 
 def build_dressing():
-    # Tall bookshelf at the far left, by the window.
-    shelf = Piece("LeftShelf", bevel=0.006)
-    sx0, sx1 = -12.3, -9.3
-    sy0, sy1 = WALL_Y - 0.45, WALL_Y - 0.02
-    for x in [sx0, (sx0 + sx1) / 2 - 0.025, sx1 - 0.05]:
+    set_zone("Guests")
+    # A narrow bookshelf filling the corner end of the window wall, beside the host shelf.
+    shelf = Piece("CornerShelf", bevel=0.006)
+    sx0, sx1 = 2.95, 4.3
+    sy0, sy1 = GUEST_WALL_Y - 0.45, GUEST_WALL_Y - 0.02
+    for x in [sx0, sx1 - 0.05]:
         shelf.box(x, x + 0.05, sy0, sy1, 0, 4.4, "M_WoodDark")
     shelf.box(sx0, sx1, sy1 - 0.03, sy1, 0, 4.4, "M_WoodDark")
     levels = [0.0, 0.8, 1.6, 2.4, 3.2, 4.0]
     for z in levels:
         shelf.box(sx0, sx1, sy0, sy1, z, z + 0.04, "M_WoodDark")
     shelf.build()
-    fill_books("LeftShelfBooks", sx0 + 0.07, sx1 - 0.07, sy0 + 0.04, sy1 - 0.06, levels[:-1], skip_mid=(sx0 + sx1) / 2)
+    fill_books("CornerShelfBooks", sx0 + 0.07, sx1 - 0.07, sy0 + 0.04, sy1 - 0.06, levels[:-1])
     empty("LP_Shelf_3", ((sx0 + sx1) / 2, sy0 + 0.1, 2.25))
 
-    # Plants: a big one by the window, one by the stage, small ones on the shelves.
-    plant("PlantBig", -9.7, 5.55, PLATFORM_TOP, 1.0)
-    plant("PlantStage", 2.25, 5.6, PLATFORM_TOP, 0.85)
-    plant("PlantShelf1", -11.6, WALL_Y - 0.25, 3.24, 0.32)
-    plant("PlantShelf2", DESK_CX + 1.1, WALL_Y - 0.25, 2.99, 0.3)
+    # Plants: a big one by the window, one beside the stage, small ones on the shelves.
+    plant("PlantBig", -9.55, GUEST_WALL_Y - 0.6, PLATFORM_TOP, 1.0)
+    plant("PlantShelf1", 3.95, GUEST_WALL_Y - 0.25, 4.04, 0.32)
+    plant("PlantShelf2", DESK_CX + 1.1, GUEST_WALL_Y - 0.25, 2.99, 0.3)
+    set_zone("Stage")
+    plant("PlantStage", 1.5, PROSC_Y[0] - 0.4, 0.0, 0.85)
+    set_zone("Band")
     plant("PlantBand", 11.7, 5.6, 0.4, 0.7)
 
-    # Wall sconces between the stage and the band, and at the far left.
-    sconce = Piece("Sconces", bevel=0.004)
-    for i, (x, z) in enumerate([(-12.45, 3.3), (8.65, 3.6), (12.45, 3.3)]):
-        y = WALL_Y - 0.03 if abs(x) < 12 else 2.0
-        if abs(x) >= 12:
-            sconce.box(x - 0.03 * (1 if x > 0 else -1) - 0.03, x + 0.03, y - 0.12, y + 0.12, z - 0.2, z + 0.1, "M_MetalBrass")
-            sconce.cyl((x - 0.18 * (1 if x > 0 else -1), y, z + 0.1), 0.11, 0.2, "M_LampShade", segments=20, radius2=0.08, caps=False)
-            empty("LP_Sconce_%d" % (i + 1), (x - 0.18 * (1 if x > 0 else -1), y, z + 0.08))
-        else:
+    # Wall sconces on both sides of the proscenium and on the band wall.
+    for zone, name, specs in (("Stage", "Sconces", [(1.85, PROSC_Y[0], 3.6), (9.15, PROSC_Y[0], 3.6)]),
+                              ("Band", "BandSconce", [(8.0, BAND_WALL_Y, 3.3)])):
+        set_zone(zone)
+        sconce = Piece(name, bevel=0.004)
+        for k, (x, y, z) in enumerate(specs):
+            y -= 0.03
             sconce.box(x - 0.12, x + 0.12, y - 0.04, y, z - 0.2, z + 0.1, "M_MetalBrass")
             sconce.cyl((x, y - 0.18, z + 0.1), 0.11, 0.2, "M_LampShade", segments=20, radius2=0.08, caps=False)
-            empty("LP_Sconce_%d" % (i + 1), (x, y - 0.18, z + 0.08))
-    sconce.build()
+            empty("LP_Sconce_%s%d" % (zone[0], k + 1), (x, y - 0.18, z + 0.08))
+        sconce.build()
 
 
 def plant(name, x, y, z, s):
@@ -717,6 +871,64 @@ def plant(name, x, y, z, s):
 
 
 # ------------------------------------------------------------------------------------------------ export
+
+def zone_matrix(name):
+    (lx, ly), (wx, wy), yaw = ZONES[name]
+    return (Matrix.Translation((wx, wy, 0)) @ Matrix.Rotation(math.radians(yaw), 4, "Z")
+            @ Matrix.Translation((-lx, -ly, 0)))
+
+
+def to_zone_frames():
+    """Moves every object from its zone's design frame into place (an object transform, so Dyn_ pieces keep their local
+    axes), then leaves one Zone_<name> marker per zone at its design origin for Unity's probe grids."""
+    for obj in list(COLLECTION.objects):
+        obj.matrix_world = zone_matrix(OBJ_ZONE.get(obj.name, "World")) @ obj.matrix_world
+    set_zone("World")
+    for name, (_, _, yaw) in ZONES.items():
+        empty("Zone_" + name, tuple(zone_matrix(name) @ Vector((0, 0, 0))), math.radians(yaw))
+
+
+def render_plan(path):
+    """A top down picture of the layout with every marker drawn, to check the bay without opening Unity."""
+    scene = bpy.context.scene
+    cam_data = bpy.data.cameras.new("PlanCam")
+    cam_data.type = "ORTHO"
+    cam_data.ortho_scale = 34.0
+    cam = bpy.data.objects.new("PlanCam", cam_data)
+    scene.collection.objects.link(cam)
+    cam.location = (1.5, -4.0, 30.0)
+    scene.camera = cam
+    scene.render.engine = "BLENDER_WORKBENCH"
+    scene.display.shading.light = "STUDIO"
+    scene.display.shading.color_type = "MATERIAL"
+    scene.render.resolution_x, scene.render.resolution_y = 1600, 1300
+    scene.render.filepath = path
+    marks = []
+    for obj in list(COLLECTION.objects):
+        if obj.type == "EMPTY" and obj.name.split("_")[0] in ("CAM", "LK", "Seat", "Host"):
+            bm = bmesh.new()
+            bmesh.ops.create_cone(bm, cap_ends=True, segments=12, radius1=0.18, radius2=0.18, depth=0.05)
+            mesh = bpy.data.meshes.new("mark")
+            bm.to_mesh(mesh)
+            bm.free()
+            m = bpy.data.objects.new("mark_" + obj.name, mesh)
+            m.location = obj.matrix_world.translation + Vector((0, 0, 8.0))
+            col = material("Mark_" + obj.name.split("_")[0])
+            col.diffuse_color = {"CAM": (0.1, 0.4, 1, 1), "LK": (1, 0.8, 0.1, 1)}.get(obj.name.split("_")[0], (1, 0.1, 0.1, 1))
+            mesh.materials.append(col)
+            scene.collection.objects.link(m)
+            marks.append(m)
+    hidden = [o for o in COLLECTION.objects if o.type == "MESH" and o.name in ("CityBackdrop",) or o.name.startswith("Truss")]
+    for o in hidden:
+        o.hide_render = True
+    bpy.ops.render.render(write_still=True)
+    for o in hidden:
+        o.hide_render = False
+    for m in marks:
+        bpy.data.objects.remove(m, do_unlink=True)
+    bpy.data.objects.remove(cam, do_unlink=True)
+    print("STUDIO PLAN written to " + path)
+
 
 def to_unity_frame():
     """Turns everything 180 degrees about z so the exporter's axis change lands the layout as designed in Unity."""
@@ -747,8 +959,15 @@ def main():
     build_band()
     build_dressing()
 
+    # UVs come from the design frames, so wood and rugs tile the same on a turned wall. matrix_world of a new object
+    # is only filled in by a scene update.
+    bpy.context.view_layer.update()
     for obj in COLLECTION.objects:
         box_uvs(obj)
+    to_zone_frames()
+    args = sys.argv[sys.argv.index("--") + 1:]
+    if "--plan" in args:
+        render_plan(args[args.index("--plan") + 1])
     to_unity_frame()
 
     bpy.ops.export_scene.fbx(
