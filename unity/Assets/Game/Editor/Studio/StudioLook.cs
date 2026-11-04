@@ -1,0 +1,46 @@
+using UnityEngine;
+
+namespace FamilyQuiz.EditorTools.Studio
+{
+    /// <summary>One lighting setup of the studio (0015: three are compared, D99): light colours and strengths and the film look.</summary>
+    public sealed class StudioLook
+    {
+        public string Name;
+
+        // Practical lights: pendants, lamps, sconces, shelf lights (baked).
+        public Color Practical;
+        public float PracticalScale = 1f;
+        // Uplights grazing the back wall and the glow strips.
+        public Color Accent;
+        public float AccentIntensity = 12f;
+        public Color Strip;
+        // The evening light through the window and the soft fill from the audience side (baked).
+        public Color Window;
+        public float WindowIntensity = 2.5f;
+        public Color Fill;
+        public float FillIntensity = 2.4f;
+        // Realtime keys for the guests and hosts, and the stage lamps on the board.
+        public Color Key;
+        public float GuestKeyIntensity = 45f;
+        public float HostKeyIntensity = 26f;
+        public Color StageLamp;
+        public float StageLampIntensity = 32f;
+        public Color Ambient;
+        public float CityEmission = 1.6f;
+
+        // Film look (URP post processing).
+        public float Contrast;
+        public float Saturation;
+        public float Temperature;
+        public float Tint;
+        public float BloomIntensity = 0.5f;
+        public float BloomThreshold = 1f;
+        public float Vignette = 0.28f;
+        public float Grain = 0.22f;
+        public bool LargeGrain;
+        public float ChromaticAberration;
+        public Color SplitShadows = Color.grey;
+        public Color SplitHighlights = Color.grey;
+        public float PostExposure = 1.1f;
+    }
+}

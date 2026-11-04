@@ -24,4 +24,5 @@ Date: Nov 4, 2026. Decided by Ilia after a review of the reference pictures. The
 | The set fabric is muted dark green or brown so the 16 signature colors stand out | 21 |
 | Lighting stays as written in 0015: Blender only models, the lighting is done and baked in Unity (Ilia left this to the AI) | 0015 |
 | `HostSolo` plays only in the Intro and FinalIntro, never where players need the set to read the game (not yet confirmed) | 21 |
+| The Intro opens on the hosts: `HostSolo` for each `gameStart` line in the dark studio, then `Establish` with the lights coming up, then `Wide`. Both lines start in the first 7 s (D58 keeps `gameStart` at the Intro start), so the establishing shot cannot come first without hiding the host solo. `Curtain` stays for TopicVote, so game night 1 has six shots (AI's pick, not yet confirmed) | 21 |
 | The on/off switch of 0015 is a toggle in the TV settings panel: on shows the 3D set behind the overlay, off shows the current flat views (confirmed by Ilia) | 21, Presentation |

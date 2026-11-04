@@ -5,6 +5,7 @@ using FamilyQuiz.Core.Commands;
 using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.Events;
 using FamilyQuiz.Core.State;
+using FamilyQuiz.Presentation.Staging;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -40,6 +41,9 @@ namespace FamilyQuiz.Presentation
         private TextMeshProUGUI _relayBanner;
         private TextMeshProUGUI _contentError;
         private GameObject _current;
+        private Image _background;
+        private StudioStage _stage;
+        private StudioToggleFile _toggleFile;
         private GamePhase _phase = GamePhase.Lobby;
         private bool _relayDown = true;
         private bool _broken;
@@ -66,6 +70,8 @@ namespace FamilyQuiz.Presentation
             _context.Attach(game);
             Relabel();
             _lobby.Refresh();
+            // The 3D studio behind the overlay (decisions 0015, 0016), on unless switched off on this laptop.
+            _stage.SetOn(_toggleFile.Load());
         }
 
         public void ShowRoom(string code, string joinUrl)
@@ -101,12 +107,14 @@ namespace FamilyQuiz.Presentation
         {
             if (_broken) return;
             _hosts.Show(host, textInLang, endsAtMs);
+            _stage.OnHostLine(host, endsAtMs);
         }
 
         /// <summary>A broken config or content file: the error instead of everything else, for good.</summary>
         public void ShowContentError(string message)
         {
             _broken = true;
+            _stage.SetOn(false);
             HideViews();
             _hosts.HideAll();
             _settings.SetOpen(false);
@@ -120,6 +128,7 @@ namespace FamilyQuiz.Presentation
         public void OnEvents(IReadOnlyList<IGameEvent> events)
         {
             if (_broken || _context.Game == null || events == null || events.Count == 0) return;
+            _stage.OnEvents(events);
             bool dirty = false;
             foreach (var e in events)
             {
@@ -347,7 +356,8 @@ namespace FamilyQuiz.Presentation
             EnsureEventSystem();
 
             var root = (RectTransform)transform;
-            UiBuilder.Anchor(UiBuilder.Image("Background", root, TvColors.Background).rectTransform, 0, 0, 1, 1);
+            _background = UiBuilder.Image("Background", root, TvColors.Background);
+            UiBuilder.Anchor(_background.rectTransform, 0, 0, 1, 1);
 
             _lobby = LobbyView.Create(root, _context);
             _countdown = CountdownView.Create(root, _context);
@@ -370,6 +380,13 @@ namespace FamilyQuiz.Presentation
             _relayBannerRoot = banner.gameObject;
 
             _settings = TvSettingsPanel.Create(root, _context);
+            _toggleFile = new StudioToggleFile(System.IO.Path.Combine(Application.persistentDataPath, StudioToggleFile.FileName));
+            _stage = StudioStage.Create(_context, OnStudioVisible);
+            _settings.SetStudioToggle(() => _stage.IsOn, on =>
+            {
+                _toggleFile.Save(on);
+                _stage.SetOn(on);
+            });
 
             _contentError = UiBuilder.Text("ContentError", root, 40, TvColors.Error, false, TextAlignmentOptions.TopLeft);
             UiBuilder.Anchor(_contentError.rectTransform, 0.05f, 0.05f, 0.95f, 0.95f);
@@ -379,6 +396,13 @@ namespace FamilyQuiz.Presentation
             HideViews();
             Show(_lobby.gameObject);
             UpdateRelayBanner();
+        }
+
+        /// <summary>The 3D studio shows behind the overlay: the flat background goes away and the views make room for the set.</summary>
+        private void OnStudioVisible(bool visible)
+        {
+            _background.enabled = !visible;
+            _lobby.SetStudioMode(visible);
         }
 
         /// <summary>UGUI needs one EventSystem for mouse clicks; with the new Input System only, its UI input module.</summary>

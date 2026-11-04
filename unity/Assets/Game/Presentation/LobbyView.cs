@@ -30,6 +30,7 @@ namespace FamilyQuiz.Presentation
         private RectTransform _playerList;
         private readonly List<GameObject> _rows = new List<GameObject>();
         private TextMeshProUGUI _tapReady;
+        private Image _roomBackdrop;
         private Texture2D _qrTexture;
         private bool _hasRoom;
         private bool _relayIsDown = true;
@@ -63,6 +64,20 @@ namespace FamilyQuiz.Presentation
             _qr.rectTransform.sizeDelta = new Vector2(module * _qrTexture.width, module * _qrTexture.width);
             _hasRoom = true;
             SetRelayDown(false);
+        }
+
+        /// <summary>
+        /// With the 3D studio behind the overlay (decisions 0016, D91) the seats show the players: the room code and QR
+        /// code shrink into the top left corner on a dark backing and the player list hides; "Waiting for players" and
+        /// "tap ready" stay. Off, the flat layout comes back.
+        /// </summary>
+        public void SetStudioMode(bool on)
+        {
+            _roomPanel.pivot = new Vector2(0, 1);
+            UiBuilder.Anchor(_roomPanel, 0, on ? 0.3f : 0f, 0.48f, 1);
+            _roomPanel.localScale = Vector3.one * (on ? 0.56f : 1f);
+            _roomBackdrop.enabled = on;
+            _playerList.gameObject.SetActive(!on);
         }
 
         /// <summary>While the relay socket is not open: the error text, no room code (docs/18_edge_cases.md).</summary>
@@ -135,6 +150,11 @@ namespace FamilyQuiz.Presentation
             roomLayout.childControlHeight = true;
             roomLayout.childForceExpandWidth = true;
             roomLayout.childForceExpandHeight = false;
+
+            _roomBackdrop = UiBuilder.Image("Backdrop", _roomPanel, new Color(0, 0, 0, 0.55f), RoundedSprite.Get());
+            UiBuilder.Anchor(_roomBackdrop.rectTransform, 0.04f, 0.04f, 0.96f, 0.96f);
+            _roomBackdrop.gameObject.AddComponent<LayoutElement>().ignoreLayout = true;
+            _roomBackdrop.enabled = false;
 
             _roomCodeLabel = UiBuilder.Text("RoomCodeLabel", _roomPanel, 56, TvColors.DimText, false, TextAlignmentOptions.Center);
             UiBuilder.Size(_roomCodeLabel, -1, 70);

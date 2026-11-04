@@ -3,6 +3,10 @@
     "rootNamespace": "FamilyQuiz.EditorTools",
     "references": [
         "FamilyQuiz.Bootstrap",
+        "FamilyQuiz.Core",
+        "FamilyQuiz.Presentation",
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.RenderPipelines.Universal.Runtime",
         "Unity.TextMeshPro",
         "Unity.TextMeshPro.Editor"
     ],

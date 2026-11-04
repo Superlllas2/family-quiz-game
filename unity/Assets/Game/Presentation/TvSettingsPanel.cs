@@ -12,6 +12,7 @@ namespace FamilyQuiz.Presentation
     /// The TV settings panel (docs/02_show_flow.md, "TV settings panel"; docs/13_architecture.md): opened and closed with
     /// Tab on the laptop, used with the mouse, never pausing anything. Game language RU or EN (at once), power ups on or
     /// off, each type on or off and targeting (from the next game, with a note while they differ from the running game),
+    /// the 3D studio on or off (this laptop only, at once),
     /// Reset seen questions and Back to lobby. It shows the pending values and sends commands through the sink like any
     /// other input; it never changes state itself.
     /// </summary>
@@ -33,7 +34,7 @@ namespace FamilyQuiz.Presentation
         private const float NoteSize = 24f;
         private const float ButtonLabelSize = 32f;
         private const float RowsTop = 110f;
-        private const float RowStep = 100f;
+        private const float RowStep = 88f;
         private const float LabelWidth = 360f;
         private const float ButtonWidth = 204f;
         private const float ButtonGap = 8f;
@@ -61,6 +62,11 @@ namespace FamilyQuiz.Presentation
         private TextMeshProUGUI _targetingNote;
         private PanelButton _targetingFree;
         private PanelButton _targetingAimUp;
+        private TextMeshProUGUI _studioLabel;
+        private PanelButton _studioOn;
+        private PanelButton _studioOff;
+        private Func<bool> _studioIsOn;
+        private Action<bool> _setStudio;
         private PanelButton _resetSeen;
         private TextMeshProUGUI _seenCount;
         private PanelButton _backToLobby;
@@ -82,6 +88,15 @@ namespace FamilyQuiz.Presentation
         public void SetCommandSink(Action<IGameCommand> send)
         {
             _send = send;
+        }
+
+        /// <summary>
+        /// The 3D studio toggle (decisions 0016): a TV only choice handled by the presenter, never a game command.
+        /// </summary>
+        public void SetStudioToggle(Func<bool> isOn, Action<bool> set)
+        {
+            _studioIsOn = isOn;
+            _setStudio = set;
         }
 
         /// <summary>Tab: opens or closes the panel. Nothing else stops or waits.</summary>
@@ -132,6 +147,11 @@ namespace FamilyQuiz.Presentation
             Choice(_targetingFree, "tv.settings.targetingFree", pending.Targeting == TargetingModes.Free);
             Choice(_targetingAimUp, "tv.settings.targetingAimUp", pending.Targeting == TargetingModes.AimUp);
             Note(_targetingNote, SettingsChoices.TargetingDiffers(state));
+
+            _studioLabel.text = _context.T("tv.settings.studio3d");
+            bool studio = _studioIsOn != null && _studioIsOn();
+            Choice(_studioOn, "tv.settings.on", studio);
+            Choice(_studioOff, "tv.settings.off", !studio);
 
             _resetSeen.Set(_context.T("tv.settings.resetSeen"), TvColors.ButtonOff);
             _seenCount.text = _context.Format("tv.settings.seenCount", "questions", state.SeenQuestionIds.Count.ToString(),
@@ -205,6 +225,12 @@ namespace FamilyQuiz.Presentation
             Send(new ChangeTvSettings(targeting: targeting));
         }
 
+        private void OnStudio(bool on)
+        {
+            _setStudio?.Invoke(on);
+            Refresh();
+        }
+
         private void OnResetSeen()
         {
             if (_context.Game == null) return;
@@ -262,6 +288,11 @@ namespace FamilyQuiz.Presentation
             _targetingLabel = RowLabel("Targeting", y, out _targetingNote);
             _targetingFree = RowButton("TargetingFree", y, 0, () => OnTargeting(TargetingModes.Free));
             _targetingAimUp = RowButton("TargetingAimUp", y, 1, () => OnTargeting(TargetingModes.AimUp));
+            y += RowStep;
+
+            _studioLabel = RowLabel("Studio3d", y, out _);
+            _studioOn = RowButton("Studio3dOn", y, 0, () => OnStudio(true));
+            _studioOff = RowButton("Studio3dOff", y, 1, () => OnStudio(false));
             y += RowStep + 20;
 
             _resetSeen = PanelButton.Create(_card, "ResetSeen", ButtonLabelSize, OnResetSeen);

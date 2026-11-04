@@ -78,6 +78,7 @@
   "tv.settings.targeting": { "ru": "Кого атаковать", "en": "Targeting" },
   "tv.settings.targetingFree": { "ru": "Любого", "en": "Free" },
   "tv.settings.targetingAimUp": { "ru": "Только выше", "en": "Aim up" },
+  "tv.settings.studio3d": { "ru": "3D студия", "en": "3D studio" },
   "tv.settings.nextGame": { "ru": "со следующей игры", "en": "applies from the next game" },
   "tv.settings.resetSeen": { "ru": "Сбросить сыгранные вопросы", "en": "Reset seen questions" },
   "tv.settings.seenCount": { "ru": "Сыграно вопросов: {questions}, утверждений: {statements}", "en": "Seen questions: {questions}, statements: {statements}" },

@@ -41,6 +41,9 @@ namespace FamilyQuiz.Presentation.Staging
 
         public GamePhase Phase => _phase;
 
+        /// <summary>When the establishing shot of this Intro began, or null before (or outside the Intro).</summary>
+        public long? EstablishStartMs => _establishStartMs;
+
         public void OnPhase(GamePhase phase, long nowMs)
         {
             _phase = phase;
