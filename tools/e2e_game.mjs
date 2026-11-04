@@ -224,9 +224,15 @@ async function play(p, i) {
         ok(r?.ok === true, say(`Q${q}: locked in choice ${i}`));
         lastAnswer = msg;
         if (i === 0) {
-          const w = await p.wait((m) => m.type === "screen" && m.id === "waiting" && m.phaseId === s.phaseId, 3000);
-          ok(w && typeof w.data.locked === "string" && w.data.locked !== "" && lacks(w, "pending"),
-            say(`Q${q}: waits with "${w?.data?.locked}" locked, no pending list`));
+          // A usually locks first and waits. If clearing an effect made A the last to lock, the Answer ends at once
+          // (never wait) and the next screen belongs to the next phase.
+          const w = await p.wait((m) => m.type === "screen" && (m.id === "waiting" ? m.phaseId === s.phaseId : m.phaseId !== s.phaseId), 3000);
+          if (w && w.id !== "waiting" && cleared > 0) {
+            ok(true, say(`Q${q}: last to lock after clearing the effect, the Answer ended at once (${w.id})`));
+          } else {
+            ok(w && w.id === "waiting" && typeof w.data.locked === "string" && w.data.locked !== "" && lacks(w, "pending"),
+              say(`Q${q}: waits with "${w?.data?.locked}" locked, no pending list`));
+          }
         }
         break;
       }
