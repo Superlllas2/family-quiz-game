@@ -159,6 +159,33 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
+        public void TheLightsComeUpInsideTheEstablishingShot()
+        {
+            var ex = ConfigError(c => c["staging"]["intro"]["lightsUpSeconds"] = 7);
+            Assert.That(ex.Message, Does.Contain("config.json staging.intro.lightsUpSeconds: must fit inside the establishing shot"));
+        }
+
+        [Test]
+        public void TheLightsUpKeyIsRequired()
+        {
+            var ex = ConfigError(c => ((JObject)c["staging"]["intro"]).Remove("lightsUpSeconds"));
+            Assert.That(ex.Message, Does.Contain("staging.intro.lightsUpSeconds"));
+        }
+
+        [Test]
+        public void StagingDurationsReachTheTypedConfig()
+        {
+            var config = new ContentLoader(TestContent.Read).Load().Config;
+            Assert.That(config.Staging.Intro.EstablishSeconds, Is.EqualTo(6));
+            Assert.That(config.Staging.Intro.LightsUpSeconds, Is.EqualTo(1.5));
+            Assert.That(config.Staging.QuestionShow.CurtainOpenSeconds, Is.EqualTo(1.2));
+            Assert.That(config.Staging.QuestionShow.QuestionInSeconds, Is.EqualTo(0.4));
+            Assert.That(config.Staging.Reveal.CardsUpSeconds, Is.EqualTo(0.5));
+            Assert.That(config.Staging.Reveal.ReactionSeconds, Is.EqualTo(1.5));
+            Assert.That(config.Staging.Lobby.SeatPopSeconds, Is.EqualTo(0.5));
+        }
+
+        [Test]
         public void TheRaceMustLetLastPlaceWin()
         {
             var ex = ConfigError(c => c["race"]["finishSteps"] = 40);

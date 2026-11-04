@@ -56,7 +56,7 @@
   "staging": {
     "extraSeconds": { "questionShow": 0, "reveal": 0, "scores": 0, "roundEnd": 0 },
     "lobby": { "seatPopSeconds": 0.5 },
-    "intro": { "establishSeconds": 6 },
+    "intro": { "establishSeconds": 6, "lightsUpSeconds": 1.5 },
     "questionShow": { "curtainOpenSeconds": 1.2, "questionInSeconds": 0.4 },
     "answer": { "suspenseRiseSeconds": 5 },
     "reveal": { "cardsUpSeconds": 0.5, "reactionSeconds": 1.5 },

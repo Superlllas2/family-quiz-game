@@ -171,6 +171,7 @@ Starting values for playtests. Config validation also checks that each staging a
 | `staging.extraSeconds.roundEnd` | 0 | The same, for RoundEnd |
 | `staging.lobby.seatPopSeconds` | 0.5 | The pop when a character leaves its seat on a swap, and when a grey box capsule appears |
 | `staging.intro.establishSeconds` | 6 | Establishing shot at the start of the Intro |
+| `staging.intro.lightsUpSeconds` | 1.5 | The studio lights coming up at the start of the establishing shot (D94); at most `establishSeconds` |
 | `staging.questionShow.curtainOpenSeconds` | 1.2 | The stage curtain opens |
 | `staging.questionShow.questionInSeconds` | 0.4 | The question panel fades in |
 | `staging.answer.suspenseRiseSeconds` | 5 | The suspense riser starts this long before the latest deadline |

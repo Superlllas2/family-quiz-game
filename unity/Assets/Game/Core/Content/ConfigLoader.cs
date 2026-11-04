@@ -29,7 +29,7 @@ namespace FamilyQuiz.Core.Content
             "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds",
             "staging.extraSeconds.questionShow", "staging.extraSeconds.reveal", "staging.extraSeconds.scores",
             "staging.extraSeconds.roundEnd", "staging.lobby.seatPopSeconds", "staging.intro.establishSeconds",
-            "staging.questionShow.curtainOpenSeconds", "staging.questionShow.questionInSeconds",
+            "staging.intro.lightsUpSeconds", "staging.questionShow.curtainOpenSeconds", "staging.questionShow.questionInSeconds",
             "staging.answer.suspenseRiseSeconds", "staging.reveal.cardsUpSeconds", "staging.reveal.reactionSeconds",
             "staging.scores.overlayInSeconds", "staging.results.winnerWalkSeconds"
         };
@@ -134,6 +134,9 @@ namespace FamilyQuiz.Core.Content
                 "staging.answer.suspenseRiseSeconds", "must fit inside the shortest answer window");
             e.Check(Num(root, "staging.intro.establishSeconds") < t.Intro, "staging.intro.establishSeconds",
                 "must be shorter than the Intro");
+            e.Check(Num(root, "staging.intro.lightsUpSeconds") >= 0
+                    && Num(root, "staging.intro.lightsUpSeconds") <= Num(root, "staging.intro.establishSeconds"),
+                "staging.intro.lightsUpSeconds", "must fit inside the establishing shot");
             e.Check(Num(root, "staging.results.winnerWalkSeconds") < t.Results, "staging.results.winnerWalkSeconds",
                 "must be shorter than Results");
 

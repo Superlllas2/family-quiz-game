@@ -130,7 +130,7 @@ const REQUIRED = [
   "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds",
   "staging.extraSeconds.questionShow", "staging.extraSeconds.reveal", "staging.extraSeconds.scores",
   "staging.extraSeconds.roundEnd", "staging.lobby.seatPopSeconds", "staging.intro.establishSeconds",
-  "staging.questionShow.curtainOpenSeconds", "staging.questionShow.questionInSeconds",
+  "staging.intro.lightsUpSeconds", "staging.questionShow.curtainOpenSeconds", "staging.questionShow.questionInSeconds",
   "staging.answer.suspenseRiseSeconds", "staging.reveal.cardsUpSeconds", "staging.reveal.reactionSeconds",
   "staging.scores.overlayInSeconds", "staging.results.winnerWalkSeconds",
 ];
@@ -152,6 +152,7 @@ fit(st.reveal?.cardsUpSeconds + st.reveal?.reactionSeconds <= tm.reveal + ex.rev
 fit(st.scores?.overlayInSeconds < tm.scores + ex.scores, "staging.scores.overlayInSeconds", "must be shorter than Scores");
 fit(st.answer?.suspenseRiseSeconds <= Math.min(tm.answer?.multipleChoice, tm.answer?.closestValue), "staging.answer.suspenseRiseSeconds", "must fit inside the shortest answer window");
 fit(st.intro?.establishSeconds < tm.intro, "staging.intro.establishSeconds", "must be shorter than the Intro");
+fit(st.intro?.lightsUpSeconds >= 0 && st.intro?.lightsUpSeconds <= st.intro?.establishSeconds, "staging.intro.lightsUpSeconds", "must fit inside the establishing shot");
 fit(st.results?.winnerWalkSeconds < tm.results, "staging.results.winnerWalkSeconds", "must be shorter than Results");
 
 // lastPlaceCanWin (docs/02_show_flow.md): with the largest head start gap (leader maxHeadStart, last place 0),
