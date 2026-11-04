@@ -66,18 +66,6 @@ namespace FamilyQuiz.EditorTools.Studio
             Shot("6_curtain", rig.CurtainShot, rig.CurtainFieldOfView, false, false, false);
             Shot("7_stage", rig.StageShot, rig.StageFieldOfView, true, false, false);
             Shot("8_seats_lit", rig.SeatsShot, rig.SeatsFieldOfView, false, false, false);
-            var probe = new GameObject("DebugWindowShot").transform;
-            probe.SetPositionAndRotation(new Vector3(-9f, 6.5f, 10f), Quaternion.identity);
-            Shot("9_window_debug", probe, 60f, false, false, false);
-            foreach (var r in Object.FindObjectsByType<MeshRenderer>(FindObjectsSortMode.None))
-            {
-                if (r.name != "CityBackdrop") continue;
-                var m = r.sharedMaterial;
-                Debug.Log("Studio debug: city enabled=" + r.enabled + " active=" + r.gameObject.activeInHierarchy + " bounds=" + r.bounds
-                          + " mat=" + (m ? m.name : "null") + " emission=" + (m ? m.IsKeywordEnabled("_EMISSION") + " " + m.GetColor("_EmissionColor")
-                              + " map=" + m.GetTexture("_EmissionMap") + " st=" + m.GetVector("_BaseMap_ST") : ""));
-            }
-            Object.DestroyImmediate(probe.gameObject);
 
             if (color != null) color.postExposure.value = baseExposure;
             if (vignette != null) vignette.intensity.value = baseVignette;
