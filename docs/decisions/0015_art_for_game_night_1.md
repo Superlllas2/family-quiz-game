@@ -11,7 +11,7 @@ Date: Nov 4, 2026. Decided by Ilia. The AI building the game never reopens one o
 
 | Detail | Where |
 | --- | --- |
-| The look is chosen from three test renders of the Wide shot (warm late night, retro 70s, modern night), all original designs (D49) | Blender |
+| Blender only models the set and props and exports FBX. Lighting is done in Unity: baked lightmaps for the static set, light probes and one or two realtime shadow lights for the moving guests and hosts. The look is chosen from three lighting setups of the Wide shot captured in Unity (warm late night, retro 70s, modern night), all original designs (D49) | Blender, Unity |
 | The art lives on its own branch behind an on/off switch; the current views stay as the fallback. If it is not solid by the evening of Nov 5, the rehearsal and game night run without it | Presentation |
 | Staging extras stay 0: the 3D scene only listens, no phase gets longer, the 11 s idle check still holds | Core, Presentation |
 | No new packages: models come in as FBX, the film look uses URP's built in post processing, shots use plain cameras, guest and host animation is procedural code (no rigs) | Presentation |
