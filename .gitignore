@@ -47,3 +47,6 @@ unity/Assets/StreamingAssets/content.meta
 
 # Reference images: never committed (real show stills stay out of the repo, D59)
 content/ideation/
+
+# Claude Code agent worktrees (temporary checkouts)
+.claude/worktrees/
