@@ -971,7 +971,7 @@ def build_stage():
     sol.thickness = 0.03
 
     # Stage lamps on stands at both front corners, aimed at the board.
-    for i, (x, y) in enumerate([(2.6, 2.15), (8.4, 2.15)]):   # forward and in, so the beams clear the arch
+    for i, (x, y) in enumerate([(3.0, 1.7), (8.0, 1.7)]):   # forward and in, so the beams pass through the arch
         build_stage_lamp("StageLamp%d" % (i + 1), x, y, i + 1)
 
 
@@ -1090,6 +1090,34 @@ def build_band():
         v = keys.box(kx - 0.02, kx + 0.02, ky - 0.25, ky + 0.25, top, top + 0.88, "M_MetalBlack")
         bmesh.ops.rotate(keys.bm, cent=(kx, ky, top + 0.44), matrix=Matrix.Rotation(s * 0.5, 3, "X"), verts=v)
     keys.build()
+
+    # What makes it a working band corner: a rug under the drums, a stool at the keys, a music stand for the bass
+    # player (its desk faces the player, so the audience sees its back) and a small lamp left on the amp.
+    rug = Piece("BandRug", bevel=0.004)
+    rug.box(bx - 0.8, bx + 0.8, by - 0.75, by + 0.85, top, top + 0.01, "M_BandRug")
+    rug.build()
+    gear = Piece("BandGear", bevel=0.004)
+    gear.cyl((kx, ky + 0.5, top + 0.6), 0.16, 0.05, "M_Leather", segments=20)                # keyboard stool
+    gear.cyl((kx, ky + 0.5, top + 0.3), 0.018, 0.58, "M_Chrome", segments=8)
+    for k in range(3):
+        a = 2 * math.pi * k / 3 + 0.3
+        rod(gear, (kx, ky + 0.5, top + 0.2), (kx + 0.2 * math.cos(a), ky + 0.5 + 0.2 * math.sin(a), top), 0.01, "M_Chrome")
+    msx, msy = 9.62, 3.95
+    gear.cyl((msx, msy, top + 0.55), 0.008, 1.1, "M_MetalBlack", segments=8)                 # music stand
+    for k in range(3):
+        a = 2 * math.pi * k / 3 + 1.0
+        rod(gear, (msx, msy, top + 0.25), (msx + 0.22 * math.cos(a), msy + 0.22 * math.sin(a), top), 0.007, "M_MetalBlack")
+    v = gear.box(msx - 0.24, msx + 0.24, msy - 0.006, msy + 0.006, -0.17, 0.17, "M_MetalBlack")
+    bmesh.ops.rotate(gear.bm, cent=(msx, msy, 0), matrix=Matrix.Rotation(-0.35, 3, "X"), verts=v)   # desk tips back
+    bmesh.ops.translate(gear.bm, vec=(0, 0, top + 1.2), verts=v)
+    v = gear.box(msx - 0.2, msx + 0.2, msy + 0.008, msy + 0.012, -0.14, 0.14, "M_Paper")           # sheet music
+    bmesh.ops.rotate(gear.bm, cent=(msx, msy, 0), matrix=Matrix.Rotation(-0.35, 3, "X"), verts=v)
+    bmesh.ops.translate(gear.bm, vec=(0, 0, top + 1.2), verts=v)
+    alx, aly, alz = 9.2, 5.42, top + 0.5                                                      # the amp's top
+    gear.cyl((alx, aly, alz + 0.08), 0.045, 0.16, "M_Ceramic", segments=14)
+    gear.cyl((alx, aly, alz + 0.24), 0.12, 0.15, "M_LampShade", segments=20, radius2=0.085, caps=False)
+    gear.build()
+    empty("LP_TableLamp_2", (alx, aly, alz + 0.22))
 
     # A guitar and a bass resting on stands (no players yet).
     build_guitar("Guitar", 11.72, 4.35, top, "M_DrumShell", 1.0)

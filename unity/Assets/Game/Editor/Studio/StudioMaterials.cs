@@ -128,9 +128,9 @@ namespace FamilyQuiz.EditorTools.Studio
                 // Cozy pass (Nov 5, 2026): the tints pull the red out of the scans so the woods read brown, each a
                 // different tone (honey floor, dark brown walls, near black walnut trim, a lighter walnut for the desk
                 // and the tables), and every wood is matte.
-                ["M_FloorWood"] = Varied(Scan("wood_floor_worn", 2f, 0.68f, 0.8f, new Color(0.62f, 0.55f, 0.5f), false,
+                ["M_FloorWood"] = Varied(Scan("wood_floor_worn", 2f, 0.68f, 0.8f, new Color(0.58f, 0.57f, 0.6f), false,
                     Tex("FloorWood", 2f, 0.4f, "FloorWood_N")), 7f),
-                ["M_WoodPanel"] = Varied(Scan("dark_wood", 2f, 0.45f, 0.6f, new Color(0.43f, 0.42f, 0.43f), false,
+                ["M_WoodPanel"] = Varied(Scan("dark_wood", 2f, 0.45f, 0.6f, new Color(0.44f, 0.48f, 0.56f), false,
                     Tex("WoodPanel", 1.2f, 0.32f, "WoodPanel_N")), 5f),
                 ["M_WoodDark"] = Scan("walnut_veneer", 1.8f, 0.6f, 0.6f, new Color(0.38f, 0.32f, 0.29f), false,
                     Tex("WoodDark", 1f, 0.34f, "WoodDark_N")),
@@ -187,7 +187,9 @@ namespace FamilyQuiz.EditorTools.Studio
                 ["M_BookC"] = Book(new Color(0.36f, 0.25f, 0.11f)),
                 ["M_BookD"] = Book(new Color(0.08f, 0.16f, 0.1f)),
                 ["M_BookE"] = Book(new Color(0.46f, 0.4f, 0.31f)),
-                ["M_DrumShell"] = Plain(new Color(0.45f, 0.06f, 0.06f), 0.75f, 0.3f),
+                // A deep wine lacquer, less saturated than a bright red kit, so the band corner sits with the set.
+                ["M_DrumShell"] = Plain(new Color(0.3f, 0.08f, 0.07f), 0.62f, 0.2f),
+                ["M_BandRug"] = Carpet(Plain(new Color(0.16f, 0.12f, 0.11f), 0.1f)),
                 ["M_DrumHead"] = Plain(new Color(0.88f, 0.86f, 0.8f), 0.3f),
                 ["M_Cymbal"] = Plain(new Color(0.85f, 0.65f, 0.3f), 0.7f, 1f),
                 ["M_KeysWhite"] = Plain(new Color(0.92f, 0.92f, 0.9f), 0.5f),

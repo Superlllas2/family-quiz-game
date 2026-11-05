@@ -31,7 +31,7 @@ namespace FamilyQuiz.EditorTools.Studio
         private static readonly string[] ProbeLitPieces =
         {
             "HostShelfBooks", "CornerShelfBooks", "DeskProps", "CoffeeTableProps", "DrumKit", "Keyboard", "Amps", "Guitar", "Bass", "PlantBig", "PlantStage",
-            "PlantShelf1", "PlantShelf2", "PlantBand", "Pendants", "FloorLamp", "SideTable", "Sconces", "BandSconce", "Truss",
+            "PlantShelf1", "PlantShelf2", "PlantBand", "Pendants", "FloorLamp", "SideTable", "Sconces", "BandSconce", "Truss", "BandGear", "SideTable2",
             "SofaLegs", "ArmchairLegs", "HostChairs", "StageLamp1", "StageLamp2", "ProsceniumTrim", "QuestionBoardFrame"
         };
 
@@ -220,7 +220,7 @@ namespace FamilyQuiz.EditorTools.Studio
                     {
                         var target = Find(markers, "LT_Board").position;
                         // A wide soft cone: on the closed curtain it makes a soft pool instead of a hard oval.
-                        var l = Spot(parent, pair.Key, at, target, look.StageLamp, look.StageLampIntensity, 12f, 50f, LightmapBakeType.Realtime);
+                        var l = Spot(parent, pair.Key, at, target, look.StageLamp, look.StageLampIntensity, 12f, 40f, LightmapBakeType.Realtime);
                         l.innerSpotAngle = 4f;
                         l.shadows = LightShadows.None;
                         var lamps = (rig.StageLamps ?? new Light[0]).ToList();
@@ -261,8 +261,11 @@ namespace FamilyQuiz.EditorTools.Studio
                 }
                 else if (name == "BandFront")
                 {
-                    // A soft front light on the instruments, so they read from the Wide and Establish shots.
-                    Spot(parent, name, at, target, look.Key, 80f, 12f, 55f, LightmapBakeType.Baked).shadowRadius = 0.4f;
+                    // A soft front light on the instruments, so they read from the Wide and Establish shots. Mixed
+                    // (direct light in realtime, no shadows): the drums and keys are probe lit and would barely
+                    // catch a baked light.
+                    var front = Spot(parent, name, at, target, look.Key, 40f, 12f, 55f, LightmapBakeType.Mixed);
+                    front.shadows = LightShadows.None;
                 }
                 else if (name.StartsWith("Rim"))
                 {
