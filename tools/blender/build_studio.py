@@ -62,8 +62,9 @@ def material(name):
 class Piece:
     """Geometry gathered into one mesh object with several materials."""
 
-    def __init__(self, name, bevel=0.0, segments=2, smooth=True):
+    def __init__(self, name, bevel=0.0, segments=2, smooth=True, subsurf=0):
         self.name = name
+        self.subsurf = subsurf
         self.bm = bmesh.new()
         self.mats = []
         self.bevel = bevel
@@ -129,7 +130,9 @@ class Piece:
         return vs
 
     def build(self, origin=(0, 0, 0)):
-        bmesh.ops.remove_doubles(self.bm, verts=self.bm.verts, dist=1e-5)
+        if not self.subsurf:
+            # Separate boxes of a soft piece stay separate shells, or subdivision pinches where corners meet.
+            bmesh.ops.remove_doubles(self.bm, verts=self.bm.verts, dist=1e-5)
         bmesh.ops.translate(self.bm, vec=-Vector(origin), verts=self.bm.verts)
         mesh = bpy.data.meshes.new(self.name)
         self.bm.to_mesh(mesh)
@@ -148,6 +151,15 @@ class Piece:
             mod.angle_limit = math.radians(40)
             mod.harden_normals = True
             mod.use_clamp_overlap = True
+            if self.subsurf:
+                mod.harden_normals = False
+        if self.subsurf:
+            # Soft upholstery: a wide bevel rounded off by one subdivision level.
+            sub = obj.modifiers.new("Soft", "SUBSURF")
+            sub.levels = self.subsurf
+            sub.render_levels = self.subsurf
+            for f in mesh.polygons:
+                f.use_smooth = True
         return obj
 
 
@@ -249,6 +261,53 @@ def wall_trim(piece, x0, x1, y0, battens, top=WALL_TOP, wainscot=True):
             piece.box(b - 0.04, b, y0 - 0.025, y0, 0.3, 0.79, "M_WoodDark")
 
 
+def panel_frames(piece, x0, x1, y0, z0, z1, width=1.15):
+    """Tall raised panels between x0 and x1 on a wall face at y0: a proud moulded frame around a slightly raised field."""
+    n = max(1, int(round((x1 - x0) / width)))
+    w = (x1 - x0) / n
+    f, inset = 0.05, 0.07
+    for i in range(n):
+        a, b = x0 + i * w + 0.05, x0 + (i + 1) * w - 0.05
+        if b - a < 0.3:
+            continue
+        piece.box(a, b, y0 - 0.03, y0, z1 - f, z1, "M_WoodDark")
+        piece.box(a, b, y0 - 0.03, y0, z0, z0 + f, "M_WoodDark")
+        piece.box(a, a + f, y0 - 0.03, y0, z0 + f, z1 - f, "M_WoodDark")
+        piece.box(b - f, b, y0 - 0.03, y0, z0 + f, z1 - f, "M_WoodDark")
+        piece.box(a + f + inset, b - f - inset, y0 - 0.014, y0, z0 + f + inset, z1 - f - inset, "M_WoodPanel")
+
+
+def rod(piece, a, b, radius, mat, segments=6):
+    """A thin cylinder from point a to point b."""
+    a, b = Vector(a), Vector(b)
+    d = b - a
+    v = piece.cyl((0, 0, 0), radius, d.length, mat, segments=segments)
+    rot = Vector((0, 0, 1)).rotation_difference(d.normalized()).to_matrix()
+    bmesh.ops.rotate(piece.bm, cent=(0, 0, 0), matrix=rot, verts=v)
+    bmesh.ops.translate(piece.bm, vec=(a + b) / 2, verts=v)
+
+
+def box_truss(piece, a, b, size=0.3, pitch=0.5):
+    """A square aluminium box truss from a to b (horizontal): four chords and zig-zag braces on each side."""
+    a, b = Vector(a), Vector(b)
+    axis = (b - a).normalized()
+    side = Vector((-axis.y, axis.x, 0)).normalized() * (size / 2)
+    up = Vector((0, 0, size / 2))
+    corners = [side + up, -side + up, -side - up, side - up]
+    for c in corners:
+        rod(piece, a + c, b + c, 0.024, "M_Truss", 8)
+    n = max(1, int((b - a).length / pitch))
+    step = (b - a) / n
+    for i in range(n):
+        p0, p1 = a + step * i, a + step * (i + 1)
+        for k in range(4):
+            c0, c1 = corners[k], corners[(k + 1) % 4]
+            if i % 2 == 0:
+                rod(piece, p0 + c0, p1 + c1, 0.011, "M_Truss", 5)
+            else:
+                rod(piece, p0 + c1, p1 + c0, 0.011, "M_Truss", 5)
+
+
 def room_side(p, margin=0.0):
     """True when the design point p is inside the bay, at least margin from every wall."""
     s = math.sqrt(0.5)
@@ -284,20 +343,20 @@ def build_room():
     posts.build()
 
     # Ceiling trusses with lamp cans, kept inside the bay: a TV studio above a living room.
-    truss = Piece("Truss", bevel=0.005)
+    truss = Piece("Truss", bevel=0.0)
     tz = WALL_TOP - 0.45
     cans = []
     for y in [-4.0, -1.0, 2.0]:
         run = clip_to_room((-16.0, y), (18.0, y), 0.35)
         if run:
             (xa, _), (xb, _) = run
-            truss.box(xa, xb, y - 0.12, y + 0.12, tz, tz + 0.25, "M_Truss")
+            box_truss(truss, (xa, y, tz + 0.15), (xb, y, tz + 0.15))
             cans += [(x, y) for x in [xa + (xb - xa) * k / 4 for k in (0.5, 1.5, 2.5, 3.5)]]
     for x in [-6.0, -2.0, 2.0, 6.0, 10.0]:
         run = clip_to_room((x, -9.0), (x, 3.5), 0.35)
         if run:
             (_, ya), (_, yb) = run
-            truss.box(x - 0.12, x + 0.12, ya, yb, tz + 0.25, tz + 0.4, "M_Truss")
+            box_truss(truss, (x, ya, tz + 0.45), (x, yb, tz + 0.45))
     for x, y in cans:
         truss.cyl((x, y, tz - 0.25), 0.17, 0.42, "M_MetalBlack", segments=16)
         truss.box(x - 0.02, x + 0.02, y - 0.02, y + 0.02, tz - 0.05, tz, "M_MetalBlack")
@@ -332,30 +391,87 @@ def build_guest_wall():
     wall.box(x0 - 0.3, x0, y0 - 0.12, y1, 0, top, "M_WoodDark")        # end pilaster
     wall.build()
 
-    # Window frame and mullions.
+    # Window: a moulded casing on the room face, a deep reveal (the wall's own thickness), a deep sill board, and
+    # the steel frame and mullions set back in the reveal, with glass that catches the room's reflections.
     win = Piece("Window", bevel=0.008)
-    fy0, fy1 = GUEST_WALL_Y - 0.05, GUEST_WALL_Y + 0.12
-    win.box(wx0 - 0.12, wx1 + 0.12, fy0, fy1, wz0 - 0.12, wz0, "M_WoodDark")      # sill
-    win.box(wx0 - 0.12, wx1 + 0.12, fy0, fy1, wz1, wz1 + 0.12, "M_WoodDark")
-    win.box(wx0 - 0.12, wx0, fy0, fy1, wz0, wz1, "M_WoodDark")
-    win.box(wx1, wx1 + 0.12, fy0, fy1, wz0, wz1, "M_WoodDark")
+    c = 0.16
+    win.box(wx0 - c, wx1 + c, y0 - 0.05, y0, wz1, wz1 + c, "M_WoodDark")                 # casing
+    win.box(wx0 - c, wx0, y0 - 0.05, y0, wz0 - 0.06, wz1, "M_WoodDark")
+    win.box(wx1, wx1 + c, y0 - 0.05, y0, wz0 - 0.06, wz1, "M_WoodDark")
+    win.box(wx0 - c - 0.04, wx1 + c + 0.04, y0 - 0.07, y0 - 0.05, wz1 + c - 0.03, wz1 + c, "M_WoodDark")
+    win.box(wx0 - 0.06, wx1 + 0.06, y0 - 0.16, y0 + 0.2, wz0 - 0.05, wz0, "M_WoodDark")    # sill board
+    win.box(wx0, wx1, y0 - 0.1, y0 - 0.04, wz0 - 0.16, wz0 - 0.05, "M_WoodDark")          # apron under it
+    fy0, fy1 = y0 + 0.17, y0 + 0.25
+    win.box(wx0, wx1, fy0, fy1, wz0, wz0 + 0.06, "M_MetalBlack")
+    win.box(wx0, wx1, fy0, fy1, wz1 - 0.06, wz1, "M_MetalBlack")
+    win.box(wx0, wx0 + 0.06, fy0, fy1, wz0, wz1, "M_MetalBlack")
+    win.box(wx1 - 0.06, wx1, fy0, fy1, wz0, wz1, "M_MetalBlack")
     n = 6
     for i in range(1, n):
         x = wx0 + (wx1 - wx0) * i / n
-        win.box(x - 0.035, x + 0.035, fy0 + 0.04, fy1, wz0, wz1, "M_MetalBlack")
+        win.box(x - 0.03, x + 0.03, fy0, fy1, wz0, wz1, "M_MetalBlack")
     for z in [wz0 + (wz1 - wz0) * 0.36, wz0 + (wz1 - wz0) * 0.7]:
-        win.box(wx0, wx1, fy0 + 0.04, fy1, z - 0.03, z + 0.03, "M_MetalBlack")
+        win.box(wx0, wx1, fy0 + 0.01, fy1 - 0.01, z - 0.022, z + 0.022, "M_MetalBlack")
     win.build()
+    glass = Piece("GlassWindow", smooth=False)
+    glass.box(wx0 + 0.03, wx1 - 0.03, fy0 + 0.035, fy0 + 0.04, wz0 + 0.03, wz1 - 0.03, "M_Glass")
+    glass.build()
+    panels = Piece("GuestWallPanels", bevel=0.004)
+    panel_frames(panels, x0 + 0.12, wx0 - c - 0.25, y0, 1.25, top - 0.5)
+    panels.build()
     empty("LP_Window_1", ((wx0 + wx1) / 2, GUEST_WALL_Y + 0.4, (wz0 + wz1) / 2))
 
-    # The invented evening city far behind the window: a lit backdrop.
-    city = Piece("CityBackdrop", smooth=False)
-    city.box(-26.0, 8.0, GUEST_WALL_Y + 10.5, GUEST_WALL_Y + 10.55, -2.0, 15.0, "M_City")
-    city.build()
+    build_city()
 
     # Uplights grazing the wall beside the window.
     for i, x in enumerate([WINDOW_X[0] - 0.35, WINDOW_X[1] + 0.38]):
         aimed("LK_Uplight_G%d" % (i + 1), (x, GUEST_WALL_Y - 0.3, 0.25), (x, GUEST_WALL_Y + 0.05, 5.0))
+
+
+# The old 34 m picture 10.5 m behind the wall, scaled up 28.6 times about the window so it looks the same, 300 m away.
+CITY_BACKDROP = dict(x0=-613.0, x1=359.0, y=GUEST_WALL_Y + 300.0, z0=-137.0, z1=349.0)
+
+
+def build_city():
+    """The invented evening city behind the window (guest zone): the far skyline picture on a big backdrop, and three
+    rows of lit blocks in front of it at 60 to 180 m, so the view shifts with the camera. The studio is high up: the
+    blocks stand on ground far below the window. No real skyline (D93)."""
+    b = CITY_BACKDROP
+    city = Piece("CityBackdrop", smooth=False)
+    city.box(b["x0"], b["x1"], b["y"], b["y"] + 0.1, b["z0"], b["z1"], "M_City")
+    city.build()
+    rnd = random.Random(5)
+    for row, (depth, mat) in enumerate([(60.0, "M_CityBuilding"), (110.0, "M_CityBuilding"), (180.0, "M_CityBuildingFar")]):
+        blocks = Piece("CityBlocks%d" % (row + 1), smooth=False)
+        span = 30.0 + depth * 1.3
+        x = WINDOW_X[0] - span
+        while x < WINDOW_X[1] + span:
+            w = rnd.uniform(14.0, 34.0) + row * 8
+            d = rnd.uniform(14.0, 26.0)
+            # Low, so the far skyline keeps the top of the window; the odd tower breaks the line.
+            top = rnd.uniform(-0.05, 0.05) * depth + (rnd.random() < 0.12) * rnd.uniform(0.04, 0.09) * depth
+            y0 = GUEST_WALL_Y + depth + rnd.uniform(-8.0, 8.0)
+            blocks.box(x, x + w, y0, y0 + d, -120.0, top, mat)
+            if rnd.random() < 0.35:
+                # A setback tower on top.
+                inset = w * rnd.uniform(0.2, 0.35)
+                blocks.box(x + inset, x + w - inset, y0 + 2, y0 + d - 2, top, top + rnd.uniform(6, 16), mat)
+            x += w + rnd.uniform(3.0, 10.0)
+        blocks.build()
+
+
+def fit_uvs(obj, x0, x1, z0, z1):
+    """UVs 0..1 across a backdrop facing the room, instead of the metre box projection."""
+    mesh = obj.data
+    bm = bmesh.new()
+    bm.from_mesh(mesh)
+    uv = bm.loops.layers.uv.verify()
+    for f in bm.faces:
+        for loop in f.loops:
+            p = obj.matrix_world @ loop.vert.co
+            loop[uv].uv = ((p.x - x0) / (x1 - x0), (p.z - z0) / (z1 - z0))
+    bm.to_mesh(mesh)
+    bm.free()
 
 
 def build_curtain_wall():
@@ -363,11 +479,14 @@ def build_curtain_wall():
     set_zone("Stage")
     wall = Piece("CurtainWall", bevel=0.01)
     y0, y1 = PROSC_Y
+    panels = Piece("CurtainWallPanels", bevel=0.004)
     for a, b in [(CENTER_X[0], 2.55), (8.45, CENTER_X[1])]:
         wall.box(a, b, y0, y1, 0, WALL_TOP, "M_WoodPanel")
-        wall_trim(wall, a, b, y0, [], WALL_TOP, wainscot=False)
+        wall_trim(wall, a, b, y0, [], WALL_TOP)
+        panel_frames(panels, a + 0.2, b - 0.1, y0, 1.25, WALL_TOP - 0.5)
     wall.box(2.55, 8.45, y0 - 0.09, y0, WALL_TOP - 0.22, WALL_TOP - 0.12, "M_WoodDark")
     wall.build()
+    panels.build()
     for i, x in enumerate([1.85, 9.15]):
         aimed("LK_Uplight_C%d" % (i + 1), (x, y0 - 0.3, 0.25), (x, y0 + 0.05, 5.0))
 
@@ -378,9 +497,12 @@ def build_band_wall():
     y0, y1 = BAND_WALL_Y, BAND_WALL_Y + 0.3
     x0, x1 = BAND_X
     wall.box(x0, x1, y0, y1, 0, WALL_TOP, "M_WoodPanel")
-    wall_trim(wall, x0, x1, y0, [9.0, 11.0], WALL_TOP)
+    wall_trim(wall, x0, x1, y0, [], WALL_TOP)
     wall.box(x1, x1 + 0.3, y0 - 0.12, y1, 0, WALL_TOP, "M_WoodDark")    # end pilaster
     wall.build()
+    panels = Piece("BandWallPanels", bevel=0.004)
+    panel_frames(panels, x0 + 0.25, x1 - 0.1, y0, 1.25, WALL_TOP - 0.5)
+    panels.build()
     aimed("LK_Uplight_B1", (12.05, y0 - 0.3, 0.25), (12.05, y0 + 0.05, 5.0))
 
 
@@ -415,7 +537,8 @@ def build_guest_area():
     # Sofa: four seats, muted dark green fabric (D93) so the guests' colours stand out.
     sofa_x0, sofa_x1 = -6.25, -3.05
     sy0, sy1 = 3.25, 4.2
-    sofa = Piece("Sofa", bevel=0.035, segments=3)
+    sofa = Piece("Sofa", bevel=0.045, segments=2, subsurf=1)
+    cushions = Piece("SofaCushions", bevel=0.06, segments=2, subsurf=1)
     legs = Piece("SofaLegs", bevel=0.006)
     sofa.box(sofa_x0, sofa_x1, sy0, sy1, seat_z + 0.12, seat_z + 0.36, "M_FabricSofa")            # base
     sofa.box(sofa_x0, sofa_x0 + 0.2, sy0, sy1, seat_z + 0.12, seat_z + 0.62, "M_FabricSofa")      # arms
@@ -425,17 +548,19 @@ def build_guest_area():
     w = (inner1 - inner0) / 4
     for i in range(4):
         a, b = inner0 + i * w + 0.01, inner0 + (i + 1) * w - 0.01
-        sofa.box(a, b, sy0 + 0.02, sy1 - 0.22, seat_z + 0.36, seat_z + 0.5, "M_FabricSofa")         # seat cushion
-        sofa.box(a, b, sy1 - 0.38, sy1 - 0.22, seat_z + 0.5, seat_z + 0.84, "M_FabricSofa")         # back cushion
+        cushions.box(a, b, sy0 + 0.01, sy1 - 0.2, seat_z + 0.34, seat_z + 0.52, "M_FabricSofa")     # seat cushion
+        cushions.box(a, b, sy1 - 0.4, sy1 - 0.2, seat_z + 0.5, seat_z + 0.88, "M_FabricSofa")      # back cushion
     for x in [sofa_x0 + 0.08, sofa_x1 - 0.08]:
         for y in [sy0 + 0.08, sy1 - 0.08]:
             legs.cyl((x, y, seat_z + 0.06), 0.03, 0.12, "M_WoodWarm", segments=12, radius2=0.022)
     sofa.build()
+    cushions.build()
     legs.build()
     sofa_seats = [inner0 + (i + 0.5) * w for i in range(4)]
 
     # Armchairs: two on each side in a shallow arc, turned a little towards the middle.
-    chairs = Piece("Armchairs", bevel=0.03, segments=3)
+    chairs = Piece("Armchairs", bevel=0.04, segments=2, subsurf=1)
+    chair_cushions = Piece("ArmchairCushions", bevel=0.05, segments=2, subsurf=1)
     chair_legs = Piece("ArmchairLegs", bevel=0.005)
     arm_specs = [(-8.25, 3.05, math.radians(-14)), (-7.15, 3.18, math.radians(-8)),
                  (-2.05, 3.18, math.radians(8)), (-0.95, 3.05, math.radians(14))]
@@ -448,13 +573,14 @@ def build_guest_area():
         chairs.box(x0, x0 + 0.13, y0, y1, seat_z + 0.14, seat_z + 0.62, "M_FabricChair", yaw, p)
         chairs.box(x1 - 0.13, x1, y0, y1, seat_z + 0.14, seat_z + 0.62, "M_FabricChair", yaw, p)
         chairs.box(x0 + 0.13, x1 - 0.13, y1 - 0.18, y1, seat_z + 0.38, seat_z + 0.9, "M_FabricChair", yaw, p)
-        chairs.box(x0 + 0.14, x1 - 0.14, y0 + 0.02, y1 - 0.18, seat_z + 0.38, seat_z + 0.52, "M_FabricChair", yaw, p)
+        chair_cushions.box(x0 + 0.13, x1 - 0.13, y0 + 0.01, y1 - 0.16, seat_z + 0.36, seat_z + 0.54, "M_FabricChair", yaw, p)
         for lx in [x0 + 0.07, x1 - 0.07]:
             for ly in [y0 + 0.07, y1 - 0.07]:
                 v = chair_legs.cyl((lx, ly, seat_z + 0.07), 0.025, 0.14, "M_WoodWarm", segments=10, radius2=0.018)
                 bmesh.ops.rotate(chair_legs.bm, cent=p, matrix=Matrix.Rotation(yaw, 3, "Z"), verts=v)
         seat_points.append((cx, cy + 0.36, yaw))
     chairs.build()
+    chair_cushions.build()
     chair_legs.build()
 
     # Seat markers in fill order (docs/21_staging.md, "Seats").
@@ -468,6 +594,23 @@ def build_guest_area():
     ]
     for i, (x, y, yaw) in enumerate(order):
         empty("Seat_%d" % (i + 1), (x, y, top), yaw)
+
+    # A low coffee table in front of the sofa, below the name tags, with a stack of books and a bowl.
+    table = Piece("CoffeeTable", bevel=0.01)
+    tx0, tx1, ty0, ty1 = -5.5, -3.8, 2.15, 2.6
+    tz = PLATFORM_TOP + 0.012 + 0.32   # kept low and forward, so the name tags stay clear above it
+    table.box(tx0, tx1, ty0, ty1, tz - 0.04, tz, "M_WoodWarm")
+    table.box(tx0 + 0.08, tx1 - 0.08, ty0 + 0.06, ty1 - 0.06, PLATFORM_TOP + 0.1, PLATFORM_TOP + 0.13, "M_WoodWarm")
+    for lx in [tx0 + 0.06, tx1 - 0.06]:
+        for ly in [ty0 + 0.06, ty1 - 0.06]:
+            table.cyl((lx, ly, (PLATFORM_TOP + tz) / 2), 0.022, tz - PLATFORM_TOP, "M_WoodWarm", segments=10, radius2=0.016)
+    table.build()
+    deco = Piece("CoffeeTableProps", bevel=0.003)
+    for k, (h, mat) in enumerate([(0.035, "M_BookB"), (0.03, "M_BookE"), (0.04, "M_BookA")]):
+        z = tz + sum(x for x, _ in [(0.035, 0), (0.03, 0), (0.04, 0)][:k])
+        deco.box(tx0 + 0.25 + k * 0.01, tx0 + 0.55 - k * 0.015, ty0 + 0.12, ty0 + 0.36 - k * 0.01, z, z + h, mat)
+    deco.cyl((tx1 - 0.45, (ty0 + ty1) / 2, tz + 0.05), 0.14, 0.1, "M_Ceramic", segments=24, radius2=0.08)
+    deco.build()
 
     # Floor lamp beside the outer left armchair, pendants over the sofa.
     lamp = Piece("FloorLamp", bevel=0.004)
@@ -541,6 +684,13 @@ def build_desk():
     for mx in [DESK_CX - 0.55, DESK_CX + 0.35]:
         acc.cyl((mx, front + 0.25, top_z + 0.11), 0.045, 0.1, "M_Ceramic", segments=16)
     acc.box(DESK_CX - 0.2, DESK_CX + 0.15, front + 0.2, front + 0.45, top_z + 0.06, top_z + 0.068, "M_Paper")
+    # A retro desk microphone between the hosts.
+    mx, my = DESK_CX, front + 0.32
+    acc.cyl((mx, my, top_z + 0.075), 0.07, 0.025, "M_MetalBlack", segments=20)
+    acc.cyl((mx, my, top_z + 0.17), 0.008, 0.17, "M_Chrome", segments=8)
+    v = acc.cyl((0, 0, 0), 0.032, 0.09, "M_Chrome", segments=16, axis="y")
+    bmesh.ops.rotate(acc.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(-0.5, 3, "X"), verts=v)
+    bmesh.ops.translate(acc.bm, vec=(mx, my - 0.02, top_z + 0.27), verts=v)
     acc.build()
     empty("LP_DeskLamp_1", (lx, ly - 0.05, top_z + 0.36))
 
@@ -712,17 +862,32 @@ def build_stage():
 def build_curtain_half(name, edge_x, sign, width):
     """A pleated curtain half whose origin is its outer edge, so scaling x gathers it to the side."""
     cur = Piece(name)
-    nu, nv = 90, 8
+    nu, nv = 200, 18
     pts = []
     z0, z1 = STAGE_TOP + 0.01, CURTAIN_TOP + 0.5
+    rnd = random.Random(11 if sign > 0 else 23)
+    # Irregular folds: the spacing wanders, the folds are tight and shallow under the heading and open up towards the
+    # hem, like heavy velvet hanging from a gathered track; the hem lifts a little on each fold's crest.
+    wobble = [(rnd.uniform(1.2, 2.2), rnd.uniform(0, 6.3)), (rnd.uniform(3.5, 5.5), rnd.uniform(0, 6.3))]
     for j in range(nv + 1):
-        z = z0 + (z1 - z0) * j / nv
-        hem = 0.015 * math.sin(j * 1.3) if j == 0 else 0.0
+        t = j / nv                        # 0 at the hem, 1 at the top
+        z_base = z0 + (z1 - z0) * t
+        period = 0.24 - 0.05 * t          # metres per fold
+        amp = 0.075 - 0.035 * t
         for i in range(nu + 1):
             u = i / nu
-            x = edge_x + sign * width * u
-            depth = 0.055 * math.sin(u * width * 2 * math.pi / 0.21) + hem
-            pts.append((x, CURTAIN_Y + depth, z))
+            d = width * u
+            phase = 2 * math.pi * (d / period + 0.18 * math.sin(d * wobble[0][0] + wobble[0][1])
+                                   + 0.07 * math.sin(d * wobble[1][0] + wobble[1][1]))
+            s = math.sin(phase)
+            shaped = math.copysign(abs(s) ** 0.75, s)
+            sway = 0.025 * (1 - t) * math.sin(d * 1.1 + 0.7)   # the whole curtain hangs a touch unevenly
+            depth = amp * shaped + sway
+            # The two halves meet flat where they overlap at the middle, the right one a little in front.
+            edge = min(1.0, (width - d) / 0.3)
+            depth = depth * edge + (0.0 if sign > 0 else -0.03) * (1 - edge)
+            z = z_base + (0.012 * (1 + s) if j == 0 else 0.0)
+            pts.append((edge_x + sign * d, CURTAIN_Y + depth, z))
     cur.grid(pts, nu, nv, "M_Velvet")
     obj = cur.build(origin=(edge_x, CURTAIN_Y, z0))
     sol = obj.modifiers.new("Thick", "SOLIDIFY")
@@ -830,7 +995,7 @@ def build_dressing():
     empty("LP_Shelf_3", ((sx0 + sx1) / 2, sy0 + 0.1, 2.25))
 
     # Plants: a big one by the window, one beside the stage, small ones on the shelves.
-    plant("PlantBig", -9.55, GUEST_WALL_Y - 0.6, PLATFORM_TOP, 1.0)
+    plant("PlantBig", -9.6, GUEST_WALL_Y - 0.36, PLATFORM_TOP, 0.9)
     plant("PlantShelf1", 3.95, GUEST_WALL_Y - 0.25, 4.04, 0.32)
     plant("PlantShelf2", DESK_CX + 1.1, GUEST_WALL_Y - 0.25, 2.99, 0.3)
     set_zone("Stage")
@@ -964,6 +1129,8 @@ def main():
     bpy.context.view_layer.update()
     for obj in COLLECTION.objects:
         box_uvs(obj)
+    b = CITY_BACKDROP
+    fit_uvs(bpy.data.objects["CityBackdrop"], b["x0"], b["x1"], b["z0"], b["z1"])
     to_zone_frames()
     args = sys.argv[sys.argv.index("--") + 1:]
     if "--plan" in args:

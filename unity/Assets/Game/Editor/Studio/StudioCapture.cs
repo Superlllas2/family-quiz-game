@@ -27,9 +27,12 @@ namespace FamilyQuiz.EditorTools.Studio
 
         private static readonly string[] Letters = { "A", "C", "B", "A", "D", "A", "", "B" };
 
-        public static void CaptureAll(string outDir, string look)
+        public static void CaptureAll(string outDir, string look, string hide = null)
         {
             var scene = EditorSceneManager.OpenScene(StudioBuilder.ScenePath);
+            if (hide != null)
+                foreach (var t in Object.FindObjectsByType<Transform>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
+                    if (t.name == hide) t.gameObject.SetActive(false);
             var rig = Object.FindFirstObjectByType<StudioRig>();
             Directory.CreateDirectory(outDir);
             var stand = new GameObject("CaptureStandIns");

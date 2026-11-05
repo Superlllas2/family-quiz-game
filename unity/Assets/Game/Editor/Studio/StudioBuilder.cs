@@ -29,7 +29,7 @@ namespace FamilyQuiz.EditorTools.Studio
 
         private static readonly string[] ProbeLitPieces =
         {
-            "HostShelfBooks", "CornerShelfBooks", "DeskProps", "DrumKit", "Keyboard", "Amps", "PlantBig", "PlantStage",
+            "HostShelfBooks", "CornerShelfBooks", "DeskProps", "CoffeeTableProps", "DrumKit", "Keyboard", "Amps", "PlantBig", "PlantStage",
             "PlantShelf1", "PlantShelf2", "PlantBand", "Pendants", "FloorLamp", "SideTable", "Sconces", "BandSconce", "Truss",
             "SofaLegs", "ArmchairLegs", "HostChairs", "StageLamp1", "StageLamp2", "ProsceniumTrim", "QuestionBoardFrame"
         };
@@ -42,9 +42,12 @@ namespace FamilyQuiz.EditorTools.Studio
                 string look = Arg(args, "-look") ?? StudioLooks.WarmLateNight;
                 bool bake = args.Contains("-bake");
                 if (args.Contains("-textures") || !File.Exists(StudioTextures.Folder + "/City.png")) StudioTextures.GenerateAll();
-                Build(StudioLooks.Get(look), bake);
+                if (args.Contains("-textures")) StudioScans.PrepareAll(true);
+                if (args.Contains("-textures") || !File.Exists(StudioTextures.Folder + "/CityWindows.png")) StudioTextures.CityWindows();
+                // -captureOnly renders the saved scene without rebuilding it; -hide <name> hides one object first.
+                if (!args.Contains("-captureOnly")) Build(StudioLooks.Get(look), bake);
                 string capture = Arg(args, "-capture");
-                if (capture != null) StudioCapture.CaptureAll(capture, look);
+                if (capture != null) StudioCapture.CaptureAll(capture, look, Arg(args, "-hide"));
                 EditorApplication.Exit(0);
             }
             catch (Exception e)
@@ -70,8 +73,11 @@ namespace FamilyQuiz.EditorTools.Studio
         public static void Build(StudioLook look, bool bake)
         {
             AssetDatabase.Refresh();
+            StudioScans.PrepareAll(false);
             var materials = StudioMaterials.CreateAll();
             materials["M_City"].SetColor("_EmissionColor", Color.white * look.CityEmission);
+            materials["M_CityBuilding"].SetColor("_EmissionColor", Color.white * look.CityEmission * 0.9f);
+            materials["M_CityBuildingFar"].SetColor("_EmissionColor", new Color(0.75f, 0.8f, 1f) * look.CityEmission * 0.5f);
             materials["M_GlowStrip"].SetColor("_EmissionColor", look.Strip * 0.6f);
             materials["M_Bulb"].SetColor("_EmissionColor", Color.Lerp(look.Practical, Color.white, 0.35f) * 10f);
 
@@ -144,9 +150,10 @@ namespace FamilyQuiz.EditorTools.Studio
                 renderer.sharedMaterials = mats;
                 var go = renderer.gameObject;
                 bool dynamic = go.name.StartsWith("Dyn_");
-                bool city = go.name == "CityBackdrop";
-                renderer.shadowCastingMode = city ? ShadowCastingMode.Off : ShadowCastingMode.On;
-                if (dynamic || city)
+                bool city = go.name.StartsWith("City");
+                bool glass = go.name.StartsWith("Glass");
+                renderer.shadowCastingMode = city || glass ? ShadowCastingMode.Off : ShadowCastingMode.On;
+                if (dynamic || city || glass)
                 {
                     GameObjectUtility.SetStaticEditorFlags(go, 0);
                     renderer.lightProbeUsage = city ? LightProbeUsage.Off : LightProbeUsage.BlendProbes;
@@ -394,7 +401,7 @@ namespace FamilyQuiz.EditorTools.Studio
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = Color.black;
             camera.nearClipPlane = 0.1f;
-            camera.farClipPlane = 60f;
+            camera.farClipPlane = 700f;
             camera.allowHDR = true;
             camera.allowMSAA = false;
             var data = cameraGo.AddComponent<UniversalAdditionalCameraData>();

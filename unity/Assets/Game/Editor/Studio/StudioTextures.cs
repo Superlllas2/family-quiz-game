@@ -270,6 +270,43 @@ namespace FamilyQuiz.EditorTools.Studio
             Save("City", px, w, h, true);
         }
 
+        /// <summary>
+        /// Lit office and flat windows for the 3D city blocks behind the window wall: 16 bays of 1.2 m by 16 floors
+        /// of 3 m (19.2 m x 48 m a tile), some floors dark, warm and a few cool lights, unlit glass faintly blue.
+        /// Emission only: the blocks' albedo is black.
+        /// </summary>
+        public static void CityWindows()
+        {
+            Directory.CreateDirectory(Folder);
+            const int cols = 16, floors = 16, cw = 32, fh = 64, w = cols * cw, h = floors * fh;
+            var rng = new System.Random(91);
+            var px = new Color[w * h];
+            for (int i = 0; i < px.Length; i++) px[i] = new Color(0.004f, 0.005f, 0.009f, 1f);
+            for (int f = 0; f < floors; f++)
+            {
+                double floorLit = rng.NextDouble() < 0.2 ? 0.05 : 0.25 + rng.NextDouble() * 0.45;
+                for (int c = 0; c < cols; c++)
+                {
+                    bool lit = rng.NextDouble() < floorLit;
+                    float warmth = (float)rng.NextDouble();
+                    Color glass = lit
+                        ? (rng.NextDouble() < 0.18 ? new Color(0.5f, 0.66f, 0.95f) : Color.Lerp(new Color(1f, 0.55f, 0.24f), new Color(1f, 0.85f, 0.58f), warmth))
+                          * (0.45f + (float)rng.NextDouble() * 0.6f)
+                        : new Color(0.012f, 0.016f, 0.03f);
+                    glass.a = 1f;
+                    // A lit window has a soft falloff towards its bottom, like a room lit from the ceiling.
+                    for (int y = 10; y < fh - 14; y++)
+                    for (int x = 4; x < cw - 4; x++)
+                    {
+                        float k = lit ? Mathf.Lerp(0.65f, 1f, (y - 10f) / (fh - 24f)) : 1f;
+                        px[(f * fh + y) * w + c * cw + x] = new Color(glass.r * k, glass.g * k, glass.b * k, 1f);
+                    }
+                }
+            }
+
+            Save("CityWindows", px, w, h, true);
+        }
+
         /// <summary>The question board: a dark matte felt so the light question overlay reads on it (D92).</summary>
         private static void Board()
         {
