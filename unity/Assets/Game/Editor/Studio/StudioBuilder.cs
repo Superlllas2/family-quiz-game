@@ -270,7 +270,9 @@ namespace FamilyQuiz.EditorTools.Studio
                 else if (name.StartsWith("Rim"))
                 {
                     // Realtime rims from behind and above the guests and the hosts: no shadows, so they stay cheap.
-                    var rim = Spot(parent, name, at, target, look.Rim, look.RimIntensity, 9f, 70f, LightmapBakeType.Realtime);
+                    // A narrow cone: wider, it catches the brass pendant shades over the sofa and they glare.
+                    var rim = Spot(parent, name, at, target, look.Rim, look.RimIntensity, 9f, 46f, LightmapBakeType.Realtime);
+                    rim.innerSpotAngle = 20f;
                     rim.shadows = LightShadows.None;
                 }
                 else if (name == "CurtainWash")
