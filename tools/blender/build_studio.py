@@ -45,6 +45,7 @@ COLLECTION = None
 # the band). A zone is (pivot in its design frame, where that pivot lands, turn about z in degrees).
 CURRENT_ZONE = "World"
 OBJ_ZONE = {}
+UV_FRAME = {}
 
 
 def set_zone(name):
@@ -180,6 +181,22 @@ def aimed(name, at, target):
     empty(prefix + "T_" + rest, target)
 
 
+def turn_objects(names, pivot, degrees):
+    """Turns already built objects (meshes and markers) about z around a design point of their zone, as a group."""
+    m = (Matrix.Translation((pivot[0], pivot[1], 0)) @ Matrix.Rotation(math.radians(degrees), 4, "Z")
+         @ Matrix.Translation((-pivot[0], -pivot[1], 0)))
+    for name in names:
+        obj = bpy.data.objects[name]
+        obj.matrix_world = m @ obj.matrix_basis
+        # UVs stay in the unturned frame, so a rug's pattern and the wood grain turn with the piece.
+        UV_FRAME[name] = UV_FRAME.get(name, Matrix.Identity(4)) @ m.inverted()
+
+
+def built_since(before):
+    """Names of the objects built since the snapshot before (a set of names)."""
+    return [o.name for o in COLLECTION.objects if o.name not in before]
+
+
 def box_uvs(obj):
     """Box projected UVs in metres (1 UV unit = 1 m), from world coordinates, so textures tile at real scale."""
     if obj.type != "MESH":
@@ -188,7 +205,7 @@ def box_uvs(obj):
     bm = bmesh.new()
     bm.from_mesh(mesh)
     uv = bm.loops.layers.uv.verify()
-    mw = obj.matrix_world
+    mw = UV_FRAME.get(obj.name, Matrix.Identity(4)) @ obj.matrix_world
     for f in bm.faces:
         n = (mw.to_3x3() @ f.normal).normalized()
         ax, ay, az = abs(n.x), abs(n.y), abs(n.z)
@@ -235,7 +252,9 @@ CURTAIN_Y = 4.3
 CURTAIN_TOP = 4.55
 # 16:9 like the TV, so the Stage shot can fill the screen with it and the question overlay sits inside (D92).
 BOARD = dict(x0=3.5, x1=7.5, y=5.9, z0=0.95, z1=3.2)
-DESK_CX, DESK_Y = 1.25, 2.55  # desk centre (x) and front face (y)
+DESK_CX, DESK_Y = 1.25, 2.55  # desk centre (x) and front face (y), before the desk turns
+DESK_TURN = -9.0              # degrees the desk group turns towards the guests (build_desk)
+FLOOR_RUG = dict(x0=2.85, x1=7.95, y0=-4.3, y1=-0.1)   # world frame; clear of the guest riser, stage and band riser
 
 
 # ------------------------------------------------------------------------------------------------ the room
@@ -524,18 +543,12 @@ def build_guest_area():
 
     # Keys and cameras for the guests and hosts (Unity reads these markers; docs/21_staging.md, shot table).
     aimed("LK_GuestKey", (-4.0, -2.2, 5.5), (-4.6, 3.7, 0.7))
-    aimed("LK_HostKey", (1.0, 0.2, 5.0), (1.25, 3.9, 1.0))
     aimed("CAM_Wide", (-3.1, -6.9, 2.5), (-3.1, 3.6, 1.05))
     aimed("CAM_Seats", (-4.6, -5.6, 1.45), (-4.6, 3.6, 1.45))
-    aimed("CAM_HostSoloKonstantin", (0.55, 0.5, 1.62), (0.7, 3.85, 1.32))
-    aimed("CAM_HostSoloIlja", (1.95, 0.5, 1.62), (1.8, 3.85, 1.32))
 
     rug = Piece("Rug", bevel=0.004)
     rug.box(-9.0, -0.9, 2.1, 4.9, PLATFORM_TOP, PLATFORM_TOP + 0.012, "M_Rug")
     rug.build()
-    rug2 = Piece("RugDesk", bevel=0.004)
-    rug2.box(-0.2, 2.7, 2.2, 4.6, PLATFORM_TOP, PLATFORM_TOP + 0.01, "M_Rug2")
-    rug2.build()
 
     seat_z = PLATFORM_TOP + 0.012
     # Sofa: four seats, muted dark green fabric (D93) so the guests' colours stand out.
@@ -562,12 +575,14 @@ def build_guest_area():
     legs.build()
     sofa_seats = [inner0 + (i + 0.5) * w for i in range(4)]
 
-    # Armchairs: two on each side in a shallow arc, turned a little towards the middle.
+    # Armchairs: two on each side in an arc that comes forward at the ends, turned in towards the sofa so the guests
+    # sit as one conversation group (a positive turn faces +x). Not quite mirrored: the right pair sits a touch
+    # tighter and turns more, towards the desk.
     chairs = Piece("Armchairs", bevel=0.04, segments=2, subsurf=1)
     chair_cushions = Piece("ArmchairCushions", bevel=0.05, segments=2, subsurf=1)
     chair_legs = Piece("ArmchairLegs", bevel=0.005)
-    arm_specs = [(-8.25, 3.05, math.radians(-14)), (-7.15, 3.18, math.radians(-8)),
-                 (-2.05, 3.18, math.radians(8)), (-0.95, 3.05, math.radians(14))]
+    arm_specs = [(-8.3, 2.82, math.radians(21)), (-7.18, 3.08, math.radians(11)),
+                 (-2.1, 3.1, math.radians(-13)), (-1.02, 2.86, math.radians(-24))]
     seat_points = []
     for cx, cy, yaw in arm_specs:
         p = (cx, cy + 0.45, 0)
@@ -599,7 +614,9 @@ def build_guest_area():
     for i, (x, y, yaw) in enumerate(order):
         empty("Seat_%d" % (i + 1), (x, y, top), yaw)
 
-    # A low coffee table in front of the sofa, below the name tags, with a stack of books and a bowl.
+    # A low coffee table in front of the sofa, below the name tags, with a stack of books and a bowl; set a few
+    # degrees off square, as if someone nudged it.
+    before = {o.name for o in COLLECTION.objects}
     table = Piece("CoffeeTable", bevel=0.01)
     tx0, tx1, ty0, ty1 = -5.5, -3.8, 2.15, 2.6
     tz = PLATFORM_TOP + 0.012 + 0.32   # kept low and forward, so the name tags stay clear above it
@@ -615,6 +632,7 @@ def build_guest_area():
         deco.box(tx0 + 0.25 + k * 0.01, tx0 + 0.55 - k * 0.015, ty0 + 0.12, ty0 + 0.36 - k * 0.01, z, z + h, mat)
     deco.cyl((tx1 - 0.45, (ty0 + ty1) / 2, tz + 0.05), 0.14, 0.1, "M_Ceramic", segments=24, radius2=0.08)
     deco.build()
+    turn_objects(built_since(before), ((tx0 + tx1) / 2, (ty0 + ty1) / 2), -3.0)
 
     # Floor lamp beside the outer left armchair, pendants over the sofa.
     lamp = Piece("FloorLamp", bevel=0.004)
@@ -633,20 +651,26 @@ def build_guest_area():
     pend.build()
 
     # Side table between the left armchairs and the sofa, with a small lamp.
+    stx, sty = -6.47, 3.98
     table = Piece("SideTable", bevel=0.008)
-    table.cyl((-6.65, 3.9, PLATFORM_TOP + 0.52), 0.22, 0.035, "M_WoodWarm", segments=28)
-    table.cyl((-6.65, 3.9, PLATFORM_TOP + 0.26), 0.03, 0.5, "M_WoodWarm", segments=10)
-    table.cyl((-6.65, 3.9, PLATFORM_TOP + 0.04), 0.16, 0.03, "M_WoodWarm", segments=24)
-    table.cyl((-6.65, 3.9, PLATFORM_TOP + 0.62), 0.05, 0.16, "M_Ceramic", segments=16)
-    table.cyl((-6.65, 3.9, PLATFORM_TOP + 0.8), 0.14, 0.18, "M_LampShade", segments=24, radius2=0.1, caps=False)
+    table.cyl((stx, sty, PLATFORM_TOP + 0.52), 0.2, 0.035, "M_WoodWarm", segments=28)
+    table.cyl((stx, sty, PLATFORM_TOP + 0.26), 0.03, 0.5, "M_WoodWarm", segments=10)
+    table.cyl((stx, sty, PLATFORM_TOP + 0.04), 0.15, 0.03, "M_WoodWarm", segments=24)
+    table.cyl((stx - 0.03, sty + 0.04, PLATFORM_TOP + 0.62), 0.05, 0.16, "M_Ceramic", segments=16)
+    table.cyl((stx - 0.03, sty + 0.04, PLATFORM_TOP + 0.8), 0.14, 0.18, "M_LampShade", segments=24, radius2=0.1, caps=False)
     table.build()
-    empty("LP_TableLamp_1", (-6.65, 3.9, PLATFORM_TOP + 0.78))
+    empty("LP_TableLamp_1", (stx - 0.03, sty + 0.04, PLATFORM_TOP + 0.78))
 
 
 # ------------------------------------------------------------------------------------------------ the desk
 
 def build_desk():
     set_zone("Guests")
+    before = {o.name for o in COLLECTION.objects}
+    # The hosts' key and solo shots are built with the desk, so they turn with it.
+    aimed("LK_HostKey", (1.0, 0.2, 5.0), (1.25, 3.9, 1.0))
+    aimed("CAM_HostSoloKonstantin", (0.55, 0.5, 1.62), (0.7, 3.85, 1.32))
+    aimed("CAM_HostSoloIlja", (1.95, 0.5, 1.62), (1.8, 3.85, 1.32))
     z0 = PLATFORM_TOP + 0.01
     x0, x1 = DESK_CX - 1.25, DESK_CX + 1.25
     top_z = z0 + 1.0
@@ -709,6 +733,12 @@ def build_desk():
     chairs.build()
     empty("Host_konstantin", (DESK_CX - 0.55, back + 0.4, z0 + 0.52), 0.0)
     empty("Host_ilja", (DESK_CX + 0.55, back + 0.4, z0 + 0.52), 0.0)
+    # The desk, its rug, the hosts and their shots turn a little towards the guests, so the hosts and the sofa read as
+    # one conversation (a negative turn faces the desk front towards -x, the guests).
+    rug2 = Piece("RugDesk", bevel=0.004)
+    rug2.box(-0.2, 2.7, 2.2, 4.6, PLATFORM_TOP, PLATFORM_TOP + 0.01, "M_Rug2")
+    rug2.build()
+    turn_objects(built_since(before), (DESK_CX, (front + back) / 2), DESK_TURN)
 
     # Bookshelf behind the hosts: the cosy backdrop of the host solo shot.
     shelf = Piece("HostShelf", bevel=0.006)
@@ -1050,6 +1080,14 @@ def build_dressing():
     plant("PlantStage", 1.5, PROSC_Y[0] - 0.4, 0.0, 0.85)
     set_zone("Band")
     plant("PlantBand", 11.7, 5.6, 0.4, 0.7)
+
+    # A big flat rug on the open floor in front of the stage: the third zone of the bay (guests, desk, the floor where
+    # the winner walks), so the middle of the studio is no longer one bare plane. It stays flat: nothing on the floor
+    # blocks a shot or the overlays drawn over it. Its pattern is mapped once over it (StudioMaterials, M_Rug3).
+    set_zone("World")
+    rug = Piece("FloorRug", bevel=0.004)
+    rug.box(FLOOR_RUG["x0"], FLOOR_RUG["x1"], FLOOR_RUG["y0"], FLOOR_RUG["y1"], 0.0, 0.012, "M_Rug3")
+    rug.build()
 
     # Wall sconces on both sides of the proscenium and on the band wall.
     for zone, name, specs in (("Stage", "Sconces", [(1.85, PROSC_Y[0], 3.6), (9.15, PROSC_Y[0], 3.6)]),

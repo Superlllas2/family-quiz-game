@@ -147,6 +147,8 @@ namespace FamilyQuiz.EditorTools.Studio
                     Plain(new Color(0.025f, 0.025f, 0.03f), 0.05f)),
                 ["M_Rug"] = Carpet(Once("Rug", -9.0f, -0.9f, 2.1f, 4.9f, 0.08f)),
                 ["M_Rug2"] = Carpet(Once("Rug2", -0.2f, 2.7f, 2.2f, 4.6f, 0.08f)),
+                // FLOOR_RUG in build_studio.py (world frame).
+                ["M_Rug3"] = Carpet(Once("Rug3", 2.85f, 7.95f, -4.3f, -0.1f, 0.08f)),
                 ["M_MetalBrass"] = Plain(new Color(0.78f, 0.58f, 0.3f), 0.62f, 1f),
                 ["M_MetalBlack"] = Plain(new Color(0.04f, 0.04f, 0.045f), 0.45f, 0.6f),
                 ["M_Chrome"] = Plain(new Color(0.8f, 0.8f, 0.82f), 0.85f, 1f),

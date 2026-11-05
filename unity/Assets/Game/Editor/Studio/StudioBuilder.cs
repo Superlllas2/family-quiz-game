@@ -19,7 +19,8 @@ namespace FamilyQuiz.EditorTools.Studio
     /// the camera and its shot points, then bakes the lightmaps and adds the scene to the build.
     /// Command line (no -quit, it exits by itself):
     /// Unity -batchmode -projectPath unity -executeMethod FamilyQuiz.EditorTools.Studio.StudioBuilder.Run
-    ///       [-look warm|retro|modern] [-bake] [-textures] [-capture outDir] -logFile build.log
+    ///       [-look warm|retro|modern] [-bake] [-textures | -procTextures] [-capture outDir] -logFile build.log
+    /// (-textures remakes the procedural textures and the scan masks, -procTextures only the procedural ones)
     /// </summary>
     public static class StudioBuilder
     {
@@ -41,7 +42,8 @@ namespace FamilyQuiz.EditorTools.Studio
                 var args = Environment.GetCommandLineArgs();
                 string look = Arg(args, "-look") ?? StudioLooks.WarmLateNight;
                 bool bake = args.Contains("-bake");
-                if (args.Contains("-textures") || !File.Exists(StudioTextures.Folder + "/City.png")) StudioTextures.GenerateAll();
+                if (args.Contains("-textures") || args.Contains("-procTextures") || !File.Exists(StudioTextures.Folder + "/Rug3.png"))
+                    StudioTextures.GenerateAll();
                 if (args.Contains("-textures")) StudioScans.PrepareAll(true);
                 if (args.Contains("-textures") || !File.Exists(StudioTextures.Folder + "/CityWindows.png")) StudioTextures.CityWindows();
                 // -captureOnly renders the saved scene without rebuilding it; -hide <name> hides one object first.

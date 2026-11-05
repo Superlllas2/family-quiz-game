@@ -25,6 +25,8 @@ namespace FamilyQuiz.EditorTools.Studio
             Velvet();
             Rug("Rug", 1024, 512, new Color(0.45f, 0.11f, 0.10f), new Color(0.10f, 0.14f, 0.26f), new Color(0.80f, 0.68f, 0.48f), 31);
             Rug("Rug2", 1024, 1024, new Color(0.20f, 0.24f, 0.30f), new Color(0.48f, 0.20f, 0.12f), new Color(0.74f, 0.62f, 0.44f), 32);
+            // The big rug on the open floor in front of the stage: slate with a muted teal border, like the curtain.
+            Rug("Rug3", 1024, 844, new Color(0.13f, 0.15f, 0.18f), new Color(0.07f, 0.2f, 0.21f), new Color(0.6f, 0.53f, 0.41f), 33);
             City();
             Board();
             Noise("Leaf", 256, new Color(0.18f, 0.32f, 0.12f), new Color(0.10f, 0.22f, 0.07f), 41);
