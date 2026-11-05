@@ -30,8 +30,8 @@ namespace FamilyQuiz.EditorTools.Studio
 
         private static readonly string[] ProbeLitPieces =
         {
-            "HostShelfBooks", "CornerShelfBooks", "DeskProps", "CoffeeTableProps", "DrumKit", "Keyboard", "Amps", "Guitar", "Bass", "PlantBig", "PlantStage",
-            "PlantShelf1", "PlantShelf2", "PlantBand", "Pendants", "FloorLamp", "SideTable", "Sconces", "BandSconce", "Truss", "BandGear", "SideTable2",
+            "HostShelfBooks", "DeskProps", "CoffeeTableProps", "DrumKit", "Keyboard", "Amps", "Guitar", "Bass", "PlantBig", "PlantStage",
+            "PlantShelf2", "PlantBand", "Pendants", "FloorLamp", "SideTable", "Sconces", "BandSconce", "Truss", "BandGear", "SideTable2",
             "SofaLegs", "ArmchairLegs", "HostChairs", "StageLamp1", "StageLamp2", "ProsceniumTrim", "QuestionBoardFrame"
         };
 
@@ -360,28 +360,30 @@ namespace FamilyQuiz.EditorTools.Studio
             go.transform.SetParent(parent, false);
             var group = go.AddComponent<LightProbeGroup>();
             var points = new List<Vector3>();
-            for (float x = -9.5f; x <= 3.01f; x += 1f)
+            for (float x = -9.5f; x <= 2.51f; x += 1f)
             for (float z = 2.0f; z <= 4.81f; z += 0.9f)
             foreach (float y in new[] { 0.45f, 1.1f, 1.9f })
                 points.Add(ZonePoint(guests, new Vector3(x, y, z)));
+            // Behind the arch, and over the apron in front of it (build_studio.py, APRON_FRONT).
             for (float x = 3.5f; x <= 7.51f; x += 1f)
             foreach (float z in new[] { 4.3f, 5.3f })
             foreach (float y in new[] { 0.9f, 2.1f, 3.4f })
                 points.Add(ZonePoint(stage, new Vector3(x, y, z)));
-            for (float x = 9.0f; x <= 11.51f; x += 1.25f)
-            foreach (float z in new[] { 3.0f, 4.5f })
+            for (float x = 2.0f; x <= 9.61f; x += 0.95f)
+            foreach (float z in new[] { 2.1f, 3.2f })
+            foreach (float y in new[] { 0.9f, 1.9f, 3.0f })
+                points.Add(ZonePoint(stage, new Vector3(x, y, z)));
+            // The band stage and its drum riser.
+            for (float x = 9.0f; x <= 13.61f; x += 1.15f)
+            foreach (float z in new[] { 2.2f, 3.6f, 5.0f })
             foreach (float y in new[] { 0.9f, 1.9f })
                 points.Add(ZonePoint(band, new Vector3(x, y, z)));
-            // Beside the proscenium, where the corners meet.
-            foreach (float x in new[] { 1.6f, 2.4f, 8.7f, 9.4f })
-            foreach (float y in new[] { 0.6f, 1.6f })
-                points.Add(ZonePoint(stage, new Vector3(x, y, 3.2f)));
             // The open floor of the bay, kept clear of the walls.
             for (float x = -8f; x <= 13.01f; x += 2.5f)
             for (float z = -9f; z <= 2.51f; z += 2.5f)
             {
                 var p = new Vector3(x, 1.2f, z);
-                if (InZone(guests, p).z < 1.6f && InZone(stage, p).z < 2.6f && InZone(band, p).z < 2.2f)
+                if (InZone(guests, p).z < 1.6f && InZone(stage, p).z < 1.0f && InZone(band, p).z < 1.1f)
                     points.Add(p);
             }
 

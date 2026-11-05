@@ -119,6 +119,18 @@ class Piece:
         self._tag({f for v in verts for f in v.link_faces}, mat)
         return verts
 
+    def prism(self, poly, z0, z1, mat):
+        """A vertical prism over a 2D polygon (counter clockwise seen from above), from z0 to z1."""
+        bottom = [self.bm.verts.new((x, y, z0)) for x, y in poly]
+        top = [self.bm.verts.new((x, y, z1)) for x, y in poly]
+        n = len(poly)
+        faces = [self.bm.faces.new(top), self.bm.faces.new(list(reversed(bottom)))]
+        for i in range(n):
+            j = (i + 1) % n
+            faces.append(self.bm.faces.new((bottom[i], bottom[j], top[j], top[i])))
+        self._tag(faces, mat)
+        return bottom + top
+
     def grid(self, points, nu, nv, mat):
         """A quad grid from a (nu+1) x (nv+1) list of points, row by row."""
         vs = [self.bm.verts.new(p) for p in points]
@@ -212,6 +224,55 @@ def turn_objects(names, pivot, degrees):
         UV_FRAME[name] = UV_FRAME.get(name, Matrix.Identity(4)) @ m.inverted()
 
 
+def inset_polygon(poly, d):
+    """A convex counter clockwise polygon moved in by d on every side (negative d grows it)."""
+    lines = []
+    n = len(poly)
+    for i in range(n):
+        (ax, ay), (bx, by) = poly[i], poly[(i + 1) % n]
+        ex, ey = bx - ax, by - ay
+        length = math.hypot(ex, ey)
+        nx, ny = -ey / length, ex / length          # the inside is on the left of each edge
+        lines.append(((ax + nx * d, ay + ny * d), (ex, ey)))
+    out = []
+    for i in range(n):
+        (p, r), (q, s) = lines[i - 1], lines[i]
+        cross = r[0] * s[1] - r[1] * s[0]
+        if abs(cross) < 1e-9:
+            out.append(q)
+            continue
+        t = ((q[0] - p[0]) * s[1] - (q[1] - p[1]) * s[0]) / cross
+        out.append((p[0] + r[0] * t, p[1] + r[1] * t))
+    return out
+
+
+def edge_strips(piece, poly, edges, z0, z1, mat, out=0.03):
+    """Thin glowing strips standing just outside the given edges (indices into poly) of a riser."""
+    n = len(poly)
+    grown = inset_polygon(poly, -out)
+    for i in edges:
+        a, b = poly[i], poly[(i + 1) % n]
+        ga, gb = grown[i], grown[(i + 1) % n]
+        piece.prism([a, ga, gb, b][::-1] if _area([a, ga, gb, b]) < 0 else [a, ga, gb, b], z0, z1, mat)
+
+
+def _area(poly):
+    return 0.5 * sum(poly[i][0] * poly[(i + 1) % len(poly)][1] - poly[(i + 1) % len(poly)][0] * poly[i][1]
+                     for i in range(len(poly)))
+
+
+def arc_points(x0, x1, y_mid, y_end, n=24):
+    """A gentle convex arc from x0 to x1: y_end at both ends, y_mid (nearer the audience) in the middle, as a polyline
+    from left to right (the front edge of a counter clockwise polygon)."""
+    pts = []
+    cx, half = (x0 + x1) / 2, (x1 - x0) / 2
+    for i in range(n + 1):
+        x = x0 + (x1 - x0) * i / n
+        u = (x - cx) / half
+        pts.append((x, y_mid + (y_end - y_mid) * u * u))
+    return pts
+
+
 def built_since(before):
     """Names of the objects built since the snapshot before (a set of names)."""
     return [o.name for o in COLLECTION.objects if o.name not in before]
@@ -248,10 +309,11 @@ STAGE_TOP = 0.45              # the curtain stage floor
 WALL_Y = 6.5                  # back of the stage box (stage zone)
 WALL_TOP = 6.0                # height of every wall: lower than a real studio, so the room feels cosy
 GUEST_WALL_Y = 5.5            # front face of the window wall (guest zone)
-GUEST_X = (-10.0, 4.55)       # the window wall's ends (guest zone)
+GUEST_X = (-10.0, 3.85)       # the window wall's ends (guest zone): it stops just past the desk, so the stage is beside the hosts
 BAND_WALL_Y = 6.0             # front face of the band wall (band zone)
-BAND_X = (7.17, 12.4)         # the band wall's ends (band zone)
-CENTER_X = (1.1, 9.85)        # the curtain wall's ends; its front face is the proscenium's (stage zone = world)
+BAND_X = (7.17, 14.4)         # the band wall's ends (band zone): long, for a big band stage
+CENTER_X = (1.1, 10.6)        # the curtain wall's ends; its front face is the proscenium's (stage zone = world)
+TAN_HALF = math.tan(math.radians(22.5))   # a riser's end on the corner bisector moves this far along the wall per metre of depth
 CORNER_L = (CENTER_X[0], 3.7)
 CORNER_R = (CENTER_X[1], 3.7)
 # Every zone's wall end lands on a corner of the curtain wall. A zone's riser stops before the corner by about 0.41 of
@@ -274,7 +336,13 @@ CURTAIN_TOP = 4.55
 BOARD = dict(x0=3.5, x1=7.5, y=5.9, z0=0.95, z1=3.2)
 DESK_CX, DESK_Y = 1.25, 2.55  # desk centre (x) and front face (y), before the desk turns
 DESK_TURN = -9.0              # degrees the desk group turns towards the guests (build_desk)
-FLOOR_RUG = dict(x0=2.85, x1=7.95, y0=-4.3, y1=-0.1)   # world frame; clear of the guest riser, stage and band riser
+FLOOR_RUG = dict(x0=2.85, x1=7.95, y0=-4.6, y1=-0.4)   # world frame; clear of the guest riser, the stage steps and the band stage
+# The curtain stage's apron in front of the arch: its front is a gentle arc, nearest the audience in the middle; its
+# ends run along the two corner bisectors, so it fills the curtain wall from the desk to the band.
+APRON_FRONT = (1.25, 1.75)    # y of the apron front at the middle and at the ends
+STEPS_X = (4.3, 6.7)          # the steps down from the middle of the apron
+BAND_DECK_TOP = 0.4           # the band stage
+DRUM_RISER_TOP = 0.72         # the drum riser on the band stage, one step higher
 
 
 # ------------------------------------------------------------------------------------------------ the room
@@ -368,11 +436,11 @@ def clip_to_room(a, b, margin):
 def build_room():
     set_zone("World")
     floor = Piece("Floor", smooth=False)
-    floor.box(-14.0, 17.0, -15.0, 8.0, -0.05, 0.0, "M_FloorWood")
+    floor.box(-14.0, 19.0, -24.0, 8.0, -0.05, 0.0, "M_FloorWood")
     floor.build()
     # A dark ceiling over everything, so no shot sees the city over the top of the walls.
     ceiling = Piece("Ceiling", smooth=False)
-    ceiling.box(-14.0, 17.0, -15.0, 8.0, WALL_TOP, WALL_TOP + 0.05, "M_BackCloth")
+    ceiling.box(-14.0, 19.0, -24.0, 8.0, WALL_TOP, WALL_TOP + 0.05, "M_BackCloth")
     ceiling.build()
 
     # Pilasters on the two corners of the bay, on the bisector, so the turn reads as a design, not a seam.
@@ -408,8 +476,8 @@ def build_room():
     for i, (px, py) in enumerate([(3.2, -0.6), (6.6, -2.6), (0.6, -4.4)]):
         aimed("LK_FloorPool_%d" % (i + 1), (px - 0.6, py - 1.2, WALL_TOP - 0.7), (px, py, 0.0))
     # The establishing shot looks into the bay from the front, high, and comes down (Unity lerps between the two).
-    aimed("CAM_EstablishStart", (1.0, -17.5, 5.3), (1.5, 0.0, 1.4))
-    aimed("CAM_EstablishEnd", (1.0, -15.0, 3.6), (1.5, 0.0, 1.1))
+    aimed("CAM_EstablishStart", (2.4, -19.0, 5.6), (2.6, 0.0, 1.4))
+    aimed("CAM_EstablishEnd", (2.4, -16.4, 3.8), (2.6, 0.0, 1.1))
 
     build_guest_wall()
     build_curtain_wall()
@@ -530,8 +598,9 @@ def build_curtain_wall():
     wall.box(2.55, 8.45, y0 - 0.09, y0, WALL_TOP - 0.22, WALL_TOP - 0.12, "M_WoodDark")
     wall.build()
     panels.build()
-    for i, x in enumerate([1.85, 9.15]):
-        aimed("LK_Uplight_C%d" % (i + 1), (x, y0 - 0.3, 0.25), (x, y0 + 0.05, 5.0))
+    # Uplights stand on the apron, grazing the walls beside the arch.
+    for i, x in enumerate([1.85, 9.55]):
+        aimed("LK_Uplight_C%d" % (i + 1), (x, y0 - 0.3, STAGE_TOP + 0.08), (x, y0 + 0.05, 5.0))
 
 
 def build_band_wall():
@@ -546,7 +615,7 @@ def build_band_wall():
     panels = Piece("BandWallPanels", bevel=0.004)
     panel_frames(panels, x0 + 0.25, x1 - 0.1, y0, 1.25, WALL_TOP - 0.5)
     panels.build()
-    aimed("LK_Uplight_B1", (12.05, y0 - 0.3, 0.25), (12.05, y0 + 0.05, 5.0))
+    aimed("LK_Uplight_B1", (x1 - 0.45, y0 - 0.3, BAND_DECK_TOP + 0.08), (x1 - 0.45, y0 + 0.05, 5.0))
 
 
 # ------------------------------------------------------------------------------------------------ guest area
@@ -554,11 +623,14 @@ def build_band_wall():
 def build_guest_area():
     set_zone("Guests")
     # The riser under the guests and the desk, with a warm light strip along its front edge.
+    # Its end by the stage runs along the corner bisector, so the riser and the stage's apron meet edge to edge.
     riser = Piece("GuestRiser", bevel=0.02)
-    riser.box(-9.95, 2.9, 2.0, GUEST_WALL_Y, 0.0, PLATFORM_TOP, "M_WoodDark")
+    rx_front = GUEST_X[1] - 0.06 - TAN_HALF * (GUEST_WALL_Y - 2.0)
+    riser_poly = [(-9.95, 2.0), (rx_front, 2.0), (GUEST_X[1] - 0.06, GUEST_WALL_Y), (-9.95, GUEST_WALL_Y)]
+    riser.prism(riser_poly, 0.0, PLATFORM_TOP, "M_WoodDark")
     riser.build()
     strip = Piece("GuestRiserStrip", smooth=False)
-    strip.box(-9.9, 2.85, 1.97, 2.0, 0.05, 0.11, "M_GlowStrip")
+    edge_strips(strip, riser_poly, [0, 1], 0.05, 0.11, "M_GlowStrip")
     strip.build()
 
     # Keys and cameras for the guests and hosts (Unity reads these markers; docs/21_staging.md, shot table).
@@ -813,7 +885,7 @@ def build_desk():
     # The desk, its rug, the hosts and their shots turn a little towards the guests, so the hosts and the sofa read as
     # one conversation (a negative turn faces the desk front towards -x, the guests).
     rug2 = Piece("RugDesk", bevel=0.004)
-    rug2.box(-0.2, 2.7, 2.2, 4.6, PLATFORM_TOP, PLATFORM_TOP + 0.01, "M_Rug2")
+    rug2.box(-0.15, 2.45, 2.3, 4.6, PLATFORM_TOP, PLATFORM_TOP + 0.01, "M_Rug2")
     rug2.build()
     turn_objects(built_since(before), (DESK_CX, (front + back) / 2), DESK_TURN)
 
@@ -881,11 +953,22 @@ def build_stage():
     aimed("CAM_Stage", (5.5, -2.0, 2.075), (5.5, 5.9, 2.075))
     aimed("CAM_StagePushIn", (5.5, -1.65, 2.075), (5.5, 5.9, 2.075))
     stage = Piece("Stage", bevel=0.015)
-    stage.box(2.75, 8.25, 3.05, WALL_Y, 0.0, STAGE_TOP, "M_WoodDark")
-    stage.box(2.85, 8.15, 3.1, WALL_Y, STAGE_TOP - 0.005, STAGE_TOP, "M_StageFloor")
+    stage.box(2.75, 8.25, PROSC_Y[0], WALL_Y, 0.0, STAGE_TOP, "M_WoodDark")             # behind the arch
+    stage.box(2.85, 8.15, PROSC_Y[0], WALL_Y, STAGE_TOP - 0.005, STAGE_TOP, "M_StageFloor")
+    apron = apron_polygon()
+    stage.prism(apron, 0.0, STAGE_TOP, "M_WoodDark")
+    stage.prism(inset_polygon(apron, 0.1), STAGE_TOP - 0.005, STAGE_TOP + 0.004, "M_StageFloor")
+    # Steps down from the middle of the apron to the floor where the winner walks.
+    sx0, sx1 = STEPS_X
+    front = APRON_FRONT[0]
+    rise = STAGE_TOP / 3
+    for k in range(2):
+        stage.box(sx0 + 0.15 * (1 - k), sx1 - 0.15 * (1 - k), front - 0.32 * (2 - k), front + 0.05, 0.0, rise * (k + 1), "M_WoodDark")
+        stage.box(sx0 + 0.15 * (1 - k) + 0.05, sx1 - 0.15 * (1 - k) - 0.05, front - 0.32 * (2 - k) + 0.04, front - 0.32 * (1 - k),
+                  rise * (k + 1) - 0.004, rise * (k + 1) + 0.003, "M_StageFloor")
     stage.build()
     strip = Piece("StageStrip", smooth=False)
-    strip.box(2.8, 8.2, 3.02, 3.05, 0.2, 0.26, "M_GlowStrip")
+    edge_strips(strip, apron, [i for i in range(len(apron)) if i != len(apron) - 2], 0.2, 0.26, "M_GlowStrip")
     strip.build()
 
     # Proscenium: a wooden front with an arched opening (original shape: no bulbs around it, D93).
@@ -971,8 +1054,23 @@ def build_stage():
     sol.thickness = 0.03
 
     # Stage lamps on stands at both front corners, aimed at the board.
-    for i, (x, y) in enumerate([(3.0, 1.7), (8.0, 1.7)]):   # forward and in, so the beams pass through the arch
-        build_stage_lamp("StageLamp%d" % (i + 1), x, y, i + 1)
+    for i, (x, y) in enumerate([(3.25, 2.2), (7.75, 2.2)]):   # on the apron, in far enough that the beams clear the arch
+        build_stage_lamp("StageLamp%d" % (i + 1), x, y, i + 1, STAGE_TOP)
+
+
+def apron_polygon():
+    """The apron in front of the arch (stage zone), counter clockwise: the front arc from left to right, then the two
+    back corners at the curtain wall. Its ends follow the corner bisectors, a little inside them."""
+    y_back = PROSC_Y[0]
+    mid, end = APRON_FRONT
+
+    def left(y):
+        return CORNER_L[0] + 0.08 + TAN_HALF * (y_back - y)
+
+    def right(y):
+        return CORNER_R[0] - 0.08 - TAN_HALF * (y_back - y)
+
+    return arc_points(left(end), right(end), mid, end) + [(right(y_back), y_back), (left(y_back), y_back)]
 
 
 def build_curtain_half(name, edge_x, sign, width):
@@ -1011,9 +1109,8 @@ def build_curtain_half(name, edge_x, sign, width):
     return obj
 
 
-def build_stage_lamp(name, x, y, index):
+def build_stage_lamp(name, x, y, index, floor_z=0.0):
     lamp = Piece(name, bevel=0.004)
-    floor_z = 0.0
     for k in range(3):
         a = 2 * math.pi * k / 3 + 0.4
         fx, fy = x + 0.45 * math.cos(a), y + 0.45 * math.sin(a)
@@ -1024,8 +1121,8 @@ def build_stage_lamp(name, x, y, index):
         bmesh.ops.rotate(lamp.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(tilt, 3, "Y"), verts=v)
         bmesh.ops.rotate(lamp.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(a + math.pi, 3, "Z"), verts=v)
         bmesh.ops.translate(lamp.bm, vec=Vector((mx, my, floor_z + 0.45)), verts=v)
-    lamp.cyl((x, y, 1.4), 0.022, 1.9, "M_MetalBlack", segments=10)
-    head_z = 2.4
+    lamp.cyl((x, y, floor_z + 1.3), 0.022, 1.7, "M_MetalBlack", segments=10)
+    head_z = floor_z + 2.15
     target = Vector(((BOARD["x0"] + BOARD["x1"]) / 2, BOARD["y"], (BOARD["z0"] + BOARD["z1"]) / 2))
     pos = Vector((x, y, head_z))
     d = (target - pos).normalized()
@@ -1045,19 +1142,28 @@ def build_stage_lamp(name, x, y, index):
 
 def build_band():
     set_zone("Band")
-    aimed("LK_BandTop", (10.3, 3.2, WALL_TOP - 0.4), (10.3, 4.2, 0.4))
-    aimed("LK_BandFront", (10.0, 0.4, 4.4), (10.3, 4.3, 0.9))
-    aimed("CAM_BandPreview", (10.3, -2.6, 1.9), (10.3, 4.2, 0.9))   # only for StudioCapture (no Band shot yet, D96)
+    aimed("LK_BandTop", (11.3, 3.6, WALL_TOP - 0.4), (11.3, 4.4, 0.4))
+    aimed("LK_BandFront", (11.3, -0.6, 4.4), (11.3, 4.3, 0.9))
+    aimed("CAM_BandPreview", (11.3, -3.4, 2.2), (11.3, 4.0, 1.0))   # only for StudioCapture (no Band shot yet, D96)
+    # The band stage: a big deck along the band wall with an angled front, its left end on the corner bisector (it
+    # meets the curtain stage's apron there), and a drum riser one step up at the back.
+    wy = BAND_WALL_Y
+    deck = [(BAND_X[0] + 0.08 + TAN_HALF * 4.1, 1.9), (10.0, 1.35), (12.3, 1.35), (BAND_X[1] - 0.35, 3.0),
+            (BAND_X[1] - 0.35, wy), (BAND_X[0] + 0.08, wy)]
+    drums = [(10.45, 3.85), (12.15, 3.85), (12.5, 4.2), (12.5, wy - 0.02), (10.1, wy - 0.02), (10.1, 4.2)]
     riser = Piece("BandRiser", bevel=0.015)
-    riser.box(8.85, 11.9, 2.4, 5.9, 0.0, 0.4, "M_WoodDark")
+    riser.prism(deck, 0.0, BAND_DECK_TOP, "M_WoodDark")
+    riser.prism(inset_polygon(deck, 0.1), BAND_DECK_TOP - 0.005, BAND_DECK_TOP + 0.004, "M_StageFloor")
+    riser.prism(drums, BAND_DECK_TOP, DRUM_RISER_TOP, "M_WoodDark")
+    riser.prism(inset_polygon(drums, 0.08), DRUM_RISER_TOP - 0.005, DRUM_RISER_TOP + 0.004, "M_StageFloor")
     riser.build()
     strip = Piece("BandRiserStrip", smooth=False)
-    strip.box(8.9, 11.85, 2.37, 2.4, 0.16, 0.22, "M_GlowStrip")
-    strip.box(8.82, 8.85, 2.45, 5.85, 0.16, 0.22, "M_GlowStrip")
+    edge_strips(strip, deck, [0, 1, 2, 5], 0.16, 0.22, "M_GlowStrip")
+    edge_strips(strip, drums, [5, 0, 1], BAND_DECK_TOP + 0.14, BAND_DECK_TOP + 0.19, "M_GlowStrip")
     strip.build()
-    top = 0.4
+    top = DRUM_RISER_TOP
     kit = Piece("DrumKit", bevel=0.004)
-    bx, by = 10.75, 4.7
+    bx, by = 11.3, 5.0
     kit.cyl((bx, by, top + 0.3), 0.3, 0.42, "M_DrumShell", axis="y", segments=32)
     kit.cyl((bx, by - 0.22, top + 0.3), 0.27, 0.01, "M_DrumHead", axis="y", segments=32)
     kit.cyl((bx - 0.45, by - 0.25, top + 0.62), 0.18, 0.16, "M_DrumShell", segments=24)   # snare
@@ -1082,8 +1188,14 @@ def build_band():
     kit.cyl((bx, by + 0.45, top + 0.12), 0.02, 0.24, "M_Chrome", segments=8)
     kit.build()
 
+    # The drum rug sits on the drum riser; everything else stands on the deck.
+    rug = Piece("BandRug", bevel=0.004)
+    rug.box(bx - 0.8, bx + 0.8, by - 0.75, by + 0.85, top, top + 0.01, "M_BandRug")
+    rug.build()
+    top = BAND_DECK_TOP
+
     keys = Piece("Keyboard", bevel=0.006)
-    kx, ky = 9.55, 3.4
+    kx, ky = 9.4, 3.6
     keys.box(kx - 0.6, kx + 0.6, ky - 0.18, ky + 0.18, top + 0.85, top + 0.95, "M_MetalBlack")
     keys.box(kx - 0.55, kx + 0.55, ky - 0.17, ky + 0.02, top + 0.95, top + 0.965, "M_KeysWhite")
     for s in [-1, 1]:
@@ -1093,16 +1205,13 @@ def build_band():
 
     # What makes it a working band corner: a rug under the drums, a stool at the keys, a music stand for the bass
     # player (its desk faces the player, so the audience sees its back) and a small lamp left on the amp.
-    rug = Piece("BandRug", bevel=0.004)
-    rug.box(bx - 0.8, bx + 0.8, by - 0.75, by + 0.85, top, top + 0.01, "M_BandRug")
-    rug.build()
     gear = Piece("BandGear", bevel=0.004)
     gear.cyl((kx, ky + 0.5, top + 0.6), 0.16, 0.05, "M_Leather", segments=20)                # keyboard stool
     gear.cyl((kx, ky + 0.5, top + 0.3), 0.018, 0.58, "M_Chrome", segments=8)
     for k in range(3):
         a = 2 * math.pi * k / 3 + 0.3
         rod(gear, (kx, ky + 0.5, top + 0.2), (kx + 0.2 * math.cos(a), ky + 0.5 + 0.2 * math.sin(a), top), 0.01, "M_Chrome")
-    msx, msy = 9.62, 3.95
+    msx, msy = 12.85, 3.75
     gear.cyl((msx, msy, top + 0.55), 0.008, 1.1, "M_MetalBlack", segments=8)                 # music stand
     for k in range(3):
         a = 2 * math.pi * k / 3 + 1.0
@@ -1113,23 +1222,23 @@ def build_band():
     v = gear.box(msx - 0.2, msx + 0.2, msy + 0.008, msy + 0.012, -0.14, 0.14, "M_Paper")           # sheet music
     bmesh.ops.rotate(gear.bm, cent=(msx, msy, 0), matrix=Matrix.Rotation(-0.35, 3, "X"), verts=v)
     bmesh.ops.translate(gear.bm, vec=(0, 0, top + 1.2), verts=v)
-    alx, aly, alz = 9.2, 5.42, top + 0.5                                                      # the amp's top
+    alx, aly, alz = 9.2, 5.6, top + 0.5                                                      # the amp's top
     gear.cyl((alx, aly, alz + 0.08), 0.045, 0.16, "M_Ceramic", segments=14)
     gear.cyl((alx, aly, alz + 0.24), 0.12, 0.15, "M_LampShade", segments=20, radius2=0.085, caps=False)
     gear.build()
     empty("LP_TableLamp_2", (alx, aly, alz + 0.22))
 
     # A guitar and a bass resting on stands (no players yet).
-    build_guitar("Guitar", 11.72, 4.35, top, "M_DrumShell", 1.0)
-    build_guitar("Bass", 9.35, 4.75, top, "M_WoodWarm", 1.18)
+    build_guitar("Guitar", 13.0, 5.35, top, "M_DrumShell", 1.0)
+    build_guitar("Bass", 13.55, 4.7, top, "M_WoodWarm", 1.18)
 
     amp = Piece("Amps", bevel=0.012)
-    amp.box(11.05, 11.65, 2.75, 3.15, top, top + 0.62, "M_Amp")
-    amp.box(11.1, 11.6, 2.73, 2.75, top + 0.06, top + 0.5, "M_AmpCloth")
-    amp.box(9.05, 9.5, 5.2, 5.55, top, top + 0.5, "M_Amp")
-    amp.cyl((10.1, 2.95, top + 0.7), 0.01, 1.4, "M_Chrome", segments=8)                     # mic stand
-    amp.cyl((10.1, 2.95, top + 0.02), 0.14, 0.03, "M_MetalBlack", segments=16)
-    amp.cyl((10.1, 2.9, top + 1.43), 0.025, 0.12, "M_MetalBlack", segments=12, axis="y")
+    amp.box(12.65, 13.25, 5.45, 5.85, top, top + 0.62, "M_Amp")
+    amp.box(12.7, 13.2, 5.43, 5.45, top + 0.06, top + 0.5, "M_AmpCloth")
+    amp.box(8.97, 9.43, 5.43, 5.78, top, top + 0.5, "M_Amp")
+    amp.cyl((11.1, 2.3, top + 0.7), 0.01, 1.4, "M_Chrome", segments=8)                      # mic stand
+    amp.cyl((11.1, 2.3, top + 0.02), 0.14, 0.03, "M_MetalBlack", segments=16)
+    amp.cyl((11.1, 2.25, top + 1.43), 0.025, 0.12, "M_MetalBlack", segments=12, axis="y")
     amp.build()
 
 
@@ -1164,28 +1273,13 @@ def build_guitar(name, x, y, floor_z, body_mat, scale):
 
 def build_dressing():
     set_zone("Guests")
-    # A narrow bookshelf filling the corner end of the window wall, beside the host shelf.
-    shelf = Piece("CornerShelf", bevel=0.006)
-    sx0, sx1 = 2.95, 4.3
-    sy0, sy1 = GUEST_WALL_Y - 0.45, GUEST_WALL_Y - 0.02
-    for x in [sx0, sx1 - 0.05]:
-        shelf.box(x, x + 0.05, sy0, sy1, 0, 4.4, "M_WoodDark")
-    shelf.box(sx0, sx1, sy1 - 0.03, sy1, 0, 4.4, "M_WoodDark")
-    levels = [0.0, 0.8, 1.6, 2.4, 3.2, 4.0]
-    for z in levels:
-        shelf.box(sx0, sx1, sy0, sy1, z, z + 0.04, "M_WoodDark")
-    shelf.build()
-    fill_books("CornerShelfBooks", sx0 + 0.07, sx1 - 0.07, sy0 + 0.04, sy1 - 0.06, levels[:-1])
-    empty("LP_Shelf_3", ((sx0 + sx1) / 2, sy0 + 0.1, 2.25))
-
     # Plants: a big one by the window, one beside the stage, small ones on the shelves.
     plant("PlantBig", -9.6, GUEST_WALL_Y - 0.36, PLATFORM_TOP, 0.9)
-    plant("PlantShelf1", 3.95, GUEST_WALL_Y - 0.25, 4.04, 0.32)
     plant("PlantShelf2", DESK_CX + 1.1, GUEST_WALL_Y - 0.25, 2.99, 0.3)
     set_zone("Stage")
-    plant("PlantStage", 1.5, PROSC_Y[0] - 0.4, 0.0, 0.85)
+    plant("PlantStage", 1.62, PROSC_Y[0] - 0.35, STAGE_TOP, 0.85)
     set_zone("Band")
-    plant("PlantBand", 11.7, 5.6, 0.4, 0.7)
+    plant("PlantBand", 7.85, 5.55, BAND_DECK_TOP, 0.7)
 
     # A big flat rug on the open floor in front of the stage: the third zone of the bay (guests, desk, the floor where
     # the winner walks), so the middle of the studio is no longer one bare plane. It stays flat: nothing on the floor
@@ -1196,8 +1290,8 @@ def build_dressing():
     rug.build()
 
     # Wall sconces on both sides of the proscenium and on the band wall.
-    for zone, name, specs in (("Stage", "Sconces", [(1.85, PROSC_Y[0], 3.6), (9.15, PROSC_Y[0], 3.6)]),
-                              ("Band", "BandSconce", [(8.0, BAND_WALL_Y, 3.3)])):
+    for zone, name, specs in (("Stage", "Sconces", [(1.85, PROSC_Y[0], 3.6), (9.55, PROSC_Y[0], 3.6)]),
+                              ("Band", "BandSconce", [(8.4, BAND_WALL_Y, 3.3), (13.6, BAND_WALL_Y, 3.3)])):
         set_zone(zone)
         sconce = Piece(name, bevel=0.004)
         for k, (x, y, z) in enumerate(specs):
@@ -1262,14 +1356,14 @@ def render_plan(path):
     scene = bpy.context.scene
     cam_data = bpy.data.cameras.new("PlanCam")
     cam_data.type = "ORTHO"
-    cam_data.ortho_scale = 34.0
+    cam_data.ortho_scale = 40.0
     cam = bpy.data.objects.new("PlanCam", cam_data)
     scene.collection.objects.link(cam)
-    cam.location = (1.5, -4.0, 30.0)
+    cam.location = (3.0, -4.0, 30.0)
     scene.camera = cam
     scene.render.engine = "BLENDER_WORKBENCH"
     scene.display.shading.light = "STUDIO"
-    scene.display.shading.color_type = "MATERIAL"
+    scene.display.shading.color_type = "RANDOM"
     scene.render.resolution_x, scene.render.resolution_y = 1600, 1300
     scene.render.filepath = path
     marks = []
@@ -1287,7 +1381,8 @@ def render_plan(path):
             mesh.materials.append(col)
             scene.collection.objects.link(m)
             marks.append(m)
-    hidden = [o for o in COLLECTION.objects if o.type == "MESH" and o.name in ("CityBackdrop",) or o.name.startswith("Truss")]
+    hidden = [o for o in COLLECTION.objects if o.type == "MESH" and o.name in ("CityBackdrop", "Ceiling")
+              or o.name.startswith("Truss") or o.name.startswith("CityBlocks")]
     for o in hidden:
         o.hide_render = True
     bpy.ops.render.render(write_still=True)
