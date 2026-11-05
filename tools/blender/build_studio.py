@@ -174,6 +174,16 @@ def sag(piece, verts, depth):
         v.co.z -= depth * (1.0 - (v.co.y - y0) / max(1e-6, y1 - y0))
 
 
+def mug(piece, x, y, z, mat, yaw=0.0):
+    """A mug standing at height z, with coffee in it and its handle turned yaw radians from +x."""
+    piece.cyl((x, y, z + 0.05), 0.042, 0.1, mat, segments=16)
+    piece.cyl((x, y, z + 0.1005), 0.036, 0.001, "M_Soil", segments=16)
+    v = piece.cyl((0, 0, 0), 0.026, 0.012, mat, axis="y", segments=10, caps=False)
+    bmesh.ops.translate(piece.bm, vec=(0.05, 0, 0), verts=v)
+    bmesh.ops.rotate(piece.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(yaw, 3, "Z"), verts=v)
+    bmesh.ops.translate(piece.bm, vec=(x, y, z + 0.055), verts=v)
+
+
 def empty(name, loc, yaw=0.0):
     obj = bpy.data.objects.new(name, None)
     obj.empty_display_type = "ARROWS"
@@ -590,6 +600,21 @@ def build_guest_area():
     legs.build()
     sofa_seats = [inner0 + (i + 0.5) * w for i in range(4)]
 
+    # Two throw pillows sunk into the sofa's corners, not a matching pair, and a folded wool throw over the right arm.
+    pillows = Piece("SofaPillows", bevel=0.05, segments=2, subsurf=1)
+    for px, mat, turn, lean in ((inner0 + 0.2, "M_PillowA", 0.5, 0.32), (inner1 - 0.19, "M_PillowB", -0.42, 0.24)):
+        v = pillows.box(-0.2, 0.2, -0.065, 0.065, -0.19, 0.19, mat)
+        bmesh.ops.rotate(pillows.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(-lean, 3, "X"), verts=v)   # top leans back
+        bmesh.ops.rotate(pillows.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(turn, 3, "Z"), verts=v)    # into the corner
+        bmesh.ops.translate(pillows.bm, vec=(px, sy1 - 0.47, seat_z + 0.52 + 0.17), verts=v)
+    pillows.build()
+    throw = Piece("SofaThrow", bevel=0.012, segments=2, subsurf=1)
+    ax0, ax1 = sofa_x1 - 0.22, sofa_x1 + 0.005
+    by0, by1 = sy0 + 0.12, sy0 + 0.55
+    throw.box(ax0, ax1, by0, by1, seat_z + 0.6, seat_z + 0.645, "M_Blanket")              # folded over the top
+    throw.box(ax1, ax1 + 0.035, by0, by1, seat_z + 0.3, seat_z + 0.645, "M_Blanket")      # hanging down the outside
+    throw.build()
+
     # Armchairs: two on each side in an arc that comes forward at the ends, turned in towards the sofa so the guests
     # sit as one conversation group (a positive turn faces +x). Not quite mirrored: the right pair sits a touch
     # tighter and turns more, towards the desk.
@@ -650,6 +675,10 @@ def build_guest_area():
         z = tz + sum(x for x, _ in [(0.035, 0), (0.03, 0), (0.04, 0)][:k])
         deco.box(tx0 + 0.25 + k * 0.01, tx0 + 0.55 - k * 0.015, ty0 + 0.12, ty0 + 0.36 - k * 0.01, z, z + h, mat)
     deco.cyl((tx1 - 0.45, (ty0 + ty1) / 2, tz + 0.05), 0.14, 0.1, "M_Ceramic", segments=24, radius2=0.08)
+    # Two cork coasters, a mug left on one of them.
+    for cx_, cy_ in ((tx1 - 0.2, ty0 + 0.13), (tx1 - 0.12, ty1 - 0.12)):
+        deco.cyl((cx_, cy_, tz + 0.004), 0.045, 0.008, "M_Cork", segments=16)
+    mug(deco, tx1 - 0.2, ty0 + 0.13, tz + 0.008, "M_MugB", 2.3)
     deco.build()
     turn_objects(built_since(before), ((tx0 + tx1) / 2, (ty0 + ty1) / 2), -3.0)
 
@@ -657,9 +686,12 @@ def build_guest_area():
     lamp = Piece("FloorLamp", bevel=0.004)
     lamp.cyl((-9.55, 4.6, PLATFORM_TOP + 0.015), 0.17, 0.03, "M_MetalBrass", segments=24)
     lamp.cyl((-9.55, 4.6, PLATFORM_TOP + 0.8), 0.015, 1.55, "M_MetalBrass", segments=10)
-    lamp.cyl((-9.55, 4.6, PLATFORM_TOP + 1.68), 0.28, 0.34, "M_LampShade", segments=32, radius2=0.2, caps=False)
+    # The shade is tipped towards the armchairs, as if someone angled it to read by.
+    v = lamp.cyl((0, 0, 0), 0.28, 0.34, "M_LampShade", segments=32, radius2=0.2, caps=False)
+    bmesh.ops.rotate(lamp.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(-0.24, 3, "Y"), verts=v)
+    bmesh.ops.translate(lamp.bm, vec=(-9.51, 4.6, PLATFORM_TOP + 1.68), verts=v)
     lamp.build()
-    empty("LP_FloorLamp_1", (-9.55, 4.6, PLATFORM_TOP + 1.62))
+    empty("LP_FloorLamp_1", (-9.48, 4.6, PLATFORM_TOP + 1.6))
 
     pend = Piece("Pendants", bevel=0.003)
     for i, x in enumerate([-5.45, -3.85]):
@@ -679,6 +711,20 @@ def build_guest_area():
     table.cyl((stx - 0.03, sty + 0.04, PLATFORM_TOP + 0.8), 0.14, 0.18, "M_LampShade", segments=24, radius2=0.1, caps=False)
     table.build()
     empty("LP_TableLamp_1", (stx - 0.03, sty + 0.04, PLATFORM_TOP + 0.78))
+
+    # A small square table on the other side of the sofa, turned a little: a mug and two books, no lamp.
+    rtx, rty, rturn = -2.8, 4.02, math.radians(7)
+    piv = (rtx, rty, 0)
+    t2 = Piece("SideTable2", bevel=0.008)
+    t2.box(rtx - 0.18, rtx + 0.18, rty - 0.18, rty + 0.18, PLATFORM_TOP + 0.5, PLATFORM_TOP + 0.53, "M_WoodWarm", rturn, piv)
+    t2.box(rtx - 0.15, rtx + 0.15, rty - 0.15, rty + 0.15, PLATFORM_TOP + 0.16, PLATFORM_TOP + 0.18, "M_WoodWarm", rturn, piv)
+    for lx in (rtx - 0.155, rtx + 0.155):
+        for ly in (rty - 0.155, rty + 0.155):
+            t2.box(lx - 0.016, lx + 0.016, ly - 0.016, ly + 0.016, PLATFORM_TOP, PLATFORM_TOP + 0.5, "M_WoodWarm", rturn, piv)
+    t2.box(rtx - 0.12, rtx + 0.1, rty - 0.06, rty + 0.12, PLATFORM_TOP + 0.53, PLATFORM_TOP + 0.56, "M_BookD", rturn + 0.2)
+    t2.box(rtx - 0.1, rtx + 0.08, rty - 0.04, rty + 0.1, PLATFORM_TOP + 0.56, PLATFORM_TOP + 0.585, "M_BookC", rturn - 0.15)
+    mug(t2, rtx + 0.08, rty - 0.1, PLATFORM_TOP + 0.53, "M_MugA", -0.6)
+    t2.build()
 
 
 # ------------------------------------------------------------------------------------------------ the desk
@@ -725,13 +771,24 @@ def build_desk():
 
     # Desk lamp and two mugs.
     acc = Piece("DeskProps", bevel=0.004)
-    lx, ly = x1 - 0.3, back - 0.25
-    acc.cyl((lx, ly, top_z + 0.08), 0.1, 0.03, "M_MetalBrass", segments=20)
-    acc.cyl((lx, ly, top_z + 0.25), 0.012, 0.32, "M_MetalBrass", segments=8)
-    acc.cyl((lx, ly - 0.05, top_z + 0.43), 0.17, 0.12, "M_LampShadeGreen", segments=24, radius2=0.08, caps=False)
-    for mx in [DESK_CX - 0.55, DESK_CX + 0.35]:
-        acc.cyl((mx, front + 0.25, top_z + 0.11), 0.045, 0.1, "M_Ceramic", segments=16)
+    # A brass banker's lamp with a green glass shade, tipped towards the desk top.
+    lx, ly = x1 - 0.32, back - 0.24
+    acc.cyl((lx, ly, top_z + 0.075), 0.085, 0.03, "M_MetalBrass", segments=20)
+    acc.cyl((lx, ly, top_z + 0.24), 0.011, 0.3, "M_MetalBrass", segments=8)
+    v = acc.cyl((0, 0, 0), 0.07, 0.34, "M_LampShadeGreen", axis="x", segments=20)
+    bmesh.ops.scale(acc.bm, vec=(1.0, 1.15, 0.7), verts=v)
+    bmesh.ops.rotate(acc.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(0.25, 3, "X"), verts=v)
+    bmesh.ops.translate(acc.bm, vec=(lx, ly - 0.05, top_z + 0.42), verts=v)
+    # Two different mugs, their handles turned anyhow.
+    mug(acc, DESK_CX - 0.55, front + 0.25, top_z + 0.06, "M_MugA", 2.6)
+    mug(acc, DESK_CX + 0.35, front + 0.22, top_z + 0.06, "M_MugB", 0.4)
     acc.box(DESK_CX - 0.2, DESK_CX + 0.15, front + 0.2, front + 0.45, top_z + 0.06, top_z + 0.068, "M_Paper")
+    # A small stack of cue cards in front of each host, squared up badly, and a pen.
+    for cx_, cy_, rot in ((DESK_CX - 0.78, front + 0.36, 0.12), (DESK_CX + 0.62, front + 0.32, -0.2)):
+        for k in range(4):
+            z = top_z + 0.06 + k * 0.0025
+            acc.box(cx_ - 0.1, cx_ + 0.1, cy_ - 0.065, cy_ + 0.065, z, z + 0.002, "M_CueCard", rot + 0.06 * (k % 2) - 0.03 * k)
+    acc.cyl((DESK_CX + 0.6, front + 0.47, top_z + 0.066), 0.0045, 0.14, "M_MetalBlack", axis="x", segments=6)
     # A retro desk microphone between the hosts.
     mx, my = DESK_CX, front + 0.32
     acc.cyl((mx, my, top_z + 0.075), 0.07, 0.025, "M_MetalBlack", segments=20)
