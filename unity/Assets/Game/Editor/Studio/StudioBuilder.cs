@@ -29,7 +29,7 @@ namespace FamilyQuiz.EditorTools.Studio
 
         private static readonly string[] ProbeLitPieces =
         {
-            "HostShelfBooks", "CornerShelfBooks", "DeskProps", "CoffeeTableProps", "DrumKit", "Keyboard", "Amps", "PlantBig", "PlantStage",
+            "HostShelfBooks", "CornerShelfBooks", "DeskProps", "CoffeeTableProps", "DrumKit", "Keyboard", "Amps", "Guitar", "Bass", "PlantBig", "PlantStage",
             "PlantShelf1", "PlantShelf2", "PlantBand", "Pendants", "FloorLamp", "SideTable", "Sconces", "BandSconce", "Truss",
             "SofaLegs", "ArmchairLegs", "HostChairs", "StageLamp1", "StageLamp2", "ProsceniumTrim", "QuestionBoardFrame"
         };
@@ -251,7 +251,7 @@ namespace FamilyQuiz.EditorTools.Studio
                 else if (name == "BandTop")
                 {
                     // A dim light over the empty band riser.
-                    Spot(parent, name, at, target, look.Practical, 25f, 10f, 70f, LightmapBakeType.Baked);
+                    Spot(parent, name, at, target, look.Practical, 42f, 10f, 70f, LightmapBakeType.Baked);
                 }
                 else if (name == "CurtainWash")
                 {

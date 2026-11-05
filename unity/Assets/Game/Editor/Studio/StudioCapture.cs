@@ -69,11 +69,27 @@ namespace FamilyQuiz.EditorTools.Studio
             Shot("6_curtain", rig.CurtainShot, rig.CurtainFieldOfView, false, false, false);
             Shot("7_stage", rig.StageShot, rig.StageFieldOfView, true, false, false);
             Shot("8_seats_lit", rig.SeatsShot, rig.SeatsFieldOfView, false, false, false);
+            var band = FindNamed("CAM_BandPreview");
+            var bandTarget = FindNamed("CAMT_BandPreview");
+            if (band != null && bandTarget != null)
+            {
+                var pose = new GameObject("BandPreviewPose").transform;
+                pose.SetPositionAndRotation(band.position, Quaternion.LookRotation(bandTarget.position - band.position));
+                Shot("9_band", pose, 36f, false, false, false);
+                Object.DestroyImmediate(pose.gameObject);
+            }
 
             if (color != null) color.postExposure.value = baseExposure;
             if (vignette != null) vignette.intensity.value = baseVignette;
             Object.DestroyImmediate(stand);
             Debug.Log("Studio: captured look " + look + " to " + outDir);
+        }
+
+        private static Transform FindNamed(string name)
+        {
+            foreach (var t in Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+                if (t.name == name) return t;
+            return null;
         }
 
         private static void AddGuest(Transform parent, Transform cards, Transform seat, Color color, string letter)

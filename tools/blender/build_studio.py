@@ -939,6 +939,7 @@ def build_stage_lamp(name, x, y, index):
 def build_band():
     set_zone("Band")
     aimed("LK_BandTop", (10.3, 3.2, WALL_TOP - 0.4), (10.3, 4.2, 0.4))
+    aimed("CAM_BandPreview", (10.3, -2.6, 1.9), (10.3, 4.2, 0.9))   # only for StudioCapture (no Band shot yet, D96)
     riser = Piece("BandRiser", bevel=0.015)
     riser.box(8.85, 11.9, 2.4, 5.9, 0.0, 0.4, "M_WoodDark")
     riser.build()
@@ -982,6 +983,10 @@ def build_band():
         bmesh.ops.rotate(keys.bm, cent=(kx, ky, top + 0.44), matrix=Matrix.Rotation(s * 0.5, 3, "X"), verts=v)
     keys.build()
 
+    # A guitar and a bass resting on stands (no players yet).
+    build_guitar("Guitar", 11.72, 4.35, top, "M_DrumShell", 1.0)
+    build_guitar("Bass", 9.35, 4.75, top, "M_WoodWarm", 1.18)
+
     amp = Piece("Amps", bevel=0.012)
     amp.box(11.05, 11.65, 2.75, 3.15, top, top + 0.62, "M_Amp")
     amp.box(11.1, 11.6, 2.73, 2.75, top + 0.06, top + 0.5, "M_AmpCloth")
@@ -990,6 +995,33 @@ def build_band():
     amp.cyl((10.1, 2.95, top + 0.02), 0.14, 0.03, "M_MetalBlack", segments=16)
     amp.cyl((10.1, 2.9, top + 1.43), 0.025, 0.12, "M_MetalBlack", segments=12, axis="y")
     amp.build()
+
+
+def build_guitar(name, x, y, floor_z, body_mat, scale):
+    """An electric guitar (or, longer, a bass) leaning back on an A-frame stand, facing the audience."""
+    g = Piece(name, bevel=0.003)
+    s = scale
+    verts = []
+    # Body: two overlapping flattened discs (lower and upper bout) and a waist, facing -y.
+    verts += g.cyl((0, 0, 0.0), 0.19 * s ** 0.5, 0.045, body_mat, axis="y", segments=28)
+    verts += g.cyl((0.01, 0, 0.21 * s ** 0.5), 0.145 * s ** 0.5, 0.045, body_mat, axis="y", segments=24)
+    verts += g.box(-0.06, 0.07, -0.028, 0.028, -0.02, 0.2, "M_KeysWhite")                   # pickguard
+    neck = 0.5 * s
+    verts += g.box(-0.025, 0.025, -0.012, 0.018, 0.3, 0.3 + neck, "M_WoodDark")
+    verts += g.box(-0.04, 0.045, -0.01, 0.016, 0.3 + neck, 0.3 + neck + 0.17, "M_WoodDark")  # headstock
+    for k in range(3 if s < 1.1 else 2):
+        verts += g.cyl((0.0, -0.03, 0.02 + k * 0.07), 0.012, 0.008, "M_Chrome", axis="y", segments=10)  # knobs
+    # Lean back 14 degrees, then stand on the stand's cradle.
+    lean = Matrix.Rotation(math.radians(-14), 3, "X")
+    vs = list({v for v in verts})
+    bmesh.ops.rotate(g.bm, cent=(0, 0, 0), matrix=lean, verts=vs)
+    bmesh.ops.translate(g.bm, vec=Vector((x, y, floor_z + 0.33)), verts=vs)
+    # The stand: two front legs to a cradle, a back leg and a neck rest.
+    rod(g, (x - 0.14, y - 0.12, floor_z), (x - 0.08, y - 0.04, floor_z + 0.2), 0.008, "M_MetalBlack")
+    rod(g, (x + 0.14, y - 0.12, floor_z), (x + 0.08, y - 0.04, floor_z + 0.2), 0.008, "M_MetalBlack")
+    rod(g, (x - 0.12, y - 0.05, floor_z + 0.2), (x + 0.12, y - 0.05, floor_z + 0.2), 0.009, "M_MetalBlack")
+    rod(g, (x, y + 0.3, floor_z), (x, y + 0.12 * s, floor_z + 0.3 + 0.5 * s), 0.008, "M_MetalBlack")
+    g.build()
 
 
 # ------------------------------------------------------------------------------------------------ dressing
