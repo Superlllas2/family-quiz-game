@@ -2,63 +2,63 @@
   {
     "id": "geography",
     "title": {
-      "ru": "География",
-      "en": "Geography"
+      "ru": "Вокруг света",
+      "en": "Around the world"
     }
   },
   {
     "id": "history",
     "title": {
-      "ru": "История",
-      "en": "History"
+      "ru": "Машина времени",
+      "en": "Time machine"
     }
   },
   {
     "id": "science",
     "title": {
-      "ru": "Наука",
-      "en": "Science"
+      "ru": "Как это устроено",
+      "en": "How things work"
     }
   },
   {
     "id": "nature",
     "title": {
-      "ru": "Животные",
-      "en": "Animals"
+      "ru": "Странные звери",
+      "en": "Weird animals"
     }
   },
   {
     "id": "food",
     "title": {
-      "ru": "Еда",
-      "en": "Food"
+      "ru": "Что на ужин",
+      "en": "What's for dinner"
     }
   },
   {
     "id": "sport",
     "title": {
-      "ru": "Спорт",
-      "en": "Sport"
+      "ru": "Спорт и рекорды",
+      "en": "Sport and records"
     }
   },
   {
     "id": "culture",
     "title": {
-      "ru": "Книги и музыка",
-      "en": "Books and music"
+      "ru": "Мультики, книги, кино",
+      "en": "Cartoons, books, films"
     }
   },
   {
     "id": "space",
     "title": {
       "ru": "Космос",
-      "en": "Space"
+      "en": "Up in space"
     }
   },
   {
     "id": "mixed",
     "title": {
-      "ru": "Обо всём",
+      "ru": "Всего понемногу",
       "en": "A bit of everything"
     },
     "mixed": true

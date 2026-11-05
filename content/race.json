@@ -2,122 +2,41 @@
   {
     "id": "race_001",
     "statement": {
-      "ru": "У осьминога три сердца.",
-      "en": "An octopus has three hearts."
+      "ru": "Банан — это ягода, а клубника — нет.",
+      "en": "A banana is a berry, but a strawberry is not."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Berry_(botany)"
+  },
+  {
+    "id": "race_002",
+    "statement": {
+      "ru": "У осьминога голубая кровь.",
+      "en": "An octopus has blue blood."
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Octopus"
   },
   {
-    "id": "race_002",
-    "statement": {
-      "ru": "С точки зрения ботаники банан это ягода.",
-      "en": "Botanically, a banana is a berry."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/Banana"
-  },
-  {
     "id": "race_003",
     "statement": {
-      "ru": "Великую Китайскую стену видно с Луны невооружённым глазом.",
-      "en": "The Great Wall of China can be seen from the Moon with the naked eye."
+      "ru": "Наполеон был очень низким даже для своего времени.",
+      "en": "Napoleon was very short even for his time."
     },
     "answer": false,
-    "source": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+    "source": "https://en.wikipedia.org/wiki/Napoleon"
   },
   {
     "id": "race_004",
     "statement": {
-      "ru": "Венера самая горячая планета Солнечной системы.",
-      "en": "Venus is the hottest planet in the Solar System."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/Venus"
-  },
-  {
-    "id": "race_005",
-    "statement": {
-      "ru": "Звук в воде распространяется быстрее, чем в воздухе.",
-      "en": "Sound travels faster in water than in air."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/Speed_of_sound"
-  },
-  {
-    "id": "race_006",
-    "statement": {
-      "ru": "Молния никогда не бьёт в одно место дважды.",
-      "en": "Lightning never strikes the same place twice."
-    },
-    "answer": false,
-    "source": "https://en.wikipedia.org/wiki/Lightning"
-  },
-  {
-    "id": "race_007",
-    "statement": {
-      "ru": "В России 11 часовых поясов.",
-      "en": "Russia has 11 time zones."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/Time_in_Russia"
-  },
-  {
-    "id": "race_008",
-    "statement": {
-      "ru": "В Нидерландах велосипедов больше, чем людей.",
-      "en": "The Netherlands has more bicycles than people."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/Cycling_in_the_Netherlands"
-  },
-  {
-    "id": "race_009",
-    "statement": {
-      "ru": "Память золотой рыбки длится всего три секунды.",
-      "en": "A goldfish's memory lasts only three seconds."
+      "ru": "Золотая рыбка помнит только три секунды.",
+      "en": "A goldfish only remembers for three seconds."
     },
     "answer": false,
     "source": "https://en.wikipedia.org/wiki/Goldfish"
   },
   {
-    "id": "race_010",
-    "statement": {
-      "ru": "Помидор с точки зрения ботаники это фрукт.",
-      "en": "Botanically, a tomato is a fruit."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/Tomato"
-  },
-  {
-    "id": "race_011",
-    "statement": {
-      "ru": "Летучие мыши слепые.",
-      "en": "Bats are blind."
-    },
-    "answer": false,
-    "source": "https://en.wikipedia.org/wiki/Bat"
-  },
-  {
-    "id": "race_012",
-    "statement": {
-      "ru": "Эйфелеву башню построили к Всемирной выставке 1889 года.",
-      "en": "The Eiffel Tower was built for the 1889 World's Fair."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/Eiffel_Tower"
-  },
-  {
-    "id": "race_013",
-    "statement": {
-      "ru": "Пингвины живут на Северном полюсе.",
-      "en": "Penguins live at the North Pole."
-    },
-    "answer": false,
-    "source": "https://en.wikipedia.org/wiki/Penguin"
-  },
-  {
-    "id": "race_014",
+    "id": "race_005",
     "statement": {
       "ru": "Сутки на Венере длиннее, чем год на Венере.",
       "en": "A day on Venus is longer than a year on Venus."
@@ -126,93 +45,318 @@
     "source": "https://en.wikipedia.org/wiki/Venus"
   },
   {
-    "id": "race_015",
+    "id": "race_006",
     "statement": {
-      "ru": "Пушкин родился в XVIII веке.",
-      "en": "Pushkin was born in the 18th century."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/Alexander_Pushkin"
-  },
-  {
-    "id": "race_016",
-    "statement": {
-      "ru": "В горах вода закипает при более низкой температуре.",
-      "en": "In the mountains, water boils at a lower temperature."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/Boiling_point"
-  },
-  {
-    "id": "race_017",
-    "statement": {
-      "ru": "Коала это медведь.",
-      "en": "A koala is a bear."
+      "ru": "Великую Китайскую стену видно с Луны.",
+      "en": "You can see the Great Wall of China from the Moon."
     },
     "answer": false,
-    "source": "https://en.wikipedia.org/wiki/Koala"
+    "source": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
   },
   {
-    "id": "race_018",
-    "statement": {
-      "ru": "Сахара самая большая пустыня на Земле.",
-      "en": "The Sahara is the largest desert on Earth."
-    },
-    "answer": false,
-    "source": "https://en.wikipedia.org/wiki/List_of_deserts_by_area"
-  },
-  {
-    "id": "race_019",
-    "statement": {
-      "ru": "В теле взрослого человека больше 200 костей.",
-      "en": "An adult human body has more than 200 bones."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/Human_skeleton"
-  },
-  {
-    "id": "race_020",
-    "statement": {
-      "ru": "Шахматы появились в Индии.",
-      "en": "Chess originated in India."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/History_of_chess"
-  },
-  {
-    "id": "race_021",
-    "statement": {
-      "ru": "Акулы это млекопитающие.",
-      "en": "Sharks are mammals."
-    },
-    "answer": false,
-    "source": "https://en.wikipedia.org/wiki/Shark"
-  },
-  {
-    "id": "race_022",
+    "id": "race_007",
     "statement": {
       "ru": "Мёд может не портиться тысячи лет.",
-      "en": "Honey can stay edible for thousands of years."
+      "en": "Honey can keep for thousands of years."
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Honey"
   },
   {
-    "id": "race_023",
+    "id": "race_008",
     "statement": {
-      "ru": "Луна больше Земли.",
-      "en": "The Moon is bigger than Earth."
+      "ru": "Молния никогда не бьёт в одно место дважды.",
+      "en": "Lightning never strikes the same place twice."
     },
     "answer": false,
-    "source": "https://en.wikipedia.org/wiki/Moon"
+    "source": "https://en.wikipedia.org/wiki/Lightning"
+  },
+  {
+    "id": "race_009",
+    "statement": {
+      "ru": "Помидор для ботаника — ягода.",
+      "en": "To a botanist, a tomato is a berry."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tomato"
+  },
+  {
+    "id": "race_010",
+    "statement": {
+      "ru": "Страус от страха прячет голову в песок.",
+      "en": "An ostrich hides its head in the sand when scared."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Common_ostrich"
+  },
+  {
+    "id": "race_011",
+    "statement": {
+      "ru": "Акулы появились на Земле раньше деревьев.",
+      "en": "Sharks appeared on Earth before trees did."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shark"
+  },
+  {
+    "id": "race_012",
+    "statement": {
+      "ru": "У улитки есть зубы.",
+      "en": "A snail has teeth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Radula"
+  },
+  {
+    "id": "race_013",
+    "statement": {
+      "ru": "Летучие мыши слепые.",
+      "en": "Bats are blind."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bat"
+  },
+  {
+    "id": "race_014",
+    "statement": {
+      "ru": "Бамбук — это трава.",
+      "en": "Bamboo is a grass."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bamboo"
+  },
+  {
+    "id": "race_015",
+    "statement": {
+      "ru": "Пингвины живут на Северном полюсе.",
+      "en": "Penguins live at the North Pole."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Penguin"
+  },
+  {
+    "id": "race_016",
+    "statement": {
+      "ru": "Эйфелеву башню собирались разобрать через 20 лет.",
+      "en": "The Eiffel Tower was meant to be taken down after 20 years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+  },
+  {
+    "id": "race_017",
+    "statement": {
+      "ru": "Антарктида — самая большая пустыня на Земле.",
+      "en": "Antarctica is the biggest desert on Earth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Antarctica"
+  },
+  {
+    "id": "race_018",
+    "statement": {
+      "ru": "Кошки видят в полной темноте.",
+      "en": "Cats can see in total darkness."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cat"
+  },
+  {
+    "id": "race_019",
+    "statement": {
+      "ru": "Земля ближе всего к Солнцу в январе.",
+      "en": "The Earth is closest to the Sun in January."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Perihelion_and_aphelion"
+  },
+  {
+    "id": "race_020",
+    "statement": {
+      "ru": "Человек использует только 10 процентов мозга.",
+      "en": "People only use 10 percent of their brain."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth"
+  },
+  {
+    "id": "race_021",
+    "statement": {
+      "ru": "Гагарин облетел Землю за 108 минут.",
+      "en": "Gagarin flew round the Earth in 108 minutes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vostok_1"
+  },
+  {
+    "id": "race_022",
+    "statement": {
+      "ru": "На Марсе есть вулкан выше Эвереста.",
+      "en": "Mars has a volcano taller than Everest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Olympus_Mons"
+  },
+  {
+    "id": "race_023",
+    "statement": {
+      "ru": "Морская звезда — это рыба.",
+      "en": "A starfish is a fish."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Starfish"
   },
   {
     "id": "race_024",
     "statement": {
-      "ru": "Страусы прячут голову в песок, когда боятся.",
-      "en": "Ostriches bury their heads in sand when scared."
+      "ru": "Шоколад опасен для собак.",
+      "en": "Chocolate is dangerous for dogs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Theobromine_poisoning"
+  },
+  {
+    "id": "race_025",
+    "statement": {
+      "ru": "Хамелеон меняет цвет, только чтобы спрятаться.",
+      "en": "A chameleon changes colour only to hide."
     },
     "answer": false,
-    "source": "https://en.wikipedia.org/wiki/Common_ostrich"
+    "source": "https://en.wikipedia.org/wiki/Chameleon"
+  },
+  {
+    "id": "race_026",
+    "statement": {
+      "ru": "В воде звук летит быстрее, чем в воздухе.",
+      "en": "Sound travels faster in water than in air."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Speed_of_sound"
+  },
+  {
+    "id": "race_027",
+    "statement": {
+      "ru": "Взрослый слон не умеет прыгать.",
+      "en": "A grown elephant cannot jump."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Elephant"
+  },
+  {
+    "id": "race_028",
+    "statement": {
+      "ru": "Свет от Солнца летит до Земли около восьми минут.",
+      "en": "Sunlight takes about eight minutes to reach the Earth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sunlight"
+  },
+  {
+    "id": "race_029",
+    "statement": {
+      "ru": "Красной планетой называют Венеру.",
+      "en": "Venus is called the Red Planet."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mars"
+  },
+  {
+    "id": "race_030",
+    "statement": {
+      "ru": "Колибри умеет летать задом наперёд.",
+      "en": "A hummingbird can fly backwards."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hummingbird"
+  },
+  {
+    "id": "race_031",
+    "statement": {
+      "ru": "Паук — это насекомое.",
+      "en": "A spider is an insect."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Spider"
+  },
+  {
+    "id": "race_032",
+    "statement": {
+      "ru": "Луна каждый год немного отдаляется от Земли.",
+      "en": "The Moon moves a little further from the Earth every year."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Orbit_of_the_Moon"
+  },
+  {
+    "id": "race_033",
+    "statement": {
+      "ru": "Факс изобрели раньше телефона.",
+      "en": "The fax was invented before the telephone."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fax"
+  },
+  {
+    "id": "race_034",
+    "statement": {
+      "ru": "Викинги носили шлемы с рогами.",
+      "en": "Vikings wore horned helmets."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Horned_helmet"
+  },
+  {
+    "id": "race_035",
+    "statement": {
+      "ru": "Под белой шерстью у белого медведя чёрная кожа.",
+      "en": "Under its white fur a polar bear has black skin."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Polar_bear"
+  },
+  {
+    "id": "race_036",
+    "statement": {
+      "ru": "Арахис растёт на деревьях.",
+      "en": "Peanuts grow on trees."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Peanut"
+  },
+  {
+    "id": "race_037",
+    "statement": {
+      "ru": "Самая короткая война в истории длилась меньше часа.",
+      "en": "The shortest war in history lasted less than an hour."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War"
+  },
+  {
+    "id": "race_038",
+    "statement": {
+      "ru": "Морковь когда-то была фиолетовой.",
+      "en": "Carrots used to be purple."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Carrot"
+  },
+  {
+    "id": "race_039",
+    "statement": {
+      "ru": "Микроволновку придумали, когда у инженера в кармане растаяла шоколадка.",
+      "en": "The microwave oven was invented when a chocolate bar melted in an engineer's pocket."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Microwave_oven"
+  },
+  {
+    "id": "race_040",
+    "statement": {
+      "ru": "У новорождённого костей больше, чем у взрослого.",
+      "en": "A newborn baby has more bones than an adult."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Human_skeleton"
   }
 ]
