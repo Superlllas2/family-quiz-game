@@ -46,14 +46,18 @@ namespace FamilyQuiz.EditorTools.Studio
                 default:
                     return new StudioLook
                     {
+                        // Practicals about 2800 K; the walls' uplights and strips a softer amber, so the wood reads
+                        // brown, not red; a neutral fill and key keep faces readable; the window and the shadows a
+                        // restrained night blue, for contrast with the warm room (cozy pass, Nov 5, 2026).
                         Name = WarmLateNight,
-                        Practical = new Color(1f, 0.66f, 0.38f),
-                        Accent = new Color(1f, 0.55f, 0.25f), Strip = new Color(1f, 0.56f, 0.26f),
-                        Window = new Color(0.42f, 0.52f, 0.9f),
-                        Fill = new Color(1f, 0.86f, 0.7f),
-                        Key = new Color(1f, 0.9f, 0.76f), StageLamp = new Color(1f, 0.88f, 0.7f),
-                        Ambient = new Color(0.03f, 0.025f, 0.025f),
-                        Contrast = 8f, Saturation = 2f, Temperature = 8f
+                        Practical = new Color(1f, 0.69f, 0.42f),
+                        Accent = new Color(1f, 0.72f, 0.48f), AccentIntensity = 7f, Strip = new Color(1f, 0.68f, 0.42f),
+                        Window = new Color(0.45f, 0.58f, 1f), WindowIntensity = 3.2f,
+                        Fill = new Color(0.96f, 0.93f, 0.9f), FillIntensity = 3f,
+                        Key = new Color(1f, 0.93f, 0.84f), StageLamp = new Color(1f, 0.9f, 0.76f), StageLampIntensity = 26f,
+                        Rim = new Color(0.78f, 0.86f, 1f),
+                        Ambient = new Color(0.05f, 0.055f, 0.07f), CityEmission = 1f,
+                        Contrast = 5f, Saturation = -6f, Temperature = 1f
                     };
             }
         }

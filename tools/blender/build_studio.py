@@ -543,6 +543,10 @@ def build_guest_area():
 
     # Keys and cameras for the guests and hosts (Unity reads these markers; docs/21_staging.md, shot table).
     aimed("LK_GuestKey", (-4.0, -2.2, 5.5), (-4.6, 3.7, 0.7))
+    # A cool rim from above the window side, so the guests stand out from the wall; and a warm pool on the floor in
+    # front of the riser, so the bottom of the Wide shot is not one bare plane.
+    aimed("LK_RimGuests", (-4.6, 5.25, 4.9), (-4.6, 2.9, 0.7))
+    aimed("LK_FloorPool_4", (-4.2, -0.6, WALL_TOP - 0.7), (-4.8, 0.9, 0.0))
     aimed("CAM_Wide", (-3.1, -6.9, 2.5), (-3.1, 3.6, 1.05))
     aimed("CAM_Seats", (-4.6, -5.6, 1.45), (-4.6, 3.6, 1.45))
 
@@ -669,6 +673,7 @@ def build_desk():
     before = {o.name for o in COLLECTION.objects}
     # The hosts' key and solo shots are built with the desk, so they turn with it.
     aimed("LK_HostKey", (1.0, 0.2, 5.0), (1.25, 3.9, 1.0))
+    aimed("LK_RimHosts", (1.25, 5.15, 4.3), (1.25, 3.3, 1.2))
     aimed("CAM_HostSoloKonstantin", (0.55, 0.5, 1.62), (0.7, 3.85, 1.32))
     aimed("CAM_HostSoloIlja", (1.95, 0.5, 1.62), (1.8, 3.85, 1.32))
     z0 = PLATFORM_TOP + 0.01
@@ -969,6 +974,7 @@ def build_stage_lamp(name, x, y, index):
 def build_band():
     set_zone("Band")
     aimed("LK_BandTop", (10.3, 3.2, WALL_TOP - 0.4), (10.3, 4.2, 0.4))
+    aimed("LK_BandFront", (10.0, 0.4, 4.4), (10.3, 4.3, 0.9))
     aimed("CAM_BandPreview", (10.3, -2.6, 1.9), (10.3, 4.2, 0.9))   # only for StudioCapture (no Band shot yet, D96)
     riser = Piece("BandRiser", bevel=0.015)
     riser.box(8.85, 11.9, 2.4, 5.9, 0.0, 0.4, "M_WoodDark")

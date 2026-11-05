@@ -25,6 +25,9 @@ namespace FamilyQuiz.EditorTools.Studio
         public float HostKeyIntensity = 26f;
         public Color StageLamp;
         public float StageLampIntensity = 32f;
+        // Realtime rim lights from behind the guests and the hosts, to separate them from the back wall.
+        public Color Rim = new Color(0.85f, 0.88f, 1f);
+        public float RimIntensity = 16f;
         public Color Ambient;
         public float CityEmission = 1.6f;
 

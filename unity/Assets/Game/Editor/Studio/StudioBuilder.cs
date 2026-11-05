@@ -78,8 +78,10 @@ namespace FamilyQuiz.EditorTools.Studio
             StudioScans.PrepareAll(false);
             var materials = StudioMaterials.CreateAll();
             materials["M_City"].SetColor("_EmissionColor", Color.white * look.CityEmission);
-            materials["M_CityBuilding"].SetColor("_EmissionColor", Color.white * look.CityEmission * 0.9f);
-            materials["M_CityBuildingFar"].SetColor("_EmissionColor", new Color(0.75f, 0.8f, 1f) * look.CityEmission * 0.5f);
+            // The near blocks a little dimmer and cooler than the skyline, so the window reads as a night city, not a
+            // wall of lit windows.
+            materials["M_CityBuilding"].SetColor("_EmissionColor", new Color(0.82f, 0.88f, 1f) * look.CityEmission * 0.6f);
+            materials["M_CityBuildingFar"].SetColor("_EmissionColor", new Color(0.7f, 0.78f, 1f) * look.CityEmission * 0.4f);
             materials["M_GlowStrip"].SetColor("_EmissionColor", look.Strip * 0.6f);
             materials["M_Bulb"].SetColor("_EmissionColor", Color.Lerp(look.Practical, Color.white, 0.35f) * 10f);
 
@@ -199,7 +201,7 @@ namespace FamilyQuiz.EditorTools.Studio
                         Point(parent, pair.Key, at, p, 4f * look.PracticalScale, 2.6f, 0.08f);
                         break;
                     case "Shelf":
-                        Point(parent, pair.Key, at, p, 2.5f * look.PracticalScale, 2f, 0.05f);
+                        Point(parent, pair.Key, at, p, 3.5f * look.PracticalScale, 2.2f, 0.05f);
                         break;
                     case "Sconce":
                         Point(parent, pair.Key, at, p, 6f * look.PracticalScale, 4f, 0.08f);
@@ -217,7 +219,9 @@ namespace FamilyQuiz.EditorTools.Studio
                     case "StageLamp":
                     {
                         var target = Find(markers, "LT_Board").position;
-                        var l = Spot(parent, pair.Key, at, target, look.StageLamp, look.StageLampIntensity, 12f, 34f, LightmapBakeType.Realtime);
+                        // A wide soft cone: on the closed curtain it makes a soft pool instead of a hard oval.
+                        var l = Spot(parent, pair.Key, at, target, look.StageLamp, look.StageLampIntensity, 12f, 44f, LightmapBakeType.Realtime);
+                        l.innerSpotAngle = 4f;
                         l.shadows = LightShadows.None;
                         var lamps = (rig.StageLamps ?? new Light[0]).ToList();
                         lamps.Add(l);
@@ -246,19 +250,32 @@ namespace FamilyQuiz.EditorTools.Studio
                 else if (name.StartsWith("FloorPool"))
                 {
                     // A soft warm pool on the open floor.
-                    var pool = Spot(parent, name, at, target, look.Practical, 22f, 9f, 50f, LightmapBakeType.Baked);
+                    var pool = Spot(parent, name, at, target, look.Practical, 24f, 9f, 50f, LightmapBakeType.Baked);
                     pool.innerSpotAngle = 8f;
                     pool.shadowRadius = 0.3f;
                 }
                 else if (name == "BandTop")
                 {
-                    // A dim light over the empty band riser.
-                    Spot(parent, name, at, target, look.Practical, 42f, 10f, 70f, LightmapBakeType.Baked);
+                    // A warm light over the band riser.
+                    Spot(parent, name, at, target, look.Practical, 60f, 10f, 70f, LightmapBakeType.Baked);
+                }
+                else if (name == "BandFront")
+                {
+                    // A soft front light on the instruments, so they read from the Wide and Establish shots.
+                    Spot(parent, name, at, target, look.Key, 34f, 10f, 60f, LightmapBakeType.Baked).shadowRadius = 0.4f;
+                }
+                else if (name.StartsWith("Rim"))
+                {
+                    // Realtime rims from behind and above the guests and the hosts: no shadows, so they stay cheap.
+                    var rim = Spot(parent, name, at, target, look.Rim, look.RimIntensity, 9f, 70f, LightmapBakeType.Realtime);
+                    rim.shadows = LightShadows.None;
                 }
                 else if (name == "CurtainWash")
                 {
                     // A soft realtime wash on the curtain (it moves, so it cannot be baked).
-                    Spot(parent, name, at, target, look.StageLamp, 80f, 12f, 56f, LightmapBakeType.Realtime).shadows = LightShadows.None;
+                    var wash = Spot(parent, name, at, target, look.StageLamp, 80f, 12f, 56f, LightmapBakeType.Realtime);
+                    wash.shadows = LightShadows.None;
+                    wash.innerSpotAngle = 10f;
                 }
                 else if (name == "GuestKey")
                 {

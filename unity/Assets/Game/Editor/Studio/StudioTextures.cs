@@ -23,7 +23,8 @@ namespace FamilyQuiz.EditorTools.Studio
             Wood("WoodWarm", 512, new Color(0.55f, 0.32f, 0.17f), new Color(0.38f, 0.2f, 0.1f), 14f, 0.45f, 13);
             Fabric("Fabric", 512, 64, 21);
             Velvet();
-            Rug("Rug", 1024, 512, new Color(0.45f, 0.11f, 0.10f), new Color(0.10f, 0.14f, 0.26f), new Color(0.80f, 0.68f, 0.48f), 31);
+            // The guest rug: a muted brick field (it was a saturated red) with a navy border.
+            Rug("Rug", 1024, 512, new Color(0.33f, 0.13f, 0.1f), new Color(0.09f, 0.12f, 0.19f), new Color(0.68f, 0.58f, 0.42f), 31);
             Rug("Rug2", 1024, 1024, new Color(0.20f, 0.24f, 0.30f), new Color(0.48f, 0.20f, 0.12f), new Color(0.74f, 0.62f, 0.44f), 32);
             // The big rug on the open floor in front of the stage: slate with a muted teal border, like the curtain.
             Rug("Rug3", 1024, 844, new Color(0.13f, 0.15f, 0.18f), new Color(0.07f, 0.2f, 0.21f), new Color(0.6f, 0.53f, 0.41f), 33);
@@ -206,9 +207,10 @@ namespace FamilyQuiz.EditorTools.Studio
             {
                 float v = y / (float)h;
                 // Dusk glow low on the horizon, deep blue above.
+                // A night blue sky (not black) with a faint warm city glow at the horizon.
                 Color sky = v < 0.3f
-                    ? Color.Lerp(new Color(0.30f, 0.15f, 0.20f), new Color(0.10f, 0.08f, 0.20f), v / 0.3f)
-                    : Color.Lerp(new Color(0.10f, 0.08f, 0.20f), new Color(0.015f, 0.025f, 0.07f), Mathf.Clamp01((v - 0.3f) / 0.5f));
+                    ? Color.Lerp(new Color(0.22f, 0.16f, 0.24f), new Color(0.08f, 0.1f, 0.24f), v / 0.3f)
+                    : Color.Lerp(new Color(0.08f, 0.1f, 0.24f), new Color(0.03f, 0.05f, 0.13f), Mathf.Clamp01((v - 0.3f) / 0.5f));
                 for (int x = 0; x < w; x++) px[y * w + x] = new Color(sky.r * 0.5f, sky.g * 0.5f, sky.b * 0.5f, 1f);
             }
 
