@@ -438,24 +438,24 @@ CITY_BACKDROP = dict(x0=-613.0, x1=359.0, y=GUEST_WALL_Y + 300.0, z0=-137.0, z1=
 
 def build_city():
     """The invented evening city behind the window (guest zone): the far skyline picture on a big backdrop, and three
-    rows of lit blocks in front of it at 60 to 180 m, so the view shifts with the camera. The studio is high up: the
+    rows of lit blocks in front of it at 130 to 250 m (far enough that their windows are as fine as the skyline's), so the view shifts with the camera. The studio is high up: the
     blocks stand on ground far below the window. No real skyline (D93)."""
     b = CITY_BACKDROP
     city = Piece("CityBackdrop", smooth=False)
     city.box(b["x0"], b["x1"], b["y"], b["y"] + 0.1, b["z0"], b["z1"], "M_City")
     city.build()
     rnd = random.Random(5)
-    for row, (depth, mat) in enumerate([(60.0, "M_CityBuilding"), (110.0, "M_CityBuilding"), (180.0, "M_CityBuildingFar")]):
+    for row, (depth, mat) in enumerate([(130.0, "M_CityBuilding"), (190.0, "M_CityBuilding"), (250.0, "M_CityBuildingFar")]):
         blocks = Piece("CityBlocks%d" % (row + 1), smooth=False)
         span = 30.0 + depth * 1.3
         x = WINDOW_X[0] - span
         while x < WINDOW_X[1] + span:
-            w = rnd.uniform(14.0, 34.0) + row * 8
+            w = rnd.uniform(18.0, 40.0) + row * 8
             d = rnd.uniform(14.0, 26.0)
             # Low, so the far skyline keeps the top of the window; the odd tower breaks the line.
             top = rnd.uniform(-0.05, 0.05) * depth + (rnd.random() < 0.12) * rnd.uniform(0.04, 0.09) * depth
             y0 = GUEST_WALL_Y + depth + rnd.uniform(-8.0, 8.0)
-            blocks.box(x, x + w, y0, y0 + d, -120.0, top, mat)
+            blocks.box(x, x + w, y0, y0 + d, -200.0, top, mat)
             if rnd.random() < 0.35:
                 # A setback tower on top.
                 inset = w * rnd.uniform(0.2, 0.35)
@@ -1068,18 +1068,30 @@ def plant(name, x, y, z, s):
     p = Piece(name, bevel=0.0)
     p.cyl((x, y, z + 0.22 * s), 0.2 * s, 0.44 * s, "M_Pot", segments=20, radius2=0.16 * s)
     p.cyl((x, y, z + 0.43 * s), 0.18 * s, 0.02 * s, "M_Soil", segments=20)
-    for k in range(int(26 * max(s, 0.5))):
-        a = random.uniform(0, 2 * math.pi)
-        r = random.uniform(0.0, 0.32) * s
-        h = random.uniform(0.55, 1.4) * s
-        p.sphere((x + r * math.cos(a), y + r * math.sin(a), z + h), random.uniform(0.09, 0.16) * s, "M_Leaf",
-                 scale=(1.0, 0.45, 1.6), subdiv=1)
-    for k in range(5):
-        a = random.uniform(0, 2 * math.pi)
-        v = p.cyl((0, 0, 0), 0.008 * s, 0.9 * s, "M_Stem", segments=6)
-        bmesh.ops.rotate(p.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(random.uniform(0.1, 0.35), 3, "X"), verts=v)
-        bmesh.ops.rotate(p.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(a, 3, "Z"), verts=v)
-        bmesh.ops.translate(p.bm, vec=Vector((x, y, z + 0.85 * s)), verts=v)
+    # Stems fanning out of the pot, each carrying thin pointed leaves that arch outwards and droop at the tips.
+    rnd = random.Random(sum(ord(c) for c in name))   # stable: str hash() changes per run
+    base = Vector((x, y, z + 0.42 * s))
+    for k in range(int(15 * max(s, 0.5))):
+        a = rnd.uniform(0, 2 * math.pi)
+        tilt = rnd.uniform(0.15, 0.6)
+        length = rnd.uniform(0.6, 1.25) * s
+        d = Vector((math.sin(tilt) * math.cos(a), math.sin(tilt) * math.sin(a), math.cos(tilt)))
+        tip = base + d * length
+        rod(p, base, tip, 0.007 * s, "M_Stem", 5)
+        for j in range(rnd.randint(5, 8)):
+            t = rnd.uniform(0.35, 1.0)
+            at = base + d * length * t
+            side = a + rnd.choice((-1, 1)) * rnd.uniform(0.6, 1.4)
+            out = Vector((math.cos(side), math.sin(side), 0.0))
+            leaf_len = rnd.uniform(0.2, 0.36) * s
+            droop = rnd.uniform(-0.6, 0.15)
+            ld = (out + Vector((0, 0, droop))).normalized()
+            centre = at + ld * leaf_len * 0.5
+            v = p.sphere((0, 0, 0), 1.0, "M_Leaf", scale=(0.085 * s, leaf_len * 0.5, 0.006 * s), subdiv=1)
+            # Long axis (local y) along the leaf's direction, flat face roughly up, a little twist.
+            rot = Vector((0, 1, 0)).rotation_difference(ld).to_matrix() @ Matrix.Rotation(rnd.uniform(-0.5, 0.5), 3, "Y")
+            bmesh.ops.rotate(p.bm, cent=(0, 0, 0), matrix=rot, verts=v)
+            bmesh.ops.translate(p.bm, vec=centre, verts=v)
     p.build()
 
 

@@ -181,16 +181,16 @@ namespace FamilyQuiz.EditorTools.Studio
                     // build_studio.py fits the backdrop's UVs to 0..1 itself.
                     Color = Color.black, Smoothness = 0f, EmissionMap = "City", Emission = Color.white * 3f
                 },
-                // The 3D blocks between the window and the backdrop; UVs in metres, 19.2 m x 48 m a window tile (1.2 m x 3 m bays).
+                // The 3D blocks between the window and the backdrop; UVs in metres, 11.5 m x 29 m a window tile: smaller than real bays, so 130 m away they match the skyline's fine windows.
                 ["M_CityBuilding"] = new Spec
                 {
                     Color = new Color(0.01f, 0.011f, 0.015f), Smoothness = 0.5f, EmissionMap = "CityWindows", Emission = Color.white * 3f,
-                    Tiling = new Vector2(1 / 19.2f, 1 / 48f)
+                    Tiling = new Vector2(1 / 11.5f, 1 / 29f)
                 },
                 ["M_CityBuildingFar"] = new Spec
                 {
                     Color = new Color(0.01f, 0.011f, 0.015f), Smoothness = 0.2f, EmissionMap = "CityWindows", Emission = Color.white * 1.5f,
-                    Tiling = new Vector2(1 / 19.2f, 1 / 48f), Offset = new Vector2(0.37f, 0.21f)
+                    Tiling = new Vector2(1 / 11.5f, 1 / 29f), Offset = new Vector2(0.37f, 0.21f)
                 }
             };
         }
