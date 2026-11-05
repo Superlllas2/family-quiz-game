@@ -1,7 +1,7 @@
 [
   {
-    "id": "geo_001",
-    "topic": "geography",
+    "id": "wld_001",
+    "topic": "world",
     "format": "multipleChoice",
     "difficulty": "easy",
     "text": {
@@ -34,8 +34,8 @@
     "source": "https://en.wikipedia.org/wiki/Italy"
   },
   {
-    "id": "geo_002",
-    "topic": "geography",
+    "id": "wld_002",
+    "topic": "world",
     "format": "multipleChoice",
     "difficulty": "easy",
     "text": {
@@ -68,8 +68,8 @@
     "source": "https://en.wikipedia.org/wiki/Istanbul"
   },
   {
-    "id": "geo_003",
-    "topic": "geography",
+    "id": "wld_003",
+    "topic": "world",
     "format": "multipleChoice",
     "difficulty": "easy",
     "text": {
@@ -102,8 +102,8 @@
     "source": "https://en.wikipedia.org/wiki/Vatican_City"
   },
   {
-    "id": "geo_004",
-    "topic": "geography",
+    "id": "wld_004",
+    "topic": "world",
     "format": "multipleChoice",
     "difficulty": "medium",
     "text": {
@@ -136,8 +136,8 @@
     "source": "https://en.wikipedia.org/wiki/Time_in_France"
   },
   {
-    "id": "geo_005",
-    "topic": "geography",
+    "id": "wld_005",
+    "topic": "world",
     "format": "multipleChoice",
     "difficulty": "medium",
     "text": {
@@ -170,42 +170,8 @@
     "source": "https://en.wikipedia.org/wiki/Lakes_of_Canada"
   },
   {
-    "id": "geo_006",
-    "topic": "geography",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какая пустыня самая большая на Земле?",
-      "en": "Which is the biggest desert on Earth?"
-    },
-    "options": [
-      {
-        "ru": "Сахара",
-        "en": "Sahara"
-      },
-      {
-        "ru": "Антарктида",
-        "en": "Antarctica"
-      },
-      {
-        "ru": "Гоби",
-        "en": "Gobi"
-      },
-      {
-        "ru": "Калахари",
-        "en": "Kalahari"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Пустыня — это место, где почти нет осадков, а не где жарко. В Антарктиде их меньше, чем в Сахаре.",
-      "en": "A desert is a place with almost no rain or snow, not a hot place. Antarctica gets less than the Sahara."
-    },
-    "source": "https://en.wikipedia.org/wiki/Antarctica"
-  },
-  {
-    "id": "geo_007",
-    "topic": "geography",
+    "id": "wld_006",
+    "topic": "world",
     "format": "multipleChoice",
     "difficulty": "medium",
     "text": {
@@ -238,8 +204,8 @@
     "source": "https://en.wikipedia.org/wiki/Danube"
   },
   {
-    "id": "geo_008",
-    "topic": "geography",
+    "id": "wld_007",
+    "topic": "world",
     "format": "multipleChoice",
     "difficulty": "medium",
     "text": {
@@ -272,8 +238,8 @@
     "source": "https://en.wikipedia.org/wiki/Wellington"
   },
   {
-    "id": "geo_009",
-    "topic": "geography",
+    "id": "wld_008",
+    "topic": "world",
     "format": "closestValue",
     "difficulty": "hard",
     "text": {
@@ -298,8 +264,8 @@
     "source": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
   },
   {
-    "id": "geo_010",
-    "topic": "geography",
+    "id": "wld_009",
+    "topic": "world",
     "format": "closestValue",
     "difficulty": "hard",
     "text": {
@@ -324,418 +290,8 @@
     "source": "https://en.wikipedia.org/wiki/List_of_African_countries_by_area"
   },
   {
-    "id": "geo_011",
-    "topic": "geography",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Какова глубина Марианской впадины в метрах?",
-      "en": "How deep is the Mariana Trench, in metres?"
-    },
-    "answer": 10935,
-    "range": [
-      2000,
-      20000
-    ],
-    "step": 50,
-    "tolerance": 6000,
-    "unit": {
-      "ru": "м",
-      "en": "m"
-    },
-    "fact": {
-      "ru": "Если опустить туда Эверест, над его вершиной осталось бы ещё два километра воды.",
-      "en": "Drop Everest in and there would still be two kilometres of water above its top."
-    },
-    "source": "https://en.wikipedia.org/wiki/Challenger_Deep"
-  },
-  {
-    "id": "his_001",
-    "topic": "history",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Кем тайно работал Пётр I, когда учился в Голландии?",
-      "en": "What job did Peter the Great secretly do while learning in Holland?"
-    },
-    "options": [
-      {
-        "ru": "Корабельным плотником",
-        "en": "Ship carpenter"
-      },
-      {
-        "ru": "Поваром",
-        "en": "Cook"
-      },
-      {
-        "ru": "Часовщиком",
-        "en": "Watchmaker"
-      },
-      {
-        "ru": "Пекарем",
-        "en": "Baker"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Царь записался на верфь под чужим именем, чтобы научиться строить флот.",
-      "en": "The tsar signed on at a shipyard under a false name to learn how to build a fleet."
-    },
-    "source": "https://en.wikipedia.org/wiki/Grand_Embassy_of_Peter_the_Great"
-  },
-  {
-    "id": "his_002",
-    "topic": "history",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Кто слетал в космос и вернулся живым раньше Гагарина?",
-      "en": "Who flew to space and came back alive before Gagarin?"
-    },
-    "options": [
-      {
-        "ru": "Кот Барсик",
-        "en": "Barsik the cat"
-      },
-      {
-        "ru": "Собаки Белка и Стрелка",
-        "en": "The dogs Belka and Strelka"
-      },
-      {
-        "ru": "Попугай Кеша",
-        "en": "Kesha the parrot"
-      },
-      {
-        "ru": "Хомяк Пушок",
-        "en": "Fluffy the hamster"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Они облетели Землю в 1960 году. Щенка Стрелки потом подарили семье Кеннеди.",
-      "en": "They orbited the Earth in 1960. One of Strelka's puppies was later given to the Kennedy family."
-    },
-    "source": "https://en.wikipedia.org/wiki/Belka_and_Strelka"
-  },
-  {
-    "id": "his_003",
-    "topic": "history",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Чем писали школьники в древнем Новгороде?",
-      "en": "What did schoolchildren in old Novgorod write with?"
-    },
-    "options": [
-      {
-        "ru": "Пером на бумаге",
-        "en": "A quill on paper"
-      },
-      {
-        "ru": "Мелом на доске",
-        "en": "Chalk on a board"
-      },
-      {
-        "ru": "Палочкой на бересте",
-        "en": "A stick on birch bark"
-      },
-      {
-        "ru": "Углём на стене",
-        "en": "Charcoal on a wall"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Мальчик Онфим 800 лет назад рисовал на бересте себя в виде рыцаря вместо уроков.",
-      "en": "800 years ago a boy called Onfim drew himself as a knight on birch bark instead of doing lessons."
-    },
-    "source": "https://en.wikipedia.org/wiki/Onfim"
-  },
-  {
-    "id": "his_004",
-    "topic": "history",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Клеопатра жила ближе по времени к чему?",
-      "en": "Cleopatra lived closer in time to what?"
-    },
-    "options": [
-      {
-        "ru": "Постройке пирамиды Хеопса",
-        "en": "The building of the Great Pyramid"
-      },
-      {
-        "ru": "Высадке людей на Луну",
-        "en": "The Moon landing"
-      },
-      {
-        "ru": "Изобретению колеса",
-        "en": "The invention of the wheel"
-      },
-      {
-        "ru": "Ко всему одинаково",
-        "en": "All of them equally"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Пирамиде было уже 2500 лет, когда родилась Клеопатра.",
-      "en": "The pyramid was already 2,500 years old when Cleopatra was born."
-    },
-    "source": "https://en.wikipedia.org/wiki/Cleopatra"
-  },
-  {
-    "id": "his_005",
-    "topic": "history",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Что из этого появилось раньше всех?",
-      "en": "Which of these came first?"
-    },
-    "options": [
-      {
-        "ru": "Город ацтеков Теночтитлан",
-        "en": "The Aztec city of Tenochtitlan"
-      },
-      {
-        "ru": "Мачу-Пикчу",
-        "en": "Machu Picchu"
-      },
-      {
-        "ru": "Кирпичный Московский Кремль",
-        "en": "Moscow's brick Kremlin"
-      },
-      {
-        "ru": "Оксфордский университет",
-        "en": "Oxford University"
-      }
-    ],
-    "correct": 3,
-    "fact": {
-      "ru": "В Оксфорде учили уже в 1096 году, Теночтитлан основали в 1325-м.",
-      "en": "Oxford was teaching by 1096; Tenochtitlan was founded in 1325."
-    },
-    "source": "https://en.wikipedia.org/wiki/University_of_Oxford"
-  },
-  {
-    "id": "his_006",
-    "topic": "history",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Сколько длилась самая короткая война в истории?",
-      "en": "How long did the shortest war in history last?"
-    },
-    "options": [
-      {
-        "ru": "Меньше часа",
-        "en": "Under an hour"
-      },
-      {
-        "ru": "Три дня",
-        "en": "Three days"
-      },
-      {
-        "ru": "Неделю",
-        "en": "A week"
-      },
-      {
-        "ru": "Один обеденный перерыв в Англии",
-        "en": "One English tea break"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Англия и Занзибар в 1896 году: от 38 до 45 минут.",
-      "en": "Britain against Zanzibar in 1896: 38 to 45 minutes."
-    },
-    "source": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War"
-  },
-  {
-    "id": "his_007",
-    "topic": "history",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какого роста был Наполеон?",
-      "en": "How tall was Napoleon?"
-    },
-    "options": [
-      {
-        "ru": "Около 1 м 50 см, совсем маленький",
-        "en": "About 1.50 m, tiny"
-      },
-      {
-        "ru": "Около 1 м 69 см, как все",
-        "en": "About 1.69 m, average"
-      },
-      {
-        "ru": "Около 1 м 90 см, великан",
-        "en": "About 1.90 m, a giant"
-      },
-      {
-        "ru": "Он всегда был на коне",
-        "en": "He was always on a horse"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Миф о маленьком Наполеоне появился из-за разницы французских и английских дюймов и карикатур.",
-      "en": "The myth of a tiny Napoleon came from French versus English inches, and from cartoons."
-    },
-    "source": "https://en.wikipedia.org/wiki/Napoleon"
-  },
-  {
-    "id": "his_008",
-    "topic": "history",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Что изобрели раньше: факс или телефон?",
-      "en": "Which was invented first: the fax or the telephone?"
-    },
-    "options": [
-      {
-        "ru": "Телефон",
-        "en": "The telephone"
-      },
-      {
-        "ru": "Факс",
-        "en": "The fax"
-      },
-      {
-        "ru": "Их изобрели в один день",
-        "en": "Both on the same day"
-      },
-      {
-        "ru": "Сначала изобрели радио",
-        "en": "Radio came before both"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Первый факс запатентовали в 1843 году, а телефон — только в 1876-м.",
-      "en": "The first fax was patented in 1843; the telephone only in 1876."
-    },
-    "source": "https://en.wikipedia.org/wiki/Fax"
-  },
-  {
-    "id": "his_009",
-    "topic": "history",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько лет на самом деле длилась Столетняя война?",
-      "en": "How many years did the Hundred Years' War actually last?"
-    },
-    "answer": 116,
-    "range": [
-      50,
-      200
-    ],
-    "step": 1,
-    "tolerance": 50,
-    "unit": {
-      "ru": "лет",
-      "en": "years"
-    },
-    "fact": {
-      "ru": "С 1337 по 1453 год, с перерывами.",
-      "en": "From 1337 to 1453, with breaks."
-    },
-    "source": "https://en.wikipedia.org/wiki/Hundred_Years%27_War"
-  },
-  {
-    "id": "his_010",
-    "topic": "history",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "В каком году построили Эйфелеву башню?",
-      "en": "In which year was the Eiffel Tower built?"
-    },
-    "answer": 1889,
-    "range": [
-      1700,
-      2000
-    ],
-    "step": 1,
-    "tolerance": 80,
-    "unit": {
-      "ru": "год",
-      "en": "year"
-    },
-    "fact": {
-      "ru": "Её разрешили поставить всего на 20 лет, а потом собирались разобрать.",
-      "en": "It was only allowed to stand for 20 years and was meant to be taken down after that."
-    },
-    "source": "https://en.wikipedia.org/wiki/Eiffel_Tower"
-  },
-  {
-    "id": "his_011",
-    "topic": "history",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько лет назад жили последние мамонты?",
-      "en": "How many years ago did the last mammoths live?"
-    },
-    "answer": 4000,
-    "range": [
-      0,
-      20000
-    ],
-    "step": 100,
-    "tolerance": 6000,
-    "unit": {
-      "ru": "лет назад",
-      "en": "years ago"
-    },
-    "fact": {
-      "ru": "Когда в Египте уже стояли пирамиды, на острове Врангеля ещё ходили мамонты.",
-      "en": "The pyramids were already standing in Egypt while mammoths still walked on Wrangel Island."
-    },
-    "source": "https://en.wikipedia.org/wiki/Woolly_mammoth"
-  },
-  {
-    "id": "sci_001",
-    "topic": "science",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Что тяжелее: килограмм ваты или килограмм железа?",
-      "en": "Which is heavier: a kilogram of cotton wool or a kilogram of iron?"
-    },
-    "options": [
-      {
-        "ru": "Железо",
-        "en": "The iron"
-      },
-      {
-        "ru": "Вата",
-        "en": "The cotton wool"
-      },
-      {
-        "ru": "Одинаково",
-        "en": "They weigh the same"
-      },
-      {
-        "ru": "Зависит от погоды",
-        "en": "It depends on the weather"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Килограмм — это килограмм. Но мешок ваты будет размером с диван.",
-      "en": "A kilogram is a kilogram. The bag of cotton wool would just be the size of a sofa."
-    },
-    "source": "https://en.wikipedia.org/wiki/Kilogram"
-  },
-  {
-    "id": "sci_002",
-    "topic": "science",
+    "id": "ear_001",
+    "topic": "earth",
     "format": "multipleChoice",
     "difficulty": "easy",
     "text": {
@@ -768,8 +324,2920 @@
     "source": "https://en.wikipedia.org/wiki/Rayleigh_scattering"
   },
   {
-    "id": "sci_003",
-    "topic": "science",
+    "id": "ear_002",
+    "topic": "earth",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Почему мы сначала видим молнию, а гром слышим потом?",
+      "en": "Why do we see lightning before we hear the thunder?"
+    },
+    "options": [
+      {
+        "ru": "Свет летит быстрее звука",
+        "en": "Light is faster than sound"
+      },
+      {
+        "ru": "Гром начинается позже",
+        "en": "Thunder starts later"
+      },
+      {
+        "ru": "Гром стесняется",
+        "en": "Thunder is shy"
+      },
+      {
+        "ru": "Молния ближе к нам",
+        "en": "The lightning is closer"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Посчитай секунды до грома и раздели на три: столько километров до грозы.",
+      "en": "Count the seconds to the thunder and divide by three: that is how many kilometres away the storm is."
+    },
+    "source": "https://en.wikipedia.org/wiki/Thunder"
+  },
+  {
+    "id": "ear_003",
+    "topic": "earth",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая пустыня самая большая на Земле?",
+      "en": "Which is the biggest desert on Earth?"
+    },
+    "options": [
+      {
+        "ru": "Сахара",
+        "en": "Sahara"
+      },
+      {
+        "ru": "Антарктида",
+        "en": "Antarctica"
+      },
+      {
+        "ru": "Гоби",
+        "en": "Gobi"
+      },
+      {
+        "ru": "Калахари",
+        "en": "Kalahari"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Пустыня — это место, где почти нет осадков, а не где жарко. В Антарктиде их меньше, чем в Сахаре.",
+      "en": "A desert is a place with almost no rain or snow, not a hot place. Antarctica gets less than the Sahara."
+    },
+    "source": "https://en.wikipedia.org/wiki/Antarctica"
+  },
+  {
+    "id": "ear_004",
+    "topic": "earth",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Сколько весит обычное пушистое облако?",
+      "en": "How much does an ordinary fluffy cloud weigh?"
+    },
+    "options": [
+      {
+        "ru": "Меньше килограмма",
+        "en": "Less than a kilogram"
+      },
+      {
+        "ru": "Как легковая машина",
+        "en": "As much as a car"
+      },
+      {
+        "ru": "Как сто слонов",
+        "en": "As much as a hundred elephants"
+      },
+      {
+        "ru": "Ничего, это пар",
+        "en": "Nothing, it is steam"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Около 500 тонн воды висит в воздухе крошечными каплями.",
+      "en": "About 500 tonnes of water hanging in the air as tiny droplets."
+    },
+    "source": "https://www.usgs.gov/special-topics/water-science-school/science/how-much-does-a-cloud-weigh"
+  },
+  {
+    "id": "ear_005",
+    "topic": "earth",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Где на Земле измерили самый сильный мороз?",
+      "en": "Where on Earth was the coldest temperature ever measured?"
+    },
+    "options": [
+      {
+        "ru": "В Оймяконе",
+        "en": "Oymyakon"
+      },
+      {
+        "ru": "На Северном полюсе",
+        "en": "The North Pole"
+      },
+      {
+        "ru": "В Антарктиде",
+        "en": "Antarctica"
+      },
+      {
+        "ru": "На Аляске",
+        "en": "Alaska"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Оймякон — самое холодное место, где живут люди, а рекорд держит станция Восток.",
+      "en": "Oymyakon is the coldest place where people live; the record belongs to Vostok Station."
+    },
+    "source": "https://en.wikipedia.org/wiki/Vostok_Station"
+  },
+  {
+    "id": "ear_006",
+    "topic": "earth",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Какова глубина Марианской впадины в метрах?",
+      "en": "How deep is the Mariana Trench, in metres?"
+    },
+    "answer": 10935,
+    "range": [
+      2000,
+      20000
+    ],
+    "step": 50,
+    "tolerance": 6000,
+    "unit": {
+      "ru": "м",
+      "en": "m"
+    },
+    "fact": {
+      "ru": "Если опустить туда Эверест, над его вершиной осталось бы ещё два километра воды.",
+      "en": "Drop Everest in and there would still be two kilometres of water above its top."
+    },
+    "source": "https://en.wikipedia.org/wiki/Challenger_Deep"
+  },
+  {
+    "id": "ear_007",
+    "topic": "earth",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько градусов мороза измерили на станции Восток в Антарктиде в 1983 году?",
+      "en": "How many degrees below zero were measured at Vostok Station in Antarctica in 1983?"
+    },
+    "answer": 89,
+    "range": [
+      0,
+      150
+    ],
+    "step": 1,
+    "tolerance": 40,
+    "unit": {
+      "ru": "° мороза",
+      "en": "degrees below zero"
+    },
+    "fact": {
+      "ru": "При таком морозе мыльный пузырь замерзает и падает, как стеклянный шарик.",
+      "en": "In that cold a soap bubble freezes and falls like a glass ball."
+    },
+    "source": "https://en.wikipedia.org/wiki/Vostok_Station"
+  },
+  {
+    "id": "ani_001",
+    "topic": "animals",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой формы какашки у вомбата?",
+      "en": "What shape is wombat poop?"
+    },
+    "options": [
+      {
+        "ru": "Звёздочки",
+        "en": "Stars"
+      },
+      {
+        "ru": "Кубики",
+        "en": "Cubes"
+      },
+      {
+        "ru": "Спиральки",
+        "en": "Spirals"
+      },
+      {
+        "ru": "Сердечки",
+        "en": "Hearts"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Кубики не скатываются с камней, а вомбаты метят ими свою территорию.",
+      "en": "Cubes do not roll off rocks, and wombats use them to mark their territory."
+    },
+    "source": "https://en.wikipedia.org/wiki/Wombat"
+  },
+  {
+    "id": "ani_002",
+    "topic": "animals",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Почему фламинго розовые?",
+      "en": "Why are flamingos pink?"
+    },
+    "options": [
+      {
+        "ru": "Из-за еды: рачков и водорослей",
+        "en": "Their food: shrimp and algae"
+      },
+      {
+        "ru": "От смущения",
+        "en": "They are embarrassed"
+      },
+      {
+        "ru": "Загорают на солнце",
+        "en": "Sunburn"
+      },
+      {
+        "ru": "Красят друг друга клювами",
+        "en": "They paint each other"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Птенцы фламинго рождаются серыми и розовеют от того, что едят.",
+      "en": "Flamingo chicks are born grey and turn pink from what they eat."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flamingo"
+  },
+  {
+    "id": "ani_003",
+    "topic": "animals",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто почти никогда не пьёт воду, потому что получает её из листьев?",
+      "en": "Who almost never drinks, because it gets its water from leaves?"
+    },
+    "options": [
+      {
+        "ru": "Верблюд",
+        "en": "The camel"
+      },
+      {
+        "ru": "Коала",
+        "en": "The koala"
+      },
+      {
+        "ru": "Панда",
+        "en": "The panda"
+      },
+      {
+        "ru": "Ленивец",
+        "en": "The sloth"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Коалам хватает воды из эвкалипта. Верблюды как раз пьют много, просто редко.",
+      "en": "Koalas get enough water from eucalyptus. Camels drink a lot, just not often."
+    },
+    "source": "https://en.wikipedia.org/wiki/Koala"
+  },
+  {
+    "id": "ani_004",
+    "topic": "animals",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто может повернуть голову почти на три четверти круга?",
+      "en": "Who can turn its head almost three quarters of the way round?"
+    },
+    "options": [
+      {
+        "ru": "Жираф",
+        "en": "The giraffe"
+      },
+      {
+        "ru": "Кошка",
+        "en": "The cat"
+      },
+      {
+        "ru": "Сова",
+        "en": "The owl"
+      },
+      {
+        "ru": "Хамелеон",
+        "en": "The chameleon"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "У совы глаза не двигаются, поэтому крутится вся голова: до 270 градусов.",
+      "en": "An owl's eyes cannot move, so its whole head turns: up to 270 degrees."
+    },
+    "source": "https://en.wikipedia.org/wiki/Owl"
+  },
+  {
+    "id": "ani_005",
+    "topic": "animals",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какого цвета кожа у белого медведя под шерстью?",
+      "en": "What colour is a polar bear's skin under its fur?"
+    },
+    "options": [
+      {
+        "ru": "Белая",
+        "en": "White"
+      },
+      {
+        "ru": "Розовая",
+        "en": "Pink"
+      },
+      {
+        "ru": "Чёрная",
+        "en": "Black"
+      },
+      {
+        "ru": "Голубая",
+        "en": "Light blue"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "А шерсть у него прозрачная: она только кажется белой.",
+      "en": "And its fur is see-through: it only looks white."
+    },
+    "source": "https://en.wikipedia.org/wiki/Polar_bear"
+  },
+  {
+    "id": "ani_006",
+    "topic": "animals",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто из этих животных «смеётся», когда его щекочут?",
+      "en": "Which of these animals laughs when it is tickled?"
+    },
+    "options": [
+      {
+        "ru": "Крысы",
+        "en": "Rats"
+      },
+      {
+        "ru": "Черепахи",
+        "en": "Tortoises"
+      },
+      {
+        "ru": "Золотые рыбки",
+        "en": "Goldfish"
+      },
+      {
+        "ru": "Ящерицы",
+        "en": "Lizards"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Их смех такой высокий, что человек его не слышит без приборов.",
+      "en": "Their laugh is so high pitched that people cannot hear it without equipment."
+    },
+    "source": "https://en.wikipedia.org/wiki/Rat"
+  },
+  {
+    "id": "ani_007",
+    "topic": "animals",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько раз в минуту может биться сердце колибри?",
+      "en": "How many times a minute can a hummingbird's heart beat?"
+    },
+    "answer": 1200,
+    "range": [
+      100,
+      3000
+    ],
+    "step": 10,
+    "tolerance": 900,
+    "unit": {
+      "ru": "ударов",
+      "en": "beats"
+    },
+    "fact": {
+      "ru": "У человека в покое около 70 ударов в минуту.",
+      "en": "A resting person's heart beats about 70 times a minute."
+    },
+    "source": "https://en.wikipedia.org/wiki/Hummingbird"
+  },
+  {
+    "id": "ani_008",
+    "topic": "animals",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "С какой скоростью может бежать гепард, в км/ч?",
+      "en": "How fast can a cheetah run, in km/h?"
+    },
+    "answer": 100,
+    "range": [
+      10,
+      300
+    ],
+    "step": 1,
+    "tolerance": 40,
+    "unit": {
+      "ru": "км/ч",
+      "en": "km/h"
+    },
+    "fact": {
+      "ru": "Быстрее машины в городе, но такой рывок он держит всего полминуты.",
+      "en": "Faster than a car in town, but it can only keep it up for half a minute."
+    },
+    "source": "https://en.wikipedia.org/wiki/Cheetah"
+  },
+  {
+    "id": "sea_001",
+    "topic": "sea",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько сердец у осьминога?",
+      "en": "How many hearts does an octopus have?"
+    },
+    "options": [
+      {
+        "ru": "Одно",
+        "en": "One"
+      },
+      {
+        "ru": "Два",
+        "en": "Two"
+      },
+      {
+        "ru": "Три",
+        "en": "Three"
+      },
+      {
+        "ru": "Восемь, по одному на щупальце",
+        "en": "Eight, one per arm"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "А ещё у него голубая кровь.",
+      "en": "And its blood is blue."
+    },
+    "source": "https://en.wikipedia.org/wiki/Octopus"
+  },
+  {
+    "id": "sea_002",
+    "topic": "sea",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто из этих морских жителей — не рыба?",
+      "en": "Which of these sea creatures is not a fish?"
+    },
+    "options": [
+      {
+        "ru": "Акула",
+        "en": "Shark"
+      },
+      {
+        "ru": "Дельфин",
+        "en": "Dolphin"
+      },
+      {
+        "ru": "Морской конёк",
+        "en": "Seahorse"
+      },
+      {
+        "ru": "Скат",
+        "en": "Ray"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Дельфины дышат воздухом и кормят детёнышей молоком, как кошки.",
+      "en": "Dolphins breathe air and feed their babies milk, like cats do."
+    },
+    "source": "https://en.wikipedia.org/wiki/Dolphin"
+  },
+  {
+    "id": "sea_003",
+    "topic": "sea",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто спит на воде, держась за лапы, чтобы не уплыть друг от друга?",
+      "en": "Who sleeps on the water holding paws so they do not drift apart?"
+    },
+    "options": [
+      {
+        "ru": "Бобры",
+        "en": "Beavers"
+      },
+      {
+        "ru": "Пингвины",
+        "en": "Penguins"
+      },
+      {
+        "ru": "Каланы",
+        "en": "Sea otters"
+      },
+      {
+        "ru": "Тюлени",
+        "en": "Seals"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Иногда каланы ещё и заворачиваются в водоросли, как в одеяло.",
+      "en": "Sometimes sea otters also wrap themselves in kelp like a blanket."
+    },
+    "source": "https://en.wikipedia.org/wiki/Sea_otter"
+  },
+  {
+    "id": "sea_004",
+    "topic": "sea",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто у морских коньков вынашивает малышей?",
+      "en": "Who carries the babies in a seahorse family?"
+    },
+    "options": [
+      {
+        "ru": "Мама",
+        "en": "Mum"
+      },
+      {
+        "ru": "Папа",
+        "en": "Dad"
+      },
+      {
+        "ru": "Бабушка",
+        "en": "Grandma"
+      },
+      {
+        "ru": "Их приносит прилив",
+        "en": "The tide brings them"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Папа носит икринки в сумке на животе и потом «рожает» сотни мальков.",
+      "en": "Dad carries the eggs in a pouch on his belly and then gives birth to hundreds of babies."
+    },
+    "source": "https://en.wikipedia.org/wiki/Seahorse"
+  },
+  {
+    "id": "sea_005",
+    "topic": "sea",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какое животное — самое большое из всех, кто когда-либо жил на Земле?",
+      "en": "Which is the biggest animal that ever lived on Earth?"
+    },
+    "options": [
+      {
+        "ru": "Самый большой динозавр",
+        "en": "The biggest dinosaur"
+      },
+      {
+        "ru": "Синий кит",
+        "en": "The blue whale"
+      },
+      {
+        "ru": "Мегалодон",
+        "en": "Megalodon"
+      },
+      {
+        "ru": "Мамонт",
+        "en": "The mammoth"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Синий кит длиннее двух автобусов и тяжелее любого динозавра.",
+      "en": "A blue whale is longer than two buses and heavier than any dinosaur."
+    },
+    "source": "https://en.wikipedia.org/wiki/Blue_whale"
+  },
+  {
+    "id": "sea_006",
+    "topic": "sea",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет может прожить гренландская акула?",
+      "en": "How many years can a Greenland shark live?"
+    },
+    "answer": 390,
+    "range": [
+      10,
+      1000
+    ],
+    "step": 5,
+    "tolerance": 300,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "Некоторые из живущих сейчас акул плавали ещё при Петре I.",
+      "en": "Some sharks alive today were already swimming when Peter the Great ruled."
+    },
+    "source": "https://en.wikipedia.org/wiki/Greenland_shark"
+  },
+  {
+    "id": "sea_007",
+    "topic": "sea",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько килограммов весит язык синего кита?",
+      "en": "How many kilograms does a blue whale's tongue weigh?"
+    },
+    "answer": 2700,
+    "range": [
+      100,
+      10000
+    ],
+    "step": 50,
+    "tolerance": 2500,
+    "unit": {
+      "ru": "кг",
+      "en": "kg"
+    },
+    "fact": {
+      "ru": "Примерно как целый слон.",
+      "en": "About as much as a whole elephant."
+    },
+    "source": "https://en.wikipedia.org/wiki/Blue_whale"
+  },
+  {
+    "id": "kit_001",
+    "topic": "kitchen",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что делает борщ красным?",
+      "en": "What makes borscht red?"
+    },
+    "options": [
+      {
+        "ru": "Помидоры",
+        "en": "Tomatoes"
+      },
+      {
+        "ru": "Свёкла",
+        "en": "Beetroot"
+      },
+      {
+        "ru": "Малиновое варенье",
+        "en": "Raspberry jam"
+      },
+      {
+        "ru": "Красный перец",
+        "en": "Red pepper"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Каплю уксуса или лимона добавляют, чтобы свёкла не побурела.",
+      "en": "A drop of vinegar or lemon keeps the beetroot from turning brown."
+    },
+    "source": "https://en.wikipedia.org/wiki/Borscht"
+  },
+  {
+    "id": "kit_002",
+    "topic": "kitchen",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какую еду нашли в египетских гробницах — и она всё ещё съедобна?",
+      "en": "Which food found in Egyptian tombs is still edible?"
+    },
+    "options": [
+      {
+        "ru": "Хлеб",
+        "en": "Bread"
+      },
+      {
+        "ru": "Сыр",
+        "en": "Cheese"
+      },
+      {
+        "ru": "Мёд",
+        "en": "Honey"
+      },
+      {
+        "ru": "Виноград",
+        "en": "Grapes"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Мёду было около 3000 лет. В нём почти нет воды, и микробы в нём не живут.",
+      "en": "The honey was about 3,000 years old. It has almost no water, so germs cannot live in it."
+    },
+    "source": "https://www.smithsonianmag.com/science-nature/the-science-behind-honeys-eternal-shelf-life-1218690/"
+  },
+  {
+    "id": "kit_003",
+    "topic": "kitchen",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Почему, когда режешь лук, текут слёзы?",
+      "en": "Why do you cry when you cut an onion?"
+    },
+    "options": [
+      {
+        "ru": "Лук брызгает соком в глаза",
+        "en": "It squirts juice in your eyes"
+      },
+      {
+        "ru": "Он выпускает едкий газ",
+        "en": "It releases an irritating gas"
+      },
+      {
+        "ru": "Лук очень грустный",
+        "en": "The onion is sad"
+      },
+      {
+        "ru": "Пахнет как перец",
+        "en": "It smells like pepper"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Помогает холодный лук и острый нож: газа выходит меньше.",
+      "en": "A cold onion and a sharp knife help: less gas escapes."
+    },
+    "source": "https://en.wikipedia.org/wiki/Syn-Propanethial-S-oxide"
+  },
+  {
+    "id": "kit_004",
+    "topic": "kitchen",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Откуда родом картошка?",
+      "en": "Where do potatoes come from?"
+    },
+    "options": [
+      {
+        "ru": "Из Ирландии",
+        "en": "Ireland"
+      },
+      {
+        "ru": "Из России",
+        "en": "Russia"
+      },
+      {
+        "ru": "Из Германии",
+        "en": "Germany"
+      },
+      {
+        "ru": "Из Южной Америки",
+        "en": "South America"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Индейцы в Андах выращивали её больше 7000 лет назад.",
+      "en": "People in the Andes grew it more than 7,000 years ago."
+    },
+    "source": "https://en.wikipedia.org/wiki/Potato"
+  },
+  {
+    "id": "kit_005",
+    "topic": "kitchen",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой из этих плодов для ботаника — настоящая ягода?",
+      "en": "Which of these is a true berry to a botanist?"
+    },
+    "options": [
+      {
+        "ru": "Клубника",
+        "en": "Strawberry"
+      },
+      {
+        "ru": "Малина",
+        "en": "Raspberry"
+      },
+      {
+        "ru": "Банан",
+        "en": "Banana"
+      },
+      {
+        "ru": "Вишня",
+        "en": "Cherry"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "А клубника и малина — вовсе не ягоды. Помидор, кстати, тоже ягода.",
+      "en": "Strawberries and raspberries are not berries at all. A tomato is, though."
+    },
+    "source": "https://en.wikipedia.org/wiki/Berry_(botany)"
+  },
+  {
+    "id": "kit_006",
+    "topic": "kitchen",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая пряность самая дорогая в мире?",
+      "en": "Which spice is the most expensive in the world?"
+    },
+    "options": [
+      {
+        "ru": "Ваниль",
+        "en": "Vanilla"
+      },
+      {
+        "ru": "Шафран",
+        "en": "Saffron"
+      },
+      {
+        "ru": "Кардамон",
+        "en": "Cardamom"
+      },
+      {
+        "ru": "Корица",
+        "en": "Cinnamon"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Шафран — это тычинки цветка крокуса, их собирают руками.",
+      "en": "Saffron is the threads of a crocus flower, picked by hand."
+    },
+    "source": "https://en.wikipedia.org/wiki/Saffron"
+  },
+  {
+    "id": "kit_007",
+    "topic": "kitchen",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какого цвета была морковь раньше, чем стала оранжевой?",
+      "en": "What colour were carrots before they turned orange?"
+    },
+    "options": [
+      {
+        "ru": "Синей",
+        "en": "Blue"
+      },
+      {
+        "ru": "Фиолетовой или жёлтой",
+        "en": "Purple or yellow"
+      },
+      {
+        "ru": "Зелёной",
+        "en": "Green"
+      },
+      {
+        "ru": "Всегда была оранжевой",
+        "en": "They were always orange"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Оранжевую морковь вывели в Европе всего несколько веков назад.",
+      "en": "Orange carrots were bred in Europe only a few centuries ago."
+    },
+    "source": "https://en.wikipedia.org/wiki/Carrot"
+  },
+  {
+    "id": "kit_008",
+    "topic": "kitchen",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой «орех» на самом деле родственник гороха и фасоли?",
+      "en": "Which nut is really a relative of peas and beans?"
+    },
+    "options": [
+      {
+        "ru": "Грецкий",
+        "en": "Walnut"
+      },
+      {
+        "ru": "Фундук",
+        "en": "Hazelnut"
+      },
+      {
+        "ru": "Миндаль",
+        "en": "Almond"
+      },
+      {
+        "ru": "Арахис",
+        "en": "Peanut"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Арахис зреет под землёй, в стручках, как горох.",
+      "en": "Peanuts ripen underground, in pods, like peas."
+    },
+    "source": "https://en.wikipedia.org/wiki/Peanut"
+  },
+  {
+    "id": "kit_009",
+    "topic": "kitchen",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Из чего делают марципан?",
+      "en": "What is marzipan made from?"
+    },
+    "options": [
+      {
+        "ru": "Из миндаля",
+        "en": "Almonds"
+      },
+      {
+        "ru": "Из арахиса",
+        "en": "Peanuts"
+      },
+      {
+        "ru": "Из кокоса",
+        "en": "Coconut"
+      },
+      {
+        "ru": "Из фасоли",
+        "en": "Beans"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Перемолотый миндаль с сахаром: из него лепят фрукты и зверей.",
+      "en": "Ground almonds and sugar: people shape it into fruit and animals."
+    },
+    "source": "https://en.wikipedia.org/wiki/Marzipan"
+  },
+  {
+    "id": "kit_010",
+    "topic": "kitchen",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько процентов арбуза — вода?",
+      "en": "What percentage of a watermelon is water?"
+    },
+    "answer": 92,
+    "range": [
+      0,
+      100
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "%",
+      "en": "%"
+    },
+    "fact": {
+      "ru": "Поэтому в жару арбуз и пьют, и едят одновременно.",
+      "en": "That is why on a hot day you eat and drink a watermelon at once."
+    },
+    "source": "https://en.wikipedia.org/wiki/Watermelon"
+  },
+  {
+    "id": "kit_011",
+    "topic": "kitchen",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "При какой температуре начинает таять шоколад?",
+      "en": "At what temperature does chocolate start to melt?"
+    },
+    "answer": 34,
+    "range": [
+      0,
+      100
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "°C",
+      "en": "°C"
+    },
+    "fact": {
+      "ru": "Чуть ниже температуры тела: поэтому он тает во рту, а не в руке.",
+      "en": "Just below body temperature: that is why it melts in your mouth."
+    },
+    "source": "https://en.wikipedia.org/wiki/Cocoa_butter"
+  },
+  {
+    "id": "kit_012",
+    "topic": "kitchen",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько цветков нужно собрать, чтобы получить грамм шафрана?",
+      "en": "How many flowers does it take to make one gram of saffron?"
+    },
+    "answer": 150,
+    "range": [
+      1,
+      1000
+    ],
+    "step": 1,
+    "tolerance": 140,
+    "unit": {
+      "ru": "цветков",
+      "en": "flowers"
+    },
+    "fact": {
+      "ru": "У каждого цветка всего три тоненькие тычинки.",
+      "en": "Each flower has only three thin threads."
+    },
+    "source": "https://en.wikipedia.org/wiki/Saffron"
+  },
+  {
+    "id": "tim_001",
+    "topic": "timemachine",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кем тайно работал Пётр I, когда учился в Голландии?",
+      "en": "What job did Peter the Great secretly do while learning in Holland?"
+    },
+    "options": [
+      {
+        "ru": "Корабельным плотником",
+        "en": "Ship carpenter"
+      },
+      {
+        "ru": "Поваром",
+        "en": "Cook"
+      },
+      {
+        "ru": "Часовщиком",
+        "en": "Watchmaker"
+      },
+      {
+        "ru": "Пекарем",
+        "en": "Baker"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Царь записался на верфь под чужим именем, чтобы научиться строить флот.",
+      "en": "The tsar signed on at a shipyard under a false name to learn how to build a fleet."
+    },
+    "source": "https://en.wikipedia.org/wiki/Grand_Embassy_of_Peter_the_Great"
+  },
+  {
+    "id": "tim_002",
+    "topic": "timemachine",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Чем писали школьники в древнем Новгороде?",
+      "en": "What did schoolchildren in old Novgorod write with?"
+    },
+    "options": [
+      {
+        "ru": "Пером на бумаге",
+        "en": "A quill on paper"
+      },
+      {
+        "ru": "Мелом на доске",
+        "en": "Chalk on a board"
+      },
+      {
+        "ru": "Палочкой на бересте",
+        "en": "A stick on birch bark"
+      },
+      {
+        "ru": "Углём на стене",
+        "en": "Charcoal on a wall"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Мальчик Онфим 800 лет назад рисовал на бересте себя в виде рыцаря вместо уроков.",
+      "en": "800 years ago a boy called Onfim drew himself as a knight on birch bark instead of doing lessons."
+    },
+    "source": "https://en.wikipedia.org/wiki/Onfim"
+  },
+  {
+    "id": "tim_003",
+    "topic": "timemachine",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Клеопатра жила ближе по времени к чему?",
+      "en": "Cleopatra lived closer in time to what?"
+    },
+    "options": [
+      {
+        "ru": "Постройке пирамиды Хеопса",
+        "en": "The building of the Great Pyramid"
+      },
+      {
+        "ru": "Высадке людей на Луну",
+        "en": "The Moon landing"
+      },
+      {
+        "ru": "Изобретению колеса",
+        "en": "The invention of the wheel"
+      },
+      {
+        "ru": "Ко всему одинаково",
+        "en": "All of them equally"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Пирамиде было уже 2500 лет, когда родилась Клеопатра.",
+      "en": "The pyramid was already 2,500 years old when Cleopatra was born."
+    },
+    "source": "https://en.wikipedia.org/wiki/Cleopatra"
+  },
+  {
+    "id": "tim_004",
+    "topic": "timemachine",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что из этого появилось раньше всех?",
+      "en": "Which of these came first?"
+    },
+    "options": [
+      {
+        "ru": "Город ацтеков Теночтитлан",
+        "en": "The Aztec city of Tenochtitlan"
+      },
+      {
+        "ru": "Мачу-Пикчу",
+        "en": "Machu Picchu"
+      },
+      {
+        "ru": "Кирпичный Московский Кремль",
+        "en": "Moscow's brick Kremlin"
+      },
+      {
+        "ru": "Оксфордский университет",
+        "en": "Oxford University"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "В Оксфорде учили уже в 1096 году, Теночтитлан основали в 1325-м.",
+      "en": "Oxford was teaching by 1096; Tenochtitlan was founded in 1325."
+    },
+    "source": "https://en.wikipedia.org/wiki/University_of_Oxford"
+  },
+  {
+    "id": "tim_005",
+    "topic": "timemachine",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Сколько длилась самая короткая война в истории?",
+      "en": "How long did the shortest war in history last?"
+    },
+    "options": [
+      {
+        "ru": "Меньше часа",
+        "en": "Under an hour"
+      },
+      {
+        "ru": "Три дня",
+        "en": "Three days"
+      },
+      {
+        "ru": "Неделю",
+        "en": "A week"
+      },
+      {
+        "ru": "Один обеденный перерыв в Англии",
+        "en": "One English tea break"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Англия и Занзибар в 1896 году: от 38 до 45 минут.",
+      "en": "Britain against Zanzibar in 1896: 38 to 45 minutes."
+    },
+    "source": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War"
+  },
+  {
+    "id": "tim_006",
+    "topic": "timemachine",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет на самом деле длилась Столетняя война?",
+      "en": "How many years did the Hundred Years' War actually last?"
+    },
+    "answer": 116,
+    "range": [
+      50,
+      200
+    ],
+    "step": 1,
+    "tolerance": 50,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "С 1337 по 1453 год, с перерывами.",
+      "en": "From 1337 to 1453, with breaks."
+    },
+    "source": "https://en.wikipedia.org/wiki/Hundred_Years%27_War"
+  },
+  {
+    "id": "tim_007",
+    "topic": "timemachine",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году построили Эйфелеву башню?",
+      "en": "In which year was the Eiffel Tower built?"
+    },
+    "answer": 1889,
+    "range": [
+      1700,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 80,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Её разрешили поставить всего на 20 лет, а потом собирались разобрать.",
+      "en": "It was only allowed to stand for 20 years and was meant to be taken down after that."
+    },
+    "source": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+  },
+  {
+    "id": "tim_008",
+    "topic": "timemachine",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет назад жили последние мамонты?",
+      "en": "How many years ago did the last mammoths live?"
+    },
+    "answer": 4000,
+    "range": [
+      0,
+      20000
+    ],
+    "step": 100,
+    "tolerance": 3500,
+    "unit": {
+      "ru": "лет назад",
+      "en": "years ago"
+    },
+    "fact": {
+      "ru": "Когда в Египте уже стояли пирамиды, на острове Врангеля ещё ходили мамонты.",
+      "en": "The pyramids were already standing in Egypt while mammoths still walked on Wrangel Island."
+    },
+    "source": "https://en.wikipedia.org/wiki/Woolly_mammoth"
+  },
+  {
+    "id": "myt_001",
+    "topic": "myths",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что тяжелее: килограмм ваты или килограмм железа?",
+      "en": "Which is heavier: a kilogram of cotton wool or a kilogram of iron?"
+    },
+    "options": [
+      {
+        "ru": "Железо",
+        "en": "The iron"
+      },
+      {
+        "ru": "Вата",
+        "en": "The cotton wool"
+      },
+      {
+        "ru": "Одинаково",
+        "en": "They weigh the same"
+      },
+      {
+        "ru": "Зависит от погоды",
+        "en": "It depends on the weather"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Килограмм — это килограмм. Но мешок ваты будет размером с диван.",
+      "en": "A kilogram is a kilogram. The bag of cotton wool would just be the size of a sofa."
+    },
+    "source": "https://en.wikipedia.org/wiki/Kilogram"
+  },
+  {
+    "id": "myt_002",
+    "topic": "myths",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что будет, если случайно проглотить жвачку?",
+      "en": "What happens if you accidentally swallow chewing gum?"
+    },
+    "options": [
+      {
+        "ru": "Выйдет через пару дней, как всё",
+        "en": "It comes out in a day or two"
+      },
+      {
+        "ru": "Пролежит в животе семь лет",
+        "en": "It stays in your tummy for seven years"
+      },
+      {
+        "ru": "Склеит живот",
+        "en": "It glues your tummy shut"
+      },
+      {
+        "ru": "Превратится в пузырь",
+        "en": "It turns into a bubble"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Про семь лет — выдумка. Но глотать её всё равно не стоит.",
+      "en": "The seven years is made up. Still, better not to swallow it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Chewing_gum"
+  },
+  {
+    "id": "myt_003",
+    "topic": "myths",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что почти невозможно разглядеть с орбиты без приборов?",
+      "en": "What can you hardly see from orbit without instruments?"
+    },
+    "options": [
+      {
+        "ru": "Огни больших городов",
+        "en": "City lights at night"
+      },
+      {
+        "ru": "Пустыню Сахару",
+        "en": "The Sahara"
+      },
+      {
+        "ru": "Гималаи",
+        "en": "The Himalayas"
+      },
+      {
+        "ru": "Великую Китайскую стену",
+        "en": "The Great Wall of China"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Стена очень длинная, но узкая и того же цвета, что земля вокруг.",
+      "en": "The wall is long but narrow, and the same colour as the land around it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+  },
+  {
+    "id": "myt_004",
+    "topic": "myths",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Почему бык бросается на тряпку тореадора?",
+      "en": "Why does a bull charge at the bullfighter's cape?"
+    },
+    "options": [
+      {
+        "ru": "Ненавидит красный цвет",
+        "en": "It hates red"
+      },
+      {
+        "ru": "Злится, что тряпкой машут",
+        "en": "It is angry at the waving"
+      },
+      {
+        "ru": "Думает, что это еда",
+        "en": "It thinks it is food"
+      },
+      {
+        "ru": "Тореадор обзывается",
+        "en": "The bullfighter calls it names"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Быки почти не отличают красный от зелёного: их злит движение.",
+      "en": "Bulls can hardly tell red from green: it is the movement that angers them."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bullfighting"
+  },
+  {
+    "id": "myt_005",
+    "topic": "myths",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какого цвета были древнегреческие мраморные статуи, когда их сделали?",
+      "en": "What colour were ancient Greek marble statues when they were made?"
+    },
+    "options": [
+      {
+        "ru": "Белые, как сейчас",
+        "en": "White, as they are now"
+      },
+      {
+        "ru": "Ярко раскрашены",
+        "en": "Brightly painted"
+      },
+      {
+        "ru": "Целиком позолочены",
+        "en": "Covered in gold"
+      },
+      {
+        "ru": "Прозрачные",
+        "en": "See-through"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Краска за века стёрлась, и все решили, что греки любили белый мрамор.",
+      "en": "The paint wore off over the centuries, so everyone decided the Greeks loved white marble."
+    },
+    "source": "https://en.wikipedia.org/wiki/Polychrome"
+  },
+  {
+    "id": "myt_006",
+    "topic": "myths",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Сколько чувств у человека на самом деле?",
+      "en": "How many senses do people really have?"
+    },
+    "options": [
+      {
+        "ru": "Ровно пять",
+        "en": "Exactly five"
+      },
+      {
+        "ru": "Больше пяти",
+        "en": "More than five"
+      },
+      {
+        "ru": "Три",
+        "en": "Three"
+      },
+      {
+        "ru": "Шесть, вместе с интуицией",
+        "en": "Six, counting intuition"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Кроме зрения, слуха, вкуса, запаха и осязания есть чувство равновесия, тепла, боли.",
+      "en": "Besides sight, hearing, taste, smell and touch there is balance, temperature and pain."
+    },
+    "source": "https://en.wikipedia.org/wiki/Sense"
+  },
+  {
+    "id": "myt_007",
+    "topic": "myths",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Какого роста был Наполеон, в сантиметрах?",
+      "en": "How tall was Napoleon, in centimetres?"
+    },
+    "answer": 169,
+    "range": [
+      140,
+      200
+    ],
+    "step": 1,
+    "tolerance": 20,
+    "unit": {
+      "ru": "см",
+      "en": "cm"
+    },
+    "fact": {
+      "ru": "Обычный рост для француза того времени. Маленьким его сделали карикатуры.",
+      "en": "An ordinary height for a Frenchman of his day. Cartoons made him small."
+    },
+    "source": "https://en.wikipedia.org/wiki/Napoleon"
+  },
+  {
+    "id": "myt_008",
+    "topic": "myths",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько миллионов лет назад вымерли динозавры?",
+      "en": "How many million years ago did the dinosaurs die out?"
+    },
+    "answer": 66,
+    "range": [
+      1,
+      200
+    ],
+    "step": 1,
+    "tolerance": 50,
+    "unit": {
+      "ru": "млн лет",
+      "en": "million years"
+    },
+    "fact": {
+      "ru": "Первые люди появились лишь около 300 тысяч лет назад: на динозаврах никто не катался.",
+      "en": "The first humans only appeared about 300,000 years ago: nobody ever rode a dinosaur."
+    },
+    "source": "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event"
+  },
+  {
+    "id": "bod_001",
+    "topic": "body",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько зубов у взрослого человека, если выросли все?",
+      "en": "How many teeth does an adult have if they have all grown in?"
+    },
+    "options": [
+      {
+        "ru": "20",
+        "en": "20"
+      },
+      {
+        "ru": "28",
+        "en": "28"
+      },
+      {
+        "ru": "32",
+        "en": "32"
+      },
+      {
+        "ru": "40",
+        "en": "40"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Последние четыре — зубы мудрости, они могут вырасти и в 25 лет.",
+      "en": "The last four are wisdom teeth; they may only come at 25."
+    },
+    "source": "https://en.wikipedia.org/wiki/Human_tooth"
+  },
+  {
+    "id": "bod_002",
+    "topic": "body",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Чем мы на самом деле чувствуем вкус еды больше всего?",
+      "en": "What do we really taste food with the most?"
+    },
+    "options": [
+      {
+        "ru": "Только языком",
+        "en": "Only the tongue"
+      },
+      {
+        "ru": "Носом",
+        "en": "The nose"
+      },
+      {
+        "ru": "Зубами",
+        "en": "The teeth"
+      },
+      {
+        "ru": "Ушами",
+        "en": "The ears"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Зажми нос — и яблоко с луком станут почти одинаковыми на вкус.",
+      "en": "Pinch your nose and an apple tastes almost like an onion."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flavor"
+  },
+  {
+    "id": "bod_003",
+    "topic": "body",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая живая часть тела обходится совсем без кровеносных сосудов?",
+      "en": "Which living part of the body has no blood vessels at all?"
+    },
+    "options": [
+      {
+        "ru": "Роговица глаза",
+        "en": "The cornea of the eye"
+      },
+      {
+        "ru": "Мизинец",
+        "en": "The little finger"
+      },
+      {
+        "ru": "Мочка уха",
+        "en": "The earlobe"
+      },
+      {
+        "ru": "Язык",
+        "en": "The tongue"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Кислород роговица берёт прямо из воздуха.",
+      "en": "The cornea takes its oxygen straight from the air."
+    },
+    "source": "https://en.wikipedia.org/wiki/Cornea"
+  },
+  {
+    "id": "bod_004",
+    "topic": "body",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Где у человека самая маленькая кость?",
+      "en": "Where is the smallest bone in the human body?"
+    },
+    "options": [
+      {
+        "ru": "В ухе",
+        "en": "In the ear"
+      },
+      {
+        "ru": "В мизинце ноги",
+        "en": "In the little toe"
+      },
+      {
+        "ru": "В носу",
+        "en": "In the nose"
+      },
+      {
+        "ru": "В пальце руки",
+        "en": "In a finger"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Стремечко в ухе меньше рисового зёрнышка.",
+      "en": "The stirrup bone in the ear is smaller than a grain of rice."
+    },
+    "source": "https://en.wikipedia.org/wiki/Stapes"
+  },
+  {
+    "id": "bod_005",
+    "topic": "body",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Сколько примерно литров крови у взрослого человека?",
+      "en": "About how many litres of blood does an adult have?"
+    },
+    "options": [
+      {
+        "ru": "Один",
+        "en": "One"
+      },
+      {
+        "ru": "Пять",
+        "en": "Five"
+      },
+      {
+        "ru": "Пятнадцать",
+        "en": "Fifteen"
+      },
+      {
+        "ru": "Пятьдесят",
+        "en": "Fifty"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Это полведра, и сердце прогоняет её всю примерно за минуту.",
+      "en": "That is half a bucket, and the heart pumps all of it round in about a minute."
+    },
+    "source": "https://en.wikipedia.org/wiki/Blood_volume"
+  },
+  {
+    "id": "bod_006",
+    "topic": "body",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько километров кровеносных сосудов в теле взрослого человека?",
+      "en": "How many kilometres of blood vessels are in an adult's body?"
+    },
+    "answer": 100000,
+    "range": [
+      1000,
+      200000
+    ],
+    "step": 1000,
+    "tolerance": 50000,
+    "unit": {
+      "ru": "км",
+      "en": "km"
+    },
+    "fact": {
+      "ru": "Если вытянуть их в одну нитку, она обмотает Землю два с половиной раза.",
+      "en": "Laid end to end they would wrap round the Earth two and a half times."
+    },
+    "source": "https://en.wikipedia.org/wiki/Blood_vessel"
+  },
+  {
+    "id": "bod_007",
+    "topic": "body",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько процентов тела взрослого человека — вода?",
+      "en": "What percentage of an adult's body is water?"
+    },
+    "answer": 60,
+    "range": [
+      0,
+      100
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "%",
+      "en": "%"
+    },
+    "fact": {
+      "ru": "У младенцев воды ещё больше: около 75 процентов.",
+      "en": "Babies are even wetter: about 75 percent."
+    },
+    "source": "https://en.wikipedia.org/wiki/Body_water"
+  },
+  {
+    "id": "bod_008",
+    "topic": "body",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько костей у новорождённого малыша?",
+      "en": "How many bones does a newborn baby have?"
+    },
+    "answer": 300,
+    "range": [
+      50,
+      600
+    ],
+    "step": 5,
+    "tolerance": 150,
+    "unit": {
+      "ru": "костей",
+      "en": "bones"
+    },
+    "fact": {
+      "ru": "У взрослого их 206: многие кости со временем срастаются.",
+      "en": "An adult has 206: many of the bones grow together over time."
+    },
+    "source": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "bod_009",
+    "topic": "body",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько раз за день моргает человек?",
+      "en": "How many times a day does a person blink?"
+    },
+    "answer": 15000,
+    "range": [
+      100,
+      50000
+    ],
+    "step": 100,
+    "tolerance": 12000,
+    "unit": {
+      "ru": "раз",
+      "en": "times"
+    },
+    "fact": {
+      "ru": "Около 15 раз в минуту, а за жизнь моргание занимает несколько лет с закрытыми глазами.",
+      "en": "About 15 times a minute: over a lifetime that adds up to years with your eyes shut."
+    },
+    "source": "https://en.wikipedia.org/wiki/Blinking"
+  },
+  {
+    "id": "rec_001",
+    "topic": "records",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что бросают в кёрлинге?",
+      "en": "What do you throw in curling?"
+    },
+    "options": [
+      {
+        "ru": "Шайбу",
+        "en": "A puck"
+      },
+      {
+        "ru": "Камень",
+        "en": "A stone"
+      },
+      {
+        "ru": "Мяч",
+        "en": "A ball"
+      },
+      {
+        "ru": "Метлу",
+        "en": "A broom"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Камень весит почти 20 килограммов, а метлой натирают лёд перед ним.",
+      "en": "The stone weighs almost 20 kilograms; the broom just polishes the ice in front of it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Curling"
+  },
+  {
+    "id": "rec_002",
+    "topic": "records",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько клеток на шахматной доске?",
+      "en": "How many squares are on a chessboard?"
+    },
+    "options": [
+      {
+        "ru": "36",
+        "en": "36"
+      },
+      {
+        "ru": "49",
+        "en": "49"
+      },
+      {
+        "ru": "64",
+        "en": "64"
+      },
+      {
+        "ru": "100",
+        "en": "100"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Восемь на восемь: половина белых, половина чёрных.",
+      "en": "Eight by eight: half light, half dark."
+    },
+    "source": "https://en.wikipedia.org/wiki/Chessboard"
+  },
+  {
+    "id": "rec_003",
+    "topic": "records",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто был талисманом Олимпиады-80 в Москве?",
+      "en": "Who was the mascot of the 1980 Moscow Olympics?"
+    },
+    "options": [
+      {
+        "ru": "Медвежонок",
+        "en": "A bear cub"
+      },
+      {
+        "ru": "Волк",
+        "en": "A wolf"
+      },
+      {
+        "ru": "Заяц",
+        "en": "A hare"
+      },
+      {
+        "ru": "Чебурашка",
+        "en": "Cheburashka"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "На закрытии Мишка улетел на воздушных шарах, и стадион плакал.",
+      "en": "At the closing ceremony the bear floated away on balloons and the stadium cried."
+    },
+    "source": "https://en.wikipedia.org/wiki/Misha_(mascot)"
+  },
+  {
+    "id": "rec_004",
+    "topic": "records",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какую игру придумали, повесив на стены две корзины для персиков?",
+      "en": "Which game was invented by nailing two peach baskets to the walls?"
+    },
+    "options": [
+      {
+        "ru": "Волейбол",
+        "en": "Volleyball"
+      },
+      {
+        "ru": "Баскетбол",
+        "en": "Basketball"
+      },
+      {
+        "ru": "Гандбол",
+        "en": "Handball"
+      },
+      {
+        "ru": "Бейсбол",
+        "en": "Baseball"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "У корзин было дно, и мяч после каждого броска доставали лестницей.",
+      "en": "The baskets still had bottoms, so after every score someone fetched the ball with a ladder."
+    },
+    "source": "https://en.wikipedia.org/wiki/Basketball"
+  },
+  {
+    "id": "rec_005",
+    "topic": "records",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Почему марафон — это именно 42 км 195 м?",
+      "en": "Why is a marathon exactly 42.195 km?"
+    },
+    "options": [
+      {
+        "ru": "Столько пробежал древний гонец",
+        "en": "An ancient messenger ran that far"
+      },
+      {
+        "ru": "Так захотела королевская семья в 1908",
+        "en": "The royal family wanted it in 1908"
+      },
+      {
+        "ru": "Это ровно 100 000 шагов",
+        "en": "It is exactly 100,000 steps"
+      },
+      {
+        "ru": "Так длинна Великая стена",
+        "en": "It is the length of the Great Wall"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Старт поставили у Виндзорского замка, а финиш — напротив королевской ложи.",
+      "en": "The start was put by Windsor Castle and the finish in front of the royal box."
+    },
+    "source": "https://en.wikipedia.org/wiki/Marathon"
+  },
+  {
+    "id": "rec_006",
+    "topic": "records",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой из этих видов спорта когда-то был олимпийским?",
+      "en": "Which of these was once an Olympic sport?"
+    },
+    "options": [
+      {
+        "ru": "Перетягивание каната",
+        "en": "Tug of war"
+      },
+      {
+        "ru": "Прятки",
+        "en": "Hide and seek"
+      },
+      {
+        "ru": "Бег в мешках",
+        "en": "Sack race"
+      },
+      {
+        "ru": "Пускание блинчиков",
+        "en": "Stone skipping"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Канат перетягивали на пяти Олимпиадах подряд, с 1900 по 1920 год.",
+      "en": "Tug of war was in five Olympics in a row, from 1900 to 1920."
+    },
+    "source": "https://en.wikipedia.org/wiki/Tug_of_war_at_the_Summer_Olympics"
+  },
+  {
+    "id": "rec_007",
+    "topic": "records",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В каком спорте мяч самый маленький?",
+      "en": "Which sport has the smallest ball?"
+    },
+    "options": [
+      {
+        "ru": "Гольф",
+        "en": "Golf"
+      },
+      {
+        "ru": "Большой теннис",
+        "en": "Tennis"
+      },
+      {
+        "ru": "Настольный теннис",
+        "en": "Table tennis"
+      },
+      {
+        "ru": "Водное поло",
+        "en": "Water polo"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Шарик для пинг-понга 40 мм, мяч для гольфа почти 43.",
+      "en": "A ping pong ball is 40 mm across; a golf ball almost 43."
+    },
+    "source": "https://en.wikipedia.org/wiki/Table_tennis"
+  },
+  {
+    "id": "rec_008",
+    "topic": "records",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Майку какого цвета надевает лидер велогонки «Тур де Франс»?",
+      "en": "What colour jersey does the leader of the Tour de France wear?"
+    },
+    "options": [
+      {
+        "ru": "Зелёную",
+        "en": "Green"
+      },
+      {
+        "ru": "Красную",
+        "en": "Red"
+      },
+      {
+        "ru": "Белую",
+        "en": "White"
+      },
+      {
+        "ru": "Жёлтую",
+        "en": "Yellow"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Жёлтую — потому что газета, которая придумала гонку, печаталась на жёлтой бумаге.",
+      "en": "Yellow, because the newspaper that started the race was printed on yellow paper."
+    },
+    "source": "https://en.wikipedia.org/wiki/Yellow_jersey_statistics"
+  },
+  {
+    "id": "rec_009",
+    "topic": "records",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько метров в марафоне?",
+      "en": "How many metres is a marathon?"
+    },
+    "answer": 42195,
+    "range": [
+      30000,
+      60000
+    ],
+    "step": 5,
+    "tolerance": 6000,
+    "unit": {
+      "ru": "м",
+      "en": "m"
+    },
+    "fact": {
+      "ru": "Самые быстрые бегуны пробегают его чуть больше чем за два часа.",
+      "en": "The fastest runners do it in just over two hours."
+    },
+    "source": "https://en.wikipedia.org/wiki/Marathon"
+  },
+  {
+    "id": "rec_010",
+    "topic": "records",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько часов длился самый долгий теннисный матч в истории?",
+      "en": "How many hours did the longest tennis match in history last?"
+    },
+    "answer": 11,
+    "range": [
+      1,
+      30
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "часов",
+      "en": "hours"
+    },
+    "fact": {
+      "ru": "Уимблдон, 2010 год: матч шёл три дня, а табло сломалось на счёте 47:47.",
+      "en": "Wimbledon 2010: it ran over three days, and the scoreboard broke at 47 all."
+    },
+    "source": "https://en.wikipedia.org/wiki/Isner%E2%80%93Mahut_match_at_the_2010_Wimbledon_Championships"
+  },
+  {
+    "id": "rec_011",
+    "topic": "records",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Какую скорость развивал Усэйн Болт на пике забега, в км/ч?",
+      "en": "How fast did Usain Bolt run at his peak, in km/h?"
+    },
+    "answer": 45,
+    "range": [
+      10,
+      100
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "км/ч",
+      "en": "km/h"
+    },
+    "fact": {
+      "ru": "Быстрее, чем машина едет по двору, но медленнее домашней кошки на рывке.",
+      "en": "Faster than a car in a car park, slower than a house cat in a sprint."
+    },
+    "source": "https://en.wikipedia.org/wiki/Usain_Bolt"
+  },
+  {
+    "id": "car_001",
+    "topic": "cartoons",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Где нашли Чебурашку?",
+      "en": "Where was Cheburashka found?"
+    },
+    "options": [
+      {
+        "ru": "В коробке из-под обуви",
+        "en": "In a shoebox"
+      },
+      {
+        "ru": "В ящике с апельсинами",
+        "en": "In a crate of oranges"
+      },
+      {
+        "ru": "В дупле дерева",
+        "en": "In a hollow tree"
+      },
+      {
+        "ru": "В посылке из Африки",
+        "en": "In a parcel from Africa"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Он наелся апельсинов в тропическом лесу и уснул прямо в ящике.",
+      "en": "He ate his fill of oranges in the rainforest and fell asleep in the crate."
+    },
+    "source": "https://en.wikipedia.org/wiki/Cheburashka"
+  },
+  {
+    "id": "car_002",
+    "topic": "cartoons",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Как зовут пса из Простоквашино?",
+      "en": "What is the dog's name in Prostokvashino?"
+    },
+    "options": [
+      {
+        "ru": "Бобик",
+        "en": "Bobik"
+      },
+      {
+        "ru": "Тузик",
+        "en": "Tuzik"
+      },
+      {
+        "ru": "Шарик",
+        "en": "Sharik"
+      },
+      {
+        "ru": "Полкан",
+        "en": "Polkan"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "В конце он научился фотографировать и чуть не стал знаменитым.",
+      "en": "In the end he learned photography and nearly became famous."
+    },
+    "source": "https://en.wikipedia.org/wiki/Three_from_Prostokvashino"
+  },
+  {
+    "id": "car_003",
+    "topic": "cartoons",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что кричит Волк в «Ну, погоди!», когда всё снова пошло не так?",
+      "en": "What does the Wolf shout in Nu, Pogodi! when it all goes wrong again?"
+    },
+    "options": [
+      {
+        "ru": "«Я ещё вернусь!»",
+        "en": "I'll be back!"
+      },
+      {
+        "ru": "«Хорошо сидим!»",
+        "en": "Nice sitting here!"
+      },
+      {
+        "ru": "«Ну, Заяц, погоди!»",
+        "en": "Just you wait, Hare!"
+      },
+      {
+        "ru": "«Улыбаемся и машем»",
+        "en": "Smile and wave"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Мультфильм снимали почти 20 лет, а Волка озвучивал Анатолий Папанов.",
+      "en": "It was made over almost 20 years, and Anatoly Papanov voiced the Wolf."
+    },
+    "source": "https://en.wikipedia.org/wiki/Nu,_pogodi!"
+  },
+  {
+    "id": "car_004",
+    "topic": "cartoons",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "С чем Винни-Пух полетел к пчёлам за мёдом?",
+      "en": "What did Winnie the Pooh fly up to the bees with?"
+    },
+    "options": [
+      {
+        "ru": "С зонтиком",
+        "en": "An umbrella"
+      },
+      {
+        "ru": "С воздушным шариком",
+        "en": "A balloon"
+      },
+      {
+        "ru": "С лестницей",
+        "en": "A ladder"
+      },
+      {
+        "ru": "С кастрюлей",
+        "en": "A saucepan"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Он притворялся тучкой, а Пятачок ходил под ним с зонтиком.",
+      "en": "He pretended to be a cloud while Piglet walked beneath with an umbrella."
+    },
+    "source": "https://en.wikipedia.org/wiki/Winnie-the-Pooh_(1969_film)"
+  },
+  {
+    "id": "car_005",
+    "topic": "cartoons",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что всегда говорил кот Леопольд хулиганистым мышам?",
+      "en": "What did Leopold the cat always say to the naughty mice?"
+    },
+    "options": [
+      {
+        "ru": "«Ребята, давайте жить дружно!»",
+        "en": "Guys, let's live in peace!"
+      },
+      {
+        "ru": "«Ну, погоди!»",
+        "en": "Just you wait!"
+      },
+      {
+        "ru": "«Я вас всех съем!»",
+        "en": "I'll eat you all!"
+      },
+      {
+        "ru": "«Кто там?»",
+        "en": "Who's there?"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Мышей звали Белый и Серый, и они всё равно продолжали пакостить.",
+      "en": "The mice were called White and Grey, and they kept up their pranks anyway."
+    },
+    "source": "https://en.wikipedia.org/wiki/Adventures_of_Leopold_the_Cat"
+  },
+  {
+    "id": "car_006",
+    "topic": "cartoons",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой мультфильм первым получил «Оскар» как лучший анимационный?",
+      "en": "Which film won the first Oscar for best animated feature?"
+    },
+    "options": [
+      {
+        "ru": "«Король Лев»",
+        "en": "The Lion King"
+      },
+      {
+        "ru": "«Шрек»",
+        "en": "Shrek"
+      },
+      {
+        "ru": "«Ледниковый период»",
+        "en": "Ice Age"
+      },
+      {
+        "ru": "«Головоломка»",
+        "en": "Inside Out"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Эту премию вообще придумали только в 2001 году.",
+      "en": "That award was only created in 2001."
+    },
+    "source": "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Animated_Feature"
+  },
+  {
+    "id": "car_007",
+    "topic": "cartoons",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Как звали попугая из «Возвращения блудного попугая»?",
+      "en": "What is the parrot called in The Return of the Prodigal Parrot?"
+    },
+    "options": [
+      {
+        "ru": "Гоша",
+        "en": "Gosha"
+      },
+      {
+        "ru": "Кеша",
+        "en": "Kesha"
+      },
+      {
+        "ru": "Кузя",
+        "en": "Kuzya"
+      },
+      {
+        "ru": "Яша",
+        "en": "Yasha"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "«Таити, Таити… Нас и здесь неплохо кормят!»",
+      "en": "\"Tahiti, Tahiti... They feed us fine here too!\""
+    },
+    "source": "https://en.wikipedia.org/wiki/The_Return_of_the_Prodigal_Parrot"
+  },
+  {
+    "id": "car_008",
+    "topic": "cartoons",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году вышла первая серия «Ну, погоди!»?",
+      "en": "In which year did the first Nu, Pogodi! episode come out?"
+    },
+    "answer": 1969,
+    "range": [
+      1940,
+      2010
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Первую серию сделали за несколько месяцев, а последняя классическая вышла в 1986-м.",
+      "en": "The first episode took a few months; the last classic one came out in 1986."
+    },
+    "source": "https://en.wikipedia.org/wiki/Nu,_pogodi!"
+  },
+  {
+    "id": "car_009",
+    "topic": "cartoons",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году вышел первый «Шрек»?",
+      "en": "In which year did the first Shrek come out?"
+    },
+    "answer": 2001,
+    "range": [
+      1980,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 15,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Сначала Шрек был героем детской книжки с картинками.",
+      "en": "Shrek began as the hero of a children's picture book."
+    },
+    "source": "https://en.wikipedia.org/wiki/Shrek"
+  },
+  {
+    "id": "boo_001",
+    "topic": "books",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько гномов дружили с Белоснежкой?",
+      "en": "How many dwarfs were friends with Snow White?"
+    },
+    "options": [
+      {
+        "ru": "Пять",
+        "en": "Five"
+      },
+      {
+        "ru": "Шесть",
+        "en": "Six"
+      },
+      {
+        "ru": "Семь",
+        "en": "Seven"
+      },
+      {
+        "ru": "Двенадцать",
+        "en": "Twelve"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "У Пушкина в похожей сказке вместо гномов семь богатырей.",
+      "en": "In Pushkin's similar tale the seven dwarfs are seven knights."
+    },
+    "source": "https://en.wikipedia.org/wiki/Snow_White"
+  },
+  {
+    "id": "boo_002",
+    "topic": "books",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что потеряла Золушка на балу?",
+      "en": "What did Cinderella lose at the ball?"
+    },
+    "options": [
+      {
+        "ru": "Корону",
+        "en": "Her crown"
+      },
+      {
+        "ru": "Перчатку",
+        "en": "A glove"
+      },
+      {
+        "ru": "Туфельку",
+        "en": "A slipper"
+      },
+      {
+        "ru": "Тыкву",
+        "en": "The pumpkin"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "У Перро туфелька хрустальная, а у братьев Гримм — золотая.",
+      "en": "In Perrault the slipper is glass; in the Brothers Grimm it is gold."
+    },
+    "source": "https://en.wikipedia.org/wiki/Cinderella"
+  },
+  {
+    "id": "boo_003",
+    "topic": "books",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая сказка Пушкина начинается словами «Жил старик со своею старухой…»?",
+      "en": "Which Pushkin tale starts: \"There lived an old man and his old wife...\"?"
+    },
+    "options": [
+      {
+        "ru": "О царе Салтане",
+        "en": "Tsar Saltan"
+      },
+      {
+        "ru": "О золотом петушке",
+        "en": "The Golden Cockerel"
+      },
+      {
+        "ru": "О рыбаке и рыбке",
+        "en": "The Fisherman and the Fish"
+      },
+      {
+        "ru": "О попе и Балде",
+        "en": "The Priest and Balda"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Старуха начала с нового корыта, а кончила тем же корытом.",
+      "en": "The old wife began with a new washtub and ended with the same old one."
+    },
+    "source": "https://en.wikipedia.org/wiki/The_Tale_of_the_Fisherman_and_the_Fish"
+  },
+  {
+    "id": "boo_004",
+    "topic": "books",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кем по профессии был автор «Алисы в Стране чудес»?",
+      "en": "What was the author of Alice in Wonderland by profession?"
+    },
+    "options": [
+      {
+        "ru": "Математиком",
+        "en": "A mathematician"
+      },
+      {
+        "ru": "Поваром",
+        "en": "A cook"
+      },
+      {
+        "ru": "Капитаном корабля",
+        "en": "A ship's captain"
+      },
+      {
+        "ru": "Шляпником",
+        "en": "A hatter"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Льюис Кэрролл преподавал математику в Оксфорде и придумывал головоломки.",
+      "en": "Lewis Carroll taught maths at Oxford and made up puzzles."
+    },
+    "source": "https://en.wikipedia.org/wiki/Lewis_Carroll"
+  },
+  {
+    "id": "boo_005",
+    "topic": "books",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Как зовут итальянского «брата» Буратино?",
+      "en": "What is Buratino's Italian original called?"
+    },
+    "options": [
+      {
+        "ru": "Чиполлино",
+        "en": "Cipollino"
+      },
+      {
+        "ru": "Пиноккио",
+        "en": "Pinocchio"
+      },
+      {
+        "ru": "Джеппетто",
+        "en": "Geppetto"
+      },
+      {
+        "ru": "Карабас",
+        "en": "Karabas"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Алексей Толстой пересказал «Пиноккио» по-своему и назвал героя Буратино.",
+      "en": "Alexei Tolstoy retold Pinocchio his own way and called the hero Buratino."
+    },
+    "source": "https://en.wikipedia.org/wiki/The_Golden_Key,_or_the_Adventures_of_Buratino"
+  },
+  {
+    "id": "boo_006",
+    "topic": "books",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году вышла первая книга о Гарри Поттере?",
+      "en": "In which year was the first Harry Potter book published?"
+    },
+    "answer": 1997,
+    "range": [
+      1980,
+      2015
+    ],
+    "step": 1,
+    "tolerance": 15,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Рукопись отвергли двенадцать издательств подряд.",
+      "en": "Twelve publishers turned the manuscript down in a row."
+    },
+    "source": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone"
+  },
+  {
+    "id": "boo_007",
+    "topic": "books",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет было Пушкину, когда он закончил «Руслана и Людмилу»?",
+      "en": "How old was Pushkin when he finished Ruslan and Lyudmila?"
+    },
+    "answer": 21,
+    "range": [
+      5,
+      80
+    ],
+    "step": 1,
+    "tolerance": 10,
+    "unit": {
+      "ru": "лет",
+      "en": "years old"
+    },
+    "fact": {
+      "ru": "Он начал поэму ещё школьником, в Царскосельском лицее.",
+      "en": "He started the poem while still a schoolboy at the Lyceum."
+    },
+    "source": "https://en.wikipedia.org/wiki/Ruslan_and_Ludmila"
+  },
+  {
+    "id": "art_001",
+    "topic": "art",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько струн у обычной гитары?",
+      "en": "How many strings does an ordinary guitar have?"
+    },
+    "options": [
+      {
+        "ru": "Четыре",
+        "en": "Four"
+      },
+      {
+        "ru": "Пять",
+        "en": "Five"
+      },
+      {
+        "ru": "Шесть",
+        "en": "Six"
+      },
+      {
+        "ru": "Семь",
+        "en": "Seven"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "А у старой русской гитары было семь струн.",
+      "en": "The old Russian guitar had seven."
+    },
+    "source": "https://en.wikipedia.org/wiki/Guitar"
+  },
+  {
+    "id": "art_002",
+    "topic": "art",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто нарисовал «Мону Лизу»?",
+      "en": "Who painted the Mona Lisa?"
+    },
+    "options": [
+      {
+        "ru": "Микеланджело",
+        "en": "Michelangelo"
+      },
+      {
+        "ru": "Леонардо да Винчи",
+        "en": "Leonardo da Vinci"
+      },
+      {
+        "ru": "Ван Гог",
+        "en": "Van Gogh"
+      },
+      {
+        "ru": "Рафаэль",
+        "en": "Raphael"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "В 1911 году картину украли из Лувра и искали больше двух лет.",
+      "en": "In 1911 it was stolen from the Louvre and missing for over two years."
+    },
+    "source": "https://en.wikipedia.org/wiki/Mona_Lisa"
+  },
+  {
+    "id": "art_003",
+    "topic": "art",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой художник отрезал себе часть уха?",
+      "en": "Which painter cut off part of his own ear?"
+    },
+    "options": [
+      {
+        "ru": "Рембрандт",
+        "en": "Rembrandt"
+      },
+      {
+        "ru": "Ван Гог",
+        "en": "Van Gogh"
+      },
+      {
+        "ru": "Пикассо",
+        "en": "Picasso"
+      },
+      {
+        "ru": "Айвазовский",
+        "en": "Aivazovsky"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Он потом написал автопортрет с перевязанным ухом.",
+      "en": "He later painted a self portrait with his ear bandaged."
+    },
+    "source": "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+  },
+  {
+    "id": "art_004",
+    "topic": "art",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто написал музыку к балету «Лебединое озеро»?",
+      "en": "Who wrote the music for Swan Lake?"
+    },
+    "options": [
+      {
+        "ru": "Чайковский",
+        "en": "Tchaikovsky"
+      },
+      {
+        "ru": "Моцарт",
+        "en": "Mozart"
+      },
+      {
+        "ru": "Рахманинов",
+        "en": "Rachmaninoff"
+      },
+      {
+        "ru": "Бетховен",
+        "en": "Beethoven"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "На первой постановке балет почти провалился, а теперь его знает весь мир.",
+      "en": "The first production nearly flopped; now the whole world knows it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Swan_Lake"
+  },
+  {
+    "id": "art_005",
+    "topic": "art",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Сколько нот в гамме «до, ре, ми, фа, соль, ля, си»?",
+      "en": "How many notes are in the scale do, re, mi, fa, sol, la, ti?"
+    },
+    "options": [
+      {
+        "ru": "Пять",
+        "en": "Five"
+      },
+      {
+        "ru": "Семь",
+        "en": "Seven"
+      },
+      {
+        "ru": "Восемь",
+        "en": "Eight"
+      },
+      {
+        "ru": "Двенадцать",
+        "en": "Twelve"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Восьмая «до» — это уже начало следующей гаммы.",
+      "en": "The eighth \"do\" already starts the next scale."
+    },
+    "source": "https://en.wikipedia.org/wiki/Solf%C3%A8ge"
+  },
+  {
+    "id": "art_006",
+    "topic": "art",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько клавиш у обычного пианино?",
+      "en": "How many keys does an ordinary piano have?"
+    },
+    "answer": 88,
+    "range": [
+      40,
+      150
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "клавиш",
+      "en": "keys"
+    },
+    "fact": {
+      "ru": "52 белых и 36 чёрных.",
+      "en": "52 white and 36 black."
+    },
+    "source": "https://en.wikipedia.org/wiki/Piano"
+  },
+  {
+    "id": "art_007",
+    "topic": "art",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько струн у большой концертной арфы?",
+      "en": "How many strings does a big concert harp have?"
+    },
+    "answer": 47,
+    "range": [
+      5,
+      150
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "струн",
+      "en": "strings"
+    },
+    "fact": {
+      "ru": "Чтобы арфист не запутался, все струны «до» красят в красный цвет.",
+      "en": "So the harpist does not get lost, every C string is coloured red."
+    },
+    "source": "https://en.wikipedia.org/wiki/Pedal_harp"
+  },
+  {
+    "id": "inv_001",
+    "topic": "inventions",
     "format": "multipleChoice",
     "difficulty": "easy",
     "text": {
@@ -802,7 +3270,263 @@
     "source": "https://en.wikipedia.org/wiki/Pencil"
   },
   {
-    "id": "sci_004",
+    "id": "inv_002",
+    "topic": "inventions",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что изобрели, когда у инженера в кармане растаяла шоколадка?",
+      "en": "What was invented when a chocolate bar melted in an engineer's pocket?"
+    },
+    "options": [
+      {
+        "ru": "Холодильник",
+        "en": "The fridge"
+      },
+      {
+        "ru": "Микроволновку",
+        "en": "The microwave oven"
+      },
+      {
+        "ru": "Фен",
+        "en": "The hair dryer"
+      },
+      {
+        "ru": "Пылесос",
+        "en": "The vacuum cleaner"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Он стоял у радара. Первая микроволновка была ростом с человека.",
+      "en": "He was standing by a radar set. The first microwave oven was as tall as a person."
+    },
+    "source": "https://en.wikipedia.org/wiki/Microwave_oven"
+  },
+  {
+    "id": "inv_003",
+    "topic": "inventions",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что изобрели раньше: факс или телефон?",
+      "en": "Which was invented first: the fax or the telephone?"
+    },
+    "options": [
+      {
+        "ru": "Телефон",
+        "en": "The telephone"
+      },
+      {
+        "ru": "Факс",
+        "en": "The fax"
+      },
+      {
+        "ru": "Их изобрели в один день",
+        "en": "Both on the same day"
+      },
+      {
+        "ru": "Сначала изобрели радио",
+        "en": "Radio came before both"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Первый факс запатентовали в 1843 году, а телефон — только в 1876-м.",
+      "en": "The first fax was patented in 1843; the telephone only in 1876."
+    },
+    "source": "https://en.wikipedia.org/wiki/Fax"
+  },
+  {
+    "id": "inv_004",
+    "topic": "inventions",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какое лекарство открыли, потому что учёный не помыл посуду перед отпуском?",
+      "en": "Which medicine was found because a scientist left dirty dishes before a holiday?"
+    },
+    "options": [
+      {
+        "ru": "Пенициллин",
+        "en": "Penicillin"
+      },
+      {
+        "ru": "Аспирин",
+        "en": "Aspirin"
+      },
+      {
+        "ru": "Зелёнку",
+        "en": "Brilliant green"
+      },
+      {
+        "ru": "Валерьянку",
+        "en": "Valerian drops"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Флеминг вернулся в 1928 году и увидел, что плесень убила бактерии в чашке.",
+      "en": "Fleming came back in 1928 to find that mould had killed the bacteria in a dish."
+    },
+    "source": "https://en.wikipedia.org/wiki/Penicillin"
+  },
+  {
+    "id": "inv_005",
+    "topic": "inventions",
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Для чего сначала придумали пупырчатую плёнку?",
+      "en": "What was bubble wrap first invented as?"
+    },
+    "options": [
+      {
+        "ru": "Как обои",
+        "en": "Wallpaper"
+      },
+      {
+        "ru": "Для упаковки",
+        "en": "Packaging"
+      },
+      {
+        "ru": "Как игрушку",
+        "en": "A toy"
+      },
+      {
+        "ru": "Как скатерть",
+        "en": "A tablecloth"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Обои не продавались, а упаковка — ещё как.",
+      "en": "Nobody bought the wallpaper; the packaging sold like mad."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bubble_wrap"
+  },
+  {
+    "id": "inv_006",
+    "topic": "inventions",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году впервые позвонили по мобильному телефону?",
+      "en": "In which year was the first mobile phone call made?"
+    },
+    "answer": 1973,
+    "range": [
+      1900,
+      2010
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Изобретатель первым делом позвонил конкуренту, похвастаться.",
+      "en": "The inventor's first call was to a rival company, to brag."
+    },
+    "source": "https://en.wikipedia.org/wiki/Mobile_phone"
+  },
+  {
+    "id": "inv_007",
+    "topic": "inventions",
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько граммов весил первый мобильный телефон?",
+      "en": "How many grams did the first mobile phone weigh?"
+    },
+    "answer": 1100,
+    "range": [
+      50,
+      5000
+    ],
+    "step": 10,
+    "tolerance": 1000,
+    "unit": {
+      "ru": "г",
+      "en": "g"
+    },
+    "fact": {
+      "ru": "Больше килограмма, а заряда хватало на полчаса разговора.",
+      "en": "Over a kilogram, and the battery lasted half an hour of talking."
+    },
+    "source": "https://en.wikipedia.org/wiki/Motorola_DynaTAC"
+  },
+  {
+    "id": "sci_001",
+    "topic": "science",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Где быстрее растает кубик льда: на металлической ложке или на деревянной доске?",
+      "en": "Where does an ice cube melt faster: on a metal spoon or on a wooden board?"
+    },
+    "options": [
+      {
+        "ru": "На металле",
+        "en": "On the metal"
+      },
+      {
+        "ru": "На дереве",
+        "en": "On the wood"
+      },
+      {
+        "ru": "Одинаково",
+        "en": "Just the same"
+      },
+      {
+        "ru": "Лёд в комнате не тает",
+        "en": "Ice does not melt indoors"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Металл кажется холоднее, но именно он быстрее отдаёт тепло льду.",
+      "en": "Metal feels colder, yet it is the one that passes heat to the ice faster."
+    },
+    "source": "https://en.wikipedia.org/wiki/Thermal_conductivity"
+  },
+  {
+    "id": "sci_002",
+    "topic": "science",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Почему лёд не тонет в воде?",
+      "en": "Why does ice float on water?"
+    },
+    "options": [
+      {
+        "ru": "Он легче воды того же объёма",
+        "en": "It is lighter than as much water"
+      },
+      {
+        "ru": "Его держит холод",
+        "en": "The cold holds it up"
+      },
+      {
+        "ru": "В нём спрятан воздух",
+        "en": "It has air hidden in it"
+      },
+      {
+        "ru": "Он тонет, просто медленно",
+        "en": "It sinks, just slowly"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Замерзая, вода расширяется. Поэтому рыбы зимуют подо льдом, а не во льду.",
+      "en": "Water expands as it freezes. That is why fish can live under the ice in winter."
+    },
+    "source": "https://en.wikipedia.org/wiki/Ice"
+  },
+  {
+    "id": "sci_003",
     "topic": "science",
     "format": "multipleChoice",
     "difficulty": "medium",
@@ -836,75 +3560,7 @@
     "source": "https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity"
   },
   {
-    "id": "sci_005",
-    "topic": "science",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какая живая часть тела обходится совсем без кровеносных сосудов?",
-      "en": "Which living part of the body has no blood vessels at all?"
-    },
-    "options": [
-      {
-        "ru": "Роговица глаза",
-        "en": "The cornea of the eye"
-      },
-      {
-        "ru": "Мизинец",
-        "en": "The little finger"
-      },
-      {
-        "ru": "Мочка уха",
-        "en": "The earlobe"
-      },
-      {
-        "ru": "Язык",
-        "en": "The tongue"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Кислород роговица берёт прямо из воздуха.",
-      "en": "The cornea takes its oxygen straight from the air."
-    },
-    "source": "https://en.wikipedia.org/wiki/Cornea"
-  },
-  {
-    "id": "sci_006",
-    "topic": "science",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Сколько весит обычное пушистое облако?",
-      "en": "How much does an ordinary fluffy cloud weigh?"
-    },
-    "options": [
-      {
-        "ru": "Меньше килограмма",
-        "en": "Less than a kilogram"
-      },
-      {
-        "ru": "Как легковая машина",
-        "en": "As much as a car"
-      },
-      {
-        "ru": "Как сто слонов",
-        "en": "As much as a hundred elephants"
-      },
-      {
-        "ru": "Ничего, это пар",
-        "en": "Nothing, it is steam"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Около 500 тонн воды висит в воздухе крошечными каплями.",
-      "en": "About 500 tonnes of water hanging in the air as tiny droplets."
-    },
-    "source": "https://www.usgs.gov/special-topics/water-science-school/science/how-much-does-a-cloud-weigh"
-  },
-  {
-    "id": "sci_007",
+    "id": "sci_004",
     "topic": "science",
     "format": "multipleChoice",
     "difficulty": "medium",
@@ -938,41 +3594,41 @@
     "source": "https://en.wikipedia.org/wiki/Mercury_(element)"
   },
   {
-    "id": "sci_008",
+    "id": "sci_005",
     "topic": "science",
     "format": "multipleChoice",
     "difficulty": "medium",
     "text": {
-      "ru": "Какое лекарство открыли, потому что учёный не помыл посуду перед отпуском?",
-      "en": "Which medicine was found because a scientist left dirty dishes before a holiday?"
+      "ru": "Что будет с надутым шариком в морозилке?",
+      "en": "What happens to a blown-up balloon in the freezer?"
     },
     "options": [
       {
-        "ru": "Пенициллин",
-        "en": "Penicillin"
+        "ru": "Лопнет",
+        "en": "It pops"
       },
       {
-        "ru": "Аспирин",
-        "en": "Aspirin"
+        "ru": "Сожмётся",
+        "en": "It shrinks"
       },
       {
-        "ru": "Зелёнку",
-        "en": "Brilliant green"
+        "ru": "Надуется сильнее",
+        "en": "It grows bigger"
       },
       {
-        "ru": "Валерьянку",
-        "en": "Valerian drops"
+        "ru": "Ничего",
+        "en": "Nothing"
       }
     ],
-    "correct": 0,
+    "correct": 1,
     "fact": {
-      "ru": "Флеминг вернулся в 1928 году и увидел, что плесень убила бактерии в чашке.",
-      "en": "Fleming came back in 1928 to find that mould had killed the bacteria in a dish."
+      "ru": "Холодный воздух занимает меньше места. В тепле шарик снова расправится.",
+      "en": "Cold air takes up less room. Back in the warm, the balloon fills out again."
     },
-    "source": "https://en.wikipedia.org/wiki/Penicillin"
+    "source": "https://en.wikipedia.org/wiki/Charles%27s_law"
   },
   {
-    "id": "sci_009",
+    "id": "sci_006",
     "topic": "science",
     "format": "closestValue",
     "difficulty": "hard",
@@ -998,749 +3654,15 @@
     "source": "https://en.wikipedia.org/wiki/Speed_of_light"
   },
   {
-    "id": "sci_010",
+    "id": "sci_007",
     "topic": "science",
     "format": "closestValue",
     "difficulty": "hard",
     "text": {
-      "ru": "Сколько километров кровеносных сосудов в теле взрослого человека?",
-      "en": "How many kilometres of blood vessels are in an adult's body?"
+      "ru": "При какой температуре закипает вода на вершине Эвереста?",
+      "en": "At what temperature does water boil on top of Everest?"
     },
-    "answer": 100000,
-    "range": [
-      1000,
-      200000
-    ],
-    "step": 1000,
-    "tolerance": 50000,
-    "unit": {
-      "ru": "км",
-      "en": "km"
-    },
-    "fact": {
-      "ru": "Если вытянуть их в одну нитку, она обмотает Землю два с половиной раза.",
-      "en": "Laid end to end they would wrap round the Earth two and a half times."
-    },
-    "source": "https://en.wikipedia.org/wiki/Blood_vessel"
-  },
-  {
-    "id": "sci_011",
-    "topic": "science",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько процентов тела взрослого человека — вода?",
-      "en": "What percentage of an adult's body is water?"
-    },
-    "answer": 60,
-    "range": [
-      0,
-      100
-    ],
-    "step": 1,
-    "tolerance": 30,
-    "unit": {
-      "ru": "%",
-      "en": "%"
-    },
-    "fact": {
-      "ru": "У младенцев воды ещё больше: около 75 процентов.",
-      "en": "Babies are even wetter: about 75 percent."
-    },
-    "source": "https://en.wikipedia.org/wiki/Body_water"
-  },
-  {
-    "id": "nat_001",
-    "topic": "nature",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Какой формы какашки у вомбата?",
-      "en": "What shape is wombat poop?"
-    },
-    "options": [
-      {
-        "ru": "Звёздочки",
-        "en": "Stars"
-      },
-      {
-        "ru": "Кубики",
-        "en": "Cubes"
-      },
-      {
-        "ru": "Спиральки",
-        "en": "Spirals"
-      },
-      {
-        "ru": "Сердечки",
-        "en": "Hearts"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Кубики не скатываются с камней, а вомбаты метят ими свою территорию.",
-      "en": "Cubes do not roll off rocks, and wombats use them to mark their territory."
-    },
-    "source": "https://en.wikipedia.org/wiki/Wombat"
-  },
-  {
-    "id": "nat_002",
-    "topic": "nature",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Почему фламинго розовые?",
-      "en": "Why are flamingos pink?"
-    },
-    "options": [
-      {
-        "ru": "Из-за еды: рачков и водорослей",
-        "en": "Their food: shrimp and algae"
-      },
-      {
-        "ru": "От смущения",
-        "en": "They are embarrassed"
-      },
-      {
-        "ru": "Загорают на солнце",
-        "en": "Sunburn"
-      },
-      {
-        "ru": "Красят друг друга клювами",
-        "en": "They paint each other"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Птенцы фламинго рождаются серыми и розовеют от того, что едят.",
-      "en": "Flamingo chicks are born grey and turn pink from what they eat."
-    },
-    "source": "https://en.wikipedia.org/wiki/Flamingo"
-  },
-  {
-    "id": "nat_003",
-    "topic": "nature",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Сколько сердец у осьминога?",
-      "en": "How many hearts does an octopus have?"
-    },
-    "options": [
-      {
-        "ru": "Одно",
-        "en": "One"
-      },
-      {
-        "ru": "Два",
-        "en": "Two"
-      },
-      {
-        "ru": "Три",
-        "en": "Three"
-      },
-      {
-        "ru": "Восемь, по одному на щупальце",
-        "en": "Eight, one per arm"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "А ещё у него голубая кровь.",
-      "en": "And its blood is blue."
-    },
-    "source": "https://en.wikipedia.org/wiki/Octopus"
-  },
-  {
-    "id": "nat_004",
-    "topic": "nature",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Кто спит на воде, держась за лапы, чтобы не уплыть друг от друга?",
-      "en": "Who sleeps on the water holding paws so they do not drift apart?"
-    },
-    "options": [
-      {
-        "ru": "Бобры",
-        "en": "Beavers"
-      },
-      {
-        "ru": "Пингвины",
-        "en": "Penguins"
-      },
-      {
-        "ru": "Каланы",
-        "en": "Sea otters"
-      },
-      {
-        "ru": "Тюлени",
-        "en": "Seals"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Иногда каланы ещё и заворачиваются в водоросли, как в одеяло.",
-      "en": "Sometimes sea otters also wrap themselves in kelp like a blanket."
-    },
-    "source": "https://en.wikipedia.org/wiki/Sea_otter"
-  },
-  {
-    "id": "nat_005",
-    "topic": "nature",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Кто почти никогда не пьёт воду, потому что получает её из листьев?",
-      "en": "Who almost never drinks, because it gets its water from leaves?"
-    },
-    "options": [
-      {
-        "ru": "Верблюд",
-        "en": "The camel"
-      },
-      {
-        "ru": "Коала",
-        "en": "The koala"
-      },
-      {
-        "ru": "Панда",
-        "en": "The panda"
-      },
-      {
-        "ru": "Ленивец",
-        "en": "The sloth"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Коалам хватает воды из эвкалипта. Верблюды как раз пьют много, просто редко.",
-      "en": "Koalas get enough water from eucalyptus. Camels drink a lot, just not often."
-    },
-    "source": "https://en.wikipedia.org/wiki/Koala"
-  },
-  {
-    "id": "nat_006",
-    "topic": "nature",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Кто может повернуть голову почти на три четверти круга?",
-      "en": "Who can turn its head almost three quarters of the way round?"
-    },
-    "options": [
-      {
-        "ru": "Жираф",
-        "en": "The giraffe"
-      },
-      {
-        "ru": "Кошка",
-        "en": "The cat"
-      },
-      {
-        "ru": "Сова",
-        "en": "The owl"
-      },
-      {
-        "ru": "Хамелеон",
-        "en": "The chameleon"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "У совы глаза не двигаются, поэтому крутится вся голова: до 270 градусов.",
-      "en": "An owl's eyes cannot move, so its whole head turns: up to 270 degrees."
-    },
-    "source": "https://en.wikipedia.org/wiki/Owl"
-  },
-  {
-    "id": "nat_007",
-    "topic": "nature",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какого цвета кожа у белого медведя под шерстью?",
-      "en": "What colour is a polar bear's skin under its fur?"
-    },
-    "options": [
-      {
-        "ru": "Белая",
-        "en": "White"
-      },
-      {
-        "ru": "Розовая",
-        "en": "Pink"
-      },
-      {
-        "ru": "Чёрная",
-        "en": "Black"
-      },
-      {
-        "ru": "Голубая",
-        "en": "Light blue"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "А шерсть у него прозрачная: она только кажется белой.",
-      "en": "And its fur is see-through: it only looks white."
-    },
-    "source": "https://en.wikipedia.org/wiki/Polar_bear"
-  },
-  {
-    "id": "nat_008",
-    "topic": "nature",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Кто из этих животных «смеётся», когда его щекочут?",
-      "en": "Which of these animals laughs when it is tickled?"
-    },
-    "options": [
-      {
-        "ru": "Крысы",
-        "en": "Rats"
-      },
-      {
-        "ru": "Черепахи",
-        "en": "Tortoises"
-      },
-      {
-        "ru": "Золотые рыбки",
-        "en": "Goldfish"
-      },
-      {
-        "ru": "Ящерицы",
-        "en": "Lizards"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Их смех такой высокий, что человек его не слышит без приборов.",
-      "en": "Their laugh is so high pitched that people cannot hear it without equipment."
-    },
-    "source": "https://en.wikipedia.org/wiki/Rat"
-  },
-  {
-    "id": "nat_009",
-    "topic": "nature",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько раз в минуту может биться сердце колибри?",
-      "en": "How many times a minute can a hummingbird's heart beat?"
-    },
-    "answer": 1200,
-    "range": [
-      100,
-      3000
-    ],
-    "step": 10,
-    "tolerance": 900,
-    "unit": {
-      "ru": "ударов",
-      "en": "beats"
-    },
-    "fact": {
-      "ru": "У человека в покое около 70 ударов в минуту.",
-      "en": "A resting person's heart beats about 70 times a minute."
-    },
-    "source": "https://en.wikipedia.org/wiki/Hummingbird"
-  },
-  {
-    "id": "nat_010",
-    "topic": "nature",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько часов в сутки спит коала?",
-      "en": "How many hours a day does a koala sleep?"
-    },
-    "answer": 20,
-    "range": [
-      0,
-      24
-    ],
-    "step": 1,
-    "tolerance": 8,
-    "unit": {
-      "ru": "часов",
-      "en": "hours"
-    },
-    "fact": {
-      "ru": "Эвкалипт почти не даёт сил, вот коала и экономит.",
-      "en": "Eucalyptus gives very little energy, so the koala saves it."
-    },
-    "source": "https://en.wikipedia.org/wiki/Koala"
-  },
-  {
-    "id": "nat_011",
-    "topic": "nature",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько лет может прожить гренландская акула?",
-      "en": "How many years can a Greenland shark live?"
-    },
-    "answer": 390,
-    "range": [
-      10,
-      1000
-    ],
-    "step": 5,
-    "tolerance": 300,
-    "unit": {
-      "ru": "лет",
-      "en": "years"
-    },
-    "fact": {
-      "ru": "Некоторые из живущих сейчас акул плавали ещё при Петре I.",
-      "en": "Some sharks alive today were already swimming when Peter the Great ruled."
-    },
-    "source": "https://en.wikipedia.org/wiki/Greenland_shark"
-  },
-  {
-    "id": "food_001",
-    "topic": "food",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Что делает борщ красным?",
-      "en": "What makes borscht red?"
-    },
-    "options": [
-      {
-        "ru": "Помидоры",
-        "en": "Tomatoes"
-      },
-      {
-        "ru": "Свёкла",
-        "en": "Beetroot"
-      },
-      {
-        "ru": "Малиновое варенье",
-        "en": "Raspberry jam"
-      },
-      {
-        "ru": "Красный перец",
-        "en": "Red pepper"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Каплю уксуса или лимона добавляют, чтобы свёкла не побурела.",
-      "en": "A drop of vinegar or lemon keeps the beetroot from turning brown."
-    },
-    "source": "https://en.wikipedia.org/wiki/Borscht"
-  },
-  {
-    "id": "food_002",
-    "topic": "food",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Какую еду нашли в египетских гробницах — и она всё ещё съедобна?",
-      "en": "Which food found in Egyptian tombs is still edible?"
-    },
-    "options": [
-      {
-        "ru": "Хлеб",
-        "en": "Bread"
-      },
-      {
-        "ru": "Сыр",
-        "en": "Cheese"
-      },
-      {
-        "ru": "Мёд",
-        "en": "Honey"
-      },
-      {
-        "ru": "Виноград",
-        "en": "Grapes"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Мёду было около 3000 лет. В нём почти нет воды, и микробы в нём не живут.",
-      "en": "The honey was about 3,000 years old. It has almost no water, so germs cannot live in it."
-    },
-    "source": "https://www.smithsonianmag.com/science-nature/the-science-behind-honeys-eternal-shelf-life-1218690/"
-  },
-  {
-    "id": "food_003",
-    "topic": "food",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Почему, когда режешь лук, текут слёзы?",
-      "en": "Why do you cry when you cut an onion?"
-    },
-    "options": [
-      {
-        "ru": "Лук брызгает соком в глаза",
-        "en": "It squirts juice in your eyes"
-      },
-      {
-        "ru": "Он выпускает едкий газ",
-        "en": "It releases an irritating gas"
-      },
-      {
-        "ru": "Лук очень грустный",
-        "en": "The onion is sad"
-      },
-      {
-        "ru": "Пахнет как перец",
-        "en": "It smells like pepper"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Помогает холодный лук и острый нож: газа выходит меньше.",
-      "en": "A cold onion and a sharp knife help: less gas escapes."
-    },
-    "source": "https://en.wikipedia.org/wiki/Syn-Propanethial-S-oxide"
-  },
-  {
-    "id": "food_004",
-    "topic": "food",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Откуда родом картошка?",
-      "en": "Where do potatoes come from?"
-    },
-    "options": [
-      {
-        "ru": "Из Ирландии",
-        "en": "Ireland"
-      },
-      {
-        "ru": "Из России",
-        "en": "Russia"
-      },
-      {
-        "ru": "Из Германии",
-        "en": "Germany"
-      },
-      {
-        "ru": "Из Южной Америки",
-        "en": "South America"
-      }
-    ],
-    "correct": 3,
-    "fact": {
-      "ru": "Индейцы в Андах выращивали её больше 7000 лет назад.",
-      "en": "People in the Andes grew it more than 7,000 years ago."
-    },
-    "source": "https://en.wikipedia.org/wiki/Potato"
-  },
-  {
-    "id": "food_005",
-    "topic": "food",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какой из этих плодов для ботаника — настоящая ягода?",
-      "en": "Which of these is a true berry to a botanist?"
-    },
-    "options": [
-      {
-        "ru": "Клубника",
-        "en": "Strawberry"
-      },
-      {
-        "ru": "Малина",
-        "en": "Raspberry"
-      },
-      {
-        "ru": "Банан",
-        "en": "Banana"
-      },
-      {
-        "ru": "Вишня",
-        "en": "Cherry"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "А клубника и малина — вовсе не ягоды. Помидор, кстати, тоже ягода.",
-      "en": "Strawberries and raspberries are not berries at all. A tomato is, though."
-    },
-    "source": "https://en.wikipedia.org/wiki/Berry_(botany)"
-  },
-  {
-    "id": "food_006",
-    "topic": "food",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какая пряность самая дорогая в мире?",
-      "en": "Which spice is the most expensive in the world?"
-    },
-    "options": [
-      {
-        "ru": "Ваниль",
-        "en": "Vanilla"
-      },
-      {
-        "ru": "Шафран",
-        "en": "Saffron"
-      },
-      {
-        "ru": "Кардамон",
-        "en": "Cardamom"
-      },
-      {
-        "ru": "Корица",
-        "en": "Cinnamon"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Шафран — это тычинки цветка крокуса, их собирают руками.",
-      "en": "Saffron is the threads of a crocus flower, picked by hand."
-    },
-    "source": "https://en.wikipedia.org/wiki/Saffron"
-  },
-  {
-    "id": "food_007",
-    "topic": "food",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какого цвета была морковь раньше, чем стала оранжевой?",
-      "en": "What colour were carrots before they turned orange?"
-    },
-    "options": [
-      {
-        "ru": "Синей",
-        "en": "Blue"
-      },
-      {
-        "ru": "Фиолетовой или жёлтой",
-        "en": "Purple or yellow"
-      },
-      {
-        "ru": "Зелёной",
-        "en": "Green"
-      },
-      {
-        "ru": "Всегда была оранжевой",
-        "en": "They were always orange"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Оранжевую морковь вывели в Европе всего несколько веков назад.",
-      "en": "Orange carrots were bred in Europe only a few centuries ago."
-    },
-    "source": "https://en.wikipedia.org/wiki/Carrot"
-  },
-  {
-    "id": "food_008",
-    "topic": "food",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какой «орех» на самом деле родственник гороха и фасоли?",
-      "en": "Which nut is really a relative of peas and beans?"
-    },
-    "options": [
-      {
-        "ru": "Грецкий",
-        "en": "Walnut"
-      },
-      {
-        "ru": "Фундук",
-        "en": "Hazelnut"
-      },
-      {
-        "ru": "Миндаль",
-        "en": "Almond"
-      },
-      {
-        "ru": "Арахис",
-        "en": "Peanut"
-      }
-    ],
-    "correct": 3,
-    "fact": {
-      "ru": "Арахис зреет под землёй, в стручках, как горох.",
-      "en": "Peanuts ripen underground, in pods, like peas."
-    },
-    "source": "https://en.wikipedia.org/wiki/Peanut"
-  },
-  {
-    "id": "food_009",
-    "topic": "food",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Из чего делают марципан?",
-      "en": "What is marzipan made from?"
-    },
-    "options": [
-      {
-        "ru": "Из миндаля",
-        "en": "Almonds"
-      },
-      {
-        "ru": "Из арахиса",
-        "en": "Peanuts"
-      },
-      {
-        "ru": "Из кокоса",
-        "en": "Coconut"
-      },
-      {
-        "ru": "Из фасоли",
-        "en": "Beans"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Перемолотый миндаль с сахаром: из него лепят фрукты и зверей.",
-      "en": "Ground almonds and sugar: people shape it into fruit and animals."
-    },
-    "source": "https://en.wikipedia.org/wiki/Marzipan"
-  },
-  {
-    "id": "food_010",
-    "topic": "food",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько процентов арбуза — вода?",
-      "en": "What percentage of a watermelon is water?"
-    },
-    "answer": 92,
-    "range": [
-      0,
-      100
-    ],
-    "step": 1,
-    "tolerance": 30,
-    "unit": {
-      "ru": "%",
-      "en": "%"
-    },
-    "fact": {
-      "ru": "Поэтому в жару арбуз и пьют, и едят одновременно.",
-      "en": "That is why on a hot day you eat and drink a watermelon at once."
-    },
-    "source": "https://en.wikipedia.org/wiki/Watermelon"
-  },
-  {
-    "id": "food_011",
-    "topic": "food",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "При какой температуре начинает таять шоколад?",
-      "en": "At what temperature does chocolate start to melt?"
-    },
-    "answer": 34,
+    "answer": 70,
     "range": [
       0,
       100
@@ -1752,739 +3674,47 @@
       "en": "°C"
     },
     "fact": {
-      "ru": "Чуть ниже температуры тела: поэтому он тает во рту, а не в руке.",
-      "en": "Just below body temperature: that is why it melts in your mouth."
+      "ru": "Воздух там редкий, поэтому вода кипит раньше, а макароны варятся вечность.",
+      "en": "The air is thin up there, so water boils sooner and pasta takes forever."
     },
-    "source": "https://en.wikipedia.org/wiki/Cocoa_butter"
-  },
-  {
-    "id": "food_012",
-    "topic": "food",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько цветков нужно собрать, чтобы получить грамм шафрана?",
-      "en": "How many flowers does it take to make one gram of saffron?"
-    },
-    "answer": 150,
-    "range": [
-      1,
-      1000
-    ],
-    "step": 1,
-    "tolerance": 300,
-    "unit": {
-      "ru": "цветков",
-      "en": "flowers"
-    },
-    "fact": {
-      "ru": "У каждого цветка всего три тоненькие тычинки.",
-      "en": "Each flower has only three thin threads."
-    },
-    "source": "https://en.wikipedia.org/wiki/Saffron"
-  },
-  {
-    "id": "spo_001",
-    "topic": "sport",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Что бросают в кёрлинге?",
-      "en": "What do you throw in curling?"
-    },
-    "options": [
-      {
-        "ru": "Шайбу",
-        "en": "A puck"
-      },
-      {
-        "ru": "Камень",
-        "en": "A stone"
-      },
-      {
-        "ru": "Мяч",
-        "en": "A ball"
-      },
-      {
-        "ru": "Метлу",
-        "en": "A broom"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Камень весит почти 20 килограммов, а метлой натирают лёд перед ним.",
-      "en": "The stone weighs almost 20 kilograms; the broom just polishes the ice in front of it."
-    },
-    "source": "https://en.wikipedia.org/wiki/Curling"
-  },
-  {
-    "id": "spo_002",
-    "topic": "sport",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Сколько клеток на шахматной доске?",
-      "en": "How many squares are on a chessboard?"
-    },
-    "options": [
-      {
-        "ru": "36",
-        "en": "36"
-      },
-      {
-        "ru": "49",
-        "en": "49"
-      },
-      {
-        "ru": "64",
-        "en": "64"
-      },
-      {
-        "ru": "100",
-        "en": "100"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Восемь на восемь: половина белых, половина чёрных.",
-      "en": "Eight by eight: half light, half dark."
-    },
-    "source": "https://en.wikipedia.org/wiki/Chessboard"
-  },
-  {
-    "id": "spo_003",
-    "topic": "sport",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Кто был талисманом Олимпиады-80 в Москве?",
-      "en": "Who was the mascot of the 1980 Moscow Olympics?"
-    },
-    "options": [
-      {
-        "ru": "Медвежонок",
-        "en": "A bear cub"
-      },
-      {
-        "ru": "Волк",
-        "en": "A wolf"
-      },
-      {
-        "ru": "Заяц",
-        "en": "A hare"
-      },
-      {
-        "ru": "Чебурашка",
-        "en": "Cheburashka"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "На закрытии Мишка улетел на воздушных шарах, и стадион плакал.",
-      "en": "At the closing ceremony the bear floated away on balloons and the stadium cried."
-    },
-    "source": "https://en.wikipedia.org/wiki/Misha_(mascot)"
-  },
-  {
-    "id": "spo_004",
-    "topic": "sport",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какую игру придумали, повесив на стены две корзины для персиков?",
-      "en": "Which game was invented by nailing two peach baskets to the walls?"
-    },
-    "options": [
-      {
-        "ru": "Волейбол",
-        "en": "Volleyball"
-      },
-      {
-        "ru": "Баскетбол",
-        "en": "Basketball"
-      },
-      {
-        "ru": "Гандбол",
-        "en": "Handball"
-      },
-      {
-        "ru": "Бейсбол",
-        "en": "Baseball"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "У корзин было дно, и мяч после каждого броска доставали лестницей.",
-      "en": "The baskets still had bottoms, so after every score someone fetched the ball with a ladder."
-    },
-    "source": "https://en.wikipedia.org/wiki/Basketball"
-  },
-  {
-    "id": "spo_005",
-    "topic": "sport",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Почему марафон — это именно 42 км 195 м?",
-      "en": "Why is a marathon exactly 42.195 km?"
-    },
-    "options": [
-      {
-        "ru": "Столько пробежал древний гонец",
-        "en": "An ancient messenger ran that far"
-      },
-      {
-        "ru": "Так захотела королевская семья в 1908",
-        "en": "The royal family wanted it in 1908"
-      },
-      {
-        "ru": "Это ровно 100 000 шагов",
-        "en": "It is exactly 100,000 steps"
-      },
-      {
-        "ru": "Так длинна Великая стена",
-        "en": "It is the length of the Great Wall"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Старт поставили у Виндзорского замка, а финиш — напротив королевской ложи.",
-      "en": "The start was put by Windsor Castle and the finish in front of the royal box."
-    },
-    "source": "https://en.wikipedia.org/wiki/Marathon"
-  },
-  {
-    "id": "spo_006",
-    "topic": "sport",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какой из этих видов спорта когда-то был олимпийским?",
-      "en": "Which of these was once an Olympic sport?"
-    },
-    "options": [
-      {
-        "ru": "Перетягивание каната",
-        "en": "Tug of war"
-      },
-      {
-        "ru": "Прятки",
-        "en": "Hide and seek"
-      },
-      {
-        "ru": "Бег в мешках",
-        "en": "Sack race"
-      },
-      {
-        "ru": "Пускание блинчиков",
-        "en": "Stone skipping"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Канат перетягивали на пяти Олимпиадах подряд, с 1900 по 1920 год.",
-      "en": "Tug of war was in five Olympics in a row, from 1900 to 1920."
-    },
-    "source": "https://en.wikipedia.org/wiki/Tug_of_war_at_the_Summer_Olympics"
-  },
-  {
-    "id": "spo_007",
-    "topic": "sport",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "В каком спорте мяч самый маленький?",
-      "en": "Which sport has the smallest ball?"
-    },
-    "options": [
-      {
-        "ru": "Гольф",
-        "en": "Golf"
-      },
-      {
-        "ru": "Большой теннис",
-        "en": "Tennis"
-      },
-      {
-        "ru": "Настольный теннис",
-        "en": "Table tennis"
-      },
-      {
-        "ru": "Водное поло",
-        "en": "Water polo"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Шарик для пинг-понга 40 мм, мяч для гольфа почти 43.",
-      "en": "A ping pong ball is 40 mm across; a golf ball almost 43."
-    },
-    "source": "https://en.wikipedia.org/wiki/Table_tennis"
-  },
-  {
-    "id": "spo_008",
-    "topic": "sport",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Майку какого цвета надевает лидер велогонки «Тур де Франс»?",
-      "en": "What colour jersey does the leader of the Tour de France wear?"
-    },
-    "options": [
-      {
-        "ru": "Зелёную",
-        "en": "Green"
-      },
-      {
-        "ru": "Красную",
-        "en": "Red"
-      },
-      {
-        "ru": "Белую",
-        "en": "White"
-      },
-      {
-        "ru": "Жёлтую",
-        "en": "Yellow"
-      }
-    ],
-    "correct": 3,
-    "fact": {
-      "ru": "Жёлтую — потому что газета, которая придумала гонку, печаталась на жёлтой бумаге.",
-      "en": "Yellow, because the newspaper that started the race was printed on yellow paper."
-    },
-    "source": "https://en.wikipedia.org/wiki/Yellow_jersey_statistics"
-  },
-  {
-    "id": "spo_009",
-    "topic": "sport",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько метров в марафоне?",
-      "en": "How many metres is a marathon?"
-    },
-    "answer": 42195,
-    "range": [
-      30000,
-      60000
-    ],
-    "step": 5,
-    "tolerance": 6000,
-    "unit": {
-      "ru": "м",
-      "en": "m"
-    },
-    "fact": {
-      "ru": "Самые быстрые бегуны пробегают его чуть больше чем за два часа.",
-      "en": "The fastest runners do it in just over two hours."
-    },
-    "source": "https://en.wikipedia.org/wiki/Marathon"
-  },
-  {
-    "id": "spo_010",
-    "topic": "sport",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько часов длился самый долгий теннисный матч в истории?",
-      "en": "How many hours did the longest tennis match in history last?"
-    },
-    "answer": 11,
-    "range": [
-      1,
-      30
-    ],
-    "step": 1,
-    "tolerance": 8,
-    "unit": {
-      "ru": "часов",
-      "en": "hours"
-    },
-    "fact": {
-      "ru": "Уимблдон, 2010 год: матч шёл три дня, а табло сломалось на счёте 47:47.",
-      "en": "Wimbledon 2010: it ran over three days, and the scoreboard broke at 47 all."
-    },
-    "source": "https://en.wikipedia.org/wiki/Isner%E2%80%93Mahut_match_at_the_2010_Wimbledon_Championships"
-  },
-  {
-    "id": "spo_011",
-    "topic": "sport",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Какую скорость развивал Усэйн Болт на пике забега, в км/ч?",
-      "en": "How fast did Usain Bolt run at his peak, in km/h?"
-    },
-    "answer": 45,
-    "range": [
-      10,
-      100
-    ],
-    "step": 1,
-    "tolerance": 25,
-    "unit": {
-      "ru": "км/ч",
-      "en": "km/h"
-    },
-    "fact": {
-      "ru": "Быстрее, чем машина едет по двору, но медленнее домашней кошки на рывке.",
-      "en": "Faster than a car in a car park, slower than a house cat in a sprint."
-    },
-    "source": "https://en.wikipedia.org/wiki/Usain_Bolt"
-  },
-  {
-    "id": "cul_001",
-    "topic": "culture",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Где нашли Чебурашку?",
-      "en": "Where was Cheburashka found?"
-    },
-    "options": [
-      {
-        "ru": "В коробке из-под обуви",
-        "en": "In a shoebox"
-      },
-      {
-        "ru": "В ящике с апельсинами",
-        "en": "In a crate of oranges"
-      },
-      {
-        "ru": "В дупле дерева",
-        "en": "In a hollow tree"
-      },
-      {
-        "ru": "В посылке из Африки",
-        "en": "In a parcel from Africa"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Он наелся апельсинов в тропическом лесу и уснул прямо в ящике.",
-      "en": "He ate his fill of oranges in the rainforest and fell asleep in the crate."
-    },
-    "source": "https://en.wikipedia.org/wiki/Cheburashka"
-  },
-  {
-    "id": "cul_002",
-    "topic": "culture",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Как зовут пса из Простоквашино?",
-      "en": "What is the dog's name in Prostokvashino?"
-    },
-    "options": [
-      {
-        "ru": "Бобик",
-        "en": "Bobik"
-      },
-      {
-        "ru": "Тузик",
-        "en": "Tuzik"
-      },
-      {
-        "ru": "Шарик",
-        "en": "Sharik"
-      },
-      {
-        "ru": "Полкан",
-        "en": "Polkan"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "В конце он научился фотографировать и чуть не стал знаменитым.",
-      "en": "In the end he learned photography and nearly became famous."
-    },
-    "source": "https://en.wikipedia.org/wiki/Three_from_Prostokvashino"
-  },
-  {
-    "id": "cul_003",
-    "topic": "culture",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Что кричит Волк в «Ну, погоди!», когда всё снова пошло не так?",
-      "en": "What does the Wolf shout in Nu, Pogodi! when it all goes wrong again?"
-    },
-    "options": [
-      {
-        "ru": "«Я ещё вернусь!»",
-        "en": "I'll be back!"
-      },
-      {
-        "ru": "«Хорошо сидим!»",
-        "en": "Nice sitting here!"
-      },
-      {
-        "ru": "«Ну, Заяц, погоди!»",
-        "en": "Just you wait, Hare!"
-      },
-      {
-        "ru": "«Улыбаемся и машем»",
-        "en": "Smile and wave"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Мультфильм снимали почти 20 лет, а Волка озвучивал Анатолий Папанов.",
-      "en": "It was made over almost 20 years, and Anatoly Papanov voiced the Wolf."
-    },
-    "source": "https://en.wikipedia.org/wiki/Nu,_pogodi!"
-  },
-  {
-    "id": "cul_004",
-    "topic": "culture",
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "С чем Винни-Пух полетел к пчёлам за мёдом?",
-      "en": "What did Winnie the Pooh fly up to the bees with?"
-    },
-    "options": [
-      {
-        "ru": "С зонтиком",
-        "en": "An umbrella"
-      },
-      {
-        "ru": "С воздушным шариком",
-        "en": "A balloon"
-      },
-      {
-        "ru": "С лестницей",
-        "en": "A ladder"
-      },
-      {
-        "ru": "С кастрюлей",
-        "en": "A saucepan"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Он притворялся тучкой, а Пятачок ходил под ним с зонтиком.",
-      "en": "He pretended to be a cloud while Piglet walked beneath with an umbrella."
-    },
-    "source": "https://en.wikipedia.org/wiki/Winnie-the-Pooh_(1969_film)"
-  },
-  {
-    "id": "cul_005",
-    "topic": "culture",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какой мультфильм первым получил «Оскар» как лучший анимационный?",
-      "en": "Which film won the first Oscar for best animated feature?"
-    },
-    "options": [
-      {
-        "ru": "«Король Лев»",
-        "en": "The Lion King"
-      },
-      {
-        "ru": "«Шрек»",
-        "en": "Shrek"
-      },
-      {
-        "ru": "«Ледниковый период»",
-        "en": "Ice Age"
-      },
-      {
-        "ru": "«Головоломка»",
-        "en": "Inside Out"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Эту премию вообще придумали только в 2001 году.",
-      "en": "That award was only created in 2001."
-    },
-    "source": "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Animated_Feature"
-  },
-  {
-    "id": "cul_006",
-    "topic": "culture",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какая сказка Пушкина начинается словами «Жил старик со своею старухой…»?",
-      "en": "Which Pushkin tale starts: \"There lived an old man and his old wife...\"?"
-    },
-    "options": [
-      {
-        "ru": "О царе Салтане",
-        "en": "Tsar Saltan"
-      },
-      {
-        "ru": "О золотом петушке",
-        "en": "The Golden Cockerel"
-      },
-      {
-        "ru": "О рыбаке и рыбке",
-        "en": "The Fisherman and the Fish"
-      },
-      {
-        "ru": "О попе и Балде",
-        "en": "The Priest and Balda"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Старуха начала с нового корыта, а кончила тем же корытом.",
-      "en": "The old wife began with a new washtub and ended with the same old one."
-    },
-    "source": "https://en.wikipedia.org/wiki/The_Tale_of_the_Fisherman_and_the_Fish"
-  },
-  {
-    "id": "cul_007",
-    "topic": "culture",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Кем по профессии был автор «Алисы в Стране чудес»?",
-      "en": "What was the author of Alice in Wonderland by profession?"
-    },
-    "options": [
-      {
-        "ru": "Математиком",
-        "en": "A mathematician"
-      },
-      {
-        "ru": "Поваром",
-        "en": "A cook"
-      },
-      {
-        "ru": "Капитаном корабля",
-        "en": "A ship's captain"
-      },
-      {
-        "ru": "Шляпником",
-        "en": "A hatter"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Льюис Кэрролл преподавал математику в Оксфорде и придумывал головоломки.",
-      "en": "Lewis Carroll taught maths at Oxford and made up puzzles."
-    },
-    "source": "https://en.wikipedia.org/wiki/Lewis_Carroll"
-  },
-  {
-    "id": "cul_008",
-    "topic": "culture",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какой художник отрезал себе часть уха?",
-      "en": "Which painter cut off part of his own ear?"
-    },
-    "options": [
-      {
-        "ru": "Рембрандт",
-        "en": "Rembrandt"
-      },
-      {
-        "ru": "Ван Гог",
-        "en": "Van Gogh"
-      },
-      {
-        "ru": "Пикассо",
-        "en": "Picasso"
-      },
-      {
-        "ru": "Айвазовский",
-        "en": "Aivazovsky"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Он потом написал автопортрет с перевязанным ухом.",
-      "en": "He later painted a self portrait with his ear bandaged."
-    },
-    "source": "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
-  },
-  {
-    "id": "cul_009",
-    "topic": "culture",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "В каком году вышла первая серия «Ну, погоди!»?",
-      "en": "In which year did the first Nu, Pogodi! episode come out?"
-    },
-    "answer": 1969,
-    "range": [
-      1940,
-      2010
-    ],
-    "step": 1,
-    "tolerance": 25,
-    "unit": {
-      "ru": "год",
-      "en": "year"
-    },
-    "fact": {
-      "ru": "Первую серию сделали за несколько месяцев, а последняя классическая вышла в 1986-м.",
-      "en": "The first episode took a few months; the last classic one came out in 1986."
-    },
-    "source": "https://en.wikipedia.org/wiki/Nu,_pogodi!"
-  },
-  {
-    "id": "cul_010",
-    "topic": "culture",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько клавиш у обычного пианино?",
-      "en": "How many keys does an ordinary piano have?"
-    },
-    "answer": 88,
-    "range": [
-      40,
-      150
-    ],
-    "step": 1,
-    "tolerance": 30,
-    "unit": {
-      "ru": "клавиш",
-      "en": "keys"
-    },
-    "fact": {
-      "ru": "52 белых и 36 чёрных.",
-      "en": "52 white and 36 black."
-    },
-    "source": "https://en.wikipedia.org/wiki/Piano"
-  },
-  {
-    "id": "cul_011",
-    "topic": "culture",
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "В каком году вышла первая книга о Гарри Поттере?",
-      "en": "In which year was the first Harry Potter book published?"
-    },
-    "answer": 1997,
-    "range": [
-      1980,
-      2015
-    ],
-    "step": 1,
-    "tolerance": 15,
-    "unit": {
-      "ru": "год",
-      "en": "year"
-    },
-    "fact": {
-      "ru": "Рукопись отвергли двенадцать издательств подряд.",
-      "en": "Twelve publishers turned the manuscript down in a row."
-    },
-    "source": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone"
+    "source": "https://en.wikipedia.org/wiki/Boiling_point"
   },
   {
     "id": "spa_001",
+    "topic": "space",
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто слетал в космос и вернулся живым раньше Гагарина?",
+      "en": "Who flew to space and came back alive before Gagarin?"
+    },
+    "options": [
+      {
+        "ru": "Кот Барсик",
+        "en": "Barsik the cat"
+      },
+      {
+        "ru": "Собаки Белка и Стрелка",
+        "en": "The dogs Belka and Strelka"
+      },
+      {
+        "ru": "Попугай Кеша",
+        "en": "Kesha the parrot"
+      },
+      {
+        "ru": "Хомяк Пушок",
+        "en": "Fluffy the hamster"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Они облетели Землю в 1960 году. Щенка Стрелки потом подарили семье Кеннеди.",
+      "en": "They orbited the Earth in 1960. One of Strelka's puppies was later given to the Kennedy family."
+    },
+    "source": "https://en.wikipedia.org/wiki/Belka_and_Strelka"
+  },
+  {
+    "id": "spa_002",
     "topic": "space",
     "format": "multipleChoice",
     "difficulty": "easy",
@@ -2518,7 +3748,7 @@
     "source": "https://en.wikipedia.org/wiki/Mars"
   },
   {
-    "id": "spa_002",
+    "id": "spa_003",
     "topic": "space",
     "format": "multipleChoice",
     "difficulty": "easy",
@@ -2552,7 +3782,7 @@
     "source": "https://en.wikipedia.org/wiki/Space_food"
   },
   {
-    "id": "spa_003",
+    "id": "spa_004",
     "topic": "space",
     "format": "multipleChoice",
     "difficulty": "easy",
@@ -2586,7 +3816,7 @@
     "source": "https://en.wikipedia.org/wiki/Outer_space"
   },
   {
-    "id": "spa_004",
+    "id": "spa_005",
     "topic": "space",
     "format": "multipleChoice",
     "difficulty": "easy",
@@ -2620,7 +3850,7 @@
     "source": "https://en.wikipedia.org/wiki/Effect_of_spaceflight_on_the_human_body"
   },
   {
-    "id": "spa_005",
+    "id": "spa_006",
     "topic": "space",
     "format": "multipleChoice",
     "difficulty": "medium",
@@ -2654,7 +3884,7 @@
     "source": "https://en.wikipedia.org/wiki/Uranus"
   },
   {
-    "id": "spa_006",
+    "id": "spa_007",
     "topic": "space",
     "format": "multipleChoice",
     "difficulty": "medium",
@@ -2686,40 +3916,6 @@
       "en": "Venus turns once in 243 days but goes round the Sun in 225."
     },
     "source": "https://en.wikipedia.org/wiki/Venus"
-  },
-  {
-    "id": "spa_007",
-    "topic": "space",
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Что почти невозможно разглядеть с орбиты без приборов?",
-      "en": "What can you hardly see from orbit without instruments?"
-    },
-    "options": [
-      {
-        "ru": "Огни больших городов",
-        "en": "City lights at night"
-      },
-      {
-        "ru": "Пустыню Сахару",
-        "en": "The Sahara"
-      },
-      {
-        "ru": "Гималаи",
-        "en": "The Himalayas"
-      },
-      {
-        "ru": "Великую Китайскую стену",
-        "en": "The Great Wall of China"
-      }
-    ],
-    "correct": 3,
-    "fact": {
-      "ru": "Стена очень длинная, но узкая и того же цвета, что земля вокруг.",
-      "en": "The wall is long but narrow, and the same colour as the land around it."
-    },
-    "source": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
   },
   {
     "id": "spa_008",
@@ -2770,7 +3966,7 @@
       60
     ],
     "step": 1,
-    "tolerance": 20,
+    "tolerance": 7,
     "unit": {
       "ru": "минут",
       "en": "minutes"

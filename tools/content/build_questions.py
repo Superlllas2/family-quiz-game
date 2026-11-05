@@ -1,6 +1,9 @@
-# Generates content/questions.json, race.json and topic titles for the questions v2 rewrite.
-# MC: (id, difficulty, ru, en, [(ru, en) x4], correct_index, fact_ru, fact_en, source)
-# CV: (id, ru, en, answer, (min, max), step, tolerance, (unit_ru, unit_en), fact_ru, fact_en, source)
+# Generates content/questions.json, race.json and topics.json: the question bank written to surprise, to be worked out
+# rather than remembered and to start arguments on the sofa (most multiple choice questions have one joke option), every
+# question with a one line why fact and a source. Run from the repo root:  python tools/content/build_questions.py .
+# It checks the length limits of 15_schemas.md, closest value ranges and that every topic can fill a round; then run
+# node tools/validate_content.mjs. The data below is grouped by where it was first written (v2), then remapped onto
+# the topic bank (v3); ids are given in order per topic.
 import json, sys
 
 W = "https://en.wikipedia.org/wiki/"
@@ -78,7 +81,7 @@ CV["history"] = [
   1889, (1700, 2000), 1, 80, ("год", "year"),
   "Её разрешили поставить всего на 20 лет, а потом собирались разобрать.", "It was only allowed to stand for 20 years and was meant to be taken down after that.", W + "Eiffel_Tower"),
  ("his_011", "Сколько лет назад жили последние мамонты?", "How many years ago did the last mammoths live?",
-  4000, (0, 20000), 100, 6000, ("лет назад", "years ago"),
+  4000, (0, 20000), 100, 3500, ("лет назад", "years ago"),
   "Когда в Египте уже стояли пирамиды, на острове Врангеля ещё ходили мамонты.", "The pyramids were already standing in Egypt while mammoths still walked on Wrangel Island.", W + "Woolly_mammoth"),
 ]
 
@@ -150,9 +153,9 @@ CV["nature"] = [
  ("nat_009", "Сколько раз в минуту может биться сердце колибри?", "How many times a minute can a hummingbird's heart beat?",
   1200, (100, 3000), 10, 900, ("ударов", "beats"),
   "У человека в покое около 70 ударов в минуту.", "A resting person's heart beats about 70 times a minute.", W + "Hummingbird"),
- ("nat_010", "Сколько часов в сутки спит коала?", "How many hours a day does a koala sleep?",
-  20, (0, 24), 1, 8, ("часов", "hours"),
-  "Эвкалипт почти не даёт сил, вот коала и экономит.", "Eucalyptus gives very little energy, so the koala saves it.", W + "Koala"),
+ ("nat_010", "С какой скоростью может бежать гепард, в км/ч?", "How fast can a cheetah run, in km/h?",
+  100, (10, 300), 1, 40, ("км/ч", "km/h"),
+  "Быстрее машины в городе, но такой рывок он держит всего полминуты.", "Faster than a car in town, but it can only keep it up for half a minute.", W + "Cheetah"),
  ("nat_011", "Сколько лет может прожить гренландская акула?", "How many years can a Greenland shark live?",
   390, (10, 1000), 5, 300, ("лет", "years"),
   "Некоторые из живущих сейчас акул плавали ещё при Петре I.", "Some sharks alive today were already swimming when Peter the Great ruled.", W + "Greenland_shark"),
@@ -189,13 +192,13 @@ MC["food"] = [
 ]
 CV["food"] = [
  ("food_010", "Сколько процентов арбуза — вода?", "What percentage of a watermelon is water?",
-  92, (0, 100), 1, 30, ("%", "%"),
+  92, (0, 100), 1, 7, ("%", "%"),
   "Поэтому в жару арбуз и пьют, и едят одновременно.", "That is why on a hot day you eat and drink a watermelon at once.", W + "Watermelon"),
  ("food_011", "При какой температуре начинает таять шоколад?", "At what temperature does chocolate start to melt?",
   34, (0, 100), 1, 25, ("°C", "°C"),
   "Чуть ниже температуры тела: поэтому он тает во рту, а не в руке.", "Just below body temperature: that is why it melts in your mouth.", W + "Cocoa_butter"),
  ("food_012", "Сколько цветков нужно собрать, чтобы получить грамм шафрана?", "How many flowers does it take to make one gram of saffron?",
-  150, (1, 1000), 1, 300, ("цветков", "flowers"),
+  150, (1, 1000), 1, 140, ("цветков", "flowers"),
   "У каждого цветка всего три тоненькие тычинки.", "Each flower has only three thin threads.", W + "Saffron"),
 ]
 
@@ -303,7 +306,7 @@ MC["space"] = [
 ]
 CV["space"] = [
  ("spa_009", "За сколько минут свет Солнца долетает до Земли?", "How many minutes does sunlight take to reach the Earth?",
-  8, (0, 60), 1, 20, ("минут", "minutes"),
+  8, (0, 60), 1, 7, ("минут", "minutes"),
   "Мы всегда видим Солнце таким, каким оно было восемь минут назад.", "We always see the Sun as it was eight minutes ago.", W + "Sunlight"),
  ("spa_010", "Сколько земных дней длится год на Марсе?", "How many Earth days does a year on Mars last?",
   687, (100, 2000), 1, 500, ("дней", "days"),
@@ -312,18 +315,6 @@ CV["space"] = [
   1969, (1940, 2000), 1, 20, ("год", "year"),
   "Их следы на Луне лежат до сих пор: там нет ветра.", "Their footprints are still there: the Moon has no wind.", W + "Apollo_11"),
 ]
-
-TOPICS = {
- "geography": ("Вокруг света", "Around the world"),
- "history": ("Машина времени", "Time machine"),
- "science": ("Как это устроено", "How things work"),
- "nature": ("Странные звери", "Weird animals"),
- "food": ("Что на ужин", "What's for dinner"),
- "sport": ("Спорт и рекорды", "Sport and records"),
- "culture": ("Мультики, книги, кино", "Cartoons, books, films"),
- "space": ("Космос", "Up in space"),
- "mixed": ("Всего понемногу", "A bit of everything"),
-}
 
 RACE = [
  ("Банан — это ягода, а клубника — нет.", "A banana is a berry, but a strawberry is not.", True, W + "Berry_(botany)"),
@@ -368,43 +359,258 @@ RACE = [
  ("У новорождённого костей больше, чем у взрослого.", "A newborn baby has more bones than an adult.", True, W + "Human_skeleton"),
 ]
 
+
+# ------------------------------------------------------------------------------------------------ v3: the topic bank
+# Every round the topic vote offers three topics drawn at random from this bank plus "A bit of everything"
+# (TopicPicker). Each topic holds enough for at least one round: easy and medium multiple choice, hard closest value.
+
+TOPICS = [
+ ("world", "wld", "Вокруг света", "Around the world"),
+ ("earth", "ear", "Земля и погода", "Earth and weather"),
+ ("animals", "ani", "Странные звери", "Weird animals"),
+ ("sea", "sea", "Под водой", "Under the sea"),
+ ("kitchen", "kit", "Что на ужин", "What's for dinner"),
+ ("timemachine", "tim", "Машина времени", "Time machine"),
+ ("myths", "myt", "Мифы и враньё", "Myths and nonsense"),
+ ("body", "bod", "Как устроен человек", "The human body"),
+ ("records", "rec", "Спорт и рекорды", "Sport and records"),
+ ("cartoons", "car", "Мультики нашего детства", "Cartoons we grew up with"),
+ ("books", "boo", "Книги и сказки", "Books and fairy tales"),
+ ("art", "art", "Музыка и картины", "Music and paintings"),
+ ("inventions", "inv", "Кто это придумал?", "Who invented that?"),
+ ("science", "sci", "Как это работает", "How things work"),
+ ("space", "spa", "Космос", "Up in space"),
+]
+MIXED = ("mixed", "Всего понемногу", "A bit of everything")
+
+# Where each v2 question goes (old id -> new topic).
+REMAP = {
+ "geo_001": "world", "geo_002": "world", "geo_003": "world", "geo_004": "world", "geo_005": "world", "geo_007": "world",
+ "geo_008": "world", "geo_009": "world", "geo_010": "world",
+ "geo_006": "earth", "geo_011": "earth", "sci_002": "earth", "sci_006": "earth",
+ "nat_001": "animals", "nat_002": "animals", "nat_005": "animals", "nat_006": "animals", "nat_007": "animals",
+ "nat_008": "animals", "nat_009": "animals", "nat_010": "animals",
+ "nat_003": "sea", "nat_004": "sea", "nat_011": "sea",
+ "food_001": "kitchen", "food_002": "kitchen", "food_003": "kitchen", "food_004": "kitchen", "food_005": "kitchen",
+ "food_006": "kitchen", "food_007": "kitchen", "food_008": "kitchen", "food_009": "kitchen", "food_010": "kitchen",
+ "food_011": "kitchen", "food_012": "kitchen",
+ "his_001": "timemachine", "his_003": "timemachine", "his_004": "timemachine", "his_005": "timemachine",
+ "his_006": "timemachine", "his_009": "timemachine", "his_010": "timemachine", "his_011": "timemachine",
+ "sci_001": "myths", "spa_007": "myths",
+ "sci_005": "body", "sci_010": "body", "sci_011": "body",
+ "spo_001": "records", "spo_002": "records", "spo_003": "records", "spo_004": "records", "spo_005": "records",
+ "spo_006": "records", "spo_007": "records", "spo_008": "records", "spo_009": "records", "spo_010": "records",
+ "spo_011": "records",
+ "cul_001": "cartoons", "cul_002": "cartoons", "cul_003": "cartoons", "cul_004": "cartoons", "cul_005": "cartoons",
+ "cul_009": "cartoons",
+ "cul_006": "books", "cul_007": "books", "cul_011": "books",
+ "cul_008": "art", "cul_010": "art",
+ "his_008": "inventions", "sci_003": "inventions", "sci_008": "inventions",
+ "sci_004": "science", "sci_007": "science", "sci_009": "science",
+ "spa_001": "space", "spa_002": "space", "spa_003": "space", "spa_004": "space", "spa_005": "space", "spa_006": "space",
+ "spa_008": "space", "spa_009": "space", "spa_010": "space", "spa_011": "space", "his_002": "space",
+}
+DROPPED = {"his_007"}   # Napoleon moves to myths as a closest value question
+
+# New questions: (topic, difficulty, ru, en, options, correct, fact_ru, fact_en, source) and closest value
+# (topic, ru, en, answer, range, step, tolerance, unit, fact_ru, fact_en, source).
+NEW_MC = [
+ ("earth", "easy", "Почему мы сначала видим молнию, а гром слышим потом?", "Why do we see lightning before we hear the thunder?",
+  [("Свет летит быстрее звука", "Light is faster than sound"), ("Гром начинается позже", "Thunder starts later"), ("Гром стесняется", "Thunder is shy"), ("Молния ближе к нам", "The lightning is closer")], 0,
+  "Посчитай секунды до грома и раздели на три: столько километров до грозы.", "Count the seconds to the thunder and divide by three: that is how many kilometres away the storm is.", W + "Thunder"),
+ ("earth", "medium", "Где на Земле измерили самый сильный мороз?", "Where on Earth was the coldest temperature ever measured?",
+  [("В Оймяконе", "Oymyakon"), ("На Северном полюсе", "The North Pole"), ("В Антарктиде", "Antarctica"), ("На Аляске", "Alaska")], 2,
+  "Оймякон — самое холодное место, где живут люди, а рекорд держит станция Восток.", "Oymyakon is the coldest place where people live; the record belongs to Vostok Station.", W + "Vostok_Station"),
+ ("sea", "easy", "Кто из этих морских жителей — не рыба?", "Which of these sea creatures is not a fish?",
+  [("Акула", "Shark"), ("Дельфин", "Dolphin"), ("Морской конёк", "Seahorse"), ("Скат", "Ray")], 1,
+  "Дельфины дышат воздухом и кормят детёнышей молоком, как кошки.", "Dolphins breathe air and feed their babies milk, like cats do.", W + "Dolphin"),
+ ("sea", "medium", "Кто у морских коньков вынашивает малышей?", "Who carries the babies in a seahorse family?",
+  [("Мама", "Mum"), ("Папа", "Dad"), ("Бабушка", "Grandma"), ("Их приносит прилив", "The tide brings them")], 1,
+  "Папа носит икринки в сумке на животе и потом «рожает» сотни мальков.", "Dad carries the eggs in a pouch on his belly and then gives birth to hundreds of babies.", W + "Seahorse"),
+ ("sea", "medium", "Какое животное — самое большое из всех, кто когда-либо жил на Земле?", "Which is the biggest animal that ever lived on Earth?",
+  [("Самый большой динозавр", "The biggest dinosaur"), ("Синий кит", "The blue whale"), ("Мегалодон", "Megalodon"), ("Мамонт", "The mammoth")], 1,
+  "Синий кит длиннее двух автобусов и тяжелее любого динозавра.", "A blue whale is longer than two buses and heavier than any dinosaur.", W + "Blue_whale"),
+ ("myths", "easy", "Что будет, если случайно проглотить жвачку?", "What happens if you accidentally swallow chewing gum?",
+  [("Выйдет через пару дней, как всё", "It comes out in a day or two"), ("Пролежит в животе семь лет", "It stays in your tummy for seven years"), ("Склеит живот", "It glues your tummy shut"), ("Превратится в пузырь", "It turns into a bubble")], 0,
+  "Про семь лет — выдумка. Но глотать её всё равно не стоит.", "The seven years is made up. Still, better not to swallow it.", W + "Chewing_gum"),
+ ("myths", "medium", "Почему бык бросается на тряпку тореадора?", "Why does a bull charge at the bullfighter's cape?",
+  [("Ненавидит красный цвет", "It hates red"), ("Злится, что тряпкой машут", "It is angry at the waving"), ("Думает, что это еда", "It thinks it is food"), ("Тореадор обзывается", "The bullfighter calls it names")], 1,
+  "Быки почти не отличают красный от зелёного: их злит движение.", "Bulls can hardly tell red from green: it is the movement that angers them.", W + "Bullfighting"),
+ ("myths", "medium", "Какого цвета были древнегреческие мраморные статуи, когда их сделали?", "What colour were ancient Greek marble statues when they were made?",
+  [("Белые, как сейчас", "White, as they are now"), ("Ярко раскрашены", "Brightly painted"), ("Целиком позолочены", "Covered in gold"), ("Прозрачные", "See-through")], 1,
+  "Краска за века стёрлась, и все решили, что греки любили белый мрамор.", "The paint wore off over the centuries, so everyone decided the Greeks loved white marble.", W + "Polychrome"),
+ ("myths", "medium", "Сколько чувств у человека на самом деле?", "How many senses do people really have?",
+  [("Ровно пять", "Exactly five"), ("Больше пяти", "More than five"), ("Три", "Three"), ("Шесть, вместе с интуицией", "Six, counting intuition")], 1,
+  "Кроме зрения, слуха, вкуса, запаха и осязания есть чувство равновесия, тепла, боли.", "Besides sight, hearing, taste, smell and touch there is balance, temperature and pain.", W + "Sense"),
+ ("body", "easy", "Сколько зубов у взрослого человека, если выросли все?", "How many teeth does an adult have if they have all grown in?",
+  [("20", "20"), ("28", "28"), ("32", "32"), ("40", "40")], 2,
+  "Последние четыре — зубы мудрости, они могут вырасти и в 25 лет.", "The last four are wisdom teeth; they may only come at 25.", W + "Human_tooth"),
+ ("body", "easy", "Чем мы на самом деле чувствуем вкус еды больше всего?", "What do we really taste food with the most?",
+  [("Только языком", "Only the tongue"), ("Носом", "The nose"), ("Зубами", "The teeth"), ("Ушами", "The ears")], 1,
+  "Зажми нос — и яблоко с луком станут почти одинаковыми на вкус.", "Pinch your nose and an apple tastes almost like an onion.", W + "Flavor"),
+ ("body", "medium", "Где у человека самая маленькая кость?", "Where is the smallest bone in the human body?",
+  [("В ухе", "In the ear"), ("В мизинце ноги", "In the little toe"), ("В носу", "In the nose"), ("В пальце руки", "In a finger")], 0,
+  "Стремечко в ухе меньше рисового зёрнышка.", "The stirrup bone in the ear is smaller than a grain of rice.", W + "Stapes"),
+ ("body", "medium", "Сколько примерно литров крови у взрослого человека?", "About how many litres of blood does an adult have?",
+  [("Один", "One"), ("Пять", "Five"), ("Пятнадцать", "Fifteen"), ("Пятьдесят", "Fifty")], 1,
+  "Это полведра, и сердце прогоняет её всю примерно за минуту.", "That is half a bucket, and the heart pumps all of it round in about a minute.", W + "Blood_volume"),
+ ("cartoons", "easy", "Что всегда говорил кот Леопольд хулиганистым мышам?", "What did Leopold the cat always say to the naughty mice?",
+  [("«Ребята, давайте жить дружно!»", "Guys, let's live in peace!"), ("«Ну, погоди!»", "Just you wait!"), ("«Я вас всех съем!»", "I'll eat you all!"), ("«Кто там?»", "Who's there?")], 0,
+  "Мышей звали Белый и Серый, и они всё равно продолжали пакостить.", "The mice were called White and Grey, and they kept up their pranks anyway.", W + "Adventures_of_Leopold_the_Cat"),
+ ("cartoons", "medium", "Как звали попугая из «Возвращения блудного попугая»?", "What is the parrot called in The Return of the Prodigal Parrot?",
+  [("Гоша", "Gosha"), ("Кеша", "Kesha"), ("Кузя", "Kuzya"), ("Яша", "Yasha")], 1,
+  "«Таити, Таити… Нас и здесь неплохо кормят!»", "\"Tahiti, Tahiti... They feed us fine here too!\"", W + "The_Return_of_the_Prodigal_Parrot"),
+ ("books", "easy", "Сколько гномов дружили с Белоснежкой?", "How many dwarfs were friends with Snow White?",
+  [("Пять", "Five"), ("Шесть", "Six"), ("Семь", "Seven"), ("Двенадцать", "Twelve")], 2,
+  "У Пушкина в похожей сказке вместо гномов семь богатырей.", "In Pushkin's similar tale the seven dwarfs are seven knights.", W + "Snow_White"),
+ ("books", "easy", "Что потеряла Золушка на балу?", "What did Cinderella lose at the ball?",
+  [("Корону", "Her crown"), ("Перчатку", "A glove"), ("Туфельку", "A slipper"), ("Тыкву", "The pumpkin")], 2,
+  "У Перро туфелька хрустальная, а у братьев Гримм — золотая.", "In Perrault the slipper is glass; in the Brothers Grimm it is gold.", W + "Cinderella"),
+ ("books", "medium", "Как зовут итальянского «брата» Буратино?", "What is Buratino's Italian original called?",
+  [("Чиполлино", "Cipollino"), ("Пиноккио", "Pinocchio"), ("Джеппетто", "Geppetto"), ("Карабас", "Karabas")], 1,
+  "Алексей Толстой пересказал «Пиноккио» по-своему и назвал героя Буратино.", "Alexei Tolstoy retold Pinocchio his own way and called the hero Buratino.", W + "The_Golden_Key,_or_the_Adventures_of_Buratino"),
+ ("art", "easy", "Сколько струн у обычной гитары?", "How many strings does an ordinary guitar have?",
+  [("Четыре", "Four"), ("Пять", "Five"), ("Шесть", "Six"), ("Семь", "Seven")], 2,
+  "А у старой русской гитары было семь струн.", "The old Russian guitar had seven.", W + "Guitar"),
+ ("art", "easy", "Кто нарисовал «Мону Лизу»?", "Who painted the Mona Lisa?",
+  [("Микеланджело", "Michelangelo"), ("Леонардо да Винчи", "Leonardo da Vinci"), ("Ван Гог", "Van Gogh"), ("Рафаэль", "Raphael")], 1,
+  "В 1911 году картину украли из Лувра и искали больше двух лет.", "In 1911 it was stolen from the Louvre and missing for over two years.", W + "Mona_Lisa"),
+ ("art", "medium", "Кто написал музыку к балету «Лебединое озеро»?", "Who wrote the music for Swan Lake?",
+  [("Чайковский", "Tchaikovsky"), ("Моцарт", "Mozart"), ("Рахманинов", "Rachmaninoff"), ("Бетховен", "Beethoven")], 0,
+  "На первой постановке балет почти провалился, а теперь его знает весь мир.", "The first production nearly flopped; now the whole world knows it.", W + "Swan_Lake"),
+ ("art", "medium", "Сколько нот в гамме «до, ре, ми, фа, соль, ля, си»?", "How many notes are in the scale do, re, mi, fa, sol, la, ti?",
+  [("Пять", "Five"), ("Семь", "Seven"), ("Восемь", "Eight"), ("Двенадцать", "Twelve")], 1,
+  "Восьмая «до» — это уже начало следующей гаммы.", "The eighth \"do\" already starts the next scale.", W + "Solf%C3%A8ge"),
+ ("inventions", "easy", "Что изобрели, когда у инженера в кармане растаяла шоколадка?", "What was invented when a chocolate bar melted in an engineer's pocket?",
+  [("Холодильник", "The fridge"), ("Микроволновку", "The microwave oven"), ("Фен", "The hair dryer"), ("Пылесос", "The vacuum cleaner")], 1,
+  "Он стоял у радара. Первая микроволновка была ростом с человека.", "He was standing by a radar set. The first microwave oven was as tall as a person.", W + "Microwave_oven"),
+ ("inventions", "medium", "Для чего сначала придумали пупырчатую плёнку?", "What was bubble wrap first invented as?",
+  [("Как обои", "Wallpaper"), ("Для упаковки", "Packaging"), ("Как игрушку", "A toy"), ("Как скатерть", "A tablecloth")], 0,
+  "Обои не продавались, а упаковка — ещё как.", "Nobody bought the wallpaper; the packaging sold like mad.", W + "Bubble_wrap"),
+ ("science", "easy", "Где быстрее растает кубик льда: на металлической ложке или на деревянной доске?", "Where does an ice cube melt faster: on a metal spoon or on a wooden board?",
+  [("На металле", "On the metal"), ("На дереве", "On the wood"), ("Одинаково", "Just the same"), ("Лёд в комнате не тает", "Ice does not melt indoors")], 0,
+  "Металл кажется холоднее, но именно он быстрее отдаёт тепло льду.", "Metal feels colder, yet it is the one that passes heat to the ice faster.", W + "Thermal_conductivity"),
+ ("science", "easy", "Почему лёд не тонет в воде?", "Why does ice float on water?",
+  [("Он легче воды того же объёма", "It is lighter than as much water"), ("Его держит холод", "The cold holds it up"), ("В нём спрятан воздух", "It has air hidden in it"), ("Он тонет, просто медленно", "It sinks, just slowly")], 0,
+  "Замерзая, вода расширяется. Поэтому рыбы зимуют подо льдом, а не во льду.", "Water expands as it freezes. That is why fish can live under the ice in winter.", W + "Ice"),
+ ("science", "medium", "Что будет с надутым шариком в морозилке?", "What happens to a blown-up balloon in the freezer?",
+  [("Лопнет", "It pops"), ("Сожмётся", "It shrinks"), ("Надуется сильнее", "It grows bigger"), ("Ничего", "Nothing")], 1,
+  "Холодный воздух занимает меньше места. В тепле шарик снова расправится.", "Cold air takes up less room. Back in the warm, the balloon fills out again.", W + "Charles%27s_law"),
+]
+NEW_CV = [
+ ("earth", "Сколько градусов мороза измерили на станции Восток в Антарктиде в 1983 году?", "How many degrees below zero were measured at Vostok Station in Antarctica in 1983?",
+  89, (0, 150), 1, 40, ("° мороза", "degrees below zero"),
+  "При таком морозе мыльный пузырь замерзает и падает, как стеклянный шарик.", "In that cold a soap bubble freezes and falls like a glass ball.", W + "Vostok_Station"),
+ ("sea", "Сколько килограммов весит язык синего кита?", "How many kilograms does a blue whale's tongue weigh?",
+  2700, (100, 10000), 50, 2500, ("кг", "kg"),
+  "Примерно как целый слон.", "About as much as a whole elephant.", W + "Blue_whale"),
+ ("myths", "Какого роста был Наполеон, в сантиметрах?", "How tall was Napoleon, in centimetres?",
+  169, (140, 200), 1, 20, ("см", "cm"),
+  "Обычный рост для француза того времени. Маленьким его сделали карикатуры.", "An ordinary height for a Frenchman of his day. Cartoons made him small.", W + "Napoleon"),
+ ("myths", "Сколько миллионов лет назад вымерли динозавры?", "How many million years ago did the dinosaurs die out?",
+  66, (1, 200), 1, 50, ("млн лет", "million years"),
+  "Первые люди появились лишь около 300 тысяч лет назад: на динозаврах никто не катался.", "The first humans only appeared about 300,000 years ago: nobody ever rode a dinosaur.", W + "Cretaceous%E2%80%93Paleogene_extinction_event"),
+ ("body", "Сколько костей у новорождённого малыша?", "How many bones does a newborn baby have?",
+  300, (50, 600), 5, 150, ("костей", "bones"),
+  "У взрослого их 206: многие кости со временем срастаются.", "An adult has 206: many of the bones grow together over time.", W + "Human_skeleton"),
+ ("body", "Сколько раз за день моргает человек?", "How many times a day does a person blink?",
+  15000, (100, 50000), 100, 12000, ("раз", "times"),
+  "Около 15 раз в минуту, а за жизнь моргание занимает несколько лет с закрытыми глазами.", "About 15 times a minute: over a lifetime that adds up to years with your eyes shut.", W + "Blinking"),
+ ("cartoons", "В каком году вышел первый «Шрек»?", "In which year did the first Shrek come out?",
+  2001, (1980, 2020), 1, 15, ("год", "year"),
+  "Сначала Шрек был героем детской книжки с картинками.", "Shrek began as the hero of a children's picture book.", W + "Shrek"),
+ ("books", "Сколько лет было Пушкину, когда он закончил «Руслана и Людмилу»?", "How old was Pushkin when he finished Ruslan and Lyudmila?",
+  21, (5, 80), 1, 10, ("лет", "years old"),
+  "Он начал поэму ещё школьником, в Царскосельском лицее.", "He started the poem while still a schoolboy at the Lyceum.", W + "Ruslan_and_Ludmila"),
+ ("art", "Сколько струн у большой концертной арфы?", "How many strings does a big concert harp have?",
+  47, (5, 150), 1, 25, ("струн", "strings"),
+  "Чтобы арфист не запутался, все струны «до» красят в красный цвет.", "So the harpist does not get lost, every C string is coloured red.", W + "Pedal_harp"),
+ ("inventions", "В каком году впервые позвонили по мобильному телефону?", "In which year was the first mobile phone call made?",
+  1973, (1900, 2010), 1, 25, ("год", "year"),
+  "Изобретатель первым делом позвонил конкуренту, похвастаться.", "The inventor's first call was to a rival company, to brag.", W + "Mobile_phone"),
+ ("inventions", "Сколько граммов весил первый мобильный телефон?", "How many grams did the first mobile phone weigh?",
+  1100, (50, 5000), 10, 1000, ("г", "g"),
+  "Больше килограмма, а заряда хватало на полчаса разговора.", "Over a kilogram, and the battery lasted half an hour of talking.", W + "Motorola_DynaTAC"),
+ ("science", "При какой температуре закипает вода на вершине Эвереста?", "At what temperature does water boil on top of Everest?",
+  70, (0, 100), 1, 25, ("°C", "°C"),
+  "Воздух там редкий, поэтому вода кипит раньше, а макароны варятся вечность.", "The air is thin up there, so water boils sooner and pasta takes forever.", W + "Boiling_point"),
+]
+
 def loc(ru, en): return {"ru": ru, "en": en}
 
-errs = []
-questions = []
-for topic in MC:
-    for (qid, diff, ru, en, opts, correct, fru, fen, src) in MC[topic]:
-        q = {"id": qid, "topic": topic, "format": "multipleChoice", "difficulty": diff, "text": loc(ru, en),
-             "options": [loc(a, b) for a, b in opts], "correct": correct, "fact": loc(fru, fen), "source": src}
-        questions.append(q)
-        if len(ru) > 120 or len(en) > 120: errs.append(qid + " text too long %d/%d" % (len(ru), len(en)))
-        for a, b in opts:
-            if len(a) > 40 or len(b) > 40: errs.append(qid + " option too long: " + a + " / " + b)
-        if len(fru) > 160 or len(fen) > 160: errs.append(qid + " fact too long %d/%d" % (len(fru), len(fen)))
-    for (qid, ru, en, ans, rng, step, tol, unit, fru, fen, src) in CV[topic]:
-        q = {"id": qid, "topic": topic, "format": "closestValue", "difficulty": "hard", "text": loc(ru, en),
-             "answer": ans, "range": list(rng), "step": step, "tolerance": tol, "unit": loc(*unit), "fact": loc(fru, fen), "source": src}
-        questions.append(q)
-        if not (rng[0] < ans < rng[1]): errs.append(qid + " answer not strictly inside range")
-        if len(ru) > 120 or len(en) > 120: errs.append(qid + " text too long %d/%d" % (len(ru), len(en)))
-        if len(fru) > 160 or len(fen) > 160: errs.append(qid + " fact too long %d/%d" % (len(fru), len(fen)))
-ids = [q["id"] for q in questions]
-if len(ids) != len(set(ids)): errs.append("duplicate ids")
-race = [{"id": "race_%03d" % (i + 1), "statement": loc(ru, en), "answer": a, "source": s} for i, (ru, en, a, s) in enumerate(RACE)]
-for r in race:
-    if len(r["statement"]["ru"]) > 120 or len(r["statement"]["en"]) > 120: errs.append(r["id"] + " too long")
 
-if errs:
-    print("\n".join(errs)); sys.exit(1)
-root = sys.argv[1]
-def dump(name, data):
-    with open(root + "/content/" + name, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2); f.write("\n")
-dump("questions.json", questions)
-dump("race.json", race)
-topics = json.load(open(root + "/content/topics.json", encoding="utf-8"))
-for t in topics:
-    if t["id"] in TOPICS: t["title"] = loc(*TOPICS[t["id"]])
-dump("topics.json", topics)
-from collections import Counter
-print(len(questions), "questions", Counter((q["format"], q["difficulty"]) for q in questions), len(race), "race statements")
+def main():
+    errs = []
+    prefix = {t[0]: t[1] for t in TOPICS}
+    found = {}
+    for topic in MC:
+        for q in MC[topic]:
+            found[q[0]] = ("mc", q)
+        for q in CV[topic]:
+            found[q[0]] = ("cv", q)
+    entries = []      # (topic, kind, data without the id)
+    for old, (kind, q) in found.items():
+        if old in DROPPED:
+            continue
+        if old not in REMAP:
+            errs.append("no topic for " + old)
+            continue
+        entries.append((REMAP[old], kind, q[1:]))
+    entries += [(q[0], "mc", q[1:]) for q in NEW_MC]
+    entries += [(q[0], "cv", q[1:]) for q in NEW_CV]
+    order = {t[0]: i for i, t in enumerate(TOPICS)}
+    entries.sort(key=lambda e: (order[e[0]], e[1] == "cv", {"easy": 0, "medium": 1}.get(e[2][0], 2)))
+    count = {}
+    questions = []
+    for topic, kind, d in entries:
+        count[topic] = count.get(topic, 0) + 1
+        qid = "%s_%03d" % (prefix[topic], count[topic])
+        if kind == "mc":
+            diff, ru, en, opts, correct, fru, fen, src = d
+            q = {"id": qid, "topic": topic, "format": "multipleChoice", "difficulty": diff, "text": loc(ru, en),
+                 "options": [loc(a, b) for a, b in opts], "correct": correct, "fact": loc(fru, fen), "source": src}
+            for a, b in opts:
+                if len(a) > 40 or len(b) > 40: errs.append(qid + " option too long: " + a + " / " + b)
+        else:
+            ru, en, ans, rng, step, tol, unit, fru, fen, src = d
+            q = {"id": qid, "topic": topic, "format": "closestValue", "difficulty": "hard", "text": loc(ru, en),
+                 "answer": ans, "range": list(rng), "step": step, "tolerance": tol, "unit": loc(*unit), "fact": loc(fru, fen), "source": src}
+            if not (rng[0] < ans < rng[1]): errs.append(qid + " answer not strictly inside range")
+            # Room on the slider around the answer (two steps below, six above), and a lazy guess at either end of the
+            # slider must score nothing.
+            if ans - 2 * step < rng[0] or ans + 6 * step > rng[1]: errs.append(qid + " answer too close to an end of the slider")
+            # A guess six steps off still scores.
+            if tol <= 6 * step: errs.append(qid + " tolerance must be more than six steps")
+            if tol >= min(ans - rng[0], rng[1] - ans): errs.append(qid + " tolerance reaches an end of the slider")
+        if len(ru) > 120 or len(en) > 120: errs.append(qid + " text too long %d/%d" % (len(ru), len(en)))
+        if len(fru) > 160 or len(fen) > 160: errs.append(qid + " fact too long %d/%d" % (len(fru), len(fen)))
+        questions.append(q)
+    # Every topic must fill a round: easy and medium multiple choice, hard closest value.
+    for t in TOPICS:
+        qs = [q for q in questions if q["topic"] == t[0]]
+        e = sum(1 for q in qs if q["difficulty"] == "easy")
+        m = sum(1 for q in qs if q["difficulty"] == "medium")
+        h = sum(1 for q in qs if q["format"] == "closestValue")
+        if e < 2 or m < 2 or h < 2: errs.append("%s is thin: %d easy, %d medium, %d hard" % (t[0], e, m, h))
+    race = [{"id": "race_%03d" % (i + 1), "statement": loc(ru, en), "answer": a, "source": s} for i, (ru, en, a, s) in enumerate(RACE)]
+    for r in race:
+        if len(r["statement"]["ru"]) > 120 or len(r["statement"]["en"]) > 120: errs.append(r["id"] + " too long")
+    if errs:
+        print("\n".join(errs))
+        sys.exit(1)
+
+    root = sys.argv[1] if len(sys.argv) > 1 else "."
+    def dump(name, data):
+        with open(root + "/content/" + name, "w", encoding="utf-8", newline="\n") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+    dump("questions.json", questions)
+    dump("race.json", race)
+    topics = [{"id": t[0], "title": loc(t[2], t[3])} for t in TOPICS] + [{"id": MIXED[0], "title": loc(MIXED[1], MIXED[2]), "mixed": True}]
+    dump("topics.json", topics)
+    from collections import Counter
+    print(len(questions), "questions in", len(TOPICS), "topics,", len(race), "race statements;",
+          dict(Counter((q["format"], q["difficulty"]) for q in questions)))
+
+
+main()

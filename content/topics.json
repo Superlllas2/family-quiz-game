@@ -1,51 +1,100 @@
 [
   {
-    "id": "geography",
+    "id": "world",
     "title": {
       "ru": "Вокруг света",
       "en": "Around the world"
     }
   },
   {
-    "id": "history",
+    "id": "earth",
     "title": {
-      "ru": "Машина времени",
-      "en": "Time machine"
+      "ru": "Земля и погода",
+      "en": "Earth and weather"
     }
   },
   {
-    "id": "science",
-    "title": {
-      "ru": "Как это устроено",
-      "en": "How things work"
-    }
-  },
-  {
-    "id": "nature",
+    "id": "animals",
     "title": {
       "ru": "Странные звери",
       "en": "Weird animals"
     }
   },
   {
-    "id": "food",
+    "id": "sea",
+    "title": {
+      "ru": "Под водой",
+      "en": "Under the sea"
+    }
+  },
+  {
+    "id": "kitchen",
     "title": {
       "ru": "Что на ужин",
       "en": "What's for dinner"
     }
   },
   {
-    "id": "sport",
+    "id": "timemachine",
+    "title": {
+      "ru": "Машина времени",
+      "en": "Time machine"
+    }
+  },
+  {
+    "id": "myths",
+    "title": {
+      "ru": "Мифы и враньё",
+      "en": "Myths and nonsense"
+    }
+  },
+  {
+    "id": "body",
+    "title": {
+      "ru": "Как устроен человек",
+      "en": "The human body"
+    }
+  },
+  {
+    "id": "records",
     "title": {
       "ru": "Спорт и рекорды",
       "en": "Sport and records"
     }
   },
   {
-    "id": "culture",
+    "id": "cartoons",
     "title": {
-      "ru": "Мультики, книги, кино",
-      "en": "Cartoons, books, films"
+      "ru": "Мультики нашего детства",
+      "en": "Cartoons we grew up with"
+    }
+  },
+  {
+    "id": "books",
+    "title": {
+      "ru": "Книги и сказки",
+      "en": "Books and fairy tales"
+    }
+  },
+  {
+    "id": "art",
+    "title": {
+      "ru": "Музыка и картины",
+      "en": "Music and paintings"
+    }
+  },
+  {
+    "id": "inventions",
+    "title": {
+      "ru": "Кто это придумал?",
+      "en": "Who invented that?"
+    }
+  },
+  {
+    "id": "science",
+    "title": {
+      "ru": "Как это работает",
+      "en": "How things work"
     }
   },
   {

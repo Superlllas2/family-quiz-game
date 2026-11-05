@@ -380,8 +380,10 @@ namespace FamilyQuiz.Tests
         [Test]
         public void TheBankMustHoldOneGame()
         {
+            // One good question on a real topic of the bank: the rest of a game cannot be filled.
+            string topic = TestContent.Content().Topics.First(t => !t.Mixed).Id;
             var ex = Assert.Throws<ContentException>(() => new ContentLoader(name => name == QuestionLoader.FileName
-                ? "[" + GoodQuestion + "]"
+                ? "[" + Question(GoodQuestion, q => q["topic"] = topic) + "]"
                 : TestContent.Read(name)).Load());
             Assert.That(ex.Message, Does.Contain("multipleChoice questions of difficulty medium"));
         }
