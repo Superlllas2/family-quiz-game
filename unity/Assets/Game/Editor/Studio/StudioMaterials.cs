@@ -125,22 +125,38 @@ namespace FamilyQuiz.EditorTools.Studio
             return new Dictionary<string, Spec>
             {
                 // Photo scanned sets (smoothness is a scale on the scan's own roughness), procedural fallbacks.
-                ["M_FloorWood"] = Varied(Scan("wood_floor_worn", 2f, 0.85f, 0.8f, new Color(0.78f, 0.6f, 0.5f), false,
+                // Cozy pass (Nov 5, 2026): the tints pull the red out of the scans so the woods read brown, each a
+                // different tone (honey floor, dark brown walls, near black walnut trim, a lighter walnut for the desk
+                // and the tables), and every wood is matte.
+                ["M_FloorWood"] = Varied(Scan("wood_floor_worn", 2f, 0.68f, 0.8f, new Color(0.62f, 0.55f, 0.5f), false,
                     Tex("FloorWood", 2f, 0.4f, "FloorWood_N")), 7f),
-                ["M_WoodPanel"] = Varied(Scan("dark_wood", 2f, 0.55f, 0.6f, new Color(0.62f, 0.52f, 0.48f), false,
+                ["M_WoodPanel"] = Varied(Scan("dark_wood", 2f, 0.45f, 0.6f, new Color(0.43f, 0.42f, 0.43f), false,
                     Tex("WoodPanel", 1.2f, 0.32f, "WoodPanel_N")), 5f),
-                ["M_WoodDark"] = Scan("walnut_veneer", 1.8f, 0.7f, 0.6f, new Color(0.42f, 0.33f, 0.28f), false,
+                ["M_WoodDark"] = Scan("walnut_veneer", 1.8f, 0.6f, 0.6f, new Color(0.38f, 0.32f, 0.29f), false,
                     Tex("WoodDark", 1f, 0.34f, "WoodDark_N")),
-                ["M_WoodWarm"] = Scan("rosewood_veneer1", 1.6f, 0.8f, 0.6f, new Color(0.95f, 0.85f, 0.8f), false,
-                    Tex("WoodWarm", 0.7f, 0.42f, "WoodWarm_N")),
+                ["M_WoodWarm"] = Varied(Scan("walnut_veneer", 1.2f, 0.62f, 0.7f, new Color(0.82f, 0.68f, 0.56f), false,
+                    Tex("WoodWarm", 0.7f, 0.42f, "WoodWarm_N")), 1.5f),
                 ["M_StageFloor"] = Scan("dark_wooden_planks", 2f, 0.6f, 0.8f, new Color(0.8f, 0.75f, 0.72f), false,
                     Tex("WoodDark", 1.5f, 0.28f, "WoodDark_N", new Color(0.7f, 0.7f, 0.7f))),
-                ["M_FabricSofa"] = Scan("poly_wool_herringbone", 0.27f, 0.45f, 1f, new Color(0.19f, 0.29f, 0.24f), true,
-                    Tex("Fabric", 0.25f, 0.12f, "Fabric_N", new Color(0.19f, 0.29f, 0.24f))),
-                ["M_FabricChair"] = Scan("fabric_leather_02", 0.5f, 0.75f, 0.8f, new Color(0.85f, 0.7f, 0.6f), false,
-                    Tex("Fabric", 0.25f, 0.12f, "Fabric_N", new Color(0.40f, 0.25f, 0.16f))),
-                ["M_Velvet"] = Scan("velour_velvet", 0.28f, 0.55f, 0.8f, new Color(0.07f, 0.3f, 0.21f), true,
-                    Tex("Velvet", 0.6f, 0.4f, null, new Color(0.08f, 0.32f, 0.23f))),
+                // Woven, matte upholstery with a soft colour drift so no cushion is perfectly uniform: the sofa a muted
+                // dark green, the armchairs two browns (rust outside, chocolate inside) so they are not a matched set.
+                ["M_FabricSofa"] = Varied(Scan("poly_wool_herringbone", 0.27f, 0.38f, 1f, new Color(0.19f, 0.28f, 0.23f), true,
+                    Tex("Fabric", 0.25f, 0.12f, "Fabric_N", new Color(0.19f, 0.29f, 0.24f))), 0.9f),
+                ["M_FabricChair"] = Varied(Scan("poly_wool_herringbone", 0.22f, 0.4f, 1f, new Color(0.44f, 0.25f, 0.15f), true,
+                    Tex("Fabric", 0.25f, 0.12f, "Fabric_N", new Color(0.40f, 0.25f, 0.16f))), 0.8f),
+                ["M_FabricChair2"] = Varied(Scan("poly_wool_herringbone", 0.24f, 0.4f, 1f, new Color(0.36f, 0.24f, 0.16f), true,
+                    Tex("Fabric", 0.25f, 0.12f, "Fabric_N", new Color(0.28f, 0.18f, 0.12f))), 0.8f),
+                // A deep, muted teal velvet curtain (D93 as amended by Ilia, Nov 5, 2026).
+                ["M_Velvet"] = Scan("velour_velvet", 0.28f, 0.5f, 0.8f, new Color(0.045f, 0.19f, 0.2f), true,
+                    Tex("Velvet", 0.6f, 0.4f, null, new Color(0.05f, 0.2f, 0.21f))),
+                // A folded wool throw on the sofa arm: oatmeal, so it reads against the green.
+                ["M_Blanket"] = Varied(Scan("poly_wool_herringbone", 0.18f, 0.3f, 1.2f, new Color(0.55f, 0.48f, 0.38f), true,
+                    Plain(new Color(0.55f, 0.48f, 0.38f), 0.1f)), 0.6f),
+                // Throw pillows: a dusty mustard and a muted rust, woven.
+                ["M_PillowA"] = Scan("poly_wool_herringbone", 0.15f, 0.35f, 1f, new Color(0.5f, 0.38f, 0.16f), true,
+                    Plain(new Color(0.5f, 0.38f, 0.16f), 0.1f)),
+                ["M_PillowB"] = Scan("velour_velvet", 0.2f, 0.45f, 0.8f, new Color(0.36f, 0.17f, 0.12f), true,
+                    Plain(new Color(0.36f, 0.17f, 0.12f), 0.2f)),
                 // The board stays plain and dark: the question overlay sits on it (D92).
                 ["M_Board"] = Tex("Board", 1f, 0.08f),
                 ["M_BackCloth"] = Scan("velour_velvet", 0.28f, 0.3f, 0.6f, new Color(0.025f, 0.025f, 0.03f), true,
@@ -156,6 +172,10 @@ namespace FamilyQuiz.EditorTools.Studio
                 ["M_Ceramic"] = Plain(new Color(0.85f, 0.82f, 0.76f), 0.7f),
                 ["M_Glass"] = new Spec { Color = new Color(0.02f, 0.022f, 0.026f), Smoothness = 0.97f, GlassAlpha = 0.16f },   // dark: only reflections show
                 ["M_Paper"] = Plain(new Color(0.9f, 0.88f, 0.82f), 0.1f),
+                ["M_CueCard"] = Plain(new Color(0.86f, 0.82f, 0.7f), 0.08f),
+                ["M_Cork"] = Plain(new Color(0.48f, 0.36f, 0.24f), 0.05f),
+                ["M_MugA"] = Plain(new Color(0.16f, 0.24f, 0.3f), 0.55f),
+                ["M_MugB"] = Plain(new Color(0.62f, 0.3f, 0.18f), 0.55f),
                 ["M_Leather"] = Scan("brown_leather", 0.4f, 0.8f, 0.8f, new Color(0.6f, 0.45f, 0.38f), false,
                     Plain(new Color(0.18f, 0.1f, 0.07f), 0.45f)),
                 ["M_Pot"] = Plain(new Color(0.55f, 0.3f, 0.2f), 0.3f),
@@ -177,7 +197,8 @@ namespace FamilyQuiz.EditorTools.Studio
                 ["M_CanLens"] = Glow(new Color(1f, 0.8f, 0.55f) * 2.2f, new Color(0.2f, 0.18f, 0.15f), false, 0.9f),
                 ["M_Bulb"] = Glow(new Color(1f, 0.78f, 0.52f) * 10f, Color.white),
                 ["M_LampShade"] = Glow(new Color(1f, 0.66f, 0.36f) * 1.4f, new Color(0.9f, 0.8f, 0.62f), true, 0.2f),
-                ["M_LampShadeGreen"] = Glow(new Color(0.12f, 0.45f, 0.24f) * 0.7f, new Color(0.08f, 0.3f, 0.16f), true, 0.9f),
+                // The banker's lamp shade: dark green glass, glowing only faintly from the bulb inside.
+                ["M_LampShadeGreen"] = Glow(new Color(0.08f, 0.3f, 0.18f) * 0.35f, new Color(0.05f, 0.2f, 0.12f), true, 0.85f),
                 ["M_City"] = new Spec
                 {
                     // build_studio.py fits the backdrop's UVs to 0..1 itself.

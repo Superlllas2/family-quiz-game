@@ -288,13 +288,14 @@ namespace FamilyQuiz.EditorTools.Studio
             for (int i = 0; i < px.Length; i++) px[i] = new Color(0.004f, 0.005f, 0.009f, 1f);
             for (int f = 0; f < floors; f++)
             {
-                double floorLit = rng.NextDouble() < 0.2 ? 0.05 : 0.25 + rng.NextDouble() * 0.45;
+                // Late at night: about a quarter of the windows lit, a third of those cool (screens, offices).
+                double floorLit = rng.NextDouble() < 0.25 ? 0.04 : 0.12 + rng.NextDouble() * 0.3;
                 for (int c = 0; c < cols; c++)
                 {
                     bool lit = rng.NextDouble() < floorLit;
                     float warmth = (float)rng.NextDouble();
                     Color glass = lit
-                        ? (rng.NextDouble() < 0.18 ? new Color(0.5f, 0.66f, 0.95f) : Color.Lerp(new Color(1f, 0.55f, 0.24f), new Color(1f, 0.85f, 0.58f), warmth))
+                        ? (rng.NextDouble() < 0.32 ? new Color(0.5f, 0.66f, 0.95f) : Color.Lerp(new Color(1f, 0.55f, 0.24f), new Color(1f, 0.85f, 0.58f), warmth))
                           * (0.45f + (float)rng.NextDouble() * 0.6f)
                         : new Color(0.012f, 0.016f, 0.03f);
                     glass.a = 1f;

@@ -32,3 +32,4 @@ Date: Nov 4, 2026. Decided by Ilia after a review of the reference pictures. The
 | The 3D set adds no time: every staging extra stays 0 and the core is untouched apart from reading the new config key; a full scripted game passed with it on | 21 |
 | Photo scanned CC0 textures from Poly Haven for the set's wood, fabric, leather, velvet and carpet, downloaded by `tools/fetch_textures.mjs` into `Assets/Game/Art/Textures/Scanned` with a license log there; about 58 MB in the repo with the masks and grey copies made from them, no large file storage (authorized by Ilia, Nov 5, 2026) | 21 |
 | The on/off switch of 0015 is a toggle in the TV settings panel: on shows the 3D set behind the overlay, off shows the current flat views (confirmed by Ilia) | 21, Presentation |
+| **Amended Nov 5, 2026 by Ilia:** the curtain is a deep, muted teal velvet instead of deep green (still no bulb arch, which is what D93 removes) | 21 |

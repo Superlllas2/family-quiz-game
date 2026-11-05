@@ -54,7 +54,7 @@ namespace FamilyQuiz.EditorTools.Studio
                         Accent = new Color(1f, 0.72f, 0.48f), AccentIntensity = 7f, Strip = new Color(1f, 0.68f, 0.42f),
                         Window = new Color(0.45f, 0.58f, 1f), WindowIntensity = 3.2f,
                         Fill = new Color(0.96f, 0.93f, 0.9f), FillIntensity = 3f,
-                        Key = new Color(1f, 0.93f, 0.84f), StageLamp = new Color(1f, 0.9f, 0.76f), StageLampIntensity = 26f,
+                        Key = new Color(1f, 0.93f, 0.84f), StageLamp = new Color(1f, 0.9f, 0.76f), StageLampIntensity = 24f,
                         Rim = new Color(0.78f, 0.86f, 1f),
                         Ambient = new Color(0.05f, 0.055f, 0.07f), CityEmission = 1f,
                         Contrast = 5f, Saturation = -6f, Temperature = 1f

@@ -45,7 +45,7 @@ namespace FamilyQuiz.EditorTools.Studio
                 if (args.Contains("-textures") || args.Contains("-procTextures") || !File.Exists(StudioTextures.Folder + "/Rug3.png"))
                     StudioTextures.GenerateAll();
                 if (args.Contains("-textures")) StudioScans.PrepareAll(true);
-                if (args.Contains("-textures") || !File.Exists(StudioTextures.Folder + "/CityWindows.png")) StudioTextures.CityWindows();
+                if (args.Contains("-textures") || args.Contains("-procTextures") || !File.Exists(StudioTextures.Folder + "/CityWindows.png")) StudioTextures.CityWindows();
                 // -captureOnly renders the saved scene without rebuilding it; -hide <name> hides one object first.
                 if (!args.Contains("-captureOnly")) Build(StudioLooks.Get(look), bake);
                 string capture = Arg(args, "-capture");
@@ -80,8 +80,8 @@ namespace FamilyQuiz.EditorTools.Studio
             materials["M_City"].SetColor("_EmissionColor", Color.white * look.CityEmission);
             // The near blocks a little dimmer and cooler than the skyline, so the window reads as a night city, not a
             // wall of lit windows.
-            materials["M_CityBuilding"].SetColor("_EmissionColor", new Color(0.82f, 0.88f, 1f) * look.CityEmission * 0.6f);
-            materials["M_CityBuildingFar"].SetColor("_EmissionColor", new Color(0.7f, 0.78f, 1f) * look.CityEmission * 0.4f);
+            materials["M_CityBuilding"].SetColor("_EmissionColor", new Color(0.82f, 0.88f, 1f) * look.CityEmission * 0.42f);
+            materials["M_CityBuildingFar"].SetColor("_EmissionColor", new Color(0.7f, 0.78f, 1f) * look.CityEmission * 0.3f);
             materials["M_GlowStrip"].SetColor("_EmissionColor", look.Strip * 0.6f);
             materials["M_Bulb"].SetColor("_EmissionColor", Color.Lerp(look.Practical, Color.white, 0.35f) * 10f);
 
@@ -220,7 +220,7 @@ namespace FamilyQuiz.EditorTools.Studio
                     {
                         var target = Find(markers, "LT_Board").position;
                         // A wide soft cone: on the closed curtain it makes a soft pool instead of a hard oval.
-                        var l = Spot(parent, pair.Key, at, target, look.StageLamp, look.StageLampIntensity, 12f, 44f, LightmapBakeType.Realtime);
+                        var l = Spot(parent, pair.Key, at, target, look.StageLamp, look.StageLampIntensity, 12f, 50f, LightmapBakeType.Realtime);
                         l.innerSpotAngle = 4f;
                         l.shadows = LightShadows.None;
                         var lamps = (rig.StageLamps ?? new Light[0]).ToList();
@@ -257,12 +257,12 @@ namespace FamilyQuiz.EditorTools.Studio
                 else if (name == "BandTop")
                 {
                     // A warm light over the band riser.
-                    Spot(parent, name, at, target, look.Practical, 60f, 10f, 70f, LightmapBakeType.Baked);
+                    Spot(parent, name, at, target, look.Practical, 80f, 10f, 70f, LightmapBakeType.Baked);
                 }
                 else if (name == "BandFront")
                 {
                     // A soft front light on the instruments, so they read from the Wide and Establish shots.
-                    Spot(parent, name, at, target, look.Key, 34f, 10f, 60f, LightmapBakeType.Baked).shadowRadius = 0.4f;
+                    Spot(parent, name, at, target, look.Key, 80f, 12f, 55f, LightmapBakeType.Baked).shadowRadius = 0.4f;
                 }
                 else if (name.StartsWith("Rim"))
                 {
@@ -273,7 +273,7 @@ namespace FamilyQuiz.EditorTools.Studio
                 else if (name == "CurtainWash")
                 {
                     // A soft realtime wash on the curtain (it moves, so it cannot be baked).
-                    var wash = Spot(parent, name, at, target, look.StageLamp, 80f, 12f, 56f, LightmapBakeType.Realtime);
+                    var wash = Spot(parent, name, at, target, look.StageLamp, 100f, 12f, 60f, LightmapBakeType.Realtime);
                     wash.shadows = LightShadows.None;
                     wash.innerSpotAngle = 10f;
                 }

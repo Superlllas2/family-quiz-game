@@ -14,7 +14,7 @@ The TV shows a 3D late night talk show set. The players are the guests, each pla
 
   | Seen in the reference footage | In our set |
   | --- | --- |
-  | A teal curtain inside an arch of light bulbs | A deep green velvet curtain, lit by plain stage lamps on stands |
+  | A teal curtain inside an arch of light bulbs | A deep, muted teal velvet curtain in a wooden arch with no bulbs, lit by plain stage lamps on stands (teal instead of deep green: Ilia, Nov 5, 2026) |
   | The show's logo projected on the floor | A worn wooden floor with rugs, no projection |
   | A recognizable Moscow skyline | An invented evening city |
   | A desk built from stacked wood blocks | A ribbed wooden desk with a warm light strip under the top |

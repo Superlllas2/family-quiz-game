@@ -164,6 +164,16 @@ class Piece:
         return obj
 
 
+def sag(piece, verts, depth):
+    """Presses the top face of a cushion box down towards its front edge (the side at lower y), by up to depth."""
+    top = max(v.co.z for v in verts)
+    tops = [v for v in verts if v.co.z >= top - 1e-6]
+    y0 = min(v.co.y for v in tops)
+    y1 = max(v.co.y for v in tops)
+    for v in tops:
+        v.co.z -= depth * (1.0 - (v.co.y - y0) / max(1e-6, y1 - y0))
+
+
 def empty(name, loc, yaw=0.0):
     obj = bpy.data.objects.new(name, None)
     obj.empty_display_type = "ARROWS"
@@ -569,7 +579,8 @@ def build_guest_area():
     w = (inner1 - inner0) / 4
     for i in range(4):
         a, b = inner0 + i * w + 0.01, inner0 + (i + 1) * w - 0.01
-        cushions.box(a, b, sy0 + 0.01, sy1 - 0.2, seat_z + 0.34, seat_z + 0.52, "M_FabricSofa")     # seat cushion
+        v = cushions.box(a, b, sy0 + 0.01, sy1 - 0.2, seat_z + 0.34, seat_z + 0.52, "M_FabricSofa")     # seat cushion
+        sag(cushions, v, (0.012, 0.022, 0.016, 0.01)[i])          # worn in, each a little differently
         cushions.box(a, b, sy1 - 0.4, sy1 - 0.2, seat_z + 0.5, seat_z + 0.88, "M_FabricSofa")      # back cushion
     for x in [sofa_x0 + 0.08, sofa_x1 - 0.08]:
         for y in [sy0 + 0.08, sy1 - 0.08]:
@@ -588,15 +599,19 @@ def build_guest_area():
     arm_specs = [(-8.3, 2.82, math.radians(21)), (-7.18, 3.08, math.radians(11)),
                  (-2.1, 3.1, math.radians(-13)), (-1.02, 2.86, math.radians(-24))]
     seat_points = []
-    for cx, cy, yaw in arm_specs:
+    for k, (cx, cy, yaw) in enumerate(arm_specs):
         p = (cx, cy + 0.45, 0)
         cw, cd = 0.88, 0.9
         x0, x1, y0, y1 = cx - cw / 2, cx + cw / 2, cy, cy + cd
-        chairs.box(x0, x1, y0, y1, seat_z + 0.14, seat_z + 0.38, "M_FabricChair", yaw, p)
-        chairs.box(x0, x0 + 0.13, y0, y1, seat_z + 0.14, seat_z + 0.62, "M_FabricChair", yaw, p)
-        chairs.box(x1 - 0.13, x1, y0, y1, seat_z + 0.14, seat_z + 0.62, "M_FabricChair", yaw, p)
-        chairs.box(x0 + 0.13, x1 - 0.13, y1 - 0.18, y1, seat_z + 0.38, seat_z + 0.9, "M_FabricChair", yaw, p)
-        chair_cushions.box(x0 + 0.13, x1 - 0.13, y0 + 0.01, y1 - 0.16, seat_z + 0.36, seat_z + 0.54, "M_FabricChair", yaw, p)
+        fab = "M_FabricChair" if k in (0, 3) else "M_FabricChair2"   # the outer and the inner pair differ
+        chairs.box(x0, x1, y0, y1, seat_z + 0.14, seat_z + 0.38, fab, yaw, p)
+        chairs.box(x0, x0 + 0.13, y0, y1, seat_z + 0.14, seat_z + 0.62, fab, yaw, p)
+        chairs.box(x1 - 0.13, x1, y0, y1, seat_z + 0.14, seat_z + 0.62, fab, yaw, p)
+        chairs.box(x0 + 0.13, x1 - 0.13, y1 - 0.18, y1, seat_z + 0.38, seat_z + 0.9, fab, yaw, p)
+        # The seat cushion sits a little lower at the front, as if it has been sat in.
+        v = chair_cushions.box(x0 + 0.13, x1 - 0.13, y0 + 0.01, y1 - 0.16, seat_z + 0.36, seat_z + 0.54, fab)
+        sag(chair_cushions, v, 0.018)
+        bmesh.ops.rotate(chair_cushions.bm, cent=p, matrix=Matrix.Rotation(yaw, 3, "Z"), verts=v)
         for lx in [x0 + 0.07, x1 - 0.07]:
             for ly in [y0 + 0.07, y1 - 0.07]:
                 v = chair_legs.cyl((lx, ly, seat_z + 0.07), 0.025, 0.14, "M_WoodWarm", segments=10, radius2=0.018)
@@ -896,10 +911,10 @@ def build_stage():
     val.grid(pts, nu, 1, "M_Velvet")
     vobj = val.build()
     sol = vobj.modifiers.new("Thick", "SOLIDIFY")
-    sol.thickness = 0.015
+    sol.thickness = 0.03
 
     # Stage lamps on stands at both front corners, aimed at the board.
-    for i, (x, y) in enumerate([(2.35, 2.6), (8.65, 2.6)]):
+    for i, (x, y) in enumerate([(2.6, 2.15), (8.4, 2.15)]):   # forward and in, so the beams clear the arch
         build_stage_lamp("StageLamp%d" % (i + 1), x, y, i + 1)
 
 
@@ -916,8 +931,8 @@ def build_curtain_half(name, edge_x, sign, width):
     for j in range(nv + 1):
         t = j / nv                        # 0 at the hem, 1 at the top
         z_base = z0 + (z1 - z0) * t
-        period = 0.24 - 0.05 * t          # metres per fold
-        amp = 0.075 - 0.035 * t
+        period = 0.27 - 0.06 * t          # metres per fold: heavy cloth makes fewer, deeper folds
+        amp = 0.095 - 0.045 * t
         for i in range(nu + 1):
             u = i / nu
             d = width * u
@@ -935,7 +950,7 @@ def build_curtain_half(name, edge_x, sign, width):
     cur.grid(pts, nu, nv, "M_Velvet")
     obj = cur.build(origin=(edge_x, CURTAIN_Y, z0))
     sol = obj.modifiers.new("Thick", "SOLIDIFY")
-    sol.thickness = 0.012
+    sol.thickness = 0.028                 # heavy lined velvet
     return obj
 
 
