@@ -39,6 +39,8 @@ namespace FamilyQuiz.EditorTools.Studio
             public Vector2 DetailTiling = Vector2.one;
             /// <summary>Above 0: an alpha blended transparent surface (glass) with this alpha.</summary>
             public float GlassAlpha;
+            /// <summary>Set: the Velvet shader's sheen (edges brighter by x, face on darker by y, falloff power z).</summary>
+            public Vector3? Sheen;
         }
 
         /// <summary>
@@ -90,6 +92,12 @@ namespace FamilyQuiz.EditorTools.Studio
             if (s.Mask == null) return s;
             s.DetailAlbedo = Scanned(StudioScans.Variation + ".png");
             s.DetailTiling = Vector2.one / metres;
+            return s;
+        }
+
+        private static Spec Sheened(Spec s, Vector3 sheen)
+        {
+            s.Sheen = sheen;
             return s;
         }
 
@@ -147,8 +155,8 @@ namespace FamilyQuiz.EditorTools.Studio
                 ["M_FabricChair2"] = Varied(Scan("poly_wool_herringbone", 0.24f, 0.4f, 1f, new Color(0.36f, 0.24f, 0.16f), true,
                     Tex("Fabric", 0.25f, 0.12f, "Fabric_N", new Color(0.28f, 0.18f, 0.12f))), 0.8f),
                 // A deep, muted teal velvet curtain (D93 as amended by Ilia, Nov 5, 2026).
-                ["M_Velvet"] = Scan("velour_velvet", 0.28f, 0.5f, 0.8f, new Color(0.045f, 0.19f, 0.2f), true,
-                    Tex("Velvet", 0.6f, 0.4f, null, new Color(0.05f, 0.2f, 0.21f))),
+                ["M_Velvet"] = Sheened(Scan("velour_velvet", 0.28f, 0.5f, 0.8f, new Color(0.045f, 0.19f, 0.2f), true,
+                    Tex("Velvet", 0.6f, 0.4f, null, new Color(0.05f, 0.2f, 0.21f))), new Vector3(2.2f, 0.35f, 2f)),
                 // A folded wool throw on the sofa arm: oatmeal, so it reads against the green.
                 ["M_Blanket"] = Varied(Scan("poly_wool_herringbone", 0.18f, 0.3f, 1.2f, new Color(0.55f, 0.48f, 0.38f), true,
                     Plain(new Color(0.55f, 0.48f, 0.38f), 0.1f)), 0.6f),
@@ -199,6 +207,12 @@ namespace FamilyQuiz.EditorTools.Studio
                 ["M_Wax"] = new Spec { Color = new Color(0.86f, 0.8f, 0.68f), Smoothness = 0.42f, Emission = new Color(1f, 0.55f, 0.25f) * 0.05f },
                 ["M_Flame"] = Glow(new Color(1f, 0.62f, 0.28f) * 14f, new Color(1f, 0.8f, 0.5f), true),
                 ["M_GlowStrip"] = Glow(warmLight * 1.6f),
+                // Studio floor details: rubber cables and gaffer tape spike marks.
+                ["M_Cable"] = Plain(new Color(0.025f, 0.025f, 0.027f), 0.38f),
+                ["M_TapeWhite"] = Plain(new Color(0.7f, 0.68f, 0.62f), 0.3f),
+                ["M_TapeYellow"] = Plain(new Color(0.72f, 0.55f, 0.12f), 0.3f),
+                // The light shafts (StudioBuilder swaps in the LightBeam shader and sets its colour).
+                ["M_Beam"] = Plain(Color.black, 0f),
                 ["M_CanLens"] = Glow(new Color(1f, 0.8f, 0.55f) * 2.2f, new Color(0.2f, 0.18f, 0.15f), false, 0.9f),
                 ["M_Bulb"] = Glow(new Color(1f, 0.78f, 0.52f) * 10f, Color.white),
                 ["M_LampShade"] = Glow(new Color(1f, 0.66f, 0.36f) * 1.4f, new Color(0.9f, 0.8f, 0.62f), true, 0.2f),
@@ -303,10 +317,11 @@ namespace FamilyQuiz.EditorTools.Studio
             bool glass = s.GlassAlpha > 0f;
             if (glass) m.SetColor("_BaseColor", new Color(s.Color.r, s.Color.g, s.Color.b, s.GlassAlpha));
             m.SetFloat("_Surface", glass ? 1f : 0f);
-            // Plain alpha blend: URP's premultiply path adds a lit glass at full strength.
+            // Glass keeps its reflections at full strength while its own colour is see-through (URP's "preserve
+            // specular": premultiplied alpha), so the lamps and the room show in the window at night.
             m.SetFloat("_Blend", 0f);
-            m.SetFloat("_BlendModePreserveSpecular", 0f);
-            m.SetFloat("_SrcBlend", glass ? 5f : 1f);   // SrcAlpha
+            m.SetFloat("_BlendModePreserveSpecular", glass ? 1f : 0f);
+            m.SetFloat("_SrcBlend", 1f);                // One: premultiplied for glass, opaque otherwise
             m.SetFloat("_DstBlend", glass ? 10f : 0f);
             m.SetFloat("_SrcBlendAlpha", 1f);
             m.SetFloat("_DstBlendAlpha", glass ? 10f : 0f);
@@ -316,7 +331,7 @@ namespace FamilyQuiz.EditorTools.Studio
             if (glass)
             {
                 m.EnableKeyword("_SURFACE_TYPE_TRANSPARENT");
-                m.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+                m.EnableKeyword("_ALPHAPREMULTIPLY_ON");
             }
             else
             {
@@ -326,6 +341,21 @@ namespace FamilyQuiz.EditorTools.Studio
 
             m.SetFloat("_Cull", s.TwoSided ? 0f : 2f);
             m.doubleSidedGI = s.TwoSided;
+            if (s.Sheen.HasValue) Velvet(m, s.Sheen.Value);
+        }
+
+        /// <summary>Switches a Lit material to the Velvet shader (same properties) with this sheen.</summary>
+        public static void Velvet(Material m, Vector3 sheen)
+        {
+            var shader = Shader.Find("FamilyQuiz/Velvet");
+            if (shader == null)
+            {
+                Debug.LogWarning("Studio: no FamilyQuiz/Velvet shader; " + m.name + " stays Lit");
+                return;
+            }
+
+            m.shader = shader;
+            m.SetColor("_SpecColor", new Color(sheen.x, sheen.y, sheen.z, 0f));
         }
     }
 }

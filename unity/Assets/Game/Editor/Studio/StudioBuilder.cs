@@ -32,7 +32,9 @@ namespace FamilyQuiz.EditorTools.Studio
         {
             "HostShelfBooks", "DeskProps", "CoffeeTableProps", "DrumKit", "Keyboard", "Amps", "Guitar", "Bass", "PlantBig", "PlantStage",
             "PlantShelf2", "PlantBand", "Pendants", "FloorLamp", "SideTable", "Sconces", "BandSconce", "Truss", "BandGear", "SideTable2",
-            "SofaLegs", "ArmchairLegs", "HostChairs", "StageLamp1", "StageLamp2", "ProsceniumTrim", "QuestionBoardFrame"
+            "SofaLegs", "ArmchairLegs", "HostChairs", "StageLamp1", "StageLamp2", "ProsceniumTrim", "QuestionBoardFrame",
+            "FloorCables", "FloorCablesStage", "PoolCans", "PoolCansGuests", "CandlesStage", "CandlesGuests", "CandlesBand",
+            "FestoonGuests", "FestoonBand", "ChandelierRod", "PianoBench", "GuestSconces"
         };
 
         public static void Run()
@@ -46,6 +48,7 @@ namespace FamilyQuiz.EditorTools.Studio
                     StudioTextures.GenerateAll();
                 if (args.Contains("-textures")) StudioScans.PrepareAll(true);
                 if (args.Contains("-textures") || args.Contains("-procTextures") || !File.Exists(StudioTextures.Folder + "/CityWindows.png")) StudioTextures.CityWindows();
+                if (args.Contains("-textures") || args.Contains("-procTextures") || !File.Exists(StudioTextures.Folder + "/LensDirt.png")) StudioTextures.LensDirt();
                 // -captureOnly renders the saved scene without rebuilding it; -hide <name> hides one object first.
                 if (!args.Contains("-captureOnly")) Build(StudioLooks.Get(look), bake);
                 string capture = Arg(args, "-capture");
@@ -84,6 +87,13 @@ namespace FamilyQuiz.EditorTools.Studio
             materials["M_CityBuildingFar"].SetColor("_EmissionColor", new Color(0.7f, 0.78f, 1f) * look.CityEmission * 0.3f);
             materials["M_GlowStrip"].SetColor("_EmissionColor", look.Strip * 0.16f);
             materials["M_Bulb"].SetColor("_EmissionColor", Color.Lerp(look.Practical, Color.white, 0.35f) * 10f);
+            // The night city ignores the room's haze (CityGlow), and the light shafts take the practicals' colour.
+            foreach (var city in new[] { "M_City", "M_CityBuilding", "M_CityBuildingFar" })
+                materials[city].shader = Shader.Find("FamilyQuiz/CityGlow");
+            var beam = materials["M_Beam"];
+            beam.shader = Shader.Find("FamilyQuiz/LightBeam");
+            beam.SetColor("_Color", Color.Lerp(look.Practical, Color.white, 0.25f));
+            beam.SetFloat("_Intensity", look.BeamIntensity);
 
             var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             var root = new GameObject("Studio");
@@ -118,7 +128,12 @@ namespace FamilyQuiz.EditorTools.Studio
             RenderSettings.ambientMode = AmbientMode.Flat;
             RenderSettings.ambientLight = look.Ambient;
             RenderSettings.defaultReflectionMode = DefaultReflectionMode.Custom;
-            RenderSettings.fog = false;
+            // A thin warm haze, as in a TV studio running a hazer: it gives the room depth and the light shafts
+            // something to show in. The city behind the window ignores it (CityGlow).
+            RenderSettings.fog = look.FogDensity > 0f;
+            RenderSettings.fogMode = FogMode.Exponential;
+            RenderSettings.fogDensity = look.FogDensity;
+            RenderSettings.fogColor = look.FogColor;
 
             Lightmapping.lightingSettings = LightingFor(look);
             Directory.CreateDirectory(Path.GetDirectoryName(ScenePath));
@@ -160,11 +175,13 @@ namespace FamilyQuiz.EditorTools.Studio
                 bool dynamic = go.name.StartsWith("Dyn_");
                 bool city = go.name.StartsWith("City");
                 bool glass = go.name.StartsWith("Glass");
-                renderer.shadowCastingMode = city || glass ? ShadowCastingMode.Off : ShadowCastingMode.On;
-                if (dynamic || city || glass)
+                bool beam = go.name.StartsWith("Beam");
+                renderer.shadowCastingMode = city || glass || beam ? ShadowCastingMode.Off : ShadowCastingMode.On;
+                if (dynamic || city || glass || beam)
                 {
                     GameObjectUtility.SetStaticEditorFlags(go, 0);
-                    renderer.lightProbeUsage = city ? LightProbeUsage.Off : LightProbeUsage.BlendProbes;
+                    renderer.lightProbeUsage = city || beam ? LightProbeUsage.Off : LightProbeUsage.BlendProbes;
+                    renderer.reflectionProbeUsage = beam ? ReflectionProbeUsage.Off : renderer.reflectionProbeUsage;
                     continue;
                 }
 
@@ -448,7 +465,7 @@ namespace FamilyQuiz.EditorTools.Studio
             camera.nearClipPlane = 0.1f;
             camera.farClipPlane = 700f;
             camera.allowHDR = true;
-            camera.allowMSAA = false;
+            camera.allowMSAA = true;
             var data = cameraGo.AddComponent<UniversalAdditionalCameraData>();
             data.renderPostProcessing = true;
             data.antialiasing = AntialiasingMode.SubpixelMorphologicalAntiAliasing;
@@ -503,6 +520,13 @@ namespace FamilyQuiz.EditorTools.Studio
             bloom.intensity.Override(look.BloomIntensity);
             bloom.threshold.Override(look.BloomThreshold);
             bloom.scatter.Override(0.72f);
+            // A faint smudge on the lens that only shows around bright lights, like a real camera's front glass.
+            var dirt = AssetDatabase.LoadAssetAtPath<Texture2D>(StudioTextures.Folder + "/LensDirt.png");
+            if (dirt != null)
+            {
+                bloom.dirtTexture.Override(dirt);
+                bloom.dirtIntensity.Override(look.LensDirt);
+            }
             var vignette = profile.Add<Vignette>(true);
             vignette.intensity.Override(look.Vignette);
             vignette.smoothness.Override(0.45f);
@@ -552,13 +576,13 @@ namespace FamilyQuiz.EditorTools.Studio
             settings.realtimeGI = false;
             settings.mixedBakeMode = MixedLightingMode.IndirectOnly;
             settings.lightmapper = LightingSettings.Lightmapper.ProgressiveGPU;
-            settings.lightmapResolution = 30f;
+            settings.lightmapResolution = 40f;
             settings.lightmapPadding = 3;
             settings.lightmapMaxSize = 4096;
-            settings.directSampleCount = 64;
-            settings.indirectSampleCount = 512;
-            settings.environmentSampleCount = 64;
-            settings.maxBounces = 3;
+            settings.directSampleCount = 128;
+            settings.indirectSampleCount = 1024;
+            settings.environmentSampleCount = 128;
+            settings.maxBounces = 4;
             settings.lightmapCompression = LightmapCompression.HighQuality;
             settings.ao = true;
             settings.aoMaxDistance = 0.6f;

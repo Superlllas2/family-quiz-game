@@ -80,6 +80,12 @@ namespace FamilyQuiz.EditorTools.Studio
             ("oil_lamp_glass", 0.9f, true),             // the oil lamps' chimneys, lit by the flame inside
         };
 
+        /// <summary>Upholstery among the props that gets the velvet sheen (StudioMaterials.Velvet): source name part, sheen.</summary>
+        private static readonly (string part, Vector3 sheen)[] Sheens =
+        {
+            ("armchair_01", new Vector3(0.9f, 0.18f, 3f)),
+        };
+
         /// <summary>Import settings for the prop textures and models, then the materials, keyed by slot name.</summary>
         public static Dictionary<string, Material> CreateMaterials(Dictionary<string, PropEntry> props, Color practical)
         {
@@ -161,6 +167,8 @@ namespace FamilyQuiz.EditorTools.Studio
                 // Leaves and other cut outs are thin cards: both sides.
                 m.SetFloat("_Cull", cut ? 0f : 2f);
                 m.doubleSidedGI = cut;
+                foreach (var sheen in Sheens)
+                    if (source.Contains(sheen.part)) StudioMaterials.Velvet(m, sheen.sheen);
                 EditorUtility.SetDirty(m);
                 result[entry.slot] = m;
             }

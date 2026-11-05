@@ -45,5 +45,10 @@ namespace FamilyQuiz.EditorTools.Studio
         public Color SplitShadows = Color.grey;
         public Color SplitHighlights = Color.grey;
         public float PostExposure = 1.1f;
+        // Haze (exponential fog) and the light shafts seen in it (build_studio.py, beam()), and the lens's smudges.
+        public float FogDensity;
+        public Color FogColor = Color.black;
+        public float BeamIntensity = 0.06f;
+        public float LensDirt = 1.2f;
     }
 }

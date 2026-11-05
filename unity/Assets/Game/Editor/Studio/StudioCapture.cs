@@ -47,10 +47,12 @@ namespace FamilyQuiz.EditorTools.Studio
             float baseExposure = color != null ? color.postExposure.value : 0f;
             float baseVignette = vignette != null ? vignette.intensity.value : 0f;
             float guestKey = rig.GuestKey.intensity;
+            var dof = rig.Volume.sharedProfile.TryGet<DepthOfField>(out var d) ? d : null;
 
-            void Shot(string name, Transform pose, float fov, bool curtainOpen, bool showCards, bool dark)
+            void Shot(string name, Transform pose, float fov, bool curtainOpen, bool showCards, bool dark, FamilyQuiz.Presentation.Staging.Shot lens = FamilyQuiz.Presentation.Staging.Shot.Stage)
             {
                 rig.Camera.transform.SetPositionAndRotation(pose.position, pose.rotation);
+                StudioLens.Apply(dof, rig, lens, rig.Camera.transform, "konstantin");
                 rig.Camera.fieldOfView = fov;
                 rig.CurtainLeft.localScale = new Vector3(curtainOpen ? 0.16f : 1f, 1f, 1f);
                 rig.CurtainRight.localScale = new Vector3(curtainOpen ? 0.16f : 1f, 1f, 1f);
@@ -61,21 +63,21 @@ namespace FamilyQuiz.EditorTools.Studio
                 Render(rig.Camera, Path.Combine(outDir, look + "_" + name + ".png"));
             }
 
-            Shot("1_seats_dark", rig.SeatsShot, rig.SeatsFieldOfView, false, false, true);
-            Shot("2_establish", rig.EstablishStart, rig.EstablishFieldOfView, false, false, false);
-            Shot("3_wide", rig.WideShot, rig.WideFieldOfView, false, false, false);
-            Shot("4_wide_cards", rig.WideShot, rig.WideFieldOfView, false, true, false);
-            Shot("5_hostsolo", rig.HostSoloKonstantin, rig.HostSoloFieldOfView, false, false, false);
-            Shot("6_curtain", rig.CurtainShot, rig.CurtainFieldOfView, false, false, false);
+            Shot("1_seats_dark", rig.SeatsShot, rig.SeatsFieldOfView, false, false, true, FamilyQuiz.Presentation.Staging.Shot.Seats);
+            Shot("2_establish", rig.EstablishStart, rig.EstablishFieldOfView, false, false, false, FamilyQuiz.Presentation.Staging.Shot.Establish);
+            Shot("3_wide", rig.WideShot, rig.WideFieldOfView, false, false, false, FamilyQuiz.Presentation.Staging.Shot.Wide);
+            Shot("4_wide_cards", rig.WideShot, rig.WideFieldOfView, false, true, false, FamilyQuiz.Presentation.Staging.Shot.Wide);
+            Shot("5_hostsolo", rig.HostSoloKonstantin, rig.HostSoloFieldOfView, false, false, false, FamilyQuiz.Presentation.Staging.Shot.HostSolo);
+            Shot("6_curtain", rig.CurtainShot, rig.CurtainFieldOfView, false, false, false, FamilyQuiz.Presentation.Staging.Shot.Curtain);
             Shot("7_stage", rig.StageShot, rig.StageFieldOfView, true, false, false);
-            Shot("8_seats_lit", rig.SeatsShot, rig.SeatsFieldOfView, false, false, false);
+            Shot("8_seats_lit", rig.SeatsShot, rig.SeatsFieldOfView, false, false, false, FamilyQuiz.Presentation.Staging.Shot.Seats);
             var band = FindNamed("CAM_BandPreview");
             var bandTarget = FindNamed("CAMT_BandPreview");
             if (band != null && bandTarget != null)
             {
                 var pose = new GameObject("BandPreviewPose").transform;
                 pose.SetPositionAndRotation(band.position, Quaternion.LookRotation(bandTarget.position - band.position));
-                Shot("9_band", pose, 36f, false, false, false);
+                Shot("9_band", pose, 36f, false, false, false, FamilyQuiz.Presentation.Staging.Shot.Wide);
                 Object.DestroyImmediate(pose.gameObject);
             }
 

@@ -59,7 +59,8 @@ namespace FamilyQuiz.EditorTools.Studio
                         Rim = new Color(1f, 0.84f, 0.66f), RimIntensity = 14f,
                         Ambient = new Color(0.06f, 0.045f, 0.035f), CityEmission = 0.9f,
                         Contrast = 6f, Saturation = 0f, Temperature = 8f,
-                        BloomIntensity = 0.7f, BloomThreshold = 0.9f
+                        BloomIntensity = 0.7f, BloomThreshold = 0.9f,
+                        FogDensity = 0.012f, FogColor = new Color(0.075f, 0.05f, 0.035f), BeamIntensity = 0.07f
                     };
             }
         }

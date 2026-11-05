@@ -213,6 +213,53 @@ def aimed(name, at, target):
     empty(prefix + "T_" + rest, target)
 
 
+def pool_can(piece, at, target):
+    """A lamp can hung from the ceiling on a drop pipe at at, pointing at target."""
+    a, t = Vector(at), Vector(target)
+    d = (t - a).normalized()
+    rod(piece, (a.x, a.y, a.z + 0.2), (a.x, a.y, WALL_TOP), 0.018, "M_MetalBlack", 8)
+    rot = Vector((0, 0, 1)).rotation_difference(d).to_matrix()
+    v = piece.cyl((0, 0, 0), 0.14, 0.36, "M_MetalBlack", segments=18)
+    bmesh.ops.rotate(piece.bm, cent=(0, 0, 0), matrix=rot, verts=v)
+    bmesh.ops.translate(piece.bm, vec=a - d * 0.1, verts=v)
+    v = piece.cyl((0, 0, 0), 0.115, 0.01, "M_CanLens", segments=18)
+    bmesh.ops.translate(piece.bm, vec=(0, 0, 0.18), verts=v)
+    bmesh.ops.rotate(piece.bm, cent=(0, 0, 0), matrix=rot, verts=v)
+    bmesh.ops.translate(piece.bm, vec=a - d * 0.1, verts=v)
+
+
+def beam(name, at, target, end_radius, start_radius=0.09, length=None, segments=28):
+    """A visible shaft of light in the haze (Unity's LightBeam shader, M_Beam): an open cone from at towards target,
+    length metres long (to the target by default), its UVs' v running 0 at the lamp to 1 at the far end."""
+    a, b = Vector(at), Vector(target)
+    axis = (b - a).normalized()
+    length = length or (b - a).length
+    rot = Vector((0, 0, 1)).rotation_difference(axis).to_matrix()
+    bm = bmesh.new()
+    uv = bm.loops.layers.uv.new()
+    rings = []
+    for z, r in ((0.0, start_radius), (length, end_radius)):
+        rings.append([bm.verts.new(a + rot @ Vector((r * math.cos(2 * math.pi * i / segments),
+                                                        r * math.sin(2 * math.pi * i / segments), z)))
+                      for i in range(segments)])
+    for i in range(segments):
+        j = (i + 1) % segments
+        f = bm.faces.new((rings[0][i], rings[0][j], rings[1][j], rings[1][i]))
+        for loop, (u, v) in zip(f.loops, ((i / segments, 0), ((i + 1) / segments, 0), ((i + 1) / segments, 1), (i / segments, 1))):
+            loop[uv].uv = (u, v)
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+    mesh = bpy.data.meshes.new(name)
+    bm.to_mesh(mesh)
+    bm.free()
+    mesh.materials.append(material("M_Beam"))
+    for p in mesh.polygons:
+        p.use_smooth = True
+    obj = bpy.data.objects.new(name, mesh)
+    COLLECTION.objects.link(obj)
+    OBJ_ZONE[obj.name] = CURRENT_ZONE
+    return obj
+
+
 PROP_COUNT = {}
 
 
@@ -487,8 +534,14 @@ def build_room():
     # Soft fill from the audience side, like the big soft lights of a TV studio (a Unity area light).
     aimed("LK_Fill", (2.5, -14.0, 4.8), (2.5, 0.0, 1.4))
     # Soft warm pools on the open floor from the truss, so the middle of the studio is not one dark plane.
+    # Each hangs from the ceiling on a drop pipe, and its shaft shows in the haze.
+    cans = Piece("PoolCans", bevel=0.004)
     for i, (px, py) in enumerate([(3.2, -0.6), (6.6, -2.6), (0.6, -4.4)]):
-        aimed("LK_FloorPool_%d" % (i + 1), (px - 0.6, py - 1.2, WALL_TOP - 0.7), (px, py, 0.0))
+        at = (px - 0.6, py - 1.2, WALL_TOP - 0.7)
+        aimed("LK_FloorPool_%d" % (i + 1), at, (px, py, 0.0))
+        pool_can(cans, at, (px, py, 0.0))
+        beam("BeamFloorPool%d" % (i + 1), at, (px, py, 0.0), 1.0)
+    cans.build()
     # The establishing shot looks into the bay from the front, high, and comes down (Unity lerps between the two).
     aimed("CAM_EstablishStart", (1.8, -21.5, 5.55), (2.4, 0.0, 1.3))   # below the ceiling (WALL_TOP)
     aimed("CAM_EstablishEnd", (1.9, -18.6, 4.1), (2.4, 0.0, 1.1))
@@ -653,8 +706,12 @@ def build_guest_area():
     # front of the riser, so the bottom of the Wide shot is not one bare plane.
     aimed("LK_RimGuests", (-4.6, 5.25, 4.9), (-4.6, 2.9, 0.7))
     aimed("LK_FloorPool_4", (-4.2, -0.6, WALL_TOP - 0.7), (-4.8, 0.9, 0.0))
+    cans = Piece("PoolCansGuests", bevel=0.004)
+    pool_can(cans, (-4.2, -0.6, WALL_TOP - 0.7), (-4.8, 0.9, 0.0))
+    cans.build()
+    beam("BeamFloorPool4", (-4.2, -0.6, WALL_TOP - 0.7), (-4.8, 0.9, 0.0), 1.0)
     # Far enough back that every answer card fits, from the outer left armchair to the desk.
-    aimed("CAM_Wide", (-3.35, -7.6, 2.55), (-3.35, 3.6, 1.1))
+    aimed("CAM_Wide", (-3.35, -7.6, 2.55), (-3.35, 3.6, 1.3))
     aimed("CAM_Seats", (-4.6, -5.6, 1.45), (-4.6, 3.6, 1.45))
 
     rug = Piece("Rug", bevel=0.004)
@@ -907,6 +964,7 @@ def fill_books(name, x0, x1, y0, y1, levels, skip_mid=None, skips=()):
 def build_stage():
     set_zone("Stage")
     aimed("LK_CurtainWash", (5.5, 0.2, WALL_TOP - 0.4), (5.5, 4.3, 2.4))
+    beam("BeamCurtainWash", (5.5, 0.2, WALL_TOP - 0.4), (5.5, 4.3, 2.4), 1.1, 0.14)
     aimed("CAM_Curtain", (5.5, -4.0, 2.3), (5.5, 4.0, 2.55))
     aimed("CAM_Stage", (5.5, -2.0, 2.075), (5.5, 5.9, 2.075))
     aimed("CAM_StagePushIn", (5.5, -1.65, 2.075), (5.5, 5.9, 2.075))
@@ -1094,6 +1152,8 @@ def build_stage_lamp(name, x, y, index, floor_z=0.0):
     bmesh.ops.translate(lamp.bm, vec=pos, verts=v)
     lamp.build()
     empty("LP_StageLamp_%d" % index, tuple(pos + d * 0.25))
+    # Its shaft through the haze, to the closed curtain.
+    beam("BeamStageLamp%d" % index, tuple(pos + d * 0.2), tuple(target), 0.55, 0.13, (CURTAIN_Y - pos.y - 0.05) / d.y)
 
 
 # ------------------------------------------------------------------------------------------------ band riser (no band yet)
@@ -1101,6 +1161,7 @@ def build_stage_lamp(name, x, y, index, floor_z=0.0):
 def build_band():
     set_zone("Band")
     aimed("LK_BandTop", (11.3, 3.6, WALL_TOP - 0.4), (11.3, 4.4, 0.4))
+    beam("BeamBandTop", (11.3, 3.6, WALL_TOP - 0.4), (11.3, 4.4, 0.4), 1.2, 0.14)
     aimed("LK_BandFront", (11.3, -0.6, 4.4), (11.3, 4.3, 0.9))
     aimed("CAM_BandPreview", (11.3, -3.4, 2.2), (11.3, 4.0, 1.0))   # only for StudioCapture (no Band shot yet, D96)
     # The band stage: a big deck along the band wall with an angled front, its left end on the corner bisector (it
@@ -1255,6 +1316,25 @@ def build_dressing():
     festoon(string, (13.1, BAND_WALL_Y - 0.15, 4.9), (12.2, 1.7, WALL_TOP - 0.3), 0.85)
     string.build()
 
+    # The working floor of a TV studio: cables taped down or snaking off to where the cameras would be, and spike marks
+    # where the hosts and the winner stand. Flat on the floor, so nothing blocks a shot.
+    set_zone("Guests")
+    floor = Piece("FloorCables", bevel=0.0)
+    cable(floor, [(-10.4, -2.6), (-9.6, -0.9), (-9.1, 0.6), (-8.75, 1.6), (-8.6, 1.97)])
+    cable(floor, [(3.0, -1.0), (1.2, -1.6), (-0.8, -1.95), (-2.6, -2.9), (-3.4, -4.2)], 0.013)
+    cable(floor, [(-5.2, 1.98), (-5.5, 1.2), (-6.4, 0.3), (-7.9, -0.6), (-9.5, -1.4), (-11.0, -1.7)], 0.008)
+    for x, y, yaw, mat in [(-6.2, 1.35, 0.1, "M_TapeWhite"), (-3.1, 1.3, -0.05, "M_TapeWhite"), (-4.65, 0.75, 0.0, "M_TapeYellow"),
+                           (0.9, 1.1, 0.3, "M_TapeYellow")]:
+        tape_mark(floor, x, y, yaw, mat)
+    floor.build()
+    set_zone("Stage")
+    floor = Piece("FloorCablesStage", bevel=0.0)
+    cable(floor, [(3.25, 2.25), (3.0, 1.5), (2.75, 0.5), (2.1, -0.8), (1.0, -2.2), (0.2, -3.6)], 0.012, z=0.0)
+    cable(floor, [(7.75, 2.25), (8.2, 1.4), (8.9, 0.2), (9.2, -1.6), (9.0, -3.4)], 0.012, z=0.0)
+    for x, y, yaw, mat in [(5.5, 0.15, 0.0, "M_TapeYellow"), (4.6, -0.6, 0.2, "M_TapeWhite"), (6.4, -0.7, -0.25, "M_TapeWhite")]:
+        tape_mark(floor, x, y, yaw, mat, 0.14)
+    floor.build()
+
     # Wall sconces beside the window, on both sides of the proscenium and on the band wall.
     for zone, name, specs in (("Guests", "GuestSconces", [(-9.2, GUEST_WALL_Y, 2.75), (-0.5, GUEST_WALL_Y, 2.75)]),
                               ("Stage", "Sconces", [(1.85, PROSC_Y[0], 3.6), (9.55, PROSC_Y[0], 3.6)]),
@@ -1267,6 +1347,29 @@ def build_dressing():
             sconce.cyl((x, y - 0.18, z + 0.1), 0.11, 0.2, "M_LampShade", segments=20, radius2=0.08, caps=False)
             empty("LP_Sconce_%s%d" % (zone[0], k + 1), (x, y - 0.18, z + 0.08))
         sconce.build()
+
+
+def cable(piece, points, radius=0.011, mat="M_Cable", z=0.0):
+    """A cable lying on the floor through the given (x, y) points: a smooth Catmull-Rom curve swept as a thin tube."""
+    pts = [Vector((x, y, z + radius)) for x, y in points]
+    curve = []
+    for i in range(len(pts) - 1):
+        p0, p1, p2, p3 = pts[max(0, i - 1)], pts[i], pts[i + 1], pts[min(len(pts) - 1, i + 2)]
+        steps = max(2, int((p2 - p1).length / 0.12))
+        for k in range(steps):
+            t = k / steps
+            curve.append(0.5 * ((2 * p1) + (-p0 + p2) * t + (2 * p0 - 5 * p1 + 4 * p2 - p3) * t * t
+                                + (-p0 + 3 * p1 - 3 * p2 + p3) * t * t * t))
+    curve.append(pts[-1])
+    for a, b in zip(curve, curve[1:]):
+        rod(piece, a, b, radius, mat, 6)
+        piece.sphere(b, radius, mat, subdiv=1)     # rounds the joints
+
+
+def tape_mark(piece, x, y, yaw, mat="M_TapeWhite", size=0.12):
+    """A spike mark of gaffer tape on the floor: a small cross where something stands for the show."""
+    for a in (0.0, math.pi / 2):
+        piece.box(x - size / 2, x + size / 2, y - 0.012, y + 0.012, 0.0005, 0.0015, mat, yaw + a, (x, y, 0))
 
 
 LIGHT_COUNT = {}
@@ -1440,7 +1543,8 @@ def main():
     # is only filled in by a scene update.
     bpy.context.view_layer.update()
     for obj in COLLECTION.objects:
-        box_uvs(obj)
+        if not obj.name.startswith("Beam"):     # beams keep their own UVs (v along the shaft)
+            box_uvs(obj)
     b = CITY_BACKDROP
     fit_uvs(bpy.data.objects["CityBackdrop"], b["x0"], b["x1"], b["z0"], b["z1"])
     to_zone_frames()

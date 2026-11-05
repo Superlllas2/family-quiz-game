@@ -430,10 +430,12 @@ namespace FamilyQuiz.Presentation.Staging
                     long start = _plan.EstablishStartMs ?? now;
                     double span = _context.Game.Content.Config.Staging.Intro.EstablishSeconds * 1000;
                     float t = Mathf.SmoothStep(0f, 1f, span > 0 ? (float)((now - start) / span) : 1f);
-                    cam.transform.SetPositionAndRotation(Vector3.Lerp(_rig.EstablishStart.position, _rig.EstablishEnd.position, t),
-                        Quaternion.Slerp(_rig.EstablishStart.rotation, _rig.EstablishEnd.rotation, t));
+                    var at = Vector3.Lerp(_rig.EstablishStart.position, _rig.EstablishEnd.position, t);
+                    var look = Quaternion.Slerp(_rig.EstablishStart.rotation, _rig.EstablishEnd.rotation, t);
+                    StudioLens.Drift(_rig, ref at, ref look, Time.unscaledTime, 3f);
+                    cam.transform.SetPositionAndRotation(at, look);
                     cam.fieldOfView = _rig.EstablishFieldOfView;
-                    SetDof(false);
+                    StudioLens.Apply(_dof, _rig, Shot.Establish, cam.transform, null);
                     return;
                 }
                 case Shot.HostSolo:
@@ -452,7 +454,7 @@ namespace FamilyQuiz.Presentation.Staging
                         float t = Mathf.Clamp01((float)((now - _phaseStartMs) / span));
                         cam.transform.SetPositionAndRotation(Vector3.Lerp(_rig.StageShot.position, _rig.StagePushIn.position, t), _rig.StageShot.rotation);
                         cam.fieldOfView = _rig.StageFieldOfView;
-                        SetDof(false);
+                        StudioLens.Apply(_dof, _rig, Shot.Stage, cam.transform, null);
                         return;
                     }
 
@@ -465,15 +467,12 @@ namespace FamilyQuiz.Presentation.Staging
             rotation = pose.rotation;
             if (choice.Shot == Shot.Seats)
                 position += pose.right * Mathf.Sin(Time.unscaledTime * Mathf.PI * 2f / SeatsDriftSeconds) * SeatsDriftMetres;
+            // The question is read off the board in the Stage shot (D92): that one holds still.
+            if (choice.Shot != Shot.Stage)
+                StudioLens.Drift(_rig, ref position, ref rotation, Time.unscaledTime, (float)choice.Shot * 11f);
             cam.transform.SetPositionAndRotation(position, rotation);
             cam.fieldOfView = fov;
-            SetDof(choice.Shot == Shot.HostSolo);
-        }
-
-        private void SetDof(bool on)
-        {
-            if (_dof == null) return;
-            _dof.mode.Override(on ? DepthOfFieldMode.Gaussian : DepthOfFieldMode.Off);
+            StudioLens.Apply(_dof, _rig, choice.Shot, cam.transform, choice.Host);
         }
 
         private void Curtain(GameState state, long now)

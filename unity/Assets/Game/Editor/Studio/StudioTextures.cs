@@ -312,6 +312,46 @@ namespace FamilyQuiz.EditorTools.Studio
             Save("CityWindows", px, w, h, true);
         }
 
+        /// <summary>
+        /// Smudges and dust on the front glass of the lens, for the bloom's dirt texture: almost black, a few soft
+        /// greasy smears, a scatter of small dust rings, so a bright light picks out a faint texture around it.
+        /// </summary>
+        public static void LensDirt()
+        {
+            Directory.CreateDirectory(Folder);
+            const int w = 1024, h = 576;
+            var rng = new System.Random(7);
+            var px = new Color[w * h];
+            for (int y = 0; y < h; y++)
+            for (int x = 0; x < w; x++)
+            {
+                // Smears: low frequency noise, kept only where it peaks.
+                float n = Mathf.PerlinNoise(x * 0.004f + 3.1f, y * 0.006f + 1.7f) * 0.7f + Mathf.PerlinNoise(x * 0.013f, y * 0.011f) * 0.3f;
+                float v = Mathf.Clamp01((n - 0.52f) * 2.2f) * 0.45f;
+                px[y * w + x] = new Color(v, v * 0.96f, v * 0.9f, 1f);
+            }
+
+            for (int k = 0; k < 140; k++)
+            {
+                // Dust: soft discs with a brighter rim, of mixed sizes.
+                float cx = (float)rng.NextDouble() * w, cy = (float)rng.NextDouble() * h;
+                float r = 2f + (float)Math.Pow(rng.NextDouble(), 3) * 26f;
+                float strength = 0.25f + (float)rng.NextDouble() * 0.5f;
+                for (int y = Mathf.Max(0, (int)(cy - r - 2)); y < Mathf.Min(h, (int)(cy + r + 2)); y++)
+                for (int x = Mathf.Max(0, (int)(cx - r - 2)); x < Mathf.Min(w, (int)(cx + r + 2)); x++)
+                {
+                    float d = Mathf.Sqrt((x - cx) * (x - cx) + (y - cy) * (y - cy)) / r;
+                    if (d > 1.05f) continue;
+                    float disc = Mathf.Clamp01(1.05f - d) * 0.5f + Mathf.Exp(-Mathf.Pow((d - 0.9f) * 9f, 2)) * 0.7f;
+                    var c = px[y * w + x];
+                    float add = disc * strength;
+                    px[y * w + x] = new Color(Mathf.Min(1f, c.r + add), Mathf.Min(1f, c.g + add), Mathf.Min(1f, c.b + add * 0.95f), 1f);
+                }
+            }
+
+            Save("LensDirt", px, w, h, true);
+        }
+
         /// <summary>The question board: a dark matte felt so the light question overlay reads on it (D92).</summary>
         private static void Board()
         {
