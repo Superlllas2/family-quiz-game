@@ -65,6 +65,13 @@ namespace FamilyQuiz.EditorTools.Studio
             return StudioScans.Folder + "/" + file;
         }
 
+        /// <summary>Muted book cloth: the scanned leather's grain, small, on a plain colour.</summary>
+        private static Spec Book(Color color)
+        {
+            if (!StudioScans.Has("fabric_leather_02")) return Plain(color * 1.4f, 0.3f);
+            return new Spec { Color = color, Smoothness = 0.35f, Normal = Scanned("fabric_leather_02_nor.jpg"), NormalScale = 0.5f, Tiling = Vector2.one / 0.25f };
+        }
+
         /// <summary>The procedural rug pattern with the scanned carpet's pile as a detail normal, 0.6 m a tile.</summary>
         private static Spec Carpet(Spec rug)
         {
@@ -153,11 +160,11 @@ namespace FamilyQuiz.EditorTools.Studio
                 ["M_Soil"] = Plain(new Color(0.1f, 0.07f, 0.05f), 0.05f),
                 ["M_Stem"] = Plain(new Color(0.2f, 0.25f, 0.12f), 0.2f),
                 ["M_Leaf"] = new Spec { Texture = "Leaf", Tiling = Vector2.one / 0.3f, Smoothness = 0.35f, TwoSided = true },
-                ["M_BookA"] = Plain(new Color(0.40f, 0.09f, 0.08f), 0.3f),
-                ["M_BookB"] = Plain(new Color(0.10f, 0.14f, 0.30f), 0.3f),
-                ["M_BookC"] = Plain(new Color(0.62f, 0.46f, 0.15f), 0.3f),
-                ["M_BookD"] = Plain(new Color(0.13f, 0.30f, 0.18f), 0.3f),
-                ["M_BookE"] = Plain(new Color(0.75f, 0.68f, 0.52f), 0.3f),
+                ["M_BookA"] = Book(new Color(0.26f, 0.07f, 0.06f)),
+                ["M_BookB"] = Book(new Color(0.07f, 0.09f, 0.18f)),
+                ["M_BookC"] = Book(new Color(0.36f, 0.25f, 0.11f)),
+                ["M_BookD"] = Book(new Color(0.08f, 0.16f, 0.1f)),
+                ["M_BookE"] = Book(new Color(0.46f, 0.4f, 0.31f)),
                 ["M_DrumShell"] = Plain(new Color(0.45f, 0.06f, 0.06f), 0.75f, 0.3f),
                 ["M_DrumHead"] = Plain(new Color(0.88f, 0.86f, 0.8f), 0.3f),
                 ["M_Cymbal"] = Plain(new Color(0.85f, 0.65f, 0.3f), 0.7f, 1f),
@@ -165,6 +172,7 @@ namespace FamilyQuiz.EditorTools.Studio
                 ["M_Amp"] = Plain(new Color(0.06f, 0.06f, 0.06f), 0.3f),
                 ["M_AmpCloth"] = Plain(new Color(0.12f, 0.11f, 0.1f), 0.05f),
                 ["M_GlowStrip"] = Glow(warmLight * 1.6f),
+                ["M_CanLens"] = Glow(new Color(1f, 0.8f, 0.55f) * 2.2f, new Color(0.2f, 0.18f, 0.15f), false, 0.9f),
                 ["M_Bulb"] = Glow(new Color(1f, 0.78f, 0.52f) * 10f, Color.white),
                 ["M_LampShade"] = Glow(new Color(1f, 0.66f, 0.36f) * 1.4f, new Color(0.9f, 0.8f, 0.62f), true, 0.2f),
                 ["M_LampShadeGreen"] = Glow(new Color(0.12f, 0.45f, 0.24f) * 0.7f, new Color(0.08f, 0.3f, 0.16f), true, 0.9f),

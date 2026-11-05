@@ -359,14 +359,18 @@ def build_room():
             box_truss(truss, (x, ya, tz + 0.45), (x, yb, tz + 0.45))
     for x, y in cans:
         truss.cyl((x, y, tz - 0.25), 0.17, 0.42, "M_MetalBlack", segments=16)
+        truss.cyl((x, y, tz - 0.465), 0.13, 0.01, "M_CanLens", segments=16)          # the lit lens, seen from below
         truss.box(x - 0.02, x + 0.02, y - 0.02, y + 0.02, tz - 0.05, tz, "M_MetalBlack")
     truss.build()
 
     # Soft fill from the audience side, like the big soft lights of a TV studio (a Unity area light).
     aimed("LK_Fill", (2.5, -14.0, 4.8), (2.5, 0.0, 1.4))
+    # Soft warm pools on the open floor from the truss, so the middle of the studio is not one dark plane.
+    for i, (px, py) in enumerate([(3.2, -0.6), (6.6, -2.6), (0.6, -4.4)]):
+        aimed("LK_FloorPool_%d" % (i + 1), (px - 0.6, py - 1.2, WALL_TOP - 0.7), (px, py, 0.0))
     # The establishing shot looks into the bay from the front, high, and comes down (Unity lerps between the two).
-    aimed("CAM_EstablishStart", (1.0, -17.5, 5.3), (1.5, 0.0, 1.8))
-    aimed("CAM_EstablishEnd", (1.0, -15.0, 3.6), (1.5, 0.0, 1.4))
+    aimed("CAM_EstablishStart", (1.0, -17.5, 5.3), (1.5, 0.0, 1.4))
+    aimed("CAM_EstablishEnd", (1.0, -15.0, 3.6), (1.5, 0.0, 1.1))
 
     build_guest_wall()
     build_curtain_wall()
@@ -746,6 +750,11 @@ def fill_books(name, x0, x1, y0, y1, levels, skip_mid=None):
                 if x + wb > x1 or (skip_mid is not None and abs(x + wb - skip_mid) < 0.05):
                     break
                 books.box(x, x + wb, y1 - db, y1, z + 0.04, z + 0.04 + hb, random.choice(mats))
+                if wb > 0.03 and random.random() < 0.45:
+                    # Gold tooled bands across the spine.
+                    for fz in (0.12, 0.84):
+                        bz = z + 0.04 + hb * fz
+                        books.box(x + 0.002, x + wb - 0.002, y1 - db - 0.0015, y1 - db + 0.002, bz, bz + 0.007, "M_MetalBrass")
                 x += wb + 0.003
             if random.random() < 0.35 and x < x1 - 0.3:
                 # A leaning or stacked group.
@@ -953,6 +962,13 @@ def build_band():
     for cxp, cyp, h in [(bx - 0.75, by - 0.05, 1.05), (bx + 0.7, by + 0.25, 1.25), (bx - 0.35, by + 0.3, 1.3)]:
         kit.cyl((cxp, cyp, top + h / 2), 0.01, h, "M_Chrome", segments=8)
         kit.cyl((cxp, cyp, top + h), 0.24, 0.006, "M_Cymbal", segments=32, radius2=0.2)
+    # Chrome hoops at each head (open bands just wider than the shell).
+    kit.cyl((bx, by - 0.2, top + 0.3), 0.315, 0.035, "M_Chrome", axis="y", segments=32, caps=False)
+    kit.cyl((bx, by + 0.2, top + 0.3), 0.315, 0.035, "M_Chrome", axis="y", segments=32, caps=False)
+    for hx, hy, hz, r in [(bx - 0.45, by - 0.25, top + 0.70, 0.19), (bx - 0.45, by - 0.25, top + 0.54, 0.19),
+                          (bx - 0.18, by - 0.05, top + 0.855, 0.15), (bx + 0.18, by - 0.05, top + 0.855, 0.15),
+                          (bx + 0.55, by - 0.15, top + 0.54, 0.23)]:
+        kit.cyl((hx, hy, hz), r, 0.03, "M_Chrome", segments=28, caps=False)
     kit.cyl((bx, by + 0.45, top + 0.25), 0.18, 0.06, "M_Leather", segments=20)             # stool
     kit.cyl((bx, by + 0.45, top + 0.12), 0.02, 0.24, "M_Chrome", segments=8)
     kit.build()

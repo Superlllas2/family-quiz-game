@@ -241,6 +241,13 @@ namespace FamilyQuiz.EditorTools.Studio
                     // Uplights grazing the walls beside the window, the proscenium and the band.
                     Spot(parent, name, at, target, look.Accent, look.AccentIntensity, 6f, 55f, LightmapBakeType.Baked).shadowRadius = 0.05f;
                 }
+                else if (name.StartsWith("FloorPool"))
+                {
+                    // A soft warm pool on the open floor.
+                    var pool = Spot(parent, name, at, target, look.Practical, 22f, 9f, 50f, LightmapBakeType.Baked);
+                    pool.innerSpotAngle = 8f;
+                    pool.shadowRadius = 0.3f;
+                }
                 else if (name == "BandTop")
                 {
                     // A dim light over the empty band riser.
