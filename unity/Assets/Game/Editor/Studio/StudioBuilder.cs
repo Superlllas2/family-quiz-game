@@ -33,8 +33,7 @@ namespace FamilyQuiz.EditorTools.Studio
             "HostShelfBooks", "DeskProps", "CoffeeTableProps", "DrumKit", "Keyboard", "Amps", "Guitar", "Bass", "PlantBig", "PlantStage",
             "PlantShelf2", "PlantBand", "Pendants", "FloorLamp", "SideTable", "Sconces", "BandSconce", "Truss", "BandGear", "SideTable2",
             "SofaLegs", "ArmchairLegs", "HostChairs", "StageLamp1", "StageLamp2", "ProsceniumTrim", "QuestionBoardFrame",
-            "FloorCables", "FloorCablesStage", "PoolCans", "PoolCansGuests", "CandlesStage", "CandlesGuests", "CandlesBand",
-            "FestoonGuests", "FestoonBand", "ChandelierRod", "PianoBench", "GuestSconces"
+            "FloorCables", "FloorCablesStage", "PoolCans", "PoolCansGuests", "FestoonGuests", "FestoonBand", "ChandelierRod"
         };
 
         public static void Run()

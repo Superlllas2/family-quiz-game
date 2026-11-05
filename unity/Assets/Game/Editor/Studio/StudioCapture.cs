@@ -77,7 +77,7 @@ namespace FamilyQuiz.EditorTools.Studio
             {
                 var pose = new GameObject("BandPreviewPose").transform;
                 pose.SetPositionAndRotation(band.position, Quaternion.LookRotation(bandTarget.position - band.position));
-                Shot("9_band", pose, 36f, false, false, false, FamilyQuiz.Presentation.Staging.Shot.Wide);
+                Shot("9_band", pose, 36f, false, false, false);   // no Band shot in the game yet (D96): no lens
                 Object.DestroyImmediate(pose.gameObject);
             }
 
