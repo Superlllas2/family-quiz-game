@@ -50,3 +50,7 @@ content/ideation/
 
 # Claude Code agent worktrees (temporary checkouts)
 .claude/worktrees/
+
+# Poly Haven model sources: tools/fetch_models.mjs downloads them again (their license log stays)
+tools/blender/assets/polyhaven/*
+!tools/blender/assets/polyhaven/LICENSES.md

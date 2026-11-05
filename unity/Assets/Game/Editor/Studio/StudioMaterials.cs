@@ -195,6 +195,9 @@ namespace FamilyQuiz.EditorTools.Studio
                 ["M_KeysWhite"] = Plain(new Color(0.92f, 0.92f, 0.9f), 0.5f),
                 ["M_Amp"] = Plain(new Color(0.06f, 0.06f, 0.06f), 0.3f),
                 ["M_AmpCloth"] = Plain(new Color(0.12f, 0.11f, 0.1f), 0.05f),
+                // Church candles: ivory wax, a little waxy sheen, and their flames.
+                ["M_Wax"] = new Spec { Color = new Color(0.86f, 0.8f, 0.68f), Smoothness = 0.42f, Emission = new Color(1f, 0.55f, 0.25f) * 0.05f },
+                ["M_Flame"] = Glow(new Color(1f, 0.62f, 0.28f) * 14f, new Color(1f, 0.8f, 0.5f), true),
                 ["M_GlowStrip"] = Glow(warmLight * 1.6f),
                 ["M_CanLens"] = Glow(new Color(1f, 0.8f, 0.55f) * 2.2f, new Color(0.2f, 0.18f, 0.15f), false, 0.9f),
                 ["M_Bulb"] = Glow(new Color(1f, 0.78f, 0.52f) * 10f, Color.white),

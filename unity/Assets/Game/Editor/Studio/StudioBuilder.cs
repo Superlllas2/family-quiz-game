@@ -82,7 +82,7 @@ namespace FamilyQuiz.EditorTools.Studio
             // wall of lit windows.
             materials["M_CityBuilding"].SetColor("_EmissionColor", new Color(0.82f, 0.88f, 1f) * look.CityEmission * 0.42f);
             materials["M_CityBuildingFar"].SetColor("_EmissionColor", new Color(0.7f, 0.78f, 1f) * look.CityEmission * 0.3f);
-            materials["M_GlowStrip"].SetColor("_EmissionColor", look.Strip * 0.6f);
+            materials["M_GlowStrip"].SetColor("_EmissionColor", look.Strip * 0.16f);
             materials["M_Bulb"].SetColor("_EmissionColor", Color.Lerp(look.Practical, Color.white, 0.35f) * 10f);
 
             var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
@@ -97,6 +97,10 @@ namespace FamilyQuiz.EditorTools.Studio
             foreach (var t in set.GetComponentsInChildren<Transform>()) markers[t.name] = t;
 
             SetUpRenderers(set, materials);
+            var props = StudioProps.Load();
+            var propMaterials = StudioProps.CreateMaterials(props, look.Practical);
+            StudioProps.Prune(propMaterials);
+            StudioProps.Place(root.transform, markers, props, propMaterials, DesignFrame);
             rig.CurtainLeft = Find(markers, "Dyn_CurtainL");
             rig.CurtainRight = Find(markers, "Dyn_CurtainR");
             for (int i = 0; i < 8; i++) rig.Seats[i] = Find(markers, "Seat_" + (i + 1));
@@ -199,6 +203,14 @@ namespace FamilyQuiz.EditorTools.Studio
                         break;
                     case "DeskLamp":
                         Point(parent, pair.Key, at, p, 4f * look.PracticalScale, 2.6f, 0.08f);
+                        break;
+                    case "Candle":
+                        // A candle flame: about 1900 K, small and soft.
+                        Point(parent, pair.Key, at, Color.Lerp(p, new Color(1f, 0.5f, 0.2f), 0.5f), 1.6f * look.PracticalScale, 2.4f, 0.02f);
+                        break;
+                    case "Festoon":
+                        // One of every few bulbs of a festoon string: small warm pools along the string.
+                        Point(parent, pair.Key, at, p, 1.8f * look.PracticalScale, 3f, 0.04f);
                         break;
                     case "Shelf":
                         Point(parent, pair.Key, at, p, 3.5f * look.PracticalScale, 2.2f, 0.05f);

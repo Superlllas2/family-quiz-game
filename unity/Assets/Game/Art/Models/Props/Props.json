@@ -1,0 +1,2319 @@
+{
+ "props": [
+  {
+   "name": "LongSofa",
+   "size": [
+    3.2,
+    1.4952,
+    1.1943
+   ],
+   "triangles": 110000,
+   "materials": [
+    {
+     "slot": "MX_LongSofa_0",
+     "source": "st_leather",
+     "baseColor": [
+      0.2,
+      0.3,
+      0.24,
+      1.0
+     ],
+     "metallic": 0.0,
+     "smoothness": 0.10540902614593506,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_LongSofa_0_base.jpg"
+    },
+    {
+     "slot": "MX_LongSofa_1",
+     "source": "wood",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 0.0,
+     "smoothness": 0.27888697385787964,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_LongSofa_1_base.jpg"
+    },
+    {
+     "slot": "MX_LongSofa_2",
+     "source": "03___Default",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 0.0,
+     "smoothness": 0.10540902614593506,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_LongSofa_2_base.jpg"
+    }
+   ]
+  },
+  {
+   "name": "ArmChair",
+   "size": [
+    0.8484,
+    0.7658,
+    1.0651
+   ],
+   "triangles": 5626,
+   "materials": [
+    {
+     "slot": "MX_ArmChair_0",
+     "source": "Armchair_01",
+     "baseColor": [
+      0.78,
+      0.5,
+      0.36,
+      1.0
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_ArmChair_0_base.jpg",
+     "normal": "MX_ArmChair_0_normal.jpg",
+     "mask": "MX_ArmChair_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "ModernArmChair",
+   "size": [
+    0.8203,
+    0.9866,
+    1.0229
+   ],
+   "triangles": 8916,
+   "materials": [
+    {
+     "slot": "MX_ModernArmChair_0",
+     "source": "modern_arm_chair_01_legs",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_ModernArmChair_0_base.jpg",
+     "normal": "MX_ModernArmChair_0_normal.jpg",
+     "mask": "MX_ModernArmChair_0_mask.png"
+    },
+    {
+     "slot": "MX_ModernArmChair_1",
+     "source": "modern_arm_chair_01_pillow",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_ModernArmChair_1_base.jpg",
+     "normal": "MX_ModernArmChair_1_normal.jpg",
+     "mask": "MX_ModernArmChair_1_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "CoffeeTable",
+   "size": [
+    1.2018,
+    0.6,
+    0.39
+   ],
+   "triangles": 4504,
+   "materials": [
+    {
+     "slot": "MX_CoffeeTable_0",
+     "source": "modern_coffee_table_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_CoffeeTable_0_base.jpg",
+     "normal": "MX_CoffeeTable_0_normal.jpg",
+     "mask": "MX_CoffeeTable_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "SideTable",
+   "size": [
+    0.55,
+    0.45,
+    0.5507
+   ],
+   "triangles": 2756,
+   "materials": [
+    {
+     "slot": "MX_SideTable_0",
+     "source": "side_table_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_SideTable_0_base.jpg",
+     "normal": "MX_SideTable_0_normal.jpg",
+     "mask": "MX_SideTable_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "Nightstand",
+   "size": [
+    0.5678,
+    0.4242,
+    0.7
+   ],
+   "triangles": 2002,
+   "materials": [
+    {
+     "slot": "MX_Nightstand_0",
+     "source": "ClassicNightstand_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Nightstand_0_base.jpg",
+     "normal": "MX_Nightstand_0_normal.jpg",
+     "mask": "MX_Nightstand_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "ThrowPillows",
+   "size": [
+    0.9401,
+    0.4519,
+    0.4502
+   ],
+   "triangles": 6362,
+   "materials": [
+    {
+     "slot": "MX_ThrowPillows_0",
+     "source": "throw_pillows_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_ThrowPillows_0_base.jpg",
+     "normal": "MX_ThrowPillows_0_normal.jpg",
+     "mask": "MX_ThrowPillows_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "Ottoman",
+   "size": [
+    0.8846,
+    0.6211,
+    0.6243
+   ],
+   "triangles": 4240,
+   "materials": [
+    {
+     "slot": "MX_Ottoman_0",
+     "source": "Ottoman_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Ottoman_0_base.jpg",
+     "normal": "MX_Ottoman_0_normal.jpg",
+     "mask": "MX_Ottoman_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "WickerBasket",
+   "size": [
+    0.3832,
+    0.295,
+    0.1174
+   ],
+   "triangles": 19999,
+   "materials": [
+    {
+     "slot": "MX_WickerBasket_0",
+     "source": "wicker_basket_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_WickerBasket_0_base.jpg",
+     "normal": "MX_WickerBasket_0_normal.jpg",
+     "mask": "MX_WickerBasket_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "FloorLamp",
+   "size": [
+    0.5096,
+    0.5096,
+    1.5916
+   ],
+   "triangles": 3700,
+   "materials": [
+    {
+     "slot": "MX_FloorLamp_0",
+     "source": "Lampara",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_FloorLamp_0_base.jpg",
+     "normal": "MX_FloorLamp_0_normal.jpg",
+     "mask": "MX_FloorLamp_0_mask.png"
+    },
+    {
+     "slot": "MX_FloorLamp_1",
+     "source": "Lampara_shade",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_FloorLamp_1_base.jpg",
+     "normal": "MX_FloorLamp_1_normal.jpg",
+     "mask": "MX_FloorLamp_1_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "Chandelier",
+   "size": [
+    0.7465,
+    0.8155,
+    0.7983
+   ],
+   "triangles": 26860,
+   "materials": [
+    {
+     "slot": "MX_Chandelier_0",
+     "source": "basecolor_classic_chandelier_1",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Chandelier_0_base.jpg",
+     "normal": "MX_Chandelier_0_normal.jpg",
+     "mask": "MX_Chandelier_0_mask.png"
+    },
+    {
+     "slot": "MX_Chandelier_1",
+     "source": "lamps_classic_chandelier_1",
+     "baseColor": [
+      0.800000011920929,
+      0.800000011920929,
+      0.800000011920929,
+      1.0
+     ],
+     "metallic": 0.0,
+     "smoothness": 0.6772727370262146,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "name": "OilLamp",
+   "size": [
+    0.22,
+    0.22,
+    0.8016
+   ],
+   "triangles": 7208,
+   "materials": [
+    {
+     "slot": "MX_OilLamp_0",
+     "source": "vintage_oil_lamp_glass",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "blend",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_OilLamp_0_base.png",
+     "normal": "MX_OilLamp_0_normal.jpg",
+     "mask": "MX_OilLamp_0_mask.png"
+    },
+    {
+     "slot": "MX_OilLamp_1",
+     "source": "vintage_oil_lamp",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_OilLamp_1_base.jpg",
+     "normal": "MX_OilLamp_1_normal.jpg",
+     "mask": "MX_OilLamp_1_mask.png"
+    },
+    {
+     "slot": "MX_OilLamp_2",
+     "source": "vintage_oil_lamp_flame",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 0.0,
+     "smoothness": 1.0,
+     "alpha": "blend",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "base": "MX_OilLamp_2_base.png",
+     "emit": "MX_OilLamp_2_emit.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Candles",
+   "size": [
+    1.0529,
+    0.3647,
+    0.8353
+   ],
+   "triangles": 41936,
+   "materials": [
+    {
+     "slot": "MX_Candles_0",
+     "source": "brass_candleholders_03",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Candles_0_base.jpg",
+     "normal": "MX_Candles_0_normal.jpg",
+     "mask": "MX_Candles_0_mask.png"
+    },
+    {
+     "slot": "MX_Candles_1",
+     "source": "brass_candleholders_flame",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 0.0,
+     "smoothness": 0.0,
+     "alpha": "blend",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "base": "MX_Candles_1_base.png",
+     "emit": "MX_Candles_1_emit.jpg"
+    },
+    {
+     "slot": "MX_Candles_2",
+     "source": "brass_candleholders_02",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Candles_2_base.jpg",
+     "normal": "MX_Candles_2_normal.jpg",
+     "mask": "MX_Candles_2_mask.png"
+    },
+    {
+     "slot": "MX_Candles_3",
+     "source": "brass_candleholders_candles",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Candles_3_base.jpg",
+     "normal": "MX_Candles_3_normal.jpg",
+     "mask": "MX_Candles_3_mask.png"
+    },
+    {
+     "slot": "MX_Candles_4",
+     "source": "brass_candleholders_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Candles_4_base.jpg",
+     "normal": "MX_Candles_4_normal.jpg",
+     "mask": "MX_Candles_4_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "Candlestick",
+   "size": [
+    0.0972,
+    0.0987,
+    0.2197
+   ],
+   "triangles": 8000,
+   "materials": [
+    {
+     "slot": "MX_Candlestick_0",
+     "source": "wooden_candlestick",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Candlestick_0_base.jpg",
+     "normal": "MX_Candlestick_0_normal.jpg",
+     "mask": "MX_Candlestick_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "PlantTall",
+   "size": [
+    0.5874,
+    0.6336,
+    1.3502
+   ],
+   "triangles": 99999,
+   "materials": [
+    {
+     "slot": "MX_PlantTall_0",
+     "source": "potted_plant_01_pot",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_PlantTall_0_base.jpg",
+     "normal": "MX_PlantTall_0_normal.jpg",
+     "mask": "MX_PlantTall_0_mask.png"
+    },
+    {
+     "slot": "MX_PlantTall_1",
+     "source": "potted_plant_01_leaves",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "mask",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_PlantTall_1_base.png",
+     "normal": "MX_PlantTall_1_normal.jpg",
+     "mask": "MX_PlantTall_1_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "PlantWide",
+   "size": [
+    0.7012,
+    0.6574,
+    0.8412
+   ],
+   "triangles": 69806,
+   "materials": [
+    {
+     "slot": "MX_PlantWide_0",
+     "source": "potted_plant_02_pot",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_PlantWide_0_base.jpg",
+     "normal": "MX_PlantWide_0_normal.jpg",
+     "mask": "MX_PlantWide_0_mask.png"
+    },
+    {
+     "slot": "MX_PlantWide_1",
+     "source": "potted_plant_02_leaves",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "mask",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_PlantWide_1_base.png",
+     "normal": "MX_PlantWide_1_normal.jpg",
+     "mask": "MX_PlantWide_1_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "PlantSmall",
+   "size": [
+    0.168,
+    0.1848,
+    0.2675
+   ],
+   "triangles": 7999,
+   "materials": [
+    {
+     "slot": "MX_PlantSmall_0",
+     "source": "potted_plant_04",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_PlantSmall_0_base.jpg",
+     "normal": "MX_PlantSmall_0_normal.jpg",
+     "mask": "MX_PlantSmall_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "Encyclopedia",
+   "size": [
+    0.5513,
+    0.1631,
+    0.2374
+   ],
+   "triangles": 29999,
+   "materials": [
+    {
+     "slot": "MX_Encyclopedia_0",
+     "source": "book_encyclopedia_set_01_cover",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Encyclopedia_0_base.jpg",
+     "normal": "MX_Encyclopedia_0_normal.jpg",
+     "mask": "MX_Encyclopedia_0_mask.png"
+    },
+    {
+     "slot": "MX_Encyclopedia_1",
+     "source": "book_encyclopedia_set_01_paper",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Encyclopedia_1_base.jpg",
+     "normal": "MX_Encyclopedia_1_normal.jpg",
+     "mask": "MX_Encyclopedia_1_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "MantelClock",
+   "size": [
+    0.3423,
+    0.1262,
+    0.1605
+   ],
+   "triangles": 19999,
+   "materials": [
+    {
+     "slot": "MX_MantelClock_0",
+     "source": "mantel_clock_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_MantelClock_0_base.jpg",
+     "normal": "MX_MantelClock_0_normal.jpg",
+     "mask": "MX_MantelClock_0_mask.png"
+    },
+    {
+     "slot": "MX_MantelClock_1",
+     "source": "mantel_clock_01_glass",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "blend",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_MantelClock_1_base.png",
+     "normal": "MX_MantelClock_1_normal.jpg",
+     "mask": "MX_MantelClock_1_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "PictureFrame1",
+   "size": [
+    0.603,
+    0.02,
+    0.4641
+   ],
+   "triangles": 938,
+   "materials": [
+    {
+     "slot": "MX_PictureFrame1_0",
+     "source": "fancy_picture_frame_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_PictureFrame1_0_base.jpg",
+     "normal": "MX_PictureFrame1_0_normal.jpg",
+     "mask": "MX_PictureFrame1_0_mask.png"
+    },
+    {
+     "slot": "MX_PictureFrame1_1",
+     "source": "fancy_picture_frame_01_canvas",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_PictureFrame1_1_base.jpg",
+     "normal": "MX_PictureFrame1_1_normal.jpg",
+     "mask": "MX_PictureFrame1_1_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "PictureFrame2",
+   "size": [
+    0.6606,
+    0.089,
+    0.771
+   ],
+   "triangles": 19999,
+   "materials": [
+    {
+     "slot": "MX_PictureFrame2_0",
+     "source": "fancy_picture_frame_02",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_PictureFrame2_0_base.jpg",
+     "normal": "MX_PictureFrame2_0_normal.jpg",
+     "mask": "MX_PictureFrame2_0_mask.png"
+    },
+    {
+     "slot": "MX_PictureFrame2_1",
+     "source": "fancy_picture_frame_02_canvas",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_PictureFrame2_1_base.jpg",
+     "normal": "MX_PictureFrame2_1_normal.jpg",
+     "mask": "MX_PictureFrame2_1_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "StandingFrame",
+   "size": [
+    0.1003,
+    0.2008,
+    0.2497
+   ],
+   "triangles": 1634,
+   "materials": [
+    {
+     "slot": "MX_StandingFrame_0",
+     "source": "standing_picture_frame_01_glass",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "blend",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_StandingFrame_0_base.png",
+     "normal": "MX_StandingFrame_0_normal.jpg",
+     "mask": "MX_StandingFrame_0_mask.png"
+    },
+    {
+     "slot": "MX_StandingFrame_1",
+     "source": "standing_picture_frame_01_artwork",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_StandingFrame_1_base.jpg",
+     "normal": "MX_StandingFrame_1_normal.jpg",
+     "mask": "MX_StandingFrame_1_mask.png"
+    },
+    {
+     "slot": "MX_StandingFrame_2",
+     "source": "standing_picture_frame_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_StandingFrame_2_base.jpg",
+     "normal": "MX_StandingFrame_2_normal.jpg",
+     "mask": "MX_StandingFrame_2_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "VaseWhite",
+   "size": [
+    0.2035,
+    0.2036,
+    0.4004
+   ],
+   "triangles": 5000,
+   "materials": [
+    {
+     "slot": "MX_VaseWhite_0",
+     "source": "ceramic_vase_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_VaseWhite_0_base.jpg",
+     "normal": "MX_VaseWhite_0_normal.jpg",
+     "mask": "MX_VaseWhite_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "VaseBrass",
+   "size": [
+    0.2273,
+    0.2273,
+    0.6925
+   ],
+   "triangles": 11999,
+   "materials": [
+    {
+     "slot": "MX_VaseBrass_0",
+     "source": "brass_vase_001",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_VaseBrass_0_base.jpg",
+     "normal": "MX_VaseBrass_0_normal.jpg",
+     "mask": "MX_VaseBrass_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "VaseAntique",
+   "size": [
+    0.255,
+    0.255,
+    0.4396
+   ],
+   "triangles": 9408,
+   "materials": [
+    {
+     "slot": "MX_VaseAntique_0",
+     "source": "antique_ceramic_vase_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_VaseAntique_0_base.jpg",
+     "normal": "MX_VaseAntique_0_normal.jpg",
+     "mask": "MX_VaseAntique_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "ChessSet",
+   "size": [
+    0.5532,
+    0.5532,
+    0.1124
+   ],
+   "triangles": 39999,
+   "materials": [
+    {
+     "slot": "MX_ChessSet_0",
+     "source": "chess_set_pieces_white",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_ChessSet_0_base.jpg",
+     "normal": "MX_ChessSet_0_normal.jpg",
+     "mask": "MX_ChessSet_0_mask.png"
+    },
+    {
+     "slot": "MX_ChessSet_1",
+     "source": "chess_set_board",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_ChessSet_1_base.jpg",
+     "normal": "MX_ChessSet_1_normal.jpg",
+     "mask": "MX_ChessSet_1_mask.png"
+    },
+    {
+     "slot": "MX_ChessSet_2",
+     "source": "chess_set_pieces_black",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_ChessSet_2_base.jpg",
+     "normal": "MX_ChessSet_2_normal.jpg",
+     "mask": "MX_ChessSet_2_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "WineBottles",
+   "size": [
+    0.6763,
+    0.0805,
+    0.3314
+   ],
+   "triangles": 20000,
+   "materials": [
+    {
+     "slot": "MX_WineBottles_0",
+     "source": "wine_bottles_01_glass_orange",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_WineBottles_0_base.jpg",
+     "normal": "MX_WineBottles_0_normal.jpg",
+     "mask": "MX_WineBottles_0_mask.png"
+    },
+    {
+     "slot": "MX_WineBottles_1",
+     "source": "wine_bottles_01_seal_cork",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "mask",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_WineBottles_1_base.png",
+     "normal": "MX_WineBottles_1_normal.jpg",
+     "mask": "MX_WineBottles_1_mask.png"
+    },
+    {
+     "slot": "MX_WineBottles_2",
+     "source": "wine_bottles_01_wine_red",
+     "baseColor": [
+      0.5224650502204895,
+      0.04925941303372383,
+      0.024301469326019287,
+      1.0
+     ],
+     "metallic": 0.0,
+     "smoothness": 0.8717948496341705,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "slot": "MX_WineBottles_3",
+     "source": "wine_bottles_01_ftero_vinea_02",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "mask",
+     "cutoff": 0.5,
+     "normalScale": 0.4000000059604645,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_WineBottles_3_base.png",
+     "normal": "MX_WineBottles_3_normal.jpg",
+     "mask": "MX_WineBottles_3_mask.png"
+    },
+    {
+     "slot": "MX_WineBottles_4",
+     "source": "wine_bottles_01_glass_yellow",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_WineBottles_4_base.jpg",
+     "normal": "MX_WineBottles_4_normal.jpg",
+     "mask": "MX_WineBottles_4_mask.png"
+    },
+    {
+     "slot": "MX_WineBottles_5",
+     "source": "wine_bottles_01_wine_clear",
+     "baseColor": [
+      1.0,
+      0.9324522614479065,
+      0.7874122262001038,
+      1.0
+     ],
+     "metallic": 0.0,
+     "smoothness": 0.7948717772960663,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "slot": "MX_WineBottles_6",
+     "source": "wine_bottles_01_clearwater",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "mask",
+     "cutoff": 0.5,
+     "normalScale": 0.4000000059604645,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_WineBottles_6_base.png",
+     "normal": "MX_WineBottles_6_normal.jpg",
+     "mask": "MX_WineBottles_6_mask.png"
+    },
+    {
+     "slot": "MX_WineBottles_7",
+     "source": "wine_bottles_01_glass_clear",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_WineBottles_7_base.jpg",
+     "normal": "MX_WineBottles_7_normal.jpg",
+     "mask": "MX_WineBottles_7_mask.png"
+    },
+    {
+     "slot": "MX_WineBottles_8",
+     "source": "wine_bottles_01_wine_light_red",
+     "baseColor": [
+      1.0,
+      0.08782617002725601,
+      0.04163853079080582,
+      1.0
+     ],
+     "metallic": 0.0,
+     "smoothness": 0.8717948496341705,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "slot": "MX_WineBottles_9",
+     "source": "wine_bottles_01_intertwine",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "mask",
+     "cutoff": 0.5,
+     "normalScale": 0.4000000059604645,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_WineBottles_9_base.png",
+     "normal": "MX_WineBottles_9_normal.jpg",
+     "mask": "MX_WineBottles_9_mask.png"
+    },
+    {
+     "slot": "MX_WineBottles_10",
+     "source": "wine_bottles_01_glass_green",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_WineBottles_10_base.jpg",
+     "normal": "MX_WineBottles_10_normal.jpg",
+     "mask": "MX_WineBottles_10_mask.png"
+    },
+    {
+     "slot": "MX_WineBottles_11",
+     "source": "wine_bottles_01_ftero_vinea_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "mask",
+     "cutoff": 0.5,
+     "normalScale": 0.4000000059604645,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_WineBottles_11_base.png",
+     "normal": "MX_WineBottles_11_normal.jpg",
+     "mask": "MX_WineBottles_11_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "Bulb",
+   "size": [
+    0.06,
+    0.06,
+    0.1003
+   ],
+   "triangles": 1499,
+   "materials": [
+    {
+     "slot": "MX_Bulb_0",
+     "source": "lightbulb_01_glass",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "blend",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Bulb_0_base.png",
+     "normal": "MX_Bulb_0_normal.jpg",
+     "mask": "MX_Bulb_0_mask.png"
+    },
+    {
+     "slot": "MX_Bulb_1",
+     "source": "lightbulb_01_base",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      10.0,
+      10.0,
+      10.0
+     ],
+     "base": "MX_Bulb_1_base.jpg",
+     "normal": "MX_Bulb_1_normal.jpg",
+     "mask": "MX_Bulb_1_mask.png",
+     "emit": "MX_Bulb_1_emit.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Ukulele",
+   "size": [
+    0.1779,
+    0.0508,
+    0.527
+   ],
+   "triangles": 8912,
+   "materials": [
+    {
+     "slot": "MX_Ukulele_0",
+     "source": "Ukulele_01",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Ukulele_0_base.jpg",
+     "normal": "MX_Ukulele_0_normal.jpg",
+     "mask": "MX_Ukulele_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "DrumKit",
+   "size": [
+    1.5702,
+    1.2131,
+    0.9688
+   ],
+   "triangles": 140000,
+   "materials": [
+    {
+     "slot": "MX_DrumKit_0",
+     "source": "DrumSet",
+     "baseColor": [
+      0.72,
+      0.7,
+      0.66,
+      1.0
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_DrumKit_0_base.jpg",
+     "mask": "MX_DrumKit_0_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "Guitar",
+   "size": [
+    0.395,
+    0.2856,
+    1.05
+   ],
+   "triangles": 45000,
+   "materials": [
+    {
+     "slot": "MX_Guitar_0",
+     "source": "Cromo_MAT",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_0_base.jpg",
+     "normal": "MX_Guitar_0_normal.jpg",
+     "mask": "MX_Guitar_0_mask.png"
+    },
+    {
+     "slot": "MX_Guitar_1",
+     "source": "Bottoni_Manico_MAT",
+     "baseColor": [
+      0.013426199555397034,
+      0.013426199555397034,
+      0.013426199555397034,
+      1.0
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "mask": "MX_Guitar_1_mask.png"
+    },
+    {
+     "slot": "MX_Guitar_2",
+     "source": "Bulloni_MAT",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_2_base.jpg",
+     "normal": "MX_Guitar_2_normal.jpg",
+     "mask": "MX_Guitar_2_mask.png"
+    },
+    {
+     "slot": "MX_Guitar_3",
+     "source": "Capi_Corda_MAT",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 0.7064416408538818,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_3_base.jpg"
+    },
+    {
+     "slot": "MX_Guitar_4",
+     "source": "CopriCorpo_MAT",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_4_base.jpg",
+     "mask": "MX_Guitar_4_mask.png"
+    },
+    {
+     "slot": "MX_Guitar_5",
+     "source": "Copri_manico_MAT",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_5_base.jpg",
+     "normal": "MX_Guitar_5_normal.jpg",
+     "mask": "MX_Guitar_5_mask.png"
+    },
+    {
+     "slot": "MX_Guitar_6",
+     "source": "Corde_MAT",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 0.7125218212604523,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_6_base.jpg"
+    },
+    {
+     "slot": "MX_Guitar_7",
+     "source": "Corpo_chitarra",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 0.0,
+     "smoothness": 0.8645170778036118,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_7_base.jpg"
+    },
+    {
+     "slot": "MX_Guitar_8",
+     "source": "Legno_Manico_MAT",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_8_base.jpg",
+     "normal": "MX_Guitar_8_normal.jpg",
+     "mask": "MX_Guitar_8_mask.png"
+    },
+    {
+     "slot": "MX_Guitar_9",
+     "source": "PickUp_MAT",
+     "baseColor": [
+      1.0,
+      0.99821937084198,
+      0.9022800922393799,
+      1.0
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "normal": "MX_Guitar_9_normal.jpg",
+     "mask": "MX_Guitar_9_mask.png"
+    },
+    {
+     "slot": "MX_Guitar_10",
+     "source": "Plastica_manopola_MAT",
+     "baseColor": [
+      1.0,
+      0.9507534503936768,
+      0.699402391910553,
+      1.0
+     ],
+     "metallic": 0.0,
+     "smoothness": 0.7490028440952301,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "slot": "MX_Guitar_11",
+     "source": "Tasti_MAT",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_11_base.jpg",
+     "normal": "MX_Guitar_11_normal.jpg",
+     "mask": "MX_Guitar_11_mask.png"
+    },
+    {
+     "slot": "MX_Guitar_12",
+     "source": "Manopola_volume",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_12_base.jpg",
+     "normal": "MX_Guitar_12_normal.jpg",
+     "mask": "MX_Guitar_12_mask.png"
+    },
+    {
+     "slot": "MX_Guitar_13",
+     "source": "Volumi_MAT",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_13_base.jpg",
+     "normal": "MX_Guitar_13_normal.jpg",
+     "mask": "MX_Guitar_13_mask.png"
+    },
+    {
+     "slot": "MX_Guitar_14",
+     "source": "Gomma_MAT",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_14_base.jpg",
+     "normal": "MX_Guitar_14_normal.jpg",
+     "mask": "MX_Guitar_14_mask.png"
+    },
+    {
+     "slot": "MX_Guitar_15",
+     "source": "Ferro_nero",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Guitar_15_base.jpg",
+     "normal": "MX_Guitar_15_normal.jpg",
+     "mask": "MX_Guitar_15_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "Bass",
+   "size": [
+    0.3229,
+    0.0702,
+    1.15
+   ],
+   "triangles": 26330,
+   "materials": [
+    {
+     "slot": "MX_Bass_0",
+     "source": "bolts",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Bass_0_base.jpg",
+     "normal": "MX_Bass_0_normal.jpg",
+     "mask": "MX_Bass_0_mask.png"
+    },
+    {
+     "slot": "MX_Bass_1",
+     "source": "bas_guitare",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Bass_1_base.jpg",
+     "normal": "MX_Bass_1_normal.jpg",
+     "mask": "MX_Bass_1_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "Amp",
+   "size": [
+    0.6446,
+    0.3501,
+    0.4686
+   ],
+   "triangles": 1954,
+   "materials": [
+    {
+     "slot": "MX_Amp_0",
+     "source": "material",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 0.0,
+     "smoothness": 0.5483571290969849,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Amp_0_base.jpg",
+     "normal": "MX_Amp_0_normal.jpg"
+    },
+    {
+     "slot": "MX_Amp_1",
+     "source": "Panel",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Amp_1_base.jpg",
+     "mask": "MX_Amp_1_mask.png"
+    },
+    {
+     "slot": "MX_Amp_2",
+     "source": "Speaker",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Amp_2_base.jpg",
+     "mask": "MX_Amp_2_mask.png"
+    },
+    {
+     "slot": "MX_Amp_3",
+     "source": "material_2",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Amp_3_base.jpg",
+     "normal": "MX_Amp_3_normal.jpg",
+     "mask": "MX_Amp_3_mask.png"
+    }
+   ]
+  },
+  {
+   "name": "Piano",
+   "size": [
+    1.55,
+    0.5233,
+    1.1467
+   ],
+   "triangles": 3604,
+   "materials": [
+    {
+     "slot": "MX_Piano_0",
+     "source": "lambert7",
+     "baseColor": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "metallic": 1.0,
+     "smoothness": 1.0,
+     "alpha": "opaque",
+     "cutoff": 0.5,
+     "normalScale": 1.0,
+     "emission": [
+      0,
+      0,
+      0
+     ],
+     "base": "MX_Piano_0_base.jpg",
+     "mask": "MX_Piano_0_mask.png"
+    }
+   ]
+  }
+ ]
+}

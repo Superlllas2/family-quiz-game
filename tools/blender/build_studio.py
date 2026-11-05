@@ -213,6 +213,20 @@ def aimed(name, at, target):
     empty(prefix + "T_" + rest, target)
 
 
+PROP_COUNT = {}
+
+
+def prop(name, x, y, z, yaw=0.0, scale=1.0, tilt=0.0):
+    """Marks where Unity puts a bought-in prop (tools/blender/build_props.py, StudioProps.cs): Prop_<Name>_<n> at the
+    prop's bottom centre, its front turned yaw degrees from the audience (positive faces +x), tipped back tilt degrees."""
+    n = PROP_COUNT.get(name, 0) + 1
+    PROP_COUNT[name] = n
+    obj = empty("Prop_%s_%d" % (name, n), (x, y, z), math.radians(yaw))
+    obj.rotation_euler = (math.radians(tilt), 0.0, math.radians(yaw))   # XYZ: tipped about its own x, then turned
+    obj.scale = (scale, scale, scale)
+    return obj
+
+
 def turn_objects(names, pivot, degrees):
     """Turns already built objects (meshes and markers) about z around a design point of their zone, as a group."""
     m = (Matrix.Translation((pivot[0], pivot[1], 0)) @ Matrix.Rotation(math.radians(degrees), 4, "Z")
@@ -476,8 +490,8 @@ def build_room():
     for i, (px, py) in enumerate([(3.2, -0.6), (6.6, -2.6), (0.6, -4.4)]):
         aimed("LK_FloorPool_%d" % (i + 1), (px - 0.6, py - 1.2, WALL_TOP - 0.7), (px, py, 0.0))
     # The establishing shot looks into the bay from the front, high, and comes down (Unity lerps between the two).
-    aimed("CAM_EstablishStart", (2.4, -19.0, 5.6), (2.6, 0.0, 1.4))
-    aimed("CAM_EstablishEnd", (2.4, -16.4, 3.8), (2.6, 0.0, 1.1))
+    aimed("CAM_EstablishStart", (1.8, -21.5, 5.55), (2.4, 0.0, 1.3))   # below the ceiling (WALL_TOP)
+    aimed("CAM_EstablishEnd", (1.9, -18.6, 4.1), (2.4, 0.0, 1.1))
 
     build_guest_wall()
     build_curtain_wall()
@@ -639,7 +653,8 @@ def build_guest_area():
     # front of the riser, so the bottom of the Wide shot is not one bare plane.
     aimed("LK_RimGuests", (-4.6, 5.25, 4.9), (-4.6, 2.9, 0.7))
     aimed("LK_FloorPool_4", (-4.2, -0.6, WALL_TOP - 0.7), (-4.8, 0.9, 0.0))
-    aimed("CAM_Wide", (-3.1, -6.9, 2.5), (-3.1, 3.6, 1.05))
+    # Far enough back that every answer card fits, from the outer left armchair to the desk.
+    aimed("CAM_Wide", (-3.35, -7.6, 2.55), (-3.35, 3.6, 1.1))
     aimed("CAM_Seats", (-4.6, -5.6, 1.45), (-4.6, 3.6, 1.45))
 
     rug = Piece("Rug", bevel=0.004)
@@ -647,156 +662,80 @@ def build_guest_area():
     rug.build()
 
     seat_z = PLATFORM_TOP + 0.012
-    # Sofa: four seats, muted dark green fabric (D93) so the guests' colours stand out.
-    sofa_x0, sofa_x1 = -6.25, -3.05
-    sy0, sy1 = 3.25, 4.2
-    sofa = Piece("Sofa", bevel=0.045, segments=2, subsurf=1)
-    cushions = Piece("SofaCushions", bevel=0.06, segments=2, subsurf=1)
-    legs = Piece("SofaLegs", bevel=0.006)
-    sofa.box(sofa_x0, sofa_x1, sy0, sy1, seat_z + 0.12, seat_z + 0.36, "M_FabricSofa")            # base
-    sofa.box(sofa_x0, sofa_x0 + 0.2, sy0, sy1, seat_z + 0.12, seat_z + 0.62, "M_FabricSofa")      # arms
-    sofa.box(sofa_x1 - 0.2, sofa_x1, sy0, sy1, seat_z + 0.12, seat_z + 0.62, "M_FabricSofa")
-    sofa.box(sofa_x0 + 0.2, sofa_x1 - 0.2, sy1 - 0.22, sy1, seat_z + 0.36, seat_z + 0.86, "M_FabricSofa")  # back
-    inner0, inner1 = sofa_x0 + 0.2, sofa_x1 - 0.2
-    w = (inner1 - inner0) / 4
-    for i in range(4):
-        a, b = inner0 + i * w + 0.01, inner0 + (i + 1) * w - 0.01
-        v = cushions.box(a, b, sy0 + 0.01, sy1 - 0.2, seat_z + 0.34, seat_z + 0.52, "M_FabricSofa")     # seat cushion
-        sag(cushions, v, (0.012, 0.022, 0.016, 0.01)[i])          # worn in, each a little differently
-        cushions.box(a, b, sy1 - 0.4, sy1 - 0.2, seat_z + 0.5, seat_z + 0.88, "M_FabricSofa")      # back cushion
-    for x in [sofa_x0 + 0.08, sofa_x1 - 0.08]:
-        for y in [sy0 + 0.08, sy1 - 0.08]:
-            legs.cyl((x, y, seat_z + 0.06), 0.03, 0.12, "M_WoodWarm", segments=12, radius2=0.022)
-    sofa.build()
-    cushions.build()
-    legs.build()
-    sofa_seats = [inner0 + (i + 0.5) * w for i in range(4)]
-
-    # Two throw pillows sunk into the sofa's corners, not a matching pair, and a folded wool throw over the right arm.
-    pillows = Piece("SofaPillows", bevel=0.05, segments=2, subsurf=1)
-    for px, mat, turn, lean in ((inner0 + 0.2, "M_PillowA", 0.5, 0.32), (inner1 - 0.19, "M_PillowB", -0.42, 0.24)):
-        v = pillows.box(-0.2, 0.2, -0.065, 0.065, -0.19, 0.19, mat)
-        bmesh.ops.rotate(pillows.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(-lean, 3, "X"), verts=v)   # top leans back
-        bmesh.ops.rotate(pillows.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(turn, 3, "Z"), verts=v)    # into the corner
-        bmesh.ops.translate(pillows.bm, vec=(px, sy1 - 0.47, seat_z + 0.52 + 0.17), verts=v)
-    pillows.build()
-    throw = Piece("SofaThrow", bevel=0.012, segments=2, subsurf=1)
-    ax0, ax1 = sofa_x1 - 0.22, sofa_x1 + 0.005
-    by0, by1 = sy0 + 0.12, sy0 + 0.55
-    throw.box(ax0, ax1, by0, by1, seat_z + 0.6, seat_z + 0.645, "M_Blanket")              # folded over the top
-    throw.box(ax1, ax1 + 0.035, by0, by1, seat_z + 0.3, seat_z + 0.645, "M_Blanket")      # hanging down the outside
-    throw.build()
+    # The sofa: a long tufted sofa re-tinted the muted dark green of D93, deep, so the guests sit well back from the
+    # coffee table (a bought-in model, tools/blender/build_props.py; its seat is 0.55 m up, its seats 0.74 m apart).
+    sofa_cx, sofa_front = -4.65, 3.1
+    prop("LongSofa", sofa_cx, sofa_front + 0.75, seat_z)
+    sofa_seats = [sofa_cx + dx for dx in (-1.12, -0.38, 0.38, 1.12)]
+    sofa_y, sofa_top = sofa_front + 0.5, seat_z + 0.55
 
     # Armchairs: two on each side in an arc that comes forward at the ends, turned in towards the sofa so the guests
-    # sit as one conversation group (a positive turn faces +x). Not quite mirrored: the right pair sits a touch
-    # tighter and turns more, towards the desk.
-    chairs = Piece("Armchairs", bevel=0.04, segments=2, subsurf=1)
-    chair_cushions = Piece("ArmchairCushions", bevel=0.05, segments=2, subsurf=1)
-    chair_legs = Piece("ArmchairLegs", bevel=0.005)
-    arm_specs = [(-8.3, 2.82, math.radians(21)), (-7.18, 3.08, math.radians(11)),
-                 (-2.1, 3.1, math.radians(-13)), (-1.02, 2.86, math.radians(-24))]
+    # sit as one conversation group (a positive turn faces +x). The outer pair are classic upholstered tub chairs, the
+    # inner pair leather and wood, so they are not a matched set; the right pair turns more, towards the desk.
+    arm_specs = [(-8.5, 2.82, 21, "ArmChair", 0.77, 0.5), (-7.38, 3.08, 11, "ModernArmChair", 0.99, 0.55),
+                 (-1.85, 3.1, -13, "ModernArmChair", 0.99, 0.55), (-0.75, 2.86, -24, "ArmChair", 0.77, 0.5)]
     seat_points = []
-    for k, (cx, cy, yaw) in enumerate(arm_specs):
-        p = (cx, cy + 0.45, 0)
-        cw, cd = 0.88, 0.9
-        x0, x1, y0, y1 = cx - cw / 2, cx + cw / 2, cy, cy + cd
-        fab = "M_FabricChair" if k in (0, 3) else "M_FabricChair2"   # the outer and the inner pair differ
-        chairs.box(x0, x1, y0, y1, seat_z + 0.14, seat_z + 0.38, fab, yaw, p)
-        chairs.box(x0, x0 + 0.13, y0, y1, seat_z + 0.14, seat_z + 0.62, fab, yaw, p)
-        chairs.box(x1 - 0.13, x1, y0, y1, seat_z + 0.14, seat_z + 0.62, fab, yaw, p)
-        chairs.box(x0 + 0.13, x1 - 0.13, y1 - 0.18, y1, seat_z + 0.38, seat_z + 0.9, fab, yaw, p)
-        # The seat cushion sits a little lower at the front, as if it has been sat in.
-        v = chair_cushions.box(x0 + 0.13, x1 - 0.13, y0 + 0.01, y1 - 0.16, seat_z + 0.36, seat_z + 0.54, fab)
-        sag(chair_cushions, v, 0.018)
-        bmesh.ops.rotate(chair_cushions.bm, cent=p, matrix=Matrix.Rotation(yaw, 3, "Z"), verts=v)
-        for lx in [x0 + 0.07, x1 - 0.07]:
-            for ly in [y0 + 0.07, y1 - 0.07]:
-                v = chair_legs.cyl((lx, ly, seat_z + 0.07), 0.025, 0.14, "M_WoodWarm", segments=10, radius2=0.018)
-                bmesh.ops.rotate(chair_legs.bm, cent=p, matrix=Matrix.Rotation(yaw, 3, "Z"), verts=v)
-        seat_points.append((cx, cy + 0.36, yaw))
-    chairs.build()
-    chair_cushions.build()
-    chair_legs.build()
+    for cx, cy, yaw, model, depth, seat in arm_specs:
+        prop(model, cx, cy + depth / 2, seat_z, yaw)
+        seat_points.append((cx, cy + 0.34, math.radians(yaw), seat_z + seat))
 
     # Seat markers in fill order (docs/21_staging.md, "Seats").
-    top = seat_z + 0.52
-    sofa_y = sy0 + 0.33
     order = [
-        (sofa_seats[1], sofa_y, 0.0), (sofa_seats[2], sofa_y, 0.0),
-        (sofa_seats[0], sofa_y, 0.0), (sofa_seats[3], sofa_y, 0.0),
+        (sofa_seats[1], sofa_y, 0.0, sofa_top), (sofa_seats[2], sofa_y, 0.0, sofa_top),
+        (sofa_seats[0], sofa_y, 0.0, sofa_top), (sofa_seats[3], sofa_y, 0.0, sofa_top),
         seat_points[1], seat_points[2],
         seat_points[0], seat_points[3],
     ]
-    for i, (x, y, yaw) in enumerate(order):
-        empty("Seat_%d" % (i + 1), (x, y, top), yaw)
+    for i, (x, y, yaw, z) in enumerate(order):
+        empty("Seat_%d" % (i + 1), (x, y, z), yaw)
 
-    # A low coffee table in front of the sofa, below the name tags, with a stack of books and a bowl; set a few
-    # degrees off square, as if someone nudged it.
+    # A low coffee table in front of the sofa, below the name tags, set a few degrees off square as if someone nudged
+    # it: a chess game left half played, a candle and a mug on a coaster.
     before = {o.name for o in COLLECTION.objects}
-    table = Piece("CoffeeTable", bevel=0.01)
-    tx0, tx1, ty0, ty1 = -5.5, -3.8, 2.15, 2.6
-    tz = PLATFORM_TOP + 0.012 + 0.32   # kept low and forward, so the name tags stay clear above it
-    table.box(tx0, tx1, ty0, ty1, tz - 0.04, tz, "M_WoodWarm")
-    table.box(tx0 + 0.08, tx1 - 0.08, ty0 + 0.06, ty1 - 0.06, PLATFORM_TOP + 0.1, PLATFORM_TOP + 0.13, "M_WoodWarm")
-    for lx in [tx0 + 0.06, tx1 - 0.06]:
-        for ly in [ty0 + 0.06, ty1 - 0.06]:
-            table.cyl((lx, ly, (PLATFORM_TOP + tz) / 2), 0.022, tz - PLATFORM_TOP, "M_WoodWarm", segments=10, radius2=0.016)
-    table.build()
+    tcx, tcy = sofa_cx, 2.45
+    tz = seat_z + 0.39
+    prop("CoffeeTable", tcx, tcy, seat_z)
+    prop("ChessSet", tcx - 0.28, tcy, tz, 12)
+    prop("Candlestick", tcx + 0.3, tcy + 0.1, tz)
+    light_marker("Candle", (tcx + 0.3, tcy + 0.1, tz + 0.26))
     deco = Piece("CoffeeTableProps", bevel=0.003)
-    for k, (h, mat) in enumerate([(0.035, "M_BookB"), (0.03, "M_BookE"), (0.04, "M_BookA")]):
-        z = tz + sum(x for x, _ in [(0.035, 0), (0.03, 0), (0.04, 0)][:k])
-        deco.box(tx0 + 0.25 + k * 0.01, tx0 + 0.55 - k * 0.015, ty0 + 0.12, ty0 + 0.36 - k * 0.01, z, z + h, mat)
-    deco.cyl((tx1 - 0.45, (ty0 + ty1) / 2, tz + 0.05), 0.14, 0.1, "M_Ceramic", segments=24, radius2=0.08)
-    # Two cork coasters, a mug left on one of them.
-    for cx_, cy_ in ((tx1 - 0.2, ty0 + 0.13), (tx1 - 0.12, ty1 - 0.12)):
-        deco.cyl((cx_, cy_, tz + 0.004), 0.045, 0.008, "M_Cork", segments=16)
-    mug(deco, tx1 - 0.2, ty0 + 0.13, tz + 0.008, "M_MugB", 2.3)
+    deco.cyl((tcx + 0.42, tcy - 0.12, tz + 0.004), 0.045, 0.008, "M_Cork", segments=16)
+    mug(deco, tcx + 0.42, tcy - 0.12, tz + 0.008, "M_MugB", 2.3)
     deco.build()
-    turn_objects(built_since(before), ((tx0 + tx1) / 2, (ty0 + ty1) / 2), -3.0)
+    turn_objects(built_since(before), (tcx, tcy), -3.0)
 
-    # Floor lamp beside the outer left armchair, pendants over the sofa.
-    lamp = Piece("FloorLamp", bevel=0.004)
-    lamp.cyl((-9.55, 4.6, PLATFORM_TOP + 0.015), 0.17, 0.03, "M_MetalBrass", segments=24)
-    lamp.cyl((-9.55, 4.6, PLATFORM_TOP + 0.8), 0.015, 1.55, "M_MetalBrass", segments=10)
-    # The shade is tipped towards the armchairs, as if someone angled it to read by.
-    v = lamp.cyl((0, 0, 0), 0.28, 0.34, "M_LampShade", segments=32, radius2=0.2, caps=False)
-    bmesh.ops.rotate(lamp.bm, cent=(0, 0, 0), matrix=Matrix.Rotation(-0.24, 3, "Y"), verts=v)
-    bmesh.ops.translate(lamp.bm, vec=(-9.51, 4.6, PLATFORM_TOP + 1.68), verts=v)
-    lamp.build()
-    empty("LP_FloorLamp_1", (-9.48, 4.6, PLATFORM_TOP + 1.6))
+    # Side tables at the sofa's arms, set back between the sofa and the armchairs, each with a glowing oil lamp.
+    prop("Nightstand", -6.72, 4.25, seat_z)
+    prop("OilLamp", -6.78, 4.22, seat_z + 0.7)
+    prop("StandingFrame", -6.55, 4.3, seat_z + 0.7, -20)
+    empty("LP_TableLamp_1", (-6.78, 4.22, seat_z + 0.7 + 0.52))
+    prop("SideTable", -2.62, 4.25, seat_z, 7)
+    prop("OilLamp", -2.7, 4.25, seat_z + 0.55)
+    prop("VaseWhite", -2.45, 4.32, seat_z + 0.55)
+    empty("LP_TableLamp_3", (-2.7, 4.25, seat_z + 0.55 + 0.52))
 
-    pend = Piece("Pendants", bevel=0.003)
-    for i, x in enumerate([-5.45, -3.85]):
-        pend.cyl((x, 3.75, (3.4 + WALL_TOP) / 2), 0.006, WALL_TOP - 3.4, "M_MetalBlack", segments=6)
-        pend.cyl((x, 3.75, 3.28), 0.3, 0.26, "M_MetalBrass", segments=32, radius2=0.05, caps=False)
-        pend.sphere((x, 3.75, 3.18), 0.06, "M_Bulb")
-        empty("LP_Pendant_%d" % (i + 1), (x, 3.75, 3.12))
-    pend.build()
+    # Floor lamps behind the outer armchairs, a big plant in the far corner of the window wall.
+    for i, (x, y) in enumerate([(-9.2, 4.3), (-0.2, 4.55)]):
+        prop("FloorLamp", x, y, PLATFORM_TOP)
+        empty("LP_FloorLamp_%d" % (i + 1), (x, y, PLATFORM_TOP + 1.38))
+    prop("PlantWide", -9.62, 5.05, PLATFORM_TOP, 30)
 
-    # Side table between the left armchairs and the sofa, with a small lamp.
-    stx, sty = -6.47, 3.98
-    table = Piece("SideTable", bevel=0.008)
-    table.cyl((stx, sty, PLATFORM_TOP + 0.52), 0.2, 0.035, "M_WoodWarm", segments=28)
-    table.cyl((stx, sty, PLATFORM_TOP + 0.26), 0.03, 0.5, "M_WoodWarm", segments=10)
-    table.cyl((stx, sty, PLATFORM_TOP + 0.04), 0.15, 0.03, "M_WoodWarm", segments=24)
-    table.cyl((stx - 0.03, sty + 0.04, PLATFORM_TOP + 0.62), 0.05, 0.16, "M_Ceramic", segments=16)
-    table.cyl((stx - 0.03, sty + 0.04, PLATFORM_TOP + 0.8), 0.14, 0.18, "M_LampShade", segments=24, radius2=0.1, caps=False)
-    table.build()
-    empty("LP_TableLamp_1", (stx - 0.03, sty + 0.04, PLATFORM_TOP + 0.78))
+    # A chandelier with little fabric shades over the coffee table, on a rod from the ceiling.
+    chz = 2.75
+    prop("Chandelier", sofa_cx, 3.55, chz)
+    rod_piece = Piece("ChandelierRod", bevel=0.0)
+    rod_piece.cyl((sofa_cx, 3.55, (chz + 0.8 + WALL_TOP) / 2), 0.008, WALL_TOP - chz - 0.8, "M_MetalBrass", segments=8)
+    rod_piece.cyl((sofa_cx, 3.55, WALL_TOP - 0.03), 0.07, 0.05, "M_MetalBrass", segments=16)
+    rod_piece.build()
+    empty("LP_Pendant_1", (sofa_cx, 3.55, chz + 0.35))
 
-    # A small square table on the other side of the sofa, turned a little: a mug and two books, no lamp.
-    rtx, rty, rturn = -2.8, 4.02, math.radians(7)
-    piv = (rtx, rty, 0)
-    t2 = Piece("SideTable2", bevel=0.008)
-    t2.box(rtx - 0.18, rtx + 0.18, rty - 0.18, rty + 0.18, PLATFORM_TOP + 0.5, PLATFORM_TOP + 0.53, "M_WoodWarm", rturn, piv)
-    t2.box(rtx - 0.15, rtx + 0.15, rty - 0.15, rty + 0.15, PLATFORM_TOP + 0.16, PLATFORM_TOP + 0.18, "M_WoodWarm", rturn, piv)
-    for lx in (rtx - 0.155, rtx + 0.155):
-        for ly in (rty - 0.155, rty + 0.155):
-            t2.box(lx - 0.016, lx + 0.016, ly - 0.016, ly + 0.016, PLATFORM_TOP, PLATFORM_TOP + 0.5, "M_WoodWarm", rturn, piv)
-    t2.box(rtx - 0.12, rtx + 0.1, rty - 0.06, rty + 0.12, PLATFORM_TOP + 0.53, PLATFORM_TOP + 0.56, "M_BookD", rturn + 0.2)
-    t2.box(rtx - 0.1, rtx + 0.08, rty - 0.04, rty + 0.1, PLATFORM_TOP + 0.56, PLATFORM_TOP + 0.585, "M_BookC", rturn - 0.15)
-    mug(t2, rtx + 0.08, rty - 0.1, PLATFORM_TOP + 0.53, "M_MugA", -0.6)
-    t2.build()
+    # Candles on the window sill: a brass candelabra set at the left end, two wooden candlesticks at the right.
+    sill = WINDOW_Z[0]
+    prop("Candles", -7.75, GUEST_WALL_Y + 0.02, sill, 0)
+    light_marker("Candle", (-7.75, GUEST_WALL_Y - 0.02, sill + 0.7))
+    for i, x in enumerate([-1.75, -1.5]):
+        prop("Candlestick", x, GUEST_WALL_Y + 0.01 - 0.05 * i, sill, 0, 1.0 - 0.18 * i)
+    light_marker("Candle", (-1.62, GUEST_WALL_Y, sill + 0.26))
 
 
 # ------------------------------------------------------------------------------------------------ the desk
@@ -884,6 +823,7 @@ def build_desk():
     empty("Host_ilja", (DESK_CX + 0.55, back + 0.4, z0 + 0.52), 0.0)
     # The desk, its rug, the hosts and their shots turn a little towards the guests, so the hosts and the sofa read as
     # one conversation (a negative turn faces the desk front towards -x, the guests).
+    prop("PlantSmall", DESK_CX - 1.0, front + 0.62, top_z + 0.06, 0)
     rug2 = Piece("RugDesk", bevel=0.004)
     rug2.box(-0.15, 2.45, 2.3, 4.6, PLATFORM_TOP, PLATFORM_TOP + 0.01, "M_Rug2")
     rug2.build()
@@ -901,12 +841,25 @@ def build_desk():
     for z in levels:
         shelf.box(sx0, sx1, sy0, sy1, z, z + 0.04, "M_WoodDark")
     shelf.build()
-    fill_books("HostShelfBooks", sx0 + 0.07, sx1 - 0.07, sy0 + 0.04, sy1 - 0.06, levels[:-1], skip_mid=(sx0 + sx1) / 2)
+    # Bought-in pieces among the books: an encyclopedia set, a mantel clock, vases and a small plant, each in a gap
+    # the books leave for it (level, x0, x1 in the shelf's frame).
+    sy_back = sy1 - 0.1
+    shelf_props = [(1, "Encyclopedia", sx0 + 0.62, 0.0, 0.62), (1, "VaseAntique", sx1 - 0.35, 0.0, 0.32),
+                   (2, "MantelClock", sx1 - 0.55, 0.0, 0.42), (2, "VaseWhite", sx0 + 0.3, 0.0, 0.26),
+                   (3, "Encyclopedia", sx1 - 0.65, -6.0, 0.62), (3, "PlantSmall", sx0 + 0.3, 0.0, 0.24),
+                   (4, "PlantSmall", sx1 - 0.35, 30.0, 0.24), (4, "VaseBrass", sx0 + 0.45, 0.0, 0.26)]
+    skips = []
+    for level, name, x, yaw, width in shelf_props:
+        prop(name, x, sy_back - (0.05 if name == "Encyclopedia" else 0.1), levels[level] + 0.04, yaw)
+        skips.append((level, x - width / 2 - 0.03, x + width / 2 + 0.03))
+    fill_books("HostShelfBooks", sx0 + 0.07, sx1 - 0.07, sy0 + 0.04, sy1 - 0.06, levels[:-1], skip_mid=(sx0 + sx1) / 2,
+               skips=skips)
+    prop("VaseBrass", sx1 - 0.4, sy_back - 0.08, levels[-1] + 0.04)
     for i, z in enumerate([0.79, 2.29]):
         empty("LP_Shelf_%d" % (i + 1), ((sx0 + sx1) / 2, sy0 + 0.1, levels[[1, 3][i]] + 0.62))
 
 
-def fill_books(name, x0, x1, y0, y1, levels, skip_mid=None):
+def fill_books(name, x0, x1, y0, y1, levels, skip_mid=None, skips=()):
     books = Piece(name, bevel=0.003)
     mats = ["M_BookA", "M_BookB", "M_BookC", "M_BookD", "M_BookE"]
     for li, z in enumerate(levels):
@@ -914,6 +867,10 @@ def fill_books(name, x0, x1, y0, y1, levels, skip_mid=None):
         while x < x1 - 0.05:
             if skip_mid is not None and abs(x - skip_mid) < 0.06:
                 x += 0.08
+                continue
+            gap = next((b for level, a, b in skips if level == li and a - 0.05 <= x < b), None)
+            if gap is not None:
+                x = gap
                 continue
             if random.random() < 0.12:
                 # A gap with a small object instead of books.
@@ -926,7 +883,8 @@ def fill_books(name, x0, x1, y0, y1, levels, skip_mid=None):
                 wb = random.uniform(0.025, 0.055)
                 hb = random.uniform(0.2, 0.32)
                 db = random.uniform(0.17, (y1 - y0))
-                if x + wb > x1 or (skip_mid is not None and abs(x + wb - skip_mid) < 0.05):
+                if x + wb > x1 or (skip_mid is not None and abs(x + wb - skip_mid) < 0.05) \
+                        or any(level == li and a <= x + wb and x < b for level, a, b in skips):
                     break
                 books.box(x, x + wb, y1 - db, y1, z + 0.04, z + 0.04 + hb, random.choice(mats))
                 if wb > 0.03 and random.random() < 0.45:
@@ -1161,58 +1119,39 @@ def build_band():
     edge_strips(strip, deck, [0, 1, 2, 5], 0.16, 0.22, "M_GlowStrip")
     edge_strips(strip, drums, [5, 0, 1], BAND_DECK_TOP + 0.14, BAND_DECK_TOP + 0.19, "M_GlowStrip")
     strip.build()
-    top = DRUM_RISER_TOP
-    kit = Piece("DrumKit", bevel=0.004)
+    # The instruments are bought-in models (tools/blender/build_props.py): a drum kit with its stool on the riser, an
+    # upright piano against the wall with a bench, a guitar on its stand and a bass on a stand by two combo amps.
     bx, by = 11.3, 5.0
-    kit.cyl((bx, by, top + 0.3), 0.3, 0.42, "M_DrumShell", axis="y", segments=32)
-    kit.cyl((bx, by - 0.22, top + 0.3), 0.27, 0.01, "M_DrumHead", axis="y", segments=32)
-    kit.cyl((bx - 0.45, by - 0.25, top + 0.62), 0.18, 0.16, "M_DrumShell", segments=24)   # snare
-    kit.cyl((bx - 0.45, by - 0.25, top + 0.71), 0.17, 0.01, "M_DrumHead", segments=24)
-    kit.cyl((bx - 0.45, by - 0.25, top + 0.3), 0.012, 0.6, "M_Chrome", segments=8)
-    for tx in [bx - 0.18, bx + 0.18]:
-        kit.cyl((tx, by - 0.05, top + 0.78), 0.14, 0.16, "M_DrumShell", segments=24)
-        kit.cyl((tx, by - 0.05, top + 0.865), 0.13, 0.01, "M_DrumHead", segments=24)
-    kit.cyl((bx + 0.55, by - 0.15, top + 0.32), 0.22, 0.45, "M_DrumShell", segments=24)    # floor tom
-    kit.cyl((bx + 0.55, by - 0.15, top + 0.55), 0.21, 0.01, "M_DrumHead", segments=24)
-    for cxp, cyp, h in [(bx - 0.75, by - 0.05, 1.05), (bx + 0.7, by + 0.25, 1.25), (bx - 0.35, by + 0.3, 1.3)]:
-        kit.cyl((cxp, cyp, top + h / 2), 0.01, h, "M_Chrome", segments=8)
-        kit.cyl((cxp, cyp, top + h), 0.24, 0.006, "M_Cymbal", segments=32, radius2=0.2)
-    # Chrome hoops at each head (open bands just wider than the shell).
-    kit.cyl((bx, by - 0.2, top + 0.3), 0.315, 0.035, "M_Chrome", axis="y", segments=32, caps=False)
-    kit.cyl((bx, by + 0.2, top + 0.3), 0.315, 0.035, "M_Chrome", axis="y", segments=32, caps=False)
-    for hx, hy, hz, r in [(bx - 0.45, by - 0.25, top + 0.70, 0.19), (bx - 0.45, by - 0.25, top + 0.54, 0.19),
-                          (bx - 0.18, by - 0.05, top + 0.855, 0.15), (bx + 0.18, by - 0.05, top + 0.855, 0.15),
-                          (bx + 0.55, by - 0.15, top + 0.54, 0.23)]:
-        kit.cyl((hx, hy, hz), r, 0.03, "M_Chrome", segments=28, caps=False)
-    kit.cyl((bx, by + 0.45, top + 0.25), 0.18, 0.06, "M_Leather", segments=20)             # stool
-    kit.cyl((bx, by + 0.45, top + 0.12), 0.02, 0.24, "M_Chrome", segments=8)
-    kit.build()
-
-    # The drum rug sits on the drum riser; everything else stands on the deck.
     rug = Piece("BandRug", bevel=0.004)
-    rug.box(bx - 0.8, bx + 0.8, by - 0.75, by + 0.85, top, top + 0.01, "M_BandRug")
+    rug.box(bx - 0.95, bx + 0.95, by - 0.95, by + 0.9, DRUM_RISER_TOP, DRUM_RISER_TOP + 0.01, "M_BandRug")
     rug.build()
+    prop("DrumKit", bx, by - 0.05, DRUM_RISER_TOP + 0.01)
     top = BAND_DECK_TOP
+    prop("Piano", 9.05, wy - 0.3, top)
+    bench = Piece("PianoBench", bevel=0.01)
+    pbx, pby = 9.05, wy - 0.95
+    bench.box(pbx - 0.42, pbx + 0.42, pby - 0.17, pby + 0.17, top + 0.44, top + 0.5, "M_Leather")
+    bench.box(pbx - 0.44, pbx + 0.44, pby - 0.19, pby + 0.19, top + 0.38, top + 0.44, "M_WoodWarm")
+    for lx in (pbx - 0.38, pbx + 0.38):
+        for ly in (pby - 0.14, pby + 0.14):
+            bench.cyl((lx, ly, top + 0.19), 0.022, 0.38, "M_WoodWarm", segments=10, radius2=0.017)
+    bench.build()
+    prop("Ukulele", 10.1, wy - 0.03, 1.72, 8)
+    prop("Amp", 12.95, wy - 0.22, top)
+    prop("Amp", 13.66, wy - 0.24, top, -6)
+    prop("Guitar", 12.55, 4.9, top, -18)
+    prop("Bass", 13.55, 4.62, top + 0.16, -10, 1.0, -14)
 
-    keys = Piece("Keyboard", bevel=0.006)
-    kx, ky = 9.4, 3.6
-    keys.box(kx - 0.6, kx + 0.6, ky - 0.18, ky + 0.18, top + 0.85, top + 0.95, "M_MetalBlack")
-    keys.box(kx - 0.55, kx + 0.55, ky - 0.17, ky + 0.02, top + 0.95, top + 0.965, "M_KeysWhite")
-    for s in [-1, 1]:
-        v = keys.box(kx - 0.02, kx + 0.02, ky - 0.25, ky + 0.25, top, top + 0.88, "M_MetalBlack")
-        bmesh.ops.rotate(keys.bm, cent=(kx, ky, top + 0.44), matrix=Matrix.Rotation(s * 0.5, 3, "X"), verts=v)
-    keys.build()
-
-    # What makes it a working band corner: a rug under the drums, a stool at the keys, a music stand for the bass
-    # player (its desk faces the player, so the audience sees its back) and a small lamp left on the amp.
     gear = Piece("BandGear", bevel=0.004)
-    gear.cyl((kx, ky + 0.5, top + 0.6), 0.16, 0.05, "M_Leather", segments=20)                # keyboard stool
-    gear.cyl((kx, ky + 0.5, top + 0.3), 0.018, 0.58, "M_Chrome", segments=8)
-    for k in range(3):
-        a = 2 * math.pi * k / 3 + 0.3
-        rod(gear, (kx, ky + 0.5, top + 0.2), (kx + 0.2 * math.cos(a), ky + 0.5 + 0.2 * math.sin(a), top), 0.01, "M_Chrome")
-    msx, msy = 12.85, 3.75
-    gear.cyl((msx, msy, top + 0.55), 0.008, 1.1, "M_MetalBlack", segments=8)                 # music stand
+    # A stand for the bass: two front legs to a cradle under the body, a back leg up to the neck.
+    sx, sy = 13.55, 4.62
+    rod(gear, (sx - 0.14, sy - 0.12, top), (sx - 0.08, sy - 0.04, top + 0.2), 0.008, "M_MetalBlack")
+    rod(gear, (sx + 0.14, sy - 0.12, top), (sx + 0.08, sy - 0.04, top + 0.2), 0.008, "M_MetalBlack")
+    rod(gear, (sx - 0.12, sy - 0.05, top + 0.2), (sx + 0.12, sy - 0.05, top + 0.2), 0.009, "M_MetalBlack")
+    rod(gear, (sx, sy + 0.32, top), (sx, sy + 0.17, top + 0.86), 0.008, "M_MetalBlack")
+    # A music stand for the bass player (its desk faces the player, so the audience sees its back).
+    msx, msy = 12.95, 3.75
+    gear.cyl((msx, msy, top + 0.55), 0.008, 1.1, "M_MetalBlack", segments=8)
     for k in range(3):
         a = 2 * math.pi * k / 3 + 1.0
         rod(gear, (msx, msy, top + 0.25), (msx + 0.22 * math.cos(a), msy + 0.22 * math.sin(a), top), 0.007, "M_MetalBlack")
@@ -1222,24 +1161,19 @@ def build_band():
     v = gear.box(msx - 0.2, msx + 0.2, msy + 0.008, msy + 0.012, -0.14, 0.14, "M_Paper")           # sheet music
     bmesh.ops.rotate(gear.bm, cent=(msx, msy, 0), matrix=Matrix.Rotation(-0.35, 3, "X"), verts=v)
     bmesh.ops.translate(gear.bm, vec=(0, 0, top + 1.2), verts=v)
-    alx, aly, alz = 9.2, 5.6, top + 0.5                                                      # the amp's top
+    # A small lamp left on the guitar amp, and a vocal mic at the front of the stage.
+    alx, aly, alz = 12.95, wy - 0.22, top + 0.47
     gear.cyl((alx, aly, alz + 0.08), 0.045, 0.16, "M_Ceramic", segments=14)
     gear.cyl((alx, aly, alz + 0.24), 0.12, 0.15, "M_LampShade", segments=20, radius2=0.085, caps=False)
+    mx, my = 11.1, 2.3
+    gear.cyl((mx, my, top + 0.7), 0.01, 1.4, "M_Chrome", segments=8)
+    gear.cyl((mx, my, top + 0.02), 0.14, 0.03, "M_MetalBlack", segments=16)
+    gear.cyl((mx, my - 0.05, top + 1.43), 0.025, 0.12, "M_MetalBlack", segments=12, axis="y")
     gear.build()
     empty("LP_TableLamp_2", (alx, aly, alz + 0.22))
-
-    # A guitar and a bass resting on stands (no players yet).
-    build_guitar("Guitar", 13.0, 5.35, top, "M_DrumShell", 1.0)
-    build_guitar("Bass", 13.55, 4.7, top, "M_WoodWarm", 1.18)
-
-    amp = Piece("Amps", bevel=0.012)
-    amp.box(12.65, 13.25, 5.45, 5.85, top, top + 0.62, "M_Amp")
-    amp.box(12.7, 13.2, 5.43, 5.45, top + 0.06, top + 0.5, "M_AmpCloth")
-    amp.box(8.97, 9.43, 5.43, 5.78, top, top + 0.5, "M_Amp")
-    amp.cyl((11.1, 2.3, top + 0.7), 0.01, 1.4, "M_Chrome", segments=8)                      # mic stand
-    amp.cyl((11.1, 2.3, top + 0.02), 0.14, 0.03, "M_MetalBlack", segments=16)
-    amp.cyl((11.1, 2.25, top + 1.43), 0.025, 0.12, "M_MetalBlack", segments=12, axis="y")
-    amp.build()
+    # A lamp on the piano.
+    prop("OilLamp", 9.6, wy - 0.25, top + 1.15)
+    empty("LP_TableLamp_4", (9.6, wy - 0.25, top + 1.15 + 0.52))
 
 
 def build_guitar(name, x, y, floor_z, body_mat, scale):
@@ -1273,13 +1207,16 @@ def build_guitar(name, x, y, floor_z, body_mat, scale):
 
 def build_dressing():
     set_zone("Guests")
-    # Plants: a big one by the window, one beside the stage, small ones on the shelves.
-    plant("PlantBig", -9.6, GUEST_WALL_Y - 0.36, PLATFORM_TOP, 0.9)
-    plant("PlantShelf2", DESK_CX + 1.1, GUEST_WALL_Y - 0.25, 2.99, 0.3)
+    # Bought-in plants and pictures (tools/blender/build_props.py): a tall plant in the corner beside the host shelf,
+    # one on the apron by the corner, one on the band stage; framed paintings on the walls beside the arch and the band.
+    prop("PlantTall", 3.22, GUEST_WALL_Y - 0.45, PLATFORM_TOP, 15)
     set_zone("Stage")
-    plant("PlantStage", 1.62, PROSC_Y[0] - 0.35, STAGE_TOP, 0.85)
+    prop("PlantWide", 1.85, PROSC_Y[0] - 0.42, STAGE_TOP, -20)
+    prop("PictureFrame2", 1.85, PROSC_Y[0] - 0.05, 1.75)    # origin at the bottom centre: half its depth off the wall
+    prop("PictureFrame1", 9.55, PROSC_Y[0] - 0.012, 2.15)
     set_zone("Band")
-    plant("PlantBand", 7.85, 5.55, BAND_DECK_TOP, 0.7)
+    prop("PlantTall", 7.95, BAND_WALL_Y - 0.4, BAND_DECK_TOP, -40, 0.85)
+    prop("PictureFrame1", 11.3, BAND_WALL_Y - 0.015, 2.55, 0, 1.25)
 
     # A big flat rug on the open floor in front of the stage: the third zone of the bay (guests, desk, the floor where
     # the winner walks), so the middle of the studio is no longer one bare plane. It stays flat: nothing on the floor
@@ -1289,8 +1226,38 @@ def build_dressing():
     rug.box(FLOOR_RUG["x0"], FLOOR_RUG["x1"], FLOOR_RUG["y0"], FLOOR_RUG["y1"], 0.0, 0.012, "M_Rug3")
     rug.build()
 
-    # Wall sconces on both sides of the proscenium and on the band wall.
-    for zone, name, specs in (("Stage", "Sconces", [(1.85, PROSC_Y[0], 3.6), (9.55, PROSC_Y[0], 3.6)]),
+    # Lit church candles in clusters: beside the stage steps, at the front corner of the guest riser and of the band
+    # stage.
+    set_zone("Stage")
+    wax = Piece("CandlesStage", bevel=0.0)
+    candle_cluster(wax, STEPS_X[0] - 0.42, APRON_FRONT[0] - 0.22, 0.0, 3, 6)
+    candle_cluster(wax, STEPS_X[1] + 0.42, APRON_FRONT[0] - 0.22, 0.0, 4, 5)
+    wax.build()
+    set_zone("Guests")
+    wax = Piece("CandlesGuests", bevel=0.0)
+    candle_cluster(wax, -9.55, 2.35, PLATFORM_TOP, 5, 4, 0.12)
+    wax.build()
+    set_zone("Band")
+    wax = Piece("CandlesBand", bevel=0.0)
+    candle_cluster(wax, 9.35, 2.1, BAND_DECK_TOP, 6, 5)
+    wax.build()
+
+    # Festoon strings: one over the window, framing the city; one along the band wall with two swags out over the band
+    # stage to the ceiling.
+    set_zone("Guests")
+    string = Piece("FestoonGuests", bevel=0.0)
+    festoon(string, (WINDOW_X[0] - 0.55, GUEST_WALL_Y - 0.2, 5.0), (WINDOW_X[1] + 0.45, GUEST_WALL_Y - 0.2, 5.0), 0.38)
+    string.build()
+    set_zone("Band")
+    string = Piece("FestoonBand", bevel=0.0)
+    festoon(string, (BAND_X[0] + 0.5, BAND_WALL_Y - 0.15, 4.75), (BAND_X[1] - 0.45, BAND_WALL_Y - 0.15, 4.75), 0.5)
+    festoon(string, (9.1, BAND_WALL_Y - 0.15, 4.9), (10.2, 1.7, WALL_TOP - 0.3), 0.85)
+    festoon(string, (13.1, BAND_WALL_Y - 0.15, 4.9), (12.2, 1.7, WALL_TOP - 0.3), 0.85)
+    string.build()
+
+    # Wall sconces beside the window, on both sides of the proscenium and on the band wall.
+    for zone, name, specs in (("Guests", "GuestSconces", [(-9.2, GUEST_WALL_Y, 2.75), (-0.5, GUEST_WALL_Y, 2.75)]),
+                              ("Stage", "Sconces", [(1.85, PROSC_Y[0], 3.6), (9.55, PROSC_Y[0], 3.6)]),
                               ("Band", "BandSconce", [(8.4, BAND_WALL_Y, 3.3), (13.6, BAND_WALL_Y, 3.3)])):
         set_zone(zone)
         sconce = Piece(name, bevel=0.004)
@@ -1300,6 +1267,52 @@ def build_dressing():
             sconce.cyl((x, y - 0.18, z + 0.1), 0.11, 0.2, "M_LampShade", segments=20, radius2=0.08, caps=False)
             empty("LP_Sconce_%s%d" % (zone[0], k + 1), (x, y - 0.18, z + 0.08))
         sconce.build()
+
+
+LIGHT_COUNT = {}
+
+
+def light_marker(kind, at):
+    """An LP_<kind>_<n> practical light marker (StudioBuilder.AddLights), numbered per kind."""
+    n = LIGHT_COUNT.get(kind, 0) + 1
+    LIGHT_COUNT[kind] = n
+    return empty("LP_%s_%d" % (kind, n), at)
+
+
+def festoon(piece, a, b, sag, spacing=0.42, light_every=4):
+    """A festoon string from a to b sagging by sag in the middle: a thin cable with a bulb (the bought-in light bulb,
+    hung upside down) every spacing metres and a warm baked light every light_every bulbs."""
+    a, b = Vector(a), Vector(b)
+    n = max(2, int((b - a).length / spacing))
+    pts = []
+    for i in range(n + 1):
+        t = i / n
+        p = a + (b - a) * t
+        p.z -= sag * 4 * t * (1 - t)
+        pts.append(p)
+    for p, q in zip(pts, pts[1:]):
+        rod(piece, p, q, 0.004, "M_MetalBlack", 4)
+    for i, p in enumerate(pts[1:-1], 1):
+        prop("Bulb", p.x, p.y, p.z - 0.025, 0.0, 1.0, 180.0)
+        if i % light_every == light_every // 2:
+            light_marker("Festoon", (p.x, p.y, p.z - 0.09))
+
+
+def candle_cluster(piece, x, y, z, seed, count=5, spread=0.16):
+    """A cluster of church candles of different heights, lit, standing at z; one warm light over the cluster."""
+    rnd = random.Random(seed)
+    top = z
+    for k in range(count):
+        a = 2 * math.pi * k / count + rnd.uniform(-0.4, 0.4)
+        r = 0.0 if k == 0 else spread * rnd.uniform(0.6, 1.0)
+        cx, cy = x + r * math.cos(a), y + r * math.sin(a)
+        radius = rnd.uniform(0.035, 0.06)
+        h = rnd.uniform(0.1, 0.32) if k else 0.36
+        piece.cyl((cx, cy, z + h / 2), radius, h, "M_Wax", segments=18)
+        piece.cyl((cx, cy, z + h + 0.008), 0.0016, 0.016, "M_Soil", segments=4)                  # wick
+        piece.sphere((cx, cy, z + h + 0.03), 0.011, "M_Flame", scale=(1, 1, 2.2), subdiv=1)
+        top = max(top, z + h + 0.03)
+    light_marker("Candle", (x, y, top + 0.04))
 
 
 def plant(name, x, y, z, s):

@@ -15,3 +15,6 @@
 *.prefab merge=unityyamlmerge eol=lf
 *.asset merge=unityyamlmerge eol=lf
 *.meta eol=lf
+# 3D models (studio set and its bought-in props)
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.glb filter=lfs diff=lfs merge=lfs -text
