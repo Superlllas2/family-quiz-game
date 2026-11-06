@@ -72,12 +72,18 @@ namespace FamilyQuiz.Presentation
 
         public static readonly Color Bubble = Cream;
 
-        /// <summary>The TV settings panel's card and its buttons: off, on (selected) and the Back to lobby button.</summary>
-        public static readonly Color Panel = new Color32(0x2B, 0x1D, 0x16, 0xF5);
+        /// <summary>
+        /// The TV's menus (settings panel, pause menu, bank chooser) are board game pieces too (D100): a card of card
+        /// stock, choices of shaded card stock, the selected one in teal ink.
+        /// </summary>
+        public static readonly Color Panel = Cream;
 
-        public static readonly Color ButtonOff = new Color32(0x4A, 0x30, 0x22, 0xFF);
+        public static readonly Color ButtonOff = Cream2;
 
         public static readonly Color ButtonOn = Teal;
+
+        /// <summary>Small print on card stock: hints, counts, credits.</summary>
+        public static readonly Color InkSoft = new Color32(0x6E, 0x58, 0x46, 0xFF);
 
         /// <summary>A power up's marker color; Cream for an unknown one.</summary>
         public static Color PowerUp(string powerUp)

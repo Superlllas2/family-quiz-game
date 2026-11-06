@@ -38,25 +38,25 @@ Status: Partial (Nov 2, 2026; `decisions/0005_staging_answers.md`, D57; backgrou
 | `Resources/Music/music_lobby_time.mp3` | Background loop (D113) | https://incompetech.com/music/royalty-free/mp3-royaltyfree/Lobby%20Time.mp3 | Kevin MacLeod | CC BY 4.0 | "Lobby Time" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0, https://creativecommons.org/licenses/by/4.0/ | Nov 6, 2026 |
 | `Resources/Music/music_jazz_brunch.mp3` | Background loop (D113) | https://incompetech.com/music/royalty-free/mp3-royaltyfree/Jazz%20Brunch.mp3 | Kevin MacLeod | CC BY 4.0 | "Jazz Brunch" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0, https://creativecommons.org/licenses/by/4.0/ | Nov 6, 2026 |
 | `Resources/Music/music_george_street_shuffle.mp3` | Background loop (D113) | https://incompetech.com/music/royalty-free/mp3-royaltyfree/George%20Street%20Shuffle.mp3 | Kevin MacLeod | CC BY 4.0 | "George Street Shuffle" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0, https://creativecommons.org/licenses/by/4.0/ | Nov 6, 2026 |
-| `Sfx/Resources/Sfx/sfx_tick.ogg` | Answer clock, last 5 s (D120) | https://kenney.nl (Interface Sounds, tick_004.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
+| `Sfx/Resources/Sfx/sfx_tick.ogg` | Answer clock, last 5 s (D120) | https://kenney.nl (Impact Sounds, impactWood_light_000.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_lock.ogg` | Lock in (D120) | https://kenney.nl (Casino Audio, chip-lay-1.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_card.ogg` | Question appears (D120) | https://kenney.nl (Casino Audio, card-place-1.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
-| `Sfx/Resources/Sfx/sfx_right.ogg` | Reveal, someone right (D120) | https://kenney.nl (Interface Sounds, confirmation_001.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
-| `Sfx/Resources/Sfx/sfx_nobody.ogg` | Reveal, nobody right (D120) | https://kenney.nl (Interface Sounds, bong_001.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
+| `Sfx/Resources/Sfx/sfx_right.mp3` | Reveal, someone right (D120) | https://freesound.org/people/jack_urbanski/sounds/495674/ | jack_urbanski | CC0 | Not required | Nov 6, 2026 |
+| `Sfx/Resources/Sfx/sfx_nobody.mp3` | Reveal, nobody right (D120) | https://freesound.org/people/TaranP/sounds/362206/ | TaranP | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_scores.ogg` | Scores (D120) | https://kenney.nl (Casino Audio, chips-stack-3.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_vote.ogg` | Topic vote (D120) | https://kenney.nl (Casino Audio, chip-lay-2.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_topic.ogg` | Topic chosen (D120) | https://kenney.nl (Casino Audio, card-fan-1.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_countdown.ogg` | Start countdown (D120) | https://kenney.nl (Casino Audio, dice-shake-2.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_start.ogg` | Game start (D120) | https://kenney.nl (Casino Audio, dice-throw-1.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
-| `Sfx/Resources/Sfx/sfx_join.ogg` | Player joins (D120) | https://kenney.nl (Interface Sounds, pluck_002.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
+| `Sfx/Resources/Sfx/sfx_join.ogg` | Player joins (D120) | https://kenney.nl (Casino Audio, chip-lay-3.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_round_end.ogg` | Round end (D120) | https://kenney.nl (Music Jingles, jingles_SAX03.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_winner.ogg` | Results (D120) | https://kenney.nl (Music Jingles, jingles_SAX07.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_race_step.ogg` | Race reveal (D120) | https://kenney.nl (Casino Audio, card-slide-2.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_freeze.ogg` | Freeze lands (D120) | https://kenney.nl (Impact Sounds, impactGlass_light_000.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Sfx/sfx_slime.ogg` | Slime lands (D120) | https://kenney.nl (Impact Sounds, impactSoft_heavy_000.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
-| `Sfx/Resources/Sfx/sfx_fog.ogg` | Fog lands (D120) | https://kenney.nl (Digital Audio, lowDown.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
-| `Sfx/Resources/Sfx/sfx_pause.ogg` | Pause (D120) | https://kenney.nl (Interface Sounds, toggle_001.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
-| `Sfx/Resources/Sfx/sfx_resume.ogg` | Resume (D120) | https://kenney.nl (Interface Sounds, toggle_002.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
+| `Sfx/Resources/Sfx/sfx_fog.ogg` | Fog lands (D120) | https://kenney.nl (Casino Audio, card-fan-2.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
+| `Sfx/Resources/Sfx/sfx_pause.ogg` | Pause (D120) | https://kenney.nl (Casino Audio, card-place-2.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
+| `Sfx/Resources/Sfx/sfx_resume.ogg` | Resume (D120) | https://kenney.nl (Casino Audio, card-place-3.ogg) | Kenney Vleugels | CC0 | Not required | Nov 6, 2026 |
 | `Sfx/Resources/Voices/voice_*.wav` | Host voices (D121) | Generated by `tools/audio_host_voices.py` | The project | Own work | None | Nov 6, 2026 |
 
 ## Sound effects

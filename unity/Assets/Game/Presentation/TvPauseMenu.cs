@@ -6,26 +6,29 @@ using UnityEngine;
 namespace FamilyQuiz.Presentation
 {
     /// <summary>
-    /// The pause menu (decisions/0018, D105 to D107): a dimmed screen with Continue, New game and Settings, shown while
-    /// the game is paused (GameState.Paused). Escape opens it; Escape again or Continue closes it. New game takes a
-    /// confirming second click and is hidden in the Lobby. A view only: its buttons call the presenter, which sends the
-    /// commands (ResumeGame, RestartGame) or opens the TV settings panel.
+    /// The pause menu (decisions/0018, D105 to D107), drawn as a board game piece (D100): a card of card stock on the
+    /// dimmed table with a printed ribbon for its title and chunky buttons in the answer inks (Continue green, Settings
+    /// cobalt, the question bank mustard, New game card stock that turns red when armed). Shown while the game is paused
+    /// (GameState.Paused). Escape opens it; Escape again or Continue closes it. New game takes a confirming second click
+    /// and is hidden in the Lobby. A view only: its buttons call the presenter, which sends the commands (ResumeGame,
+    /// RestartGame) or opens the TV settings panel or the bank chooser.
     /// </summary>
     public sealed class TvPauseMenu : MonoBehaviour
     {
         /// <summary>How long a first click on New game waits for the confirming click; the same as Back to lobby.</summary>
         public const double NewGameConfirmSeconds = TvSettingsPanel.BackToLobbyConfirmSeconds;
 
-        private const float CardWidth = 760f;
-        private const float Padding = 40f;
-        private const float TitleSize = 72f;
-        private const float HintSize = 30f;
+        private const float CardWidth = 700f;
+        private const float Padding = 48f;
+        private const float RibbonWidth = 420f;
+        private const float RibbonHeight = 110f;
+        private const float HintSize = 28f;
         private const float ButtonLabelSize = 40f;
-        private const float ButtonHeight = 92f;
-        private const float ButtonGap = 22f;
-        private const float ButtonsTop = 170f;
+        private const float ButtonHeight = 88f;
+        private const float ButtonGap = 24f;
+        private const float ButtonsTop = 132f;
 
-        private static readonly Color Backdrop = new Color(0f, 0f, 0f, 0.62f);
+        private static readonly Color Backdrop = new Color(0.08f, 0.05f, 0.03f, 0.66f);
 
         private readonly ConfirmClick _newGameConfirm = new ConfirmClick(NewGameConfirmSeconds);
         private TvContext _context;
@@ -34,13 +37,13 @@ namespace FamilyQuiz.Presentation
         private Action _onSettings;
         private Action _onBank;
         private Func<bool> _hasBanks;
-        private PanelButton _bank;
-        private RectTransform _card;
+        private TvPiece _card;
         private TextMeshProUGUI _title;
         private TextMeshProUGUI _hint;
         private PanelButton _continue;
         private PanelButton _newGame;
         private PanelButton _settings;
+        private PanelButton _bank;
         private bool _armedShown;
 
         public static TvPauseMenu Create(Transform parent, TvContext context, Action onContinue, Action onNewGame, Action onSettings,
@@ -71,24 +74,25 @@ namespace FamilyQuiz.Presentation
 
             _newGameConfirm.Cancel();
             gameObject.SetActive(open);
+            // No TvTween pop here: its canvas group turns clicks off (it is made for pieces that are only looked at).
             if (open) Refresh();
         }
 
-        /// <summary>Draws the texts in the game language; New game only outside the Lobby.</summary>
+        /// <summary>Draws the texts in the game language; New game only outside the Lobby, the bank button when there is a choice.</summary>
         public void Refresh()
         {
             var game = _context.Game;
             if (game == null) return;
             _title.text = _context.T("tv.pause.title");
             _hint.text = _context.T("tv.pause.hint");
-            _continue.Set(_context.T("tv.pause.continue"), TvColors.ButtonOn);
-            _settings.Set(_context.T("tv.pause.settings"), TvColors.ButtonOff);
+            _continue.Set(_context.T("tv.pause.continue"), TvColors.Green);
+            _settings.Set(_context.T("tv.pause.settings"), TvColors.Cobalt);
             bool newGame = game.State.Phase != GamePhase.Lobby;
             _newGame.Rect.gameObject.SetActive(newGame);
             bool banks = _hasBanks != null && _hasBanks();
             _bank.Rect.gameObject.SetActive(banks);
             if (banks)
-                _bank.Set(_context.Format("tv.pause.bank", "bank", _context.T("tv.bank." + game.State.PendingSettings.Bank)), TvColors.ButtonOff);
+                _bank.Set(_context.Format("tv.pause.bank", "bank", _context.T("tv.bank." + game.State.PendingSettings.Bank)), TvColors.Mustard);
             Layout(newGame, banks);
             DrawNewGame();
         }
@@ -99,33 +103,38 @@ namespace FamilyQuiz.Presentation
             if (_newGameConfirm.Armed(Now()) != _armedShown) DrawNewGame();
         }
 
-        /// <summary>The buttons stack with no gap where New game is hidden, and the card fits them.</summary>
+        /// <summary>The buttons stack with no gap where one is hidden, and the card fits them.</summary>
         private void Layout(bool newGame, bool banks)
         {
             float y = ButtonsTop;
-            Box(_continue.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
+            Place(_continue, y);
             y += ButtonHeight + ButtonGap;
-            if (newGame)
-            {
-                Box(_newGame.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
-                y += ButtonHeight + ButtonGap;
-            }
-
-            Box(_settings.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
+            Place(_settings, y);
             if (banks)
             {
                 y += ButtonHeight + ButtonGap;
-                Box(_bank.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
+                Place(_bank, y);
             }
 
-            _card.sizeDelta = new Vector2(CardWidth, y + ButtonHeight + Padding);
+            if (newGame)
+            {
+                y += ButtonHeight + ButtonGap;
+                Place(_newGame, y);
+            }
+
+            _card.Root.sizeDelta = new Vector2(CardWidth, y + ButtonHeight + Padding);
+        }
+
+        private void Place(PanelButton button, float y)
+        {
+            Box(button.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
         }
 
         private void DrawNewGame()
         {
             _armedShown = _newGameConfirm.Armed(Now());
             _newGame.Set(_context.T(_armedShown ? "tv.pause.newGameConfirm" : "tv.pause.newGame"),
-                _armedShown ? TvColors.Error : TvColors.ButtonOff);
+                _armedShown ? TvColors.Red : TvColors.ButtonOff);
         }
 
         private void OnNewGame()
@@ -150,45 +159,32 @@ namespace FamilyQuiz.Presentation
             backdrop.raycastTarget = true; // clicks never reach the views under the menu
             UiBuilder.Anchor(backdrop.rectTransform, 0, 0, 1, 1);
 
-            // Opaque, unlike the settings panel: nothing of the view under it shows through.
-            var opaque = new Color(TvColors.Panel.r, TvColors.Panel.g, TvColors.Panel.b, 1f);
-            var card = UiBuilder.Image("Card", transform, opaque, RoundedSprite.Get()).rectTransform;
-            _card = card;
-            card.GetComponent<UnityEngine.UI.Image>().raycastTarget = true;
-            card.anchorMin = new Vector2(0.5f, 0.5f);
-            card.anchorMax = new Vector2(0.5f, 0.5f);
-            card.pivot = new Vector2(0.5f, 0.5f);
-            card.anchoredPosition = Vector2.zero;
-            card.sizeDelta = new Vector2(CardWidth, ButtonsTop + 3 * ButtonHeight + 2 * ButtonGap + Padding);
+            _card = TvPiece.Card("Card", transform, TvColors.Panel, 26f, 10f).Tilt(0.6f);
+            _card.Body.raycastTarget = true;
+            var root = _card.Root;
+            root.anchorMin = root.anchorMax = root.pivot = new Vector2(0.5f, 0.5f);
+            root.anchoredPosition = new Vector2(0, -20);
+            root.sizeDelta = new Vector2(CardWidth, 600);
+            var card = _card.Body.rectTransform;
 
-            _title = Label(card, "Title", 30, 96, TitleSize, TvColors.Text, true);
-            _hint = Label(card, "Hint", 112, 44, HintSize, TvColors.DimText, false);
+            // The title on a printed ribbon that sticks out over the card's top edge.
+            var ribbon = TvPiece.Card("Ribbon", card, TvColors.Red, 16f, 7f).Tilt(-2f);
+            var rr = ribbon.Root;
+            rr.anchorMin = rr.anchorMax = rr.pivot = new Vector2(0.5f, 1f);
+            rr.anchoredPosition = new Vector2(0, RibbonHeight * 0.45f);
+            rr.sizeDelta = new Vector2(RibbonWidth, RibbonHeight);
+            _title = UiBuilder.Display("Title", ribbon.Content, 60, TvColors.TextOn(TvColors.Red), TextAlignmentOptions.Center);
+            UiBuilder.Fit(_title, 30, 60, 1);
+            UiBuilder.Anchor(_title.rectTransform, 0.05f, 0.08f, 0.95f, 0.92f);
 
-            float y = ButtonsTop;
-            _continue = Button(card, "Continue", y, () => _onContinue?.Invoke());
-            y += ButtonHeight + ButtonGap;
-            _newGame = Button(card, "NewGame", y, OnNewGame);
-            y += ButtonHeight + ButtonGap;
-            _settings = Button(card, "Settings", y, () => _onSettings?.Invoke());
-            _bank = Button(card, "Bank", y, () => _onBank?.Invoke());
-        }
+            _hint = UiBuilder.Text("Hint", card, HintSize, TvColors.InkSoft, true, TextAlignmentOptions.Center);
+            UiBuilder.Fit(_hint, 18, HintSize, 1);
+            Box(_hint.rectTransform, Padding, 72, CardWidth - 2 * Padding, 40);
 
-        private static TextMeshProUGUI Label(RectTransform card, string name, float y, float height, float size, Color color, bool bold)
-        {
-            var text = UiBuilder.Text(name, card, size, color, bold, TextAlignmentOptions.Center);
-            text.textWrappingMode = TextWrappingModes.NoWrap;
-            text.enableAutoSizing = true;
-            text.fontSizeMin = Mathf.Min(22f, size);
-            text.fontSizeMax = size;
-            Box(text.rectTransform, Padding, y, CardWidth - 2 * Padding, height);
-            return text;
-        }
-
-        private static PanelButton Button(RectTransform card, string name, float y, Action onClick)
-        {
-            var button = PanelButton.Create(card, name, ButtonLabelSize, onClick);
-            Box(button.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
-            return button;
+            _continue = PanelButton.Create(card, "Continue", ButtonLabelSize, () => _onContinue?.Invoke());
+            _settings = PanelButton.Create(card, "Settings", ButtonLabelSize, () => _onSettings?.Invoke());
+            _bank = PanelButton.Create(card, "Bank", ButtonLabelSize, () => _onBank?.Invoke());
+            _newGame = PanelButton.Create(card, "NewGame", ButtonLabelSize, OnNewGame);
         }
 
         /// <summary>A box at x, y from the card's top left corner.</summary>

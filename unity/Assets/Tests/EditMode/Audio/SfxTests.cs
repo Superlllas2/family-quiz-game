@@ -19,8 +19,10 @@ namespace FamilyQuiz.Tests.Audio
             var licenses = File.ReadAllText(Path.Combine(Assets, "LICENSES.md"));
             foreach (var cue in SfxCues.All)
             {
-                Assert.That(File.Exists(Path.Combine(Assets, "Resources", "Sfx", "sfx_" + cue + ".ogg")), Is.True, cue);
-                Assert.That(licenses, Does.Contain("sfx_" + cue + ".ogg"), cue);
+                var file = new[] { ".ogg", ".mp3" }.Select(ext => "sfx_" + cue + ext)
+                    .FirstOrDefault(name => File.Exists(Path.Combine(Assets, "Resources", "Sfx", name)));
+                Assert.That(file, Is.Not.Null, cue);
+                Assert.That(licenses, Does.Contain(file), cue);
             }
 
             foreach (var style in SfxConfig.Voices.Where(v => v != SfxPlayer.NoVoice))

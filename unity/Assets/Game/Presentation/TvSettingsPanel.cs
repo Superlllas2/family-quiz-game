@@ -40,7 +40,7 @@ namespace FamilyQuiz.Presentation
         private const float ButtonGap = 8f;
         private const float ButtonHeight = 60f;
         private const float CreditSize = 22f;
-        private const float SliderHandleWidth = 30f;
+        private const float SliderHandleWidth = 38f;
         private const float WideButtonHeight = 68f;
 
         private readonly ConfirmClick _backConfirm = new ConfirmClick(BackToLobbyConfirmSeconds);
@@ -251,6 +251,7 @@ namespace FamilyQuiz.Presentation
         private void Choice(PanelButton button, string key, bool selected)
         {
             button.Set(_context.T(key), selected ? TvColors.ButtonOn : TvColors.ButtonOff);
+            button.SetPressed(selected);
         }
 
         private void Note(TextMeshProUGUI note, bool show)
@@ -336,16 +337,21 @@ namespace FamilyQuiz.Presentation
 
         private void Build()
         {
-            _card = UiBuilder.Image("Card", transform, TvColors.Panel, RoundedSprite.Get()).rectTransform;
-            _card.GetComponent<UnityEngine.UI.Image>().raycastTarget = true; // clicks on the card never reach the views
-            _card.anchorMin = new Vector2(1, 0.5f);
-            _card.anchorMax = new Vector2(1, 0.5f);
-            _card.pivot = new Vector2(1, 0.5f);
-            _card.anchoredPosition = new Vector2(-EdgeMargin, 0);
-            _card.sizeDelta = new Vector2(PanelWidth, PanelHeight);
+            // A card of card stock on the table (D100), a little turned; everything sits on its body.
+            var piece = TvPiece.Card("Card", transform, TvColors.Panel, 26f, 10f).Tilt(-0.4f);
+            piece.Body.raycastTarget = true; // clicks on the card never reach the views
+            var root = piece.Root;
+            root.anchorMin = new Vector2(1, 0.5f);
+            root.anchorMax = new Vector2(1, 0.5f);
+            root.pivot = new Vector2(1, 0.5f);
+            root.anchoredPosition = new Vector2(-EdgeMargin, 4);
+            root.sizeDelta = new Vector2(PanelWidth, PanelHeight);
+            _card = piece.Body.rectTransform;
 
-            _title = Label("Title", Padding, 24, 480, 64, TitleSize, TvColors.Text, true, TextAlignmentOptions.Left);
-            _hint = Label("Hint", PanelWidth - Padding - 280, 24, 280, 64, HintSize, TvColors.DimText, false, TextAlignmentOptions.Right);
+            _title = UiBuilder.Display("Title", _card, TitleSize, TvColors.Ink, TextAlignmentOptions.Left);
+            UiBuilder.Fit(_title, 30, TitleSize, 1);
+            Box(_title.rectTransform, Padding, 24, 480, 64);
+            _hint = Label("Hint", PanelWidth - Padding - 280, 24, 280, 64, HintSize, TvColors.InkSoft, false, TextAlignmentOptions.Right);
 
             float y = RowsTop;
             _langLabel = RowLabel("Language", y, out _);
@@ -392,7 +398,7 @@ namespace FamilyQuiz.Presentation
             _resetSeen = PanelButton.Create(_card, "ResetSeen", ButtonLabelSize, OnResetSeen);
             Box(_resetSeen.Rect, Padding, y, PanelWidth - 2 * Padding, WideButtonHeight);
             y += WideButtonHeight + 6;
-            _seenCount = Label("SeenCount", Padding, y, PanelWidth - 2 * Padding, 40, 28, TvColors.DimText, false, TextAlignmentOptions.Center);
+            _seenCount = Label("SeenCount", Padding, y, PanelWidth - 2 * Padding, 40, 28, TvColors.InkSoft, false, TextAlignmentOptions.Center);
             y += 40 + 16;
 
             _backToLobby = PanelButton.Create(_card, "BackToLobby", ButtonLabelSize, OnBackToLobby);
@@ -400,7 +406,7 @@ namespace FamilyQuiz.Presentation
             y += WideButtonHeight + 8;
 
             // The CC BY credit of the track playing (D115): the license asks for it, the settings are where games put it.
-            _musicCredit = Label("MusicCredit", Padding, y, PanelWidth - 2 * Padding, 32, CreditSize, TvColors.DimText, false,
+            _musicCredit = Label("MusicCredit", Padding, y, PanelWidth - 2 * Padding, 32, CreditSize, TvColors.InkSoft, false,
                 TextAlignmentOptions.Center);
         }
 
@@ -411,31 +417,39 @@ namespace FamilyQuiz.Presentation
         private UnityEngine.UI.Slider VolumeSlider(string name, float x, float y, float width, UnityEngine.Events.UnityAction<float> onChange,
             out TextMeshProUGUI caption)
         {
-            caption = Label(name + "Caption", x, y + 2, width, 26, 22f, TvColors.DimText, true, TextAlignmentOptions.Left);
+            caption = Label(name + "Caption", x, y + 2, width, 26, 22f, TvColors.InkSoft, true, TextAlignmentOptions.Left);
             var root = UiBuilder.Rect(name, _card);
             Box(root, x, y + 30, width, 40);
-            var track = UiBuilder.Image("Track", root, TvColors.ButtonOff, RoundedSprite.Get());
+            // A groove cut in the card: ink, filled with teal up to the handle, a cream counter as the handle.
+            var track = UiBuilder.Image("Track", root, TvColors.Ink, TvSprites.Solid);
+            track.type = UnityEngine.UI.Image.Type.Sliced;
+            track.pixelsPerUnitMultiplier = TvSprites.Radius / 8f;
             track.raycastTarget = true;
-            UiBuilder.Anchor(track.rectTransform, 0, 0.3f, 1, 0.7f);
+            UiBuilder.Anchor(track.rectTransform, 0, 0.32f, 1, 0.68f);
 
             var fillArea = UiBuilder.Rect("FillArea", root);
             UiBuilder.Anchor(fillArea, 0, 0.3f, 1, 0.7f);
             fillArea.offsetMin = new Vector2(0, 0);
             fillArea.offsetMax = new Vector2(-SliderHandleWidth / 2, 0);
-            var fill = UiBuilder.Image("Fill", fillArea, TvColors.ButtonOn, RoundedSprite.Get());
+            var fill = UiBuilder.Image("Fill", fillArea, TvColors.Teal, TvSprites.Solid);
+            fill.type = UnityEngine.UI.Image.Type.Sliced;
+            fill.pixelsPerUnitMultiplier = TvSprites.Radius / 8f;
             fill.rectTransform.sizeDelta = Vector2.zero;
 
             var handleArea = UiBuilder.Rect("HandleArea", root);
             UiBuilder.Anchor(handleArea, 0, 0, 1, 1);
             handleArea.offsetMin = new Vector2(SliderHandleWidth / 2, 0);
             handleArea.offsetMax = new Vector2(-SliderHandleWidth / 2, 0);
-            var handle = UiBuilder.Image("Handle", handleArea, TvColors.Text, RoundedSprite.Get());
-            handle.raycastTarget = true;
-            handle.rectTransform.sizeDelta = new Vector2(SliderHandleWidth, 0);
+            var handleRect = UiBuilder.Rect("Handle", handleArea);
+            handleRect.sizeDelta = new Vector2(SliderHandleWidth, 0);
+            var counter = TvPiece.Disc("Counter", handleRect, TvColors.Mustard, 4f);
+            UiBuilder.Anchor(counter.Root, 0f, 0.02f, 1f, 0.98f);
+            counter.Body.raycastTarget = true;
+            var handle = counter.Body;
 
             var slider = root.gameObject.AddComponent<UnityEngine.UI.Slider>();
             slider.fillRect = fill.rectTransform;
-            slider.handleRect = handle.rectTransform;
+            slider.handleRect = handleRect;
             slider.targetGraphic = handle;
             slider.direction = UnityEngine.UI.Slider.Direction.LeftToRight;
             slider.minValue = 0f;
@@ -448,8 +462,8 @@ namespace FamilyQuiz.Presentation
         /// <summary>A row's label in its upper part and a hidden "applies from the next game" note below it.</summary>
         private TextMeshProUGUI RowLabel(string name, float y, out TextMeshProUGUI note)
         {
-            var label = Label(name, Padding, y, LabelWidth, 56, LabelSize, TvColors.Text, true, TextAlignmentOptions.Left);
-            note = Label(name + "Note", Padding, y + 48, LabelWidth, 28, NoteSize, TvColors.Crown, false, TextAlignmentOptions.Left);
+            var label = Label(name, Padding, y, LabelWidth, 56, LabelSize, TvColors.Ink, true, TextAlignmentOptions.Left);
+            note = Label(name + "Note", Padding, y + 48, LabelWidth, 28, NoteSize, TvColors.Red, true, TextAlignmentOptions.Left);
             note.gameObject.SetActive(false);
             return label;
         }
