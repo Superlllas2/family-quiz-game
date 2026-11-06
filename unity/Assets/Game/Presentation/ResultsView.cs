@@ -158,8 +158,10 @@ namespace FamilyQuiz.Presentation
             UiBuilder.Anchor(_winner.rectTransform, 0.08f, 0.64f, 0.92f, 0.94f);
 
             _prize = UiBuilder.Hand("Prize", card.Content, 36, TvColors.Teal, TextAlignmentOptions.Center);
-            UiBuilder.Fit(_prize, 22, 36, 1);
-            UiBuilder.Anchor(_prize.rectTransform, 0.08f, 0.47f, 0.92f, 0.64f);
+            UiBuilder.Fit(_prize, 26, 38, 1);
+            // The hand writing is taller than its box: overflow rather than shrink to nothing.
+            _prize.overflowMode = TMPro.TextOverflowModes.Overflow;
+            UiBuilder.Anchor(_prize.rectTransform, 0.08f, 0.46f, 0.92f, 0.66f);
 
             _award = AwardLine("MostCorrect", card.Content, 0.25f, 0.46f);
             _comeback = AwardLine("BestComeback", card.Content, 0.05f, 0.25f);

@@ -94,6 +94,12 @@ namespace FamilyQuiz.Presentation
             if (_sticker.Root.gameObject.activeSelf) TvTween.On(_sticker.Root).Slam(delay + 0.45f, 0.4f);
         }
 
+        /// <summary>Keeps the right end of the card clear of the question (the coin's room by default, more for a stamp).</summary>
+        public void ReserveRight(float units)
+        {
+            _question.rectTransform.offsetMax = new Vector2(-units, _question.rectTransform.offsetMax.y);
+        }
+
         /// <summary>The read time fuse along the bottom, from 1 (full) to 0; negative hides it.</summary>
         public void SetFuse(float fraction)
         {
@@ -114,16 +120,19 @@ namespace FamilyQuiz.Presentation
             _question = UiBuilder.Display("Question", _card.Content, 42, TvColors.Ink, TextAlignmentOptions.Left);
             UiBuilder.Anchor(_question.rectTransform, 0, 0, 1, 1);
             _question.rectTransform.offsetMin = new Vector2(60f, 18f);
-            _question.rectTransform.offsetMax = new Vector2(-96f, -22f);
+            _question.rectTransform.offsetMax = new Vector2(-96f, -32f);
             _question.lineSpacing = -6f;
 
             _why = UiBuilder.Hand("Why", _card.Content, 48, TvColors.Teal, TextAlignmentOptions.TopLeft);
             _why.textWrappingMode = TextWrappingModes.NoWrap;
+            // The hand writing is taller than its box: with the default ellipsis TMP would hide it entirely.
+            _why.overflowMode = TextOverflowModes.Overflow;
             _why.rectTransform.anchorMin = new Vector2(0f, 1f);
             _why.rectTransform.anchorMax = new Vector2(1f, 1f);
             _why.rectTransform.pivot = new Vector2(0f, 1f);
-            _why.rectTransform.anchoredPosition = new Vector2(60f, -6f);
-            _why.rectTransform.sizeDelta = new Vector2(-80f, 54f);
+            // On the ribbon's line, right of it.
+            _why.rectTransform.anchoredPosition = new Vector2(430f, 0f);
+            _why.rectTransform.sizeDelta = new Vector2(-470f, 54f);
             _fact = UiBuilder.Text("Fact", _card.Content, 32, TvColors.Ink, false, TextAlignmentOptions.TopLeft);
             UiBuilder.Anchor(_fact.rectTransform, 0, 0, 1, 1);
             _fact.rectTransform.offsetMin = new Vector2(60f, 14f);
@@ -145,7 +154,7 @@ namespace FamilyQuiz.Presentation
             var ribbon = _ribbon.Root;
             ribbon.anchorMin = ribbon.anchorMax = new Vector2(0f, 1f);
             ribbon.pivot = new Vector2(0f, 0.5f);
-            ribbon.anchoredPosition = new Vector2(-18f, 6f);
+            ribbon.anchoredPosition = new Vector2(-18f, -6f); // sticks out 16 units: clear of the guests above
             ribbon.sizeDelta = new Vector2(420f, 44f);
             _topic = UiBuilder.Text("Topic", _ribbon.Content, 24, TvColors.Cream, true, TextAlignmentOptions.Left);
             UiBuilder.Fit(_topic, 16, 24, 1);
@@ -157,7 +166,7 @@ namespace FamilyQuiz.Presentation
             var coin = _coin.Root;
             coin.anchorMin = coin.anchorMax = new Vector2(1f, 1f);
             coin.pivot = new Vector2(0.5f, 0.5f);
-            coin.anchoredPosition = new Vector2(-14f, -10f);
+            coin.anchoredPosition = new Vector2(-10f, -26f);
             coin.sizeDelta = new Vector2(96f, 96f);
             _coinNumber = UiBuilder.Display("Number", _coin.Content, 28, TvColors.Ink, TextAlignmentOptions.Center);
             UiBuilder.Fit(_coinNumber, 16, 28, 1);

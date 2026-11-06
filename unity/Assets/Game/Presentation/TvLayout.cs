@@ -38,16 +38,16 @@ namespace FamilyQuiz.Presentation
         public static readonly Rect ShowRuler = new Rect(420f, 190f, 1080f, 150f);
 
         /// <summary>Answer and Reveal: the question card under the guests.</summary>
-        public static readonly Rect AnswerCard = new Rect(307f, 236f, 1306f, 168f);
+        public static readonly Rect AnswerCard = new Rect(307f, 246f, 1306f, 146f);
 
         /// <summary>Answer and Reveal: the four tiles, two by two, under the card.</summary>
-        public static readonly Rect Tiles = new Rect(307f, 27f, 1306f, 186f);
+        public static readonly Rect Tiles = new Rect(307f, 27f, 1306f, 196f);
 
         /// <summary>A closest value question's ruler in Answer, and its pins and flag on Reveal.</summary>
         public static readonly Rect Ruler = new Rect(150f, 27f, 1620f, 186f);
 
         /// <summary>The closest value Reveal: the ruler with the pins needs the card's room too.</summary>
-        public static readonly Rect RulerReveal = new Rect(150f, 27f, 1620f, 520f);
+        public static readonly Rect RulerReveal = new Rect(150f, 27f, 1620f, 380f);
 
         /// <summary>TopicVote: its title banner, left, under the hosts' zone.</summary>
         public static readonly Rect VoteTitle = new Rect(80f, 690f, 1100f, 92f);

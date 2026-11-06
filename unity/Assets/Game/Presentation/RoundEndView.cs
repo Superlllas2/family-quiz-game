@@ -13,6 +13,9 @@ namespace FamilyQuiz.Presentation
     {
         private const string NameSeparator = ", ";
 
+        /// <summary>One row's share of the list's height (LeaderboardList takes up to 112 a row).</summary>
+        private const float RowStep = 104f;
+
         private TvContext _context;
         private TitleRibbon _title;
         private LeaderboardList _list;
@@ -43,6 +46,10 @@ namespace FamilyQuiz.Presentation
                 names.Count > 0 ? _context.Format("tv.roundEnd.winner", "names", string.Join(NameSeparator, names)) : null);
 
             var order = Standings.ByScore(state);
+            // The rows stand on the floor: only as tall as the players need, so the guests above stay in view.
+            var zone = TvLayout.Content;
+            float rows = Mathf.Min(zone.height, Mathf.Max(1, order.Count) * RowStep);
+            TvLayout.Put(_list.Rect, new Rect(zone.x, zone.y, zone.width, rows));
             if (!_list.Matches(order)) _list.Rebuild(order);
             float height = _list.RowHeight();
             for (int i = 0; i < order.Count; i++)

@@ -225,20 +225,26 @@ namespace FamilyQuiz.Presentation
                 return;
             }
 
-            SetPicks(state);
             var fact = state.Question?.Def.Fact;
             string factText = fact != null ? fact.Get(_context.Lang) : null;
             if (!string.IsNullOrEmpty(factText)) _card.FlipToBack(_context.T("tv.reveal.why"), factText, FlipDelaySeconds);
         }
 
-        /// <summary>Each player's points (or "Wrong", "No answer") as a sticker under their status token.</summary>
+        /// <summary>
+        /// Each player's pick and points as a sticker under their status token: "A +970" on the answer's ink for a
+        /// multiple choice pick ("B Wrong" on the faded ink), the points alone for a closest guess, "No answer" on
+        /// cream. The tiles stay clear for their text.
+        /// </summary>
         private void SetStickers(GameState state, bool animate)
         {
+            const string letters = "ABCD";
             for (int i = 0; i < state.Players.Count && i < _status.Tokens.Count; i++)
             {
                 var turn = state.Players[i].Turn;
                 string text;
                 Color fill;
+                int choice = turn != null && turn.Locked && turn.Choice.HasValue ? turn.Choice.Value : -1;
+                string letter = choice >= 0 && choice < letters.Length ? letters[choice] + " " : string.Empty;
                 if (turn == null || !turn.Locked)
                 {
                     text = _context.T("tv.reveal.noAnswer");
@@ -246,37 +252,17 @@ namespace FamilyQuiz.Presentation
                 }
                 else if (turn.Correct || turn.Points > 0) // a closest guess scores its bonus even when it is not "correct"
                 {
-                    text = _context.Format("tv.reveal.points", "points", turn.Points.ToString());
-                    fill = TvColors.Mustard;
+                    text = letter + _context.Format("tv.reveal.points", "points", turn.Points.ToString());
+                    fill = choice >= 0 ? TvColors.Answer(choice) : TvColors.Mustard;
                 }
                 else
                 {
-                    text = _context.T("tv.reveal.wrong");
-                    fill = TvColors.Cream2;
+                    text = letter + _context.T("tv.reveal.wrong");
+                    fill = choice >= 0 ? TvColors.Faded(TvColors.Answer(choice)) : TvColors.Cream2;
                 }
 
                 _status.Tokens[i].SetSticker(text, fill, animate, 0.5f + 0.06f * i);
             }
-        }
-
-        /// <summary>The players' tokens on the tiles they picked.</summary>
-        private void SetPicks(GameState state)
-        {
-            var names = new string[state.Players.Count];
-            for (int i = 0; i < names.Length; i++) names[i] = state.Players[i].Name;
-            var labels = TokenLabels.For(names);
-            var picks = new List<(string, string, Color)>[OptionCount];
-            for (int i = 0; i < OptionCount; i++) picks[i] = new List<(string, string, Color)>();
-            for (int i = 0; i < state.Players.Count; i++)
-            {
-                var p = state.Players[i];
-                var choice = p.Turn != null && p.Turn.Locked ? p.Turn.Choice : null;
-                if (choice.HasValue && choice.Value >= 0 && choice.Value < OptionCount)
-                    picks[choice.Value].Add((p.PlayerId, labels[i], _context.ChipColor(p.CharacterId)));
-            }
-
-            int correct = state.Question != null ? state.Question.CorrectDisplayIndex : -1;
-            for (int i = 0; i < OptionCount; i++) _tiles[i].SetPicks(picks[i], true, i < 2, i == correct ? AnswerTile.StampRoom : 0f);
         }
 
         /// <summary>The rubber stamp on the right tile's right end, slammed down once.</summary>
@@ -285,8 +271,8 @@ namespace FamilyQuiz.Presentation
             _stamp.SetParent(tile.Body, false);
             _stamp.anchorMin = _stamp.anchorMax = new Vector2(1f, 0.5f);
             _stamp.pivot = new Vector2(1f, 0.5f);
-            _stamp.anchoredPosition = new Vector2(-20f, 0f);
-            _stamp.sizeDelta = new Vector2(230f, 62f);
+            _stamp.anchoredPosition = new Vector2(-14f, 0f);
+            _stamp.sizeDelta = new Vector2(190f, 56f);
             _stamp.SetAsLastSibling();
             _stampText.text = _context.T("tv.reveal.stamp");
             _stamp.gameObject.SetActive(true);

@@ -55,6 +55,8 @@ namespace FamilyQuiz.Presentation
 
             Refresh();
             if (intro || question) _card.PopIn(0f);
+            // The stamp lands on the card's right end: the statement makes room for it on the reveal.
+            _card.ReserveRight(reveal ? 300f : 96f);
             if (reveal) Stamp(previous == GamePhase.RaceQuestion);
             var race = state.Race;
             int finish = _context.Game.Config.Race.FinishSteps;

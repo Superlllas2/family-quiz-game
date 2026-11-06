@@ -21,7 +21,7 @@ namespace FamilyQuiz.Presentation
         private const float PickGap = 6f;
 
         /// <summary>The right end of the right tile kept for the stamp (QuestionView puts it there).</summary>
-        public const float StampRoom = 270f;
+        public const float StampRoom = 215f;
         private static readonly float[] Tilts = { -0.6f, 0.5f, 0.4f, -0.7f };
 
         private readonly List<PlayerToken> _picks = new List<PlayerToken>();
@@ -58,7 +58,7 @@ namespace FamilyQuiz.Presentation
             _targetDrop = 0f;
             _piece.Root.localScale = Vector3.one;
             _piece.Root.anchoredPosition = Vector2.zero;
-            _text.rectTransform.offsetMax = new Vector2(-20f, -8f);
+            _text.rectTransform.offsetMax = new Vector2(-20f, -4f);
             ClearPicks();
             if (animate) _tween.Pop(delay, 0.5f);
             else _tween.Finish();
@@ -71,7 +71,7 @@ namespace FamilyQuiz.Presentation
                 _targetScale = 1.04f;
                 _targetDrop = 0f;
                 // The stamp lands on the right end: the text makes room for it (and shrinks if it must).
-                _text.rectTransform.offsetMax = new Vector2(-StampRoom, -8f);
+                _text.rectTransform.offsetMax = new Vector2(-StampRoom, -4f);
                 transform.SetAsLastSibling(); // drawn over its neighbours while it grows
             }
             else
@@ -147,10 +147,10 @@ namespace FamilyQuiz.Presentation
             UiBuilder.Anchor(_letter.rectTransform, 0, 0, 1, 1);
 
             _text = UiBuilder.Text("Text", _piece.Content, 38, TvColors.AnswerText(_index), true, TextAlignmentOptions.Left);
-            UiBuilder.Fit(_text, 26, 38, 2);
+            UiBuilder.Fit(_text, 22, 38, 2);
             UiBuilder.Anchor(_text.rectTransform, 0, 0, 1, 1);
-            _text.rectTransform.offsetMin = new Vector2(16f + 58f + 16f, 8f);
-            _text.rectTransform.offsetMax = new Vector2(-20f, -8f);
+            _text.rectTransform.offsetMin = new Vector2(16f + 58f + 16f, 4f);
+            _text.rectTransform.offsetMax = new Vector2(-20f, -4f);
         }
     }
 }

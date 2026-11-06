@@ -53,25 +53,25 @@ namespace FamilyQuiz.Presentation
         /// <summary>Grows in from small with an overshoot, fading in.</summary>
         public void Pop(float delay = 0f, float duration = 0.45f)
         {
-            Start(Kind.Pop, delay, duration);
+            Begin(Kind.Pop, delay, duration);
         }
 
         /// <summary>Slams down from big, like a rubber stamp.</summary>
         public void Slam(float delay = 0f, float duration = 0.42f)
         {
-            Start(Kind.Slam, delay, duration);
+            Begin(Kind.Slam, delay, duration);
         }
 
         /// <summary>Rises a little from below, fading in.</summary>
         public void Rise(float delay = 0f, float duration = 0.4f)
         {
-            Start(Kind.Rise, delay, duration);
+            Begin(Kind.Rise, delay, duration);
         }
 
         /// <summary>Flips over the horizontal axis; midway (edge on) runs once, to swap what the piece shows.</summary>
         public void Flip(Action midway, float delay = 0f, float duration = 0.4f)
         {
-            Start(Kind.Flip, delay, duration);
+            Begin(Kind.Flip, delay, duration);
             _midway = midway;
             _midwayDone = false;
         }
@@ -96,7 +96,7 @@ namespace FamilyQuiz.Presentation
             ApplyRotation(0f);
         }
 
-        private void Start(Kind kind, float delay, float duration)
+        private void Begin(Kind kind, float delay, float duration)
         {
             if (_kind == Kind.Rise && _hasBase) ((RectTransform)transform).anchoredPosition = _basePosition;
             _kind = kind;

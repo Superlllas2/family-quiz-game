@@ -23,8 +23,11 @@ namespace FamilyQuiz.Presentation
         private const float PinWidth = 4f;
         private const float PinGap = 18f;
 
-        /// <summary>A lane holds a token and its guess above it.</summary>
-        private const float LaneStep = TokenSize + GuessHeight + 12f;
+        /// <summary>A lane holds a token with its guess beside it.</summary>
+        private const float LaneStep = TokenSize + 10f;
+
+        /// <summary>The guess's width to the right of its token.</summary>
+        private const float GuessWidth = 104f;
 
         private const float FlagHeight = 56f;
         private const float FlagWidth = 300f;
@@ -111,8 +114,8 @@ namespace FamilyQuiz.Presentation
             for (int i = 0; i < guessers.Count; i++) fractions[i] = NumberLineLayout.Fraction(guessers[i].Turn.Value.Value, min, max);
             float width = _plot.rect.width > 0f ? _plot.rect.width : FallbackWidth;
             float height = _plot.rect.height > 0f ? _plot.rect.height : FallbackHeight;
-            // A guess caption is wider than its token: lanes keep the captions apart.
-            var lanes = NumberLineLayout.Lanes(fractions, 104f / width);
+            // A pin takes its token and the guess to its right: lanes keep pins that close apart.
+            var lanes = NumberLineLayout.Lanes(fractions, (TokenSize + 6f + GuessWidth) / width);
             int laneCount = NumberLineLayout.LaneCount(lanes);
             // Many stacked lanes squeeze together rather than leave the ruler's area (and stay under the flag).
             float room = height - PinGap - FlagHeight - LaneStep;
@@ -131,7 +134,11 @@ namespace FamilyQuiz.Presentation
                 var token = _tokens[i];
                 Pin(token.Rect, f, y, TokenSize, TokenSize);
                 token.Set(seat >= 0 ? labels[seat] : "?", color, player.Connected);
-                Pin(_guesses[i].rectTransform, f, y + TokenSize + 2f, 120f, GuessHeight);
+                var g = _guesses[i].rectTransform;
+                g.anchorMin = g.anchorMax = new Vector2(f, 0f);
+                g.pivot = new Vector2(0f, 0f);
+                g.anchoredPosition = new Vector2(TokenSize / 2f + 6f, y + (TokenSize - GuessHeight) / 2f);
+                g.sizeDelta = new Vector2(GuessWidth, GuessHeight);
                 _guesses[i].text = NumberText.Format(turn.Value.Value);
 
                 Pin(_pins[i].rectTransform, f, 0f, PinWidth, y + TokenSize * 0.5f);
@@ -179,7 +186,7 @@ namespace FamilyQuiz.Presentation
 
             foreach (var p in guessers)
             {
-                var guess = UiBuilder.Display("Guess " + p.PlayerId, _pinsRoot, 24, TvColors.Cream, TextAlignmentOptions.Center);
+                var guess = UiBuilder.Display("Guess " + p.PlayerId, _pinsRoot, 24, TvColors.Cream, TextAlignmentOptions.Left);
                 UiBuilder.Fit(guess, 14, 24, 1);
                 guess.outlineWidth = 0.25f;
                 guess.outlineColor = TvColors.Ink;
@@ -266,20 +273,20 @@ namespace FamilyQuiz.Presentation
                 t.anchorMax = new Vector2(x, 1f);
                 t.pivot = new Vector2(0.5f, 1f);
                 t.anchoredPosition = new Vector2(0f, -4f);
-                t.sizeDelta = new Vector2(major ? 4f : 2.5f, major ? 26f : 14f);
+                t.sizeDelta = new Vector2(major ? 4f : 2.5f, major ? 22f : 12f);
             }
 
             _min = UiBuilder.Display("Min", ruler.Content, 26, TvColors.Ink, TextAlignmentOptions.Left);
             UiBuilder.Fit(_min, 16, 26, 1);
-            UiBuilder.Anchor(_min.rectTransform, 0f, 0f, 0.3f, 0.6f);
+            UiBuilder.Anchor(_min.rectTransform, 0f, 0f, 0.3f, 0.5f);
             _min.rectTransform.offsetMin = new Vector2(16f, 2f);
             _max = UiBuilder.Display("Max", ruler.Content, 26, TvColors.Ink, TextAlignmentOptions.Right);
             UiBuilder.Fit(_max, 16, 26, 1);
-            UiBuilder.Anchor(_max.rectTransform, 0.7f, 0f, 1f, 0.6f);
+            UiBuilder.Anchor(_max.rectTransform, 0.7f, 0f, 1f, 0.5f);
             _max.rectTransform.offsetMax = new Vector2(-16f, 0f);
             _unit = UiBuilder.Text("Unit", ruler.Content, 26, TvColors.Ink, true, TextAlignmentOptions.Center);
             UiBuilder.Fit(_unit, 16, 26, 1);
-            UiBuilder.Anchor(_unit.rectTransform, 0.3f, 0f, 0.7f, 0.6f);
+            UiBuilder.Anchor(_unit.rectTransform, 0.3f, 0f, 0.7f, 0.5f);
 
             _pole = UiBuilder.Image("Pole", _plot, TvColors.Ink);
             _pinsRoot = UiBuilder.Anchor(UiBuilder.Rect("Pins", _plot), 0f, 0f, 1f, 1f);
