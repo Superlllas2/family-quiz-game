@@ -46,7 +46,7 @@ A list of question objects. Fields common to all:
 | `format` | string | `multipleChoice` or `closestValue` |
 | `difficulty` | string | `easy`, `medium` or `hard` |
 | `text` | localized | The question, at most 120 characters per language |
-| `fact` | localized, optional | One sentence shown or spoken after the reveal |
+| `fact` | localized, optional | One sentence, at most 160 characters: the back of the question card after the reveal and in Scores (D104) |
 | `source` | string | Where the fact was checked: a Wikidata id or a URL |
 | `kids` | bool, optional | true if suitable for young children; default true |
 
