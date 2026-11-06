@@ -1,29 +1,28 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace FamilyQuiz.Presentation
 {
     /// <summary>
-    /// A player's character until the 3D characters exist: a rounded card in the character's signature color with
-    /// the player's name in #14161C (docs/15_schemas.md, characters.json). Dimmed while disconnected, a white rim
-    /// once locked in, a quick pop on lock in, an optional caption above it (Reveal results) and a power up marker above
-    /// that (docs/03_rules.md, "Using").
+    /// A player's name piece (decisions/0017_game_night_ui.md): a rounded piece in the character's signature colour with
+    /// the player's name, on its cardboard edge. Half see through while disconnected, a check badge once locked in, a
+    /// quick pop on lock in, an optional sticker caption above it and a power up marker above that (docs/03_rules.md,
+    /// "Using"). Used by the race, the round end and the results lists.
     /// </summary>
     public sealed class CharacterChip : MonoBehaviour
     {
-        private const float CaptionHeight = 60f;
-        private const float CaptionGap = 6f;
+        private const float CaptionHeight = 48f;
+        private const float CaptionGap = 8f;
         private const float MarkerHeight = 44f;
-        private const float MarkerFontSize = 30f;
+        private const float MarkerFontSize = 26f;
 
-        private Image _card;
+        private TvPiece _card;
         private TextMeshProUGUI _name;
-        private TextMeshProUGUI _caption;
+        private TvPiece _caption;
+        private TextMeshProUGUI _captionText;
         private CanvasGroup _group;
-        private Outline _rim;
+        private TvPiece _check;
         private PowerUpMarker _marker;
-        private float _popAge = -1f;
 
         public string PlayerId { get; private set; }
 
@@ -42,24 +41,27 @@ namespace FamilyQuiz.Presentation
         public void Set(string name, Color color, bool connected)
         {
             _name.text = name;
-            _card.color = color;
+            _name.color = TvColors.TextOn(color);
+            _card.SetFill(color);
             _group.alpha = connected ? 1f : TvMotion.DisconnectedAlpha;
         }
 
         public void SetLocked(bool locked)
         {
-            _rim.enabled = locked;
+            _check.Root.gameObject.SetActive(locked);
         }
 
-        /// <summary>Shows a caption above the chip; null or empty hides it.</summary>
+        /// <summary>Shows a sticker caption above the chip; null or empty hides it.</summary>
         public void SetCaption(string text, Color color)
         {
             bool show = !string.IsNullOrEmpty(text);
-            _caption.gameObject.SetActive(show);
+            _caption.Root.gameObject.SetActive(show);
             PlaceMarker();
             if (!show) return;
-            _caption.text = text;
-            _caption.color = color;
+            _captionText.text = text;
+            var fill = color == TvColors.Correct ? TvColors.Mustard : TvColors.Cream;
+            _caption.SetFill(fill);
+            _captionText.color = TvColors.Ink;
         }
 
         /// <summary>
@@ -75,36 +77,14 @@ namespace FamilyQuiz.Presentation
         private void PlaceMarker()
         {
             if (_marker == null) return;
-            float y = CaptionGap + (_caption.gameObject.activeSelf ? CaptionHeight + CaptionGap : 0f);
+            float y = CaptionGap + (_caption.Root.gameObject.activeSelf ? CaptionHeight + CaptionGap : 0f);
             _marker.Root.anchoredPosition = new Vector2(0, y);
         }
 
-        /// <summary>A quick scale up and back on unscaled time; it never waits for anything.</summary>
+        /// <summary>A quick bounce on unscaled time; it never waits for anything.</summary>
         public void Pop()
         {
-            _popAge = 0f;
-        }
-
-        private void Update()
-        {
-            if (_popAge < 0f) return;
-            _popAge += Time.unscaledDeltaTime;
-            float t = _popAge / TvMotion.PopSeconds;
-            if (t >= 1f)
-            {
-                _card.rectTransform.localScale = Vector3.one;
-                _popAge = -1f;
-                return;
-            }
-
-            float scale = 1f + TvMotion.PopScale * Mathf.Sin(Mathf.PI * t);
-            _card.rectTransform.localScale = new Vector3(scale, scale, 1f);
-        }
-
-        private void OnDisable()
-        {
-            _popAge = -1f;
-            if (_card != null) _card.rectTransform.localScale = Vector3.one;
+            TvTween.On(_card.Root).Pop(0f, 0.3f);
         }
 
         private void Build(float nameSize)
@@ -113,36 +93,41 @@ namespace FamilyQuiz.Presentation
             _group.blocksRaycasts = false;
             _group.interactable = false;
 
-            _card = UiBuilder.Image("Card", transform, TvColors.Text, RoundedSprite.Get());
-            UiBuilder.Anchor(_card.rectTransform, 0, 0, 1, 1);
-            _rim = _card.gameObject.AddComponent<Outline>();
-            _rim.effectColor = TvColors.Text;
-            _rim.effectDistance = new Vector2(5f, -5f);
-            _rim.enabled = false;
+            _card = TvPiece.Card("Card", transform, TvColors.Cream, 16f, 5f);
+            UiBuilder.Anchor(_card.Root, 0, 0, 1, 1);
 
-            _name = UiBuilder.Text("Name", _card.transform, nameSize, TvColors.Background, true, TextAlignmentOptions.Center);
+            _name = UiBuilder.Text("Name", _card.Content, nameSize, TvColors.Ink, true, TextAlignmentOptions.Center);
             _name.textWrappingMode = TextWrappingModes.NoWrap;
             // Long names (up to 16 wide letters) shrink to fit the chip instead of being cut.
             _name.enableAutoSizing = true;
-            _name.fontSizeMin = Mathf.Min(28f, nameSize);
+            _name.fontSizeMin = Mathf.Min(20f, nameSize);
             _name.fontSizeMax = nameSize;
             UiBuilder.Anchor(_name.rectTransform, 0, 0, 1, 1);
-            _name.rectTransform.offsetMin = new Vector2(20, 0);
-            _name.rectTransform.offsetMax = new Vector2(-20, 0);
+            _name.rectTransform.offsetMin = new Vector2(16, 0);
+            _name.rectTransform.offsetMax = new Vector2(-16, 0);
 
-            _caption = UiBuilder.Text("Caption", transform, 48, TvColors.Text, true, TextAlignmentOptions.Center);
-            _caption.textWrappingMode = TextWrappingModes.NoWrap;
-            _caption.overflowMode = TextOverflowModes.Overflow;
-            _caption.enableAutoSizing = true;
-            _caption.fontSizeMin = 30;
-            _caption.fontSizeMax = 48;
-            var caption = _caption.rectTransform;
-            caption.anchorMin = new Vector2(0, 1);
-            caption.anchorMax = new Vector2(1, 1);
-            caption.pivot = new Vector2(0.5f, 0);
+            _check = TvPiece.Disc("Check", transform, TvColors.Cream, 3f);
+            var check = _check.Root;
+            check.anchorMin = check.anchorMax = new Vector2(1f, 1f);
+            check.pivot = new Vector2(0.5f, 0.5f);
+            check.anchoredPosition = new Vector2(-6f, -6f);
+            check.sizeDelta = new Vector2(34f, 34f);
+            var mark = UiBuilder.Image("Mark", _check.Content, TvColors.Green);
+            mark.sprite = TvSprites.Check;
+            UiBuilder.Anchor(mark.rectTransform, 0.16f, 0.16f, 0.84f, 0.84f);
+            _check.Root.gameObject.SetActive(false);
+
+            _caption = TvPiece.Card("Caption", transform, TvColors.Mustard, 10f, 4f).Tilt(-3f);
+            var caption = _caption.Root;
+            caption.anchorMin = new Vector2(0.1f, 1f);
+            caption.anchorMax = new Vector2(0.9f, 1f);
+            caption.pivot = new Vector2(0.5f, 0f);
             caption.anchoredPosition = new Vector2(0, CaptionGap);
             caption.sizeDelta = new Vector2(0, CaptionHeight);
-            _caption.gameObject.SetActive(false);
+            _captionText = UiBuilder.Display("Text", _caption.Content, 26, TvColors.Ink, TextAlignmentOptions.Center);
+            UiBuilder.Fit(_captionText, 14, 26, 1);
+            UiBuilder.Anchor(_captionText.rectTransform, 0.04f, 0.06f, 0.96f, 0.94f);
+            _caption.Root.gameObject.SetActive(false);
 
             _marker = PowerUpMarker.Create(transform, MarkerFontSize);
             var marker = _marker.Root;

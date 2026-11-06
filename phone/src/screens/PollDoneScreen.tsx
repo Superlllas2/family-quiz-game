@@ -6,7 +6,7 @@ import type { Lang } from '../protocol';
 export function PollDoneScreen(props: { lang: Lang }) {
   return (
     <div class="body center">
-      <p class="result-head">{t(props.lang, 'pollDone.thanks')}</p>
+      <p class="result-head stamp">{t(props.lang, 'pollDone.thanks')}</p>
     </div>
   );
 }

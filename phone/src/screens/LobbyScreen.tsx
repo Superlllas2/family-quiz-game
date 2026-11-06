@@ -25,7 +25,10 @@ export function LobbyScreen(props: Props) {
 
   return (
     <div class="body lobby">
-      <h1>{t(lang, 'lobby.title')}</h1>
+      <h1 class="lobby-title">
+        {t(lang, 'lobby.title')}
+        <span class="hand lobby-accent">{t(lang, 'lobby.accent')}</span>
+      </h1>
 
       <ul class="chips lobby-chips">
         {players.map((p) => (

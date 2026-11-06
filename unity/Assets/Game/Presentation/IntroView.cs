@@ -1,17 +1,17 @@
-using TMPro;
 using UnityEngine;
 
 namespace FamilyQuiz.Presentation
 {
     /// <summary>
-    /// Intro (docs/02_show_flow.md): the title card and every player's chip. The Intro prediction was dropped (D85).
+    /// Intro (docs/02_show_flow.md, decisions/0017_game_night_ui.md): the welcome on the title ribbon and every player's
+    /// name piece along the bottom. The Intro prediction was dropped (D85).
     /// </summary>
     public sealed class IntroView : MonoBehaviour
     {
-        private const float ChipHeight = 86f;
+        private const float ChipHeight = 76f;
 
         private TvContext _context;
-        private TextMeshProUGUI _title;
+        private TitleRibbon _title;
         private ChipRow _chips;
 
         public static IntroView Create(Transform parent, TvContext context)
@@ -23,35 +23,30 @@ namespace FamilyQuiz.Presentation
             return view;
         }
 
-        /// <summary>With the 3D studio on (decisions 0016) the title moves up out of the way of the host solo shot.</summary>
+        /// <summary>Kept for TvPresenter: the layout is the same with the 3D studio on or off.</summary>
         public void SetStudioMode(bool on)
         {
-            UiBuilder.Anchor(_title.rectTransform, 0.05f, on ? 0.8f : 0.5f, 0.95f, on ? 0.97f : 0.8f);
         }
 
         public void Enter()
         {
             Refresh();
+            _title.Rise();
         }
 
         /// <summary>Texts (a language change) and chips (roster, connection).</summary>
         public void Refresh()
         {
             var state = _context.Game.State;
-            _title.text = _context.T("tv.intro.title");
+            _title.Set(_context.T("tv.intro.title"), null);
             _chips.Sync(state, ChipHeight);
         }
 
         private void Build()
         {
-            _title = UiBuilder.Text("Title", transform, 140, TvColors.Text, true, TextAlignmentOptions.Center);
-            _title.enableAutoSizing = true;
-            _title.fontSizeMin = 96;
-            _title.fontSizeMax = 140;
-            UiBuilder.Anchor(_title.rectTransform, 0.05f, 0.5f, 0.95f, 0.8f);
-
+            _title = TitleRibbon.Create(transform, TvColors.Mustard);
             _chips = ChipRow.Create(transform, _context);
-            UiBuilder.Anchor((RectTransform)_chips.transform, 0.02f, 0.06f, 0.98f, 0.14f);
+            UiBuilder.Anchor((RectTransform)_chips.transform, 0.02f, 0.04f, 0.98f, 0.115f);
         }
     }
 }

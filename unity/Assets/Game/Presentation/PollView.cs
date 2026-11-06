@@ -54,24 +54,28 @@ namespace FamilyQuiz.Presentation
             long left = Math.Max(0, end - game.NowMs);
             long span = end - state.PhaseStartedAtMs;
             if (span <= 0) span = (long)(game.Config.Poll.MaxSeconds * 1000);
-            _bar.Set(span > 0 ? (float)left / span : 0f, TvColors.DimText);
+            _bar.Set(span > 0 ? (float)left / span : 0f, TvColors.Mustard);
         }
+
+        /// <summary>A cream card in the middle under the hosts' zone (decisions/0017_game_night_ui.md).</summary>
+        private static readonly Rect CardRect = new Rect(307f, 300f, 1306f, 330f);
 
         private void Build()
         {
-            _title = UiBuilder.Text("Title", transform, 88, TvColors.Text, true, TextAlignmentOptions.Center);
-            _title.enableAutoSizing = true;
-            _title.fontSizeMin = 64;
-            _title.fontSizeMax = 88;
-            UiBuilder.Anchor(_title.rectTransform, 0.06f, 0.5f, 0.94f, 0.78f);
+            var zone = TvLayout.Put(UiBuilder.Rect("PollZone", transform), CardRect);
+            var card = TvPiece.Card("Card", zone, TvColors.Cream, 22f, 10f).Tilt(-1f);
+            UiBuilder.Anchor(card.Root, 0, 0, 1, 1);
 
-            _count = UiBuilder.Text("Count", transform, 64, TvColors.DimText, true, TextAlignmentOptions.Center);
-            _count.textWrappingMode = TextWrappingModes.NoWrap;
-            _count.overflowMode = TextOverflowModes.Overflow;
-            UiBuilder.Anchor(_count.rectTransform, 0.06f, 0.36f, 0.94f, 0.46f);
+            _title = UiBuilder.Display("Title", card.Content, 56, TvColors.Ink, TextAlignmentOptions.Center);
+            UiBuilder.Fit(_title, 32, 56, 2);
+            UiBuilder.Anchor(_title.rectTransform, 0.06f, 0.42f, 0.94f, 0.92f);
 
-            _bar = TimerBar.Create(transform);
-            UiBuilder.Anchor(_bar.Root, 0.2f, 0.27f, 0.8f, 0.285f);
+            _count = UiBuilder.Text("Count", card.Content, 44, TvColors.Ink, true, TextAlignmentOptions.Center);
+            UiBuilder.Fit(_count, 24, 44, 1);
+            UiBuilder.Anchor(_count.rectTransform, 0.06f, 0.2f, 0.94f, 0.4f);
+
+            _bar = TimerBar.Create(card.Content);
+            UiBuilder.Anchor(_bar.Root, 0.2f, 0.07f, 0.8f, 0.12f);
         }
     }
 }

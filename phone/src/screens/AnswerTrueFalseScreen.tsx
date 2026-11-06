@@ -11,10 +11,10 @@ import type { Lang, ScreenState } from '../protocol';
 import { InputStatus } from './InputStatus';
 import { PressButton } from './PressButton';
 
-/** Placeholder colors from 06: green (answer D) for True, red (answer A) for False. */
-const BUTTONS: ReadonlyArray<{ answer: boolean; text: TextKey; color: string }> = [
-  { answer: true, text: 'trueFalse.true', color: '#2ECC71' },
-  { answer: false, text: 'trueFalse.false', color: '#E74C3C' },
+/** Colors from 06: green (answer D) for True, red (answer A) for False; the inks are the ans-d and ans-a classes in style.css. */
+const BUTTONS: ReadonlyArray<{ answer: boolean; text: TextKey; tone: string }> = [
+  { answer: true, text: 'trueFalse.true', tone: 'ans-d' },
+  { answer: false, text: 'trueFalse.false', tone: 'ans-a' },
 ];
 
 interface Props {
@@ -42,8 +42,7 @@ export function AnswerTrueFalseScreen(props: Props) {
           return (
             <PressButton
               key={b.text}
-              class={`answer tf-button${state}`}
-              style={{ background: b.color }}
+              class={`answer tf-button ${b.tone}${state}`}
               onPress={() => props.onAnswer(b.answer)}
             >
               <span class="tf-text">{t(lang, b.text)}</span>

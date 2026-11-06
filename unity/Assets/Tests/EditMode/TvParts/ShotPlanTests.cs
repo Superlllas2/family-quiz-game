@@ -28,7 +28,7 @@ namespace FamilyQuiz.Tests.TvParts
         [TestCase(GamePhase.StartCountdown, Shot.Seats)]
         [TestCase(GamePhase.TopicVote, Shot.Curtain)]
         [TestCase(GamePhase.QuestionShow, Shot.Stage)]
-        [TestCase(GamePhase.Answer, Shot.Stage)]
+        [TestCase(GamePhase.Answer, Shot.Wide)] // on the guests, the question card and tiles under them (0017)
         [TestCase(GamePhase.Reveal, Shot.Wide)]
         [TestCase(GamePhase.Scores, Shot.Wide)]
         [TestCase(GamePhase.RoundEnd, Shot.Wide)]

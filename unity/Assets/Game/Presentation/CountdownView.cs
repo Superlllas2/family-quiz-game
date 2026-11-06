@@ -4,14 +4,17 @@ using UnityEngine;
 
 namespace FamilyQuiz.Presentation
 {
-    /// <summary>StartCountdown: a big 3, 2, 1 from the core clock (ceil of the seconds left) under "Starting".</summary>
+    /// <summary>
+    /// StartCountdown (decisions/0017_game_night_ui.md): "Starting" on the title ribbon and a big 3, 2, 1 on a mustard
+    /// coin on the floor under the seats, from the core clock (ceil of the seconds left); the coin bounces on each number.
+    /// </summary>
     public sealed class CountdownView : MonoBehaviour
     {
         private TvContext _context;
-        private TextMeshProUGUI _title;
+        private TitleRibbon _title;
+        private TvPiece _coin;
         private TextMeshProUGUI _number;
         private long _shown = -1;
-        private float _popAge = -1f;
 
         public static CountdownView Create(Transform parent, TvContext context)
         {
@@ -24,7 +27,7 @@ namespace FamilyQuiz.Presentation
 
         public void Enter()
         {
-            _title.text = _context.T("tv.countdown.title");
+            _title.Set(_context.T("tv.countdown.title"), null);
             _shown = -1;
             Tick();
         }
@@ -39,27 +42,18 @@ namespace FamilyQuiz.Presentation
             if (seconds == _shown) return;
             _shown = seconds;
             _number.text = seconds.ToString();
-            _popAge = 0f;
-        }
-
-        private void Update()
-        {
-            if (_popAge < 0f) return;
-            _popAge += Time.unscaledDeltaTime;
-            float t = _popAge / TvMotion.PopSeconds;
-            float scale = t >= 1f ? 1f : 1f + TvMotion.PopScale * Mathf.Sin(Mathf.PI * t);
-            _number.rectTransform.localScale = new Vector3(scale, scale, 1f);
-            if (t >= 1f) _popAge = -1f;
+            TvTween.On(_coin.Root).Pop(0f, 0.35f);
         }
 
         private void Build()
         {
-            _title = UiBuilder.Text("Title", transform, 88, TvColors.Text, true, TextAlignmentOptions.Center);
-            UiBuilder.Anchor(_title.rectTransform, 0.05f, 0.72f, 0.95f, 0.86f);
-            _number = UiBuilder.Text("Number", transform, 420, TvColors.Text, true, TextAlignmentOptions.Center);
+            _title = TitleRibbon.Create(transform, TvColors.Teal);
+            _coin = TvPiece.Disc("Coin", transform, TvColors.Mustard, 10f);
+            UiBuilder.Place(_coin.Root, 0.5f, 0.2f, 300f, 300f);
+            _number = UiBuilder.Display("Number", _coin.Content, 170, TvColors.Ink, TextAlignmentOptions.Center);
             _number.textWrappingMode = TextWrappingModes.NoWrap;
             _number.overflowMode = TextOverflowModes.Overflow;
-            UiBuilder.Anchor(_number.rectTransform, 0.2f, 0.15f, 0.8f, 0.7f);
+            UiBuilder.Anchor(_number.rectTransform, 0, 0, 1, 1);
         }
     }
 }

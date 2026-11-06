@@ -1,6 +1,7 @@
 {
   "app.title": "Quiz",
   "join.title": "Join the game",
+  "join.accent": "game night!",
   "join.roomLabel": "Room code",
   "join.roomHint": "4 letters from the TV screen",
   "join.nameLabel": "Your name",
@@ -12,6 +13,7 @@
   "lang.ru": "RU",
   "lang.en": "EN",
   "lobby.title": "You're in!",
+  "lobby.accent": "pull up a chair",
   "lobby.ready": "Ready",
   "lobby.notReady": "Not ready",
   "lobby.waitingPlayers": "Waiting for more players",

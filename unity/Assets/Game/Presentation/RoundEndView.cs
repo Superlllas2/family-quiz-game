@@ -1,21 +1,20 @@
 using System.Collections.Generic;
 using FamilyQuiz.Core.Rules;
-using TMPro;
 using UnityEngine;
 
 namespace FamilyQuiz.Presentation
 {
     /// <summary>
-    /// RoundEnd (docs/02_show_flow.md): "Round N is over", the round winner or winners (the most points this round, all
-    /// tied names; nobody when nobody scored), and the leaderboard by total score with each player's points this round.
+    /// RoundEnd (docs/02_show_flow.md, decisions/0017_game_night_ui.md): "Round N is over" on the title ribbon with the
+    /// round winner or winners under it (the most points this round, all tied names; nobody when nobody scored), and the
+    /// leaderboard by total score with each player's points this round, under the hosts' and title zones.
     /// </summary>
     public sealed class RoundEndView : MonoBehaviour
     {
         private const string NameSeparator = ", ";
 
         private TvContext _context;
-        private TextMeshProUGUI _title;
-        private TextMeshProUGUI _winner;
+        private TitleRibbon _title;
         private LeaderboardList _list;
 
         public static RoundEndView Create(Transform parent, TvContext context)
@@ -30,6 +29,7 @@ namespace FamilyQuiz.Presentation
         public void Enter()
         {
             Refresh();
+            _title.Rise();
         }
 
         /// <summary>Everything from the state: texts, the winners and the rows at their places.</summary>
@@ -37,12 +37,10 @@ namespace FamilyQuiz.Presentation
         {
             var state = _context.Game.State;
             var round = state.Round;
-            _title.text = round != null ? _context.Format("tv.roundEnd.title", "round", (round.Index + 1).ToString()) : string.Empty;
-
             var names = new List<string>();
             foreach (var p in Standings.RoundWinners(state)) names.Add(p.Name);
-            _winner.gameObject.SetActive(names.Count > 0);
-            _winner.text = names.Count > 0 ? _context.Format("tv.roundEnd.winner", "names", string.Join(NameSeparator, names)) : string.Empty;
+            _title.Set(round != null ? _context.Format("tv.roundEnd.title", "round", (round.Index + 1).ToString()) : string.Empty,
+                names.Count > 0 ? _context.Format("tv.roundEnd.winner", "names", string.Join(NameSeparator, names)) : null);
 
             var order = Standings.ByScore(state);
             if (!_list.Matches(order)) _list.Rebuild(order);
@@ -61,18 +59,9 @@ namespace FamilyQuiz.Presentation
 
         private void Build()
         {
-            _title = UiBuilder.Text("Title", transform, 80, TvColors.Text, true, TextAlignmentOptions.Center);
-            UiBuilder.Anchor(_title.rectTransform, 0.05f, 0.88f, 0.95f, 0.98f);
-
-            _winner = UiBuilder.Text("Winner", transform, 64, TvColors.Crown, true, TextAlignmentOptions.Center);
-            _winner.enableAutoSizing = true;
-            _winner.fontSizeMin = 44;
-            _winner.fontSizeMax = 64;
-            _winner.textWrappingMode = TextWrappingModes.NoWrap;
-            UiBuilder.Anchor(_winner.rectTransform, 0.03f, 0.79f, 0.97f, 0.88f);
-
             _list = LeaderboardList.Create(transform);
-            UiBuilder.Anchor(_list.Rect, 0.05f, 0.03f, 0.95f, 0.77f);
+            TvLayout.Put(_list.Rect, TvLayout.Content);
+            _title = TitleRibbon.Create(transform, TvColors.Mustard);
         }
     }
 }

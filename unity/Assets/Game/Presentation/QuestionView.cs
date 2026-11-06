@@ -1,40 +1,48 @@
 using System;
+using System.Collections.Generic;
 using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.State;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace FamilyQuiz.Presentation
 {
     /// <summary>
-    /// One question cycle on the TV (docs/02_show_flow.md): QuestionShow (question and read time bar), Answer
-    /// (question, 2x2 options, countdown, chips that pop on lock in, never what anyone chose) and Reveal (the correct
-    /// tile grows green, the others fade, each chip shows its points). A closest value question (docs/04_formats.md)
-    /// shows its range and unit instead of the options, and on Reveal the number line with every guess and the flag.
-    /// A power up's target shows a small marker above their chip ("Dad → Freeze"). Reads GameState; changes nothing.
+    /// One question cycle on the TV (docs/02_show_flow.md, decisions/0017_game_night_ui.md), all on the TvLayout zones:
+    /// <list type="bullet">
+    /// <item>QuestionShow: the question card, large, on the board of the Stage shot, with the read time burning down its
+    /// fuse; a closest value question shows its ruler under it.</item>
+    /// <item>Answer: the card, small, under the guests of the Wide shot, and the four tiles under it (or the ruler); the
+    /// clock token and the players' tokens in the status corner, a token gets its check when its player locks in.
+    /// Never what anyone chose.</item>
+    /// <item>Reveal: the stamp slams onto the right tile, the others sink; each player's token sits on the tile they
+    /// picked and their points show as a sticker under their status token; then the card flips over to "Why?" and the
+    /// fact. A closest value Reveal shows the ruler with every guess on a pin, the flag and the crown instead.</item>
+    /// </list>
+    /// Power up tags show under the status corner. Reads GameState; changes nothing.
     /// </summary>
     public sealed class QuestionView : MonoBehaviour
     {
         private const int OptionCount = 4;
-        private const float TileGap = 24f;
-        private const float ChipHeight = 86f;
+        private const float TileGapX = 26f;
+        private const float TileGapY = 30f;
+
+        /// <summary>When the card flips to the fact on Reveal, after the stamp landed.</summary>
+        private const float FlipDelaySeconds = 0.9f;
 
         private readonly AnswerTile[] _tiles = new AnswerTile[OptionCount];
         private TvContext _context;
-        private TextMeshProUGUI _number;
-        private TextMeshProUGUI _seconds;
-        private TextMeshProUGUI _question;
-        private TextMeshProUGUI _answered;
-        private TimerBar _bar;
+        private QuestionCard _card;
         private RectTransform _tilesRoot;
-        private TextMeshProUGUI _range;
-        private TextMeshProUGUI _unit;
         private ValueLine _valueLine;
-        private ChipRow _chips;
+        private StatusStrip _status;
+        private HitList _hits;
+        private RectTransform _stamp;
+        private TextMeshProUGUI _stampText;
         private GamePhase _mode;
         private long _answerSpanMs;
         private bool _revealApplied;
-        private bool _studio;
 
         public static QuestionView Create(Transform parent, TvContext context)
         {
@@ -52,42 +60,47 @@ namespace FamilyQuiz.Presentation
             _mode = phase;
             var state = _context.Game.State;
             var question = state.Question;
-            var lang = _context.Lang;
-            _number.text = question != null
-                ? _context.Format("tv.question.number", "number", (question.Slot + 1).ToString(), "total", state.QuestionCount.ToString())
-                : string.Empty;
-            _question.text = question != null ? question.Def.Text.Get(lang) : string.Empty;
-
             bool show = phase == GamePhase.QuestionShow;
             bool answer = phase == GamePhase.Answer;
             bool reveal = phase == GamePhase.Reveal;
             bool closest = question != null && question.IsClosestValue;
-            LayoutQuestion(show);
-            _tilesRoot.gameObject.SetActive(!show && !closest);
-            ShowRange(question, closest && !reveal, show);
-            _valueLine.gameObject.SetActive(closest && reveal);
-            _chips.gameObject.SetActive(!show);
-            _bar.SetVisible(show || answer);
-            _seconds.gameObject.SetActive(answer);
-            _answered.gameObject.SetActive(answer);
+            bool fresh = !(reveal && previous == GamePhase.Answer);
 
-            if (answer || (reveal && previous != GamePhase.Answer))
+            // The card: large on the board, small under the guests; its front each time the question is set up.
+            TvLayout.Put(_card.Rect, show ? TvLayout.ShowCard : TvLayout.AnswerCard);
+            _card.SetLarge(show);
+            _card.gameObject.SetActive(!(reveal && closest));
+            if (fresh) ShowFront(question);
+            if (show || answer) _card.PopIn(show ? 0.2f : 0f);
+
+            _tilesRoot.gameObject.SetActive(!show && !closest);
+            _stamp.gameObject.SetActive(false);
+            if (answer || (reveal && fresh))
             {
                 for (int i = 0; i < OptionCount; i++)
                 {
                     bool has = question != null && question.Def.Options != null && i < question.Def.Options.Count;
                     _tiles[i].gameObject.SetActive(has);
-                    _tiles[i].ResetLook(has ? question.OptionText(i, lang) : string.Empty);
+                    _tiles[i].ResetLook(has ? question.OptionText(i, _context.Lang) : string.Empty, answer, 0.15f + 0.08f * i);
                 }
             }
 
-            if (!reveal) LayoutOptions(-1);
+            _valueLine.gameObject.SetActive(closest);
+            if (closest)
+            {
+                TvLayout.Put(_valueLine.Rect, show ? TvLayout.ShowRuler : reveal ? TvLayout.RulerReveal : TvLayout.Ruler);
+                _valueLine.ShowRange(question);
+                if (show || answer) TvTween.On(_valueLine.Rect).Rise(show ? 0.4f : 0.1f);
+            }
 
+            _status.gameObject.SetActive(!show);
+            _status.SetClockVisible(answer);
             if (show || answer)
             {
                 _revealApplied = false;
                 _answerSpanMs = answer ? AnswerClock.Span(state) : 0;
-                foreach (var chip in _chips.Chips) chip.SetCaption(null, TvColors.Text);
+                _status.Sync(state);
+                _status.ClearMarks();
             }
 
             Refresh();
@@ -95,44 +108,44 @@ namespace FamilyQuiz.Presentation
             Tick();
         }
 
-        /// <summary>Roster, connection or player changes: chips follow, captions on Reveal.</summary>
+        /// <summary>Roster, connection or player changes: tokens follow; their marks come from the state.</summary>
         public void Refresh()
         {
             var state = _context.Game.State;
-            _chips.Sync(state, ChipHeight);
-            for (int i = 0; i < state.Players.Count && i < _chips.Chips.Count; i++)
+            _status.Sync(state);
+            if (_mode == GamePhase.Answer)
             {
-                var player = state.Players[i];
-                var chip = _chips.Chips[i];
-                chip.SetLocked(_mode == GamePhase.Answer && player.Turn != null && player.Turn.Locked);
-                if (_mode == GamePhase.Reveal) SetResultCaption(chip, player);
+                for (int i = 0; i < state.Players.Count && i < _status.Tokens.Count; i++)
+                {
+                    var turn = state.Players[i].Turn;
+                    _status.Tokens[i].SetLocked(turn != null && turn.Locked);
+                }
             }
 
-            if (_mode == GamePhase.Reveal && _revealApplied && IsClosestValue()) _valueLine.Show(state, false);
+            if (_mode == GamePhase.Reveal && _revealApplied)
+            {
+                SetStickers(state, false);
+                if (IsClosestValue()) _valueLine.Show(state, false);
+            }
+
             RefreshHits();
         }
 
         /// <summary>
-        /// Power up markers next to the chips (docs/03_rules.md, "Using"): in Answer the effect that landed on each target
-        /// (PowerUpApplied), in Reveal the hits used in this pick window (PowerUpUsed) that land at the next Answer.
+        /// Power up tags (docs/03_rules.md, "Using"): in Answer the effect that landed on each target (PowerUpApplied),
+        /// in Reveal the hits used in this pick window (PowerUpUsed) that land at the next Answer.
         /// </summary>
         public void RefreshHits()
         {
-            var state = _context.Game.State;
-            for (int i = 0; i < state.Players.Count && i < _chips.Chips.Count; i++)
-            {
-                var hit = PowerUpHit.For(state.Players[i], _mode);
-                _chips.Chips[i].SetHit(_context.HitText(hit), hit != null ? TvColors.PowerUp(hit.PowerUp) : TvColors.Text);
-            }
+            if (_mode == GamePhase.QuestionShow) _hits.Clear();
+            else _hits.Refresh(_context.Game.State, _mode);
         }
 
         public void OnAnswerLocked(string playerId)
         {
             if (_mode != GamePhase.Answer) return;
-            var chip = _chips.Find(playerId);
-            if (chip == null) return;
-            chip.SetLocked(true);
-            chip.Pop();
+            var token = _status.Find(playerId);
+            if (token != null) token.SetLocked(true, true);
         }
 
         public void OnRevealed(int correctDisplayIndex)
@@ -140,7 +153,7 @@ namespace FamilyQuiz.Presentation
             if (_mode == GamePhase.Reveal) ApplyReveal(correctDisplayIndex);
         }
 
-        /// <summary>Per frame: the timer bars, the seconds left and the answered count, all from the core clock.</summary>
+        /// <summary>Per frame: the fuse and the clock, from the core clock.</summary>
         public void Tick()
         {
             var game = _context.Game;
@@ -150,72 +163,134 @@ namespace FamilyQuiz.Presentation
             {
                 long span = state.PhaseEndsAtMs.HasValue ? state.PhaseEndsAtMs.Value - state.PhaseStartedAtMs : 0;
                 float read = span > 0 ? (float)(now - state.PhaseStartedAtMs) / span : 1f;
-                _bar.Set(read, TvColors.Text);
+                _card.SetFuse(1f - Mathf.Clamp01(read));
                 return;
             }
 
             if (_mode != GamePhase.Answer) return;
             long left = Math.Max(0, AnswerClock.LatestOpenDeadline(state, now) - now);
             bool lastCall = left <= (long)(game.Config.Timers.LastCall * 1000);
-            _bar.Set(_answerSpanMs > 0 ? (float)left / _answerSpanMs : 0f, lastCall ? TvColors.Error : TvColors.Text);
-            _seconds.text = ((left + 999) / 1000).ToString();
-            _seconds.color = lastCall ? TvColors.Error : TvColors.Text;
-
-            AnswerClock.Count(state, out int locked, out int total);
-            _answered.text = _context.Format("tv.question.answered", "count", locked.ToString(), "total", total.ToString());
+            _status.SetClock(_answerSpanMs > 0 ? (float)left / _answerSpanMs : 0f, (left + 999) / 1000, lastCall);
         }
 
-        /// <summary>
-        /// With the 3D studio behind the overlay (decisions 0016) the Reveal is played on the Wide shot, where the
-        /// guests hold up their cards: only the correct option stays, as a banner over the empty floor at the bottom,
-        /// and the closest value line moves down there too. Off, the flat layout comes back.
-        /// </summary>
+        /// <summary>Kept for TvPresenter: the layout is the same with the 3D studio on or off.</summary>
         public void SetStudioMode(bool on)
         {
-            _studio = on;
-            var question = _context.Game?.State.Question;
-            LayoutOptions(question != null ? question.CorrectDisplayIndex : -1);
         }
 
-        private void LayoutOptions(int correct)
+        private void ShowFront(QuestionInPlay question)
         {
-            bool banner = _studio && _mode == GamePhase.Reveal && correct >= 0;
-            UiBuilder.Anchor(_tilesRoot, banner ? 0.3f : 0.04f, banner ? 0.225f : 0.27f, banner ? 0.7f : 0.96f, banner ? 0.32f : 0.625f);
-            UiBuilder.Anchor(_valueLine.Rect, 0.03f, 0.13f, 0.97f, _studio ? 0.4f : 0.64f);
-            for (int i = 0; i < OptionCount; i++)
+            if (question == null)
             {
-                int column = i % 2;
-                int row = i / 2;
-                float minX = column * 0.5f;
-                float minY = row == 0 ? 0.5f : 0f;
-                var tile = banner ? UiBuilder.Anchor(_tiles[i].Rect, 0, 0, 1, 1) : UiBuilder.Anchor(_tiles[i].Rect, minX, minY, minX + 0.5f, minY + 0.5f);
-                tile.offsetMin = banner ? Vector2.zero : new Vector2(column == 1 ? TileGap / 2 : 0, row == 0 ? TileGap / 2 : 0);
-                tile.offsetMax = banner ? Vector2.zero : new Vector2(column == 0 ? -TileGap / 2 : 0, row == 1 ? -TileGap / 2 : 0);
-                if (banner) _tiles[i].gameObject.SetActive(i == correct);
+                _card.ShowFront(string.Empty, null, null, null, null);
+                return;
             }
+
+            var state = _context.Game.State;
+            string multiplier = question.Multiplier > 1.0001
+                ? _context.Format("tv.question.multiplier", "multiplier", NumberText.Format(question.Multiplier))
+                : null;
+            _card.ShowFront(question.Def.Text.Get(_context.Lang), TopicTitle(question.Def.Topic),
+                _context.Format("tv.question.coin", "number", (question.Slot + 1).ToString(), "total", state.QuestionCount.ToString()),
+                _context.T("tv.question.coinLabel"), multiplier);
+        }
+
+        private string TopicTitle(string topicId)
+        {
+            foreach (var t in _context.Game.Content.Topics)
+            {
+                if (t.Id == topicId) return t.Title.Get(_context.Lang);
+            }
+
+            return null;
         }
 
         private void ApplyReveal(int correct)
         {
             bool closest = IsClosestValue();
+            var state = _context.Game.State;
             if (!closest)
             {
                 for (int i = 0; i < OptionCount; i++) _tiles[i].Reveal(i == correct);
-                LayoutOptions(correct);
+                if (correct >= 0 && correct < OptionCount) PlaceStamp(_tiles[correct], !_revealApplied);
             }
 
             if (_revealApplied) return;
             _revealApplied = true;
-            var state = _context.Game.State;
-            for (int i = 0; i < state.Players.Count && i < _chips.Chips.Count; i++)
+            for (int i = 0; i < state.Players.Count && i < _status.Tokens.Count; i++) _status.Tokens[i].SetLocked(false);
+            SetStickers(state, true);
+            if (closest)
             {
-                var turn = state.Players[i].Turn;
-                _chips.Chips[i].SetLocked(false);
-                SetResultCaption(_chips.Chips[i], state.Players[i]);
-                if (turn != null && (turn.Correct || turn.Closest)) _chips.Chips[i].Pop();
+                _valueLine.Show(state, true);
+                return;
             }
 
-            if (closest) _valueLine.Show(state, true);
+            SetPicks(state);
+            var fact = state.Question?.Def.Fact;
+            string factText = fact != null ? fact.Get(_context.Lang) : null;
+            if (!string.IsNullOrEmpty(factText)) _card.FlipToBack(_context.T("tv.reveal.why"), factText, FlipDelaySeconds);
+        }
+
+        /// <summary>Each player's points (or "Wrong", "No answer") as a sticker under their status token.</summary>
+        private void SetStickers(GameState state, bool animate)
+        {
+            for (int i = 0; i < state.Players.Count && i < _status.Tokens.Count; i++)
+            {
+                var turn = state.Players[i].Turn;
+                string text;
+                Color fill;
+                if (turn == null || !turn.Locked)
+                {
+                    text = _context.T("tv.reveal.noAnswer");
+                    fill = TvColors.Cream2;
+                }
+                else if (turn.Correct || turn.Points > 0) // a closest guess scores its bonus even when it is not "correct"
+                {
+                    text = _context.Format("tv.reveal.points", "points", turn.Points.ToString());
+                    fill = TvColors.Mustard;
+                }
+                else
+                {
+                    text = _context.T("tv.reveal.wrong");
+                    fill = TvColors.Cream2;
+                }
+
+                _status.Tokens[i].SetSticker(text, fill, animate, 0.5f + 0.06f * i);
+            }
+        }
+
+        /// <summary>The players' tokens on the tiles they picked.</summary>
+        private void SetPicks(GameState state)
+        {
+            var names = new string[state.Players.Count];
+            for (int i = 0; i < names.Length; i++) names[i] = state.Players[i].Name;
+            var labels = TokenLabels.For(names);
+            var picks = new List<(string, string, Color)>[OptionCount];
+            for (int i = 0; i < OptionCount; i++) picks[i] = new List<(string, string, Color)>();
+            for (int i = 0; i < state.Players.Count; i++)
+            {
+                var p = state.Players[i];
+                var choice = p.Turn != null && p.Turn.Locked ? p.Turn.Choice : null;
+                if (choice.HasValue && choice.Value >= 0 && choice.Value < OptionCount)
+                    picks[choice.Value].Add((p.PlayerId, labels[i], _context.ChipColor(p.CharacterId)));
+            }
+
+            int correct = state.Question != null ? state.Question.CorrectDisplayIndex : -1;
+            for (int i = 0; i < OptionCount; i++) _tiles[i].SetPicks(picks[i], true, i < 2, i == correct ? AnswerTile.StampRoom : 0f);
+        }
+
+        /// <summary>The rubber stamp on the right tile's right end, slammed down once.</summary>
+        private void PlaceStamp(AnswerTile tile, bool slam)
+        {
+            _stamp.SetParent(tile.Body, false);
+            _stamp.anchorMin = _stamp.anchorMax = new Vector2(1f, 0.5f);
+            _stamp.pivot = new Vector2(1f, 0.5f);
+            _stamp.anchoredPosition = new Vector2(-20f, 0f);
+            _stamp.sizeDelta = new Vector2(230f, 62f);
+            _stamp.SetAsLastSibling();
+            _stampText.text = _context.T("tv.reveal.stamp");
+            _stamp.gameObject.SetActive(true);
+            if (slam) TvTween.On(_stamp).Slam(0.15f);
         }
 
         private bool IsClosestValue()
@@ -224,83 +299,13 @@ namespace FamilyQuiz.Presentation
             return question != null && question.IsClosestValue;
         }
 
-        /// <summary>
-        /// A closest value question's range ("from 1800 to 2000") and unit, under the question: below the read time bar
-        /// in QuestionShow, where the options would be in Answer.
-        /// </summary>
-        private void ShowRange(QuestionInPlay question, bool visible, bool centered)
-        {
-            var range = question?.Def.Range;
-            visible = visible && range != null && range.Length > 1;
-            _range.gameObject.SetActive(visible);
-            string unit = visible && question.Def.Unit != null ? question.Def.Unit.Get(_context.Lang) : string.Empty;
-            _unit.gameObject.SetActive(visible && !string.IsNullOrEmpty(unit));
-            if (!visible) return;
-            _range.text = _context.Format("tv.closestValue.range", "min", NumberText.Format(range[0]), "max", NumberText.Format(range[1]));
-            _unit.text = unit;
-            if (centered)
-            {
-                UiBuilder.Anchor(_range.rectTransform, 0.06f, 0.17f, 0.94f, 0.27f);
-                UiBuilder.Anchor(_unit.rectTransform, 0.06f, 0.1f, 0.94f, 0.17f);
-            }
-            else
-            {
-                UiBuilder.Anchor(_range.rectTransform, 0.06f, 0.42f, 0.94f, 0.58f);
-                UiBuilder.Anchor(_unit.rectTransform, 0.06f, 0.32f, 0.94f, 0.42f);
-            }
-        }
-
-        private void SetResultCaption(CharacterChip chip, PlayerState player)
-        {
-            var turn = player.Turn;
-            if (turn == null || !turn.Locked)
-                chip.SetCaption(_context.T("tv.reveal.noAnswer"), TvColors.DimText);
-            else if (turn.Correct || turn.Points > 0) // a closest guess scores its bonus even when it is not "correct"
-                chip.SetCaption(_context.Format("tv.reveal.points", "points", turn.Points.ToString()), TvColors.Correct);
-            else
-                chip.SetCaption(_context.T("tv.reveal.wrong"), TvColors.DimText);
-        }
-
-        private void LayoutQuestion(bool centered)
-        {
-            var rect = _question.rectTransform;
-            if (centered)
-            {
-                UiBuilder.Anchor(rect, 0.06f, 0.38f, 0.94f, 0.8f);
-                _question.alignment = TextAlignmentOptions.Center;
-                _question.fontSizeMax = 96;
-                UiBuilder.Anchor(_bar.Root, 0.2f, 0.3f, 0.8f, 0.318f);
-            }
-            else
-            {
-                UiBuilder.Anchor(rect, 0.04f, 0.67f, 0.96f, 0.89f);
-                _question.alignment = TextAlignmentOptions.Center;
-                _question.fontSizeMax = 80;
-                UiBuilder.Anchor(_bar.Root, 0.04f, 0.643f, 0.96f, 0.658f);
-            }
-        }
-
         private void Build()
         {
             var root = transform;
-            _number = UiBuilder.Text("Number", root, 44, TvColors.DimText, false, TextAlignmentOptions.Left);
-            UiBuilder.Anchor(_number.rectTransform, 0.03f, 0.9f, 0.7f, 0.985f);
+            _valueLine = ValueLine.Create(root, _context);
+            _valueLine.gameObject.SetActive(false);
 
-            _seconds = UiBuilder.Text("Seconds", root, 96, TvColors.Text, true, TextAlignmentOptions.Right);
-            _seconds.textWrappingMode = TextWrappingModes.NoWrap;
-            _seconds.overflowMode = TextOverflowModes.Overflow;
-            UiBuilder.Anchor(_seconds.rectTransform, 0.8f, 0.885f, 0.97f, 0.995f);
-
-            _question = UiBuilder.Text("Question", root, 80, TvColors.Text, true, TextAlignmentOptions.Center);
-            // Two lines at most: long questions shrink to 64 before they are cut.
-            _question.enableAutoSizing = true;
-            _question.fontSizeMin = 64;
-            _question.fontSizeMax = 80;
-            _question.maxVisibleLines = 2;
-
-            _bar = TimerBar.Create(root);
-
-            _tilesRoot = UiBuilder.Anchor(UiBuilder.Rect("Options", root), 0.04f, 0.27f, 0.96f, 0.625f);
+            _tilesRoot = TvLayout.Put(UiBuilder.Rect("Options", root), TvLayout.Tiles);
             for (int i = 0; i < OptionCount; i++)
             {
                 _tiles[i] = AnswerTile.Create(_tilesRoot, i);
@@ -309,30 +314,31 @@ namespace FamilyQuiz.Presentation
                 float minX = column * 0.5f;
                 float minY = row == 0 ? 0.5f : 0f;
                 var tile = UiBuilder.Anchor(_tiles[i].Rect, minX, minY, minX + 0.5f, minY + 0.5f);
-                tile.offsetMin = new Vector2(column == 1 ? TileGap / 2 : 0, row == 0 ? TileGap / 2 : 0);
-                tile.offsetMax = new Vector2(column == 0 ? -TileGap / 2 : 0, row == 1 ? -TileGap / 2 : 0);
+                tile.offsetMin = new Vector2(column == 1 ? TileGapX / 2 : 0, row == 0 ? TileGapY / 2 : 0);
+                tile.offsetMax = new Vector2(column == 0 ? -TileGapX / 2 : 0, row == 1 ? -TileGapY / 2 : 0);
             }
 
-            _range = UiBuilder.Text("Range", root, 96, TvColors.Text, true, TextAlignmentOptions.Center);
-            _range.textWrappingMode = TextWrappingModes.NoWrap;
-            _range.enableAutoSizing = true;
-            _range.fontSizeMin = 64;
-            _range.fontSizeMax = 96;
-            _unit = UiBuilder.Text("Unit", root, 64, TvColors.DimText, true, TextAlignmentOptions.Center);
-            _unit.textWrappingMode = TextWrappingModes.NoWrap;
+            _card = QuestionCard.Create(root);
+            TvLayout.Put(_card.Rect, TvLayout.ShowCard);
 
-            _valueLine = ValueLine.Create(root, _context);
-            // Over the options' place, up to the question; the chip row with every player's result stays below.
-            UiBuilder.Anchor(_valueLine.Rect, 0.03f, 0.13f, 0.97f, 0.64f);
-            _valueLine.gameObject.SetActive(false);
+            // The stamp: red ink frame and word on a cream wash, a little turned; moved onto the right tile on Reveal.
+            _stamp = UiBuilder.Rect("Stamp", root);
+            _stamp.localRotation = Quaternion.Euler(0, 0, 7f);
+            TvTween.On(_stamp).Tilt = 7f;
+            var wash = UiBuilder.Image("Wash", _stamp, new Color(TvColors.Cream.r, TvColors.Cream.g, TvColors.Cream.b, 0.9f), TvSprites.Solid);
+            wash.pixelsPerUnitMultiplier = 2.5f;
+            UiBuilder.Anchor(wash.rectTransform, 0, 0, 1, 1);
+            var frame = UiBuilder.Image("Frame", _stamp, TvColors.Red, TvSprites.Frame);
+            frame.pixelsPerUnitMultiplier = 1.6f;
+            UiBuilder.Anchor(frame.rectTransform, 0, 0, 1, 1);
+            _stampText = UiBuilder.Display("Word", _stamp, 34, TvColors.Red, TextAlignmentOptions.Center);
+            UiBuilder.Fit(_stampText, 18, 34, 1);
+            _stampText.characterSpacing = 6f;
+            UiBuilder.Anchor(_stampText.rectTransform, 0.06f, 0.1f, 0.94f, 0.9f);
+            _stamp.gameObject.SetActive(false);
 
-            _answered = UiBuilder.Text("Answered", root, 44, TvColors.DimText, false, TextAlignmentOptions.Center);
-            UiBuilder.Anchor(_answered.rectTransform, 0.04f, 0.185f, 0.96f, 0.25f);
-
-            _chips = ChipRow.Create(root, _context);
-            UiBuilder.Anchor((RectTransform)_chips.transform, 0.02f, 0.025f, 0.98f, 0.105f);
-
-            LayoutQuestion(true);
+            _status = StatusStrip.Create(root, _context);
+            _hits = HitList.Create(root, _context);
         }
     }
 }

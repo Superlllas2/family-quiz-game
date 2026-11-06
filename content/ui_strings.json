@@ -83,5 +83,14 @@
   "tv.settings.resetSeen": { "ru": "Сбросить сыгранные вопросы", "en": "Reset seen questions" },
   "tv.settings.seenCount": { "ru": "Сыграно вопросов: {questions}, утверждений: {statements}", "en": "Seen questions: {questions}, statements: {statements}" },
   "tv.settings.backToLobby": { "ru": "Вернуться в лобби", "en": "Back to lobby" },
-  "tv.settings.backToLobbyConfirm": { "ru": "Нажмите ещё раз, чтобы вернуться", "en": "Click again to go back" }
+  "tv.settings.backToLobbyConfirm": { "ru": "Нажмите ещё раз, чтобы вернуться", "en": "Click again to go back" },
+  "tv.question.coin": { "ru": "{number}/{total}", "en": "{number}/{total}" },
+  "tv.question.coinLabel": { "ru": "вопрос", "en": "question" },
+  "tv.question.multiplier": { "ru": "×{multiplier}!", "en": "×{multiplier}!" },
+  "tv.reveal.stamp": { "ru": "ВЕРНО!", "en": "RIGHT!" },
+  "tv.reveal.why": { "ru": "Почему?", "en": "Why?" },
+  "tv.topicVote.hint": { "ru": "Голосуйте на телефонах", "en": "Vote on your phones" },
+  "tv.lobby.ticketTop": { "ru": "Сегодня в эфире · вход по коду", "en": "On air tonight · entry by code" },
+  "tv.lobby.players": { "ru": "{count} из {max}", "en": "{count} of {max}" },
+  "tv.scores.subtitle": { "ru": "после вопроса {number} из {total}", "en": "after question {number} of {total}" }
 }

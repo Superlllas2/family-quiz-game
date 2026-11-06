@@ -52,3 +52,18 @@ export function StepIcon(props: { kind: 'minus' | 'plus' }) {
     </svg>
   );
 }
+
+/** A cardboard TV set drawn in the board game look (watch screen): the hint to look up at the real one. Colors in style.css. */
+export function TvPiece() {
+  return (
+    <svg class="tv-piece" viewBox="0 0 120 100" aria-hidden="true">
+      <path class="tv-line" d="M46 8 L60 22 L76 4" stroke-width="5" />
+      <rect class="tv-edge" x="8" y="27" width="104" height="64" rx="12" />
+      <rect class="tv-body" x="8" y="22" width="104" height="64" rx="12" stroke-width="5" />
+      <rect class="tv-screen" x="18" y="32" width="66" height="44" rx="7" stroke-width="4" />
+      <path class="tv-glint" d="M26 42 Q34 38 40 44" stroke-width="4" />
+      <circle class="tv-knob" cx="98" cy="42" r="5" stroke-width="3.5" />
+      <circle class="tv-knob tv-knob-2" cx="98" cy="60" r="5" stroke-width="3.5" />
+    </svg>
+  );
+}

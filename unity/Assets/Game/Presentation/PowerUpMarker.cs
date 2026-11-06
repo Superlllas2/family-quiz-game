@@ -6,7 +6,7 @@ namespace FamilyQuiz.Presentation
 {
     /// <summary>
     /// The small marker next to a power up's target (docs/03_rules.md, "Using"): a rounded tag in the power up's color
-    /// with the attacker's name and the power up ("Dad → Freeze") in #14161C. Hidden without a hit.
+    /// with the attacker's name and the power up ("Dad → Freeze") in ink. Hidden without a hit.
     /// </summary>
     public sealed class PowerUpMarker
     {
@@ -30,8 +30,11 @@ namespace FamilyQuiz.Presentation
         /// <summary>A hidden marker; place and size it with Root.</summary>
         public static PowerUpMarker Create(Transform parent, float fontSize)
         {
-            var box = UiBuilder.Image("PowerUpMarker", parent, TvColors.Text, RoundedSprite.Get());
-            var text = UiBuilder.Text("Text", box.transform, fontSize, TvColors.Background, true, TextAlignmentOptions.Center);
+            // A small printed tag with the ink outline of every game piece (decisions/0017_game_night_ui.md).
+            var box = UiBuilder.Image("PowerUpMarker", parent, TvColors.Cream, TvSprites.Card);
+            box.type = Image.Type.Tiled;
+            box.pixelsPerUnitMultiplier = TvSprites.Radius / 12f;
+            var text = UiBuilder.Text("Text", box.transform, fontSize, TvColors.Ink, true, TextAlignmentOptions.Center);
             text.textWrappingMode = TextWrappingModes.NoWrap;
             text.enableAutoSizing = true;
             text.fontSizeMin = Mathf.Min(MinFontSize, fontSize);

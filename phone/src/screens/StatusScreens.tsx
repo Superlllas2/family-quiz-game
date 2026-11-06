@@ -29,7 +29,7 @@ const ERROR_TEXT: Record<ErrorReason, TextKey> = {
 export function ErrorScreen(props: { lang: Lang; reason: ErrorReason; onBack(): void }) {
   return (
     <div class="screen center">
-      <p class="big-text">{t(props.lang, ERROR_TEXT[props.reason])}</p>
+      <p class="big-text note-card">{t(props.lang, ERROR_TEXT[props.reason])}</p>
       <PressButton class="primary big" onClick={props.onBack}>
         {t(props.lang, 'error.back')}
       </PressButton>

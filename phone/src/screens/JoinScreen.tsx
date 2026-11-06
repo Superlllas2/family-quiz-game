@@ -45,10 +45,13 @@ export function JoinScreen(props: Props) {
         ))}
       </div>
 
-      <h1>{t(lang, 'join.title')}</h1>
+      <h1 class="join-title">
+        {t(lang, 'join.title')}
+        <span class="hand join-accent">{t(lang, 'join.accent')}</span>
+      </h1>
 
-      <label class="field">
-        <span>{t(lang, 'join.roomLabel')}</span>
+      <label class="field ticket">
+        <span class="ticket-kicker">{t(lang, 'join.roomLabel')}</span>
         <input
           class="room-input"
           value={room}
@@ -60,9 +63,10 @@ export function JoinScreen(props: Props) {
           onInput={(e) => setRoom((e.currentTarget as HTMLInputElement).value.toUpperCase())}
         />
         <small class={room !== '' && !roomOk ? 'hint bad' : 'hint'}>{t(lang, 'join.roomHint')}</small>
+        <span class="ticket-stub" aria-hidden="true" />
       </label>
 
-      <label class="field">
+      <label class="field name-field">
         <span>{t(lang, 'join.nameLabel')}</span>
         <input
           value={name}

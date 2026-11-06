@@ -6,31 +6,31 @@ using UnityEngine.UI;
 namespace FamilyQuiz.Presentation
 {
     /// <summary>
-    /// The Lobby on the TV: room code and QR code (or the relay down text instead), the seated players as character
-    /// chips (dimmed while disconnected) with a white rim and "Ready" once they tapped Ready (D76), and "Everyone taps
-    /// Ready on their phone" once enough players are connected. Only reads state.
-    /// Sizes are for a 1920 x 1080 canvas, large enough to read at 3 m.
+    /// The Lobby on the TV (decisions/0017_game_night_ui.md): the room code printed on a big cinema ticket on the floor
+    /// under the seats, the QR code on its stub, and the tokens of the seated players along its bottom edge (half see
+    /// through while disconnected, a check once they tapped Ready, D76) with a "3 of 8" sticker. The title ribbon at the
+    /// top right says "Waiting for players", and "Everyone taps Ready on their phone" once enough players are
+    /// connected. With the relay down the ticket shows the error instead of the code (docs/18_edge_cases.md). The same
+    /// layout with the 3D studio on or off: the seats above the ticket show the players. Only reads state.
     /// </summary>
     public sealed class LobbyView : MonoBehaviour
     {
-        private const float QrTargetSize = 480f;
-        private const float ChipWidth = 620f;
-        private const float ChipHeight = 76f;
-        private const float ReadyWidth = 240f;
+        private const float QrTargetSize = 236f;
+        private const float TokenSize = 54f;
+        private const float TokenGap = 10f;
 
-        private readonly List<CharacterChip> _chips = new List<CharacterChip>();
+        private readonly List<PlayerToken> _tokens = new List<PlayerToken>();
         private TvContext _context;
-        private RectTransform _roomPanel;
-        private TextMeshProUGUI _roomCodeLabel;
+        private TvPiece _ticket;
+        private TextMeshProUGUI _top;
         private TextMeshProUGUI _roomCode;
-        private RawImage _qr;
         private TextMeshProUGUI _scanToJoin;
         private TextMeshProUGUI _relayDown;
-        private TextMeshProUGUI _playersTitle;
-        private RectTransform _playerList;
-        private readonly List<GameObject> _rows = new List<GameObject>();
-        private TextMeshProUGUI _tapReady;
-        private Image _roomBackdrop;
+        private RawImage _qr;
+        private RectTransform _tokenRow;
+        private TvPiece _count;
+        private TextMeshProUGUI _countText;
+        private TitleRibbon _title;
         private Texture2D _qrTexture;
         private bool _hasRoom;
         private bool _relayIsDown = true;
@@ -47,11 +47,10 @@ namespace FamilyQuiz.Presentation
         /// <summary>Static labels in the current game language.</summary>
         public void Relabel()
         {
-            _roomCodeLabel.text = _context.T("tv.lobby.roomCode");
+            _top.text = _context.T("tv.lobby.ticketTop");
             _scanToJoin.text = _context.T("tv.lobby.scanToJoin");
             _relayDown.text = _context.T("tv.error.relayDown");
-            _playersTitle.text = _context.T("tv.lobby.waiting");
-            _tapReady.text = _context.T("tv.lobby.tapReady");
+            Tick();
         }
 
         public void ShowRoom(string code, string joinUrl)
@@ -66,70 +65,81 @@ namespace FamilyQuiz.Presentation
             SetRelayDown(false);
         }
 
-        /// <summary>
-        /// With the 3D studio behind the overlay (decisions 0016, D91) the seats show the players: the room code and QR
-        /// code shrink into the top left corner on a dark backing and the player list hides; "Waiting for players" and
-        /// "tap ready" stay. Off, the flat layout comes back.
-        /// </summary>
+        /// <summary>Kept for TvPresenter: the ticket sits under the seats with the 3D studio on or off.</summary>
         public void SetStudioMode(bool on)
         {
-            _roomPanel.pivot = new Vector2(0, 1);
-            UiBuilder.Anchor(_roomPanel, 0, 0, 0.48f, 1);
-            _roomPanel.localScale = Vector3.one * (on ? 0.68f : 1f);
-            _roomBackdrop.enabled = on;
-            _playerList.gameObject.SetActive(!on);
         }
 
         /// <summary>While the relay socket is not open: the error text, no room code (docs/18_edge_cases.md).</summary>
         public void SetRelayDown(bool down)
         {
             _relayIsDown = down;
-            _roomPanel.gameObject.SetActive(!down && _hasRoom);
+            bool room = !down && _hasRoom;
+            _roomCode.gameObject.SetActive(room);
+            _scanToJoin.gameObject.SetActive(room);
+            _qr.gameObject.SetActive(room);
             _relayDown.gameObject.SetActive(down);
+            Tick();
         }
 
-        /// <summary>Rebuilds the player rows (chip and ready mark) from the roster.</summary>
+        /// <summary>The seated players' tokens from the roster: letters, colours, connection, Ready.</summary>
         public void Refresh()
         {
-            foreach (var row in _rows) Destroy(row);
-            _rows.Clear();
-            _chips.Clear();
             var game = _context.Game;
             if (game == null) return;
-            foreach (var player in game.State.Players)
+            var players = game.State.Players;
+            bool same = players.Count == _tokens.Count;
+            for (int i = 0; same && i < players.Count; i++) same = players[i].PlayerId == _tokens[i].PlayerId;
+            if (!same)
             {
-                var row = UiBuilder.Rect("Row " + player.PlayerId, _playerList);
-                UiBuilder.Size(row, ChipWidth + ReadyWidth, ChipHeight);
-                var rowLayout = row.gameObject.AddComponent<HorizontalLayoutGroup>();
-                rowLayout.spacing = 24;
-                rowLayout.childAlignment = TextAnchor.MiddleLeft;
-                rowLayout.childControlWidth = true;
-                rowLayout.childControlHeight = true;
-                rowLayout.childForceExpandWidth = false;
-                rowLayout.childForceExpandHeight = false;
-
-                var chip = CharacterChip.Create(row, player.PlayerId, 48);
-                UiBuilder.Size(chip, ChipWidth, ChipHeight);
-                chip.Set(player.Name, _context.ChipColor(player.CharacterId), player.Connected);
-                chip.SetLocked(player.Ready);
-
-                var ready = UiBuilder.Text("Ready", row, 48, TvColors.Correct, true, TextAlignmentOptions.Left);
-                ready.textWrappingMode = TextWrappingModes.NoWrap;
-                UiBuilder.Size(ready, ReadyWidth, ChipHeight);
-                ready.text = player.Ready ? _context.T("tv.lobby.ready") : "";
-
-                _rows.Add(row.gameObject);
-                _chips.Add(chip);
+                var before = new HashSet<string>();
+                foreach (var t in _tokens) before.Add(t.PlayerId);
+                foreach (var t in _tokens) Destroy(t.gameObject);
+                _tokens.Clear();
+                foreach (var p in players)
+                {
+                    var token = PlayerToken.Create(_tokenRow, p.PlayerId);
+                    _tokens.Add(token);
+                    if (!before.Contains(p.PlayerId)) TvTween.On(token.Rect).Pop(0f, 0.4f);
+                }
             }
 
+            var names = new string[players.Count];
+            for (int i = 0; i < names.Length; i++) names[i] = players[i].Name;
+            var labels = TokenLabels.For(names);
+            for (int i = 0; i < players.Count; i++)
+            {
+                var rect = _tokens[i].Rect;
+                rect.anchorMin = rect.anchorMax = new Vector2(0f, 0.5f);
+                rect.pivot = new Vector2(0f, 0.5f);
+                rect.anchoredPosition = new Vector2(i * (TokenSize + TokenGap), 0f);
+                rect.sizeDelta = new Vector2(TokenSize, TokenSize);
+                _tokens[i].Set(labels[i], _context.ChipColor(players[i].CharacterId), players[i].Connected);
+                _tokens[i].SetLocked(players[i].Ready);
+            }
+
+            _countText.text = _context.Format("tv.lobby.players", "count", players.Count.ToString(), "max",
+                game.Config.Players.Max.ToString());
+            _count.Root.gameObject.SetActive(players.Count > 0);
             Tick();
         }
 
         public void Tick()
         {
             var game = _context.Game;
-            _tapReady.gameObject.SetActive(game != null && game.EnoughPlayers && !_relayIsDown);
+            bool ready = game != null && game.EnoughPlayers && !_relayIsDown;
+            string subtitle = ready ? _context.T("tv.lobby.tapReady") : null;
+            string title = _context.T("tv.lobby.waiting");
+            if (title != _shownTitle || subtitle != _shownSubtitle)
+            {
+                _shownTitle = title;
+                _shownSubtitle = subtitle;
+                _title.Set(title, subtitle);
+            }
         }
+
+        private string _shownTitle;
+        private string _shownSubtitle;
 
         private void OnDestroy()
         {
@@ -138,71 +148,68 @@ namespace FamilyQuiz.Presentation
 
         private void Build()
         {
-            var root = (RectTransform)transform;
+            var zone = TvLayout.Put(UiBuilder.Rect("TicketZone", transform), TvLayout.Ticket);
+            _ticket = TvPiece.Card("Ticket", zone, TvColors.Cream, 22f, 10f).Tilt(-1.5f);
+            UiBuilder.Anchor(_ticket.Root, 0.02f, 0.04f, 0.98f, 0.96f);
+            var body = _ticket.Content;
 
-            // Left half: room code and QR code.
-            _roomPanel = UiBuilder.Anchor(UiBuilder.Rect("Room", root), 0, 0, 0.48f, 1);
-            var roomLayout = _roomPanel.gameObject.AddComponent<VerticalLayoutGroup>();
-            roomLayout.childAlignment = TextAnchor.MiddleCenter;
-            roomLayout.spacing = 12;
-            roomLayout.padding = new RectOffset(60, 40, 40, 40);
-            roomLayout.childControlWidth = true;
-            roomLayout.childControlHeight = true;
-            roomLayout.childForceExpandWidth = true;
-            roomLayout.childForceExpandHeight = false;
+            // The stub on the right: mustard, behind a dashed tear line, with the QR code on a white square.
+            var stub = UiBuilder.Image("Stub", body, TvColors.Mustard, TvSprites.Solid);
+            stub.pixelsPerUnitMultiplier = TvSprites.Radius / 18f;
+            UiBuilder.Anchor(stub.rectTransform, 0.735f, 0f, 1f, 1f);
+            stub.rectTransform.offsetMin = new Vector2(0f, 5f);
+            stub.rectTransform.offsetMax = new Vector2(-5f, -5f);
+            for (int i = 0; i < 12; i++)
+            {
+                var dash = UiBuilder.Image("Dash " + i, body, TvColors.Ink);
+                var d = dash.rectTransform;
+                d.anchorMin = d.anchorMax = new Vector2(0.735f, (i + 0.5f) / 12f);
+                d.sizeDelta = new Vector2(4f, 12f);
+            }
 
-            _roomBackdrop = UiBuilder.Image("Backdrop", _roomPanel, new Color(0, 0, 0, 0.55f), RoundedSprite.Get());
-            UiBuilder.Anchor(_roomBackdrop.rectTransform, 0.04f, 0.04f, 0.96f, 0.96f);
-            _roomBackdrop.gameObject.AddComponent<LayoutElement>().ignoreLayout = true;
-            _roomBackdrop.enabled = false;
-
-            _roomCodeLabel = UiBuilder.Text("RoomCodeLabel", _roomPanel, 56, TvColors.DimText, false, TextAlignmentOptions.Center);
-            UiBuilder.Size(_roomCodeLabel, -1, 70);
-            _roomCode = UiBuilder.Text("RoomCode", _roomPanel, 200, TvColors.Text, true, TextAlignmentOptions.Center);
-            _roomCode.characterSpacing = 20;
-            _roomCode.textWrappingMode = TextWrappingModes.NoWrap;
-            _roomCode.overflowMode = TextOverflowModes.Overflow;
-            UiBuilder.Size(_roomCode, -1, 250);
-
-            var qrHolder = UiBuilder.Rect("QrHolder", _roomPanel);
-            UiBuilder.Size(qrHolder, -1, QrTargetSize + 20);
-            _qr = UiBuilder.Rect("Qr", qrHolder).gameObject.AddComponent<RawImage>();
+            var qrBack = UiBuilder.Image("QrBack", stub.transform, Color.white, TvSprites.Solid);
+            qrBack.pixelsPerUnitMultiplier = 3f;
+            var qb = qrBack.rectTransform;
+            qb.anchorMin = qb.anchorMax = new Vector2(0.5f, 0.5f);
+            qb.sizeDelta = new Vector2(QrTargetSize + 20f, QrTargetSize + 20f);
+            _qr = UiBuilder.Rect("Qr", qrBack.transform).gameObject.AddComponent<RawImage>();
             _qr.raycastTarget = false;
             _qr.rectTransform.sizeDelta = new Vector2(QrTargetSize, QrTargetSize);
 
-            _scanToJoin = UiBuilder.Text("ScanToJoin", _roomPanel, 40, TvColors.Text, false, TextAlignmentOptions.Center);
-            UiBuilder.Size(_scanToJoin, -1, 110);
+            _top = UiBuilder.Text("Top", body, 24, TvColors.Red, true, TextAlignmentOptions.Left);
+            UiBuilder.Fit(_top, 14, 24, 1);
+            _top.characterSpacing = 8f;
+            UiBuilder.Anchor(_top.rectTransform, 0.04f, 0.8f, 0.7f, 0.94f);
 
-            _relayDown = UiBuilder.Text("RelayDown", root, 64, TvColors.Error, true, TextAlignmentOptions.Center);
-            UiBuilder.Anchor(_relayDown.rectTransform, 0.03f, 0.2f, 0.47f, 0.8f);
+            _roomCode = UiBuilder.Display("RoomCode", body, 132, TvColors.Ink, TextAlignmentOptions.Left);
+            UiBuilder.Fit(_roomCode, 60, 132, 1);
+            _roomCode.characterSpacing = 10f;
+            UiBuilder.Anchor(_roomCode.rectTransform, 0.04f, 0.38f, 0.7f, 0.82f);
 
-            // Right half: the players.
-            var playersPanel = UiBuilder.Anchor(UiBuilder.Rect("Players", root), 0.5f, 0.14f, 1, 1);
-            var playersLayout = playersPanel.gameObject.AddComponent<VerticalLayoutGroup>();
-            playersLayout.childAlignment = TextAnchor.UpperLeft;
-            playersLayout.spacing = 24;
-            playersLayout.padding = new RectOffset(20, 60, 70, 0);
-            playersLayout.childControlWidth = true;
-            playersLayout.childControlHeight = true;
-            playersLayout.childForceExpandWidth = true;
-            playersLayout.childForceExpandHeight = false;
+            _scanToJoin = UiBuilder.Text("ScanToJoin", body, 26, TvColors.Ink, true, TextAlignmentOptions.Left);
+            UiBuilder.Fit(_scanToJoin, 16, 26, 1);
+            UiBuilder.Anchor(_scanToJoin.rectTransform, 0.04f, 0.27f, 0.7f, 0.39f);
 
-            _playersTitle = UiBuilder.Text("Title", playersPanel, 60, TvColors.Text, true, TextAlignmentOptions.Left);
-            UiBuilder.Size(_playersTitle, -1, 80);
+            _relayDown = UiBuilder.Display("RelayDown", body, 44, TvColors.Red, TextAlignmentOptions.Left);
+            UiBuilder.Fit(_relayDown, 24, 44, 3);
+            UiBuilder.Anchor(_relayDown.rectTransform, 0.04f, 0.3f, 0.7f, 0.82f);
 
-            _playerList = UiBuilder.Rect("List", playersPanel);
-            var listLayout = _playerList.gameObject.AddComponent<VerticalLayoutGroup>();
-            listLayout.spacing = 12;
-            listLayout.childAlignment = TextAnchor.UpperLeft;
-            listLayout.childControlWidth = true;
-            listLayout.childControlHeight = true;
-            listLayout.childForceExpandWidth = false;
-            listLayout.childForceExpandHeight = false;
+            _tokenRow = UiBuilder.Anchor(UiBuilder.Rect("Players", body), 0.04f, 0.04f, 0.7f, 0.26f);
 
-            _tapReady = UiBuilder.Text("TapReady", root, 56, TvColors.Text, true, TextAlignmentOptions.Left);
-            UiBuilder.Anchor(_tapReady.rectTransform, 0.51f, 0.03f, 0.98f, 0.13f);
-            _tapReady.gameObject.SetActive(false);
+            _count = TvPiece.Star("Count", zone, TvColors.Teal);
+            var c = _count.Root;
+            c.anchorMin = c.anchorMax = new Vector2(0.735f, 1f);
+            c.pivot = new Vector2(0.5f, 0.5f);
+            c.anchoredPosition = new Vector2(-6f, -18f);
+            c.sizeDelta = new Vector2(104f, 104f);
+            c.localRotation = Quaternion.Euler(0, 0, -10f);
+            TvTween.On(c).Tilt = -10f;
+            _countText = UiBuilder.Display("Text", _count.Content, 22, TvColors.Cream, TextAlignmentOptions.Center);
+            UiBuilder.Fit(_countText, 12, 22, 2);
+            UiBuilder.Anchor(_countText.rectTransform, 0.18f, 0.22f, 0.82f, 0.78f);
+            _count.Root.gameObject.SetActive(false);
 
+            _title = TitleRibbon.Create(transform, TvColors.Teal);
             SetRelayDown(true);
         }
     }

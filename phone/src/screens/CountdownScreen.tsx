@@ -27,8 +27,10 @@ export function CountdownScreen(props: Props) {
 
   return (
     <div class="body center">
-      <p class="big-text">{text}</p>
-      <div class="countdown-number">{shown}</div>
+      <p class="big-text countdown-ribbon">{text}</p>
+      <div class="countdown-token">
+        <div class="countdown-number">{shown}</div>
+      </div>
       <div class="bottom-block">
         <PressButton class="big" onClick={props.onNotReady}>
           {t(lang, 'lobby.notReady')}

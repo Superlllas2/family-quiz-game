@@ -1,6 +1,7 @@
 {
   "app.title": "Викторина",
   "join.title": "Войти в игру",
+  "join.accent": "вечер игр!",
   "join.roomLabel": "Код комнаты",
   "join.roomHint": "4 буквы с экрана телевизора",
   "join.nameLabel": "Твоё имя",
@@ -12,6 +13,7 @@
   "lang.ru": "RU",
   "lang.en": "EN",
   "lobby.title": "Ты в игре!",
+  "lobby.accent": "садись поудобнее",
   "lobby.ready": "Готов",
   "lobby.notReady": "Не готов",
   "lobby.waitingPlayers": "Ждём игроков",

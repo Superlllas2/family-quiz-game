@@ -12,6 +12,8 @@ namespace FamilyQuiz.Presentation.Staging
     /// establishMs with the lights coming up over its first lightsUpMs, then Wide. Lines after Establish has begun
     /// never cut back.</item>
     /// <item>FinalIntro: HostSolo while a line shows (the finalStart line), Wide otherwise.</item>
+    /// <item>QuestionShow: Stage, the question card on the board. Answer: Wide, on the guests, with the question card and
+    /// the tiles under them (decisions/0017_game_night_ui.md).</item>
     /// <item>Every other phase: its own shot, whatever the hosts say.</item>
     /// </list>
     /// </summary>
@@ -74,7 +76,6 @@ namespace FamilyQuiz.Presentation.Staging
                 case GamePhase.TopicVote:
                     return ShotChoice.Of(Shot.Curtain);
                 case GamePhase.QuestionShow:
-                case GamePhase.Answer:
                     return ShotChoice.Of(Shot.Stage);
                 default:
                     return ShotChoice.Of(Shot.Wide);

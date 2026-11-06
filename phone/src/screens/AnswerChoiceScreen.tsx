@@ -13,12 +13,15 @@ import { AnswerShape, type AnswerShapeKind } from './Icons';
 import { InputStatus } from './InputStatus';
 import { PressButton } from './PressButton';
 
-/** Placeholder answer colors and shapes from 06 (general rules), in display order A to D. */
-const ANSWERS: ReadonlyArray<{ letter: TextKey; color: string; shape: AnswerShapeKind }> = [
-  { letter: 'answer.a', color: '#E74C3C', shape: 'triangle' },
-  { letter: 'answer.b', color: '#3498DB', shape: 'diamond' },
-  { letter: 'answer.c', color: '#F1C40F', shape: 'circle' },
-  { letter: 'answer.d', color: '#2ECC71', shape: 'square' },
+/**
+ * Answer letters and shapes from 06 (general rules), in display order A to D. The colors are the printed inks the TV
+ * uses too; they live in one place, the --answer-a to --answer-d variables in style.css (class ans-a to ans-d).
+ */
+const ANSWERS: ReadonlyArray<{ letter: TextKey; tone: string; shape: AnswerShapeKind }> = [
+  { letter: 'answer.a', tone: 'ans-a', shape: 'triangle' },
+  { letter: 'answer.b', tone: 'ans-b', shape: 'diamond' },
+  { letter: 'answer.c', tone: 'ans-c', shape: 'circle' },
+  { letter: 'answer.d', tone: 'ans-d', shape: 'square' },
 ];
 
 interface Props {
@@ -47,13 +50,12 @@ export function AnswerChoiceScreen(props: Props) {
         return (
           <PressButton
             key={a.letter}
-            class={`answer${state}`}
-            style={{ background: a.color }}
+            class={`answer ${a.tone}${state}`}
             onPress={() => props.onChoose(i)}
           >
             <span class="answer-mark">
-              <AnswerShape shape={a.shape} />
               <span class="answer-letter">{t(lang, a.letter)}</span>
+              <AnswerShape shape={a.shape} />
             </span>
             <span class="answer-text">{options[i]}</span>
             {chosen === i ? <InputStatus lang={lang} input={props.choiceInput} class="answer-status" /> : null}

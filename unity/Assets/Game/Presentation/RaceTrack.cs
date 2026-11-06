@@ -103,7 +103,7 @@ namespace FamilyQuiz.Presentation
             float width = RaceTrackLayout.CellWidth(finishSteps);
             for (int i = 0; i < cells; i++)
             {
-                var color = i == cells - 1 ? TvColors.Finish : i % 2 == 0 ? TvColors.Card : TvColors.BarTrack;
+                var color = i == cells - 1 ? TvColors.Finish : i % 2 == 0 ? TvColors.Cream : TvColors.Cream2;
                 var cell = UiBuilder.Image("Cell " + i, _lanes, color);
                 UiBuilder.Anchor(cell.rectTransform, i * width, 0f, (i + 1) * width, 1f);
                 cell.transform.SetAsFirstSibling(); // behind the runners
@@ -147,9 +147,9 @@ namespace FamilyQuiz.Presentation
             _lanes.anchoredPosition = new Vector2(0f, -FinishLabelHeight);
             _lanes.sizeDelta = Vector2.zero;
 
-            _finishLine = UiBuilder.Image("FinishLine", _lanes, TvColors.Text);
+            _finishLine = UiBuilder.Image("FinishLine", _lanes, TvColors.Ink);
 
-            _finishLabel = UiBuilder.Text("Finish", _lanes, 44, TvColors.Text, true, TextAlignmentOptions.Bottom);
+            _finishLabel = UiBuilder.Display("Finish", _lanes, 36, TvColors.Text, TextAlignmentOptions.Bottom);
             _finishLabel.textWrappingMode = TextWrappingModes.NoWrap;
             _finishLabel.overflowMode = TextOverflowModes.Overflow;
         }

@@ -5,6 +5,7 @@
 import { characterColor } from '../characters';
 import { t } from '../i18n';
 import { resultsData, textData, waitingData, type Lang, type PlayerView, type ScreenState } from '../protocol';
+import { TvPiece } from './Icons';
 
 interface Props { lang: Lang; screen: ScreenState }
 
@@ -21,6 +22,7 @@ export function WatchScreen(props: { lang: Lang; player: PlayerView | null }) {
           {player.name}
         </span>
       ) : null}
+      <TvPiece />
       <p class="big-text">{t(lang, 'watch.text')}</p>
     </div>
   );
@@ -31,7 +33,7 @@ export function WaitingScreen(props: Props) {
   const { locked } = waitingData(props.screen.data);
   return (
     <div class="body center">
-      <p class="big-text">{t(props.lang, 'waiting.locked', { locked })}</p>
+      <p class="big-text stamp waiting-stamp">{t(props.lang, 'waiting.locked', { locked })}</p>
     </div>
   );
 }
@@ -45,7 +47,7 @@ export function ResultsScreen(props: Props) {
   const { fact } = resultsData(props.screen.data);
   return (
     <div class="body center">
-      <p class="result-head good">{t(lang, 'results.won')}</p>
+      <p class="result-head good stamp">{t(lang, 'results.won')}</p>
       <p class="muted-text">{t(lang, 'results.prize')}</p>
       {fact ? <p class="big-text fact-text">{fact}</p> : null}
     </div>
@@ -56,7 +58,7 @@ export function ResultsScreen(props: Props) {
 export function TvErrorScreen(props: Props) {
   return (
     <div class="body center">
-      <p class="big-text">{textData(props.screen.data).text}</p>
+      <p class="big-text note-card">{textData(props.screen.data).text}</p>
     </div>
   );
 }

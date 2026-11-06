@@ -17,6 +17,7 @@ namespace FamilyQuiz.Presentation
 
         private TvContext _context;
         private TextMeshProUGUI _title;
+        private TitleRibbon _ribbon;
         private TextMeshProUGUI _winner;
         private TextMeshProUGUI _prize;
         private LeaderboardList _list;
@@ -59,7 +60,7 @@ namespace FamilyQuiz.Presentation
             long end = state.PhaseEndsAtMs.Value;
             long left = Math.Max(0, end - game.NowMs);
             long span = end - state.PhaseStartedAtMs;
-            _bar.Set(span > 0 ? (float)left / span : 0f, TvColors.DimText);
+            _bar.Set(span > 0 ? (float)left / span : 0f, TvColors.Mustard);
 
             long seconds = Math.Max(1, (left + 999) / 1000);
             if (seconds == _shownSeconds) return;
@@ -79,6 +80,7 @@ namespace FamilyQuiz.Presentation
             var state = _context.Game.State;
             _shownSeconds = -1; // the countdown line is redrawn on the next Tick, in the language now set
             _title.text = _context.T("tv.results.title");
+            _ribbon.Set(_title.text, null);
 
             var winner = state.WinnerId != null ? state.FindById(state.WinnerId) : null;
             _winner.gameObject.SetActive(winner != null);
@@ -86,7 +88,6 @@ namespace FamilyQuiz.Presentation
             if (winner != null)
             {
                 _winner.text = _context.Format("tv.results.winner", "name", winner.Name);
-                _winner.color = _context.ChipColor(winner.CharacterId);
                 _prize.text = _context.T("tv.results.prize");
             }
 
@@ -126,48 +127,59 @@ namespace FamilyQuiz.Presentation
             line.text = names.Count > 0 ? _context.Format(key, "names", string.Join(NameSeparator, names)) : string.Empty;
         }
 
+        /// <summary>The winner's card: the winner, the prize line and the two awards (decisions/0017_game_night_ui.md).</summary>
+        private static readonly Rect WinnerCard = new Rect(307f, 520f, 1306f, 250f);
+
+        /// <summary>Up to seven tagged players (players.max 8, minus the winner), under the winner's card.</summary>
+        private static readonly Rect TagList = new Rect(TvLayout.Margin, 110f, TvLayout.Width - 2 * TvLayout.Margin, 390f);
+
         private void Build()
         {
-            _title = UiBuilder.Text("Title", transform, 64, TvColors.DimText, true, TextAlignmentOptions.Center);
-            _title.textWrappingMode = TextWrappingModes.NoWrap;
-            // The 64 pt line is taller than a short box: with the default ellipsis TMP would hide it entirely.
-            _title.overflowMode = TextOverflowModes.Overflow;
-            UiBuilder.Anchor(_title.rectTransform, 0.05f, 0.885f, 0.95f, 0.975f);
+            _ribbon = TitleRibbon.Create(transform, TvColors.Mustard);
+            // Kept for Refresh, drawn by the ribbon.
+            _title = UiBuilder.Text("TitleText", transform, 10, TvColors.Text, false, TextAlignmentOptions.Center);
+            _title.gameObject.SetActive(false);
 
-            _winner = UiBuilder.Text("Winner", transform, 104, TvColors.Text, true, TextAlignmentOptions.Center);
-            _winner.enableAutoSizing = true;
-            _winner.fontSizeMin = 72;
-            _winner.fontSizeMax = 104;
-            _winner.textWrappingMode = TextWrappingModes.NoWrap;
-            UiBuilder.Anchor(_winner.rectTransform, 0.03f, 0.77f, 0.97f, 0.885f);
+            var zone = TvLayout.Put(UiBuilder.Rect("WinnerZone", transform), WinnerCard);
+            var card = TvPiece.Card("Card", zone, TvColors.Cream, 22f, 10f).Tilt(-1f);
+            UiBuilder.Anchor(card.Root, 0, 0, 1, 1);
+            var star = TvPiece.Star("Star", zone, TvColors.Mustard);
+            var s = star.Root;
+            s.anchorMin = s.anchorMax = new Vector2(0f, 1f);
+            s.pivot = new Vector2(0.5f, 0.5f);
+            s.anchoredPosition = new Vector2(20f, -20f);
+            s.sizeDelta = new Vector2(120f, 120f);
+            var one = UiBuilder.Display("One", star.Content, 48, TvColors.Ink, TextAlignmentOptions.Center);
+            one.text = "1";
+            UiBuilder.Anchor(one.rectTransform, 0, 0, 1, 1);
 
-            _prize = UiBuilder.Text("Prize", transform, 44, TvColors.DimText, false, TextAlignmentOptions.Center);
-            _prize.textWrappingMode = TextWrappingModes.NoWrap;
-            _prize.overflowMode = TextOverflowModes.Overflow;
-            UiBuilder.Anchor(_prize.rectTransform, 0.05f, 0.71f, 0.95f, 0.77f);
+            _winner = UiBuilder.Display("Winner", card.Content, 64, TvColors.Ink, TextAlignmentOptions.Center);
+            UiBuilder.Fit(_winner, 36, 64, 1);
+            UiBuilder.Anchor(_winner.rectTransform, 0.08f, 0.64f, 0.92f, 0.94f);
 
-            _award = AwardLine("MostCorrect", 0.64f, 0.71f);
-            _comeback = AwardLine("BestComeback", 0.57f, 0.64f);
+            _prize = UiBuilder.Hand("Prize", card.Content, 36, TvColors.Teal, TextAlignmentOptions.Center);
+            UiBuilder.Fit(_prize, 22, 36, 1);
+            UiBuilder.Anchor(_prize.rectTransform, 0.08f, 0.47f, 0.92f, 0.64f);
 
-            // Up to seven tagged players (players.max 8, minus the winner).
+            _award = AwardLine("MostCorrect", card.Content, 0.25f, 0.46f);
+            _comeback = AwardLine("BestComeback", card.Content, 0.05f, 0.25f);
+
             _list = LeaderboardList.Create(transform);
-            UiBuilder.Anchor(_list.Rect, 0.05f, 0.13f, 0.95f, 0.555f);
+            TvLayout.Put(_list.Rect, TagList);
 
-            _lobbyIn = UiBuilder.Text("LobbyIn", transform, 44, TvColors.DimText, false, TextAlignmentOptions.Center);
+            _lobbyIn = UiBuilder.Text("LobbyIn", transform, 30, TvColors.Text, true, TextAlignmentOptions.Center);
             _lobbyIn.textWrappingMode = TextWrappingModes.NoWrap;
-            UiBuilder.Anchor(_lobbyIn.rectTransform, 0.05f, 0.055f, 0.95f, 0.115f);
+            UiBuilder.Anchor(_lobbyIn.rectTransform, 0.2f, 0.045f, 0.8f, 0.095f);
 
             _bar = TimerBar.Create(transform);
-            UiBuilder.Anchor(_bar.Root, 0.2f, 0.03f, 0.8f, 0.042f);
+            UiBuilder.Anchor(_bar.Root, 0.3f, 0.025f, 0.7f, 0.037f);
         }
 
-        private TextMeshProUGUI AwardLine(string name, float minY, float maxY)
+        private TextMeshProUGUI AwardLine(string name, Transform parent, float minY, float maxY)
         {
-            var line = UiBuilder.Text(name, transform, 52, TvColors.Text, true, TextAlignmentOptions.Center);
-            line.enableAutoSizing = true;
-            line.fontSizeMin = 40;
-            line.fontSizeMax = 52;
-            UiBuilder.Anchor(line.rectTransform, 0.04f, minY, 0.96f, maxY);
+            var line = UiBuilder.Text(name, parent, 34, TvColors.Ink, true, TextAlignmentOptions.Center);
+            UiBuilder.Fit(line, 22, 34, 1);
+            UiBuilder.Anchor(line.rectTransform, 0.08f, minY, 0.92f, maxY);
             return line;
         }
     }

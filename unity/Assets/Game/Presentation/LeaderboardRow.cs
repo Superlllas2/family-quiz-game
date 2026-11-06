@@ -54,7 +54,17 @@ namespace FamilyQuiz.Presentation
             if (_age < 0f) _rank.text = rank.ToString(); // a moving row shows its new rank when it starts to move
             _chip.Set(name, color, connected);
             _extra.text = extra ?? string.Empty;
-            _extra.color = extraColor;
+            _extra.color = OnCream(extraColor);
+        }
+
+        /// <summary>The row is cream card stock: colours meant for the dark studio become their inks.</summary>
+        private static Color OnCream(Color c)
+        {
+            if (c == TvColors.Correct) return TvColors.Green;
+            if (c == TvColors.Crown) return new Color32(0xA8, 0x6A, 0x0C, 0xFF);
+            if (c == TvColors.DimText) return new Color(TvColors.Ink.r, TvColors.Ink.g, TvColors.Ink.b, 0.7f);
+            if (c == TvColors.Text) return TvColors.Ink;
+            return c;
         }
 
         /// <summary>
@@ -67,7 +77,7 @@ namespace FamilyQuiz.Presentation
             _score.text = string.Empty;
             _chip.Set(name, color, connected);
             _extra.text = tag ?? string.Empty;
-            _extra.color = tagColor;
+            _extra.color = OnCream(tagColor);
             float x = RankWidth + Gap + ChipWidth + Gap;
             Column(_extra.rectTransform, x, Width - x - Gap, 0);
         }
@@ -140,13 +150,18 @@ namespace FamilyQuiz.Presentation
 
         private void Build()
         {
-            var card = UiBuilder.Image("Card", transform, TvColors.Card, RoundedSprite.Get());
-            UiBuilder.Anchor(card.rectTransform, 0, 0, 1, 1);
+            // A cream card on its cardboard edge, a touch crooked; the rank in Unbounded, the score too.
+            var card = TvPiece.Card("Card", transform, TvColors.Cream, 18f, 6f);
+            UiBuilder.Anchor(card.Root, 0, 0, 1, 1);
+            card.Root.SetAsFirstSibling();
 
             float x = 0f;
-            _rank = UiBuilder.Text("Rank", transform, 64, TvColors.Text, true, TextAlignmentOptions.Center);
+            _rank = UiBuilder.Display("Rank", transform, 52, TvColors.Ink, TextAlignmentOptions.Center);
             _rank.textWrappingMode = TextWrappingModes.NoWrap;
             _rank.overflowMode = TextOverflowModes.Overflow;
+            _rank.enableAutoSizing = true;
+            _rank.fontSizeMin = 24;
+            _rank.fontSizeMax = 52;
             Column(_rank.rectTransform, x, RankWidth, 0);
             x += RankWidth + Gap;
 
@@ -154,17 +169,20 @@ namespace FamilyQuiz.Presentation
             Column(_chip.Rect, x, ChipWidth, 8);
             x += ChipWidth + Gap;
 
-            _score = UiBuilder.Text("Score", transform, 72, TvColors.Text, true, TextAlignmentOptions.Right);
+            _score = UiBuilder.Display("Score", transform, 56, TvColors.Ink, TextAlignmentOptions.Right);
             _score.textWrappingMode = TextWrappingModes.NoWrap;
             _score.overflowMode = TextOverflowModes.Overflow;
+            _score.enableAutoSizing = true;
+            _score.fontSizeMin = 24;
+            _score.fontSizeMax = 56;
             Column(_score.rectTransform, x, ScoreWidth, 0);
             x += ScoreWidth + Gap;
 
-            _extra = UiBuilder.Text("Extra", transform, 48, TvColors.DimText, true, TextAlignmentOptions.Left);
+            _extra = UiBuilder.Text("Extra", transform, 44, TvColors.Ink, true, TextAlignmentOptions.Left);
             _extra.textWrappingMode = TextWrappingModes.NoWrap;
             _extra.enableAutoSizing = true;
-            _extra.fontSizeMin = 32;
-            _extra.fontSizeMax = 48;
+            _extra.fontSizeMin = 26;
+            _extra.fontSizeMax = 44;
             Column(_extra.rectTransform, x, Width - x - Gap, 0);
 
             _marker = PowerUpMarker.Create(transform, MarkerFontSize);

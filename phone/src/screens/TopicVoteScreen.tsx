@@ -28,6 +28,7 @@ export function TopicVoteScreen(props: Props) {
           const state = chosen === null ? '' : chosen === i ? ' chosen' : ' dim';
           return (
             <PressButton key={i} class={`door${state}`} onPress={() => props.onVote(i)}>
+              <span class="door-num" aria-hidden="true">{i + 1}</span>
               <span class="door-title">{title}</span>
               {chosen === i ? <InputStatus lang={lang} input={props.voteInput} class="door-status" /> : null}
             </PressButton>

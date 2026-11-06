@@ -9,7 +9,14 @@ namespace FamilyQuiz.Presentation
         private const int Radius = 24;
         private static Sprite _sprite;
 
+        /// <summary>The game pieces' plain rounded shape (TvSprites.Solid) since the game night look (0017).</summary>
         public static Sprite Get()
+        {
+            return TvSprites.Solid;
+        }
+
+        /// <summary>The first, smaller rounded rectangle; kept for reference, unused.</summary>
+        public static Sprite Original()
         {
             if (_sprite != null) return _sprite;
             var texture = new Texture2D(Size, Size, TextureFormat.RGBA32, false)
