@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько сердец у осьминога?",
+   "en": "How many hearts does an octopus have?"
+  },
+  "options": [
+   {
+    "ru": "Одно",
+    "en": "One"
+   },
+   {
+    "ru": "Два",
+    "en": "Two"
+   },
+   {
+    "ru": "Три",
+    "en": "Three"
+   },
+   {
+    "ru": "Восемь, по одному на щупальце",
+    "en": "Eight, one per arm"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Два качают кровь через жабры, третье — по всему телу; а кровь у него голубая из-за меди.",
+   "en": "Two pump blood through the gills and one through the body; the blood is blue because it carries copper."
+  },
+  "source": "https://en.wikipedia.org/wiki/Octopus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто вынашивает потомство у морских коньков?",
+   "en": "Who carries the young in a seahorse family?"
+  },
+  "options": [
+   {
+    "ru": "Самка",
+    "en": "The mother"
+   },
+   {
+    "ru": "Самец",
+    "en": "The father"
+   },
+   {
+    "ru": "Вся стая по очереди",
+    "en": "The whole school, in turns"
+   },
+   {
+    "ru": "Их приносит прилив",
+    "en": "The tide brings them"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Самка откладывает икру в сумку на животе самца, и через несколько недель он «рожает» сотни мальков.",
+   "en": "The female lays her eggs in a pouch on the male's belly, and weeks later he gives birth to hundreds of babies."
+  },
+  "source": "https://en.wikipedia.org/wiki/Seahorse"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой океан самый большой?",
+   "en": "Which is the largest ocean?"
+  },
+  "options": [
+   {
+    "ru": "Атлантический",
+    "en": "Atlantic"
+   },
+   {
+    "ru": "Индийский",
+    "en": "Indian"
+   },
+   {
+    "ru": "Тихий",
+    "en": "Pacific"
+   },
+   {
+    "ru": "Северный Ледовитый",
+    "en": "Arctic"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Тихий океан больше, чем вся суша Земли вместе взятая.",
+   "en": "The Pacific is bigger than all of Earth's land put together."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pacific_Ocean"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где находится самое глубокое место Мирового океана?",
+   "en": "Where is the deepest point of the world's oceans?"
+  },
+  "options": [
+   {
+    "ru": "В Марианской впадине",
+    "en": "The Mariana Trench"
+   },
+   {
+    "ru": "В Бермудском треугольнике",
+    "en": "The Bermuda Triangle"
+   },
+   {
+    "ru": "В Пуэрто-Риканском жёлобе",
+    "en": "The Puerto Rico Trench"
+   },
+   {
+    "ru": "Под Северным полюсом",
+    "en": "Under the North Pole"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Здесь одна плита земной коры подныривает под другую и утягивает дно в глубину почти на 11 км.",
+   "en": "Here one tectonic plate dives under another and drags the seabed down almost 11 km."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mariana_Trench"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что в первую очередь вызывает приливы и отливы?",
+   "en": "What mainly causes the tides?"
+  },
+  "options": [
+   {
+    "ru": "Притяжение Луны",
+    "en": "The Moon's gravity"
+   },
+   {
+    "ru": "Ветер",
+    "en": "The wind"
+   },
+   {
+    "ru": "Нагрев воды Солнцем",
+    "en": "The Sun warming the water"
+   },
+   {
+    "ru": "Реки, впадающие в море",
+    "en": "Rivers flowing into the sea"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Луна вытягивает воду в два горба: под собой и на обратной стороне Земли, поэтому на многих берегах прилив дважды в сутки.",
+   "en": "The Moon pulls the water into two bulges, under it and on Earth's far side, so many coasts get two high tides a day."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tide"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто самое крупное животное из всех, когда-либо живших на Земле?",
+   "en": "What is the largest animal that has ever lived on Earth?"
+  },
+  "options": [
+   {
+    "ru": "Самый большой динозавр",
+    "en": "The biggest dinosaur"
+   },
+   {
+    "ru": "Синий кит",
+    "en": "The blue whale"
+   },
+   {
+    "ru": "Мегалодон",
+    "en": "Megalodon"
+   },
+   {
+    "ru": "Мамонт",
+    "en": "The mammoth"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "На суше такой гигант не выжил бы: только вода держит его вес в 150 тонн с лишним.",
+   "en": "No land animal could get this big: only water can carry a body weighing over 150 tonnes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Blue_whale"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "У какого морского жителя нет ни мозга, ни сердца, ни крови?",
+   "en": "Which sea creature has no brain, no heart and no blood?"
+  },
+  "options": [
+   {
+    "ru": "Медуза",
+    "en": "Jellyfish"
+   },
+   {
+    "ru": "Осьминог",
+    "en": "Octopus"
+   },
+   {
+    "ru": "Краб",
+    "en": "Crab"
+   },
+   {
+    "ru": "Морской конёк",
+    "en": "Seahorse"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Медуза на 95% состоит из воды, а вместо мозга у неё нервная сеть по всему телу.",
+   "en": "A jellyfish is about 95% water and has a net of nerves spread through its body instead of a brain."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jellyfish"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где прячется рыба-клоун, как Немо из мультфильма?",
+   "en": "Where does a clownfish like Nemo hide?"
+  },
+  "options": [
+   {
+    "ru": "В актинии",
+    "en": "In a sea anemone"
+   },
+   {
+    "ru": "В губке",
+    "en": "In a sponge"
+   },
+   {
+    "ru": "В раковине устрицы",
+    "en": "In an oyster shell"
+   },
+   {
+    "ru": "В затонувшем корабле",
+    "en": "In a shipwreck"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слизь на чешуе защищает рыбу-клоуна от стрекательных клеток актинии, которые жалят других рыб.",
+   "en": "A coat of mucus protects the clownfish from the anemone's stinging cells, which sting other fish."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amphiprioninae"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как защищается рыба фугу, когда на неё нападают?",
+   "en": "How does a pufferfish defend itself when attacked?"
+  },
+  "options": [
+   {
+    "ru": "Раздувается в шар",
+    "en": "It puffs up into a ball"
+   },
+   {
+    "ru": "Выпускает облако чернил",
+    "en": "It squirts a cloud of ink"
+   },
+   {
+    "ru": "Бьёт током",
+    "en": "It gives an electric shock"
+   },
+   {
+    "ru": "Выпрыгивает из воды",
+    "en": "It leaps out of the water"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Набрав воды, она становится колючим шаром, а её печень так ядовита, что готовить фугу в Японии доверяют лишь обученным поварам.",
+   "en": "Gulping water turns it into a spiky ball, and its liver is so toxic that in Japan only specially trained chefs may prepare it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tetraodontidae"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая рыба самая большая на свете?",
+   "en": "What is the largest fish alive today?"
+  },
+  "options": [
+   {
+    "ru": "Большая белая акула",
+    "en": "The great white shark"
+   },
+   {
+    "ru": "Китовая акула",
+    "en": "The whale shark"
+   },
+   {
+    "ru": "Рыба-меч",
+    "en": "The swordfish"
+   },
+   {
+    "ru": "Рыба-луна",
+    "en": "The ocean sunfish"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Китовая акула длиннее автобуса, но питается планктоном и людям совсем не опасна.",
+   "en": "The whale shark is longer than a bus, yet it feeds on plankton and is harmless to people."
+  },
+  "source": "https://en.wikipedia.org/wiki/Whale_shark"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что будет, если морская звезда потеряет луч?",
+   "en": "What happens if a starfish loses an arm?"
+  },
+  "options": [
+   {
+    "ru": "Отрастит новый",
+    "en": "It grows a new one"
+   },
+   {
+    "ru": "Погибнет за пару дней",
+    "en": "It dies within days"
+   },
+   {
+    "ru": "Больше не сможет ползать",
+    "en": "It can no longer crawl"
+   },
+   {
+    "ru": "Станет морским ежом",
+    "en": "It turns into a sea urchin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "А у некоторых видов из одного оторванного луча может вырасти целая новая звезда.",
+   "en": "In some species a single severed arm can even grow into a whole new starfish."
+  },
+  "source": "https://en.wikipedia.org/wiki/Starfish"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кого называют «морским единорогом»?",
+   "en": "Which animal is called the unicorn of the sea?"
+  },
+  "options": [
+   {
+    "ru": "Нарвала",
+    "en": "The narwhal"
+   },
+   {
+    "ru": "Рыбу-меч",
+    "en": "The swordfish"
+   },
+   {
+    "ru": "Моржа",
+    "en": "The walrus"
+   },
+   {
+    "ru": "Рыбу-пилу",
+    "en": "The sawfish"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его «рог» — это зуб, который прорастает сквозь верхнюю губу и вырастает до трёх метров.",
+   "en": "Its horn is actually a tooth that grows out through the upper lip and can reach three metres."
+  },
+  "source": "https://en.wikipedia.org/wiki/Narwhal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто делает жемчуг?",
+   "en": "Which animals make pearls?"
+  },
+  "options": [
+   {
+    "ru": "Морские ежи",
+    "en": "Sea urchins"
+   },
+   {
+    "ru": "Устрицы и другие моллюски",
+    "en": "Oysters and other molluscs"
+   },
+   {
+    "ru": "Кораллы",
+    "en": "Corals"
+   },
+   {
+    "ru": "Морские звёзды",
+    "en": "Starfish"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Обычно это не песчинка, как принято думать, а крошечный паразит: моллюск слой за слоем обволакивает его перламутром.",
+   "en": "It is rarely a grain of sand, as people think, but usually a tiny parasite that the mollusc coats in layer after layer of nacre."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pearl"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Каким китом был Моби Дик из романа Мелвилла?",
+   "en": "What kind of whale was Moby Dick in Melville's novel?"
+  },
+  "options": [
+   {
+    "ru": "Синим китом",
+    "en": "A blue whale"
+   },
+   {
+    "ru": "Кашалотом",
+    "en": "A sperm whale"
+   },
+   {
+    "ru": "Горбачом",
+    "en": "A humpback whale"
+   },
+   {
+    "ru": "Косаткой",
+    "en": "An orca"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "У кашалота самый большой мозг из всех известных животных, живых и вымерших: больше 7 кг.",
+   "en": "The sperm whale has the biggest brain of any known animal, living or extinct: over 7 kg."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sperm_whale"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто такие кораллы?",
+   "en": "What are corals?"
+  },
+  "options": [
+   {
+    "ru": "Животные",
+    "en": "Animals"
+   },
+   {
+    "ru": "Растения",
+    "en": "Plants"
+   },
+   {
+    "ru": "Камни",
+    "en": "Rocks"
+   },
+   {
+    "ru": "Грибы",
+    "en": "Fungi"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Коралл — колония крошечных полипов, родственников медуз, которые строят себе известковый скелет.",
+   "en": "A coral is a colony of tiny polyps, relatives of jellyfish, that build themselves a limestone skeleton."
+  },
+  "source": "https://en.wikipedia.org/wiki/Coral"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто из них — настоящая рыба?",
+   "en": "Which of these is actually a fish?"
+  },
+  "options": [
+   {
+    "ru": "Морская звезда",
+    "en": "Starfish"
+   },
+   {
+    "ru": "Медуза",
+    "en": "Jellyfish"
+   },
+   {
+    "ru": "Каракатица",
+    "en": "Cuttlefish"
+   },
+   {
+    "ru": "Морской конёк",
+    "en": "Seahorse"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "У морского конька есть жабры, плавники и плавательный пузырь, он просто плавает стоя.",
+   "en": "A seahorse has gills, fins and a swim bladder; it simply swims upright."
+  },
+  "source": "https://en.wikipedia.org/wiki/Seahorse"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто спит на воде, держась за лапы, чтобы течение не разнесло их?",
+   "en": "Who sleeps on the water holding paws so the current won't drift them apart?"
+  },
+  "options": [
+   {
+    "ru": "Бобры",
+    "en": "Beavers"
+   },
+   {
+    "ru": "Пингвины",
+    "en": "Penguins"
+   },
+   {
+    "ru": "Каланы",
+    "en": "Sea otters"
+   },
+   {
+    "ru": "Тюлени",
+    "en": "Seals"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Ещё каланы заворачиваются в водоросли как в одеяло, а раковины разбивают камнем у себя на животе.",
+   "en": "Sea otters also wrap themselves in kelp like a blanket, and crack shells on a stone resting on their belly."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sea_otter"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где находится бо́льшая часть нейронов осьминога?",
+   "en": "Where are most of an octopus's neurons?"
+  },
+  "options": [
+   {
+    "ru": "В голове",
+    "en": "In its head"
+   },
+   {
+    "ru": "В щупальцах",
+    "en": "In its arms"
+   },
+   {
+    "ru": "Вокруг сердец",
+    "en": "Around its hearts"
+   },
+   {
+    "ru": "В чернильном мешке",
+    "en": "In its ink sac"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Около двух третей из 500 миллионов нейронов — в щупальцах, и каждое само трогает, пробует на вкус и хватает.",
+   "en": "About two thirds of its 500 million neurons are in the arms, so each arm can touch, taste and grab on its own."
+  },
+  "source": "https://en.wikipedia.org/wiki/Octopus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого учёные называют «бессмертным»?",
+   "en": "Which animal do scientists call immortal?"
+  },
+  "options": [
+   {
+    "ru": "Медузу турритопсис",
+    "en": "The Turritopsis jellyfish"
+   },
+   {
+    "ru": "Морскую черепаху",
+    "en": "The sea turtle"
+   },
+   {
+    "ru": "Осьминога",
+    "en": "The octopus"
+   },
+   {
+    "ru": "Рыбу-клоуна",
+    "en": "The clownfish"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Состарившись или поранившись, эта медуза превращается обратно в молодой полип и начинает жизнь заново.",
+   "en": "When old or injured, this jellyfish turns back into a young polyp and starts its life over again."
+  },
+  "source": "https://en.wikipedia.org/wiki/Turritopsis_dohrnii"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего состоит скелет акулы?",
+   "en": "What is a shark's skeleton made of?"
+  },
+  "options": [
+   {
+    "ru": "Из кости",
+    "en": "Bone"
+   },
+   {
+    "ru": "Из хряща",
+    "en": "Cartilage"
+   },
+   {
+    "ru": "Из хитина",
+    "en": "Chitin"
+   },
+   {
+    "ru": "Скелета у неё нет",
+    "en": "It has no skeleton"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Хрящ, как у нас в носу и ушах, почти не сохраняется, поэтому от древних акул остались в основном зубы.",
+   "en": "Cartilage, like in our nose and ears, rarely fossilises, so ancient sharks left behind mostly teeth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shark"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем акула находит рыбу, зарывшуюся в песок, по слабому электричеству её мышц?",
+   "en": "How does a shark find a fish buried in sand by the faint electricity of its muscles?"
+  },
+  "options": [
+   {
+    "ru": "Порами на морде",
+    "en": "Pores on its snout"
+   },
+   {
+    "ru": "Плавниками",
+    "en": "Its fins"
+   },
+   {
+    "ru": "Зубами",
+    "en": "Its teeth"
+   },
+   {
+    "ru": "Хвостом",
+    "en": "Its tail"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эти поры, ампулы Лоренцини, заполнены желе, которое проводит ток к нервам.",
+   "en": "These pores, the ampullae of Lorenzini, are filled with a jelly that carries electric signals to nerves."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ampullae_of_Lorenzini"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "У какого моря совсем нет берегов?",
+   "en": "Which sea has no coastline at all?"
+  },
+  "options": [
+   {
+    "ru": "Саргассово",
+    "en": "The Sargasso Sea"
+   },
+   {
+    "ru": "Каспийское",
+    "en": "The Caspian Sea"
+   },
+   {
+    "ru": "Коралловое",
+    "en": "The Coral Sea"
+   },
+   {
+    "ru": "Берингово",
+    "en": "The Bering Sea"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его границы — океанские течения посреди Атлантики; туда же плывут на нерест угри из рек Европы.",
+   "en": "Its borders are ocean currents in the mid Atlantic, and European eels swim all the way there to spawn."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sargasso_Sea"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чей удар так быстр, что вода вокруг вскипает пузырьками?",
+   "en": "Whose punch is so fast that the water around it boils into bubbles?"
+  },
+  "options": [
+   {
+    "ru": "Рака-богомола",
+    "en": "The mantis shrimp"
+   },
+   {
+    "ru": "Рыбы-меч",
+    "en": "The swordfish"
+   },
+   {
+    "ru": "Морского ежа",
+    "en": "The sea urchin"
+   },
+   {
+    "ru": "Камбалы",
+    "en": "The flounder"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его «молот» разгоняется как пуля, а лопнувший пузырь оглушает добычу, даже если удар прошёл мимо.",
+   "en": "Its club accelerates like a bullet, and the collapsing bubble stuns the prey even if the blow misses."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mantis_shrimp"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "У кого самые большие глаза среди ныне живущих животных?",
+   "en": "Which living animal has the biggest eyes?"
+  },
+  "options": [
+   {
+    "ru": "У синего кита",
+    "en": "The blue whale"
+   },
+   {
+    "ru": "У глубоководного кальмара",
+    "en": "A deep sea squid"
+   },
+   {
+    "ru": "У рыбы-меч",
+    "en": "The swordfish"
+   },
+   {
+    "ru": "У кашалота",
+    "en": "The sperm whale"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Глаз колоссального кальмара — до 30 см, с тарелку: видимо, чтобы издалека замечать в темноте охотящегося кашалота.",
+   "en": "A colossal squid's eye is up to 30 cm across, like a dinner plate, probably to spot a hunting sperm whale far off in the dark."
+  },
+  "source": "https://en.wikipedia.org/wiki/Colossal_squid"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что происходит с самцом у многих глубоководных удильщиков?",
+   "en": "What happens to the male of many deep sea anglerfish?"
+  },
+  "options": [
+   {
+    "ru": "Срастается с самкой навсегда",
+    "en": "He fuses to the female for life"
+   },
+   {
+    "ru": "Самка его съедает",
+    "en": "The female eats him"
+   },
+   {
+    "ru": "Становится самкой",
+    "en": "He turns into a female"
+   },
+   {
+    "ru": "Всю жизнь светится",
+    "en": "He glows all his life"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Найти пару во тьме так трудно, что крошечный самец впивается в самку и срастается с ней навсегда.",
+   "en": "Finding a mate in the dark is so hard that the tiny male bites onto the female and fuses with her body for good."
+  },
+  "source": "https://en.wikipedia.org/wiki/Anglerfish"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что происходит в семье рыб-клоунов, если самка погибает?",
+   "en": "What happens in a clownfish group when the female dies?"
+  },
+  "options": [
+   {
+    "ru": "Крупный самец становится самкой",
+    "en": "The biggest male becomes female"
+   },
+   {
+    "ru": "Все уплывают в новую актинию",
+    "en": "They all leave for a new anemone"
+   },
+   {
+    "ru": "Самцы живут без неё",
+    "en": "The males live on without one"
+   },
+   {
+    "ru": "Зовут самку из соседней стаи",
+    "en": "They call in a female from next door"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Рыбы-клоуны начинают жизнь самцами, так что настоящий папа Немо после гибели мамы сам стал бы самкой.",
+   "en": "Clownfish start life as males, so after Nemo's mother died, his dad would really have turned into a female."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amphiprioninae"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько всего «рук» у кальмара?",
+   "en": "How many arms and tentacles does a squid have in total?"
+  },
+  "options": [
+   {
+    "ru": "Шесть",
+    "en": "Six"
+   },
+   {
+    "ru": "Восемь",
+    "en": "Eight"
+   },
+   {
+    "ru": "Десять",
+    "en": "Ten"
+   },
+   {
+    "ru": "Двенадцать",
+    "en": "Twelve"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Восемь рук и два длинных ловчих щупальца для охоты; у осьминога их только восемь.",
+   "en": "Eight arms plus two long tentacles for catching prey; an octopus has only the eight arms."
+  },
+  "source": "https://en.wikipedia.org/wiki/Squid"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто из них ближайший родственник морской звезды?",
+   "en": "Which of these is the starfish's closest relative?"
+  },
+  "options": [
+   {
+    "ru": "Морской ёж",
+    "en": "The sea urchin"
+   },
+   {
+    "ru": "Медуза",
+    "en": "The jellyfish"
+   },
+   {
+    "ru": "Краб",
+    "en": "The crab"
+   },
+   {
+    "ru": "Осьминог",
+    "en": "The octopus"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Оба иглокожие с пятилучевой симметрией: на панцире ежа видны пять полос, как пять лучей звезды.",
+   "en": "Both are echinoderms with fivefold symmetry: a sea urchin's shell has five bands, like a starfish's five arms."
+  },
+  "source": "https://en.wikipedia.org/wiki/Echinoderm"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему порт Мурманска за Полярным кругом не замерзает зимой?",
+   "en": "Why does the port of Murmansk, above the Arctic Circle, stay ice free in winter?"
+  },
+  "options": [
+   {
+    "ru": "Его греет тёплое течение",
+    "en": "A warm ocean current"
+   },
+   {
+    "ru": "Там подводные вулканы",
+    "en": "Undersea volcanoes"
+   },
+   {
+    "ru": "Залив слишком мелкий",
+    "en": "The bay is too shallow"
+   },
+   {
+    "ru": "На дне бьют горячие источники",
+    "en": "Hot springs on the seabed"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Северо-Атлантическое течение, продолжение Гольфстрима, приносит туда тёплую воду из тропиков.",
+   "en": "The North Atlantic Current, an extension of the Gulf Stream, carries warm tropical water that far north."
+  },
+  "source": "https://en.wikipedia.org/wiki/Murmansk"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько проплыл шведский флагман «Ваза» в первом рейсе 1628 года?",
+   "en": "How far did the Swedish warship Vasa sail on her maiden voyage in 1628?"
+  },
+  "options": [
+   {
+    "ru": "Около 1,3 км",
+    "en": "About 1.3 km"
+   },
+   {
+    "ru": "Около 20 км",
+    "en": "About 20 km"
+   },
+   {
+    "ru": "До Финляндии",
+    "en": "To Finland"
+   },
+   {
+    "ru": "До Польши",
+    "en": "To Poland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слишком высокий и валкий корабль лёг на борт от порыва ветра прямо в гавани Стокгольма; подняли его через 333 года почти целым.",
+   "en": "Too tall and top heavy, she heeled over in a gust inside Stockholm harbour; she was raised 333 years later almost intact."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vasa_(ship)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто в 2012 году в одиночку опустился на дно Марианской впадины?",
+   "en": "Who went down alone to the bottom of the Mariana Trench in 2012?"
+  },
+  "options": [
+   {
+    "ru": "Жак-Ив Кусто",
+    "en": "Jacques Cousteau"
+   },
+   {
+    "ru": "Джеймс Кэмерон",
+    "en": "James Cameron"
+   },
+   {
+    "ru": "Ричард Брэнсон",
+    "en": "Richard Branson"
+   },
+   {
+    "ru": "Илон Маск",
+    "en": "Elon Musk"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Это первое одиночное погружение туда и всего второе с людьми: первым был батискаф «Триест» в 1960 году.",
+   "en": "It was the first solo dive there and only the second crewed one: the first was the bathyscaphe Trieste in 1960."
+  },
+  "source": "https://en.wikipedia.org/wiki/Deepsea_Challenger"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что Жак-Ив Кусто изобрёл вместе с инженером Эмилем Ганьяном?",
+   "en": "What did Jacques Cousteau invent with engineer Emile Gagnan?"
+  },
+  "options": [
+   {
+    "ru": "Ласты",
+    "en": "Swim fins"
+   },
+   {
+    "ru": "Гидрокостюм",
+    "en": "The wetsuit"
+   },
+   {
+    "ru": "Акваланг",
+    "en": "The aqualung"
+   },
+   {
+    "ru": "Эхолот",
+    "en": "Sonar"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Это был не первый акваланг, но первый удачный: клапан подавал воздух только на вдохе, и баллона хватало надолго.",
+   "en": "It was not the first scuba set, but the first to catch on: its valve gave air only as the diver inhaled, so a tank lasted."
+  },
+  "source": "https://en.wikipedia.org/wiki/Aqua-Lung"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто такая косатка?",
+   "en": "What is an orca?"
+  },
+  "options": [
+   {
+    "ru": "Самый крупный дельфин",
+    "en": "The largest dolphin"
+   },
+   {
+    "ru": "Вид акулы",
+    "en": "A kind of shark"
+   },
+   {
+    "ru": "Родственница тюленей",
+    "en": "A relative of seals"
+   },
+   {
+    "ru": "Усатый кит",
+    "en": "A baleen whale"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Косатки живут семьями, и у каждой семьи свой набор звуков, как диалект.",
+   "en": "Orcas live in family pods, and each pod has its own set of calls, like a dialect."
+  },
+  "source": "https://en.wikipedia.org/wiki/Orca"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая рыба подогревает себе глаза, чтобы лучше видеть в холодной глубине?",
+   "en": "Which fish warms its own eyes to see better in cold deep water?"
+  },
+  "options": [
+   {
+    "ru": "Рыба-меч",
+    "en": "The swordfish"
+   },
+   {
+    "ru": "Камбала",
+    "en": "The flounder"
+   },
+   {
+    "ru": "Мурена",
+    "en": "The moray eel"
+   },
+   {
+    "ru": "Рыба-клоун",
+    "en": "The clownfish"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Особая мышечная «печка» держит её глаза и мозг на 10–15 °C теплее воды, и зрение становится острее.",
+   "en": "A special heater made of muscle keeps its eyes and brain 10 to 15 °C above the water, which sharpens its sight."
+  },
+  "source": "https://en.wikipedia.org/wiki/Swordfish"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что происходит с глазами камбалы, пока она растёт?",
+   "en": "What happens to a flounder's eyes as it grows up?"
+  },
+  "options": [
+   {
+    "ru": "Один переползает на другую сторону",
+    "en": "One moves to the other side"
+   },
+   {
+    "ru": "Один глаз отмирает",
+    "en": "One eye dies off"
+   },
+   {
+    "ru": "Вырастает третий глаз",
+    "en": "It grows a third eye"
+   },
+   {
+    "ru": "Они срастаются в один",
+    "en": "They merge into one"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Малёк плавает как обычная рыба, а потом ложится на бок, и нижний глаз перебирается наверх.",
+   "en": "The young fish swims like any other, then lies on its side, and the lower eye migrates to the top."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flatfish"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого моряки прозвали «морской канарейкой»?",
+   "en": "Which animal did sailors nickname the sea canary?"
+  },
+  "options": [
+   {
+    "ru": "Белуху",
+    "en": "The beluga whale"
+   },
+   {
+    "ru": "Дельфина-афалину",
+    "en": "The bottlenose dolphin"
+   },
+   {
+    "ru": "Морского котика",
+    "en": "The fur seal"
+   },
+   {
+    "ru": "Летучую рыбу",
+    "en": "The flying fish"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её писк, свист и щебет похожи на птичьи трели, а мягкий лоб-«дыня» меняет форму, когда она «поёт».",
+   "en": "Its squeaks, whistles and chirps sound like birdsong, and its soft forehead, the melon, changes shape as it calls."
+  },
+  "source": "https://en.wikipedia.org/wiki/Beluga_whale"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где находится самая длинная горная цепь Земли?",
+   "en": "Where is the longest mountain range on Earth?"
+  },
+  "options": [
+   {
+    "ru": "На дне океана",
+    "en": "On the ocean floor"
+   },
+   {
+    "ru": "В Андах",
+    "en": "The Andes"
+   },
+   {
+    "ru": "В Гималаях",
+    "en": "The Himalayas"
+   },
+   {
+    "ru": "На Урале",
+    "en": "The Urals"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Срединно-океанический хребет опоясывает планету на 65 000 км, как шов на теннисном мяче.",
+   "en": "The mid ocean ridge winds 65,000 km around the planet, like the seam on a tennis ball."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mid-ocean_ridge"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как спят дельфины?",
+   "en": "How do dolphins sleep?"
+  },
+  "options": [
+   {
+    "ru": "Половиной мозга по очереди",
+    "en": "One half of the brain at a time"
+   },
+   {
+    "ru": "Совсем не спят",
+    "en": "They never sleep"
+   },
+   {
+    "ru": "Лёжа на дне",
+    "en": "Lying on the seabed"
+   },
+   {
+    "ru": "Выбравшись на берег",
+    "en": "Up on the beach"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Дельфин дышит сознательно, поэтому одно полушарие всегда бодрствует и следит за дыханием.",
+   "en": "Dolphins breathe on purpose, so one half of the brain always stays awake to keep them breathing."
+  },
+  "source": "https://en.wikipedia.org/wiki/Unihemispheric_slow-wave_sleep"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было самой старой гренландской акуле в исследовании 2016 года, по оценке учёных?",
+   "en": "In a 2016 study, how old was the oldest Greenland shark, by scientists' estimate?"
+  },
+  "answer": 390,
+  "range": [
+   0,
+   1500
+  ],
+  "step": 10,
+  "tolerance": 120,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Она растёт всего на 0,5–1 см в год и взрослеет лишь к 150 годам; возраст определили по хрусталику глаза.",
+   "en": "It grows just 0.5 to 1 cm a year and matures at about 150; its age was read from the lens of its eye."
+  },
+  "source": "https://en.wikipedia.org/wiki/Greenland_shark"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько килограммов весило сердце синего кита, самое большое из измеренных?",
+   "en": "How many kilograms did the largest blue whale heart ever measured weigh?"
+  },
+  "answer": 180,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 10,
+  "tolerance": 80,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Как два взрослых мужчины, а не автомобиль, как часто пишут; при нырке оно бьётся всего пару раз в минуту.",
+   "en": "About as much as two grown men, not a car as often claimed, and on a dive it beats just twice a minute."
+  },
+  "source": "https://en.wikipedia.org/wiki/Blue_whale"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какова глубина Марианской впадины в самой глубокой точке?",
+   "en": "How deep is the Mariana Trench at its deepest point?"
+  },
+  "answer": 10900,
+  "range": [
+   2000,
+   14000
+  ],
+  "step": 100,
+  "tolerance": 800,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Если опустить туда Эверест, над его вершиной останется ещё около двух километров воды.",
+   "en": "Drop Mount Everest in there and there would still be about two kilometres of water above its peak."
+  },
+  "source": "https://en.wikipedia.org/wiki/Challenger_Deep"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На какой глубине лежат обломки «Титаника»?",
+   "en": "How deep does the wreck of the Titanic lie?"
+  },
+  "answer": 3800,
+  "range": [
+   0,
+   10000
+  ],
+  "step": 100,
+  "tolerance": 700,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Из-за такой глубины обломки нашли только в 1985 году, через 73 года после крушения.",
+   "en": "That depth is why the wreck was only found in 1985, 73 years after the sinking."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wreck_of_the_Titanic"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько граммов соли растворено в литре обычной морской воды?",
+   "en": "How many grams of salt are dissolved in a litre of ordinary seawater?"
+  },
+  "answer": 35,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "г",
+   "en": "g"
+  },
+  "fact": {
+   "ru": "Соль вымывают из горных пород дожди и реки; если рассыпать всю соль океана по суше, слой вышел бы выше 150 метров.",
+   "en": "Rain and rivers wash it out of rocks on land; spread all the ocean's salt over the land and it would be over 150 m deep."
+  },
+  "source": "https://www.usgs.gov/faqs/why-ocean-salty"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какая доля животных в толще океана, от поверхности до глубины 4 км, умеет светиться?",
+   "en": "What share of animals in the open ocean, from the surface down to 4 km, can make their own light?"
+  },
+  "answer": 76,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "В вечной темноте свет нужен всем: приманить добычу, позвать пару или спрятать силуэт от хищника снизу.",
+   "en": "In endless darkness light is everything: it lures prey, calls a mate or hides your silhouette from hunters below."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bioluminescence"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какую часть поверхности Земли покрывает океан?",
+   "en": "What share of Earth's surface is covered by the ocean?"
+  },
+  "answer": 71,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "Поэтому из космоса Земля голубая, а в океане хранится около 97% всей воды планеты.",
+   "en": "That is why Earth looks blue from space, and the ocean holds about 97% of all the planet's water."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ocean"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Рифы занимают меньше 0,1% площади океана. Какая доля всех видов морских животных живёт на них?",
+   "en": "Reefs cover under 0.1% of the ocean. What share of all marine species live on them?"
+  },
+  "answer": 25,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "Риф как многоэтажный город, полный щелей и укрытий, поэтому его и зовут морскими джунглями.",
+   "en": "A reef is like a high rise city full of nooks to hide in, which is why reefs are called the rainforests of the sea."
+  },
+  "source": "https://en.wikipedia.org/wiki/Coral_reef"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На сколько метров поднимается вода в прилив в канадском заливе Фанди?",
+   "en": "By how many metres does the tide rise in Canada's Bay of Fundy?"
+  },
+  "answer": 16,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Залив сужается, как воронка, а его длина совпадает с ритмом прилива, и вода раскачивается, как в ванне.",
+   "en": "The bay narrows like a funnel, and its length matches the tide's rhythm, so the water sloshes like in a bathtub."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bay_of_Fundy"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько минут без вдоха продержался под водой клюворыл Кювье в рекордном нырке 2020 года?",
+   "en": "How many minutes did a Cuvier's beaked whale stay under on one breath in its 2020 record dive?"
+  },
+  "answer": 222,
+  "range": [
+   0,
+   600
+  ],
+  "step": 2,
+  "tolerance": 60,
+  "unit": {
+   "ru": "минут",
+   "en": "minutes"
+  },
+  "fact": {
+   "ru": "Это почти 4 часа на одном вдохе; а в 2014 году кит того же вида нырнул почти на 3 км, тоже рекорд для млекопитающих.",
+   "en": "That is nearly four hours on one breath; in 2014 a whale of the same species also dived almost 3 km, another mammal record."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cuvier%27s_beaked_whale"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Пакицет, четвероногий предок китов, ещё ходил по суше. Сколько миллионов лет назад он жил?",
+   "en": "Pakicetus, a four legged ancestor of whales, still walked on land. How many million years ago did it live?"
+  },
+  "answer": 49,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "млн лет",
+   "en": "million years"
+  },
+  "fact": {
+   "ru": "Он был похож на волка, а ближайшие из ныне живущих родственников китов на суше — бегемоты, а не тюлени.",
+   "en": "It looked rather like a wolf, and whales' closest living relatives on land are hippos, not seals."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pakicetus"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какова длина Большого Барьерного рифа?",
+   "en": "How long is the Great Barrier Reef?"
+  },
+  "answer": 2300,
+  "range": [
+   0,
+   10000
+  ],
+  "step": 50,
+  "tolerance": 700,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Это почти 3000 отдельных рифов и около 900 островов, растянувшихся дальше, чем от Москвы до Берлина.",
+   "en": "It is nearly 3,000 separate reefs and about 900 islands, stretching farther than from Moscow to Berlin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Great_Barrier_Reef"
+ }
+]

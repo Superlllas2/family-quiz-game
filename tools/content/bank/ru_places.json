@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое озеро — самое глубокое на планете?",
+   "en": "Which lake is the deepest on the planet?"
+  },
+  "options": [
+   {
+    "ru": "Байкал",
+    "en": "Baikal"
+   },
+   {
+    "ru": "Ладожское",
+    "en": "Ladoga"
+   },
+   {
+    "ru": "Онежское",
+    "en": "Onega"
+   },
+   {
+    "ru": "Телецкое",
+    "en": "Teletskoye"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Байкал заполняет разлом в земной коре, который до сих пор расширяется — примерно на 4 мм в год.",
+   "en": "Baikal fills a rift in the Earth's crust that is still widening, by about 4 mm a year."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lake_Baikal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В какой город ведёт Транссиб из Москвы?",
+   "en": "The Trans-Siberian Railway runs from Moscow to which city?"
+  },
+  "options": [
+   {
+    "ru": "Мурманск",
+    "en": "Murmansk"
+   },
+   {
+    "ru": "Калининград",
+    "en": "Kaliningrad"
+   },
+   {
+    "ru": "Владивосток",
+    "en": "Vladivostok"
+   },
+   {
+    "ru": "Сочи",
+    "en": "Sochi"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Поезд Москва — Владивосток идёт около недели: 9289 км — самая длинная железная дорога в мире.",
+   "en": "The Moscow to Vladivostok train takes about a week: at 9,289 km it is the longest railway line in the world."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько часовых поясов в России?",
+   "en": "How many time zones does Russia have?"
+  },
+  "options": [
+   {
+    "ru": "7",
+    "en": "7"
+   },
+   {
+    "ru": "9",
+    "en": "9"
+   },
+   {
+    "ru": "11",
+    "en": "11"
+   },
+   {
+    "ru": "13",
+    "en": "13"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Когда в Калининграде девять вечера, на Камчатке уже семь утра следующего дня.",
+   "en": "When it is 9 pm in Kaliningrad, it is already 7 am the next day in Kamchatka."
+  },
+  "source": "https://en.wikipedia.org/wiki/Time_in_Russia"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как назывался Санкт-Петербург с 1924 по 1991 год?",
+   "en": "What was St Petersburg called from 1924 to 1991?"
+  },
+  "options": [
+   {
+    "ru": "Петроград",
+    "en": "Petrograd"
+   },
+   {
+    "ru": "Ленинград",
+    "en": "Leningrad"
+   },
+   {
+    "ru": "Сталинград",
+    "en": "Stalingrad"
+   },
+   {
+    "ru": "Петрополь",
+    "en": "Petropol"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "А Петроградом город стал в 1914-м: с началом войны с Германией немецкий «бург» сменили на русский «град».",
+   "en": "It became Petrograd in 1914: when war with Germany began, the German 'burg' was swapped for the Russian 'grad'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Saint_Petersburg"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где находится Долина гейзеров?",
+   "en": "Where is the Valley of Geysers?"
+  },
+  "options": [
+   {
+    "ru": "На Алтае",
+    "en": "In the Altai"
+   },
+   {
+    "ru": "На Кавказе",
+    "en": "In the Caucasus"
+   },
+   {
+    "ru": "На Байкале",
+    "en": "At Lake Baikal"
+   },
+   {
+    "ru": "На Камчатке",
+    "en": "In Kamchatka"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Это второе по величине скопление гейзеров в мире, а в 2007 году сель засыпал около двух третей долины.",
+   "en": "It is the second largest cluster of geysers in the world; in 2007 a mudflow buried about two thirds of the valley."
+  },
+  "source": "https://en.wikipedia.org/wiki/Valley_of_Geysers"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие горы считают границей Европы и Азии в России?",
+   "en": "Which mountains are taken as the border of Europe and Asia in Russia?"
+  },
+  "options": [
+   {
+    "ru": "Уральские",
+    "en": "The Urals"
+   },
+   {
+    "ru": "Хибины",
+    "en": "The Khibiny"
+   },
+   {
+    "ru": "Саяны",
+    "en": "The Sayans"
+   },
+   {
+    "ru": "Алтай",
+    "en": "The Altai"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Урал — одни из древнейших гор Земли: они так стёрлись, что высшая точка всего 1895 метров.",
+   "en": "The Urals are among Earth's oldest mountains, so worn down that their highest peak is just 1,895 metres."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ural_Mountains"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В какое море впадает Волга?",
+   "en": "Into which sea does the Volga flow?"
+  },
+  "options": [
+   {
+    "ru": "В Чёрное",
+    "en": "The Black Sea"
+   },
+   {
+    "ru": "В Азовское",
+    "en": "The Sea of Azov"
+   },
+   {
+    "ru": "В Каспийское",
+    "en": "The Caspian Sea"
+   },
+   {
+    "ru": "В Балтийское",
+    "en": "The Baltic Sea"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Каспий на самом деле огромное озеро, так что самая длинная река Европы вообще не доходит до океана.",
+   "en": "The Caspian is really a huge lake, so Europe's longest river never reaches the ocean at all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Volga_River"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как назывался Калининград до 1946 года?",
+   "en": "What was Kaliningrad called before 1946?"
+  },
+  "options": [
+   {
+    "ru": "Данциг",
+    "en": "Danzig"
+   },
+   {
+    "ru": "Кёнигсберг",
+    "en": "Königsberg"
+   },
+   {
+    "ru": "Мемель",
+    "en": "Memel"
+   },
+   {
+    "ru": "Тильзит",
+    "en": "Tilsit"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Это была столица Восточной Пруссии: здесь всю жизнь прожил и похоронен философ Иммануил Кант.",
+   "en": "It was the capital of East Prussia: the philosopher Immanuel Kant lived there all his life and is buried there."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kaliningrad"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой океан НЕ омывает Россию?",
+   "en": "Which ocean does NOT wash Russia's shores?"
+  },
+  "options": [
+   {
+    "ru": "Тихий",
+    "en": "The Pacific"
+   },
+   {
+    "ru": "Северный Ледовитый",
+    "en": "The Arctic"
+   },
+   {
+    "ru": "Атлантический",
+    "en": "The Atlantic"
+   },
+   {
+    "ru": "Индийский",
+    "en": "The Indian"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "К Атлантике Россия выходит через Балтийское, Чёрное и Азовское моря.",
+   "en": "Russia reaches the Atlantic through the Baltic, Black and Azov seas."
+  },
+  "source": "https://en.wikipedia.org/wiki/Geography_of_Russia"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На какой реке стоит Новосибирск?",
+   "en": "Which river is Novosibirsk on?"
+  },
+  "options": [
+   {
+    "ru": "Обь",
+    "en": "The Ob"
+   },
+   {
+    "ru": "Енисей",
+    "en": "The Yenisei"
+   },
+   {
+    "ru": "Иртыш",
+    "en": "The Irtysh"
+   },
+   {
+    "ru": "Лена",
+    "en": "The Lena"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Город вырос в 1893 году из посёлка строителей моста Транссиба через Обь.",
+   "en": "The city grew in 1893 out of a camp for the workers building the Trans-Siberian bridge over the Ob."
+  },
+  "source": "https://en.wikipedia.org/wiki/Novosibirsk"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой зверь живёт только в Байкале и больше нигде на Земле?",
+   "en": "Which animal lives only in Lake Baikal and nowhere else on Earth?"
+  },
+  "options": [
+   {
+    "ru": "Морж",
+    "en": "A walrus"
+   },
+   {
+    "ru": "Нерпа",
+    "en": "A seal, the nerpa"
+   },
+   {
+    "ru": "Белуха",
+    "en": "A beluga whale"
+   },
+   {
+    "ru": "Морской котик",
+    "en": "A fur seal"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Её предки — арктические кольчатые нерпы, а как они попали в озеро посреди Сибири, спорят до сих пор.",
+   "en": "Its ancestors were Arctic ringed seals; how they got into a lake in the middle of Siberia is still debated."
+  },
+  "source": "https://en.wikipedia.org/wiki/Baikal_seal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой из этих городов НЕ входит в Золотое кольцо?",
+   "en": "Which of these cities is NOT on the Golden Ring?"
+  },
+  "options": [
+   {
+    "ru": "Суздаль",
+    "en": "Suzdal"
+   },
+   {
+    "ru": "Ярославль",
+    "en": "Yaroslavl"
+   },
+   {
+    "ru": "Великий Новгород",
+    "en": "Veliky Novgorod"
+   },
+   {
+    "ru": "Кострома",
+    "en": "Kostroma"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Само «Золотое кольцо» придумал журналист Юрий Бычков в 1967 году для серии очерков.",
+   "en": "The name 'Golden Ring' was coined by the journalist Yuri Bychkov in 1967 for a series of articles."
+  },
+  "source": "https://en.wikipedia.org/wiki/Golden_Ring_of_Russia"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В Калининградской области — около 90% мировых запасов какого камня?",
+   "en": "The Kaliningrad region holds about 90% of the world's deposits of which stone?"
+  },
+  "options": [
+   {
+    "ru": "Малахита",
+    "en": "Malachite"
+   },
+   {
+    "ru": "Янтаря",
+    "en": "Amber"
+   },
+   {
+    "ru": "Нефрита",
+    "en": "Jade"
+   },
+   {
+    "ru": "Алмазов",
+    "en": "Diamonds"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Янтарь — окаменевшая смола древних хвойных лесов; после шторма его собирают прямо на пляже.",
+   "en": "Amber is fossil resin from ancient conifer forests; after a storm people pick it up right on the beach."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kaliningrad_Oblast"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как в советское время назывался Екатеринбург?",
+   "en": "What was Yekaterinburg called in Soviet times?"
+  },
+  "options": [
+   {
+    "ru": "Калинин",
+    "en": "Kalinin"
+   },
+   {
+    "ru": "Горький",
+    "en": "Gorky"
+   },
+   {
+    "ru": "Куйбышев",
+    "en": "Kuibyshev"
+   },
+   {
+    "ru": "Свердловск",
+    "en": "Sverdlovsk"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "А назван город не в честь Екатерины Великой, как думают многие, а в честь Екатерины I, жены Петра.",
+   "en": "And it was not named after Catherine the Great, as many think, but after Catherine I, Peter the Great's wife."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yekaterinburg"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой пролив отделяет Россию от Аляски?",
+   "en": "Which strait separates Russia from Alaska?"
+  },
+  "options": [
+   {
+    "ru": "Берингов",
+    "en": "The Bering Strait"
+   },
+   {
+    "ru": "Татарский",
+    "en": "The Strait of Tartary"
+   },
+   {
+    "ru": "Лаперуза",
+    "en": "La Pérouse Strait"
+   },
+   {
+    "ru": "Керченский",
+    "en": "The Kerch Strait"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Российский остров Ратманова и американский Малый Диомид разделяют 3,8 км, а по времени — почти сутки.",
+   "en": "Russia's Big Diomede and America's Little Diomede are 3.8 km apart, yet almost a whole day apart in time."
+  },
+  "source": "https://en.wikipedia.org/wiki/Diomede_Islands"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой регион России самый большой по площади?",
+   "en": "Which region of Russia is the largest by area?"
+  },
+  "options": [
+   {
+    "ru": "Красноярский край",
+    "en": "Krasnoyarsk Krai"
+   },
+   {
+    "ru": "Якутия",
+    "en": "Yakutia"
+   },
+   {
+    "ru": "Чукотка",
+    "en": "Chukotka"
+   },
+   {
+    "ru": "Тюменская область",
+    "en": "Tyumen Oblast"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Будь Якутия страной, она была бы восьмой в мире по площади: больше Аргентины и Казахстана.",
+   "en": "If Yakutia were a country, it would be the eighth largest in the world, bigger than Argentina or Kazakhstan."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sakha_Republic"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой из этих городов дальше всех на север?",
+   "en": "Which of these cities lies farthest north?"
+  },
+  "options": [
+   {
+    "ru": "Мурманск",
+    "en": "Murmansk"
+   },
+   {
+    "ru": "Норильск",
+    "en": "Norilsk"
+   },
+   {
+    "ru": "Воркута",
+    "en": "Vorkuta"
+   },
+   {
+    "ru": "Архангельск",
+    "en": "Arkhangelsk"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Норильск стоит в 300 км за Полярным кругом, и из остальной России к нему не ведёт ни одна дорога.",
+   "en": "Norilsk lies 300 km beyond the Arctic Circle, and no road or railway links it to the rest of Russia."
+  },
+  "source": "https://en.wikipedia.org/wiki/Norilsk"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое озеро — самое большое из тех, что целиком лежат в Европе?",
+   "en": "Which is the largest lake lying entirely in Europe?"
+  },
+  "options": [
+   {
+    "ru": "Онежское",
+    "en": "Onega"
+   },
+   {
+    "ru": "Чудское",
+    "en": "Peipus"
+   },
+   {
+    "ru": "Ладожское",
+    "en": "Ladoga"
+   },
+   {
+    "ru": "Ильмень",
+    "en": "Ilmen"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Во время блокады Ленинграда по льду Ладоги проходила «Дорога жизни».",
+   "en": "During the siege of Leningrad, the 'Road of Life' ran across Ladoga's ice."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lake_Ladoga"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что означает название «Владивосток»?",
+   "en": "What does the name Vladivostok mean?"
+  },
+  "options": [
+   {
+    "ru": "«Владимир на востоке»",
+    "en": "'Vladimir in the East'"
+   },
+   {
+    "ru": "«Владей Востоком»",
+    "en": "'Rule the East'"
+   },
+   {
+    "ru": "«Вода с востока»",
+    "en": "'Water from the East'"
+   },
+   {
+    "ru": "«Восход солнца»",
+    "en": "'Sunrise'"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Его назвали по образцу Владикавказа — «Владей Кавказом», основанного на 76 лет раньше.",
+   "en": "It was named on the pattern of Vladikavkaz, 'Rule the Caucasus', founded 76 years earlier."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vladivostok"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему порт Мурманска не замерзает зимой, хотя он за Полярным кругом?",
+   "en": "Why does Murmansk's port stay ice free in winter, though it lies beyond the Arctic Circle?"
+  },
+  "options": [
+   {
+    "ru": "Воду греют трубами",
+    "en": "Pipes heat the water"
+   },
+   {
+    "ru": "Там очень солёная вода",
+    "en": "The water is very salty"
+   },
+   {
+    "ru": "Тёплое атлантическое течение",
+    "en": "A warm Atlantic current"
+   },
+   {
+    "ru": "Подводные вулканы",
+    "en": "Underwater volcanoes"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Сюда доходит ветвь Гольфстрима, а сам Мурманск, основанный в 1916-м, — последний город Российской империи.",
+   "en": "A branch of the Gulf Stream reaches it, and Murmansk, founded in 1916, was the last city founded in the Russian Empire."
+  },
+  "source": "https://en.wikipedia.org/wiki/Murmansk"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая река — единственная, что вытекает из Байкала?",
+   "en": "Which river is the only one that flows out of Lake Baikal?"
+  },
+  "options": [
+   {
+    "ru": "Селенга",
+    "en": "The Selenga"
+   },
+   {
+    "ru": "Лена",
+    "en": "The Lena"
+   },
+   {
+    "ru": "Енисей",
+    "en": "The Yenisei"
+   },
+   {
+    "ru": "Ангара",
+    "en": "The Angara"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В Байкал впадает около 330 рек, а по легенде отец-Байкал бросил скалу вслед дочери Ангаре, сбежавшей к Енисею.",
+   "en": "About 330 rivers flow in; legend says father Baikal hurled a rock after his daughter Angara as she ran off to the Yenisei."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lake_Baikal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой вулкан — самый высокий действующий в Евразии?",
+   "en": "Which is the highest active volcano in Eurasia?"
+  },
+  "options": [
+   {
+    "ru": "Шивелуч",
+    "en": "Shiveluch"
+   },
+   {
+    "ru": "Ключевская сопка",
+    "en": "Klyuchevskaya Sopka"
+   },
+   {
+    "ru": "Авачинская сопка",
+    "en": "Avachinsky"
+   },
+   {
+    "ru": "Корякская сопка",
+    "en": "Koryaksky"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В ней около 4750 м, и она растёт сама: в 1980-х новый шлаковый конус засыпал кратер и стал вершиной.",
+   "en": "It is about 4,750 m tall and builds itself: in the 1980s a new cinder cone filled its crater and became the summit."
+  },
+  "source": "https://en.wikipedia.org/wiki/Klyuchevskaya_Sopka"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь кого назван Хабаровск?",
+   "en": "Who is Khabarovsk named after?"
+  },
+  "options": [
+   {
+    "ru": "Губернатора Хабарова",
+    "en": "Governor Khabarov"
+   },
+   {
+    "ru": "Землепроходца Ерофея Хабарова",
+    "en": "The explorer Yerofey Khabarov"
+   },
+   {
+    "ru": "Купца Хабарова",
+    "en": "The merchant Khabarov"
+   },
+   {
+    "ru": "Слова «хабар» — выгода",
+    "en": "The word 'khabar', profit"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В Амурской области есть и станция «Ерофей Павлович» — тоже в его честь, по имени и отчеству.",
+   "en": "There is also a station called Yerofey Pavlovich in the Amur region, named after the same man by his first names."
+  },
+  "source": "https://en.wikipedia.org/wiki/Khabarovsk"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой город России считается самым древним — ему больше 2000 лет?",
+   "en": "Which Russian city is considered the oldest, at over 2,000 years old?"
+  },
+  "options": [
+   {
+    "ru": "Великий Новгород",
+    "en": "Veliky Novgorod"
+   },
+   {
+    "ru": "Казань",
+    "en": "Kazan"
+   },
+   {
+    "ru": "Дербент",
+    "en": "Derbent"
+   },
+   {
+    "ru": "Старая Ладога",
+    "en": "Staraya Ladoga"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Дербент стерёг узкий проход между Кавказом и Каспием, а его персидское имя значит «закрытые ворота».",
+   "en": "Derbent guarded the narrow pass between the Caucasus and the Caspian; its Persian name means 'closed gates'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Derbent"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему Красная площадь называется Красной?",
+   "en": "Why is Red Square called Red?"
+  },
+  "options": [
+   {
+    "ru": "Из-за красного кирпича Кремля",
+    "en": "For the red brick of the Kremlin"
+   },
+   {
+    "ru": "«Красная» значило «красивая»",
+    "en": "'Red' used to mean 'beautiful'"
+   },
+   {
+    "ru": "В честь революции 1917 года",
+    "en": "After the 1917 revolution"
+   },
+   {
+    "ru": "Её мостили красным камнем",
+    "en": "It was paved with red stone"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Название появилось в XVII веке, а раньше площадь звали Пожаром — из-за частых пожаров на торгу.",
+   "en": "The name appeared in the 17th century; before that the square was called Pozhar, 'the Fire', after its frequent fires."
+  },
+  "source": "https://en.wikipedia.org/wiki/Red_Square"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой заповедник в России — самый первый?",
+   "en": "Which nature reserve was Russia's very first?"
+  },
+  "options": [
+   {
+    "ru": "Баргузинский",
+    "en": "Barguzin"
+   },
+   {
+    "ru": "Кроноцкий",
+    "en": "Kronotsky"
+   },
+   {
+    "ru": "Кавказский",
+    "en": "Caucasus"
+   },
+   {
+    "ru": "Столбы",
+    "en": "Stolby"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его создали на Байкале в 1916 году, чтобы спасти баргузинского соболя, почти выбитого ради меха.",
+   "en": "It was founded on Baikal in 1916 to save the Barguzin sable, almost wiped out for its fur."
+  },
+  "source": "https://en.wikipedia.org/wiki/Barguzin_Nature_Reserve"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Возле какого города стоят знаменитые скалы «Столбы»?",
+   "en": "Which city are the famous Stolby rocks next to?"
+  },
+  "options": [
+   {
+    "ru": "Иркутск",
+    "en": "Irkutsk"
+   },
+   {
+    "ru": "Томск",
+    "en": "Tomsk"
+   },
+   {
+    "ru": "Красноярск",
+    "en": "Krasnoyarsk"
+   },
+   {
+    "ru": "Пермь",
+    "en": "Perm"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Красноярцы лазят на эти скалы больше 150 лет, и местные «столбисты» часто обходятся без всякого снаряжения.",
+   "en": "Locals have climbed these rocks for over 150 years, and the 'stolbists' often go up without any gear at all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stolby_Nature_Sanctuary"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой остров — самый большой в России?",
+   "en": "Which island is the largest in Russia?"
+  },
+  "options": [
+   {
+    "ru": "Северный остров Новой Земли",
+    "en": "Novaya Zemlya's Severny"
+   },
+   {
+    "ru": "Сахалин",
+    "en": "Sakhalin"
+   },
+   {
+    "ru": "Врангеля",
+    "en": "Wrangel Island"
+   },
+   {
+    "ru": "Котельный",
+    "en": "Kotelny"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В 1890 году Чехов проехал через всю Сибирь, чтобы описать сахалинскую каторгу.",
+   "en": "In 1890 Chekhov crossed all of Siberia to write about the penal colony on Sakhalin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sakhalin"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое из этих морей целиком — внутренние воды России?",
+   "en": "Which of these seas lies entirely within Russia's internal waters?"
+  },
+  "options": [
+   {
+    "ru": "Белое",
+    "en": "The White Sea"
+   },
+   {
+    "ru": "Баренцево",
+    "en": "The Barents Sea"
+   },
+   {
+    "ru": "Балтийское",
+    "en": "The Baltic"
+   },
+   {
+    "ru": "Охотское",
+    "en": "The Sea of Okhotsk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "При скромном размере в узких губах Белого моря прилив поднимает воду почти на 8 метров.",
+   "en": "Small as it is, the White Sea's narrow bays see tides of almost 8 metres."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Белое_море"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой участок Транссиба прозвали «золотой пряжкой стального пояса России»?",
+   "en": "Which stretch of the Trans-Siberian was nicknamed 'the golden buckle of Russia's steel belt'?"
+  },
+  "options": [
+   {
+    "ru": "Амурский мост",
+    "en": "The Amur bridge"
+   },
+   {
+    "ru": "Кругобайкальская дорога",
+    "en": "The Circum-Baikal line"
+   },
+   {
+    "ru": "Перевал через Урал",
+    "en": "The Ural crossing"
+   },
+   {
+    "ru": "Мост через Енисей",
+    "en": "The Yenisei bridge"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Километр пути здесь стоил около 130 тысяч рублей — почти в полтора раза дороже, чем на других участках Транссиба.",
+   "en": "Each kilometre here cost about 130,000 roubles, almost one and a half times more than elsewhere on the line."
+  },
+  "source": "https://en.wikipedia.org/wiki/Circum-Baikal_Railway"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая река России самая полноводная?",
+   "en": "Which river in Russia carries the most water?"
+  },
+  "options": [
+   {
+    "ru": "Волга",
+    "en": "The Volga"
+   },
+   {
+    "ru": "Обь",
+    "en": "The Ob"
+   },
+   {
+    "ru": "Лена",
+    "en": "The Lena"
+   },
+   {
+    "ru": "Енисей",
+    "en": "The Yenisei"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Енисей делит Сибирь пополам: левый берег — равнина Западной Сибири, правый — горы и плато Восточной.",
+   "en": "The Yenisei splits Siberia in two: flat West Siberian plain on the left bank, mountains and plateaus on the right."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yenisei"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой крупный город целиком стоит на вечной мерзлоте?",
+   "en": "Which large city stands entirely on permafrost?"
+  },
+  "options": [
+   {
+    "ru": "Якутск",
+    "en": "Yakutsk"
+   },
+   {
+    "ru": "Иркутск",
+    "en": "Irkutsk"
+   },
+   {
+    "ru": "Хабаровск",
+    "en": "Khabarovsk"
+   },
+   {
+    "ru": "Новосибирск",
+    "en": "Novosibirsk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Дома там ставят на сваи, чтобы тепло от зданий не растопило грунт под ними.",
+   "en": "Buildings there stand on stilts so their warmth does not thaw the ground beneath them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yakutsk"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь кого назван город Тольятти?",
+   "en": "Who is the city of Tolyatti named after?"
+  },
+  "options": [
+   {
+    "ru": "Итальянского коммуниста",
+    "en": "An Italian communist"
+   },
+   {
+    "ru": "Инженера ВАЗа",
+    "en": "A VAZ car engineer"
+   },
+   {
+    "ru": "Волжского купца",
+    "en": "A Volga merchant"
+   },
+   {
+    "ru": "Героя войны 1812 года",
+    "en": "A hero of the 1812 war"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До 1964 года город звался Ставрополем, а новое имя получил в честь Пальмиро Тольятти, главы компартии Италии.",
+   "en": "Until 1964 it was Stavropol; it was renamed after Palmiro Togliatti, head of the Italian Communist Party."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tolyatti"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой город стоит там, где Ока впадает в Волгу?",
+   "en": "Which city stands where the Oka flows into the Volga?"
+  },
+  "options": [
+   {
+    "ru": "Ярославль",
+    "en": "Yaroslavl"
+   },
+   {
+    "ru": "Тверь",
+    "en": "Tver"
+   },
+   {
+    "ru": "Казань",
+    "en": "Kazan"
+   },
+   {
+    "ru": "Нижний Новгород",
+    "en": "Nizhny Novgorod"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "С 1932 по 1990 год город носил имя Горький — в честь писателя, который здесь родился.",
+   "en": "From 1932 to 1990 it was called Gorky, after the writer born there."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nizhny_Novgorod"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где стоят знаменитые столбы выветривания Маньпупунёр?",
+   "en": "Where do the famous Manpupuner rock pillars stand?"
+  },
+  "options": [
+   {
+    "ru": "На Алтае",
+    "en": "In the Altai"
+   },
+   {
+    "ru": "В Карелии",
+    "en": "In Karelia"
+   },
+   {
+    "ru": "В Республике Коми",
+    "en": "In the Komi Republic"
+   },
+   {
+    "ru": "В Хакасии",
+    "en": "In Khakassia"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Семь скал высотой 30–42 м — остатки древних гор, а манси считали их священными: залезать на них было грехом.",
+   "en": "The seven 30 to 42 metre pillars are what is left of ancient mountains; the Mansi held them sacred and climbing them a sin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Manpupuner_rock_formations"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что особенного в «Танцующем лесе» на Куршской косе?",
+   "en": "What is special about the Dancing Forest on the Curonian Spit?"
+  },
+  "options": [
+   {
+    "ru": "Деревья светятся ночью",
+    "en": "The trees glow at night"
+   },
+   {
+    "ru": "Стволы сосен закручены",
+    "en": "The pine trunks are twisted"
+   },
+   {
+    "ru": "Деревья качаются без ветра",
+    "en": "Trees sway with no wind"
+   },
+   {
+    "ru": "Там растут пальмы",
+    "en": "Palm trees grow there"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Сосны посадили в 1960-х, и почему их стволы вьются кольцами и петлями, учёные точно не знают до сих пор.",
+   "en": "The pines were planted in the 1960s, and why their trunks curl into rings and loops is still not known for sure."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dancing_Forest"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь чего назван Петропавловск-Камчатский?",
+   "en": "What is Petropavlovsk-Kamchatsky named after?"
+  },
+  "options": [
+   {
+    "ru": "Кораблей Витуса Беринга",
+    "en": "Vitus Bering's ships"
+   },
+   {
+    "ru": "Петропавловской крепости",
+    "en": "The Peter and Paul Fortress"
+   },
+   {
+    "ru": "Петра I и его сына Павла",
+    "en": "Peter I and his son Paul"
+   },
+   {
+    "ru": "Двух местных рек",
+    "en": "Two local rivers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Беринг основал его в 1740 году и назвал по своим пакетботам «Святой Пётр» и «Святой Павел».",
+   "en": "Bering founded it in 1740 and named it after his two ships, the Saint Peter and the Saint Paul."
+  },
+  "source": "https://en.wikipedia.org/wiki/Petropavlovsk-Kamchatsky"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "С какой страной у России самая длинная сухопутная граница?",
+   "en": "Which country shares the longest land border with Russia?"
+  },
+  "options": [
+   {
+    "ru": "С Китаем",
+    "en": "China"
+   },
+   {
+    "ru": "С Монголией",
+    "en": "Mongolia"
+   },
+   {
+    "ru": "С Казахстаном",
+    "en": "Kazakhstan"
+   },
+   {
+    "ru": "С Финляндией",
+    "en": "Finland"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Граница с Казахстаном — 7644 км: это самая длинная непрерывная граница двух стран в мире.",
+   "en": "The border with Kazakhstan runs 7,644 km, the longest continuous border between two countries in the world."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kazakhstan–Russia_border"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какова наибольшая глубина Байкала?",
+   "en": "What is the greatest depth of Lake Baikal?"
+  },
+  "answer": 1642,
+  "range": [
+   200,
+   2600
+  ],
+  "step": 2,
+  "tolerance": 150,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Даже три Останкинские башни, поставленные друг на друга, скрылись бы в Байкале целиком.",
+   "en": "Even three Ostankino TV towers stacked on top of each other would vanish completely under Baikal's water."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lake_Baikal"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году началось строительство Транссиба?",
+   "en": "In which year did construction of the Trans-Siberian Railway begin?"
+  },
+  "answer": 1891,
+  "range": [
+   1700,
+   1960
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Первый камень во Владивостоке заложил наследник престола, будущий император Николай II.",
+   "en": "The first stone was laid in Vladivostok by the heir to the throne, the future Nicholas II."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какой самый сильный мороз официально зафиксирован в Оймяконе (в 1933 году)?",
+   "en": "What is the coldest temperature officially recorded in Oymyakon (in 1933)?"
+  },
+  "answer": -67.7,
+  "range": [
+   -80,
+   -20
+  ],
+  "step": 0.1,
+  "tolerance": 5,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "В Верхоянске в 1892 году намерили −67,8 °C, на десятую долю холоднее, так что звание полюса холода они делят.",
+   "en": "Verkhoyansk logged −67.8 °C in 1892, a tenth of a degree colder, so the two towns share the title of pole of cold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Oymyakon"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На какой глубине находится «Адмиралтейская» — самая глубокая станция петербургского метро?",
+   "en": "How deep is Admiralteyskaya, the deepest station of the St Petersburg metro?"
+  },
+  "answer": 86,
+  "range": [
+   0,
+   400
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Город стоит на мягком грунте над подземными реками и водоносными слоями, поэтому его метро — самое глубокое в мире в среднем.",
+   "en": "The city sits on soft ground over underground rivers and aquifers, so its metro is the deepest in the world on average."
+  },
+  "source": "https://en.wikipedia.org/wiki/Saint_Petersburg_Metro"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году открыли Долину гейзеров на Камчатке?",
+   "en": "In which year was Kamchatka's Valley of Geysers discovered?"
+  },
+  "answer": 1941,
+  "range": [
+   1700,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Её нашла геолог Татьяна Устинова с проводником Анисифором Крупениным, а описала находку только через 14 лет.",
+   "en": "The geologist Tatyana Ustinova found it with her guide Anisifor Krupenin, but only published her find 14 years later."
+  },
+  "source": "https://en.wikipedia.org/wiki/Valley_of_Geysers"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какова длина Волги?",
+   "en": "How long is the Volga?"
+  },
+  "answer": 3530,
+  "range": [
+   1500,
+   7000
+  ],
+  "step": 10,
+  "tolerance": 400,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "До постройки водохранилищ Волга была ещё длиннее — 3690 км.",
+   "en": "Before its reservoirs were built, the Volga was even longer: 3,690 km."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Волга"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько глав (куполов) у Преображенской церкви в Кижах?",
+   "en": "How many domes does the Church of the Transfiguration at Kizhi have?"
+  },
+  "answer": 22,
+  "range": [
+   1,
+   70
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "",
+   "en": ""
+  },
+  "fact": {
+   "ru": "Деревянной церкви 1714 года высотой 37 м гвозди понадобились только для кровли и чешуи куполов.",
+   "en": "The 37 m wooden church of 1714 needed nails only for its roof and the shingles of its domes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kizhi_Pogost"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какую жару зафиксировали в Верхоянске, в Якутии, 20 июня 2020 года?",
+   "en": "How hot did it get in Verkhoyansk, Yakutia, on 20 June 2020?"
+  },
+  "answer": 38,
+  "range": [
+   -10,
+   50
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "Это самая сильная жара за Полярным кругом: вдали от морей ничто не смягчает погоду, и лето здесь жаркое, а зима лютая.",
+   "en": "It is the hottest reading ever north of the Arctic Circle: far from any sea, nothing softens the weather, so summers bake and winters freeze."
+  },
+  "source": "https://en.wikipedia.org/wiki/Verkhoyansk"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какую часть территории России занимает вечная мерзлота?",
+   "en": "What share of Russia's territory lies on permafrost?"
+  },
+  "answer": 65,
+  "range": [
+   0,
+   90
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "процентов",
+   "en": "%"
+  },
+  "fact": {
+   "ru": "Это 60–65% страны, около 11 млн км², и местами мёрзлый грунт уходит в глубину больше чем на километр.",
+   "en": "It covers 60 to 65% of the country, about 11 million km², and in places the frozen ground goes over a kilometre deep."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Многолетняя_мерзлота"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какова ширина Берингова пролива в самом узком месте?",
+   "en": "How wide is the Bering Strait at its narrowest?"
+  },
+  "answer": 82,
+  "range": [
+   0,
+   500
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "В ледниковый период здесь была суша, и по этому мосту люди пришли из Азии в Америку.",
+   "en": "In the ice age this was dry land, and people crossed it from Asia into America."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bering_Strait"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какова высота Эльбруса, высочайшей горы России?",
+   "en": "How high is Elbrus, Russia's highest mountain?"
+  },
+  "answer": 5642,
+  "range": [
+   3000,
+   7000
+  ],
+  "step": 2,
+  "tolerance": 250,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Эльбрус — спящий вулкан и, по общепринятой границе Европы, её высочайшая вершина: он выше Монблана на 800 с лишним метров.",
+   "en": "Elbrus is a dormant volcano and, by the usual border, Europe's highest peak, over 800 metres taller than Mont Blanc."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mount_Elbrus"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какова глубина алмазного карьера «Мир» в Якутии?",
+   "en": "How deep is the Mir diamond pit in Yakutia?"
+  },
+  "answer": 525,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 5,
+  "tolerance": 150,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Яма диаметром 1,2 км — одна из крупнейших рукотворных в мире; открытую добычу в ней прекратили в 2001 году.",
+   "en": "At 1.2 km across it is one of the largest holes ever dug; open pit mining there stopped in 2001."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mir_mine"
+ }
+]

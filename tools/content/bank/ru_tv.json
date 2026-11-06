@@ -1,0 +1,1507 @@
+[
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "В какой телеигре слово угадывают по буквам, а ведущему дарят подарки?",
+      "en": "In which game show do players guess a word letter by letter and bring the host gifts?"
+    },
+    "options": [
+      {
+        "ru": "«Поле чудес»",
+        "en": "Field of Miracles"
+      },
+      {
+        "ru": "«Что? Где? Когда?»",
+        "en": "What? Where? When?"
+      },
+      {
+        "ru": "«Угадай мелодию»",
+        "en": "Guess the Melody"
+      },
+      {
+        "ru": "«Своя игра»",
+        "en": "Svoya Igra"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Владельцы «Колеса фортуны» отказали в лицензии, и «Поле чудес» собрали из нескольких зарубежных форматов без их участия.",
+      "en": "The Wheel of Fortune owners refused a licence, so Field of Miracles was pieced together from several foreign formats without them."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Поле_чудес"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что в «Что? Где? Когда?» решает, какой вопрос будет сыгран следующим?",
+      "en": "In What? Where? When?, what decides which question is played next?"
+    },
+    "options": [
+      {
+        "ru": "Волчок со стрелкой",
+        "en": "A spinning top with an arrow"
+      },
+      {
+        "ru": "Бросок кубика",
+        "en": "A roll of the dice"
+      },
+      {
+        "ru": "Лотерейный барабан",
+        "en": "A lottery drum"
+      },
+      {
+        "ru": "Выбор капитана",
+        "en": "The team captain's choice"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Волчок — генератор случая: стрелка указывает на конверт с письмом телезрителя, и его вопрос идёт в игру.",
+      "en": "The top is the game's random generator: its arrow points at a viewer's envelope, and that question is played."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Что%3F_Где%3F_Когда%3F"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько знатоков сидит за игровым столом в «Что? Где? Когда?»?",
+      "en": "How many experts sit at the table in What? Where? When?"
+    },
+    "options": [
+      {
+        "ru": "Шесть",
+        "en": "Six"
+      },
+      {
+        "ru": "Четыре",
+        "en": "Four"
+      },
+      {
+        "ru": "Пять",
+        "en": "Five"
+      },
+      {
+        "ru": "Восемь",
+        "en": "Eight"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Поначалу знатоки отвечали поодиночке, а минута обсуждения всей командой появилась только в 1977 году.",
+      "en": "At first the experts answered one by one; the team's minute of discussion only arrived in 1977."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Что%3F_Где%3F_Когда%3F"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто такой Филя из «Спокойной ночи, малыши!»?",
+      "en": "What kind of animal is Filya from Good Night, Little Ones!?"
+    },
+    "options": [
+      {
+        "ru": "Пёс",
+        "en": "A dog"
+      },
+      {
+        "ru": "Поросёнок",
+        "en": "A piglet"
+      },
+      {
+        "ru": "Заяц",
+        "en": "A hare"
+      },
+      {
+        "ru": "Медвежонок",
+        "en": "A bear cub"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Филя — старожил четвёрки: Степашка появился в 1970 году, Хрюша — в 1971-м, а Каркуша — только в 1982-м.",
+      "en": "Filya is the old timer of the four: Stepashka arrived in 1970, Khryusha in 1971 and Karkusha only in 1982."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Спокойной_ночи,_малыши!"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что показывали по телевизору утром 19 августа 1991 года, в первый день путча?",
+      "en": "What did Soviet TV show on the morning of 19 August 1991, the first day of the coup?"
+    },
+    "options": [
+      {
+        "ru": "Балет «Лебединое озеро»",
+        "en": "The ballet Swan Lake"
+      },
+      {
+        "ru": "«Ну, погоди!»",
+        "en": "Nu, Pogodi!"
+      },
+      {
+        "ru": "Хоккейный матч",
+        "en": "An ice hockey match"
+      },
+      {
+        "ru": "«Иронию судьбы»",
+        "en": "The Irony of Fate"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Балет крутили вместо обычных передач, и с тех пор «Лебединое озеро» по всем каналам — шутливый знак, что в стране что-то стряслось.",
+      "en": "The ballet replaced the usual programmes, and Swan Lake on every channel became a byword for something big happening."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Августовский_путч"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой рок-музыкант вёл кулинарную передачу «Смак»?",
+      "en": "Which rock musician hosted the cooking show Smak?"
+    },
+    "options": [
+      {
+        "ru": "Андрей Макаревич",
+        "en": "Andrei Makarevich"
+      },
+      {
+        "ru": "Юрий Шевчук",
+        "en": "Yuri Shevchuk"
+      },
+      {
+        "ru": "Борис Гребенщиков",
+        "en": "Boris Grebenshchikov"
+      },
+      {
+        "ru": "Константин Кинчев",
+        "en": "Konstantin Kinchev"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Название придумал Евгений Маргулис, а Макаревич шутил, что «Смак» — это «Советы Макаревича».",
+      "en": "Evgeny Margulis came up with the name, and Makarevich joked that Smak stood for \"Makarevich's Tips\"."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Смак_(телепередача)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кафе какой страны изображал «Кабачок „13 стульев“»?",
+      "en": "The Kabachok 13 Chairs show was set in a café of which country?"
+    },
+    "options": [
+      {
+        "ru": "Польши",
+        "en": "Poland"
+      },
+      {
+        "ru": "Чехословакии",
+        "en": "Czechoslovakia"
+      },
+      {
+        "ru": "Венгрии",
+        "en": "Hungary"
+      },
+      {
+        "ru": "ГДР",
+        "en": "East Germany"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Поэтому все герои были «пан» и «пани»: пан Директор, пани Моника, пан Вотруба, пан Профессор.",
+      "en": "That is why everyone was a pan or a pani: Pan Director, Pani Monika, Pan Votruba, Pan Professor."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Кабачок_«13_стульев»"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "В какой стране сняли сериал «Рабыня Изаура»?",
+      "en": "Which country made the series Slave Isaura?"
+    },
+    "options": [
+      {
+        "ru": "Бразилия",
+        "en": "Brazil"
+      },
+      {
+        "ru": "Мексика",
+        "en": "Mexico"
+      },
+      {
+        "ru": "Аргентина",
+        "en": "Argentina"
+      },
+      {
+        "ru": "Испания",
+        "en": "Spain"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это первая теленовелла на советском телевидении: в 1988–1989 годах её смотрела вся страна.",
+      "en": "It was the first telenovela ever shown on Soviet TV: in 1988 and 1989 the whole country watched it."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Рабыня_Изаура_(телесериал)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто вёл телеигру «Угадай мелодию»?",
+      "en": "Who hosted the game show Guess the Melody?"
+    },
+    "options": [
+      {
+        "ru": "Валдис Пельш",
+        "en": "Valdis Pelsh"
+      },
+      {
+        "ru": "Леонид Якубович",
+        "en": "Leonid Yakubovich"
+      },
+      {
+        "ru": "Максим Галкин",
+        "en": "Maxim Galkin"
+      },
+      {
+        "ru": "Дмитрий Дибров",
+        "en": "Dmitry Dibrov"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В суперигре надо было угадать семь мелодий за 30 секунд — по четыре с небольшим секунды на песню.",
+      "en": "In the super game you had to name seven tunes in 30 seconds: just over four seconds a song."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Угадай_мелодию"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто сыграл Шерлока Холмса в советском телесериале 1979–1986 годов?",
+      "en": "Who played Sherlock Holmes in the Soviet TV series of 1979 to 1986?"
+    },
+    "options": [
+      {
+        "ru": "Василий Ливанов",
+        "en": "Vasily Livanov"
+      },
+      {
+        "ru": "Виталий Соломин",
+        "en": "Vitaly Solomin"
+      },
+      {
+        "ru": "Никита Михалков",
+        "en": "Nikita Mikhalkov"
+      },
+      {
+        "ru": "Михаил Боярский",
+        "en": "Mikhail Boyarsky"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "За Холмса Ливанов в 2006 году стал почётным членом ордена Британской империи, а в Москве Холмсу дали его лицо.",
+      "en": "For his Holmes, Livanov was made an honorary MBE in 2006, and Moscow's Holmes statue has his face."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Ливанов,_Василий_Борисович"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Как на самом деле звали Штирлица из «Семнадцати мгновений весны»?",
+      "en": "What was Stierlitz's real name in Seventeen Moments of Spring?"
+    },
+    "options": [
+      {
+        "ru": "Максим Исаев",
+        "en": "Maxim Isaev"
+      },
+      {
+        "ru": "Глеб Жеглов",
+        "en": "Gleb Zheglov"
+      },
+      {
+        "ru": "Павел Корчагин",
+        "en": "Pavel Korchagin"
+      },
+      {
+        "ru": "Иван Бровкин",
+        "en": "Ivan Brovkin"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Во время первого показа в 1973 году улицы городов пустели, а преступность, по рассказам милиции, заметно падала.",
+      "en": "During the first showing in 1973 city streets emptied, and crime was reported to drop noticeably."
+    },
+    "source": "https://en.wikipedia.org/wiki/Seventeen_Moments_of_Spring"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Ремейком какого американского ситкома был сериал «Счастливы вместе» про Букиных?",
+      "en": "Happy Together, about the Bukin family, was a remake of which American sitcom?"
+    },
+    "options": [
+      {
+        "ru": "«Женаты и с детьми»",
+        "en": "Married... with Children"
+      },
+      {
+        "ru": "«Друзья»",
+        "en": "Friends"
+      },
+      {
+        "ru": "«Все любят Рэймонда»",
+        "en": "Everybody Loves Raymond"
+      },
+      {
+        "ru": "«Симпсоны»",
+        "en": "The Simpsons"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Гена Букин — русский Эл Банди: ТНТ показывал семейку Букиных с 2006 по 2013 год, шесть сезонов.",
+      "en": "Gena Bukin is the Russian Al Bundy: TNT showed the Bukin family from 2006 to 2013, six seasons in all."
+    },
+    "source": "https://en.wikipedia.org/wiki/Happy_Together_(Russian_TV_series)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "За каким прибором охотились космические пираты в «Гостье из будущего»?",
+      "en": "Which device were the space pirates after in Guest from the Future?"
+    },
+    "options": [
+      {
+        "ru": "Миелофон",
+        "en": "The myelophone"
+      },
+      {
+        "ru": "Гравицапа",
+        "en": "The gravitsapa"
+      },
+      {
+        "ru": "Машина времени",
+        "en": "A time machine"
+      },
+      {
+        "ru": "Синхрофазотрон",
+        "en": "A synchrophasotron"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Миелофон читает мысли: пираты мечтали стать с ним властелинами Вселенной, а Алиса слушала с ним мысли зверей.",
+      "en": "The myelophone reads minds: the pirates wanted it to rule the universe, Alice used it to hear animals think."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Гостья_из_будущего"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто вёл передачу «Городок»?",
+      "en": "Who hosted the comedy show Gorodok?"
+    },
+    "options": [
+      {
+        "ru": "Олейников и Стоянов",
+        "en": "Oleynikov and Stoyanov"
+      },
+      {
+        "ru": "Ильф и Петров",
+        "en": "Ilf and Petrov"
+      },
+      {
+        "ru": "Ширвиндт и Державин",
+        "en": "Shirvindt and Derzhavin"
+      },
+      {
+        "ru": "Галкин и Петросян",
+        "en": "Galkin and Petrosyan"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "«Городок» снимали в Петербурге почти 20 лет и закрыли в 2012 году после смерти Ильи Олейникова.",
+      "en": "Gorodok was made in Saint Petersburg for almost 20 years and ended in 2012, when Ilya Oleynikov died."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Городок_(телепередача)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто больше сорока лет вёл передачу «В мире животных»?",
+      "en": "Who hosted In the Animal World for over forty years?"
+    },
+    "options": [
+      {
+        "ru": "Николай Дроздов",
+        "en": "Nikolai Drozdov"
+      },
+      {
+        "ru": "Юрий Сенкевич",
+        "en": "Yuri Senkevich"
+      },
+      {
+        "ru": "Сергей Супонев",
+        "en": "Sergei Suponev"
+      },
+      {
+        "ru": "Юрий Николаев",
+        "en": "Yuri Nikolaev"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Передачу придумал и первым вёл кинорежиссёр Александр Згуриди, а Дроздов пришёл в неё только в 1977 году.",
+      "en": "Film director Alexander Zguridi created the show and hosted it first; Drozdov only joined in 1977."
+    },
+    "source": "https://ru.wikipedia.org/wiki/В_мире_животных"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "На что намекало название КВН, когда игра только появилась?",
+      "en": "What did the name KVN hint at when the show first appeared?"
+    },
+    "options": [
+      {
+        "ru": "На телевизор «КВН-49»",
+        "en": "The KVN-49 TV set"
+      },
+      {
+        "ru": "На клуб в МГУ",
+        "en": "A Moscow University club"
+      },
+      {
+        "ru": "На фамилии трёх студентов",
+        "en": "Three students' surnames"
+      },
+      {
+        "ru": "На журнал «Крокодил»",
+        "en": "Krokodil magazine"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Телевизор назвали по фамилиям создателей — Кенигсон, Варшавский, Николаевский, а в народе читали «Купил, включил, не работает».",
+      "en": "The set was named after its designers' initials; people read KVN as \"Bought, switched on, doesn't work\"."
+    },
+    "source": "https://ru.wikipedia.org/wiki/КВН"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Версией какой зарубежной телеигры стала «Своя игра»?",
+      "en": "Svoya Igra is the Russian version of which foreign game show?"
+    },
+    "options": [
+      {
+        "ru": "«Рискуй!» (Jeopardy!)",
+        "en": "Jeopardy!"
+      },
+      {
+        "ru": "«Колесо фортуны»",
+        "en": "Wheel of Fortune"
+      },
+      {
+        "ru": "«Семейная вражда»",
+        "en": "Family Feud"
+      },
+      {
+        "ru": "«Кто хочет стать миллионером?»",
+        "en": "Who Wants to Be a Millionaire?"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Первый выпуск вышел на РТР 7 апреля 1994 года, и поначалу студия почти копировала американскую.",
+      "en": "The first episode aired on RTR on 7 April 1994, in a studio that nearly copied the American set."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Своя_игра"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто вёл первый сезон «Последнего героя» в 2001 году?",
+      "en": "Who hosted the first season of Last Hero in 2001?"
+    },
+    "options": [
+      {
+        "ru": "Сергей Бодров-младший",
+        "en": "Sergei Bodrov Jr."
+      },
+      {
+        "ru": "Владимир Меньшов",
+        "en": "Vladimir Menshov"
+      },
+      {
+        "ru": "Дмитрий Нагиев",
+        "en": "Dmitry Nagiev"
+      },
+      {
+        "ru": "Валдис Пельш",
+        "en": "Valdis Pelsh"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Шестнадцать участников выживали на острове архипелага Бокас-дель-Торо у берегов Панамы.",
+      "en": "Sixteen contestants had to survive on an island of the Bocas del Toro archipelago off Panama."
+    },
+    "source": "https://en.wikipedia.org/wiki/Last_Hero_1"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто вёл детские передачи «Звёздный час» и «Зов джунглей»?",
+      "en": "Who hosted the children's shows Star Hour and Call of the Jungle?"
+    },
+    "options": [
+      {
+        "ru": "Сергей Супонев",
+        "en": "Sergei Suponev"
+      },
+      {
+        "ru": "Юрий Николаев",
+        "en": "Yuri Nikolaev"
+      },
+      {
+        "ru": "Тимур Кизяков",
+        "en": "Timur Kizyakov"
+      },
+      {
+        "ru": "Николай Дроздов",
+        "en": "Nikolai Drozdov"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Супонев не только вёл, но и придумывал детские шоу, а ещё стал автором русского названия «Последнего героя».",
+      "en": "Suponev also created children's shows, and he was the one who gave Last Hero its Russian title."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Супонев,_Сергей_Евгеньевич"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой приз получает лучший игрок серии в «Что? Где? Когда?»?",
+      "en": "What prize does the best player of a series get in What? Where? When?"
+    },
+    "options": [
+      {
+        "ru": "Хрустальную сову",
+        "en": "A crystal owl"
+      },
+      {
+        "ru": "Золотой волчок",
+        "en": "A golden spinning top"
+      },
+      {
+        "ru": "Серебряный конверт",
+        "en": "A silver envelope"
+      },
+      {
+        "ru": "Чёрный ящик",
+        "en": "The black box"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Сова — древний символ мудрости, поэтому она и стала эмблемой игры знатоков.",
+      "en": "The owl is an age old symbol of wisdom, which is why it became the emblem of the experts' game."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Что%3F_Где%3F_Когда%3F"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Почему «Голубой огонёк» назвали голубым?",
+      "en": "Why was the Blue Light show called blue?"
+    },
+    "options": [
+      {
+        "ru": "Свечение чёрно-белого экрана",
+        "en": "The bluish glow of TV screens"
+      },
+      {
+        "ru": "Голубые скатерти в студии",
+        "en": "Blue tablecloths in the studio"
+      },
+      {
+        "ru": "Газовая горелка в студии",
+        "en": "A gas flame in the studio"
+      },
+      {
+        "ru": "Огни Останкинской башни",
+        "en": "The Ostankino tower lights"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Чёрно-белые телевизоры светились голубоватым светом, а сама передача начиналась в 1962 году как «Телевизионное кафе».",
+      "en": "Black and white TVs gave off a bluish light; the show itself began in 1962 as the Television Café."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Голубой_огонёк"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Под какую мелодию шёл прогноз погоды в программе «Время»?",
+      "en": "Which tune played under the weather forecast on the Vremya news?"
+    },
+    "options": [
+      {
+        "ru": "«Манчестер и Ливерпуль»",
+        "en": "Manchester et Liverpool"
+      },
+      {
+        "ru": "«Подмосковные вечера»",
+        "en": "Moscow Nights"
+      },
+      {
+        "ru": "«Калинка»",
+        "en": "Kalinka"
+      },
+      {
+        "ru": "«Полёт шмеля»",
+        "en": "Flight of the Bumblebee"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это французская песня Андре Поппа 1966 года в исполнении оркестра Франка Пурселя — для СССР она стала просто «музыкой погоды».",
+      "en": "It is a 1966 French song by André Popp, played by Franck Pourcel's orchestra; Soviet viewers knew it as the weather tune."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Манчестер_и_Ливерпуль"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Чей оркестр исполнял заставку передачи «В мире животных»?",
+      "en": "Whose orchestra played the theme of the show In the Animal World?"
+    },
+    "options": [
+      {
+        "ru": "Поля Мориа",
+        "en": "Paul Mauriat"
+      },
+      {
+        "ru": "Джеймса Ласта",
+        "en": "James Last"
+      },
+      {
+        "ru": "Эннио Морриконе",
+        "en": "Ennio Morricone"
+      },
+      {
+        "ru": "Эдди Рознера",
+        "en": "Eddie Rosner"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Мелодия «Alouette» — обработка части рождественской кантаты аргентинца Ариэля Рамиреса.",
+      "en": "The tune, Alouette, is an arrangement of part of a Christmas cantata by the Argentine Ariel Ramírez."
+    },
+    "source": "https://ru.wikipedia.org/wiki/В_мире_животных"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кем Юрий Сенкевич плавал на папирусной лодке Тура Хейердала «Ра»?",
+      "en": "What was Yuri Senkevich's job on Thor Heyerdahl's papyrus boat Ra?"
+    },
+    "options": [
+      {
+        "ru": "Врачом",
+        "en": "Ship's doctor"
+      },
+      {
+        "ru": "Коком",
+        "en": "Cook"
+      },
+      {
+        "ru": "Радистом",
+        "en": "Radio operator"
+      },
+      {
+        "ru": "Капитаном",
+        "en": "Captain"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Хейердал взял его, потому что Сенкевич изучал человека в экстремальных условиях и зимовал на антарктической станции «Восток».",
+      "en": "Heyerdahl picked him because he studied people under extreme stress and had wintered at Vostok station in Antarctica."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Сенкевич,_Юрий_Александрович"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто соревновался в самом первом выпуске «Что? Где? Когда?»?",
+      "en": "Who competed in the very first episode of What? Where? When?"
+    },
+    "options": [
+      {
+        "ru": "Две семьи",
+        "en": "Two families"
+      },
+      {
+        "ru": "Две школы",
+        "en": "Two schools"
+      },
+      {
+        "ru": "Две команды КВН",
+        "en": "Two KVN teams"
+      },
+      {
+        "ru": "Космонавты и учёные",
+        "en": "Cosmonauts and scientists"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Ни знатоков, ни волчка ещё не было: семьи Ивановых и Кузнецовых снимали дома, каждую по отдельности.",
+      "en": "No experts and no spinning top yet: the Ivanov and Kuznetsov families were filmed at home, each separately."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Что%3F_Где%3F_Когда%3F"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Чей голос годами звучал за кадром «Что? Где? Когда?», пока имя ведущего держали в секрете?",
+      "en": "Whose voice spoke off screen in What? Where? When? for years while the host's name was kept secret?"
+    },
+    "options": [
+      {
+        "ru": "Владимира Ворошилова",
+        "en": "Vladimir Voroshilov"
+      },
+      {
+        "ru": "Игоря Кириллова",
+        "en": "Igor Kirillov"
+      },
+      {
+        "ru": "Леонида Якубовича",
+        "en": "Leonid Yakubovich"
+      },
+      {
+        "ru": "Владислава Листьева",
+        "en": "Vladislav Listyev"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Его имя не писали в титрах и раскрыли только в 1980 году — после писем зрителей и просьб Эльдара Рязанова.",
+      "en": "His name was left out of the credits and only revealed in 1980, after viewers' letters and requests from Eldar Ryazanov."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Ворошилов,_Владимир_Яковлевич"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто вёл самые первые выпуски «Поля чудес» до Якубовича?",
+      "en": "Who hosted the very first episodes of Field of Miracles, before Yakubovich?"
+    },
+    "options": [
+      {
+        "ru": "Владислав Листьев",
+        "en": "Vladislav Listyev"
+      },
+      {
+        "ru": "Александр Масляков",
+        "en": "Alexander Maslyakov"
+      },
+      {
+        "ru": "Валдис Пельш",
+        "en": "Valdis Pelsh"
+      },
+      {
+        "ru": "Владимир Ворошилов",
+        "en": "Vladimir Voroshilov"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Якубович сначала отказался от предложения и впервые вышел к барабану только в ноябре 1991 года.",
+      "en": "Yakubovich turned the offer down at first and only stepped up to the drum in November 1991."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Поле_чудес"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "За что в 1957 году закрыли «Вечер весёлых вопросов», предшественника КВН?",
+      "en": "Why was Evening of Funny Questions, the forerunner of KVN, shut down in 1957?"
+    },
+    "options": [
+      {
+        "ru": "В студию ворвалась толпа в шубах",
+        "en": "A crowd in fur coats stormed the studio"
+      },
+      {
+        "ru": "Ведущий уснул в прямом эфире",
+        "en": "The host fell asleep live on air"
+      },
+      {
+        "ru": "В студии случился пожар",
+        "en": "A fire broke out in the studio"
+      },
+      {
+        "ru": "Зрители сорвали голосование",
+        "en": "Viewers wrecked a vote"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Летом зрителям пообещали приз за приход в шубе и валенках и с газетой, но про газету забыли сказать — студию взяли штурмом.",
+      "en": "In summer, viewers were promised a prize for coming in winter clothes with a newspaper; nobody mentioned the paper, and crowds stormed in."
+    },
+    "source": "https://ru.wikipedia.org/wiki/КВН"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Где поначалу показывали сюжеты «Ералаша»?",
+      "en": "Where were the Yeralash sketches first shown?"
+    },
+    "options": [
+      {
+        "ru": "В кинотеатрах перед фильмами",
+        "en": "In cinemas before films"
+      },
+      {
+        "ru": "После программы «Время»",
+        "en": "After the Vremya news"
+      },
+      {
+        "ru": "На уроках в школах",
+        "en": "In school lessons"
+      },
+      {
+        "ru": "В пионерлагерях",
+        "en": "At Young Pioneer camps"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "«Ералаш» был киножурналом, как новости перед сеансом, а на телевидение окончательно перебрался только к 1991 году.",
+      "en": "Yeralash was a cinema newsreel shown before the main film and only moved fully to television by 1991."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Ералаш_(киножурнал)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Ремейком какого американского ситкома были «Воронины»?",
+      "en": "Voronin's Family was a remake of which American sitcom?"
+    },
+    "options": [
+      {
+        "ru": "«Все любят Рэймонда»",
+        "en": "Everybody Loves Raymond"
+      },
+      {
+        "ru": "«Женаты и с детьми»",
+        "en": "Married... with Children"
+      },
+      {
+        "ru": "«Няня»",
+        "en": "The Nanny"
+      },
+      {
+        "ru": "«Друзья»",
+        "en": "Friends"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В 2017 году «Воронины» попали в Книгу рекордов Гиннесса как самая долгая адаптация ситкома: серий у них больше, чем у оригинала.",
+      "en": "In 2017 Guinness named it the longest running sitcom adaptation: it has more episodes than the original."
+    },
+    "source": "https://www.guinnessworldrecords.com/news/commercial/2017/10/russian-version-of-everybody-loves-raymond-becomes-the-longest-running-sitcom-ada-498499"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Из какого города комик-труппа «Маски-шоу»?",
+      "en": "Which city does the Maski Show comedy troupe come from?"
+    },
+    "options": [
+      {
+        "ru": "Одесса",
+        "en": "Odessa"
+      },
+      {
+        "ru": "Санкт-Петербург",
+        "en": "Saint Petersburg"
+      },
+      {
+        "ru": "Харьков",
+        "en": "Kharkiv"
+      },
+      {
+        "ru": "Рига",
+        "en": "Riga"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Большинство выпусков сняты как немое кино: актёры почти не говорят, всё держится на музыке и трюках.",
+      "en": "Most episodes were shot like silent films: the actors barely speak, everything runs on music and stunts."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Маски-шоу"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой сектор «Поля чудес» даёт шанс открыть автомобиль одним из шести ключей?",
+      "en": "Which Field of Miracles sector lets a player try to open a car with one of six keys?"
+    },
+    "options": [
+      {
+        "ru": "«Ключ»",
+        "en": "Key"
+      },
+      {
+        "ru": "«Приз»",
+        "en": "Prize"
+      },
+      {
+        "ru": "«Плюс»",
+        "en": "Plus"
+      },
+      {
+        "ru": "«Удвоение»",
+        "en": "Double"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Подходит только один ключ из шести, так что шанс уехать на машине — примерно один к шести.",
+      "en": "Only one of the six keys fits, so the chance of driving the car home is about one in six."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Поле_чудес"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Как в 1999 году называлась российская версия «Кто хочет стать миллионером?»?",
+      "en": "What was the Russian Who Wants to Be a Millionaire? called in 1999?"
+    },
+    "options": [
+      {
+        "ru": "«О, счастливчик!»",
+        "en": "Oh, Lucky Man!"
+      },
+      {
+        "ru": "«Слабое звено»",
+        "en": "The Weakest Link"
+      },
+      {
+        "ru": "«Сто к одному»",
+        "en": "A Hundred to One"
+      },
+      {
+        "ru": "«Алчность»",
+        "en": "Greed"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Её вёл Дмитрий Дибров на НТВ, а в 2001 году игра переехала на ОРТ, сменила название и ведущего — им стал Максим Галкин.",
+      "en": "Dmitry Dibrov hosted it on NTV; in 2001 it moved to ORT with a new name and a new host, Maxim Galkin."
+    },
+    "source": "https://en.wikipedia.org/wiki/Kto_khochet_stat%27_millionerom%3F"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Где в 1986 году прозвучала фраза «В СССР секса нет»?",
+      "en": "Where was the phrase \"There is no sex in the USSR\" heard in 1986?"
+    },
+    "options": [
+      {
+        "ru": "На телемосте Ленинград — Бостон",
+        "en": "A Leningrad to Boston TV link-up"
+      },
+      {
+        "ru": "В игре КВН",
+        "en": "In a KVN game"
+      },
+      {
+        "ru": "В программе «Время»",
+        "en": "On the Vremya news"
+      },
+      {
+        "ru": "В «Кабачке „13 стульев“»",
+        "en": "In Kabachok 13 Chairs"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Вопрос был про рекламу; из зала тут же крикнули «Секс у нас есть, у нас нет рекламы!», а «у нас есть любовь» потонуло в смехе.",
+      "en": "The question was about TV ads; someone shouted \"We have sex, we have no ads!\" and her \"we have love\" was lost."
+    },
+    "source": "https://en.wikipedia.org/wiki/There_is_no_sex_in_the_USSR",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто озвучивал Хрюшу в «Спокойной ночи, малыши!» с самого его появления?",
+      "en": "Who voiced Khryusha on Good Night, Little Ones! from his very first day?"
+    },
+    "options": [
+      {
+        "ru": "Наталья Державина",
+        "en": "Natalya Derzhavina"
+      },
+      {
+        "ru": "Клара Румянова",
+        "en": "Klara Rumyanova"
+      },
+      {
+        "ru": "Валентина Леонтьева",
+        "en": "Valentina Leontyeva"
+      },
+      {
+        "ru": "Людмила Гурченко",
+        "en": "Lyudmila Gurchenko"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Державина играла и в театре, и в кино, но для нескольких поколений детей она прежде всего голос Хрюши.",
+      "en": "Derzhavina acted on stage and in films, but for generations of children she was above all Khryusha's voice."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Спокойной_ночи,_малыши!"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто написал музыку колыбельной «Спят усталые игрушки»?",
+      "en": "Who wrote the music of the lullaby Tired Toys Are Sleeping?"
+    },
+    "options": [
+      {
+        "ru": "Аркадий Островский",
+        "en": "Arkady Ostrovsky"
+      },
+      {
+        "ru": "Владимир Шаинский",
+        "en": "Vladimir Shainsky"
+      },
+      {
+        "ru": "Евгений Крылатов",
+        "en": "Evgeny Krylatov"
+      },
+      {
+        "ru": "Геннадий Гладков",
+        "en": "Gennady Gladkov"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Колыбельная Островского десятилетиями укладывала спать всю страну в конце «Спокойной ночи, малыши!».",
+      "en": "For decades Ostrovsky's lullaby closed Good Night, Little Ones! and sent the whole country's children to bed."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Спокойной_ночи,_малыши!"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто вёл музыкальную передачу «Утренняя почта»?",
+      "en": "Who hosted the music show Morning Mail?"
+    },
+    "options": [
+      {
+        "ru": "Юрий Николаев",
+        "en": "Yuri Nikolaev"
+      },
+      {
+        "ru": "Игорь Кириллов",
+        "en": "Igor Kirillov"
+      },
+      {
+        "ru": "Николай Дроздов",
+        "en": "Nikolai Drozdov"
+      },
+      {
+        "ru": "Леонид Якубович",
+        "en": "Leonid Yakubovich"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Николаев вёл её с первого выпуска в 1974 году и даже вернулся в неё в конце 1990-х.",
+      "en": "Nikolaev hosted it from the first episode in 1974 and even came back to it in the late 1990s."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Утренняя_почта"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что Аллан Чумак в конце 1980-х предлагал зрителям поставить перед телевизором?",
+      "en": "What did Allan Chumak ask viewers to put in front of their TVs in the late 1980s?"
+    },
+    "options": [
+      {
+        "ru": "Банку с водой",
+        "en": "A jar of water"
+      },
+      {
+        "ru": "Зеркало",
+        "en": "A mirror"
+      },
+      {
+        "ru": "Компас",
+        "en": "A compass"
+      },
+      {
+        "ru": "Будильник",
+        "en": "An alarm clock"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Бывший спортивный комментатор молча водил руками и «заряжал» воду и кремы — никакого действия у такой воды, конечно, нет.",
+      "en": "The former sports commentator silently waved his hands to \"charge\" water and creams; the water, of course, did nothing."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Чумак,_Аллан_Владимирович"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году впервые вышел в эфир КВН?",
+      "en": "In which year was KVN first broadcast?"
+    },
+    "answer": 1961,
+    "range": [
+      1945,
+      2005
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Первая игра прошла 8 ноября 1961 года и шла в прямом эфире около полутора часов.",
+      "en": "The first game went out live on 8 November 1961 and ran for about an hour and a half."
+    },
+    "source": "https://ru.wikipedia.org/wiki/КВН"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году вышел первый выпуск «Что? Где? Когда?»?",
+      "en": "In which year did the first episode of What? Where? When? air?"
+    },
+    "answer": 1975,
+    "range": [
+      1960,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Первый выпуск вышел 4 сентября 1975 года, а привычное правило «играем до шести очков» утвердили только в 1982-м.",
+      "en": "The first episode aired on 4 September 1975; the familiar rule of playing to six points only came in 1982."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Что%3F_Где%3F_Когда%3F"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году впервые вышла передача «Спокойной ночи, малыши!»?",
+      "en": "In which year did Good Night, Little Ones! first air?"
+    },
+    "answer": 1964,
+    "range": [
+      1950,
+      2010
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Первый выпуск вышел 1 сентября 1964 года, и в самых ранних выпусках вместо Хрюши со Степашкой были Буратино и заяц Тёпа.",
+      "en": "It first aired on 1 September 1964, and the earliest episodes had Buratino and Tyopa the hare instead of Khryusha and Stepashka."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Спокойной_ночи,_малыши!"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году в СССР началось регулярное цветное телевещание?",
+      "en": "In which year did regular colour TV broadcasting start in the USSR?"
+    },
+    "answer": 1967,
+    "range": [
+      1950,
+      2010
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "1 октября 1967 года цветное вещание по системе SECAM открылось одновременно в Москве и Париже — систему разработали вместе с Францией.",
+      "en": "On 1 October 1967 SECAM colour broadcasts opened in Moscow and Paris at once: the system was shared with France."
+    },
+    "source": "https://ru.wikipedia.org/wiki/SECAM"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько всего серий у сериала «Санта-Барбара»?",
+      "en": "How many episodes did Santa Barbara have in total?"
+    },
+    "answer": 2137,
+    "range": [
+      37,
+      6037
+    ],
+    "step": 50,
+    "tolerance": 500,
+    "unit": {
+      "ru": "серий",
+      "en": "episodes"
+    },
+    "fact": {
+      "ru": "РТР показал только 1824 из них: начал сразу с 217-й серии и остановился на 2040-й, так что финала у нас не видели.",
+      "en": "RTR showed only 1,824: it started at episode 217 and stopped at 2,040, so Russian viewers never saw the ending."
+    },
+    "source": "https://en.wikipedia.org/wiki/Santa_Barbara_(TV_series)"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько серий было в оригинальной версии «Рабыни Изауры»?",
+      "en": "How many episodes did the original version of Slave Isaura have?"
+    },
+    "answer": 100,
+    "range": [
+      0,
+      300
+    ],
+    "step": 5,
+    "tolerance": 40,
+    "unit": {
+      "ru": "серий",
+      "en": "episodes"
+    },
+    "fact": {
+      "ru": "Сто серий по 25 минут советское телевидение перемонтировало в 15 длинных серий по часу с лишним.",
+      "en": "Soviet TV recut the hundred 25 minute episodes into 15 long ones of over an hour each."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Рабыня_Изаура_(телесериал)"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько выпусков «Кабачка „13 стульев“» вышло в эфир?",
+      "en": "How many episodes of Kabachok 13 Chairs were broadcast?"
+    },
+    "answer": 133,
+    "range": [
+      0,
+      400
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "выпусков",
+      "en": "episodes"
+    },
+    "fact": {
+      "ru": "Передача шла с 1966 по 1980 год, а пана Ведущего за это время играли трое: Белявский, Миронов и Державин.",
+      "en": "It ran from 1966 to 1980, and three actors played the Host in turn: Belyavsky, Mironov and Derzhavin."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Кабачок_«13_стульев»"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет Юрий Сенкевич вёл «Клуб путешественников»?",
+      "en": "For how many years did Yuri Senkevich host the Travellers' Club?"
+    },
+    "answer": 30,
+    "range": [
+      0,
+      80
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "Он пришёл на телевидение в 1973 году и вёл передачу до самой смерти в 2003-м.",
+      "en": "He joined TV in 1973 and hosted the show until his death in 2003."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Сенкевич,_Юрий_Александрович"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет КВН не было в эфире после закрытия в 1972 году?",
+      "en": "For how many years was KVN off the air after it was closed in 1972?"
+    },
+    "answer": 14,
+    "range": [
+      0,
+      50
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "Игру вернули только в мае 1986 года, на волне перестройки, и вёл её снова Александр Масляков.",
+      "en": "The show only came back in May 1986, with perestroika, and Alexander Maslyakov hosted it again."
+    },
+    "source": "https://ru.wikipedia.org/wiki/КВН"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько выпусков «Дома-2» показал телеканал ТНТ с 2004 по 2020 год?",
+      "en": "How many episodes of Dom-2 did TNT broadcast from 2004 to 2020?"
+    },
+    "answer": 6077,
+    "range": [
+      1077,
+      16077
+    ],
+    "step": 100,
+    "tolerance": 1500,
+    "unit": {
+      "ru": "выпусков",
+      "en": "episodes"
+    },
+    "fact": {
+      "ru": "Шоу шло каждый день, часто по несколько выпусков, больше 16 лет подряд.",
+      "en": "The show aired every day, often several episodes a day, for more than 16 years."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Дом-2"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году «Ирония судьбы, или С лёгким паром!» впервые вышла в эфир?",
+      "en": "In which year was The Irony of Fate first shown on TV?"
+    },
+    "answer": 1976,
+    "range": [
+      1960,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Премьеру 1 января 1976 года посмотрели около 100 млн человек, а показывать фильм 31 декабря стали каждый год только с 1994-го.",
+      "en": "About 100 million watched the premiere on 1 January 1976, but the yearly 31 December showing only became a tradition in 1994."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Ирония_судьбы,_или_С_лёгким_паром!"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько серий в мексиканском сериале «Богатые тоже плачут»?",
+      "en": "How many episodes does the Mexican series The Rich Also Cry have?"
+    },
+    "answer": 248,
+    "range": [
+      0,
+      800
+    ],
+    "step": 1,
+    "tolerance": 60,
+    "unit": {
+      "ru": "серий",
+      "en": "episodes"
+    },
+    "fact": {
+      "ru": "На ЦТ в 1991 году сериал сняли после восьми серий, решив, что его не будут смотреть, но зрители добились возвращения.",
+      "en": "Soviet TV pulled it after eight episodes in 1991, thinking nobody would watch; viewers demanded it back."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Богатые_тоже_плачут"
+  }
+]

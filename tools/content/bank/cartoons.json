@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где нашли Чебурашку?",
+   "en": "Where was Cheburashka found?"
+  },
+  "options": [
+   {
+    "ru": "В коробке из-под обуви",
+    "en": "In a shoebox"
+   },
+   {
+    "ru": "В ящике с апельсинами",
+    "en": "In a crate of oranges"
+   },
+   {
+    "ru": "В дупле дерева",
+    "en": "In a hollow tree"
+   },
+   {
+    "ru": "В чемодане туриста",
+    "en": "In a tourist's suitcase"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Он наелся апельсинов, уснул в ящике, а при распаковке всё время падал — «чебурахался».",
+   "en": "He ate oranges, fell asleep in the crate and kept toppling over when unpacked, which gave him his name."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cheburashka"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как зовут пса из Простоквашино?",
+   "en": "What is the dog called in Prostokvashino?"
+  },
+  "options": [
+   {
+    "ru": "Бобик",
+    "en": "Bobik"
+   },
+   {
+    "ru": "Тузик",
+    "en": "Tuzik"
+   },
+   {
+    "ru": "Шарик",
+    "en": "Sharik"
+   },
+   {
+    "ru": "Полкан",
+    "en": "Polkan"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Шарика озвучивал Лев Дуров, а кота Матроскина — Олег Табаков.",
+   "en": "Sharik was voiced by Lev Durov, and Matroskin the cat by Oleg Tabakov."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Трое_из_Простоквашино"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что кричит Волк в «Ну, погоди!», когда всё снова пошло не так?",
+   "en": "What does the Wolf shout in Nu, Pogodi! when it all goes wrong again?"
+  },
+  "options": [
+   {
+    "ru": "«Я ещё вернусь!»",
+    "en": "I'll be back!"
+   },
+   {
+    "ru": "«Ну, Заяц, погоди!»",
+    "en": "Just you wait, Hare!"
+   },
+   {
+    "ru": "«Караул, грабят!»",
+    "en": "Help, robbers!"
+   },
+   {
+    "ru": "«Улыбаемся и машем»",
+    "en": "Smile and wave"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Режиссёр хотел, чтобы Волка озвучил Высоцкий, но его не утвердили — роль досталась Папанову.",
+   "en": "The director wanted Vysotsky to voice the Wolf, but he was not approved, so the role went to Papanov."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Ну,_погоди!"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что всегда говорил кот Леопольд хулиганистым мышам?",
+   "en": "What did Leopold the cat always say to the naughty mice?"
+  },
+  "options": [
+   {
+    "ru": "«Ребята, давайте жить дружно!»",
+    "en": "Guys, let's live in peace!"
+   },
+   {
+    "ru": "«Ну, погоди!»",
+    "en": "Just you wait!"
+   },
+   {
+    "ru": "«Я вас всех съем!»",
+    "en": "I'll eat you all!"
+   },
+   {
+    "ru": "«Кто там?»",
+    "en": "Who's there?"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В первой серии Андрей Миронов озвучил вообще всех героев, а в большинстве следующих — Александр Калягин.",
+   "en": "In the first episode Andrei Mironov voiced every character; most later ones were voiced by Alexander Kalyagin."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Приключения_кота_Леопольда"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кем работал крокодил Гена?",
+   "en": "What was Gena the Crocodile's job?"
+  },
+  "options": [
+   {
+    "ru": "Крокодилом в зоопарке",
+    "en": "Crocodile at the zoo"
+   },
+   {
+    "ru": "Почтальоном",
+    "en": "Postman"
+   },
+   {
+    "ru": "Сторожем на стройке",
+    "en": "Building site watchman"
+   },
+   {
+    "ru": "Водителем трамвая",
+    "en": "Tram driver"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Гену озвучил Василий Ливанов — тот самый Шерлок Холмс из советского сериала.",
+   "en": "Gena was voiced by Vasily Livanov, the Soviet screen Sherlock Holmes."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Крокодил_Гена_(мультфильм)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где живёт Шрек в начале первого фильма?",
+   "en": "Where does Shrek live at the start of the first film?"
+  },
+  "options": [
+   {
+    "ru": "В пещере",
+    "en": "In a cave"
+   },
+   {
+    "ru": "На болоте",
+    "en": "In a swamp"
+   },
+   {
+    "ru": "В башне",
+    "en": "In a tower"
+   },
+   {
+    "ru": "Под мостом",
+    "en": "Under a bridge"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "«Шрек» на идише значит «страх, испуг» — в книжке Уильяма Стейга 1990 года он и правда страшный.",
+   "en": "Shrek is Yiddish for 'fear' or 'fright', and in William Steig's 1990 picture book he really is scary."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shrek!"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой полнометражный мультфильм первым сделали целиком на компьютере?",
+   "en": "Which was the first feature-length cartoon made entirely on computers?"
+  },
+  "options": [
+   {
+    "ru": "«Шрек»",
+    "en": "Shrek"
+   },
+   {
+    "ru": "«История игрушек»",
+    "en": "Toy Story"
+   },
+   {
+    "ru": "«Корпорация монстров»",
+    "en": "Monsters, Inc."
+   },
+   {
+    "ru": "«Ледниковый период»",
+    "en": "Ice Age"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В 1995 году компьютеры Pixar работали круглые сутки и выдавали меньше 30 секунд фильма в день.",
+   "en": "In 1995 Pixar's computers ran around the clock and still rendered under 30 seconds of film a day."
+  },
+  "source": "https://en.wikipedia.org/wiki/Toy_Story"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "За чем вечно гоняется белка Скрат в «Ледниковом периоде»?",
+   "en": "What is Scrat the squirrel forever chasing in Ice Age?"
+  },
+  "options": [
+   {
+    "ru": "За шишкой",
+    "en": "A pine cone"
+   },
+   {
+    "ru": "За жёлудем",
+    "en": "An acorn"
+   },
+   {
+    "ru": "За бананом",
+    "en": "A banana"
+   },
+   {
+    "ru": "За куском сыра",
+    "en": "A piece of cheese"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Скрат выдуман, но в 2011 году описали клыкастого древнего зверька из Аргентины — его прозвали «настоящим Скратом».",
+   "en": "Scrat is made up, yet a fanged fossil mammal from Argentina, described in 2011, was nicknamed the real Scrat."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cronopio_dentiacutus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что давало энергию городу в «Корпорации монстров»?",
+   "en": "What powered the city in Monsters, Inc.?"
+  },
+  "options": [
+   {
+    "ru": "Детские крики",
+    "en": "Children's screams"
+   },
+   {
+    "ru": "Молнии",
+    "en": "Lightning"
+   },
+   {
+    "ru": "Вулкан",
+    "en": "A volcano"
+   },
+   {
+    "ru": "Монстры на велотренажёрах",
+    "en": "Monsters on exercise bikes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В финале выясняется, что детский смех даёт в десять раз больше энергии, чем крик.",
+   "en": "In the end it turns out children's laughter is ten times more powerful than screams."
+  },
+  "source": "https://en.wikipedia.org/wiki/Monsters,_Inc."
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что прыгает в заставке студии Pixar?",
+   "en": "What hops across the Pixar logo?"
+  },
+  "options": [
+   {
+    "ru": "Настольная лампа",
+    "en": "A desk lamp"
+   },
+   {
+    "ru": "Мячик",
+    "en": "A ball"
+   },
+   {
+    "ru": "Кролик",
+    "en": "A rabbit"
+   },
+   {
+    "ru": "Чайник",
+    "en": "A kettle"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это Люксо-младший из короткометражки 1986 года — первого компьютерного мультфильма, номинированного на «Оскар».",
+   "en": "It is Luxo Jr. from Pixar's 1986 short, the first computer-animated short ever nominated for an Oscar."
+  },
+  "source": "https://en.wikipedia.org/wiki/Luxo_Jr."
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего сделаны Уоллес и Громит?",
+   "en": "What are Wallace and Gromit made of?"
+  },
+  "options": [
+   {
+    "ru": "Из пластилина",
+    "en": "Modelling clay"
+   },
+   {
+    "ru": "Из дерева",
+    "en": "Wood"
+   },
+   {
+    "ru": "Из папье-маше",
+    "en": "Papier-mache"
+   },
+   {
+    "ru": "Из вязаной шерсти",
+    "en": "Knitted wool"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Громит за все фильмы не сказал ни слова: всё, что он думает, видно по бровям.",
+   "en": "Gromit has never said a word in any film: everything he thinks shows in his brow."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wallace_%26_Gromit"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Во что превратилась варежка в мультфильме «Варежка»?",
+   "en": "What did the mitten turn into in The Mitten?"
+  },
+  "options": [
+   {
+    "ru": "В котёнка",
+    "en": "A kitten"
+   },
+   {
+    "ru": "В щенка",
+    "en": "A puppy"
+   },
+   {
+    "ru": "В зайчонка",
+    "en": "A baby rabbit"
+   },
+   {
+    "ru": "В снеговика",
+    "en": "A snowman"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Этот кукольный мультфильм 1967 года снял Роман Качанов — позже он же снимет Чебурашку и крокодила Гену.",
+   "en": "This 1967 puppet film was made by Roman Kachanov, who later made Cheburashka and Gena the Crocodile."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Варежка_(мультфильм)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кому Ёжик нёс малиновое варенье в «Ёжике в тумане»?",
+   "en": "Who was Hedgehog taking raspberry jam to in Hedgehog in the Fog?"
+  },
+  "options": [
+   {
+    "ru": "Медвежонку",
+    "en": "Bear Cub"
+   },
+   {
+    "ru": "Зайчику",
+    "en": "Little Hare"
+   },
+   {
+    "ru": "Белочке",
+    "en": "Squirrel"
+   },
+   {
+    "ru": "Лисёнку",
+    "en": "Fox Cub"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Туман снимали так: над рисунком кадр за кадром поднимали к камере тончайший лист бумаги.",
+   "en": "The fog was made by lifting a very thin sheet of paper towards the camera, one frame at a time."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hedgehog_in_the_Fog"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто сказал «Щас спою!» в мультфильме «Жил-был пёс»?",
+   "en": "Who says 'I'm gonna sing now!' in Once Upon a Dog?"
+  },
+  "options": [
+   {
+    "ru": "Волк",
+    "en": "The Wolf"
+   },
+   {
+    "ru": "Пёс",
+    "en": "The Dog"
+   },
+   {
+    "ru": "Хозяин",
+    "en": "The owner"
+   },
+   {
+    "ru": "Невеста",
+    "en": "The bride"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Волка озвучил Армен Джигарханян, а Пса — Георгий Бурков.",
+   "en": "The Wolf was voiced by Armen Dzhigarkhanyan and the Dog by Georgy Burkov."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Жил-был_пёс"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как зовут снеговика из «Холодного сердца»?",
+   "en": "What is the snowman called in Frozen?"
+  },
+  "options": [
+   {
+    "ru": "Олаф",
+    "en": "Olaf"
+   },
+   {
+    "ru": "Свен",
+    "en": "Sven"
+   },
+   {
+    "ru": "Ханс",
+    "en": "Hans"
+   },
+   {
+    "ru": "Морозко",
+    "en": "Morozko"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала Эльза была злодейкой, но песня «Отпусти и забудь» так её изменила, что сценарий переписали.",
+   "en": "Elsa was first written as a villain, but the song Let It Go changed her so much that the story was rewritten."
+  },
+  "source": "https://en.wikipedia.org/wiki/Frozen_(2013_film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой мультфильм первым получил «Оскар» как лучший анимационный?",
+   "en": "Which film won the first Oscar for best animated feature?"
+  },
+  "options": [
+   {
+    "ru": "«Король Лев»",
+    "en": "The Lion King"
+   },
+   {
+    "ru": "«Шрек»",
+    "en": "Shrek"
+   },
+   {
+    "ru": "«Ледниковый период»",
+    "en": "Ice Age"
+   },
+   {
+    "ru": "«Красавица и чудовище»",
+    "en": "Beauty and the Beast"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Эту премию придумали только в 2001 году, поэтому «Король Лев» её получить просто не мог.",
+   "en": "The category was only created in 2001, so The Lion King never had the chance."
+  },
+  "source": "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Animated_Feature"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как звали попугая из «Возвращения блудного попугая»?",
+   "en": "What is the parrot called in The Return of the Prodigal Parrot?"
+  },
+  "options": [
+   {
+    "ru": "Гоша",
+    "en": "Gosha"
+   },
+   {
+    "ru": "Кеша",
+    "en": "Kesha"
+   },
+   {
+    "ru": "Кузя",
+    "en": "Kuzya"
+   },
+   {
+    "ru": "Яша",
+    "en": "Yasha"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В первых трёх выпусках Кешу озвучил Геннадий Хазанов.",
+   "en": "In the first three episodes Kesha was voiced by the comedian Gennady Khazanov."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Возвращение_блудного_попугая"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто озвучил Зайца в «Ну, погоди!»?",
+   "en": "Who voiced the Hare in Nu, Pogodi!?"
+  },
+  "options": [
+   {
+    "ru": "Клара Румянова",
+    "en": "Klara Rumyanova"
+   },
+   {
+    "ru": "Георгий Вицин",
+    "en": "Georgy Vitsin"
+   },
+   {
+    "ru": "Олег Табаков",
+    "en": "Oleg Tabakov"
+   },
+   {
+    "ru": "Евгений Леонов",
+    "en": "Yevgeny Leonov"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Та же актриса озвучила и Чебурашку.",
+   "en": "The same actress also gave Cheburashka his voice."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Ну,_погоди!"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто озвучил Винни-Пуха в советском мультфильме?",
+   "en": "Who voiced Winnie the Pooh in the Soviet cartoon?"
+  },
+  "options": [
+   {
+    "ru": "Анатолий Папанов",
+    "en": "Anatoly Papanov"
+   },
+   {
+    "ru": "Евгений Леонов",
+    "en": "Yevgeny Leonov"
+   },
+   {
+    "ru": "Юрий Никулин",
+    "en": "Yuri Nikulin"
+   },
+   {
+    "ru": "Андрей Миронов",
+    "en": "Andrei Mironov"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Режиссёру его голос показался слишком низким, и запись ускорили, прокрутив плёнку быстрее.",
+   "en": "The director found his voice too low, so the recording was sped up by running the tape faster."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Винни-Пух_(мультфильм)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как звали кота в самом первом мультфильме о Томе и Джерри (1940)?",
+   "en": "What was the cat called in the very first Tom and Jerry cartoon (1940)?"
+  },
+  "options": [
+   {
+    "ru": "Джаспер",
+    "en": "Jasper"
+   },
+   {
+    "ru": "Феликс",
+    "en": "Felix"
+   },
+   {
+    "ru": "Сильвестр",
+    "en": "Sylvester"
+   },
+   {
+    "ru": "Оскар",
+    "en": "Oscar"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Позже Том и Джерри взяли семь «Оскаров» — столько же, сколько «Глупые симфонии» Диснея.",
+   "en": "Tom and Jerry went on to win seven Oscars, tying Disney's Silly Symphonies for the most."
+  },
+  "source": "https://en.wikipedia.org/wiki/Puss_Gets_the_Boot"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На какую пьесу Шекспира больше всего похож сюжет «Короля Льва»?",
+   "en": "Which Shakespeare play is The Lion King's plot largely modelled on?"
+  },
+  "options": [
+   {
+    "ru": "«Гамлет»",
+    "en": "Hamlet"
+   },
+   {
+    "ru": "«Отелло»",
+    "en": "Othello"
+   },
+   {
+    "ru": "«Сон в летнюю ночь»",
+    "en": "A Midsummer Night's Dream"
+   },
+   {
+    "ru": "«Укрощение строптивой»",
+    "en": "The Taming of the Shrew"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Дядя убивает короля и занимает трон, а сыну является призрак отца — как у принца Датского.",
+   "en": "An uncle kills the king and takes the throne, and the father's ghost appears to the son, just like in Hamlet."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Lion_King"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь кого назвали Базза Лайтера из «Истории игрушек»?",
+   "en": "Who was Buzz Lightyear named after?"
+  },
+  "options": [
+   {
+    "ru": "Астронавта Базза Олдрина",
+    "en": "Astronaut Buzz Aldrin"
+   },
+   {
+    "ru": "Героя комиксов Бака Роджерса",
+    "en": "Comic hero Buck Rogers"
+   },
+   {
+    "ru": "Пчелы с этикетки мёда",
+    "en": "A bee on a honey jar"
+   },
+   {
+    "ru": "Сына Стива Джобса",
+    "en": "Steve Jobs' son"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До этого героя успели назвать Лунным Ларри и Темпусом из Морфа.",
+   "en": "Before that, the toy had been called Lunar Larry and Tempus from Morph."
+  },
+  "source": "https://en.wikipedia.org/wiki/Toy_Story"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь кого назвали Молнию Маккуина из «Тачек»?",
+   "en": "Who was Lightning McQueen from Cars named after?"
+  },
+  "options": [
+   {
+    "ru": "Актёра Стива Маккуина",
+    "en": "Actor Steve McQueen"
+   },
+   {
+    "ru": "Аниматора Pixar Гленна Маккуина",
+    "en": "Pixar animator Glenn McQueen"
+   },
+   {
+    "ru": "Режиссёра Стива Маккуина",
+    "en": "Director Steve McQueen"
+   },
+   {
+    "ru": "Королевы Англии",
+    "en": "The Queen of England"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Гленн Маккуин умер в 2002 году, и Pixar назвала главного героя в его память.",
+   "en": "Glenn McQueen died in 2002, and Pixar named its hero in his memory."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lightning_McQueen"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что значит код «A113», спрятанный почти во всех мультфильмах Pixar?",
+   "en": "What is the 'A113' hidden in almost every Pixar film?"
+  },
+  "options": [
+   {
+    "ru": "Номер аудитории в институте",
+    "en": "An art school classroom"
+   },
+   {
+    "ru": "Первый пароль Pixar",
+    "en": "Pixar's first password"
+   },
+   {
+    "ru": "Номер дома Уолта Диснея",
+    "en": "Walt Disney's house number"
+   },
+   {
+    "ru": "Код самолёта из «Вверх»",
+    "en": "A plane code from Up"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В этой аудитории CalArts учились аниматоры Джон Лассетер, Брэд Бёрд и Тим Бёртон.",
+   "en": "John Lasseter, Brad Bird and Tim Burton all studied animation in that CalArts classroom."
+  },
+  "source": "https://en.wikipedia.org/wiki/A113"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько шариков, по подсчёту Pixar, нужно, чтобы по-настоящему поднять дом из «Вверх»?",
+   "en": "By Pixar's estimate, how many balloons would really lift the house in Up?"
+  },
+  "options": [
+   {
+    "ru": "Около 2 тысяч",
+    "en": "About 2,000"
+   },
+   {
+    "ru": "Около 200 тысяч",
+    "en": "About 200,000"
+   },
+   {
+    "ru": "Около 23 миллионов",
+    "en": "About 23 million"
+   },
+   {
+    "ru": "Около 2 миллиардов",
+    "en": "About 2 billion"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Столько шариков выглядели бы в кадре точками, поэтому в фильме они крупнее: 20 622 при взлёте.",
+   "en": "That many would look like dots, so the film uses bigger ones: 20,622 balloons at lift-off."
+  },
+  "source": "https://en.wikipedia.org/wiki/Up_(2009_film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что на самом деле случилось бы с Марлином из «В поисках Немо» после гибели его подруги?",
+   "en": "In real life, what would happen to Marlin from Finding Nemo after his mate died?"
+  },
+  "options": [
+   {
+    "ru": "Он стал бы самкой",
+    "en": "He would become female"
+   },
+   {
+    "ru": "Он посинел бы",
+    "en": "He would turn blue"
+   },
+   {
+    "ru": "Он съел бы икру",
+    "en": "He would eat the eggs"
+   },
+   {
+    "ru": "Он перестал бы плавать",
+    "en": "He would stop swimming"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Рыбы-клоуны меняют пол: когда самка пропадает, главный самец превращается в самку.",
+   "en": "Clownfish change sex: when the female disappears, the breeding male turns into a female."
+  },
+  "source": "https://en.wikipedia.org/wiki/Clownfish"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто первым озвучивал Микки Мауса?",
+   "en": "Who was the first voice of Mickey Mouse?"
+  },
+  "options": [
+   {
+    "ru": "Сам Уолт Дисней",
+    "en": "Walt Disney himself"
+   },
+   {
+    "ru": "Чарли Чаплин",
+    "en": "Charlie Chaplin"
+   },
+   {
+    "ru": "Мел Бланк",
+    "en": "Mel Blanc"
+   },
+   {
+    "ru": "Фрэнк Синатра",
+    "en": "Frank Sinatra"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Дисней говорил за Микки почти 20 лет, а имя придумала его жена: сам он хотел назвать мышь Мортимером.",
+   "en": "Disney voiced Mickey for almost 20 years; his wife picked the name, as he had wanted to call the mouse Mortimer."
+  },
+  "source": "https://en.wikipedia.org/wiki/Walt_Disney"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что написано на надгробии Мела Бланка, голоса Багза Банни?",
+   "en": "What is written on Mel Blanc's gravestone?"
+  },
+  "options": [
+   {
+    "ru": "«Вот и всё, ребята!»",
+    "en": "That's all folks"
+   },
+   {
+    "ru": "«Что случилось, док?»",
+    "en": "What's up, Doc?"
+   },
+   {
+    "ru": "«Би-бип!»",
+    "en": "Beep beep!"
+   },
+   {
+    "ru": "«Тише, я охочусь на кроликов»",
+    "en": "Be vewy quiet"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Этой фразой Поросёнок Порки голосом самого Бланка заканчивал мультфильмы Looney Tunes.",
+   "en": "Porky Pig, voiced by Blanc himself, closed the Looney Tunes cartoons with that line."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mel_Blanc"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой «Оскар» получил Дисней за «Белоснежку и семь гномов»?",
+   "en": "What Oscar did Disney get for Snow White?"
+  },
+  "options": [
+   {
+    "ru": "Обычный и семь маленьких",
+    "en": "One big and seven tiny ones"
+   },
+   {
+    "ru": "Золотое яблоко",
+    "en": "A golden apple"
+   },
+   {
+    "ru": "Статуэтку с короной",
+    "en": "A statuette with a crown"
+   },
+   {
+    "ru": "Восемь обычных",
+    "en": "Eight normal ones"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Почётную награду ему вручила 10-летняя Ширли Темпл, а «Белоснежку» до выхода в Голливуде звали «безумием Диснея».",
+   "en": "Ten-year-old Shirley Temple handed it over; before release Hollywood had called Snow White 'Disney's Folly'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Snow_White_and_the_Seven_Dwarfs_(1937_film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой советский мультфильм, по словам Миядзаки, удержал его в профессии аниматора?",
+   "en": "Which Soviet cartoon, Miyazaki says, kept him working in animation?"
+  },
+  "options": [
+   {
+    "ru": "«Снежная королева»",
+    "en": "The Snow Queen"
+   },
+   {
+    "ru": "«Ну, погоди!»",
+    "en": "Nu, Pogodi!"
+   },
+   {
+    "ru": "«Чебурашка»",
+    "en": "Cheburashka"
+   },
+   {
+    "ru": "«Винни-Пух»",
+    "en": "Winnie the Pooh"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Молодым аниматором он думал бросить профессию, но увидел этот фильм 1957 года на показе в студии и остался.",
+   "en": "As a young animator he was thinking of quitting, then saw this 1957 film at a studio screening and stayed."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Snow_Queen_(1957_film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто озвучил Шрека в оригинальной версии?",
+   "en": "Who voiced Shrek in the original version?"
+  },
+  "options": [
+   {
+    "ru": "Майк Майерс",
+    "en": "Mike Myers"
+   },
+   {
+    "ru": "Эдди Мёрфи",
+    "en": "Eddie Murphy"
+   },
+   {
+    "ru": "Джим Керри",
+    "en": "Jim Carrey"
+   },
+   {
+    "ru": "Робин Уильямс",
+    "en": "Robin Williams"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала роль записывал Крис Фарли и успел озвучить большую часть, но в 1997 году он умер.",
+   "en": "Chris Farley recorded most of the part first, but he died in 1997 and the role was recast."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shrek_(film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто пел и за Трубадура, и за Атаманшу в «Бременских музыкантах» (1969)?",
+   "en": "Who sang both the Troubadour and the robber Chieftainess in The Bremen Town Musicians (1969)?"
+  },
+  "options": [
+   {
+    "ru": "Олег Анофриев",
+    "en": "Oleg Anofriev"
+   },
+   {
+    "ru": "Муслим Магомаев",
+    "en": "Muslim Magomayev"
+   },
+   {
+    "ru": "Алла Пугачёва",
+    "en": "Alla Pugacheva"
+   },
+   {
+    "ru": "Михаил Боярский",
+    "en": "Mikhail Boyarsky"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Атаманшу должен был петь Зиновий Гердт, но запись сорвалась — и Анофриев спел её сам.",
+   "en": "Zinovy Gerdt was meant to sing the Chieftainess, but the session fell through, so Anofriev sang her too."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Бременские_музыканты_(мультфильм)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой японский мультфильм первым получил «Оскар» как лучший анимационный?",
+   "en": "Which Japanese film was the first to win the Oscar for best animated feature?"
+  },
+  "options": [
+   {
+    "ru": "«Унесённые призраками»",
+    "en": "Spirited Away"
+   },
+   {
+    "ru": "«Акира»",
+    "en": "Akira"
+   },
+   {
+    "ru": "«Мой сосед Тоторо»",
+    "en": "My Neighbor Totoro"
+   },
+   {
+    "ru": "«Принцесса Мононоке»",
+    "en": "Princess Mononoke"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он же разделил «Золотого медведя» в Берлине с обычным игровым фильмом.",
+   "en": "It also shared the Golden Bear at the Berlin festival with a live-action film."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spirited_Away"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько мартышек оказалось в Удаве из «38 попугаев»?",
+   "en": "How long was the Boa in 38 Parrots, measured in monkeys?"
+  },
+  "options": [
+   {
+    "ru": "Две",
+    "en": "Two"
+   },
+   {
+    "ru": "Пять",
+    "en": "Five"
+   },
+   {
+    "ru": "Двенадцать",
+    "en": "Twelve"
+   },
+   {
+    "ru": "Тридцать восемь",
+    "en": "Thirty-eight"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "А слонёнков — два; Удава озвучил тот же Ливанов, что и крокодила Гену.",
+   "en": "And two baby elephants; the Boa was voiced by Vasily Livanov, who also voiced Gena the Crocodile."
+  },
+  "source": "https://meduza.io/shapito/2017/12/13/skolko-na-samom-dele-martyshek-i-slonyat-v-udave-iz-38-popugaev"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто приёмный отец панды По в «Кунг-фу панде»?",
+   "en": "Who is Po's adoptive father in Kung Fu Panda?"
+  },
+  "options": [
+   {
+    "ru": "Гусь",
+    "en": "A goose"
+   },
+   {
+    "ru": "Журавль",
+    "en": "A crane"
+   },
+   {
+    "ru": "Красная панда",
+    "en": "A red panda"
+   },
+   {
+    "ru": "Черепаха",
+    "en": "A tortoise"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Господин Пинг держит лапшичную, и секретный ингредиент его супа — что никакого секрета нет.",
+   "en": "Mr. Ping runs a noodle shop, and the secret ingredient of his soup is that there is none."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kung_Fu_Panda"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как стала называться яхта капитана Врунгеля, когда отвалились две буквы?",
+   "en": "What did Captain Vrungel's yacht become called after two letters fell off?"
+  },
+  "options": [
+   {
+    "ru": "«Беда»",
+    "en": "Trouble"
+   },
+   {
+    "ru": "«Удача»",
+    "en": "Luck"
+   },
+   {
+    "ru": "«Надежда»",
+    "en": "Hope"
+   },
+   {
+    "ru": "«Чайка»",
+    "en": "Seagull"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала она называлась «Победа»: «Как вы яхту назовёте, так она и поплывёт».",
+   "en": "It was called Victory at first: 'As you name a yacht, so shall it sail.'"
+  },
+  "source": "https://ru.wikipedia.org/wiki/Приключения_капитана_Врунгеля_(мультфильм)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто из героев советского «Острова сокровищ» (1988) в 2022 году стал мировым мемом?",
+   "en": "Which character of the Soviet Treasure Island cartoon (1988) became a worldwide meme in 2022?"
+  },
+  "options": [
+   {
+    "ru": "Доктор Ливси",
+    "en": "Doctor Livesey"
+   },
+   {
+    "ru": "Билли Бонс",
+    "en": "Billy Bones"
+   },
+   {
+    "ru": "Джим Хокинс",
+    "en": "Jim Hawkins"
+   },
+   {
+    "ru": "Попугай Флинта",
+    "en": "Flint's parrot"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Хватило ролика с его бодрой походкой; мультфильм сняли в Киеве у Давида Черкасского.",
+   "en": "A clip of his jaunty walk was enough; the cartoon was made in Kyiv by David Cherkassky."
+  },
+  "source": "https://en.wikipedia.org/wiki/Treasure_Island_(1988_film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой персонаж стал эмблемой японской студии Ghibli?",
+   "en": "Which character became Studio Ghibli's emblem?"
+  },
+  "options": [
+   {
+    "ru": "Тоторо",
+    "en": "Totoro"
+   },
+   {
+    "ru": "Безликий",
+    "en": "No-Face"
+   },
+   {
+    "ru": "Понё",
+    "en": "Ponyo"
+   },
+   {
+    "ru": "Пикачу",
+    "en": "Pikachu"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1988 году «Тоторо» шёл в одном сеансе с «Могилой светлячков» — нежная сказка и тяжёлая драма о войне.",
+   "en": "In 1988 Totoro was shown on a double bill with Grave of the Fireflies, a gentle tale paired with a war drama."
+  },
+  "source": "https://en.wikipedia.org/wiki/My_Neighbor_Totoro"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году вышла первая серия «Ну, погоди!»?",
+   "en": "In which year did the first Nu, Pogodi! episode come out?"
+  },
+  "answer": 1969,
+  "range": [
+   1950,
+   2030
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Шестнадцать классических выпусков снимали 17 лет: последний вышел в 1986 году.",
+   "en": "The 16 classic episodes took 17 years to make: the last came out in 1986."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Ну,_погоди!"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году вышел «Пароходик Вилли» — официальный дебют Микки Мауса?",
+   "en": "In which year did Steamboat Willie, Mickey Mouse's official debut, come out?"
+  },
+  "answer": 1928,
+  "range": [
+   1900,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Это был уже третий фильм с Микки: два первых, немых, не нашли прокатчика.",
+   "en": "It was actually the third Mickey film: the first two, silent ones, found no distributor."
+  },
+  "source": "https://en.wikipedia.org/wiki/Steamboat_Willie"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году основали студию «Союзмультфильм»?",
+   "en": "In which year was the Soyuzmultfilm studio founded?"
+  },
+  "answer": 1936,
+  "range": [
+   1920,
+   2010
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Сначала в названии было ещё «дет»: студию задумывали как детскую, а нынешнее имя она получила в 1937 году.",
+   "en": "At first its name also had 'det', for children: it was planned as a children's studio and got its present name in 1937."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Союзмультфильм"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году происходит действие аниме «Акира», снятого в 1988-м?",
+   "en": "In which year is the anime Akira, made in 1988, set?"
+  },
+  "answer": 2019,
+  "range": [
+   1990,
+   2100
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "В фильме Токио ждёт Олимпиаду-2020, а на стене пишут «Отменить!» — и настоящие Игры 2020 года правда перенесли.",
+   "en": "In the film Tokyo awaits the 2020 Olympics and graffiti says 'Cancel it!'; the real 2020 Games were indeed postponed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Akira_(1988_film)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько щенков родилось у Понго и Пэдди в «101 далматинце» (1961)?",
+   "en": "How many puppies were born to Pongo and Perdita in 101 Dalmatians (1961)?"
+  },
+  "answer": 15,
+  "range": [
+   5,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "щенков",
+   "en": "puppies"
+  },
+  "fact": {
+   "ru": "Остальных Круэлла скупила по магазинам: всего у неё оказалось 99 далматинцев.",
+   "en": "Cruella bought the rest in pet shops, ending up with 99 Dalmatians in all."
+  },
+  "source": "https://en.wikipedia.org/wiki/One_Hundred_and_One_Dalmatians"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько конкурсных «Оскаров» (без почётных) выиграл Уолт Дисней?",
+   "en": "How many competitive Oscars (not honorary ones) did Walt Disney win?"
+  },
+  "answer": 22,
+  "range": [
+   0,
+   80
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "наград",
+   "en": "awards"
+  },
+  "fact": {
+   "ru": "Это рекорд для одного человека, как и его 59 номинаций.",
+   "en": "That is the record for one person, and so are his 59 nominations."
+  },
+  "source": "https://en.wikipedia.org/wiki/Walt_Disney"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько мультфильмов о Томе и Джерри сняли Ханна и Барбера на MGM в 1940–1958 годах?",
+   "en": "How many Tom and Jerry shorts did Hanna and Barbera make at MGM from 1940 to 1958?"
+  },
+  "answer": 114,
+  "range": [
+   10,
+   500
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "фильмов",
+   "en": "shorts"
+  },
+  "fact": {
+   "ru": "Потом они открыли свою студию Hanna-Barbera — она подарила миру «Флинстоунов» и «Скуби-Ду».",
+   "en": "They then founded their own studio, Hanna-Barbera, which gave the world The Flintstones and Scooby-Doo."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tom_and_Jerry"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько тысяч целлулоидных рисунков ушло на «Принцессу Мононоке»?",
+   "en": "How many thousand painted cels went into Princess Mononoke?"
+  },
+  "answer": 144,
+  "range": [
+   10,
+   600
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "тыс.",
+   "en": "thousand"
+  },
+  "fact": {
+   "ru": "Около 80 тысяч из них Миядзаки нарисовал или поправил своей рукой.",
+   "en": "Miyazaki drew or retouched about 80,000 of them with his own hand."
+  },
+  "source": "https://en.wikipedia.org/wiki/Princess_Mononoke"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет люди уже не живут на Земле, когда начинается «ВАЛЛ-И»?",
+   "en": "How many years have humans been away from Earth when WALL-E begins?"
+  },
+  "answer": 700,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 70,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Людей увезли в космос всего на пять лет, пока роботы уберут мусор, но уборку бросили — и отпуск растянулся на века.",
+   "en": "Humans were meant to be away just five years while robots cleaned up, but the cleanup was abandoned."
+  },
+  "source": "https://en.wikipedia.org/wiki/WALL-E"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько тысяч кадров в «Истории игрушек», где почти 80 минут анимации?",
+   "en": "How many thousand frames are in Toy Story, with nearly 80 minutes of animation?"
+  },
+  "answer": 114,
+  "range": [
+   10,
+   600
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "тыс.",
+   "en": "thousand"
+  },
+  "fact": {
+   "ru": "Ровно 114 240, а у одного Вуди было 723 «ниточки» управления, из них 58 — только для рта.",
+   "en": "Exactly 114,240; Woody alone had 723 animation controls, 58 of them just for his mouth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Toy_Story"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько эмоций обсуждали авторы «Головоломки», прежде чем оставить пять?",
+   "en": "How many emotions did the makers of Inside Out consider before settling on five?"
+  },
+  "answer": 27,
+  "range": [
+   5,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "эмоций",
+   "en": "emotions"
+  },
+  "fact": {
+   "ru": "Удивление выкинули, потому что оно слишком похоже на Страх.",
+   "en": "Surprise was cut because it was too similar to Fear."
+  },
+  "source": "https://en.wikipedia.org/wiki/Inside_Out_(2015_film)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет «Унесённые призраками» был самым кассовым фильмом в истории Японии?",
+   "en": "For how many years was Spirited Away the highest-grossing film in Japanese history?"
+  },
+  "answer": 19,
+  "range": [
+   1,
+   60
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Рекорд побил в 2020 году фильм по аниме «Клинок, рассекающий демонов».",
+   "en": "The record fell in 2020 to the Demon Slayer film Mugen Train."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spirited_Away"
+ }
+]

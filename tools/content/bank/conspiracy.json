@@ -1,0 +1,1556 @@
+[
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какого режиссёра конспирологи обвиняют в том, что он снял высадку на Луну в павильоне?",
+      "en": "Which film director do Moon hoax believers say staged the landing in a studio?"
+    },
+    "options": [
+      {
+        "ru": "Стэнли Кубрик",
+        "en": "Stanley Kubrick"
+      },
+      {
+        "ru": "Альфред Хичкок",
+        "en": "Alfred Hitchcock"
+      },
+      {
+        "ru": "Стивен Спилберг",
+        "en": "Steven Spielberg"
+      },
+      {
+        "ru": "Джордж Лукас",
+        "en": "George Lucas"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Повод — его «Космическая одиссея 2001 года» (1968), а на Луне до сих пор стоят зеркала, по которым обсерватории бьют лазером.",
+      "en": "The rumour feeds on his 2001: A Space Odyssey (1968), yet observatories still bounce lasers off mirrors Apollo left on the Moon."
+    },
+    "source": "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Почему флаг на Луне стоит расправленным, хотя ветра там нет?",
+      "en": "Why does the flag on the Moon stand spread out, with no wind there?"
+    },
+    "options": [
+      {
+        "ru": "Вентилятор в студии",
+        "en": "A studio fan"
+      },
+      {
+        "ru": "Горизонтальная штанга",
+        "en": "A horizontal rod"
+      },
+      {
+        "ru": "Магниты в древке",
+        "en": "Magnets in the pole"
+      },
+      {
+        "ru": "Невидимая леска",
+        "en": "A hidden fishing line"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Без воздуха ткань, задетая древком, качалась дольше обычного, а складки от упаковки на фото казались волнами.",
+      "en": "With no air to damp it, the cloth swung longer when the pole was twisted, and packing creases looked like ripples in photos."
+    },
+    "source": "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Для чего на самом деле в 1955 году построили «Зону 51»?",
+      "en": "What was Area 51 actually built for in 1955?"
+    },
+    "options": [
+      {
+        "ru": "Прятать летающую тарелку",
+        "en": "To hide a flying saucer"
+      },
+      {
+        "ru": "Готовить астронавтов",
+        "en": "To train astronauts"
+      },
+      {
+        "ru": "Испытывать самолёт-шпион U-2",
+        "en": "To test the U-2 spy plane"
+      },
+      {
+        "ru": "Укрыть президента от войны",
+        "en": "To shelter the president"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "U-2 летал выше 18 км, и пилоты авиалайнеров, видя на закате блеск его серебристых крыльев, сообщали об НЛО.",
+      "en": "The U-2 flew above 18 km, and airline pilots who saw its silver wings glint at sunset reported UFOs."
+    },
+    "source": "https://en.wikipedia.org/wiki/Area_51",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какую «улику» гибели Пола Маккартни фанаты нашли на обложке альбома Abbey Road?",
+      "en": "What 'clue' to Paul McCartney's death did fans spot on the Abbey Road album cover?"
+    },
+    "options": [
+      {
+        "ru": "Он несёт венок",
+        "en": "He carries a wreath"
+      },
+      {
+        "ru": "Он держит чёрный зонт",
+        "en": "He holds a black umbrella"
+      },
+      {
+        "ru": "Он идёт спиной вперёд",
+        "en": "He walks backwards"
+      },
+      {
+        "ru": "Он идёт босиком",
+        "en": "He walks barefoot"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "В жаркий августовский день 1969 года Пол просто скинул сандалии, а фанаты решили: босиком, как покойник в гробу.",
+      "en": "On a hot August day in 1969 Paul simply kicked off his sandals; fans decided he was barefoot like a corpse in a coffin."
+    },
+    "source": "https://en.wikipedia.org/wiki/Paul_is_dead",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кем, по теории рептилоидов, на самом деле являются многие мировые лидеры?",
+      "en": "According to the reptilian theory, what are many world leaders really?"
+    },
+    "options": [
+      {
+        "ru": "Ящерами в облике людей",
+        "en": "Lizards in human form"
+      },
+      {
+        "ru": "Роботами",
+        "en": "Robots"
+      },
+      {
+        "ru": "Клонами",
+        "en": "Clones"
+      },
+      {
+        "ru": "Вампирами",
+        "en": "Vampires"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "С 1990-х эту теорию раскручивает Дэвид Айк — бывший футбольный вратарь и спортивный ведущий Би-би-си.",
+      "en": "Since the 1990s it has been pushed by David Icke, a former football goalkeeper and BBC sports presenter."
+    },
+    "source": "https://en.wikipedia.org/wiki/Reptilian_conspiracy_theory",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Из чего на самом деле состоят белые следы за самолётами, которые называют «химтрейлами»?",
+      "en": "What are the white trails behind planes, which some call 'chemtrails', really made of?"
+    },
+    "options": [
+      {
+        "ru": "Из сброшенного топлива",
+        "en": "Dumped fuel"
+      },
+      {
+        "ru": "Из кристалликов льда",
+        "en": "Tiny ice crystals"
+      },
+      {
+        "ru": "Из масляного тумана",
+        "en": "Engine oil mist"
+      },
+      {
+        "ru": "Из реагентов от гроз",
+        "en": "Anti-storm chemicals"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Двигатель выбрасывает водяной пар, а на высоте 10 км мороз около −50 °C, и пар тут же замерзает — как дыхание зимой.",
+      "en": "Engines give off water vapour, and at 10 km up it is about −50 °C, so it freezes at once, like your breath on a winter day."
+    },
+    "source": "https://en.wikipedia.org/wiki/Contrail",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "О каком певце говорят, что он инсценировал свою смерть в 1977 году и тайно жив?",
+      "en": "Which singer do some claim faked his death in 1977 and lived on in secret?"
+    },
+    "options": [
+      {
+        "ru": "Фредди Меркьюри",
+        "en": "Freddie Mercury"
+      },
+      {
+        "ru": "Джон Леннон",
+        "en": "John Lennon"
+      },
+      {
+        "ru": "Элвис Пресли",
+        "en": "Elvis Presley"
+      },
+      {
+        "ru": "Джим Моррисон",
+        "en": "Jim Morrison"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "«Улика» — на надгробии Aaron, а во многих документах Aron; но Элвис и сам писал своё второе имя то так, то так.",
+      "en": "The 'clue': his grave says Aaron, many papers say Aron; but Elvis himself used both spellings of his middle name."
+    },
+    "source": "https://en.wikipedia.org/wiki/Elvis_sightings",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Шуточная теория «Птиц не существует» утверждает, что птицы на самом деле —",
+      "en": "The joke theory 'Birds Aren't Real' claims that birds are actually…"
+    },
+    "options": [
+      {
+        "ru": "голограммы",
+        "en": "holograms"
+      },
+      {
+        "ru": "пришельцы",
+        "en": "aliens"
+      },
+      {
+        "ru": "переодетые кошки",
+        "en": "cats in disguise"
+      },
+      {
+        "ru": "дроны для слежки",
+        "en": "spy drones"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Её придумал в 2017 году американец Питер Макиндоу как пародию на конспирологию, а потом честно признался, что это сатира.",
+      "en": "American Peter McIndoe made it up in 2017 to parody conspiracy thinking, and later openly admitted it was satire."
+    },
+    "source": "https://en.wikipedia.org/wiki/Birds_Aren%27t_Real",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Почему на фотографиях с Луны не видно звёзд?",
+      "en": "Why are there no stars in the photos taken on the Moon?"
+    },
+    "options": [
+      {
+        "ru": "Короткая выдержка камер",
+        "en": "Short camera exposures"
+      },
+      {
+        "ru": "Звёзды стёрли ретушью",
+        "en": "Stars were retouched out"
+      },
+      {
+        "ru": "Их скрыла атмосфера Луны",
+        "en": "The Moon's air hid them"
+      },
+      {
+        "ru": "Пыль на объективах",
+        "en": "Dust on the lenses"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Снимали лунным днём с короткой выдержкой; на ночном фото стадиона под прожекторами звёзд тоже не видно.",
+      "en": "Shots were taken in lunar daylight with short exposures; a night photo of a floodlit stadium shows no stars either."
+    },
+    "source": "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Календарь какого народа якобы предсказал конец света 21 декабря 2012 года?",
+      "en": "Which people's calendar supposedly predicted the end of the world on 21 December 2012?"
+    },
+    "options": [
+      {
+        "ru": "Египтян",
+        "en": "The Egyptians"
+      },
+      {
+        "ru": "Майя",
+        "en": "The Maya"
+      },
+      {
+        "ru": "Шумеров",
+        "en": "The Sumerians"
+      },
+      {
+        "ru": "Инков",
+        "en": "The Incas"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "У майя просто заканчивался большой цикл календаря, а в надписях из Паленке упомянута дата в 4772 году.",
+      "en": "The Maya calendar was simply finishing a long cycle, and inscriptions at Palenque mention a date in the year 4772."
+    },
+    "source": "https://en.wikipedia.org/wiki/2012_phenomenon",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что показали чёткие снимки «Лица на Марсе», которое в 1976 году сфотографировал «Викинг-1»?",
+      "en": "What did sharp photos show the 'Face on Mars', snapped by Viking 1 in 1976, to be?"
+    },
+    "options": [
+      {
+        "ru": "Обломки корабля",
+        "en": "A wrecked spaceship"
+      },
+      {
+        "ru": "Пылевую бурю",
+        "en": "A dust storm"
+      },
+      {
+        "ru": "Обычный холм",
+        "en": "An ordinary hill"
+      },
+      {
+        "ru": "Брак плёнки",
+        "en": "A flaw in the film"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Лицо сложили тени при низком солнце, а на снимках 2001 года это просто холм: мозг повсюду ищет лица.",
+      "en": "Low sunlight made face-like shadows; 2001 photos show a plain hill. Our brains love finding faces everywhere."
+    },
+    "source": "https://en.wikipedia.org/wiki/Cydonia_(Mars)",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "«Эффект Манделы» назван так, потому что многие «помнили», будто Нельсон Мандела…",
+      "en": "The 'Mandela effect' got its name because many people 'remembered' that Nelson Mandela…"
+    },
+    "options": [
+      {
+        "ru": "был американским пастором",
+        "en": "was an American pastor"
+      },
+      {
+        "ru": "жил в изгнании в Париже",
+        "en": "lived in exile in Paris"
+      },
+      {
+        "ru": "никогда не сидел в тюрьме",
+        "en": "was never in prison"
+      },
+      {
+        "ru": "умер в тюрьме в 1980-х",
+        "en": "died in prison in the 1980s"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Фиона Брум узнала, что эту «память» делят с ней сотни людей; на деле Манделу освободили в 1990-м, а умер он в 2013-м.",
+      "en": "Fiona Broome found hundreds shared her 'memory'; in fact Mandela was freed in 1990, became president and died in 2013."
+    },
+    "source": "https://en.wikipedia.org/wiki/False_memory",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что, по мнению сторонников плоской Земли, окружает край земного диска?",
+      "en": "What do flat-earthers say surrounds the edge of the Earth's disc?"
+    },
+    "options": [
+      {
+        "ru": "Ледяная стена — Антарктида",
+        "en": "An ice wall: Antarctica"
+      },
+      {
+        "ru": "Водопад в космос",
+        "en": "A waterfall into space"
+      },
+      {
+        "ru": "Огненное кольцо",
+        "en": "A ring of fire"
+      },
+      {
+        "ru": "Соляная пустыня",
+        "en": "A salt desert"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Антарктиду пересекали насквозь: в 1958 году экспедиция Вивиана Фукса прошла её через Южный полюс на тягачах.",
+      "en": "Antarctica has been crossed right through: in 1958 Vivian Fuchs's expedition drove across it via the South Pole."
+    },
+    "source": "https://en.wikipedia.org/wiki/Commonwealth_Trans-Antarctic_Expedition",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что видно, когда корабль уходит за горизонт, и доказывает, что Земля круглая?",
+      "en": "What do you see as a ship sails over the horizon that shows the Earth is round?"
+    },
+    "options": [
+      {
+        "ru": "Он сжимается в точку",
+        "en": "It shrinks to a dot"
+      },
+      {
+        "ru": "Корпус скрывается раньше мачты",
+        "en": "The hull goes before the mast"
+      },
+      {
+        "ru": "Он будто взлетает",
+        "en": "It seems to lift off"
+      },
+      {
+        "ru": "Он синеет",
+        "en": "It turns blue"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Корпус прячется за выпуклостью моря; поднимитесь выше, например на маяк, и горизонт отодвинется.",
+      "en": "The hull hides behind the bulge of the sea; climb higher, say up a lighthouse, and the horizon moves further away."
+    },
+    "source": "https://en.wikipedia.org/wiki/Spherical_Earth",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "В какой нынешней стране был основан настоящий, исторический орден иллюминатов?",
+      "en": "In which present-day country was the real, historical Order of the Illuminati founded?"
+    },
+    "options": [
+      {
+        "ru": "Англия",
+        "en": "England"
+      },
+      {
+        "ru": "Франция",
+        "en": "France"
+      },
+      {
+        "ru": "Германия",
+        "en": "Germany"
+      },
+      {
+        "ru": "США",
+        "en": "The USA"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Его создал баварский профессор права Адам Вейсгаупт, а курфюрст Баварии запретил орден, и через несколько лет тот распался.",
+      "en": "Bavarian law professor Adam Weishaupt founded it; the Elector of Bavaria banned it, and within a few years it fell apart."
+    },
+    "source": "https://en.wikipedia.org/wiki/Illuminati",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Нэнси Лидер, автор страшилки о планете Нибиру, уверяла, что о ней её предупредили…",
+      "en": "Nancy Lieder, who started the Nibiru doomsday tale, said the warning came from…"
+    },
+    "options": [
+      {
+        "ru": "жрецы майя во сне",
+        "en": "Maya priests in a dream"
+      },
+      {
+        "ru": "сотрудник NASA",
+        "en": "a NASA whistleblower"
+      },
+      {
+        "ru": "её собака",
+        "en": "her dog"
+      },
+      {
+        "ru": "пришельцы через имплант",
+        "en": "aliens, via a brain implant"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Нибиру должна была пролететь в 2003 году; когда ничего не случилось, Лидер назвала дату «ложью во спасение».",
+      "en": "Nibiru was due in 2003; when nothing happened, Lieder called the date a white lie told to fool the establishment."
+    },
+    "source": "https://en.wikipedia.org/wiki/Nibiru_cataclysm",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой драматург, по одной версии, инсценировал смерть в 1593 году и писал за Шекспира?",
+      "en": "Which playwright, one theory says, faked his death in 1593 and went on writing as Shakespeare?"
+    },
+    "options": [
+      {
+        "ru": "Кристофер Марло",
+        "en": "Christopher Marlowe"
+      },
+      {
+        "ru": "Бен Джонсон",
+        "en": "Ben Jonson"
+      },
+      {
+        "ru": "Джон Донн",
+        "en": "John Donne"
+      },
+      {
+        "ru": "Мольер",
+        "en": "Molière"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Смерть Марло зафиксировал королевский коронер, а новые пьесы Шекспира выходили ещё лет двадцать после неё.",
+      "en": "A royal coroner's inquest recorded Marlowe's death, and new Shakespeare plays kept coming for some twenty years after."
+    },
+    "source": "https://en.wikipedia.org/wiki/Marlovian_theory_of_Shakespeare_authorship",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой знаменитый учёный был уверен, что пьесы Шекспира написал граф Оксфорд?",
+      "en": "Which famous scientist was convinced the Earl of Oxford wrote Shakespeare's plays?"
+    },
+    "options": [
+      {
+        "ru": "Альберт Эйнштейн",
+        "en": "Albert Einstein"
+      },
+      {
+        "ru": "Зигмунд Фрейд",
+        "en": "Sigmund Freud"
+      },
+      {
+        "ru": "Чарлз Дарвин",
+        "en": "Charles Darwin"
+      },
+      {
+        "ru": "Иван Павлов",
+        "en": "Ivan Pavlov"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Фрейда убедила книга Томаса Луни 1920 года; по-английски фамилия пишется почти как «чокнутый».",
+      "en": "Freud was won over by a 1920 book by J. Thomas Looney; yes, that really was the author's name."
+    },
+    "source": "https://en.wikipedia.org/wiki/Oxfordian_theory_of_Shakespeare_authorship",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В чём главная проблема версии, что пьесы Шекспира написал граф Оксфорд?",
+      "en": "What is the biggest problem with the theory that the Earl of Oxford wrote Shakespeare?"
+    },
+    "options": [
+      {
+        "ru": "Не знал английского",
+        "en": "He spoke no English"
+      },
+      {
+        "ru": "Родился в 1650-х",
+        "en": "He was born in the 1650s"
+      },
+      {
+        "ru": "Умер в 1604-м, до многих пьес",
+        "en": "He died in 1604, too early"
+      },
+      {
+        "ru": "Всю жизнь прожил в Испании",
+        "en": "He lived all his life in Spain"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "«Буря» опирается на рассказы о кораблекрушении 1609 года, а «Макбет» — на Пороховой заговор 1605-го.",
+      "en": "The Tempest draws on accounts of a 1609 shipwreck, and Macbeth on the Gunpowder Plot of 1605."
+    },
+    "source": "https://en.wikipedia.org/wiki/Oxfordian_theory_of_Shakespeare_authorship",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Чьё существование отрицает «гипотеза фантомного времени» Хериберта Илига?",
+      "en": "Whose existence does Heribert Illig's 'phantom time hypothesis' deny?"
+    },
+    "options": [
+      {
+        "ru": "Юлия Цезаря",
+        "en": "Julius Caesar"
+      },
+      {
+        "ru": "Чингисхана",
+        "en": "Genghis Khan"
+      },
+      {
+        "ru": "Жанны д'Арк",
+        "en": "Joan of Arc"
+      },
+      {
+        "ru": "Карла Великого",
+        "en": "Charlemagne"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Илиг объявил выдумкой целую эпоху, но от Карла остались монеты, грамоты, письма и жизнеописание его придворного.",
+      "en": "Illig declared a whole era fake, yet Charlemagne left coins, charters, letters and a biography by a man of his court."
+    },
+    "source": "https://en.wikipedia.org/wiki/Phantom_time_hypothesis",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой российский математик утверждает, что античную историю выдумали в Средние века?",
+      "en": "Which Russian mathematician claims ancient history was invented in the Middle Ages?"
+    },
+    "options": [
+      {
+        "ru": "Анатолий Фоменко",
+        "en": "Anatoly Fomenko"
+      },
+      {
+        "ru": "Григорий Перельман",
+        "en": "Grigori Perelman"
+      },
+      {
+        "ru": "Андрей Колмогоров",
+        "en": "Andrey Kolmogorov"
+      },
+      {
+        "ru": "Николай Лобачевский",
+        "en": "Nikolai Lobachevsky"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Его «Новую хронологию» историки отвергают: радиоуглерод, годичные кольца деревьев и затмения подтверждают обычные даты.",
+      "en": "Historians reject his 'New Chronology': radiocarbon dating, tree rings and eclipses all confirm the usual dates."
+    },
+    "source": "https://en.wikipedia.org/wiki/New_chronology_(Fomenko)",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что, по теории «Великой Тартарии», скрыли от нас историки?",
+      "en": "According to the 'Great Tartaria' theory, what have historians hidden from us?"
+    },
+    "options": [
+      {
+        "ru": "Подземный город под Москвой",
+        "en": "A city under Moscow"
+      },
+      {
+        "ru": "Империю, засыпанную грязью",
+        "en": "An empire buried in mud"
+      },
+      {
+        "ru": "Второе солнце над полюсом",
+        "en": "A second sun over the pole"
+      },
+      {
+        "ru": "Флот пришельцев на Луне",
+        "en": "An alien fleet on the Moon"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "«Тартарией» старые европейские карты звали малоизвестную Азию, а «засыпанные» окна — просто наросший за века грунт.",
+      "en": "Old European maps used 'Tartary' for little-known Asia, and 'buried' windows are just ground that built up over centuries."
+    },
+    "source": "https://en.wikipedia.org/wiki/Tartarian_Empire",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Как критики прозвали пулю, которая, по официальной версии, ранила и Кеннеди, и губернатора Коннэлли?",
+      "en": "What did critics nickname the bullet that, officially, hit both Kennedy and Governor Connally?"
+    },
+    "options": [
+      {
+        "ru": "Серебряная пуля",
+        "en": "The silver bullet"
+      },
+      {
+        "ru": "Золотая пуля",
+        "en": "The golden bullet"
+      },
+      {
+        "ru": "Волшебная пуля",
+        "en": "The magic bullet"
+      },
+      {
+        "ru": "Ледяная пуля",
+        "en": "The ice bullet"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Её путь казался немыслимым, но Коннэлли сидел ниже и ближе к центру машины, и реконструкции показали, что траектория возможна.",
+      "en": "Its path looked impossible, but Connally sat lower and further inboard, and reconstructions showed the path was possible."
+    },
+    "source": "https://en.wikipedia.org/wiki/Single-bullet_theory",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что, по отчёту ВВС США 1994 года, на самом деле упало под Розуэллом?",
+      "en": "What did a 1994 US Air Force report say really came down near Roswell?"
+    },
+    "options": [
+      {
+        "ru": "Трофейная немецкая ракета",
+        "en": "A captured German rocket"
+      },
+      {
+        "ru": "Опытный реактивный самолёт",
+        "en": "An experimental jet"
+      },
+      {
+        "ru": "Обломки спутника",
+        "en": "Satellite debris"
+      },
+      {
+        "ru": "Шпионский аэростат",
+        "en": "A spy balloon"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Секретный проект «Могул» ловил микрофонами в стратосфере советские взрывы, поэтому обломки сначала выдали за метеозонд.",
+      "en": "Secret Project Mogul listened for Soviet bomb tests with microphones high in the sky, so the debris was passed off as a weather balloon."
+    },
+    "source": "https://en.wikipedia.org/wiki/Roswell_incident",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Эмблему какой организации сторонники плоской Земли приводят как «доказательство»?",
+      "en": "Which organisation's emblem do flat-earthers cite as 'proof'?"
+    },
+    "options": [
+      {
+        "ru": "ООН",
+        "en": "The UN"
+      },
+      {
+        "ru": "НАТО",
+        "en": "NATO"
+      },
+      {
+        "ru": "Олимпийского комитета",
+        "en": "The Olympic Committee"
+      },
+      {
+        "ru": "ФИФА",
+        "en": "FIFA"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "На ней карта в азимутальной проекции с центром на Северном полюсе: так шар рисуют плоским, а не наоборот.",
+      "en": "It is an azimuthal map centred on the North Pole: a way to draw a globe flat, not a picture of a flat world."
+    },
+    "source": "https://en.wikipedia.org/wiki/Modern_flat_Earth_beliefs",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой немецкий город, по шуточной теории, на самом деле не существует?",
+      "en": "Which German city, says a joke theory, does not really exist?"
+    },
+    "options": [
+      {
+        "ru": "Гамбург",
+        "en": "Hamburg"
+      },
+      {
+        "ru": "Билефельд",
+        "en": "Bielefeld"
+      },
+      {
+        "ru": "Дрезден",
+        "en": "Dresden"
+      },
+      {
+        "ru": "Бонн",
+        "en": "Bonn"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Шутку запустил студент в 1994 году, а в 2019-м город обещал миллион евро тому, кто докажет, что его нет.",
+      "en": "A student started the joke in 1994; in 2019 the city offered a million euros to anyone who could prove it doesn't exist."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bielefeld_conspiracy",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что, по шуточной теории с Reddit, на самом деле находится на месте Финляндии?",
+      "en": "According to a joke theory from Reddit, what is really where Finland should be?"
+    },
+    "options": [
+      {
+        "ru": "Военная база",
+        "en": "A military base"
+      },
+      {
+        "ru": "Ледник",
+        "en": "A glacier"
+      },
+      {
+        "ru": "Открытое море",
+        "en": "Open sea"
+      },
+      {
+        "ru": "Озеро с пришельцами",
+        "en": "A lake full of aliens"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "По этой шутке Финляндию выдумали Япония и Россия, чтобы тайно ловить там рыбу, а Nokia на самом деле японская.",
+      "en": "The joke says Japan and Russia invented Finland to fish there in secret, and that Nokia is really Japanese."
+    },
+    "source": "https://knowyourmeme.com/memes/finland-does-not-exist",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "По одной теории, вместо «Титаника» затонул его близнец. Как он назывался?",
+      "en": "One theory says Titanic's twin sank in her place. What was the twin called?"
+    },
+    "options": [
+      {
+        "ru": "«Лузитания»",
+        "en": "Lusitania"
+      },
+      {
+        "ru": "«Карпатия»",
+        "en": "Carpathia"
+      },
+      {
+        "ru": "«Мавритания»",
+        "en": "Mauretania"
+      },
+      {
+        "ru": "«Олимпик»",
+        "en": "Olympic"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "На деталях затонувшего судна, даже на лопасти винта, стоит 401 — заводской номер «Титаника»; у «Олимпика» был 400.",
+      "en": "Parts of the wreck, even a propeller blade, bear 401, Titanic's yard number; Olympic's was 400."
+    },
+    "source": "https://en.wikipedia.org/wiki/Titanic_conspiracy_theories",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой натуралист в 1870 году выиграл пари в 500 фунтов у сторонника плоской Земли?",
+      "en": "Which naturalist won a £500 bet against a flat-earther in 1870?"
+    },
+    "options": [
+      {
+        "ru": "Альфред Уоллес",
+        "en": "Alfred Russel Wallace"
+      },
+      {
+        "ru": "Чарлз Дарвин",
+        "en": "Charles Darwin"
+      },
+      {
+        "ru": "Томас Гексли",
+        "en": "Thomas Huxley"
+      },
+      {
+        "ru": "Жюль Верн",
+        "en": "Jules Verne"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Он показал изгиб воды на прямом 10-километровом канале, а проигравший годами звал его вором, пока не сел за клевету.",
+      "en": "He showed the water's curve on a straight 10 km canal, but the loser called him a thief for years, until jailed for libel."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bedford_Level_experiment",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Физик Дэвид Граймс подсчитал, через сколько раскрылась бы подделка высадки на Луну. Его ответ?",
+      "en": "Physicist David Grimes worked out how soon a faked Moon landing would leak. His answer?"
+    },
+    "options": [
+      {
+        "ru": "Лет через 40",
+        "en": "In about 40 years"
+      },
+      {
+        "ru": "Меньше чем через 4 года",
+        "en": "In under 4 years"
+      },
+      {
+        "ru": "Лет через 100",
+        "en": "In about 100 years"
+      },
+      {
+        "ru": "Никогда",
+        "en": "Never"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "В 2016 году он оценил утечки для сотен тысяч сотрудников NASA и получил около 3,7 года: такую тайну не удержать.",
+      "en": "In 2016 he modelled leaks among hundreds of thousands of NASA staff and got about 3.7 years: a secret that big can't hold."
+    },
+    "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0147905",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Через какие пояса, по словам конспирологов, экипажи «Аполлонов» не пролетели бы живыми из-за радиации?",
+      "en": "Which belts, hoaxers say, would have killed Apollo crews with radiation?"
+    },
+    "options": [
+      {
+        "ru": "Пояс Койпера",
+        "en": "The Kuiper belt"
+      },
+      {
+        "ru": "Пояс астероидов",
+        "en": "The asteroid belt"
+      },
+      {
+        "ru": "Пояса Ван Аллена",
+        "en": "The Van Allen belts"
+      },
+      {
+        "ru": "Пояс Ориона",
+        "en": "Orion's Belt"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Корабли проскакивали пояса за пару часов, и средняя доза экипажа была как у жителя Земли примерно за три года.",
+      "en": "The ships crossed the belts in a couple of hours, and the average crew dose was what we get on Earth in about three years."
+    },
+    "source": "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что сделал 72-летний Базз Олдрин в 2002 году, когда конспиролог назвал его трусом и лжецом?",
+      "en": "What did Buzz Aldrin, 72, do in 2002 when a hoax believer called him a coward and a liar?"
+    },
+    "options": [
+      {
+        "ru": "Подал на него в суд",
+        "en": "Sued him"
+      },
+      {
+        "ru": "Вызвал его на дуэль",
+        "en": "Challenged him to a duel"
+      },
+      {
+        "ru": "Подарил ему лунный камень",
+        "en": "Gave him a Moon rock"
+      },
+      {
+        "ru": "Ударил его в челюсть",
+        "en": "Punched him on the jaw"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Барт Сибрел заманил его обманом и тыкал в него Библией, требуя клятвы; обвинений Олдрину так и не предъявили.",
+      "en": "Bart Sibrel had lured him there under false pretences and jabbed him with a Bible; Aldrin was never charged."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bart_Sibrel",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Чем Пол Маккартни ответил в 1993 году на слухи о своей смерти?",
+      "en": "What was Paul McCartney's answer to the rumours of his death in 1993?"
+    },
+    "options": [
+      {
+        "ru": "Альбомом Paul Is Live",
+        "en": "An album called Paul Is Live"
+      },
+      {
+        "ru": "Фильмом о зомби",
+        "en": "A zombie film"
+      },
+      {
+        "ru": "Анализом ДНК в эфире",
+        "en": "A DNA test on live TV"
+      },
+      {
+        "ru": "Своими «похоронами»",
+        "en": "A mock funeral"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Обложка пародирует Abbey Road: Пол в ботинках и с собакой, а номер машины теперь «51 IS» — «жив, и мне 51».",
+      "en": "The cover spoofs Abbey Road: Paul wears shoes, walks a dog, and the car plate now reads '51 IS', alive and 51."
+    },
+    "source": "https://en.wikipedia.org/wiki/Paul_Is_Live",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какую певицу, по слухам, давно подменили двойником по имени Мелисса?",
+      "en": "Which singer was supposedly replaced long ago by a lookalike called Melissa?"
+    },
+    "options": [
+      {
+        "ru": "Бритни Спирс",
+        "en": "Britney Spears"
+      },
+      {
+        "ru": "Аврил Лавин",
+        "en": "Avril Lavigne"
+      },
+      {
+        "ru": "Шакира",
+        "en": "Shakira"
+      },
+      {
+        "ru": "Кристина Агилера",
+        "en": "Christina Aguilera"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Теорию запустил бразильский блог в 2011 году, прямо написав, что хочет показать, как правдоподобно выглядят выдумки.",
+      "en": "A Brazilian blog started it in 2011, openly saying it wanted to show how believable made-up theories can look."
+    },
+    "source": "https://en.wikipedia.org/wiki/Avril_Lavigne_replacement_conspiracy_theory",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что, как многие «помнят», носит человечек из «Монополии», хотя у него этого никогда не было?",
+      "en": "What do many people 'remember' the Monopoly mascot wearing, though he never had one?"
+    },
+    "options": [
+      {
+        "ru": "Цилиндр",
+        "en": "A top hat"
+      },
+      {
+        "ru": "Усы",
+        "en": "A moustache"
+      },
+      {
+        "ru": "Монокль",
+        "en": "A monocle"
+      },
+      {
+        "ru": "Галстук-бабочку",
+        "en": "A bow tie"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Классический «эффект Манделы»: память, видимо, путает его с мистером Арахисом, у которого монокль как раз есть.",
+      "en": "A classic 'Mandela effect': memory probably blends him with Mr. Peanut, who really does wear a monocle."
+    },
+    "source": "https://en.wikipedia.org/wiki/Rich_Uncle_Pennybags",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Глаз над пирамидой на долларе называют знаком иллюминатов. Что это на самом деле?",
+      "en": "The eye above a pyramid on the dollar is called an Illuminati sign. What is it really?"
+    },
+    "options": [
+      {
+        "ru": "Печать иллюминатов",
+        "en": "The Illuminati's seal"
+      },
+      {
+        "ru": "Герб Баварии",
+        "en": "Bavaria's coat of arms"
+      },
+      {
+        "ru": "Логотип первого банка США",
+        "en": "The first US bank's logo"
+      },
+      {
+        "ru": "Христианское Око Провидения",
+        "en": "The Eye of Providence"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Око Провидения рисовали в церквях с эпохи Возрождения, а символом иллюминатов была сова Минервы.",
+      "en": "Churches had used the Eye of Providence since the Renaissance; the Illuminati's symbol was the owl of Minerva."
+    },
+    "source": "https://en.wikipedia.org/wiki/Eye_of_Providence",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что нашли археологи в 2013 году, что опровергает «пирамиды строили пришельцы»?",
+      "en": "What did archaeologists find in 2013 that undercuts 'aliens built the pyramids'?"
+    },
+    "options": [
+      {
+        "ru": "Дневник перевозчика камня",
+        "en": "A stone shipper's logbook"
+      },
+      {
+        "ru": "Чертежи на золотой пластине",
+        "en": "Plans on a gold plate"
+      },
+      {
+        "ru": "Статую зодчего с чертежом",
+        "en": "A statue holding plans"
+      },
+      {
+        "ru": "Скелет великана-строителя",
+        "en": "A giant builder's skeleton"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "«Открытие» приписали настоящему астроному Джону Гершелю, который тогда работал в Южной Африке и поначалу лишь посмеялся.",
+      "en": "The 'discovery' was pinned on real astronomer John Herschel, then working in South Africa, who at first just found it funny."
+    },
+    "source": "https://en.wikipedia.org/wiki/Diary_of_Merer",
+    "kids": false
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кого, по статьям нью-йоркской газеты 1835 года, астрономы разглядели на Луне в телескоп?",
+      "en": "What did a New York newspaper claim in 1835 that astronomers had seen on the Moon?"
+    },
+    "options": [
+      {
+        "ru": "Гигантских пауков",
+        "en": "Giant spiders"
+      },
+      {
+        "ru": "Крылатых людей-нетопырей",
+        "en": "Winged bat-people"
+      },
+      {
+        "ru": "Замёрзших динозавров",
+        "en": "Frozen dinosaurs"
+      },
+      {
+        "ru": "Железных роботов",
+        "en": "Iron robots"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "«Открытие» приписали настоящему астроному Джону Гершелю, который ничего об этом не знал, а тиражи газеты The Sun взлетели.",
+      "en": "The 'discovery' was credited to the real astronomer John Herschel, who knew nothing of it, and The Sun's sales soared."
+    },
+    "source": "https://en.wikipedia.org/wiki/Great_Moon_Hoax",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году под Розуэллом нашли обломки, которые военные сначала назвали «летающим диском»?",
+      "en": "In what year was debris found near Roswell that the military first called a 'flying disc'?"
+    },
+    "answer": 1947,
+    "range": [
+      1930,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 10,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Через день это стало «метеозондом», а знаменитым Розуэлл сделали лишь книги и интервью конца 1970-х.",
+      "en": "A day later it became a 'weather balloon'; Roswell only became famous through books and interviews in the late 1970s."
+    },
+    "source": "https://en.wikipedia.org/wiki/Roswell_incident",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Билл Кейсинг выпустил книгу «Мы никогда не летали на Луну», с которой пошла эта теория?",
+      "en": "In what year did Bill Kaysing put out 'We Never Went to the Moon', the book that launched the hoax idea?"
+    },
+    "answer": 1976,
+    "range": [
+      1960,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Он издал её за свой счёт; когда-то Кейсинг работал в Rocketdyne — фирме, что делала двигатели для ракет «Сатурн».",
+      "en": "He self-published it; Kaysing had once worked at Rocketdyne, the firm that built the Saturn rocket engines."
+    },
+    "source": "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году был основан настоящий орден иллюминатов?",
+      "en": "In what year was the real Order of the Illuminati founded?"
+    },
+    "answer": 1776,
+    "range": [
+      1700,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 20,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "1 мая 1776 года, в год независимости США: на этом совпадении конспирологи построили целые теории.",
+      "en": "On 1 May 1776, the year of US independence: a coincidence conspiracy theorists have built whole stories on."
+    },
+    "source": "https://en.wikipedia.org/wiki/Illuminati",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет истории, по Хериберту Илигу, придумали и вписали в Средневековье?",
+      "en": "How many years of history does Heribert Illig say were invented and slipped into the Middle Ages?"
+    },
+    "answer": 297,
+    "range": [
+      0,
+      1000
+    ],
+    "step": 1,
+    "tolerance": 50,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "По Илигу, 614–911 годов не было; против него — записи о затмениях, монеты и тысячи документов той эпохи.",
+      "en": "Illig says 614 to 911 never happened; eclipse records, coins and thousands of documents from those years say otherwise."
+    },
+    "source": "https://en.wikipedia.org/wiki/Phantom_time_hypothesis",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году ВВС США выпустили доклад «Управляя погодой в 2025 году», с которого пошли «химтрейлы»?",
+      "en": "In what year did the USAF paper 'Owning the Weather in 2025', which fed chemtrail talk, appear?"
+    },
+    "answer": 1996,
+    "range": [
+      1940,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 10,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Это была фантазия о будущем, а в опросе 2016 года 76 из 77 учёных-атмосферников не нашли следов тайного распыления.",
+      "en": "It was speculative futurology; in a 2016 survey, 76 of 77 atmospheric scientists had seen no evidence of secret spraying."
+    },
+    "source": "https://en.wikipedia.org/wiki/Chemtrail_conspiracy_theory",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Плоскоземельцы купили лазерный гироскоп за 20 тысяч долларов. Сколько градусов в час он показал?",
+      "en": "Flat-earthers bought a $20,000 laser gyroscope. What rotation, in degrees per hour, did it detect?"
+    },
+    "answer": 15,
+    "range": [
+      0,
+      90
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "°/ч",
+      "en": "°/h"
+    },
+    "fact": {
+      "ru": "Ровно столько даёт вращение Земли: 360° за 24 часа. Это попало в документальный фильм «За кривой» (2018).",
+      "en": "Exactly Earth's spin, 360° in 24 hours; it was caught on camera in the 2018 documentary Behind the Curve."
+    },
+    "source": "https://en.wikipedia.org/wiki/Modern_flat_Earth_beliefs",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько людей работало над программой «Аполлон» — и всем пришлось бы хранить тайну?",
+      "en": "How many people worked on the Apollo programme, all of whom would have had to keep the secret?"
+    },
+    "answer": 400000,
+    "range": [
+      0,
+      2000000
+    ],
+    "step": 20000,
+    "tolerance": 150000,
+    "unit": {
+      "ru": "человек",
+      "en": "people"
+    },
+    "fact": {
+      "ru": "Около 400 тысяч инженеров, рабочих и учёных из тысяч фирм — и ни один не предъявил доказательств подделки.",
+      "en": "About 400,000 engineers, workers and scientists at thousands of firms, and not one has produced proof of a fake."
+    },
+    "source": "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько килограммов лунного грунта и камней привезли экспедиции «Аполлон»?",
+      "en": "How many kilograms of Moon rock and soil did the Apollo missions bring back?"
+    },
+    "answer": 380,
+    "range": [
+      0,
+      1500
+    ],
+    "step": 5,
+    "tolerance": 100,
+    "unit": {
+      "ru": "кг",
+      "en": "kg"
+    },
+    "fact": {
+      "ru": "Около 380 кг; советские «Луны» доставили всего 301 г, а образцы «Аполлонов» изучали учёные многих стран.",
+      "en": "About 380 kg; the Soviet Luna probes brought back only 301 g, and scientists in many countries have studied Apollo's samples."
+    },
+    "source": "https://en.wikipedia.org/wiki/Moon_rock",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "На сколько миллиметров в год Луна удаляется от Земли? Это меряют лазером по зеркалам «Аполлонов».",
+      "en": "How many millimetres a year does the Moon drift away? It is measured by lasers off Apollo's mirrors."
+    },
+    "answer": 38,
+    "range": [
+      0,
+      200
+    ],
+    "step": 1,
+    "tolerance": 10,
+    "unit": {
+      "ru": "мм",
+      "en": "mm"
+    },
+    "fact": {
+      "ru": "Около 38 мм — примерно с той скоростью, с какой растут ногти; Луну понемногу отталкивают земные приливы.",
+      "en": "About 38 mm, roughly as fast as fingernails grow; Earth's tides keep nudging the Moon outward."
+    },
+    "source": "https://en.wikipedia.org/wiki/Lunar_Laser_Ranging_experiment",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году в Англии основали Общество плоской Земли?",
+      "en": "In what year was the Flat Earth Society founded in England?"
+    },
+    "answer": 1956,
+    "range": [
+      1800,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 15,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Его создал Сэмюэл Шентон в Дувре, а снимки Земли из космоса он назвал обманом: мол, такое фото легко обманет неопытный глаз.",
+      "en": "Samuel Shenton founded it in Dover, and dismissed photos of Earth from space: they could 'fool the untrained eye', he said."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flat_Earth_Society",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Эдмунд Галлей, тот самый, что с кометой, предположил, что Земля внутри полая?",
+      "en": "In what year did Edmond Halley, of comet fame, suggest that the Earth is hollow inside?"
+    },
+    "answer": 1692,
+    "range": [
+      1500,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Так он объяснял странности компаса: внутри две оболочки и ядро, а светящийся газ изнутри даёт полярное сияние.",
+      "en": "He used it to explain odd compass readings: two inner shells and a core, with glowing gas escaping as the aurora."
+    },
+    "source": "https://en.wikipedia.org/wiki/Hollow_Earth",
+    "kids": false
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "На «штурм Зоны 51» в 2019 году записались 2 миллиона. Сколько человек пришли к воротам базы?",
+      "en": "Two million signed up online to 'storm Area 51' in 2019. How many actually turned up at the gates?"
+    },
+    "answer": 150,
+    "range": [
+      0,
+      5000
+    ],
+    "step": 10,
+    "tolerance": 100,
+    "unit": {
+      "ru": "человек",
+      "en": "people"
+    },
+    "fact": {
+      "ru": "Около 150 человек дошли до ворот, и никто не прорвался; ещё примерно 1500 гуляли на фестивалях по соседству.",
+      "en": "About 150 people reached the gates and nobody got in; some 1,500 more went to festivals nearby instead."
+    },
+    "source": "https://en.wikipedia.org/wiki/Storm_Area_51",
+    "kids": false
+  }
+]

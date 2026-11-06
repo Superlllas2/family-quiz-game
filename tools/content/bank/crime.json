@@ -1,0 +1,1556 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой аферист «продал» Эйфелеву башню на металлолом?",
+   "en": "Which con man 'sold' the Eiffel Tower for scrap metal?"
+  },
+  "options": [
+   {
+    "ru": "Фрэнк Абигнейл",
+    "en": "Frank Abagnale"
+   },
+   {
+    "ru": "Виктор Люстиг",
+    "en": "Victor Lustig"
+   },
+   {
+    "ru": "Чарльз Понци",
+    "en": "Charles Ponzi"
+   },
+   {
+    "ru": "Остап Бендер",
+    "en": "Ostap Bender"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В 1925 году он выдал себя за чиновника, а обманутый покупатель постыдился идти в полицию.",
+   "en": "In 1925 he posed as a government official, and the duped buyer was too ashamed to go to the police."
+  },
+  "source": "https://en.wikipedia.org/wiki/Victor_Lustig",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что такое «Розовая пантера» в одноимённом фильме 1963 года?",
+   "en": "What is the 'Pink Panther' in the 1963 film of that name?"
+  },
+  "options": [
+   {
+    "ru": "Огромный алмаз",
+    "en": "A huge diamond"
+   },
+   {
+    "ru": "Кошка принцессы",
+    "en": "The princess's cat"
+   },
+   {
+    "ru": "Кличка вора",
+    "en": "The thief's nickname"
+   },
+   {
+    "ru": "Спортивная машина",
+    "en": "A sports car"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Алмаз назвали так за изъян в виде прыгающей пантеры; мультяшную пантеру нарисовали лишь для титров.",
+   "en": "The diamond is named for a flaw shaped like a leaping panther; the cartoon panther was only drawn for the opening credits."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Pink_Panther_(1963_film)",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда родом Эркюль Пуаро?",
+   "en": "Where does Hercule Poirot come from?"
+  },
+  "options": [
+   {
+    "ru": "Из Франции",
+    "en": "France"
+   },
+   {
+    "ru": "Из Швейцарии",
+    "en": "Switzerland"
+   },
+   {
+    "ru": "Из Нидерландов",
+    "en": "The Netherlands"
+   },
+   {
+    "ru": "Из Бельгии",
+    "en": "Belgium"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Пуаро — единственный вымышленный герой, чей некролог вышел на первой полосе The New York Times.",
+   "en": "Poirot is the only fictional character ever given an obituary on the front page of The New York Times."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hercule_Poirot",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что такое «схема Понци»?",
+   "en": "What is a Ponzi scheme?"
+  },
+  "options": [
+   {
+    "ru": "Ограбление банка через подкоп",
+    "en": "Robbing a bank through a tunnel"
+   },
+   {
+    "ru": "Чеканка фальшивых монет",
+    "en": "Minting fake coins"
+   },
+   {
+    "ru": "Выплаты старым вкладчикам из денег новых",
+    "en": "Paying old investors with new money"
+   },
+   {
+    "ru": "Продажа поддельных картин",
+    "en": "Selling forged paintings"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Понци не был первым, но его бостонская афера 1920 года была так огромна, что схему назвали его именем.",
+   "en": "Ponzi wasn't the first, but his 1920 Boston swindle was so huge that the scheme got his name."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ponzi_scheme",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто главный враг Шерлока Холмса?",
+   "en": "Who is Sherlock Holmes's arch enemy?"
+  },
+  "options": [
+   {
+    "ru": "Доктор Мортимер",
+    "en": "Dr Mortimer"
+   },
+   {
+    "ru": "Профессор Мориарти",
+    "en": "Professor Moriarty"
+   },
+   {
+    "ru": "Инспектор Лестрейд",
+    "en": "Inspector Lestrade"
+   },
+   {
+    "ru": "Миссис Хадсон",
+    "en": "Mrs Hudson"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Мориарти по-настоящему участвует всего в двух рассказах, но стал образцом для всех злых гениев.",
+   "en": "Moriarty plays a real part in only two stories, yet he became the model for every criminal mastermind."
+  },
+  "source": "https://en.wikipedia.org/wiki/Professor_Moriarty",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой фильм рассказывает о молодом аферисте Фрэнке Абигнейле?",
+   "en": "Which film tells the story of young con man Frank Abagnale?"
+  },
+  "options": [
+   {
+    "ru": "«Поймай меня, если сможешь»",
+    "en": "Catch Me If You Can"
+   },
+   {
+    "ru": "«Афера»",
+    "en": "The Sting"
+   },
+   {
+    "ru": "«Одиннадцать друзей Оушена»",
+    "en": "Ocean's Eleven"
+   },
+   {
+    "ru": "«Волк с Уолл-стрит»",
+    "en": "The Wolf of Wall Street"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Позже исследователи выяснили, что многое в его истории выдумано: похоже, аферист обманул и биографов.",
+   "en": "Researchers later found much of his story was invented: the con man seems to have conned his biographers too."
+  },
+  "source": "https://en.wikipedia.org/wiki/Frank_Abagnale",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что в переводе с латыни означает слово «алиби»?",
+   "en": "What does the Latin word 'alibi' mean?"
+  },
+  "options": [
+   {
+    "ru": "Невиновен",
+    "en": "Not guilty"
+   },
+   {
+    "ru": "Я видел",
+    "en": "I saw"
+   },
+   {
+    "ru": "Дома",
+    "en": "At home"
+   },
+   {
+    "ru": "В другом месте",
+    "en": "Elsewhere"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Строго говоря, алиби — не любое оправдание, а доказательство, что в момент преступления ты был в другом месте.",
+   "en": "Strictly, an alibi isn't just any excuse: it's proof you were somewhere else when the crime happened."
+  },
+  "source": "https://en.wiktionary.org/wiki/alibi",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "За что в итоге посадили гангстера Аль Капоне?",
+   "en": "What was gangster Al Capone finally jailed for?"
+  },
+  "options": [
+   {
+    "ru": "За подделку денег",
+    "en": "Counterfeiting"
+   },
+   {
+    "ru": "За кражу картины",
+    "en": "Stealing a painting"
+   },
+   {
+    "ru": "За неуплату налогов",
+    "en": "Tax evasion"
+   },
+   {
+    "ru": "За ограбление банка",
+    "en": "Bank robbery"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Доказать другие преступления не удавалось, и в 1931 году его осудили на 11 лет за налоги.",
+   "en": "Nothing else could be proved, so in 1931 he got 11 years for not paying his taxes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Al_Capone",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что якобы умела «румынская шкатулка», которую продавал аферист Виктор Люстиг?",
+   "en": "What was con man Victor Lustig's 'Rumanian box' supposed to do?"
+  },
+  "options": [
+   {
+    "ru": "Открывать любые сейфы",
+    "en": "Open any safe"
+   },
+   {
+    "ru": "Печатать стодолларовые купюры",
+    "en": "Print $100 bills"
+   },
+   {
+    "ru": "Находить золото",
+    "en": "Find gold"
+   },
+   {
+    "ru": "Предсказывать курс акций",
+    "en": "Predict share prices"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Внутри заранее лежали настоящие купюры, и пока «печать» шла часами, Люстиг успевал скрыться.",
+   "en": "Real bills were hidden inside, and while the 'printing' took hours, Lustig had time to vanish."
+  },
+  "source": "https://en.wikipedia.org/wiki/Victor_Lustig",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько сравнительно честных способов отъёма денег знал Остап Бендер?",
+   "en": "How many relatively honest ways of taking people's money did Ostap Bender know?"
+  },
+  "options": [
+   {
+    "ru": "Четыреста",
+    "en": "Four hundred"
+   },
+   {
+    "ru": "Сорок",
+    "en": "Forty"
+   },
+   {
+    "ru": "Сто",
+    "en": "One hundred"
+   },
+   {
+    "ru": "Тысячу",
+    "en": "A thousand"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ильф и Петров тянули жребий, оставить ли Бендера в живых в финале первого романа, а во втором воскресили его.",
+   "en": "Ilf and Petrov drew lots on whether Bender survived the first novel, then brought him back in the second."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Остап_Бендер",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В какой стране придумали «джентльмена-грабителя» Арсена Люпена?",
+   "en": "Which country did gentleman thief Arsène Lupin come from?"
+  },
+  "options": [
+   {
+    "ru": "В Англии",
+    "en": "England"
+   },
+   {
+    "ru": "В Бельгии",
+    "en": "Belgium"
+   },
+   {
+    "ru": "В Италии",
+    "en": "Italy"
+   },
+   {
+    "ru": "Во Франции",
+    "en": "France"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Морис Леблан свёл Люпена с Шерлоком Холмсом, а после протеста Конан Дойла переименовал его в Херлока Шолмса.",
+   "en": "Maurice Leblanc pitted Lupin against Sherlock Holmes, then renamed him Herlock Sholmes after Conan Doyle objected."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ars%C3%A8ne_Lupin",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Без чего трудно представить комиссара Мегрэ?",
+   "en": "What is Inspector Maigret's trademark?"
+  },
+  "options": [
+   {
+    "ru": "Трость",
+    "en": "A walking cane"
+   },
+   {
+    "ru": "Скрипка",
+    "en": "A violin"
+   },
+   {
+    "ru": "Трубка",
+    "en": "A pipe"
+   },
+   {
+    "ru": "Монокль",
+    "en": "A monocle"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Его автор Жорж Сименон, как и Пуаро, был бельгийцем и написал о Мегрэ 75 романов.",
+   "en": "His author, Georges Simenon, was Belgian like Poirot, and wrote 75 Maigret novels."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jules_Maigret",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто придумал мисс Марпл?",
+   "en": "Who created Miss Marple?"
+  },
+  "options": [
+   {
+    "ru": "Эдгар По",
+    "en": "Edgar Allan Poe"
+   },
+   {
+    "ru": "Агата Кристи",
+    "en": "Agatha Christie"
+   },
+   {
+    "ru": "Артур Конан Дойл",
+    "en": "Arthur Conan Doyle"
+   },
+   {
+    "ru": "Жорж Сименон",
+    "en": "Georges Simenon"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Кристи писала, что мисс Марпл похожа на старушек-подружек её приёмной бабушки, которых она встречала в детстве.",
+   "en": "Christie said Miss Marple was like her step-grandmother's old lady friends, whom she had met as a girl."
+  },
+  "source": "https://en.wikipedia.org/wiki/Miss_Marple",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1971 году угонщик Д. Б. Купер получил выкуп. Как он скрылся?",
+   "en": "In 1971 hijacker D. B. Cooper got his ransom. How did he get away?"
+  },
+  "options": [
+   {
+    "ru": "Прыгнул с парашютом",
+    "en": "He jumped with a parachute"
+   },
+   {
+    "ru": "Уплыл на подлодке",
+    "en": "By submarine"
+   },
+   {
+    "ru": "Уехал на броневике",
+    "en": "In an armoured car"
+   },
+   {
+    "ru": "Улетел на воздушном шаре",
+    "en": "In a hot air balloon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он прыгнул ночью с задней лестницы «Боинга-727»; ФБР так и не нашло его и в 2016 году прекратило активные поиски.",
+   "en": "He jumped from the rear stairs of a Boeing 727 at night; the FBI never found him and shelved the case in 2016."
+  },
+  "source": "https://en.wikipedia.org/wiki/D._B._Cooper",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда взялось выражение «стокгольмский синдром»?",
+   "en": "Where does the term 'Stockholm syndrome' come from?"
+  },
+  "options": [
+   {
+    "ru": "Из опыта психологов",
+    "en": "A psychology experiment"
+   },
+   {
+    "ru": "Из детективного романа",
+    "en": "A detective novel"
+   },
+   {
+    "ru": "Из похищения принцессы",
+    "en": "A princess's kidnapping"
+   },
+   {
+    "ru": "Из ограбления банка с заложниками",
+    "en": "A bank robbery with hostages"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В 1973 году заложники шесть дней провели в стокгольмском банке и в итоге доверяли грабителям больше, чем полиции.",
+   "en": "In 1973 hostages spent six days in a Stockholm bank and ended up trusting the robbers more than the police."
+  },
+  "source": "https://en.wikipedia.org/wiki/Norrmalmstorg_robbery",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто на самом деле украл «Мону Лизу» из Лувра в 1911 году?",
+   "en": "Who actually stole the Mona Lisa from the Louvre in 1911?"
+  },
+  "options": [
+   {
+    "ru": "Директор Лувра",
+    "en": "The Louvre's director"
+   },
+   {
+    "ru": "Английский лорд",
+    "en": "An English lord"
+   },
+   {
+    "ru": "Бывший работник Лувра",
+    "en": "A former Louvre worker"
+   },
+   {
+    "ru": "Пабло Пикассо",
+    "en": "Pablo Picasso"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Пикассо допрашивали, а вынес её Винченцо Перуджа, ставивший на неё стекло; нашлась она во Флоренции.",
+   "en": "Picasso was questioned, but Vincenzo Peruggia, who had fitted its glass case, took it; it turned up in Florence."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vincenzo_Peruggia",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2005 году воры прорыли тоннель в Центробанк Бразилии. Под видом чего они работали?",
+   "en": "In 2005 thieves tunnelled into Brazil's Central Bank. What was their cover business?"
+  },
+  "options": [
+   {
+    "ru": "Зубной кабинет",
+    "en": "A dentist's office"
+   },
+   {
+    "ru": "Фирма искусственных газонов",
+    "en": "An artificial grass firm"
+   },
+   {
+    "ru": "Пекарня",
+    "en": "A bakery"
+   },
+   {
+    "ru": "Автомойка",
+    "en": "A car wash"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Газонная фирма объясняла, куда девается столько земли: тоннель до хранилища тянулся почти на 80 метров.",
+   "en": "A turf business explained all the soil they hauled away: the tunnel to the vault ran nearly 80 metres."
+  },
+  "source": "https://en.mercopress.com/2005/08/09/record-bank-heist-in-brazil-65-million-us-dollars",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Ронни Биггс из «Великого ограбления поезда» бежал из тюрьмы. Где он прожил больше 30 лет?",
+   "en": "Ronnie Biggs of the 1963 Great Train Robbery escaped from prison. Where did he live for over 30 years?"
+  },
+  "options": [
+   {
+    "ru": "В Бразилии",
+    "en": "Brazil"
+   },
+   {
+    "ru": "В Испании",
+    "en": "Spain"
+   },
+   {
+    "ru": "В Канаде",
+    "en": "Canada"
+   },
+   {
+    "ru": "В ЮАР",
+    "en": "South Africa"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Выдать его мешало то, что у Биггса там родился сын, а отца ребёнка-бразильца закон высылать запрещал.",
+   "en": "He couldn't be sent back because he had a Brazilian-born son, and the law protected a Brazilian child's father."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ronnie_Biggs",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране в 1892 году впервые раскрыли преступление по отпечатку пальца?",
+   "en": "Which country first solved a crime with a fingerprint, in 1892?"
+  },
+  "options": [
+   {
+    "ru": "В Англии",
+    "en": "England"
+   },
+   {
+    "ru": "Во Франции",
+    "en": "France"
+   },
+   {
+    "ru": "В США",
+    "en": "The USA"
+   },
+   {
+    "ru": "В Аргентине",
+    "en": "Argentina"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Полицейский Хуан Вучетич уличил убийцу по кровавому отпечатку, а годом раньше завёл первую в мире картотеку отпечатков.",
+   "en": "Officer Juan Vucetich caught the killer by a bloody print; a year earlier he had started the first fingerprint files."
+  },
+  "source": "https://en.wikipedia.org/wiki/Juan_Vucetich",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1906 году немецкий сапожник захватил ратушу с отрядом солдат. Как он заставил их подчиниться?",
+   "en": "In 1906 a German shoemaker seized a town hall with a squad of soldiers. How did he make them obey?"
+  },
+  "options": [
+   {
+    "ru": "Назвался сыном кайзера",
+    "en": "He said he was the Kaiser's son"
+   },
+   {
+    "ru": "Взял их в заложники",
+    "en": "He held them hostage"
+   },
+   {
+    "ru": "Надел капитанский мундир",
+    "en": "He wore a captain's uniform"
+   },
+   {
+    "ru": "Заплатил им",
+    "en": "He paid them"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Солдаты не посмели спорить с капитанским мундиром, который Вильгельм Фойгт собрал по частям у старьёвщиков.",
+   "en": "No soldier dared question a captain's uniform, which Wilhelm Voigt had pieced together from second-hand shops."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wilhelm_Voigt",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему лондонскую полицию называют Скотленд-Ярд?",
+   "en": "Why is the London police called Scotland Yard?"
+  },
+  "options": [
+   {
+    "ru": "В ней служили одни шотландцы",
+    "en": "Only Scots served in it"
+   },
+   {
+    "ru": "По названию улицы у её штаба",
+    "en": "A street by its headquarters"
+   },
+   {
+    "ru": "Её первый глава был шотландцем",
+    "en": "Its first chief was a Scot"
+   },
+   {
+    "ru": "Её основали в Эдинбурге",
+    "en": "It was founded in Edinburgh"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Главный вход первого штаба выходил на улицу Грейт-Скотленд-Ярд, и название улицы перешло на всю полицию.",
+   "en": "The first headquarters' public entrance faced a street called Great Scotland Yard, and the name stuck."
+  },
+  "source": "https://en.wikipedia.org/wiki/Scotland_Yard",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2003 году воры вскрыли «неприступное» хранилище алмазов в Антверпене. Что их выдало?",
+   "en": "In 2003 thieves cracked a 'burglar-proof' diamond vault in Antwerp. What gave them away?"
+  },
+  "options": [
+   {
+    "ru": "Недоеденный бутерброд",
+    "en": "A half-eaten sandwich"
+   },
+   {
+    "ru": "Штраф за парковку",
+    "en": "A parking ticket"
+   },
+   {
+    "ru": "Бриллиант на аукционе",
+    "en": "A diamond sold at auction"
+   },
+   {
+    "ru": "Говорящий попугай",
+    "en": "A talking parrot"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мусор после дела бросили в лесу у трассы Антверпен — Брюссель, а на недоеденном бутерброде с салями нашли ДНК.",
+   "en": "They dumped their rubbish in woods by the Antwerp to Brussels motorway, and a half-eaten salami sandwich held DNA."
+  },
+  "source": "https://en.wikipedia.org/wiki/Antwerp_diamond_heist",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем удивила банда, обчистившая хранилище в лондонском Хаттон-Гардене в 2015 году?",
+   "en": "What was surprising about the gang that raided the Hatton Garden vault in London in 2015?"
+  },
+  "options": [
+   {
+    "ru": "Все были женщинами",
+    "en": "They were all women"
+   },
+   {
+    "ru": "Все были полицейскими",
+    "en": "They were all police officers"
+   },
+   {
+    "ru": "Все были подростками",
+    "en": "They were all teenagers"
+   },
+   {
+    "ru": "Это были пожилые люди",
+    "en": "They were elderly men"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Газеты прозвали их «бриллиантовыми старичками»: главарю Брайану Ридеру было 76, а стену хранилища сверлили на Пасху.",
+   "en": "The press dubbed them the 'Diamond Wheezers': ringleader Brian Reader was 76, and they drilled the vault over Easter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hatton_Garden_safe_deposit_burglary",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На чём якобы зарабатывал Чарльз Понци в 1920 году?",
+   "en": "What did Charles Ponzi claim his 1920 profits came from?"
+  },
+  "options": [
+   {
+    "ru": "На луковицах тюльпанов",
+    "en": "Tulip bulbs"
+   },
+   {
+    "ru": "На акциях железных дорог",
+    "en": "Railway shares"
+   },
+   {
+    "ru": "На почтовых купонах",
+    "en": "Postal reply coupons"
+   },
+   {
+    "ru": "На золотых приисках",
+    "en": "Gold mines"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Купоны, купленные в Италии дёшево, меняли в США на марки подороже — выгода реальная, но копеечная.",
+   "en": "Coupons bought cheaply in Italy could be swapped for pricier US stamps: a real profit, but a tiny one."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles_Ponzi",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1962 году трое бежали с Алькатраса, оставив в кроватях муляжи голов. Из чего они?",
+   "en": "In 1962 three men escaped Alcatraz leaving dummy heads in their beds. What were the heads made of?"
+  },
+  "options": [
+   {
+    "ru": "Глина со двора",
+    "en": "Clay from the yard"
+   },
+   {
+    "ru": "Мыло, бумага и волосы",
+    "en": "Soap, paper and real hair"
+   },
+   {
+    "ru": "Воск от свечей",
+    "en": "Candle wax"
+   },
+   {
+    "ru": "Жёваный хлеб",
+    "en": "Chewed bread"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Волосы взяли с пола тюремной парикмахерской; Фрэнка Морриса и братьев Энглин так и не нашли.",
+   "en": "The hair came from the prison barbershop floor; Frank Morris and the Anglin brothers were never found."
+  },
+  "source": "https://en.wikipedia.org/wiki/June_1962_Alcatraz_escape_attempt",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой знаменитой фразы НЕТ ни в одном рассказе Конан Дойла о Холмсе?",
+   "en": "Which famous line never appears in Conan Doyle's Holmes stories?"
+  },
+  "options": [
+   {
+    "ru": "«Элементарно, Ватсон!»",
+    "en": "'Elementary, my dear Watson'"
+   },
+   {
+    "ru": "«Игра началась!»",
+    "en": "'The game is afoot'"
+   },
+   {
+    "ru": "«Вы были в Афганистане»",
+    "en": "'You have been in Afghanistan'"
+   },
+   {
+    "ru": "«Отбросьте всё невозможное…»",
+    "en": "'Eliminate the impossible...'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Холмс говорит «элементарно» и «дорогой Ватсон», но целиком фраза родилась позже — в пьесах, пародиях и фильмах.",
+   "en": "Holmes says 'Elementary' and 'my dear Watson', but the full line was born later, in plays, parodies and films."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elementary,_my_dear_Watson",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто был прототипом Шерлока Холмса?",
+   "en": "Who was the real model for Sherlock Holmes?"
+  },
+  "options": [
+   {
+    "ru": "Инспектор Скотленд-Ярда",
+    "en": "A Scotland Yard inspector"
+   },
+   {
+    "ru": "Отец Конан Дойла",
+    "en": "Conan Doyle's father"
+   },
+   {
+    "ru": "Бывший взломщик",
+    "en": "A reformed burglar"
+   },
+   {
+    "ru": "Университетский учитель Дойла",
+    "en": "Doyle's university teacher"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Хирург Джозеф Белл из Эдинбурга с одного взгляда угадывал профессию и путешествия пациента.",
+   "en": "Edinburgh surgeon Joseph Bell could tell a patient's job and travels at a glance, just like Holmes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Joseph_Bell",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где Конан Дойл «убил» Шерлока Холмса в 1893 году?",
+   "en": "Where did Conan Doyle 'kill off' Sherlock Holmes in 1893?"
+  },
+  "options": [
+   {
+    "ru": "В Темзе",
+    "en": "In the Thames"
+   },
+   {
+    "ru": "На Эйфелевой башне",
+    "en": "On the Eiffel Tower"
+   },
+   {
+    "ru": "У Рейхенбахского водопада",
+    "en": "At the Reichenbach Falls"
+   },
+   {
+    "ru": "У Ниагарского водопада",
+    "en": "At Niagara Falls"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Дойл устал от героя, но читатели не простили, и через десять лет Холмс вернулся: оказалось, он не падал.",
+   "en": "Doyle was tired of him, but readers never forgave it; a decade later Holmes returned, having never fallen."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Final_Problem",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1926 году сама Агата Кристи пропала на 11 дней. Где её нашли?",
+   "en": "In 1926 Agatha Christie herself vanished for 11 days. Where was she found?"
+  },
+  "options": [
+   {
+    "ru": "В монастыре",
+    "en": "In a convent"
+   },
+   {
+    "ru": "В курортном отеле",
+    "en": "In a spa hotel"
+   },
+   {
+    "ru": "На маяке",
+    "en": "In a lighthouse"
+   },
+   {
+    "ru": "На пароходе в Египет",
+    "en": "On a ship to Egypt"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Она записалась в отеле Харрогейта под фамилией любовницы мужа и даже в автобиографии ни словом об этом не обмолвилась.",
+   "en": "She had checked into a Harrogate hotel under the surname of her husband's mistress, and left it out of her autobiography."
+  },
+  "source": "https://en.wikipedia.org/wiki/Agatha_Christie",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто возглавил первую сыскную полицию Франции — Сюрте — в начале XIX века?",
+   "en": "Who led France's first detective police, the Sûreté, in the early 1800s?"
+  },
+  "options": [
+   {
+    "ru": "Бывший каторжник",
+    "en": "A former convict"
+   },
+   {
+    "ru": "Священник",
+    "en": "A priest"
+   },
+   {
+    "ru": "Отставной судья",
+    "en": "A retired judge"
+   },
+   {
+    "ru": "Отставной генерал",
+    "en": "A retired general"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эжен Франсуа Видок нанимал таких же бывших преступников, а Гюго взял его за образец и для Вальжана, и для Жавера.",
+   "en": "Eugène François Vidocq hired ex-criminals like himself; Victor Hugo drew on him for both Valjean and Javert."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eug%C3%A8ne_Fran%C3%A7ois_Vidocq",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда бежал Анри Шарьер по прозвищу «Мотылёк» (Papillon)?",
+   "en": "Where did Henri Charrière, 'Papillon', escape from?"
+  },
+  "options": [
+   {
+    "ru": "С каторги в Австралии",
+    "en": "A penal colony in Australia"
+   },
+   {
+    "ru": "С каторги на Сахалине",
+    "en": "A penal colony on Sakhalin"
+   },
+   {
+    "ru": "Из тюрьмы на Корсике",
+    "en": "A prison on Corsica"
+   },
+   {
+    "ru": "С каторги во Французской Гвиане",
+    "en": "A penal colony in French Guiana"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Его мемуары стали бестселлером, но исследователи считают, что многие приключения он позаимствовал у других.",
+   "en": "His memoir became a bestseller, but researchers think many of its adventures were borrowed from other convicts."
+  },
+  "source": "https://en.wikipedia.org/wiki/Henri_Charri%C3%A8re",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто написал первый современный детективный рассказ (1841)?",
+   "en": "Who wrote what is called the first modern detective story (1841)?"
+  },
+  "options": [
+   {
+    "ru": "Чарльз Диккенс",
+    "en": "Charles Dickens"
+   },
+   {
+    "ru": "Александр Дюма",
+    "en": "Alexandre Dumas"
+   },
+   {
+    "ru": "Эдгар По",
+    "en": "Edgar Allan Poe"
+   },
+   {
+    "ru": "Артур Конан Дойл",
+    "en": "Arthur Conan Doyle"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "«Убийство на улице Морг» вышло, когда слова «детектив» в английском ещё не было.",
+   "en": "'The Murders in the Rue Morgue' came out before the word 'detective' even existed in English."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Murders_in_the_Rue_Morgue",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем голландец Хан ван Мегерен в 1945 году писал «Вермеера» на глазах у свидетелей?",
+   "en": "Why did Dutchman Han van Meegeren paint a 'Vermeer' in front of witnesses in 1945?"
+  },
+  "options": [
+   {
+    "ru": "Сдать экзамен в академию",
+    "en": "To pass an art academy exam"
+   },
+   {
+    "ru": "Доказать, что он фальсификатор",
+    "en": "To prove he was a forger"
+   },
+   {
+    "ru": "Для съёмок фильма",
+    "en": "For a film shoot"
+   },
+   {
+    "ru": "По заказу королевы",
+    "en": "On the Queen's orders"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Его обвиняли в продаже Герингу национального сокровища, за что грозила смерть; признание в подделке его спасло.",
+   "en": "He was charged with selling a national treasure to Göring, a capital crime; proving it a fake saved him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Han_van_Meegeren",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая старинная афера — прабабушка писем от «нигерийского принца»?",
+   "en": "Which old con is the ancestor of the 'Nigerian prince' email scam?"
+  },
+  "options": [
+   {
+    "ru": "«Испанский узник»",
+    "en": "The Spanish Prisoner"
+   },
+   {
+    "ru": "«Троянский конь»",
+    "en": "The Trojan Horse"
+   },
+   {
+    "ru": "Игра в напёрстки",
+    "en": "The shell game"
+   },
+   {
+    "ru": "«Голландский аукцион»",
+    "en": "The Dutch auction"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Жертве писали, что богатого узника надо выкупить из испанской тюрьмы, и сулили награду. «Принцы» действуют так же: сначала заплати.",
+   "en": "Victims were told a rich prisoner had to be bought out of a Spanish jail, for a big reward. The 'princes' work the same way: you pay first."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spanish_Prisoner",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Куда в итоге отправили на каторгу знаменитую воровку Соньку Золотую Ручку?",
+   "en": "Where was Sonka the Golden Hand, a famous 19th century Russian thief, finally sent to hard labour?"
+  },
+  "options": [
+   {
+    "ru": "На Соловки",
+    "en": "Solovki"
+   },
+   {
+    "ru": "На Колыму",
+    "en": "Kolyma"
+   },
+   {
+    "ru": "В Нерчинск",
+    "en": "Nerchinsk"
+   },
+   {
+    "ru": "На Сахалин",
+    "en": "Sakhalin"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Там с ней говорил Чехов и описал её в книге «Остров Сахалин»; могила в Москве ей лишь приписывается.",
+   "en": "Chekhov met her there and wrote about her in 'Sakhalin Island'; her supposed grave in Moscow is only a legend."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Сонька_Золотая_Ручка",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что в Рождество 1950 года унесли из Вестминстерского аббатства четверо шотландских студентов?",
+   "en": "What did four Scottish students take from Westminster Abbey at Christmas 1950?"
+  },
+  "options": [
+   {
+    "ru": "Колокол аббатства",
+    "en": "The abbey bell"
+   },
+   {
+    "ru": "Мощи святого",
+    "en": "A saint's relics"
+   },
+   {
+    "ru": "Коронационный камень",
+    "en": "The coronation stone"
+   },
+   {
+    "ru": "Королевскую корону",
+    "en": "A royal crown"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Скунский камень при этом раскололся надвое; через четыре месяца его нашли в шотландском аббатстве Арброт.",
+   "en": "The Stone of Scone broke in two during the theft; four months later it turned up at Arbroath Abbey in Scotland."
+  },
+  "source": "https://en.wikipedia.org/wiki/Removal_of_the_Stone_of_Scone_in_1950",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Пилтдаунский человек, «недостающее звено» из Англии (1912), оказался подделкой. Из чего его собрали?",
+   "en": "Piltdown Man, a 1912 'missing link' found in England, was a fake. What was it made of?"
+  },
+  "options": [
+   {
+    "ru": "Череп гориллы и кости овцы",
+    "en": "Gorilla skull, sheep bones"
+   },
+   {
+    "ru": "Череп человека и челюсть орангутана",
+    "en": "Human skull, orangutan jaw"
+   },
+   {
+    "ru": "Кости медведя",
+    "en": "Bear bones"
+   },
+   {
+    "ru": "Гипс и дерево",
+    "en": "Plaster and wood"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Кости подкрасили под старину, а зубы подпилили; подделку разоблачили только в 1953 году.",
+   "en": "The bones were stained to look old and the teeth filed down; the fake was only exposed in 1953."
+  },
+  "source": "https://en.wikipedia.org/wiki/Piltdown_Man",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что стало с Томасом Бладом, который в 1671 году пытался украсть британские королевские регалии?",
+   "en": "What happened to Thomas Blood, who tried to steal the Crown Jewels in 1671?"
+  },
+  "options": [
+   {
+    "ru": "Король его помиловал",
+    "en": "The king pardoned him"
+   },
+   {
+    "ru": "Его казнили",
+    "en": "He was executed"
+   },
+   {
+    "ru": "Его сослали в Америку",
+    "en": "He was exiled to America"
+   },
+   {
+    "ru": "Он умер в Тауэре",
+    "en": "He died in the Tower"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Карл II не только простил его, но и пожаловал ему земли в Ирландии — почему, до сих пор спорят.",
+   "en": "Charles II not only pardoned him but gave him land in Ireland; historians still argue about why."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thomas_Blood",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году Шерлок Холмс впервые появился в печати?",
+   "en": "In what year did Sherlock Holmes first appear in print?"
+  },
+  "answer": 1887,
+  "range": [
+   1830,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "«Этюд в багровых тонах» вышел в рождественском альманахе; Дойлу заплатили за все права лишь 25 фунтов.",
+   "en": "A Study in Scarlet came out in a Christmas annual; Doyle was paid just £25 for all the rights."
+  },
+  "source": "https://en.wikipedia.org/wiki/A_Study_in_Scarlet",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько всего произведений о Холмсе написал Конан Дойл?",
+   "en": "How many Sherlock Holmes stories and novels did Conan Doyle write in all?"
+  },
+  "answer": 60,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "",
+   "en": ""
+  },
+  "fact": {
+   "ru": "Четыре романа и 56 рассказов; почти все ведёт Ватсон, и лишь два рассказывает сам Холмс.",
+   "en": "Four novels and 56 short stories; Watson tells nearly all of them, and Holmes himself narrates just two."
+  },
+  "source": "https://en.wikipedia.org/wiki/Canon_of_Sherlock_Holmes",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько читателей, по преданию, отказались от журнала Strand после «гибели» Холмса?",
+   "en": "How many readers reportedly cancelled The Strand Magazine after Holmes 'died'?"
+  },
+  "answer": 20000,
+  "range": [
+   0,
+   100000
+  ],
+  "step": 1000,
+  "tolerance": 8000,
+  "unit": {
+   "ru": "человек",
+   "en": "readers"
+  },
+  "fact": {
+   "ru": "Журнал едва выжил, а его сотрудники с тех пор называли смерть Холмса «ужасным событием».",
+   "en": "The magazine barely survived, and its staff ever after called Holmes's death 'the dreadful event'."
+  },
+  "source": "https://sherlockholmes.stanford.edu/print_issue12.html",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько месяцев «Мона Лиза» пропадала после кражи 1911 года?",
+   "en": "For how many months was the Mona Lisa missing after the 1911 theft?"
+  },
+  "answer": 28,
+  "range": [
+   0,
+   120
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "мес.",
+   "en": "months"
+  },
+  "fact": {
+   "ru": "До кражи картину знали в основном знатоки, а газетная шумиха вокруг пропажи сделала её самой известной в мире.",
+   "en": "Before the theft it was mostly known to art lovers; the press frenzy over its loss made it world famous."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mona_Lisa",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какую прибыль за 45 дней обещал вкладчикам Чарльз Понци?",
+   "en": "What return did Charles Ponzi promise investors in just 45 days?"
+  },
+  "answer": 50,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "Банки тогда платили около 5% в год; позже Понци выслали в Италию, и он умер в бедности в Рио-де-Жанейро.",
+   "en": "Banks then paid about 5% a year; Ponzi was later deported to Italy and died poor in Rio de Janeiro."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles_Ponzi",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На сколько лет осудили Берни Мейдоффа в 2009 году за крупнейшую известную финансовую пирамиду?",
+   "en": "How many years in prison did Bernie Madoff get in 2009 for the largest known Ponzi scheme?"
+  },
+  "answer": 150,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 40,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Срок был символическим: он умер в тюрьме в 2021 году, отсидев около 12 лет.",
+   "en": "The sentence was symbolic: he died in prison in 2021, having served about 12 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bernie_Madoff",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько заключённых пытались бежать с Алькатраса за 29 лет работы тюрьмы?",
+   "en": "How many prisoners tried to escape Alcatraz in its 29 years as a prison?"
+  },
+  "answer": 34,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "человек",
+   "en": "prisoners"
+  },
+  "fact": {
+   "ru": "Почти всех поймали; официально не сбежал никто, но пятерых так и не нашли.",
+   "en": "Almost all were caught; officially nobody made it, but five were never found."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_Alcatraz_escape_attempts",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько произведений искусства похитили из бостонского музея Изабеллы Стюарт Гарднер в 1990 году?",
+   "en": "How many artworks were stolen from Boston's Isabella Stewart Gardner Museum in 1990?"
+  },
+  "answer": 13,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "работ",
+   "en": "works"
+  },
+  "fact": {
+   "ru": "Охранники сами впустили двух мужчин в полицейской форме; среди украденного были Рембрандт и Вермеер.",
+   "en": "The guards let in two men dressed as police; the haul included a Rembrandt and a Vermeer."
+  },
+  "source": "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На сколько лет в 1964 году осудили семерых участников «Великого ограбления поезда»?",
+   "en": "How many years in prison did seven of the Great Train Robbers get in 1964?"
+  },
+  "answer": 30,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Это больше, чем тогда давали многим убийцам: банда унесла из почтового вагона около 2,6 миллиона фунтов.",
+   "en": "That was more than many murderers got at the time: the gang took about £2.6 million from a mail train."
+  },
+  "source": "https://en.wikipedia.org/wiki/Great_Train_Robbery_(1963)",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В скольких романах появляется Эркюль Пуаро?",
+   "en": "In how many novels does Hercule Poirot appear?"
+  },
+  "answer": 33,
+  "range": [
+   0,
+   150
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "романов",
+   "en": "novels"
+  },
+  "fact": {
+   "ru": "Кристи называла его «невыносимым», но писала о нём больше полувека, с 1920 по 1975 год.",
+   "en": "Christie called him 'insufferable', yet kept writing about him for over half a century, from 1920 to 1975."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hercule_Poirot",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько золотых слитков унесли грабители со склада Brink's-Mat у Хитроу в 1983 году?",
+   "en": "How many gold bars did robbers take from the Brink's-Mat warehouse at Heathrow in 1983?"
+  },
+  "answer": 6800,
+  "range": [
+   0,
+   20000
+  ],
+  "step": 100,
+  "tolerance": 2000,
+  "unit": {
+   "ru": "слитков",
+   "en": "bars"
+  },
+  "fact": {
+   "ru": "Около трёх тонн золота, а грабители рассчитывали примерно на миллион фунтов в испанских песетах.",
+   "en": "About three tonnes of gold, when the robbers expected around £1 million in Spanish pesetas."
+  },
+  "source": "https://en.wikipedia.org/wiki/Brink%27s-Mat_robbery",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какой выкуп в долларах получил угонщик Д. Б. Купер в 1971 году?",
+   "en": "How many dollars of ransom did hijacker D. B. Cooper get in 1971?"
+  },
+  "answer": 200000,
+  "range": [
+   0,
+   1000000
+  ],
+  "step": 10000,
+  "tolerance": 70000,
+  "unit": {
+   "ru": "долларов",
+   "en": "dollars"
+  },
+  "fact": {
+   "ru": "В 1980 году мальчик нашёл на берегу реки 5800 долларов из тех купюр; остальные так и не всплыли.",
+   "en": "In 1980 a boy found $5,800 of the marked bills on a riverbank; the rest has never been seen."
+  },
+  "source": "https://en.wikipedia.org/wiki/D._B._Cooper",
+  "kids": false
+ }
+]

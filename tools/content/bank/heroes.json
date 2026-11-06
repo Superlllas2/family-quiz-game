@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как называется родная планета Супермена?",
+   "en": "What is the name of Superman's home planet?"
+  },
+  "options": [
+   {
+    "ru": "Криптон",
+    "en": "Krypton"
+   },
+   {
+    "ru": "Вулкан",
+    "en": "Vulcan"
+   },
+   {
+    "ru": "Татуин",
+    "en": "Tatooine"
+   },
+   {
+    "ru": "Галлифрей",
+    "en": "Gallifrey"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Младенца Кал-Эла отправили на Землю в ракете за миг до гибели Криптона, а силу ему даёт наше жёлтое Солнце.",
+   "en": "Baby Kal-El was rocketed to Earth just before Krypton exploded, and it is our yellow Sun that gives him his powers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Krypton_(comics)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой город защищает Бэтмен?",
+   "en": "Which city does Batman protect?"
+  },
+  "options": [
+   {
+    "ru": "Метрополис",
+    "en": "Metropolis"
+   },
+   {
+    "ru": "Готэм",
+    "en": "Gotham City"
+   },
+   {
+    "ru": "Стар-Сити",
+    "en": "Star City"
+   },
+   {
+    "ru": "Централ-Сити",
+    "en": "Central City"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Готэм — старое шутливое прозвище Нью-Йорка, которое в 1807 году придумал писатель Вашингтон Ирвинг.",
+   "en": "Gotham was an old joking nickname for New York, coined by the writer Washington Irving in 1807."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gotham_City"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как зовут Человека-паука, когда он снимает маску?",
+   "en": "What is Spider-Man's name when the mask comes off?"
+  },
+  "options": [
+   {
+    "ru": "Брюс Уэйн",
+    "en": "Bruce Wayne"
+   },
+   {
+    "ru": "Кларк Кент",
+    "en": "Clark Kent"
+   },
+   {
+    "ru": "Питер Паркер",
+    "en": "Peter Parker"
+   },
+   {
+    "ru": "Тони Старк",
+    "en": "Tony Stark"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Стэн Ли нарочно давал героям имя и фамилию на одну букву — Питер Паркер, Брюс Бэннер, Рид Ричардс, — чтобы самому их не путать.",
+   "en": "Stan Lee gave heroes matching initials, Peter Parker, Bruce Banner, Reed Richards, because he was bad at remembering names."
+  },
+  "source": "https://www.npr.org/transcripts/667476595"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Каким несокрушимым металлом покрыт скелет Росомахи?",
+   "en": "Which unbreakable metal coats Wolverine's skeleton?"
+  },
+  "options": [
+   {
+    "ru": "Вибраниум",
+    "en": "Vibranium"
+   },
+   {
+    "ru": "Адамантий",
+    "en": "Adamantium"
+   },
+   {
+    "ru": "Мифрил",
+    "en": "Mithril"
+   },
+   {
+    "ru": "Криптонит",
+    "en": "Kryptonite"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Название — от греческого «адамас», «несокрушимый»: от того же слова произошло английское diamond, «алмаз».",
+   "en": "The name comes from the Greek adamas, unbreakable, the same word that gave English the word diamond."
+  },
+  "source": "https://en.wikipedia.org/wiki/Adamantium"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое оружие Чудо-женщины заставляет говорить правду?",
+   "en": "Which of Wonder Woman's weapons forces people to tell the truth?"
+  },
+  "options": [
+   {
+    "ru": "Браслеты",
+    "en": "Her bracelets"
+   },
+   {
+    "ru": "Золотое лассо",
+    "en": "Her golden lasso"
+   },
+   {
+    "ru": "Диадема",
+    "en": "Her tiara"
+   },
+   {
+    "ru": "Меч",
+    "en": "Her sword"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Её создатель, психолог Уильям Марстон, работал над одним из первых детекторов лжи.",
+   "en": "Her creator, the psychologist William Moulton Marston, worked on an early version of the lie detector."
+  },
+  "source": "https://en.wikipedia.org/wiki/William_Moulton_Marston"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как зовут белого фокстерьера, верного друга Тинтина?",
+   "en": "What is the name of Tintin's loyal white fox terrier?"
+  },
+  "options": [
+   {
+    "ru": "Идефикс",
+    "en": "Dogmatix"
+   },
+   {
+    "ru": "Милу",
+    "en": "Snowy"
+   },
+   {
+    "ru": "Снупи",
+    "en": "Snoopy"
+   },
+   {
+    "ru": "Плуто",
+    "en": "Pluto"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Эрже назвал пса в честь своей первой девушки Мари-Луизы, которую близкие звали Милу.",
+   "en": "In French he is Milou, the nickname of Hergé's first girlfriend, Marie-Louise."
+  },
+  "source": "https://en.wikipedia.org/wiki/Snowy_(character)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему Обеликсу нельзя пить волшебное зелье?",
+   "en": "Why is Obelix not allowed to drink the magic potion?"
+  },
+  "options": [
+   {
+    "ru": "Упал в котёл в детстве",
+    "en": "He fell in it as a baby"
+   },
+   {
+    "ru": "Аллергия на омелу",
+    "en": "He's allergic to mistletoe"
+   },
+   {
+    "ru": "Он на диете",
+    "en": "He's on a diet"
+   },
+   {
+    "ru": "Поссорился с друидом",
+    "en": "He fell out with the druid"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Малышом он свалился в котёл, и зелье подействовало на него навсегда, так что лишний глоток ему ни к чему.",
+   "en": "As a baby he fell into the cauldron and the potion's effect became permanent, so he never needs another sip."
+  },
+  "source": "https://en.wikipedia.org/wiki/Obelix"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как зовут дворецкого Бэтмена?",
+   "en": "What is the name of Batman's butler?"
+  },
+  "options": [
+   {
+    "ru": "Джарвис",
+    "en": "Jarvis"
+   },
+   {
+    "ru": "Дживс",
+    "en": "Jeeves"
+   },
+   {
+    "ru": "Альфред",
+    "en": "Alfred"
+   },
+   {
+    "ru": "Бэрримор",
+    "en": "Barrymore"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "В 1943 году Альфред был толстяком без усов, но его похудили и дали усики, чтобы он походил на актёра из киносериала.",
+   "en": "In 1943 Alfred was plump and clean shaven; the comics slimmed him and added a moustache to match the actor in the film serial."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alfred_Pennyworth"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой страной правит Чёрная Пантера?",
+   "en": "Which country does Black Panther rule?"
+  },
+  "options": [
+   {
+    "ru": "Латверия",
+    "en": "Latveria"
+   },
+   {
+    "ru": "Соковия",
+    "en": "Sokovia"
+   },
+   {
+    "ru": "Ваканда",
+    "en": "Wakanda"
+   },
+   {
+    "ru": "Дженовия",
+    "en": "Genovia"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Появившись в 1966 году, Чёрная Пантера стал первым чернокожим супергероем у крупных американских издательств комиксов.",
+   "en": "Created in 1966 by Stan Lee and Jack Kirby, he was the first Black superhero in mainstream American comics."
+  },
+  "source": "https://en.wikipedia.org/wiki/Black_Panther_(character)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какую часть всего живого стёр щелчок Таноса в «Войне бесконечности»?",
+   "en": "What share of all life did Thanos wipe out with his snap in Infinity War?"
+  },
+  "options": [
+   {
+    "ru": "Треть",
+    "en": "A third"
+   },
+   {
+    "ru": "Половину",
+    "en": "Half"
+   },
+   {
+    "ru": "Четверть",
+    "en": "A quarter"
+   },
+   {
+    "ru": "Девять десятых",
+    "en": "Nine tenths"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В комиксе 1991 года «Перчатка бесконечности» он сделал то же самое, чтобы впечатлить саму Смерть, в которую был влюблён.",
+   "en": "In the 1991 comic The Infinity Gauntlet he did the same to impress Death herself, with whom he was in love."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thanos"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто в оригинале озвучивает Грута, который говорит только «Я есть Грут»?",
+   "en": "Who voices Groot, whose only line is \"I am Groot\"?"
+  },
+  "options": [
+   {
+    "ru": "Дуэйн Джонсон",
+    "en": "Dwayne Johnson"
+   },
+   {
+    "ru": "Вин Дизель",
+    "en": "Vin Diesel"
+   },
+   {
+    "ru": "Джейсон Стэйтем",
+    "en": "Jason Statham"
+   },
+   {
+    "ru": "Арнольд Шварценеггер",
+    "en": "Arnold Schwarzenegger"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Дизель каждый раз вкладывает в одну фразу новый смысл, а в некоторых зарубежных дубляжах озвучил Грута сам.",
+   "en": "Diesel gives the one line a new meaning every time, and he even voiced Groot in some foreign-language dubs."
+  },
+  "source": "https://en.wikipedia.org/wiki/Groot"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое блюдо больше всего любит кот Гарфилд?",
+   "en": "What is Garfield the cat's favourite food?"
+  },
+  "options": [
+   {
+    "ru": "Пицца",
+    "en": "Pizza"
+   },
+   {
+    "ru": "Лазанья",
+    "en": "Lasagna"
+   },
+   {
+    "ru": "Суши",
+    "en": "Sushi"
+   },
+   {
+    "ru": "Понедельники",
+    "en": "Mondays"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Джим Дэвис придумал кота, заметив, что в газетах полно комиксов про собак, а для любителей кошек нет ни одного.",
+   "en": "Jim Davis created a cat because the funny pages were full of dogs and had no strip for cat owners."
+  },
+  "source": "https://en.wikipedia.org/wiki/Garfield"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой породы пёс Снупи?",
+   "en": "What breed of dog is Snoopy?"
+  },
+  "options": [
+   {
+    "ru": "Такса",
+    "en": "Dachshund"
+   },
+   {
+    "ru": "Пудель",
+    "en": "Poodle"
+   },
+   {
+    "ru": "Бигль",
+    "en": "Beagle"
+   },
+   {
+    "ru": "Бультерьер",
+    "en": "Bull terrier"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "В 1969 году лунный модуль «Аполлона-10» назвали «Снупи», а командный модуль — «Чарли Браун».",
+   "en": "In 1969 Apollo 10's lunar module was named Snoopy and its command module Charlie Brown."
+  },
+  "source": "https://en.wikipedia.org/wiki/Apollo_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Каким фильмом в 2008 году началась киновселенная Marvel?",
+   "en": "Which 2008 film launched the Marvel Cinematic Universe?"
+  },
+  "options": [
+   {
+    "ru": "«Железный человек»",
+    "en": "Iron Man"
+   },
+   {
+    "ru": "«Тор»",
+    "en": "Thor"
+   },
+   {
+    "ru": "«Мстители»",
+    "en": "The Avengers"
+   },
+   {
+    "ru": "«Первый мститель»",
+    "en": "Captain America"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Права на Человека-паука и Людей Икс Marvel раньше отдала другим студиям, поэтому вселенную строили на Мстителях, которые остались у неё.",
+   "en": "Marvel had licensed Spider-Man and the X-Men to other studios, so it built its universe around the Avengers, whose rights it still held."
+  },
+  "source": "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В каком направлении читают японскую мангу?",
+   "en": "Which way do you read a Japanese manga?"
+  },
+  "options": [
+   {
+    "ru": "Слева направо",
+    "en": "Left to right"
+   },
+   {
+    "ru": "Справа налево",
+    "en": "Right to left"
+   },
+   {
+    "ru": "Снизу вверх",
+    "en": "Bottom to top"
+   },
+   {
+    "ru": "По спирали от центра",
+    "en": "In a spiral from the middle"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Японский текст традиционно пишут столбцами справа налево, поэтому манга начинается с той страницы, которую мы считаем последней.",
+   "en": "Japanese is traditionally written in columns from right to left, so a manga starts at what we would call the back."
+  },
+  "source": "https://en.wikipedia.org/wiki/Manga"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какого цвета был Халк в самом первом комиксе 1962 года?",
+   "en": "What colour was the Hulk in his very first comic in 1962?"
+  },
+  "options": [
+   {
+    "ru": "Серого",
+    "en": "Grey"
+   },
+   {
+    "ru": "Красного",
+    "en": "Red"
+   },
+   {
+    "ru": "Синего",
+    "en": "Blue"
+   },
+   {
+    "ru": "В горошек",
+    "en": "Polka dot"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Типография не могла добиться ровного серого — Халк выходил то светлым, то тёмным, — и Стэн Ли перекрасил его в зелёный.",
+   "en": "The printer could not keep the grey even from page to page, so Stan Lee switched him to green."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hulk"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где впервые появился криптонит, слабость Супермена?",
+   "en": "Where did kryptonite, Superman's weakness, first appear?"
+  },
+  "options": [
+   {
+    "ru": "В радиосериале",
+    "en": "In a radio serial"
+   },
+   {
+    "ru": "В комиксе",
+    "en": "In a comic book"
+   },
+   {
+    "ru": "В кинофильме",
+    "en": "In a feature film"
+   },
+   {
+    "ru": "В мультфильме",
+    "en": "In a cartoon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он впервые появился в радиосериале о Супермене в 1943 году, а в комиксы попал только в 1949-м.",
+   "en": "It first appeared in the Superman radio serial in 1943 and only reached the comics in 1949."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kryptonite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где впервые появилась Харли Квинн, подружка Джокера?",
+   "en": "Where did Harley Quinn, the Joker's sidekick, first appear?"
+  },
+  "options": [
+   {
+    "ru": "В мультсериале",
+    "en": "In a cartoon series"
+   },
+   {
+    "ru": "В комиксе 1940-х",
+    "en": "In a 1940s comic"
+   },
+   {
+    "ru": "В фильме 1989 года",
+    "en": "In the 1989 film"
+   },
+   {
+    "ru": "В видеоигре",
+    "en": "In a video game"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её придумали в 1992 году для мультсериала о Бэтмене как эпизодическую помощницу Джокера, но она так понравилась, что попала в комиксы.",
+   "en": "She was created for Batman: The Animated Series in 1992 as a minor henchwoman and proved so popular that the comics took her in."
+  },
+  "source": "https://en.wikipedia.org/wiki/Harley_Quinn"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто, кроме Тора, поднимает молот Мьёльнир в «Мстителях: Финал»?",
+   "en": "In Avengers: Endgame, who besides Thor lifts the hammer Mjolnir?"
+  },
+  "options": [
+   {
+    "ru": "Железный человек",
+    "en": "Iron Man"
+   },
+   {
+    "ru": "Капитан Америка",
+    "en": "Captain America"
+   },
+   {
+    "ru": "Халк",
+    "en": "The Hulk"
+   },
+   {
+    "ru": "Чёрная вдова",
+    "en": "Black Widow"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Намёк был ещё в «Эре Альтрона»: на вечеринке молот чуть сдвинулся под рукой Стива, и Тор заметно напрягся.",
+   "en": "It was hinted in Age of Ultron, when the hammer budged slightly for Steve at the party and Thor looked worried."
+  },
+  "source": "https://en.wikipedia.org/wiki/Avengers:_Endgame"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем занимался Тони Старк, когда в 1963 году впервые появился в комиксах?",
+   "en": "What was Tony Stark's business when he first appeared in comics in 1963?"
+  },
+  "options": [
+   {
+    "ru": "Делал оружие",
+    "en": "He made weapons"
+   },
+   {
+    "ru": "Издавал газету",
+    "en": "He owned a newspaper"
+   },
+   {
+    "ru": "Снимал кино",
+    "en": "He produced films"
+   },
+   {
+    "ru": "Держал сеть отелей",
+    "en": "He ran a hotel chain"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Стэн Ли нарочно сделал героем фабриканта оружия, которого его читатели, не любившие войну, должны были невзлюбить, — а они его полюбили.",
+   "en": "Stan Lee deliberately made his hero an arms maker his anti-war readers should dislike, and they liked him anyway."
+  },
+  "source": "https://en.wikipedia.org/wiki/Iron_Man"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Стэнли Либер подписывал комиксы «Стэн Ли». Для чего он берёг настоящее имя?",
+   "en": "Stanley Lieber signed his comics Stan Lee. What was he saving his real name for?"
+  },
+  "options": [
+   {
+    "ru": "Для серьёзного романа",
+    "en": "A serious novel"
+   },
+   {
+    "ru": "Для карьеры актёра",
+    "en": "An acting career"
+   },
+   {
+    "ru": "Для работы юристом",
+    "en": "A career in law"
+   },
+   {
+    "ru": "Для политики",
+    "en": "A career in politics"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Комиксы тогда считали несерьёзным чтивом, но роман он так и не написал, а псевдоним стал его официальным именем.",
+   "en": "Comics were looked down on then; the novel never came, and Stan Lee became his legal name."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stan_Lee"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Человек-паук впервые появился в 1962 году в журнале Amazing Fantasy. В каком номере?",
+   "en": "Spider-Man debuted in the magazine Amazing Fantasy in 1962. In which issue?"
+  },
+  "options": [
+   {
+    "ru": "В последнем",
+    "en": "Its last issue"
+   },
+   {
+    "ru": "В первом",
+    "en": "Its first issue"
+   },
+   {
+    "ru": "В юбилейном сотом",
+    "en": "Its 100th anniversary issue"
+   },
+   {
+    "ru": "В бесплатном рекламном",
+    "en": "A free promo issue"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Журнал Amazing Fantasy всё равно закрывали, и издатель позволил рискнуть; номер так хорошо продался, что Пауку дали свою серию.",
+   "en": "Amazing Fantasy was being cancelled anyway, so the publisher let Lee take the risk; it sold so well Spider-Man got his own title."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amazing_Fantasy_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Гоку из манги Dragon Ball списан с героя знаменитой книги. Какого?",
+   "en": "Goku from the manga Dragon Ball is based on the hero of a famous book. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Царь обезьян Сунь Укун",
+    "en": "Sun Wukong the Monkey King"
+   },
+   {
+    "ru": "Тарзан",
+    "en": "Tarzan"
+   },
+   {
+    "ru": "Маугли",
+    "en": "Mowgli"
+   },
+   {
+    "ru": "Синдбад-мореход",
+    "en": "Sinbad the Sailor"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Гоку» — японское прочтение имени Сунь Укун, и у обоих есть хвост, летающее облако и удлиняющийся посох.",
+   "en": "Goku is the Japanese reading of Sun Wukong, and both have a tail, a flying cloud and a staff that extends."
+  },
+  "source": "https://en.wikipedia.org/wiki/Goku"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем по образованию был Осаму Тэдзука, «бог манги» и автор «Астробоя»?",
+   "en": "What did Osamu Tezuka, the god of manga who created Astro Boy, train as?"
+  },
+  "options": [
+   {
+    "ru": "Врач",
+    "en": "A doctor"
+   },
+   {
+    "ru": "Юрист",
+    "en": "A lawyer"
+   },
+   {
+    "ru": "Архитектор",
+    "en": "An architect"
+   },
+   {
+    "ru": "Борец сумо",
+    "en": "A sumo wrestler"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он получил диплом врача, но выбрал мангу, а медицинские знания вложил в «Блэк Джека» — историю о гениальном хирурге.",
+   "en": "He earned a medical degree but chose manga, and put his training into Black Jack, a series about a brilliant surgeon."
+  },
+  "source": "https://en.wikipedia.org/wiki/Osamu_Tezuka"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Улыбку Джокера в 1940 году срисовали с героя немого фильма. Какого?",
+   "en": "The Joker's 1940 grin was copied from a silent film character. Which film?"
+  },
+  "options": [
+   {
+    "ru": "«Человек, который смеётся»",
+    "en": "The Man Who Laughs"
+   },
+   {
+    "ru": "«Носферату»",
+    "en": "Nosferatu"
+   },
+   {
+    "ru": "«Призрак оперы»",
+    "en": "The Phantom of the Opera"
+   },
+   {
+    "ru": "«Кабинет доктора Калигари»",
+    "en": "The Cabinet of Dr. Caligari"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В фильме 1928 года по роману Виктора Гюго Конрад Фейдт играл Гуинплена, лицо которого с детства застыло в вечной улыбке.",
+   "en": "In the 1928 film of Victor Hugo's novel, Conrad Veidt played Gwynplaine, whose face had been fixed in a grin since childhood."
+  },
+  "source": "https://en.wikipedia.org/wiki/Joker_(character)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто придумал Бэтмену плащ, маску с ушами и имя Брюс Уэйн, но десятки лет не значился среди авторов?",
+   "en": "Who gave Batman his cape, his eared cowl and the name Bruce Wayne, yet went uncredited for decades?"
+  },
+  "options": [
+   {
+    "ru": "Билл Фингер",
+    "en": "Bill Finger"
+   },
+   {
+    "ru": "Стэн Ли",
+    "en": "Stan Lee"
+   },
+   {
+    "ru": "Джек Кирби",
+    "en": "Jack Kirby"
+   },
+   {
+    "ru": "Фрэнк Миллер",
+    "en": "Frank Miller"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сценарист Билл Фингер умер в 1974 году, а официально соавтором Бэтмена DC признала его только в 2015-м.",
+   "en": "Writer Bill Finger died in 1974; DC only credited him as Batman's co-creator in 2015."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bill_Finger"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Настоящее имя Дэдпула — Уэйд Уилсон. На какого злодея DC это намёк?",
+   "en": "Deadpool's real name is Wade Wilson. Which DC villain is that a nod to?"
+  },
+  "options": [
+   {
+    "ru": "Детстроук",
+    "en": "Deathstroke"
+   },
+   {
+    "ru": "Джокер",
+    "en": "The Joker"
+   },
+   {
+    "ru": "Бейн",
+    "en": "Bane"
+   },
+   {
+    "ru": "Лекс Лютор",
+    "en": "Lex Luthor"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Детстроука зовут Слэйд Уилсон, он тоже наёмник в маске и с мечами, и сценарист Фабиан Ничиеза назвал Дэдпула так в шутку.",
+   "en": "Deathstroke is Slade Wilson, also a masked mercenary with swords, so writer Fabian Nicieza named Deadpool that as an in-joke."
+  },
+  "source": "https://en.wikipedia.org/wiki/Deadpool"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто придумал чёрный костюм Человека-паука, из которого потом вырос Веном?",
+   "en": "Who came up with Spider-Man's black costume, which later became Venom?"
+  },
+  "options": [
+   {
+    "ru": "Читатель, приславший идею",
+    "en": "A fan who wrote in"
+   },
+   {
+    "ru": "Дочь Стэна Ли",
+    "en": "Stan Lee's daughter"
+   },
+   {
+    "ru": "Голливудская студия",
+    "en": "A Hollywood studio"
+   },
+   {
+    "ru": "Японский мультипликатор",
+    "en": "A Japanese animator"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Идею прислал читатель из Иллинойса Рэнди Шуэллер, и Marvel купила её у него за 220 долларов.",
+   "en": "A reader from Illinois, Randy Schueller, sent in the idea, and Marvel bought it from him for $220."
+  },
+  "source": "https://en.wikipedia.org/wiki/Venom_(character)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1814 году начали выходить альбомы набросков, прославившие слово «манга». Кто их автор?",
+   "en": "In 1814 a series of sketchbooks made the word manga famous. Which great artist drew them?"
+  },
+  "options": [
+   {
+    "ru": "Хокусай",
+    "en": "Hokusai"
+   },
+   {
+    "ru": "Хаяо Миядзаки",
+    "en": "Hayao Miyazaki"
+   },
+   {
+    "ru": "Акира Куросава",
+    "en": "Akira Kurosawa"
+   },
+   {
+    "ru": "Харуки Мураками",
+    "en": "Haruki Murakami"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Автор «Большой волны» выпускал альбомы набросков «Хокусай манга»; тогда это слово значило «рисунки как придётся».",
+   "en": "The painter of The Great Wave published sketchbooks called Hokusai Manga, when the word meant loose, whimsical drawings."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hokusai_Manga"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое выражение родилось благодаря одному из первых комиксов — «Жёлтому малышу» (1895)?",
+   "en": "Which phrase was born from one of the first comic strips, The Yellow Kid (1895)?"
+  },
+  "options": [
+   {
+    "ru": "Жёлтая пресса",
+    "en": "Yellow press"
+   },
+   {
+    "ru": "Газетная утка",
+    "en": "Newspaper canard"
+   },
+   {
+    "ru": "Мыльная опера",
+    "en": "Soap opera"
+   },
+   {
+    "ru": "Звёздный час",
+    "en": "Finest hour"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мальчика в жёлтой рубашке печатали враждующие газеты Пулитцера и Херста, и их скандальную прессу прозвали «жёлтой».",
+   "en": "Rival papers of Pulitzer and Hearst both ran the kid in the yellow nightshirt, and their sensational press got called yellow."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Yellow_Kid"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какой страны родом смурфики?",
+   "en": "Which country do the Smurfs come from?"
+  },
+  "options": [
+   {
+    "ru": "Бельгия",
+    "en": "Belgium"
+   },
+   {
+    "ru": "Нидерланды",
+    "en": "The Netherlands"
+   },
+   {
+    "ru": "Франция",
+    "en": "France"
+   },
+   {
+    "ru": "Дания",
+    "en": "Denmark"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бельгиец Пейо в 1958 году ввёл их в свой комикс о средневековых приключениях как эпизодических героев, и они затмили главных.",
+   "en": "Belgian artist Peyo introduced them in 1958 as bit players in his medieval adventure strip, and they soon stole the show."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Smurfs"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялся псевдоним создателя Тинтина Эрже (Hergé)?",
+   "en": "Where does the pen name of Tintin's creator, Hergé, come from?"
+  },
+  "options": [
+   {
+    "ru": "Его инициалы наоборот",
+    "en": "His initials reversed"
+   },
+   {
+    "ru": "Кличка его собаки",
+    "en": "His dog's name"
+   },
+   {
+    "ru": "Название деревни",
+    "en": "A Belgian village"
+   },
+   {
+    "ru": "Так он чихал",
+    "en": "The sound of his sneeze"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его звали Жорж Реми, и инициалы Р. Ж. по-французски читаются как «эр-же».",
+   "en": "His name was Georges Remi, and the initials R.G. read aloud in French sound like Hergé."
+  },
+  "source": "https://en.wikipedia.org/wiki/Herg%C3%A9"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого бьёт Капитан Америка на обложке своего первого номера (март 1941)?",
+   "en": "Who is Captain America punching on the cover of his first issue (March 1941)?"
+  },
+  "options": [
+   {
+    "ru": "Гитлера",
+    "en": "Hitler"
+   },
+   {
+    "ru": "Дракулу",
+    "en": "Dracula"
+   },
+   {
+    "ru": "Аль Капоне",
+    "en": "Al Capone"
+   },
+   {
+    "ru": "Кинг-Конга",
+    "en": "King Kong"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Номер вышел за год до вступления США во Вторую мировую, и авторам Джо Саймону и Джеку Кирби даже приходили письма с угрозами.",
+   "en": "It came out a year before the US entered the Second World War, and creators Joe Simon and Jack Kirby even got threatening letters."
+  },
+  "source": "https://en.wikipedia.org/wiki/Captain_America_Comics"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чего НЕ умел Супермен в самом первом комиксе о нём?",
+   "en": "What could Superman NOT do in his very first comic?"
+  },
+  "options": [
+   {
+    "ru": "Летать",
+    "en": "Fly"
+   },
+   {
+    "ru": "Поднимать автомобиль",
+    "en": "Lift a car"
+   },
+   {
+    "ru": "Обгонять поезд",
+    "en": "Outrun a train"
+   },
+   {
+    "ru": "Выдерживать пули",
+    "en": "Shrug off bullets"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала он только прыгал — на восьмую часть мили, — а впервые полетел в 1940 году, в радиосериале.",
+   "en": "At first he could only leap, an eighth of a mile at a time; he first flew in the 1940 radio serial."
+  },
+  "source": "https://en.wikipedia.org/wiki/Superman"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем зарабатывает на жизнь Обеликс?",
+   "en": "How does Obelix earn his living?"
+  },
+  "options": [
+   {
+    "ru": "Развозит менгиры",
+    "en": "Delivering menhirs"
+   },
+   {
+    "ru": "Куёт мечи",
+    "en": "Forging swords"
+   },
+   {
+    "ru": "Торгует рыбой",
+    "en": "Selling fish"
+   },
+   {
+    "ru": "Поёт песни",
+    "en": "Singing as a bard"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Менгиры — огромные стоячие камни древней Галлии, а само имя Обеликс происходит от слова «обелиск».",
+   "en": "Menhirs are the huge standing stones of ancient Gaul, and his very name comes from the word obelisk."
+  },
+  "source": "https://en.wikipedia.org/wiki/Obelix"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой комикс журнал Time в 2005 году включил в сотню лучших романов?",
+   "en": "Which comic did Time magazine put on its 2005 list of the 100 best novels?"
+  },
+  "options": [
+   {
+    "ru": "«Хранители»",
+    "en": "Watchmen"
+   },
+   {
+    "ru": "«Маус»",
+    "en": "Maus"
+   },
+   {
+    "ru": "«Возвращение Тёмного рыцаря»",
+    "en": "The Dark Knight Returns"
+   },
+   {
+    "ru": "«Песочный человек»",
+    "en": "The Sandman"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мрачная история Алана Мура о стареющих героях в масках оказалась единственным комиксом в этом списке.",
+   "en": "Alan Moore's dark tale of ageing masked vigilantes was the only graphic novel on the list."
+  },
+  "source": "https://en.wikipedia.org/wiki/Watchmen"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Герой DC Шазам (раньше его звали Капитан Марвел) превращается, крикнув «Шазам!». Что это за слово?",
+   "en": "DC's Shazam, once called Captain Marvel, transforms by shouting \"Shazam!\". What is that word?"
+  },
+  "options": [
+   {
+    "ru": "Первые буквы шести имён",
+    "en": "Initials of six names"
+   },
+   {
+    "ru": "«Молния» по-арабски",
+    "en": "Arabic for lightning"
+   },
+   {
+    "ru": "Заклинание из Библии",
+    "en": "A spell from the Bible"
+   },
+   {
+    "ru": "Имя его бабушки",
+    "en": "His grandmother's name"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мудрость Соломона, сила Геракла, стойкость Атласа, мощь Зевса, храбрость Ахиллеса и скорость Меркурия.",
+   "en": "Solomon's wisdom, Hercules' strength, Atlas' stamina, Zeus' power, Achilles' courage and Mercury's speed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shazam_(DC_Comics)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Фантастическая четвёрка получила свои способности?",
+   "en": "How did the Fantastic Four get their powers?"
+  },
+  "options": [
+   {
+    "ru": "Облучилась в космосе",
+    "en": "Cosmic rays in space"
+   },
+   {
+    "ru": "От укуса паука",
+    "en": "A spider bite"
+   },
+   {
+    "ru": "От сыворотки суперсолдата",
+    "en": "A super soldier serum"
+   },
+   {
+    "ru": "От кольца пришельца",
+    "en": "An alien ring"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала Стэн Ли хотел отправить их на Марс, но передумал: вдруг советские космонавты долетят туда раньше.",
+   "en": "Stan Lee first meant to send them to Mars, then aimed for the stars instead in case the Soviets got to Mars first."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fantastic_Four"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году вышел первый комикс о Супермене, с которого начался «золотой век» комиксов?",
+   "en": "In what year did Superman's first comic come out, starting the golden age of comics?"
+  },
+  "answer": 1938,
+  "range": [
+   1900,
+   2010
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Двое школьников из Кливленда, Джерри Сигел и Джо Шустер, придумали героя в 1933 году и пять лет искали издателя.",
+   "en": "Two Cleveland teenagers, Jerry Siegel and Joe Shuster, dreamed him up in 1933 and spent five years looking for a publisher."
+  },
+  "source": "https://en.wikipedia.org/wiki/Action_Comics_1"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько долларов получили Сигел и Шустер за первую историю о Супермене?",
+   "en": "How many dollars did Siegel and Shuster get for the first Superman story?"
+  },
+  "answer": 130,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 50,
+  "unit": {
+   "ru": "долл.",
+   "en": "$"
+  },
+  "fact": {
+   "ru": "По 10 долларов за страницу, а все права на героя они вдобавок отдали издательству даром.",
+   "en": "That was $10 a page, and on top of that they signed all rights to Superman over to the publisher for nothing."
+  },
+  "source": "https://en.wikipedia.org/wiki/Superman"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году журналист Тинтин отправился в своё первое приключение?",
+   "en": "In what year did the reporter Tintin set off on his first adventure?"
+  },
+  "answer": 1929,
+  "range": [
+   1900,
+   2010
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Первым делом Эрже отправил его в СССР: «Тинтин в Стране Советов» начал выходить в январе 1929 года.",
+   "en": "Hergé's first destination for him was the USSR: Tintin in the Land of the Soviets began in January 1929."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tintin_in_the_Land_of_the_Soviets"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Альбомы об Астериксе открываются словами «Идёт ... год до нашей эры». Какой это год?",
+   "en": "Asterix albums open with \"The year is ... BC\". Which year is it?"
+  },
+  "answer": 50,
+  "range": [
+   0,
+   300
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "год до н. э.",
+   "en": "BC"
+  },
+  "fact": {
+   "ru": "К этому году Юлий Цезарь как раз закончил завоевание Галлии — покорена вся страна, кроме одной деревни.",
+   "en": "By then Julius Caesar had just finished conquering Gaul: all of it, except one small village."
+  },
+  "source": "https://en.wikipedia.org/wiki/Asterix"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Чарльз Шульц почти 50 лет один рисовал комикс Peanuts про Снупи. Сколько выпусков вышло?",
+   "en": "Charles Schulz drew Peanuts on his own for almost 50 years. How many strips were published?"
+  },
+  "answer": 17900,
+  "range": [
+   0,
+   50000
+  ],
+  "step": 100,
+  "tolerance": 3000,
+  "unit": {
+   "ru": "выпусков",
+   "en": "strips"
+  },
+  "fact": {
+   "ru": "Ровно 17 897: Шульц умер 12 февраля 2000 года, а последний выпуск напечатали на следующий день.",
+   "en": "17,897 in all: Schulz died on 12 February 2000, the night before his last strip ran."
+  },
+  "source": "https://en.wikipedia.org/wiki/Peanuts"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько минут длится фильм «Мстители: Финал» (2019)?",
+   "en": "How many minutes long is Avengers: Endgame (2019)?"
+  },
+  "answer": 181,
+  "range": [
+   60,
+   400
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "мин",
+   "en": "min"
+  },
+  "fact": {
+   "ru": "Три часа никого не отпугнули: в 2019 году фильм собрал в прокате почти 2,8 миллиарда долларов.",
+   "en": "Three hours scared nobody off: in 2019 the film took almost $2.8 billion at the box office."
+  },
+  "source": "https://en.wikipedia.org/wiki/Avengers:_Endgame"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Стэну Ли, когда вышла «Фантастическая четвёрка» (1961), начало эпохи Marvel?",
+   "en": "How old was Stan Lee when the Fantastic Four, which began the Marvel age, came out in 1961?"
+  },
+  "answer": 38,
+  "range": [
+   10,
+   90
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Он уже собирался уйти из комиксов, но жена посоветовала напоследок написать историю так, как хочется ему самому.",
+   "en": "He was about to quit comics, but his wife told him to write one story his own way first, since he had nothing to lose."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stan_Lee"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1995 году японский журнал манги Shōnen Jump поставил рекорд тиража. Сколько экземпляров в неделю?",
+   "en": "In 1995 the manga weekly Shōnen Jump set its sales record. How many copies a week?"
+  },
+  "answer": 6500000,
+  "range": [
+   0,
+   30000000
+  ],
+  "step": 100000,
+  "tolerance": 1500000,
+  "unit": {
+   "ru": "экз.",
+   "en": "copies"
+  },
+  "fact": {
+   "ru": "6,53 миллиона экземпляров каждую неделю — в те годы в нём печатались Dragon Ball и Slam Dunk.",
+   "en": "6.53 million copies every week, in the years when Dragon Ball and Slam Dunk ran in its pages."
+  },
+  "source": "https://en.wikipedia.org/wiki/Weekly_Sh%C5%8Dnen_Jump"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько долларов в 2021 году продали комикс, где впервые появился Человек-паук?",
+   "en": "In 2021, for how many dollars did a copy of Spider-Man's first comic sell?"
+  },
+  "answer": 3600000,
+  "range": [
+   0,
+   20000000
+  ],
+  "step": 100000,
+  "tolerance": 1000000,
+  "unit": {
+   "ru": "долл.",
+   "en": "$"
+  },
+  "fact": {
+   "ru": "В 1962 году Amazing Fantasy №15 стоил 12 центов, а этот почти идеальный экземпляр стал тогда самым дорогим комиксом в мире.",
+   "en": "It cost 12 cents in 1962, and this near-perfect copy became the most expensive comic ever sold at the time."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amazing_Fantasy_15"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько фильмов вошло в «Сагу Бесконечности» Marvel — с 2008 по 2019 год?",
+   "en": "How many films make up Marvel's Infinity Saga, released from 2008 to 2019?"
+  },
+  "answer": 23,
+  "range": [
+   0,
+   80
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "фильмов",
+   "en": "films"
+  },
+  "fact": {
+   "ru": "Камни Бесконечности 11 лет прятали по разным фильмам, пока все нити не сошлись в «Мстителях: Финал».",
+   "en": "The Infinity Stones were scattered through 11 years of films until every thread came together in Avengers: Endgame."
+  },
+  "source": "https://en.wikipedia.org/wiki/Infinity_Saga"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько миллионов долларов Disney купила Marvel в 2009 году?",
+   "en": "For how many million dollars did Disney buy Marvel in 2009?"
+  },
+  "answer": 4000,
+  "range": [
+   0,
+   30000
+  ],
+  "step": 100,
+  "tolerance": 1000,
+  "unit": {
+   "ru": "млн долл.",
+   "en": "million $"
+  },
+  "fact": {
+   "ru": "Около 4 миллиардов — и вместе с компанией Disney получила больше 5000 персонажей Marvel.",
+   "en": "About $4 billion, and with the company Disney got more than 5,000 Marvel characters."
+  },
+  "source": "https://abcnews.go.com/Business/disney-buy-marvel-billion/story?id=8452594"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Манга «Кочикамэ» 40 лет выходила каждую неделю. Сколько томов было у неё к финалу в 2016 году?",
+   "en": "The manga Kochikame ran every week for 40 years. How many volumes did it have when it ended in 2016?"
+  },
+  "answer": 200,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 10,
+  "tolerance": 70,
+  "unit": {
+   "ru": "томов",
+   "en": "volumes"
+  },
+  "fact": {
+   "ru": "Ровно 200 томов принесли ей рекорд Гиннесса, который в 2021 году перешёл к манге «Голго 13».",
+   "en": "Exactly 200 volumes earned it a Guinness record, which passed to the manga Golgo 13 in 2021."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kochikame"
+ }
+]

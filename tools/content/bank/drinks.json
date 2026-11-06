@@ -1,0 +1,1518 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где родина кофе?",
+   "en": "Where does coffee originally come from?"
+  },
+  "options": [
+   {
+    "ru": "Бразилия",
+    "en": "Brazil"
+   },
+   {
+    "ru": "Колумбия",
+    "en": "Colombia"
+   },
+   {
+    "ru": "Италия",
+    "en": "Italy"
+   },
+   {
+    "ru": "Эфиопия",
+    "en": "Ethiopia"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Кофейное дерево растёт в Эфиопии в диком виде; по легенде, пастух заметил, как его козы скачут, наевшись ягод.",
+   "en": "Coffee grows wild in Ethiopia; legend says a goatherd saw his goats turn frisky after eating the berries."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_coffee"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как в 1886 году впервые продавали кока-колу?",
+   "en": "How was Coca-Cola first sold in 1886?"
+  },
+  "options": [
+   {
+    "ru": "Как лекарство в аптеке",
+    "en": "As a medicine in a pharmacy"
+   },
+   {
+    "ru": "Как паёк для солдат",
+    "en": "As an army ration"
+   },
+   {
+    "ru": "Как угощение в цирке",
+    "en": "As a circus treat"
+   },
+   {
+    "ru": "Как средство для мытья окон",
+    "en": "As a window cleaner"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пембертон хвалил её от головной боли и нервов, а название из коки и колы придумал его бухгалтер Фрэнк Робинсон.",
+   "en": "Pemberton touted it for headaches and nerves; his bookkeeper Frank Robinson named it after coca leaves and kola nuts."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_Coca-Cola"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что означает итальянское слово «латте»?",
+   "en": "What does the Italian word 'latte' mean?"
+  },
+  "options": [
+   {
+    "ru": "Утро",
+    "en": "Morning"
+   },
+   {
+    "ru": "Молоко",
+    "en": "Milk"
+   },
+   {
+    "ru": "Пена",
+    "en": "Foam"
+   },
+   {
+    "ru": "Чашка",
+    "en": "Cup"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Попросите в Италии просто «латте» — и вам, скорее всего, нальют стакан молока: кофе с молоком там зовут caffè latte.",
+   "en": "Order just a 'latte' in Italy and you will likely get a glass of milk: the coffee drink is caffè latte."
+  },
+  "source": "https://en.wikipedia.org/wiki/Latte"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что такое японская матча?",
+   "en": "What is Japanese matcha?"
+  },
+  "options": [
+   {
+    "ru": "Сушёные морские водоросли",
+    "en": "Dried seaweed"
+   },
+   {
+    "ru": "Рисовая мука",
+    "en": "Rice flour"
+   },
+   {
+    "ru": "Порошок из зелёного чая",
+    "en": "Powdered green tea"
+   },
+   {
+    "ru": "Тёртая мята",
+    "en": "Ground mint"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Перед сбором чайные кусты укрывают от солнца: в тени листья копят хлорофилл, становятся ярко-зелёными и менее горькими.",
+   "en": "Before harvest the tea bushes are shaded from the sun, so the leaves turn bright green and less bitter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Matcha"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем ароматизирован чай «Эрл Грей»?",
+   "en": "What gives Earl Grey tea its flavour?"
+  },
+  "options": [
+   {
+    "ru": "Жасмином",
+    "en": "Jasmine"
+   },
+   {
+    "ru": "Мятой",
+    "en": "Mint"
+   },
+   {
+    "ru": "Корицей",
+    "en": "Cinnamon"
+   },
+   {
+    "ru": "Бергамотом",
+    "en": "Bergamot"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Бергамот — кислый цитрус, в чай добавляют масло его кожуры; назван чай, как считается, в честь британского премьера 1830-х графа Грея.",
+   "en": "Bergamot is a sour citrus whose peel oil flavours the tea, thought to be named after Earl Grey, British prime minister in the 1830s."
+  },
+  "source": "https://en.wikipedia.org/wiki/Earl_Grey_tea"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего делают зелёный и чёрный чай?",
+   "en": "What are green and black tea made from?"
+  },
+  "options": [
+   {
+    "ru": "Из листьев одного куста",
+    "en": "Leaves of the same bush"
+   },
+   {
+    "ru": "Из двух разных кустов",
+    "en": "Two different bushes"
+   },
+   {
+    "ru": "Зелёный из листьев, чёрный из корней",
+    "en": "Green from leaves, black from roots"
+   },
+   {
+    "ru": "Чёрный из чая, зелёный из мяты",
+    "en": "Black from tea, green from mint"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Для чёрного чая листья оставляют окисляться на воздухе, как темнеет надрезанное яблоко, а зелёный быстро прогревают.",
+   "en": "For black tea the leaves oxidise in the air, like a cut apple turning brown; green tea is heated quickly to stop it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Camellia_sinensis"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему настоящее шампанское называется шампанским?",
+   "en": "Why is real champagne called champagne?"
+  },
+  "options": [
+   {
+    "ru": "По городу в Италии",
+    "en": "After a town in Italy"
+   },
+   {
+    "ru": "По региону во Франции",
+    "en": "After a region of France"
+   },
+   {
+    "ru": "По сорту винограда",
+    "en": "After a grape variety"
+   },
+   {
+    "ru": "По имени монаха",
+    "en": "After a monk's name"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В Евросоюзе шампанским по закону зовётся только вино из Шампани; всё остальное там — игристое вино.",
+   "en": "In the EU only wine from the Champagne region may use the name; everything else is sparkling wine."
+  },
+  "source": "https://en.wikipedia.org/wiki/Champagne",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего делают традиционный квас?",
+   "en": "What is traditional kvass made from?"
+  },
+  "options": [
+   {
+    "ru": "Из риса",
+    "en": "Rice"
+   },
+   {
+    "ru": "Из молока",
+    "en": "Milk"
+   },
+   {
+    "ru": "Из ржаного хлеба",
+    "en": "Rye bread"
+   },
+   {
+    "ru": "Из картофеля",
+    "en": "Potatoes"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Чёрствый ржаной хлеб или солод бродят с дрожжами, а спирта получается так мало, что квасом заправляют окрошку.",
+   "en": "Stale rye bread or malt ferments with yeast into a drink so mild that Russians pour it into cold soup."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kvass"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой город славится самоварами?",
+   "en": "Which Russian city is famous for its samovars?"
+  },
+  "options": [
+   {
+    "ru": "Казань",
+    "en": "Kazan"
+   },
+   {
+    "ru": "Вологда",
+    "en": "Vologda"
+   },
+   {
+    "ru": "Псков",
+    "en": "Pskov"
+   },
+   {
+    "ru": "Тула",
+    "en": "Tula"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Отсюда поговорка «в Тулу со своим самоваром не ездят» — то же, что везти дрова в лес.",
+   "en": "Hence the Russian saying 'nobody takes their own samovar to Tula', like carrying coals to Newcastle."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Самовар"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего делают японское саке?",
+   "en": "What is Japanese sake made from?"
+  },
+  "options": [
+   {
+    "ru": "Из риса",
+    "en": "Rice"
+   },
+   {
+    "ru": "Из сливы",
+    "en": "Plums"
+   },
+   {
+    "ru": "Из ячменя",
+    "en": "Barley"
+   },
+   {
+    "ru": "Из картофеля",
+    "en": "Potatoes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Саке варят скорее как пиво: крахмал риса превращает в сахар плесневый грибок кодзи.",
+   "en": "Sake is brewed more like beer: koji mould turns the rice starch into sugar."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sake",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда родом мате?",
+   "en": "Where does mate come from?"
+  },
+  "options": [
+   {
+    "ru": "Из Австралии",
+    "en": "Australia"
+   },
+   {
+    "ru": "Из Южной Америки",
+    "en": "South America"
+   },
+   {
+    "ru": "Из Африки",
+    "en": "Africa"
+   },
+   {
+    "ru": "Из Азии",
+    "en": "Asia"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Мате пьют из тыковки через металлическую трубочку с ситечком — бомбилью.",
+   "en": "Mate is drunk from a gourd through a metal straw with a filter, called a bombilla."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mate_(drink)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем на самом деле является кофейное зерно?",
+   "en": "What is a coffee bean really?"
+  },
+  "options": [
+   {
+    "ru": "Боб, как фасоль",
+    "en": "A bean, like a kidney bean"
+   },
+   {
+    "ru": "Сушёный бутон цветка",
+    "en": "A dried flower bud"
+   },
+   {
+    "ru": "Семя ягоды",
+    "en": "The seed of a berry"
+   },
+   {
+    "ru": "Орех",
+    "en": "A nut"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "В красной кофейной «вишне» обычно два семени, сложенные плоскими сторонами друг к другу.",
+   "en": "A red coffee 'cherry' usually holds two seeds lying flat sides together."
+  },
+  "source": "https://en.wikipedia.org/wiki/Coffee_bean"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Когда собирают берёзовый сок?",
+   "en": "When is birch sap collected?"
+  },
+  "options": [
+   {
+    "ru": "В разгар лета",
+    "en": "Midsummer"
+   },
+   {
+    "ru": "Осенью",
+    "en": "Autumn"
+   },
+   {
+    "ru": "Зимой",
+    "en": "Winter"
+   },
+   {
+    "ru": "Ранней весной",
+    "en": "Early spring"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Пока листьев нет, корни сами гонят сладкий сок к почкам; когда листья распускаются, сок горчеет и сбор заканчивается.",
+   "en": "Before the leaves open, the roots push sweet sap up to the buds; once leaves appear, the sap turns bitter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Birch_sap"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из какого молока традиционно делают кумыс?",
+   "en": "Which milk is kumis traditionally made from?"
+  },
+  "options": [
+   {
+    "ru": "Кобыльего",
+    "en": "Mare's milk"
+   },
+   {
+    "ru": "Верблюжьего",
+    "en": "Camel's milk"
+   },
+   {
+    "ru": "Козьего",
+    "en": "Goat's milk"
+   },
+   {
+    "ru": "Молока яка",
+    "en": "Yak's milk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В кобыльем молоке больше сахара, чем в коровьем, поэтому оно хорошо бродит в кисловатый шипучий напиток степей.",
+   "en": "Mare's milk holds more sugar than cow's, so it ferments well into the fizzy, sour drink of the steppe."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kumis"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие два фрукта есть в коктейле «Пина колада»?",
+   "en": "Which two fruits go into a piña colada?"
+  },
+  "options": [
+   {
+    "ru": "Персик и апельсин",
+    "en": "Peach and orange"
+   },
+   {
+    "ru": "Ананас и кокос",
+    "en": "Pineapple and coconut"
+   },
+   {
+    "ru": "Банан и манго",
+    "en": "Banana and mango"
+   },
+   {
+    "ru": "Клубника и лайм",
+    "en": "Strawberry and lime"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "«Пина колада» по-испански значит «процеженный ананас»; в 1978 году Пуэрто-Рико объявил его официальным напитком.",
+   "en": "'Piña colada' is Spanish for 'strained pineapple'; Puerto Rico made it its official drink in 1978."
+  },
+  "source": "https://en.wikipedia.org/wiki/Piña_colada",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь кого назван капучино?",
+   "en": "What is the cappuccino named after?"
+  },
+  "options": [
+   {
+    "ru": "Изобретателя Луиджи Каппуччи",
+    "en": "Its inventor, Luigi Cappucci"
+   },
+   {
+    "ru": "Капибары",
+    "en": "The capybara"
+   },
+   {
+    "ru": "Монахов-капуцинов",
+    "en": "Capuchin friars"
+   },
+   {
+    "ru": "Города Капуя",
+    "en": "The town of Capua"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Кофе с молоком был цвета их коричневых ряс; в Вене похожий напиток «капуцинер» подавали ещё раньше.",
+   "en": "Coffee with milk matched the brown of their robes; Vienna served a similar 'Kapuziner' even earlier."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cappuccino"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране придумали «Фанту»?",
+   "en": "In which country was Fanta invented?"
+  },
+  "options": [
+   {
+    "ru": "В Великобритании",
+    "en": "UK"
+   },
+   {
+    "ru": "В США",
+    "en": "USA"
+   },
+   {
+    "ru": "В Испании",
+    "en": "Spain"
+   },
+   {
+    "ru": "В Германии",
+    "en": "Germany"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Сироп кока-колы перестал доходить до Германии, и местный филиал сделал напиток из сыворотки и яблочного жмыха.",
+   "en": "Coca-Cola syrup could not reach wartime Germany, so the local branch made a drink from whey and apple pulp."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fanta"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялось название «Пепси»?",
+   "en": "Where does the name Pepsi come from?"
+  },
+  "options": [
+   {
+    "ru": "От пищеварительного пепсина",
+    "en": "Pepsin, a digestive enzyme"
+   },
+   {
+    "ru": "От перца",
+    "en": "Pepper"
+   },
+   {
+    "ru": "От клички собаки изобретателя",
+    "en": "The inventor's dog"
+   },
+   {
+    "ru": "От имени греческой богини",
+    "en": "A Greek goddess"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Аптекарь Калеб Брэдхэм продавал «Напиток Брэда» с 1893 года и рекламировал его как средство от несварения.",
+   "en": "Pharmacist Caleb Bradham sold 'Brad's Drink' from 1893 and advertised it as a cure for indigestion."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pepsi"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Рубль нельзя было вывезти. Чем СССР в 1970-х платил за «Пепси»?",
+   "en": "The rouble was useless abroad. How did the USSR pay for Pepsi in the 1970s?"
+  },
+  "options": [
+   {
+    "ru": "Лесом",
+    "en": "With timber"
+   },
+   {
+    "ru": "Водкой",
+    "en": "With vodka"
+   },
+   {
+    "ru": "Золотом",
+    "en": "With gold"
+   },
+   {
+    "ru": "Икрой",
+    "en": "With caviar"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "По сделке 1972 года PepsiCo получила права продавать «Столичную» на Западе, а «Пепси» пришла в СССР.",
+   "en": "Under a 1972 deal PepsiCo got the rights to sell Stolichnaya vodka in the West, and Pepsi came to the USSR."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pepsi",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялось слово «мокко»?",
+   "en": "Where does the word 'mocha' come from?"
+  },
+  "options": [
+   {
+    "ru": "От реки в Бразилии",
+    "en": "A river in Brazil"
+   },
+   {
+    "ru": "От турецкого слова «пена»",
+    "en": "The Turkish word for foam"
+   },
+   {
+    "ru": "От порта в Йемене",
+    "en": "A port in Yemen"
+   },
+   {
+    "ru": "От итальянского шоколатье",
+    "en": "An Italian chocolatier"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Веками порт Моха на Красном море был главным кофейным рынком мира.",
+   "en": "For centuries the port of Mocha on the Red Sea was the world's main coffee market."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mocha,_Yemen"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В каком кофе больше кофеина?",
+   "en": "Which coffee has more caffeine?"
+  },
+  "options": [
+   {
+    "ru": "В арабике",
+    "en": "Arabica"
+   },
+   {
+    "ru": "Поровну",
+    "en": "They are equal"
+   },
+   {
+    "ru": "Зависит только от обжарки",
+    "en": "Only the roast decides"
+   },
+   {
+    "ru": "В робусте",
+    "en": "Robusta"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В зёрнах робусты около 2,7% кофеина, в арабике около 1,5%: поэтому робуста горче и идёт в растворимый кофе.",
+   "en": "Robusta beans hold about 2.7% caffeine, arabica about 1.5%: robusta is more bitter and goes into instant coffee."
+  },
+  "source": "https://en.wikipedia.org/wiki/Coffea_canephora"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Ради чего придумали растворимый кофе «Нескафе»?",
+   "en": "What problem was Nescafé invented to solve?"
+  },
+  "options": [
+   {
+    "ru": "Пристроить излишки бразильского кофе",
+    "en": "Brazil's unsold coffee surplus"
+   },
+   {
+    "ru": "Накормить лётчиков в полёте",
+    "en": "Feeding pilots in flight"
+   },
+   {
+    "ru": "Кофе для альпинистов",
+    "en": "Coffee for climbers"
+   },
+   {
+    "ru": "Нехватку чайников в Швейцарии",
+    "en": "A kettle shortage in Switzerland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "После краха 1929 года цены рухнули, склады ломились от бразильского кофе, и банк попросил Nestlé что-то придумать.",
+   "en": "After the 1929 crash prices collapsed and warehouses filled with Brazilian coffee, so a bank asked Nestlé for help."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nescafé"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем вымывали кофеин в первом способе делать кофе без кофеина (1906)?",
+   "en": "What washed out the caffeine in the first decaf process (1906)?"
+  },
+  "options": [
+   {
+    "ru": "Уксусом",
+    "en": "Vinegar"
+   },
+   {
+    "ru": "Бензолом",
+    "en": "Benzene"
+   },
+   {
+    "ru": "Водкой",
+    "en": "Vodka"
+   },
+   {
+    "ru": "Оливковым маслом",
+    "en": "Olive oil"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Позже выяснилось, что бензол вызывает рак; теперь кофеин вымывают безопасными растворителями, водой или углекислым газом.",
+   "en": "Benzene was later found to cause cancer; today safer solvents, water or carbon dioxide do the job."
+  },
+  "source": "https://en.wikipedia.org/wiki/Decaffeination"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какого языка в итоге пришли и русское «чай», и английское tea?",
+   "en": "Russian 'chai' and English 'tea' both go back to which language?"
+  },
+  "options": [
+   {
+    "ru": "Из португальского",
+    "en": "Portuguese"
+   },
+   {
+    "ru": "Из японского",
+    "en": "Japanese"
+   },
+   {
+    "ru": "Из китайского",
+    "en": "Chinese"
+   },
+   {
+    "ru": "Из хинди",
+    "en": "Hindi"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "«Ча» шло по суше через Персию и стало «чаем», а «те» уплыло морем из провинции Фуцзянь с голландскими купцами.",
+   "en": "'Cha' travelled overland through Persia to become 'chai'; 'te' sailed from Fujian with Dutch traders."
+  },
+  "source": "https://en.wikipedia.org/wiki/Etymology_of_tea"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где придумали бабл-ти — чай с шариками?",
+   "en": "Where was bubble tea invented?"
+  },
+  "options": [
+   {
+    "ru": "В Японии",
+    "en": "Japan"
+   },
+   {
+    "ru": "В Корее",
+    "en": "Korea"
+   },
+   {
+    "ru": "В Таиланде",
+    "en": "Thailand"
+   },
+   {
+    "ru": "На Тайване",
+    "en": "Taiwan"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Напиток появился в 1980-х, а «пузыри» — это шарики тапиоки, крахмала из корня маниоки.",
+   "en": "It appeared in the 1980s; the 'bubbles' are balls of tapioca, a starch from the cassava root."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bubble_tea"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Напиток какой страны превратился в Red Bull?",
+   "en": "Red Bull grew out of a drink from which country?"
+  },
+  "options": [
+   {
+    "ru": "Таиланда",
+    "en": "Thailand"
+   },
+   {
+    "ru": "Австрии",
+    "en": "Austria"
+   },
+   {
+    "ru": "Японии",
+    "en": "Japan"
+   },
+   {
+    "ru": "США",
+    "en": "USA"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Австриец Дитрих Матешиц спасался тайским «Кратинг Дэнг» («красный гаур») от смены часовых поясов и добавил газ.",
+   "en": "Austrian Dietrich Mateschitz used Thai Krating Daeng ('red gaur') against jet lag, then added fizz."
+  },
+  "source": "https://en.wikipedia.org/wiki/Red_Bull"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему тоник светится в ультрафиолете?",
+   "en": "Why does tonic water glow under UV light?"
+  },
+  "options": [
+   {
+    "ru": "Из-за лимонного сока",
+    "en": "Because of lemon juice"
+   },
+   {
+    "ru": "Из-за хинина",
+    "en": "Because of quinine"
+   },
+   {
+    "ru": "Из-за пузырьков газа",
+    "en": "Because of the bubbles"
+   },
+   {
+    "ru": "Из-за сахара",
+    "en": "Because of the sugar"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Хинин был лекарством от малярии, и британцы в Индии разводили его содовой с сахаром, чтобы заглушить горечь.",
+   "en": "Quinine was a malaria medicine; the British in India mixed it with soda and sugar to hide the bitterness."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tonic_water"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какого растения делают текилу?",
+   "en": "What plant is tequila made from?"
+  },
+  "options": [
+   {
+    "ru": "Из сахарного тростника",
+    "en": "Sugar cane"
+   },
+   {
+    "ru": "Из кукурузы",
+    "en": "Maize"
+   },
+   {
+    "ru": "Из голубой агавы",
+    "en": "Blue agave"
+   },
+   {
+    "ru": "Из кактуса",
+    "en": "A cactus"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Агава вовсе не кактус: ботаники относят её к семейству спаржевых.",
+   "en": "Agave is not a cactus at all: botanists put it in the asparagus family."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tequila",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Строители египетских пирамид получали в день хлеб и…?",
+   "en": "Egyptian pyramid builders got a daily ration of bread and…?"
+  },
+  "options": [
+   {
+    "ru": "Вино",
+    "en": "Wine"
+   },
+   {
+    "ru": "Молоко",
+    "en": "Milk"
+   },
+   {
+    "ru": "Финиковый сок",
+    "en": "Date juice"
+   },
+   {
+    "ru": "Пиво",
+    "en": "Beer"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Густое пиво было скорее едой, чем выпивкой: рабочему полагалось почти 4 литра в день.",
+   "en": "Thick beer was food as much as drink: a worker's ration was nearly 4 litres a day."
+  },
+  "source": "https://en.wikipedia.org/wiki/Beer_in_ancient_Egypt",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое лекарство, по первой рекламе, содержалось в газировке 7 Up?",
+   "en": "Which drug did early 7 Up claim to contain?"
+  },
+  "options": [
+   {
+    "ru": "Аспирин",
+    "en": "Aspirin"
+   },
+   {
+    "ru": "Йод",
+    "en": "Iodine"
+   },
+   {
+    "ru": "Железо",
+    "en": "Iron"
+   },
+   {
+    "ru": "Литий",
+    "en": "Lithium"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Литий успокаивает перепады настроения, а «7», по одной версии, — его атомная масса; в 1936 году власти США запретили такие обещания.",
+   "en": "Lithium steadies the mood and the 7 may be its atomic mass; in 1936 the US government made the maker drop the health claims."
+  },
+  "source": "https://en.wikipedia.org/wiki/7_Up"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где нашли самые древние следы виноделия, им около 8000 лет?",
+   "en": "Where were the oldest traces of winemaking, about 8,000 years old, found?"
+  },
+  "options": [
+   {
+    "ru": "В Греции",
+    "en": "Greece"
+   },
+   {
+    "ru": "В Грузии",
+    "en": "Georgia"
+   },
+   {
+    "ru": "Во Франции",
+    "en": "France"
+   },
+   {
+    "ru": "В Италии",
+    "en": "Italy"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Вино там бродило в огромных глиняных кувшинах, закопанных в землю, — квеври; их делают и сегодня.",
+   "en": "Wine fermented in huge clay jars buried in the ground, qvevri, which Georgians still make today."
+  },
+  "source": "https://en.wikipedia.org/wiki/Georgian_wine",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Монах Дом Периньон, «отец шампанского», на самом деле пытался…",
+   "en": "Dom Pérignon, the 'father of champagne', actually tried to…"
+  },
+  "options": [
+   {
+    "ru": "Делать вино из яблок",
+    "en": "Make wine from apples"
+   },
+   {
+    "ru": "Подслащивать вино мёдом",
+    "en": "Sweeten wine with honey"
+   },
+   {
+    "ru": "Избавиться от пузырьков",
+    "en": "Get rid of the bubbles"
+   },
+   {
+    "ru": "Сделать вино игристее",
+    "en": "Make wine more sparkling"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Повторное брожение рвало бутылки в погребах, а фраза «я пью звёзды» впервые появилась в рекламе XIX века.",
+   "en": "Refermentation burst bottles in the cellars; the quote 'I am tasting the stars' first appeared in an 1800s advert."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dom_Pérignon_(monk)",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что древние майя добавляли в напиток из какао?",
+   "en": "What did the ancient Maya add to their cocoa drink?"
+  },
+  "options": [
+   {
+    "ru": "Коровье молоко",
+    "en": "Cow's milk"
+   },
+   {
+    "ru": "Тростниковый сахар",
+    "en": "Cane sugar"
+   },
+   {
+    "ru": "Лимонный сок",
+    "en": "Lemon juice"
+   },
+   {
+    "ru": "Острый перец",
+    "en": "Chilli pepper"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Коров, тростника и лимонов в Америке до европейцев не было: какао пили горьким и острым.",
+   "en": "There were no cows, sugar cane or lemons in the Americas before Europeans: cocoa was drunk bitter and spicy."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hot_chocolate"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Советский «Тархун» был ярко-зелёным. Какого цвета натуральный экстракт эстрагона?",
+   "en": "Soviet Tarkhun soda was bright green. What colour is natural tarragon extract?"
+  },
+  "options": [
+   {
+    "ru": "Жёлтый",
+    "en": "Yellow"
+   },
+   {
+    "ru": "Зелёный",
+    "en": "Green"
+   },
+   {
+    "ru": "Синий",
+    "en": "Blue"
+   },
+   {
+    "ru": "Красный",
+    "en": "Red"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Зелёный цвет давала смесь синего и жёлтого красителей; сам напиток придумал тбилисский аптекарь Митрофан Лагидзе.",
+   "en": "The green came from mixing blue and yellow dyes; the drink was invented by Tbilisi pharmacist Mitrofan Lagidze."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Тархун_(напиток)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что значит название минеральной воды «Нарзан»?",
+   "en": "What does the name of Narzan mineral water mean?"
+  },
+  "options": [
+   {
+    "ru": "Напиток богатырей",
+    "en": "Drink of heroes"
+   },
+   {
+    "ru": "Горячий ключ",
+    "en": "Hot spring"
+   },
+   {
+    "ru": "Серебряная вода",
+    "en": "Silver water"
+   },
+   {
+    "ru": "Дар горы",
+    "en": "Gift of the mountain"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слово идёт от кабардинского «нартсанэ» — напиток нартов, героев кавказского эпоса; источники бьют под Кисловодском.",
+   "en": "It comes from Kabardian 'nartsane', drink of the Narts, heroes of Caucasian legend; the springs are near Kislovodsk."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Нарзан"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что такое сбитень, который продавали на ярмарках до прихода чая?",
+   "en": "What was sbiten, sold at Russian fairs before tea arrived?"
+  },
+  "options": [
+   {
+    "ru": "Кислое кобылье молоко",
+    "en": "Sour mare's milk"
+   },
+   {
+    "ru": "Берёзовый сок с ягодами",
+    "en": "Birch sap with berries"
+   },
+   {
+    "ru": "Горячий мёд с пряностями",
+    "en": "Hot honey with spices"
+   },
+   {
+    "ru": "Квас с хреном",
+    "en": "Kvass with horseradish"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Мёд был единственной обязательной частью сбитня, а заваривали его нередко прямо в самоварах.",
+   "en": "Honey was the one must-have ingredient, and sbiten was often brewed right in samovars."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Сбитень"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем особенный кофе копи лювак?",
+   "en": "What makes kopi luwak coffee special?"
+  },
+  "options": [
+   {
+    "ru": "Зёрна растут на вулкане",
+    "en": "Beans grow on a volcano"
+   },
+   {
+    "ru": "Зёрна зреют во льду",
+    "en": "Beans ripen in ice"
+   },
+   {
+    "ru": "Зёрна выдерживают в пещерах",
+    "en": "Beans are aged in caves"
+   },
+   {
+    "ru": "Зёрна прошли через живот циветты",
+    "en": "Beans pass through a civet's gut"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Ягоды бродят в желудке пальмовой циветты, а зёрна потом собирают из помёта, моют и обжаривают.",
+   "en": "The cherries ferment inside the Asian palm civet; the beans are collected from its droppings, washed and roasted."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kopi_luwak"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда родом ройбуш, «красный чай»?",
+   "en": "Where does rooibos, the 'red tea', come from?"
+  },
+  "options": [
+   {
+    "ru": "Из ЮАР",
+    "en": "South Africa"
+   },
+   {
+    "ru": "Из Индии",
+    "en": "India"
+   },
+   {
+    "ru": "Из Китая",
+    "en": "China"
+   },
+   {
+    "ru": "Из Кении",
+    "en": "Kenya"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ройбуш вообще не чай: это кустарник из семейства бобовых, и кофеина в нём нет.",
+   "en": "Rooibos is not tea at all: it is a bush of the pea family, and it has no caffeine."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rooibos"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году монгольский хан прислал царю Михаилу Фёдоровичу в подарок четыре пуда чая?",
+   "en": "In what year did a Mongol khan send Tsar Michael four poods (about 65 kg) of tea?"
+  },
+  "answer": 1638,
+  "range": [
+   1500,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Бояре поначалу сочли напиток странным; регулярно чай пошёл из Китая караванами только после договора 1679 года.",
+   "en": "The boyars found the drink odd at first; regular tea caravans from China began only after a 1679 treaty."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tea_in_Russia"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько литров воды уходит на одну чашку кофе, если считать полив и обработку зёрен?",
+   "en": "How many litres of water does one cup of coffee take, counting growing and processing?"
+  },
+  "answer": 140,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 60,
+  "unit": {
+   "ru": "л",
+   "en": "litres"
+  },
+  "fact": {
+   "ru": "Почти вся эта вода идёт на выращивание кофейного дерева, а в самой чашке всего 125 мл.",
+   "en": "Almost all of it goes into growing the coffee tree; the cup itself holds just 125 ml."
+  },
+  "source": "https://www.sciencedaily.com/releases/2008/10/081016084053.htm"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "По мексиканскому списку цен 1545 года, сколько какао-бобов стоила хорошая индейка?",
+   "en": "In a Mexican price list from 1545, how many cocoa beans did a good turkey hen cost?"
+  },
+  "answer": 100,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 40,
+  "unit": {
+   "ru": "бобов",
+   "en": "beans"
+  },
+  "fact": {
+   "ru": "Какао-бобы были настоящими деньгами: маленький кролик стоил 30 бобов, а крупный помидор — всего один.",
+   "en": "Cocoa beans were real money: a small rabbit cost 30 beans and a large tomato just one."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_chocolate"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Под каким давлением эспрессо-машина продавливает воду через кофе?",
+   "en": "At what pressure does an espresso machine push water through the coffee?"
+  },
+  "answer": 9,
+  "range": [
+   0,
+   50
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "бар",
+   "en": "bar"
+  },
+  "fact": {
+   "ru": "Это примерно вчетверо больше, чем в автомобильной шине; вся чашка готовится секунд за 25–30.",
+   "en": "That is about four times the pressure in a car tyre; the whole shot takes about 25 to 30 seconds."
+  },
+  "source": "https://en.wikipedia.org/wiki/Espresso"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько пузырьков образуется в бокале шампанского (100 мл)? Ответ в тысячах.",
+   "en": "How many bubbles form in a 100 ml flute of champagne? Answer in thousands."
+  },
+  "answer": 1000,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 50,
+  "tolerance": 400,
+  "unit": {
+   "ru": "тыс.",
+   "en": "thousand"
+  },
+  "fact": {
+   "ru": "Популярная цифра в 15 миллионов неверна: физик Жерар Лижер-Белер в 2014 году насчитал около миллиона.",
+   "en": "The popular figure of 15 million is wrong: physicist Gérard Liger-Belair worked out about a million in 2014."
+  },
+  "source": "https://www.sciencedaily.com/releases/2014/04/140402110004.htm",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет самой старой неоткрытой бутылке вина, найденной в немецком Шпайере?",
+   "en": "How old is the oldest unopened bottle of wine, found in Speyer, Germany?"
+  },
+  "answer": 1700,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 50,
+  "tolerance": 350,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Её запечатали римляне около 325–350 годов, и учёные до сих пор не решаются её открыть.",
+   "en": "Romans sealed it around 325 to 350 AD, and scientists still do not dare to open it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Speyer_wine_bottle",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько секунд, по правилам пивоварни, должна наливаться пинта «Гиннесса»?",
+   "en": "By the brewery's rules, how many seconds should pouring a pint of Guinness take?"
+  },
+  "answer": 120,
+  "range": [
+   0,
+   600
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "с",
+   "en": "seconds"
+  },
+  "fact": {
+   "ru": "Пинту наливают в два приёма и дают ей отстояться, чтобы азотные пузырьки собрались в сливочную пену.",
+   "en": "It is poured in two stages and left to settle so the nitrogen bubbles build a creamy head."
+  },
+  "source": "https://en.wikipedia.org/wiki/Guinness",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году Джозеф Пристли придумал, как насыщать воду углекислым газом?",
+   "en": "In what year did Joseph Priestley find a way to put fizz into water?"
+  },
+  "answer": 1767,
+  "range": [
+   1600,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Он держал воду над чаном с бродящим пивом на пивоварне в Лидсе, и газ брожения растворялся в ней.",
+   "en": "He held water over a fermenting vat at a Leeds brewery, and the gas from the vat dissolved into it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Carbonated_water"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году туринец Анджело Мориондо запатентовал паровую кофемашину, прабабушку эспрессо?",
+   "en": "In what year did Angelo Moriondo of Turin patent a steam coffee machine, the ancestor of espresso?"
+  },
+  "answer": 1884,
+  "range": [
+   1500,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Она варила кофе сразу на много чашек для бара; машину, которая готовит каждую чашку отдельно, Луиджи Беццера заявил в 1901 году.",
+   "en": "It brewed coffee in bulk for a bar; Luigi Bezzera filed for a machine that makes each cup separately in 1901."
+  },
+  "source": "https://en.wikipedia.org/wiki/Espresso_machine"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько стаканов кока-колы в среднем продавали в день в первый год, в 1886-м?",
+   "en": "In its first year, 1886, how many glasses of Coca-Cola were sold per day on average?"
+  },
+  "answer": 9,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "стаканов",
+   "en": "glasses"
+  },
+  "fact": {
+   "ru": "Стакан стоил пять центов в аптеке Джейкобса в Атланте, где колу впервые налили в мае 1886 года.",
+   "en": "A glass cost five cents at Jacobs' Pharmacy in Atlanta, where it was first poured in May 1886."
+  },
+  "source": "https://www.coca-colacompany.com/about-us/history/the-birth-of-a-refreshing-idea"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько тонн чая бостонские колонисты высыпали в гавань в 1773 году?",
+   "en": "How many tonnes of tea did Boston colonists tip into the harbour in 1773?"
+  },
+  "answer": 42,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "т",
+   "en": "tonnes"
+  },
+  "fact": {
+   "ru": "Это около 340 ящиков чая Ост-Индской компании: так колонисты протестовали против налога, введённого без их согласия.",
+   "en": "That was some 340 chests of East India Company tea, dumped in protest at a tax set without the colonists' say."
+  },
+  "source": "https://en.wikipedia.org/wiki/Boston_Tea_Party"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько обычных бутылок вмещает огромная винная бутылка «Навуходоносор»?",
+   "en": "How many standard bottles does a giant 'Nebuchadnezzar' wine bottle hold?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "бутылок",
+   "en": "bottles"
+  },
+  "fact": {
+   "ru": "Это 15 литров; большие бутылки по традиции называют в честь библейских царей и патриархов: Мафусаил, Валтасар, Салманасар.",
+   "en": "That is 15 litres; big bottles are traditionally named after biblical kings and patriarchs: Methuselah, Balthazar, Salmanazar."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wine_bottle",
+  "kids": false
+ }
+]

@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из какой страны пришёл обычай наряжать ёлку дома?",
+   "en": "Which country gave us the custom of decorating a tree at home?"
+  },
+  "options": [
+   {
+    "ru": "Германия",
+    "en": "Germany"
+   },
+   {
+    "ru": "США",
+    "en": "The USA"
+   },
+   {
+    "ru": "Италия",
+    "en": "Italy"
+   },
+   {
+    "ru": "Испания",
+    "en": "Spain"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ёлки ставили в домах германских земель уже в XVI веке, а по миру моду разнесли немецкие эмигранты и принц Альберт, немецкий муж королевы Виктории.",
+   "en": "German homes had trees by the 1500s; German emigrants and Prince Albert, Queen Victoria's German husband, spread the fashion."
+  },
+  "source": "https://en.wikipedia.org/wiki/Christmas_tree"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что сжигают в последний день Масленицы?",
+   "en": "What is burned on the last day of Maslenitsa?"
+  },
+  "options": [
+   {
+    "ru": "Соломенное чучело",
+    "en": "A straw effigy"
+   },
+   {
+    "ru": "Старую ёлку",
+    "en": "The old New Year tree"
+   },
+   {
+    "ru": "Старые письма",
+    "en": "Old letters"
+   },
+   {
+    "ru": "Деревянную лодку",
+    "en": "A wooden boat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Чучело — это сама Масленица: её сжигают, провожая зиму, а на следующий день начинается Великий пост.",
+   "en": "The effigy is Lady Maslenitsa herself: burning her sees winter off, and Great Lent begins the next day."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Масленица"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Дивали — один из главных праздников Индии. Как его ещё называют?",
+   "en": "Diwali is one of India's biggest holidays. What is it also known as?"
+  },
+  "options": [
+   {
+    "ru": "Праздник огней",
+    "en": "The festival of lights"
+   },
+   {
+    "ru": "Праздник масок",
+    "en": "The festival of masks"
+   },
+   {
+    "ru": "Праздник воздушных змеев",
+    "en": "The festival of kites"
+   },
+   {
+    "ru": "Праздник воды",
+    "en": "The festival of water"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Название происходит от санскритского «дипавали» — «ряд светильников»: в эти дни дома уставляют глиняными масляными лампадками.",
+   "en": "The name comes from Sanskrit deepavali, 'row of lamps': homes are lined with little clay oil lamps."
+  },
+  "source": "https://en.wikipedia.org/wiki/Diwali"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какого животного НЕТ в китайском гороскопе?",
+   "en": "Which animal is NOT in the Chinese zodiac?"
+  },
+  "options": [
+   {
+    "ru": "Кот",
+    "en": "Cat"
+   },
+   {
+    "ru": "Крыса",
+    "en": "Rat"
+   },
+   {
+    "ru": "Свинья",
+    "en": "Pig"
+   },
+   {
+    "ru": "Петух",
+    "en": "Rooster"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "А во вьетнамском гороскопе кот есть: там он занимает место кролика.",
+   "en": "Vietnam's zodiac does have a cat: there it takes the rabbit's place."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chinese_zodiac"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На каком индийском празднике все обсыпают друг друга цветным порошком?",
+   "en": "At which Indian festival does everyone throw coloured powder at each other?"
+  },
+  "options": [
+   {
+    "ru": "Холи",
+    "en": "Holi"
+   },
+   {
+    "ru": "Дивали",
+    "en": "Diwali"
+   },
+   {
+    "ru": "Навруз",
+    "en": "Nowruz"
+   },
+   {
+    "ru": "Ханука",
+    "en": "Hanukkah"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Холи встречает весну, а цветной порошок гулал когда-то делали из цветов и трав.",
+   "en": "Holi welcomes spring, and its coloured powder, gulal, was once made from flowers and herbs."
+  },
+  "source": "https://en.wikipedia.org/wiki/Holi"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "За чем бегут вниз по крутому холму на ежегодном празднике в английском Глостершире?",
+   "en": "What do people chase down a steep hill at a yearly festival in Gloucestershire, England?"
+  },
+  "options": [
+   {
+    "ru": "За кругом сыра",
+    "en": "A wheel of cheese"
+   },
+   {
+    "ru": "За поросёнком",
+    "en": "A piglet"
+   },
+   {
+    "ru": "За бочкой",
+    "en": "A barrel"
+   },
+   {
+    "ru": "За тыквой",
+    "en": "A pumpkin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сыр весит 3–4 кг и катится так быстро, что поймать его почти нельзя: приз достаётся тому, кто первым добежит до низа.",
+   "en": "The 3–4 kg cheese rolls so fast it is nearly uncatchable, so the prize goes to whoever reaches the bottom first."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cooper%27s_Hill_Cheese-Rolling_and_Wake"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что в Испании едят в новогоднюю полночь — по штуке на каждый удар часов?",
+   "en": "In Spain, what do people eat at New Year's midnight, one with each chime?"
+  },
+  "options": [
+   {
+    "ru": "Виноградины",
+    "en": "Grapes"
+   },
+   {
+    "ru": "Оливки",
+    "en": "Olives"
+   },
+   {
+    "ru": "Вишни",
+    "en": "Cherries"
+   },
+   {
+    "ru": "Миндаль",
+    "en": "Almonds"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Обычай известен с конца XIX века, а в 1909 году виноградари Аликанте раскрутили его, чтобы продать огромный урожай.",
+   "en": "The custom goes back to at least 1895; in 1909 Alicante growers promoted it to sell off a huge grape surplus."
+  },
+  "source": "https://en.wikipedia.org/wiki/Twelve_Grapes"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Рованиеми называют официальной родиной Санта-Клауса. В какой это стране?",
+   "en": "Rovaniemi calls itself Santa Claus's official home town. Which country is it in?"
+  },
+  "options": [
+   {
+    "ru": "Финляндия",
+    "en": "Finland"
+   },
+   {
+    "ru": "Норвегия",
+    "en": "Norway"
+   },
+   {
+    "ru": "Швеция",
+    "en": "Sweden"
+   },
+   {
+    "ru": "Исландия",
+    "en": "Iceland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Через Деревню Санта-Клауса прочерчена линия Полярного круга, хотя сам круг давно сместился примерно на 700 м к северу.",
+   "en": "A line across Santa Claus Village marks the Arctic Circle, though the real circle has drifted about 700 m north."
+  },
+  "source": "https://en.wikipedia.org/wiki/Santa_Claus_Village"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое главное угощение Масленицы?",
+   "en": "What is the signature food of Maslenitsa?"
+  },
+  "options": [
+   {
+    "ru": "Блины",
+    "en": "Pancakes (blini)"
+   },
+   {
+    "ru": "Пельмени",
+    "en": "Dumplings (pelmeni)"
+   },
+   {
+    "ru": "Кулич",
+    "en": "Easter cake (kulich)"
+   },
+   {
+    "ru": "Окрошка",
+    "en": "Cold soup (okroshka)"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Блин как «символ солнца» — выдумка учёных XIX века: на деле блины издревле были поминальной едой.",
+   "en": "'Pancake as sun' was dreamed up by 19th-century scholars: blini were really an old food for honouring the dead."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Масленица"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что кладут в красные конверты, которые дарят на китайский Новый год?",
+   "en": "What goes inside the red envelopes given at Chinese New Year?"
+  },
+  "options": [
+   {
+    "ru": "Деньги",
+    "en": "Money"
+   },
+   {
+    "ru": "Чай",
+    "en": "Tea"
+   },
+   {
+    "ru": "Записки с предсказаниями",
+    "en": "Fortune slips"
+   },
+   {
+    "ru": "Семена",
+    "en": "Seeds"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сумма важна: четвёрок избегают — «четыре» по-китайски звучит почти как «смерть», а нечётные суммы дарят на похоронах.",
+   "en": "The amount matters: no fours, since 'four' sounds like 'death' in Chinese, and odd sums are for funerals."
+  },
+  "source": "https://en.wikipedia.org/wiki/Red_envelope"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем непременно угощают друг друга в Китае на Праздник середины осени?",
+   "en": "What treat do people in China always share at the Mid-Autumn Festival?"
+  },
+  "options": [
+   {
+    "ru": "Лунными пряниками",
+    "en": "Mooncakes"
+   },
+   {
+    "ru": "Печеньем с предсказаниями",
+    "en": "Fortune cookies"
+   },
+   {
+    "ru": "Чаем с шариками тапиоки",
+    "en": "Bubble tea"
+   },
+   {
+    "ru": "Блинами",
+    "en": "Pancakes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Праздник приходится на полнолуние, и круглый пряник — это и луна, и семья, собравшаяся вместе.",
+   "en": "The festival falls on a full moon, and the round cake stands for both the moon and a family reunited."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mooncake"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кому устраивают ежегодный пир с горами фруктов в тайском городе Лопбури?",
+   "en": "Who gets a yearly feast with mountains of fruit in the Thai town of Lopburi?"
+  },
+  "options": [
+   {
+    "ru": "Обезьянам",
+    "en": "Monkeys"
+   },
+   {
+    "ru": "Слонам",
+    "en": "Elephants"
+   },
+   {
+    "ru": "Кошкам",
+    "en": "Cats"
+   },
+   {
+    "ru": "Крокодилам",
+    "en": "Crocodiles"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тысячи макак живут прямо в городе у древнего храма, а пир придумал в 1989 году местный отельер, чтобы привлечь туристов.",
+   "en": "Thousands of macaques live in town around an ancient temple; a local hotelier began the feast in 1989 to draw tourists."
+  },
+  "source": "https://en.wikipedia.org/wiki/Monkey_Buffet_Festival"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что на мексиканских рождественских праздниках разбивают палкой с завязанными глазами?",
+   "en": "At Mexican Christmas parties, what do blindfolded children smash with a stick?"
+  },
+  "options": [
+   {
+    "ru": "Пиньяту",
+    "en": "A piñata"
+   },
+   {
+    "ru": "Кокос",
+    "en": "A coconut"
+   },
+   {
+    "ru": "Арбуз",
+    "en": "A watermelon"
+   },
+   {
+    "ru": "Ледяную фигуру",
+    "en": "An ice sculpture"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Семь лучей классической пиньяты означали семь смертных грехов: разбить её — значит победить искушение.",
+   "en": "The classic piñata's seven points stood for the seven deadly sins: breaking it meant beating temptation."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pi%C3%B1ata"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что делают тайцы на свой Новый год Сонгкран в апреле?",
+   "en": "What do Thais do at Songkran, their New Year in April?"
+  },
+  "options": [
+   {
+    "ru": "Обливают всех водой",
+    "en": "Splash water on everyone"
+   },
+   {
+    "ru": "Запускают в небо фонарики",
+    "en": "Release sky lanterns"
+   },
+   {
+    "ru": "Постятся весь день",
+    "en": "Fast all day"
+   },
+   {
+    "ru": "Бьют посуду",
+    "en": "Smash plates"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Всё началось с того, что статуи Будды и руки старших бережно поливали душистой водой, а выросло в битву на весь город.",
+   "en": "It began as gently pouring scented water over Buddha statues and elders' hands, and grew into a city-wide water fight."
+  },
+  "source": "https://en.wikipedia.org/wiki/Songkran_(Thailand)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что ищут в лесу в ночь на Ивана Купалу?",
+   "en": "What do people search the forest for on Ivan Kupala night?"
+  },
+  "options": [
+   {
+    "ru": "Цветок папоротника",
+    "en": "A fern flower"
+   },
+   {
+    "ru": "Подснежник",
+    "en": "A snowdrop"
+   },
+   {
+    "ru": "Белый гриб",
+    "en": "A porcini mushroom"
+   },
+   {
+    "ru": "Перо жар-птицы",
+    "en": "A Firebird feather"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Найти его не удавалось никому: папоротник размножается спорами и не цветёт никогда.",
+   "en": "No one ever found one: ferns reproduce by spores and never bloom at all."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Цветок_папоротника"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего в Ирландии вырезали фонари на Хэллоуин, пока не появились тыквы?",
+   "en": "Before pumpkins, what did the Irish carve their Halloween lanterns from?"
+  },
+  "options": [
+   {
+    "ru": "Из репы",
+    "en": "Turnips"
+   },
+   {
+    "ru": "Из огурцов",
+    "en": "Cucumbers"
+   },
+   {
+    "ru": "Из кочанов капусты",
+    "en": "Cabbages"
+   },
+   {
+    "ru": "Из арбузов",
+    "en": "Watermelons"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эмигранты привезли обычай в Америку, где тыквы оказались крупнее, а резать их было куда проще.",
+   "en": "Emigrants took the custom to America, where pumpkins turned out bigger and far easier to carve."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jack-o%27-lantern"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто дарит шоколад в Японии в День святого Валентина?",
+   "en": "Who gives chocolate on Valentine's Day in Japan?"
+  },
+  "options": [
+   {
+    "ru": "Женщины мужчинам",
+    "en": "Women to men"
+   },
+   {
+    "ru": "Мужчины женщинам",
+    "en": "Men to women"
+   },
+   {
+    "ru": "Дети учителям",
+    "en": "Children to teachers"
+   },
+   {
+    "ru": "Начальники подчинённым",
+    "en": "Bosses to their staff"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мужчины отвечают ровно через месяц, 14 марта, в «Белый день» — его придумали кондитеры.",
+   "en": "Men return the favour a month later, on 14 March, 'White Day', a holiday dreamed up by confectioners."
+  },
+  "source": "https://en.wikipedia.org/wiki/White_Day"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что едят на Рождество множество японских семей?",
+   "en": "What do many Japanese families eat for Christmas?"
+  },
+  "options": [
+   {
+    "ru": "Курицу из KFC",
+    "en": "KFC fried chicken"
+   },
+   {
+    "ru": "Жареную индейку",
+    "en": "Roast turkey"
+   },
+   {
+    "ru": "Гуся с яблоками",
+    "en": "Goose with apples"
+   },
+   {
+    "ru": "Запечённого кабана",
+    "en": "Roast wild boar"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1974 году KFC запустил рекламу «Кентукки на Рождество», и теперь праздничные вёдра заказывают за недели вперёд.",
+   "en": "A 1974 'Kentucky for Christmas' campaign started it; now festive buckets are ordered weeks in advance."
+  },
+  "source": "https://global.kfc.com/stories/how-kentucky-for-christmas-began-in-japan/"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В каком месяце начинается мюнхенский Октоберфест?",
+   "en": "In which month does Munich's Oktoberfest begin?"
+  },
+  "options": [
+   {
+    "ru": "В сентябре",
+    "en": "September"
+   },
+   {
+    "ru": "В октябре",
+    "en": "October"
+   },
+   {
+    "ru": "В августе",
+    "en": "August"
+   },
+   {
+    "ru": "В ноябре",
+    "en": "November"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Праздник сдвинули на сентябрь ради тёплой погоды, и на октябрь теперь приходятся лишь его последние дни.",
+   "en": "It was moved into September for warmer weather, so only its final days now fall in October."
+  },
+  "source": "https://en.wikipedia.org/wiki/Oktoberfest"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда, по голландской традиции, Синтерклаас приплывает в ноябре на пароходе?",
+   "en": "Where does the Dutch Sinterklaas sail in from by steamboat each November?"
+  },
+  "options": [
+   {
+    "ru": "Из Испании",
+    "en": "Spain"
+   },
+   {
+    "ru": "Из Лапландии",
+    "en": "Lapland"
+   },
+   {
+    "ru": "С Северного полюса",
+    "en": "The North Pole"
+   },
+   {
+    "ru": "Из Гренландии",
+    "en": "Greenland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Испания, видимо, вошла в легенду вместе с апельсинами, а пароход — тогдашнюю модную новинку — добавила детская книжка 1850 года.",
+   "en": "Spain probably entered the legend with oranges, and an 1850 children's book added the steamboat, then a thrilling novelty."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sinterklaas"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что делали хозяева на римских Сатурналиях в декабре?",
+   "en": "What did masters do at the Roman Saturnalia in December?"
+  },
+  "options": [
+   {
+    "ru": "Прислуживали рабам за столом",
+    "en": "Served their slaves at table"
+   },
+   {
+    "ru": "Постились неделю",
+    "en": "Fasted for a week"
+   },
+   {
+    "ru": "Молчали весь день",
+    "en": "Kept silent all day"
+   },
+   {
+    "ru": "Купались в море",
+    "en": "Swam in the sea"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На Сатурналиях всё переворачивалось: дарили подарки, открыто играли в кости и выбирали шуточного «царя пира».",
+   "en": "At Saturnalia the world turned upside down: people swapped gifts, gambled openly and chose a mock 'king of the feast'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Saturnalia"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого шотландцы мечтают увидеть первым гостем нового года?",
+   "en": "Who is the luckiest first guest of the New Year in Scotland?"
+  },
+  "options": [
+   {
+    "ru": "Высокого темноволосого мужчину",
+    "en": "A tall dark-haired man"
+   },
+   {
+    "ru": "Рыжую женщину",
+    "en": "A red-haired woman"
+   },
+   {
+    "ru": "Светловолосого мужчину",
+    "en": "A fair-haired man"
+   },
+   {
+    "ru": "Маленького ребёнка",
+    "en": "A small child"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По преданию, светловолосый незнакомец на пороге когда-то означал набег викингов, а тёмный гость нёс удачу — и уголь для очага.",
+   "en": "Legend says a fair-haired stranger at the door once meant Viking raiders; a dark one brought luck, and coal for the fire."
+  },
+  "source": "https://en.wikipedia.org/wiki/First-foot"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что датчане делают всей семьёй ровно в новогоднюю полночь?",
+   "en": "What do Danish families do together at the stroke of midnight on New Year's Eve?"
+  },
+  "options": [
+   {
+    "ru": "Спрыгивают со стульев",
+    "en": "Jump off chairs"
+   },
+   {
+    "ru": "Съедают по ложке мёда",
+    "en": "Eat a spoonful of honey"
+   },
+   {
+    "ru": "Выбегают на улицу босиком",
+    "en": "Run outside barefoot"
+   },
+   {
+    "ru": "Задувают все свечи в доме",
+    "en": "Blow out every candle"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так они буквально «впрыгивают» в новый год и оставляют трудности старого позади.",
+   "en": "They literally leap into the new year, leaving the old year's troubles behind."
+  },
+  "source": "https://en.wikipedia.org/wiki/New_Year%27s_Eve"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда в России взялся Старый Новый год 13–14 января?",
+   "en": "Why does Russia have an 'Old New Year' on 13–14 January?"
+  },
+  "options": [
+   {
+    "ru": "Из-за смены календаря в 1918 году",
+    "en": "The 1918 calendar change"
+   },
+   {
+    "ru": "Его ввёл Пётр I",
+    "en": "Peter the Great added it"
+   },
+   {
+    "ru": "Это сибирский обычай",
+    "en": "It is a Siberian custom"
+   },
+   {
+    "ru": "Его придумали для школьников",
+    "en": "It was made for schoolchildren"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Страна перешла на новый календарь, но привычку встречать Новый год «по старому стилю» сохранила — и праздников стало два.",
+   "en": "The country switched calendars but kept seeing in the New Year 'old style' too, so now it gets two."
+  },
+  "source": "https://en.wikipedia.org/wiki/Old_New_Year"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая страна каждый год дарит Лондону ёлку для Трафальгарской площади?",
+   "en": "Which country gives London a Christmas tree for Trafalgar Square every year?"
+  },
+  "options": [
+   {
+    "ru": "Норвегия",
+    "en": "Norway"
+   },
+   {
+    "ru": "Канада",
+    "en": "Canada"
+   },
+   {
+    "ru": "Финляндия",
+    "en": "Finland"
+   },
+   {
+    "ru": "Германия",
+    "en": "Germany"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 1947 года так Осло благодарит британцев за помощь во Второй мировой войне.",
+   "en": "Since 1947 it has been Oslo's thank-you to Britain for its help during the Second World War."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trafalgar_Square_Christmas_tree"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что французские дети тайком приклеивают людям на спину 1 апреля?",
+   "en": "What do French children secretly stick on people's backs on 1 April?"
+  },
+  "options": [
+   {
+    "ru": "Бумажную рыбку",
+    "en": "A paper fish"
+   },
+   {
+    "ru": "Бумажную лягушку",
+    "en": "A paper frog"
+   },
+   {
+    "ru": "Звёздочку",
+    "en": "A star"
+   },
+   {
+    "ru": "Сердечко",
+    "en": "A heart"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Розыгрыш так и называют — «апрельская рыба», а кондитерские в этот день продают шоколадных рыбок.",
+   "en": "The prank is called poisson d'avril, 'April fish', and sweet shops sell chocolate fish that day."
+  },
+  "source": "https://en.wikipedia.org/wiki/April_Fools%27_Day"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каталонские дети на Рождество бьют палками полено. Что оно делает потом?",
+   "en": "Catalan children beat a log with sticks at Christmas. What does it do then?"
+  },
+  "options": [
+   {
+    "ru": "Какает сладостями",
+    "en": "Poops out sweets"
+   },
+   {
+    "ru": "Поёт песенку",
+    "en": "Sings a song"
+   },
+   {
+    "ru": "Превращается в ёлку",
+    "en": "Turns into a tree"
+   },
+   {
+    "ru": "Убегает в лес",
+    "en": "Runs off into the forest"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Полено по имени Кага Тио неделями «кормят» и укрывают пледом, а потом поют ему песенку и колотят палками.",
+   "en": "The log, Caga Tió, is 'fed' and tucked under a blanket for weeks, then sung to and whacked with sticks."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ti%C3%B3_de_Nadal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В Альпах вместе со святым Николаем ходит рогатый демон и пугает непослушных детей. Кто это?",
+   "en": "In the Alps, a horned demon follows St Nicholas to scare naughty children. Who is he?"
+  },
+  "options": [
+   {
+    "ru": "Крампус",
+    "en": "Krampus"
+   },
+   {
+    "ru": "Гринч",
+    "en": "The Grinch"
+   },
+   {
+    "ru": "Румпельштильцхен",
+    "en": "Rumpelstiltskin"
+   },
+   {
+    "ru": "Кощей",
+    "en": "Koschei"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В ночь на 6 декабря по улицам австрийских городов до сих пор ходят толпы ряженых Крампусов в мохнатых шкурах.",
+   "en": "On the eve of 6 December, crowds dressed as shaggy Krampuses still parade through Austrian towns."
+  },
+  "source": "https://en.wikipedia.org/wiki/Krampus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто приносит подарки итальянским детям в ночь на 6 января?",
+   "en": "Who brings Italian children presents on the night before 6 January?"
+  },
+  "options": [
+   {
+    "ru": "Добрая ведьма Бефана",
+    "en": "Befana, a kind witch"
+   },
+   {
+    "ru": "Дед Мороз",
+    "en": "Ded Moroz"
+   },
+   {
+    "ru": "Пасхальный кролик",
+    "en": "The Easter Bunny"
+   },
+   {
+    "ru": "Святой Валентин",
+    "en": "Saint Valentine"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бефана летает на метле и кладёт хорошим детям в чулок сладости, а плохим — уголь.",
+   "en": "Befana flies on a broomstick, filling good children's stockings with sweets and bad ones' with coal."
+  },
+  "source": "https://en.wikipedia.org/wiki/Befana"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто, по исландской легенде, съедает тех, кому на Рождество не подарили новой одежды?",
+   "en": "In Icelandic legend, who eats people who got no new clothes for Christmas?"
+  },
+  "options": [
+   {
+    "ru": "Огромный кот",
+    "en": "A giant cat"
+   },
+   {
+    "ru": "Белый медведь",
+    "en": "A polar bear"
+   },
+   {
+    "ru": "Морской змей",
+    "en": "A sea serpent"
+   },
+   {
+    "ru": "Злой олень",
+    "en": "An evil reindeer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Рождественским котом подгоняли работников: кто успевал обработать осеннюю шерсть к празднику, получал обновку.",
+   "en": "The Yule Cat kept farm workers busy: those who finished working the autumn wool in time got new clothes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yule_Cat"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого, по легенде, отпугивают петардами и красным цветом на китайский Новый год?",
+   "en": "In legend, who are firecrackers and red decorations at Chinese New Year meant to scare off?"
+  },
+  "options": [
+   {
+    "ru": "Чудовище Нянь",
+    "en": "The beast Nian"
+   },
+   {
+    "ru": "Голодных мышей",
+    "en": "Hungry mice"
+   },
+   {
+    "ru": "Лунного зайца",
+    "en": "The Moon rabbit"
+   },
+   {
+    "ru": "Горного медведя",
+    "en": "A mountain bear"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Нянь» по-китайски значит ещё и «год», так что «встречать Новый год» можно прочесть как «пережить Няня».",
+   "en": "'Nian' also means 'year' in Chinese, so 'guo nian', to celebrate the New Year, can be read as 'to get past Nian'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nian"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что сжигают в январе на шетландском празднике Ап-Хелли-Аа?",
+   "en": "What is burned in January at Shetland's Up Helly Aa festival?"
+  },
+  "options": [
+   {
+    "ru": "Ладью викингов",
+    "en": "A Viking longship"
+   },
+   {
+    "ru": "Соломенного козла",
+    "en": "A straw goat"
+   },
+   {
+    "ru": "Чучело зимы",
+    "en": "An effigy of winter"
+   },
+   {
+    "ru": "Огромную тыкву",
+    "en": "A giant pumpkin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сотни людей с факелами проходят по Леруику и бросают их в ладью: так с XIX века шетландцы чтят своё викингское прошлое.",
+   "en": "Hundreds of torch bearers march through Lerwick and hurl their torches into the galley, a 19th-century nod to Shetland's Viking past."
+  },
+  "source": "https://en.wikipedia.org/wiki/Up_Helly_Aa"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Татьянин день, 25 января, — праздник кого?",
+   "en": "Tatiana's Day, 25 January, is a Russian holiday for whom?"
+  },
+  "options": [
+   {
+    "ru": "Студентов",
+    "en": "Students"
+   },
+   {
+    "ru": "Учителей",
+    "en": "Teachers"
+   },
+   {
+    "ru": "Библиотекарей",
+    "en": "Librarians"
+   },
+   {
+    "ru": "Моряков",
+    "en": "Sailors"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В Татьянин день 1755 года (12 января по старому стилю) императрица Елизавета подписала указ об основании Московского университета.",
+   "en": "On St Tatiana's day in 1755 (12 January, old style), Empress Elizabeth signed the decree founding Moscow University."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tatiana_Day"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Женская забастовка 8 марта 1917 года в Петрограде — какое это было число по тогдашнему календарю?",
+   "en": "Petrograd's women's strike of 8 March 1917: what date was it on Russia's calendar then?"
+  },
+  "options": [
+   {
+    "ru": "23 февраля",
+    "en": "23 February"
+   },
+   {
+    "ru": "1 мая",
+    "en": "1 May"
+   },
+   {
+    "ru": "7 ноября",
+    "en": "7 November"
+   },
+   {
+    "ru": "31 декабря",
+    "en": "31 December"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Россия жила по юлианскому календарю, так что Февральская революция началась в день, который теперь считают мужским праздником.",
+   "en": "Russia still used the Julian calendar, so the February Revolution began on what is now Russia's 'men's day'."
+  },
+  "source": "https://en.wikipedia.org/wiki/International_Women%27s_Day"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что миллионы шведов с 1960 года смотрят по телевизору каждый сочельник в три часа дня?",
+   "en": "What have millions of Swedes watched on TV at 3 pm every Christmas Eve since 1960?"
+  },
+  "options": [
+   {
+    "ru": "Мультики с Дональдом Даком",
+    "en": "Donald Duck cartoons"
+   },
+   {
+    "ru": "«Один дома»",
+    "en": "Home Alone"
+   },
+   {
+    "ru": "«Иронию судьбы»",
+    "en": "The Irony of Fate"
+   },
+   {
+    "ru": "«Лебединое озеро»",
+    "en": "Swan Lake"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Часовую подборку старых диснеевских мультфильмов смотрят около 40% шведов, и под неё подстраивают праздничный ужин.",
+   "en": "About 40% of Swedes watch the hour of old Disney cartoons, and families plan Christmas dinner around it."
+  },
+  "source": "https://en.wikipedia.org/wiki/From_All_of_Us_to_All_of_You"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего вырезают фигуры на конкурсе 23 декабря в мексиканском городе Оахака?",
+   "en": "What are figures carved from at the 23 December contest in Oaxaca, Mexico?"
+  },
+  "options": [
+   {
+    "ru": "Из огромных редисок",
+    "en": "Giant radishes"
+   },
+   {
+    "ru": "Изо льда",
+    "en": "Ice"
+   },
+   {
+    "ru": "Из тыкв",
+    "en": "Pumpkins"
+   },
+   {
+    "ru": "Из сыра",
+    "en": "Cheese"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Ночь редисок» проводят с 1897 года, а редиску для неё специально выращивают гигантской и причудливо изогнутой.",
+   "en": "The Night of the Radishes dates from 1897, and its radishes are grown huge and twisted on purpose."
+  },
+  "source": "https://en.wikipedia.org/wiki/Night_of_the_Radishes"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Большой парад Дня мёртвых в Мехико впервые прошёл в 2016 году. Что его вдохновило?",
+   "en": "Mexico City's big Day of the Dead parade began in 2016. What inspired it?"
+  },
+  "options": [
+   {
+    "ru": "Фильм о Джеймсе Бонде",
+    "en": "A James Bond film"
+   },
+   {
+    "ru": "Мультфильм «Тайна Коко»",
+    "en": "Pixar's Coco"
+   },
+   {
+    "ru": "Древний обряд ацтеков",
+    "en": "An ancient Aztec rite"
+   },
+   {
+    "ru": "Олимпиада в Мехико",
+    "en": "The Mexico City Olympics"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Парад придумали для начала фильма «007: Спектр» (2015), туристы стали его искать — и город сделал его настоящим.",
+   "en": "The parade was invented for the opening of Spectre (2015); tourists came looking for it, so the city made it real."
+  },
+  "source": "https://en.wikipedia.org/wiki/Day_of_the_Dead"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Когда празднуют Навруз — Новый год в Иране и Средней Азии?",
+   "en": "When is Nowruz, the New Year of Iran and Central Asia, celebrated?"
+  },
+  "options": [
+   {
+    "ru": "В день весеннего равноденствия",
+    "en": "On the spring equinox"
+   },
+   {
+    "ru": "В день зимнего солнцестояния",
+    "en": "On the winter solstice"
+   },
+   {
+    "ru": "1 января",
+    "en": "On 1 January"
+   },
+   {
+    "ru": "С первым снегом",
+    "en": "With the first snow"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Навруз» по-персидски значит «новый день»: с него в Иране начинается год, а отмечают его больше трёх тысяч лет.",
+   "en": "Nowruz means 'new day' in Persian: it opens Iran's calendar year and has been celebrated for over 3,000 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nowruz"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Самое раннее известное празднование Рождества 25 декабря было в Риме. В каком году?",
+   "en": "The earliest known Christmas on 25 December was held in Rome. In which year?"
+  },
+  "answer": 336,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 50,
+  "unit": {
+   "ru": "год н. э.",
+   "en": "year AD"
+  },
+  "fact": {
+   "ru": "Почему именно 25 декабря, спорят до сих пор, но в римском календаре это был день зимнего солнцестояния.",
+   "en": "Why 25 December is still debated, but on the Roman calendar it was the day of the winter solstice."
+  },
+  "source": "https://en.wikipedia.org/wiki/Christmas"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько раз бьют колокола японских буддийских храмов в новогоднюю ночь?",
+   "en": "How many times do Japanese Buddhist temple bells ring on New Year's Eve?"
+  },
+  "answer": 108,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "ударов",
+   "en": "strikes"
+  },
+  "fact": {
+   "ru": "Чаще всего объясняют так: буддизм насчитывает у человека 108 земных страстей, и каждый удар изгоняет одну из них.",
+   "en": "The usual explanation: Buddhism counts 108 earthly desires, and each strike of the bell drives one away."
+  },
+  "source": "https://en.wikipedia.org/wiki/Joya_no_Kane"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько рождественских парней — троллей-проказников — навещают исландских детей перед Рождеством?",
+   "en": "How many Yule Lads, prankster trolls, visit Icelandic children before Christmas?"
+  },
+  "answer": 13,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "",
+   "en": ""
+  },
+  "fact": {
+   "ru": "Они приходят по одному за ночь, и у каждого своя шалость: один облизывает ложки, другой хлопает дверьми, третий ворует колбасу.",
+   "en": "They come one per night, each with his own mischief: one licks spoons, one slams doors, one swipes sausages."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yule_Lads"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году в Англии напечатали первую рождественскую открытку на продажу?",
+   "en": "In which year was the first commercial Christmas card printed in England?"
+  },
+  "answer": 1843,
+  "range": [
+   1600,
+   1950
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Её заказал сэр Генри Коул, который тремя годами раньше помог ввести «пенни-почту» — дешёвую пересылку писем.",
+   "en": "Sir Henry Cole ordered it; three years earlier he had helped bring in the Penny Post, which made sending mail cheap."
+  },
+  "source": "https://en.wikipedia.org/wiki/Christmas_card"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году впервые напечатали песенку Jingle Bells?",
+   "en": "In which year was the song 'Jingle Bells' first published?"
+  },
+  "answer": 1857,
+  "range": [
+   1600,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "В 1965 году она одной из первых прозвучала из космоса: экипаж «Джемини-6» сыграл её на губной гармошке и бубенцах.",
+   "en": "In 1965 it was one of the first songs played from space: the Gemini 6 crew performed it on a harmonica and bells."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jingle_Bells"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году запустили проект «Великий Устюг — родина Деда Мороза»?",
+   "en": "In which year did the 'Veliky Ustyug, home of Ded Moroz' project start?"
+  },
+  "answer": 1998,
+  "range": [
+   1900,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "А «официальный» день рождения Деда Мороза — 18 ноября: примерно тогда в Великом Устюге ударяют первые сильные морозы.",
+   "en": "His 'official' birthday is 18 November, roughly when the first hard frosts usually hit Veliky Ustyug."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Дед_Мороз"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько часов новогодняя полночь идёт по Земле от первого часового пояса до последнего?",
+   "en": "How many hours does New Year's midnight take to cross the Earth, first time zone to last?"
+  },
+  "answer": 26,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "часов",
+   "en": "hours"
+  },
+  "fact": {
+   "ru": "Выходит больше суток, потому что линия перемены дат петляет вокруг островов Тихого океана: пояса идут от UTC+14 до UTC−12.",
+   "en": "It's more than a day because the date line zigzags around Pacific islands, so time zones run from UTC+14 to UTC−12."
+  },
+  "source": "https://en.wikipedia.org/wiki/UTC%2B14:00"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году прошёл первый Октоберфест?",
+   "en": "In which year was the first Oktoberfest held?"
+  },
+  "answer": 1810,
+  "range": [
+   1700,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Так Мюнхен праздновал свадьбу кронпринца Людвига и принцессы Терезы, а главным событием были скачки.",
+   "en": "Munich was celebrating the wedding of Crown Prince Ludwig and Princess Therese, and the main event was a horse race."
+  },
+  "source": "https://en.wikipedia.org/wiki/Oktoberfest"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году в шведском городе Евле впервые поставили гигантского соломенного козла?",
+   "en": "In which year did the Swedish town of Gävle first build its giant straw Christmas goat?"
+  },
+  "answer": 1966,
+  "range": [
+   1850,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Козла сожгли уже в первую новогоднюю ночь, и с тех пор поджигатели не раз повторяли этот «подвиг».",
+   "en": "It was burnt down on its very first New Year's Eve, and arsonists have repeated the feat many times since."
+  },
+  "source": "https://en.wikipedia.org/wiki/G%C3%A4vle_goat"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет длится полный цикл китайского календаря из 12 животных и 5 стихий?",
+   "en": "How many years is a full cycle of the Chinese calendar, with 12 animals and 5 elements?"
+  },
+  "answer": 60,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Животные меняются каждый год, а стихии — раз в два года, поэтому одна и та же пара повторяется лишь через 60 лет.",
+   "en": "Animals change every year and elements every two years, so the same pair only comes round every 60 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sexagenary_cycle"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько всего свечей зажигают за восемь вечеров Хануки, не считая свечи-помощницы?",
+   "en": "Across all eight nights of Hanukkah, how many candles are lit, not counting the helper candle?"
+  },
+  "answer": 36,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "свечей",
+   "en": "candles"
+  },
+  "fact": {
+   "ru": "В первый вечер зажигают одну свечу, во второй две — и так до восьми: 1+2+…+8 = 36.",
+   "en": "One candle on the first night, two on the second and so on up to eight: 1+2+…+8 = 36."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hanukkah_menorah"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году в испанском Буньоле прошла первая «томатная битва»?",
+   "en": "In which year was the first tomato fight held in Buñol, Spain?"
+  },
+  "answer": 1945,
+  "range": [
+   1900,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Молодёжь подралась на параде и похватала помидоры с овощного прилавка, а через год пришла уже со своими.",
+   "en": "Young people brawling at a parade grabbed tomatoes from a vegetable stall, and next year they came back with their own."
+  },
+  "source": "https://en.wikipedia.org/wiki/La_Tomatina"
+ }
+]

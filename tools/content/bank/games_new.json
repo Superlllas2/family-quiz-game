@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как зовут зелёного монстра из Minecraft, который подкрадывается и взрывается?",
+   "en": "What is the green Minecraft monster that sneaks up on you and explodes?"
+  },
+  "options": [
+   {
+    "ru": "Крипер",
+    "en": "Creeper"
+   },
+   {
+    "ru": "Эндермен",
+    "en": "Enderman"
+   },
+   {
+    "ru": "Гаст",
+    "en": "Ghast"
+   },
+   {
+    "ru": "Слизень",
+    "en": "Slime"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Крипер родился из ошибки: Нотч перепутал размеры, когда делал модель свиньи, и вышло высокое существо на четырёх ножках.",
+   "en": "The Creeper was a mistake: Notch mixed up the sizes while modelling a pig and got a tall four-legged thing."
+  },
+  "source": "https://minecraft.wiki/w/Creeper"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Игры «Ведьмак» сделаны по книгам писателя из какой страны?",
+   "en": "The Witcher games are based on books by a writer from which country?"
+  },
+  "options": [
+   {
+    "ru": "Польша",
+    "en": "Poland"
+   },
+   {
+    "ru": "Чехия",
+    "en": "Czech Republic"
+   },
+   {
+    "ru": "Финляндия",
+    "en": "Finland"
+   },
+   {
+    "ru": "Венгрия",
+    "en": "Hungary"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Анджей Сапковский продал права на игры за разовую сумму, а не за процент с продаж, и после их успеха потребовал доплату.",
+   "en": "Andrzej Sapkowski sold the game rights for a flat fee, not royalties, and once the games were hits he demanded more."
+  },
+  "source": "https://en.wikipedia.org/wiki/Andrzej_Sapkowski"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто в Angry Birds крадёт у птиц яйца?",
+   "en": "Who steals the birds' eggs in Angry Birds?"
+  },
+  "options": [
+   {
+    "ru": "Свиньи",
+    "en": "Pigs"
+   },
+   {
+    "ru": "Кошки",
+    "en": "Cats"
+   },
+   {
+    "ru": "Лисы",
+    "en": "Foxes"
+   },
+   {
+    "ru": "Змеи",
+    "en": "Snakes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До Angry Birds студия Rovio сделала 51 игру, в основном на заказ для других издателей; прославила её только 52-я.",
+   "en": "Before Angry Birds, Rovio had made 51 games, mostly to order for other publishers; only the 52nd made it famous."
+  },
+  "source": "https://en.wikipedia.org/wiki/Angry_Birds_(video_game)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "GTA — это Grand Theft Auto. Что значат эти английские слова?",
+   "en": "GTA stands for Grand Theft Auto. What does that phrase mean?"
+  },
+  "options": [
+   {
+    "ru": "Угон машины",
+    "en": "Car theft"
+   },
+   {
+    "ru": "Гонки по большому городу",
+    "en": "Big city racing"
+   },
+   {
+    "ru": "Великий автопробег",
+    "en": "A great road trip"
+   },
+   {
+    "ru": "Автомобильная мафия",
+    "en": "The car mafia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В США grand theft auto — юридический термин: так в законах называют угон автомобиля.",
+   "en": "In the US, grand theft auto is the legal term for stealing a motor vehicle."
+  },
+  "source": "https://en.wikipedia.org/wiki/Grand_Theft_Auto"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что в The Last of Us превращает людей в чудовищ?",
+   "en": "What turns people into monsters in The Last of Us?"
+  },
+  "options": [
+   {
+    "ru": "Грибок",
+    "en": "A fungus"
+   },
+   {
+    "ru": "Радиация",
+    "en": "Radiation"
+   },
+   {
+    "ru": "Инопланетный паразит",
+    "en": "An alien parasite"
+   },
+   {
+    "ru": "Укус вампира",
+    "en": "A vampire bite"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Идею подсказал фильм BBC «Планета Земля»: настоящий гриб кордицепс захватывает тела муравьёв и управляет ими.",
+   "en": "The idea came from BBC's Planet Earth: the real cordyceps fungus takes over ants' bodies and steers them."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Last_of_Us"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько героев в одной команде в матче Dota 2?",
+   "en": "How many heroes are on each team in a Dota 2 match?"
+  },
+  "options": [
+   {
+    "ru": "3",
+    "en": "3"
+   },
+   {
+    "ru": "4",
+    "en": "4"
+   },
+   {
+    "ru": "5",
+    "en": "5"
+   },
+   {
+    "ru": "6",
+    "en": "6"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Dota — это Defense of the Ancients, любительский мод для Warcraft III, из которого выросла Dota 2.",
+   "en": "Dota is short for Defense of the Ancients, a fan-made mod for Warcraft III that grew into Dota 2."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dota_2"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая голливудская звезда сыграла одну из главных ролей в Cyberpunk 2077?",
+   "en": "Which Hollywood star plays a major role in Cyberpunk 2077?"
+  },
+  "options": [
+   {
+    "ru": "Киану Ривз",
+    "en": "Keanu Reeves"
+   },
+   {
+    "ru": "Том Круз",
+    "en": "Tom Cruise"
+   },
+   {
+    "ru": "Брэд Питт",
+    "en": "Brad Pitt"
+   },
+   {
+    "ru": "Джонни Депп",
+    "en": "Johnny Depp"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На E3 2019 зритель крикнул Ривзу «Ты потрясающий!», а тот ответил «Нет, это ты потрясающий!» — и родился мем.",
+   "en": "At E3 2019 a fan shouted \"You're breathtaking!\" and Reeves replied \"No, you're breathtaking!\", and a meme was born."
+  },
+  "source": "https://en.wikipedia.org/wiki/Keanu_Reeves"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем игроки бьют по мячу в футбольной игре Rocket League?",
+   "en": "What do players use to hit the ball in the football game Rocket League?"
+  },
+  "options": [
+   {
+    "ru": "Машинами",
+    "en": "Cars"
+   },
+   {
+    "ru": "Роботами",
+    "en": "Robots"
+   },
+   {
+    "ru": "Драконами",
+    "en": "Dragons"
+   },
+   {
+    "ru": "Лодками",
+    "en": "Boats"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У её предшественницы 2008 года было чудовищное название: Supersonic Acrobatic Rocket-Powered Battle-Cars.",
+   "en": "Its 2008 predecessor had a monster of a name: Supersonic Acrobatic Rocket-Powered Battle-Cars."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rocket_League"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как в Among Us предатель тайно перемещается по кораблю?",
+   "en": "How does the impostor secretly move around the ship in Among Us?"
+  },
+  "options": [
+   {
+    "ru": "Через вентиляцию",
+    "en": "Through the vents"
+   },
+   {
+    "ru": "Через телепорт",
+    "en": "By teleporter"
+   },
+   {
+    "ru": "На лифте",
+    "en": "By lift"
+   },
+   {
+    "ru": "В шкафу на колёсах",
+    "en": "Inside a rolling wardrobe"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Крошечная студия Innersloth выпустила игру в 2018 году, и два года её почти не замечали, пока в 2020-м её не подхватили стримеры.",
+   "en": "Tiny studio Innersloth released it in 2018, and it went almost unnoticed for two years until streamers picked it up in 2020."
+  },
+  "source": "https://en.wikipedia.org/wiki/Among_Us"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда игроки прыгают на остров в начале матча Fortnite?",
+   "en": "Where do players jump from at the start of a Fortnite match?"
+  },
+  "options": [
+   {
+    "ru": "С летающего автобуса",
+    "en": "A flying bus"
+   },
+   {
+    "ru": "С самолёта",
+    "en": "A plane"
+   },
+   {
+    "ru": "С ракеты",
+    "en": "A rocket"
+   },
+   {
+    "ru": "С дирижабля",
+    "en": "An airship"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Идея пришла в 2017 году в такси: руководители Epic ехали на встречу и проезжали мимо обычного школьного автобуса.",
+   "en": "The idea came in 2017 in an Uber: Epic's bosses, on their way to a meeting, passed an ordinary school bus."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fortnite_Battle_Royale"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Стражник в Skyrim: «Я тоже был искателем приключений, пока не получил стрелу в…»",
+   "en": "A Skyrim guard: \"I used to be an adventurer like you, then I took an arrow in the...\""
+  },
+  "options": [
+   {
+    "ru": "колено",
+    "en": "knee"
+   },
+   {
+    "ru": "спину",
+    "en": "back"
+   },
+   {
+    "ru": "сердце",
+    "en": "heart"
+   },
+   {
+    "ru": "глаз",
+    "en": "eye"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эту фразу повторяли десятки стражников, и в 2011 году она стала одним из главных мемов интернета.",
+   "en": "Dozens of guards repeat the line, which made it one of the internet's biggest memes of 2011."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько главных героев в сюжете GTA V?",
+   "en": "How many main playable characters does GTA V's story have?"
+  },
+  "options": [
+   {
+    "ru": "Один",
+    "en": "One"
+   },
+   {
+    "ru": "Два",
+    "en": "Two"
+   },
+   {
+    "ru": "Три",
+    "en": "Three"
+   },
+   {
+    "ru": "Пять",
+    "en": "Five"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Майкл, Франклин и Тревор: впервые в серии героев трое, и между ними можно переключаться почти в любой момент.",
+   "en": "Michael, Franklin and Trevor: the series' first three-hero story, and you can switch between them almost any time."
+  },
+  "source": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как называется игровая валюта Roblox?",
+   "en": "What is Roblox's in-game currency called?"
+  },
+  "options": [
+   {
+    "ru": "Робаксы",
+    "en": "Robux"
+   },
+   {
+    "ru": "Вибаксы",
+    "en": "V-Bucks"
+   },
+   {
+    "ru": "Симолеоны",
+    "en": "Simoleons"
+   },
+   {
+    "ru": "Рубины",
+    "en": "Rubies"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Roblox вышел ещё в 2006 году — он старше большинства детей, которые в него сейчас играют.",
+   "en": "Roblox came out back in 2006, so it is older than most of the children who play it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Roblox"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что нужно делать в Pokémon GO, чтобы находить новых покемонов?",
+   "en": "What do you have to do in Pokémon GO to find new Pokémon?"
+  },
+  "options": [
+   {
+    "ru": "Гулять по улицам",
+    "en": "Walk around outside"
+   },
+   {
+    "ru": "Решать головоломки",
+    "en": "Solve puzzles"
+   },
+   {
+    "ru": "Выигрывать гонки",
+    "en": "Win races"
+   },
+   {
+    "ru": "Звонить друзьям",
+    "en": "Phone your friends"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Многие покестопы — бывшие «порталы» из Ingress, прошлой игры Niantic: их места когда-то предложили сами игроки.",
+   "en": "Many PokéStops are old portals from Ingress, Niantic's earlier game, whose spots were suggested by players."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что значит «gg», которое игроки пишут в чат в конце онлайн-матча?",
+   "en": "What do players mean when they type \"gg\" at the end of an online match?"
+  },
+  "options": [
+   {
+    "ru": "Хорошая игра",
+    "en": "Good game"
+   },
+   {
+    "ru": "Давай-давай",
+    "en": "Go go"
+   },
+   {
+    "ru": "Сдаю ход",
+    "en": "Give go"
+   },
+   {
+    "ru": "Большое оружие",
+    "en": "Great gun"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это цифровое рукопожатие после матча; а «gg» посреди игры означает, что исход, похоже, уже решён.",
+   "en": "It is a digital handshake after a match; typed mid-game, \"gg\" means the result already looks settled."
+  },
+  "source": "https://en.wikipedia.org/wiki/Glossary_of_video_game_terms"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой игрой Fortnite задумывался изначально, до «королевской битвы»?",
+   "en": "What was Fortnite originally designed as, before battle royale?"
+  },
+  "options": [
+   {
+    "ru": "Строить форты против зомби",
+    "en": "Building forts against zombies"
+   },
+   {
+    "ru": "Гонки на картах",
+    "en": "Kart racing"
+   },
+   {
+    "ru": "Футбольный симулятор",
+    "en": "A football sim"
+   },
+   {
+    "ru": "Танцевальная игра",
+    "en": "A dance game"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Режим «Сражение с Бурей» делали около шести лет, а «королевскую битву» по мотивам PUBG собрали примерно за два месяца.",
+   "en": "Save the World took about six years to make; the PUBG-inspired battle royale mode was built in about two months."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fortnite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем Nintendo специально покрыла картриджи для Switch?",
+   "en": "What did Nintendo deliberately coat Switch game cards with?"
+  },
+  "options": [
+   {
+    "ru": "Горьким веществом",
+    "en": "A bitter substance"
+   },
+   {
+    "ru": "Клубничным ароматом",
+    "en": "Strawberry scent"
+   },
+   {
+    "ru": "Светящейся краской",
+    "en": "Glow-in-the-dark paint"
+   },
+   {
+    "ru": "Магнитным слоем",
+    "en": "A magnetic layer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Картриджи крошечные, и горечь (денатониум бензоат) отбивает у малышей желание их проглотить.",
+   "en": "The cards are tiny, and the bitter coating (denatonium benzoate) stops small children from swallowing them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nintendo_Switch"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2005 году в World of Warcraft вспыхнула виртуальная чума. Кого она заинтересовала?",
+   "en": "In 2005 a virtual plague broke out in World of Warcraft. Who got interested?"
+  },
+  "options": [
+   {
+    "ru": "Эпидемиологов",
+    "en": "Epidemiologists"
+   },
+   {
+    "ru": "Интерпол",
+    "en": "Interpol"
+   },
+   {
+    "ru": "НАСА",
+    "en": "NASA"
+   },
+   {
+    "ru": "Минсельхоз",
+    "en": "The farm ministry"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Заклинание «Порченая кровь» вырвалось из подземелья через питомцев и выкосило города — учёные изучали, как вели себя игроки.",
+   "en": "The Corrupted Blood spell escaped a dungeon via pets and wiped out cities; scientists studied how players behaved."
+  },
+  "source": "https://en.wikipedia.org/wiki/Corrupted_Blood_incident"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что искусственный интеллект GLaDOS в игре Portal обещает игроку в награду?",
+   "en": "What does the AI GLaDOS promise the player as a reward in Portal?"
+  },
+  "options": [
+   {
+    "ru": "Торт",
+    "en": "Cake"
+   },
+   {
+    "ru": "Золото",
+    "en": "Gold"
+   },
+   {
+    "ru": "Медаль",
+    "en": "A medal"
+   },
+   {
+    "ru": "Щенка",
+    "en": "A puppy"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Надпись «The cake is a lie» («Торт — это ложь») тайком оставил на стенах выживший учёный, и она стала знаменитым мемом.",
+   "en": "A surviving scientist secretly scrawled \"The cake is a lie\" on the walls, and it became a famous meme."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_cake_is_a_lie"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько планет можно посетить в No Man's Sky?",
+   "en": "How many planets can you visit in No Man's Sky?"
+  },
+  "options": [
+   {
+    "ru": "Около 18 тысяч",
+    "en": "About 18 thousand"
+   },
+   {
+    "ru": "Около 18 миллионов",
+    "en": "About 18 million"
+   },
+   {
+    "ru": "Около 18 миллиардов",
+    "en": "About 18 billion"
+   },
+   {
+    "ru": "Около 18 квинтиллионов",
+    "en": "About 18 quintillion"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Планеты не хранятся на диске: их на лету рассчитывает формула из 64-битного числа, отсюда 2 в 64-й степени.",
+   "en": "The planets are not stored anywhere: a formula builds them from a 64-bit seed on the fly, hence 2 to the 64th."
+  },
+  "source": "https://en.wikipedia.org/wiki/No_Man%27s_Sky"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько человек разработали ферму-хит Stardew Valley?",
+   "en": "How many people developed the farming hit Stardew Valley?"
+  },
+  "options": [
+   {
+    "ru": "Один",
+    "en": "One"
+   },
+   {
+    "ru": "Двенадцать",
+    "en": "Twelve"
+   },
+   {
+    "ru": "Около шестидесяти",
+    "en": "About sixty"
+   },
+   {
+    "ru": "Около трёхсот",
+    "en": "About three hundred"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эрик Барон около пяти лет в одиночку писал код, рисовал, сочинял музыку и тексты.",
+   "en": "Eric Barone spent about five years doing the code, art, music and writing all by himself."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stardew_Valley"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Для кого программист Джош Уордл придумал игру Wordle?",
+   "en": "Who did programmer Josh Wardle originally make Wordle for?"
+  },
+  "options": [
+   {
+    "ru": "Для своей девушки",
+    "en": "His partner"
+   },
+   {
+    "ru": "Для своей мамы",
+    "en": "His mum"
+   },
+   {
+    "ru": "Для своих учеников",
+    "en": "His students"
+   },
+   {
+    "ru": "Для своего кота",
+    "en": "His cat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он сделал игру для себя и своей девушки, а в 2022 году её купила The New York Times.",
+   "en": "He made it for himself and his partner, and in 2022 The New York Times bought it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wordle"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Нотч назвал самую первую версию Minecraft?",
+   "en": "What did Notch call the very first version of Minecraft?"
+  },
+  "options": [
+   {
+    "ru": "Пещерная игра",
+    "en": "Cave Game"
+   },
+   {
+    "ru": "Мир блоков",
+    "en": "Block World"
+   },
+   {
+    "ru": "Город копателей",
+    "en": "Dig Town"
+   },
+   {
+    "ru": "Страна кубов",
+    "en": "Cube Land"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала она звалась Cave Game, потом Minecraft: Order of the Stone, и лишь затем просто Minecraft.",
+   "en": "It was Cave Game first, then Minecraft: Order of the Stone, and only then plain Minecraft."
+  },
+  "source": "https://minecraft.wiki/w/Java_Edition_pre-Classic"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Angry Birds и Clash of Clans придуманы в одной стране. В какой?",
+   "en": "Angry Birds and Clash of Clans come from the same country. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Финляндия",
+    "en": "Finland"
+   },
+   {
+    "ru": "Швеция",
+    "en": "Sweden"
+   },
+   {
+    "ru": "Южная Корея",
+    "en": "South Korea"
+   },
+   {
+    "ru": "Канада",
+    "en": "Canada"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Rovio и Supercell — финские студии; маленькая Финляндия стала одной из столиц мобильных игр.",
+   "en": "Rovio and Supercell are both Finnish, which made little Finland a capital of mobile games."
+  },
+  "source": "https://en.wikipedia.org/wiki/Supercell_(video_game_company)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как зовут лошадь Геральта в играх «Ведьмак»?",
+   "en": "What is Geralt's horse called in The Witcher games?"
+  },
+  "options": [
+   {
+    "ru": "Плотва",
+    "en": "Roach"
+   },
+   {
+    "ru": "Буцефал",
+    "en": "Bucephalus"
+   },
+   {
+    "ru": "Росинант",
+    "en": "Rocinante"
+   },
+   {
+    "ru": "Звёздочка",
+    "en": "Starlight"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Геральт называет Плотвой каждую свою лошадь, сколько бы их ни сменилось.",
+   "en": "Geralt calls every horse he owns Roach, however many he goes through."
+  },
+  "source": "https://en.wikipedia.org/wiki/Geralt_of_Rivia"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Стриминговый сервис Twitch вырос из сайта, где один человек…",
+   "en": "The streaming service Twitch grew out of a site where one man..."
+  },
+  "options": [
+   {
+    "ru": "транслировал всю свою жизнь",
+    "en": "streamed his whole life"
+   },
+   {
+    "ru": "продавал старые игры",
+    "en": "sold old games"
+   },
+   {
+    "ru": "учил играть в шахматы",
+    "en": "taught chess"
+   },
+   {
+    "ru": "показывал своих кошек",
+    "en": "showed off his cats"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 2007 году Джастин Кан круглые сутки носил камеру на голове для сайта Justin.tv; игровой раздел потом стал Twitch.",
+   "en": "In 2007 Justin Kan wore a head camera 24/7 for Justin.tv; its gaming section later became Twitch."
+  },
+  "source": "https://en.wikipedia.org/wiki/Justin.tv"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что победителю матча PUBG обещает знаменитая надпись на экране?",
+   "en": "What does PUBG's famous victory message promise the winner?"
+  },
+  "options": [
+   {
+    "ru": "Ужин с курицей",
+    "en": "A chicken dinner"
+   },
+   {
+    "ru": "Золотую корону",
+    "en": "A golden crown"
+   },
+   {
+    "ru": "Бесплатную пиццу",
+    "en": "Free pizza"
+   },
+   {
+    "ru": "Ключи от города",
+    "en": "The keys to the city"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фразу Брендан Грин принёс в PUBG из своих прошлых модов, а сама поговорка известна ещё со времён Великой депрессии.",
+   "en": "Brendan Greene brought the phrase over from his earlier mods; the saying itself goes back to the Great Depression era."
+  },
+  "source": "https://en.wikipedia.org/wiki/PUBG:_Battlegrounds"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В God of War 2018 года Кратос из Греции попадает в мир какой мифологии?",
+   "en": "In 2018's God of War, Kratos leaves Greece for the world of which mythology?"
+  },
+  "options": [
+   {
+    "ru": "Скандинавской",
+    "en": "Norse"
+   },
+   {
+    "ru": "Египетской",
+    "en": "Egyptian"
+   },
+   {
+    "ru": "Японской",
+    "en": "Japanese"
+   },
+   {
+    "ru": "Славянской",
+    "en": "Slavic"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вся игра идёт одним непрерывным кадром: камера ни разу не делает монтажной склейки.",
+   "en": "The whole game is presented as one continuous shot: the camera never cuts away."
+  },
+  "source": "https://en.wikipedia.org/wiki/God_of_War_(2018_video_game)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где происходит действие игры Metro 2033?",
+   "en": "Where is the game Metro 2033 set?"
+  },
+  "options": [
+   {
+    "ru": "В московском метро",
+    "en": "The Moscow Metro"
+   },
+   {
+    "ru": "В лондонском метро",
+    "en": "The London Underground"
+   },
+   {
+    "ru": "В парижском метро",
+    "en": "The Paris Métro"
+   },
+   {
+    "ru": "В нью-йоркском метро",
+    "en": "The New York subway"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Игра сделана по одноимённому роману, который автор выложил на своём сайте за годы до книжного издания.",
+   "en": "It is based on the novel of the same name, which its author posted on his website years before it came out as a book."
+  },
+  "source": "https://en.wikipedia.org/wiki/Metro_2033_(video_game)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Студия из какого города создала World of Tanks?",
+   "en": "A studio from which city created World of Tanks?"
+  },
+  "options": [
+   {
+    "ru": "Минск",
+    "en": "Minsk"
+   },
+   {
+    "ru": "Москва",
+    "en": "Moscow"
+   },
+   {
+    "ru": "Прага",
+    "en": "Prague"
+   },
+   {
+    "ru": "Варшава",
+    "en": "Warsaw"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Wargaming основали в Минске в 1998 году; больше десяти лет она делала стратегии вроде Massive Assault, пока не вышли танки.",
+   "en": "Wargaming was founded in Minsk in 1998 and spent over a decade on strategy games like Massive Assault before tanks."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wargaming_(company)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2014 году на Twitch одну игру Pokémon Red прошли вместе, вводя команды в чат. Сколько было игроков?",
+   "en": "In 2014 Twitch chat played one game of Pokémon Red together. How many people took part?"
+  },
+  "options": [
+   {
+    "ru": "Около тысячи",
+    "en": "About a thousand"
+   },
+   {
+    "ru": "Около 10 тысяч",
+    "en": "About 10 thousand"
+   },
+   {
+    "ru": "Больше миллиона",
+    "en": "Over a million"
+   },
+   {
+    "ru": "Больше 100 миллионов",
+    "en": "Over 100 million"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Больше 1,16 миллиона человек, дёргая героя в разные стороны, всё-таки прошли игру за 16 дней.",
+   "en": "Over 1.16 million people pulling the hero every which way still finished the game in 16 days."
+  },
+  "source": "https://en.wikipedia.org/wiki/Twitch_Plays_Pok%C3%A9mon"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая страна в 2014 году воссоздала себя в Minecraft в натуральную величину?",
+   "en": "Which country recreated itself at full scale in Minecraft in 2014?"
+  },
+  "options": [
+   {
+    "ru": "Дания",
+    "en": "Denmark"
+   },
+   {
+    "ru": "Исландия",
+    "en": "Iceland"
+   },
+   {
+    "ru": "Япония",
+    "en": "Japan"
+   },
+   {
+    "ru": "Монако",
+    "en": "Monaco"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Около 4 миллиардов блоков и терабайт данных: датское геодезическое агентство сделало карту для уроков географии.",
+   "en": "About 4 billion blocks and a terabyte of data: Denmark's geodata agency built it to help teach geography."
+  },
+  "source": "https://www.guinnessworldrecords.com/world-records/117559-first-country-modelled-at-full-scale-in-a-videogame"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как зовут главного героя игры The Legend of Zelda: Breath of the Wild?",
+   "en": "What is the hero of The Legend of Zelda: Breath of the Wild called?"
+  },
+  "options": [
+   {
+    "ru": "Линк",
+    "en": "Link"
+   },
+   {
+    "ru": "Зельда",
+    "en": "Zelda"
+   },
+   {
+    "ru": "Ганон",
+    "en": "Ganon"
+   },
+   {
+    "ru": "Марио",
+    "en": "Mario"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Многие думают, что Зельда — это герой, но так зовут принцессу, а играем мы за Линка.",
+   "en": "Many think Zelda is the hero, but Zelda is the princess; you play as Link."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Под каким рабочим названием разрабатывалась приставка Nintendo Wii?",
+   "en": "What was the Nintendo Wii's codename during development?"
+  },
+  "options": [
+   {
+    "ru": "Революция",
+    "en": "Revolution"
+   },
+   {
+    "ru": "Дельфин",
+    "en": "Dolphin"
+   },
+   {
+    "ru": "Проект Кафе",
+    "en": "Project Café"
+   },
+   {
+    "ru": "Проект NX",
+    "en": "Project NX"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Остальные — тоже кодовые имена Nintendo: GameCube, Wii U и Switch. А Wii звучит как английское «we» — «мы».",
+   "en": "The others were Nintendo codenames too: GameCube, Wii U and Switch. Wii sounds like \"we\", as in playing together."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wii"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем большую часть игры занят герой Death Stranding?",
+   "en": "What does the hero of Death Stranding spend most of the game doing?"
+  },
+  "options": [
+   {
+    "ru": "Доставляет посылки",
+    "en": "Delivering parcels"
+   },
+   {
+    "ru": "Готовит еду",
+    "en": "Cooking meals"
+   },
+   {
+    "ru": "Участвует в гонках",
+    "en": "Racing"
+   },
+   {
+    "ru": "Ловит рыбу",
+    "en": "Fishing"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кодзима сделал игру о курьере, которого играет Норман Ридус; критики прозвали её самым продвинутым «симулятором ходьбы».",
+   "en": "Kojima made a game about a courier played by Norman Reedus; critics called it the most advanced walking simulator ever."
+  },
+  "source": "https://en.wikipedia.org/wiki/Death_Stranding"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой знаменитый писатель придумал предысторию мира Elden Ring?",
+   "en": "Which famous writer created the backstory of Elden Ring's world?"
+  },
+  "options": [
+   {
+    "ru": "Джордж Мартин",
+    "en": "George R. R. Martin"
+   },
+   {
+    "ru": "Стивен Кинг",
+    "en": "Stephen King"
+   },
+   {
+    "ru": "Нил Гейман",
+    "en": "Neil Gaiman"
+   },
+   {
+    "ru": "Джоан Роулинг",
+    "en": "J. K. Rowling"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Автор «Игры престолов» написал мифологию далёкого прошлого, а саму игру строил Хидэтака Миядзаки.",
+   "en": "The Game of Thrones author wrote the world's ancient myths; Hidetaka Miyazaki built the game itself."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elden_Ring"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какого цвета было «кольцо смерти», загоравшееся на сломанных Xbox 360?",
+   "en": "What colour was the \"ring of death\" that lit up on broken Xbox 360s?"
+  },
+  "options": [
+   {
+    "ru": "Красного",
+    "en": "Red"
+   },
+   {
+    "ru": "Зелёного",
+    "en": "Green"
+   },
+   {
+    "ru": "Синего",
+    "en": "Blue"
+   },
+   {
+    "ru": "Жёлтого",
+    "en": "Yellow"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Поломок было столько, что Microsoft продлила гарантию до трёх лет и потратила на ремонт больше миллиарда долларов.",
+   "en": "So many consoles failed that Microsoft extended the warranty to three years and spent over a billion dollars on repairs."
+  },
+  "source": "https://en.wikipedia.org/wiki/Xbox_360_technical_problems"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем знаменита игра Undertale? Её можно пройти…",
+   "en": "What is Undertale famous for? You can finish it..."
+  },
+  "options": [
+   {
+    "ru": "никого не убив",
+    "en": "without killing anyone"
+   },
+   {
+    "ru": "не сходя с места",
+    "en": "without moving"
+   },
+   {
+    "ru": "ни разу не прыгнув",
+    "en": "without ever jumping"
+   },
+   {
+    "ru": "с закрытыми глазами",
+    "en": "with your eyes shut"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С каждым врагом можно договориться и пощадить его; игру почти в одиночку сделал Тоби Фокс.",
+   "en": "Every enemy can be talked down and spared; Toby Fox made the game almost single-handedly."
+  },
+  "source": "https://en.wikipedia.org/wiki/Undertale"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Каким был призовой фонд турнира The International по Dota 2 в 2021 году?",
+   "en": "How big was the prize pool of Dota 2's The International in 2021?"
+  },
+  "answer": 40,
+  "range": [
+   0,
+   150
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "млн $",
+   "en": "million $"
+  },
+  "fact": {
+   "ru": "Около 40 миллионов долларов: большую часть скинули сами игроки, покупая внутриигровой «боевой пропуск».",
+   "en": "About 40 million dollars: most of it came from players buying the in-game Battle Pass."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_International_2021"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько Microsoft купила Minecraft вместе со студией Mojang в 2014 году?",
+   "en": "How much did Microsoft pay for Minecraft and its studio Mojang in 2014?"
+  },
+  "answer": 2500,
+  "range": [
+   0,
+   10000
+  ],
+  "step": 100,
+  "tolerance": 800,
+  "unit": {
+   "ru": "млн $",
+   "en": "million $"
+  },
+  "fact": {
+   "ru": "2,5 миллиарда долларов — за игру, первую версию которой Нотч в одиночку собрал в 2009 году.",
+   "en": "2.5 billion dollars, for a game whose first version Notch put together alone in 2009."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mojang_Studios"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В Java-версии Minecraft мир кончается у границы. Какой он ширины, если блок — это метр?",
+   "en": "In Minecraft Java Edition the world ends at a border. How wide is it, if a block is one metre?"
+  },
+  "answer": 60000,
+  "range": [
+   0,
+   200000
+  ],
+  "step": 1000,
+  "tolerance": 15000,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Граница стоит в 30 миллионах блоков от центра, так что поперёк мир в полтора раза длиннее экватора Земли.",
+   "en": "The border sits 30 million blocks from the centre, so the world is one and a half times the length of Earth's equator across."
+  },
+  "source": "https://minecraft.wiki/w/World_border"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько заработала GTA V в первый день продаж в 2013 году?",
+   "en": "How much did GTA V earn on its first day of sales in 2013?"
+  },
+  "answer": 800,
+  "range": [
+   0,
+   3000
+  ],
+  "step": 50,
+  "tolerance": 350,
+  "unit": {
+   "ru": "млн $",
+   "en": "million $"
+  },
+  "fact": {
+   "ru": "800 миллионов за сутки и миллиард за три дня: в 2013 году ни одна игра и ни один фильм не зарабатывали так быстро.",
+   "en": "800 million in a day and a billion in three: in 2013 no game or film had ever earned that fast."
+  },
+  "source": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько в день, по оценкам, приносила реклама в Flappy Bird в начале 2014 года?",
+   "en": "Roughly how much a day did Flappy Bird earn from ads in early 2014?"
+  },
+  "answer": 50,
+  "range": [
+   0,
+   500
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "тыс. $",
+   "en": "thousand $"
+  },
+  "fact": {
+   "ru": "Около 50 тысяч долларов в день, и всё же автор Донг Нгуен удалил игру, сказав, что она слишком затягивает.",
+   "en": "About 50,000 dollars a day, yet creator Dong Nguyen pulled the game, saying it had become too addictive."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flappy_Bird"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько всего приставок Nintendo Wii продали за всё время?",
+   "en": "How many Nintendo Wii consoles were sold in total?"
+  },
+  "answer": 102,
+  "range": [
+   0,
+   400
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "млн штук",
+   "en": "million"
+  },
+  "fact": {
+   "ru": "Около 101,6 миллиона: слабая по графике Wii обогнала PS3 и Xbox 360 благодаря пульту, которым машут.",
+   "en": "About 101.6 million: the low-powered Wii outsold the PS3 and Xbox 360 thanks to its wave-it-around remote."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wii"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "ВВС США в 2010 году собрали суперкомпьютер из PlayStation 3. Сколько приставок в нём было?",
+   "en": "In 2010 the US Air Force built a supercomputer out of PlayStation 3s. How many consoles?"
+  },
+  "answer": 1760,
+  "range": [
+   0,
+   10000
+  ],
+  "step": 20,
+  "tolerance": 400,
+  "unit": {
+   "ru": "приставок",
+   "en": "consoles"
+  },
+  "fact": {
+   "ru": "Около 1760 PS3 обошлись дешевле обычного суперкомпьютера и вошли в число самых быстрых машин мира того времени.",
+   "en": "About 1,760 PS3s cost far less than a normal supercomputer and ranked among the world's fastest machines at the time."
+  },
+  "source": "https://en.wikipedia.org/wiki/PlayStation_3_cluster"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько дней Pokémon GO в 2016 году скачали в Google Play 50 миллионов раз?",
+   "en": "In 2016, how many days did Pokémon GO take to reach 50 million downloads on Google Play?"
+  },
+  "answer": 19,
+  "range": [
+   0,
+   365
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Всего 19 дней; другим хитам того времени на тот же рубеж понадобилось около трёх месяцев.",
+   "en": "Just 19 days; other hits of the time needed nearly three months to reach the same mark."
+  },
+  "source": "https://sensortower.com/blog/pokemon-go-50-million-downloads"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько реальных минут длятся одни игровые сутки в Minecraft?",
+   "en": "How many real minutes does one in-game day last in Minecraft?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   120
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "минут",
+   "en": "minutes"
+  },
+  "fact": {
+   "ru": "20 минут: 10 минут длится день, 8 минут 20 секунд ночь и по 50 секунд закат и рассвет.",
+   "en": "20 minutes: 10 of daytime, 8 minutes 20 seconds of night and 50 seconds each for sunset and sunrise."
+  },
+  "source": "https://minecraft.wiki/w/Daylight_cycle"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько игроков высаживаются на остров в обычном матче PUBG или Fortnite?",
+   "en": "How many players drop onto the island in a standard PUBG or Fortnite match?"
+  },
+  "answer": 100,
+  "range": [
+   0,
+   500
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "игроков",
+   "en": "players"
+  },
+  "fact": {
+   "ru": "Сто человек, а выживает один: в японском фильме «Королевская битва», откуда пошёл жанр, участников было 42.",
+   "en": "A hundred go in and one survives; the Japanese film Battle Royale that named the genre had 42."
+  },
+  "source": "https://en.wikipedia.org/wiki/Battle_royale_game"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Кайлу «Bugha» Гирсдорфу, когда он выиграл чемпионат мира по Fortnite 2019 года?",
+   "en": "How old was Kyle \"Bugha\" Giersdorf when he won the 2019 Fortnite World Cup?"
+  },
+  "answer": 16,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "16-летний школьник получил 3 миллиона долларов — больше, чем Тайгер Вудс в том же году за победу на Masters.",
+   "en": "The 16 year old won 3 million dollars, more than Tiger Woods got for winning the Masters that same year."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fortnite_World_Cup"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько игроков одновременно пришли на первый показ концерта Трэвиса Скотта в Fortnite в 2020 году?",
+   "en": "How many players were at once at the first show of Travis Scott's Fortnite concert in 2020?"
+  },
+  "answer": 12300000,
+  "range": [
+   0,
+   50000000
+  ],
+  "step": 100000,
+  "tolerance": 3000000,
+  "unit": {
+   "ru": "игроков",
+   "en": "players"
+  },
+  "fact": {
+   "ru": "12,3 миллиона: великан-Трэвис шагал по острову, а игроки летали вокруг него — больше людей, чем на любом стадионе.",
+   "en": "12.3 million: a giant Travis strode across the island as players flew round him, more than any stadium could hold."
+  },
+  "source": "https://www.engadget.com/fortnite-travis-scott-astronomical-051908825.html"
+ }
+]

@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько зубов у взрослого человека, если выросли все до одного?",
+   "en": "How many teeth does an adult have once every one has grown in?"
+  },
+  "options": [
+   {
+    "ru": "20",
+    "en": "20"
+   },
+   {
+    "ru": "28",
+    "en": "28"
+   },
+   {
+    "ru": "32",
+    "en": "32"
+   },
+   {
+    "ru": "36",
+    "en": "36"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Молочных зубов 20, а последние четыре коренных — зубы мудрости: они режутся к 17–25 годам, а у некоторых не появляются вовсе.",
+   "en": "Children have 20 milk teeth; the last four adult ones are wisdom teeth, which come at 17 to 25 or never at all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_tooth"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Без чего еда теряет большую часть своего вкуса?",
+   "en": "Without what does food lose most of its flavour?"
+  },
+  "options": [
+   {
+    "ru": "Без обоняния",
+    "en": "Without smell"
+   },
+   {
+    "ru": "Без слуха",
+    "en": "Without hearing"
+   },
+   {
+    "ru": "Без зубов",
+    "en": "Without teeth"
+   },
+   {
+    "ru": "Без правой руки",
+    "en": "Without your right hand"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Язык различает лишь пять вкусов, остальное дают запахи, которые идут из рта в нос, — поэтому при насморке еда пресная.",
+   "en": "The tongue senses only five tastes; the rest is aroma rising from the mouth into the nose, which is why food is bland with a cold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Taste"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой орган человека самый тяжёлый?",
+   "en": "Which is the heaviest organ of the human body?"
+  },
+  "options": [
+   {
+    "ru": "Печень",
+    "en": "The liver"
+   },
+   {
+    "ru": "Кожа",
+    "en": "The skin"
+   },
+   {
+    "ru": "Мозг",
+    "en": "The brain"
+   },
+   {
+    "ru": "Сердце",
+    "en": "The heart"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Кожа весит 3–4 кг, вдвое больше печени, а печень — самый тяжёлый из внутренних органов.",
+   "en": "Skin weighs 3 to 4 kg, more than two livers, and the liver is the heaviest organ inside the body."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_skin"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что самое твёрдое в теле человека?",
+   "en": "What is the hardest substance in the human body?"
+  },
+  "options": [
+   {
+    "ru": "Зубная эмаль",
+    "en": "Tooth enamel"
+   },
+   {
+    "ru": "Бедренная кость",
+    "en": "The thigh bone"
+   },
+   {
+    "ru": "Ногти",
+    "en": "Nails"
+   },
+   {
+    "ru": "Кости черепа",
+    "en": "The skull"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эмаль на 96% состоит из минералов, но сама не восстанавливается: живых клеток в ней нет.",
+   "en": "Enamel is 96% mineral, yet it cannot repair itself: there are no living cells in it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tooth_enamel"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько камер в сердце человека?",
+   "en": "How many chambers does the human heart have?"
+  },
+  "options": [
+   {
+    "ru": "Две",
+    "en": "Two"
+   },
+   {
+    "ru": "Три",
+    "en": "Three"
+   },
+   {
+    "ru": "Четыре",
+    "en": "Four"
+   },
+   {
+    "ru": "Шесть",
+    "en": "Six"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "По сути это два насоса в одном: правая половина гонит кровь в лёгкие, левая — по всему телу.",
+   "en": "It is really two pumps in one: the right half sends blood to the lungs, the left half to the rest of the body."
+  },
+  "source": "https://en.wikipedia.org/wiki/Heart"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой орган может отрасти до прежнего размера, если удалить большую его часть?",
+   "en": "Which organ can grow back to full size after most of it is removed?"
+  },
+  "options": [
+   {
+    "ru": "Печень",
+    "en": "The liver"
+   },
+   {
+    "ru": "Сердце",
+    "en": "The heart"
+   },
+   {
+    "ru": "Почка",
+    "en": "A kidney"
+   },
+   {
+    "ru": "Поджелудочная железа",
+    "en": "The pancreas"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Печени хватает 10% исходной массы, чтобы отрасти снова, поэтому живой донор может отдать часть своей.",
+   "en": "Just 10% of a liver is enough to regrow the rest, so a living donor can give away part of theirs."
+  },
+  "source": "https://en.wikipedia.org/wiki/Liver_regeneration"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что мы на самом деле задеваем, когда ударяемся локтем и «бьёт током»?",
+   "en": "What are you really hitting when you bang your elbow and feel an electric jolt?"
+  },
+  "options": [
+   {
+    "ru": "Нерв",
+    "en": "A nerve"
+   },
+   {
+    "ru": "Кость",
+    "en": "A bone"
+   },
+   {
+    "ru": "Сухожилие",
+    "en": "A tendon"
+   },
+   {
+    "ru": "Вену",
+    "en": "A vein"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Локтевой нерв проходит там прямо под кожей, и его не прикрывают ни мышцы, ни жир.",
+   "en": "The ulnar nerve runs right under the skin there, with no muscle or fat to shield it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ulnar_nerve"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая кость в теле человека самая длинная?",
+   "en": "Which is the longest bone in the human body?"
+  },
+  "options": [
+   {
+    "ru": "Бедренная",
+    "en": "The thigh bone"
+   },
+   {
+    "ru": "Большеберцовая",
+    "en": "The shin bone"
+   },
+   {
+    "ru": "Плечевая",
+    "en": "The upper arm bone"
+   },
+   {
+    "ru": "Ключица",
+    "en": "The collarbone"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она составляет около четверти роста, поэтому археологи оценивают рост человека по одной бедренной кости.",
+   "en": "It is about a quarter of a person's height, so archaeologists can estimate height from a thigh bone alone."
+  },
+  "source": "https://en.wikipedia.org/wiki/Femur"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая часть глаза определяет его цвет?",
+   "en": "Which part of the eye gives it its colour?"
+  },
+  "options": [
+   {
+    "ru": "Радужка",
+    "en": "The iris"
+   },
+   {
+    "ru": "Зрачок",
+    "en": "The pupil"
+   },
+   {
+    "ru": "Сетчатка",
+    "en": "The retina"
+   },
+   {
+    "ru": "Хрусталик",
+    "en": "The lens"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В голубых глазах почти нет пигмента: их цвет даёт рассеянный свет, как у неба.",
+   "en": "Blue eyes have almost no pigment: their colour comes from scattered light, just like the sky."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eye_color"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая мышца резко сокращается, когда мы икаем?",
+   "en": "Which muscle suddenly jerks when you hiccup?"
+  },
+  "options": [
+   {
+    "ru": "Диафрагма",
+    "en": "The diaphragm"
+   },
+   {
+    "ru": "Сердце",
+    "en": "The heart"
+   },
+   {
+    "ru": "Язык",
+    "en": "The tongue"
+   },
+   {
+    "ru": "Икроножная",
+    "en": "The calf muscle"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сразу после рывка диафрагмы смыкаются голосовые связки — отсюда звонкое «ик».",
+   "en": "Right after the diaphragm jerks, the vocal cords snap shut: that is the 'hic'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hiccup"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Копчик — это остаток чего?",
+   "en": "The tailbone is the leftover of what?"
+  },
+  "options": [
+   {
+    "ru": "Хвоста",
+    "en": "A tail"
+   },
+   {
+    "ru": "Крыльев",
+    "en": "Wings"
+   },
+   {
+    "ru": "Жабр",
+    "en": "Gills"
+   },
+   {
+    "ru": "Лишнего ребра",
+    "en": "An extra rib"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У человеческого эмбриона около четырёх недель есть настоящий хвостик, потом он исчезает.",
+   "en": "A human embryo has a real little tail for about four weeks before it disappears."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_vestigiality"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая мышца в теле человека самая большая?",
+   "en": "Which is the largest muscle in the human body?"
+  },
+  "options": [
+   {
+    "ru": "Большая ягодичная",
+    "en": "The buttock muscle"
+   },
+   {
+    "ru": "Сердце",
+    "en": "The heart"
+   },
+   {
+    "ru": "Бицепс",
+    "en": "The biceps"
+   },
+   {
+    "ru": "Икроножная",
+    "en": "The calf muscle"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она держит корпус прямо и разгоняет нас на бегу; относительно веса тела она у нас в 1,6 раза больше, чем у шимпанзе.",
+   "en": "It holds the trunk upright and powers running; for our body weight it is 1.6 times the size of a chimp's."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gluteus_maximus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько костей в скелете взрослого человека?",
+   "en": "How many bones are in an adult human skeleton?"
+  },
+  "options": [
+   {
+    "ru": "106",
+    "en": "106"
+   },
+   {
+    "ru": "206",
+    "en": "206"
+   },
+   {
+    "ru": "306",
+    "en": "306"
+   },
+   {
+    "ru": "406",
+    "en": "406"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Больше половины из них — в кистях и стопах: по 27 в каждой кисти и по 26 в каждой стопе.",
+   "en": "Over half are in the hands and feet: 27 in each hand and 26 in each foot."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_skeleton"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой витамин кожа вырабатывает сама под солнцем?",
+   "en": "Which vitamin does your skin make by itself in sunlight?"
+  },
+  "options": [
+   {
+    "ru": "Витамин A",
+    "en": "Vitamin A"
+   },
+   {
+    "ru": "Витамин C",
+    "en": "Vitamin C"
+   },
+   {
+    "ru": "Витамин D",
+    "en": "Vitamin D"
+   },
+   {
+    "ru": "Витамин K",
+    "en": "Vitamin K"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Поэтому детям в северных странах давали рыбий жир: в нём много витамина D, который защищает от рахита.",
+   "en": "That is why children in northern countries were given cod liver oil: it is rich in vitamin D, which prevents rickets."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vitamin_D"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как называется самая крупная артерия человека?",
+   "en": "What is the largest artery in the human body?"
+  },
+  "options": [
+   {
+    "ru": "Аорта",
+    "en": "The aorta"
+   },
+   {
+    "ru": "Сонная артерия",
+    "en": "The carotid artery"
+   },
+   {
+    "ru": "Полая вена",
+    "en": "The vena cava"
+   },
+   {
+    "ru": "Бедренная артерия",
+    "en": "The femoral artery"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она шириной 2,5–3 см, и через неё уходит вся кровь, которую левая половина сердца гонит по телу.",
+   "en": "It is 2.5 to 3 cm wide, and all the blood the left half of the heart pumps round the body goes through it."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Аорта"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая живая часть тела обходится совсем без кровеносных сосудов?",
+   "en": "Which living part of the body has no blood vessels at all?"
+  },
+  "options": [
+   {
+    "ru": "Роговица глаза",
+    "en": "The cornea of the eye"
+   },
+   {
+    "ru": "Мизинец",
+    "en": "The little finger"
+   },
+   {
+    "ru": "Мочка уха",
+    "en": "The earlobe"
+   },
+   {
+    "ru": "Язык",
+    "en": "The tongue"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кислород роговица берёт прямо из воздуха, а питание — из слёз и жидкости внутри глаза.",
+   "en": "The cornea takes oxygen straight from the air, and food from tears and the fluid inside the eye."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cornea"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где находится самая маленькая кость человека?",
+   "en": "Where is the smallest bone in the human body?"
+  },
+  "options": [
+   {
+    "ru": "В ухе",
+    "en": "In the ear"
+   },
+   {
+    "ru": "В мизинце ноги",
+    "en": "In the little toe"
+   },
+   {
+    "ru": "В носу",
+    "en": "In the nose"
+   },
+   {
+    "ru": "В пальце руки",
+    "en": "In a finger"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Стремечко в среднем ухе длиной около 3 мм, меньше рисового зёрнышка, и передаёт звук дальше.",
+   "en": "The stirrup in the middle ear is about 3 mm long, smaller than a grain of rice, and passes sound on."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stapes"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько примерно литров крови у взрослого человека?",
+   "en": "About how many litres of blood does an adult have?"
+  },
+  "options": [
+   {
+    "ru": "Один",
+    "en": "One"
+   },
+   {
+    "ru": "Пять",
+    "en": "Five"
+   },
+   {
+    "ru": "Пятнадцать",
+    "en": "Fifteen"
+   },
+   {
+    "ru": "Тридцать",
+    "en": "Thirty"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В покое сердце прогоняет всю эту кровь по телу примерно за минуту.",
+   "en": "At rest the heart pumps all of it round the body in about a minute."
+  },
+  "source": "https://en.wikipedia.org/wiki/Blood_volume"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кровь какой группы можно перелить почти любому человеку?",
+   "en": "Which blood type can be given to almost anyone who needs a transfusion?"
+  },
+  "options": [
+   {
+    "ru": "Первая отрицательная",
+    "en": "O negative"
+   },
+   {
+    "ru": "Четвёртая положительная",
+    "en": "AB positive"
+   },
+   {
+    "ru": "Вторая положительная",
+    "en": "A positive"
+   },
+   {
+    "ru": "Третья отрицательная",
+    "en": "B negative"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На её эритроцитах нет меток A, B и резус-фактора, так что чужому иммунитету не за что зацепиться.",
+   "en": "Its red cells carry no A, B or Rh markers, so the receiver's immune system has nothing to attack."
+  },
+  "source": "https://en.wikipedia.org/wiki/Blood_type"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем нашим покрытым шерстью предкам были нужны мурашки?",
+   "en": "What were goosebumps for in our furry ancestors?"
+  },
+  "options": [
+   {
+    "ru": "Поднять шерсть: тепло и грозный вид",
+    "en": "Fluff up fur: warmth and a bigger look"
+   },
+   {
+    "ru": "Охладить кожу",
+    "en": "To cool the skin"
+   },
+   {
+    "ru": "Лучше чувствовать ветер",
+    "en": "To feel the wind better"
+   },
+   {
+    "ru": "Стряхнуть насекомых",
+    "en": "To shake off insects"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кошка распушает хвост по той же команде, а нам без шерсти досталась лишь «гусиная кожа».",
+   "en": "A cat puffs up its tail on the same signal; with no fur left, all we get is bumpy skin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Goose_bumps"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какое время суток человек выше всего ростом?",
+   "en": "At what time of day are you tallest?"
+  },
+  "options": [
+   {
+    "ru": "Утром",
+    "en": "In the morning"
+   },
+   {
+    "ru": "Днём",
+    "en": "At midday"
+   },
+   {
+    "ru": "Вечером",
+    "en": "In the evening"
+   },
+   {
+    "ru": "Рост весь день одинаковый",
+    "en": "The same all day"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "За день хрящевые диски позвоночника сжимаются, и к вечеру мы ниже примерно на полтора сантиметра.",
+   "en": "During the day the discs in your spine squash down, so by evening you are about 1.5 cm shorter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_height"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой кости ещё нет у новорождённого?",
+   "en": "Which bone does a newborn baby not have yet?"
+  },
+  "options": [
+   {
+    "ru": "Коленной чашечки",
+    "en": "The kneecap"
+   },
+   {
+    "ru": "Рёбер",
+    "en": "Ribs"
+   },
+   {
+    "ru": "Ключиц",
+    "en": "Collarbones"
+   },
+   {
+    "ru": "Позвонков",
+    "en": "Vertebrae"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У малыша на её месте мягкий хрящ: коленная чашечка начинает твердеть лишь к трём годам.",
+   "en": "A baby has soft cartilage there: the kneecap only starts turning to bone at about three."
+  },
+  "source": "https://en.wikipedia.org/wiki/Patella"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая кислота работает у нас в желудке?",
+   "en": "Which acid is in your stomach?"
+  },
+  "options": [
+   {
+    "ru": "Соляная",
+    "en": "Hydrochloric"
+   },
+   {
+    "ru": "Серная",
+    "en": "Sulphuric"
+   },
+   {
+    "ru": "Лимонная",
+    "en": "Citric"
+   },
+   {
+    "ru": "Уксусная",
+    "en": "Acetic"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её pH от 1 до 3 — как у лимонного сока или ещё кислее, — и она убивает большинство микробов, попавших с едой.",
+   "en": "Its pH is 1 to 3, as sour as lemon juice or more, and it kills most of the germs that come in with food."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gastric_acid"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Одинаковые ли отпечатки пальцев у однояйцевых близнецов?",
+   "en": "Do identical twins have the same fingerprints?"
+  },
+  "options": [
+   {
+    "ru": "Да, точь-в-точь",
+    "en": "Yes, exactly the same"
+   },
+   {
+    "ru": "Нет, разные",
+    "en": "No, they differ"
+   },
+   {
+    "ru": "Совпадают только большие пальцы",
+    "en": "Only the thumbs match"
+   },
+   {
+    "ru": "Да, но только до 10 лет",
+    "en": "Yes, but only until age 10"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Узор складывается в утробе и зависит от мельчайших условий вокруг каждого пальца, поэтому у близнецов он похож, но не совпадает.",
+   "en": "The pattern forms in the womb and depends on tiny differences around each finger, so twins' prints are similar but never the same."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fingerprint"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой фазе сна мы видим самые яркие сны?",
+   "en": "In which stage of sleep are dreams most vivid?"
+  },
+  "options": [
+   {
+    "ru": "В быстром сне",
+    "en": "REM sleep"
+   },
+   {
+    "ru": "В глубоком сне",
+    "en": "Deep sleep"
+   },
+   {
+    "ru": "Во время храпа",
+    "en": "While snoring"
+   },
+   {
+    "ru": "Во время лунатизма",
+    "en": "While sleepwalking"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В этой фазе мышцы тела почти парализованы, чтобы мы не повторяли движения из сна, а глаза под веками бегают.",
+   "en": "In this stage the body's muscles go nearly limp so we don't act out our dreams, but the eyes dart about."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rapid_eye_movement_sleep"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какие ногти растут быстрее?",
+   "en": "Which nails grow faster?"
+  },
+  "options": [
+   {
+    "ru": "На руках",
+    "en": "Fingernails"
+   },
+   {
+    "ru": "На ногах",
+    "en": "Toenails"
+   },
+   {
+    "ru": "Одинаково",
+    "en": "Both the same"
+   },
+   {
+    "ru": "Зависит от размера обуви",
+    "en": "Depends on your shoe size"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ногти на руках растут примерно на 3,5 мм в месяц — вдвое быстрее, чем на ногах.",
+   "en": "Fingernails grow about 3.5 mm a month, roughly twice as fast as toenails."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nail_(anatomy)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько хромосом в большинстве клеток человека?",
+   "en": "How many chromosomes are in most human cells?"
+  },
+  "options": [
+   {
+    "ru": "23",
+    "en": "23"
+   },
+   {
+    "ru": "46",
+    "en": "46"
+   },
+   {
+    "ru": "64",
+    "en": "64"
+   },
+   {
+    "ru": "100",
+    "en": "100"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "У картошки их 48 — больше, чем у нас: число хромосом ничего не говорит о сложности организма.",
+   "en": "A potato has 48, more than we do: the count says nothing about how complex a living thing is."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chromosome"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой длины ДНК из одной клетки человека, если её размотать?",
+   "en": "How long is the DNA from one human cell when unwound?"
+  },
+  "options": [
+   {
+    "ru": "2 миллиметра",
+    "en": "2 millimetres"
+   },
+   {
+    "ru": "2 сантиметра",
+    "en": "2 centimetres"
+   },
+   {
+    "ru": "2 метра",
+    "en": "2 metres"
+   },
+   {
+    "ru": "2 километра",
+    "en": "2 kilometres"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Её укладывают в ядро шириной меньше сотой доли миллиметра — как 20 км нитки в теннисный мяч.",
+   "en": "It is packed into a nucleus under a hundredth of a millimetre wide, like 20 km of thread in a tennis ball."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cell_nucleus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему после кружения кажется, что комната ещё вертится?",
+   "en": "Why does the room keep spinning after you twirl around?"
+  },
+  "options": [
+   {
+    "ru": "Жидкость во внутреннем ухе ещё кружится",
+    "en": "Fluid in the inner ear keeps swirling"
+   },
+   {
+    "ru": "Кровь приливает к голове",
+    "en": "Blood rushes to the head"
+   },
+   {
+    "ru": "Глаза устают",
+    "en": "The eyes get tired"
+   },
+   {
+    "ru": "Желудок смещается",
+    "en": "The stomach shifts"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Жидкость в полукружных каналах уха движется по инерции, и мозг думает, что вы всё ещё вращаетесь.",
+   "en": "Fluid in the ear's semicircular canals carries on moving, so the brain thinks you are still turning."
+  },
+  "source": "https://en.wikipedia.org/wiki/Semicircular_canals"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой гормон вырабатывается в темноте и клонит нас в сон?",
+   "en": "Which hormone is released in the dark and makes us sleepy?"
+  },
+  "options": [
+   {
+    "ru": "Мелатонин",
+    "en": "Melatonin"
+   },
+   {
+    "ru": "Адреналин",
+    "en": "Adrenaline"
+   },
+   {
+    "ru": "Инсулин",
+    "en": "Insulin"
+   },
+   {
+    "ru": "Окситоцин",
+    "en": "Oxytocin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Синий свет, в том числе от экранов, тормозит его выработку, поэтому после телефона в постели труднее уснуть.",
+   "en": "Blue light, screens included, holds it back, which is why sleep comes harder after a phone in bed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Melatonin"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где вырабатывается адреналин?",
+   "en": "Where is adrenaline made?"
+  },
+  "options": [
+   {
+    "ru": "В железах над почками",
+    "en": "In glands on top of the kidneys"
+   },
+   {
+    "ru": "В сердце",
+    "en": "In the heart"
+   },
+   {
+    "ru": "В печени",
+    "en": "In the liver"
+   },
+   {
+    "ru": "В спинном мозге",
+    "en": "In the spinal cord"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Само слово «адреналин» происходит от латинского «на почке»: эти железы сидят прямо на почках.",
+   "en": "The very word adrenaline comes from Latin for 'on the kidney': the glands sit right on top of them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Adrenaline"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему свой голос в записи звучит непривычно?",
+   "en": "Why does your own voice sound strange on a recording?"
+  },
+  "options": [
+   {
+    "ru": "Обычно мы слышим его и через кости",
+    "en": "We normally also hear it through bone"
+   },
+   {
+    "ru": "Микрофон искажает любой голос",
+    "en": "Microphones distort every voice"
+   },
+   {
+    "ru": "Запись всегда чуть ускорена",
+    "en": "Recordings are always sped up"
+   },
+   {
+    "ru": "Себя мы слышим только одним ухом",
+    "en": "We hear ourselves with one ear"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кости черепа лучше проводят низкие звуки, поэтому изнутри голос кажется ниже, чем его слышат другие.",
+   "en": "Skull bone carries the low notes best, so from inside your voice sounds deeper than others hear it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bone_conduction"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой орган сам не чувствует боли, даже во время операции на нём?",
+   "en": "Which organ feels no pain itself, even when it is operated on?"
+  },
+  "options": [
+   {
+    "ru": "Мозг",
+    "en": "The brain"
+   },
+   {
+    "ru": "Зуб",
+    "en": "A tooth"
+   },
+   {
+    "ru": "Роговица глаза",
+    "en": "The cornea"
+   },
+   {
+    "ru": "Кожа",
+    "en": "The skin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В самом мозге нет болевых рецепторов, поэтому некоторые операции на нём делают, пока пациент в сознании и говорит.",
+   "en": "The brain itself has no pain receptors, so some brain operations are done while the patient is awake and talking."
+  },
+  "source": "https://en.wikipedia.org/wiki/Headache"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чего нет у эритроцитов — красных клеток крови человека?",
+   "en": "What do human red blood cells not have?"
+  },
+  "options": [
+   {
+    "ru": "Ядра",
+    "en": "A nucleus"
+   },
+   {
+    "ru": "Железа",
+    "en": "Iron"
+   },
+   {
+    "ru": "Оболочки",
+    "en": "A membrane"
+   },
+   {
+    "ru": "Гемоглобина",
+    "en": "Haemoglobin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Созревая, клетка выбрасывает ядро, чтобы освободить место для гемоглобина, который носит кислород.",
+   "en": "A maturing cell throws out its nucleus to make room for haemoglobin, which carries oxygen."
+  },
+  "source": "https://en.wikipedia.org/wiki/Red_blood_cell"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое лёгкое у человека больше?",
+   "en": "Which of your lungs is bigger?"
+  },
+  "options": [
+   {
+    "ru": "Правое",
+    "en": "The right one"
+   },
+   {
+    "ru": "Левое",
+    "en": "The left one"
+   },
+   {
+    "ru": "Они одинаковые",
+    "en": "They are the same"
+   },
+   {
+    "ru": "Зависит от того, правша ли ты",
+    "en": "Depends if you are right handed"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Левое лёгкое уступает место сердцу, поэтому у него две доли, а у правого — три.",
+   "en": "The left lung makes room for the heart, so it has two lobes while the right has three."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lung"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему желудок не переваривает сам себя?",
+   "en": "Why doesn't the stomach digest itself?"
+  },
+  "options": [
+   {
+    "ru": "Его защищает слой слизи",
+    "en": "A layer of mucus protects it"
+   },
+   {
+    "ru": "Кислота там бывает только ночью",
+    "en": "There is acid only at night"
+   },
+   {
+    "ru": "Его стенки из хряща",
+    "en": "Its walls are made of cartilage"
+   },
+   {
+    "ru": "Его защищает слой жира",
+    "en": "A layer of fat protects it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слизь со щёлочью гасит кислоту прямо у стенки, а повреждённые клетки быстро заменяются новыми.",
+   "en": "Alkaline mucus neutralises the acid right at the wall, and damaged cells are quickly replaced."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gastric_mucosa"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему пальцы морщатся после долгой ванны?",
+   "en": "Why do your fingers wrinkle after a long bath?"
+  },
+  "options": [
+   {
+    "ru": "Нервы сужают сосуды под кожей",
+    "en": "Nerves narrow the vessels under skin"
+   },
+   {
+    "ru": "Мыло размягчает кожу",
+    "en": "Soap softens the skin"
+   },
+   {
+    "ru": "Пальцы замерзают",
+    "en": "The fingers get cold"
+   },
+   {
+    "ru": "Мыло сушит кожу",
+    "en": "Soap dries the skin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Палец с повреждённым нервом не морщится, врачи даже так проверяют нервы; а складки, видимо, помогают держать мокрое.",
+   "en": "A finger with a damaged nerve stays smooth, which doctors use as a test; the folds probably help us grip wet things."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wrinkle"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему нельзя пощекотать самого себя?",
+   "en": "Why can't you tickle yourself?"
+  },
+  "options": [
+   {
+    "ru": "Мозг заранее предугадывает касание",
+    "en": "The brain predicts your own touch"
+   },
+   {
+    "ru": "Кожа привыкла к своим рукам",
+    "en": "Your skin is used to your hands"
+   },
+   {
+    "ru": "Свои пальцы слишком тёплые",
+    "en": "Your own fingers are too warm"
+   },
+   {
+    "ru": "Щекотать умеют только перья",
+    "en": "Only feathers can tickle"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мозжечок заранее предсказывает ощущение от своего движения и глушит его: даже щекотка через робота с пультом не смешит.",
+   "en": "The cerebellum predicts the feel of your own move and damps it: even tickling yourself through a robot you steer fails."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tickling"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Мозг весит около 2% тела. Сколько процентов всей энергии тела он тратит?",
+   "en": "The brain is about 2% of body weight. What percent of the body's energy does it use?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "Это около 20 ватт, как у тусклой лампочки, и мозг тратит их без перерыва, даже во сне.",
+   "en": "That is about 20 watts, like a dim light bulb, and it burns them nonstop, even in sleep."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_brain"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько дней живёт эритроцит — красная клетка крови?",
+   "en": "How many days does a red blood cell live?"
+  },
+  "answer": 120,
+  "range": [
+   10,
+   400
+  ],
+  "step": 5,
+  "tolerance": 40,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Взамен старых костный мозг каждую секунду выпускает больше 2 миллионов новых эритроцитов.",
+   "en": "To replace the old ones, your bone marrow makes over 2 million new red cells every second."
+  },
+  "source": "https://en.wikipedia.org/wiki/Red_blood_cell"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько примерно раз за сутки бьётся сердце взрослого человека?",
+   "en": "About how many times does an adult's heart beat in a day?"
+  },
+  "answer": 100000,
+  "range": [
+   0,
+   500000
+  ],
+  "step": 1000,
+  "tolerance": 25000,
+  "unit": {
+   "ru": "ударов",
+   "en": "beats"
+  },
+  "fact": {
+   "ru": "За долгую жизнь набирается около трёх миллиардов ударов — без единого выходного.",
+   "en": "Over a long life that adds up to about three billion beats, without a single day off."
+  },
+  "source": "https://en.wikipedia.org/wiki/Heart_rate"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько раз за день, пока не спит, моргает человек?",
+   "en": "How many times does a person blink in a waking day?"
+  },
+  "answer": 15000,
+  "range": [
+   1000,
+   80000
+  ],
+  "step": 500,
+  "tolerance": 8000,
+  "unit": {
+   "ru": "раз",
+   "en": "times"
+  },
+  "fact": {
+   "ru": "Это 15–20 раз в минуту; у экрана мы моргаем в разы реже, отсюда сухие уставшие глаза.",
+   "en": "That is 15 to 20 times a minute; at a screen we blink several times less, hence dry, tired eyes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Blinking"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько примерно волос на голове у темноволосого человека?",
+   "en": "About how many hairs are on the head of a dark-haired person?"
+  },
+  "answer": 100000,
+  "range": [
+   0,
+   1000000
+  ],
+  "step": 5000,
+  "tolerance": 35000,
+  "unit": {
+   "ru": "волос",
+   "en": "hairs"
+  },
+  "fact": {
+   "ru": "Больше всех волос у блондинов — около 150 тысяч, меньше всех у рыжих — около 90 тысяч.",
+   "en": "Blondes have the most, about 150,000, and redheads the fewest, about 90,000."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hair"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько примерно костей у новорождённого малыша?",
+   "en": "About how many bones does a newborn baby have?"
+  },
+  "answer": 270,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 50,
+  "unit": {
+   "ru": "костей",
+   "en": "bones"
+  },
+  "fact": {
+   "ru": "Больше, чем у взрослого: многие кости, например черепа и крестца, потом срастаются, и остаётся 206.",
+   "en": "More than an adult: many, like those of the skull and the base of the spine, later fuse, leaving 206."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_skeleton"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько граммов весит мозг взрослого человека?",
+   "en": "How many grams does an adult human brain weigh?"
+  },
+  "answer": 1300,
+  "range": [
+   100,
+   5000
+  ],
+  "step": 50,
+  "tolerance": 350,
+  "unit": {
+   "ru": "г",
+   "en": "g"
+  },
+  "fact": {
+   "ru": "Мозг Эйнштейна весил 1230 граммов — чуть меньше среднего: ум не измеряется весом.",
+   "en": "Einstein's brain weighed 1,230 g, a little under average: cleverness is not measured by weight."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_brain"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какого роста был Роберт Уодлоу, самый высокий человек в истории?",
+   "en": "How tall was Robert Wadlow, the tallest man in recorded history?"
+  },
+  "answer": 272,
+  "range": [
+   200,
+   500
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "Из-за увеличенного гипофиза его организм вырабатывал слишком много гормона роста, и он рос даже взрослым.",
+   "en": "An enlarged pituitary gland flooded his body with growth hormone, so he kept growing even as an adult."
+  },
+  "source": "https://en.wikipedia.org/wiki/Robert_Wadlow"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько часов подряд не спал школьник Рэнди Гарднер в рекордном опыте 1964 года?",
+   "en": "How many hours in a row did schoolboy Randy Gardner stay awake in his 1964 record?"
+  },
+  "answer": 264,
+  "range": [
+   24,
+   1000
+  ],
+  "step": 4,
+  "tolerance": 60,
+  "unit": {
+   "ru": "часов",
+   "en": "hours"
+  },
+  "fact": {
+   "ru": "Это 11 суток: к концу у него были провалы в памяти и галлюцинации, а потом он проспал почти 15 часов.",
+   "en": "That is 11 days: by the end he had memory lapses and hallucinations, then he slept for nearly 15 hours."
+  },
+  "source": "https://en.wikipedia.org/wiki/Randy_Gardner_sleep_deprivation_experiment"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До какой температуры остыло тело шведского врача Анны Багенхольм, выжившей подо льдом в 1999 году?",
+   "en": "How low did Swedish doctor Anna Bågenholm's body temperature fall when she survived under ice in 1999?"
+  },
+  "answer": 13.7,
+  "range": [
+   10,
+   40
+  ],
+  "step": 0.1,
+  "tolerance": 2.5,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "Мозг успел остыть до остановки сердца, и ему почти не нужен был кислород: сердце не билось больше двух с половиной часов.",
+   "en": "Her brain cooled before her heart stopped, so it needed almost no oxygen: her heart did not beat for over two and a half hours."
+  },
+  "source": "https://en.wikipedia.org/wiki/Anna_Bågenholm"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Из скольких триллионов клеток состоит тело взрослого человека?",
+   "en": "How many trillion cells make up an adult human body?"
+  },
+  "answer": 30,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "трлн",
+   "en": "trillion"
+  },
+  "fact": {
+   "ru": "Бактерий в нас примерно столько же, около 38 триллионов, но весят они всего около 200 граммов.",
+   "en": "We carry about as many bacteria, some 38 trillion, yet together they weigh only about 200 g."
+  },
+  "source": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002533"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько у человека генов, в которых записаны белки?",
+   "en": "How many protein-coding genes does a human have?"
+  },
+  "answer": 20000,
+  "range": [
+   0,
+   200000
+  ],
+  "step": 1000,
+  "tolerance": 7000,
+  "unit": {
+   "ru": "генов",
+   "en": "genes"
+  },
+  "fact": {
+   "ru": "Учёные ждали от 50 до 140 тысяч, а у нас их почти столько же, сколько у червя длиной в миллиметр.",
+   "en": "Scientists expected 50,000 to 140,000; we have about as many as a worm one millimetre long."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_genome"
+ }
+]

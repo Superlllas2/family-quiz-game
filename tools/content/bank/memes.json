@@ -1,0 +1,1507 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 2015 году словом года по версии Оксфордского словаря стало эмодзи. Какое?",
+   "en": "In 2015 Oxford Dictionaries named an emoji its Word of the Year. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Лицо со слезами радости",
+    "en": "Face with tears of joy"
+   },
+   {
+    "ru": "Красное сердечко",
+    "en": "Red heart"
+   },
+   {
+    "ru": "Большой палец вверх",
+    "en": "Thumbs up"
+   },
+   {
+    "ru": "Подмигивающий смайлик",
+    "en": "Winking face"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Впервые словом года стала картинка: в 2015-м этот смайлик был самым популярным в мире.",
+   "en": "It was the first time a pictograph won: in 2015 it was the most used emoji in the world's messages."
+  },
+  "source": "https://en.wikipedia.org/wiki/Face_with_Tears_of_Joy_emoji"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из какого языка пришло слово «эмодзи»?",
+   "en": "Which language does the word 'emoji' come from?"
+  },
+  "options": [
+   {
+    "ru": "Из японского",
+    "en": "Japanese"
+   },
+   {
+    "ru": "Из английского",
+    "en": "English"
+   },
+   {
+    "ru": "Из корейского",
+    "en": "Korean"
+   },
+   {
+    "ru": "Из латыни",
+    "en": "Latin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Э» — картинка, «модзи» — знак; сходство с английским emotion — чистое совпадение.",
+   "en": "E means picture and moji means character; the likeness to 'emotion' is pure coincidence."
+  },
+  "source": "https://en.wikipedia.org/wiki/Emoji"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Рикролл — розыгрыш, когда ссылка внезапно ведёт на клип. Чей?",
+   "en": "Rickrolling is a prank where a link leads to a music video. Whose?"
+  },
+  "options": [
+   {
+    "ru": "Рика Эстли",
+    "en": "Rick Astley"
+   },
+   {
+    "ru": "Рики Мартина",
+    "en": "Ricky Martin"
+   },
+   {
+    "ru": "Рика Спрингфилда",
+    "en": "Rick Springfield"
+   },
+   {
+    "ru": "Брайана Адамса",
+    "en": "Bryan Adams"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Песня Never Gonna Give You Up вышла в 1987 году, а розыгрыш с ней пошёл с форума 4chan через двадцать лет.",
+   "en": "Never Gonna Give You Up came out in 1987; the prank took off on the 4chan forum twenty years later."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rickrolling"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой породы собака из мема Doge?",
+   "en": "What breed is the dog in the Doge meme?"
+  },
+  "options": [
+   {
+    "ru": "Сиба-ину",
+    "en": "Shiba Inu"
+   },
+   {
+    "ru": "Корги",
+    "en": "Corgi"
+   },
+   {
+    "ru": "Хаски",
+    "en": "Husky"
+   },
+   {
+    "ru": "Чихуахуа",
+    "en": "Chihuahua"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кабосу забрали из приюта; японская учительница выложила её фото в блог в 2010-м, а потом собака стала лицом криптовалюты Dogecoin.",
+   "en": "Kabosu was a rescue dog; her Japanese owner blogged the photo in 2010, and Kabosu went on to become the face of Dogecoin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kabosu_(dog)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где появился самый первый в мире сайт?",
+   "en": "Where did the world's very first website appear?"
+  },
+  "options": [
+   {
+    "ru": "В ЦЕРН под Женевой",
+    "en": "At CERN, near Geneva"
+   },
+   {
+    "ru": "В Гарварде, США",
+    "en": "At Harvard, USA"
+   },
+   {
+    "ru": "В Пентагоне, США",
+    "en": "At the Pentagon, USA"
+   },
+   {
+    "ru": "В Кембридже, Англия",
+    "en": "At Cambridge, England"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тим Бернерс-Ли запустил его в декабре 1990-го: сайт объяснял, что такое Всемирная паутина и как сделать свой сайт.",
+   "en": "Tim Berners-Lee put it up in December 1990; it explained what the World Wide Web was and how to make a site."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Для студентов какого университета в 2004 году создали Facebook?",
+   "en": "Facebook was launched in 2004 for students of which university?"
+  },
+  "options": [
+   {
+    "ru": "Гарварда",
+    "en": "Harvard"
+   },
+   {
+    "ru": "Оксфорда",
+    "en": "Oxford"
+   },
+   {
+    "ru": "Стэнфорда",
+    "en": "Stanford"
+   },
+   {
+    "ru": "Принстона",
+    "en": "Princeton"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала сайт звался TheFacebook и был только для студентов Гарварда; для всех старше 13 лет его открыли в 2006-м.",
+   "en": "It was first called TheFacebook and only Harvard students could join; it opened to everyone over 13 in 2006."
+  },
+  "source": "https://en.wikipedia.org/wiki/Facebook"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что изображено на логотипе Википедии?",
+   "en": "What is shown on the Wikipedia logo?"
+  },
+  "options": [
+   {
+    "ru": "Шар из кусочков пазла",
+    "en": "A globe of jigsaw pieces"
+   },
+   {
+    "ru": "Раскрытая книга",
+    "en": "An open book"
+   },
+   {
+    "ru": "Сова в очках",
+    "en": "An owl in glasses"
+   },
+   {
+    "ru": "Маяк",
+    "en": "A lighthouse"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шар нарочно недособран: дыры наверху значат, что энциклопедия никогда не будет закончена.",
+   "en": "The globe is left unfinished on purpose: the gaps at the top say the encyclopedia will never be complete."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wikipedia_logo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В мемах-лолкотах 2007 года кот на ломаном английском просит I can has… Чего?",
+   "en": "In the 2007 lolcat meme, the cat asks in broken English: 'I can has…' what?"
+  },
+  "options": [
+   {
+    "ru": "Чизбургера",
+    "en": "Cheezburger"
+   },
+   {
+    "ru": "Пиццы",
+    "en": "Pizza"
+   },
+   {
+    "ru": "Рыбки",
+    "en": "Fish"
+   },
+   {
+    "ru": "Молочка",
+    "en": "Milk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фраза дала имя сайту I Can Has Cheezburger, который в том же 2007 году купили примерно за 2 млн долларов.",
+   "en": "The line named the site I Can Has Cheezburger, which was bought later in 2007 for about $2 million."
+  },
+  "source": "https://en.wikipedia.org/wiki/I_Can_Has_Cheezburger%3F"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Пёс из мема This is fine («Всё нормально») спокойно пьёт кофе в комнате, которая…",
+   "en": "The dog in the 'This is fine' meme calmly sips coffee in a room that is…"
+  },
+  "options": [
+   {
+    "ru": "Горит",
+    "en": "On fire"
+   },
+   {
+    "ru": "Тонет",
+    "en": "Flooding"
+   },
+   {
+    "ru": "Полна змей",
+    "en": "Full of snakes"
+   },
+   {
+    "ru": "Вверх ногами",
+    "en": "Upside down"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это две картинки из веб-комикса KC Green 2013 года; дальше в нём пёс так же невозмутимо плавится.",
+   "en": "It is two panels of KC Green's 2013 webcomic; in the later panels the dog calmly melts."
+  },
+  "source": "https://en.wikipedia.org/wiki/This_is_fine"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Слоупоком в Рунете зовут того, кто поздно узнаёт новости. Откуда этот персонаж?",
+   "en": "On the Russian internet a 'slowpoke' is someone late to the news. Where is the character from?"
+  },
+  "options": [
+   {
+    "ru": "Из «Покемонов»",
+    "en": "Pokémon"
+   },
+   {
+    "ru": "Из «Смешариков»",
+    "en": "Smeshariki"
+   },
+   {
+    "ru": "Из «Ну, погоди!»",
+    "en": "Nu, pogodi!"
+   },
+   {
+    "ru": "Из «Губки Боба»",
+    "en": "SpongeBob"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По описанию в первых играх Слоупок так медлителен, что боль от удара чувствует только через пять секунд.",
+   "en": "The first games say Slowpoke is so slow that it takes five seconds to feel the pain of an attack."
+  },
+  "source": "https://en.wikipedia.org/wiki/Slowpoke"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто в меме 2019 года будит хозяйку словами «Наташ, вставай, мы там всё уронили»?",
+   "en": "Who wakes their owner in the 2019 meme 'Natasha, wake up, we dropped everything'?"
+  },
+  "options": [
+   {
+    "ru": "Коты",
+    "en": "Cats"
+   },
+   {
+    "ru": "Дети",
+    "en": "Kids"
+   },
+   {
+    "ru": "Собаки",
+    "en": "Dogs"
+   },
+   {
+    "ru": "Соседи",
+    "en": "Neighbours"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мем появился в паблике «Котизм» в декабре 2019-го, а прославился в феврале 2020-го, когда им встречали падение рубля и нефти.",
+   "en": "It appeared in a VK cat community in December 2019 and took off in February 2020 as the reply to the falling rouble and oil prices."
+  },
+  "source": "https://meduza.io/news/2021/03/28/avtor-mema-pro-kotov-i-natashu-zaregistriruet-tovarnyy-znak-natash-vstavay-my-tam-vse-uronili"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда взялась фотография «Неверного парня», который оглядывается на другую девушку?",
+   "en": "Where did the 'Distracted boyfriend' photo, a man turning to look at another woman, come from?"
+  },
+  "options": [
+   {
+    "ru": "Это стоковое фото",
+    "en": "A stock photo"
+   },
+   {
+    "ru": "Кадр из фильма",
+    "en": "A film still"
+   },
+   {
+    "ru": "Снимок папарацци",
+    "en": "A paparazzi shot"
+   },
+   {
+    "ru": "Рекламный плакат",
+    "en": "An advertising poster"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Испанский фотограф Антонио Гильем снял сцену с моделями в Жироне в 2015 году для фотобанков.",
+   "en": "Spanish photographer Antonio Guillem staged it with models in Girona in 2015 for stock photo sites."
+  },
+  "source": "https://en.wikipedia.org/wiki/Distracted_boyfriend_meme"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая компания в 2006 году купила YouTube?",
+   "en": "Which company bought YouTube in 2006?"
+  },
+  "options": [
+   {
+    "ru": "Гугл",
+    "en": "Google"
+   },
+   {
+    "ru": "Майкрософт",
+    "en": "Microsoft"
+   },
+   {
+    "ru": "Яху",
+    "en": "Yahoo!"
+   },
+   {
+    "ru": "Эппл",
+    "en": "Apple"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сайту не было и двух лет, а Google отдала за него 1,65 млрд долларов своими акциями.",
+   "en": "The site was not yet two years old, and Google paid $1.65 billion for it in its own shares."
+  },
+  "source": "https://en.wikipedia.org/wiki/YouTube"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой формы были все фото в первом Instagram?",
+   "en": "What shape were all photos on early Instagram?"
+  },
+  "options": [
+   {
+    "ru": "Квадратные",
+    "en": "Square"
+   },
+   {
+    "ru": "Круглые",
+    "en": "Round"
+   },
+   {
+    "ru": "Овальные",
+    "en": "Oval"
+   },
+   {
+    "ru": "Треугольные",
+    "en": "Triangular"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Квадрат напоминал кадры «Полароида»; другие форматы разрешили только в 2015 году.",
+   "en": "The square echoed instant Polaroid prints; other shapes were allowed only in 2015."
+  },
+  "source": "https://en.wikipedia.org/wiki/Instagram"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сленговое «кринж» пришло из английского. Какое чувство оно описывает?",
+   "en": "Russian slang 'krinzh' comes from English 'cringe'. What feeling does it describe?"
+  },
+  "options": [
+   {
+    "ru": "Неловкость и стыд",
+    "en": "Awkward embarrassment"
+   },
+   {
+    "ru": "Восторг",
+    "en": "Delight"
+   },
+   {
+    "ru": "Скуку",
+    "en": "Boredom"
+   },
+   {
+    "ru": "Голод",
+    "en": "Hunger"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Английское cringe значит «съёживаться»: так тело само реагирует, когда стыдно за чужую неловкость.",
+   "en": "English 'cringe' means to shrink back: what your body does when someone else is embarrassing."
+  },
+  "source": "https://en.wiktionary.org/wiki/cringe"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что значит «вики» в слове «Википедия»?",
+   "en": "What does 'wiki' in Wikipedia mean?"
+  },
+  "options": [
+   {
+    "ru": "«Быстро» по-гавайски",
+    "en": "'Quick' in Hawaiian"
+   },
+   {
+    "ru": "Это сокращение What I Know Is",
+    "en": "Short for 'What I Know Is'"
+   },
+   {
+    "ru": "«Знание» на суахили",
+    "en": "'Knowledge' in Swahili"
+   },
+   {
+    "ru": "«Свободный» по-фински",
+    "en": "'Free' in Finnish"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Программист Уорд Каннингем назвал свой сайт 1995 года в честь автобуса-челнока Wiki Wiki в аэропорту Гонолулу.",
+   "en": "Programmer Ward Cunningham named his 1995 site after the Wiki Wiki shuttle bus at Honolulu airport."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wiki"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Медведь из мема «Превед!» пришёл с картины американского художника. Что он кричал там?",
+   "en": "The bear of the Russian 'Preved!' meme comes from an American painting. What did it shout there?"
+  },
+  "options": [
+   {
+    "ru": "«Сюрприз!»",
+    "en": "Surprise!"
+   },
+   {
+    "ru": "«Привет!»",
+    "en": "Hello!"
+   },
+   {
+    "ru": "«Беги!»",
+    "en": "Run!"
+   },
+   {
+    "ru": "«Бу!»",
+    "en": "Boo!"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На картине Джона Лури Bear Surprise было слово Surprise!; в 2006-м блогеры заменили его на «Превед» — искажённое «привет».",
+   "en": "John Lurie's Bear Surprise says 'Surprise!'; in 2006 Russian bloggers swapped it for 'Preved', a misspelt 'hello'."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Превед",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как звучал самый первый твит в истории (2006)?",
+   "en": "What did the very first tweet (2006) say?"
+  },
+  "options": [
+   {
+    "ru": "«Просто настраиваю мой twttr»",
+    "en": "just setting up my twttr"
+   },
+   {
+    "ru": "«Привет, мир!»",
+    "en": "Hello, world!"
+   },
+   {
+    "ru": "«Проверка связи, раз-два»",
+    "en": "Testing, one, two"
+   },
+   {
+    "ru": "«Что я сейчас делаю?»",
+    "en": "What am I doing right now?"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его написал сооснователь Джек Дорси; twttr — первое имя сервиса без гласных, а в 2021-м твит продали как NFT за 2,9 млн долларов.",
+   "en": "Co-founder Jack Dorsey wrote it; twttr was the vowel-less first name, and the tweet sold as an NFT for $2.9M in 2021."
+  },
+  "source": "https://www.engadget.com/jack-dorsey-first-tweet-nft-sells-for-2-9-million-214729911.html"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему кошка Grumpy Cat всегда выглядела сердитой?",
+   "en": "Why did Grumpy Cat always look grumpy?"
+  },
+  "options": [
+   {
+    "ru": "Карликовость и неправильный прикус",
+    "en": "Dwarfism and an underbite"
+   },
+   {
+    "ru": "Её так дрессировали",
+    "en": "She was trained to"
+   },
+   {
+    "ru": "Это фотошоп",
+    "en": "It was Photoshop"
+   },
+   {
+    "ru": "Она правда всех ненавидела",
+    "en": "She really did hate everyone"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Хозяйка говорила, что в 99% случаев это самая обычная кошка, а «злое» лицо ей просто досталось от природы.",
+   "en": "Her owner said that 99 percent of the time she was just a regular cat; the scowl was simply how she was born."
+  },
+  "source": "https://en.wikipedia.org/wiki/Grumpy_Cat"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто на самом деле снят в вирусном ролике «Драматичный бурундук» (2007)?",
+   "en": "Which animal really stars in the viral 'Dramatic Chipmunk' clip (2007)?"
+  },
+  "options": [
+   {
+    "ru": "Луговая собачка",
+    "en": "A prairie dog"
+   },
+   {
+    "ru": "Бурундук",
+    "en": "A chipmunk"
+   },
+   {
+    "ru": "Хомяк",
+    "en": "A hamster"
+   },
+   {
+    "ru": "Белка",
+    "en": "A squirrel"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пятисекундный кадр взяли из японского телешоу, а «бурундуком» зверька окрестили уже в интернете.",
+   "en": "The five second shot came from a Japanese TV show; the internet simply misnamed the animal a chipmunk."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dramatic_Chipmunk"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто в жизни «Гарольд, скрывающий боль» из мемов?",
+   "en": "Who is 'Hide the Pain Harold' in real life?"
+  },
+  "options": [
+   {
+    "ru": "Инженер из Венгрии",
+    "en": "An engineer from Hungary"
+   },
+   {
+    "ru": "Актёр из Голливуда",
+    "en": "A Hollywood actor"
+   },
+   {
+    "ru": "Учитель из Польши",
+    "en": "A teacher from Poland"
+   },
+   {
+    "ru": "Пожарный из Канады",
+    "en": "A firefighter from Canada"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фотограф заметил отпускные снимки Андраша Арато в соцсети и позвал сниматься для фотобанка — с той самой улыбкой.",
+   "en": "A photographer spotted András Arató's holiday snaps online and hired him for stock photos, strained smile and all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hide_the_Pain_Harold"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Ждун сначала был скульптурой. Автор из какой страны?",
+   "en": "Zhdun, 'the waiter', began as a sculpture. By an artist from which country?"
+  },
+  "options": [
+   {
+    "ru": "Нидерланды",
+    "en": "The Netherlands"
+   },
+   {
+    "ru": "Япония",
+    "en": "Japan"
+   },
+   {
+    "ru": "Финляндия",
+    "en": "Finland"
+   },
+   {
+    "ru": "Чехия",
+    "en": "Czech Republic"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Маргрит ван Бреворт сделала его в 2016 году для медицинского центра в Лейдене — места, где все чего-то ждут.",
+   "en": "Margriet van Breevoort made it in 2016 for a medical centre in Leiden, a place where everyone is waiting."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Ждун"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему жаргон Рунета прозвали «олбанским языком»?",
+   "en": "Why was Russian internet slang dubbed the 'Albanian language'?"
+  },
+  "options": [
+   {
+    "ru": "Шутка над американцем в ЖЖ",
+    "en": "A joke on an American blogger"
+   },
+   {
+    "ru": "Стиль албанского хакера",
+    "en": "An Albanian hacker's style"
+   },
+   {
+    "ru": "Опечатка в словаре",
+    "en": "A dictionary typo"
+   },
+   {
+    "ru": "Сленг СМС из 90-х",
+    "en": "1990s texting slang"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Американец в ЖЖ возмутился постами на русском; ему ответили, что это «албанский», и завалили «уроками албанского».",
+   "en": "An American on LiveJournal objected to Russian posts; he was told it was 'Albanian' and flooded with mock lessons."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Олбанский_язык"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему в 2014 году YouTube пришлось переделать счётчик просмотров?",
+   "en": "Why did YouTube have to upgrade its view counter in 2014?"
+  },
+  "options": [
+   {
+    "ru": "Gangnam Style его переполнил",
+    "en": "Gangnam Style overflowed it"
+   },
+   {
+    "ru": "Хакеры накрутили миллиард",
+    "en": "Hackers faked a billion views"
+   },
+   {
+    "ru": "Его обязал суд",
+    "en": "A court ordered it"
+   },
+   {
+    "ru": "Он не считал просмотры с телефонов",
+    "en": "It missed views from phones"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Старый счётчик умел считать лишь до 2 147 483 647 — предела 32-битного числа, и клип Psy его перерос.",
+   "en": "The old counter topped out at 2,147,483,647, the largest 32-bit number, and Psy's video went past it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gangnam_Style"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Одна из первых веб-камер в мире (Кембридж) всё время показывала…",
+   "en": "One of the world's first webcams (Cambridge) always showed…"
+  },
+  "options": [
+   {
+    "ru": "Кофейник",
+    "en": "A coffee pot"
+   },
+   {
+    "ru": "Аквариум с рыбками",
+    "en": "A fish tank"
+   },
+   {
+    "ru": "Кота лаборатории",
+    "en": "The lab cat"
+   },
+   {
+    "ru": "Парковку",
+    "en": "The car park"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Учёные не хотели зря ходить к пустому кофейнику; с 1993 года на него смотрел весь интернет, а потом его продали на eBay.",
+   "en": "Scientists wanted to stop walking to an empty pot; from 1993 the whole web watched it, and it was later sold on eBay."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему рекламный мусор в почте назвали спамом?",
+   "en": "Why is junk email called spam?"
+  },
+  "options": [
+   {
+    "ru": "Из-за скетча «Монти Пайтон»",
+    "en": "A Monty Python sketch"
+   },
+   {
+    "ru": "Это аббревиатура",
+    "en": "It is an acronym"
+   },
+   {
+    "ru": "Так звали первого спамера",
+    "en": "The first spammer's name"
+   },
+   {
+    "ru": "Так звучал модем",
+    "en": "The sound of a modem"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "SPAM — консервы; в скетче 1970 года викинги поют «спам, спам, спам», заглушая весь разговор.",
+   "en": "SPAM is a tinned meat; in a 1970 sketch Vikings chant 'spam, spam, spam' until nobody can talk."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spamming"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как, по словам создателя формата GIF, его надо произносить?",
+   "en": "How did the creator of the GIF say it should be pronounced?"
+  },
+  "options": [
+   {
+    "ru": "«Джиф»",
+    "en": "Jif"
+   },
+   {
+    "ru": "«Гиф»",
+    "en": "Gif, with a hard G"
+   },
+   {
+    "ru": "«Жиф»",
+    "en": "Zhif"
+   },
+   {
+    "ru": "«Гайф»",
+    "en": "Guyf"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На премии Webby 2013 года речь не длиннее пяти слов, и Стив Уилхайт показал слайд: It's pronounced JIF, not GIF.",
+   "en": "Webby award speeches are five words long, so in 2013 Steve Wilhite showed a slide: 'It's pronounced JIF, not GIF.'"
+  },
+  "source": "https://edition.cnn.com/2013/05/22/tech/web/pronounce-gif"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Ухмыляющееся лицо интернет-тролля, Trollface, нарисовали в 2008 году. В какой программе?",
+   "en": "Trollface, the grinning face of the internet troll, was drawn in 2008. In which program?"
+  },
+  "options": [
+   {
+    "ru": "Фотошоп",
+    "en": "Photoshop"
+   },
+   {
+    "ru": "Эксель",
+    "en": "Excel"
+   },
+   {
+    "ru": "Пэйнт",
+    "en": "Paint"
+   },
+   {
+    "ru": "ПауэрПойнт",
+    "en": "PowerPoint"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Его нарисовал в Paint 18-летний студент Карлос Рамирес, а потом оформил авторские права и заработал на нём больше $100 000.",
+   "en": "Carlos Ramirez, an 18-year-old student, drew it in MS Paint, then registered the copyright and made over $100,000 from it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trollface"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто по виду мемный кот Шлёпа (Big Floppa)?",
+   "en": "What kind of animal is the meme cat Big Floppa?"
+  },
+  "options": [
+   {
+    "ru": "Каракал",
+    "en": "A caracal"
+   },
+   {
+    "ru": "Рысь",
+    "en": "A lynx"
+   },
+   {
+    "ru": "Сервал",
+    "en": "A serval"
+   },
+   {
+    "ru": "Сфинкс",
+    "en": "A Sphynx cat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шлёпа, он же Гоша, — каракал из России; слово «каракал» по-тюркски значит «чёрное ухо» — за чёрные кисточки на ушах.",
+   "en": "Floppa, real name Gosha, is a caracal from Russia; 'caracal' comes from Turkish for 'black ear', after its black ear tufts."
+  },
+  "source": "https://en.wikipedia.org/wiki/Big_Floppa"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Эдуард Хиль спел «Тролололо» без слов. О ком, по его словам, был выброшенный текст?",
+   "en": "Eduard Khil sang 'Trololo' without words. Who, he said, were the dropped lyrics about?"
+  },
+  "options": [
+   {
+    "ru": "О ковбое",
+    "en": "A cowboy"
+   },
+   {
+    "ru": "О моряке",
+    "en": "A sailor"
+   },
+   {
+    "ru": "О космонавте",
+    "en": "A cosmonaut"
+   },
+   {
+    "ru": "О лесорубе",
+    "en": "A lumberjack"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Хиль говорил, что песню про ковбоя на ранчо не пропустили, а сын композитора уверяет: отец просто поссорился с поэтом.",
+   "en": "Khil said lyrics about a cowboy on his ranch could not be published; the composer's son says his father had just fallen out with the lyricist."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trololo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое видео в 2005 году первым на YouTube набрало миллион просмотров?",
+   "en": "Which video was the first to reach a million views on YouTube, in 2005?"
+  },
+  "options": [
+   {
+    "ru": "Реклама Nike с Роналдиньо",
+    "en": "A Nike ad with Ronaldinho"
+   },
+   {
+    "ru": "Клип Бритни Спирс",
+    "en": "A Britney Spears video"
+   },
+   {
+    "ru": "Трейлер «Гарри Поттера»",
+    "en": "A Harry Potter trailer"
+   },
+   {
+    "ru": "Ролик с котом на пианино",
+    "en": "A cat playing the piano"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В ролике Роналдиньо раз за разом попадает мячом в перекладину, не давая ему упасть, — и спорили, не монтаж ли это.",
+   "en": "Ronaldinho keeps hitting the crossbar and catching the ball without it touching the ground; fans argued it was faked."
+  },
+  "source": "https://en.wikipedia.org/wiki/YouTube"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "CAPTCHA — проверка «вы не робот?». В её полное название входит фамилия какого учёного?",
+   "en": "CAPTCHA, the 'are you a robot?' check, has which scientist's name inside its full name?"
+  },
+  "options": [
+   {
+    "ru": "Алана Тьюринга",
+    "en": "Alan Turing"
+   },
+   {
+    "ru": "Альберта Эйнштейна",
+    "en": "Albert Einstein"
+   },
+   {
+    "ru": "Николы Теслы",
+    "en": "Nikola Tesla"
+   },
+   {
+    "ru": "Исаака Ньютона",
+    "en": "Isaac Newton"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это публичный тест Тьюринга, отличающий людей от компьютеров; ответы reCAPTCHA помогали оцифровывать старые книги.",
+   "en": "It is a public Turing test to tell computers and humans apart; reCAPTCHA answers also helped digitise old books."
+  },
+  "source": "https://en.wikipedia.org/wiki/CAPTCHA"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто придумал слово «мем»?",
+   "en": "Who coined the word 'meme'?"
+  },
+  "options": [
+   {
+    "ru": "Биолог Ричард Докинз",
+    "en": "Biologist Richard Dawkins"
+   },
+   {
+    "ru": "Программист Тим Бернерс-Ли",
+    "en": "Programmer Tim Berners-Lee"
+   },
+   {
+    "ru": "Писатель Уильям Гибсон",
+    "en": "Writer William Gibson"
+   },
+   {
+    "ru": "Основатель 4chan",
+    "en": "The founder of 4chan"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В книге «Эгоистичный ген» 1976 года, задолго до интернета: от греческого «подражание», укороченного в рифму к gene.",
+   "en": "In The Selfish Gene in 1976, long before the web: from Greek for 'imitation', clipped to rhyme with 'gene'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Meme"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Эффект Стрейзанд» назван в честь певицы, которая пыталась убрать из сети…",
+   "en": "The 'Streisand effect' is named after a singer who tried to remove from the web…"
+  },
+  "options": [
+   {
+    "ru": "Фото своего дома",
+    "en": "A photo of her house"
+   },
+   {
+    "ru": "Неудачную песню",
+    "en": "A bad song"
+   },
+   {
+    "ru": "Старое интервью",
+    "en": "An old interview"
+   },
+   {
+    "ru": "Свой номер телефона",
+    "en": "Her phone number"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До её иска в 2003 году снимок скачали всего 6 раз, и дважды — её же юристы; после иска его увидели сотни тысяч.",
+   "en": "Before her 2003 lawsuit the photo had been downloaded 6 times, twice by her lawyers; then hundreds of thousands saw it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Streisand_effect"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каким сайтом сначала задумывали YouTube?",
+   "en": "What kind of site was YouTube first meant to be?"
+  },
+  "options": [
+   {
+    "ru": "Сайтом видеознакомств",
+    "en": "A video dating site"
+   },
+   {
+    "ru": "Сайтом новостей",
+    "en": "A news site"
+   },
+   {
+    "ru": "Магазином музыки",
+    "en": "A music shop"
+   },
+   {
+    "ru": "Кулинарным сайтом",
+    "en": "A cooking site"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Основатели ждали видео-анкет, но их почти никто не присылал, и сайт открыли для любых роликов.",
+   "en": "The founders expected dating video profiles; hardly any came in, so they let people upload anything."
+  },
+  "source": "https://en.wikipedia.org/wiki/YouTube"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто придумал отмечать темы в Твиттере хештегами, значком #?",
+   "en": "Who came up with tagging topics on Twitter with hashtags, the # sign?"
+  },
+  "options": [
+   {
+    "ru": "Основатели Твиттера",
+    "en": "Twitter's founders"
+   },
+   {
+    "ru": "Обычный пользователь",
+    "en": "An ordinary user"
+   },
+   {
+    "ru": "Программисты Apple",
+    "en": "Apple programmers"
+   },
+   {
+    "ru": "Учёные из MIT",
+    "en": "MIT scientists"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Американец Крис Мессина предложил это в твите в 2007 году, а Твиттер сначала отмахнулся: «это для зануд».",
+   "en": "American Chris Messina suggested it in a 2007 tweet, and Twitter first brushed it off: 'these things are for nerds'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chris_Messina_(inventor)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какой страны носильщики гроба из мема Coffin Dance (2020)?",
+   "en": "Which country are the dancing pallbearers of the Coffin Dance meme (2020) from?"
+  },
+  "options": [
+   {
+    "ru": "Гана",
+    "en": "Ghana"
+   },
+   {
+    "ru": "Ямайка",
+    "en": "Jamaica"
+   },
+   {
+    "ru": "Бразилия",
+    "en": "Brazil"
+   },
+   {
+    "ru": "Куба",
+    "en": "Cuba"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В Гане похороны часто превращают в праздник жизни, и команда Бенджамина Айду сделала танец с гробом своей фирменной чертой.",
+   "en": "In Ghana a funeral is often a joyful send-off, and Benjamin Aidoo's pallbearers made dancing their trademark."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dancing_pallbearers"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что сжимает в кулаке малыш с мема Success Kid?",
+   "en": "What is the toddler in the Success Kid meme clutching in his fist?"
+  },
+  "options": [
+   {
+    "ru": "Песок",
+    "en": "Sand"
+   },
+   {
+    "ru": "Ракушку",
+    "en": "A seashell"
+   },
+   {
+    "ru": "Печенье",
+    "en": "A cookie"
+   },
+   {
+    "ru": "Машинку",
+    "en": "A toy car"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мама сняла Сэмми на пляже в 2007 году, и на самом деле он собирался съесть горсть песка, а «победный» жест придумал интернет.",
+   "en": "His mum snapped Sammy on a beach in 2007; he was actually about to eat the sand, and the internet read it as a victory fist."
+  },
+  "source": "https://en.wikipedia.org/wiki/Success_Kid"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году впервые предложили смайлик :-)?",
+   "en": "In which year was the :-) smiley first proposed?"
+  },
+  "answer": 1982,
+  "range": [
+   1960,
+   2026
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Скотт Фалман из Карнеги-Меллон предложил метку для шуток, после того как на форуме всерьёз приняли шутку о ртути в лифте.",
+   "en": "Scott Fahlman at Carnegie Mellon proposed a joke marker after a board post joking about mercury in a lift was taken seriously."
+  },
+  "source": "https://en.wikipedia.org/wiki/Emoticon"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году появилась доменная зона .ru?",
+   "en": "In which year was the .ru domain created?"
+  },
+  "answer": 1994,
+  "range": [
+   1940,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Зону делегировали 7 апреля 1994 года, и с тех пор этот день отмечают как День Рунета.",
+   "en": "It was delegated on 7 April 1994, and the date is now marked as the Day of the Russian internet."
+  },
+  "source": "https://ru.wikipedia.org/wiki/.ru"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году запустили Википедию?",
+   "en": "In which year was Wikipedia launched?"
+  },
+  "answer": 2001,
+  "range": [
+   1950,
+   2026
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Её запускали как подсобный проект для Nupedia, где статьи писали эксперты; Nupedia закрылась в 2003-м, а её тексты вошли в Википедию.",
+   "en": "It began as a side project for Nupedia, an expert-written encyclopedia; Nupedia shut down in 2003 and its articles moved to Wikipedia."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wikipedia"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько символов поначалу вмещал один твит?",
+   "en": "How many characters did a tweet originally allow?"
+  },
+  "answer": 140,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "символов",
+   "en": "characters"
+  },
+  "fact": {
+   "ru": "Твиты отправляли по СМС: 160 знаков минус 20 под имя автора; в 2017 году лимит удвоили до 280.",
+   "en": "Tweets were sent by text message: 160 characters minus 20 for the username; the limit doubled to 280 in 2017."
+  },
+  "source": "https://en.wikipedia.org/wiki/Twitter"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году на YouTube появился Nyan Cat — пиксельный кот с радугой?",
+   "en": "In which year did Nyan Cat, the pixel cat with a rainbow trail, appear on YouTube?"
+  },
+  "answer": 2011,
+  "range": [
+   1950,
+   2026
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Тело кота — американское печенье Pop-Tart; в 2021 году оригинальную гифку продали как NFT почти за 600 тысяч долларов.",
+   "en": "The cat's body is a Pop-Tart; in 2021 the original GIF sold as an NFT for nearly $600,000."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nyan_Cat"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 2021 году ролик «Чарли укусил меня за палец» продали на аукционе как NFT. За сколько?",
+   "en": "In 2021 the 'Charlie bit my finger' video was auctioned as an NFT. For how much?"
+  },
+  "answer": 760,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 10,
+  "tolerance": 150,
+  "unit": {
+   "ru": "тыс. долларов",
+   "en": "thousand $"
+  },
+  "fact": {
+   "ru": "Минутную сценку двух братьев сняли дома в английском Марлоу в 2007 году, и она годами была в топе YouTube.",
+   "en": "The minute-long clip of two brothers was filmed at home in Marlow, England, in 2007 and topped YouTube for years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charlie_Bit_My_Finger"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько эмодзи было в самом первом наборе Сигэтаки Куриты 1999 года?",
+   "en": "How many emoji were in Shigetaka Kurita's very first set in 1999?"
+  },
+  "answer": 176,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "эмодзи",
+   "en": "emoji"
+  },
+  "fact": {
+   "ru": "Он рисовал их для японских телефонов DoCoMo, а в 2016 году весь набор вошёл в коллекцию Музея современного искусства в Нью-Йорке.",
+   "en": "He drew them for DoCoMo's Japanese phones; in 2016 New York's Museum of Modern Art added the set to its collection."
+  },
+  "source": "https://en.wikipedia.org/wiki/Emoji"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 2014-м мир обливался ледяной водой ради фонда борьбы с БАС. Сколько млн долларов фонд собрал за месяц?",
+   "en": "In 2014 the world tipped ice water on itself for an ALS charity. How many million dollars did it raise in a month?"
+  },
+  "answer": 100,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "млн долларов",
+   "en": "million $"
+  },
+  "fact": {
+   "ru": "Больше 100 млн за месяц против 2,8 млн годом раньше; отчасти на эти деньги учёные нашли ген NEK1, связанный с болезнью.",
+   "en": "Over $100 million in a month, against $2.8 million a year earlier; the money helped find NEK1, a gene linked to ALS."
+  },
+  "source": "https://time.com/3222224/als-ice-bucket-challenge-donations-million/"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько дней Gangnam Style набрал первый в истории YouTube миллиард просмотров?",
+   "en": "How many days did Gangnam Style take to become YouTube's first video with a billion views?"
+  },
+  "answer": 159,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Клип вышел 15 июля 2012 года, а миллиард набрал 21 декабря — в день, когда многие ждали «конца света» по календарю майя.",
+   "en": "Out on 15 July 2012, it hit a billion on 21 December, the day some expected a Maya calendar doomsday."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gangnam_Style"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Первое видео на YouTube — «Я в зоопарке» (2005), про слонов. Сколько оно длится?",
+   "en": "The first YouTube video, 'Me at the zoo' (2005), is about elephants. How long is it?"
+  },
+  "answer": 19,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 9,
+  "unit": {
+   "ru": "секунд",
+   "en": "seconds"
+  },
+  "fact": {
+   "ru": "Сооснователь Джавед Карим успевает сказать лишь, что у слонов очень-очень длинные хоботы, — и всё.",
+   "en": "Co-founder Jawed Karim only has time to say the elephants have really, really long trunks, and that's it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Me_at_the_zoo"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Фото яйца в 2019 году побило рекорд лайков в Instagram. Сколько их было у прежнего рекорда?",
+   "en": "In 2019 a photo of an egg broke Instagram's like record. How many likes did the old record have?"
+  },
+  "answer": 18,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "млн",
+   "en": "million"
+  },
+  "fact": {
+   "ru": "Прежний рекорд держало фото новорождённой дочери Кайли Дженнер; яйцо обогнало его за десять дней.",
+   "en": "The old record was Kylie Jenner's photo of her newborn daughter; the egg overtook it in ten days."
+  },
+  "source": "https://www.guinnessworldrecords.com/news/2019/1/egg-photo-breaks-kylie-jenners-record-for-most-liked-image-on-instagram-554801"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 2006 году последние 1000 пикселей «Сайта на миллион долларов» продали на eBay. За сколько?",
+   "en": "In 2006 the last 1,000 pixels of the Million Dollar Homepage were auctioned on eBay. For how much?"
+  },
+  "answer": 38100,
+  "range": [
+   0,
+   200000
+  ],
+  "step": 100,
+  "tolerance": 10000,
+  "unit": {
+   "ru": "долларов",
+   "en": "dollars"
+  },
+  "fact": {
+   "ru": "Студент Алекс Тью продавал пиксели по доллару, чтобы оплатить учёбу, а остаток аукцион поднял в 38 раз.",
+   "en": "Student Alex Tew sold pixels at $1 each to pay for university; the auction got 38 times that for the last block."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Million_Dollar_Homepage"
+ }
+]
