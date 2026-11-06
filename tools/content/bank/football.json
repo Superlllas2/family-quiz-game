@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что в футболе называют хет-триком?",
+   "en": "What is a hat-trick in football?"
+  },
+  "options": [
+   {
+    "ru": "Три гола одного игрока за матч",
+    "en": "Three goals by one player in a game"
+   },
+   {
+    "ru": "Три победы подряд",
+    "en": "Three wins in a row"
+   },
+   {
+    "ru": "Гол прямо с углового",
+    "en": "A goal straight from a corner"
+   },
+   {
+    "ru": "Три жёлтые карточки",
+    "en": "Three yellow cards"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слово пришло из крикета: в 1858 году игроку, выбившему трёх соперников тремя подачами подряд, купили шляпу.",
+   "en": "It comes from cricket: in 1858 fans bought a hat for a bowler who took three wickets with three balls in a row."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hat-trick"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что подсказало судье идею жёлтой и красной карточек?",
+   "en": "What gave a referee the idea for yellow and red cards?"
+  },
+  "options": [
+   {
+    "ru": "Игральные карты",
+    "en": "Playing cards"
+   },
+   {
+    "ru": "Морские сигнальные флаги",
+    "en": "Ships' signal flags"
+   },
+   {
+    "ru": "Трамвайные билеты",
+    "en": "Tram tickets"
+   },
+   {
+    "ru": "Светофор",
+    "en": "A traffic light"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Англичанин Кен Астон придумал их, стоя на светофоре в Лондоне, а впервые их показали на чемпионате мира 1970 года.",
+   "en": "English referee Ken Aston thought of them while waiting at London traffic lights; they debuted at the 1970 World Cup."
+  },
+  "source": "https://en.wikipedia.org/wiki/Penalty_card"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто забил знаменитый гол «рукой Бога» в 1986 году?",
+   "en": "Who scored the famous 'Hand of God' goal in 1986?"
+  },
+  "options": [
+   {
+    "ru": "Зинедин Зидан",
+    "en": "Zinedine Zidane"
+   },
+   {
+    "ru": "Мишель Платини",
+    "en": "Michel Platini"
+   },
+   {
+    "ru": "Диего Марадона",
+    "en": "Diego Maradona"
+   },
+   {
+    "ru": "Пеле",
+    "en": "Pelé"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Через четыре минуты он забил англичанам ещё раз, пробежав с мячом с половины поля, и этот гол потом назвали голом века.",
+   "en": "Four minutes later he scored again after a run from his own half, later voted the goal of the century."
+  },
+  "source": "https://en.wikipedia.org/wiki/Argentina_v_England_(1986_FIFA_World_Cup)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что сделал Зинедин Зидан в финале чемпионата мира 2006 года?",
+   "en": "What did Zinedine Zidane do in the 2006 World Cup final?"
+  },
+  "options": [
+   {
+    "ru": "Отказался выходить на поле",
+    "en": "Refused to take the field"
+   },
+   {
+    "ru": "Ударил соперника головой",
+    "en": "Headbutted an opponent"
+   },
+   {
+    "ru": "Забил гол пяткой",
+    "en": "Scored with his heel"
+   },
+   {
+    "ru": "Встал в ворота",
+    "en": "Went in goal"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Это был последний матч в его карьере, но лучшим игроком турнира его всё равно признали.",
+   "en": "It was the last game of his career, yet he was still named the player of the tournament."
+  },
+  "source": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_final"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто в 2010 году угадал исходы всех матчей Германии на чемпионате мира?",
+   "en": "Who correctly predicted every German game at the 2010 World Cup?"
+  },
+  "options": [
+   {
+    "ru": "Осьминог",
+    "en": "An octopus"
+   },
+   {
+    "ru": "Попугай",
+    "en": "A parrot"
+   },
+   {
+    "ru": "Черепаха",
+    "en": "A turtle"
+   },
+   {
+    "ru": "Козёл",
+    "en": "A goat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Осьминог Пауль из аквариума в Оберхаузене выбирал кормушку с флагом и не ошибся ни разу из восьми, включая финал.",
+   "en": "Paul, from an aquarium in Oberhausen, picked a food box with a flag and got all eight right, the final included."
+  },
+  "source": "https://en.wikipedia.org/wiki/Paul_the_Octopus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Каким зверем был Забивака, талисман чемпионата мира 2018 года?",
+   "en": "What animal was Zabivaka, the mascot of the 2018 World Cup?"
+  },
+  "options": [
+   {
+    "ru": "Медведем",
+    "en": "A bear"
+   },
+   {
+    "ru": "Котом",
+    "en": "A cat"
+   },
+   {
+    "ru": "Тигром",
+    "en": "A tiger"
+   },
+   {
+    "ru": "Волком",
+    "en": "A wolf"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Его выбрали голосованием в интернете: волк набрал больше половины голосов, обойдя тигра и кота.",
+   "en": "He won an online vote with more than half the votes, beating a tiger and a cat."
+  },
+  "source": "https://en.wikipedia.org/wiki/Zabivaka"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Первый контракт Месси с каким клубом записали на бумажной салфетке?",
+   "en": "Lionel Messi's first deal with which club was written on a paper napkin?"
+  },
+  "options": [
+   {
+    "ru": "ПСЖ",
+    "en": "Paris Saint-Germain"
+   },
+   {
+    "ru": "«Ривер Плейт»",
+    "en": "River Plate"
+   },
+   {
+    "ru": "«Барселона»",
+    "en": "Barcelona"
+   },
+   {
+    "ru": "«Реал Мадрид»",
+    "en": "Real Madrid"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "В 2000 году спортивный директор «Барсы» боялся упустить 13-летнего мальчика и подписал обещание прямо за обедом.",
+   "en": "In 2000 a Barcelona director, afraid of losing the 13-year-old, signed a promise on a napkin over lunch."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lionel_Messi"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "С каким счётом Германия разгромила Бразилию в полуфинале ЧМ-2014?",
+   "en": "By what score did Germany crush Brazil in the 2014 World Cup semi-final?"
+  },
+  "options": [
+   {
+    "ru": "3:0",
+    "en": "3–0"
+   },
+   {
+    "ru": "7:1",
+    "en": "7–1"
+   },
+   {
+    "ru": "4:0",
+    "en": "4–0"
+   },
+   {
+    "ru": "5:2",
+    "en": "5–2"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "К 29-й минуте немцы вели уже 5:0, и всё это в Бразилии, на глазах у бразильских болельщиков.",
+   "en": "Germany were 5–0 up after 29 minutes, in Brazil, in front of Brazil's own fans."
+  },
+  "source": "https://en.wikipedia.org/wiki/Brazil_v_Germany_(2014_FIFA_World_Cup)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему чемпионат мира 2022 года в Катаре играли в ноябре и декабре?",
+   "en": "Why was the 2022 World Cup in Qatar played in November and December?"
+  },
+  "options": [
+   {
+    "ru": "Летом там слишком жарко",
+    "en": "Summers there are too hot"
+   },
+   {
+    "ru": "Летом там сезон дождей",
+    "en": "Summer is the rainy season"
+   },
+   {
+    "ru": "Летом там гонки верблюдов",
+    "en": "Summer is camel racing season"
+   },
+   {
+    "ru": "Не успели достроить стадионы",
+    "en": "The stadiums were not finished"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Летом в Катаре бывает за +40 °C, поэтому впервые чемпионат мира провели не в привычные май–июль.",
+   "en": "Qatari summers pass 40 °C, so for the first time the World Cup left its usual May–July window."
+  },
+  "source": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1966 году в Лондоне украли Кубок мира. Кто его нашёл?",
+   "en": "In 1966 the World Cup trophy was stolen in London. Who found it?"
+  },
+  "options": [
+   {
+    "ru": "Школьник",
+    "en": "A schoolboy"
+   },
+   {
+    "ru": "Полицейский",
+    "en": "A policeman"
+   },
+   {
+    "ru": "Дворник",
+    "en": "A street sweeper"
+   },
+   {
+    "ru": "Собака",
+    "en": "A dog"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Колли по кличке Пиклз унюхал кубок под кустом, завёрнутым в газету, через неделю после кражи.",
+   "en": "A collie named Pickles sniffed it out under a hedge, wrapped in newspaper, a week after the theft."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pickles_(dog)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как сборная России выбила Испанию с чемпионата мира 2018 года?",
+   "en": "How did Russia knock Spain out of the 2018 World Cup?"
+  },
+  "options": [
+   {
+    "ru": "Голом на последней минуте",
+    "en": "With a last-minute goal"
+   },
+   {
+    "ru": "По жребию",
+    "en": "By drawing lots"
+   },
+   {
+    "ru": "В серии пенальти",
+    "en": "On penalties"
+   },
+   {
+    "ru": "Золотым голом",
+    "en": "With a golden goal"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Игорь Акинфеев отбил два удара, а последний, от Яго Аспаса, — ногой.",
+   "en": "Igor Akinfeev saved two kicks, the last one, from Iago Aspas, with his foot."
+  },
+  "source": "https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_knockout_stage"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В честь кого назван московский «Спартак»?",
+   "en": "Who is Spartak Moscow named after?"
+  },
+  "options": [
+   {
+    "ru": "Первого капитана команды",
+    "en": "The team's first captain"
+   },
+   {
+    "ru": "Гладиатора Спартака",
+    "en": "The gladiator Spartacus"
+   },
+   {
+    "ru": "Древней Спарты",
+    "en": "Ancient Sparta"
+   },
+   {
+    "ru": "Основателя клуба",
+    "en": "The club's founder"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Имя в 1935 году предложил Николай Старостин — под впечатлением от романа Джованьоли о восстании рабов.",
+   "en": "Nikolai Starostin suggested it in 1935, inspired by Giovagnoli's novel about the slave revolt."
+  },
+  "source": "https://en.wikipedia.org/wiki/FC_Spartak_Moscow"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто из футболистов трижды выигрывал чемпионат мира?",
+   "en": "Which footballer won the World Cup three times as a player?"
+  },
+  "options": [
+   {
+    "ru": "Пеле",
+    "en": "Pelé"
+   },
+   {
+    "ru": "Диего Марадона",
+    "en": "Diego Maradona"
+   },
+   {
+    "ru": "Лионель Месси",
+    "en": "Lionel Messi"
+   },
+   {
+    "ru": "Роналдо",
+    "en": "Ronaldo Nazário"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Первый титул Пеле выиграл в 17 лет, забив в финале 1958 года два гола шведам.",
+   "en": "He won the first at 17, scoring twice against Sweden in the 1958 final."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pelé"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В какой стране впервые записали правила современного футбола?",
+   "en": "In which country were the rules of modern football first written down?"
+  },
+  "options": [
+   {
+    "ru": "Китай",
+    "en": "China"
+   },
+   {
+    "ru": "Италия",
+    "en": "Italy"
+   },
+   {
+    "ru": "Бразилия",
+    "en": "Brazil"
+   },
+   {
+    "ru": "Англия",
+    "en": "England"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Их составили в 1863 году в лондонской таверне, хотя китайская игра с мячом цуцзюй на две тысячи лет старше.",
+   "en": "They were drawn up in a London tavern in 1863, though China's ball game cuju is some 2,000 years older."
+  },
+  "source": "https://en.wikipedia.org/wiki/Laws_of_the_Game_(association_football)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему мяч чемпионата мира 1970 года сделали чёрно-белым?",
+   "en": "Why was the 1970 World Cup ball black and white?"
+  },
+  "options": [
+   {
+    "ru": "В честь шахматной доски",
+    "en": "As a nod to chess"
+   },
+   {
+    "ru": "Это фирменные цвета ФИФА",
+    "en": "They are FIFA's own colours"
+   },
+   {
+    "ru": "Чтобы его было видно по чёрно-белому ТВ",
+    "en": "To show up on black-and-white TV"
+   },
+   {
+    "ru": "Так было дешевле красить",
+    "en": "It was cheaper to paint"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Мяч назвали Telstar в честь спутника, передававшего телесигнал: тогда цветной телевизор был редкостью.",
+   "en": "It was named Telstar after a TV satellite, at a time when colour television was still rare."
+  },
+  "source": "https://en.wikipedia.org/wiki/Adidas_Telstar"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Бразилия навсегда получила Кубок Жюля Риме в 1970 году. Что с ним стало?",
+   "en": "Brazil kept the Jules Rimet Trophy for good in 1970. What became of it?"
+  },
+  "options": [
+   {
+    "ru": "Он утонул в заливе Рио",
+    "en": "It sank in Rio's bay"
+   },
+   {
+    "ru": "Его украли, и он пропал",
+    "en": "It was stolen and never found"
+   },
+   {
+    "ru": "Его вернули Уругваю",
+    "en": "It went back to Uruguay"
+   },
+   {
+    "ru": "Его подарили Пеле",
+    "en": "It was given to Pelé"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В 1983 году его украли из штаба бразильской федерации и, скорее всего, переплавили на золото.",
+   "en": "It was stolen from Brazil's football federation in 1983 and was most likely melted down for the gold."
+  },
+  "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup_Trophy"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая сборная выиграла самый первый чемпионат Европы в 1960 году?",
+   "en": "Which team won the very first European Championship in 1960?"
+  },
+  "options": [
+   {
+    "ru": "СССР",
+    "en": "The USSR"
+   },
+   {
+    "ru": "Франция",
+    "en": "France"
+   },
+   {
+    "ru": "Испания",
+    "en": "Spain"
+   },
+   {
+    "ru": "Югославия",
+    "en": "Yugoslavia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Победный гол в Париже забил Виктор Понедельник, а финал выпал на воскресенье.",
+   "en": "The winner in Paris came from Viktor Ponedelnik, whose surname means Monday, in a final played on a Sunday."
+  },
+  "source": "https://en.wikipedia.org/wiki/1960_European_Nations%27_Cup_final"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая сборная сенсационно выиграла Евро-2004?",
+   "en": "Which team sensationally won Euro 2004?"
+  },
+  "options": [
+   {
+    "ru": "Португалия",
+    "en": "Portugal"
+   },
+   {
+    "ru": "Чехия",
+    "en": "Czech Republic"
+   },
+   {
+    "ru": "Дания",
+    "en": "Denmark"
+   },
+   {
+    "ru": "Греция",
+    "en": "Greece"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Греки обыграли хозяев-португальцев дважды: в первом матче турнира и в финале.",
+   "en": "Greece beat the hosts Portugal twice: in the opening game and in the final."
+  },
+  "source": "https://en.wikipedia.org/wiki/UEFA_Euro_2004"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что было необычного в победе Дании на Евро-1992?",
+   "en": "What was odd about Denmark winning Euro 1992?"
+  },
+  "options": [
+   {
+    "ru": "Все голы забил один игрок",
+    "en": "One player scored all their goals"
+   },
+   {
+    "ru": "Она не пропустила ни одного гола",
+    "en": "They never conceded a goal"
+   },
+   {
+    "ru": "Она даже не прошла отбор",
+    "en": "They had not even qualified"
+   },
+   {
+    "ru": "Все матчи она выиграла по пенальти",
+    "en": "They won every game on penalties"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Датчан позвали за десять дней до старта вместо Югославии, которую отстранили из-за санкций ООН.",
+   "en": "Denmark were called up ten days before kick-off to replace Yugoslavia, banned under UN sanctions."
+  },
+  "source": "https://en.wikipedia.org/wiki/UEFA_Euro_1992"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2016 году букмекеры платили 5000 к 1 за чемпионство в Англии. Какой клуб победил?",
+   "en": "In 2016 bookmakers paid out at 5,000 to 1 on which club winning the English league?"
+  },
+  "options": [
+   {
+    "ru": "«Эвертон»",
+    "en": "Everton"
+   },
+   {
+    "ru": "«Лестер Сити»",
+    "en": "Leicester City"
+   },
+   {
+    "ru": "«Ливерпуль»",
+    "en": "Liverpool"
+   },
+   {
+    "ru": "«Тоттенхэм»",
+    "en": "Tottenham"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Годом раньше «Лестер» чудом избежал вылета, выиграв семь из последних девяти матчей.",
+   "en": "A year earlier Leicester had barely escaped relegation by winning seven of their last nine games."
+  },
+  "source": "https://en.wikipedia.org/wiki/2015%E2%80%9316_Leicester_City_F.C._season"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто из игроков сборной России забил пять голов в одном матче чемпионата мира 1994 года?",
+   "en": "Which Russian player scored five goals in one game at the 1994 World Cup?"
+  },
+  "options": [
+   {
+    "ru": "Олег Саленко",
+    "en": "Oleg Salenko"
+   },
+   {
+    "ru": "Андрей Аршавин",
+    "en": "Andrei Arshavin"
+   },
+   {
+    "ru": "Владимир Бесчастных",
+    "en": "Vladimir Beschastnykh"
+   },
+   {
+    "ru": "Александр Кержаков",
+    "en": "Aleksandr Kerzhakov"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он разделил звание лучшего бомбардира турнира, хотя Россия не вышла из группы, и больше за сборную не играл.",
+   "en": "He shared the Golden Boot though Russia went out in the group stage, and never played for Russia again."
+  },
+  "source": "https://en.wikipedia.org/wiki/Oleg_Salenko"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В форме какого цвета сборная Бразилии играла до 1950 года?",
+   "en": "What colour shirts did Brazil wear until 1950?"
+  },
+  "options": [
+   {
+    "ru": "Зелёного",
+    "en": "Green"
+   },
+   {
+    "ru": "Синего",
+    "en": "Blue"
+   },
+   {
+    "ru": "Красного",
+    "en": "Red"
+   },
+   {
+    "ru": "Белого",
+    "en": "White"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "После домашнего поражения от Уругвая в 1950-м от белой формы решили отказаться, а жёлтую выбрали на конкурсе газеты.",
+   "en": "After the 1950 home defeat by Uruguay the white kit was dropped; the yellow one won a newspaper contest."
+  },
+  "source": "https://en.wikipedia.org/wiki/Brazil_national_football_team"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто в 1890 году предложил ввести в футбол пенальти?",
+   "en": "Who proposed the penalty kick in 1890?"
+  },
+  "options": [
+   {
+    "ru": "Король",
+    "en": "A king"
+   },
+   {
+    "ru": "Журналист",
+    "en": "A journalist"
+   },
+   {
+    "ru": "Вратарь",
+    "en": "A goalkeeper"
+   },
+   {
+    "ru": "Судья",
+    "en": "A referee"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Ирландский вратарь Уильям Маккрам устал смотреть, как защитники безнаказанно сносят нападающих у ворот.",
+   "en": "Irish goalkeeper William McCrum was tired of seeing defenders get away with fouls right in front of goal."
+  },
+  "source": "https://en.wikipedia.org/wiki/William_McCrum"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что футболисты московского «Динамо» вручили соперникам перед матчем в Лондоне в 1945 году?",
+   "en": "What did Dynamo Moscow's players hand their opponents before a game in London in 1945?"
+  },
+  "options": [
+   {
+    "ru": "Шапки-ушанки",
+    "en": "Fur hats"
+   },
+   {
+    "ru": "Букеты цветов",
+    "en": "Bouquets of flowers"
+   },
+   {
+    "ru": "Матрёшки",
+    "en": "Nesting dolls"
+   },
+   {
+    "ru": "Банки икры",
+    "en": "Tins of caviar"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Игроки «Челси» растерялись, а всё турне по Британии «Динамо» прошло без поражений: две победы и две ничьи.",
+   "en": "Chelsea's players were caught empty-handed, and Dynamo's whole British tour ended unbeaten: two wins, two draws."
+  },
+  "source": "https://www.rferl.org/a/when-soviet-soccer-took-on-the-brits-after-world-war-2/31021210.html"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Спорный гол в финале ЧМ-1966 засчитали по подсказке бокового судьи. Из какой он был страны?",
+   "en": "The disputed goal in the 1966 World Cup final was given on a linesman's word. Where was he from?"
+  },
+  "options": [
+   {
+    "ru": "СССР",
+    "en": "The USSR"
+   },
+   {
+    "ru": "Швеция",
+    "en": "Sweden"
+   },
+   {
+    "ru": "Бразилия",
+    "en": "Brazil"
+   },
+   {
+    "ru": "Италия",
+    "en": "Italy"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мяч ударился о перекладину и отскочил вниз; Тофик Бахрамов из Баку решил, что гол был, и теперь его имя носит стадион.",
+   "en": "The ball hit the bar and bounced down; Tofiq Bahramov of Baku ruled it in, and a stadium there now bears his name."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tofiq_Bahramov"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто сделал хет-трик в финале чемпионата мира 2022 года?",
+   "en": "Who scored a hat-trick in the 2022 World Cup final?"
+  },
+  "options": [
+   {
+    "ru": "Лионель Месси",
+    "en": "Lionel Messi"
+   },
+   {
+    "ru": "Анхель Ди Мария",
+    "en": "Ángel Di María"
+   },
+   {
+    "ru": "Оливье Жиру",
+    "en": "Olivier Giroud"
+   },
+   {
+    "ru": "Килиан Мбаппе",
+    "en": "Kylian Mbappé"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "До него хет-трик в финале удавался только англичанину Джеффу Херсту в 1966 году, а Франция всё равно проиграла.",
+   "en": "Before him only England's Geoff Hurst had scored a hat-trick in a final, in 1966, and France still lost."
+  },
+  "source": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой вратарь забил за карьеру больше ста голов?",
+   "en": "Which goalkeeper scored more than a hundred career goals?"
+  },
+  "options": [
+   {
+    "ru": "Хосе Луис Чилаверт",
+    "en": "José Luis Chilavert"
+   },
+   {
+    "ru": "Джанлуиджи Буффон",
+    "en": "Gianluigi Buffon"
+   },
+   {
+    "ru": "Рожерио Сени",
+    "en": "Rogério Ceni"
+   },
+   {
+    "ru": "Рене Игита",
+    "en": "René Higuita"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Бразилец Рожерио Сени забил за «Сан-Паулу» около 130 голов, почти все со штрафных и пенальти.",
+   "en": "Brazil's Rogério Ceni scored about 130 for São Paulo, almost all from free kicks and penalties."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rogério_Ceni"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем на краю штрафной площади нарисована дуга?",
+   "en": "What is the arc at the edge of the penalty area for?"
+  },
+  "options": [
+   {
+    "ru": "Это просто украшение",
+    "en": "It is just decoration"
+   },
+   {
+    "ru": "Отодвинуть игроков от мяча при пенальти",
+    "en": "Keeping players back at a penalty"
+   },
+   {
+    "ru": "Там вратарь может брать мяч руками",
+    "en": "The keeper may use hands there"
+   },
+   {
+    "ru": "С неё бьют штрафные",
+    "en": "Free kicks are taken from it"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "При пенальти все, кроме бьющего и вратаря, должны стоять за дугой — в 9,15 м, то есть ровно в 10 ярдах от точки.",
+   "en": "At a penalty everyone else must stay outside it, 9.15 m, or exactly 10 yards, from the spot."
+  },
+  "source": "https://en.wikipedia.org/wiki/Penalty_area"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Под руководством какого тренера сборная России дошла до полуфинала Евро-2008?",
+   "en": "Which coach led Russia to the semi-finals of Euro 2008?"
+  },
+  "options": [
+   {
+    "ru": "Гус Хиддинк",
+    "en": "Guus Hiddink"
+   },
+   {
+    "ru": "Дик Адвокат",
+    "en": "Dick Advocaat"
+   },
+   {
+    "ru": "Фабио Капелло",
+    "en": "Fabio Capello"
+   },
+   {
+    "ru": "Олег Романцев",
+    "en": "Oleg Romantsev"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В четвертьфинале Россия выбила со счётом 3:1 сборную Нидерландов — родную страну Хиддинка.",
+   "en": "In the quarter-final Russia beat the Netherlands, Hiddink's own country, 3–1."
+  },
+  "source": "https://en.wikipedia.org/wiki/UEFA_Euro_2008"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему сборная Италии играет в синем, хотя на её флаге синего нет?",
+   "en": "Why do Italy play in blue when there is no blue on their flag?"
+  },
+  "options": [
+   {
+    "ru": "Это цвет Средиземного моря",
+    "en": "It is the colour of the sea"
+   },
+   {
+    "ru": "Так захотел первый спонсор",
+    "en": "Their first sponsor wanted it"
+   },
+   {
+    "ru": "Синяя ткань тогда стоила дешевле",
+    "en": "Blue cloth was cheaper then"
+   },
+   {
+    "ru": "Это цвет королевской династии",
+    "en": "It was the royal family's colour"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Синий — цвет Савойской династии, правившей Италией, и сборная носит его с 1911 года.",
+   "en": "Blue was the colour of the House of Savoy, Italy's royal family, and the team has worn it since 1911."
+  },
+  "source": "https://en.wikipedia.org/wiki/Italy_national_football_team"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько советских футболистов получили «Золотой мяч»?",
+   "en": "How many Soviet footballers won the Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ru": "Три",
+    "en": "Three"
+   },
+   {
+    "ru": "Пять",
+    "en": "Five"
+   },
+   {
+    "ru": "Один",
+    "en": "One"
+   },
+   {
+    "ru": "Два",
+    "en": "Two"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вратарь Лев Яшин в 1963-м, Олег Блохин в 1975-м и Игорь Беланов в 1986-м, оба из киевского «Динамо».",
+   "en": "Goalkeeper Lev Yashin in 1963, then Oleg Blokhin in 1975 and Igor Belanov in 1986, both of Dynamo Kyiv."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ballon_d%27Or"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что было до 1970 года, если игрок получал травму на чемпионате мира?",
+   "en": "Before 1970, what happened when a player got injured at a World Cup?"
+  },
+  "options": [
+   {
+    "ru": "Соперник тоже убирал игрока",
+    "en": "The opponents took a player off too"
+   },
+   {
+    "ru": "Команда доигрывала в меньшинстве",
+    "en": "His team played on a man down"
+   },
+   {
+    "ru": "Его менял запасной",
+    "en": "A substitute came on"
+   },
+   {
+    "ru": "Матч переигрывали",
+    "en": "The match was replayed"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Замены разрешили в 1970 году, и самым первым запасным в истории чемпионатов мира стал советский игрок Анатолий Пузач.",
+   "en": "Substitutes arrived in 1970, and the very first one in World Cup history was the USSR's Anatoliy Puzach."
+  },
+  "source": "https://en.wikipedia.org/wiki/Anatoliy_Puzach"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что называют ударом «Паненки»?",
+   "en": "What is a 'Panenka'?"
+  },
+  "options": [
+   {
+    "ru": "Пенальти парашютом в центр ворот",
+    "en": "A penalty chipped down the middle"
+   },
+   {
+    "ru": "Гол ударом через себя",
+    "en": "An overhead kick goal"
+   },
+   {
+    "ru": "Штрафной удар под стенкой",
+    "en": "A free kick under the wall"
+   },
+   {
+    "ru": "Гол прямо с углового",
+    "en": "A goal direct from a corner"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Чех Антонин Паненка отточил его, споря на шоколадки с вратарём своего клуба, и так принёс Чехословакии Евро-1976.",
+   "en": "Antonín Panenka honed it betting chocolate with his club's keeper, then won Euro 1976 for Czechoslovakia with it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Antonín_Panenka"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Исландия дошла до четвертьфинала Евро-2016. Кем работал один из её тренеров?",
+   "en": "Iceland reached the Euro 2016 quarter-finals. What was one of their coaches' day job?"
+  },
+  "options": [
+   {
+    "ru": "Рыбаком",
+    "en": "Fisherman"
+   },
+   {
+    "ru": "Пастором",
+    "en": "Pastor"
+   },
+   {
+    "ru": "Лётчиком",
+    "en": "Pilot"
+   },
+   {
+    "ru": "Стоматологом",
+    "en": "Dentist"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Хеймир Хадльгримссон лечил зубы на полставки, а его крошечная Исландия по пути выбила Англию.",
+   "en": "Heimir Hallgrímsson was a part-time dentist, and his tiny Iceland knocked out England on the way."
+  },
+  "source": "https://en.wikipedia.org/wiki/Heimir_Hallgrímsson"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как сборная СССР выбыла из полуфинала Евро-1968 против Италии?",
+   "en": "How did the USSR go out of the Euro 1968 semi-final against Italy?"
+  },
+  "options": [
+   {
+    "ru": "Проиграла в переигровке",
+    "en": "It lost a replay"
+   },
+   {
+    "ru": "Пропустила золотой гол",
+    "en": "It conceded a golden goal"
+   },
+   {
+    "ru": "Проиграла жребий с монетой",
+    "en": "It lost a coin toss"
+   },
+   {
+    "ru": "Проиграла в серии пенальти",
+    "en": "It lost on penalties"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "После ничьей 0:0 капитан итальянцев Факкетти угадал сторону монеты в раздевалке, и Италия потом выиграла турнир.",
+   "en": "After a 0–0 draw Italy's captain Facchetti called the coin right in the dressing room, and Italy went on to win."
+  },
+  "source": "https://en.wikipedia.org/wiki/UEFA_Euro_1968"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что с 1992 года запрещено вратарю?",
+   "en": "What has a goalkeeper been banned from doing since 1992?"
+  },
+  "options": [
+   {
+    "ru": "Играть в кепке",
+    "en": "Wearing a cap"
+   },
+   {
+    "ru": "Брать в руки пас ногой от своего",
+    "en": "Handling a teammate's back-pass"
+   },
+   {
+    "ru": "Выходить за штрафную площадь",
+    "en": "Leaving the penalty area"
+   },
+   {
+    "ru": "Бить пенальти",
+    "en": "Taking penalties"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Правило ввели после скучного чемпионата мира 1990 года, где команды тянули время пасами своему вратарю.",
+   "en": "It followed the dull 1990 World Cup, where teams killed time by passing back to their keeper."
+  },
+  "source": "https://en.wikipedia.org/wiki/Back-pass_rule"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялся гимн «Ливерпуля» «You'll Never Walk Alone»?",
+   "en": "Where does Liverpool's anthem 'You'll Never Walk Alone' come from?"
+  },
+  "options": [
+   {
+    "ru": "Из бродвейского мюзикла",
+    "en": "A Broadway musical"
+   },
+   {
+    "ru": "Это церковный гимн",
+    "en": "A church hymn"
+   },
+   {
+    "ru": "Это песня «Битлз»",
+    "en": "A Beatles song"
+   },
+   {
+    "ru": "Это военный марш",
+    "en": "A military march"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Песню из мюзикла «Карусель» 1945 года перепела ливерпульская группа Gerry and the Pacemakers, и её подхватили трибуны.",
+   "en": "It is from the 1945 musical Carousel; a 1963 cover by local band Gerry and the Pacemakers took it to the stands."
+  },
+  "source": "https://en.wikipedia.org/wiki/You%27ll_Never_Walk_Alone"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чей портрет украсил официальный плакат чемпионата мира 2018 года?",
+   "en": "Whose portrait was on the official poster of the 2018 World Cup?"
+  },
+  "options": [
+   {
+    "ru": "Пеле",
+    "en": "Pelé"
+   },
+   {
+    "ru": "Диего Марадоны",
+    "en": "Diego Maradona"
+   },
+   {
+    "ru": "Франца Беккенбауэра",
+    "en": "Franz Beckenbauer"
+   },
+   {
+    "ru": "Льва Яшина",
+    "en": "Lev Yashin"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Яшина прозвали «Чёрным пауком»: он играл в форме, казавшейся чёрной, и словно доставал мяч восемью руками.",
+   "en": "Yashin was the 'Black Spider': his kit looked all black, and he seemed to have eight arms."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lev_Yashin"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какова ширина футбольных ворот в сантиметрах?",
+   "en": "How wide is a football goal, in centimetres?"
+  },
+  "answer": 732,
+  "range": [
+   200,
+   1500
+  ],
+  "step": 4,
+  "tolerance": 80,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "7,32 м — это ровно 8 ярдов, а высота 2,44 м — 8 футов: размеры остались от английских правил XIX века.",
+   "en": "7.32 m is exactly 8 yards and the 2.44 m height is 8 feet: the sizes come from 19th-century English rules."
+  },
+  "source": "https://en.wikipedia.org/wiki/Goal_(sports)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько сборных сыграло на самом первом чемпионате мира в Уругвае в 1930 году?",
+   "en": "How many teams played at the very first World Cup, in Uruguay in 1930?"
+  },
+  "answer": 13,
+  "range": [
+   0,
+   48
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "сборных",
+   "en": "teams"
+  },
+  "fact": {
+   "ru": "Из Европы приехали только четыре сборные: остальных отпугнуло двухнедельное плавание через океан.",
+   "en": "Only four came from Europe: the rest were put off by a two-week voyage across the ocean."
+  },
+  "source": "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На какой секунде Хакан Шюкюр забил Южной Корее на ЧМ-2002?",
+   "en": "How many seconds in did Hakan Şükür score against South Korea at the 2002 World Cup?"
+  },
+  "answer": 11,
+  "range": [
+   0,
+   120
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "сек",
+   "en": "s"
+  },
+  "fact": {
+   "ru": "Корейская защита замешкалась в первые же секунды, и Шюкюр забил — это был матч за третье место, Турция выиграла 3:2.",
+   "en": "Korea's defence dithered in the opening seconds and Şükür pounced, in a third-place match Turkey won 3–2."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hakan_Şükür"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько голов забил француз Жюст Фонтен на одном только чемпионате мира 1958 года?",
+   "en": "How many goals did France's Just Fontaine score at the 1958 World Cup alone?"
+  },
+  "answer": 13,
+  "range": [
+   0,
+   50
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "голов",
+   "en": "goals"
+  },
+  "fact": {
+   "ru": "Он забивал в каждом из шести матчей, причём играл в бутсах, взятых взаймы у партнёра.",
+   "en": "He scored in every one of his six games, playing in boots borrowed from a teammate."
+  },
+  "source": "https://en.wikipedia.org/wiki/Just_Fontaine"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До скольких лет Стэнли Мэтьюз играл в высшей лиге Англии?",
+   "en": "Until what age did Stanley Matthews play in England's top division?"
+  },
+  "answer": 50,
+  "range": [
+   20,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Последний матч он сыграл через пять дней после 50-летия, а в 1956 году стал самым первым обладателем «Золотого мяча».",
+   "en": "His last game came five days after his 50th birthday; in 1956 he had won the very first Ballon d'Or."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stanley_Matthews"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько тысяч зрителей официально пришло на «Маракану» на решающий матч ЧМ-1950?",
+   "en": "How many thousand fans officially watched the 1950 World Cup decider at the Maracanã?"
+  },
+  "answer": 174,
+  "range": [
+   0,
+   500
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "тыс.",
+   "en": "thousand"
+  },
+  "fact": {
+   "ru": "По билетам 173 850, а с безбилетниками, возможно, около 200 тысяч, и все они увидели, как Бразилия проиграла Уругваю.",
+   "en": "Tickets say 173,850, maybe 200,000 with gatecrashers, and they all saw Brazil lose to Uruguay."
+  },
+  "source": "https://en.wikipedia.org/wiki/Uruguay_v_Brazil_(1950_FIFA_World_Cup)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько голов Австралия забила Американскому Самоа в 2001 году?",
+   "en": "How many goals did Australia score against American Samoa in 2001?"
+  },
+  "answer": 31,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "голов",
+   "en": "goals"
+  },
+  "fact": {
+   "ru": "Арчи Томпсон забил 13 из них, а у Самоа из-за проблем с паспортами играли почти одни юниоры.",
+   "en": "Archie Thompson scored 13 of them alone, and passport trouble left Samoa fielding mostly teenagers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Australia_31%E2%80%930_American_Samoa"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько голов в свои ворота нарочно забила одна команда на Мадагаскаре в 2002 году?",
+   "en": "How many own goals did one Madagascan team score on purpose in a 2002 game?"
+  },
+  "answer": 149,
+  "range": [
+   0,
+   500
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "голов",
+   "en": "goals"
+  },
+  "fact": {
+   "ru": "Матч закончился 149:0: игроки клуба SOE так протестовали против судейства, лишившего их чемпионства.",
+   "en": "It ended 149–0: SO l'Emyrne were protesting refereeing that had cost them the title."
+  },
+  "source": "https://en.wikipedia.org/wiki/AS_Adema_149%E2%80%930_SO_l%27Emyrne"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Из скольких лоскутов сшит классический чёрно-белый футбольный мяч?",
+   "en": "How many panels make up the classic black-and-white football?"
+  },
+  "answer": 32,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лоскутов",
+   "en": "panels"
+  },
+  "fact": {
+   "ru": "12 чёрных пятиугольников и 20 белых шестиугольников дают почти шар — ту же форму, что у молекулы фуллерена.",
+   "en": "12 black pentagons and 20 white hexagons make a near-sphere, the same shape as a buckyball molecule."
+  },
+  "source": "https://en.wikipedia.org/wiki/Adidas_Telstar"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было камерунцу Роже Милле, когда он забил на ЧМ-1994?",
+   "en": "How old was Cameroon's Roger Milla when he scored at the 1994 World Cup?"
+  },
+  "answer": 42,
+  "range": [
+   10,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "В 1990-м 38-летнего Миллу вернул из отставки звонок президента Камеруна, и он забил на том чемпионате четыре гола.",
+   "en": "In 1990 a call from Cameroon's president brought him, at 38, out of retirement, and he scored four at that World Cup."
+  },
+  "source": "https://en.wikipedia.org/wiki/Roger_Milla"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько голов Лионель Месси забил за 2012 календарный год?",
+   "en": "How many goals did Lionel Messi score in the 2012 calendar year?"
+  },
+  "answer": 91,
+  "range": [
+   20,
+   300
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "голов",
+   "en": "goals"
+  },
+  "fact": {
+   "ru": "За клуб и сборную вместе — так он побил рекорд Герда Мюллера, забившего 85 голов в 1972 году.",
+   "en": "Counting club and country, beating the 85 Gerd Müller scored in 1972."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lionel_Messi"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько граммов весит Кубок мира ФИФА?",
+   "en": "How many grams does the FIFA World Cup trophy weigh?"
+  },
+  "answer": 6175,
+  "range": [
+   0,
+   30000
+  ],
+  "step": 25,
+  "tolerance": 2000,
+  "unit": {
+   "ru": "г",
+   "en": "g"
+  },
+  "fact": {
+   "ru": "Он из 18-каратного золота и внутри полый: литой весил бы 70–80 кг, и поднять его над головой было бы невозможно.",
+   "en": "It is 18-carat gold and hollow inside; a solid one would weigh 70 to 80 kg, far too heavy to lift."
+  },
+  "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup_Trophy"
+ }
+]

@@ -1,0 +1,1506 @@
+[
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто написал музыку к балету «Лебединое озеро»?",
+      "en": "Who wrote the music for the ballet Swan Lake?"
+    },
+    "options": [
+      {
+        "ru": "Рахманинов",
+        "en": "Rachmaninoff"
+      },
+      {
+        "ru": "Стравинский",
+        "en": "Stravinsky"
+      },
+      {
+        "ru": "Прокофьев",
+        "en": "Prokofiev"
+      },
+      {
+        "ru": "Чайковский",
+        "en": "Tchaikovsky"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Премьера 1877 года в Большом прошла вяло: всемирную славу балет обрёл в 1895-м, уже после смерти композитора.",
+      "en": "The 1877 Bolshoi premiere fell flat; the ballet became world famous only in the 1895 revival, after Tchaikovsky's death."
+    },
+    "source": "https://en.wikipedia.org/wiki/Swan_Lake"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто написал скрипичные концерты «Времена года»?",
+      "en": "Who wrote the violin concertos The Four Seasons?"
+    },
+    "options": [
+      {
+        "ru": "Гендель",
+        "en": "Handel"
+      },
+      {
+        "ru": "Моцарт",
+        "en": "Mozart"
+      },
+      {
+        "ru": "Вивальди",
+        "en": "Vivaldi"
+      },
+      {
+        "ru": "Бах",
+        "en": "Bach"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Вивальди был священником, а за огненные волосы его прозвали «рыжим священником».",
+      "en": "Vivaldi was a priest, nicknamed \"the Red Priest\" for his red hair."
+    },
+    "source": "https://en.wikipedia.org/wiki/Antonio_Vivaldi"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто написал знаменитую фортепианную пьесу «К Элизе»?",
+      "en": "Who wrote the famous piano piece Für Elise?"
+    },
+    "options": [
+      {
+        "ru": "Шуберт",
+        "en": "Schubert"
+      },
+      {
+        "ru": "Бетховен",
+        "en": "Beethoven"
+      },
+      {
+        "ru": "Моцарт",
+        "en": "Mozart"
+      },
+      {
+        "ru": "Шопен",
+        "en": "Chopin"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Кто такая Элиза, никто точно не знает: пьесу нашли и издали лишь через 40 лет после смерти автора.",
+      "en": "Nobody knows for sure who Elise was: the piece was found and published 40 years after Beethoven died."
+    },
+    "source": "https://en.wikipedia.org/wiki/F%C3%BCr_Elise"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто написал фортепианное рондо «alla turca», известное как «Турецкий марш»?",
+      "en": "Who wrote the piano Rondo alla Turca, known as the Turkish March?"
+    },
+    "options": [
+      {
+        "ru": "Моцарт",
+        "en": "Mozart"
+      },
+      {
+        "ru": "Шопен",
+        "en": "Chopin"
+      },
+      {
+        "ru": "Вивальди",
+        "en": "Vivaldi"
+      },
+      {
+        "ru": "Чайковский",
+        "en": "Tchaikovsky"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В Вене тогда была мода на всё турецкое, и Моцарт подражал на рояле грохоту янычарского оркестра.",
+      "en": "Vienna was crazy about all things Turkish, and Mozart mimicked the clatter of a Janissary band on the piano."
+    },
+    "source": "https://en.wikipedia.org/wiki/Turkish_music_(style)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Гимн Евросоюза — это «Ода к радости». Из чьей она симфонии?",
+      "en": "The EU anthem is the Ode to Joy. Whose symphony is it from?"
+    },
+    "options": [
+      {
+        "ru": "Моцарта",
+        "en": "Mozart's"
+      },
+      {
+        "ru": "Чайковского",
+        "en": "Tchaikovsky's"
+      },
+      {
+        "ru": "Гайдна",
+        "en": "Haydn's"
+      },
+      {
+        "ru": "Бетховена",
+        "en": "Beethoven's"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Бетховен был уже почти глух: на премьере 1824 года певица развернула его к залу, чтобы он увидел овации.",
+      "en": "Beethoven was almost completely deaf by then: at the 1824 premiere a singer turned him round to see the applause."
+    },
+    "source": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой мужской голос в опере самый низкий?",
+      "en": "Which male opera voice is the lowest?"
+    },
+    "options": [
+      {
+        "ru": "Тенор",
+        "en": "Tenor"
+      },
+      {
+        "ru": "Контратенор",
+        "en": "Countertenor"
+      },
+      {
+        "ru": "Бас",
+        "en": "Bass"
+      },
+      {
+        "ru": "Баритон",
+        "en": "Baritone"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "В русских церковных хорах были даже басы-октависты: они пели на целую октаву ниже обычных басов.",
+      "en": "Russian church choirs even had \"oktavists\", basses who sang a whole octave below ordinary basses."
+    },
+    "source": "https://en.wikipedia.org/wiki/Basso_profondo"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "На каком языке почти все термины балета: плие, батман, фуэте?",
+      "en": "What language are almost all ballet terms in, like plié, battement and fouetté?"
+    },
+    "options": [
+      {
+        "ru": "На русском",
+        "en": "Russian"
+      },
+      {
+        "ru": "На французском",
+        "en": "French"
+      },
+      {
+        "ru": "На итальянском",
+        "en": "Italian"
+      },
+      {
+        "ru": "На латыни",
+        "en": "Latin"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Балет вырос при дворе Людовика XIV: король сам танцевал и в 14 лет вышел на сцену в роли бога солнца Аполлона.",
+      "en": "Ballet grew up at Louis XIV's court: the king danced himself, and at 14 took the stage as Apollo, the sun god."
+    },
+    "source": "https://en.wikipedia.org/wiki/Ballet_Royal_de_la_Nuit"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что по-итальянски значит слово «фортепиано»?",
+      "en": "What does the word pianoforte mean in Italian?"
+    },
+    "options": [
+      {
+        "ru": "«Громко-тихо»",
+        "en": "\"Soft-loud\""
+      },
+      {
+        "ru": "«Звонкий ящик»",
+        "en": "\"Ringing box\""
+      },
+      {
+        "ru": "«Молоточки»",
+        "en": "\"Little hammers\""
+      },
+      {
+        "ru": "«Белые клавиши»",
+        "en": "\"White keys\""
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Клавесин звучит одинаково, как ни нажимай, а новый инструмент Кристофори умел играть и тихо, и громко.",
+      "en": "A harpsichord sounds the same however you press; Cristofori's new instrument could play both soft and loud."
+    },
+    "source": "https://en.wikipedia.org/wiki/Piano"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто написал оперу «Севильский цирюльник» с её знаменитым «Фигаро здесь, Фигаро там»?",
+      "en": "Who wrote the opera The Barber of Seville, with its famous \"Figaro, Figaro\" aria?"
+    },
+    "options": [
+      {
+        "ru": "Моцарт",
+        "en": "Mozart"
+      },
+      {
+        "ru": "Верди",
+        "en": "Verdi"
+      },
+      {
+        "ru": "Россини",
+        "en": "Rossini"
+      },
+      {
+        "ru": "Пуччини",
+        "en": "Puccini"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Россини написал её меньше чем за три недели, а премьеру 1816 года освистали поклонники Паизиелло, у которого был свой «Цирюльник».",
+      "en": "Rossini wrote it in under three weeks, and the 1816 premiere was jeered by fans of Paisiello, who had his own Barber."
+    },
+    "source": "https://en.wikipedia.org/wiki/The_Barber_of_Seville"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кого называли «королём вальса»?",
+      "en": "Who was known as the Waltz King?"
+    },
+    "options": [
+      {
+        "ru": "Шопена",
+        "en": "Chopin"
+      },
+      {
+        "ru": "Брамса",
+        "en": "Brahms"
+      },
+      {
+        "ru": "Иоганна Штрауса-сына",
+        "en": "Johann Strauss II"
+      },
+      {
+        "ru": "Моцарта",
+        "en": "Mozart"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Его «Голубой Дунай» звучит на бис каждый Новый год в Вене, а Рихард Штраус ему даже не родственник.",
+      "en": "His Blue Danube is the encore at every Vienna New Year's Concert, and Richard Strauss is no relation at all."
+    },
+    "source": "https://en.wikipedia.org/wiki/Johann_Strauss_II"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько струн у скрипки?",
+      "en": "How many strings does a violin have?"
+    },
+    "options": [
+      {
+        "ru": "Шесть",
+        "en": "Six"
+      },
+      {
+        "ru": "Четыре",
+        "en": "Four"
+      },
+      {
+        "ru": "Три",
+        "en": "Three"
+      },
+      {
+        "ru": "Пять",
+        "en": "Five"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Паганини иногда нарочно рвал струны прямо на концерте и доигрывал на оставшихся, чтобы поразить публику.",
+      "en": "Paganini sometimes broke strings on purpose mid-concert and played on with the rest, just to dazzle the crowd."
+    },
+    "source": "https://en.wikipedia.org/wiki/Niccol%C3%B2_Paganini"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Где происходит действие оперы Бизе «Кармен»?",
+      "en": "Where is Bizet's opera Carmen set?"
+    },
+    "options": [
+      {
+        "ru": "В Испании",
+        "en": "Spain"
+      },
+      {
+        "ru": "В Италии",
+        "en": "Italy"
+      },
+      {
+        "ru": "Во Франции",
+        "en": "France"
+      },
+      {
+        "ru": "В Мексике",
+        "en": "Mexico"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Француз Бизе ни разу не был в Испании: «испанскую» музыку он сочинял по сборникам народных песен.",
+      "en": "Bizet, a Frenchman, never set foot in Spain; he built its Spanish sound from folk song collections."
+    },
+    "source": "https://en.wikipedia.org/wiki/Carmen"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "С кем сражается Щелкунчик в балете Чайковского?",
+      "en": "Whom does the Nutcracker fight in Tchaikovsky's ballet?"
+    },
+    "options": [
+      {
+        "ru": "Со Снежной королевой",
+        "en": "The Snow Queen"
+      },
+      {
+        "ru": "С Кощеем",
+        "en": "Koschei"
+      },
+      {
+        "ru": "С драконом",
+        "en": "A dragon"
+      },
+      {
+        "ru": "С Мышиным королём",
+        "en": "The Mouse King"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Для Феи Драже Чайковский тайком привёз из Парижа новинку, челесту, чтобы коллеги не успели использовать её раньше.",
+      "en": "For the Sugar Plum Fairy he secretly brought a brand new celesta from Paris so rivals could not use it first."
+    },
+    "source": "https://en.wikipedia.org/wiki/The_Nutcracker"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Каким инструментом Бах прославился как исполнитель?",
+      "en": "Which instrument made Bach famous as a performer?"
+    },
+    "options": [
+      {
+        "ru": "Трубой",
+        "en": "The trumpet"
+      },
+      {
+        "ru": "Флейтой",
+        "en": "The flute"
+      },
+      {
+        "ru": "Органом",
+        "en": "The organ"
+      },
+      {
+        "ru": "Арфой",
+        "en": "The harp"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "В 20 лет он прошёл пешком около 450 километров до Любека, только чтобы послушать органиста Букстехуде.",
+      "en": "At 20 he walked some 450 km to Lübeck just to hear the organist Buxtehude play."
+    },
+    "source": "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "В каком городе находится знаменитый оперный театр «Ла Скала»?",
+      "en": "Which city is the famous La Scala opera house in?"
+    },
+    "options": [
+      {
+        "ru": "В Неаполе",
+        "en": "Naples"
+      },
+      {
+        "ru": "В Милане",
+        "en": "Milan"
+      },
+      {
+        "ru": "В Риме",
+        "en": "Rome"
+      },
+      {
+        "ru": "В Венеции",
+        "en": "Venice"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Театр назван в честь церкви Санта-Мария-алла-Скала, которую снесли, чтобы его построить.",
+      "en": "It is named after the church of Santa Maria alla Scala, pulled down to make room for it."
+    },
+    "source": "https://en.wikipedia.org/wiki/La_Scala"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто написал «Полёт шмеля»?",
+      "en": "Who wrote Flight of the Bumblebee?"
+    },
+    "options": [
+      {
+        "ru": "Римский-Корсаков",
+        "en": "Rimsky-Korsakov"
+      },
+      {
+        "ru": "Чайковский",
+        "en": "Tchaikovsky"
+      },
+      {
+        "ru": "Мусоргский",
+        "en": "Mussorgsky"
+      },
+      {
+        "ru": "Глинка",
+        "en": "Glinka"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это эпизод оперы «Сказка о царе Салтане»: Царевна Лебедь превращает князя Гвидона в шмеля, чтобы он слетал к отцу.",
+      "en": "It comes from his opera The Tale of Tsar Saltan, where the Swan Princess turns Prince Gvidon into a bumblebee to fly to his father."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flight_of_the_Bumblebee"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Шопен умер в Париже. Где хранится его сердце?",
+      "en": "Chopin died in Paris. Where is his heart kept?"
+    },
+    "options": [
+      {
+        "ru": "В Лувре",
+        "en": "In the Louvre"
+      },
+      {
+        "ru": "В Вене",
+        "en": "In Vienna"
+      },
+      {
+        "ru": "В его могиле в Париже",
+        "en": "In his Paris grave"
+      },
+      {
+        "ru": "В костёле в Варшаве",
+        "en": "In a Warsaw church"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Так он завещал: сестра тайно увезла сердце в Польшу в банке, по преданию — с коньяком.",
+      "en": "As he wished, his sister smuggled it to Poland in a jar, said to be filled with cognac."
+    },
+    "source": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто выиграл первый конкурс Чайковского среди пианистов в 1958 году, в разгар холодной войны?",
+      "en": "Who won the first Tchaikovsky piano competition in Moscow in 1958, at the height of the Cold War?"
+    },
+    "options": [
+      {
+        "ru": "Пианист из Китая",
+        "en": "A pianist from China"
+      },
+      {
+        "ru": "Француз",
+        "en": "A Frenchman"
+      },
+      {
+        "ru": "Американец из Техаса",
+        "en": "An American from Texas"
+      },
+      {
+        "ru": "Студент из Москвы",
+        "en": "A Moscow student"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "По легенде, жюри спросило Хрущёва, можно ли дать премию американцу. «Он лучший? Тогда дайте».",
+      "en": "Legend says the jury asked Khrushchev if an American could win. \"Is he the best? Then give him the prize.\""
+    },
+    "source": "https://en.wikipedia.org/wiki/Van_Cliburn"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто правит колесницей над портиком Большого театра?",
+      "en": "Who drives the chariot on top of the Bolshoi Theatre?"
+    },
+    "options": [
+      {
+        "ru": "Георгий Победоносец",
+        "en": "Saint George"
+      },
+      {
+        "ru": "Аполлон",
+        "en": "Apollo"
+      },
+      {
+        "ru": "Зевс",
+        "en": "Zeus"
+      },
+      {
+        "ru": "Ника",
+        "en": "Nike"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Аполлон — покровитель муз и искусств; его квадригу работы Клодта можно увидеть и на сторублёвке образца 1997 года.",
+      "en": "Apollo is the god of the arts and the Muses; Klodt's quadriga also appears on the 1997 series 100 rouble note."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bolshoi_Theatre"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой инструмент обычно даёт ноту «ля», по которой настраивается весь оркестр?",
+      "en": "Which instrument usually plays the A that the whole orchestra tunes to?"
+    },
+    "options": [
+      {
+        "ru": "Гобой",
+        "en": "The oboe"
+      },
+      {
+        "ru": "Труба",
+        "en": "The trumpet"
+      },
+      {
+        "ru": "Арфа",
+        "en": "The harp"
+      },
+      {
+        "ru": "Литавры",
+        "en": "The timpani"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Звук гобоя пронзительный и слышен всем, а его строй трудно подправить, вот остальные под него и подстраиваются.",
+      "en": "The oboe's sound cuts through, and its pitch is hard to adjust, so everyone else tunes to it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Oboe"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какое сочинение 15 минут повторяет одни и те же две мелодии, только всё громче?",
+      "en": "Which piece repeats the same two tunes for about 15 minutes, only getting louder?"
+    },
+    "options": [
+      {
+        "ru": "«Лунная соната»",
+        "en": "The Moonlight Sonata"
+      },
+      {
+        "ru": "«Аве Мария» Шуберта",
+        "en": "Schubert's Ave Maria"
+      },
+      {
+        "ru": "«Весна» Вивальди",
+        "en": "Vivaldi's Spring"
+      },
+      {
+        "ru": "«Болеро» Равеля",
+        "en": "Ravel's Boléro"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Сам Равель называл «Болеро» экспериментом: «оркестровая ткань без музыки».",
+      "en": "Ravel himself called it an experiment: \"orchestral tissue without music.\""
+    },
+    "source": "https://en.wikipedia.org/wiki/Bol%C3%A9ro"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Бетховен посвятил Третью симфонию, а потом в гневе снял посвящение. Кому?",
+      "en": "Beethoven dedicated his Third Symphony to someone, then angrily withdrew it. Who?"
+    },
+    "options": [
+      {
+        "ru": "Австрийскому императору",
+        "en": "The Austrian emperor"
+      },
+      {
+        "ru": "Гёте",
+        "en": "Goethe"
+      },
+      {
+        "ru": "Наполеону",
+        "en": "Napoleon"
+      },
+      {
+        "ru": "Моцарту",
+        "en": "Mozart"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Узнав в 1804 году, что Наполеон провозгласил себя императором, Бетховен в ярости разорвал титульный лист пополам.",
+      "en": "On hearing in 1804 that Napoleon had made himself emperor, Beethoven tore the title page in half in a rage."
+    },
+    "source": "https://en.wikipedia.org/wiki/Symphony_No._3_(Beethoven)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кого молва, а за ней и Пушкин, обвиняла в отравлении Моцарта?",
+      "en": "Rumour, and later Pushkin, accused whom of poisoning Mozart?"
+    },
+    "options": [
+      {
+        "ru": "Глюка",
+        "en": "Gluck"
+      },
+      {
+        "ru": "Сальери",
+        "en": "Salieri"
+      },
+      {
+        "ru": "Гайдна",
+        "en": "Haydn"
+      },
+      {
+        "ru": "Бетховена",
+        "en": "Beethoven"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Доказательств нет, а у Сальери потом учились Бетховен, Шуберт, Лист и даже сын Моцарта.",
+      "en": "There is no evidence, and Salieri went on to teach Beethoven, Schubert, Liszt and even Mozart's son."
+    },
+    "source": "https://en.wikipedia.org/wiki/Antonio_Salieri"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто из этих композиторов НЕ входил в «Могучую кучку»?",
+      "en": "Which of these composers was NOT in the Mighty Handful?"
+    },
+    "options": [
+      {
+        "ru": "Чайковский",
+        "en": "Tchaikovsky"
+      },
+      {
+        "ru": "Мусоргский",
+        "en": "Mussorgsky"
+      },
+      {
+        "ru": "Бородин",
+        "en": "Borodin"
+      },
+      {
+        "ru": "Римский-Корсаков",
+        "en": "Rimsky-Korsakov"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Название придумал критик Стасов в 1867 году, а Бородин в «кучке» был ещё и профессором химии.",
+      "en": "Critic Stasov coined the name in 1867; Borodin, one of the five, was also a professor of chemistry."
+    },
+    "source": "https://en.wikipedia.org/wiki/The_Five_(composers)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что вдохновило Мусоргского на «Картинки с выставки»?",
+      "en": "What inspired Mussorgsky's Pictures at an Exhibition?"
+    },
+    "options": [
+      {
+        "ru": "Коллекция Эрмитажа",
+        "en": "The Hermitage collection"
+      },
+      {
+        "ru": "Парижский салон",
+        "en": "A Paris salon"
+      },
+      {
+        "ru": "Картины Айвазовского",
+        "en": "Aivazovsky's seascapes"
+      },
+      {
+        "ru": "Выставка умершего друга",
+        "en": "A late friend's art show"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Это была посмертная выставка художника Гартмана, а самой известной стала оркестровка Равеля 1922 года.",
+      "en": "It was a memorial show for the artist Viktor Hartmann; Ravel's 1922 orchestration became the best known version."
+    },
+    "source": "https://en.wikipedia.org/wiki/Pictures_at_an_Exhibition"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В «Пете и волке» Прокофьева у каждого героя свой инструмент. Кто играет утку?",
+      "en": "In Prokofiev's Peter and the Wolf every character has an instrument. Which one is the duck?"
+    },
+    "options": [
+      {
+        "ru": "Кларнет",
+        "en": "The clarinet"
+      },
+      {
+        "ru": "Фагот",
+        "en": "The bassoon"
+      },
+      {
+        "ru": "Гобой",
+        "en": "The oboe"
+      },
+      {
+        "ru": "Флейта",
+        "en": "The flute"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Флейта там птичка, кларнет кот, фагот дедушка: Прокофьев писал сказку, чтобы знакомить детей с оркестром.",
+      "en": "The flute is the bird, the clarinet the cat, the bassoon Grandpa: Prokofiev wrote it to introduce children to the orchestra."
+    },
+    "source": "https://en.wikipedia.org/wiki/Peter_and_the_Wolf"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что случилось на парижской премьере «Весны священной» Стравинского в 1913 году?",
+      "en": "What happened at the 1913 Paris premiere of Stravinsky's The Rite of Spring?"
+    },
+    "options": [
+      {
+        "ru": "Дирижёр вышел босиком",
+        "en": "The conductor was barefoot"
+      },
+      {
+        "ru": "Публика устроила скандал",
+        "en": "The audience rioted"
+      },
+      {
+        "ru": "Театр загорелся",
+        "en": "The theatre caught fire"
+      },
+      {
+        "ru": "Оркестр забастовал",
+        "en": "The orchestra went on strike"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Зал свистел и шумел так, что танцоры не слышали оркестра, и Нижинский выкрикивал им счёт.",
+      "en": "The hall booed and yelled so loudly the dancers couldn't hear the orchestra; Nijinsky had to shout the counts."
+    },
+    "source": "https://en.wikipedia.org/wiki/The_Rite_of_Spring"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что делают музыканты в финале «Прощальной симфонии» Гайдна?",
+      "en": "What do the musicians do at the end of Haydn's Farewell Symphony?"
+    },
+    "options": [
+      {
+        "ru": "Гасят свечи и уходят",
+        "en": "Blow out candles and leave"
+      },
+      {
+        "ru": "Встают и поют",
+        "en": "Stand up and sing"
+      },
+      {
+        "ru": "Меняются инструментами",
+        "en": "Swap instruments"
+      },
+      {
+        "ru": "Играют всё задом наперёд",
+        "en": "Play it all backwards"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Так Гайдн намекнул князю Эстерхази, что оркестр засиделся в летнем дворце и хочет домой. Князь понял.",
+      "en": "It was Haydn's hint to Prince Esterházy that the players longed to leave his summer palace and go home. He got it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Symphony_No._45_(Haydn)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кому Рахманинов посвятил свой Второй фортепианный концерт?",
+      "en": "To whom did Rachmaninoff dedicate his Second Piano Concerto?"
+    },
+    "options": [
+      {
+        "ru": "Императору",
+        "en": "The Tsar"
+      },
+      {
+        "ru": "Чайковскому",
+        "en": "Tchaikovsky"
+      },
+      {
+        "ru": "Своему учителю",
+        "en": "His piano teacher"
+      },
+      {
+        "ru": "Своему врачу-гипнотизёру",
+        "en": "His hypnotherapist"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "После провала Первой симфонии он три года почти не мог сочинять, и вернуться к музыке ему помог доктор Даль.",
+      "en": "After his First Symphony flopped he could barely compose for three years; sessions with Dr Nikolai Dahl got him going again."
+    },
+    "source": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Rachmaninoff)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой необычный «инструмент» Чайковский вписал в партитуру увертюры «1812 год»?",
+      "en": "What unusual \"instrument\" did Tchaikovsky write into the score of the 1812 Overture?"
+    },
+    "options": [
+      {
+        "ru": "Сирену",
+        "en": "A siren"
+      },
+      {
+        "ru": "Наковальню",
+        "en": "An anvil"
+      },
+      {
+        "ru": "Пушки",
+        "en": "Cannons"
+      },
+      {
+        "ru": "Пишущую машинку",
+        "en": "A typewriter"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Сам Чайковский считал увертюру шумной и написанной без любви, а она стала одной из самых исполняемых его вещей.",
+      "en": "Tchaikovsky found it \"very loud and noisy\" and written without love, yet it became one of his most played works."
+    },
+    "source": "https://en.wikipedia.org/wiki/1812_Overture"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Где впервые поставили оперу Верди «Аида»?",
+      "en": "Where was Verdi's opera Aida first staged?"
+    },
+    "options": [
+      {
+        "ru": "В Венеции",
+        "en": "Venice"
+      },
+      {
+        "ru": "В Каире",
+        "en": "Cairo"
+      },
+      {
+        "ru": "В Милане",
+        "en": "Milan"
+      },
+      {
+        "ru": "В Париже",
+        "en": "Paris"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Оперу заказал египетский хедив для каирского театра, а премьеру отложили: декорации застряли в осаждённом Париже.",
+      "en": "The Khedive of Egypt ordered it for the Cairo opera; the premiere was delayed as the sets were stuck in besieged Paris."
+    },
+    "source": "https://en.wikipedia.org/wiki/Aida"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что означает название арии «Nessun dorma» из «Турандот» Пуччини?",
+      "en": "What does the title of the aria Nessun dorma from Puccini's Turandot mean?"
+    },
+    "options": [
+      {
+        "ru": "«Пусть никто не спит»",
+        "en": "\"None shall sleep\""
+      },
+      {
+        "ru": "«Любовь не умирает»",
+        "en": "\"Love never dies\""
+      },
+      {
+        "ru": "«Прощай, моя любовь»",
+        "en": "\"Farewell, my love\""
+      },
+      {
+        "ru": "«Ночь над Пекином»",
+        "en": "\"Night over Peking\""
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Пуччини умер, не закончив оперу: на премьере Тосканини остановил спектакль там, где оборвалась рука мастера.",
+      "en": "Puccini died before finishing the opera; at the premiere Toscanini stopped the show where the composer's pen had stopped."
+    },
+    "source": "https://en.wikipedia.org/wiki/Turandot"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Надежда фон Мекк 13 лет помогала Чайковскому деньгами. Как они общались?",
+      "en": "Nadezhda von Meck funded Tchaikovsky for 13 years. How did the two keep in touch?"
+    },
+    "options": [
+      {
+        "ru": "Виделись каждое лето",
+        "en": "They met every summer"
+      },
+      {
+        "ru": "Жили в одном доме",
+        "en": "They shared a house"
+      },
+      {
+        "ru": "Через её сыновей",
+        "en": "Through her sons"
+      },
+      {
+        "ru": "Только письмами",
+        "en": "Only by letter"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Они написали друг другу больше 1200 писем, а однажды случайно столкнувшись, оба смутились и молча разошлись.",
+      "en": "They wrote each other over 1,200 letters; when they once met by chance, both were embarrassed and passed in silence."
+    },
+    "source": "https://en.wikipedia.org/wiki/Nadezhda_von_Meck"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой из этих металлических инструментов на самом деле деревянный духовой?",
+      "en": "Which of these metal instruments is actually a woodwind?"
+    },
+    "options": [
+      {
+        "ru": "Тромбон",
+        "en": "Trombone"
+      },
+      {
+        "ru": "Туба",
+        "en": "Tuba"
+      },
+      {
+        "ru": "Саксофон",
+        "en": "Saxophone"
+      },
+      {
+        "ru": "Труба",
+        "en": "Trumpet"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Важен не материал, а способ: у саксофона звучит трость, как у кларнета, а не губы музыканта, как у медных.",
+      "en": "What counts is how the sound is made: the sax uses a reed like a clarinet, not buzzing lips like brass."
+    },
+    "source": "https://en.wikipedia.org/wiki/Saxophone"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "На каком инструменте играют, вообще не касаясь его руками?",
+      "en": "Which instrument is played without being touched at all?"
+    },
+    "options": [
+      {
+        "ru": "Ксилофон",
+        "en": "Xylophone"
+      },
+      {
+        "ru": "Терменвокс",
+        "en": "Theremin"
+      },
+      {
+        "ru": "Челеста",
+        "en": "Celesta"
+      },
+      {
+        "ru": "Клавесин",
+        "en": "Harpsichord"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Его изобрёл в 1920 году Лев Термен, а в 1922-м сыграть на нём попробовал сам Ленин.",
+      "en": "Leon Theremin invented it in 1920, and in 1922 Lenin himself had a go at playing it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Leon_Theremin"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что, по словам отца, сделал 14-летний Моцарт, услышав в Ватикане «Мизерере» Аллегри?",
+      "en": "According to his father, what did 14 year old Mozart do after hearing Allegri's Miserere in the Vatican?"
+    },
+    "options": [
+      {
+        "ru": "Записал его по памяти",
+        "en": "Wrote it out from memory"
+      },
+      {
+        "ru": "Спел его папе римскому",
+        "en": "Sang it to the Pope"
+      },
+      {
+        "ru": "Сочинил ответ",
+        "en": "Wrote a reply to it"
+      },
+      {
+        "ru": "Сбежал с нотами",
+        "en": "Ran off with the score"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "По легенде, ноты держали в секрете, но мальчика не наказали: в том же году папа посвятил его в рыцари Золотой шпоры.",
+      "en": "Legend says the score was secret, yet he was never punished: that same year the Pope made him a Knight of the Golden Spur."
+    },
+    "source": "https://en.wikipedia.org/wiki/Miserere_(Allegri)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая неожиданная квалификация была у Шостаковича?",
+      "en": "What unexpected qualification did Shostakovich hold?"
+    },
+    "options": [
+      {
+        "ru": "Лётчик",
+        "en": "Pilot"
+      },
+      {
+        "ru": "Шахматный гроссмейстер",
+        "en": "Chess grandmaster"
+      },
+      {
+        "ru": "Корабельный кок",
+        "en": "Ship's cook"
+      },
+      {
+        "ru": "Футбольный судья",
+        "en": "Football referee"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Он страстно болел за «Зенит» и вёл тетради со счётом матчей и турнирными таблицами.",
+      "en": "A devoted Zenit Leningrad fan, he kept notebooks of match scores and league tables."
+    },
+    "source": "https://www.classical-music.com/articles/shostakovich-football"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Чьи окурки сигар и порванные струны дамы в 1840-х хранили как реликвии?",
+      "en": "In the 1840s, whose cigar stubs and broken piano strings did fans keep like relics?"
+    },
+    "options": [
+      {
+        "ru": "Роберта Шумана",
+        "en": "Robert Schumann's"
+      },
+      {
+        "ru": "Иоганнеса Брамса",
+        "en": "Johannes Brahms's"
+      },
+      {
+        "ru": "Ференца Листа",
+        "en": "Franz Liszt's"
+      },
+      {
+        "ru": "Фредерика Шопена",
+        "en": "Frédéric Chopin's"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Поэт Гейне назвал это безумие «листоманией»; за перчатки и платки пианиста поклонницы дрались.",
+      "en": "The poet Heinrich Heine named the craze \"Lisztomania\"; women also fought over his gloves and handkerchiefs."
+    },
+    "source": "https://en.wikipedia.org/wiki/Lisztomania"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько клавиш у современного рояля или пианино?",
+      "en": "How many keys does a modern piano have?"
+    },
+    "answer": 88,
+    "range": [
+      0,
+      250
+    ],
+    "step": 1,
+    "tolerance": 20,
+    "unit": {
+      "ru": "клавиш",
+      "en": "keys"
+    },
+    "fact": {
+      "ru": "52 белые и 36 чёрных, а у фортепиано времён Моцарта клавиш было около 60.",
+      "en": "52 white and 36 black; the pianos of Mozart's day had only about 60."
+    },
+    "source": "https://en.wikipedia.org/wiki/Piano"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько струн у большой концертной арфы?",
+      "en": "How many strings does a full concert harp have?"
+    },
+    "answer": 47,
+    "range": [
+      0,
+      150
+    ],
+    "step": 1,
+    "tolerance": 15,
+    "unit": {
+      "ru": "струн",
+      "en": "strings"
+    },
+    "fact": {
+      "ru": "Чтобы арфист не запутался, все струны «до» красят в красный цвет.",
+      "en": "So harpists don't get lost, every C string is coloured red."
+    },
+    "source": "https://en.wikipedia.org/wiki/Pedal_harp"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году основан Большой театр в Москве?",
+      "en": "In what year was Moscow's Bolshoi Theatre founded?"
+    },
+    "answer": 1776,
+    "range": [
+      1700,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Театр не раз горел: нынешнее здание 1825 года после пожара 1853-го пришлось отстраивать заново.",
+      "en": "The theatre burned more than once: today's 1825 building had to be rebuilt after a fire in 1853."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bolshoi_Theatre"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько часов в сумме длится тетралогия Вагнера «Кольцо нибелунга»?",
+      "en": "How many hours in total does Wagner's Ring cycle last?"
+    },
+    "answer": 15,
+    "range": [
+      0,
+      60
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "часов",
+      "en": "hours"
+    },
+    "fact": {
+      "ru": "Её играют четыре вечера, а для неё Вагнер построил собственный театр в Байройте.",
+      "en": "It is staged over four evenings, and Wagner built his own theatre in Bayreuth for it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Der_Ring_des_Nibelungen"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько детей было у Иоганна Себастьяна Баха?",
+      "en": "How many children did Johann Sebastian Bach have?"
+    },
+    "answer": 20,
+    "range": [
+      0,
+      80
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "детей",
+      "en": "children"
+    },
+    "fact": {
+      "ru": "Это от двух браков; до взрослых лет дожили десять, и четверо стали известными композиторами.",
+      "en": "From two marriages; ten lived to adulthood, and four became well known composers."
+    },
+    "source": "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько всего симфоний написал Йозеф Гайдн, «отец симфонии»?",
+      "en": "How many symphonies did Joseph Haydn, \"the father of the symphony\", write in all?"
+    },
+    "answer": 106,
+    "range": [
+      0,
+      300
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "симфоний",
+      "en": "symphonies"
+    },
+    "fact": {
+      "ru": "Номера получили 104, ещё две идут под буквами A и B, а у Бетховена симфоний всего девять.",
+      "en": "104 are numbered and two more go by the letters A and B; Beethoven wrote just nine."
+    },
+    "source": "https://en.wikipedia.org/wiki/List_of_symphonies_by_Joseph_Haydn"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько раз подряд принято играть пьесу Эрика Сати «Раздражения» (Vexations)?",
+      "en": "How many times in a row is Erik Satie's piece Vexations traditionally played?"
+    },
+    "answer": 840,
+    "range": [
+      0,
+      3000
+    ],
+    "step": 10,
+    "tolerance": 200,
+    "unit": {
+      "ru": "раз",
+      "en": "times"
+    },
+    "fact": {
+      "ru": "Сати оставил на нотах загадочное число, и в 1963 году пианисты во главе с Джоном Кейджем играли её по очереди больше 18 часов.",
+      "en": "Satie left a puzzling number on the score; in 1963 a relay of pianists led by John Cage took over 18 hours to play it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Vexations"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько секунд длится «тихая» пьеса Джона Кейджа, где музыкант ничего не играет?",
+      "en": "How many seconds long is John Cage's silent piece, where the performer plays nothing?"
+    },
+    "answer": 273,
+    "range": [
+      0,
+      1000
+    ],
+    "step": 1,
+    "tolerance": 60,
+    "unit": {
+      "ru": "секунд",
+      "en": "seconds"
+    },
+    "fact": {
+      "ru": "Пьеса так и называется: «4′33″». Музыкой в ней становятся звуки зала: кашель, шорохи, дыхание.",
+      "en": "Its title gives it away: 4′33″. The music is whatever the hall supplies: coughs, rustles, breathing."
+    },
+    "source": "https://en.wikipedia.org/wiki/4%E2%80%B233%E2%80%B3"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Примерно за сколько миллионов долларов в 2011 году продали скрипку Страдивари «Леди Блант»?",
+      "en": "Roughly how many million dollars did the Lady Blunt Stradivarius violin sell for in 2011?"
+    },
+    "answer": 16,
+    "range": [
+      0,
+      100
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "млн $",
+      "en": "million $"
+    },
+    "fact": {
+      "ru": "Все 15,9 миллиона отдали на помощь пострадавшим от землетрясения и цунами в Японии.",
+      "en": "All $15.9 million went to help victims of Japan's earthquake and tsunami."
+    },
+    "source": "https://en.wikipedia.org/wiki/Lady_Blunt_Stradivarius"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет было Моцарту, когда он умер?",
+      "en": "How old was Mozart when he died?"
+    },
+    "answer": 35,
+    "range": [
+      0,
+      100
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "За эту короткую жизнь он написал больше 600 сочинений, а первую симфонию — в восемь лет.",
+      "en": "In that short life he wrote over 600 works, his first symphony at the age of eight."
+    },
+    "source": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько фуэте подряд крутит Чёрный лебедь Одиллия в «Лебедином озере»?",
+      "en": "How many fouettés in a row does Odile, the Black Swan, spin in Swan Lake?"
+    },
+    "answer": 32,
+    "range": [
+      0,
+      100
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "фуэте",
+      "en": "fouettés"
+    },
+    "fact": {
+      "ru": "Первой 32 фуэте подряд сделала итальянка Пьерина Леньяни в 1893 году, а в 1895-м она повторила трюк в «Лебедином озере».",
+      "en": "Italian Pierina Legnani first spun 32 in a row in 1893, then repeated the trick in Swan Lake in 1895."
+    },
+    "source": "https://ru.wikipedia.org/wiki/%D0%A4%D1%83%D1%8D%D1%82%D0%B5"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Около какого года итальянец Бартоломео Кристофори построил первое фортепиано?",
+      "en": "Around what year did Italy's Bartolomeo Cristofori build the first piano?"
+    },
+    "answer": 1700,
+    "range": [
+      1500,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Он хранил музыкальные инструменты Медичи во Флоренции; три его фортепиано сохранились до наших дней.",
+      "en": "He kept the Medici's musical instruments in Florence; three of his pianos survive today."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bartolomeo_Cristofori"
+  }
+]

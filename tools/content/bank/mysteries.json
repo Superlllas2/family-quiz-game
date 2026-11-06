@@ -1,0 +1,1509 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что, по мнению учёных, взорвалось над тайгой у Подкаменной Тунгуски в 1908 году?",
+   "en": "What do scientists think exploded over the Siberian taiga near Tunguska in 1908?"
+  },
+  "options": [
+   {
+    "ru": "Астероид или комета",
+    "en": "An asteroid or a comet"
+   },
+   {
+    "ru": "Подземный газовый пузырь",
+    "en": "An underground gas pocket"
+   },
+   {
+    "ru": "Вулкан под болотом",
+    "en": "A volcano under a swamp"
+   },
+   {
+    "ru": "Лучевая пушка Николы Теслы",
+    "en": "Nikola Tesla's death ray"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тело взорвалось в нескольких километрах над землёй, поэтому кратера нет, а лес повален веером на 2000 км².",
+   "en": "It burst several kilometres up, so there is no crater, just forest flattened outward over 2,000 km²."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tunguska_event"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где в 1959 году погибла группа туристов Игоря Дятлова?",
+   "en": "Where did Igor Dyatlov's group of hikers die in 1959?"
+  },
+  "options": [
+   {
+    "ru": "На Северном Урале",
+    "en": "In the Northern Urals"
+   },
+   {
+    "ru": "На Алтае",
+    "en": "In the Altai"
+   },
+   {
+    "ru": "В Хибинах",
+    "en": "In the Khibiny"
+   },
+   {
+    "ru": "На Кавказе",
+    "en": "In the Caucasus"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Перевал на склоне горы Холатчахль теперь так и называют — перевал Дятлова.",
+   "en": "The pass on the slope of Kholat Syakhl has been called Dyatlov Pass ever since."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dyatlov_Pass_incident"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Куда направлена главная ось Стоунхенджа?",
+   "en": "What is the main axis of Stonehenge lined up with?"
+  },
+  "options": [
+   {
+    "ru": "На восход в день летнего солнцестояния",
+    "en": "Sunrise on the summer solstice"
+   },
+   {
+    "ru": "На Полярную звезду",
+    "en": "The North Star"
+   },
+   {
+    "ru": "На восход полной Луны в марте",
+    "en": "The full Moon rising in March"
+   },
+   {
+    "ru": "На вершину Бен-Невиса",
+    "en": "The peak of Ben Nevis"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "А в обратную сторону — с закатом в день зимнего солнцестояния: возможно, он был для строителей даже важнее.",
+   "en": "The other way it faces midwinter sunset, which may have mattered even more to its builders."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stonehenge"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие три точки образуют Бермудский треугольник?",
+   "en": "Which three points make the Bermuda Triangle?"
+  },
+  "options": [
+   {
+    "ru": "Майами, Бермуды, Пуэрто-Рико",
+    "en": "Miami, Bermuda, Puerto Rico"
+   },
+   {
+    "ru": "Бермуды, Азоры, Канары",
+    "en": "Bermuda, Azores, Canaries"
+   },
+   {
+    "ru": "Нью-Йорк, Бермуды, Куба",
+    "en": "New York, Bermuda, Cuba"
+   },
+   {
+    "ru": "Бермуды, Ямайка, Багамы",
+    "en": "Bermuda, Jamaica, Bahamas"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Границы у треугольника условные: на морских картах его нет, а авторы книг рисуют его каждый по-своему.",
+   "en": "Its borders are made up: no official chart shows it, and every author draws it a little differently."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bermuda_Triangle"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем знаменита рукопись Войнича?",
+   "en": "What makes the Voynich manuscript famous?"
+  },
+  "options": [
+   {
+    "ru": "Её текст никто не может прочесть",
+    "en": "Nobody can read its text"
+   },
+   {
+    "ru": "Её чернила светятся в темноте",
+    "en": "Its ink glows in the dark"
+   },
+   {
+    "ru": "Она написана на коже дракона",
+    "en": "It is written on dragon skin"
+   },
+   {
+    "ru": "Её страницы пустые",
+    "en": "Its pages are blank"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Радиоуглерод датирует её пергамент 1404–1438 годами, но убедительно прочесть её так никто и не смог.",
+   "en": "Carbon dating puts its vellum at 1404 to 1438, yet nobody has ever convincingly read a line of it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Voynich_manuscript"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что было на самом деле на знаменитом фото Несси 1934 года?",
+   "en": "What was really in the famous 1934 photo of Nessie?"
+  },
+  "options": [
+   {
+    "ru": "Игрушечная подводная лодка",
+    "en": "A toy submarine"
+   },
+   {
+    "ru": "Плывущий олень",
+    "en": "A swimming deer"
+   },
+   {
+    "ru": "Бревно",
+    "en": "A floating log"
+   },
+   {
+    "ru": "Хвост кита",
+    "en": "A whale's tail"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Обман раскрылся в 1994 году: к игрушечной подлодке из магазина приделали голову на шее из шпатлёвки.",
+   "en": "The hoax came out in 1994: a head and neck of wood putty had been fixed onto a toy submarine."
+  },
+  "source": "https://en.wikipedia.org/wiki/Loch_Ness_Monster"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто первым рассказал об Атлантиде?",
+   "en": "Who first told the story of Atlantis?"
+  },
+  "options": [
+   {
+    "ru": "Платон",
+    "en": "Plato"
+   },
+   {
+    "ru": "Гомер",
+    "en": "Homer"
+   },
+   {
+    "ru": "Геродот",
+    "en": "Herodotus"
+   },
+   {
+    "ru": "Жюль Верн",
+    "en": "Jules Verne"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Других древних источников нет: многие историки считают Атлантиду притчей, которую Платон придумал сам.",
+   "en": "No older source exists, so many historians think Plato invented Atlantis as a moral tale."
+  },
+  "source": "https://en.wikipedia.org/wiki/Atlantis"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как называются каменные гиганты острова Пасхи?",
+   "en": "What are the stone giants of Easter Island called?"
+  },
+  "options": [
+   {
+    "ru": "Моаи",
+    "en": "Moai"
+   },
+   {
+    "ru": "Тики",
+    "en": "Tiki"
+   },
+   {
+    "ru": "Менгиры",
+    "en": "Menhirs"
+   },
+   {
+    "ru": "Долмены",
+    "en": "Dolmens"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Моаи на платформах почти все смотрят не на океан, а вглубь острова — на деревни, которые они охраняли.",
+   "en": "Almost all moai on platforms face inland, not out to sea, watching over the villages that built them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Moai"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В какой стране находятся линии Наски — гигантские рисунки на земле?",
+   "en": "Which country has the Nazca Lines, giant drawings on the ground?"
+  },
+  "options": [
+   {
+    "ru": "Перу",
+    "en": "Peru"
+   },
+   {
+    "ru": "Мексика",
+    "en": "Mexico"
+   },
+   {
+    "ru": "Египет",
+    "en": "Egypt"
+   },
+   {
+    "ru": "Чили",
+    "en": "Chile"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Их делали, убирая тёмные камни со светлой почвы; в сухой пустыне рисунки живут уже две тысячи лет.",
+   "en": "They were made by moving dark stones off lighter ground, and the dry desert has kept them for 2,000 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nazca_Lines"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Над каким океаном в 1937 году пропала лётчица Амелия Эрхарт?",
+   "en": "Over which ocean did the aviator Amelia Earhart vanish in 1937?"
+  },
+  "options": [
+   {
+    "ru": "Тихий",
+    "en": "Pacific"
+   },
+   {
+    "ru": "Атлантический",
+    "en": "Atlantic"
+   },
+   {
+    "ru": "Индийский",
+    "en": "Indian"
+   },
+   {
+    "ru": "Северный Ледовитый",
+    "en": "Arctic"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она искала крошечный остров Хауленд для дозаправки; скорее всего, не нашла его и упала в океан без топлива.",
+   "en": "She was looking for tiny Howland Island to refuel; most likely she missed it and ditched out of fuel."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amelia_Earhart"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем два англичанина, признавшиеся в 1991 году, делали «круги на полях»?",
+   "en": "What did the two Englishmen who confessed in 1991 use to make crop circles?"
+  },
+  "options": [
+   {
+    "ru": "Доской и верёвкой",
+    "en": "A plank and some rope"
+   },
+   {
+    "ru": "Вертолётом",
+    "en": "A helicopter"
+   },
+   {
+    "ru": "Лазером",
+    "en": "A laser"
+   },
+   {
+    "ru": "Газонокосилкой",
+    "en": "A lawnmower"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Даг Бауэр и Дэйв Чорли начали ещё в 1970-х, а чтобы идти по прямой, целились проволочной петлёй на кепке.",
+   "en": "Doug Bower and Dave Chorley had been at it since the 1970s, aiming with a loop of wire fixed to a cap."
+  },
+  "source": "https://en.wikipedia.org/wiki/Crop_circle"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чью могилу так и не нашли, хотя её ищут даже со спутников?",
+   "en": "Whose grave has never been found, even with satellite searches?"
+  },
+  "options": [
+   {
+    "ru": "Чингисхана",
+    "en": "Genghis Khan's"
+   },
+   {
+    "ru": "Тутанхамона",
+    "en": "Tutankhamun's"
+   },
+   {
+    "ru": "Наполеона",
+    "en": "Napoleon's"
+   },
+   {
+    "ru": "Петра Первого",
+    "en": "Peter the Great's"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По легенде, место похорон затоптали табуном коней, а многие монголы считают, что тревожить его нельзя.",
+   "en": "Legend says horses trampled the burial site flat, and many Mongolians feel it should never be disturbed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tomb_of_Genghis_Khan"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где в 2012 году нашли останки английского короля Ричарда III?",
+   "en": "Where were the remains of England's King Richard III found in 2012?"
+  },
+  "options": [
+   {
+    "ru": "Под парковкой",
+    "en": "Under a car park"
+   },
+   {
+    "ru": "В Темзе",
+    "en": "In the River Thames"
+   },
+   {
+    "ru": "Под футбольным полем",
+    "en": "Under a football pitch"
+   },
+   {
+    "ru": "В подвале Тауэра",
+    "en": "In the Tower's cellar"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Парковку построили на месте исчезнувшей монастырской церкви; в 2015 году короля перезахоронили в соборе Лестера.",
+   "en": "The car park stood on a lost friary church; in 2015 he was reburied in Leicester Cathedral."
+  },
+  "source": "https://en.wikipedia.org/wiki/Exhumation_and_reburial_of_Richard_III_of_England"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой город из древних легенд раскопал в 1870-х годах Генрих Шлиман?",
+   "en": "Which legendary city did Heinrich Schliemann dig up in the 1870s?"
+  },
+  "options": [
+   {
+    "ru": "Трою",
+    "en": "Troy"
+   },
+   {
+    "ru": "Атлантиду",
+    "en": "Atlantis"
+   },
+   {
+    "ru": "Вавилон",
+    "en": "Babylon"
+   },
+   {
+    "ru": "Камелот",
+    "en": "Camelot"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Копал он так рьяно, что прорыл насквозь тот самый слой, который сегодня и считают гомеровской Троей.",
+   "en": "He dug so eagerly that he cut right through the layer now thought to be Homer's Troy."
+  },
+  "source": "https://en.wikipedia.org/wiki/Heinrich_Schliemann"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что астроном написал на распечатке загадочного радиосигнала из космоса в 1977 году?",
+   "en": "What did an astronomer scribble on the printout of a strange space radio signal in 1977?"
+  },
+  "options": [
+   {
+    "ru": "«Ого!» (Wow!)",
+    "en": "Wow!"
+   },
+   {
+    "ru": "«Эврика!»",
+    "en": "Eureka!"
+   },
+   {
+    "ru": "«Спасите!» (SOS)",
+    "en": "SOS"
+   },
+   {
+    "ru": "«Привет»",
+    "en": "Hello"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сигнал больше ни разу не повторился; по версии 2024 года, это могло быть внезапное свечение облака водорода.",
+   "en": "It never came back; a 2024 study suggests a cloud of hydrogen suddenly flaring up in space."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wow!_signal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Корабль «Мария Селеста» нашли в 1872 году без людей. Какой груз был в трюме?",
+   "en": "The Mary Celeste was found in 1872 with nobody aboard. What was in her hold?"
+  },
+  "options": [
+   {
+    "ru": "Бочки со спиртом",
+    "en": "Barrels of alcohol"
+   },
+   {
+    "ru": "Золото",
+    "en": "Gold"
+   },
+   {
+    "ru": "Чай",
+    "en": "Tea"
+   },
+   {
+    "ru": "Пушки",
+    "en": "Cannons"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Девять бочек были пусты: возможно, капитан испугался взрыва паров и увёл всех в шлюпку, которая пропала.",
+   "en": "Nine barrels were empty: perhaps the captain feared the fumes would explode and took everyone into the lost lifeboat."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mary_Celeste",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой писатель в 1884 году прославил «Марию Селесту», сочинив о ней рассказ?",
+   "en": "Which writer made the Mary Celeste famous with an 1884 story about her?"
+  },
+  "options": [
+   {
+    "ru": "Артур Конан Дойл",
+    "en": "Arthur Conan Doyle"
+   },
+   {
+    "ru": "Жюль Верн",
+    "en": "Jules Verne"
+   },
+   {
+    "ru": "Эдгар По",
+    "en": "Edgar Allan Poe"
+   },
+   {
+    "ru": "Чарльз Диккенс",
+    "en": "Charles Dickens"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Молодой врач выдал вымысел за «записки выжившего», многие поверили, а его ошибка в имени — «Мари Селеста» — прижилась.",
+   "en": "The young doctor wrote it as a survivor's statement, many took it as true, and his misspelt Marie Celeste stuck."
+  },
+  "source": "https://en.wikipedia.org/wiki/J._Habakuk_Jephson%27s_Statement"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что говорят о Бермудском треугольнике страховщики «Ллойдс» и береговая охрана США?",
+   "en": "What do Lloyd's insurers and the US Coast Guard say about the Bermuda Triangle?"
+  },
+  "options": [
+   {
+    "ru": "Он не опаснее других морей",
+    "en": "It is no worse than other seas"
+   },
+   {
+    "ru": "Страховка там вдвое дороже",
+    "en": "Insurance there costs double"
+   },
+   {
+    "ru": "Там отказывают компасы",
+    "en": "Compasses fail there"
+   },
+   {
+    "ru": "Суда обязаны его обходить",
+    "en": "Ships must sail around it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это просто оживлённое море с ураганами и Гольфстримом: кораблей там пропадает не больше, чем везде.",
+   "en": "It is a busy sea with hurricanes and the Gulf Stream; ships do not vanish there more often than elsewhere."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bermuda_Triangle"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Автор бестселлера 1974 года «Бермудский треугольник» — внук основателя чего?",
+   "en": "The author of the 1974 bestseller The Bermuda Triangle was the grandson of the founder of what?"
+  },
+  "options": [
+   {
+    "ru": "Сети языковых школ",
+    "en": "A chain of language schools"
+   },
+   {
+    "ru": "Шинной компании",
+    "en": "A tyre company"
+   },
+   {
+    "ru": "Страховой компании",
+    "en": "An insurance company"
+   },
+   {
+    "ru": "Журнала о путешествиях",
+    "en": "A travel magazine"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Чарльз Берлиц — внук создателя школ Berlitz и сам полиглот; ещё он писал книги про Атлантиду и НЛО.",
+   "en": "Charles Berlitz, grandson of the Berlitz schools' founder, was a polyglot who also wrote on Atlantis and UFOs."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles_Berlitz"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую причину гибели группы Дятлова назвали и прокуратура в 2020-м, и учёные в 2021-м?",
+   "en": "What cause of the Dyatlov Pass deaths did prosecutors in 2020 and scientists in 2021 both name?"
+  },
+  "options": [
+   {
+    "ru": "Небольшую снежную лавину",
+    "en": "A small slab avalanche"
+   },
+   {
+    "ru": "Испытание ракеты",
+    "en": "A missile test"
+   },
+   {
+    "ru": "Шаровую молнию",
+    "en": "Ball lightning"
+   },
+   {
+    "ru": "Нападение медведя",
+    "en": "A bear attack"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Туристы разрезали палатку изнутри и ушли в мороз; модель 2021 года показала, как снежная плита могла накрыть её ночью.",
+   "en": "The hikers cut their tent open and fled into the frost; a 2021 model showed how a snow slab could hit it at night."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dyatlov_Pass_incident",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2017 году учёные проверили ДНК «образцов йети» из музеев и монастырей. Кому они принадлежали?",
+   "en": "In 2017 scientists tested the DNA of yeti samples from museums and monasteries. What were they?"
+  },
+  "options": [
+   {
+    "ru": "Медведям и одной собаке",
+    "en": "Bears, plus one dog"
+   },
+   {
+    "ru": "Снежным барсам",
+    "en": "Snow leopards"
+   },
+   {
+    "ru": "Горным козлам",
+    "en": "Mountain goats"
+   },
+   {
+    "ru": "Неизвестному примату",
+    "en": "An unknown primate"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Восемь образцов принадлежали бурым медведям Гималаев и Тибета и белогрудому медведю, а «зуб йети» — собаке.",
+   "en": "Eight came from Himalayan and Tibetan brown bears and an Asian black bear; the yeti tooth was a dog's."
+  },
+  "source": "https://www.nationalgeographic.com/science/article/yeti-legends-real-animals-dna-bears-himalaya-science"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2018 году учёные собрали ДНК из воды озера Лох-Несс. Чьей ДНК там оказалось очень много?",
+   "en": "In 2018 scientists sampled DNA from the water of Loch Ness. Which animal's DNA turned up in abundance?"
+  },
+  "options": [
+   {
+    "ru": "Угрей",
+    "en": "Eels"
+   },
+   {
+    "ru": "Тюленей",
+    "en": "Seals"
+   },
+   {
+    "ru": "Осьминогов",
+    "en": "Octopuses"
+   },
+   {
+    "ru": "Плезиозавров",
+    "en": "Plesiosaurs"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "ДНК рептилий не нашлось вовсе, зато угрей — полно, так что версию о гигантском угре учёные исключать не стали.",
+   "en": "There was no reptile DNA at all but lots of eel, so the team could not rule out a giant eel."
+  },
+  "source": "https://en.wikipedia.org/wiki/Loch_Ness_Monster"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "От чего на самом деле умер лорд Карнарвон, оплативший раскопки гробницы Тутанхамона?",
+   "en": "What really killed Lord Carnarvon, who funded the dig at Tutankhamun's tomb?"
+  },
+  "options": [
+   {
+    "ru": "Заражение крови от укуса комара",
+    "en": "An infected mosquito bite"
+   },
+   {
+    "ru": "Яд на стенах гробницы",
+    "en": "Poison on the tomb walls"
+   },
+   {
+    "ru": "Укус кобры",
+    "en": "A cobra bite"
+   },
+   {
+    "ru": "Плесень из саркофага",
+    "en": "Mould from the sarcophagus"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он порезал укус бритвой и получил заражение крови, а Говард Картер, вскрывший гробницу, прожил до 1939 года.",
+   "en": "He nicked the bite while shaving and got blood poisoning; Howard Carter, who opened the tomb, lived until 1939."
+  },
+  "source": "https://en.wikipedia.org/wiki/Curse_of_the_pharaohs"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем, по анализу ДНК, оказалась Анна Андерсон, выдававшая себя за великую княжну Анастасию?",
+   "en": "Who was Anna Anderson, who claimed to be Grand Duchess Anastasia, according to DNA tests?"
+  },
+  "options": [
+   {
+    "ru": "Польской работницей с фабрики",
+    "en": "A Polish factory worker"
+   },
+   {
+    "ru": "Дочерью английского лорда",
+    "en": "An English lord's daughter"
+   },
+   {
+    "ru": "Немецкой актрисой",
+    "en": "A German actress"
+   },
+   {
+    "ru": "Двоюродной сестрой Анастасии",
+    "en": "Anastasia's own cousin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "ДНК-тесты 1990-х указали на Франциску Шанцковскую — её же назвал частный сыщик ещё в 1927 году.",
+   "en": "DNA tests in the 1990s matched Franziska Schanzkowska, just as a private detective had claimed back in 1927."
+  },
+  "source": "https://en.wikipedia.org/wiki/Anna_Anderson"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где последний раз видели Янтарную комнату, вывезенную из Царского Села?",
+   "en": "Where was the Amber Room, taken from Tsarskoye Selo, last seen?"
+  },
+  "options": [
+   {
+    "ru": "В Кёнигсберге",
+    "en": "In Königsberg"
+   },
+   {
+    "ru": "В Берлине",
+    "en": "In Berlin"
+   },
+   {
+    "ru": "В Вене",
+    "en": "In Vienna"
+   },
+   {
+    "ru": "В Варшаве",
+    "en": "In Warsaw"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её ящики хранились в Кёнигсбергском замке, и в 1945 году след пропал; в 2003 году в Царском Селе открыли копию.",
+   "en": "Its crates sat in Königsberg Castle until the trail went cold in 1945; a full copy opened at Tsarskoye Selo in 2003."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amber_Room"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем изначально был Эльдорадо в легендах индейцев муисков?",
+   "en": "Who or what was El Dorado originally, in the legends of the Muisca people?"
+  },
+  "options": [
+   {
+    "ru": "Вождём, покрытым золотой пылью",
+    "en": "A chief covered in gold dust"
+   },
+   {
+    "ru": "Золотым городом в горах",
+    "en": "A golden city in the mountains"
+   },
+   {
+    "ru": "Рекой с золотым песком",
+    "en": "A river of golden sand"
+   },
+   {
+    "ru": "Золотым идолом",
+    "en": "A golden idol"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Новый вождь, обсыпанный золотом, бросал сокровища в озеро Гуатавита; конкистадоры превратили его в целую страну.",
+   "en": "A new chief, coated in gold, threw treasure into Lake Guatavita; conquistadors turned him into a whole land."
+  },
+  "source": "https://en.wikipedia.org/wiki/El_Dorado"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как власти Страсбурга сначала «лечили» танцевальную чуму 1518 года?",
+   "en": "How did the authorities of Strasbourg first try to cure the dancing plague of 1518?"
+  },
+  "options": [
+   {
+    "ru": "Наняли музыкантов для танцоров",
+    "en": "Hired musicians to keep them dancing"
+   },
+   {
+    "ru": "Штрафовали танцующих",
+    "en": "Fined the dancers"
+   },
+   {
+    "ru": "Обливали людей холодной водой",
+    "en": "Doused the dancers in cold water"
+   },
+   {
+    "ru": "Закрыли городские ворота",
+    "en": "Locked the city gates"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Думали, что болезнь надо «вытанцевать», и даже построили сцену; сегодня это считают массовой истерией в голодный год.",
+   "en": "They thought the dancers had to dance it out and built a stage; today it is seen as mass hysteria in a famine year."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что двигает «ползающие камни» в Долине Смерти, как выяснили в 2014 году?",
+   "en": "What moves the sailing stones of Death Valley, as scientists found in 2014?"
+  },
+  "options": [
+   {
+    "ru": "Тонкий лёд и ветер",
+    "en": "Thin ice sheets and wind"
+   },
+   {
+    "ru": "Подземные толчки",
+    "en": "Small earthquakes"
+   },
+   {
+    "ru": "Магнитное поле",
+    "en": "The magnetic field"
+   },
+   {
+    "ru": "Сильные ливни",
+    "en": "Heavy rainstorms"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Зимой лужа замерзает тонкой коркой, а лёгкий ветер толкает льдины, и они тащат камни по раскисшему дну.",
+   "en": "A winter pond freezes into thin panes, and a light breeze pushes them so they shove the stones across soft mud."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sailing_stones"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что помогло найти затонувшие корабли пропавшей экспедиции Франклина?",
+   "en": "What helped find the sunken ships of Franklin's lost Arctic expedition?"
+  },
+  "options": [
+   {
+    "ru": "Рассказы инуитов",
+    "en": "Inuit oral history"
+   },
+   {
+    "ru": "Видение экстрасенса",
+    "en": "A psychic's vision"
+   },
+   {
+    "ru": "Спутниковые снимки",
+    "en": "Satellite photos"
+   },
+   {
+    "ru": "Дневник капитана",
+    "en": "The captain's diary"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Инуиты больше полутора веков пересказывали истории о кораблях, а «Террор» нашли там, где охотник видел мачту во льду.",
+   "en": "For over 150 years Inuit passed down stories of the ships; Terror lay where a hunter had once seen a mast in the ice."
+  },
+  "source": "https://en.wikipedia.org/wiki/Franklin%27s_lost_expedition"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что, по словам древнего историка, течёт реками в гробнице первого императора Китая?",
+   "en": "According to an ancient historian, what flows in rivers inside the tomb of China's first emperor?"
+  },
+  "options": [
+   {
+    "ru": "Ртуть",
+    "en": "Mercury"
+   },
+   {
+    "ru": "Вино",
+    "en": "Wine"
+   },
+   {
+    "ru": "Расплавленное золото",
+    "en": "Molten gold"
+   },
+   {
+    "ru": "Молоко",
+    "en": "Milk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Гробницу так и не вскрыли, но почва над курганом действительно полна ртути — похоже, Сыма Цянь не выдумал.",
+   "en": "The tomb is still unopened, but the soil above it really is full of mercury, so Sima Qian may have been right."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mausoleum_of_the_First_Qin_Emperor"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой советский учёный нашёл ключ к письменности майя?",
+   "en": "Which Soviet scholar found the key to Maya writing?"
+  },
+  "options": [
+   {
+    "ru": "Юрий Кнорозов",
+    "en": "Yuri Knorozov"
+   },
+   {
+    "ru": "Михаил Герасимов",
+    "en": "Mikhail Gerasimov"
+   },
+   {
+    "ru": "Лев Гумилёв",
+    "en": "Lev Gumilyov"
+   },
+   {
+    "ru": "Валентин Янин",
+    "en": "Valentin Yanin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он расшифровал знаки по книгам в Ленинграде, а настоящие руины майя впервые увидел только в 1990 году.",
+   "en": "He cracked the signs from books in Leningrad and first saw real Maya ruins only in 1990."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yuri_Knorozov"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Легенда о проклятии связана со вскрытием в июне 1941 года гробницы какого правителя?",
+   "en": "A curse legend is tied to a tomb opened by Soviet scientists in June 1941. Whose tomb?"
+  },
+  "options": [
+   {
+    "ru": "Тамерлана",
+    "en": "Tamerlane's"
+   },
+   {
+    "ru": "Чингисхана",
+    "en": "Genghis Khan's"
+   },
+   {
+    "ru": "Батыя",
+    "en": "Batu Khan's"
+   },
+   {
+    "ru": "Аттилы",
+    "en": "Attila's"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Через несколько дней началась война; а антрополог Герасимов по скелету подтвердил, что Тимур и правда хромал.",
+   "en": "War broke out days later; and the anthropologist Gerasimov confirmed from the skeleton that Timur really was lame."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gur-e-Amir"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем, по мнению геологов, является «НЛО», найденное на дне Балтики в 2011 году?",
+   "en": "What do geologists think the UFO-like object found on the Baltic seabed in 2011 really is?"
+  },
+  "options": [
+   {
+    "ru": "Скалой, оставленной ледником",
+    "en": "A rock left by a glacier"
+   },
+   {
+    "ru": "Затонувшей подлодкой",
+    "en": "A sunken submarine"
+   },
+   {
+    "ru": "Обломком метеорита",
+    "en": "A meteorite fragment"
+   },
+   {
+    "ru": "Кораблём пришельцев",
+    "en": "An alien spaceship"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шведские искатели сокровищ увидели на сонаре «тарелку» диаметром 60 м, но образцы оказались обычными камнями.",
+   "en": "Swedish treasure hunters saw a 60 metre saucer on their sonar, but the samples turned out to be ordinary rock."
+  },
+  "source": "https://en.wikipedia.org/wiki/Baltic_Sea_anomaly"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое первое слово прочли в 2023 году в сгоревшем свитке из Геркуланума?",
+   "en": "What was the first word read in 2023 from a charred scroll from Herculaneum?"
+  },
+  "options": [
+   {
+    "ru": "«Пурпур»",
+    "en": "Purple"
+   },
+   {
+    "ru": "«Любовь»",
+    "en": "Love"
+   },
+   {
+    "ru": "«Цезарь»",
+    "en": "Caesar"
+   },
+   {
+    "ru": "«Хлеб»",
+    "en": "Bread"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Свиток обуглился при извержении Везувия в 79 году; студент прочёл слово, обучив нейросеть на томограмме.",
+   "en": "The scroll was charred by Vesuvius in AD 79; a student read the word by training an AI on CT scans of it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vesuvius_Challenge"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что на самом деле издало загадочный подводный звук «Блуп», записанный в 1997 году?",
+   "en": "What was really behind the mysterious underwater sound called the Bloop, recorded in 1997?"
+  },
+  "options": [
+   {
+    "ru": "Раскалывающиеся айсберги",
+    "en": "Icebergs cracking"
+   },
+   {
+    "ru": "Гигантский кальмар",
+    "en": "A giant squid"
+   },
+   {
+    "ru": "Секретная подлодка",
+    "en": "A secret submarine"
+   },
+   {
+    "ru": "Пробуждение Ктулху",
+    "en": "Cthulhu waking up"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его уловили датчики почти в 5000 км друг от друга; позже такие же звуки записали в Антарктике, где ломались айсберги.",
+   "en": "Sensors nearly 5,000 km apart picked it up; matching sounds were later recorded in Antarctic waters as icebergs broke up."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bloop"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой легендарный город, по преданию, скрылся в водах озера Светлояр?",
+   "en": "Which legendary city is said to have sunk into Lake Svetloyar?"
+  },
+  "options": [
+   {
+    "ru": "Китеж",
+    "en": "Kitezh"
+   },
+   {
+    "ru": "Тмутаракань",
+    "en": "Tmutarakan"
+   },
+   {
+    "ru": "Мангазея",
+    "en": "Mangazeya"
+   },
+   {
+    "ru": "Аркаим",
+    "en": "Arkaim"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По легенде, город ушёл под воду, спасаясь от войска Батыя; Римский-Корсаков написал об этом оперу.",
+   "en": "Legend says it vanished under water to escape Batu's army; Rimsky-Korsakov wrote an opera about it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kitezh"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что в итоге выяснилось о Земле Санникова, которую больше века искали в Арктике?",
+   "en": "What turned out to be the truth about Sannikov Land, sought in the Arctic for over a century?"
+  },
+  "options": [
+   {
+    "ru": "Там, где её видели, только море",
+    "en": "There is only sea where it was seen"
+   },
+   {
+    "ru": "Это часть Гренландии",
+    "en": "It is part of Greenland"
+   },
+   {
+    "ru": "Это остров Врангеля",
+    "en": "It is Wrangel Island"
+   },
+   {
+    "ru": "Это часть Таймыра",
+    "en": "It is part of the Taymyr Peninsula"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ледокол «Садко» в 1937 году не нашёл там земли: возможно, это был мираж или остров из мерзлоты, который размыло море.",
+   "en": "The icebreaker Sadko found no land there in 1937: perhaps a mirage, or an island of frozen ground the sea washed away."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sannikov_Land"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое реальное бедствие часто называют прообразом гибели Атлантиды?",
+   "en": "Which real disaster is often named as the inspiration for the sinking of Atlantis?"
+  },
+  "options": [
+   {
+    "ru": "Извержение вулкана на Санторини",
+    "en": "The eruption on Santorini"
+   },
+   {
+    "ru": "Гибель Помпей",
+    "en": "The destruction of Pompeii"
+   },
+   {
+    "ru": "Извержение Кракатау",
+    "en": "The eruption of Krakatoa"
+   },
+   {
+    "ru": "Лиссабонское землетрясение",
+    "en": "The Lisbon earthquake"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Взрыв около 1600 года до н. э. похоронил под пеплом город Акротири и обрушил цунами на берега Крита.",
+   "en": "The blast around 1600 BC buried the town of Akrotiri under ash and sent tsunamis onto the coast of Crete."
+  },
+  "source": "https://en.wikipedia.org/wiki/Minoan_eruption"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько деревьев повалил Тунгусский взрыв 1908 года?",
+   "en": "How many trees did the 1908 Tunguska blast knock down?"
+  },
+  "answer": 80,
+  "range": [
+   0,
+   500
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "млн",
+   "en": "million"
+  },
+  "fact": {
+   "ru": "Взрыв в сотни раз мощнее хиросимского пришёлся на почти безлюдную тайгу, поэтому жертв почти не было.",
+   "en": "A blast hundreds of times Hiroshima struck almost empty taiga, so hardly anyone was hurt."
+  },
+  "source": "https://www.sciencedaily.com/releases/2008/07/080701105330.htm"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько человек было на борту «Марии Селесты», когда она вышла из Нью-Йорка?",
+   "en": "How many people were aboard the Mary Celeste when she left New York?"
+  },
+  "answer": 10,
+  "range": [
+   0,
+   50
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "чел.",
+   "en": "people"
+  },
+  "fact": {
+   "ru": "Семь матросов, капитан, его жена и двухлетняя дочь — никого из них больше не видели.",
+   "en": "Seven crew, the captain, his wife and their two year old daughter, none of whom was ever seen again."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mary_Celeste"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько статуй моаи известно на острове Пасхи?",
+   "en": "About how many moai statues are known on Easter Island?"
+  },
+  "answer": 900,
+  "range": [
+   0,
+   3000
+  ],
+  "step": 10,
+  "tolerance": 200,
+  "unit": {
+   "ru": "статуй",
+   "en": "statues"
+  },
+  "fact": {
+   "ru": "Почти все высечены из вулканического туфа в одном карьере, и сотни так и остались там недоделанными.",
+   "en": "Nearly all were carved from tuff in one volcanic quarry, where hundreds still lie unfinished."
+  },
+  "source": "https://en.wikipedia.org/wiki/Moai"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет Гёбекли-Тепе — каменному святилищу в Турции?",
+   "en": "How old is Göbekli Tepe, the stone sanctuary in Turkey?"
+  },
+  "answer": 11500,
+  "range": [
+   0,
+   30000
+  ],
+  "step": 100,
+  "tolerance": 2000,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Его построили охотники и собиратели — за тысячи лет до колеса, гончарного круга и письменности.",
+   "en": "Hunter-gatherers built it, thousands of years before the wheel, the potter's wheel or writing."
+  },
+  "source": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет мумии Эци, найденной в Альпах в 1991 году?",
+   "en": "How old is Ötzi, the mummy found in the Alps in 1991?"
+  },
+  "answer": 5300,
+  "range": [
+   0,
+   20000
+  ],
+  "step": 100,
+  "tolerance": 1000,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Туристы приняли его за недавно погибшего альпиниста; убила его стрела, а при нём были медный топор и лук.",
+   "en": "The hikers who found him thought he was a recent climber; an arrow killed him, and he carried a copper axe and a bow."
+  },
+  "source": "https://en.wikipedia.org/wiki/%C3%96tzi",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько бронзовых шестерёнок сохранилось в Антикитерском механизме — древнегреческом «компьютере»?",
+   "en": "How many bronze gears survive in the Antikythera mechanism, the ancient Greek computer?"
+  },
+  "answer": 30,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "шт.",
+   "en": "gears"
+  },
+  "fact": {
+   "ru": "Его нашли на затонувшем корабле в 1901 году; он предсказывал затмения, и ничего сложнее не делали больше тысячи лет.",
+   "en": "Found in a shipwreck in 1901, it predicted eclipses; nothing as complex was built for over a thousand years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Antikythera_mechanism"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько страниц в рукописи Войнича?",
+   "en": "How many pages does the Voynich manuscript have?"
+  },
+  "answer": 240,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 10,
+  "tolerance": 70,
+  "unit": {
+   "ru": "стр.",
+   "en": "pages"
+  },
+  "fact": {
+   "ru": "Часть листов потеряна; на остальных — невиданные растения, звёздные карты и купающиеся женщины.",
+   "en": "Some leaves are lost; the rest show plants nobody can identify, star charts and bathing women."
+  },
+  "source": "https://en.wikipedia.org/wiki/Voynich_manuscript"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Примерно как далеко везли Алтарный камень Стоунхенджа из Шотландии, по исследованию 2024 года?",
+   "en": "About how far was Stonehenge's Altar Stone brought from Scotland, according to a 2024 study?"
+  },
+  "answer": 700,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 150,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Шеститонную плиту считали валлийской, пока анализ её кристаллов не указал на северо-восток Шотландии.",
+   "en": "The six tonne slab was thought to be Welsh until its mineral grains pointed to north east Scotland."
+  },
+  "source": "https://aber.ac.uk/en/news/archive/2024/08/title-274690-en.html"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько секунд длился загадочный радиосигнал Wow! в 1977 году?",
+   "en": "How many seconds did the mysterious Wow! radio signal last in 1977?"
+  },
+  "answer": 72,
+  "range": [
+   0,
+   600
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "сек",
+   "en": "seconds"
+  },
+  "fact": {
+   "ru": "Неподвижный телескоп видел каждую точку неба ровно 72 секунды, и сигнал занял всё это окно целиком.",
+   "en": "The fixed telescope saw any spot of sky for exactly 72 seconds, and the signal filled that whole window."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wow!_signal"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько свитков нашли в «Вилле папирусов», засыпанной Везувием?",
+   "en": "How many scrolls were found in the Villa of the Papyri, buried by Vesuvius?"
+  },
+  "answer": 1800,
+  "range": [
+   0,
+   10000
+  ],
+  "step": 50,
+  "tolerance": 500,
+  "unit": {
+   "ru": "свитков",
+   "en": "scrolls"
+  },
+  "fact": {
+   "ru": "Это единственная античная библиотека, дошедшая целиком: жар превратил свитки не в пепел, а в уголь.",
+   "en": "It is the only Graeco-Roman library to survive whole: the heat turned the scrolls to charcoal, not ash."
+  },
+  "source": "https://en.wikipedia.org/wiki/Villa_of_the_Papyri"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году нашли «Эребус» — флагман пропавшей в 1845 году экспедиции Франклина?",
+   "en": "In what year was HMS Erebus, flagship of Franklin's expedition lost in 1845, found?"
+  },
+  "answer": 2014,
+  "range": [
+   1850,
+   2026
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Брошенный во льдах корабль больше 160 лет пролежал на глубине всего 11 метров; первым подняли его колокол.",
+   "en": "Abandoned in the ice, it lay just 11 metres down for over 160 years; its bell was the first thing brought up."
+  },
+  "source": "https://en.wikipedia.org/wiki/HMS_Erebus_(1826)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько предметов с нерасшифрованным письмом ронго-ронго с острова Пасхи сохранилось?",
+   "en": "How many objects bearing Easter Island's undeciphered rongorongo script survive?"
+  },
+  "answer": 26,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "шт.",
+   "en": "objects"
+  },
+  "fact": {
+   "ru": "Текстов слишком мало для расшифровки, а тех, кто умел читать, видимо, погубили работорговцы и оспа в 1860-х.",
+   "en": "There are too few texts to crack it, and slave raids and smallpox in the 1860s probably killed all who could read it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rongorongo"
+ }
+]

@@ -1,0 +1,1508 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В какой стране придумали тамагочи?",
+   "en": "Which country gave the world the Tamagotchi?"
+  },
+  "options": [
+   {
+    "ru": "В Японии",
+    "en": "Japan"
+   },
+   {
+    "ru": "В США",
+    "en": "USA"
+   },
+   {
+    "ru": "В Южной Корее",
+    "en": "South Korea"
+   },
+   {
+    "ru": "В Германии",
+    "en": "Germany"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его выпустила Bandai в 1996 году, а имя склеено из «тамаго» (яйцо) и «уотчи» — так японцы произносят английское watch.",
+   "en": "Bandai launched it in 1996; the name joins tamago, 'egg', with uotchi, the Japanese way of saying 'watch'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tamagotchi"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто спел «My Heart Will Go On» — главную песню «Титаника»?",
+   "en": "Who sang My Heart Will Go On, the big song from Titanic?"
+  },
+  "options": [
+   {
+    "ru": "Селин Дион",
+    "en": "Céline Dion"
+   },
+   {
+    "ru": "Уитни Хьюстон",
+    "en": "Whitney Houston"
+   },
+   {
+    "ru": "Мэрайя Кэри",
+    "en": "Mariah Carey"
+   },
+   {
+    "ru": "Тони Брэкстон",
+    "en": "Toni Braxton"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кэмерон не хотел заканчивать фильм попсовой песней, и Джеймс Хорнер показал ему демо с Дион, дождавшись удачного момента.",
+   "en": "Cameron felt a pop song would be wrong for the ending, so composer James Horner waited for the right moment to play him Dion's demo."
+  },
+  "source": "https://en.wikipedia.org/wiki/My_Heart_Will_Go_On"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Модную стрижку «Рейчел» назвали в честь героини какого сериала?",
+   "en": "The 'Rachel' haircut was named after a character from which TV series?"
+  },
+  "options": [
+   {
+    "ru": "«Друзья»",
+    "en": "Friends"
+   },
+   {
+    "ru": "«Беверли-Хиллз, 90210»",
+    "en": "Beverly Hills, 90210"
+   },
+   {
+    "ru": "«Твин Пикс»",
+    "en": "Twin Peaks"
+   },
+   {
+    "ru": "«Секретные материалы»",
+    "en": "The X-Files"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её копировали миллионы женщин, а сама Дженнифер Энистон называла её самой уродливой стрижкой, какую видела.",
+   "en": "Millions of women copied it, yet Jennifer Aniston herself called it the ugliest haircut she had ever seen."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Rachel"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой чемпион мира по шахматам в 1997 году проиграл матч компьютеру IBM Deep Blue?",
+   "en": "Which world chess champion lost a match to IBM's Deep Blue in 1997?"
+  },
+  "options": [
+   {
+    "ru": "Гарри Каспаров",
+    "en": "Garry Kasparov"
+   },
+   {
+    "ru": "Анатолий Карпов",
+    "en": "Anatoly Karpov"
+   },
+   {
+    "ru": "Владимир Крамник",
+    "en": "Vladimir Kramnik"
+   },
+   {
+    "ru": "Вишванатан Ананд",
+    "en": "Viswanathan Anand"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Годом раньше Каспаров обыграл ту же машину 4:2, а после поражения потребовал реванша, но IBM отказалась.",
+   "en": "A year earlier Kasparov had beaten the same machine 4-2; after losing he demanded a rematch, but IBM refused."
+  },
+  "source": "https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чего боялись из-за «проблемы 2000 года»?",
+   "en": "What was the Y2K bug expected to do?"
+  },
+  "options": [
+   {
+    "ru": "Компьютеры примут 2000 год за 1900-й",
+    "en": "Computers would read 2000 as 1900"
+   },
+   {
+    "ru": "Все часы в мире остановятся",
+    "en": "Every clock in the world would stop"
+   },
+   {
+    "ru": "Проснётся вирус, спрятанный в Windows",
+    "en": "A virus hidden in Windows would wake"
+   },
+   {
+    "ru": "Спутники упадут на Землю",
+    "en": "Satellites would fall to Earth"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ради экономии дорогой памяти год десятилетиями хранили двумя цифрами, и на исправления ушло около 300 млрд долларов.",
+   "en": "To save costly memory, years were stored as two digits for decades; fixing it cost about $300 billion worldwide."
+  },
+  "source": "https://en.wikipedia.org/wiki/Year_2000_problem"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какого цвета был пиджак типичного «нового русского» из анекдотов?",
+   "en": "What colour was the jacket of the typical 'New Russian' in 90s jokes?"
+  },
+  "options": [
+   {
+    "ru": "Малиновый",
+    "en": "Crimson"
+   },
+   {
+    "ru": "Белый",
+    "en": "White"
+   },
+   {
+    "ru": "Зелёный",
+    "en": "Green"
+   },
+   {
+    "ru": "Жёлтый",
+    "en": "Yellow"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вместе с золотой цепью он был знаком статуса «крутых», а для остальных стал символом безвкусицы.",
+   "en": "With a gold chain it was a status symbol for the newly rich, and for everyone else a byword for bad taste."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Новые_русские"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как называли джинсы, вываренные с отбеливателем до белых разводов?",
+   "en": "What were jeans boiled in bleach until they went blotchy called in Russia?"
+  },
+  "options": [
+   {
+    "ru": "Варёнки",
+    "en": "Varyonki (boiled ones)"
+   },
+   {
+    "ru": "Клёши",
+    "en": "Flares"
+   },
+   {
+    "ru": "Бананы",
+    "en": "Bananas"
+   },
+   {
+    "ru": "Бриджи",
+    "en": "Breeches"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Их часто «варили» дома: кипятили обычные джинсы с «Белизной», перетянув штанины шпагатом или завязав узлами.",
+   "en": "People often made them at home, boiling ordinary jeans in bleach with the legs knotted or bound with string."
+  },
+  "source": "https://www.obozrevatel.com/novosti-obschestvo/zachem-v-sssr-varili-dzhinsyi-ob-etom-mechtala-vsya-molodezh/amp.htm"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой батончик рекламировали как «райское наслаждение»?",
+   "en": "Which chocolate bar was advertised in Russia as 'heavenly bliss'?"
+  },
+  "options": [
+   {
+    "ru": "«Баунти»",
+    "en": "Bounty"
+   },
+   {
+    "ru": "«Сникерс»",
+    "en": "Snickers"
+   },
+   {
+    "ru": "«Марс»",
+    "en": "Mars"
+   },
+   {
+    "ru": "«Твикс»",
+    "en": "Twix"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Bounty придумали ещё в 1951 году в Британии — как копию американского кокосового батончика Mounds.",
+   "en": "Bounty dates back to 1951 in Britain, where Mars made it as a copy of the American coconut bar Mounds."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bounty_(chocolate_bar)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что было на вкладышах жвачки Turbo?",
+   "en": "What was pictured on the inserts of Turbo chewing gum?"
+  },
+  "options": [
+   {
+    "ru": "Машины",
+    "en": "Cars"
+   },
+   {
+    "ru": "Футболисты",
+    "en": "Footballers"
+   },
+   {
+    "ru": "Герои мультфильмов",
+    "en": "Cartoon characters"
+   },
+   {
+    "ru": "Животные",
+    "en": "Animals"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Жвачку делала турецкая фирма Kent, а вкладыши коллекционировали и разыгрывали на переменах, переворачивая их ладонью.",
+   "en": "The gum came from Turkey's Kent, and kids collected the inserts and played for them by flipping them with a palm slap."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Turbo_(жевательная_резинка)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как в 90-е в России отправляли сообщение на пейджер?",
+   "en": "How did you usually send a message to a pager in 90s Russia?"
+  },
+  "options": [
+   {
+    "ru": "Звонили оператору и диктовали",
+    "en": "Called an operator and dictated it"
+   },
+   {
+    "ru": "Отправляли SMS с мобильного",
+    "en": "Sent a text from a mobile phone"
+   },
+   {
+    "ru": "Давали телеграмму на почте",
+    "en": "Sent a telegram from the post office"
+   },
+   {
+    "ru": "Посылали факс",
+    "en": "Sent a fax"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Текст вручную набирала девушка в диспетчерской, так что любое признание в любви сначала читал посторонний человек.",
+   "en": "An operator typed the text by hand, so every declaration of love was read by a stranger first."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Пейджер"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какого прозвища НЕ было ни у одной из Spice Girls?",
+   "en": "Which nickname did NONE of the Spice Girls have?"
+  },
+  "options": [
+   {
+    "ru": "Крейзи Спайс",
+    "en": "Crazy Spice"
+   },
+   {
+    "ru": "Джинджер Спайс",
+    "en": "Ginger Spice"
+   },
+   {
+    "ru": "Пош Спайс",
+    "en": "Posh Spice"
+   },
+   {
+    "ru": "Спорти Спайс",
+    "en": "Sporty Spice"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Прозвища придумал британский журнал Top of the Pops в 1996 году, по характеру каждой из пяти участниц.",
+   "en": "The British magazine Top of the Pops coined the nicknames in 1996, one for each member's personality."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spice_Girls"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько нулей отбросили у рубля при деноминации 1 января 1998 года?",
+   "en": "How many zeros were knocked off the rouble on 1 January 1998?"
+  },
+  "options": [
+   {
+    "ru": "Один",
+    "en": "One"
+   },
+   {
+    "ru": "Два",
+    "en": "Two"
+   },
+   {
+    "ru": "Три",
+    "en": "Three"
+   },
+   {
+    "ru": "Четыре",
+    "en": "Four"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Тысяча старых рублей стала одним новым, и в кошельки вернулись копейки, давно исчезнувшие из обихода.",
+   "en": "A thousand old roubles became one new one, and kopecks, long gone from everyday use, came back."
+  },
+  "source": "https://en.wikipedia.org/wiki/Monetary_reform_in_Russia,_1998"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где в 1991 году заработал первый в мире сайт?",
+   "en": "Where did the world's first website go live in 1991?"
+  },
+  "options": [
+   {
+    "ru": "В ЦЕРН под Женевой",
+    "en": "At CERN near Geneva"
+   },
+   {
+    "ru": "В Массачусетском технологическом",
+    "en": "At MIT"
+   },
+   {
+    "ru": "В Microsoft",
+    "en": "At Microsoft"
+   },
+   {
+    "ru": "В NASA",
+    "en": "At NASA"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тим Бернерс-Ли придумал веб, чтобы учёные делились данными, а в августе 1991-го его открыли для всего интернета.",
+   "en": "Tim Berners-Lee invented the web so scientists could share data; in August 1991 it was opened to the whole internet."
+  },
+  "source": "https://en.wikipedia.org/wiki/World_Wide_Web"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что было на животе у каждого телепузика?",
+   "en": "What did every Teletubby have on its tummy?"
+  },
+  "options": [
+   {
+    "ru": "Экран телевизора",
+    "en": "A TV screen"
+   },
+   {
+    "ru": "Карман",
+    "en": "A pocket"
+   },
+   {
+    "ru": "Часы",
+    "en": "A clock"
+   },
+   {
+    "ru": "Большая кнопка",
+    "en": "A big button"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шоу BBC 1997 года снимали на настоящей ферме в Англии, а кролики на холмах — живые великаны породы фландр.",
+   "en": "The 1997 BBC show was filmed on a real farm in Warwickshire, and the rabbits on the hills were live Flemish Giants."
+  },
+  "source": "https://en.wikipedia.org/wiki/Teletubbies"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кого в 90-е называли «челноками»?",
+   "en": "Who were the 'chelnoki' (shuttles) of 90s Russia?"
+  },
+  "options": [
+   {
+    "ru": "Торговцев, возивших товар из-за границы",
+    "en": "Traders hauling goods from abroad"
+   },
+   {
+    "ru": "Водителей маршруток",
+    "en": "Minibus drivers"
+   },
+   {
+    "ru": "Уличных менял валюты",
+    "en": "Street money changers"
+   },
+   {
+    "ru": "Курьеров с пейджерами",
+    "en": "Couriers with pagers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Они сновали туда-обратно, как челнок ткацкого станка, — в Турцию, Китай и Польшу, с огромными клетчатыми сумками.",
+   "en": "Like a loom's shuttle they went back and forth to Turkey, China and Poland with huge checked bags."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Челноки"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое животное было талисманом приставки Dendy?",
+   "en": "What animal was the mascot of the Dendy game console?"
+  },
+  "options": [
+   {
+    "ru": "Слонёнок",
+    "en": "A baby elephant"
+   },
+   {
+    "ru": "Медвежонок",
+    "en": "A bear cub"
+   },
+   {
+    "ru": "Утёнок",
+    "en": "A duckling"
+   },
+   {
+    "ru": "Котёнок",
+    "en": "A kitten"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сама Dendy была неофициальной копией японской Famicom, а слонёнка нарисовал аниматор Иван Максимов.",
+   "en": "Dendy itself was an unofficial clone of Japan's Famicom, and the elephant was drawn by animator Ivan Maximov."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Dendy"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что первым продали на eBay в 1995 году?",
+   "en": "What was the first item sold on eBay in 1995?"
+  },
+  "options": [
+   {
+    "ru": "Сломанную лазерную указку",
+    "en": "A broken laser pointer"
+   },
+   {
+    "ru": "Дозатор конфет Pez",
+    "en": "A Pez candy dispenser"
+   },
+   {
+    "ru": "Плюшевого мишку",
+    "en": "A teddy bear"
+   },
+   {
+    "ru": "Подержанный автомобиль",
+    "en": "A used car"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Основатель сам переспросил покупателя, понимает ли он, что указка сломана, — тот коллекционировал сломанные указки.",
+   "en": "The founder asked the buyer if he knew it was broken; the man collected broken laser pointers."
+  },
+  "source": "https://en.wikipedia.org/wiki/EBay"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой фильм прославил изогнутую «банановую» Nokia 8110?",
+   "en": "Which film made the curved 'banana' Nokia 8110 a star?"
+  },
+  "options": [
+   {
+    "ru": "«Матрица»",
+    "en": "The Matrix"
+   },
+   {
+    "ru": "«Парк юрского периода»",
+    "en": "Jurassic Park"
+   },
+   {
+    "ru": "«Один дома»",
+    "en": "Home Alone"
+   },
+   {
+    "ru": "«Форрест Гамп»",
+    "en": "Forrest Gump"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В кино крышка выстреливала на пружине, но у настоящей 8110 её не было: такой механизм появился позже в Nokia 7110.",
+   "en": "In the film the cover springs open, but the real 8110 had no spring; that came later with the Nokia 7110."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nokia_8110"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая организация в 1999 году запретила приносить на работу игрушку Furby?",
+   "en": "Which organisation banned Furby toys from its premises in 1999?"
+  },
+  "options": [
+   {
+    "ru": "Агентство нацбезопасности США",
+    "en": "The US National Security Agency"
+   },
+   {
+    "ru": "НАСА",
+    "en": "NASA"
+   },
+   {
+    "ru": "Ватикан",
+    "en": "The Vatican"
+   },
+   {
+    "ru": "Британский музей",
+    "en": "The British Museum"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Боялись, что игрушка запомнит и повторит секреты, хотя записывать звук Furby вообще не умел.",
+   "en": "They feared it would learn and repeat secrets, though Furby could not record sound at all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Furby"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что такое Teen Spirit в названии хита Nirvana?",
+   "en": "What was the 'Teen Spirit' in Nirvana's hit title?"
+  },
+  "options": [
+   {
+    "ru": "Дезодорант",
+    "en": "A deodorant"
+   },
+   {
+    "ru": "Подростковый журнал",
+    "en": "A teen magazine"
+   },
+   {
+    "ru": "Школьный клуб",
+    "en": "A school club"
+   },
+   {
+    "ru": "Марка пива",
+    "en": "A beer brand"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Подруга написала на стене «Курт пахнет Teen Spirit», а Кобейн принял шутку за бунтарский лозунг.",
+   "en": "A friend wrote 'Kurt smells like Teen Spirit' on a wall; Cobain took it as a rebel slogan, not knowing it was a deodorant."
+  },
+  "source": "https://en.wikipedia.org/wiki/Smells_Like_Teen_Spirit"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему название почты Hotmail (1996) сначала писали как HoTMaiL?",
+   "en": "Why was the name of Hotmail (1996) first written as HoTMaiL?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы выделить буквы HTML",
+    "en": "To show off the letters HTML"
+   },
+   {
+    "ru": "Это инициалы основателей",
+    "en": "They were the founders' initials"
+   },
+   {
+    "ru": "Чтобы запутать спам-роботов",
+    "en": "To confuse spam robots"
+   },
+   {
+    "ru": "Это опечатка дизайнера",
+    "en": "It was a designer's typo"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Из множества имён на «-mail» выбрали то, где прячется HTML — язык веб-страниц, а в 1997-м Microsoft купила сервис примерно за 400 млн $.",
+   "en": "Of many '-mail' names they picked the one hiding HTML, the language of web pages; in 1997 Microsoft bought it for about $400 million."
+  },
+  "source": "https://en.wikipedia.org/wiki/Outlook.com"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что изначально означало название Yandex?",
+   "en": "What did the name Yandex originally stand for?"
+  },
+  "options": [
+   {
+    "ru": "«Ещё один индексатор»",
+    "en": "Yet another indexer"
+   },
+   {
+    "ru": "«Твой собственный индекс»",
+    "en": "Your own index"
+   },
+   {
+    "ru": "«Индекс жёлтых страниц»",
+    "en": "Yellow pages index"
+   },
+   {
+    "ru": "«Индекс юных разработчиков»",
+    "en": "Young developers' index"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По-русски — «ещё один индексатор»; потом Аркадий Волож заменил Ya на русскую «Я», чтобы подчеркнуть, откуда компания.",
+   "en": "That is 'one more indexer'; Arkady Volozh later swapped the Latin 'Ya' for the single Cyrillic letter that says 'ya', to stress its roots."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Яндекс"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Про какого переводчика видеокассет говорили, что он озвучивает с прищепкой на носу?",
+   "en": "Which VHS translator was said to work with a clothespin on his nose?"
+  },
+  "options": [
+   {
+    "ru": "Леонид Володарский",
+    "en": "Leonid Volodarsky"
+   },
+   {
+    "ru": "Андрей Гаврилов",
+    "en": "Andrey Gavrilov"
+   },
+   {
+    "ru": "Алексей Михалёв",
+    "en": "Alexey Mikhalyov"
+   },
+   {
+    "ru": "Дмитрий Пучков",
+    "en": "Dmitry Puchkov"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Никакой прищепки не было: в юности он дважды ломал нос, отсюда и знаменитый гнусавый голос.",
+   "en": "There was no clothespin: he broke his nose twice as a young man, which gave him that famous nasal voice."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Володарский,_Леонид_Вениаминович"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой порошковый напиток рекламировали словами «Просто добавь воды!»?",
+   "en": "Which powdered drink was sold with the slogan 'Just add water!'?"
+  },
+  "options": [
+   {
+    "ru": "«Инвайт»",
+    "en": "Invite"
+   },
+   {
+    "ru": "«Юпи»",
+    "en": "Yupi"
+   },
+   {
+    "ru": "«Зуко»",
+    "en": "Zuko"
+   },
+   {
+    "ru": "«Танг»",
+    "en": "Tang"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его автор Сергей Выходцев создал Invite по образцу напитка Drink-o-pop, который чемоданами привёз из Африки.",
+   "en": "Its creator Sergei Vykhodtsev modelled Invite on Drink-o-pop, a drink he brought back from Africa by the suitcase."
+  },
+  "source": "https://www.sostav.ru/sotka/columns/efir/2009/vyhodtsev/"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какой страны группа Aqua, спевшая «Barbie Girl»?",
+   "en": "Which country did Aqua, the band behind Barbie Girl, come from?"
+  },
+  "options": [
+   {
+    "ru": "Из Дании",
+    "en": "Denmark"
+   },
+   {
+    "ru": "Из Швеции",
+    "en": "Sweden"
+   },
+   {
+    "ru": "Из Финляндии",
+    "en": "Finland"
+   },
+   {
+    "ru": "Из Германии",
+    "en": "Germany"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Mattel подала на группу в суд за песню и проиграла, а судья закончил решение словами «Сторонам советуем остыть».",
+   "en": "Mattel sued over the song and lost; the judge ended his ruling with 'The parties are advised to chill.'"
+  },
+  "source": "https://en.wikipedia.org/wiki/Barbie_Girl"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда в «Могучих рейнджерах» (1993) брали сцены боёв в костюмах?",
+   "en": "Where did Mighty Morphin Power Rangers (1993) get its fight scenes in costume?"
+  },
+  "options": [
+   {
+    "ru": "Из японского сериала",
+    "en": "A Japanese TV series"
+   },
+   {
+    "ru": "Из гонконгских боевиков",
+    "en": "Hong Kong action films"
+   },
+   {
+    "ru": "Из компьютерной игры",
+    "en": "A video game"
+   },
+   {
+    "ru": "Из старых фильмов о ниндзя",
+    "en": "Old ninja films"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Американских актёров снимали без шлемов, а драки вырезали из японского «Зюрейнджера»: под шлемом лица не видно.",
+   "en": "American actors were filmed without helmets, and the fights were cut from Japan's Zyuranger: a helmet hides who is inside."
+  },
+  "source": "https://en.wikipedia.org/wiki/Power_Rangers"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чья песня звучала в рекламе запуска Windows 95?",
+   "en": "Whose song launched Windows 95 in the adverts?"
+  },
+  "options": [
+   {
+    "ru": "«Роллинг Стоунз»",
+    "en": "The Rolling Stones"
+   },
+   {
+    "ru": "«Куин»",
+    "en": "Queen"
+   },
+   {
+    "ru": "U2",
+    "en": "U2"
+   },
+   {
+    "ru": "«Битлз»",
+    "en": "The Beatles"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Песню «Start Me Up» выбрали ради новой кнопки «Пуск» — по-английски Start.",
+   "en": "Start Me Up was chosen to sell the brand new Start button."
+  },
+  "source": "https://en.wikipedia.org/wiki/Windows_95"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как звали героя рекламы «МММ», который «не халявщик, а партнёр»?",
+   "en": "What was the name of the MMM ad hero who was 'not a freeloader but a partner'?"
+  },
+  "options": [
+   {
+    "ru": "Лёня Голубков",
+    "en": "Lyonya Golubkov"
+   },
+   {
+    "ru": "Семён Горбунков",
+    "en": "Semyon Gorbunkov"
+   },
+   {
+    "ru": "Вася Пупкин",
+    "en": "Vasya Pupkin"
+   },
+   {
+    "ru": "Петя Иванов",
+    "en": "Petya Ivanov"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«МММ» оказалась финансовой пирамидой: летом 1994 года она рухнула, и миллионы вкладчиков остались ни с чем.",
+   "en": "MMM was a pyramid scheme: it collapsed in the summer of 1994, leaving millions of investors with nothing."
+  },
+  "source": "https://ru.wikipedia.org/wiki/МММ",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "С чего начинались комиксы «Love is…» из вкладышей жвачки?",
+   "en": "How did the Love is... comics from gum wrappers begin?"
+  },
+  "options": [
+   {
+    "ru": "Записки художницы жениху",
+    "en": "An artist's notes to her fiancé"
+   },
+   {
+    "ru": "Реклама турецкой жвачки",
+    "en": "Ads for a Turkish gum"
+   },
+   {
+    "ru": "Комикс детского журнала",
+    "en": "A children's magazine strip"
+   },
+   {
+    "ru": "Открытки к Валентинову дню",
+    "en": "Valentine's Day cards"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Новозеландка Ким Касали рисовала их для будущего мужа Роберто, а в газетах они печатаются с 1970 года.",
+   "en": "New Zealander Kim Casali drew them for her future husband Roberto; newspapers have run them since 1970."
+  },
+  "source": "https://en.wikipedia.org/wiki/Love_Is..."
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какой страны дуэт Los del Río, спевший «Макарену»?",
+   "en": "Which country is Los del Río, the duo behind Macarena, from?"
+  },
+  "options": [
+   {
+    "ru": "Из Испании",
+    "en": "Spain"
+   },
+   {
+    "ru": "Из Мексики",
+    "en": "Mexico"
+   },
+   {
+    "ru": "Из Венесуэлы",
+    "en": "Venezuela"
+   },
+   {
+    "ru": "С Кубы",
+    "en": "Cuba"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Песню придумали в Венесуэле, увидев на вечеринке местную учительницу фламенко, а Макареной звали дочь автора.",
+   "en": "The song was born in Venezuela, inspired by a flamenco teacher at a party; Macarena was the writer's daughter's name."
+  },
+  "source": "https://en.wikipedia.org/wiki/Macarena"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялась знаменитая мелодия звонка Nokia (1994)?",
+   "en": "Where does the famous Nokia ringtone (1994) come from?"
+  },
+  "options": [
+   {
+    "ru": "Гитарный вальс Франсиско Тарреги",
+    "en": "A guitar waltz by Francisco Tárrega"
+   },
+   {
+    "ru": "Финская народная песня",
+    "en": "A Finnish folk song"
+   },
+   {
+    "ru": "Отрывок из Бетховена",
+    "en": "A passage of Beethoven"
+   },
+   {
+    "ru": "Джингл, написанный для Nokia",
+    "en": "A jingle written for Nokia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это фраза из «Большого вальса» испанского гитариста, написанного ещё в 1902 году.",
+   "en": "It is a phrase from Gran Vals, a solo guitar piece the Spanish guitarist wrote back in 1902."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nokia_tune"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как сначала назывался поисковик Google?",
+   "en": "What was Google's search engine first called?"
+  },
+  "options": [
+   {
+    "ru": "БэкРаб (BackRub)",
+    "en": "BackRub"
+   },
+   {
+    "ru": "Путеводитель Джерри",
+    "en": "Jerry's Guide"
+   },
+   {
+    "ru": "АльтаВиста",
+    "en": "AltaVista"
+   },
+   {
+    "ru": "ВебКраулер",
+    "en": "WebCrawler"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Новое имя 1997 года — искажённое googol, единица со ста нулями: столько информации хотели охватить.",
+   "en": "The 1997 name twists 'googol', a 1 followed by 100 zeros, for the sheer amount of information to index."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_Google"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране в 1998 году впервые вышло шоу «Кто хочет стать миллионером?»",
+   "en": "In which country did Who Wants to Be a Millionaire? first air, in 1998?"
+  },
+  "options": [
+   {
+    "ru": "В Великобритании",
+    "en": "The UK"
+   },
+   {
+    "ru": "В США",
+    "en": "The USA"
+   },
+   {
+    "ru": "В Нидерландах",
+    "en": "The Netherlands"
+   },
+   {
+    "ru": "В Австралии",
+    "en": "Australia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Формат купили около сотни стран; в России его запустили в 1999 году под названием «О, счастливчик!».",
+   "en": "Around a hundred countries bought the format; Russia launched it in 1999 as 'Oh, Lucky Man!'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Who_Wants_to_Be_a_Millionaire%3F"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране в 1999 году появилось первое реалити-шоу «Большой брат»?",
+   "en": "In which country did the first Big Brother reality show air, in 1999?"
+  },
+  "options": [
+   {
+    "ru": "В Нидерландах",
+    "en": "The Netherlands"
+   },
+   {
+    "ru": "В Великобритании",
+    "en": "The UK"
+   },
+   {
+    "ru": "В США",
+    "en": "The USA"
+   },
+   {
+    "ru": "В Швеции",
+    "en": "Sweden"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Название взято из романа Оруэлла «1984», где за каждым следит всевидящий Старший Брат.",
+   "en": "The name comes from Orwell's novel 1984, where Big Brother watches everyone."
+  },
+  "source": "https://en.wikipedia.org/wiki/Big_Brother_(franchise)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что называли «ножками Буша»?",
+   "en": "What were 'Bush legs' in Russia?"
+  },
+  "options": [
+   {
+    "ru": "Американские куриные окорочка",
+    "en": "American frozen chicken legs"
+   },
+   {
+    "ru": "Американские ковбойские сапоги",
+    "en": "American cowboy boots"
+   },
+   {
+    "ru": "Танец из американского клипа",
+    "en": "A dance from a US music video"
+   },
+   {
+    "ru": "Узкие американские джинсы",
+    "en": "Skinny American jeans"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Имя пошло от соглашения 1990 года о поставках курятины, которое подписал президент США Джордж Буш-старший.",
+   "en": "The name came from a 1990 deal for chicken supplies signed by US President George H. W. Bush."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Ножки_Буша"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая страна четыре раза выиграла «Евровидение» в 90-е?",
+   "en": "Which country won Eurovision four times in the 1990s?"
+  },
+  "options": [
+   {
+    "ru": "Ирландия",
+    "en": "Ireland"
+   },
+   {
+    "ru": "Швеция",
+    "en": "Sweden"
+   },
+   {
+    "ru": "Великобритания",
+    "en": "The UK"
+   },
+   {
+    "ru": "Норвегия",
+    "en": "Norway"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Знаменитое шоу «Riverdance» родилось как семиминутный номер в перерыве конкурса 1994 года в Дублине.",
+   "en": "The hit show Riverdance began as a seven-minute interval act at the 1994 contest in Dublin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ireland_in_the_Eurovision_Song_Contest"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каким браузером в 1996 году пользовалось большинство?",
+   "en": "Which web browser did most people use in 1996?"
+  },
+  "options": [
+   {
+    "ru": "Нетскейп Навигатор",
+    "en": "Netscape Navigator"
+   },
+   {
+    "ru": "Интернет Эксплорер",
+    "en": "Internet Explorer"
+   },
+   {
+    "ru": "Опера",
+    "en": "Opera"
+   },
+   {
+    "ru": "Мозаик",
+    "en": "Mosaic"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Проиграв войну браузеров Internet Explorer, Netscape открыл свой код, и из этого проекта позже вырос Firefox.",
+   "en": "After losing the browser war to Internet Explorer, Netscape opened its code; the project born from it later gave us Firefox."
+  },
+  "source": "https://en.wikipedia.org/wiki/Netscape_Navigator"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой фильм ужасов 1999 года рекламировали, выдавая актёров за пропавших без вести?",
+   "en": "Which 1999 horror film was promoted by claiming its actors were missing?"
+  },
+  "options": [
+   {
+    "ru": "«Ведьма из Блэр»",
+    "en": "The Blair Witch Project"
+   },
+   {
+    "ru": "«Шестое чувство»",
+    "en": "The Sixth Sense"
+   },
+   {
+    "ru": "«Сонная Лощина»",
+    "en": "Sleepy Hollow"
+   },
+   {
+    "ru": "«Призрак дома на холме»",
+    "en": "The Haunting"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Расклеивали листовки о пропаже, а фильм, снятый за десятки тысяч долларов, собрал почти 250 миллионов.",
+   "en": "There were missing-person posters, and the film, shot for tens of thousands of dollars, took nearly $250 million."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Blair_Witch_Project",
+  "kids": false
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Титаник» (1997) стал самым дорогим фильмом своего времени. Каким был его бюджет?",
+   "en": "Titanic (1997) was the most expensive film of its time. What was its budget?"
+  },
+  "answer": 200,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 60,
+  "unit": {
+   "ru": "млн $",
+   "en": "million $"
+  },
+  "fact": {
+   "ru": "Съёмки так затянулись, что Кэмерон отказался от гонорара режиссёра, а фильм собрал в первом прокате больше 1,8 млрд долларов.",
+   "en": "The shoot overran so badly that Cameron gave up his director's fee; the film then took over $1.8 billion on first release."
+  },
+  "source": "https://en.wikipedia.org/wiki/Titanic_(1997_film)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько попыток клонирования понадобилось, чтобы родилась овечка Долли?",
+   "en": "How many cloning attempts did it take to produce Dolly the sheep?"
+  },
+  "answer": 277,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 60,
+  "unit": {
+   "ru": "попыток",
+   "en": "attempts"
+  },
+  "fact": {
+   "ru": "Долли родилась в Шотландии в 1996 году из клетки шестилетней овцы — и одна из всех попыток дожила до взрослого возраста.",
+   "en": "Dolly was born in Scotland in 1996 from a six-year-old ewe's cell, the only one of all the attempts to reach adulthood."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dolly_(sheep)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какой длины тоннель под Ла-Маншем, открытый в 1994 году?",
+   "en": "How long is the Channel Tunnel, opened in 1994?"
+  },
+  "answer": 50,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Почти 38 км из них проходят под морским дном — это самый длинный подводный участок среди тоннелей мира.",
+   "en": "Almost 38 km of it runs under the seabed, the longest undersea stretch of any tunnel in the world."
+  },
+  "source": "https://en.wikipedia.org/wiki/Channel_Tunnel"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько посетителей обслужил первый московский «Макдоналдс» в день открытия, 31 января 1990-го?",
+   "en": "How many customers did Moscow's first McDonald's serve on its opening day, 31 January 1990?"
+  },
+  "answer": 30000,
+  "range": [
+   0,
+   100000
+  ],
+  "step": 1000,
+  "tolerance": 9000,
+  "unit": {
+   "ru": "человек",
+   "en": "people"
+  },
+  "fact": {
+   "ru": "Ресторан на 900 мест стал крупнейшим «Макдоналдсом» в мире, а очередь к нему растянулась на километры.",
+   "en": "With 900 seats it was the biggest McDonald's in the world, and the queue stretched for kilometres."
+  },
+  "source": "https://www.kommersant.ru/doc/5369073"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Комету Хейла — Боппа в 1996–1997 годах видели невооружённым глазом рекордно долго. Сколько месяцев?",
+   "en": "In 1996-97 Comet Hale-Bopp stayed visible to the naked eye for a record time. How many months?"
+  },
+  "answer": 18,
+  "range": [
+   0,
+   120
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "месяцев",
+   "en": "months"
+  },
+  "fact": {
+   "ru": "Её ядро было огромным, поэтому она светила так долго; открыли её в 1995 году, а вернётся она лишь около 4385 года.",
+   "en": "Its huge nucleus kept it bright for so long; it was found in 1995 and will not be back until around the year 4385."
+  },
+  "source": "https://en.wikipedia.org/wiki/Comet_Hale%E2%80%93Bopp"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1997 году серия «Покемона» с яркими вспышками вызвала у японцев приступы. Скольких увезли в больницу?",
+   "en": "In 1997 a Pokémon episode with flashing lights caused fits in Japan. How many went to hospital?"
+  },
+  "answer": 685,
+  "range": [
+   0,
+   3000
+  ],
+  "step": 5,
+  "tolerance": 200,
+  "unit": {
+   "ru": "человек",
+   "en": "people"
+  },
+  "fact": {
+   "ru": "Виной были частые красно-синие вспышки; после этого «Покемона» почти на четыре месяца сняли с эфира.",
+   "en": "Rapid red and blue flashes were to blame; Pokémon was taken off the air for nearly four months afterwards."
+  },
+  "source": "https://en.wikipedia.org/wiki/Denn%C5%8D_Senshi_Porygon"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До дефолта 17 августа 1998 года доллар стоил около 6,3 рубля. А каким был официальный курс 1 января 1999-го?",
+   "en": "Before Russia's default on 17 August 1998 a dollar cost about 6.3 roubles. What was the official rate on 1 January 1999?"
+  },
+  "answer": 20.65,
+  "range": [
+   0,
+   60
+  ],
+  "step": 0.05,
+  "tolerance": 4,
+  "unit": {
+   "ru": "руб.",
+   "en": "roubles"
+  },
+  "fact": {
+   "ru": "За четыре с половиной месяца рубль подешевел больше чем втрое, и многие банки вместе со сбережениями не пережили кризиса.",
+   "en": "In four and a half months the rouble lost over two thirds of its value, and many banks and savings went with it."
+  },
+  "source": "https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.01.1999"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В скольких странах дебютный сингл Spice Girls «Wannabe» возглавил хит-парады к концу 1997 года?",
+   "en": "In how many countries had the Spice Girls' debut single Wannabe topped the charts by the end of 1997?"
+  },
+  "answer": 37,
+  "range": [
+   0,
+   150
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "стран",
+   "en": "countries"
+  },
+  "fact": {
+   "ru": "Песню сочинили всего за полчаса, а записали меньше чем за час.",
+   "en": "The song was written in just 30 minutes and recorded in under an hour."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wannabe_(song)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Windows 95 продавали и на дискетах. Сколько их лежало в розничной коробке?",
+   "en": "Windows 95 was also sold on floppy disks. How many came in the retail box?"
+  },
+  "answer": 13,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "дискет",
+   "en": "disks"
+  },
+  "fact": {
+   "ru": "Их размечали в особом формате DMF на 1,68 МБ вместо обычных 1,44, иначе дискет понадобилось бы ещё больше.",
+   "en": "They used a special DMF format holding 1.68 MB instead of the usual 1.44, or even more disks would have been needed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Windows_95"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько сайтов было во всём мире в июне 1993 года?",
+   "en": "How many websites existed in the whole world in June 1993?"
+  },
+  "answer": 130,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 60,
+  "unit": {
+   "ru": "сайтов",
+   "en": "websites"
+  },
+  "fact": {
+   "ru": "Веб тогда рос в разы каждые полгода: к концу 1994-го сайтов было уже около 10 тысяч.",
+   "en": "The web was multiplying every six months: by the end of 1994 there were already about 10,000 sites."
+  },
+  "source": "https://stuff.mit.edu/~mkgray/net/web-growth-summary.html"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какой юбилей Москва пышно отмечала в 1997 году?",
+   "en": "Which anniversary did Moscow celebrate in grand style in 1997?"
+  },
+  "answer": 850,
+  "range": [
+   100,
+   1500
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Отсчёт ведут от 1147 года, когда Юрий Долгорукий позвал союзника: «Приди ко мне, брате, в Москов» — первое упоминание города.",
+   "en": "The count starts in 1147, when Yuri Dolgoruky wrote to an ally, 'Come to me, brother, in Moscow': the city's first mention."
+  },
+  "source": "https://ru.wikipedia.org/wiki/История_Москвы"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько весила раскладушка Motorola StarTAC (1996), мечта модников 90-х?",
+   "en": "How much did the Motorola StarTAC flip phone (1996), the 90s style icon, weigh?"
+  },
+  "answer": 88,
+  "range": [
+   0,
+   600
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "г",
+   "en": "g"
+  },
+  "fact": {
+   "ru": "Его раскладной корпус напоминал коммуникатор из «Звёздного пути», а всего таких телефонов продали около 60 миллионов.",
+   "en": "Its flip design echoed the Star Trek communicator, and about 60 million of them were sold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Motorola_StarTAC"
+ }
+]

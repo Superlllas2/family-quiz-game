@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где быстрее растает кубик льда: на металлическом подносе или на деревянной доске?",
+   "en": "Where does an ice cube melt faster: on a metal tray or on a wooden board?"
+  },
+  "options": [
+   {
+    "ru": "На металле",
+    "en": "On the metal"
+   },
+   {
+    "ru": "На дереве",
+    "en": "On the wood"
+   },
+   {
+    "ru": "Одинаково",
+    "en": "Just the same"
+   },
+   {
+    "ru": "Лёд в комнате не тает",
+    "en": "Ice does not melt indoors"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Металл на ощупь холоднее как раз потому, что быстро проводит тепло: он отдаёт его льду, а из руки — забирает.",
+   "en": "Metal feels colder because it moves heat fast: it pulls heat from your hand and feeds it to the ice."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thermal_conductivity"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему лёд не тонет в воде?",
+   "en": "Why does ice float on water?"
+  },
+  "options": [
+   {
+    "ru": "Он легче воды того же объёма",
+    "en": "It is less dense than water"
+   },
+   {
+    "ru": "Его держит холод",
+    "en": "The cold holds it up"
+   },
+   {
+    "ru": "Его держит поверхность воды",
+    "en": "The water's skin holds it up"
+   },
+   {
+    "ru": "Он тонет, просто медленно",
+    "en": "It sinks, just slowly"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Замерзая, вода расширяется почти на десятую часть. Поэтому водоёмы замерзают сверху, и рыбы зимуют подо льдом.",
+   "en": "Water grows by almost a tenth as it freezes, so ponds freeze from the top and fish spend the winter under the ice."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ice"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему небо днём голубое?",
+   "en": "Why is the sky blue during the day?"
+  },
+  "options": [
+   {
+    "ru": "Воздух сильнее рассеивает синий свет",
+    "en": "Air scatters blue light the most"
+   },
+   {
+    "ru": "В нём отражается океан",
+    "en": "It reflects the ocean"
+   },
+   {
+    "ru": "Озоновый слой синего цвета",
+    "en": "The ozone layer is blue"
+   },
+   {
+    "ru": "Солнце светит голубым",
+    "en": "The Sun shines blue"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Синие лучи рассеиваются в разы сильнее красных. На закате свет идёт сквозь толщу воздуха, синий теряется, и небо краснеет.",
+   "en": "Blue light scatters several times more than red. At sunset light crosses more air, the blue is lost, and the sky turns red."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rayleigh_scattering"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как микроволновка греет еду?",
+   "en": "How does a microwave oven heat food?"
+  },
+  "options": [
+   {
+    "ru": "Раскачивает молекулы воды",
+    "en": "It makes water molecules jiggle"
+   },
+   {
+    "ru": "Скрытой спиралью",
+    "en": "With a hidden heating coil"
+   },
+   {
+    "ru": "Сначала греет тарелку",
+    "en": "It heats the plate first"
+   },
+   {
+    "ru": "Ультрафиолетовой лампой",
+    "en": "With an ultraviolet lamp"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её придумали случайно: в 1945 году у инженера Перси Спенсера возле работающего радара растаял батончик в кармане.",
+   "en": "It was found by accident: in 1945 engineer Percy Spencer noticed a working radar set had melted the candy bar in his pocket."
+  },
+  "source": "https://en.wikipedia.org/wiki/Microwave_oven"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Астронавт на Луне уронил молоток и перо одновременно. Что упало первым?",
+   "en": "An astronaut on the Moon dropped a hammer and a feather at once. Which landed first?"
+  },
+  "options": [
+   {
+    "ru": "Упали одновременно",
+    "en": "They landed together"
+   },
+   {
+    "ru": "Молоток",
+    "en": "The hammer"
+   },
+   {
+    "ru": "Перо",
+    "en": "The feather"
+   },
+   {
+    "ru": "Перо улетело вверх",
+    "en": "The feather floated up"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это сделал Дэвид Скотт в 1971 году на «Аполлоне-15»: без воздуха всё падает с одной скоростью, как и считал Галилей.",
+   "en": "David Scott did it on Apollo 15 in 1971: with no air, everything falls at the same rate, just as Galileo said."
+  },
+  "source": "https://en.wikipedia.org/wiki/Apollo_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Зачем зимой посыпают дороги солью?",
+   "en": "Why do people put salt on icy roads in winter?"
+  },
+  "options": [
+   {
+    "ru": "Солёная вода замерзает хуже",
+    "en": "Salty water freezes less easily"
+   },
+   {
+    "ru": "Соль греет асфальт",
+    "en": "Salt warms the asphalt"
+   },
+   {
+    "ru": "Соль тяжелее и продавливает лёд",
+    "en": "Salt is heavy and breaks the ice"
+   },
+   {
+    "ru": "Чтобы шины не скрипели",
+    "en": "So that tyres do not squeak"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Лёд с солью превращается в рассол. Но обычная соль работает лишь примерно до −10 °C, в сильный мороз она бессильна.",
+   "en": "Salt turns ice into brine, but ordinary rock salt only works down to about −10 °C; in a hard frost it is useless."
+  },
+  "source": "https://en.wikipedia.org/wiki/Road_salt"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "К чему прилипнет магнит с холодильника?",
+   "en": "What will a fridge magnet stick to?"
+  },
+  "options": [
+   {
+    "ru": "К стальной скрепке",
+    "en": "A steel paperclip"
+   },
+   {
+    "ru": "К алюминиевой банке",
+    "en": "An aluminium can"
+   },
+   {
+    "ru": "К медной монете без примесей",
+    "en": "A pure copper coin"
+   },
+   {
+    "ru": "К золотому кольцу",
+    "en": "A gold ring"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Алюминий не магнитится, но на переработке его всё равно сортируют магнитами: быстро меняющееся поле буквально отталкивает банки.",
+   "en": "Aluminium is not magnetic, yet recycling plants sort it with magnets: a fast changing field literally pushes the cans away."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eddy_current"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой газ даёт пузырьки в газировке?",
+   "en": "Which gas makes the bubbles in fizzy drinks?"
+  },
+  "options": [
+   {
+    "ru": "Углекислый газ",
+    "en": "Carbon dioxide"
+   },
+   {
+    "ru": "Кислород",
+    "en": "Oxygen"
+   },
+   {
+    "ru": "Водород",
+    "en": "Hydrogen"
+   },
+   {
+    "ru": "Гелий",
+    "en": "Helium"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Газ закачан под давлением. Открыли бутылку — давление упало, и он выходит пузырьками. Тёплая вода держит его хуже.",
+   "en": "The gas is forced in under pressure. Open the bottle, the pressure drops and it fizzes out; warm drinks hold less of it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Carbonated_water"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Грифель обычного карандаша по химическому составу — родственник чего?",
+   "en": "Chemically, the core of an ordinary pencil is a close relative of what?"
+  },
+  "options": [
+   {
+    "ru": "Алмаза",
+    "en": "Diamond"
+   },
+   {
+    "ru": "Свинца",
+    "en": "Lead"
+   },
+   {
+    "ru": "Олова",
+    "en": "Tin"
+   },
+   {
+    "ru": "Серебра",
+    "en": "Silver"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Графит и алмаз — это чистый углерод, только атомы уложены по-разному. Свинца в грифеле не было никогда.",
+   "en": "Graphite and diamond are both pure carbon with the atoms stacked differently. Pencil 'lead' never contained any lead."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pencil"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какого химического элемента во Вселенной больше всего?",
+   "en": "Which chemical element is the most common in the universe?"
+  },
+  "options": [
+   {
+    "ru": "Водород",
+    "en": "Hydrogen"
+   },
+   {
+    "ru": "Кислород",
+    "en": "Oxygen"
+   },
+   {
+    "ru": "Углерод",
+    "en": "Carbon"
+   },
+   {
+    "ru": "Железо",
+    "en": "Iron"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Примерно девять атомов из десяти во Вселенной — водород. Из него звёзды и выплавляют более тяжёлые элементы.",
+   "en": "About nine atoms in ten in the universe are hydrogen, and stars forge heavier elements out of it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Abundance_of_the_chemical_elements"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему в самолёте при взлёте и посадке закладывает уши?",
+   "en": "Why do your ears pop when a plane takes off or lands?"
+  },
+  "options": [
+   {
+    "ru": "Меняется давление воздуха",
+    "en": "The air pressure changes"
+   },
+   {
+    "ru": "Гудят двигатели",
+    "en": "The engines are loud"
+   },
+   {
+    "ru": "Резко холодает",
+    "en": "It suddenly gets cold"
+   },
+   {
+    "ru": "Самолёт вибрирует",
+    "en": "The plane vibrates"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Давление за барабанной перепонкой не успевает за давлением в салоне. Глоток или зевок открывает слуховую трубу и выравнивает его.",
+   "en": "The air behind the eardrum lags behind the cabin pressure; swallowing or yawning opens a tube and evens it out."
+  },
+  "source": "https://en.wikipedia.org/wiki/Middle_ear_equalization"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему шарик, потёртый о волосы, прилипает к стене?",
+   "en": "Why does a balloon rubbed on your hair stick to the wall?"
+  },
+  "options": [
+   {
+    "ru": "Статическое электричество",
+    "en": "Static electricity"
+   },
+   {
+    "ru": "Магнетизм резины",
+    "en": "Rubber is magnetic"
+   },
+   {
+    "ru": "Кожный жир работает как клей",
+    "en": "Skin oil acts as glue"
+   },
+   {
+    "ru": "Шарик нагревается и липнет",
+    "en": "It warms up and gets sticky"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "При трении шарик забирает у волос электроны и заряжается, а заряд притягивает его даже к незаряженной стене.",
+   "en": "Rubbing makes the balloon take electrons from your hair; the charge then pulls it even to an uncharged wall."
+  },
+  "source": "https://en.wikipedia.org/wiki/Static_electricity"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что станет с надутым шариком, если положить его в морозилку?",
+   "en": "What happens to a blown up balloon in the freezer?"
+  },
+  "options": [
+   {
+    "ru": "Он сожмётся",
+    "en": "It shrinks"
+   },
+   {
+    "ru": "Он лопнет",
+    "en": "It pops"
+   },
+   {
+    "ru": "Он надуется сильнее",
+    "en": "It grows bigger"
+   },
+   {
+    "ru": "Ничего",
+    "en": "Nothing at all"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Холодный газ занимает меньше места. Достаньте шарик — в тепле он снова расправится.",
+   "en": "Cold gas takes up less room. Take the balloon out and it fills out again in the warm."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles%27s_law"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Зачем на мостах оставляют зазоры с металлическими «гребёнками»?",
+   "en": "Why do bridges have gaps with metal 'combs' in the road?"
+  },
+  "options": [
+   {
+    "ru": "Мост удлиняется от жары",
+    "en": "The bridge grows in the heat"
+   },
+   {
+    "ru": "Чтобы стекала вода",
+    "en": "To let rain drain away"
+   },
+   {
+    "ru": "Чтобы будить водителей",
+    "en": "To keep drivers awake"
+   },
+   {
+    "ru": "Так дешевле строить",
+    "en": "It is cheaper to build"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Нагреваясь, металл и бетон расширяются. Без деформационных швов большой мост летом выгнуло бы и порвало.",
+   "en": "Steel and concrete expand when warm; without expansion joints a long bridge would buckle and crack in summer."
+  },
+  "source": "https://en.wikipedia.org/wiki/Expansion_joint"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Ньютон пропустил солнечный луч через стеклянную призму. Что он увидел?",
+   "en": "Newton shone sunlight through a glass prism. What did he see?"
+  },
+  "options": [
+   {
+    "ru": "Радугу из цветов",
+    "en": "A rainbow of colours"
+   },
+   {
+    "ru": "Луч погас",
+    "en": "The beam went out"
+   },
+   {
+    "ru": "Луч стал ярче",
+    "en": "The beam got brighter"
+   },
+   {
+    "ru": "Луч стал чисто синим",
+    "en": "The beam turned pure blue"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Линзой и второй призмой Ньютон снова собрал цвета в белый луч и доказал: белый свет — это смесь всех цветов.",
+   "en": "With a lens and a second prism Newton merged the colours back into white, proving white light is a mix of all colours."
+  },
+  "source": "https://en.wikipedia.org/wiki/Isaac_Newton"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой металл лучше всех проводит электричество?",
+   "en": "Which metal conducts electricity best?"
+  },
+  "options": [
+   {
+    "ru": "Медь",
+    "en": "Copper"
+   },
+   {
+    "ru": "Золото",
+    "en": "Gold"
+   },
+   {
+    "ru": "Серебро",
+    "en": "Silver"
+   },
+   {
+    "ru": "Алюминий",
+    "en": "Aluminium"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Провода делают из меди только потому, что серебро гораздо дороже, а разница в проводимости всего несколько процентов.",
+   "en": "Wires are copper only because silver costs far more, while it conducts just a few percent better."
+  },
+  "source": "https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой металл жидкий при комнатной температуре?",
+   "en": "Which metal is liquid at room temperature?"
+  },
+  "options": [
+   {
+    "ru": "Олово",
+    "en": "Tin"
+   },
+   {
+    "ru": "Ртуть",
+    "en": "Mercury"
+   },
+   {
+    "ru": "Алюминий",
+    "en": "Aluminium"
+   },
+   {
+    "ru": "Серебро",
+    "en": "Silver"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Ртуть замерзает лишь при −39 °C. А металл галлий плавится около 30 °C — прямо в ладони.",
+   "en": "Mercury only freezes at −39 °C, and the metal gallium melts at about 30 °C, right in your palm."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mercury_(element)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Между вспышкой молнии и громом прошло 3 секунды. Как далеко гроза?",
+   "en": "Three seconds pass between a lightning flash and the thunder. How far away is the storm?"
+  },
+  "options": [
+   {
+    "ru": "Около 1 км",
+    "en": "About 1 km"
+   },
+   {
+    "ru": "Около 3 км",
+    "en": "About 3 km"
+   },
+   {
+    "ru": "Около 100 м",
+    "en": "About 100 m"
+   },
+   {
+    "ru": "Около 10 км",
+    "en": "About 10 km"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Свет долетает почти мгновенно, а звук проходит около 340 м в секунду. Так что каждые 3 секунды — это примерно километр.",
+   "en": "The light arrives almost at once, but sound covers only about 340 m a second, so every 3 seconds is roughly a kilometre."
+  },
+  "source": "https://en.wikipedia.org/wiki/Speed_of_sound"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где должно быть солнце, чтобы вы увидели радугу?",
+   "en": "Where must the sun be for you to see a rainbow?"
+  },
+  "options": [
+   {
+    "ru": "За спиной",
+    "en": "Behind you"
+   },
+   {
+    "ru": "Прямо перед вами",
+    "en": "Right in front of you"
+   },
+   {
+    "ru": "Точно над головой",
+    "en": "Straight overhead"
+   },
+   {
+    "ru": "Где угодно",
+    "en": "Anywhere at all"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Радуга — это круг вокруг точки напротив солнца. С земли его закрывает горизонт, а из самолёта бывает видно кольцо целиком.",
+   "en": "A rainbow is a circle around the point opposite the sun; the ground hides half, but from a plane you can see the full ring."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rainbow"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какого газа больше всего в воздухе, которым мы дышим?",
+   "en": "Which gas makes up most of the air we breathe?"
+  },
+  "options": [
+   {
+    "ru": "Азот",
+    "en": "Nitrogen"
+   },
+   {
+    "ru": "Кислород",
+    "en": "Oxygen"
+   },
+   {
+    "ru": "Углекислый газ",
+    "en": "Carbon dioxide"
+   },
+   {
+    "ru": "Аргон",
+    "en": "Argon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Азота в воздухе около 78 %, кислорода — лишь 21 %. Азот мы вдыхаем и выдыхаем почти без изменений.",
+   "en": "Air is about 78% nitrogen and only 21% oxygen. We breathe the nitrogen in and out almost untouched."
+  },
+  "source": "https://en.wikipedia.org/wiki/Atmosphere_of_Earth"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Жарко. Вы открыли холодильник в закрытой кухне и ушли. Что будет с кухней?",
+   "en": "On a hot day you leave the fridge open in a closed kitchen. What happens to the kitchen?"
+  },
+  "options": [
+   {
+    "ru": "Станет теплее",
+    "en": "It gets warmer"
+   },
+   {
+    "ru": "Станет прохладнее",
+    "en": "It gets cooler"
+   },
+   {
+    "ru": "Ничего не изменится",
+    "en": "Nothing changes"
+   },
+   {
+    "ru": "Сначала замёрзнет, потом оттает",
+    "en": "It freezes, then thaws"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Холодильник не делает холод, а перекачивает тепло из камеры на решётку сзади. Открытый, он гоняет его по кругу и греет кухню мотором.",
+   "en": "A fridge does not make cold; it pumps heat out the back. Left open it just moves heat in a loop, and its motor adds more."
+  },
+  "source": "https://van.physics.illinois.edu/ask/listing/1790"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что мы на самом деле слышим, прижав к уху морскую раковину?",
+   "en": "What do we really hear when we hold a seashell to the ear?"
+  },
+  "options": [
+   {
+    "ru": "Окружающий шум, усиленный раковиной",
+    "en": "Room noise boosted by the shell"
+   },
+   {
+    "ru": "Песок, пересыпающийся внутри",
+    "en": "Sand shifting inside it"
+   },
+   {
+    "ru": "Запомненный шум моря",
+    "en": "Sea noise stored in the shell"
+   },
+   {
+    "ru": "Ветер внутри раковины",
+    "en": "Wind trapped in the shell"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Полость раковины резонирует с шумом вокруг. В шумной комнате «море» громче, а кружка или ладонь дают тот же эффект.",
+   "en": "The shell's cavity resonates with the noise around you: the sea gets louder in a noisy room, and a cup or cupped hand does the same."
+  },
+  "source": "https://en.wikipedia.org/wiki/Seashell_resonance"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой химический элемент назван в честь России?",
+   "en": "Which chemical element is named after Russia?"
+  },
+  "options": [
+   {
+    "ru": "Рутений",
+    "en": "Ruthenium"
+   },
+   {
+    "ru": "Рений",
+    "en": "Rhenium"
+   },
+   {
+    "ru": "Рубидий",
+    "en": "Rubidium"
+   },
+   {
+    "ru": "Родий",
+    "en": "Rhodium"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его открыл Карл Клаус в Казани в 1844 году и назвал по латинскому имени Руси — Ruthenia. Рений назван в честь Рейна.",
+   "en": "Karl Claus found it in Kazan in 1844 and named it after Ruthenia, the Latin name for Rus. Rhenium is named after the Rhine."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ruthenium"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что было необычного в таблице Менделеева 1869 года?",
+   "en": "What was unusual about Mendeleev's 1869 periodic table?"
+  },
+  "options": [
+   {
+    "ru": "Пустые клетки для неоткрытых элементов",
+    "en": "Empty slots for unknown elements"
+   },
+   {
+    "ru": "Она была круглой",
+    "en": "It was round"
+   },
+   {
+    "ru": "Элементы шли по цвету",
+    "en": "Elements were sorted by colour"
+   },
+   {
+    "ru": "В ней было всего 10 элементов",
+    "en": "It had only 10 elements"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Менделеев описал ещё не найденные элементы, и за 17 лет открыли три из них: галлий, скандий и германий.",
+   "en": "Mendeleev described elements nobody had found yet, and within 17 years gallium, scandium and germanium turned up."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где впервые обнаружили гелий?",
+   "en": "Where was helium first discovered?"
+  },
+  "options": [
+   {
+    "ru": "В свете Солнца",
+    "en": "In the light of the Sun"
+   },
+   {
+    "ru": "В природном газе",
+    "en": "In natural gas"
+   },
+   {
+    "ru": "В вулканическом пепле",
+    "en": "In volcanic ash"
+   },
+   {
+    "ru": "В морской воде",
+    "en": "In sea water"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1868 году в спектре Солнца нашли неизвестную жёлтую линию. Отсюда и имя — от греческого «гелиос», солнце. На Земле гелий нашли лишь в 1895-м.",
+   "en": "In 1868 a strange yellow line showed up in sunlight, hence the name from Greek helios, sun. It was found on Earth only in 1895."
+  },
+  "source": "https://en.wikipedia.org/wiki/Helium"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой формы пламя свечи на космической станции?",
+   "en": "What shape is a candle flame aboard a space station?"
+  },
+  "options": [
+   {
+    "ru": "Шар",
+    "en": "A ball"
+   },
+   {
+    "ru": "Длинная тонкая игла",
+    "en": "A long thin spike"
+   },
+   {
+    "ru": "Обычная капля",
+    "en": "The usual teardrop"
+   },
+   {
+    "ru": "Плоский диск",
+    "en": "A flat disc"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Без тяжести горячий воздух не поднимается и не тянет пламя вверх, поэтому оно горит голубоватым шаром.",
+   "en": "Without gravity, hot air doesn't rise and stretch the flame upward, so it burns as a bluish ball."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flame"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой буквы нет ни в одном символе таблицы Менделеева?",
+   "en": "Which letter appears in no symbol of the periodic table?"
+  },
+  "options": [
+   {
+    "ru": "Буква J",
+    "en": "The letter J"
+   },
+   {
+    "ru": "Буква X",
+    "en": "The letter X"
+   },
+   {
+    "ru": "Буква Z",
+    "en": "The letter Z"
+   },
+   {
+    "ru": "Буква W",
+    "en": "The letter W"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "X есть у ксенона (Xe), Z — у цинка (Zn), а W — символ вольфрама. Кроме J, в таблице сейчас нет и буквы Q.",
+   "en": "X is in xenon (Xe), Z in zinc (Zn), and W is tungsten from its old name wolfram. Besides J, Q is missing too."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chemical_symbol"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сырое яйцо тонет в стакане воды. Что заставит его всплыть?",
+   "en": "A raw egg sinks in a glass of water. What will make it float?"
+  },
+  "options": [
+   {
+    "ru": "Много соли",
+    "en": "Lots of salt"
+   },
+   {
+    "ru": "Подогреть воду",
+    "en": "Warming the water"
+   },
+   {
+    "ru": "Ложка масла",
+    "en": "A spoonful of oil"
+   },
+   {
+    "ru": "Быстро помешать",
+    "en": "Stirring it fast"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Солёная вода плотнее пресной и выталкивает сильнее. Поэтому в Мёртвом море можно лежать на воде, как на матрасе.",
+   "en": "Salty water is denser and pushes up harder, which is why you can lie on the Dead Sea like on a mattress."
+  },
+  "source": "https://en.wikipedia.org/wiki/Buoyancy"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что светится внутри обычной лампы накаливания?",
+   "en": "What glows inside an old incandescent light bulb?"
+  },
+  "options": [
+   {
+    "ru": "Вольфрамовая нить",
+    "en": "A tungsten wire"
+   },
+   {
+    "ru": "Медная проволока",
+    "en": "A copper wire"
+   },
+   {
+    "ru": "Газовое пламя",
+    "en": "A gas flame"
+   },
+   {
+    "ru": "Крошечный светодиод",
+    "en": "A tiny LED"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вольфрам плавится при 3422 °C — выше всех металлов. А в колбе нет кислорода, поэтому раскалённая нить не сгорает.",
+   "en": "Tungsten melts at 3,422 °C, higher than any metal, and the bulb holds no oxygen, so the white hot wire does not burn."
+  },
+  "source": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каким цветом светится трубка, если в ней чистый неон?",
+   "en": "What colour does a tube of pure neon glow?"
+  },
+  "options": [
+   {
+    "ru": "Красно-оранжевым",
+    "en": "Red orange"
+   },
+   {
+    "ru": "Синим",
+    "en": "Blue"
+   },
+   {
+    "ru": "Зелёным",
+    "en": "Green"
+   },
+   {
+    "ru": "Белым",
+    "en": "White"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Каждый газ светится своим цветом. Синие и зелёные «неоновые» вывески на деле с аргоном, ртутью и цветным покрытием трубок.",
+   "en": "Each gas glows its own colour; blue and green 'neon' signs actually use argon, mercury and coated tubes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Neon_sign"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где звук распространяется быстрее всего?",
+   "en": "Where does sound travel fastest?"
+  },
+  "options": [
+   {
+    "ru": "В стали",
+    "en": "In steel"
+   },
+   {
+    "ru": "В воде",
+    "en": "In water"
+   },
+   {
+    "ru": "В воздухе",
+    "en": "In air"
+   },
+   {
+    "ru": "В вакууме",
+    "en": "In a vacuum"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В стали звук бежит около 6 км в секунду, в 17 раз быстрее, чем в воздухе. Поэтому поезд слышно в рельсах раньше, чем по воздуху.",
+   "en": "Sound runs about 6 km a second in steel, 17 times faster than in air, so you hear a train in the rails first."
+  },
+  "source": "https://en.wikipedia.org/wiki/Speed_of_sound"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего состоит «сухой лёд»?",
+   "en": "What is 'dry ice' made of?"
+  },
+  "options": [
+   {
+    "ru": "Замёрзший углекислый газ",
+    "en": "Frozen carbon dioxide"
+   },
+   {
+    "ru": "Замёрзший азот",
+    "en": "Frozen nitrogen"
+   },
+   {
+    "ru": "Высушенный обычный лёд",
+    "en": "Ordinary ice with no water left"
+   },
+   {
+    "ru": "Замёрзший кислород",
+    "en": "Frozen oxygen"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "При −78 °C он сразу превращается в газ, минуя жидкость. Потому и «сухой»: после него не остаётся луж.",
+   "en": "At −78 °C it turns straight into gas, skipping the liquid stage. Hence 'dry': it never leaves a puddle."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dry_ice"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой металл окрашивает салют в зелёный цвет?",
+   "en": "Which metal makes fireworks glow green?"
+  },
+  "options": [
+   {
+    "ru": "Барий",
+    "en": "Barium"
+   },
+   {
+    "ru": "Натрий",
+    "en": "Sodium"
+   },
+   {
+    "ru": "Стронций",
+    "en": "Strontium"
+   },
+   {
+    "ru": "Кальций",
+    "en": "Calcium"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Каждый металл при нагреве светится своим цветом: стронций красным, натрий жёлтым, как старые уличные фонари, медь синим.",
+   "en": "Each metal glows its own colour when hot: strontium red, sodium yellow like old street lamps, copper blue."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fireworks"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем Шрёдингер придумал своего кота?",
+   "en": "Why did Schrödinger come up with his cat?"
+  },
+  "options": [
+   {
+    "ru": "Показать абсурд квантовых правил",
+    "en": "To show quantum rules sound absurd"
+   },
+   {
+    "ru": "Проверить, чуют ли кошки радиацию",
+    "en": "To test if cats sense radiation"
+   },
+   {
+    "ru": "Доказать, что свет — волна",
+    "en": "To prove light is a wave"
+   },
+   {
+    "ru": "Объяснить теорию относительности",
+    "en": "To explain relativity"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1935 году он хотел показать, как нелепо звучит «кот одновременно жив и мёртв». Это мысленный опыт: ни один кот не пострадал.",
+   "en": "In 1935 he wanted to show how silly 'a cat both alive and dead' sounds. It was a thought experiment: no real cat was involved."
+  },
+  "source": "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему горящее масло на сковороде нельзя заливать водой?",
+   "en": "Why must you never pour water on burning oil in a pan?"
+  },
+  "options": [
+   {
+    "ru": "Вода вскипит и раскидает огонь",
+    "en": "It boils and throws out the fire"
+   },
+   {
+    "ru": "Вода сама горит",
+    "en": "Water itself burns"
+   },
+   {
+    "ru": "Вода не потушит, но и не навредит",
+    "en": "It does nothing either way"
+   },
+   {
+    "ru": "Сковорода от этого лопнет",
+    "en": "The pan will shatter"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вода тонет в масле и мгновенно превращается в пар, выбрасывая горящие брызги огненным шаром. Сковороду надо просто накрыть крышкой.",
+   "en": "Water sinks under the oil, flashes into steam and blasts burning drops out as a fireball. Just put a lid on the pan."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fire_classification"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что помогает термосу так долго держать чай горячим?",
+   "en": "What keeps tea hot in a thermos for so long?"
+  },
+  "options": [
+   {
+    "ru": "Вакуум между двумя стенками",
+    "en": "A vacuum between two walls"
+   },
+   {
+    "ru": "Встроенный подогрев",
+    "en": "A built in heater"
+   },
+   {
+    "ru": "Толстый слой пенопласта",
+    "en": "A thick layer of foam"
+   },
+   {
+    "ru": "Чёрная краска внутри",
+    "en": "Black paint inside"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Через пустоту тепло почти не проходит. Сосуд в 1892 году придумал Джеймс Дьюар — для опытов со сверххолодными веществами.",
+   "en": "Heat barely crosses empty space. James Dewar invented the flask in 1892 for his experiments with extreme cold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vacuum_flask"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По законам магнетизма магнитный полюс Земли в Арктике — это…",
+   "en": "In terms of magnet physics, Earth's magnetic pole in the Arctic is…"
+  },
+  "options": [
+   {
+    "ru": "Южный полюс",
+    "en": "A south pole"
+   },
+   {
+    "ru": "Северный полюс",
+    "en": "A north pole"
+   },
+   {
+    "ru": "Вообще не полюс",
+    "en": "Not a pole at all"
+   },
+   {
+    "ru": "То северный, то южный каждый день",
+    "en": "North one day, south the next"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Северный конец стрелки компаса тянется к противоположному полюсу. Значит, «северный» магнитный полюс Земли — на деле южный.",
+   "en": "A compass needle's north end is drawn to an opposite pole, so Earth's 'north' magnetic pole is really a south pole."
+  },
+  "source": "https://en.wikipedia.org/wiki/North_magnetic_pole"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "При какой температуре вода самая плотная?",
+   "en": "At what temperature is water at its densest?"
+  },
+  "options": [
+   {
+    "ru": "+4 °C",
+    "en": "+4 °C"
+   },
+   {
+    "ru": "0 °C",
+    "en": "0 °C"
+   },
+   {
+    "ru": "−4 °C",
+    "en": "−4 °C"
+   },
+   {
+    "ru": "+100 °C",
+    "en": "+100 °C"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вода в +4 °C опускается на дно, поэтому зимой у дна глубокого озера держится плюс, даже когда сверху лёд.",
+   "en": "Water at +4 °C sinks to the bottom, so in winter the bed of a deep lake stays above freezing under the ice."
+  },
+  "source": "https://en.wikipedia.org/wiki/Properties_of_water"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько километров пролетает свет за одну секунду?",
+   "en": "How many kilometres does light travel in one second?"
+  },
+  "answer": 300000,
+  "range": [
+   0,
+   1000000
+  ],
+  "step": 5000,
+  "tolerance": 60000,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Почти 300 000 км: за секунду свет облетел бы Землю семь с половиной раз, а до Луны долетает чуть больше чем за секунду.",
+   "en": "Nearly 300,000 km: in a second light could circle the Earth seven and a half times, and it reaches the Moon in just over one."
+  },
+  "source": "https://en.wikipedia.org/wiki/Speed_of_light"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "При какой температуре закипает вода на вершине Эвереста?",
+   "en": "At what temperature does water boil on top of Everest?"
+  },
+  "answer": 70,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "Давление там втрое ниже, поэтому вода кипит около 70 °C. Чай не заваривается, а макароны варятся вечность.",
+   "en": "The air pressure is a third of normal, so water boils at about 70 °C: tea won't brew and pasta takes forever."
+  },
+  "source": "https://en.wikipedia.org/wiki/Boiling_point"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До скольких градусов нагревается вода в работающей скороварке?",
+   "en": "How hot does the water get inside a working pressure cooker?"
+  },
+  "answer": 120,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "Под крышкой давление вдвое выше обычного, и вода кипит лишь около 120 °C. Поэтому мясо готовится в разы быстрее.",
+   "en": "Under the lid the pressure is about double, so water only boils near 120 °C, which cooks meat much faster."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pressure_cooking"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько химических элементов было в таблице Менделеева на 2025 год?",
+   "en": "How many chemical elements were in the periodic table as of 2025?"
+  },
+  "answer": 118,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "",
+   "en": ""
+  },
+  "fact": {
+   "ru": "Последние четыре получили имена в 2016 году, среди них московий — в честь Подмосковья, где находится Дубна.",
+   "en": "The last four were named in 2016, among them moscovium, after the Moscow region, home of the Dubna lab."
+  },
+  "source": "https://en.wikipedia.org/wiki/Moscovium"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Абсолютный ноль — самая низкая возможная температура. Сколько это по Цельсию?",
+   "en": "Absolute zero is the lowest possible temperature. What is it in degrees Celsius?"
+  },
+  "answer": -273,
+  "range": [
+   -1000,
+   0
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "Точнее −273,15 °C: холоднее не бывает, движение атомов почти замирает. С этой точки начинается шкала Кельвина.",
+   "en": "To be exact −273.15 °C: nothing can be colder, atoms all but stop moving. The Kelvin scale starts there."
+  },
+  "source": "https://en.wikipedia.org/wiki/Absolute_zero"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До какой температуры молния раскаляет воздух?",
+   "en": "How hot does lightning make the air?"
+  },
+  "answer": 30000,
+  "range": [
+   0,
+   100000
+  ],
+  "step": 1000,
+  "tolerance": 10000,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "Около 30 000 °C — в пять раз горячее поверхности Солнца. Воздух взрывом расширяется, и этот хлопок мы слышим как гром.",
+   "en": "About 30,000 °C, five times hotter than the Sun's surface. The air expands explosively, and that bang is the thunder."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lightning"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько килограммов весит весь воздух в комнате 4 × 5 м с потолком 2,5 м?",
+   "en": "How many kilograms does all the air in a 4 × 5 m room with a 2.5 m ceiling weigh?"
+  },
+  "answer": 60,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Кубометр воздуха весит около 1,2 кг, а в такой комнате их 50. Выходит вес взрослого человека.",
+   "en": "A cubic metre of air weighs about 1.2 kg, and the room holds 50 of them: as heavy as an adult."
+  },
+  "source": "https://en.wikipedia.org/wiki/Density_of_air"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году Алессандро Вольта представил миру первую электрическую батарею?",
+   "en": "In what year did Alessandro Volta present the first electric battery to the world?"
+  },
+  "answer": 1800,
+  "range": [
+   1450,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "В 1800 году он описал «вольтов столб» — стопку медных и цинковых кружков с солёными тряпочками. В его честь назван вольт.",
+   "en": "In 1800 he described his 'voltaic pile', copper and zinc discs with salty cloth between them. The volt is named after him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Voltaic_pile"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На какой глубине давление воды становится вдвое больше, чем на поверхности?",
+   "en": "At what depth is the water pressure twice what it is at the surface?"
+  },
+  "answer": 10,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Всего 10 метров воды давят так же, как весь воздух над нами. Поэтому уже на дне глубокого бассейна болят уши.",
+   "en": "Just 10 m of water presses as hard as the whole atmosphere above us, which is why your ears hurt at the bottom of a deep pool."
+  },
+  "source": "https://en.wikipedia.org/wiki/Atmosphere_(unit)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько килограммов весит литровая банка ртути?",
+   "en": "How many kilograms does a litre jar of mercury weigh?"
+  },
+  "answer": 13.5,
+  "range": [
+   0,
+   50
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Ртуть в 13,5 раза плотнее воды: на ней плавают железные гири, а ведро на 10 литров весило бы 135 кг.",
+   "en": "Mercury is 13.5 times denser than water: iron weights float on it, and a 10 litre bucketful would weigh 135 kg."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mercury_(element)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Торричелли в 1643 году узнал, что воздух держит столб ртути. Какой высоты, в мм?",
+   "en": "In 1643 Torricelli found that air holds up a column of mercury. How tall, in mm?"
+  },
+  "answer": 760,
+  "range": [
+   0,
+   3000
+  ],
+  "step": 10,
+  "tolerance": 70,
+  "unit": {
+   "ru": "мм",
+   "en": "mm"
+  },
+  "fact": {
+   "ru": "Так появился барометр. Отсюда и «760 миллиметров ртутного столба» в прогнозах погоды — нормальное давление.",
+   "en": "That was the first barometer, and why weather reports give normal pressure as 760 millimetres of mercury."
+  },
+  "source": "https://en.wikipedia.org/wiki/Barometer"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Стальной рельс длиной 1 км нагрели с −30 °C до +30 °C. На сколько сантиметров он удлинится?",
+   "en": "A 1 km steel rail warms from −30 °C to +30 °C. By how many centimetres does it get longer?"
+  },
+  "answer": 72,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "Около 72 см! Поэтому рельсы раньше клали с зазорами — отсюда «тук-тук» поезда, а сварной путь крепят так, чтобы он не мог удлиниться.",
+   "en": "About 72 cm! That is why rails used to have gaps, giving the clickety clack; welded track is clamped down so it cannot grow."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thermal_expansion"
+ }
+]

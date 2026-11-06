@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что запускают по льду в кёрлинге?",
+   "en": "What do players slide down the ice in curling?"
+  },
+  "options": [
+   {
+    "ru": "Шайбу",
+    "en": "A puck"
+   },
+   {
+    "ru": "Камень",
+    "en": "A stone"
+   },
+   {
+    "ru": "Мяч",
+    "en": "A ball"
+   },
+   {
+    "ru": "Метлу",
+    "en": "A broom"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Камень весит почти 20 кг, а щётками трут лёд перед ним, чтобы он скользил дальше и ровнее.",
+   "en": "The stone weighs almost 20 kg; sweeping the ice in front of it makes it slide further and straighter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Curling"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Счёт в теннисном гейме идёт так: 0, 15, 30… А дальше?",
+   "en": "A tennis game is scored 0, 15, 30… What comes next?"
+  },
+  "options": [
+   {
+    "ru": "40",
+    "en": "40"
+   },
+   {
+    "ru": "45",
+    "en": "45"
+   },
+   {
+    "ru": "50",
+    "en": "50"
+   },
+   {
+    "ru": "60",
+    "en": "60"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По одной из версий, очки отмечали стрелкой на циферблате, а 45 сократили до 40 для удобства.",
+   "en": "One theory says points were marked on a clock face, and 45 was shortened to 40 to make it easier to say."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tennis_scoring_system"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько хоккеистов одной команды на льду при полных составах, вместе с вратарём?",
+   "en": "At full strength, how many players does a hockey team have on the ice, goalie included?"
+  },
+  "options": [
+   {
+    "ru": "5",
+    "en": "5"
+   },
+   {
+    "ru": "6",
+    "en": "6"
+   },
+   {
+    "ru": "7",
+    "en": "7"
+   },
+   {
+    "ru": "11",
+    "en": "11"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Пятеро полевых и вратарь; в концовке вратаря часто меняют на шестого полевого, чтобы отыграться.",
+   "en": "Five skaters and a goalie; late in a game teams often swap the goalie for a sixth skater to chase a goal."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ice_hockey"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько очков приносит в баскетболе бросок из-за дуги?",
+   "en": "In basketball, how many points is a shot from beyond the arc worth?"
+  },
+  "options": [
+   {
+    "ru": "1",
+    "en": "1"
+   },
+   {
+    "ru": "2",
+    "en": "2"
+   },
+   {
+    "ru": "3",
+    "en": "3"
+   },
+   {
+    "ru": "5",
+    "en": "5"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "НБА ввела трёхочковую линию только в 1979 году, и то поначалу на один сезон, как эксперимент.",
+   "en": "The NBA only adopted the three-point line in 1979, and at first just as a one-season trial."
+  },
+  "source": "https://en.wikipedia.org/wiki/Three-point_field_goal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что значит клетчатый чёрно-белый флаг в автогонках?",
+   "en": "What does the black and white chequered flag mean in motor racing?"
+  },
+  "options": [
+   {
+    "ru": "Гонка окончена",
+    "en": "The race is over"
+   },
+   {
+    "ru": "Начался дождь",
+    "en": "It has started raining"
+   },
+   {
+    "ru": "Авария впереди",
+    "en": "A crash ahead"
+   },
+   {
+    "ru": "Пора в боксы",
+    "en": "Time to pit"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Флагом машут сначала победителю, а потом каждому, кто пересекает линию, пока финишируют все.",
+   "en": "It is waved first at the winner and then at every car that crosses the line after."
+  },
+  "source": "https://en.wikipedia.org/wiki/Racing_flags"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько длится раунд в профессиональном боксе у мужчин?",
+   "en": "How long is a round in men's professional boxing?"
+  },
+  "options": [
+   {
+    "ru": "1 минуту",
+    "en": "1 minute"
+   },
+   {
+    "ru": "2 минуты",
+    "en": "2 minutes"
+   },
+   {
+    "ru": "3 минуты",
+    "en": "3 minutes"
+   },
+   {
+    "ru": "5 минут",
+    "en": "5 minutes"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Три минуты боя и минуту отдыха закрепили правила маркиза Куинсберри ещё в 1867 году.",
+   "en": "Three minutes of fighting and one of rest were set by the Marquess of Queensberry rules back in 1867."
+  },
+  "source": "https://en.wikipedia.org/wiki/Marquess_of_Queensberry_Rules"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько лунок на стандартном поле для гольфа?",
+   "en": "How many holes are on a standard golf course?"
+  },
+  "options": [
+   {
+    "ru": "9",
+    "en": "9"
+   },
+   {
+    "ru": "12",
+    "en": "12"
+   },
+   {
+    "ru": "18",
+    "en": "18"
+   },
+   {
+    "ru": "24",
+    "en": "24"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "В Сент-Эндрюсе было 22 лунки, но в 1764 году короткие объединили, и 18 стали нормой для всего мира.",
+   "en": "St Andrews had 22 holes until 1764, when the short ones were merged; 18 became the norm everywhere."
+  },
+  "source": "https://en.wikipedia.org/wiki/Old_Course_at_St_Andrews"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как в теннисе называют подачу, до которой соперник даже не дотронулся?",
+   "en": "In tennis, what do you call a serve the opponent cannot even touch?"
+  },
+  "options": [
+   {
+    "ru": "Эйс",
+    "en": "An ace"
+   },
+   {
+    "ru": "Смэш",
+    "en": "A smash"
+   },
+   {
+    "ru": "Лет",
+    "en": "A let"
+   },
+   {
+    "ru": "Свеча",
+    "en": "A lob"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эйсы почти всегда бывают с первой подачи: на вторую игроки бьют осторожнее, чтобы не сделать двойную.",
+   "en": "Aces nearly always come on the first serve: the second is hit more safely to avoid a double fault."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ace_(tennis)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего делают хоккейную шайбу?",
+   "en": "What is an ice hockey puck made of?"
+  },
+  "options": [
+   {
+    "ru": "Из резины",
+    "en": "Rubber"
+   },
+   {
+    "ru": "Из дерева",
+    "en": "Wood"
+   },
+   {
+    "ru": "Из пластика",
+    "en": "Plastic"
+   },
+   {
+    "ru": "Из металла",
+    "en": "Metal"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Перед матчем шайбы держат в морозилке: холодная резина меньше прыгает по льду.",
+   "en": "Pucks are kept in a freezer before a game: cold rubber bounces less on the ice."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hockey_puck"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сумо — национальный спорт какой страны?",
+   "en": "Sumo is the national sport of which country?"
+  },
+  "options": [
+   {
+    "ru": "Китая",
+    "en": "China"
+   },
+   {
+    "ru": "Кореи",
+    "en": "Korea"
+   },
+   {
+    "ru": "Японии",
+    "en": "Japan"
+   },
+   {
+    "ru": "Монголии",
+    "en": "Mongolia"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Перед схваткой борцы бросают на помост соль: этот обряд очищает место боя.",
+   "en": "Before a bout the wrestlers throw salt onto the ring: the ritual purifies it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sumo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Порхай как бабочка, жаль как…» — как заканчивается фраза Мохаммеда Али?",
+   "en": "\"Float like a butterfly, sting like a…\" How does Muhammad Ali's line end?"
+  },
+  "options": [
+   {
+    "ru": "Пчела",
+    "en": "A bee"
+   },
+   {
+    "ru": "Оса",
+    "en": "A wasp"
+   },
+   {
+    "ru": "Скорпион",
+    "en": "A scorpion"
+   },
+   {
+    "ru": "Змея",
+    "en": "A snake"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Строчку сочинил его помощник Дрю Бандини Браун, и Али дразнил ею Сонни Листона перед боем 1964 года.",
+   "en": "His aide Drew Bundini Brown wrote the line, and Ali used it to taunt Sonny Liston before their 1964 fight."
+  },
+  "source": "https://en.wikipedia.org/wiki/Drew_Bundini_Brown"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из какой страны семикратный чемпион Формулы-1 Михаэль Шумахер?",
+   "en": "Which country is seven time Formula One champion Michael Schumacher from?"
+  },
+  "options": [
+   {
+    "ru": "Из Австрии",
+    "en": "Austria"
+   },
+   {
+    "ru": "Из Германии",
+    "en": "Germany"
+   },
+   {
+    "ru": "Из Швейцарии",
+    "en": "Switzerland"
+   },
+   {
+    "ru": "Из Нидерландов",
+    "en": "The Netherlands"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Пять из семи титулов он выиграл с Ferrari подряд, с 2000 по 2004 год.",
+   "en": "Five of his seven titles came in a row with Ferrari, from 2000 to 2004."
+  },
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько касаний мяча может сделать команда в волейболе, прежде чем перебить его?",
+   "en": "How many touches may a volleyball team make before sending the ball over?"
+  },
+  "options": [
+   {
+    "ru": "Два",
+    "en": "Two"
+   },
+   {
+    "ru": "Три",
+    "en": "Three"
+   },
+   {
+    "ru": "Четыре",
+    "en": "Four"
+   },
+   {
+    "ru": "Сколько угодно",
+    "en": "As many as it likes"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В классическом волейболе касание на блоке не считается, так что после блока у команды снова три касания.",
+   "en": "In indoor volleyball a touch at the block does not count, so after blocking a team still has three touches."
+  },
+  "source": "https://en.wikipedia.org/wiki/Volleyball"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой этап Формулы-1 проходит прямо по улицам крошечного княжества?",
+   "en": "Which Formula One race runs through the streets of a tiny principality?"
+  },
+  "options": [
+   {
+    "ru": "Монако",
+    "en": "Monaco"
+   },
+   {
+    "ru": "Монца",
+    "en": "Monza"
+   },
+   {
+    "ru": "Сильверстоун",
+    "en": "Silverstone"
+   },
+   {
+    "ru": "Сузука",
+    "en": "Suzuka"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Нельсон Пике сравнил гонку в Монако с ездой на велосипеде по гостиной: улицы так узки, что обгонять почти негде.",
+   "en": "Nelson Piquet likened racing at Monaco to riding a bicycle round your living room: there is barely room to pass."
+  },
+  "source": "https://en.wikipedia.org/wiki/Monaco_Grand_Prix"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что традиционно едят зрители Уимблдона?",
+   "en": "What do Wimbledon spectators traditionally eat?"
+  },
+  "options": [
+   {
+    "ru": "Клубнику со сливками",
+    "en": "Strawberries and cream"
+   },
+   {
+    "ru": "Рыбу с картошкой",
+    "en": "Fish and chips"
+   },
+   {
+    "ru": "Хот-доги",
+    "en": "Hot dogs"
+   },
+   {
+    "ru": "Устриц",
+    "en": "Oysters"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 2017 году зрители съели около 34 тонн клубники и полили её 10 000 литрами сливок.",
+   "en": "In 2017 fans ate about 34 tonnes of strawberries with some 10,000 litres of cream."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую игру придумали, прибив к балкону спортзала две корзины из-под персиков?",
+   "en": "Which game was invented by nailing two peach baskets to a gym balcony?"
+  },
+  "options": [
+   {
+    "ru": "Волейбол",
+    "en": "Volleyball"
+   },
+   {
+    "ru": "Баскетбол",
+    "en": "Basketball"
+   },
+   {
+    "ru": "Гандбол",
+    "en": "Handball"
+   },
+   {
+    "ru": "Нетбол",
+    "en": "Netball"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "У корзин было дно, и после каждого попадания мяч доставали лестницей или палкой.",
+   "en": "The baskets still had bottoms, so after every score the ball was fetched with a ladder or a pole."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_basketball"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В каком из этих видов спорта мяч самый маленький?",
+   "en": "Which of these sports has the smallest ball?"
+  },
+  "options": [
+   {
+    "ru": "Гольф",
+    "en": "Golf"
+   },
+   {
+    "ru": "Большой теннис",
+    "en": "Tennis"
+   },
+   {
+    "ru": "Настольный теннис",
+    "en": "Table tennis"
+   },
+   {
+    "ru": "Бейсбол",
+    "en": "Baseball"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Шарик для пинг-понга — 40 мм, а мяч для гольфа почти 43, хотя кажется крошечным.",
+   "en": "A table tennis ball is 40 mm across; a golf ball, small as it looks, is almost 43."
+  },
+  "source": "https://en.wikipedia.org/wiki/Table_tennis"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Майку какого цвета носит лидер «Тур де Франс»?",
+   "en": "What colour jersey does the leader of the Tour de France wear?"
+  },
+  "options": [
+   {
+    "ru": "Зелёную",
+    "en": "Green"
+   },
+   {
+    "ru": "Красную",
+    "en": "Red"
+   },
+   {
+    "ru": "Белую",
+    "en": "White"
+   },
+   {
+    "ru": "Жёлтую",
+    "en": "Yellow"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Скорее всего, в цвет газеты L'Auto, которая придумала гонку: она печаталась на жёлтой бумаге.",
+   "en": "Most likely after L'Auto, the newspaper that created the race, which was printed on yellow paper."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yellow_jersey"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где придумали настольный теннис?",
+   "en": "Where was table tennis invented?"
+  },
+  "options": [
+   {
+    "ru": "В Китае",
+    "en": "China"
+   },
+   {
+    "ru": "В Японии",
+    "en": "Japan"
+   },
+   {
+    "ru": "В Англии",
+    "en": "England"
+   },
+   {
+    "ru": "В Швеции",
+    "en": "Sweden"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Это была салонная забава викторианцев после ужина; по одной из версий, сеткой служил ряд книг, а мячом — мяч для гольфа.",
+   "en": "It began as a Victorian after dinner parlour game; one story has a row of books for a net and a golf ball for a ball."
+  },
+  "source": "https://en.wikipedia.org/wiki/Table_tennis"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько очков можно набрать тремя дротиками в дартсе за один подход максимум?",
+   "en": "What is the most you can score with three darts in one turn?"
+  },
+  "options": [
+   {
+    "ru": "100",
+    "en": "100"
+   },
+   {
+    "ru": "150",
+    "en": "150"
+   },
+   {
+    "ru": "180",
+    "en": "180"
+   },
+   {
+    "ru": "300",
+    "en": "300"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Нужно три раза попасть в узкое кольцо утроения у двадцатки: 60 + 60 + 60, а не в «яблочко».",
+   "en": "You need the treble 20 three times: 60 + 60 + 60, which beats aiming for the bullseye."
+  },
+  "source": "https://en.wikipedia.org/wiki/Darts"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В каком городе прошёл «матч века» Фишер — Спасский в 1972 году?",
+   "en": "Where was the 1972 \"Match of the Century\" between Fischer and Spassky played?"
+  },
+  "options": [
+   {
+    "ru": "В Рейкьявике",
+    "en": "Reykjavik"
+   },
+   {
+    "ru": "В Москве",
+    "en": "Moscow"
+   },
+   {
+    "ru": "В Нью-Йорке",
+    "en": "New York"
+   },
+   {
+    "ru": "В Женеве",
+    "en": "Geneva"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фишер чуть не сорвал матч: опоздал на открытие и не явился на вторую партию, но всё равно победил.",
+   "en": "Fischer nearly wrecked the match, missing the opening and forfeiting game two, yet still won."
+  },
+  "source": "https://en.wikipedia.org/wiki/World_Chess_Championship_1972"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой чемпион мира по шахматам умер, так и не потеряв титул?",
+   "en": "Which world chess champion died while still holding the title?"
+  },
+  "options": [
+   {
+    "ru": "Александр Алёхин",
+    "en": "Alexander Alekhine"
+   },
+   {
+    "ru": "Михаил Ботвинник",
+    "en": "Mikhail Botvinnik"
+   },
+   {
+    "ru": "Михаил Таль",
+    "en": "Mikhail Tal"
+   },
+   {
+    "ru": "Бобби Фишер",
+    "en": "Bobby Fischer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Алёхин умер в 1946 году в Португалии, и нового чемпиона выбирали турниром: в 1948-м им стал Ботвинник.",
+   "en": "Alekhine died in Portugal in 1946, so a tournament picked the next champion: Botvinnik, in 1948."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alexander_Alekhine"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем был лорд Стэнли, подаривший хоккею Кубок Стэнли?",
+   "en": "Who was Lord Stanley, who gave hockey the Stanley Cup?"
+  },
+  "options": [
+   {
+    "ru": "Генерал-губернатором Канады",
+    "en": "Governor General of Canada"
+   },
+   {
+    "ru": "Звёздным хоккеистом",
+    "en": "A star hockey player"
+   },
+   {
+    "ru": "Изобретателем коньков",
+    "en": "The inventor of skates"
+   },
+   {
+    "ru": "Хозяином пивоварни",
+    "en": "A brewery owner"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он купил кубок в 1892 году за 10 гиней и так и не увидел ни одного финального матча за него.",
+   "en": "He bought the cup in 1892 for 10 guineas and never saw a single championship game played for it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stanley_Cup"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой номер Уэйна Гретцки навсегда закрыли сразу во всех клубах НХЛ?",
+   "en": "Which of Wayne Gretzky's numbers was retired by every NHL team?"
+  },
+  "options": [
+   {
+    "ru": "9",
+    "en": "9"
+   },
+   {
+    "ru": "66",
+    "en": "66"
+   },
+   {
+    "ru": "99",
+    "en": "99"
+   },
+   {
+    "ru": "87",
+    "en": "87"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "В 2000 году лига вывела 99 из обращения целиком: больше его не наденет ни один игрок НХЛ.",
+   "en": "In 2000 the league retired 99 for good: no NHL player will ever wear it again."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wayne_Gretzky"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем закончилась хоккейная Суперсерия СССР — Канада 1972 года?",
+   "en": "How did the 1972 Summit Series between the USSR and Canada end?"
+  },
+  "options": [
+   {
+    "ru": "Победой Канады",
+    "en": "Canada won"
+   },
+   {
+    "ru": "Победой СССР",
+    "en": "The USSR won"
+   },
+   {
+    "ru": "Ничьей по сумме",
+    "en": "A draw overall"
+   },
+   {
+    "ru": "Её не доиграли",
+    "en": "It was never finished"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Канада выиграла 4 матча из 8, а решающую шайбу Пол Хендерсон забил за 34 секунды до конца.",
+   "en": "Canada won 4 of the 8 games; Paul Henderson scored the winner with 34 seconds left in the last."
+  },
+  "source": "https://en.wikipedia.org/wiki/Summit_Series"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая команда выступает в Формуле-1 во всех сезонах с первого чемпионата 1950 года?",
+   "en": "Which team has raced in every Formula One season since the first championship in 1950?"
+  },
+  "options": [
+   {
+    "ru": "Феррари",
+    "en": "Ferrari"
+   },
+   {
+    "ru": "Макларен",
+    "en": "McLaren"
+   },
+   {
+    "ru": "Уильямс",
+    "en": "Williams"
+   },
+   {
+    "ru": "Мерседес",
+    "en": "Mercedes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "При этом самую первую гонку 1950 года «Феррари» пропустила: поспорила с организаторами о стартовых деньгах.",
+   "en": "Yet Ferrari skipped the very first race of 1950 after a row with the organisers over start money."
+  },
+  "source": "https://en.wikipedia.org/wiki/Scuderia_Ferrari"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему боксёрский ринг называют рингом, то есть кругом, хотя он квадратный?",
+   "en": "Why is a boxing ring called a ring when it is square?"
+  },
+  "options": [
+   {
+    "ru": "Раньше дрались в круге на земле",
+    "en": "Fights were in a circle on the ground"
+   },
+   {
+    "ru": "Так звали изобретателя бокса",
+    "en": "Named after boxing's inventor"
+   },
+   {
+    "ru": "Это сокращение от «арена»",
+    "en": "It is short for \"arena\""
+   },
+   {
+    "ru": "Из-за формы перчаток",
+    "en": "Because of the glove shape"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Раньше бойцы сходились в круге, начерченном на земле; первый квадратный ринг ввели лишь в 1838 году, а название осталось.",
+   "en": "Fighters once met in a circle scratched on the ground; the first square ring came only in 1838, but the name stuck."
+  },
+  "source": "https://en.wikipedia.org/wiki/Boxing_ring"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем били по мячу в старинной французской игре же-де-пом, предке тенниса?",
+   "en": "What did players hit the ball with in jeu de paume, the old French ancestor of tennis?"
+  },
+  "options": [
+   {
+    "ru": "Ладонью",
+    "en": "The palm of the hand"
+   },
+   {
+    "ru": "Деревянной битой",
+    "en": "A wooden bat"
+   },
+   {
+    "ru": "Ногой",
+    "en": "The foot"
+   },
+   {
+    "ru": "Сковородой",
+    "en": "A frying pan"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Paume по-французски «ладонь»: сначала били рукой, потом перчаткой, а ракетки появились к XVI веку.",
+   "en": "Paume is French for palm: first the bare hand, then a glove; rackets only arrived by the 16th century."
+  },
+  "source": "https://en.wikipedia.org/wiki/Real_tennis"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране придумали соревнования по ношению жён?",
+   "en": "Which country gave the world wife carrying races?"
+  },
+  "options": [
+   {
+    "ru": "В Финляндии",
+    "en": "Finland"
+   },
+   {
+    "ru": "В Норвегии",
+    "en": "Norway"
+   },
+   {
+    "ru": "В Шотландии",
+    "en": "Scotland"
+   },
+   {
+    "ru": "В Ирландии",
+    "en": "Ireland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Чемпионат мира проводят в финском Сонкаярви; по легенде, разбойник XIX века гонял свою шайку бегом с мешками на спине.",
+   "en": "The world championship is in Sonkajärvi, Finland; legend says a 19th century robber trained his gang to run with heavy sacks."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wife-carrying"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялась идея шахбокса, где раунды шахмат чередуются с раундами бокса?",
+   "en": "Where did the idea of chess boxing, with chess rounds between boxing rounds, come from?"
+  },
+  "options": [
+   {
+    "ru": "Из комикса",
+    "en": "A comic book"
+   },
+   {
+    "ru": "Из армейской подготовки",
+    "en": "Army training"
+   },
+   {
+    "ru": "Из советского цирка",
+    "en": "The Soviet circus"
+   },
+   {
+    "ru": "Из спора двух чемпионов",
+    "en": "A bet between two champions"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Голландский художник Ипе Рубинг вычитал идею в комиксе Энки Билала 1992 года и в 2003-м провёл первые настоящие бои.",
+   "en": "Dutch artist Iepe Rubingh took the idea from a 1992 Enki Bilal comic and staged the first real bouts in 2003."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chess_boxing"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "За чем бегут вниз по крутому холму на знаменитых гонках в английском Глостершире?",
+   "en": "What do people chase down a steep hill in a famous race in Gloucestershire, England?"
+  },
+  "options": [
+   {
+    "ru": "За головкой сыра",
+    "en": "A wheel of cheese"
+   },
+   {
+    "ru": "За поросёнком",
+    "en": "A piglet"
+   },
+   {
+    "ru": "За бочкой",
+    "en": "A barrel"
+   },
+   {
+    "ru": "За пирогом",
+    "en": "A pie"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сыр отпускают на секунду раньше бегунов, догнать его почти невозможно, а победитель забирает его себе.",
+   "en": "The cheese gets a second's head start and is almost never caught; the first runner down keeps it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cooper%27s_Hill_Cheese-Rolling_and_Wake"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что должен без остановки повторять нападающий в индийской игре кабадди?",
+   "en": "What must the raider keep chanting in the Indian sport of kabaddi?"
+  },
+  "options": [
+   {
+    "ru": "Слово «кабадди»",
+    "en": "The word \"kabaddi\""
+   },
+   {
+    "ru": "Своё имя",
+    "en": "His own name"
+   },
+   {
+    "ru": "Счёт матча",
+    "en": "The score"
+   },
+   {
+    "ru": "Имена соперников",
+    "en": "The opponents' names"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так судьи видят, что он не вдыхает: весь набег на половину соперника делают на одном дыхании.",
+   "en": "It shows the referees he is not breathing in: the whole raid is done on a single breath."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kabaddi"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда у регби такое название?",
+   "en": "Where does rugby get its name?"
+  },
+  "options": [
+   {
+    "ru": "От английской школы",
+    "en": "An English school"
+   },
+   {
+    "ru": "От фамилии изобретателя",
+    "en": "Its inventor's surname"
+   },
+   {
+    "ru": "От латинского слова",
+    "en": "A Latin word"
+   },
+   {
+    "ru": "От города в Новой Зеландии",
+    "en": "A New Zealand town"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По легенде, в 1823 году ученик школы Регби Уильям Уэбб Эллис посреди футбольного матча схватил мяч в руки и побежал.",
+   "en": "Legend says that in 1823 Rugby School pupil William Webb Ellis took the ball in his arms mid football game and ran."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rugby_football"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого обыграла Билли Джин Кинг в знаменитой «Битве полов» 1973 года?",
+   "en": "Who did Billie Jean King beat in the famous 1973 \"Battle of the Sexes\"?"
+  },
+  "options": [
+   {
+    "ru": "55-летнего экс-чемпиона Уимблдона",
+    "en": "A 55 year old ex Wimbledon champ"
+   },
+   {
+    "ru": "Своего мужа",
+    "en": "Her own husband"
+   },
+   {
+    "ru": "Юного Джона Макинроя",
+    "en": "A young John McEnroe"
+   },
+   {
+    "ru": "Пушку для мячей",
+    "en": "A ball machine"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бобби Риггс хвастался, что женщина его не обыграет, и проиграл в трёх сетах на глазах у всего мира.",
+   "en": "Bobby Riggs boasted no woman could beat him, then lost in straight sets in front of the whole world."
+  },
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Sexes_(tennis)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какого спорта пришло выражение «хет-трик»?",
+   "en": "Which sport did the term \"hat trick\" come from?"
+  },
+  "options": [
+   {
+    "ru": "Из крикета",
+    "en": "Cricket"
+   },
+   {
+    "ru": "Из хоккея",
+    "en": "Hockey"
+   },
+   {
+    "ru": "Из бокса",
+    "en": "Boxing"
+   },
+   {
+    "ru": "Из скачек",
+    "en": "Horse racing"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1858 году крикетист Стивенсон взял три калитки тремя подачами подряд, и болельщики скинулись ему на шляпу.",
+   "en": "In 1858 cricketer H. H. Stephenson took three wickets with three balls, and fans bought him a hat."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hat-trick"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем по профессии был Арпад Эло, в честь которого назван шахматный рейтинг?",
+   "en": "What was the job of Arpad Elo, after whom the chess rating is named?"
+  },
+  "options": [
+   {
+    "ru": "Профессор физики",
+    "en": "Physics professor"
+   },
+   {
+    "ru": "Чемпион мира по шахматам",
+    "en": "World chess champion"
+   },
+   {
+    "ru": "Бухгалтер ФИДЕ",
+    "en": "FIDE accountant"
+   },
+   {
+    "ru": "Программист IBM",
+    "en": "IBM programmer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Венгр Эло преподавал физику в американском университете, а его системой теперь ранжируют даже игроков в видеоигры.",
+   "en": "The Hungarian born Elo taught physics in the US; versions of his system now rank even video game players."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elo_rating_system"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего делают воланы для бадминтона на серьёзных турнирах?",
+   "en": "What are shuttlecocks made of at serious badminton tournaments?"
+  },
+  "options": [
+   {
+    "ru": "Из птичьих перьев",
+    "en": "Bird feathers"
+   },
+   {
+    "ru": "Из пластика",
+    "en": "Plastic"
+   },
+   {
+    "ru": "Из бумаги",
+    "en": "Paper"
+   },
+   {
+    "ru": "Из шёлка",
+    "en": "Silk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В волане 16 гусиных или утиных перьев, и все из одного крыла, иначе он полетит криво.",
+   "en": "A shuttle has 16 goose or duck feathers, all from the same wing, or it will not fly straight."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shuttlecock"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что такое «Золотой шлем», который в 1988 году собрала Штеффи Граф?",
+   "en": "What is the \"Golden Slam\" that Steffi Graf completed in 1988?"
+  },
+  "options": [
+   {
+    "ru": "Все 4 «Шлема» и олимпийское золото",
+    "en": "All 4 majors plus Olympic gold"
+   },
+   {
+    "ru": "Сто побед подряд",
+    "en": "A hundred wins in a row"
+   },
+   {
+    "ru": "Шлем из золота за 10 титулов",
+    "en": "A gold helmet for 10 titles"
+   },
+   {
+    "ru": "Титулы в одиночке и паре",
+    "en": "Singles and doubles titles"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "33 года Граф оставалась единственной, пока в 2021-м это не повторили теннисисты на колясках Диде де Грот и Дилан Олкотт.",
+   "en": "Graf stood alone for 33 years until wheelchair players Diede de Groot and Dylan Alcott matched her in 2021."
+  },
+  "source": "https://www.guinnessworldrecords.com/world-records/690698-first-wheelchair-tennis-players-to-achieve-a-golden-slam"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько часов шёл самый долгий теннисный матч в истории (Уимблдон, 2010)?",
+   "en": "How many hours did the longest tennis match in history last (Wimbledon, 2010)?"
+  },
+  "answer": 11,
+  "range": [
+   1,
+   40
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "ч",
+   "en": "h"
+  },
+  "fact": {
+   "ru": "Иснер и Маю играли три дня, пятый сет кончился 70:68, а табло сломалось на счёте 47:47.",
+   "en": "Isner and Mahut played over three days, the fifth set ended 70-68, and the scoreboard froze at 47 all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Isner%E2%80%93Mahut_match_at_the_2010_Wimbledon_Championships"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какую скорость в км/ч развил Усэйн Болт на пике рекордной стометровки 2009 года?",
+   "en": "What top speed in km/h did Usain Bolt reach in his record 100 m in 2009?"
+  },
+  "answer": 45,
+  "range": [
+   10,
+   120
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "км/ч",
+   "en": "km/h"
+  },
+  "fact": {
+   "ru": "Между 60-м и 80-м метрами он бежал около 44,7 км/ч — быстрее, чем разрешено ездить в жилых кварталах многих городов.",
+   "en": "Between 60 and 80 metres he ran about 44.7 km/h, faster than cars may drive down many residential streets."
+  },
+  "source": "https://en.wikipedia.org/wiki/Usain_Bolt"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году впервые сыграли Уимблдонский турнир?",
+   "en": "In what year was the Wimbledon tournament first played?"
+  },
+  "answer": 1877,
+  "range": [
+   1700,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Тогда в турнире был только мужской одиночный разряд, а клуб изначально занимался крокетом.",
+   "en": "It had only men's singles, and the host club had been set up for croquet."
+  },
+  "source": "https://en.wikipedia.org/wiki/1877_Wimbledon_Championship"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году прошла первая велогонка «Тур де Франс»?",
+   "en": "In what year was the first Tour de France?"
+  },
+  "answer": 1903,
+  "range": [
+   1750,
+   2025
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Гонку придумала газета, чтобы поднять тиражи: этапы были длиннее 400 км, и ехали даже ночью.",
+   "en": "A newspaper invented it to sell copies: stages ran up to 470 km, and riders pedalled through the night."
+  },
+  "source": "https://en.wikipedia.org/wiki/1903_Tour_de_France"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько партий сыграли Карпов и Каспаров в матче 1984 года, прежде чем его прервали?",
+   "en": "How many games did Karpov and Kasparov play in their 1984 match before it was stopped?"
+  },
+  "answer": 48,
+  "range": [
+   5,
+   150
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "партий",
+   "en": "games"
+  },
+  "fact": {
+   "ru": "Матч шёл пять месяцев: Карпов вёл 5:0, но выдохся, и президент ФИДЕ остановил его без победителя.",
+   "en": "It lasted five months: Karpov led 5-0 but tired, and the FIDE president stopped it with no winner."
+  },
+  "source": "https://en.wikipedia.org/wiki/World_Chess_Championship_1984"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько раундов длился самый долгий боксёрский бой в истории (1893)?",
+   "en": "How many rounds did the longest boxing fight in history last (1893)?"
+  },
+  "answer": 110,
+  "range": [
+   10,
+   300
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "раундов",
+   "en": "rounds"
+  },
+  "fact": {
+   "ru": "Бой в Новом Орлеане шёл больше семи часов и кончился ничем: оба не могли подняться из своих углов.",
+   "en": "The New Orleans fight went on for over seven hours and ended with neither man able to leave his corner."
+  },
+  "source": "https://en.wikipedia.org/wiki/Andy_Bowen"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году в Монреале сыграли первый организованный матч по хоккею с шайбой в крытом зале?",
+   "en": "In what year was the first organised indoor ice hockey game played, in Montreal?"
+  },
+  "answer": 1875,
+  "range": [
+   1650,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Мяч заменили плоской деревяшкой, чтобы не покалечить зрителей и не разбить окна катка.",
+   "en": "A flat block of wood replaced the ball so it would not hurt spectators or break the rink's windows."
+  },
+  "source": "https://en.wikipedia.org/wiki/First_indoor_ice_hockey_game"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько секунд Билл Мосиенко забил три шайбы подряд в матче НХЛ 1952 года?",
+   "en": "In how many seconds did Bill Mosienko score three goals in a 1952 NHL game?"
+  },
+  "answer": 21,
+  "range": [
+   5,
+   300
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "секунд",
+   "en": "seconds"
+  },
+  "fact": {
+   "ru": "Это самый быстрый хет-трик в истории НХЛ: три гола, пока другая команда успевает только сменить звено.",
+   "en": "It is the fastest hat trick in NHL history: three goals in about the time it takes to change lines."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bill_Mosienko"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько килограммов весил на пике гаваец Конисики, самый тяжёлый борец высшего дивизиона сумо?",
+   "en": "How many kg did Hawaiian Konishiki, the heaviest top division sumo wrestler ever, weigh at his peak?"
+  },
+  "answer": 287,
+  "range": [
+   100,
+   700
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Его прозвали «Самосвал», и он первым из иностранцев дошёл до второго по старшинству титула озеки.",
+   "en": "Nicknamed the Dump Truck, he was the first foreigner to reach ozeki, sumo's second highest rank."
+  },
+  "source": "https://en.wikipedia.org/wiki/Konishiki_Yasokichi"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько очков набрал Уилт Чемберлен за один матч НБА в 1962 году?",
+   "en": "How many points did Wilt Chamberlain score in one NBA game in 1962?"
+  },
+  "answer": 100,
+  "range": [
+   20,
+   250
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "очков",
+   "en": "points"
+  },
+  "fact": {
+   "ru": "Матч не показывали по ТВ, и главная память о нём — фото Чемберлена с листком «100» в раздевалке.",
+   "en": "The game was not televised; its best known record is a photo of Chamberlain holding a sheet saying 100."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wilt_Chamberlain%27s_100-point_game"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На какой высоте в сантиметрах висит баскетбольное кольцо?",
+   "en": "How high is a basketball hoop, in centimetres?"
+  },
+  "answer": 305,
+  "range": [
+   100,
+   600
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "Ровно 10 футов: на такой высоте оказались перила балкона, к которым Нейсмит прибил первую корзину, и высоту так и не меняли.",
+   "en": "Exactly 10 feet: the height of the balcony railing Naismith nailed the first basket to, and it was never changed."
+  },
+  "source": "https://www.britannica.com/story/why-are-basketball-hoops-10-feet-high"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько секунд Ронни О'Салливан собрал максимальный брейк 147 в 1997 году?",
+   "en": "In how many seconds did Ronnie O'Sullivan make a maximum 147 break in 1997?"
+  },
+  "answer": 308,
+  "range": [
+   60,
+   1800
+  ],
+  "step": 1,
+  "tolerance": 60,
+  "unit": {
+   "ru": "секунд",
+   "en": "seconds"
+  },
+  "fact": {
+   "ru": "5 минут 8 секунд на 36 ударов: меньше девяти секунд на каждый, вместе с прицеливанием.",
+   "en": "5 minutes 8 seconds for 36 shots: under nine seconds each, aiming included."
+  },
+  "source": "https://en.wikipedia.org/wiki/Maximum_break"
+ }
+]

@@ -1,16 +1,275 @@
 [
   {
-    "id": "world",
+    "id": "films_old",
     "title": {
-      "ru": "Вокруг света",
-      "en": "Around the world"
+      "ru": "Старое кино",
+      "en": "Classic films"
     }
   },
   {
-    "id": "earth",
+    "id": "films_new",
     "title": {
-      "ru": "Земля и погода",
-      "en": "Earth and weather"
+      "ru": "Новое кино",
+      "en": "Modern films"
+    }
+  },
+  {
+    "id": "soviet_film",
+    "title": {
+      "ru": "Советское кино",
+      "en": "Soviet cinema"
+    }
+  },
+  {
+    "id": "series",
+    "title": {
+      "ru": "Сериалы",
+      "en": "TV series"
+    }
+  },
+  {
+    "id": "ru_tv",
+    "title": {
+      "ru": "Наше телевидение",
+      "en": "Soviet and Russian TV"
+    }
+  },
+  {
+    "id": "cartoons",
+    "title": {
+      "ru": "Мультфильмы",
+      "en": "Cartoons"
+    }
+  },
+  {
+    "id": "heroes",
+    "title": {
+      "ru": "Супергерои и комиксы",
+      "en": "Superheroes and comics"
+    }
+  },
+  {
+    "id": "games_retro",
+    "title": {
+      "ru": "Ретро-игры",
+      "en": "Retro video games"
+    }
+  },
+  {
+    "id": "games_new",
+    "title": {
+      "ru": "Современные видеоигры",
+      "en": "Modern video games"
+    }
+  },
+  {
+    "id": "board",
+    "title": {
+      "ru": "Настольные игры",
+      "en": "Board games and puzzles"
+    }
+  },
+  {
+    "id": "music_old",
+    "title": {
+      "ru": "Хиты XX века",
+      "en": "20th century hits"
+    }
+  },
+  {
+    "id": "music_new",
+    "title": {
+      "ru": "Современная музыка",
+      "en": "Modern music"
+    }
+  },
+  {
+    "id": "ru_music",
+    "title": {
+      "ru": "Русская музыка",
+      "en": "Russian music"
+    }
+  },
+  {
+    "id": "classical",
+    "title": {
+      "ru": "Классика и опера",
+      "en": "Classical music and opera"
+    }
+  },
+  {
+    "id": "art",
+    "title": {
+      "ru": "Картины и художники",
+      "en": "Art and artists"
+    }
+  },
+  {
+    "id": "landmarks",
+    "title": {
+      "ru": "Чудеса архитектуры",
+      "en": "Landmarks and buildings"
+    }
+  },
+  {
+    "id": "money",
+    "title": {
+      "ru": "Деньги",
+      "en": "Money"
+    }
+  },
+  {
+    "id": "brands",
+    "title": {
+      "ru": "Бренды и компании",
+      "en": "Brands and companies"
+    }
+  },
+  {
+    "id": "ancient",
+    "title": {
+      "ru": "Древний мир",
+      "en": "The ancient world"
+    }
+  },
+  {
+    "id": "mythology",
+    "title": {
+      "ru": "Мифология",
+      "en": "Mythology"
+    }
+  },
+  {
+    "id": "medieval",
+    "title": {
+      "ru": "Средневековье",
+      "en": "The Middle Ages"
+    }
+  },
+  {
+    "id": "history20",
+    "title": {
+      "ru": "XX век",
+      "en": "The 20th century"
+    }
+  },
+  {
+    "id": "ussr",
+    "title": {
+      "ru": "СССР",
+      "en": "The USSR"
+    }
+  },
+  {
+    "id": "nineties",
+    "title": {
+      "ru": "Девяностые",
+      "en": "The 90s"
+    }
+  },
+  {
+    "id": "ru_history",
+    "title": {
+      "ru": "История России",
+      "en": "Russian history"
+    }
+  },
+  {
+    "id": "ru_politics",
+    "title": {
+      "ru": "Российская политика",
+      "en": "Russian politics"
+    }
+  },
+  {
+    "id": "rulers",
+    "title": {
+      "ru": "Короли и правители",
+      "en": "Kings and rulers"
+    }
+  },
+  {
+    "id": "conspiracy",
+    "title": {
+      "ru": "Теории заговора",
+      "en": "Conspiracy theories"
+    }
+  },
+  {
+    "id": "mysteries",
+    "title": {
+      "ru": "Загадки истории",
+      "en": "Unsolved mysteries"
+    }
+  },
+  {
+    "id": "crime",
+    "title": {
+      "ru": "Аферы и ограбления",
+      "en": "Heists and cons"
+    }
+  },
+  {
+    "id": "misconceptions",
+    "title": {
+      "ru": "Мифы и враньё",
+      "en": "Myths and nonsense"
+    }
+  },
+  {
+    "id": "body",
+    "title": {
+      "ru": "Как устроен человек",
+      "en": "The human body"
+    }
+  },
+  {
+    "id": "medicine",
+    "title": {
+      "ru": "Медицина",
+      "en": "A history of medicine"
+    }
+  },
+  {
+    "id": "space",
+    "title": {
+      "ru": "Космос",
+      "en": "Space"
+    }
+  },
+  {
+    "id": "science",
+    "title": {
+      "ru": "Как это работает",
+      "en": "How things work"
+    }
+  },
+  {
+    "id": "inventions",
+    "title": {
+      "ru": "Кто это придумал?",
+      "en": "Who invented that?"
+    }
+  },
+  {
+    "id": "gadgets",
+    "title": {
+      "ru": "Гаджеты и компьютеры",
+      "en": "Gadgets and computers"
+    }
+  },
+  {
+    "id": "memes",
+    "title": {
+      "ru": "Интернет и мемы",
+      "en": "The internet and memes"
+    }
+  },
+  {
+    "id": "noughties",
+    "title": {
+      "ru": "Нулевые",
+      "en": "The 2000s"
     }
   },
   {
@@ -28,6 +287,62 @@
     }
   },
   {
+    "id": "dinosaurs",
+    "title": {
+      "ru": "Динозавры",
+      "en": "Dinosaurs and lost beasts"
+    }
+  },
+  {
+    "id": "earth",
+    "title": {
+      "ru": "Земля и погода",
+      "en": "Earth and weather"
+    }
+  },
+  {
+    "id": "plants",
+    "title": {
+      "ru": "Растения и грибы",
+      "en": "Plants and fungi"
+    }
+  },
+  {
+    "id": "world",
+    "title": {
+      "ru": "Вокруг света",
+      "en": "Around the world"
+    }
+  },
+  {
+    "id": "countries",
+    "title": {
+      "ru": "Страны и флаги",
+      "en": "Countries and flags"
+    }
+  },
+  {
+    "id": "ru_places",
+    "title": {
+      "ru": "По России",
+      "en": "Across Russia"
+    }
+  },
+  {
+    "id": "languages",
+    "title": {
+      "ru": "Языки и слова",
+      "en": "Languages and words"
+    }
+  },
+  {
+    "id": "holidays",
+    "title": {
+      "ru": "Праздники мира",
+      "en": "Holidays around the world"
+    }
+  },
+  {
     "id": "kitchen",
     "title": {
       "ru": "Что на ужин",
@@ -35,73 +350,73 @@
     }
   },
   {
-    "id": "timemachine",
+    "id": "drinks",
     "title": {
-      "ru": "Машина времени",
-      "en": "Time machine"
+      "ru": "Напитки",
+      "en": "Drinks"
     }
   },
   {
-    "id": "myths",
+    "id": "fashion",
     "title": {
-      "ru": "Мифы и враньё",
-      "en": "Myths and nonsense"
+      "ru": "Мода и стиль",
+      "en": "Fashion and style"
     }
   },
   {
-    "id": "body",
+    "id": "transport",
     "title": {
-      "ru": "Как устроен человек",
-      "en": "The human body"
+      "ru": "Машины, поезда, самолёты",
+      "en": "Cars, trains and planes"
+    }
+  },
+  {
+    "id": "people",
+    "title": {
+      "ru": "Великие люди",
+      "en": "Famous people"
+    }
+  },
+  {
+    "id": "football",
+    "title": {
+      "ru": "Футбол",
+      "en": "Football"
+    }
+  },
+  {
+    "id": "olympics",
+    "title": {
+      "ru": "Олимпийские игры",
+      "en": "The Olympics"
     }
   },
   {
     "id": "records",
     "title": {
       "ru": "Спорт и рекорды",
-      "en": "Sport and records"
+      "en": "Sports and records"
     }
   },
   {
-    "id": "cartoons",
+    "id": "books_old",
     "title": {
-      "ru": "Мультики нашего детства",
-      "en": "Cartoons we grew up with"
+      "ru": "Классическая литература",
+      "en": "Classic literature"
     }
   },
   {
-    "id": "books",
+    "id": "books_new",
     "title": {
-      "ru": "Книги и сказки",
-      "en": "Books and fairy tales"
+      "ru": "Современные книги",
+      "en": "Modern books"
     }
   },
   {
-    "id": "art",
+    "id": "fairytales",
     "title": {
-      "ru": "Музыка и картины",
-      "en": "Music and paintings"
-    }
-  },
-  {
-    "id": "inventions",
-    "title": {
-      "ru": "Кто это придумал?",
-      "en": "Who invented that?"
-    }
-  },
-  {
-    "id": "science",
-    "title": {
-      "ru": "Как это работает",
-      "en": "How things work"
-    }
-  },
-  {
-    "id": "space",
-    "title": {
-      "ru": "Космос",
-      "en": "Up in space"
+      "ru": "Сказки",
+      "en": "Fairy tales"
     }
   },
   {

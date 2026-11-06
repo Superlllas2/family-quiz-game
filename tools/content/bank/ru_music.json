@@ -1,0 +1,1506 @@
+[
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто написал музыку к «Миллиону алых роз»?",
+      "en": "Who composed the music for \"A Million Scarlet Roses\"?"
+    },
+    "options": [
+      {
+        "ru": "Раймонд Паулс",
+        "en": "Raimonds Pauls"
+      },
+      {
+        "ru": "Давид Тухманов",
+        "en": "David Tukhmanov"
+      },
+      {
+        "ru": "Александр Зацепин",
+        "en": "Alexander Zatsepin"
+      },
+      {
+        "ru": "Игорь Николаев",
+        "en": "Igor Nikolaev"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Мелодия пришла из латышской песни Паулса о девочке, которой богиня дала жизнь, но забыла дать счастье.",
+      "en": "The tune came from Pauls's Latvian song about a girl a goddess gave life to but forgot to give happiness."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Миллион_роз"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Чьим голосом «Ласковый май» пел «Белые розы»?",
+      "en": "Whose voice sang Laskovy Mai's \"White Roses\"?"
+    },
+    "options": [
+      {
+        "ru": "Дмитрий Маликов",
+        "en": "Dmitry Malikov"
+      },
+      {
+        "ru": "Юрий Шатунов",
+        "en": "Yuri Shatunov"
+      },
+      {
+        "ru": "Андрей Разин",
+        "en": "Andrei Razin"
+      },
+      {
+        "ru": "Сергей Жуков",
+        "en": "Sergei Zhukov"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "На пике славы Андрей Разин выпускал на гастроли сразу несколько двойников группы, певших под фонограмму Шатунова.",
+      "en": "At the peak of the craze Andrei Razin sent several fake line-ups on tour, all miming to Shatunov's recordings."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Ласковый_май"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто катался на коньках на сцене, когда Дима Билан выиграл Евровидение-2008?",
+      "en": "Who skated on stage when Dima Bilan won Eurovision 2008?"
+    },
+    "options": [
+      {
+        "ru": "Илья Авербух",
+        "en": "Ilia Averbukh"
+      },
+      {
+        "ru": "Ирина Роднина",
+        "en": "Irina Rodnina"
+      },
+      {
+        "ru": "Евгений Плющенко",
+        "en": "Evgeni Plushenko"
+      },
+      {
+        "ru": "Алексей Ягудин",
+        "en": "Alexei Yagudin"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Рядом играл венгерский скрипач Эдвин Мартон, и не на чём-нибудь, а на скрипке Страдивари.",
+      "en": "Hungarian violinist Edvin Marton played beside them, and on a Stradivarius at that."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Believe_(песня_Димы_Билана)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой российский дуэт в 2003 году первым из наших артистов возглавил британский хит-парад?",
+      "en": "Which Russian duo became the first Russian act to top the UK singles chart, in 2003?"
+    },
+    "options": [
+      {
+        "ru": "«Блестящие»",
+        "en": "Blestyashchie"
+      },
+      {
+        "ru": "«Серебро»",
+        "en": "Serebro"
+      },
+      {
+        "ru": "«ВИА Гра»",
+        "en": "VIA Gra"
+      },
+      {
+        "ru": "«Тату»",
+        "en": "t.A.T.u."
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Английская версия «Я сошла с ума», «All the Things She Said», продержалась на первом месте четыре недели.",
+      "en": "\"All the Things She Said\", the English version of \"Ya soshla s uma\", stayed at number one for four weeks."
+    },
+    "source": "https://en.wikipedia.org/wiki/All_the_Things_She_Said"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Из какого города группа «Мумий Тролль»?",
+      "en": "Which city is the band Mumiy Troll from?"
+    },
+    "options": [
+      {
+        "ru": "Владивосток",
+        "en": "Vladivostok"
+      },
+      {
+        "ru": "Свердловск",
+        "en": "Sverdlovsk"
+      },
+      {
+        "ru": "Ленинград",
+        "en": "Leningrad"
+      },
+      {
+        "ru": "Уфа",
+        "en": "Ufa"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Название — шутка над муми-троллями Туве Янссон: сначала группа так и звалась, «Муми Тролль».",
+      "en": "The name is a pun on Tove Jansson's Moomintrolls; the band was first simply called Moomin Troll."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Мумий_Тролль"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Из какого фильма песня «Прекрасное далёко»?",
+      "en": "Which film is the song \"Beautiful Faraway\" from?"
+    },
+    "options": [
+      {
+        "ru": "«Мэри Поппинс, до свидания»",
+        "en": "Mary Poppins, Goodbye"
+      },
+      {
+        "ru": "«Гостья из будущего»",
+        "en": "Guest from the Future"
+      },
+      {
+        "ru": "«Приключения Электроника»",
+        "en": "Adventures of Electronic"
+      },
+      {
+        "ru": "«Чародеи»",
+        "en": "The Magicians"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Её написали Евгений Крылатов и Юрий Энтин — те же авторы, что и «Крылатые качели» для «Электроника».",
+      "en": "Yevgeny Krylatov and Yuri Entin wrote it: the same pair wrote \"Winged Swings\" for Adventures of Electronic."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Прекрасное_далёко"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто поёт «Песню про зайцев» в «Бриллиантовой руке»?",
+      "en": "Who sings the \"Song about Hares\" in The Diamond Arm?"
+    },
+    "options": [
+      {
+        "ru": "Анатолий Папанов",
+        "en": "Anatoly Papanov"
+      },
+      {
+        "ru": "Евгений Моргунов",
+        "en": "Yevgeny Morgunov"
+      },
+      {
+        "ru": "Юрий Никулин",
+        "en": "Yuri Nikulin"
+      },
+      {
+        "ru": "Андрей Миронов",
+        "en": "Andrei Mironov"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Миронов в том же фильме поёт «Остров невезения»: обе песни написали Александр Зацепин и Леонид Дербенёв.",
+      "en": "Mironov sings \"Island of Bad Luck\" in the same film; Alexander Zatsepin and Leonid Derbenev wrote both songs."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Бриллиантовая_рука"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какое число наступает, когда Шуфутинский «календарь переворачивает»?",
+      "en": "In Shufutinsky's song, what date comes round when he turns the calendar page?"
+    },
+    "options": [
+      {
+        "ru": "Первое сентября",
+        "en": "The first of September"
+      },
+      {
+        "ru": "Тридцать первое декабря",
+        "en": "The 31st of December"
+      },
+      {
+        "ru": "Восьмое марта",
+        "en": "The 8th of March"
+      },
+      {
+        "ru": "Третье сентября",
+        "en": "The third of September"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Песню 1993 года написали Игорь Крутой и Игорь Николаев, а каждое 3 сентября интернет заваливает её мемами.",
+      "en": "Igor Krutoy and Igor Nikolaev wrote the 1993 song; every September 3 the internet floods with memes of it."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Третье_сентября_(песня)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто поёт «Я свободен, словно птица в небесах»?",
+      "en": "Who sings \"I'm free, like a bird in the sky\" (Ya svoboden)?"
+    },
+    "options": [
+      {
+        "ru": "Валерий Кипелов",
+        "en": "Valery Kipelov"
+      },
+      {
+        "ru": "Юрий Шевчук",
+        "en": "Yuri Shevchuk"
+      },
+      {
+        "ru": "Константин Кинчев",
+        "en": "Konstantin Kinchev"
+      },
+      {
+        "ru": "Вячеслав Бутусов",
+        "en": "Vyacheslav Butusov"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Песню записали в 1997 году для сайд-проекта Кипелова и Сергея Маврина, пока Кипелов ещё пел в «Арии».",
+      "en": "It was recorded in 1997 for a side project of Kipelov and Sergei Mavrin, while Kipelov still sang in Aria."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Я_свободен!"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какая группа пела «Лесника» и «Куклу колдуна»?",
+      "en": "Which band sang \"The Forester\" and \"The Sorcerer's Doll\"?"
+    },
+    "options": [
+      {
+        "ru": "«Агата Кристи»",
+        "en": "Agata Kristi"
+      },
+      {
+        "ru": "«Король и Шут»",
+        "en": "Korol i Shut"
+      },
+      {
+        "ru": "«Ария»",
+        "en": "Aria"
+      },
+      {
+        "ru": "«Пикник»",
+        "en": "Piknik"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Группу собрали ленинградские школьники в 1988 году, и поначалу она называлась «Контора».",
+      "en": "Leningrad schoolboys formed the band in 1988, and at first it was called Kontora, \"The Office\"."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Король_и_Шут"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какая группа пела «Тучи» и «Тополиный пух»?",
+      "en": "Which band sang \"Clouds\" (Tuchi) and \"Poplar Fluff\" (Topolinyi pukh)?"
+    },
+    "options": [
+      {
+        "ru": "«Руки Вверх!»",
+        "en": "Ruki Vverh!"
+      },
+      {
+        "ru": "«Иванушки International»",
+        "en": "Ivanushki International"
+      },
+      {
+        "ru": "«Дискотека Авария»",
+        "en": "Diskoteka Avariya"
+      },
+      {
+        "ru": "«На-На»",
+        "en": "Na-Na"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "«Иванушек» в 1995 году собрал Игорь Матвиенко — тот же продюсер, что шестью годами раньше создал «Любэ».",
+      "en": "Igor Matvienko put Ivanushki together in 1995, the same producer who had created Lyube six years earlier."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Иванушки_International"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Песня «Полковнику никто не пишет» прогремела после «Брата 2». Чья она?",
+      "en": "\"No One Writes to the Colonel\" became a hit after Brother 2. Whose song is it?"
+    },
+    "options": [
+      {
+        "ru": "«Сплин»",
+        "en": "Splean"
+      },
+      {
+        "ru": "«Мумий Тролль»",
+        "en": "Mumiy Troll"
+      },
+      {
+        "ru": "«Звери»",
+        "en": "Zveri"
+      },
+      {
+        "ru": "«Би-2»",
+        "en": "Bi-2"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Название взято у Габриэля Гарсиа Маркеса: так называется его повесть о полковнике, годами ждущем пенсию.",
+      "en": "The title comes from Gabriel Garcia Marquez: his novella about a colonel who waits years for his pension."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Полковнику_никто_не_пишет_(песня)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Куда «на недельку, до второго» уезжает герой песни Игоря Скляра?",
+      "en": "Where does the hero of Igor Sklyar's hit go \"for a week, till the second\"?"
+    },
+    "options": [
+      {
+        "ru": "В Комарово",
+        "en": "Komarovo"
+      },
+      {
+        "ru": "В Репино",
+        "en": "Repino"
+      },
+      {
+        "ru": "В Ялту",
+        "en": "Yalta"
+      },
+      {
+        "ru": "В Сочи",
+        "en": "Sochi"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Комарово — курортный посёлок на Финском заливе; хитом песня стала в 1985-м, когда Скляр спел её в «Что? Где? Когда?».",
+      "en": "Komarovo is a resort on the Gulf of Finland; the song took off in 1985 when Sklyar sang it on the TV quiz What? Where? When?"
+    },
+    "source": "https://ru.wikipedia.org/wiki/Комарово_(песня)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Как зовут дочь Аллы Пугачёвой, тоже певицу?",
+      "en": "What is the name of Alla Pugacheva's daughter, also a singer?"
+    },
+    "options": [
+      {
+        "ru": "Наташа",
+        "en": "Natasha"
+      },
+      {
+        "ru": "Кристина",
+        "en": "Kristina"
+      },
+      {
+        "ru": "Анжелика",
+        "en": "Anzhelika"
+      },
+      {
+        "ru": "Валерия",
+        "en": "Valeriya"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Кристина Орбакайте ещё школьницей сыграла главную роль в «Чучеле» Ролана Быкова (1983).",
+      "en": "As a schoolgirl Kristina Orbakaite played the lead in Rolan Bykov's film Scarecrow (1983)."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Орбакайте,_Кристина_Эдмундовна"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто первым спел «Ты — моя мелодия, я — твой преданный Орфей»?",
+      "en": "Who first sang \"You are my melody, I am your faithful Orpheus\"?"
+    },
+    "options": [
+      {
+        "ru": "Лев Лещенко",
+        "en": "Lev Leshchenko"
+      },
+      {
+        "ru": "Эдуард Хиль",
+        "en": "Eduard Khil"
+      },
+      {
+        "ru": "Муслим Магомаев",
+        "en": "Muslim Magomaev"
+      },
+      {
+        "ru": "Иосиф Кобзон",
+        "en": "Iosif Kobzon"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Магомаев был оперным баритоном и в 1964–1965 годах стажировался в миланском театре «Ла Скала».",
+      "en": "Magomaev was a trained opera baritone who spent 1964 to 1965 training at La Scala in Milan."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Магомаев,_Муслим_Магометович"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какую песню «Кино» Metallica спела по-русски в Москве в 2019 году?",
+      "en": "Which Kino song did Metallica sing in Russian in Moscow in 2019?"
+    },
+    "options": [
+      {
+        "ru": "«Звезда по имени Солнце»",
+        "en": "A Star Called the Sun"
+      },
+      {
+        "ru": "«Кукушка»",
+        "en": "Cuckoo"
+      },
+      {
+        "ru": "«Пачка сигарет»",
+        "en": "A Pack of Cigarettes"
+      },
+      {
+        "ru": "«Группа крови»",
+        "en": "Blood Type"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "В том туре Кирк Хэмметт и Роберт Трухильо посреди концерта играли песню местных артистов, а в Москве выбрали «Кино».",
+      "en": "On that tour Kirk Hammett and Robert Trujillo played a local artist's song mid-show, and in Moscow they chose Kino."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Группа_крови_(песня)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "«Арлекино», прославившая Пугачёву, — переделка песни из какой страны?",
+      "en": "\"Arlekino\", the song that made Pugacheva famous, was a cover of a song from which country?"
+    },
+    "options": [
+      {
+        "ru": "Болгария",
+        "en": "Bulgaria"
+      },
+      {
+        "ru": "Италия",
+        "en": "Italy"
+      },
+      {
+        "ru": "Франция",
+        "en": "France"
+      },
+      {
+        "ru": "Польша",
+        "en": "Poland"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Автор — болгарин Эмил Димитров, и с этой песней Пугачёва взяла Гран-при «Золотого Орфея» в Болгарии.",
+      "en": "Bulgarian singer Emil Dimitrov wrote it, and Pugacheva won the Golden Orpheus grand prix in Bulgaria with it."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Арлекино_(песня)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "«Мальчик хочет в Тамбов» — русская версия хита из какой страны?",
+      "en": "\"The Boy Wants to Go to Tambov\" is a Russian version of a hit from which country?"
+    },
+    "options": [
+      {
+        "ru": "Турция",
+        "en": "Turkey"
+      },
+      {
+        "ru": "Бразилия",
+        "en": "Brazil"
+      },
+      {
+        "ru": "Италия",
+        "en": "Italy"
+      },
+      {
+        "ru": "Испания",
+        "en": "Spain"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Оригинал — «Tic, Tic Tac» группы Carrapicho из Амазонии; к Тамбову он не имеет никакого отношения.",
+      "en": "The original is \"Tic, Tic Tac\" by Carrapicho from the Amazon, with nothing at all about Tambov."
+    },
+    "source": "https://en.wikipedia.org/wiki/Tic,_Tic_Tac"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Мелодию «Города золотого» выдали за старинную итальянскую. Кто её, как считается, сочинил?",
+      "en": "The tune of \"The Golden City\" was passed off as old Italian music. Who is believed to have written it?"
+    },
+    "options": [
+      {
+        "ru": "Микаэл Таривердиев",
+        "en": "Mikael Tariverdiev"
+      },
+      {
+        "ru": "Андрей Петров",
+        "en": "Andrei Petrov"
+      },
+      {
+        "ru": "Владимир Вавилов",
+        "en": "Vladimir Vavilov"
+      },
+      {
+        "ru": "Борис Гребенщиков",
+        "en": "Boris Grebenshchikov"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Лютнист Вавилов в 1970 году издал её на пластинке старинной музыки под именем Франческо да Милано.",
+      "en": "Lutenist Vavilov released it in 1970 on a record of early music under the name of Francesco da Milano."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Город_золотой"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кем работал Виктор Цой в ленинградской котельной «Камчатка»?",
+      "en": "What was Viktor Tsoi's job at the Kamchatka boiler house in Leningrad?"
+    },
+    "options": [
+      {
+        "ru": "Сторожем",
+        "en": "Night watchman"
+      },
+      {
+        "ru": "Дворником",
+        "en": "Yard sweeper"
+      },
+      {
+        "ru": "Электриком",
+        "en": "Electrician"
+      },
+      {
+        "ru": "Кочегаром",
+        "en": "Stoker"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Котельные спасали рокеров от статьи о тунеядстве: работа посменная, и между сменами оставалось время на музыку.",
+      "en": "Boiler rooms saved rockers from the law against idleness: shift work left plenty of time for music."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Камчатка_(котельная)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В финале какого фильма Цой поёт «Хочу перемен!»?",
+      "en": "At the end of which film does Tsoi sing \"I Want Changes!\"?"
+    },
+    "options": [
+      {
+        "ru": "«Асса»",
+        "en": "Assa"
+      },
+      {
+        "ru": "«Игла»",
+        "en": "The Needle"
+      },
+      {
+        "ru": "«Брат»",
+        "en": "Brother"
+      },
+      {
+        "ru": "«Курьер»",
+        "en": "Courier"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В финале «Ассы» (1987) Цой поёт на сцене ресторана, и перед ним вдруг возникает огромный зал с огоньками.",
+      "en": "At the end of Assa (1987) Tsoi sings on a restaurant stage, and a huge crowd holding up lights appears before him."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Асса_(фильм)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Анна Герман, певшая «Надежду», была звездой какой страны?",
+      "en": "Anna German, who sang \"Nadezhda\", was a star of which country?"
+    },
+    "options": [
+      {
+        "ru": "Югославии",
+        "en": "Yugoslavia"
+      },
+      {
+        "ru": "Польши",
+        "en": "Poland"
+      },
+      {
+        "ru": "Германии",
+        "en": "Germany"
+      },
+      {
+        "ru": "Венгрии",
+        "en": "Hungary"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Родилась она в 1936 году в Ургенче, в Узбекистане, а выросла и прославилась в Польше.",
+      "en": "She was born in 1936 in Urgench, Uzbekistan, then grew up and became famous in Poland."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Герман,_Анна"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто написал большинство хитов Валерия Меладзе?",
+      "en": "Who wrote most of Valery Meladze's hits?"
+    },
+    "options": [
+      {
+        "ru": "Максим Фадеев",
+        "en": "Maxim Fadeev"
+      },
+      {
+        "ru": "Игорь Николаев",
+        "en": "Igor Nikolaev"
+      },
+      {
+        "ru": "Его брат Константин",
+        "en": "His brother Konstantin"
+      },
+      {
+        "ru": "Игорь Крутой",
+        "en": "Igor Krutoy"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Константин Меладзе ещё и создал группу «ВИА Гра» вместе с Дмитрием Костюком и годами её продюсировал.",
+      "en": "Konstantin Meladze also co-founded the group VIA Gra with Dmitry Kostyuk and produced it for years."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Меладзе,_Константин_Шотович"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Как выглядела певица Глюк'oZa в своих первых клипах 2002 года?",
+      "en": "How did the singer Glukoza appear in her first music videos in 2002?"
+    },
+    "options": [
+      {
+        "ru": "Тёмным силуэтом",
+        "en": "As a dark silhouette"
+      },
+      {
+        "ru": "Девушкой в маске",
+        "en": "As a girl in a mask"
+      },
+      {
+        "ru": "Куклой-марионеткой",
+        "en": "As a puppet"
+      },
+      {
+        "ru": "Мультяшной девочкой",
+        "en": "As a cartoon girl"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Продюсер Максим Фадеев прятал настоящую певицу за анимацией, и публика гадала, кто же поёт.",
+      "en": "Producer Maxim Fadeev hid the real singer behind animation, and the public kept guessing who was singing."
+    },
+    "source": "https://en.wikipedia.org/wiki/Glukoza"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Little Big выбрали на Евровидение-2020 с песней «Uno». Почему они не выступили?",
+      "en": "Little Big were picked for Eurovision 2020 with \"Uno\". Why did they never perform?"
+    },
+    "options": [
+      {
+        "ru": "Конкурс отменили",
+        "en": "The contest was cancelled"
+      },
+      {
+        "ru": "Их дисквалифицировали",
+        "en": "They were disqualified"
+      },
+      {
+        "ru": "Группа распалась",
+        "en": "The band split up"
+      },
+      {
+        "ru": "Россия отказалась ехать",
+        "en": "Russia pulled out"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Из-за пандемии конкурс отменили впервые с 1956 года, а клип «Uno» тем временем стал мировым хитом.",
+      "en": "The pandemic cancelled the contest for the first time since 1956, while the Uno video went viral worldwide."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Uno_(песня_Little_Big)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какое место заняли «Бурановские бабушки» на Евровидении-2012?",
+      "en": "Where did Buranovskiye Babushki finish at Eurovision 2012?"
+    },
+    "options": [
+      {
+        "ru": "Последнее",
+        "en": "Last"
+      },
+      {
+        "ru": "Второе",
+        "en": "Second"
+      },
+      {
+        "ru": "Первое",
+        "en": "First"
+      },
+      {
+        "ru": "Девятое",
+        "en": "Ninth"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Бабушки из удмуртского села пели отчасти по-удмуртски и уступили только шведке Лорин с «Euphoria».",
+      "en": "The grannies from an Udmurt village sang partly in Udmurt and lost only to Sweden's Loreen and \"Euphoria\"."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Бурановские_бабушки"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "На ком был женат Владимир Высоцкий?",
+      "en": "Who was Vladimir Vysotsky married to?"
+    },
+    "options": [
+      {
+        "ru": "На Софи Лорен",
+        "en": "Sophia Loren"
+      },
+      {
+        "ru": "На Брижит Бардо",
+        "en": "Brigitte Bardot"
+      },
+      {
+        "ru": "На Марине Влади",
+        "en": "Marina Vlady"
+      },
+      {
+        "ru": "На Катрин Денёв",
+        "en": "Catherine Deneuve"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Французская звезда — дочь русских эмигрантов, а псевдоним «Влади» взяла в честь отца, Владимира Полякова.",
+      "en": "The French star is the daughter of Russian emigres and took the name Vlady from her father, Vladimir Polyakov."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Влади,_Марина"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В честь кого назван Грушинский фестиваль авторской песни?",
+      "en": "Who is the Grushin festival of bard songs named after?"
+    },
+    "options": [
+      {
+        "ru": "Деревни Грушино",
+        "en": "The village of Grushino"
+      },
+      {
+        "ru": "Барда Юрия Грушина",
+        "en": "Bard Yuri Grushin"
+      },
+      {
+        "ru": "Грушевой рощи у озера",
+        "en": "A pear grove by a lake"
+      },
+      {
+        "ru": "Студента Валерия Грушина",
+        "en": "Student Valery Grushin"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Студент Валерий Грушин погиб в 1967 году на реке Уде, спасая тонущих детей; через год друзья устроили фестиваль.",
+      "en": "Student Valery Grushin drowned in 1967 on the Uda river saving children; his friends started the festival a year later."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Грушинский_фестиваль"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Как поначалу называлась песня «Подмосковные вечера»?",
+      "en": "What was the song \"Moscow Nights\" first called?"
+    },
+    "options": [
+      {
+        "ru": "«Ленинградские вечера»",
+        "en": "Leningrad Evenings"
+      },
+      {
+        "ru": "«Московские ночи»",
+        "en": "Moscow Nights"
+      },
+      {
+        "ru": "«Волжские вечера»",
+        "en": "Volga Evenings"
+      },
+      {
+        "ru": "«Летние вечера»",
+        "en": "Summer Evenings"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Ленинград поменяли на Подмосковье ради фильма о спартакиаде, а мир узнал песню по джазовой версии «Midnight in Moscow» (1961).",
+      "en": "Leningrad became Moscow for a film about a sports festival; the world learned the tune from the 1961 jazz hit Midnight in Moscow."
+    },
+    "source": "https://en.wikipedia.org/wiki/Moscow_Nights"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Чьим голосом поёт героиня Барбары Брыльской в «Иронии судьбы»?",
+      "en": "Whose voice sings for Barbara Brylska's character in The Irony of Fate?"
+    },
+    "options": [
+      {
+        "ru": "Анны Герман",
+        "en": "Anna German"
+      },
+      {
+        "ru": "Аллы Пугачёвой",
+        "en": "Alla Pugacheva"
+      },
+      {
+        "ru": "Софии Ротару",
+        "en": "Sofia Rotaru"
+      },
+      {
+        "ru": "Валентины Толкуновой",
+        "en": "Valentina Tolkunova"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Брыльская — полячка, и говорит она в фильме тоже чужим голосом: её озвучила Валентина Талызина.",
+      "en": "Brylska is Polish, so even her speaking voice in the film belongs to someone else: Valentina Talyzina."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Ирония_судьбы,_или_С_лёгким_паром!"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто написал песню «Позови меня с собой», ставшую хитом Пугачёвой в 1997 году?",
+      "en": "Who wrote \"Take Me With You\", Pugacheva's hit of 1997?"
+    },
+    "options": [
+      {
+        "ru": "Лариса Рубальская",
+        "en": "Larisa Rubalskaya"
+      },
+      {
+        "ru": "Раймонд Паулс",
+        "en": "Raimonds Pauls"
+      },
+      {
+        "ru": "Татьяна Снежина",
+        "en": "Tatiana Snezhina"
+      },
+      {
+        "ru": "Игорь Николаев",
+        "en": "Igor Nikolaev"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Снежина погибла в автокатастрофе в 1995 году и не узнала, что её песню запоёт вся страна.",
+      "en": "Snezhina died in a car crash in 1995, never knowing that the whole country would sing her song."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Снежина,_Татьяна_Валерьевна"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Земфира родилась в том же городе, где Юрий Шевчук основал ДДТ. Что это за город?",
+      "en": "Zemfira was born in the city where Yuri Shevchuk founded DDT. Which city?"
+    },
+    "options": [
+      {
+        "ru": "Казань",
+        "en": "Kazan"
+      },
+      {
+        "ru": "Екатеринбург",
+        "en": "Yekaterinburg"
+      },
+      {
+        "ru": "Самара",
+        "en": "Samara"
+      },
+      {
+        "ru": "Уфа",
+        "en": "Ufa"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Земфира родилась в Уфе в 1976 году, а группа ДДТ появилась там же в 1980-м.",
+      "en": "Zemfira was born in Ufa in 1976, and Shevchuk's band DDT was founded there in 1980."
+    },
+    "source": "https://ru.wikipedia.org/wiki/ДДТ_(группа)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Из какого города рэп-группа «Каста»?",
+      "en": "Which city is the rap group Kasta from?"
+    },
+    "options": [
+      {
+        "ru": "Ростов-на-Дону",
+        "en": "Rostov-on-Don"
+      },
+      {
+        "ru": "Краснодар",
+        "en": "Krasnodar"
+      },
+      {
+        "ru": "Новосибирск",
+        "en": "Novosibirsk"
+      },
+      {
+        "ru": "Казань",
+        "en": "Kazan"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Ростов дал русскому рэпу и «Касту», и Басту, поэтому его нередко называют столицей русского хип-хопа.",
+      "en": "Rostov gave Russian rap both Kasta and Basta, which is why it is often called the capital of Russian hip hop."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Каста_(группа)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой рэпер выступал ещё и под именем Ноггано?",
+      "en": "Which rapper also performed under the name Noggano?"
+    },
+    "options": [
+      {
+        "ru": "Лигалайз",
+        "en": "Legalize"
+      },
+      {
+        "ru": "Баста",
+        "en": "Basta"
+      },
+      {
+        "ru": "Гуф",
+        "en": "Guf"
+      },
+      {
+        "ru": "Тимати",
+        "en": "Timati"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Ноггано — хулиганский двойник Басты, появившийся в 2007 году и совсем не похожий на его лиричные песни.",
+      "en": "Noggano is Basta's hooligan alter ego, born in 2007 and nothing like his own lyrical songs."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Баста_(музыкант)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой ВИА пел «Вологду» и «Косил Ясь конюшину»?",
+      "en": "Which Soviet band sang \"Vologda\" and \"Yas Was Mowing Clover\"?"
+    },
+    "options": [
+      {
+        "ru": "«Самоцветы»",
+        "en": "Samotsvety"
+      },
+      {
+        "ru": "«Ариэль»",
+        "en": "Ariel"
+      },
+      {
+        "ru": "«Песняры»",
+        "en": "Pesniary"
+      },
+      {
+        "ru": "«Сябры»",
+        "en": "Syabry"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "В 1976 году «Песняры» первыми из советских ВИА отправились на гастроли по США.",
+      "en": "In 1976 Pesniary became the first Soviet pop-rock band to tour the United States."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Песняры"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какую песню в 2009 году официально назвали гимном российской космонавтики?",
+      "en": "Which song was officially named the anthem of Russian space flight in 2009?"
+    },
+    "options": [
+      {
+        "ru": "«Я — Земля»",
+        "en": "I Am the Earth"
+      },
+      {
+        "ru": "«Знаете, каким он парнем был»",
+        "en": "You Know What a Guy He Was"
+      },
+      {
+        "ru": "«Звёздное лето»",
+        "en": "Starry Summer"
+      },
+      {
+        "ru": "«Трава у дома»",
+        "en": "Grass by the Home"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Под неё экипажи идут к автобусу на старт, а в стихах, из которых она выросла, были сарай и глаза коровы.",
+      "en": "Crews walk to the launch bus to it, yet the poem it grew from had a barn and a cow's eyes."
+    },
+    "source": "https://en.wikipedia.org/wiki/Grass_by_the_Home"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что такое Учкудук из хита ансамбля «Ялла»?",
+      "en": "What is Uchkuduk in the hit by the band Yalla?"
+    },
+    "options": [
+      {
+        "ru": "Город в пустыне",
+        "en": "A desert town"
+      },
+      {
+        "ru": "Имя девушки",
+        "en": "A girl's name"
+      },
+      {
+        "ru": "Свадебный танец",
+        "en": "A wedding dance"
+      },
+      {
+        "ru": "Порода верблюдов",
+        "en": "A breed of camel"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "По-узбекски «Учкудук» значит «три колодца» — припев песни просто переводит название.",
+      "en": "In Uzbek \"Uchkuduk\" means \"three wells\": the chorus simply translates the name."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Учкудук"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "На какой гитаре в основном играл Высоцкий?",
+      "en": "What kind of guitar did Vysotsky mostly play?"
+    },
+    "options": [
+      {
+        "ru": "На электрогитаре",
+        "en": "Electric guitar"
+      },
+      {
+        "ru": "На семиструнной",
+        "en": "Seven-string"
+      },
+      {
+        "ru": "На шестиструнной",
+        "en": "Six-string"
+      },
+      {
+        "ru": "На двенадцатиструнной",
+        "en": "Twelve-string"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Семиструнная «русская» гитара настроена по соль-мажорному аккорду: на ней играли Окуджава, Галич, Визбор и многие барды.",
+      "en": "The seven-string Russian guitar is tuned to a G major chord; Okudzhava, Galich, Vizbor and many other bards played it."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Русская_семиструнная_гитара"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Гурченко впервые спела «Песенку о хорошем настроении»?",
+      "en": "In what year did Gurchenko first sing \"The Good Mood Song\"?"
+    },
+    "answer": 1956,
+    "range": [
+      1930,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Песня прозвучала в «Карнавальной ночи» — первом самостоятельном фильме Рязанова; для Гурченко это была лишь третья роль.",
+      "en": "It was in Carnival Night, Ryazanov's first film as sole director; for Gurchenko it was only her third screen role."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Карнавальная_ночь"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году впервые прозвучала «Катюша»?",
+      "en": "In what year was \"Katyusha\" first performed?"
+    },
+    "answer": 1938,
+    "range": [
+      1910,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Песню Блантера и Исаковского знают по всему миру: итальянские партизаны пели на её мотив «Fischia il vento».",
+      "en": "Blanter and Isakovsky's song went global: Italian partisans sang \"Fischia il vento\" to its tune."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Катюша_(песня)"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Андрей Макаревич со школьными друзьями основал «Машину времени»?",
+      "en": "In what year did Andrei Makarevich and school friends found Mashina Vremeni?"
+    },
+    "answer": 1969,
+    "range": [
+      1955,
+      2010
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Сначала группа называлась по-английски, The Kids и Time Machines, а русское имя получила только в 1973-м.",
+      "en": "At first the band had English names, The Kids and Time Machines; the Russian name came only in 1973."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Машина_времени_(группа)"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Россия впервые выступила на Евровидении?",
+      "en": "In what year did Russia first take part in Eurovision?"
+    },
+    "answer": 1994,
+    "range": [
+      1980,
+      2025
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Мария Кац под именем Юддифь спела «Вечный странник» и заняла девятое место.",
+      "en": "Maria Katz, as Youddiph, sang \"Eternal Wanderer\" and finished ninth."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Россия_на_«Евровидении»"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет было Владимиру Высоцкому, когда он умер в 1980 году?",
+      "en": "How old was Vladimir Vysotsky when he died in 1980?"
+    },
+    "answer": 42,
+    "range": [
+      20,
+      90
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "лет",
+      "en": "years old"
+    },
+    "fact": {
+      "ru": "Он умер в дни Московской Олимпиады; о смерти почти не сообщали, но проститься пришли десятки тысяч людей.",
+      "en": "He died during the Moscow Olympics; it was barely announced, yet tens of thousands came to say goodbye."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Высоцкий,_Владимир_Семёнович"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет было Виктору Цою, когда он погиб в 1990 году?",
+      "en": "How old was Viktor Tsoi when he died in 1990?"
+    },
+    "answer": 28,
+    "range": [
+      16,
+      76
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "лет",
+      "en": "years old"
+    },
+    "fact": {
+      "ru": "Последний большой концерт «Кино» прошёл в «Лужниках» за семь недель до этого, и ради него зажгли олимпийский огонь.",
+      "en": "Kino's last big show was at Luzhniki seven weeks earlier, and the Olympic flame was lit for it."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Цой,_Виктор_Робертович"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет было Юре Шатунову, когда он стал солистом «Ласкового мая»?",
+      "en": "How old was Yura Shatunov when he became the singer of Laskovy Mai?"
+    },
+    "answer": 13,
+    "range": [
+      5,
+      50
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "лет",
+      "en": "years old"
+    },
+    "fact": {
+      "ru": "Воспитанник детдома, он попал в оренбургский интернат № 2, где осенью 1986 года и появилась группа.",
+      "en": "An orphanage boy, he ended up at boarding school No. 2 in Orenburg, where the band was born in autumn 1986."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Шатунов,_Юрий_Васильевич"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "«Калинку» часто считают народной. В каком году её сочинили?",
+      "en": "\"Kalinka\" is often taken for a folk song. In what year was it written?"
+    },
+    "answer": 1860,
+    "range": [
+      1750,
+      2010
+    ],
+    "step": 1,
+    "tolerance": 15,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Её написал саратовский композитор Иван Ларионов для театрального представления, а народные хоры быстро сделали её «народной».",
+      "en": "Saratov composer Ivan Larionov wrote it for a stage show, and folk choirs soon made it sound like a folk song."
+    },
+    "source": "https://en.wikipedia.org/wiki/Kalinka_(1860_song)"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году впервые прозвучала песня «Пусть всегда будет солнце»?",
+      "en": "In what year was the song \"May There Always Be Sunshine\" first heard?"
+    },
+    "answer": 1962,
+    "range": [
+      1940,
+      2010
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Припев — стишок четырёхлетнего мальчика, напечатанный ещё в 1928 году и попавший в книгу Чуковского «От двух до пяти».",
+      "en": "The refrain is a four-year-old boy's verse, printed back in 1928 and quoted in Chukovsky's book From Two to Five."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Пусть_всегда_будет_солнце"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Борис Гребенщиков основал «Аквариум»?",
+      "en": "In what year did Boris Grebenshchikov found Aquarium?"
+    },
+    "answer": 1972,
+    "range": [
+      1955,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Группу он собрал вместе с другом, поэтом Анатолием «Джорджем» Гуницким, а первая официальная пластинка вышла лишь в конце 1980-х.",
+      "en": "He started it with his friend, poet Anatoly \"George\" Gunitsky; their first official record came out only in the late 1980s."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Аквариум_(группа)"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году вышел первый альбом Земфиры?",
+      "en": "In what year did Zemfira release her first album?"
+    },
+    "answer": 1999,
+    "range": [
+      1960,
+      2010
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Альбом «Земфира» спродюсировал Илья Лагутенко из «Мумий Тролля», услышав её демозаписи.",
+      "en": "Her debut album was produced by Ilya Lagutenko of Mumiy Troll after he heard her demo tapes."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Земфира_(альбом)"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году открылся Ленинградский рок-клуб?",
+      "en": "In what year did the Leningrad Rock Club open?"
+    },
+    "answer": 1981,
+    "range": [
+      1965,
+      2025
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Клуб под присмотром властей дал легальную сцену «Аквариуму», «Кино», «Алисе» и «Зоопарку».",
+      "en": "The club, watched over by the authorities, gave a legal stage to Aquarium, Kino, Alisa and Zoopark."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Ленинградский_рок-клуб"
+  }
+]

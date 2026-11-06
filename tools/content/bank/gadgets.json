@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Для какой машины изначально придумали раскладку клавиатуры QWERTY?",
+   "en": "Which machine was the QWERTY keyboard layout first designed for?"
+  },
+  "options": [
+   {
+    "ru": "Для кассового аппарата",
+    "en": "The cash register"
+   },
+   {
+    "ru": "Для шифровальной машины",
+    "en": "A cipher machine"
+   },
+   {
+    "ru": "Для пишущей машинки",
+    "en": "The typewriter"
+   },
+   {
+    "ru": "Для первого компьютера",
+    "en": "The first computer"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Её придумал Кристофер Шоулз для своей пишущей машинки в 1870-х, а компьютеры унаследовали её почти через сто лет.",
+   "en": "Christopher Sholes laid it out for his typewriter in the 1870s; computers inherited it almost a century later."
+  },
+  "source": "https://en.wikipedia.org/wiki/QWERTY"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что нарисовано на значке «Сохранить» во многих программах?",
+   "en": "What does the Save icon in many programs show?"
+  },
+  "options": [
+   {
+    "ru": "Сейф",
+    "en": "A safe"
+   },
+   {
+    "ru": "Микросхема",
+    "en": "A microchip"
+   },
+   {
+    "ru": "Папка",
+    "en": "A folder"
+   },
+   {
+    "ru": "Дискета",
+    "en": "A floppy disk"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "На 3,5-дюймовую дискету влезало 1,44 МБ: меньше, чем весит одно фото с современного телефона.",
+   "en": "A 3.5-inch floppy held 1.44 MB: less than a single photo from a modern phone."
+  },
+  "source": "https://en.wikipedia.org/wiki/Floppy_disk"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что было написано в первой в мире SMS, отправленной в 1992 году?",
+   "en": "What did the world's first text message say, in 1992?"
+  },
+  "options": [
+   {
+    "ru": "«Привет, мир!»",
+    "en": "\"Hello world\""
+   },
+   {
+    "ru": "«С Рождеством!»",
+    "en": "\"Merry Christmas\""
+   },
+   {
+    "ru": "«С Новым годом!»",
+    "en": "\"Happy New Year\""
+   },
+   {
+    "ru": "«Ты меня слышишь?»",
+    "en": "\"Can you hear me?\""
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Её отправили с компьютера: набирать текст на телефонах тогда ещё было нельзя, а ответить получатель не мог.",
+   "en": "It was sent from a computer: phones could not type texts yet, so the receiver could not reply."
+  },
+  "source": "https://en.wikipedia.org/wiki/SMS"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1947 году инженеры нашли в компьютере настоящего «жучка» и вклеили его в журнал. Кого?",
+   "en": "In 1947 engineers found a real \"bug\" in a computer and taped it into the logbook. What was it?"
+  },
+  "options": [
+   {
+    "ru": "Мышь",
+    "en": "A mouse"
+   },
+   {
+    "ru": "Паука",
+    "en": "A spider"
+   },
+   {
+    "ru": "Мотылька",
+    "en": "A moth"
+   },
+   {
+    "ru": "Таракана",
+    "en": "A cockroach"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Мотылёк застрял в реле компьютера Harvard Mark II; сбои «багами» инженеры называли ещё со времён Эдисона.",
+   "en": "The moth was stuck in a relay of the Harvard Mark II; engineers had called glitches \"bugs\" since Edison's day."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bug_(engineering)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как интернет-данные чаще всего попадают с одного континента на другой?",
+   "en": "How does most internet data travel between continents?"
+  },
+  "options": [
+   {
+    "ru": "Через радиовышки на островах",
+    "en": "Via radio masts on islands"
+   },
+   {
+    "ru": "По кабелям на дне океана",
+    "en": "Through cables on the seabed"
+   },
+   {
+    "ru": "Через спутники",
+    "en": "Via satellites"
+   },
+   {
+    "ru": "Через стратостаты",
+    "en": "Via high-altitude balloons"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "По подводным кабелям идёт около 99% трафика через океаны, а толщиной они обычно всего около 2,5 см.",
+   "en": "Undersea cables carry about 99% of traffic across the oceans, and most are only about an inch thick."
+  },
+  "source": "https://en.wikipedia.org/wiki/Submarine_communications_cable"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Зачем на клавишах F и J (в русской раскладке А и О) есть маленькие выступы?",
+   "en": "Why do the F and J keys have small bumps on them?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы находить их не глядя",
+    "en": "To find them without looking"
+   },
+   {
+    "ru": "Это буквы шрифта Брайля",
+    "en": "They are Braille letters"
+   },
+   {
+    "ru": "Это следы от литья пластика",
+    "en": "They are moulding marks"
+   },
+   {
+    "ru": "Чтобы клавиши не залипали",
+    "en": "To stop the keys sticking"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На них ложатся указательные пальцы: нащупав выступы, руки сразу встают в позицию для слепой печати.",
+   "en": "Your index fingers rest there: feel the bumps and your hands are back in touch typing position."
+  },
+  "source": "https://en.wikipedia.org/wiki/Touch_typing"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько битов в одном байте?",
+   "en": "How many bits are there in one byte?"
+  },
+  "options": [
+   {
+    "ru": "2",
+    "en": "2"
+   },
+   {
+    "ru": "100",
+    "en": "100"
+   },
+   {
+    "ru": "10",
+    "en": "10"
+   },
+   {
+    "ru": "8",
+    "en": "8"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Латинская буква в кодировке UTF-8 занимает один байт, а русская — два.",
+   "en": "In UTF-8 a Latin letter takes one byte, while a Russian letter takes two."
+  },
+  "source": "https://en.wikipedia.org/wiki/Byte"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда взялось слово «пиксель»?",
+   "en": "Where does the word \"pixel\" come from?"
+  },
+  "options": [
+   {
+    "ru": "Название первой видеокарты",
+    "en": "The first graphics card's name"
+   },
+   {
+    "ru": "Сокращение от «элемент картинки»",
+    "en": "Short for \"picture element\""
+   },
+   {
+    "ru": "Латинское слово «точка»",
+    "en": "The Latin for \"dot\""
+   },
+   {
+    "ru": "Фамилия изобретателя",
+    "en": "The inventor's surname"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Первое цифровое изображение, скан фотографии младенца 1957 года, было размером всего 176 на 176 точек.",
+   "en": "The first digital image, a 1957 scan of a baby photo, was just 176 by 176 pixels."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pixel"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "С кем Билл Гейтс основал Microsoft?",
+   "en": "Who founded Microsoft together with Bill Gates?"
+  },
+  "options": [
+   {
+    "ru": "Со Стивом Возняком",
+    "en": "Steve Wozniak"
+   },
+   {
+    "ru": "С Ларри Пейджем",
+    "en": "Larry Page"
+   },
+   {
+    "ru": "С Полом Алленом",
+    "en": "Paul Allen"
+   },
+   {
+    "ru": "Со Стивом Джобсом",
+    "en": "Steve Jobs"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Школьные друзья основали её в 1975 году; первую программу для Altair 8800 они написали, даже не имея самого компьютера.",
+   "en": "The school friends founded it in 1975; they wrote their first program for the Altair 8800 without owning one."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_Microsoft"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где на самом деле хранятся файлы в «облаке»?",
+   "en": "Where are files in \"the cloud\" really stored?"
+  },
+  "options": [
+   {
+    "ru": "На спутниках",
+    "en": "On satellites"
+   },
+   {
+    "ru": "В радиоволнах",
+    "en": "In radio waves"
+   },
+   {
+    "ru": "В SIM-карте телефона",
+    "en": "In your phone's SIM card"
+   },
+   {
+    "ru": "В зданиях, полных серверов",
+    "en": "In buildings full of servers"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Облако — это дата-центры на земле; серверы так греются, что их строят даже у Полярного круга, ради холода.",
+   "en": "The cloud is data centres on the ground; servers run so hot that some are built near the Arctic Circle for the cold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Data_center"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как Google называл версии Android с 2009 по 2018 год?",
+   "en": "What were Android versions named after from 2009 to 2018?"
+  },
+  "options": [
+   {
+    "ru": "Городами",
+    "en": "Cities"
+   },
+   {
+    "ru": "Сладостями",
+    "en": "Desserts and sweets"
+   },
+   {
+    "ru": "Планетами",
+    "en": "Planets"
+   },
+   {
+    "ru": "Динозаврами",
+    "en": "Dinosaurs"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "От Cupcake до Pie, ещё и по алфавиту; в 2019 году от сладких названий отказались в пользу простых номеров.",
+   "en": "From Cupcake to Pie, in alphabetical order; in 2019 Google dropped the sweet names for plain numbers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Android_version_history"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего в основном делают компьютерные микросхемы?",
+   "en": "What are computer chips mostly made of?"
+  },
+  "options": [
+   {
+    "ru": "Из пластика",
+    "en": "Plastic"
+   },
+   {
+    "ru": "Из меди",
+    "en": "Copper"
+   },
+   {
+    "ru": "Из золота",
+    "en": "Gold"
+   },
+   {
+    "ru": "Из кремния",
+    "en": "Silicon"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Кремний добывают из обычного кварцевого песка; он и дал имя Кремниевой долине.",
+   "en": "Silicon is made from ordinary quartz sand, and it gave Silicon Valley its name."
+  },
+  "source": "https://en.wikipedia.org/wiki/Silicon"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кого в английском называли словом computer задолго до появления машин?",
+   "en": "Long before machines, who or what was called a \"computer\"?"
+  },
+  "options": [
+   {
+    "ru": "Человека, делавшего расчёты",
+    "en": "A person doing sums"
+   },
+   {
+    "ru": "Счёты",
+    "en": "An abacus"
+   },
+   {
+    "ru": "Учебник арифметики",
+    "en": "An arithmetic textbook"
+   },
+   {
+    "ru": "Часовщика",
+    "en": "A clockmaker"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это была профессия: к 1880 году все «компьютеры» Гарвардской обсерватории были женщинами, обсчитывавшими данные о звёздах.",
+   "en": "It was a job: by 1880 every \"computer\" at the Harvard Observatory was a woman crunching data on the stars."
+  },
+  "source": "https://en.wikipedia.org/wiki/Computer_(occupation)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что значат палочка и кружок на кнопках и выключателях питания?",
+   "en": "What do the line and circle on power buttons and switches mean?"
+  },
+  "options": [
+   {
+    "ru": "Палочка «вкл», кружок «выкл»",
+    "en": "Line is on, circle is off"
+   },
+   {
+    "ru": "Это буква P от слова power",
+    "en": "It is a P for power"
+   },
+   {
+    "ru": "Это вилка и розетка",
+    "en": "A plug and a socket"
+   },
+   {
+    "ru": "Это солнце над горизонтом",
+    "en": "A sun over the horizon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На выключателях их так и пишут, I и O, а в международный стандарт IEC эти значки попали ещё в 1973 году.",
+   "en": "Switches are often marked I and O for the same reason; the symbols entered the IEC international standard in 1973."
+  },
+  "source": "https://en.wikipedia.org/wiki/Power_symbol"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что означает буква G в словах 4G и 5G?",
+   "en": "What does the G in 4G and 5G stand for?"
+  },
+  "options": [
+   {
+    "ru": "Гигагерц",
+    "en": "Gigahertz"
+   },
+   {
+    "ru": "Глобальный",
+    "en": "Global"
+   },
+   {
+    "ru": "Гигабайт",
+    "en": "Gigabyte"
+   },
+   {
+    "ru": "Поколение",
+    "en": "Generation"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Сети первого поколения были аналоговыми и умели только звонить; SMS появились лишь со вторым, GSM.",
+   "en": "First generation networks were analogue and only made calls; texting arrived with the second, GSM."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cellular_network"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего был сделан корпус самой первой компьютерной мыши в 1964 году?",
+   "en": "What was the case of the very first computer mouse, in 1964, made of?"
+  },
+  "options": [
+   {
+    "ru": "Из дерева",
+    "en": "Wood"
+   },
+   {
+    "ru": "Из стали",
+    "en": "Steel"
+   },
+   {
+    "ru": "Из стекла",
+    "en": "Glass"
+   },
+   {
+    "ru": "Из резины",
+    "en": "Rubber"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мышь Дугласа Энгельбарта была деревянной коробочкой с двумя колёсиками; провод сзади напоминал хвост.",
+   "en": "Douglas Engelbart's mouse was a wooden box on two metal wheels; the cord at the back looked like a tail."
+  },
+  "source": "https://www.computinghistory.org.uk/det/5403/Douglas-Engelbart-invents-the-mouse/"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялось название Wi-Fi?",
+   "en": "Where did the name Wi-Fi come from?"
+  },
+  "options": [
+   {
+    "ru": "Рекламщики обыграли слово Hi-Fi",
+    "en": "An ad agency's play on Hi-Fi"
+   },
+   {
+    "ru": "Название городка в Уэльсе",
+    "en": "A town in Wales"
+   },
+   {
+    "ru": "Инициалы изобретателей",
+    "en": "The inventors' initials"
+   },
+   {
+    "ru": "Сокращение от Wide Field",
+    "en": "Short for \"Wide Field\""
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его придумало агентство Interbrand в 1999 году, чтобы звучало как Hi-Fi, знакомое всем по музыкальной технике.",
+   "en": "The agency Interbrand coined it in 1999 to sound like Hi-Fi, the familiar term from stereo equipment."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wi-Fi"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько стоил первый компьютер Apple I в 1976 году?",
+   "en": "What did the first Apple I computer cost in 1976?"
+  },
+  "options": [
+   {
+    "ru": "$99",
+    "en": "$99"
+   },
+   {
+    "ru": "$666,66",
+    "en": "$666.66"
+   },
+   {
+    "ru": "$999,99",
+    "en": "$999.99"
+   },
+   {
+    "ru": "$1 976",
+    "en": "$1,976"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Возняк любил повторяющиеся цифры, а заодно это была наценка в треть к цене в 500 долларов; о «числе зверя» он и не думал.",
+   "en": "Wozniak liked repeating digits, and it was a one-third markup on $500; he never thought of the number of the beast."
+  },
+  "source": "https://en.wikipedia.org/wiki/Apple_I"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Для чего в IBM в 1981 году придумали сочетание Ctrl+Alt+Del?",
+   "en": "What did IBM first create Ctrl+Alt+Del for, in 1981?"
+  },
+  "options": [
+   {
+    "ru": "Для быстрой перезагрузки",
+    "en": "A quick restart"
+   },
+   {
+    "ru": "Для диспетчера задач",
+    "en": "Opening the task manager"
+   },
+   {
+    "ru": "Для входа по паролю",
+    "en": "Logging in with a password"
+   },
+   {
+    "ru": "Для вызова справки",
+    "en": "Calling up help"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Инженер Дэвид Брэдли выбрал клавиши, которые не нажать одной рукой; Билл Гейтс позже назвал это сочетание ошибкой.",
+   "en": "Engineer David Bradley picked keys you cannot press with one hand; Bill Gates later called the combo a mistake."
+  },
+  "source": "https://en.wikipedia.org/wiki/Control-Alt-Delete"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что чувствует экран смартфона, когда вы его касаетесь?",
+   "en": "What does a smartphone screen sense when you touch it?"
+  },
+  "options": [
+   {
+    "ru": "Только силу нажатия",
+    "en": "Only how hard you press"
+   },
+   {
+    "ru": "Тепло пальца",
+    "en": "The warmth of your finger"
+   },
+   {
+    "ru": "Звук касания",
+    "en": "The sound of the tap"
+   },
+   {
+    "ru": "Электропроводность пальца",
+    "en": "Your finger's conductivity"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Ёмкостный экран чувствует, как палец меняет его электрическое поле, поэтому не слушается перчаток, зато слушается сосиски.",
+   "en": "A capacitive screen feels your finger change its electric field, so it ignores gloves but works with a sausage."
+  },
+  "source": "https://en.wikipedia.org/wiki/Touchscreen"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему жёсткий диск прозвали «винчестером»?",
+   "en": "Why were hard drives nicknamed \"Winchesters\"?"
+  },
+  "options": [
+   {
+    "ru": "В честь винтовки",
+    "en": "After a rifle"
+   },
+   {
+    "ru": "По фамилии изобретателя",
+    "en": "After the inventor"
+   },
+   {
+    "ru": "Это аббревиатура",
+    "en": "It is an acronym"
+   },
+   {
+    "ru": "Так звали собаку инженера",
+    "en": "After an engineer's dog"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У IBM 3340 (1973) было два модуля по 30 МБ, «30-30», как патрон знаменитой винтовки Winchester .30-30.",
+   "en": "The IBM 3340 (1973) had two 30 MB modules, a \"30-30\", like the famous Winchester .30-30 rifle."
+  },
+  "source": "https://en.wikipedia.org/wiki/IBM_3340"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сигналы скольких спутников, как минимум, нужны телефону, чтобы найти себя по GPS?",
+   "en": "At least how many satellites must a phone hear to find its position by GPS?"
+  },
+  "options": [
+   {
+    "ru": "1",
+    "en": "1"
+   },
+   {
+    "ru": "4",
+    "en": "4"
+   },
+   {
+    "ru": "24",
+    "en": "24"
+   },
+   {
+    "ru": "12",
+    "en": "12"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Три спутника дают точку в пространстве, а четвёртый поправляет неточные часы самого телефона.",
+   "en": "Three satellites fix a point in space; the fourth corrects the phone's own inaccurate clock."
+  },
+  "source": "https://en.wikipedia.org/wiki/Global_Positioning_System"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Перфокарты, которыми программировали первые компьютеры, сначала управляли…",
+   "en": "Punched cards, used to program early computers, first controlled…"
+  },
+  "options": [
+   {
+    "ru": "Ткацким станком",
+    "en": "A weaving loom"
+   },
+   {
+    "ru": "Телеграфом",
+    "en": "The telegraph"
+   },
+   {
+    "ru": "Паровозом",
+    "en": "A steam engine"
+   },
+   {
+    "ru": "Маяком",
+    "en": "A lighthouse"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Станок Жаккара (1804) ткал узор по цепочке карт с дырочками, и эта идея вдохновила Бэббиджа на его вычислительную машину.",
+   "en": "Jacquard's loom (1804) wove patterns from a chain of punched cards, and the idea inspired Babbage's computing engine."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jacquard_machine"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем Microsoft добавила в Windows пасьянс «Косынка»?",
+   "en": "Why did Microsoft put Solitaire into Windows?"
+  },
+  "options": [
+   {
+    "ru": "Это была шутка программиста",
+    "en": "As a programmer's prank"
+   },
+   {
+    "ru": "Чтобы учить работать мышью",
+    "en": "To teach using a mouse"
+   },
+   {
+    "ru": "По просьбе казино",
+    "en": "At a casino's request"
+   },
+   {
+    "ru": "Чтобы проверять мониторы",
+    "en": "To test monitors"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Перетаскивая карты, люди привыкали к мыши. Игру летом 1988 года написал стажёр Microsoft Уэс Черри.",
+   "en": "Dragging cards got people used to the mouse. A Microsoft intern, Wes Cherry, wrote it in the summer of 1988."
+  },
+  "source": "https://en.wikipedia.org/wiki/Microsoft_Solitaire"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Для чего в 1994 году придумали QR-код?",
+   "en": "What was the QR code invented for in 1994?"
+  },
+  "options": [
+   {
+    "ru": "Для меню в ресторанах",
+    "en": "Restaurant menus"
+   },
+   {
+    "ru": "Учёт деталей машин на заводе",
+    "en": "Tracking car parts in factories"
+   },
+   {
+    "ru": "Для билетов в метро",
+    "en": "Metro tickets"
+   },
+   {
+    "ru": "Для защиты банкнот",
+    "en": "Protecting banknotes"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Его создала японская Denso Wave из группы Toyota; узор подсказали чёрные и белые камни игры го.",
+   "en": "Denso Wave of the Toyota group made it; the black and white stones of the game Go inspired the pattern."
+  },
+  "source": "https://en.wikipedia.org/wiki/QR_code"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое животное стало талисманом Linux?",
+   "en": "Which animal is the mascot of Linux?"
+  },
+  "options": [
+   {
+    "ru": "Сова",
+    "en": "An owl"
+   },
+   {
+    "ru": "Лиса",
+    "en": "A fox"
+   },
+   {
+    "ru": "Слон",
+    "en": "An elephant"
+   },
+   {
+    "ru": "Пингвин",
+    "en": "A penguin"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Линус Торвальдс уверял, что его однажды укусил маленький пингвин в зоопарке австралийской Канберры.",
+   "en": "Linus Torvalds claimed a little penguin had once nibbled him at a zoo in Canberra, Australia."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tux_(mascot)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Закон Мура: число транзисторов в микросхеме удваивается примерно раз в…",
+   "en": "Moore's law: the number of transistors on a chip doubles roughly every…"
+  },
+  "options": [
+   {
+    "ru": "2 года",
+    "en": "2 years"
+   },
+   {
+    "ru": "2 месяца",
+    "en": "2 months"
+   },
+   {
+    "ru": "50 лет",
+    "en": "50 years"
+   },
+   {
+    "ru": "10 лет",
+    "en": "10 years"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1965 году Гордон Мур из будущей Intel предсказал удвоение каждый год, а в 1975-м поправился: раз в два года.",
+   "en": "In 1965 Gordon Moore, later of Intel, predicted a doubling every year; in 1975 he revised it to every two years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Moore%27s_law"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Советский компьютер «Сетунь» (1958) был очень необычным. Чем?",
+   "en": "The Soviet computer Setun (1958) was very unusual. Why?"
+  },
+  "options": [
+   {
+    "ru": "Считал в троичной системе",
+    "en": "It counted in threes, not twos"
+   },
+   {
+    "ru": "Работал без электричества",
+    "en": "It ran without electricity"
+   },
+   {
+    "ru": "Помещался в чемодан",
+    "en": "It fitted in a suitcase"
+   },
+   {
+    "ru": "Понимал речь",
+    "en": "It understood speech"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его создали в МГУ под руководством Николая Брусенцова, и до 1965 года завод в Казани выпустил 50 таких машин.",
+   "en": "It was designed at Moscow State University under Nikolai Brusentsov, and a Kazan plant built 50 of them by 1965."
+  },
+  "source": "https://en.wikipedia.org/wiki/Setun"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что рекламировал первый в истории спам, разосланный в 1978 году?",
+   "en": "What did the first ever spam email, sent in 1978, advertise?"
+  },
+  "options": [
+   {
+    "ru": "Лотерею",
+    "en": "A lottery"
+   },
+   {
+    "ru": "Таблетки для похудения",
+    "en": "Diet pills"
+   },
+   {
+    "ru": "Службу знакомств",
+    "en": "A dating service"
+   },
+   {
+    "ru": "Новые компьютеры",
+    "en": "New computers"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Сотрудник DEC Гэри Тюрк позвал на показ новых машин около 400 пользователей ARPANET: ругали все, но продажи вышли на миллионы.",
+   "en": "DEC's Gary Thuerk invited about 400 ARPANET users to see new machines: nearly all complained, but it sold millions."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gary_Thuerk"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где в 1999 году начали продавать первый телефон со встроенной камерой?",
+   "en": "Where did the first phone with a built-in camera go on sale, in 1999?"
+  },
+  "options": [
+   {
+    "ru": "В США",
+    "en": "The USA"
+   },
+   {
+    "ru": "В Японии",
+    "en": "Japan"
+   },
+   {
+    "ru": "В Финляндии",
+    "en": "Finland"
+   },
+   {
+    "ru": "В Германии",
+    "en": "Germany"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "У Kyocera VP-210 была фронтальная камера на 0,11 мегапикселя для видеозвонков, и помнил он лишь 20 фото.",
+   "en": "The Kyocera VP-210 had a 0.11 megapixel front camera for video calls and stored just 20 photos."
+  },
+  "source": "https://en.wikipedia.org/wiki/Camera_phone"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Brain (1986) считают первым вирусом для IBM PC. Зачем его написали братья Алви?",
+   "en": "Brain (1986) is seen as the first IBM PC virus. Why did the Alvi brothers write it?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы ловить пиратов",
+    "en": "To catch software pirates"
+   },
+   {
+    "ru": "Чтобы красть деньги",
+    "en": "To steal money"
+   },
+   {
+    "ru": "На спор с другом",
+    "en": "For a bet with a friend"
+   },
+   {
+    "ru": "Отомстить начальнику",
+    "en": "To get back at a boss"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так они защищали свою медицинскую программу от копий, и вирус даже показывал их адрес и телефоны, чтобы звонили «лечиться».",
+   "en": "They were guarding their medical software from copying; the virus even showed their address and phones for a \"cure\"."
+  },
+  "source": "https://en.wikipedia.org/wiki/Brain_(computer_virus)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где в 1950 году заработала первая советская ЭВМ, МЭСМ?",
+   "en": "Where did the first Soviet computer, MESM, come to life in 1950?"
+  },
+  "options": [
+   {
+    "ru": "Под Киевом",
+    "en": "Near Kyiv"
+   },
+   {
+    "ru": "В Ленинграде",
+    "en": "Leningrad"
+   },
+   {
+    "ru": "В Москве",
+    "en": "Moscow"
+   },
+   {
+    "ru": "В Новосибирске",
+    "en": "Novosibirsk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сергей Лебедев собрал её в бывшем монастырском общежитии в Феофании; в машине было около 6000 радиоламп.",
+   "en": "Sergei Lebedev built it in a former convent hostel at Feofaniya; it ran on about 6,000 vacuum tubes."
+  },
+  "source": "https://en.wikipedia.org/wiki/MESM"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто стал первыми программистами компьютера ENIAC?",
+   "en": "Who were the first programmers of the ENIAC computer?"
+  },
+  "options": [
+   {
+    "ru": "Учёные из Германии",
+    "en": "German scientists"
+   },
+   {
+    "ru": "Армейские офицеры",
+    "en": "Army officers"
+   },
+   {
+    "ru": "Шесть женщин-математиков",
+    "en": "Six women mathematicians"
+   },
+   {
+    "ru": "Школьники-отличники",
+    "en": "Top school pupils"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Языков программирования не было: они разбирались по чертежам и переставляли кабели, но на торжественный запуск их даже не позвали.",
+   "en": "With no programming languages, they learned from blueprints and rewired cables, yet were not even invited to the launch."
+  },
+  "source": "https://en.wikipedia.org/wiki/ENIAC"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь чего назван компьютер Apple Macintosh?",
+   "en": "What is the Apple Macintosh named after?"
+  },
+  "options": [
+   {
+    "ru": "Непромокаемого плаща",
+    "en": "A raincoat"
+   },
+   {
+    "ru": "Фамилии дизайнера",
+    "en": "Its designer's surname"
+   },
+   {
+    "ru": "Сорта яблок",
+    "en": "A variety of apple"
+   },
+   {
+    "ru": "Улицы в Купертино",
+    "en": "A street in Cupertino"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Джеф Раскин любил яблоки McIntosh, а написание изменили, чтобы не спорить с аудиофирмой McIntosh.",
+   "en": "Jef Raskin loved McIntosh apples; the spelling was changed to avoid a clash with the audio firm McIntosh."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mac_(computer)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько оперативной памяти было у бортового компьютера «Аполлона», летавшего на Луну?",
+   "en": "How much working memory did the Apollo guidance computer that flew to the Moon have?"
+  },
+  "options": [
+   {
+    "ru": "Около 4 МБ",
+    "en": "About 4 MB"
+   },
+   {
+    "ru": "Около 400 МБ",
+    "en": "About 400 MB"
+   },
+   {
+    "ru": "Около 4 КБ",
+    "en": "About 4 KB"
+   },
+   {
+    "ru": "Около 4 ГБ",
+    "en": "About 4 GB"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "2048 слов по 16 бит, около 4 КБ: примерно в миллион раз меньше, чем 4 ГБ оперативной памяти в обычном телефоне.",
+   "en": "2,048 words of 16 bits, about 4 KB: roughly a million times less than the 4 GB of RAM in an ordinary phone."
+  },
+  "source": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему модемы при подключении к интернету по телефону так визжали?",
+   "en": "Why did dial-up modems screech when connecting to the internet?"
+  },
+  "options": [
+   {
+    "ru": "Так проверялся динамик",
+    "en": "It was a speaker test"
+   },
+   {
+    "ru": "Это шумела старая линия",
+    "en": "It was just old line noise"
+   },
+   {
+    "ru": "Модемы договаривались звуками",
+    "en": "The modems were talking in sound"
+   },
+   {
+    "ru": "Чтобы никто не снял трубку",
+    "en": "To warn people off the phone"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Телефонная линия передавала только звук, поэтому модемы проверяли её тонами и договаривались о скорости.",
+   "en": "A phone line carried only sound, so modems tested it with tones and agreed on a speed out loud."
+  },
+  "source": "https://en.wikipedia.org/wiki/Modem"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь чего назван язык программирования Python?",
+   "en": "What is the Python programming language named after?"
+  },
+  "options": [
+   {
+    "ru": "Комик-группы «Монти Пайтон»",
+    "en": "The Monty Python comedy group"
+   },
+   {
+    "ru": "Питомца автора",
+    "en": "Its author's pet"
+   },
+   {
+    "ru": "Змеи питона",
+    "en": "The python snake"
+   },
+   {
+    "ru": "Греческого чудовища Пифона",
+    "en": "The Greek monster Python"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Гвидо ван Россум как раз читал сценарии «Летающего цирка Монти Пайтона» и хотел короткое странное имя.",
+   "en": "Guido van Rossum was reading Monty Python's Flying Circus scripts and wanted a short, odd name."
+  },
+  "source": "https://docs.python.org/3/faq/general.html#why-is-it-called-python"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "За какое изобретение дали Нобелевскую премию по химии 2019 года?",
+   "en": "Which invention won the 2019 Nobel Prize in Chemistry?"
+  },
+  "options": [
+   {
+    "ru": "Технология Wi-Fi",
+    "en": "Wi-Fi"
+   },
+   {
+    "ru": "Сенсорный экран",
+    "en": "The touchscreen"
+   },
+   {
+    "ru": "Флешка",
+    "en": "The USB flash drive"
+   },
+   {
+    "ru": "Литий-ионный аккумулятор",
+    "en": "The lithium-ion battery"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Одному из лауреатов, Джону Гуденафу, было 97 лет: на тот момент он стал самым пожилым нобелевским лауреатом в истории.",
+   "en": "One winner, John Goodenough, was 97, at the time the oldest person ever awarded a Nobel prize."
+  },
+  "source": "https://en.wikipedia.org/wiki/John_B._Goodenough"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году впервые позвонили с портативного мобильного телефона?",
+   "en": "In which year was the first call made on a handheld mobile phone?"
+  },
+  "answer": 1973,
+  "range": [
+   1960,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Мартин Купер из Motorola позвонил прямо с улицы Нью-Йорка конкурентам, чтобы похвастаться.",
+   "en": "Motorola's Martin Cooper made it on a New York street, and he called a rival company to brag."
+  },
+  "source": "https://en.wikipedia.org/wiki/Martin_Cooper_(inventor)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько граммов весил телефон, с которого Мартин Купер сделал первый звонок с мобильного?",
+   "en": "How many grams did the phone Martin Cooper used for the first mobile call weigh?"
+  },
+  "answer": 1100,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 50,
+  "tolerance": 400,
+  "unit": {
+   "ru": "г",
+   "en": "g"
+  },
+  "fact": {
+   "ru": "Больше килограмма, а батареи хватало на полчаса разговора; заряжалась она десять часов.",
+   "en": "Over a kilogram, and the battery gave 30 minutes of talk after ten hours of charging."
+  },
+  "source": "https://en.wikipedia.org/wiki/Martin_Cooper_(inventor)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько тонн весил ENIAC, один из первых электронных компьютеров (1946)?",
+   "en": "How many tonnes did ENIAC, one of the first electronic computers (1946), weigh?"
+  },
+  "answer": 27,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "т",
+   "en": "t"
+  },
+  "fact": {
+   "ru": "Почти 18 тысяч радиоламп занимали целый зал, и поначалу какие-нибудь из них перегорали чуть ли не каждый день.",
+   "en": "Nearly 18,000 vacuum tubes filled a whole room, and at first several burned out almost every day."
+  },
+  "source": "https://en.wikipedia.org/wiki/ENIAC"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько дискет по 1,44 МБ нужно, чтобы уместить один CD на 700 МБ?",
+   "en": "How many 1.44 MB floppy disks would it take to hold one 700 MB CD?"
+  },
+  "answer": 500,
+  "range": [
+   0,
+   3000
+  ],
+  "step": 10,
+  "tolerance": 100,
+  "unit": {
+   "ru": "дискет",
+   "en": "disks"
+  },
+  "fact": {
+   "ru": "Ровно 500: в CD 737 280 000 байт, а в дискете 1 474 560, и делится без остатка.",
+   "en": "Exactly 500: a CD holds 737,280,000 bytes and a floppy 1,474,560, and it divides evenly."
+  },
+  "source": "https://en.wikipedia.org/wiki/CD-R"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году отправили первое письмо по электронной почте между двумя компьютерами?",
+   "en": "In which year was the first email sent between two computers?"
+  },
+  "answer": 1971,
+  "range": [
+   1950,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Текст не сохранился: Рэй Томлинсон считал, что это была бессмыслица вроде QWERTYUIOP. Он же выбрал для адресов значок @.",
+   "en": "The text was lost: Ray Tomlinson thought it was gibberish like QWERTYUIOP. He also chose the @ for addresses."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ray_Tomlinson"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году Ада Лавлейс опубликовала первую в истории компьютерную программу?",
+   "en": "In which year did Ada Lovelace publish the first ever computer program?"
+  },
+  "answer": 1843,
+  "range": [
+   1800,
+   1950
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Дочь поэта Байрона написала её для аналитической машины Бэббиджа, которую так и не достроили.",
+   "en": "Lord Byron's daughter wrote it for Babbage's Analytical Engine, which was never completed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ada_Lovelace"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году IBM представила первый жёсткий диск?",
+   "en": "In which year did IBM unveil the first hard disk drive?"
+  },
+  "answer": 1956,
+  "range": [
+   1920,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "IBM 350 был размером с два холодильника, весил около тонны и хранил всего 3,75 МБ.",
+   "en": "The IBM 350 was the size of two fridges, weighed about a tonne and held just 3.75 MB."
+  },
+  "source": "https://en.wikipedia.org/wiki/IBM_350"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько транзисторов было в первом серийном микропроцессоре Intel 4004 (1971)?",
+   "en": "How many transistors did the first commercial microprocessor, the Intel 4004 (1971), have?"
+  },
+  "answer": 2300,
+  "range": [
+   0,
+   20000
+  ],
+  "step": 100,
+  "tolerance": 1000,
+  "unit": {
+   "ru": "шт.",
+   "en": ""
+  },
+  "fact": {
+   "ru": "Всего 2300, а в чипе современного смартфона их десятки миллиардов. Делали 4004 для японского калькулятора.",
+   "en": "Just 2,300; a modern phone chip has tens of billions. The 4004 was made for a Japanese calculator."
+  },
+  "source": "https://en.wikipedia.org/wiki/Intel_4004"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько символов помещается в одну SMS латиницей?",
+   "en": "How many Latin characters fit into one SMS?"
+  },
+  "answer": 160,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 10,
+  "tolerance": 70,
+  "unit": {
+   "ru": "символов",
+   "en": "characters"
+  },
+  "fact": {
+   "ru": "Инженер Фридхельм Хиллебранд прикинул, что почти все открытки и телексы короче 160 знаков, и этого хватит.",
+   "en": "Engineer Friedhelm Hillebrand noted that nearly all postcards and telexes were under 160 characters, so it would do."
+  },
+  "source": "https://en.wikipedia.org/wiki/SMS"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько миллионов телефонов Nokia 3310 было продано?",
+   "en": "How many million Nokia 3310 phones were sold?"
+  },
+  "answer": 126,
+  "range": [
+   0,
+   500
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "млн",
+   "en": "million"
+  },
+  "fact": {
+   "ru": "Неубиваемый 3310 вышел в 2000 году; в нём была «Змейка» и батарея, державшая по нескольку дней.",
+   "en": "The \"indestructible\" 3310 came out in 2000, with Snake and a battery that lasted for days."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nokia_3310"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько клавиш на стандартной полноразмерной клавиатуре компьютера с цифровым блоком?",
+   "en": "How many keys are on a standard full-size computer keyboard with a number pad?"
+  },
+  "answer": 104,
+  "range": [
+   0,
+   300
+  ],
+  "step": 2,
+  "tolerance": 15,
+  "unit": {
+   "ru": "клавиш",
+   "en": "keys"
+  },
+  "fact": {
+   "ru": "В США стандарт 104 клавиши, в Европе 105, а у клавиатуры первого IBM PC в 1981 году их было всего 83.",
+   "en": "US keyboards have 104 keys and European ones 105; the first IBM PC keyboard in 1981 had just 83."
+  },
+  "source": "https://en.wikipedia.org/wiki/Computer_keyboard"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько килограммов весил Osborne 1 (1981), первый коммерчески успешный переносной компьютер?",
+   "en": "How many kilograms did the Osborne 1 (1981), the first successful portable computer, weigh?"
+  },
+  "answer": 11,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Его рекламировали как компьютер, который влезает под кресло в самолёте; а экран был всего 5 дюймов.",
+   "en": "It was sold as the computer that fits under an airline seat; its screen was just 5 inches across."
+  },
+  "source": "https://en.wikipedia.org/wiki/Osborne_1"
+ }
+]

@@ -1,0 +1,1506 @@
+[
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "На чьём флаге красный круг на белом поле?",
+      "en": "Whose flag is a red circle on a white field?"
+    },
+    "options": [
+      {
+        "ru": "Японии",
+        "en": "Japan"
+      },
+      {
+        "ru": "Южной Кореи",
+        "en": "South Korea"
+      },
+      {
+        "ru": "Китая",
+        "en": "China"
+      },
+      {
+        "ru": "Бангладеш",
+        "en": "Bangladesh"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Японцы называют страну Ниппон — «исток солнца», а флаг — Хиномару, «солнечный круг».",
+      "en": "Japan calls itself Nippon, 'origin of the sun', and its flag Hinomaru, 'circle of the sun'."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Japan"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой город — столица Австралии?",
+      "en": "Which city is the capital of Australia?"
+    },
+    "options": [
+      {
+        "ru": "Сидней",
+        "en": "Sydney"
+      },
+      {
+        "ru": "Мельбурн",
+        "en": "Melbourne"
+      },
+      {
+        "ru": "Канберра",
+        "en": "Canberra"
+      },
+      {
+        "ru": "Перт",
+        "en": "Perth"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Сидней и Мельбурн так и не уступили друг другу, поэтому столицу построили с нуля между ними.",
+      "en": "Sydney and Melbourne would not let each other win, so a new capital was built between them."
+    },
+    "source": "https://en.wikipedia.org/wiki/Canberra"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "На каком языке говорят в Бразилии?",
+      "en": "What is the main language of Brazil?"
+    },
+    "options": [
+      {
+        "ru": "Испанский",
+        "en": "Spanish"
+      },
+      {
+        "ru": "Португальский",
+        "en": "Portuguese"
+      },
+      {
+        "ru": "Французский",
+        "en": "French"
+      },
+      {
+        "ru": "Итальянский",
+        "en": "Italian"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "В 1494 году Испания и Португалия поделили Новый Свет по линии на карте, и выступ Бразилии достался Португалии.",
+      "en": "In 1494 Spain and Portugal split the New World along a line on the map, and Brazil's bulge fell to Portugal."
+    },
+    "source": "https://en.wikipedia.org/wiki/Treaty_of_Tordesillas"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Название какой страны происходит от латинского слова «серебро»?",
+      "en": "Which country's name comes from the Latin word for silver?"
+    },
+    "options": [
+      {
+        "ru": "Аргентина",
+        "en": "Argentina"
+      },
+      {
+        "ru": "Чили",
+        "en": "Chile"
+      },
+      {
+        "ru": "Перу",
+        "en": "Peru"
+      },
+      {
+        "ru": "Уругвай",
+        "en": "Uruguay"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Испанцы надеялись, что река Ла-Плата — «Серебряная» — приведёт их к горам серебра.",
+      "en": "Spanish explorers hoped the Río de la Plata, the 'silver river', led to mountains of silver."
+    },
+    "source": "https://en.wikipedia.org/wiki/Argentina"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой город — столица Турции?",
+      "en": "Which city is the capital of Turkey?"
+    },
+    "options": [
+      {
+        "ru": "Стамбул",
+        "en": "Istanbul"
+      },
+      {
+        "ru": "Анкара",
+        "en": "Ankara"
+      },
+      {
+        "ru": "Измир",
+        "en": "Izmir"
+      },
+      {
+        "ru": "Анталья",
+        "en": "Antalya"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "В 1923 году Ататюрк перенёс столицу в Анкару — тогда небольшой город в глубине Анатолии.",
+      "en": "In 1923 Atatürk moved the capital to Ankara, then a small town deep in Anatolia."
+    },
+    "source": "https://en.wikipedia.org/wiki/Ankara"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что означает название «Нидерланды»?",
+      "en": "What does the name 'Netherlands' mean?"
+    },
+    "options": [
+      {
+        "ru": "Низкие земли",
+        "en": "Low lands"
+      },
+      {
+        "ru": "Северные земли",
+        "en": "Northern lands"
+      },
+      {
+        "ru": "Земли франков",
+        "en": "Lands of the Franks"
+      },
+      {
+        "ru": "Страна тюльпанов",
+        "en": "Tulip land"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Голландия — лишь две из двенадцати провинций, и с 2020 года правительство не называет так страну даже в её рекламе.",
+      "en": "Holland is just two of the twelve provinces, and since 2020 the government has dropped the name even in promoting the country."
+    },
+    "source": "https://en.wikipedia.org/wiki/Netherlands"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что с 1992 года нельзя купить в обычном магазине Сингапура?",
+      "en": "What can't you buy in an ordinary Singapore shop since 1992?"
+    },
+    "options": [
+      {
+        "ru": "Жевательную резинку",
+        "en": "Chewing gum"
+      },
+      {
+        "ru": "Мороженое",
+        "en": "Ice cream"
+      },
+      {
+        "ru": "Газировку",
+        "en": "Fizzy drinks"
+      },
+      {
+        "ru": "Леденцы",
+        "en": "Lollipops"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Запрет ввели после того, как вандалы залепляли жвачкой двери поездов метро.",
+      "en": "The ban came after vandals jammed the doors of metro trains with gum."
+    },
+    "source": "https://en.wikipedia.org/wiki/Chewing_gum_sales_ban_in_Singapore"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что держит в клюве орёл на флаге Мексики?",
+      "en": "What is the eagle on Mexico's flag holding in its beak?"
+    },
+    "options": [
+      {
+        "ru": "Змею",
+        "en": "A snake"
+      },
+      {
+        "ru": "Рыбу",
+        "en": "A fish"
+      },
+      {
+        "ru": "Плод кактуса",
+        "en": "A cactus fruit"
+      },
+      {
+        "ru": "Ящерицу",
+        "en": "A lizard"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "По легенде ацтеки основали Теночтитлан, нынешний Мехико, там, где увидели орла на кактусе со змеёй.",
+      "en": "Legend says the Aztecs founded Tenochtitlan, today's Mexico City, where they saw an eagle on a cactus with a snake."
+    },
+    "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какое животное — национальный символ Шотландии?",
+      "en": "Which animal is the national animal of Scotland?"
+    },
+    "options": [
+      {
+        "ru": "Единорог",
+        "en": "The unicorn"
+      },
+      {
+        "ru": "Благородный олень",
+        "en": "The red deer"
+      },
+      {
+        "ru": "Беркут",
+        "en": "The golden eagle"
+      },
+      {
+        "ru": "Хайлендская корова",
+        "en": "The Highland cow"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "На королевском гербе Великобритании шотландский единорог стоит напротив английского льва.",
+      "en": "On the UK's royal coat of arms the Scottish unicorn stands opposite the English lion."
+    },
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Scotland"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "В какой стране овец больше, чем людей?",
+      "en": "In which country do sheep outnumber people?"
+    },
+    "options": [
+      {
+        "ru": "Новая Зеландия",
+        "en": "New Zealand"
+      },
+      {
+        "ru": "Нидерланды",
+        "en": "The Netherlands"
+      },
+      {
+        "ru": "Япония",
+        "en": "Japan"
+      },
+      {
+        "ru": "Канада",
+        "en": "Canada"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "На пике, в 1982 году, там было 70 миллионов овец — больше двадцати на каждого жителя.",
+      "en": "At the 1982 peak there were 70 million sheep, more than twenty for every New Zealander."
+    },
+    "source": "https://en.wikipedia.org/wiki/Sheep_farming_in_New_Zealand"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько государственных языков в Швейцарии?",
+      "en": "How many national languages does Switzerland have?"
+    },
+    "options": [
+      {
+        "ru": "Один",
+        "en": "One"
+      },
+      {
+        "ru": "Два",
+        "en": "Two"
+      },
+      {
+        "ru": "Три",
+        "en": "Three"
+      },
+      {
+        "ru": "Четыре",
+        "en": "Four"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Четвёртый, ретороманский, родной лишь примерно для одного швейцарца из двухсот.",
+      "en": "The fourth, Romansh, is the main language of only about one Swiss in two hundred."
+    },
+    "source": "https://en.wikipedia.org/wiki/Languages_of_Switzerland"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что есть на флагах Дании, Швеции, Норвегии, Финляндии и Исландии?",
+      "en": "What do the flags of Denmark, Sweden, Norway, Finland and Iceland all have?"
+    },
+    "options": [
+      {
+        "ru": "Крест, сдвинутый к древку",
+        "en": "A cross set off centre"
+      },
+      {
+        "ru": "Звезда в углу",
+        "en": "A star in the corner"
+      },
+      {
+        "ru": "Солнце",
+        "en": "A sun"
+      },
+      {
+        "ru": "Одна полоса",
+        "en": "A single stripe"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Все они пошли от датского Даннеброга — по Книге рекордов Гиннесса, старейшего флага, который используется непрерывно.",
+      "en": "All of them follow Denmark's Dannebrog, by Guinness the oldest national flag in continuous use."
+    },
+    "source": "https://en.wikipedia.org/wiki/Nordic_cross_flag"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что означает название «Австралия»?",
+      "en": "What does the name 'Australia' mean?"
+    },
+    "options": [
+      {
+        "ru": "Южная земля",
+        "en": "Southern land"
+      },
+      {
+        "ru": "Великий остров",
+        "en": "Great island"
+      },
+      {
+        "ru": "Красная земля",
+        "en": "Red land"
+      },
+      {
+        "ru": "Страна кенгуру",
+        "en": "Kangaroo land"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "А вот Австрия — совсем другое: её немецкое имя Österreich значит «восточное королевство».",
+      "en": "Austria is unrelated: its German name, Österreich, means 'eastern realm'."
+    },
+    "source": "https://en.wikipedia.org/wiki/Name_of_Australia"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какая страна названа в честь Христофора Колумба?",
+      "en": "Which country is named after Christopher Columbus?"
+    },
+    "options": [
+      {
+        "ru": "Колумбия",
+        "en": "Colombia"
+      },
+      {
+        "ru": "Боливия",
+        "en": "Bolivia"
+      },
+      {
+        "ru": "Коста-Рика",
+        "en": "Costa Rica"
+      },
+      {
+        "ru": "Панама",
+        "en": "Panama"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это имя предложил венесуэльский революционер Франсиско де Миранда — сначала для всего Нового Света.",
+      "en": "Venezuelan revolutionary Francisco de Miranda proposed the name, at first for the whole New World."
+    },
+    "source": "https://en.wikipedia.org/wiki/Gran_Colombia"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какая страна Африки самая населённая?",
+      "en": "Which African country has the most people?"
+    },
+    "options": [
+      {
+        "ru": "Нигерия",
+        "en": "Nigeria"
+      },
+      {
+        "ru": "Египет",
+        "en": "Egypt"
+      },
+      {
+        "ru": "Эфиопия",
+        "en": "Ethiopia"
+      },
+      {
+        "ru": "ЮАР",
+        "en": "South Africa"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В Нигерии больше 200 миллионов человек, и говорят они на пятистах с лишним языках.",
+      "en": "Nigeria has over 200 million people, who speak more than 500 languages between them."
+    },
+    "source": "https://en.wikipedia.org/wiki/Demographics_of_Nigeria"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "У какой страны единственный в мире непрямоугольный флаг?",
+      "en": "Which country has the world's only non-rectangular national flag?"
+    },
+    "options": [
+      {
+        "ru": "Непал",
+        "en": "Nepal"
+      },
+      {
+        "ru": "Бутан",
+        "en": "Bhutan"
+      },
+      {
+        "ru": "Шри-Ланка",
+        "en": "Sri Lanka"
+      },
+      {
+        "ru": "Монголия",
+        "en": "Mongolia"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Флаг из двух треугольников так сложен, что конституция Непала даёт пошаговый чертёж, как его построить.",
+      "en": "The two-pennant flag is so tricky that Nepal's constitution gives step-by-step geometry for drawing it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Nepal"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "На флаге какой страны изображён дракон?",
+      "en": "Which country has a dragon on its flag?"
+    },
+    "options": [
+      {
+        "ru": "Бутан",
+        "en": "Bhutan"
+      },
+      {
+        "ru": "Китай",
+        "en": "China"
+      },
+      {
+        "ru": "Вьетнам",
+        "en": "Vietnam"
+      },
+      {
+        "ru": "Монголия",
+        "en": "Mongolia"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Бутанцы зовут свою страну Друк-Юл — «земля громового дракона»: гром в горах считали его рёвом.",
+      "en": "Bhutanese call their land Druk Yul, 'land of the thunder dragon': mountain thunder was its roar."
+    },
+    "source": "https://en.wikipedia.org/wiki/Druk"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "На флаге какой страны изображён храм?",
+      "en": "Which country's flag shows a temple?"
+    },
+    "options": [
+      {
+        "ru": "Камбоджа",
+        "en": "Cambodia"
+      },
+      {
+        "ru": "Индия",
+        "en": "India"
+      },
+      {
+        "ru": "Греция",
+        "en": "Greece"
+      },
+      {
+        "ru": "Египет",
+        "en": "Egypt"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Ангкор-Ват, крупнейшее культовое сооружение в мире, изображают на флагах Камбоджи примерно с 1875 года.",
+      "en": "Angkor Wat, the world's largest religious monument, has been on Cambodian flags since around 1875."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Cambodia"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "На флаге какой страны нарисована карта самой страны?",
+      "en": "Which country's flag shows a map of the country itself?"
+    },
+    "options": [
+      {
+        "ru": "Кипр",
+        "en": "Cyprus"
+      },
+      {
+        "ru": "Мальта",
+        "en": "Malta"
+      },
+      {
+        "ru": "Исландия",
+        "en": "Iceland"
+      },
+      {
+        "ru": "Ирландия",
+        "en": "Ireland"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Остров на флаге медного цвета: само английское слово copper («медь») происходит от названия Кипра.",
+      "en": "The island is copper coloured: the very word copper comes from the Latin name of Cyprus."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Cyprus"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что означает название «Венесуэла»?",
+      "en": "What does the name 'Venezuela' mean?"
+    },
+    "options": [
+      {
+        "ru": "Маленькая Венеция",
+        "en": "Little Venice"
+      },
+      {
+        "ru": "Земля Венеры",
+        "en": "Land of Venus"
+      },
+      {
+        "ru": "Долина ветров",
+        "en": "Windy valley"
+      },
+      {
+        "ru": "Серебряное озеро",
+        "en": "Silver lake"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Скорее всего, в 1499 году моряки увидели на озере Маракайбо дома на сваях, и те напомнили им Венецию.",
+      "en": "Most likely, in 1499 sailors saw houses on stilts on Lake Maracaibo that reminded them of Venice."
+    },
+    "source": "https://en.wikipedia.org/wiki/Venezuela"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что изображает голубой звёздный круг на флаге Бразилии?",
+      "en": "What does the blue starry globe on Brazil's flag show?"
+    },
+    "options": [
+      {
+        "ru": "Небо над Рио в одно утро",
+        "en": "The sky over Rio one morning"
+      },
+      {
+        "ru": "Карту мира",
+        "en": "A map of the world"
+      },
+      {
+        "ru": "Амазонку сверху",
+        "en": "The Amazon from above"
+      },
+      {
+        "ru": "Футбольный мяч",
+        "en": "A football"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это небо 15 ноября 1889 года, когда Бразилия стала республикой; каждая звезда — штат или столичный округ.",
+      "en": "It is the sky of 15 November 1889, when Brazil became a republic; each star is a state or the capital district."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "У гимна какой страны нет официальных слов?",
+      "en": "Which country's national anthem has no official words?"
+    },
+    "options": [
+      {
+        "ru": "Испании",
+        "en": "Spain"
+      },
+      {
+        "ru": "Италии",
+        "en": "Italy"
+      },
+      {
+        "ru": "Франции",
+        "en": "France"
+      },
+      {
+        "ru": "Греции",
+        "en": "Greece"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Мелодию напечатали ещё в 1761 году, но ни один текст так и не стал официальным, и с 1978 года гимн звучит без слов.",
+      "en": "The tune was printed as early as 1761, but no lyrics ever became official; since 1978 it has been played without words."
+    },
+    "source": "https://en.wikipedia.org/wiki/Marcha_Real"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "У флага какой страны разные рисунки на лицевой и обратной стороне?",
+      "en": "Whose national flag has different pictures on its front and back?"
+    },
+    "options": [
+      {
+        "ru": "Парагвая",
+        "en": "Paraguay"
+      },
+      {
+        "ru": "Уругвая",
+        "en": "Uruguay"
+      },
+      {
+        "ru": "Боливии",
+        "en": "Bolivia"
+      },
+      {
+        "ru": "Эквадора",
+        "en": "Ecuador"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Спереди — государственный герб со звездой, а сзади — печать казначейства со львом и девизом «Мир и справедливость».",
+      "en": "The front has the national arms with a star; the back has the treasury seal: a lion and 'Peace and Justice'."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Paraguay"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Каких питомцев в Швейцарии запрещено держать поодиночке?",
+      "en": "Which pet does Swiss law forbid you to keep on its own?"
+    },
+    "options": [
+      {
+        "ru": "Морских свинок",
+        "en": "Guinea pigs"
+      },
+      {
+        "ru": "Хомяков",
+        "en": "Hamsters"
+      },
+      {
+        "ru": "Черепах",
+        "en": "Tortoises"
+      },
+      {
+        "ru": "Змей",
+        "en": "Snakes"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Свинки — стадные животные и тоскуют в одиночестве; там даже дают свинку напрокат, если умер компаньон.",
+      "en": "Guinea pigs are herd animals that pine alone; there is even a rent-a-guinea-pig service if a companion dies."
+    },
+    "source": "https://www.mentalfloss.com/animals/pets/its-illegal-own-single-guinea-pig-switzerland"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "У большинства исландцев нет фамилий. Что их заменяет?",
+      "en": "Most Icelanders have no family name. What do they use instead?"
+    },
+    "options": [
+      {
+        "ru": "Имя отца с «сын» или «дочь»",
+        "en": "Father's name plus son or daughter"
+      },
+      {
+        "ru": "Название родной фермы",
+        "en": "The name of the family farm"
+      },
+      {
+        "ru": "Фамилию бабушки",
+        "en": "Their grandmother's surname"
+      },
+      {
+        "ru": "Название города",
+        "en": "The name of their town"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Поэтому телефонный справочник Исландии упорядочен по именам, и даже к премьер-министру обращаются просто по имени.",
+      "en": "That is why Iceland's phone book is sorted by first name, and even a prime minister is addressed by first name."
+    },
+    "source": "https://en.wikipedia.org/wiki/Icelandic_name"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В честь кого назвали Филиппины?",
+      "en": "Who were the Philippines named after?"
+    },
+    "options": [
+      {
+        "ru": "Испанского короля Филиппа II",
+        "en": "King Philip II of Spain"
+      },
+      {
+        "ru": "Апостола Филиппа",
+        "en": "Philip the Apostle"
+      },
+      {
+        "ru": "Филиппа Македонского",
+        "en": "Philip of Macedon"
+      },
+      {
+        "ru": "Принца Филиппа",
+        "en": "Prince Philip"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Острова назвали в 1543 году в честь наследного принца, а королём Испании Филипп стал лишь через 13 лет.",
+      "en": "The islands were named in 1543 after the crown prince; Philip only became king of Spain 13 years later."
+    },
+    "source": "https://en.wikipedia.org/wiki/Name_of_the_Philippines"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Название какой страны придумали как сокращение из названий её областей?",
+      "en": "Which country's name was invented as an acronym of its regions?"
+    },
+    "options": [
+      {
+        "ru": "Пакистан",
+        "en": "Pakistan"
+      },
+      {
+        "ru": "Бангладеш",
+        "en": "Bangladesh"
+      },
+      {
+        "ru": "Афганистан",
+        "en": "Afghanistan"
+      },
+      {
+        "ru": "Шри-Ланка",
+        "en": "Sri Lanka"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В 1933 году кембриджский студент Рахмат Али сложил его из Пенджаба, Афгании, Кашмира, Синда и Белуджистана.",
+      "en": "In 1933 Cambridge student Rahmat Ali built it from Punjab, Afghania, Kashmir, Sindh and Baluchistan."
+    },
+    "source": "https://en.wikipedia.org/wiki/Choudhry_Rahmat_Ali"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Куда Казахстан перенёс столицу из Алма-Аты в 1997 году?",
+      "en": "Where did Kazakhstan move its capital from Almaty in 1997?"
+    },
+    "options": [
+      {
+        "ru": "Астана",
+        "en": "Astana"
+      },
+      {
+        "ru": "Шымкент",
+        "en": "Shymkent"
+      },
+      {
+        "ru": "Караганда",
+        "en": "Karaganda"
+      },
+      {
+        "ru": "Актобе",
+        "en": "Aktobe"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Город успел побыть Акмолинском, Целиноградом и Акмолой, а Астаной стал только в 1998 году.",
+      "en": "The city had been Akmolinsk, Tselinograd and Akmola before it became Astana in 1998."
+    },
+    "source": "https://en.wikipedia.org/wiki/Astana"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В каком городе работают правительство и парламент Швейцарии?",
+      "en": "Which city is the seat of Switzerland's government and parliament?"
+    },
+    "options": [
+      {
+        "ru": "Цюрих",
+        "en": "Zurich"
+      },
+      {
+        "ru": "Женева",
+        "en": "Geneva"
+      },
+      {
+        "ru": "Берн",
+        "en": "Bern"
+      },
+      {
+        "ru": "Базель",
+        "en": "Basel"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Официально у Швейцарии вообще нет столицы: Берн называется лишь «федеральным городом».",
+      "en": "Officially Switzerland has no capital at all: Bern is only the 'federal city'."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bern"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "У какой страны три столицы — по одной на каждую ветвь власти?",
+      "en": "Which country has three capitals, one for each branch of power?"
+    },
+    "options": [
+      {
+        "ru": "ЮАР",
+        "en": "South Africa"
+      },
+      {
+        "ru": "Боливия",
+        "en": "Bolivia"
+      },
+      {
+        "ru": "Швейцария",
+        "en": "Switzerland"
+      },
+      {
+        "ru": "Малайзия",
+        "en": "Malaysia"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В Претории правительство, в Кейптауне парламент, а в Блумфонтейне Верховный апелляционный суд.",
+      "en": "Pretoria has the government, Cape Town the parliament and Bloemfontein the Supreme Court of Appeal."
+    },
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_with_multiple_capitals"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что означает название «Сингапур»?",
+      "en": "What does the name 'Singapore' mean?"
+    },
+    "options": [
+      {
+        "ru": "Город льва",
+        "en": "Lion city"
+      },
+      {
+        "ru": "Остров тигра",
+        "en": "Tiger island"
+      },
+      {
+        "ru": "Морские ворота",
+        "en": "Sea gate"
+      },
+      {
+        "ru": "Остров пряностей",
+        "en": "Spice island"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Львы там никогда не водились, так что зверь, которого, по легенде, увидел принц, был кем угодно, только не львом.",
+      "en": "Lions never lived there, so whatever beast the prince in the legend saw, it was not a lion."
+    },
+    "source": "https://en.wikipedia.org/wiki/Name_of_Singapore"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Символа какой части Великобритании нет на её флаге?",
+      "en": "Which nation of the UK has no symbol on the Union Jack?"
+    },
+    "options": [
+      {
+        "ru": "Уэльса",
+        "en": "Wales"
+      },
+      {
+        "ru": "Шотландии",
+        "en": "Scotland"
+      },
+      {
+        "ru": "Англии",
+        "en": "England"
+      },
+      {
+        "ru": "Северной Ирландии",
+        "en": "Northern Ireland"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Когда в 1606 году появился первый общий флаг, Уэльс уже считался частью Английского королевства.",
+      "en": "When the first Union Flag appeared in 1606, Wales was already part of the Kingdom of England."
+    },
+    "source": "https://en.wikipedia.org/wiki/Union_Jack"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В какой стране Южной Америки государственный язык — нидерландский?",
+      "en": "In which South American country is Dutch the official language?"
+    },
+    "options": [
+      {
+        "ru": "Суринам",
+        "en": "Suriname"
+      },
+      {
+        "ru": "Гайана",
+        "en": "Guyana"
+      },
+      {
+        "ru": "Парагвай",
+        "en": "Paraguay"
+      },
+      {
+        "ru": "Эквадор",
+        "en": "Ecuador"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В 1667 году голландцы оставили себе Суринам, а англичанам уступили Новый Амстердам — нынешний Нью-Йорк.",
+      "en": "In 1667 the Dutch kept Suriname and gave up New Amsterdam, today's New York, to the English."
+    },
+    "source": "https://en.wikipedia.org/wiki/Treaty_of_Breda_(1667)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В какой стране больше всего жителей из тех, где французский — официальный язык?",
+      "en": "Which country with French as an official language has the most people?"
+    },
+    "options": [
+      {
+        "ru": "ДР Конго",
+        "en": "DR Congo"
+      },
+      {
+        "ru": "Франция",
+        "en": "France"
+      },
+      {
+        "ru": "Канада",
+        "en": "Canada"
+      },
+      {
+        "ru": "Бельгия",
+        "en": "Belgium"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В Демократической Республике Конго больше 100 миллионов человек, а Киншаса крупнее Парижа.",
+      "en": "The Democratic Republic of the Congo has over 100 million people, and Kinshasa is bigger than Paris."
+    },
+    "source": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В какой из этих стран живёт больше людей, чем в России?",
+      "en": "Which of these countries has more people than Russia?"
+    },
+    "options": [
+      {
+        "ru": "Бангладеш",
+        "en": "Bangladesh"
+      },
+      {
+        "ru": "Япония",
+        "en": "Japan"
+      },
+      {
+        "ru": "Мексика",
+        "en": "Mexico"
+      },
+      {
+        "ru": "Германия",
+        "en": "Germany"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Бангладеш при этом примерно в 115 раз меньше России по площади.",
+      "en": "Yet Bangladesh is about 115 times smaller than Russia by area."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bangladesh"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В какой стране кивок головой означает «нет»?",
+      "en": "In which country does a nod of the head mean 'no'?"
+    },
+    "options": [
+      {
+        "ru": "Болгария",
+        "en": "Bulgaria"
+      },
+      {
+        "ru": "Польша",
+        "en": "Poland"
+      },
+      {
+        "ru": "Финляндия",
+        "en": "Finland"
+      },
+      {
+        "ru": "Португалия",
+        "en": "Portugal"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "А покачивание головой из стороны в сторону там значит «да» — туристы путаются постоянно.",
+      "en": "And shaking the head from side to side means 'yes', which confuses tourists all the time."
+    },
+    "source": "https://en.wikipedia.org/wiki/Nod_(gesture)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В какой стране чаевые официанту могут счесть почти оскорблением?",
+      "en": "In which country can tipping a waiter come across as almost rude?"
+    },
+    "options": [
+      {
+        "ru": "Япония",
+        "en": "Japan"
+      },
+      {
+        "ru": "США",
+        "en": "USA"
+      },
+      {
+        "ru": "Египет",
+        "en": "Egypt"
+      },
+      {
+        "ru": "Мексика",
+        "en": "Mexico"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Хорошее обслуживание там считается частью работы, и официант может догнать вас на улице, чтобы вернуть «забытые» деньги.",
+      "en": "Good service is seen as part of the job, and a waiter may chase you down the street to return your 'forgotten' money."
+    },
+    "source": "https://en.wikipedia.org/wiki/List_of_tipping_customs_by_country"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Язык какой европейской страны — родственник арабского?",
+      "en": "Which European country's language is a relative of Arabic?"
+    },
+    "options": [
+      {
+        "ru": "Мальта",
+        "en": "Malta"
+      },
+      {
+        "ru": "Кипр",
+        "en": "Cyprus"
+      },
+      {
+        "ru": "Албания",
+        "en": "Albania"
+      },
+      {
+        "ru": "Венгрия",
+        "en": "Hungary"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Мальтийский — единственный семитский язык с официальной латинской письменностью и единственный семитский язык ЕС.",
+      "en": "Maltese is the only Semitic language officially written in Latin letters, and the only Semitic language of the EU."
+    },
+    "source": "https://en.wikipedia.org/wiki/Maltese_language"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько государств входят в ООН?",
+      "en": "How many countries are members of the United Nations?"
+    },
+    "answer": 193,
+    "range": [
+      100,
+      400
+    ],
+    "step": 1,
+    "tolerance": 20,
+    "unit": {
+      "ru": "",
+      "en": ""
+    },
+    "fact": {
+      "ru": "В 1945 году ООН основала 51 страна, а последним в 2011 году вступил Южный Судан.",
+      "en": "51 countries founded the UN in 1945; the last to join was South Sudan in 2011."
+    },
+    "source": "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Гимн Греции — лишь начало длинной поэмы. Сколько в ней строф?",
+      "en": "Greece's anthem is just the start of a long poem. How many stanzas does it have?"
+    },
+    "answer": 158,
+    "range": [
+      0,
+      400
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "строф",
+      "en": "stanzas"
+    },
+    "fact": {
+      "ru": "Дионисиос Соломос написал «Гимн свободе» в 1823 году, а гимном в 1864 году стали лишь первые две строфы.",
+      "en": "Dionysios Solomos wrote the Hymn to Liberty in 1823; only its first two stanzas became the anthem, in 1864."
+    },
+    "source": "https://en.wikipedia.org/wiki/Hymn_to_Liberty"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Япония официально, законом, утвердила свой флаг?",
+      "en": "In what year did Japan make its flag official by law?"
+    },
+    "answer": 1999,
+    "range": [
+      1600,
+      2025
+    ],
+    "step": 1,
+    "tolerance": 20,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Солнечный круг использовали веками, но до закона 1999 года флаг был государственным лишь по традиции.",
+      "en": "The sun disc was used for centuries, but until the 1999 law it was the national flag only by custom."
+    },
+    "source": "https://en.wikipedia.org/wiki/Act_on_National_Flag_and_Anthem"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Бразилиа, построенная с нуля, стала столицей Бразилии?",
+      "en": "In what year did Brasília, built from scratch, become Brazil's capital?"
+    },
+    "answer": 1960,
+    "range": [
+      1800,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Город возвели всего за 41 месяц, а сверху его план похож на самолёт.",
+      "en": "The city went up in just 41 months, and from the air its plan looks like an aeroplane."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bras%C3%ADlia"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько миллионов человек жило в Китае по переписи 2020 года?",
+      "en": "How many million people lived in China at the 2020 census?"
+    },
+    "answer": 1410,
+    "range": [
+      100,
+      4000
+    ],
+    "step": 10,
+    "tolerance": 150,
+    "unit": {
+      "ru": "млн",
+      "en": "million"
+    },
+    "fact": {
+      "ru": "Почти в десять раз больше, чем в России, и всё же к 2023 году Индия, по оценке ООН, обогнала Китай.",
+      "en": "Nearly ten times Russia's population, yet by 2023 India had overtaken China, by UN estimates."
+    },
+    "source": "https://en.wikipedia.org/wiki/2020_Chinese_census"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько языков признаёт конституция Индии?",
+      "en": "How many languages are officially recognised in India's constitution?"
+    },
+    "answer": 22,
+    "range": [
+      0,
+      80
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "языка",
+      "en": "languages"
+    },
+    "fact": {
+      "ru": "Номинал на индийских банкнотах написан на 17 языках, из них 15 — в отдельной табличке на обороте.",
+      "en": "Indian banknotes show their value in 17 languages, 15 of them in a panel on the back."
+    },
+    "source": "https://en.wikipedia.org/wiki/Languages_with_official_recognition_in_India"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько официальных языков у Евросоюза?",
+      "en": "How many official languages does the European Union have?"
+    },
+    "answer": 24,
+    "range": [
+      0,
+      80
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "языка",
+      "en": "languages"
+    },
+    "fact": {
+      "ru": "Каждый закон ЕС публикуется на всех из них, а ирландский стал полноправным рабочим языком лишь в 2022 году.",
+      "en": "Every EU law is published in all of them, and Irish became a full working language only in 2022."
+    },
+    "source": "https://en.wikipedia.org/wiki/Languages_of_the_European_Union"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году у Канады появился флаг с кленовым листом?",
+      "en": "In what year did Canada get its maple leaf flag?"
+    },
+    "answer": 1965,
+    "range": [
+      1800,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 20,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "До этого Канада ходила под красным флагом с британским «Юнион Джеком» в углу.",
+      "en": "Before that Canada flew a red flag with the British Union Jack in the corner."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Canada"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько красных и белых полос на флаге Малайзии?",
+      "en": "How many red and white stripes are on the flag of Malaysia?"
+    },
+    "answer": 14,
+    "range": [
+      0,
+      60
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "полос",
+      "en": "stripes"
+    },
+    "fact": {
+      "ru": "13 штатов плюс федеральные территории — поэтому и у звезды на флаге 14 лучей.",
+      "en": "13 states plus the federal territories, which is also why the star on the flag has 14 points."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "По легенде, датский флаг упал с неба прямо во время битвы. В каком году?",
+      "en": "Legend says the Danish flag fell from the sky during a battle. In what year?"
+    },
+    "answer": 1219,
+    "range": [
+      1000,
+      1800
+    ],
+    "step": 1,
+    "tolerance": 60,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Битва шла у Линданисе, нынешнего Таллина, а 15 июня датчане до сих пор отмечают День Вальдемара — день рождения флага.",
+      "en": "The battle was at Lyndanisse, today's Tallinn, and Danes still mark 15 June, Valdemar's Day, as the flag's birthday."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Denmark"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Нигерия перенесла столицу из Лагоса в Абуджу?",
+      "en": "In what year did Nigeria move its capital from Lagos to Abuja?"
+    },
+    "answer": 1991,
+    "range": [
+      1900,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 15,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Абуджу выбрали как нейтральную землю в центре страны, не принадлежащую ни одному крупному народу.",
+      "en": "Abuja was picked as neutral ground in the middle of the country, home to none of the big ethnic groups."
+    },
+    "source": "https://en.wikipedia.org/wiki/Abuja"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Бирма официально стала называться Мьянмой?",
+      "en": "In what year did Burma officially become Myanmar?"
+    },
+    "answer": 1989,
+    "range": [
+      1900,
+      2020
+    ],
+    "step": 1,
+    "tolerance": 15,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Это два варианта одного слова: «Мьянма» — книжная форма, «Бама» — разговорная.",
+      "en": "Both are forms of one word: Myanmar is the formal written name, Bama the spoken one."
+    },
+    "source": "https://en.wikipedia.org/wiki/Names_of_Myanmar"
+  }
+]

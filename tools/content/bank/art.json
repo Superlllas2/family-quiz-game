@@ -1,0 +1,1511 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто написал «Мону Лизу»?",
+   "en": "Who painted the Mona Lisa?"
+  },
+  "options": [
+   {
+    "ru": "Микеланджело",
+    "en": "Michelangelo"
+   },
+   {
+    "ru": "Леонардо да Винчи",
+    "en": "Leonardo da Vinci"
+   },
+   {
+    "ru": "Рафаэль",
+    "en": "Raphael"
+   },
+   {
+    "ru": "Тициан",
+    "en": "Titian"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Заказчик так её и не получил: Леонардо возил портрет с собой и дописывал его много лет.",
+   "en": "The client never got it: Leonardo kept the portrait with him and worked on it for years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mona_Lisa"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой художник отрезал себе часть уха?",
+   "en": "Which painter cut off part of his own ear?"
+  },
+  "options": [
+   {
+    "ru": "Рембрандт",
+    "en": "Rembrandt"
+   },
+   {
+    "ru": "Винсент Ван Гог",
+    "en": "Vincent van Gogh"
+   },
+   {
+    "ru": "Пабло Пикассо",
+    "en": "Pablo Picasso"
+   },
+   {
+    "ru": "Клод Моне",
+    "en": "Claude Monet"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Это случилось в Арле в декабре 1888 года, сразу после ссоры с Гогеном.",
+   "en": "It happened in Arles in December 1888, right after a quarrel with Gauguin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vincent_van_Gogh",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие звери на картине Шишкина «Утро в сосновом лесу»?",
+   "en": "Which animals are in Shishkin's Morning in a Pine Forest?"
+  },
+  "options": [
+   {
+    "ru": "Медведей",
+    "en": "Bears"
+   },
+   {
+    "ru": "Волков",
+    "en": "Wolves"
+   },
+   {
+    "ru": "Оленей",
+    "en": "Deer"
+   },
+   {
+    "ru": "Лис",
+    "en": "Foxes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Медведей написал не Шишкин, а Савицкий, но Третьяков велел стереть его подпись.",
+   "en": "The bears were painted by Savitsky, not Shishkin, but Tretyakov had his signature removed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Morning_in_a_Pine_Forest"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой музей официально держит у себя целую команду котов?",
+   "en": "Which museum famously keeps a whole team of cats?"
+  },
+  "options": [
+   {
+    "ru": "Эрмитаж",
+    "en": "The Hermitage"
+   },
+   {
+    "ru": "Третьяковская галерея",
+    "en": "The Tretyakov Gallery"
+   },
+   {
+    "ru": "Лувр",
+    "en": "The Louvre"
+   },
+   {
+    "ru": "Прадо",
+    "en": "The Prado"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Котов в Зимний дворец велела завести Елизавета Петровна в 1745 году — ловить мышей.",
+   "en": "Empress Elizabeth ordered cats for the Winter Palace in 1745 to catch the mice."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hermitage_cats"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что расписал Микеланджело за четыре года, с 1508 по 1512-й?",
+   "en": "What did Michelangelo spend 1508 to 1512 painting?"
+  },
+  "options": [
+   {
+    "ru": "Потолок Сикстинской капеллы",
+    "en": "The Sistine Chapel ceiling"
+   },
+   {
+    "ru": "Стены Лувра",
+    "en": "The walls of the Louvre"
+   },
+   {
+    "ru": "Купол Исаакиевского собора",
+    "en": "St Isaac's Cathedral dome"
+   },
+   {
+    "ru": "Собор Нотр-Дам",
+    "en": "Notre-Dame Cathedral"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он писал стоя на лесах с запрокинутой головой, а не лёжа на спине, как гласит легенда.",
+   "en": "He painted standing on scaffolding with his head tilted back, not lying down as the legend says."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что «растекается» на картине Сальвадора Дали «Постоянство памяти»?",
+   "en": "What is melting in Salvador Dali's The Persistence of Memory?"
+  },
+  "options": [
+   {
+    "ru": "Часы",
+    "en": "Watches"
+   },
+   {
+    "ru": "Свечи",
+    "en": "Candles"
+   },
+   {
+    "ru": "Мороженое",
+    "en": "Ice cream"
+   },
+   {
+    "ru": "Зеркала",
+    "en": "Mirrors"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По словам Дали, идею ему подсказал сыр камамбер, расплывшийся на жаре.",
+   "en": "Dali said the idea came to him from a Camembert cheese melting in the heat."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Persistence_of_Memory"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что чаще всего писал Иван Айвазовский?",
+   "en": "What did Ivan Aivazovsky paint most of all?"
+  },
+  "options": [
+   {
+    "ru": "Море",
+    "en": "The sea"
+   },
+   {
+    "ru": "Портреты царей",
+    "en": "Portraits of tsars"
+   },
+   {
+    "ru": "Натюрморты",
+    "en": "Still lifes"
+   },
+   {
+    "ru": "Зимний лес",
+    "en": "Winter forests"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Волны он писал по памяти, в мастерской, почти никогда не работая с натуры.",
+   "en": "He painted his waves from memory in the studio, almost never from life."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ivan_Aivazovsky"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что делают люди на картине Репина «Бурлаки на Волге»?",
+   "en": "What are the men doing in Repin's Barge Haulers on the Volga?"
+  },
+  "options": [
+   {
+    "ru": "Тянут баржу",
+    "en": "Pulling a barge"
+   },
+   {
+    "ru": "Ловят рыбу",
+    "en": "Fishing"
+   },
+   {
+    "ru": "Строят мост",
+    "en": "Building a bridge"
+   },
+   {
+    "ru": "Косят траву",
+    "en": "Mowing grass"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Первым в лямке идёт Канин — настоящий бурлак и поп-расстрига, которого Репин писал с натуры.",
+   "en": "The man in front is Kanin, a real hauler and a defrocked priest, whom Repin painted from life."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Бурлаки_на_Волге"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто написал картину «Крик»?",
+   "en": "Who painted The Scream?"
+  },
+  "options": [
+   {
+    "ru": "Эдвард Мунк",
+    "en": "Edvard Munch"
+   },
+   {
+    "ru": "Густав Климт",
+    "en": "Gustav Klimt"
+   },
+   {
+    "ru": "Клод Моне",
+    "en": "Claude Monet"
+   },
+   {
+    "ru": "Эгон Шиле",
+    "en": "Egon Schiele"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Крик» существует в нескольких версиях, и две из них в разные годы похищали из музеев Осло.",
+   "en": "There are several versions of The Scream, and two of them were stolen from Oslo museums."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Scream"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая гора видна вдали на гравюре Хокусая «Большая волна в Канагаве»?",
+   "en": "Which mountain is in the background of Hokusai's The Great Wave?"
+  },
+  "options": [
+   {
+    "ru": "Фудзи",
+    "en": "Mount Fuji"
+   },
+   {
+    "ru": "Эверест",
+    "en": "Everest"
+   },
+   {
+    "ru": "Килиманджаро",
+    "en": "Kilimanjaro"
+   },
+   {
+    "ru": "Эльбрус",
+    "en": "Elbrus"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Гравюра входит в серию «36 видов Фудзи», и гора на ней кажется крошечной под волной.",
+   "en": "The print is from the series Thirty-six Views of Mount Fuji; here the mountain looks tiny under the wave."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кем был Павел Третьяков, основатель знаменитой галереи?",
+   "en": "Who was Pavel Tretyakov, founder of the famous gallery?"
+  },
+  "options": [
+   {
+    "ru": "Купцом",
+    "en": "A merchant"
+   },
+   {
+    "ru": "Художником",
+    "en": "A painter"
+   },
+   {
+    "ru": "Великим князем",
+    "en": "A grand duke"
+   },
+   {
+    "ru": "Генералом",
+    "en": "A general"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он собирал русскую живопись почти 40 лет и в 1892 году подарил всю коллекцию Москве.",
+   "en": "He collected Russian art for nearly 40 years and gave the whole collection to Moscow in 1892."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pavel_Tretyakov"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чего не хватает у статуи Венеры Милосской?",
+   "en": "What is the Venus de Milo missing?"
+  },
+  "options": [
+   {
+    "ru": "Рук",
+    "en": "Her arms"
+   },
+   {
+    "ru": "Головы",
+    "en": "Her head"
+   },
+   {
+    "ru": "Ног",
+    "en": "Her legs"
+   },
+   {
+    "ru": "Крыльев",
+    "en": "Her wings"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её нашли в 1820 году на острове Милос уже без рук, и что они держали, спорят до сих пор.",
+   "en": "She was found on the island of Milos in 1820 already armless; what her hands held is still debated."
+  },
+  "source": "https://en.wikipedia.org/wiki/Venus_de_Milo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие птицы прилетели на знаменитой картине Алексея Саврасова?",
+   "en": "Which birds have come back in Alexei Savrasov's most famous painting?"
+  },
+  "options": [
+   {
+    "ru": "Грачи",
+    "en": "Rooks"
+   },
+   {
+    "ru": "Ласточки",
+    "en": "Swallows"
+   },
+   {
+    "ru": "Журавли",
+    "en": "Cranes"
+   },
+   {
+    "ru": "Аисты",
+    "en": "Storks"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Церковь с картины до сих пор стоит в посёлке Сусанино под Костромой.",
+   "en": "The church in the picture still stands in the village of Susanino near Kostroma."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Грачи_прилетели"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На чём стоит Венера на картине Боттичелли «Рождение Венеры»?",
+   "en": "What is Venus standing on in Botticelli's The Birth of Venus?"
+  },
+  "options": [
+   {
+    "ru": "На морской раковине",
+    "en": "A seashell"
+   },
+   {
+    "ru": "На облаке",
+    "en": "A cloud"
+   },
+   {
+    "ru": "На спине дельфина",
+    "en": "A dolphin's back"
+   },
+   {
+    "ru": "На лепестке лотоса",
+    "en": "A lotus petal"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По мифу богиня родилась из морской пены, а ветер Зефир пригнал её к берегу.",
+   "en": "In the myth the goddess was born from sea foam and the west wind Zephyr blew her ashore."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Birth_of_Venus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего составлены знаменитые портреты Джузеппе Арчимбольдо?",
+   "en": "What are Giuseppe Arcimboldo's famous portraits made of?"
+  },
+  "options": [
+   {
+    "ru": "Из фруктов и овощей",
+    "en": "Fruit and vegetables"
+   },
+   {
+    "ru": "Из букв",
+    "en": "Letters"
+   },
+   {
+    "ru": "Из цветных точек",
+    "en": "Coloured dots"
+   },
+   {
+    "ru": "Из кубов",
+    "en": "Cubes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он был придворным художником Габсбургов и даже императора Рудольфа II сложил из плодов в образе бога Вертумна.",
+   "en": "He was a Habsburg court painter and even built Emperor Rudolf II out of produce as the god Vertumnus."
+  },
+  "source": "https://en.wikipedia.org/wiki/Giuseppe_Arcimboldo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько «Чёрных квадратов» написал Казимир Малевич?",
+   "en": "How many Black Squares did Kazimir Malevich paint?"
+  },
+  "options": [
+   {
+    "ru": "Один",
+    "en": "One"
+   },
+   {
+    "ru": "Два",
+    "en": "Two"
+   },
+   {
+    "ru": "Четыре",
+    "en": "Four"
+   },
+   {
+    "ru": "Двенадцать",
+    "en": "Twelve"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Первый «Квадрат» весь в трещинах, а под чёрной краской рентген нашёл ещё два цветных изображения.",
+   "en": "The first one is badly cracked, and X-rays found two colourful earlier images under the black."
+  },
+  "source": "https://en.wikipedia.org/wiki/Black_Square_(painting)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего Микеланджело высек своего «Давида»?",
+   "en": "What did Michelangelo carve his David from?"
+  },
+  "options": [
+   {
+    "ru": "Из брошенной глыбы мрамора",
+    "en": "An abandoned block of marble"
+   },
+   {
+    "ru": "Из гранитной скалы",
+    "en": "A granite cliff"
+   },
+   {
+    "ru": "Из ствола дуба",
+    "en": "An oak trunk"
+   },
+   {
+    "ru": "Из десятка мраморных частей",
+    "en": "A dozen marble pieces"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Глыбу испортили и бросили другие скульпторы, и она 25 лет пролежала во дворе собора.",
+   "en": "Other sculptors had spoiled the block and it lay in the cathedral yard for 25 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/David_(Michelangelo)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что случилось с картиной Бэнкси сразу после её продажи на аукционе в 2018 году?",
+   "en": "What happened to a Banksy painting right after it sold at auction in 2018?"
+  },
+  "options": [
+   {
+    "ru": "Сама изрезалась на полоски",
+    "en": "It shredded itself"
+   },
+   {
+    "ru": "Загорелась",
+    "en": "It caught fire"
+   },
+   {
+    "ru": "С неё стекла краска",
+    "en": "Its paint ran off"
+   },
+   {
+    "ru": "Её украли из зала",
+    "en": "It was stolen from the room"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бэнкси спрятал шредер в раме, а полуразрезанную работу в 2021 году перепродали почти в 18 раз дороже.",
+   "en": "Banksy had hidden a shredder in the frame; in 2021 the half-shredded work resold for almost 18 times more."
+  },
+  "source": "https://en.wikipedia.org/wiki/Love_Is_in_the_Bin"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто написал «Девочку с персиками»?",
+   "en": "Who painted Girl with Peaches?"
+  },
+  "options": [
+   {
+    "ru": "Валентин Серов",
+    "en": "Valentin Serov"
+   },
+   {
+    "ru": "Илья Репин",
+    "en": "Ilya Repin"
+   },
+   {
+    "ru": "Карл Брюллов",
+    "en": "Karl Bryullov"
+   },
+   {
+    "ru": "Василий Суриков",
+    "en": "Vasily Surikov"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Художнику было 22 года, а 11-летняя Вера Мамонтова позировала ему больше месяца.",
+   "en": "The painter was 22, and 11-year-old Vera Mamontova sat for him for over a month."
+  },
+  "source": "https://en.wikipedia.org/wiki/Girl_with_Peaches"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую картину Репина вандалы атаковали и в 1913, и в 2018 году?",
+   "en": "Which Repin painting was attacked by vandals both in 1913 and in 2018?"
+  },
+  "options": [
+   {
+    "ru": "«Иван Грозный и сын его Иван»",
+    "en": "Ivan the Terrible and His Son"
+   },
+   {
+    "ru": "«Бурлаки на Волге»",
+    "en": "Barge Haulers on the Volga"
+   },
+   {
+    "ru": "«Запорожцы»",
+    "en": "Reply of the Zaporozhian Cossacks"
+   },
+   {
+    "ru": "«Не ждали»",
+    "en": "They Did Not Expect Him"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1913 году холст изрезали ножом, в 2018-м разбили стекло металлическим столбиком.",
+   "en": "In 1913 the canvas was slashed with a knife; in 2018 its glass was smashed with a metal post."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ivan_the_Terrible_and_His_Son_Ivan",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каким, по словам матери, было первое слово маленького Пабло Пикассо?",
+   "en": "According to his mother, what was little Pablo Picasso's first word?"
+  },
+  "options": [
+   {
+    "ru": "«Карандаш»",
+    "en": "Pencil"
+   },
+   {
+    "ru": "«Мама»",
+    "en": "Mummy"
+   },
+   {
+    "ru": "«Краска»",
+    "en": "Paint"
+   },
+   {
+    "ru": "«Нет»",
+    "en": "No"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он лепетал «пиз, пиз» — от испанского lápiz, «карандаш».",
+   "en": "He babbled \"piz, piz\", short for lapiz, the Spanish for pencil."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pablo_Picasso"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого изначально изображал «Мыслитель» Огюста Родена?",
+   "en": "Who was Rodin's The Thinker originally meant to be?"
+  },
+  "options": [
+   {
+    "ru": "Поэта Данте",
+    "en": "The poet Dante"
+   },
+   {
+    "ru": "Философа Сократа",
+    "en": "The philosopher Socrates"
+   },
+   {
+    "ru": "Поэта Гомера",
+    "en": "The poet Homer"
+   },
+   {
+    "ru": "Учёного Ньютона",
+    "en": "The scientist Newton"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он должен был сидеть над «Вратами ада» и смотреть на круги «Божественной комедии»; Роден звал его «Поэтом».",
+   "en": "He was to sit atop The Gates of Hell, gazing at Dante's Inferno; Rodin first called him The Poet."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Thinker"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему картину Рембрандта называют «Ночной дозор»?",
+   "en": "Why is Rembrandt's painting called The Night Watch?"
+  },
+  "options": [
+   {
+    "ru": "Её затемнил лак, а сцена дневная",
+    "en": "Varnish darkened a daytime scene"
+   },
+   {
+    "ru": "Рембрандт писал её ночами",
+    "en": "Rembrandt painted it at night"
+   },
+   {
+    "ru": "Её прятали от воров ночью",
+    "en": "It was hidden at night from thieves"
+   },
+   {
+    "ru": "Так звали отряд стражи",
+    "en": "That was the guard unit's name"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Название появилось лишь через сто с лишним лет, когда тёмный лак скрыл дневной свет на холсте.",
+   "en": "The name came over a century later, after dark varnish had hidden the daylight in the scene."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Night_Watch"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что висит в бостонском музее Гарднер на месте картин, украденных в 1990 году?",
+   "en": "What hangs in Boston's Gardner Museum where paintings were stolen in 1990?"
+  },
+  "options": [
+   {
+    "ru": "Пустые рамы",
+    "en": "Empty frames"
+   },
+   {
+    "ru": "Точные копии",
+    "en": "Exact copies"
+   },
+   {
+    "ru": "Фотографии картин",
+    "en": "Photos of the paintings"
+   },
+   {
+    "ru": "Другие картины",
+    "en": "Other paintings"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Завещание основательницы запрещает менять экспозицию, а дело о краже так и не раскрыто.",
+   "en": "The founder's will forbids changing the display, and the theft has never been solved."
+  },
+  "source": "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Ван Меегерена судили за продажу Герингу картины Вермеера. Как он спасся от обвинения в измене?",
+   "en": "Van Meegeren was tried for selling a Vermeer to Goering. How did he escape a treason charge?"
+  },
+  "options": [
+   {
+    "ru": "Доказал, что это его подделка",
+    "en": "He proved it was his own fake"
+   },
+   {
+    "ru": "Сбежал в Аргентину",
+    "en": "He fled to Argentina"
+   },
+   {
+    "ru": "Вернул все деньги",
+    "en": "He paid all the money back"
+   },
+   {
+    "ru": "Назвал картину подарком",
+    "en": "He said it was a gift"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он написал нового «Вермеера» при свидетелях и получил вместо измены всего год за подлог.",
+   "en": "He painted a new 'Vermeer' in front of witnesses and got just a year for forgery instead."
+  },
+  "source": "https://en.wikipedia.org/wiki/Han_van_Meegeren",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что, кроме красок, Густав Климт использовал в картине «Поцелуй»?",
+   "en": "Besides paint, what did Gustav Klimt use in The Kiss?"
+  },
+  "options": [
+   {
+    "ru": "Сусальное золото",
+    "en": "Gold leaf"
+   },
+   {
+    "ru": "Толчёный жемчуг",
+    "en": "Crushed pearls"
+   },
+   {
+    "ru": "Крылья бабочек",
+    "en": "Butterfly wings"
+   },
+   {
+    "ru": "Рыбью чешую",
+    "en": "Fish scales"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его отец был гравёром по золоту, а сам Климт вдохновлялся золотыми мозаиками Равенны.",
+   "en": "His father was a gold engraver, and Klimt was inspired by the gold mosaics of Ravenna."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего в эпоху Возрождения делали самую дорогую синюю краску — ультрамарин?",
+   "en": "What was ultramarine, the priciest Renaissance blue, made from?"
+  },
+  "options": [
+   {
+    "ru": "Из толчёного лазурита",
+    "en": "Ground lapis lazuli"
+   },
+   {
+    "ru": "Из черники",
+    "en": "Blueberries"
+   },
+   {
+    "ru": "Из сапфиров",
+    "en": "Sapphires"
+   },
+   {
+    "ru": "Из морской соли",
+    "en": "Sea salt"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Камень везли из Афганистана, краска стоила дороже золота, и её берегли для одежд Богоматери.",
+   "en": "The stone came from Afghanistan, the paint cost more than gold and was saved for the Virgin's robes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ultramarine"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего делали коричневую краску «мумия», которой художники писали до XX века?",
+   "en": "What was the paint called mummy brown, used until the 20th century, made from?"
+  },
+  "options": [
+   {
+    "ru": "Из толчёных египетских мумий",
+    "en": "Ground Egyptian mummies"
+   },
+   {
+    "ru": "Из нильского ила",
+    "en": "Nile mud"
+   },
+   {
+    "ru": "Из жжёного кофе",
+    "en": "Burnt coffee"
+   },
+   {
+    "ru": "Из ржавчины",
+    "en": "Rust"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Художник Бёрн-Джонс, узнав об этом, торжественно похоронил свой тюбик в саду.",
+   "en": "When the painter Burne-Jones found out, he solemnly buried his tube in the garden."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mummy_brown",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого Карл Брюллов вписал в толпу на «Последнем дне Помпеи»?",
+   "en": "Whom did Karl Bryullov paint into the crowd in The Last Day of Pompeii?"
+  },
+  "options": [
+   {
+    "ru": "Самого себя",
+    "en": "Himself"
+   },
+   {
+    "ru": "Императора Николая I",
+    "en": "Emperor Nicholas I"
+   },
+   {
+    "ru": "Пушкина",
+    "en": "Pushkin"
+   },
+   {
+    "ru": "Наполеона",
+    "en": "Napoleon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это художник с ящиком красок на голове: он спасает самое ценное.",
+   "en": "He is the artist carrying a box of paints on his head, saving what he values most."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Last_Day_of_Pompeii"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого НЕТ на картине Васнецова «Богатыри»?",
+   "en": "Who is NOT in Vasnetsov's painting Bogatyrs?"
+  },
+  "options": [
+   {
+    "ru": "Микулы Селяниновича",
+    "en": "Mikula Selyaninovich"
+   },
+   {
+    "ru": "Ильи Муромца",
+    "en": "Ilya Muromets"
+   },
+   {
+    "ru": "Добрыни Никитича",
+    "en": "Dobrynya Nikitich"
+   },
+   {
+    "ru": "Алёши Поповича",
+    "en": "Alyosha Popovich"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Васнецов писал «Богатырей» с перерывами больше 20 лет и искал лицо Ильи среди крестьян.",
+   "en": "Vasnetsov worked on it on and off for over 20 years and sought Ilya's face among peasants."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Богатыри_(картина_Васнецова)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем был Василий Кандинский, прежде чем в 30 лет взяться за живопись?",
+   "en": "What was Wassily Kandinsky before he took up painting at 30?"
+  },
+  "options": [
+   {
+    "ru": "Юристом",
+    "en": "A lawyer"
+   },
+   {
+    "ru": "Врачом",
+    "en": "A doctor"
+   },
+   {
+    "ru": "Моряком",
+    "en": "A sailor"
+   },
+   {
+    "ru": "Священником",
+    "en": "A priest"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он отказался от места преподавателя права в Дерпте и уехал учиться живописи в Мюнхен.",
+   "en": "He turned down a law teaching post at Dorpat and went to Munich to study painting."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wassily_Kandinsky"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где Анри Руссо видел джунгли, которые потом писал?",
+   "en": "Where did Henri Rousseau see the jungles he painted?"
+  },
+  "options": [
+   {
+    "ru": "В ботаническом саду Парижа",
+    "en": "In a Paris botanical garden"
+   },
+   {
+    "ru": "В Мексике",
+    "en": "In Mexico"
+   },
+   {
+    "ru": "В Африке",
+    "en": "In Africa"
+   },
+   {
+    "ru": "В Индии",
+    "en": "In India"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Поклонники сочиняли, будто он воевал в Мексике, но таможенник Руссо ни разу не выезжал из Франции.",
+   "en": "Fans claimed he had soldiered in Mexico, but Rousseau, a Paris customs clerk, never left France."
+  },
+  "source": "https://en.wikipedia.org/wiki/Henri_Rousseau"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Леонардо да Винчи писал в своих тетрадях?",
+   "en": "How did Leonardo da Vinci write in his notebooks?"
+  },
+  "options": [
+   {
+    "ru": "Зеркально, справа налево",
+    "en": "In mirror script, right to left"
+   },
+   {
+    "ru": "Цифровым шифром",
+    "en": "In a number code"
+   },
+   {
+    "ru": "Только по-латыни",
+    "en": "Only in Latin"
+   },
+   {
+    "ru": "Только рисунками",
+    "en": "Only in pictures"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Леонардо был левшой — возможно, так рука не размазывала свежие чернила.",
+   "en": "Leonardo was left-handed; perhaps this way his hand did not smudge the fresh ink."
+  },
+  "source": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему зрители заглядывали за картину Куинджи «Лунная ночь на Днепре»?",
+   "en": "Why did viewers look behind Kuindzhi's Moonlit Night on the Dnieper?"
+  },
+  "options": [
+   {
+    "ru": "Искали лампу за холстом",
+    "en": "To find a lamp behind it"
+   },
+   {
+    "ru": "Искали подпись",
+    "en": "To find the signature"
+   },
+   {
+    "ru": "Там был второй рисунок",
+    "en": "There was a second picture"
+   },
+   {
+    "ru": "Там прятали цену",
+    "en": "The price was written there"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её показали одну в тёмном зале под лучом света, и луна будто светилась сама.",
+   "en": "It was shown alone in a dark room under a single beam, and the moon seemed to glow by itself."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Лунная_ночь_на_Днепре"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как писал свои картины Джексон Поллок?",
+   "en": "How did Jackson Pollock make his paintings?"
+  },
+  "options": [
+   {
+    "ru": "Брызгал краской на холст на полу",
+    "en": "Dripped paint onto a floor canvas"
+   },
+   {
+    "ru": "Рисовал только пальцами",
+    "en": "Painted only with his fingers"
+   },
+   {
+    "ru": "Писал по сырой штукатурке",
+    "en": "Painted on wet plaster"
+   },
+   {
+    "ru": "Выжигал по дереву",
+    "en": "Burned them into wood"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Журнал Time прозвал его «Джек-Разбрызгиватель» — по аналогии с Джеком-Потрошителем.",
+   "en": "Time magazine nicknamed him Jack the Dripper, a play on Jack the Ripper."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jackson_Pollock"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что написано под трубкой на картине Рене Магритта?",
+   "en": "What is written under the pipe in Rene Magritte's painting?"
+  },
+  "options": [
+   {
+    "ru": "«Это не трубка»",
+    "en": "This is not a pipe"
+   },
+   {
+    "ru": "«Это трубка»",
+    "en": "This is a pipe"
+   },
+   {
+    "ru": "«Это не картина»",
+    "en": "This is not a painting"
+   },
+   {
+    "ru": "«Трубка мира»",
+    "en": "Peace pipe"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Магритт отвечал: попробуйте набить её табаком — это ведь только изображение трубки.",
+   "en": "Magritte's answer: try stuffing it with tobacco; it is only a picture of a pipe."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Treachery_of_Images"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто держал «Мону Лизу» у себя в спальне?",
+   "en": "Who kept the Mona Lisa in his bedroom?"
+  },
+  "options": [
+   {
+    "ru": "Наполеон",
+    "en": "Napoleon"
+   },
+   {
+    "ru": "Пётр I",
+    "en": "Peter the Great"
+   },
+   {
+    "ru": "Сальвадор Дали",
+    "en": "Salvador Dali"
+   },
+   {
+    "ru": "Пабло Пикассо",
+    "en": "Pablo Picasso"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "После революции картину отдали Лувру, но Наполеон на время повесил её у себя в Тюильри.",
+   "en": "After the Revolution it went to the Louvre, but Napoleon hung it for a while in his Tuileries bedroom."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mona_Lisa"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую работу Маурицио Каттелан продал в 2019 году за 120 тысяч долларов?",
+   "en": "What artwork did Maurizio Cattelan sell for $120,000 in 2019?"
+  },
+  "options": [
+   {
+    "ru": "Банан, приклеенный скотчем",
+    "en": "A banana taped to a wall"
+   },
+   {
+    "ru": "Пустой белый холст",
+    "en": "A blank white canvas"
+   },
+   {
+    "ru": "Кирпич в раме",
+    "en": "A framed brick"
+   },
+   {
+    "ru": "Резиновую уточку",
+    "en": "A rubber duck"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Банан тут же съел другой художник, но покупатель получает сертификат, а сам банан просто заменяют.",
+   "en": "Another artist promptly ate the banana; the buyer gets a certificate and the fruit is simply replaced."
+  },
+  "source": "https://en.wikipedia.org/wiki/Comedian_(artwork)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько картин с кувшинками написал Клод Моне в своём саду в Живерни?",
+   "en": "How many water lily paintings did Claude Monet make in his garden at Giverny?"
+  },
+  "answer": 250,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 10,
+  "tolerance": 100,
+  "unit": {
+   "ru": "картин",
+   "en": "paintings"
+  },
+  "fact": {
+   "ru": "Пруд он устроил сам, отведя воду из речки, и писал его последние тридцать с лишним лет жизни.",
+   "en": "He made the pond himself by diverting a stream, and painted it for the last 30-odd years of his life."
+  },
+  "source": "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какой высоты «Мона Лиза» (без рамы)?",
+   "en": "How tall is the Mona Lisa, without the frame?"
+  },
+  "answer": 77,
+  "range": [
+   10,
+   300
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "Она размером с газетный лист — многие в Лувре удивляются, какая она маленькая.",
+   "en": "It is about the size of a newspaper page; many visitors are surprised how small it is."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mona_Lisa"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году Малевич написал первый «Чёрный квадрат»?",
+   "en": "In what year did Malevich paint the first Black Square?"
+  },
+  "answer": 1915,
+  "range": [
+   1700,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "На выставке 1915 года он повесил его в «красный угол», где в домах вешали иконы.",
+   "en": "At the 1915 show he hung it high in the corner where Russian homes hung icons."
+  },
+  "source": "https://en.wikipedia.org/wiki/Black_Square_(painting)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Микеланджело, когда он закончил «Пьету» в Риме?",
+   "en": "How old was Michelangelo when he finished the Pieta in Rome?"
+  },
+  "answer": 24,
+  "range": [
+   10,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Это единственная работа, которую он подписал, — по преданию, услышав, что её приписывают другому.",
+   "en": "It is the only work he ever signed, reportedly after hearing it credited to someone else."
+  },
+  "source": "https://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько миллионов долларов в 2017 году продали «Спасителя мира» Леонардо?",
+   "en": "For how many million dollars was Leonardo's Salvator Mundi sold in 2017?"
+  },
+  "answer": 450,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 150,
+  "unit": {
+   "ru": "млн $",
+   "en": "million $"
+  },
+  "fact": {
+   "ru": "В 1958 году её продали всего за 45 фунтов как работу ученика.",
+   "en": "In 1958 it had sold for just 45 pounds as a work by a follower."
+  },
+  "source": "https://en.wikipedia.org/wiki/Salvator_Mundi_(Leonardo)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет Александр Иванов писал «Явление Христа народу»?",
+   "en": "How many years did Alexander Ivanov spend on The Appearance of Christ to the People?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Иванов умер от холеры в 1858 году, а весть о том, что царь купил картину, пришла через несколько часов после его смерти.",
+   "en": "Ivanov died of cholera in 1858; news that the tsar had bought the painting came hours after his death."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Appearance_of_Christ_Before_the_People"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько холстов с банками супа Campbell's выставил Энди Уорхол в 1962 году?",
+   "en": "How many canvases of Campbell's soup cans did Andy Warhol show in 1962?"
+  },
+  "answer": 32,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "холстов",
+   "en": "canvases"
+  },
+  "fact": {
+   "ru": "Каждый холст — свой сорт супа, а сам Уорхол говорил, что 20 лет ел этот суп на обед.",
+   "en": "Each canvas shows a different flavour; Warhol said he had eaten that soup for lunch for twenty years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Campbell%27s_Soup_Cans"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Рафаэлю, когда он умер?",
+   "en": "How old was Raphael when he died?"
+  },
+  "answer": 37,
+  "range": [
+   10,
+   100
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Он умер в 1520 году, по преданию, в свой день рождения, и похоронен в римском Пантеоне.",
+   "en": "He died in 1520, reportedly on his birthday, and is buried in the Pantheon in Rome."
+  },
+  "source": "https://en.wikipedia.org/wiki/Raphael"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какой высоты мраморный «Давид» Микеланджело, без постамента?",
+   "en": "How tall is Michelangelo's marble David, without its pedestal?"
+  },
+  "answer": 517,
+  "range": [
+   100,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 150,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "Сначала его готовили для крыши собора, видимо, поэтому голова и руки такие крупные: чтобы их было видно снизу.",
+   "en": "He was first meant for the cathedral roofline, probably why his head and hands are so big: to read from below."
+  },
+  "source": "https://en.wikipedia.org/wiki/David_(Michelangelo)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько картин написал Иван Айвазовский за свою жизнь?",
+   "en": "How many paintings did Ivan Aivazovsky make in his lifetime?"
+  },
+  "answer": 6000,
+  "range": [
+   0,
+   20000
+  ],
+  "step": 100,
+  "tolerance": 2000,
+  "unit": {
+   "ru": "картин",
+   "en": "paintings"
+  },
+  "fact": {
+   "ru": "Он писал почти до последнего дня: после смерти на мольберте осталась неоконченная картина.",
+   "en": "He painted almost to his last day: an unfinished canvas was left on his easel."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ivan_Aivazovsky"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько картин маслом написал Ван Гог примерно за 10 лет творчества?",
+   "en": "About how many oil paintings did Van Gogh make in roughly ten years?"
+  },
+  "answer": 860,
+  "range": [
+   0,
+   3000
+  ],
+  "step": 10,
+  "tolerance": 250,
+  "unit": {
+   "ru": "картин",
+   "en": "paintings"
+  },
+  "fact": {
+   "ru": "Большинство он написал за последние два года жизни — иногда по картине в день.",
+   "en": "Most of them in the last two years of his life, sometimes one a day."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какой высоты скульптура Веры Мухиной «Рабочий и колхозница» (без постамента)?",
+   "en": "How tall is Vera Mukhina's Worker and Kolkhoz Woman, without its pedestal?"
+  },
+  "answer": 24.5,
+  "range": [
+   5,
+   100
+  ],
+  "step": 0.5,
+  "tolerance": 8,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Её из нержавеющей стали сделали для выставки в Париже 1937 года, где она стояла напротив павильона Германии.",
+   "en": "Made of stainless steel for the 1937 Paris expo, it stood facing the German pavilion."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Рабочий_и_колхозница"
+ }
+]

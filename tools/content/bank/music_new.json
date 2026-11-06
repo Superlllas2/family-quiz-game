@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чья песня «Shape of You» первой на Spotify набрала 3 миллиарда прослушиваний (2021)?",
+   "en": "Whose song 'Shape of You' was the first to pass 3 billion streams on Spotify (2021)?"
+  },
+  "options": [
+   {
+    "ru": "Эд Ширан",
+    "en": "Ed Sheeran"
+   },
+   {
+    "ru": "Джастин Бибер",
+    "en": "Justin Bieber"
+   },
+   {
+    "ru": "Бруно Марс",
+    "en": "Bruno Mars"
+   },
+   {
+    "ru": "Дрейк",
+    "en": "Drake"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ширан писал её для дуэта Рианны и Rudimental, но глава его лейбла уговорил оставить песню себе.",
+   "en": "Sheeran wrote it as a duet for Rihanna and Rudimental, but his label boss talked him into keeping it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shape_of_You"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Альбомы Адель называются «19», «21», «25» и «30». Что значат эти числа?",
+   "en": "Adele's albums are called 19, 21, 25 and 30. What do the numbers mean?"
+  },
+  "options": [
+   {
+    "ru": "Её возраст на тот момент",
+    "en": "Her age at the time"
+   },
+   {
+    "ru": "Число песен на диске",
+    "en": "The number of songs"
+   },
+   {
+    "ru": "Номер её дома в Лондоне",
+    "en": "Her house number in London"
+   },
+   {
+    "ru": "Дни, ушедшие на запись",
+    "en": "Days spent recording"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Про «25» Адель говорила, что это последний альбом, названный по её возрасту, но в 2021 году вышел «30».",
+   "en": "Adele said 25 would be her last album named after her age, yet in 2021 along came 30."
+  },
+  "source": "https://en.wikipedia.org/wiki/Adele"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой французский дуэт прославился тем, что выступал в шлемах роботов?",
+   "en": "Which French duo became famous for performing in robot helmets?"
+  },
+  "options": [
+   {
+    "ru": "Дафт Панк",
+    "en": "Daft Punk"
+   },
+   {
+    "ru": "Джастис",
+    "en": "Justice"
+   },
+   {
+    "ru": "Эйр",
+    "en": "Air"
+   },
+   {
+    "ru": "Моджо",
+    "en": "Modjo"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Имя взяли из разгромной рецензии на их прежнюю группу: критик назвал её музыку «a daft punky thrash», «дурацкий панк».",
+   "en": "They took the name from a review that panned their earlier band as 'a daft punky thrash'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Daft_Punk"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая группа выиграла «Евровидение-2006» в гриме и костюмах монстров?",
+   "en": "Which band won Eurovision 2006 dressed and made up as monsters?"
+  },
+  "options": [
+   {
+    "ru": "Лорди",
+    "en": "Lordi"
+   },
+   {
+    "ru": "Монескин",
+    "en": "Måneskin"
+   },
+   {
+    "ru": "Рамштайн",
+    "en": "Rammstein"
+   },
+   {
+    "ru": "Слипнот",
+    "en": "Slipknot"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это первая победа Финляндии: страна безуспешно участвовала в конкурсе с 1961 года.",
+   "en": "It was Finland's first win, after trying without luck since 1961."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lordi"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На каком языке поётся хит «Despacito» (2017)?",
+   "en": "What language is the 2017 hit 'Despacito' sung in?"
+  },
+  "options": [
+   {
+    "ru": "На испанском",
+    "en": "Spanish"
+   },
+   {
+    "ru": "На португальском",
+    "en": "Portuguese"
+   },
+   {
+    "ru": "На итальянском",
+    "en": "Italian"
+   },
+   {
+    "ru": "На французском",
+    "en": "French"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Despacito» значит «медленно»; в 2017 году клип первым на YouTube набрал 3 миллиарда просмотров.",
+   "en": "'Despacito' means 'slowly'; in 2017 its video became the first on YouTube to reach 3 billion views."
+  },
+  "source": "https://en.wikipedia.org/wiki/Despacito"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего было сделано знаменитое платье Леди Гаги на премии MTV 2010 года?",
+   "en": "What was Lady Gaga's famous dress at the 2010 MTV awards made of?"
+  },
+  "options": [
+   {
+    "ru": "Из сырой говядины",
+    "en": "Raw beef"
+   },
+   {
+    "ru": "Из старых газет",
+    "en": "Old newspapers"
+   },
+   {
+    "ru": "Из шоколада",
+    "en": "Chocolate"
+   },
+   {
+    "ru": "Из конфетных фантиков",
+    "en": "Sweet wrappers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Позже Зал славы рок-н-ролла заплатил таксидермисту, чтобы тот законсервировал платье, и в 2011 году выставил его.",
+   "en": "The Rock and Roll Hall of Fame later paid a taxidermist to preserve the dress and put it on show in 2011."
+  },
+  "source": "https://en.wikipedia.org/wiki/Meat_dress_of_Lady_Gaga"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Хит BTS «Dynamite» (2020) — первая песня группы, целиком спетая на каком языке?",
+   "en": "BTS's hit 'Dynamite' (2020) was the band's first song sung entirely in which language?"
+  },
+  "options": [
+   {
+    "ru": "На английском",
+    "en": "English"
+   },
+   {
+    "ru": "На японском",
+    "en": "Japanese"
+   },
+   {
+    "ru": "На испанском",
+    "en": "Spanish"
+   },
+   {
+    "ru": "На китайском",
+    "en": "Chinese"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С ней BTS первыми из южнокорейских групп возглавили американский чарт Billboard Hot 100.",
+   "en": "It made BTS the first all-South Korean act to top the US Billboard Hot 100."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dynamite_(BTS_song)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Бейонсе поёт в «Single Ladies» (2008): раз нравилось, надо было надеть на это… что?",
+   "en": "In Beyoncé's 'Single Ladies' (2008), if he liked it, what should he have put on it?"
+  },
+  "options": [
+   {
+    "ru": "Кольцо",
+    "en": "A ring"
+   },
+   {
+    "ru": "Бантик",
+    "en": "A bow"
+   },
+   {
+    "ru": "Шапку",
+    "en": "A hat"
+   },
+   {
+    "ru": "Намордник",
+    "en": "A muzzle"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Знаменитый танец из чёрно-белого клипа Бейонсе позаимствовала у номера Боба Фосса 1969 года.",
+   "en": "The famous dance in the black and white video borrows from a 1969 routine by Bob Fosse."
+  },
+  "source": "https://en.wikipedia.org/wiki/Single_Ladies_(Put_a_Ring_on_It)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где Билли Айлиш и её брат Финнеас записали её дебютный альбом?",
+   "en": "Where did Billie Eilish and her brother Finneas record her debut album?"
+  },
+  "options": [
+   {
+    "ru": "В спальне Финнеаса",
+    "en": "In Finneas's bedroom"
+   },
+   {
+    "ru": "На студии Abbey Road",
+    "en": "At Abbey Road Studios"
+   },
+   {
+    "ru": "В гастрольном автобусе",
+    "en": "On a tour bus"
+   },
+   {
+    "ru": "На яхте у Багамских островов",
+    "en": "On a yacht off the Bahamas"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 18 лет Билли забрала все четыре главные «Грэмми», включая «Альбом года», — первой из женщин.",
+   "en": "At 18 she won all four main Grammys, Album of the Year included, the first woman ever to do so."
+  },
+  "source": "https://en.wikipedia.org/wiki/When_We_All_Fall_Asleep,_Where_Do_We_Go%3F"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Waka Waka» Шакиры — официальная песня какого турнира?",
+   "en": "Shakira's 'Waka Waka' was the official song of which event?"
+  },
+  "options": [
+   {
+    "ru": "ЧМ по футболу 2010 в ЮАР",
+    "en": "2010 World Cup, South Africa"
+   },
+   {
+    "ru": "Олимпиады 2008 в Пекине",
+    "en": "2008 Olympics, Beijing"
+   },
+   {
+    "ru": "ЧМ по футболу 2014 в Бразилии",
+    "en": "2014 World Cup, Brazil"
+   },
+   {
+    "ru": "Евро-2012",
+    "en": "Euro 2012"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Припев взят из камерунской песни «Zangaléwa» 1986 года, которую любили петь солдаты.",
+   "en": "Its chorus comes from 'Zangalewa', a 1986 Cameroonian song that soldiers loved to sing."
+  },
+  "source": "https://en.wikipedia.org/wiki/Waka_Waka_(This_Time_for_Africa)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "С какого острова родом певица Рианна?",
+   "en": "Which island does the singer Rihanna come from?"
+  },
+  "options": [
+   {
+    "ru": "Барбадос",
+    "en": "Barbados"
+   },
+   {
+    "ru": "Ямайка",
+    "en": "Jamaica"
+   },
+   {
+    "ru": "Тринидад",
+    "en": "Trinidad"
+   },
+   {
+    "ru": "Куба",
+    "en": "Cuba"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 2021 году Барбадос официально объявил её национальной героиней страны.",
+   "en": "In 2021 Barbados officially named her a National Hero of the country."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rihanna"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто «участники» группы Gorillaz в клипах и на обложках?",
+   "en": "Who are the 'members' of Gorillaz in their videos and on their covers?"
+  },
+  "options": [
+   {
+    "ru": "Нарисованные персонажи",
+    "en": "Cartoon characters"
+   },
+   {
+    "ru": "Роботы",
+    "en": "Robots"
+   },
+   {
+    "ru": "Дрессированные гориллы",
+    "en": "Trained gorillas"
+   },
+   {
+    "ru": "Куклы-марионетки",
+    "en": "Puppets"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Группу придумали Деймон Албарн из Blur и художник Джейми Хьюлетт, когда жили в одной лондонской квартире.",
+   "en": "Damon Albarn of Blur and artist Jamie Hewlett dreamed up the band while sharing a flat in London."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gorillaz"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем певица Sia часто закрывает лицо на концертах?",
+   "en": "What does the singer Sia often hide her face behind on stage?"
+  },
+  "options": [
+   {
+    "ru": "Огромным париком-чёлкой",
+    "en": "A huge fringed wig"
+   },
+   {
+    "ru": "Маской сварщика",
+    "en": "A welding mask"
+   },
+   {
+    "ru": "Мотоциклетным шлемом",
+    "en": "A motorbike helmet"
+   },
+   {
+    "ru": "Веером из перьев",
+    "en": "A feather fan"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так она прячется от славы; в клипе «Chandelier» такой же парик носит 11-летняя танцовщица Мэдди Зиглер.",
+   "en": "It keeps fame at bay; in the 'Chandelier' video 11-year-old dancer Maddie Ziegler wears the same wig."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sia"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как менеджер Скутер Браун нашёл юного Джастина Бибера?",
+   "en": "How did manager Scooter Braun discover the young Justin Bieber?"
+  },
+  "options": [
+   {
+    "ru": "Наткнулся на его ролики на YouTube",
+    "en": "Found his videos on YouTube"
+   },
+   {
+    "ru": "Увидел в сериале Disney",
+    "en": "Saw him in a Disney series"
+   },
+   {
+    "ru": "Услышал в караоке-баре",
+    "en": "Heard him in a karaoke bar"
+   },
+   {
+    "ru": "Заметил в рекламе",
+    "en": "Spotted him in an advert"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Браун искал видео другого певца и щёлкнул на ролик Бибера по ошибке.",
+   "en": "Braun was looking for another singer's video and clicked on Bieber's by mistake."
+  },
+  "source": "https://en.wikipedia.org/wiki/Justin_Bieber"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 2016 году Боб Дилан получил Нобелевскую премию. В какой области?",
+   "en": "Bob Dylan won a Nobel Prize in 2016. In which field?"
+  },
+  "options": [
+   {
+    "ru": "Литература",
+    "en": "Literature"
+   },
+   {
+    "ru": "Премия мира",
+    "en": "Peace"
+   },
+   {
+    "ru": "Физика",
+    "en": "Physics"
+   },
+   {
+    "ru": "Музыка",
+    "en": "Music"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "За премией он не приехал: на церемонии его песню спела Патти Смит, сбившись от волнения.",
+   "en": "He skipped the ceremony; Patti Smith sang his song there instead and stumbled from nerves."
+  },
+  "source": "https://en.wikipedia.org/wiki/2016_Nobel_Prize_in_Literature"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем Тейлор Свифт перезаписала свои первые альбомы?",
+   "en": "Why did Taylor Swift re-record her early albums?"
+  },
+  "options": [
+   {
+    "ru": "Права на записи были не у неё",
+    "en": "She did not own the recordings"
+   },
+   {
+    "ru": "Чтобы спеть взрослым голосом",
+    "en": "To sing them in an older voice"
+   },
+   {
+    "ru": "Оригиналы сгорели при пожаре",
+    "en": "The masters burned in a fire"
+   },
+   {
+    "ru": "Так требовал контракт со Spotify",
+    "en": "A Spotify deal demanded it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 2019 году их купил вместе с её бывшим лейблом Скутер Браун; новые версии помечены «Taylor's Version», а в 2025-м она выкупила и оригиналы.",
+   "en": "In 2019 Scooter Braun bought them with her old label; she marked the new ones 'Taylor's Version', and in 2025 bought the originals back."
+  },
+  "source": "https://en.wikipedia.org/wiki/Taylor_Swift_masters_dispute"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какой страны группа Måneskin, победитель «Евровидения-2021»?",
+   "en": "Which country are Måneskin, winners of Eurovision 2021, from?"
+  },
+  "options": [
+   {
+    "ru": "Италия",
+    "en": "Italy"
+   },
+   {
+    "ru": "Дания",
+    "en": "Denmark"
+   },
+   {
+    "ru": "Норвегия",
+    "en": "Norway"
+   },
+   {
+    "ru": "Швеция",
+    "en": "Sweden"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Måneskin по-датски значит «лунный свет»: название придумала басистка Виктория Де Анджелис, наполовину датчанка.",
+   "en": "Måneskin is Danish for 'moonlight': the name came from bassist Victoria De Angelis, who is half Danish."
+  },
+  "source": "https://en.wikipedia.org/wiki/Måneskin"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая песня первой из рэп-композиций получила «Оскар»?",
+   "en": "Which was the first rap song to win an Oscar?"
+  },
+  "options": [
+   {
+    "ru": "Lose Yourself — Эминем",
+    "en": "Lose Yourself, Eminem"
+   },
+   {
+    "ru": "In da Club — 50 Cent",
+    "en": "In da Club, 50 Cent"
+   },
+   {
+    "ru": "Empire State of Mind — Джей-Зи",
+    "en": "Empire State of Mind, Jay-Z"
+   },
+   {
+    "ru": "Gold Digger — Канье Уэст",
+    "en": "Gold Digger, Kanye West"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эминем не пришёл на церемонию 2003 года: он был уверен, что не победит, и спал дома.",
+   "en": "Eminem skipped the 2003 ceremony: sure he would not win, he was asleep at home."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lose_Yourself"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое словечко для одержимого фаната пошло от песни Эминема 2000 года?",
+   "en": "Which word for an obsessive fan comes from a 2000 Eminem song?"
+  },
+  "options": [
+   {
+    "ru": "Стэн",
+    "en": "Stan"
+   },
+   {
+    "ru": "Хейтер",
+    "en": "Hater"
+   },
+   {
+    "ru": "Группи",
+    "en": "Groupie"
+   },
+   {
+    "ru": "Фрик",
+    "en": "Freak"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В песне фанат Стэн шлёт Эминему всё более отчаянные письма; теперь «stan» есть в Оксфордском словаре.",
+   "en": "In the song a fan called Stan writes Eminem ever more desperate letters; 'stan' is now in the Oxford dictionary."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stan_(song)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где впервые прозвучала песня Фаррелла Уильямса «Happy»?",
+   "en": "Where was Pharrell Williams's song 'Happy' first heard?"
+  },
+  "options": [
+   {
+    "ru": "В мультфильме «Гадкий я 2»",
+    "en": "In the film Despicable Me 2"
+   },
+   {
+    "ru": "В рекламе Coca-Cola",
+    "en": "In a Coca-Cola advert"
+   },
+   {
+    "ru": "На открытии Олимпиады в Сочи",
+    "en": "At the Sochi Olympics opening"
+   },
+   {
+    "ru": "В сериале «Теория большого взрыва»",
+    "en": "In The Big Bang Theory"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Клип к ней стал первым в мире 24-часовым: песня крутится целые сутки, и каждый раз танцуют другие люди.",
+   "en": "Its video was the world's first 24-hour one: the song loops all day with different people dancing each time."
+  },
+  "source": "https://en.wikipedia.org/wiki/Happy_(Pharrell_Williams_song)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую страну представляла Кончита Вурст, победив на «Евровидении-2014»?",
+   "en": "Which country did Conchita Wurst represent when winning Eurovision 2014?"
+  },
+  "options": [
+   {
+    "ru": "Австрию",
+    "en": "Austria"
+   },
+   {
+    "ru": "Германию",
+    "en": "Germany"
+   },
+   {
+    "ru": "Швейцарию",
+    "en": "Switzerland"
+   },
+   {
+    "ru": "Нидерланды",
+    "en": "The Netherlands"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это была вторая победа Австрии: первую ещё в 1966 году принёс Удо Юргенс.",
+   "en": "It was Austria's second win; the first came back in 1966 with Udo Jürgens."
+  },
+  "source": "https://en.wikipedia.org/wiki/Conchita_Wurst"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как ABBA в 2022 году вернулась на сцену в Лондоне?",
+   "en": "How did ABBA return to the London stage in 2022?"
+  },
+  "options": [
+   {
+    "ru": "Цифровыми двойниками",
+    "en": "As digital avatars"
+   },
+   {
+    "ru": "С внуками в составе",
+    "en": "With their grandchildren"
+   },
+   {
+    "ru": "Роботами-аниматрониками",
+    "en": "As animatronic robots"
+   },
+   {
+    "ru": "Актёрами в гриме",
+    "en": "As actors in make-up"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ради «аббатаров» четвёрка пять недель исполняла все 22 песни шоу в костюмах для захвата движения.",
+   "en": "To make the 'ABBAtars', the four performed the show's 22 songs in motion capture suits over five weeks."
+  },
+  "source": "https://en.wikipedia.org/wiki/ABBA_Voyage"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда шведский диджей Тим Берглинг взял псевдоним Avicii?",
+   "en": "Where did Swedish DJ Tim Bergling get the name Avicii?"
+  },
+  "options": [
+   {
+    "ru": "Так в буддизме зовётся нижний ад",
+    "en": "The lowest hell in Buddhism"
+   },
+   {
+    "ru": "От латинского avis — «птица»",
+    "en": "From Latin avis, 'bird'"
+   },
+   {
+    "ru": "Так звали его кота",
+    "en": "It was his cat's name"
+   },
+   {
+    "ru": "Это школьное прозвище",
+    "en": "It was his school nickname"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Псевдоним понадобился для страницы на MySpace: его настоящее имя там было уже занято.",
+   "en": "He needed it for his MySpace page, because his real name was already taken there."
+  },
+  "source": "https://en.wikipedia.org/wiki/Avicii"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране появился сервис Spotify?",
+   "en": "In which country was Spotify founded?"
+  },
+  "options": [
+   {
+    "ru": "Швеция",
+    "en": "Sweden"
+   },
+   {
+    "ru": "США",
+    "en": "USA"
+   },
+   {
+    "ru": "Финляндия",
+    "en": "Finland"
+   },
+   {
+    "ru": "Ирландия",
+    "en": "Ireland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Название родилось из ослышки: основатели выкрикивали варианты, и один не так расслышал другого — а «spot + identify» придумали потом.",
+   "en": "The name came from a mishearing as the founders shouted ideas at each other; 'spot + identify' was explained later."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spotify"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто первой из женщин дважды выиграла «Евровидение»?",
+   "en": "Who was the first woman to win Eurovision twice?"
+  },
+  "options": [
+   {
+    "ru": "Лорин",
+    "en": "Loreen"
+   },
+   {
+    "ru": "Мария Шерифович",
+    "en": "Marija Šerifović"
+   },
+   {
+    "ru": "Руслана",
+    "en": "Ruslana"
+   },
+   {
+    "ru": "Елена Папаризу",
+    "en": "Helena Paparizou"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она победила в 2012 и 2023 годах; до неё дважды побеждал лишь ирландец Джонни Логан.",
+   "en": "She won in 2012 and 2023; before her only Irishman Johnny Logan had won twice."
+  },
+  "source": "https://en.wikipedia.org/wiki/Loreen"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Название альбома Coldplay «Viva la Vida» (2008) взято с картины. Чьей?",
+   "en": "Coldplay's album title 'Viva la Vida' (2008) comes from a painting. By whom?"
+  },
+  "options": [
+   {
+    "ru": "Фриды Кало",
+    "en": "Frida Kahlo"
+   },
+   {
+    "ru": "Сальвадора Дали",
+    "en": "Salvador Dalí"
+   },
+   {
+    "ru": "Пабло Пикассо",
+    "en": "Pablo Picasso"
+   },
+   {
+    "ru": "Диего Риверы",
+    "en": "Diego Rivera"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кало вывела «Да здравствует жизнь» на натюрморте с арбузами в 1954 году, в год своей смерти; а песня — о свергнутом короле.",
+   "en": "Kahlo wrote 'Long live life' on a still life of watermelons in 1954, the year she died; the song is about a fallen king."
+  },
+  "source": "https://en.wikipedia.org/wiki/Viva_la_Vida"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем прославился рэпер Дрейк, прежде чем начал читать рэп?",
+   "en": "What was the rapper Drake famous as before his music career?"
+  },
+  "options": [
+   {
+    "ru": "Актёр молодёжного сериала",
+    "en": "A teen TV series actor"
+   },
+   {
+    "ru": "Хоккеист",
+    "en": "An ice hockey player"
+   },
+   {
+    "ru": "Ведущий кулинарного шоу",
+    "en": "A cookery show host"
+   },
+   {
+    "ru": "Профессиональный танцор",
+    "en": "A professional dancer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В канадском сериале «Деграсси» он играл баскетболиста Джимми, который оказался в инвалидном кресле.",
+   "en": "In the Canadian series Degrassi he played Jimmy, a basketball player who ends up in a wheelchair."
+  },
+  "source": "https://en.wikipedia.org/wiki/Drake_(musician)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где проходит британский фестиваль Гластонбери?",
+   "en": "Where is Britain's Glastonbury Festival held?"
+  },
+  "options": [
+   {
+    "ru": "На молочной ферме",
+    "en": "On a dairy farm"
+   },
+   {
+    "ru": "На бывшей авиабазе",
+    "en": "On a former air base"
+   },
+   {
+    "ru": "На стадионе «Уэмбли»",
+    "en": "At Wembley Stadium"
+   },
+   {
+    "ru": "В заброшенном карьере",
+    "en": "In a disused quarry"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Примерно раз в пять лет фестиваль пропускает год, чтобы отдохнули земля, местные жители и организаторы.",
+   "en": "About one year in five the festival takes a break to give the land, the locals and the organisers a rest."
+  },
+  "source": "https://en.wikipedia.org/wiki/Glastonbury_Festival"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране родился фестиваль электронной музыки Tomorrowland?",
+   "en": "In which country was the Tomorrowland dance music festival born?"
+  },
+  "options": [
+   {
+    "ru": "Бельгия",
+    "en": "Belgium"
+   },
+   {
+    "ru": "Нидерланды",
+    "en": "The Netherlands"
+   },
+   {
+    "ru": "Германия",
+    "en": "Germany"
+   },
+   {
+    "ru": "Испания",
+    "en": "Spain"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 2005 года его устраивают в городке с подходящим названием Бум под Антверпеном.",
+   "en": "Since 2005 it has been held in the aptly named town of Boom, near Antwerp."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tomorrowland_(festival)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой рэпер, погибший в 1996 году, «выступил» голограммой на Coachella-2012?",
+   "en": "Which rapper, killed in 1996, 'performed' as a hologram at Coachella 2012?"
+  },
+  "options": [
+   {
+    "ru": "Тупак Шакур",
+    "en": "Tupac Shakur"
+   },
+   {
+    "ru": "Ноториус Би-Ай-Джи",
+    "en": "The Notorious B.I.G."
+   },
+   {
+    "ru": "Изи-И",
+    "en": "Eazy-E"
+   },
+   {
+    "ru": "Биг Пан",
+    "en": "Big Pun"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это была не голограмма, а трюк XIX века «призрак Пеппера» — отражение на наклонном прозрачном экране.",
+   "en": "It was not a hologram but 'Pepper's ghost', a 19th century trick: a reflection on a tilted clear screen."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pepper%27s_ghost"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Radiohead в 2007 году впервые продавали альбом «In Rainbows»?",
+   "en": "How did Radiohead first sell their album 'In Rainbows' in 2007?"
+  },
+  "options": [
+   {
+    "ru": "За любую цену на выбор",
+    "en": "For any price you chose"
+   },
+   {
+    "ru": "Только на кассетах",
+    "en": "Only on cassette"
+   },
+   {
+    "ru": "Только членам фан-клуба",
+    "en": "Only to fan club members"
+   },
+   {
+    "ru": "В обмен на старый диск",
+    "en": "In exchange for an old CD"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Скачать альбом можно было даже за £0, и многие так и сделали, но потом диск всё равно стал №1 и в Британии, и в США.",
+   "en": "Fans could download it for £0, and many did, yet the CD still went to number one in both the UK and the US."
+  },
+  "source": "https://en.wikipedia.org/wiki/In_Rainbows"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что такое Каннам из песни PSY «Gangnam Style»?",
+   "en": "What is Gangnam in PSY's 'Gangnam Style'?"
+  },
+  "options": [
+   {
+    "ru": "Богатый район Сеула",
+    "en": "A wealthy district of Seoul"
+   },
+   {
+    "ru": "Корейский народный танец",
+    "en": "A Korean folk dance"
+   },
+   {
+    "ru": "Имя девушки певца",
+    "en": "The singer's girlfriend"
+   },
+   {
+    "ru": "Марка острой лапши",
+    "en": "A brand of spicy noodles"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Каннам значит «к югу от реки», а песня высмеивает тех, кто корчит из себя каннамских богачей.",
+   "en": "Gangnam means 'south of the river', and the song pokes fun at wannabes pretending to be Gangnam rich."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gangnam_Style"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую премию в 2018 году первым из рэперов получил Кендрик Ламар?",
+   "en": "Which prize did Kendrick Lamar win in 2018, the first rapper ever to do so?"
+  },
+  "options": [
+   {
+    "ru": "Пулитцеровскую",
+    "en": "The Pulitzer Prize"
+   },
+   {
+    "ru": "Нобелевскую",
+    "en": "The Nobel Prize"
+   },
+   {
+    "ru": "Букеровскую",
+    "en": "The Booker Prize"
+   },
+   {
+    "ru": "Притцкеровскую",
+    "en": "The Pritzker Prize"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До него музыкального «Пулитцера» получали только академические композиторы и джазмены.",
+   "en": "Before him the Pulitzer for Music had only gone to classical composers and jazz musicians."
+  },
+  "source": "https://en.wikipedia.org/wiki/Damn_(Kendrick_Lamar_album)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какой страны Stromae, автор хита «Alors on danse» (2009)?",
+   "en": "Which country is Stromae, the singer of 'Alors on danse' (2009), from?"
+  },
+  "options": [
+   {
+    "ru": "Бельгия",
+    "en": "Belgium"
+   },
+   {
+    "ru": "Франция",
+    "en": "France"
+   },
+   {
+    "ru": "Швейцария",
+    "en": "Switzerland"
+   },
+   {
+    "ru": "Канада",
+    "en": "Canada"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Stromae — это «маэстро» с переставленными слогами: так играет словами французский сленг верлан.",
+   "en": "Stromae is 'maestro' with its syllables swapped, a trick of the French slang called verlan."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stromae"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чей рок-рифф 2003 года «по-по-по-по-по-по-по» стал гимном футбольных трибун мира?",
+   "en": "Whose 2003 rock riff, 'oh, oh-oh-oh-oh, oh, oh', became a football terrace anthem worldwide?"
+  },
+  "options": [
+   {
+    "ru": "Уайт Страйпс",
+    "en": "The White Stripes"
+   },
+   {
+    "ru": "Киллерс",
+    "en": "The Killers"
+   },
+   {
+    "ru": "Нирвана",
+    "en": "Nirvana"
+   },
+   {
+    "ru": "Систем оф э Даун",
+    "en": "System of a Down"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Песня зовётся «Seven Nation Army» — так маленький Джек Уайт выговаривал «Армию спасения» (Salvation Army).",
+   "en": "The song is called 'Seven Nation Army', which is how little Jack White said 'Salvation Army'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Seven_Nation_Army"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Видео «Baby Shark» сняла компания Pinkfong. Из какой она страны?",
+   "en": "The 'Baby Shark' video was made by the company Pinkfong. Which country is it from?"
+  },
+  "options": [
+   {
+    "ru": "Южная Корея",
+    "en": "South Korea"
+   },
+   {
+    "ru": "США",
+    "en": "USA"
+   },
+   {
+    "ru": "Япония",
+    "en": "Japan"
+   },
+   {
+    "ru": "Великобритания",
+    "en": "The UK"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сама песенка — старая лагерная распевка, а клип Pinkfong в ноябре 2020 года обогнал «Despacito» и стал самым просматриваемым на YouTube.",
+   "en": "The song is an old camp sing-along; in November 2020 Pinkfong's video overtook 'Despacito' as YouTube's most viewed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Baby_Shark"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько участников в K-pop группе BTS?",
+   "en": "How many members does the K-pop band BTS have?"
+  },
+  "options": [
+   {
+    "ru": "7",
+    "en": "7"
+   },
+   {
+    "ru": "5",
+    "en": "5"
+   },
+   {
+    "ru": "9",
+    "en": "9"
+   },
+   {
+    "ru": "4",
+    "en": "4"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "BTS — сокращение корейского «Бантан Сонёндан», то есть «Пуленепробиваемые бойскауты».",
+   "en": "BTS stands for the Korean Bangtan Sonyeondan, 'Bulletproof Boy Scouts'."
+  },
+  "source": "https://en.wikipedia.org/wiki/BTS"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какой страны певица Lorde, автор хита «Royals»?",
+   "en": "Which country is Lorde, the singer of 'Royals', from?"
+  },
+  "options": [
+   {
+    "ru": "Новая Зеландия",
+    "en": "New Zealand"
+   },
+   {
+    "ru": "Австралия",
+    "en": "Australia"
+   },
+   {
+    "ru": "Ирландия",
+    "en": "Ireland"
+   },
+   {
+    "ru": "Канада",
+    "en": "Canada"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 16 лет она стала самой юной артисткой на вершине Billboard Hot 100 с 1987 года.",
+   "en": "At 16 she became the youngest artist to top the Billboard Hot 100 since 1987."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lorde"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Rap God» Эминема попал в Книгу Гиннесса как хит с самым большим числом слов. Сколько их?",
+   "en": "Eminem's 'Rap God' entered Guinness World Records as the hit with the most words. How many?"
+  },
+  "answer": 1560,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 10,
+  "tolerance": 300,
+  "unit": {
+   "ru": "слов",
+   "en": "words"
+  },
+  "fact": {
+   "ru": "Он укладывает их примерно в шесть минут — в среднем больше четырёх слов в секунду.",
+   "en": "He packs them into about six minutes, more than four words a second on average."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rap_God"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько долларов Lil Nas X купил в интернете бит для «Old Town Road»?",
+   "en": "For how many dollars did Lil Nas X buy the beat for 'Old Town Road' online?"
+  },
+  "answer": 30,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "долларов",
+   "en": "dollars"
+  },
+  "fact": {
+   "ru": "Песня 19 недель подряд возглавляла Billboard Hot 100 и в 2019 году побила рекорд «Despacito» — 16 недель.",
+   "en": "It topped the Billboard Hot 100 for 19 weeks in a row, beating the 16-week record of 'Despacito' in 2019."
+  },
+  "source": "https://en.wikipedia.org/wiki/Old_Town_Road"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько концертов дала Тейлор Свифт в туре The Eras Tour (2023–2024)?",
+   "en": "How many shows did Taylor Swift play on The Eras Tour (2023 to 2024)?"
+  },
+  "answer": 149,
+  "range": [
+   0,
+   400
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "концертов",
+   "en": "shows"
+  },
+  "fact": {
+   "ru": "Тур собрал больше 2 миллиардов долларов — вдвое больше любого тура до него.",
+   "en": "The tour grossed over 2 billion dollars, twice as much as any tour before it."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Eras_Tour"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сейсмографы записали прыжки фанатов Тейлор Свифт в Сиэтле (2023) как землетрясение. Какой магнитуды?",
+   "en": "Seismometers logged Taylor Swift fans jumping in Seattle in 2023 as an earthquake. What magnitude?"
+  },
+  "answer": 2.3,
+  "range": [
+   0,
+   9
+  ],
+  "step": 0.1,
+  "tolerance": 1.0,
+  "unit": {
+   "ru": "",
+   "en": ""
+  },
+  "fact": {
+   "ru": "Сейсмограф у стадиона писал толчки весь концерт, ведь десятки тысяч людей прыгали в такт.",
+   "en": "A seismometer by the stadium logged shaking all through the show as tens of thousands jumped in time."
+  },
+  "source": "https://news.wwu.edu/wwu-seismologist-captures-swift-quake-story-goes-global"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько баллов набрал Александр Рыбак, победив на «Евровидении-2009»?",
+   "en": "How many points did Alexander Rybak score when he won Eurovision 2009?"
+  },
+  "answer": 387,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 60,
+  "unit": {
+   "ru": "баллов",
+   "en": "points"
+  },
+  "fact": {
+   "ru": "Это был рекорд конкурса по старой системе голосования; Рыбак родился в Минске и вырос в Норвегии.",
+   "en": "It was a record under the old voting system; Rybak was born in Minsk and grew up in Norway."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alexander_Rybak"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Билли Айлиш, когда она выложила в сеть песню «Ocean Eyes»?",
+   "en": "How old was Billie Eilish when she posted the song 'Ocean Eyes' online?"
+  },
+  "answer": 13,
+  "range": [
+   5,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Она выложила песню на SoundCloud, чтобы учитель танцев поставил под неё номер, а песня за ночь разлетелась по сети.",
+   "en": "She posted it on SoundCloud so her dance teacher could choreograph it, and it went viral overnight."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ocean_Eyes_(Billie_Eilish_song)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько недель хит The Weeknd «Blinding Lights» продержался в чарте Billboard Hot 100 (2019–2021)?",
+   "en": "How many weeks did The Weeknd's 'Blinding Lights' spend on the Billboard Hot 100 (2019 to 2021)?"
+  },
+  "answer": 90,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "недель",
+   "en": "weeks"
+  },
+  "fact": {
+   "ru": "Это первая песня, целый год не покидавшая первую десятку; в 2021 году Billboard назвал её главным хитом в истории чарта.",
+   "en": "It was the first song to stay in the top ten for a whole year, and in 2021 Billboard named it the chart's biggest hit ever."
+  },
+  "source": "https://en.wikipedia.org/wiki/Blinding_Lights"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько стран участвовало в «Евровидении» в рекордные 2008, 2011 и 2018 годы?",
+   "en": "How many countries took part in Eurovision in the record years 2008, 2011 and 2018?"
+  },
+  "answer": 43,
+  "range": [
+   20,
+   150
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "стран",
+   "en": "countries"
+  },
+  "fact": {
+   "ru": "Конкурс давно шире Европы: в нём участвует Израиль, а с 2015 года даже Австралия.",
+   "en": "The contest reaches well beyond Europe: Israel takes part, and since 2015 even Australia."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько миллионов копий альбома Адель «25» продали в США за первую неделю в 2015 году?",
+   "en": "How many million copies of Adele's album 25 sold in the US in its first week in 2015?"
+  },
+  "answer": 3.4,
+  "range": [
+   0,
+   20
+  ],
+  "step": 0.1,
+  "tolerance": 1.0,
+  "unit": {
+   "ru": "млн",
+   "en": "million"
+  },
+  "fact": {
+   "ru": "В 2015 году это был рекорд с начала электронного подсчёта продаж в 1991-м; прежний, 2,4 млн, держали NSYNC.",
+   "en": "In 2015 that was a record since electronic sales tracking began in 1991; the old one, 2.4 million, was NSYNC's."
+  },
+  "source": "https://en.wikipedia.org/wiki/25_(Adele_album)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько песен на сборнике The Beatles «1» (2000) — самом продаваемом альбоме 2000-х?",
+   "en": "How many songs are on the Beatles' compilation '1' (2000), the best-selling album of the 2000s?"
+  },
+  "answer": 27,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "песен",
+   "en": "songs"
+  },
+  "fact": {
+   "ru": "На нём все песни битлов, что были на первом месте в Британии или США; продано больше 31 миллиона копий.",
+   "en": "It holds every Beatles song that reached number one in the UK or the US, and it sold over 31 million copies."
+  },
+  "source": "https://en.wikipedia.org/wiki/1_(Beatles_album)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Сьюзан Бойл, когда в 2009 году показали её прослушивание на шоу Britain's Got Talent?",
+   "en": "How old was Susan Boyle when her Britain's Got Talent audition was shown in 2009?"
+  },
+  "answer": 48,
+  "range": [
+   16,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Зал ждал провала, пока она не запела «I Dreamed a Dream»; её дебютный альбом стал самым быстро продаваемым дебютом в Британии.",
+   "en": "The audience expected a flop until she sang 'I Dreamed a Dream'; her first album became Britain's fastest-selling debut ever."
+  },
+  "source": "https://en.wikipedia.org/wiki/Susan_Boyle"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько концертов в лондонской арене O2 собирался дать Майкл Джексон в 2009 году?",
+   "en": "How many shows at London's O2 arena did Michael Jackson plan to play in 2009?"
+  },
+  "answer": 50,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "концертов",
+   "en": "shows"
+  },
+  "fact": {
+   "ru": "Сначала объявили 10 шоу, но билеты сметали так быстро, что их число выросло в пять раз.",
+   "en": "At first 10 shows were announced, but tickets sold so fast that the number grew fivefold."
+  },
+  "source": "https://en.wikipedia.org/wiki/This_Is_It_(concerts)"
+ }
+]

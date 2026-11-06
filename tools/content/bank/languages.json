@@ -1,0 +1,1506 @@
+[
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько букв в современном русском алфавите?",
+      "en": "How many letters are in the modern Russian alphabet?"
+    },
+    "options": [
+      {
+        "ru": "30",
+        "en": "30"
+      },
+      {
+        "ru": "32",
+        "en": "32"
+      },
+      {
+        "ru": "33",
+        "en": "33"
+      },
+      {
+        "ru": "36",
+        "en": "36"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Две из них, Ъ и Ь, сами не дают никакого звука: они только меняют соседние буквы.",
+      "en": "Two of them, the hard and soft signs, make no sound of their own: they only change the letters around them."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Русский_алфавит"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "На каком языке впервые появилось слово «робот»?",
+      "en": "In which language did the word 'robot' first appear?"
+    },
+    "options": [
+      {
+        "ru": "На чешском",
+        "en": "Czech"
+      },
+      {
+        "ru": "На английском",
+        "en": "English"
+      },
+      {
+        "ru": "На японском",
+        "en": "Japanese"
+      },
+      {
+        "ru": "На немецком",
+        "en": "German"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Его придумал Йозеф Чапек для пьесы брата Карела в 1920 году: от слова robota — «подневольный труд».",
+      "en": "Josef Čapek coined it for his brother Karel's 1920 play, from 'robota', meaning forced labour."
+    },
+    "source": "https://en.wikipedia.org/wiki/Robot"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что буквально значит японское слово «цунами»?",
+      "en": "What does the Japanese word 'tsunami' literally mean?"
+    },
+    "options": [
+      {
+        "ru": "«Волна в гавани»",
+        "en": "Harbour wave"
+      },
+      {
+        "ru": "«Гнев моря»",
+        "en": "Anger of the sea"
+      },
+      {
+        "ru": "«Большая вода»",
+        "en": "Big water"
+      },
+      {
+        "ru": "«Дрожь земли»",
+        "en": "Earth tremor"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Рыбаки в открытом море не замечали никакой волны, а вернувшись, находили родную гавань разрушенной.",
+      "en": "Fishermen out at sea noticed no wave at all, then came home to find their harbour wrecked."
+    },
+    "source": "https://en.wikipedia.org/wiki/Tsunami"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой язык родной для самого большого числа людей на Земле?",
+      "en": "Which language has the most native speakers in the world?"
+    },
+    "options": [
+      {
+        "ru": "Китайский (путунхуа)",
+        "en": "Mandarin Chinese"
+      },
+      {
+        "ru": "Английский",
+        "en": "English"
+      },
+      {
+        "ru": "Испанский",
+        "en": "Spanish"
+      },
+      {
+        "ru": "Хинди",
+        "en": "Hindi"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Английский выходит вперёд, только если считать всех, кто выучил его как второй язык.",
+      "en": "English only takes the lead when you count everyone who learned it as a second language."
+    },
+    "source": "https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Из какого языка пришло слово «бутерброд»?",
+      "en": "Which language gave Russian the word 'buterbrod' (open sandwich)?"
+    },
+    "options": [
+      {
+        "ru": "Из немецкого",
+        "en": "German"
+      },
+      {
+        "ru": "Из французского",
+        "en": "French"
+      },
+      {
+        "ru": "Из английского",
+        "en": "English"
+      },
+      {
+        "ru": "Из итальянского",
+        "en": "Italian"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Butterbrot по-немецки — буквально «масло-хлеб», так что «бутерброд с маслом» говорит про масло дважды.",
+      "en": "German 'Butterbrot' literally means 'butter bread', so a Russian 'buterbrod with butter' says butter twice."
+    },
+    "source": "https://ru.wiktionary.org/wiki/бутерброд"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой из этих языков пишут справа налево?",
+      "en": "Which of these languages is written right to left?"
+    },
+    "options": [
+      {
+        "ru": "Арабский",
+        "en": "Arabic"
+      },
+      {
+        "ru": "Хинди",
+        "en": "Hindi"
+      },
+      {
+        "ru": "Грузинский",
+        "en": "Georgian"
+      },
+      {
+        "ru": "Греческий",
+        "en": "Greek"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "При этом числа внутри арабского текста пишут слева направо, как и мы.",
+      "en": "Yet numbers inside Arabic text still run left to right, just like ours."
+    },
+    "source": "https://en.wikipedia.org/wiki/Arabic_script"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Закончите знаменитый палиндром: «А роза упала на лапу…»",
+      "en": "Finish the famous Russian palindrome: 'A roza upala na lapu…' (a rose fell on the paw of…)"
+    },
+    "options": [
+      {
+        "ru": "Азора",
+        "en": "Azor"
+      },
+      {
+        "ru": "Барбоса",
+        "en": "Barbos"
+      },
+      {
+        "ru": "Шарика",
+        "en": "Sharik"
+      },
+      {
+        "ru": "Тузика",
+        "en": "Tuzik"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Его приписывают Фету, а в «Золотом ключике» эту фразу Мальвина диктует Буратино: она читается одинаково с обеих сторон.",
+      "en": "It is credited to the poet Fet; in 'The Golden Key' Malvina dictates it to Buratino. It reads the same both ways."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Палиндром"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Откуда взялось слово «алфавит»?",
+      "en": "Where does the word 'alphabet' come from?"
+    },
+    "options": [
+      {
+        "ru": "Из названий первых греческих букв",
+        "en": "The first two Greek letters"
+      },
+      {
+        "ru": "От имени финикийского царя",
+        "en": "A Phoenician king's name"
+      },
+      {
+        "ru": "От латинского «учение»",
+        "en": "Latin for 'learning'"
+      },
+      {
+        "ru": "От арабского «книга»",
+        "en": "Arabic for 'book'"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "«Азбука» устроена так же: аз и буки — названия первых двух славянских букв.",
+      "en": "Russian 'azbuka' works the same way: 'az' and 'buki' were the names of the first two Slavic letters."
+    },
+    "source": "https://en.wikipedia.org/wiki/Alphabet"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что значит японское слово «караоке»?",
+      "en": "What does the Japanese word 'karaoke' mean?"
+    },
+    "options": [
+      {
+        "ru": "«Пустой оркестр»",
+        "en": "Empty orchestra"
+      },
+      {
+        "ru": "«Поющий голос»",
+        "en": "Singing voice"
+      },
+      {
+        "ru": "«Ночное веселье»",
+        "en": "Night fun"
+      },
+      {
+        "ru": "«Громкая песня»",
+        "en": "Loud song"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "«Кара» — пустой, а «оке» — кусочек от «окэсутора», японского варианта слова «оркестр».",
+      "en": "'Kara' means empty and 'oke' is short for 'ōkesutora', the Japanese take on the word 'orchestra'."
+    },
+    "source": "https://en.wikipedia.org/wiki/Karaoke"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько официальных языков у ООН?",
+      "en": "How many official languages does the United Nations have?"
+    },
+    "options": [
+      {
+        "ru": "Два",
+        "en": "Two"
+      },
+      {
+        "ru": "Четыре",
+        "en": "Four"
+      },
+      {
+        "ru": "Шесть",
+        "en": "Six"
+      },
+      {
+        "ru": "Десять",
+        "en": "Ten"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Русский был среди них с самого начала, а последним, в 1973 году, добавили арабский.",
+      "en": "Russian was among them from the start; Arabic was the last to join, in 1973."
+    },
+    "source": "https://en.wikipedia.org/wiki/Official_languages_of_the_United_Nations"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "В честь кого назван сэндвич?",
+      "en": "Who is the sandwich named after?"
+    },
+    "options": [
+      {
+        "ru": "Английского графа",
+        "en": "An English earl"
+      },
+      {
+        "ru": "Американского повара",
+        "en": "An American cook"
+      },
+      {
+        "ru": "Голландского моряка",
+        "en": "A Dutch sailor"
+      },
+      {
+        "ru": "Французского короля",
+        "en": "A French king"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "По легенде, граф Сэндвич не хотел вставать из-за карточного стола и просил мясо между ломтями хлеба.",
+      "en": "Legend says the Earl of Sandwich would not leave the card table and asked for meat between slices of bread."
+    },
+    "source": "https://en.wikipedia.org/wiki/Sandwich"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Слово «спасибо» — это сросшееся пожелание. Какое?",
+      "en": "The Russian 'spasibo' (thank you) is a wish fused into one word. Which wish?"
+    },
+    "options": [
+      {
+        "ru": "«Спаси Бог»",
+        "en": "God save you"
+      },
+      {
+        "ru": "«Будь здоров»",
+        "en": "Be healthy"
+      },
+      {
+        "ru": "«Добрый путь»",
+        "en": "Safe journey"
+      },
+      {
+        "ru": "«Спи спокойно»",
+        "en": "Sleep well"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "А «благодарю» значит «дарю благо»: оба слова — пожелание добра в ответ.",
+      "en": "The other Russian thanks, 'blagodaryu', literally means 'I give good': both wish you well in return."
+    },
+    "source": "https://ru.wiktionary.org/wiki/спасибо"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Англичане говорят «идёт дождь из кошек и собак». А как скажем мы?",
+      "en": "The English say 'it's raining cats and dogs'. What do Russians say?"
+    },
+    "options": [
+      {
+        "ru": "Льёт как из ведра",
+        "en": "Pouring like from a bucket"
+      },
+      {
+        "ru": "Как с гуся вода",
+        "en": "Like water off a goose"
+      },
+      {
+        "ru": "После дождичка в четверг",
+        "en": "After the rain on Thursday"
+      },
+      {
+        "ru": "Семь пятниц на неделе",
+        "en": "Seven Fridays a week"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Откуда в английской поговорке взялись кошки и собаки, точно не знает никто: версий много, доказательств нет.",
+      "en": "Nobody knows for sure where the English cats and dogs came from: there are many theories and no proof."
+    },
+    "source": "https://en.wiktionary.org/wiki/rain_cats_and_dogs"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "В каком языке вопрос начинают перевёрнутым знаком «¿»?",
+      "en": "Which language opens a question with an upside down question mark '¿'?"
+    },
+    "options": [
+      {
+        "ru": "В испанском",
+        "en": "Spanish"
+      },
+      {
+        "ru": "В португальском",
+        "en": "Portuguese"
+      },
+      {
+        "ru": "В итальянском",
+        "en": "Italian"
+      },
+      {
+        "ru": "Во французском",
+        "en": "French"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Испанская академия ввела его в 1754 году: вопрос там часто звучит теми же словами, что и утверждение.",
+      "en": "The Spanish Academy brought it in in 1754, since a Spanish question often uses the same words as a statement."
+    },
+    "source": "https://en.wikipedia.org/wiki/Inverted_question_and_exclamation_marks"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Чем знаменита фраза «Съешь же ещё этих мягких французских булок, да выпей чаю»?",
+      "en": "What is special about the Russian phrase 'Eat some more of these soft French rolls and have some tea'?"
+    },
+    "options": [
+      {
+        "ru": "В ней есть все буквы алфавита",
+        "en": "It has every letter of the alphabet"
+      },
+      {
+        "ru": "Её первой сказали по радио",
+        "en": "It was the first words on radio"
+      },
+      {
+        "ru": "Это скороговорка из букваря",
+        "en": "It is a tongue twister from a primer"
+      },
+      {
+        "ru": "Она читается задом наперёд",
+        "en": "It reads the same backwards"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Такие фразы-панграммы показывают шрифт целиком; английская — про быструю лису и ленивую собаку.",
+      "en": "Such pangrams show off a whole font; the English one is about a quick brown fox and a lazy dog."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Панграмма"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какую азбуку, по мнению учёных, придумал сам святой Кирилл?",
+      "en": "Which alphabet do scholars think Saint Cyril himself created?"
+    },
+    "options": [
+      {
+        "ru": "Глаголицу",
+        "en": "Glagolitic"
+      },
+      {
+        "ru": "Кириллицу",
+        "en": "Cyrillic"
+      },
+      {
+        "ru": "Латиницу",
+        "en": "Latin"
+      },
+      {
+        "ru": "Греческий алфавит",
+        "en": "Greek"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Кириллицу составили позже его ученики в Болгарии и назвали в честь учителя.",
+      "en": "Cyrillic came later: his disciples in Bulgaria made it and named it in their teacher's honour."
+    },
+    "source": "https://en.wikipedia.org/wiki/Cyrillic_script"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто ввёл букву «ё» в печать?",
+      "en": "Who brought the letter Yo into Russian print?"
+    },
+    "options": [
+      {
+        "ru": "Николай Карамзин",
+        "en": "Nikolai Karamzin"
+      },
+      {
+        "ru": "Михаил Ломоносов",
+        "en": "Mikhail Lomonosov"
+      },
+      {
+        "ru": "Александр Пушкин",
+        "en": "Alexander Pushkin"
+      },
+      {
+        "ru": "Пётр I",
+        "en": "Peter the Great"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Карамзин напечатал её в 1797 году в слове «слёзы», а обязательной в школах она стала только в 1942-м.",
+      "en": "Karamzin printed it in 1797 in the word 'slyozy' (tears), but schools had to use it only from 1942."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Ё"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Откуда в русском взялось слово «вокзал»?",
+      "en": "Where does the Russian word 'vokzal' (railway station) come from?"
+    },
+    "options": [
+      {
+        "ru": "От лондонского сада развлечений",
+        "en": "A London pleasure garden"
+      },
+      {
+        "ru": "От немецкого «зал ожидания»",
+        "en": "German for 'waiting hall'"
+      },
+      {
+        "ru": "От фамилии инженера",
+        "en": "An engineer's surname"
+      },
+      {
+        "ru": "От французского «путешествие»",
+        "en": "French for 'journey'"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Здание станции в Павловске 1838 года назвали «Воксал» по лондонскому Воксхоллу: там играла музыка и гуляла публика.",
+      "en": "The 1838 station at Pavlovsk was named 'Voksal' after London's Vauxhall Gardens, with music and strolling crowds."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Вокзал"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Слово «кетчуп» пришло из Азии. Каким соусом он, по основной версии, был изначально?",
+      "en": "The word 'ketchup' came from Asia. What kind of sauce was it most likely at first?"
+    },
+    "options": [
+      {
+        "ru": "Рыбным",
+        "en": "Fish sauce"
+      },
+      {
+        "ru": "Томатным",
+        "en": "Tomato sauce"
+      },
+      {
+        "ru": "Манговым",
+        "en": "Mango sauce"
+      },
+      {
+        "ru": "Перечным",
+        "en": "Pepper sauce"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Скорее всего, слово из южнокитайского языка и значило рыбный рассол; первый рецепт с помидорами — 1812 года.",
+      "en": "It most likely comes from Hokkien for pickled fish brine; the first known tomato ketchup recipe dates from 1812."
+    },
+    "source": "https://en.wikipedia.org/wiki/Ketchup"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Слова «томат», «чили» и «койот» пришли к нам из языка…",
+      "en": "The words 'tomato', 'chili' and 'coyote' come from the language of the…"
+    },
+    "options": [
+      {
+        "ru": "Ацтеков",
+        "en": "Aztecs"
+      },
+      {
+        "ru": "Инков",
+        "en": "Incas"
+      },
+      {
+        "ru": "Полинезийцев",
+        "en": "Polynesians"
+      },
+      {
+        "ru": "Индейцев сиу",
+        "en": "Sioux"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это язык науатль: tomatl, chīlli, coyōtl. Испанцы разнесли слова по миру, а сам язык жив в Мексике до сих пор.",
+      "en": "They are Nahuatl words: tomatl, chilli, coyotl. The Spanish spread them worldwide, and the language still lives in Mexico."
+    },
+    "source": "https://en.wikipedia.org/wiki/Nahuatl"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Из какого языка в конечном счёте пришло слово «шампунь»?",
+      "en": "Which language did the word 'shampoo' originally come from?"
+    },
+    "options": [
+      {
+        "ru": "Из хинди",
+        "en": "Hindi"
+      },
+      {
+        "ru": "Из французского",
+        "en": "French"
+      },
+      {
+        "ru": "Из итальянского",
+        "en": "Italian"
+      },
+      {
+        "ru": "Из турецкого",
+        "en": "Turkish"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "На хинди «чампо» — «разминай»: в XVIII веке англичане называли так массаж головы, а не мытьё волос.",
+      "en": "Hindi 'chāmpo' means 'knead!': in the 18th century the English used it for a head massage, not a hair wash."
+    },
+    "source": "https://en.wikipedia.org/wiki/Shampoo"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что ещё значит «babushka» в английском, кроме бабушки?",
+      "en": "Besides 'grandmother', what does 'babushka' mean in English?"
+    },
+    "options": [
+      {
+        "ru": "Платок, завязанный под подбородком",
+        "en": "A headscarf tied under the chin"
+      },
+      {
+        "ru": "Кресло-качалка",
+        "en": "A rocking chair"
+      },
+      {
+        "ru": "Вязаный свитер",
+        "en": "A knitted sweater"
+      },
+      {
+        "ru": "Пуховая подушка",
+        "en": "A down pillow"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Англоязычные назвали платок по русским бабушкам, которые повязывали его именно так.",
+      "en": "English speakers named the scarf after the Russian grandmothers who wore it tied that way."
+    },
+    "source": "https://en.wiktionary.org/wiki/babushka"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что, по основной версии, значит тюркское слово, от которого пошёл «карандаш»?",
+      "en": "What did the Turkic word behind Russian 'karandash' (pencil) most likely mean?"
+    },
+    "options": [
+      {
+        "ru": "«Чёрный камень»",
+        "en": "Black stone"
+      },
+      {
+        "ru": "«Тонкая палочка»",
+        "en": "Thin stick"
+      },
+      {
+        "ru": "«Писчее перо»",
+        "en": "Writing quill"
+      },
+      {
+        "ru": "«Сажа»",
+        "en": "Soot"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "«Кара» — чёрный, «таш» — камень; то же «кара» сидит в названии пустыни Каракумы, «чёрные пески».",
+      "en": "'Kara' is black and 'tash' is stone; the same 'kara' is in Karakum, the 'black sands' desert."
+    },
+    "source": "https://ru.wiktionary.org/wiki/карандаш"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какое из этих английских слов пришло из русского языка?",
+      "en": "Which of these English words came from Russian?"
+    },
+    "options": [
+      {
+        "ru": "Mammoth (мамонт)",
+        "en": "Mammoth"
+      },
+      {
+        "ru": "Cobalt (кобальт)",
+        "en": "Cobalt"
+      },
+      {
+        "ru": "Kiosk (киоск)",
+        "en": "Kiosk"
+      },
+      {
+        "ru": "Algebra (алгебра)",
+        "en": "Algebra"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Русское слово, вероятно, от мансийского «земляной рог»: бивни мамонтов в Сибири находили прямо в земле.",
+      "en": "The Russian word likely comes from Mansi for 'earth horn': in Siberia mammoth tusks were dug out of the ground."
+    },
+    "source": "https://en.wikipedia.org/wiki/Mammoth"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Сколько гласных букв в русском алфавите?",
+      "en": "How many vowel letters does the Russian alphabet have?"
+    },
+    "options": [
+      {
+        "ru": "6",
+        "en": "6"
+      },
+      {
+        "ru": "8",
+        "en": "8"
+      },
+      {
+        "ru": "10",
+        "en": "10"
+      },
+      {
+        "ru": "12",
+        "en": "12"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "А гласных звуков всего шесть: Я, Е, Ё и Ю в начале слова означают сразу два звука.",
+      "en": "Yet there are only six vowel sounds: four of those letters stand for two sounds at the start of a word."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Русский_алфавит"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что по-японски значит «цундоку»?",
+      "en": "What does the Japanese word 'tsundoku' mean?"
+    },
+    "options": [
+      {
+        "ru": "Покупать книги и не читать их",
+        "en": "Buying books and never reading them"
+      },
+      {
+        "ru": "Читать в электричке",
+        "en": "Reading on the train"
+      },
+      {
+        "ru": "Засыпать над книгой",
+        "en": "Falling asleep over a book"
+      },
+      {
+        "ru": "Перечитывать любимое",
+        "en": "Rereading a favourite"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Шутливое слово эпохи Мэйдзи склеено из «складывать в стопку» и «читать».",
+      "en": "The joke word dates from Japan's Meiji era and glues together 'pile up' and 'read'."
+    },
+    "source": "https://en.wikipedia.org/wiki/Tsundoku"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какие языки — ближайшие родственники венгерского?",
+      "en": "Which languages are the closest relatives of Hungarian?"
+    },
+    "options": [
+      {
+        "ru": "Хантыйский и мансийский",
+        "en": "Khanty and Mansi"
+      },
+      {
+        "ru": "Турецкий",
+        "en": "Turkish"
+      },
+      {
+        "ru": "Румынский",
+        "en": "Romanian"
+      },
+      {
+        "ru": "Монгольский",
+        "en": "Mongolian"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Предки венгров жили за Уралом и пришли на Дунай лишь в конце IX века; ханты и манси живут в Западной Сибири.",
+      "en": "Hungarians' ancestors lived beyond the Urals and reached the Danube only in the late 800s; the Khanty and Mansi live in Siberia."
+    },
+    "source": "https://en.wikipedia.org/wiki/Hungarian_language"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Как в старой славянской азбуке называлась буква «В»?",
+      "en": "In the old Slavic alphabet, what was the letter V called?"
+    },
+    "options": [
+      {
+        "ru": "Веди",
+        "en": "Vedi"
+      },
+      {
+        "ru": "Глаголь",
+        "en": "Glagol"
+      },
+      {
+        "ru": "Добро",
+        "en": "Dobro"
+      },
+      {
+        "ru": "Люди",
+        "en": "Lyudi"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "«Аз, буки, веди» читается как «я знаю буквы»: «веди» — от «ведать», знать, отсюда и «ведьма».",
+      "en": "'Az, buki, vedi' reads as 'I know letters': 'vedi' comes from 'vedat', to know, the root of 'vedma', a witch."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Церковнославянская_азбука"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Откуда взялось выражение «не в своей тарелке»?",
+      "en": "Where does the Russian idiom 'not in one's own plate' (feeling out of sorts) come from?"
+    },
+    "options": [
+      {
+        "ru": "Неточный перевод с французского",
+        "en": "A mistranslation from French"
+      },
+      {
+        "ru": "Боярский застольный обычай",
+        "en": "A boyars' table custom"
+      },
+      {
+        "ru": "Морской жаргон",
+        "en": "Sailors' slang"
+      },
+      {
+        "ru": "Поговорка поваров",
+        "en": "A cooks' saying"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Французское assiette значит и «тарелка», и «положение, расположение духа», а в русский попала тарелка.",
+      "en": "French 'assiette' means both a plate and a state of mind, and Russian ended up with the plate."
+    },
+    "source": "https://ru.wiktionary.org/wiki/не_в_своей_тарелке"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Сколько тонов в китайском языке путунхуа?",
+      "en": "How many tones does Mandarin Chinese have?"
+    },
+    "options": [
+      {
+        "ru": "Два",
+        "en": "Two"
+      },
+      {
+        "ru": "Четыре",
+        "en": "Four"
+      },
+      {
+        "ru": "Семь",
+        "en": "Seven"
+      },
+      {
+        "ru": "Двенадцать",
+        "en": "Twelve"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Слог «ма» значит «мама», «конопля», «лошадь» или «ругать» — смотря каким тоном его произнести.",
+      "en": "The syllable 'ma' can mean mother, hemp, horse or scold, depending on the tone you say it in."
+    },
+    "source": "https://en.wikipedia.org/wiki/Standard_Chinese_phonology"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Слово «магазин» пришло к нам через французский. А родом оно из какого языка?",
+      "en": "Russian 'magazin' (shop) came via French. Which language did it start in?"
+    },
+    "options": [
+      {
+        "ru": "Из арабского",
+        "en": "Arabic"
+      },
+      {
+        "ru": "Из греческого",
+        "en": "Greek"
+      },
+      {
+        "ru": "Из латыни",
+        "en": "Latin"
+      },
+      {
+        "ru": "Из немецкого",
+        "en": "German"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Арабское «махазин» значит «склады»; отсюда же английское magazine — журнал как склад статей.",
+      "en": "Arabic 'makhazin' means 'storehouses'; English 'magazine', a store of articles, shares the root."
+    },
+    "source": "https://en.wiktionary.org/wiki/magazine"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что буквально значит немецкое слово, от которого пошёл «парикмахер»?",
+      "en": "What does the German word behind Russian 'parikmakher' (hairdresser) literally mean?"
+    },
+    "options": [
+      {
+        "ru": "Мастер париков",
+        "en": "Wig maker"
+      },
+      {
+        "ru": "Мастер стрижки",
+        "en": "Haircut master"
+      },
+      {
+        "ru": "Придворный слуга",
+        "en": "Court servant"
+      },
+      {
+        "ru": "Брадобрей",
+        "en": "Beard shaver"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В XVIII веке модники носили парики, а сами немцы теперь зовут парикмахера Friseur.",
+      "en": "In the 18th century fashionable people wore wigs; Germans themselves now call a hairdresser 'Friseur'."
+    },
+    "source": "https://ru.wiktionary.org/wiki/парикмахер"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Как выглядит вопросительный знак в греческом языке?",
+      "en": "What does a question mark look like in Greek?"
+    },
+    "options": [
+      {
+        "ru": "Как наша точка с запятой",
+        "en": "Like our semicolon"
+      },
+      {
+        "ru": "Как перевёрнутый «?»",
+        "en": "Like an upside down '?'"
+      },
+      {
+        "ru": "Как двоеточие",
+        "en": "Like a colon"
+      },
+      {
+        "ru": "Как звёздочка",
+        "en": "Like an asterisk"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "А работу точки с запятой у греков выполняет точка, поднятая к верху строки.",
+      "en": "And the job of a semicolon in Greek is done by a dot raised to the top of the line."
+    },
+    "source": "https://en.wikipedia.org/wiki/Greek_question_mark"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Мы зовём знак @ «собакой». А как его называют итальянцы?",
+      "en": "Russians call the @ sign 'the little dog'. What do Italians call it?"
+    },
+    "options": [
+      {
+        "ru": "Улитка",
+        "en": "Snail"
+      },
+      {
+        "ru": "Обезьяний хвост",
+        "en": "Monkey's tail"
+      },
+      {
+        "ru": "Котёнок",
+        "en": "Kitten"
+      },
+      {
+        "ru": "Хобот слона",
+        "en": "Elephant's trunk"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "У голландцев это «обезьяний хвост», у датчан — «хобот», а в Израиле — «штрудель».",
+      "en": "The Dutch say 'monkey's tail', the Danes 'elephant's trunk', and Israelis 'strudel'."
+    },
+    "source": "https://en.wikipedia.org/wiki/At_sign"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "К какому языку жестов ближе всего американский язык жестов?",
+      "en": "Which sign language is American Sign Language closest to?"
+    },
+    "options": [
+      {
+        "ru": "К французскому",
+        "en": "French"
+      },
+      {
+        "ru": "К британскому",
+        "en": "British"
+      },
+      {
+        "ru": "К австралийскому",
+        "en": "Australian"
+      },
+      {
+        "ru": "К испанскому",
+        "en": "Spanish"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Первым учителем первой школы для глухих в США, открытой в 1817 году, стал глухой француз Лоран Клерк.",
+      "en": "The first teacher at America's first school for the deaf, opened in 1817, was Laurent Clerc, a deaf Frenchman."
+    },
+    "source": "https://en.wikipedia.org/wiki/American_Sign_Language"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Из какого языка японцы взяли слово «икура» — красная икра?",
+      "en": "Which language gave Japanese the word 'ikura', salmon roe?"
+    },
+    "options": [
+      {
+        "ru": "Из русского",
+        "en": "Russian"
+      },
+      {
+        "ru": "Из китайского",
+        "en": "Chinese"
+      },
+      {
+        "ru": "Из корейского",
+        "en": "Korean"
+      },
+      {
+        "ru": "Из айнского",
+        "en": "Ainu"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это просто наше «икра»: в японском не бывает двух согласных подряд, и между «к» и «р» вставили «у».",
+      "en": "It is simply Russian 'ikra': Japanese avoids two consonants in a row, so a 'u' slipped in between."
+    },
+    "source": "https://en.wikipedia.org/wiki/Ikura"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая буква встречается в русских текстах чаще всех?",
+      "en": "Which letter is the most common in Russian texts?"
+    },
+    "options": [
+      {
+        "ru": "О",
+        "en": "O"
+      },
+      {
+        "ru": "Е",
+        "en": "E"
+      },
+      {
+        "ru": "А",
+        "en": "A"
+      },
+      {
+        "ru": "И",
+        "en": "I"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "На неё приходится почти 11% всех букв, а реже всех встречаются Ъ и Ё.",
+      "en": "It makes up almost 11% of all letters, while the hard sign and Yo are the rarest."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Частотность"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Чем удивителен язык сильбо с Канарского острова Гомера?",
+      "en": "What is unusual about Silbo from the Canary island of La Gomera?"
+    },
+    "options": [
+      {
+        "ru": "На нём свистят",
+        "en": "It is whistled"
+      },
+      {
+        "ru": "На нём только поют",
+        "en": "It is only sung"
+      },
+      {
+        "ru": "На нём щёлкают языком",
+        "en": "It is clicked"
+      },
+      {
+        "ru": "Его пишут узелками",
+        "en": "It is written in knots"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Свистом передают испанские слова через глубокие ущелья, и с 1999 года его учат в школах острова.",
+      "en": "Whistles carry Spanish words across deep ravines, and since 1999 the island's schools teach it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Silbo_Gomero"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько букв в гавайском алфавите?",
+      "en": "How many letters are in the Hawaiian alphabet?"
+    },
+    "answer": 13,
+    "range": [
+      0,
+      60
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "букв",
+      "en": "letters"
+    },
+    "fact": {
+      "ru": "Согласных всего восемь, считая гортанную смычку, и каждый слог кончается гласной: «алоха», «Гонолулу».",
+      "en": "There are only eight consonants, counting the glottal stop, and every syllable ends in a vowel: aloha, Honolulu."
+    },
+    "source": "https://en.wikipedia.org/wiki/Hawaiian_language"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году реформа орфографии убрала из алфавита букву «ять»?",
+      "en": "In what year did a spelling reform drop the old letter yat from Russian?"
+    },
+    "answer": 1918,
+    "range": [
+      1700,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Вместе с ятем исчезли «і» и «фита», а твёрдый знак перестали писать на конце слов вроде «хлебъ».",
+      "en": "Two more letters went with it, and the hard sign stopped being written at the end of words like 'khleb'."
+    },
+    "source": "https://en.wikipedia.org/wiki/Reforms_of_Russian_orthography"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько живых языков насчитывают лингвисты в мире?",
+      "en": "About how many living languages do linguists count in the world?"
+    },
+    "answer": 7200,
+    "range": [
+      0,
+      30000
+    ],
+    "step": 100,
+    "tolerance": 1500,
+    "unit": {
+      "ru": "языков",
+      "en": "languages"
+    },
+    "fact": {
+      "ru": "Больше 40% из них под угрозой исчезновения: у многих осталось меньше тысячи носителей.",
+      "en": "More than 40% of them are endangered: many have fewer than a thousand speakers left."
+    },
+    "source": "https://www.ethnologue.com/insights/how-many-languages/"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Людвик Заменгоф выпустил первый учебник эсперанто?",
+      "en": "In what year did Ludwik Zamenhof publish the first Esperanto textbook?"
+    },
+    "answer": 1887,
+    "range": [
+      1600,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Он подписался «Доктор Эсперанто», то есть «надеющийся», и псевдоним стал названием языка.",
+      "en": "He signed it 'Doktoro Esperanto', 'one who hopes', and the pen name became the language's name."
+    },
+    "source": "https://en.wikipedia.org/wiki/Esperanto"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Около какого года Месроп Маштоц создал армянский алфавит?",
+      "en": "Around what year did Mesrop Mashtots create the Armenian alphabet?"
+    },
+    "answer": 405,
+    "range": [
+      0,
+      1500
+    ],
+    "step": 5,
+    "tolerance": 60,
+    "unit": {
+      "ru": "год н. э.",
+      "en": "year AD"
+    },
+    "fact": {
+      "ru": "Армяне пишут его буквами до сих пор: все 36 букв Маштоца живы, а в XIII веке к ним добавили ещё две.",
+      "en": "Armenians still write with his letters: all 36 of Mashtots's letters survive, and two more were added in the 1200s."
+    },
+    "source": "https://en.wikipedia.org/wiki/Armenian_alphabet"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году корейский король Седжон обнародовал азбуку хангыль?",
+      "en": "In what year did Korea's King Sejong proclaim the hangul alphabet?"
+    },
+    "answer": 1446,
+    "range": [
+      1200,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Седжон придумал её, чтобы простые люди могли читать, не заучивая тысячи китайских иероглифов.",
+      "en": "Sejong created it so ordinary people could read without learning thousands of Chinese characters."
+    },
+    "source": "https://en.wikipedia.org/wiki/Hangul"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько основных знаков японской азбуки хирагана в ходу сегодня?",
+      "en": "How many basic hiragana characters do the Japanese use today?"
+    },
+    "answer": 46,
+    "range": [
+      0,
+      300
+    ],
+    "step": 1,
+    "tolerance": 10,
+    "unit": {
+      "ru": "знаков",
+      "en": "characters"
+    },
+    "fact": {
+      "ru": "Каждый знак — целый слог (ещё два старых знака почти вышли из употребления), а рядом пишут катаканой и иероглифами.",
+      "en": "Each sign is a whole syllable (two old ones are now all but unused), and Japanese also uses katakana and kanji."
+    },
+    "source": "https://en.wikipedia.org/wiki/Hiragana"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько слов в «Толковом словаре живого великорусского языка» Даля?",
+      "en": "About how many words are in Vladimir Dahl's great dictionary of Russian?"
+    },
+    "answer": 200000,
+    "range": [
+      0,
+      1000000
+    ],
+    "step": 5000,
+    "tolerance": 50000,
+    "unit": {
+      "ru": "слов",
+      "en": "words"
+    },
+    "fact": {
+      "ru": "Даль начал собирать слова в 1819 году юным морским офицером, а заодно записал около 30 тысяч пословиц.",
+      "en": "Dahl began collecting words in 1819 as a young naval officer and also gathered about 30,000 proverbs."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Толковый_словарь_живого_великорусского_языка"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Шампольон объявил, что разгадал египетские иероглифы?",
+      "en": "In what year did Champollion announce he had cracked Egyptian hieroglyphs?"
+    },
+    "answer": 1822,
+    "range": [
+      1400,
+      2000
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Ключом стал Розеттский камень: на нём один и тот же указ написан тремя видами письма, включая греческое.",
+      "en": "The key was the Rosetta Stone, which carries one decree in three scripts, including Greek."
+    },
+    "source": "https://en.wikipedia.org/wiki/Jean-François_Champollion"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Около скольких иероглифов собрал китайский словарь Канси 1716 года?",
+      "en": "About how many characters are in China's Kangxi Dictionary of 1716?"
+    },
+    "answer": 47000,
+    "range": [
+      0,
+      200000
+    ],
+    "step": 1000,
+    "tolerance": 12000,
+    "unit": {
+      "ru": "иероглифов",
+      "en": "characters"
+    },
+    "fact": {
+      "ru": "Почти 40% из них лишь варианты написания других знаков, а в ходу сегодня меньше четверти.",
+      "en": "Nearly 40% are just variant forms of other characters, and fewer than a quarter are in common use today."
+    },
+    "source": "https://en.wikipedia.org/wiki/Kangxi_Dictionary"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько живых языков насчитывают в Папуа — Новой Гвинее?",
+      "en": "About how many living languages are spoken in Papua New Guinea?"
+    },
+    "answer": 840,
+    "range": [
+      0,
+      3000
+    ],
+    "step": 10,
+    "tolerance": 150,
+    "unit": {
+      "ru": "языков",
+      "en": "languages"
+    },
+    "fact": {
+      "ru": "Это больше, чем в любой другой стране: горы и джунгли веками отделяли соседние долины друг от друга.",
+      "en": "That is more than in any other country: mountains and jungle kept neighbouring valleys apart for centuries."
+    },
+    "source": "https://en.wikipedia.org/wiki/Languages_of_Papua_New_Guinea"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "По летописной традиции, в каком году Кирилл и Мефодий создали славянскую азбуку?",
+      "en": "By tradition, in what year did Cyril and Methodius create the Slavic alphabet?"
+    },
+    "answer": 863,
+    "range": [
+      500,
+      1500
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Братья из греческих Салоник создали её для миссии в Великую Моравию, в Центральную Европу.",
+      "en": "The brothers, from Greek Thessaloniki, made it for a mission to Great Moravia, in Central Europe."
+    },
+    "source": "https://en.wikipedia.org/wiki/Saints_Cyril_and_Methodius"
+  }
+]

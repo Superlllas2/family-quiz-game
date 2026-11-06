@@ -1,0 +1,1506 @@
+[
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какая английская фраза спрятана в названии ICQ?",
+      "en": "Which English phrase is hidden in the name ICQ?"
+    },
+    "options": [
+      {
+        "ru": "I seek you — «ищу тебя»",
+        "en": "I seek you"
+      },
+      {
+        "ru": "Instant chat queue — «очередь чата»",
+        "en": "Instant chat queue"
+      },
+      {
+        "ru": "Ice cube — «кубик льда»",
+        "en": "Ice cube"
+      },
+      {
+        "ru": "I keep quiet — «я молчу»",
+        "en": "I keep quiet"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "«Аську» в 1996 году придумали молодые израильские программисты, а в 2010-м её купила российская Digital Sky Technologies.",
+      "en": "Young Israeli programmers created ICQ in 1996; in 2010 it was bought by the Russian company Digital Sky Technologies."
+    },
+    "source": "https://en.wikipedia.org/wiki/ICQ"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какая компания выпустила в 2004 году тонкую раскладушку RAZR?",
+      "en": "Which company launched the slim RAZR flip phone in 2004?"
+    },
+    "options": [
+      {
+        "ru": "Моторола",
+        "en": "Motorola"
+      },
+      {
+        "ru": "Нокиа",
+        "en": "Nokia"
+      },
+      {
+        "ru": "Сименс",
+        "en": "Siemens"
+      },
+      {
+        "ru": "Самсунг",
+        "en": "Samsung"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Название — от английского razor, «бритва»: ставку сделали на толщину, и RAZR разошёлся тиражом больше 100 миллионов.",
+      "en": "The name comes from 'razor': Motorola bet everything on thinness, and well over 100 million were sold."
+    },
+    "source": "https://en.wikipedia.org/wiki/Motorola_Razr_V3"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "С каким обещанием Стив Джобс представил первый iPod в 2001 году?",
+      "en": "With what promise did Steve Jobs unveil the first iPod in 2001?"
+    },
+    "options": [
+      {
+        "ru": "«1000 песен в кармане»",
+        "en": "1,000 songs in your pocket"
+      },
+      {
+        "ru": "«Думай иначе»",
+        "en": "Think different"
+      },
+      {
+        "ru": "«Музыка без проводов»",
+        "en": "Music without wires"
+      },
+      {
+        "ru": "«Радио всегда с тобой»",
+        "en": "Radio always with you"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Внутри стоял крошечный жёсткий диск на 5 ГБ, а песня в MP3 весила примерно 5 МБ.",
+      "en": "Inside was a tiny 5 GB hard drive, and an MP3 song took up about 5 MB."
+    },
+    "source": "https://en.wikipedia.org/wiki/IPod"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Откуда родом угги, модные сапоги нулевых?",
+      "en": "Where do Ugg boots, a 2000s fashion craze, come from?"
+    },
+    "options": [
+      {
+        "ru": "Из Австралии",
+        "en": "Australia"
+      },
+      {
+        "ru": "Из Канады",
+        "en": "Canada"
+      },
+      {
+        "ru": "Из Норвегии",
+        "en": "Norway"
+      },
+      {
+        "ru": "Из Исландии",
+        "en": "Iceland"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В Австралии ugg — просто название любых овчинных сапог, их носили серферы; модной маркой UGG сделала американская компания.",
+      "en": "In Australia 'ugg' is a generic word for sheepskin boots worn by surfers; an American firm made UGG a fashion brand."
+    },
+    "source": "https://en.wikipedia.org/wiki/Ugg_boots"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "В каком американском городе разворачивается развязка фильма «Брат 2» (2000)?",
+      "en": "In which American city does the film Brother 2 (2000) reach its climax?"
+    },
+    "options": [
+      {
+        "ru": "В Чикаго",
+        "en": "Chicago"
+      },
+      {
+        "ru": "В Лос-Анджелесе",
+        "en": "Los Angeles"
+      },
+      {
+        "ru": "В Майами",
+        "en": "Miami"
+      },
+      {
+        "ru": "В Бостоне",
+        "en": "Boston"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Данила прилетает в Нью-Йорк, покупает старый «кадиллак», а когда тот ломается, едет в Чикаго автостопом.",
+      "en": "Danila lands in New York, buys an old Cadillac, and when it breaks down he hitchhikes the rest of the way to Chicago."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Брат_2"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Как в нулевых перекинуть мелодию с телефона на телефон по ИК-порту?",
+      "en": "How did you send a ringtone between two 2000s phones by infrared?"
+    },
+    "options": [
+      {
+        "ru": "Портами друг к другу",
+        "en": "Ports face to face"
+      },
+      {
+        "ru": "Позвонить с одного на другой",
+        "en": "Call one from the other"
+      },
+      {
+        "ru": "Потрясти оба телефона",
+        "en": "Shake both phones"
+      },
+      {
+        "ru": "Приложить их к колонке",
+        "en": "Hold them to a speaker"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Инфракрасный луч, как у пульта от телевизора, работает только в прямой видимости и примерно в пределах метра.",
+      "en": "The infrared beam, like a TV remote's, needs a clear line of sight and works only within about a metre."
+    },
+    "source": "https://en.wikipedia.org/wiki/Infrared_Data_Association"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой самолёт совершил последний коммерческий рейс в 2003 году?",
+      "en": "Which airliner made its last commercial flight in 2003?"
+    },
+    "options": [
+      {
+        "ru": "«Конкорд»",
+        "en": "Concorde"
+      },
+      {
+        "ru": "Ту-144",
+        "en": "Tu-144"
+      },
+      {
+        "ru": "«Боинг-747»",
+        "en": "Boeing 747"
+      },
+      {
+        "ru": "Ил-86",
+        "en": "Il-86"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Сверхзвуковой лайнер пересекал Атлантику меньше чем за 3,5 часа, а обычным самолётам на это нужно около восьми.",
+      "en": "The supersonic jet crossed the Atlantic in just under 3.5 hours; ordinary airliners took about eight."
+    },
+    "source": "https://en.wikipedia.org/wiki/Concorde"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Как Netflix доставлял фильмы зрителям до 2007 года?",
+      "en": "How did Netflix get films to its customers before 2007?"
+    },
+    "options": [
+      {
+        "ru": "Присылал DVD по почте",
+        "en": "DVDs by post"
+      },
+      {
+        "ru": "Через свои видеопрокаты",
+        "en": "Through its own video shops"
+      },
+      {
+        "ru": "По спутниковому каналу",
+        "en": "Over a satellite channel"
+      },
+      {
+        "ru": "Через киоски с флешками",
+        "en": "Via USB stick kiosks"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Стриминг Netflix запустил только в 2007 году, а последний красный конверт с диском отправил в сентябре 2023-го.",
+      "en": "Netflix only began streaming in 2007, and it mailed its very last red DVD envelope in September 2023."
+    },
+    "source": "https://en.wikipedia.org/wiki/Netflix"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Собачек какой породы звёзды нулевых носили в сумочках?",
+      "en": "Which breed did 2000s celebrities carry around in handbags?"
+    },
+    "options": [
+      {
+        "ru": "Чихуахуа",
+        "en": "Chihuahua"
+      },
+      {
+        "ru": "Такса",
+        "en": "Dachshund"
+      },
+      {
+        "ru": "Бигль",
+        "en": "Beagle"
+      },
+      {
+        "ru": "Бульдог",
+        "en": "Bulldog"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Моду подстегнули Пэрис Хилтон с её Тинкербелл и пёс Брюзер из «Блондинки в законе» (2001).",
+      "en": "The craze was driven by Paris Hilton's Tinkerbell and Bruiser, the dog in Legally Blonde (2001)."
+    },
+    "source": "https://www.salon.com/2014/08/11/from_wishbone_to_bruiser_to_viral_star_tinkerbelle_a_pop_cultural_history_of_tiny_dogs_wearing_clothes"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Как назывались волчки, которые запускали шнуром и сталкивали на арене?",
+      "en": "What were the spinning tops you launched with a ripcord and battled in an arena?"
+    },
+    "options": [
+      {
+        "ru": "«Бейблэйд»",
+        "en": "Beyblade"
+      },
+      {
+        "ru": "«Бакуган»",
+        "en": "Bakugan"
+      },
+      {
+        "ru": "«Тамагочи»",
+        "en": "Tamagotchi"
+      },
+      {
+        "ru": "«Покемон»",
+        "en": "Pokémon"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Название склеено из японского «бэйгома» — волчков, которые когда-то делали из раковин, — и английского blade.",
+      "en": "The name blends beigoma, Japanese tops once made from seashells, with the English word 'blade'."
+    },
+    "source": "https://en.wikipedia.org/wiki/Beyblade"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Как называлась мужская сумочка с ремешком на запястье, хит конца 90-х и нулевых?",
+      "en": "What was the small men's bag with a wrist strap, a must in Russia around 2000, called?"
+    },
+    "options": [
+      {
+        "ru": "Борсетка",
+        "en": "Borsetka"
+      },
+      {
+        "ru": "Авоська",
+        "en": "Avoska"
+      },
+      {
+        "ru": "Ридикюль",
+        "en": "Ridikyul"
+      },
+      {
+        "ru": "Кисет",
+        "en": "Kiset"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Слово пришло от итальянского borsetta, «сумочка», только в Италии так зовут женскую сумочку, а мужскую — borsello.",
+      "en": "It comes from Italian borsetta, 'little bag', though in Italy that means a lady's handbag; a man's one is a borsello."
+    },
+    "source": "https://mel.fm/gramotnost/kak-pisat/8021569-borsetka-ili-barsetka-kak-pisat-pravilno"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой девиз был у реалити-шоу «Дом-2» (ТНТ, 2004)?",
+      "en": "What was the motto of the Russian reality show Dom-2 (2004)?"
+    },
+    "options": [
+      {
+        "ru": "«Построй свою любовь»",
+        "en": "Build your love"
+      },
+      {
+        "ru": "«Найди свою половинку»",
+        "en": "Find your other half"
+      },
+      {
+        "ru": "«Любовь не ждёт»",
+        "en": "Love won't wait"
+      },
+      {
+        "ru": "«Живи на камеру»",
+        "en": "Live on camera"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Участники должны были строить дом и любовь, а главным призом был дом в Подмосковье, но за 16 лет на ТНТ его так и не вручили.",
+      "en": "Contestants were to build a house and a relationship, and a house near Moscow was the prize, yet in 16 years on TNT nobody won it."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Дом-2"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Чего НЕ умел первый iPhone (2007)?",
+      "en": "What could the first iPhone (2007) NOT do?"
+    },
+    "options": [
+      {
+        "ru": "Снимать видео",
+        "en": "Record video"
+      },
+      {
+        "ru": "Выходить в интернет",
+        "en": "Browse the web"
+      },
+      {
+        "ru": "Фотографировать",
+        "en": "Take photos"
+      },
+      {
+        "ru": "Играть музыку",
+        "en": "Play music"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Видео появилось только в iPhone 3GS в 2009 году; у первой модели не было даже App Store и копирования текста.",
+      "en": "Video recording only arrived with the iPhone 3GS in 2009; the first model had no App Store or copy and paste either."
+    },
+    "source": "https://en.wikipedia.org/wiki/IPhone_(1st_generation)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Сколько стоила одна песня в iTunes Store при открытии в 2003 году?",
+      "en": "How much did one song cost when the iTunes Store opened in 2003?"
+    },
+    "options": [
+      {
+        "ru": "99 центов",
+        "en": "99 cents"
+      },
+      {
+        "ru": "1,99 доллара",
+        "en": "$1.99"
+      },
+      {
+        "ru": "49 центов",
+        "en": "49 cents"
+      },
+      {
+        "ru": "9 центов",
+        "en": "9 cents"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Покупать песни поштучно и легально было в новинку: за первые пять дней продали больше миллиона треков.",
+      "en": "Buying single songs legally was new, and more than a million tracks sold in the first five days."
+    },
+    "source": "https://en.wikipedia.org/wiki/ITunes_Store"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Программисты из какой страны написали Skype (2003)?",
+      "en": "Programmers from which country wrote Skype (2003)?"
+    },
+    "options": [
+      {
+        "ru": "Эстонии",
+        "en": "Estonia"
+      },
+      {
+        "ru": "Швеции",
+        "en": "Sweden"
+      },
+      {
+        "ru": "Финляндии",
+        "en": "Finland"
+      },
+      {
+        "ru": "Израиля",
+        "en": "Israel"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Основали Skype швед и датчанин, а код писали эстонцы, которые до этого сделали файлообменник Kazaa.",
+      "en": "Skype was founded by a Swede and a Dane, but its code came from Estonians who had earlier built the Kazaa file sharer."
+    },
+    "source": "https://en.wikipedia.org/wiki/Skype"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой хит коверкает припев «Asereje» группы Las Ketchup (2002)?",
+      "en": "Which hit does the chorus of Las Ketchup's Asereje (2002) garble?"
+    },
+    "options": [
+      {
+        "ru": "Рэп «Rapper's Delight»",
+        "en": "Rapper's Delight"
+      },
+      {
+        "ru": "Танец «Macarena»",
+        "en": "Macarena"
+      },
+      {
+        "ru": "Песню «Y.M.C.A.»",
+        "en": "Y.M.C.A."
+      },
+      {
+        "ru": "Песню «La Bamba»",
+        "en": "La Bamba"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это испанская «тарабарщина» поверх строк Sugarhill Gang, а сёстры назвались Las Ketchup, потому что их отца звали «Помидор».",
+      "en": "It is Spanish-sounding gibberish of a Sugarhill Gang line; the sisters became Las Ketchup as their father was nicknamed 'Tomato'."
+    },
+    "source": "https://en.wikipedia.org/wiki/The_Ketchup_Song_(Aserej%C3%A9)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "На каком языке название хита «Dragostea din tei» (O-Zone, 2004)?",
+      "en": "What language is the title of O-Zone's hit Dragostea din tei (2004)?"
+    },
+    "options": [
+      {
+        "ru": "На румынском",
+        "en": "Romanian"
+      },
+      {
+        "ru": "На итальянском",
+        "en": "Italian"
+      },
+      {
+        "ru": "На латыни",
+        "en": "Latin"
+      },
+      {
+        "ru": "На португальском",
+        "en": "Portuguese"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это значит «Любовь из-под лип»; группа была из Молдавии, где говорят по-румынски, а песня стала мемом «Нума-нума».",
+      "en": "It means 'love from the linden trees'; the band came from Moldova, where Romanian is spoken, and the song became the Numa Numa meme."
+    },
+    "source": "https://en.wikipedia.org/wiki/Dragostea_din_tei"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что изображал звук, из которого родился хит Crazy Frog (2005)?",
+      "en": "What was the sound behind the Crazy Frog hit (2005) first meant to be?"
+    },
+    "options": [
+      {
+        "ru": "Тарахтящий мотор",
+        "en": "A sputtering engine"
+      },
+      {
+        "ru": "Кваканье лягушки",
+        "en": "A frog croaking"
+      },
+      {
+        "ru": "Модем при соединении",
+        "en": "A dial-up modem"
+      },
+      {
+        "ru": "Автосигнализацию",
+        "en": "A car alarm"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В 1997 году 17-летний швед Даниэль Мальмедаль изобразил голосом двухтактный мотор, а лягушку к звуку нарисовали только в 2003-м.",
+      "en": "In 1997 Swedish 17-year-old Daniel Malmedahl mimicked a two-stroke engine; the animated frog was only drawn in 2003."
+    },
+    "source": "https://en.wikipedia.org/wiki/Crazy_Frog"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что означало название T9 — режима быстрого набора SMS?",
+      "en": "What did T9, the fast text input on old phones, stand for?"
+    },
+    "options": [
+      {
+        "ru": "Текст на 9 кнопках",
+        "en": "Text on 9 keys"
+      },
+      {
+        "ru": "Набор в 9 раз быстрее",
+        "en": "Typing 9 times faster"
+      },
+      {
+        "ru": "Технология 9 языков",
+        "en": "Technology for 9 languages"
+      },
+      {
+        "ru": "Телефон 9-го поколения",
+        "en": "Ninth-generation telephone"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Каждая кнопка несла несколько букв, а словарь угадывал слово, так что на букву хватало одного нажатия.",
+      "en": "Each key carried several letters and a dictionary guessed the word, so one press per letter was enough."
+    },
+    "source": "https://en.wikipedia.org/wiki/T9_(predictive_text)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Где снят зелёный холм с обоев Windows XP?",
+      "en": "Where was the green hill of the Windows XP wallpaper photographed?"
+    },
+    "options": [
+      {
+        "ru": "В Калифорнии",
+        "en": "California"
+      },
+      {
+        "ru": "В Ирландии",
+        "en": "Ireland"
+      },
+      {
+        "ru": "В Новой Зеландии",
+        "en": "New Zealand"
+      },
+      {
+        "ru": "В Швейцарии",
+        "en": "Switzerland"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Чарльз О'Рир снял его в 1996 году в винном краю Сонома, по дороге к своей девушке; теперь на холме виноградник.",
+      "en": "Charles O'Rear shot it in 1996 in Sonoma wine country on his way to see his girlfriend; the hill is now a vineyard."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bliss_(photograph)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая группа в 2000 году подала в суд на Napster, найдя там свою неизданную песню?",
+      "en": "Which band sued Napster in 2000 after finding its unreleased song there?"
+    },
+    "options": [
+      {
+        "ru": "«Металлика»",
+        "en": "Metallica"
+      },
+      {
+        "ru": "«Айрон Мейден»",
+        "en": "Iron Maiden"
+      },
+      {
+        "ru": "«Раммштайн»",
+        "en": "Rammstein"
+      },
+      {
+        "ru": "«Эй-си/Ди-си»",
+        "en": "AC/DC"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Демо «I Disappear» для фильма «Миссия невыполнима 2» крутили по радио ещё до выхода, и след привёл к Napster.",
+      "en": "A demo of I Disappear, made for Mission: Impossible 2, was on the radio before release, and the trail led to Napster."
+    },
+    "source": "https://en.wikipedia.org/wiki/Metallica_v._Napster,_Inc."
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "На какой песне инженеры отлаживали формат MP3?",
+      "en": "Which song did engineers use to fine-tune the MP3 format?"
+    },
+    "options": [
+      {
+        "ru": "«Tom's Diner» Сюзанны Веги",
+        "en": "Tom's Diner, Suzanne Vega"
+      },
+      {
+        "ru": "«Yesterday» группы «Битлз»",
+        "en": "Yesterday, the Beatles"
+      },
+      {
+        "ru": "«Billie Jean» Джексона",
+        "en": "Billie Jean, Michael Jackson"
+      },
+      {
+        "ru": "«Богемская рапсодия» «Куин»",
+        "en": "Bohemian Rhapsody, Queen"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Голос без аккомпанемента выдаёт любой изъян сжатия, поэтому Карлхайнц Бранденбург слушал её снова и снова после каждой доработки.",
+      "en": "A bare voice with no backing exposes every flaw of compression, so Karlheinz Brandenburg played it again after every tweak."
+    },
+    "source": "https://en.wikipedia.org/wiki/Tom%27s_Diner"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "За что ещё платили абоненты мобильной связи в России до июля 2006 года?",
+      "en": "Until July 2006, what else did Russian mobile users have to pay for?"
+    },
+    "options": [
+      {
+        "ru": "За входящие звонки",
+        "en": "Incoming calls"
+      },
+      {
+        "ru": "За звонки в скорую",
+        "en": "Calls to an ambulance"
+      },
+      {
+        "ru": "За каждое включение телефона",
+        "en": "Every time they switched on"
+      },
+      {
+        "ru": "За смену заставки",
+        "en": "Changing the wallpaper"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "1 июля 2006 года вступила в силу поправка к закону «О связи» — «платит вызывающий», и входящие наконец стали бесплатными.",
+      "en": "On 1 July 2006 a 'calling party pays' amendment to the communications law came into force, and incoming calls became free."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Сотовая_связь_в_России"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В каком городе Альберт Попков создал «Одноклассников» в 2006 году?",
+      "en": "In which city did Albert Popkov create Odnoklassniki in 2006?"
+    },
+    "options": [
+      {
+        "ru": "В Лондоне",
+        "en": "London"
+      },
+      {
+        "ru": "В Москве",
+        "en": "Moscow"
+      },
+      {
+        "ru": "В Санкт-Петербурге",
+        "en": "Saint Petersburg"
+      },
+      {
+        "ru": "В Риге",
+        "en": "Riga"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Попков жил и работал в Лондоне и до этого уже делал похожие сайты одноклассников для других европейских стран.",
+      "en": "Popkov lived and worked in London and had already worked on similar school friends sites for other European countries."
+    },
+    "source": "https://en.wikipedia.org/wiki/Odnoklassniki"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой российский фильм получил «Золотого льва» в Венеции в 2003 году?",
+      "en": "Which Russian film won the Golden Lion in Venice in 2003?"
+    },
+    "options": [
+      {
+        "ru": "«Возвращение»",
+        "en": "The Return"
+      },
+      {
+        "ru": "«Бумер»",
+        "en": "Bimmer"
+      },
+      {
+        "ru": "«Ночной дозор»",
+        "en": "Night Watch"
+      },
+      {
+        "ru": "«Брат 2»",
+        "en": "Brother 2"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это был первый полнометражный фильм Андрея Звягинцева, и дебютант сразу забрал главный приз фестиваля.",
+      "en": "It was Andrey Zvyagintsev's first feature film, and the newcomer took the festival's top prize straight away."
+    },
+    "source": "https://en.wikipedia.org/wiki/The_Return_(2003_film)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В клубах какого города родился танец «тектоник», хит 2007 года?",
+      "en": "In the clubs of which city was Tecktonik, the 2007 dance craze, born?"
+    },
+    "options": [
+      {
+        "ru": "Парижа",
+        "en": "Paris"
+      },
+      {
+        "ru": "Берлина",
+        "en": "Berlin"
+      },
+      {
+        "ru": "Амстердама",
+        "en": "Amsterdam"
+      },
+      {
+        "ru": "Барселоны",
+        "en": "Barcelona"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Tecktonik — торговая марка вечеринок клуба Metropolis под Парижем, а название обыгрывает тектонику плит.",
+      "en": "Tecktonik was the trademark of club nights at the Metropolis near Paris, a pun on plate tectonics."
+    },
+    "source": "https://en.wikipedia.org/wiki/Electro_dance"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что спел продавец телефонов Пол Поттс, выиграв британское шоу талантов в 2007 году?",
+      "en": "What did phone salesman Paul Potts sing to win Britain's Got Talent in 2007?"
+    },
+    "options": [
+      {
+        "ru": "Оперную арию",
+        "en": "An opera aria"
+      },
+      {
+        "ru": "Рэп",
+        "en": "A rap"
+      },
+      {
+        "ru": "Йодль",
+        "en": "A yodel"
+      },
+      {
+        "ru": "Колыбельную",
+        "en": "A lullaby"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Он пел «Nessun dorma» из оперы Пуччини «Турандот» и в финале получил 100 тысяч фунтов.",
+      "en": "He sang Nessun dorma from Puccini's opera Turandot and took the £100,000 prize in the final."
+    },
+    "source": "https://en.wikipedia.org/wiki/Paul_Potts"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Почему Gmail, запущенный 1 апреля 2004 года, многие приняли за шутку?",
+      "en": "Why did many take Gmail, launched on 1 April 2004, for a joke?"
+    },
+    "options": [
+      {
+        "ru": "Ящик на 1 ГБ бесплатно",
+        "en": "A free 1 GB mailbox"
+      },
+      {
+        "ru": "Совсем не было рекламы",
+        "en": "No ads at all"
+      },
+      {
+        "ru": "Ящик стоил доллар в месяц",
+        "en": "It cost a dollar a month"
+      },
+      {
+        "ru": "Письма читал вслух робот",
+        "en": "A robot read mail aloud"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Google славился первоапрельскими розыгрышами, а бесплатный гигабайт казался слишком щедрым, чтобы быть правдой.",
+      "en": "Google was known for April Fools' pranks, and a free gigabyte seemed too generous to be true."
+    },
+    "source": "https://www.pbs.org/newshour/nation/20-years-ago-people-thought-googles-gmail-launch-was-an-april-fools-day-joke"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько символов кириллицей помещалось в одну SMS?",
+      "en": "How many Cyrillic characters fit into one SMS?"
+    },
+    "answer": 70,
+    "range": [
+      0,
+      300
+    ],
+    "step": 1,
+    "tolerance": 15,
+    "unit": {
+      "ru": "символов",
+      "en": "characters"
+    },
+    "fact": {
+      "ru": "Русская буква занимает в SMS 16 бит, а латинская — 7, поэтому многие и писали сообщения транслитом.",
+      "en": "A Cyrillic letter takes 16 bits in an SMS and a Latin one 7, which is why many people texted in Latin letters."
+    },
+    "source": "https://en.wikipedia.org/wiki/SMS"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько миллионов штук продали Nokia 1100 (2003) — самого продаваемого телефона в истории?",
+      "en": "How many million Nokia 1100s (2003), the best-selling phone ever, were sold?"
+    },
+    "answer": 250,
+    "range": [
+      0,
+      1000
+    ],
+    "step": 5,
+    "tolerance": 60,
+    "unit": {
+      "ru": "млн",
+      "en": "million"
+    },
+    "fact": {
+      "ru": "Дешёвый, пыленепроницаемый и с фонариком, он делался для стран, где люди покупали свой первый мобильник.",
+      "en": "Cheap, dustproof and fitted with a torch, it was built for countries where people were buying their first mobile."
+    },
+    "source": "https://en.wikipedia.org/wiki/Nokia_1100"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Какая диагональ была у экрана первого iPhone (2007)?",
+      "en": "How big, diagonally, was the screen of the first iPhone (2007)?"
+    },
+    "answer": 3.5,
+    "range": [
+      1,
+      10
+    ],
+    "step": 0.1,
+    "tolerance": 0.8,
+    "unit": {
+      "ru": "дюйма",
+      "en": "inches"
+    },
+    "fact": {
+      "ru": "Тогда он казался огромным, а до 4 дюймов Apple увеличила экран лишь в iPhone 5 в 2012 году.",
+      "en": "It looked huge at the time; Apple only grew the screen to 4 inches with the iPhone 5 in 2012."
+    },
+    "source": "https://en.wikipedia.org/wiki/IPhone_(1st_generation)"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько серий было в сериале «Не родись красивой» (2005–2006)?",
+      "en": "How many episodes did the Russian series Don't Be Born Beautiful (2005–2006) have?"
+    },
+    "answer": 200,
+    "range": [
+      0,
+      1000
+    ],
+    "step": 5,
+    "tolerance": 40,
+    "unit": {
+      "ru": "серий",
+      "en": "episodes"
+    },
+    "fact": {
+      "ru": "Это ремейк колумбийской «Я — Бетти, дурнушка», которую переснимали больше чем в 25 странах, включая американскую «Дурнушку».",
+      "en": "It remade Colombia's Yo soy Betty, la fea, which was remade in over 25 countries, Ugly Betty in the US among them."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Не_родись_красивой"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Какую максимальную скорость обещал модем для интернета по телефонной линии?",
+      "en": "What top speed did a dial-up internet modem promise?"
+    },
+    "answer": 56,
+    "range": [
+      0,
+      500
+    ],
+    "step": 1,
+    "tolerance": 15,
+    "unit": {
+      "ru": "кбит/с",
+      "en": "kbit/s"
+    },
+    "fact": {
+      "ru": "Даже на полной скорости песня в MP3 на 4 МБ качалась около 10 минут, а домашний телефон всё это время был занят.",
+      "en": "Even at full speed a 4 MB MP3 took about 10 minutes, and the home phone line was busy the whole time."
+    },
+    "source": "https://en.wikipedia.org/wiki/Dial-up_Internet_access"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько точек в ширину был экран Nokia 3310?",
+      "en": "How many pixels wide was the Nokia 3310 screen?"
+    },
+    "answer": 84,
+    "range": [
+      0,
+      500
+    ],
+    "step": 1,
+    "tolerance": 20,
+    "unit": {
+      "ru": "точек",
+      "en": "pixels"
+    },
+    "fact": {
+      "ru": "Экран 84 на 48 — около 4 тысяч точек, в сотни раз меньше, чем у любого современного смартфона.",
+      "en": "At 84 by 48 it had about 4,000 pixels, hundreds of times fewer than any modern smartphone."
+    },
+    "source": "https://en.wikipedia.org/wiki/Nokia_3310"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Во сколько раз MP3 на 128 кбит/с меньше той же песни на CD?",
+      "en": "How many times smaller is a 128 kbit/s MP3 than the same song on CD?"
+    },
+    "answer": 11,
+    "range": [
+      0,
+      100
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "раз",
+      "en": "times"
+    },
+    "fact": {
+      "ru": "Формат выбрасывает звуки, которые ухо всё равно не различает, их заглушают более громкие соседние звуки.",
+      "en": "The format throws away sounds the ear cannot pick out anyway, because louder sounds next to them mask them."
+    },
+    "source": "https://en.wikipedia.org/wiki/MP3"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Windows XP вышла в 2001 году. Сколько лет Microsoft её поддерживала?",
+      "en": "Windows XP came out in 2001. For how many years did Microsoft support it?"
+    },
+    "answer": 12.5,
+    "range": [
+      0,
+      50
+    ],
+    "step": 0.5,
+    "tolerance": 3.5,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "Поддержку закончили в апреле 2014 года, а ещё в январе XP стояла почти на 30% компьютеров мира.",
+      "en": "Support ended in April 2014, yet that January XP still ran on almost 30% of the world's desktop computers."
+    },
+    "source": "https://en.wikipedia.org/wiki/Windows_XP"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "«Аська» появилась в 1996 году. Сколько лет, округлённо, она проработала?",
+      "en": "ICQ launched in 1996. Roughly how many years did it run before shutting down?"
+    },
+    "answer": 28,
+    "range": [
+      0,
+      100
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "Её отключили 26 июня 2024 года: к тому времени почти все давно перешли в другие мессенджеры.",
+      "en": "It was switched off on 26 June 2024, long after nearly everyone had moved to other messengers."
+    },
+    "source": "https://en.wikipedia.org/wiki/ICQ"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько миллионов iPod Apple продала к апрелю 2007 года, за пять с половиной лет?",
+      "en": "How many million iPods had Apple sold by April 2007, five and a half years after launch?"
+    },
+    "answer": 100,
+    "range": [
+      0,
+      1000
+    ],
+    "step": 5,
+    "tolerance": 40,
+    "unit": {
+      "ru": "млн",
+      "en": "million"
+    },
+    "fact": {
+      "ru": "Так iPod стал самым продаваемым цифровым плеером в истории, а белые наушники — модным знаком.",
+      "en": "That made the iPod the best-selling digital music player ever, and its white earbuds became a fashion signal."
+    },
+    "source": "https://en.wikipedia.org/wiki/IPod"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какая машина — тот самый «бумер» из фильма «Бумер» (2003)?",
+      "en": "Which car is the 'boomer' in the Russian film Bimmer (2003)?"
+    },
+    "options": [
+      {
+        "ru": "БМВ",
+        "en": "BMW"
+      },
+      {
+        "ru": "Мерседес",
+        "en": "Mercedes"
+      },
+      {
+        "ru": "Ауди",
+        "en": "Audi"
+      },
+      {
+        "ru": "Фольксваген",
+        "en": "Volkswagen"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это чёрная BMW 750iL; тему Шнурова сочинили из звонка телефона, забытого в машине, и после фильма её поставили на звонок полстраны.",
+      "en": "It is a black BMW 750iL; Shnurov built the theme from a phone left ringing in the car, and half the country made it their ringtone."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Бумер_(фильм)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какие куклы с большими головами и пухлыми губами бросили вызов Барби в 2001 году?",
+      "en": "Which big-headed, pouty-lipped dolls took on Barbie in 2001?"
+    },
+    "options": [
+      {
+        "ru": "Братц",
+        "en": "Bratz"
+      },
+      {
+        "ru": "Монстер Хай",
+        "en": "Monster High"
+      },
+      {
+        "ru": "Синди",
+        "en": "Sindy"
+      },
+      {
+        "ru": "Полли Покет",
+        "en": "Polly Pocket"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В 2008 году присяжные решили, что Bratz придумали ещё в Mattel, у создателей Барби, но апелляция это отменила, и куклы остались у MGA.",
+      "en": "A 2008 jury ruled Bratz was dreamed up at Mattel, Barbie's maker, but the appeal court reversed it and MGA kept the dolls."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bratz"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Чем были хороши кроссовки Heelys, хит нулевых?",
+      "en": "What was special about Heelys, the 2000s sneaker craze?"
+    },
+    "options": [
+      {
+        "ru": "Колесо в пятке",
+        "en": "A wheel in the heel"
+      },
+      {
+        "ru": "Пружины в подошве",
+        "en": "Springs in the sole"
+      },
+      {
+        "ru": "Шнурки завязывались сами",
+        "en": "Self-tying laces"
+      },
+      {
+        "ru": "Подогрев подошвы",
+        "en": "A heated sole"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Изобретатель Роджер Адамс запатентовал их в 1999 году: идёшь как обычно, перенёс вес на пятки — и покатился.",
+      "en": "Inventor Roger Adams patented them in 1999: you walk normally, shift your weight onto your heels and roll."
+    },
+    "source": "https://en.wikipedia.org/wiki/Heelys"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какой формат проиграл Blu-ray «войну дисков» в 2008 году?",
+      "en": "Which format lost the disc war to Blu-ray in 2008?"
+    },
+    "options": [
+      {
+        "ru": "Диски HD DVD",
+        "en": "HD DVD"
+      },
+      {
+        "ru": "Лазердиски",
+        "en": "LaserDisc"
+      },
+      {
+        "ru": "Мини-диски",
+        "en": "MiniDisc"
+      },
+      {
+        "ru": "Видео-CD",
+        "en": "Video CD"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Исход решила PlayStation 3: в каждой стоял привод Blu-ray, и таких консолей продали в десять раз больше, чем плееров HD DVD.",
+      "en": "The PlayStation 3 settled it: each had a Blu-ray drive, and it outsold HD DVD players about ten to one."
+    },
+    "source": "https://en.wikipedia.org/wiki/High-definition_optical_disc_format_war"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Где жили участники первого российского реалити-шоу «За стеклом» (2001)?",
+      "en": "Where did the cast of Russia's first reality show, Behind the Glass (2001), live?"
+    },
+    "options": [
+      {
+        "ru": "В гостинице «Россия»",
+        "en": "In the Rossiya hotel"
+      },
+      {
+        "ru": "В Останкинской башне",
+        "en": "In the Ostankino tower"
+      },
+      {
+        "ru": "В ГУМе",
+        "en": "In the GUM store"
+      },
+      {
+        "ru": "На теплоходе",
+        "en": "On a river boat"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Квартира была на первом этаже, и прохожие платили 20 рублей, чтобы пять минут смотреть на участников сквозь зеркальное стекло.",
+      "en": "The flat was on the ground floor, and passers-by paid 20 roubles for five minutes at its one-way mirror."
+    },
+    "source": "https://en.wikipedia.org/wiki/Behind_the_Glass_(TV_series)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая группа победила в первой «Фабрике звёзд» (2002)?",
+      "en": "Which band won the first season of Star Factory (2002)?"
+    },
+    "options": [
+      {
+        "ru": "«Корни»",
+        "en": "Korni"
+      },
+      {
+        "ru": "«Фабрика»",
+        "en": "Fabrika"
+      },
+      {
+        "ru": "«Иванушки International»",
+        "en": "Ivanushki International"
+      },
+      {
+        "ru": "«Банд'Эрос»",
+        "en": "Band'Eros"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Продюсером сезона был Игорь Матвиенко, а девичья «Фабрика» с того же проекта заняла второе место.",
+      "en": "The season's producer was Igor Matviyenko, and the girl group Fabrika from the same show came second."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Фабрика_звёзд_(Россия)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Чем удивил «Ночной дозор» (2004) зрителей в зарубежном прокате?",
+      "en": "What surprised foreign audiences of the Russian film Night Watch (2004)?"
+    },
+    "options": [
+      {
+        "ru": "Анимированными субтитрами",
+        "en": "Animated subtitles"
+      },
+      {
+        "ru": "Дубляжом голливудских звёзд",
+        "en": "Hollywood stars dubbing it"
+      },
+      {
+        "ru": "Чёрно-белой версией",
+        "en": "A black and white cut"
+      },
+      {
+        "ru": "Двумя разными концовками",
+        "en": "Two different endings"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Фильм оставили на русском, а титры прыгали по экрану: в сцене в бассейне красные буквы растекались в воде.",
+      "en": "The film kept its Russian dialogue, and the subtitles moved about the screen; in a pool scene red letters dissolved in the water."
+    },
+    "source": "https://en.wikipedia.org/wiki/Night_Watch_(2004_film)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Для кого задумывался «ВКонтакте» при запуске в 2006 году?",
+      "en": "Who was VKontakte meant for when it launched in 2006?"
+    },
+    "options": [
+      {
+        "ru": "Для студентов и выпускников",
+        "en": "Students and graduates"
+      },
+      {
+        "ru": "Для школьников",
+        "en": "Schoolchildren"
+      },
+      {
+        "ru": "Для геймеров",
+        "en": "Gamers"
+      },
+      {
+        "ru": "Для журналистов",
+        "en": "Journalists"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Сайт звал себя сетью студентов и выпускников российских вузов, и до конца ноября 2006-го попасть туда можно было по приглашению.",
+      "en": "It billed itself as a network for Russian university students and graduates; until late November 2006 you needed an invite."
+    },
+    "source": "https://ru.wikipedia.org/wiki/ВКонтакте"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Чем полифонический рингтон отличался от монофонического?",
+      "en": "What made a polyphonic ringtone different from a monophonic one?"
+    },
+    "options": [
+      {
+        "ru": "Звучало несколько нот сразу",
+        "en": "Several notes at once"
+      },
+      {
+        "ru": "Он был громче",
+        "en": "It was louder"
+      },
+      {
+        "ru": "Играла настоящая запись",
+        "en": "It played a real recording"
+      },
+      {
+        "ru": "Мигала подсветка",
+        "en": "The screen flashed"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Ранние телефоны пищали по одной ноте, а полифония играла аккорды разными «инструментами», как MIDI на компьютере.",
+      "en": "Early phones beeped one note at a time; polyphony played chords on several 'instruments', like MIDI on a computer."
+    },
+    "source": "https://en.wikipedia.org/wiki/Ringtone"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Над чем смеялись владельцы игрового телефона Nokia N-Gage (2003)?",
+      "en": "What did owners of the Nokia N-Gage gaming phone (2003) laugh about?"
+    },
+    "options": [
+      {
+        "ru": "Говорить приходилось боком",
+        "en": "Talking into its side"
+      },
+      {
+        "ru": "Он весил почти килограмм",
+        "en": "It weighed almost a kilo"
+      },
+      {
+        "ru": "Играть можно было лишь стоя",
+        "en": "Games worked only standing"
+      },
+      {
+        "ru": "Звонил он только днём",
+        "en": "It only rang by day"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Динамик и микрофон стояли на торце, и телефон прижимали к щеке ребром, а чтобы сменить игру, вынимали батарею.",
+      "en": "The speaker and mic sat on the edge, so you held it side-on to your cheek, and changing games meant taking out the battery."
+    },
+    "source": "https://en.wikipedia.org/wiki/N-Gage_(device)"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько миллионов экземпляров «Даров смерти» (2007) продали в США и Британии за первые сутки?",
+      "en": "How many million copies of the last Harry Potter book (2007) sold in the US and UK on day one?"
+    },
+    "answer": 11,
+    "range": [
+      0,
+      50
+    ],
+    "step": 0.5,
+    "tolerance": 3.5,
+    "unit": {
+      "ru": "млн",
+      "en": "million"
+    },
+    "fact": {
+      "ru": "Книгу продавали с полуночи: 8,3 миллиона в США (рекорд Гиннесса для романа) и ещё 2,65 миллиона в Британии.",
+      "en": "Sales began at midnight: 8.3 million in the US, a Guinness record for a novel, and another 2.65 million in the UK."
+    },
+    "source": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько миллионов SIM-карт было зарегистрировано в России к концу 2009 года?",
+      "en": "How many million SIM cards were registered in Russia by the end of 2009?"
+    },
+    "answer": 208,
+    "range": [
+      0,
+      1000
+    ],
+    "step": 2,
+    "tolerance": 40,
+    "unit": {
+      "ru": "млн",
+      "en": "million"
+    },
+    "fact": {
+      "ru": "Это почти полторы SIM-карты на каждого жителя, хотя в 2000 году мобильный телефон в России был ещё роскошью.",
+      "en": "That is almost one and a half per person, though in 2000 a mobile phone in Russia was still a luxury."
+    },
+    "source": "https://mobile-review.com/fullnews/operators/2010/February/01.shtml"
+  }
+]

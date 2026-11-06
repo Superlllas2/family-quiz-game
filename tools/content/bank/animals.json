@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой формы какашки у вомбата?",
+   "en": "What shape is wombat poop?"
+  },
+  "options": [
+   {
+    "ru": "Звёздочки",
+    "en": "Stars"
+   },
+   {
+    "ru": "Кубики",
+    "en": "Cubes"
+   },
+   {
+    "ru": "Спиральки",
+    "en": "Spirals"
+   },
+   {
+    "ru": "Сердечки",
+    "en": "Hearts"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Кубики не скатываются с камней и брёвен, а вомбат метит ими границы своей территории.",
+   "en": "Cubes don't roll off rocks and logs, and wombats use them to mark the edges of their territory."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wombat"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему фламинго розовые?",
+   "en": "Why are flamingos pink?"
+  },
+  "options": [
+   {
+    "ru": "Рачки и водоросли в еде",
+    "en": "Shrimp and algae they eat"
+   },
+   {
+    "ru": "От смущения",
+    "en": "They are embarrassed"
+   },
+   {
+    "ru": "Из-за солёной воды",
+    "en": "The salty water"
+   },
+   {
+    "ru": "Такими вылупляются",
+    "en": "They hatch that way"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Цвет дают каротиноиды из еды, те же пигменты, что в моркови: без них в рационе фламинго в зоопарке бледнеют.",
+   "en": "The colour comes from carotenoids in their food, the pigments in carrots: zoo flamingos fade without them in their diet."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flamingo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто из этих зверей спит до 20 часов в сутки?",
+   "en": "Which of these animals sleeps up to 20 hours a day?"
+  },
+  "options": [
+   {
+    "ru": "Коала",
+    "en": "The koala"
+   },
+   {
+    "ru": "Лошадь",
+    "en": "The horse"
+   },
+   {
+    "ru": "Жираф",
+    "en": "The giraffe"
+   },
+   {
+    "ru": "Слон",
+    "en": "The elephant"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Листья эвкалипта дают очень мало энергии, и коала её бережёт, а жирафы и лошади спят всего несколько часов.",
+   "en": "Eucalyptus leaves give very little energy, so koalas save it; giraffes and horses sleep only a few hours."
+  },
+  "source": "https://en.wikipedia.org/wiki/Koala"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая птица умеет летать задом наперёд?",
+   "en": "Which bird can fly backwards?"
+  },
+  "options": [
+   {
+    "ru": "Колибри",
+    "en": "The hummingbird"
+   },
+   {
+    "ru": "Ласточка",
+    "en": "The swallow"
+   },
+   {
+    "ru": "Воробей",
+    "en": "The sparrow"
+   },
+   {
+    "ru": "Дятел",
+    "en": "The woodpecker"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Плечо у колибри очень подвижное: крыло описывает в воздухе восьмёрку, и птица может зависать и пятиться.",
+   "en": "A hummingbird's shoulder is unusually mobile: the wing traces a figure of eight, so the bird can hover and back up."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hummingbird"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто из этих зверей умеет по-настоящему летать, а не планировать?",
+   "en": "Which of these mammals can truly fly rather than glide?"
+  },
+  "options": [
+   {
+    "ru": "Летучая мышь",
+    "en": "The bat"
+   },
+   {
+    "ru": "Белка-летяга",
+    "en": "The flying squirrel"
+   },
+   {
+    "ru": "Шерстокрыл",
+    "en": "The colugo"
+   },
+   {
+    "ru": "Сумчатая летяга",
+    "en": "The sugar glider"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Летучие мыши — единственные звери, которые машут крыльями; остальные только скользят на кожистых перепонках.",
+   "en": "Bats are the only mammals that flap their wings; the others just glide on flaps of skin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bat"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие комары кусают людей и пьют кровь?",
+   "en": "Which mosquitoes bite people and drink blood?"
+  },
+  "options": [
+   {
+    "ru": "Только самки",
+    "en": "Only females"
+   },
+   {
+    "ru": "Только самцы",
+    "en": "Only males"
+   },
+   {
+    "ru": "И самцы, и самки",
+    "en": "Both males and females"
+   },
+   {
+    "ru": "Только молодые",
+    "en": "Only young ones"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Самцы питаются нектаром, а самке белок из крови нужен, чтобы отложить яйца.",
+   "en": "Males live on nectar; a female needs the protein in blood to lay her eggs."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mosquito"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Зачем змея всё время высовывает язык?",
+   "en": "Why does a snake keep flicking its tongue?"
+  },
+  "options": [
+   {
+    "ru": "Нюхает воздух",
+    "en": "To smell the air"
+   },
+   {
+    "ru": "Охлаждается, как собака",
+    "en": "To cool down like a dog"
+   },
+   {
+    "ru": "Слизывает росу",
+    "en": "To lick up dew"
+   },
+   {
+    "ru": "Ловит мошек",
+    "en": "To catch midges"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Язык собирает запахи и несёт их к особому органу во рту, а раздвоенный кончик подсказывает, с какой стороны пахнет.",
+   "en": "The tongue picks up scents and carries them to a special organ in the mouth; the forked tip tells which side a smell is on."
+  },
+  "source": "https://en.wikipedia.org/wiki/Snake"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто самый крупный грызун на Земле?",
+   "en": "What is the largest rodent on Earth?"
+  },
+  "options": [
+   {
+    "ru": "Капибара",
+    "en": "The capybara"
+   },
+   {
+    "ru": "Бобр",
+    "en": "The beaver"
+   },
+   {
+    "ru": "Дикобраз",
+    "en": "The porcupine"
+   },
+   {
+    "ru": "Сурок",
+    "en": "The marmot"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Капибара может весить 60 кг, как взрослый человек, а ещё она отлично плавает и ныряет.",
+   "en": "A capybara can weigh 60 kg, as much as an adult person, and it is an excellent swimmer and diver."
+  },
+  "source": "https://en.wikipedia.org/wiki/Capybara"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какого цвета язык у жирафа?",
+   "en": "What colour is a giraffe's tongue?"
+  },
+  "options": [
+   {
+    "ru": "Фиолетово-чёрный",
+    "en": "Purplish black"
+   },
+   {
+    "ru": "Ярко-розовый",
+    "en": "Bright pink"
+   },
+   {
+    "ru": "Жёлтый",
+    "en": "Yellow"
+   },
+   {
+    "ru": "Белый",
+    "en": "White"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Язык длиной около 45 см целый день на солнце, и тёмный цвет, видимо, бережёт его от ожогов.",
+   "en": "The 45 cm tongue spends all day in the sun, and its dark colour probably protects it from sunburn."
+  },
+  "source": "https://en.wikipedia.org/wiki/Giraffe"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие обезьяны зимой греются в горячих источниках?",
+   "en": "Which monkeys warm up in hot springs in winter?"
+  },
+  "options": [
+   {
+    "ru": "Японские макаки",
+    "en": "Japanese macaques"
+   },
+   {
+    "ru": "Гориллы",
+    "en": "Gorillas"
+   },
+   {
+    "ru": "Шимпанзе",
+    "en": "Chimpanzees"
+   },
+   {
+    "ru": "Орангутаны",
+    "en": "Orangutans"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это самые северные обезьяны в мире: в горах, где они живут, снег лежит по несколько месяцев.",
+   "en": "They are the world's most northerly monkeys: snow covers their mountains for months each year."
+  },
+  "source": "https://en.wikipedia.org/wiki/Japanese_macaque"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое из этих животных не умеет прыгать?",
+   "en": "Which of these animals cannot jump?"
+  },
+  "options": [
+   {
+    "ru": "Слон",
+    "en": "The elephant"
+   },
+   {
+    "ru": "Лошадь",
+    "en": "The horse"
+   },
+   {
+    "ru": "Медведь",
+    "en": "The bear"
+   },
+   {
+    "ru": "Коза",
+    "en": "The goat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ноги слона устроены как колонны под многотонный вес: он не может ни прыгать, ни скакать галопом.",
+   "en": "An elephant's legs are built like pillars for its tonnes of weight: it can neither jump nor gallop."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elephant"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой зверь откладывает яйца, а потом кормит детёнышей молоком?",
+   "en": "Which mammal lays eggs and then feeds its young on milk?"
+  },
+  "options": [
+   {
+    "ru": "Утконос",
+    "en": "The platypus"
+   },
+   {
+    "ru": "Броненосец",
+    "en": "The armadillo"
+   },
+   {
+    "ru": "Ленивец",
+    "en": "The sloth"
+   },
+   {
+    "ru": "Летучая мышь",
+    "en": "The bat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сосков у утконоса нет: молоко выступает прямо на коже живота, и детёныши его слизывают.",
+   "en": "A platypus has no nipples: milk seeps out onto patches of belly skin and the young lap it up."
+  },
+  "source": "https://en.wikipedia.org/wiki/Platypus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему у бобра оранжевые зубы?",
+   "en": "Why does a beaver have orange teeth?"
+  },
+  "options": [
+   {
+    "ru": "В эмали есть железо",
+    "en": "Iron in the enamel"
+   },
+   {
+    "ru": "Он грызёт морковь",
+    "en": "It chews carrots"
+   },
+   {
+    "ru": "Их красит кора",
+    "en": "Bark stains them"
+   },
+   {
+    "ru": "От старости",
+    "en": "Old age"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Железо делает эмаль прочнее, а резцы бобра растут всю жизнь и стачиваются о дерево.",
+   "en": "Iron makes the enamel tougher, and a beaver's front teeth grow all its life and wear down on wood."
+  },
+  "source": "https://en.wikipedia.org/wiki/Beaver"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как медоносная пчела рассказывает другим, где нашла цветы?",
+   "en": "How does a honeybee tell the others where it found flowers?"
+  },
+  "options": [
+   {
+    "ru": "Танцует",
+    "en": "It dances"
+   },
+   {
+    "ru": "Рисует карту на сотах",
+    "en": "It draws a map on the comb"
+   },
+   {
+    "ru": "Приносит лепесток",
+    "en": "It brings back a petal"
+   },
+   {
+    "ru": "Меняет цвет брюшка",
+    "en": "It changes colour"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Угол виляющего танца к вертикали показывает направление относительно солнца, а его длительность — расстояние.",
+   "en": "The angle of the waggle run from the vertical gives the direction relative to the sun, and its length gives the distance."
+  },
+  "source": "https://en.wikipedia.org/wiki/Waggle_dance"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Каким рождается детёныш кенгуру?",
+   "en": "What is a newborn kangaroo like?"
+  },
+  "options": [
+   {
+    "ru": "Размером с фасолину",
+    "en": "The size of a bean"
+   },
+   {
+    "ru": "Размером с котёнка",
+    "en": "The size of a kitten"
+   },
+   {
+    "ru": "Размером с кролика",
+    "en": "The size of a rabbit"
+   },
+   {
+    "ru": "Сразу умеет прыгать",
+    "en": "It can hop at once"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слепой и голый малыш сам ползёт по шерсти в сумку и месяцами растёт там на молоке.",
+   "en": "The blind, hairless baby crawls through the fur into the pouch by itself and grows there on milk for months."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kangaroo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто может повернуть голову на три четверти круга?",
+   "en": "Which animal can turn its head three quarters of the way round?"
+  },
+  "options": [
+   {
+    "ru": "Жираф",
+    "en": "The giraffe"
+   },
+   {
+    "ru": "Кошка",
+    "en": "The cat"
+   },
+   {
+    "ru": "Сова",
+    "en": "The owl"
+   },
+   {
+    "ru": "Хамелеон",
+    "en": "The chameleon"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Глаза совы не вращаются в глазницах, поэтому поворачивается вся голова: до 270 градусов.",
+   "en": "An owl's eyes cannot move in their sockets, so the whole head turns instead: up to 270 degrees."
+  },
+  "source": "https://en.wikipedia.org/wiki/Owl"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "У какого зверя отпечатки пальцев почти не отличить от человеческих?",
+   "en": "Which animal has fingerprints almost impossible to tell from a human's?"
+  },
+  "options": [
+   {
+    "ru": "Коала",
+    "en": "The koala"
+   },
+   {
+    "ru": "Енот",
+    "en": "The raccoon"
+   },
+   {
+    "ru": "Ленивец",
+    "en": "The sloth"
+   },
+   {
+    "ru": "Белка",
+    "en": "The squirrel"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Коалы и люди — очень дальняя родня: узоры появились у нас независимо, видимо, чтобы цепко хватать.",
+   "en": "Koalas and humans are very distant relatives: the ridges evolved separately, probably for a firmer grip."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fingerprint"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько шейных позвонков у жирафа?",
+   "en": "How many neck vertebrae does a giraffe have?"
+  },
+  "options": [
+   {
+    "ru": "7",
+    "en": "7"
+   },
+   {
+    "ru": "14",
+    "en": "14"
+   },
+   {
+    "ru": "25",
+    "en": "25"
+   },
+   {
+    "ru": "40",
+    "en": "40"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Столько же, сколько у человека и почти у всех зверей: просто каждый позвонок у жирафа очень длинный.",
+   "en": "The same as a human and almost every mammal: each one is just extremely long."
+  },
+  "source": "https://en.wikipedia.org/wiki/Giraffe"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что из этого лошадь сделать не может?",
+   "en": "Which of these can a horse not do?"
+  },
+  "options": [
+   {
+    "ru": "Срыгнуть съеденное",
+    "en": "Vomit"
+   },
+   {
+    "ru": "Спать стоя",
+    "en": "Sleep standing up"
+   },
+   {
+    "ru": "Плавать",
+    "en": "Swim"
+   },
+   {
+    "ru": "Спать лёжа",
+    "en": "Lie down to sleep"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мышца на входе в желудок у лошади так сильна, что еда идёт только в одну сторону; поэтому колики для неё опасны.",
+   "en": "The muscle at the entrance to a horse's stomach is so strong that food goes one way only, which makes colic so dangerous."
+  },
+  "source": "https://en.wikipedia.org/wiki/Horse"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какие животные в 2007 году выжили в открытом космосе безо всякой защиты?",
+   "en": "Which animals survived exposure to open space with no protection in 2007?"
+  },
+  "options": [
+   {
+    "ru": "Тихоходки",
+    "en": "Tardigrades"
+   },
+   {
+    "ru": "Тараканы",
+    "en": "Cockroaches"
+   },
+   {
+    "ru": "Муравьи",
+    "en": "Ants"
+   },
+   {
+    "ru": "Скорпионы",
+    "en": "Scorpions"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эти существа размером в полмиллиметра живут во мху и, высохнув, переживают вакуум, холод и радиацию.",
+   "en": "These half-millimetre creatures live in moss and, once dried out, survive vacuum, cold and radiation."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tardigrade"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Учёные ловили ворон, надевая одну и ту же страшную маску. Что было потом?",
+   "en": "Scientists caught crows while wearing the same scary mask. What happened next?"
+  },
+  "options": [
+   {
+    "ru": "Годами ругали эту маску",
+    "en": "Scolded the mask for years"
+   },
+   {
+    "ru": "Перестали бояться людей",
+    "en": "Stopped fearing people"
+   },
+   {
+    "ru": "Стали носить им еду",
+    "en": "Started bringing them food"
+   },
+   {
+    "ru": "Забыли всё за день",
+    "en": "Forgot it all in a day"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вороны научили других: на маску кричали даже птицы, которых никто не ловил, и те, что родились позже.",
+   "en": "The crows taught others: birds that were never caught, and even ones born later, screamed at the mask."
+  },
+  "source": "https://theconversation.com/never-cross-a-crow-it-will-remember-your-face-2121"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что делает летучая мышь-вампир, если сосед по пещере остался голодным?",
+   "en": "What does a vampire bat do when a roost mate comes home hungry?"
+  },
+  "options": [
+   {
+    "ru": "Отрыгивает ему кровь",
+    "en": "Regurgitates blood for it"
+   },
+   {
+    "ru": "Выгоняет его",
+    "en": "Drives it out"
+   },
+   {
+    "ru": "Приносит ему жука",
+    "en": "Brings it a beetle"
+   },
+   {
+    "ru": "Ничего: каждый сам за себя",
+    "en": "Nothing, every bat for itself"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Без крови вампир гибнет за двое-трое суток, и сытые делятся, чаще с теми, кто раньше делился с ними.",
+   "en": "A vampire bat dies after two or three days without blood, so fed bats share, mostly with those who shared with them before."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vampire_bat"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой вкус кошки не чувствуют вовсе?",
+   "en": "Which taste can cats not detect at all?"
+  },
+  "options": [
+   {
+    "ru": "Сладкий",
+    "en": "Sweet"
+   },
+   {
+    "ru": "Мясной (умами)",
+    "en": "Savoury (umami)"
+   },
+   {
+    "ru": "Горький",
+    "en": "Bitter"
+   },
+   {
+    "ru": "Кислый",
+    "en": "Sour"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ген рецептора сладкого у всех кошачьих, от домашней кошки до тигра, «сломан»: хищнику, который ест одно мясо, он ни к чему.",
+   "en": "The sweet receptor gene is broken in all cats, from tabbies to tigers: a pure meat eater has no use for it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cat"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем опасен самец утконоса?",
+   "en": "What makes a male platypus dangerous?"
+  },
+  "options": [
+   {
+    "ru": "Ядовитые шпоры на лапах",
+    "en": "Venomous spurs on its legs"
+   },
+   {
+    "ru": "Ядовитый укус",
+    "en": "A venomous bite"
+   },
+   {
+    "ru": "Бьёт током",
+    "en": "An electric shock"
+   },
+   {
+    "ru": "Плюётся едкой слюной",
+    "en": "It spits acid saliva"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Яд утконоса не смертелен для человека, но боль от укола шпорой может держаться неделями и даже месяцами.",
+   "en": "Platypus venom won't kill a person, but the pain from a spur can last for weeks or even months."
+  },
+  "source": "https://en.wikipedia.org/wiki/Platypus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой хищник, по данным учёных, охотится удачнее всех?",
+   "en": "According to studies, which hunter has the highest success rate?"
+  },
+  "options": [
+   {
+    "ru": "Стрекоза",
+    "en": "The dragonfly"
+   },
+   {
+    "ru": "Лев",
+    "en": "The lion"
+   },
+   {
+    "ru": "Гепард",
+    "en": "The cheetah"
+   },
+   {
+    "ru": "Волк",
+    "en": "The wolf"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Стрекоза ловит до 95% целей: она рассчитывает, где окажется муха, и летит ей наперерез.",
+   "en": "A dragonfly catches up to 95% of its targets: it works out where the fly will be and heads it off."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dragonfly"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая австралийская птица умеет подражать бензопиле и затвору фотоаппарата?",
+   "en": "Which Australian bird can imitate a chainsaw and a camera shutter?"
+  },
+  "options": [
+   {
+    "ru": "Лирохвост",
+    "en": "The lyrebird"
+   },
+   {
+    "ru": "Кукабара",
+    "en": "The kookaburra"
+   },
+   {
+    "ru": "Эму",
+    "en": "The emu"
+   },
+   {
+    "ru": "Казуар",
+    "en": "The cassowary"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Лирохвост вплетает в песню голоса десятков других птиц, а иногда и звуки людей: от пилы до автосигнализации.",
+   "en": "A lyrebird weaves dozens of other birds' calls into its song, and sometimes human sounds too, from saws to car alarms."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lyrebird"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как геккон держится на гладком стекле?",
+   "en": "How does a gecko cling to smooth glass?"
+  },
+  "options": [
+   {
+    "ru": "Миллионы волосков на лапах",
+    "en": "Millions of tiny foot hairs"
+   },
+   {
+    "ru": "Липкий клей",
+    "en": "Sticky glue"
+   },
+   {
+    "ru": "Присоски",
+    "en": "Suction cups"
+   },
+   {
+    "ru": "Острые когти",
+    "en": "Sharp claws"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Каждый волосок ветвится на сотни кончиков, и они прилегают к стеклу так плотно, что держатся за счёт притяжения молекул.",
+   "en": "Each hair splits into hundreds of tips that hug the glass so closely that the pull between molecules holds them on."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gecko"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какого цвета «пот» у бегемота?",
+   "en": "What colour is a hippo's \"sweat\"?"
+  },
+  "options": [
+   {
+    "ru": "Красноватый",
+    "en": "Reddish"
+   },
+   {
+    "ru": "Синий",
+    "en": "Blue"
+   },
+   {
+    "ru": "Зелёный",
+    "en": "Green"
+   },
+   {
+    "ru": "Белый, как молоко",
+    "en": "Milky white"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это не пот, а особая жидкость: она защищает кожу от солнца и, похоже, от микробов.",
+   "en": "It isn't really sweat but a special fluid that works as sunscreen and seems to fight germs too."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hippopotamus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2019 году лошадей одели в попоны в полоску, как у зебры. Что заметили учёные?",
+   "en": "In 2019 horses were dressed in zebra-striped coats. What did scientists notice?"
+  },
+  "options": [
+   {
+    "ru": "Слепни реже на них садились",
+    "en": "Horseflies landed less"
+   },
+   {
+    "ru": "Лошади бегали быстрее",
+    "en": "The horses ran faster"
+   },
+   {
+    "ru": "Другие лошади их боялись",
+    "en": "Other horses feared them"
+   },
+   {
+    "ru": "Им стало жарче",
+    "en": "They got hotter"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Полоски сбивают мух с толку при посадке: сейчас это главное объяснение, зачем зебре полосы.",
+   "en": "Stripes confuse flies as they try to land: today this is the leading explanation of why zebras have stripes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Zebra"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой зверёк ест быстрее всех: находит и глотает добычу за четверть секунды?",
+   "en": "Which mammal eats fastest, finding and swallowing prey in a quarter of a second?"
+  },
+  "options": [
+   {
+    "ru": "Звездонос",
+    "en": "The star-nosed mole"
+   },
+   {
+    "ru": "Муравьед",
+    "en": "The anteater"
+   },
+   {
+    "ru": "Землеройка",
+    "en": "The shrew"
+   },
+   {
+    "ru": "Белка",
+    "en": "The squirrel"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На носу у него 22 щупальца с 25 тысячами чувствительных бугорков: он ищет добычу на ощупь, а не глазами.",
+   "en": "Its nose has 22 tentacles with 25,000 touch sensors: it finds prey by feel, not by sight."
+  },
+  "source": "https://en.wikipedia.org/wiki/Star-nosed_mole"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто умеет спать с одним открытым глазом, пока половина мозга бодрствует?",
+   "en": "Who can sleep with one eye open while half its brain stays awake?"
+  },
+  "options": [
+   {
+    "ru": "Утки",
+    "en": "Ducks"
+   },
+   {
+    "ru": "Кошки",
+    "en": "Cats"
+   },
+   {
+    "ru": "Лошади",
+    "en": "Horses"
+   },
+   {
+    "ru": "Собаки",
+    "en": "Dogs"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Утки с края ряда держат открытым глаз, смотрящий наружу, и сторожат стаю прямо во сне.",
+   "en": "Ducks at the ends of a row keep the outward eye open and guard the flock while asleep."
+  },
+  "source": "https://en.wikipedia.org/wiki/Unihemispheric_slow-wave_sleep"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой попугай самый тяжёлый в мире: самцы весят до 3 кг?",
+   "en": "Which is the world's heaviest parrot, with males weighing up to 3 kg?"
+  },
+  "options": [
+   {
+    "ru": "Какапо",
+    "en": "The kakapo"
+   },
+   {
+    "ru": "Ара",
+    "en": "The macaw"
+   },
+   {
+    "ru": "Какаду",
+    "en": "The cockatoo"
+   },
+   {
+    "ru": "Жако",
+    "en": "The African grey"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Новозеландский какапо ещё и не умеет летать: на островах без хищных зверей крылья ему были ни к чему.",
+   "en": "New Zealand's kakapo cannot even fly: on islands with no predatory mammals it had no use for its wings."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kakapo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая из этих больших кошек не умеет рычать?",
+   "en": "Which of these big cats cannot roar?"
+  },
+  "options": [
+   {
+    "ru": "Снежный барс",
+    "en": "The snow leopard"
+   },
+   {
+    "ru": "Лев",
+    "en": "The lion"
+   },
+   {
+    "ru": "Тигр",
+    "en": "The tiger"
+   },
+   {
+    "ru": "Ягуар",
+    "en": "The jaguar"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Голосовые связки у ирбиса слишком короткие для рыка, зато он мяукает и мурлычет, как огромная домашняя кошка.",
+   "en": "A snow leopard's vocal folds are too short to roar, but it mews and purrs like a giant house cat."
+  },
+  "source": "https://en.wikipedia.org/wiki/Snow_leopard"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какие птицы в опыте 1995 года научились отличать картины Моне от Пикассо?",
+   "en": "Which birds learned to tell Monet's paintings from Picasso's in a 1995 experiment?"
+  },
+  "options": [
+   {
+    "ru": "Голуби",
+    "en": "Pigeons"
+   },
+   {
+    "ru": "Вороны",
+    "en": "Crows"
+   },
+   {
+    "ru": "Попугаи",
+    "en": "Parrots"
+   },
+   {
+    "ru": "Воробьи",
+    "en": "Sparrows"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Голуби узнавали стиль даже на картинах, которых раньше не видели, а авторы опыта получили Шнобелевскую премию.",
+   "en": "The pigeons recognised the style even in paintings they had never seen, and the researchers won an Ig Nobel Prize."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_Ig_Nobel_Prize_winners"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем ленивец примерно раз в неделю слезает с дерева?",
+   "en": "Why does a sloth climb down from its tree about once a week?"
+  },
+  "options": [
+   {
+    "ru": "Сходить в туалет",
+    "en": "To go to the toilet"
+   },
+   {
+    "ru": "Попить воды",
+    "en": "To drink water"
+   },
+   {
+    "ru": "Погреться на солнце",
+    "en": "To warm up in the sun"
+   },
+   {
+    "ru": "Почистить когти",
+    "en": "To clean its claws"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ради этого он рискует жизнью: на земле его легко поймать, и учёные до сих пор спорят, зачем ему это.",
+   "en": "It risks its life for this, as it is easy prey on the ground, and scientists still argue about why it does it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sloth"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как защищается жук-бомбардир?",
+   "en": "How does a bombardier beetle defend itself?"
+  },
+  "options": [
+   {
+    "ru": "Брызжет горячей едкой струёй",
+    "en": "It sprays a hot caustic jet"
+   },
+   {
+    "ru": "Кусает ядом",
+    "en": "A venomous bite"
+   },
+   {
+    "ru": "Притворяется веточкой",
+    "en": "It pretends to be a twig"
+   },
+   {
+    "ru": "Ярко светится",
+    "en": "It glows brightly"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Внутри жука смешиваются два вещества, и реакция с хлопком нагревает струю почти до 100 °C.",
+   "en": "Two chemicals mix inside the beetle and the reaction heats the spray to nearly 100 °C, with an audible pop."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bombardier_beetle"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Самки комодского варана жили в зоопарке без самцов. Что случилось?",
+   "en": "Female Komodo dragons lived in a zoo with no males. What happened?"
+  },
+  "options": [
+   {
+    "ru": "Из яиц вылупились детёныши",
+    "en": "Their eggs hatched babies"
+   },
+   {
+    "ru": "Одна из них стала самцом",
+    "en": "One of them turned male"
+   },
+   {
+    "ru": "Они перестали линять",
+    "en": "They stopped shedding skin"
+   },
+   {
+    "ru": "Они впали в спячку",
+    "en": "They went into hibernation"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это партеногенез, девственное размножение, и у варанов все такие детёныши оказываются самцами.",
+   "en": "This is parthenogenesis, a virgin birth, and in Komodo dragons all such babies turn out to be male."
+  },
+  "source": "https://en.wikipedia.org/wiki/Komodo_dragon"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой из этих зверьков — родственник слона?",
+   "en": "Which of these small animals is a relative of the elephant?"
+  },
+  "options": [
+   {
+    "ru": "Даман",
+    "en": "The hyrax"
+   },
+   {
+    "ru": "Сурок",
+    "en": "The marmot"
+   },
+   {
+    "ru": "Кролик",
+    "en": "The rabbit"
+   },
+   {
+    "ru": "Морская свинка",
+    "en": "The guinea pig"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Даман размером с кролика, но его ближайшая родня — слоны и ламантины, а на грызуна он только похож.",
+   "en": "A hyrax is the size of a rabbit, but its closest kin are elephants and manatees; it only looks like a rodent."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hyrax"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько ударов в минуту может делать сердце колибри?",
+   "en": "How many times a minute can a hummingbird's heart beat?"
+  },
+  "answer": 1260,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 20,
+  "tolerance": 500,
+  "unit": {
+   "ru": "ударов",
+   "en": "beats"
+  },
+  "fact": {
+   "ru": "Это рекорд синегорлого колибри; сердце человека в покое бьётся около 70 раз в минуту.",
+   "en": "That record belongs to the blue-throated hummingbird; a resting human heart beats about 70 times a minute."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hummingbird"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "С какой скоростью может бежать гепард?",
+   "en": "How fast can a cheetah run?"
+  },
+  "answer": 100,
+  "range": [
+   0,
+   300
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "км/ч",
+   "en": "km/h"
+  },
+  "fact": {
+   "ru": "Но такой рывок длится меньше минуты: потом гепард выдыхается и должен долго отдыхать.",
+   "en": "But a sprint like that lasts under a minute: then the cheetah is exhausted and needs a long rest."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cheetah"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько месяцев слониха вынашивает детёныша?",
+   "en": "For how many months is an elephant pregnant?"
+  },
+  "answer": 22,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "мес.",
+   "en": "months"
+  },
+  "fact": {
+   "ru": "Это самая долгая беременность среди сухопутных животных, и слонёнок рождается весом около 120 кг.",
+   "en": "It is the longest pregnancy of any land animal, and the calf is born weighing about 120 kg."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elephant"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько месяцев подряд чёрный стриж может провести в воздухе, ни разу не сев?",
+   "en": "How many months in a row can a common swift stay in the air without landing?"
+  },
+  "answer": 10,
+  "range": [
+   0,
+   36
+  ],
+  "step": 0.5,
+  "tolerance": 4,
+  "unit": {
+   "ru": "мес.",
+   "en": "months"
+  },
+  "fact": {
+   "ru": "Стрижи едят, пьют и, похоже, даже спят на лету, а садятся в основном чтобы вывести птенцов.",
+   "en": "Swifts eat, drink and apparently even sleep on the wing, landing mainly to raise their chicks."
+  },
+  "source": "https://en.wikipedia.org/wiki/Common_swift"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько дней без посадки летел малый веретенник в 2022 году с Аляски до Тасмании?",
+   "en": "In 2022, how many days did a bar-tailed godwit fly non-stop from Alaska to Tasmania?"
+  },
+  "answer": 11,
+  "range": [
+   0,
+   40
+  ],
+  "step": 0.5,
+  "tolerance": 4,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Птица пролетела не меньше 13 560 км, ни разу не сев на землю или на воду: это рекорд беспосадочного перелёта.",
+   "en": "The bird covered at least 13,560 km without once landing on ground or water, a record non-stop flight."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bar-tailed_godwit"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько граммов весит страусиное яйцо?",
+   "en": "How much does an ostrich egg weigh, in grams?"
+  },
+  "answer": 1400,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 50,
+  "tolerance": 400,
+  "unit": {
+   "ru": "г",
+   "en": "g"
+  },
+  "fact": {
+   "ru": "Это больше 20 куриных яиц, хотя по сравнению с весом самой птицы оно одно из самых маленьких.",
+   "en": "That's over 20 chicken eggs, yet compared with the bird's own weight it is one of the smallest eggs of all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Common_ostrich"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Примерно сколько процентов веса самки киви составляет её яйцо?",
+   "en": "Roughly what percentage of a female kiwi's weight is her egg?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "Для женщины весом 60 кг это был бы младенец весом 12 кг.",
+   "en": "For a 60 kg woman that would be a 12 kg baby."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kiwi_(bird)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет некоторые цикады живут под землёй, прежде чем вылезти наружу?",
+   "en": "How many years do some cicadas live underground before they come out?"
+  },
+  "answer": 17,
+  "range": [
+   0,
+   50
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Циклы в 13 и 17 лет — простые числа, и хищникам трудно подстроить под них свои циклы.",
+   "en": "Cycles of 13 and 17 years are prime numbers, so predators find it hard to match their own cycles to them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Periodical_cicadas"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До скольких иголок бывает у взрослого обыкновенного ежа?",
+   "en": "Up to how many spines can an adult European hedgehog have?"
+  },
+  "answer": 6000,
+  "range": [
+   0,
+   30000
+  ],
+  "step": 100,
+  "tolerance": 2000,
+  "unit": {
+   "ru": "иголок",
+   "en": "spines"
+  },
+  "fact": {
+   "ru": "Иголки — это полые волоски, затвердевшие от кератина: из того же белка сделаны наши ногти.",
+   "en": "The spines are hollow hairs stiffened with keratin, the same protein our fingernails are made of."
+  },
+  "source": "https://en.wikipedia.org/wiki/European_hedgehog"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На сколько километров вдоль побережий Южной Европы тянется одна колония аргентинских муравьёв?",
+   "en": "How many kilometres along the coasts of southern Europe does one Argentine ant colony stretch?"
+  },
+  "answer": 6000,
+  "range": [
+   0,
+   20000
+  ],
+  "step": 100,
+  "tolerance": 2000,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Муравьи из Италии и Испании не дерутся, а признают друг друга своими: это одна из крупнейших «семей» на Земле.",
+   "en": "Ants from Italy and from Spain don't fight but treat each other as nestmates: one of the biggest families on Earth."
+  },
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC122904/"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько минут ленивец может не дышать, ныряя под воду?",
+   "en": "For how many minutes can a sloth hold its breath underwater?"
+  },
+  "answer": 40,
+  "range": [
+   0,
+   150
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "минут",
+   "en": "minutes"
+  },
+  "fact": {
+   "ru": "Ленивцы неплохо плавают и могут замедлить сердце до трети от обычного, поэтому воздуха им хватает надолго.",
+   "en": "Sloths are decent swimmers and can slow their heart to a third of its normal rate, so their air lasts a long time."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sloth"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До скольких лет может дожить голый землекоп, грызун размером с мышь?",
+   "en": "How old can a naked mole-rat, a mouse-sized rodent, live to be?"
+  },
+  "answer": 37,
+  "range": [
+   0,
+   150
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Мыши живут два-три года, а землекопы — дольше всех грызунов и почти не болеют раком.",
+   "en": "Mice live two or three years, but naked mole-rats outlive every other rodent and almost never get cancer."
+  },
+  "source": "https://en.wikipedia.org/wiki/Naked_mole-rat"
+ }
+]

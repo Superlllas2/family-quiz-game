@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "С какой песней ABBA выиграла «Евровидение» в 1974 году?",
+   "en": "Which song won ABBA the Eurovision Song Contest in 1974?"
+  },
+  "options": [
+   {
+    "ru": "«Ватерлоо»",
+    "en": "Waterloo"
+   },
+   {
+    "ru": "«Дансинг Куин»",
+    "en": "Dancing Queen"
+   },
+   {
+    "ru": "«Мамма Миа»",
+    "en": "Mamma Mia"
+   },
+   {
+    "ru": "«Мани, мани, мани»",
+    "en": "Money, Money, Money"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шведы пели по-английски — впервые победила песня не на родном языке исполнителей, а дирижёр вышел в костюме Наполеона.",
+   "en": "The Swedes sang in English, the first winner not in the singers' own language, and the conductor dressed as Napoleon."
+  },
+  "source": "https://en.wikipedia.org/wiki/Waterloo_(ABBA_song)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из какого города родом The Beatles?",
+   "en": "Which city did the Beatles come from?"
+  },
+  "options": [
+   {
+    "ru": "Ливерпуль",
+    "en": "Liverpool"
+   },
+   {
+    "ru": "Манчестер",
+    "en": "Manchester"
+   },
+   {
+    "ru": "Лондон",
+    "en": "London"
+   },
+   {
+    "ru": "Бирмингем",
+    "en": "Birmingham"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До славы они почти два года играли в клубах Гамбурга, по семь-восемь часов за ночь: так и сыгрались.",
+   "en": "Before fame they spent nearly two years in Hamburg clubs, playing seven or eight hours a night, which made them tight."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Beatles_in_Hamburg"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое танцевальное движение Майкл Джексон впервые показал по ТВ в 1983 году?",
+   "en": "Which dance move did Michael Jackson first show on TV in 1983?"
+  },
+  "options": [
+   {
+    "ru": "Лунную походку",
+    "en": "The moonwalk"
+   },
+   {
+    "ru": "Танец робота",
+    "en": "The robot"
+   },
+   {
+    "ru": "Твист",
+    "en": "The twist"
+   },
+   {
+    "ru": "Вращение на голове",
+    "en": "The headspin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Придумал его не он: в Калифорнии движение звали «бэкслайд», а Кэб Кэллоуэй танцевал похожее ещё в 1930-х.",
+   "en": "He didn't invent it: California dancers called it the backslide, and Cab Calloway did a version in the 1930s."
+  },
+  "source": "https://en.wikipedia.org/wiki/Moonwalk_(dance)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое прозвище было у Элвиса Пресли?",
+   "en": "What was Elvis Presley's nickname?"
+  },
+  "options": [
+   {
+    "ru": "Король рок-н-ролла",
+    "en": "The King of Rock and Roll"
+   },
+   {
+    "ru": "Король поп-музыки",
+    "en": "The King of Pop"
+   },
+   {
+    "ru": "Босс",
+    "en": "The Boss"
+   },
+   {
+    "ru": "Голос",
+    "en": "The Voice"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Элвис почти не выступал за границей: кроме концертов в трёх городах Канады в 1957 году, он пел только в США.",
+   "en": "Elvis hardly ever played abroad: apart from shows in three Canadian cities in 1957, he only sang in the USA."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elvis_Presley"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На каком инструменте играл Луи Армстронг?",
+   "en": "Which instrument did Louis Armstrong play?"
+  },
+  "options": [
+   {
+    "ru": "Труба",
+    "en": "Trumpet"
+   },
+   {
+    "ru": "Саксофон",
+    "en": "Saxophone"
+   },
+   {
+    "ru": "Фортепиано",
+    "en": "Piano"
+   },
+   {
+    "ru": "Кларнет",
+    "en": "Clarinet"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Корнет он освоил подростком в исправительном приюте Нового Орлеана, куда попал за выстрел холостым из пистолета отчима.",
+   "en": "He learned the cornet in a New Orleans boys' home, where he was sent for firing a blank from his stepfather's gun."
+  },
+  "source": "https://en.wikipedia.org/wiki/Louis_Armstrong"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На обложке чьего альбома призма раскладывает луч света в радугу?",
+   "en": "Whose album has a prism splitting a beam of light on its cover?"
+  },
+  "options": [
+   {
+    "ru": "Пинк Флойд",
+    "en": "Pink Floyd"
+   },
+   {
+    "ru": "Лед Зеппелин",
+    "en": "Led Zeppelin"
+   },
+   {
+    "ru": "Дорз",
+    "en": "The Doors"
+   },
+   {
+    "ru": "Дип Пёрпл",
+    "en": "Deep Purple"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "The Dark Side of the Moon (1973) провёл в американском чарте альбомов больше 900 недель.",
+   "en": "The Dark Side of the Moon (1973) spent more than 900 weeks on the US album chart."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какую улицу переходят битлы на обложке своего альбома 1969 года?",
+   "en": "Which street are the Beatles crossing on the cover of their 1969 album?"
+  },
+  "options": [
+   {
+    "ru": "Эбби-роуд",
+    "en": "Abbey Road"
+   },
+   {
+    "ru": "Бейкер-стрит",
+    "en": "Baker Street"
+   },
+   {
+    "ru": "Пенни-лейн",
+    "en": "Penny Lane"
+   },
+   {
+    "ru": "Карнаби-стрит",
+    "en": "Carnaby Street"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фотографу дали 10 минут: он снимал со стремянки, пока полицейский держал движение, и сделал всего шесть кадров.",
+   "en": "The photographer got ten minutes on a stepladder while a policeman held up traffic, and took just six shots."
+  },
+  "source": "https://en.wikipedia.org/wiki/Abbey_Road"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая группа записала We Will Rock You — ту самую, где «топ-топ-хлоп»?",
+   "en": "Which band recorded We Will Rock You, the stadium stomp-stomp-clap?"
+  },
+  "options": [
+   {
+    "ru": "Квин",
+    "en": "Queen"
+   },
+   {
+    "ru": "Роллинг Стоунз",
+    "en": "The Rolling Stones"
+   },
+   {
+    "ru": "Кисс",
+    "en": "Kiss"
+   },
+   {
+    "ru": "Эй-си/ди-си",
+    "en": "AC/DC"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Идею подсказали фанаты: в 1977 году зал вместо аплодисментов спел группе футбольный гимн You'll Never Walk Alone.",
+   "en": "Fans inspired it: at a 1977 gig the crowd sang You'll Never Walk Alone back to the band instead of just clapping."
+  },
+  "source": "https://en.wikipedia.org/wiki/We_Will_Rock_You"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой жанр прославил фильм «Лихорадка субботнего вечера» с песнями Bee Gees?",
+   "en": "Which genre did Saturday Night Fever, with its Bee Gees songs, make huge?"
+  },
+  "options": [
+   {
+    "ru": "Диско",
+    "en": "Disco"
+   },
+   {
+    "ru": "Панк",
+    "en": "Punk"
+   },
+   {
+    "ru": "Гранж",
+    "en": "Grunge"
+   },
+   {
+    "ru": "Регги",
+    "en": "Reggae"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Саундтрек был самым продаваемым альбомом в истории, пока его не обогнал Thriller Майкла Джексона.",
+   "en": "The soundtrack was the best-selling album ever until Michael Jackson's Thriller overtook it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Saturday_Night_Fever_(soundtrack)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из какой страны Боб Марли?",
+   "en": "Which country was Bob Marley from?"
+  },
+  "options": [
+   {
+    "ru": "Ямайка",
+    "en": "Jamaica"
+   },
+   {
+    "ru": "Куба",
+    "en": "Cuba"
+   },
+   {
+    "ru": "Багамы",
+    "en": "The Bahamas"
+   },
+   {
+    "ru": "Тринидад и Тобаго",
+    "en": "Trinidad and Tobago"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1978 году на концерте One Love он заставил двух враждующих политиков Ямайки пожать друг другу руки.",
+   "en": "At his 1978 One Love concert he got two rival Jamaican political leaders to join hands on stage."
+  },
+  "source": "https://en.wikipedia.org/wiki/One_Love_Peace_Concert"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кого называют «королевой поп-музыки»?",
+   "en": "Who is known as the Queen of Pop?"
+  },
+  "options": [
+   {
+    "ru": "Мадонна",
+    "en": "Madonna"
+   },
+   {
+    "ru": "Уитни Хьюстон",
+    "en": "Whitney Houston"
+   },
+   {
+    "ru": "Шер",
+    "en": "Cher"
+   },
+   {
+    "ru": "Тина Тёрнер",
+    "en": "Tina Turner"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мадонна — её настоящее имя: Мадонна Луиза Чикконе, названа в честь мамы.",
+   "en": "Madonna is her real name: Madonna Louise Ciccone, named after her mother."
+  },
+  "source": "https://en.wikipedia.org/wiki/Madonna"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая группа записала Smells Like Teen Spirit в 1991 году?",
+   "en": "Which band recorded Smells Like Teen Spirit in 1991?"
+  },
+  "options": [
+   {
+    "ru": "Нирвана",
+    "en": "Nirvana"
+   },
+   {
+    "ru": "Пёрл Джем",
+    "en": "Pearl Jam"
+   },
+   {
+    "ru": "Металлика",
+    "en": "Metallica"
+   },
+   {
+    "ru": "Ганз-н-Роузес",
+    "en": "Guns N' Roses"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Teen Spirit — марка дезодоранта: подруга написала Кобейну, что он им «пахнет», а он не знал о нём.",
+   "en": "Teen Spirit was a deodorant: a friend wrote that Cobain smelled of it, and he didn't know the brand."
+  },
+  "source": "https://en.wikipedia.org/wiki/Smells_Like_Teen_Spirit"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что означает название ABBA?",
+   "en": "What does the name ABBA stand for?"
+  },
+  "options": [
+   {
+    "ru": "Первые буквы имён участников",
+    "en": "The members' first initials"
+   },
+   {
+    "ru": "«Папа» по-шведски",
+    "en": "Swedish for \"dad\""
+   },
+   {
+    "ru": "Сокращение от «абракадабра»",
+    "en": "Short for abracadabra"
+   },
+   {
+    "ru": "Название их родной деревни",
+    "en": "Their home village's name"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Агнета, Бьёрн, Бенни и Анни-Фрид, а ещё Abba — шведская фирма рыбных консервов, у которой пришлось просить разрешения.",
+   "en": "Agnetha, Björn, Benny, Anni-Frid. Abba was also a Swedish fish cannery, and the band had to ask its permission."
+  },
+  "source": "https://en.wikipedia.org/wiki/ABBA"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто из битлов написал песню Imagine?",
+   "en": "Which Beatle wrote the song Imagine?"
+  },
+  "options": [
+   {
+    "ru": "Джон Леннон",
+    "en": "John Lennon"
+   },
+   {
+    "ru": "Пол Маккартни",
+    "en": "Paul McCartney"
+   },
+   {
+    "ru": "Джордж Харрисон",
+    "en": "George Harrison"
+   },
+   {
+    "ru": "Ринго Старр",
+    "en": "Ringo Starr"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 2017 году соавтором официально признали Йоко Оно: Леннон сам говорил, что идея во многом её.",
+   "en": "In 2017 Yoko Ono was officially credited as co-writer: Lennon himself said much of the idea was hers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Imagine_(John_Lennon_song)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В какой семейной группе начинал Майкл Джексон?",
+   "en": "Which family band did Michael Jackson start out in?"
+  },
+  "options": [
+   {
+    "ru": "Джексон 5",
+    "en": "The Jackson 5"
+   },
+   {
+    "ru": "Осмонды",
+    "en": "The Osmonds"
+   },
+   {
+    "ru": "Темптейшнз",
+    "en": "The Temptations"
+   },
+   {
+    "ru": "Супримз",
+    "en": "The Supremes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Их первые четыре сингла на Motown подряд заняли первое место в США — до них такого не было.",
+   "en": "Their first four Motown singles all reached No. 1 in the US, something no band had done before."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Jackson_5"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто первым спел I Will Always Love You — хит Уитни Хьюстон?",
+   "en": "Who first recorded I Will Always Love You, later Whitney Houston's hit?"
+  },
+  "options": [
+   {
+    "ru": "Долли Партон",
+    "en": "Dolly Parton"
+   },
+   {
+    "ru": "Дайана Росс",
+    "en": "Diana Ross"
+   },
+   {
+    "ru": "Барбра Стрейзанд",
+    "en": "Barbra Streisand"
+   },
+   {
+    "ru": "Тина Тёрнер",
+    "en": "Tina Turner"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Партон отказала Элвису: его менеджер требовал половину прав на песню. Это решение принесло ей миллионы.",
+   "en": "Parton turned Elvis down when his manager wanted half the rights. That refusal later earned her millions."
+  },
+  "source": "https://en.wikipedia.org/wiki/I_Will_Always_Love_You"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого Мадонна сыграла в музыкальном фильме 1996 года?",
+   "en": "Whom did Madonna play in a 1996 film musical?"
+  },
+  "options": [
+   {
+    "ru": "Эву Перон",
+    "en": "Eva Perón"
+   },
+   {
+    "ru": "Мэрилин Монро",
+    "en": "Marilyn Monroe"
+   },
+   {
+    "ru": "Коко Шанель",
+    "en": "Coco Chanel"
+   },
+   {
+    "ru": "Фриду Кало",
+    "en": "Frida Kahlo"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ради роли в «Эвите» Мадонна написала режиссёру Алану Паркеру письмо на четыре страницы.",
+   "en": "To win the part in Evita, Madonna wrote director Alan Parker a four-page letter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Evita_(1996_film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чей клип первым показал канал MTV в 1981 году?",
+   "en": "Whose music video was the first ever shown on MTV in 1981?"
+  },
+  "options": [
+   {
+    "ru": "Группы Баглз",
+    "en": "The Buggles"
+   },
+   {
+    "ru": "Майкла Джексона",
+    "en": "Michael Jackson"
+   },
+   {
+    "ru": "Группы Дайр Стрейтс",
+    "en": "Dire Straits"
+   },
+   {
+    "ru": "Группы Квин",
+    "en": "Queen"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Песня называлась «Видео убило звезду радио» и вышла ещё в 1979-м, за два года до MTV.",
+   "en": "The song was called Video Killed the Radio Star, released in 1979, two years before MTV."
+  },
+  "source": "https://en.wikipedia.org/wiki/Video_Killed_the_Radio_Star"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто из Queen написал Another One Bites the Dust?",
+   "en": "Which member of Queen wrote Another One Bites the Dust?"
+  },
+  "options": [
+   {
+    "ru": "Басист Джон Дикон",
+    "en": "Bassist John Deacon"
+   },
+   {
+    "ru": "Фредди Меркьюри",
+    "en": "Freddie Mercury"
+   },
+   {
+    "ru": "Брайан Мэй",
+    "en": "Brian May"
+   },
+   {
+    "ru": "Роджер Тейлор",
+    "en": "Roger Taylor"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Выпустить её синглом посоветовал Майкл Джексон, и песня стала №1 в США.",
+   "en": "Michael Jackson told them to release it as a single, and it went to No. 1 in the US."
+  },
+  "source": "https://en.wikipedia.org/wiki/Another_One_Bites_the_Dust"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой науке гитарист Queen Брайан Мэй защитил диссертацию?",
+   "en": "In which science did Queen guitarist Brian May earn a PhD?"
+  },
+  "options": [
+   {
+    "ru": "Астрофизика",
+    "en": "Astrophysics"
+   },
+   {
+    "ru": "Медицина",
+    "en": "Medicine"
+   },
+   {
+    "ru": "Химия",
+    "en": "Chemistry"
+   },
+   {
+    "ru": "Математика",
+    "en": "Mathematics"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он забросил диссертацию ради Queen в 1970-х и дописал её только в 2007 году, через 30 с лишним лет.",
+   "en": "He dropped his thesis for Queen in the 1970s and finished it only in 2007, over 30 years later."
+  },
+  "source": "https://en.wikipedia.org/wiki/Brian_May"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где The Beatles в 1969 году в последний раз выступили перед публикой?",
+   "en": "Where did the Beatles give their last public performance, in 1969?"
+  },
+  "options": [
+   {
+    "ru": "На крыше в Лондоне",
+    "en": "On a London rooftop"
+   },
+   {
+    "ru": "На стадионе в Нью-Йорке",
+    "en": "In a New York stadium"
+   },
+   {
+    "ru": "В клубе Cavern",
+    "en": "At the Cavern Club"
+   },
+   {
+    "ru": "В клубе в Гамбурге",
+    "en": "In a Hamburg club"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Они 42 минуты играли на крыше своей фирмы Apple, пока на шум не пришла полиция.",
+   "en": "They played for 42 minutes on the roof of their Apple office until police arrived over the noise."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Beatles%27_rooftop_concert"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Маккартни называл песню Yesterday, пока не придумал слова?",
+   "en": "What did McCartney call Yesterday before he had the lyrics?"
+  },
+  "options": [
+   {
+    "ru": "«Яичница-болтунья»",
+    "en": "Scrambled Eggs"
+   },
+   {
+    "ru": "«Завтра»",
+    "en": "Tomorrow"
+   },
+   {
+    "ru": "«Утренний чай»",
+    "en": "Morning Tea"
+   },
+   {
+    "ru": "«Мама Мэри»",
+    "en": "Mother Mary"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мелодия приснилась Полу, и он около месяца спрашивал знакомых музыкантов, не украл ли её у кого-то.",
+   "en": "Paul dreamed the tune and spent about a month asking music people if he had stolen it from someone."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yesterday_(Beatles_song)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялось название Led Zeppelin?",
+   "en": "Where did the name Led Zeppelin come from?"
+  },
+  "options": [
+   {
+    "ru": "Шутка: «рухнут, как свинцовый шар»",
+    "en": "A joke: like a lead balloon"
+   },
+   {
+    "ru": "Так звали деда гитариста",
+    "en": "The guitarist's grandfather's name"
+   },
+   {
+    "ru": "Название паба, где они играли",
+    "en": "A pub they played in"
+   },
+   {
+    "ru": "Марка их первого фургона",
+    "en": "Their first van's make"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Шар» заменили на «цеппелин», а из Lead («свинец») убрали a, чтобы американцы не читали «лид».",
+   "en": "Balloon became zeppelin, and they dropped the a from Lead so Americans would not say leed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Led_Zeppelin"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему глаза Дэвида Боуи казались разного цвета?",
+   "en": "Why did David Bowie's eyes look like two different colours?"
+  },
+  "options": [
+   {
+    "ru": "Удар друга в школьной драке",
+    "en": "A friend's punch in a school fight"
+   },
+   {
+    "ru": "Цветная контактная линза",
+    "en": "A coloured contact lens"
+   },
+   {
+    "ru": "Ожог от сценической пиротехники",
+    "en": "A burn from stage pyrotechnics"
+   },
+   {
+    "ru": "Глазные капли",
+    "en": "Eye drops he used"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Зрачок навсегда остался расширенным. Обидчик, Джордж Андервуд, потом рисовал обложки его альбомов.",
+   "en": "One pupil stayed dilated for good. The puncher, George Underwood, later designed his album covers."
+  },
+  "source": "https://en.wikipedia.org/wiki/David_Bowie"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой благотворительный концерт 1985 года шёл одновременно в Лондоне и Филадельфии?",
+   "en": "Which 1985 charity concert ran at the same time in London and Philadelphia?"
+  },
+  "options": [
+   {
+    "ru": "Лайв Эйд",
+    "en": "Live Aid"
+   },
+   {
+    "ru": "Вудсток",
+    "en": "Woodstock"
+   },
+   {
+    "ru": "Лайв 8",
+    "en": "Live 8"
+   },
+   {
+    "ru": "Монстры рока",
+    "en": "Monsters of Rock"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фил Коллинз выступил на обеих площадках: между ними он перелетел Атлантику на «Конкорде».",
+   "en": "Phil Collins played both venues, crossing the Atlantic on Concorde in between."
+  },
+  "source": "https://en.wikipedia.org/wiki/Live_Aid"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где на самом деле прошёл фестиваль «Вудсток» 1969 года?",
+   "en": "Where was the 1969 Woodstock festival actually held?"
+  },
+  "options": [
+   {
+    "ru": "На молочной ферме",
+    "en": "On a dairy farm"
+   },
+   {
+    "ru": "На военной базе",
+    "en": "On an army base"
+   },
+   {
+    "ru": "На городском стадионе",
+    "en": "In a city stadium"
+   },
+   {
+    "ru": "На морском пляже",
+    "en": "On an ocean beach"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Жители городка Вудсток фестиваль не пустили, и он прошёл на ферме Макса Ясгура в Бетеле, за 95 км.",
+   "en": "Woodstock's residents turned it down, so it ended up on Max Yasgur's farm in Bethel, 95 km away."
+  },
+  "source": "https://en.wikipedia.org/wiki/Woodstock"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой актёр фильмов ужасов зачитывает зловещий монолог в песне Thriller?",
+   "en": "Which horror film star delivers the spooky spoken part in Thriller?"
+  },
+  "options": [
+   {
+    "ru": "Винсент Прайс",
+    "en": "Vincent Price"
+   },
+   {
+    "ru": "Кристофер Ли",
+    "en": "Christopher Lee"
+   },
+   {
+    "ru": "Борис Карлофф",
+    "en": "Boris Karloff"
+   },
+   {
+    "ru": "Бела Лугоши",
+    "en": "Bela Lugosi"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слова для Прайса автор песни Род Темпертон сочинил в такси по дороге в студию, а Прайс записал их с двух дублей.",
+   "en": "Songwriter Rod Temperton wrote Price's lines in a taxi on the way to the studio; Price nailed them in two takes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thriller_(song)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто сыграл гитарное соло в Beat It Майкла Джексона?",
+   "en": "Who played the guitar solo on Michael Jackson's Beat It?"
+  },
+  "options": [
+   {
+    "ru": "Эдди Ван Хален",
+    "en": "Eddie Van Halen"
+   },
+   {
+    "ru": "Слэш",
+    "en": "Slash"
+   },
+   {
+    "ru": "Джими Хендрикс",
+    "en": "Jimi Hendrix"
+   },
+   {
+    "ru": "Эрик Клэптон",
+    "en": "Eric Clapton"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ван Хален сыграл соло бесплатно, по дружбе, ничего не попросив взамен.",
+   "en": "Van Halen played the solo for free, as a favour, and asked for nothing in return."
+  },
+  "source": "https://en.wikipedia.org/wiki/Beat_It"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране Элвис служил в армии в 1958–1960 годах?",
+   "en": "Where was Elvis stationed during his army service in 1958 to 1960?"
+  },
+  "options": [
+   {
+    "ru": "В Западной Германии",
+    "en": "West Germany"
+   },
+   {
+    "ru": "В Японии",
+    "en": "Japan"
+   },
+   {
+    "ru": "В Южной Корее",
+    "en": "South Korea"
+   },
+   {
+    "ru": "В Великобритании",
+    "en": "The United Kingdom"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Там, в Германии, рядовой Пресли всерьёз увлёкся карате — и потом вставлял его приёмы в концерты.",
+   "en": "In Germany Private Presley took up karate, and later worked its moves into his stage shows."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elvis_Presley%27s_Army_career"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую джазовую певицу звали «Первой леди песни»?",
+   "en": "Which jazz singer was called the First Lady of Song?"
+  },
+  "options": [
+   {
+    "ru": "Элла Фицджеральд",
+    "en": "Ella Fitzgerald"
+   },
+   {
+    "ru": "Билли Холидей",
+    "en": "Billie Holiday"
+   },
+   {
+    "ru": "Арета Франклин",
+    "en": "Aretha Franklin"
+   },
+   {
+    "ru": "Нина Симон",
+    "en": "Nina Simone"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 17 лет Элла пришла на конкурс в театр «Аполло» танцевать, но в последний момент решила спеть — и победила.",
+   "en": "At 17 Ella entered a contest at the Apollo to dance, switched to singing at the last minute and won."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ella_Fitzgerald"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялась мелодия песни My Way Фрэнка Синатры?",
+   "en": "Where did the tune of Frank Sinatra's My Way come from?"
+  },
+  "options": [
+   {
+    "ru": "Из французской песни",
+    "en": "A French pop song"
+   },
+   {
+    "ru": "Из итальянской оперы",
+    "en": "An Italian opera"
+   },
+   {
+    "ru": "Из рекламы кофе",
+    "en": "A coffee advert"
+   },
+   {
+    "ru": "Из ирландской народной песни",
+    "en": "An Irish folk song"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Оригинал — Comme d'habitude Клода Франсуа о любви, ставшей привычкой; Пол Анка написал совсем новые слова.",
+   "en": "The original, Claude François's Comme d'habitude, was about love gone stale; Paul Anka wrote all new words."
+  },
+  "source": "https://en.wikipedia.org/wiki/My_Way"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого при рождении звали Реджинальд Дуайт?",
+   "en": "Who was born Reginald Dwight?"
+  },
+  "options": [
+   {
+    "ru": "Элтона Джона",
+    "en": "Elton John"
+   },
+   {
+    "ru": "Фредди Меркьюри",
+    "en": "Freddie Mercury"
+   },
+   {
+    "ru": "Рода Стюарта",
+    "en": "Rod Stewart"
+   },
+   {
+    "ru": "Стинга",
+    "en": "Sting"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Псевдоним он сложил из имён двух коллег-музыкантов: саксофониста Элтона Дина и певца Лонг Джона Болдри.",
+   "en": "He built the name from two fellow musicians: saxophonist Elton Dean and singer Long John Baldry."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elton_John"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему Гордона Самнера прозвали Стингом («жало»)?",
+   "en": "Why was Gordon Sumner nicknamed Sting?"
+  },
+  "options": [
+   {
+    "ru": "Из-за свитера в чёрно-жёлтую полоску",
+    "en": "A black and yellow striped jumper"
+   },
+   {
+    "ru": "Его в детстве покусали осы",
+    "en": "He was stung by wasps as a child"
+   },
+   {
+    "ru": "Так звали его боксёрский удар",
+    "en": "It named his boxing punch"
+   },
+   {
+    "ru": "Из-за колючих шуток",
+    "en": "Because of his barbed jokes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Руководитель его джаз-бэнда сказал, что в полосатом свитере он похож на осу, и прозвище прилипло навсегда.",
+   "en": "His jazz bandleader said the striped jumper made him look like a wasp, and the name stuck for life."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sting_(musician)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего Брайан Мэй с отцом вырезали гриф его знаменитой гитары Red Special?",
+   "en": "What did Brian May and his father carve the neck of his Red Special guitar from?"
+  },
+  "options": [
+   {
+    "ru": "Из старой каминной полки",
+    "en": "An old fireplace mantelpiece"
+   },
+   {
+    "ru": "Из крышки рояля",
+    "en": "A grand piano lid"
+   },
+   {
+    "ru": "Из куска корабельной мачты",
+    "en": "A piece of a ship's mast"
+   },
+   {
+    "ru": "Из церковной скамьи",
+    "en": "A church pew"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Корпус сделали из старого дубового стола, в тремоло пошли пружины от мотоцикла, и Мэй играет на ней до сих пор.",
+   "en": "The body came from an old oak table, the tremolo uses motorbike springs, and May still plays it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Red_Special"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На каком острове родился Фредди Меркьюри?",
+   "en": "On which island was Freddie Mercury born?"
+  },
+  "options": [
+   {
+    "ru": "Занзибар",
+    "en": "Zanzibar"
+   },
+   {
+    "ru": "Кипр",
+    "en": "Cyprus"
+   },
+   {
+    "ru": "Мальта",
+    "en": "Malta"
+   },
+   {
+    "ru": "Шри-Ланка",
+    "en": "Sri Lanka"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "При рождении его звали Фаррух Булсара; учился он в Индии, где и стал зваться Фредди.",
+   "en": "He was born Farrokh Bulsara and went to school in India, where friends started calling him Freddie."
+  },
+  "source": "https://en.wikipedia.org/wiki/Freddie_Mercury"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как впервые вышла в свет I Will Survive Глории Гейнор?",
+   "en": "How was Gloria Gaynor's I Will Survive first released?"
+  },
+  "options": [
+   {
+    "ru": "На обороте другого её сингла",
+    "en": "As the B-side of one of her singles"
+   },
+   {
+    "ru": "Как реклама духов",
+    "en": "As a perfume advert"
+   },
+   {
+    "ru": "В фильме про диско",
+    "en": "In a disco film"
+   },
+   {
+    "ru": "На «Евровидении»",
+    "en": "At Eurovision"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Диджеи стали переворачивать пластинку и ставить «сторону Б», пока песня в 1979-м не взлетела на первое место.",
+   "en": "DJs kept flipping the record to play the B-side until it went to No. 1 in 1979."
+  },
+  "source": "https://en.wikipedia.org/wiki/I_Will_Survive"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "О каком реальном событии песня Deep Purple Smoke on the Water?",
+   "en": "Which real event is Deep Purple's Smoke on the Water about?"
+  },
+  "options": [
+   {
+    "ru": "Пожар в казино на концерте",
+    "en": "A casino fire during a concert"
+   },
+   {
+    "ru": "Пожар на нефтяном танкере",
+    "en": "A burning oil tanker"
+   },
+   {
+    "ru": "Костры на фестивале «Вудсток»",
+    "en": "Bonfires at Woodstock"
+   },
+   {
+    "ru": "Извержение вулкана",
+    "en": "A volcanic eruption"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1971 году в Монтрё фанат выстрелил из ракетницы на концерте Фрэнка Заппы, и дым поплыл над Женевским озером.",
+   "en": "In Montreux in 1971 a fan fired a flare at a Frank Zappa gig, and smoke drifted over Lake Geneva."
+  },
+  "source": "https://en.wikipedia.org/wiki/Smoke_on_the_Water"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На что Принс сменил своё имя в 1993 году?",
+   "en": "What did Prince change his name to in 1993?"
+  },
+  "options": [
+   {
+    "ru": "На непроизносимый символ",
+    "en": "An unpronounceable symbol"
+   },
+   {
+    "ru": "На номер",
+    "en": "A number"
+   },
+   {
+    "ru": "На свою фамилию Нельсон",
+    "en": "His surname, Nelson"
+   },
+   {
+    "ru": "На слово «Король»",
+    "en": "The word King"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так он воевал со своим лейблом, и газеты стали писать «Артист, ранее известный как Принс».",
+   "en": "It was a fight with his record label, and the press called him The Artist Formerly Known as Prince."
+  },
+  "source": "https://en.wikipedia.org/wiki/Prince_(musician)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько секунд длится Bohemian Rhapsody группы Queen?",
+   "en": "How many seconds long is Queen's Bohemian Rhapsody?"
+  },
+  "answer": 355,
+  "range": [
+   60,
+   900
+  ],
+  "step": 5,
+  "tolerance": 60,
+  "unit": {
+   "ru": "секунд",
+   "en": "seconds"
+  },
+  "fact": {
+   "ru": "Лейбл считал её слишком длинной для радио, но диджей Кенни Эверетт прокрутил её 14 раз за два дня.",
+   "en": "Executives said it was too long for radio, but DJ Kenny Everett played it 14 times in two days."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bohemian_Rhapsody"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Элвису Пресли, когда он умер?",
+   "en": "How old was Elvis Presley when he died?"
+  },
+  "answer": 42,
+  "range": [
+   20,
+   90
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Элвис умер в 1977 году, и через несколько недель его песня Way Down возглавила британский чарт.",
+   "en": "Elvis died in 1977, and within weeks his single Way Down went to No. 1 in Britain."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elvis_Presley"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Хендрикс, Джоплин, Моррисон и Кобейн умерли в одном возрасте. В каком?",
+   "en": "Hendrix, Joplin, Morrison and Cobain all died at the same age. What age?"
+  },
+  "answer": 27,
+  "range": [
+   15,
+   80
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Отсюда мрачное понятие «Клуб 27»: статистики, впрочем, не нашли, что музыканты чаще умирают именно в 27.",
+   "en": "Hence the grim 27 Club, though statisticians found musicians are not actually likelier to die at 27."
+  },
+  "source": "https://en.wikipedia.org/wiki/27_Club"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году вышел альбом Майкла Джексона Thriller?",
+   "en": "In what year was Michael Jackson's album Thriller released?"
+  },
+  "answer": 1982,
+  "range": [
+   1965,
+   2025
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Семь из девяти песен альбома вышли синглами и все попали в американскую десятку.",
+   "en": "Seven of its nine songs came out as singles, and every one made the US top ten."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thriller_(album)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько человек, по оценке Гиннесса, пришло на концерт Рода Стюарта на Копакабане в 1994 году?",
+   "en": "By Guinness's estimate, how many people came to Rod Stewart's 1994 Copacabana beach concert?"
+  },
+  "answer": 3500000,
+  "range": [
+   0,
+   10000000
+  ],
+  "step": 100000,
+  "tolerance": 1000000,
+  "unit": {
+   "ru": "человек",
+   "en": "people"
+  },
+  "fact": {
+   "ru": "Бесплатный концерт в новогоднюю ночь: в эту цифру входят и те, кто пришёл на пляж смотреть салют.",
+   "en": "It was a free New Year's Eve show, and the count includes people who came for the fireworks."
+  },
+  "source": "https://www.guinnessworldrecords.com/world-records/73085-largest-free-rock-concert-attendance"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Стиви Уандеру, когда его песня впервые стала №1 в США?",
+   "en": "How old was Stevie Wonder when he first had a US No. 1 hit?"
+  },
+  "answer": 13,
+  "range": [
+   5,
+   40
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Fingertips 1963 года — живая запись концерта, где слепой мальчик «Маленький Стиви» играл на губной гармошке.",
+   "en": "Fingertips (1963) was a live recording of 'Little Stevie', the blind boy wonder, on harmonica."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fingertips_(song)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году Луи Армстронг записал What a Wonderful World?",
+   "en": "In what year did Louis Armstrong record What a Wonderful World?"
+  },
+  "answer": 1967,
+  "range": [
+   1945,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Глава американского лейбла её невзлюбил: в США продали меньше 1000 копий, а в Британии это самый продаваемый сингл 1968 года.",
+   "en": "Its US label boss hated it, so it sold under 1,000 copies there, yet it was Britain's best-selling single of 1968."
+  },
+  "source": "https://en.wikipedia.org/wiki/What_a_Wonderful_World"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько долларов стоил заранее купленный билет на все три дня «Вудстока» в 1969 году?",
+   "en": "How many dollars did an advance ticket for all three days of Woodstock cost in 1969?"
+  },
+  "answer": 18,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "долларов",
+   "en": "dollars"
+  },
+  "fact": {
+   "ru": "18 долларов заранее и 24 на входе. Но людей пришло так много, что заборы снесли и фестиваль стал бесплатным.",
+   "en": "$18 in advance, $24 at the gate. But so many came that the fences fell and the festival went free."
+  },
+  "source": "https://en.wikipedia.org/wiki/Woodstock"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году вышла первая в истории джазовая пластинка?",
+   "en": "In what year was the very first jazz record released?"
+  },
+  "answer": 1917,
+  "range": [
+   1880,
+   1980
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Её записал Original Dixieland Jass Band из Нового Орлеана: тогда слово ещё писали jass, а не jazz.",
+   "en": "It was cut by New Orleans' Original Dixieland Jass Band, back when the word was still spelled jass."
+  },
+  "source": "https://en.wikipedia.org/wiki/Livery_Stable_Blues"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году Мэрайя Кэри выпустила All I Want for Christmas Is You?",
+   "en": "In what year did Mariah Carey release All I Want for Christmas Is You?"
+  },
+  "answer": 1994,
+  "range": [
+   1950,
+   2015
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Первое место в американском чарте песня впервые заняла лишь в 2019 году, через 25 лет после выхода.",
+   "en": "It first reached No. 1 on the US chart only in 2019, a full 25 years after its release."
+  },
+  "source": "https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году вручили первую премию «Грэмми»?",
+   "en": "In what year were the first Grammy Awards presented?"
+  },
+  "answer": 1959,
+  "range": [
+   1930,
+   2010
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Премию назвали в честь граммофона, а первую «Грэмми» за песню года получила Volare.",
+   "en": "The award is named after the gramophone, and the first Song of the Year went to Volare."
+  },
+  "source": "https://en.wikipedia.org/wiki/1st_Annual_Grammy_Awards"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году Rock Around the Clock Билла Хейли возглавила хит-парад США?",
+   "en": "In what year did Bill Haley's Rock Around the Clock top the US charts?"
+  },
+  "answer": 1955,
+  "range": [
+   1930,
+   2010
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Записанная в 1954-м песня поначалу прошла незамеченной; хитом её сделал фильм «Школьные джунгли».",
+   "en": "Recorded in 1954, it went almost unnoticed until it opened the film Blackboard Jungle."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rock_Around_the_Clock"
+ }
+]

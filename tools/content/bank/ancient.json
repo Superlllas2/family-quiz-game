@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какую письменность помог расшифровать Розеттский камень?",
+   "en": "Which script did the Rosetta Stone help scholars decipher?"
+  },
+  "options": [
+   {
+    "ru": "Египетские иероглифы",
+    "en": "Egyptian hieroglyphs"
+   },
+   {
+    "ru": "Шумерскую клинопись",
+    "en": "Sumerian cuneiform"
+   },
+   {
+    "ru": "Письменность майя",
+    "en": "Maya glyphs"
+   },
+   {
+    "ru": "Этрусское письмо",
+    "en": "Etruscan script"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На камне один и тот же указ записан трижды, в том числе по-древнегречески, а греческий учёные читать умели.",
+   "en": "The stone carries the same decree three times, once in ancient Greek, which scholars could already read."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой город засыпал пеплом Везувий?",
+   "en": "Which city was buried in ash by Mount Vesuvius?"
+  },
+  "options": [
+   {
+    "ru": "Карфаген",
+    "en": "Carthage"
+   },
+   {
+    "ru": "Троя",
+    "en": "Troy"
+   },
+   {
+    "ru": "Спарта",
+    "en": "Sparta"
+   },
+   {
+    "ru": "Помпеи",
+    "en": "Pompeii"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В запечатанной печи одной из пекарен нашли 81 буханку хлеба: обугленную, но целую.",
+   "en": "In one bakery's sealed oven, diggers found 81 loaves of bread, charred but still whole."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pompeii"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что должна была охранять Терракотовая армия в Китае?",
+   "en": "What was China's Terracotta Army made to guard?"
+  },
+  "options": [
+   {
+    "ru": "Великую стену",
+    "en": "The Great Wall"
+   },
+   {
+    "ru": "Императорскую казну",
+    "en": "The imperial treasury"
+   },
+   {
+    "ru": "Гробницу первого императора",
+    "en": "The first emperor's tomb"
+   },
+   {
+    "ru": "Ворота столицы",
+    "en": "The capital's gates"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Глиняных воинов зарыли рядом с гробницей Цинь Шихуанди, чтобы служить ему и после смерти; у каждого своё лицо.",
+   "en": "The clay soldiers were buried by Qin Shi Huang's tomb to serve him after death, and each has its own face."
+  },
+  "source": "https://en.wikipedia.org/wiki/Terracotta_Army"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое число римляне не могли записать своими цифрами?",
+   "en": "Which number could the Romans not write with their numerals?"
+  },
+  "options": [
+   {
+    "ru": "Тысячу",
+    "en": "A thousand"
+   },
+   {
+    "ru": "Ноль",
+    "en": "Zero"
+   },
+   {
+    "ru": "Единицу",
+    "en": "One"
+   },
+   {
+    "ru": "Пятёрку",
+    "en": "Five"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Ноль как число пришёл в Европу из Индии через арабских математиков только в Средние века.",
+   "en": "Zero as a number reached Europe from India, via Arab mathematicians, only in the Middle Ages."
+  },
+  "source": "https://en.wikipedia.org/wiki/Roman_numerals"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кем был Спартак?",
+   "en": "Who was Spartacus?"
+  },
+  "options": [
+   {
+    "ru": "Гладиатором, поднявшим восстание",
+    "en": "A gladiator who led a revolt"
+   },
+   {
+    "ru": "Царём Спарты",
+    "en": "A king of Sparta"
+   },
+   {
+    "ru": "Римским императором",
+    "en": "A Roman emperor"
+   },
+   {
+    "ru": "Греческим философом",
+    "en": "A Greek philosopher"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Имя звучит по-спартански, но Спартак был фракийцем, к Спарте он отношения не имел.",
+   "en": "The name sounds Spartan, but Spartacus was a Thracian with nothing to do with Sparta."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spartacus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На чём в основном писали древние египтяне?",
+   "en": "What did the ancient Egyptians mostly write on?"
+  },
+  "options": [
+   {
+    "ru": "На бересте",
+    "en": "Birch bark"
+   },
+   {
+    "ru": "На рисовой бумаге",
+    "en": "Rice paper"
+   },
+   {
+    "ru": "На шёлке",
+    "en": "Silk"
+   },
+   {
+    "ru": "На папирусе",
+    "en": "Papyrus"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Листы делали из болотного тростника, и от слова «папирус» происходит английское paper.",
+   "en": "Sheets were made from a marsh reed, and the English word paper comes from papyrus."
+  },
+  "source": "https://en.wikipedia.org/wiki/Papyrus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Про какого императора говорят, что он играл на лире, пока горел Рим?",
+   "en": "Which emperor is said to have played music while Rome burned?"
+  },
+  "options": [
+   {
+    "ru": "Калигула",
+    "en": "Caligula"
+   },
+   {
+    "ru": "Траян",
+    "en": "Trajan"
+   },
+   {
+    "ru": "Нерон",
+    "en": "Nero"
+   },
+   {
+    "ru": "Август",
+    "en": "Augustus"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "По Тациту, когда пожар начался, Нерона не было в Риме: он был в Анции и потом даже открыл свои сады для погорельцев.",
+   "en": "Tacitus says Nero was away at Antium when the fire began, and later opened his gardens to the homeless."
+  },
+  "source": "https://en.wikipedia.org/wiki/Great_Fire_of_Rome"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В какой день убили Юлия Цезаря?",
+   "en": "On what date was Julius Caesar killed?"
+  },
+  "options": [
+   {
+    "ru": "1 апреля",
+    "en": "1 April"
+   },
+   {
+    "ru": "15 марта",
+    "en": "15 March"
+   },
+   {
+    "ru": "1 января",
+    "en": "1 January"
+   },
+   {
+    "ru": "25 декабря",
+    "en": "25 December"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Прорицатель предупреждал его о мартовских идах; Цезарь пошутил, что иды наступили, и услышал: «Но не прошли».",
+   "en": "A seer warned him of the Ides of March; Caesar joked that the Ides had come and was told: yes, but not gone."
+  },
+  "source": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из каких бобов майя варили горький напиток, а сами бобы использовали как деньги?",
+   "en": "Which beans did the Maya drink as a bitter brew and use as money?"
+  },
+  "options": [
+   {
+    "ru": "Какао",
+    "en": "Cocoa"
+   },
+   {
+    "ru": "Кофе",
+    "en": "Coffee"
+   },
+   {
+    "ru": "Фасоль",
+    "en": "Kidney beans"
+   },
+   {
+    "ru": "Соя",
+    "en": "Soya"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В Мезоамерике какао пили горьким, часто с перцем чили, а сладким его сделали уже испанцы.",
+   "en": "In Mesoamerica cocoa was drunk bitter, often with chilli; it was the Spanish who made it sweet."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_chocolate"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто был учителем Александра Македонского?",
+   "en": "Who was Alexander the Great's teacher?"
+  },
+  "options": [
+   {
+    "ru": "Сократ",
+    "en": "Socrates"
+   },
+   {
+    "ru": "Пифагор",
+    "en": "Pythagoras"
+   },
+   {
+    "ru": "Архимед",
+    "en": "Archimedes"
+   },
+   {
+    "ru": "Аристотель",
+    "en": "Aristotle"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "По Плутарху, Александр держал под подушкой «Илиаду» с правками Аристотеля и кинжал.",
+   "en": "Plutarch says Alexander kept a copy of the Iliad annotated by Aristotle under his pillow, next to a dagger."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alexander_the_Great"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как римляне обогревали свои бани?",
+   "en": "How did the Romans heat their baths?"
+  },
+  "options": [
+   {
+    "ru": "Солнечными зеркалами",
+    "en": "Sun mirrors"
+   },
+   {
+    "ru": "Камнями, брошенными в воду",
+    "en": "Hot stones dropped in the water"
+   },
+   {
+    "ru": "Горячим воздухом под полом",
+    "en": "Hot air under the floor"
+   },
+   {
+    "ru": "Электрическими печами",
+    "en": "Electric heaters"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Печь гнала горячий воздух в пустоту под приподнятым полом: центральное отопление 2000 лет назад.",
+   "en": "A furnace pushed hot air through a gap under a raised floor: central heating 2,000 years ago."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hypocaust"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "С какими животными Ганнибал перешёл Альпы?",
+   "en": "Which animals did Hannibal take across the Alps?"
+  },
+  "options": [
+   {
+    "ru": "С медведями",
+    "en": "Bears"
+   },
+   {
+    "ru": "Со слонами",
+    "en": "Elephants"
+   },
+   {
+    "ru": "С верблюдами",
+    "en": "Camels"
+   },
+   {
+    "ru": "Со львами",
+    "en": "Lions"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Он вёл через горы почти 40 слонов, но уже к весне от холода и ран погибли почти все.",
+   "en": "He led nearly 40 elephants over the mountains, but by spring cold and wounds had killed almost all of them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hannibal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где родилась демократия?",
+   "en": "Where was democracy born?"
+  },
+  "options": [
+   {
+    "ru": "В Афинах",
+    "en": "Athens"
+   },
+   {
+    "ru": "В Спарте",
+    "en": "Sparta"
+   },
+   {
+    "ru": "В Вавилоне",
+    "en": "Babylon"
+   },
+   {
+    "ru": "В Карфагене",
+    "en": "Carthage"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Голосовать могли только свободные мужчины-граждане: женщины, рабы и приезжие права голоса не имели.",
+   "en": "Only free male citizens could vote: women, slaves and foreigners had no say."
+  },
+  "source": "https://en.wikipedia.org/wiki/Athenian_democracy"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Тело какого животного у Большого сфинкса в Гизе?",
+   "en": "The Great Sphinx of Giza has the body of which animal?"
+  },
+  "options": [
+   {
+    "ru": "Льва",
+    "en": "A lion"
+   },
+   {
+    "ru": "Быка",
+    "en": "A bull"
+   },
+   {
+    "ru": "Шакала",
+    "en": "A jackal"
+   },
+   {
+    "ru": "Сокола",
+    "en": "A falcon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Нос ему отбили вовсе не солдаты Наполеона: на рисунке 1737 года сфинкс уже без носа.",
+   "en": "Napoleon's troops did not shoot off its nose: a drawing from 1737 already shows it missing."
+  },
+  "source": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какую реку перешёл Цезарь со словами «Жребий брошен»?",
+   "en": "Which river did Caesar cross saying \"The die is cast\"?"
+  },
+  "options": [
+   {
+    "ru": "Нил",
+    "en": "The Nile"
+   },
+   {
+    "ru": "Дунай",
+    "en": "The Danube"
+   },
+   {
+    "ru": "Рубикон",
+    "en": "The Rubicon"
+   },
+   {
+    "ru": "Тибр",
+    "en": "The Tiber"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Речка была такой маленькой, что историки веками спорили, какая это; её официально опознали только в 1933 году.",
+   "en": "The stream was so small that historians argued for centuries over which one it was; Italy settled it only in 1933."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rubicon"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Клеопатра жила ближе по времени к чему?",
+   "en": "Cleopatra lived closer in time to which of these?"
+  },
+  "options": [
+   {
+    "ru": "К изобретению колеса",
+    "en": "The invention of the wheel"
+   },
+   {
+    "ru": "К постройке пирамиды Хеопса",
+    "en": "The building of the Great Pyramid"
+   },
+   {
+    "ru": "К высадке людей на Луну",
+    "en": "The Moon landing"
+   },
+   {
+    "ru": "К изобретению письменности",
+    "en": "The invention of writing"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Когда родилась Клеопатра, пирамиде было уже около 2500 лет, а до полёта на Луну оставалось около 2000.",
+   "en": "When Cleopatra was born the pyramid was about 2,500 years old; the Moon landing was about 2,000 years away."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cleopatra"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какого народа происходила династия Клеопатры?",
+   "en": "Which people did Cleopatra's dynasty come from?"
+  },
+  "options": [
+   {
+    "ru": "Македонские греки",
+    "en": "Macedonian Greeks"
+   },
+   {
+    "ru": "Египтяне",
+    "en": "Egyptians"
+   },
+   {
+    "ru": "Римляне",
+    "en": "Romans"
+   },
+   {
+    "ru": "Персы",
+    "en": "Persians"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Птолемеи вели род от полководца Александра Македонского, и Клеопатра первой из них выучила египетский язык.",
+   "en": "The Ptolemies descended from one of Alexander's generals, and Cleopatra was the first of them known to learn Egyptian."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cleopatra"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что египтяне делали с мозгом при мумификации?",
+   "en": "What did the Egyptians do with the brain when making a mummy?"
+  },
+  "options": [
+   {
+    "ru": "Хранили в отдельном сосуде",
+    "en": "Kept it in its own jar"
+   },
+   {
+    "ru": "Заменяли золотым шаром",
+    "en": "Swapped it for a gold ball"
+   },
+   {
+    "ru": "Скармливали крокодилам",
+    "en": "Fed it to the crocodiles"
+   },
+   {
+    "ru": "Вынимали через нос",
+    "en": "Removed it through the nose"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Египтяне считали, что думает сердце: его оставляли в теле, а мозг считали ненужным и выбрасывали.",
+   "en": "Egyptians thought the heart did the thinking, so it stayed in the body while the brain was thrown away."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mummy"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Для чего римляне собирали мочу из общественных уборных?",
+   "en": "What did the Romans collect urine from public toilets for?"
+  },
+  "options": [
+   {
+    "ru": "Для строительного раствора",
+    "en": "Building mortar"
+   },
+   {
+    "ru": "Для краски стен",
+    "en": "Painting walls"
+   },
+   {
+    "ru": "Для стирки одежды",
+    "en": "Washing clothes"
+   },
+   {
+    "ru": "Для заправки ламп",
+    "en": "Fuelling lamps"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Аммиак в моче отбеливал шерсть; Веспасиан обложил её налогом, отсюда и пошло «Деньги не пахнут».",
+   "en": "Its ammonia brightened wool; Vespasian taxed it, and that gave us the saying: money does not smell."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pecunia_non_olet"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что делало римский бетон таким прочным, что он стоит 2000 лет?",
+   "en": "What made Roman concrete strong enough to last 2,000 years?"
+  },
+  "options": [
+   {
+    "ru": "Мёд",
+    "en": "Honey"
+   },
+   {
+    "ru": "Вулканический пепел",
+    "en": "Volcanic ash"
+   },
+   {
+    "ru": "Яичный белок",
+    "en": "Egg white"
+   },
+   {
+    "ru": "Толчёные кости",
+    "en": "Crushed bones"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В морских причалах вода, проникая в бетон с пеплом, растит новые кристаллы, и со временем он только крепчает.",
+   "en": "In sea piers, water seeping into the ash concrete grows new crystals, so it gets stronger over time."
+  },
+  "source": "https://en.wikipedia.org/wiki/Roman_concrete"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Эратосфен около 240 г. до н. э. измерил окружность Земли?",
+   "en": "How did Eratosthenes measure the Earth around 240 BC?"
+  },
+  "options": [
+   {
+    "ru": "По теням в двух городах",
+    "en": "Shadows in two cities"
+   },
+   {
+    "ru": "Обошёл Землю вокруг",
+    "en": "He walked around it"
+   },
+   {
+    "ru": "По тени Земли на Луне",
+    "en": "Earth's shadow on the Moon"
+   },
+   {
+    "ru": "По горизонту с высокой горы",
+    "en": "The horizon from a mountain"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В полдень солнцестояния в Сиене солнце светило прямо в колодец, а в Александрии давало тень; по её углу он вычислил окружность Земли.",
+   "en": "At midsummer noon the sun shone straight down a well in Syene but cast a shadow in Alexandria; that angle gave him the Earth's size."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eratosthenes"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем оказался Антикитерский механизм, найденный в древнем затонувшем корабле?",
+   "en": "The Antikythera mechanism, found in an ancient shipwreck, turned out to be what?"
+  },
+  "options": [
+   {
+    "ru": "Замок для сундука",
+    "en": "A chest lock"
+   },
+   {
+    "ru": "Музыкальная шкатулка",
+    "en": "A music box"
+   },
+   {
+    "ru": "Корабельный компас",
+    "en": "A ship's compass"
+   },
+   {
+    "ru": "Астрономический калькулятор",
+    "en": "An astronomical calculator"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Его бронзовые шестерёнки предсказывали затмения на десятки лет вперёд; машины такой сложности появились снова лишь в XIV веке.",
+   "en": "Its bronze gears predicted eclipses decades ahead; nothing as complex was built again until the 14th century."
+  },
+  "source": "https://en.wikipedia.org/wiki/Antikythera_mechanism"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Во сколько лет спартанских мальчиков забирали из семьи в военную школу?",
+   "en": "At what age were Spartan boys taken from home to military school?"
+  },
+  "options": [
+   {
+    "ru": "В 16 лет",
+    "en": "At 16"
+   },
+   {
+    "ru": "В 18 лет",
+    "en": "At 18"
+   },
+   {
+    "ru": "В 7 лет",
+    "en": "At 7"
+   },
+   {
+    "ru": "В 12 лет",
+    "en": "At 12"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Их нарочно недокармливали, чтобы учились добывать еду воровством, а наказывали только тех, кто попался.",
+   "en": "They were kept hungry on purpose to learn to steal food, and punished only if they got caught."
+  },
+  "source": "https://en.wikipedia.org/wiki/Agoge"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Александрийская библиотека пополняла собрание?",
+   "en": "How did the Library of Alexandria grow its collection?"
+  },
+  "options": [
+   {
+    "ru": "Выигрывала их в кости",
+    "en": "Won them at dice"
+   },
+   {
+    "ru": "Изымала книги с кораблей в порту",
+    "en": "Seized books from ships in port"
+   },
+   {
+    "ru": "Получала их в дар от Рима",
+    "en": "Got them as gifts from Rome"
+   },
+   {
+    "ru": "Писала все книги сама",
+    "en": "Wrote all the books itself"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Книги переписывали, оригиналы оставляли себе, а владельцам отдавали копии.",
+   "en": "The books were copied, the library kept the originals and the owners got the copies."
+  },
+  "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что должен был проверить Архимед, когда крикнул «Эврика!»?",
+   "en": "What was Archimedes trying to test when he shouted \"Eureka!\"?"
+  },
+  "options": [
+   {
+    "ru": "Из чистого ли золота корона",
+    "en": "If a crown was pure gold"
+   },
+   {
+    "ru": "Круглая ли Земля",
+    "en": "If the Earth was round"
+   },
+   {
+    "ru": "Глубину моря",
+    "en": "How deep the sea was"
+   },
+   {
+    "ru": "Прочность моста",
+    "en": "How strong a bridge was"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Залезая в ванну, он понял, что тело вытесняет воду и так можно сравнить объёмы, и, по Витрувию, побежал домой голым.",
+   "en": "Getting into a bath he saw the water rise, a way to compare volumes; Vitruvius says he ran home naked."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eureka_(word)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой император, по слухам, хотел сделать своего коня консулом?",
+   "en": "Which emperor reportedly planned to make his horse a consul?"
+  },
+  "options": [
+   {
+    "ru": "Нерон",
+    "en": "Nero"
+   },
+   {
+    "ru": "Август",
+    "en": "Augustus"
+   },
+   {
+    "ru": "Марк Аврелий",
+    "en": "Marcus Aurelius"
+   },
+   {
+    "ru": "Калигула",
+    "en": "Caligula"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "У коня Инцитата были мраморное стойло и ясли из слоновой кости; скорее всего, так Калигула издевался над сенатом.",
+   "en": "Incitatus had a marble stall and an ivory manger; Caligula was most likely mocking the senate."
+  },
+  "source": "https://en.wikipedia.org/wiki/Incitatus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой древний народ обозначал ноль значком в виде раковины?",
+   "en": "Which ancient people wrote zero with a sign shaped like a shell?"
+  },
+  "options": [
+   {
+    "ru": "Викинги",
+    "en": "The Vikings"
+   },
+   {
+    "ru": "Египтяне",
+    "en": "The Egyptians"
+   },
+   {
+    "ru": "Майя",
+    "en": "The Maya"
+   },
+   {
+    "ru": "Римляне",
+    "en": "The Romans"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "В Мезоамерике до нуля додумались сами, независимо от Индии, и майя считали с ним даты на тысячи лет.",
+   "en": "Mesoamericans came up with zero on their own, apart from India, and the Maya used it to count dates over millennia."
+  },
+  "source": "https://en.wikipedia.org/wiki/Maya_numerals"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что такое гарум, без которого не обходилась римская кухня?",
+   "en": "What was garum, a staple of Roman cooking?"
+  },
+  "options": [
+   {
+    "ru": "Рыбный соус",
+    "en": "A fish sauce"
+   },
+   {
+    "ru": "Медовое вино",
+    "en": "A honey wine"
+   },
+   {
+    "ru": "Пшеничная каша",
+    "en": "A wheat porridge"
+   },
+   {
+    "ru": "Овечий сыр",
+    "en": "A sheep's cheese"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Рыбу с потрохами солили и оставляли бродить на солнце, а соус шёл почти во всё, его даже давали легионерам.",
+   "en": "Fish and guts were salted and left to ferment in the sun; the sauce went into almost everything, even soldiers' rations."
+  },
+  "source": "https://en.wikipedia.org/wiki/Garum"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что, по одной из версий, погубило первого императора Китая, искавшего бессмертия?",
+   "en": "What may have killed China's first emperor in his quest to live forever?"
+  },
+  "options": [
+   {
+    "ru": "Эликсир с ртутью",
+    "en": "A mercury elixir"
+   },
+   {
+    "ru": "Змеиный яд",
+    "en": "Snake venom"
+   },
+   {
+    "ru": "Тигриная кровь",
+    "en": "Tiger's blood"
+   },
+   {
+    "ru": "Морская вода",
+    "en": "Seawater"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По летописи, в его гробнице текли реки из ртути, и в почве кургана её правда в сотню раз больше нормы.",
+   "en": "Chronicles say his tomb held rivers of mercury, and the soil of the mound really has about 100 times the normal level."
+  },
+  "source": "https://en.wikipedia.org/wiki/Qin_Shi_Huang"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему в часе 60 минут? Это наследство...",
+   "en": "Why does an hour have 60 minutes? We inherited it from..."
+  },
+  "options": [
+   {
+    "ru": "Римлян",
+    "en": "The Romans"
+   },
+   {
+    "ru": "Китайцев",
+    "en": "The Chinese"
+   },
+   {
+    "ru": "Майя",
+    "en": "The Maya"
+   },
+   {
+    "ru": "Вавилонян",
+    "en": "The Babylonians"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В Месопотамии считали шестидесятками: 60 делится на 2, 3, 4, 5, 6, 10, 12, и так удобно делить урожай и время.",
+   "en": "Mesopotamia counted in sixties: 60 splits by 2, 3, 4, 5, 6, 10 and 12, handy for sharing out time and grain."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sexagesimal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что, по Геродоту, делали египтяне, когда в доме умирала кошка?",
+   "en": "What did Egyptians do, says Herodotus, when the family cat died?"
+  },
+  "options": [
+   {
+    "ru": "Отпускали птицу на волю",
+    "en": "Set a bird free"
+   },
+   {
+    "ru": "Красили дом в чёрный",
+    "en": "Painted the house black"
+   },
+   {
+    "ru": "Сбривали себе брови",
+    "en": "Shaved off their eyebrows"
+   },
+   {
+    "ru": "Сажали дерево",
+    "en": "Planted a tree"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Кошки были священными животными богини Бастет, а когда умирала собака, брили уже всю голову и тело.",
+   "en": "Cats were sacred to the goddess Bastet; when a dog died, they shaved their whole head and body."
+  },
+  "source": "https://lexundria.com/hdt/2.66/mcly"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что такое термополий в Помпеях?",
+   "en": "What was a thermopolium in Pompeii?"
+  },
+  "options": [
+   {
+    "ru": "Лавка лекаря",
+    "en": "A doctor's shop"
+   },
+   {
+    "ru": "Уличная закусочная",
+    "en": "A street food counter"
+   },
+   {
+    "ru": "Общественная баня",
+    "en": "A public bath"
+   },
+   {
+    "ru": "Школа гладиаторов",
+    "en": "A gladiator school"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Это был фастфуд Рима: жильцы многоэтажных инсул, где часто не было кухонь, покупали там готовую еду.",
+   "en": "It was Rome's fast food: people in apartment blocks, often without kitchens, bought ready meals there."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thermopolium"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На чём афиняне писали имя того, кого хотели изгнать из города?",
+   "en": "What did Athenians write a name on to vote someone out of the city?"
+  },
+  "options": [
+   {
+    "ru": "На осколках горшков",
+    "en": "Pottery shards"
+   },
+   {
+    "ru": "На медных монетах",
+    "en": "Bronze coins"
+   },
+   {
+    "ru": "На узелках верёвки",
+    "en": "Knotted cords"
+   },
+   {
+    "ru": "На резных палочках",
+    "en": "Carved wooden sticks"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Черепки звались «остраконами», отсюда и слово «остракизм»; изгнанный уходил из города на 10 лет.",
+   "en": "The shards were called ostraka, which gave us the word ostracism; the loser left the city for ten years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ostracism"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что сделал Ксеркс, когда буря разрушила его мост через Геллеспонт?",
+   "en": "What did Xerxes do when a storm wrecked his bridge over the Hellespont?"
+  },
+  "options": [
+   {
+    "ru": "Принёс в жертву коня",
+    "en": "Sacrificed his horse"
+   },
+   {
+    "ru": "Отменил поход",
+    "en": "Called off the war"
+   },
+   {
+    "ru": "Переименовал пролив",
+    "en": "Renamed the strait"
+   },
+   {
+    "ru": "Велел высечь море плетьми",
+    "en": "Had the sea whipped"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "По Геродоту, воду наказали тремястами ударами и бросили в неё кандалы, а мост построили заново.",
+   "en": "Herodotus says the water got 300 lashes and a pair of shackles thrown in, and the bridge was built again."
+  },
+  "source": "https://en.wikipedia.org/wiki/Xerxes%27_Pontoon_Bridges"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где, по преданию, жил философ Диоген?",
+   "en": "Where, as the story goes, did the philosopher Diogenes live?"
+  },
+  "options": [
+   {
+    "ru": "На дереве",
+    "en": "Up a tree"
+   },
+   {
+    "ru": "В перевёрнутой лодке",
+    "en": "Under an upturned boat"
+   },
+   {
+    "ru": "В огромном глиняном сосуде",
+    "en": "In a huge clay jar"
+   },
+   {
+    "ru": "В пещере",
+    "en": "In a cave"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Знаменитая «бочка» — ошибка перевода: деревянных бочек у греков тогда не было, был пифос для зерна.",
+   "en": "The famous barrel is a later mix up: Greeks had no wooden barrels then, it was a pithos, a storage jar."
+  },
+  "source": "https://en.wikipedia.org/wiki/Diogenes"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На чём записаны древнейшие китайские иероглифы?",
+   "en": "What are the oldest Chinese characters written on?"
+  },
+  "options": [
+   {
+    "ru": "На глиняных табличках",
+    "en": "Clay tablets"
+   },
+   {
+    "ru": "На панцирях черепах и костях",
+    "en": "Turtle shells and bones"
+   },
+   {
+    "ru": "На шёлке",
+    "en": "Silk"
+   },
+   {
+    "ru": "На бумаге",
+    "en": "Paper"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Жрецы нагревали кость, пока она не трескалась, читали по трещинам ответ предков и записывали его рядом.",
+   "en": "Priests heated a bone until it cracked, read the cracks as the ancestors' answer and wrote it down beside them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Oracle_bone"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем был вомиторий у римлян?",
+   "en": "What was a vomitorium in ancient Rome?"
+  },
+  "options": [
+   {
+    "ru": "Проходом для выхода зрителей",
+    "en": "An exit for the crowd"
+   },
+   {
+    "ru": "Комнатой, где тошнило на пирах",
+    "en": "A room to be sick at feasts"
+   },
+   {
+    "ru": "Тюрьмой для должников",
+    "en": "A debtors' prison"
+   },
+   {
+    "ru": "Кухней при храме",
+    "en": "A temple kitchen"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Через такие проходы амфитеатр «извергал» толпу на улицу, а комната для рвоты на пирах — выдумка нового времени.",
+   "en": "These passages let a theatre spew its crowd out; the room for vomiting at feasts is a modern myth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vomitorium"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему элитный отряд персидских царей называли «бессмертными»?",
+   "en": "Why was the Persian kings' elite unit called the Immortals?"
+  },
+  "options": [
+   {
+    "ru": "Воины носили маски богов",
+    "en": "They wore masks of gods"
+   },
+   {
+    "ru": "Он ни разу не проиграл",
+    "en": "It never lost a battle"
+   },
+   {
+    "ru": "Воины пили эликсир",
+    "en": "They drank an elixir"
+   },
+   {
+    "ru": "Его всегда держали в 10 000 человек",
+    "en": "It was always kept at 10,000"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "По Геродоту, на место погибшего или заболевшего сразу ставили другого, и отряд казался неуязвимым.",
+   "en": "Herodotus says any man who fell or fell ill was replaced at once, so the unit seemed never to shrink."
+  },
+  "source": "https://en.wikipedia.org/wiki/Immortals_(Achaemenid_Empire)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько законов высечено на каменном столбе вавилонского царя Хаммурапи?",
+   "en": "How many laws are carved on the stone pillar of the Babylonian king Hammurabi?"
+  },
+  "answer": 282,
+  "range": [
+   10,
+   1000
+  ],
+  "step": 2,
+  "tolerance": 30,
+  "unit": {
+   "ru": "законов",
+   "en": "laws"
+  },
+  "fact": {
+   "ru": "Столб высотой 2,25 м исписан сверху донизу; около 35 законов стёрли ещё в древности, их восстановили по копиям на табличках.",
+   "en": "The 2.25 m pillar is covered top to bottom; about 35 laws were erased in antiquity and restored from copies on clay tablets."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Законы_Хаммурапи"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году нашей эры извержение Везувия похоронило целые римские города?",
+   "en": "In what year AD did Vesuvius bury whole Roman towns?"
+  },
+  "answer": 79,
+  "range": [
+   1,
+   600
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "год н. э.",
+   "en": "year AD"
+  },
+  "fact": {
+   "ru": "Города пролежали под пеплом больше 1600 лет, пока в XVIII веке их не начали раскапывать.",
+   "en": "The towns lay buried for over 1,600 years, until digging began in the 18th century."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько примерно лет прошло от основания Рима до падения Западной Римской империи?",
+   "en": "About how many years passed from the founding of Rome to the fall of the Western Roman Empire?"
+  },
+  "answer": 1230,
+  "range": [
+   200,
+   3000
+  ],
+  "step": 10,
+  "tolerance": 150,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Рим по преданию основан в 753 году до н. э., а последнего западного императора свергли в 476 году н. э.",
+   "en": "Legend dates Rome's founding to 753 BC; the last western emperor was deposed in AD 476."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько глиняных воинов насчитывает Терракотовая армия?",
+   "en": "How many clay soldiers are there in the Terracotta Army?"
+  },
+  "answer": 8000,
+  "range": [
+   0,
+   30000
+  ],
+  "step": 500,
+  "tolerance": 3500,
+  "unit": {
+   "ru": "воинов",
+   "en": "soldiers"
+  },
+  "fact": {
+   "ru": "Армию случайно нашли в 1974 году крестьяне, копавшие колодец.",
+   "en": "Farmers digging a well stumbled on the army in 1974."
+  },
+  "source": "https://en.wikipedia.org/wiki/Terracotta_Army"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какой длины был Адрианов вал, перегородивший Британию от моря до моря?",
+   "en": "How long was Hadrian's Wall, built across Britain from sea to sea?"
+  },
+  "answer": 117,
+  "range": [
+   10,
+   500
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Через каждую римскую милю на валу стоял небольшой форт с воротами.",
+   "en": "There was a small fort with a gate every Roman mile along the wall."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hadrian%27s_Wall"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет правил фараон Рамсес II?",
+   "en": "How many years did the pharaoh Ramesses II reign?"
+  },
+  "answer": 66,
+  "range": [
+   1,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Он пережил многих своих наследников: трон получил лишь его тринадцатый сын Мернептах.",
+   "en": "He outlived many of his heirs: the throne went to his thirteenth son, Merneptah."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ramesses_II"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Тутанхамону, когда он умер?",
+   "en": "How old was Tutankhamun when he died?"
+  },
+  "answer": 19,
+  "range": [
+   5,
+   80
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Знаменитым его сделала гробница, а не правление: в 1922 году в ней нашли почти все сокровища и нетронутую мумию.",
+   "en": "His fame comes from his tomb, not his reign: found in 1922, it still held most of its treasures and his mummy."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tutankhamun"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько тысяч человек, по оценкам историков, жило в Риме в эпоху расцвета?",
+   "en": "How many thousand people lived in Rome at its peak, by historians' estimates?"
+  },
+  "answer": 1000,
+  "range": [
+   50,
+   3000
+  ],
+  "step": 50,
+  "tolerance": 350,
+  "unit": {
+   "ru": "тыс. человек",
+   "en": "thousand people"
+  },
+  "fact": {
+   "ru": "Рим, возможно, одним из первых городов в истории дорос до миллиона жителей, наравне с китайской Чанъанью.",
+   "en": "Rome may have been one of the first cities in history to reach a million people, alongside China's Chang'an."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_cities_throughout_history"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Пешком Царская дорога Персии занимала 90 дней. За сколько дней проходили её конные гонцы?",
+   "en": "Persia's Royal Road took 90 days on foot. How many days did mounted couriers need?"
+  },
+  "answer": 9,
+  "range": [
+   1,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "На станциях через каждый дневной перегон гонца ждали свежая лошадь и сменщик, как в эстафете.",
+   "en": "Stations a day's ride apart kept a fresh horse and rider waiting, like a relay race."
+  },
+  "source": "https://en.wikipedia.org/wiki/Royal_Road"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До скольких лет дожил первый римский император Август?",
+   "en": "How old was Augustus, the first Roman emperor, when he died?"
+  },
+  "answer": 75,
+  "range": [
+   20,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Он правил больше 40 лет, а месяц август назвали в его честь ещё при его жизни.",
+   "en": "He ruled for over 40 years, and the month of August was named after him while he was still alive."
+  },
+  "source": "https://en.wikipedia.org/wiki/Augustus"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Александру Македонскому, когда он умер?",
+   "en": "How old was Alexander the Great when he died?"
+  },
+  "answer": 32,
+  "range": [
+   10,
+   90
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "За 13 лет он прошёл с войском от Греции до Индии и не проиграл ни одного сражения.",
+   "en": "In 13 years he marched from Greece to India and never lost a battle."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alexander_the_Great"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какой высоты был Колосс Родосский?",
+   "en": "How tall was the Colossus of Rhodes?"
+  },
+  "answer": 33,
+  "range": [
+   5,
+   150
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Он простоял всего 54 года до землетрясения, но его обломки ещё 800 лет приезжали смотреть путешественники.",
+   "en": "It stood only 54 years before an earthquake, but travellers came to see its ruins for 800 more."
+  },
+  "source": "https://en.wikipedia.org/wiki/Colossus_of_Rhodes"
+ }
+]

@@ -1,0 +1,1506 @@
+[
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что Пётр I обложил особым налогом, чтобы подданные выглядели по-европейски?",
+      "en": "What did Peter the Great tax to make Russians look more European?"
+    },
+    "options": [
+      {
+        "ru": "Лапти",
+        "en": "Bast shoes"
+      },
+      {
+        "ru": "Самовары",
+        "en": "Samovars"
+      },
+      {
+        "ru": "Бороды",
+        "en": "Beards"
+      },
+      {
+        "ru": "Балалайки",
+        "en": "Balalaikas"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Плательщик получал медный «бородовой знак», а крестьянин платил копейку за бороду при каждом въезде в город.",
+      "en": "Payers got a copper 'beard token'; a peasant paid a kopeck for his beard every time he entered a town."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Налог_на_бороду"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто стоит на памятнике у храма Василия Блаженного на Красной площади?",
+      "en": "Who stands on the monument outside St Basil's Cathedral on Red Square?"
+    },
+    "options": [
+      {
+        "ru": "Минин и Пожарский",
+        "en": "Minin and Pozharsky"
+      },
+      {
+        "ru": "Кирилл и Мефодий",
+        "en": "Cyril and Methodius"
+      },
+      {
+        "ru": "Борис и Глеб",
+        "en": "Boris and Gleb"
+      },
+      {
+        "ru": "Пересвет и Ослябя",
+        "en": "Peresvet and Oslyabya"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Купец Минин собрал деньги, а князь Пожарский повёл ополчение, которое в 1612 году выбило поляков из Москвы.",
+      "en": "The merchant Minin raised the money and Prince Pozharsky led the militia that drove the Poles out of Moscow in 1612."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Памятник_Минину_и_Пожарскому"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кто был главнокомандующим русской армией в Бородинском сражении?",
+      "en": "Who was commander in chief of the Russian army at the Battle of Borodino?"
+    },
+    "options": [
+      {
+        "ru": "Александр Суворов",
+        "en": "Alexander Suvorov"
+      },
+      {
+        "ru": "Григорий Потёмкин",
+        "en": "Grigory Potemkin"
+      },
+      {
+        "ru": "Фёдор Ушаков",
+        "en": "Fyodor Ushakov"
+      },
+      {
+        "ru": "Михаил Кутузов",
+        "en": "Mikhail Kutuzov"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Повязки на глазу Кутузов не носил: после ранений в голову глаз видел хуже, а повязку ему «надело» кино.",
+      "en": "Kutuzov never wore an eyepatch: head wounds weakened one eye, but the patch was added by the movies."
+    },
+    "source": "https://en.wikipedia.org/wiki/Mikhail_Kutuzov"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что застал Наполеон, войдя в Москву в сентябре 1812 года?",
+      "en": "What did Napoleon find when he entered Moscow in September 1812?"
+    },
+    "options": [
+      {
+        "ru": "Делегацию с ключами от города",
+        "en": "A delegation with the city keys"
+      },
+      {
+        "ru": "Почти пустой город, вскоре в огне",
+        "en": "A near-empty city soon ablaze"
+      },
+      {
+        "ru": "Русскую армию на стенах Кремля",
+        "en": "The Russian army on the Kremlin walls"
+      },
+      {
+        "ru": "Царя, готового к переговорам",
+        "en": "The tsar, ready to negotiate"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Наполеон напрасно ждал на Поклонной горе делегацию с ключами: жители ушли из города вслед за армией.",
+      "en": "Napoleon waited on Poklonnaya Hill for a delegation with the keys in vain: the people had left with the army."
+    },
+    "source": "https://en.wikipedia.org/wiki/French_occupation_of_Moscow"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Как называлось войско Ивана Грозного, возившее у седла собачью голову и метлу?",
+      "en": "What was Ivan the Terrible's guard called, riders with a dog's head and a broom at the saddle?"
+    },
+    "options": [
+      {
+        "ru": "Стрельцы",
+        "en": "Streltsy"
+      },
+      {
+        "ru": "Гвардейцы",
+        "en": "Guardsmen"
+      },
+      {
+        "ru": "Опричники",
+        "en": "Oprichniki"
+      },
+      {
+        "ru": "Мушкетёры",
+        "en": "Musketeers"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Знаки значили «выгрызать и выметать измену», а одевались опричники в чёрное, как монахи.",
+      "en": "The emblems meant 'gnaw out and sweep away treason', and the oprichniki dressed in black like monks."
+    },
+    "source": "https://en.wikipedia.org/wiki/Oprichnina"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Кем по рождению была Екатерина II?",
+      "en": "Who was Catherine the Great by birth?"
+    },
+    "options": [
+      {
+        "ru": "Французской графиней",
+        "en": "A French countess"
+      },
+      {
+        "ru": "Русской княжной",
+        "en": "A Russian princess"
+      },
+      {
+        "ru": "Немецкой принцессой",
+        "en": "A German princess"
+      },
+      {
+        "ru": "Датской королевной",
+        "en": "A Danish princess"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Урождённая София Августа Фредерика учила русский по ночам так усердно, что слегла с воспалением лёгких.",
+      "en": "Born Sophie of Anhalt-Zerbst, she studied Russian at night so hard that she fell ill with pneumonia."
+    },
+    "source": "https://en.wikipedia.org/wiki/Catherine_the_Great"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой царь отменил крепостное право в России?",
+      "en": "Which tsar abolished serfdom in Russia?"
+    },
+    "options": [
+      {
+        "ru": "Николай I",
+        "en": "Nicholas I"
+      },
+      {
+        "ru": "Александр I",
+        "en": "Alexander I"
+      },
+      {
+        "ru": "Александр II",
+        "en": "Alexander II"
+      },
+      {
+        "ru": "Екатерина II",
+        "en": "Catherine II"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Его манифест 1861 года вышел на два года раньше прокламации Линкольна об освобождении рабов в США.",
+      "en": "His 1861 manifesto came two years before Lincoln's Emancipation Proclamation freed slaves in the US."
+    },
+    "source": "https://en.wikipedia.org/wiki/Emancipation_reform_of_1861"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Куда «за три моря» ходил тверской купец Афанасий Никитин?",
+      "en": "Where did the Tver merchant Afanasy Nikitin travel 'beyond three seas'?"
+    },
+    "options": [
+      {
+        "ru": "В Китай",
+        "en": "To China"
+      },
+      {
+        "ru": "В Индию",
+        "en": "To India"
+      },
+      {
+        "ru": "В Египет",
+        "en": "To Egypt"
+      },
+      {
+        "ru": "В Испанию",
+        "en": "To Spain"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Он попал в Индию больше чем за четверть века до Васко да Гамы и подробно описал её в своём «Хожении».",
+      "en": "He reached India more than a quarter century before Vasco da Gama and described it in detail in his journal."
+    },
+    "source": "https://en.wikipedia.org/wiki/Afanasy_Nikitin"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Именем какого мореплавателя назван пролив между Азией и Америкой?",
+      "en": "Which navigator is the strait between Asia and America named after?"
+    },
+    "options": [
+      {
+        "ru": "Витуса Беринга",
+        "en": "Vitus Bering"
+      },
+      {
+        "ru": "Семёна Дежнёва",
+        "en": "Semyon Dezhnev"
+      },
+      {
+        "ru": "Джеймса Кука",
+        "en": "James Cook"
+      },
+      {
+        "ru": "Ивана Крузенштерна",
+        "en": "Ivan Krusenstern"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Датчанин на русской службе Беринг прошёл его в 1728 году, но казак Дежнёв проплыл здесь ещё в 1648-м.",
+      "en": "Bering, a Dane in Russian service, sailed it in 1728, but the Cossack Dezhnev had passed through in 1648."
+    },
+    "source": "https://en.wikipedia.org/wiki/Bering_Strait"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что первым заложили на месте Петербурга в 1703 году?",
+      "en": "What was the first thing founded on the site of St Petersburg in 1703?"
+    },
+    "options": [
+      {
+        "ru": "Зимний дворец",
+        "en": "The Winter Palace"
+      },
+      {
+        "ru": "Исаакиевский собор",
+        "en": "St Isaac's Cathedral"
+      },
+      {
+        "ru": "Петропавловскую крепость",
+        "en": "The Peter and Paul Fortress"
+      },
+      {
+        "ru": "Медного всадника",
+        "en": "The Bronze Horseman"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Город начинался как крепость против шведов: шла Северная война, и устье Невы надо было удержать.",
+      "en": "The city began as a fort against the Swedes: the Great Northern War was on and the Neva mouth had to be held."
+    },
+    "source": "https://en.wikipedia.org/wiki/Peter_and_Paul_Fortress"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Сколько раз звонили в Царь-колокол?",
+      "en": "How many times has the Tsar Bell been rung?"
+    },
+    "options": [
+      {
+        "ru": "Один раз, на коронации",
+        "en": "Once, at a coronation"
+      },
+      {
+        "ru": "Каждый Новый год",
+        "en": "Every New Year"
+      },
+      {
+        "ru": "Ни разу",
+        "en": "Never"
+      },
+      {
+        "ru": "Только по большим праздникам",
+        "en": "Only on great feast days"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "В пожар 1737 года раскалённый колокол, ещё стоявший в литейной яме, облили водой, и от него откололся кусок в 11,5 тонны.",
+      "en": "In the 1737 fire, water hit the hot bell still in its casting pit, and an 11.5 tonne piece cracked off."
+    },
+    "source": "https://en.wikipedia.org/wiki/Tsar_Bell"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Куда вслед за мужьями отправились жёны декабристов?",
+      "en": "Where did the Decembrists' wives follow their husbands?"
+    },
+    "options": [
+      {
+        "ru": "В Сибирь",
+        "en": "To Siberia"
+      },
+      {
+        "ru": "В Париж",
+        "en": "To Paris"
+      },
+      {
+        "ru": "В Лондон",
+        "en": "To London"
+      },
+      {
+        "ru": "В Крым",
+        "en": "To Crimea"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Поехавшие теряли дворянские права и не могли взять с собой детей, но 11 жён и невест всё равно поехали.",
+      "en": "Those who went lost their noble rights and could not take their children, yet 11 wives and brides still went."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Жёны_декабристов"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Что, по летописи, Вещий Олег прибил к воротам Царьграда?",
+      "en": "What, says the chronicle, did Prince Oleg nail to the gates of Constantinople?"
+    },
+    "options": [
+      {
+        "ru": "Свой меч",
+        "en": "His sword"
+      },
+      {
+        "ru": "Подкову коня",
+        "en": "His horse's horseshoe"
+      },
+      {
+        "ru": "Свой щит",
+        "en": "His shield"
+      },
+      {
+        "ru": "Карту Руси",
+        "en": "A map of Rus"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Чтобы подойти к городу, его войско, по летописи, поставило ладьи на колёса и пошло под парусами по суше.",
+      "en": "To reach the city, the chronicle says, his army put its boats on wheels and sailed them over dry land."
+    },
+    "source": "https://en.wikipedia.org/wiki/Oleg_of_Novgorod"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Откуда, по «Повести временных лет», призвали княжить Рюрика?",
+      "en": "Where, says the Primary Chronicle, was Rurik invited from to rule?"
+    },
+    "options": [
+      {
+        "ru": "Из Византии",
+        "en": "From Byzantium"
+      },
+      {
+        "ru": "От варягов",
+        "en": "From the Varangians"
+      },
+      {
+        "ru": "Из Орды",
+        "en": "From the Horde"
+      },
+      {
+        "ru": "Из Рима",
+        "en": "From Rome"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Варягами звали скандинавов, а послы, по летописи, сказали: «Земля наша велика и обильна, а порядка в ней нет».",
+      "en": "Varangians were Scandinavians; the envoys, says the chronicle, told them 'Our land is great and rich, but has no order'."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Призвание_варягов"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какие горы перешла армия Суворова в 1799 году?",
+      "en": "Which mountains did Suvorov's army cross in 1799?"
+    },
+    "options": [
+      {
+        "ru": "Пиренеи",
+        "en": "The Pyrenees"
+      },
+      {
+        "ru": "Карпаты",
+        "en": "The Carpathians"
+      },
+      {
+        "ru": "Альпы",
+        "en": "The Alps"
+      },
+      {
+        "ru": "Кавказ",
+        "en": "The Caucasus"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Суворову было почти 70, а французский маршал Массена, по преданию, отдал бы за этот переход все свои победы.",
+      "en": "Suvorov was nearly 70, and the French marshal Masséna reportedly said he would trade all his victories for it."
+    },
+    "source": "https://en.wikipedia.org/wiki/Alexander_Suvorov"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто первым из правителей Руси венчался на царство?",
+      "en": "Who was the first ruler of Russia to be crowned tsar?"
+    },
+    "options": [
+      {
+        "ru": "Иван III",
+        "en": "Ivan III"
+      },
+      {
+        "ru": "Пётр I",
+        "en": "Peter the Great"
+      },
+      {
+        "ru": "Михаил Романов",
+        "en": "Mikhail Romanov"
+      },
+      {
+        "ru": "Иван IV Грозный",
+        "en": "Ivan IV the Terrible"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "В 1547 году 16-летний Иван сменил титул великого князя на царский — слово «царь» идёт от «цезаря».",
+      "en": "In 1547, aged 16, Ivan swapped 'grand prince' for 'tsar', a word that comes from 'Caesar'."
+    },
+    "source": "https://en.wikipedia.org/wiki/Ivan_the_Terrible"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "За кого выдавал себя Емельян Пугачёв?",
+      "en": "Who did Yemelyan Pugachev claim to be?"
+    },
+    "options": [
+      {
+        "ru": "За Ивана VI",
+        "en": "Ivan VI"
+      },
+      {
+        "ru": "За Петра III",
+        "en": "Peter III"
+      },
+      {
+        "ru": "За Павла I",
+        "en": "Paul I"
+      },
+      {
+        "ru": "За царевича Дмитрия",
+        "en": "Tsarevich Dmitry"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Муж Екатерины II, погибший после переворота 1762 года, стал любимой маской самозванцев: их было около сорока.",
+      "en": "Catherine's husband, who died after the 1762 coup, became the favourite mask of pretenders: there were about forty."
+    },
+    "source": "https://en.wikipedia.org/wiki/Pugachev's_Rebellion"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кем был Григорий Распутин до того, как попал ко двору Николая II?",
+      "en": "What was Grigori Rasputin before he reached the court of Nicholas II?"
+    },
+    "options": [
+      {
+        "ru": "Монахом Троицкой лавры",
+        "en": "A monk of the Trinity Lavra"
+      },
+      {
+        "ru": "Придворным врачом",
+        "en": "A court doctor"
+      },
+      {
+        "ru": "Сибирским крестьянином",
+        "en": "A Siberian peasant"
+      },
+      {
+        "ru": "Казачьим офицером",
+        "en": "A Cossack officer"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Монахом он никогда не был: крестьянин из села Покровского прославился как странник и «старец»-целитель.",
+      "en": "He never took monastic vows: a peasant from Pokrovskoye, he became famous as a wandering holy man and healer."
+    },
+    "source": "https://en.wikipedia.org/wiki/Grigori_Rasputin"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Откуда пошла история о «потёмкинских деревнях» — декорациях для Екатерины II?",
+      "en": "Where did the story of 'Potemkin villages', fake sets for Catherine the Great, come from?"
+    },
+    "options": [
+      {
+        "ru": "Из мемуаров самой Екатерины",
+        "en": "Catherine's own memoirs"
+      },
+      {
+        "ru": "Из донесения самого Потёмкина",
+        "en": "Potemkin's own report"
+      },
+      {
+        "ru": "Из очерков саксонского дипломата",
+        "en": "A Saxon diplomat's writings"
+      },
+      {
+        "ru": "Из комедии Гоголя",
+        "en": "A comedy by Gogol"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Новые города Новороссии были настоящими, а байку разнёс саксонец Гельбиг, не ездивший с Екатериной; историки считают её мифом.",
+      "en": "The new towns were real; the tale came from the Saxon envoy Helbig, who was not on the trip, and historians call it a myth."
+    },
+    "source": "https://en.wikipedia.org/wiki/Potemkin_village"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто первым в России принял титул императора?",
+      "en": "Who was the first Russian ruler to take the title of emperor?"
+    },
+    "options": [
+      {
+        "ru": "Пётр I",
+        "en": "Peter the Great"
+      },
+      {
+        "ru": "Иван IV",
+        "en": "Ivan IV"
+      },
+      {
+        "ru": "Екатерина II",
+        "en": "Catherine the Great"
+      },
+      {
+        "ru": "Александр I",
+        "en": "Alexander I"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Сенат поднёс Петру этот титул вместе с прозваниями «Великий» и «Отец Отечества».",
+      "en": "The Senate gave Peter this title together with the names 'the Great' and 'Father of the Fatherland'."
+    },
+    "source": "https://en.wikipedia.org/wiki/Peter_the_Great"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Когда в России встречали Новый год до указа Петра I в 1699 году?",
+      "en": "When did Russians celebrate New Year before Peter the Great's decree of 1699?"
+    },
+    "options": [
+      {
+        "ru": "1 апреля",
+        "en": "April 1"
+      },
+      {
+        "ru": "25 декабря",
+        "en": "December 25"
+      },
+      {
+        "ru": "7 января",
+        "en": "January 7"
+      },
+      {
+        "ru": "1 сентября",
+        "en": "September 1"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Годы тогда считали «от сотворения мира»: 1 сентября 1699-го начался 7208 год, а следующий Пётр велел встречать 1 января 1700-го.",
+      "en": "Years ran 'from the Creation': Sept 1, 1699 began year 7208, and Peter moved the next New Year to January 1, 1700."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Новый_год_в_России"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Какая императрица дала обет никого не казнить и сдержала его?",
+      "en": "Which empress vowed never to execute anyone and kept her word?"
+    },
+    "options": [
+      {
+        "ru": "Екатерина II",
+        "en": "Catherine the Great"
+      },
+      {
+        "ru": "Анна Иоанновна",
+        "en": "Anna"
+      },
+      {
+        "ru": "Екатерина I",
+        "en": "Catherine I"
+      },
+      {
+        "ru": "Елизавета Петровна",
+        "en": "Elizabeth"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Дочь Петра поклялась в этом перед переворотом 1741 года, и за 20 лет её правления смертных казней не было.",
+      "en": "Peter's daughter swore it before her 1741 coup, and no one was executed in her 20-year reign."
+    },
+    "source": "https://en.wikipedia.org/wiki/Elizabeth_of_Russia"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что построили зимой 1740 года для шутовской свадьбы при Анне Иоанновне?",
+      "en": "What was built in winter 1740 for a jesters' wedding at Empress Anna's court?"
+    },
+    "options": [
+      {
+        "ru": "Пряничный дворец",
+        "en": "A gingerbread palace"
+      },
+      {
+        "ru": "Плавучий театр",
+        "en": "A floating theatre"
+      },
+      {
+        "ru": "Ледяной дом",
+        "en": "A house of ice"
+      },
+      {
+        "ru": "Хрустальную карету",
+        "en": "A crystal carriage"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Изо льда были даже кровать, камин с ледяными дровами и слон в натуральную величину, а весной всё растаяло.",
+      "en": "Even the bed, a fireplace with ice logs and a life-size elephant were made of ice; it all melted in spring."
+    },
+    "source": "https://en.wikipedia.org/wiki/The_Ice_House_(St._Petersburg)"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что из этого Павел I запретил носить как признак вольнодумства?",
+      "en": "Which of these did Paul I ban as a sign of freethinking?"
+    },
+    "options": [
+      {
+        "ru": "Мундиры прусского образца",
+        "en": "Prussian-style uniforms"
+      },
+      {
+        "ru": "Треуголки",
+        "en": "Tricorn hats"
+      },
+      {
+        "ru": "Круглые шляпы",
+        "en": "Round hats"
+      },
+      {
+        "ru": "Солдатские косы",
+        "en": "Soldiers' pigtails"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "В круглых шляпах ходили французские революционеры, и носивших их на улицах столицы ловила полиция.",
+      "en": "Round hats were worn by French revolutionaries, and police chased anyone wearing one in the capital's streets."
+    },
+    "source": "https://www.rbth.com/history/331229-7-things-ridiculously-banned-in-russia"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Как в 1480 году закончилось ордынское иго?",
+      "en": "How did the Horde's rule over Russia end in 1480?"
+    },
+    "options": [
+      {
+        "ru": "Войска постояли на реке и разошлись",
+        "en": "The armies faced off and left"
+      },
+      {
+        "ru": "Куликовской битвой",
+        "en": "With the Battle of Kulikovo"
+      },
+      {
+        "ru": "Взятием Казани",
+        "en": "With the capture of Kazan"
+      },
+      {
+        "ru": "Мирным договором с Ордой",
+        "en": "A peace treaty with the Horde"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Это «стояние на Угре»: хан Ахмат так и не смог переправиться через реку и увёл войско.",
+      "en": "This was the Great Stand on the Ugra: Khan Akhmat failed to cross the river and led his army away."
+    },
+    "source": "https://en.wikipedia.org/wiki/Great_Stand_on_the_Ugra_River"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "С каким обозом юный Ломоносов ушёл из Холмогор учиться в Москву?",
+      "en": "Which kind of wagon train did young Lomonosov join to go to Moscow to study?"
+    },
+    "options": [
+      {
+        "ru": "С хлебным",
+        "en": "A grain train"
+      },
+      {
+        "ru": "С рыбным",
+        "en": "A fish train"
+      },
+      {
+        "ru": "С пушным",
+        "en": "A fur train"
+      },
+      {
+        "ru": "С соляным",
+        "en": "A salt train"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Сыну помора было 19 лет, и, чтобы поступить в академию, он выдал себя за дворянского сына.",
+      "en": "The fisherman's son was 19, and to get into the academy he passed himself off as a nobleman's son."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Ломоносов,_Михаил_Васильевич"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что, по легенде, на самом деле случилось с Александром I в 1825 году?",
+      "en": "What, according to legend, really happened to Alexander I in 1825?"
+    },
+    "options": [
+      {
+        "ru": "Тайно уплыл в Америку",
+        "en": "He secretly sailed to America"
+      },
+      {
+        "ru": "Был заточён братом в крепость",
+        "en": "His brother locked him in a fortress"
+      },
+      {
+        "ru": "Уехал жить в Англию",
+        "en": "He moved to England"
+      },
+      {
+        "ru": "Ушёл в старцы под чужим именем",
+        "en": "He became a hermit under a false name"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Говорили, что царь инсценировал смерть в Таганроге и жил старцем Фёдором Кузьмичом; доказательств нет до сих пор.",
+      "en": "Rumour said he faked his death in Taganrog and lived on as the hermit Feodor Kuzmich; it has never been proven."
+    },
+    "source": "https://en.wikipedia.org/wiki/Feodor_Kuzmich"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Сколько классов было в петровской Табели о рангах?",
+      "en": "How many grades did Peter the Great's Table of Ranks have?"
+    },
+    "options": [
+      {
+        "ru": "7",
+        "en": "7"
+      },
+      {
+        "ru": "10",
+        "en": "10"
+      },
+      {
+        "ru": "14",
+        "en": "14"
+      },
+      {
+        "ru": "20",
+        "en": "20"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Дослужившийся до нужного класса получал дворянство, так что и сын крестьянина мог стать дворянином.",
+      "en": "Reaching a high enough grade earned nobility, so even a peasant's son could become a nobleman."
+    },
+    "source": "https://en.wikipedia.org/wiki/Table_of_Ranks"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Для чего ювелир Фаберже делал императорские яйца?",
+      "en": "What were Fabergé's imperial eggs made for?"
+    },
+    "options": [
+      {
+        "ru": "Призы на скачках",
+        "en": "Prizes for horse races"
+      },
+      {
+        "ru": "Подарки иностранным послам",
+        "en": "Gifts for foreign envoys"
+      },
+      {
+        "ru": "Пасхальные подарки царицам",
+        "en": "Easter gifts for empresses"
+      },
+      {
+        "ru": "Ёлочные игрушки",
+        "en": "Christmas tree decorations"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Традицию начал Александр III в 1885 году, и в каждом яйце прятался сюрприз — от золотой курочки до кареты.",
+      "en": "Alexander III began it in 1885, and each egg hid a surprise, from a gold hen to a tiny coach."
+    },
+    "source": "https://en.wikipedia.org/wiki/Fabergé_egg"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Королевой какой страны стала Анна, дочь Ярослава Мудрого?",
+      "en": "Anna, daughter of Yaroslav the Wise, became queen of which country?"
+    },
+    "options": [
+      {
+        "ru": "Англии",
+        "en": "England"
+      },
+      {
+        "ru": "Швеции",
+        "en": "Sweden"
+      },
+      {
+        "ru": "Испании",
+        "en": "Spain"
+      },
+      {
+        "ru": "Франции",
+        "en": "France"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Её сёстры стали королевами Норвегии и Венгрии, поэтому Ярослава называют «тестем Европы».",
+      "en": "Her sisters became queens of Norway and Hungary, which is why Yaroslav is called 'the father-in-law of Europe'."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Ярослав_Мудрый"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Откуда, по легенде, взялся изгиб на прямой железной дороге Петербург — Москва?",
+      "en": "According to legend, why does the straight St Petersburg–Moscow railway have a bend?"
+    },
+    "options": [
+      {
+        "ru": "Помещик не продал свою землю",
+        "en": "A landowner refused to sell"
+      },
+      {
+        "ru": "Царица хотела видеть монастырь",
+        "en": "The empress wanted a monastery view"
+      },
+      {
+        "ru": "Медведь сдвинул межевой столб",
+        "en": "A bear moved a survey post"
+      },
+      {
+        "ru": "Царь обвёл свой палец у линейки",
+        "en": "The tsar's finger bent the ruled line"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "На деле изгиб у Веребья — обход крутого подъёма, который проложили уже после смерти Николая I.",
+      "en": "In fact the bend near Verebye bypasses a steep climb and was built after Nicholas I had died."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Веребьинский_обход"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что Екатерина II в 1768 году сделала себе, чтобы подать пример подданным?",
+      "en": "What did Catherine the Great have done to herself in 1768 to set an example?"
+    },
+    "options": [
+      {
+        "ru": "Кровопускание",
+        "en": "Bloodletting"
+      },
+      {
+        "ru": "Прививку от оспы",
+        "en": "A smallpox inoculation"
+      },
+      {
+        "ru": "Пломбу в зуб",
+        "en": "A tooth filling"
+      },
+      {
+        "ru": "Короткую стрижку",
+        "en": "A short haircut"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Прививку ей, а затем сыну и придворным сделал англичанин Томас Димсдейл, и императрица пожаловала ему титул барона.",
+      "en": "The English doctor Thomas Dimsdale did it, then her son and the court, and the grateful empress made him a baron."
+    },
+    "source": "https://en.wikipedia.org/wiki/Thomas_Dimsdale"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Почему Москву называют «белокаменной»?",
+      "en": "Why is Moscow called 'white-stone Moscow'?"
+    },
+    "options": [
+      {
+        "ru": "Дома белили известью к праздникам",
+        "en": "Houses were whitewashed for feasts"
+      },
+      {
+        "ru": "Город стоит на меловых горах",
+        "en": "The city stands on chalk hills"
+      },
+      {
+        "ru": "Снег лежит там полгода",
+        "en": "Snow lies there half the year"
+      },
+      {
+        "ru": "Кремль когда-то был из белого камня",
+        "en": "The Kremlin was once white stone"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "Белокаменный Кремль построил Дмитрий Донской в 1367 году, а нынешние красные стены возвели итальянцы при Иване III.",
+      "en": "Dmitry Donskoy built a white limestone Kremlin in 1367; today's red brick walls were built by Italians under Ivan III."
+    },
+    "source": "https://en.wikipedia.org/wiki/Moscow_Kremlin"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Чья экспедиция считается первой увидевшей Антарктиду, в 1820 году?",
+      "en": "Whose expedition is credited with first sighting Antarctica, in 1820?"
+    },
+    "options": [
+      {
+        "ru": "Крузенштерна и Лисянского",
+        "en": "Krusenstern and Lisyansky"
+      },
+      {
+        "ru": "Беллинсгаузена и Лазарева",
+        "en": "Bellingshausen and Lazarev"
+      },
+      {
+        "ru": "Джеймса Кука",
+        "en": "James Cook's"
+      },
+      {
+        "ru": "Руаля Амундсена",
+        "en": "Roald Amundsen's"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Шлюпы «Восток» и «Мирный» подошли к ледяному берегу, а Кук за полвека до них считал, что земли среди южных льдов не найти.",
+      "en": "The sloops Vostok and Mirny reached the ice shore; half a century earlier Cook had said no land could be found in the southern ice."
+    },
+    "source": "https://en.wikipedia.org/wiki/Fabian_Gottlieb_von_Bellingshausen"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "В каком нынешнем штате США стояла русская крепость Форт-Росс?",
+      "en": "In which present-day US state did the Russian outpost Fort Ross stand?"
+    },
+    "options": [
+      {
+        "ru": "Аляска",
+        "en": "Alaska"
+      },
+      {
+        "ru": "Орегон",
+        "en": "Oregon"
+      },
+      {
+        "ru": "Калифорния",
+        "en": "California"
+      },
+      {
+        "ru": "Вашингтон",
+        "en": "Washington"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Русские основали её в 1812 году, чтобы выращивать хлеб для Аляски, и продали в 1841-м.",
+      "en": "Russians founded it in 1812 to grow food for Alaska and sold it in 1841."
+    },
+    "source": "https://en.wikipedia.org/wiki/Fort_Ross,_California"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Что Екатерина II купила у Дени Дидро, разрешив ему пользоваться этим до конца жизни?",
+      "en": "What did Catherine the Great buy from Denis Diderot, letting him keep using it for life?"
+    },
+    "options": [
+      {
+        "ru": "Его дом в Париже",
+        "en": "His house in Paris"
+      },
+      {
+        "ru": "Его поместье",
+        "en": "His country estate"
+      },
+      {
+        "ru": "Его библиотеку",
+        "en": "His library"
+      },
+      {
+        "ru": "Его карету",
+        "en": "His carriage"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Узнав, что философ бедствует и продаёт книги, она купила их, оставила у него и платила ему жалованье библиотекаря.",
+      "en": "Hearing the philosopher was broke and selling his books, she bought them, left them with him and paid him as librarian."
+    },
+    "source": "https://en.wikipedia.org/wiki/Denis_Diderot"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Кто первой из женщин в мире возглавил национальную академию наук?",
+      "en": "Who was the first woman in the world to head a national academy of sciences?"
+    },
+    "options": [
+      {
+        "ru": "Софья Ковалевская",
+        "en": "Sofia Kovalevskaya"
+      },
+      {
+        "ru": "Екатерина Дашкова",
+        "en": "Yekaterina Dashkova"
+      },
+      {
+        "ru": "Мария Кюри",
+        "en": "Marie Curie"
+      },
+      {
+        "ru": "Екатерина II",
+        "en": "Catherine the Great"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "В 1783 году Екатерина II поставила подругу во главе Петербургской академии, и Дашкова же основала Российскую академию.",
+      "en": "In 1783 Catherine put her friend in charge of the St Petersburg Academy, and Dashkova also founded the Russian Academy."
+    },
+    "source": "https://en.wikipedia.org/wiki/Yekaterina_Dashkova"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Под каким именем Пётр I ездил по Европе с Великим посольством?",
+      "en": "Under what name did Peter the Great travel Europe with his Grand Embassy?"
+    },
+    "options": [
+      {
+        "ru": "Граф Северный",
+        "en": "Count of the North"
+      },
+      {
+        "ru": "Пётр Михайлов",
+        "en": "Pyotr Mikhailov"
+      },
+      {
+        "ru": "Иван Иванов",
+        "en": "Ivan Ivanov"
+      },
+      {
+        "ru": "Князь Московский",
+        "en": "Prince of Moscow"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Узнать двухметрового «урядника» было нетрудно, но он всерьёз работал плотником на верфи в Голландии.",
+      "en": "A two-metre 'sergeant' was easy to spot, yet he really worked as a carpenter at a Dutch shipyard."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Великое_посольство"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Москва впервые упомянута в летописи?",
+      "en": "In what year is Moscow first mentioned in a chronicle?"
+    },
+    "answer": 1147,
+    "range": [
+      1000,
+      1500
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Это приглашение на пир: Юрий Долгорукий звал союзника словами «Приди ко мне, брате, в Москов».",
+      "en": "It is an invitation to a feast: Yuri Dolgoruky wrote to an ally 'Come to me, brother, in Moskov'."
+    },
+    "source": "https://ru.wikipedia.org/wiki/История_Москвы"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году князь Владимир крестил Русь?",
+      "en": "In what year did Prince Vladimir bring Christianity to Rus?"
+    },
+    "answer": 988,
+    "range": [
+      800,
+      1400
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Послы Владимира после службы в Константинополе сказали: «Не знали, на небе ли мы или на земле».",
+      "en": "After a service in Constantinople, Vladimir's envoys said 'we knew not whether we were in heaven or on earth'."
+    },
+    "source": "https://en.wikipedia.org/wiki/Vladimir_the_Great"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "За сколько миллионов долларов Россия продала Аляску в 1867 году?",
+      "en": "For how many million dollars did Russia sell Alaska in 1867?"
+    },
+    "answer": 7.2,
+    "range": [
+      0,
+      60
+    ],
+    "step": 0.1,
+    "tolerance": 2,
+    "unit": {
+      "ru": "млн $",
+      "en": "million $"
+    },
+    "fact": {
+      "ru": "После Крымской войны царь боялся, что Британия заберёт далёкую колонию даром; вышло около 2 центов за акр.",
+      "en": "After the Crimean War the tsar feared Britain would seize the remote colony for nothing; it came to about 2 cents an acre."
+    },
+    "source": "https://en.wikipedia.org/wiki/Alaska_Purchase"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Какого роста был Пётр I?",
+      "en": "How tall was Peter the Great?"
+    },
+    "answer": 203,
+    "range": [
+      140,
+      230
+    ],
+    "step": 1,
+    "tolerance": 10,
+    "unit": {
+      "ru": "см",
+      "en": "cm"
+    },
+    "fact": {
+      "ru": "Царь был выше толпы на голову, но носил обувь всего 38–39-го размера.",
+      "en": "He stood a head above the crowd, yet his shoes were only about European size 38 or 39."
+    },
+    "source": "https://en.wikipedia.org/wiki/Peter_the_Great"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько дней Наполеон пробыл в занятой Москве в 1812 году?",
+      "en": "How many days did Napoleon stay in occupied Moscow in 1812?"
+    },
+    "answer": 36,
+    "range": [
+      0,
+      150
+    ],
+    "step": 1,
+    "tolerance": 8,
+    "unit": {
+      "ru": "дней",
+      "en": "days"
+    },
+    "fact": {
+      "ru": "Он ждал, что Александр I попросит мира, ответа не дождался и ушёл, когда армии стало нечего есть.",
+      "en": "He waited for Alexander I to sue for peace, got no answer, and left as his army ran out of food."
+    },
+    "source": "https://en.wikipedia.org/wiki/French_occupation_of_Moscow"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет правила Россией династия Романовых?",
+      "en": "For how many years did the Romanov dynasty rule Russia?"
+    },
+    "answer": 304,
+    "range": [
+      100,
+      600
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "С 1613 по 1917 год: Михаила позвали на царство в Ипатьевском монастыре, а последние дни Николая II прошли в Ипатьевском доме.",
+      "en": "From 1613 to 1917: Mikhail was offered the crown at the Ipatiev Monastery; Nicholas II spent his last days at the Ipatiev House."
+    },
+    "source": "https://en.wikipedia.org/wiki/House_of_Romanov"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько миллионов человек насчитала первая всеобщая перепись Российской империи в 1897 году?",
+      "en": "How many million people did the Russian Empire's first general census count in 1897?"
+    },
+    "answer": 126,
+    "range": [
+      10,
+      400
+    ],
+    "step": 1,
+    "tolerance": 25,
+    "unit": {
+      "ru": "млн",
+      "en": "million"
+    },
+    "fact": {
+      "ru": "Насчитали почти 125,7 млн, а в графе о занятиях Николай II записал себя «хозяином земли Русской».",
+      "en": "It found nearly 125.7 million, and under occupation Nicholas II wrote 'Master of the Russian Land'."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Перепись_населения_Российской_империи_1897_года"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "В каком году Иван Фёдоров напечатал «Апостол» — первую точно датированную русскую книгу?",
+      "en": "In what year did Ivan Fyodorov print the Apostol, the first exactly dated Russian printed book?"
+    },
+    "answer": 1564,
+    "range": [
+      1400,
+      1900
+    ],
+    "step": 1,
+    "tolerance": 30,
+    "unit": {
+      "ru": "год",
+      "en": "year"
+    },
+    "fact": {
+      "ru": "Это было через сто с лишним лет после Библии Гутенберга, а вскоре первопечатнику пришлось уехать из Москвы.",
+      "en": "That was over a century after Gutenberg's Bible, and soon afterwards the printer had to leave Moscow."
+    },
+    "source": "https://en.wikipedia.org/wiki/Ivan_Fyodorov_(printer)"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет шла Северная война Петра I со Швецией?",
+      "en": "How many years did Peter the Great's Great Northern War with Sweden last?"
+    },
+    "answer": 21,
+    "range": [
+      0,
+      80
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "Война 1700–1721 годов началась с поражения под Нарвой, а закончилась выходом России к Балтике.",
+      "en": "Fought from 1700 to 1721, it began with defeat at Narva and ended with Russia on the Baltic coast."
+    },
+    "source": "https://en.wikipedia.org/wiki/Great_Northern_War"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет правила Екатерина II?",
+      "en": "How many years did Catherine the Great reign?"
+    },
+    "answer": 34,
+    "range": [
+      0,
+      100
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "С 1762 по 1796 год — дольше всех женщин на российском троне, а к власти она пришла, свергнув собственного мужа.",
+      "en": "From 1762 to 1796, longer than any other woman on the Russian throne; she took power by overthrowing her own husband."
+    },
+    "source": "https://en.wikipedia.org/wiki/Catherine_the_Great"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет, по традиционному счёту, длилось ордынское иго на Руси?",
+      "en": "By the traditional count, how many years did the Horde's yoke over Rus last?"
+    },
+    "answer": 240,
+    "range": [
+      0,
+      600
+    ],
+    "step": 5,
+    "tolerance": 35,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "Его отсчитывают от нашествия Батыя в 1237–1240 годах до стояния на Угре в 1480-м.",
+      "en": "It is counted from Batu's invasion of 1237–1240 to the Great Stand on the Ugra in 1480."
+    },
+    "source": "https://en.wikipedia.org/wiki/Tatar_yoke"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Сколько лет было Михаилу Романову, когда Земский собор избрал его царём в 1613 году?",
+      "en": "How old was Mikhail Romanov when the Assembly of the Land elected him tsar in 1613?"
+    },
+    "answer": 16,
+    "range": [
+      0,
+      60
+    ],
+    "step": 1,
+    "tolerance": 7,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "Юношу выбрали в том числе потому, что он не был замешан в распрях Смуты и им, казалось, будет легко управлять.",
+      "en": "The youth was chosen partly because he was untainted by the feuds of the Time of Troubles and seemed easy to steer."
+    },
+    "source": "https://en.wikipedia.org/wiki/Michael_of_Russia"
+  }
+]

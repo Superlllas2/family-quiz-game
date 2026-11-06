@@ -1,0 +1,1507 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что продавал Amazon, когда открылся в 1995 году?",
+   "en": "What did Amazon sell when it opened in 1995?"
+  },
+  "options": [
+   {
+    "ru": "Детские игрушки",
+    "en": "Toys"
+   },
+   {
+    "ru": "Компьютеры",
+    "en": "Computers"
+   },
+   {
+    "ru": "Книги",
+    "en": "Books"
+   },
+   {
+    "ru": "Музыку на CD",
+    "en": "Music CDs"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Безос начал с книг: их миллионы наименований, и ни один магазин не мог держать на полках их все.",
+   "en": "Bezos started with books: there are millions of titles, far more than any shop could ever stock."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amazon_(company)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "От чего произошло название Google?",
+   "en": "Where does the name Google come from?"
+  },
+  "options": [
+   {
+    "ru": "От клички собаки основателя",
+    "en": "The founder's dog's name"
+   },
+   {
+    "ru": "От фамилий основателей",
+    "en": "The founders' surnames"
+   },
+   {
+    "ru": "От звука, который издаёт младенец",
+    "en": "A sound a baby makes"
+   },
+   {
+    "ru": "От числа: единица со ста нулями",
+    "en": "A number: 1 followed by 100 zeros"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Число «гугол» записали с ошибкой — и так и оставили; до этого поисковик назывался BackRub.",
+   "en": "It is a misspelling of \"googol\" that stuck; before that the search engine was called BackRub."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_Google"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что значит название LEGO?",
+   "en": "What does the name LEGO mean?"
+  },
+  "options": [
+   {
+    "ru": "«Кирпичик» по-шведски",
+    "en": "\"Little brick\" in Swedish"
+   },
+   {
+    "ru": "«Играй хорошо» по-датски",
+    "en": "\"Play well\" in Danish"
+   },
+   {
+    "ru": "«Строим вместе» по-немецки",
+    "en": "\"Build together\" in German"
+   },
+   {
+    "ru": "Имя дочери основателя",
+    "en": "The founder's daughter's name"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Датское «leg godt» сократили до LEGO в 1934 году, когда фабрика ещё делала деревянные игрушки.",
+   "en": "The Danish \"leg godt\" was shortened to LEGO in 1934, when the firm still made wooden toys."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Lego_Group"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Брат основателя Adidas Ади Дасслера основал другую известную марку. Какую?",
+   "en": "Adidas founder Adi Dassler's brother started another famous brand. Which?"
+  },
+  "options": [
+   {
+    "ru": "Фила",
+    "en": "Fila"
+   },
+   {
+    "ru": "Найк",
+    "en": "Nike"
+   },
+   {
+    "ru": "Пума",
+    "en": "Puma"
+   },
+   {
+    "ru": "Рибок",
+    "en": "Reebok"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Братья рассорились в 1948-м и открыли две фабрики-соперницы в одном городке, Херцогенаурахе.",
+   "en": "The brothers fell out in 1948 and set up rival factories in the same small town, Herzogenaurach."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rudolf_Dassler"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В честь кого назван Nike?",
+   "en": "Who is Nike named after?"
+  },
+  "options": [
+   {
+    "ru": "Олимпийской чемпионки",
+    "en": "An Olympic champion"
+   },
+   {
+    "ru": "Греческой богини победы",
+    "en": "The Greek goddess of victory"
+   },
+   {
+    "ru": "Жены основателя",
+    "en": "The founder's wife"
+   },
+   {
+    "ru": "Римской богини охоты",
+    "en": "The Roman goddess of hunting"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Имя приснилось сотруднику Джеффу Джонсону, а основатель Фил Найт хотел назвать фирму «Dimension Six».",
+   "en": "Employee Jeff Johnson dreamt up the name; founder Phil Knight wanted to call the firm Dimension Six."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nike,_Inc."
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что означало название сети магазинов 7-Eleven?",
+   "en": "What did the shop chain name 7-Eleven originally mean?"
+  },
+  "options": [
+   {
+    "ru": "Дату открытия: 7 ноября",
+    "en": "Its opening date, 7 November"
+   },
+   {
+    "ru": "Номер дома первого магазина",
+    "en": "The first shop's street number"
+   },
+   {
+    "ru": "Часы работы: с 7 утра до 11 вечера",
+    "en": "Opening hours: 7 am to 11 pm"
+   },
+   {
+    "ru": "7 основателей и 11 магазинов",
+    "en": "7 founders and 11 shops"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "До 1946 года сеть называлась Tote'm Stores; сейчас многие её магазины работают круглосуточно, и название стало просто брендом.",
+   "en": "Until 1946 the chain was called Tote'm Stores; today many of its shops never close, so the name is just a brand."
+  },
+  "source": "https://en.wikipedia.org/wiki/7-Eleven"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чей это рекламный слоган: «Ведь вы этого достойны»?",
+   "en": "Whose advertising slogan is \"Because you're worth it\"?"
+  },
+  "options": [
+   {
+    "ru": "Нивея",
+    "en": "Nivea"
+   },
+   {
+    "ru": "Шанель",
+    "en": "Chanel"
+   },
+   {
+    "ru": "Дав",
+    "en": "Dove"
+   },
+   {
+    "ru": "Лореаль",
+    "en": "L'Oréal"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Копирайтер Илон Спект придумала фразу в начале 1970-х от первого лица — «Ведь я этого достойна»: женщина говорила о себе сама.",
+   "en": "Copywriter Ilon Specht wrote it in the early 1970s as \"Because I'm worth it\": the woman in the ad spoke for herself."
+  },
+  "source": "https://cosmeticsbusiness.com/the-story-of-l-oreal-paris-because-i-m-worth-it"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие конфеты «тают во рту, а не в руках»?",
+   "en": "Which sweets \"melt in your mouth, not in your hand\"?"
+  },
+  "options": [
+   {
+    "ru": "Твикс",
+    "en": "Twix"
+   },
+   {
+    "ru": "Эм-энд-Эмс",
+    "en": "M&M's"
+   },
+   {
+    "ru": "Рафаэлло",
+    "en": "Raffaello"
+   },
+   {
+    "ru": "Скитлс",
+    "en": "Skittles"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "По легенде, Форрест Марс увидел, как солдаты в Испании едят шоколад в сахарной глазури, которая не тает в жару.",
+   "en": "The story goes that Forrest Mars saw soldiers in Spain eating chocolate in a sugar shell that did not melt in the heat."
+  },
+  "source": "https://en.wikipedia.org/wiki/M%26M%27s"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В честь кого назвали куклу Барби?",
+   "en": "Who was the Barbie doll named after?"
+  },
+  "options": [
+   {
+    "ru": "Голливудской актрисы",
+    "en": "A Hollywood actress"
+   },
+   {
+    "ru": "Знаменитой манекенщицы",
+    "en": "A famous fashion model"
+   },
+   {
+    "ru": "Дочери её создательницы",
+    "en": "Her creator's daughter"
+   },
+   {
+    "ru": "Матери создательницы",
+    "en": "Her creator's mother"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Рут Хэндлер назвала куклу в честь дочери Барбары, а появившегося позже Кена — в честь сына.",
+   "en": "Ruth Handler named the doll after her daughter Barbara, and Ken, who came later, after her son."
+  },
+  "source": "https://en.wikipedia.org/wiki/Barbie"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Мишленовские звёзды» ресторанам раздаёт компания, которая делает…",
+   "en": "The Michelin stars for restaurants come from a company that makes…"
+  },
+  "options": [
+   {
+    "ru": "Вино",
+    "en": "Wine"
+   },
+   {
+    "ru": "Газеты",
+    "en": "Newspapers"
+   },
+   {
+    "ru": "Кухонные ножи",
+    "en": "Kitchen knives"
+   },
+   {
+    "ru": "Шины",
+    "en": "Tyres"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В 1900 году путеводитель раздавали бесплатно: чем больше люди ездят по ресторанам, тем быстрее стираются шины.",
+   "en": "In 1900 the guide was free: the more people drove out to eat, the faster they wore out their tyres."
+  },
+  "source": "https://en.wikipedia.org/wiki/Michelin_Guide"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой напиток «окрыляет»?",
+   "en": "Which drink \"gives you wings\"?"
+  },
+  "options": [
+   {
+    "ru": "Спрайт",
+    "en": "Sprite"
+   },
+   {
+    "ru": "Ред Булл",
+    "en": "Red Bull"
+   },
+   {
+    "ru": "Бёрн",
+    "en": "Burn"
+   },
+   {
+    "ru": "Монстр",
+    "en": "Monster"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Red Bull — австрийская версия тайского напитка Krating Daeng, названного в честь дикого быка гаура.",
+   "en": "Red Bull is an Austrian take on the Thai drink Krating Daeng, named after the gaur, a wild bull."
+  },
+  "source": "https://en.wikipedia.org/wiki/Red_Bull"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто изображён на логотипе Starbucks?",
+   "en": "Who is pictured on the Starbucks logo?"
+  },
+  "options": [
+   {
+    "ru": "Жена основателя",
+    "en": "The founder's wife"
+   },
+   {
+    "ru": "Индейская девушка",
+    "en": "A Native American girl"
+   },
+   {
+    "ru": "Богиня кофе",
+    "en": "A coffee goddess"
+   },
+   {
+    "ru": "Сирена с двумя хвостами",
+    "en": "A two-tailed siren"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "На первом, коричневом логотипе 1971 года по старинной гравюре сирена была с обнажённой грудью; потом ей отрастили волосы.",
+   "en": "The first, brown 1971 logo, copied from an old woodcut, showed a topless siren; later versions grew her hair."
+  },
+  "source": "https://en.wikipedia.org/wiki/Starbucks"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из какой страны компания Nokia?",
+   "en": "Which country is Nokia from?"
+  },
+  "options": [
+   {
+    "ru": "Норвегия",
+    "en": "Norway"
+   },
+   {
+    "ru": "Япония",
+    "en": "Japan"
+   },
+   {
+    "ru": "Финляндия",
+    "en": "Finland"
+   },
+   {
+    "ru": "Швеция",
+    "en": "Sweden"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Фирма названа по финскому городку Нокиа; по одной из версий, старинное финское слово «нокиа» означало соболей.",
+   "en": "It is named after the Finnish town of Nokia; one theory says the old Finnish word meant sables."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nokia,_Finland"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Мармеладных мишек Haribo придумали в…",
+   "en": "Haribo gummy bears were invented in…"
+  },
+  "options": [
+   {
+    "ru": "Бельгии",
+    "en": "Belgium"
+   },
+   {
+    "ru": "Дании",
+    "en": "Denmark"
+   },
+   {
+    "ru": "Германии",
+    "en": "Germany"
+   },
+   {
+    "ru": "Швейцарии",
+    "en": "Switzerland"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "HaRiBo — это первые слоги имени, фамилии и города: Ханс Ригель из Бонна, 1920 год.",
+   "en": "HaRiBo is short for its founder and his town: HAns RIegel of BOnn, 1920."
+  },
+  "source": "https://en.wikipedia.org/wiki/Haribo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чей слоган «Лучше для мужчины нет»?",
+   "en": "Whose slogan is \"The best a man can get\"?"
+  },
+  "options": [
+   {
+    "ru": "Олд Спайс",
+    "en": "Old Spice"
+   },
+   {
+    "ru": "Хьюго Босс",
+    "en": "Hugo Boss"
+   },
+   {
+    "ru": "Акс",
+    "en": "Axe"
+   },
+   {
+    "ru": "Жиллетт",
+    "en": "Gillette"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Кинг Жиллетт придумал лезвие, которое не точат, а выбрасывают; в 1901 году воплотить идею помог инженер Уильям Никерсон.",
+   "en": "King Gillette's idea was a blade you threw away instead of sharpening; in 1901 engineer William Nickerson helped make it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gillette"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "С чего начиналась Nokia в 1865 году?",
+   "en": "What did Nokia start out making in 1865?"
+  },
+  "options": [
+   {
+    "ru": "Бумажная масса",
+    "en": "Wood pulp for paper"
+   },
+   {
+    "ru": "Лыжи",
+    "en": "Skis"
+   },
+   {
+    "ru": "Телеграфные аппараты",
+    "en": "Telegraph machines"
+   },
+   {
+    "ru": "Рыболовные сети",
+    "en": "Fishing nets"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала была целлюлозная фабрика; резиновые сапоги и кабели пришли со слиянием в 1967 году, а телефоны — в 1980-х.",
+   "en": "First a pulp mill; rubber boots and cables came with a 1967 merger, and mobile phones only in the 1980s."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nokia"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что производила Nintendo, когда только появилась?",
+   "en": "What did Nintendo make when it first started out?"
+  },
+  "options": [
+   {
+    "ru": "Игральные карты",
+    "en": "Playing cards"
+   },
+   {
+    "ru": "Бумажные фонарики",
+    "en": "Paper lanterns"
+   },
+   {
+    "ru": "Заводные игрушки",
+    "en": "Wind-up toys"
+   },
+   {
+    "ru": "Фарфоровую посуду",
+    "en": "Porcelain"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это были японские карты ханафуда; позже Nintendo пробовала себя даже в такси и рисе быстрого приготовления.",
+   "en": "They were Japanese hanafuda cards; later Nintendo even tried taxis and instant rice."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nintendo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем торговала Samsung, когда открылась в 1938 году?",
+   "en": "What did Samsung trade in when it opened in 1938?"
+  },
+  "options": [
+   {
+    "ru": "Швейными машинками",
+    "en": "Sewing machines"
+   },
+   {
+    "ru": "Сушёной рыбой и лапшой",
+    "en": "Dried fish and noodles"
+   },
+   {
+    "ru": "Радиоприёмниками",
+    "en": "Radios"
+   },
+   {
+    "ru": "Велосипедами",
+    "en": "Bicycles"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Лавка в Тэгу продавала продукты; электроника появилась в конце 1960-х, начиная с чёрно-белого телевизора.",
+   "en": "It was a grocery trader in Daegu; electronics came in the late 1960s, starting with a black and white TV."
+  },
+  "source": "https://en.wikipedia.org/wiki/Samsung"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую кухонную вещь семья Peugeot делает с XIX века?",
+   "en": "What kitchen item has the Peugeot family firm made since the 1800s?"
+  },
+  "options": [
+   {
+    "ru": "Консервные ножи",
+    "en": "Tin openers"
+   },
+   {
+    "ru": "Мельницы для перца",
+    "en": "Pepper mills"
+   },
+   {
+    "ru": "Вафельницы",
+    "en": "Waffle irons"
+   },
+   {
+    "ru": "Чайники",
+    "en": "Kettles"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Сталелитейщики Пежо делали кофемолки с 1840-х и перечные мельницы с 1874 года — задолго до автомобилей.",
+   "en": "The Peugeot steelmakers made coffee mills from the 1840s and pepper mills from 1874, long before cars."
+  },
+  "source": "https://en.wikipedia.org/wiki/Peugeot"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Отец основателя Shell торговал в Лондоне…",
+   "en": "The father of Shell's founder ran a London business selling…"
+  },
+  "options": [
+   {
+    "ru": "Морскими картами",
+    "en": "Sea charts"
+   },
+   {
+    "ru": "Керосиновыми лампами",
+    "en": "Oil lamps"
+   },
+   {
+    "ru": "Китовым жиром",
+    "en": "Whale oil"
+   },
+   {
+    "ru": "Морскими ракушками",
+    "en": "Seashells"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Маркус Сэмюэл продавал шкатулки, украшенные восточными ракушками; в их честь сыновья и назвали нефтяную компанию.",
+   "en": "Marcus Samuel sold boxes decorated with Eastern shells; his sons named their oil company after them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shell_plc"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Для чего продавали салфетки Kleenex, когда они появились в 1924 году?",
+   "en": "What were Kleenex tissues sold for when they came out in 1924?"
+  },
+  "options": [
+   {
+    "ru": "Протирать очки",
+    "en": "Wiping spectacles"
+   },
+   {
+    "ru": "Стирать крем с лица",
+    "en": "Wiping off face cream"
+   },
+   {
+    "ru": "Заворачивать бутерброды",
+    "en": "Wrapping sandwiches"
+   },
+   {
+    "ru": "Фильтровать кофе",
+    "en": "Filtering coffee"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Бумагу для них придумали для фильтров противогазов; после войны её смягчили и ею снимали крем с лица, а сморкаться в неё стали позже.",
+   "en": "The paper began as gas mask filters; after the war it was softened and sold to remove cold cream. Nose blowing came later."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kleenex"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что означает число 40 в названии WD-40?",
+   "en": "What does the 40 in WD-40 stand for?"
+  },
+  "options": [
+   {
+    "ru": "40 ингредиентов",
+    "en": "40 ingredients"
+   },
+   {
+    "ru": "Сороковую попытку",
+    "en": "The 40th attempt"
+   },
+   {
+    "ru": "40% масла в составе",
+    "en": "40% oil content"
+   },
+   {
+    "ru": "Год изобретения, 1940",
+    "en": "The year 1940"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "WD — «вытеснение воды»: в 1953 году химики подобрали состав против ржавчины для ракет с 40-й попытки.",
+   "en": "WD is Water Displacement: in 1953 chemists got the rust-proofing formula for rockets right on try 40."
+  },
+  "source": "https://en.wikipedia.org/wiki/WD-40"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что означает число 57 в слогане Heinz «57 сортов»?",
+   "en": "What did the 57 in Heinz's \"57 Varieties\" count?"
+  },
+  "options": [
+   {
+    "ru": "Помидоры в одной бутылке",
+    "en": "Tomatoes in one bottle"
+   },
+   {
+    "ru": "Число продуктов фирмы",
+    "en": "The firm's number of products"
+   },
+   {
+    "ru": "Год основания, 1857",
+    "en": "The founding year, 1857"
+   },
+   {
+    "ru": "Ничего: Хайнцу понравилось число",
+    "en": "Nothing: Heinz just liked it"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Слоган появился в 1896 году, когда продуктов было уже больше 60; пятёрку Хайнц считал своим счастливым числом, а семёрку — жены.",
+   "en": "By 1896 Heinz already sold over 60 products; he said 5 was his lucky number and 7 was his wife's."
+  },
+  "source": "https://en.wikipedia.org/wiki/Heinz_57"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где на самом деле появилось мороженое Häagen-Dazs?",
+   "en": "Where was Häagen-Dazs ice cream really founded?"
+  },
+  "options": [
+   {
+    "ru": "В Амстердаме",
+    "en": "Amsterdam"
+   },
+   {
+    "ru": "В Нью-Йорке",
+    "en": "New York"
+   },
+   {
+    "ru": "В Стокгольме",
+    "en": "Stockholm"
+   },
+   {
+    "ru": "В Копенгагене",
+    "en": "Copenhagen"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Рубен Маттус выдумал «датское» название в честь Дании, спасавшей евреев в войну, но в датском нет ни «ä», ни «zs».",
+   "en": "Reuben Mattus made up a Danish-sounding name to honour Denmark's wartime help to Jews; Danish has no ä or zs."
+  },
+  "source": "https://en.wikipedia.org/wiki/H%C3%A4agen-Dazs"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Название Starbucks взято из романа…",
+   "en": "The name Starbucks was taken from which novel?"
+  },
+  "options": [
+   {
+    "ru": "«Робинзон Крузо»",
+    "en": "Robinson Crusoe"
+   },
+   {
+    "ru": "«Моби Дик»",
+    "en": "Moby-Dick"
+   },
+   {
+    "ru": "«Остров сокровищ»",
+    "en": "Treasure Island"
+   },
+   {
+    "ru": "«Старик и море»",
+    "en": "The Old Man and the Sea"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Старбек — старший помощник капитана Ахава; основатели искали звучное слово на «St» и вспомнили его.",
+   "en": "Starbuck is Captain Ahab's first mate; the founders wanted a punchy word starting with St."
+  },
+  "source": "https://en.wikipedia.org/wiki/Starbucks"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто нарисовал логотип Chupa Chups?",
+   "en": "Who designed the Chupa Chups logo?"
+  },
+  "options": [
+   {
+    "ru": "Жоан Миро",
+    "en": "Joan Miró"
+   },
+   {
+    "ru": "Пабло Пикассо",
+    "en": "Pablo Picasso"
+   },
+   {
+    "ru": "Энди Уорхол",
+    "en": "Andy Warhol"
+   },
+   {
+    "ru": "Сальвадор Дали",
+    "en": "Salvador Dalí"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В 1969 году Дали нарисовал ромашку и посоветовал ставить логотип сверху, чтобы его всегда было видно целиком.",
+   "en": "In 1969 Dalí drew the daisy and advised putting it on top of the wrapper so it is always seen whole."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chupa_Chups"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как изначально расшифровывалось название LG?",
+   "en": "What did LG originally stand for?"
+  },
+  "options": [
+   {
+    "ru": "Лаки Голдстар",
+    "en": "Lucky Goldstar"
+   },
+   {
+    "ru": "Лайфс Гуд",
+    "en": "Life's Good"
+   },
+   {
+    "ru": "Лайт энд Голд",
+    "en": "Light & Gold"
+   },
+   {
+    "ru": "Ли Груп",
+    "en": "Lee Group"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слились две фирмы: Lak-Hui («лаки») делала крем для лица, GoldStar — радиоприёмники; «Life's Good» придумали потом.",
+   "en": "Two firms: Lak-Hui (\"Lucky\") made face cream and GoldStar made radios; \"Life's Good\" came later."
+  },
+  "source": "https://en.wikipedia.org/wiki/LG_Corporation"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда название швейцарских ножей Victorinox?",
+   "en": "Where does the Swiss knife name Victorinox come from?"
+  },
+  "options": [
+   {
+    "ru": "Имя матери + «нержавейка»",
+    "en": "Founder's mother + \"stainless\""
+   },
+   {
+    "ru": "«Победа» по-латыни",
+    "en": "Latin for \"victory\""
+   },
+   {
+    "ru": "Королева Виктория",
+    "en": "Queen Victoria"
+   },
+   {
+    "ru": "Озеро в Альпах",
+    "en": "A lake in the Alps"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Карл Эльзенер назвал фирму в память о матери Виктории, а в 1921-м добавил «inox» — нержавеющая сталь.",
+   "en": "Karl Elsener named it after his late mother Victoria, then added \"inox\" for stainless steel in 1921."
+  },
+  "source": "https://en.wikipedia.org/wiki/Victorinox"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На каком языке впервые запустили слоган McDonald's «I'm lovin' it»?",
+   "en": "In which language was McDonald's \"I'm lovin' it\" first launched?"
+  },
+  "options": [
+   {
+    "ru": "На испанском",
+    "en": "Spanish"
+   },
+   {
+    "ru": "На английском",
+    "en": "English"
+   },
+   {
+    "ru": "На японском",
+    "en": "Japanese"
+   },
+   {
+    "ru": "На немецком",
+    "en": "German"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Кампания стартовала в Мюнхене в 2003 году как «ich liebe es», а песню спел Джастин Тимберлейк.",
+   "en": "The campaign began in Munich in 2003 as \"ich liebe es\"; Justin Timberlake sang the jingle."
+  },
+  "source": "https://en.wikipedia.org/wiki/I%27m_Lovin%27_It"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Розовый заяц с барабаном в рекламе батареек — чей он был сначала?",
+   "en": "The drumming pink bunny in battery ads: whose was it first?"
+  },
+  "options": [
+   {
+    "ru": "Энерджайзер",
+    "en": "Energizer"
+   },
+   {
+    "ru": "Дюраселл",
+    "en": "Duracell"
+   },
+   {
+    "ru": "Варта",
+    "en": "Varta"
+   },
+   {
+    "ru": "Панасоник",
+    "en": "Panasonic"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Заяц Duracell появился в 1973-м; в 1988-м Energizer его спародировал, и теперь в США и Канаде заяц у Energizer.",
+   "en": "Duracell's bunny dates from 1973; Energizer parodied it in 1988 and now owns the bunny in the US and Canada."
+  },
+  "source": "https://en.wikipedia.org/wiki/Duracell_Bunny"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как в США зовут лысого силача Мистера Пропера?",
+   "en": "What is Mr. Proper, the bald strongman, called in the USA?"
+  },
+  "options": [
+   {
+    "ru": "Мистер Фреш",
+    "en": "Mr. Fresh"
+   },
+   {
+    "ru": "Мистер Мускул",
+    "en": "Mr. Muscle"
+   },
+   {
+    "ru": "Мистер Шайн",
+    "en": "Mr. Shine"
+   },
+   {
+    "ru": "Мистер Клин",
+    "en": "Mr. Clean"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Персонаж Procter & Gamble появился в 1958 году и в разных странах зовётся по-разному; Mr. Muscle — марка конкурентов.",
+   "en": "Procter & Gamble's character dates from 1958 and has many local names; Mr. Muscle is a rival brand."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mr._Clean"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой из этих стран запрещены «Киндер-сюрпризы»?",
+   "en": "In which of these countries are Kinder Surprise eggs banned?"
+  },
+  "options": [
+   {
+    "ru": "США",
+    "en": "The USA"
+   },
+   {
+    "ru": "Франция",
+    "en": "France"
+   },
+   {
+    "ru": "Италия",
+    "en": "Italy"
+   },
+   {
+    "ru": "Россия",
+    "en": "Russia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Американский закон 1938 года запрещает несъедобное внутри еды, поэтому там продают Kinder Joy из двух половинок.",
+   "en": "A 1938 US law bans non-food objects inside food, so the US gets Kinder Joy with the toy kept separate."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kinder_Surprise"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что создатель тубы Pringles завещал сделать со своим прахом?",
+   "en": "What did the man who designed the Pringles can want done with his ashes?"
+  },
+  "options": [
+   {
+    "ru": "Отправить в космос",
+    "en": "Sent into space"
+   },
+   {
+    "ru": "Развеять над картофельным полем",
+    "en": "Scattered over a potato field"
+   },
+   {
+    "ru": "Похоронить в банке Pringles",
+    "en": "Buried in a Pringles can"
+   },
+   {
+    "ru": "Замуровать в стену завода",
+    "en": "Sealed in the factory wall"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Химик Фредрик Баур умер в 2008 году; по дороге на похороны дети купили банку в обычном магазине.",
+   "en": "Chemist Fredric Baur died in 2008; on the way to the funeral his children bought a can at a shop."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fredric_Baur"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Под каким названием Безос зарегистрировал Amazon в 1994 году?",
+   "en": "Under what name did Bezos register Amazon in 1994?"
+  },
+  "options": [
+   {
+    "ru": "Нил",
+    "en": "Nile"
+   },
+   {
+    "ru": "Всё на свете",
+    "en": "Everything"
+   },
+   {
+    "ru": "Кадабра",
+    "en": "Cadabra"
+   },
+   {
+    "ru": "Книжный червь",
+    "en": "Bookworm"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Юрист по телефону расслышал «cadaver» — «труп», и название сменили на самую полноводную реку мира.",
+   "en": "A lawyer misheard it as \"cadaver\", so Bezos switched to the river that carries the most water on Earth."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_Amazon"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Книгу рекордов Гиннесса придумал директор…",
+   "en": "The Guinness Book of Records was dreamed up by the head of…"
+  },
+  "options": [
+   {
+    "ru": "Банка",
+    "en": "A bank"
+   },
+   {
+    "ru": "Цирка",
+    "en": "A circus"
+   },
+   {
+    "ru": "Пивоварни",
+    "en": "A brewery"
+   },
+   {
+    "ru": "Газеты",
+    "en": "A newspaper"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Хью Бивер из пивоварни Guinness в 1951 году на охоте не смог выяснить, какая птица быстрее, и решил издать справочник.",
+   "en": "In 1951 Hugh Beaver of the Guinness brewery could not settle which game bird was fastest, so he made a book."
+  },
+  "source": "https://en.wikipedia.org/wiki/Guinness_World_Records",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что означает слово Kodak?",
+   "en": "What does the word Kodak mean?"
+  },
+  "options": [
+   {
+    "ru": "«Свет» по-гречески",
+    "en": "\"Light\" in Greek"
+   },
+   {
+    "ru": "Город на Аляске",
+    "en": "A town in Alaska"
+   },
+   {
+    "ru": "Ничего: его просто выдумали",
+    "en": "Nothing: it was made up"
+   },
+   {
+    "ru": "Индейское слово",
+    "en": "A Native American word"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Джордж Истмен любил букву K — «сильную и резкую» — и искал короткое слово, которое везде звучит одинаково.",
+   "en": "George Eastman loved the letter K, \"strong and incisive\", and wanted a short word that sounds alike everywhere."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kodak"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего сложено название IKEA?",
+   "en": "What is the name IKEA made of?"
+  },
+  "options": [
+   {
+    "ru": "Имя основателя, ферма и деревня",
+    "en": "Founder, his farm and village"
+   },
+   {
+    "ru": "Имена четырёх детей основателя",
+    "en": "Founder's four children"
+   },
+   {
+    "ru": "«Красивый дом» по-шведски",
+    "en": "\"Beautiful home\" in Swedish"
+   },
+   {
+    "ru": "Аббревиатура мебельной фабрики",
+    "en": "A furniture factory acronym"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ingvar Kamprad, ферма Elmtaryd, деревня Agunnaryd; основатель путал цифры, поэтому товарам дают имена, а не номера.",
+   "en": "Ingvar Kamprad, Elmtaryd farm, Agunnaryd village; dyslexic Kamprad also gave products names, not numbers."
+  },
+  "source": "https://en.wikipedia.org/wiki/IKEA"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что значит название крема Nivea?",
+   "en": "What does the name Nivea mean?"
+  },
+  "options": [
+   {
+    "ru": "«Новая»",
+    "en": "\"New\""
+   },
+   {
+    "ru": "«Нежная»",
+    "en": "\"Gentle\""
+   },
+   {
+    "ru": "Имя дочери химика",
+    "en": "A chemist's daughter's name"
+   },
+   {
+    "ru": "«Белоснежная»",
+    "en": "\"Snow-white\""
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "От латинского niveus — «белоснежный»; крем 1911 года стал первой устойчивой эмульсией воды в масле.",
+   "en": "From Latin niveus, \"snow-white\"; the 1911 cream was the first stable water-in-oil emulsion."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nivea"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько долларов студентка получила в 1971 году за рисунок «галочки» Nike?",
+   "en": "How many dollars did a student get in 1971 for drawing the Nike swoosh?"
+  },
+  "answer": 35,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "долларов",
+   "en": "dollars"
+  },
+  "fact": {
+   "ru": "Позже Фил Найт подарил Кэролин Дэвидсон золотое кольцо с «галочкой» и 500 акций Nike.",
+   "en": "Phil Knight later gave Carolyn Davidson a gold swoosh ring and 500 Nike shares."
+  },
+  "source": "https://en.wikipedia.org/wiki/Swoosh"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько долларов третий сооснователь Apple Рональд Уэйн продал в 1976 году свои 10% компании?",
+   "en": "For how many dollars did Apple's third co-founder, Ronald Wayne, sell his 10% stake in 1976?"
+  },
+  "answer": 800,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 50,
+  "tolerance": 400,
+  "unit": {
+   "ru": "долларов",
+   "en": "dollars"
+  },
+  "fact": {
+   "ru": "Уэйн боялся отвечать по долгам рискованной фирмы, а через год взял ещё 1500 долларов за отказ от всех претензий.",
+   "en": "Wayne feared being liable for the risky firm's debts; a year later he took $1,500 more to drop any future claims."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ronald_Wayne"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько дней в 1985 году продержалась «Новая кола», пока не вернули старый рецепт?",
+   "en": "In 1985, how many days did New Coke last before the old recipe came back?"
+  },
+  "answer": 79,
+  "range": [
+   0,
+   400
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "В слепых тестах новый вкус побеждал, но компании пришло больше 40 тысяч гневных звонков и писем.",
+   "en": "New Coke won blind taste tests, but over 40,000 angry calls and letters poured in."
+  },
+  "source": "https://en.wikipedia.org/wiki/New_Coke"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году в Киото основали компанию Nintendo?",
+   "en": "In what year was Nintendo founded in Kyoto?"
+  },
+  "answer": 1889,
+  "range": [
+   1600,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Фусадзиро Ямаути открыл дело в XIX веке, а видеоиграми Nintendo занялась только в 1970-х.",
+   "en": "Fusajiro Yamauchi founded it in the 19th century; Nintendo only turned to video games in the 1970s."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nintendo"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году инженер Kodak собрал первую цифровую фотокамеру?",
+   "en": "In what year did a Kodak engineer build the first digital camera?"
+  },
+  "answer": 1975,
+  "range": [
+   1880,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Камера Стивена Сассона весила 3,6 кг и снимала чёрно-белые кадры 100 на 100 точек; сам Kodak обанкротился в 2012 году.",
+   "en": "Steven Sasson's camera weighed 3.6 kg and took 100 by 100 pixel black and white shots; Kodak went bankrupt in 2012."
+  },
+  "source": "https://en.wikipedia.org/wiki/Steven_Sasson"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году в магазине впервые просканировали штрихкод — на пачке жвачки Wrigley's?",
+   "en": "In what year was a barcode first scanned in a shop, on a pack of Wrigley's gum?"
+  },
+  "answer": 1974,
+  "range": [
+   1850,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "В 8:01 в супермаркете Marsh в Огайо пробили блок Juicy Fruit из десяти пачек; его копия хранится в Смитсоновском музее.",
+   "en": "At 8:01 am in a Marsh supermarket in Ohio, a ten-pack of Juicy Fruit was scanned; a replica is at the Smithsonian."
+  },
+  "source": "https://en.wikipedia.org/wiki/Universal_Product_Code"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "С какого года строит храмы японская Kongō Gumi — её называют старейшей компанией мира?",
+   "en": "Since what year has Japan's Kongō Gumi, often called the oldest company, built temples?"
+  },
+  "answer": 578,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 2,
+  "tolerance": 100,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Мастеров позвали из Кореи строить храм Ситэнно-дзи; самостоятельной фирма оставалась до 2006 года.",
+   "en": "Its craftsmen came from Korea to build the Shitennō-ji temple; the firm stayed independent until 2006."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kong%C5%8D_Gumi"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Ингвару Кампраду, когда он основал IKEA?",
+   "en": "How old was Ingvar Kamprad when he founded IKEA?"
+  },
+  "answer": 17,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Деньги на дело дал отец в награду за учёбу; сначала IKEA продавала ручки, кошельки и рамки для фото.",
+   "en": "His father rewarded his school results with money; IKEA first sold pens, wallets and picture frames."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ingvar_Kamprad"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько миллионов игрушечных шин выпустила LEGO в 2010 году — больше любого шинного завода?",
+   "en": "How many million toy tyres did LEGO make in 2010, more than any real tyre maker?"
+  },
+  "answer": 380,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 100,
+  "unit": {
+   "ru": "млн шин",
+   "en": "million tyres"
+  },
+  "fact": {
+   "ru": "По данным Гиннесса, LEGO сделала 381 миллион шин — по штукам больше, чем Bridgestone или Michelin.",
+   "en": "Guinness counted 381 million: by number, more than Bridgestone or Michelin."
+  },
+  "source": "https://www.guinnessworldrecords.com/world-records/100909-largest-tyre-manufacture-per-annum"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году появились человечки-минифигурки LEGO?",
+   "en": "In what year did the LEGO minifigure first appear?"
+  },
+  "answer": 1978,
+  "range": [
+   1880,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Первые минифигурки улыбались одинаково: разные лица у них появились только в 1989 году.",
+   "en": "The first minifigures all wore the same smile; different faces only arrived in 1989."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lego_minifigure"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько миллиардов ручек Bic Cristal было продано к 2006 году?",
+   "en": "How many billion Bic Cristal pens had been sold by 2006?"
+  },
+  "answer": 100,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 40,
+  "unit": {
+   "ru": "млрд",
+   "en": "billion"
+  },
+  "fact": {
+   "ru": "Ручка 1950 года стала самой продаваемой в мире, а её прозрачный корпус хранится в нью-йоркском МоМА.",
+   "en": "The 1950 pen became the world's best seller, and it is in the collection of New York's MoMA."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bic_Cristal"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько посетителей обслужил первый McDonald's в Москве в день открытия, 31 января 1990 года?",
+   "en": "How many customers did Moscow's first McDonald's serve on its opening day, 31 January 1990?"
+  },
+  "answer": 30000,
+  "range": [
+   0,
+   100000
+  ],
+  "step": 1000,
+  "tolerance": 10000,
+  "unit": {
+   "ru": "человек",
+   "en": "people"
+  },
+  "fact": {
+   "ru": "Ещё до открытия на Пушкинской площади стояли больше 5000 человек; это рекорд McDonald's для первого дня.",
+   "en": "More than 5,000 people were queueing on Pushkin Square before the doors opened; it was a McDonald's opening day record."
+  },
+  "source": "https://www.themoscowtimes.com/archive/20-years-of-mcdonalds-in-russia"
+ }
+]

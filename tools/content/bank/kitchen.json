@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что делает борщ красным?",
+   "en": "What makes borscht red?"
+  },
+  "options": [
+   {
+    "ru": "Морковь",
+    "en": "Carrots"
+   },
+   {
+    "ru": "Клюква",
+    "en": "Cranberries"
+   },
+   {
+    "ru": "Свёкла",
+    "en": "Beetroot"
+   },
+   {
+    "ru": "Красный перец",
+    "en": "Red pepper"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "А название ему дал борщевик: из этой травы варили первые борщи, ещё без всякой свёклы.",
+   "en": "The name comes from hogweed (borshchevik): the first borshch was made from it, long before beetroot."
+  },
+  "source": "https://en.wikipedia.org/wiki/Borscht"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какую еду нашли в гробницах фараонов — и она до сих пор съедобна?",
+   "en": "Which food found in pharaohs' tombs is still edible today?"
+  },
+  "options": [
+   {
+    "ru": "Хлеб",
+    "en": "Bread"
+   },
+   {
+    "ru": "Сыр",
+    "en": "Cheese"
+   },
+   {
+    "ru": "Финики",
+    "en": "Dates"
+   },
+   {
+    "ru": "Мёд",
+    "en": "Honey"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В мёде мало воды и много кислоты, поэтому микробы в нём не выживают даже тысячи лет.",
+   "en": "Honey holds little water and is acidic, so microbes cannot survive in it, even for thousands of years."
+  },
+  "source": "https://www.smithsonianmag.com/science-nature/the-science-behind-honeys-eternal-shelf-life-1218690/"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему мы плачем, когда режем лук?",
+   "en": "Why do we cry when we chop onions?"
+  },
+  "options": [
+   {
+    "ru": "Сок брызгает в глаза",
+    "en": "Juice squirts into our eyes"
+   },
+   {
+    "ru": "Лук выделяет едкий газ",
+    "en": "It releases an irritating gas"
+   },
+   {
+    "ru": "Луку очень грустно",
+    "en": "The onion is sad"
+   },
+   {
+    "ru": "Глаза устают от мелкой работы",
+    "en": "Our eyes tire from fine work"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Нож рвёт клетки, и из них вылетает летучее сернистое вещество, поэтому холодный лук и острый нож спасают от слёз.",
+   "en": "The knife breaks cells and a volatile sulphur compound escapes, which is why a cold onion and a sharp knife mean fewer tears."
+  },
+  "source": "https://en.wikipedia.org/wiki/Syn-Propanethial-S-oxide"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "По легенде, цвета пиццы «Маргарита» повторяют флаг. Какой?",
+   "en": "Legend says the colours of Pizza Margherita copy a flag. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Португалии",
+    "en": "Portugal's"
+   },
+   {
+    "ru": "Греции",
+    "en": "Greece's"
+   },
+   {
+    "ru": "Италии",
+    "en": "Italy's"
+   },
+   {
+    "ru": "Франции",
+    "en": "France's"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Томаты, моцарелла и базилик: по преданию, неаполитанский пиццайоло так почтил королеву Маргариту.",
+   "en": "Tomato, mozzarella and basil: the story goes that a Naples pizzaiolo made it to honour Queen Margherita."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pizza_Margherita"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В честь кого или чего назван салат оливье?",
+   "en": "What is Olivier salad named after?"
+  },
+  "options": [
+   {
+    "ru": "Французского города",
+    "en": "A French town"
+   },
+   {
+    "ru": "Повара Люсьена Оливье",
+    "en": "Chef Lucien Olivier"
+   },
+   {
+    "ru": "Оливок",
+    "en": "Olives"
+   },
+   {
+    "ru": "Генерала Оливье",
+    "en": "General Olivier"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Он подавал его в московском ресторане «Эрмитаж» в 1860-х — с рябчиками, раковыми шейками и каперсами.",
+   "en": "He served it at Moscow's Hermitage restaurant in the 1860s, with hazel grouse, crayfish tails and capers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Olivier_salad"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда у гамбургера такое название?",
+   "en": "Where does the hamburger get its name?"
+  },
+  "options": [
+   {
+    "ru": "От фамилии изобретателя",
+    "en": "Its inventor's surname"
+   },
+   {
+    "ru": "От первой закусочной «Бургер»",
+    "en": "A diner called Burger's"
+   },
+   {
+    "ru": "От города Гамбурга",
+    "en": "The city of Hamburg"
+   },
+   {
+    "ru": "От ветчины, по-английски ham",
+    "en": "Ham"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Рубленый «гамбургский стейк» привезли в Америку немецкие эмигранты, а ветчины в гамбургере нет вовсе.",
+   "en": "German immigrants brought the minced 'Hamburg steak' to America; there is no ham in a hamburger at all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hamburger"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Пасту варят «аль денте». Что это значит по-итальянски?",
+   "en": "Pasta is cooked 'al dente'. What does that mean in Italian?"
+  },
+  "options": [
+   {
+    "ru": "«По-домашнему»",
+    "en": "'Home-style'"
+   },
+   {
+    "ru": "«На зуб»",
+    "en": "'To the tooth'"
+   },
+   {
+    "ru": "«С сыром»",
+    "en": "'With cheese'"
+   },
+   {
+    "ru": "«Прямо с огня»",
+    "en": "'Straight off the heat'"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Такая паста чуть упругая на укус, и сахар в крови от неё растёт медленнее, чем от разваренной.",
+   "en": "The pasta stays a little firm to bite, and it raises blood sugar more slowly than soft, overcooked pasta."
+  },
+  "source": "https://en.wikipedia.org/wiki/Al_dente"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая страна считает сырное фондю своим национальным блюдом?",
+   "en": "Which country counts cheese fondue as its national dish?"
+  },
+  "options": [
+   {
+    "ru": "Дания",
+    "en": "Denmark"
+   },
+   {
+    "ru": "Швейцария",
+    "en": "Switzerland"
+   },
+   {
+    "ru": "Бельгия",
+    "en": "Belgium"
+   },
+   {
+    "ru": "Нидерланды",
+    "en": "The Netherlands"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Так его сделал Швейцарский сырный союз: в 1930-х он продвигал фондю, чтобы люди ели больше сыра.",
+   "en": "The Swiss Cheese Union made it so, promoting fondue in the 1930s to get people eating more cheese."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fondue"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из какой страны родом паэлья?",
+   "en": "Which country does paella come from?"
+  },
+  "options": [
+   {
+    "ru": "Из Италии",
+    "en": "Italy"
+   },
+   {
+    "ru": "Из Португалии",
+    "en": "Portugal"
+   },
+   {
+    "ru": "Из Испании",
+    "en": "Spain"
+   },
+   {
+    "ru": "Из Мексики",
+    "en": "Mexico"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Её родина — Валенсия, а «паэлья» по-валенсийски значит просто «сковорода»: блюдо назвали по посуде.",
+   "en": "It comes from Valencia, where paella simply means 'frying pan': the dish is named after the pan."
+  },
+  "source": "https://en.wikipedia.org/wiki/Paella"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему зёрнышко кукурузы взрывается и становится попкорном?",
+   "en": "Why does a corn kernel burst into popcorn?"
+  },
+  "options": [
+   {
+    "ru": "Масло пропитывает и раздувает его",
+    "en": "Oil soaks in and swells it"
+   },
+   {
+    "ru": "Лопается пузырёк воздуха",
+    "en": "An air bubble bursts"
+   },
+   {
+    "ru": "Зерно прорастает от жара",
+    "en": "Heat makes it sprout"
+   },
+   {
+    "ru": "Вода внутри превращается в пар",
+    "en": "Water inside turns to steam"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Твёрдая оболочка держит пар, пока давление не станет в девять раз выше атмосферного, — и тогда лопается.",
+   "en": "The hard hull holds the steam until the pressure is about nine times that of the air, and then it bursts."
+  },
+  "source": "https://en.wikipedia.org/wiki/Popcorn"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие рыбы дают чёрную икру?",
+   "en": "Which fish give us black caviar?"
+  },
+  "options": [
+   {
+    "ru": "Тресковые",
+    "en": "Cod"
+   },
+   {
+    "ru": "Осетровые",
+    "en": "Sturgeon"
+   },
+   {
+    "ru": "Лососёвые",
+    "en": "Salmon"
+   },
+   {
+    "ru": "Щуки",
+    "en": "Pike"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Белуга, самая крупная из осетровых, может весить больше тонны и жить больше ста лет.",
+   "en": "The beluga, the largest sturgeon, can weigh over a tonne and live for more than a hundred years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Beluga_(sturgeon)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему холодец застывает без всякого желатина?",
+   "en": "Why does Russian kholodets (meat jelly) set without added gelatin?"
+  },
+  "options": [
+   {
+    "ru": "Застывает жир",
+    "en": "The fat sets"
+   },
+   {
+    "ru": "В бульон кладут крахмал",
+    "en": "Starch goes into the broth"
+   },
+   {
+    "ru": "Его подмораживают",
+    "en": "It is frozen"
+   },
+   {
+    "ru": "Из костей и ножек выходит коллаген",
+    "en": "Collagen comes out of bones and feet"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "При долгой варке коллаген из хрящей и копыт превращается в желатин — тот самый, что продают в пакетиках.",
+   "en": "Long boiling turns the collagen in cartilage and trotters into gelatin, the same stuff sold in packets."
+  },
+  "source": "https://en.wikipedia.org/wiki/Aspic"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В честь кого назван бефстроганов?",
+   "en": "Who is beef Stroganoff named after?"
+  },
+  "options": [
+   {
+    "ru": "Глагола «строгать»",
+    "en": "The verb strogat, to whittle"
+   },
+   {
+    "ru": "Деревни Строгино",
+    "en": "The village of Strogino"
+   },
+   {
+    "ru": "Графов Строгановых",
+    "en": "The Counts Stroganov"
+   },
+   {
+    "ru": "Повара Жана Строгана",
+    "en": "Chef Jean Strogan"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Первый известный рецепт напечатала Елена Молоховец в 1871 году, а Строгановы были одним из богатейших родов России.",
+   "en": "The first known recipe was printed by Elena Molokhovets in 1871; the Stroganovs were among Russia's richest families."
+  },
+  "source": "https://en.wikipedia.org/wiki/Beef_Stroganoff"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Слово «хумус» по-арабски называет главный ингредиент блюда. Какой?",
+   "en": "In Arabic, the word hummus names the dish's main ingredient. Which?"
+  },
+  "options": [
+   {
+    "ru": "Баклажан",
+    "en": "Aubergine"
+   },
+   {
+    "ru": "Кунжут",
+    "en": "Sesame"
+   },
+   {
+    "ru": "Нут",
+    "en": "Chickpeas"
+   },
+   {
+    "ru": "Чечевицу",
+    "en": "Lentils"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Полное название — «хумус би тахина», то есть «нут с кунжутной пастой».",
+   "en": "The full name, hummus bi tahina, means 'chickpeas with sesame paste'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hummus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из какого плода делают гуакамоле?",
+   "en": "Which fruit is guacamole made from?"
+  },
+  "options": [
+   {
+    "ru": "Из киви",
+    "en": "Kiwi"
+   },
+   {
+    "ru": "Из крыжовника",
+    "en": "Gooseberry"
+   },
+   {
+    "ru": "Из фейхоа",
+    "en": "Feijoa"
+   },
+   {
+    "ru": "Из авокадо",
+    "en": "Avocado"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Название досталось от ацтеков: на языке науатль «ауакамолли» значит «соус из авокадо».",
+   "en": "The name comes from the Aztecs: in Nahuatl, ahuacamolli means 'avocado sauce'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Guacamole"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что на самом деле означает слово «суши»?",
+   "en": "What does the word sushi actually refer to?"
+  },
+  "options": [
+   {
+    "ru": "Рис с уксусом",
+    "en": "Vinegared rice"
+   },
+   {
+    "ru": "Сырую рыбу",
+    "en": "Raw fish"
+   },
+   {
+    "ru": "Морские водоросли",
+    "en": "Seaweed"
+   },
+   {
+    "ru": "Острый соус",
+    "en": "A spicy sauce"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Когда-то рыбу заквашивали в рисе, чтобы не портилась, а сырая рыба сама по себе называется сашими.",
+   "en": "Fish was once preserved by fermenting it in rice; raw fish on its own is called sashimi."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sushi"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где появился предок французского круассана?",
+   "en": "Where did the French croissant's ancestor come from?"
+  },
+  "options": [
+   {
+    "ru": "В Австрии",
+    "en": "Austria"
+   },
+   {
+    "ru": "В Бельгии",
+    "en": "Belgium"
+   },
+   {
+    "ru": "В Италии",
+    "en": "Italy"
+   },
+   {
+    "ru": "В Турции",
+    "en": "Turkey"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это венский рогалик кипферль: в 1830-х его привёз в Париж австриец Август Цанг.",
+   "en": "It is the Viennese kipferl, brought to Paris in the 1830s by the Austrian baker August Zang."
+  },
+  "source": "https://en.wikipedia.org/wiki/Croissant"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь кого назван салат «Цезарь»?",
+   "en": "Who is Caesar salad named after?"
+  },
+  "options": [
+   {
+    "ru": "Пса по кличке Цезарь",
+    "en": "A dog called Caesar"
+   },
+   {
+    "ru": "Ресторатора Цезаря Кардини",
+    "en": "Restaurateur Caesar Cardini"
+   },
+   {
+    "ru": "Юлия Цезаря",
+    "en": "Julius Caesar"
+   },
+   {
+    "ru": "Отеля «Цезарь-палас»",
+    "en": "The Caesars Palace hotel"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Кардини придумал его в 1924 году в мексиканской Тихуане, когда на кухне почти ничего не осталось.",
+   "en": "Cardini made it up in 1924 in Tijuana, Mexico, when a holiday rush had nearly emptied his kitchen."
+  },
+  "source": "https://en.wikipedia.org/wiki/Caesar_salad"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего чаще всего делают «васаби» в ресторанах за пределами Японии?",
+   "en": "Outside Japan, what is most restaurant 'wasabi' really made of?"
+  },
+  "options": [
+   {
+    "ru": "Авокадо с перцем",
+    "en": "Avocado and pepper"
+   },
+   {
+    "ru": "Хрен с горчицей и красителем",
+    "en": "Horseradish, mustard and dye"
+   },
+   {
+    "ru": "Зелёный перец чили",
+    "en": "Green chilli"
+   },
+   {
+    "ru": "Тёртый корень васаби",
+    "en": "Grated wasabi root"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Настоящий васаби капризен, растёт годами, лучше всего в холодных ручьях, и стоит дорого, поэтому его заменяет родственник — хрен.",
+   "en": "Real wasabi is fussy, takes years to grow, does best in cold streams and costs a lot, so its cousin horseradish stands in."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wasabi"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По поварской байке, сто складок на колпаке шефа — это сто способов приготовить…",
+   "en": "Kitchen lore says the 100 pleats on a chef's hat stand for 100 ways to cook…"
+  },
+  "options": [
+   {
+    "ru": "Рис",
+    "en": "Rice"
+   },
+   {
+    "ru": "Картофель",
+    "en": "A potato"
+   },
+   {
+    "ru": "Курицу",
+    "en": "A chicken"
+   },
+   {
+    "ru": "Яйцо",
+    "en": "An egg"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Во французских кухнях складки будто бы показывали, сколько рецептов освоил повар, так что сотня означала мастера.",
+   "en": "In French kitchens the pleats were said to show how many recipes a cook had mastered, so a hundred marked a master."
+  },
+  "source": "https://www.mentalfloss.com/article/610217/fascinating-reason-there-are-100-folds-chefs-hat"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Гвоздика, которую кладут в маринад, — это сушёные…",
+   "en": "The cloves in a marinade are dried…"
+  },
+  "options": [
+   {
+    "ru": "Бутоны цветков",
+    "en": "Flower buds"
+   },
+   {
+    "ru": "Ягоды",
+    "en": "Berries"
+   },
+   {
+    "ru": "Семена",
+    "en": "Seeds"
+   },
+   {
+    "ru": "Корешки",
+    "en": "Roots"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бутоны похожи на маленькие гвозди, отсюда и название, а цветок гвоздику так назвали за похожий запах.",
+   "en": "The buds look like little nails (Latin clavus); the carnation's Russian name, gvozdika, comes from its clove-like smell."
+  },
+  "source": "https://en.wikipedia.org/wiki/Clove"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем чёрный перец горошком отличается от белого?",
+   "en": "How do black peppercorns differ from white ones?"
+  },
+  "options": [
+   {
+    "ru": "Это разные растения",
+    "en": "They come from different plants"
+   },
+   {
+    "ru": "Это одни ягоды, но обработаны иначе",
+    "en": "Same berries, processed differently"
+   },
+   {
+    "ru": "Белый — это молотый корень",
+    "en": "White is the ground root"
+   },
+   {
+    "ru": "Белый — это недозрелый чёрный",
+    "en": "White is unripe black"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Чёрный перец — недозрелые ягоды, высушенные целиком, а белый — зрелые, с которых сняли кожицу.",
+   "en": "Black pepper is unripe berries dried whole; white pepper is ripe ones with the skin taken off."
+  },
+  "source": "https://en.wikipedia.org/wiki/Black_pepper"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какие орехи кладут в классический генуэзский соус песто?",
+   "en": "Which nuts go into classic Genoese pesto?"
+  },
+  "options": [
+   {
+    "ru": "Фундук",
+    "en": "Hazelnuts"
+   },
+   {
+    "ru": "Грецкие орехи",
+    "en": "Walnuts"
+   },
+   {
+    "ru": "Миндаль",
+    "en": "Almonds"
+   },
+   {
+    "ru": "Кедровые орешки",
+    "en": "Pine nuts"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Название от итальянского pestare — «толочь»: соус растирают в ступке вместе с базиликом и сыром.",
+   "en": "The name comes from the Italian pestare, to pound: it is crushed in a mortar with basil and cheese."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pesto"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Слово «пельмени» пришло из коми и удмуртского языков. Что оно значит?",
+   "en": "The word pelmeni comes from the Komi and Udmurt languages. What does it mean?"
+  },
+  "options": [
+   {
+    "ru": "Медвежья лапа",
+    "en": "Bear's paw"
+   },
+   {
+    "ru": "Хлебное ухо",
+    "en": "Bread ear"
+   },
+   {
+    "ru": "Снежный ком",
+    "en": "Snowball"
+   },
+   {
+    "ru": "Мясной мешочек",
+    "en": "Meat pouch"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Пельмени и правда похожи на ушки: вместе с блюдом русские переняли у народов Урала и само слово.",
+   "en": "Pelmeni do look like little ears: Russians took both the dish and its name from the peoples of the Urals."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pelmeni"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1908 году японский химик открыл вкус умами. Где он его нашёл?",
+   "en": "In 1908 a Japanese chemist discovered the umami taste. Where did he find it?"
+  },
+  "options": [
+   {
+    "ru": "В варёном рисе",
+    "en": "Boiled rice"
+   },
+   {
+    "ru": "В бульоне из водорослей комбу",
+    "en": "Kombu seaweed broth"
+   },
+   {
+    "ru": "В зелёном чае",
+    "en": "Green tea"
+   },
+   {
+    "ru": "В васаби",
+    "en": "Wasabi"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Кикунаэ Икэда выяснил, что этот вкус даёт глутамат, и запатентовал приправу — глутамат натрия.",
+   "en": "Kikunae Ikeda found that the taste comes from glutamate and patented a seasoning: monosodium glutamate."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kikunae_Ikeda"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто открыл первый ресторан «Макдоналдс»?",
+   "en": "Who opened the first McDonald's restaurant?"
+  },
+  "options": [
+   {
+    "ru": "Уолт Дисней",
+    "en": "Walt Disney"
+   },
+   {
+    "ru": "Рэй Крок",
+    "en": "Ray Kroc"
+   },
+   {
+    "ru": "Клоун Рональд Макдональд",
+    "en": "Ronald McDonald the clown"
+   },
+   {
+    "ru": "Братья Макдональд",
+    "en": "The McDonald brothers"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Рэй Крок продавал братьям миксеры для молочных коктейлей, а в 1961 году выкупил у них всю компанию.",
+   "en": "Ray Kroc sold the brothers milkshake mixers, and in 1961 he bought the whole company from them."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_McDonald%27s"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько трав и специй в «секретном рецепте» полковника Сандерса из KFC?",
+   "en": "How many herbs and spices are in Colonel Sanders' secret KFC recipe?"
+  },
+  "options": [
+   {
+    "ru": "11",
+    "en": "11"
+   },
+   {
+    "ru": "3",
+    "en": "3"
+   },
+   {
+    "ru": "21",
+    "en": "21"
+   },
+   {
+    "ru": "7",
+    "en": "7"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Полковник» — почётное звание штата Кентукки: в армии Сандерс служил рядовым.",
+   "en": "Colonel was an honorary Kentucky title: in the army Sanders served as a private."
+  },
+  "source": "https://en.wikipedia.org/wiki/Colonel_Sanders"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где придумали «гавайскую» пиццу с ананасами?",
+   "en": "Where was Hawaiian pizza with pineapple invented?"
+  },
+  "options": [
+   {
+    "ru": "В Канаде",
+    "en": "Canada"
+   },
+   {
+    "ru": "На Гавайях",
+    "en": "Hawaii"
+   },
+   {
+    "ru": "В Италии",
+    "en": "Italy"
+   },
+   {
+    "ru": "В Австралии",
+    "en": "Australia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1962 году грек Сэм Панопулос испёк её в Онтарио и назвал по марке консервированных ананасов.",
+   "en": "In 1962 Greek-born Sam Panopoulos made it in Ontario and named it after the brand of canned pineapple."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hawaiian_pizza"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране изобрели лапшу быстрого приготовления?",
+   "en": "In which country were instant noodles invented?"
+  },
+  "options": [
+   {
+    "ru": "В Южной Корее",
+    "en": "South Korea"
+   },
+   {
+    "ru": "В Китае",
+    "en": "China"
+   },
+   {
+    "ru": "В США",
+    "en": "The USA"
+   },
+   {
+    "ru": "В Японии",
+    "en": "Japan"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Момофуку Андо придумал обжаривать варёную лапшу в масле, чтобы она высохла, а позже добавил и стаканчик.",
+   "en": "Momofuku Ando flash-fried cooked noodles in oil to dry them, and later he added the cup."
+  },
+  "source": "https://en.wikipedia.org/wiki/Momofuku_Ando"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "С какой пастой в самой Болонье едят мясной соус болоньезе?",
+   "en": "In Bologna itself, which pasta is bolognese sauce served with?"
+  },
+  "options": [
+   {
+    "ru": "Со спагетти",
+    "en": "Spaghetti"
+   },
+   {
+    "ru": "С тальятелле",
+    "en": "Tagliatelle"
+   },
+   {
+    "ru": "С макаронами-рожками",
+    "en": "Elbow macaroni"
+   },
+   {
+    "ru": "С равиоли",
+    "en": "Ravioli"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Широкая плоская лапша лучше держит густое рагу, а спагетти болоньезе прославились уже за границей.",
+   "en": "Wide flat ribbons hold the thick ragù better; spaghetti bolognese made its name abroad."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bolognese_sauce"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чего НЕТ в классической римской карбонаре?",
+   "en": "What is NOT in a classic Roman carbonara?"
+  },
+  "options": [
+   {
+    "ru": "Свиной щеки",
+    "en": "Cured pork cheek"
+   },
+   {
+    "ru": "Яиц",
+    "en": "Eggs"
+   },
+   {
+    "ru": "Сыра пекорино",
+    "en": "Pecorino cheese"
+   },
+   {
+    "ru": "Сливок",
+    "en": "Cream"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Кремовой её делают желтки и тёртый сыр, смешанные с горячей пастой и капелькой воды от варки.",
+   "en": "Its creaminess comes from yolks and grated cheese tossed with the hot pasta and a splash of its water."
+  },
+  "source": "https://en.wikipedia.org/wiki/Carbonara"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как переводится с итальянского «тирамису»?",
+   "en": "What does tiramisu mean in Italian?"
+  },
+  "options": [
+   {
+    "ru": "«Взбодри меня»",
+    "en": "'Pick me up'"
+   },
+   {
+    "ru": "«Облачко»",
+    "en": "'Little cloud'"
+   },
+   {
+    "ru": "«Сладкий сон»",
+    "en": "'Sweet dream'"
+   },
+   {
+    "ru": "«Мамин торт»",
+    "en": "'Mum's cake'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кофе и какао и правда бодрят, а сам десерт молод: Тревизо и Фриули до сих пор спорят, кто его придумал.",
+   "en": "Coffee and cocoa do perk you up; the dessert itself is young, and Treviso and Friuli still argue over who invented it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tiramisu"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Отчего на жареном мясе и хлебе появляется румяная корочка?",
+   "en": "What gives fried meat and baked bread their brown crust?"
+  },
+  "options": [
+   {
+    "ru": "Мясо окисляется на воздухе",
+    "en": "Air oxidises the surface"
+   },
+   {
+    "ru": "Подгорает масло",
+    "en": "The oil burns"
+   },
+   {
+    "ru": "Сахара реагируют с белками",
+    "en": "Sugars react with proteins"
+   },
+   {
+    "ru": "Наружу выступает соль",
+    "en": "Salt comes to the surface"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Это реакция Майяра, её описал французский химик в 1912 году; быстро она идёт примерно со 140 °C.",
+   "en": "It is the Maillard reaction, described by a French chemist in 1912; it gets going fast at about 140 °C."
+  },
+  "source": "https://en.wikipedia.org/wiki/Maillard_reaction"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Мороженое пломбир названо в честь…",
+   "en": "Plombir ice cream is named after…"
+  },
+  "options": [
+   {
+    "ru": "Свинцовой пломбы",
+    "en": "A lead seal"
+   },
+   {
+    "ru": "Кондитера Пломбье",
+    "en": "A confectioner called Plombier"
+   },
+   {
+    "ru": "Французского городка",
+    "en": "A French spa town"
+   },
+   {
+    "ru": "Зубной пломбы",
+    "en": "A dental filling"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Это курорт Пломбьер-ле-Бен в Вогезах, а у нас пломбиром зовут самое жирное мороженое — от 12% молочного жира.",
+   "en": "It is the spa town of Plombières-les-Bains; in Russia plombir means the richest ice cream, at least 12% milk fat."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Пломбир"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Десерт «Персик Мельба» назван в честь…",
+   "en": "Peach Melba is named after…"
+  },
+  "options": [
+   {
+    "ru": "Реки во Франции",
+    "en": "A river in France"
+   },
+   {
+    "ru": "Жены повара",
+    "en": "The chef's wife"
+   },
+   {
+    "ru": "Оперной певицы",
+    "en": "An opera singer"
+   },
+   {
+    "ru": "Скаковой лошади",
+    "en": "A racehorse"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Огюст Эскофье придумал его для Нелли Мельбы, а она взяла псевдоним в честь родного Мельбурна.",
+   "en": "Auguste Escoffier made it for Nellie Melba, who took her stage name from her home city of Melbourne."
+  },
+  "source": "https://en.wikipedia.org/wiki/Peach_Melba"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Острота перца с точки зрения науки — это какой вкус?",
+   "en": "To a scientist, what kind of taste is chilli heat?"
+  },
+  "options": [
+   {
+    "ru": "Кислый",
+    "en": "Sour"
+   },
+   {
+    "ru": "Солёный",
+    "en": "Salty"
+   },
+   {
+    "ru": "Не вкус, а сигнал боли",
+    "en": "Not a taste: a pain signal"
+   },
+   {
+    "ru": "Горький",
+    "en": "Bitter"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Капсаицин включает в языке те же датчики, что и горячая еда, — поэтому мозгу кажется, что во рту жарко.",
+   "en": "Capsaicin trips the same sensors in the tongue as hot food does, so the brain thinks your mouth is burning."
+  },
+  "source": "https://en.wikipedia.org/wiki/Capsaicin"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему в пасту, ставшую потом «Нутеллой», положили так много фундука?",
+   "en": "Why did the spread that became Nutella get so much hazelnut?"
+  },
+  "options": [
+   {
+    "ru": "После войны не хватало какао",
+    "en": "Cocoa was scarce after the war"
+   },
+   {
+    "ru": "Так требовал закон Италии",
+    "en": "Italian law required it"
+   },
+   {
+    "ru": "Фундук продлевал срок годности",
+    "en": "Hazelnut kept it fresh longer"
+   },
+   {
+    "ru": "Ради рекламного слогана",
+    "en": "For an advertising slogan"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1946 году Пьетро Ферреро из Пьемонта, края фундука, растянул дефицитное какао орехами; имя Nutella появилось в 1964-м.",
+   "en": "In 1946 Pietro Ferrero of Piedmont, hazelnut country, stretched scarce cocoa with nuts; the Nutella name came in 1964."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nutella"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая пряность — самая дорогая в мире?",
+   "en": "Which spice is the most expensive in the world?"
+  },
+  "options": [
+   {
+    "ru": "Кардамон",
+    "en": "Cardamom"
+   },
+   {
+    "ru": "Ваниль",
+    "en": "Vanilla"
+   },
+   {
+    "ru": "Корица",
+    "en": "Cinnamon"
+   },
+   {
+    "ru": "Шафран",
+    "en": "Saffron"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Это рыльца цветков крокуса, их собирают вручную: на килограмм уходит около 440 тысяч рылец.",
+   "en": "It is the stigmas of crocus flowers, picked by hand: about 440,000 of them go into one kilogram."
+  },
+  "source": "https://en.wikipedia.org/wiki/Saffron"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "При скольких градусах плавится какао-масло, из-за которого шоколад тает во рту?",
+   "en": "At what temperature does cocoa butter, which makes chocolate melt in the mouth, melt?"
+  },
+  "answer": 34,
+  "range": [
+   0,
+   120
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "Это почти температура тела: на полке плитка твёрдая, а на языке тает.",
+   "en": "That is close to body temperature: the bar stays hard on the shelf and melts on your tongue."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cocoa_butter"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько литров молока уходит на одну головку пармезана весом около 38 кг?",
+   "en": "How many litres of milk go into one wheel of Parmesan, about 38 kg?"
+  },
+  "answer": 550,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 150,
+  "unit": {
+   "ru": "литров",
+   "en": "litres"
+  },
+  "fact": {
+   "ru": "Из котла на 1100 литров получают две головки, а потом они зреют минимум год.",
+   "en": "A 1,100 litre vat makes two wheels, which then age for at least a year."
+  },
+  "source": "https://en.wikipedia.org/wiki/Parmigiano_Reggiano"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Как управлять страной, где столько сортов сыра?» — жаловался де Голль. Сколько сортов он назвал?",
+   "en": "'How can you govern a country with so many kinds of cheese?' de Gaulle asked. How many did he name?"
+  },
+  "answer": 246,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 2,
+  "tolerance": 60,
+  "unit": {
+   "ru": "сортов",
+   "en": "kinds"
+  },
+  "fact": {
+   "ru": "Фраза 1962 года ушла в народ, хотя на деле сортов сыра во Франции гораздо больше.",
+   "en": "The 1962 quip stuck, although France actually has far more cheeses than that."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_French_cheeses"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 2018 году учёные описали древнейший известный хлеб — обугленные крошки из Иордании. Сколько ему лет?",
+   "en": "In 2018 scientists reported the oldest known bread, charred crumbs from Jordan. How old is it?"
+  },
+  "answer": 14400,
+  "range": [
+   0,
+   50000
+  ],
+  "step": 100,
+  "tolerance": 5000,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Её испекли из диких злаков охотники-собиратели — примерно за 4000 лет до появления земледелия.",
+   "en": "Hunter-gatherers baked it from wild cereals, about 4,000 years before farming began."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flatbread"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До скольких градусов по правилам неаполитанских пиццайоло раскаляют дровяную печь?",
+   "en": "How hot must the wood-fired oven be for true Neapolitan pizza, by the official rules?"
+  },
+  "answer": 485,
+  "range": [
+   100,
+   1500
+  ],
+  "step": 5,
+  "tolerance": 100,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "Пицца печётся в ней всего 60–90 секунд, а домашняя духовка обычно не греет выше 250 °C.",
+   "en": "The pizza bakes in just 60 to 90 seconds; a home oven rarely goes above 250 °C."
+  },
+  "source": "https://en.wikipedia.org/wiki/Neapolitan_pizza"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До скольких градусов надо нагреть обычный сахар, чтобы он начал превращаться в карамель?",
+   "en": "How hot must ordinary sugar get before it starts turning into caramel?"
+  },
+  "answer": 170,
+  "range": [
+   50,
+   500
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "Фруктоза карамелизуется уже при 105 °C, поэтому мёд и фрукты подрумяниваются быстрее.",
+   "en": "Fructose caramelises at just 105 °C, which is why honey and fruit brown faster."
+  },
+  "source": "https://en.wikipedia.org/wiki/Caramelization"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько литров кленового сока выпаривают, чтобы получить литр кленового сиропа?",
+   "en": "How many litres of maple sap are boiled down to make one litre of maple syrup?"
+  },
+  "answer": 40,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "литров",
+   "en": "litres"
+  },
+  "fact": {
+   "ru": "Сахара в соке клёна всего 2–5%, остальное вода, и почти всю её приходится выпарить.",
+   "en": "Maple sap is only 2 to 5% sugar and the rest is water, almost all of which has to be boiled off."
+  },
+  "source": "https://en.wikipedia.org/wiki/Maple_syrup"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году вышло первое издание книги Елены Молоховец «Подарок молодым хозяйкам»?",
+   "en": "In what year did Elena Molokhovets' cookbook 'A Gift to Young Housewives' first come out?"
+  },
+  "answer": 1861,
+  "range": [
+   1750,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "В первом издании было около 1500 рецептов, в издании 1904 года — больше 4000, а к 1917-му вышло уже 29 изданий.",
+   "en": "The first edition had about 1,500 recipes and the 1904 one over 4,000; by 1917 it had reached 29 editions."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Подарок_молодым_хозяйкам"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какой жирности был советский майонез «Провансаль»?",
+   "en": "How much fat was in Soviet Provansal mayonnaise?"
+  },
+  "answer": 67,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "процентов",
+   "en": "%"
+  },
+  "fact": {
+   "ru": "Две трети банки занимало растительное масло — поэтому «Провансаль» был таким густым и сытным.",
+   "en": "Two thirds of the jar was vegetable oil, which is why Provansal was so thick and rich."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Майонез"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году впервые начали продавать хлеб, нарезанный машиной на ломтики?",
+   "en": "In what year was machine-sliced bread first sold?"
+  },
+  "answer": 1928,
+  "range": [
+   1800,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Машину Отто Роведдера запустила пекарня в Миссури, и в английском до сих пор хвалят новинки «лучшее со времён нарезанного хлеба».",
+   "en": "A Missouri bakery first ran Otto Rohwedder's machine, and English still praises novelties as the best thing since sliced bread."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sliced_bread"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году в Японии открылся первый ресторан суши с конвейером?",
+   "en": "In what year did the first conveyor belt sushi restaurant open in Japan?"
+  },
+  "answer": 1958,
+  "range": [
+   1850,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Хозяину маленькой закусочной Ёсиаки Сираиси не хватало рук, и идею он подсмотрел на конвейере пивного завода.",
+   "en": "Short of staff in his small sushi bar, Yoshiaki Shiraishi got the idea from bottles on a brewery conveyor."
+  },
+  "source": "https://en.wikipedia.org/wiki/Conveyor_belt_sushi"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 2005 году в Китае откопали миску с древнейшей известной лапшой. Сколько ей лет?",
+   "en": "In 2005 a bowl holding the oldest known noodles was dug up in China. How old are they?"
+  },
+  "answer": 4000,
+  "range": [
+   0,
+   20000
+  ],
+  "step": 100,
+  "tolerance": 1000,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Перевёрнутую миску завалило трёхметровым слоем наносов, и под её донышком тонкая лапша уцелела.",
+   "en": "The bowl lay upside down under three metres of sediment, and the thin noodles survived underneath it."
+  },
+  "source": "https://www.nationalgeographic.com/history/article/4-000-year-old-noodles-found-in-china"
+ }
+]

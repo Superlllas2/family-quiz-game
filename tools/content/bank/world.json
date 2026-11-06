@@ -1,0 +1,1507 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая страна на карте похожа на сапог?",
+   "en": "Which country looks like a boot on the map?"
+  },
+  "options": [
+   {
+    "ru": "Италия",
+    "en": "Italy"
+   },
+   {
+    "ru": "Чили",
+    "en": "Chile"
+   },
+   {
+    "ru": "Норвегия",
+    "en": "Norway"
+   },
+   {
+    "ru": "Япония",
+    "en": "Japan"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Носок «сапога» будто пинает Сицилию, как мяч, а каблук — это полуостров Салентина.",
+   "en": "The boot's toe seems to kick Sicily like a ball, and its heel is the Salento peninsula."
+  },
+  "source": "https://en.wikipedia.org/wiki/Italy"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой огромный город стоит сразу в двух частях света?",
+   "en": "Which huge city lies on two continents at once?"
+  },
+  "options": [
+   {
+    "ru": "Каир",
+    "en": "Cairo"
+   },
+   {
+    "ru": "Стамбул",
+    "en": "Istanbul"
+   },
+   {
+    "ru": "Афины",
+    "en": "Athens"
+   },
+   {
+    "ru": "Тегеран",
+    "en": "Tehran"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Пролив Босфор делит Стамбул на европейскую и азиатскую части, и многие каждый день ездят на работу в другую часть света.",
+   "en": "The Bosphorus splits Istanbul into a European and an Asian side, so many people commute to another continent."
+  },
+  "source": "https://en.wikipedia.org/wiki/Istanbul"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая страна целиком помещается внутри одного города — Рима?",
+   "en": "Which country fits entirely inside one city, Rome?"
+  },
+  "options": [
+   {
+    "ru": "Монако",
+    "en": "Monaco"
+   },
+   {
+    "ru": "Сан-Марино",
+    "en": "San Marino"
+   },
+   {
+    "ru": "Ватикан",
+    "en": "Vatican City"
+   },
+   {
+    "ru": "Мальта",
+    "en": "Malta"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Ватикан меньше половины квадратного километра: его границу можно обойти пешком меньше чем за час.",
+   "en": "Vatican City is under half a square kilometre: you can walk its whole border in under an hour."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vatican_City"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Пересекая какую линию, путешественник «перепрыгивает» через целые сутки?",
+   "en": "Crossing which line makes a traveller jump a whole day?"
+  },
+  "options": [
+   {
+    "ru": "Экватор",
+    "en": "The equator"
+   },
+   {
+    "ru": "Нулевой меридиан",
+    "en": "The prime meridian"
+   },
+   {
+    "ru": "Линию перемены дат",
+    "en": "The International Date Line"
+   },
+   {
+    "ru": "Северный полярный круг",
+    "en": "The Arctic Circle"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Так моряки Магеллана и потеряли день: в 1522 году, обогнув Землю на запад, они узнали на островах Зелёного Мыса, что их календарь отстал на сутки.",
+   "en": "Magellan's crew found this out in 1522: stopping at Cape Verde after sailing west round the world, they found their log a day behind."
+  },
+  "source": "https://en.wikipedia.org/wiki/International_Date_Line"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая страна названа в честь линии, которая через неё проходит?",
+   "en": "Which country is named after a line that runs through it?"
+  },
+  "options": [
+   {
+    "ru": "Эквадор",
+    "en": "Ecuador"
+   },
+   {
+    "ru": "Колумбия",
+    "en": "Colombia"
+   },
+   {
+    "ru": "Аргентина",
+    "en": "Argentina"
+   },
+   {
+    "ru": "Гондурас",
+    "en": "Honduras"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ecuador по-испански значит «экватор»: он проходит в паре десятков километров от столицы Кито.",
+   "en": "Ecuador is simply Spanish for 'equator', which passes a few dozen kilometres from the capital, Quito."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ecuador"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Вершина Эвереста лежит на границе Непала и какой страны?",
+   "en": "The summit of Everest sits on the border of Nepal and which country?"
+  },
+  "options": [
+   {
+    "ru": "Китая",
+    "en": "China"
+   },
+   {
+    "ru": "Индии",
+    "en": "India"
+   },
+   {
+    "ru": "Бутана",
+    "en": "Bhutan"
+   },
+   {
+    "ru": "Пакистана",
+    "en": "Pakistan"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Граница проходит прямо по макушке горы: на вершину можно подняться и с непальской стороны, и из Тибета.",
+   "en": "The border runs right over the top, so climbers reach the summit both from Nepal and from Tibet in China."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mount_Everest"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая страна — самая большая в мире из тех, что целиком состоят из островов?",
+   "en": "Which is the largest country in the world made up entirely of islands?"
+  },
+  "options": [
+   {
+    "ru": "Индонезия",
+    "en": "Indonesia"
+   },
+   {
+    "ru": "Япония",
+    "en": "Japan"
+   },
+   {
+    "ru": "Филиппины",
+    "en": "The Philippines"
+   },
+   {
+    "ru": "Великобритания",
+    "en": "The United Kingdom"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тысячи её островов растянулись с запада на восток на 5120 км — это дальше, чем от Лиссабона до Москвы.",
+   "en": "Its thousands of islands stretch 5,120 km from west to east, further than from Lisbon to Moscow."
+  },
+  "source": "https://en.wikipedia.org/wiki/Indonesia"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Крошечное Монако с трёх сторон окружено какой страной?",
+   "en": "Tiny Monaco is surrounded on three sides by which country?"
+  },
+  "options": [
+   {
+    "ru": "Францией",
+    "en": "France"
+   },
+   {
+    "ru": "Италией",
+    "en": "Italy"
+   },
+   {
+    "ru": "Испанией",
+    "en": "Spain"
+   },
+   {
+    "ru": "Швейцарией",
+    "en": "Switzerland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Монако — самая густонаселённая страна мира: вся она меньше московского парка Сокольники.",
+   "en": "Monaco is the most densely populated country on Earth, and smaller than New York's Central Park."
+  },
+  "source": "https://en.wikipedia.org/wiki/Monaco"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Ниагарский водопад стоит на границе США и какой страны?",
+   "en": "Niagara Falls sit on the border of the USA and which country?"
+  },
+  "options": [
+   {
+    "ru": "Канады",
+    "en": "Canada"
+   },
+   {
+    "ru": "Мексики",
+    "en": "Mexico"
+   },
+   {
+    "ru": "Кубы",
+    "en": "Cuba"
+   },
+   {
+    "ru": "Гренландии",
+    "en": "Greenland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Самый большой из трёх водопадов, «Подкова», почти целиком канадский, поэтому лучший вид на Ниагару — из Канады.",
+   "en": "The biggest of its three falls, the Horseshoe, is mostly Canadian, which is why the best view is from Canada."
+  },
+  "source": "https://en.wikipedia.org/wiki/Niagara_Falls"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На каком континенте нет ни одной страны и никто не живёт постоянно?",
+   "en": "Which continent has no countries and no permanent residents?"
+  },
+  "options": [
+   {
+    "ru": "Антарктида",
+    "en": "Antarctica"
+   },
+   {
+    "ru": "Австралия",
+    "en": "Australia"
+   },
+   {
+    "ru": "Арктика",
+    "en": "The Arctic"
+   },
+   {
+    "ru": "Гренландия",
+    "en": "Greenland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По договору 1959 года Антарктида принадлежит науке: на станциях живут лишь сменяющиеся полярники.",
+   "en": "Under a 1959 treaty Antarctica is kept for science; only rotating crews of researchers live there."
+  },
+  "source": "https://en.wikipedia.org/wiki/Antarctic_Treaty_System"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "С какой страной Аляска соседствует через Берингов пролив?",
+   "en": "Across the Bering Strait, which country is Alaska's neighbour?"
+  },
+  "options": [
+   {
+    "ru": "С Россией",
+    "en": "Russia"
+   },
+   {
+    "ru": "С Японией",
+    "en": "Japan"
+   },
+   {
+    "ru": "С Канадой",
+    "en": "Canada"
+   },
+   {
+    "ru": "С Китаем",
+    "en": "China"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Острова Ратманова (Россия) и Крузенштерна (США) разделяют 3,8 км, но на часах между ними почти сутки.",
+   "en": "Russia's Big Diomede and America's Little Diomede are 3.8 km apart, yet their clocks are almost a day apart."
+  },
+  "source": "https://en.wikipedia.org/wiki/Diomede_Islands"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Большая часть территории России в Азии. А где живёт большинство россиян?",
+   "en": "Most of Russia's land is in Asia. Where do most Russians live?"
+  },
+  "options": [
+   {
+    "ru": "В европейской части",
+    "en": "In the European part"
+   },
+   {
+    "ru": "В азиатской части",
+    "en": "In the Asian part"
+   },
+   {
+    "ru": "Поровну",
+    "en": "Half and half"
+   },
+   {
+    "ru": "На Дальнем Востоке",
+    "en": "In the Far East"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Европейская часть — меньше четверти площади страны, но в ней живут около 80% россиян.",
+   "en": "The European part is under a quarter of the land but holds about 80% of the people."
+  },
+  "source": "https://en.wikipedia.org/wiki/European_Russia"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие два океана соединяет Панамский канал?",
+   "en": "Which two oceans does the Panama Canal join?"
+  },
+  "options": [
+   {
+    "ru": "Атлантический и Тихий",
+    "en": "Atlantic and Pacific"
+   },
+   {
+    "ru": "Индийский и Тихий",
+    "en": "Indian and Pacific"
+   },
+   {
+    "ru": "Атлантический и Индийский",
+    "en": "Atlantic and Indian"
+   },
+   {
+    "ru": "Северный Ледовитый и Тихий",
+    "en": "Arctic and Pacific"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Из-за изгиба перешейка суда идут по каналу с Атлантики на Тихий океан не на запад, а на юго-восток.",
+   "en": "The isthmus bends so much that ships going from the Atlantic to the Pacific actually head south east."
+  },
+  "source": "https://en.wikipedia.org/wiki/Panama_Canal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая страна занимает целый материк?",
+   "en": "Which country covers a whole continent?"
+  },
+  "options": [
+   {
+    "ru": "Австралия",
+    "en": "Australia"
+   },
+   {
+    "ru": "Гренландия",
+    "en": "Greenland"
+   },
+   {
+    "ru": "Мадагаскар",
+    "en": "Madagascar"
+   },
+   {
+    "ru": "Новая Зеландия",
+    "en": "New Zealand"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Австралия — самый маленький материк, но шестая по площади страна: больше неё только Россия, Канада, Китай, США и Бразилия.",
+   "en": "Australia is the smallest continent but the sixth largest country; only Russia, Canada, China, the US and Brazil are bigger."
+  },
+  "source": "https://en.wikipedia.org/wiki/Australia"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой огромный остров лежит у юго-восточного берега Африки?",
+   "en": "Which huge island lies off the south east coast of Africa?"
+  },
+  "options": [
+   {
+    "ru": "Мадагаскар",
+    "en": "Madagascar"
+   },
+   {
+    "ru": "Шри-Ланка",
+    "en": "Sri Lanka"
+   },
+   {
+    "ru": "Сицилия",
+    "en": "Sicily"
+   },
+   {
+    "ru": "Тасмания",
+    "en": "Tasmania"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мадагаскар откололся от Индии около 90 миллионов лет назад, поэтому больше 90% его зверей и растений нигде больше не встречаются.",
+   "en": "Madagascar split from India about 90 million years ago, so over 90% of its wildlife lives nowhere else."
+  },
+  "source": "https://en.wikipedia.org/wiki/Madagascar"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "У какой страны больше всего часовых поясов, если считать её заморские земли?",
+   "en": "Which country has the most time zones, counting its overseas lands?"
+  },
+  "options": [
+   {
+    "ru": "Россия",
+    "en": "Russia"
+   },
+   {
+    "ru": "США",
+    "en": "USA"
+   },
+   {
+    "ru": "Великобритания",
+    "en": "United Kingdom"
+   },
+   {
+    "ru": "Франция",
+    "en": "France"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Острова от Карибского моря до Полинезии дают Франции 12 часовых поясов — у России их 11.",
+   "en": "Islands from the Caribbean to Polynesia give France 12 time zones; Russia has 11."
+  },
+  "source": "https://en.wikipedia.org/wiki/Time_in_France"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране больше всего озёр крупнее 10 гектаров?",
+   "en": "Which country has the most lakes larger than 10 hectares?"
+  },
+  "options": [
+   {
+    "ru": "Финляндия",
+    "en": "Finland"
+   },
+   {
+    "ru": "Россия",
+    "en": "Russia"
+   },
+   {
+    "ru": "Канада",
+    "en": "Canada"
+   },
+   {
+    "ru": "Швеция",
+    "en": "Sweden"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Около 880 тысяч, вырытых ледниками, — больше, чем во всех остальных странах вместе; у России, второй в списке, около 200 тысяч.",
+   "en": "About 880,000, carved by ice age glaciers: more than the rest of the world combined. Runner up Russia has about 200,000."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_lakes_of_Canada"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая река протекает через десять стран или по их границам?",
+   "en": "Which river flows through or along the borders of ten countries?"
+  },
+  "options": [
+   {
+    "ru": "Рейн",
+    "en": "Rhine"
+   },
+   {
+    "ru": "Волга",
+    "en": "Volga"
+   },
+   {
+    "ru": "Меконг",
+    "en": "Mekong"
+   },
+   {
+    "ru": "Дунай",
+    "en": "Danube"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Дунай течёт от Германии до Чёрного моря мимо четырёх столиц: Вены, Братиславы, Будапешта и Белграда.",
+   "en": "The Danube runs from Germany to the Black Sea past four capitals: Vienna, Bratislava, Budapest and Belgrade."
+  },
+  "source": "https://en.wikipedia.org/wiki/Danube"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая столица — самая южная в мире?",
+   "en": "Which is the southernmost capital in the world?"
+  },
+  "options": [
+   {
+    "ru": "Веллингтон",
+    "en": "Wellington"
+   },
+   {
+    "ru": "Канберра",
+    "en": "Canberra"
+   },
+   {
+    "ru": "Буэнос-Айрес",
+    "en": "Buenos Aires"
+   },
+   {
+    "ru": "Монтевидео",
+    "en": "Montevideo"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Новозеландский Веллингтон лежит на 41-й параллели и считается одной из самых ветреных столиц мира.",
+   "en": "New Zealand's Wellington lies at 41 degrees south and is known as one of the windiest capitals on Earth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wellington"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чтобы из этой страны добраться до океана, нужно пересечь минимум две границы. Что это за страна?",
+   "en": "To reach the ocean from this country you must cross at least two borders. Which is it?"
+  },
+  "options": [
+   {
+    "ru": "Узбекистан",
+    "en": "Uzbekistan"
+   },
+   {
+    "ru": "Казахстан",
+    "en": "Kazakhstan"
+   },
+   {
+    "ru": "Монголия",
+    "en": "Mongolia"
+   },
+   {
+    "ru": "Швейцария",
+    "en": "Switzerland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Все соседи Узбекистана тоже без выхода к океану; таких «дважды сухопутных» стран в мире всего две — ещё Лихтенштейн.",
+   "en": "Uzbekistan's neighbours are all landlocked too; the only other 'doubly landlocked' country is Liechtenstein."
+  },
+  "source": "https://en.wikipedia.org/wiki/Landlocked_country"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В городке Барле граница проходит прямо через дома и кафе. Каких двух стран?",
+   "en": "In the town of Baarle the border runs through houses and cafés. Between which two countries?"
+  },
+  "options": [
+   {
+    "ru": "Бельгии и Нидерландов",
+    "en": "Belgium and the Netherlands"
+   },
+   {
+    "ru": "Франции и Испании",
+    "en": "France and Spain"
+   },
+   {
+    "ru": "Германии и Австрии",
+    "en": "Germany and Austria"
+   },
+   {
+    "ru": "Швеции и Норвегии",
+    "en": "Sweden and Norway"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Там больше двадцати бельгийских анклавов внутри Нидерландов, а у одного дома граница делит пополам входную дверь.",
+   "en": "Over twenty Belgian enclaves sit inside the Netherlands there, and one house has the border through its front door."
+  },
+  "source": "https://en.wikipedia.org/wiki/Baarle-Hertog"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько часовых поясов официально использует огромный Китай?",
+   "en": "How many time zones does vast China officially use?"
+  },
+  "options": [
+   {
+    "ru": "Один",
+    "en": "One"
+   },
+   {
+    "ru": "Три",
+    "en": "Three"
+   },
+   {
+    "ru": "Пять",
+    "en": "Five"
+   },
+   {
+    "ru": "Семь",
+    "en": "Seven"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вся страна живёт по пекинскому времени, поэтому на западе Китая зимой солнце встаёт около десяти утра.",
+   "en": "The whole country runs on Beijing time, so in China's far west the winter sun rises around 10 am."
+  },
+  "source": "https://en.wikipedia.org/wiki/Time_in_China"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что шире: Австралия с запада на восток или Луна?",
+   "en": "Which is wider: Australia from west to east, or the Moon?"
+  },
+  "options": [
+   {
+    "ru": "Австралия",
+    "en": "Australia"
+   },
+   {
+    "ru": "Луна, чуть-чуть",
+    "en": "The Moon, just"
+   },
+   {
+    "ru": "Луна, вдвое",
+    "en": "The Moon, twice over"
+   },
+   {
+    "ru": "Они ровно одинаковые",
+    "en": "Exactly the same"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Австралия тянется почти на 4000 км, а диаметр Луны — около 3475 км. Но по площади Луна, конечно, в разы больше.",
+   "en": "Australia spans almost 4,000 km; the Moon is about 3,475 km across. By area, though, the Moon is far bigger."
+  },
+  "source": "https://www.snopes.com/fact-check/australia-wider-than-earths-moon/"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая страна первой в мире встречает Новый год?",
+   "en": "Which country is the first in the world to see in the New Year?"
+  },
+  "options": [
+   {
+    "ru": "Кирибати",
+    "en": "Kiribati"
+   },
+   {
+    "ru": "Новая Зеландия",
+    "en": "New Zealand"
+   },
+   {
+    "ru": "Япония",
+    "en": "Japan"
+   },
+   {
+    "ru": "Россия",
+    "en": "Russia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1995 году Кирибати сдвинуло линию перемены дат, и её острова Лайн живут по UTC+14 — самому раннему времени на Земле.",
+   "en": "In 1995 Kiribati moved the date line, putting its Line Islands on UTC+14, the earliest clock on Earth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Line_Islands"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2011 году Самоа перепрыгнуло через линию перемены дат. Какой день там так и не наступил?",
+   "en": "In 2011 Samoa jumped across the date line. Which day never happened there?"
+  },
+  "options": [
+   {
+    "ru": "30 декабря",
+    "en": "30 December"
+   },
+   {
+    "ru": "31 декабря",
+    "en": "31 December"
+   },
+   {
+    "ru": "1 января",
+    "en": "1 January"
+   },
+   {
+    "ru": "29 февраля",
+    "en": "29 February"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "После четверга сразу наступила суббота: Самоа хотело работать в одни дни с Австралией и Новой Зеландией.",
+   "en": "Thursday was followed by Saturday: Samoa wanted the same working week as Australia and New Zealand."
+  },
+  "source": "https://en.wikipedia.org/wiki/Time_in_Samoa"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "С какими двумя странами граничит Калининградская область?",
+   "en": "Which two countries border Russia's Kaliningrad region?"
+  },
+  "options": [
+   {
+    "ru": "Польша и Литва",
+    "en": "Poland and Lithuania"
+   },
+   {
+    "ru": "Латвия и Белоруссия",
+    "en": "Latvia and Belarus"
+   },
+   {
+    "ru": "Польша и Белоруссия",
+    "en": "Poland and Belarus"
+   },
+   {
+    "ru": "Литва и Латвия",
+    "en": "Lithuania and Latvia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это эксклав: по суше из него в остальную Россию не попасть, не проехав через две другие страны.",
+   "en": "It is an exclave: by land you cannot reach the rest of Russia from it without crossing two other countries."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kaliningrad_Oblast"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто порой оказывается ближе всех к точке Немо — самому удалённому от суши месту океана?",
+   "en": "Who are sometimes the closest people to Point Nemo, the ocean spot farthest from land?"
+  },
+  "options": [
+   {
+    "ru": "Космонавты на МКС",
+    "en": "Astronauts on the ISS"
+   },
+   {
+    "ru": "Смотрители маяка",
+    "en": "Lighthouse keepers"
+   },
+   {
+    "ru": "Полярники Антарктиды",
+    "en": "Antarctic scientists"
+   },
+   {
+    "ru": "Жители острова Пасхи",
+    "en": "Easter Islanders"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До ближайшей суши оттуда около 2700 км, а МКС пролетает над головой на высоте примерно 400 км.",
+   "en": "The nearest land is about 2,700 km away, while the ISS passes overhead only about 400 km up."
+  },
+  "source": "https://en.wikipedia.org/wiki/Point_Nemo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое место считается самым удалённым обитаемым островом на свете?",
+   "en": "Which place is considered the most remote inhabited island in the world?"
+  },
+  "options": [
+   {
+    "ru": "Тристан-да-Кунья",
+    "en": "Tristan da Cunha"
+   },
+   {
+    "ru": "Азорские острова",
+    "en": "The Azores"
+   },
+   {
+    "ru": "Фарерские острова",
+    "en": "The Faroe Islands"
+   },
+   {
+    "ru": "Канарские острова",
+    "en": "The Canary Islands"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Аэропорта там нет: из Кейптауна к острову около 2800 км, это примерно шесть дней на корабле.",
+   "en": "There is no airport: the island is about 2,800 km from Cape Town, roughly six days by ship."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tristan_da_Cunha"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Канада и Дания полвека спорили из-за островка Ханс. Чем всё кончилось в 2022 году?",
+   "en": "Canada and Denmark argued over tiny Hans Island for 50 years. How did it end in 2022?"
+  },
+  "options": [
+   {
+    "ru": "Остров поделили пополам",
+    "en": "They split it in two"
+   },
+   {
+    "ru": "Канада его купила",
+    "en": "Canada bought it"
+   },
+   {
+    "ru": "Остров ушёл под воду",
+    "en": "The island sank"
+   },
+   {
+    "ru": "Его разыграли в хоккей",
+    "en": "They played hockey for it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Десятилетиями стороны в шутку оставляли там друг другу виски и шнапс, а теперь у Канады и Дании есть сухопутная граница.",
+   "en": "For decades each side left the other whisky or schnapps there; now Canada and Denmark share a land border."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hans_Island",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Остров Фазанов на реке меняет хозяина каждые полгода. Между какими странами?",
+   "en": "Pheasant Island in a river changes hands every six months. Between which two countries?"
+  },
+  "options": [
+   {
+    "ru": "Францией и Испанией",
+    "en": "France and Spain"
+   },
+   {
+    "ru": "Испанией и Португалией",
+    "en": "Spain and Portugal"
+   },
+   {
+    "ru": "Францией и Италией",
+    "en": "France and Italy"
+   },
+   {
+    "ru": "Германией и Швейцарией",
+    "en": "Germany and Switzerland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С февраля по июль островом правит Испания, с августа по январь — Франция; в 1659 году там подписали Пиренейский мир.",
+   "en": "Spain runs it from February to July, France from August to January; the 1659 Treaty of the Pyrenees was signed there."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pheasant_Island"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Бир-Тавиль — земля, которую не хочет ни одна страна. Между какими странами она лежит?",
+   "en": "Bir Tawil is land no country wants. Which two countries does it lie between?"
+  },
+  "options": [
+   {
+    "ru": "Египтом и Суданом",
+    "en": "Egypt and Sudan"
+   },
+   {
+    "ru": "Чадом и Ливией",
+    "en": "Chad and Libya"
+   },
+   {
+    "ru": "Кенией и Эфиопией",
+    "en": "Kenya and Ethiopia"
+   },
+   {
+    "ru": "Мали и Нигером",
+    "en": "Mali and Niger"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Взяв Бир-Тавиль, страна признала бы чужую версию границы и лишилась бы соседнего, куда более ценного треугольника Халаиб.",
+   "en": "Claiming it would mean accepting the other's border line and losing the far richer Halaib Triangle next door."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bir_Tawil"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая страна — самая большая в мире, где нет ни одной постоянной реки?",
+   "en": "Which is the largest country in the world with no permanent river?"
+  },
+  "options": [
+   {
+    "ru": "Саудовская Аравия",
+    "en": "Saudi Arabia"
+   },
+   {
+    "ru": "Египет",
+    "en": "Egypt"
+   },
+   {
+    "ru": "Монголия",
+    "en": "Mongolia"
+   },
+   {
+    "ru": "Австралия",
+    "en": "Australia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вместо рек там вади — сухие русла, которые наполняются лишь после редких ливней; пресную воду в основном дают опреснители.",
+   "en": "It has only wadis, dry beds that fill after rare storms; most drinking water comes from desalination plants."
+  },
+  "source": "https://www.worldatlas.com/articles/countries-without-rivers.html"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая столица — самая холодная в мире по средней годовой температуре?",
+   "en": "Which capital is the coldest in the world on average over the year?"
+  },
+  "options": [
+   {
+    "ru": "Улан-Батор",
+    "en": "Ulaanbaatar"
+   },
+   {
+    "ru": "Рейкьявик",
+    "en": "Reykjavik"
+   },
+   {
+    "ru": "Хельсинки",
+    "en": "Helsinki"
+   },
+   {
+    "ru": "Москва",
+    "en": "Moscow"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Средняя за год в Улан-Баторе около нуля: город стоит на высоте 1350 метров посреди материка, вдали от тёплых морей.",
+   "en": "Ulaanbaatar averages about 0 °C a year: it sits 1,350 m up in the middle of a continent, far from any warm sea."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ulaanbaatar"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Шотландская деревня Dull («Скучная») породнилась с городком в США. Как он называется?",
+   "en": "The Scottish village of Dull is twinned with an American town. What is it called?"
+  },
+  "options": [
+   {
+    "ru": "Boring («Занудный»)",
+    "en": "Boring"
+   },
+   {
+    "ru": "Sleepy («Сонный»)",
+    "en": "Sleepy"
+   },
+   {
+    "ru": "Yawn («Зевок»)",
+    "en": "Yawn"
+   },
+   {
+    "ru": "Tedium («Тоска»)",
+    "en": "Tedium"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 2013 года к Dull и Boring присоединился австралийский округ Bland («Пресный»): вместе это «Лига необычных общин».",
+   "en": "Since 2013 Dull and Boring have been joined by Bland in Australia in a 'League of Extraordinary Communities'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dull,_Perth_and_Kinross"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Полное название какой столицы — самое длинное название места в мире?",
+   "en": "Which capital's full name is the longest place name in the world?"
+  },
+  "options": [
+   {
+    "ru": "Бангкок",
+    "en": "Bangkok"
+   },
+   {
+    "ru": "Катманду",
+    "en": "Kathmandu"
+   },
+   {
+    "ru": "Антананариву",
+    "en": "Antananarivo"
+   },
+   {
+    "ru": "Рейкьявик",
+    "en": "Reykjavik"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сами тайцы зовут город Крунг Тхеп, «город ангелов», а целиком его церемониальное имя — 168 букв.",
+   "en": "Thais call it Krung Thep, 'city of angels'; its full ceremonial name runs to 168 letters."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bangkok"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где на самом деле южная оконечность Африки?",
+   "en": "Where is the real southern tip of Africa?"
+  },
+  "options": [
+   {
+    "ru": "Мыс Игольный",
+    "en": "Cape Agulhas"
+   },
+   {
+    "ru": "Мыс Доброй Надежды",
+    "en": "Cape of Good Hope"
+   },
+   {
+    "ru": "Мыс Горн",
+    "en": "Cape Horn"
+   },
+   {
+    "ru": "Мыс Гвардафуй",
+    "en": "Cape Guardafui"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мыс Доброй Надежды знаменитее, но Игольный лежит южнее, и именно там условно встречаются Атлантический и Индийский океаны.",
+   "en": "The Cape of Good Hope is more famous, but Agulhas lies further south and marks where the Atlantic meets the Indian Ocean."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cape_Agulhas"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране есть настоящий город Батман?",
+   "en": "Which country has a real city called Batman?"
+  },
+  "options": [
+   {
+    "ru": "В Турции",
+    "en": "Turkey"
+   },
+   {
+    "ru": "В Бразилии",
+    "en": "Brazil"
+   },
+   {
+    "ru": "В Индии",
+    "en": "India"
+   },
+   {
+    "ru": "В Норвегии",
+    "en": "Norway"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Деревня Илух стала городом Батман лишь в 1957 году — позже героя комиксов, но назвали её в честь местной реки Батман.",
+   "en": "The village of Iluh became the city of Batman only in 1957, later than the comic hero, but its name comes from the local Batman River."
+  },
+  "source": "https://en.wikipedia.org/wiki/Batman,_Turkey"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Мадрид почти на одной долготе с Лондоном. А по какому времени живут его часы?",
+   "en": "Madrid is almost level with London on the map. Whose time do its clocks follow?"
+  },
+  "options": [
+   {
+    "ru": "Как в Берлине и Париже",
+    "en": "Berlin and Paris time"
+   },
+   {
+    "ru": "Как в Лондоне",
+    "en": "London time"
+   },
+   {
+    "ru": "Как в Москве",
+    "en": "Moscow time"
+   },
+   {
+    "ru": "Своё, мадридское",
+    "en": "Its own Madrid time"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1940 году Франко перевёл часы на время Германии; многие считают, что поэтому испанцы обедают в два, а ужинают в десять.",
+   "en": "In 1940 Franco set clocks to Germany's time, which many say is why Spaniards lunch at two and dine at ten."
+  },
+  "source": "https://en.wikipedia.org/wiki/Time_in_Spain"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько знаков в самом длинном названии деревни Великобритании, Llanfair…gogogoch?",
+   "en": "How many characters are in Britain's longest village name, Llanfair…gogogoch?"
+  },
+  "answer": 58,
+  "range": [
+   10,
+   150
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "знаков",
+   "en": "characters"
+  },
+  "fact": {
+   "ru": "58 знаков, но в валлийском ll и ch — одна буква, так что местные насчитают 51; имя удлинили в XIX веке, чтобы завлечь туристов.",
+   "en": "58 characters, but Welsh counts ll and ch as one letter each, making 51; the name was stretched in the 1800s to draw tourists."
+  },
+  "source": "https://en.wikipedia.org/wiki/Llanfairpwllgwyngyll"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Со сколькими государствами Россия граничит по суше?",
+   "en": "How many countries does Russia share a land border with?"
+  },
+  "answer": 14,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "стран",
+   "en": "countries"
+  },
+  "fact": {
+   "ru": "От Норвегии до Северной Кореи: у России столько же сухопутных соседей, сколько у Китая, — больше, чем у любой другой страны.",
+   "en": "From Norway to North Korea: Russia ties with China for the most land neighbours of any country."
+  },
+  "source": "https://en.wikipedia.org/wiki/Borders_of_Russia"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На какой высоте над морем стоит перуанский посёлок Ла-Ринконада, самый высокогорный город мира?",
+   "en": "How high above sea level is La Rinconada in Peru, the world's highest town?"
+  },
+  "answer": 5000,
+  "range": [
+   0,
+   8000
+  ],
+  "step": 50,
+  "tolerance": 600,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Тысячи людей живут там ради золотых приисков, хотя кислорода в воздухе почти вдвое меньше, чем у моря.",
+   "en": "Thousands live there for the gold mines, though the air holds about half the oxygen it does at sea level."
+  },
+  "source": "https://en.wikipedia.org/wiki/La_Rinconada,_Peru"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какова длина Чили с севера на юг, в километрах?",
+   "en": "How long is Chile from north to south, in kilometres?"
+  },
+  "answer": 4300,
+  "range": [
+   0,
+   12000
+  ],
+  "step": 100,
+  "tolerance": 1000,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "При этом в самом широком месте Чили всего 350 км: на севере пустыня Атакама, на юге ледники и фьорды.",
+   "en": "Yet Chile is only 350 km across at its widest, with the Atacama Desert in the north and glaciers in the south."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chile"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году нулевой меридиан официально провели через Гринвич?",
+   "en": "In what year was the prime meridian officially set through Greenwich?"
+  },
+  "answer": 1884,
+  "range": [
+   1600,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Так решила конференция в Вашингтоне; Франция воздержалась и ещё десятилетиями отсчитывала долготу от Парижа.",
+   "en": "A conference in Washington chose it; France abstained and kept measuring longitude from Paris for decades."
+  },
+  "source": "https://en.wikipedia.org/wiki/International_Meridian_Conference"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какова ширина Гибралтарского пролива между Европой и Африкой в самом узком месте, в километрах?",
+   "en": "How wide is the Strait of Gibraltar between Europe and Africa at its narrowest, in km?"
+  },
+  "answer": 14,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Около 14 км: в ясный день из Испании видны горы Марокко, а паром пересекает пролив меньше чем за час.",
+   "en": "About 14 km: on a clear day you can see Morocco's mountains from Spain, and ferries cross in under an hour."
+  },
+  "source": "https://en.wikipedia.org/wiki/Strait_of_Gibraltar"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На какой северной широте лежит Лонгйир, главный город Шпицбергена?",
+   "en": "At what northern latitude lies Longyearbyen, the main town of Svalbard?"
+  },
+  "answer": 78,
+  "range": [
+   30,
+   90
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "° с. ш.",
+   "en": "° N"
+  },
+  "fact": {
+   "ru": "До Северного полюса оттуда около 1300 км, а полярная ночь длится там почти четыре месяца.",
+   "en": "The North Pole is only about 1,300 km away, and the polar night there lasts almost four months."
+  },
+  "source": "https://en.wikipedia.org/wiki/Longyearbyen"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Через сушу скольких стран проходит экватор?",
+   "en": "Through the land of how many countries does the equator pass?"
+  },
+  "answer": 11,
+  "range": [
+   0,
+   50
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "стран",
+   "en": "countries"
+  },
+  "fact": {
+   "ru": "Семь из них в Африке, три в Южной Америке и одна в Азии — Индонезия; ещё три страны он пересекает только по воде.",
+   "en": "Seven are in Africa, three in South America and one, Indonesia, in Asia; it crosses three more only by sea."
+  },
+  "source": "https://en.wikipedia.org/wiki/Equator"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какую долю всей суши Земли занимает Россия, в процентах?",
+   "en": "What share of all the Earth's land does Russia cover, in percent?"
+  },
+  "answer": 11,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "Около 11%: 17 миллионов квадратных километров России — почти как вся поверхность Плутона.",
+   "en": "About 11%: Russia's 17 million square kilometres are almost exactly the whole surface area of Pluto."
+  },
+  "source": "https://en.wikipedia.org/wiki/Russia"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какова длина границы Канады и США — самой длинной границы между двумя странами, в километрах?",
+   "en": "How long is the Canada and US border, the longest between any two countries, in kilometres?"
+  },
+  "answer": 8900,
+  "range": [
+   0,
+   30000
+  ],
+  "step": 100,
+  "tolerance": 2500,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "8891 км вместе с границей Аляски; на большом отрезке она идёт по ровной линии 49-й параллели.",
+   "en": "8,891 km counting Alaska's border; a long stretch simply follows the straight line of the 49th parallel."
+  },
+  "source": "https://en.wikipedia.org/wiki/Canada%E2%80%93United_States_border"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Лесото — страна в горах, где даже самая низкая точка высоко. Насколько, в метрах?",
+   "en": "Lesotho is so mountainous that even its lowest point is high up. How high, in metres?"
+  },
+  "answer": 1400,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 50,
+  "tolerance": 400,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Это самая высокая «низшая точка» среди всех стран: Лесото — единственное государство целиком выше 1000 метров.",
+   "en": "No country has a higher lowest point: Lesotho is the only state that lies entirely above 1,000 metres."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lesotho"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Из скольких коралловых островов состоят Мальдивы?",
+   "en": "How many coral islands make up the Maldives?"
+  },
+  "answer": 1190,
+  "range": [
+   0,
+   6000
+  ],
+  "step": 10,
+  "tolerance": 400,
+  "unit": {
+   "ru": "островов",
+   "en": "islands"
+  },
+  "fact": {
+   "ru": "1192 острова в 26 атоллах, а самая высокая точка страны — всего 2,4 метра: это самая низменная страна мира.",
+   "en": "1,192 islands in 26 atolls, and the highest point is just 2.4 metres: the lowest lying country on Earth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Maldives"
+ }
+]

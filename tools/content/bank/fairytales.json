@@ -1,0 +1,1512 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько гномов дружили с Белоснежкой?",
+   "en": "How many dwarfs were friends with Snow White?"
+  },
+  "options": [
+   {
+    "ru": "Пять",
+    "en": "Five"
+   },
+   {
+    "ru": "Шесть",
+    "en": "Six"
+   },
+   {
+    "ru": "Семь",
+    "en": "Seven"
+   },
+   {
+    "ru": "Двенадцать",
+    "en": "Twelve"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "У Пушкина в похожей «Сказке о мёртвой царевне» вместо гномов семь богатырей.",
+   "en": "In Pushkin's similar Tale of the Dead Princess, the seven dwarfs are seven knights."
+  },
+  "source": "https://en.wikipedia.org/wiki/Snow_White"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что потеряла Золушка на балу?",
+   "en": "What did Cinderella lose at the ball?"
+  },
+  "options": [
+   {
+    "ru": "Корону",
+    "en": "Her crown"
+   },
+   {
+    "ru": "Перчатку",
+    "en": "A glove"
+   },
+   {
+    "ru": "Туфельку",
+    "en": "A slipper"
+   },
+   {
+    "ru": "Тыкву",
+    "en": "The pumpkin"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "У Перро туфелька хрустальная, а у братьев Гримм — золотая.",
+   "en": "In Perrault the slipper is glass; in the Brothers Grimm it is gold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cinderella"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто в конце концов съел Колобка?",
+   "en": "Who finally ate Kolobok, the runaway round bun?"
+  },
+  "options": [
+   {
+    "ru": "Заяц",
+    "en": "The hare"
+   },
+   {
+    "ru": "Волк",
+    "en": "The wolf"
+   },
+   {
+    "ru": "Медведь",
+    "en": "The bear"
+   },
+   {
+    "ru": "Лиса",
+    "en": "The fox"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "У англичан есть почти та же сказка — «Пряничный человечек», и его тоже съедает лиса.",
+   "en": "The English Gingerbread Man is nearly the same tale, and a fox eats him too."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kolobok"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие ядра были в орешках белки в «Сказке о царе Салтане»?",
+   "en": "In Pushkin's Tsar Saltan, what were the kernels of the squirrel's nuts?"
+  },
+  "options": [
+   {
+    "ru": "Чистый изумруд",
+    "en": "Pure emerald"
+   },
+   {
+    "ru": "Жемчуг",
+    "en": "Pearl"
+   },
+   {
+    "ru": "Чистое золото",
+    "en": "Pure gold"
+   },
+   {
+    "ru": "Янтарь",
+    "en": "Amber"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Белку поселили в хрустальном доме под охраной, а дьяк вёл строгий счёт орехам.",
+   "en": "The squirrel lived in a crystal house under guard, and a clerk kept strict count of the nuts."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Сказка_о_царе_Салтане"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как зовут мальчика, лучшего друга Винни-Пуха?",
+   "en": "What is the name of Winnie the Pooh's best friend, the boy?"
+  },
+  "options": [
+   {
+    "ru": "Кристофер Робин",
+    "en": "Christopher Robin"
+   },
+   {
+    "ru": "Питер Пэн",
+    "en": "Peter Pan"
+   },
+   {
+    "ru": "Том Сойер",
+    "en": "Tom Sawyer"
+   },
+   {
+    "ru": "Оливер Твист",
+    "en": "Oliver Twist"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это настоящий сын автора, Алана Милна, а Пух списан с его плюшевого мишки.",
+   "en": "He was A. A. Milne's real son, and Pooh was based on the boy's own teddy bear."
+  },
+  "source": "https://en.wikipedia.org/wiki/Christopher_Robin_Milne"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где у Карлсона кнопка, которая запускает пропеллер?",
+   "en": "Where is the button that starts Carlson's propeller?"
+  },
+  "options": [
+   {
+    "ru": "На животе",
+    "en": "On his tummy"
+   },
+   {
+    "ru": "На шапке",
+    "en": "On his cap"
+   },
+   {
+    "ru": "На носу",
+    "en": "On his nose"
+   },
+   {
+    "ru": "За ухом",
+    "en": "Behind his ear"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сам себя он скромно зовёт красивым, умным и в меру упитанным мужчиной в самом расцвете сил.",
+   "en": "He modestly calls himself a handsome, thoroughly clever, perfectly plump man in his prime."
+  },
+  "source": "https://en.wikipedia.org/wiki/Karlsson-on-the-Roof"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "За кем Алиса прыгнула в кроличью нору?",
+   "en": "Whom did Alice follow down the rabbit hole?"
+  },
+  "options": [
+   {
+    "ru": "За Белым Кроликом",
+    "en": "The White Rabbit"
+   },
+   {
+    "ru": "За Чеширским Котом",
+    "en": "The Cheshire Cat"
+   },
+   {
+    "ru": "За Мартовским Зайцем",
+    "en": "The March Hare"
+   },
+   {
+    "ru": "За Шляпником",
+    "en": "The Hatter"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Первая рукописная версия, подарок настоящей Алисе Лидделл, называлась «Приключения Алисы под землёй».",
+   "en": "Carroll's first handwritten version, a gift to the real Alice Liddell, was called Alice's Adventures Under Ground."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alice_Liddell"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что черепаха Тортила подарила Буратино?",
+   "en": "What did Tortila the tortoise give Buratino?"
+  },
+  "options": [
+   {
+    "ru": "Золотой ключик",
+    "en": "A golden key"
+   },
+   {
+    "ru": "Золотые монеты",
+    "en": "Gold coins"
+   },
+   {
+    "ru": "Волшебную шапку",
+    "en": "A magic hat"
+   },
+   {
+    "ru": "Карту сокровищ",
+    "en": "A treasure map"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ключик когда-то уронил к ней в пруд сам Карабас-Барабас.",
+   "en": "Karabas-Barabas himself had once dropped the key into her pond."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Golden_Key,_or_the_Adventures_of_Buratino"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На чём Емеля приехал к царю «по щучьему веленью»?",
+   "en": "What did Emelya ride to the tsar's palace, by the pike's command?"
+  },
+  "options": [
+   {
+    "ru": "На печи",
+    "en": "On the stove"
+   },
+   {
+    "ru": "На ковре-самолёте",
+    "en": "On a flying carpet"
+   },
+   {
+    "ru": "На медведе",
+    "en": "On a bear"
+   },
+   {
+    "ru": "На сером волке",
+    "en": "On a grey wolf"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У Афанасьева царь потом заколачивает Емелю с царевной в бочку и бросает в море.",
+   "en": "In Afanasyev's version the tsar later seals Emelya and the princess in a barrel and throws it into the sea."
+  },
+  "source": "https://ru.wikipedia.org/wiki/По_щучьему_велению"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Обо что укололась Спящая красавица?",
+   "en": "What did Sleeping Beauty prick her finger on?"
+  },
+  "options": [
+   {
+    "ru": "О веретено",
+    "en": "A spindle"
+   },
+   {
+    "ru": "Об иглу",
+    "en": "A needle"
+   },
+   {
+    "ru": "О шип розы",
+    "en": "A rose thorn"
+   },
+   {
+    "ru": "О ножницы",
+    "en": "Scissors"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Король велел уничтожить все веретёна, но одно нашлось у старушки, которая не слышала о запрете.",
+   "en": "The king banned every spindle, but one old woman in a tower had never heard of the ban."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sleeping_Beauty"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где спрятана смерть Кощея Бессмертного?",
+   "en": "Where is the death of Koschei the Deathless hidden?"
+  },
+  "options": [
+   {
+    "ru": "На конце иглы",
+    "en": "At the tip of a needle"
+   },
+   {
+    "ru": "В его мече",
+    "en": "In his sword"
+   },
+   {
+    "ru": "В перстне",
+    "en": "In a ring"
+   },
+   {
+    "ru": "В бороде",
+    "en": "In his beard"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Игла — в яйце, яйцо — в утке, утка — в зайце, заяц — в сундуке, а сундук — на дубе.",
+   "en": "The needle is in an egg, in a duck, in a hare, in a chest, and the chest hangs on an oak."
+  },
+  "source": "https://ru.wikisource.org/wiki/Народные_русские_сказки_(Афанасьев)/Царевна-лягушка"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто первым крикнул, что король-то голый?",
+   "en": "Who first called out that the emperor had no clothes on?"
+  },
+  "options": [
+   {
+    "ru": "Ребёнок",
+    "en": "A child"
+   },
+   {
+    "ru": "Шут",
+    "en": "The jester"
+   },
+   {
+    "ru": "Королева",
+    "en": "The empress"
+   },
+   {
+    "ru": "Портной",
+    "en": "A tailor"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Андерсен переписал финал, когда рукопись уже была в типографии: сначала все просто хвалили наряд.",
+   "en": "Andersen changed the ending when the manuscript was already at the printer's; at first everyone just praised the clothes."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Emperor%27s_New_Clothes"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что попало Каю в глаз и в сердце в «Снежной королеве»?",
+   "en": "What got into Kai's eye and heart in The Snow Queen?"
+  },
+  "options": [
+   {
+    "ru": "Осколки злого зеркала",
+    "en": "Splinters of an evil mirror"
+   },
+   {
+    "ru": "Снежинки",
+    "en": "Snowflakes"
+   },
+   {
+    "ru": "Искры из камина",
+    "en": "Sparks from the fire"
+   },
+   {
+    "ru": "Песок",
+    "en": "Sand"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Зеркало смастерил злой тролль: всё доброе и красивое в нём выглядело уродливым.",
+   "en": "A wicked troll made the mirror: everything good and lovely looked ugly in it."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Snow_Queen"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из-за чего Иван-царевич потерял Царевну-лягушку?",
+   "en": "Why did Ivan Tsarevich lose the Frog Princess?"
+  },
+  "options": [
+   {
+    "ru": "Сжёг её лягушачью кожу",
+    "en": "He burned her frog skin"
+   },
+   {
+    "ru": "Выдал её тайну отцу",
+    "en": "He told his father her secret"
+   },
+   {
+    "ru": "Не поцеловал её",
+    "en": "He never kissed her"
+   },
+   {
+    "ru": "Посмеялся над ней",
+    "en": "He laughed at her"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Отец заколдовал её на три года, а Иван не дождался совсем немного: «Я бы вечно была твоею».",
+   "en": "Her father had cursed her for three years; had Ivan waited a little longer, she would have been his forever."
+  },
+  "source": "https://ru.wikisource.org/wiki/Народные_русские_сказки_(Афанасьев)/Царевна-лягушка"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что спрашивал Морозко у девушки в зимнем лесу?",
+   "en": "What did Morozko, Father Frost, keep asking the girl in the winter forest?"
+  },
+  "options": [
+   {
+    "ru": "«Тепло ли тебе, девица?»",
+    "en": "\"Are you warm, maiden?\""
+   },
+   {
+    "ru": "«Не страшно ли тебе?»",
+    "en": "\"Are you afraid?\""
+   },
+   {
+    "ru": "«Не голодна ли ты?»",
+    "en": "\"Are you hungry?\""
+   },
+   {
+    "ru": "«Кто тебя сюда привёл?»",
+    "en": "\"Who brought you here?\""
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Падчерица мёрзла, но вежливо отвечала «Тепло, батюшка» и получила шубу и приданое; грубиянка замёрзла.",
+   "en": "The freezing stepdaughter politely said she was warm and got furs and a dowry; the rude stepsister froze."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Морозко_(сказка)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая сказка Пушкина начинается словами «Жил старик со своею старухой…»?",
+   "en": "Which Pushkin tale starts: \"There lived an old man and his old wife...\"?"
+  },
+  "options": [
+   {
+    "ru": "О царе Салтане",
+    "en": "Tsar Saltan"
+   },
+   {
+    "ru": "О золотом петушке",
+    "en": "The Golden Cockerel"
+   },
+   {
+    "ru": "О рыбаке и рыбке",
+    "en": "The Fisherman and the Fish"
+   },
+   {
+    "ru": "О попе и Балде",
+    "en": "The Priest and Balda"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Старуха начала с нового корыта, а кончила тем же разбитым корытом.",
+   "en": "The old wife began by asking for a new washtub and ended with the same broken one."
+  },
+  "source": "https://ru.wikisource.org/wiki/Сказка_о_рыбаке_и_рыбке_(Пушкин)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем по профессии был автор «Алисы в Стране чудес»?",
+   "en": "What did the author of Alice in Wonderland do for a living?"
+  },
+  "options": [
+   {
+    "ru": "Математиком",
+    "en": "A mathematician"
+   },
+   {
+    "ru": "Поваром",
+    "en": "A cook"
+   },
+   {
+    "ru": "Капитаном корабля",
+    "en": "A ship's captain"
+   },
+   {
+    "ru": "Шляпником",
+    "en": "A hatter"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Льюис Кэрролл — псевдоним Чарльза Доджсона, преподавателя математики в Оксфорде.",
+   "en": "Lewis Carroll was the pen name of Charles Dodgson, a maths lecturer at Oxford."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lewis_Carroll"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как зовут итальянского «брата» Буратино?",
+   "en": "Who is Buratino's Italian original?"
+  },
+  "options": [
+   {
+    "ru": "Чиполлино",
+    "en": "Cipollino"
+   },
+   {
+    "ru": "Пиноккио",
+    "en": "Pinocchio"
+   },
+   {
+    "ru": "Джеппетто",
+    "en": "Geppetto"
+   },
+   {
+    "ru": "Карабас",
+    "en": "Karabas"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Алексей Толстой взялся переводить «Пиноккио», но написал свою сказку; burattino по-итальянски — «кукла».",
+   "en": "Alexei Tolstoy set out to translate Pinocchio but wrote his own tale; burattino is Italian for puppet."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Golden_Key,_or_the_Adventures_of_Buratino"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто спасает Красную Шапочку в сказке Шарля Перро?",
+   "en": "Who saves Little Red Riding Hood in Charles Perrault's tale?"
+  },
+  "options": [
+   {
+    "ru": "Охотник",
+    "en": "A huntsman"
+   },
+   {
+    "ru": "Дровосеки",
+    "en": "Woodcutters"
+   },
+   {
+    "ru": "Бабушка",
+    "en": "Her grandmother"
+   },
+   {
+    "ru": "Никто — волк её съел",
+    "en": "Nobody: the wolf eats her"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Перро закончил сказку моралью: девочкам стоит опасаться обходительных «волков».",
+   "en": "Perrault ended with a moral warning young girls about smooth-talking 'wolves'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Little_Red_Riding_Hood",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем были братья Гримм, помимо того что собирали сказки?",
+   "en": "Besides collecting fairy tales, what were the Brothers Grimm?"
+  },
+  "options": [
+   {
+    "ru": "Учёными-языковедами",
+    "en": "Language scholars"
+   },
+   {
+    "ru": "Врачами",
+    "en": "Doctors"
+   },
+   {
+    "ru": "Пасторами",
+    "en": "Pastors"
+   },
+   {
+    "ru": "Аптекарями",
+    "en": "Pharmacists"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Они начали огромный «Немецкий словарь», а закончили его другие учёные только в 1961 году.",
+   "en": "They began the huge German Dictionary, which other scholars only finished in 1961."
+  },
+  "source": "https://en.wikipedia.org/wiki/Brothers_Grimm"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Волков назвал Дороти в своём «Волшебнике Изумрудного города»?",
+   "en": "What did Volkov rename Dorothy in his Soviet version of The Wizard of Oz?"
+  },
+  "options": [
+   {
+    "ru": "Элли",
+    "en": "Ellie"
+   },
+   {
+    "ru": "Энни",
+    "en": "Annie"
+   },
+   {
+    "ru": "Мэри",
+    "en": "Mary"
+   },
+   {
+    "ru": "Люси",
+    "en": "Lucy"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Потом Волков написал ещё пять продолжений, уже со своими сюжетами, а не по Бауму.",
+   "en": "Volkov then wrote five sequels with plots of his own rather than Baum's."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Wizard_of_the_Emerald_City"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем кончается «Русалочка» у Андерсена?",
+   "en": "How does Andersen's The Little Mermaid end?"
+  },
+  "options": [
+   {
+    "ru": "Свадьбой с принцем",
+    "en": "She marries the prince"
+   },
+   {
+    "ru": "Она становится дочерью воздуха",
+    "en": "She becomes a daughter of the air"
+   },
+   {
+    "ru": "Она убивает принца",
+    "en": "She kills the prince"
+   },
+   {
+    "ru": "Она возвращается к отцу",
+    "en": "She goes home to her father"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Принц женится на другой, русалочка бросается в море, но не исчезает в пене, а поднимается к духам воздуха.",
+   "en": "The prince weds another; she throws herself into the sea, but instead of vanishing as foam she rises among the air spirits."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Little_Mermaid"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как сводные сёстры Золушки у братьев Гримм втиснулись в туфельку?",
+   "en": "In the Grimms' tale, how did Cinderella's stepsisters get into the slipper?"
+  },
+  "options": [
+   {
+    "ru": "Отрезали палец и пятку",
+    "en": "Cut off a toe and a heel"
+   },
+   {
+    "ru": "Намазали ноги маслом",
+    "en": "Greased their feet"
+   },
+   {
+    "ru": "Растянули её за ночь",
+    "en": "Stretched it overnight"
+   },
+   {
+    "ru": "Подкупили слугу принца",
+    "en": "Bribed the prince's servant"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Принц заметил обман, только когда два голубя пропели, что в башмачке кровь.",
+   "en": "The prince only noticed when two doves sang that there was blood in the shoe."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cinderella",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем Коллоди закончил «Пиноккио», когда печатал его в журнале в 1881 году?",
+   "en": "How did Collodi first end Pinocchio in the 1881 magazine serial?"
+  },
+  "options": [
+   {
+    "ru": "Его повесили на дубе",
+    "en": "He was hanged from an oak"
+   },
+   {
+    "ru": "Он стал мальчиком",
+    "en": "He became a real boy"
+   },
+   {
+    "ru": "Он сгорел в очаге",
+    "en": "He burned in the fireplace"
+   },
+   {
+    "ru": "Его проглотила акула",
+    "en": "A shark swallowed him"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Через четыре месяца читатели и редактор уговорили Коллоди продолжить, и Пиноккио спасла Фея.",
+   "en": "Four months later readers and the editor got Collodi to carry on, and the Fairy saved Pinocchio."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Adventures_of_Pinocchio",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь кого назвали Винни-Пуха?",
+   "en": "Who was Winnie the Pooh named after?"
+  },
+  "options": [
+   {
+    "ru": "Медведицы из Лондонского зоопарка",
+    "en": "A bear at London Zoo"
+   },
+   {
+    "ru": "Няни Кристофера Робина",
+    "en": "Christopher Robin's nanny"
+   },
+   {
+    "ru": "Жены Алана Милна",
+    "en": "A. A. Milne's wife"
+   },
+   {
+    "ru": "Скаковой лошади",
+    "en": "A racehorse"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Медвежонка привёз из Канады военный ветеринар и назвал в честь своего города Виннипега.",
+   "en": "A Canadian army vet brought the cub over and named her after his home city, Winnipeg."
+  },
+  "source": "https://en.wikipedia.org/wiki/Winnipeg_(bear)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какого ещё героя придумала автор «Карлсона»?",
+   "en": "Which other character did Carlson's author create?"
+  },
+  "options": [
+   {
+    "ru": "Пеппи Длинныйчулок",
+    "en": "Pippi Longstocking"
+   },
+   {
+    "ru": "Мэри Поппинс",
+    "en": "Mary Poppins"
+   },
+   {
+    "ru": "Нильса с дикими гусями",
+    "en": "Nils and the wild geese"
+   },
+   {
+    "ru": "Муми-тролля",
+    "en": "Moomintroll"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Астрид Линдгрен сочинила Пеппи для дочки Карин: та болела и сама придумала это имя.",
+   "en": "Astrid Lindgren made Pippi up for her daughter Karin, who was ill in bed and invented the name."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pippi_Longstocking"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Партией в какую игру устроен мир «Алисы в Зазеркалье»?",
+   "en": "In Through the Looking-Glass, the land is laid out as a game of what?"
+  },
+  "options": [
+   {
+    "ru": "Шахматы",
+    "en": "Chess"
+   },
+   {
+    "ru": "Карты",
+    "en": "Cards"
+   },
+   {
+    "ru": "Крокет",
+    "en": "Croquet"
+   },
+   {
+    "ru": "Шашки",
+    "en": "Draughts"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Алиса начинает белой пешкой и, дойдя до восьмой клетки, становится королевой.",
+   "en": "Alice starts as a white pawn and becomes a queen when she reaches the eighth square."
+  },
+  "source": "https://en.wikipedia.org/wiki/Through_the_Looking-Glass"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Английские шляпники XIX века и правда часто сходили с ума. Что их травило?",
+   "en": "Hatters in Carroll's England really did go mad. What poisoned them?"
+  },
+  "options": [
+   {
+    "ru": "Ртуть",
+    "en": "Mercury"
+   },
+   {
+    "ru": "Угольный дым",
+    "en": "Coal smoke"
+   },
+   {
+    "ru": "Крахмальная пыль",
+    "en": "Starch dust"
+   },
+   {
+    "ru": "Нюхательный табак",
+    "en": "Snuff"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ртутью обрабатывали мех для фетра, и её пары вызывали дрожь и странное поведение.",
+   "en": "Mercury was used to turn fur into felt, and its fumes caused tremors and odd behaviour."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mad_hatter_disease"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "У какого писателя Пушкин позаимствовал сюжет «Сказки о золотом петушке»?",
+   "en": "Whose story did Pushkin borrow for The Tale of the Golden Cockerel?"
+  },
+  "options": [
+   {
+    "ru": "Вашингтона Ирвинга",
+    "en": "Washington Irving"
+   },
+   {
+    "ru": "Братьев Гримм",
+    "en": "The Brothers Grimm"
+   },
+   {
+    "ru": "Шарля Перро",
+    "en": "Charles Perrault"
+   },
+   {
+    "ru": "Ганса Христиана Андерсена",
+    "en": "Hans Christian Andersen"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это выяснила Анна Ахматова: источник — «Легенда об арабском звездочёте» американца Ирвинга.",
+   "en": "Anna Akhmatova traced it to the American Irving's Legend of the Arabian Astrologer."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Tale_of_the_Golden_Cockerel"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто хотел погубить Белоснежку в самом первом издании сказок братьев Гримм?",
+   "en": "In the Grimms' very first edition, who wanted Snow White dead?"
+  },
+  "options": [
+   {
+    "ru": "Родная мать",
+    "en": "Her own mother"
+   },
+   {
+    "ru": "Мачеха",
+    "en": "Her stepmother"
+   },
+   {
+    "ru": "Старшая сестра",
+    "en": "Her elder sister"
+   },
+   {
+    "ru": "Тётка",
+    "en": "Her aunt"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В следующих изданиях Гриммы смягчили сказку и сделали злую королеву мачехой.",
+   "en": "In later editions the Grimms softened the tale and made the wicked queen a stepmother."
+  },
+  "source": "https://en.wikipedia.org/wiki/Snow_White",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Синяя Борода узнал, что жена открыла запретную комнату?",
+   "en": "How did Bluebeard learn his wife had opened the forbidden room?"
+  },
+  "options": [
+   {
+    "ru": "Кровь на ключе не отмывалась",
+    "en": "Blood on the key wouldn't wash off"
+   },
+   {
+    "ru": "Донесла служанка",
+    "en": "A maid told him"
+   },
+   {
+    "ru": "Дверь осталась открытой",
+    "en": "The door was left open"
+   },
+   {
+    "ru": "Его предупредил попугай",
+    "en": "A parrot told him"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ключ был волшебный: ототрёшь кровь с одной стороны — она проступает с другой.",
+   "en": "The key was enchanted: scrub the blood off one side and it came back on the other."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bluebeard",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что Пиноккио сделал с Говорящим Сверчком в книге Коллоди?",
+   "en": "What did Pinocchio do to the Talking Cricket in Collodi's book?"
+  },
+  "options": [
+   {
+    "ru": "Убил его молотком",
+    "en": "Killed him with a hammer"
+   },
+   {
+    "ru": "Взял с собой в кармане",
+    "en": "Carried him in his pocket"
+   },
+   {
+    "ru": "Посадил в спичечный коробок",
+    "en": "Shut him in a matchbox"
+   },
+   {
+    "ru": "Продал хозяину кукольного театра",
+    "en": "Sold him to the puppet master"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Потом сверчок являлся ему призраком, а Дисней сделал его совестью Пиноккио по имени Джимини.",
+   "en": "The cricket came back as a ghost, and Disney turned him into Jiminy, Pinocchio's conscience."
+  },
+  "source": "https://en.wikipedia.org/wiki/Talking_Cricket",
+  "kids": false
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто пересказал «Винни-Пуха» для советских детей?",
+   "en": "Who retold Winnie the Pooh in Russian for Soviet children?"
+  },
+  "options": [
+   {
+    "ru": "Борис Заходер",
+    "en": "Boris Zakhoder"
+   },
+   {
+    "ru": "Самуил Маршак",
+    "en": "Samuil Marshak"
+   },
+   {
+    "ru": "Корней Чуковский",
+    "en": "Korney Chukovsky"
+   },
+   {
+    "ru": "Сергей Михалков",
+    "en": "Sergey Mikhalkov"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Заходер называл книгу не переводом, а пересказом и сам придумал Пуху «шумелки» и «пыхтелки».",
+   "en": "Zakhoder called it a retelling, not a translation, and made up Pooh's famous Russian ditty names."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Винни-Пух"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой английский книжный герой стал прообразом доктора Айболита?",
+   "en": "Which English children's book doctor was the model for Doctor Aibolit?"
+  },
+  "options": [
+   {
+    "ru": "Доктор Дулиттл",
+    "en": "Doctor Dolittle"
+   },
+   {
+    "ru": "Доктор Ватсон",
+    "en": "Doctor Watson"
+   },
+   {
+    "ru": "Доктор Джекил",
+    "en": "Doctor Jekyll"
+   },
+   {
+    "ru": "Доктор Ливси",
+    "en": "Doctor Livesey"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "А ещё Чуковский говорил, что срисовал Айболита с живого человека — доброго виленского доктора Цемаха Шабада.",
+   "en": "Chukovsky also said Aibolit was drawn from a real man, Tsemakh Shabad, a kind doctor in Vilnius."
+  },
+  "source": "https://en.wikipedia.org/wiki/Doctor_Aybolit"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Добрались ли бременские музыканты до Бремена в сказке братьев Гримм?",
+   "en": "In the Grimms' tale, did the Town Musicians of Bremen ever reach Bremen?"
+  },
+  "options": [
+   {
+    "ru": "Нет, остались в доме разбойников",
+    "en": "No, they stayed in the robbers' house"
+   },
+   {
+    "ru": "Да, и стали городским оркестром",
+    "en": "Yes, and became the town band"
+   },
+   {
+    "ru": "Да, но их прогнали",
+    "en": "Yes, but they were chased out"
+   },
+   {
+    "ru": "Нет, вернулись к хозяевам",
+    "en": "No, they went back to their owners"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бремен их всё равно любит: в 1953 году им поставили памятник у городской ратуши.",
+   "en": "Bremen loves them anyway: in 1953 it put up a statue of them by the town hall."
+  },
+  "source": "https://en.wikipedia.org/wiki/Town_Musicians_of_Bremen"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько братьев-лебедей было у Элизы в «Диких лебедях» Андерсена?",
+   "en": "How many swan brothers did Eliza have in Andersen's The Wild Swans?"
+  },
+  "options": [
+   {
+    "ru": "Семь",
+    "en": "Seven"
+   },
+   {
+    "ru": "Одиннадцать",
+    "en": "Eleven"
+   },
+   {
+    "ru": "Двенадцать",
+    "en": "Twelve"
+   },
+   {
+    "ru": "Три",
+    "en": "Three"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Она молча вязала им рубашки из крапивы; у последней не хватило рукава, и младшему осталось крыло.",
+   "en": "She knitted them nettle shirts in silence; the last lacked a sleeve, so the youngest kept a wing."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Wild_Swans"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую плату попросил Балда у попа за год работы?",
+   "en": "What wage did Balda ask from the priest for a year's work?"
+  },
+  "options": [
+   {
+    "ru": "Три щелчка по лбу",
+    "en": "Three flicks on the forehead"
+   },
+   {
+    "ru": "Мешок муки",
+    "en": "A sack of flour"
+   },
+   {
+    "ru": "Корову",
+    "en": "A cow"
+   },
+   {
+    "ru": "Рубль серебром",
+    "en": "A silver rouble"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сказку напечатали только после смерти Пушкина, и Жуковский заменил попа на купца Кузьму Остолопа.",
+   "en": "It was printed only after Pushkin's death, and Zhukovsky turned the priest into a merchant."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Tale_of_the_Priest_and_of_His_Workman_Balda"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто в записи Афанасьева тянул репку следом за собакой?",
+   "en": "In Afanasyev's old record of The Turnip, who pulled after the dog?"
+  },
+  "options": [
+   {
+    "ru": "Кошка",
+    "en": "A cat"
+   },
+   {
+    "ru": "Мышка",
+    "en": "A mouse"
+   },
+   {
+    "ru": "Какие-то «ноги»",
+    "en": "Some mysterious 'legs'"
+   },
+   {
+    "ru": "Петух",
+    "en": "A rooster"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Кошки и мышки там нет: приходят какие-то «ноги», и только пятая нога вытягивает репку.",
+   "en": "There is no cat or mouse: mysterious 'legs' join in, and only the fifth leg pulls the turnip out."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Репка_(сказка)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году вышел первый том сказок братьев Гримм?",
+   "en": "In which year did the first volume of the Grimms' fairy tales come out?"
+  },
+  "answer": 1812,
+  "range": [
+   1750,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Многие сказки им рассказали не крестьяне, а знакомые из образованных семей Касселя.",
+   "en": "Many tales came not from peasants but from middle-class friends in Kassel."
+  },
+  "source": "https://en.wikipedia.org/wiki/Grimms%27_Fairy_Tales"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году Шарль Перро выпустил сборник с «Золушкой» и «Красной Шапочкой»?",
+   "en": "In which year did Charles Perrault publish his tales with Cinderella and Red Riding Hood?"
+  },
+  "answer": 1697,
+  "range": [
+   1500,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Перро выпустил «Сказки матушки Гусыни» под именем своего 19-летнего сына Пьера.",
+   "en": "Perrault put out the Mother Goose Tales under the name of his 19-year-old son Pierre."
+  },
+  "source": "https://en.wikipedia.org/wiki/Histoires_ou_contes_du_temps_pass%C3%A9"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году Пушкин написал «Сказку о царе Салтане»?",
+   "en": "In which year did Pushkin write The Tale of Tsar Saltan?"
+  },
+  "answer": 1831,
+  "range": [
+   1750,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Тем летом Пушкин и Жуковский устроили состязание сказок: Жуковский написал «Спящую царевну».",
+   "en": "That summer Pushkin and Zhukovsky held a fairy tale contest; Zhukovsky wrote The Sleeping Princess."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Tale_of_Tsar_Saltan"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году вышла первая книга Алана Милна о Винни-Пухе?",
+   "en": "In which year did A. A. Milne's first Winnie-the-Pooh book come out?"
+  },
+  "answer": 1926,
+  "range": [
+   1880,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Настоящие игрушки Кристофера Робина — Пух, Иа, Пятачок, Кенга и Тигра — хранятся в Нью-Йоркской публичной библиотеке.",
+   "en": "Christopher Robin's real toys, Pooh, Eeyore, Piglet, Kanga and Tigger, are kept at the New York Public Library."
+  },
+  "source": "https://en.wikipedia.org/wiki/Winnie-the-Pooh_(book)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году в Швеции вышла первая книга о Малыше и Карлсоне?",
+   "en": "In which year did the first Karlsson-on-the-Roof book come out in Sweden?"
+  },
+  "answer": 1955,
+  "range": [
+   1800,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Уже в 1957 году вышел русский перевод Лилианны Лунгиной — с него и началась советская любовь к Карлсону.",
+   "en": "Lilianna Lungina's Russian translation followed in 1957 and started the Soviet love for Karlsson."
+  },
+  "source": "https://en.wikipedia.org/wiki/Karlsson-on-the-Roof"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году Андерсен выпустил свою первую книжку сказок?",
+   "en": "In which year did Andersen publish his first booklet of fairy tales?"
+  },
+  "answer": 1835,
+  "range": [
+   1750,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Андерсену только что исполнилось 30, а в первой тонкой тетрадке было всего четыре сказки, среди них «Огниво».",
+   "en": "Andersen had just turned 30, and the thin first booklet held only four tales, The Tinderbox among them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection."
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет жили старик со старухой у синего моря в сказке Пушкина?",
+   "en": "In Pushkin's tale, how many years had the fisherman and his wife lived by the sea?"
+  },
+  "answer": 33,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "«Ровно тридцать лет и три года» — столько же Илья Муромец сидел сиднем: любимое число сказителей.",
+   "en": "Thirty years and three, as long as the hero Ilya Muromets sat idle: a storyteller's favourite number."
+  },
+  "source": "https://ru.wikisource.org/wiki/Сказка_о_рыбаке_и_рыбке_(Пушкин)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет живут русалки в сказке Андерсена?",
+   "en": "In Andersen's tale, how many years do mermaids live?"
+  },
+  "answer": 300,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 10,
+  "tolerance": 70,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Зато у русалок нет бессмертной души: когда они умирают, то становятся морской пеной.",
+   "en": "But mermaids have no immortal soul: when they die, they simply turn into sea foam."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Little_Mermaid"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько историй вошло в последнее прижизненное издание сказок братьев Гримм (1857)?",
+   "en": "How many stories were in the last Grimms' fairy tale edition of their lifetime (1857)?"
+  },
+  "answer": 210,
+  "range": [
+   50,
+   600
+  ],
+  "step": 5,
+  "tolerance": 40,
+  "unit": {
+   "ru": "историй",
+   "en": "stories"
+  },
+  "fact": {
+   "ru": "200 сказок и 10 «детских легенд», а в самом первом томе было всего 86.",
+   "en": "200 tales plus 10 children's legends; the very first volume had just 86."
+  },
+  "source": "https://en.wikipedia.org/wiki/Grimms%27_Fairy_Tales"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было настоящей Алисе Лидделл, когда Кэрролл впервые рассказал ей сказку?",
+   "en": "How old was the real Alice Liddell when Carroll first told her the story?"
+  },
+  "answer": 10,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Это было на лодочной прогулке 4 июля 1862 года; Алиса попросила записать сказку для неё.",
+   "en": "It was on a boat trip on 4 July 1862, and Alice asked him to write the story down for her."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alice_Liddell"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько тюфяков положили поверх горошины в «Принцессе на горошине»?",
+   "en": "In The Princess and the Pea, how many mattresses were piled on the pea?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "тюфяков",
+   "en": "mattresses"
+  },
+  "fact": {
+   "ru": "А горошину отдали в кунсткамеру, где она и лежит, «если только её никто не стащил».",
+   "en": "The pea went into the royal museum, 'where it may still be seen, if no one has stolen it'."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Princess_and_the_Pea"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько оловянных солдатиков-братьев лежало в коробке у стойкого солдатика (вместе с ним)?",
+   "en": "How many tin soldier brothers were in the steadfast tin soldier's box, him included?"
+  },
+  "answer": 25,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "солдатиков",
+   "en": "soldiers"
+  },
+  "fact": {
+   "ru": "Их всех отлили из одной старой оловянной ложки, и на последнего олова не хватило — вот он и одноногий.",
+   "en": "All were cast from one old tin spoon, and the tin ran out for the last, so he had one leg."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Steadfast_Tin_Soldier"
+ }
+]

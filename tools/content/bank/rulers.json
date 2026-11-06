@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как прозвали французского короля Людовика XIV?",
+   "en": "What was Louis XIV of France nicknamed?"
+  },
+  "options": [
+   {
+    "ru": "Король-солнце",
+    "en": "The Sun King"
+   },
+   {
+    "ru": "Король-орёл",
+    "en": "The Eagle King"
+   },
+   {
+    "ru": "Король-луна",
+    "en": "The Moon King"
+   },
+   {
+    "ru": "Король-лев",
+    "en": "The Lion King"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 14 лет он танцевал Аполлона в «Королевском балете ночи», восходя на сцене как солнце, и образ остался с ним навсегда.",
+   "en": "At 14 he danced Apollo in the Royal Ballet of the Night, rising like the sun, and the image stayed with him for life."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ballet_Royal_de_la_Nuit"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько раз был женат английский король Генрих VIII?",
+   "en": "How many times was King Henry VIII of England married?"
+  },
+  "options": [
+   {
+    "ru": "Четыре",
+    "en": "Four"
+   },
+   {
+    "ru": "Шесть",
+    "en": "Six"
+   },
+   {
+    "ru": "Восемь",
+    "en": "Eight"
+   },
+   {
+    "ru": "Пять",
+    "en": "Five"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Формально он был женат лишь трижды: остальные три его брака объявили недействительными.",
+   "en": "Legally he was married only three times: his other three marriages were annulled."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wives_of_Henry_VIII"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что сделал Наполеон на своей коронации в 1804 году?",
+   "en": "What did Napoleon do at his coronation in 1804?"
+  },
+  "options": [
+   {
+    "ru": "Въехал в собор на коне",
+    "en": "Rode into the cathedral on a horse"
+   },
+   {
+    "ru": "Сам надел на себя корону",
+    "en": "Put the crown on himself"
+   },
+   {
+    "ru": "Отказался от короны",
+    "en": "Refused the crown"
+   },
+   {
+    "ru": "Короновался в походном шатре",
+    "en": "Was crowned in an army tent"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Папа Римский приехал ради этого в Париж, но корону Наполеон надел сам, а потом короновал Жозефину.",
+   "en": "The Pope came to Paris for it, yet Napoleon crowned himself and then crowned Josephine."
+  },
+  "source": "https://en.wikipedia.org/wiki/Coronation_of_Napoleon"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем прославился фараон Тутанхамон?",
+   "en": "What made the pharaoh Tutankhamun famous?"
+  },
+  "options": [
+   {
+    "ru": "Покорил Рим",
+    "en": "He conquered Rome"
+   },
+   {
+    "ru": "Правил больше 90 лет",
+    "en": "He ruled for over 90 years"
+   },
+   {
+    "ru": "Его гробницу нашли почти нетронутой",
+    "en": "His tomb was found almost untouched"
+   },
+   {
+    "ru": "Построил самую большую пирамиду",
+    "en": "He built the largest pyramid"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Грабители побывали в гробнице дважды ещё в древности, но потом вход засыпало обломками от соседней стройки, и о нём забыли до 1922 года.",
+   "en": "Robbers broke in twice in ancient times, but debris from later tomb building buried the entrance until 1922."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tutankhamun"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая порода собак названа в честь английского короля Карла II?",
+   "en": "Which dog breed is named after King Charles II of England?"
+  },
+  "options": [
+   {
+    "ru": "Бульдог",
+    "en": "Bulldog"
+   },
+   {
+    "ru": "Терьер",
+    "en": "Terrier"
+   },
+   {
+    "ru": "Спаниель",
+    "en": "Spaniel"
+   },
+   {
+    "ru": "Пудель",
+    "en": "Poodle"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Король обожал своих спаниелей: Пепис записал, что на заседании совета тот всё время играл с собакой, забыв о делах.",
+   "en": "He adored his spaniels: Samuel Pepys wrote that at a council meeting the king played with his dog the whole time, ignoring business."
+  },
+  "source": "https://en.wikipedia.org/wiki/King_Charles_Spaniel"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Одежду какого цвета королева Виктория носила после смерти мужа до конца жизни?",
+   "en": "What colour did Queen Victoria wear for the rest of her life after her husband died?"
+  },
+  "options": [
+   {
+    "ru": "Фиолетового",
+    "en": "Purple"
+   },
+   {
+    "ru": "Серого",
+    "en": "Grey"
+   },
+   {
+    "ru": "Чёрного",
+    "en": "Black"
+   },
+   {
+    "ru": "Белого",
+    "en": "White"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Принц Альберт умер в 1861 году, а королева носила траур почти 40 лет, до 1901-го.",
+   "en": "Prince Albert died in 1861, and the queen stayed in mourning for almost 40 years, until 1901."
+  },
+  "source": "https://en.wikipedia.org/wiki/Queen_Victoria"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой овощ прусский король Фридрих Великий приказал выращивать крестьянам?",
+   "en": "Which vegetable did Prussia's King Frederick the Great order farmers to grow?"
+  },
+  "options": [
+   {
+    "ru": "Помидоры",
+    "en": "Tomatoes"
+   },
+   {
+    "ru": "Кукурузу",
+    "en": "Maize"
+   },
+   {
+    "ru": "Капусту",
+    "en": "Cabbage"
+   },
+   {
+    "ru": "Картофель",
+    "en": "Potatoes"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Его прозвали «картофельным королём», и туристы до сих пор кладут картошку на его могилу в Потсдаме.",
+   "en": "He was nicknamed the Potato King, and visitors still leave potatoes on his grave in Potsdam."
+  },
+  "source": "https://en.wikipedia.org/wiki/Frederick_the_Great"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Имя какого римлянина превратилось в титулы «царь» и «кайзер»?",
+   "en": "Whose name turned into the titles tsar and Kaiser?"
+  },
+  "options": [
+   {
+    "ru": "Спартака",
+    "en": "Spartacus"
+   },
+   {
+    "ru": "Юлия Цезаря",
+    "en": "Julius Caesar"
+   },
+   {
+    "ru": "Константина",
+    "en": "Constantine"
+   },
+   {
+    "ru": "Нерона",
+    "en": "Nero"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Римские императоры брали «Цезарь» как титул, и слово дошло до Руси как «цесарь», а потом «царь».",
+   "en": "Roman emperors took Caesar as a title, and the word reached Russia as tsesar, later tsar."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tsar"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему Елизавета II ездила за границу без паспорта?",
+   "en": "Why did Elizabeth II travel abroad without a passport?"
+  },
+  "options": [
+   {
+    "ru": "Она ездила только по Содружеству",
+    "en": "She only visited Commonwealth lands"
+   },
+   {
+    "ru": "Она никогда не покидала Британию",
+    "en": "She never left Britain"
+   },
+   {
+    "ru": "Паспорта выдавались от её имени",
+    "en": "Passports were issued in her name"
+   },
+   {
+    "ru": "Её и так узнавал любой пограничник",
+    "en": "Every border guard knew her face"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Всем остальным членам королевской семьи, даже наследнику престола, паспорт нужен.",
+   "en": "Every other member of the royal family, even the heir to the throne, needs a passport."
+  },
+  "source": "https://www.royal.uk/passports"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На каком острове родился Наполеон?",
+   "en": "On which island was Napoleon born?"
+  },
+  "options": [
+   {
+    "ru": "Сицилия",
+    "en": "Sicily"
+   },
+   {
+    "ru": "Мальта",
+    "en": "Malta"
+   },
+   {
+    "ru": "Сардиния",
+    "en": "Sardinia"
+   },
+   {
+    "ru": "Корсика",
+    "en": "Corsica"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Корсика стала французской всего за год до его рождения: до того ею владела Генуя.",
+   "en": "Corsica became French only a year before he was born; until then it belonged to Genoa."
+  },
+  "source": "https://en.wikipedia.org/wiki/Napoleon"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто жил в Запретном городе в Пекине?",
+   "en": "Who lived in the Forbidden City in Beijing?"
+  },
+  "options": [
+   {
+    "ru": "Индийские махараджи",
+    "en": "Indian maharajas"
+   },
+   {
+    "ru": "Китайские императоры",
+    "en": "Chinese emperors"
+   },
+   {
+    "ru": "Японские императоры",
+    "en": "Japanese emperors"
+   },
+   {
+    "ru": "Корейские короли",
+    "en": "Korean kings"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Почти 500 лет, начиная с 1420 года, там жили 24 императора, а простым людям вход был закрыт.",
+   "en": "For almost 500 years from 1420, 24 emperors lived there and ordinary people were kept out."
+  },
+  "source": "https://en.wikipedia.org/wiki/Forbidden_City"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В какой стране до 1979 года правил шах?",
+   "en": "In which country did a shah rule until 1979?"
+  },
+  "options": [
+   {
+    "ru": "Мексика",
+    "en": "Mexico"
+   },
+   {
+    "ru": "Япония",
+    "en": "Japan"
+   },
+   {
+    "ru": "Эфиопия",
+    "en": "Ethiopia"
+   },
+   {
+    "ru": "Иран",
+    "en": "Iran"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "«Шах» по-персидски «король», а «шах и мат» значит «король беспомощен».",
+   "en": "Shah is Persian for king, and checkmate comes from shah mat: the king is helpless."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shah"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как назывался правитель Османской империи?",
+   "en": "What was the ruler of the Ottoman Empire called?"
+  },
+  "options": [
+   {
+    "ru": "Махараджа",
+    "en": "Maharaja"
+   },
+   {
+    "ru": "Сёгун",
+    "en": "Shogun"
+   },
+   {
+    "ru": "Султан",
+    "en": "Sultan"
+   },
+   {
+    "ru": "Фараон",
+    "en": "Pharaoh"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Одна династия Османов правила больше 600 лет, с 1299 по 1922 год.",
+   "en": "One Ottoman dynasty ruled for more than 600 years, from 1299 to 1922."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sultan_of_the_Ottoman_Empire"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В память о ком император Шах-Джахан построил Тадж-Махал?",
+   "en": "In memory of whom did the emperor Shah Jahan build the Taj Mahal?"
+  },
+  "options": [
+   {
+    "ru": "О матери",
+    "en": "His mother"
+   },
+   {
+    "ru": "Об отце",
+    "en": "His father"
+   },
+   {
+    "ru": "О жене",
+    "en": "His wife"
+   },
+   {
+    "ru": "О любимом слоне",
+    "en": "His favourite elephant"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Мумтаз-Махал умерла при рождении их четырнадцатого ребёнка, а гробницу для неё строили 22 года.",
+   "en": "Mumtaz Mahal died giving birth to their 14th child, and her tomb took 22 years to build."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mumtaz_Mahal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На что баварский король Людвиг II потратил своё состояние?",
+   "en": "What did King Ludwig II of Bavaria spend his fortune on?"
+  },
+  "options": [
+   {
+    "ru": "На военный флот",
+    "en": "A navy"
+   },
+   {
+    "ru": "На зоопарк",
+    "en": "A zoo"
+   },
+   {
+    "ru": "На железные дороги",
+    "en": "Railways"
+   },
+   {
+    "ru": "На сказочные замки",
+    "en": "Fairy tale castles"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Уже через несколько недель после загадочной смерти короля Нойшванштайн открыли для платных посетителей.",
+   "en": "Within weeks of the king's mysterious death, Neuschwanstein was opened to paying visitors."
+  },
+  "source": "https://en.wikipedia.org/wiki/Neuschwanstein_Castle"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой цветок служит символом японского императора?",
+   "en": "Which flower is the emblem of the Japanese emperor?"
+  },
+  "options": [
+   {
+    "ru": "Хризантема",
+    "en": "Chrysanthemum"
+   },
+   {
+    "ru": "Цветок сакуры",
+    "en": "Cherry blossom"
+   },
+   {
+    "ru": "Лотос",
+    "en": "Lotus"
+   },
+   {
+    "ru": "Пион",
+    "en": "Peony"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Поэтому японский трон называют Хризантемовым, а цветок с 16 лепестками есть на японском паспорте.",
+   "en": "That is why Japan's throne is called the Chrysanthemum Throne; a 16 petal flower is on Japanese passports."
+  },
+  "source": "https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что означает прозвище римского императора Калигулы?",
+   "en": "What does the Roman emperor Caligula's nickname mean?"
+  },
+  "options": [
+   {
+    "ru": "«Волчонок»",
+    "en": "Little wolf"
+   },
+   {
+    "ru": "«Орлёнок»",
+    "en": "Little eagle"
+   },
+   {
+    "ru": "«Сапожок»",
+    "en": "Little boot"
+   },
+   {
+    "ru": "«Львёнок»",
+    "en": "Little lion"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Малышом он жил в военных лагерях отца, и мать одевала его в солдатскую форму с крошечными сапогами-калигами.",
+   "en": "As a small boy he lived in his father's army camps, dressed by his mother in a mini soldier's outfit with tiny boots, caligae."
+  },
+  "source": "https://en.wikipedia.org/wiki/Caligula"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что носила на официальных изображениях женщина-фараон Хатшепсут?",
+   "en": "What did the female pharaoh Hatshepsut wear in official images?"
+  },
+  "options": [
+   {
+    "ru": "Римский шлем",
+    "en": "A Roman helmet"
+   },
+   {
+    "ru": "Накладную бороду",
+    "en": "A false beard"
+   },
+   {
+    "ru": "Маску льва",
+    "en": "A lion mask"
+   },
+   {
+    "ru": "Венок из лотосов",
+    "en": "A lotus wreath"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Борода была знаком власти фараона, и Хатшепсут изображали с ней, как мужчину.",
+   "en": "The beard was a sign of a pharaoh's power, so Hatshepsut was shown wearing one, like a man."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hatshepsut"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чему так и не научился Карл Великий, император половины Европы?",
+   "en": "What did Charlemagne, emperor of half of Europe, never manage to learn?"
+  },
+  "options": [
+   {
+    "ru": "Охотиться",
+    "en": "Hunting"
+   },
+   {
+    "ru": "Писать",
+    "en": "Writing"
+   },
+   {
+    "ru": "Говорить на латыни",
+    "en": "Speaking Latin"
+   },
+   {
+    "ru": "Плавать",
+    "en": "Swimming"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Он держал под подушкой дощечки, чтобы ночью упражняться в буквах, но начал слишком поздно.",
+   "en": "He kept tablets under his pillow to practise letters at night, but he had started too late."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charlemagne"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что, по легенде, король Кнут приказал остановиться, сидя на берегу?",
+   "en": "In the legend, what did King Cnut, sitting on the shore, order to stop?"
+  },
+  "options": [
+   {
+    "ru": "Закат",
+    "en": "The sunset"
+   },
+   {
+    "ru": "Дождь",
+    "en": "The rain"
+   },
+   {
+    "ru": "Ветер",
+    "en": "The wind"
+   },
+   {
+    "ru": "Прилив",
+    "en": "The tide"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Вода всё равно намочила ему ноги, и Кнут объявил, что власть королей пуста, а корону, по легенде, больше не надевал.",
+   "en": "The water still wet his feet; Cnut declared the power of kings empty and, the story goes, never wore his crown again."
+  },
+  "source": "https://en.wikipedia.org/wiki/King_Canute_and_the_tide"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что случилось, когда правитель Мали Манса Муса проехал через Каир?",
+   "en": "What happened when Mansa Musa, ruler of Mali, passed through Cairo?"
+  },
+  "options": [
+   {
+    "ru": "Золото в Каире подешевело",
+    "en": "Gold lost value in Cairo"
+   },
+   {
+    "ru": "В городе кончилась вода",
+    "en": "The city ran out of water"
+   },
+   {
+    "ru": "Город сдался без боя",
+    "en": "The city surrendered"
+   },
+   {
+    "ru": "Его не пустили в город",
+    "en": "He was refused entry"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По словам историка аль-Умари, в 1324 году он раздал столько золота, что оно стоило там дешевле ещё 12 лет.",
+   "en": "According to the historian al-Umari, he handed out so much gold in 1324 that it stayed cheaper there for 12 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mansa_Musa"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем работал Пу И, последний император Китая, после выхода из тюрьмы?",
+   "en": "What job did Puyi, China's last emperor, get after leaving prison?"
+  },
+  "options": [
+   {
+    "ru": "Поваром",
+    "en": "Cook"
+   },
+   {
+    "ru": "Садовником",
+    "en": "Gardener"
+   },
+   {
+    "ru": "Гидом в Запретном городе",
+    "en": "Forbidden City guide"
+   },
+   {
+    "ru": "Почтальоном",
+    "en": "Postman"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Императором он стал в два года, а в 1959-м его выпустили, и он поступил садовником в Пекине.",
+   "en": "He became emperor at two; released in 1959, he went to work as a gardener in Beijing."
+  },
+  "source": "https://en.wikipedia.org/wiki/Puyi"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что до конца жизни искал первый император Китая Цинь Шихуанди?",
+   "en": "What did Qin Shi Huang, China's first emperor, search for until his death?"
+  },
+  "options": [
+   {
+    "ru": "Потерянную печать",
+    "en": "A lost seal"
+   },
+   {
+    "ru": "Край света",
+    "en": "The edge of the world"
+   },
+   {
+    "ru": "Дракона",
+    "en": "A dragon"
+   },
+   {
+    "ru": "Эликсир бессмертия",
+    "en": "An elixir of immortality"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Его лекари давали ему пилюли с ртутью, и, возможно, именно они его и погубили.",
+   "en": "His doctors gave him pills containing mercury, and they may be what killed him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Qin_Shi_Huang"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что означает прозвище «Дракула» валашского князя Влада III?",
+   "en": "What does Dracula, the name of Vlad III of Wallachia, mean?"
+  },
+  "options": [
+   {
+    "ru": "Ночной князь",
+    "en": "Prince of the night"
+   },
+   {
+    "ru": "Сын дракона",
+    "en": "Son of the dragon"
+   },
+   {
+    "ru": "Волчье сердце",
+    "en": "Wolf heart"
+   },
+   {
+    "ru": "Пьющий кровь",
+    "en": "Blood drinker"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Его отец состоял в рыцарском Ордене Дракона и носил прозвище Дракул.",
+   "en": "His father belonged to the knightly Order of the Dragon and was known as Dracul."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vlad_the_Impaler"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего, как верил безумный французский король Карл VI, было сделано его тело?",
+   "en": "What did the mad King Charles VI of France believe his body was made of?"
+  },
+  "options": [
+   {
+    "ru": "Из воска",
+    "en": "Wax"
+   },
+   {
+    "ru": "Из сахара",
+    "en": "Sugar"
+   },
+   {
+    "ru": "Из соломы",
+    "en": "Straw"
+   },
+   {
+    "ru": "Из стекла",
+    "en": "Glass"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Он носил одежду, укреплённую железными прутьями, и не подпускал к себе советников, боясь разбиться.",
+   "en": "He wore clothes reinforced with iron rods and kept his advisers from coming near him, for fear he would shatter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Glass_delusion"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь кого Александр Македонский назвал один из своих городов?",
+   "en": "Alexander the Great named one of his cities after whom?"
+  },
+  "options": [
+   {
+    "ru": "В честь бога вина",
+    "en": "The god of wine"
+   },
+   {
+    "ru": "В честь учителя Аристотеля",
+    "en": "His teacher Aristotle"
+   },
+   {
+    "ru": "В честь своего повара",
+    "en": "His cook"
+   },
+   {
+    "ru": "В честь своего коня",
+    "en": "His horse"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Буцефала на реке Гидасп появилась в память о коне Буцефале, погибшем после битвы на этой реке.",
+   "en": "Bucephala on the Hydaspes river honoured his horse Bucephalus, who died after the battle there."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bucephalus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько длилось «правление» французского короля Людовика XIX?",
+   "en": "How long did the 'reign' of King Louis XIX of France last?"
+  },
+  "options": [
+   {
+    "ru": "Считаные минуты",
+    "en": "A few minutes"
+   },
+   {
+    "ru": "Сто дней",
+    "en": "A hundred days"
+   },
+   {
+    "ru": "Полгода",
+    "en": "Six months"
+   },
+   {
+    "ru": "Три года",
+    "en": "Three years"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1830 году его отец Карл X подписал отречение, а сын сразу подписал своё: королём его можно считать лишь между подписями.",
+   "en": "In 1830 his father Charles X signed his abdication and the son signed his right after: he was king only in between."
+  },
+  "source": "https://en.wikipedia.org/wiki/Louis_Antoine,_Duke_of_Angoul%C3%AAme"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем британскому монарху второй, официальный день рождения?",
+   "en": "Why does the British monarch have a second, official birthday?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы парад прошёл в хорошую погоду",
+    "en": "So the parade gets good weather"
+   },
+   {
+    "ru": "Из-за старого календаря",
+    "en": "Because of the old calendar"
+   },
+   {
+    "ru": "Это день коронации",
+    "en": "It is the coronation day"
+   },
+   {
+    "ru": "Чтобы получить вдвое больше тортов",
+    "en": "To get twice the cakes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Обычай восходит к Георгу II: он родился в ноябре, а парад в честь его дня рождения устраивали летом.",
+   "en": "The custom goes back to George II: born in November, he had his birthday parade held in summer."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trooping_the_Colour"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каким ремеслом увлекался Людовик XVI?",
+   "en": "Which craft was Louis XVI's hobby?"
+  },
+  "options": [
+   {
+    "ru": "Пчеловодством",
+    "en": "Beekeeping"
+   },
+   {
+    "ru": "Гончарным делом",
+    "en": "Pottery"
+   },
+   {
+    "ru": "Выпечкой хлеба",
+    "en": "Baking bread"
+   },
+   {
+    "ru": "Слесарным делом",
+    "en": "Making locks"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В Версале у короля была своя мастерская, где он с удовольствием мастерил замки.",
+   "en": "The king had his own workshop at Versailles, where he loved to make locks."
+  },
+  "source": "https://en.wikipedia.org/wiki/Louis_XVI"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой напиток правитель ацтеков Монтесума пил из золотых кубков?",
+   "en": "Which drink did the Aztec ruler Montezuma drink from golden cups?"
+  },
+  "options": [
+   {
+    "ru": "Кофе",
+    "en": "Coffee"
+   },
+   {
+    "ru": "Шоколад",
+    "en": "Chocolate"
+   },
+   {
+    "ru": "Чай",
+    "en": "Tea"
+   },
+   {
+    "ru": "Кокосовое молоко",
+    "en": "Coconut milk"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Конкистадор Берналь Диас видел, как ему за одной трапезой подали больше 50 кувшинов пенного какао.",
+   "en": "The conquistador Bernal Díaz saw more than 50 jugs of frothy cacao brought to him at one meal."
+  },
+  "source": "https://en.wikipedia.org/wiki/Moctezuma_II"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как провёл последние годы Шах-Джахан, построивший Тадж-Махал?",
+   "en": "How did Shah Jahan, who built the Taj Mahal, spend his last years?"
+  },
+  "options": [
+   {
+    "ru": "В путешествиях по Европе",
+    "en": "Travelling in Europe"
+   },
+   {
+    "ru": "Монахом в горах",
+    "en": "As a monk in the mountains"
+   },
+   {
+    "ru": "В изгнании в Персии",
+    "en": "In exile in Persia"
+   },
+   {
+    "ru": "Узником собственного сына",
+    "en": "As his own son's prisoner"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Сын Аурангзеб запер его в форте Агры, откуда старый император смотрел на Тадж-Махал.",
+   "en": "His son Aurangzeb locked him in Agra Fort, from where the old emperor could gaze at the Taj Mahal."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shah_Jahan"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая черта передавалась в роду Габсбургов из поколения в поколение?",
+   "en": "Which feature ran in the Habsburg family for generations?"
+  },
+  "options": [
+   {
+    "ru": "Выступающая нижняя челюсть",
+    "en": "A jutting lower jaw"
+   },
+   {
+    "ru": "Разноцветные глаза",
+    "en": "Eyes of two colours"
+   },
+   {
+    "ru": "Шесть пальцев на руке",
+    "en": "Six fingers on a hand"
+   },
+   {
+    "ru": "Рыжие волосы",
+    "en": "Red hair"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Габсбурги веками женились на родне, и у испанского короля Карла II челюсть была такой, что он глотал еду почти не жуя.",
+   "en": "The Habsburgs married relatives for centuries; Charles II of Spain's jaw was so bad he swallowed food almost unchewed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles_II_of_Spain"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой науке посвятил научные работы японский император Хирохито?",
+   "en": "In which science did the Japanese emperor Hirohito publish research?"
+  },
+  "options": [
+   {
+    "ru": "Математике",
+    "en": "Mathematics"
+   },
+   {
+    "ru": "Астрономии",
+    "en": "Astronomy"
+   },
+   {
+    "ru": "Морской биологии",
+    "en": "Marine biology"
+   },
+   {
+    "ru": "Химии",
+    "en": "Chemistry"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Он изучал гидроидов и описал новые виды, а его сын Акихито изучал рыб-бычков.",
+   "en": "He studied hydrozoans and described new species; his son Akihito studied goby fish."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hirohito"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем шведская королева Кристина поразила Европу в 1654 году?",
+   "en": "How did Queen Christina of Sweden shock Europe in 1654?"
+  },
+  "options": [
+   {
+    "ru": "Вышла замуж за крестьянина",
+    "en": "She married a peasant"
+   },
+   {
+    "ru": "Объявила войну Англии",
+    "en": "She declared war on England"
+   },
+   {
+    "ru": "Сама отказалась от трона",
+    "en": "She gave up her throne"
+   },
+   {
+    "ru": "Продала королевские регалии",
+    "en": "She sold the crown jewels"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Она отреклась, перешла в католичество и уехала в Рим, где её похоронили в соборе Святого Петра.",
+   "en": "She abdicated, became a Catholic and moved to Rome, where she was buried in St Peter's Basilica."
+  },
+  "source": "https://en.wikipedia.org/wiki/Christina,_Queen_of_Sweden"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое насекомое Наполеон выбрал символом своей империи?",
+   "en": "Which insect did Napoleon choose as a symbol of his empire?"
+  },
+  "options": [
+   {
+    "ru": "Муравья",
+    "en": "The ant"
+   },
+   {
+    "ru": "Бабочку",
+    "en": "The butterfly"
+   },
+   {
+    "ru": "Пчелу",
+    "en": "The bee"
+   },
+   {
+    "ru": "Стрекозу",
+    "en": "The dragonfly"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Золотых пчёл нашли в гробнице франкского короля Хильдерика, и так Наполеон связал себя с первыми королями.",
+   "en": "Golden bees were found in the Frankish king Childeric's tomb, linking Napoleon to France's first kings."
+  },
+  "source": "https://en.wikipedia.org/wiki/Childeric_I"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как звали Чингисхана при рождении?",
+   "en": "What was Genghis Khan's name at birth?"
+  },
+  "options": [
+   {
+    "ru": "Батый",
+    "en": "Batu"
+   },
+   {
+    "ru": "Тимур",
+    "en": "Timur"
+   },
+   {
+    "ru": "Темучин",
+    "en": "Temujin"
+   },
+   {
+    "ru": "Хубилай",
+    "en": "Kublai"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "«Чингисхан» — это титул, который он получил в 1206 году, когда объединил монгольские племена.",
+   "en": "Genghis Khan is a title he received in 1206, when he united the Mongol tribes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Genghis_Khan"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялось имя Тамерлан?",
+   "en": "Where does the name Tamerlane come from?"
+  },
+  "options": [
+   {
+    "ru": "Тимур Хромой",
+    "en": "Timur the Lame"
+   },
+   {
+    "ru": "Тимур Золотой",
+    "en": "Timur the Golden"
+   },
+   {
+    "ru": "Тимур Высокий",
+    "en": "Timur the Tall"
+   },
+   {
+    "ru": "Тимур Мудрый",
+    "en": "Timur the Wise"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1941 году учёные вскрыли его гробницу и подтвердили: правая нога у него была повреждена.",
+   "en": "In 1941 scientists opened his tomb and confirmed that his right leg had been injured."
+  },
+  "source": "https://en.wikipedia.org/wiki/Timur"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем занимался «грум стула», один из самых влиятельных слуг Генриха VIII?",
+   "en": "What did the Groom of the Stool, one of Henry VIII's most powerful servants, do?"
+  },
+  "options": [
+   {
+    "ru": "Пробовал королевскую еду",
+    "en": "Tasted the king's food"
+   },
+   {
+    "ru": "Носил королевский трон",
+    "en": "Carried the royal throne"
+   },
+   {
+    "ru": "Ухаживал за конями",
+    "en": "Looked after the horses"
+   },
+   {
+    "ru": "Помогал королю в уборной",
+    "en": "Helped the king on the toilet"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Он оставался с королём наедине, слышал все секреты и потому имел огромное влияние.",
+   "en": "He was alone with the king, heard all his secrets, and so had enormous influence."
+  },
+  "source": "https://en.wikipedia.org/wiki/Groom_of_the_Stool"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет правил Людовик XIV?",
+   "en": "How many years did Louis XIV reign?"
+  },
+  "answer": 72,
+  "range": [
+   10,
+   90
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Он стал королём в четыре года и пережил сына и внука, так что трон унаследовал правнук.",
+   "en": "He became king at four and outlived his son and grandson, so his great-grandson inherited."
+  },
+  "source": "https://en.wikipedia.org/wiki/Louis_XIV"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько карат весил алмаз «Куллинан», найденный в 1905 году и украсивший британские регалии?",
+   "en": "How many carats was the Cullinan diamond, found in 1905 and cut for the British crown jewels?"
+  },
+  "answer": 3106,
+  "range": [
+   500,
+   4000
+  ],
+  "step": 2,
+  "tolerance": 350,
+  "unit": {
+   "ru": "карат",
+   "en": "carats"
+  },
+  "fact": {
+   "ru": "Это 621 грамм; в Лондон его послали в простой коробке по почте, а под охраной везли подделку.",
+   "en": "That is 621 grams; it went to London in a plain box by post while a decoy sailed under guard."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cullinan_Diamond"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько внуков было у королевы Виктории?",
+   "en": "How many grandchildren did Queen Victoria have?"
+  },
+  "answer": 42,
+  "range": [
+   10,
+   120
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "внуков",
+   "en": "grandchildren"
+  },
+  "fact": {
+   "ru": "Среди её внуков были германский кайзер, последняя русская императрица и королевы Испании, Норвегии, Румынии и Греции.",
+   "en": "Her grandchildren included the German Kaiser, the last Russian empress and queens of Spain, Norway, Romania and Greece."
+  },
+  "source": "https://en.wikipedia.org/wiki/Descendants_of_Queen_Victoria"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько британских премьер-министров сменилось за правление Елизаветы II?",
+   "en": "How many British prime ministers served under Elizabeth II?"
+  },
+  "answer": 15,
+  "range": [
+   3,
+   50
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "премьеров",
+   "en": "PMs"
+  },
+  "fact": {
+   "ru": "Первым был Уинстон Черчилль, который начинал службу офицером ещё при её прапрабабушке, королеве Виктории.",
+   "en": "The first was Winston Churchill, who had become an army officer under her great-great-grandmother, Queen Victoria."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Elizabeth_II"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет правил Собуза II из Свазиленда — дольше всех монархов в достоверной истории?",
+   "en": "How many years did Sobhuza II of Swaziland reign, the longest verified reign of any monarch?"
+  },
+  "answer": 82,
+  "range": [
+   10,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Он стал правителем в четыре месяца от роду в 1899 году и правил до 1982-го; у него было 70 жён и 210 детей.",
+   "en": "He became ruler at four months old in 1899 and reigned until 1982; he had 70 wives and 210 children."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sobhuza_II"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько дней на самом деле длились «Сто дней» Наполеона в 1815 году?",
+   "en": "How many days did Napoleon's Hundred Days of 1815 actually last?"
+  },
+  "answer": 110,
+  "range": [
+   50,
+   300
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "От возвращения в Париж 20 марта до нового въезда Людовика XVIII 8 июля.",
+   "en": "From his return to Paris on 20 March to Louis XVIII's restoration on 8 July."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hundred_Days"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько бриллиантов в британской Имперской короне?",
+   "en": "How many diamonds are set in Britain's Imperial State Crown?"
+  },
+  "answer": 2868,
+  "range": [
+   0,
+   7600
+  ],
+  "step": 4,
+  "tolerance": 800,
+  "unit": {
+   "ru": "штук",
+   "en": "diamonds"
+  },
+  "fact": {
+   "ru": "Ещё в ней 269 жемчужин, 17 сапфиров, 11 изумрудов и 5 рубинов, а весит она около килограмма.",
+   "en": "It also has 269 pearls, 17 sapphires, 11 emeralds and 5 rubies, and it weighs about a kilogram."
+  },
+  "source": "https://en.wikipedia.org/wiki/Imperial_State_Crown"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году папа римский короновал Карла Великого императором?",
+   "en": "In which year did the Pope crown Charlemagne emperor?"
+  },
+  "answer": 800,
+  "range": [
+   400,
+   1600
+  ],
+  "step": 1,
+  "tolerance": 60,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Это случилось в Риме на Рождество, и в Западной Европе снова появился император спустя 300 с лишним лет.",
+   "en": "It happened in Rome on Christmas Day, giving Western Europe an emperor again after over 300 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charlemagne"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Примерно сколько лет Египтом правили фараоны?",
+   "en": "For roughly how many years was Egypt ruled by pharaohs?"
+  },
+  "answer": 3000,
+  "range": [
+   200,
+   8000
+  ],
+  "step": 50,
+  "tolerance": 600,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Примерно с 3150 года до н. э. и до 30 года до н. э., когда умерла Клеопатра и Египет стал римской провинцией.",
+   "en": "From about 3150 BC until 30 BC, when Cleopatra died and Egypt became a Roman province."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pharaoh"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Каким по счёту японским императором традиционно считается Акихито, отрёкшийся в 2019 году?",
+   "en": "By tradition, what number in Japan's line of emperors was Akihito, who stepped down in 2019?"
+  },
+  "answer": 125,
+  "range": [
+   10,
+   400
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "",
+   "en": ""
+  },
+  "fact": {
+   "ru": "Япония считает свою династию древнейшей в мире, хотя первые императоры из списка скорее легенда.",
+   "en": "Japan counts its dynasty as the oldest in the world, though the earliest emperors on the list are likely legend."
+  },
+  "source": "https://en.wikipedia.org/wiki/Akihito"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году англичане казнили своего короля Карла I?",
+   "en": "In which year did the English execute their king, Charles I?"
+  },
+  "answer": 1649,
+  "range": [
+   1550,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Морозным утром он надел лишнюю рубашку, чтобы толпа не приняла его дрожь от холода за страх.",
+   "en": "It was a freezing morning, so he put on an extra shirt in case the crowd took his shivering for fear."
+  },
+  "source": "https://en.wikipedia.org/wiki/Execution_of_Charles_I"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Каким по счёту сыном Рамсеса II был фараон Мернептах, унаследовавший его трон?",
+   "en": "Merneptah inherited Ramesses II's throne. What number son was he?"
+  },
+  "answer": 13,
+  "range": [
+   1,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "",
+   "en": ""
+  },
+  "fact": {
+   "ru": "Рамсес II правил 66 лет и дожил до девяноста с лишним, пережив двенадцать старших сыновей.",
+   "en": "Ramesses II reigned for 66 years and lived into his nineties, outliving twelve older sons."
+  },
+  "source": "https://en.wikipedia.org/wiki/Merneptah"
+ }
+]

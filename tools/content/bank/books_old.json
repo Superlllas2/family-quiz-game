@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В каком городе живут Ромео и Джульетта у Шекспира?",
+   "en": "In which city do Shakespeare's Romeo and Juliet live?"
+  },
+  "options": [
+   {
+    "ru": "Верона",
+    "en": "Verona"
+   },
+   {
+    "ru": "Венеция",
+    "en": "Venice"
+   },
+   {
+    "ru": "Флоренция",
+    "en": "Florence"
+   },
+   {
+    "ru": "Рим",
+    "en": "Rome"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Туристы в Вероне фотографируются у «балкона Джульетты», но его пристроили к дому только в XX веке.",
+   "en": "Tourists in Verona pose under \"Juliet's balcony\", but it was only added to the house in the 20th century."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Дом_Джульетты"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто написал «Преступление и наказание»?",
+   "en": "Who wrote Crime and Punishment?"
+  },
+  "options": [
+   {
+    "ru": "Фёдор Достоевский",
+    "en": "Fyodor Dostoevsky"
+   },
+   {
+    "ru": "Лев Толстой",
+    "en": "Leo Tolstoy"
+   },
+   {
+    "ru": "Николай Гоголь",
+    "en": "Nikolai Gogol"
+   },
+   {
+    "ru": "Иван Бунин",
+    "en": "Ivan Bunin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фамилия Раскольникова — от слова «раскол»: герой расколот надвое, между идеей и совестью.",
+   "en": "Raskolnikov's name comes from raskol, \"split\": the hero is torn between his theory and his conscience."
+  },
+  "source": "https://en.wikipedia.org/wiki/Crime_and_Punishment"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто такой Бегемот в «Мастере и Маргарите»?",
+   "en": "Who is Behemoth in The Master and Margarita?"
+  },
+  "options": [
+   {
+    "ru": "Огромный кот",
+    "en": "A huge cat"
+   },
+   {
+    "ru": "Пёс Воланда",
+    "en": "Woland's dog"
+   },
+   {
+    "ru": "Настоящий бегемот",
+    "en": "An actual hippo"
+   },
+   {
+    "ru": "Говорящий ворон",
+    "en": "A talking raven"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Имя двойное: по-русски «бегемот» — гиппопотам, а в Библии это чудовище из Книги Иова.",
+   "en": "The name works twice: in Russian it means hippo, and in the Bible it is a monster from the Book of Job."
+  },
+  "source": "https://en.wikipedia.org/wiki/Behemoth"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто написал «Трёх мушкетёров»?",
+   "en": "Who wrote The Three Musketeers?"
+  },
+  "options": [
+   {
+    "ru": "Александр Дюма",
+    "en": "Alexandre Dumas"
+   },
+   {
+    "ru": "Виктор Гюго",
+    "en": "Victor Hugo"
+   },
+   {
+    "ru": "Жюль Верн",
+    "en": "Jules Verne"
+   },
+   {
+    "ru": "Оноре де Бальзак",
+    "en": "Honoré de Balzac"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Дюма писал не один: сюжеты многих его романов набрасывал соавтор Огюст Маке, чьё имя на обложку не ставили.",
+   "en": "Dumas had help: co-writer Auguste Maquet drafted the plots of many of his novels, but his name stayed off the cover."
+  },
+  "source": "https://en.wikipedia.org/wiki/Auguste_Maquet"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как называлась подводная лодка капитана Немо?",
+   "en": "What was Captain Nemo's submarine called?"
+  },
+  "options": [
+   {
+    "ru": "«Наутилус»",
+    "en": "Nautilus"
+   },
+   {
+    "ru": "«Дункан»",
+    "en": "Duncan"
+   },
+   {
+    "ru": "«Пилигрим»",
+    "en": "Pilgrim"
+   },
+   {
+    "ru": "«Альбатрос»",
+    "en": "Albatross"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Верн назвал её в честь настоящей подлодки «Наутилус», которую Роберт Фултон построил ещё в 1800 году.",
+   "en": "Verne named it after a real submarine, the Nautilus, that Robert Fulton built back in 1800."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nautilus_(fictional_submarine)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На какой улице Лондона жил Шерлок Холмс?",
+   "en": "On which London street did Sherlock Holmes live?"
+  },
+  "options": [
+   {
+    "ru": "Бейкер-стрит",
+    "en": "Baker Street"
+   },
+   {
+    "ru": "Оксфорд-стрит",
+    "en": "Oxford Street"
+   },
+   {
+    "ru": "Даунинг-стрит",
+    "en": "Downing Street"
+   },
+   {
+    "ru": "Флит-стрит",
+    "en": "Fleet Street"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Когда Конан Дойл писал рассказы, дома № 221 на Бейкер-стрит ещё не было: номера на улице до него не доходили.",
+   "en": "When Conan Doyle wrote the stories, there was no number 221: Baker Street's numbers didn't go that high."
+  },
+  "source": "https://en.wikipedia.org/wiki/221B_Baker_Street"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из какой пьесы Шекспира слова «Быть или не быть»?",
+   "en": "Which Shakespeare play has \"To be or not to be\"?"
+  },
+  "options": [
+   {
+    "ru": "«Гамлет»",
+    "en": "Hamlet"
+   },
+   {
+    "ru": "«Макбет»",
+    "en": "Macbeth"
+   },
+   {
+    "ru": "«Король Лир»",
+    "en": "King Lear"
+   },
+   {
+    "ru": "«Отелло»",
+    "en": "Othello"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Гамлет» — самая длинная пьеса Шекспира: без сокращений она идёт больше четырёх часов.",
+   "en": "Hamlet is Shakespeare's longest play: performed uncut it runs over four hours."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hamlet"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как погиб Пушкин?",
+   "en": "How did Pushkin die?"
+  },
+  "options": [
+   {
+    "ru": "Ранен на дуэли",
+    "en": "Wounded in a duel"
+   },
+   {
+    "ru": "Умер от холеры",
+    "en": "Of cholera"
+   },
+   {
+    "ru": "Упал с лошади",
+    "en": "Fell from a horse"
+   },
+   {
+    "ru": "Утонул в Неве",
+    "en": "Drowned in the Neva"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его противник Жорж Дантес прожил до 83 лет и стал сенатором во Франции.",
+   "en": "His opponent Georges d'Anthès lived to 83 and became a senator in France."
+  },
+  "source": "https://en.wikipedia.org/wiki/Georges-Charles_de_Heeckeren_d%27Anth%C3%A8s"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кого навещают три духа в «Рождественской песни» Диккенса?",
+   "en": "Who is visited by three ghosts in Dickens's A Christmas Carol?"
+  },
+  "options": [
+   {
+    "ru": "Скруджа",
+    "en": "Scrooge"
+   },
+   {
+    "ru": "Оливера Твиста",
+    "en": "Oliver Twist"
+   },
+   {
+    "ru": "Мистера Пиквика",
+    "en": "Mr Pickwick"
+   },
+   {
+    "ru": "Феджина",
+    "en": "Fagin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Богач-скряга Скрудж Макдак из «Утиных историй» назван именно в честь этого героя Диккенса.",
+   "en": "Scrooge McDuck, the rich miser of DuckTales, is named after this very Dickens character."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ebenezer_Scrooge"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как Робинзон Крузо назвал своего спутника?",
+   "en": "What did Robinson Crusoe name his companion?"
+  },
+  "options": [
+   {
+    "ru": "Пятница",
+    "en": "Friday"
+   },
+   {
+    "ru": "Воскресенье",
+    "en": "Sunday"
+   },
+   {
+    "ru": "Понедельник",
+    "en": "Monday"
+   },
+   {
+    "ru": "Четверг",
+    "en": "Thursday"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Робинзон спас его в пятницу и назвал по дню недели, а в английском «man Friday» с тех пор значит верного помощника.",
+   "en": "Crusoe saved him on a Friday and named him after the day; in English a \"man Friday\" now means a loyal helper."
+  },
+  "source": "https://en.wikipedia.org/wiki/Man_Friday"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кого Дон Кихот принял за великанов?",
+   "en": "What did Don Quixote mistake for giants?"
+  },
+  "options": [
+   {
+    "ru": "Ветряные мельницы",
+    "en": "Windmills"
+   },
+   {
+    "ru": "Стога сена",
+    "en": "Haystacks"
+   },
+   {
+    "ru": "Маяки",
+    "en": "Lighthouses"
+   },
+   {
+    "ru": "Колокольни",
+    "en": "Bell towers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сервантес сам был солдатом: в морской битве при Лепанто ему навсегда искалечило левую руку.",
+   "en": "Cervantes was a soldier himself: the sea battle of Lepanto left his left hand crippled for life."
+  },
+  "source": "https://en.wikipedia.org/wiki/Miguel_de_Cervantes"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто звонарь в «Соборе Парижской Богоматери» Гюго?",
+   "en": "Who is the bell-ringer in Hugo's Notre-Dame de Paris?"
+  },
+  "options": [
+   {
+    "ru": "Квазимодо",
+    "en": "Quasimodo"
+   },
+   {
+    "ru": "Фролло",
+    "en": "Frollo"
+   },
+   {
+    "ru": "Феб",
+    "en": "Phoebus"
+   },
+   {
+    "ru": "Гренгуар",
+    "en": "Gringoire"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его подкинули к собору на Фомино воскресенье, по-латыни Quasimodo, и назвали по празднику.",
+   "en": "He was left at the cathedral on Quasimodo Sunday, the first Sunday after Easter, and named after it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Quasimodo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как зовут одноногого пирата в «Острове сокровищ»?",
+   "en": "What is the one-legged pirate in Treasure Island called?"
+  },
+  "options": [
+   {
+    "ru": "Джон Сильвер",
+    "en": "Long John Silver"
+   },
+   {
+    "ru": "Капитан Флинт",
+    "en": "Captain Flint"
+   },
+   {
+    "ru": "Билли Бонс",
+    "en": "Billy Bones"
+   },
+   {
+    "ru": "Слепой Пью",
+    "en": "Blind Pew"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Роман начался с карты выдуманного острова, которую Стевенсон нарисовал вместе с 12-летним пасынком.",
+   "en": "The novel began with a map of a made-up island that Stevenson drew with his 12-year-old stepson."
+  },
+  "source": "https://en.wikipedia.org/wiki/Treasure_Island"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем Обломов занят почти всю первую часть романа?",
+   "en": "What does Oblomov do for most of the novel's first part?"
+  },
+  "options": [
+   {
+    "ru": "Лежит и не встаёт",
+    "en": "Lies around, won't get up"
+   },
+   {
+    "ru": "Плывёт в Индию",
+    "en": "Sails to India"
+   },
+   {
+    "ru": "Сватается к княжне",
+    "en": "Courts a princess"
+   },
+   {
+    "ru": "Охотится на медведя",
+    "en": "Hunts a bear"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "За первые полсотни страниц Обломов успевает только перебраться с кровати в кресло.",
+   "en": "In the first 50 pages Oblomov only manages to move from his bed to a chair."
+  },
+  "source": "https://en.wikipedia.org/wiki/Oblomov"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какого цвета кит Моби Дик?",
+   "en": "What colour is the whale Moby-Dick?"
+  },
+  "options": [
+   {
+    "ru": "Белый",
+    "en": "White"
+   },
+   {
+    "ru": "Чёрный",
+    "en": "Black"
+   },
+   {
+    "ru": "Серо-синий",
+    "en": "Blue-grey"
+   },
+   {
+    "ru": "Пятнистый",
+    "en": "Spotted"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мелвилл знал реальный случай: в 1820 году кашалот протаранил и потопил китобойное судно «Эссекс».",
+   "en": "Melville knew a true story: in 1820 a sperm whale rammed and sank the whaleship Essex."
+  },
+  "source": "https://en.wikipedia.org/wiki/Essex_(whaleship)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На каком языке первые слова «Войны и мира»?",
+   "en": "In what language are the first words of War and Peace?"
+  },
+  "options": [
+   {
+    "ru": "На французском",
+    "en": "French"
+   },
+   {
+    "ru": "На русском",
+    "en": "Russian"
+   },
+   {
+    "ru": "На немецком",
+    "en": "German"
+   },
+   {
+    "ru": "На латыни",
+    "en": "Latin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Знать тогда говорила по-французски охотнее, чем по-русски, но во всём романе французского всего около 2%.",
+   "en": "Nobles then preferred French to Russian, yet only about 2% of the whole novel is in French."
+  },
+  "source": "https://ru.wikisource.org/wiki/Война_и_мир_(Толстой)/Том_1"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда родом д'Артаньян?",
+   "en": "Where is d'Artagnan from?"
+  },
+  "options": [
+   {
+    "ru": "Из Гаскони",
+    "en": "Gascony"
+   },
+   {
+    "ru": "Из Нормандии",
+    "en": "Normandy"
+   },
+   {
+    "ru": "Из Бретани",
+    "en": "Brittany"
+   },
+   {
+    "ru": "Из Прованса",
+    "en": "Provence"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Д'Артаньян жил на самом деле: он командовал королевскими мушкетёрами и погиб при осаде Маастрихта в 1673 году.",
+   "en": "D'Artagnan was a real man: he commanded the king's musketeers and was killed at the siege of Maastricht in 1673."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles_de_Batz_de_Castelmore_d%27Artagnan"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что скупал Чичиков в «Мёртвых душах»?",
+   "en": "What was Chichikov buying up in Dead Souls?"
+  },
+  "options": [
+   {
+    "ru": "Умерших крестьян",
+    "en": "Dead serfs"
+   },
+   {
+    "ru": "Старые портреты",
+    "en": "Old portraits"
+   },
+   {
+    "ru": "Заброшенные кладбища",
+    "en": "Old graveyards"
+   },
+   {
+    "ru": "Долговые расписки",
+    "en": "IOUs"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До новой переписи умершие крестьяне числились живыми, и их можно было заложить в банке как настоящих.",
+   "en": "Until the next census dead serfs still counted as alive, so they could be mortgaged as if they were real."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dead_Souls"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из-за чего Ленский вызвал Онегина на дуэль?",
+   "en": "Why did Lensky challenge Onegin to a duel?"
+  },
+  "options": [
+   {
+    "ru": "Онегин флиртовал с Ольгой",
+    "en": "Onegin flirted with Olga"
+   },
+   {
+    "ru": "Из-за карточного долга",
+    "en": "Over a card debt"
+   },
+   {
+    "ru": "Онегин высмеял его стихи",
+    "en": "Onegin mocked his poems"
+   },
+   {
+    "ru": "Из-за спора о межах",
+    "en": "Over a land boundary"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Назло Ленскому Онегин весь бал ухаживал за его невестой, а поэту не было и восемнадцати лет.",
+   "en": "To spite Lensky, Onegin spent the ball courting his fiancée; the poet was not yet eighteen."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eugene_Onegin"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой роман начинается словами «Все счастливые семьи похожи друг на друга…»?",
+   "en": "Which novel opens \"All happy families are alike...\"?"
+  },
+  "options": [
+   {
+    "ru": "«Анна Каренина»",
+    "en": "Anna Karenina"
+   },
+   {
+    "ru": "«Война и мир»",
+    "en": "War and Peace"
+   },
+   {
+    "ru": "«Отцы и дети»",
+    "en": "Fathers and Sons"
+   },
+   {
+    "ru": "«Воскресение»",
+    "en": "Resurrection"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Второй герой романа, Константин Лёвин, во многом сам Толстой — даже фамилия от имени Лев.",
+   "en": "The novel's other hero, Konstantin Levin, is largely Tolstoy himself, his name even comes from Lev."
+  },
+  "source": "https://en.wikipedia.org/wiki/Anna_Karenina"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого Лермонтов назвал «героем нашего времени»?",
+   "en": "Who is Lermontov's \"Hero of Our Time\"?"
+  },
+  "options": [
+   {
+    "ru": "Печорина",
+    "en": "Pechorin"
+   },
+   {
+    "ru": "Онегина",
+    "en": "Onegin"
+   },
+   {
+    "ru": "Чацкого",
+    "en": "Chatsky"
+   },
+   {
+    "ru": "Базарова",
+    "en": "Bazarov"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Лермонтов, как и Пушкин, погиб на дуэли, и ему было всего 26 лет.",
+   "en": "Like Pushkin, Lermontov was killed in a duel, aged just 26."
+  },
+  "source": "https://en.wikipedia.org/wiki/A_Hero_of_Our_Time"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое слово прославил роман Тургенева «Отцы и дети»?",
+   "en": "Which word did Turgenev's Fathers and Sons make famous?"
+  },
+  "options": [
+   {
+    "ru": "Нигилист",
+    "en": "Nihilist"
+   },
+   {
+    "ru": "Интеллигент",
+    "en": "Intelligentsia"
+   },
+   {
+    "ru": "Обломовщина",
+    "en": "Oblomovism"
+   },
+   {
+    "ru": "Хулиган",
+    "en": "Hooligan"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слово было и раньше, но именно Базаров сделал «нигилиста» модным на всю Россию.",
+   "en": "The word existed before, but it was Bazarov who made \"nihilist\" the talk of all Russia."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fathers_and_Sons_(novel)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто кричит «Карету мне, карету!» в «Горе от ума»?",
+   "en": "Who cries \"My carriage, bring my carriage!\" in Woe from Wit?"
+  },
+  "options": [
+   {
+    "ru": "Чацкий",
+    "en": "Chatsky"
+   },
+   {
+    "ru": "Фамусов",
+    "en": "Famusov"
+   },
+   {
+    "ru": "Молчалин",
+    "en": "Molchalin"
+   },
+   {
+    "ru": "Скалозуб",
+    "en": "Skalozub"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "При жизни Грибоедова пьесу так и не напечатали целиком, и её переписывали от руки по всей России.",
+   "en": "The full play was never printed in Griboyedov's lifetime, so people copied it out by hand all over Russia."
+  },
+  "source": "https://en.wikipedia.org/wiki/Woe_from_Wit"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каким псевдонимом молодой Чехов подписывал юмористические рассказы?",
+   "en": "What pen name did young Chekhov sign his comic stories with?"
+  },
+  "options": [
+   {
+    "ru": "Антоша Чехонте",
+    "en": "Antosha Chekhonte"
+   },
+   {
+    "ru": "Козьма Прутков",
+    "en": "Kozma Prutkov"
+   },
+   {
+    "ru": "Саша Чёрный",
+    "en": "Sasha Chorny"
+   },
+   {
+    "ru": "Максим Горький",
+    "en": "Maxim Gorky"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Чехов был врачом и шутил: «Медицина — моя законная жена, а литература — любовница».",
+   "en": "Chekhov was a doctor and joked: \"Medicine is my lawful wife, and literature is my mistress.\""
+  },
+  "source": "https://en.wikipedia.org/wiki/Anton_Chekhov"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая настоящая фамилия Максима Горького?",
+   "en": "What was Maxim Gorky's real surname?"
+  },
+  "options": [
+   {
+    "ru": "Пешков",
+    "en": "Peshkov"
+   },
+   {
+    "ru": "Бугаев",
+    "en": "Bugaev"
+   },
+   {
+    "ru": "Соколов",
+    "en": "Sokolov"
+   },
+   {
+    "ru": "Полевой",
+    "en": "Polevoy"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Псевдоним под стать горькой жизни он взял в 1892 году, подписав им первый рассказ «Макар Чудра».",
+   "en": "Gorky means \"bitter\": that is how he signed his first story, Makar Chudra, in 1892."
+  },
+  "source": "https://en.wikipedia.org/wiki/Maxim_Gorky"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему Филеас Фогг выиграл пари, хотя думал, что опоздал на день?",
+   "en": "Why did Phileas Fogg win his bet though he thought he was a day late?"
+  },
+  "options": [
+   {
+    "ru": "Ехал на восток и выиграл сутки",
+    "en": "Going east gained him a day"
+   },
+   {
+    "ru": "Часы в клубе спешили",
+    "en": "The club's clock was fast"
+   },
+   {
+    "ru": "Паспарту подкупил судей",
+    "en": "Passepartout bribed the judges"
+   },
+   {
+    "ru": "Пари перенесли",
+    "en": "The bet was postponed"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1889 году журналистка Нелли Блай отправилась повторить его путь по-настоящему и уложилась в 72 дня.",
+   "en": "In 1889 the journalist Nellie Bly set off to do the trip for real and made it in 72 days."
+  },
+  "source": "https://en.wikipedia.org/wiki/Around_the_World_in_Eighty_Days"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что измеряют «двадцать тысяч льё» в названии романа Жюля Верна?",
+   "en": "What do the 20,000 leagues in Jules Verne's title measure?"
+  },
+  "options": [
+   {
+    "ru": "Путь под водой",
+    "en": "Distance travelled"
+   },
+   {
+    "ru": "Глубину погружения",
+    "en": "The depth of the dive"
+   },
+   {
+    "ru": "Глубину океана",
+    "en": "The depth of the ocean"
+   },
+   {
+    "ru": "Вес «Наутилуса»",
+    "en": "The Nautilus's weight"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это около 80 тысяч километров, дважды вокруг Земли; океанов такой глубины не бывает.",
+   "en": "That is about 80,000 km, twice round the Earth; no ocean is anywhere near that deep."
+  },
+  "source": "https://en.wikipedia.org/wiki/Twenty_Thousand_Leagues_Under_the_Seas"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто в «Собачьем сердце» советует не читать до обеда советских газет?",
+   "en": "Who in Heart of a Dog advises against reading Soviet papers before lunch?"
+  },
+  "options": [
+   {
+    "ru": "Профессор Преображенский",
+    "en": "Professor Preobrazhensky"
+   },
+   {
+    "ru": "Доктор Борменталь",
+    "en": "Doctor Bormenthal"
+   },
+   {
+    "ru": "Шариков",
+    "en": "Sharikov"
+   },
+   {
+    "ru": "Швондер",
+    "en": "Shvonder"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Повесть написана в 1925 году, а на родине её напечатали только в 1987-м: до того она ходила в самиздате.",
+   "en": "Written in 1925, the story was only printed in the USSR in 1987; until then it passed around in samizdat."
+  },
+  "source": "https://ru.wikiquote.org/wiki/Собачье_сердце"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто Багира в оригинальной «Книге джунглей» Киплинга?",
+   "en": "What is Bagheera in Kipling's original Jungle Book?"
+  },
+  "options": [
+   {
+    "ru": "Пантера-самец",
+    "en": "A male panther"
+   },
+   {
+    "ru": "Пантера-самка",
+    "en": "A female panther"
+   },
+   {
+    "ru": "Тигрица",
+    "en": "A tigress"
+   },
+   {
+    "ru": "Рысь",
+    "en": "A lynx"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У Киплинга Багира — он; самкой пантера стала в русском переводе, а за ним и в мультфильме: «пантера» ведь женского рода.",
+   "en": "In Kipling Bagheera is a he; the Russian translation, then the Soviet cartoon, made the panther a she, as pantera is feminine."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bagheera"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько кругов ада у Данте в «Божественной комедии»?",
+   "en": "How many circles of Hell are there in Dante's Divine Comedy?"
+  },
+  "options": [
+   {
+    "ru": "Девять",
+    "en": "Nine"
+   },
+   {
+    "ru": "Семь",
+    "en": "Seven"
+   },
+   {
+    "ru": "Двенадцать",
+    "en": "Twelve"
+   },
+   {
+    "ru": "Три",
+    "en": "Three"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сам Данте назвал поэму просто «Комедией»: слово «Божественная» прибавилось к названию только в XVI веке.",
+   "en": "Dante called it simply the Comedy; \"Divine\" only joined the title in the 16th century."
+  },
+  "source": "https://en.wikipedia.org/wiki/Divine_Comedy"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что случилось с Достоевским в 1849 году?",
+   "en": "What happened to Dostoevsky in 1849?"
+  },
+  "options": [
+   {
+    "ru": "Помилован у расстрела",
+    "en": "Reprieved on the scaffold"
+   },
+   {
+    "ru": "Проиграл имение",
+    "en": "Gambled away an estate"
+   },
+   {
+    "ru": "Стрелялся с Тургеневым",
+    "en": "Fought a duel with Turgenev"
+   },
+   {
+    "ru": "Сбежал в Америку",
+    "en": "Ran away to America"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Царь велел объявить помилование только в последний момент, когда всё будет готово к расстрелу; казнь заменили каторгой.",
+   "en": "The Tsar ordered the pardon read out only when all was ready for the firing squad; death became hard labour."
+  },
+  "source": "https://en.wikipedia.org/wiki/Petrashevsky_Circle"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каким звуком заканчивается «Вишнёвый сад» Чехова?",
+   "en": "What sound ends Chekhov's The Cherry Orchard?"
+  },
+  "options": [
+   {
+    "ru": "Стуком топора",
+    "en": "An axe chopping"
+   },
+   {
+    "ru": "Выстрелом",
+    "en": "A gunshot"
+   },
+   {
+    "ru": "Колоколом",
+    "en": "A church bell"
+   },
+   {
+    "ru": "Свистом поезда",
+    "en": "A train whistle"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Чехов называл пьесу комедией и пришёл в ужас, когда Станиславский поставил её как трагедию.",
+   "en": "Chekhov called the play a comedy and was horrified when Stanislavski staged it as a tragedy."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Cherry_Orchard"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто в «Мастере и Маргарите» говорит «Рукописи не горят»?",
+   "en": "Who says \"Manuscripts don't burn\" in The Master and Margarita?"
+  },
+  "options": [
+   {
+    "ru": "Воланд",
+    "en": "Woland"
+   },
+   {
+    "ru": "Мастер",
+    "en": "The Master"
+   },
+   {
+    "ru": "Маргарита",
+    "en": "Margarita"
+   },
+   {
+    "ru": "Коровьев",
+    "en": "Koroviev"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Булгаков знал, о чём пишет: в 1930 году он сам сжёг первую редакцию романа.",
+   "en": "Bulgakov knew what he meant: in 1930 he burned the first draft of the novel himself."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Master_and_Margarita"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где работал Чарльз Диккенс в 12 лет?",
+   "en": "Where did Charles Dickens work at the age of 12?"
+  },
+  "options": [
+   {
+    "ru": "На фабрике ваксы",
+    "en": "In a shoe-polish factory"
+   },
+   {
+    "ru": "Юнгой на корабле",
+    "en": "As a ship's boy"
+   },
+   {
+    "ru": "В церковном хоре",
+    "en": "In a church choir"
+   },
+   {
+    "ru": "В типографии отца",
+    "en": "At his father's press"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его отец сидел в долговой тюрьме, а злодея Феджина Диккенс потом назвал по имени мальчика с той фабрики.",
+   "en": "His father was in debtors' prison; Dickens later named Oliver Twist's villain Fagin after a boy from that factory."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles_Dickens"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого чиновники приняли за ревизора в пьесе Гоголя?",
+   "en": "Who do the officials mistake for the inspector in Gogol's play?"
+  },
+  "options": [
+   {
+    "ru": "Хлестакова",
+    "en": "Khlestakov"
+   },
+   {
+    "ru": "Чичикова",
+    "en": "Chichikov"
+   },
+   {
+    "ru": "Бобчинского",
+    "en": "Bobchinsky"
+   },
+   {
+    "ru": "Городничего",
+    "en": "The mayor"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По словам Гоголя, замыслы и «Ревизора», и «Мёртвых душ» ему подарил Пушкин.",
+   "en": "Gogol said Pushkin gave him the ideas for both The Government Inspector and Dead Souls."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Government_Inspector"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем был прадед Пушкина Абрам Ганнибал?",
+   "en": "Who was Pushkin's great-grandfather Abram Gannibal?"
+  },
+  "options": [
+   {
+    "ru": "Африканец, крестник Петра I",
+    "en": "An African, Peter I's godson"
+   },
+   {
+    "ru": "Шотландский генерал",
+    "en": "A Scottish general"
+   },
+   {
+    "ru": "Турецкий паша",
+    "en": "A Turkish pasha"
+   },
+   {
+    "ru": "Венецианский купец",
+    "en": "A Venetian merchant"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пушкин гордился прадедом и начал о нём роман «Арап Петра Великого».",
+   "en": "Pushkin was proud of him and began a novel about him, The Moor of Peter the Great."
+  },
+  "source": "https://en.wikipedia.org/wiki/Abram_Petrovich_Gannibal"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из-за чего в 1613 году сгорел шекспировский театр «Глобус»?",
+   "en": "What burned down Shakespeare's Globe Theatre in 1613?"
+  },
+  "options": [
+   {
+    "ru": "Пушечный выстрел на спектакле",
+    "en": "A cannon fired in a play"
+   },
+   {
+    "ru": "Удар молнии",
+    "en": "A lightning strike"
+   },
+   {
+    "ru": "Свеча в гримёрке",
+    "en": "A candle backstage"
+   },
+   {
+    "ru": "Поджог конкурентов",
+    "en": "Arson by rivals"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пыж из пушки поджёг соломенную крышу; единственному пострадавшему потушили горящие штаны пивом.",
+   "en": "Wadding from a stage cannon lit the thatched roof; the only casualty had his burning breeches put out with ale."
+  },
+  "source": "https://en.wikipedia.org/wiki/Globe_Theatre"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто из этих писателей НЕ был врачом?",
+   "en": "Which of these writers was NOT a doctor?"
+  },
+  "options": [
+   {
+    "ru": "Лев Толстой",
+    "en": "Leo Tolstoy"
+   },
+   {
+    "ru": "Антон Чехов",
+    "en": "Anton Chekhov"
+   },
+   {
+    "ru": "Михаил Булгаков",
+    "en": "Mikhail Bulgakov"
+   },
+   {
+    "ru": "Артур Конан Дойл",
+    "en": "Arthur Conan Doyle"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Булгаков превратил годы работы сельским врачом в «Записки юного врача», а Толстой так и не окончил университет.",
+   "en": "Bulgakov turned his years as a country doctor into A Young Doctor's Notebook; Tolstoy never even finished university."
+  },
+  "source": "https://en.wikipedia.org/wiki/A_Young_Doctor%27s_Notebook"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет Эдмон Дантес провёл в замке Иф?",
+   "en": "How many years did Edmond Dantès spend in the Château d'If?"
+  },
+  "answer": 14,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Замок Иф — настоящая крепость-тюрьма у Марселя, и туристам там показывают «камеру Дантеса».",
+   "en": "The Château d'If is a real island prison off Marseille, where tourists are shown \"Dantès's cell\"."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько дней Достоевский написал роман «Игрок»?",
+   "en": "In how many days did Dostoevsky write The Gambler?"
+  },
+  "answer": 26,
+  "range": [
+   0,
+   120
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Опоздай он, издатель Стелловский на девять лет бесплатно получил бы права на его книги; спасла стенографистка Анна Сниткина, будущая жена.",
+   "en": "Had he been late, his publisher would have got his works free for nine years; stenographer Anna Snitkina, his future wife, saved him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Льву Толстому, когда он ушёл из дома и умер в пути?",
+   "en": "How old was Leo Tolstoy when he left home and died on the road?"
+  },
+  "answer": 82,
+  "range": [
+   30,
+   110
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Он умер на маленькой станции Астапово, которая теперь называется Лев Толстой.",
+   "en": "He died at the small railway station of Astapovo, which is now called Lev Tolstoy."
+  },
+  "source": "https://en.wikipedia.org/wiki/Leo_Tolstoy"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько сонетов в знаменитом сборнике Шекспира 1609 года?",
+   "en": "How many sonnets are in Shakespeare's famous 1609 collection?"
+  },
+  "answer": 154,
+  "range": [
+   0,
+   500
+  ],
+  "step": 2,
+  "tolerance": 30,
+  "unit": {
+   "ru": "сонетов",
+   "en": "sonnets"
+  },
+  "fact": {
+   "ru": "Первые 126 обращены к загадочному «прекрасному юноше», и кто он, спорят до сих пор.",
+   "en": "The first 126 are addressed to a mysterious \"Fair Youth\", and who he was is still debated."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shakespeare%27s_sonnets"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году вышла первая часть «Дон Кихота»?",
+   "en": "In which year was the first part of Don Quixote published?"
+  },
+  "answer": 1605,
+  "range": [
+   1500,
+   1900
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Вторую часть Сервантес дописал в спешке, когда в 1614 году вышло чужое поддельное продолжение.",
+   "en": "Cervantes hurried to finish Part Two after someone else's fake sequel came out in 1614."
+  },
+  "source": "https://en.wikipedia.org/wiki/Don_Quixote"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет Робинзон Крузо прожил на необитаемом острове?",
+   "en": "How many years did Robinson Crusoe live on his island?"
+  },
+  "answer": 28,
+  "range": [
+   0,
+   80
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Его прототип, моряк Александр Селькирк, провёл на острове у Чили лишь четыре года.",
+   "en": "His real-life model, the sailor Alexander Selkirk, spent only four years on an island off Chile."
+  },
+  "source": "https://en.wikipedia.org/wiki/Robinson_Crusoe"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В каком году «Мастер и Маргарита» впервые вышла в печати?",
+   "en": "In which year did The Master and Margarita first appear in print?"
+  },
+  "answer": 1966,
+  "range": [
+   1900,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Булгаков умер в 1940 году, и роман вышел только через 26 лет, в журнале «Москва» с цензурными купюрами.",
+   "en": "Bulgakov died in 1940; the novel came out 26 years later in the magazine Moskva, with censors' cuts."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Master_and_Margarita"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет было Мэри Шелли, когда она начала писать «Франкенштейна»?",
+   "en": "How old was Mary Shelley when she started writing Frankenstein?"
+  },
+  "answer": 18,
+  "range": [
+   0,
+   80
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Роман родился из спора с Байроном летом 1816 года: кто напишет самую страшную историю.",
+   "en": "The novel grew out of a contest with Byron in the summer of 1816: who could write the scariest story."
+  },
+  "source": "https://en.wikipedia.org/wiki/Frankenstein"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Жюль Верн написал роман «Париж в XX веке» в начале 1860-х. Когда его впервые издали?",
+   "en": "Jules Verne wrote Paris in the Twentieth Century in the early 1860s. When was it first published?"
+  },
+  "answer": 1994,
+  "range": [
+   1860,
+   2020
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Издатель Этцель счёл книгу мрачной и неправдоподобной и посоветовал отложить её лет на двадцать.",
+   "en": "His publisher Hetzel found it gloomy and far-fetched and advised putting it away for twenty years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Paris_in_the_Twentieth_Century"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет Жан Вальжан из «Отверженных» отсидел за кражу хлеба?",
+   "en": "How many years did Jean Valjean of Les Misérables serve for stealing bread?"
+  },
+  "answer": 19,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Дали ему пять лет, а остальные срок добавлял за попытки побега.",
+   "en": "He was sentenced to five years; his escape attempts added the rest."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jean_Valjean"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет Джульетте у Шекспира?",
+   "en": "How old is Shakespeare's Juliet?"
+  },
+  "answer": 13,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Ей нет и четырнадцати, а мать говорит, что в её годы уже была матерью.",
+   "en": "She is not yet fourteen, and her mother says she was already a mother at that age."
+  },
+  "source": "https://en.wikipedia.org/wiki/Juliet"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Лилипуты у Свифта в 12 раз меньше Гулливера. Какого они роста?",
+   "en": "Swift's Lilliputians are 12 times smaller than Gulliver. How tall are they?"
+  },
+  "answer": 15,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "Свифт пишет «меньше шести дюймов», а великаны в Бробдингнеге, наоборот, в 12 раз больше людей.",
+   "en": "Swift says \"under six inches\"; the giants of Brobdingnag are the reverse, 12 times bigger than us."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lilliput_and_Blefuscu"
+ }
+]

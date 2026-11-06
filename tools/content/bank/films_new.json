@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой фильм в 2010 году обогнал «Титаник» и стал самым кассовым в истории?",
+   "en": "Which film overtook Titanic in 2010 to become the highest-grossing film ever?"
+  },
+  "options": [
+   {
+    "ru": "Аватар",
+    "en": "Avatar"
+   },
+   {
+    "ru": "Начало",
+    "en": "Inception"
+   },
+   {
+    "ru": "Тёмный рыцарь",
+    "en": "The Dark Knight"
+   },
+   {
+    "ru": "Шрек 2",
+    "en": "Shrek 2"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Джеймс Кэмерон побил собственный рекорд: «Титаник» тоже его фильм, и он держал первое место 12 лет.",
+   "en": "James Cameron beat his own record: Titanic was his film too, and it had held the top spot for 12 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_highest-grossing_films"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто наконец получил «Оскар» за лучшую мужскую роль в 2016 году за фильм «Выживший»?",
+   "en": "Who finally won the Best Actor Oscar in 2016 for The Revenant?"
+  },
+  "options": [
+   {
+    "ru": "Леонардо Ди Каприо",
+    "en": "Leonardo DiCaprio"
+   },
+   {
+    "ru": "Том Харди",
+    "en": "Tom Hardy"
+   },
+   {
+    "ru": "Брэд Питт",
+    "en": "Brad Pitt"
+   },
+   {
+    "ru": "Мэтт Дэймон",
+    "en": "Matt Damon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До этого Ди Каприо четырежды номинировали как актёра — и всё мимо; шутки об этом давно стали мемом.",
+   "en": "He had been nominated as an actor four times before without a win, and the jokes about it had become a meme."
+  },
+  "source": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 2017 году на «Оскаре» по ошибке объявили не тот лучший фильм. Какой назвали?",
+   "en": "At the 2017 Oscars the wrong Best Picture was read out. Which film was announced?"
+  },
+  "options": [
+   {
+    "ru": "Ла-Ла Ленд",
+    "en": "La La Land"
+   },
+   {
+    "ru": "Прибытие",
+    "en": "Arrival"
+   },
+   {
+    "ru": "Манчестер у моря",
+    "en": "Manchester by the Sea"
+   },
+   {
+    "ru": "Скрытые фигуры",
+    "en": "Hidden Figures"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ведущим дали конверт «Лучшая актриса» (Эмма Стоун, «Ла-Ла Ленд»), а настоящим победителем был «Лунный свет».",
+   "en": "The presenters had been handed the Best Actress envelope (Emma Stone, La La Land); the real winner was Moonlight."
+  },
+  "source": "https://en.wikipedia.org/wiki/89th_Academy_Awards"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В какой стране снимали трилогию «Властелин колец» Питера Джексона?",
+   "en": "In which country was Peter Jackson's Lord of the Rings trilogy filmed?"
+  },
+  "options": [
+   {
+    "ru": "Новая Зеландия",
+    "en": "New Zealand"
+   },
+   {
+    "ru": "Ирландия",
+    "en": "Ireland"
+   },
+   {
+    "ru": "Исландия",
+    "en": "Iceland"
+   },
+   {
+    "ru": "Норвегия",
+    "en": "Norway"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Джексон — новозеландец, и декорации Хоббитона на ферме под Матаматой до сих пор принимают туристов.",
+   "en": "Jackson is a New Zealander, and the Hobbiton set on a farm near Matamata still welcomes tourists."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hobbiton_Movie_Set"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто сыграл капитана Джека Воробья в «Пиратах Карибского моря»?",
+   "en": "Who played Captain Jack Sparrow in Pirates of the Caribbean?"
+  },
+  "options": [
+   {
+    "ru": "Джонни Депп",
+    "en": "Johnny Depp"
+   },
+   {
+    "ru": "Орландо Блум",
+    "en": "Orlando Bloom"
+   },
+   {
+    "ru": "Джуд Лоу",
+    "en": "Jude Law"
+   },
+   {
+    "ru": "Хью Джекман",
+    "en": "Hugh Jackman"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Депп списал манеры героя с гитариста Rolling Stones Кита Ричардса — а потом Ричардс сыграл отца Джека.",
+   "en": "Depp based Jack's manner on Rolling Stones guitarist Keith Richards, who later played Jack's father."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jack_Sparrow"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В какой телеигре выигрывает юноша из Мумбаи в «Миллионере из трущоб» (2008)?",
+   "en": "Which TV quiz does the young man from Mumbai win in Slumdog Millionaire (2008)?"
+  },
+  "options": [
+   {
+    "ru": "«Кто хочет стать миллионером?»",
+    "en": "Who Wants to Be a Millionaire?"
+   },
+   {
+    "ru": "«Слабое звено»",
+    "en": "The Weakest Link"
+   },
+   {
+    "ru": "«Своя игра»",
+    "en": "Jeopardy!"
+   },
+   {
+    "ru": "«Колесо фортуны»",
+    "en": "Wheel of Fortune"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фильм снят по роману индийского дипломата Викаса Сварупа и взял восемь «Оскаров», включая лучший фильм.",
+   "en": "It is based on a novel by Indian diplomat Vikas Swarup and won eight Oscars, including Best Picture."
+  },
+  "source": "https://en.wikipedia.org/wiki/Slumdog_Millionaire"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько фильмов в основной серии о Гарри Поттере?",
+   "en": "How many films are there in the main Harry Potter series?"
+  },
+  "options": [
+   {
+    "ru": "8",
+    "en": "8"
+   },
+   {
+    "ru": "7",
+    "en": "7"
+   },
+   {
+    "ru": "9",
+    "en": "9"
+   },
+   {
+    "ru": "10",
+    "en": "10"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Книг семь, но последнюю, «Дары Смерти», разделили на два фильма — и вышло восемь за десять лет, с 2001 по 2011.",
+   "en": "There are seven books, but the last, Deathly Hallows, was split in two, giving eight films from 2001 to 2011."
+  },
+  "source": "https://en.wikipedia.org/wiki/Harry_Potter_(film_series)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что выращивает на Марсе герой Мэтта Дэймона в фильме «Марсианин»?",
+   "en": "What does Matt Damon's character grow on Mars in The Martian?"
+  },
+  "options": [
+   {
+    "ru": "Картофель",
+    "en": "Potatoes"
+   },
+   {
+    "ru": "Пшеницу",
+    "en": "Wheat"
+   },
+   {
+    "ru": "Помидоры",
+    "en": "Tomatoes"
+   },
+   {
+    "ru": "Кукурузу",
+    "en": "Corn"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Энди Уир сначала бесплатно выкладывал роман по главе на своём сайте: до этого издательства отвергали его книги.",
+   "en": "Andy Weir first posted the novel free on his website, one chapter at a time, after agents had turned down his earlier books."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Martian_(Weir_novel)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Песни какой группы звучат в мюзикле «Мамма Миа!» (2008) с Мерил Стрип?",
+   "en": "Whose songs fill the musical Mamma Mia! (2008) starring Meryl Streep?"
+  },
+  "options": [
+   {
+    "ru": "группа ABBA",
+    "en": "ABBA"
+   },
+   {
+    "ru": "группа Queen",
+    "en": "Queen"
+   },
+   {
+    "ru": "группа Boney M.",
+    "en": "Boney M."
+   },
+   {
+    "ru": "группа Roxette",
+    "en": "Roxette"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Авторы песен Бенни Андерссон и Бьорн Ульвеус мелькают в кадре: один играет на пианино, другой — греческий бог.",
+   "en": "Songwriters Benny Andersson and Björn Ulvaeus have cameos: one plays piano, the other a Greek god."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mamma_Mia!_(film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "С каким фильмом «Барби» вышла в прокат в один и тот же день в июле 2023 года?",
+   "en": "Which film opened on the very same day as Barbie in July 2023?"
+  },
+  "options": [
+   {
+    "ru": "Оппенгеймер",
+    "en": "Oppenheimer"
+   },
+   {
+    "ru": "Индиана Джонс и колесо судьбы",
+    "en": "Indiana Jones and the Dial of Destiny"
+   },
+   {
+    "ru": "Русалочка",
+    "en": "The Little Mermaid"
+   },
+   {
+    "ru": "Миссия невыполнима 7",
+    "en": "Mission: Impossible 7"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Зрители устраивали двойные сеансы — так родился мем «Барбенгеймер», а «Оппенгеймер» потом взял 7 «Оскаров».",
+   "en": "Fans made it a double bill, the 'Barbenheimer' meme was born, and Oppenheimer went on to win 7 Oscars."
+  },
+  "source": "https://en.wikipedia.org/wiki/Barbenheimer"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как зовут волейбольный мяч, с которым разговаривает герой Тома Хэнкса в «Изгое»?",
+   "en": "What is the name of the volleyball Tom Hanks's character talks to in Cast Away?"
+  },
+  "options": [
+   {
+    "ru": "Уилсон",
+    "en": "Wilson"
+   },
+   {
+    "ru": "Сполдинг",
+    "en": "Spalding"
+   },
+   {
+    "ru": "Микаса",
+    "en": "Mikasa"
+   },
+   {
+    "ru": "Бобби",
+    "en": "Bobby"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Уилсон — просто марка мяча; в 2021 году один из реквизитных мячей ушёл с аукциона больше чем за 300 тысяч долларов.",
+   "en": "Wilson is just the ball's brand; in 2021 one of the film's prop balls sold at auction for over $300,000."
+  },
+  "source": "https://hypebeast.com/2021/11/tom-hanks-cast-away-wilson-volleyball-prop-store-auction-results"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой актёр впервые сыграл Джеймса Бонда в «Казино „Рояль“» 2006 года?",
+   "en": "Which actor made his debut as James Bond in Casino Royale (2006)?"
+  },
+  "options": [
+   {
+    "ru": "Дэниел Крейг",
+    "en": "Daniel Craig"
+   },
+   {
+    "ru": "Пирс Броснан",
+    "en": "Pierce Brosnan"
+   },
+   {
+    "ru": "Клайв Оуэн",
+    "en": "Clive Owen"
+   },
+   {
+    "ru": "Хью Джекман",
+    "en": "Hugh Jackman"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Таблоиды дразнили нового Бонда «Джеймсом Блёклым» (Bland), а фильм стал самым кассовым Бондом своего времени.",
+   "en": "Tabloids mocked the casting ('The Name's Bland – James Bland'), yet it became the highest-grossing Bond film of its time."
+  },
+  "source": "https://en.wikipedia.org/wiki/Casino_Royale_(2006_film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто спел заглавную песню к фильму «007: Координаты „Скайфолл“» (2012)?",
+   "en": "Who sang the title song of the Bond film Skyfall (2012)?"
+  },
+  "options": [
+   {
+    "ru": "Адель",
+    "en": "Adele"
+   },
+   {
+    "ru": "Сэм Смит",
+    "en": "Sam Smith"
+   },
+   {
+    "ru": "Билли Айлиш",
+    "en": "Billie Eilish"
+   },
+   {
+    "ru": "Шакира",
+    "en": "Shakira"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это первая песня из фильмов о Бонде, получившая «Оскар»; позже его взяли и Сэм Смит, и Билли Айлиш.",
+   "en": "It was the first Bond song ever to win an Oscar; Sam Smith and Billie Eilish later won for theirs too."
+  },
+  "source": "https://en.wikipedia.org/wiki/Skyfall_(Adele_song)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем необычен герой Брэда Питта в «Загадочной истории Бенджамина Баттона»?",
+   "en": "What is unusual about Brad Pitt's hero in The Curious Case of Benjamin Button?"
+  },
+  "options": [
+   {
+    "ru": "Он стареет наоборот",
+    "en": "He ages backwards"
+   },
+   {
+    "ru": "Он никогда не спит",
+    "en": "He never sleeps"
+   },
+   {
+    "ru": "Он видит будущее",
+    "en": "He can see the future"
+   },
+   {
+    "ru": "Он невидим",
+    "en": "He is invisible"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фильм снят по рассказу Фрэнсиса Скотта Фицджеральда 1922 года — спустя 86 лет после публикации.",
+   "en": "It is based on a 1922 short story by F. Scott Fitzgerald, filmed 86 years after it was published."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Curious_Case_of_Benjamin_Button_(film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "По стене какого небоскрёба лазал сам Том Круз в «Миссия невыполнима: Протокол Фантом»?",
+   "en": "Which skyscraper did Tom Cruise climb himself in Mission: Impossible – Ghost Protocol?"
+  },
+  "options": [
+   {
+    "ru": "Бурдж-Халифа",
+    "en": "Burj Khalifa"
+   },
+   {
+    "ru": "Эмпайр-стейт-билдинг",
+    "en": "Empire State Building"
+   },
+   {
+    "ru": "Петронас",
+    "en": "Petronas Towers"
+   },
+   {
+    "ru": "Шанхайская башня",
+    "en": "Shanghai Tower"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Круз делал трюк сам, на тросах, снаружи самого высокого здания мира — 828-метровой башни в Дубае.",
+   "en": "Cruise did the stunt himself, on cables, outside the world's tallest building, the 828 m tower in Dubai."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mission:_Impossible_%E2%80%93_Ghost_Protocol"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой фильм в 2020 году стал первым неанглоязычным обладателем «Оскара» за лучший фильм?",
+   "en": "In 2020, which became the first non-English-language film to win Best Picture?"
+  },
+  "options": [
+   {
+    "ru": "Паразиты",
+    "en": "Parasite"
+   },
+   {
+    "ru": "Рома",
+    "en": "Roma"
+   },
+   {
+    "ru": "Амели",
+    "en": "Amélie"
+   },
+   {
+    "ru": "Крадущийся тигр, затаившийся дракон",
+    "en": "Crouching Tiger, Hidden Dragon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Корейский фильм Пон Джун Хо взял и «Оскар», и «Золотую пальмовую ветвь» — такого не было с фильма «Марти» 1955 года.",
+   "en": "Bong Joon-ho's Korean film won both Best Picture and the Palme d'Or, a double not seen since Marty (1955)."
+  },
+  "source": "https://en.wikipedia.org/wiki/Parasite_(2019_film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В пустыне какой страны в основном снимали «Безумный Макс: Дорога ярости» (2015)?",
+   "en": "In which country's desert was most of Mad Max: Fury Road (2015) filmed?"
+  },
+  "options": [
+   {
+    "ru": "Намибия",
+    "en": "Namibia"
+   },
+   {
+    "ru": "Австралия",
+    "en": "Australia"
+   },
+   {
+    "ru": "Марокко",
+    "en": "Morocco"
+   },
+   {
+    "ru": "Мексика",
+    "en": "Mexico"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Снимать собирались в Австралии, но после редких ливней пустыня там зацвела цветами, и съёмки увезли в Африку.",
+   "en": "It was meant to be shot in Australia, but rare heavy rains made the desert bloom with flowers, so the shoot moved to Africa."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mad_Max:_Fury_Road"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько времени проходит на Земле за один час на планете Миллер в «Интерстелларе»?",
+   "en": "In Interstellar, how much time passes on Earth during one hour on Miller's planet?"
+  },
+  "options": [
+   {
+    "ru": "7 лет",
+    "en": "7 years"
+   },
+   {
+    "ru": "1 месяц",
+    "en": "1 month"
+   },
+   {
+    "ru": "1 год",
+    "en": "1 year"
+   },
+   {
+    "ru": "70 лет",
+    "en": "70 years"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Планета кружит у чёрной дыры Гаргантюа, и её гравитация замедляет время: пока герои были внизу, на корабле прошло 23 года.",
+   "en": "The planet circles the black hole Gargantua, whose gravity slows time: while the crew was down there, 23 years passed on the ship."
+  },
+  "source": "https://en.wikiquote.org/wiki/Interstellar_(film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что вместо пальцев у людей в одной из вселенных фильма «Всё везде и сразу»?",
+   "en": "In one universe of Everything Everywhere All at Once, what do people have instead of fingers?"
+  },
+  "options": [
+   {
+    "ru": "Сосиски",
+    "en": "Hot dogs"
+   },
+   {
+    "ru": "Морковки",
+    "en": "Carrots"
+   },
+   {
+    "ru": "Карандаши",
+    "en": "Pencils"
+   },
+   {
+    "ru": "Ложки",
+    "en": "Spoons"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эта абсурдная комедия взяла 7 «Оскаров», включая лучший фильм, а Мишель Йео стала первой азиаткой — лучшей актрисой.",
+   "en": "This absurdist comedy won 7 Oscars including Best Picture, and Michelle Yeoh became the first Asian Best Actress."
+  },
+  "source": "https://en.wikipedia.org/wiki/Everything_Everywhere_All_at_Once"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что Амели «отправляет в кругосветку», чтобы растормошить отца-домоседа?",
+   "en": "What does Amélie send 'travelling the world' to shake up her stay-at-home father?"
+  },
+  "options": [
+   {
+    "ru": "Его садового гнома",
+    "en": "His garden gnome"
+   },
+   {
+    "ru": "Его кота",
+    "en": "His cat"
+   },
+   {
+    "ru": "Плюшевого мишку",
+    "en": "A teddy bear"
+   },
+   {
+    "ru": "Его попугая",
+    "en": "His parrot"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Розыгрыш с «путешествующим гномом» старше фильма: о похищенном садовом гноме писала сиднейская газета ещё в 1986 году.",
+   "en": "The travelling gnome prank is older than the film: a Sydney newspaper reported a kidnapped garden gnome back in 1986."
+  },
+  "source": "https://en.wikipedia.org/wiki/Travelling_gnome"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой актёр умер во время съёмок «Гладиатора», и его сцены доделали с цифровым двойником?",
+   "en": "Which actor died while Gladiator was being shot, so his scenes were finished with a digital double?"
+  },
+  "options": [
+   {
+    "ru": "Оливер Рид",
+    "en": "Oliver Reed"
+   },
+   {
+    "ru": "Ричард Харрис",
+    "en": "Richard Harris"
+   },
+   {
+    "ru": "Питер О’Тул",
+    "en": "Peter O'Toole"
+   },
+   {
+    "ru": "Кристофер Ли",
+    "en": "Christopher Lee"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Рид играл Проксимо, который по сценарию должен был выжить; сюжет переписали, а лицо Рида перенесли на дублёра.",
+   "en": "Reed played Proximo, who was meant to survive; the script was rewritten and Reed's face was digitally put onto a body double."
+  },
+  "source": "https://en.wikipedia.org/wiki/Oliver_Reed"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На чём основана французская комедия «1+1» («Неприкасаемые», 2011)?",
+   "en": "What is the French hit comedy The Intouchables (2011) based on?"
+  },
+  "options": [
+   {
+    "ru": "На реальной истории",
+    "en": "A true story"
+   },
+   {
+    "ru": "На пьесе",
+    "en": "A stage play"
+   },
+   {
+    "ru": "На американском фильме",
+    "en": "An American film"
+   },
+   {
+    "ru": "На комиксе",
+    "en": "A comic book"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Прототипы — парализованный аристократ Филипп Поццо ди Борго и его помощник Абдель Селлу; позже Голливуд снял ремейк.",
+   "en": "It is based on paralysed aristocrat Philippe Pozzo di Borgo and his carer Abdel Sellou; Hollywood later remade it."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Intouchables"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Крик Арагорна, пнувшего шлем орка в «Двух крепостях», настоящий. Что случилось?",
+   "en": "Aragorn's cry when he kicks an orc helmet in The Two Towers is real. What happened?"
+  },
+  "options": [
+   {
+    "ru": "Он сломал пальцы ноги",
+    "en": "He broke his toes"
+   },
+   {
+    "ru": "Его ужалила оса",
+    "en": "A wasp stung him"
+   },
+   {
+    "ru": "Он порезался мечом",
+    "en": "He cut himself on a sword"
+   },
+   {
+    "ru": "Он обжёгся о факел",
+    "en": "He burned himself on a torch"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вигго Мортенсен сломал два пальца, но не вышел из образа, и Джексон оставил в фильме именно этот дубль.",
+   "en": "Viggo Mortensen broke two toes but stayed in character, and Jackson kept that very take in the film."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Two_Towers"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой фильм получил самый первый «Оскар» за лучший анимационный фильм в 2002 году?",
+   "en": "Which film won the very first Oscar for Best Animated Feature, in 2002?"
+  },
+  "options": [
+   {
+    "ru": "Шрек",
+    "en": "Shrek"
+   },
+   {
+    "ru": "Корпорация монстров",
+    "en": "Monsters, Inc."
+   },
+   {
+    "ru": "Ледниковый период",
+    "en": "Ice Age"
+   },
+   {
+    "ru": "Унесённые призраками",
+    "en": "Spirited Away"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Майк Майерс уже озвучил Шрека, но, посмотрев черновой монтаж, перезаписал все реплики с шотландским акцентом.",
+   "en": "Mike Myers had already voiced Shrek, but after seeing a rough cut he re-recorded every line in a Scottish accent."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shrek"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "С 2014 по 2019 год режиссёры из какой страны пять раз брали «Оскар» за режиссуру?",
+   "en": "From 2014 to 2019, directors from which country won the Best Director Oscar five times?"
+  },
+  "options": [
+   {
+    "ru": "Мексика",
+    "en": "Mexico"
+   },
+   {
+    "ru": "Великобритания",
+    "en": "United Kingdom"
+   },
+   {
+    "ru": "Франция",
+    "en": "France"
+   },
+   {
+    "ru": "Южная Корея",
+    "en": "South Korea"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Куарон («Гравитация», «Рома»), Иньярриту («Бёрдмэн», «Выживший») и дель Торо дружат, их зовут «три амиго».",
+   "en": "Cuarón (Gravity, Roma), Iñárritu (Birdman, The Revenant) and del Toro are friends nicknamed the Three Amigos."
+  },
+  "source": "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Director"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На чём основаны фильмы «Пираты Карибского моря»?",
+   "en": "What are the Pirates of the Caribbean films based on?"
+  },
+  "options": [
+   {
+    "ru": "На аттракционе Диснейленда",
+    "en": "A Disneyland ride"
+   },
+   {
+    "ru": "На романе Стивенсона",
+    "en": "A Stevenson novel"
+   },
+   {
+    "ru": "На комиксе",
+    "en": "A comic book"
+   },
+   {
+    "ru": "На видеоигре",
+    "en": "A video game"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Аттракцион открылся в 1967 году, а после успеха фильма в него добавили фигуру самого Джека Воробья.",
+   "en": "The ride opened in 1967, and after the film's success a figure of Jack Sparrow himself was added to it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean_(attraction)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Жёлтый комбинезон Невесты в «Убить Билла» — дань уважения какой звезде?",
+   "en": "The Bride's yellow jumpsuit in Kill Bill is a tribute to which star?"
+  },
+  "options": [
+   {
+    "ru": "Брюс Ли",
+    "en": "Bruce Lee"
+   },
+   {
+    "ru": "Джеки Чан",
+    "en": "Jackie Chan"
+   },
+   {
+    "ru": "Чак Норрис",
+    "en": "Chuck Norris"
+   },
+   {
+    "ru": "Джет Ли",
+    "en": "Jet Li"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Такой же жёлтый костюм с чёрными полосами Брюс Ли носил в «Игре смерти» — фильме, который он так и не успел закончить.",
+   "en": "Bruce Lee wore the same yellow suit with black stripes in Game of Death, the film he left unfinished when he died."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kill_Bill:_Volume_1"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как в «Начале» сняли драку в коридоре отеля, где гравитация то и дело уходит в сторону?",
+   "en": "In Inception, how was the hotel corridor fight with ever-shifting gravity filmed?"
+  },
+  "options": [
+   {
+    "ru": "В настоящем вращающемся коридоре",
+    "en": "In a real rotating corridor"
+   },
+   {
+    "ru": "Целиком на компьютере",
+    "en": "Entirely with CGI"
+   },
+   {
+    "ru": "В пикирующем самолёте",
+    "en": "In a diving plane"
+   },
+   {
+    "ru": "Под водой",
+    "en": "Underwater"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Построили 30-метровый коридор, который вращался целиком, а Джозеф Гордон-Левитт неделями учился в нём драться.",
+   "en": "The crew built a 30-metre corridor that turned as a whole, and Joseph Gordon-Levitt spent weeks learning to fight in it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Inception"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что Кристофер Нолан разбил по-настоящему для «Довода» вместо компьютерной графики?",
+   "en": "What did Christopher Nolan really crash for Tenet instead of using CGI?"
+  },
+  "options": [
+   {
+    "ru": "Боинг 747",
+    "en": "A Boeing 747"
+   },
+   {
+    "ru": "Грузовой поезд",
+    "en": "A freight train"
+   },
+   {
+    "ru": "Подводную лодку",
+    "en": "A submarine"
+   },
+   {
+    "ru": "Вертолёт",
+    "en": "A helicopter"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Нолан решил, что купить настоящий старый «Боинг» выгоднее, чем строить модели и рисовать сцену на компьютере.",
+   "en": "Nolan judged that buying a real old Boeing was more cost-effective than building models or using visual effects."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tenet_(film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как в «Социальной сети» (2010) сыграли близнецов Уинклвосс?",
+   "en": "How were the Winklevoss twins played in The Social Network (2010)?"
+  },
+  "options": [
+   {
+    "ru": "Один актёр, удвоенный компьютером",
+    "en": "One actor, doubled digitally"
+   },
+   {
+    "ru": "Близнецы-актёры",
+    "en": "Twin actors"
+   },
+   {
+    "ru": "Сами братья Уинклвосс",
+    "en": "The real Winklevoss twins"
+   },
+   {
+    "ru": "Отец и сын",
+    "en": "A father and son"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Обоих братьев сыграл Арми Хаммер: напротив него снимался дублёр, а потом на лицо дублёра наложили лицо Хаммера.",
+   "en": "Armie Hammer played both: a body double acted opposite him, and Hammer's face was later digitally put onto the double's."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Social_Network"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "О свитере какого цвета Миранда читает лекцию героине в фильме «Дьявол носит Prada»?",
+   "en": "In The Devil Wears Prada, Miranda gives a speech about a sweater of which colour?"
+  },
+  "options": [
+   {
+    "ru": "Небесно-голубого",
+    "en": "Cerulean"
+   },
+   {
+    "ru": "Бирюзового",
+    "en": "Turquoise"
+   },
+   {
+    "ru": "Лавандового",
+    "en": "Lavender"
+   },
+   {
+    "ru": "Бежевого",
+    "en": "Beige"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Миранду считают списанной с главреда Vogue Анны Винтур: автор книги когда-то работала у неё ассистенткой.",
+   "en": "Miranda is widely seen as based on Vogue editor Anna Wintour, whom the book's author once worked for as an assistant."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Devil_Wears_Prada_(film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем необычен фильм «Артист», получивший «Оскар» за лучший фильм в 2012 году?",
+   "en": "What is unusual about The Artist, which won Best Picture in 2012?"
+  },
+  "options": [
+   {
+    "ru": "Он немой и чёрно-белый",
+    "en": "It is silent, in black and white"
+   },
+   {
+    "ru": "Он полностью рисованный",
+    "en": "It is fully animated"
+   },
+   {
+    "ru": "Он снят на латыни",
+    "en": "It is in Latin"
+   },
+   {
+    "ru": "Он снят на телефон",
+    "en": "It was shot on a phone"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Почти немой фильм не побеждал с самой первой церемонии 1929 года, когда лучшим фильмом стали «Крылья».",
+   "en": "No mainly silent film had won since the very first ceremony in 1929, when Wings took the top prize."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Artist_(film)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто первой из женщин получил «Оскар» за режиссуру?",
+   "en": "Who was the first woman to win the Oscar for Best Director?"
+  },
+  "options": [
+   {
+    "ru": "Кэтрин Бигелоу",
+    "en": "Kathryn Bigelow"
+   },
+   {
+    "ru": "София Коппола",
+    "en": "Sofia Coppola"
+   },
+   {
+    "ru": "Грета Гервиг",
+    "en": "Greta Gerwig"
+   },
+   {
+    "ru": "Джейн Кэмпион",
+    "en": "Jane Campion"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она победила в 2010 году с «Повелителем бури», обойдя бывшего мужа Джеймса Кэмерона и его «Аватар».",
+   "en": "She won in 2010 for The Hurt Locker, beating her ex-husband James Cameron and his Avatar."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kathryn_Bigelow"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой фильм в 2024 году взял «Оскар» за спецэффекты при бюджете всего 10–15 млн долларов?",
+   "en": "Which film won the 2024 visual effects Oscar on a budget of just $10–15 million?"
+  },
+  "options": [
+   {
+    "ru": "Годзилла: Минус один",
+    "en": "Godzilla Minus One"
+   },
+   {
+    "ru": "Наполеон",
+    "en": "Napoleon"
+   },
+   {
+    "ru": "Создатель",
+    "en": "The Creator"
+   },
+   {
+    "ru": "Аватар: Путь воды",
+    "en": "Avatar: The Way of Water"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это первый фильм не на английском языке с «Оскаром» за эффекты; ими руководил сам режиссёр Такаси Ямадзаки.",
+   "en": "It was the first non-English-language film to win the effects Oscar; director Takashi Yamazaki supervised the effects himself."
+  },
+  "source": "https://en.wikipedia.org/wiki/Godzilla_Minus_One"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Песня «Naatu Naatu» в 2023 году получила «Оскар». Из фильма какой страны она?",
+   "en": "The song Naatu Naatu won an Oscar in 2023. Which country's film is it from?"
+  },
+  "options": [
+   {
+    "ru": "Индия",
+    "en": "India"
+   },
+   {
+    "ru": "Южная Корея",
+    "en": "South Korea"
+   },
+   {
+    "ru": "Турция",
+    "en": "Turkey"
+   },
+   {
+    "ru": "Бразилия",
+    "en": "Brazil"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это песня из боевика «RRR» на языке телугу — первая индийская и вообще первая азиатская песня с «Оскаром».",
+   "en": "It comes from the Telugu action film RRR and was the first Indian, and first Asian, song to win the Oscar."
+  },
+  "source": "https://en.wikipedia.org/wiki/Naatu_Naatu"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем уникален «Русский ковчег» Сокурова, снятый в Эрмитаже в 2001 году?",
+   "en": "What is unique about Sokurov's Russian Ark, shot in the Hermitage in 2001?"
+  },
+  "options": [
+   {
+    "ru": "Весь фильм — один кадр",
+    "en": "The film is one unbroken shot"
+   },
+   {
+    "ru": "Он немой",
+    "en": "It is silent"
+   },
+   {
+    "ru": "Он снят при свечах",
+    "en": "It was lit only by candles"
+   },
+   {
+    "ru": "Он снят задом наперёд",
+    "en": "It was filmed backwards"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Камера 87 минут без единой склейки шла по 33 залам Эрмитажа; три попытки сорвались, удалась только четвёртая.",
+   "en": "The camera moved for 87 minutes without a cut through 33 rooms of the Hermitage; three tries failed, the fourth worked."
+  },
+  "source": "https://en.wikipedia.org/wiki/Russian_Ark"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как снят боевик Ильи Найшуллера «Хардкор»?",
+   "en": "How is Ilya Naishuller's action film Hardcore Henry shot?"
+  },
+  "options": [
+   {
+    "ru": "Целиком глазами героя",
+    "en": "Entirely through the hero's eyes"
+   },
+   {
+    "ru": "В одной комнате",
+    "en": "In a single room"
+   },
+   {
+    "ru": "Целиком в замедленной съёмке",
+    "en": "Entirely in slow motion"
+   },
+   {
+    "ru": "Задом наперёд",
+    "en": "In reverse"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Камеры GoPro крепили на маску каскадёров; идея выросла из клипов группы Biting Elbows, где поёт сам Найшуллер.",
+   "en": "GoPro cameras were fixed to a mask worn by stuntmen; it grew out of videos for Naishuller's own band, Biting Elbows."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hardcore_Henry"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Съёмки «Изгоя» прервали почти на год, чтобы Том Хэнкс похудел. Чем занялся режиссёр?",
+   "en": "Cast Away paused for almost a year so Tom Hanks could lose weight. What did the director do?"
+  },
+  "options": [
+   {
+    "ru": "Снял другой фильм той же группой",
+    "en": "Made another film with the same crew"
+   },
+   {
+    "ru": "Жил на том же острове",
+    "en": "Lived on the same island"
+   },
+   {
+    "ru": "Снимал рекламу мячей",
+    "en": "Shot volleyball adverts"
+   },
+   {
+    "ru": "Писал продолжение",
+    "en": "Wrote a sequel"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Роберт Земекис снял триллер «Что скрывает ложь», а Хэнкс сбрасывал набранные для роли 23 кг и отращивал бороду.",
+   "en": "Robert Zemeckis made the thriller What Lies Beneath, while Hanks shed the 23 kg he had gained and grew his beard."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cast_Away"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько всего «Оскаров» получила трилогия «Властелин колец»?",
+   "en": "How many Oscars did the Lord of the Rings trilogy win in total?"
+  },
+  "answer": 17,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "наград",
+   "en": "Oscars"
+  },
+  "fact": {
+   "ru": "Первые два фильма взяли 4 и 2 награды, а «Возвращение короля» — 11 из 11, повторив рекорд «Бен-Гура» и «Титаника».",
+   "en": "The first two films won 4 and 2, then The Return of the King won all 11 of its nominations, tying Ben-Hur and Titanic."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На съёмках «Аватар: Путь воды» Кейт Уинслет задержала дыхание под водой. На сколько секунд?",
+   "en": "Filming Avatar: The Way of Water, Kate Winslet held her breath underwater. For how many seconds?"
+  },
+  "answer": 434,
+  "range": [
+   30,
+   1200
+  ],
+  "step": 1,
+  "tolerance": 90,
+  "unit": {
+   "ru": "секунд",
+   "en": "seconds"
+  },
+  "fact": {
+   "ru": "Это 7 минут 14 секунд — дольше, чем Том Круз (около 6 минут) на съёмках «Миссия невыполнима: Племя изгоев».",
+   "en": "That's 7 minutes 14 seconds, beating Tom Cruise's roughly 6 minutes for Mission: Impossible – Rogue Nation."
+  },
+  "source": "https://www.moviemaker.com/james-cameron-kate-winslet-held-breath-7-minutes-and-14-seconds-avatar"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Копия «Оппенгеймера» на плёнке IMAX 70 мм весила как пианино. Сколько килограммов?",
+   "en": "The 70 mm IMAX film print of Oppenheimer weighed as much as a piano. How many kilograms?"
+  },
+  "answer": 270,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 10,
+  "tolerance": 70,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Трёхчасовой фильм занимал около 18 км плёнки — по словам Нолана, это предел того, что выдерживает проектор IMAX.",
+   "en": "The three-hour film took about 18 km of film, which Nolan said was the limit an IMAX projector can handle."
+  },
+  "source": "https://www.cbsnews.com/news/oppenheimer-runtime-imax-film-length-weight"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Хоррор «Паранормальное явление» (2007) собрал почти 200 млн долларов. За сколько его сняли?",
+   "en": "The horror film Paranormal Activity (2007) took almost $200 million. How much did it cost to shoot?"
+  },
+  "answer": 15000,
+  "range": [
+   0,
+   200000
+  ],
+  "step": 1000,
+  "tolerance": 10000,
+  "unit": {
+   "ru": "долларов",
+   "en": "dollars"
+  },
+  "fact": {
+   "ru": "Режиссёр Орен Пели снял его за неделю в частном доме на бытовую видеокамеру; новую концовку студия доснимала позже.",
+   "en": "Director Oren Peli shot it in seven days in a private house on a home video camera; the studio added a new ending later."
+  },
+  "source": "https://en.wikipedia.org/wiki/Paranormal_Activity"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Обычное кино — 24 кадра в секунду. С какой частотой Питер Джексон снял «Хоббита» (2012)?",
+   "en": "Ordinary films run at 24 frames per second. At what rate did Peter Jackson shoot The Hobbit (2012)?"
+  },
+  "answer": 48,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "кадров/с",
+   "en": "fps"
+  },
+  "fact": {
+   "ru": "Это первый фильм в широком прокате с такой частотой; многие критики ругали картинку за излишнюю «гиперреальность».",
+   "en": "It was the first wide release shot at that rate; many critics complained the picture looked too hyper-real."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Hobbit:_An_Unexpected_Journey"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько дней Пи провёл в шлюпке с тигром в фильме «Жизнь Пи»?",
+   "en": "How many days does Pi spend in the lifeboat with the tiger in Life of Pi?"
+  },
+  "answer": 227,
+  "range": [
+   10,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Тигра зовут Ричард Паркер из-за путаницы в бумагах: так звали охотника, который его поймал.",
+   "en": "The tiger is called Richard Parker because of a paperwork mix-up: that was the name of the hunter who caught him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Life_of_Pi_(film)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Терминал» с Томом Хэнксом вдохновлён реальным человеком. Сколько лет он прожил в аэропорту Парижа?",
+   "en": "The Terminal was inspired by a real man. How many years did he live in a Paris airport?"
+  },
+  "answer": 18,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Иранец Мехран Карими Насери застрял без документов в аэропорту Шарль-де-Голль с 1988 по 2006 год.",
+   "en": "Iranian Mehran Karimi Nasseri was stuck without valid papers at Charles de Gaulle airport from 1988 to 2006."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mehran_Karimi_Nasseri"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Каким по счёту официальным фильмом о Бонде стал «Не время умирать» (2021)?",
+   "en": "Which number in the official James Bond series is No Time to Die (2021)?"
+  },
+  "answer": 25,
+  "range": [
+   1,
+   80
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "",
+   "en": ""
+  },
+  "fact": {
+   "ru": "Серия идёт с 1962 года, а «Не время умирать» стал последним из пяти фильмов о Бонде с Дэниелом Крейгом.",
+   "en": "The series began in 1962, and No Time to Die was the last of Daniel Craig's five Bond films."
+  },
+  "source": "https://en.wikipedia.org/wiki/No_Time_to_Die"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Аватар» вышел в 2009 году. В каком году Джеймс Кэмерон впервые изложил его сюжет на бумаге?",
+   "en": "Avatar came out in 2009. In what year did James Cameron first write its story down?"
+  },
+  "answer": 1994,
+  "range": [
+   1950,
+   2009
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Это была 80-страничная заявка; Кэмерон отложил фильм на годы, пока компьютерная графика не дорастёт до его идеи.",
+   "en": "It was an 80-page treatment; Cameron shelved the film for years until computer graphics caught up with his vision."
+  },
+  "source": "https://en.wikipedia.org/wiki/Avatar_(2009_film)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Фильм «Гравитация» (2013) открывается одним кадром без склеек. Сколько минут он длится?",
+   "en": "Gravity (2013) opens with a single unbroken shot. How many minutes long is it?"
+  },
+  "answer": 13,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "минут",
+   "en": "minutes"
+  },
+  "fact": {
+   "ru": "Кадр длиной 12 минут 46 секунд попал в Книгу рекордов Гиннесса как самый длинный кадр со спецэффектами.",
+   "en": "At 12 minutes 46 seconds it entered Guinness World Records as the longest single visual effects shot."
+  },
+  "source": "https://www.guinnessworldrecords.com/world-records/692718-longest-single-visual-effects-shot"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Ричард Линклейтер снимал «Отрочество» (2014) с одними и теми же актёрами. Сколько лет шли съёмки?",
+   "en": "Richard Linklater shot Boyhood (2014) with the same cast throughout. Over how many years?"
+  },
+  "answer": 12,
+  "range": [
+   0,
+   50
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Группа собиралась на несколько дней раз-два в год, и на экране герой взрослеет по-настоящему: с 6 до 18 лет.",
+   "en": "The crew met for a few days once or twice a year, so the hero really grows up on screen, from 6 to 18."
+  },
+  "source": "https://en.wikipedia.org/wiki/Boyhood_(2014_film)"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько часов отснятого материала смонтировали в двухчасовой «Безумный Макс: Дорога ярости»?",
+   "en": "How many hours of footage were cut down to the two-hour Mad Max: Fury Road?"
+  },
+  "answer": 470,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 70,
+  "unit": {
+   "ru": "часов",
+   "en": "hours"
+  },
+  "fact": {
+   "ru": "Монтажёр Маргарет Сиксел, жена режиссёра Джорджа Миллера, три месяца только отсматривала материал — и получила «Оскар».",
+   "en": "Editor Margaret Sixel, director George Miller's wife, spent three months just watching the footage, and won an Oscar."
+  },
+  "source": "https://en.wikipedia.org/wiki/Margaret_Sixel"
+ }
+]

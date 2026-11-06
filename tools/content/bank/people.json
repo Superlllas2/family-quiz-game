@@ -1,0 +1,1506 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Куда в 1937 году экипаж Чкалова долетел из Москвы без посадки через Северный полюс?",
+   "en": "In 1937 Chkalov's crew flew non stop from Moscow over the North Pole. Where to?"
+  },
+  "options": [
+   {
+    "ru": "В Японию",
+    "en": "Japan"
+   },
+   {
+    "ru": "В США",
+    "en": "The USA"
+   },
+   {
+    "ru": "В Англию",
+    "en": "England"
+   },
+   {
+    "ru": "В Австралию",
+    "en": "Australia"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Через 63 часа они сели в Ванкувере, только не в канадском, а в американском, в штате Вашингтон.",
+   "en": "They landed 63 hours later in Vancouver, not the Canadian city but the one in Washington State, USA."
+  },
+  "source": "https://en.wikipedia.org/wiki/Valery_Chkalov"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Куда на самом деле плыл Колумб, когда открыл Америку?",
+   "en": "Where was Columbus actually trying to go when he found America?"
+  },
+  "options": [
+   {
+    "ru": "В Индию и Азию",
+    "en": "To India and Asia"
+   },
+   {
+    "ru": "В Африку",
+    "en": "To Africa"
+   },
+   {
+    "ru": "В Австралию",
+    "en": "To Australia"
+   },
+   {
+    "ru": "К Северному полюсу",
+    "en": "To the North Pole"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он так и не признал, что приплыл не в Азию, поэтому коренных жителей Америки и назвали индейцами.",
+   "en": "He never clearly gave up the belief that he had reached Asia, which is why America's native peoples were called Indians."
+  },
+  "source": "https://en.wikipedia.org/wiki/Christopher_Columbus"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что Альберт Эйнштейн принципиально не носил?",
+   "en": "What did Albert Einstein famously refuse to wear?"
+  },
+  "options": [
+   {
+    "ru": "Часы",
+    "en": "A watch"
+   },
+   {
+    "ru": "Шляпу",
+    "en": "A hat"
+   },
+   {
+    "ru": "Ботинки",
+    "en": "Shoes"
+   },
+   {
+    "ru": "Носки",
+    "en": "Socks"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Жена Эльза ссорилась с ним из-за этого при гостях, а он отвечал, что так никому не приходится штопать носки.",
+   "en": "His wife Elsa rowed with him over it in front of guests; he said this way nobody had to darn socks."
+  },
+  "source": "https://www.aip.org/history/peter-pesic-einsteins-socks"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто стал первыми пассажирами воздушного шара братьев Монгольфье в 1783 году?",
+   "en": "Who were the first passengers of the Montgolfier brothers' balloon in 1783?"
+  },
+  "options": [
+   {
+    "ru": "Король и королева",
+    "en": "The king and queen"
+   },
+   {
+    "ru": "Сами братья",
+    "en": "The brothers themselves"
+   },
+   {
+    "ru": "Баран, утка и петух",
+    "en": "A sheep, a duck and a rooster"
+   },
+   {
+    "ru": "Собака и кошка",
+    "en": "A dog and a cat"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Боялись, что высота опасна для живых существ: при короле и королеве шар со зверями пролетел 3 км и благополучно сел.",
+   "en": "People feared height might harm living things; watched by the king and queen, the animals flew 3 km and landed safely."
+  },
+  "source": "https://en.wikipedia.org/wiki/Montgolfier_brothers"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как прозвали медсестру Флоренс Найтингейл?",
+   "en": "What was nurse Florence Nightingale's nickname?"
+  },
+  "options": [
+   {
+    "ru": "Белая королева",
+    "en": "The White Queen"
+   },
+   {
+    "ru": "Леди с лампой",
+    "en": "The Lady with the Lamp"
+   },
+   {
+    "ru": "Снежная королева",
+    "en": "The Snow Queen"
+   },
+   {
+    "ru": "Орлеанская дева",
+    "en": "The Maid of Orleans"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Так написал репортёр «Таймс»: ночью, когда врачи уходили, она одна обходила палаты с лампой в руке.",
+   "en": "A Times reporter wrote that at night, after the doctors had gone, she made her rounds alone with a lamp in hand."
+  },
+  "source": "https://en.wikipedia.org/wiki/Florence_Nightingale"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем прославился Гарри Гудини?",
+   "en": "What was Harry Houdini famous for?"
+  },
+  "options": [
+   {
+    "ru": "Освобождался из оков и сундуков",
+    "en": "Escaping chains and locked boxes"
+   },
+   {
+    "ru": "Дрессировал тигров",
+    "en": "Training tigers"
+   },
+   {
+    "ru": "Ходил по канату",
+    "en": "Walking a tightrope"
+   },
+   {
+    "ru": "Был чревовещателем",
+    "en": "Ventriloquism"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Настоящее имя «короля побегов» — Эрик Вайс, и родился он не в Америке, а в Будапеште.",
+   "en": "The escape king was born Erik Weisz, and not in America but in Budapest."
+  },
+  "source": "https://en.wikipedia.org/wiki/Harry_Houdini"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что англичанин Мэтью Уэбб в 1875 году первым переплыл без всяких приспособлений?",
+   "en": "In 1875 Matthew Webb became the first person to swim across what without any aids?"
+  },
+  "options": [
+   {
+    "ru": "Босфор",
+    "en": "The Bosphorus"
+   },
+   {
+    "ru": "Берингов пролив",
+    "en": "The Bering Strait"
+   },
+   {
+    "ru": "Гибралтарский пролив",
+    "en": "The Strait of Gibraltar"
+   },
+   {
+    "ru": "Ла-Манш",
+    "en": "The English Channel"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Он плыл почти 22 часа, по пути его ужалила медуза, а повторить заплыв смогли только через 36 лет.",
+   "en": "He swam for almost 22 hours and was stung by a jellyfish on the way; nobody managed it again for 36 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Matthew_Webb"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как назывался корабль, на котором Дарвин обошёл вокруг света?",
+   "en": "What was the ship Darwin sailed around the world on?"
+  },
+  "options": [
+   {
+    "ru": "«Титаник»",
+    "en": "The Titanic"
+   },
+   {
+    "ru": "«Виктория»",
+    "en": "The Victoria"
+   },
+   {
+    "ru": "«Бигль»",
+    "en": "The Beagle"
+   },
+   {
+    "ru": "«Баунти»",
+    "en": "The Bounty"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Плавание планировали на два года, а длилось оно почти пять: с 1831 по 1836 год.",
+   "en": "The voyage was planned for two years and lasted almost five, from 1831 to 1836."
+  },
+  "source": "https://en.wikipedia.org/wiki/Second_voyage_of_HMS_Beagle"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В честь кого Дэвид Ливингстон в 1855 году назвал огромный водопад в Африке?",
+   "en": "Whom did David Livingstone name a huge African waterfall after in 1855?"
+  },
+  "options": [
+   {
+    "ru": "Своей жены Мэри",
+    "en": "His wife Mary"
+   },
+   {
+    "ru": "Королевы Виктории",
+    "en": "Queen Victoria"
+   },
+   {
+    "ru": "Короля Георга III",
+    "en": "King George III"
+   },
+   {
+    "ru": "Своего отца",
+    "en": "His father"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Он первым из европейцев описал водопад, а местные и сейчас зовут его Моси-оа-Тунья — «гремящий дым».",
+   "en": "He was the first European on record to see the falls; locals still call them Mosi-oa-Tunya, the smoke that thunders."
+  },
+  "source": "https://en.wikipedia.org/wiki/Victoria_Falls"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Ради чего Ганди в 1930 году прошёл почти 400 км к морю?",
+   "en": "Why did Gandhi walk almost 400 km to the sea in 1930?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы выпарить соль",
+    "en": "To make salt"
+   },
+   {
+    "ru": "Чтобы искупаться",
+    "en": "To bathe in the sea"
+   },
+   {
+    "ru": "Чтобы встретить корабль",
+    "en": "To meet a ship"
+   },
+   {
+    "ru": "Чтобы наловить рыбы",
+    "en": "To catch fish"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Британцы облагали соль налогом и запрещали индийцам делать её самим; горсть соли Ганди стала протестом на весь мир.",
+   "en": "Britain taxed salt and banned Indians from making it; Gandhi's handful of salt became a protest seen worldwide."
+  },
+  "source": "https://en.wikipedia.org/wiki/Salt_March"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В честь кого назвали Америку?",
+   "en": "Who was America named after?"
+  },
+  "options": [
+   {
+    "ru": "Христофора Колумба",
+    "en": "Christopher Columbus"
+   },
+   {
+    "ru": "Фернана Магеллана",
+    "en": "Ferdinand Magellan"
+   },
+   {
+    "ru": "Джона Кабота",
+    "en": "John Cabot"
+   },
+   {
+    "ru": "Америго Веспуччи",
+    "en": "Amerigo Vespucci"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Веспуччи назвал эти земли Новым Светом, а не Азией, и в 1507 году картограф Вальдземюллер подписал его именем карту.",
+   "en": "Vespucci called the lands a New World, not Asia, and in 1507 mapmaker Waldseemüller put his name on the map."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amerigo_Vespucci"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как юный Ломоносов добрался из Холмогор до Москвы учиться?",
+   "en": "How did young Lomonosov get from his northern village to Moscow to study?"
+  },
+  "options": [
+   {
+    "ru": "Верхом как гонец",
+    "en": "On horseback as a courier"
+   },
+   {
+    "ru": "На воздушном шаре",
+    "en": "By hot air balloon"
+   },
+   {
+    "ru": "С рыбным обозом",
+    "en": "With a frozen fish caravan"
+   },
+   {
+    "ru": "На царском корабле",
+    "en": "On a royal ship"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "В декабре 1730 года 19-летний сын помора догнал обоз пешком, взяв с собой лишь две книги: «Грамматику» и «Арифметику».",
+   "en": "In December 1730 the 19 year old fisherman's son caught up with the fish train on foot, carrying just two books."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Ломоносов,_Михаил_Васильевич"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что Амелия Эрхарт в 1932 году первой из женщин перелетела в одиночку?",
+   "en": "In 1932 Amelia Earhart became the first woman to fly solo across what?"
+  },
+  "options": [
+   {
+    "ru": "Альпы",
+    "en": "The Alps"
+   },
+   {
+    "ru": "Атлантический океан",
+    "en": "The Atlantic Ocean"
+   },
+   {
+    "ru": "Тихий океан",
+    "en": "The Pacific Ocean"
+   },
+   {
+    "ru": "Ла-Манш",
+    "en": "The English Channel"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Она села на пастбище в Северной Ирландии, и на вопрос батрака «Издалека?» ответила: «Из Америки».",
+   "en": "She landed in a pasture in Northern Ireland, and when a farm hand asked if she'd flown far, said: From America."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amelia_Earhart"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое животное носит имя путешественника Пржевальского?",
+   "en": "Which animal is named after the explorer Przhevalsky?"
+  },
+  "options": [
+   {
+    "ru": "Лошадь",
+    "en": "A horse"
+   },
+   {
+    "ru": "Медведь",
+    "en": "A bear"
+   },
+   {
+    "ru": "Тигр",
+    "en": "A tiger"
+   },
+   {
+    "ru": "Волк",
+    "en": "A wolf"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1969 году её в последний раз видели на воле, а в 1990-х лошадей из зоопарков вернули в степи Монголии.",
+   "en": "It was last seen in the wild in 1969; in the 1990s zoo bred horses were returned to the steppes of Mongolia."
+  },
+  "source": "https://en.wikipedia.org/wiki/Przewalski%27s_horse"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "При дворе какого правителя Марко Поло прожил 17 лет?",
+   "en": "Whose court did Marco Polo serve at for 17 years?"
+  },
+  "options": [
+   {
+    "ru": "Японского императора",
+    "en": "Japan's emperor"
+   },
+   {
+    "ru": "Султана Египта",
+    "en": "The Sultan of Egypt"
+   },
+   {
+    "ru": "Короля Франции",
+    "en": "The King of France"
+   },
+   {
+    "ru": "Хубилай-хана в Китае",
+    "en": "Kublai Khan, in China"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Внук Чингисхана отправлял венецианца с поручениями по всему Китаю, а домой отпустил лишь с невестой для персидского хана.",
+   "en": "Genghis Khan's grandson sent him on errands across China and let him go home only escorting a bride to Persia."
+  },
+  "source": "https://en.wikipedia.org/wiki/Marco_Polo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую должность Исаак Ньютон занимал последние 30 лет жизни?",
+   "en": "What job did Isaac Newton hold for the last 30 years of his life?"
+  },
+  "options": [
+   {
+    "ru": "Ректор Оксфорда",
+    "en": "Head of Oxford"
+   },
+   {
+    "ru": "Адмирал флота",
+    "en": "Admiral of the fleet"
+   },
+   {
+    "ru": "Глава Монетного двора",
+    "en": "Head of the Royal Mint"
+   },
+   {
+    "ru": "Королевский астроном",
+    "en": "Astronomer Royal"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Он сам ловил фальшивомонетчиков: переодетым ходил по лондонским тавернам и собирал улики.",
+   "en": "He hunted counterfeiters himself, visiting London taverns in disguise to gather evidence."
+  },
+  "source": "https://en.wikipedia.org/wiki/Isaac_Newton"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что появилось на небе и в год рождения, и в год смерти Марка Твена?",
+   "en": "What appeared in the sky both the year Mark Twain was born and the year he died?"
+  },
+  "options": [
+   {
+    "ru": "Северное сияние над Нью-Йорком",
+    "en": "Northern lights over New York"
+   },
+   {
+    "ru": "Комета Галлея",
+    "en": "Halley's Comet"
+   },
+   {
+    "ru": "Полное солнечное затмение",
+    "en": "A total solar eclipse"
+   },
+   {
+    "ru": "Новая звезда",
+    "en": "A new star"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Твен сам предсказал, что уйдёт вместе с кометой, и умер на следующий день после её сближения с Солнцем в 1910 году.",
+   "en": "Twain predicted he would go out with the comet, and died the day after its closest pass to the Sun in 1910."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mark_Twain"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого Никола Тесла под старость любил больше всего на свете?",
+   "en": "Whom did Nikola Tesla love most in his old age?"
+  },
+  "options": [
+   {
+    "ru": "Белую голубку",
+    "en": "A white pigeon"
+   },
+   {
+    "ru": "Кошку",
+    "en": "His cat"
+   },
+   {
+    "ru": "Попугая",
+    "en": "A parrot"
+   },
+   {
+    "ru": "Собаку",
+    "en": "His dog"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он говорил, что любил её, как мужчина любит женщину, и потратил больше 2000 долларов, чтобы вылечить ей крыло и лапку.",
+   "en": "He said he loved her as a man loves a woman, and spent over $2,000 nursing her broken wing and leg."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nikola_Tesla"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что Бенджамин Франклин называл «воздушными ваннами»?",
+   "en": "What was Benjamin Franklin's air bath?"
+  },
+  "options": [
+   {
+    "ru": "Спать на крыше",
+    "en": "Sleeping on the roof"
+   },
+   {
+    "ru": "Подъём на воздушном шаре",
+    "en": "Going up in a balloon"
+   },
+   {
+    "ru": "Запуск змея в грозу",
+    "en": "Flying a kite in a storm"
+   },
+   {
+    "ru": "Сидеть голым в холодной комнате",
+    "en": "Sitting naked in a cold room"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "По утрам он полчаса-час читал и писал без одежды, считая холодную ванну слишком резкой встряской.",
+   "en": "Each morning he read or wrote with no clothes on for up to an hour, finding cold water baths too violent a shock."
+  },
+  "source": "https://founders.archives.gov/documents/Franklin/01-15-02-0098"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой советский врач плавал с Туром Хейердалом на папирусных лодках «Ра»?",
+   "en": "Which Soviet doctor sailed with Thor Heyerdahl on the papyrus boats Ra?"
+  },
+  "options": [
+   {
+    "ru": "Сергей Капица",
+    "en": "Sergei Kapitsa"
+   },
+   {
+    "ru": "Фёдор Конюхов",
+    "en": "Fyodor Konyukhov"
+   },
+   {
+    "ru": "Юрий Сенкевич",
+    "en": "Yuri Senkevich"
+   },
+   {
+    "ru": "Николай Дроздов",
+    "en": "Nikolai Drozdov"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "После этого Сенкевич 30 лет вёл «Клуб путешественников» и сплавал с Хейердалом ещё и на тростниковом «Тигрисе».",
+   "en": "Senkevich then hosted Soviet TV's Travellers' Club for 30 years and sailed with Heyerdahl again on the reed boat Tigris."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yuri_Senkevich"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где Марко Поло рассказал историю своих странствий для книги?",
+   "en": "Where did Marco Polo tell the story of his travels that became his book?"
+  },
+  "options": [
+   {
+    "ru": "Во дворце хана",
+    "en": "In the Khan's palace"
+   },
+   {
+    "ru": "В тюрьме",
+    "en": "In prison"
+   },
+   {
+    "ru": "При дворе Папы",
+    "en": "At the Pope's court"
+   },
+   {
+    "ru": "На корабле домой",
+    "en": "On the ship home"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Попав в плен к генуэзцам, он диктовал рассказы сокамернику — писателю Рустикелло.",
+   "en": "Captured by the Genoese, he dictated his tales to a cellmate, the romance writer Rustichello."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Travels_of_Marco_Polo"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где погиб капитан Джеймс Кук?",
+   "en": "Where did Captain James Cook die?"
+  },
+  "options": [
+   {
+    "ru": "На Гавайях",
+    "en": "Hawaii"
+   },
+   {
+    "ru": "В Новой Зеландии",
+    "en": "New Zealand"
+   },
+   {
+    "ru": "В Австралии",
+    "en": "Australia"
+   },
+   {
+    "ru": "На Таити",
+    "en": "Tahiti"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его экспедиция первой из известных европейцев увидела Гавайи в 1778 году, а через год он погиб там в стычке на берегу.",
+   "en": "His crew were the first recorded Europeans to see Hawaii, in 1778, and a year later he died there in a clash on the shore."
+  },
+  "source": "https://en.wikipedia.org/wiki/James_Cook"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую должность предложили Эйнштейну в 1952 году (он отказался)?",
+   "en": "What post was Einstein offered in 1952, and turned down?"
+  },
+  "options": [
+   {
+    "ru": "Глава NASA",
+    "en": "Head of NASA"
+   },
+   {
+    "ru": "Мэр Принстона",
+    "en": "Mayor of Princeton"
+   },
+   {
+    "ru": "Канцлер Германии",
+    "en": "Chancellor of Germany"
+   },
+   {
+    "ru": "Президент Израиля",
+    "en": "President of Israel"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Он ответил, что ему не хватает ни природного умения, ни опыта, чтобы как следует иметь дело с людьми.",
+   "en": "He replied that he lacked both the natural aptitude and the experience to deal properly with people."
+  },
+  "source": "https://en.wikipedia.org/wiki/Albert_Einstein"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каким ремеслом всерьёз увлекался Дмитрий Менделеев?",
+   "en": "Which craft did Dmitri Mendeleev take up seriously?"
+  },
+  "options": [
+   {
+    "ru": "Чинил часы",
+    "en": "Mending clocks"
+   },
+   {
+    "ru": "Шил сапоги",
+    "en": "Making boots"
+   },
+   {
+    "ru": "Делал чемоданы",
+    "en": "Making suitcases"
+   },
+   {
+    "ru": "Делал скрипки",
+    "en": "Making violins"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "По известному рассказу, в Гостином дворе он услышал за спиной: «Это мастер чемоданных дел Менделеев!»",
+   "en": "The story goes that while buying leather he overheard a clerk: That's Mendeleev, the master suitcase maker!"
+  },
+  "source": "https://ru.wikipedia.org/wiki/Менделеев,_Дмитрий_Иванович"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где Миклухо-Маклай больше года прожил среди местных жителей?",
+   "en": "Where did Miklouho-Maclay live among the local people for over a year?"
+  },
+  "options": [
+   {
+    "ru": "В Гренландии",
+    "en": "Greenland"
+   },
+   {
+    "ru": "На Новой Гвинее",
+    "en": "New Guinea"
+   },
+   {
+    "ru": "На Мадагаскаре",
+    "en": "Madagascar"
+   },
+   {
+    "ru": "На Аляске",
+    "en": "Alaska"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Папуасы сначала приняли его за человека с Луны, а тот берег на русских картах до сих пор зовётся Берегом Маклая.",
+   "en": "The Papuans first took him for a man from the Moon; Russian maps still call that coast the Maclay Coast."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nicholas_Miklouho-Maclay"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что Фритьоф Нансен сделал со своим кораблём «Фрам» нарочно?",
+   "en": "What did Fridtjof Nansen deliberately do with his ship Fram?"
+  },
+  "options": [
+   {
+    "ru": "Дал ему вмёрзнуть в лёд",
+    "en": "Let it freeze into the sea ice"
+   },
+   {
+    "ru": "Затопил его",
+    "en": "Sank it"
+   },
+   {
+    "ru": "Протащил по суше",
+    "en": "Dragged it overland"
+   },
+   {
+    "ru": "Разобрал на сани",
+    "en": "Took it apart for sledges"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он рассчитывал, что дрейф льдов понесёт судно к полюсу; «Фрам» дрейфовал три года и вышел из льдов целым.",
+   "en": "He bet the drifting ice would carry the ship towards the Pole; Fram drifted for three years and came out intact."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nansen%27s_Fram_expedition"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что стало с командой Шеклтона, когда льды раздавили «Эндьюранс» в 1915 году?",
+   "en": "What became of Shackleton's crew after ice crushed the Endurance in 1915?"
+  },
+  "options": [
+   {
+    "ru": "Выжила половина",
+    "en": "Half survived"
+   },
+   {
+    "ru": "Выжил один Шеклтон",
+    "en": "Only Shackleton survived"
+   },
+   {
+    "ru": "Их спас советский ледокол",
+    "en": "A Soviet icebreaker saved them"
+   },
+   {
+    "ru": "Выжили все 28",
+    "en": "All 28 survived"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Сам корабль нашли только в 2022 году на глубине 3 км, и название на корме всё ещё можно прочитать.",
+   "en": "The ship itself was found only in 2022, 3 km down, with the name on its stern still readable."
+  },
+  "source": "https://en.wikipedia.org/wiki/Endurance_(1912_ship)"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем зарабатывал на жизнь Эдмунд Хиллари до Эвереста?",
+   "en": "What was Edmund Hillary's job before Everest?"
+  },
+  "options": [
+   {
+    "ru": "Школьный учитель",
+    "en": "Schoolteacher"
+   },
+   {
+    "ru": "Пожарный",
+    "en": "Firefighter"
+   },
+   {
+    "ru": "Пчеловод",
+    "en": "Beekeeper"
+   },
+   {
+    "ru": "Почтальон",
+    "en": "Postman"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Он держал пасеку с отцом и братом в Новой Зеландии, а в горы ходил в свободное время.",
+   "en": "He kept bees with his father and brother in New Zealand and climbed in his spare time."
+  },
+  "source": "https://en.wikipedia.org/wiki/Edmund_Hillary"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую Нобелевскую премию получил Уинстон Черчилль?",
+   "en": "Which Nobel Prize did Winston Churchill win?"
+  },
+  "options": [
+   {
+    "ru": "По физике",
+    "en": "Physics"
+   },
+   {
+    "ru": "По литературе",
+    "en": "Literature"
+   },
+   {
+    "ru": "Премию мира",
+    "en": "Peace"
+   },
+   {
+    "ru": "По экономике",
+    "en": "Economics"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В 1953 году её дали за исторические книги и речи; а для души он написал более 500 картин.",
+   "en": "He got it in 1953 for his history books and speeches; he also painted over 500 pictures for fun."
+  },
+  "source": "https://en.wikipedia.org/wiki/Winston_Churchill"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто первым назвал Маргарет Тэтчер «Железной леди»?",
+   "en": "Who first called Margaret Thatcher the Iron Lady?"
+  },
+  "options": [
+   {
+    "ru": "Советская газета",
+    "en": "A Soviet newspaper"
+   },
+   {
+    "ru": "Королева Елизавета II",
+    "en": "Queen Elizabeth II"
+   },
+   {
+    "ru": "Рональд Рейган",
+    "en": "Ronald Reagan"
+   },
+   {
+    "ru": "Её муж Денис",
+    "en": "Her husband Denis"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1976 году так написала «Красная звезда», газета Советской армии, а Тэтчер с удовольствием взяла прозвище себе.",
+   "en": "In 1976 the Soviet Army paper Red Star coined it, and Thatcher happily adopted the nickname."
+  },
+  "source": "https://en.wikipedia.org/wiki/Margaret_Thatcher"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему на вечеринку Стивена Хокинга в 2009 году никто не пришёл?",
+   "en": "Why did nobody come to Stephen Hawking's party in 2009?"
+  },
+  "options": [
+   {
+    "ru": "Она была на Южном полюсе",
+    "en": "It was at the South Pole"
+   },
+   {
+    "ru": "Приглашения были в формулах",
+    "en": "The invitations were equations"
+   },
+   {
+    "ru": "Он забыл назвать дату",
+    "en": "He forgot to give a date"
+   },
+   {
+    "ru": "О ней объявили уже после",
+    "en": "He announced it only afterwards"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Это была вечеринка для путешественников во времени: прийти мог только тот, кто узнал о ней из будущего.",
+   "en": "It was a party for time travellers: only someone who learned of it in the future could have come."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stephen_Hawking"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Юный Дарвин держал в руках двух редких жуков и увидел третьего. Что он сделал?",
+   "en": "Young Darwin held two rare beetles and spotted a third. What did he do?"
+  },
+  "options": [
+   {
+    "ru": "Позвал на помощь брата",
+    "en": "Called his brother to help"
+   },
+   {
+    "ru": "Спрятал жуков в шляпу",
+    "en": "Hid them in his hat"
+   },
+   {
+    "ru": "Сунул одного в рот",
+    "en": "Popped one in his mouth"
+   },
+   {
+    "ru": "Отпустил всех",
+    "en": "Let them all go"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Жук брызнул ему в рот едкой жидкостью, Дарвин его выплюнул — и упустил третьего тоже.",
+   "en": "The beetle squirted burning fluid into his mouth, he spat it out, and lost the third one too."
+  },
+  "source": "https://www.christs.cam.ac.uk/node/1115"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой материк голландец Абел Тасман в 1642–1643 годах обошёл кругом, держась вдали от берега?",
+   "en": "Which continent did the Dutchman Abel Tasman sail all the way round in 1642–43, far from its shores?"
+  },
+  "options": [
+   {
+    "ru": "Африку",
+    "en": "Africa"
+   },
+   {
+    "ru": "Антарктиду",
+    "en": "Antarctica"
+   },
+   {
+    "ru": "Южную Америку",
+    "en": "South America"
+   },
+   {
+    "ru": "Австралию",
+    "en": "Australia"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Так он доказал, что Австралия не соединена с южным материком, а по пути открыл Тасманию и Новую Зеландию.",
+   "en": "That proved Australia was not joined to a southern continent, and on the way he found Tasmania and New Zealand."
+  },
+  "source": "https://en.wikipedia.org/wiki/Abel_Tasman"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда был родом Витус Беринг, в честь которого назван пролив?",
+   "en": "Where was Vitus Bering, of the Bering Strait, from?"
+  },
+  "options": [
+   {
+    "ru": "Из Дании",
+    "en": "Denmark"
+   },
+   {
+    "ru": "Из России",
+    "en": "Russia"
+   },
+   {
+    "ru": "Из Голландии",
+    "en": "The Netherlands"
+   },
+   {
+    "ru": "Из Швеции",
+    "en": "Sweden"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Датчанин служил во флоте Петра I, а сам пролив за 80 лет до него прошёл казак Семён Дежнёв.",
+   "en": "The Dane served in Peter the Great's navy; the Cossack Semyon Dezhnev had sailed the strait 80 years earlier."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vitus_Bering"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из какой страны была первая женщина, поднявшаяся на Эверест?",
+   "en": "Which country was the first woman to climb Everest from?"
+  },
+  "options": [
+   {
+    "ru": "Из Непала",
+    "en": "Nepal"
+   },
+   {
+    "ru": "Из Польши",
+    "en": "Poland"
+   },
+   {
+    "ru": "Из США",
+    "en": "The USA"
+   },
+   {
+    "ru": "Из Японии",
+    "en": "Japan"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Дзюнко Табэи поднялась на вершину в 1975 году, а позже первой из женщин покорила все «Семь вершин».",
+   "en": "Junko Tabei reached the top in 1975 and later became the first woman to climb the Seven Summits."
+  },
+  "source": "https://en.wikipedia.org/wiki/Junko_Tabei"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Астроном Тихо Браге лишился части носа на дуэли. Что он носил вместо неё?",
+   "en": "Astronomer Tycho Brahe lost part of his nose in a duel. What did he wear instead?"
+  },
+  "options": [
+   {
+    "ru": "Деревянный нос",
+    "en": "A wooden nose"
+   },
+   {
+    "ru": "Повязку",
+    "en": "A bandage"
+   },
+   {
+    "ru": "Металлический нос",
+    "en": "A metal nose"
+   },
+   {
+    "ru": "Чёрную маску",
+    "en": "A black mask"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Говорили, что протез из золота и серебра, но анализ останков в 2012 году показал, что он был латунный.",
+   "en": "It was said to be gold and silver, but tests on his remains in 2012 showed it was brass."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tycho_Brahe"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Софья Ковалевская смогла уехать учиться за границу?",
+   "en": "How did Sofia Kovalevskaya manage to go abroad to study?"
+  },
+  "options": [
+   {
+    "ru": "Её отправила императрица",
+    "en": "The Empress sent her"
+   },
+   {
+    "ru": "Вступила в фиктивный брак",
+    "en": "A sham marriage"
+   },
+   {
+    "ru": "Переоделась юношей",
+    "en": "Disguised as a young man"
+   },
+   {
+    "ru": "Сбежала на корабле",
+    "en": "Ran away on a ship"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Женщин тогда не брали в российские университеты, а за границу отпускали только с разрешения отца или мужа.",
+   "en": "Russian universities did not admit women, and a woman could travel abroad only with a father's or husband's leave."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sofya_Kovalevskaya"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как настоящий Робинзон Крузо, моряк Александр Селкирк, оказался один на острове?",
+   "en": "How did the real Robinson Crusoe, sailor Alexander Selkirk, end up alone on an island?"
+  },
+  "options": [
+   {
+    "ru": "Сам попросил его высадить",
+    "en": "He asked to be put ashore"
+   },
+   {
+    "ru": "Его корабль разбился",
+    "en": "His ship was wrecked"
+   },
+   {
+    "ru": "Отстал от корабля на охоте",
+    "en": "He missed the ship while hunting"
+   },
+   {
+    "ru": "Его смыло за борт",
+    "en": "He was washed overboard"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он счёл корабль слишком дырявым и не ошибся: тот вскоре затонул, а Селкирк прожил на острове больше четырёх лет.",
+   "en": "He thought the ship too leaky and was right: it soon sank, while he spent over four years on the island."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alexander_Selkirk"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько дней журналистка Нелли Блай в 1889 году объехала вокруг света?",
+   "en": "In 1889 journalist Nellie Bly raced around the world. How many days did it take?"
+  },
+  "answer": 72,
+  "range": [
+   10,
+   250
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Она хотела побить рекорд Филеаса Фогга из романа Жюля Верна и справилась на восемь дней быстрее.",
+   "en": "She set out to beat Phileas Fogg of Jules Verne's novel, and did it eight days faster."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nellie_Bly"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько часов длился беспосадочный перелёт Линдберга через Атлантику в 1927 году?",
+   "en": "How many hours did Lindbergh's 1927 non stop solo flight across the Atlantic take?"
+  },
+  "answer": 33,
+  "range": [
+   1,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "часов",
+   "en": "hours"
+  },
+  "fact": {
+   "ru": "Тридцать три с половиной часа без сна, и без лобового стекла: прямо перед лётчиком стоял бак с топливом.",
+   "en": "Thirty three and a half hours awake, with no windscreen: a fuel tank sat right in front of the pilot."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spirit_of_St._Louis"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько дней плот «Кон-Тики» Тура Хейердала плыл через Тихий океан?",
+   "en": "How many days did Thor Heyerdahl's raft Kon-Tiki take to cross the Pacific?"
+  },
+  "answer": 101,
+  "range": [
+   5,
+   365
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Плот из девяти бальсовых брёвен без единого гвоздя прошёл почти 7000 км от Перу до Полинезии.",
+   "en": "A raft of nine balsa logs with not a single nail drifted almost 7,000 km from Peru to Polynesia."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kon-Tiki_expedition"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Из примерно 270 моряков Магеллана сколько вернулись в Испанию на «Виктории» в 1522 году?",
+   "en": "Of about 270 men who sailed with Magellan, how many got back to Spain on the Victoria in 1522?"
+  },
+  "answer": 18,
+  "range": [
+   0,
+   270
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "человек",
+   "en": "men"
+  },
+  "fact": {
+   "ru": "Из пяти кораблей вернулась одна «Виктория», а сам Магеллан погиб на Филиппинах.",
+   "en": "Only one of the five ships, the Victoria, made it back, and Magellan himself died in the Philippines."
+  },
+  "source": "https://en.wikipedia.org/wiki/Magellan_expedition"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На сколько дней Амундсен опередил Скотта на Южном полюсе?",
+   "en": "By how many days did Amundsen beat Scott to the South Pole?"
+  },
+  "answer": 34,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Скотт нашёл на полюсе норвежскую палатку и записку: Амундсен просил его передать письмо норвежскому королю.",
+   "en": "At the Pole Scott found the Norwegian tent and a note asking him to deliver a letter to Norway's king."
+  },
+  "source": "https://en.wikipedia.org/wiki/Terra_Nova_expedition"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько дней капитан Блай после бунта на «Баунти» плыл в открытой шлюпке до Тимора?",
+   "en": "After the mutiny on the Bounty, how many days did Captain Bligh sail an open boat to Timor?"
+  },
+  "answer": 47,
+  "range": [
+   5,
+   200
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Девятнадцать человек прошли 6700 км на 40 граммах хлеба в день, а в пути погиб лишь один: его убили на острове Тофуа.",
+   "en": "Nineteen men covered 6,700 km on 40 grams of bread a day, and only one died on the way, killed on the island of Tofua."
+  },
+  "source": "https://en.wikipedia.org/wiki/William_Bligh"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько дней четверо папанинцев дрейфовали на льдине станции «Северный полюс-1»?",
+   "en": "How many days did Papanin's four men drift on the ice floe station North Pole-1?"
+  },
+  "answer": 274,
+  "range": [
+   10,
+   900
+  ],
+  "step": 1,
+  "tolerance": 45,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Льдину унесло от полюса больше чем на 2000 км, и у берегов Гренландии в 1938 году зимовщиков сняли ледоколы.",
+   "en": "The floe drifted over 2,000 km from the Pole, and icebreakers picked the men up off Greenland in 1938."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Северный_полюс-1"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На какую высоту в 1931 году поднялся на воздушном шаре Огюст Пиккар?",
+   "en": "How high did Auguste Piccard rise in his balloon in 1931?"
+  },
+  "answer": 15800,
+  "range": [
+   0,
+   50000
+  ],
+  "step": 100,
+  "tolerance": 3000,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "В герметичной гондоле он и его помощник первыми из людей побывали в стратосфере, а Эрже срисовал с него профессора Турнесоля.",
+   "en": "In a sealed gondola he and his assistant became the first people in the stratosphere; Hergé drew Professor Calculus from him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Auguste_Piccard"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько километров за 30 лет странствий прошёл марокканец Ибн Баттута в XIV веке?",
+   "en": "How many km did the 14th century Moroccan Ibn Battuta travel in 30 years?"
+  },
+  "answer": 117000,
+  "range": [
+   0,
+   300000
+  ],
+  "step": 1000,
+  "tolerance": 25000,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Примерно впятеро больше Марко Поло: от Марокко до Китая, Мали и Мальдив.",
+   "en": "About five times as far as Marco Polo, from Morocco to China, Mali and the Maldives."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ibn_Battuta"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько патентов получил за жизнь Альфред Нобель?",
+   "en": "How many patents did Alfred Nobel hold in his lifetime?"
+  },
+  "answer": 355,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 60,
+  "unit": {
+   "ru": "патентов",
+   "en": "patents"
+  },
+  "fact": {
+   "ru": "Самый известный из них — динамит, но деньги на премии принесли ещё и нефтяные промыслы братьев Нобель в Баку.",
+   "en": "Dynamite was the famous one, but his share in the Nobel brothers' oil fields in Baku also paid for the prizes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alfred_Nobel"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До какого возраста дожила француженка Жанна Кальман, видевшая в детстве Ван Гога?",
+   "en": "To what age did Jeanne Calment, who met Van Gogh as a girl, live?"
+  },
+  "answer": 122,
+  "range": [
+   80,
+   200
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Девочкой она видела его в лавке дяди и запомнила некрасивым, нелюбезным и очень неприятным. Прожила она 122 года и 164 дня.",
+   "en": "As a girl she met him in her uncle's shop: ugly, ungracious and very disagreeable. She lived 122 years and 164 days."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jeanne_Calment"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько кораблей было в первом походе китайского адмирала Чжэн Хэ в 1405 году?",
+   "en": "How many ships sailed on Chinese admiral Zheng He's first voyage in 1405?"
+  },
+  "answer": 317,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 60,
+  "unit": {
+   "ru": "кораблей",
+   "en": "ships"
+  },
+  "fact": {
+   "ru": "На них плыли почти 28 000 человек; Колумб через 87 лет пересёк Атлантику на трёх кораблях.",
+   "en": "They carried almost 28,000 men; 87 years later Columbus crossed the Atlantic with three ships."
+  },
+  "source": "https://en.wikipedia.org/wiki/Zheng_He"
+ }
+]
