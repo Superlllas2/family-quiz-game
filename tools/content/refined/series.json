@@ -1,0 +1,326 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Мистер Бин запирает свою машину не на ключ, а на навесной замок. Что это за машина?",
+   "en": "Mr. Bean locks his car with a padlock, not a key. What car is it?"
+  },
+  "options": [
+   {
+    "ru": "«Фольксваген Жук»",
+    "en": "A Volkswagen Beetle"
+   },
+   {
+    "ru": "«Мини»",
+    "en": "A Mini"
+   },
+   {
+    "ru": "«Фиат 500»",
+    "en": "A Fiat 500"
+   },
+   {
+    "ru": "«Ситроен 2CV»",
+    "en": "A Citroën 2CV"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Лимонно-зелёный Mini 1977 года. Бин ещё и уносит с собой руль, а однажды правит машиной из кресла на крыше.",
+   "en": "A lime green 1977 Mini. Bean also takes the steering wheel with him, and once drives it from an armchair on the roof."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mr._Bean",
+  "basedOn": "series_010",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сценарист «Теории большого взрыва» кричал это слово после удачного розыгрыша. Его отдали Шелдону. Какое?",
+   "en": "A Big Bang Theory writer shouted this word whenever a prank worked, and it went to Sheldon. Which word?"
+  },
+  "options": [
+   {
+    "ru": "«Д'оу!»",
+    "en": "D'oh!"
+   },
+   {
+    "ru": "«Легендарно!»",
+    "en": "Legendary!"
+   },
+   {
+    "ru": "«Базинга!»",
+    "en": "Bazinga!"
+   },
+   {
+    "ru": "«Ябба-дабба-ду!»",
+    "en": "Yabba dabba doo!"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "В 2012 году так назвали бразильскую пчелу: она годами «разыгрывала» учёных, сливаясь с похожим видом.",
+   "en": "In 2012 a Brazilian bee was named after it: for years it had fooled scientists by looking just like another species."
+  },
+  "source": "https://www.smithsonianmag.com/smart-news/a-brand-new-bee-was-just-named-after-sheldon-from-the-big-bang-theory-165898757/",
+  "basedOn": "series_012",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Эш проспал день, когда раздавали первых покемонов, и ему достался последний. Какой?",
+   "en": "Ash overslept on the day the first Pokémon were handed out and got the last one left. Which?"
+  },
+  "options": [
+   {
+    "ru": "Бульбазавр",
+    "en": "Bulbasaur"
+   },
+   {
+    "ru": "Чармандер",
+    "en": "Charmander"
+   },
+   {
+    "ru": "Сквиртл",
+    "en": "Squirtle"
+   },
+   {
+    "ru": "Пикачу",
+    "en": "Pikachu"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Три стартовых покемона уже разобрали. Строптивый Пикачу сразу ударил Эша током и отказался сидеть в покеболе.",
+   "en": "The three starters were already taken. The stubborn Pikachu shocked Ash at once and refused to stay in its Poké Ball."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_-_I_Choose_You!",
+  "basedOn": "series_011",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Без чего бог смерти Рюк из «Тетради смерти» корчится, скручивается в узел и стоит на руках?",
+   "en": "Without what does the death god Ryuk in Death Note writhe, twist into knots and do handstands?"
+  },
+  "options": [
+   {
+    "ru": "Без яблок",
+    "en": "Apples"
+   },
+   {
+    "ru": "Без шоколада",
+    "en": "Chocolate"
+   },
+   {
+    "ru": "Без свежей крови",
+    "en": "Fresh blood"
+   },
+   {
+    "ru": "Без кофе",
+    "en": "Coffee"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Яблоки для богов смерти — как сигареты и алкоголь для людей, и без них у Рюка начинается настоящая «ломка».",
+   "en": "Apples are to death gods what cigarettes and alcohol are to people, and without them Ryuk goes into withdrawal."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ryuk_(Death_Note)",
+  "basedOn": "series_032",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Инженер Чарли Дуглас прятал своё изобретение для телевидения под замками. Что это было?",
+   "en": "Engineer Charley Douglass kept his TV invention under padlocks. What was it?"
+  },
+  "options": [
+   {
+    "ru": "Первый телесуфлёр",
+    "en": "The first teleprompter"
+   },
+   {
+    "ru": "Табло «Аплодисменты»",
+    "en": "The APPLAUSE sign"
+   },
+   {
+    "ru": "Машина закадрового смеха",
+    "en": "A canned laughter machine"
+   },
+   {
+    "ru": "Пульт смены декораций",
+    "en": "A scene change console"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "На «лаф-боксе» играли, как на органе: клавишами выбирали, кто смеётся — мужчина или женщина, молодой или старый.",
+   "en": "The laff box was played like an organ: keys chose who was laughing, a man or a woman, young or old."
+  },
+  "source": "https://en.wikipedia.org/wiki/Laugh_track",
+  "basedOn": "series_035",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 8-м сезоне «Игры престолов» на пиру в кадр попал предмет из нашего времени. Что это было?",
+   "en": "In season 8 of Game of Thrones a modern object made it into a feast scene. What was it?"
+  },
+  "options": [
+   {
+    "ru": "Мобильный телефон",
+    "en": "A mobile phone"
+   },
+   {
+    "ru": "Стаканчик кофе",
+    "en": "A coffee cup"
+   },
+   {
+    "ru": "Солнечные очки",
+    "en": "Sunglasses"
+   },
+   {
+    "ru": "Наручные часы",
+    "en": "A wristwatch"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Через два дня его стёрли из серии, а HBO пошутило: «Латте был ошибкой — Дейенерис заказывала травяной чай».",
+   "en": "Two days later it was erased from the episode, and HBO joked: 'The latte was a mistake. Daenerys had ordered an herbal tea.'"
+  },
+  "source": "https://www.foxnews.com/entertainment/hbo-says-coffee-cup-in-game-of-thrones-scene-was-a-mistake",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая кинозвезда сыграла в «Друзьях» бывшего одноклассника, ненавидевшего Рэйчел?",
+   "en": "Which film star played Rachel's old classmate who hated her, in Friends?"
+  },
+  "options": [
+   {
+    "ru": "Брэд Питт",
+    "en": "Brad Pitt"
+   },
+   {
+    "ru": "Том Круз",
+    "en": "Tom Cruise"
+   },
+   {
+    "ru": "Джонни Депп",
+    "en": "Johnny Depp"
+   },
+   {
+    "ru": "Леонардо Ди Каприо",
+    "en": "Leonardo DiCaprio"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тогда он был мужем Дженнифер Энистон в жизни, а за одну эту серию его номинировали на «Эмми».",
+   "en": "He was married to Jennifer Aniston at the time, and that one episode earned him an Emmy nomination."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_One_with_the_Rumor",
+  "basedOn": "series_034",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Хозяева дома Уолтера Уайта поставили забор от фанатов. Что те кидали им на крышу?",
+   "en": "The owners of Walter White's real house built a fence against fans. What did fans throw onto the roof?"
+  },
+  "options": [
+   {
+    "ru": "Целую пиццу",
+    "en": "A whole pizza"
+   },
+   {
+    "ru": "Шляпу Хайзенберга",
+    "en": "Heisenberg's hat"
+   },
+   {
+    "ru": "Розового мишку",
+    "en": "A pink teddy bear"
+   },
+   {
+    "ru": "Пакет синих конфет",
+    "en": "A bag of blue sweets"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Уолт швырнул пиццу на крышу в 3-м сезоне, и Брайан Крэнстон попал с первого дубля. Создатель сериала просил фанатов перестать.",
+   "en": "Walt flung one up there in season 3 and Bryan Cranston landed it on the first take. Vince Gilligan begged fans to stop."
+  },
+  "source": "https://www.pastemagazine.com/tv/breaking-bad/breaking-bad-walter-whites-house-pizza-fence",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Питер Фальк впервые сыграл лейтенанта Коломбо в 1968 году. Сколько лет он играл эту роль?",
+   "en": "Peter Falk first played Lieutenant Columbo in 1968. For how many years did he play the part?"
+  },
+  "answer": 35,
+  "range": [
+   5,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "До 2003 года. А до Фалька роль предлагали Бингу Кросби, но тот отказался, чтобы не отрывать время от гольфа.",
+   "en": "Until 2003. Before Falk, the role was offered to Bing Crosby, who turned it down because it would take too much time from golf."
+  },
+  "source": "https://en.wikipedia.org/wiki/Columbo",
+  "basedOn": "series_046",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Герои «Остаться в живых» вводили в компьютер 4, 8, 15, 16, 23, 42. Раз в сколько минут?",
+   "en": "In Lost the castaways typed 4, 8, 15, 16, 23, 42 into a computer. How often, in minutes?"
+  },
+  "answer": 108,
+  "range": [
+   0,
+   360
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "минут",
+   "en": "minutes"
+  },
+  "fact": {
+   "ru": "Ровно их сумма. С этими же числами Хёрли выиграл в лотерею и считал, что они прокляты.",
+   "en": "Exactly their sum. Hurley had won the lottery with the same numbers and believed they were cursed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dharma_Initiative",
+  "basedOn": "series_043",
+  "refine": "rewrite"
+ }
+]

@@ -9,8 +9,9 @@ namespace FamilyQuiz.Core.Commands
     public sealed class ChangeTvSettings : IGameCommand
     {
         public ChangeTvSettings(string gameLang = null, bool? powerUpsEnabled = null, IReadOnlyList<string> powerUpTypes = null,
-            string targeting = null, bool? feedbackEnabled = null)
+            string targeting = null, bool? feedbackEnabled = null, string bank = null)
         {
+            Bank = bank;
             FeedbackEnabled = feedbackEnabled;
             GameLang = gameLang;
             PowerUpsEnabled = powerUpsEnabled;
@@ -28,5 +29,8 @@ namespace FamilyQuiz.Core.Commands
 
         /// <summary>Question feedback on or off (decisions/0018, D108): applies at once.</summary>
         public bool? FeedbackEnabled { get; }
+
+        /// <summary>The question bank, full or curated (decisions/0020, D116): applies from the next game start.</summary>
+        public string Bank { get; }
     }
 }

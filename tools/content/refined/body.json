@@ -1,0 +1,326 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Удар локтем «бьёт током», а англичане зовут это место «смешной косточкой». Что мы задеваем?",
+   "en": "Banging your elbow feels like a shock; the English call the spot the funny bone. What do you hit?"
+  },
+  "options": [
+   {
+    "ru": "Кость",
+    "en": "A bone"
+   },
+   {
+    "ru": "Сухожилие",
+    "en": "A tendon"
+   },
+   {
+    "ru": "Нерв",
+    "en": "A nerve"
+   },
+   {
+    "ru": "Вену",
+    "en": "A vein"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Локтевой нерв лежит там прямо под кожей. А «смешная» — это каламбур: плечевая кость по-английски humerus, почти humorous.",
+   "en": "The ulnar nerve lies right under the skin there. 'Funny' is a pun: the upper arm bone is the humerus, which sounds like 'humorous'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Funny_bone",
+  "basedOn": "body_007",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему на фото со вспышкой у людей бывают красные глаза?",
+   "en": "Why do people sometimes have red eyes in flash photos?"
+  },
+  "options": [
+   {
+    "ru": "Глаза краснеют от яркой вспышки",
+    "en": "The bright flash makes eyes bloodshot"
+   },
+   {
+    "ru": "Свет отражается от дна глаза",
+    "en": "Light bounces off the back of the eye"
+   },
+   {
+    "ru": "Так камера искажает цвета",
+    "en": "The camera distorts the colours"
+   },
+   {
+    "ru": "В темноте сосуды глаз расширяются",
+    "en": "Eye vessels swell in the dark"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В полутьме зрачок широкий, а задняя стенка глаза полна крови. Поэтому и придумали предвспышку: зрачок успевает сузиться.",
+   "en": "In dim light the pupil is wide and the back of the eye is full of blood. Hence the pre-flash: it makes the pupils shrink first."
+  },
+  "source": "https://en.wikipedia.org/wiki/Red-eye_effect",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему от холодного мороженого вдруг пронзает болью лоб?",
+   "en": "Why does cold ice cream suddenly give you a stabbing pain in the forehead?"
+  },
+  "options": [
+   {
+    "ru": "Остывает кровь, идущая к мозгу",
+    "en": "The blood going to the brain cools"
+   },
+   {
+    "ru": "Сводит холодом мышцы лба",
+    "en": "Cold cramps the forehead muscles"
+   },
+   {
+    "ru": "Мёрзнет передняя часть мозга",
+    "en": "The front of the brain gets chilled"
+   },
+   {
+    "ru": "Холод раздражает нервы нёба",
+    "en": "Cold sets off nerves in the palate"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Сосуды нёба от холода сжимаются и тут же расширяются, а мозг путает, где болит, и чувствует боль во лбу. Помогает прижать язык к нёбу.",
+   "en": "Vessels in the palate narrow, then swell, and the brain places the pain in the forehead. Pressing your tongue to the palate helps."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cold-stimulus_headache",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "ДНК у однояйцевых близнецов одинаковая. А отпечатки пальцев?",
+   "en": "Identical twins have the same DNA. What about their fingerprints?"
+  },
+  "options": [
+   {
+    "ru": "Тоже одинаковые",
+    "en": "The same too"
+   },
+   {
+    "ru": "Похожи, но разные",
+    "en": "Similar but different"
+   },
+   {
+    "ru": "Совпадают у каждой второй пары",
+    "en": "They match in half of all pairs"
+   },
+   {
+    "ru": "Одинаковы только на больших пальцах",
+    "en": "Only the thumbprints match"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Узор складывается в утробе и зависит от мелочей вокруг каждого пальчика, поэтому у близнецов отпечатки похожи, но не совпадают.",
+   "en": "The pattern forms in the womb and depends on tiny differences around each finger, so twins' prints are similar but never identical."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fingerprint",
+  "basedOn": "body_024",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое лёгкое у человека больше и почему?",
+   "en": "Which of your lungs is bigger, and why?"
+  },
+  "options": [
+   {
+    "ru": "Левое: справа мешает печень",
+    "en": "The left: the liver crowds the right"
+   },
+   {
+    "ru": "Они одинакового размера",
+    "en": "They are the same size"
+   },
+   {
+    "ru": "Правое: слева мешает сердце",
+    "en": "The right: the heart crowds the left"
+   },
+   {
+    "ru": "У правшей правое, у левшей левое",
+    "en": "Right in right-handers, left in lefties"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Правое: в нём три доли, а в левом две и выемка под сердце. Печень и правда подпирает правое снизу: оно короче, зато шире.",
+   "en": "The right: it has three lobes, the left two and a notch for the heart. The liver does push the right one up: shorter, but wider."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lung",
+  "basedOn": "body_035",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какое время суток человек выше всего ростом?",
+   "en": "At what time of day are you tallest?"
+  },
+  "options": [
+   {
+    "ru": "Утром",
+    "en": "In the morning"
+   },
+   {
+    "ru": "Днём",
+    "en": "At midday"
+   },
+   {
+    "ru": "Вечером",
+    "en": "In the evening"
+   },
+   {
+    "ru": "Рост весь день одинаковый",
+    "en": "The same all day"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "За день хрящевые диски позвоночника сжимаются, и к вечеру мы ниже примерно на полтора сантиметра.",
+   "en": "During the day the discs in your spine squash down, so by evening you are about 1.5 cm shorter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_height",
+  "basedOn": "body_021",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Примерно каждый четвёртый человек чихает, когда…",
+   "en": "About one person in four sneezes when they…"
+  },
+  "options": [
+   {
+    "ru": "Слышит громкий хлопок",
+    "en": "Hear a loud bang"
+   },
+   {
+    "ru": "Пьёт ледяную воду",
+    "en": "Drink ice-cold water"
+   },
+   {
+    "ru": "Резко встаёт с кровати",
+    "en": "Get out of bed fast"
+   },
+   {
+    "ru": "Выходит на яркий свет",
+    "en": "Step into bright light"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Это наследственный «солнечный чих»: он есть у 18–35% людей. Ещё Аристотель спрашивал, почему солнце заставляет чихать.",
+   "en": "It's the inherited photic sneeze, found in 18 to 35% of people. Aristotle already asked why the sun makes us sneeze."
+  },
+  "source": "https://en.wikipedia.org/wiki/Photic_sneeze_reflex",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой длины ДНК из одной клетки человека, если её размотать?",
+   "en": "How long is the DNA from one human cell when unwound?"
+  },
+  "options": [
+   {
+    "ru": "2 миллиметра",
+    "en": "2 millimetres"
+   },
+   {
+    "ru": "2 сантиметра",
+    "en": "2 centimetres"
+   },
+   {
+    "ru": "2 метра",
+    "en": "2 metres"
+   },
+   {
+    "ru": "2 километра",
+    "en": "2 kilometres"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Её укладывают в ядро шириной меньше сотой доли миллиметра — как 20 км нитки в теннисный мяч.",
+   "en": "It is packed into a nucleus under a hundredth of a millimetre wide, like 20 km of thread in a tennis ball."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cell_nucleus",
+  "basedOn": "body_028",
+  "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До расшифровки генома учёные ждали у человека 50–140 тысяч генов, кодирующих белки. Сколько их оказалось?",
+   "en": "Before the genome was read, scientists expected 50,000 to 140,000 protein-coding genes. How many are there?"
+  },
+  "answer": 20000,
+  "range": [
+   0,
+   150000
+  ],
+  "step": 500,
+  "tolerance": 10000,
+  "unit": {
+   "ru": "генов",
+   "en": "genes"
+  },
+  "fact": {
+   "ru": "Около 20 тысяч — почти столько же, сколько у червя длиной в миллиметр. Сложность организма не в числе генов.",
+   "en": "About 20,000, roughly as many as a worm one millimetre long. Complexity is not a matter of gene count."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_genome",
+  "basedOn": "body_050",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько раз за день, пока не спит, моргает человек?",
+   "en": "How many times does a person blink in a waking day?"
+  },
+  "answer": 15000,
+  "range": [
+   1000,
+   80000
+  ],
+  "step": 500,
+  "tolerance": 8000,
+  "unit": {
+   "ru": "раз",
+   "en": "times"
+  },
+  "fact": {
+   "ru": "Это 15–20 раз в минуту; у экрана мы моргаем в разы реже, отсюда сухие уставшие глаза.",
+   "en": "That is 15 to 20 times a minute; at a screen we blink several times less, hence dry, tired eyes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Blinking",
+  "basedOn": "body_042",
+  "refine": "same"
+ }
+]

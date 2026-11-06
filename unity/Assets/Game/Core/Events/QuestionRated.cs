@@ -4,8 +4,9 @@ namespace FamilyQuiz.Core.Events
     public sealed class QuestionRated : IGameEvent
     {
         public QuestionRated(string playerId, string questionId, string topic, string format, string difficulty, string item,
-            int stars, bool? correct, long phaseId)
+            int stars, bool? correct, long phaseId, string bank = null)
         {
+            Bank = bank;
             PlayerId = playerId;
             QuestionId = questionId;
             Topic = topic;
@@ -29,5 +30,8 @@ namespace FamilyQuiz.Core.Events
         public bool? Correct { get; }
 
         public long PhaseId { get; }
+
+        /// <summary>The question bank of the game (decisions/0020), full or curated.</summary>
+        public string Bank { get; }
     }
 }

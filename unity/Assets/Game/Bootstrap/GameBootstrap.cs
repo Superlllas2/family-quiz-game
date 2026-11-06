@@ -48,6 +48,7 @@ namespace FamilyQuiz.Bootstrap
         private bool _sessionLogged;
         private bool _relayUp;
         private MusicPlayer _music;
+        private SfxPlayer _sfx;
 
         private void Awake()
         {
@@ -205,6 +206,7 @@ namespace FamilyQuiz.Bootstrap
             _seen?.OnEvents(events);
             _outbox?.OnEvents(events);
             _view.OnEvents(events);
+            _sfx?.OnEvents(events);
             _debug?.OnEvents(events);
             _telemetry?.OnEvents(events);
             if (_dialogue != null) Speak(_dialogue.OnEvents(events));
@@ -225,6 +227,16 @@ namespace FamilyQuiz.Bootstrap
                 _music.Volume = volume;
                 volumeFile.Save(volume);
             }, MusicCredit);
+
+            // Sound effects and host voices (decisions/0020, D120, D121), their volume in the same file.
+            var sfxFile = new MusicVolumeFile(Path.Combine(Application.persistentDataPath, MusicVolumeFile.FileName),
+                (float)config.Sfx.Volume, MusicVolumeFile.SfxKey);
+            _sfx = SfxPlayer.Create(_game, sfxFile.Load(), config.Sfx.HostVoice);
+            _view.SetSfx(() => _sfx.Volume, volume =>
+            {
+                _sfx.Volume = volume;
+                sfxFile.Save(volume);
+            });
         }
 
         /// <summary>"Now playing: Lobby Time by Kevin MacLeod (incompetech.com), CC BY 4.0" in the game language, or null.</summary>
@@ -256,6 +268,7 @@ namespace FamilyQuiz.Bootstrap
             foreach (var line in lines)
             {
                 _view.ShowHostLine(line.Host, line.Text, line.EndMs);
+                _sfx?.HostSpeaks(line.Host, line.Text(_game.State.GameLanguage));
                 _telemetry?.HostLine(line.LineId, line.Host, line.Trigger);
                 TvLog.Info("host " + line.Host + " (" + line.Trigger + "): " + line.Text(_game.State.GameLanguage));
             }

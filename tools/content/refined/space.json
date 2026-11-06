@@ -1,0 +1,326 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что чаще всего сгорает в небе, когда мы видим «падающую звезду»?",
+   "en": "What usually burns up in the sky when we see a 'shooting star'?"
+  },
+  "options": [
+   {
+    "ru": "Камень размером с арбуз",
+    "en": "A rock the size of a melon"
+   },
+   {
+    "ru": "Обломок старого спутника",
+    "en": "A piece of an old satellite"
+   },
+   {
+    "ru": "Песчинка или мелкий камешек",
+    "en": "A grain of sand or a pebble"
+   },
+   {
+    "ru": "Ледяная глыба размером с дом",
+    "en": "A block of ice as big as a house"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Им хватает скорости: они влетают в воздух на 11–72 км в секунду и сгорают в 80–120 км над землёй.",
+   "en": "Speed does it: they hit the air at 11 to 72 km a second and burn up 80 to 120 km above the ground."
+  },
+  "source": "https://www.amsmeteors.org/faq/",
+  "basedOn": "space_007",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему светит Солнце?",
+   "en": "Why does the Sun shine?"
+  },
+  "options": [
+   {
+    "ru": "Горит, как огромный костёр",
+    "en": "It burns like a huge bonfire"
+   },
+   {
+    "ru": "Раскаляется от трения газов",
+    "en": "Friction of its gases heats it"
+   },
+   {
+    "ru": "Внутри него кипит лава",
+    "en": "Lava boils inside it"
+   },
+   {
+    "ru": "Сливаются ядра водорода",
+    "en": "Hydrogen nuclei fuse together"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В его ядре водород превращается в гелий, и каждую секунду Солнце «худеет» на 4 млн тонн: столько массы уходит в свет и тепло.",
+   "en": "In its core hydrogen turns into helium, and every second the Sun loses 4 million tonnes of mass as light and heat."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sun",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто до сих пор единственная женщина, слетавшая в космос в одиночку?",
+   "en": "Who is still the only woman ever to fly into space alone?"
+  },
+  "options": [
+   {
+    "ru": "Светлана Савицкая",
+    "en": "Svetlana Savitskaya"
+   },
+   {
+    "ru": "Валентина Терешкова",
+    "en": "Valentina Tereshkova"
+   },
+   {
+    "ru": "Салли Райд",
+    "en": "Sally Ride"
+   },
+   {
+    "ru": "Елена Кондакова",
+    "en": "Yelena Kondakova"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В 1963 году она почти трое суток летала на «Востоке-6» одна, а было ей всего 26. Все женщины после неё летали в экипажах.",
+   "en": "In 1963 she spent almost three days alone in Vostok 6, aged just 26. Every woman since has flown with a crew."
+  },
+  "source": "https://en.wikipedia.org/wiki/Valentina_Tereshkova",
+  "basedOn": "space_009",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На какой планете сутки длиннее года, а Солнце восходит на западе?",
+   "en": "On which planet is a day longer than a year, and the Sun rises in the west?"
+  },
+  "options": [
+   {
+    "ru": "Юпитер",
+    "en": "Jupiter"
+   },
+   {
+    "ru": "Марс",
+    "en": "Mars"
+   },
+   {
+    "ru": "Венера",
+    "en": "Venus"
+   },
+   {
+    "ru": "Нептун",
+    "en": "Neptune"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Венера поворачивается вокруг оси за 243 земных дня, а вокруг Солнца проходит за 225. И крутится она в обратную сторону.",
+   "en": "Venus takes 243 Earth days to turn once but only 225 to orbit the Sun, and it spins backwards."
+  },
+  "source": "https://en.wikipedia.org/wiki/Venus",
+  "basedOn": "space_026",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Самый высокий вулкан Солнечной системы в два с половиной раза выше Эвереста. Где он?",
+   "en": "The Solar System's tallest volcano is two and a half times as high as Everest. Where is it?"
+  },
+  "options": [
+   {
+    "ru": "На Венере",
+    "en": "On Venus"
+   },
+   {
+    "ru": "На Ио, луне Юпитера",
+    "en": "On Io, a moon of Jupiter"
+   },
+   {
+    "ru": "На дне океана",
+    "en": "On the ocean floor"
+   },
+   {
+    "ru": "На Марсе",
+    "en": "On Mars"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Это гора Олимп, около 22 км. У Марса нет движущихся плит: вулкан стоял над одной «горячей точкой», и лава всё копилась.",
+   "en": "It's Olympus Mons, about 22 km high. Mars has no moving plates, so the volcano sat over one hot spot and lava kept piling up."
+  },
+  "source": "https://en.wikipedia.org/wiki/Olympus_Mons",
+  "basedOn": "space_022",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Большое красное пятно Юпитера видно в телескопы больше века, и в нём поместится Земля. Что это?",
+   "en": "Jupiter's Great Red Spot has been seen for over a century, and the Earth would fit inside. What is it?"
+  },
+  "options": [
+   {
+    "ru": "Гигантский ураган",
+    "en": "A giant storm"
+   },
+   {
+    "ru": "Действующий вулкан",
+    "en": "An active volcano"
+   },
+   {
+    "ru": "След падения кометы",
+    "en": "A comet impact scar"
+   },
+   {
+    "ru": "Тень одного из спутников",
+    "en": "The shadow of a moon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сто лет назад в этом урагане поместились бы три Земли, сейчас — чуть больше одной. Почему он сжимается, точно не знают.",
+   "en": "A century ago three Earths would have fit across this storm; now just over one does. Nobody is sure why it is shrinking."
+  },
+  "source": "https://en.wikipedia.org/wiki/Great_Red_Spot",
+  "basedOn": "space_029",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какого цвета закат на Марсе?",
+   "en": "What colour is a sunset on Mars?"
+  },
+  "options": [
+   {
+    "ru": "Голубой",
+    "en": "Blue"
+   },
+   {
+    "ru": "Ярко-красный",
+    "en": "Bright red"
+   },
+   {
+    "ru": "Зелёный",
+    "en": "Green"
+   },
+   {
+    "ru": "Фиолетовый",
+    "en": "Purple"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мелкая марсианская пыль рассеивает синий свет вперёд, и вокруг заходящего Солнца появляется голубое сияние.",
+   "en": "Fine Martian dust scatters blue light forward, so a blue glow surrounds the setting Sun."
+  },
+  "source": "https://svs.gsfc.nasa.gov/11875",
+  "basedOn": "space_021",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как сам Гагарин вернулся на Землю?",
+   "en": "How did Gagarin himself get back down to Earth?"
+  },
+  "options": [
+   {
+    "ru": "Сам, на своём парашюте",
+    "en": "On his own parachute"
+   },
+   {
+    "ru": "В капсуле, в море",
+    "en": "In the capsule, into the sea"
+   },
+   {
+    "ru": "В капсуле, на сушу",
+    "en": "In the capsule, on land"
+   },
+   {
+    "ru": "Сел на полосу, как самолёт",
+    "en": "On a runway, like a plane"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На высоте 7 км он катапультировался. Это долго скрывали: по правилам рекорда пилот должен был сесть в аппарате.",
+   "en": "He ejected about 7 km up; this was kept quiet for years, as record rules said a pilot must land inside his craft."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vostok_1",
+  "basedOn": "space_038",
+  "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько планет размером с Землю встало бы в ряд между Землёй и Луной?",
+   "en": "How many Earths would fit in a row between the Earth and the Moon?"
+  },
+  "answer": 30,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "",
+   "en": ""
+  },
+  "fact": {
+   "ru": "А когда Луна дальше всего от нас, в этот зазор влезают даже все остальные планеты Солнечной системы.",
+   "en": "When the Moon is at its farthest, even all the other planets of the Solar System fit into that gap."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lunar_distance",
+  "basedOn": "space_044",
+  "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько килограммов весит скафандр «Орлан», в котором наши космонавты выходят в открытый космос?",
+   "en": "How many kilograms does the Orlan suit that Russian cosmonauts wear on spacewalks weigh?"
+  },
+  "answer": 110,
+  "range": [
+   0,
+   400
+  ],
+  "step": 2,
+  "tolerance": 25,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Около 110–120 кг, смотря по модели. Залезают в него через дверцу в спине: ранец откидывается, и надеть скафандр можно минут за пять.",
+   "en": "About 110 to 120 kg, by model. You climb in through a door in the back: the backpack swings open, and it takes about five minutes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Orlan_space_suit",
+  "basedOn": null,
+  "refine": "new"
+ }
+]

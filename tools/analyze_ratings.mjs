@@ -13,6 +13,10 @@
 // - Questions and the audit are read from content/questions.json and docs/question_audit/sample_audit.json next to
 //   this script, when present. The audit covers a 600 question sample, so only part of the rated questions join it.
 // - --min: the fewest raters a question needs to appear in the best and worst lists (default 2).
+// - Banks (decisions/0020): each line carries bank (full or curated; older logs have none and count as full). The
+//   report compares the banks overall, per topic that both banks played, and per pair of questions: a curated question
+//   (content/questions_refined.json) next to the full bank question it is based on (refine same: the identical
+//   question; rewrite: the same fact asked better).
 
 import { readFileSync, readdirSync, statSync, existsSync, writeFileSync } from "node:fs";
 import { join, dirname, basename } from "node:path";
@@ -42,7 +46,7 @@ export function collectRatings(logs) {
       }
       lines++;
       const s = line.session ?? session;
-      latest.set(`${s}\n${line.playerId}\n${line.questionId}\n${line.item}`, { ...line, session: s });
+      latest.set(`${s}\n${line.playerId}\n${line.questionId}\n${line.item}`, { ...line, bank: line.bank ?? "full", session: s });
     }
   }
   return { ratings: [...latest.values()], lines, skipped };
@@ -89,8 +93,33 @@ export function summarize(ratings, keyOf) {
   });
 }
 
+/**
+ * The bank comparison (decisions/0020): per bank, per topic both banks played, and per curated question next to the full
+ * bank question it is based on. curated maps a curated id to {basedOn, refine}.
+ */
+export function compareBanks(ratings, curated = new Map()) {
+  const perBank = summarize(ratings, (r) => r.bank ?? "full");
+  const byTopicBank = summarize(ratings, (r) => `${r.topic}\n${r.bank ?? "full"}`);
+  const topics = new Map();
+  for (const g of byTopicBank) {
+    const [topic, bank] = g.key.split("\n");
+    if (!topics.has(topic)) topics.set(topic, {});
+    topics.get(topic)[bank] = g;
+  }
+  const sharedTopics = [...topics.entries()].filter(([, b]) => b.full && b.curated).map(([topic, b]) => ({ topic, full: b.full, curated: b.curated }));
+  const perQuestion = new Map(summarize(ratings, (r) => r.questionId).map((q) => [q.key, q]));
+  const pairs = [];
+  for (const [id, meta] of curated) {
+    if (!meta.basedOn) continue;
+    const c = perQuestion.get(id);
+    const f = perQuestion.get(meta.basedOn);
+    if (c && f) pairs.push({ curated: id, full: meta.basedOn, refine: meta.refine, curatedStats: c, fullStats: f });
+  }
+  return { perBank, sharedTopics, pairs };
+}
+
 /** Everything the report shows, as data (--json prints it). */
-export function analyze(ratings, { questions = new Map(), audit = new Map(), min = 2 } = {}) {
+export function analyze(ratings, { questions = new Map(), audit = new Map(), min = 2, curated = new Map() } = {}) {
   const items = [...new Set([...ITEMS, ...ratings.map((r) => r.item)])];
   const perQuestion = summarize(ratings, (r) => r.questionId).map((q) => {
     const meta = questions.get(q.key);
@@ -137,6 +166,7 @@ export function analyze(ratings, { questions = new Map(), audit = new Map(), min
     itemCorrelation,
     best: ranked.slice(0, 10),
     worst: ranked.slice(-10).reverse(),
+    banks: compareBanks(ratings, curated),
     audit: {
       joined: joined.length,
       funVsAudit: pearson(joined.map((q) => q.auditScore), joined.map(funOf)),
@@ -172,6 +202,28 @@ export function report(result) {
   if (!totals.ratings) {
     out.push("No questionRated lines found. Was question feedback switched on in the TV settings panel (Tab)?");
     return out.join("\n");
+  }
+  const b = result.banks;
+  if (b.perBank.length > 1 || b.perBank.some((g) => g.key === "curated")) {
+    out.push("## Full bank against curated bank");
+    out.push("");
+    out.push(table(b.perBank, items, "Bank"));
+    out.push("");
+    if (b.sharedTopics.length) {
+      out.push("Topics both banks played:");
+      out.push("");
+      out.push(table(b.sharedTopics.flatMap((t) => [{ ...t.full, label: `${t.topic} (full)` }, { ...t.curated, label: `${t.topic} (curated)` }]), items, "Topic"));
+      out.push("");
+    }
+    if (b.pairs.length) {
+      out.push("The same fact in both banks (same: the identical question; rewrite: the same fact asked better):");
+      out.push("");
+      out.push(table(b.pairs.flatMap((p) => [{ ...p.fullStats, label: `${p.full} (full)` }, { ...p.curatedStats, label: `${p.curated} (${p.refine})` }]), items, "Question"));
+      out.push("");
+    } else {
+      out.push("No question was rated in both banks yet (a curated question and its full bank question never come to the same family twice; they meet across families or after Reset seen).");
+      out.push("");
+    }
   }
   out.push("## By difficulty and format");
   out.push("");
@@ -250,7 +302,10 @@ function main(argv) {
   const root = join(dirname(fileURLToPath(import.meta.url)), "..");
   const questions = new Map((loadJson(join(root, "content", "questions.json")) ?? []).map((q) => [q.id, { ...q, text: q.text?.en }]));
   const audit = new Map((loadJson(join(root, "docs", "question_audit", "sample_audit.json")) ?? []).map((r) => [r.id, r]));
-  const result = analyze(ratings, { questions, audit, min });
+  const refinedList = loadJson(join(root, "content", "questions_refined.json")) ?? [];
+  for (const q of refinedList) questions.set(q.id, { ...q, text: q.text?.en });
+  const curated = new Map(refinedList.map((q) => [q.id, { basedOn: q.basedOn, refine: q.refine }]));
+  const result = analyze(ratings, { questions, audit, min, curated });
   const text = json ? JSON.stringify(result, null, 1) : report(result);
   if (outFile) writeFileSync(outFile, text + "\n");
   else console.log(text);

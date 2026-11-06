@@ -32,6 +32,9 @@ namespace FamilyQuiz.Presentation
         private Action _onContinue;
         private Action _onNewGame;
         private Action _onSettings;
+        private Action _onBank;
+        private Func<bool> _hasBanks;
+        private PanelButton _bank;
         private RectTransform _card;
         private TextMeshProUGUI _title;
         private TextMeshProUGUI _hint;
@@ -40,7 +43,8 @@ namespace FamilyQuiz.Presentation
         private PanelButton _settings;
         private bool _armedShown;
 
-        public static TvPauseMenu Create(Transform parent, TvContext context, Action onContinue, Action onNewGame, Action onSettings)
+        public static TvPauseMenu Create(Transform parent, TvContext context, Action onContinue, Action onNewGame, Action onSettings,
+            Action onBank = null, Func<bool> hasBanks = null)
         {
             var rect = UiBuilder.Anchor(UiBuilder.Rect("TvPauseMenu", parent), 0, 0, 1, 1);
             var menu = rect.gameObject.AddComponent<TvPauseMenu>();
@@ -48,6 +52,8 @@ namespace FamilyQuiz.Presentation
             menu._onContinue = onContinue;
             menu._onNewGame = onNewGame;
             menu._onSettings = onSettings;
+            menu._onBank = onBank;
+            menu._hasBanks = hasBanks;
             menu.Build();
             rect.gameObject.SetActive(false);
             return menu;
@@ -79,7 +85,11 @@ namespace FamilyQuiz.Presentation
             _settings.Set(_context.T("tv.pause.settings"), TvColors.ButtonOff);
             bool newGame = game.State.Phase != GamePhase.Lobby;
             _newGame.Rect.gameObject.SetActive(newGame);
-            Layout(newGame);
+            bool banks = _hasBanks != null && _hasBanks();
+            _bank.Rect.gameObject.SetActive(banks);
+            if (banks)
+                _bank.Set(_context.Format("tv.pause.bank", "bank", _context.T("tv.bank." + game.State.PendingSettings.Bank)), TvColors.ButtonOff);
+            Layout(newGame, banks);
             DrawNewGame();
         }
 
@@ -90,7 +100,7 @@ namespace FamilyQuiz.Presentation
         }
 
         /// <summary>The buttons stack with no gap where New game is hidden, and the card fits them.</summary>
-        private void Layout(bool newGame)
+        private void Layout(bool newGame, bool banks)
         {
             float y = ButtonsTop;
             Box(_continue.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
@@ -102,6 +112,12 @@ namespace FamilyQuiz.Presentation
             }
 
             Box(_settings.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
+            if (banks)
+            {
+                y += ButtonHeight + ButtonGap;
+                Box(_bank.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
+            }
+
             _card.sizeDelta = new Vector2(CardWidth, y + ButtonHeight + Padding);
         }
 
@@ -154,6 +170,7 @@ namespace FamilyQuiz.Presentation
             _newGame = Button(card, "NewGame", y, OnNewGame);
             y += ButtonHeight + ButtonGap;
             _settings = Button(card, "Settings", y, () => _onSettings?.Invoke());
+            _bank = Button(card, "Bank", y, () => _onBank?.Invoke());
         }
 
         private static TextMeshProUGUI Label(RectTransform card, string name, float y, float height, float size, Color color, bool bold)

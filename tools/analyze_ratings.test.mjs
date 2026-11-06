@@ -38,6 +38,24 @@ test("per question means, raters and the share right", () => {
   assert.equal(result.totals.players, 2);
 });
 
+test("the banks compare overall, per shared topic and per question pair", () => {
+  const rated = (o) => line({ topic: "food", format: "multipleChoice", difficulty: "easy", item: "fun", correct: true, ...o });
+  const text = [
+    rated({ playerId: "p1", questionId: "food_001", stars: 2 }),
+    rated({ playerId: "p2", questionId: "food_001", stars: 3, bank: "full" }),
+    rated({ playerId: "p1", questionId: "cur_food_01", stars: 5, bank: "curated", session: "s2" }),
+    rated({ playerId: "p1", questionId: "cur_food_02", stars: 4, bank: "curated", session: "s2" }),
+  ].join("\n");
+  const { ratings } = collectRatings([{ session: "f", text }]);
+  const result = analyze(ratings, { curated: new Map([["cur_food_01", { basedOn: "food_001", refine: "rewrite" }], ["cur_food_02", { basedOn: null, refine: "new" }]]) });
+  const banks = Object.fromEntries(result.banks.perBank.map((g) => [g.key, g.items.fun.mean]));
+  assert.deepEqual(banks, { full: 2.5, curated: 4.5 });
+  assert.equal(result.banks.sharedTopics.length, 1);
+  assert.equal(result.banks.pairs.length, 1);
+  assert.equal(result.banks.pairs[0].refine, "rewrite");
+  assert.match(report(result), /Full bank against curated bank/);
+});
+
 test("the report says when feedback was never on", () => {
   assert.match(report(analyze([])), /Was question feedback switched on/);
   const { ratings } = collectRatings([{ session: "f", text: log }]);

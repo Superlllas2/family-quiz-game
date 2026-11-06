@@ -11,7 +11,7 @@ namespace FamilyQuiz.Core.Content
         public GameContent(GameConfig config, IReadOnlyList<CharacterDef> characters, IReadOnlyList<QuestionDef> questions,
             UiStrings strings, IReadOnlyList<TopicDef> topics, IReadOnlyList<RaceStatementDef> race, ShowScripts scripts,
             IReadOnlyList<FactDef> facts = null, IReadOnlyList<HostLineDef> hostLines = null,
-            IReadOnlyList<PollQuestionDef> poll = null)
+            IReadOnlyList<PollQuestionDef> poll = null, IReadOnlyList<QuestionDef> curated = null)
         {
             Config = config;
             Characters = characters;
@@ -23,6 +23,23 @@ namespace FamilyQuiz.Core.Content
             Facts = facts ?? new List<FactDef>();
             HostLines = hostLines ?? new List<HostLineDef>();
             Poll = poll ?? new List<PollQuestionDef>();
+            var banks = new List<QuestionBank> { new QuestionBank(BankIds.Full, questions ?? new List<QuestionDef>(), Topics) };
+            if (curated != null && curated.Count > 0) banks.Add(new QuestionBank(BankIds.Curated, curated, Topics));
+            Banks = banks;
+        }
+
+        /// <summary>The question banks (decisions/0020): the full bank first, then the curated one when its file exists.</summary>
+        public IReadOnlyList<QuestionBank> Banks { get; }
+
+        /// <summary>The bank with this id, or the full bank when there is no such bank.</summary>
+        public QuestionBank Bank(string id)
+        {
+            foreach (var b in Banks)
+            {
+                if (b.Id == id) return b;
+            }
+
+            return Banks[0];
         }
 
         public GameConfig Config { get; }

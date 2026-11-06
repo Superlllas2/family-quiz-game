@@ -2,6 +2,9 @@
 # each a list of 50 questions without ids (build_questions.py gives the ids). Run from the repo root:
 #   python tools/content/check_bank.py                     every topic file there is
 #   python tools/content/check_bank.py tools/content/bank/space.json [...]
+#   python tools/content/check_bank.py --refined [files]   the refined test bank in tools/content/refined (decisions/0020):
+#                                                          10 questions per topic (3 easy, 5 medium, 2 hard) with
+#                                                          basedOn (a v4 question id or null) and refine (same, rewrite, new)
 # Rules: the schema limits of docs/15_schemas.md, the kinds a round can use (config.json: easy and medium multiple
 # choice, hard closest value), and closest value sliders that leave room and never pay for a guess at either end.
 import json, os, re, sys
@@ -39,6 +42,12 @@ def on_grid(x, lo, step):
     return abs(k - round(k)) < 1e-6
 
 
+REFINED = os.path.join("tools", "content", "refined")
+REFINED_COUNTS = {("multipleChoice", "easy"): 3, ("multipleChoice", "medium"): 5, ("closestValue", "hard"): 2}
+REFINE_KINDS = {"same", "rewrite", "new"}
+refined_mode = False
+
+
 def check_question(q, where, errs):
     if not isinstance(q, dict):
         errs.append(where + " is not an object")
@@ -48,10 +57,19 @@ def check_question(q, where, errs):
         errs.append(where + " must be easy or medium multipleChoice, or hard closestValue (got %s %s)" % kind)
         return
     keys = MC_KEYS if kind[0] == "multipleChoice" else CV_KEYS
+    if refined_mode:
+        keys = keys | {"basedOn", "refine"}
+        if q.get("refine") not in REFINE_KINDS:
+            errs.append(where + ".refine must be same, rewrite or new")
+        based = q.get("basedOn")
+        if q.get("refine") == "new" and based is not None:
+            errs.append(where + ".basedOn must be null for a new question")
+        if q.get("refine") in ("same", "rewrite") and not (isinstance(based, str) and re.match(r"^[a-z0-9_]+_\d{3}$", based)):
+            errs.append(where + ".basedOn must be the v4 question id it comes from")
     extra = set(q) - keys
     if extra:
         errs.append(where + " has unknown fields " + ", ".join(sorted(extra)))
-    missing = (keys - {"kids"}) - set(q)
+    missing = (keys - {"kids", "basedOn"}) - set(q)
     if missing:
         errs.append(where + " is missing " + ", ".join(sorted(missing)))
         return
@@ -124,16 +142,22 @@ def check_file(path, topic_ids):
             if key in texts:
                 errs.append("%s repeats the question of %s[%d]" % (where, name, texts[key]))
             texts[key] = i
-    for kind, n in COUNTS.items():
+    for kind, n in (REFINED_COUNTS if refined_mode else COUNTS).items():
         if count.get(kind, 0) != n:
             errs.append("%s has %d %s %s questions, needs exactly %d" % (name, count.get(kind, 0), kind[1], kind[0], n))
     return errs
 
 
 def main():
+    global refined_mode
+    args = sys.argv[1:]
+    if "--refined" in args:
+        refined_mode = True
+        args.remove("--refined")
+    folder = REFINED if refined_mode else BANK
     with open(os.path.join(BANK, "topics.json"), encoding="utf-8") as f:
         topic_ids = {t["id"] for t in json.load(f)}
-    paths = sys.argv[1:] or sorted(os.path.join(BANK, p) for p in os.listdir(BANK) if p.endswith(".json") and p != "topics.json")
+    paths = args or sorted(os.path.join(folder, p) for p in os.listdir(folder) if p.endswith(".json") and p != "topics.json")
     errs = []
     for p in paths:
         errs += check_file(p, topic_ids)

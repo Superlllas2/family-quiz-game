@@ -75,6 +75,10 @@ namespace FamilyQuiz.Presentation
         private TextMeshProUGUI _musicLabel;
         private TextMeshProUGUI _musicValue;
         private UnityEngine.UI.Slider _musicSlider;
+        private TextMeshProUGUI _sfxValue;
+        private UnityEngine.UI.Slider _sfxSlider;
+        private Func<float> _sfxVolume;
+        private Action<float> _setSfxVolume;
         private TextMeshProUGUI _musicCredit;
         private Func<float> _musicVolume;
         private Action<float> _setMusicVolume;
@@ -122,6 +126,13 @@ namespace FamilyQuiz.Presentation
             _musicVolume = volume;
             _setMusicVolume = setVolume;
             _musicCreditText = creditText;
+        }
+
+        /// <summary>The sound effects slider (decisions/0020, D120), beside the music slider.</summary>
+        public void SetSfx(Func<float> volume, Action<float> setVolume)
+        {
+            _sfxVolume = volume;
+            _setSfxVolume = setVolume;
         }
 
         /// <summary>Tab: opens or closes the panel. Nothing else stops or waits.</summary>
@@ -182,10 +193,13 @@ namespace FamilyQuiz.Presentation
             Choice(_feedbackOn, "tv.settings.on", state.FeedbackEnabled);
             Choice(_feedbackOff, "tv.settings.off", !state.FeedbackEnabled);
 
-            _musicLabel.text = _context.T("tv.settings.music");
+            _musicLabel.text = _context.T("tv.settings.volume");
             float volume = _musicVolume != null ? _musicVolume() : 0f;
             _musicSlider.SetValueWithoutNotify(volume);
-            _musicValue.text = Mathf.RoundToInt(volume * 100f) + "%";
+            _musicValue.text = Caption("tv.settings.music", volume);
+            float sfx = _sfxVolume != null ? _sfxVolume() : 0f;
+            _sfxSlider.SetValueWithoutNotify(sfx);
+            _sfxValue.text = Caption("tv.settings.sounds", sfx);
             DrawCredit();
 
             _resetSeen.Set(_context.T("tv.settings.resetSeen"), TvColors.ButtonOff);
@@ -212,7 +226,19 @@ namespace FamilyQuiz.Presentation
         private void OnMusicVolume(float volume)
         {
             _setMusicVolume?.Invoke(volume);
-            _musicValue.text = Mathf.RoundToInt(volume * 100f) + "%";
+            _musicValue.text = Caption("tv.settings.music", volume);
+        }
+
+        private void OnSfxVolume(float volume)
+        {
+            _setSfxVolume?.Invoke(volume);
+            _sfxValue.text = Caption("tv.settings.sounds", volume);
+        }
+
+        /// <summary>"Музыка 35%" over a volume slider.</summary>
+        private string Caption(string key, float volume)
+        {
+            return _context.T(key) + " " + Mathf.RoundToInt(volume * 100f) + "%";
         }
 
         private void DrawBackToLobby()
@@ -357,7 +383,10 @@ namespace FamilyQuiz.Presentation
             y += RowStep;
 
             _musicLabel = RowLabel("Music", y, out _);
-            _musicSlider = MusicSlider(y);
+            float half = (2 * ButtonWidth + ButtonGap - 16) / 2;
+            float sx = Padding + LabelWidth + 12;
+            _musicSlider = VolumeSlider("MusicSlider", sx, y, half, OnMusicVolume, out _musicValue);
+            _sfxSlider = VolumeSlider("SfxSlider", sx + half + 16, y, half, OnSfxVolume, out _sfxValue);
             y += RowStep + 20;
 
             _resetSeen = PanelButton.Create(_card, "ResetSeen", ButtonLabelSize, OnResetSeen);
@@ -376,17 +405,15 @@ namespace FamilyQuiz.Presentation
         }
 
         /// <summary>
-        /// The music volume slider (D114) in place of a row's two buttons, with the value in percent at its right. Drag or
-        /// click with the mouse; every change applies at once.
+        /// A volume slider (music D114, sounds D120): half of a row's button space, its caption with the value in percent
+        /// above it. Drag or click with the mouse; every change applies at once.
         /// </summary>
-        private UnityEngine.UI.Slider MusicSlider(float y)
+        private UnityEngine.UI.Slider VolumeSlider(string name, float x, float y, float width, UnityEngine.Events.UnityAction<float> onChange,
+            out TextMeshProUGUI caption)
         {
-            const float valueWidth = 90f;
-            float x = Padding + LabelWidth + 12;
-            float width = 2 * ButtonWidth + ButtonGap - valueWidth - 10;
-
-            var root = UiBuilder.Rect("MusicSlider", _card);
-            Box(root, x, y + 10, width, ButtonHeight);
+            caption = Label(name + "Caption", x, y + 2, width, 26, 22f, TvColors.DimText, true, TextAlignmentOptions.Left);
+            var root = UiBuilder.Rect(name, _card);
+            Box(root, x, y + 30, width, 40);
             var track = UiBuilder.Image("Track", root, TvColors.ButtonOff, RoundedSprite.Get());
             track.raycastTarget = true;
             UiBuilder.Anchor(track.rectTransform, 0, 0.3f, 1, 0.7f);
@@ -414,10 +441,7 @@ namespace FamilyQuiz.Presentation
             slider.minValue = 0f;
             slider.maxValue = 1f;
             slider.navigation = new UnityEngine.UI.Navigation { mode = UnityEngine.UI.Navigation.Mode.None };
-            slider.onValueChanged.AddListener(OnMusicVolume);
-
-            _musicValue = Label("MusicValue", x + width + 10, y, valueWidth, 76, LabelSize, TvColors.Text, true,
-                TextAlignmentOptions.Right);
+            slider.onValueChanged.AddListener(onChange);
             return slider;
         }
 

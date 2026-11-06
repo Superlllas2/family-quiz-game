@@ -1,0 +1,326 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 2015 году словом года по версии Оксфордского словаря стало эмодзи. Какое?",
+   "en": "In 2015 Oxford Dictionaries named an emoji its Word of the Year. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Лицо со слезами радости",
+    "en": "Face with tears of joy"
+   },
+   {
+    "ru": "Красное сердечко",
+    "en": "Red heart"
+   },
+   {
+    "ru": "Большой палец вверх",
+    "en": "Thumbs up"
+   },
+   {
+    "ru": "Подмигивающий смайлик",
+    "en": "Winking face"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Впервые словом года стала картинка: в 2015-м этот смайлик был самым популярным в мире.",
+   "en": "It was the first time a pictograph won: in 2015 it was the most used emoji in the world's messages."
+  },
+  "source": "https://en.wikipedia.org/wiki/Face_with_Tears_of_Joy_emoji",
+  "basedOn": "memes_001",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда взялась фотография «Неверного парня», который оглядывается на другую девушку?",
+   "en": "Where did the 'Distracted boyfriend' photo, a man turning to look at another woman, come from?"
+  },
+  "options": [
+   {
+    "ru": "Это стоковое фото",
+    "en": "A stock photo"
+   },
+   {
+    "ru": "Кадр из фильма",
+    "en": "A film still"
+   },
+   {
+    "ru": "Снимок папарацци",
+    "en": "A paparazzi shot"
+   },
+   {
+    "ru": "Рекламный плакат",
+    "en": "An advertising poster"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Испанский фотограф Антонио Гильем снял сцену с моделями в Жироне в 2015 году для фотобанков.",
+   "en": "Spanish photographer Antonio Guillem staged it with models in Girona in 2015 for stock photo sites."
+  },
+  "source": "https://en.wikipedia.org/wiki/Distracted_boyfriend_meme",
+  "basedOn": "memes_012",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 2015 году весь интернет спорил о цвете платья на фото. Какого цвета оно на самом деле?",
+   "en": "In 2015 the whole internet argued about the colour of a dress in a photo. What colour is it really?"
+  },
+  "options": [
+   {
+    "ru": "Белое с золотым",
+    "en": "White and gold"
+   },
+   {
+    "ru": "Голубое с коричневым",
+    "en": "Light blue and brown"
+   },
+   {
+    "ru": "Синее с чёрным",
+    "en": "Blue and black"
+   },
+   {
+    "ru": "Белое с серебром",
+    "en": "White and silver"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Фирма Roman Originals подтвердила: сине-чёрное. А потом сшила одно бело-золотое — для благотворительного аукциона.",
+   "en": "The maker, Roman Originals, confirmed blue and black, then sewed a single white and gold one for a charity auction."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_dress",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Ухмыляющееся лицо интернет-тролля, Trollface, нарисовали в 2008 году. В какой программе?",
+   "en": "Trollface, the grinning face of the internet troll, was drawn in 2008. In which program?"
+  },
+  "options": [
+   {
+    "ru": "Фотошоп",
+    "en": "Photoshop"
+   },
+   {
+    "ru": "Эксель",
+    "en": "Excel"
+   },
+   {
+    "ru": "Пэйнт",
+    "en": "Paint"
+   },
+   {
+    "ru": "ПауэрПойнт",
+    "en": "PowerPoint"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Его нарисовал в Paint 18-летний студент Карлос Рамирес, а потом оформил авторские права и заработал на нём больше $100 000.",
+   "en": "Carlos Ramirez, an 18-year-old student, drew it in MS Paint, then registered the copyright and made over $100,000 from it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trollface",
+  "basedOn": "memes_028",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Слово «вики» взяли с автобуса в аэропорту Гонолулу. Что оно значит по-гавайски?",
+   "en": "The word 'wiki' was taken from a shuttle bus at Honolulu airport. What does it mean in Hawaiian?"
+  },
+  "options": [
+   {
+    "ru": "«Вместе»",
+    "en": "'Together'"
+   },
+   {
+    "ru": "«Быстро»",
+    "en": "'Quick'"
+   },
+   {
+    "ru": "«Знание»",
+    "en": "'Knowledge'"
+   },
+   {
+    "ru": "«Свободно»",
+    "en": "'Freely'"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В 1995 году Уорд Каннингем не захотел называть свой сайт скучным quick-web и выбрал гавайское wiki-wiki.",
+   "en": "In 1995 Ward Cunningham didn't want to call his site the dull 'quick-web' and chose the Hawaiian 'wiki-wiki' instead."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wiki",
+  "basedOn": "memes_016",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Носильщики гроба из мема Coffin Dance танцуют на настоящих похоронах. В какой стране?",
+   "en": "The pallbearers of the Coffin Dance meme dance at real funerals. In which country?"
+  },
+  "options": [
+   {
+    "ru": "США",
+    "en": "The USA"
+   },
+   {
+    "ru": "Бразилия",
+    "en": "Brazil"
+   },
+   {
+    "ru": "Ямайка",
+    "en": "Jamaica"
+   },
+   {
+    "ru": "Гана",
+    "en": "Ghana"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Это фирма Бенджамина Айду из ганского городка Прампрам: он добавил к выносу гроба танец, а в 2020-м их видео стали мемом.",
+   "en": "It is Benjamin Aidoo's firm from Prampram in Ghana: he added dancing to carrying the coffin, and in 2020 their videos became a meme."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dancing_Pallbearers",
+  "basedOn": "memes_037",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему в браузере Chrome без интернета появляется именно динозавр?",
+   "en": "Why is it a dinosaur that shows up in Chrome when you are offline?"
+  },
+  "options": [
+   {
+    "ru": "Без сети — доисторические времена",
+    "en": "Offline is prehistoric times"
+   },
+   {
+    "ru": "В честь игрушки дизайнера",
+    "en": "After a designer's toy"
+   },
+   {
+    "ru": "Пародия на «Парк Юрского периода»",
+    "en": "A Jurassic Park parody"
+   },
+   {
+    "ru": "Его выбрали голосованием",
+    "en": "Users voted for it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шутка дизайнеров: без интернета мы как в доисторические времена. А проект назвали Bolan — в честь певца группы T. Rex.",
+   "en": "The designers' joke: without the internet we are back in prehistoric times. The project was codenamed Bolan, after T. Rex's singer."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dinosaur_Game",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как сначала хотели назвать кнопку «Нравится» (Like) в Facebook?",
+   "en": "What was Facebook's Like button first going to be called?"
+  },
+  "options": [
+   {
+    "ru": "«Круто» (Cool)",
+    "en": "Cool"
+   },
+   {
+    "ru": "«Супер» (Super)",
+    "en": "Super"
+   },
+   {
+    "ru": "«Потрясающе» (Awesome)",
+    "en": "Awesome"
+   },
+   {
+    "ru": "«Обожаю» (Love it)",
+    "en": "Love it"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Внутри компании её звали «кнопкой Awesome». Переименовать её велел Цукерберг, и кнопка вышла только в 2009 году.",
+   "en": "Inside the company it was the 'awesome button'. Zuckerberg had it renamed, and the button only launched in 2009."
+  },
+  "source": "https://en.wikipedia.org/wiki/Like_button",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Студент продавал пиксели своего сайта по $1. За сколько на eBay ушли последние 1000 пикселей?",
+   "en": "A student sold his site's pixels at $1 each. What did the last 1,000 pixels fetch on eBay?"
+  },
+  "answer": 38100,
+  "range": [
+   0,
+   100000
+  ],
+  "step": 100,
+  "tolerance": 8000,
+  "unit": {
+   "ru": "долларов",
+   "en": "dollars"
+  },
+  "fact": {
+   "ru": "В 2006 году Алекс Тью так оплачивал учёбу: «Сайт на миллион долларов» продал миллион пикселей, а последнюю тысячу — в 38 раз дороже.",
+   "en": "In 2006 Alex Tew paid for university this way: the Million Dollar Homepage sold a million pixels, and the last 1,000 went for 38 times more."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Million_Dollar_Homepage",
+  "basedOn": "memes_050",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "По словам YouTube, сколько часов видео загружали на сайт каждую минуту в 2019 году?",
+   "en": "According to YouTube, how many hours of video were uploaded to the site every minute in 2019?"
+  },
+  "answer": 500,
+  "range": [
+   0,
+   3000
+  ],
+  "step": 10,
+  "tolerance": 120,
+  "unit": {
+   "ru": "часов",
+   "en": "hours"
+  },
+  "fact": {
+   "ru": "Больше 500: это 720 тысяч часов в сутки. Чтобы посмотреть всё, что загрузили за один день, не хватит и 80 лет.",
+   "en": "Over 500: that is 720,000 hours a day. Watching everything uploaded in a single day would take more than 80 years."
+  },
+  "source": "https://www.tubefilter.com/2019/05/07/number-hours-video-uploaded-to-youtube-per-minute/",
+  "basedOn": null,
+  "refine": "new"
+ }
+]

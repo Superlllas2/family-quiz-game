@@ -114,10 +114,14 @@ The person at the laptop opens and closes it with the Tab key and uses it with t
 | Targeting free or aim up | `powerUps.targeting` | Next game start |
 | Reset seen questions | | At once |
 | Question feedback on or off (the rating card on the phones, D108) | `feedback.enabled` (off) | At once, from the next Reveal |
-| Music volume, a slider from 0 to 100 % (D114; this laptop only) | `music.volume` (35 %) | At once |
+| Volume: music and sounds, two sliders from 0 to 100 % (D114, D120; this laptop only) | `music.volume` (35 %), `sfx.volume` (60 %) | At once |
 | Back to lobby | | At once |
 
 Phones keep only their own settings: language, more time, leave (`06_phone_screens.md`).
+
+## The question bank test (decisions/0020)
+
+A test tool, not part of the finished game (`banks.chooseOnStart`). When the app starts, the TV asks "Какие вопросы играем?": **Все вопросы** (the full bank) or **Отборные** (the curated test bank, 12 topics). Phones can join meanwhile; Escape keeps the full bank. The pause menu's "Вопросы: …" changes it from the next game. The topic vote offers only the chosen bank's topics.
 
 ## Pause menu (decisions/0018)
 

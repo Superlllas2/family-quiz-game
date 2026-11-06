@@ -40,14 +40,14 @@ namespace FamilyQuiz.Core
             _clock = clock ?? throw new ArgumentNullException(nameof(clock));
             if (newSeed == null) throw new ArgumentNullException(nameof(newSeed));
             State = new GameState();
-            State.PendingSettings = TvSettings.FromConfig(Config.PowerUps);
+            State.PendingSettings = TvSettings.FromConfig(Config.PowerUps, content.Bank(Config.Banks.Default).Id);
             State.Settings = State.PendingSettings.Clone();
             _roster = new Roster(State, Config, content.Characters, clock, tokenRandom);
             _director = new ShowDirector(State, content, clock, newSeed);
             _director.LoadSeen(seenQuestions, seenRace, seenFacts);
             _inputs = new InputRules(State, _director, content.Characters);
             _settings = new SettingsRules(State, Config);
-            _tvSettings = new TvSettingsRules(State);
+            _tvSettings = new TvSettingsRules(State, content);
             _pause = new PauseRules(State);
             State.FeedbackEnabled = Config.Feedback.Enabled;
         }

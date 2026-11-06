@@ -52,6 +52,9 @@ namespace FamilyQuiz.Core.Show
 
         private long Now => _clock.NowMs;
 
+        /// <summary>The question bank of the running game (decisions/0020): the one its settings copy names.</summary>
+        private QuestionBank Bank => _content.Bank(_state.Settings.Bank);
+
         /// <summary>Seconds from config to whole milliseconds.</summary>
         public static long ToMs(double seconds)
         {
@@ -493,7 +496,7 @@ namespace FamilyQuiz.Core.Show
             bool? correct = turn != null && turn.Locked ? turn.Correct : (bool?)null;
             var def = question.Def;
             output.Add(new QuestionRated(player.PlayerId, def.Id, def.Topic, def.Format, def.Difficulty, cmd.Item, stars, correct,
-                _state.PhaseId));
+                _state.PhaseId, Bank.Id));
         }
 
         // ---------------------------------------------------------------- the clock
@@ -702,6 +705,7 @@ namespace FamilyQuiz.Core.Show
                 }
             }
 
+            if (!_config.Timers.LastCallEnabled) return; // decisions/0020, D119
             if (open != 1 || !anyLocked || remaining.Turn.LastCall || now >= remaining.Turn.DeadlineMs) return;
             var turn = remaining.Turn;
             turn.LastCall = true;
@@ -840,7 +844,7 @@ namespace FamilyQuiz.Core.Show
             }
 
             output.Add(new GameStarted(_state.GameNumber, _state.Seed, GameStarted.ModeStandard, ids, _state.GameLanguage,
-                _state.Settings.DrawableTypes, _state.Settings.Targeting));
+                _state.Settings.DrawableTypes, _state.Settings.Targeting, Bank.Id));
             foreach (var p in _state.Players) output.Add(new PlayerUpdated(p.PlayerId));
             NextSegment(at, output);
         }
@@ -907,7 +911,7 @@ namespace FamilyQuiz.Core.Show
             _questionIndex = -1;
             _state.Question = null;
             foreach (var p in _state.Players) p.Turn = null;
-            var doors = TopicPicker.Doors(_content.Topics, _content.Questions, _config.Topics, _chosenTopics,
+            var doors = TopicPicker.Doors(Bank.Topics, Bank.Questions, _config.Topics, _chosenTopics,
                 _state.SeenQuestionIds, _random);
             var round = new RoundState(_roundIndex, _config.Rounds.Multipliers[_roundIndex], doors);
             _state.Round = round;
@@ -965,12 +969,14 @@ namespace FamilyQuiz.Core.Show
             int slot = _questionIndex;
             var topic = round.Topic;
             string topicId = topic.Mixed ? null : topic.Id;
-            var def = QuestionPicker.Pick(_content.Questions, rounds.FormatOrder[slot], rounds.DifficultyOrder[slot], topicId,
+            var def = QuestionPicker.Pick(Bank.Questions, rounds.FormatOrder[slot], rounds.DifficultyOrder[slot], topicId,
                 _state.SeenQuestionIds, _usedInGame, _random, out int group);
             if (group != QuestionPicker.GroupUnseenTopic)
                 output.Add(new QuestionFallback(round.Index + 1, slot + 1, topic.Id, def.Id, group));
             _usedInGame.Add(def.Id);
             _state.MutableSeenQuestionIds.Add(def.Id);
+            // A curated question and the full bank question it comes from count as one (decisions/0020, D117).
+            if (def.BasedOn != null) _state.MutableSeenQuestionIds.Add(def.BasedOn);
             output.Add(new SeenChanged(false));
 
             var order = def.Format == QuestionDef.MultipleChoice ? OptionShuffle.DisplayOrder(def.Options.Count, _random) : new int[0];

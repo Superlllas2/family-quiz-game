@@ -53,6 +53,12 @@ namespace FamilyQuiz.Core.Content
         [JsonProperty("music", Required = Required.Always)]
         public MusicConfig Music { get; set; }
 
+        [JsonProperty("sfx", Required = Required.Always)]
+        public SfxConfig Sfx { get; set; }
+
+        [JsonProperty("banks", Required = Required.Always)]
+        public BanksConfig Banks { get; set; }
+
         [JsonProperty("staging", Required = Required.Always)]
         public StagingConfig Staging { get; set; }
     }

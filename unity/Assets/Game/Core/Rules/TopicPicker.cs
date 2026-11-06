@@ -61,7 +61,7 @@ namespace FamilyQuiz.Core.Rules
             int n = 0;
             foreach (var q in bank)
             {
-                if (q.Topic == topicId && !Contains(seen, q.Id)) n++;
+                if (q.Topic == topicId && !QuestionPicker.IsSeen(q, seen)) n++;
             }
 
             return n;

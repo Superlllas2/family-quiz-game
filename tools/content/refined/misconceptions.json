@@ -1,0 +1,326 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какую часть своего мозга использует человек?",
+   "en": "How much of their brain does a person use?"
+  },
+  "options": [
+   {
+    "ru": "Около 10%",
+    "en": "About 10%"
+   },
+   {
+    "ru": "Около трети",
+    "en": "About a third"
+   },
+   {
+    "ru": "Около половины",
+    "en": "About half"
+   },
+   {
+    "ru": "Почти весь",
+    "en": "Nearly all of it"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "За день работают все отделы мозга, а повреждение почти любого участка что-то нарушает. Миф о 10% разнесли книги о саморазвитии.",
+   "en": "Over a day every part of the brain is at work, and damage to almost any area causes problems. Self-help books spread the 10% myth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth",
+  "basedOn": "misconceptions_004",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Помогает ли рюмка водки согреться на морозе?",
+   "en": "Does a shot of vodka help you warm up in the frost?"
+  },
+  "options": [
+   {
+    "ru": "Да, она греет изнутри",
+    "en": "Yes, it warms you from inside"
+   },
+   {
+    "ru": "Да, разгоняет кровь по телу",
+    "en": "Yes, it gets the blood going"
+   },
+   {
+    "ru": "Нет, тело остывает быстрее",
+    "en": "No, the body cools down faster"
+   },
+   {
+    "ru": "Нет, но и вреда никакого",
+    "en": "No, but it does no harm"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Спирт расширяет сосуды кожи: становится тепло, но кровь отдаёт жар морозу, и тело внутри остывает быстрее.",
+   "en": "Alcohol widens the vessels in the skin: you feel warm, but the blood gives its heat to the cold and the body cools faster inside."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На чём растут бананы?",
+   "en": "What do bananas grow on?"
+  },
+  "options": [
+   {
+    "ru": "На пальме",
+    "en": "A palm"
+   },
+   {
+    "ru": "На лиане",
+    "en": "A vine"
+   },
+   {
+    "ru": "На траве",
+    "en": "A herb"
+   },
+   {
+    "ru": "На кусте",
+    "en": "A bush"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Банан — самое большое травянистое растение в мире. Его «ствол» — не древесина, а плотно свёрнутые основания листьев.",
+   "en": "The banana is the world's largest herb. Its 'trunk' is not wood at all but tightly rolled leaf bases."
+  },
+  "source": "https://en.wikipedia.org/wiki/Banana",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Стёкла в старинных окнах часто толще внизу. Почему?",
+   "en": "Old window panes are often thicker at the bottom. Why?"
+  },
+  "options": [
+   {
+    "ru": "Стекло веками стекало вниз",
+    "en": "The glass flowed down over centuries"
+   },
+   {
+    "ru": "Низ нарочно утолщали от ветра",
+    "en": "Made thick at the bottom against wind"
+   },
+   {
+    "ru": "Их ставили толстым краем вниз",
+    "en": "They were set thick edge down"
+   },
+   {
+    "ru": "Снизу нарастал слой грязи",
+    "en": "Dirt built up at the bottom"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Стекло выдували в диск, толстый в середине, и куски ставили толстым краем вниз. А само стекло за миллиард лет «стечёт» от силы на нанометр.",
+   "en": "Glass was blown into discs thicker in the middle, and panes were set thick edge down. Glass itself flows at most a nanometre in a billion years."
+  },
+  "source": "https://ceramics.org/news/glass-viscosity-calculations-definitively-debunk-the-myth-of-observable-flow-in-medieval-windows/",
+  "basedOn": "misconceptions_024",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что показали слепые опыты про сахар и поведение детей?",
+   "en": "What did blind trials find about sugar and children's behaviour?"
+  },
+  "options": [
+   {
+    "ru": "Сахар делает их гиперактивными",
+    "en": "Sugar makes them hyperactive"
+   },
+   {
+    "ru": "Так действует только шоколад",
+    "en": "Only chocolate does that"
+   },
+   {
+    "ru": "Сахар их успокаивает",
+    "en": "Sugar calms them down"
+   },
+   {
+    "ru": "Разницы с пустышкой нет",
+    "en": "No difference from a placebo"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Зато мамы, которым сказали, что сын съел сахар, видели в нём больше буйства, хотя всем детям дали сахарозаменитель.",
+   "en": "Yet mothers told their son had eaten sugar rated him as wilder, though every child had only had sweetener."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics",
+  "basedOn": "misconceptions_019",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем в основном питаются ежи?",
+   "en": "What do hedgehogs mostly eat?"
+  },
+  "options": [
+   {
+    "ru": "Жуками и червями",
+    "en": "Beetles and worms"
+   },
+   {
+    "ru": "Яблоками и грушами",
+    "en": "Apples and pears"
+   },
+   {
+    "ru": "Орехами и семенами",
+    "en": "Nuts and seeds"
+   },
+   {
+    "ru": "Хлебом и молоком",
+    "en": "Bread and milk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ёж с яблоками на иголках — выдумка Плиния Старшего почти 2000-летней давности. А главная еда ежа — дождевые черви.",
+   "en": "The hedgehog carrying apples on its spines is a tale from Pliny the Elder, almost 2,000 years old. Its main food is earthworms."
+  },
+  "source": "https://en.wikipedia.org/wiki/European_hedgehog",
+  "basedOn": "misconceptions_035",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Правда ли, что Санта-Клауса одела в красное «Кока-Кола»?",
+   "en": "Did Coca-Cola dress Santa Claus in red?"
+  },
+  "options": [
+   {
+    "ru": "Да, в рекламе 1931 года",
+    "en": "Yes, in its 1931 ads"
+   },
+   {
+    "ru": "Нет, красный Санта был раньше",
+    "en": "No, red Santas came earlier"
+   },
+   {
+    "ru": "Да, в телерекламе 1950-х",
+    "en": "Yes, in 1950s TV ads"
+   },
+   {
+    "ru": "Нет, до 1990-х он был зелёным",
+    "en": "No, he was green until the 1990s"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Реклама 1931 года прославила доброго толстого Санту, но в красной шубе журналы рисовали его за десятки лет до неё.",
+   "en": "The 1931 ads made the jolly plump Santa famous, but magazines drew him in a red coat decades earlier."
+  },
+  "source": "https://en.wikipedia.org/wiki/Santa_Claus#Depictions",
+  "basedOn": "misconceptions_036",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "За что Эйнштейн получил Нобелевскую премию?",
+   "en": "What did Einstein win his Nobel Prize for?"
+  },
+  "options": [
+   {
+    "ru": "За теорию относительности",
+    "en": "The theory of relativity"
+   },
+   {
+    "ru": "За объяснение фотоэффекта",
+    "en": "Explaining the photoelectric effect"
+   },
+   {
+    "ru": "За формулу E = mc²",
+    "en": "The formula E = mc²"
+   },
+   {
+    "ru": "За атомную бомбу",
+    "en": "The atomic bomb"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Относительность тогда казалась комитету слишком спорной, и премию за 1921 год дали за работу о свете.",
+   "en": "Relativity still seemed too controversial to the committee, so the 1921 prize went for his work on light."
+  },
+  "source": "https://en.wikipedia.org/wiki/Albert_Einstein#1921_Nobel_Prize_in_Physics",
+  "basedOn": "misconceptions_020",
+  "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Говорят, ленивцы спят по 15–20 часов в сутки. Сколько часов в сутки спит ленивец на воле?",
+   "en": "Sloths are said to sleep 15 to 20 hours a day. How many hours a day does a wild sloth sleep?"
+  },
+  "answer": 9.6,
+  "range": [
+   0,
+   24
+  ],
+  "step": 0.1,
+  "tolerance": 3,
+  "unit": {
+   "ru": "ч",
+   "en": "h"
+  },
+  "fact": {
+   "ru": "Около 9,6 часа: так показали датчики на диких ленивцах в Панаме. А 16 часов в сутки ленивцы спали в неволе.",
+   "en": "About 9.6 hours, said sensors on wild sloths in Panama. The famous 16 hours came from sloths in captivity."
+  },
+  "source": "https://www.mpg.de/567312/pressRelease20080521",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Алмазы — не сжатый уголь, и рождаются они глубже земной коры. На какой глубине, в км?",
+   "en": "Diamonds are not squeezed coal, and they form below the Earth's crust. How deep, in km?"
+  },
+  "answer": 200,
+  "range": [
+   0,
+   600
+  ],
+  "step": 5,
+  "tolerance": 60,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Большинство — на 150–250 км, в мантии. Им 1–3,5 млрд лет: они старше первых наземных растений, из которых берётся уголь.",
+   "en": "Most form 150 to 250 km down, in the mantle. They are 1 to 3.5 billion years old, older than the land plants that coal comes from."
+  },
+  "source": "https://en.wikipedia.org/wiki/Diamond",
+  "basedOn": "misconceptions_044",
+  "refine": "rewrite"
+ }
+]

@@ -53,15 +53,26 @@ namespace FamilyQuiz.Tests
         public static GameContent WithConfig(Action<JObject> change)
         {
             var config = JObject.Parse(Read(ConfigLoader.FileName));
+            config["timers"]["lastCallEnabled"] = true; // see Content()
             change(config);
             var text = config.ToString();
             return new ContentLoader(name => name == ConfigLoader.FileName ? text : Read(name)).Load();
         }
 
-        /// <summary>All of content/ through the ContentLoader, loaded once (tests never change it).</summary>
+        /// <summary>
+        /// All of content/ through the ContentLoader, loaded once (tests never change it), with last call on: the suite
+        /// was written for last call (D74), which the shipped config switches off (decisions/0020, D119).
+        /// LastCallOffTests play the shipped config itself (<see cref="Shipped"/>).
+        /// </summary>
         public static GameContent Content()
         {
-            return _content ?? (_content = new ContentLoader(Read).Load());
+            return _content ?? (_content = WithConfig(c => { }));
+        }
+
+        /// <summary>All of content/ exactly as shipped.</summary>
+        public static GameContent Shipped()
+        {
+            return new ContentLoader(Read).Load();
         }
     }
 }

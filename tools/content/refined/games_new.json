@@ -1,0 +1,326 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Писатель продал права на игры «Ведьмак» за разовую сумму, а не за процент. Из какой он страны?",
+   "en": "The writer sold the Witcher game rights for a one-off fee, not a percentage. Which country is he from?"
+  },
+  "options": [
+   {
+    "ru": "Чехия",
+    "en": "Czech Republic"
+   },
+   {
+    "ru": "Финляндия",
+    "en": "Finland"
+   },
+   {
+    "ru": "Венгрия",
+    "en": "Hungary"
+   },
+   {
+    "ru": "Польша",
+    "en": "Poland"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Когда игры стали хитами, Анджей Сапковский потребовал у CD Projekt 60 млн злотых; в 2019 году они помирились.",
+   "en": "Once the games were hits, Andrzej Sapkowski demanded 60 million zloty from CD Projekt; they settled in 2019."
+  },
+  "source": "https://en.wikipedia.org/wiki/Andrzej_Sapkowski",
+  "basedOn": "games_new_002",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Создатели Goat Simulator исправили только баги, от которых игра вылетает. Почему остальные оставили?",
+   "en": "The makers of Goat Simulator only fixed bugs that crash the game. Why did they leave the rest?"
+  },
+  "options": [
+   {
+    "ru": "Не хватило денег",
+    "en": "They ran out of money"
+   },
+   {
+    "ru": "Они смешные",
+    "en": "They are funny"
+   },
+   {
+    "ru": "Их не заметили",
+    "en": "They didn't notice them"
+   },
+   {
+    "ru": "Так велел издатель",
+    "en": "The publisher said so"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Игру про козла сделали в шутку за месячный геймджем в 2014 году; видео первой версии за два дня набрало миллион просмотров.",
+   "en": "The goat game began as a joke at a one-month game jam in 2014; a video of the first version got a million views in two days."
+  },
+  "source": "https://en.wikipedia.org/wiki/Goat_Simulator",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Игра Cuphead нарисована вручную в стиле мультфильмов каких лет?",
+   "en": "Cuphead is hand-drawn in the style of cartoons from which decade?"
+  },
+  "options": [
+   {
+    "ru": "1960-х",
+    "en": "The 1960s"
+   },
+   {
+    "ru": "1980-х",
+    "en": "The 1980s"
+   },
+   {
+    "ru": "1930-х",
+    "en": "The 1930s"
+   },
+   {
+    "ru": "2000-х",
+    "en": "The 2000s"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Анимацию рисовали от руки, фоны — акварелью, а чтобы закончить игру, братья Молденхауэр перезаложили свой дом.",
+   "en": "The animation was drawn by hand and the backgrounds painted in watercolour; to finish it, the Moldenhauer brothers remortgaged their house."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cuphead",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Стриминговый сервис Twitch вырос из сайта, где один человек…",
+   "en": "The streaming service Twitch grew out of a site where one man..."
+  },
+  "options": [
+   {
+    "ru": "транслировал всю свою жизнь",
+    "en": "streamed his whole life"
+   },
+   {
+    "ru": "продавал старые игры",
+    "en": "sold old games"
+   },
+   {
+    "ru": "учил играть в шахматы",
+    "en": "taught chess"
+   },
+   {
+    "ru": "показывал своих кошек",
+    "en": "showed off his cats"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 2007 году Джастин Кан круглые сутки носил камеру на голове для сайта Justin.tv; игровой раздел потом стал Twitch.",
+   "en": "In 2007 Justin Kan wore a head camera 24/7 for Justin.tv; its gaming section later became Twitch."
+  },
+  "source": "https://en.wikipedia.org/wiki/Justin.tv",
+  "basedOn": "games_new_026",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая страна в 2014 году воссоздала себя в Minecraft в натуральную величину?",
+   "en": "Which country recreated itself at full scale in Minecraft in 2014?"
+  },
+  "options": [
+   {
+    "ru": "Дания",
+    "en": "Denmark"
+   },
+   {
+    "ru": "Исландия",
+    "en": "Iceland"
+   },
+   {
+    "ru": "Япония",
+    "en": "Japan"
+   },
+   {
+    "ru": "Монако",
+    "en": "Monaco"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Около 4 миллиардов блоков и терабайт данных: датское геодезическое агентство сделало карту для уроков географии.",
+   "en": "About 4 billion blocks and a terabyte of data: Denmark's geodata agency built it to help teach geography."
+  },
+  "source": "https://www.guinnessworldrecords.com/world-records/117559-first-country-modelled-at-full-scale-in-a-videogame",
+  "basedOn": "games_new_032",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В No Man's Sky планеты не хранятся на диске: их на лету считает формула. Сколько их?",
+   "en": "In No Man's Sky the planets aren't stored on disk: a formula builds them on the fly. How many are there?"
+  },
+  "options": [
+   {
+    "ru": "Бесконечно много",
+    "en": "Infinitely many"
+   },
+   {
+    "ru": "Около 18 квинтиллионов",
+    "en": "About 18 quintillion"
+   },
+   {
+    "ru": "Около 18 миллионов",
+    "en": "About 18 million"
+   },
+   {
+    "ru": "Около полумиллиона",
+    "en": "About half a million"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Это 2 в 64-й степени. Если открывать по планете в секунду, на все уйдёт около 585 миллиардов лет.",
+   "en": "It is 2 to the 64th. Discovering one planet a second, you would need about 585 billion years to see them all."
+  },
+  "source": "https://en.wikipedia.org/wiki/No_Man%27s_Sky",
+  "basedOn": "games_new_020",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Инди-игра Undertale прославилась тем, что её можно пройти…",
+   "en": "The indie game Undertale became famous because you can finish it..."
+  },
+  "options": [
+   {
+    "ru": "вдвоём на одной клавиатуре",
+    "en": "two players on one keyboard"
+   },
+   {
+    "ru": "не выходя из одной комнаты",
+    "en": "without leaving one room"
+   },
+   {
+    "ru": "одной только мышкой",
+    "en": "using only the mouse"
+   },
+   {
+    "ru": "никого не убив",
+    "en": "without killing anyone"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "С любым монстром можно договориться и пощадить его. Тоби Фокс сделал игру почти в одиночку на 51 тысячу долларов с Kickstarter.",
+   "en": "Any monster can be talked down and spared. Toby Fox made the game almost alone, on $51,000 raised on Kickstarter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Undertale",
+  "basedOn": "games_new_038",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Жуткие крики гаста, летающего призрака из Minecraft, записал композитор игры. Чей это голос?",
+   "en": "The eerie cries of the ghast, Minecraft's floating ghost, were recorded by the game's composer. Whose voice is it?"
+  },
+  "options": [
+   {
+    "ru": "Его кота",
+    "en": "His cat's"
+   },
+   {
+    "ru": "Его собственный",
+    "en": "His own"
+   },
+   {
+    "ru": "Чаек у моря",
+    "en": "Seagulls by the sea"
+   },
+   {
+    "ru": "Совы в лесу",
+    "en": "An owl in the woods"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кот композитора C418 так вопит, если его разбудить, а микрофон как раз стоял рядом.",
+   "en": "The composer C418's cat makes these noises when woken up, and a microphone happened to be nearby."
+  },
+  "source": "https://minecraft.wiki/w/Ghast",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "ВВС США собрали суперкомпьютер из PlayStation 3. Сколько приставок в нём было?",
+   "en": "The US Air Force built a supercomputer out of PlayStation 3s. How many consoles did it use?"
+  },
+  "answer": 1760,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 20,
+  "tolerance": 400,
+  "unit": {
+   "ru": "приставок",
+   "en": "consoles"
+  },
+  "fact": {
+   "ru": "Около 1760. «Кондор» 2010 года стоил около $2 млн, раз в десять дешевле обычной машины такой же мощности.",
+   "en": "About 1,760. The 2010 Condor cost about $2 million, roughly a tenth of a normal machine with the same power."
+  },
+  "source": "https://www.airandspaceforces.com/afrlunveilscondorclustersupercomputer",
+  "basedOn": "games_new_045",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Шутер Duke Nukem Forever анонсировали в 1997 году. Сколько лет его делали до выхода?",
+   "en": "The shooter Duke Nukem Forever was announced in 1997. How many years did it take to come out?"
+  },
+  "answer": 14,
+  "range": [
+   0,
+   40
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Рекорд Гиннесса: 14 лет и 44 дня. Журнал Wired давал игре премию «Долгострой года», а вышла она в 2011-м и критиков разочаровала.",
+   "en": "A Guinness record: 14 years and 44 days. Wired gave it its 'vaporware of the year' award; it came out in 2011 to mostly poor reviews."
+  },
+  "source": "https://en.wikipedia.org/wiki/Duke_Nukem_Forever",
+  "basedOn": null,
+  "refine": "new"
+ }
+]

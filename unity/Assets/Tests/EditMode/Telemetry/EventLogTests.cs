@@ -195,10 +195,10 @@ namespace FamilyQuiz.Tests.EventLog
         public void GameStartedHasTheSeedBeforeTheEvent()
         {
             var line = LogOne(new GameStarted(1, 918273, GameStarted.ModeStandard, new[] { "p1", "p2", "p3" }, "ru",
-                new[] { "freeze", "slime", "fog" }, "free"));
+                new[] { "freeze", "slime", "fog" }, "free", "curated"));
             Assert.That(line.Properties().Select(p => p.Name).Take(5), Is.EqualTo(new[] { "t", "session", "build", "seed", "event" }));
             AssertBody("{'seed':918273,'event':'gameStarted','game':1,'mode':'standard','players':['p1','p2','p3'],"
-                       + "'settings':{'gameLang':'ru','powerUps':['freeze','slime','fog'],'targeting':'free'}}", line);
+                       + "'settings':{'gameLang':'ru','powerUps':['freeze','slime','fog'],'targeting':'free','bank':'curated'}}", line);
         }
 
         [Test]

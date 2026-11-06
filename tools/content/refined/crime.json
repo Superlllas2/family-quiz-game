@@ -1,0 +1,336 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Аль Капоне так и не смогли осудить ни за одно убийство. За что же он сел на 11 лет?",
+   "en": "Al Capone was never convicted of a single murder. What did he get 11 years for?"
+  },
+  "options": [
+   {
+    "ru": "За торговлю спиртным",
+    "en": "Selling alcohol"
+   },
+   {
+    "ru": "За подделку денег",
+    "en": "Counterfeiting"
+   },
+   {
+    "ru": "За неуплату налогов",
+    "en": "Tax evasion"
+   },
+   {
+    "ru": "За подкуп присяжных",
+    "en": "Bribing a jury"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "За налоги с бандитских доходов: в 1927 году Верховный суд США решил, что с незаконных денег тоже надо платить налог.",
+   "en": "For tax on his gang income: in 1927 the US Supreme Court ruled that illegal income is taxable too."
+  },
+  "source": "https://en.wikipedia.org/wiki/Al_Capone",
+  "kids": false,
+  "basedOn": "crime_008",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Пуаро говорит по-французски, но он не француз. Откуда же он родом?",
+   "en": "Poirot speaks French, but he is not French. Where does he come from?"
+  },
+  "options": [
+   {
+    "ru": "Из Швейцарии",
+    "en": "Switzerland"
+   },
+   {
+    "ru": "Из Люксембурга",
+    "en": "Luxembourg"
+   },
+   {
+    "ru": "Из Монако",
+    "en": "Monaco"
+   },
+   {
+    "ru": "Из Бельгии",
+    "en": "Belgium"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Когда в 1975 году вышел роман о его смерти, The New York Times дала некролог Пуаро на первой полосе — такой чести не удостоился больше ни один герой книг.",
+   "en": "When the novel of his death came out in 1975, The New York Times ran Poirot's obituary on its front page, an honour no other fictional character got."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hercule_Poirot",
+  "kids": false,
+  "basedOn": "crime_003",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как называлась банда, которую ловят Жеглов и Шарапов в «Место встречи изменить нельзя»?",
+   "en": "What is the gang that Zheglov and Sharapov hunt in The Meeting Place Cannot Be Changed called?"
+  },
+  "options": [
+   {
+    "ru": "«Чёрный ворон»",
+    "en": "Black Raven"
+   },
+   {
+    "ru": "«Чёрная кошка»",
+    "en": "Black Cat"
+   },
+   {
+    "ru": "«Серый волк»",
+    "en": "Grey Wolf"
+   },
+   {
+    "ru": "«Белая стрела»",
+    "en": "White Arrow"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Прообраз — банда Ивана Митина начала 1950-х: главарь был мастером на оборонном заводе и к аресту был представлен к ордену.",
+   "en": "It was based on Ivan Mitin's gang of the early 1950s: the leader was a foreman at a defence plant, nominated for an order when caught."
+  },
+  "source": "https://ru.wikipedia.org/wiki/%D0%A7%D1%91%D1%80%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0_(%D0%B1%D0%B0%D0%BD%D0%B4%D0%B0)",
+  "kids": false,
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой знаменитой фразы НЕТ ни в одном рассказе Конан Дойла о Холмсе?",
+   "en": "Which famous line never appears in Conan Doyle's Holmes stories?"
+  },
+  "options": [
+   {
+    "ru": "«Элементарно, Ватсон!»",
+    "en": "'Elementary, my dear Watson'"
+   },
+   {
+    "ru": "«Игра началась!»",
+    "en": "'The game is afoot'"
+   },
+   {
+    "ru": "«Вы были в Афганистане»",
+    "en": "'You have been in Afghanistan'"
+   },
+   {
+    "ru": "«Отбросьте всё невозможное…»",
+    "en": "'Eliminate the impossible...'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Холмс говорит «элементарно» и «дорогой Ватсон», но целиком фраза родилась позже — в пьесах, пародиях и фильмах.",
+   "en": "Holmes says 'Elementary' and 'my dear Watson', but the full line was born later, in plays, parodies and films."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elementary,_my_dear_Watson",
+  "kids": false,
+  "basedOn": "crime_026",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем голландец Хан ван Мегерен в 1945 году писал «Вермеера» на глазах у свидетелей?",
+   "en": "Why did Dutchman Han van Meegeren paint a 'Vermeer' in front of witnesses in 1945?"
+  },
+  "options": [
+   {
+    "ru": "Сдать экзамен в академию",
+    "en": "To pass an art academy exam"
+   },
+   {
+    "ru": "Доказать, что он фальсификатор",
+    "en": "To prove he was a forger"
+   },
+   {
+    "ru": "Для съёмок фильма",
+    "en": "For a film shoot"
+   },
+   {
+    "ru": "По заказу королевы",
+    "en": "On the Queen's orders"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Его обвиняли в продаже Герингу национального сокровища, за что грозила смерть; признание в подделке его спасло.",
+   "en": "He was charged with selling a national treasure to Göring, a capital crime; proving it a fake saved him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Han_van_Meegeren",
+  "kids": false,
+  "basedOn": "crime_033",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чарльз Понци обещал вкладчикам +50% за 45 дней. На чём он якобы так зарабатывал?",
+   "en": "Charles Ponzi promised investors 50% in 45 days. What did he claim the profit came from?"
+  },
+  "options": [
+   {
+    "ru": "На контрабанде виски",
+    "en": "Smuggling whisky"
+   },
+   {
+    "ru": "На акциях железных дорог",
+    "en": "Railway shares"
+   },
+   {
+    "ru": "На почтовых купонах",
+    "en": "Postal reply coupons"
+   },
+   {
+    "ru": "На золотых приисках",
+    "en": "Gold mines"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Купон, дёшево купленный в Италии, меняли в США на марки подороже. Выгода копеечная: на деле старым вкладчикам платили деньгами новых.",
+   "en": "A coupon bought cheaply in Italy could be swapped for pricier US stamps. A tiny profit: in fact old investors were paid with new ones' money."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles_Ponzi",
+  "kids": false,
+  "basedOn": "crime_024",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В день открытия Олимпиады 1994 года воры украли в Осло «Крик» Мунка. Что они написали в записке?",
+   "en": "On the opening day of the 1994 Olympics, thieves stole Munch's The Scream in Oslo. What did their note say?"
+  },
+  "options": [
+   {
+    "ru": "«Вернём за выкуп»",
+    "en": "'Pay and get it back'"
+   },
+   {
+    "ru": "«Спасибо за плохую охрану»",
+    "en": "'Thanks for the poor security'"
+   },
+   {
+    "ru": "«Мунк был бы рад»",
+    "en": "'Munch would be pleased'"
+   },
+   {
+    "ru": "«Искусство — народу»",
+    "en": "'Art belongs to the people'"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Музей отказался платить выкуп в миллион долларов, а через три месяца полиция под прикрытием вернула картину целой.",
+   "en": "The gallery refused a $1 million ransom, and three months later undercover police got the painting back undamaged."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Scream",
+  "kids": false,
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2025 году воры ограбили Лувр меньше чем за 8 минут. Как они попали в галерею?",
+   "en": "In 2025 thieves robbed the Louvre in under 8 minutes. How did they get into the gallery?"
+  },
+  "options": [
+   {
+    "ru": "Через подкоп из метро",
+    "en": "Through a tunnel from the metro"
+   },
+   {
+    "ru": "Спрятавшись в музее на ночь",
+    "en": "Hiding in the museum overnight"
+   },
+   {
+    "ru": "С крыши на тросах",
+    "en": "Down ropes from the roof"
+   },
+   {
+    "ru": "По мебельному подъёмнику",
+    "en": "Up a furniture lift"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Переодетые рабочими, они разрезали окно и унесли 8 украшений на 88 млн евро, а корону императрицы Евгении обронили.",
+   "en": "Dressed as workmen, they cut through a window and took 8 jewels worth €88 million, but dropped Empress Eugénie's crown."
+  },
+  "source": "https://en.wikipedia.org/wiki/2025_Louvre_robbery",
+  "kids": false,
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Мейдоффу был 71 год, когда в 2009-м его судили за крупнейшую пирамиду. Сколько лет тюрьмы он получил?",
+   "en": "Bernie Madoff was 71 when he was tried in 2009 for the largest Ponzi scheme. How many years in prison did he get?"
+  },
+  "answer": 150,
+  "range": [
+   0,
+   500
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "150 лет — максимум, который позволял закон. Он умер в тюрьме в 2021 году, отсидев около 12 лет.",
+   "en": "150 years, the most the law allowed. He died in prison in 2021, having served about 12 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bernie_Madoff",
+  "kids": false,
+  "basedOn": "crime_044",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 2019 году из дворца Бленхейм украли рабочий унитаз из цельного золота. Сколько кг он весил?",
+   "en": "In 2019 a working toilet made of solid gold was stolen from Blenheim Palace. How many kilograms did it weigh?"
+  },
+  "answer": 103,
+  "range": [
+   0,
+   500
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Около 100 кг 18-каратного золота. Посетители могли им пользоваться; воры управились за 5 минут, а золото, видимо, переплавили.",
+   "en": "About 100 kg of 18-carat gold. Visitors could actually use it; the thieves took about 5 minutes, and the gold was probably melted down."
+  },
+  "source": "https://en.wikipedia.org/wiki/America_(Cattelan)",
+  "kids": false,
+  "basedOn": null,
+  "refine": "new"
+ }
+]

@@ -76,7 +76,7 @@ Power ups on or off as a whole, and each type on or off, in the TV settings pane
 
 - Each player has a timer multiplier (default 1.0, `players.timerMultiplierOptions` = 1.0, 1.5, 2.0) chosen on their phone in settings ("More time"). It multiplies that player's answer window in round questions and in race questions.
 - Each player has a personal deadline: the start of the answer phase plus the window times their multiplier.
-- **Last call:** when all but one connected player have locked in, the remaining player's deadline becomes the earlier of their deadline and now plus `timers.lastCall` (5 s). The TV app sends that player a new `screen` message with the same phaseId and the new `endsInMs`. Race questions have no last call.
+- **Last call (off since decisions/0020, D119: `timers.lastCallEnabled` false; another player's answer never shortens anyone's time):** when all but one connected player have locked in, the remaining player's deadline becomes the earlier of their deadline and now plus `timers.lastCall` (5 s). The TV app sends that player a new `screen` message with the same phaseId and the new `endsInMs`. Race questions have no last call.
 - An input that arrives after the player's own deadline, plus `net.inputGraceMs` (500 ms) for network delay, is refused as `closed`.
 - The phase ends when every connected player has locked in or passed their personal deadline.
 

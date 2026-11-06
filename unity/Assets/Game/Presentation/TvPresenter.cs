@@ -38,6 +38,7 @@ namespace FamilyQuiz.Presentation
         private HostBubblesView _hosts;
         private TvSettingsPanel _settings;
         private TvPauseMenu _pauseMenu;
+        private TvBankChooser _bankChooser;
         private Action<IGameCommand> _send;
         private GameObject _relayBannerRoot;
         private TextMeshProUGUI _relayBanner;
@@ -74,6 +75,8 @@ namespace FamilyQuiz.Presentation
             _lobby.Refresh();
             // The 3D studio behind the overlay (decisions 0015, 0016), on unless switched off on this laptop.
             _stage.SetOn(_toggleFile.Load());
+            // The question bank test (decisions/0020, D118): ask which bank to play before anyone joins.
+            if (game.Config.Banks.ChooseOnStart) _bankChooser.SetOpen(true);
         }
 
         public void ShowRoom(string code, string joinUrl)
@@ -99,12 +102,19 @@ namespace FamilyQuiz.Presentation
         {
             _send = send;
             _settings.SetCommandSink(send);
+            _bankChooser.SetCommandSink(send);
         }
 
         /// <summary>The music slider and credit line of the TV settings panel (decisions/0019, D114, D115).</summary>
         public void SetMusic(Func<float> volume, Action<float> setVolume, Func<string> creditText)
         {
             _settings.SetMusic(volume, setVolume, creditText);
+        }
+
+        /// <summary>The sound effects slider of the TV settings panel (decisions/0020, D120).</summary>
+        public void SetSfx(Func<float> volume, Action<float> setVolume)
+        {
+            _settings.SetSfx(volume, setVolume);
         }
 
         /// <summary>
@@ -128,6 +138,7 @@ namespace FamilyQuiz.Presentation
             _hosts.HideAll();
             _settings.SetOpen(false);
             _pauseMenu.SetOpen(false);
+            _bankChooser.SetOpen(false);
             _relayBannerRoot.SetActive(false);
             var title = _context.Has("tv.error.content") ? _context.T("tv.error.content") + "\n\n" : string.Empty;
             _contentError.text = title + message;
@@ -194,6 +205,7 @@ namespace FamilyQuiz.Presentation
             _pauseMenu.SetOpen(_context.Game.State.Paused);
             // Settings, the running game's copy (GameStarted, GameEnded), seen questions: whatever changed shows at once.
             if (_settings.IsOpen) _settings.Refresh();
+            if (_bankChooser.IsOpen) _bankChooser.Refresh();
         }
 
         private void Update()
@@ -234,6 +246,13 @@ namespace FamilyQuiz.Presentation
         /// <summary>Escape (decisions/0018, D105, D106): pause, close the settings opened from the pause menu, or resume.</summary>
         private void OnEscape()
         {
+            if (_bankChooser.IsOpen)
+            {
+                // Escape keeps the current bank (and stays paused when the chooser came from the pause menu).
+                _bankChooser.SetOpen(false);
+                return;
+            }
+
             switch (EscapeKey.For(_context.Game.State.Paused, _settings.IsOpen))
             {
                 case EscapeKey.Action.Pause:
@@ -264,6 +283,12 @@ namespace FamilyQuiz.Presentation
         private void OnPauseSettings()
         {
             _settings.SetOpen(true);
+        }
+
+        private void OnPauseBank()
+        {
+            _settings.SetOpen(false);
+            _bankChooser.SetOpen(true);
         }
 
         private void Enter(GamePhase phase)
@@ -433,8 +458,10 @@ namespace FamilyQuiz.Presentation
             _relayBannerRoot = banner.gameObject;
 
             // The pause menu under the settings panel, so Settings in the menu opens the panel over it (D106).
-            _pauseMenu = TvPauseMenu.Create(root, _context, OnPauseContinue, OnPauseNewGame, OnPauseSettings);
+            _pauseMenu = TvPauseMenu.Create(root, _context, OnPauseContinue, OnPauseNewGame, OnPauseSettings, OnPauseBank,
+                () => _bankChooser != null && _bankChooser.HasChoice);
             _settings = TvSettingsPanel.Create(root, _context);
+            _bankChooser = TvBankChooser.Create(root, _context);
             _toggleFile = new StudioToggleFile(System.IO.Path.Combine(Application.persistentDataPath, StudioToggleFile.FileName));
             _stage = StudioStage.Create(_context, OnStudioVisible);
             _settings.SetStudioToggle(() => _stage.IsOn, on =>

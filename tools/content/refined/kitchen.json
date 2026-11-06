@@ -1,0 +1,326 @@
+[
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Какой продукт в закрытой банке почти не портится, даже за тысячи лет?",
+      "en": "Which food, sealed in a jar, barely spoils even over thousands of years?"
+    },
+    "options": [
+      {
+        "ru": "Сыр",
+        "en": "Cheese"
+      },
+      {
+        "ru": "Хлеб",
+        "en": "Bread"
+      },
+      {
+        "ru": "Мёд",
+        "en": "Honey"
+      },
+      {
+        "ru": "Финики",
+        "en": "Dates"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "В мёде мало воды и много сахара и кислоты, микробам в нём не выжить. А вот съедобный мёд из гробниц фараонов — миф.",
+      "en": "Honey has little water and lots of sugar and acid, so microbes can't survive. Edible honey from pharaohs' tombs, though, is a myth."
+    },
+    "source": "https://en.wikipedia.org/wiki/Honey",
+    "basedOn": "kitchen_002",
+    "refine": "rewrite"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Откуда у гамбургера такое название?",
+      "en": "Where does the hamburger get its name?"
+    },
+    "options": [
+      {
+        "ru": "От английского ham — ветчина",
+        "en": "Ham, the English word"
+      },
+      {
+        "ru": "От города Гамбурга",
+        "en": "The city of Hamburg"
+      },
+      {
+        "ru": "От фамилии изобретателя",
+        "en": "Its inventor's surname"
+      },
+      {
+        "ru": "От немецкого слова «булка»",
+        "en": "A German word for bun"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Немецкие эмигранты привезли в Америку рубленый «гамбургский стейк». Ветчины в гамбургере нет, а «бургер» — обрубок слова.",
+      "en": "German immigrants brought the minced 'Hamburg steak' to America. There's no ham in it, and 'burger' is just a chopped-off word."
+    },
+    "source": "https://en.wikipedia.org/wiki/Hamburger",
+    "basedOn": "kitchen_006",
+    "refine": "rewrite"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "easy",
+    "text": {
+      "ru": "Как салат оливье называют в Испании, Италии и Греции?",
+      "en": "What is Olivier salad called in Spain, Italy and Greece?"
+    },
+    "options": [
+      {
+        "ru": "Зимний салат",
+        "en": "Winter salad"
+      },
+      {
+        "ru": "Московский салат",
+        "en": "Moscow salad"
+      },
+      {
+        "ru": "Царский салат",
+        "en": "Tsar's salad"
+      },
+      {
+        "ru": "Русский салат",
+        "en": "Russian salad"
+      }
+    ],
+    "correct": 3,
+    "fact": {
+      "ru": "В Испании «русский салатик» подают как тапас во многих барах, а в Италии и Греции его часто делают вовсе без мяса.",
+      "en": "In Spain 'little Russian salad' is a tapa in many bars; in Italy and Greece it is often made with no meat at all."
+    },
+    "source": "https://en.wikipedia.org/wiki/Olivier_salad",
+    "basedOn": null,
+    "refine": "new"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Где придумали «гавайскую» пиццу с ананасами?",
+      "en": "Where was Hawaiian pizza with pineapple invented?"
+    },
+    "options": [
+      {
+        "ru": "В Канаде",
+        "en": "Canada"
+      },
+      {
+        "ru": "На Гавайях",
+        "en": "Hawaii"
+      },
+      {
+        "ru": "В Италии",
+        "en": "Italy"
+      },
+      {
+        "ru": "В Австралии",
+        "en": "Australia"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В 1962 году грек Сэм Панопулос испёк её в Онтарио и назвал по марке консервированных ананасов.",
+      "en": "In 1962 Greek-born Sam Panopoulos made it in Ontario and named it after the brand of canned pineapple."
+    },
+    "source": "https://en.wikipedia.org/wiki/Hawaiian_pizza",
+    "basedOn": "kitchen_028",
+    "refine": "same"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Мороженое пломбир названо в честь…",
+      "en": "Plombir ice cream is named after…"
+    },
+    "options": [
+      {
+        "ru": "Свинцовой пломбы",
+        "en": "A lead seal"
+      },
+      {
+        "ru": "Кондитера Пломбье",
+        "en": "A confectioner called Plombier"
+      },
+      {
+        "ru": "Французского городка",
+        "en": "A French spa town"
+      },
+      {
+        "ru": "Зубной пломбы",
+        "en": "A dental filling"
+      }
+    ],
+    "correct": 2,
+    "fact": {
+      "ru": "Это курорт Пломбьер-ле-Бен в Вогезах, а у нас пломбиром зовут самое жирное мороженое — от 12% молочного жира.",
+      "en": "It is the spa town of Plombières-les-Bains; in Russia plombir means the richest ice cream, at least 12% milk fat."
+    },
+    "source": "https://ru.wikipedia.org/wiki/Пломбир",
+    "basedOn": "kitchen_034",
+    "refine": "same"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Слово «пельмени» пришло из коми и удмуртского языков. Что оно значит?",
+      "en": "The word pelmeni comes from the Komi and Udmurt languages. What does it mean?"
+    },
+    "options": [
+      {
+        "ru": "Медвежья лапа",
+        "en": "Bear's paw"
+      },
+      {
+        "ru": "Хлебное ухо",
+        "en": "Bread ear"
+      },
+      {
+        "ru": "Снежный ком",
+        "en": "Snowball"
+      },
+      {
+        "ru": "Мясной мешочек",
+        "en": "Meat pouch"
+      }
+    ],
+    "correct": 1,
+    "fact": {
+      "ru": "Пельмени и правда похожи на ушки: вместе с блюдом русские переняли у народов Урала и само слово.",
+      "en": "Pelmeni do look like little ears: Russians took both the dish and its name from the peoples of the Urals."
+    },
+    "source": "https://en.wikipedia.org/wiki/Pelmeni",
+    "basedOn": "kitchen_024",
+    "refine": "same"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Почему в пасту, ставшую потом «Нутеллой», положили так много фундука?",
+      "en": "Why did the spread that became Nutella get so much hazelnut?"
+    },
+    "options": [
+      {
+        "ru": "После войны не хватало какао",
+        "en": "Cocoa was scarce after the war"
+      },
+      {
+        "ru": "Так требовал закон Италии",
+        "en": "Italian law required it"
+      },
+      {
+        "ru": "Фундук продлевал срок годности",
+        "en": "Hazelnut kept it fresh longer"
+      },
+      {
+        "ru": "Ради рекламного слогана",
+        "en": "For an advertising slogan"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "В 1946 году Пьетро Ферреро из Пьемонта, края фундука, растянул дефицитное какао орехами; имя Nutella появилось в 1964-м.",
+      "en": "In 1946 Pietro Ferrero of Piedmont, hazelnut country, stretched scarce cocoa with nuts; the Nutella name came in 1964."
+    },
+    "source": "https://en.wikipedia.org/wiki/Nutella",
+    "basedOn": "kitchen_037",
+    "refine": "same"
+  },
+  {
+    "format": "multipleChoice",
+    "difficulty": "medium",
+    "text": {
+      "ru": "Почему в швейцарском сыре в последние годы стало меньше дырок?",
+      "en": "Why have Swiss cheeses had fewer holes in recent years?"
+    },
+    "options": [
+      {
+        "ru": "Молоко стало слишком чистым",
+        "en": "The milk got too clean"
+      },
+      {
+        "ru": "Сыр стали меньше выдерживать",
+        "en": "It is aged for less time"
+      },
+      {
+        "ru": "Сменили породу коров",
+        "en": "Farms switched cow breeds"
+      },
+      {
+        "ru": "Покупатели не любили дырки",
+        "en": "Shoppers disliked the holes"
+      }
+    ],
+    "correct": 0,
+    "fact": {
+      "ru": "Дырки растут вокруг крошек сена, которые раньше попадали в молоко в хлеву. Теперь доят машинами прямо в закрытые танки.",
+      "en": "Holes grow around specks of hay that used to fall into the milk in the barn. Now machines milk straight into closed tanks."
+    },
+    "source": "https://www.swissinfo.ch/eng/sci-tech/mystery-solved_hay-particles-responsible-for-holes-in-swiss-cheese/41457054",
+    "basedOn": null,
+    "refine": "new"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Пирамидам Гизы около 4500 лет. А сколько лет древнейшему найденному хлебу — крошкам из Иордании?",
+      "en": "The pyramids of Giza are about 4,500 years old. How old is the oldest bread ever found, crumbs from Jordan?"
+    },
+    "answer": 14400,
+    "range": [
+      0,
+      50000
+    ],
+    "step": 100,
+    "tolerance": 4000,
+    "unit": {
+      "ru": "лет",
+      "en": "years"
+    },
+    "fact": {
+      "ru": "Лепёшку испекли охотники-собиратели из диких злаков — примерно за 4000 лет до появления земледелия.",
+      "en": "Hunter-gatherers baked it from wild cereals, about 4,000 years before farming began."
+    },
+    "source": "https://en.wikipedia.org/wiki/Flatbread",
+    "basedOn": "kitchen_042",
+    "refine": "rewrite"
+  },
+  {
+    "format": "closestValue",
+    "difficulty": "hard",
+    "text": {
+      "ru": "Рекорд ежегодного конкурса едоков в Нью-Йорке: сколько хот-догов с булками съел чемпион за 10 минут?",
+      "en": "The record at New York's yearly eating contest: how many hot dogs with buns did the champion eat in 10 minutes?"
+    },
+    "answer": 76,
+    "range": [
+      0,
+      200
+    ],
+    "step": 1,
+    "tolerance": 12,
+    "unit": {
+      "ru": "хот-догов",
+      "en": "hot dogs"
+    },
+    "fact": {
+      "ru": "Это Джои Честнат в 2021 году: больше семи штук в минуту. А легенду, что конкурс идёт с 1916 года, выдумал промоутер.",
+      "en": "Joey Chestnut, in 2021: more than seven a minute. The legend that the contest dates from 1916 was made up by a promoter."
+    },
+    "source": "https://en.wikipedia.org/wiki/Nathan%27s_Hot_Dog_Eating_Contest",
+    "basedOn": null,
+    "refine": "new"
+  }
+]

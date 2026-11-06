@@ -18,6 +18,12 @@ namespace FamilyQuiz.Core.Content
         [JsonProperty("source", Required = Required.Always)] public string Source { get; set; }
         [JsonProperty("kids")] public bool? Kids { get; set; }
 
+        /// <summary>Curated bank only (decisions/0020): the full bank question this one comes from, or null for a new one.</summary>
+        [JsonProperty("basedOn")] public string BasedOn { get; set; }
+
+        /// <summary>Curated bank only: same (an exact copy of BasedOn), rewrite (the same fact, a better question) or new.</summary>
+        [JsonProperty("refine")] public string Refine { get; set; }
+
         /// <summary>Multiple choice: 4 options in file order.</summary>
         [JsonProperty("options")] public List<LocalizedText> Options { get; set; }
 

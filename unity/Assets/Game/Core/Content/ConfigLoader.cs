@@ -27,7 +27,7 @@ namespace FamilyQuiz.Core.Content
             "powerUps.slime.blobs", "powerUps.fog.seconds", "race.maxHeadStart", "race.finishSteps", "race.maxQuestions",
             "race.stepsPerCorrect", "race.answer", "race.reveal", "players.min", "players.max", "players.timerMultiplierOptions",
             "players.seatHoldSeconds", "lobby.startCountdownSeconds", "net.inputGraceMs", "net.tvReconnectSeconds",
-            "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds", "feedback.enabled", "feedback.stars", "feedback.items", "music.volume", "music.fadeSeconds",
+            "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds", "feedback.enabled", "feedback.stars", "feedback.items", "music.volume", "music.fadeSeconds", "sfx.volume", "sfx.hostVoice", "banks.default", "banks.chooseOnStart", "timers.lastCallEnabled",
             "staging.extraSeconds.questionShow", "staging.extraSeconds.reveal", "staging.extraSeconds.scores",
             "staging.extraSeconds.roundEnd", "staging.lobby.seatPopSeconds", "staging.intro.establishSeconds",
             "staging.intro.lightsUpSeconds", "staging.questionShow.curtainOpenSeconds", "staging.questionShow.questionInSeconds",
@@ -174,6 +174,9 @@ namespace FamilyQuiz.Core.Content
             Positive(e, "hosts.bubbleSeconds", c.Hosts.BubbleSeconds);
             e.Check(c.Hosts.StreakTrigger >= 1, "hosts.streakTrigger", "must be 1 or more");
             Positive(e, "poll.maxSeconds", c.Poll.MaxSeconds);
+            e.Check(c.Sfx.Volume >= 0 && c.Sfx.Volume <= 1, "sfx.volume", "must be 0 to 1");
+            e.Check(SfxConfig.IsVoice(c.Sfx.HostVoice), "sfx.hostVoice", "must be none, a_animalese, b_blips, c_robot, d_wahwah or e_bubbles");
+            e.Check(BankIds.IsValid(c.Banks.Default), "banks.default", "must be full or curated");
             e.Check(c.Music.Volume >= 0 && c.Music.Volume <= 1, "music.volume", "must be 0 to 1");
             e.Check(c.Music.FadeSeconds >= 0 && c.Music.FadeSeconds <= 10, "music.fadeSeconds", "must be 0 to 10");
             e.Check(c.Feedback.Stars >= 2 && c.Feedback.Stars <= 10, "feedback.stars", "must be 2 to 10");

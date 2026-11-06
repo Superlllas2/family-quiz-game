@@ -12,15 +12,19 @@ namespace FamilyQuiz.Audio
     public sealed class MusicVolumeFile
     {
         public const string FileName = "tv_audio.json";
-        private const string Key = "musicVolume";
+        public const string MusicKey = "musicVolume";
+        public const string SfxKey = "sfxVolume";
 
         private readonly string _path;
         private readonly float _default;
+        private readonly string _key;
 
-        public MusicVolumeFile(string path, float defaultVolume)
+        /// <param name="key">musicVolume or sfxVolume (decisions/0020, D120): both live in the same file.</param>
+        public MusicVolumeFile(string path, float defaultVolume, string key = MusicKey)
         {
             _path = path;
             _default = defaultVolume;
+            _key = key;
         }
 
         public float Load()
@@ -28,7 +32,7 @@ namespace FamilyQuiz.Audio
             try
             {
                 if (!File.Exists(_path)) return _default;
-                var token = JObject.Parse(File.ReadAllText(_path))[Key];
+                var token = JObject.Parse(File.ReadAllText(_path))[_key];
                 if (token == null || (token.Type != JTokenType.Float && token.Type != JTokenType.Integer)) return _default;
                 var value = token.Value<float>();
                 return value >= 0f && value <= 1f ? value : _default;
@@ -45,7 +49,19 @@ namespace FamilyQuiz.Audio
             {
                 var dir = Path.GetDirectoryName(_path);
                 if (!string.IsNullOrEmpty(dir)) Directory.CreateDirectory(dir);
-                File.WriteAllText(_path, new JObject { [Key] = Math.Round(Clamp(volume), 3) }.ToString());
+                // Keep the other volume of the file.
+                JObject root;
+                try
+                {
+                    root = File.Exists(_path) ? JObject.Parse(File.ReadAllText(_path)) : new JObject();
+                }
+                catch (Newtonsoft.Json.JsonException)
+                {
+                    root = new JObject();
+                }
+
+                root[_key] = Math.Round(Clamp(volume), 3);
+                File.WriteAllText(_path, root.ToString());
             }
             catch (Exception e) when (e is IOException || e is UnauthorizedAccessException)
             {

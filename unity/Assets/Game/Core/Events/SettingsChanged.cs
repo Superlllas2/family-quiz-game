@@ -21,6 +21,7 @@ namespace FamilyQuiz.Core.Events
         public const string SettingTargeting = "targeting";
         public const string SettingBackToLobby = "backToLobby";
         public const string SettingFeedback = "feedback";
+        public const string SettingBank = "bank";
         public const string SettingNewGame = "newGame";
 
         public SettingsChanged(string source, string playerId, string setting, string value)

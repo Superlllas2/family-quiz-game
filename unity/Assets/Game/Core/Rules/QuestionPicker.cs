@@ -20,6 +20,15 @@ namespace FamilyQuiz.Core.Rules
 
         /// <param name="topicId">The chosen topic, or null for the mixed door (any topic).</param>
         /// <param name="group">The group the question came from (1 to 4).</param>
+        /// <summary>
+        /// Seen: the question itself, or the full bank question a curated one comes from (decisions/0020, D117). When a
+        /// curated question is shown its basedOn is marked seen too, so the pair never comes twice to the same family.
+        /// </summary>
+        public static bool IsSeen(QuestionDef q, IReadOnlyCollection<string> seen)
+        {
+            return Contains(seen, q.Id) || (q.BasedOn != null && Contains(seen, q.BasedOn));
+        }
+
         public static QuestionDef Pick(IReadOnlyList<QuestionDef> bank, string format, string difficulty, string topicId,
             IReadOnlyCollection<string> seen, ICollection<string> usedInGame, IRandom random, out int group)
         {
@@ -29,7 +38,7 @@ namespace FamilyQuiz.Core.Rules
             {
                 if (q.Format != format || q.Difficulty != difficulty || usedInGame.Contains(q.Id)) continue;
                 bool inTopic = topicId == null || q.Topic == topicId;
-                bool isSeen = Contains(seen, q.Id);
+                bool isSeen = IsSeen(q, seen);
                 if (!isSeen && inTopic) groups[0].Add(q);
                 if (!isSeen) groups[1].Add(q);
                 if (isSeen && inTopic) groups[2].Add(q);

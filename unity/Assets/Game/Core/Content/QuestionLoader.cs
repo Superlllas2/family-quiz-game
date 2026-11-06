@@ -7,10 +7,10 @@ namespace FamilyQuiz.Core.Content
     {
         public const string FileName = "questions.json";
 
-        public static IReadOnlyList<QuestionDef> Parse(string json, IReadOnlyList<TopicDef> topics)
+        public static IReadOnlyList<QuestionDef> Parse(string json, IReadOnlyList<TopicDef> topics, string fileName = FileName)
         {
-            var errors = new ContentErrors(FileName);
-            var items = JsonItems.Convert<QuestionDef>(JsonItems.ParseArray(FileName, json), errors);
+            var errors = new ContentErrors(fileName);
+            var items = JsonItems.Convert<QuestionDef>(JsonItems.ParseArray(fileName, json), errors);
             var topicById = new Dictionary<string, TopicDef>();
             foreach (var t in topics) topicById[t.Id] = t;
 
