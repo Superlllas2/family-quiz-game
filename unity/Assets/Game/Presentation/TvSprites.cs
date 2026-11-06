@@ -17,6 +17,13 @@ namespace FamilyQuiz.Presentation
         public const float Outline = 4.5f;
 
         private const int CardSize = 128;
+
+        /// <summary>
+        /// Clear pixels around the card shapes inside their texture. The straight edges then fade out in the texture
+        /// instead of being cut by the mesh, so a tilted piece is smoothed by bilinear filtering. The UI layer gets no
+        /// MSAA or SMAA (those smooth the 3D studio only), so a shape drawn to the texture's border showed stair steps.
+        /// </summary>
+        private const float EdgePad = 3f;
         private const int DiscSize = 160;
         private const int StarSize = 256;
         private static readonly Color32 InkPixel = new Color32(0x2B, 0x1D, 0x16, 0xFF);
@@ -109,13 +116,13 @@ namespace FamilyQuiz.Presentation
             for (int y = 0; y < CardSize; y++)
             for (int x = 0; x < CardSize; x++)
             {
-                float d = RoundedBox(x + 0.5f, y + 0.5f, CardSize, Radius);
+                float d = RoundedBox(x + 0.5f - EdgePad, y + 0.5f - EdgePad, CardSize - 2 * EdgePad, Radius);
                 px[y * CardSize + x] = Shade(d, outline ? Outline : 0f, grain, x, y);
             }
 
             tex.SetPixels32(px);
             tex.Apply(false, true);
-            float b = Radius + 4f;
+            float b = Radius + 4f + EdgePad;
             return Sprite.Create(tex, new Rect(0, 0, CardSize, CardSize), new Vector2(0.5f, 0.5f), 100f, 0,
                 SpriteMeshType.FullRect, new Vector4(b, b, b, b));
         }
@@ -128,14 +135,14 @@ namespace FamilyQuiz.Presentation
             for (int y = 0; y < CardSize; y++)
             for (int x = 0; x < CardSize; x++)
             {
-                float d = RoundedBox(x + 0.5f, y + 0.5f, CardSize, Radius * 0.6f);
+                float d = RoundedBox(x + 0.5f - EdgePad, y + 0.5f - EdgePad, CardSize - 2 * EdgePad, Radius * 0.6f);
                 float a = Mathf.Clamp01(0.5f - d) * Mathf.Clamp01(width + 0.5f + d);
                 px[y * CardSize + x] = new Color32(255, 255, 255, (byte)Mathf.RoundToInt(a * 255f));
             }
 
             tex.SetPixels32(px);
             tex.Apply(false, true);
-            float b = Radius * 0.6f + width + 2f;
+            float b = Radius * 0.6f + width + 2f + EdgePad;
             return Sprite.Create(tex, new Rect(0, 0, CardSize, CardSize), new Vector2(0.5f, 0.5f), 100f, 0,
                 SpriteMeshType.FullRect, new Vector4(b, b, b, b));
         }
