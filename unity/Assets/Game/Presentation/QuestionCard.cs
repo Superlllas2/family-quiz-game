@@ -45,8 +45,8 @@ namespace FamilyQuiz.Presentation
         {
             _large = large;
             if (large) UiBuilder.Fit(_question, 40, 64, 4);
-            else UiBuilder.Fit(_question, 28, 42, 3);
-            UiBuilder.Fit(_fact, 24, large ? 40 : 32, large ? 4 : 3);
+            else UiBuilder.Fit(_question, 22, 42, 3);
+            UiBuilder.Fit(_fact, 20, large ? 40 : 32, large ? 4 : 3);
         }
 
         /// <summary>The front: question, topic ribbon, coin and the sticker (null multiplier hides it).</summary>
