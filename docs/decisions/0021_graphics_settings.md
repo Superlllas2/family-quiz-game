@@ -1,0 +1,11 @@
+# Decision record 0021: graphics settings
+
+Date: Nov 6, 2026. Ilia asked for basic graphics settings (display mode, resolution, VSync, frame limit, quality presets, textures, shadows, anti-aliasing, render scale, ambient occlusion, bloom, motion blur, depth of field, reflections, effects, anisotropic filtering). The AI building the game never reopens one of these on its own; it asks first.
+
+| # | Question | Decision | Replaces |
+| --- | --- | --- | --- |
+| D122 | Where | A **Графика / Graphics** button in the pause menu (teal) opens the Graphics panel, a board game card like the settings panel (D100). Each row is a label and a "< value >" selector; a click on the value steps forward. Every change applies at once; Escape goes back to the pause menu. A TV only choice: never a game setting, never through Core or the protocol, saved on this laptop in `<persistentDataPath>/tv_graphics.json` | |
+| D123 | The settings | Display mode (fullscreen, borderless, windowed), resolution (the screen's own list), VSync, frame limit (30, 60, 120, 144, unlimited; only without VSync), graphics quality (low, medium, high, ultra; "custom" once a detail differs), textures (low, medium, high: mipmap limit), shadows (off, low, medium, high: URP shadow distance and resolution), anti-aliasing (off, FXAA, SMAA, TAA, MSAA ×4 with SMAA), render scale (50 to 100 %), ambient occlusion (the renderer's SSAO), bloom and depth of field (the studio's film look), anisotropic filtering (off to 16×). **Left out**, because the game has nothing they would change: motion blur (no motion blur effect; the camera barely moves), reflections (baked probes only), effects quality (no particle effects) | |
+| D124 | Defaults | High: the look the studio was lit for (MSAA ×4 with SMAA, ambient occlusion, bloom, depth of field, medium shadows, 100 %, 8×). The window is never touched on start until someone picks a display mode or resolution in the panel, so the app keeps opening as it did. `-tvOpen settings|graphics|bank` on the command line opens a panel at start (a developer aid for screenshots) | |
+
+Code: `Presentation/Graphics/GraphicsOptions.cs` (plain C#, tested), `GraphicsApplier.cs` (URP asset, cameras, the film look volume; in the editor the URP assets are put back on quit), `Presentation/TvGraphicsPanel.cs`.

@@ -8,7 +8,7 @@ namespace FamilyQuiz.Presentation
     /// <summary>
     /// The pause menu (decisions/0018, D105 to D107), drawn as a board game piece (D100): a card of card stock on the
     /// dimmed table with a printed ribbon for its title and chunky buttons in the answer inks (Continue green, Settings
-    /// cobalt, the question bank mustard, New game card stock that turns red when armed). Shown while the game is paused
+    /// cobalt, Graphics teal, the question bank mustard, New game card stock that turns red when armed). Shown while the game is paused
     /// (GameState.Paused). Escape opens it; Escape again or Continue closes it. New game takes a confirming second click
     /// and is hidden in the Lobby. A view only: its buttons call the presenter, which sends the commands (ResumeGame,
     /// RestartGame) or opens the TV settings panel or the bank chooser.
@@ -36,6 +36,8 @@ namespace FamilyQuiz.Presentation
         private Action _onNewGame;
         private Action _onSettings;
         private Action _onBank;
+        private Action _onGraphics;
+        private PanelButton _graphics;
         private Func<bool> _hasBanks;
         private TvPiece _card;
         private TextMeshProUGUI _title;
@@ -47,7 +49,7 @@ namespace FamilyQuiz.Presentation
         private bool _armedShown;
 
         public static TvPauseMenu Create(Transform parent, TvContext context, Action onContinue, Action onNewGame, Action onSettings,
-            Action onBank = null, Func<bool> hasBanks = null)
+            Action onBank = null, Func<bool> hasBanks = null, Action onGraphics = null)
         {
             var rect = UiBuilder.Anchor(UiBuilder.Rect("TvPauseMenu", parent), 0, 0, 1, 1);
             var menu = rect.gameObject.AddComponent<TvPauseMenu>();
@@ -56,6 +58,7 @@ namespace FamilyQuiz.Presentation
             menu._onNewGame = onNewGame;
             menu._onSettings = onSettings;
             menu._onBank = onBank;
+            menu._onGraphics = onGraphics;
             menu._hasBanks = hasBanks;
             menu.Build();
             rect.gameObject.SetActive(false);
@@ -87,6 +90,7 @@ namespace FamilyQuiz.Presentation
             _hint.text = _context.T("tv.pause.hint");
             _continue.Set(_context.T("tv.pause.continue"), TvColors.Green);
             _settings.Set(_context.T("tv.pause.settings"), TvColors.Cobalt);
+            _graphics.Set(_context.T("tv.pause.graphics"), TvColors.Teal);
             bool newGame = game.State.Phase != GamePhase.Lobby;
             _newGame.Rect.gameObject.SetActive(newGame);
             bool banks = _hasBanks != null && _hasBanks();
@@ -110,6 +114,8 @@ namespace FamilyQuiz.Presentation
             Place(_continue, y);
             y += ButtonHeight + ButtonGap;
             Place(_settings, y);
+            y += ButtonHeight + ButtonGap;
+            Place(_graphics, y);
             if (banks)
             {
                 y += ButtonHeight + ButtonGap;
@@ -184,6 +190,7 @@ namespace FamilyQuiz.Presentation
             _continue = PanelButton.Create(card, "Continue", ButtonLabelSize, () => _onContinue?.Invoke());
             _settings = PanelButton.Create(card, "Settings", ButtonLabelSize, () => _onSettings?.Invoke());
             _bank = PanelButton.Create(card, "Bank", ButtonLabelSize, () => _onBank?.Invoke());
+            _graphics = PanelButton.Create(card, "Graphics", ButtonLabelSize, () => _onGraphics?.Invoke());
             _newGame = PanelButton.Create(card, "NewGame", ButtonLabelSize, OnNewGame);
         }
 

@@ -131,6 +131,8 @@ Escape on the laptop opens the pause menu over the TV: **Continue**, **New game*
 - Every phone shows `paused`. On Continue every phone gets its screen back with the same phase id and the time left; the time a phone spent paused does not count in its answer time (D112).
 - Inputs already on their way are handled as usual.
 
+The pause menu also has **Графика / Graphics** (decisions/0021): display mode, resolution, VSync, frame limit, quality preset and its details, saved on this laptop.
+
 ## Question feedback (decisions/0018)
 
 When question feedback is on, every phone shows a rating card over its screen in the Reveal and Scores of every round question (not the race):

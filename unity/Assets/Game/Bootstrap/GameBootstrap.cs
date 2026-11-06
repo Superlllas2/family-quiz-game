@@ -11,6 +11,7 @@ using FamilyQuiz.DevTools;
 using FamilyQuiz.Dialogue;
 using FamilyQuiz.Net;
 using FamilyQuiz.Presentation;
+using FamilyQuiz.Presentation.Graphics;
 using FamilyQuiz.Telemetry;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -49,6 +50,7 @@ namespace FamilyQuiz.Bootstrap
         private bool _relayUp;
         private MusicPlayer _music;
         private SfxPlayer _sfx;
+        private GraphicsApplier _graphics;
 
         private void Awake()
         {
@@ -59,7 +61,15 @@ namespace FamilyQuiz.Bootstrap
 
         private void Start()
         {
+            // Graphics first (decisions/0021): the window and the renderer are set before anything is drawn.
+            var graphicsPath = Path.Combine(Application.persistentDataPath, GraphicsOptions.FileName);
+            _graphics = GraphicsApplier.Create(GraphicsOptions.Load(graphicsPath));
             _view = TvPresenter.Create();
+            _view.SetGraphics(() => _graphics.Options, options =>
+            {
+                _graphics.Apply(options);
+                _graphics.Options.Save(graphicsPath); // with windowChosen once the window was changed
+            }, GraphicsApplier.Resolutions);
             _clock = new PausableClock(() => _stopwatch.ElapsedMilliseconds);
             _clock.Pause(); // the core clock runs only while the relay is connected
             _eventLog = CreateEventLog(_clock);
