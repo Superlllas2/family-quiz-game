@@ -2,7 +2,8 @@ import { describe, expect, it } from 'vitest';
 import {
   answerChoiceData, answerSliderData, answerTrueFalseData, answerWindowMs, characterMessage, choiceInputMessage,
   effectClearedInputMessage, joinMessage, leaveMessage, lobbyData, lobbyMessage, parseIncoming, pickCharacterData,
-  pingMessage, playerView, pollData, pollMessage, powerUpInputMessage, rejoinMessage, resultData, resultsData,
+  pausedData, pingMessage, playerView, pollData, pollMessage, powerUpInputMessage, rateData, rateInputMessage,
+  rejoinMessage, resultData, resultsData,
   settingsMessage, textData, topicVoteData, trueFalseInputMessage, valueInputMessage, voteInputMessage, waitingData,
 } from './protocol';
 import { PROTOCOL_VERSION } from './constants';
@@ -90,6 +91,83 @@ describe('message builders match PROTOCOL.md section 3 exactly', () => {
     expect(JSON.stringify(pollMessage('p9', { fun: 'The freeze on Dad', waiting: 1, again: 0 })))
       .toBe('{"v":2,"type":"poll","inputId":"p9","answers":{"fun":"The freeze on Dad","waiting":1,"again":0}}');
     expect(pollMessage('p8', {})).toStrictEqual({ v: 2, type: 'poll', inputId: 'p8', answers: {} });
+  });
+});
+
+describe('the rating card and the pause (D105, D109)', () => {
+  const rate = {
+    questionId: 'films_old_001',
+    title: 'Оцени вопрос',
+    close: 'Закрыть',
+    stars: 5,
+    items: [
+      { id: 'fun', text: 'Понравился вопрос?', low: 'Скучно', high: 'Отлично', given: 4 },
+      { id: 'guess', text: 'Можно было догадаться, не зная?', low: 'Никак', high: 'Легко', given: 0 },
+      { id: 'fact', text: 'Интересный ответ?', low: 'Ну и что', high: 'Вау!', given: 0 },
+    ],
+  };
+  const screen = (id: string, data: Record<string, unknown>) => ({ phaseId: 17, id, endsInMs: 7000, data });
+
+  it('input of kind rate: the item and the stars, no ms (the PROTOCOL.md example)', () => {
+    expect(JSON.stringify(rateInputMessage('r1', 17, 'fun', 4)))
+      .toBe('{"v":2,"type":"input","inputId":"r1","phaseId":17,"kind":"rate","item":"fun","stars":4}');
+  });
+
+  it('reads the PROTOCOL.md example on watch, waiting and result', () => {
+    for (const id of ['watch', 'waiting', 'result']) {
+      expect(rateData(screen(id, { rate })), id).toStrictEqual(rate);
+    }
+  });
+
+  it('a screen sent with rate parses with it', () => {
+    const msg = parseIncoming(JSON.stringify({ v: 2, type: 'screen', phaseId: 17, id: 'watch', endsInMs: 7000, data: { rate } }));
+    expect(msg?.type === 'screen' && rateData(msg)).toStrictEqual(rate);
+  });
+
+  it('no card without rate, on other screens, without a question id or without items', () => {
+    expect(rateData(screen('watch', {}))).toBeNull();
+    expect(rateData(screen('answerChoice', { rate }))).toBeNull();
+    expect(rateData(screen('watch', { rate: 'yes' }))).toBeNull();
+    expect(rateData(screen('watch', { rate: { ...rate, questionId: '' } }))).toBeNull();
+    expect(rateData(screen('watch', { rate: { ...rate, questionId: 7 } }))).toBeNull();
+    expect(rateData(screen('watch', { rate: { ...rate, items: [] } }))).toBeNull();
+    expect(rateData(screen('watch', { rate: { ...rate, items: 'x' } }))).toBeNull();
+  });
+
+  it('broken fields get harmless defaults: 5 stars, empty texts, given 0, items without an id left out', () => {
+    const r = rateData(screen('waiting', {
+      rate: {
+        questionId: 'q1', stars: 'x',
+        items: [
+          { id: 'fun', given: 9 },
+          { id: 'guess', text: 5, given: 2.5 },
+          { id: 'fact', given: -1 },
+          { text: 'no id', given: 3 },
+          'junk',
+        ],
+      },
+    }));
+    expect(r).toStrictEqual({
+      questionId: 'q1', title: '', close: '', stars: 5,
+      items: [
+        { id: 'fun', text: '', low: '', high: '', given: 0 },
+        { id: 'guess', text: '', low: '', high: '', given: 0 },
+        { id: 'fact', text: '', low: '', high: '', given: 0 },
+      ],
+    });
+  });
+
+  it('given is read against the star count', () => {
+    const r = rateData(screen('watch', { rate: { ...rate, stars: 3, items: [{ id: 'fun', given: 3 }, { id: 'f', given: 4 }] } }));
+    expect(r?.stars).toBe(3);
+    expect(r?.items.map((i) => i.given)).toEqual([3, 0]);
+  });
+
+  it('paused: its text', () => {
+    expect(pausedData({ text: 'Игра на паузе' })).toStrictEqual({ text: 'Игра на паузе' });
+    expect(pausedData({})).toStrictEqual({ text: '' });
+    expect(parseIncoming('{"v":2,"type":"screen","phaseId":40,"id":"paused","endsInMs":null,"data":{"text":"Paused"}}'))
+      .toEqual({ type: 'screen', phaseId: 40, id: 'paused', endsInMs: null, data: { text: 'Paused' } });
   });
 });
 

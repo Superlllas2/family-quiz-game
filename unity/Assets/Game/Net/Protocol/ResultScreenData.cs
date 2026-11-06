@@ -13,5 +13,8 @@ namespace FamilyQuiz.Net.Protocol
         [JsonProperty("powerUp")] public string PowerUp { get; set; }
 
         [JsonProperty("targets")] public List<PowerUpTargetDto> Targets { get; set; } = new List<PowerUpTargetDto>();
+
+        /// <summary>The rating card (D109), or null.</summary>
+        [JsonProperty("rate", NullValueHandling = NullValueHandling.Ignore)] public RateDto Rate { get; set; }
     }
 }

@@ -23,6 +23,10 @@ namespace FamilyQuiz.Net
         private const string FalseKey = "screen.trueFalse.false";
         private const string WaitingPowerUpKey = "screen.waiting.powerUp";
         private const string PowerUpNameKeyPrefix = "screen.powerUps.";
+        private const string PausedTextKey = "screen.paused.text";
+        private const string RateTitleKey = "screen.rate.title";
+        private const string RateCloseKey = "screen.rate.close";
+        private const string RateKeyPrefix = "screen.rate.";
 
         private readonly Game _game;
 
@@ -37,6 +41,16 @@ namespace FamilyQuiz.Net
             var state = _game.State;
             string id;
             object data;
+            if (state.Paused)
+            {
+                // The pause menu is open on the laptop (D105): every phone shows paused, whatever the phase.
+                return new ScreenDto
+                {
+                    PhaseId = state.PhaseId, Id = ScreenIds.Paused, EndsInMs = _game.EndsInMs(player),
+                    Data = new PausedScreenData { Text = Text(PausedTextKey, player.Lang) }
+                };
+            }
+
             switch (state.Phase)
             {
                 case GamePhase.Lobby:
@@ -91,20 +105,24 @@ namespace FamilyQuiz.Net
                 case GamePhase.Scores:
                     // The power up pick (one phaseId over Reveal and Scores): "result" for a holder with someone to aim
                     // at, "waiting" once they used it, "watch" for everyone else (D88).
+                    // Each of them carries the rating card while question feedback is on (D109).
+                    var rate = Rate(player);
                     if (player.UsedPowerUpInPhaseId == state.PhaseId && player.UsedPowerUp != null)
                     {
                         id = ScreenIds.Waiting;
-                        data = new WaitingScreenData { Locked = UsedPowerUpText(player) };
+                        data = new WaitingScreenData { Locked = UsedPowerUpText(player), Rate = rate };
                     }
                     else if (player.HeldPowerUp != null && _game.PickWindowOpen && _game.PowerUpTargets(player).Count > 0)
                     {
                         id = ScreenIds.Result;
-                        data = Result(player);
+                        var result = Result(player);
+                        result.Rate = rate;
+                        data = result;
                     }
                     else
                     {
                         id = ScreenIds.Watch;
-                        data = new WatchScreenData();
+                        data = new WatchScreenData { Rate = rate };
                     }
 
                     break;
@@ -179,6 +197,34 @@ namespace FamilyQuiz.Net
                 HeldPowerUp = player.HeldPowerUp,
                 TimerMultiplier = player.TimerMultiplier
             };
+        }
+
+        /// <summary>The rating card for this player (D109, D110), or null when no card is up.</summary>
+        private RateDto Rate(PlayerState player)
+        {
+            if (!_game.RatingOpen) return null;
+            var question = _game.State.Question;
+            var feedback = _game.Config.Feedback;
+            var dto = new RateDto
+            {
+                QuestionId = question.Def.Id,
+                Title = Text(RateTitleKey, player.Lang),
+                Close = Text(RateCloseKey, player.Lang),
+                Stars = feedback.Stars
+            };
+            foreach (var item in feedback.Items)
+            {
+                dto.Items.Add(new RateItemDto
+                {
+                    Id = item,
+                    Text = Text(RateKeyPrefix + item + ".text", player.Lang),
+                    Low = Text(RateKeyPrefix + item + ".low", player.Lang),
+                    High = Text(RateKeyPrefix + item + ".high", player.Lang),
+                    Given = question.GivenRating(player.PlayerId, item)
+                });
+            }
+
+            return dto;
         }
 
         private ResultScreenData Result(PlayerState player)

@@ -76,6 +76,22 @@ namespace FamilyQuiz.Core.Rules
             _director.ApplyClearEffect(player, cmd, output);
         }
 
+        /// <summary>Input kind rate: one row of the rating card (decisions/0018, D109; ack reasons stale, closed, invalid).</summary>
+        public void Rate(RateQuestion cmd, List<IGameEvent> output)
+        {
+            var player = SeatOf(cmd.Conn, cmd.InputId, output);
+            if (player == null || Resent(player, cmd.Conn, cmd.InputId, output)) return;
+            var reason = _director.CheckRating(player, cmd);
+            if (reason != null)
+            {
+                Refuse(player, cmd.Conn, cmd.InputId, InputKinds.Rate, cmd.PhaseId, reason, output);
+                return;
+            }
+
+            Answer(player, cmd.Conn, cmd.InputId, true, null, output);
+            _director.ApplyRating(player, cmd, output);
+        }
+
         /// <summary>The poll message: once per player in the Poll phase.</summary>
         public void Poll(SubmitPoll cmd, List<IGameEvent> output)
         {

@@ -1916,3 +1916,226 @@ h1 {
     min-height: 54px;
   }
 }
+
+/* ---- rating card (D109): a score pad on card stock over watch, waiting and result ---- */
+
+.rate-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: max(12px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right))
+    max(14px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left));
+  background: rgba(43, 29, 22, 0.6);
+}
+
+.rate-card {
+  width: 100%;
+  max-width: 420px;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 14px 14px;
+  color: var(--ink);
+  background-color: var(--cream);
+  background-image: var(--grain);
+  border: var(--line) solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 0 var(--edge) 0 var(--ink);
+  animation: rate-in 160ms ease-out both;
+}
+
+@keyframes rate-in {
+  from {
+    transform: translateY(14px) scale(0.97);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rate-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.rate-title {
+  margin: 0;
+  min-width: 0;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(1.05rem, 5vw, 1.3rem);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.btn.rate-close {
+  flex: none;
+  width: 48px;
+  min-height: 48px;
+  padding: 0;
+  border-radius: 12px;
+  --edge: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cream-2);
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.rate-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 8px;
+  border-top: 2px dashed rgba(43, 29, 22, 0.28);
+}
+
+.rate-text {
+  margin: 0 0 2px;
+  font-weight: 900;
+  font-size: 1.02rem;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.rate-stars {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+/* A star is a bare mark, not a die-cut piece: a 44 px or bigger target that dips when pressed. */
+.btn.star {
+  flex: 1 1 0;
+  min-width: 44px;
+  max-width: 64px;
+  min-height: 48px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+#app .btn.star.pressed {
+  transform: scale(0.86);
+  box-shadow: none;
+  filter: none;
+}
+
+.star-shape {
+  display: block;
+  width: 42px;
+  height: 42px;
+  pointer-events: none;
+}
+
+.star-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: var(--cream-2);
+  stroke: var(--ink);
+}
+
+.btn.star.on .star-icon {
+  fill: var(--mustard);
+}
+
+.star-shape.pop {
+  animation: star-pop 220ms cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+
+@keyframes star-pop {
+  0% {
+    transform: scale(0.6) rotate(-14deg);
+  }
+  60% {
+    transform: scale(1.25) rotate(6deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.rate-ends {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-family: var(--hand);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1;
+  color: #6b5242;
+}
+
+.rate-ends span:last-child {
+  text-align: right;
+}
+
+/* ---- paused (D105): over everything, nothing to tap ---- */
+
+.overlay.paused {
+  z-index: 20;
+}
+
+.pause-token {
+  width: 112px;
+  height: 112px;
+}
+
+.pause-edge {
+  fill: var(--ink);
+}
+
+.pause-face {
+  fill: var(--mustard);
+  stroke: var(--ink);
+}
+
+.pause-bar {
+  fill: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rate-card,
+  .star-shape.pop {
+    animation: none;
+  }
+}
+
+@media (max-height: 620px) {
+  .rate-card {
+    gap: 6px;
+    padding: 10px 12px 12px;
+  }
+
+  .rate-row {
+    padding-top: 6px;
+  }
+
+  .btn.star {
+    min-height: 44px;
+  }
+
+  .star-shape {
+    width: 36px;
+    height: 36px;
+  }
+}

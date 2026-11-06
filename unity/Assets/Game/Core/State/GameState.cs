@@ -37,6 +37,12 @@ namespace FamilyQuiz.Core.State
         /// <summary>The game language for TV texts, Russian by default (D34).</summary>
         public string GameLanguage { get; internal set; } = Languages.Default;
 
+        /// <summary>The pause menu is open (decisions/0018, D105): the core clock stands still and phones show paused.</summary>
+        public bool Paused { get; internal set; }
+
+        /// <summary>Question feedback (decisions/0018, D108): the rating card in Reveal and Scores. Applies at once.</summary>
+        public bool FeedbackEnabled { get; internal set; }
+
 
         /// <summary>The TV settings panel values for the next game (power ups, types, targeting); they apply at the next game start.</summary>
         public TvSettings PendingSettings { get; internal set; } = new TvSettings();

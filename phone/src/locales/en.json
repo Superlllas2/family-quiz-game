@@ -84,5 +84,8 @@
   "poll.submit": "Submit",
   "poll.textPlaceholder": "Type here",
   "poll.count": "{count}/{max}",
-  "poll.skip": "You can skip this one"
+  "poll.skip": "You can skip this one",
+  "paused.text": "The game is paused",
+  "rate.close": "Close",
+  "rate.star": "{n} of {total}"
 }

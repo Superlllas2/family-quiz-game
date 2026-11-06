@@ -118,6 +118,17 @@ namespace FamilyQuiz.Net
                 case SettingsChanged settings:
                     if (settings.Setting == LangSetting && settings.PlayerId != null)
                         SendScreen(_game.State.FindById(settings.PlayerId));
+                    else if (settings.Setting == SettingsChanged.SettingFeedback)
+                        SendScreenToEveryone(); // the rating card comes or goes at once (D108)
+                    break;
+                case GamePaused _:
+                case GameResumed _:
+                    // Paused on every phone, then each phone's own screen back with a fresh endsInMs (D105, D112).
+                    SendScreenToEveryone();
+                    break;
+                case QuestionRated rated:
+                    // The card shows the accepted stars ("given"), so a reloaded page keeps them.
+                    SendScreen(_game.State.FindById(rated.PlayerId));
                     break;
             }
         }

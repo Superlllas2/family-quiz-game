@@ -99,11 +99,12 @@ There is no host phone: no player has special rights.
 - **Ready (D76):** every phone shows Ready in the Lobby; the TV shows who is ready. When every connected player is ready and 2 or more are connected, the 3 s StartCountdown runs on the TV and all phones. Any phone can tap Not ready during it, which stops it; so does a new player joining. Disconnected players never hold the start up.
 - **No skipping:** Intro, FinalIntro and Results run on their timers.
 - **The next game:** after the poll everyone returns to the Lobby with ready marks cleared and scores reset to 0. Seats, characters, phone languages and timer multipliers are kept, so nobody picks a character again; new players can join and others can leave. Everyone taps Ready again. The next game skips the Intro and keeps the seen questions.
+- **New game (D107):** in the pause menu. The running game is abandoned (logged as `gameEnded` with reason `restart`), everyone returns to the Lobby as with Back to lobby, and every connected player with a character is marked ready, so the StartCountdown starts at once when 2 or more are connected. Takes a confirming second click.
 - **Back to lobby:** in the TV settings panel. Everyone returns to the Lobby with their seats and characters kept, so new players can join or others can leave. A running game is abandoned (logged as `gameEnded` with reason `backToLobby`).
 
 ## TV settings panel
 
-The person at the laptop opens and closes it with the Tab key and uses it with the mouse. It opens at any time and never pauses the game.
+The person at the laptop opens and closes it with the Tab key and uses it with the mouse. It opens at any time and never pauses the game (Settings in the pause menu opens the same panel while the game is paused).
 
 | Setting | Default | Takes effect |
 | --- | --- | --- |
@@ -112,6 +113,30 @@ The person at the laptop opens and closes it with the Tab key and uses it with t
 | Each power up on or off (freeze, slime, fog) | `powerUps.types` | Next game start |
 | Targeting free or aim up | `powerUps.targeting` | Next game start |
 | Reset seen questions | | At once |
+| Question feedback on or off (the rating card on the phones, D108) | `feedback.enabled` (off) | At once, from the next Reveal |
 | Back to lobby | | At once |
 
 Phones keep only their own settings: language, more time, leave (`06_phone_screens.md`).
+
+## Pause menu (decisions/0018)
+
+Escape on the laptop opens the pause menu over the TV: **Continue**, **New game** (hidden in the Lobby), **Settings**. Escape again or Continue closes it; Escape while the settings panel is open from the menu closes the panel and shows the menu again.
+
+- While the menu is open the game is paused: the core clock stands still, so no phase, personal deadline, vote, seat hold or host line moves on. It works in every phase.
+- Every phone shows `paused`. On Continue every phone gets its screen back with the same phase id and the time left; the time a phone spent paused does not count in its answer time (D112).
+- Inputs already on their way are handled as usual.
+
+## Question feedback (decisions/0018)
+
+When question feedback is on, every phone shows a rating card over its screen in the Reveal and Scores of every round question (not the race):
+
+| Item | Question (ru / en) | 1 star | 5 stars |
+| --- | --- | --- | --- |
+| `fun` | Понравился вопрос? / Did you like the question? | Скучно / Boring | Отлично / Loved it |
+| `guess` | Можно было догадаться, не зная? / Could you work it out without knowing? | Никак / No way | Легко / Easily |
+| `fact` | Интересный ответ? / Was the answer interesting? | Ну и что / So what | Вау! / Wow! |
+
+- The leftmost star is 1 of 5, the rightmost 5 of 5. Every row is optional; each tap counts at once and can be changed until Scores ends.
+- The player can close the card; it comes back for the next question.
+- The card never extends a phase (pillar 1): Reveal and Scores run on their timers, and the card goes when Scores ends. The power up pick stays under it.
+- The TV shows nothing of the ratings during the game. Every tap is logged (`questionRated`, `15_schemas.md`); `tools/analyze_ratings.mjs` sums the logs.

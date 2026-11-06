@@ -16,5 +16,6 @@ namespace FamilyQuiz.Net.Protocol
         public const string Results = "results";
         public const string Poll = "poll";
         public const string PollDone = "pollDone";
+        public const string Paused = "paused";
     }
 }

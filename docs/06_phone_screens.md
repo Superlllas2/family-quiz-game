@@ -42,6 +42,11 @@ The phone is an input device (D88): it shows a screen only when the player has s
 | `reconnecting` | Connection lost, or `tvAway` from the relay | "Переподключение… / Reconnecting…" and a spinner. Retries every 2 s | None | `snapshot` restores the right screen |
 | `error` | Room not found, game full, name taken, bad name, game already started, old page version, opened in another tab | Message and a Back button | Back | `join` |
 
+## Pause and the rating card (decisions/0018)
+
+- **`paused`:** the laptop opened the pause menu. A calm full screen with the TV's text ("Пауза. Смотри на телевизор / Paused. Eyes on the TV"), nothing to tap. The phone's answer clock does not count the paused time (D112).
+- **The rating card (D109):** over `watch`, `waiting` or `result` in Reveal and Scores when the screen carries `rate`. A title, a close button and one row per item: the question, five big stars (the leftmost is 1, the rightmost 5) and the low and high words under the ends. A tap fills the stars up to the tapped one at once (pillar 3) and sends `rate`; a later tap changes it. Closed, it stays closed until the next question. While it is open it may cover the power up pick; closing it shows the pick again.
+
 ## Flow
 
 ```

@@ -45,6 +45,7 @@ namespace FamilyQuiz.Bootstrap
         private HostDialogue _dialogue;
         private string _loggedRoomCode;
         private bool _sessionLogged;
+        private bool _relayUp;
 
         private void Awake()
         {
@@ -158,7 +159,8 @@ namespace FamilyQuiz.Bootstrap
             switch (item.Kind)
             {
                 case RelayInboxKind.SocketOpened:
-                    _clock.Resume();
+                    _relayUp = true;
+                    SyncClock();
                     if (item.RoomCode != _loggedRoomCode)
                     {
                         TvLog.Info("Room code: " + item.RoomCode);
@@ -182,7 +184,8 @@ namespace FamilyQuiz.Bootstrap
                                + (string.IsNullOrEmpty(item.Detail) ? "" : ": " + item.Detail));
                     _view.ShowRelayDown();
                     Dispatch(_game.Handle(new RelayConnectionLost()));
-                    _clock.Pause();
+                    _relayUp = false;
+                    SyncClock();
                     break;
                 case RelayInboxKind.Text:
                     var command = _router.ToCommand(item);
@@ -195,6 +198,7 @@ namespace FamilyQuiz.Bootstrap
         private void Dispatch(IReadOnlyList<IGameEvent> events)
         {
             if (events.Count == 0) return;
+            SyncClock(); // a pause or resume in this batch (D105) stops or starts the clock before anyone reads it
             _seen?.OnEvents(events);
             _outbox?.OnEvents(events);
             _view.OnEvents(events);
@@ -202,6 +206,17 @@ namespace FamilyQuiz.Bootstrap
             _telemetry?.OnEvents(events);
             if (_dialogue != null) Speak(_dialogue.OnEvents(events));
             foreach (var e in events) LogEvent(e);
+        }
+
+        /// <summary>
+        /// The core clock runs only while the relay is connected (docs/18_edge_cases.md) and the game is not paused
+        /// (the pause menu, decisions/0018 D105).
+        /// </summary>
+        private void SyncClock()
+        {
+            if (_clock == null || _game == null) return;
+            if (_relayUp && !_game.State.Paused) _clock.Resume();
+            else _clock.Pause();
         }
 
         /// <summary>Lines the hosts start saying now: a bubble on the TV and a hostLine log line.</summary>

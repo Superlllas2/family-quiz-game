@@ -67,3 +67,37 @@ export function TvPiece() {
     </svg>
   );
 }
+
+/** One star of the rating card; filled or empty comes from style.css. */
+export function StarIcon() {
+  return (
+    <svg class="star-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M12 2.6l2.8 5.9 6.4.8-4.7 4.5 1.2 6.4L12 17.1l-5.7 3.1 1.2-6.4-4.7-4.5 6.4-.8z"
+        stroke-width="2.2"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+}
+
+/** The cross on the rating card's close button. */
+export function CloseIcon() {
+  return (
+    <svg class="close-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" />
+    </svg>
+  );
+}
+
+/** Two bars on a round token: the game is paused. */
+export function PauseToken() {
+  return (
+    <svg class="pause-token" viewBox="0 0 100 100" aria-hidden="true">
+      <circle class="pause-edge" cx="50" cy="54" r="42" />
+      <circle class="pause-face" cx="50" cy="48" r="42" stroke-width="5" />
+      <rect class="pause-bar" x="34" y="30" width="11" height="36" rx="3" />
+      <rect class="pause-bar" x="55" y="30" width="11" height="36" rx="3" />
+    </svg>
+  );
+}

@@ -305,12 +305,14 @@ Allowed values:
 | --- | --- |
 | `playerLeft.reason` | `disconnected` (seat still held), `left` (tapped Leave), `seatExpired` |
 | `lobbyAction.action` | `ready`, `notReady` |
-| `settingsChanged.source` | `tv` (settings panel: `gameLang`, `powerUps`, `powerUpTypes`, `targeting`, `resetSeen`, `backToLobby`) or `phone` (with `playerId`: `lang`, `timerMultiplier`) |
+| `settingsChanged.source` | `tv` (settings panel: `gameLang`, `powerUps`, `powerUpTypes`, `targeting`, `feedback`, `resetSeen`, `backToLobby`; pause menu: `newGame`) or `phone` (with `playerId`: `lang`, `timerMultiplier`) |
 | `phaseStarted.budgetMs`, `stagingExtraMs` | The phase budget in ms with any staging extra included, and that extra alone (`staging.extraSeconds`, `21_staging.md`); 0 for phases without one. Answer budgets are the base window, before timer multipliers |
 | `phaseEnded.reason` | `timeout`, `allDone`, `cancelled` (countdown), `abandoned` (Back to lobby), `skip` (developer phase skip key only) |
-| `gameEnded.reason` | `finished`, `backToLobby` |
 | `gameEnded.factId`, `tags` | Only with reason `finished`: the winner's fact id (or null) and playerId to funny tag id for every other player (D86, D87) |
 | `poll` | Never carries a player id |
+| `questionRated` | One line per accepted tap on the rating card (decisions/0018, D111): `playerId`, `questionId`, `topic`, `format`, `difficulty`, `item` (`fun`, `guess`, `fact`), `stars` (1 to 5), `phaseId`, `correct` (true, false, or null when the player sent no answer). The latest line per player, question and item counts |
+| `gamePaused`, `gameResumed` | The pause menu opened or closed (D105): `phase`, `phaseId`. `t` runs on the core clock, which stands still while paused |
+| `gameEnded.reason` | `finished`, `backToLobby`, or `restart` (New game in the pause menu, D107) |
 
 ### Derived numbers
 

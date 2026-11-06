@@ -17,6 +17,7 @@ export type ShownScreen =
   | 'results'
   | 'poll'
   | 'pollDone'
+  | 'paused'
   | 'error';
 
 const DRAWN: ReadonlySet<string> = new Set<ShownScreen>([
@@ -33,6 +34,7 @@ const DRAWN: ReadonlySet<string> = new Set<ShownScreen>([
   'results',
   'poll',
   'pollDone',
+  'paused',
   'error',
 ]);
 

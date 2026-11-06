@@ -7,5 +7,8 @@ namespace FamilyQuiz.Net.Protocol
     {
         /// <summary>Text of what was locked, for example "B · Danube".</summary>
         [JsonProperty("locked")] public string Locked { get; set; }
+
+        /// <summary>The rating card in Reveal and Scores (D109), or null.</summary>
+        [JsonProperty("rate", NullValueHandling = NullValueHandling.Ignore)] public RateDto Rate { get; set; }
     }
 }

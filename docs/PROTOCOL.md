@@ -1,6 +1,6 @@
 # PROTOCOL.md
 
-Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; avatar renamed to character in `decisions/0005_staging_answers.md`, version unchanged because nothing was built yet; the phone became input only in `decisions/0013_day3_answers.md` (D88), version 2 because screen fields and screens were removed). Protocol version: **2**.
+Status: Done for game night 1 (Nov 2, 2026; revised after the spec review, `decisions/0002_spec_review.md`; avatar renamed to character in `decisions/0005_staging_answers.md`, version unchanged because nothing was built yet; the phone became input only in `decisions/0013_day3_answers.md` (D88), version 2 because screen fields and screens were removed; the pause and question feedback additions of `decisions/0018_pause_menu_and_question_feedback.md` (Nov 6, 2026) keep version 2). Protocol version: **2**.
 
 The single source of truth for every message between the phone page, the relay and the TV app. Both sides are checked against this file. Changing it requires asking Ilia first (`CLAUDE.md`).
 
@@ -124,10 +124,17 @@ The TV app starts and stops the countdown itself, never on a tap alone (D76): in
 | `trueFalse` | `answer` (true or false), `ms` | `{"v":2,"type":"input","inputId":"a4","phaseId":80,"kind":"trueFalse","answer":true,"ms":2100}` |
 | `powerUp` | `powerUp` (`freeze`, `slime`, `fog`), `target` (playerId) | During Reveal and Scores (one phaseId) |
 | `effectCleared` | `effect`, `ms` (time to clear) | When a sabotage overlay is cleared, for telemetry |
+| `rate` | `item` (an id from the screen's `rate.items`), `stars` (1 to 5) | A tap on the rating card in Reveal and Scores (one phaseId), while question feedback is on (D109). Example: `{"v":2,"type":"input","inputId":"r1","phaseId":17,"kind":"rate","item":"fun","stars":4}` |
 
 - `inputId`: a short random string made by the phone, unique per input. Resends use the same id; the TV app answers a duplicate with the same `ack` and does not apply it twice.
 - `phaseId`: the id from the `screen` message the input answers. An input with an old `phaseId` is refused with reason `stale`.
-- `ms`: milliseconds from the moment the options appeared on this phone to the tap, measured with `performance.now()`. The clock starts when the options appear, sabotage or not: a sabotage overlay never pauses it. So sabotage costs time, which can cost some speed points (about 100), but never takes points away directly. A new `screen` with the same `phaseId` (last call) does not restart the clock. After a page reload the clock starts when the restored screen is drawn.
+- `ms`: milliseconds from the moment the options appeared on this phone to the tap, measured with `performance.now()`, minus the time this phone showed the `paused` screen in between (D112). The clock starts when the options appear, sabotage or not: a sabotage overlay never pauses it. So sabotage costs time, which can cost some speed points (about 100), but never takes points away directly. A new `screen` with the same `phaseId` (last call) does not restart the clock. After a page reload the clock starts when the restored screen is drawn.
+
+### `rate` inputs
+
+- Accepted only in the Reveal and Scores of a round question (not the race) while question feedback is on, with the `phaseId` of that screen; otherwise `stale`, `closed` (the Scores just ended) or `invalid` (feedback off, unknown item, stars not a whole number from 1 to `feedback.stars`).
+- A later tap on the same item replaces the earlier one; the TV keeps the latest per player and item and logs every accepted tap.
+- Closing the card sends nothing.
 
 ### `poll` answers
 
@@ -180,6 +187,8 @@ All texts are already in the player's language. Screens not listed have `data: {
 
 The phone is an input device (D88): it shows a screen with a decision (join, character, Ready, a vote, an answer, a power up pick, the poll, settings) and `watch` the rest of the time. Questions, statements, results, ranks, scores and the race track are on the TV only.
 
+While the game is paused (the pause menu on the laptop, D105) every phone gets `paused` with the current `phaseId`, whatever the phase; a phone that joins or reloads meanwhile gets it too. On Continue every phone gets its current screen again with the same `phaseId` and a fresh `endsInMs`.
+
 Which screen each phase sends: Lobby `lobby` (or `join`, `pickCharacter`), StartCountdown `countdown`, Intro `watch`, TopicVote `topicVote` then `waiting`, QuestionShow `watch`, Answer the answer screen then `waiting`, Reveal and Scores `watch` (or `result` with a power up), RoundEnd `watch`, FinalIntro `watch`, RaceQuestion `answerTrueFalse` then `waiting`, RaceReveal `watch`, Results `results` to the winner and `watch` to everyone else, Poll `poll` then `pollDone`.
 
 | id | data |
@@ -187,16 +196,39 @@ Which screen each phase sends: Lobby `lobby` (or `join`, `pickCharacter`), Start
 | `lobby` | `players`: list of `{playerId, name, characterId, ready}` (`ready`: bool), `ready` (bool: this player is ready), `enoughPlayers` (bool: `players.min` or more players connected) |
 | `pickCharacter` | `taken`: list of character ids taken by other players, `current`: this player's character id |
 | `countdown` | `text` (`endsInMs` carries the countdown) |
-| `watch` | none: "look at the TV" between inputs (D88) |
+| `watch` | none: "look at the TV" between inputs (D88). In Reveal and Scores it may carry `rate` (below) |
 | `topicVote` | `doors`: list of 4 `{title}` |
 | `answerChoice` | `options`: list of 4 strings in display order, `windowMs` (the player's personal window). The question is on the TV only |
 | `answerSlider` | `min`, `max`, `step`, `unit`, `windowMs`. The question is on the TV only |
 | `answerTrueFalse` | `windowMs`. The statement is on the TV only |
-| `waiting` | `locked`: text of what was locked |
-| `result` | `powerUp`, `targets`: list of `{playerId, name, available}`. Sent in Reveal and Scores only to a player holding a power up (power ups come on Day 4); everyone else gets `watch` |
+| `waiting` | `locked`: text of what was locked. In Reveal and Scores it may carry `rate` |
+| `result` | `powerUp`, `targets`: list of `{playerId, name, available}`. Sent in Reveal and Scores only to a player holding a power up (power ups come on Day 4); everyone else gets `watch`. May carry `rate` |
 | `results` | `fact`: the winner's reward fact (D87). Sent only to the winner; everyone else gets `watch` |
 | `poll` | `questions`: list of `{id, text, kind, options}` (kinds in `15_schemas.md`) |
+| `paused` | `text`: "the game is paused" in the player's language (D105) |
 | `error` | `text` |
+
+#### The optional `rate` field (D109)
+
+While question feedback is on, the `watch`, `waiting` and `result` screens of Reveal and Scores of a round question carry `rate`; the phone draws the rating card over the screen. Without `rate` there is no card.
+
+```json
+"rate": {
+  "questionId": "films_old_001",
+  "title": "Оцени вопрос",
+  "close": "Закрыть",
+  "stars": 5,
+  "items": [
+    { "id": "fun", "text": "Понравился вопрос?", "low": "Скучно", "high": "Отлично", "given": 4 },
+    { "id": "guess", "text": "Можно было догадаться, не зная?", "low": "Никак", "high": "Легко", "given": 0 },
+    { "id": "fact", "text": "Интересный ответ?", "low": "Ну и что", "high": "Вау!", "given": 0 }
+  ]
+}
+```
+
+- `stars`: how many stars a row has (`feedback.stars`, 5). The leftmost star is 1, the rightmost is `stars`.
+- `given`: this player's latest accepted rating for the item, 0 if none (so a reloaded page shows its stars).
+- `questionId`: the phone keeps the card closed for the rest of this question once the player closes it, and shows it again for the next question.
 
 Characters come from `content/characters.json` (name and personality line in both languages, signature color); the phone page bundles a copy of that file at build time.
 

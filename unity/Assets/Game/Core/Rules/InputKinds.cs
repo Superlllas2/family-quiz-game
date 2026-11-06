@@ -9,5 +9,6 @@ namespace FamilyQuiz.Core.Rules
         public const string TrueFalse = "trueFalse";
         public const string PowerUp = "powerUp";
         public const string EffectCleared = "effectCleared";
+        public const string Rate = "rate";
     }
 }

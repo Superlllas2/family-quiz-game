@@ -5,6 +5,7 @@ namespace FamilyQuiz.Core.Events
     {
         public const string ReasonFinished = "finished";
         public const string ReasonBackToLobby = "backToLobby";
+        public const string ReasonRestart = "restart";
 
         public GameEnded(int game, string reason, string winnerId, long durationMs)
         {

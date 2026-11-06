@@ -37,6 +37,8 @@ namespace FamilyQuiz.Presentation
         private PollView _poll;
         private HostBubblesView _hosts;
         private TvSettingsPanel _settings;
+        private TvPauseMenu _pauseMenu;
+        private Action<IGameCommand> _send;
         private GameObject _relayBannerRoot;
         private TextMeshProUGUI _relayBanner;
         private TextMeshProUGUI _contentError;
@@ -95,6 +97,7 @@ namespace FamilyQuiz.Presentation
         /// </summary>
         public void SetCommandSink(Action<IGameCommand> send)
         {
+            _send = send;
             _settings.SetCommandSink(send);
         }
 
@@ -118,6 +121,7 @@ namespace FamilyQuiz.Presentation
             HideViews();
             _hosts.HideAll();
             _settings.SetOpen(false);
+            _pauseMenu.SetOpen(false);
             _relayBannerRoot.SetActive(false);
             var title = _context.Has("tv.error.content") ? _context.T("tv.error.content") + "\n\n" : string.Empty;
             _contentError.text = title + message;
@@ -161,6 +165,10 @@ namespace FamilyQuiz.Presentation
                     case PollSubmitted _:
                         if (_phase == GamePhase.Poll) _poll.Refresh();
                         break;
+                    case GamePaused _:
+                    case GameResumed _:
+                        break; // the menu follows GameState.Paused below
+
                     case SettingsChanged _:
                         Relabel();
                         dirty = true;
@@ -176,6 +184,8 @@ namespace FamilyQuiz.Presentation
             }
 
             if (dirty) RefreshCurrent();
+            // The pause menu (D105) is up exactly while the game is paused; New game hides in the Lobby.
+            _pauseMenu.SetOpen(_context.Game.State.Paused);
             // Settings, the running game's copy (GameStarted, GameEnded), seen questions: whatever changed shows at once.
             if (_settings.IsOpen) _settings.Refresh();
         }
@@ -185,6 +195,7 @@ namespace FamilyQuiz.Presentation
             if (_broken || _context.Game == null) return;
             var keyboard = Keyboard.current;
             if (keyboard != null && keyboard.tabKey.wasPressedThisFrame) _settings.Toggle();
+            if (keyboard != null && keyboard.escapeKey.wasPressedThisFrame) OnEscape();
             _hosts.Tick();
             switch (_phase)
             {
@@ -212,6 +223,41 @@ namespace FamilyQuiz.Presentation
                     _race.Tick();
                     break;
             }
+        }
+
+        /// <summary>Escape (decisions/0018, D105, D106): pause, close the settings opened from the pause menu, or resume.</summary>
+        private void OnEscape()
+        {
+            switch (EscapeKey.For(_context.Game.State.Paused, _settings.IsOpen))
+            {
+                case EscapeKey.Action.Pause:
+                    _settings.SetOpen(false);
+                    _send?.Invoke(new PauseGame());
+                    break;
+                case EscapeKey.Action.CloseSettings:
+                    _settings.SetOpen(false);
+                    break;
+                case EscapeKey.Action.Resume:
+                    _send?.Invoke(new ResumeGame());
+                    break;
+            }
+        }
+
+        private void OnPauseContinue()
+        {
+            _settings.SetOpen(false);
+            _send?.Invoke(new ResumeGame());
+        }
+
+        private void OnPauseNewGame()
+        {
+            _settings.SetOpen(false);
+            _send?.Invoke(new RestartGame());
+        }
+
+        private void OnPauseSettings()
+        {
+            _settings.SetOpen(true);
         }
 
         private void Enter(GamePhase phase)
@@ -309,6 +355,7 @@ namespace FamilyQuiz.Presentation
         private void Relabel()
         {
             _lobby.Relabel();
+            if (_pauseMenu != null && _pauseMenu.IsOpen) _pauseMenu.Refresh();
             _relayBanner.text = _context.T("tv.error.relayDown");
         }
 
@@ -379,6 +426,8 @@ namespace FamilyQuiz.Presentation
             UiBuilder.Anchor(_relayBanner.rectTransform, 0.02f, 0, 0.98f, 1);
             _relayBannerRoot = banner.gameObject;
 
+            // The pause menu under the settings panel, so Settings in the menu opens the panel over it (D106).
+            _pauseMenu = TvPauseMenu.Create(root, _context, OnPauseContinue, OnPauseNewGame, OnPauseSettings);
             _settings = TvSettingsPanel.Create(root, _context);
             _toggleFile = new StudioToggleFile(System.IO.Path.Combine(Application.persistentDataPath, StudioToggleFile.FileName));
             _stage = StudioStage.Create(_context, OnStudioVisible);

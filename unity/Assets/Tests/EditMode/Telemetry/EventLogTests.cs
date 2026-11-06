@@ -355,6 +355,27 @@ namespace FamilyQuiz.Tests.EventLog
         }
 
         [Test]
+        public void RatingAndPauseLines()
+        {
+            // decisions/0018, D111: one questionRated line per accepted tap; gamePaused and gameResumed.
+            _log.OnEvents(new IGameEvent[]
+            {
+                new QuestionRated("p2", "films_old_001", "films_old", "multipleChoice", "easy", "fun", 4, true, 17),
+                new QuestionRated("p3", "films_old_001", "films_old", "multipleChoice", "easy", "fact", 2, null, 17),
+                new GamePaused(GamePhase.Answer, 18),
+                new GameResumed(GamePhase.Answer, 18)
+            });
+            var lines = Lines();
+            Assert.That(lines.Count, Is.EqualTo(4));
+            AssertBody("{'event':'questionRated','playerId':'p2','questionId':'films_old_001','topic':'films_old',"
+                       + "'format':'multipleChoice','difficulty':'easy','item':'fun','stars':4,'phaseId':17,'correct':true}", lines[0]);
+            AssertBody("{'event':'questionRated','playerId':'p3','questionId':'films_old_001','topic':'films_old',"
+                       + "'format':'multipleChoice','difficulty':'easy','item':'fact','stars':2,'phaseId':17,'correct':null}", lines[1]);
+            AssertBody("{'event':'gamePaused','phase':'Answer','phaseId':18}", lines[2]);
+            AssertBody("{'event':'gameResumed','phase':'Answer','phaseId':18}", lines[3]);
+        }
+
+        [Test]
         public void ThePollLineHasNoPlayerId()
         {
             var answers = new List<KeyValuePair<string, object>>

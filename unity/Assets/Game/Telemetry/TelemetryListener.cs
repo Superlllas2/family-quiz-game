@@ -33,6 +33,9 @@ namespace FamilyQuiz.Telemetry
         public const string EventEffectCleared = "effectCleared";
         public const string EventHostLine = "hostLine";
         public const string EventPoll = "poll";
+        public const string EventQuestionRated = "questionRated";
+        public const string EventGamePaused = "gamePaused";
+        public const string EventGameResumed = "gameResumed";
 
         /// <summary>playerLeft.reason when the phone went away and the seat is still held.</summary>
         public const string ReasonDisconnected = "disconnected";
@@ -274,6 +277,30 @@ namespace FamilyQuiz.Telemetry
                     _writer.Write(EventPoll, new JObject { ["answers"] = answers });
                     break;
                 }
+                case QuestionRated rated:
+                {
+                    // One line per accepted tap (decisions/0018, D111); the latest per player and item counts.
+                    var fields = new JObject
+                    {
+                        ["playerId"] = rated.PlayerId,
+                        ["questionId"] = rated.QuestionId,
+                        ["topic"] = rated.Topic,
+                        ["format"] = rated.Format,
+                        ["difficulty"] = rated.Difficulty,
+                        ["item"] = rated.Item,
+                        ["stars"] = rated.Stars,
+                        ["phaseId"] = rated.PhaseId
+                    };
+                    fields["correct"] = rated.Correct.HasValue ? (JToken)rated.Correct.Value : JValue.CreateNull();
+                    _writer.Write(EventQuestionRated, fields);
+                    break;
+                }
+                case GamePaused paused:
+                    _writer.Write(EventGamePaused, new JObject { ["phase"] = paused.Phase.ToString(), ["phaseId"] = paused.PhaseId });
+                    break;
+                case GameResumed resumed:
+                    _writer.Write(EventGameResumed, new JObject { ["phase"] = resumed.Phase.ToString(), ["phaseId"] = resumed.PhaseId });
+                    break;
                 case GameEnded ended:
                 {
                     var fields = new JObject

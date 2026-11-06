@@ -20,6 +20,7 @@ namespace FamilyQuiz.Core
         private readonly InputRules _inputs;
         private readonly SettingsRules _settings;
         private readonly TvSettingsRules _tvSettings;
+        private readonly PauseRules _pause;
         private readonly ShowDirector _director;
         private bool _started;
 
@@ -47,6 +48,8 @@ namespace FamilyQuiz.Core
             _inputs = new InputRules(State, _director, content.Characters);
             _settings = new SettingsRules(State, Config);
             _tvSettings = new TvSettingsRules(State);
+            _pause = new PauseRules(State);
+            State.FeedbackEnabled = Config.Feedback.Enabled;
         }
 
         public GameState State { get; }
@@ -76,6 +79,9 @@ namespace FamilyQuiz.Core
             if (!end.HasValue) return null;
             return Math.Max(0, end.Value - _clock.NowMs);
         }
+
+        /// <summary>The rating card is up (decisions/0018, D109): feedback on, Reveal or Scores of a round question.</summary>
+        public bool RatingOpen => _director.RatingOpen;
 
         /// <summary>The power up pick window is open (Reveal or Scores of a round question but the last one, power ups on).</summary>
         public bool PickWindowOpen => _director.PickWindowOpen;
@@ -176,6 +182,13 @@ namespace FamilyQuiz.Core
                 case SubmitPoll c: _inputs.Poll(c, output); break;
                 case ChangeTvSettings c: _tvSettings.Change(c, output); break;
                 case BackToLobby _: if (_started) _director.BackToLobby(output); break;
+                case PauseGame _: _pause.Pause(output); break;
+                case ResumeGame _: _pause.Resume(output); break;
+                case RestartGame _:
+                    _pause.Resume(output);
+                    if (_started) _director.Restart(output);
+                    break;
+                case RateQuestion c: _inputs.Rate(c, output); break;
             }
 
             if (_started) _director.Reevaluate(output);

@@ -1,11 +1,13 @@
-// Screens without a decision (06, D88): `watch` between inputs, `waiting` after one, `results` for the winner, and a
-// TV sent `error`. Texts come from the TV's screen data or the locales. None of them uses hooks, so tests can call them
+// Screens without a decision (06, D88): `watch` between inputs, `waiting` after one, `results` for the winner, a TV
+// sent `error`, and `paused` while the pause menu is open on the laptop (D105). Texts come from the TV's screen data or the locales. None of them uses hooks, so tests can call them
 // as plain functions.
 
 import { characterColor } from '../characters';
 import { t } from '../i18n';
-import { resultsData, textData, waitingData, type Lang, type PlayerView, type ScreenState } from '../protocol';
-import { TvPiece } from './Icons';
+import {
+  pausedData, resultsData, textData, waitingData, type Lang, type PlayerView, type ScreenState,
+} from '../protocol';
+import { PauseToken, TvPiece } from './Icons';
 
 interface Props { lang: Lang; screen: ScreenState }
 
@@ -59,6 +61,22 @@ export function TvErrorScreen(props: Props) {
   return (
     <div class="body center">
       <p class="big-text note-card">{textData(props.screen.data).text}</p>
+    </div>
+  );
+}
+
+/**
+ * `paused` (D105): drawn over the whole game while the pause menu is open on the laptop. Nothing to tap. The text comes
+ * from the TV, already in the player's language; the phone's own "paused" only if it is missing.
+ */
+export function PausedScreen(props: { lang: Lang; screen: ScreenState }) {
+  const { text } = pausedData(props.screen.data);
+  return (
+    <div class="overlay paused" role="status">
+      <div class="screen center">
+        <PauseToken />
+        <p class="big-text note-card">{text || t(props.lang, 'paused.text')}</p>
+      </div>
     </div>
   );
 }

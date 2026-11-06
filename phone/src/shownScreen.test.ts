@@ -5,7 +5,7 @@ describe('which screen the phone draws for a TV screen id (06, D88)', () => {
   it('draws every version 2 screen it has a view for', () => {
     for (const id of [
       'pickCharacter', 'lobby', 'countdown', 'watch', 'topicVote', 'answerChoice', 'answerSlider', 'answerTrueFalse',
-      'waiting', 'result', 'results', 'poll', 'pollDone', 'error',
+      'waiting', 'result', 'results', 'poll', 'pollDone', 'paused', 'error',
     ]) {
       expect(shownScreen(id), id).toBe(id);
     }

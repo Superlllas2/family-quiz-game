@@ -429,6 +429,73 @@ namespace FamilyQuiz.Core.Show
             ReturnToLobby(now, output);
         }
 
+        /// <summary>
+        /// New game from the pause menu (decisions/0018, D107): the running game is abandoned (gameEnded reason restart)
+        /// and everyone returns to the Lobby as with Back to lobby; then every connected player with a character is
+        /// marked ready, so <see cref="Reevaluate"/> starts the countdown at once when players.min or more are connected.
+        /// Nothing happens in the Lobby.
+        /// </summary>
+        public void Restart(List<IGameEvent> output)
+        {
+            if (_state.Phase == GamePhase.Lobby) return;
+            long now = Now;
+            output.Add(new SettingsChanged(SettingsChanged.SourceTv, null, SettingsChanged.SettingNewGame, "true"));
+            if (_state.Question != null && _state.Phase == GamePhase.Answer) _state.Question.AnswerClosed = true;
+            EndPhase(PhaseEndReasons.Abandoned, now, output);
+            if (_state.GameRunning)
+            {
+                _state.GameRunning = false;
+                output.Add(new GameEnded(_state.GameNumber, GameEnded.ReasonRestart, null, now - _state.GameStartedAtMs));
+            }
+
+            ReturnToLobby(now, output);
+            foreach (var p in _state.Players)
+            {
+                if (!p.Connected || !p.CharacterPicked || p.Ready) continue;
+                p.Ready = true;
+                output.Add(new ReadyChanged(p.PlayerId, true));
+            }
+        }
+
+        // ---------------------------------------------------------------- question feedback (decisions/0018)
+
+        /// <summary>
+        /// The rating card is up: question feedback is on and this is the Reveal or Scores of a round question (the race
+        /// has its own phases, so it never gets a card).
+        /// </summary>
+        public bool RatingOpen =>
+            _state.FeedbackEnabled && _state.Question != null &&
+            (_state.Phase == GamePhase.Reveal || _state.Phase == GamePhase.Scores);
+
+        /// <summary>
+        /// Why a rating tap is refused, or null: wrong phaseId (stale, or closed for the Scores that just ended), no card
+        /// up, an item not in feedback.items or stars that are not a whole number from 1 to feedback.stars (invalid).
+        /// </summary>
+        public string CheckRating(PlayerState player, RateQuestion cmd)
+        {
+            if (cmd.PhaseId != _state.PhaseId)
+                return _closedPickPhaseId != 0 && cmd.PhaseId == _closedPickPhaseId ? AckReasons.Closed : AckReasons.Stale;
+            if (!RatingOpen) return AckReasons.Invalid;
+            if (cmd.Item == null || !_config.Feedback.Items.Contains(cmd.Item)) return AckReasons.Invalid;
+            if (!cmd.Stars.HasValue) return AckReasons.Invalid;
+            double stars = cmd.Stars.Value;
+            if (stars < 1 || stars > _config.Feedback.Stars || Math.Abs(stars - Math.Round(stars)) > 1e-9) return AckReasons.Invalid;
+            return null;
+        }
+
+        /// <summary>Keeps a rating that <see cref="CheckRating"/> accepted; a later tap on the same item replaces it.</summary>
+        public void ApplyRating(PlayerState player, RateQuestion cmd, List<IGameEvent> output)
+        {
+            var question = _state.Question;
+            int stars = (int)Math.Round(cmd.Stars.Value);
+            question.SetRating(player.PlayerId, cmd.Item, stars);
+            var turn = player.Turn;
+            bool? correct = turn != null && turn.Locked ? turn.Correct : (bool?)null;
+            var def = question.Def;
+            output.Add(new QuestionRated(player.PlayerId, def.Id, def.Topic, def.Format, def.Difficulty, cmd.Item, stars, correct,
+                _state.PhaseId));
+        }
+
         // ---------------------------------------------------------------- the clock
 
         /// <summary>True in the phases where players answer with personal deadlines: Answer and RaceQuestion.</summary>

@@ -115,3 +115,112 @@ describe('answer clock across games and TV restarts (phaseIds start again at 1)'
     expect(clock.ms(13)).toBe(1000);
   });
 });
+
+describe('answer clock and the pause (D112)', () => {
+  it('leaves out the time the phone showed paused', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    clock.shown(16);
+    now = 3000;
+    clock.pauseBegan();
+    now = 63000;
+    clock.pauseEnded();
+    clock.arrived(16); // the TV re-sends the answer screen with the same phaseId
+    clock.shown(16);
+    now = 64500;
+    expect(clock.ms(16)).toBe(4500);
+  });
+
+  it('a tap read while still paused leaves out the pause so far', () => {
+    let now = 1000;
+    const clock = new AnswerClock(() => now);
+    clock.shown(16);
+    now = 2000;
+    clock.pauseBegan();
+    now = 9000;
+    expect(clock.ms(16)).toBe(1000);
+  });
+
+  it('two pauses add up, and a second paused screen does not restart the pause', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    clock.shown(31);
+    now = 1000;
+    clock.pauseBegan();
+    now = 5000;
+    clock.pauseBegan(); // a paused screen again (a reconnect while paused)
+    now = 11000;
+    clock.pauseEnded();
+    now = 12000;
+    clock.pauseBegan();
+    now = 20000;
+    clock.pauseEnded();
+    now = 21000;
+    expect(clock.ms(31)).toBe(3000);
+  });
+
+  it('a pause before the options appeared costs nothing and is not left out twice', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    clock.pauseBegan();
+    now = 10000;
+    clock.pauseEnded();
+    clock.shown(16);
+    now = 12000;
+    expect(clock.ms(16)).toBe(2000);
+  });
+
+  it('options that appear during a pause measure from the end of the pause', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    clock.pauseBegan();
+    now = 4000;
+    clock.shown(16);
+    now = 9000;
+    clock.pauseEnded();
+    now = 9500;
+    expect(clock.ms(16)).toBe(500);
+  });
+
+  it('ending a pause that never began changes nothing', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    clock.shown(16);
+    now = 2000;
+    clock.pauseEnded();
+    expect(clock.ms(16)).toBe(2000);
+  });
+
+  it('another phaseId after the pause starts fresh', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    clock.shown(16);
+    clock.pauseBegan();
+    now = 30000;
+    clock.pauseEnded();
+    clock.arrived(17);
+    clock.shown(17);
+    now = 31000;
+    expect(clock.ms(17)).toBe(1000);
+    expect(clock.ms(16)).toBe(0);
+  });
+
+  it('reset forgets a pause in progress', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    clock.pauseBegan();
+    clock.reset();
+    now = 5000;
+    clock.shown(4);
+    now = 6000;
+    expect(clock.ms(4)).toBe(1000);
+  });
+
+  it('the paused screen itself starts no clock', () => {
+    let now = 0;
+    const clock = new AnswerClock(() => now);
+    screenDrawn(clock, { phaseId: 16, id: 'paused', endsInMs: null, data: { text: 'Paused' } });
+    now = 1000;
+    expect(clock.ms(16)).toBe(0);
+  });
+});

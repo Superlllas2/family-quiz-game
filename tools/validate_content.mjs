@@ -127,7 +127,7 @@ const REQUIRED = [
   "powerUps.slime.blobs", "powerUps.fog.seconds", "race.maxHeadStart", "race.finishSteps", "race.maxQuestions",
   "race.stepsPerCorrect", "race.answer", "race.reveal", "players.min", "players.max", "players.timerMultiplierOptions",
   "players.seatHoldSeconds", "lobby.startCountdownSeconds", "net.inputGraceMs", "net.tvReconnectSeconds",
-  "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds",
+  "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds", "feedback.enabled", "feedback.stars", "feedback.items",
   "staging.extraSeconds.questionShow", "staging.extraSeconds.reveal", "staging.extraSeconds.scores",
   "staging.extraSeconds.roundEnd", "staging.lobby.seatPopSeconds", "staging.intro.establishSeconds",
   "staging.intro.lightsUpSeconds", "staging.questionShow.curtainOpenSeconds", "staging.questionShow.questionInSeconds",
@@ -196,6 +196,12 @@ else for (const [k, v] of Object.entries(ui)) {
   if (!/^(tv|screen)(\.[a-z][a-zA-Z0-9]*)+$/.test(k)) err("ui_strings.json", k, "key must start with tv. or screen. and use dotted lower camel case");
   if (!isLoc(v) || !v.ru.trim() || !v.en.trim()) err("ui_strings.json", k, "must have non empty ru and en");
   else if (holes(v.ru) !== holes(v.en)) err("ui_strings.json", k, "placeholders differ between ru and en");
+}
+// Question feedback (decisions/0018, D110): every rating item has its row texts.
+for (const item of cfg.feedback?.items ?? []) {
+  for (const part of ["text", "low", "high"]) {
+    if (!ui?.[`screen.rate.${item}.${part}`]) err("ui_strings.json", `screen.rate.${item}.${part}`, "missing: feedback.items lists this item");
+  }
 }
 
 // Coverage report for game night 1

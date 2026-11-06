@@ -43,6 +43,12 @@ namespace FamilyQuiz.Core.Rules
                 if (after != before) Changed(SettingsChanged.SettingPowerUpTypes, after, output);
             }
 
+            if (cmd.FeedbackEnabled.HasValue && cmd.FeedbackEnabled.Value != _state.FeedbackEnabled)
+            {
+                _state.FeedbackEnabled = cmd.FeedbackEnabled.Value;
+                Changed(SettingsChanged.SettingFeedback, cmd.FeedbackEnabled.Value ? "true" : "false", output);
+            }
+
             if (TargetingModes.IsValid(cmd.Targeting) && cmd.Targeting != pending.Targeting)
             {
                 pending.Targeting = cmd.Targeting;

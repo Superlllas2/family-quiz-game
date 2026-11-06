@@ -46,3 +46,9 @@ export const SLIME_WIPE_SHARE = 0.6;
 
 /** Poll: the longest answer to a text question (PROTOCOL.md section 3, `poll` answers). */
 export const POLL_TEXT_MAX = 200;
+
+/**
+ * Rating card (D109): stars per row if the screen's `rate` does not say. The TV app sends the real count from
+ * content/config.json `feedback.stars`.
+ */
+export const DEFAULT_RATE_STARS = 5;

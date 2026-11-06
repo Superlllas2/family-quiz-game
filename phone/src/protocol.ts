@@ -1,7 +1,9 @@
 // Message types and builders for the phone side of docs/PROTOCOL.md (protocol version 2).
 // The phone sends and receives the inner messages only; there is no envelope between relay and phone.
 
-import { DEFAULT_FOG_SECONDS, DEFAULT_FREEZE_TAPS, DEFAULT_SLIME_BLOBS, PROTOCOL_VERSION } from './constants';
+import {
+  DEFAULT_FOG_SECONDS, DEFAULT_FREEZE_TAPS, DEFAULT_RATE_STARS, DEFAULT_SLIME_BLOBS, PROTOCOL_VERSION,
+} from './constants';
 
 export type Lang = 'ru' | 'en';
 
@@ -42,10 +44,14 @@ export interface PowerUpInputMessage {
 export interface EffectClearedInputMessage {
   v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'effectCleared'; effect: PowerUpKind; ms: number;
 }
+/** A tap on the rating card (D109): `stars` (1 to the card's `stars`) for one item of `rate.items`. */
+export interface RateInputMessage {
+  v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'rate'; item: string; stars: number;
+}
 /** Every `input` kind the phone sends (PROTOCOL.md section 3, `input` kinds). */
 export type InputMessage =
   | ChoiceInputMessage | VoteInputMessage | ValueInputMessage | TrueFalseInputMessage
-  | PowerUpInputMessage | EffectClearedInputMessage;
+  | PowerUpInputMessage | EffectClearedInputMessage | RateInputMessage;
 export interface LobbyMessage { v: 2; type: 'lobby'; inputId: string; action: LobbyAction }
 export interface CharacterMessage { v: 2; type: 'character'; inputId: string; characterId: number }
 /** No inputId and no ack (PROTOCOL.md section 3). */
@@ -123,6 +129,13 @@ export function effectClearedInputMessage(
   inputId: string, phaseId: PhaseId, effect: PowerUpKind, ms: number,
 ): EffectClearedInputMessage {
   return { v, type: 'input', inputId, phaseId, kind: 'effectCleared', effect, ms };
+}
+
+/** One tap on the rating card in Reveal and Scores (D109); a later tap on the same item is a new input. */
+export function rateInputMessage(
+  inputId: string, phaseId: PhaseId, item: string, stars: number,
+): RateInputMessage {
+  return { v, type: 'input', inputId, phaseId, kind: 'rate', item, stars };
 }
 
 export function pollMessage(inputId: string, answers: PollAnswers): PollMessage {
@@ -453,4 +466,54 @@ export function pollData(data: Record<string, unknown>): { questions: PollQuesti
 /** Screen `results`, sent only to the winner: the reward fact, already in the player's language (D87). */
 export function resultsData(data: Record<string, unknown>): { fact: string } {
   return { fact: str(data.fact) };
+}
+
+/** Screen `paused` (D105): "the game is paused", already in the player's language. */
+export function pausedData(data: Record<string, unknown>): { text: string } {
+  return { text: str(data.text) };
+}
+
+export interface RateItem {
+  id: string;
+  /** The question asked about it, already in the player's language. */
+  text: string;
+  /** The labels under the first and the last star. */
+  low: string;
+  high: string;
+  /** This player's latest accepted rating, 0 if none. */
+  given: number;
+}
+
+export interface RateData {
+  questionId: string;
+  title: string;
+  /** The close button's label. */
+  close: string;
+  /** Stars per row: the leftmost is 1, the rightmost is `stars`. */
+  stars: number;
+  items: RateItem[];
+}
+
+/** The screens that may carry `rate` (PROTOCOL.md section 4, D109). */
+const RATED_SCREENS: readonly string[] = ['watch', 'waiting', 'result'];
+
+/**
+ * The optional `rate` field of `watch`, `waiting` and `result` (D109): the rating card to draw over the screen. Null
+ * for any other screen, without `rate`, without a question id or without an item: then there is no card. An item
+ * without an id is left out; a `given` that is not a whole number from 1 to `stars` reads as 0.
+ */
+export function rateData(screen: ScreenState): RateData | null {
+  if (!RATED_SCREENS.includes(screen.id)) return null;
+  const r = screen.data.rate;
+  if (!isObj(r) || typeof r.questionId !== 'string' || r.questionId === '') return null;
+  const stars = count(r.stars, DEFAULT_RATE_STARS);
+  const items: RateItem[] = [];
+  for (const it of list(r.items)) {
+    if (!isObj(it) || typeof it.id !== 'string' || it.id === '') continue;
+    const g = it.given;
+    const given = typeof g === 'number' && Number.isInteger(g) && g >= 1 && g <= stars ? g : 0;
+    items.push({ id: it.id, text: str(it.text), low: str(it.low), high: str(it.high), given });
+  }
+  if (items.length === 0) return null;
+  return { questionId: r.questionId, title: str(r.title), close: str(r.close), stars, items };
 }

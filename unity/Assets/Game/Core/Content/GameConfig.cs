@@ -47,6 +47,9 @@ namespace FamilyQuiz.Core.Content
         [JsonProperty("poll", Required = Required.Always)]
         public PollConfig Poll { get; set; }
 
+        [JsonProperty("feedback", Required = Required.Always)]
+        public FeedbackConfig Feedback { get; set; }
+
         [JsonProperty("staging", Required = Required.Always)]
         public StagingConfig Staging { get; set; }
     }

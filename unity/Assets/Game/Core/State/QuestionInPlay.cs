@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using FamilyQuiz.Core.Content;
 
 namespace FamilyQuiz.Core.State
@@ -5,6 +6,8 @@ namespace FamilyQuiz.Core.State
     /// <summary>The question of the current question cycle, with its shuffled option order (docs/04_formats.md).</summary>
     public sealed class QuestionInPlay
     {
+        private readonly Dictionary<string, int> _ratings = new Dictionary<string, int>();
+
         internal QuestionInPlay(QuestionDef def, int number, int slot, int roundIndex, double multiplier, int[] displayOrder)
         {
             Def = def;
@@ -63,6 +66,17 @@ namespace FamilyQuiz.Core.State
 
         /// <summary>True once the Answer phase has ended; inputs for it are then "closed".</summary>
         public bool AnswerClosed { get; internal set; }
+
+        /// <summary>The latest stars this player gave this item of the rating card (decisions/0018, D109), 0 if none.</summary>
+        public int GivenRating(string playerId, string item)
+        {
+            return _ratings.TryGetValue(playerId + "\n" + item, out var stars) ? stars : 0;
+        }
+
+        internal void SetRating(string playerId, string item, int stars)
+        {
+            _ratings[playerId + "\n" + item] = stars;
+        }
 
         public string OptionText(int displayIndex, string lang)
         {

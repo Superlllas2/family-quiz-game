@@ -12,7 +12,7 @@ namespace FamilyQuiz.Presentation
     /// The TV settings panel (docs/02_show_flow.md, "TV settings panel"; docs/13_architecture.md): opened and closed with
     /// Tab on the laptop, used with the mouse, never pausing anything. Game language RU or EN (at once), power ups on or
     /// off, each type on or off and targeting (from the next game, with a note while they differ from the running game),
-    /// the 3D studio on or off (this laptop only, at once),
+    /// the 3D studio on or off (this laptop only, at once), question feedback on or off (at once, decisions/0018 D108),
     /// Reset seen questions and Back to lobby. It shows the pending values and sends commands through the sink like any
     /// other input; it never changes state itself.
     /// </summary>
@@ -25,7 +25,7 @@ namespace FamilyQuiz.Presentation
         public const double BackToLobbyConfirmSeconds = 4;
 
         private const float PanelWidth = 860f;
-        private const float PanelHeight = 960f;
+        private const float PanelHeight = 1000f;
         private const float EdgeMargin = 24f;
         private const float Padding = 32f;
         private const float TitleSize = 52f;
@@ -34,7 +34,7 @@ namespace FamilyQuiz.Presentation
         private const float NoteSize = 24f;
         private const float ButtonLabelSize = 32f;
         private const float RowsTop = 110f;
-        private const float RowStep = 88f;
+        private const float RowStep = 82f;
         private const float LabelWidth = 360f;
         private const float ButtonWidth = 204f;
         private const float ButtonGap = 8f;
@@ -67,6 +67,9 @@ namespace FamilyQuiz.Presentation
         private PanelButton _studioOff;
         private Func<bool> _studioIsOn;
         private Action<bool> _setStudio;
+        private TextMeshProUGUI _feedbackLabel;
+        private PanelButton _feedbackOn;
+        private PanelButton _feedbackOff;
         private PanelButton _resetSeen;
         private TextMeshProUGUI _seenCount;
         private PanelButton _backToLobby;
@@ -153,6 +156,10 @@ namespace FamilyQuiz.Presentation
             Choice(_studioOn, "tv.settings.on", studio);
             Choice(_studioOff, "tv.settings.off", !studio);
 
+            _feedbackLabel.text = _context.T("tv.settings.feedback");
+            Choice(_feedbackOn, "tv.settings.on", state.FeedbackEnabled);
+            Choice(_feedbackOff, "tv.settings.off", !state.FeedbackEnabled);
+
             _resetSeen.Set(_context.T("tv.settings.resetSeen"), TvColors.ButtonOff);
             _seenCount.text = _context.Format("tv.settings.seenCount", "questions", state.SeenQuestionIds.Count.ToString(),
                 "statements", state.SeenRaceIds.Count.ToString());
@@ -231,6 +238,12 @@ namespace FamilyQuiz.Presentation
             Refresh();
         }
 
+        private void OnFeedback(bool on)
+        {
+            if (_context.Game == null) return;
+            Send(new ChangeTvSettings(feedbackEnabled: on));
+        }
+
         private void OnResetSeen()
         {
             if (_context.Game == null) return;
@@ -293,6 +306,11 @@ namespace FamilyQuiz.Presentation
             _studioLabel = RowLabel("Studio3d", y, out _);
             _studioOn = RowButton("Studio3dOn", y, 0, () => OnStudio(true));
             _studioOff = RowButton("Studio3dOff", y, 1, () => OnStudio(false));
+            y += RowStep;
+
+            _feedbackLabel = RowLabel("Feedback", y, out _);
+            _feedbackOn = RowButton("FeedbackOn", y, 0, () => OnFeedback(true));
+            _feedbackOff = RowButton("FeedbackOff", y, 1, () => OnFeedback(false));
             y += RowStep + 20;
 
             _resetSeen = PanelButton.Create(_card, "ResetSeen", ButtonLabelSize, OnResetSeen);

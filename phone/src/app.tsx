@@ -11,22 +11,24 @@ import { chooseOption, pollAnswers, writeText, type PollDraft } from './pollAnsw
 import { addAttempt, armPick, canTarget, pickFor, pickView, type PickState } from './powerUpPick';
 import {
   answerWindowMs, characterMessage, choiceInputMessage, effectClearedInputMessage, leaveMessage, lobbyData,
-  lobbyMessage, playerView, pollData, pollMessage, powerUpInputMessage, resultData, settingsMessage,
-  trueFalseInputMessage, valueInputMessage, voteInputMessage,
+  lobbyMessage, playerView, pollData, pollMessage, powerUpInputMessage, rateData, rateInputMessage, resultData,
+  settingsMessage, trueFalseInputMessage, valueInputMessage, voteInputMessage,
   type AckedMessage, type IncomingMessage, type Lang, type PhaseId, type PlayerView, type ScreenState,
 } from './protocol';
+import { cardShown, closeCard, ratingFor, shownStars, tapStar, type RatingState } from './rating';
 import { shownReady, toggleReady } from './readyToggle';
 import { attachEffect, clearEffect, effectForScreen, overlayShown, type ActiveEffect } from './sabotage';
 import { AnswerChoiceScreen } from './screens/AnswerChoiceScreen';
 import { AnswerSliderScreen } from './screens/AnswerSliderScreen';
 import { AnswerTrueFalseScreen } from './screens/AnswerTrueFalseScreen';
 import { CountdownScreen } from './screens/CountdownScreen';
-import { ResultsScreen, TvErrorScreen, WaitingScreen, WatchScreen } from './screens/InfoScreens';
+import { PausedScreen, ResultsScreen, TvErrorScreen, WaitingScreen, WatchScreen } from './screens/InfoScreens';
 import { JoinScreen } from './screens/JoinScreen';
 import { LobbyScreen } from './screens/LobbyScreen';
 import { PickCharacterScreen } from './screens/PickCharacterScreen';
 import { PollDoneScreen } from './screens/PollDoneScreen';
 import { PollScreen } from './screens/PollScreen';
+import { RatingCard } from './screens/RatingCard';
 import { ResultScreen } from './screens/ResultScreen';
 import { SabotageOverlay } from './screens/SabotageOverlay';
 import { SettingsOverlay } from './screens/SettingsOverlay';
@@ -99,10 +101,32 @@ export function App({ deps }: { deps: AppDeps }) {
     pollRef.current = next;
     setPollState(next);
   };
+  /** The `paused` screen while the pause menu is open on the laptop (D105); `current` stays the screen under it. */
+  const [paused, setPaused] = useState<ScreenState | null>(null);
+  /** The rating card (D109): the taps and the close for one question; a ref too, for taps before the re-render. */
+  const [rating, setRatingState] = useState<RatingState | null>(null);
+  const ratingRef = useRef<RatingState | null>(null);
+  const setRating = (next: RatingState | null): void => {
+    ratingRef.current = next;
+    setRatingState(next);
+  };
+  /** The last star tapped, so only that star pops; `seq` changes on every tap. */
+  const [starPop, setStarPop] = useState<{ item: string; stars: number; seq: number } | null>(null);
+  const popSeq = useRef(0);
 
   // Layout effects run during the first render's commit, before main.tsx starts the session.
   useLayoutEffect(() => {
     const showScreen = (next: ScreenState): void => {
+      // `paused` (D105) goes over the current screen and changes nothing under it, whatever its phaseId: on Continue
+      // the TV re-sends the current screen with the same phaseId, so the answer, the sabotage and the answer clock
+      // carry on. The time shown paused is left out of the answer time (D112).
+      if (next.id === 'paused') {
+        setPaused(next);
+        clock.pauseBegan();
+        return;
+      }
+      setPaused(null);
+      clock.pauseEnded();
       // Always a new arrival time, also for a last call with the same phaseId (the countdown re-syncs).
       setCurrent({ screen: next, receivedAt: deps.now() });
       clock.arrived(next.phaseId);
@@ -161,6 +185,10 @@ export function App({ deps }: { deps: AppDeps }) {
           setPickState(null);
           pollRef.current = null;
           setPollState(null);
+          setPaused(null);
+          ratingRef.current = null;
+          setRatingState(null);
+          setStarPop(null);
         }
       },
       message: onMessage,
@@ -445,6 +473,9 @@ export function App({ deps }: { deps: AppDeps }) {
       case 'pollDone':
         body = <PollDoneScreen lang={lang} />;
         break;
+      case 'paused': // never the current screen: drawn over it below
+        body = <WatchScreen lang={lang} player={player} />;
+        break;
       case 'error':
         body = <TvErrorScreen lang={lang} screen={screen} />;
         break;
@@ -480,10 +511,38 @@ export function App({ deps }: { deps: AppDeps }) {
     }
   }
 
+  // The rating card (D109) over watch, waiting and result while the screen carries `rate`, until closed for this
+  // question. It covers the power up pick while open; closing shows the pick again, untouched.
+  const rate = screen ? rateData(screen) : null;
+  let rateCard = null;
+  if (screen && rate && cardShown(rating, rate)) {
+    const phaseId = screen.phaseId;
+    const { questionId } = rate;
+    const shown: Record<string, number> = {};
+    for (const item of rate.items) shown[item.id] = shownStars(rating, questionId, item);
+    rateCard = (
+      <RatingCard
+        lang={lang}
+        rate={rate}
+        shown={shown}
+        pop={rating?.questionId === questionId ? starPop : null}
+        onStar={(item, stars) => {
+          const inputId = deps.newInputId();
+          setRating(tapStar(ratingFor(ratingRef.current, questionId), item, stars, inputId));
+          popSeq.current += 1;
+          setStarPop({ item, stars, seq: popSeq.current });
+          track(sender.send(rateInputMessage(inputId, phaseId, item, stars)));
+        }}
+        onClose={() => setRating(closeCard(ratingFor(ratingRef.current, questionId)))}
+      />
+    );
+  }
+
   return (
     <div class="game">
       {topBar}
       {body}
+      {rateCard}
       {settingsOpen ? (
         <SettingsOverlay
           lang={lang}
@@ -502,6 +561,7 @@ export function App({ deps }: { deps: AppDeps }) {
           onClose={() => setSettingsOpen(false)}
         />
       ) : null}
+      {paused ? <PausedScreen lang={lang} screen={paused} /> : null}
     </div>
   );
 }

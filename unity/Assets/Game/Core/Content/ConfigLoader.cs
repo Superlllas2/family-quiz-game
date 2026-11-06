@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -26,7 +27,7 @@ namespace FamilyQuiz.Core.Content
             "powerUps.slime.blobs", "powerUps.fog.seconds", "race.maxHeadStart", "race.finishSteps", "race.maxQuestions",
             "race.stepsPerCorrect", "race.answer", "race.reveal", "players.min", "players.max", "players.timerMultiplierOptions",
             "players.seatHoldSeconds", "lobby.startCountdownSeconds", "net.inputGraceMs", "net.tvReconnectSeconds",
-            "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds",
+            "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds", "feedback.enabled", "feedback.stars", "feedback.items",
             "staging.extraSeconds.questionShow", "staging.extraSeconds.reveal", "staging.extraSeconds.scores",
             "staging.extraSeconds.roundEnd", "staging.lobby.seatPopSeconds", "staging.intro.establishSeconds",
             "staging.intro.lightsUpSeconds", "staging.questionShow.curtainOpenSeconds", "staging.questionShow.questionInSeconds",
@@ -173,6 +174,14 @@ namespace FamilyQuiz.Core.Content
             Positive(e, "hosts.bubbleSeconds", c.Hosts.BubbleSeconds);
             e.Check(c.Hosts.StreakTrigger >= 1, "hosts.streakTrigger", "must be 1 or more");
             Positive(e, "poll.maxSeconds", c.Poll.MaxSeconds);
+            e.Check(c.Feedback.Stars >= 2 && c.Feedback.Stars <= 10, "feedback.stars", "must be 2 to 10");
+            e.Check(c.Feedback.Items != null && c.Feedback.Items.Count > 0, "feedback.items", "must list at least one item");
+            if (c.Feedback.Items != null)
+            {
+                var items = new HashSet<string>();
+                foreach (var item in c.Feedback.Items)
+                    e.Check(!string.IsNullOrEmpty(item) && items.Add(item), "feedback.items", "\"" + item + "\" must be a new, non empty id");
+            }
 
             // lastPlaceCanWin (docs/02_show_flow.md) with the largest head start gap: leader maxHeadStart, last place 0.
             double maxHeadStart = Num(root, "race.maxHeadStart");

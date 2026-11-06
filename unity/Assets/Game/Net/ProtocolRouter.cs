@@ -71,6 +71,8 @@ namespace FamilyQuiz.Net
                     return new PlayerLeave(conn, Str(msg["inputId"]));
                 case "input" when Str(msg["kind"]) == "powerUp":
                     return new UsePowerUp(conn, Str(msg["inputId"]), Num(msg["phaseId"]) ?? -1, Str(msg["powerUp"]), Str(msg["target"]));
+                case "input" when Str(msg["kind"]) == "rate":
+                    return new RateQuestion(conn, Str(msg["inputId"]), Num(msg["phaseId"]) ?? -1, Str(msg["item"]), Dbl(msg["stars"]));
                 case "input" when Str(msg["kind"]) == "effectCleared":
                     return new ClearEffect(conn, Str(msg["inputId"]), Num(msg["phaseId"]) ?? -1, Str(msg["effect"]), Num(msg["ms"]));
                 case "poll":

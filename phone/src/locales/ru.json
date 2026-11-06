@@ -84,5 +84,8 @@
   "poll.submit": "Отправить",
   "poll.textPlaceholder": "Напиши тут",
   "poll.count": "{count}/{max}",
-  "poll.skip": "Можно пропустить"
+  "poll.skip": "Можно пропустить",
+  "paused.text": "Игра на паузе",
+  "rate.close": "Закрыть",
+  "rate.star": "{n} из {total}"
 }
