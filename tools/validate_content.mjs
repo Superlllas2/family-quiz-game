@@ -127,7 +127,7 @@ const REQUIRED = [
   "powerUps.slime.blobs", "powerUps.fog.seconds", "race.maxHeadStart", "race.finishSteps", "race.maxQuestions",
   "race.stepsPerCorrect", "race.answer", "race.reveal", "players.min", "players.max", "players.timerMultiplierOptions",
   "players.seatHoldSeconds", "lobby.startCountdownSeconds", "net.inputGraceMs", "net.tvReconnectSeconds",
-  "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds", "feedback.enabled", "feedback.stars", "feedback.items",
+  "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds", "feedback.enabled", "feedback.stars", "feedback.items", "music.volume", "music.fadeSeconds",
   "staging.extraSeconds.questionShow", "staging.extraSeconds.reveal", "staging.extraSeconds.scores",
   "staging.extraSeconds.roundEnd", "staging.lobby.seatPopSeconds", "staging.intro.establishSeconds",
   "staging.intro.lightsUpSeconds", "staging.questionShow.curtainOpenSeconds", "staging.questionShow.questionInSeconds",

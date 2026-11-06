@@ -50,6 +50,9 @@ namespace FamilyQuiz.Core.Content
         [JsonProperty("feedback", Required = Required.Always)]
         public FeedbackConfig Feedback { get; set; }
 
+        [JsonProperty("music", Required = Required.Always)]
+        public MusicConfig Music { get; set; }
+
         [JsonProperty("staging", Required = Required.Always)]
         public StagingConfig Staging { get; set; }
     }

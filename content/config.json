@@ -54,6 +54,7 @@
   "hosts": { "minGapSeconds": 3, "bubbleSeconds": 3.5, "streakTrigger": 3 },
   "poll": { "enabled": true, "maxSeconds": 90 },
   "feedback": { "enabled": false, "stars": 5, "items": ["fun", "guess", "fact"] },
+  "music": { "volume": 0.35, "fadeSeconds": 2 },
   "staging": {
     "extraSeconds": { "questionShow": 0, "reveal": 0, "scores": 0, "roundEnd": 0 },
     "lobby": { "seatPopSeconds": 0.5 },

@@ -12,7 +12,7 @@ namespace FamilyQuiz.Presentation
     /// The TV settings panel (docs/02_show_flow.md, "TV settings panel"; docs/13_architecture.md): opened and closed with
     /// Tab on the laptop, used with the mouse, never pausing anything. Game language RU or EN (at once), power ups on or
     /// off, each type on or off and targeting (from the next game, with a note while they differ from the running game),
-    /// the 3D studio on or off (this laptop only, at once), question feedback on or off (at once, decisions/0018 D108),
+    /// the 3D studio on or off (this laptop only, at once), question feedback on or off (at once, decisions/0018 D108), the music volume with the credit of the track playing (this laptop only, at once, decisions/0019 D114, D115),
     /// Reset seen questions and Back to lobby. It shows the pending values and sends commands through the sink like any
     /// other input; it never changes state itself.
     /// </summary>
@@ -25,7 +25,7 @@ namespace FamilyQuiz.Presentation
         public const double BackToLobbyConfirmSeconds = 4;
 
         private const float PanelWidth = 860f;
-        private const float PanelHeight = 1000f;
+        private const float PanelHeight = 1050f;
         private const float EdgeMargin = 24f;
         private const float Padding = 32f;
         private const float TitleSize = 52f;
@@ -33,12 +33,14 @@ namespace FamilyQuiz.Presentation
         private const float LabelSize = 36f;
         private const float NoteSize = 24f;
         private const float ButtonLabelSize = 32f;
-        private const float RowsTop = 110f;
-        private const float RowStep = 82f;
+        private const float RowsTop = 100f;
+        private const float RowStep = 76f;
         private const float LabelWidth = 360f;
         private const float ButtonWidth = 204f;
         private const float ButtonGap = 8f;
-        private const float ButtonHeight = 64f;
+        private const float ButtonHeight = 60f;
+        private const float CreditSize = 22f;
+        private const float SliderHandleWidth = 30f;
         private const float WideButtonHeight = 68f;
 
         private readonly ConfirmClick _backConfirm = new ConfirmClick(BackToLobbyConfirmSeconds);
@@ -70,6 +72,14 @@ namespace FamilyQuiz.Presentation
         private TextMeshProUGUI _feedbackLabel;
         private PanelButton _feedbackOn;
         private PanelButton _feedbackOff;
+        private TextMeshProUGUI _musicLabel;
+        private TextMeshProUGUI _musicValue;
+        private UnityEngine.UI.Slider _musicSlider;
+        private TextMeshProUGUI _musicCredit;
+        private Func<float> _musicVolume;
+        private Action<float> _setMusicVolume;
+        private Func<string> _musicCreditText;
+        private string _creditShown;
         private PanelButton _resetSeen;
         private TextMeshProUGUI _seenCount;
         private PanelButton _backToLobby;
@@ -100,6 +110,18 @@ namespace FamilyQuiz.Presentation
         {
             _studioIsOn = isOn;
             _setStudio = set;
+        }
+
+        /// <summary>
+        /// The music volume slider and the credit line of the track playing (decisions/0019, D114, D115): a TV only
+        /// choice handled by the composition root, never a game command. creditText gives the credit already in the
+        /// game language, or null when nothing plays.
+        /// </summary>
+        public void SetMusic(Func<float> volume, Action<float> setVolume, Func<string> creditText)
+        {
+            _musicVolume = volume;
+            _setMusicVolume = setVolume;
+            _musicCreditText = creditText;
         }
 
         /// <summary>Tab: opens or closes the panel. Nothing else stops or waits.</summary>
@@ -160,6 +182,12 @@ namespace FamilyQuiz.Presentation
             Choice(_feedbackOn, "tv.settings.on", state.FeedbackEnabled);
             Choice(_feedbackOff, "tv.settings.off", !state.FeedbackEnabled);
 
+            _musicLabel.text = _context.T("tv.settings.music");
+            float volume = _musicVolume != null ? _musicVolume() : 0f;
+            _musicSlider.SetValueWithoutNotify(volume);
+            _musicValue.text = Mathf.RoundToInt(volume * 100f) + "%";
+            DrawCredit();
+
             _resetSeen.Set(_context.T("tv.settings.resetSeen"), TvColors.ButtonOff);
             _seenCount.text = _context.Format("tv.settings.seenCount", "questions", state.SeenQuestionIds.Count.ToString(),
                 "statements", state.SeenRaceIds.Count.ToString());
@@ -170,6 +198,21 @@ namespace FamilyQuiz.Presentation
         {
             // The confirm window runs out on real time: redraw the button when it does.
             if (_backConfirm.Armed(Now()) != _backArmedShown) DrawBackToLobby();
+            DrawCredit(); // the next track may start while the panel is open
+        }
+
+        private void DrawCredit()
+        {
+            var credit = _musicCreditText?.Invoke() ?? string.Empty;
+            if (credit == _creditShown) return;
+            _creditShown = credit;
+            _musicCredit.text = credit;
+        }
+
+        private void OnMusicVolume(float volume)
+        {
+            _setMusicVolume?.Invoke(volume);
+            _musicValue.text = Mathf.RoundToInt(volume * 100f) + "%";
         }
 
         private void DrawBackToLobby()
@@ -311,6 +354,10 @@ namespace FamilyQuiz.Presentation
             _feedbackLabel = RowLabel("Feedback", y, out _);
             _feedbackOn = RowButton("FeedbackOn", y, 0, () => OnFeedback(true));
             _feedbackOff = RowButton("FeedbackOff", y, 1, () => OnFeedback(false));
+            y += RowStep;
+
+            _musicLabel = RowLabel("Music", y, out _);
+            _musicSlider = MusicSlider(y);
             y += RowStep + 20;
 
             _resetSeen = PanelButton.Create(_card, "ResetSeen", ButtonLabelSize, OnResetSeen);
@@ -321,13 +368,64 @@ namespace FamilyQuiz.Presentation
 
             _backToLobby = PanelButton.Create(_card, "BackToLobby", ButtonLabelSize, OnBackToLobby);
             Box(_backToLobby.Rect, Padding, y, PanelWidth - 2 * Padding, WideButtonHeight);
+            y += WideButtonHeight + 8;
+
+            // The CC BY credit of the track playing (D115): the license asks for it, the settings are where games put it.
+            _musicCredit = Label("MusicCredit", Padding, y, PanelWidth - 2 * Padding, 32, CreditSize, TvColors.DimText, false,
+                TextAlignmentOptions.Center);
+        }
+
+        /// <summary>
+        /// The music volume slider (D114) in place of a row's two buttons, with the value in percent at its right. Drag or
+        /// click with the mouse; every change applies at once.
+        /// </summary>
+        private UnityEngine.UI.Slider MusicSlider(float y)
+        {
+            const float valueWidth = 90f;
+            float x = Padding + LabelWidth + 12;
+            float width = 2 * ButtonWidth + ButtonGap - valueWidth - 10;
+
+            var root = UiBuilder.Rect("MusicSlider", _card);
+            Box(root, x, y + 10, width, ButtonHeight);
+            var track = UiBuilder.Image("Track", root, TvColors.ButtonOff, RoundedSprite.Get());
+            track.raycastTarget = true;
+            UiBuilder.Anchor(track.rectTransform, 0, 0.3f, 1, 0.7f);
+
+            var fillArea = UiBuilder.Rect("FillArea", root);
+            UiBuilder.Anchor(fillArea, 0, 0.3f, 1, 0.7f);
+            fillArea.offsetMin = new Vector2(0, 0);
+            fillArea.offsetMax = new Vector2(-SliderHandleWidth / 2, 0);
+            var fill = UiBuilder.Image("Fill", fillArea, TvColors.ButtonOn, RoundedSprite.Get());
+            fill.rectTransform.sizeDelta = Vector2.zero;
+
+            var handleArea = UiBuilder.Rect("HandleArea", root);
+            UiBuilder.Anchor(handleArea, 0, 0, 1, 1);
+            handleArea.offsetMin = new Vector2(SliderHandleWidth / 2, 0);
+            handleArea.offsetMax = new Vector2(-SliderHandleWidth / 2, 0);
+            var handle = UiBuilder.Image("Handle", handleArea, TvColors.Text, RoundedSprite.Get());
+            handle.raycastTarget = true;
+            handle.rectTransform.sizeDelta = new Vector2(SliderHandleWidth, 0);
+
+            var slider = root.gameObject.AddComponent<UnityEngine.UI.Slider>();
+            slider.fillRect = fill.rectTransform;
+            slider.handleRect = handle.rectTransform;
+            slider.targetGraphic = handle;
+            slider.direction = UnityEngine.UI.Slider.Direction.LeftToRight;
+            slider.minValue = 0f;
+            slider.maxValue = 1f;
+            slider.navigation = new UnityEngine.UI.Navigation { mode = UnityEngine.UI.Navigation.Mode.None };
+            slider.onValueChanged.AddListener(OnMusicVolume);
+
+            _musicValue = Label("MusicValue", x + width + 10, y, valueWidth, 76, LabelSize, TvColors.Text, true,
+                TextAlignmentOptions.Right);
+            return slider;
         }
 
         /// <summary>A row's label in its upper part and a hidden "applies from the next game" note below it.</summary>
         private TextMeshProUGUI RowLabel(string name, float y, out TextMeshProUGUI note)
         {
             var label = Label(name, Padding, y, LabelWidth, 56, LabelSize, TvColors.Text, true, TextAlignmentOptions.Left);
-            note = Label(name + "Note", Padding, y + 54, LabelWidth, 32, NoteSize, TvColors.Crown, false, TextAlignmentOptions.Left);
+            note = Label(name + "Note", Padding, y + 48, LabelWidth, 28, NoteSize, TvColors.Crown, false, TextAlignmentOptions.Left);
             note.gameObject.SetActive(false);
             return label;
         }
@@ -337,7 +435,7 @@ namespace FamilyQuiz.Presentation
         {
             var button = PanelButton.Create(_card, name, ButtonLabelSize, onClick);
             float x = Padding + LabelWidth + 12 + column * (ButtonWidth + ButtonGap);
-            Box(button.Rect, x, y + 12, ButtonWidth, ButtonHeight);
+            Box(button.Rect, x, y + 10, ButtonWidth, ButtonHeight);
             return button;
         }
 

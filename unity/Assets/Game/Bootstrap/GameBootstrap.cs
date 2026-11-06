@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using FamilyQuiz.Audio;
 using FamilyQuiz.Core;
 using FamilyQuiz.Core.Commands;
 using FamilyQuiz.Core.Content;
@@ -46,6 +47,7 @@ namespace FamilyQuiz.Bootstrap
         private string _loggedRoomCode;
         private bool _sessionLogged;
         private bool _relayUp;
+        private MusicPlayer _music;
 
         private void Awake()
         {
@@ -95,6 +97,7 @@ namespace FamilyQuiz.Bootstrap
             // The TV settings panel sends commands like any other input (docs/13_architecture.md).
             _view.SetCommandSink(cmd => Dispatch(_game.Handle(cmd)));
             _debug = DebugOverlay.Create(_game);
+            StartMusic(config);
 
             _endpoint = LoadEndpoint();
             if (_endpoint == null)
@@ -206,6 +209,34 @@ namespace FamilyQuiz.Bootstrap
             _telemetry?.OnEvents(events);
             if (_dialogue != null) Speak(_dialogue.OnEvents(events));
             foreach (var e in events) LogEvent(e);
+        }
+
+        /// <summary>
+        /// The background music (decisions/0019): an endless shuffled jazz playlist from app start, its volume the TV
+        /// settings panel's slider, remembered on this laptop (tv_audio.json), with the credit of the track playing.
+        /// </summary>
+        private void StartMusic(GameConfig config)
+        {
+            var volumeFile = new MusicVolumeFile(Path.Combine(Application.persistentDataPath, MusicVolumeFile.FileName),
+                (float)config.Music.Volume);
+            _music = MusicPlayer.Create(volumeFile.Load(), (float)config.Music.FadeSeconds, new SeededRandom(_random.Next(int.MaxValue)));
+            _view.SetMusic(() => _music.Volume, volume =>
+            {
+                _music.Volume = volume;
+                volumeFile.Save(volume);
+            }, MusicCredit);
+        }
+
+        /// <summary>"Now playing: Lobby Time by Kevin MacLeod (incompetech.com), CC BY 4.0" in the game language, or null.</summary>
+        private string MusicCredit()
+        {
+            var track = _music != null ? _music.NowPlaying : null;
+            var strings = _game?.Content.Strings;
+            if (track == null || strings == null) return null;
+            return strings.Format("tv.settings.nowPlaying", _game.State.GameLanguage, new Dictionary<string, string>
+            {
+                { "title", track.Title }, { "author", track.Author }, { "license", track.License }
+            });
         }
 
         /// <summary>

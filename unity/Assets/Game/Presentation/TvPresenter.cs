@@ -101,6 +101,12 @@ namespace FamilyQuiz.Presentation
             _settings.SetCommandSink(send);
         }
 
+        /// <summary>The music slider and credit line of the TV settings panel (decisions/0019, D114, D115).</summary>
+        public void SetMusic(Func<float> volume, Action<float> setVolume, Func<string> creditText)
+        {
+            _settings.SetMusic(volume, setVolume, creditText);
+        }
+
         /// <summary>
         /// A host line that starts now (docs/15_schemas.md, "Selection"): the host's portrait box and text bubble until
         /// endsAtMs on the core clock (Game.NowMs), replacing that host's bubble. textInLang gives the text in a language;

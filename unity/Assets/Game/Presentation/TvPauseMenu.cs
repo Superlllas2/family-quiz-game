@@ -17,7 +17,6 @@ namespace FamilyQuiz.Presentation
         public const double NewGameConfirmSeconds = TvSettingsPanel.BackToLobbyConfirmSeconds;
 
         private const float CardWidth = 760f;
-        private const float CardHeight = 560f;
         private const float Padding = 40f;
         private const float TitleSize = 72f;
         private const float HintSize = 30f;
@@ -33,6 +32,7 @@ namespace FamilyQuiz.Presentation
         private Action _onContinue;
         private Action _onNewGame;
         private Action _onSettings;
+        private RectTransform _card;
         private TextMeshProUGUI _title;
         private TextMeshProUGUI _hint;
         private PanelButton _continue;
@@ -77,7 +77,9 @@ namespace FamilyQuiz.Presentation
             _hint.text = _context.T("tv.pause.hint");
             _continue.Set(_context.T("tv.pause.continue"), TvColors.ButtonOn);
             _settings.Set(_context.T("tv.pause.settings"), TvColors.ButtonOff);
-            _newGame.Rect.gameObject.SetActive(game.State.Phase != GamePhase.Lobby);
+            bool newGame = game.State.Phase != GamePhase.Lobby;
+            _newGame.Rect.gameObject.SetActive(newGame);
+            Layout(newGame);
             DrawNewGame();
         }
 
@@ -85,6 +87,22 @@ namespace FamilyQuiz.Presentation
         {
             // The confirm window runs out on real time (the core clock is stopped): redraw the button when it does.
             if (_newGameConfirm.Armed(Now()) != _armedShown) DrawNewGame();
+        }
+
+        /// <summary>The buttons stack with no gap where New game is hidden, and the card fits them.</summary>
+        private void Layout(bool newGame)
+        {
+            float y = ButtonsTop;
+            Box(_continue.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
+            y += ButtonHeight + ButtonGap;
+            if (newGame)
+            {
+                Box(_newGame.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
+                y += ButtonHeight + ButtonGap;
+            }
+
+            Box(_settings.Rect, Padding, y, CardWidth - 2 * Padding, ButtonHeight);
+            _card.sizeDelta = new Vector2(CardWidth, y + ButtonHeight + Padding);
         }
 
         private void DrawNewGame()
@@ -116,13 +134,16 @@ namespace FamilyQuiz.Presentation
             backdrop.raycastTarget = true; // clicks never reach the views under the menu
             UiBuilder.Anchor(backdrop.rectTransform, 0, 0, 1, 1);
 
-            var card = UiBuilder.Image("Card", transform, TvColors.Panel, RoundedSprite.Get()).rectTransform;
+            // Opaque, unlike the settings panel: nothing of the view under it shows through.
+            var opaque = new Color(TvColors.Panel.r, TvColors.Panel.g, TvColors.Panel.b, 1f);
+            var card = UiBuilder.Image("Card", transform, opaque, RoundedSprite.Get()).rectTransform;
+            _card = card;
             card.GetComponent<UnityEngine.UI.Image>().raycastTarget = true;
             card.anchorMin = new Vector2(0.5f, 0.5f);
             card.anchorMax = new Vector2(0.5f, 0.5f);
             card.pivot = new Vector2(0.5f, 0.5f);
             card.anchoredPosition = Vector2.zero;
-            card.sizeDelta = new Vector2(CardWidth, CardHeight);
+            card.sizeDelta = new Vector2(CardWidth, ButtonsTop + 3 * ButtonHeight + 2 * ButtonGap + Padding);
 
             _title = Label(card, "Title", 30, 96, TitleSize, TvColors.Text, true);
             _hint = Label(card, "Hint", 112, 44, HintSize, TvColors.DimText, false);

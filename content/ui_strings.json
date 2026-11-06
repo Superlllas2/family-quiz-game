@@ -85,6 +85,8 @@
   "tv.settings.backToLobby": { "ru": "Вернуться в лобби", "en": "Back to lobby" },
   "tv.settings.backToLobbyConfirm": { "ru": "Нажмите ещё раз, чтобы вернуться", "en": "Click again to go back" },
   "tv.settings.feedback": { "ru": "Оценка вопросов", "en": "Question feedback" },
+  "tv.settings.music": { "ru": "Музыка", "en": "Music" },
+  "tv.settings.nowPlaying": { "ru": "Играет: «{title}», {author}, {license}", "en": "Now playing: {title} by {author}, {license}" },
   "tv.pause.title": { "ru": "Пауза", "en": "Paused" },
   "tv.pause.hint": { "ru": "Esc — продолжить", "en": "Esc to continue" },
   "tv.pause.continue": { "ru": "Продолжить", "en": "Continue" },

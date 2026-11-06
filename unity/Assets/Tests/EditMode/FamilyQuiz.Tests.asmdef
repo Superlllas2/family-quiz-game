@@ -8,6 +8,7 @@
         "FamilyQuiz.Dialogue",
         "FamilyQuiz.Presentation",
         "FamilyQuiz.DevTools",
+        "FamilyQuiz.Audio",
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],

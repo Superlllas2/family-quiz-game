@@ -1,10 +1,12 @@
 # 12 Audio direction and sound list
 
-Status: Partial (Nov 2, 2026; `decisions/0005_staging_answers.md`, D57). Game night 1 has no music and no sounds on the TV beyond what a stretch goal adds. The music cues the band plays are listed in `21_staging.md`.
+Status: Partial (Nov 2, 2026; `decisions/0005_staging_answers.md`, D57; background music from `decisions/0019_background_music.md`, Nov 6, 2026). Game night 1 has placeholder background music (below) and no sounds on the TV beyond what a stretch goal adds. The music cues the band plays are listed in `21_staging.md`.
 
 ## Music
 
 **Open:** the final music is decided later: composed, commissioned or licensed, its style, reference tracks, and mixing rules (ducking under host voices).
+
+**Background music (D113 to D115):** five instrumental jazz tracks in an endless shuffled loop with a 2 s crossfade, from app start, in every phase; never the same track twice in a row. A volume slider in the TV settings panel (default `music.volume`, remembered on the laptop); the panel's last line credits the track playing.
 
 **For the prototype:** free placeholder loops and stingers, one per cue in `21_staging.md`, so the staging can be judged with sound. They are replaced before anything is sold or shown publicly.
 
@@ -31,7 +33,11 @@ Status: Partial (Nov 2, 2026; `decisions/0005_staging_answers.md`, D57). Game ni
 
 | File | Cue | Source URL | Author | License | Attribution text | Added |
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | |
+| `Resources/Music/music_backbay_lounge.mp3` | Background loop (D113) | https://incompetech.com/music/royalty-free/mp3-royaltyfree/Backbay%20Lounge.mp3 | Kevin MacLeod | CC BY 4.0 | "Backbay Lounge" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0, https://creativecommons.org/licenses/by/4.0/ | Nov 6, 2026 |
+| `Resources/Music/music_bossa_antigua.mp3` | Background loop (D113) | https://incompetech.com/music/royalty-free/mp3-royaltyfree/Bossa%20Antigua.mp3 | Kevin MacLeod | CC BY 4.0 | "Bossa Antigua" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0, https://creativecommons.org/licenses/by/4.0/ | Nov 6, 2026 |
+| `Resources/Music/music_lobby_time.mp3` | Background loop (D113) | https://incompetech.com/music/royalty-free/mp3-royaltyfree/Lobby%20Time.mp3 | Kevin MacLeod | CC BY 4.0 | "Lobby Time" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0, https://creativecommons.org/licenses/by/4.0/ | Nov 6, 2026 |
+| `Resources/Music/music_jazz_brunch.mp3` | Background loop (D113) | https://incompetech.com/music/royalty-free/mp3-royaltyfree/Jazz%20Brunch.mp3 | Kevin MacLeod | CC BY 4.0 | "Jazz Brunch" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0, https://creativecommons.org/licenses/by/4.0/ | Nov 6, 2026 |
+| `Resources/Music/music_george_street_shuffle.mp3` | Background loop (D113) | https://incompetech.com/music/royalty-free/mp3-royaltyfree/George%20Street%20Shuffle.mp3 | Kevin MacLeod | CC BY 4.0 | "George Street Shuffle" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0, https://creativecommons.org/licenses/by/4.0/ | Nov 6, 2026 |
 
 ## Sound effects
 

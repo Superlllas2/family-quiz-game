@@ -114,6 +114,7 @@ The person at the laptop opens and closes it with the Tab key and uses it with t
 | Targeting free or aim up | `powerUps.targeting` | Next game start |
 | Reset seen questions | | At once |
 | Question feedback on or off (the rating card on the phones, D108) | `feedback.enabled` (off) | At once, from the next Reveal |
+| Music volume, a slider from 0 to 100 % (D114; this laptop only) | `music.volume` (35 %) | At once |
 | Back to lobby | | At once |
 
 Phones keep only their own settings: language, more time, leave (`06_phone_screens.md`).
