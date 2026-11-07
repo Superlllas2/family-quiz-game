@@ -67,6 +67,18 @@ Closest value adds:
 | `tolerance` | number | Distance at which points reach zero |
 | `unit` | localized | For example `{"ru": "год", "en": "year"}`; may be empty strings |
 
+Any question may add a picture or a sound (`04_formats.md`, "Picture and sound questions", D139):
+
+| Field | Type | Rule |
+| --- | --- | --- |
+| `media` | object, optional | The picture or the clip shown with the question |
+| `media.kind` | string | `image` or `audio` |
+| `media.file` | string | Path under `<persistentDataPath>/media/`, for example `melody/mel_007.mp3` or `film/film_012.jpg`. Lower case letters, digits, `_`, `-` and `/` only. A question whose file is missing on the laptop is never picked |
+| `media.from` | object | Where the fetch script gets it, exactly one of: `{"deezer": <track id>}`, `{"itunes": <track id>}`, `{"tmdb": "<image path>"}`, `{"own": "<file name in the own media folder>"}` |
+| `media.start` | number, optional | Seconds into the source where the clip or the frame starts; default 0 |
+| `media.length` | number, audio only | Seconds the clip plays, 3 to 20 |
+| `media.credit` | string | Who made it, for the credits screen (for example the film, the artist, "TMDB") |
+
 Example:
 
 ```json
@@ -320,5 +332,5 @@ Allowed values:
 Computed by `tools/analyze_log`:
 
 - **Idle:** a moment is idle when no connected phone can send an answer, vote, power up pick or poll input. Idle share = idle time divided by game time (from `gameStarted` to `gameEnded`). Reported only, no pass or fail in game night 1.
-- **Longest idle stretch** outside Intro, FinalIntro and Results. Starting limit 11 s (`19_acceptance.md`); a suggested starting value like every timer (D56).
+- **Longest idle stretch** outside Intro, FinalIntro and Results. Limit 21 s (D126) (`19_acceptance.md`); a suggested starting value like every timer (D56).
 - Phase durations (real, from `phaseEnded.durationMs`, next to the budget and its staging extra), correct rate per question, power ups drawn versus used, who targets whom.

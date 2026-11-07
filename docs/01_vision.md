@@ -14,7 +14,7 @@ A fast, chaotic family quiz show in the living room: the TV is the stage, every 
 
 ## Session length
 
-In game night 1 a Standard game lasts about 10 to 12 minutes, without mini games. With the 3 mini games planned for later it lasts 15 to 19 minutes. Quick and Long modes exist in config. An evening holds two or three games.
+Game length is an outcome, not a target (D127): a game takes as long as it needs to be fun, and time is worth adding for more questions or hosts that make sense. With the timers after the first playtest a Standard game lasts about 12 to 14 minutes, without mini games. With the 3 mini games planned for later it lasts 15 to 19 minutes. Quick and Long modes exist in config. An evening holds two or three games.
 
 ## Look
 

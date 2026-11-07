@@ -20,13 +20,17 @@ namespace FamilyQuiz.Tests
         private const int Sessions = 50;
 
         private const long MinGameMs = 8 * 60 * 1000;
-        private const long MaxGameMs = 12 * 60 * 1000;
+        /// <summary>
+        /// Not a design limit: game length is an outcome, never a target (D127). This bound only catches a game that
+        /// never ends.
+        /// </summary>
+        private const long MaxGameMs = 60 * 60 * 1000;
 
         /// <summary>
         /// The idle limit of docs/19_acceptance.md: a starting value set again with the timers (D56). The current timers
-        /// give exactly 11 s (QuestionShow + Reveal + Scores, and Reveal + Scores + RoundEnd).
+        /// give exactly 21 s (QuestionShow 10 + Reveal 6 + Scores 5; set again Nov 7, 2026 after the first playtest, D126).
         /// </summary>
-        private const long IdleLimitMs = 11000;
+        private const long IdleLimitMs = 21000;
 
         private const long MaxEndAfterLastLockMs = 200;
 
@@ -346,7 +350,7 @@ namespace FamilyQuiz.Tests
 
         [TestCase(SimulatedPlayer.Style.FullWindow)]
         [TestCase(SimulatedPlayer.Style.Never)]
-        public void UsingTheFullWindowNeverGoesOverTwelveMinutes(SimulatedPlayer.Style style)
+        public void UsingTheFullWindowStillEnds(SimulatedPlayer.Style style)
         {
             var all = new List<GameRecord>();
             for (int session = 1; session <= 5; session++)

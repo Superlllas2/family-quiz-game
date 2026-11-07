@@ -4,7 +4,10 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { analyze, formatText, parseLines, splitGames, idleTimeline } from "./analyze_log.mjs";
+import { analyze, formatText, parseLines, splitGames, idleTimeline, IDLE_LIMIT_MS } from "./analyze_log.mjs";
+
+// The fixtures were written for the first idle limit of 11 s; the over and not over checks keep using it.
+const FIXTURE_LIMIT = { idleLimitMs: 11000 };
 
 const here = dirname(fileURLToPath(import.meta.url));
 const fixture = (name) => readFileSync(join(here, "fixtures", name), "utf8");
@@ -20,7 +23,7 @@ test("a broken line is skipped and counted, a blank line is ignored", () => {
 });
 
 test("one game: idle share and longest stretch, exact", () => {
-  const [g] = analyze(fixture("one_game.jsonl")).games;
+  const [g] = analyze(fixture("one_game.jsonl"), FIXTURE_LIMIT).games;
   // Active: TopicVote 4000-7000, Answer 11000-14000, Reveal while Mama holds slime 14000-16000 and after her rejoin
   // 18000-19000, Answer 25000-29000 (Kid back, Papa's effectCleared input is not an answer), race 48000-51000.
   // Idle: Intro 3000, QuestionShow 4000, 16000-18000 (the only holder disconnected) 2000, 19000-25000 6000,
@@ -94,7 +97,7 @@ test("two games in one file, the second abandoned, names and connections carried
   assert.equal(games[1].statusAtStart.get("p2"), "disconnected", "Papa disconnected in the Lobby before game 2");
   assert.equal(games[1].statusAtStart.get("p3"), "gone");
 
-  const report = analyze(text);
+  const report = analyze(text, FIXTURE_LIMIT);
   assert.equal(report.skippedLines, 0);
   const [g1, g2] = report.games;
   assert.equal(g1.game, 1);
@@ -127,6 +130,13 @@ test("two games in one file, the second abandoned, names and connections carried
   const out = formatText(report);
   assert.match(out, /Game 2 \(ABANDONED: Back to lobby\)/);
   assert.match(out, /Longest idle stretch .*11500 ms \(limit 11000 ms\) OVER by 500 ms/);
+})
+
+test("the default idle limit is 21 s (D126): an 11.5 s stretch is not over", () => {
+  assert.equal(IDLE_LIMIT_MS, 21000);
+  const [g1] = analyze(fixture("two_games.jsonl")).games;
+  assert.equal(g1.idle.longestStretch.limitMs, 21000);
+  assert.equal(g1.idle.longestStretch.over, false);
 });
 
 test("a cut off log: the game ends at its last line and is incomplete", () => {
