@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Симба — герой знаменитого мультфильма Disney. Что значит его имя на языке суахили?",
+   "en": "Simba is the hero of a famous Disney cartoon. What does his name mean in Swahili?"
+  },
+  "options": [
+   {
+    "ru": "«Лев»",
+    "en": "'Lion'"
+   },
+   {
+    "ru": "«Король»",
+    "en": "'King'"
+   },
+   {
+    "ru": "«Сын»",
+    "en": "'Son'"
+   },
+   {
+    "ru": "«Храбрец»",
+    "en": "'Brave one'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Симба» на суахили — просто «лев». Из этого языка Восточной Африки в мультфильм пришло и «хакуна матата» — «никаких забот».",
+   "en": "In Swahili 'simba' simply means 'lion'. The film's 'hakuna matata', 'no worries', comes from the same East African language."
+  },
+  "source": "https://en.wikipedia.org/wiki/Simba",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_cartoons_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В «Зверополисе» один из ведущих новостей — лось. Кем его заменили в версии мультфильма для Китая?",
+   "en": "In Zootopia one of the TV news anchors is a moose. Who replaced him in the version for China?"
+  },
+  "options": [
+   {
+    "ru": "Пандой",
+    "en": "A panda"
+   },
+   {
+    "ru": "Тигром",
+    "en": "A tiger"
+   },
+   {
+    "ru": "Обезьяной",
+    "en": "A monkey"
+   },
+   {
+    "ru": "Драконом",
+    "en": "A dragon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Каждой стране — своего ведущего: в Японии это енотовидная собака тануки, в Австралии коала, в Бразилии ягуар.",
+   "en": "Each country got its own anchor: a tanuki (raccoon dog) in Japan, a koala in Australia, a jaguar in Brazil."
+  },
+  "source": "https://en.wikipedia.org/wiki/Zootopia",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_cartoons_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Имя огра Шрека взято из идиша. Что оно значит?",
+   "en": "The ogre Shrek's name comes from Yiddish. What does it mean?"
+  },
+  "options": [
+   {
+    "ru": "«Страх»",
+    "en": "'Fear'"
+   },
+   {
+    "ru": "«Болото»",
+    "en": "'Swamp'"
+   },
+   {
+    "ru": "«Зелёный»",
+    "en": "'Green'"
+   },
+   {
+    "ru": "«Ворчун»",
+    "en": "'Grump'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На идише, как и по-немецки (Schreck), это «страх, испуг». В книжке Уильяма Стейга 1990 года Шрек и правда страшный.",
+   "en": "In Yiddish, as in German (Schreck), it means 'fear' or 'fright'. In William Steig's 1990 picture book Shrek really is scary."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shrek!",
+  "basedOn": "cartoons_006",
+  "refine": "rewrite",
+  "id": "cur_cartoons_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Авторы «Головоломки» выбросили одну эмоцию: она слишком похожа на Страх. Какую?",
+   "en": "Inside Out's makers cut one emotion because it was too much like Fear. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Удивление",
+    "en": "Surprise"
+   },
+   {
+    "ru": "Стыд",
+    "en": "Shame"
+   },
+   {
+    "ru": "Нетерпение",
+    "en": "Impatience"
+   },
+   {
+    "ru": "Ревность",
+    "en": "Jealousy"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала перебирали около 27 эмоций. Из семи базовых по психологу Полу Экману убрали удивление и презрение — осталось пять.",
+   "en": "About 27 emotions were considered at first. Of psychologist Paul Ekman's seven basic ones, surprise and contempt were cut, leaving five."
+  },
+  "source": "https://en.wikipedia.org/wiki/Inside_Out_(2015_film)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_cartoons_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Куда в 2008 году по-настоящему слетала фигурка Базза Лайтера из «Истории игрушек»?",
+   "en": "Where did a real Buzz Lightyear figure from Toy Story fly in 2008?"
+  },
+  "options": [
+   {
+    "ru": "На МКС",
+    "en": "To the ISS"
+   },
+   {
+    "ru": "На Луну",
+    "en": "To the Moon"
+   },
+   {
+    "ru": "В стратосферу на шаре",
+    "en": "Up to the stratosphere by balloon"
+   },
+   {
+    "ru": "На Северный полюс",
+    "en": "To the North Pole"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фигурка провела на станции 15 месяцев, а дома её встретили парадом во главе с Баззом Олдрином, в честь которого героя и назвали.",
+   "en": "It spent 15 months on the station, and back home a parade led by Buzz Aldrin, the hero's namesake, welcomed it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Buzz_Lightyear",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_cartoons_05"
+ },
+ {
+  "id": "cur_cartoons_06",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто озвучивает миньонов в «Гадком я» и «Миньонах»?",
+   "en": "Who voices the Minions in Despicable Me and Minions?"
+  },
+  "options": [
+   {
+    "ru": "Один из режиссёров",
+    "en": "One of the directors"
+   },
+   {
+    "ru": "Детский хор",
+    "en": "A children's choir"
+   },
+   {
+    "ru": "Компьютерная программа",
+    "en": "A computer program"
+   },
+   {
+    "ru": "Стив Карелл, голос Грю",
+    "en": "Steve Carell, Gru's voice"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Режиссёр Пьер Коффен озвучивает миньонов с первого фильма. Их язык — тарабарщина вперемешку со словами из английского, французского, испанского и хинди.",
+   "en": "Director Pierre Coffin has voiced the Minions since the first film. Their language is gibberish mixed with English, French, Spanish, Hindi and Korean words."
+  },
+  "source": "https://en.wikipedia.org/wiki/Minions_(Despicable_Me)",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_cartoons_07",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Король Лев» в работе назывался «Король джунглей». Почему название сменили?",
+   "en": "During production The Lion King was called King of the Jungle. Why was the title changed?"
+  },
+  "options": [
+   {
+    "ru": "Действие идёт в саванне",
+    "en": "It's set on the savanna"
+   },
+   {
+    "ru": "Название было занято",
+    "en": "The title was taken"
+   },
+   {
+    "ru": "Не понравилось детям на показе",
+    "en": "Children disliked it at a screening"
+   },
+   {
+    "ru": "Так захотел Элтон Джон",
+    "en": "Elton John wanted it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "А ещё раньше он звался «Король Калахари». Сюжет же взяли во многом из «Гамлета»: дядя убивает короля и занимает трон.",
+   "en": "Before that it was King of the Kalahari. The story borrows heavily from Hamlet: an uncle kills the king and takes the throne."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Lion_King",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Эльзу в «Холодном сердце» сначала задумали злодейкой. Что заставило авторов передумать?",
+   "en": "Elsa in Frozen was first written as a villain. What made the writers change their minds?"
+  },
+  "options": [
+   {
+    "ru": "Песня «Отпусти и забудь»",
+    "en": "The song Let It Go"
+   },
+   {
+    "ru": "Провальный тестовый показ",
+    "en": "A disastrous test screening"
+   },
+   {
+    "ru": "Письма детей в студию",
+    "en": "Children's letters to the studio"
+   },
+   {
+    "ru": "Жалобы производителей кукол",
+    "en": "Complaints from doll makers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Песня сделала Эльзу испуганной девушкой, которая не справляется со своим даром. Сценаристка Дженнифер Ли переписала первый акт, а за ним и весь фильм.",
+   "en": "The song made Elsa a scared girl struggling with her gift. Writer Jennifer Lee rewrote the first act, and that rippled through the whole film."
+  },
+  "source": "https://en.wikipedia.org/wiki/Frozen_(2013_film)",
+  "basedOn": "cartoons_015",
+  "refine": "rewrite",
+  "id": "cur_cartoons_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что на самом деле случилось бы с Марлином из «В поисках Немо» после гибели его подруги?",
+   "en": "In real life, what would happen to Marlin from Finding Nemo after his mate died?"
+  },
+  "options": [
+   {
+    "ru": "Он стал бы самкой",
+    "en": "He would become female"
+   },
+   {
+    "ru": "Он посинел бы",
+    "en": "He would turn blue"
+   },
+   {
+    "ru": "Он съел бы икру",
+    "en": "He would eat the eggs"
+   },
+   {
+    "ru": "Он перестал бы плавать",
+    "en": "He would stop swimming"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Рыбы-клоуны меняют пол: когда самка пропадает, главный самец превращается в самку.",
+   "en": "Clownfish change sex: when the female disappears, the breeding male turns into a female."
+  },
+  "source": "https://en.wikipedia.org/wiki/Clownfish",
+  "basedOn": "cartoons_026",
+  "refine": "same",
+  "id": "cur_cartoons_09"
+ },
+ {
+  "id": "cur_cartoons_10",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой «Оскар» получил Уолт Дисней за «Белоснежку и семь гномов»?",
+   "en": "What Oscar did Walt Disney get for Snow White and the Seven Dwarfs?"
+  },
+  "options": [
+   {
+    "ru": "Большой и семь маленьких",
+    "en": "One big and seven tiny ones"
+   },
+   {
+    "ru": "Восемь обычных статуэток",
+    "en": "Eight ordinary statuettes"
+   },
+   {
+    "ru": "Золотое яблоко вместо статуэтки",
+    "en": "A golden apple, not a statuette"
+   },
+   {
+    "ru": "Статуэтку с семью гномами",
+    "en": "A statuette with seven dwarfs"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Почётную награду ему вручила 10-летняя Ширли Темпл: за фильм, который «очаровал миллионы» и открыл новый жанр кино.",
+   "en": "Ten-year-old Shirley Temple presented the honorary award, for a film that 'charmed millions' and pioneered a new kind of cinema."
+  },
+  "source": "https://en.wikipedia.org/wiki/Snow_White_and_the_Seven_Dwarfs_(1937_film)",
+  "basedOn": "cartoons_029",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что написано на надгробии Мела Бланка, голоса Багза Банни?",
+   "en": "What is written on the gravestone of Mel Blanc, the voice of Bugs Bunny?"
+  },
+  "options": [
+   {
+    "ru": "«Вот и всё, ребята!»",
+    "en": "That's all folks"
+   },
+   {
+    "ru": "«Что случилось, док?»",
+    "en": "What's up, Doc?"
+   },
+   {
+    "ru": "«Би-бип!»",
+    "en": "Beep beep!"
+   },
+   {
+    "ru": "«Тише, я охочусь на кроликов»",
+    "en": "Be vewy quiet, I'm hunting wabbits"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Этой фразой Поросёнок Порки голосом самого Бланка заканчивал мультфильмы Looney Tunes.",
+   "en": "Porky Pig, voiced by Blanc himself, closed the Looney Tunes cartoons with that line."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mel_Blanc",
+  "basedOn": "cartoons_028",
+  "refine": "rewrite",
+  "id": "cur_cartoons_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Господин Пинг из «Кунг-фу панды» раскрывает секрет своего фирменного супа. В чём он?",
+   "en": "Mr. Ping in Kung Fu Panda reveals the secret ingredient of his famous soup. What is it?"
+  },
+  "options": [
+   {
+    "ru": "Никакого секрета нет",
+    "en": "There is no secret"
+   },
+   {
+    "ru": "Бамбуковая соль",
+    "en": "Bamboo salt"
+   },
+   {
+    "ru": "Вода из горного родника",
+    "en": "Mountain spring water"
+   },
+   {
+    "ru": "Старинный рецепт предков",
+    "en": "An ancient family recipe"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Особенной вещь делает вера в неё. Так По понимает, почему свиток Дракона пуст. А сам Пинг — гусь и приёмный отец По.",
+   "en": "Things are special because you believe they are. That is how Po understands the blank Dragon Scroll. Ping, a goose, is Po's adoptive father."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kung_Fu_Panda_(film)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_cartoons_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1993 году Disney остановила работу над «Историей игрушек». Что не понравилось студии?",
+   "en": "In 1993 Disney halted work on Toy Story. What did the studio dislike?"
+  },
+  "options": [
+   {
+    "ru": "Вуди вышел злым грубияном",
+    "en": "Woody came out a nasty jerk"
+   },
+   {
+    "ru": "Игрушки выглядели жутко",
+    "en": "The toys looked creepy"
+   },
+   {
+    "ru": "Сюжет был слишком грустным",
+    "en": "The story was too sad"
+   },
+   {
+    "ru": "Компьютерные игрушки пугали детей",
+    "en": "Computer toys frightened children"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Записывая черновой вариант, Том Хэнкс сказал, что Вуди сделали «настоящим придурком». Сценарий переписали, и Вуди стал добрым ковбоем.",
+   "en": "Recording the early version, Tom Hanks said Woody had been made a 'real jerk'. The script was rewritten and Woody became the kind cowboy."
+  },
+  "source": "https://en.wikipedia.org/wiki/Toy_Story",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_cartoons_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Имя Скуби-Ду придумали, услышав концовку знаменитой песни. Чьей?",
+   "en": "Scooby-Doo's name was inspired by the end of a famous song. Whose?"
+  },
+  "options": [
+   {
+    "ru": "Фрэнка Синатры",
+    "en": "Frank Sinatra's"
+   },
+   {
+    "ru": "Элвиса Пресли",
+    "en": "Elvis Presley's"
+   },
+   {
+    "ru": "Группы «Битлз»",
+    "en": "The Beatles'"
+   },
+   {
+    "ru": "Луи Армстронга",
+    "en": "Louis Armstrong's"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Синатра напевает «ду-би-ду-би-ду» в конце «Strangers in the Night». А до этого пса в сценарии звали Too Much — «Чересчур».",
+   "en": "Sinatra scats 'doo-be-doo-be-doo' at the end of Strangers in the Night. In the first draft the dog was called Too Much."
+  },
+  "source": "https://en.wikipedia.org/wiki/Scooby-Doo",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_cartoons_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1929 году Микки Маус впервые заговорил, торгуя на ярмарке. Какими были его первые слова?",
+   "en": "In 1929 Mickey Mouse spoke for the first time, as a vendor at a fair. What were his first words?"
+  },
+  "options": [
+   {
+    "ru": "«Хот-доги! Хот-доги!»",
+    "en": "'Hot dogs! Hot dogs!'"
+   },
+   {
+    "ru": "«Сахарная вата!»",
+    "en": "'Candy floss!'"
+   },
+   {
+    "ru": "«Билеты на карусель!»",
+    "en": "'Tickets for the carousel!'"
+   },
+   {
+    "ru": "«Подходи, не скупись!»",
+    "en": "'Step right up!'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это мультфильм «Карнавальный мальчик». А сам Микки чуть не стал Мортимером: имя «Микки» предложила жена Диснея Лиллиан.",
+   "en": "The cartoon is The Karnival Kid. And Mickey was nearly called Mortimer: Disney's wife Lillian suggested 'Mickey'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mickey_Mouse",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_cartoons_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем занимался Стивен Хилленберг, создатель Губки Боба, до мультфильмов?",
+   "en": "What did Stephen Hillenburg, SpongeBob's creator, do before animation?"
+  },
+  "options": [
+   {
+    "ru": "Преподавал биологию моря",
+    "en": "Taught marine biology"
+   },
+   {
+    "ru": "Водил школьный автобус",
+    "en": "Drove a school bus"
+   },
+   {
+    "ru": "Чинил подводные лодки на верфи",
+    "en": "Repaired submarines at a shipyard"
+   },
+   {
+    "ru": "Ловил крабов на продажу",
+    "en": "Caught crabs for a living"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Для учеников он нарисовал книжку о жителях приливной зоны с ведущим Бобом-губкой. А летом в юности жарил рыбу в закусочной — как Губка Боб.",
+   "en": "For his students he drew a book on tide-pool animals hosted by Bob the Sponge. As a teen he was a summer fry cook, just like SpongeBob."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stephen_Hillenburg",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_cartoons_16"
+ },
+ {
+  "id": "cur_cartoons_17",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В «101 далматинце» Круэлла собрала 99 щенков. Сколько из них — родные дети Понго и Пэдди?",
+   "en": "In 101 Dalmatians Cruella gathers 99 puppies. How many of them are Pongo and Perdita's own?"
+  },
+  "answer": 15,
+  "range": [
+   1,
+   99
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "щенков",
+   "en": "puppies"
+  },
+  "fact": {
+   "ru": "15. Остальных 84 она скупила по зоомагазинам. В финале Понго и Пэдди забирают всех: вместе с ними самими выходит 101.",
+   "en": "15. She bought the other 84 in pet shops. In the end Pongo and Perdita take them all home: with the parents, that makes 101."
+  },
+  "source": "https://en.wikipedia.org/wiki/One_Hundred_and_One_Dalmatians",
+  "basedOn": "cartoons_043",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В «ВАЛЛ-И» людей увезли с Земли всего на 5 лет, пока роботы убирают мусор. Сколько лет их нет к началу фильма?",
+   "en": "In WALL-E, humans left Earth for 5 years while robots cleaned up. How long have they been gone when the film starts?"
+  },
+  "answer": 700,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 70,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "700 лет: уборку бросили, и пятилетний отпуск на космических лайнерах растянулся на века. Действие идёт в 2805 году.",
+   "en": "700 years: the cleanup was abandoned, and a five-year cruise in space stretched into centuries. The film is set in 2805."
+  },
+  "source": "https://en.wikipedia.org/wiki/WALL-E",
+  "basedOn": "cartoons_047",
+  "refine": "rewrite",
+  "id": "cur_cartoons_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Голливуд звал «Белоснежку» «безумием Диснея»: он хотел уложиться в 250 тысяч долларов. Во сколько тысяч она обошлась?",
+   "en": "Hollywood called Snow White 'Disney's Folly': he planned to spend $250,000. How many thousand dollars did it cost?"
+  },
+  "answer": 1490,
+  "range": [
+   250,
+   3000
+  ],
+  "step": 10,
+  "tolerance": 300,
+  "unit": {
+   "ru": "тыс. долларов",
+   "en": "thousand dollars"
+  },
+  "fact": {
+   "ru": "Около 1490 тысяч, почти вшестеро больше плана. Посреди работы Дисней занимал деньги под залог своего дома и брал кредит в банке.",
+   "en": "About 1,490 thousand, almost six times the plan. Midway through, Disney borrowed against his home and took a bank loan to finish it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Snow_White_and_the_Seven_Dwarfs_(1937_film)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_cartoons_23"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В «Вверх» дом поднимают 20 622 шарика. Сколько миллионов шариков, по расчёту Pixar, нужно на самом деле?",
+   "en": "In Up, 20,622 balloons lift the house. By Pixar's calculation, how many million would it really take?"
+  },
+  "answer": 23,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "млн шариков",
+   "en": "million balloons"
+  },
+  "fact": {
+   "ru": "23 миллиона. Но столько шариков выглядели бы в кадре мелкими точками, поэтому в фильме шарики крупнее настоящих.",
+   "en": "23 million. But that many would look like tiny dots on screen, so the film's balloons are bigger than real ones."
+  },
+  "source": "https://en.wikipedia.org/wiki/Up_(2009_film)",
+  "basedOn": "cartoons_025",
+  "refine": "rewrite",
+  "id": "cur_cartoons_20"
+ }
+]

@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Ацтеки платили бобами, а мошенники лепили фальшивые из теста и воска. Что это были за бобы?",
+   "en": "The Aztecs paid with beans, and cheats made fake ones from dough and wax. Which beans?"
+  },
+  "options": [
+   {
+    "ru": "Бобы какао",
+    "en": "Cocoa beans"
+   },
+   {
+    "ru": "Кофейные зёрна",
+    "en": "Coffee beans"
+   },
+   {
+    "ru": "Фасоль",
+    "en": "Kidney beans"
+   },
+   {
+    "ru": "Перец горошком",
+    "en": "Peppercorns"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "За 30 бобов давали маленького кролика, за один — большой помидор. Подделки лепили даже из осколков косточки авокадо.",
+   "en": "Thirty beans bought a small rabbit and one bean a large tomato. Fakes were even made from broken avocado stones."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_chocolate",
+  "basedOn": "money_012",
+  "refine": "rewrite",
+  "id": "cur_money_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Зачем немцы в 1923 году оклеивали стены банкнотами?",
+   "en": "Why did some Germans paper their walls with banknotes in 1923?"
+  },
+  "options": [
+   {
+    "ru": "Это было дешевле обоев",
+    "en": "It was cheaper than wallpaper"
+   },
+   {
+    "ru": "В знак протеста",
+    "en": "As a protest against the government"
+   },
+   {
+    "ru": "Чтобы спрятать подделки",
+    "en": "To hide forged notes"
+   },
+   {
+    "ru": "Чтобы отпугнуть налоговую",
+    "en": "To scare off the taxman"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "К ноябрю 1923 года доллар стоил 4,2 триллиона марок, и купюра в одну марку стоила меньше куска обоев.",
+   "en": "By November 1923 a dollar cost 4.2 trillion marks, so a one mark note was worth less than a strip of wallpaper."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hyperinflation_in_the_Weimar_Republic",
+  "basedOn": "money_009",
+  "refine": "rewrite",
+  "id": "cur_money_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На острове Яп платили огромными каменными дисками. Один утонул при перевозке. Что с ним стало?",
+   "en": "On the island of Yap people paid with huge stone discs. One sank while being shipped. What became of it?"
+  },
+  "options": [
+   {
+    "ru": "Им продолжали платить",
+    "en": "People kept paying with it"
+   },
+   {
+    "ru": "Его списали как пропажу",
+    "en": "It was written off as lost"
+   },
+   {
+    "ru": "Вместо него вырезали новый",
+    "en": "A new one was carved instead"
+   },
+   {
+    "ru": "Его объявили святыней",
+    "en": "It was declared sacred"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Камень так и не подняли, но все согласились, что он лежит на дне, и он по-прежнему переходил от владельца к владельцу.",
+   "en": "It was never raised, but everyone agreed it was still down there, so it kept passing from owner to owner."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rai_stones",
+  "basedOn": "money_004",
+  "refine": "rewrite",
+  "id": "cur_money_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Говорят, в Голландии 1630-х за одну луковицу просили цену дома. Луковицу какого цветка?",
+   "en": "In the 1630s Netherlands, it is said, one bulb could cost as much as a house. A bulb of which flower?"
+  },
+  "options": [
+   {
+    "ru": "Тюльпана",
+    "en": "Tulip"
+   },
+   {
+    "ru": "Розы",
+    "en": "Rose"
+   },
+   {
+    "ru": "Лилии",
+    "en": "Lily"
+   },
+   {
+    "ru": "Нарцисса",
+    "en": "Narcissus"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Луковицами торговали по распискам, пока они ещё сидели в земле, — «торговля ветром». В феврале 1637 года цены рухнули.",
+   "en": "Bulbs were traded on paper while still in the ground, the 'wind trade'. In February 1637 prices collapsed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tulip_mania",
+  "basedOn": "money_013",
+  "refine": "rewrite",
+  "id": "cur_money_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Английское salary (зарплата) происходит от латинского слова, означающего…",
+   "en": "The word salary comes from the Latin word for…"
+  },
+  "options": [
+   {
+    "ru": "соль",
+    "en": "salt"
+   },
+   {
+    "ru": "солнце",
+    "en": "sun"
+   },
+   {
+    "ru": "серебро",
+    "en": "silver"
+   },
+   {
+    "ru": "служба",
+    "en": "service"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "А «солдат» тоже от денег: от римской золотой монеты солид, ведь солдат служил за плату.",
+   "en": "Soldier comes from money too: from the solidus, a Roman gold coin, as a soldier was a man who served for pay."
+  },
+  "source": "https://en.wiktionary.org/wiki/salary",
+  "basedOn": "money_006",
+  "refine": "rewrite",
+  "id": "cur_money_05"
+ },
+ {
+  "id": "cur_money_21",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Туристы бросают в римский фонтан Треви монетки, чтобы вернуться. Куда потом идут эти деньги?",
+   "en": "Tourists toss coins into Rome's Trevi Fountain to make sure they come back. Where does that money go?"
+  },
+  "options": [
+   {
+    "ru": "На благотворительность",
+    "en": "To charity"
+   },
+   {
+    "ru": "В бюджет Рима",
+    "en": "Into Rome's city budget"
+   },
+   {
+    "ru": "На ремонт самого фонтана",
+    "en": "To repair the fountain itself"
+   },
+   {
+    "ru": "Никуда, лежат на дне",
+    "en": "Nowhere, it stays put"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Больше 3000 евро в день (1,4 млн за 2016 год) получает благотворительная организация «Каритас». Монету бросают правой рукой через левое плечо.",
+   "en": "Over €3,000 a day (€1.4 million in 2016) goes to the Caritas charity. You toss the coin with your right hand over your left shoulder."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trevi_Fountain",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_money_07",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что изображено на мостах с банкнот евро?",
+   "en": "What do the bridges on euro banknotes show?"
+  },
+  "options": [
+   {
+    "ru": "Выдуманные мосты",
+    "en": "Imaginary bridges"
+   },
+   {
+    "ru": "Мосты столиц еврозоны",
+    "en": "Bridges of eurozone capitals"
+   },
+   {
+    "ru": "Мосты Брюсселя",
+    "en": "Bridges in Brussels"
+   },
+   {
+    "ru": "Мосты стран-основательниц",
+    "en": "Bridges of the founding nations"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Их нарисовали обобщёнными, без мостов какой-то одной страны. А с 2011 года голландский Спейкениссе построил семь настоящих копий.",
+   "en": "They were drawn as generic styles, no one country's bridges. From 2011 the Dutch town of Spijkenisse built seven real copies."
+  },
+  "source": "https://en.wikipedia.org/wiki/Euro_banknotes",
+  "basedOn": "money_036",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему, по словам изобретателя банкомата, ПИН-код состоит из четырёх цифр?",
+   "en": "According to the ATM's inventor, why does a PIN have four digits?"
+  },
+  "options": [
+   {
+    "ru": "Так запоминала его жена",
+    "en": "His wife could only recall 4"
+   },
+   {
+    "ru": "Предел магнитной полосы",
+    "en": "The magnetic stripe's limit"
+   },
+   {
+    "ru": "Так решил союз банков",
+    "en": "A bank union ruled it"
+   },
+   {
+    "ru": "У банкоматов было 4 кнопки",
+    "en": "The first ATMs had four keys"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Джон Шеперд-Баррон хотел шесть цифр, но, как он рассказывал, его жена Кэролайн запоминала не больше четырёх.",
+   "en": "John Shepherd-Barron wanted six digits but, as he told it, his wife Caroline could remember no more than four."
+  },
+  "source": "https://en.wikipedia.org/wiki/John_Shepherd-Barron",
+  "basedOn": "money_016",
+  "refine": "same",
+  "id": "cur_money_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2010 году программист купил две пиццы за биткоины. Сколько биткоинов он отдал?",
+   "en": "In 2010 a programmer bought two pizzas with bitcoin. How many bitcoins did he pay?"
+  },
+  "options": [
+   {
+    "ru": "10 000",
+    "en": "10,000"
+   },
+   {
+    "ru": "10",
+    "en": "10"
+   },
+   {
+    "ru": "1 000",
+    "en": "1,000"
+   },
+   {
+    "ru": "50 000",
+    "en": "50,000"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Первая известная покупка за биткоины. В декабре 2024-го биткоин впервые стоил 100 000 $, и эти пиццы потянули бы на миллиард.",
+   "en": "The first known bitcoin purchase. In December 2024 a bitcoin first reached $100,000, which made those pizzas worth a billion."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_bitcoin",
+  "basedOn": "money_017",
+  "refine": "rewrite",
+  "id": "cur_money_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем в XVII веке у монет стали делать рифлёный гурт (ребро)?",
+   "en": "Why did coins start getting ridged edges in the 17th century?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы не срезали металл",
+    "en": "To stop metal being shaved off"
+   },
+   {
+    "ru": "Чтобы их не катали по столу",
+    "en": "To stop them rolling off tables"
+   },
+   {
+    "ru": "Ради экономии серебра",
+    "en": "To save silver"
+   },
+   {
+    "ru": "Чтобы их было удобно складывать",
+    "en": "To make them stack neatly"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Хитрецы обрезали края серебряных монет и продавали стружку, а ровное рифление сразу выдавало порчу.",
+   "en": "Cheats clipped silver off coin edges and sold the shavings; a neat ridged edge showed any tampering at once."
+  },
+  "source": "https://en.wikipedia.org/wiki/Reeding",
+  "basedOn": "money_033",
+  "refine": "rewrite",
+  "id": "cur_money_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Самая крупная купюра США — 100 000 долларов с портретом Вудро Вильсона (1934). Кто мог ею расплачиваться?",
+   "en": "The largest US note ever is the $100,000 bill with Woodrow Wilson (1934). Who could pay with it?"
+  },
+  "options": [
+   {
+    "ru": "Только банки ФРС между собой",
+    "en": "Only Federal Reserve Banks"
+   },
+   {
+    "ru": "Любой гражданин США",
+    "en": "Any American citizen"
+   },
+   {
+    "ru": "Только президент и министры",
+    "en": "Only the president and ministers"
+   },
+   {
+    "ru": "Только иностранные правительства",
+    "en": "Only foreign governments"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её никогда не выпускали в обращение: ею рассчитывались только банки Федеральной резервной системы. Частным лицам владеть ею незаконно.",
+   "en": "It was never issued to the public: only Federal Reserve Banks used it among themselves. Private people may not legally own one."
+  },
+  "source": "https://en.wikipedia.org/wiki/Large_denominations_of_United_States_currency",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_money_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой была самая крупная купюра Зимбабве, выпущенная в 2009 году?",
+   "en": "What was Zimbabwe's biggest banknote, issued in 2009?"
+  },
+  "options": [
+   {
+    "ru": "100 триллионов долларов",
+    "en": "100 trillion dollars"
+   },
+   {
+    "ru": "1 миллион долларов",
+    "en": "1 million dollars"
+   },
+   {
+    "ru": "500 миллиардов долларов",
+    "en": "500 billion dollars"
+   },
+   {
+    "ru": "50 миллиардов долларов",
+    "en": "50 billion dollars"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "После двух деноминаций это 10²⁷ первых зимбабвийских долларов, а в апреле 2009 года от валюты вовсе отказались.",
+   "en": "After two redenominations it equalled 10²⁷ original Zimbabwe dollars; by April 2009 the currency was abandoned."
+  },
+  "source": "https://en.wikipedia.org/wiki/Zimbabwean_dollar_(1980%E2%80%932009)",
+  "basedOn": "money_020",
+  "refine": "rewrite",
+  "id": "cur_money_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда, по самой признанной версии, взялся знак доллара $?",
+   "en": "According to the most accepted theory, where does the dollar sign $ come from?"
+  },
+  "options": [
+   {
+    "ru": "Из сокращения «песо»",
+    "en": "An abbreviation of pesos"
+   },
+   {
+    "ru": "Из букв U и S",
+    "en": "The letters U and S"
+   },
+   {
+    "ru": "Из колонн Геракла",
+    "en": "The Pillars of Hercules"
+   },
+   {
+    "ru": "Из змеи, обвившей посох",
+    "en": "A snake coiled round a staff"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Испанские купцы писали «ps»; буква s налезла на p, и вышел $. Версию с буквами U и S историки считают опровергнутой.",
+   "en": "Spanish traders wrote 'ps' for pesos; the s ran over the p and became $. The U and S theory is seen as disproved."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dollar_sign",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_money_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Тех, кто играл на понижение, в Лондоне XVIII века прозвали «медведями». Почему?",
+   "en": "In 18th century London, traders betting on a fall were called bears. Why?"
+  },
+  "options": [
+   {
+    "ru": "Продавали шкуру неубитого медведя",
+    "en": "Sold the skin of an uncaught bear"
+   },
+   {
+    "ru": "Медведь бьёт лапой сверху вниз",
+    "en": "A bear swipes its paw downward"
+   },
+   {
+    "ru": "Медведь в спячке, пока рынок падает",
+    "en": "Bears hibernate while prices fall"
+   },
+   {
+    "ru": "У биржи стояла таверна «Медведь»",
+    "en": "A tavern called The Bear was nearby"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Они продавали акции, которых у них ещё не было. А лапа медведя и рога быка — позднейшая народная версия.",
+   "en": "They sold shares they did not own yet. The bear's paw and the bull's horns are a later folk explanation."
+  },
+  "source": "https://en.wikipedia.org/wiki/Market_trend",
+  "basedOn": "money_010",
+  "refine": "rewrite",
+  "id": "cur_money_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Склады итальянского банка Credem вмещают сотни тысяч головок пармезана. Зачем банку сыр?",
+   "en": "The Italian bank Credem has warehouses for hundreds of thousands of Parmesan wheels. Why does a bank need cheese?"
+  },
+  "options": [
+   {
+    "ru": "Это залог по кредитам",
+    "en": "They are loan collateral"
+   },
+   {
+    "ru": "Это запас на случай кризиса",
+    "en": "A reserve for a crisis"
+   },
+   {
+    "ru": "Ими платят проценты по вкладам",
+    "en": "They pay interest with them"
+   },
+   {
+    "ru": "Это коллекция основателя",
+    "en": "The founder's collection"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сыр зреет годами, и с 1953 года сыровары берут кредиты под его залог. Склады банка вмещают около 440 000 головок.",
+   "en": "The cheese takes years to age, so since 1953 makers borrow against it. The bank's stores can hold about 440,000 wheels."
+  },
+  "source": "https://en.wikipedia.org/wiki/Credito_Emiliano",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_money_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На канадский доллар хотели поместить путешественников в каноэ, но в 1987 году на нём оказалась птица гагара. Почему?",
+   "en": "Canada's dollar coin was to show travellers in a canoe, but in 1987 it got a loon instead. Why?"
+  },
+  "options": [
+   {
+    "ru": "Пропали штампы для чеканки",
+    "en": "The minting dies went missing"
+   },
+   {
+    "ru": "Каноэ сочли устаревшим",
+    "en": "The canoe seemed old-fashioned"
+   },
+   {
+    "ru": "Гагара победила в голосовании",
+    "en": "The loon won a public vote"
+   },
+   {
+    "ru": "Каноэ не уместилось на монете",
+    "en": "The canoe did not fit the coin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Чтобы сэкономить 43,50 $, монетный двор отправил штампы местным курьером, и их так и не нашли. Монету прозвали «луни», а 2 доллара — «туни».",
+   "en": "To save $43.50 the Mint sent the dies by local courier and they were never found. The coin became the 'loonie', the $2 the 'toonie'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Loonie",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_money_23"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "По оценке ФРС (2025), купюра в 1 доллар живёт в обороте около 7 лет. А сколько лет живёт купюра в 100 долларов?",
+   "en": "The US Federal Reserve (2025) says a $1 bill lasts about 7 years in circulation. How many years does a $100 bill last?"
+  },
+  "answer": 24,
+  "range": [
+   0,
+   60
+  ],
+  "step": 0.5,
+  "tolerance": 4,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "24 года: сотни чаще копят, чем тратят, и они реже переходят из рук в руки. Меньше всех живут купюры в 5 и 10 долларов, меньше 6 лет.",
+   "en": "24 years: hundreds are saved more than spent, so they change hands less often. The $5 and $10 bills last least, under 6 years."
+  },
+  "source": "https://www.federalreserve.gov/faqs/how-long-is-the-life-span-of-us-paper-money.htm",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_money_24"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько весит миллион долларов сотенными купюрами — как в кейсе из боевика?",
+   "en": "How much does one million dollars in 100 dollar bills weigh, as in an action film briefcase?"
+  },
+  "answer": 10,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Любая купюра весит около грамма, так что 10 000 сотен — это около 10 кг.",
+   "en": "Every US bill weighs about a gram, so 10,000 hundreds come to about 10 kg."
+  },
+  "source": "https://www.bep.gov/currency/faqs",
+  "basedOn": "money_046",
+  "refine": "rewrite",
+  "id": "cur_money_18"
+ },
+ {
+  "id": "cur_money_19",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Всё золото, добытое людьми за всю историю, сплавили в один куб. Какой длины было бы его ребро?",
+   "en": "If all the gold ever mined were cast into one cube, how long would each side be?"
+  },
+  "answer": 22.6,
+  "range": [
+   0,
+   150
+  ],
+  "step": 0.2,
+  "tolerance": 3,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Около 22,6 м: добыто примерно 220 тысяч тонн золота, но кубометр золота весит 19 т. Куб вышел бы с 7-этажный дом.",
+   "en": "About 22.6 m: some 220,000 tonnes have been mined, but a cubic metre of gold weighs 19 tonnes. A cube 7 storeys tall."
+  },
+  "source": "https://www.gold.org/goldhub/data/how-much-gold",
+  "basedOn": "money_041",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Миллион однодолларовых купюр сложили в одну стопку. Какой высоты она получилась бы?",
+   "en": "A million one-dollar bills are piled into a single stack. How tall would it be?"
+  },
+  "answer": 109,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Около 109 м: купюра толщиной всего 0,11 мм, но миллион таких — это стопка с 35-этажный дом.",
+   "en": "About 109 m: a bill is only 0.11 mm thick, but a million of them make a stack as tall as a 35-storey building."
+  },
+  "source": "https://en.wikipedia.org/wiki/United_States_one-dollar_bill",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_money_26"
+ }
+]

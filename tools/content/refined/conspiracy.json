@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Для чего на самом деле в 1955 году построили «Зону 51»?",
+   "en": "What was Area 51 actually built for in 1955?"
+  },
+  "options": [
+   {
+    "ru": "Прятать упавшую летающую тарелку",
+    "en": "To hide a crashed flying saucer"
+   },
+   {
+    "ru": "Готовить астронавтов",
+    "en": "To train astronauts"
+   },
+   {
+    "ru": "Испытывать самолёт-шпион U-2",
+    "en": "To test the U-2 spy plane"
+   },
+   {
+    "ru": "Укрыть президента от войны",
+    "en": "To shelter the president"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "U-2 летал выше 18 км, и пилоты авиалайнеров, видя на закате блеск его серебристых крыльев, сообщали об НЛО.",
+   "en": "The U-2 flew above 18 km, and airline pilots who saw its silver wings glint at sunset reported UFOs."
+  },
+  "source": "https://en.wikipedia.org/wiki/Area_51",
+  "basedOn": "conspiracy_003",
+  "refine": "rewrite",
+  "id": "cur_conspiracy_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Многие уверены, что помнят эту деталь у Пикачу, хотя у него её никогда не было. Какую?",
+   "en": "Many people are sure they remember this detail on Pikachu, though he never had it. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Чёрный кончик хвоста",
+    "en": "A black tip on his tail"
+   },
+   {
+    "ru": "Красные кружки на щеках",
+    "en": "Red circles on his cheeks"
+   },
+   {
+    "ru": "Чёрные кончики ушей",
+    "en": "Black tips on his ears"
+   },
+   {
+    "ru": "Коричневые полоски на спине",
+    "en": "Brown stripes on his back"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это «эффект Манделы», общая ложная память. Имя ему дала Фиона Брум: сотни людей «помнили», что Мандела умер в тюрьме в 1980-х.",
+   "en": "It's the 'Mandela effect', a shared false memory. Fiona Broome named it: hundreds 'remembered' Mandela dying in prison in the 1980s."
+  },
+  "source": "https://en.wikipedia.org/wiki/False_memory",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_conspiracy_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Шуточная теория «Птиц не существует» утверждает, что птицы на самом деле —",
+   "en": "The joke theory 'Birds Aren't Real' claims that birds are actually…"
+  },
+  "options": [
+   {
+    "ru": "голограммы",
+    "en": "holograms"
+   },
+   {
+    "ru": "пришельцы",
+    "en": "aliens"
+   },
+   {
+    "ru": "мутанты из лаборатории",
+    "en": "lab-grown mutants"
+   },
+   {
+    "ru": "дроны для слежки",
+    "en": "spy drones"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Шутку придумал в 2017 году Питер Макиндоу: птиц якобы заменили дронами, а на проводах они «заряжаются». В 2021-м он признал, что это сатира.",
+   "en": "Peter McIndoe made it up in 2017: birds were swapped for drones that 'recharge' on power lines. In 2021 he admitted it was satire."
+  },
+  "source": "https://en.wikipedia.org/wiki/Birds_Aren%27t_Real",
+  "basedOn": "conspiracy_008",
+  "refine": "rewrite",
+  "id": "cur_conspiracy_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему на фотографиях с Луны не видно звёзд?",
+   "en": "Why are there no stars in the photos taken on the Moon?"
+  },
+  "options": [
+   {
+    "ru": "Короткая выдержка камер",
+    "en": "Short camera exposures"
+   },
+   {
+    "ru": "Звёзды стёрли ретушью",
+    "en": "Stars were retouched out"
+   },
+   {
+    "ru": "Их скрыла атмосфера Луны",
+    "en": "The Moon's air hid them"
+   },
+   {
+    "ru": "Пыль на объективах",
+    "en": "Dust on the lenses"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Снимали лунным днём с короткой выдержкой; на ночном фото стадиона под прожекторами звёзд тоже не видно.",
+   "en": "Shots were taken in lunar daylight with short exposures; a night photo of a floodlit stadium shows no stars either."
+  },
+  "source": "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories",
+  "basedOn": "conspiracy_009",
+  "refine": "same",
+  "id": "cur_conspiracy_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Бывший вратарь и спортивный ведущий Би-би-си Дэвид Айк уверяет, что многие мировые лидеры на самом деле —",
+   "en": "David Icke, a former goalkeeper and BBC sports presenter, insists that many world leaders are really…"
+  },
+  "options": [
+   {
+    "ru": "ящеры-пришельцы",
+    "en": "alien lizards"
+   },
+   {
+    "ru": "роботы-двойники",
+    "en": "robot doubles"
+   },
+   {
+    "ru": "клоны из пробирок",
+    "en": "test-tube clones"
+   },
+   {
+    "ru": "вампиры-долгожители",
+    "en": "ageless vampires"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ящеры, по Айку, прилетели из созвездия Дракона. Футбол он бросил в 21 год из-за артрита, а книгу о ящерах выпустил в 1999-м.",
+   "en": "Icke says the lizards came from the constellation Draco. He quit football at 21 with arthritis and wrote his lizard book in 1999."
+  },
+  "source": "https://en.wikipedia.org/wiki/David_Icke",
+  "basedOn": "conspiracy_005",
+  "refine": "rewrite",
+  "id": "cur_conspiracy_05"
+ },
+ {
+  "id": "cur_conspiracy_06",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Конспирологи зовут белые следы за самолётами «химтрейлами»: мол, с неба распыляют яд. Из чего они на самом деле?",
+   "en": "Conspiracy fans call the white trails behind planes 'chemtrails', poison sprayed from the sky. What are they really?"
+  },
+  "options": [
+   {
+    "ru": "Из сброшенного топлива",
+    "en": "Dumped fuel"
+   },
+   {
+    "ru": "Из кристалликов льда",
+    "en": "Tiny ice crystals"
+   },
+   {
+    "ru": "Из масляного тумана",
+    "en": "Engine oil mist"
+   },
+   {
+    "ru": "Из реагентов от гроз",
+    "en": "Anti-storm chemicals"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Двигатель выбрасывает водяной пар, а выше 8 км мороз около −40 °C: пар тут же замерзает в лёд. Это тот же пар изо рта на морозе.",
+   "en": "Engines give off water vapour, and above 8 km it is around −40 °C, so it freezes into ice at once, like your breath on a frosty day."
+  },
+  "source": "https://en.wikipedia.org/wiki/Contrail",
+  "basedOn": "conspiracy_006",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую «улику» гибели Пола Маккартни фанаты нашли на обложке альбома Abbey Road?",
+   "en": "What 'clue' to Paul McCartney's death did fans spot on the Abbey Road album cover?"
+  },
+  "options": [
+   {
+    "ru": "Он несёт венок",
+    "en": "He carries a wreath"
+   },
+   {
+    "ru": "Он держит чёрный зонт",
+    "en": "He holds a black umbrella"
+   },
+   {
+    "ru": "Он идёт спиной вперёд",
+    "en": "He walks backwards"
+   },
+   {
+    "ru": "Он идёт босиком",
+    "en": "He walks barefoot"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Пол просто скинул сандалии: день был жаркий. А в 1993 году он выпустил альбом Paul Is Live с пародией на ту самую обложку.",
+   "en": "Paul had just kicked off his sandals on a hot day. In 1993 he released an album called Paul Is Live, its cover a parody of that one."
+  },
+  "source": "https://en.wikipedia.org/wiki/Paul_is_dead",
+  "basedOn": "conspiracy_004",
+  "refine": "rewrite",
+  "id": "cur_conspiracy_07"
+ },
+ {
+  "id": "cur_conspiracy_08",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Книга 1920 года уверяла: Шекспира написал граф Оксфорд. Какой великий учёный, сам искавший скрытые смыслы, ей поверил?",
+   "en": "A 1920 book said the Earl of Oxford wrote Shakespeare. Which great scientist, a hunter of hidden meanings, believed it?"
+  },
+  "options": [
+   {
+    "ru": "Альберт Эйнштейн",
+    "en": "Albert Einstein"
+   },
+   {
+    "ru": "Зигмунд Фрейд",
+    "en": "Sigmund Freud"
+   },
+   {
+    "ru": "Чарлз Дарвин",
+    "en": "Charles Darwin"
+   },
+   {
+    "ru": "Мария Кюри",
+    "en": "Marie Curie"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Фрейд прочёл книгу Томаса Луни в 1923 году и верил ей до конца жизни. А фамилия автора по-английски пишется почти как «чокнутый».",
+   "en": "Freud read J. Thomas Looney's book in 1923 and believed it to the end of his life. Yes, the author's name really was Looney."
+  },
+  "source": "https://en.wikipedia.org/wiki/J._Thomas_Looney",
+  "basedOn": "conspiracy_018",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По одной теории, 300 лет Средневековья выдуманы, а с ними и знаменитый правитель. Кто?",
+   "en": "One theory says 300 years of the Middle Ages were invented, along with a famous ruler. Who?"
+  },
+  "options": [
+   {
+    "ru": "Ричард Львиное Сердце",
+    "en": "Richard the Lionheart"
+   },
+   {
+    "ru": "Чингисхан",
+    "en": "Genghis Khan"
+   },
+   {
+    "ru": "Вильгельм Завоеватель",
+    "en": "William the Conqueror"
+   },
+   {
+    "ru": "Карл Великий",
+    "en": "Charlemagne"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Хериберт Илиг в 1991 году «вычеркнул» 614–911 годы. Но записи о затмениях, годичные кольца деревьев и китайские хроники сходятся с обычными датами.",
+   "en": "In 1991 Heribert Illig 'struck out' the years 614 to 911. Yet eclipse records, tree rings and Chinese chronicles all fit the usual dates."
+  },
+  "source": "https://en.wikipedia.org/wiki/Phantom_time_hypothesis",
+  "basedOn": "conspiracy_020",
+  "refine": "rewrite",
+  "id": "cur_conspiracy_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Эмблему какой организации сторонники плоской Земли приводят как «доказательство»?",
+   "en": "Which organisation's emblem do flat-earthers cite as 'proof'?"
+  },
+  "options": [
+   {
+    "ru": "ООН",
+    "en": "The UN"
+   },
+   {
+    "ru": "НАТО",
+    "en": "NATO"
+   },
+   {
+    "ru": "Олимпийского комитета",
+    "en": "The Olympic Committee"
+   },
+   {
+    "ru": "ФИФА",
+    "en": "FIFA"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На ней карта в азимутальной проекции с центром на Северном полюсе: так шар рисуют плоским, а не наоборот.",
+   "en": "It is an azimuthal map centred on the North Pole: a way to draw a globe flat, not a picture of a flat world."
+  },
+  "source": "https://en.wikipedia.org/wiki/Modern_flat_Earth_beliefs",
+  "basedOn": "conspiracy_025",
+  "refine": "same",
+  "id": "cur_conspiracy_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2019 году немецкий город Билефельд пообещал миллион евро тому, кто докажет… что?",
+   "en": "In 2019 the German city of Bielefeld offered a million euros to anyone who could prove… what?"
+  },
+  "options": [
+   {
+    "ru": "Что Билефельда не существует",
+    "en": "That Bielefeld doesn't exist"
+   },
+   {
+    "ru": "Что под ратушей зарыт клад",
+    "en": "That treasure lies under the town hall"
+   },
+   {
+    "ru": "Что в городе родился Бетховен",
+    "en": "That Beethoven was born there"
+   },
+   {
+    "ru": "Что в нём живут пришельцы",
+    "en": "That aliens live there"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шутку о «несуществующем» городе запустил студент в интернете в 1994 году. Доказать никто не смог, и город объявил заговор закрытым.",
+   "en": "A student started the joke about the 'non-existent' city online in 1994. Nobody could prove it, so the city declared the plot closed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bielefeld_conspiracy",
+  "basedOn": "conspiracy_026",
+  "refine": "rewrite",
+  "id": "cur_conspiracy_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По одной теории, вместо «Титаника» затонул его близнец. Как он назывался?",
+   "en": "One theory says Titanic's twin sank in her place. What was the twin called?"
+  },
+  "options": [
+   {
+    "ru": "«Лузитания»",
+    "en": "Lusitania"
+   },
+   {
+    "ru": "«Карпатия»",
+    "en": "Carpathia"
+   },
+   {
+    "ru": "«Мавритания»",
+    "en": "Mauretania"
+   },
+   {
+    "ru": "«Олимпик»",
+    "en": "Olympic"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Со дна подняли много вещей с номером 401 — заводским номером «Титаника». У «Олимпика» был 400, и он плавал до 1935 года.",
+   "en": "Many items raised from the wreck bear 401, Titanic's yard number. Olympic's was 400, and she sailed on until 1935."
+  },
+  "source": "https://en.wikipedia.org/wiki/Titanic_conspiracy_theories",
+  "basedOn": "conspiracy_028",
+  "refine": "rewrite",
+  "id": "cur_conspiracy_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что сделал 72-летний Базз Олдрин в 2002 году, когда конспиролог назвал его трусом и лжецом?",
+   "en": "What did Buzz Aldrin, 72, do in 2002 when a hoax believer called him a coward and a liar?"
+  },
+  "options": [
+   {
+    "ru": "Подал на него в суд",
+    "en": "Sued him"
+   },
+   {
+    "ru": "Вызвал его на дуэль",
+    "en": "Challenged him to a duel"
+   },
+   {
+    "ru": "Подарил ему лунный камень",
+    "en": "Gave him a Moon rock"
+   },
+   {
+    "ru": "Ударил его в челюсть",
+    "en": "Punched him on the jaw"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Барт Сибрел заманил его обманом и тыкал в него Библией, требуя клятвы; обвинений Олдрину так и не предъявили.",
+   "en": "Bart Sibrel had lured him there under false pretences and jabbed him with a Bible; Aldrin was never charged."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bart_Sibrel",
+  "basedOn": "conspiracy_032",
+  "refine": "same",
+  "id": "cur_conspiracy_13"
+ },
+ {
+  "id": "cur_conspiracy_14",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что многие «помнят» у человечка из «Монополии», хотя на классических картинках этого нет?",
+   "en": "What do many people 'remember' on the Monopoly mascot, though the classic pictures don't show it?"
+  },
+  "options": [
+   {
+    "ru": "Цилиндр",
+    "en": "A top hat"
+   },
+   {
+    "ru": "Усы",
+    "en": "A moustache"
+   },
+   {
+    "ru": "Монокль",
+    "en": "A monocle"
+   },
+   {
+    "ru": "Галстук-бабочку",
+    "en": "A bow tie"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Цилиндр, усы и бабочка у него есть, а монокля на классических картинках нет. Такую общую ложную память многих людей зовут «эффектом Манделы».",
+   "en": "He has the top hat, moustache and bow tie, but no monocle in the classic pictures. A false memory shared by many is called the 'Mandela effect'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rich_Uncle_Pennybags",
+  "basedOn": "conspiracy_035",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_conspiracy_15",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Иллюминаты — значит «просвещённые». Какой символ был у настоящего ордена иллюминатов из Баварии?",
+   "en": "Illuminati means 'the enlightened'. What symbol did the real Illuminati order of Bavaria use?"
+  },
+  "options": [
+   {
+    "ru": "Глаз в треугольнике",
+    "en": "An eye in a triangle"
+   },
+   {
+    "ru": "Сова на книге",
+    "en": "An owl on a book"
+   },
+   {
+    "ru": "Пирамида с солнцем",
+    "en": "A pyramid with a sun"
+   },
+   {
+    "ru": "Змея на факеле",
+    "en": "A snake on a torch"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Сова Минервы, богини мудрости. А глаз над пирамидой на долларе, который зовут знаком иллюминатов, — христианское Око Провидения.",
+   "en": "The owl of Minerva, goddess of wisdom. The eye above the pyramid on the dollar, called an Illuminati sign, is the Christian Eye of Providence."
+  },
+  "source": "https://en.wikipedia.org/wiki/Illuminati",
+  "basedOn": "conspiracy_036",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Конец света 21 декабря 2012 года «вычитали» в календаре майя. Что на самом деле заканчивалось в тот день?",
+   "en": "The 21 December 2012 doomsday was 'read' in the Maya calendar. What really ended that day?"
+  },
+  "options": [
+   {
+    "ru": "Большой цикл календаря",
+    "en": "A long calendar cycle"
+   },
+   {
+    "ru": "Место на каменной плите",
+    "en": "Room on the stone tablet"
+   },
+   {
+    "ru": "Список царей майя",
+    "en": "The list of Maya kings"
+   },
+   {
+    "ru": "Цикл затмений Венеры",
+    "en": "A cycle of Venus eclipses"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кончался 13-й бактун, цикл в 5125 лет, и счёт шёл дальше, как на счётчике пробега. А в надписи из Паленке есть дата в 4772 году.",
+   "en": "The 13th b'ak'tun, a 5,125-year cycle, ended and the count rolled on like an odometer. An inscription at Palenque names a date in 4772."
+  },
+  "source": "https://en.wikipedia.org/wiki/2012_phenomenon",
+  "basedOn": "conspiracy_010",
+  "refine": "rewrite",
+  "id": "cur_conspiracy_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Плоскоземельцы купили лазерный гироскоп, чтобы доказать, что Земля не вертится. Сколько градусов в час он показал?",
+   "en": "Flat-earthers bought a costly laser gyroscope to prove the Earth doesn't spin. How many degrees per hour did it show?"
+  },
+  "answer": 15,
+  "range": [
+   0,
+   90
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "°/ч",
+   "en": "°/h"
+  },
+  "fact": {
+   "ru": "Ровно столько даёт вращение Земли: 360° за 24 часа. Они решили, что прибор ошибся; это попало в фильм «За кривой» (2018).",
+   "en": "Exactly the Earth's spin, 360° in 24 hours. They decided the device was wrong; it ended up in the 2018 film Behind the Curve."
+  },
+  "source": "https://en.wikipedia.org/wiki/Modern_flat_Earth_beliefs",
+  "basedOn": "conspiracy_044",
+  "refine": "rewrite",
+  "id": "cur_conspiracy_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На «штурм Зоны 51» в 2019 году записались 2 миллиона. Сколько человек пришли к воротам базы?",
+   "en": "Two million signed up online to 'storm Area 51' in 2019. How many actually turned up at the gates?"
+  },
+  "answer": 150,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 10,
+  "tolerance": 100,
+  "unit": {
+   "ru": "человек",
+   "en": "people"
+  },
+  "fact": {
+   "ru": "Около 150 человек дошли до ворот, и никто не прорвался; ещё примерно 1500 гуляли на фестивалях по соседству.",
+   "en": "About 150 people reached the gates and nobody got in; some 1,500 more went to festivals nearby instead."
+  },
+  "source": "https://en.wikipedia.org/wiki/Storm_Area_51",
+  "basedOn": "conspiracy_050",
+  "refine": "same",
+  "id": "cur_conspiracy_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1969 году на Земле жили около 3,6 млрд человек. Сколько миллионов из них смотрели первые шаги на Луне в прямом эфире?",
+   "en": "In 1969 about 3.6 billion people lived on Earth. How many million of them watched the first steps on the Moon live?"
+  },
+  "answer": 600,
+  "range": [
+   0,
+   3600
+  ],
+  "step": 10,
+  "tolerance": 150,
+  "unit": {
+   "ru": "млн человек",
+   "en": "million people"
+  },
+  "fact": {
+   "ru": "Около 600 миллионов, примерно каждый пятый житель Земли. Подделку в студии пришлось бы разыграть вживую на глазах у всей планеты.",
+   "en": "About 600 million, roughly one person in five on Earth. A studio fake would have had to be staged live in front of the whole planet."
+  },
+  "source": "https://en.wikipedia.org/wiki/Apollo_11",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_conspiracy_22"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Говорят, иллюминаты веками тайно правят миром. Сколько лет продержался настоящий орден, основанный в 1776 году?",
+   "en": "They say the Illuminati have ruled the world for centuries. How many years did the real order, founded in 1776, last?"
+  },
+  "answer": 9,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Около девяти: в 1784–1785 годах курфюрст Баварии запретил тайные общества, и орден этого не пережил. Его «тайную жизнь» потом выдумали авторы книг.",
+   "en": "About nine: in 1784–85 the Elector of Bavaria banned secret societies, and the order did not survive. Its 'secret life' was later invented by writers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Illuminati",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_conspiracy_23"
+ }
+]

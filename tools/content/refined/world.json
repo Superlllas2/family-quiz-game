@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Италия на карте похожа на сапог. Что этот «сапог» будто пинает носком, как мяч?",
+   "en": "On the map Italy looks like a boot. What does the boot seem to kick with its toe, like a ball?"
+  },
+  "options": [
+   {
+    "ru": "Сицилию",
+    "en": "Sicily"
+   },
+   {
+    "ru": "Сардинию",
+    "en": "Sardinia"
+   },
+   {
+    "ru": "Корсику",
+    "en": "Corsica"
+   },
+   {
+    "ru": "Мальту",
+    "en": "Malta"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Носок — это Калабрия, от Сицилии её отделяет Мессинский пролив шириной около 3 км. А каблук сапога — полуостров Саленто.",
+   "en": "The toe is Calabria, just 3 km from Sicily across the Strait of Messina. The boot's heel is the Salento peninsula."
+  },
+  "source": "https://en.wikipedia.org/wiki/Calabria",
+  "basedOn": "world_001",
+  "refine": "rewrite",
+  "id": "cur_world_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Ватикан — целая страна внутри Рима. Сколько примерно идти пешком вдоль всей его границы?",
+   "en": "Vatican City is a whole country inside Rome. Roughly how long does it take to walk its entire border?"
+  },
+  "options": [
+   {
+    "ru": "Меньше часа",
+    "en": "Under an hour"
+   },
+   {
+    "ru": "Около трёх часов",
+    "en": "About three hours"
+   },
+   {
+    "ru": "Целый день",
+    "en": "A whole day"
+   },
+   {
+    "ru": "Около двух дней",
+    "en": "About two days"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Граница Ватикана с Италией — всего 3,2 км, это минут сорок спокойным шагом. Вся страна меньше половины квадратного километра.",
+   "en": "Vatican City's border with Italy is just 3.2 km, about forty minutes at an easy pace. The whole country is under half a square kilometre."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_by_land_borders",
+  "basedOn": "world_003",
+  "refine": "rewrite",
+  "id": "cur_world_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Эквадор назван в честь экватора. Что не так с памятником «Середина мира» под его столицей?",
+   "en": "Ecuador is named after the equator. What is wrong with the Middle of the World monument near its capital?"
+  },
+  "options": [
+   {
+    "ru": "Он стоит мимо экватора",
+    "en": "It misses the equator"
+   },
+   {
+    "ru": "Он в соседней Колумбии",
+    "en": "It is in Colombia next door"
+   },
+   {
+    "ru": "Его строили сто лет",
+    "en": "It took a century to build"
+   },
+   {
+    "ru": "Он ниже уровня моря",
+    "en": "It is below sea level"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ecuador по-испански — «экватор». Но, как показали измерения GPS, настоящий экватор проходит в 240 м к северу от линии на памятнике.",
+   "en": "Ecuador is Spanish for 'equator'. But GPS showed that the real equator runs 240 m north of the line marked on the monument."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ciudad_Mitad_del_Mundo",
+  "basedOn": "world_005",
+  "refine": "rewrite",
+  "id": "cur_world_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Шотландская деревня Dull («Скучная») породнилась с городком в США. Как он называется?",
+   "en": "The Scottish village of Dull is twinned with an American town. What is it called?"
+  },
+  "options": [
+   {
+    "ru": "Boring («Занудный»)",
+    "en": "Boring"
+   },
+   {
+    "ru": "Sleepy («Сонливый»)",
+    "en": "Sleepy"
+   },
+   {
+    "ru": "Yawn («Зевок»)",
+    "en": "Yawn"
+   },
+   {
+    "ru": "Tedium («Тоска»)",
+    "en": "Tedium"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 2013 года к Dull и Boring присоединился австралийский округ Bland («Пресный»): вместе это «Лига необычных общин».",
+   "en": "Since 2013 Dull and Boring have been joined by Bland in Australia in a 'League of Extraordinary Communities'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dull,_Perth_and_Kinross",
+  "basedOn": "world_034",
+  "refine": "rewrite",
+  "id": "cur_world_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что шире: Австралия с запада на восток или Луна?",
+   "en": "Which is wider: Australia from west to east, or the Moon?"
+  },
+  "options": [
+   {
+    "ru": "Австралия",
+    "en": "Australia"
+   },
+   {
+    "ru": "Луна, чуть-чуть",
+    "en": "The Moon, slightly"
+   },
+   {
+    "ru": "Луна, почти вдвое",
+    "en": "The Moon, nearly twice"
+   },
+   {
+    "ru": "Они примерно одинаковые",
+    "en": "About the same"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Австралия тянется с запада на восток почти на 4000 км, а поперечник Луны — 3474 км. Зато по площади Луна больше раз в пять.",
+   "en": "Australia stretches nearly 4,000 km from west to east; the Moon is 3,474 km across. By area, though, the Moon is about five times bigger."
+  },
+  "source": "https://en.wikipedia.org/wiki/Geography_of_Australia",
+  "basedOn": "world_023",
+  "refine": "rewrite",
+  "id": "cur_world_05"
+ },
+ {
+  "id": "cur_world_21",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой штат США ближе всех к Африке?",
+   "en": "Which US state is closest to Africa?"
+  },
+  "options": [
+   {
+    "ru": "Мэн",
+    "en": "Maine"
+   },
+   {
+    "ru": "Флорида",
+    "en": "Florida"
+   },
+   {
+    "ru": "Техас",
+    "en": "Texas"
+   },
+   {
+    "ru": "Нью-Йорк",
+    "en": "New York"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его мыс Куодди-Хед — около 5100 км от Марокко. Флорида южнее, но лежит гораздо западнее, и до Африки от неё больше чем на тысячу км дальше.",
+   "en": "Its Quoddy Head is about 5,100 km from Morocco. Florida is further south but much further west, over 1,000 km further from Africa."
+  },
+  "source": "https://www.sciencealert.com/which-us-state-is-closest-to-africa",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто порой оказывается ближе всех к точке Немо — самому удалённому от суши месту океана?",
+   "en": "Who are sometimes the closest people to Point Nemo, the ocean spot farthest from land?"
+  },
+  "options": [
+   {
+    "ru": "Космонавты на МКС",
+    "en": "Astronauts on the ISS"
+   },
+   {
+    "ru": "Смотрители маяка",
+    "en": "Lighthouse keepers"
+   },
+   {
+    "ru": "Полярники Антарктиды",
+    "en": "Antarctic scientists"
+   },
+   {
+    "ru": "Жители острова Пасхи",
+    "en": "Easter Islanders"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До ближайшей суши оттуда около 2700 км, а МКС пролетает над головой на высоте примерно 400 км.",
+   "en": "The nearest land is about 2,700 km away, while the ISS passes overhead only about 400 km up."
+  },
+  "source": "https://en.wikipedia.org/wiki/Point_Nemo",
+  "basedOn": "world_027",
+  "refine": "same",
+  "id": "cur_world_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране есть настоящий город Батман?",
+   "en": "Which country has a real city called Batman?"
+  },
+  "options": [
+   {
+    "ru": "В Турции",
+    "en": "Turkey"
+   },
+   {
+    "ru": "В Бразилии",
+    "en": "Brazil"
+   },
+   {
+    "ru": "В Индии",
+    "en": "India"
+   },
+   {
+    "ru": "В Норвегии",
+    "en": "Norway"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Деревня Илух стала городом Батман лишь в 1957 году — позже героя комиксов, но назвали её в честь местной реки Батман.",
+   "en": "The village of Iluh became the city of Batman only in 1957, later than the comic hero, but its name comes from the local Batman River."
+  },
+  "source": "https://en.wikipedia.org/wiki/Batman,_Turkey",
+  "basedOn": "world_037",
+  "refine": "same",
+  "id": "cur_world_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Канада и Дания полвека спорили из-за островка Ханс. Чем всё кончилось в 2022 году?",
+   "en": "Canada and Denmark argued over tiny Hans Island for 50 years. How did it end in 2022?"
+  },
+  "options": [
+   {
+    "ru": "Его поделили пополам",
+    "en": "It was split in half"
+   },
+   {
+    "ru": "Канада его выкупила",
+    "en": "Canada bought it"
+   },
+   {
+    "ru": "Остров ушёл под воду",
+    "en": "It sank under the sea"
+   },
+   {
+    "ru": "Его отдали Дании",
+    "en": "It went to Denmark"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Десятилетиями стороны в шутку оставляли там друг другу виски и шнапс, а теперь у Канады и Дании есть сухопутная граница.",
+   "en": "For decades each side left the other whisky or schnapps there; now Canada and Denmark share a land border."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hans_Island",
+  "basedOn": "world_029",
+  "refine": "rewrite",
+  "id": "cur_world_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "У Боливии нет выхода к морю с 1880-х годов, но военный флот у неё есть. Где он несёт службу?",
+   "en": "Bolivia has had no coast since the 1880s, yet it has a navy. Where does it serve?"
+  },
+  "options": [
+   {
+    "ru": "На озере Титикака и реках",
+    "en": "On Lake Titicaca and rivers"
+   },
+   {
+    "ru": "В Тихом океане у Перу",
+    "en": "In the Pacific off Peru"
+   },
+   {
+    "ru": "В Карибском море с Венесуэлой",
+    "en": "In the Caribbean with Venezuela"
+   },
+   {
+    "ru": "Нигде: флот только на бумаге",
+    "en": "Nowhere: it exists on paper"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Около 5000 моряков ловят контрабандистов на Титикаке и притоках Амазонки. А каждый год в День моря Боливия требует вернуть ей выход к морю.",
+   "en": "About 5,000 sailors chase smugglers on Titicaca and Amazon tributaries. And every year, on the Day of the Sea, Bolivia demands its way to the sea back."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bolivian_Navy",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_world_24"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько часовых поясов официально использует огромный Китай?",
+   "en": "How many time zones does vast China officially use?"
+  },
+  "options": [
+   {
+    "ru": "Один",
+    "en": "One"
+   },
+   {
+    "ru": "Три",
+    "en": "Three"
+   },
+   {
+    "ru": "Пять",
+    "en": "Five"
+   },
+   {
+    "ru": "Семь",
+    "en": "Seven"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вся страна живёт по пекинскому времени, поэтому на западе Китая зимой солнце встаёт около десяти утра.",
+   "en": "The whole country runs on Beijing time, so in China's far west the winter sun rises around 10 am."
+  },
+  "source": "https://en.wikipedia.org/wiki/Time_in_China",
+  "basedOn": "world_022",
+  "refine": "same",
+  "id": "cur_world_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Суда идут по Панамскому каналу из Атлантического океана в Тихий. В какую сторону света они плывут?",
+   "en": "Ships go through the Panama Canal from the Atlantic to the Pacific. Which direction are they heading?"
+  },
+  "options": [
+   {
+    "ru": "На юго-восток",
+    "en": "Southeast"
+   },
+   {
+    "ru": "На запад",
+    "en": "West"
+   },
+   {
+    "ru": "На юго-запад",
+    "en": "Southwest"
+   },
+   {
+    "ru": "На северо-запад",
+    "en": "Northwest"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Перешеек изогнут буквой S, поэтому тихоокеанский выход канала лежит восточнее атлантического.",
+   "en": "The isthmus bends like an S, so the canal's Pacific end lies east of its Atlantic end."
+  },
+  "source": "https://en.wikipedia.org/wiki/Panama_Canal",
+  "basedOn": "world_013",
+  "refine": "rewrite",
+  "id": "cur_world_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В городке Барле граница Бельгии и Нидерландов идёт прямо через дома. Как решают, в какой стране дом?",
+   "en": "In the town of Baarle the Belgian-Dutch border runs right through houses. How is a house's country decided?"
+  },
+  "options": [
+   {
+    "ru": "По входной двери",
+    "en": "By its front door"
+   },
+   {
+    "ru": "По большей половине",
+    "en": "By its larger half"
+   },
+   {
+    "ru": "По паспорту хозяина",
+    "en": "By the owner's passport"
+   },
+   {
+    "ru": "Жребием при постройке",
+    "en": "By lot when it is built"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Где входная дверь, там и страна: у номера дома висит её флажок. А у одного дома граница прошла через саму дверь, и номеров у него два.",
+   "en": "The country of the front door wins, and a little flag by the house number shows it. One house has the border through its door, so it has two numbers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Baarle",
+  "basedOn": "world_021",
+  "refine": "rewrite",
+  "id": "cur_world_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "С какой страной у Франции самая длинная общая граница?",
+   "en": "Which country does France share its longest border with?"
+  },
+  "options": [
+   {
+    "ru": "С Бразилией",
+    "en": "Brazil"
+   },
+   {
+    "ru": "С Испанией",
+    "en": "Spain"
+   },
+   {
+    "ru": "С Бельгией",
+    "en": "Belgium"
+   },
+   {
+    "ru": "С Германией",
+    "en": "Germany"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "730 км в джунглях Амазонии: Французская Гвиана в Южной Америке — часть Франции. Граница с Испанией вторая, 623 км.",
+   "en": "730 km of Amazon rainforest: French Guiana in South America is part of France. The border with Spain comes second, at 623 km."
+  },
+  "source": "https://en.wikipedia.org/wiki/Brazil%E2%80%93France_border",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_world_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Валлийская деревня Llanfair…gogogoch носит имя из 58 знаков. Зачем его, по известной версии, так удлинили?",
+   "en": "A Welsh village, Llanfair…gogogoch, has a 58-character name. Why, as the story goes, was it made so long?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы завлечь приезжих",
+    "en": "To lure in visitors"
+   },
+   {
+    "ru": "Так звали её основателя",
+    "en": "It was its founder's name"
+   },
+   {
+    "ru": "По ошибке писаря",
+    "en": "A clerk's mistake"
+   },
+   {
+    "ru": "Чтобы выиграть пари",
+    "en": "To win a bet"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Говорят, около 1869 года: у станции должно было быть рекордное имя. По-валлийски ll и ch — одна буква, так что букв там 51.",
+   "en": "Supposedly around 1869, so the railway station would have a record name. In Welsh ll and ch are single letters, so it has 51."
+  },
+  "source": "https://en.wikipedia.org/wiki/Llanfairpwllgwyngyll",
+  "basedOn": "world_039",
+  "refine": "rewrite",
+  "id": "cur_world_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Крошечный остров Фазанов на реке между Францией и Испанией принадлежит сразу обеим. Как они его делят?",
+   "en": "Tiny Pheasant Island, in a river between France and Spain, belongs to both. How do they share it?"
+  },
+  "options": [
+   {
+    "ru": "Меняются каждые полгода",
+    "en": "They swap every six months"
+   },
+   {
+    "ru": "Чередуются раз в десять лет",
+    "en": "They take turns every ten years"
+   },
+   {
+    "ru": "Франция днём, Испания ночью",
+    "en": "France by day, Spain by night"
+   },
+   {
+    "ru": "Делят по линии прилива",
+    "en": "Along the tide line"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С февраля по июль им правит Испания, с августа по январь — Франция. А в 1659 году здесь заключили Пиренейский мир.",
+   "en": "Spain runs it from February to July, France from August to January. In 1659 the Treaty of the Pyrenees was agreed here."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pheasant_Island",
+  "basedOn": "world_030",
+  "refine": "rewrite",
+  "id": "cur_world_23"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На привычной карте мира Гренландия кажется почти такой же, как Африка. Во сколько раз Африка больше на самом деле?",
+   "en": "On the usual world map Greenland looks almost as big as Africa. How many times bigger is Africa really?"
+  },
+  "answer": 14,
+  "range": [
+   1,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "раз",
+   "en": "times"
+  },
+  "fact": {
+   "ru": "В 14 раз: карта Меркатора растягивает всё, что ближе к полюсам. Африка — около 30 млн км², Гренландия — около 2,2 млн.",
+   "en": "14 times: the Mercator map stretches everything near the poles. Africa covers about 30 million km², Greenland about 2.2 million."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mercator_projection",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_world_17"
+ },
+ {
+  "id": "cur_world_18",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Пролив Ла-Манш в самом узком месте — 33 км. А какова там ширина Гибралтарского пролива между Европой и Африкой?",
+   "en": "The English Channel is 33 km wide at its narrowest. How wide is the narrowest point of the Strait of Gibraltar?"
+  },
+  "answer": 14,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Около 14 км — меньше половины Ла-Манша. Паром из Испании в Марокко пересекает пролив меньше чем за час.",
+   "en": "About 14 km, less than half the Channel. A ferry from Spain to Morocco crosses it in under an hour."
+  },
+  "source": "https://en.wikipedia.org/wiki/Strait_of_Gibraltar",
+  "basedOn": "world_044",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Эверест — 8849 м. А на какой высоте стоит Ла-Ринконада в Перу, самый высокогорный город мира?",
+   "en": "Everest is 8,849 m. How high above sea level is La Rinconada in Peru, the world's highest town?"
+  },
+  "answer": 5000,
+  "range": [
+   0,
+   9000
+  ],
+  "step": 50,
+  "tolerance": 400,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "От 4900 до 5100 м — выше Монблана! Тысячи людей живут там ради золотых приисков, хотя кислорода в воздухе почти вдвое меньше, чем у моря.",
+   "en": "4,900 to 5,100 m, higher than Mont Blanc! Thousands live there for the gold mines, though the air holds about half the oxygen of sea level."
+  },
+  "source": "https://en.wikipedia.org/wiki/La_Rinconada,_Peru",
+  "basedOn": "world_041",
+  "refine": "rewrite",
+  "id": "cur_world_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Чили в среднем всего 177 км в ширину. А какой она длины с севера на юг, в километрах?",
+   "en": "Chile averages just 177 km in width. How long is it from north to south, in kilometres?"
+  },
+  "answer": 4300,
+  "range": [
+   0,
+   12000
+  ],
+  "step": 100,
+  "tolerance": 700,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Около 4300 км — в 24 раза больше средней ширины. На севере страны пустыня Атакама, на юге ледники и фьорды.",
+   "en": "About 4,300 km, 24 times its average width. In the north lies the Atacama Desert, in the south glaciers and fjords."
+  },
+  "source": "https://en.wikipedia.org/wiki/Geography_of_Chile",
+  "basedOn": "world_042",
+  "refine": "rewrite",
+  "id": "cur_world_20"
+ }
+]

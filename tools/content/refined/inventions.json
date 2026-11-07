@@ -1,0 +1,670 @@
+[
+ {
+  "id": "cur_inventions_01",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "По-английски грифель карандаша зовут lead — «свинец». Сколько свинца в нём на самом деле?",
+   "en": "In English a pencil's core is called its 'lead'. How much lead is really in it?"
+  },
+  "options": [
+   {
+    "ru": "Нисколько",
+    "en": "None at all"
+   },
+   {
+    "ru": "Около трети",
+    "en": "About a third"
+   },
+   {
+    "ru": "Чуть-чуть, для мягкости",
+    "en": "A little, for softness"
+   },
+   {
+    "ru": "Только в самых мягких",
+    "en": "Only in the softest ones"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Свинца там не было никогда: в XVI веке графит приняли за свинцовую руду. Сейчас грифель — графит, смешанный с глиной.",
+   "en": "There never was any: in the 16th century graphite was taken for lead ore. Today's core is graphite mixed with clay."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pencil",
+  "basedOn": "inventions_001",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что подсказало швейцарскому инженеру идею липучки?",
+   "en": "What gave a Swiss engineer the idea for Velcro?"
+  },
+  "options": [
+   {
+    "ru": "Репейник на собаке",
+    "en": "Burrs on his dog"
+   },
+   {
+    "ru": "Лапки геккона",
+    "en": "A gecko's feet"
+   },
+   {
+    "ru": "Присоски осьминога",
+    "en": "An octopus's suckers"
+   },
+   {
+    "ru": "Птичье гнездо",
+    "en": "A bird's nest"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Под микроскопом Жорж де Местраль увидел на колючках крошечные крючки. Идея пришла в 1941 году, а патент он получил лишь в 1955-м.",
+   "en": "Under a microscope George de Mestral saw tiny hooks on the burrs. The idea came in 1941; the patent only in 1955."
+  },
+  "source": "https://en.wikipedia.org/wiki/Velcro",
+  "basedOn": "inventions_003",
+  "refine": "rewrite",
+  "id": "cur_inventions_02"
+ },
+ {
+  "id": "cur_inventions_03",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем стирали карандаш до того, как появился ластик?",
+   "en": "What did people rub out pencil marks with before the eraser?"
+  },
+  "options": [
+   {
+    "ru": "Хлебным мякишем",
+    "en": "Soft bread"
+   },
+   {
+    "ru": "Мылом",
+    "en": "Soap"
+   },
+   {
+    "ru": "Мелом",
+    "en": "Chalk"
+   },
+   {
+    "ru": "Кусочком сахара",
+    "en": "A sugar cube"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По легенде, в 1770 году Эдвард Нэрн по ошибке схватил вместо хлебного мякиша кусок каучука, и тот стёр лучше.",
+   "en": "Legend says that in 1770 Edward Nairne picked up rubber instead of breadcrumbs by mistake, and it erased better."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eraser",
+  "basedOn": "inventions_006",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_inventions_04",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Фруктовый лёд на палочке, по рассказу изобретателя, придумал 11-летний мальчик. Как это вышло?",
+   "en": "By its inventor's own story, the ice pop was invented by an 11-year-old boy. How?"
+  },
+  "options": [
+   {
+    "ru": "Забыл газировку на морозе",
+    "en": "Left his soda out on a cold night"
+   },
+   {
+    "ru": "Окунул сосульку в варенье",
+    "en": "Dipped an icicle in jam"
+   },
+   {
+    "ru": "Уронил леденец в снег",
+    "en": "Dropped a lollipop in the snow"
+   },
+   {
+    "ru": "Набил формочки снегом с сиропом",
+    "en": "Packed moulds with snow and syrup"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фрэнк Эпперсон оставил на крыльце стакан газировки из порошка с палочкой для помешивания. Запатентовал он идею лишь в 1920-х.",
+   "en": "Frank Epperson left a glass of powdered soda drink with a stirring stick on the porch. He only patented the idea in the 1920s."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ice_pop",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_inventions_21",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "По легенде, летающая тарелка «фрисби» получила имя от того, что до неё метали студенты. Что это было?",
+   "en": "Legend says the Frisbee is named after something students used to throw before it. What?"
+  },
+  "options": [
+   {
+    "ru": "Формы из-под пирогов",
+    "en": "Pie tins"
+   },
+   {
+    "ru": "Тарелки из столовой",
+    "en": "Canteen plates"
+   },
+   {
+    "ru": "Крышки мусорных баков",
+    "en": "Bin lids"
+   },
+   {
+    "ru": "Шляпы профессоров",
+    "en": "Professors' hats"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пустые жестяные формы пекарни Frisbie Pie Company, по рассказам — в Йеле. Компания Wham-O дала диску это имя в конце 1950-х.",
+   "en": "Empty tins from the Frisbie Pie Company, Yale students' toys by most accounts. Wham-O gave its disc the name in the late 1950s."
+  },
+  "source": "https://en.wikipedia.org/wiki/Frisbee",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем в начале XI века возмутила венецианцев византийская принцесса?",
+   "en": "In the early 11th century, what did a Byzantine princess in Venice shock people with?"
+  },
+  "options": [
+   {
+    "ru": "Ела золотой вилкой",
+    "en": "Ate with a golden fork"
+   },
+   {
+    "ru": "Красила ногти",
+    "en": "Painted her nails"
+   },
+   {
+    "ru": "Носила мужские брюки",
+    "en": "Wore men's trousers"
+   },
+   {
+    "ru": "Читала книги за обедом",
+    "en": "Read books at the dinner table"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мария Аргиропулина привезла в Венецию золотые вилки, а Пётр Дамиани назвал их суетной роскошью: тогда в Европе ели руками и ножом.",
+   "en": "Maria Argyropoulina brought golden forks to Venice; Peter Damian called them vanity. Europe then ate with hands and a knife."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fork",
+  "basedOn": "inventions_012",
+  "refine": "rewrite",
+  "id": "cur_inventions_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где Уильям Аддис в 1770 году смастерил зубную щётку, которую потом пустил в массовое производство?",
+   "en": "Where did William Addis make, in 1770, the toothbrush he later mass produced?"
+  },
+  "options": [
+   {
+    "ru": "В тюрьме",
+    "en": "In prison"
+   },
+   {
+    "ru": "На корабле",
+    "en": "On a ship"
+   },
+   {
+    "ru": "В монастыре",
+    "en": "In a monastery"
+   },
+   {
+    "ru": "В больнице",
+    "en": "In hospital"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он сидел за участие в беспорядках: ручкой стала косточка от обеда, щетину дал охранник.",
+   "en": "Jailed for rioting, he used a bone from dinner as the handle and bristles from a guard."
+  },
+  "source": "https://en.wikipedia.org/wiki/Toothbrush",
+  "basedOn": "inventions_021",
+  "refine": "same",
+  "id": "cur_inventions_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем изначально пытались сделать пупырчатую плёнку?",
+   "en": "What was bubble wrap first meant to be?"
+  },
+  "options": [
+   {
+    "ru": "Обоями",
+    "en": "Wallpaper"
+   },
+   {
+    "ru": "Игрушкой-антистрессом",
+    "en": "A stress toy"
+   },
+   {
+    "ru": "Скатертью",
+    "en": "A tablecloth"
+   },
+   {
+    "ru": "Стелькой для обуви",
+    "en": "A shoe insole"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Объёмные обои 1957 года не продались, а в 1960-м в плёнку уже заворачивали компьютеры IBM.",
+   "en": "The 1957 3D wallpaper flopped; by 1960 it was wrapping IBM computers for shipping."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bubble_wrap",
+  "basedOn": "inventions_016",
+  "refine": "same",
+  "id": "cur_inventions_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что изобретатель штрихкода рисовал на песке, когда его осенило?",
+   "en": "What was the barcode's inventor drawing in the sand when the idea struck?"
+  },
+  "options": [
+   {
+    "ru": "Азбуку Морзе",
+    "en": "Morse code"
+   },
+   {
+    "ru": "Ноты",
+    "en": "Musical notes"
+   },
+   {
+    "ru": "Зебру",
+    "en": "A zebra"
+   },
+   {
+    "ru": "Шахматную доску",
+    "en": "A chessboard"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Норман Вудленд вытянул точки и тире в полоски, а первой в 1974 году на кассе отсканировали жвачку.",
+   "en": "Norman Woodland stretched dots and dashes into bars; the first item scanned at a till, in 1974, was gum."
+  },
+  "source": "https://en.wikipedia.org/wiki/Barcode",
+  "basedOn": "inventions_033",
+  "refine": "same",
+  "id": "cur_inventions_10"
+ },
+ {
+  "id": "cur_inventions_11",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Напуганным покупателям давали нюхательную соль. Что «Хэрродс» установил в 1898 году?",
+   "en": "Shaken shoppers were given smelling salts. What had Harrods just installed in 1898?"
+  },
+  "options": [
+   {
+    "ru": "Эскалатор",
+    "en": "An escalator"
+   },
+   {
+    "ru": "Аттракцион «Американские горки»",
+    "en": "A roller coaster ride"
+   },
+   {
+    "ru": "Телефон",
+    "en": "A telephone"
+   },
+   {
+    "ru": "Электрический свет",
+    "en": "Electric lighting"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это была движущаяся кожаная лента — первая «движущаяся лестница» в Англии. Кроме нюхательной соли, гостям наливали коньяк.",
+   "en": "It was a moving leather belt, England's first 'moving staircase'. Besides smelling salts, shoppers were offered cognac."
+  },
+  "source": "https://en.wikipedia.org/wiki/Escalator",
+  "basedOn": "inventions_034",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первый моторный пылесос 1901 года был так велик, что...",
+   "en": "The first powered vacuum cleaner of 1901 was so big that..."
+  },
+  "options": [
+   {
+    "ru": "его возила лошадь",
+    "en": "a horse pulled it"
+   },
+   {
+    "ru": "его ставили на крышу",
+    "en": "it sat on the roof"
+   },
+   {
+    "ru": "им чистили лишь корабли",
+    "en": "it only cleaned ships"
+   },
+   {
+    "ru": "его тянул паровоз",
+    "en": "a steam engine towed it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Машина Хьюберта Бута стояла на улице, а шланг тянули в окна. Ею чистили ковры Вестминстерского аббатства к коронации Эдуарда VII.",
+   "en": "Hubert Booth's machine stayed in the street with hoses run through the windows. It cleaned Westminster Abbey's carpets for Edward VII's coronation."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hubert_Cecil_Booth",
+  "basedOn": "inventions_035",
+  "refine": "rewrite",
+  "id": "cur_inventions_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первый современный кондиционер в 1902 году поставили вовсе не ради людей. Где он заработал?",
+   "en": "The first modern air conditioner, in 1902, was not installed for people at all. Where did it start work?"
+  },
+  "options": [
+   {
+    "ru": "В типографии",
+    "en": "In a print shop"
+   },
+   {
+    "ru": "На шоколадной фабрике",
+    "en": "In a chocolate factory"
+   },
+   {
+    "ru": "В оранжерее",
+    "en": "In a greenhouse"
+   },
+   {
+    "ru": "В мясной лавке",
+    "en": "In a butcher's shop"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Летом от влажности бумага разбухала, и краски ложились мимо. Аппарат Уиллиса Кэрриера сушил воздух; людей охлаждать стали позже.",
+   "en": "Summer damp made the paper swell, so colours printed out of line. Willis Carrier's machine dried the air; cooling people came later."
+  },
+  "source": "https://en.wikipedia.org/wiki/Willis_Carrier",
+  "basedOn": "inventions_022",
+  "refine": "rewrite",
+  "id": "cur_inventions_23"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто в 1596 году описал в книге смывной унитаз собственной конструкции?",
+   "en": "Who described his own flushing toilet in a book in 1596?"
+  },
+  "options": [
+   {
+    "ru": "Крестник Елизаветы I",
+    "en": "Elizabeth I's godson"
+   },
+   {
+    "ru": "Сантехник Томас Крэппер",
+    "en": "Plumber Thomas Crapper"
+   },
+   {
+    "ru": "Придворный шут королевы",
+    "en": "The queen's court jester"
+   },
+   {
+    "ru": "Лекарь королевы",
+    "en": "The queen's physician"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Джон Харингтон, один из 102 крестников королевы, назвал его «Аякс» — каламбур на jakes, «сортир». Крэппер родился через 240 лет.",
+   "en": "John Harington, one of the queen's 102 godchildren, named it Ajax, a pun on jakes (privy). Crapper was born 240 years later."
+  },
+  "source": "https://en.wikipedia.org/wiki/John_Harington_(writer)",
+  "basedOn": "inventions_028",
+  "refine": "rewrite",
+  "id": "cur_inventions_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Покупатели стеснялись первых магазинных тележек. Что сделал их изобретатель?",
+   "en": "Shoppers were embarrassed by the first shopping carts. What did their inventor do?"
+  },
+  "options": [
+   {
+    "ru": "Нанял моделей катать их",
+    "en": "Hired models to push them"
+   },
+   {
+    "ru": "Давал скидку за тележку",
+    "en": "Gave discounts to cart users"
+   },
+   {
+    "ru": "Запретил корзинки",
+    "en": "Banned baskets"
+   },
+   {
+    "ru": "Покрасил их золотом",
+    "en": "Painted them gold"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1937 году мужчинам тележка казалась немужественной, а женщинам напоминала детскую коляску.",
+   "en": "In 1937 men found the carts unmanly, and women said they looked like prams."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shopping_cart",
+  "basedOn": "inventions_019",
+  "refine": "same",
+  "id": "cur_inventions_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Для чего придумали термос?",
+   "en": "What was the vacuum flask first made for?"
+  },
+  "options": [
+   {
+    "ru": "Для лабораторных опытов",
+    "en": "For lab experiments"
+   },
+   {
+    "ru": "Для солдатского чая",
+    "en": "For soldiers' tea"
+   },
+   {
+    "ru": "Для полярных экспедиций",
+    "en": "For polar expeditions"
+   },
+   {
+    "ru": "Для детского молока",
+    "en": "For babies' milk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шотландец Джеймс Дьюар не стал патентовать колбу, и в 1904 году марку «Термос» забрали себе немецкие стеклодувы.",
+   "en": "James Dewar never patented his flask, so in 1904 German glassblowers made it the Thermos brand."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vacuum_flask",
+  "basedOn": "inventions_023",
+  "refine": "rewrite",
+  "id": "cur_inventions_16"
+ },
+ {
+  "id": "cur_inventions_17",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Первая микроволновка «Радаранж» (1947) была ростом почти 1,8 метра, как взрослый мужчина. Сколько она весила?",
+   "en": "The first microwave oven, the 1947 Radarange, stood almost 1.8 m tall, like a grown man. How much did it weigh?"
+  },
+  "answer": 340,
+  "range": [
+   0,
+   1500
+  ],
+  "step": 10,
+  "tolerance": 100,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "340 кг. Она охлаждалась водой, и её не продавали, а сдавали в аренду гостиницам и ресторанам.",
+   "en": "340 kg. It was water-cooled, and early ones were leased to hotels and restaurants rather than sold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Microwave_oven",
+  "basedOn": "inventions_040",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Консервную банку запатентовали в 1810 году. Через сколько лет появилась первая открывалка?",
+   "en": "The tin can was patented in 1810. How many years later did the first can opener appear?"
+  },
+  "answer": 45,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "До того на банках писали: вскрывать молотком и зубилом; первые банки весили больше еды в них.",
+   "en": "Until then cans said to open them with a hammer and chisel; early cans weighed more than their food."
+  },
+  "source": "https://en.wikipedia.org/wiki/Can_opener",
+  "basedOn": "inventions_041",
+  "refine": "same",
+  "id": "cur_inventions_18"
+ },
+ {
+  "id": "cur_inventions_19",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Лондонский глаз — 135 метров. Какой высоты было колесо Джорджа Ферриса для выставки в Чикаго 1893 года?",
+   "en": "The London Eye is 135 m tall. How tall was George Ferris's wheel for the 1893 Chicago fair?"
+  },
+  "answer": 80,
+  "range": [
+   10,
+   300
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "80 метров: его строили в ответ на Эйфелеву башню, и по-английски все колёса обозрения с тех пор — Ferris wheel. В кабинку входило 60 человек.",
+   "en": "80 m: it was America's answer to the Eiffel Tower, and every big wheel has been a Ferris wheel since. Each car held 60 people."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ferris_Wheel_(1893)",
+  "basedOn": "inventions_045",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_inventions_24",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Джеймс Дайсон пять лет собирал прототипы своего пылесоса без мешка. Сколько примерно их было, пока не получилось?",
+   "en": "James Dyson spent five years building prototypes of his bagless vacuum. Roughly how many did he make before it worked?"
+  },
+  "answer": 5100,
+  "range": [
+   0,
+   15000
+  ],
+  "step": 50,
+  "tolerance": 1500,
+  "unit": {
+   "ru": "штук",
+   "en": "prototypes"
+  },
+  "fact": {
+   "ru": "Около 5100, а точнее — 5127. Британские фирмы его не взяли: они зарабатывали на мешках, и первой его стала продавать Япония.",
+   "en": "About 5,100; 5,127 to be exact. British makers turned it down because they profited from bags, so it first sold in Japan."
+  },
+  "source": "https://en.wikipedia.org/wiki/James_Dyson",
+  "basedOn": "inventions_043",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем был пластилин Play-Doh, прежде чем стать игрушкой?",
+   "en": "What was Play-Doh before it became a toy?"
+  },
+  "options": [
+   {
+    "ru": "Средством для чистки обоев",
+    "en": "A wallpaper cleaner"
+   },
+   {
+    "ru": "Оконной замазкой",
+    "en": "Window putty"
+   },
+   {
+    "ru": "Массой для зубных слепков",
+    "en": "Dental impression paste"
+   },
+   {
+    "ru": "Тестом для хлеба",
+    "en": "Bread dough"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Им счищали угольную копоть с обоев; когда дома перешли на газ, воспитательница предложила из него лепить.",
+   "en": "It wiped coal soot off wallpaper; when homes switched to gas, a nursery teacher suggested modelling with it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Play-Doh",
+  "basedOn": "inventions_018",
+  "refine": "rewrite",
+  "id": "cur_inventions_25"
+ }
+]

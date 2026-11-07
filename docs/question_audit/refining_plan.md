@@ -1,6 +1,6 @@
 # Plan: refine the whole question bank (draft for Ilia, Nov 7, 2026)
 
-**Status:** steps 1 and 2 done, Nov 7: the pilot is `pilot_languages_landmarks.md` here, and Ilia's answers are in "Rules after the pilot" below. Step 3: batch 1 (`batch_01.md`, the twelve live topics grown to 20) and batch 2 (`batch_02.md`, twelve new topics) done Nov 7, so 26 topics and 520 questions are refined; batches 3 to 5 follow. Every batch question is gated by an independent scorer, not by its editor (see `batch_01.md`, "How it was done").
+**Status:** steps 1 and 2 done, Nov 7: the pilot is `pilot_languages_landmarks.md` here, and Ilia's answers are in "Rules after the pilot" below. Step 3: batch 1 (`batch_01.md`, the twelve live topics grown to 20) batch 2 (`batch_02.md`) and batch 3 (`batch_03.md`) done Nov 7, so 38 topics and 760 questions are refined; batches 4 and 5 follow. Every batch question is gated by an independent scorer, not by its editor (see `batch_01.md`, "How it was done").
 
 ## Why
 

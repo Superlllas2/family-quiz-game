@@ -1,0 +1,670 @@
+[
+ {
+  "id": "cur_books_old_01",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Квазимодо из «Собора Парижской Богоматери» Гюго почти ничего не слышал. Почему?",
+   "en": "Quasimodo in Hugo's Notre-Dame de Paris could barely hear. Why?"
+  },
+  "options": [
+   {
+    "ru": "Оглох от колоколов",
+    "en": "The bells deafened him"
+   },
+   {
+    "ru": "Родился глухим",
+    "en": "He was born deaf"
+   },
+   {
+    "ru": "Оглох от лихорадки",
+    "en": "A fever deafened him"
+   },
+   {
+    "ru": "Притворялся глухим",
+    "en": "He pretended to be deaf"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он был звонарём собора, и колокола Нотр-Дама оглушили его. А имя ему дали по празднику Квазимодо: в этот день младенца нашли у собора.",
+   "en": "He was the cathedral's bell-ringer, and Notre-Dame's bells deafened him. He was named after Quasimodo Sunday, the day the baby was found there."
+  },
+  "source": "https://en.wikipedia.org/wiki/Quasimodo",
+  "basedOn": "books_old_012",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_books_old_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "За какую дерзость Оливера Твиста в работном доме заперли и выпороли?",
+   "en": "What act of cheek got Oliver Twist locked up and flogged in the workhouse?"
+  },
+  "options": [
+   {
+    "ru": "Попросил ещё каши",
+    "en": "Asked for more gruel"
+   },
+   {
+    "ru": "Украл хлеб на кухне",
+    "en": "Stole bread from the kitchen"
+   },
+   {
+    "ru": "Сбежал ночью",
+    "en": "Ran away at night"
+   },
+   {
+    "ru": "Укусил надзирателя",
+    "en": "Bit the master"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Голодные мальчишки бросили жребий, кому идти просить добавки, и выпало Оливеру. Надзиратель ударил его черпаком, а потом его пороли при всех.",
+   "en": "The starving boys drew lots for who would ask for more, and Oliver lost. The master hit him with the ladle, and he was later flogged in front of the boys."
+  },
+  "source": "https://www.gutenberg.org/files/730/730-h/730-h.htm",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В «Книге джунглей» Киплинга мама-волчица даёт Маугли имя. Что оно значит, по её словам?",
+   "en": "In Kipling's Jungle Book, Mother Wolf names Mowgli. What does the name mean, according to her?"
+  },
+  "options": [
+   {
+    "ru": "Лягушонок",
+    "en": "Little frog"
+   },
+   {
+    "ru": "Голыш",
+    "en": "Naked one"
+   },
+   {
+    "ru": "Волчонок",
+    "en": "Wolf cub"
+   },
+   {
+    "ru": "Человечек",
+    "en": "Little man"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так сказано в книге: у малыша нет шерсти. Но Киплинг потом признался, что имя выдумал сам и «лягушонка» оно не значит ни на одном известном ему языке.",
+   "en": "So the book says: the baby has no fur. But Kipling later admitted he made the name up, and it means 'frog' in no language he knew."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mowgli",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_books_old_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Шерлок Холмс жил на Бейкер-стрит, 221B. Что было по этому адресу, когда выходили рассказы о нём?",
+   "en": "Sherlock Holmes lived at 221B Baker Street. What was at that address when the stories came out?"
+  },
+  "options": [
+   {
+    "ru": "Номера ещё не было",
+    "en": "No such number yet"
+   },
+   {
+    "ru": "Полицейский участок",
+    "en": "A police station"
+   },
+   {
+    "ru": "Квартира Конан Дойла",
+    "en": "Conan Doyle's own flat"
+   },
+   {
+    "ru": "Табачная лавка",
+    "en": "A tobacco shop"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Номера на улице до 221 не доходили. Позже адрес достался компании Abbey National, и она держала секретаря, отвечавшего на письма Холмсу.",
+   "en": "Baker Street's numbers did not go that high. Later the address went to the Abbey National, which kept a secretary to answer Holmes's mail."
+  },
+  "source": "https://en.wikipedia.org/wiki/221B_Baker_Street",
+  "basedOn": "books_old_006",
+  "refine": "rewrite",
+  "id": "cur_books_old_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Остров сокровищ» Стивенсон начал, чтобы развлечь 12-летнего пасынка. С чего началась книга?",
+   "en": "Stevenson began Treasure Island to amuse his 12-year-old stepson. What did the book start from?"
+  },
+  "options": [
+   {
+    "ru": "С карты острова",
+    "en": "A map of an island"
+   },
+   {
+    "ru": "С игры в пиратов",
+    "en": "A game of pirates"
+   },
+   {
+    "ru": "Со сказки на ночь",
+    "en": "A bedtime story"
+   },
+   {
+    "ru": "С найденной монеты",
+    "en": "A coin they found"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Карта выдуманного острова с тайником стала основой романа, а придумывалась она на забаву пасынку Ллойду Осборну.",
+   "en": "A map of a made-up island with a secret hoard became the core of the novel, and it was dreamt up to amuse his stepson Lloyd Osbourne."
+  },
+  "source": "https://en.wikipedia.org/wiki/Treasure_Island",
+  "basedOn": "books_old_013",
+  "refine": "rewrite",
+  "id": "cur_books_old_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кем был д'Артаньян до того, как Дюма сделал его героем «Трёх мушкетёров»?",
+   "en": "Who was d'Artagnan before Dumas made him the hero of The Three Musketeers?"
+  },
+  "options": [
+   {
+    "ru": "Мушкетёром короля",
+    "en": "A king's musketeer"
+   },
+   {
+    "ru": "Отцом самого Дюма",
+    "en": "Dumas's own father"
+   },
+   {
+    "ru": "Героем пьесы Мольера",
+    "en": "A Molière character"
+   },
+   {
+    "ru": "Никем: его выдумали",
+    "en": "Nobody: he was invented"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шарль д'Артаньян командовал мушкетёрами Людовика XIV и погиб при осаде Маастрихта в 1673 году. Дюма взял его из выдуманных «мемуаров».",
+   "en": "Charles d'Artagnan commanded Louis XIV's musketeers and died at the siege of Maastricht in 1673. Dumas found him in a fictional 'memoir'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles_de_Batz_de_Castelmore_d%27Artagnan",
+  "basedOn": "books_old_017",
+  "refine": "rewrite",
+  "id": "cur_books_old_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где стоит Джульетта в знаменитой ночной сцене с Ромео — в оригинале Шекспира?",
+   "en": "Where is Juliet in her famous night scene with Romeo, in Shakespeare's original?"
+  },
+  "options": [
+   {
+    "ru": "У окна",
+    "en": "At a window"
+   },
+   {
+    "ru": "На балконе",
+    "en": "On a balcony"
+   },
+   {
+    "ru": "В саду",
+    "en": "In the garden"
+   },
+   {
+    "ru": "На башне",
+    "en": "On a tower"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слова «балкон» в пьесе нет, Ромео видит свет «в окне». А «балкон Джульетты» в Вероне пристроили к дому только в XX веке.",
+   "en": "The word 'balcony' is not in the play; Romeo sees light 'through yonder window'. And Verona's 'Juliet's balcony' was added to the house in the 20th century."
+  },
+  "source": "https://www.mentalfloss.com/article/596789/romeo-and-juliet-balcony-scene-is-a-lie",
+  "basedOn": "books_old_001",
+  "refine": "rewrite",
+  "id": "cur_books_old_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Все знают, что Дон Кихот принял мельницы за великанов. А что он принял за два вражеских войска?",
+   "en": "Everyone knows Don Quixote took windmills for giants. What did he take for two enemy armies?"
+  },
+  "options": [
+   {
+    "ru": "Два стада овец",
+    "en": "Two flocks of sheep"
+   },
+   {
+    "ru": "Две стаи ворон",
+    "en": "Two flocks of crows"
+   },
+   {
+    "ru": "Два табуна коней",
+    "en": "Two herds of horses"
+   },
+   {
+    "ru": "Два обоза купцов",
+    "en": "Two merchant trains"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он увидел над дорогой два облака пыли и бросился в атаку. Пастухи ответили камнями и выбили ему несколько зубов.",
+   "en": "He saw two clouds of dust on the road and charged. The shepherds answered with stones and knocked out some of his teeth."
+  },
+  "source": "https://www.litcharts.com/lit/don-quixote/part-1-chapter-18",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_books_old_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Вторую часть «Дон Кихота» Сервантес выпустил в спешке, через десять лет после первой. Что его подгоняло?",
+   "en": "Cervantes rushed out Part Two of Don Quixote ten years after Part One. What hurried him?"
+  },
+  "options": [
+   {
+    "ru": "Чужая подделка",
+    "en": "Someone else's fake"
+   },
+   {
+    "ru": "Долги издателю",
+    "en": "Debts to his publisher"
+   },
+   {
+    "ru": "Приказ короля",
+    "en": "The king's order"
+   },
+   {
+    "ru": "Письма читателей",
+    "en": "Readers' letters"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1614 году некий Авельянеда издал своё продолжение. Сервантес ответил в 1615-м, и его Дон Кихот сам находит подделку и высмеивает её.",
+   "en": "In 1614 one 'Avellaneda' published his own sequel. Cervantes answered in 1615, and in it Don Quixote himself comes across the fake and mocks it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Don_Quixote",
+  "basedOn": "books_old_043",
+  "refine": "rewrite",
+  "id": "cur_books_old_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На афишах «Вокруг света за 80 дней» герои летят на воздушном шаре. Где они летят на шаре в романе Жюля Верна?",
+   "en": "Posters for Around the World in 80 Days show the heroes in a balloon. Where do they fly by balloon in Verne's novel?"
+  },
+  "options": [
+   {
+    "ru": "Нигде",
+    "en": "Nowhere"
+   },
+   {
+    "ru": "Над Альпами",
+    "en": "Over the Alps"
+   },
+   {
+    "ru": "Над Индией",
+    "en": "Over India"
+   },
+   {
+    "ru": "Над океаном",
+    "en": "Over the ocean"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Полёта на шаре в романе нет: его придумали для фильма 1956 года, чтобы показать красивые виды. Полёт над Альпами стал самой известной сценой фильма.",
+   "en": "There is no balloon flight in the novel: the 1956 film added it to show off the scenery, and the flight over the Alps became its best-known scene."
+  },
+  "source": "https://en.wikipedia.org/wiki/Around_the_World_in_80_Days_(1956_film)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_books_old_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что измеряют «двадцать тысяч льё» в названии романа Жюля Верна?",
+   "en": "What do the 20,000 leagues in Jules Verne's title measure?"
+  },
+  "options": [
+   {
+    "ru": "Путь под водой",
+    "en": "Distance travelled"
+   },
+   {
+    "ru": "Глубину погружения",
+    "en": "The depth of the dive"
+   },
+   {
+    "ru": "Глубину океана",
+    "en": "The depth of the ocean"
+   },
+   {
+    "ru": "Вес «Наутилуса»",
+    "en": "The Nautilus's weight"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это около 80 тысяч километров, дважды вокруг Земли; океанов такой глубины не бывает.",
+   "en": "That is about 80,000 km, twice round the Earth; no ocean is anywhere near that deep."
+  },
+  "source": "https://en.wikipedia.org/wiki/Twenty_Thousand_Leagues_Under_the_Seas",
+  "basedOn": "books_old_027",
+  "refine": "same",
+  "id": "cur_books_old_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 12 лет Диккенс работал на фабрике ваксы: отец сидел в долговой тюрьме. Кого он назвал по имени мальчика с фабрики?",
+   "en": "At 12 Dickens worked in a blacking factory; his father was in debtors' prison. Who got the name of a boy from there?"
+  },
+  "options": [
+   {
+    "ru": "Злодея Феджина",
+    "en": "The villain Fagin"
+   },
+   {
+    "ru": "Оливера Твиста",
+    "en": "Oliver Twist"
+   },
+   {
+    "ru": "Скупого Скруджа",
+    "en": "The miser Scrooge"
+   },
+   {
+    "ru": "Мистера Пиквика",
+    "en": "Mr Pickwick"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Боб Феджин учил его завязывать бечёвку на банках с ваксой. «Я позволил себе взять его имя» для «Оливера Твиста», — вспоминал Диккенс.",
+   "en": "Bob Fagin showed him how to tie the string on the blacking pots. 'I took the liberty of using his name' in Oliver Twist, Dickens recalled."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles_Dickens",
+  "basedOn": "books_old_034",
+  "refine": "rewrite",
+  "id": "cur_books_old_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1613 году театр Шекспира «Глобус» сгорел прямо во время спектакля. Что его подожгло?",
+   "en": "In 1613 Shakespeare's Globe Theatre burned down during a performance. What set it alight?"
+  },
+  "options": [
+   {
+    "ru": "Выстрел из пушки",
+    "en": "A cannon shot"
+   },
+   {
+    "ru": "Удар молнии",
+    "en": "A lightning strike"
+   },
+   {
+    "ru": "Свеча за кулисами",
+    "en": "A candle backstage"
+   },
+   {
+    "ru": "Факел актёра",
+    "en": "An actor's torch"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По ходу «Генриха VIII» палила пушка, и искра подожгла соломенную крышу. Пострадал лишь один зритель: горящие штаны ему потушили элем.",
+   "en": "A stage cannon fired during Henry VIII and set the thatched roof alight. Only one man was hurt: his burning breeches were put out with ale."
+  },
+  "source": "https://en.wikipedia.org/wiki/Globe_Theatre",
+  "basedOn": "books_old_037",
+  "refine": "rewrite",
+  "id": "cur_books_old_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что делает солнечный свет с графом Дракулой в романе Брэма Стокера?",
+   "en": "What does sunlight do to Count Dracula in Bram Stoker's novel?"
+  },
+  "options": [
+   {
+    "ru": "Лишает его сил",
+    "en": "Takes his powers away"
+   },
+   {
+    "ru": "Сжигает дотла",
+    "en": "Burns him to ashes"
+   },
+   {
+    "ru": "Превращает в камень",
+    "en": "Turns him to stone"
+   },
+   {
+    "ru": "Ослепляет",
+    "en": "Blinds him"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Дракула и днём выходит на улицу, только слабеет. Вампира, погибшего от солнца, впервые показали в фильме «Носферату» 1922 года.",
+   "en": "Dracula goes out by day too, just weaker. A vampire killed by sunlight first appeared in the 1922 film Nosferatu."
+  },
+  "source": "https://en.wikipedia.org/wiki/Count_Dracula",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_books_old_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "С кого Стивенсон списал одноногого пирата Джона Сильвера?",
+   "en": "Who was Stevenson's model for the one-legged pirate Long John Silver?"
+  },
+  "options": [
+   {
+    "ru": "С друга-поэта",
+    "en": "A poet friend"
+   },
+   {
+    "ru": "С настоящего пирата",
+    "en": "A real pirate"
+   },
+   {
+    "ru": "С деда-моряка",
+    "en": "His grandfather, a sailor"
+   },
+   {
+    "ru": "С отставного солдата",
+    "en": "A retired soldier"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Поэт Уильям Хенли ходил на костыле: ногу ему отняли из-за туберкулёза. «Идея калеки, которого все боятся, взята у тебя», — писал ему Стивенсон.",
+   "en": "The poet William Henley walked on a crutch after losing a leg to tuberculosis. 'The idea of the maimed man... was entirely taken from you,' Stevenson wrote."
+  },
+  "source": "https://en.wikipedia.org/wiki/Long_John_Silver",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_books_old_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Конан Дойл, создатель самого логичного сыщика, в 1920 году публично поверил фотографиям. Что было на них?",
+   "en": "In 1920 Conan Doyle, creator of the most logical detective, publicly believed some photographs. What did they show?"
+  },
+  "options": [
+   {
+    "ru": "Феи в саду",
+    "en": "Fairies in a garden"
+   },
+   {
+    "ru": "Призрак в замке",
+    "en": "A ghost in a castle"
+   },
+   {
+    "ru": "Чудовище в озере",
+    "en": "A monster in a lake"
+   },
+   {
+    "ru": "Снежный человек",
+    "en": "A yeti"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Двух кузин из Коттингли снимали с феями, срисованными из детской книжки. Признались они только в 1983 году, через полвека после смерти Дойла.",
+   "en": "The two Cottingley cousins posed with cardboard fairies copied from a children's book. They only confessed in 1983, half a century after Doyle's death."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cottingley_Fairies",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_books_old_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Гулливер в 12 раз выше лилипутов. Скольким лилипутам, по расчёту их математиков, хватило бы его еды?",
+   "en": "Gulliver is 12 times as tall as a Lilliputian. Their mathematicians worked out his food would feed how many of them?"
+  },
+  "answer": 1724,
+  "range": [
+   0,
+   4000
+  ],
+  "step": 4,
+  "tolerance": 300,
+  "unit": {
+   "ru": "лилипутов",
+   "en": "Lilliputians"
+  },
+  "fact": {
+   "ru": "Он больше и в высоту, и в ширину, и в толщину: почти 12 × 12 × 12 = 1728. У Свифта, впрочем, вышло 1724.",
+   "en": "He is bigger in height, width and depth alike: nearly 12 × 12 × 12 = 1,728. Swift's text, though, says 1,724."
+  },
+  "source": "https://www.gutenberg.org/files/829/829-h/829-h.htm",
+  "basedOn": "books_old_050",
+  "refine": "rewrite",
+  "id": "cur_books_old_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Жан Вальжан из «Отверженных» украл буханку хлеба для голодных детей сестры. Сколько лет он провёл на каторге?",
+   "en": "Jean Valjean of Les Misérables stole a loaf for his sister's starving children. How many years did he spend in prison?"
+  },
+  "answer": 19,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Пять лет дали за хлеб, остальные добавили за попытки побега. Выйдя, он в первую же ночь украл серебро у приютившего его епископа.",
+   "en": "He got five years for the bread; the rest was added for his escape attempts. Once out, he stole the silver of the bishop who took him in."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jean_Valjean",
+  "basedOn": "books_old_048",
+  "refine": "rewrite",
+  "id": "cur_books_old_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Мэри Шелли начала «Франкенштейна» на спор с Байроном: кто сочинит самую страшную историю. Сколько ей было лет?",
+   "en": "Mary Shelley began Frankenstein in a contest with Byron to write the scariest story. How old was she?"
+  },
+  "answer": 18,
+  "range": [
+   0,
+   80
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "В том же споре врач Байрона Джон Полидори сочинил «Вампира» — одну из первых историй о вампирах в английской прозе.",
+   "en": "In the same contest Byron's doctor, John Polidori, wrote The Vampyre, one of the first vampire stories in English prose."
+  },
+  "source": "https://en.wikipedia.org/wiki/Frankenstein",
+  "basedOn": "books_old_046",
+  "refine": "rewrite",
+  "id": "cur_books_old_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет Робинзон Крузо прожил на необитаемом острове?",
+   "en": "How many years did Robinson Crusoe live on his island?"
+  },
+  "answer": 28,
+  "range": [
+   0,
+   80
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Число стоит прямо в полном названии книги 1719 года: «…прожившего двадцать восемь лет в полном одиночестве на необитаемом острове…»",
+   "en": "The number is right in the book's full 1719 title: '...Who lived Eight and Twenty Years, all alone in an un-inhabited Island...'"
+  },
+  "source": "https://en.wikipedia.org/wiki/Robinson_Crusoe",
+  "basedOn": "books_old_044",
+  "refine": "rewrite",
+  "id": "cur_books_old_20"
+ }
+]

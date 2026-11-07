@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Альбомы Адель называются «19», «21», «25» и «30». Что значат эти числа?",
+   "en": "Adele's albums are called 19, 21, 25 and 30. What do the numbers mean?"
+  },
+  "options": [
+   {
+    "ru": "Её возраст на тот момент",
+    "en": "Her age at the time"
+   },
+   {
+    "ru": "Число песен на диске",
+    "en": "The number of songs"
+   },
+   {
+    "ru": "Номер её дома в Лондоне",
+    "en": "Her house number in London"
+   },
+   {
+    "ru": "Дни, ушедшие на запись",
+    "en": "Days spent recording"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Про «25» Адель говорила, что это последний альбом, названный по её возрасту, но в 2021 году вышел «30».",
+   "en": "Adele said 25 would be her last album named after her age, yet in 2021 along came 30."
+  },
+  "source": "https://en.wikipedia.org/wiki/Adele",
+  "basedOn": "music_new_002",
+  "refine": "same",
+  "id": "cur_music_new_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего было сделано знаменитое платье Леди Гаги на премии MTV 2010 года?",
+   "en": "What was Lady Gaga's famous dress at the 2010 MTV awards made of?"
+  },
+  "options": [
+   {
+    "ru": "Из сырой говядины",
+    "en": "Raw beef"
+   },
+   {
+    "ru": "Из старых газет",
+    "en": "Old newspapers"
+   },
+   {
+    "ru": "Из шоколада",
+    "en": "Chocolate"
+   },
+   {
+    "ru": "Из конфетных фантиков",
+    "en": "Sweet wrappers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Из сырой говядины. Потом Зал славы рок-н-ролла заплатил таксидермисту 6000 долларов, и платье сохранили, по сути, как вяленое мясо.",
+   "en": "Raw beef. The Rock and Roll Hall of Fame later paid a taxidermist $6,000, and the dress was preserved as a kind of jerky."
+  },
+  "source": "https://en.wikipedia.org/wiki/Meat_dress_of_Lady_Gaga",
+  "basedOn": "music_new_006",
+  "refine": "rewrite",
+  "id": "cur_music_new_02"
+ },
+ {
+  "id": "cur_music_new_21",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Рокеры-монстры Lordi в 2006-м впервые принесли Финляндии победу на «Евровидении». Как их почтил родной город?",
+   "en": "Monster rockers Lordi won Finland its first Eurovision in 2006. How did their home town honour them?"
+  },
+  "options": [
+   {
+    "ru": "Назвал в их честь площадь",
+    "en": "Named a square after them"
+   },
+   {
+    "ru": "Взял их в помощники Санты",
+    "en": "Made them Santa's helpers"
+   },
+   {
+    "ru": "Покрасил ратушу в чёрный",
+    "en": "Painted the town hall black"
+   },
+   {
+    "ru": "Сделал их маски гербом",
+    "en": "Put their masks on its crest"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Площадь в центре их родного города назвали Площадью Lordi. А до них Финляндия ждала первой победы на конкурсе с 1961 года.",
+   "en": "A square in their home town's centre became Lordi's Square. Before them, Finland had waited for a first win since 1961."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lordi",
+  "basedOn": "music_new_004",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "С дебютным альбомом 18-летняя Билли Айлиш забрала все главные «Грэмми». Где записала его с братом Финнеасом?",
+   "en": "With her debut album 18-year-old Billie Eilish swept the main Grammys. Where did she record it with brother Finneas?"
+  },
+  "options": [
+   {
+    "ru": "В спальне Финнеаса",
+    "en": "In Finneas's bedroom"
+   },
+   {
+    "ru": "На студии Abbey Road",
+    "en": "At Abbey Road Studios"
+   },
+   {
+    "ru": "В гастрольном автобусе",
+    "en": "On a tour bus"
+   },
+   {
+    "ru": "На яхте у Багамских островов",
+    "en": "On a yacht off the Bahamas"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В маленькой спальне брата Финнеаса в Лос-Анджелесе. А Билли стала первой женщиной, взявшей все четыре главные «Грэмми» за один вечер.",
+   "en": "In her brother Finneas's small bedroom studio in Los Angeles. And she became the first woman to win all four main Grammys in one night."
+  },
+  "source": "https://en.wikipedia.org/wiki/When_We_All_Fall_Asleep,_Where_Do_We_Go%3F",
+  "basedOn": "music_new_009",
+  "refine": "rewrite",
+  "id": "cur_music_new_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Менеджер Скутер Браун нашёл юного Джастина Бибера по ошибке. Как это вышло?",
+   "en": "Manager Scooter Braun found the young Justin Bieber by mistake. How?"
+  },
+  "options": [
+   {
+    "ru": "Нажал не на то видео",
+    "en": "Clicked the wrong video"
+   },
+   {
+    "ru": "Зашёл не на тот кастинг",
+    "en": "Walked into the wrong audition"
+   },
+   {
+    "ru": "Ошибся номером телефона",
+    "en": "Dialled a wrong number"
+   },
+   {
+    "ru": "Открыл чужую посылку с диском",
+    "en": "Opened someone else's demo CD"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Браун искал на YouTube ролики другого певца и случайно щёлкнул на видео Бибера 2007 года.",
+   "en": "Braun was searching YouTube for another singer and clicked on one of Bieber's 2007 videos by accident."
+  },
+  "source": "https://en.wikipedia.org/wiki/Justin_Bieber",
+  "basedOn": "music_new_014",
+  "refine": "rewrite",
+  "id": "cur_music_new_05"
+ },
+ {
+  "id": "cur_music_new_06",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Французский дуэт Daft Punk взял название из чужих слов о своей музыке. Кто их сказал?",
+   "en": "The French duo Daft Punk took their name from words someone else said about their music. Who said them?"
+  },
+  "options": [
+   {
+    "ru": "Критик в рецензии",
+    "en": "A critic in a review"
+   },
+   {
+    "ru": "Учитель музыки в школе",
+    "en": "Their school music teacher"
+   },
+   {
+    "ru": "Отец одного из них",
+    "en": "One of their fathers"
+   },
+   {
+    "ru": "Сосед за стенкой",
+    "en": "The neighbour next door"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Журнал Melody Maker назвал игру их прежней группы «a daft punky thrash». Рецензия их рассмешила и стала названием, а потом пришли шлемы роботов.",
+   "en": "Melody Maker called their earlier band 'a daft punky thrash'. The review made them laugh and became their name; the robot helmets came later."
+  },
+  "source": "https://en.wikipedia.org/wiki/Daft_Punk",
+  "basedOn": "music_new_003",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем Тейлор Свифт перезаписала свои первые альбомы?",
+   "en": "Why did Taylor Swift re-record her early albums?"
+  },
+  "options": [
+   {
+    "ru": "Права на записи были не у неё",
+    "en": "She did not own the recordings"
+   },
+   {
+    "ru": "Чтобы спеть взрослым голосом",
+    "en": "To sing them in an older voice"
+   },
+   {
+    "ru": "Оригиналы сгорели при пожаре",
+    "en": "The masters burned in a fire"
+   },
+   {
+    "ru": "Так требовал контракт со Spotify",
+    "en": "A Spotify deal demanded it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 2019 году их купил вместе с её бывшим лейблом Скутер Браун; новые версии помечены «Taylor's Version», а в 2025-м она выкупила и оригиналы.",
+   "en": "In 2019 Scooter Braun bought them with her old label; she marked the new ones 'Taylor's Version', and in 2025 bought the originals back."
+  },
+  "source": "https://en.wikipedia.org/wiki/Taylor_Swift_masters_dispute",
+  "basedOn": "music_new_016",
+  "refine": "same",
+  "id": "cur_music_new_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Lose Yourself Эминема первой из рэп-песен получила «Оскар» (2003). Где был Эминем, когда объявили победу?",
+   "en": "Eminem's Lose Yourself was the first rap song to win an Oscar (2003). Where was Eminem when it was announced?"
+  },
+  "options": [
+   {
+    "ru": "Спал дома под мультики",
+    "en": "Asleep with cartoons on"
+   },
+   {
+    "ru": "Пел на сцене «Оскара»",
+    "en": "Singing on the Oscars stage"
+   },
+   {
+    "ru": "Сидел в зале в капюшоне",
+    "en": "In the audience in a hoodie"
+   },
+   {
+    "ru": "Был на концерте в Детройте",
+    "en": "At a gig in Detroit"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он был уверен, что не победит, включил дочке мультики и уснул. Статуэтку за него получил соавтор песни Луис Ресто.",
+   "en": "Sure he would not win, he put cartoons on for his daughter and fell asleep. Co-writer Luis Resto collected the award."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lose_Yourself",
+  "basedOn": "music_new_018",
+  "refine": "rewrite",
+  "id": "cur_music_new_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое словечко для одержимого фаната пошло от песни Эминема 2000 года?",
+   "en": "Which word for an obsessive fan comes from a 2000 Eminem song?"
+  },
+  "options": [
+   {
+    "ru": "Стэн",
+    "en": "Stan"
+   },
+   {
+    "ru": "Хейтер",
+    "en": "Hater"
+   },
+   {
+    "ru": "Группи",
+    "en": "Groupie"
+   },
+   {
+    "ru": "Фрик",
+    "en": "Freak"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В песне фанат Стэн шлёт Эминему всё более отчаянные письма; теперь «stan» есть в Оксфордском словаре.",
+   "en": "In the song a fan called Stan writes Eminem ever more desperate letters; 'stan' is now in the Oxford dictionary."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stan_(song)",
+  "basedOn": "music_new_019",
+  "refine": "same",
+  "id": "cur_music_new_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где впервые прозвучала песня Фаррелла Уильямса «Happy»?",
+   "en": "Where was Pharrell Williams's song 'Happy' first heard?"
+  },
+  "options": [
+   {
+    "ru": "В мультфильме «Гадкий я 2»",
+    "en": "In the film Despicable Me 2"
+   },
+   {
+    "ru": "В рекламе Coca-Cola",
+    "en": "In a Coca-Cola advert"
+   },
+   {
+    "ru": "На открытии Олимпиады в Сочи",
+    "en": "At the Sochi Olympics opening"
+   },
+   {
+    "ru": "В сериале «Теория большого взрыва»",
+    "en": "In The Big Bang Theory"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала Фаррелл отдал песню певцу Си Ло Грину, но его лейбл отказался. А клип к Happy стал первым в мире 24-часовым.",
+   "en": "Pharrell first gave the song to CeeLo Green, but his label turned it down. And the Happy video was the world's first 24-hour one."
+  },
+  "source": "https://en.wikipedia.org/wiki/Happy_(Pharrell_Williams_song)",
+  "basedOn": "music_new_020",
+  "refine": "rewrite",
+  "id": "cur_music_new_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как ABBA в 2022 году вернулась на сцену в Лондоне?",
+   "en": "How did ABBA return to the London stage in 2022?"
+  },
+  "options": [
+   {
+    "ru": "Цифровыми двойниками",
+    "en": "As digital avatars"
+   },
+   {
+    "ru": "С внуками в составе",
+    "en": "With their grandchildren"
+   },
+   {
+    "ru": "Роботами-аниматрониками",
+    "en": "As animatronic robots"
+   },
+   {
+    "ru": "Актёрами в гриме",
+    "en": "As actors in make-up"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пять недель четвёрка пела весь концерт в костюмах для захвата движения, а «аббатаров» нарисовала ILM, студия спецэффектов «Звёздных войн».",
+   "en": "For five weeks the four sang the whole show in motion capture suits, and ILM, the Star Wars effects studio, made the 'ABBAtars'."
+  },
+  "source": "https://en.wikipedia.org/wiki/ABBA_Voyage",
+  "basedOn": "music_new_022",
+  "refine": "rewrite",
+  "id": "cur_music_new_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2012 году на фестивале Coachella «выступил» рэпер Тупак, погибший в 1996-м. Как это сделали?",
+   "en": "In 2012 the rapper Tupac, killed in 1996, 'performed' at the Coachella festival. How was it done?"
+  },
+  "options": [
+   {
+    "ru": "Отражение на прозрачном экране",
+    "en": "A reflection on a clear screen"
+   },
+   {
+    "ru": "Лазерная голограмма в дыму",
+    "en": "A laser hologram in smoke"
+   },
+   {
+    "ru": "Двойник в гриме под фонограмму",
+    "en": "A look-alike miming in make-up"
+   },
+   {
+    "ru": "Робот с маской его лица",
+    "en": "A robot wearing his face"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Все говорили «голограмма», но это «призрак Пеппера», театральный фокус 1862 года: картинка отражается в прозрачном наклонном экране.",
+   "en": "Everyone said 'hologram', but it was Pepper's ghost, a stage trick from 1862: the image is reflected in a clear, tilted screen."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pepper%27s_ghost",
+  "basedOn": "music_new_030",
+  "refine": "rewrite",
+  "id": "cur_music_new_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Radiohead в 2007 году впервые продавали альбом «In Rainbows»?",
+   "en": "How did Radiohead first sell their album 'In Rainbows' in 2007?"
+  },
+  "options": [
+   {
+    "ru": "За любую цену на выбор",
+    "en": "For any price you chose"
+   },
+   {
+    "ru": "Только на кассетах",
+    "en": "Only on cassette"
+   },
+   {
+    "ru": "Только членам фан-клуба",
+    "en": "Only to fan club members"
+   },
+   {
+    "ru": "В обмен на старый диск",
+    "en": "In exchange for an old CD"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Скачать альбом можно было даже за £0, и многие так и сделали, но потом диск всё равно стал №1 и в Британии, и в США.",
+   "en": "Fans could download it for £0, and many did, yet the CD still went to number one in both the UK and the US."
+  },
+  "source": "https://en.wikipedia.org/wiki/In_Rainbows",
+  "basedOn": "music_new_031",
+  "refine": "same",
+  "id": "cur_music_new_13"
+ },
+ {
+  "id": "cur_music_new_14",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что значит псевдоним бельгийца Stromae, автора хита «Alors on danse»?",
+   "en": "What does the stage name of Stromae, the Belgian behind 'Alors on danse', mean?"
+  },
+  "options": [
+   {
+    "ru": "«Маэстро» наоборот",
+    "en": "'Maestro' flipped"
+   },
+   {
+    "ru": "«Звезда» по-фламандски",
+    "en": "'Star' in Flemish"
+   },
+   {
+    "ru": "Имя его деда из Руанды",
+    "en": "His Rwandan grandfather's name"
+   },
+   {
+    "ru": "Название улицы в Брюсселе",
+    "en": "A street in Brussels"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так играет словами французский сленг верлан: слоги меняют местами. А начинал он как рэпер Opsmaestro.",
+   "en": "That is verlan, French slang that swaps syllables around. He started out as a rapper called Opsmaestro."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stromae",
+  "basedOn": "music_new_034",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Рифф Seven Nation Army группы White Stripes поют футбольные трибуны мира. Откуда у песни такое название?",
+   "en": "Football crowds everywhere chant the riff of the White Stripes' Seven Nation Army. Where does the title come from?"
+  },
+  "options": [
+   {
+    "ru": "Детская ослышка Джека Уайта",
+    "en": "Jack White's childhood mishearing"
+   },
+   {
+    "ru": "Семь стран их первого турне",
+    "en": "The seven countries of their first tour"
+   },
+   {
+    "ru": "Прозвище фанатов одного клуба",
+    "en": "A club's nickname for its fans"
+   },
+   {
+    "ru": "Строка из солдатской песни",
+    "en": "A line from a soldiers' song"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Маленький Джек в Детройте слышал Salvation Army, «Армию спасения», как Seven Nation Army. А «бас» в риффе — гитара через педаль на октаву ниже.",
+   "en": "As a child in Detroit, Jack heard 'Salvation Army' as 'Seven Nation Army'. And the 'bass' riff is a guitar through an octave-down pedal."
+  },
+  "source": "https://en.wikipedia.org/wiki/Seven_Nation_Army",
+  "basedOn": "music_new_035",
+  "refine": "rewrite",
+  "id": "cur_music_new_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Крис Мартин не мог подобрать слово для песни Coldplay «Yellow» (2000). Откуда взялось «жёлтый»?",
+   "en": "Chris Martin couldn't find the right word for Coldplay's song 'Yellow' (2000). Where did 'yellow' come from?"
+  },
+  "options": [
+   {
+    "ru": "Из телефонного справочника",
+    "en": "From the Yellow Pages"
+   },
+   {
+    "ru": "Так звали его собаку",
+    "en": "His dog was called that"
+   },
+   {
+    "ru": "От цвета их фургона",
+    "en": "The colour of their tour van"
+   },
+   {
+    "ru": "Из названия соседнего паба",
+    "en": "The name of a nearby pub"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он огляделся в студии и увидел справочник «Жёлтые страницы». По его словам, слово ничего не значит, просто «звучало правильно».",
+   "en": "He looked around the studio and saw the Yellow Pages. He says the word means nothing; it just 'sounded right'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yellow_(Coldplay_song)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_music_new_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько концертов в лондонской арене O2 собирался дать Майкл Джексон в 2009 году?",
+   "en": "How many shows at London's O2 arena did Michael Jackson plan to play in 2009?"
+  },
+  "answer": 50,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "концертов",
+   "en": "shows"
+  },
+  "fact": {
+   "ru": "Сначала объявили 10 шоу, но билеты сметали так быстро, что их число выросло в пять раз.",
+   "en": "At first 10 shows were announced, but tickets sold so fast that the number grew fivefold."
+  },
+  "source": "https://en.wikipedia.org/wiki/This_Is_It_(concerts)",
+  "basedOn": "music_new_050",
+  "refine": "same",
+  "id": "cur_music_new_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Old Town Road» Lil Nas X 19 недель подряд был №1 в США. Сколько долларов он заплатил в интернете за бит?",
+   "en": "Lil Nas X's 'Old Town Road' spent 19 weeks in a row at No. 1 in the US. How many dollars did he pay online for its beat?"
+  },
+  "answer": 30,
+  "range": [
+   0,
+   500
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "долларов",
+   "en": "dollars"
+  },
+  "fact": {
+   "ru": "Всего 30 долларов: он анонимно взял бит в аренду у продюсера YoungKio в онлайн-магазине битов.",
+   "en": "Just 30 dollars: he anonymously leased the beat from producer YoungKio in an online beat store."
+  },
+  "source": "https://en.wikipedia.org/wiki/Old_Town_Road",
+  "basedOn": "music_new_040",
+  "refine": "rewrite",
+  "id": "cur_music_new_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 2023 году прыжки фанатов на концерте Тейлор Свифт в Сиэтле сейсмограф записал как землетрясение. Какой магнитуды?",
+   "en": "In 2023 a seismometer logged fans jumping at Taylor Swift's Seattle show as an earthquake. What magnitude?"
+  },
+  "answer": 2.3,
+  "range": [
+   0,
+   9
+  ],
+  "step": 0.1,
+  "tolerance": 0.7,
+  "unit": {
+   "ru": "",
+   "en": ""
+  },
+  "fact": {
+   "ru": "Магнитуда 2,3. По словам сейсмолога, это вдвое сильнее «Землетрясения зверя» 2011 года, когда на том же стадионе ликовали фанаты Seahawks.",
+   "en": "Magnitude 2.3. A seismologist called it twice as strong as the 2011 'Beast Quake', when Seahawks fans cheered at the same stadium."
+  },
+  "source": "https://news.wwu.edu/wwu-seismologist-captures-swift-quake-story-goes-global",
+  "basedOn": "music_new_042",
+  "refine": "rewrite",
+  "id": "cur_music_new_19"
+ },
+ {
+  "id": "cur_music_new_20",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сьюзан Бойл на Britain's Got Talent зал сперва не принял всерьёз. Сколько ей было в апреле 2009-го, когда вышел выпуск?",
+   "en": "The Britain's Got Talent crowd didn't take Susan Boyle seriously at first. How old was she when it aired in April 2009?"
+  },
+  "answer": 48,
+  "range": [
+   16,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "48: она родилась 1 апреля, выпуск вышел 11-го, а на съёмках в январе было 47. Её первый альбом стал самым быстро продаваемым дебютом Британии на тот момент.",
+   "en": "48: her birthday is 1 April and it aired on the 11th; at the January taping she was 47. Her first album became Britain's fastest-selling debut at the time."
+  },
+  "source": "https://en.wikipedia.org/wiki/Susan_Boyle",
+  "basedOn": "music_new_049",
+  "refine": "rewrite"
+ }
+]

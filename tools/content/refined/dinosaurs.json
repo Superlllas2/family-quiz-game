@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие животные, живущие сегодня, — прямые потомки динозавров?",
+   "en": "Which animals alive today are direct descendants of dinosaurs?"
+  },
+  "options": [
+   {
+    "ru": "Птицы",
+    "en": "Birds"
+   },
+   {
+    "ru": "Крокодилы",
+    "en": "Crocodiles"
+   },
+   {
+    "ru": "Ящерицы",
+    "en": "Lizards"
+   },
+   {
+    "ru": "Черепахи",
+    "en": "Turtles"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Птицы произошли от мелких хищных динозавров, так что любой воробей — динозавр. А крокодилы — лишь дальняя родня динозавров.",
+   "en": "Birds evolved from small meat-eating dinosaurs, so every sparrow is a dinosaur. Crocodiles are only distant cousins."
+  },
+  "source": "https://en.wikipedia.org/wiki/Origin_of_birds",
+  "basedOn": "dinosaurs_001",
+  "refine": "rewrite",
+  "id": "cur_dinosaurs_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Моряки на Маврикии легко ловили нелетающих птиц додо: те совсем не боялись людей. Почему?",
+   "en": "Sailors on Mauritius caught flightless dodos with ease: the birds had no fear of people at all. Why?"
+  },
+  "options": [
+   {
+    "ru": "Не знали хищников",
+    "en": "They had never met predators"
+   },
+   {
+    "ru": "Их прикармливали моряки",
+    "en": "Sailors had been feeding them"
+   },
+   {
+    "ru": "Охраняли гнёзда",
+    "en": "They were guarding nests"
+   },
+   {
+    "ru": "Почти не видели",
+    "en": "They could barely see"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На их острове не было опасных хищников, и бояться додо не научились. Отсюда слава «глупой птицы»: dodo по-английски ещё и «тупица».",
+   "en": "Their island had no dangerous predators, so dodos never learned fear. Hence the 'stupid bird' label: in English slang a dodo is a dimwit."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dodo",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_dinosaurs_24"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Мамонта в мультфильмах рисуют великаном. А каким по росту был настоящий шерстистый мамонт?",
+   "en": "Cartoons draw the mammoth as a giant. How tall was a real woolly mammoth?"
+  },
+  "options": [
+   {
+    "ru": "Как африканский слон",
+    "en": "Like an African elephant"
+   },
+   {
+    "ru": "Вдвое выше любого слона",
+    "en": "Twice as tall as any elephant"
+   },
+   {
+    "ru": "С двухэтажный дом",
+    "en": "As tall as a two storey house"
+   },
+   {
+    "ru": "Чуть выше человека",
+    "en": "A bit taller than a man"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Самцы были 2,7–3,5 м в холке, примерно как сегодняшние африканские слоны. Крупнее их делала на вид густая шерсть.",
+   "en": "Males stood 2.7 to 3.5 m at the shoulder, about as tall as today's African elephants. The thick coat made them look bigger."
+  },
+  "source": "https://en.wikipedia.org/wiki/Woolly_mammoth",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_dinosaurs_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Тасманийского тигра прозвали тигром за полоски на спине. Кем он был на самом деле?",
+   "en": "The Tasmanian tiger got its name from the stripes on its back. What was it really?"
+  },
+  "options": [
+   {
+    "ru": "Сумчатым хищником",
+    "en": "A marsupial predator"
+   },
+   {
+    "ru": "Крупной дикой кошкой",
+    "en": "A big wild forest cat"
+   },
+   {
+    "ru": "Полосатой гиеной",
+    "en": "A striped hyena"
+   },
+   {
+    "ru": "Одичавшей собакой",
+    "en": "A feral hunting dog"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тилацин носил детёнышей в сумке, как кенгуру, а сумка была даже у самцов. Последний известный зверь умер в зоопарке Хобарта в 1936 году.",
+   "en": "The thylacine carried its young in a pouch like a kangaroo, and even the males had a pouch. The last known one died in Hobart Zoo in 1936."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thylacine",
+  "basedOn": "dinosaurs_015",
+  "refine": "rewrite",
+  "id": "cur_dinosaurs_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Компания, которая хочет вернуть мамонтов, в 2025 году показала животных с «мамонтовой» шерстью. Кто это был?",
+   "en": "A company that wants to bring back mammoths showed animals with 'mammoth' fur in 2025. What were they?"
+  },
+  "options": [
+   {
+    "ru": "Мыши",
+    "en": "Mice"
+   },
+   {
+    "ru": "Слонята",
+    "en": "Baby elephants"
+   },
+   {
+    "ru": "Овцы",
+    "en": "Sheep"
+   },
+   {
+    "ru": "Хомяки",
+    "en": "Hamsters"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мышам изменили гены шерсти, и они обросли длинным рыжеватым мехом. Цель компании Colossal — слон, которому не страшен холод.",
+   "en": "The mice had their fur genes edited and grew long, shaggy, tawny coats. Colossal's goal is an elephant that can live in the cold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Colossal_Biosciences",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_dinosaurs_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Над короткими лапками тираннозавра все смеются. Какой груз, по расчётам учёных, мог поднять бицепс одной такой лапы?",
+   "en": "Everyone laughs at T. rex's tiny arms. By scientists' estimates, how much could the biceps of one arm lift?"
+  },
+  "options": [
+   {
+    "ru": "Около 200 кг",
+    "en": "About 200 kg"
+   },
+   {
+    "ru": "Около 20 кг",
+    "en": "About 20 kg"
+   },
+   {
+    "ru": "Около 2 кг",
+    "en": "About 2 kg"
+   },
+   {
+    "ru": "Почти ничего",
+    "en": "Next to nothing"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Лапа длиной всего около метра, но её бицепс, по расчётам, поднимал 199 кг — в 3,5 раза сильнее нашего. Пальцев на ней было всего два.",
+   "en": "The arm was only about a metre long, but its biceps could lift an estimated 199 kg, 3.5 times stronger than ours. It had just two fingers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tyrannosaurus",
+  "basedOn": "dinosaurs_029",
+  "refine": "rewrite",
+  "id": "cur_dinosaurs_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Последние мамонты жили на маленьком острове в Северном Ледовитом океане. Когда они вымерли?",
+   "en": "The last mammoths lived on a small island in the Arctic Ocean. When did they die out?"
+  },
+  "options": [
+   {
+    "ru": "Когда уже стояли пирамиды",
+    "en": "When the pyramids stood"
+   },
+   {
+    "ru": "Задолго до появления людей",
+    "en": "Long before humans appeared"
+   },
+   {
+    "ru": "Во времена Древнего Рима",
+    "en": "In the days of ancient Rome"
+   },
+   {
+    "ru": "В Средние века",
+    "en": "In the Middle Ages"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это остров Врангеля: мамонты дожили там примерно до 2000 года до н. э., а пирамиду Хеопса построили около 2560 года до н. э.",
+   "en": "It is Wrangel Island: mammoths held on there until about 2000 BC, while the Great Pyramid of Giza went up around 2560 BC."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wrangel_Island",
+  "basedOn": "dinosaurs_016",
+  "refine": "rewrite",
+  "id": "cur_dinosaurs_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто жил ближе по времени к тираннозавру: стегозавр или мы?",
+   "en": "Who lived closer in time to T. rex: Stegosaurus or us?"
+  },
+  "options": [
+   {
+    "ru": "Мы, люди",
+    "en": "We humans"
+   },
+   {
+    "ru": "Стегозавр",
+    "en": "Stegosaurus"
+   },
+   {
+    "ru": "Они жили одновременно",
+    "en": "They lived at the same time"
+   },
+   {
+    "ru": "Примерно поровну",
+    "en": "About the same gap"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Стегозавр жил около 150 млн лет назад, тираннозавр — в самом конце эпохи динозавров. Между ними больше времени, чем между тираннозавром и нами.",
+   "en": "Stegosaurus lived about 150 million years ago, T. rex at the very end of the dinosaur age: they are further apart than T. rex and us."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stegosaurus",
+  "basedOn": "dinosaurs_017",
+  "refine": "rewrite",
+  "id": "cur_dinosaurs_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Додо с острова Маврикий — нелетающая птица весом до 17 кг. Кем она была по происхождению?",
+   "en": "The dodo of Mauritius was a flightless bird of up to 17 kg. What was it, by descent?"
+  },
+  "options": [
+   {
+    "ru": "Огромным голубем",
+    "en": "A giant pigeon"
+   },
+   {
+    "ru": "Родственником страуса",
+    "en": "A cousin of the ostrich"
+   },
+   {
+    "ru": "Диким индюком",
+    "en": "A wild turkey"
+   },
+   {
+    "ru": "Сухопутным пингвином",
+    "en": "A land penguin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Додо относится к семейству голубиных, а его ближайший живой родственник — никобарский голубь.",
+   "en": "The dodo belongs to the pigeon and dove family, and its closest living relative is the Nicobar pigeon."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dodo",
+  "basedOn": "dinosaurs_018",
+  "refine": "rewrite",
+  "id": "cur_dinosaurs_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто из них был настоящим динозавром?",
+   "en": "Which of these was a true dinosaur?"
+  },
+  "options": [
+   {
+    "ru": "Трицератопс",
+    "en": "Triceratops"
+   },
+   {
+    "ru": "Птеродактиль",
+    "en": "Pterodactyl"
+   },
+   {
+    "ru": "Плезиозавр",
+    "en": "Plesiosaurus"
+   },
+   {
+    "ru": "Диметродон",
+    "en": "Dimetrodon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Птеродактиль — летающий ящер, плезиозавр — морской, а диметродон с парусом вымер за 40 млн лет до первых динозавров и ближе к нам, млекопитающим.",
+   "en": "Pterodactyl was a flying reptile and Plesiosaurus a sea reptile; sail backed Dimetrodon died out 40 million years before dinosaurs and is closer to us mammals."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dimetrodon",
+  "basedOn": "dinosaurs_022",
+  "refine": "rewrite",
+  "id": "cur_dinosaurs_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каким был настоящий велоцираптор?",
+   "en": "What was the real Velociraptor like?"
+  },
+  "options": [
+   {
+    "ru": "Размером с индюка, в перьях",
+    "en": "Turkey sized, with feathers"
+   },
+   {
+    "ru": "Ростом с человека, в чешуе",
+    "en": "Human sized, with scales"
+   },
+   {
+    "ru": "Размером с лошадь",
+    "en": "Horse sized"
+   },
+   {
+    "ru": "Размером с курицу, без перьев",
+    "en": "Chicken sized, no feathers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он весил 15–20 кг и, как и его близкие родичи, был покрыт перьями. Рапторов из кино рисовали с более крупного дейнониха.",
+   "en": "It weighed 15 to 20 kg and, like its close relatives, wore feathers; the film raptors were based on the bigger Deinonychus."
+  },
+  "source": "https://en.wikipedia.org/wiki/Velociraptor",
+  "basedOn": "dinosaurs_028",
+  "refine": "same",
+  "id": "cur_dinosaurs_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В «Парке юрского периода» динозавров вывели из крови комара, застывшего в янтаре. Почему в жизни так не выйдет?",
+   "en": "In Jurassic Park, dinosaurs were made from the blood of a mosquito trapped in amber. Why won't that work for real?"
+  },
+  "options": [
+   {
+    "ru": "ДНК столько не хранится",
+    "en": "DNA doesn't last that long"
+   },
+   {
+    "ru": "Тогда ещё не было комаров",
+    "en": "There were no mosquitoes then"
+   },
+   {
+    "ru": "Янтарь растворяет кровь",
+    "en": "Amber dissolves blood"
+   },
+   {
+    "ru": "Кровь в янтаре высыхает в пыль",
+    "en": "Blood in amber dries to dust"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Самой древней прочитанной ДНК около 2 млн лет: её нашли в мёрзлой земле Гренландии. А последние динозавры жили больше 60 млн лет назад.",
+   "en": "The oldest DNA ever read is about 2 million years old, found in frozen Greenland soil. The last dinosaurs lived over 60 million years ago."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ancient_DNA",
+  "basedOn": "dinosaurs_032",
+  "refine": "rewrite",
+  "id": "cur_dinosaurs_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как ошибся палеонтолог Эдвард Коуп, впервые собрав скелет эласмозавра?",
+   "en": "What mistake did Edward Cope make when he first rebuilt Elasmosaurus?"
+  },
+  "options": [
+   {
+    "ru": "Посадил голову на хвост",
+    "en": "Put the head on the tail"
+   },
+   {
+    "ru": "Принял его за кита",
+    "en": "Took it for a whale"
+   },
+   {
+    "ru": "Перевернул его вверх ногами",
+    "en": "Mounted it upside down"
+   },
+   {
+    "ru": "Приделал ему крылья",
+    "en": "Gave it wings"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он перепутал длинную шею с хвостом и пытался изъять все экземпляры статьи, но соперник Марш успел добыть один и высмеивал его десятилетиями.",
+   "en": "He mixed up the long neck and the tail; once it was spotted he tried to recall every copy of his paper, and rival Marsh mocked him for decades."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elasmosaurus",
+  "basedOn": "dinosaurs_035",
+  "refine": "same",
+  "id": "cur_dinosaurs_13"
+ },
+ {
+  "id": "cur_dinosaurs_14",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В пустыне Гоби нашли небольшого динозавра, окаменевшего прямо на кладке яиц. Что он там делал?",
+   "en": "In the Gobi Desert a small dinosaur was found fossilised right on top of a clutch of eggs. What was it doing there?"
+  },
+  "options": [
+   {
+    "ru": "Высиживал свои яйца",
+    "en": "Brooding its own eggs"
+   },
+   {
+    "ru": "Ел чужие яйца",
+    "en": "Eating someone else's eggs"
+   },
+   {
+    "ru": "Подкладывал яйца другим",
+    "en": "Laying eggs in others' nests"
+   },
+   {
+    "ru": "Прятался от бури",
+    "en": "Sheltering from a storm"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1924 году решили, что он ворует яйца протоцератопса, и назвали его овираптором, «похитителем яиц». Но в 1990-х в таких яйцах нашли его зародышей.",
+   "en": "In 1924 it was thought to be stealing Protoceratops eggs and was named Oviraptor, 'egg thief'. But in the 1990s its own embryos turned up in such eggs."
+  },
+  "source": "https://en.wikipedia.org/wiki/Oviraptor",
+  "basedOn": "dinosaurs_036",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1992 году ФБР и Национальная гвардия США изъяли скелет тираннозавра, найденный двумя годами раньше. Почему?",
+   "en": "In 1992 the FBI and the US National Guard seized a T. rex skeleton found two years earlier. Why?"
+  },
+  "options": [
+   {
+    "ru": "Спорили, чей это скелет",
+    "en": "A fight over who owned it"
+   },
+   {
+    "ru": "Его тайком везли за границу",
+    "en": "It was being smuggled abroad"
+   },
+   {
+    "ru": "Скелет оказался подделкой",
+    "en": "The skeleton was a fake"
+   },
+   {
+    "ru": "Копали на военном полигоне",
+    "en": "It was dug up on a firing range"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Хозяин земли сказал, что 5000 $ за кости были не платой за продажу. Суд отдал скелет ему, и в 1997 году «Сью» ушла с аукциона за 8,4 млн $.",
+   "en": "The landowner said the $5,000 he got was not a sale price. The court gave him the skeleton, and in 1997 'Sue' sold at auction for $8.4 million."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sue_(dinosaur)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_dinosaurs_22"
+ },
+ {
+  "id": "cur_dinosaurs_16",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В новогоднюю ночь 1853 года в Лондоне устроили праздничный ужин в очень странном месте. Где накрыли стол?",
+   "en": "On New Year's Eve 1853, a dinner party in London was held in a very strange place. Where was the table laid?"
+  },
+  "options": [
+   {
+    "ru": "В модели игуанодона",
+    "en": "Inside an Iguanodon model"
+   },
+   {
+    "ru": "В модели тираннозавра",
+    "en": "Inside a T. rex model"
+   },
+   {
+    "ru": "В скелете мамонта",
+    "en": "Inside a mammoth skeleton"
+   },
+   {
+    "ru": "На крыше собора",
+    "en": "On a cathedral roof"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Скульптор Хокинс лепил для лондонского парка огромных динозавров и устроил ужин в форме для игуанодона. Тираннозавра тогда ещё не знали.",
+   "en": "Sculptor Hawkins was building giant dinosaurs for a London park and held the dinner in his Iguanodon mould. T. rex was not yet known."
+  },
+  "source": "https://en.wikipedia.org/wiki/Crystal_Palace_Dinosaurs",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет прошло от открытия стеллеровой коровы до её полного истребления?",
+   "en": "How many years passed between the discovery of Steller's sea cow and its extinction?"
+  },
+  "answer": 27,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Огромных морских коров длиной до 8 метров нашла экспедиция Беринга в 1741 году, а к 1768-му промысловики съели последнюю.",
+   "en": "Bering's expedition found these 8 metre sea cows in 1741, and by 1768 hunters had eaten the last one."
+  },
+  "source": "https://en.wikipedia.org/wiki/Steller%27s_sea_cow",
+  "basedOn": "dinosaurs_043",
+  "refine": "same",
+  "id": "cur_dinosaurs_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Мозг человека весит около 1,3 кг. А сколько граммов весил мозг стегозавра — ящера весом больше 4,5 тонны?",
+   "en": "A human brain weighs about 1.3 kg. How many grams did the brain of Stegosaurus, an animal over 4.5 tonnes, weigh?"
+  },
+  "answer": 80,
+  "range": [
+   0,
+   1500
+  ],
+  "step": 5,
+  "tolerance": 40,
+  "unit": {
+   "ru": "г",
+   "en": "g"
+  },
+  "fact": {
+   "ru": "Не больше 80 граммов, а сама черепная коробка была не больше собачьей. В XIX веке ему даже приписали второй «мозг» в бёдрах — его там не было.",
+   "en": "No more than 80 grams, in a braincase no bigger than a dog's. In the 19th century it was even given a second 'brain' in its hips; there was none."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stegosaurus",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_dinosaurs_23"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Кратер от астероида, погубившего динозавров, — около 200 км в поперечнике. Какого диаметра был сам астероид?",
+   "en": "The crater of the asteroid that killed the dinosaurs is about 200 km across. How wide was the asteroid itself?"
+  },
+  "answer": 10,
+  "range": [
+   0,
+   100
+  ],
+  "step": 0.5,
+  "tolerance": 5,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Всего около 10 км — примерно высота, на которой летают самолёты. Но он мчался со скоростью около 20 км/с и поднял столько пыли, что настала долгая зима.",
+   "en": "Only about 10 km, about the height where jets cruise. But it hit at some 20 km/s and threw up enough dust to bring a long winter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chicxulub_impactor",
+  "basedOn": "dinosaurs_046",
+  "refine": "rewrite",
+  "id": "cur_dinosaurs_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "У странствующего альбатроса самые длинные крылья среди птиц: размах около 3 м. А какой был у крупнейших летающих ящеров?",
+   "en": "The wandering albatross has the widest wingspan of any bird, about 3 m. What was it for the biggest flying reptiles?"
+  },
+  "answer": 10.5,
+  "range": [
+   0,
+   40
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Около 10–11 метров, как у небольшого самолёта. Это кецалькоатль: стоя на земле, он держал голову на высоте жирафа.",
+   "en": "About 10 to 11 metres, like a small plane. This was Quetzalcoatlus: standing on the ground, it held its head as high as a giraffe's."
+  },
+  "source": "https://en.wikipedia.org/wiki/Quetzalcoatlus",
+  "basedOn": "dinosaurs_049",
+  "refine": "rewrite",
+  "id": "cur_dinosaurs_20"
+ }
+]

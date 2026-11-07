@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Пианист выходит на сцену, садится за рояль и исполняет пьесу Джона Кейджа «4′33″». Что он делает?",
+   "en": "A pianist walks on stage, sits at the piano and performs John Cage's 4′33″. What does he do?"
+  },
+  "options": [
+   {
+    "ru": "Ничего не играет",
+    "en": "Plays nothing at all"
+   },
+   {
+    "ru": "Играет одну ноту",
+    "en": "Plays a single note"
+   },
+   {
+    "ru": "Играет одной рукой",
+    "en": "Plays with one hand"
+   },
+   {
+    "ru": "Играет с закрытыми глазами",
+    "en": "Plays with his eyes shut"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На премьере 1952 года Дэвид Тудор 4 минуты 33 секунды сидел молча. Музыкой Кейдж считал звуки зала: ветер, дождь по крыше, ропот публики.",
+   "en": "At the 1952 premiere David Tudor sat silent for 4 minutes 33 seconds. Cage said the music was the room: wind, rain on the roof, the audience muttering."
+  },
+  "source": "https://en.wikipedia.org/wiki/4%E2%80%B233%E2%80%B3",
+  "basedOn": "classical_046",
+  "refine": "rewrite",
+  "id": "cur_classical_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На премьере Девятой симфонии в 1824 году певица развернула Бетховена лицом к залу. Зачем?",
+   "en": "At the 1824 premiere of the Ninth Symphony a singer turned Beethoven round to face the hall. Why?"
+  },
+  "options": [
+   {
+    "ru": "Он не слышал оваций",
+    "en": "He couldn't hear the applause"
+   },
+   {
+    "ru": "В зал вошёл император",
+    "en": "The emperor had come in"
+   },
+   {
+    "ru": "Публика требовала речь",
+    "en": "The audience wanted a speech"
+   },
+   {
+    "ru": "Его ждал портретист",
+    "en": "A portrait painter was waiting"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бетховен был почти глух. По рассказам, контральто Каролина Унгер повернула его, и он увидел овации. Мелодия финала, «Ода к радости», — гимн Евросоюза.",
+   "en": "Beethoven was almost deaf. Contralto Caroline Unger reportedly turned him round to see the ovation. The finale's Ode to Joy is now the EU anthem."
+  },
+  "source": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
+  "basedOn": "classical_005",
+  "refine": "rewrite",
+  "id": "cur_classical_02"
+ },
+ {
+  "id": "cur_classical_03",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Пиано» по-итальянски значит «тихо». Почему так зовут инструмент, который умеет греметь на весь зал?",
+   "en": "'Piano' is Italian for 'soft'. Why is that the name of an instrument that can thunder through a hall?"
+  },
+  "options": [
+   {
+    "ru": "Это сокращение от «тихо-громко»",
+    "en": "It's short for 'soft-loud'"
+   },
+   {
+    "ru": "Первые пианино играли очень тихо",
+    "en": "The first pianos were very quiet"
+   },
+   {
+    "ru": "Их ставили в спальнях",
+    "en": "They were made for bedrooms"
+   },
+   {
+    "ru": "Так звали изобретателя",
+    "en": "That was the inventor's name"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Полное имя изобретения Кристофори — «клавесин с тихим и громким звуком»: громкость зависела от силы удара. «Пиано» — просто его половинка.",
+   "en": "Cristofori's invention was the 'harpsichord with soft and loud': volume depended on how hard you struck. 'Piano' is just half the name."
+  },
+  "source": "https://en.wikipedia.org/wiki/Piano",
+  "basedOn": "classical_008",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "У скрипки четыре струны. Сколько из них было нужно Паганини, чтобы сыграть целую пьесу с вариациями?",
+   "en": "A violin has four strings. How many of them did Paganini need to play a whole set of variations?"
+  },
+  "options": [
+   {
+    "ru": "Одна",
+    "en": "One"
+   },
+   {
+    "ru": "Две",
+    "en": "Two"
+   },
+   {
+    "ru": "Три",
+    "en": "Three"
+   },
+   {
+    "ru": "Все четыре",
+    "en": "All four"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его вариации на тему из оперы Россини «Моисей» играют на одной струне соль. По слухам, он и нарочно рвал струны на концертах, доигрывая на оставшихся.",
+   "en": "His variations on a theme from Rossini's Moses are played on the G string alone. He was said to snap strings on purpose and finish on what was left."
+  },
+  "source": "https://www.thestrad.com/playing-hub/paganinis-mose-fantasy-bel-canto-and-virtuosity-on-only-one-string/20374.article",
+  "basedOn": "classical_011",
+  "refine": "rewrite",
+  "id": "cur_classical_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Балерина крутится много раз подряд, и голова у неё почти не кружится. В чём секрет?",
+   "en": "A ballerina spins many times in a row and hardly gets dizzy. What's the trick?"
+  },
+  "options": [
+   {
+    "ru": "Ловит взглядом одну точку",
+    "en": "She fixes her eyes on one spot"
+   },
+   {
+    "ru": "Крутится с закрытыми глазами",
+    "en": "She spins with her eyes closed"
+   },
+   {
+    "ru": "Задерживает дыхание",
+    "en": "She holds her breath"
+   },
+   {
+    "ru": "Считает обороты про себя",
+    "en": "She counts the turns in her head"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тело вращается ровно, а голова задерживается, глядя в одну точку, и резко догоняет. Глаза не «плывут», и равновесие держится. Попробуйте дома!",
+   "en": "The body turns steadily while the head lingers on one spot, then whips round to catch up. The eyes stay steady, and so does balance. Try it at home!"
+  },
+  "source": "https://en.wikipedia.org/wiki/Spotting_(dance_technique)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_classical_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Француз Бизе написал самую «испанскую» оперу — «Кармен». Сколько раз он сам бывал в Испании?",
+   "en": "The Frenchman Bizet wrote the most 'Spanish' opera of all, Carmen. How often had he been to Spain?"
+  },
+  "options": [
+   {
+    "ru": "Ни разу",
+    "en": "Never"
+   },
+   {
+    "ru": "Однажды, в юности",
+    "en": "Once, as a young man"
+   },
+   {
+    "ru": "Каждое лето",
+    "en": "Every summer"
+   },
+   {
+    "ru": "Ездил туда за песнями",
+    "en": "He went there to collect songs"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Испанский колорит он искал в нотах. Мелодию Хабанеры он принял за народную, а её недавно сочинил испанец Ирадьер, и Бизе добавил в ноты его имя.",
+   "en": "He found his Spanish colour in sheet music. He took the Habanera's tune for a folk song; Spaniard Yradier had just written it, so Bizet credited him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Carmen",
+  "basedOn": "classical_012",
+  "refine": "rewrite",
+  "id": "cur_classical_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Шопен умер в Париже. Где хранится его сердце?",
+   "en": "Chopin died in Paris. Where is his heart kept?"
+  },
+  "options": [
+   {
+    "ru": "В Лувре",
+    "en": "In the Louvre"
+   },
+   {
+    "ru": "В Вене",
+    "en": "In Vienna"
+   },
+   {
+    "ru": "В его могиле в Париже",
+    "en": "In his Paris grave"
+   },
+   {
+    "ru": "В костёле в Варшаве",
+    "en": "In a Warsaw church"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Так он завещал: сестра тайно увезла сердце в Польшу в банке, по преданию — с коньяком.",
+   "en": "As he wished, his sister smuggled it to Poland in a jar, said to be filled with cognac."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin",
+  "basedOn": "classical_017",
+  "refine": "same",
+  "id": "cur_classical_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Князь месяцами не отпускал оркестр Гайдна из летнего дворца к семьям. Как Гайдн намекнул ему в новой симфонии?",
+   "en": "A prince kept Haydn's players at his summer palace for months, away from home. How did Haydn hint in a new symphony?"
+  },
+  "options": [
+   {
+    "ru": "Музыканты по одному уходили",
+    "en": "The players left one by one"
+   },
+   {
+    "ru": "Оркестр будто засыпал на ходу",
+    "en": "The orchestra seemed to fall asleep"
+   },
+   {
+    "ru": "В финале трубил почтовый рожок",
+    "en": "A post horn sounded in the finale"
+   },
+   {
+    "ru": "Все хором пели «Домой!»",
+    "en": "Everyone sang 'Home!' together"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В финале «Прощальной симфонии» каждый гасил свечу у пюпитра и уходил, пока не оставались две скрипки. Князь понял: назавтра двор уехал домой.",
+   "en": "In the Farewell Symphony's finale each player snuffed his candle and left until two violins remained. The prince took the hint: the court left the next day."
+  },
+  "source": "https://en.wikipedia.org/wiki/Symphony_No._45_(Haydn)",
+  "basedOn": "classical_028",
+  "refine": "rewrite",
+  "id": "cur_classical_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Ватикан берёг ноты «Мизерере» Аллегри как тайну. Как 14-летний Моцарт всё же унёс эту музыку с собой?",
+   "en": "The Vatican guarded the score of Allegri's Miserere as a secret. How did 14-year-old Mozart take the music away anyway?"
+  },
+  "options": [
+   {
+    "ru": "Записал по памяти",
+    "en": "Wrote it down from memory"
+   },
+   {
+    "ru": "Подкупил певчего хора",
+    "en": "Bribed a choirboy"
+   },
+   {
+    "ru": "Спрятал листы в шляпе",
+    "en": "Hid the pages in his hat"
+   },
+   {
+    "ru": "Выпросил у папы римского",
+    "en": "Begged a copy from the Pope"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По письму отца, он услышал хор в Сикстинской капелле и в тот же день записал всё по памяти. Его не наказали: в том же году папа дал ему рыцарский орден.",
+   "en": "His father wrote that he heard it in the Sistine Chapel and wrote it all down that day. No punishment: that year the Pope made him a knight."
+  },
+  "source": "https://en.wikipedia.org/wiki/Miserere_(Allegri)",
+  "basedOn": "classical_036",
+  "refine": "rewrite",
+  "id": "cur_classical_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1840-х поклонницы дрались за перчатки одного музыканта, а его окурок сигары носили в медальоне. Кто это был?",
+   "en": "In the 1840s women fought over one musician's gloves, and one kept his cigar stub in a locket. Who was he?"
+  },
+  "options": [
+   {
+    "ru": "Ференц Лист",
+    "en": "Franz Liszt"
+   },
+   {
+    "ru": "Никколо Паганини",
+    "en": "Niccolò Paganini"
+   },
+   {
+    "ru": "Фредерик Шопен",
+    "en": "Frédéric Chopin"
+   },
+   {
+    "ru": "Джоаккино Россини",
+    "en": "Gioachino Rossini"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Поэт Гейне назвал это «листоманией». Поклонницы собирали даже кофейную гущу из его чашки, а порванные струны рояля пускали на браслеты.",
+   "en": "The poet Heine called it Lisztomania. Fans even kept the dregs of his coffee in phials and made bracelets from his broken piano strings."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lisztomania",
+  "basedOn": "classical_038",
+  "refine": "rewrite",
+  "id": "cur_classical_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой из этих металлических инструментов на самом деле деревянный духовой?",
+   "en": "Which of these metal instruments is actually a woodwind?"
+  },
+  "options": [
+   {
+    "ru": "Тромбон",
+    "en": "Trombone"
+   },
+   {
+    "ru": "Валторна",
+    "en": "French horn"
+   },
+   {
+    "ru": "Саксофон",
+    "en": "Saxophone"
+   },
+   {
+    "ru": "Труба",
+    "en": "Trumpet"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Важен не материал, а способ: у саксофона звучит трость, как у кларнета, а не губы музыканта, как у медных.",
+   "en": "What counts is how the sound is made: the sax uses a reed like a clarinet, not buzzing lips like brass."
+  },
+  "source": "https://en.wikipedia.org/wiki/Saxophone",
+  "basedOn": "classical_034",
+  "refine": "rewrite",
+  "id": "cur_classical_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1784 году Моцарт купил скворца и записал в книге расходов: «Это было прекрасно!» Чем птица его поразила?",
+   "en": "In 1784 Mozart bought a starling and wrote in his expense book: 'That was beautiful!' What amazed him about the bird?"
+  },
+  "options": [
+   {
+    "ru": "Насвистывала его новую мелодию",
+    "en": "It whistled his new tune"
+   },
+   {
+    "ru": "Кричала «Браво!» по-итальянски",
+    "en": "It shouted 'Bravo!' in Italian"
+   },
+   {
+    "ru": "Отбивала клювом такт",
+    "en": "It beat time with its beak"
+   },
+   {
+    "ru": "Пела в тон клавесину",
+    "en": "It sang in tune with the harpsichord"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Почти тему его нового фортепианного концерта, с одной ошибкой. Скворец прожил у Моцарта три года, а потом тот устроил ему похороны со стихами.",
+   "en": "Nearly the theme of a piano concerto he had finished weeks before, with one wrong note. The bird lived with Mozart three years and got a funeral with a poem."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mozart%27s_starling",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_classical_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Люлли, композитор Людовика XIV, отбивал такт на концертах тяжёлой тростью об пол. Чем это для него кончилось?",
+   "en": "Lully, Louis XIV's composer, beat time at concerts by pounding a heavy staff on the floor. How did that end for him?"
+  },
+  "options": [
+   {
+    "ru": "Ударил себя по ноге",
+    "en": "He struck his own foot"
+   },
+   {
+    "ru": "Проломил пол сцены",
+    "en": "He broke through the stage"
+   },
+   {
+    "ru": "Попал тростью в короля",
+    "en": "He hit the king with it"
+   },
+   {
+    "ru": "Оглох от стука",
+    "en": "The pounding made him deaf"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1687 году на «Te Deum» он попал тростью по пальцу ноги. Началась гангрена, отрезать палец Люлли отказался и через пару месяцев умер.",
+   "en": "In 1687, conducting a Te Deum, he hit his toe with the staff. Gangrene set in, he refused to have the toe cut off, and he died within months."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jean-Baptiste_Lully",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_classical_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Учёный и политик Бенджамин Франклин изобрёл в 1761 году музыкальный инструмент. Какой?",
+   "en": "In 1761 the scientist and statesman Benjamin Franklin invented a musical instrument. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Стеклянную гармонику",
+    "en": "The glass harmonica"
+   },
+   {
+    "ru": "Губную гармошку",
+    "en": "The harmonica"
+   },
+   {
+    "ru": "Механическое пианино",
+    "en": "The mechanical player piano"
+   },
+   {
+    "ru": "Педальную арфу",
+    "en": "The pedal harp"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Стеклянные чаши крутятся на оси, а звук рождается под мокрыми пальцами. Для неё писали Моцарт и Бетховен, а по слухам, она сводила с ума.",
+   "en": "Glass bowls spin on a shaft and sing under wet fingers. Mozart and Beethoven wrote for it, and rumour said it drove people mad."
+  },
+  "source": "https://en.wikipedia.org/wiki/Glass_harmonica",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_classical_22"
+ },
+ {
+  "id": "cur_classical_15",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Вивальди, автор «Времён года», около 30 лет писал музыку для оркестра венецианского приюта. Кто в этом оркестре играл?",
+   "en": "Vivaldi, who wrote The Four Seasons, wrote for a Venetian orphanage's orchestra for some 30 years. Who played in it?"
+  },
+  "options": [
+   {
+    "ru": "Девочки-сироты",
+    "en": "Orphan girls"
+   },
+   {
+    "ru": "Мальчики-сироты",
+    "en": "Orphan boys"
+   },
+   {
+    "ru": "Монахи",
+    "en": "Monks"
+   },
+   {
+    "ru": "Гондольеры",
+    "en": "Venice's gondoliers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Оркестр и хор приюта Пьета, где росли брошенные дети, были только женскими и славились. А самого Вивальди за цвет волос звали «рыжим священником».",
+   "en": "The Pietà, a home for abandoned children, had a renowned all-female orchestra and choir. Vivaldi was the 'Red Priest' for his hair."
+  },
+  "source": "https://en.wikipedia.org/wiki/Antonio_Vivaldi",
+  "basedOn": "classical_002",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Верди отдал тенору ноты арии «Сердце красавицы склонно к измене» перед самой премьерой. Почему так поздно?",
+   "en": "Verdi handed the tenor the music of 'La donna è mobile' just before the premiere. Why so late?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы мотив не узнали заранее",
+    "en": "So the tune wouldn't leak early"
+   },
+   {
+    "ru": "Дописал её в ночь перед премьерой",
+    "en": "He finished it the night before"
+   },
+   {
+    "ru": "Поссорился с тенором",
+    "en": "He had fallen out with the tenor"
+   },
+   {
+    "ru": "Ждал разрешения цензуры",
+    "en": "He was waiting for the censors"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он взял с тенора слово не петь и не насвистывать её вне репетиций. Не зря: после премьеры «Риголетто» в 1851 году арию наутро распевали на улицах.",
+   "en": "He made the tenor promise not to sing or whistle it outside rehearsals. Rightly: the day after Rigoletto's 1851 premiere, people sang it in the streets."
+  },
+  "source": "https://en.wikipedia.org/wiki/La_donna_%C3%A8_mobile",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_classical_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Четверо сыновей Баха тоже стали известными композиторами. А сколько всего детей было у Иоганна Себастьяна Баха?",
+   "en": "Four of Bach's sons became well-known composers too. How many children did Johann Sebastian Bach have in all?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   80
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "детей",
+   "en": "children"
+  },
+  "fact": {
+   "ru": "Двадцать: семеро от первой жены и тринадцать от второй. Многие умерли совсем маленькими, взрослыми стала примерно половина.",
+   "en": "Twenty: seven with his first wife and thirteen with his second. Many died as babies; about half grew up."
+  },
+  "source": "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach",
+  "basedOn": "classical_043",
+  "refine": "rewrite",
+  "id": "cur_classical_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Легковой автомобиль весит около 1,5 тонны. С какой силой в тоннах тянут чугунную раму концертного рояля все его струны?",
+   "en": "A car weighs about 1.5 tonnes. How many tonnes of force do a concert grand's strings put on its iron frame?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "тонн",
+   "en": "tonnes"
+  },
+  "fact": {
+   "ru": "Около 20 тонн, а у больших роялей и больше: как дюжина легковушек. Поэтому раму концертного рояля отливают из чугуна.",
+   "en": "About 20 tonnes, and more in big grands: as heavy as a dozen cars. That is why a concert grand's frame is cast iron."
+  },
+  "source": "https://en.wikipedia.org/wiki/Piano",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_classical_23"
+ },
+ {
+  "id": "cur_classical_19",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Philips рассказывает, что ёмкость компакт-диска выбрали под Девятую симфонию Бетховена. Сколько минут вмещал CD?",
+   "en": "Philips says the CD's capacity was chosen to fit Beethoven's Ninth Symphony. How many minutes did a CD hold?"
+  },
+  "answer": 74,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "минут",
+   "en": "minutes"
+  },
+  "fact": {
+   "ru": "74 минуты. Но главный инженер Philips Кес Имминк называет эту историю мифом. Позже появились диски и на 80 минут.",
+   "en": "74 minutes. But Philips's chief engineer Kees Immink calls the story a myth. Later, 80-minute discs appeared too."
+  },
+  "source": "https://en.wikipedia.org/wiki/Compact_disc",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Ораторию Генделя «Мессия», ту самую, с «Аллилуйей», исполняют больше двух часов. За сколько дней Гендель её написал?",
+   "en": "Handel's Messiah, the one with the Hallelujah chorus, runs over two hours. In how many days did Handel write it?"
+  },
+  "answer": 24,
+  "range": [
+   0,
+   365
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "С 22 августа по 14 сентября 1741 года. А обычай вставать на «Аллилуйе» пошёл от легенды, что так сделал король, но доказательств этому нет.",
+   "en": "From 22 August to 14 September 1741. The custom of standing for the Hallelujah comes from a legend that the king stood; there is no real evidence."
+  },
+  "source": "https://en.wikipedia.org/wiki/Messiah_(Handel)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_classical_20"
+ }
+]

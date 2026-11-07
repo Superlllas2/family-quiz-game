@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Царь Мидас решил, что Пан играет на свирели лучше Аполлона. Обиженный бог дал ему новые уши. Какие?",
+   "en": "King Midas judged that Pan played the pipes better than Apollo. The offended god gave him new ears. What kind?"
+  },
+  "options": [
+   {
+    "ru": "Ослиные",
+    "en": "A donkey's"
+   },
+   {
+    "ru": "Заячьи",
+    "en": "A hare's"
+   },
+   {
+    "ru": "Кошачьи",
+    "en": "A cat's"
+   },
+   {
+    "ru": "Волчьи",
+    "en": "A wolf's"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мидас прятал их под тюрбаном. Цирюльник шепнул тайну в ямку в земле, а выросший там тростник зашелестел: «У царя Мидаса ослиные уши!»",
+   "en": "Midas hid them under a turban. His barber whispered the secret into a hole in the ground, and the reeds that grew there whispered it to all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Midas",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_mythology_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Персей отрубил голову горгоне Медузе. Кто, по мифу, тут же появился из её шеи?",
+   "en": "Perseus cut off the Gorgon Medusa's head. In the myth, who sprang at once from her neck?"
+  },
+  "options": [
+   {
+    "ru": "Крылатый конь Пегас",
+    "en": "Pegasus, the winged horse"
+   },
+   {
+    "ru": "Огнедышащая Химера",
+    "en": "The fire-breathing Chimera"
+   },
+   {
+    "ru": "Стайка летучих мышей",
+    "en": "A swarm of bats"
+   },
+   {
+    "ru": "Девятиглавая Гидра",
+    "en": "The nine-headed Hydra"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вместе с ним родился его брат Хрисаор. А на саму Медузу Персей смотрел только в отражении на щите, чтобы не окаменеть.",
+   "en": "His brother Chrysaor was born with him. Perseus looked at Medusa only in the reflection on his shield, so as not to turn to stone."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pegasus",
+  "basedOn": "mythology_003",
+  "refine": "rewrite",
+  "id": "cur_mythology_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Колесницу бога Тора везут два козла. Что он однажды сделал с ними на ночлеге у крестьянина?",
+   "en": "The god Thor's chariot is pulled by two goats. What did he once do with them, staying the night at a farmer's?"
+  },
+  "options": [
+   {
+    "ru": "Съел и оживил молотом",
+    "en": "Ate them, then revived them"
+   },
+   {
+    "ru": "Подарил их крестьянам",
+    "en": "Gave them to the farmers"
+   },
+   {
+    "ru": "Сменял на бочку мёда",
+    "en": "Swapped them for mead"
+   },
+   {
+    "ru": "Отпустил пастись в лес",
+    "en": "Let them graze in the woods"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кости Тор велел бросать на шкуры, но сын хозяина расколол одну ради мозга, и козёл ожил хромым. За это Тор забрал детей крестьянина в слуги.",
+   "en": "The bones went onto the skins, but the farmer's son had split one for the marrow, and a goat rose lame. Thor took the children as servants."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tanngrisnir_and_Tanngnj%C3%B3str",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_mythology_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Если разбудить бога Пана в полдень, он кричал так, что стада в ужасе разбегались. Какое слово пошло от его имени?",
+   "en": "Wake the god Pan at noon and he shouted so loud that herds stampeded in terror. Which word comes from his name?"
+  },
+  "options": [
+   {
+    "ru": "Паника",
+    "en": "Panic"
+   },
+   {
+    "ru": "Панорама",
+    "en": "Panorama"
+   },
+   {
+    "ru": "Пандемия",
+    "en": "Pandemic"
+   },
+   {
+    "ru": "Пантомима",
+    "en": "Pantomime"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Афиняне верили, что при Марафоне Пан наслал её на персов. А «пандемия» и «панорама» — от другого греческого «пан»: «всё».",
+   "en": "Athenians believed Pan sent it upon the Persians at Marathon. 'Pandemic' and 'panorama' come from another Greek 'pan': 'all'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Panic",
+  "basedOn": "mythology_020",
+  "refine": "rewrite",
+  "id": "cur_mythology_22"
+ },
+ {
+  "id": "cur_mythology_05",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На кладбище в египетском Бени-Хасане нашли больше 200 тысяч мумий животных. Каких в основном?",
+   "en": "A cemetery at Beni Hasan in Egypt held over 200,000 animal mummies. Mostly of which animal?"
+  },
+  "options": [
+   {
+    "ru": "Кошек",
+    "en": "Cats"
+   },
+   {
+    "ru": "Ибисов",
+    "en": "Ibises"
+   },
+   {
+    "ru": "Крокодилов",
+    "en": "Crocodiles"
+   },
+   {
+    "ru": "Соколов",
+    "en": "Falcons"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кошки были священными животными богини Бастет. Партию таких мумий в 1890 году привезли в Ливерпуль и почти всю продали на удобрение.",
+   "en": "Cats were sacred to the goddess Bastet. In 1890 a shipload of these mummies reached Liverpool, and most was sold as fertiliser."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cats_in_ancient_Egypt",
+  "basedOn": "mythology_025",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Египтяне изображали бога утреннего солнца Хепри жуком-скарабеем. Почему именно им?",
+   "en": "The Egyptians showed Khepri, god of the morning sun, as a scarab beetle. Why that beetle?"
+  },
+  "options": [
+   {
+    "ru": "Скарабей катит шар навоза",
+    "en": "It rolls a ball of dung"
+   },
+   {
+    "ru": "Скарабей блестит как золото",
+    "en": "It shines like gold"
+   },
+   {
+    "ru": "Скарабей летает на рассвете",
+    "en": "It flies at dawn"
+   },
+   {
+    "ru": "Скарабей живёт тысячу лет",
+    "en": "It lives a thousand years"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Солнце катится по небу, как навозный шар. А молодые жуки вылезают из шара будто сами собой, как солнце, что рождается каждое утро.",
+   "en": "The sun rolls across the sky like a dung ball. And young beetles crawl out of the ball as if from nothing, like the sun reborn each morning."
+  },
+  "source": "https://en.wikipedia.org/wiki/Khepri",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_mythology_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как, по японским поверьям, одолеть водяного каппу?",
+   "en": "In Japanese folklore, how can you beat a kappa, the river imp?"
+  },
+  "options": [
+   {
+    "ru": "Низко ему поклониться",
+    "en": "Bow deeply to it"
+   },
+   {
+    "ru": "Посмотреть ему в глаза",
+    "en": "Stare it in the eye"
+   },
+   {
+    "ru": "Спеть ему песню",
+    "en": "Sing it a song"
+   },
+   {
+    "ru": "Бросить в него рыбу",
+    "en": "Throw a fish at it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вежливый каппа кланяется в ответ, проливает воду из блюдца на макушке и теряет всю силу.",
+   "en": "The polite kappa bows back, spills the water from the dish on top of its head and loses all its strength."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kappa_(folklore)",
+  "basedOn": "mythology_030",
+  "refine": "same",
+  "id": "cur_mythology_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Все знают лепрекона с горшком золота. А каким ремеслом он занят в ирландском фольклоре?",
+   "en": "Everyone knows the leprechaun with his pot of gold. But what is his trade in Irish folklore?"
+  },
+  "options": [
+   {
+    "ru": "Шьёт башмаки",
+    "en": "Making shoes"
+   },
+   {
+    "ru": "Куёт подковы",
+    "en": "Shoeing horses"
+   },
+   {
+    "ru": "Печёт хлеб",
+    "en": "Baking bread"
+   },
+   {
+    "ru": "Варит пиво",
+    "en": "Brewing beer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Уже в средневековой ирландской саге пойманные лепреконы выкупают свободу тремя желаниями, а горшок с золотом появился позже.",
+   "en": "Already in a medieval Irish saga, captured leprechauns buy their freedom with three wishes; the pot of gold came later."
+  },
+  "source": "https://en.wikipedia.org/wiki/Leprechaun",
+  "basedOn": "mythology_035",
+  "refine": "rewrite",
+  "id": "cur_mythology_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сначала Гераклу задали 10 подвигов. Почему их стало двенадцать?",
+   "en": "Heracles was first set 10 labours. Why did they become twelve?"
+  },
+  "options": [
+   {
+    "ru": "Два подвига не засчитали",
+    "en": "Two of them did not count"
+   },
+   {
+    "ru": "Геракл сам попросил ещё",
+    "en": "He asked for more himself"
+   },
+   {
+    "ru": "Зевс добавил два в награду",
+    "en": "Zeus added two as a reward"
+   },
+   {
+    "ru": "Он проиграл спор Гермесу",
+    "en": "He lost a bet to Hermes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С Гидрой ему помог племянник Иолай, а за чистку Авгиевых конюшен он взял плату, и царь Еврисфей их не засчитал.",
+   "en": "His nephew Iolaus helped with the Hydra and he took payment for the Augean stables, so King Eurystheus refused to count them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Labours_of_Hercules",
+  "basedOn": "mythology_016",
+  "refine": "same",
+  "id": "cur_mythology_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "У Гесиода Пандора открыла вовсе не ящик. А что?",
+   "en": "In Hesiod, Pandora did not open a box at all. What was it?"
+  },
+  "options": [
+   {
+    "ru": "Глиняный кувшин",
+    "en": "A clay jar"
+   },
+   {
+    "ru": "Кожаный мешок",
+    "en": "A leather bag"
+   },
+   {
+    "ru": "Плетёную корзину",
+    "en": "A wicker basket"
+   },
+   {
+    "ru": "Медный котёл",
+    "en": "A copper cauldron"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Гесиод писал о пифосе, огромном кувшине для зерна и вина. «Ящиком» его в 1508 году сделал Эразм Роттердамский. Внутри осталась лишь надежда.",
+   "en": "Hesiod wrote of a pithos, a big storage jar for grain and wine. Erasmus made it a 'box' in 1508. Only hope stayed inside."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pandora%27s_box",
+  "basedOn": "mythology_018",
+  "refine": "rewrite",
+  "id": "cur_mythology_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем заканчивается «Илиада» Гомера, поэма о Троянской войне?",
+   "en": "How does Homer's Iliad, the poem of the Trojan War, end?"
+  },
+  "options": [
+   {
+    "ru": "Похоронами Гектора",
+    "en": "With Hector's funeral"
+   },
+   {
+    "ru": "Взятием Трои конём",
+    "en": "With the horse taking Troy"
+   },
+   {
+    "ru": "Смертью Ахилла от стрелы",
+    "en": "With Achilles shot by an arrow"
+   },
+   {
+    "ru": "Возвращением Одиссея",
+    "en": "With Odysseus coming home"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ни взятия Трои, ни коня в «Илиаде» нет. О коне коротко вспоминает «Одиссея», а подробно рассказывает «Энеида» Вергилия.",
+   "en": "Neither the fall of Troy nor the horse is in the Iliad. The Odyssey mentions the horse briefly; Virgil's Aeneid tells it in full."
+  },
+  "source": "https://en.wikipedia.org/wiki/Iliad",
+  "basedOn": "mythology_019",
+  "refine": "rewrite",
+  "id": "cur_mythology_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто, по скандинавскому мифу, был матерью Слейпнира, восьминогого коня бога Одина?",
+   "en": "In Norse myth, who was the mother of Sleipnir, the god Odin's eight-legged horse?"
+  },
+  "options": [
+   {
+    "ru": "Бог Локи",
+    "en": "The god Loki"
+   },
+   {
+    "ru": "Богиня Фрейя",
+    "en": "The goddess Freyja"
+   },
+   {
+    "ru": "Богиня Фригг",
+    "en": "The goddess Frigg"
+   },
+   {
+    "ru": "Богиня Хель",
+    "en": "The goddess Hel"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Локи обернулся кобылой, чтобы отвлечь коня великана-строителя, а потом родил от него жеребёнка.",
+   "en": "Loki turned into a mare to lure away a giant builder's stallion, and later gave birth to the foal."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sleipnir",
+  "basedOn": "mythology_033",
+  "refine": "rewrite",
+  "id": "cur_mythology_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Цепь для волка Фенрира гномы сделали из шести вещей, которых с тех пор нет на свете. Что было среди них?",
+   "en": "Dwarves made the fetter for the wolf Fenrir from six things that have vanished from the world since. Which was one?"
+  },
+  "options": [
+   {
+    "ru": "Шум кошачьих шагов",
+    "en": "The sound of a cat's steps"
+   },
+   {
+    "ru": "Тень летящей птицы",
+    "en": "A flying bird's shadow"
+   },
+   {
+    "ru": "Запах морской соли",
+    "en": "The smell of sea salt"
+   },
+   {
+    "ru": "Блеск рыбьей чешуи",
+    "en": "The shine of fish scales"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "А ещё борода женщины, корни гор, жилы медведя, дыхание рыбы и птичья слюна. Цепь звалась Глейпнир.",
+   "en": "Also a woman's beard, the roots of mountains, a bear's sinews, a fish's breath and a bird's spittle. The fetter was called Gleipnir."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gleipnir",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_mythology_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Палеонтолог Отенио Абель в 1914 году предположил, откуда взялся миф о циклопах. Что, по его версии, находили греки?",
+   "en": "In 1914 palaeontologist Othenio Abel suggested where the Cyclops myth came from. What did he think the Greeks had found?"
+  },
+  "options": [
+   {
+    "ru": "Черепа карликовых слонов",
+    "en": "Skulls of dwarf elephants"
+   },
+   {
+    "ru": "Скелеты выброшенных китов",
+    "en": "Skeletons of beached whales"
+   },
+   {
+    "ru": "Окаменелые яйца динозавров",
+    "en": "Fossil dinosaur eggs"
+   },
+   {
+    "ru": "Маски древних актёров",
+    "en": "Masks of ancient actors"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Посреди слоновьего черепа — большая дыра для хобота, похожая на одну огромную глазницу. Многие учёные эту версию оспаривают.",
+   "en": "In the middle of an elephant's skull is a big hole for the trunk that looks like one huge eye socket. Many scholars dispute the idea."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cyclopes",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_mythology_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По китайской легенде, звери наперегонки переплывали реку за место в календаре. Как первой стала крыса?",
+   "en": "In a Chinese legend, animals raced across a river for places in the calendar. How did the rat come first?"
+  },
+  "options": [
+   {
+    "ru": "Переплыла на спине быка",
+    "en": "It rode on the ox's back"
+   },
+   {
+    "ru": "Ухватилась за хвост тигра",
+    "en": "It held on to the tiger's tail"
+   },
+   {
+    "ru": "Перелетела на драконе",
+    "en": "It flew over on the dragon"
+   },
+   {
+    "ru": "Перебежала по камням",
+    "en": "It ran across on stones"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У самого берега крыса спрыгнула с быка и первой прибежала к Нефритовому императору. Вот почему бык в календаре второй.",
+   "en": "Near the bank the rat jumped off the ox and ran to the Jade Emperor first. That is why the ox is second in the calendar."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chinese_zodiac",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_mythology_15"
+ },
+ {
+  "id": "cur_mythology_16",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Одиссей вернулся на Итаку через 20 лет, переодетым нищим. Кто в его доме первым сам узнал его?",
+   "en": "Odysseus came home after 20 years, disguised as a beggar. Who in his household was the first to know him unaided?"
+  },
+  "options": [
+   {
+    "ru": "Его пёс",
+    "en": "His dog"
+   },
+   {
+    "ru": "Его жена",
+    "en": "His wife"
+   },
+   {
+    "ru": "Его сын",
+    "en": "His son"
+   },
+   {
+    "ru": "Его отец",
+    "en": "His father"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Старый пёс Аргос лежал на куче навоза, весь в клещах. Он прижал уши, вильнул хвостом и тут же умер. Одиссей украдкой утёр слезу.",
+   "en": "Old Argos lay on a dung heap, full of ticks. He dropped his ears, wagged his tail and died at once. Odysseus wiped away a tear in secret."
+  },
+  "source": "https://en.wikipedia.org/wiki/Argos_(dog)",
+  "basedOn": "mythology_039",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_mythology_17",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Непобедимая армада Испании насчитывала около 130 кораблей. Сколько кораблей привели греки под Трою по «Илиаде»?",
+   "en": "The Spanish Armada had about 130 ships. How many ships did the Greeks bring to Troy, by the Iliad?"
+  },
+  "answer": 1186,
+  "range": [
+   0,
+   3600
+  ],
+  "step": 2,
+  "tolerance": 300,
+  "unit": {
+   "ru": "кораблей",
+   "en": "ships"
+  },
+  "fact": {
+   "ru": "Корабли пришли из 29 областей Греции, а больше всех, целую сотню, привёл сам предводитель похода Агамемнон.",
+   "en": "They came from 29 parts of Greece, and the most, a full hundred, were brought by the expedition's leader Agamemnon."
+  },
+  "source": "https://en.wikipedia.org/wiki/Catalogue_of_Ships",
+  "basedOn": "mythology_042",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Монблан, высшая гора Альп, — около 4800 метров. Какой высоты Олимп, гора греческих богов?",
+   "en": "Mont Blanc, the highest of the Alps, is about 4,800 metres. How high is Olympus, the mountain of the Greek gods?"
+  },
+  "answer": 2918,
+  "range": [
+   1000,
+   5000
+  ],
+  "step": 2,
+  "tolerance": 300,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "2918 м, пик Митикас. Боги жили там веками, а люди достоверно поднялись на вершину лишь в 1913 году: местный охотник и двое швейцарцев.",
+   "en": "2,918 m, at Mytikas peak. The gods lived there for ages, but people are known to have reached the top only in 1913: a local hunter and two Swiss."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mount_Olympus",
+  "basedOn": "mythology_044",
+  "refine": "rewrite",
+  "id": "cur_mythology_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Мы привыкли, что у Цербера, пса Аида, три головы. Сколько их у него в поэме Гесиода, одной из древнейших?",
+   "en": "We know Cerberus, the hound of Hades, with three heads. How many does he have in Hesiod's poem, one of the oldest?"
+  },
+  "answer": 50,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "голов",
+   "en": "heads"
+  },
+  "fact": {
+   "ru": "У Гесиода Цербер пятидесятиголовый, у поэта Пиндара — стоголовый. Привычные три головы закрепились у более поздних авторов.",
+   "en": "Hesiod gives Cerberus fifty heads and the poet Pindar a hundred. The familiar three became the rule with later writers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cerberus",
+  "basedOn": "mythology_015",
+  "refine": "rewrite",
+  "id": "cur_mythology_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "О редком событии говорят «раз в сто лет». Феникс, по Геродоту, прилетал в Египет ещё реже. Раз во сколько лет?",
+   "en": "We call something rare 'once in a hundred years'. Herodotus says the phoenix came to Egypt even more rarely. How often?"
+  },
+  "answer": 500,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 150,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Раз в 500 лет, так говорили жрецы Гелиополя. Сам Геродот честно признался, что видел феникса только на картинке.",
+   "en": "Every 500 years, said the priests of Heliopolis. Herodotus himself admitted he had only ever seen the phoenix in pictures."
+  },
+  "source": "https://en.wikipedia.org/wiki/Phoenix_(mythology)",
+  "basedOn": "mythology_045",
+  "refine": "rewrite",
+  "id": "cur_mythology_23"
+ }
+]

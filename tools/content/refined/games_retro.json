@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "По словам создателя, форму Пакмена ему подсказала еда. Какая?",
+   "en": "Pac-Man's creator says a food gave him the character's shape. Which?"
+  },
+  "options": [
+   {
+    "ru": "Пицца без одного куска",
+    "en": "A pizza missing a slice"
+   },
+   {
+    "ru": "Надкушенное печенье",
+    "en": "A bitten cookie"
+   },
+   {
+    "ru": "Головка сыра без ломтика",
+    "en": "A cheese wheel missing a wedge"
+   },
+   {
+    "ru": "Раскрытая ракушка",
+    "en": "An open clam"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тору Иватани позже признал, что это правда лишь наполовину: ещё он скруглил японский иероглиф «рот» — квадратный 口.",
+   "en": "Toru Iwatani later said this is only half true: he also rounded off the square Japanese character for 'mouth', 口."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pac-Man",
+  "basedOn": "games_retro_005",
+  "refine": "rewrite",
+  "id": "cur_games_retro_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Талисмана Sega выбирали, расспрашивая прохожих в Центральном парке Нью-Йорка. Какой эскиз победил?",
+   "en": "Sega picked its mascot by asking passers-by in New York's Central Park. Which sketch won?"
+  },
+  "options": [
+   {
+    "ru": "Ёж",
+    "en": "A hedgehog"
+   },
+   {
+    "ru": "Броненосец",
+    "en": "An armadillo"
+   },
+   {
+    "ru": "Пёс",
+    "en": "A dog"
+   },
+   {
+    "ru": "Мужчина в пижаме",
+    "en": "A man in pyjamas"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Все четыре эскиза настоящие. Второе место занял мужчина в пижаме, похожий на Теодора Рузвельта: из него сделали злодея доктора Эггмана.",
+   "en": "All four sketches were real. Second came the man in pyjamas who looked like Theodore Roosevelt: he became the villain Dr. Eggman."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(character)",
+  "basedOn": "games_retro_004",
+  "refine": "rewrite",
+  "id": "cur_games_retro_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как зовут героя, за которого играешь в The Legend of Zelda?",
+   "en": "What is the name of the hero you play in The Legend of Zelda?"
+  },
+  "options": [
+   {
+    "ru": "Линк",
+    "en": "Link"
+   },
+   {
+    "ru": "Зельда",
+    "en": "Zelda"
+   },
+   {
+    "ru": "Ганон",
+    "en": "Ganon"
+   },
+   {
+    "ru": "Хайрул",
+    "en": "Hyrule"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Зельда — это принцесса. А Линк («связь») по первой задумке путешествовал во времени и связывал прошлое с будущим.",
+   "en": "Zelda is the princess. Link was named because in the first plan he travelled in time, linking the past and the future."
+  },
+  "source": "https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)",
+  "basedOn": "games_retro_007",
+  "refine": "rewrite",
+  "id": "cur_games_retro_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему у Марио, героя Nintendo, усы?",
+   "en": "Why does Nintendo's Mario have a moustache?"
+  },
+  "options": [
+   {
+    "ru": "Рот было не нарисовать",
+    "en": "A mouth was too hard to draw"
+   },
+   {
+    "ru": "Чтобы казался старше",
+    "en": "To make him look grown-up"
+   },
+   {
+    "ru": "Как у итальянского повара",
+    "en": "To look like an Italian chef"
+   },
+   {
+    "ru": "Чтобы походить на Чаплина",
+    "en": "To make him look like Chaplin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У аркадного Марио 1981 года было так мало точек, что усы и нос заменили рот, кепка избавила от причёски, а комбинезон выделил руки.",
+   "en": "The 1981 arcade Mario had so few pixels that a moustache and nose replaced a mouth, a cap saved drawing hair and overalls showed his arms."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mario",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_games_retro_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Первый автомат Pong поставили в бар, и через пару дней он «сломался». Что случилось на самом деле?",
+   "en": "The first Pong machine went into a bar, and a few days later it 'broke down'. What had really happened?"
+  },
+  "options": [
+   {
+    "ru": "Он переполнился монетами",
+    "en": "It was overflowing with coins"
+   },
+   {
+    "ru": "На него пролили пиво",
+    "en": "Someone spilled beer into it"
+   },
+   {
+    "ru": "Он перегрелся от игры",
+    "en": "It overheated from all the play"
+   },
+   {
+    "ru": "Его разбил проигравший игрок",
+    "en": "A sore loser smashed it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это было в 1972 году. Инженер Эл Алкорн приехал чинить автомат и увидел, что монетоприёмник доверху забит четвертаками.",
+   "en": "This was in 1972. Engineer Al Alcorn came to fix the machine and found its coin box crammed full of quarters."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pong",
+  "basedOn": "games_retro_010",
+  "refine": "rewrite",
+  "id": "cur_games_retro_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Game Boy, обгоревший на войне в Персидском заливе, годами показывали в магазине Nintendo в Нью-Йорке. Чем он удивлял?",
+   "en": "A Game Boy charred in the Gulf War was shown for years in Nintendo's New York store. What was amazing about it?"
+  },
+  "options": [
+   {
+    "ru": "Он всё ещё работал",
+    "en": "It still worked"
+   },
+   {
+    "ru": "Он спас солдату жизнь",
+    "en": "It saved a soldier's life"
+   },
+   {
+    "ru": "В нём застряла пуля",
+    "en": "A bullet was stuck in it"
+   },
+   {
+    "ru": "Его подписал президент",
+    "en": "The president signed it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Корпус обуглен и вздут, но приставка включалась. По известной версии, её задела бомбёжка казарм; в 2023 году её увезли в штаб Nintendo.",
+   "en": "Its case is charred and swollen, yet it switched on. The usual story is a barracks bombing; in 2023 it went back to Nintendo's offices."
+  },
+  "source": "https://www.timeextension.com/news/2023/06/one-of-the-worlds-most-famous-game-boys-is-retiring-from-active-duty",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_games_retro_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему пришельцы в Space Invaders ускоряются, когда их становится меньше?",
+   "en": "Why do the Space Invaders aliens speed up as you shoot them?"
+  },
+  "options": [
+   {
+    "ru": "Меньше пришельцев — быстрее отрисовка",
+    "en": "Fewer to draw, so they move faster"
+   },
+   {
+    "ru": "Таймер усложнял игру",
+    "en": "A timer made it harder"
+   },
+   {
+    "ru": "Так требовали владельцы автоматов",
+    "en": "Arcade owners demanded it"
+   },
+   {
+    "ru": "По сюжету пришельцы всё сильнее злятся",
+    "en": "In the story they keep getting angrier"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Томохиро Нисикадо не планировал ускорение, но оставил эту случайность, и нарастающее напряжение стало главной фишкой игры.",
+   "en": "Designer Tomohiro Nishikado never planned it but kept the accident, and the rising tension became the game's signature."
+  },
+  "source": "https://en.wikipedia.org/wiki/Space_Invaders",
+  "basedOn": "games_retro_027",
+  "refine": "rewrite",
+  "id": "cur_games_retro_08"
+ },
+ {
+  "id": "cur_games_retro_09",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как световой пистолет в Duck Hunt понимал, что ты попал?",
+   "en": "How did the light gun in Duck Hunt know you had hit?"
+  },
+  "options": [
+   {
+    "ru": "Экран мигал белым квадратом",
+    "en": "The screen flashed a white box"
+   },
+   {
+    "ru": "Невидимый луч бил в датчик",
+    "en": "An invisible beam hit a sensor"
+   },
+   {
+    "ru": "Ловил ультразвук от телевизора",
+    "en": "It picked up ultrasound from the TV"
+   },
+   {
+    "ru": "Телевизор слал радиосигнал",
+    "en": "The TV sent a radio signal"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "При выстреле экран на кадр чернел, а утка становилась белым квадратом. На плоских телевизорах это не работает: пистолет рассчитан на кинескоп.",
+   "en": "On a shot the screen went black for a frame, then the duck became a white box; the trick needs an old tube TV and fails on flat screens."
+  },
+  "source": "https://en.wikipedia.org/wiki/NES_Zapper",
+  "basedOn": "games_retro_024",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "PlayStation выросла из отменённой CD-приставки для консоли какой компании?",
+   "en": "The PlayStation grew out of a cancelled CD add-on for which company's console?"
+  },
+  "options": [
+   {
+    "ru": "Нинтендо",
+    "en": "Nintendo"
+   },
+   {
+    "ru": "Сега",
+    "en": "Sega"
+   },
+   {
+    "ru": "Атари",
+    "en": "Atari"
+   },
+   {
+    "ru": "Панасоник",
+    "en": "Panasonic"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1991 году Sony показала «Play Station» для Super Nintendo, а на следующий день Nintendo объявила, что работает с Philips.",
+   "en": "In 1991 Sony unveiled a \"Play Station\" for the Super Nintendo, and the very next day Nintendo announced a deal with Philips."
+  },
+  "source": "https://en.wikipedia.org/wiki/Super_NES_CD-ROM",
+  "basedOn": "games_retro_019",
+  "refine": "same",
+  "id": "cur_games_retro_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чьё лицо было у Макса Пейна в игре 2001 года?",
+   "en": "Whose face did Max Payne have in the 2001 game?"
+  },
+  "options": [
+   {
+    "ru": "Сценариста игры",
+    "en": "The game's writer"
+   },
+   {
+    "ru": "Нанятого актёра Голливуда",
+    "en": "A hired Hollywood actor"
+   },
+   {
+    "ru": "Киану Ривза",
+    "en": "Keanu Reeves"
+   },
+   {
+    "ru": "Модели из фотобанка",
+    "en": "A stock photo model"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Денег было мало, и позировал сам сценарист Сэм Лейк. Во второй части бюджет вырос, и Макса сыграл уже профессиональный актёр Тимоти Гиббс.",
+   "en": "Money was tight, so writer Sam Lake posed himself; the sequel had a bigger budget and hired a professional actor, Timothy Gibbs."
+  },
+  "source": "https://en.wikipedia.org/wiki/Max_Payne_(character)",
+  "basedOn": "games_retro_032",
+  "refine": "same",
+  "id": "cur_games_retro_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что в Super Mario Bros. (1985) нарисовано одной картинкой, только разным цветом?",
+   "en": "In Super Mario Bros. (1985), which two things are the same picture in different colours?"
+  },
+  "options": [
+   {
+    "ru": "Облака и кусты",
+    "en": "Clouds and bushes"
+   },
+   {
+    "ru": "Грибы и монеты",
+    "en": "Mushrooms and coins"
+   },
+   {
+    "ru": "Трубы и замки",
+    "en": "Pipes and castles"
+   },
+   {
+    "ru": "Принцесса и Тоад",
+    "en": "The princess and Toad"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это один рисунок, перекрашенный из белого в зелёный: в 1985 году на картридже берегли каждый байт.",
+   "en": "It is one picture recoloured from white to green: in 1985 every byte on the cartridge counted."
+  },
+  "source": "https://en.wikipedia.org/wiki/Super_Mario_Bros.",
+  "basedOn": "games_retro_038",
+  "refine": "rewrite",
+  "id": "cur_games_retro_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Код ↑↑↓↓←→←→BA, дававший 30 жизней в Contra, придумал программист Konami. Зачем?",
+   "en": "A Konami programmer made the code Up Up Down Down Left Right Left Right B A (30 lives in Contra). Why?"
+  },
+  "options": [
+   {
+    "ru": "Сам не мог пройти игру",
+    "en": "He couldn't beat the game"
+   },
+   {
+    "ru": "Чтобы ловить пиратские копии",
+    "en": "To catch pirated copies"
+   },
+   {
+    "ru": "Как тайную подпись автора",
+    "en": "As a secret signature"
+   },
+   {
+    "ru": "Для показа игры на выставке",
+    "en": "To demo the game at a show"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кадзухиса Хасимото переносил на приставку Gradius, и на тестах игра оказалась ему не по силам. Потом код появился во многих играх Konami.",
+   "en": "Kazuhisa Hashimoto was porting Gradius to the NES and found it too hard to finish in testing. The code later turned up in many Konami games."
+  },
+  "source": "https://en.wikipedia.org/wiki/Konami_Code",
+  "basedOn": "games_retro_025",
+  "refine": "rewrite",
+  "id": "cur_games_retro_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По легенде, в 1983 году Atari закопала в пустыне миллионы картриджей провальной игры по фильму. По какому?",
+   "en": "Legend says that in 1983 Atari buried millions of cartridges of a flop game based on a film. Which film?"
+  },
+  "options": [
+   {
+    "ru": "«Инопланетянин»",
+    "en": "E.T."
+   },
+   {
+    "ru": "«Звёздные войны»",
+    "en": "Star Wars"
+   },
+   {
+    "ru": "«Челюсти»",
+    "en": "Jaws"
+   },
+   {
+    "ru": "«Супермен»",
+    "en": "Superman"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Менеджер Atari говорил о 728 тысячах картриджей. В 2014 году свалку раскопали: «Инопланетянин» там был, но вместе с десятками других игр.",
+   "en": "An Atari manager put it at 728,000 cartridges. Diggers opened the dump in 2014: E.T. was there, but alongside dozens of other games."
+  },
+  "source": "https://en.wikipedia.org/wiki/Atari_video_game_burial",
+  "basedOn": "games_retro_047",
+  "refine": "rewrite",
+  "id": "cur_games_retro_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сначала героем Tomb Raider был мужчина. Почему его заменили на Лару Крофт?",
+   "en": "Tomb Raider's hero was first a man. Why was he replaced by Lara Croft?"
+  },
+  "options": [
+   {
+    "ru": "Его сочли копией Индианы Джонса",
+    "en": "He was an Indiana Jones copy"
+   },
+   {
+    "ru": "Игроки выбрали героиню в опросе",
+    "en": "Players voted for a heroine"
+   },
+   {
+    "ru": "Героиню было проще анимировать",
+    "en": "A heroine was easier to animate"
+   },
+   {
+    "ru": "Актёр озвучки ушёл со скандалом",
+    "en": "His voice actor quit in a row"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У Тоби Гарда сначала был герой в шляпе и с хлыстом. Начальство назвало его вторичным, и Гард решил, что героиня будет интереснее.",
+   "en": "Toby Gard first drew a hero with a hat and a whip. His boss called it derivative, and Gard decided a heroine would work better."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lara_Croft",
+  "basedOn": "games_retro_008",
+  "refine": "rewrite",
+  "id": "cur_games_retro_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первые игры о покемонах вышли сразу в двух версиях, Red и Green. Чем они различались?",
+   "en": "The first Pokémon games came out in two versions at once, Red and Green. How did they differ?"
+  },
+  "options": [
+   {
+    "ru": "Набором покемонов",
+    "en": "Which Pokémon you could find"
+   },
+   {
+    "ru": "Только цветом коробки",
+    "en": "Only the colour of the box"
+   },
+   {
+    "ru": "Героем: мальчик или девочка",
+    "en": "The hero: a boy or a girl"
+   },
+   {
+    "ru": "Языком диалогов",
+    "en": "The language of the dialogue"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Часть покемонов водилась только в одной версии, и собрать всех можно было, лишь меняясь с другом по кабелю. Идею подсказал Сигэру Миямото.",
+   "en": "Some Pokémon lived in only one version, so you had to trade with a friend by cable to catch them all. Shigeru Miyamoto suggested it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Red,_Blue,_and_Yellow",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_games_retro_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Персонажи The Sims говорят на выдуманной тарабарщине. Почему Уилл Райт не взял настоящий язык?",
+   "en": "The characters in The Sims speak made-up gibberish. Why didn't Will Wright use a real language?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы фразы не надоедали",
+    "en": "So the lines wouldn't get tiresome"
+   },
+   {
+    "ru": "Актёры не выучили бы текст",
+    "en": "Actors couldn't learn the script"
+   },
+   {
+    "ru": "Так требовал издатель",
+    "en": "The publisher demanded it"
+   },
+   {
+    "ru": "Настоящая речь не влезала на диск",
+    "en": "Real speech didn't fit on the disc"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он пробовал украинский, навахо, тагальский и эстонский, но решил, что игрок должен слышать чувства, а не слова, и не уставать от повторов.",
+   "en": "He tried Ukrainian, Navajo, Tagalog and Estonian, but decided players should hear feelings, not words, and not tire of repeated lines."
+  },
+  "source": "https://en.wikipedia.org/wiki/Simlish",
+  "basedOn": "games_retro_015",
+  "refine": "rewrite",
+  "id": "cur_games_retro_23"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На каком уровне Pac-Man ломается: половина экрана превращается в кашу и пройти дальше нельзя?",
+   "en": "On which level does Pac-Man break, with half the screen turning to garbage so no one can go on?"
+  },
+  "answer": 256,
+  "range": [
+   1,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "уровень",
+   "en": "level"
+  },
+  "fact": {
+   "ru": "Номер уровня хранился в одном байте, где помещаются числа только до 255. На 256-м уровне счётчик переполняется, и игра рисует мусор.",
+   "en": "The level number lived in one byte, which only counts to 255; on level 256 the counter overflows and the game draws garbage."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pac-Man",
+  "basedOn": "games_retro_040",
+  "refine": "same",
+  "id": "cur_games_retro_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Обычная дискета вмещала 1440 КБ. Сколько килобайт занимала вся игра Super Mario Bros. (1985)?",
+   "en": "A standard floppy disk held 1,440 KB. How many kilobytes did the whole of Super Mario Bros. (1985) take up?"
+  },
+  "answer": 40,
+  "range": [
+   0,
+   1500
+  ],
+  "step": 2,
+  "tolerance": 20,
+  "unit": {
+   "ru": "КБ",
+   "en": "KB"
+  },
+  "fact": {
+   "ru": "Всего 40: 32 КБ программы и 8 КБ графики. На одну дискету поместились бы 36 таких игр.",
+   "en": "Just 40: 32 KB of program and 8 KB of graphics. One floppy could hold 36 copies of the game."
+  },
+  "source": "https://en.wikipedia.org/wiki/Super_Mario_Bros.",
+  "basedOn": "games_retro_043",
+  "refine": "rewrite",
+  "id": "cur_games_retro_19"
+ },
+ {
+  "id": "cur_games_retro_24",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В Южной Корее живёт меньше 1 % людей Земли. Какой процент всех копий StarCraft, проданных к 2001 году, купили там?",
+   "en": "Under 1% of the world's people live in South Korea. What percent of all StarCraft copies sold by 2001 were bought there?"
+  },
+  "answer": 50,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "Половину из 4 миллионов. Матчи там показывали по трём телеканалам, а у звезды по прозвищу BoxeR был фан-клуб больше полумиллиона человек.",
+   "en": "Half of the 4 million. Matches there were shown on three TV channels, and the star player BoxeR had a fan club of over half a million."
+  },
+  "source": "https://en.wikipedia.org/wiki/StarCraft_(video_game)",
+  "basedOn": "games_retro_034",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В Prince of Persia (1989) у принца есть ограниченное время, чтобы спасти принцессу. Сколько минут даёт игра?",
+   "en": "In Prince of Persia (1989) the prince has limited time to save the princess. How many minutes does the game give you?"
+  },
+  "answer": 60,
+  "range": [
+   1,
+   300
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "минут",
+   "en": "minutes"
+  },
+  "fact": {
+   "ru": "Ровно час. Чтобы принц бегал как живой, Джордан Мекнер обвёл кадр за кадром видео, где бегает и прыгает его младший брат Дэвид.",
+   "en": "Exactly one hour. To make the prince move like a real person, Jordan Mechner traced video of his younger brother David running and jumping."
+  },
+  "source": "https://en.wikipedia.org/wiki/Prince_of_Persia_(1989_video_game)",
+  "basedOn": "games_retro_026",
+  "refine": "rewrite",
+  "id": "cur_games_retro_25"
+ }
+]
