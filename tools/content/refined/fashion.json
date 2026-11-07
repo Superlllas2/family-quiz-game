@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В честь чего назван купальник бикини?",
+   "en": "What is the bikini named after?"
+  },
+  "options": [
+   {
+    "ru": "Атолла в Тихом океане",
+    "en": "A Pacific atoll"
+   },
+   {
+    "ru": "Итальянской актрисы",
+    "en": "An Italian actress"
+   },
+   {
+    "ru": "Курорта на Лазурном берегу",
+    "en": "A resort on the Riviera"
+   },
+   {
+    "ru": "Пляжа в Бразилии",
+    "en": "A beach in Brazil"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Атолла Бикини: за четыре дня до показа 1946 года там начались ядерные испытания США. Модели надеть его отказались, вышла танцовщица кабаре «Казино де Пари».",
+   "en": "Bikini Atoll, where the US began nuclear tests four days before the 1946 launch. No model would wear it, so a nude dancer from the Casino de Paris did."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bikini",
+  "basedOn": "fashion_003",
+  "refine": "rewrite",
+  "id": "cur_fashion_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему в Америке кроссовки называют sneakers?",
+   "en": "Why are sports shoes called sneakers in America?"
+  },
+  "options": [
+   {
+    "ru": "В них можно подкрасться",
+    "en": "You can sneak up in them"
+   },
+   {
+    "ru": "Их шили из змеиной кожи",
+    "en": "They were made of snakeskin"
+   },
+   {
+    "ru": "По фамилии изобретателя",
+    "en": "After the inventor's surname"
+   },
+   {
+    "ru": "В честь батончика Snickers",
+    "en": "After the Snickers bar"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Резиновая подошва не стучала, как кожаная, — в такой обуви можно было подобраться к кому угодно неслышно.",
+   "en": "Rubber soles did not clack like leather ones, so you could creep up on anyone unheard."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sneakers",
+  "basedOn": "fashion_014",
+  "refine": "rewrite",
+  "id": "cur_fashion_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Футболку зовут T-shirt за форму буквы T. Чем она была, когда флот США стал выдавать её в 1913 году?",
+   "en": "The T-shirt is named for its T shape. What was it when the US Navy began issuing it in 1913?"
+  },
+  "options": [
+   {
+    "ru": "Нижним бельём",
+    "en": "Underwear"
+   },
+   {
+    "ru": "Формой для тенниса",
+    "en": "Tennis kit"
+   },
+   {
+    "ru": "Пляжной одеждой",
+    "en": "Beachwear"
+   },
+   {
+    "ru": "Пижамой",
+    "en": "Pyjamas"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Белую хлопковую нательную рубашку с круглым вырезом носили под формой. Сама по себе, без рубашки сверху, футболка стала одеждой гораздо позже.",
+   "en": "A white crew-neck cotton undershirt, worn under the uniform. Only much later did people wear the T-shirt on its own."
+  },
+  "source": "https://en.wikipedia.org/wiki/T-shirt",
+  "basedOn": "fashion_006",
+  "refine": "rewrite",
+  "id": "cur_fashion_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кокон шелкопряда свит из одной-единственной шёлковой нити. Какой она длины?",
+   "en": "A silkworm cocoon is spun from one single silk thread. How long is it?"
+  },
+  "options": [
+   {
+    "ru": "От 300 до 900 метров",
+    "en": "300 to 900 m"
+   },
+   {
+    "ru": "От 1 до 3 метров",
+    "en": "1 to 3 m"
+   },
+   {
+    "ru": "От 10 до 30 метров",
+    "en": "10 to 30 m"
+   },
+   {
+    "ru": "От 3 до 9 километров",
+    "en": "3 to 9 kilometres"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Нить сырого шёлка в одном коконе тянется на 300–900 метров. Чтобы её размотать, коконы опускают в горячую воду.",
+   "en": "One cocoon holds a raw silk thread 300 to about 900 m long. To unwind it, the cocoons are put in hot water."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bombyx_mori",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_fashion_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Основатели Adidas и Puma жили в одном маленьком немецком городке. Кем они друг другу приходились?",
+   "en": "The founders of Adidas and Puma lived in the same small German town. How were they related?"
+  },
+  "options": [
+   {
+    "ru": "Родные братья",
+    "en": "Brothers"
+   },
+   {
+    "ru": "Отец и сын",
+    "en": "Father and son"
+   },
+   {
+    "ru": "Муж и жена",
+    "en": "Husband and wife"
+   },
+   {
+    "ru": "Соседи по улице",
+    "en": "Next-door neighbours"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Адольф и Рудольф Дасслеры рассорились в 1948 году. Их фабрики стояли на разных берегах реки, а похоронены братья в разных концах городского кладбища.",
+   "en": "Adolf and Rudolf Dassler fell out in 1948. Their factories stood on opposite banks of the river, and they lie at opposite ends of the town cemetery."
+  },
+  "source": "https://en.wikipedia.org/wiki/Herzogenaurach",
+  "basedOn": "fashion_010",
+  "refine": "rewrite",
+  "id": "cur_fashion_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Раньше невесты венчались в синем, жёлтом и даже тёмном. Чья свадьба, как принято считать, сделала модным белое платье?",
+   "en": "Brides once married in blue, yellow, even dark colours. Whose wedding is said to have made the white dress fashionable?"
+  },
+  "options": [
+   {
+    "ru": "Королевы Виктории",
+    "en": "Queen Victoria"
+   },
+   {
+    "ru": "Марии-Антуанетты",
+    "en": "Marie Antoinette"
+   },
+   {
+    "ru": "Императрицы Жозефины",
+    "en": "Empress Josephine"
+   },
+   {
+    "ru": "Императрицы Сиси",
+    "en": "Empress Sisi"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Виктории, в 1840 году: рассказы о её свадьбе разошлись по Европе и Америке. Белое платье легко испортить, так что оно показывало богатство семьи.",
+   "en": "Victoria's, in 1840: reports of it spread across Europe and America. A white dress was easily ruined, so it showed off the family's wealth."
+  },
+  "source": "https://en.wikipedia.org/wiki/White_wedding",
+  "basedOn": "fashion_026",
+  "refine": "rewrite",
+  "id": "cur_fashion_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "От названия какого народа произошло французское слово cravate — галстук?",
+   "en": "The French word cravate, a necktie, comes from the name of which people?"
+  },
+  "options": [
+   {
+    "ru": "Хорваты",
+    "en": "Croats"
+   },
+   {
+    "ru": "Чехи",
+    "en": "Czechs"
+   },
+   {
+    "ru": "Казаки",
+    "en": "Cossacks"
+   },
+   {
+    "ru": "Шотландцы",
+    "en": "Scots"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В XVII веке французам приглянулись шейные платки хорватских наёмников, и Париж стал повязывать их сам.",
+   "en": "In the 17th century the French admired the neck scarves of Croatian mercenaries and started wearing them too."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cravat",
+  "basedOn": "fashion_016",
+  "refine": "rewrite",
+  "id": "cur_fashion_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как ткань твид получила своё название?",
+   "en": "How did tweed cloth get its name?"
+  },
+  "options": [
+   {
+    "ru": "Из-за ошибки в письме",
+    "en": "From a misread letter"
+   },
+   {
+    "ru": "В честь фабриканта Твида",
+    "en": "After a mill owner called Tweed"
+   },
+   {
+    "ru": "От шотландского «тёплый»",
+    "en": "From a Scots word for warm"
+   },
+   {
+    "ru": "В честь знаменитой овцы",
+    "en": "After a famous sheep"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ткань звали tweel, по-шотландски «саржа». По преданию, около 1831 года лондонский купец прочёл это в письме как Tweed, название реки, и имя прижилось.",
+   "en": "The cloth was called tweel, Scots for twill. The story goes that around 1831 a London merchant misread it as Tweed, like the river, and it stuck."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tweed_(cloth)",
+  "basedOn": "fashion_021",
+  "refine": "rewrite",
+  "id": "cur_fashion_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кофту на пуговицах назвали кардиганом в честь британского лорда Кардигана. Чем он прославился?",
+   "en": "The button-up knitted jacket is named after the British Earl of Cardigan. What was he famous for?"
+  },
+  "options": [
+   {
+    "ru": "Повёл кавалерию в атаку",
+    "en": "Leading a cavalry charge"
+   },
+   {
+    "ru": "Был портным королевы",
+    "en": "Being the queen's tailor"
+   },
+   {
+    "ru": "Носил её на королевской охоте",
+    "en": "Wearing one on royal hunts"
+   },
+   {
+    "ru": "Открыл первую вязальную фабрику",
+    "en": "Opening the first knitting mill"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он повёл лёгкую кавалерию в гибельную атаку под Балаклавой в 1854 году, в Крымскую войну. По месту той битвы назвали и шапку-маску балаклаву.",
+   "en": "He led the Charge of the Light Brigade at Balaclava in 1854, in the Crimean War. The balaclava hood is named after the same battle."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cardigan_(sweater)",
+  "basedOn": "fashion_034",
+  "refine": "rewrite",
+  "id": "cur_fashion_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кристиан Лубутен впервые сделал подошву своих туфель красной в начале 1990-х. Чем он её тогда покрасил?",
+   "en": "Christian Louboutin first made his shoes' soles red in the early 1990s. What did he paint that first sole with?"
+  },
+  "options": [
+   {
+    "ru": "Лаком для ногтей",
+    "en": "Nail polish"
+   },
+   {
+    "ru": "Губной помадой",
+    "en": "Red lipstick"
+   },
+   {
+    "ru": "Автомобильной эмалью",
+    "en": "Car paint"
+   },
+   {
+    "ru": "Красными чернилами",
+    "en": "Red ink"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Чёрная подошва показалась ему скучной, и он взял красный лак для ногтей у ассистентки. С тех пор красная подошва — его фирменный знак.",
+   "en": "The black sole looked dull, so he borrowed his assistant's red nail polish. The red sole has been his trademark ever since."
+  },
+  "source": "https://en.wikipedia.org/wiki/Christian_Louboutin",
+  "basedOn": "fashion_008",
+  "refine": "rewrite",
+  "id": "cur_fashion_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1926 году Vogue сравнил «маленькое чёрное платье» Шанель с другой новинкой, доступной всем. С какой?",
+   "en": "In 1926 Vogue compared Chanel's little black dress to another novelty anyone could have. Which one?"
+  },
+  "options": [
+   {
+    "ru": "С автомобилем «Форд»",
+    "en": "The Ford car"
+   },
+   {
+    "ru": "С фотоаппаратом «Кодак»",
+    "en": "The Kodak camera"
+   },
+   {
+    "ru": "С граммофоном",
+    "en": "The gramophone"
+   },
+   {
+    "ru": "С пылесосом «Гувер»",
+    "en": "The Hoover vacuum"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Журнал назвал его «Фордом от Шанель»: простое и для всех, как модель T, которую годами выпускали только чёрной. До того чёрное носили в основном в трауре.",
+   "en": "Vogue called it Chanel's Ford: simple and for everyone, like the Model T, for years sold only in black. Before, black mostly meant mourning."
+  },
+  "source": "https://en.wikipedia.org/wiki/Little_black_dress",
+  "basedOn": "fashion_002",
+  "refine": "rewrite",
+  "id": "cur_fashion_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где в 2002 году впервые продавали сабо Crocs?",
+   "en": "Where were Crocs clogs first sold in 2002?"
+  },
+  "options": [
+   {
+    "ru": "На выставке лодок",
+    "en": "At a boat show"
+   },
+   {
+    "ru": "На медицинской выставке",
+    "en": "At a medical fair"
+   },
+   {
+    "ru": "На Неделе моды",
+    "en": "At a fashion week"
+   },
+   {
+    "ru": "На садовой ярмарке",
+    "en": "At a garden fair"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Первую модель под названием Beach показали во Флориде, и все 200 привезённых пар раскупили.",
+   "en": "The first model, called the Beach, was shown in Florida, and all 200 pairs sold out."
+  },
+  "source": "https://en.wikipedia.org/wiki/Crocs",
+  "basedOn": "fashion_018",
+  "refine": "same",
+  "id": "cur_fashion_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По самой известной версии, первыми каблуки носили не женщины, а персидские всадники. Зачем они им понадобились?",
+   "en": "By the best known theory, the first heels were worn not by women but by Persian horsemen. Why did they need them?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы держаться в стременах",
+    "en": "To keep feet in the stirrups"
+   },
+   {
+    "ru": "Чтобы казаться выше врага",
+    "en": "To look taller than the enemy"
+   },
+   {
+    "ru": "Чтобы не вязнуть в песке",
+    "en": "Not to sink into sand"
+   },
+   {
+    "ru": "Чтобы защитить пятку от змей",
+    "en": "To guard their heels from snakes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Каблук не давал ноге выскользнуть из стремени. В Европу каблуки привезли персидские послы в начале XVII века, и носили их знатные мужчины.",
+   "en": "A heel stopped the foot slipping out of the stirrup. Persian envoys brought heels to Europe in the early 1600s, and noblemen wore them first."
+  },
+  "source": "https://en.wikipedia.org/wiki/High-heeled_shoe",
+  "basedOn": "fashion_029",
+  "refine": "rewrite",
+  "id": "cur_fashion_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "До Луи Виттона дорожные сундуки обычно делали с выпуклой крышкой. Зачем?",
+   "en": "Before Louis Vuitton, travel trunks usually had rounded lids. Why?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы с неё стекал дождь",
+    "en": "So rain would run off"
+   },
+   {
+    "ru": "Чтобы на сундук не садились",
+    "en": "So nobody would sit on them"
+   },
+   {
+    "ru": "Чтобы внутрь влезало больше",
+    "en": "To fit more inside"
+   },
+   {
+    "ru": "По моде на всё круглое",
+    "en": "A fashion for round shapes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Но такие сундуки нельзя было ставить друг на друга. В 1858 году Виттон сделал плоские, и в багажном вагоне и трюме их стало можно ставить штабелем.",
+   "en": "But such trunks could not be stacked. In 1858 Vuitton made flat-topped ones, which could be piled up in luggage vans and ships' holds."
+  },
+  "source": "https://en.wikipedia.org/wiki/Louis_Vuitton",
+  "basedOn": "fashion_043",
+  "refine": "rewrite",
+  "id": "cur_fashion_23"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Название ядовитой белладонны значит «прекрасная дама». Зачем, по преданию, модницы капали её сок в глаза?",
+   "en": "The poisonous belladonna's name means 'beautiful lady'. Why, as the story goes, did women put its drops in their eyes?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы расширить зрачки",
+    "en": "To enlarge the pupils"
+   },
+   {
+    "ru": "Чтобы белки стали белее",
+    "en": "To whiten the eyes"
+   },
+   {
+    "ru": "Чтобы гуще росли ресницы",
+    "en": "To grow thicker lashes"
+   },
+   {
+    "ru": "Чтобы глаза сменили цвет",
+    "en": "To change eye colour"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Большие зрачки считались красивыми. Но атропин в соке мешал видеть вблизи и учащал пульс, а при долгом применении, говорят, мог ослепить.",
+   "en": "Big pupils were thought beautiful. But its atropine blurred near vision and raced the heart, and long use was said to cause blindness."
+  },
+  "source": "https://en.wikipedia.org/wiki/Atropa_belladonna",
+  "basedOn": "fashion_024",
+  "refine": "rewrite",
+  "id": "cur_fashion_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему французский король Людовик XIII в 1624 году начал носить парик?",
+   "en": "Why did King Louis XIII of France start wearing a wig in 1624?"
+  },
+  "options": [
+   {
+    "ru": "Он рано облысел",
+    "en": "He was going bald"
+   },
+   {
+    "ru": "Он был в трауре",
+    "en": "He was in mourning"
+   },
+   {
+    "ru": "Чтобы казаться выше",
+    "en": "To look taller"
+   },
+   {
+    "ru": "Чтобы греться на охоте",
+    "en": "To keep warm when hunting"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Двор бросился подражать королю. А у парика был и плюс: свои волосы под ним сбривали, а парик избавить от вшей куда проще, чем голову.",
+   "en": "Courtiers rushed to copy the king. Wigs had a bonus too: you shaved your own hair, and a wig was far easier to rid of lice than a head."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wig",
+  "basedOn": "fashion_028",
+  "refine": "rewrite",
+  "id": "cur_fashion_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Пурпур для одежд императоров добывали из морских улиток. Сколько улиток нужно на 1,4 грамма краски?",
+   "en": "Emperors' purple dye came from sea snails. How many snails does it take to make 1.4 grams of dye?"
+  },
+  "answer": 12000,
+  "range": [
+   0,
+   30000
+  ],
+  "step": 100,
+  "tolerance": 3000,
+  "unit": {
+   "ru": "улиток",
+   "en": "snails"
+  },
+  "fact": {
+   "ru": "Около 12 000: так вышло в опыте 1908 года. Этой краски хватит лишь на кайму одной одежды, вот почему пурпур был цветом императоров.",
+   "en": "About 12,000, in a 1908 experiment. That is enough dye for the trim of one garment, which is why purple belonged to emperors."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tyrian_purple",
+  "basedOn": "fashion_027",
+  "refine": "rewrite",
+  "id": "cur_fashion_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Шлейф свадебного платья принцессы Дианы (1981) с трудом уложили в карету. Какой он был длины?",
+   "en": "The train of Princess Diana's 1981 wedding dress barely fitted into the coach. How long was it?"
+  },
+  "answer": 7.6,
+  "range": [
+   0,
+   30
+  ],
+  "step": 0.2,
+  "tolerance": 2.4,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "7,6 метра, 25 футов. Дизайнеры поздно поняли, что забыли про размер кареты, и к собору шлейф приехал заметно помятым.",
+   "en": "7.6 metres, 25 feet. The designers realised too late they had forgotten the coach, and the train reached St Paul's visibly creased."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wedding_dress_of_Lady_Diana_Spencer",
+  "basedOn": "fashion_047",
+  "refine": "rewrite",
+  "id": "cur_fashion_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Кристиан Диор внезапно умер в 1957 году, и его модный дом возглавил ассистент Ив Сен-Лоран. Сколько ему было лет?",
+   "en": "Christian Dior died suddenly in 1957, and his assistant Yves Saint Laurent took over the house. How old was he?"
+  },
+  "answer": 21,
+  "range": [
+   10,
+   80
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Двадцать один год. Его первая коллекция для Dior, «Трапеция» 1958 года, имела огромный успех у критиков.",
+   "en": "Twenty-one. His first collection for Dior, the Trapeze line of 1958, was a huge critical success."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yves_Saint_Laurent_(designer)",
+  "basedOn": "fashion_039",
+  "refine": "rewrite",
+  "id": "cur_fashion_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Большинство мужчин знают один-два узла галстука. Сколько способов завязать его насчитали физики Кембриджа в 1999 году?",
+   "en": "Most men know one or two tie knots. How many ways to tie a necktie did Cambridge physicists count in 1999?"
+  },
+  "answer": 85,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "способов",
+   "en": "ways"
+  },
+  "fact": {
+   "ru": "85: Финк и Мао описали узел как случайное блуждание. В 2014 году математики из Стокгольма сняли часть ограничений и насчитали 177 147.",
+   "en": "85: Fink and Mao modelled a knot as a random walk. In 2014 Stockholm mathematicians dropped some of the rules and counted 177,147."
+  },
+  "source": "https://www.smithsonianmag.com/smart-news/mathematician-calculates-177147-ways-tie-tie-180949709/",
+  "basedOn": "fashion_049",
+  "refine": "rewrite",
+  "id": "cur_fashion_20"
+ }
+]

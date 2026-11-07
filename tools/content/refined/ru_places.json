@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему Красная площадь называется Красной?",
+   "en": "Why is Red Square called Red?"
+  },
+  "options": [
+   {
+    "ru": "Из-за красного кирпича Кремля",
+    "en": "For the red brick of the Kremlin"
+   },
+   {
+    "ru": "«Красная» значило «красивая»",
+    "en": "'Red' used to mean 'beautiful'"
+   },
+   {
+    "ru": "В честь революции 1917 года",
+    "en": "After the 1917 revolution"
+   },
+   {
+    "ru": "Её мостили красным камнем",
+    "en": "It was paved with red stone"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Так площадь записана в 1661–1662 годах. А раньше её звали Торгом и Пожаром: торговые ряды здесь то и дело горели.",
+   "en": "The name is first recorded in 1661–62. Before that it was called the Market and the Fire, as the market stalls kept burning down."
+  },
+  "source": "https://en.wikipedia.org/wiki/Red_Square",
+  "basedOn": "ru_places_025",
+  "refine": "rewrite",
+  "id": "cur_ru_places_01"
+ },
+ {
+  "id": "cur_ru_places_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой музей официально держит у себя целую команду котов?",
+   "en": "Which museum officially keeps a whole team of cats?"
+  },
+  "options": [
+   {
+    "ru": "Эрмитаж",
+    "en": "The Hermitage"
+   },
+   {
+    "ru": "Третьяковская галерея",
+    "en": "The Tretyakov Gallery"
+   },
+   {
+    "ru": "Лувр",
+    "en": "The Louvre"
+   },
+   {
+    "ru": "Прадо",
+    "en": "The Prado"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Котов ловить мышей велела завести императрица Елизавета в 1745 году. А теперь у них есть даже свой праздник — День эрмитажного кота.",
+   "en": "Empress Elizabeth ordered cats into the palace to catch mice in 1745. Now they even have their own holiday, Hermitage Cat Day."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hermitage_cats",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего сделаны красные грани звёзд на башнях Московского Кремля?",
+   "en": "What are the red faces of the stars on the Moscow Kremlin's towers made of?"
+  },
+  "options": [
+   {
+    "ru": "Из рубинового стекла",
+    "en": "Ruby glass"
+   },
+   {
+    "ru": "Из крашеного медного листа",
+    "en": "Painted copper sheet"
+   },
+   {
+    "ru": "Из красной эмали",
+    "en": "Red enamel"
+   },
+   {
+    "ru": "Из пластика с подсветкой",
+    "en": "Backlit plastic"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Звёзды светятся изнутри лампами и, хоть весят около тонны, поворачиваются по ветру. А до 1935 года на башнях сидели двуглавые орлы.",
+   "en": "Lamps light the stars from inside, and though each weighs about a tonne, they turn with the wind. Until 1935 double-headed eagles sat there."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kremlin_stars",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_places_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Волга — самая длинная река Европы. Почему её вода так и не попадает в океан?",
+   "en": "The Volga is Europe's longest river. Why does its water never reach the ocean?"
+  },
+  "options": [
+   {
+    "ru": "Каспий — на самом деле озеро",
+    "en": "The Caspian is really a lake"
+   },
+   {
+    "ru": "Её разбирают на полив полей",
+    "en": "It is all used to water fields"
+   },
+   {
+    "ru": "Она испаряется в жарких степях",
+    "en": "It evaporates in the hot steppe"
+   },
+   {
+    "ru": "Перед морем она уходит под землю",
+    "en": "It sinks underground before the sea"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Каспий — самое большое озеро на Земле, и стока в океан у него нет: его уровень даже ниже уровня моря, почти на 28 м. Волга даёт ему около 80% воды.",
+   "en": "The Caspian is the world's largest lake with no outlet to the ocean; its surface lies about 28 m below sea level. The Volga brings about 80% of its water."
+  },
+  "source": "https://en.wikipedia.org/wiki/Caspian_Sea",
+  "basedOn": "ru_places_007",
+  "refine": "rewrite",
+  "id": "cur_ru_places_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как работают главные фонтаны Петергофа?",
+   "en": "How do the main fountains of Peterhof work?"
+  },
+  "options": [
+   {
+    "ru": "Самотёком, без насосов",
+    "en": "By gravity, with no pumps"
+   },
+   {
+    "ru": "Воду качают паровые машины",
+    "en": "Steam engines pump the water"
+   },
+   {
+    "ru": "Их питают электронасосы",
+    "en": "Electric pumps feed them"
+   },
+   {
+    "ru": "Их крутят скрытые ветряки",
+    "en": "Hidden windmills drive them"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вода из родников копится в прудах Верхнего сада, а перепад высот сам гонит её в фонтаны Нижнего парка у моря.",
+   "en": "Spring water collects in ponds in the Upper Garden, and the drop in height alone drives it into the fountains of the Lower Park by the sea."
+  },
+  "source": "https://en.wikipedia.org/wiki/Peterhof_Palace",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_places_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Екатеринбург основали в 1723 году. В честь какой Екатерины его назвали?",
+   "en": "Yekaterinburg was founded in 1723. Which Catherine was it named after?"
+  },
+  "options": [
+   {
+    "ru": "Екатерины I, жены Петра",
+    "en": "Catherine I, Peter's wife"
+   },
+   {
+    "ru": "Екатерины II Великой",
+    "en": "Catherine the Great"
+   },
+   {
+    "ru": "Царевны Екатерины, сестры Петра",
+    "en": "Tsarevna Catherine, Peter's sister"
+   },
+   {
+    "ru": "Екатерины Дашковой",
+    "en": "Princess Yekaterina Dashkova"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Екатерина Великая взошла на трон только в 1762 году, через 39 лет. А город назвали в честь Екатерины, жены Петра I, позже императрицы Екатерины I.",
+   "en": "Catherine the Great only took the throne in 1762, 39 years later. The city was named after Peter the Great's wife, later Empress Catherine I."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yekaterinburg",
+  "basedOn": "ru_places_014",
+  "refine": "rewrite",
+  "id": "cur_ru_places_21"
+ },
+ {
+  "id": "cur_ru_places_07",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какого цвета был Зимний дворец во время революции 1917 года?",
+   "en": "What colour was the Winter Palace during the 1917 revolution?"
+  },
+  "options": [
+   {
+    "ru": "Красного",
+    "en": "Red"
+   },
+   {
+    "ru": "Бирюзово-зелёного",
+    "en": "Turquoise green"
+   },
+   {
+    "ru": "Белого",
+    "en": "White"
+   },
+   {
+    "ru": "Голубого",
+    "en": "Light blue"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "При Растрелли дворец был светлым, охристым, к 1917 году — красным, а привычный бирюзово-зелёный цвет получил только после Второй мировой.",
+   "en": "Under Rastrelli the palace was a pale ochre, by 1917 it was red, and it only got its familiar turquoise green after World War II."
+  },
+  "source": "https://en.wikipedia.org/wiki/Winter_Palace",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_ru_places_08",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что построили в котловане недостроенного Дворца Советов в Москве?",
+   "en": "What was built in the foundation pit of Moscow's unfinished Palace of Soviets?"
+  },
+  "options": [
+   {
+    "ru": "Бассейн «Москва»",
+    "en": "The Moskva pool"
+   },
+   {
+    "ru": "Гостиницу «Россия»",
+    "en": "The Rossiya hotel"
+   },
+   {
+    "ru": "Парк «Зарядье»",
+    "en": "Zaryadye Park"
+   },
+   {
+    "ru": "Стадион «Лужники»",
+    "en": "Luzhniki Stadium"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Открытый бассейн шириной 130 м открыли в 1960 году на месте взорванного храма Христа Спасителя, а к 2000 году храм там же отстроили заново.",
+   "en": "The 130 m open-air pool opened in 1960 on the site of the demolished Cathedral of Christ the Saviour, which was rebuilt there by 2000."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Москва_(бассейн)",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь кого назван город Тольятти?",
+   "en": "Who is the city of Tolyatti named after?"
+  },
+  "options": [
+   {
+    "ru": "Итальянского коммуниста",
+    "en": "An Italian communist"
+   },
+   {
+    "ru": "Инженера ВАЗа",
+    "en": "A VAZ car engineer"
+   },
+   {
+    "ru": "Волжского купца-мецената",
+    "en": "A Volga merchant patron"
+   },
+   {
+    "ru": "Героя войны 1812 года",
+    "en": "A hero of the 1812 war"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До 1964 года город звался Ставрополем, а новое имя получил в честь Пальмиро Тольятти, главы компартии Италии.",
+   "en": "Until 1964 it was Stavropol; it was renamed after Palmiro Togliatti, head of the Italian Communist Party."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tolyatti",
+  "basedOn": "ru_places_033",
+  "refine": "rewrite",
+  "id": "cur_ru_places_09"
+ },
+ {
+  "id": "cur_ru_places_25",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В Якутске, стоящем на вечной мерзлоте, многие дома подняты на бетонные сваи. Зачем?",
+   "en": "In Yakutsk, which stands on permafrost, many houses are raised on concrete piles. Why?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы тепло не растопило грунт",
+    "en": "So their heat can't thaw the ground"
+   },
+   {
+    "ru": "Чтобы снег не заносил двери",
+    "en": "So snow can't bury the doors"
+   },
+   {
+    "ru": "Так меньше трясёт при землетрясениях",
+    "en": "So earthquakes shake them less hard"
+   },
+   {
+    "ru": "Чтобы под домом хранить дрова",
+    "en": "To store firewood underneath"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тепло дома прогреет мёрзлый грунт, лёд в нём растает, и здание начнёт проседать. Поэтому сваи загоняют в мерзлоту на глубину до 15 метров.",
+   "en": "A house's heat would thaw the frozen ground, its ice would melt, and the building would start to sink. So piles are driven up to 15 m into the permafrost."
+  },
+  "source": "https://en.wikipedia.org/wiki/Permafrost",
+  "basedOn": "ru_places_032",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "С какой страной у России самая длинная сухопутная граница?",
+   "en": "Which country shares the longest land border with Russia?"
+  },
+  "options": [
+   {
+    "ru": "С Китаем",
+    "en": "China"
+   },
+   {
+    "ru": "С Монголией",
+    "en": "Mongolia"
+   },
+   {
+    "ru": "С Казахстаном",
+    "en": "Kazakhstan"
+   },
+   {
+    "ru": "С Белоруссией",
+    "en": "Belarus"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Граница с Казахстаном — 7644 км: это самая длинная непрерывная граница двух стран в мире.",
+   "en": "The border with Kazakhstan runs 7,644 km, the longest continuous border between two countries in the world."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kazakhstan–Russia_border",
+  "basedOn": "ru_places_038",
+  "refine": "rewrite",
+  "id": "cur_ru_places_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Мурманск лежит за Полярным кругом, а его порт не замерзает даже зимой. Почему?",
+   "en": "Murmansk lies beyond the Arctic Circle, yet its port never freezes, even in winter. Why?"
+  },
+  "options": [
+   {
+    "ru": "Его греет тёплое течение",
+    "en": "A warm current heats it"
+   },
+   {
+    "ru": "Вода там слишком солёная",
+    "en": "The water is too salty"
+   },
+   {
+    "ru": "Залив греют подводные вулканы",
+    "en": "Undersea volcanoes heat the bay"
+   },
+   {
+    "ru": "Лёд каждый день ломают ледоколы",
+    "en": "Icebreakers break the ice daily"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тёплое Северо-Атлантическое течение приносит сюда воду с юга. Мурманск — самый большой город за Полярным кругом и последний, основанный в Российской империи.",
+   "en": "The warm North Atlantic Current brings water from the south. Murmansk is the largest city above the Arctic Circle and the last founded in the Russian Empire."
+  },
+  "source": "https://en.wikipedia.org/wiki/Murmansk",
+  "basedOn": "ru_places_020",
+  "refine": "rewrite",
+  "id": "cur_ru_places_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Якутия — самый большой регион России. Какая из этих стран больше неё по площади?",
+   "en": "Yakutia is Russia's largest region. Which of these countries is bigger than it?"
+  },
+  "options": [
+   {
+    "ru": "Индия",
+    "en": "India"
+   },
+   {
+    "ru": "Аргентина",
+    "en": "Argentina"
+   },
+   {
+    "ru": "Казахстан",
+    "en": "Kazakhstan"
+   },
+   {
+    "ru": "Алжир",
+    "en": "Algeria"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В Якутии 3,08 млн км²: чуть меньше Индии, но больше Аргентины. Это самый большой регион внутри одной страны во всём мире.",
+   "en": "Yakutia covers 3.08 million km²: a little less than India but more than Argentina. It is the largest region within a country anywhere."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sakha_Republic",
+  "basedOn": "ru_places_016",
+  "refine": "rewrite",
+  "id": "cur_ru_places_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первый заповедник России создали в 1916 году на Байкале, чтобы спасти одного зверя от охотников. Какого?",
+   "en": "Russia's first nature reserve was set up on Baikal in 1916 to save one animal from hunters. Which?"
+  },
+  "options": [
+   {
+    "ru": "Соболя",
+    "en": "The sable"
+   },
+   {
+    "ru": "Нерпу",
+    "en": "The Baikal seal"
+   },
+   {
+    "ru": "Бурого медведя",
+    "en": "The brown bear"
+   },
+   {
+    "ru": "Кабаргу",
+    "en": "The musk deer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ради ценного меха баргузинского соболя к концу XIX века почти выбили. Заповедник назвали тоже Баргузинским.",
+   "en": "The Barguzin sable had been nearly wiped out for its valuable fur by the late 1800s. The reserve is named Barguzin too."
+  },
+  "source": "https://en.wikipedia.org/wiki/Barguzin_Nature_Reserve",
+  "basedOn": "ru_places_026",
+  "refine": "rewrite",
+  "id": "cur_ru_places_23"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В Калининграде девять вечера. Который час в это же время на Камчатке?",
+   "en": "It is 9 p.m. in Kaliningrad. What time is it in Kamchatka at that moment?"
+  },
+  "options": [
+   {
+    "ru": "Семь утра, уже завтра",
+    "en": "7 a.m., the next day"
+   },
+   {
+    "ru": "Полночь того же дня",
+    "en": "Midnight, the same day"
+   },
+   {
+    "ru": "Три часа ночи",
+    "en": "3 a.m."
+   },
+   {
+    "ru": "Девять утра, уже завтра",
+    "en": "9 a.m., the next day"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Калининград живёт по UTC+2, Камчатка — по UTC+12, разница 10 часов. Всего в России 11 часовых поясов.",
+   "en": "Kaliningrad is on UTC+2 and Kamchatka on UTC+12, ten hours apart. Russia has 11 time zones in all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Time_in_Russia",
+  "basedOn": "ru_places_003",
+  "refine": "rewrite",
+  "id": "cur_ru_places_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Российский остров Ратманова и американский Малый Диомид разделяют меньше 4 км. Насколько различается время на них?",
+   "en": "Russia's Ratmanov Island and America's Little Diomede are under 4 km apart. How far apart are their clocks?"
+  },
+  "options": [
+   {
+    "ru": "Почти на сутки",
+    "en": "Almost a whole day"
+   },
+   {
+    "ru": "На один час",
+    "en": "One hour"
+   },
+   {
+    "ru": "Ни на минуту",
+    "en": "Not at all"
+   },
+   {
+    "ru": "Ровно на полсуток",
+    "en": "Exactly half a day"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Между ними проходит линия перемены дат: зимой часы на российском острове на 21 час впереди. Их зовут островами «Завтра» и «Вчера».",
+   "en": "The date line runs between them: in winter the Russian island is 21 hours ahead. They are called Tomorrow Island and Yesterday Island."
+  },
+  "source": "https://en.wikipedia.org/wiki/Diomede_Islands",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_places_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Останкинская башня — 540 м. Какова наибольшая глубина Байкала?",
+   "en": "The Ostankino Tower is 540 m tall. What is the greatest depth of Lake Baikal?"
+  },
+  "answer": 1642,
+  "range": [
+   200,
+   2600
+  ],
+  "step": 2,
+  "tolerance": 150,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "1642 м: даже три Останкинские башни, поставленные друг на друга, скрылись бы под водой целиком. Это самое глубокое озеро на Земле.",
+   "en": "1,642 m: even three Ostankino towers stacked on top of each other would vanish under water. It is the deepest lake on Earth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lake_Baikal",
+  "basedOn": "ru_places_039",
+  "refine": "rewrite",
+  "id": "cur_ru_places_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Зимой в Верхоянске бывало −67,8 °C. А какую жару там измерили 20 июня 2020 года?",
+   "en": "Verkhoyansk has seen −67.8 °C in winter. What heat was measured there on 20 June 2020?"
+  },
+  "answer": 38,
+  "range": [
+   -10,
+   50
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "+38 °C — самая сильная жара, когда-либо измеренная за Полярным кругом. Вдали от морей зима и лето там различаются больше чем на 100 градусов.",
+   "en": "+38 °C, the highest temperature ever recorded above the Arctic Circle. Far from any sea, winter and summer there differ by over 100 degrees."
+  },
+  "source": "https://en.wikipedia.org/wiki/Verkhoyansk",
+  "basedOn": "ru_places_046",
+  "refine": "rewrite",
+  "id": "cur_ru_places_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Эверест поднимается на 8849 м. На сколько метров вглубь пробурили Кольскую сверхглубокую скважину?",
+   "en": "Everest rises 8,849 m. How many metres down did the Kola Superdeep Borehole go?"
+  },
+  "answer": 12260,
+  "range": [
+   0,
+   30000
+  ],
+  "step": 20,
+  "tolerance": 2000,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "12 262 м, в 1989 году, — лишь треть толщины земной коры в тех местах. Ствол шириной всего 23 см, а на глубине около 12 км было уже 180 °C.",
+   "en": "12,262 m, in 1989: only a third of the way through the crust there. The hole is just 23 cm wide, and at about 12 km it was already 180 °C."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_places_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Эйфелеву башню построили за два с небольшим года. Сколько лет строили Исаакиевский собор в Петербурге?",
+   "en": "The Eiffel Tower took just over two years to build. How many years did St Isaac's Cathedral in St Petersburg take?"
+  },
+  "answer": 40,
+  "range": [
+   0,
+   150
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "С 1818 по 1858 год, и всё время под началом одного архитектора, Монферрана: он начинал в 32 года, а умер в год открытия собора.",
+   "en": "From 1818 to 1858, all under one architect, Montferrand: he started at 32 and died the year the cathedral opened."
+  },
+  "source": "https://en.wikipedia.org/wiki/Saint_Isaac%27s_Cathedral",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_places_20"
+ }
+]

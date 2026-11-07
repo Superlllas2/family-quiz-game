@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Эйнштейн говорил: «Я дожил до возраста, когда, если мне велят это надеть, я не обязан». Что он имел в виду?",
+   "en": "Einstein said: 'I have reached an age when, if someone tells me to wear this, I don't have to.' Wear what?"
+  },
+  "options": [
+   {
+    "ru": "Носки",
+    "en": "Socks"
+   },
+   {
+    "ru": "Галстук",
+    "en": "A tie"
+   },
+   {
+    "ru": "Шляпу",
+    "en": "A hat"
+   },
+   {
+    "ru": "Часы",
+    "en": "A watch"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Жена Эльза требовала приличий, когда ждали важных гостей, и из-за его голых лодыжек случались неловкие сцены.",
+   "en": "His wife Elsa insisted on propriety when important guests came, and his bare ankles led to embarrassing scenes."
+  },
+  "source": "https://www.aip.org/history/peter-pesic-einsteins-socks",
+  "basedOn": "people_003",
+  "refine": "rewrite",
+  "id": "cur_people_01"
+ },
+ {
+  "id": "cur_people_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто стал первыми пассажирами воздушного шара братьев Монгольфье в 1783 году?",
+   "en": "Who were the first passengers of the Montgolfier brothers' balloon in 1783?"
+  },
+  "options": [
+   {
+    "ru": "Баран, утка и петух",
+    "en": "A sheep, a duck and a rooster"
+   },
+   {
+    "ru": "Двое осуждённых преступников",
+    "en": "Two prisoners condemned to death"
+   },
+   {
+    "ru": "Король и королева",
+    "en": "The king and queen"
+   },
+   {
+    "ru": "Сами братья",
+    "en": "The brothers themselves"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Не знали, можно ли дышать на высоте, и первыми полетели звери: 8 минут, 3 км, все целы. Для полёта людей король, по рассказам, предлагал двух осуждённых.",
+   "en": "Nobody knew if one could breathe up there, so animals went first: 8 minutes, 3 km, all safe. For the manned flight the king reportedly proposed two convicts."
+  },
+  "source": "https://en.wikipedia.org/wiki/Montgolfier_brothers",
+  "basedOn": "people_004",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1932 году Амелия Эрхарт перелетела Атлантику и села на пастбище. «Издалека?» — спросил работник. Что она ответила?",
+   "en": "In 1932 Amelia Earhart flew the Atlantic and landed in a pasture. 'Have you flown far?' asked a farm hand. Her reply?"
+  },
+  "options": [
+   {
+    "ru": "«Из Америки»",
+    "en": "'From America'"
+   },
+   {
+    "ru": "«Не очень»",
+    "en": "'Not very'"
+   },
+   {
+    "ru": "«С небес»",
+    "en": "'From the sky'"
+   },
+   {
+    "ru": "«Из Лондона»",
+    "en": "'From London'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это был первый одиночный перелёт женщины через Атлантику. Она села у города Дерри в Северной Ирландии.",
+   "en": "It was the first solo transatlantic flight by a woman. She came down near Derry in Northern Ireland."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amelia_Earhart",
+  "basedOn": "people_013",
+  "refine": "rewrite",
+  "id": "cur_people_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1930 году Ганди в знак протеста прошёл почти 400 км пешком к морю. Что он сделал на берегу?",
+   "en": "In 1930 Gandhi walked almost 400 km to the sea in protest. What did he do on the shore?"
+  },
+  "options": [
+   {
+    "ru": "Поднял комок соли",
+    "en": "Picked up a lump of salt"
+   },
+   {
+    "ru": "Сжёг британский флаг",
+    "en": "Burned a British flag"
+   },
+   {
+    "ru": "Объявил голодовку",
+    "en": "Began a hunger strike"
+   },
+   {
+    "ru": "Сел на корабль в Лондон",
+    "en": "Boarded a ship for London"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Британцы облагали соль налогом и запрещали добывать её самим. Комок соли с грязью стал протестом на всю Индию: за ним арестовали больше 60 000 человек.",
+   "en": "Britain taxed salt and banned Indians from making it. A lump of salty mud became a protest across India; over 60,000 people were jailed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Salt_March",
+  "basedOn": "people_010",
+  "refine": "rewrite",
+  "id": "cur_people_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Король побегов» Гарри Гудини много лет разоблачал медиумов. В какой день он умер в 1926 году?",
+   "en": "Escape king Harry Houdini spent years exposing fake mediums. On what day did he die in 1926?"
+  },
+  "options": [
+   {
+    "ru": "В Хэллоуин",
+    "en": "On Halloween"
+   },
+   {
+    "ru": "1 апреля",
+    "en": "On April Fools' Day"
+   },
+   {
+    "ru": "В Рождество",
+    "en": "On Christmas Day"
+   },
+   {
+    "ru": "В пятницу 13-е",
+    "en": "On Friday the 13th"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "31 октября, от перитонита. Вдова 10 лет устраивала в Хэллоуин сеансы и ждала условленных слов «Розабель, верь», но он так и не «пришёл».",
+   "en": "October 31, of peritonitis. For ten years his widow held Halloween séances awaiting their code, 'Rosabelle, believe'. He never 'came'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Harry_Houdini",
+  "basedOn": "people_006",
+  "refine": "rewrite",
+  "id": "cur_people_05"
+ },
+ {
+  "id": "cur_people_06",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Шерпа Тенцинг Норгей не знал точной даты своего рождения. Какой день он стал праздновать как день рождения?",
+   "en": "Sherpa Tenzing Norgay never knew his exact birthday. Which day did he choose to celebrate it on?"
+  },
+  "options": [
+   {
+    "ru": "День покорения Эвереста",
+    "en": "The day he climbed Everest"
+   },
+   {
+    "ru": "День коронации Елизаветы II",
+    "en": "Elizabeth II's coronation day"
+   },
+   {
+    "ru": "Тибетский Новый год",
+    "en": "Tibetan New Year"
+   },
+   {
+    "ru": "День, когда ушёл в горы",
+    "en": "The day he left for the mountains"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По погоде и посевам он знал лишь, что родился в конце мая. А на вершину Эвереста они с Хиллари поднялись 29 мая 1953 года.",
+   "en": "From the weather and crops he knew only it was late May. He and Hillary reached the top of Everest on 29 May 1953."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tenzing_Norgay",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему на вечеринку Стивена Хокинга в 2009 году никто не пришёл?",
+   "en": "Why did nobody come to Stephen Hawking's party in 2009?"
+  },
+  "options": [
+   {
+    "ru": "Она была на Южном полюсе",
+    "en": "It was at the South Pole"
+   },
+   {
+    "ru": "Приглашения были в формулах",
+    "en": "The invitations were equations"
+   },
+   {
+    "ru": "Он забыл назвать дату",
+    "en": "He forgot to give a date"
+   },
+   {
+    "ru": "О ней объявили уже после",
+    "en": "He announced it only afterwards"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Это была вечеринка для путешественников во времени: прийти мог только тот, кто узнал о ней из будущего.",
+   "en": "It was a party for time travellers: only someone who learned of it in the future could have come."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stephen_Hawking",
+  "basedOn": "people_031",
+  "refine": "same",
+  "id": "cur_people_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какую должность предложили Эйнштейну в 1952 году (он отказался)?",
+   "en": "What post was Einstein offered in 1952, and turned down?"
+  },
+  "options": [
+   {
+    "ru": "Президент Израиля",
+    "en": "President of Israel"
+   },
+   {
+    "ru": "Мэр Принстона",
+    "en": "Mayor of Princeton"
+   },
+   {
+    "ru": "Канцлер Германии",
+    "en": "Chancellor of Germany"
+   },
+   {
+    "ru": "Президент Гарварда",
+    "en": "President of Harvard"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пост предложил Бен-Гурион, а помощнику признался: «Если он согласится, у нас будут проблемы». Эйнштейн ответил, что тронут, но принять не может.",
+   "en": "Ben-Gurion made the offer and told an aide: 'If he accepts, we are in for trouble.' Einstein replied he was deeply moved but could not accept."
+  },
+  "source": "https://en.wikipedia.org/wiki/Albert_Einstein",
+  "basedOn": "people_023",
+  "refine": "rewrite",
+  "id": "cur_people_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Никола Тесла под старость потратил больше 2000 долларов, чтобы вылечить своего любимца. Кого?",
+   "en": "In old age Nikola Tesla spent over $2,000 nursing his favourite back to health. Who was it?"
+  },
+  "options": [
+   {
+    "ru": "Голубку",
+    "en": "A pigeon"
+   },
+   {
+    "ru": "Кошку",
+    "en": "His cat"
+   },
+   {
+    "ru": "Попугая",
+    "en": "A parrot"
+   },
+   {
+    "ru": "Собаку",
+    "en": "His dog"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Белая голубка прилетала к нему каждый день. Сломанные крыло и лапку он лечил в устройстве своей конструкции; по легенде, любил её, как женщину.",
+   "en": "A white pigeon visited him daily. He built a device to hold her while her broken wing and leg healed; legend says he loved her like a woman."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nikola_Tesla",
+  "basedOn": "people_018",
+  "refine": "rewrite",
+  "id": "cur_people_09"
+ },
+ {
+  "id": "cur_people_10",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В конце 1690-х великий Исаак Ньютон переодевался завсегдатаем лондонских таверн. Зачем?",
+   "en": "In the late 1690s the great Isaac Newton disguised himself as a regular of London taverns. Why?"
+  },
+  "options": [
+   {
+    "ru": "Ловил фальшивомонетчиков",
+    "en": "To catch counterfeiters"
+   },
+   {
+    "ru": "Изучал законы азарта",
+    "en": "To study gambling odds"
+   },
+   {
+    "ru": "Прятался от кредиторов",
+    "en": "To hide from creditors"
+   },
+   {
+    "ru": "Выслеживал тайных алхимиков",
+    "en": "To track down secret alchemists"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он 30 лет руководил Монетным двором: сам допрашивал свидетелей и осведомителей и добился осуждения 28 фальшивомонетчиков.",
+   "en": "He ran the Royal Mint for 30 years, questioned witnesses and informers himself and got 28 coiners convicted."
+  },
+  "source": "https://en.wikipedia.org/wiki/Isaac_Newton",
+  "basedOn": "people_016",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_people_11",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Марк Твен говорил, что пришёл в мир вместе с этим небесным гостем и с ним же уйдёт. Так и вышло. О чём речь?",
+   "en": "Mark Twain said he came into the world with this visitor from the sky and would leave with it. He did. What was it?"
+  },
+  "options": [
+   {
+    "ru": "Комета Галлея",
+    "en": "Halley's Comet"
+   },
+   {
+    "ru": "Северное сияние",
+    "en": "The northern lights"
+   },
+   {
+    "ru": "Полное солнечное затмение",
+    "en": "A total solar eclipse"
+   },
+   {
+    "ru": "Звездопад Леонид",
+    "en": "The Leonid meteor shower"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Я пришёл с кометой Галлея и уйду с ней», — сказал Твен в 1909 году. Он умер в 1910-м, на следующий день после её сближения с Солнцем.",
+   "en": "'I came in with Halley's Comet and I expect to go out with it,' Twain said in 1909. He died in 1910, a day after its closest approach to the Sun."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mark_Twain",
+  "basedOn": "people_017",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Юный Дарвин держал в руках двух редких жуков и увидел третьего. Что он сделал?",
+   "en": "Young Darwin held two rare beetles and spotted a third. What did he do?"
+  },
+  "options": [
+   {
+    "ru": "Позвал на помощь брата",
+    "en": "Called his brother to help"
+   },
+   {
+    "ru": "Спрятал жуков в шляпу",
+    "en": "Hid them in his hat"
+   },
+   {
+    "ru": "Сунул одного в рот",
+    "en": "Popped one in his mouth"
+   },
+   {
+    "ru": "Отпустил всех",
+    "en": "Let them all go"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Жук брызнул ему в рот едкой жидкостью, Дарвин его выплюнул — и упустил третьего тоже.",
+   "en": "The beetle squirted burning fluid into his mouth, he spat it out, and lost the third one too."
+  },
+  "source": "https://www.christs.cam.ac.uk/node/1115",
+  "basedOn": "people_032",
+  "refine": "same",
+  "id": "cur_people_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как настоящий Робинзон Крузо, моряк Александр Селкирк, оказался один на острове?",
+   "en": "How did the real Robinson Crusoe, sailor Alexander Selkirk, end up alone on an island?"
+  },
+  "options": [
+   {
+    "ru": "Сам попросил его высадить",
+    "en": "He asked to be put ashore"
+   },
+   {
+    "ru": "Его корабль разбился",
+    "en": "His ship was wrecked"
+   },
+   {
+    "ru": "Отстал от корабля на охоте",
+    "en": "He missed the ship while hunting"
+   },
+   {
+    "ru": "Его смыло за борт",
+    "en": "He was washed overboard"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он счёл корабль слишком дырявым и не ошибся: тот вскоре затонул, а Селкирк прожил на острове больше четырёх лет.",
+   "en": "He thought the ship too leaky and was right: it soon sank, while he spent over four years on the island."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alexander_Selkirk",
+  "basedOn": "people_038",
+  "refine": "same",
+  "id": "cur_people_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Скотт дошёл до Южного полюса вторым и нашёл там палатку Амундсена с письмом. О чём норвежец просил соперника?",
+   "en": "Scott reached the South Pole second and found Amundsen's tent with a letter. What did the Norwegian ask of his rival?"
+  },
+  "options": [
+   {
+    "ru": "Передать письмо королю",
+    "en": "To deliver a letter to his king"
+   },
+   {
+    "ru": "Не ставить рядом свой флаг",
+    "en": "Not to plant a flag beside his"
+   },
+   {
+    "ru": "Накормить брошенных собак",
+    "en": "To feed the dogs left behind"
+   },
+   {
+    "ru": "Подтвердить рекорд газетам",
+    "en": "To confirm the record to the press"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Амундсен пришёл на 34 дня раньше и, видимо, подстраховался: если норвежцы погибнут, о победе расскажет Скотт. Но с полюса не вернулся Скотт.",
+   "en": "Amundsen arrived 34 days earlier and seemingly hedged: if his men died, Scott would tell of their win. But it was Scott who never came back."
+  },
+  "source": "https://en.wikipedia.org/wiki/Terra_Nova_expedition",
+  "basedOn": "people_043",
+  "refine": "rewrite",
+  "id": "cur_people_14"
+ },
+ {
+  "id": "cur_people_15",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1504 году моряки Колумба застряли на Ямайке, и местные перестали их кормить. Как Колумб заставил их передумать?",
+   "en": "In 1504 Columbus's crew was stuck on Jamaica and the locals stopped feeding them. How did he change their minds?"
+  },
+  "options": [
+   {
+    "ru": "Предсказал затмение Луны",
+    "en": "He predicted a lunar eclipse"
+   },
+   {
+    "ru": "Пригрозил пушками",
+    "en": "He threatened them with cannon"
+   },
+   {
+    "ru": "Устроил салют из пороха",
+    "en": "He set off gunpowder fireworks"
+   },
+   {
+    "ru": "Вылечил вождя от лихорадки",
+    "en": "He cured the chief's fever"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он нашёл в альманахе лунное затмение 29 февраля 1504 года и объявил, что Бог гневается. Луна покраснела, и еду снова понесли.",
+   "en": "He found the lunar eclipse of 29 February 1504 in an almanac and said God was angry. The Moon turned red, and food came again."
+  },
+  "source": "https://en.wikipedia.org/wiki/March_1504_lunar_eclipse",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Вернувшись из Китая, Марко Поло попал в плен к генуэзцам. Как тюрьма сделала его знаменитым?",
+   "en": "Back from China, Marco Polo was captured by the Genoese. How did prison make him famous?"
+  },
+  "options": [
+   {
+    "ru": "Сокамерник записал рассказы",
+    "en": "A cellmate wrote his story"
+   },
+   {
+    "ru": "Его выкупил сам Папа Римский",
+    "en": "The Pope himself ransomed him"
+   },
+   {
+    "ru": "О его побеге сложили песни",
+    "en": "Songs were made of his escape"
+   },
+   {
+    "ru": "Тюремщик продал его карты",
+    "en": "A jailer sold his maps"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Писатель Рустикелло из Пизы сделал из них книгу. Многие сочли её выдумкой, а Марко, по рассказу монаха, перед смертью сказал: «Я не рассказал и половины».",
+   "en": "The writer Rustichello of Pisa made them a book. Many called it fiction; a friar wrote that, dying, Marco said he had not told half of what he saw."
+  },
+  "source": "https://en.wikipedia.org/wiki/Marco_Polo",
+  "basedOn": "people_021",
+  "refine": "rewrite",
+  "id": "cur_people_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "До какого возраста дожила француженка Жанна Кальман, видевшая в детстве Ван Гога?",
+   "en": "To what age did Jeanne Calment, who met Van Gogh as a girl, live?"
+  },
+  "answer": 122,
+  "range": [
+   80,
+   200
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Девочкой она видела его в лавке дяди и запомнила некрасивым, нелюбезным и очень неприятным. Прожила она 122 года и 164 дня.",
+   "en": "As a girl she met him in her uncle's shop: ugly, ungracious and very disagreeable. She lived 122 years and 164 days."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jeanne_Calment",
+  "basedOn": "people_049",
+  "refine": "same",
+  "id": "cur_people_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сегодня самолёт летит из Нью-Йорка в Париж около 7 часов. Сколько часов летел туда без посадки Линдберг в 1927 году?",
+   "en": "Today a plane flies from New York to Paris in about 7 hours. How many hours did Lindbergh's nonstop flight take in 1927?"
+  },
+  "answer": 33,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "часов",
+   "en": "hours"
+  },
+  "fact": {
+   "ru": "33,5 часа без сна и без лобового стекла: впереди стояли баки с топливом, и вперёд он смотрел через боковые окна.",
+   "en": "33.5 hours with no sleep and no windscreen: fuel tanks filled the nose, so he looked ahead through the side windows."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spirit_of_St._Louis",
+  "basedOn": "people_040",
+  "refine": "rewrite",
+  "id": "cur_people_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Из примерно 270 моряков Магеллана сколько вернулись в Испанию на «Виктории» в 1522 году?",
+   "en": "Of about 270 men who sailed with Magellan, how many got back to Spain on the Victoria in 1522?"
+  },
+  "answer": 18,
+  "range": [
+   0,
+   270
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "человек",
+   "en": "men"
+  },
+  "fact": {
+   "ru": "Из пяти кораблей вернулась одна «Виктория», а сам Магеллан погиб на Филиппинах.",
+   "en": "Only one of the five ships, the Victoria, made it back, and Magellan himself died in the Philippines."
+  },
+  "source": "https://en.wikipedia.org/wiki/Magellan_expedition",
+  "basedOn": "people_042",
+  "refine": "same",
+  "id": "cur_people_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1889 году Нелли Блай решила обогнать героя Жюля Верна, объехавшего мир за 80 дней. За сколько дней справилась она?",
+   "en": "In 1889 Nellie Bly set out to beat Jules Verne's hero, who went round the world in 80 days. How many days did she take?"
+  },
+  "answer": 72,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Чуть больше 72. По пути она заехала в гости к самому Жюлю Верну, а соперница из другого журнала, ехавшая в обратную сторону, отстала на 4,5 дня.",
+   "en": "Just over 72. On the way she visited Jules Verne himself, and a rival from another magazine, going the other way, finished 4.5 days behind."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nellie_Bly",
+  "basedOn": "people_039",
+  "refine": "rewrite",
+  "id": "cur_people_21"
+ }
+]

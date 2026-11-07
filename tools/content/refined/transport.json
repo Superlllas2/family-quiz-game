@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какого цвета «чёрный ящик» самолёта?",
+   "en": "What colour is an aircraft's 'black box'?"
+  },
+  "options": [
+   {
+    "ru": "Чёрного",
+    "en": "Black"
+   },
+   {
+    "ru": "Оранжевого",
+    "en": "Orange"
+   },
+   {
+    "ru": "Серебристого",
+    "en": "Silver"
+   },
+   {
+    "ru": "Тёмно-синего",
+    "en": "Dark blue"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Самописцы красят в ярко-оранжевый, чтобы быстро найти среди обломков. «Чёрными ящиками» в войну звали секретные радиоприборы, и имя прилипло.",
+   "en": "Flight recorders are painted bright orange to be found fast in wreckage. In WWII 'black box' meant secret radio gear, and the name stuck."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flight_recorder",
+  "basedOn": "transport_002",
+  "refine": "rewrite",
+  "id": "cur_transport_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что показывает маленькая стрелка рядом со значком бензоколонки на приборной панели?",
+   "en": "What does the little arrow next to the fuel pump icon on a dashboard show?"
+  },
+  "options": [
+   {
+    "ru": "С какой стороны бак",
+    "en": "Which side the fuel cap is on"
+   },
+   {
+    "ru": "Что бензин на исходе",
+    "en": "That fuel is running low"
+   },
+   {
+    "ru": "Где ближайшая заправка",
+    "en": "Where the nearest station is"
+   },
+   {
+    "ru": "Что бак залит доверху",
+    "en": "That the tank is full"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её предложил дизайнер Ford Джим Мойлан в 1986 году, после того как вымок под дождём, подъехав к колонке не тем боком.",
+   "en": "Ford designer Jim Moylan proposed it in 1986 after getting soaked in the rain when he pulled up to the pump on the wrong side."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fuel_gauge",
+  "basedOn": "transport_003",
+  "refine": "rewrite",
+  "id": "cur_transport_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Зачем у старинного велосипеда «пенни-фартинг» огромное переднее колесо?",
+   "en": "Why did the old penny-farthing bicycle have a huge front wheel?"
+  },
+  "options": [
+   {
+    "ru": "Ноги крутили его напрямую",
+    "en": "The feet turned it directly"
+   },
+   {
+    "ru": "Так легче держать равновесие",
+    "en": "It made balancing easier"
+   },
+   {
+    "ru": "Чтобы переезжать ручьи",
+    "en": "To ride across streams"
+   },
+   {
+    "ru": "Чтобы смотреть поверх карет",
+    "en": "To see over carriages"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Цепи ещё не было: один оборот ног — один оборот колеса, и чем оно больше, тем дальше уедешь. Имя — от большой и маленькой монет, пенни и фартинга.",
+   "en": "There was no chain: one turn of the feet was one turn of the wheel, so a bigger wheel went further. The name comes from two coins, a penny and a farthing."
+  },
+  "source": "https://en.wikipedia.org/wiki/Penny-farthing",
+  "basedOn": "transport_011",
+  "refine": "rewrite",
+  "id": "cur_transport_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Во многих авиакомпаниях командиру и второму пилоту нарочно дают в полёте разную еду. Зачем?",
+   "en": "Many airlines deliberately give the captain and the co-pilot different meals in flight. Why?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы не отравились оба разом",
+    "en": "So both can't get food poisoning"
+   },
+   {
+    "ru": "Чтобы не спорили, кому какое блюдо",
+    "en": "So they don't argue over dishes"
+   },
+   {
+    "ru": "Чтобы не клонило в сон",
+    "en": "So they don't get sleepy"
+   },
+   {
+    "ru": "Так велит старая примета",
+    "en": "An old superstition says so"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Если еда окажется несвежей, второй пилот останется в строю. Авиавласти этого не требуют: так решают сами авиакомпании.",
+   "en": "If one meal is bad, the other pilot can still fly the plane. Regulators do not require it: the airlines set this rule themselves."
+  },
+  "source": "https://www.foxnews.com/travel/why-pilots-and-co-pilots-dont-eat-the-same-meals-on-a-flight",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_transport_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Карл Драйс в 1817 году построил предка велосипеда. Какой привычной детали у него ещё не было?",
+   "en": "Karl Drais built the bicycle's ancestor in 1817. Which familiar part did it not have yet?"
+  },
+  "options": [
+   {
+    "ru": "Педалей",
+    "en": "Pedals"
+   },
+   {
+    "ru": "Руля",
+    "en": "Handlebars"
+   },
+   {
+    "ru": "Седла",
+    "en": "A seat"
+   },
+   {
+    "ru": "Спиц в колёсах",
+    "en": "Spoked wheels"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ездок отталкивался ногами от земли, как ребёнок на беговеле. Возможно, Драйс искал замену лошадям: в «год без лета» 1816-го их много пало от бескормицы.",
+   "en": "Riders pushed off the ground like a child on a balance bike. Drais may have sought a horse substitute: many horses starved in 1816's year without a summer."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dandy_horse",
+  "basedOn": "transport_010",
+  "refine": "rewrite",
+  "id": "cur_transport_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Зачем между рельсами раньше оставляли зазоры, из-за которых поезд стучит «тук-тук»?",
+   "en": "Why did old railways leave gaps between rails, giving that clickety-clack?"
+  },
+  "options": [
+   {
+    "ru": "Сталь расширяется в жару",
+    "en": "Steel expands in the heat"
+   },
+   {
+    "ru": "Чтобы стекала дождевая вода",
+    "en": "To let rainwater drain"
+   },
+   {
+    "ru": "Чтобы сэкономить сталь",
+    "en": "To save steel"
+   },
+   {
+    "ru": "Чтобы стук предупреждал людей",
+    "en": "So the noise warns people"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Летом рельс удлиняется. Теперь всё чаще кладут бесстыковой путь из длинных сваренных плетей, и «тук-тук» уходит в прошлое.",
+   "en": "Rails grow longer in summer; modern track is welded into long strings built to cope with heat, so the clatter is fading."
+  },
+  "source": "https://en.wikipedia.org/wiki/Continuous_welded_rail",
+  "basedOn": "transport_009",
+  "refine": "same",
+  "id": "cur_transport_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему у иллюминаторов самолёта скруглённые углы?",
+   "en": "Why do airliner windows have rounded corners?"
+  },
+  "options": [
+   {
+    "ru": "Острые углы дают трещины",
+    "en": "Sharp corners grow cracks"
+   },
+   {
+    "ru": "Их проще мыть",
+    "en": "They are easier to clean"
+   },
+   {
+    "ru": "Так меньше бликов на фото",
+    "en": "Less glare in photos"
+   },
+   {
+    "ru": "Так пассажирам не страшно",
+    "en": "Passengers feel less afraid"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В углах металл напряжён сильнее. В 1954 году «Комета», первый реактивный лайнер, развалилась в небе из-за трещины у угла выреза под антенну.",
+   "en": "Stress gathers in corners. In 1954 a Comet, the first jet airliner, broke up in the air from a crack at the corner of an antenna cutout."
+  },
+  "source": "https://en.wikipedia.org/wiki/De_Havilland_Comet",
+  "basedOn": "transport_016",
+  "refine": "rewrite",
+  "id": "cur_transport_07"
+ },
+ {
+  "id": "cur_transport_08",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "У «Титаника» было четыре трубы. Из скольких шёл дым от котлов?",
+   "en": "The Titanic had four funnels. How many carried smoke from the boilers?"
+  },
+  "options": [
+   {
+    "ru": "1",
+    "en": "1"
+   },
+   {
+    "ru": "2",
+    "en": "2"
+   },
+   {
+    "ru": "3",
+    "en": "3"
+   },
+   {
+    "ru": "4",
+    "en": "4"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Четвёртую трубу поставили в основном для солидности: с ней лайнер казался мощнее. Через неё проветривали кухню и курительные салоны.",
+   "en": "The fourth funnel was added mainly for looks, making the ship seem mightier. It was used to ventilate the kitchen and the smoking rooms."
+  },
+  "source": "https://en.wikipedia.org/wiki/Titanic",
+  "basedOn": "transport_022",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1888 году Берта Бенц тайком от мужа проехала на его машине больше 100 км. Чем она прочистила засор в бензопроводе?",
+   "en": "In 1888 Bertha Benz secretly drove her husband's car over 100 km. What did she clear a blocked fuel line with?"
+  },
+  "options": [
+   {
+    "ru": "Шляпной булавкой",
+    "en": "Her hatpin"
+   },
+   {
+    "ru": "Вязальной спицей",
+    "en": "A knitting needle"
+   },
+   {
+    "ru": "Гусиным пером",
+    "en": "A goose quill"
+   },
+   {
+    "ru": "Ивовым прутиком",
+    "en": "A willow twig"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Подвязкой она заизолировала провод, а горючее покупала в аптеке Вислоха: растворитель лигроин продавали только аптекари.",
+   "en": "She used her garter to insulate a wire and bought fuel at a pharmacy in Wiesloch: the solvent ligroin was sold only by chemists."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bertha_Benz",
+  "basedOn": "transport_024",
+  "refine": "rewrite",
+  "id": "cur_transport_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Нос японского скоростного поезда «Синкансэн-500» повторяет клюв зимородка. Зачем?",
+   "en": "The nose of Japan's 500 Series bullet train copies a kingfisher's beak. Why?"
+  },
+  "options": [
+   {
+    "ru": "Против грохота в тоннелях",
+    "en": "To stop booms at tunnels"
+   },
+   {
+    "ru": "Чтобы легче резать снег",
+    "en": "To cut through snow"
+   },
+   {
+    "ru": "Чтобы на него не садились птицы",
+    "en": "So birds won't land on it"
+   },
+   {
+    "ru": "Ради красоты на рекламе",
+    "en": "To look good in adverts"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Поезд вылетал из тоннеля с хлопком, как пуля. По рассказу инженера Эйдзи Накацу, любителя птиц, он вспомнил: зимородок ныряет в воду почти без брызг.",
+   "en": "The train burst out of tunnels with a bang, like a bullet. Engineer Eiji Nakatsu, a birdwatcher, says he recalled how a kingfisher dives with barely a splash."
+  },
+  "source": "https://www.ferrovial.com/blog/en/2022/08/kingfisher-inspired-worlds-fastest-train/",
+  "basedOn": "transport_027",
+  "refine": "rewrite",
+  "id": "cur_transport_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первый автомобиль, разогнавшийся быстрее 100 км/ч в 1899 году, ездил на…",
+   "en": "The first car to beat 100 km/h, in 1899, ran on…"
+  },
+  "options": [
+   {
+    "ru": "батареях",
+    "en": "batteries"
+   },
+   {
+    "ru": "бензине",
+    "en": "petrol"
+   },
+   {
+    "ru": "угле и пару",
+    "en": "coal and steam"
+   },
+   {
+    "ru": "керосине",
+    "en": "kerosene"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бельгиец Камиль Женатци разогнал свою похожую на торпеду «Вечно недовольную» до 105 км/ч на электромоторах с аккумуляторами.",
+   "en": "Belgian Camille Jenatzy drove his torpedo-shaped 'Never Satisfied' to 105 km/h on battery-powered electric motors."
+  },
+  "source": "https://en.wikipedia.org/wiki/La_Jamais_Contente",
+  "basedOn": "transport_028",
+  "refine": "rewrite",
+  "id": "cur_transport_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первый в мире светофор поставили в Лондоне в 1868 году, а через год он покалечил полицейского. Чем он светил ночью?",
+   "en": "The first traffic light went up in London in 1868, and a year later it injured a policeman. What lit it at night?"
+  },
+  "options": [
+   {
+    "ru": "Газовыми фонарями",
+    "en": "Gas lamps"
+   },
+   {
+    "ru": "Электрическими лампочками",
+    "en": "Electric bulbs"
+   },
+   {
+    "ru": "Свечами",
+    "en": "Candles"
+   },
+   {
+    "ru": "Светящейся краской",
+    "en": "Glow-in-the-dark paint"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Днём им служили семафорные крылья, как на железной дороге, а ночью газовые фонари. В 1869 году из-за утечки газа фонарь взорвался.",
+   "en": "By day it used semaphore arms like a railway signal, by night gas lamps. In 1869 a gas leak made one lamp explode."
+  },
+  "source": "https://en.wikipedia.org/wiki/John_Peake_Knight",
+  "basedOn": "transport_036",
+  "refine": "rewrite",
+  "id": "cur_transport_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2017 году японская железная дорога официально извинилась перед пассажирами. За что?",
+   "en": "In 2017 a Japanese railway formally apologised to its passengers. What for?"
+  },
+  "options": [
+   {
+    "ru": "Поезд ушёл на 20 секунд раньше",
+    "en": "A train left 20 seconds early"
+   },
+   {
+    "ru": "Поезд опоздал на одну минуту",
+    "en": "A train ran one minute late"
+   },
+   {
+    "ru": "Машинист чихнул в микрофон",
+    "en": "The driver sneezed into the mic"
+   },
+   {
+    "ru": "Поезд подали на чужую платформу",
+    "en": "A train came to the wrong platform"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Поезд Tsukuba Express отправился в 9:44:20 вместо 9:44:40. Жалоб не было, следующий шёл через 4 минуты, но компания «глубоко извинилась».",
+   "en": "A Tsukuba Express train left at 9:44:20 instead of 9:44:40. Nobody complained and the next came 4 minutes later, yet the firm 'deeply apologised'."
+  },
+  "source": "https://time.com/5027150/tsukuba-express-early-departure-apology/",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_transport_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Инженер «Вольво» Нильс Болин в 1959 году придумал трёхточечный ремень безопасности. Что компания сделала с патентом?",
+   "en": "Volvo engineer Nils Bohlin invented the three-point seat belt in 1959. What did the company do with the patent?"
+  },
+  "options": [
+   {
+    "ru": "Отдала всем даром",
+    "en": "Gave it away free"
+   },
+   {
+    "ru": "Продала «Форду» за миллион",
+    "en": "Sold it to Ford for a million"
+   },
+   {
+    "ru": "Брала доллар с машины",
+    "en": "Charged a dollar a car"
+   },
+   {
+    "ru": "Засекретила на 10 лет",
+    "en": "Kept it secret for 10 years"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Вольво» открыла патент ради безопасности, и конкуренты ставили ремень бесплатно. Он стал стандартом во всём мире.",
+   "en": "Volvo opened the patent in the interest of safety, and rivals fitted the belt free. It became the world standard."
+  },
+  "source": "https://en.wikipedia.org/wiki/Three-point_seat_belt",
+  "basedOn": "transport_037",
+  "refine": "rewrite",
+  "id": "cur_transport_14"
+ },
+ {
+  "id": "cur_transport_15",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему скорость судна меряют в узлах?",
+   "en": "Why is a ship's speed measured in knots?"
+  },
+  "options": [
+   {
+    "ru": "Узлы на верёвке уходили за борт",
+    "en": "Knots on a rope ran out overboard"
+   },
+   {
+    "ru": "Штурман вязал узел на каждую милю",
+    "en": "A knot was tied for every mile"
+   },
+   {
+    "ru": "Узлы считали на якорной цепи",
+    "en": "Knots were counted on the anchor chain"
+   },
+   {
+    "ru": "Мили отмечали узлами на карте",
+    "en": "Miles were marked with knots on charts"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "За борт бросали дощечку на верёвке с узлами через каждые 14,4 м и считали, сколько узлов уйдёт, пока сыплются песочные часы, обычно 28 секунд.",
+   "en": "A board on a rope knotted every 14.4 m was thrown overboard, and sailors counted the knots run out while a sandglass ran, usually 28 seconds."
+  },
+  "source": "https://en.wikipedia.org/wiki/Knot_(unit)",
+  "basedOn": "transport_023",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первое в мире метро открылось в Лондоне в 1863 году. Что тянуло его поезда под землёй?",
+   "en": "The world's first underground railway opened in London in 1863. What pulled its trains?"
+  },
+  "options": [
+   {
+    "ru": "Паровозы",
+    "en": "Steam engines"
+   },
+   {
+    "ru": "Лошади",
+    "en": "Horses"
+   },
+   {
+    "ru": "Электровозы",
+    "en": "Electric engines"
+   },
+   {
+    "ru": "Канатная тяга",
+    "en": "Cables"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Паровозы с устройствами, чтобы гасить пар в тоннелях. Но станции и вагоны всё равно полнились дымом, а в первый день проехали 38 тысяч человек.",
+   "en": "Steam engines, fitted to condense their steam in tunnels. Stations and carriages still filled with smoke, yet 38,000 people rode on the first day."
+  },
+  "source": "https://en.wikipedia.org/wiki/Metropolitan_Railway",
+  "basedOn": "transport_015",
+  "refine": "rewrite",
+  "id": "cur_transport_21"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Размах крыльев «Боинга-747» — около 60 м. Сколько метров пролетели братья Райт в первом полёте 1903 года?",
+   "en": "A Boeing 747's wingspan is about 60 m. How many metres did the Wright brothers fly on their first flight in 1903?"
+  },
+  "answer": 37,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "37 метров за 12 секунд — меньше размаха крыльев «Боинга-747». Самый долгий полёт того же дня: 260 м за 59 секунд.",
+   "en": "37 metres in 12 seconds, shorter than a 747's wingspan. The longest flight that same day: 260 m in 59 seconds."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wright_Flyer",
+  "basedOn": "transport_039",
+  "refine": "rewrite",
+  "id": "cur_transport_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сначала одну «Модель T» собирали 12,5 часа. До скольких минут сократил сборку конвейер Форда к 1914 году?",
+   "en": "At first one Model T took 12.5 hours to build. By 1914, to how many minutes had Ford's assembly line cut it?"
+  },
+  "answer": 93,
+  "range": [
+   0,
+   750
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "минут",
+   "en": "minutes"
+  },
+  "fact": {
+   "ru": "До 93 минут, и с линии машины сходили каждые три минуты. Так «Модель T» стала по карману простым людям.",
+   "en": "Down to 93 minutes, with a car rolling off the line every three minutes. That is how the Model T became affordable for ordinary people."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ford_Model_T",
+  "basedOn": "transport_047",
+  "refine": "rewrite",
+  "id": "cur_transport_18"
+ },
+ {
+  "id": "cur_transport_19",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Обычный авиалайнер летит со скоростью около 900 км/ч. С какой скоростью обычно летал «Конкорд»?",
+   "en": "An ordinary airliner flies at about 900 km/h. How fast did Concorde usually fly?"
+  },
+  "answer": 2150,
+  "range": [
+   500,
+   5000
+  ],
+  "step": 10,
+  "tolerance": 250,
+  "unit": {
+   "ru": "км/ч",
+   "en": "km/h"
+  },
+  "fact": {
+   "ru": "Около 2150 км/ч, вдвое быстрее звука. От трения о воздух корпус так нагревался, что фюзеляж в полёте становился длиннее — до 30 см.",
+   "en": "About 2,150 km/h, twice the speed of sound. Air friction heated the airframe so much that the fuselage grew by up to 30 cm in flight."
+  },
+  "source": "https://en.wikipedia.org/wiki/Concorde",
+  "basedOn": "transport_042",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 2021 году 400-метровый контейнеровоз Ever Given на 6 дней перекрыл Суэцкий канал. Сколько судов скопилось в очереди?",
+   "en": "In 2021 the 400-metre container ship Ever Given blocked the Suez Canal for 6 days. How many ships queued up?"
+  },
+  "answer": 369,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 60,
+  "unit": {
+   "ru": "судов",
+   "en": "ships"
+  },
+  "fact": {
+   "ru": "Не меньше 369. Каждый день простоя держал товаров примерно на 9,6 млрд долларов. Судно сдёрнули 14 буксиров в сильный прилив при суперлунии.",
+   "en": "At least 369. Each day held up about $9.6 billion of goods. Fourteen tugs pulled the ship free on the high king tide of a supermoon."
+  },
+  "source": "https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_transport_22"
+ }
+]

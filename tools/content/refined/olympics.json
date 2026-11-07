@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Усэйн Болт не доверял незнакомой еде и на Олимпиаде в Пекине, по его словам, ел почти одно и то же. Что?",
+   "en": "Usain Bolt didn't trust unfamiliar food, so at the Beijing Olympics, he says, he ate almost nothing but… what?"
+  },
+  "options": [
+   {
+    "ru": "Куриные наггетсы",
+    "en": "Chicken nuggets"
+   },
+   {
+    "ru": "Ямайский рис с бобами",
+    "en": "Jamaican rice and peas"
+   },
+   {
+    "ru": "Пекинскую утку",
+    "en": "Peking duck"
+   },
+   {
+    "ru": "Варёную картошку",
+    "en": "Boiled potatoes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По его подсчётам, около 1000 штук за 10 дней. И всё же он выиграл 100 и 200 метров с мировыми рекордами.",
+   "en": "By his own estimate, about 1,000 in 10 days. He still won the 100 m and the 200 m in world record times."
+  },
+  "source": "https://huffingtonpost.co.uk/amp/entry/usain-bolt-mcnuggets-beijing_n_4216732",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_olympics_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В чём бегали и боролись атлеты на древних Олимпийских играх?",
+   "en": "What did runners and wrestlers wear at the ancient Olympics?"
+  },
+  "options": [
+   {
+    "ru": "Ни в чём",
+    "en": "Nothing at all"
+   },
+   {
+    "ru": "В туниках",
+    "en": "Tunics"
+   },
+   {
+    "ru": "В сандалиях и плащах",
+    "en": "Sandals and cloaks"
+   },
+   {
+    "ru": "В коротких штанах",
+    "en": "Shorts"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Отсюда и слово «гимназия»: по-гречески gymnos значит «голый».",
+   "en": "Hence the word gymnasium: in Greek, gymnos means naked."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
+  "basedOn": "olympics_012",
+  "refine": "same",
+  "id": "cur_olympics_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где проходили Олимпийские игры в Древней Греции?",
+   "en": "Where were the ancient Olympic Games held?"
+  },
+  "options": [
+   {
+    "ru": "В Афинах",
+    "en": "Athens"
+   },
+   {
+    "ru": "В Олимпии",
+    "en": "Olympia"
+   },
+   {
+    "ru": "На горе Олимп",
+    "en": "Mount Olympus"
+   },
+   {
+    "ru": "В Спарте",
+    "en": "Sparta"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Олимпия — святилище Зевса на Пелопоннесе, а гора Олимп стоит в сотнях километров к северу.",
+   "en": "Olympia was a sanctuary of Zeus in the Peloponnese; Mount Olympus is hundreds of kilometres to the north."
+  },
+  "source": "https://en.wikipedia.org/wiki/Olympia,_Greece",
+  "basedOn": "olympics_003",
+  "refine": "same",
+  "id": "cur_olympics_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как зажигают олимпийский огонь в Греции перед каждыми Играми?",
+   "en": "How is the Olympic flame lit in Greece before each Games?"
+  },
+  "options": [
+   {
+    "ru": "Спичкой премьер-министра",
+    "en": "With the prime minister's match"
+   },
+   {
+    "ru": "Солнцем через зеркало",
+    "en": "Sunlight and a mirror"
+   },
+   {
+    "ru": "Ударом кремня о сталь",
+    "en": "Striking flint on steel"
+   },
+   {
+    "ru": "От вечного огня в храме",
+    "en": "From an eternal temple fire"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "А эстафету огня из Греции до стадиона придумали только к Играм 1936 года в Берлине.",
+   "en": "The torch relay from Greece to the stadium was only invented for the 1936 Berlin Games."
+  },
+  "source": "https://en.wikipedia.org/wiki/Olympic_flame",
+  "basedOn": "olympics_005",
+  "refine": "rewrite",
+  "id": "cur_olympics_04"
+ },
+ {
+  "id": "cur_olympics_05",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что из этого когда-то было олимпийским видом спорта?",
+   "en": "Which of these was once an Olympic sport?"
+  },
+  "options": [
+   {
+    "ru": "Перетягивание каната",
+    "en": "Tug of war"
+   },
+   {
+    "ru": "Бег с сырым яйцом в ложке",
+    "en": "Egg-and-spoon race"
+   },
+   {
+    "ru": "Армрестлинг",
+    "en": "Arm wrestling"
+   },
+   {
+    "ru": "Дартс",
+    "en": "Darts"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Канат тянули на пяти Играх подряд, с 1900 по 1920 год, и дважды золото брала команда полиции лондонского Сити.",
+   "en": "Tug of war was held at five Games in a row, from 1900 to 1920, and the City of London Police team won gold twice."
+  },
+  "source": "https://en.wikipedia.org/wiki/Frederick_Humphreys_(athlete)",
+  "basedOn": "olympics_016",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Олимпийские чемпионы на фото часто кусают медаль. Зачем, по словам историков Игр?",
+   "en": "Olympic champions often bite their medal in photos. Why, according to Olympic historians?"
+  },
+  "options": [
+   {
+    "ru": "Об этом просят фотографы",
+    "en": "Photographers ask them to"
+   },
+   {
+    "ru": "Проверяют, настоящее ли золото",
+    "en": "To check the gold is real"
+   },
+   {
+    "ru": "Так велит древний обычай",
+    "en": "An ancient custom requires it"
+   },
+   {
+    "ru": "Это примета к новой победе",
+    "en": "It brings luck for the next win"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Потому что фотографы просят», — говорит историк Дэвид Валлечински. А немецкий саночник в 2010 году так позировал с серебром, что сломал зуб.",
+   "en": "\"Because the photographers ask them to,\" says historian David Wallechinsky. In 2010 a German luger posing with his silver broke a tooth."
+  },
+  "source": "https://www.nbcnews.com/health/youve-just-won-gold-medal-so-why-are-you-trying-932316",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_olympics_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Пьер де Кубертен, возродивший Олимпийские игры, сам стал олимпийским чемпионом в 1912 году. В чём?",
+   "en": "Pierre de Coubertin, who revived the Olympics, became an Olympic champion himself in 1912. In what?"
+  },
+  "options": [
+   {
+    "ru": "В поэзии",
+    "en": "Poetry"
+   },
+   {
+    "ru": "В фехтовании",
+    "en": "Fencing"
+   },
+   {
+    "ru": "В стрельбе",
+    "en": "Shooting"
+   },
+   {
+    "ru": "В конном спорте",
+    "en": "Riding"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 1912 по 1948 год медали давали и за искусство. «Оду спорту» он прислал под чужим именем, и золото до сих пор числится за Германией.",
+   "en": "From 1912 to 1948 medals were also given for art. He sent his Ode to Sport under a false name, and the gold is still credited to Germany."
+  },
+  "source": "https://en.wikipedia.org/wiki/Art_competitions_at_the_Summer_Olympics",
+  "basedOn": "olympics_006",
+  "refine": "rewrite",
+  "id": "cur_olympics_07"
+ },
+ {
+  "id": "cur_olympics_08",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему марафон — это ровно 42 км 195 м?",
+   "en": "Why is a marathon exactly 42.195 km?"
+  },
+  "options": [
+   {
+    "ru": "Из-за королевской семьи",
+    "en": "Because of the royal family"
+   },
+   {
+    "ru": "Столько пробежал древний гонец",
+    "en": "An ancient messenger ran that far"
+   },
+   {
+    "ru": "Это ровно 100 000 шагов",
+    "en": "It is exactly 100,000 steps"
+   },
+   {
+    "ru": "Так решили жребием",
+    "en": "It was decided by drawing lots"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1908 году в Лондоне старт поставили у Виндзорского замка, чтобы его видели королевские дети, а финиш — перед королевской ложей.",
+   "en": "In London in 1908 the start was put at Windsor Castle so the royal children could watch, and the finish in front of the royal box."
+  },
+  "source": "https://en.wikipedia.org/wiki/1908_Summer_Olympics",
+  "basedOn": "olympics_017",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Женщинам выступать на древних Олимпийских играх запрещали. Как же спартанская царевна Киниска стала чемпионкой?",
+   "en": "Women could not compete at the ancient Olympics. So how did the Spartan princess Cynisca become a champion?"
+  },
+  "options": [
+   {
+    "ru": "Выиграли её кони",
+    "en": "Her horses won"
+   },
+   {
+    "ru": "Бежала, переодевшись мужчиной",
+    "en": "She ran disguised as a man"
+   },
+   {
+    "ru": "Ей разрешили как царевне",
+    "en": "She was allowed as a princess"
+   },
+   {
+    "ru": "Её приняли за мальчика",
+    "en": "She was mistaken for a boy"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В гонках колесниц венок получал владелец коней, а не возница, так что Киниска победила, не выходя на дорожку.",
+   "en": "In chariot racing the wreath went to the horses' owner, not the driver, so Cynisca won without racing."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cynisca",
+  "basedOn": "olympics_020",
+  "refine": "rewrite",
+  "id": "cur_olympics_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Надя Команечи первой в истории получила 10 баллов в 1976 году. Что показало табло?",
+   "en": "Nadia Comăneci scored the first perfect 10 in 1976. What did the scoreboard show?"
+  },
+  "options": [
+   {
+    "ru": "1,00",
+    "en": "1.00"
+   },
+   {
+    "ru": "9,99",
+    "en": "9.99"
+   },
+   {
+    "ru": "0,10",
+    "en": "0.10"
+   },
+   {
+    "ru": "ОШИБКА",
+    "en": "ERROR"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Табло не умело показывать 10,00: производителю сказали, что десятку не поставят никогда. А Наде было всего 14.",
+   "en": "The board could not show 10.00, as its maker was told no one would ever score a 10. Nadia was just 14."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nadia_Com%C4%83neci",
+  "basedOn": "olympics_024",
+  "refine": "same",
+  "id": "cur_olympics_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как эфиоп Абебе Бикила выиграл марафон на Олимпиаде-1960 в Риме?",
+   "en": "How did Ethiopia's Abebe Bikila win the 1960 Olympic marathon in Rome?"
+  },
+  "options": [
+   {
+    "ru": "Босиком",
+    "en": "Barefoot"
+   },
+   {
+    "ru": "В армейских сапогах",
+    "en": "In army boots"
+   },
+   {
+    "ru": "С флагом в руках",
+    "en": "Carrying a flag"
+   },
+   {
+    "ru": "В шлеме и доспехах",
+    "en": "In a helmet and armour"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Через четыре года в Токио он выиграл марафон снова, уже в кроссовках и вскоре после операции на аппендиците.",
+   "en": "Four years later in Tokyo he won again, in shoes this time and soon after having his appendix out."
+  },
+  "source": "https://en.wikipedia.org/wiki/Abebe_Bikila",
+  "basedOn": "olympics_025",
+  "refine": "same",
+  "id": "cur_olympics_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В финале прыжков в высоту в Токио друзья Баршим и Тамбери прыгнули одинаково. Как они поступили?",
+   "en": "In the Tokyo high jump final, friends Barshim and Tamberi jumped exactly the same. What did they do?"
+  },
+  "options": [
+   {
+    "ru": "Поделили золото на двоих",
+    "en": "Shared the gold"
+   },
+   {
+    "ru": "Бросили монетку",
+    "en": "Tossed a coin"
+   },
+   {
+    "ru": "Прыгнули ещё раз, кто выше",
+    "en": "Jumped again to decide"
+   },
+   {
+    "ru": "Уступили золото младшему",
+    "en": "Gave gold to the younger one"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Оба взяли 2,37 м без единой ошибки. Им предложили перепрыжку, но Баршим спросил: «А можно два золота?» Судьи разрешили.",
+   "en": "Both cleared 2.37 m without a miss. They were offered a jump-off, but Barshim asked: \"Can we have two golds?\" The officials agreed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Athletics_at_the_2020_Summer_Olympics_%E2%80%93_Men%27s_high_jump",
+  "basedOn": "olympics_034",
+  "refine": "rewrite",
+  "id": "cur_olympics_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где соревновались пловцы на первой современной Олимпиаде в 1896 году?",
+   "en": "Where did the swimmers race at the first modern Olympics in 1896?"
+  },
+  "options": [
+   {
+    "ru": "В море",
+    "en": "In the sea"
+   },
+   {
+    "ru": "В бассейне",
+    "en": "In a pool"
+   },
+   {
+    "ru": "В реке",
+    "en": "In a river"
+   },
+   {
+    "ru": "В озере",
+    "en": "In a lake"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Плыли в бухте Зеа у Пирея при 13 °C и высоких волнах; победитель Альфред Хайош признался, что думал лишь о том, как выжить.",
+   "en": "They swam in the Bay of Zea near Piraeus at 13 °C in high waves; winner Alfréd Hajós said his will to live beat his will to win."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alfr%C3%A9d_Haj%C3%B3s",
+  "basedOn": "olympics_032",
+  "refine": "same",
+  "id": "cur_olympics_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто помог травмированному Дереку Редмонду добежать 400 м в Барселоне-1992?",
+   "en": "Who helped injured Derek Redmond finish his 400 m in Barcelona in 1992?"
+  },
+  "options": [
+   {
+    "ru": "Его отец",
+    "en": "His father"
+   },
+   {
+    "ru": "Его соперник",
+    "en": "A rival runner"
+   },
+   {
+    "ru": "Талисман Игр",
+    "en": "The Games mascot"
+   },
+   {
+    "ru": "Полицейский",
+    "en": "A policeman"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Отец прорвался через охрану на дорожку; Дерека официально дисквалифицировали, но стадион аплодировал стоя.",
+   "en": "His dad pushed past security onto the track; Derek was officially disqualified, but the stadium stood to cheer."
+  },
+  "source": "https://en.wikipedia.org/wiki/Derek_Redmond",
+  "basedOn": "olympics_035",
+  "refine": "same",
+  "id": "cur_olympics_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Победитель древних Олимпийских игр получал лишь оливковый венок. А как его награждали дома, в Афинах?",
+   "en": "An ancient Olympic champion got only an olive wreath. How did his home city of Athens reward him?"
+  },
+  "options": [
+   {
+    "ru": "Кормили даром до конца жизни",
+    "en": "Free meals for life"
+   },
+   {
+    "ru": "Чеканили монету с его портретом",
+    "en": "Minted a coin with his portrait"
+   },
+   {
+    "ru": "Дарили дом с видом на Акрополь",
+    "en": "Gave him a house by the Acropolis"
+   },
+   {
+    "ru": "Освобождали от службы в армии",
+    "en": "Excused him from army service"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он обедал за счёт города в пританее. Сократ на суде требовал себе того же: мол, он заслужил это больше, чем победитель гонки колесниц.",
+   "en": "He dined at the city's expense in the prytaneion. On trial, Socrates demanded the same, saying he deserved it more than a chariot winner."
+  },
+  "source": "https://colorado.edu/classics/2018/05/23/public-dining-ancient-greece",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_olympics_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Фигуристы впервые разыграли олимпийские медали в 1908 году, за 16 лет до первой зимней Олимпиады. Как так вышло?",
+   "en": "Figure skaters first competed for Olympic medals in 1908, 16 years before the first Winter Olympics. How?"
+  },
+  "options": [
+   {
+    "ru": "Их включили в летние Игры",
+    "en": "It was part of the Summer Games"
+   },
+   {
+    "ru": "Медали вручили задним числом",
+    "en": "Medals were awarded later on"
+   },
+   {
+    "ru": "Это были отдельные Северные игры",
+    "en": "At the separate Nordic Games"
+   },
+   {
+    "ru": "Катались на роликах",
+    "en": "They skated on rollers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фигуристы выступили в конце октября в лондонском клубе «Принс», через полгода после начала Игр. Первые зимние Игры прошли в Шамони в 1924 году.",
+   "en": "The skaters competed in late October at Prince's Skating Club in London, six months after the Games began. The first Winter Games: Chamonix, 1924."
+  },
+  "source": "https://en.wikipedia.org/wiki/Figure_skating_at_the_1908_Summer_Olympics",
+  "basedOn": "olympics_028",
+  "refine": "rewrite",
+  "id": "cur_olympics_21"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Золотая медаль Олимпиады в Париже весит 529 граммов. Сколько в ней граммов золота?",
+   "en": "A Paris 2024 Olympic gold medal weighs 529 grams. How many grams of it are gold?"
+  },
+  "answer": 6,
+  "range": [
+   0,
+   529
+  ],
+  "step": 0.5,
+  "tolerance": 5,
+  "unit": {
+   "ru": "г",
+   "en": "g"
+  },
+  "fact": {
+   "ru": "Всего 6 граммов позолоты, как велят правила. Остальное — серебро и кусочек железа с Эйфелевой башни. Цельнозолотые медали давали до 1912 года.",
+   "en": "Just 6 grams of gold plating, as the rules require. The rest is silver and a piece of Eiffel Tower iron. Solid gold medals ended in 1912."
+  },
+  "source": "https://en.wikipedia.org/wiki/Olympic_medal",
+  "basedOn": "olympics_021",
+  "refine": "rewrite",
+  "id": "cur_olympics_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В Париже-2024 выступили больше 10 000 спортсменов. А сколько — на первых современных Играх в 1896 году?",
+   "en": "Paris 2024 had over 10,000 athletes. How many competed at the first modern Games, in 1896?"
+  },
+  "answer": 241,
+  "range": [
+   10,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 80,
+  "unit": {
+   "ru": "спортсменов",
+   "en": "athletes"
+  },
+  "fact": {
+   "ru": "По данным МОК, 241, и только мужчины: Кубертен считал участие женщин «непрактичным, неинтересным и неэстетичным».",
+   "en": "241 by the IOC's count, all men: Coubertin called women taking part \"impractical, uninteresting, unaesthetic\"."
+  },
+  "source": "https://en.wikipedia.org/wiki/1896_Summer_Olympics",
+  "basedOn": "olympics_041",
+  "refine": "rewrite",
+  "id": "cur_olympics_22"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Швед Оскар Сван взял олимпийскую медаль в стрельбе в 1920 году, в одной команде с сыном. Сколько лет было отцу?",
+   "en": "Swede Oscar Swahn won an Olympic shooting medal in 1920 on the same team as his son. How old was the father?"
+  },
+  "answer": 72,
+  "range": [
+   20,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "72 года: он считается самым возрастным призёром Олимпиад, не считая конкурсов искусств. С сыном Альфредом он выступал на трёх Играх.",
+   "en": "He was 72, counted as the oldest Olympic medallist ever, art contests aside. He and his son Alfred competed together at three Games."
+  },
+  "source": "https://en.wikipedia.org/wiki/Oscar_Swahn",
+  "basedOn": "olympics_044",
+  "refine": "rewrite",
+  "id": "cur_olympics_19"
+ },
+ {
+  "id": "cur_olympics_20",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Современные Олимпийские игры проводятся с 1896 года. А сколько лет, примерно, проводились древние?",
+   "en": "The modern Olympics have been held since 1896. Roughly how many years did the ancient Games run?"
+  },
+  "answer": 1170,
+  "range": [
+   100,
+   3000
+  ],
+  "step": 10,
+  "tolerance": 200,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "С 776 года до н. э. как минимум до 393 года н. э. Если современные Игры продержатся столько же, последние пройдут около 3066 года.",
+   "en": "From 776 BC to at least AD 393. If the modern Games last as long, the final one will be held around the year 3066."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
+  "basedOn": "olympics_039",
+  "refine": "rewrite"
+ }
+]

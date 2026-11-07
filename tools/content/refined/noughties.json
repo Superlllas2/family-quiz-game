@@ -1,0 +1,670 @@
+[
+ {
+  "id": "cur_noughties_01",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что было спрятано в подошве кроссовок Heelys, хита нулевых?",
+   "en": "What was hidden in the soles of Heelys, the 2000s sneaker craze?"
+  },
+  "options": [
+   {
+    "ru": "Колесо в пятке",
+    "en": "A wheel in the heel"
+   },
+   {
+    "ru": "Мигающие лампочки",
+    "en": "Flashing lights"
+   },
+   {
+    "ru": "Пружина для прыжков",
+    "en": "A spring for jumping"
+   },
+   {
+    "ru": "Пищалка",
+    "en": "A squeaker"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Роджер Адамс подал заявку на патент в 1999 году: перенёс вес на пятки — и покатился. Производитель советует шлем и защиту, но их почти никто не носит.",
+   "en": "Roger Adams applied for a patent in 1999: shift your weight onto your heels and roll. The maker urges a helmet and pads, but hardly anyone wears them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Heelys",
+  "basedOn": "noughties_015",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как Netflix доставлял фильмы зрителям до 2007 года?",
+   "en": "How did Netflix get films to its customers before 2007?"
+  },
+  "options": [
+   {
+    "ru": "Присылал DVD по почте",
+    "en": "DVDs by post"
+   },
+   {
+    "ru": "Через свои видеопрокаты",
+    "en": "Through its own video shops"
+   },
+   {
+    "ru": "По спутниковому каналу",
+    "en": "Over a satellite channel"
+   },
+   {
+    "ru": "Через киоски с флешками",
+    "en": "Via USB stick kiosks"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Стриминг Netflix запустил только в 2007 году, а последний красный конверт с диском отправил в сентябре 2023-го.",
+   "en": "Netflix only began streaming in 2007, and it mailed its very last red DVD envelope in September 2023."
+  },
+  "source": "https://en.wikipedia.org/wiki/Netflix",
+  "basedOn": "noughties_008",
+  "refine": "same",
+  "id": "cur_noughties_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему мессенджер «аська» назывался ICQ?",
+   "en": "Why was the ICQ messenger called that?"
+  },
+  "options": [
+   {
+    "ru": "Звучит как «I seek you»",
+    "en": "Said aloud, it's 'I seek you'"
+   },
+   {
+    "ru": "Это «Internet Chat Query»",
+    "en": "Short for 'Internet Chat Query'"
+   },
+   {
+    "ru": "По первым буквам создателей",
+    "en": "From its founders' initials"
+   },
+   {
+    "ru": "Это слово «друг» на иврите",
+    "en": "It's Hebrew for 'friend'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сказанное вслух ICQ звучит как «I seek you» — «ищу тебя». Аську сделали молодые израильтяне в 1996 году, а отключили 26 июня 2024-го.",
+   "en": "Said aloud, ICQ sounds like 'I seek you'. Young Israelis made it in 1996, and it was switched off on 26 June 2024."
+  },
+  "source": "https://en.wikipedia.org/wiki/ICQ",
+  "basedOn": "noughties_001",
+  "refine": "rewrite",
+  "id": "cur_noughties_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Застенчивый продавец телефонов Пол Поттс в 2007 году выиграл британское шоу талантов. Что он пел?",
+   "en": "Shy phone salesman Paul Potts won Britain's Got Talent in 2007. What did he sing?"
+  },
+  "options": [
+   {
+    "ru": "Оперную арию",
+    "en": "An opera aria"
+   },
+   {
+    "ru": "Рэп своего сочинения",
+    "en": "His own rap"
+   },
+   {
+    "ru": "Песни Элвиса",
+    "en": "Elvis songs"
+   },
+   {
+    "ru": "Тирольский йодль",
+    "en": "Tyrolean yodelling"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Nessun dorma» Пуччини, и на прослушивании, и в финале. Он работал в магазине Carphone Warehouse и выиграл 100 тысяч фунтов.",
+   "en": "Puccini's Nessun dorma, at the audition and again in the final. He worked at a Carphone Warehouse store and won £100,000."
+  },
+  "source": "https://en.wikipedia.org/wiki/Paul_Potts",
+  "basedOn": "noughties_030",
+  "refine": "rewrite",
+  "id": "cur_noughties_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В шоу «Большой брат» (1999) за жильцами дома круглые сутки следят камеры. Откуда название?",
+   "en": "In Big Brother (1999) cameras watch the housemates around the clock. Where does the name come from?"
+  },
+  "options": [
+   {
+    "ru": "Из романа Оруэлла «1984»",
+    "en": "Orwell's novel 1984"
+   },
+   {
+    "ru": "Из сказки братьев Гримм",
+    "en": "A Brothers Grimm tale"
+   },
+   {
+    "ru": "Из фильма «Крёстный отец»",
+    "en": "The film The Godfather"
+   },
+   {
+    "ru": "Так звали оператора шоу",
+    "en": "The cameraman's nickname"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У Оруэлла Большой Брат — вождь, который следит за всеми: «Большой Брат смотрит на тебя». Первое шоу вышло в 1999 году в Нидерландах.",
+   "en": "In Orwell, Big Brother is the leader who watches everyone: 'Big Brother is watching you'. The first show aired in the Netherlands in 1999."
+  },
+  "source": "https://en.wikipedia.org/wiki/Big_Brother_(franchise)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_noughties_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На каком языке поют хит «Dragostea din tei» (O-Zone, 2004), тот самый «Нума-нума»?",
+   "en": "What language is O-Zone's 2004 hit Dragostea din tei, the 'Numa Numa' song, sung in?"
+  },
+  "options": [
+   {
+    "ru": "На румынском",
+    "en": "Romanian"
+   },
+   {
+    "ru": "На итальянском",
+    "en": "Italian"
+   },
+   {
+    "ru": "На латыни",
+    "en": "Latin"
+   },
+   {
+    "ru": "На португальском",
+    "en": "Portuguese"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Название значит «любовь из-под лип». O-Zone — группа из Молдовы, а в декабре 2004 года американец Гэри Бролсма снял под песню ролик «Нума-нума».",
+   "en": "The title means 'love from the linden trees'. O-Zone came from Moldova, and in December 2004 American Gary Brolsma made the Numa Numa video to it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dragostea_din_tei",
+  "basedOn": "noughties_020",
+  "refine": "rewrite",
+  "id": "cur_noughties_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой хит коверкает припев «Asereje» группы Las Ketchup (2002)?",
+   "en": "Which hit does the chorus of Las Ketchup's Asereje (2002) garble?"
+  },
+  "options": [
+   {
+    "ru": "Рэп «Rapper's Delight»",
+    "en": "The rap Rapper's Delight"
+   },
+   {
+    "ru": "Диско «Y.M.C.A.»",
+    "en": "The disco hit Y.M.C.A."
+   },
+   {
+    "ru": "Танец «Macarena»",
+    "en": "The dance Macarena"
+   },
+   {
+    "ru": "Старый рок-н-ролл «La Bamba»",
+    "en": "The rock'n'roll La Bamba"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это испанская «тарабарщина» поверх строк Sugarhill Gang, а сёстры назвались Las Ketchup, потому что их отца звали «Помидор».",
+   "en": "It is Spanish-sounding gibberish of a Sugarhill Gang line; the sisters became Las Ketchup as their father was nicknamed 'Tomato'."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Ketchup_Song_(Aserej%C3%A9)",
+  "basedOn": "noughties_019",
+  "refine": "rewrite",
+  "id": "cur_noughties_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что изображал звук, из которого родился хит Crazy Frog (2005)?",
+   "en": "What was the sound behind the Crazy Frog hit (2005) first meant to be?"
+  },
+  "options": [
+   {
+    "ru": "Тарахтящий мотор",
+    "en": "A sputtering engine"
+   },
+   {
+    "ru": "Кваканье лягушки",
+    "en": "A frog croaking"
+   },
+   {
+    "ru": "Звонок старого телефона",
+    "en": "An old phone ringing"
+   },
+   {
+    "ru": "Автосигнализацию",
+    "en": "A car alarm"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1997 году 17-летний швед Даниэль Мальмедаль изобразил голосом двухтактный мотор, а анимированный лягушонок появился только в 2003-м.",
+   "en": "In 1997 Swedish 17-year-old Daniel Malmedahl mimicked a two-stroke engine; the animated frog only came along in 2003."
+  },
+  "source": "https://en.wikipedia.org/wiki/Crazy_Frog",
+  "basedOn": "noughties_021",
+  "refine": "rewrite",
+  "id": "cur_noughties_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где снят зелёный холм с обоев Windows XP?",
+   "en": "Where was the green hill of the Windows XP wallpaper photographed?"
+  },
+  "options": [
+   {
+    "ru": "В Калифорнии",
+    "en": "California"
+   },
+   {
+    "ru": "В Ирландии",
+    "en": "Ireland"
+   },
+   {
+    "ru": "В Новой Зеландии",
+    "en": "New Zealand"
+   },
+   {
+    "ru": "В Швейцарии",
+    "en": "Switzerland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Чарльз О'Рир снял его в 1996 году в винном краю Сонома, по дороге к своей девушке; теперь на холме виноградник.",
+   "en": "Charles O'Rear shot it in 1996 in Sonoma wine country on his way to see his girlfriend; the hill is now a vineyard."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bliss_(photograph)",
+  "basedOn": "noughties_023",
+  "refine": "same",
+  "id": "cur_noughties_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему Gmail, запущенный 1 апреля 2004 года, многие приняли за шутку?",
+   "en": "Why did many take Gmail, launched on 1 April 2004, for a joke?"
+  },
+  "options": [
+   {
+    "ru": "Ящик на 1 ГБ бесплатно",
+    "en": "A free 1 GB mailbox"
+   },
+   {
+    "ru": "Совсем не было рекламы",
+    "en": "No ads at all"
+   },
+   {
+    "ru": "Ящик стоил доллар в месяц",
+    "en": "It cost a dollar a month"
+   },
+   {
+    "ru": "Письма читал вслух робот",
+    "en": "A robot read mail aloud"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Google славился первоапрельскими розыгрышами, а бесплатный гигабайт казался слишком щедрым, чтобы быть правдой.",
+   "en": "Google was known for April Fools' pranks, and a free gigabyte seemed too generous to be true."
+  },
+  "source": "https://www.pbs.org/newshour/nation/20-years-ago-people-thought-googles-gmail-launch-was-an-april-fools-day-joke",
+  "basedOn": "noughties_031",
+  "refine": "same",
+  "id": "cur_noughties_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Над чем смеялись владельцы игрового телефона Nokia N-Gage (2003)?",
+   "en": "What did owners of the Nokia N-Gage gaming phone (2003) laugh about?"
+  },
+  "options": [
+   {
+    "ru": "Говорить приходилось боком",
+    "en": "Talking into its side"
+   },
+   {
+    "ru": "Он весил почти килограмм",
+    "en": "It weighed almost a kilo"
+   },
+   {
+    "ru": "Играть можно было лишь стоя",
+    "en": "Games worked only standing"
+   },
+   {
+    "ru": "Звонил он только днём",
+    "en": "It only rang by day"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Динамик и микрофон стояли на торце, и телефон прижимали к щеке ребром, а чтобы сменить игру, вынимали батарею.",
+   "en": "The speaker and mic sat on the edge, so you held it side-on to your cheek, and changing games meant taking out the battery."
+  },
+  "source": "https://en.wikipedia.org/wiki/N-Gage_(device)",
+  "basedOn": "noughties_038",
+  "refine": "same",
+  "id": "cur_noughties_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Без чего вышел первый iPhone в 2007 году?",
+   "en": "What was the first iPhone (2007) missing?"
+  },
+  "options": [
+   {
+    "ru": "Без видеосъёмки",
+    "en": "Video recording"
+   },
+   {
+    "ru": "Без выхода в интернет",
+    "en": "Browsing the web"
+   },
+   {
+    "ru": "Без камеры",
+    "en": "A camera"
+   },
+   {
+    "ru": "Без музыки",
+    "en": "Music playback"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Видео появилось только в iPhone 3GS в 2009 году; у первой модели не было даже App Store и копирования текста.",
+   "en": "Video recording only arrived with the iPhone 3GS in 2009; the first model had no App Store or copy and paste either."
+  },
+  "source": "https://en.wikipedia.org/wiki/IPhone_3GS",
+  "basedOn": "noughties_016",
+  "refine": "rewrite",
+  "id": "cur_noughties_12"
+ },
+ {
+  "id": "cur_noughties_13",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Куклы Братц с огромными головами — хит нулевых. Где прежде работал их создатель Картер Брайант?",
+   "en": "Big-headed Bratz dolls were a 2000s hit. Where had their creator, Carter Bryant, worked before?"
+  },
+  "options": [
+   {
+    "ru": "У создателей Барби",
+    "en": "At Barbie's maker"
+   },
+   {
+    "ru": "В модном журнале Vogue",
+    "en": "At Vogue magazine"
+   },
+   {
+    "ru": "На студии Disney",
+    "en": "At Disney's studio"
+   },
+   {
+    "ru": "У создателей LEGO",
+    "en": "At LEGO"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Брайант был дизайнером в Mattel. В 2008 году присяжные встали на сторону Mattel, но в 2011-м новые присяжные оставили кукол фирме MGA.",
+   "en": "Bryant designed for Mattel. In 2008 a jury sided with Mattel, but in 2011 a new jury left the dolls with MGA."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bratz",
+  "basedOn": "noughties_014",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "OutKast в хите «Hey Ya!» (2003) поют: «тряси, как снимок полароида». Что на это сказала фирма Polaroid?",
+   "en": "In Hey Ya! (2003) OutKast sing 'shake it like a Polaroid picture'. What did Polaroid say?"
+  },
+  "options": [
+   {
+    "ru": "Трясти снимки бесполезно",
+    "en": "Shaking is useless"
+   },
+   {
+    "ru": "Спасибо за рекламу",
+    "en": "Thanks for the free advert"
+   },
+   {
+    "ru": "Подаст на группу в суд",
+    "en": "It would sue the band"
+   },
+   {
+    "ru": "Трясите только 10 секунд",
+    "en": "Shake for just 10 seconds"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Снимок проявляется под прозрачным пластиком и не касается воздуха. Сайт Polaroid в 2004 году предупредил: тряска и взмахи могут его даже повредить.",
+   "en": "The image develops under clear plastic and never touches air. 'Shaking or waving can actually damage the image,' Polaroid's site said in 2004."
+  },
+  "source": "https://www.nbcnews.com/id/wbna4286818",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_noughties_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2005 году британский студент за пять месяцев собрал миллион долларов на учёбу. Что он продавал?",
+   "en": "In 2005 a British student raised a million dollars for university in five months. What was he selling?"
+  },
+  "options": [
+   {
+    "ru": "Пиксели на своём сайте",
+    "en": "Pixels on his website"
+   },
+   {
+    "ru": "Рекламу на своём лбу",
+    "en": "Adverts on his forehead"
+   },
+   {
+    "ru": "Решения домашних заданий",
+    "en": "His homework answers"
+   },
+   {
+    "ru": "Свои конспекты лекций",
+    "en": "His lecture notes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Алекс Тью продавал точки «Страницы на миллион долларов» по доллару, блоками 10 на 10, на поле 1000 на 1000. Выручка — 1 037 100 долларов.",
+   "en": "Alex Tew sold the Million Dollar Homepage's pixels at $1 each, in 10×10 blocks, on a 1000×1000 grid. He took in $1,037,100."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Million_Dollar_Homepage",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_noughties_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Лондонский мост Миллениум открыли в июне 2000 года и через два дня закрыли. Почему?",
+   "en": "London's Millennium Bridge opened in June 2000 and closed two days later. Why?"
+  },
+  "options": [
+   {
+    "ru": "Раскачивался под шагами",
+    "en": "It swayed as people walked"
+   },
+   {
+    "ru": "Мешал проходу речных судов",
+    "en": "It blocked passing ships"
+   },
+   {
+    "ru": "Треснул от летней жары",
+    "en": "It cracked in the summer heat"
+   },
+   {
+    "ru": "Скрипел на весь район",
+    "en": "Its creaking kept people awake"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шаги раскачивали мост, качка заставляла людей шагать в такт, и он качался ещё сильнее. Чинили почти два года; лондонцы зовут его «шатким мостом».",
+   "en": "Steps made it sway, the sway made walkers fall into step, and it swayed more. Repairs took almost two years; Londoners call it the Wobbly Bridge."
+  },
+  "source": "https://en.wikipedia.org/wiki/Millennium_Bridge,_London",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_noughties_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Марсоход Opportunity сел на Марс в январе 2004 года. Его рассчитывали на 90 дней работы. Сколько лет он слал данные?",
+   "en": "The Opportunity rover landed on Mars in January 2004, built to work for 90 days. For how many years did it send data?"
+  },
+  "answer": 14.5,
+  "range": [
+   0,
+   50
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Больше 14 лет: последний сигнал пришёл 10 июня 2018 года, во время пылевой бури. За это время он проехал 45 км — больше марафона.",
+   "en": "Over 14 years: its last signal came on 10 June 2018, during a dust storm. By then it had driven 45 km, more than a marathon."
+  },
+  "source": "https://en.wikipedia.org/wiki/Opportunity_(rover)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_noughties_24"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Windows XP вышла в 2001 году. Сколько лет Microsoft её поддерживала?",
+   "en": "Windows XP came out in 2001. For how many years did Microsoft support it?"
+  },
+  "answer": 12.5,
+  "range": [
+   0,
+   50
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Поддержку закончили в апреле 2014 года, а ещё в январе XP стояла почти на 30% компьютеров мира.",
+   "en": "Support ended in April 2014, yet that January XP still ran on almost 30% of the world's desktop computers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Windows_XP",
+  "basedOn": "noughties_046",
+  "refine": "same",
+  "id": "cur_noughties_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "У экрана современного смартфона около тысячи точек в ширину. А сколько их было у Nokia 3310 (2000)?",
+   "en": "A modern smartphone screen is about a thousand pixels wide. How many pixels wide was the Nokia 3310 (2000)?"
+  },
+  "answer": 84,
+  "range": [
+   0,
+   1200
+  ],
+  "step": 2,
+  "tolerance": 30,
+  "unit": {
+   "ru": "точек",
+   "en": "pixels"
+  },
+  "fact": {
+   "ru": "Экран 84 на 48 — около 4 тысяч точек, в сотни раз меньше, чем у любого современного смартфона.",
+   "en": "At 84 by 48 it had about 4,000 pixels, hundreds of times fewer than any modern smartphone."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nokia_3310",
+  "basedOn": "noughties_044",
+  "refine": "rewrite",
+  "id": "cur_noughties_19"
+ },
+ {
+  "id": "cur_noughties_22",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Смартфон в вашем кармане, скорее всего, тоньше сантиметра. А какой толщины был «бритвенно тонкий» Motorola RAZR (2004)?",
+   "en": "Your smartphone is most likely under a centimetre thick. How thick was the 'razor-thin' Motorola RAZR (2004)?"
+  },
+  "answer": 14,
+  "range": [
+   0,
+   50
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "мм",
+   "en": "mm"
+  },
+  "fact": {
+   "ru": "13,9 мм — толще нынешних смартфонов. Но в 2004 году это было чудо, и раскладушек RAZR V3 продали больше 100 миллионов.",
+   "en": "13.9 mm, thicker than today's smartphones. But in 2004 it was a marvel, and over 100 million RAZR V3 flip phones were sold."
+  },
+  "source": "https://m.gsmarena.com/motorola_razr_v3-853.php",
+  "basedOn": null,
+  "refine": "new"
+ }
+]

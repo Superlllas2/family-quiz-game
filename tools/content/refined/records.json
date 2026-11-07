@@ -1,0 +1,670 @@
+[
+ {
+  "id": "cur_records_21",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Голуби мешали играть на кортах Уимблдона. Как от них избавляются?",
+   "en": "Pigeons kept getting in the way at Wimbledon. How are they kept off?"
+  },
+  "options": [
+   {
+    "ru": "Выпускают ястреба",
+    "en": "They fly a hawk"
+   },
+   {
+    "ru": "Стреляют из хлопушки",
+    "en": "They fire party poppers"
+   },
+   {
+    "ru": "Кормят их подальше",
+    "en": "They feed them elsewhere"
+   },
+   {
+    "ru": "Брызгают из шланга",
+    "en": "They spray them with a hose"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 2008 года Уимблдон держит ястреба Харриса по имени Руфус. В клубе ему выдали пропуск с должностью «отпугиватель птиц».",
+   "en": "Since 2008 Wimbledon has kept a Harris's hawk called Rufus. The club gave him an ID card with the job title 'Bird Scarer'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rufus_the_Hawk",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В каком из этих видов спорта мяч самый маленький?",
+   "en": "Which of these sports has the smallest ball?"
+  },
+  "options": [
+   {
+    "ru": "Гольф",
+    "en": "Golf"
+   },
+   {
+    "ru": "Большой теннис",
+    "en": "Lawn tennis"
+   },
+   {
+    "ru": "Пинг-понг",
+    "en": "Ping-pong"
+   },
+   {
+    "ru": "Бейсбол",
+    "en": "Baseball"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Шарик для пинг-понга — 40 мм, а мяч для гольфа почти 43, хотя кажется крошечным.",
+   "en": "A table tennis ball is 40 mm across; a golf ball, small as it looks, is almost 43."
+  },
+  "source": "https://en.wikipedia.org/wiki/Table_tennis",
+  "basedOn": "records_017",
+  "refine": "rewrite",
+  "id": "cur_records_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что делают с хоккейными шайбами перед матчем, чтобы они меньше прыгали по льду?",
+   "en": "What is done to ice hockey pucks before a game so they bounce less on the ice?"
+  },
+  "options": [
+   {
+    "ru": "Замораживают",
+    "en": "Freeze them"
+   },
+   {
+    "ru": "Натирают воском",
+    "en": "Wax them"
+   },
+   {
+    "ru": "Смачивают водой",
+    "en": "Wet them"
+   },
+   {
+    "ru": "Нагревают",
+    "en": "Warm them up"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Холодная резина почти не пружинит, и шайба не скачет. Сама шайба — из вулканизированной резины, весит 156–170 граммов.",
+   "en": "Cold rubber hardly bounces, so the puck stays flat. A puck is vulcanised rubber and weighs 156 to 170 grams."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hockey_puck",
+  "basedOn": "records_009",
+  "refine": "rewrite",
+  "id": "cur_records_03"
+ },
+ {
+  "id": "cur_records_22",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "У новичка в дзюдо белый пояс. А какого цвета особый пояс у высших мастеров, 9-го и 10-го дана?",
+   "en": "A judo beginner wears a white belt. What colour is the special belt of the top masters, 9th and 10th dan?"
+  },
+  "options": [
+   {
+    "ru": "Красный",
+    "en": "Red"
+   },
+   {
+    "ru": "Чёрный",
+    "en": "Black"
+   },
+   {
+    "ru": "Золотой",
+    "en": "Gold"
+   },
+   {
+    "ru": "Синий",
+    "en": "Blue"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Красный, а у 6–8-го дана — красно-белый. 10-й дан Кодокана за всю историю получили лишь около полутора десятков человек.",
+   "en": "Red; 6th to 8th dan wear red and white panels. Only about 15 people in history have reached Kodokan 10th dan."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rank_in_Judo",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Теннисные мячи когда-то были белыми. Почему в 1972 году их сделали ярко-жёлтыми?",
+   "en": "Tennis balls used to be white. Why were they made bright yellow in 1972?"
+  },
+  "options": [
+   {
+    "ru": "Их лучше видно по телевизору",
+    "en": "They show up better on TV"
+   },
+   {
+    "ru": "Белые слишком пачкались о грунт",
+    "en": "White ones got dirty on clay"
+   },
+   {
+    "ru": "Жёлтая краска была дешевле",
+    "en": "Yellow dye was cheaper"
+   },
+   {
+    "ru": "Цвет выбрали болельщики",
+    "en": "The fans voted for the colour"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так решила Международная федерация тенниса: жёлтый лучше виден на экране. А Уимблдон играл белыми мячами до 1986 года.",
+   "en": "The International Tennis Federation chose yellow because it is easier to see on screen. Wimbledon kept white balls until 1986."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tennis_ball",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_records_05"
+ },
+ {
+  "id": "cur_records_13",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что по традиции пьёт победитель гонки «Индианаполис 500» прямо на финише?",
+   "en": "What does the Indianapolis 500 winner traditionally drink right after the finish?"
+  },
+  "options": [
+   {
+    "ru": "Молоко",
+    "en": "Milk"
+   },
+   {
+    "ru": "Шампанское",
+    "en": "Champagne"
+   },
+   {
+    "ru": "Пиво",
+    "en": "Beer"
+   },
+   {
+    "ru": "Лимонад",
+    "en": "Lemonade"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 1936 года: Луис Мейер попросил пахты, как привык на ферме. Теперь гонщики заранее выбирают цельное, 2% или обезжиренное.",
+   "en": "Since 1936, when Louis Meyer asked for buttermilk, as on the farm. Today drivers pick whole, 2% or skim milk before the race."
+  },
+  "source": "https://www.nbcwashington.com/news/sports/indy-500-winner-drink-milk-tradition-history-meaning/",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В финском Сонкаярви проходит чемпионат мира по ношению жён. Что получает победитель?",
+   "en": "Sonkajärvi in Finland hosts the Wife Carrying World Championship. What does the winner get?"
+  },
+  "options": [
+   {
+    "ru": "Пиво весом с жену",
+    "en": "Her weight in beer"
+   },
+   {
+    "ru": "Сауну на целый год",
+    "en": "A year of free sauna"
+   },
+   {
+    "ru": "Кольцо с бриллиантом",
+    "en": "A diamond ring"
+   },
+   {
+    "ru": "Отпуск для двоих",
+    "en": "A holiday for two"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Столько пива, сколько весит жена. Пара бежит 253,5 метра с препятствиями, а в 2019 году победили литовцы — за 1 минуту 7 секунд.",
+   "en": "As much beer as the wife weighs. Couples run a 253.5 m obstacle course; in 2019 a Lithuanian pair won in 1 minute 7 seconds."
+  },
+  "source": "https://www.ksl.com/article/46588727",
+  "basedOn": "records_029",
+  "refine": "rewrite",
+  "id": "cur_records_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "С 1952 года болельщики «Детройта» бросают на хоккейный лёд осьминогов. Почему именно осьминогов?",
+   "en": "Since 1952 Detroit fans have thrown octopuses onto the ice. Why octopuses?"
+  },
+  "options": [
+   {
+    "ru": "Восемь ног — восемь побед",
+    "en": "Eight arms for eight wins"
+   },
+   {
+    "ru": "Осьминог — на гербе Детройта",
+    "en": "It's on Detroit's coat of arms"
+   },
+   {
+    "ru": "Так пугали вратарей гостей",
+    "en": "To scare visiting goalies"
+   },
+   {
+    "ru": "Их продавали у самой арены",
+    "en": "They were sold by the arena"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тогда для Кубка Стэнли нужно было выиграть 8 матчей плей-офф. В 1952 году «Детройт» выиграл все восемь и взял кубок.",
+   "en": "Back then it took 8 playoff wins to lift the Stanley Cup. In 1952 Detroit won all eight and took the Cup."
+  },
+  "source": "https://en.wikipedia.org/wiki/Legend_of_the_Octopus",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_records_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая команда выступает в Формуле-1 во всех сезонах с первого чемпионата 1950 года?",
+   "en": "Which team has raced in every Formula One season since the first championship in 1950?"
+  },
+  "options": [
+   {
+    "ru": "Феррари",
+    "en": "Ferrari"
+   },
+   {
+    "ru": "Макларен",
+    "en": "McLaren"
+   },
+   {
+    "ru": "Уильямс",
+    "en": "Williams"
+   },
+   {
+    "ru": "Мерседес",
+    "en": "Mercedes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "При этом самую первую гонку 1950 года «Феррари» пропустила: поспорила с организаторами о стартовых деньгах.",
+   "en": "Yet Ferrari skipped the very first race of 1950 after a row with the organisers over start money."
+  },
+  "source": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+  "basedOn": "records_026",
+  "refine": "same",
+  "id": "cur_records_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Хет-трик» по-английски — «фокус со шляпой». Из какого спорта пришло это выражение?",
+   "en": "'Hat-trick' literally means a trick with a hat. Which sport did the term come from?"
+  },
+  "options": [
+   {
+    "ru": "Из крикета",
+    "en": "Cricket"
+   },
+   {
+    "ru": "Из хоккея",
+    "en": "Hockey"
+   },
+   {
+    "ru": "Из бокса",
+    "en": "Boxing"
+   },
+   {
+    "ru": "Из конных скачек",
+    "en": "Horse racing"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1858 году крикетист Стивенсон взял три калитки тремя подачами подряд, и болельщики скинулись ему на шляпу.",
+   "en": "In 1858 cricketer H. H. Stephenson took three wickets with three balls, and fans bought him a hat."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hat-trick",
+  "basedOn": "records_035",
+  "refine": "rewrite",
+  "id": "cur_records_10"
+ },
+ {
+  "id": "cur_records_11",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему боксёрский ринг называют рингом, то есть кругом, хотя он квадратный?",
+   "en": "Why is a boxing ring called a ring when it is square?"
+  },
+  "options": [
+   {
+    "ru": "Бились в круге на земле",
+    "en": "They fought in a drawn circle"
+   },
+   {
+    "ru": "Так звали изобретателя бокса",
+    "en": "Named after boxing's inventor"
+   },
+   {
+    "ru": "Это сокращение слова «арена»",
+    "en": "It is short for the word 'arena'"
+   },
+   {
+    "ru": "Из-за круглой формы перчаток",
+    "en": "Because of the gloves' round shape"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Раньше бойцы сходились в круге, грубо начерченном на земле. Площадка давно стала квадратным помостом, а название осталось.",
+   "en": "Fighters once met in a circle roughly drawn on the ground. The ring has long been a square platform, but the name stuck."
+  },
+  "source": "https://en.wikipedia.org/wiki/Boxing_ring",
+  "basedOn": "records_027",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В первом баскетболе 1891 года корзины из-под персиков были с дном. Как доставали мяч после каждого попадания?",
+   "en": "In the first basketball game in 1891 the peach baskets still had bottoms. How was the ball got out after each score?"
+  },
+  "options": [
+   {
+    "ru": "Сторож лез по лестнице",
+    "en": "A janitor climbed a ladder"
+   },
+   {
+    "ru": "Корзину снимали с гвоздя",
+    "en": "They unhooked the basket"
+   },
+   {
+    "ru": "Дёргали корзину за верёвку",
+    "en": "They tipped it with a rope"
+   },
+   {
+    "ru": "Ждали конца тайма",
+    "en": "They waited for half-time"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Игру останавливали, пока сторож лез за мячом. Позже мяч выталкивали палкой через дырку в дне, а потом дно убрали совсем.",
+   "en": "Play stopped while the janitor fetched the ball. Later a hole in the bottom let them poke it out with a stick, and then the bottoms went."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_basketball",
+  "basedOn": "records_016",
+  "refine": "rewrite",
+  "id": "cur_records_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Мяч для гольфа покрыт сотнями ямочек. Зачем они?",
+   "en": "A golf ball is covered in hundreds of dimples. What are they for?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы летел дальше",
+    "en": "So it flies further"
+   },
+   {
+    "ru": "Чтобы меньше катился по траве",
+    "en": "So it rolls less on grass"
+   },
+   {
+    "ru": "Чтобы легче было найти в траве",
+    "en": "So it's easier to find"
+   },
+   {
+    "ru": "Так дешевле его отлить",
+    "en": "It's cheaper to mould"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ямочки завихряют воздух у поверхности: за мячом меньше «хвост» сопротивления, а подкрутка даёт подъёмную силу. Обычно ямочек 300–500.",
+   "en": "Dimples stir the air at the surface, shrinking the drag wake behind the ball, and backspin adds lift. Most balls have 300 to 500."
+  },
+  "source": "https://en.wikipedia.org/wiki/Golf_ball",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_records_23"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На втором «Тур де Франс», в 1904 году, гонщиков ловили на жульничестве. На каком?",
+   "en": "At the second Tour de France, in 1904, riders were caught cheating. How?"
+  },
+  "options": [
+   {
+    "ru": "Подъезжали на поезде",
+    "en": "They took the train"
+   },
+   {
+    "ru": "Плыли по реке на лодке",
+    "en": "They took a boat downriver"
+   },
+   {
+    "ru": "Ехали вдвоём на тандеме",
+    "en": "They shared a tandem"
+   },
+   {
+    "ru": "Скакали часть пути верхом",
+    "en": "They rode part way on horses"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Гонщиков снимали с гонки в том числе за поезда и автомобили, а потом лишили мест всю первую четвёрку. Победителем стал 19-летний Анри Корне.",
+   "en": "Riders were thrown out for, among other things, using cars or trains, then the top four lost their places. Henri Cornet, 19, won."
+  },
+  "source": "https://en.wikipedia.org/wiki/1904_Tour_de_France",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_records_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1939 году матч по крикету «без ограничения времени» шёл 9 игровых дней. Почему его так и не доиграли?",
+   "en": "In 1939 a 'timeless' cricket match ran for 9 days of play. Why was it never finished?"
+  },
+  "options": [
+   {
+    "ru": "Гостям пора было на пароход",
+    "en": "England had a boat to catch"
+   },
+   {
+    "ru": "У команд кончились все мячи",
+    "en": "Both teams ran out of balls"
+   },
+   {
+    "ru": "Стадион отдали под скачки",
+    "en": "The ground was booked for races"
+   },
+   {
+    "ru": "Судьи отказались продолжать",
+    "en": "The umpires refused to go on"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Англии не хватало 42 пробежек: 654 из 696. Но иначе команда опоздала бы на корабль домой, и матч записали в ничью.",
+   "en": "England were 42 runs short, 654 of 696, but staying would have meant missing the boat home, so it was called a draw."
+  },
+  "source": "https://en.wikipedia.org/wiki/Timeless_Test",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_records_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему на поле для гольфа ровно 18 лунок?",
+   "en": "Why does a golf course have exactly 18 holes?"
+  },
+  "options": [
+   {
+    "ru": "Так сократили поле в Сент-Эндрюсе",
+    "en": "St Andrews was cut to 18 holes"
+   },
+   {
+    "ru": "Бутылки виски хватает на 18 рюмок",
+    "en": "A bottle of whisky holds 18 drams"
+   },
+   {
+    "ru": "Столько лунок проходили до темноты",
+    "en": "That's how many fit before dark"
+   },
+   {
+    "ru": "Так решили 18 основателей клуба",
+    "en": "The club had 18 founders"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1764 году в Сент-Эндрюсе было 22 лунки; короткие объединили, и по этому полю стали равняться все. А история про виски — миф.",
+   "en": "In 1764 St Andrews had 22 holes; the short ones were merged, and every course followed. The whisky story is a myth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Old_Course_at_St_Andrews",
+  "basedOn": "records_007",
+  "refine": "rewrite",
+  "id": "cur_records_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какую скорость в км/ч развил Усэйн Болт на пике рекордной стометровки 2009 года?",
+   "en": "What top speed in km/h did Usain Bolt reach in his record 100 m in 2009?"
+  },
+  "answer": 45,
+  "range": [
+   10,
+   120
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "км/ч",
+   "en": "km/h"
+  },
+  "fact": {
+   "ru": "Между 60-м и 80-м метрами он бежал около 44,7 км/ч — быстрее, чем разрешено ездить в жилых кварталах многих городов.",
+   "en": "Between 60 and 80 metres he ran about 44.7 km/h, faster than cars may drive down many residential streets."
+  },
+  "source": "https://en.wikipedia.org/wiki/Usain_Bolt",
+  "basedOn": "records_040",
+  "refine": "same",
+  "id": "cur_records_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Обычный теннисный матч идёт 2–3 часа. Сколько часов шёл самый долгий матч в истории, Иснер — Маю, Уимблдон-2010?",
+   "en": "A normal tennis match takes 2 to 3 hours. How many hours did the longest ever, Isner v Mahut at Wimbledon 2010, take?"
+  },
+  "answer": 11,
+  "range": [
+   1,
+   40
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "ч",
+   "en": "h"
+  },
+  "fact": {
+   "ru": "11 часов 5 минут за три дня. Пятый сет кончился 70:68, а табло застыло на 47:47. Теперь в решающем сете играют тай-брейк.",
+   "en": "11 hours 5 minutes over three days. The fifth set ended 70-68 and the scoreboard froze at 47-47. Final sets now end in a tie-break."
+  },
+  "source": "https://en.wikipedia.org/wiki/Isner%E2%80%93Mahut_match_at_the_2010_Wimbledon_Championships",
+  "basedOn": "records_039",
+  "refine": "rewrite",
+  "id": "cur_records_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1962 году «Филадельфия» набрала в матче НБА 169 очков. Сколько из них забросил один Уилт Чемберлен?",
+   "en": "In 1962 Philadelphia scored 169 points in an NBA game. How many of them did Wilt Chamberlain score alone?"
+  },
+  "answer": 100,
+  "range": [
+   0,
+   169
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "очков",
+   "en": "points"
+  },
+  "fact": {
+   "ru": "Ровно 100. Матч не показывали по ТВ, видео не сохранилось: главная память о нём — фото Чемберлена в раздевалке с листком «100».",
+   "en": "Exactly 100. The game was not televised and no footage survives; its best-known record is a photo of him holding a sheet saying 100."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wilt_Chamberlain%27s_100-point_game",
+  "basedOn": "records_048",
+  "refine": "rewrite",
+  "id": "cur_records_24"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Взрослый мужчина весит около 80 кг. Сколько весил на пике гаваец Конисики, борец сумо по прозвищу «Самосвал»?",
+   "en": "A grown man weighs about 80 kg. How much did Hawaiian sumo wrestler Konishiki, 'the Dump Truck', weigh at his peak?"
+  },
+  "answer": 287,
+  "range": [
+   50,
+   600
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Около 287 кг — как три с половиной взрослых мужчины. Конисики первым из иностранцев стал одзеки, вторым по старшинству рангом сумо.",
+   "en": "About 287 kg, three and a half grown men. Konishiki was the first foreign-born wrestler to reach ozeki, sumo's second-highest rank."
+  },
+  "source": "https://en.wikipedia.org/wiki/Konishiki_Yasokichi",
+  "basedOn": "records_047",
+  "refine": "rewrite",
+  "id": "cur_records_25"
+ }
+]

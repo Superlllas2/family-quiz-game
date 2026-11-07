@@ -1,0 +1,670 @@
+[
+ {
+  "id": "cur_ru_history_01",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "При Петре I некоторые носили с собой медный жетон с надписью «Деньги взяты». За что они заплатили?",
+   "en": "Under Peter the Great some men carried a copper token stamped 'Money received'. What had they paid for?"
+  },
+  "options": [
+   {
+    "ru": "За бороду",
+    "en": "Their beard"
+   },
+   {
+    "ru": "За лапти",
+    "en": "Bast shoes"
+   },
+   {
+    "ru": "За сапоги",
+    "en": "Boots"
+   },
+   {
+    "ru": "За балалайку",
+    "en": "A balalaika"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это «бородовой знак» 1705 года. Богатые платили за бороду до 100 рублей в год, а крестьяне — копейку при каждом въезде в город.",
+   "en": "It was the 1705 'beard token'. Rich men paid up to 100 roubles a year for a beard, peasants a kopeck each time they entered a city."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Бородовой_знак",
+  "basedOn": "ru_history_001",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Посол царя Михаила сперва не хотел брать подарок монгольского хана — «никчёмные сухие листья». Что это было?",
+   "en": "Tsar Michael's envoy at first refused a Mongol khan's gift, a load of 'useless dead leaves'. What was it?"
+  },
+  "options": [
+   {
+    "ru": "Чай",
+    "en": "Tea"
+   },
+   {
+    "ru": "Табак",
+    "en": "Tobacco"
+   },
+   {
+    "ru": "Лавровый лист",
+    "en": "Bay leaves"
+   },
+   {
+    "ru": "Сушёная мята",
+    "en": "Dried mint"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Хан настоял, и в 1630-х годах посол Василий Старков привёз чай в Москву. Потом его возили из Китая на верблюдах, и долго он был по карману лишь царю и богачам.",
+   "en": "The khan insisted, and in the 1630s envoy Vasily Starkov took it to Moscow. Later tea came from China by camel, affordable only to the tsar and the rich."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_tea_in_Russia",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_history_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В сентябре 1812 года Наполеон ждал у стен Москвы, что город пришлёт к нему делегацию. Кто пришёл?",
+   "en": "In September 1812 Napoleon waited at Moscow's walls for the city to send him a delegation. Who came?"
+  },
+  "options": [
+   {
+    "ru": "Никто: город опустел",
+    "en": "No one: the city was empty"
+   },
+   {
+    "ru": "Губернатор с хлебом-солью",
+    "en": "The governor with bread and salt"
+   },
+   {
+    "ru": "Монахи с иконами",
+    "en": "Monks carrying icons"
+   },
+   {
+    "ru": "Посланец от Кутузова",
+    "en": "An envoy from Kutuzov"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Жители ушли вслед за армией. В пустом городе вскоре начался пожар, а через 36 дней Наполеон ушёл ни с чем.",
+   "en": "The people had left with the army. Fire soon broke out in the empty city, and 36 days later Napoleon left with nothing."
+  },
+  "source": "https://en.wikipedia.org/wiki/French_occupation_of_Moscow",
+  "basedOn": "ru_history_004",
+  "refine": "rewrite",
+  "id": "cur_ru_history_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Зимой 1740 года Анна Иоанновна женила шута и велела молодым провести ночь в особом доме. Из чего он был?",
+   "en": "In 1740 Empress Anna married off a jester and made the couple spend the night in a special house. What was it built of?"
+  },
+  "options": [
+   {
+    "ru": "Изо льда",
+    "en": "Ice"
+   },
+   {
+    "ru": "Из снега",
+    "en": "Snow"
+   },
+   {
+    "ru": "Из соломы",
+    "en": "Straw"
+   },
+   {
+    "ru": "Из стекла",
+    "en": "Glass"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ледяной дом стоял на Неве: изо льда были кровать, камин с ледяными дровами и слон в натуральную величину. Весной дом растаял.",
+   "en": "The Ice House stood by the Neva: the bed, a fireplace with ice logs and a life-size elephant were all ice. It melted in spring."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Ice_House_(St._Petersburg)",
+  "basedOn": "ru_history_023",
+  "refine": "rewrite",
+  "id": "cur_ru_history_04"
+ },
+ {
+  "id": "cur_ru_history_21",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Юная Екатерина II учила русский по ночам так усердно, что слегла с воспалением лёгких. Почему ей пришлось его учить?",
+   "en": "Young Catherine the Great studied Russian at night so hard she got pneumonia. Why did she have to learn it?"
+  },
+  "options": [
+   {
+    "ru": "Она была немецкой принцессой",
+    "en": "She was a German princess"
+   },
+   {
+    "ru": "Она выросла во Франции",
+    "en": "She grew up in France"
+   },
+   {
+    "ru": "При дворе говорили по-голландски",
+    "en": "The court spoke Dutch"
+   },
+   {
+    "ru": "Её учили только латыни",
+    "en": "She had only learned Latin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Принцесса София Ангальт-Цербстская приехала в Россию в начале 1744 года, в 14 лет. Акцент у неё так и остался, а при дворе она охотно говорила по-французски.",
+   "en": "Princess Sophie of Anhalt-Zerbst came to Russia in early 1744, aged 14. She kept her accent all her life and readily spoke French at court."
+  },
+  "source": "https://en.wikipedia.org/wiki/Catherine_the_Great",
+  "basedOn": "ru_history_006",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_ru_history_06",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В кино Кутузова часто показывают с чёрной повязкой на глазу. А как было на самом деле?",
+   "en": "Films often show Kutuzov with a black eyepatch. What was the truth?"
+  },
+  "options": [
+   {
+    "ru": "Повязку он не носил",
+    "en": "He never wore one"
+   },
+   {
+    "ru": "Носил на другом глазу",
+    "en": "He wore it on the other eye"
+   },
+   {
+    "ru": "Носил её только в бою",
+    "en": "He wore it only in battle"
+   },
+   {
+    "ru": "Повязка была белой",
+    "en": "The patch was white"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пуля в 1774 году вышла у правого глаза и искосила его. А чёрную повязку ему «надело» кино — например, «Гусарская баллада».",
+   "en": "A bullet in 1774 came out by his right eye and left it turned. The black patch came from films, Hussar Ballad among them."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Кутузов,_Михаил_Илларионович",
+  "basedOn": "ru_history_003",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По летописи, князь Владимир выбирал для Руси веру и отказался от ислама. Почему?",
+   "en": "The chronicle says Prince Vladimir was choosing a faith for Rus and turned Islam down. Why?"
+  },
+  "options": [
+   {
+    "ru": "Из-за запрета на вино",
+    "en": "It forbids wine"
+   },
+   {
+    "ru": "Из-за поста в Рамадан",
+    "en": "The Ramadan fast"
+   },
+   {
+    "ru": "Из-за молитвы пять раз в день",
+    "en": "Praying five times a day"
+   },
+   {
+    "ru": "Из-за паломничества в Мекку",
+    "en": "The pilgrimage to Mecca"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Руси есть веселие пити», — ответил он булгарам, по «Повести временных лет». Многие историки, впрочем, считают этот рассказ вымыслом.",
+   "en": "'Drinking is the joy of the Rus', he told the Bulgars, says the Primary Chronicle. Many historians think the story is made up."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Выбор_веры",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_history_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По летописи, в 907 году ладьи Вещего Олега пошли на Царьград прямо по суше. Что их двигало?",
+   "en": "The chronicle says that in 907 Oleg's boats moved on Constantinople over dry land. What moved them?"
+  },
+  "options": [
+   {
+    "ru": "Ветер в парусах",
+    "en": "Wind in their sails"
+   },
+   {
+    "ru": "Упряжки быков",
+    "en": "Teams of oxen"
+   },
+   {
+    "ru": "Пленные греки",
+    "en": "Greek prisoners"
+   },
+   {
+    "ru": "Сами воины на канатах",
+    "en": "The warriors, hauling ropes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Олег велел поставить корабли на колёса, и с попутным ветром они пошли полем к городу. Многие историки считают этот поход легендой.",
+   "en": "Oleg had the ships put on wheels, and with a fair wind they sailed across the fields to the city. Many historians think the campaign is a legend."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Олег_Вещий",
+  "basedOn": "ru_history_013",
+  "refine": "rewrite",
+  "id": "cur_ru_history_08"
+ },
+ {
+  "id": "cur_ru_history_09",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Опричники Ивана Грозного возили у седла собачью голову и метлу. Что это значило?",
+   "en": "Ivan the Terrible's oprichniki carried a dog's head and a broom on their saddles. What did it mean?"
+  },
+  "options": [
+   {
+    "ru": "Грызть и выметать измену",
+    "en": "Sniff out and sweep away treason"
+   },
+   {
+    "ru": "Сторожить царя и мести его двор",
+    "en": "Guard the tsar and sweep his yard"
+   },
+   {
+    "ru": "Знак царских псарей и дворников",
+    "en": "The tsar's kennelmen and sweepers"
+   },
+   {
+    "ru": "Оберег от порчи и нечисти",
+    "en": "A charm against evil spirits"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Одевались опричники во всё чёрное, словно монахи, и ездили на чёрных конях. Опричнина длилась с 1565 по 1572 год.",
+   "en": "The oprichniki dressed all in black like monks and rode black horses. The oprichnina lasted from 1565 to 1572."
+  },
+  "source": "https://en.wikipedia.org/wiki/Oprichnina",
+  "basedOn": "ru_history_005",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда, по легенде, взялся изгиб на прямой железной дороге Петербург — Москва?",
+   "en": "According to legend, why does the straight St Petersburg–Moscow railway have a bend?"
+  },
+  "options": [
+   {
+    "ru": "Помещик не продал свою землю",
+    "en": "A landowner refused to sell"
+   },
+   {
+    "ru": "Царица хотела видеть монастырь",
+    "en": "The empress wanted a monastery view"
+   },
+   {
+    "ru": "Медведь сдвинул межевой столб",
+    "en": "A bear moved a survey post"
+   },
+   {
+    "ru": "Царь обвёл свой палец у линейки",
+    "en": "The tsar's finger bent the ruled line"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "На деле изгиб у Веребья — обход крутого подъёма, который проложили уже после смерти Николая I.",
+   "en": "In fact the bend near Verebye bypasses a steep climb and was built after Nicholas I had died."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Веребьинский_обход",
+  "basedOn": "ru_history_031",
+  "refine": "same",
+  "id": "cur_ru_history_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1768 году англичанин Димсдейл привил Екатерину II от оспы. Зачем наготове держали быстрых лошадей?",
+   "en": "In 1768 the Englishman Dimsdale inoculated Catherine the Great against smallpox. Why were fast horses kept ready?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы врач успел бежать",
+    "en": "So the doctor could flee"
+   },
+   {
+    "ru": "Чтобы привезти лекарство",
+    "en": "To fetch medicine"
+   },
+   {
+    "ru": "Чтобы гонцы разнесли весть",
+    "en": "For messengers to spread the news"
+   },
+   {
+    "ru": "Чтобы вызвать других врачей",
+    "en": "To summon other doctors"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Они должны были увезти Димсдейлов из России, если бы прививка кончилась бедой. Всё обошлось: он привил ещё её сына и больше 140 придворных и стал бароном.",
+   "en": "They were to rush the Dimsdales out of Russia if things went wrong. All went well: he inoculated her son and over 140 courtiers and became a baron."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thomas_Dimsdale",
+  "basedOn": "ru_history_032",
+  "refine": "rewrite",
+  "id": "cur_ru_history_11"
+ },
+ {
+  "id": "cur_ru_history_12",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сибирский старец Фёдор Кузьмич умер в Томске в 1864 году. Кем, по упорной легенде, он был на самом деле?",
+   "en": "The Siberian hermit Feodor Kuzmich died in Tomsk in 1864. Who, by a stubborn legend, was he really?"
+  },
+  "options": [
+   {
+    "ru": "Императором Александром I",
+    "en": "Emperor Alexander I"
+   },
+   {
+    "ru": "Беглым декабристом",
+    "en": "A runaway Decembrist"
+   },
+   {
+    "ru": "Пленным маршалом Наполеона",
+    "en": "A captured marshal of Napoleon"
+   },
+   {
+    "ru": "Тайным сыном Екатерины II",
+    "en": "A secret son of Catherine II"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Говорили, что царь в 1825 году инсценировал смерть в Таганроге. Почерковед нашла сходство их почерков, но доказательств нет до сих пор.",
+   "en": "The story goes that the tsar faked his death in Taganrog in 1825. A handwriting expert found the two hands alike, but there is still no proof."
+  },
+  "source": "https://en.wikipedia.org/wiki/Feodor_Kuzmich",
+  "basedOn": "ru_history_027",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По легенде, восставшие в 1825 году солдаты кричали «Да здравствуют Константин и Конституция!». Кто она, по их мнению?",
+   "en": "Legend says rebel soldiers in 1825 cheered 'Long live Constantine and Constitution!'. Who did they think she was?"
+  },
+  "options": [
+   {
+    "ru": "Жена Константина",
+    "en": "Constantine's wife"
+   },
+   {
+    "ru": "Дочь царя",
+    "en": "The tsar's daughter"
+   },
+   {
+    "ru": "Новая столица",
+    "en": "A new capital"
+   },
+   {
+    "ru": "Святая мученица",
+    "en": "A holy martyr"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так, по легенде, офицеры-декабристы объясняли солдатам новое слово. Вывели же солдат за права великого князя Константина, брата Николая I.",
+   "en": "That, legend says, is how the Decembrist officers explained the new word. The soldiers were led out for Grand Duke Constantine, Nicholas I's brother."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Константин_Павлович",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_history_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чтобы в 1731 году поступить в московскую академию, 19-летний сын помора Михаил Ломоносов соврал. О чём?",
+   "en": "To get into the Moscow academy in 1731, Mikhail Lomonosov, a 19 year old fisherman's son, told a lie. What was it?"
+  },
+  "options": [
+   {
+    "ru": "Что он сын дворянина",
+    "en": "That he was a nobleman's son"
+   },
+   {
+    "ru": "Что ему 14 лет",
+    "en": "That he was 14"
+   },
+   {
+    "ru": "Что он знает латынь",
+    "en": "That he knew Latin"
+   },
+   {
+    "ru": "Что он племянник епископа",
+    "en": "That he was a bishop's nephew"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он выдал себя «за сына холмогорского дворянина» и сел за парту с малолетними одноклассниками, которые над ним потешались.",
+   "en": "He passed himself off as 'the son of a Kholmogory nobleman' and sat among small boys, who laughed at him."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Ломоносов,_Михаил_Васильевич",
+  "basedOn": "ru_history_026",
+  "refine": "rewrite",
+  "id": "cur_ru_history_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В Кунсткамере хранятся зубы, вырванные при Петре I у певца, епископа и скорохода. Кто их вырвал?",
+   "en": "The Kunstkamera keeps teeth pulled in Peter the Great's time from a singer, a bishop and a messenger. Who pulled them?"
+  },
+  "options": [
+   {
+    "ru": "Сам царь",
+    "en": "The tsar himself"
+   },
+   {
+    "ru": "Палач Тайной канцелярии",
+    "en": "The secret police's executioner"
+   },
+   {
+    "ru": "Голландский лекарь царя",
+    "en": "The tsar's Dutch physician"
+   },
+   {
+    "ru": "Придворный цирюльник",
+    "en": "The court barber"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пётр увлекался медициной и сам рвал зубы придворным и слугам — говорят, не всегда по делу. Вырванные зубы он хранил.",
+   "en": "Peter loved medicine and pulled courtiers' and servants' teeth himself, reportedly not always because they needed to come out. He kept them."
+  },
+  "source": "https://www.irishtimes.com/life-and-style/travel/a-bizarre-relic-of-peter-the-great-1.898109",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_history_23"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1714 году Пётр I запретил строить каменные дома по всей России, кроме Петербурга. Зачем?",
+   "en": "In 1714 Peter the Great banned stone houses everywhere in Russia except St Petersburg. Why?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы каменщики ехали в Петербург",
+    "en": "So stonemasons would go to Petersburg"
+   },
+   {
+    "ru": "Чтобы камень шёл на крепости",
+    "en": "To save stone for forts"
+   },
+   {
+    "ru": "Чтобы бояре не строили себе дворцов",
+    "en": "So nobles wouldn't build palaces"
+   },
+   {
+    "ru": "Чтобы в казне хватило денег",
+    "en": "To keep money in the treasury"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Опытных каменщиков не хватало, и они всё равно не спешили ехать, так что их стали свозить в новую столицу силой.",
+   "en": "Skilled masons were scarce, and they still didn't hurry north, so they were brought to the new capital by force."
+  },
+  "source": "https://www.pnp.ru/social/pochemu-v-rossii-zapreshhali-kamennye-doma.html",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_history_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Пётр I был великаном для своего времени. Какого он был роста?",
+   "en": "Peter the Great was a giant for his time. How tall was he?"
+  },
+  "answer": 203,
+  "range": [
+   150,
+   250
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "По свидетельствам, около 2,03 м. Француз Сен-Симон в 1717 году описал его как очень высокого и стройного, со взглядом «растерянным и свирепым».",
+   "en": "Reportedly about 2.03 m. In 1717 the Frenchman Saint-Simon described him as tall, well formed and slim, with a look 'both bewildered and fierce'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Peter_the_Great",
+  "basedOn": "ru_history_042",
+  "refine": "rewrite",
+  "id": "cur_ru_history_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Самый крупный слон весит около 6 тонн. Сколько тонн весит Царь-колокол в Кремле?",
+   "en": "The biggest elephant weighs about 6 tonnes. How many tonnes does the Tsar Bell in the Kremlin weigh?"
+  },
+  "answer": 202,
+  "range": [
+   0,
+   500
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "т",
+   "en": "t"
+  },
+  "fact": {
+   "ru": "Около 202 тонн. В него ни разу не звонили: в пожар 1737 года раскалённый колокол облили водой, и от него откололся кусок больше 10 тонн.",
+   "en": "About 202 tonnes. It has never been rung: in the 1737 fire water was poured on the hot bell, and a piece of over 10 tonnes broke off."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tsar_Bell",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_history_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Императрица Елизавета Петровна правила 20 лет и обожала наряды. Сколько платьев насчитали в её гардеробе после смерти?",
+   "en": "Empress Elizabeth reigned for 20 years and loved clothes. How many dresses were counted in her wardrobe after her death?"
+  },
+  "answer": 15000,
+  "range": [
+   0,
+   40000
+  ],
+  "step": 100,
+  "tolerance": 3000,
+  "unit": {
+   "ru": "платьев",
+   "en": "dresses"
+  },
+  "fact": {
+   "ru": "Около 15 тысяч — в среднем по два на каждый день её правления. А ещё несколько тысяч пар туфель.",
+   "en": "About 15,000, roughly two for every day of her reign. Plus several thousand pairs of shoes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elizabeth_of_Russia",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_history_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Аляску продала не Екатерина, как поёт «Любэ», а Александр II в 1867 году. За сколько миллионов долларов?",
+   "en": "Alaska was sold not by Catherine, as a Russian pop song says, but by Alexander II in 1867. For how many million dollars?"
+  },
+  "answer": 7.2,
+  "range": [
+   0,
+   50
+  ],
+  "step": 0.1,
+  "tolerance": 3,
+  "unit": {
+   "ru": "млн $",
+   "en": "million $"
+  },
+  "fact": {
+   "ru": "За 7,2 млн — около 2 центов за акр. После Крымской войны в Петербурге боялись, что далёкую колонию Британия просто захватит.",
+   "en": "$7.2 million, about 2 cents an acre. After the Crimean War, St Petersburg feared Britain would simply seize the distant colony."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alaska_Purchase",
+  "basedOn": "ru_history_041",
+  "refine": "rewrite",
+  "id": "cur_ru_history_20"
+ }
+]

@@ -1,0 +1,670 @@
+[
+ {
+  "id": "cur_fairytales_23",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "У Диснея Белоснежку будит поцелуй. А что вернуло её к жизни в сказке братьев Гримм?",
+   "en": "In Disney, a kiss wakes Snow White. What brought her back to life in the Grimms' tale?"
+  },
+  "options": [
+   {
+    "ru": "Слуги споткнулись с гробом",
+    "en": "The servants stumbled with the coffin"
+   },
+   {
+    "ru": "Слёзы принца упали на неё",
+    "en": "The prince's tears fell on her"
+   },
+   {
+    "ru": "Гномы дали ей противоядие",
+    "en": "The dwarfs gave her an antidote"
+   },
+   {
+    "ru": "Принц спел ей песню",
+    "en": "The prince sang to her"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Принц увозил её в стеклянном гробу, слуги споткнулись о куст, и кусок яблока выскочил у неё из горла. В сказке Гримм о Белоснежке поцелуя нет вовсе.",
+   "en": "As the prince took her away in the glass coffin, the servants tripped over a bush and the apple flew out of her throat. The Grimms' tale has no kiss at all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Snow_White",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В старой английской сказке о трёх поросятах волк лезет через трубу в каменный дом. Чем это кончается?",
+   "en": "In the old English tale of the three little pigs, the wolf climbs down the brick house's chimney. How does it end?"
+  },
+  "options": [
+   {
+    "ru": "Поросёнок варит и съедает волка",
+    "en": "The pig boils and eats the wolf"
+   },
+   {
+    "ru": "Волк обжигается и удирает",
+    "en": "The wolf gets scalded and runs off"
+   },
+   {
+    "ru": "Волк съедает третьего поросёнка",
+    "en": "The wolf eats the third pig"
+   },
+   {
+    "ru": "Волк мирится с поросятами",
+    "en": "The wolf makes peace with the pigs"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Волк падает в котёл с кипятком, и поросёнок ест его на ужин. Двух первых братьев, из соломы и веток, волк там и правда съел.",
+   "en": "The wolf falls into a pot of boiling water and the pig has him for supper. The wolf really had eaten the first two brothers."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Three_Little_Pigs",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_fairytales_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Однажды летом Кай вдруг стал злым: ломал розы и дразнил Герду. Что с ним случилось?",
+   "en": "One summer Kai suddenly turned nasty, wrecking the roses and mocking Gerda. What had happened to him?"
+  },
+  "options": [
+   {
+    "ru": "В глаз попал осколок зеркала",
+    "en": "A mirror splinter got in his eye"
+   },
+   {
+    "ru": "Его поцеловала Снежная королева",
+    "en": "The Snow Queen had kissed him"
+   },
+   {
+    "ru": "Его околдовала старушка с садом",
+    "en": "The old garden woman bewitched him"
+   },
+   {
+    "ru": "Он простыл и заболел",
+    "en": "He caught a chill and fell ill"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Осколки зеркала злого тролля попали ему в глаз и в сердце: всё доброе стало казаться уродливым. Снежная королева увезла его только зимой.",
+   "en": "Splinters of a wicked troll's mirror got into his eye and heart, so all good things looked ugly. The Snow Queen only took him in winter."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Snow_Queen",
+  "basedOn": "fairytales_013",
+  "refine": "rewrite",
+  "id": "cur_fairytales_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что Винни-Пух подарил ослику Иа на день рождения?",
+   "en": "What did Winnie-the-Pooh give Eeyore for his birthday?"
+  },
+  "options": [
+   {
+    "ru": "Пустой горшок",
+    "en": "An empty pot"
+   },
+   {
+    "ru": "Лопнувший шарик",
+    "en": "A burst balloon"
+   },
+   {
+    "ru": "Горшок мёда",
+    "en": "A pot of honey"
+   },
+   {
+    "ru": "Новый хвост",
+    "en": "A new tail"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пух нёс горшок мёда, но по дороге всё съел. Шарик Пятачка лопнул, а Иа был счастлив: шарик так удобно класть в горшок и вынимать.",
+   "en": "Pooh set out with honey but ate it on the way. Piglet's balloon burst, and Eeyore was delighted: it went in and out of the pot."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eeyore",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_fairytales_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Когда Гензеля и Гретель впервые завели в лес, Гензель нашёл дорогу домой. По чему?",
+   "en": "The first time Hansel and Gretel were led into the forest, Hansel found the way home. How?"
+  },
+  "options": [
+   {
+    "ru": "По белым камешкам",
+    "en": "By white pebbles"
+   },
+   {
+    "ru": "По хлебным крошкам",
+    "en": "By breadcrumbs"
+   },
+   {
+    "ru": "По красной нитке",
+    "en": "By a red thread"
+   },
+   {
+    "ru": "По зарубкам на деревьях",
+    "en": "By notches on the trees"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он рассыпал блестящие белые камешки. Хлебные крошки были во второй раз, и их склевали птицы, так дети и попали к ведьме.",
+   "en": "He dropped shiny white pebbles. Breadcrumbs were the second time, and birds ate them, which is how the children reached the witch."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hansel_and_Gretel",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_fairytales_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Андерсен дописал новый финал «Нового платья короля», когда рукопись уже была в типографии. Кого он добавил?",
+   "en": "Andersen rewrote the end of The Emperor's New Clothes when it was already at the printer's. Who did he add?"
+  },
+  "options": [
+   {
+    "ru": "Ребёнка",
+    "en": "A child"
+   },
+   {
+    "ru": "Шута",
+    "en": "A jester"
+   },
+   {
+    "ru": "Королеву",
+    "en": "The empress"
+   },
+   {
+    "ru": "Министра",
+    "en": "A minister"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала сказка кончалась тем, что все хвалят наряд. Потом Андерсен добавил ребёнка, который кричит, что король-то голый.",
+   "en": "At first the tale ended with everyone praising the clothes. Then Andersen added the child who cries that the emperor has nothing on."
+  },
+  "source": "https://simple.wikipedia.org/wiki/The_Emperor%27s_New_Clothes",
+  "basedOn": "fairytales_012",
+  "refine": "rewrite",
+  "id": "cur_fairytales_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем Коллоди закончил «Пиноккио», когда печатал его в журнале в 1881 году?",
+   "en": "How did Collodi first end Pinocchio in the 1881 magazine serial?"
+  },
+  "options": [
+   {
+    "ru": "Его повесили на дубе",
+    "en": "He was hanged from an oak"
+   },
+   {
+    "ru": "Он стал мальчиком",
+    "en": "He became a real boy"
+   },
+   {
+    "ru": "Он сгорел в очаге",
+    "en": "He burned in the fireplace"
+   },
+   {
+    "ru": "Его проглотила акула",
+    "en": "A shark swallowed him"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Через четыре месяца читатели и редактор уговорили Коллоди продолжить, и Пиноккио спасла Фея.",
+   "en": "Four months later readers and the editor got Collodi to carry on, and the Fairy saved Pinocchio."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Adventures_of_Pinocchio",
+  "basedOn": "fairytales_024",
+  "refine": "same",
+  "id": "cur_fairytales_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Добрались ли бременские музыканты до Бремена в сказке братьев Гримм?",
+   "en": "In the Grimms' tale, did the Town Musicians of Bremen ever reach Bremen?"
+  },
+  "options": [
+   {
+    "ru": "Нет, остались в доме разбойников",
+    "en": "No, they stayed in the robbers' house"
+   },
+   {
+    "ru": "Да, и стали городскими музыкантами",
+    "en": "Yes, and became the town musicians"
+   },
+   {
+    "ru": "Да, но их прогнали",
+    "en": "Yes, but they were chased out"
+   },
+   {
+    "ru": "Нет, вернулись к хозяевам",
+    "en": "No, they went back to their owners"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бремен их всё равно любит: в 1953 году им поставили памятник у городской ратуши.",
+   "en": "Bremen loves them anyway: in 1953 it put up a statue of them by the town hall."
+  },
+  "source": "https://en.wikipedia.org/wiki/Town_Musicians_of_Bremen",
+  "basedOn": "fairytales_035",
+  "refine": "rewrite",
+  "id": "cur_fairytales_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как сводные сёстры Золушки у братьев Гримм втиснулись в туфельку?",
+   "en": "In the Grimms' tale, how did Cinderella's stepsisters get into the slipper?"
+  },
+  "options": [
+   {
+    "ru": "Отрезали палец и пятку",
+    "en": "Cut off a toe and a heel"
+   },
+   {
+    "ru": "Намазали ноги маслом",
+    "en": "Greased their feet"
+   },
+   {
+    "ru": "Растянули её за ночь",
+    "en": "Stretched it overnight"
+   },
+   {
+    "ru": "Подкупили слугу принца",
+    "en": "Bribed the prince's servant"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Принц заметил обман, только когда два голубя пропели, что в башмачке кровь.",
+   "en": "The prince only noticed when two doves sang that there was blood in the shoe."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cinderella",
+  "basedOn": "fairytales_023",
+  "refine": "same",
+  "id": "cur_fairytales_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как принцесса в самой первой сказке братьев Гримм расколдовала принца-лягушку?",
+   "en": "In the very first of the Grimms' tales, how did the princess break the frog prince's spell?"
+  },
+  "options": [
+   {
+    "ru": "Швырнула его об стену",
+    "en": "Threw him against the wall"
+   },
+   {
+    "ru": "Поцеловала его",
+    "en": "Kissed him"
+   },
+   {
+    "ru": "Пустила спать на подушку",
+    "en": "Let him sleep on her pillow"
+   },
+   {
+    "ru": "Накормила из своей тарелки",
+    "en": "Fed him from her plate"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Король-лягушка» открывает сборник 1812 года. Разозлившись, принцесса бросила лягушку об стену, и та стала принцем. Поцелуй придумали позже.",
+   "en": "The Frog King opens the 1812 collection. Furious, she hurled the frog at the wall and he became a prince. The kiss came later."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Frog_Prince",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_fairytales_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сельма Лагерлёф написала «Путешествие Нильса с дикими гусями» по заказу учителей. Зачем им была нужна эта книга?",
+   "en": "Selma Lagerlöf wrote The Wonderful Adventures of Nils for a teachers' association. What did they need the book for?"
+  },
+  "options": [
+   {
+    "ru": "Учить детей географии Швеции",
+    "en": "To teach children Sweden's geography"
+   },
+   {
+    "ru": "Отучить детей мучить животных",
+    "en": "To stop children hurting animals"
+   },
+   {
+    "ru": "Учить детей истории Швеции",
+    "en": "To teach children Swedish history"
+   },
+   {
+    "ru": "Рассказать детям о птицах",
+    "en": "To teach children about birds"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1902 году учителя заказали ей книгу для чтения по географии для школ. Поэтому Нильс на гусе облетает всю Швецию.",
+   "en": "In 1902 the teachers asked her for a geography reader for schools. That is why Nils flies over the whole of Sweden on a goose."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Wonderful_Adventures_of_Nils",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_fairytales_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1929 году Джеймс Барри отдал все права на «Питера Пэна». Кому?",
+   "en": "In 1929 J. M. Barrie gave away all the rights to Peter Pan. To whom?"
+  },
+  "options": [
+   {
+    "ru": "Детской больнице в Лондоне",
+    "en": "A children's hospital in London"
+   },
+   {
+    "ru": "Мальчикам, с которых писал Питера",
+    "en": "The boys who inspired Peter"
+   },
+   {
+    "ru": "Театру, где шла пьеса",
+    "en": "The theatre that staged the play"
+   },
+   {
+    "ru": "Лондонскому зоопарку",
+    "en": "London Zoo"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Больнице на Грейт-Ормонд-стрит. Барри просил никогда не называть сумму, а закон 1988 года оставил больнице доходы от Питера в Британии навсегда.",
+   "en": "Great Ormond Street Hospital. Barrie asked that the sum never be revealed, and a 1988 law lets it keep the UK royalties for ever."
+  },
+  "source": "https://en.wikipedia.org/wiki/Great_Ormond_Street_Hospital",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_fairytales_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Настоящее имя Льюиса Кэрролла — Чарльз Доджсон. В «Алисе в Стране чудес» он вывел себя в виде птицы. Какой?",
+   "en": "Lewis Carroll's real name was Charles Dodgson. In Alice in Wonderland he put himself in as a bird. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Додо",
+    "en": "The Dodo"
+   },
+   {
+    "ru": "Попугай Лори",
+    "en": "The Lory"
+   },
+   {
+    "ru": "Орлёнок",
+    "en": "The Eaglet"
+   },
+   {
+    "ru": "Утка",
+    "en": "The Duck"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По популярной версии, он заикался: «До-до-Доджсон». Лори — сестра Алисы Лорина, Орлёнок — сестра Эдит, Утка — их друг Дакворт.",
+   "en": "A popular story says he stammered: 'Do-do-Dodgson'. The Lory is Alice's sister Lorina, the Eaglet Edith, the Duck their friend Duckworth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dodo_(Alice%27s_Adventures_in_Wonderland)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_fairytales_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Безумный Шляпник из «Алисы» взялся не с потолка: английские шляпники и правда сходили с ума. Что их травило?",
+   "en": "Alice's Mad Hatter had real models: English hatters really did go mad. What poisoned them?"
+  },
+  "options": [
+   {
+    "ru": "Пары ртути",
+    "en": "Mercury fumes"
+   },
+   {
+    "ru": "Угольный дым",
+    "en": "Coal smoke"
+   },
+   {
+    "ru": "Крахмальная пыль",
+    "en": "Starch dust"
+   },
+   {
+    "ru": "Нюхательный табак",
+    "en": "Snuff"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ртутью обрабатывали мех для фетра, и её пары вызывали дрожь и странное поведение.",
+   "en": "Mercury was used to turn fur into felt, and its fumes caused tremors and odd behaviour."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mad_hatter_disease",
+  "basedOn": "fairytales_028",
+  "refine": "rewrite",
+  "id": "cur_fairytales_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сказок об Аладдине и Али-Бабе нет ни в одной старой арабской рукописи «Тысячи и одной ночи». Откуда они?",
+   "en": "Aladdin and Ali Baba are in no old Arabic manuscript of the Thousand and One Nights. Where did they come from?"
+  },
+  "options": [
+   {
+    "ru": "Француз записал их со слов сирийца",
+    "en": "A Frenchman heard them from a Syrian"
+   },
+   {
+    "ru": "Их нашли в старой китайской рукописи",
+    "en": "Found in an old Chinese manuscript"
+   },
+   {
+    "ru": "Их привезли из Индии",
+    "en": "They were brought from India"
+   },
+   {
+    "ru": "Их перевели с персидского",
+    "en": "They were translated from Persian"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Переводчик Антуан Галлан услышал их в Париже в 1709 году от сирийского рассказчика Ханны Дияба. Их так и зовут: «сиротские сказки».",
+   "en": "Translator Antoine Galland heard them in Paris in 1709 from the Syrian storyteller Hanna Diyab. They are called the 'orphan tales'."
+  },
+  "source": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_fairytales_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Имя «Пеппи Длинныйчулок» придумала не Астрид Линдгрен. А кто?",
+   "en": "Astrid Lindgren did not invent the name Pippi Longstocking. Who did?"
+  },
+  "options": [
+   {
+    "ru": "Её маленькая дочь",
+    "en": "Her little daughter"
+   },
+   {
+    "ru": "Её издатель",
+    "en": "Her publisher"
+   },
+   {
+    "ru": "Соседский мальчишка",
+    "en": "A neighbour's boy"
+   },
+   {
+    "ru": "Шведская принцесса",
+    "en": "A Swedish princess"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Зимой 1941 года дочка Карин заболела и попросила: «Расскажи про Пеппи Длинныйчулок». Имя она выдумала на ходу, а мама сочинила к нему девочку.",
+   "en": "In winter 1941 her daughter Karin, ill in bed, asked for a story about Pippi Longstocking, a name she made up on the spot."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pippi_Longstocking",
+  "basedOn": "fairytales_026",
+  "refine": "rewrite",
+  "id": "cur_fairytales_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько тюфяков положили поверх горошины в «Принцессе на горошине»?",
+   "en": "In The Princess and the Pea, how many mattresses were piled on the pea?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "тюфяков",
+   "en": "mattresses"
+  },
+  "fact": {
+   "ru": "А горошину отдали в кунсткамеру, где она и лежит, «если только её никто не стащил».",
+   "en": "The pea went into the royal museum, 'where it may still be seen, if no one has stolen it'."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Princess_and_the_Pea",
+  "basedOn": "fairytales_049",
+  "refine": "same",
+  "id": "cur_fairytales_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Стойкого оловянного солдатика и всех его братьев отлили из одной старой ложки. Сколько солдатиков было в коробке?",
+   "en": "The steadfast tin soldier and all his brothers were cast from one old spoon. How many soldiers were in the box?"
+  },
+  "answer": 25,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "солдатиков",
+   "en": "soldiers"
+  },
+  "fact": {
+   "ru": "25. Он был последним, и олова на него не хватило: вот почему он одноногий.",
+   "en": "25. He was the last one cast, and the tin ran out: that is why he has only one leg."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Steadfast_Tin_Soldier",
+  "basedOn": "fairytales_050",
+  "refine": "rewrite",
+  "id": "cur_fairytales_18"
+ },
+ {
+  "id": "cur_fairytales_19",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Шарль Перро выпустил «Золушку» и «Красную Шапочку» под именем своего сына-подростка. Сколько лет было самому Перро?",
+   "en": "Perrault published Cinderella and Red Riding Hood under his teenage son's name. How old was Perrault himself?"
+  },
+  "answer": 68,
+  "range": [
+   0,
+   120
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "68, почти 69: книга вышла в январе 1697 года, а родился он 12 января 1628-го. Автором значился «П. Дарманкур», то есть сын Пьер.",
+   "en": "68, nearly 69: the book came out in January 1697, and he was born on 12 January 1628. It named 'P. Darmancour', his son Pierre."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles_Perrault",
+  "basedOn": "fairytales_040",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Русалочка на камне у воды — символ Копенгагена, её фотографируют миллионы. Какой высоты эта статуя?",
+   "en": "The Little Mermaid on her rock is Copenhagen's symbol, photographed by millions. How tall is the statue?"
+  },
+  "answer": 125,
+  "range": [
+   20,
+   600
+  ],
+  "step": 5,
+  "tolerance": 40,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "Всего 1,25 метра. Её поставили в 1913 году по заказу сына основателя Carlsberg, а голову ей отпиливали дважды: в 1964 и 1998 годах.",
+   "en": "Just 1.25 metres. It went up in 1913 for the Carlsberg founder's son, and its head was sawn off twice, in 1964 and 1998."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Little_Mermaid_(statue)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_fairytales_20"
+ }
+]

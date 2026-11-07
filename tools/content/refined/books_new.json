@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Распределяющая шляпа видела в Гарри Поттере задатки слизеринца. Почему он всё же попал в Гриффиндор?",
+   "en": "The Sorting Hat saw Slytherin in Harry Potter. Why did he end up in Gryffindor after all?"
+  },
+  "options": [
+   {
+    "ru": "Сам попросил",
+    "en": "He asked it to"
+   },
+   {
+    "ru": "Вмешался Дамблдор",
+    "en": "Dumbledore stepped in"
+   },
+   {
+    "ru": "Там учились родители",
+    "en": "His parents had been there"
+   },
+   {
+    "ru": "Шляпа ошиблась",
+    "en": "The Hat made a mistake"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шляпа учитывает и желание ученика, а Гарри мысленно твердил: «Только не Слизерин». Так она и сделала.",
+   "en": "The Hat also weighs what the pupil wants, and Harry kept thinking 'Not Slytherin'. So it listened."
+  },
+  "source": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone",
+  "basedOn": "books_new_001",
+  "refine": "rewrite",
+  "id": "cur_books_new_01"
+ },
+ {
+  "id": "cur_books_new_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Издатель попросил Джоан Роулинг подписать «Гарри Поттера» инициалами, а не полным именем. Зачем?",
+   "en": "The publisher asked Joanne Rowling to sign Harry Potter with initials, not her full name. Why?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы читали мальчики",
+    "en": "So boys would read it"
+   },
+   {
+    "ru": "Чтобы было как у Толкина",
+    "en": "To sound like Tolkien"
+   },
+   {
+    "ru": "Её имя уже было занято",
+    "en": "Her name was taken"
+   },
+   {
+    "ru": "Чтобы влезло на обложку",
+    "en": "To fit on the cover"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Боялись, что мальчики не возьмут книгу, написанную женщиной. Второго имени у неё нет: «К» она взяла у бабушки Кэтлин.",
+   "en": "They feared boys would not pick up a book written by a woman. She has no middle name: the K is from her grandmother Kathleen."
+  },
+  "source": "https://en.wikipedia.org/wiki/J._K._Rowling",
+  "basedOn": "books_new_019",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Стивен Кинг пишет не только ужасы. Какой из этих фильмов снят по его повести?",
+   "en": "Stephen King writes more than horror. Which of these films is based on his novella?"
+  },
+  "options": [
+   {
+    "ru": "«Побег из Шоушенка»",
+    "en": "The Shawshank Redemption"
+   },
+   {
+    "ru": "«Форрест Гамп»",
+    "en": "Forrest Gump"
+   },
+   {
+    "ru": "«Молчание ягнят»",
+    "en": "The Silence of the Lambs"
+   },
+   {
+    "ru": "«Пролетая над гнездом кукушки»",
+    "en": "One Flew Over the Cuckoo's Nest"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Повесть 1982 года звалась «Рита Хейворт и спасение из Шоушенка»: подкоп Энди прятал за плакатом с этой актрисой. Остальные три фильма тоже сняты по книгам.",
+   "en": "The 1982 novella was 'Rita Hayworth and Shawshank Redemption': Andy hid his tunnel behind her poster. The other three films are from books too."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rita_Hayworth_and_Shawshank_Redemption",
+  "basedOn": "books_new_036",
+  "refine": "rewrite",
+  "id": "cur_books_new_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Ответ на главный вопрос жизни, Вселенной и всего такого в «Автостопом по галактике» — 42. Почему Адамс выбрал это число?",
+   "en": "In The Hitchhiker's Guide, the Answer to Life, the Universe and Everything is 42. Why did Adams pick that number?"
+  },
+  "options": [
+   {
+    "ru": "Просто шутки ради",
+    "en": "Just as a joke"
+   },
+   {
+    "ru": "Это код звёздочки «*»",
+    "en": "It is the code for '*'"
+   },
+   {
+    "ru": "Столько ему было лет",
+    "en": "It was his age"
+   },
+   {
+    "ru": "Номер любимого игрока",
+    "en": "His favourite player's number"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фанаты искали тут код ASCII и 13-ричную систему, но Адамс отрезал: «Чепуха». Нужно было обычное небольшое число, и он решил: «42 сойдёт».",
+   "en": "Fans saw ASCII codes and base 13 in it, but Adams called that 'complete nonsense'. He needed an ordinary, smallish number and thought '42 will do'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy",
+  "basedOn": "books_new_010",
+  "refine": "rewrite",
+  "id": "cur_books_new_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Его настоящее имя Смеагол. Почему его прозвали Голлумом?",
+   "en": "His real name is Sméagol. Why was he nicknamed Gollum?"
+  },
+  "options": [
+   {
+    "ru": "За звук в горле",
+    "en": "For a noise in his throat"
+   },
+   {
+    "ru": "Так звали его деда",
+    "en": "After his grandfather"
+   },
+   {
+    "ru": "Так назвал Бильбо",
+    "en": "Bilbo named him so"
+   },
+   {
+    "ru": "Это «вор» по-эльфийски",
+    "en": "It means 'thief' in Elvish"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Родня прозвала его за мерзкий глотающий звук «голлум» в горле. А Энди Серкис в фильмах списал этот звук со своего кота, кашлявшего комком шерсти.",
+   "en": "His relatives named him for the nasty swallowing noise, 'gollum', he made in his throat. In the films Andy Serkis copied it from his cat coughing up a hairball."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gollum",
+  "basedOn": "books_new_015",
+  "refine": "rewrite",
+  "id": "cur_books_new_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В школу Роальда Даля фабрика Cadbury присылала коробки с новыми шоколадками. Зачем?",
+   "en": "The Cadbury factory sent boxes of new chocolates to Roald Dahl's school. Why?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы дети их оценили",
+    "en": "For the boys to rate them"
+   },
+   {
+    "ru": "В награду за учёбу",
+    "en": "As a prize for good marks"
+   },
+   {
+    "ru": "Для школьной ярмарки",
+    "en": "For the school fair"
+   },
+   {
+    "ru": "Как рекламу к Рождеству",
+    "en": "As Christmas advertising"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ученики пробовали новинки. Даль мечтал изобрести батончик, который похвалит сам мистер Кэдбери, и так родился «Чарли и шоколадная фабрика».",
+   "en": "The pupils tested the new bars. Dahl dreamed of inventing one Mr Cadbury himself would praise, and Charlie and the Chocolate Factory grew from that."
+  },
+  "source": "https://en.wikipedia.org/wiki/Roald_Dahl",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_books_new_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первую фразу «Хоббита» Толкин написал на чистом листе, который ему попался. Где был этот лист?",
+   "en": "Tolkien wrote the first line of The Hobbit on a blank page he came across. Where was that page?"
+  },
+  "options": [
+   {
+    "ru": "В работе на экзамене",
+    "en": "In an exam paper"
+   },
+   {
+    "ru": "В старой церковной книге",
+    "en": "In an old church register"
+   },
+   {
+    "ru": "В школьной тетради сына",
+    "en": "In his son's exercise book"
+   },
+   {
+    "ru": "На обороте счёта за газ",
+    "en": "On the back of a gas bill"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Оксфордский профессор подрабатывал проверкой школьных экзаменов. Кто-то оставил страницу пустой, и он вывел: «В норе под землёй жил-был хоббит».",
+   "en": "The Oxford professor marked school exams for extra money. One pupil left a page blank, and he wrote: 'In a hole in the ground there lived a hobbit.'"
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Hobbit",
+  "basedOn": "books_new_007",
+  "refine": "rewrite",
+  "id": "cur_books_new_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В первом издании «Хоббита» (1937) Бильбо обыгрывает Голлума в загадки. Чем кончилась их встреча?",
+   "en": "In the first edition of The Hobbit (1937), Bilbo beats Gollum at riddles. How did their meeting end?"
+  },
+  "options": [
+   {
+    "ru": "Мирно разошлись",
+    "en": "They parted as friends"
+   },
+   {
+    "ru": "Голлум проклял вора",
+    "en": "Gollum cursed the thief"
+   },
+   {
+    "ru": "Бильбо вернул кольцо",
+    "en": "Bilbo gave the ring back"
+   },
+   {
+    "ru": "Голлум погнался за ним",
+    "en": "Gollum chased him"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Голлум честно ставил кольцо на кон, и они расстались по-хорошему. В 1951 году Толкин переписал главу под «Властелина колец»: «Вор! Ненавидим навсегда!»",
+   "en": "Gollum honestly bet the ring, and they parted amicably. In 1951 Tolkien rewrote the chapter for The Lord of the Rings: 'Thief! We hates it forever!'"
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Hobbit",
+  "basedOn": "books_new_003",
+  "refine": "rewrite",
+  "id": "cur_books_new_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь кого Ян Флеминг назвал Джеймса Бонда?",
+   "en": "Who was James Bond named after?"
+  },
+  "options": [
+   {
+    "ru": "Шпиона времён войны",
+    "en": "A wartime spy"
+   },
+   {
+    "ru": "Орнитолога",
+    "en": "A bird expert"
+   },
+   {
+    "ru": "Дяди Флеминга",
+    "en": "Fleming's uncle"
+   },
+   {
+    "ru": "Футболиста",
+    "en": "A footballer"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Флеминг искал самое заурядное имя и взял его с обложки справочника «Птицы Вест-Индии». Настоящему Бонду он подписал книгу: «от вора его имени».",
+   "en": "Fleming wanted the plainest name and took it from the cover of Birds of the West Indies. He signed a book to the real Bond: 'from the thief of his identity'."
+  },
+  "source": "https://en.wikipedia.org/wiki/James_Bond_(ornithologist)",
+  "basedOn": "books_new_018",
+  "refine": "rewrite",
+  "id": "cur_books_new_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чей некролог в августе 1975 года вышел на первой полосе The New York Times?",
+   "en": "Whose obituary ran on the front page of The New York Times in August 1975?"
+  },
+  "options": [
+   {
+    "ru": "Эркюля Пуаро",
+    "en": "Hercule Poirot"
+   },
+   {
+    "ru": "Шерлока Холмса",
+    "en": "Sherlock Holmes"
+   },
+   {
+    "ru": "Джеймса Бонда",
+    "en": "James Bond"
+   },
+   {
+    "ru": "Мисс Марпл",
+    "en": "Miss Marple"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кристи «убила» Пуаро в «Занавесе». Роман она написала ещё в войну, боясь погибнуть под бомбами, и хранила в банковском сейфе.",
+   "en": "Christie 'killed' Poirot in Curtain. She wrote it during the war, fearing she might die in the bombing, and kept it in a bank vault."
+  },
+  "source": "https://en.wikipedia.org/wiki/Curtain_(novel)",
+  "basedOn": "books_new_017",
+  "refine": "rewrite",
+  "id": "cur_books_new_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На чём, по словам Джорджа Мартина, он пишет книги «Песни льда и пламени»?",
+   "en": "What does George R. R. Martin say he writes A Song of Ice and Fire on?"
+  },
+  "options": [
+   {
+    "ru": "На старом DOS-компьютере",
+    "en": "An old DOS computer"
+   },
+   {
+    "ru": "На печатной машинке «Ремингтон»",
+    "en": "A Remington typewriter"
+   },
+   {
+    "ru": "Гусиным пером на пергаменте",
+    "en": "A quill pen on parchment"
+   },
+   {
+    "ru": "Диктует на диктофон",
+    "en": "He dictates to a recorder"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 2014 году он рассказал: работает в WordStar 4.0 для DOS на машине без интернета. Ни вирусов, ни назойливой проверки орфографии.",
+   "en": "In 2014 he said he uses WordStar 4.0 for DOS on a machine with no internet. No viruses and no nagging spell-checker."
+  },
+  "source": "https://www.slate.com/blogs/future_tense/2014/05/14/george_r_r_martin_writes_on_dos_based_wordstar_4_0_software_from_the_1980s.html",
+  "basedOn": "books_new_035",
+  "refine": "rewrite",
+  "id": "cur_books_new_11"
+ },
+ {
+  "id": "cur_books_new_12",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Глава издательства Bloomsbury не стал сам читать рукопись «Гарри Поттера». Кому он дал её на пробу?",
+   "en": "The head of Bloomsbury didn't read the Harry Potter manuscript himself. Who did he give it to try?"
+  },
+  "options": [
+   {
+    "ru": "Дочери, ей было 8",
+    "en": "His daughter, aged 8"
+   },
+   {
+    "ru": "Жене главного редактора",
+    "en": "The chief editor's wife"
+   },
+   {
+    "ru": "Школьной учительнице",
+    "en": "A schoolteacher"
+   },
+   {
+    "ru": "Критику из «Таймс»",
+    "en": "A critic from The Times"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Через час Алиса спустилась: «Папа, это гораздо лучше всего остального!» — и потом требовала продолжения. Роулинг выписали аванс 2500 фунтов.",
+   "en": "An hour later Alice came down: 'Dad, this is so much better than anything else!' and kept asking for more. Rowling got a £2,500 advance."
+  },
+  "source": "https://nzherald.co.nz/lifestyle/revealed-the-eight-year-old-girl-who-saved-harry-potter/UTQCYL6RAEUSL4V5JH7MMP3WTE",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Сияние» Стивен Кинг придумал после ночи в отеле «Стэнли» в Колорадо. Чем была странна та ночь?",
+   "en": "Stephen King thought up The Shining after a night at the Stanley Hotel in Colorado. What was odd about that night?"
+  },
+  "options": [
+   {
+    "ru": "Они были одни в отеле",
+    "en": "They were the only guests"
+   },
+   {
+    "ru": "Отель отрезало снегопадом",
+    "en": "A snowstorm cut the hotel off"
+   },
+   {
+    "ru": "В отеле погас свет",
+    "en": "The power went out"
+   },
+   {
+    "ru": "Кинг видел призрака",
+    "en": "King saw a ghost"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Отель закрывался на зиму, и Кинг с женой оказались единственными гостями. Ночью ему приснился трёхлетний сын, бегущий по коридорам.",
+   "en": "The hotel was closing for the season, and King and his wife were its only guests. That night he dreamed of his three-year-old son running down the halls."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Shining_(novel)",
+  "basedOn": "books_new_011",
+  "refine": "rewrite",
+  "id": "cur_books_new_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сьюзен Коллинз придумала «Голодные игры», переключая телевизор между двумя каналами. Что на них шло?",
+   "en": "Suzanne Collins came up with The Hunger Games flicking between two TV channels. What was on them?"
+  },
+  "options": [
+   {
+    "ru": "Реалити-шоу и кадры войны",
+    "en": "A reality show and war footage"
+   },
+   {
+    "ru": "Олимпиада и фильм про Древний Рим",
+    "en": "The Olympics and an Ancient Rome film"
+   },
+   {
+    "ru": "Кулинарное шоу и новости",
+    "en": "A cooking show and the news"
+   },
+   {
+    "ru": "Футбол и фильм ужасов",
+    "en": "Football and a horror film"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На одном канале люди соревновались в реалити-шоу, на другом шли кадры вторжения в Ирак, и они «слились тревожным образом».",
+   "en": "One channel showed people competing in a reality show, the other footage of the invasion of Iraq, and they 'began to blur in this very unsettling way'."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Hunger_Games_(novel)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_books_new_14"
+ },
+ {
+  "id": "cur_books_new_15",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Самое страшное место в «1984» — Комната 101. Оруэлл назвал её в честь комнаты, где сам изнывал от скуки. Что это было?",
+   "en": "The worst place in 1984 is Room 101. Orwell named it after a room where he himself was bored stiff. What room?"
+  },
+  "options": [
+   {
+    "ru": "Переговорная на Би-би-си",
+    "en": "A BBC meeting room"
+   },
+   {
+    "ru": "Класс в школе Итона",
+    "en": "An Eton classroom"
+   },
+   {
+    "ru": "Приёмная зубного врача",
+    "en": "A dentist's waiting room"
+   },
+   {
+    "ru": "Полицейская казарма в Бирме",
+    "en": "A police barracks in Burma"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Работая на радио Би-би-си, он просиживал в этой комнате скучнейшие совещания. Оруэлл отомстил им, превратив её в камеру пыток.",
+   "en": "Working for BBC radio, he sat through tedious meetings in that room. Orwell got his revenge by turning it into a torture chamber."
+  },
+  "source": "https://en.wikipedia.org/wiki/Room_101",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Умберто Эко признавался, что «Имя розы» началось с одного внезапного желания. Какого?",
+   "en": "Umberto Eco admitted that The Name of the Rose began with one sudden urge. What was it?"
+  },
+  "options": [
+   {
+    "ru": "Отравить монаха",
+    "en": "To poison a monk"
+   },
+   {
+    "ru": "Удивить студентов",
+    "en": "To amaze his students"
+   },
+   {
+    "ru": "Выиграть спор с женой",
+    "en": "To win a bet with his wife"
+   },
+   {
+    "ru": "Разбогатеть к пенсии",
+    "en": "To get rich by retirement"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Мне захотелось отравить монаха», — писал Эко в «Заметках на полях». Действие идёт в 1327 году: монахи аббатства гибнут один за другим.",
+   "en": "'I felt like poisoning a monk,' Eco wrote in his Postscript. The novel is set in 1327: the abbey's monks die one after another."
+  },
+  "source": "https://www.kirkusreviews.com/book-reviews/umberto-eco-9/postscript-to-the-name-of-the-rose/",
+  "basedOn": "books_new_044",
+  "refine": "rewrite",
+  "id": "cur_books_new_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сегодня продано больше 120 млн экземпляров «Гарри Поттера и философского камня». Каким был первый тираж в 1997 году?",
+   "en": "Harry Potter and the Philosopher's Stone has sold over 120 million copies. How big was its first print run in 1997?"
+  },
+  "answer": 500,
+  "range": [
+   0,
+   10000
+  ],
+  "step": 25,
+  "tolerance": 250,
+  "unit": {
+   "ru": "экз.",
+   "en": "copies"
+  },
+  "fact": {
+   "ru": "Всего 500 книг в твёрдой обложке, и 300 из них ушли в библиотеки. Такой экземпляр теперь мечта коллекционеров.",
+   "en": "Just 500 hardbacks, and 300 of them went to libraries. A copy is now a collector's dream."
+  },
+  "source": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone",
+  "basedOn": "books_new_040",
+  "refine": "rewrite",
+  "id": "cur_books_new_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Агата Кристи думала, что её пьеса «Мышеловка» продержится месяцев восемь. Сколько лет она шла в Лондоне без перерыва?",
+   "en": "Christie thought The Mousetrap might run eight months. How many years did it run in London without a break?"
+  },
+  "answer": 67,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "67 лет: с ноября 1952-го до марта 2020-го, когда театры закрыл ковид. Права на пьесу Кристи подарила внуку на день рождения.",
+   "en": "67 years: from November 1952 to March 2020, when COVID shut the theatres. Christie gave the rights to her grandson as a birthday present."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Mousetrap",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_books_new_23"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Айзек Азимов («Я, робот») издал первый роман в 1950-м и писал до смерти в 1992-м. Сколько книг он написал или составил?",
+   "en": "Asimov (I, Robot) put out his first novel in 1950 and wrote until he died in 1992. How many books did he write or edit?"
+  },
+  "answer": 500,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 100,
+  "unit": {
+   "ru": "книг",
+   "en": "books"
+  },
+  "fact": {
+   "ru": "Больше 500 — почти по книге в месяц, и ещё около 90 тысяч писем. Его книги есть в 9 из 10 разделов библиотечной классификации, кроме философии.",
+   "en": "More than 500, nearly one a month, plus some 90,000 letters. His books span nine of the ten Dewey library classes, all but philosophy."
+  },
+  "source": "https://en.wikipedia.org/wiki/Isaac_Asimov",
+  "basedOn": "books_new_050",
+  "refine": "rewrite",
+  "id": "cur_books_new_24"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Аванс Стивена Кинга за первый роман «Кэрри» — 2500 долларов. За сколько тысяч долларов продали права на мягкую обложку?",
+   "en": "Stephen King got a $2,500 advance for his first novel, Carrie. How many thousand dollars did the paperback rights fetch?"
+  },
+  "answer": 400,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 120,
+  "unit": {
+   "ru": "тыс. долларов",
+   "en": "thousand dollars"
+  },
+  "fact": {
+   "ru": "За 400 тысяч, и половину получил Кинг: он бросил работу учителя. А ведь рукопись он выбрасывал, и её достала из мусора жена Табита.",
+   "en": "For $400,000, half of it King's: he quit teaching. Yet he had thrown the manuscript away, and his wife Tabitha fished it out of the trash."
+  },
+  "source": "https://en.wikipedia.org/wiki/Carrie_(novel)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_books_new_20"
+ }
+]
