@@ -98,8 +98,8 @@ namespace FamilyQuiz.Tests.NetScreens
         {
             _t.EnterAnswer(4);
             _t.Clock.Advance(2500);
-            AssertJson(@"{'v':2,'type':'screen','phaseId':4,'id':'answerChoice','endsInMs':12500,'data':{
-                'options':['Рейн','Волга','Днепр','Дунай'],'windowMs':15000}}",
+            AssertJson(@"{'v':2,'type':'screen','phaseId':4,'id':'answerChoice','endsInMs':" + (_t.BaseWindowMs - 2500) + @",'data':{
+                'options':['Рейн','Волга','Днепр','Дунай'],'windowMs':" + _t.BaseWindowMs + @"}}",
                 ScreenMessage(_t.Screens.CurrentScreen(Mama)));
         }
 
@@ -107,8 +107,8 @@ namespace FamilyQuiz.Tests.NetScreens
         public void AnswerChoiceHasTheOptionsInDisplayOrderInEnglish()
         {
             _t.EnterAnswer(4);
-            AssertJson(@"{'v':2,'type':'screen','phaseId':4,'id':'answerChoice','endsInMs':15000,'data':{
-                'options':['Rhine','Volga','Dnieper','Danube'],'windowMs':15000}}",
+            AssertJson(@"{'v':2,'type':'screen','phaseId':4,'id':'answerChoice','endsInMs':" + _t.BaseWindowMs + @",'data':{
+                'options':['Rhine','Volga','Dnieper','Danube'],'windowMs':" + _t.BaseWindowMs + @"}}",
                 ScreenMessage(_t.Screens.CurrentScreen(Papa)));
         }
 
@@ -118,8 +118,8 @@ namespace FamilyQuiz.Tests.NetScreens
             var slow = _t.AddPlayer("p4", "Gran", "en", 3, "c4", timerMultiplier: 1.5);
             _t.EnterAnswer(4);
             var screen = ScreenMessage(_t.Screens.CurrentScreen(slow));
-            Assert.That((long)screen["data"]["windowMs"], Is.EqualTo(22500));
-            Assert.That((long)screen["endsInMs"], Is.EqualTo(22500));
+            Assert.That((long)screen["data"]["windowMs"], Is.EqualTo(_t.BaseWindowMs * 3 / 2));
+            Assert.That((long)screen["endsInMs"], Is.EqualTo(_t.BaseWindowMs * 3 / 2));
         }
 
         [Test]
@@ -138,7 +138,7 @@ namespace FamilyQuiz.Tests.NetScreens
         {
             _t.EnterAnswer(4);
             _t.Lock(Mama, 1, 3000);
-            AssertJson(@"{'v':2,'type':'screen','phaseId':4,'id':'waiting','endsInMs':15000,'data':{'locked':'B · Волга'}}",
+            AssertJson(@"{'v':2,'type':'screen','phaseId':4,'id':'waiting','endsInMs':" + _t.BaseWindowMs + @",'data':{'locked':'B · Волга'}}",
                 ScreenMessage(_t.Screens.CurrentScreen(Mama)));
         }
 

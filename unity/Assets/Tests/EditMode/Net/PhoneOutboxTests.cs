@@ -65,7 +65,7 @@ namespace FamilyQuiz.Tests.NetScreens
 
             var papa = _t.Sender.MessagesTo("c2");
             Assert.That(papa.Select(m => (string)m["type"]), Is.EqualTo(new[] { "ack", "screen" }), "ack first, then the screen");
-            AssertJson("{'v':2,'type':'screen','phaseId':4,'id':'waiting','endsInMs':15000,'data':{'locked':'C · Dnieper'}}",
+            AssertJson("{'v':2,'type':'screen','phaseId':4,'id':'waiting','endsInMs':" + _t.BaseWindowMs + ",'data':{'locked':'C · Dnieper'}}",
                 papa[1]);
             Assert.That(_t.Sender.MessagesTo("c1"), Is.Empty, "no phone lists who is still answering (D88)");
             Assert.That(_t.Sender.MessagesTo("c3"), Is.Empty, "a player still answering keeps their buttons");
@@ -88,7 +88,7 @@ namespace FamilyQuiz.Tests.NetScreens
             });
 
             AssertJson(@"{'v':2,'type':'screen','phaseId':4,'id':'answerChoice','endsInMs':5000,'data':{
-                'options':['Рейн','Волга','Днепр','Дунай'],'windowMs':15000}}",
+                'options':['Рейн','Волга','Днепр','Дунай'],'windowMs':" + _t.BaseWindowMs + @"}}",
                 _t.Sender.MessagesTo("c3").Single());
         }
 
@@ -234,7 +234,7 @@ namespace FamilyQuiz.Tests.NetScreens
 
             var snapshot = _t.Sender.MessagesTo("c3", "snapshot").Single();
             Assert.That((string)snapshot["screen"]["id"], Is.EqualTo("waiting"));
-            Assert.That((long)snapshot["screen"]["endsInMs"], Is.EqualTo(9000));
+            Assert.That((long)snapshot["screen"]["endsInMs"], Is.EqualTo(_t.BaseWindowMs - 6000));
         }
 
         [Test]
