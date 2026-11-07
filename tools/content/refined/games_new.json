@@ -1,38 +1,38 @@
 [
  {
-  "id": "cur_games_new_01",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Писатель продал права на игры «Ведьмак» за разовую сумму, а не за процент. Из какой он страны?",
-   "en": "The writer sold the Witcher game rights for a one-off fee, not a percentage. Which country is he from?"
+   "ru": "Автор «Ведьмака» Анджей Сапковский продал права на игры по своим книгам. Как он прогадал, когда они стали хитами?",
+   "en": "Witcher author Andrzej Sapkowski sold the game rights to his books. How did he lose out once the games were hits?"
   },
   "options": [
    {
-    "ru": "Чехия",
-    "en": "Czech Republic"
+    "ru": "Взял разовую сумму, а не процент",
+    "en": "Took one fee, not a percentage"
    },
    {
-    "ru": "Финляндия",
-    "en": "Finland"
+    "ru": "Запретил продавать игры за границей",
+    "en": "Banned selling the games abroad"
    },
    {
-    "ru": "Венгрия",
-    "en": "Hungary"
+    "ru": "Отдал права совсем бесплатно",
+    "en": "Gave the rights away for free"
    },
    {
-    "ru": "Польша",
-    "en": "Poland"
+    "ru": "Велел сменить имя героя",
+    "en": "Made them rename the hero"
    }
   ],
-  "correct": 3,
+  "correct": 0,
   "fact": {
-   "ru": "Когда игры стали хитами, Анджей Сапковский потребовал у CD Projekt 60 млн злотых; в 2019 году они помирились.",
-   "en": "Once the games were hits, Andrzej Sapkowski demanded 60 million zloty from CD Projekt; they settled in 2019."
+   "ru": "В 2018 году он потребовал у CD Projekt доплату в 60 млн злотых; в 2019-м они договорились, условия не раскрыли.",
+   "en": "In 2018 he demanded 60 million zloty more from CD Projekt; they settled in 2019 on undisclosed terms."
   },
   "source": "https://en.wikipedia.org/wiki/Andrzej_Sapkowski",
   "basedOn": "games_new_002",
-  "refine": "rewrite"
+  "refine": "rewrite",
+  "id": "cur_games_new_24"
  },
  {
   "id": "cur_games_new_02",
@@ -70,39 +70,144 @@
   "refine": "new"
  },
  {
-  "id": "cur_games_new_03",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Игра Cuphead нарисована вручную в стиле мультфильмов каких лет?",
-   "en": "Cuphead is hand-drawn in the style of cartoons from which decade?"
+   "ru": "Крипер из Minecraft появился случайно: Нотч перепутал размеры, делая модель другого существа. Какого?",
+   "en": "Minecraft's creeper was an accident: Notch mixed up the sizes while modelling another creature. Which one?"
   },
   "options": [
    {
-    "ru": "1960-х",
-    "en": "The 1960s"
+    "ru": "Свиньи",
+    "en": "A pig"
    },
    {
-    "ru": "1980-х",
-    "en": "The 1980s"
+    "ru": "Коровы",
+    "en": "A cow"
    },
    {
-    "ru": "1930-х",
-    "en": "The 1930s"
+    "ru": "Курицы",
+    "en": "A chicken"
    },
    {
-    "ru": "2000-х",
-    "en": "The 2000s"
+    "ru": "Овцы",
+    "en": "A sheep"
    }
   ],
-  "correct": 2,
+  "correct": 0,
   "fact": {
-   "ru": "Анимацию рисовали от руки, фоны — акварелью, а чтобы закончить игру, братья Молденхауэр перезаложили свой дом.",
-   "en": "The animation was drawn by hand and the backgrounds painted in watercolour; to finish it, the Moldenhauer brothers remortgaged their house."
+   "ru": "Вместо короткой свиньи вышло высокое существо на четырёх ножках. Нотч сделал его зелёным и злым и оставил в игре.",
+   "en": "Instead of a short pig he got a tall creature on four little legs; Notch made it green and hostile and kept it."
   },
-  "source": "https://en.wikipedia.org/wiki/Cuphead",
+  "source": "https://en.wikipedia.org/wiki/Creeper_(Minecraft)",
+  "basedOn": "games_new_001",
+  "refine": "rewrite",
+  "id": "cur_games_new_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "За что птицы в Angry Birds так злы на свиней?",
+   "en": "Why are the birds in Angry Birds so angry with the pigs?"
+  },
+  "options": [
+   {
+    "ru": "Свиньи украли их яйца",
+    "en": "The pigs stole their eggs"
+   },
+   {
+    "ru": "Свиньи заняли их гнездо",
+    "en": "The pigs took their nest"
+   },
+   {
+    "ru": "Свиньи съели их зерно",
+    "en": "The pigs ate their grain"
+   },
+   {
+    "ru": "Свиньи смеялись над ними",
+    "en": "The pigs laughed at them"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По одной из версий, свиней подсказала эпидемия свиного гриппа 2009 года. А до этого хита Rovio сделала 51 игру на заказ.",
+   "en": "One theory says the 2009 swine flu outbreak inspired the pigs. Before this hit, Rovio had made 51 games for other publishers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Angry_Birds_(video_game)",
+  "basedOn": "games_new_003",
+  "refine": "rewrite",
+  "id": "cur_games_new_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В гонках Mario Kart синий панцирь сам летит к одному гонщику. К какому?",
+   "en": "In Mario Kart races the blue shell homes in on one racer. Which one?"
+  },
+  "options": [
+   {
+    "ru": "К лидеру гонки",
+    "en": "The race leader"
+   },
+   {
+    "ru": "К ближайшему сопернику",
+    "en": "The nearest rival"
+   },
+   {
+    "ru": "К тому, кто последний",
+    "en": "Whoever is last"
+   },
+   {
+    "ru": "К случайному гонщику",
+    "en": "A random racer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его добавили в Mario Kart 64, чтобы «все были в гонке до самого конца». Критики прозвали его «синим панцирем смерти».",
+   "en": "It was added in Mario Kart 64 so that 'everyone was in it until the end'. Critics nicknamed it the 'Blue Shell of Death'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spiny_Shell",
   "basedOn": null,
-  "refine": "new"
+  "refine": "new",
+  "id": "cur_games_new_25"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "GTA — это Grand Theft Auto. Что значат эти слова?",
+   "en": "GTA stands for Grand Theft Auto. What do the words mean?"
+  },
+  "options": [
+   {
+    "ru": "Угон машины",
+    "en": "Car theft"
+   },
+   {
+    "ru": "Великий автопробег",
+    "en": "The great road trip"
+   },
+   {
+    "ru": "Гонки по большому городу",
+    "en": "Big city racing"
+   },
+   {
+    "ru": "Автомобильная мафия",
+    "en": "The car mafia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это термин из законов США. «Grand theft» — крупная кража, в отличие от мелкой, а вовсе не что-то «великое».",
+   "en": "It is a US legal term: 'grand theft' is a major theft, as opposed to petty theft, not something 'grand'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Grand_theft",
+  "basedOn": "games_new_004",
+  "refine": "rewrite",
+  "id": "cur_games_new_14"
  },
  {
   "id": "cur_games_new_04",
@@ -210,41 +315,6 @@
   "refine": "rewrite"
  },
  {
-  "id": "cur_games_new_07",
-  "format": "multipleChoice",
-  "difficulty": "medium",
-  "text": {
-   "ru": "Инди-игра Undertale прославилась тем, что её можно пройти…",
-   "en": "The indie game Undertale became famous because you can finish it..."
-  },
-  "options": [
-   {
-    "ru": "вдвоём на одной клавиатуре",
-    "en": "two players on one keyboard"
-   },
-   {
-    "ru": "не выходя из одной комнаты",
-    "en": "without leaving one room"
-   },
-   {
-    "ru": "одной только мышкой",
-    "en": "using only the mouse"
-   },
-   {
-    "ru": "никого не убив",
-    "en": "without killing anyone"
-   }
-  ],
-  "correct": 3,
-  "fact": {
-   "ru": "С любым монстром можно договориться и пощадить его. Тоби Фокс сделал игру почти в одиночку на 51 тысячу долларов с Kickstarter.",
-   "en": "Any monster can be talked down and spared. Toby Fox made the game almost alone, on $51,000 raised on Kickstarter."
-  },
-  "source": "https://en.wikipedia.org/wiki/Undertale",
-  "basedOn": "games_new_038",
-  "refine": "rewrite"
- },
- {
   "id": "cur_games_new_08",
   "format": "multipleChoice",
   "difficulty": "medium",
@@ -280,38 +350,302 @@
   "refine": "new"
  },
  {
-  "id": "cur_games_new_09",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем Nintendo специально покрыла картриджи для Switch?",
+   "en": "What did Nintendo deliberately coat Switch game cards with?"
+  },
+  "options": [
+   {
+    "ru": "Горьким веществом",
+    "en": "A bitter substance"
+   },
+   {
+    "ru": "Клубничным ароматом",
+    "en": "Strawberry scent"
+   },
+   {
+    "ru": "Светящейся краской",
+    "en": "Glow-in-the-dark paint"
+   },
+   {
+    "ru": "Магнитным слоем",
+    "en": "A magnetic layer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Картриджи крошечные, и горечь (денатониум бензоат) отбивает у малышей желание их проглотить.",
+   "en": "The cards are tiny, and the bitter coating (denatonium benzoate) stops small children from swallowing them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nintendo_Switch",
+  "basedOn": "games_new_017",
+  "refine": "same",
+  "id": "cur_games_new_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2005 году в World of Warcraft вспыхнула виртуальная чума. Кого она заинтересовала?",
+   "en": "In 2005 a virtual plague broke out in World of Warcraft. Who got interested?"
+  },
+  "options": [
+   {
+    "ru": "Эпидемиологов",
+    "en": "Epidemiologists"
+   },
+   {
+    "ru": "Ветеринаров",
+    "en": "Vets"
+   },
+   {
+    "ru": "Экономистов",
+    "en": "Economists"
+   },
+   {
+    "ru": "Метеорологов",
+    "en": "Meteorologists"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Заклинание «Порченая кровь» вырвалось из подземелья через питомцев и выкосило города — учёные изучали, как вели себя игроки.",
+   "en": "The Corrupted Blood spell escaped a dungeon via pets and wiped out cities; scientists studied how players behaved."
+  },
+  "source": "https://en.wikipedia.org/wiki/Corrupted_Blood_incident",
+  "basedOn": "games_new_018",
+  "refine": "rewrite",
+  "id": "cur_games_new_16"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Для кого программист Джош Уордл придумал игру Wordle?",
+   "en": "Who did programmer Josh Wardle originally make Wordle for?"
+  },
+  "options": [
+   {
+    "ru": "Для своей девушки",
+    "en": "For his girlfriend"
+   },
+   {
+    "ru": "Для своей мамы",
+    "en": "For his mum"
+   },
+   {
+    "ru": "Для своих учеников",
+    "en": "For his students"
+   },
+   {
+    "ru": "Для своих коллег",
+    "en": "For his colleagues"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Название — игра слов: word и его фамилия Wardle. В 2022 году игру купила The New York Times больше чем за миллион долларов.",
+   "en": "The name puns on 'word' and his surname, Wardle. In 2022 The New York Times bought it for over a million dollars."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wordle",
+  "basedOn": "games_new_022",
+  "refine": "rewrite",
+  "id": "cur_games_new_17"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто сделал ферму-хит Stardew Valley: код, рисунки, музыку и все тексты?",
+   "en": "Who made the farming hit Stardew Valley: the code, art, music and all the writing?"
+  },
+  "options": [
+   {
+    "ru": "Один человек",
+    "en": "One man"
+   },
+   {
+    "ru": "Семейная пара",
+    "en": "A married couple"
+   },
+   {
+    "ru": "Два брата",
+    "en": "Two brothers"
+   },
+   {
+    "ru": "Студия из 50 человек",
+    "en": "A 50-person studio"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эрик Барон пять лет делал её в одиночку: программировал, рисовал пиксели, сочинял музыку и диалоги.",
+   "en": "Eric Barone spent five years making it alone: the programming, the pixel art, the music and the dialogue."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stardew_Valley",
+  "basedOn": "games_new_021",
+  "refine": "rewrite",
+  "id": "cur_games_new_18"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2006 году Nintendo заменила 3,2 миллиона ремешков на пультах Wii. Почему?",
+   "en": "In 2006 Nintendo replaced 3.2 million wrist straps on Wii remotes. Why?"
+  },
+  "options": [
+   {
+    "ru": "Пульты вылетали из рук",
+    "en": "Remotes flew out of hands"
+   },
+   {
+    "ru": "Ремешки натирали кожу",
+    "en": "The straps chafed the skin"
+   },
+   {
+    "ru": "Краска на них линяла",
+    "en": "Their dye ran"
+   },
+   {
+    "ru": "Они пахли резиной",
+    "en": "They smelled of rubber"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Игроки махали так азартно, что шнурок рвался, и пульт летел в телевизор. Новый шнурок сделали заметно толще.",
+   "en": "Players swung so hard that the cord snapped and the remote flew into the TV. The new cord was much thicker."
+  },
+  "source": "https://www.insurancejournal.com/news/national/2006/12/18/75146.htm",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_games_new_19"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "До «королевской битвы» Fortnite была другой игрой. Что в ней нужно было делать?",
+   "en": "Before battle royale, Fortnite was a different game. What did you do in it?"
+  },
+  "options": [
+   {
+    "ru": "Строить форты против монстров",
+    "en": "Build forts against monsters"
+   },
+   {
+    "ru": "Угонять машины в большом городе",
+    "en": "Steal cars in a big city"
+   },
+   {
+    "ru": "Решать головоломки в замке",
+    "en": "Solve puzzles in a castle"
+   },
+   {
+    "ru": "Ухаживать за питомцами",
+    "en": "Look after pets"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Сражение с Бурей» анонсировали ещё в 2011 году и делали годами, а «королевскую битву» по мотивам PUBG собрали за два месяца.",
+   "en": "Save the World was announced back in 2011 and took years; the battle royale, inspired by PUBG, was built in about two months."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fortnite",
+  "basedOn": "games_new_016",
+  "refine": "rewrite",
+  "id": "cur_games_new_20"
+ },
+ {
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "ВВС США собрали суперкомпьютер из PlayStation 3. Сколько приставок в нём было?",
-   "en": "The US Air Force built a supercomputer out of PlayStation 3s. How many consoles did it use?"
+   "ru": "Чемпион мира по Fortnite 2019 года выиграл 3 млн $ — больше, чем Тайгер Вудс за Masters того года. Сколько ему было лет?",
+   "en": "The 2019 Fortnite world champion won $3 million, more than Tiger Woods got for that year's Masters. How old was he?"
   },
-  "answer": 1760,
+  "answer": 16,
   "range": [
    0,
-   5000
+   60
   ],
-  "step": 20,
-  "tolerance": 400,
+  "step": 1,
+  "tolerance": 8,
   "unit": {
-   "ru": "приставок",
-   "en": "consoles"
+   "ru": "лет",
+   "en": "years old"
   },
   "fact": {
-   "ru": "Около 1760. «Кондор» 2010 года стоил около $2 млн, раз в десять дешевле обычной машины такой же мощности.",
-   "en": "About 1,760. The 2010 Condor cost about $2 million, roughly a tenth of a normal machine with the same power."
+   "ru": "Кайлу «Bugha» Гирсдорфу было 16. Тайгер Вудс за победу в Masters того же года получил 2,07 млн долларов.",
+   "en": "Kyle 'Bugha' Giersdorf was 16. Tiger Woods got $2.07 million for winning that year's Masters."
   },
-  "source": "https://www.airandspaceforces.com/afrlunveilscondorclustersupercomputer",
-  "basedOn": "games_new_045",
-  "refine": "rewrite"
+  "source": "https://en.wikipedia.org/wiki/Kyle_Giersdorf",
+  "basedOn": "games_new_049",
+  "refine": "rewrite",
+  "id": "cur_games_new_21"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Автор Flappy Bird в 2014 году удалил игру, хотя реклама в ней приносила ему в день… Сколько тысяч долларов?",
+   "en": "In 2014 the maker of Flappy Bird deleted it, though its ads earned him how many thousand dollars a day?"
+  },
+  "answer": 50,
+  "range": [
+   0,
+   500
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "тыс. $",
+   "en": "thousand $"
+  },
+  "fact": {
+   "ru": "Около 50 тысяч в день. Донг Нгуен сказал, что игра слишком затягивает, а чувство вины мешало ему спать.",
+   "en": "About $50,000 a day. Dong Nguyen said the game had become too addictive, and guilt was costing him sleep."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flappy_Bird",
+  "basedOn": "games_new_043",
+  "refine": "rewrite",
+  "id": "cur_games_new_22"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Disney купила «Звёздные войны» вместе с Lucasfilm за 4 млрд долларов. За сколько Microsoft в 2014 году купила Minecraft?",
+   "en": "Disney bought Star Wars, with Lucasfilm, for $4 billion. How much did Microsoft pay for Minecraft in 2014?"
+  },
+  "answer": 2.5,
+  "range": [
+   0,
+   10
+  ],
+  "step": 0.1,
+  "tolerance": 0.8,
+  "unit": {
+   "ru": "млрд $",
+   "en": "billion $"
+  },
+  "fact": {
+   "ru": "2,5 млрд — больше половины цены «Звёздных войн» за игру, первую версию которой Нотч в 2009 году написал один.",
+   "en": "$2.5 billion, more than half the price of Star Wars, for a game whose first version Notch wrote alone in 2009."
+  },
+  "source": "https://en.wikipedia.org/wiki/Minecraft",
+  "basedOn": "games_new_040",
+  "refine": "rewrite",
+  "id": "cur_games_new_26"
  },
  {
   "id": "cur_games_new_10",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "Шутер Duke Nukem Forever анонсировали в 1997 году. Сколько лет его делали до выхода?",
+   "ru": "Шутер Duke Nukem Forever («навсегда») анонсировали в 1997 году. Сколько лет его делали до выхода?",
    "en": "The shooter Duke Nukem Forever was announced in 1997. How many years did it take to come out?"
   },
   "answer": 14,

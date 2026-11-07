@@ -1,50 +1,15 @@
 [
  {
-  "id": "cur_misconceptions_01",
-  "format": "multipleChoice",
-  "difficulty": "easy",
-  "text": {
-   "ru": "Какую часть своего мозга использует человек?",
-   "en": "How much of their brain does a person use?"
-  },
-  "options": [
-   {
-    "ru": "Около 10%",
-    "en": "About 10%"
-   },
-   {
-    "ru": "Около трети",
-    "en": "About a third"
-   },
-   {
-    "ru": "Около половины",
-    "en": "About half"
-   },
-   {
-    "ru": "Почти весь",
-    "en": "Nearly all of it"
-   }
-  ],
-  "correct": 3,
-  "fact": {
-   "ru": "За день работают все отделы мозга, а повреждение почти любого участка что-то нарушает. Миф о 10% разнесли книги о саморазвитии.",
-   "en": "Over a day every part of the brain is at work, and damage to almost any area causes problems. Self-help books spread the 10% myth."
-  },
-  "source": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth",
-  "basedOn": "misconceptions_004",
-  "refine": "rewrite"
- },
- {
   "id": "cur_misconceptions_02",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Помогает ли рюмка водки согреться на морозе?",
-   "en": "Does a shot of vodka help you warm up in the frost?"
+   "ru": "Помогает ли глоток спиртного согреться на морозе?",
+   "en": "Does a drink of alcohol help you warm up in the frost?"
   },
   "options": [
    {
-    "ru": "Да, она греет изнутри",
+    "ru": "Да, греет изнутри",
     "en": "Yes, it warms you from inside"
    },
    {
@@ -105,6 +70,146 @@
   "refine": "new"
  },
  {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто такой Франкенштейн в романе Мэри Шелли?",
+   "en": "Who is Frankenstein in Mary Shelley's novel?"
+  },
+  "options": [
+   {
+    "ru": "Чудовище",
+    "en": "The monster"
+   },
+   {
+    "ru": "Учёный, создавший чудовище",
+    "en": "The scientist who made it"
+   },
+   {
+    "ru": "Горбатый помощник",
+    "en": "The hunchbacked assistant"
+   },
+   {
+    "ru": "Замок, где всё случилось",
+    "en": "The castle where it happens"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Франкенштейн — это Виктор, учёный. У его создания в книге вообще нет имени, а горбатый помощник появился только в пьесах и кино.",
+   "en": "Frankenstein is Victor, the scientist. His creature has no name in the book; the hunchbacked helper came later, on stage and screen."
+  },
+  "source": "https://en.wikipedia.org/wiki/Frankenstein",
+  "basedOn": "misconceptions_011",
+  "refine": "same",
+  "id": "cur_misconceptions_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько пауков в среднем проглатывает спящий человек за год?",
+   "en": "How many spiders does a sleeping person swallow in a year, on average?"
+  },
+  "options": [
+   {
+    "ru": "Около восьми",
+    "en": "About eight"
+   },
+   {
+    "ru": "Около двух",
+    "en": "About two"
+   },
+   {
+    "ru": "Около двадцати",
+    "en": "About twenty"
+   },
+   {
+    "ru": "Почти ни одного",
+    "en": "Almost none"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Для паука дышащий, сопящий человек — огромная вибрирующая гора, и он держится от неё подальше.",
+   "en": "To a spider a breathing, snoring sleeper is a huge vibrating mountain, so it keeps well away."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics",
+  "basedOn": "misconceptions_012",
+  "refine": "rewrite",
+  "id": "cur_misconceptions_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какие цвета видит собака?",
+   "en": "What colours can a dog see?"
+  },
+  "options": [
+   {
+    "ru": "Только чёрный и белый",
+    "en": "Only black and white"
+   },
+   {
+    "ru": "В основном синие и жёлтые",
+    "en": "Mostly blues and yellows"
+   },
+   {
+    "ru": "Все, как человек",
+    "en": "All of them, like us"
+   },
+   {
+    "ru": "Только оттенки красного",
+    "en": "Only shades of red"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "У собак два вида колбочек вместо наших трёх, поэтому красный и зелёный для них почти одинаковы.",
+   "en": "Dogs have two kinds of colour cones instead of our three, so red and green look almost the same to them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dog#Senses",
+  "basedOn": "misconceptions_005",
+  "refine": "same",
+  "id": "cur_misconceptions_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Может ли у сороконожки быть ровно 40 ног?",
+   "en": "In Russian a centipede is a 'forty-legs'. Can one have exactly 40 legs?"
+  },
+  "options": [
+   {
+    "ru": "Да, у всех ровно 40",
+    "en": "Yes, all have exactly 40"
+   },
+   {
+    "ru": "Да, у некоторых видов",
+    "en": "Yes, some species do"
+   },
+   {
+    "ru": "Только у молодых",
+    "en": "Only the young ones"
+   },
+   {
+    "ru": "Нет, такого не бывает",
+    "en": "No, that never happens"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Пар ног у сороконожек всегда нечётное число, от 15 до 191, а 40 ног — это 20 пар. Ровно сотни ног, как обещает английское centipede, тоже не бывает.",
+   "en": "Centipedes always have an odd number of leg pairs, 15 to 191, and 40 legs would be 20 pairs. Nor exactly 100, despite the English name."
+  },
+  "source": "https://en.wikipedia.org/wiki/Centipede",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_misconceptions_23"
+ },
+ {
   "id": "cur_misconceptions_04",
   "format": "multipleChoice",
   "difficulty": "medium",
@@ -122,8 +227,8 @@
     "en": "Made thick at the bottom against wind"
    },
    {
-    "ru": "Их ставили толстым краем вниз",
-    "en": "They were set thick edge down"
+    "ru": "Листы выходили неровными",
+    "en": "The panes came out uneven"
    },
    {
     "ru": "Снизу нарастал слой грязи",
@@ -202,8 +307,8 @@
   ],
   "correct": 0,
   "fact": {
-   "ru": "Ёж с яблоками на иголках — выдумка Плиния Старшего почти 2000-летней давности. А главная еда ежа — дождевые черви.",
-   "en": "The hedgehog carrying apples on its spines is a tale from Pliny the Elder, almost 2,000 years old. Its main food is earthworms."
+   "ru": "Ежа, который собирает на иголки виноград, описал ещё Плиний Старший почти 2000 лет назад. А главная еда ежа — дождевые черви.",
+   "en": "Pliny the Elder described hedgehogs gathering grapes on their spines almost 2,000 years ago. Their main food is earthworms."
   },
   "source": "https://en.wikipedia.org/wiki/European_hedgehog",
   "basedOn": "misconceptions_035",
@@ -280,57 +385,286 @@
   "refine": "same"
  },
  {
-  "id": "cur_misconceptions_09",
-  "format": "closestValue",
-  "difficulty": "hard",
+  "format": "multipleChoice",
+  "difficulty": "medium",
   "text": {
-   "ru": "Говорят, ленивцы спят по 15–20 часов в сутки. Сколько часов в сутки спит ленивец на воле?",
-   "en": "Sloths are said to sleep 15 to 20 hours a day. How many hours a day does a wild sloth sleep?"
+   "ru": "Зачем британцы в войну рассказывали, что морковь помогает видеть в темноте?",
+   "en": "Why did the British claim in the war that carrots help you see in the dark?"
   },
-  "answer": 9.6,
-  "range": [
-   0,
-   24
+  "options": [
+   {
+    "ru": "Чтобы скрыть радары",
+    "en": "To hide their use of radar"
+   },
+   {
+    "ru": "Так доказали врачи",
+    "en": "Doctors had proven it"
+   },
+   {
+    "ru": "Чтобы продать морковь Франции",
+    "en": "To sell carrots to France"
+   },
+   {
+    "ru": "Из-за опечатки в газете",
+    "en": "Because of a newspaper typo"
+   }
   ],
-  "step": 0.1,
-  "tolerance": 3,
-  "unit": {
-   "ru": "ч",
-   "en": "h"
-  },
+  "correct": 0,
   "fact": {
-   "ru": "Около 9,6 часа: так показали датчики на диких ленивцах в Панаме. А 16 часов в сутки ленивцы спали в неволе.",
-   "en": "About 9.6 hours, said sensors on wild sloths in Panama. The famous 16 hours came from sloths in captivity."
+   "ru": "Успехи ночного аса Джона Каннингема объясняли морковкой, чтобы немцы не узнали о бортовом радаре.",
+   "en": "Night ace John Cunningham's kills were put down to carrots, so the Germans would not learn of airborne radar."
   },
-  "source": "https://www.mpg.de/567312/pressRelease20080521",
-  "basedOn": null,
-  "refine": "new"
+  "source": "https://en.wikipedia.org/wiki/John_Cunningham_(RAF_officer)",
+  "basedOn": "misconceptions_032",
+  "refine": "same",
+  "id": "cur_misconceptions_15"
  },
  {
-  "id": "cur_misconceptions_10",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Врач больше 50 лет хрустел пальцами только на левой руке. Что он выяснил?",
+   "en": "A doctor cracked the knuckles of only his left hand for over 50 years. What did he find?"
+  },
+  "options": [
+   {
+    "ru": "Артрит в левой руке",
+    "en": "Arthritis in the left hand"
+   },
+   {
+    "ru": "Артрит в обеих руках",
+    "en": "Arthritis in both hands"
+   },
+   {
+    "ru": "Разницы между руками нет",
+    "en": "No difference between hands"
+   },
+   {
+    "ru": "Левая рука стала больше",
+    "en": "The left hand grew bigger"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Дональд Унгер получил за этот опыт Шнобелевскую премию 2009 года: хруст даёт газ в суставной жидкости.",
+   "en": "Donald Unger won a 2009 Ig Nobel Prize for it: the crack comes from gas in the joint fluid."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cracking_joints",
+  "basedOn": "misconceptions_026",
+  "refine": "same",
+  "id": "cur_misconceptions_16"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В машину ударила молния, а люди внутри остались целы. Что их спасло?",
+   "en": "Lightning struck a car, yet the people inside were unhurt. What saved them?"
+  },
+  "options": [
+   {
+    "ru": "Резиновые шины",
+    "en": "The rubber tyres"
+   },
+   {
+    "ru": "Металлический кузов",
+    "en": "The metal body"
+   },
+   {
+    "ru": "Антенна-громоотвод",
+    "en": "The aerial, as a lightning rod"
+   },
+   {
+    "ru": "Тонированные стёкла",
+    "en": "The tinted windows"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Ток бежит по металлической оболочке в землю. Пара сантиметров резины не остановит разряд, пробивший километры воздуха.",
+   "en": "The current runs over the metal shell into the ground. An inch of rubber cannot stop a bolt that crossed miles of air."
+  },
+  "source": "https://en.wikipedia.org/wiki/Faraday_cage",
+  "basedOn": "misconceptions_038",
+  "refine": "rewrite",
+  "id": "cur_misconceptions_17"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какими словами Дарт Вейдер открывает Люку, что он его отец?",
+   "en": "With what words does Darth Vader tell Luke he is his father?"
+  },
+  "options": [
+   {
+    "ru": "«Люк, я твой отец»",
+    "en": "'Luke, I am your father'"
+   },
+   {
+    "ru": "«Нет, я твой отец»",
+    "en": "'No, I am your father'"
+   },
+   {
+    "ru": "«Я твой отец, Люк»",
+    "en": "'I am your father, Luke'"
+   },
+   {
+    "ru": "«Люк, я твой папа»",
+    "en": "'Luke, I'm your dad'"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Вейдер перебивает Люка, который кричит, что Вейдер убил его отца. Имени «Люк» в этой реплике нет.",
+   "en": "Vader is answering Luke's cry that he killed his father. The name Luke is not in the line at all."
+  },
+  "source": "https://en.wikiquote.org/wiki/Star_Wars_Episode_V:_The_Empire_Strikes_Back",
+  "basedOn": "misconceptions_034",
+  "refine": "rewrite",
+  "id": "cur_misconceptions_18"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Учёные отговаривали Колумба от плавания на запад. О чём они с ним спорили?",
+   "en": "Scholars tried to talk Columbus out of sailing west. What did they argue about?"
+  },
+  "options": [
+   {
+    "ru": "Круглая ли Земля",
+    "en": "Whether the Earth is round"
+   },
+   {
+    "ru": "Насколько велика Земля",
+    "en": "How big the Earth is"
+   },
+   {
+    "ru": "Водятся ли в океане чудища",
+    "en": "Whether sea monsters exist"
+   },
+   {
+    "ru": "Существует ли Индия",
+    "en": "Whether India exists"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Что Земля шар, образованные люди знали с античности. Колумб считал её куда меньше, и правы были учёные.",
+   "en": "Educated people had known the Earth was round since antiquity. Columbus thought it much smaller, and the scholars were right."
+  },
+  "source": "https://en.wikipedia.org/wiki/Myth_of_the_flat_Earth",
+  "basedOn": "misconceptions_022",
+  "refine": "rewrite",
+  "id": "cur_misconceptions_19"
+ },
+ {
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "Алмазы — не сжатый уголь, и рождаются они глубже земной коры. На какой глубине, в км?",
-   "en": "Diamonds are not squeezed coal, and they form below the Earth's crust. How deep, in km?"
+   "ru": "Говорят, в Средние века умирали к 30–40 годам. До скольких лет доживал знатный англичанин, которому исполнился 21?",
+   "en": "They say medieval people died at 30 to 40. A medieval English noble who reached 21 could expect to live to what age?"
   },
-  "answer": 200,
+  "answer": 64,
   "range": [
    0,
-   600
+   100
   ],
-  "step": 5,
-  "tolerance": 60,
+  "step": 1,
+  "tolerance": 8,
   "unit": {
-   "ru": "км",
-   "en": "km"
+   "ru": "лет",
+   "en": "years"
   },
   "fact": {
-   "ru": "Большинство — на 150–250 км, в мантии. Им 1–3,5 млрд лет: они старше первых наземных растений, из которых берётся уголь.",
-   "en": "Most form 150 to 250 km down, in the mantle. They are 1 to 3.5 billion years old, older than the land plants that coal comes from."
+   "ru": "До 64 лет. Низкий средний возраст смерти тянула вниз детская смертность, а взрослые часто доживали до старости.",
+   "en": "To 64. The famous low average was dragged down by deaths of children; adults often lived to old age."
   },
-  "source": "https://en.wikipedia.org/wiki/Diamond",
-  "basedOn": "misconceptions_044",
+  "source": "https://en.wikipedia.org/wiki/Life_expectancy",
+  "basedOn": "misconceptions_046",
+  "refine": "rewrite",
+  "id": "cur_misconceptions_24"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Говорят, год собаки — как семь человеческих. А годовалая собака среднего размера — как человек скольких лет?",
+   "en": "They say one dog year is seven human years. So a one-year-old medium-sized dog is like a human of what age?"
+  },
+  "answer": 15,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Около 15 лет, считают ветеринары. Правило «год за семь» не работает: собаки быстро взрослеют в первые два года, а потом стареют медленнее.",
+   "en": "About 15, vets say. The one-for-seven rule fails: dogs grow up fast in their first two years and age more slowly after that."
+  },
+  "source": "https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/",
+  "basedOn": "misconceptions_041",
+  "refine": "rewrite",
+  "id": "cur_misconceptions_20"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Говорят, без шапки тело теряет половину тепла. Какой процент тепла на самом деле уходит через голову?",
+   "en": "They say you lose half your heat without a hat. What percent of body heat really escapes through the head?"
+  },
+  "answer": 10,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "Около десятой части. Голова — лишь 7–9% поверхности тела, и тепла она теряет не больше, чем любой участок кожи такой же площади.",
+   "en": "About a tenth. The head is only 7 to 9% of the body's surface, and loses no more heat than any patch of skin that size."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics",
+  "basedOn": "misconceptions_048",
+  "refine": "rewrite",
+  "id": "cur_misconceptions_21"
+ },
+ {
+  "id": "cur_misconceptions_22",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Пустыня — это море песка? Сколько процентов площади пустынь мира на самом деле покрыто песком?",
+   "en": "Deserts are seas of sand? What percent of the world's desert area is actually covered by sand?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "Около 20%: ветер выдувает песчинки и оставляет каменистые равнины. В пустынях Северной Америки песка около 2%, в Центральной Азии — больше 45%.",
+   "en": "About 20%: wind blows the grains away and leaves stony plains. North American deserts are about 2% sand, Central Asian ones over 45%."
+  },
+  "source": "https://en.wikipedia.org/wiki/Desert",
+  "basedOn": "misconceptions_045",
   "refine": "rewrite"
  }
 ]

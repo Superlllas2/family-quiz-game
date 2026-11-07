@@ -36,76 +36,179 @@
   "refine": "rewrite"
  },
  {
-  "id": "cur_crime_02",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Пуаро говорит по-французски, но он не француз. Откуда же он родом?",
-   "en": "Poirot speaks French, but he is not French. Where does he come from?"
+   "ru": "По рассказам Фрэнка Абигнейла сняли фильм «Поймай меня, если сможешь». Что потом выяснили журналисты?",
+   "en": "Frank Abagnale's stories became the film Catch Me If You Can. What did journalists later find out?"
   },
   "options": [
    {
-    "ru": "Из Швейцарии",
-    "en": "Switzerland"
+    "ru": "Почти всё он выдумал",
+    "en": "He made most of it up"
    },
    {
-    "ru": "Из Люксембурга",
-    "en": "Luxembourg"
+    "ru": "Всё было правдой",
+    "en": "It was all true"
    },
    {
-    "ru": "Из Монако",
-    "en": "Monaco"
+    "ru": "Он был ещё и шпионом",
+    "en": "He was a spy as well"
    },
    {
-    "ru": "Из Бельгии",
-    "en": "Belgium"
+    "ru": "Он вернул все деньги",
+    "en": "He paid all the money back"
    }
   ],
-  "correct": 3,
+  "correct": 0,
   "fact": {
-   "ru": "Когда в 1975 году вышел роман о его смерти, The New York Times дала некролог Пуаро на первой полосе — такой чести не удостоился больше ни один герой книг.",
-   "en": "When the novel of his death came out in 1975, The New York Times ran Poirot's obituary on its front page, an honour no other fictional character got."
+   "ru": "Он говорил, что выдавал себя за пилота, врача и юриста. Но в те годы он в основном сидел в тюрьме: аферист обманул и биографов.",
+   "en": "He said he had posed as a pilot, a doctor and a lawyer. But in those years he was mostly in prison: the con man conned his biographers too."
   },
-  "source": "https://en.wikipedia.org/wiki/Hercule_Poirot",
-  "kids": false,
-  "basedOn": "crime_003",
+  "source": "https://en.wikipedia.org/wiki/Frank_Abagnale",
+  "basedOn": "crime_006",
+  "refine": "rewrite",
+  "id": "cur_crime_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1925 году аферист Виктор Люстиг «продал» торговцу металлоломом знаменитое сооружение. Какое?",
+   "en": "In 1925 con man Victor Lustig 'sold' a famous structure to a scrap metal dealer. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Эйфелеву башню",
+    "en": "The Eiffel Tower"
+   },
+   {
+    "ru": "Статую Свободы",
+    "en": "The Statue of Liberty"
+   },
+   {
+    "ru": "Бруклинский мост",
+    "en": "Brooklyn Bridge"
+   },
+   {
+    "ru": "Тауэрский мост",
+    "en": "Tower Bridge"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он выдал себя за чиновника министерства. Обманутый покупатель постыдился идти в полицию, и Люстиг попробовал «продать» башню ещё раз.",
+   "en": "He posed as a ministry official. The duped buyer was too ashamed to go to the police, so Lustig tried to 'sell' the tower again."
+  },
+  "source": "https://en.wikipedia.org/wiki/Victor_Lustig",
+  "basedOn": "crime_001",
+  "refine": "rewrite",
+  "id": "cur_crime_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Все знают мультяшную Розовую пантеру. А что так называлось в фильме 1963 года, где она впервые появилась?",
+   "en": "Everyone knows the cartoon Pink Panther. What had that name in the 1963 film where it first appeared?"
+  },
+  "options": [
+   {
+    "ru": "Огромный бриллиант",
+    "en": "A huge diamond"
+   },
+   {
+    "ru": "Кошка принцессы",
+    "en": "The princess's cat"
+   },
+   {
+    "ru": "Прозвище вора",
+    "en": "The thief's nickname"
+   },
+   {
+    "ru": "Гоночная машина",
+    "en": "A racing car"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Внутри камня был изъян, похожий на прыгающую пантеру. Мультяшная пантера появилась только в титрах.",
+   "en": "The stone had a flaw that looked like a leaping panther. The cartoon panther appeared only in the credits."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Pink_Panther_(1963_film)",
+  "basedOn": "crime_002",
+  "refine": "rewrite",
+  "id": "cur_crime_12"
+ },
+ {
+  "id": "cur_crime_13",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Стокгольмский синдром» — когда заложники сочувствуют захватчику. Где в Стокгольме его впервые заметили?",
+   "en": "'Stockholm syndrome' is when hostages side with their captor. Where in Stockholm was it first seen?"
+  },
+  "options": [
+   {
+    "ru": "При ограблении банка",
+    "en": "In a bank robbery"
+   },
+   {
+    "ru": "При захвате посольства",
+    "en": "In an embassy siege"
+   },
+   {
+    "ru": "При угоне самолёта",
+    "en": "In a plane hijacking"
+   },
+   {
+    "ru": "В городской тюрьме",
+    "en": "In the city prison"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 23 по 28 августа 1973 года грабитель держал заложников в хранилище банка, а они больше боялись штурма полиции, чем его.",
+   "en": "From 23 to 28 August 1973 a robber held hostages in a bank vault, and they feared a police assault more than him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Norrmalmstorg_robbery",
+  "basedOn": "crime_015",
   "refine": "rewrite"
  },
  {
-  "id": "cur_crime_03",
+  "id": "cur_crime_19",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Как называлась банда, которую ловят Жеглов и Шарапов в «Место встречи изменить нельзя»?",
-   "en": "What is the gang that Zheglov and Sharapov hunt in The Meeting Place Cannot Be Changed called?"
+   "ru": "В 2003 году воры вскрыли «неприступное» хранилище алмазов в Антверпене. Что их выдало?",
+   "en": "In 2003 thieves cracked a 'burglar-proof' diamond vault in Antwerp. What gave them away?"
   },
   "options": [
    {
-    "ru": "«Чёрный ворон»",
-    "en": "Black Raven"
+    "ru": "Недоеденный бутерброд",
+    "en": "A half-eaten sandwich"
    },
    {
-    "ru": "«Чёрная кошка»",
-    "en": "Black Cat"
+    "ru": "Штраф за парковку",
+    "en": "A parking ticket"
    },
    {
-    "ru": "«Серый волк»",
-    "en": "Grey Wolf"
+    "ru": "Алмаз на аукционе",
+    "en": "A diamond at auction"
    },
    {
-    "ru": "«Белая стрела»",
-    "en": "White Arrow"
+    "ru": "Забытая перчатка",
+    "en": "A forgotten glove"
    }
   ],
-  "correct": 1,
+  "correct": 0,
   "fact": {
-   "ru": "Прообраз — банда Ивана Митина начала 1950-х: главарь был мастером на оборонном заводе и к аресту был представлен к ордену.",
-   "en": "It was based on Ivan Mitin's gang of the early 1950s: the leader was a foreman at a defence plant, nominated for an order when caught."
+   "ru": "Мусор они выбросили в лесу у трассы Антверпен — Брюссель. Хозяин участка вызвал полицию, а на бутерброде с салями нашли ДНК.",
+   "en": "They dumped their rubbish in woods by the Antwerp to Brussels motorway. The landowner called the police, and a salami sandwich held DNA."
   },
-  "source": "https://ru.wikipedia.org/wiki/%D0%A7%D1%91%D1%80%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0_(%D0%B1%D0%B0%D0%BD%D0%B4%D0%B0)",
-  "kids": false,
-  "basedOn": null,
-  "refine": "new"
+  "source": "https://en.wikipedia.org/wiki/Antwerp_diamond_heist",
+  "basedOn": "crime_022",
+  "refine": "rewrite"
  },
  {
   "id": "cur_crime_04",
@@ -180,40 +283,39 @@
   "refine": "same"
  },
  {
-  "id": "cur_crime_06",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Чарльз Понци обещал вкладчикам +50% за 45 дней. На чём он якобы так зарабатывал?",
-   "en": "Charles Ponzi promised investors 50% in 45 days. What did he claim the profit came from?"
+   "ru": "Эжен Видок вдохновил Гюго и на беглого каторжника Вальжана, и на сыщика Жавера. Кем был сам Видок?",
+   "en": "Eugène Vidocq inspired Hugo's runaway convict Valjean and his detective Javert alike. What was Vidocq himself?"
   },
   "options": [
    {
-    "ru": "На контрабанде виски",
-    "en": "Smuggling whisky"
+    "ru": "Каторжником, ставшим сыщиком",
+    "en": "A convict turned detective"
    },
    {
-    "ru": "На акциях железных дорог",
-    "en": "Railway shares"
+    "ru": "Сыщиком, ставшим каторжником",
+    "en": "A detective turned convict"
    },
    {
-    "ru": "На почтовых купонах",
-    "en": "Postal reply coupons"
+    "ru": "Судьёй, ставшим писателем",
+    "en": "A judge turned writer"
    },
    {
-    "ru": "На золотых приисках",
-    "en": "Gold mines"
+    "ru": "Тюремным священником",
+    "en": "A prison chaplain"
    }
   ],
-  "correct": 2,
+  "correct": 0,
   "fact": {
-   "ru": "Купон, дёшево купленный в Италии, меняли в США на марки подороже. Выгода копеечная: на деле старым вкладчикам платили деньгами новых.",
-   "en": "A coupon bought cheaply in Italy could be swapped for pricier US stamps. A tiny profit: in fact old investors were paid with new ones' money."
+   "ru": "Он бежал с каторги, а потом создал сыскную полицию Сюрте и набирал в неё бывших преступников. Его считают первым частным детективом.",
+   "en": "He escaped from the galleys, then built the Sûreté detective police and staffed it with ex-criminals. He is called the first private detective."
   },
-  "source": "https://en.wikipedia.org/wiki/Charles_Ponzi",
-  "kids": false,
-  "basedOn": "crime_024",
-  "refine": "rewrite"
+  "source": "https://en.wikipedia.org/wiki/Eug%C3%A8ne_Fran%C3%A7ois_Vidocq",
+  "basedOn": "crime_030",
+  "refine": "rewrite",
+  "id": "cur_crime_23"
  },
  {
   "id": "cur_crime_07",
@@ -288,6 +390,181 @@
   "refine": "new"
  },
  {
+  "id": "cur_crime_15",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто на самом деле украл «Мону Лизу» из Лувра в 1911 году?",
+   "en": "Who actually stole the Mona Lisa from the Louvre in 1911?"
+  },
+  "options": [
+   {
+    "ru": "Бывший работник Лувра",
+    "en": "A former Louvre worker"
+   },
+   {
+    "ru": "Директор самого Лувра",
+    "en": "The Louvre's own director"
+   },
+   {
+    "ru": "Английский коллекционер",
+    "en": "An English collector"
+   },
+   {
+    "ru": "Художник Пабло Пикассо",
+    "en": "The painter Pablo Picasso"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Стекольщик Винченцо Перуджа раньше работал в Лувре и помогал делать для картины стекло. Пикассо допрашивали, а люди ходили смотреть на пустую стену.",
+   "en": "Glazier Vincenzo Peruggia had worked at the Louvre and helped make the painting's glass case. Picasso was questioned; crowds came to see the empty wall."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vincenzo_Peruggia",
+  "basedOn": "crime_016",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1926 году пропала Агата Кристи, её искали больше тысячи полицейских. Под чьей фамилией она жила в отеле?",
+   "en": "In 1926 Agatha Christie vanished and over a thousand police searched for her. Whose surname did she use at a hotel?"
+  },
+  "options": [
+   {
+    "ru": "Любовницы мужа",
+    "en": "Her husband's lover's"
+   },
+   {
+    "ru": "Своей горничной",
+    "en": "Her maid's"
+   },
+   {
+    "ru": "Своего издателя",
+    "en": "Her publisher's"
+   },
+   {
+    "ru": "Своей свекрови",
+    "en": "Her mother-in-law's"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её нашли через 11 дней в отеле на водах в Харрогейте. В поисках участвовал даже Конан Дойл: он отдал медиуму её перчатку.",
+   "en": "She was found 11 days later at a spa hotel in Harrogate. Even Conan Doyle joined the search: he gave a medium one of her gloves."
+  },
+  "source": "https://en.wikipedia.org/wiki/Agatha_Christie",
+  "basedOn": "crime_029",
+  "refine": "rewrite",
+  "id": "cur_crime_16"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1906 году немецкий сапожник с отрядом солдат захватил ратушу и забрал кассу. Как он заставил солдат подчиняться?",
+   "en": "In 1906 a German shoemaker took a town hall and its cash with a squad of soldiers. How did he make them obey?"
+  },
+  "options": [
+   {
+    "ru": "Надел мундир капитана",
+    "en": "He wore a captain's uniform"
+   },
+   {
+    "ru": "Назвался сыном кайзера",
+    "en": "He claimed to be the Kaiser's son"
+   },
+   {
+    "ru": "Взял их в заложники",
+    "en": "He held them hostage"
+   },
+   {
+    "ru": "Заплатил им вперёд",
+    "en": "He paid them in advance"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вильгельм Фойгт купил старый мундир по частям. «Капитан из Кёпеника» стал народным героем, и кайзер его помиловал.",
+   "en": "Wilhelm Voigt bought a used uniform piece by piece. 'The Captain of Köpenick' became a folk hero, and the Kaiser pardoned him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wilhelm_Voigt",
+  "basedOn": "crime_020",
+  "refine": "rewrite",
+  "id": "cur_crime_17"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1962 году трое бежали с Алькатраса, оставив в кроватях муляжи голов. Из чего их сделали?",
+   "en": "In 1962 three men escaped Alcatraz, leaving dummy heads in their beds. What were the heads made of?"
+  },
+  "options": [
+   {
+    "ru": "Мыло, бумага и волосы",
+    "en": "Soap, paper and hair"
+   },
+   {
+    "ru": "Глина, нитки и краска",
+    "en": "Clay, thread and paint"
+   },
+   {
+    "ru": "Воск, вата и пуговицы",
+    "en": "Wax, cotton and buttons"
+   },
+   {
+    "ru": "Хлеб, сажа и солома",
+    "en": "Bread, soot and straw"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мыло, зубная паста и туалетная бумага, а волосы — с пола тюремной парикмахерской. Беглецов так и не нашли.",
+   "en": "Soap, toothpaste and toilet paper, with hair from the prison barbershop floor. The three men were never found."
+  },
+  "source": "https://en.wikipedia.org/wiki/June_1962_Alcatraz_escape_attempt",
+  "basedOn": "crime_025",
+  "refine": "rewrite",
+  "id": "cur_crime_18"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Профессор Мориарти — главный враг Шерлока Холмса. В скольких произведениях Конан Дойла он играет роль?",
+   "en": "Professor Moriarty is Sherlock Holmes's arch enemy. In how many of Conan Doyle's stories does he play a part?"
+  },
+  "options": [
+   {
+    "ru": "Всего в двух",
+    "en": "Only two"
+   },
+   {
+    "ru": "В девяти",
+    "en": "Nine"
+   },
+   {
+    "ru": "В двадцати",
+    "en": "Twenty"
+   },
+   {
+    "ru": "Почти во всех",
+    "en": "Almost all of them"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ещё в пяти его лишь упоминают. Главным врагом Холмса его сделали уже позже — пьесы, фильмы и подражатели.",
+   "en": "Five more only mention him. It was later plays, films and imitators that made him Holmes's arch enemy."
+  },
+  "source": "https://en.wikipedia.org/wiki/Professor_Moriarty",
+  "basedOn": "crime_005",
+  "refine": "rewrite",
+  "id": "cur_crime_24"
+ },
+ {
   "id": "cur_crime_09",
   "format": "closestValue",
   "difficulty": "hard",
@@ -320,8 +597,8 @@
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "В 2019 году из дворца Бленхейм украли рабочий унитаз из цельного золота. Сколько кг он весил?",
-   "en": "In 2019 a working toilet made of solid gold was stolen from Blenheim Palace. How many kilograms did it weigh?"
+   "ru": "В 2019 году из дворца Бленхейм, где родился Черчилль, украли рабочий унитаз из золота. Сколько кг он весил?",
+   "en": "In 2019 a working solid gold toilet was stolen from Blenheim Palace, Churchill's birthplace. How many kg did it weigh?"
   },
   "answer": 103,
   "range": [
@@ -339,8 +616,61 @@
    "en": "About 100 kg of 18-carat gold. Visitors could actually use it; the thieves took about 5 minutes, and the gold was probably melted down."
   },
   "source": "https://en.wikipedia.org/wiki/America_(Cattelan)",
-  "kids": false,
   "basedOn": null,
   "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Холмс упрекал Ватсона: тот сотни раз поднимался в их квартиру, но не знает, сколько там ступенек. А сколько?",
+   "en": "Holmes chided Watson: he had climbed to their rooms hundreds of times yet didn't know how many steps. How many?"
+  },
+  "answer": 17,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "ступенек",
+   "en": "steps"
+  },
+  "fact": {
+   "ru": "«Вы смотрите, но не наблюдаете», — говорит Холмс в рассказе «Скандал в Богемии». Сам он насчитал 17.",
+   "en": "'You see, but you do not observe,' says Holmes in A Scandal in Bohemia. He himself had counted 17."
+  },
+  "source": "https://www.gutenberg.org/files/1661/1661-h/1661-h.htm",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_crime_20"
+ },
+ {
+  "id": "cur_crime_21",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 2015 году банда обчистила хранилище в Лондоне. Главаря подозревали в подкопе под банк в 1971-м. Сколько ему было?",
+   "en": "In 2015 a gang raided a London vault. Its ringleader was suspected of a bank tunnel job back in 1971. How old was he?"
+  },
+  "answer": 76,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Брайану Ридеру было 76: самый старший в банде пожилых воров со стажем. По оценке полиции, они унесли ценностей на сумму до 14 млн фунтов.",
+   "en": "Brian Reader was 76, the oldest in a gang of elderly, experienced thieves. Police put the haul at up to £14 million."
+  },
+  "source": "https://en.wikipedia.org/wiki/Brian_Reader_(criminal)",
+  "basedOn": "crime_023",
+  "refine": "rewrite"
  }
 ]

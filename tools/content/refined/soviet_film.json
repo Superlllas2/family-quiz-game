@@ -62,47 +62,152 @@
   ],
   "correct": 3,
   "fact": {
-   "ru": "Фраза стала крылатой. А сам фильм телевизионный: премьера прошла по Первой программе 1 января 1976 года.",
-   "en": "The line became a saying. The film itself was made for TV and premiered on Soviet Channel One on January 1, 1976."
+   "ru": "На роль Ипполита сначала утвердили Олега Басилашвили, и на фото, которое Надя поднимает из снега, остался он: переснять не успели.",
+   "en": "Oleg Basilashvili was cast as Ippolit first, and the photo Nadya picks up from the snow still shows him: there was no time to reshoot."
   },
   "source": "https://ru.wikipedia.org/wiki/Ирония_судьбы,_или_С_лёгким_паром!",
   "basedOn": null,
   "refine": "new"
  },
  {
-  "id": "cur_soviet_film_03",
+  "id": "cur_soviet_film_11",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Зачем Шурик приезжает на Кавказ в «Кавказской пленнице»?",
-   "en": "Why does Shurik come to the Caucasus in Kidnapping, Caucasian Style?"
+   "ru": "Шпак: «Три магнитофона, три кинокамеры заграничных, три портсигара, куртка замшевая…» Сколько курток он назвал?",
+   "en": "Shpak: «Three tape recorders, three foreign cine cameras, three cigarette cases, a suede jacket…» How many jackets?"
   },
   "options": [
    {
-    "ru": "Собирать фольклор",
-    "en": "To collect folklore"
+    "ru": "Три",
+    "en": "Three"
    },
    {
-    "ru": "Искать себе невесту",
-    "en": "To find himself a bride"
+    "ru": "Одна",
+    "en": "One"
    },
    {
-    "ru": "Строить гидростанцию",
-    "en": "To build a power plant"
+    "ru": "Две",
+    "en": "Two"
    },
    {
-    "ru": "Лечить горных овец",
-    "en": "To treat mountain sheep"
+    "ru": "Пять",
+    "en": "Five"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "Худсовет фильм не принял, а спас его Брежнев: попросил показать «что-нибудь новенькое», и комедия вышла в прокат.",
-   "en": "The studio board rejected the film; Brezhnev saved it by asking to see «something new», and the comedy was released."
+   "ru": "Полностью: «…три портсигара отечественных, куртка замшевая… три куртки!» Шпак диктует список украденного и на ходу его раздувает.",
+   "en": "In full: «…three home-made cigarette cases, a suede jacket… three jackets!» Shpak lists what was stolen and inflates it as he goes."
+  },
+  "source": "https://ru.wikiquote.org/wiki/Иван_Васильевич_меняет_профессию",
+  "basedOn": "soviet_film_023",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Кавказская пленница» — комедия о Кавказе. А где снимали большую часть её натуры?",
+   "en": "Kidnapping, Caucasian Style is a comedy about the Caucasus. Where was most of it filmed on location?"
+  },
+  "options": [
+   {
+    "ru": "В Крыму",
+    "en": "In Crimea"
+   },
+   {
+    "ru": "В Дагестане",
+    "en": "In Dagestan"
+   },
+   {
+    "ru": "В Армении",
+    "en": "In Armenia"
+   },
+   {
+    "ru": "В Азербайджане",
+    "en": "In Azerbaijan"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Больше всего сняли в Алуште, погони — на серпантине Ай-Петри, а похищение невесты — на дороге к озеру Рица в Абхазии.",
+   "en": "Most was shot around Alushta, the chases on the Ai-Petri road, and the bride's kidnapping on the road to Lake Ritsa in Abkhazia."
   },
   "source": "https://ru.wikipedia.org/wiki/Кавказская_пленница,_или_Новые_приключения_Шурика",
+  "basedOn": "soviet_film_028",
+  "refine": "rewrite",
+  "id": "cur_soviet_film_23"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Иван Васильевич меняет профессию»: «Икра чёрная, красная… Да! Заморская икра…» Какая?",
+   "en": "Ivan Vasilievich Changes Profession: «Black caviar, red… Yes! Overseas caviar…» What kind?"
+  },
+  "options": [
+   {
+    "ru": "Баклажанная",
+    "en": "Aubergine"
+   },
+   {
+    "ru": "Кабачковая",
+    "en": "Courgette"
+   },
+   {
+    "ru": "Грибная",
+    "en": "Mushroom"
+   },
+   {
+    "ru": "Щучья",
+    "en": "Pike"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Меню царского пира зачитывает дьяк Феофан, его сыграл Савелий Крамаров. Перед икрой там идут «головы щучьи с чесноком».",
+   "en": "The royal feast menu is read by the clerk Feofan, played by Savely Kramarov. Before the caviar come «pike heads with garlic»."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Иван_Васильевич_меняет_профессию",
   "basedOn": null,
-  "refine": "new"
+  "refine": "new",
+  "id": "cur_soviet_film_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой фильм космонавты по традиции смотрят перед стартом?",
+   "en": "Which film do cosmonauts traditionally watch before a launch?"
+  },
+  "options": [
+   {
+    "ru": "«Белое солнце пустыни»",
+    "en": "White Sun of the Desert"
+   },
+   {
+    "ru": "«Солярис»",
+    "en": "Solaris"
+   },
+   {
+    "ru": "«Москва — Кассиопея»",
+    "en": "Moscow to Cassiopeia"
+   },
+   {
+    "ru": "«Ирония судьбы»",
+    "en": "The Irony of Fate"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Говорят, традицию начал экипаж «Союза-12» в 1973 году, а копия фильма хранится даже на МКС.",
+   "en": "The tradition reportedly began with the Soyuz 12 crew in 1973, and a copy of the film is even kept on the ISS."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Белое_солнце_пустыни",
+  "basedOn": "soviet_film_007",
+  "refine": "same",
+  "id": "cur_soviet_film_14"
  },
  {
   "id": "cur_soviet_film_04",
@@ -245,39 +350,214 @@
   "refine": "new"
  },
  {
-  "id": "cur_soviet_film_08",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Какой кремль «сыграл» Московский Кремль XVI века в «Иван Васильевич меняет профессию»?",
-   "en": "Which kremlin played the 16th century Moscow Kremlin in Ivan Vasilievich Changes Profession?"
+   "ru": "В какой стране «Морозко» Александра Роу каждое Рождество показывают по телевизору?",
+   "en": "In which country is Alexander Rou's Morozko shown on TV every Christmas?"
   },
   "options": [
    {
-    "ru": "Новгородский",
-    "en": "Novgorod's"
+    "ru": "В Чехии",
+    "en": "Czechia"
    },
    {
-    "ru": "Казанский",
-    "en": "Kazan's"
+    "ru": "В Италии",
+    "en": "Italy"
    },
    {
-    "ru": "Суздальский",
-    "en": "Suzdal's"
+    "ru": "Во Франции",
+    "en": "France"
    },
    {
-    "ru": "Ростовский",
-    "en": "Rostov Veliky's"
+    "ru": "В Финляндии",
+    "en": "Finland"
    }
   ],
-  "correct": 3,
+  "correct": 0,
   "fact": {
-   "ru": "Ростовский кремль построили в 1670–1680-х, через сто лет после Грозного, и не как крепость, а как резиденцию митрополита.",
-   "en": "Rostov's kremlin was built in the 1670s and 1680s, a century after Ivan the Terrible, as a metropolitan's residence, not a fortress."
+   "ru": "Там сказка зовётся «Мразик», а в США её английский дубляж высмеяли в шоу MST3K.",
+   "en": "There it is called Mrazík, while in the USA its English dub was mocked on Mystery Science Theater 3000."
   },
-  "source": "https://ru.wikipedia.org/wiki/Ростовский_кремль",
-  "basedOn": "soviet_film_029",
+  "source": "https://cs.wikipedia.org/wiki/Mrazík",
+  "basedOn": "soviet_film_018",
+  "refine": "same",
+  "id": "cur_soviet_film_15"
+ },
+ {
+  "id": "cur_soviet_film_16",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Меньшов узнал об «Оскаре» для «Москва слезам не верит» из программы «Время» и решил, что это розыгрыш. Почему?",
+   "en": "Menshov heard on the evening news that Moscow Does Not Believe in Tears had won an Oscar, and took it for a prank. Why?"
+  },
+  "options": [
+   {
+    "ru": "Новость дали 1 апреля",
+    "en": "The news aired on April 1"
+   },
+   {
+    "ru": "Её объявил артист-юморист",
+    "en": "A comedian announced it"
+   },
+   {
+    "ru": "Фильм был снят 10 лет назад",
+    "en": "The film was ten years old"
+   },
+   {
+    "ru": "Советским фильмам «Оскар» не давали",
+    "en": "Soviet films never won Oscars"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Церемония прошла 31 марта, новость вышла в эфир 1 апреля 1981 года. В Америку Меньшова не выпустили, и статуэтку он получил лишь годы спустя.",
+   "en": "The ceremony was on March 31 and the news aired on April 1, 1981. Menshov was not let out to America and got the statuette only years later."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Москва_слезам_не_верит",
+  "basedOn": "soviet_film_006",
   "refine": "rewrite"
+ },
+ {
+  "id": "cur_soviet_film_17",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Сталкер» Тарковского вышел в 1979 году. Где снимали его Зону?",
+   "en": "Tarkovsky's Stalker came out in 1979. Where was its Zone filmed?"
+  },
+  "options": [
+   {
+    "ru": "Под Таллином",
+    "en": "Near Tallinn"
+   },
+   {
+    "ru": "В Чернобыле",
+    "en": "In Chernobyl"
+   },
+   {
+    "ru": "На Урале",
+    "en": "In the Urals"
+   },
+   {
+    "ru": "В Крыму",
+    "en": "In Crimea"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У заброшенных ГЭС на реке Ягала и у старого химзавода в Таллине. А позже «сталкерами» звали себя работники Чернобыльской зоны.",
+   "en": "At disused hydro plants on the Jägala river and an old chemical works in Tallinn. Later, Chernobyl zone workers called themselves «stalkers»."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stalker_(1979_film)",
+  "basedOn": "soviet_film_027",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_soviet_film_18",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На пустынной планете Плюк из «Кин-дза-дза!» целое состояние стоит то, что у нас стоит копейки. Что?",
+   "en": "On the desert planet Pluke in Kin-dza-dza!, a fortune is worth what costs us pennies. What?"
+  },
+  "options": [
+   {
+    "ru": "Спички",
+    "en": "Matches"
+   },
+   {
+    "ru": "Соль",
+    "en": "Salt"
+   },
+   {
+    "ru": "Иголки",
+    "en": "Needles"
+   },
+   {
+    "ru": "Пуговицы",
+    "en": "Buttons"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Спичка там зовётся «КЦ», поэтому обычный коробок делает дядю Вову и Гедевана богачами.",
+   "en": "A match there is called a «KTs», so an ordinary matchbox makes Uncle Vova and Gedevan rich."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Кин-дза-дза!",
+  "basedOn": "soviet_film_038",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто чаще всех играл Бабу-ягу в советских киносказках?",
+   "en": "Who played Baba Yaga most often in Soviet fairy tale films?"
+  },
+  "options": [
+   {
+    "ru": "Георгий Милляр",
+    "en": "Georgy Millyar"
+   },
+   {
+    "ru": "Рина Зелёная",
+    "en": "Rina Zelyonaya"
+   },
+   {
+    "ru": "Ролан Быков",
+    "en": "Rolan Bykov"
+   },
+   {
+    "ru": "Татьяна Пельтцер",
+    "en": "Tatyana Peltzer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Да, Бабу-ягу играл мужчина: Милляр впервые сыграл её в «Василисе Прекрасной» в 1939 году, потом в «Морозко» и других.",
+   "en": "Yes, a man: Millyar first played Baba Yaga in Vasilisa the Beautiful in 1939, then in Morozko and more."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Милляр,_Георгий_Францевич",
+  "basedOn": "soviet_film_019",
+  "refine": "rewrite",
+  "id": "cur_soviet_film_19"
+ },
+ {
+  "id": "cur_soviet_film_20",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто придумал фразу «Муля, не нервируй меня!» из фильма «Подкидыш» (1939)?",
+   "en": "Who came up with the line «Mulya, don't get on my nerves!» in The Foundling (1939)?"
+  },
+  "options": [
+   {
+    "ru": "Раневская, экспромтом",
+    "en": "Ranevskaya, on the spot"
+   },
+   {
+    "ru": "Агния Барто, в сценарии",
+    "en": "Agnia Barto, in the script"
+   },
+   {
+    "ru": "Режиссёр, на репетиции",
+    "en": "The director, in rehearsal"
+   },
+   {
+    "ru": "Зритель, в письме на студию",
+    "en": "A viewer, in a letter"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Потом мальчишки годами кричали это ей вслед. Ахматова утешала: «Не огорчайтесь, у каждого из нас есть свой Муля».",
+   "en": "For years boys shouted it after her in the street. Akhmatova told her: «Don't be upset, each of us has our own Mulya»."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Подкидыш_(фильм)",
+  "basedOn": null,
+  "refine": "new"
  },
  {
   "id": "cur_soviet_film_09",
@@ -332,5 +612,59 @@
   "source": "https://ru.wikipedia.org/wiki/Служебный_роман",
   "basedOn": "soviet_film_045",
   "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Война и мир» Бондарчука вышла в четырёх сериях. Сколько минут идут все четыре вместе?",
+   "en": "Bondarchuk's War and Peace came out in four parts. How many minutes do all four run together?"
+  },
+  "answer": 431,
+  "range": [
+   100,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 40,
+  "unit": {
+   "ru": "мин",
+   "en": "min"
+  },
+  "fact": {
+   "ru": "Больше семи часов: одна первая серия идёт 147 минут. Все четыре вышли в прокат в 1966–1967 годах.",
+   "en": "Over seven hours: the first part alone runs 147 minutes. All four were released in 1966 and 1967."
+  },
+  "source": "https://en.wikipedia.org/wiki/War_and_Peace_(film_series)",
+  "basedOn": "soviet_film_049",
+  "refine": "rewrite",
+  "id": "cur_soviet_film_21"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Денег на «Брата» почти не было. За сколько съёмочных дней Балабанов снял фильм?",
+   "en": "Brother was made on almost no money. In how many shooting days did Balabanov make it?"
+  },
+  "answer": 31,
+  "range": [
+   1,
+   365
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "За 31 день. А знаменитый свитер Данилы художница по костюмам купила на блошином рынке рублей за 35–40.",
+   "en": "In 31 days. And the costume designer bought Danila's famous sweater at a flea market for 35 to 40 roubles."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Брат_(фильм,_1997)",
+  "basedOn": "soviet_film_050",
+  "refine": "rewrite",
+  "id": "cur_soviet_film_22"
  }
 ]

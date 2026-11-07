@@ -21,8 +21,8 @@
     "en": "Thumbs up"
    },
    {
-    "ru": "Подмигивающий смайлик",
-    "en": "Winking face"
+    "ru": "Лицо с воздушным поцелуем",
+    "en": "Face blowing a kiss"
    }
   ],
   "correct": 0,
@@ -32,7 +32,7 @@
   },
   "source": "https://en.wikipedia.org/wiki/Face_with_Tears_of_Joy_emoji",
   "basedOn": "memes_001",
-  "refine": "same"
+  "refine": "rewrite"
  },
  {
   "id": "cur_memes_02",
@@ -105,6 +105,111 @@
   "refine": "new"
  },
  {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое видео первым на YouTube набрало 10 миллиардов просмотров?",
+   "en": "Which video was the first on YouTube to reach 10 billion views?"
+  },
+  "options": [
+   {
+    "ru": "Клип Baby Shark",
+    "en": "Baby Shark"
+   },
+   {
+    "ru": "Клип Despacito",
+    "en": "Despacito"
+   },
+   {
+    "ru": "Клип Gangnam Style",
+    "en": "Gangnam Style"
+   },
+   {
+    "ru": "Клип Shape of You",
+    "en": "Shape of You"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Детская песенка-танец студии Pinkfong перевалила за 10 миллиардов в январе 2022 года: больше, чем людей на Земле.",
+   "en": "Pinkfong's children's dance song passed 10 billion in January 2022: more views than there are people on Earth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Baby_Shark",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_memes_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На логотипе Википедии шар из кусочков пазла. Почему наверху не хватает кусочков?",
+   "en": "The Wikipedia logo is a globe of jigsaw pieces. Why are pieces missing at the top?"
+  },
+  "options": [
+   {
+    "ru": "Её никогда не допишут до конца",
+    "en": "It will never be finished"
+   },
+   {
+    "ru": "Художник не успел закончить",
+    "en": "The artist ran out of time"
+   },
+   {
+    "ru": "Места оставили для новых языков",
+    "en": "Room left for new languages"
+   },
+   {
+    "ru": "Так шар лучше виден мелко",
+    "en": "It reads better when small"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шар нарочно недособран: дыры наверху значат, что энциклопедия никогда не будет закончена.",
+   "en": "The globe is left unfinished on purpose: the gaps at the top say the encyclopedia will never be complete."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wikipedia_logo",
+  "basedOn": "memes_007",
+  "refine": "rewrite",
+  "id": "cur_memes_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Малыш из мема Success Kid сжимает кулак, как победитель. А что он на самом деле собирался сделать?",
+   "en": "The Success Kid toddler clenches his fist like a winner. What was he really about to do?"
+  },
+  "options": [
+   {
+    "ru": "Съесть горсть песка",
+    "en": "Eat a fistful of sand"
+   },
+   {
+    "ru": "Бросить мяч папе",
+    "en": "Throw a ball to his dad"
+   },
+   {
+    "ru": "Помахать маме",
+    "en": "Wave to his mum"
+   },
+   {
+    "ru": "Стукнуть по столу",
+    "en": "Bang on the table"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мама сфотографировала Сэмми в 2007 году, когда он пытался съесть песок, а «победный» жест придумал интернет.",
+   "en": "His mum photographed Sammy in 2007 as he tried to eat sand; the internet read it as a victory fist."
+  },
+  "source": "https://en.wikipedia.org/wiki/Success_Kid",
+  "basedOn": "memes_038",
+  "refine": "rewrite",
+  "id": "cur_memes_13"
+ },
+ {
   "id": "cur_memes_04",
   "format": "multipleChoice",
   "difficulty": "medium",
@@ -175,39 +280,39 @@
   "refine": "rewrite"
  },
  {
-  "id": "cur_memes_06",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Носильщики гроба из мема Coffin Dance танцуют на настоящих похоронах. В какой стране?",
-   "en": "The pallbearers of the Coffin Dance meme dance at real funerals. In which country?"
+   "ru": "Криптовалюту Dogecoin с собакой из мема Doge на логотипе создали в 2013 году. Зачем?",
+   "en": "Dogecoin, the cryptocurrency with the Doge dog on its logo, was created in 2013. Why?"
   },
   "options": [
    {
-    "ru": "США",
-    "en": "The USA"
+    "ru": "В шутку над криптовалютами",
+    "en": "As a joke about crypto"
    },
    {
-    "ru": "Бразилия",
-    "en": "Brazil"
+    "ru": "Чтобы обогнать биткоин",
+    "en": "To overtake Bitcoin"
    },
    {
-    "ru": "Ямайка",
-    "en": "Jamaica"
+    "ru": "Для оплаты в онлайн-играх",
+    "en": "To pay in online games"
    },
    {
-    "ru": "Гана",
-    "en": "Ghana"
+    "ru": "Для рекламы собачьего корма",
+    "en": "To advertise dog food"
    }
   ],
-  "correct": 3,
+  "correct": 0,
   "fact": {
-   "ru": "Это фирма Бенджамина Айду из ганского городка Прампрам: он добавил к выносу гроба танец, а в 2020-м их видео стали мемом.",
-   "en": "It is Benjamin Aidoo's firm from Prampram in Ghana: he added dancing to carrying the coffin, and in 2020 their videos became a meme."
+   "ru": "Программисты Билли Маркус и Джексон Палмер высмеивали ажиотаж вокруг биткоина. А в 2021 году «шутка» стоила больше 85 миллиардов долларов.",
+   "en": "Programmers Billy Markus and Jackson Palmer were mocking the Bitcoin frenzy. In 2021 the 'joke' was worth over 85 billion dollars."
   },
-  "source": "https://en.wikipedia.org/wiki/Dancing_Pallbearers",
-  "basedOn": "memes_037",
-  "refine": "rewrite"
+  "source": "https://en.wikipedia.org/wiki/Dogecoin",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_memes_24"
  },
  {
   "id": "cur_memes_07",
@@ -245,92 +350,321 @@
   "refine": "new"
  },
  {
-  "id": "cur_memes_08",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Как сначала хотели назвать кнопку «Нравится» (Like) в Facebook?",
-   "en": "What was Facebook's Like button first going to be called?"
+   "ru": "Каким сайтом сначала задумывали YouTube?",
+   "en": "What kind of site was YouTube first meant to be?"
   },
   "options": [
    {
-    "ru": "«Круто» (Cool)",
-    "en": "Cool"
+    "ru": "Сайтом видеознакомств",
+    "en": "A video dating site"
    },
    {
-    "ru": "«Супер» (Super)",
-    "en": "Super"
+    "ru": "Сайтом видеорецептов",
+    "en": "A video recipe site"
    },
    {
-    "ru": "«Потрясающе» (Awesome)",
-    "en": "Awesome"
+    "ru": "Архивом теленовостей",
+    "en": "A TV news archive"
    },
    {
-    "ru": "«Обожаю» (Love it)",
-    "en": "Love it"
+    "ru": "Магазином музыки",
+    "en": "A music shop"
    }
   ],
-  "correct": 2,
+  "correct": 0,
   "fact": {
-   "ru": "Внутри компании её звали «кнопкой Awesome». Переименовать её велел Цукерберг, и кнопка вышла только в 2009 году.",
-   "en": "Inside the company it was the 'awesome button'. Zuckerberg had it renamed, and the button only launched in 2009."
+   "ru": "Основатели ждали видео-анкет, но их почти никто не присылал, и сайт открыли для любых роликов.",
+   "en": "The founders expected dating video profiles; hardly any came in, so they let people upload anything."
   },
-  "source": "https://en.wikipedia.org/wiki/Like_button",
-  "basedOn": null,
-  "refine": "new"
+  "source": "https://en.wikipedia.org/wiki/YouTube",
+  "basedOn": "memes_035",
+  "refine": "rewrite",
+  "id": "cur_memes_14"
  },
  {
-  "id": "cur_memes_09",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Эффект Стрейзанд» назван в честь певицы, которая пыталась убрать из сети…",
+   "en": "The 'Streisand effect' is named after a singer who tried to remove from the web…"
+  },
+  "options": [
+   {
+    "ru": "Фото своего дома",
+    "en": "A photo of her house"
+   },
+   {
+    "ru": "Неудачную песню",
+    "en": "A bad song"
+   },
+   {
+    "ru": "Старое интервью",
+    "en": "An old interview"
+   },
+   {
+    "ru": "Свой номер телефона",
+    "en": "Her phone number"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "До её иска в 2003 году снимок скачали всего 6 раз, и дважды — её же юристы; после иска его увидели сотни тысяч.",
+   "en": "Before her 2003 lawsuit the photo had been downloaded 6 times, twice by her lawyers; then hundreds of thousands saw it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Streisand_effect",
+  "basedOn": "memes_034",
+  "refine": "same",
+  "id": "cur_memes_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто придумал отмечать темы в Твиттере хештегами, значком #?",
+   "en": "Who came up with tagging topics on Twitter with hashtags, the # sign?"
+  },
+  "options": [
+   {
+    "ru": "Основатели Твиттера",
+    "en": "Twitter's founders"
+   },
+   {
+    "ru": "Обычный пользователь",
+    "en": "An ordinary user"
+   },
+   {
+    "ru": "Программисты Apple",
+    "en": "Apple programmers"
+   },
+   {
+    "ru": "Учёные из MIT",
+    "en": "MIT scientists"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Американец Крис Мессина предложил это в твите в 2007 году, а Твиттер сначала отмахнулся: «это для зануд».",
+   "en": "American Chris Messina suggested it in a 2007 tweet, and Twitter first brushed it off: 'these things are for nerds'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chris_Messina_(inventor)",
+  "basedOn": "memes_036",
+  "refine": "same",
+  "id": "cur_memes_16"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1982 году на форуме университета шутку про ртуть в лифте приняли всерьёз. Что придумали после этого?",
+   "en": "In 1982 a university message board took a joke about mercury in a lift seriously. What was invented next?"
+  },
+  "options": [
+   {
+    "ru": "Смайлик :-)",
+    "en": "The smiley :-)"
+   },
+   {
+    "ru": "Сокращение LOL",
+    "en": "The abbreviation LOL"
+   },
+   {
+    "ru": "Кнопку «Нравится»",
+    "en": "The Like button"
+   },
+   {
+    "ru": "Курсив для шуток",
+    "en": "Italics for jokes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Скотт Фалман из Карнеги-Меллон предложил помечать шутки значком :-). Его письмо от 19 сентября 1982 года считают днём рождения смайлика.",
+   "en": "Scott Fahlman at Carnegie Mellon proposed marking jokes with :-). His post of 19 September 1982 is seen as the smiley's birthday."
+  },
+  "source": "https://en.wikipedia.org/wiki/Emoticon",
+  "basedOn": "memes_039",
+  "refine": "rewrite",
+  "id": "cur_memes_17"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Одну из первых веб-камер учёные в Кембридже навели на то, к чему не хотели ходить зря. На что?",
+   "en": "Cambridge scientists pointed one of the first webcams at something they hated walking to in vain. At what?"
+  },
+  "options": [
+   {
+    "ru": "На кофейник",
+    "en": "The coffee pot"
+   },
+   {
+    "ru": "На аквариум с рыбками",
+    "en": "The fish tank"
+   },
+   {
+    "ru": "На почтовый ящик",
+    "en": "The mailbox"
+   },
+   {
+    "ru": "На парковку",
+    "en": "The car park"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 1991 года камера спасала их от пустого кофейника, с 1993-го на него смотрел весь интернет, а в 2001-м его продали на eBay за 3350 фунтов.",
+   "en": "From 1991 it spared them an empty pot, from 1993 the whole web watched it, and in 2001 it sold on eBay for £3,350."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+  "basedOn": "memes_025",
+  "refine": "rewrite",
+  "id": "cur_memes_18"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Слово «эмодзи» похоже на английское emotion. А из какого оно языка на самом деле?",
+   "en": "The word 'emoji' looks like the English 'emotion'. Which language does it really come from?"
+  },
+  "options": [
+   {
+    "ru": "Из японского",
+    "en": "Japanese"
+   },
+   {
+    "ru": "Из английского",
+    "en": "English"
+   },
+   {
+    "ru": "Из корейского",
+    "en": "Korean"
+   },
+   {
+    "ru": "Из латыни",
+    "en": "Latin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Э» — картинка, «модзи» — знак; сходство с английским emotion — чистое совпадение.",
+   "en": "E means picture and moji means character; the likeness to 'emotion' is pure coincidence."
+  },
+  "source": "https://en.wikipedia.org/wiki/Emoji",
+  "basedOn": "memes_002",
+  "refine": "rewrite",
+  "id": "cur_memes_19"
+ },
+ {
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "Студент продавал пиксели своего сайта по $1. За сколько на eBay ушли последние 1000 пикселей?",
-   "en": "A student sold his site's pixels at $1 each. What did the last 1,000 pixels fetch on eBay?"
+   "ru": "По данным YouTube на 2019 год: сколько лет без перерыва нужно смотреть всё, что загружают туда за один день?",
+   "en": "By YouTube's 2019 figures, how many years non-stop would it take to watch everything uploaded in one day?"
   },
-  "answer": 38100,
+  "answer": 82,
   "range": [
    0,
-   100000
+   500
   ],
-  "step": 100,
-  "tolerance": 8000,
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "YouTube сообщал о 500 с лишним часах видео в минуту. Это 720 тысяч часов в сутки, около 82 лет: целая жизнь.",
+   "en": "YouTube reported over 500 hours of video a minute. That is 720,000 hours a day, about 82 years: a whole lifetime."
+  },
+  "source": "https://www.tubefilter.com/2019/05/07/number-hours-video-uploaded-to-youtube-per-minute/",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_memes_20"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Gangnam Style вышел летом 2012-го и ещё до Нового года первым на YouTube набрал миллиард. За сколько дней?",
+   "en": "Gangnam Style came out in summer 2012 and was YouTube's first billion before New Year. In how many days?"
+  },
+  "answer": 159,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Вышел 15 июля, миллиард набрал 21 декабря. А в 2014-м просмотров стало больше, чем мог сосчитать счётчик YouTube, и его переделали.",
+   "en": "Out on 15 July, a billion by 21 December. In 2014 its views outgrew what YouTube's counter could store, so it was rebuilt."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gangnam_Style",
+  "basedOn": "memes_047",
+  "refine": "rewrite",
+  "id": "cur_memes_25"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько символов поначалу вмещал один твит?",
+   "en": "How many characters did a tweet originally allow?"
+  },
+  "answer": 140,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 35,
+  "unit": {
+   "ru": "символов",
+   "en": "characters"
+  },
+  "fact": {
+   "ru": "Твиттер задумывали для СМС: в одну эсэмэску должны были влезать и твит, и имя автора. В 2017 году лимит удвоили до 280.",
+   "en": "Twitter was designed for text messages: the tweet and the username had to fit in one SMS. In 2017 the limit doubled to 280."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tweet_(social_media)",
+  "basedOn": "memes_042",
+  "refine": "rewrite",
+  "id": "cur_memes_22"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Рикролл принёс клипу Рика Эстли миллионы просмотров. Сколько долларов сам Эстли получил от YouTube к 2010 году?",
+   "en": "Rickrolling got Rick Astley's video millions of views. How many dollars had Astley got from YouTube by 2010?"
+  },
+  "answer": 12,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 1,
+  "tolerance": 7,
   "unit": {
    "ru": "долларов",
    "en": "dollars"
   },
   "fact": {
-   "ru": "В 2006 году Алекс Тью так оплачивал учёбу: «Сайт на миллион долларов» продал миллион пикселей, а последнюю тысячу — в 38 раз дороже.",
-   "en": "In 2006 Alex Tew paid for university this way: the Million Dollar Homepage sold a million pixels, and the last 1,000 went for 38 times more."
+   "ru": "Всего 12 долларов: песню написал не он, а как исполнитель он получал лишь крохи с записи.",
+   "en": "Just 12 dollars: he didn't write the song, and as the performer he got only a sliver of the recording's royalties."
   },
-  "source": "https://en.wikipedia.org/wiki/The_Million_Dollar_Homepage",
-  "basedOn": "memes_050",
-  "refine": "rewrite"
- },
- {
-  "id": "cur_memes_10",
-  "format": "closestValue",
-  "difficulty": "hard",
-  "text": {
-   "ru": "По словам YouTube, сколько часов видео загружали на сайт каждую минуту в 2019 году?",
-   "en": "According to YouTube, how many hours of video were uploaded to the site every minute in 2019?"
-  },
-  "answer": 500,
-  "range": [
-   0,
-   3000
-  ],
-  "step": 10,
-  "tolerance": 120,
-  "unit": {
-   "ru": "часов",
-   "en": "hours"
-  },
-  "fact": {
-   "ru": "Больше 500: это 720 тысяч часов в сутки. Чтобы посмотреть всё, что загрузили за один день, не хватит и 80 лет.",
-   "en": "Over 500: that is 720,000 hours a day. Watching everything uploaded in a single day would take more than 80 years."
-  },
-  "source": "https://www.tubefilter.com/2019/05/07/number-hours-video-uploaded-to-youtube-per-minute/",
+  "source": "https://en.wikipedia.org/wiki/Rickrolling",
   "basedOn": null,
-  "refine": "new"
+  "refine": "new",
+  "id": "cur_memes_23"
  }
 ]

@@ -79,30 +79,135 @@
   },
   "options": [
    {
-    "ru": "Остывает кровь, идущая к мозгу",
-    "en": "The blood going to the brain cools"
-   },
-   {
     "ru": "Сводит холодом мышцы лба",
     "en": "Cold cramps the forehead muscles"
    },
    {
     "ru": "Мёрзнет передняя часть мозга",
-    "en": "The front of the brain gets chilled"
+    "en": "The front of the brain freezes"
    },
    {
-    "ru": "Холод раздражает нервы нёба",
-    "en": "Cold sets off nerves in the palate"
+    "ru": "Сахар резко бьёт в голову",
+    "en": "The sugar rushes to your head"
+   },
+   {
+    "ru": "Боль от нёба «отдаёт» в лоб",
+    "en": "Palate pain is felt in the brow"
    }
   ],
   "correct": 3,
   "fact": {
-   "ru": "Сосуды нёба от холода сжимаются и тут же расширяются, а мозг путает, где болит, и чувствует боль во лбу. Помогает прижать язык к нёбу.",
-   "en": "Vessels in the palate narrow, then swell, and the brain places the pain in the forehead. Pressing your tongue to the palate helps."
+   "ru": "Холод на нёбе резко сужает и расширяет сосуды, сигнал идёт по тройничному нерву, и мозг принимает его за боль во лбу. Помогает тёплое питьё.",
+   "en": "Cold on the palate makes vessels narrow and widen fast; the signal runs along the trigeminal nerve and the brain reads it as forehead pain. Warm drinks help."
   },
   "source": "https://en.wikipedia.org/wiki/Cold-stimulus_headache",
   "basedOn": null,
   "refine": "new"
+ },
+ {
+  "id": "cur_body_11",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой орган человека самый тяжёлый?",
+   "en": "Which is the heaviest organ of the human body?"
+  },
+  "options": [
+   {
+    "ru": "Печень",
+    "en": "The liver"
+   },
+   {
+    "ru": "Кожа",
+    "en": "The skin"
+   },
+   {
+    "ru": "Мозг",
+    "en": "The brain"
+   },
+   {
+    "ru": "Сердце",
+    "en": "The heart"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Даже без подкожного жира кожа весит около 3,3 кг — вдвое больше печени, самого тяжёлого из внутренних органов.",
+   "en": "Even without the fat beneath it, skin weighs about 3.3 kg, twice as much as the liver, the heaviest organ inside the body."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_skin",
+  "basedOn": "body_003",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Без чего еда теряет большую часть своего вкуса?",
+   "en": "Without what does food lose most of its flavour?"
+  },
+  "options": [
+   {
+    "ru": "Без обоняния",
+    "en": "Without smell"
+   },
+   {
+    "ru": "Без слуха",
+    "en": "Without hearing"
+   },
+   {
+    "ru": "Без зрения",
+    "en": "Without sight"
+   },
+   {
+    "ru": "Без зубов",
+    "en": "Without teeth"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Язык различает лишь пять вкусов, остальное дают запахи, которые идут из рта в нос, — поэтому при насморке еда пресная.",
+   "en": "The tongue senses only five tastes; the rest is aroma rising from the mouth into the nose, which is why food is bland with a cold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Taste",
+  "basedOn": "body_002",
+  "refine": "rewrite",
+  "id": "cur_body_12"
+ },
+ {
+  "id": "cur_body_13",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "У человеческого эмбриона около месяца есть настоящий хвостик. Что остаётся от него у взрослого?",
+   "en": "A human embryo has a real little tail for about a month. What is left of it in an adult?"
+  },
+  "options": [
+   {
+    "ru": "Копчик",
+    "en": "The tailbone"
+   },
+   {
+    "ru": "Крестец",
+    "en": "The sacrum"
+   },
+   {
+    "ru": "Пупок",
+    "en": "The belly button"
+   },
+   {
+    "ru": "Ямочки на пояснице",
+    "en": "The dimples on the lower back"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Копчик хвостом уже не служит, но к нему крепятся мышцы. А изредка дети рождаются с мягким хвостиком: врачи описали десятки таких случаев.",
+   "en": "The tailbone no longer works as a tail, but muscles attach to it. Rarely, babies are born with a soft little tail: doctors have described dozens."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_vestigiality",
+  "basedOn": "body_011",
+  "refine": "rewrite"
  },
  {
   "id": "cur_body_04",
@@ -280,31 +385,206 @@
   "refine": "same"
  },
  {
-  "id": "cur_body_09",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему свой голос в записи звучит непривычно?",
+   "en": "Why does your own voice sound strange on a recording?"
+  },
+  "options": [
+   {
+    "ru": "Обычно мы слышим его и через кости",
+    "en": "We normally also hear it through bone"
+   },
+   {
+    "ru": "Микрофон искажает любой голос",
+    "en": "Microphones distort every voice"
+   },
+   {
+    "ru": "Запись всегда чуть ускорена",
+    "en": "Recordings are always sped up"
+   },
+   {
+    "ru": "Себя мы слышим только одним ухом",
+    "en": "We hear ourselves with one ear"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кости черепа лучше проводят низкие звуки, поэтому изнутри голос кажется ниже, чем его слышат другие.",
+   "en": "Skull bone carries the low notes best, so from inside your voice sounds deeper than others hear it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bone_conduction",
+  "basedOn": "body_032",
+  "refine": "same",
+  "id": "cur_body_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему нельзя пощекотать самого себя?",
+   "en": "Why can't you tickle yourself?"
+  },
+  "options": [
+   {
+    "ru": "Мозг заранее гасит своё касание",
+    "en": "The brain mutes your own touch"
+   },
+   {
+    "ru": "Кожа привыкла к своим рукам",
+    "en": "Your skin is used to your hands"
+   },
+   {
+    "ru": "Свои пальцы слишком тёплые",
+    "en": "Your own fingers are too warm"
+   },
+   {
+    "ru": "Своё касание слишком медленное",
+    "en": "Your own touch is too slow"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мозжечок заранее предсказывает ощущение от своего движения и глушит его: даже щекотка через робота с пультом не смешит.",
+   "en": "The cerebellum predicts the feel of your own move and damps it: even tickling yourself through a robot you steer fails."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tickling",
+  "basedOn": "body_038",
+  "refine": "rewrite",
+  "id": "cur_body_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что заставляет пальцы сморщиться после долгой ванны?",
+   "en": "What makes your fingers wrinkle after a long bath?"
+  },
+  "options": [
+   {
+    "ru": "Нервы сужают сосуды под кожей",
+    "en": "Nerves narrow the vessels under the skin"
+   },
+   {
+    "ru": "Кожа набирает воду и разбухает",
+    "en": "The skin soaks up water and swells"
+   },
+   {
+    "ru": "Мыло вымывает из кожи жир",
+    "en": "Soap washes the oil out of the skin"
+   },
+   {
+    "ru": "Кожа остывает и сжимается",
+    "en": "The skin cools and shrinks"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Палец с повреждённым нервом не морщится, врачи даже так проверяют нервы; а складки, видимо, помогают держать мокрое.",
+   "en": "A finger with a damaged nerve stays smooth, which doctors use as a test; the folds probably help us grip wet things."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wrinkle",
+  "basedOn": "body_037",
+  "refine": "rewrite",
+  "id": "cur_body_16"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В голубых глазах нет ни капли голубого пигмента. Откуда же их цвет?",
+   "en": "Blue eyes contain no blue pigment at all. So where does their colour come from?"
+  },
+  "options": [
+   {
+    "ru": "Свет рассеивается, как в небе",
+    "en": "Light scatters, as in the sky"
+   },
+   {
+    "ru": "Просвечивают кровеносные сосуды",
+    "en": "Blood vessels show through"
+   },
+   {
+    "ru": "Так окрашена жидкость в глазу",
+    "en": "The fluid in the eye is tinted"
+   },
+   {
+    "ru": "Голубой отсвет белка глаза",
+    "en": "A bluish glint from the eye's white"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В радужке почти нет пигмента меланина, и она, как небо, сильнее всего рассеивает синий свет. А самый частый цвет глаз в мире — карий, примерно у 79% людей.",
+   "en": "The iris has little melanin and, like the sky, scatters blue light most. The world's most common eye colour is brown, in about 79% of people."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eye_color",
+  "basedOn": "body_009",
+  "refine": "rewrite",
+  "id": "cur_body_17"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой орган сам не чувствует боли, даже во время операции на нём?",
+   "en": "Which organ feels no pain itself, even when it is operated on?"
+  },
+  "options": [
+   {
+    "ru": "Мозг",
+    "en": "The brain"
+   },
+   {
+    "ru": "Зуб",
+    "en": "A tooth"
+   },
+   {
+    "ru": "Роговица глаза",
+    "en": "The cornea"
+   },
+   {
+    "ru": "Кожа",
+    "en": "The skin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В самом мозге нет болевых рецепторов, поэтому некоторые операции на нём делают, пока пациент в сознании и говорит.",
+   "en": "The brain itself has no pain receptors, so some brain operations are done while the patient is awake and talking."
+  },
+  "source": "https://en.wikipedia.org/wiki/Headache",
+  "basedOn": "body_033",
+  "refine": "same",
+  "id": "cur_body_21"
+ },
+ {
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "До расшифровки генома учёные ждали у человека 50–140 тысяч генов, кодирующих белки. Сколько их оказалось?",
-   "en": "Before the genome was read, scientists expected 50,000 to 140,000 protein-coding genes. How many are there?"
+   "ru": "Сколько примерно раз за сутки бьётся сердце взрослого человека?",
+   "en": "About how many times does an adult's heart beat in a day?"
   },
-  "answer": 20000,
+  "answer": 100000,
   "range": [
    0,
-   150000
+   500000
   ],
-  "step": 500,
-  "tolerance": 10000,
+  "step": 1000,
+  "tolerance": 25000,
   "unit": {
-   "ru": "генов",
-   "en": "genes"
+   "ru": "ударов",
+   "en": "beats"
   },
   "fact": {
-   "ru": "Около 20 тысяч — почти столько же, сколько у червя длиной в миллиметр. Сложность организма не в числе генов.",
-   "en": "About 20,000, roughly as many as a worm one millimetre long. Complexity is not a matter of gene count."
+   "ru": "За долгую жизнь набирается около трёх миллиардов ударов — без единого выходного.",
+   "en": "Over a long life that adds up to about three billion beats, without a single day off."
   },
-  "source": "https://en.wikipedia.org/wiki/Human_genome",
-  "basedOn": "body_050",
-  "refine": "rewrite"
+  "source": "https://en.wikipedia.org/wiki/Heart_rate",
+  "basedOn": "body_041",
+  "refine": "same",
+  "id": "cur_body_22"
  },
  {
   "id": "cur_body_10",
@@ -332,5 +612,59 @@
   "source": "https://en.wikipedia.org/wiki/Blinking",
   "basedOn": "body_042",
   "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Мозг весит около 2% тела. Сколько процентов всей энергии тела он тратит?",
+   "en": "The brain is about 2% of body weight. What percent of the body's energy does it use?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "Это около 20 ватт, как у тусклой лампочки, и мозг тратит их без перерыва, даже во сне.",
+   "en": "That is about 20 watts, like a dim light bulb, and it burns them nonstop, even in sleep."
+  },
+  "source": "https://en.wikipedia.org/wiki/Human_brain",
+  "basedOn": "body_039",
+  "refine": "same",
+  "id": "cur_body_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1922 году американский фермер Чарльз Осборн начал икать и не мог остановиться. Сколько лет он икал?",
+   "en": "In 1922 the American farmer Charles Osborne started hiccupping and could not stop. For how many years?"
+  },
+  "answer": 68,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Больше 68 лет, около 430 миллионов раз — рекорд Гиннесса. А началось всё с того, что на него рухнула свинья весом 160 кг.",
+   "en": "Over 68 years, some 430 million hiccups: a Guinness record. It all began when a 350-pound hog collapsed on top of him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Charles_Osborne_(hiccups)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_body_20"
  }
 ]

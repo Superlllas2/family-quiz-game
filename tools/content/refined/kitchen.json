@@ -1,40 +1,5 @@
 [
  {
-  "id": "cur_kitchen_01",
-  "format": "multipleChoice",
-  "difficulty": "easy",
-  "text": {
-   "ru": "Какой продукт в закрытой банке почти не портится, даже за тысячи лет?",
-   "en": "Which food, sealed in a jar, barely spoils even over thousands of years?"
-  },
-  "options": [
-   {
-    "ru": "Сыр",
-    "en": "Cheese"
-   },
-   {
-    "ru": "Хлеб",
-    "en": "Bread"
-   },
-   {
-    "ru": "Мёд",
-    "en": "Honey"
-   },
-   {
-    "ru": "Финики",
-    "en": "Dates"
-   }
-  ],
-  "correct": 2,
-  "fact": {
-   "ru": "В мёде мало воды и много сахара и кислоты, микробам в нём не выжить. А вот съедобный мёд из гробниц фараонов — миф.",
-   "en": "Honey has little water and lots of sugar and acid, so microbes can't survive. Edible honey from pharaohs' tombs, though, is a myth."
-  },
-  "source": "https://en.wikipedia.org/wiki/Honey",
-  "basedOn": "kitchen_002",
-  "refine": "rewrite"
- },
- {
   "id": "cur_kitchen_02",
   "format": "multipleChoice",
   "difficulty": "easy",
@@ -70,39 +35,179 @@
   "refine": "rewrite"
  },
  {
-  "id": "cur_kitchen_03",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Как салат оливье называют в Испании, Италии и Греции?",
-   "en": "What is Olivier salad called in Spain, Italy and Greece?"
+   "ru": "Почему зёрнышко кукурузы взрывается и становится попкорном?",
+   "en": "Why does a corn kernel burst into popcorn?"
   },
   "options": [
    {
-    "ru": "Зимний салат",
-    "en": "Winter salad"
+    "ru": "Масло пропитывает и раздувает его",
+    "en": "Oil soaks in and swells it"
    },
    {
-    "ru": "Московский салат",
-    "en": "Moscow salad"
+    "ru": "Лопается пузырёк воздуха",
+    "en": "An air bubble bursts"
    },
    {
-    "ru": "Царский салат",
-    "en": "Tsar's salad"
+    "ru": "Зерно прорастает от жара",
+    "en": "Heat makes it sprout"
    },
    {
-    "ru": "Русский салат",
-    "en": "Russian salad"
+    "ru": "Вода внутри превращается в пар",
+    "en": "Water inside turns to steam"
    }
   ],
   "correct": 3,
   "fact": {
-   "ru": "В Испании «русский салатик» подают как тапас во многих барах, а в Италии и Греции его часто делают вовсе без мяса.",
-   "en": "In Spain 'little Russian salad' is a tapa in many bars; in Italy and Greece it is often made with no meat at all."
+   "ru": "Твёрдая оболочка держит пар, пока давление не станет в девять раз выше атмосферного, — и тогда лопается.",
+   "en": "The hard hull holds the steam until the pressure is about nine times that of the air, and then it bursts."
   },
-  "source": "https://en.wikipedia.org/wiki/Olivier_salad",
+  "source": "https://en.wikipedia.org/wiki/Popcorn",
+  "basedOn": "kitchen_010",
+  "refine": "same",
+  "id": "cur_kitchen_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему разрезанное яблоко быстро темнеет?",
+   "en": "Why does a cut apple quickly turn brown?"
+  },
+  "options": [
+   {
+    "ru": "Ферменты окисляют мякоть",
+    "en": "Its enzymes react with air"
+   },
+   {
+    "ru": "Ржавеет железо в мякоти",
+    "en": "Iron in the flesh rusts"
+   },
+   {
+    "ru": "Мякоть подгнивает",
+    "en": "The flesh starts to rot"
+   },
+   {
+    "ru": "Сок высыхает и темнеет",
+    "en": "The juice dries and darkens"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Нож рвёт клетки, и их фермент вместе с кислородом окрашивает мякоть. Железо тут ни при чём, а лимонный сок потемнение замедляет.",
+   "en": "The knife breaks cells, and their enzyme and the air's oxygen brown the flesh. Iron has nothing to do with it; lemon juice slows it down."
+  },
+  "source": "https://en.wikipedia.org/wiki/Enzymatic_browning",
   "basedOn": null,
-  "refine": "new"
+  "refine": "new",
+  "id": "cur_kitchen_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Испанское блюдо паэлья получило своё имя от…",
+   "en": "The Spanish dish paella got its name from…"
+  },
+  "options": [
+   {
+    "ru": "Сковороды для готовки",
+    "en": "The pan it's cooked in"
+   },
+   {
+    "ru": "Деревни под Валенсией",
+    "en": "A village near Valencia"
+   },
+   {
+    "ru": "Рыбака-изобретателя",
+    "en": "The fisherman who invented it"
+   },
+   {
+    "ru": "Слова «воскресенье»",
+    "en": "The word for Sunday"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её родина — Валенсия, а «паэлья» по-валенсийски значит просто «сковорода»: блюдо назвали по посуде.",
+   "en": "It comes from Valencia, where paella simply means 'frying pan': the dish is named after the pan."
+  },
+  "source": "https://en.wikipedia.org/wiki/Paella",
+  "basedOn": "kitchen_009",
+  "refine": "rewrite",
+  "id": "cur_kitchen_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему мы плачем, когда режем лук?",
+   "en": "Why do we cry when we chop onions?"
+  },
+  "options": [
+   {
+    "ru": "Сок брызгает в глаза",
+    "en": "Juice squirts into our eyes"
+   },
+   {
+    "ru": "Лук выделяет едкий газ",
+    "en": "The onion gives off an irritating gas"
+   },
+   {
+    "ru": "Трём глаза руками в соке",
+    "en": "We rub our eyes with juicy hands"
+   },
+   {
+    "ru": "Глаза устают от мелкой работы",
+    "en": "Our eyes tire from the fiddly work"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Нож рвёт клетки, и из них вылетает летучее сернистое вещество, поэтому холодный лук и острый нож спасают от слёз.",
+   "en": "The knife breaks cells and a volatile sulphur compound escapes, which is why a cold onion and a sharp knife mean fewer tears."
+  },
+  "source": "https://en.wikipedia.org/wiki/Syn-Propanethial-S-oxide",
+  "basedOn": "kitchen_003",
+  "refine": "rewrite",
+  "id": "cur_kitchen_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где свежий хлеб черствеет быстрее всего?",
+   "en": "Where does fresh bread go stale fastest?"
+  },
+  "options": [
+   {
+    "ru": "В холодильнике",
+    "en": "In the fridge"
+   },
+   {
+    "ru": "В хлебнице",
+    "en": "In a bread bin"
+   },
+   {
+    "ru": "В пакете на столе",
+    "en": "In a bag on the table"
+   },
+   {
+    "ru": "В льняном мешочке",
+    "en": "In a linen bag"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Черствение — не высыхание: крахмал в мякише снова кристаллизуется, и быстрее всего это идёт в холоде чуть выше нуля.",
+   "en": "Staling isn't drying out: the starch in the crumb recrystallises, and that goes fastest in the cold just above freezing."
+  },
+  "source": "https://en.wikipedia.org/wiki/Staling",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_kitchen_15"
  },
  {
   "id": "cur_kitchen_04",
@@ -137,76 +242,6 @@
   },
   "source": "https://en.wikipedia.org/wiki/Hawaiian_pizza",
   "basedOn": "kitchen_028",
-  "refine": "same"
- },
- {
-  "id": "cur_kitchen_05",
-  "format": "multipleChoice",
-  "difficulty": "medium",
-  "text": {
-   "ru": "Мороженое пломбир названо в честь…",
-   "en": "Plombir ice cream is named after…"
-  },
-  "options": [
-   {
-    "ru": "Свинцовой пломбы",
-    "en": "A lead seal"
-   },
-   {
-    "ru": "Кондитера Пломбье",
-    "en": "A confectioner called Plombier"
-   },
-   {
-    "ru": "Французского городка",
-    "en": "A French spa town"
-   },
-   {
-    "ru": "Зубной пломбы",
-    "en": "A dental filling"
-   }
-  ],
-  "correct": 2,
-  "fact": {
-   "ru": "Это курорт Пломбьер-ле-Бен в Вогезах, а у нас пломбиром зовут самое жирное мороженое — от 12% молочного жира.",
-   "en": "It is the spa town of Plombières-les-Bains; in Russia plombir means the richest ice cream, at least 12% milk fat."
-  },
-  "source": "https://ru.wikipedia.org/wiki/Пломбир",
-  "basedOn": "kitchen_034",
-  "refine": "same"
- },
- {
-  "id": "cur_kitchen_06",
-  "format": "multipleChoice",
-  "difficulty": "medium",
-  "text": {
-   "ru": "Слово «пельмени» пришло из коми и удмуртского языков. Что оно значит?",
-   "en": "The word pelmeni comes from the Komi and Udmurt languages. What does it mean?"
-  },
-  "options": [
-   {
-    "ru": "Медвежья лапа",
-    "en": "Bear's paw"
-   },
-   {
-    "ru": "Хлебное ухо",
-    "en": "Bread ear"
-   },
-   {
-    "ru": "Снежный ком",
-    "en": "Snowball"
-   },
-   {
-    "ru": "Мясной мешочек",
-    "en": "Meat pouch"
-   }
-  ],
-  "correct": 1,
-  "fact": {
-   "ru": "Пельмени и правда похожи на ушки: вместе с блюдом русские переняли у народов Урала и само слово.",
-   "en": "Pelmeni do look like little ears: Russians took both the dish and its name from the peoples of the Urals."
-  },
-  "source": "https://en.wikipedia.org/wiki/Pelmeni",
-  "basedOn": "kitchen_024",
   "refine": "same"
  },
  {
@@ -280,6 +315,251 @@
   "refine": "new"
  },
  {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что на самом деле означает слово «суши»?",
+   "en": "What does the word sushi actually refer to?"
+  },
+  "options": [
+   {
+    "ru": "Рис с уксусом",
+    "en": "Vinegared rice"
+   },
+   {
+    "ru": "Сырую рыбу",
+    "en": "Raw fish"
+   },
+   {
+    "ru": "Морские водоросли",
+    "en": "Seaweed"
+   },
+   {
+    "ru": "Острый соус",
+    "en": "A spicy sauce"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Когда-то рыбу заквашивали в рисе, чтобы не портилась, а сырая рыба сама по себе называется сашими.",
+   "en": "Fish was once preserved by fermenting it in rice; raw fish on its own is called sashimi."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sushi",
+  "basedOn": "kitchen_016",
+  "refine": "same",
+  "id": "cur_kitchen_16"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где появился предок французского круассана?",
+   "en": "Where did the French croissant's ancestor come from?"
+  },
+  "options": [
+   {
+    "ru": "В Австрии",
+    "en": "Austria"
+   },
+   {
+    "ru": "В Бельгии",
+    "en": "Belgium"
+   },
+   {
+    "ru": "В Италии",
+    "en": "Italy"
+   },
+   {
+    "ru": "В Турции",
+    "en": "Turkey"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это венский рогалик кипферль: в 1830-х его привёз в Париж австриец Август Цанг.",
+   "en": "It is the Viennese kipferl, brought to Paris in the 1830s by the Austrian baker August Zang."
+  },
+  "source": "https://en.wikipedia.org/wiki/Croissant",
+  "basedOn": "kitchen_017",
+  "refine": "same",
+  "id": "cur_kitchen_17"
+ },
+ {
+  "id": "cur_kitchen_18",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Салат «Цезарь» в 1924 году придумал итальянец Цезарь Кардини. В какой стране?",
+   "en": "Caesar salad was created in 1924 by an Italian, Caesar Cardini. In which country?"
+  },
+  "options": [
+   {
+    "ru": "В Мексике",
+    "en": "Mexico"
+   },
+   {
+    "ru": "В Италии",
+    "en": "Italy"
+   },
+   {
+    "ru": "В США",
+    "en": "The USA"
+   },
+   {
+    "ru": "В Испании",
+    "en": "Spain"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его ресторан был в Тихуане, куда американцы ездили от сухого закона. По легенде, салат он собрал из остатков в наплыв гостей 4 июля.",
+   "en": "His restaurant was in Tijuana, where Americans went to escape Prohibition. Legend says he threw it together from leftovers in a July 4 rush."
+  },
+  "source": "https://en.wikipedia.org/wiki/Caesar_salad",
+  "basedOn": "kitchen_018",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего чаще всего делают «васаби» в ресторанах за пределами Японии?",
+   "en": "Outside Japan, what is most restaurant 'wasabi' really made of?"
+  },
+  "options": [
+   {
+    "ru": "Из хрена с горчицей",
+    "en": "Horseradish and mustard"
+   },
+   {
+    "ru": "Из корня васаби",
+    "en": "Wasabi root"
+   },
+   {
+    "ru": "Из зелёного чили",
+    "en": "Green chilli"
+   },
+   {
+    "ru": "Из авокадо с перцем",
+    "en": "Avocado and pepper"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Настоящий васаби капризен, растёт годами, лучше всего в холодных ручьях, и стоит дорого, поэтому его заменяет родственник — хрен.",
+   "en": "Real wasabi is fussy, takes years to grow, does best in cold streams and costs a lot, so its cousin horseradish stands in."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wasabi",
+  "basedOn": "kitchen_019",
+  "refine": "rewrite",
+  "id": "cur_kitchen_19"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что делает классическую римскую карбонару кремовой?",
+   "en": "What makes a classic Roman carbonara creamy?"
+  },
+  "options": [
+   {
+    "ru": "Желтки и тёртый сыр",
+    "en": "Yolks and grated cheese"
+   },
+   {
+    "ru": "Жирные сливки",
+    "en": "Thick double cream"
+   },
+   {
+    "ru": "Сливочное масло с мукой",
+    "en": "Butter mixed with flour"
+   },
+   {
+    "ru": "Мягкий сыр рикотта",
+    "en": "Soft ricotta cheese"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сливок в римском рецепте нет: желтки и тёртый сыр смешивают с горячей пастой и каплей воды от варки, и соус густеет сам.",
+   "en": "Roman recipes have no cream: yolks and grated cheese are tossed with the hot pasta and a splash of its water, and the sauce thickens itself."
+  },
+  "source": "https://en.wikipedia.org/wiki/Carbonara",
+  "basedOn": "kitchen_031",
+  "refine": "rewrite",
+  "id": "cur_kitchen_20"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Белый перец горошком — это…",
+   "en": "White peppercorns are…"
+  },
+  "options": [
+   {
+    "ru": "Те же ягоды, но без кожицы",
+    "en": "The same berries, skin removed"
+   },
+   {
+    "ru": "Недозрелый чёрный перец",
+    "en": "Unripe black pepper"
+   },
+   {
+    "ru": "Плоды другого растения",
+    "en": "Fruit of another plant"
+   },
+   {
+    "ru": "Чёрный, выгоревший на солнце",
+    "en": "Black pepper bleached by the sun"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Всё наоборот: чёрный — это недозрелые ягоды, высушенные целиком, а белый — зрелые, вымоченные и очищенные от кожицы.",
+   "en": "It's the other way round: black is unripe berries dried whole, white is ripe ones soaked and stripped of their skin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Black_pepper",
+  "basedOn": "kitchen_022",
+  "refine": "rewrite",
+  "id": "cur_kitchen_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Печенье с предсказаниями подают в китайских ресторанах по всему миру. Где его придумали?",
+   "en": "Fortune cookies are served in Chinese restaurants all over the world. Where were they invented?"
+  },
+  "options": [
+   {
+    "ru": "В США",
+    "en": "The USA"
+   },
+   {
+    "ru": "В Китае",
+    "en": "China"
+   },
+   {
+    "ru": "В Гонконге",
+    "en": "Hong Kong"
+   },
+   {
+    "ru": "В Сингапуре",
+    "en": "Singapore"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его начали печь японские иммигранты в Калифорнии в начале XX века, по образцу печенья из Киото. В самом Китае его почти не знают.",
+   "en": "Japanese immigrants in California began baking it in the early 1900s, based on a Kyoto cookie. In China itself it is barely known."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fortune_cookie",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_kitchen_25"
+ },
+ {
   "id": "cur_kitchen_09",
   "format": "closestValue",
   "difficulty": "hard",
@@ -311,8 +591,8 @@
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "Рекорд ежегодного конкурса едоков в Нью-Йорке: сколько хот-догов с булками съел чемпион за 10 минут?",
-   "en": "The record at New York's yearly eating contest: how many hot dogs with buns did the champion eat in 10 minutes?"
+   "ru": "Рекорд конкурса едоков, который каждое 4 июля идёт на Кони-Айленде: сколько хот-догов с булками съели за 10 минут?",
+   "en": "The record at Coney Island's July 4 eating contest: how many hot dogs with buns were eaten in 10 minutes?"
   },
   "answer": 76,
   "range": [
@@ -332,5 +612,59 @@
   "source": "https://en.wikipedia.org/wiki/Nathan%27s_Hot_Dog_Eating_Contest",
   "basedOn": null,
   "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сок клёна почти как вода: сахара в нём всего 2–5%. Сколько литров сока выпаривают ради литра сиропа?",
+   "en": "Maple sap is almost water, only 2 to 5% sugar. How many litres of sap are boiled down for one litre of syrup?"
+  },
+  "answer": 40,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "литров",
+   "en": "litres"
+  },
+  "fact": {
+   "ru": "Обычно около 40, а от 20 до 50 — смотря насколько сладок сок. В готовом сиропе не меньше 66% сахара.",
+   "en": "Usually about 40, anywhere from 20 to 50 depending on how sweet the sap is. The finished syrup is at least 66% sugar."
+  },
+  "source": "https://en.wikipedia.org/wiki/Maple_syrup",
+  "basedOn": "kitchen_045",
+  "refine": "rewrite",
+  "id": "cur_kitchen_26"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько литров молока уходит на одну головку пармезана весом около 38 кг?",
+   "en": "How many litres of milk go into one wheel of Parmesan, about 38 kg?"
+  },
+  "answer": 550,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 150,
+  "unit": {
+   "ru": "литров",
+   "en": "litres"
+  },
+  "fact": {
+   "ru": "Из котла на 1100 литров получают две головки, а потом они зреют минимум год.",
+   "en": "A 1,100 litre vat makes two wheels, which then age for at least a year."
+  },
+  "source": "https://en.wikipedia.org/wiki/Parmigiano_Reggiano",
+  "basedOn": "kitchen_040",
+  "refine": "same",
+  "id": "cur_kitchen_24"
  }
 ]

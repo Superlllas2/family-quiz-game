@@ -1,16 +1,16 @@
 {
- "animals": 10,
- "body": 10,
- "brands": 10,
- "crime": 10,
- "films_new": 10,
- "games_new": 10,
- "kitchen": 10,
+ "animals": 20,
+ "body": 22,
+ "brands": 22,
+ "crime": 24,
+ "films_new": 30,
+ "games_new": 26,
+ "kitchen": 26,
  "landmarks": 20,
  "languages": 20,
- "memes": 10,
- "misconceptions": 10,
- "series": 10,
- "soviet_film": 10,
- "space": 10
+ "memes": 25,
+ "misconceptions": 24,
+ "series": 24,
+ "soviet_film": 23,
+ "space": 27
 }

@@ -105,6 +105,111 @@
   "refine": "new"
  },
  {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В зоопарке фламинго могут побледнеть, даже если их хорошо кормят. Почему они вообще розовые?",
+   "en": "Zoo flamingos can turn pale even when well fed. Why are flamingos pink at all?"
+  },
+  "options": [
+   {
+    "ru": "Пигменты в еде",
+    "en": "Pigments in their food"
+   },
+   {
+    "ru": "Загар на солнце",
+    "en": "A suntan"
+   },
+   {
+    "ru": "Соль в воде озёр",
+    "en": "Salt in lake water"
+   },
+   {
+    "ru": "Просвечивает кровь",
+    "en": "Blood showing through"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это каротиноиды из рачков и водорослей, как в моркови. Печень птицы превращает их в розовую краску для перьев.",
+   "en": "They are carotenoids from shrimp and algae, as in carrots. The bird's liver turns them into the pink of its feathers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flamingo",
+  "basedOn": "animals_002",
+  "refine": "rewrite",
+  "id": "cur_animals_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Каким рождается детёныш кенгуру?",
+   "en": "What is a newborn kangaroo like?"
+  },
+  "options": [
+   {
+    "ru": "Размером с фасолину",
+    "en": "The size of a bean"
+   },
+   {
+    "ru": "Размером с мышь",
+    "en": "The size of a mouse"
+   },
+   {
+    "ru": "Размером с котёнка",
+    "en": "The size of a kitten"
+   },
+   {
+    "ru": "Размером с кролика",
+    "en": "The size of a rabbit"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слепой и голый малыш сам ползёт по шерсти в сумку и месяцами растёт там на молоке.",
+   "en": "The blind, hairless baby crawls through the fur into the pouch by itself and grows there on milk for months."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kangaroo",
+  "basedOn": "animals_015",
+  "refine": "rewrite",
+  "id": "cur_animals_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Зубы у бобра ярко-оранжевые. Почему?",
+   "en": "A beaver's teeth are bright orange. Why?"
+  },
+  "options": [
+   {
+    "ru": "В эмали есть железо",
+    "en": "There is iron in the enamel"
+   },
+   {
+    "ru": "Их красит древесный сок",
+    "en": "Tree sap stains them"
+   },
+   {
+    "ru": "Налёт от речной тины",
+    "en": "A coating of river slime"
+   },
+   {
+    "ru": "Так они желтеют с возрастом",
+    "en": "They yellow with age"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Железо делает эмаль прочнее, а резцы бобра растут всю жизнь и стачиваются о дерево.",
+   "en": "Iron makes the enamel tougher, and a beaver's front teeth grow all its life and wear down on wood."
+  },
+  "source": "https://en.wikipedia.org/wiki/Beaver",
+  "basedOn": "animals_013",
+  "refine": "rewrite",
+  "id": "cur_animals_13"
+ },
+ {
   "id": "cur_animals_04",
   "format": "multipleChoice",
   "difficulty": "medium",
@@ -280,6 +385,181 @@
   "refine": "new"
  },
  {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Учёные ловили ворон, надевая одну и ту же страшную маску. Что было потом?",
+   "en": "Scientists caught crows while wearing the same scary mask. What happened next?"
+  },
+  "options": [
+   {
+    "ru": "Годами ругали эту маску",
+    "en": "Scolded the mask for years"
+   },
+   {
+    "ru": "Перестали бояться людей",
+    "en": "Stopped fearing people"
+   },
+   {
+    "ru": "Стали носить им еду",
+    "en": "Started bringing them food"
+   },
+   {
+    "ru": "Забыли всё за день",
+    "en": "Forgot it all in a day"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вороны научили других: на маску кричали даже птицы, которых никто не ловил, и те, что родились позже.",
+   "en": "The crows taught others: birds that were never caught, and even ones born later, screamed at the mask."
+  },
+  "source": "https://theconversation.com/never-cross-a-crow-it-will-remember-your-face-2121",
+  "basedOn": "animals_021",
+  "refine": "same",
+  "id": "cur_animals_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2019 году лошадей одели в попоны в полоску, как у зебры. Что заметили учёные?",
+   "en": "In 2019 horses were dressed in zebra-striped coats. What did scientists notice?"
+  },
+  "options": [
+   {
+    "ru": "Слепни реже на них садились",
+    "en": "Horseflies landed less"
+   },
+   {
+    "ru": "Лошади бегали быстрее",
+    "en": "The horses ran faster"
+   },
+   {
+    "ru": "Другие лошади их боялись",
+    "en": "Other horses feared them"
+   },
+   {
+    "ru": "Им стало жарче",
+    "en": "They got hotter"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Полоски сбивают мух с толку при посадке: сейчас это главное объяснение, зачем зебре полосы.",
+   "en": "Stripes confuse flies as they try to land: today this is the leading explanation of why zebras have stripes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Zebra",
+  "basedOn": "animals_029",
+  "refine": "same",
+  "id": "cur_animals_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какие птицы в опыте 1995 года научились отличать картины Моне от Пикассо?",
+   "en": "Which birds learned to tell Monet's paintings from Picasso's in a 1995 experiment?"
+  },
+  "options": [
+   {
+    "ru": "Голуби",
+    "en": "Pigeons"
+   },
+   {
+    "ru": "Вороны",
+    "en": "Crows"
+   },
+   {
+    "ru": "Попугаи",
+    "en": "Parrots"
+   },
+   {
+    "ru": "Воробьи",
+    "en": "Sparrows"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Голуби узнавали стиль даже на картинах, которых раньше не видели, а авторы опыта получили Шнобелевскую премию.",
+   "en": "The pigeons recognised the style even in paintings they had never seen, and the researchers won an Ig Nobel Prize."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_Ig_Nobel_Prize_winners",
+  "basedOn": "animals_034",
+  "refine": "same",
+  "id": "cur_animals_16"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой хищник, по данным учёных, охотится удачнее всех?",
+   "en": "According to studies, which hunter has the highest success rate?"
+  },
+  "options": [
+   {
+    "ru": "Стрекоза",
+    "en": "The dragonfly"
+   },
+   {
+    "ru": "Лев",
+    "en": "The lion"
+   },
+   {
+    "ru": "Гепард",
+    "en": "The cheetah"
+   },
+   {
+    "ru": "Сокол-сапсан",
+    "en": "The peregrine falcon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Стрекоза ловит до 95% целей: она рассчитывает, где окажется муха, и летит ей наперерез.",
+   "en": "A dragonfly catches up to 95% of its targets: it works out where the fly will be and heads it off."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dragonfly",
+  "basedOn": "animals_025",
+  "refine": "rewrite",
+  "id": "cur_animals_17"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Самки комодского варана жили в зоопарке без самцов. Что случилось?",
+   "en": "Female Komodo dragons lived in a zoo with no males. What happened?"
+  },
+  "options": [
+   {
+    "ru": "Из яиц вылупились детёныши",
+    "en": "Their eggs hatched babies"
+   },
+   {
+    "ru": "Одна из них стала самцом",
+    "en": "One of them turned male"
+   },
+   {
+    "ru": "Они перестали линять",
+    "en": "They stopped shedding skin"
+   },
+   {
+    "ru": "Они впали в спячку",
+    "en": "They went into hibernation"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это партеногенез, девственное размножение, и у варанов все такие детёныши оказываются самцами.",
+   "en": "This is parthenogenesis, a virgin birth, and in Komodo dragons all such babies turn out to be male."
+  },
+  "source": "https://en.wikipedia.org/wiki/Komodo_dragon",
+  "basedOn": "animals_037",
+  "refine": "same",
+  "id": "cur_animals_18"
+ },
+ {
   "id": "cur_animals_09",
   "format": "closestValue",
   "difficulty": "hard",
@@ -332,5 +612,59 @@
   "source": "https://en.wikipedia.org/wiki/Giraffe",
   "basedOn": null,
   "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Человек вынашивает ребёнка 9 месяцев. Сколько месяцев длится беременность африканской слонихи?",
+   "en": "A human pregnancy lasts 9 months. How many months does an African elephant's pregnancy last?"
+  },
+  "answer": 22,
+  "range": [
+   0,
+   60
+  ],
+  "step": 0.5,
+  "tolerance": 4,
+  "unit": {
+   "ru": "мес.",
+   "en": "months"
+  },
+  "fact": {
+   "ru": "Около 22 месяцев: дольше, чем у любого другого млекопитающего. Слонёнок рождается весом 100–120 кг.",
+   "en": "About 22 months, longer than any other mammal. The calf weighs 100 to 120 kg at birth."
+  },
+  "source": "https://en.wikipedia.org/wiki/African_bush_elephant",
+  "basedOn": "animals_041",
+  "refine": "rewrite",
+  "id": "cur_animals_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Мыши живут два-три года. До скольких лет может дожить голый землекоп, грызун размером с мышь?",
+   "en": "Mice live two or three years. To what age can a naked mole-rat, a mouse-sized rodent, live?"
+  },
+  "answer": 37,
+  "range": [
+   0,
+   150
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Это рекорд среди грызунов. Землекопы почти не болеют раком, а потомство в колонии приносит одна самка, «королева», как у пчёл.",
+   "en": "That is the rodent record. Mole-rats rarely get cancer, and in each colony only one female, the queen, breeds, as in a beehive."
+  },
+  "source": "https://en.wikipedia.org/wiki/Naked_mole-rat",
+  "basedOn": "animals_050",
+  "refine": "rewrite",
+  "id": "cur_animals_20"
  }
 ]

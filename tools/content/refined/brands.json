@@ -105,6 +105,111 @@
   "refine": "new"
  },
  {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В честь кого назвали куклу Барби?",
+   "en": "Who was the Barbie doll named after?"
+  },
+  "options": [
+   {
+    "ru": "Голливудской актрисы",
+    "en": "A Hollywood actress"
+   },
+   {
+    "ru": "Знаменитой манекенщицы",
+    "en": "A famous fashion model"
+   },
+   {
+    "ru": "Дочери её создательницы",
+    "en": "Her creator's daughter"
+   },
+   {
+    "ru": "Матери создательницы",
+    "en": "Her creator's mother"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Рут Хэндлер назвала куклу в честь дочери Барбары, а появившегося позже Кена — в честь сына.",
+   "en": "Ruth Handler named the doll after her daughter Barbara, and Ken, who came later, after her son."
+  },
+  "source": "https://en.wikipedia.org/wiki/Barbie",
+  "basedOn": "brands_009",
+  "refine": "same",
+  "id": "cur_brands_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто изображён на зелёном логотипе Starbucks?",
+   "en": "Who is on the green Starbucks logo?"
+  },
+  "options": [
+   {
+    "ru": "Двухвостая сирена",
+    "en": "A two-tailed siren"
+   },
+   {
+    "ru": "Индейская девушка",
+    "en": "A Native American girl"
+   },
+   {
+    "ru": "Египетская царица",
+    "en": "An Egyptian queen"
+   },
+   {
+    "ru": "Жена основателя",
+    "en": "The founder's wife"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На первом, коричневом логотипе 1971 года по старинной гравюре сирена была с обнажённой грудью; потом ей отрастили волосы.",
+   "en": "The first, brown 1971 logo, copied from an old woodcut, showed a topless siren; later versions grew her hair."
+  },
+  "source": "https://en.wikipedia.org/wiki/Starbucks",
+  "basedOn": "brands_012",
+  "refine": "rewrite",
+  "id": "cur_brands_12"
+ },
+ {
+  "id": "cur_brands_13",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Розовый заяц с барабаном в рекламе батареек — чей он был сначала?",
+   "en": "The drumming pink bunny in battery ads: whose was it first?"
+  },
+  "options": [
+   {
+    "ru": "Энерджайзер",
+    "en": "Energizer"
+   },
+   {
+    "ru": "Дюраселл",
+    "en": "Duracell"
+   },
+   {
+    "ru": "Варта",
+    "en": "Varta"
+   },
+   {
+    "ru": "Панасоник",
+    "en": "Panasonic"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Заяц Duracell появился в 1973 году. Позже Energizer придумал своего зайца-пародию, и теперь в США и Канаде заяц принадлежит Energizer.",
+   "en": "Duracell's bunny dates from 1973. Energizer later made its own parody bunny, and now owns the bunny in the US and Canada."
+  },
+  "source": "https://en.wikipedia.org/wiki/Duracell_Bunny",
+  "basedOn": "brands_030",
+  "refine": "rewrite"
+ },
+ {
   "id": "cur_brands_04",
   "format": "multipleChoice",
   "difficulty": "medium",
@@ -280,6 +385,181 @@
   "refine": "rewrite"
  },
  {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой из этих стран запрещены «Киндер-сюрпризы»?",
+   "en": "In which of these countries are Kinder Surprise eggs banned?"
+  },
+  "options": [
+   {
+    "ru": "США",
+    "en": "The USA"
+   },
+   {
+    "ru": "Франция",
+    "en": "France"
+   },
+   {
+    "ru": "Италия",
+    "en": "Italy"
+   },
+   {
+    "ru": "Россия",
+    "en": "Russia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Американский закон 1938 года запрещает несъедобное внутри еды, поэтому там продают Kinder Joy из двух половинок.",
+   "en": "A 1938 US law bans non-food objects inside food, so the US gets Kinder Joy with the toy kept separate."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kinder_Surprise",
+  "basedOn": "brands_032",
+  "refine": "same",
+  "id": "cur_brands_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто нарисовал логотип Chupa Chups?",
+   "en": "Who designed the Chupa Chups logo?"
+  },
+  "options": [
+   {
+    "ru": "Жоан Миро",
+    "en": "Joan Miró"
+   },
+   {
+    "ru": "Пабло Пикассо",
+    "en": "Pablo Picasso"
+   },
+   {
+    "ru": "Энди Уорхол",
+    "en": "Andy Warhol"
+   },
+   {
+    "ru": "Сальвадор Дали",
+    "en": "Salvador Dalí"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В 1969 году Дали нарисовал ромашку и посоветовал ставить логотип сверху, чтобы его всегда было видно целиком.",
+   "en": "In 1969 Dalí drew the daisy and advised putting it on top of the wrapper so it is always seen whole."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chupa_Chups",
+  "basedOn": "brands_026",
+  "refine": "same",
+  "id": "cur_brands_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Название Häagen-Dazs звучит по-скандинавски. А где на самом деле придумали это мороженое?",
+   "en": "The name Häagen-Dazs sounds Scandinavian. Where was this ice cream really created?"
+  },
+  "options": [
+   {
+    "ru": "В Амстердаме",
+    "en": "Amsterdam"
+   },
+   {
+    "ru": "В Нью-Йорке",
+    "en": "New York"
+   },
+   {
+    "ru": "В Стокгольме",
+    "en": "Stockholm"
+   },
+   {
+    "ru": "В Копенгагене",
+    "en": "Copenhagen"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Рубен Маттус выдумал «датское» название в честь Дании, спасавшей евреев в войну, но в датском нет ни «ä», ни «zs».",
+   "en": "Reuben Mattus made up a Danish-sounding name to honour Denmark's wartime help to Jews; Danish has no ä or zs."
+  },
+  "source": "https://en.wikipedia.org/wiki/H%C3%A4agen-Dazs",
+  "basedOn": "brands_024",
+  "refine": "rewrite",
+  "id": "cur_brands_16"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Безос сменил первое название своего магазина: юрист по телефону расслышал в нём «cadaver» — «труп». Какое?",
+   "en": "Bezos renamed his shop after a lawyer on the phone heard its first name as 'cadaver'. What was it?"
+  },
+  "options": [
+   {
+    "ru": "Нил",
+    "en": "Nile"
+   },
+   {
+    "ru": "Всё на свете",
+    "en": "Everything"
+   },
+   {
+    "ru": "Кадабра",
+    "en": "Cadabra"
+   },
+   {
+    "ru": "Книжный червь",
+    "en": "Bookworm"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Фирму зарегистрировали как Cadabra в июле 1994 года. Новое имя дала самая большая река мира, да и на «А» оно стояло первым в алфавитных списках.",
+   "en": "It was registered as Cadabra in July 1994. The new name came from the world's biggest river, and an A put it at the top of alphabetical lists."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_Amazon",
+  "basedOn": "brands_034",
+  "refine": "rewrite",
+  "id": "cur_brands_17"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Книгу рекордов Гиннесса придумал директор…",
+   "en": "The Guinness Book of Records was dreamed up by the head of…"
+  },
+  "options": [
+   {
+    "ru": "Типографии",
+    "en": "A printing house"
+   },
+   {
+    "ru": "Пивоварни",
+    "en": "A brewery"
+   },
+   {
+    "ru": "Зоопарка",
+    "en": "A zoo"
+   },
+   {
+    "ru": "Телестудии",
+    "en": "A TV studio"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Хью Бивер из пивоварни Guinness в 1951 году на охоте не смог выяснить, какая птица быстрее, и решил издать справочник.",
+   "en": "In 1951 Hugh Beaver of the Guinness brewery could not settle which game bird was fastest, so he made a book."
+  },
+  "source": "https://en.wikipedia.org/wiki/Guinness_World_Records",
+  "basedOn": "brands_035",
+  "refine": "rewrite",
+  "id": "cur_brands_18"
+ },
+ {
   "id": "cur_brands_09",
   "format": "closestValue",
   "difficulty": "hard",
@@ -307,30 +587,84 @@
   "refine": "new"
  },
  {
-  "id": "cur_brands_10",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "Видеоигры Nintendo делает с 1970-х, а саму фирму основали гораздо раньше. В каком году?",
-   "en": "Nintendo has made video games since the 1970s, but the firm itself is much older. When was it founded?"
+   "ru": "В 1985 году Coca-Cola сменила рецепт: в слепых тестах новый вкус побеждал. Сколько дней продержалась «Новая кола»?",
+   "en": "In 1985 Coca-Cola changed its recipe after the new taste won blind tests. How many days did New Coke last?"
   },
-  "answer": 1889,
+  "answer": 79,
   "range": [
-   1600,
-   2000
+   0,
+   400
+  ],
+  "step": 1,
+  "tolerance": 25,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Компании пришло больше 40 тысяч гневных звонков и писем, и 11 июля 1985 года старую колу вернули под именем Coca-Cola Classic.",
+   "en": "Over 40,000 angry calls and letters poured in, and on 11 July 1985 the old drink came back as Coca-Cola Classic."
+  },
+  "source": "https://en.wikipedia.org/wiki/New_Coke",
+  "basedOn": "brands_041",
+  "refine": "rewrite",
+  "id": "cur_brands_22"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько долларов студентка получила в 1971 году за рисунок «галочки» Nike?",
+   "en": "How many dollars did a student get in 1971 for drawing the Nike swoosh?"
+  },
+  "answer": 35,
+  "range": [
+   0,
+   300
   ],
   "step": 1,
   "tolerance": 20,
   "unit": {
-   "ru": "год",
-   "en": "year"
+   "ru": "долларов",
+   "en": "dollars"
   },
   "fact": {
-   "ru": "Фусадзиро Ямаути начал в Киото с игральных карт ханафуда — в год открытия Эйфелевой башни.",
-   "en": "Fusajiro Yamauchi began in Kyoto with hanafuda playing cards, the year the Eiffel Tower opened."
+   "ru": "Позже Фил Найт подарил Кэролин Дэвидсон золотое кольцо с «галочкой» и 500 акций Nike.",
+   "en": "Phil Knight later gave Carolyn Davidson a gold swoosh ring and 500 Nike shares."
   },
-  "source": "https://en.wikipedia.org/wiki/Nintendo",
-  "basedOn": "brands_042",
-  "refine": "rewrite"
+  "source": "https://en.wikipedia.org/wiki/Swoosh",
+  "basedOn": "brands_039",
+  "refine": "same",
+  "id": "cur_brands_20"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "За сколько долларов третий сооснователь Apple Рональд Уэйн продал в 1976 году свои 10% компании?",
+   "en": "For how many dollars did Apple's third co-founder, Ronald Wayne, sell his 10% stake in 1976?"
+  },
+  "answer": 800,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 50,
+  "tolerance": 400,
+  "unit": {
+   "ru": "долларов",
+   "en": "dollars"
+  },
+  "fact": {
+   "ru": "Уэйн боялся отвечать по долгам рискованной фирмы, а через год взял ещё 1500 долларов за отказ от всех претензий.",
+   "en": "Wayne feared being liable for the risky firm's debts; a year later he took $1,500 more to drop any future claims."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ronald_Wayne",
+  "basedOn": "brands_040",
+  "refine": "same",
+  "id": "cur_brands_21"
  }
 ]

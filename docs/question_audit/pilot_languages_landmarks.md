@@ -93,6 +93,7 @@ Against the other 59 topics (the full bank) and the 120 refined questions:
 | landmarks_019 (Angkor Wat on the flag) | countries_018 | Left out of landmarks; countries keeps it |
 | languages_047 rewrite (the Rosetta Stone) | ancient_001 (which script the stone cracked) | Different questions about one object; ancient_001 must not use the 23 years |
 | languages_042 rewrite (Esperanto means "one who hopes") | | Esperanto appears once |
+| cur_languages_06, new (the language of Brazil) | countries_003 (the main language of Brazil), found by the batch 1 scan | Languages keeps it; countries_003 is replaced when `countries` is refined |
 
 Inside a topic, two buildings appear twice from different sides: the Burj Khalifa (its renaming, its height) and the Eiffel Tower (Maupassant, and as the Burj's yardstick; also the answer to the Statue of Liberty question). None gives another's answer away, though seeing "Эйфелева башня" in one question is a small nudge for the Statue of Liberty one.
 

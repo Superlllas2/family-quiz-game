@@ -9,8 +9,8 @@
   },
   "options": [
    {
-    "ru": "«Фольксваген Жук»",
-    "en": "A Volkswagen Beetle"
+    "ru": "«Жук»",
+    "en": "A Beetle"
    },
    {
     "ru": "«Мини»",
@@ -70,82 +70,117 @@
   "refine": "rewrite"
  },
  {
-  "id": "cur_series_03",
+  "id": "cur_series_11",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Эш проспал день, когда раздавали первых покемонов, и ему достался последний. Какой?",
-   "en": "Ash overslept on the day the first Pokémon were handed out and got the last one left. Which?"
+   "ru": "В «Симпсонах» у героев по четыре пальца на руке. А у кого из персонажей их пять?",
+   "en": "Characters in The Simpsons have four fingers on each hand. Which character has five?"
   },
   "options": [
    {
-    "ru": "Бульбазавр",
-    "en": "Bulbasaur"
+    "ru": "У Бога",
+    "en": "God"
    },
    {
-    "ru": "Чармандер",
-    "en": "Charmander"
+    "ru": "У Бёрнса",
+    "en": "Mr. Burns"
    },
    {
-    "ru": "Сквиртл",
-    "en": "Squirtle"
+    "ru": "У Мэгги",
+    "en": "Maggie"
    },
    {
-    "ru": "Пикачу",
-    "en": "Pikachu"
-   }
-  ],
-  "correct": 3,
-  "fact": {
-   "ru": "Три стартовых покемона уже разобрали. Строптивый Пикачу сразу ударил Эша током и отказался сидеть в покеболе.",
-   "en": "The three starters were already taken. The stubborn Pikachu shocked Ash at once and refused to stay in its Poké Ball."
-  },
-  "source": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_-_I_Choose_You!",
-  "basedOn": "series_011",
-  "refine": "rewrite"
- },
- {
-  "id": "cur_series_04",
-  "format": "multipleChoice",
-  "difficulty": "medium",
-  "text": {
-   "ru": "Без чего бог смерти Рюк из «Тетради смерти» корчится, скручивается в узел и стоит на руках?",
-   "en": "Without what does the death god Ryuk in Death Note writhe, twist into knots and do handstands?"
-  },
-  "options": [
-   {
-    "ru": "Без яблок",
-    "en": "Apples"
-   },
-   {
-    "ru": "Без шоколада",
-    "en": "Chocolate"
-   },
-   {
-    "ru": "Без свежей крови",
-    "en": "Fresh blood"
-   },
-   {
-    "ru": "Без кофе",
-    "en": "Coffee"
+    "ru": "У Скиннера",
+    "en": "Skinner"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "Яблоки для богов смерти — как сигареты и алкоголь для людей, и без них у Рюка начинается настоящая «ломка».",
-   "en": "Apples are to death gods what cigarettes and alcohol are to people, and without them Ryuk goes into withdrawal."
+   "ru": "Четыре пальца быстрее рисовать. Бог впервые появился в 1992 году, в серии «Гомер-еретик», и он почти единственный, кому рисуют все пять.",
+   "en": "Four fingers are quicker to draw. God first appeared in 1992, in 'Homer the Heretic', and he is almost the only one drawn with all five."
   },
-  "source": "https://en.wikipedia.org/wiki/Ryuk_(Death_Note)",
-  "basedOn": "series_032",
+  "source": "https://www.slashfilm.com/2122458/the-simpsons-character-four-fingers-god",
+  "basedOn": "series_004",
   "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Доктор Хаус задуман как медицинская версия какого героя?",
+   "en": "Dr. House was conceived as a medical version of which character?"
+  },
+  "options": [
+   {
+    "ru": "Шерлока Холмса",
+    "en": "Sherlock Holmes"
+   },
+   {
+    "ru": "Эркюля Пуаро",
+    "en": "Hercule Poirot"
+   },
+   {
+    "ru": "Доктора Джекила",
+    "en": "Dr. Jekyll"
+   },
+   {
+    "ru": "Индианы Джонса",
+    "en": "Indiana Jones"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "House созвучно Holmes. Хаус живёт в доме 221B, его единственный друг — доктор Уилсон, а вместо кокаина Холмса у него викодин.",
+   "en": "House sounds like Holmes. He lives at 221B, his one friend is Dr. Wilson, and instead of Holmes's cocaine he has Vicodin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gregory_House",
+  "basedOn": "series_018",
+  "refine": "rewrite",
+  "id": "cur_series_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего на съёмках «Во все тяжкие» делали голубые кристаллы Уолтера Уайта?",
+   "en": "On the Breaking Bad set, what were Walter White's blue crystals really made of?"
+  },
+  "options": [
+   {
+    "ru": "Из сахарных леденцов",
+    "en": "Sugar rock candy"
+   },
+   {
+    "ru": "Из толчёного стекла",
+    "en": "Crushed glass"
+   },
+   {
+    "ru": "Из крашеной соли",
+    "en": "Dyed salt"
+   },
+   {
+    "ru": "Из колотого льда",
+    "en": "Crushed ice"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Их варила кондитерская The Candy Lady из Альбукерке, а потом стала продавать такие же голубые леденцы фанатам в пакетиках.",
+   "en": "An Albuquerque sweet shop, The Candy Lady, made them, and later sold the same blue rock candy to fans in little bags."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Candy_Lady",
+  "basedOn": "series_031",
+  "refine": "rewrite",
+  "id": "cur_series_13"
  },
  {
   "id": "cur_series_05",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Инженер Чарли Дуглас прятал своё изобретение для телевидения под замками. Что это было?",
-   "en": "Engineer Charley Douglass kept his TV invention under padlocks. What was it?"
+   "ru": "Изобретение инженера Чарли Дугласа есть почти в каждом старом ситкоме, а сам он держал его под замками. Что это?",
+   "en": "Engineer Charley Douglass's invention is in almost every old sitcom, yet he kept it padlocked. What is it?"
   },
   "options": [
    {
@@ -280,6 +315,216 @@
   "refine": "new"
  },
  {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как снимали Вещь — живую руку из сериала «Уэнсдей»?",
+   "en": "How was Thing, the living hand in Wednesday, filmed?"
+  },
+  "options": [
+   {
+    "ru": "Рука актёра-фокусника",
+    "en": "A magician actor's hand"
+   },
+   {
+    "ru": "Целиком компьютерная графика",
+    "en": "Entirely computer graphics"
+   },
+   {
+    "ru": "Механическая рука на тросах",
+    "en": "A mechanical hand on cables"
+   },
+   {
+    "ru": "Рука самой Дженны Ортеги",
+    "en": "Jenna Ortega's own hand"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Румынский фокусник Виктор Доробанцу играл в синем костюме, и его тело потом стирали на компьютере. Кастинг искал именно фокусника.",
+   "en": "Romanian magician Victor Dorobantu played it in a blue suit, and his body was erased digitally. The casting team wanted a magician."
+  },
+  "source": "https://www.spotlight.com/news-and-advice/the-industry/my-casting-story-victor-teodor-dorobantu-netflix-wednesday/",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_series_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему Ходор из «Игры престолов» говорит только одно слово — «Ходор»?",
+   "en": "Why does Hodor in Game of Thrones only ever say 'Hodor'?"
+  },
+  "options": [
+   {
+    "ru": "Так слилось «Держи дверь!»",
+    "en": "It's 'Hold the door!' run together"
+   },
+   {
+    "ru": "Так звали его погибшего брата",
+    "en": "It was his dead brother's name"
+   },
+   {
+    "ru": "Это слово из языка великанов",
+    "en": "It's a word in the giants' tongue"
+   },
+   {
+    "ru": "Это след заклятия ведьмы",
+    "en": "It's a witch's curse"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 6-м сезоне Бран проникает в разум юного Уиллиса. Тот в припадке кричит «Держи дверь!», пока слова не сливаются в «Ходор».",
+   "en": "In season 6 Bran slips into the mind of young Wylis, who in a fit shouts 'Hold the door!' until the words slur into 'Hodor'."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Door_(Game_of_Thrones)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_series_15"
+ },
+ {
+  "id": "cur_series_16",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Грабители из «Бумажного дома» поют «Bella ciao». Что это за песня?",
+   "en": "The robbers in Money Heist sing 'Bella ciao'. What kind of song is it?"
+  },
+  "options": [
+   {
+    "ru": "Песня итальянских партизан",
+    "en": "An Italian partisans' song"
+   },
+   {
+    "ru": "Неаполитанская серенада",
+    "en": "A Neapolitan love serenade"
+   },
+   {
+    "ru": "Песня из фильма о мафии",
+    "en": "A song from a mafia film"
+   },
+   {
+    "ru": "Кричалка фанатов «Ювентуса»",
+    "en": "A Juventus fans' chant"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это песня итальянского антифашистского сопротивления. После сериала она вернулась в чарты: в 2018 году одна из новых версий стала №1 во Франции.",
+   "en": "It is the song of the Italian anti-fascist resistance. The show sent it back up the charts: in 2018 a new version reached No. 1 in France."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bella_ciao",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда Леонард Нимой взял вулканский салют Спока из «Звёздного пути»?",
+   "en": "Where did Leonard Nimoy get Spock's Vulcan salute in Star Trek?"
+  },
+  "options": [
+   {
+    "ru": "Из благословения в синагоге",
+    "en": "A blessing in synagogue"
+   },
+   {
+    "ru": "Из клятвы бойскаутов",
+    "en": "The Boy Scout oath"
+   },
+   {
+    "ru": "Из языка жестов глухих",
+    "en": "Sign language for the deaf"
+   },
+   {
+    "ru": "Из детской игры в ладушки",
+    "en": "A children's clapping game"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мальчиком дед привёл его в синагогу, и он подсмотрел, как священники-коэны благословляют людей, сложив пальцы этим жестом.",
+   "en": "As a boy his grandfather took him to synagogue, where he peeked at the priests' blessing, given with the fingers in this very shape."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vulcan_salute",
+  "basedOn": "series_029",
+  "refine": "rewrite",
+  "id": "cur_series_17"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Этот сериал закрыли после первого сезона, а позже Гиннесс назвал его самым смотримым в мире. Какой?",
+   "en": "This show was cancelled after one season, yet Guinness later named it the most watched series on Earth. Which?"
+  },
+  "options": [
+   {
+    "ru": "«Спасатели Малибу»",
+    "en": "Baywatch"
+   },
+   {
+    "ru": "«Санта-Барбара»",
+    "en": "Santa Barbara"
+   },
+   {
+    "ru": "«Секретные материалы»",
+    "en": "The X-Files"
+   },
+   {
+    "ru": "«Беверли-Хиллз, 90210»",
+    "en": "Beverly Hills, 90210"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Спасателей Малибу» после закрытия на NBC в 1991 году вернули на экраны Дэвид Хассельхофф и авторы, и вскоре его смотрели 1,1 млрд человек в неделю.",
+   "en": "After NBC dropped Baywatch, David Hasselhoff and its creators revived it in 1991, and soon 1.1 billion people a week were watching."
+  },
+  "source": "https://en.wikipedia.org/wiki/Baywatch",
+  "basedOn": "series_013",
+  "refine": "rewrite",
+  "id": "cur_series_23"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто озвучивает 10-летнего Барта Симпсона в оригинале с самого 1987 года?",
+   "en": "Who has voiced 10-year-old Bart Simpson in the original since 1987?"
+  },
+  "options": [
+   {
+    "ru": "Актриса, которой сейчас за 60",
+    "en": "An actress now in her sixties"
+   },
+   {
+    "ru": "Сам создатель Мэтт Грейнинг",
+    "en": "Creator Matt Groening himself"
+   },
+   {
+    "ru": "Актёр, озвучивающий Гомера",
+    "en": "The actor who voices Homer"
+   },
+   {
+    "ru": "Сменяющиеся дети-актёры",
+    "en": "A series of child actors"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Нэнси Картрайт пришла пробоваться на роль Лизы, но попросила прочитать за Барта, и Мэтт Грейнинг взял её прямо на месте.",
+   "en": "Nancy Cartwright came to audition for Lisa, asked to read for Bart instead, and Matt Groening hired her on the spot."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nancy_Cartwright",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_series_19"
+ },
+ {
   "id": "cur_series_09",
   "format": "closestValue",
   "difficulty": "hard",
@@ -332,5 +577,94 @@
   "source": "https://en.wikipedia.org/wiki/Dharma_Initiative",
   "basedOn": "series_043",
   "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 2022-м старая песня Кейт Буш из «Очень странных дел» впервые стала №1 в Британии. Сколько лет было песне?",
+   "en": "In 2022 an old Kate Bush song from Stranger Things hit UK No. 1 for the first time. How old was the song?"
+  },
+  "answer": 37,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "«Running Up That Hill» вышла в 1985 году. 37 лет до первого места — рекорд, а Кейт Буш в 63 стала самой возрастной женщиной на вершине чарта.",
+   "en": "Running Up That Hill came out in 1985. 37 years to No. 1 was a record, and at 63 Bush became the oldest woman to top the UK chart."
+  },
+  "source": "https://en.wikipedia.org/wiki/Running_Up_That_Hill",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_series_20"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько долларов за серию получал каждый из шестёрки «Друзей» в последних сезонах?",
+   "en": "How many dollars per episode did each of the six Friends stars earn in the final seasons?"
+  },
+  "answer": 1000000,
+  "range": [
+   0,
+   3000000
+  ],
+  "step": 10000,
+  "tolerance": 350000,
+  "unit": {
+   "ru": "долларов",
+   "en": "dollars"
+  },
+  "fact": {
+   "ru": "Актёры торговались с каналом все вместе, поэтому и получали поровну — по миллиону каждый.",
+   "en": "The six bargained with the studio as one team, so they were all paid the same: a million each."
+  },
+  "source": "https://en.wikipedia.org/wiki/Friends",
+  "basedOn": "series_047",
+  "refine": "same",
+  "id": "cur_series_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чьё лицо на масках грабителей в «Бумажном доме»?",
+   "en": "Whose face is on the robbers' masks in Money Heist?"
+  },
+  "options": [
+   {
+    "ru": "Сальвадора Дали",
+    "en": "Salvador Dalí"
+   },
+   {
+    "ru": "Пабло Пикассо",
+    "en": "Pablo Picasso"
+   },
+   {
+    "ru": "Винсента Ван Гога",
+    "en": "Vincent van Gogh"
+   },
+   {
+    "ru": "Гая Фокса",
+    "en": "Guy Fawkes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала думали о маске Дон Кихота. А фонд Дали потом упрекнул создателей: разрешения на лицо художника никто не спрашивал.",
+   "en": "A Don Quixote mask was considered first. The Dalí Foundation later complained that nobody had asked permission to use his face."
+  },
+  "source": "https://en.wikipedia.org/wiki/Money_Heist",
+  "basedOn": "series_007",
+  "refine": "rewrite",
+  "id": "cur_series_24"
  }
 ]

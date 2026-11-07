@@ -70,109 +70,144 @@
   "refine": "new"
  },
  {
-  "id": "cur_space_03",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Кто до сих пор единственная женщина, слетавшая в космос в одиночку?",
-   "en": "Who is still the only woman ever to fly into space alone?"
+   "ru": "Какая из этих звёзд ближе всех к Земле?",
+   "en": "Which of these stars is closest to the Earth?"
   },
   "options": [
    {
-    "ru": "Светлана Савицкая",
-    "en": "Svetlana Savitskaya"
+    "ru": "Солнце",
+    "en": "The Sun"
    },
    {
-    "ru": "Валентина Терешкова",
-    "en": "Valentina Tereshkova"
+    "ru": "Сириус",
+    "en": "Sirius"
    },
    {
-    "ru": "Салли Райд",
-    "en": "Sally Ride"
+    "ru": "Полярная звезда",
+    "en": "The North Star"
    },
    {
-    "ru": "Елена Кондакова",
-    "en": "Yelena Kondakova"
+    "ru": "Бетельгейзе",
+    "en": "Betelgeuse"
    }
   ],
-  "correct": 1,
+  "correct": 0,
   "fact": {
-   "ru": "В 1963 году она почти трое суток летала на «Востоке-6» одна, а было ей всего 26. Все женщины после неё летали в экипажах.",
-   "en": "In 1963 she spent almost three days alone in Vostok 6, aged just 26. Every woman since has flown with a crew."
+   "ru": "Солнце — обычная звезда. Следующая, Проксима Центавра, примерно в 270 тысяч раз дальше от нас.",
+   "en": "The Sun is an ordinary star; the next nearest, Proxima Centauri, is about 270,000 times farther away."
   },
-  "source": "https://en.wikipedia.org/wiki/Valentina_Tereshkova",
-  "basedOn": "space_009",
-  "refine": "rewrite"
+  "source": "https://en.wikipedia.org/wiki/Proxima_Centauri",
+  "basedOn": "space_011",
+  "refine": "same",
+  "id": "cur_space_11"
  },
  {
-  "id": "cur_space_04",
   "format": "multipleChoice",
-  "difficulty": "medium",
+  "difficulty": "easy",
   "text": {
-   "ru": "На какой планете сутки длиннее года, а Солнце восходит на западе?",
-   "en": "On which planet is a day longer than a year, and the Sun rises in the west?"
+   "ru": "Почему на МКС едят лепёшки, а не хлеб?",
+   "en": "Why do ISS astronauts eat tortillas instead of bread?"
   },
   "options": [
    {
-    "ru": "Юпитер",
-    "en": "Jupiter"
+    "ru": "Крошки разлетаются по станции",
+    "en": "Crumbs float all over the station"
    },
    {
-    "ru": "Марс",
-    "en": "Mars"
+    "ru": "Хлеб не помещается в ракету",
+    "en": "Bread doesn't fit in the rocket"
    },
    {
-    "ru": "Венера",
-    "en": "Venus"
+    "ru": "Лепёшки легче переваривать",
+    "en": "Flatbreads are easier to digest"
    },
    {
-    "ru": "Нептун",
-    "en": "Neptune"
+    "ru": "Хлеб черствеет за один день",
+    "en": "Bread goes stale in a day"
    }
   ],
-  "correct": 2,
+  "correct": 0,
   "fact": {
-   "ru": "Венера поворачивается вокруг оси за 243 земных дня, а вокруг Солнца проходит за 225. И крутится она в обратную сторону.",
-   "en": "Venus takes 243 Earth days to turn once but only 225 to orbit the Sun, and it spins backwards."
+   "ru": "В 1965 году астронавт Джон Янг тайком пронёс в корабль бутерброд. Крошки грозили залезть в приборы, и о нём спорили даже в конгрессе США.",
+   "en": "In 1965 astronaut John Young smuggled a sandwich aboard. Its crumbs could get into the instruments, and even the US Congress argued about it."
   },
-  "source": "https://en.wikipedia.org/wiki/Venus",
-  "basedOn": "space_026",
-  "refine": "rewrite"
+  "source": "https://en.wikipedia.org/wiki/Space_food",
+  "basedOn": "space_002",
+  "refine": "rewrite",
+  "id": "cur_space_12"
  },
  {
-  "id": "cur_space_05",
   "format": "multipleChoice",
-  "difficulty": "medium",
+  "difficulty": "easy",
   "text": {
-   "ru": "Самый высокий вулкан Солнечной системы в два с половиной раза выше Эвереста. Где он?",
-   "en": "The Solar System's tallest volcano is two and a half times as high as Everest. Where is it?"
+   "ru": "На МКС нет стиральной машины. Что делают с грязной одеждой?",
+   "en": "The ISS has no washing machine. What happens to dirty clothes?"
   },
   "options": [
    {
-    "ru": "На Венере",
-    "en": "On Venus"
+    "ru": "Выбрасывают, и она сгорает",
+    "en": "They're thrown out and burn up"
    },
    {
-    "ru": "На Ио, луне Юпитера",
-    "en": "On Io, a moon of Jupiter"
+    "ru": "Стирают в пакете с мылом",
+    "en": "They're washed in a soapy bag"
    },
    {
-    "ru": "На дне океана",
-    "en": "On the ocean floor"
+    "ru": "Отправляют на Землю в стирку",
+    "en": "They're sent to Earth to be washed"
    },
    {
-    "ru": "На Марсе",
-    "en": "On Mars"
+    "ru": "Чистят её пылесосом",
+    "en": "They're cleaned with a vacuum"
    }
   ],
-  "correct": 3,
+  "correct": 0,
   "fact": {
-   "ru": "Это гора Олимп, около 22 км. У Марса нет движущихся плит: вулкан стоял над одной «горячей точкой», и лава всё копилась.",
-   "en": "It's Olympus Mons, about 22 km high. Mars has no moving plates, so the volcano sat over one hot spot and lava kept piling up."
+   "ru": "Вода на станции на вес золота. Одежду носят, сколько можно, а потом вместе с мусором она сгорает, входя в атмосферу.",
+   "en": "Water on the station is precious. Clothes are worn as long as possible, then burn up with the rubbish on re-entry."
   },
-  "source": "https://en.wikipedia.org/wiki/Olympus_Mons",
-  "basedOn": "space_022",
-  "refine": "rewrite"
+  "source": "https://www.popsci.com/science/article/2013-08/how-often-do-astronauts-do-laundry/",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_space_26"
+ },
+ {
+  "id": "cur_space_20",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как марсоход «Кьюриосити» в 2013 году отметил год на Марсе?",
+   "en": "How did the Curiosity rover mark its first year on Mars in 2013?"
+  },
+  "options": [
+   {
+    "ru": "Сыграл себе «С днём рождения»",
+    "en": "Played itself 'Happy Birthday'"
+   },
+   {
+    "ru": "Выложил камнями цифру 1",
+    "en": "Laid out a number 1 in stones"
+   },
+   {
+    "ru": "Сделал круг почёта по кратеру",
+    "en": "Drove a lap of honour round a crater"
+   },
+   {
+    "ru": "Послал на Землю открытку",
+    "en": "Sent a postcard to Earth"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его прибор для проб вибрирует, чтобы стряхивать грунт. Инженеры NASA подобрали вибрации так, что марсоход прогудел песенку сам себе.",
+   "en": "Its sample instrument vibrates to shake off soil. NASA engineers set the vibrations so the rover hummed the tune to itself."
+  },
+  "source": "https://www.theregister.com/2013/08/06/curiositys_sam_sings_itself_happy_birthday_for_martian_anniversary/",
+  "basedOn": null,
+  "refine": "new"
  },
  {
   "id": "cur_space_06",
@@ -245,39 +280,284 @@
   "refine": "same"
  },
  {
-  "id": "cur_space_08",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Как сам Гагарин вернулся на Землю?",
-   "en": "How did Gagarin himself get back down to Earth?"
+   "ru": "Какая планета не утонула бы в огромной ванне с водой?",
+   "en": "Which planet would float in a big enough bath of water?"
   },
   "options": [
    {
-    "ru": "Сам, на своём парашюте",
-    "en": "On his own parachute"
+    "ru": "Сатурн",
+    "en": "Saturn"
    },
    {
-    "ru": "В капсуле, в море",
-    "en": "In the capsule, into the sea"
+    "ru": "Юпитер",
+    "en": "Jupiter"
    },
    {
-    "ru": "В капсуле, на сушу",
-    "en": "In the capsule, on land"
+    "ru": "Марс",
+    "en": "Mars"
    },
    {
-    "ru": "Сел на полосу, как самолёт",
-    "en": "On a runway, like a plane"
+    "ru": "Меркурий",
+    "en": "Mercury"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "На высоте 7 км он катапультировался. Это долго скрывали: по правилам рекорда пилот должен был сесть в аппарате.",
-   "en": "He ejected about 7 km up; this was kept quiet for years, as record rules said a pilot must land inside his craft."
+   "ru": "Средняя плотность Сатурна меньше, чем у воды: он почти целиком состоит из водорода и гелия.",
+   "en": "Saturn's average density is lower than water's, because it is almost all hydrogen and helium."
   },
-  "source": "https://en.wikipedia.org/wiki/Vostok_1",
-  "basedOn": "space_038",
-  "refine": "same"
+  "source": "https://en.wikipedia.org/wiki/Saturn",
+  "basedOn": "space_023",
+  "refine": "same",
+  "id": "cur_space_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что оказалось не так с телескопом «Хаббл» после запуска в 1990 году?",
+   "en": "What was wrong with the Hubble telescope after its 1990 launch?"
+  },
+  "options": [
+   {
+    "ru": "Зеркало отшлифовали неверно",
+    "en": "The mirror was ground wrong"
+   },
+   {
+    "ru": "Он сразу сошёл с орбиты",
+    "en": "It fell out of orbit at once"
+   },
+   {
+    "ru": "С него забыли снять крышку",
+    "en": "They forgot to take the lens cap off"
+   },
+   {
+    "ru": "Камеры не выдержали холода",
+    "en": "The cameras couldn't stand the cold"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ошибка была в 2 микрона, в десятки раз тоньше волоса. В 1993 году астронавты поставили телескопу «очки».",
+   "en": "The error was about 2 microns, far thinner than a hair; in 1993 astronauts fitted the telescope with 'glasses'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+  "basedOn": "space_030",
+  "refine": "rewrite",
+  "id": "cur_space_16"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего на МКС делают часть питьевой воды?",
+   "en": "What is some of the ISS drinking water made from?"
+  },
+  "options": [
+   {
+    "ru": "Из мочи и пота экипажа",
+    "en": "The crew's urine and sweat"
+   },
+   {
+    "ru": "Из кометного льда",
+    "en": "Comet ice"
+   },
+   {
+    "ru": "Из лунного льда",
+    "en": "Moon ice"
+   },
+   {
+    "ru": "Из облаков над Землёй",
+    "en": "Clouds above the Earth"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Система очистки возвращает в оборот около 98% воды, так что вчерашний кофе на станции и правда становится сегодняшним.",
+   "en": "The recycling system recovers about 98% of the water, so on the station yesterday's coffee really does become today's."
+  },
+  "source": "https://en.wikipedia.org/wiki/ISS_ECLSS",
+  "basedOn": "space_032",
+  "refine": "same",
+  "id": "cur_space_17"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему космонавты на МКС парят в невесомости?",
+   "en": "Why do astronauts float on the ISS?"
+  },
+  "options": [
+   {
+    "ru": "Там нет притяжения Земли",
+    "en": "There is no gravity up there"
+   },
+   {
+    "ru": "Они всё время падают",
+    "en": "They are always falling"
+   },
+   {
+    "ru": "Станция быстро вращается",
+    "en": "The station spins fast"
+   },
+   {
+    "ru": "Их отталкивают магниты",
+    "en": "Magnets push them up"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "На высоте МКС притяжение слабее всего примерно на 10%, но станция летит так быстро, что всё время «промахивается» мимо Земли.",
+   "en": "At the ISS's height gravity is only about 10% weaker, but the station moves so fast it keeps falling past the Earth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Weightlessness",
+  "basedOn": "space_036",
+  "refine": "same",
+  "id": "cur_space_18"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Луна у горизонта кажется огромной, а высоко в небе — маленькой. Почему?",
+   "en": "The Moon looks huge near the horizon and small high in the sky. Why?"
+  },
+  "options": [
+   {
+    "ru": "Так её «раздувает» наш мозг",
+    "en": "Our brain 'blows it up'"
+   },
+   {
+    "ru": "Воздух увеличивает её, как лупа",
+    "en": "The air magnifies it like a lens"
+   },
+   {
+    "ru": "У горизонта она ближе к нам",
+    "en": "It's closer to us at the horizon"
+   },
+   {
+    "ru": "Её свет сильнее рассеивается",
+    "en": "Its light is scattered more"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сфотографируйте её внизу и в зените: на снимках она одного размера. А у горизонта Луна даже на 1,5% дальше от нас.",
+   "en": "Photograph it low and high: it's the same size in both pictures. At the horizon the Moon is even about 1.5% farther away."
+  },
+  "source": "https://en.wikipedia.org/wiki/Moon_illusion",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_space_19"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто из живых существ первым слетал в космос и вернулся живым?",
+   "en": "Which living things were the first to fly into space and come back alive?"
+  },
+  "options": [
+   {
+    "ru": "Мушки-дрозофилы",
+    "en": "Fruit flies"
+   },
+   {
+    "ru": "Две собаки",
+    "en": "Two dogs"
+   },
+   {
+    "ru": "Обезьяна-макака",
+    "en": "A macaque monkey"
+   },
+   {
+    "ru": "Белые мыши",
+    "en": "White mice"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1947 году американцы запустили их на немецкой ракете V-2. Полёт длился три минуты, и все мушки вернулись живыми.",
+   "en": "In 1947 the Americans sent them up on a German V-2 rocket. The flight lasted three minutes, and all the flies came back alive."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fruit_flies_in_space",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_space_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Застраховать жизнь астронавтов «Аполлона» почти никто не брался. Что они оставляли семьям перед полётом?",
+   "en": "Hardly anyone would insure the Apollo astronauts' lives. What did they leave their families before a flight?"
+  },
+  "options": [
+   {
+    "ru": "Конверты со своими автографами",
+    "en": "Envelopes they had signed"
+   },
+   {
+    "ru": "Права на будущие мемуары",
+    "en": "The rights to future memoirs"
+   },
+   {
+    "ru": "Акции фирм, строивших ракеты",
+    "en": "Shares in rocket-building firms"
+   },
+   {
+    "ru": "Именные медали NASA",
+    "en": "Personal NASA medals"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Если бы экипаж погиб, родные продали бы их коллекционерам. Конверты экипажа «Аполлона-11» и сейчас стоят дороже всех.",
+   "en": "Had the crew died, the families could sell them to collectors. The Apollo 11 crew's envelopes still fetch the highest prices."
+  },
+  "source": "https://en.wikipedia.org/wiki/Apollo_insurance_covers",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_space_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем, по словам астронавтов, пахнут скафандры, вернувшиеся из открытого космоса?",
+   "en": "According to astronauts, what do spacesuits smell of after a spacewalk?"
+  },
+  "options": [
+   {
+    "ru": "Жжёным стейком и металлом",
+    "en": "Seared steak and hot metal"
+   },
+   {
+    "ru": "Ничем: в космосе нет запахов",
+    "en": "Nothing: space has no smell"
+   },
+   {
+    "ru": "Свежим морозным воздухом",
+    "en": "Fresh frosty air"
+   },
+   {
+    "ru": "Пылью и старой бумагой",
+    "en": "Dust and old paper"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Запах держится на шлемах, перчатках и инструментах. NASA даже заказало химику воссоздать его, чтобы готовить к нему астронавтов.",
+   "en": "The smell clings to helmets, gloves and tools. NASA even asked a chemist to recreate it so astronauts could get used to it."
+  },
+  "source": "https://www.nbcnews.com/news/amp/wbna48265519",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_space_27"
  },
  {
   "id": "cur_space_09",
@@ -307,30 +587,84 @@
   "refine": "same"
  },
  {
-  "id": "cur_space_10",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "Сколько килограммов весит скафандр «Орлан», в котором наши космонавты выходят в открытый космос?",
-   "en": "How many kilograms does the Orlan suit that Russian cosmonauts wear on spacewalks weigh?"
+   "ru": "Сколько рассветов за сутки видит экипаж МКС?",
+   "en": "How many sunrises a day does the ISS crew see?"
   },
-  "answer": 110,
+  "answer": 16,
   "range": [
    0,
-   400
+   100
   ],
-  "step": 2,
-  "tolerance": 25,
+  "step": 1,
+  "tolerance": 7,
   "unit": {
-   "ru": "кг",
-   "en": "kg"
+   "ru": "рассветов",
+   "en": "sunrises"
   },
   "fact": {
-   "ru": "Около 110–120 кг, смотря по модели. Залезают в него через дверцу в спине: ранец откидывается, и надеть скафандр можно минут за пять.",
-   "en": "About 110 to 120 kg, by model. You climb in through a door in the back: the backpack swings open, and it takes about five minutes."
+   "ru": "Станция облетает Землю примерно за полтора часа, и каждый виток — новый день и новая ночь.",
+   "en": "The station circles the Earth in about an hour and a half, and every lap brings a new day and a new night."
   },
-  "source": "https://en.wikipedia.org/wiki/Orlan_space_suit",
-  "basedOn": null,
-  "refine": "new"
+  "source": "https://en.wikipedia.org/wiki/International_Space_Station",
+  "basedOn": "space_039",
+  "refine": "same",
+  "id": "cur_space_23"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Духовка печёт пироги при 200 °C. Сколько градусов на поверхности Венеры?",
+   "en": "An oven bakes pies at 200 °C. How hot is the surface of Venus?"
+  },
+  "answer": 464,
+  "range": [
+   0,
+   1500
+  ],
+  "step": 2,
+  "tolerance": 50,
+  "unit": {
+   "ru": "градусов",
+   "en": "degrees"
+  },
+  "fact": {
+   "ru": "Около 464 °C, и это жарче, чем на Меркурии, хотя Венера вдвое дальше от Солнца: её углекислый газ держит тепло, как одеяло.",
+   "en": "About 464 °C, hotter than Mercury though Venus is twice as far from the Sun: its carbon dioxide holds the heat like a blanket."
+  },
+  "source": "https://en.wikipedia.org/wiki/Venus",
+  "basedOn": "space_049",
+  "refine": "rewrite",
+  "id": "cur_space_24"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько человек прошлись по Луне в 1969–1972 годах?",
+   "en": "How many people walked on the Moon from 1969 to 1972?"
+  },
+  "answer": 12,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "человек",
+   "en": "people"
+  },
+  "fact": {
+   "ru": "Шесть высадок «Аполлонов», по двое в каждой. С декабря 1972 года на Луну не ступал никто.",
+   "en": "Six Apollo landings with two walkers each; nobody has set foot on the Moon since December 1972."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_Apollo_astronauts",
+  "basedOn": "space_048",
+  "refine": "same",
+  "id": "cur_space_25"
  }
 ]
