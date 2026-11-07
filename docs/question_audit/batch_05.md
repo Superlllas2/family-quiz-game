@@ -1,4 +1,4 @@
-# Refining batch 5: the last ten topics (Nov 7 and 8, 2026)
+# Refining batch 5: the last ten topics (Nov 7, 2026)
 
 Step 3 of `refining_plan.md`, batch 5, by the method of `batch_01.md`. This was the last batch. **Every topic except ru_politics is now refined: 1180 questions in 59 topics.**
 
