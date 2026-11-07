@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему апельсиновый сок сразу после чистки зубов кажется горьким и противным?",
+   "en": "Why does orange juice taste bitter and nasty right after you brush your teeth?"
+  },
+  "options": [
+   {
+    "ru": "Фтор из пасты реагирует с соком",
+    "en": "Fluoride reacts with the juice"
+   },
+   {
+    "ru": "Щётка царапает вкусовые сосочки",
+    "en": "The brush scratches the taste buds"
+   },
+   {
+    "ru": "Моющая пена пасты меняет вкус",
+    "en": "The paste's foam alters taste"
+   },
+   {
+    "ru": "Эмаль на время становится кислее",
+    "en": "Tooth enamel turns sour for a while"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Пену даёт лаурилсульфат натрия. В опытах 1980 года он чуть приглушал сладкое, а кислый вкус после него начинал горчить.",
+   "en": "The foam comes from sodium lauryl sulfate. In 1980 tests it dulled sweetness a little and made sour tastes turn bitter."
+  },
+  "source": "https://www.scientificamerican.com/article/why-does-orange-juice-taste-bad-after-you-brush-your-teeth/",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_drinks_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как в 1886 году впервые продавали кока-колу?",
+   "en": "How was Coca-Cola first sold in 1886?"
+  },
+  "options": [
+   {
+    "ru": "Как лекарство в аптеке",
+    "en": "As a medicine in a pharmacy"
+   },
+   {
+    "ru": "Как паёк для солдат",
+    "en": "As an army ration"
+   },
+   {
+    "ru": "Как угощение в цирке",
+    "en": "As a circus treat"
+   },
+   {
+    "ru": "Как средство для мытья окон",
+    "en": "As a window cleaner"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пембертон хвалил её от головной боли и нервов, а название из коки и колы придумал его бухгалтер Фрэнк Робинсон.",
+   "en": "Pemberton touted it for headaches and nerves; his bookkeeper Frank Robinson named it after coca leaves and kola nuts."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_Coca-Cola",
+  "basedOn": "drinks_002",
+  "refine": "same",
+  "id": "cur_drinks_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что означает итальянское слово «латте»?",
+   "en": "What does the Italian word 'latte' mean?"
+  },
+  "options": [
+   {
+    "ru": "Сливки",
+    "en": "Cream"
+   },
+   {
+    "ru": "Молоко",
+    "en": "Milk"
+   },
+   {
+    "ru": "Пенка",
+    "en": "Foam"
+   },
+   {
+    "ru": "Чашка",
+    "en": "Cup"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Попросите в Италии просто «латте» — и вам, скорее всего, нальют стакан молока: кофе с молоком там зовут caffè latte.",
+   "en": "Order just a 'latte' in Italy and you will likely get a glass of milk: the coffee drink is caffè latte."
+  },
+  "source": "https://en.wikipedia.org/wiki/Latte",
+  "basedOn": "drinks_003",
+  "refine": "rewrite",
+  "id": "cur_drinks_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего делают зелёный и чёрный чай?",
+   "en": "What are green and black tea made from?"
+  },
+  "options": [
+   {
+    "ru": "Из листьев одного куста",
+    "en": "Leaves of the same bush"
+   },
+   {
+    "ru": "Из двух разных кустов",
+    "en": "Two different bushes"
+   },
+   {
+    "ru": "Зелёный из листьев, чёрный из корней",
+    "en": "Green from leaves, black from roots"
+   },
+   {
+    "ru": "Чёрный из чая, зелёный из мяты",
+    "en": "Black from tea, green from mint"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Для чёрного чая листья оставляют окисляться на воздухе, как темнеет надрезанное яблоко, а зелёный быстро прогревают.",
+   "en": "For black tea the leaves oxidise in the air, like a cut apple turning brown; green tea is heated quickly to stop it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Camellia_sinensis",
+  "basedOn": "drinks_006",
+  "refine": "same",
+  "id": "cur_drinks_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем особенный кофе копи лювак?",
+   "en": "What makes kopi luwak coffee special?"
+  },
+  "options": [
+   {
+    "ru": "Зёрна выросли на склоне вулкана",
+    "en": "The beans grew on a volcano"
+   },
+   {
+    "ru": "Зёрна дозревали подо льдом",
+    "en": "The beans ripened under ice"
+   },
+   {
+    "ru": "Зёрна годами лежали в пещере",
+    "en": "The beans lay in a cave for years"
+   },
+   {
+    "ru": "Зёрна побывали в животе зверька",
+    "en": "The beans came out of an animal"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Ягоды бродят в желудке пальмовой циветты, а зёрна потом собирают из помёта, моют и обжаривают.",
+   "en": "The cherries ferment inside the Asian palm civet; the beans are collected from its droppings, washed and roasted."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kopi_luwak",
+  "basedOn": "drinks_037",
+  "refine": "rewrite",
+  "id": "cur_drinks_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1908 году торговец из Нью-Йорка разослал образцы чая в шёлковых мешочках. Что, по легенде, сделали покупатели?",
+   "en": "In 1908 a New York merchant sent out tea samples in little silk bags. Legend says his customers did what?"
+  },
+  "options": [
+   {
+    "ru": "Заварили чай прямо в мешочках",
+    "en": "Brewed the tea in the bags"
+   },
+   {
+    "ru": "Шили из мешочков кошельки",
+    "en": "Sewed the bags into purses"
+   },
+   {
+    "ru": "Вернули их, требуя чай россыпью",
+    "en": "Sent them back for loose tea"
+   },
+   {
+    "ru": "Клали мешочки в шкаф для запаха",
+    "en": "Put the bags in drawers for scent"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По известной легенде, так Томас Салливан случайно изобрёл чайный пакетик. Хотя патент на «держатель для чая» выдали ещё в 1903 году.",
+   "en": "By a popular legend, that is how Thomas Sullivan invented the tea bag by accident, though a patent for a tea-leaf holder dates from 1903."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tea_bag",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_drinks_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В честь кого назван капучино?",
+   "en": "Who is the cappuccino named after?"
+  },
+  "options": [
+   {
+    "ru": "Изобретателя Луиджи Каппуччи",
+    "en": "Its inventor, Luigi Cappucci"
+   },
+   {
+    "ru": "Обезьянок-капуцинов",
+    "en": "Capuchin monkeys"
+   },
+   {
+    "ru": "Монахов-капуцинов",
+    "en": "Capuchin friars"
+   },
+   {
+    "ru": "Итальянского города Капуя",
+    "en": "The Italian town of Capua"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Кофе с молоком цвета их коричневых ряс. В Вене похожий напиток звали «капуцинер» ещё раньше.",
+   "en": "Coffee with milk matched the brown of their robes; Vienna served a similar 'Kapuziner' even earlier."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cappuccino",
+  "basedOn": "drinks_016",
+  "refine": "rewrite",
+  "id": "cur_drinks_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первую «Фанту» в 1940 году в Германии делали вовсе не из апельсинов. Из чего?",
+   "en": "The first Fanta, made in Germany in 1940, had no oranges at all. What was it made from?"
+  },
+  "options": [
+   {
+    "ru": "Из сыворотки и яблочного жмыха",
+    "en": "Whey and apple pulp"
+   },
+   {
+    "ru": "Из моркови и тыквенной мякоти",
+    "en": "Carrot and pumpkin pulp"
+   },
+   {
+    "ru": "Из берёзового сока и липового мёда",
+    "en": "Birch sap and linden honey"
+   },
+   {
+    "ru": "Из лимонной цедры и хмеля",
+    "en": "Lemon peel and hops"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сироп колы в военную Германию не довозили, и местный филиал Coca-Cola сделал напиток из того, что было. Глава филиала звал это «остатками остатков».",
+   "en": "Coca-Cola syrup could not reach wartime Germany, so the local branch used what it had. Its head called it 'leftovers of leftovers'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fanta",
+  "basedOn": "drinks_017",
+  "refine": "rewrite",
+  "id": "cur_drinks_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какое лекарство, по первой рекламе, содержалось в газировке 7 Up?",
+   "en": "Which drug did early 7 Up claim to contain?"
+  },
+  "options": [
+   {
+    "ru": "Аспирин",
+    "en": "Aspirin"
+   },
+   {
+    "ru": "Йод",
+    "en": "Iodine"
+   },
+   {
+    "ru": "Железо",
+    "en": "Iron"
+   },
+   {
+    "ru": "Литий",
+    "en": "Lithium"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Литий успокаивает перепады настроения, а «7», по одной версии, — его атомная масса; в 1936 году власти США запретили такие обещания.",
+   "en": "Lithium steadies the mood and the 7 may be its atomic mass; in 1936 the US government made the maker drop the health claims."
+  },
+  "source": "https://en.wikipedia.org/wiki/7_Up",
+  "basedOn": "drinks_030",
+  "refine": "same",
+  "id": "cur_drinks_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Монаха Дом Периньона зовут «отцом шампанского». А чего он добивался в своих погребах?",
+   "en": "The monk Dom Pérignon is called the 'father of champagne'. What was he trying to achieve in his cellars?"
+  },
+  "options": [
+   {
+    "ru": "Делать вино из яблок",
+    "en": "Make wine from apples"
+   },
+   {
+    "ru": "Подслащивать вино липовым мёдом",
+    "en": "Sweeten wine with linden honey"
+   },
+   {
+    "ru": "Избавить вино от пузырьков",
+    "en": "Keep the bubbles out of wine"
+   },
+   {
+    "ru": "Сделать вино игристее",
+    "en": "Make wine fizzier"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Вино бродило заново прямо в бутылках, и они лопались в погребах. А фраза «Я пью звёзды» впервые появилась в рекламе конца XIX века.",
+   "en": "Wine refermented in the bottle and burst them in the cellars. The line 'I am tasting the stars' first appeared in a late 1800s advert."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dom_Pérignon_(monk)",
+  "basedOn": "drinks_032",
+  "refine": "rewrite",
+  "id": "cur_drinks_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что древние майя добавляли в напиток из какао?",
+   "en": "What did the ancient Maya add to their cocoa drink?"
+  },
+  "options": [
+   {
+    "ru": "Коровье молоко",
+    "en": "Cow's milk"
+   },
+   {
+    "ru": "Тростниковый сахар",
+    "en": "Cane sugar"
+   },
+   {
+    "ru": "Лимонный сок",
+    "en": "Lemon juice"
+   },
+   {
+    "ru": "Острый перец",
+    "en": "Chilli pepper"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Коров, тростника и лимонов в Америке до европейцев не было: какао пили горьким и острым.",
+   "en": "There were no cows, sugar cane or lemons in the Americas before Europeans: cocoa was drunk bitter and spicy."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hot_chocolate",
+  "basedOn": "drinks_033",
+  "refine": "same",
+  "id": "cur_drinks_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему тоник светится в ультрафиолете?",
+   "en": "Why does tonic water glow under UV light?"
+  },
+  "options": [
+   {
+    "ru": "Из-за лимонного сока",
+    "en": "Because of lemon juice"
+   },
+   {
+    "ru": "Из-за хинина",
+    "en": "Because of quinine"
+   },
+   {
+    "ru": "Из-за пузырьков газа",
+    "en": "Because of the bubbles"
+   },
+   {
+    "ru": "Из-за сахара",
+    "en": "Because of the sugar"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Хинин был лекарством от малярии, и британцы в Индии разводили его содовой с сахаром, чтобы заглушить горечь.",
+   "en": "Quinine was a malaria medicine; the British in India mixed it with soda and sugar to hide the bitterness."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tonic_water",
+  "basedOn": "drinks_027",
+  "refine": "same",
+  "id": "cur_drinks_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Русское «чай» и английское tea в итоге пришли из одного языка. Из какого?",
+   "en": "The Russian word 'chai' and the English 'tea' both go back to one language. Which?"
+  },
+  "options": [
+   {
+    "ru": "Из португальского",
+    "en": "Portuguese"
+   },
+   {
+    "ru": "Из хинди",
+    "en": "Hindi"
+   },
+   {
+    "ru": "Из китайского",
+    "en": "Chinese"
+   },
+   {
+    "ru": "Из японского",
+    "en": "Japanese"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "«Ча» шло по суше через Персию и стало «чаем», а «те» уплыло морем из провинции Фуцзянь с голландскими купцами.",
+   "en": "'Cha' travelled overland through Persia to become 'chai'; 'te' sailed from Fujian with Dutch traders."
+  },
+  "source": "https://en.wikipedia.org/wiki/Etymology_of_tea",
+  "basedOn": "drinks_024",
+  "refine": "rewrite",
+  "id": "cur_drinks_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что крепче по кофеину, если сравнить по весу: сухие чайные листья или кофейные зёрна?",
+   "en": "Weight for weight, which holds more caffeine: dry tea leaves or coffee beans?"
+  },
+  "options": [
+   {
+    "ru": "Кофейные зёрна, раза в три",
+    "en": "Coffee beans, about three times"
+   },
+   {
+    "ru": "Сухие чайные листья",
+    "en": "Dry tea leaves"
+   },
+   {
+    "ru": "Поровну",
+    "en": "The same"
+   },
+   {
+    "ru": "В чае кофеина нет вовсе",
+    "en": "Tea has no caffeine at all"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "По весу в чайном листе кофеина больше. Но на чашку чая уходит куда меньше заварки, поэтому чашка кофе всё равно бодрит сильнее.",
+   "en": "Weight for weight, tea leaves hold more caffeine. But a cup of tea uses far less leaf, so a cup of coffee still has more."
+  },
+  "source": "https://en.wikipedia.org/wiki/Caffeine",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_drinks_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По легенде, король Швеции Густав III велел одному близнецу-узнику пить кофе, а другому чай. Чем кончился опыт?",
+   "en": "Legend says King Gustav III of Sweden had one imprisoned twin drink coffee daily and the other tea. How did it end?"
+  },
+  "options": [
+   {
+    "ru": "Оба пережили и врачей, и короля",
+    "en": "Both outlived the doctors and the king"
+   },
+   {
+    "ru": "Кофеман вскоре умер от сердца",
+    "en": "The coffee twin soon died of a bad heart"
+   },
+   {
+    "ru": "Любитель чая умер через полгода",
+    "en": "The tea twin died within six months"
+   },
+   {
+    "ru": "Оба сбежали из тюрьмы в первый год",
+    "en": "Both escaped from prison in year one"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Король хотел доказать вред кофе. Но оба врача умерли раньше, короля убили в 1792 году, а «чайный» близнец умер первым, в 83 года.",
+   "en": "The king wanted to prove coffee harmful. Both doctors died first, the king was killed in 1792, and the tea twin died first, aged 83."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gustav_III_of_Sweden%27s_coffee_experiment",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_drinks_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В Ханое 1940-х не хватало свежего молока, и бармен стал добавлять в кофе вместо него… что?",
+   "en": "In 1940s Hanoi fresh milk was scarce, so a barman began adding something else to coffee instead. What?"
+  },
+  "options": [
+   {
+    "ru": "Сливочное масло",
+    "en": "Butter"
+   },
+   {
+    "ru": "Кокосовую мякоть",
+    "en": "Coconut flesh"
+   },
+   {
+    "ru": "Яичный желток",
+    "en": "Egg yolk"
+   },
+   {
+    "ru": "Банановое пюре",
+    "en": "Mashed banana"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Так, по рассказу сына изобретателя, появился вьетнамский «яичный кофе»: желток взбивают с сахаром и сгущёнкой. Его кафе в Ханое подаёт его до сих пор.",
+   "en": "That, his son says, is how Vietnamese egg coffee began: yolk whipped with sugar and condensed milk. His Hanoi café still serves it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Egg_coffee",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_drinks_22"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Бутылку вина, запечатанную ещё римлянами, нашли в Германии в 1867 году и до сих пор не открыли. Сколько ей лет?",
+   "en": "A bottle of wine sealed by the Romans was found in Germany in 1867 and is still unopened. How old is it?"
+  },
+  "answer": 1700,
+  "range": [
+   0,
+   4000
+  ],
+  "step": 50,
+  "tolerance": 350,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Около 1700 лет: её запечатали примерно в 325–350 годах. Это бутылка из Шпайера, самая старая из известных неоткрытых бутылок вина.",
+   "en": "About 1,700: it was sealed around AD 325 to 350. It is the Speyer bottle, the oldest known unopened bottle of wine."
+  },
+  "source": "https://en.wikipedia.org/wiki/Speyer_wine_bottle",
+  "basedOn": "drinks_044",
+  "refine": "rewrite",
+  "id": "cur_drinks_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1886 году стакан кока-колы стоил 5 центов. Сколько стаканов в среднем продавали в день в первый год?",
+   "en": "In 1886 a glass of Coca-Cola cost 5 cents. In its first year, how many glasses were sold per day on average?"
+  },
+  "answer": 9,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "стаканов",
+   "en": "glasses"
+  },
+  "fact": {
+   "ru": "В среднем всего девять в день. Изобретатель Джон Пембертон так и не понял, что придумал: продал свою долю и умер в 1888 году.",
+   "en": "Just nine a day on average. Its inventor John Pemberton never grasped what he had: he sold his share and died in 1888."
+  },
+  "source": "https://www.coca-colacompany.com/about-us/history/the-birth-of-a-refreshing-idea",
+  "basedOn": "drinks_048",
+  "refine": "rewrite",
+  "id": "cur_drinks_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Шину машины накачивают примерно до 2 бар. Под каким давлением эспрессо-машина продавливает воду через кофе?",
+   "en": "A car tyre is pumped to about 2 bar. At what pressure does an espresso machine push water through the coffee?"
+  },
+  "answer": 9,
+  "range": [
+   0,
+   50
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "бар",
+   "en": "bar"
+  },
+  "fact": {
+   "ru": "Стандарт — 9 бар, как под водой на глубине 80–90 метров. Первые кофемашины давали лишь около 1,5 бар, и настоящего эспрессо не выходило.",
+   "en": "The standard is 9 bar, like 80 to 90 metres under water. Early machines managed only about 1.5 bar, too little for true espresso."
+  },
+  "source": "https://en.wikipedia.org/wiki/Espresso",
+  "basedOn": "drinks_042",
+  "refine": "rewrite",
+  "id": "cur_drinks_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Бетховен варил себе кофе строго по счёту зёрен. Сколько зёрен, по воспоминаниям, шло на одну чашку?",
+   "en": "Beethoven made his coffee with a counted number of beans. How many beans went into one cup, by contemporary accounts?"
+  },
+  "answer": 60,
+  "range": [
+   0,
+   300
+  ],
+  "step": 2,
+  "tolerance": 15,
+  "unit": {
+   "ru": "зёрен",
+   "en": "beans"
+  },
+  "fact": {
+   "ru": "Шестьдесят. По рассказам, при гостях он пересчитывал зёрна для каждой чашки сам. Брамс, говорят, тоже варил себе кофе сам.",
+   "en": "Sixty. When he had guests, he counted the beans for each cup himself. Brahms, too, is said to have made his own coffee."
+  },
+  "source": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_84/March_1914/The_Physical_Beethoven",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_drinks_20"
+ }
+]

@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Фото, загруженные «в облако», где-то физически хранятся. Где?",
+   "en": "Photos uploaded 'to the cloud' are physically stored somewhere. Where?"
+  },
+  "options": [
+   {
+    "ru": "На спутниках на орбите",
+    "en": "On satellites in orbit"
+   },
+   {
+    "ru": "В зданиях с серверами",
+    "en": "In buildings full of servers"
+   },
+   {
+    "ru": "В SIM-карте телефона",
+    "en": "In the phone's SIM card"
+   },
+   {
+    "ru": "В самих радиоволнах",
+    "en": "In the radio waves themselves"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Облако — это дата-центры на земле. Серверы так греются, что Facebook построил дата-центр на холодном севере Швеции: там дешевле охлаждать.",
+   "en": "The cloud is data centres on the ground. Servers run so hot that Facebook built one in Sweden's cold north, where cooling is cheaper."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lule%C3%A5",
+  "basedOn": "gadgets_010",
+  "refine": "rewrite",
+  "id": "cur_gadgets_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1947 году инженеры нашли в компьютере настоящего «жучка» и вклеили его в журнал. Кого?",
+   "en": "In 1947 engineers found a real \"bug\" in a computer and taped it into the logbook. What was it?"
+  },
+  "options": [
+   {
+    "ru": "Мышь",
+    "en": "A mouse"
+   },
+   {
+    "ru": "Паука",
+    "en": "A spider"
+   },
+   {
+    "ru": "Мотылька",
+    "en": "A moth"
+   },
+   {
+    "ru": "Таракана",
+    "en": "A cockroach"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Мотылёк застрял в реле компьютера Harvard Mark II; сбои «багами» инженеры называли ещё со времён Эдисона.",
+   "en": "The moth was stuck in a relay of the Harvard Mark II; engineers had called glitches \"bugs\" since Edison's day."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bug_(engineering)",
+  "basedOn": "gadgets_004",
+  "refine": "same",
+  "id": "cur_gadgets_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Значок «Сохранить» во многих программах — рисунок настоящего предмета. Какого?",
+   "en": "The 'Save' icon in many programs is a picture of a real object. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Сейфа",
+    "en": "A safe"
+   },
+   {
+    "ru": "Флешки",
+    "en": "A USB flash drive"
+   },
+   {
+    "ru": "Дискеты",
+    "en": "A floppy disk"
+   },
+   {
+    "ru": "Микросхемы",
+    "en": "A microchip"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Многие дети не видели дискету вживую, а значок остался. Зато правительство Японии пользовалось дискетами до 2024 года.",
+   "en": "Many children have never seen a floppy disk, yet the icon lives on. Japan's government, though, used floppies until 2024."
+  },
+  "source": "https://en.wikipedia.org/wiki/Floppy_disk",
+  "basedOn": "gadgets_002",
+  "refine": "rewrite",
+  "id": "cur_gadgets_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Экран смартфона не чувствует палец в перчатке, зато чувствует сосиску. Почему?",
+   "en": "A phone's touchscreen ignores a gloved finger but responds to a sausage. Why?"
+  },
+  "options": [
+   {
+    "ru": "Она проводит электричество",
+    "en": "It conducts electricity"
+   },
+   {
+    "ru": "Она тёплая, как палец",
+    "en": "It is warm like a finger"
+   },
+   {
+    "ru": "Она давит на экран сильнее",
+    "en": "It presses harder"
+   },
+   {
+    "ru": "Она мягкая, как кожа",
+    "en": "It is soft like skin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Экран ловит, как проводящее тело меняет его электрическое поле. В морозную зиму 2010 года корейцы, по сообщениям прессы, тыкали в iPhone сосисками.",
+   "en": "The screen senses a conductor changing its electric field. In the cold winter of 2010, the press reported, Koreans tapped their iPhones with snack sausages."
+  },
+  "source": "https://www.theregister.com/2010/02/12/korean_sausage_stylus/",
+  "basedOn": "gadgets_020",
+  "refine": "rewrite",
+  "id": "cur_gadgets_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что изображают палочка и кружок на кнопке включения?",
+   "en": "What do the line and the circle on a power button stand for?"
+  },
+  "options": [
+   {
+    "ru": "Единицу и ноль",
+    "en": "One and zero"
+   },
+   {
+    "ru": "Букву P от power",
+    "en": "The P of 'power'"
+   },
+   {
+    "ru": "Вилку и розетку",
+    "en": "A plug and a socket"
+   },
+   {
+    "ru": "Солнце над горизонтом",
+    "en": "The sun over the horizon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Палочка — это единица, «включено», кружок — ноль, «выключено». Эти знаки вошли в международный стандарт IEC в 1973 году.",
+   "en": "The line is a one, meaning on; the circle is a zero, meaning off. The symbols entered the IEC international standard in 1973."
+  },
+  "source": "https://en.wikipedia.org/wiki/Power_symbol",
+  "basedOn": "gadgets_014",
+  "refine": "rewrite",
+  "id": "cur_gadgets_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что называли в английском словом computer, пока не было вычислительных машин?",
+   "en": "Before there were computing machines, what did the English word 'computer' mean?"
+  },
+  "options": [
+   {
+    "ru": "Счёты",
+    "en": "An abacus"
+   },
+   {
+    "ru": "Человека",
+    "en": "A person"
+   },
+   {
+    "ru": "Учебник арифметики",
+    "en": "An arithmetic textbook"
+   },
+   {
+    "ru": "Таблицу умножения",
+    "en": "A times table"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Это была профессия: человек-вычислитель. В 1962 году Джон Гленн отказывался лететь, пока расчёты машины не проверит «компьютер» Кэтрин Джонсон.",
+   "en": "It was a job: a person who computed. In 1962 John Glenn refused to fly until the 'computer' Katherine Johnson had checked the machine's figures."
+  },
+  "source": "https://en.wikipedia.org/wiki/Katherine_Johnson",
+  "basedOn": "gadgets_013",
+  "refine": "rewrite",
+  "id": "cur_gadgets_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем Microsoft добавила в Windows пасьянс «Косынка»?",
+   "en": "Why did Microsoft put Solitaire into Windows?"
+  },
+  "options": [
+   {
+    "ru": "Это была шутка программиста",
+    "en": "As a programmer's prank"
+   },
+   {
+    "ru": "Чтобы учить работать мышью",
+    "en": "To teach using a mouse"
+   },
+   {
+    "ru": "По просьбе казино",
+    "en": "At a casino's request"
+   },
+   {
+    "ru": "Чтобы проверять мониторы",
+    "en": "To test monitors"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Перетаскивая карты, люди привыкали к мыши. Игру летом 1988 года написал стажёр Microsoft Уэс Черри.",
+   "en": "Dragging cards got people used to the mouse. A Microsoft intern, Wes Cherry, wrote it in the summer of 1988."
+  },
+  "source": "https://en.wikipedia.org/wiki/Microsoft_Solitaire",
+  "basedOn": "gadgets_024",
+  "refine": "same",
+  "id": "cur_gadgets_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему Стив Джобс назвал свою компанию Apple, по его собственным словам?",
+   "en": "Why did Steve Jobs name his company Apple, in his own words?"
+  },
+  "options": [
+   {
+    "ru": "Сидел на фруктовой диете",
+    "en": "He was on a fruit diet"
+   },
+   {
+    "ru": "В честь яблока Ньютона",
+    "en": "After Newton's apple"
+   },
+   {
+    "ru": "В честь лейбла группы «Битлз»",
+    "en": "After the Beatles' record label"
+   },
+   {
+    "ru": "Это любимый фрукт Возняка",
+    "en": "It was Wozniak's favourite fruit"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ещё название казалось весёлым и нестрашным, а в телефонном справочнике Apple стояла бы раньше Atari, где Джобс тогда работал.",
+   "en": "The name also sounded fun and not intimidating, and it put Apple ahead of Atari, where Jobs then worked, in the phone book."
+  },
+  "source": "https://en.wikipedia.org/wiki/History_of_Apple_Inc.",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_gadgets_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На рекламных фото iPhone часы почти всегда показывают 9:41. Почему?",
+   "en": "In Apple's ads the iPhone's clock almost always reads 9:41. Why?"
+  },
+  "options": [
+   {
+    "ru": "Тогда на презентации показывают новинку",
+    "en": "That's when keynotes reveal the product"
+   },
+   {
+    "ru": "Это время рождения Стива Джобса",
+    "en": "It's when Steve Jobs was born"
+   },
+   {
+    "ru": "В 9:41 основали компанию Apple",
+    "en": "Apple was founded at 9:41"
+   },
+   {
+    "ru": "Такие цифры лучше всего видно на экране",
+    "en": "Those digits look best on a phone screen"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Презентации начинаются в 9:00, и новинку показывают минут через сорок: часы на экране совпадают с часами зрителей. Первый iPhone показали в 9:42.",
+   "en": "Keynotes start at 9:00 and the product appears about 40 minutes in, so the screen matches the audience's watches. The first iPhone was shown at 9:42."
+  },
+  "source": "https://www.entrepreneur.com/article/239385",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_gadgets_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда у жёсткого диска кличка «винчестер»?",
+   "en": "Where did the hard drive get its nickname 'Winchester'?"
+  },
+  "options": [
+   {
+    "ru": "В честь винтовки",
+    "en": "After a rifle"
+   },
+   {
+    "ru": "По фамилии инженера",
+    "en": "After an engineer's surname"
+   },
+   {
+    "ru": "В честь города Винчестер",
+    "en": "After the city of Winchester"
+   },
+   {
+    "ru": "В честь собаки инженера",
+    "en": "After an engineer's dog"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У диска IBM 3340 (1973) было два модуля по 30 МБ — «30-30», как у знаменитой винтовки Winchester .30-30. Кличка прижилась.",
+   "en": "The IBM 3340 (1973) had two 30 MB modules, a '30-30', like the famous Winchester .30-30 rifle. The nickname stuck."
+  },
+  "source": "https://en.wikipedia.org/wiki/IBM_3340",
+  "basedOn": "gadgets_021",
+  "refine": "rewrite",
+  "id": "cur_gadgets_10"
+ },
+ {
+  "id": "cur_gadgets_11",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько оперативной памяти было у компьютера, который посадил «Аполлон-11» на Луну?",
+   "en": "How much working memory did the computer that landed Apollo 11 on the Moon have?"
+  },
+  "options": [
+   {
+    "ru": "Около 4 МБ",
+    "en": "About 4 MB"
+   },
+   {
+    "ru": "Около 400 КБ",
+    "en": "About 400 KB"
+   },
+   {
+    "ru": "Около 4 КБ",
+    "en": "About 4 KB"
+   },
+   {
+    "ru": "Около 4 ГБ",
+    "en": "About 4 GB"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "2048 слов по 16 бит, около 4 КБ: в миллионы раз меньше, чем у обычного смартфона. Компьютер весил 32 кг.",
+   "en": "2,048 words of 16 bits, about 4 KB: millions of times less than an ordinary smartphone. The computer weighed 32 kg."
+  },
+  "source": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer",
+  "basedOn": "gadgets_035",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Для чего в 1994 году придумали QR-код?",
+   "en": "What was the QR code invented for in 1994?"
+  },
+  "options": [
+   {
+    "ru": "Для меню в ресторанах",
+    "en": "Restaurant menus"
+   },
+   {
+    "ru": "Для учёта автодеталей",
+    "en": "Tracking car parts"
+   },
+   {
+    "ru": "Для билетов в метро",
+    "en": "Metro tickets"
+   },
+   {
+    "ru": "Для защиты банкнот",
+    "en": "Protecting banknotes"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Его придумал Масахиро Хара из японской Denso Wave, чтобы считать детали машин. Узор подсказали чёрные и белые камни игры го.",
+   "en": "Masahiro Hara of Japan's Denso Wave made it to keep track of car parts. The black and white stones of the game Go inspired the pattern."
+  },
+  "source": "https://en.wikipedia.org/wiki/QR_code",
+  "basedOn": "gadgets_025",
+  "refine": "rewrite",
+  "id": "cur_gadgets_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему Wi-Fi может сбоить, пока работает микроволновка?",
+   "en": "Why can Wi-Fi drop out while the microwave is running?"
+  },
+  "options": [
+   {
+    "ru": "Они работают на одной частоте",
+    "en": "They use the same frequency"
+   },
+   {
+    "ru": "Печь забирает много тока",
+    "en": "The oven draws a lot of power"
+   },
+   {
+    "ru": "Печь нагревает воздух в комнате",
+    "en": "The oven warms the room's air"
+   },
+   {
+    "ru": "Печь сбивает настройки роутера",
+    "en": "The oven resets the router"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Обычный Wi-Fi работает около 2,4 ГГц, а микроволновка греет еду волнами примерно той же частоты. Немного излучения выходит наружу и мешает сети.",
+   "en": "Ordinary Wi-Fi runs near 2.4 GHz, and a microwave heats food with waves of about the same frequency. A little leaks out and jams the network."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wi-Fi",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_gadgets_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что делали модемы, когда так пищали и скрежетали при подключении к интернету?",
+   "en": "What were dial-up modems doing when they screeched and squealed while connecting?"
+  },
+  "options": [
+   {
+    "ru": "Проверяли свой динамик",
+    "en": "Testing their speaker"
+   },
+   {
+    "ru": "Ничего: это шумела линия",
+    "en": "Nothing: it was line noise"
+   },
+   {
+    "ru": "Общались между собой звуками",
+    "en": "Talking to each other in sounds"
+   },
+   {
+    "ru": "Отпугивали тех, кто снимет трубку",
+    "en": "Scaring off anyone who picked up"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Телефонная линия передавала только звук, и модемы тонами проверяли её и договаривались о скорости. Это техника XX века пробиралась по сети XIX века.",
+   "en": "A phone line carried only sound, so modems tested it with tones and agreed on a speed. It was 20th century tech tunnelling through a 19th century network."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dial-up_Internet_access",
+  "basedOn": "gadgets_036",
+  "refine": "rewrite",
+  "id": "cur_gadgets_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первый компьютер Apple в 1976 году продавали за $666,66. Почему такая цена?",
+   "en": "In 1976 the first Apple computer sold for $666.66. Why that price?"
+  },
+  "options": [
+   {
+    "ru": "Возняк любил повторы цифр",
+    "en": "Wozniak liked repeating digits"
+   },
+   {
+    "ru": "Это шутка про «число зверя»",
+    "en": "A joke about the number of the beast"
+   },
+   {
+    "ru": "Ровно столько стоили детали",
+    "en": "That was exactly the parts' cost"
+   },
+   {
+    "ru": "Так совпал налог штата",
+    "en": "It was what state tax made it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Возняк говорил, что про «число зверя» даже не думал: ему нравились повторяющиеся цифры, а это была наценка в треть к оптовым $500.",
+   "en": "Wozniak said he never thought of the number of the beast: he liked repeating digits, and it was a one-third markup on the $500 wholesale price."
+  },
+  "source": "https://en.wikipedia.org/wiki/Apple_I",
+  "basedOn": "gadgets_018",
+  "refine": "rewrite",
+  "id": "cur_gadgets_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В IBM в 1981 году выбрали Ctrl+Alt+Del для перезагрузки. Почему именно эти клавиши?",
+   "en": "In 1981 IBM chose Ctrl+Alt+Del to restart a PC. Why those keys?"
+  },
+  "options": [
+   {
+    "ru": "Их не нажать одной рукой",
+    "en": "You can't press them one-handed"
+   },
+   {
+    "ru": "Это инициалы их создателя",
+    "en": "They are its creator's initials"
+   },
+   {
+    "ru": "Они стояли рядом",
+    "en": "They sat next to each other"
+   },
+   {
+    "ru": "Другие были уже заняты",
+    "en": "All other keys were taken"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ctrl+Alt+Esc жали случайно. Создатель Дэвид Брэдли шутил: «Может, я его и изобрёл, но, думаю, прославил его Билл» — им входили в Windows.",
+   "en": "Ctrl+Alt+Esc got hit by accident. Its creator David Bradley joked: 'I may have invented it, but I think Bill made it famous' (for the Windows login)."
+  },
+  "source": "https://en.wikipedia.org/wiki/Control-Alt-Delete",
+  "basedOn": "gadgets_019",
+  "refine": "rewrite",
+  "id": "cur_gadgets_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько граммов весил телефон, с которого Мартин Купер сделал первый звонок с мобильного?",
+   "en": "How many grams did the phone Martin Cooper used for the first mobile call weigh?"
+  },
+  "answer": 1100,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 50,
+  "tolerance": 400,
+  "unit": {
+   "ru": "г",
+   "en": "g"
+  },
+  "fact": {
+   "ru": "Больше килограмма, а батареи хватало на полчаса разговора; заряжалась она десять часов.",
+   "en": "Over a kilogram, and the battery gave 30 minutes of talk after ten hours of charging."
+  },
+  "source": "https://en.wikipedia.org/wiki/Martin_Cooper_(inventor)",
+  "basedOn": "gadgets_040",
+  "refine": "same",
+  "id": "cur_gadgets_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Первый успешный переносной компьютер Osborne 1 (1981) рекламировали: «влезает под кресло в самолёте». Сколько он весил?",
+   "en": "The Osborne 1 (1981), the first hit portable computer, was sold as fitting under an airline seat. How much did it weigh?"
+  },
+  "answer": 11,
+  "range": [
+   0,
+   50
+  ],
+  "step": 0.5,
+  "tolerance": 4,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "11,1 кг — как полное ведро воды. А экран у него был 5 дюймов, меньше, чем у большинства нынешних смартфонов.",
+   "en": "11.1 kg, like a full bucket of water. And its screen was just 5 inches, smaller than most of today's smartphones."
+  },
+  "source": "https://en.wikipedia.org/wiki/Osborne_1",
+  "basedOn": "gadgets_050",
+  "refine": "rewrite",
+  "id": "cur_gadgets_23"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "МКС летает примерно в 400 км над Землёй. А на какой высоте летают спутники GPS, по которым телефон находит себя?",
+   "en": "The ISS flies about 400 km above the Earth. How high are the GPS satellites your phone uses to find itself?"
+  },
+  "answer": 20200,
+  "range": [
+   0,
+   50000
+  ],
+  "step": 100,
+  "tolerance": 3000,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Около 20 200 км, в 50 раз выше МКС. Часы там из-за теории относительности спешат, и без поправки GPS ошибался бы на 11 км в сутки.",
+   "en": "About 20,200 km, 50 times higher than the ISS. Relativity makes their clocks run fast: uncorrected, GPS would drift about 11 km a day."
+  },
+  "source": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_gadgets_24"
+ },
+ {
+  "id": "cur_gadgets_20",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Почти весь интернет между континентами идёт по кабелям на дне океана. Какой толщины такой кабель?",
+   "en": "Almost all internet traffic between continents runs through cables on the seabed. How thick is such a cable?"
+  },
+  "answer": 25,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "мм",
+   "en": "mm"
+  },
+  "fact": {
+   "ru": "Обычно около 25 мм, как садовый шланг; на глубине бывают и тоньше, а у берега их одевают в броню. По ним идёт 99% данных через океаны.",
+   "en": "Typically about 25 mm, like a garden hose; some deep-sea ones are thinner, and near shore they are armoured. They carry 99% of data across oceans."
+  },
+  "source": "https://en.wikipedia.org/wiki/Submarine_communications_cable",
+  "basedOn": null,
+  "refine": "new"
+ }
+]

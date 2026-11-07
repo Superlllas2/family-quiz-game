@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Значок этой технологии сложен из двух рун, инициалов датского короля X века. Что это за технология?",
+   "en": "This technology's logo is made of two runes, the initials of a 10th-century Danish king. What is it?"
+  },
+  "options": [
+   {
+    "ru": "Bluetooth (блютуз)",
+    "en": "Bluetooth"
+   },
+   {
+    "ru": "Wi-Fi (вай-фай)",
+    "en": "Wi-Fi"
+   },
+   {
+    "ru": "Thunderbolt (тандерболт)",
+    "en": "Thunderbolt"
+   },
+   {
+    "ru": "Linux (линукс)",
+    "en": "Linux"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Король Харальд Синезубый объединил Данию, как технология объединяет устройства. Руны — его инициалы H и B.",
+   "en": "King Harald Bluetooth united Denmark, as the technology unites devices. The runes are his initials, H and B."
+  },
+  "source": "https://en.wikipedia.org/wiki/Harald_Bluetooth",
+  "basedOn": "medieval_002",
+  "refine": "rewrite",
+  "id": "cur_medieval_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему Эрик Рыжий, если верить саге, назвал ледяной остров Гренландией, «зелёной землёй»?",
+   "en": "According to the saga, why did Erik the Red call an icy island Greenland?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы заманить поселенцев",
+    "en": "To lure settlers"
+   },
+   {
+    "ru": "В честь жены по имени Грен",
+    "en": "After his wife, Gren"
+   },
+   {
+    "ru": "Так звали его корабль",
+    "en": "It was his ship's name"
+   },
+   {
+    "ru": "Принял ледник за луг",
+    "en": "He took a glacier for a meadow"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сага прямо пишет: люди охотнее поедут туда, где у земли хорошее имя. И около 985 года поселенцы правда приплыли.",
+   "en": "The saga says it outright: people would be keener to go if the land had a good name. And around 985 settlers did come."
+  },
+  "source": "https://en.wikipedia.org/wiki/Erik_the_Red",
+  "basedOn": "medieval_027",
+  "refine": "rewrite",
+  "id": "cur_medieval_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Китайские алхимики искали эликсир вечной жизни. Что, как считается, они открыли вместо него?",
+   "en": "Chinese alchemists were seeking an elixir of eternal life. What, it is thought, did they discover instead?"
+  },
+  "options": [
+   {
+    "ru": "Порох",
+    "en": "Gunpowder"
+   },
+   {
+    "ru": "Фарфор",
+    "en": "Porcelain"
+   },
+   {
+    "ru": "Шёлк",
+    "en": "Silk"
+   },
+   {
+    "ru": "Чай",
+    "en": "Tea"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Даосский трактат IX века предупреждал: от смеси серы, селитры и мёда у алхимиков горели руки, лица и даже дома.",
+   "en": "A 9th-century Taoist text warned that heating sulfur, saltpetre and honey burnt alchemists' hands, faces and even houses."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gunpowder",
+  "basedOn": "medieval_003",
+  "refine": "rewrite",
+  "id": "cur_medieval_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Колумб доплыл до Америки в 1492 году. Кто, как доказали учёные, рубил там лес уже в 1021-м?",
+   "en": "Columbus reached America in 1492. Who, scientists have shown, was already cutting timber there in 1021?"
+  },
+  "options": [
+   {
+    "ru": "Викинги",
+    "en": "Vikings"
+   },
+   {
+    "ru": "Ирландские монахи",
+    "en": "Irish monks"
+   },
+   {
+    "ru": "Китайские моряки",
+    "en": "Chinese sailors"
+   },
+   {
+    "ru": "Баски-китобои",
+    "en": "Basque whalers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Год нашли по кольцам срубленных деревьев: в них есть метка, скачок углерода-14 в 993 году. Место — Ньюфаундленд.",
+   "en": "The year comes from the felled trees' rings, which carry a marker: a carbon-14 spike in 993. The place: Newfoundland."
+  },
+  "source": "https://en.wikipedia.org/wiki/L%27Anse_aux_Meadows",
+  "basedOn": "medieval_009",
+  "refine": "rewrite",
+  "id": "cur_medieval_04"
+ },
+ {
+  "id": "cur_medieval_05",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На средневековом пиру тарелки после еды съедали или раздавали беднякам. Из чего они были?",
+   "en": "At a medieval feast the plates were eaten or given to the poor afterwards. What were they made of?"
+  },
+  "options": [
+   {
+    "ru": "Чёрствый хлеб",
+    "en": "Stale bread"
+   },
+   {
+    "ru": "Лист капусты",
+    "en": "A cabbage leaf"
+   },
+   {
+    "ru": "Круг твёрдого сыра",
+    "en": "A round of hard cheese"
+   },
+   {
+    "ru": "Корка тыквы",
+    "en": "A pumpkin rind"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ломоть чёрствого хлеба, тренчер, впитывал подливу. Позже тренчером стали звать плоскую тарелку из дерева или металла.",
+   "en": "A slab of stale bread, the trencher, soaked up the sauce. Later the name passed to a flat plate of wood or metal."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trencher_(tableware)",
+  "basedOn": "medieval_020",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Горгульи на готических соборах — не просто страшные статуи. Какую работу они выполняют?",
+   "en": "Gargoyles on Gothic cathedrals aren't just scary statues. What job do they do?"
+  },
+  "options": [
+   {
+    "ru": "Отводят воду с крыши",
+    "en": "Drain rain off the roof"
+   },
+   {
+    "ru": "Подпирают стены собора",
+    "en": "Prop up the cathedral walls"
+   },
+   {
+    "ru": "Служат громоотводом",
+    "en": "Act as lightning rods"
+   },
+   {
+    "ru": "Проветривают чердак",
+    "en": "Air the attic"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это водостоки: вода бьёт из пасти подальше от стен. Имя от французского gargouille, «глотка», и от бульканья воды.",
+   "en": "They are rainspouts that throw water clear of the walls. The name is French gargouille, 'throat', after the gurgle."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gargoyle",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_medieval_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Маска с клювом — главный образ чумы. Когда врача в таком костюме впервые описали?",
+   "en": "The beaked mask is the classic image of plague. When was a doctor in that costume first described?"
+  },
+  "options": [
+   {
+    "ru": "В XVII веке, при Людовике XIII",
+    "en": "In the 1600s, under Louis XIII"
+   },
+   {
+    "ru": "В XIV веке, в Чёрную смерть",
+    "en": "In the 1300s, in the Black Death"
+   },
+   {
+    "ru": "В XII веке, в Крестовые походы",
+    "en": "In the 1100s, in the Crusades"
+   },
+   {
+    "ru": "В XIX веке, во время холеры",
+    "en": "In the 1800s, in a cholera epidemic"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его описал врач Людовика XIII Шарль де Лорм в 1619 году. Свидетельств, что маску носили в Средние века, нет.",
+   "en": "Louis XIII's physician Charles de Lorme described it in 1619. There is no evidence the mask was worn in the Middle Ages."
+  },
+  "source": "https://en.wikipedia.org/wiki/Plague_doctor_costume",
+  "basedOn": "medieval_018",
+  "refine": "rewrite",
+  "id": "cur_medieval_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Символом средневекового врача был не стетоскоп, а стеклянная колба. Что он в ней разглядывал?",
+   "en": "The medieval doctor's emblem wasn't a stethoscope but a glass flask. What did he examine in it?"
+  },
+  "options": [
+   {
+    "ru": "Мочу",
+    "en": "Urine"
+   },
+   {
+    "ru": "Кровь",
+    "en": "Blood"
+   },
+   {
+    "ru": "Слюну",
+    "en": "Saliva"
+   },
+   {
+    "ru": "Лекарство",
+    "en": "Medicine"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Цвет сверяли с «колесом» из двадцати колб разных оттенков: у каждого оттенка своя болезнь.",
+   "en": "The colour was matched against a wheel of twenty flasks of different shades, each linked to a disease."
+  },
+  "source": "https://en.wikipedia.org/wiki/Uroscopy",
+  "basedOn": "medieval_021",
+  "refine": "rewrite",
+  "id": "cur_medieval_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Адвокат объяснил суду, почему его подзащитные не явились: по дороге их подстерегают кошки. Кого он защищал?",
+   "en": "A lawyer told the court why his clients hadn't come: cats lay in wait for them on the way. Who were they?"
+  },
+  "options": [
+   {
+    "ru": "Крыс",
+    "en": "Rats"
+   },
+   {
+    "ru": "Голубей",
+    "en": "Pigeons"
+   },
+   {
+    "ru": "Кроликов",
+    "en": "Rabbits"
+   },
+   {
+    "ru": "Воробьёв",
+    "en": "Sparrows"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Животных судили с XIII века. Во Франции крыс судили за съеденный ячмень, и на этом, по рассказу, прославился адвокат Шассене.",
+   "en": "Animals were tried from the 13th century on. In France rats were tried for eating barley; the story goes it made lawyer Chassenée famous."
+  },
+  "source": "https://www.gutenberg.org/ebooks/43286",
+  "basedOn": "medieval_022",
+  "refine": "rewrite",
+  "id": "cur_medieval_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На пирах эту птицу снимали со шкурой и перьями, жарили и одевали обратно, будто живую. Какую?",
+   "en": "At feasts this bird was skinned with its feathers, roasted and dressed again as if alive. Which bird?"
+  },
+  "options": [
+   {
+    "ru": "Павлина",
+    "en": "A peacock"
+   },
+   {
+    "ru": "Индейку",
+    "en": "A turkey"
+   },
+   {
+    "ru": "Страуса",
+    "en": "An ostrich"
+   },
+   {
+    "ru": "Попугая",
+    "en": "A parrot"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так подавали павлинов и лебедей. А индейки в средневековой Европе не было: испанцы привезли её из Америки лишь в XVI веке.",
+   "en": "Peacocks and swans were served this way. There were no turkeys in medieval Europe: the Spanish brought them from America in the 1500s."
+  },
+  "source": "https://en.wikipedia.org/wiki/Entremet",
+  "basedOn": "medieval_019",
+  "refine": "rewrite",
+  "id": "cur_medieval_21"
+ },
+ {
+  "id": "cur_medieval_11",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Самураи XII века были прежде всего воинами-всадниками. Каким было их главное оружие?",
+   "en": "The samurai of the 12th century were above all mounted warriors. What was their main weapon?"
+  },
+  "options": [
+   {
+    "ru": "Лук",
+    "en": "The bow"
+   },
+   {
+    "ru": "Катана",
+    "en": "The katana"
+   },
+   {
+    "ru": "Копьё",
+    "en": "The spear"
+   },
+   {
+    "ru": "Сюрикен",
+    "en": "The shuriken"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Жизнь воина звали «путём коня и лука». Примерно с XII по XVI век символом самурая был именно лук.",
+   "en": "A warrior's life was called 'the way of the horse and bow'. From about the 12th to the 16th century the bow was his emblem."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ky%C5%ABjutsu",
+  "basedOn": "medieval_016",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Задолго до лётчиков-смертников японское слово «камикадзе» означало совсем другое. Что?",
+   "en": "Long before the suicide pilots, the Japanese word kamikaze meant something else. What?"
+  },
+  "options": [
+   {
+    "ru": "Бурю, разбившую флот монголов",
+    "en": "The storm that sank the Mongols"
+   },
+   {
+    "ru": "Воинов, бившихся до смерти",
+    "en": "Warriors who fought to the death"
+   },
+   {
+    "ru": "Огненные стрелы самураев",
+    "en": "The samurai's fire arrows"
+   },
+   {
+    "ru": "Пиратов на лёгких быстрых лодках",
+    "en": "Pirates in fast light boats"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Божественный ветер»: бури 1274 и 1281 годов дважды разметали флот Хубилая. Японцы сочли их помощью богов.",
+   "en": "'Divine wind': storms in 1274 and 1281 twice scattered Kublai Khan's fleet. The Japanese saw them as the gods' help."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mongol_invasions_of_Japan",
+  "basedOn": "medieval_030",
+  "refine": "rewrite",
+  "id": "cur_medieval_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Викинги нанимались на службу к императорам Константинополя. Какой след оставил один из них в соборе Святой Софии?",
+   "en": "Vikings hired themselves out to Constantinople's emperors. What trace did one of them leave in Hagia Sophia?"
+  },
+  "options": [
+   {
+    "ru": "Надпись «Здесь был Хальвдан»",
+    "en": "Runes: 'Halvdan was here'"
+   },
+   {
+    "ru": "Топор, вбитый в мраморную колонну",
+    "en": "An axe driven into a marble column"
+   },
+   {
+    "ru": "Клад серебра под плитой пола",
+    "en": "A silver hoard under a floor slab"
+   },
+   {
+    "ru": "Щит, прибитый над алтарём",
+    "en": "A shield nailed above the altar"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Руны нацарапаны на мраморе, видимо, скучавшим наёмником. Читают их как «Хальвдан был здесь».",
+   "en": "The runes are scratched into the marble, probably by a bored mercenary. They read 'Halvdan was here'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+  "basedOn": "medieval_026",
+  "refine": "rewrite",
+  "id": "cur_medieval_13"
+ },
+ {
+  "id": "cur_medieval_14",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Ричард Львиное Сердце предложил Саладину поделить Иерусалим. Как?",
+   "en": "Richard the Lionheart offered Saladin a way to share Jerusalem. How?"
+  },
+  "options": [
+   {
+    "ru": "Выдать сестру за брата Саладина",
+    "en": "His sister weds Saladin's brother"
+   },
+   {
+    "ru": "Править им по очереди, год через год",
+    "en": "Take turns ruling it, a year each"
+   },
+   {
+    "ru": "Разделить город стеной пополам",
+    "en": "Split the city in two with a wall"
+   },
+   {
+    "ru": "Решить спор поединком королей",
+    "en": "Settle it by a duel of kings"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Иерусалим стал бы свадебным подарком. Но брак не состоялся: не договорились о вере. А сами Ричард и Саладин так и не встретились.",
+   "en": "Jerusalem would have been the wedding gift. But no marriage came of it: they could not agree on religion. Richard and Saladin never even met."
+  },
+  "source": "https://en.wikipedia.org/wiki/Saladin",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В средневековом замке дорогую одежду, по одной версии, вешали прямо в туалете. Зачем?",
+   "en": "In a medieval castle, one theory says, fine clothes were hung right in the toilet. Why?"
+  },
+  "options": [
+   {
+    "ru": "Вонь убивала блох",
+    "en": "The stench killed fleas"
+   },
+   {
+    "ru": "Там было теплее всего",
+    "en": "It was the warmest spot"
+   },
+   {
+    "ru": "Там её не украдут",
+    "en": "No one would steal them there"
+   },
+   {
+    "ru": "Там было суше всего",
+    "en": "It was the driest spot"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Аммиак из нечистот будто бы морил блох в ткани. Отсюда, возможно, и слово garderobe — «хранитель одежды».",
+   "en": "Ammonia from the waste supposedly killed the fleas in the cloth. Hence, perhaps, the word garderobe: 'keeper of robes'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Garderobe",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_medieval_15"
+ },
+ {
+  "id": "cur_medieval_16",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда, скорее всего, взялся знаменитый чёрный костюм ниндзя?",
+   "en": "Where did the famous black ninja outfit most likely come from?"
+  },
+  "options": [
+   {
+    "ru": "Из японского театра",
+    "en": "From Japanese theatre"
+   },
+   {
+    "ru": "Ночью чёрное незаметнее",
+    "en": "Black hides best at night"
+   },
+   {
+    "ru": "Цвет траура по господину",
+    "en": "Mourning for their lord"
+   },
+   {
+    "ru": "Так велел закон сёгуна",
+    "en": "A shogun's law required it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Скорее всего, из театра: рабочие сцены там ходят в чёрном, и их «не видно». Ниндзя на сцене одевали так же, чтобы удар был внезапным.",
+   "en": "Most likely from theatre: stagehands there wear black and are 'unseen'. Stage ninja were dressed the same, so their attack came as a surprise."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ninja",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет на самом деле длилась Столетняя война между Англией и Францией?",
+   "en": "How many years did the Hundred Years' War between England and France really last?"
+  },
+  "answer": 116,
+  "range": [
+   50,
+   250
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "С 1337 по 1453 год с долгими перемириями, и в итоге Англия потеряла во Франции всё, кроме Кале.",
+   "en": "From 1337 to 1453 with long truces, and in the end England lost everything it held in France except Calais."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hundred_Years%27_War",
+  "basedOn": "medieval_039",
+  "refine": "rewrite",
+  "id": "cur_medieval_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В кино рыцарь в латах еле двигается. Сколько килограммов на самом деле весил полный боевой латный доспех?",
+   "en": "In films a knight in plate armour can barely move. How many kg did a full suit of battle plate really weigh?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Обычно 15–25 кг, и вес лежал на всём теле: в латах бегали и прыгали. До 50 кг весили лишь турнирные доспехи.",
+   "en": "Usually 15–25 kg, spread over the whole body: knights could run and jump in it. Only jousting armour reached 50 kg."
+  },
+  "source": "https://en.wikipedia.org/wiki/Plate_armour",
+  "basedOn": "medieval_046",
+  "refine": "rewrite",
+  "id": "cur_medieval_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Жанна д'Арк без всякого военного опыта повела войско и за девять дней сняла осаду Орлеана. Сколько ей было лет?",
+   "en": "With no military experience, Joan of Arc led an army and lifted the siege of Orléans in nine days. How old was she?"
+  },
+  "answer": 17,
+  "range": [
+   5,
+   80
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Около 17: она родилась около 1412 года, а Орлеан освободила в мае 1429-го. Через два года, в 19 лет, её сожгли.",
+   "en": "About 17: born around 1412, she freed Orléans in May 1429. Two years later, at 19, she was burned at the stake."
+  },
+  "source": "https://en.wikipedia.org/wiki/Joan_of_Arc",
+  "basedOn": "medieval_045",
+  "refine": "rewrite",
+  "id": "cur_medieval_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Рыцарем становились годам к двадцати одному. А во сколько лет мальчика отправляли в замок учиться — пажом?",
+   "en": "A boy might be knighted at about 21. At what age was he sent to a castle to start training, as a page?"
+  },
+  "answer": 7,
+  "range": [
+   0,
+   30
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "Около семи. Паж прислуживал за столом, чистил оружие, учился ездить верхом, охотиться и играть в шахматы, а в 14 становился оруженосцем.",
+   "en": "At about seven. A page served at table, cleaned weapons and learned riding, hunting and chess; at 14 he became a squire."
+  },
+  "source": "https://en.wikipedia.org/wiki/Page_(occupation)",
+  "basedOn": "medieval_007",
+  "refine": "rewrite",
+  "id": "cur_medieval_22"
+ }
+]

@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как растёт ананас?",
+   "en": "How does a pineapple grow?"
+  },
+  "options": [
+   {
+    "ru": "На низком кусте у земли",
+    "en": "On a short bush"
+   },
+   {
+    "ru": "На пальме, гроздьями",
+    "en": "In bunches on a palm"
+   },
+   {
+    "ru": "На лиане, как виноград",
+    "en": "On a vine, like grapes"
+   },
+   {
+    "ru": "Под землёй, как картошка",
+    "en": "Underground, like a potato"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ананас растёт по одному на макушке растения высотой около метра. И это не один плод: в него срастаются плоды почти от 200 цветков.",
+   "en": "A pineapple grows singly on top of a plant about a metre tall. It isn't one fruit: the fruits of up to 200 flowers grow together."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pineapple",
+  "basedOn": "plants_014",
+  "refine": "rewrite",
+  "id": "cur_plants_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На бледную поганку приходится большинство смертельных отравлений грибами. Чем она так коварна?",
+   "en": "The death cap causes most fatal mushroom poisonings. What makes it so treacherous?"
+  },
+  "options": [
+   {
+    "ru": "Яд проявляется через 6–12 часов",
+    "en": "Symptoms show 6 to 12 hours later"
+   },
+   {
+    "ru": "Она ядовита, только если её не варить",
+    "en": "It's only poisonous if not cooked"
+   },
+   {
+    "ru": "Её яд опасен только для детей",
+    "en": "Its poison only harms children"
+   },
+   {
+    "ru": "Она обжигает руки при касании",
+    "en": "It burns your hands if touched"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Первые признаки приходят, когда печень уже поражена. А яд не разрушают ни варка, ни сушка, ни заморозка.",
+   "en": "The first symptoms come when the liver is already damaged. And cooking, drying or freezing does not destroy the poison."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amanita_phalloides",
+  "basedOn": "plants_008",
+  "refine": "rewrite",
+  "id": "cur_plants_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда у осенних листьев берётся жёлтый цвет?",
+   "en": "Where does the yellow in autumn leaves come from?"
+  },
+  "options": [
+   {
+    "ru": "Он был в листе всё лето",
+    "en": "It was there all summer"
+   },
+   {
+    "ru": "Его даёт первый мороз",
+    "en": "The first frost makes it"
+   },
+   {
+    "ru": "Лист выгорает на солнце",
+    "en": "The sun bleaches the leaf"
+   },
+   {
+    "ru": "Его приносят дожди",
+    "en": "The rains bring it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Жёлтые пигменты есть в листе всё лето, но их заслоняет зелёный хлорофилл. Осенью дерево его разбирает, и жёлтый проступает.",
+   "en": "The yellow pigments are in the leaf all summer, hidden by green chlorophyll. In autumn the tree breaks it down and the yellow shows."
+  },
+  "source": "https://en.wikipedia.org/wiki/Autumn_leaf_color",
+  "basedOn": "plants_013",
+  "refine": "rewrite",
+  "id": "cur_plants_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Мимозу стыдливую так назвали за то, что она делает от прикосновения. Что?",
+   "en": "The \"shy plant\" mimosa got its name from what it does when touched. What?"
+  },
+  "options": [
+   {
+    "ru": "Складывает листья",
+    "en": "Folds up its leaves"
+   },
+   {
+    "ru": "Краснеет",
+    "en": "Blushes red"
+   },
+   {
+    "ru": "Роняет цветы",
+    "en": "Drops its flowers"
+   },
+   {
+    "ru": "Выпускает облачко пыльцы",
+    "en": "Puffs out a cloud of pollen"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Листочки за секунды схлопываются и никнут, а через несколько минут раскрываются снова. Похоже, так она отпугивает насекомых.",
+   "en": "Its leaflets fold and droop within seconds and reopen a few minutes later. It seems to scare off insects that way."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mimosa_pudica",
+  "basedOn": "plants_011",
+  "refine": "rewrite",
+  "id": "cur_plants_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Раффлезия — самый большой цветок на Земле, около метра в ширину. Чем он пахнет?",
+   "en": "Rafflesia is the largest flower on Earth, about a metre across. What does it smell of?"
+  },
+  "options": [
+   {
+    "ru": "Тухлым мясом",
+    "en": "Rotting meat"
+   },
+   {
+    "ru": "Ванилью",
+    "en": "Vanilla"
+   },
+   {
+    "ru": "Мёдом",
+    "en": "Honey"
+   },
+   {
+    "ru": "Мокрой травой",
+    "en": "Freshly cut grass"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Запах падали приманивает мух, и они опыляют цветок. У раффлезии нет ни листьев, ни стебля, ни корней: она живёт внутри лианы.",
+   "en": "The smell of carrion draws the flies that pollinate it. Rafflesia has no leaves, stem or roots: it lives inside a vine."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rafflesia_arnoldii",
+  "basedOn": "plants_003",
+  "refine": "rewrite",
+  "id": "cur_plants_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем отличаются зелёный и красный болгарский перец?",
+   "en": "What is the difference between a green and a red bell pepper?"
+  },
+  "options": [
+   {
+    "ru": "Зелёный — недозрелый",
+    "en": "The green one is unripe"
+   },
+   {
+    "ru": "Это разные виды",
+    "en": "They are different species"
+   },
+   {
+    "ru": "Красный подкрашивают",
+    "en": "The red one is dyed"
+   },
+   {
+    "ru": "Красный растёт на юге",
+    "en": "The red one grows further south"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Красный перец — это обычно тот же зелёный, только созревший: на кусте он меняет цвет. Но есть сорта, которые и спелыми остаются зелёными.",
+   "en": "A red pepper is usually just a green one that has ripened on the plant. A few varieties, though, stay green even when ripe."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bell_pepper",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_plants_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Куда смотрят взрослые цветущие подсолнухи?",
+   "en": "Which way do mature sunflowers in bloom face?"
+  },
+  "options": [
+   {
+    "ru": "На восток, весь день",
+    "en": "East, all day"
+   },
+   {
+    "ru": "Вслед за солнцем весь день",
+    "en": "They follow the sun all day"
+   },
+   {
+    "ru": "На запад, весь день",
+    "en": "West, all day"
+   },
+   {
+    "ru": "Каждый куда придётся",
+    "en": "Each one any way at all"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "За солнцем поворачиваются только молодые подсолнухи. Распустившись, цветок замирает лицом на восток: утреннее солнце греет его, и пчёл прилетает больше.",
+   "en": "Only young sunflowers track the sun; once in bloom they stay facing east, where the morning sun warms them and draws more bees."
+  },
+  "source": "https://en.wikipedia.org/wiki/Common_sunflower",
+  "basedOn": "plants_023",
+  "refine": "same",
+  "id": "cur_plants_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто ближайший родственник помидора из этого списка?",
+   "en": "Which of these is the tomato's closest relative?"
+  },
+  "options": [
+   {
+    "ru": "Картофель",
+    "en": "Potato"
+   },
+   {
+    "ru": "Огурец",
+    "en": "Cucumber"
+   },
+   {
+    "ru": "Земляника",
+    "en": "Strawberry"
+   },
+   {
+    "ru": "Морковь",
+    "en": "Carrot"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Томат и картофель из одного рода паслён. Их можно даже привить друг на друга: сверху растут помидоры, а в земле картошка.",
+   "en": "Tomato and potato share a genus: graft one onto the other and you get tomatoes on top and potatoes in the ground."
+  },
+  "source": "https://en.wikipedia.org/wiki/TomTato",
+  "basedOn": "plants_028",
+  "refine": "rewrite",
+  "id": "cur_plants_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как венерина мухоловка отличает муху от капли дождя?",
+   "en": "How does a Venus flytrap tell a fly from a raindrop?"
+  },
+  "options": [
+   {
+    "ru": "Считает касания",
+    "en": "It counts the touches"
+   },
+   {
+    "ru": "Чувствует тепло тела",
+    "en": "It senses body heat"
+   },
+   {
+    "ru": "Различает вкус",
+    "en": "It tastes the difference"
+   },
+   {
+    "ru": "Никак, хлопает на всё",
+    "en": "It can't: it snaps at all"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ловушка захлопывается, только если чувствительные волоски задеты дважды примерно за 20 секунд, а переваривать начинает после пяти касаний.",
+   "en": "The trap shuts only if its trigger hairs are touched twice within about 20 seconds, and starts digesting after five touches."
+  },
+  "source": "https://en.wikipedia.org/wiki/Venus_flytrap",
+  "basedOn": "plants_032",
+  "refine": "rewrite",
+  "id": "cur_plants_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зверёк тупайя лижет сладкое с крышки хищного растения-кувшина. Чем он ему полезен?",
+   "en": "A tree shrew licks sweet stuff off a carnivorous pitcher plant's lid. How does it help the plant?"
+  },
+  "options": [
+   {
+    "ru": "Оставляет в нём помёт",
+    "en": "It leaves droppings in it"
+   },
+   {
+    "ru": "Опыляет его цветки",
+    "en": "It pollinates its flowers"
+   },
+   {
+    "ru": "Разносит его семена",
+    "en": "It spreads its seeds"
+   },
+   {
+    "ru": "Загоняет в него насекомых",
+    "en": "It herds insects into it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кувшин непентеса Лоу с Борнео работает как унитаз для тупайи: из её помёта растение берёт больше половины азота.",
+   "en": "The pitcher of Borneo's Nepenthes lowii works as a tree shrew toilet: the plant gets over half its nitrogen from the droppings."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nepenthes_lowii",
+  "basedOn": "plants_033",
+  "refine": "rewrite",
+  "id": "cur_plants_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Гриб, вдохновивший игру The Last of Us, заражает муравьёв. Что он заставляет делать муравья?",
+   "en": "The fungus behind the game The Last of Us infects ants. What does it make an ant do?"
+  },
+  "options": [
+   {
+    "ru": "Залезть на лист и вцепиться",
+    "en": "Climb a leaf and bite down"
+   },
+   {
+    "ru": "Напасть на царицу муравейника",
+    "en": "Attack the colony's queen"
+   },
+   {
+    "ru": "Броситься в ближайший ручей",
+    "en": "Jump into the nearest stream"
+   },
+   {
+    "ru": "Закопаться глубоко в землю",
+    "en": "Bury itself deep underground"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Муравей мёртвой хваткой вцепляется в жилку листа повыше над землёй. Потом из его головы прорастает гриб и сыплет споры вниз.",
+   "en": "The ant clamps its jaws onto a leaf vein high above the ground. Then the fungus grows out of its head and rains spores down."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ophiocordyceps_unilateralis",
+  "basedOn": "plants_036",
+  "refine": "rewrite",
+  "id": "cur_plants_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему птицы спокойно клюют самый острый перец?",
+   "en": "Why can birds eat the hottest chilli peppers?"
+  },
+  "options": [
+   {
+    "ru": "Они не чувствуют жгучести",
+    "en": "They don't feel the burn"
+   },
+   {
+    "ru": "Их защищает роговой клюв",
+    "en": "Their horny beak protects them"
+   },
+   {
+    "ru": "Они запивают водой",
+    "en": "They wash it down with water"
+   },
+   {
+    "ru": "Жгучесть гасит птичья слюна",
+    "en": "Bird saliva kills the heat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Птичий рецептор боли не реагирует на капсаицин. Перец жжётся для зверей, которые разжёвывают семена, а птицы разносят их целыми.",
+   "en": "Birds' pain receptor ignores capsaicin. The pepper burns mammals, which chew up its seeds, while birds spread them whole."
+  },
+  "source": "https://en.wikipedia.org/wiki/Capsaicin",
+  "basedOn": "plants_038",
+  "refine": "rewrite",
+  "id": "cur_plants_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Свиньи отлично чуют трюфели. Почему же в Италии их ищут только с собаками?",
+   "en": "Pigs are great at smelling truffles. So why do Italians hunt them only with dogs?"
+  },
+  "options": [
+   {
+    "ru": "Свиньи съедают находку",
+    "en": "Pigs eat what they find"
+   },
+   {
+    "ru": "Собаки чуют их глубже",
+    "en": "Dogs smell them deeper down"
+   },
+   {
+    "ru": "Свиньи пугают туристов",
+    "en": "Pigs scare the tourists"
+   },
+   {
+    "ru": "Собак легче возить",
+    "en": "Dogs are easier to transport"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Свинья норовит съесть трюфель и разрывает грибницу, а собака трюфели не ест. С 1985 года искать их со свиньями в Италии запрещено.",
+   "en": "A pig tries to eat the truffle and tears up the fungus underground; a dog doesn't want it. Italy banned truffle pigs in 1985."
+  },
+  "source": "https://en.wikipedia.org/wiki/Truffle",
+  "basedOn": "plants_021",
+  "refine": "rewrite",
+  "id": "cur_plants_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из початка кукурузы торчит пучок шелковистых нитей. Сколько зёрнышек приходится на одну нить?",
+   "en": "A tuft of silky threads sticks out of an ear of corn. How many kernels does each thread belong to?"
+  },
+  "options": [
+   {
+    "ru": "Одно",
+    "en": "One"
+   },
+   {
+    "ru": "Около десяти",
+    "en": "About ten"
+   },
+   {
+    "ru": "Целый ряд",
+    "en": "A whole row"
+   },
+   {
+    "ru": "Ни одного",
+    "en": "None"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Каждая нить ведёт к своему цветку на початке. Пыльца, попавшая на нить, даёт одно зёрнышко, а без пыльцы оно не вырастет.",
+   "en": "Each thread leads to its own flower on the cob. Pollen landing on the thread makes one kernel; without pollen, no kernel grows."
+  },
+  "source": "https://en.wikipedia.org/wiki/Maize",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_plants_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Под карибским деревом манцинеллой нельзя прятаться от дождя. Почему?",
+   "en": "You must never shelter from the rain under the Caribbean manchineel tree. Why?"
+  },
+  "options": [
+   {
+    "ru": "Капли с листьев обжигают",
+    "en": "Drips from the leaves burn"
+   },
+   {
+    "ru": "В него часто бьют молнии",
+    "en": "Lightning often strikes it"
+   },
+   {
+    "ru": "На нём живут змеи",
+    "en": "Snakes live in it"
+   },
+   {
+    "ru": "С него падают тяжёлые плоды",
+    "en": "Heavy fruit falls from it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сок манцинеллы так едок, что даже дождевая вода с её листьев вызывает волдыри. Испанцы зовут её плод «яблочком смерти».",
+   "en": "Its sap is so caustic that even rain dripping off the leaves raises blisters. The Spanish call its fruit the \"little apple of death\"."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hippomane_mancinella",
+  "basedOn": "plants_031",
+  "refine": "rewrite",
+  "id": "cur_plants_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что общего у брокколи, цветной капусты, кольраби и брюссельской капусты?",
+   "en": "What do broccoli, cauliflower, kohlrabi and Brussels sprouts have in common?"
+  },
+  "options": [
+   {
+    "ru": "Это один вид растения",
+    "en": "They are one plant species"
+   },
+   {
+    "ru": "Все родом из Китая",
+    "en": "All come from China"
+   },
+   {
+    "ru": "Это всё соцветия",
+    "en": "They are all flower heads"
+   },
+   {
+    "ru": "Это гибриды капусты и редьки",
+    "en": "They are cabbage-radish hybrids"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Всё это, как и белокочанная капуста, — один дикий вид, капуста огородная. Люди веками выбирали у неё то бутоны, то стебель, то листья.",
+   "en": "All of them, like white cabbage, are one wild species, Brassica oleracea. Over centuries people bred it for buds, stems or leaves."
+  },
+  "source": "https://en.wikipedia.org/wiki/Brassica_oleracea",
+  "basedOn": "plants_027",
+  "refine": "rewrite",
+  "id": "cur_plants_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Девятиэтажный дом — около 30 метров. Какой высоты секвойя Гиперион, самое высокое известное дерево?",
+   "en": "A nine-storey building is about 30 metres tall. How tall is the redwood Hyperion, the tallest known tree?"
+  },
+  "answer": 116,
+  "range": [
+   20,
+   300
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Около 116 метров, почти четыре девятиэтажки. Его нашли только в 2006 году, а теперь подходить к нему запрещено: штраф до 5000 долларов.",
+   "en": "About 116 metres, almost four such buildings. It was found only in 2006; going near it is now banned, with fines of up to $5,000."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hyperion_(tree)",
+  "basedOn": "plants_040",
+  "refine": "rewrite",
+  "id": "cur_plants_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Школьник вырастает за год сантиметров на пять. А на сколько см в сутки может вырасти бамбук, по Книге Гиннесса?",
+   "en": "A schoolchild grows about 5 cm a year. By the Guinness record, how many cm can bamboo grow in one day?"
+  },
+  "answer": 91,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "До 91 см в сутки, почти 4 см в час: такой рост можно заметить на глаз.",
+   "en": "Up to 91 cm a day, almost 4 cm an hour: you can watch it grow."
+  },
+  "source": "https://www.guinnessworldrecords.com/world-records/fastest-growing-plant",
+  "basedOn": "plants_041",
+  "refine": "rewrite",
+  "id": "cur_plants_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В цветке крокуса всего три нити шафрана. Сколько цветков нужно собрать на 1 грамм шафрана?",
+   "en": "Each crocus flower holds just three saffron threads. How many flowers does it take to make 1 gram of saffron?"
+  },
+  "answer": 150,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 50,
+  "unit": {
+   "ru": "цветков",
+   "en": "flowers"
+  },
+  "fact": {
+   "ru": "Около 150 цветков, и нити собирают только вручную. Поэтому шафран — одна из самых дорогих пряностей в мире.",
+   "en": "About 150 flowers, and the threads are picked by hand. That is why saffron is one of the world's most expensive spices."
+  },
+  "source": "https://en.wikipedia.org/wiki/Saffron",
+  "basedOn": "plants_042",
+  "refine": "rewrite",
+  "id": "cur_plants_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "По подсчёту учёных 2015 года, сколько деревьев на Земле приходилось на одного человека?",
+   "en": "By scientists' 2015 count, how many trees were there on Earth for every person?"
+  },
+  "answer": 422,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 2,
+  "tolerance": 80,
+  "unit": {
+   "ru": "деревьев",
+   "en": "trees"
+  },
+  "fact": {
+   "ru": "Около 3 триллионов деревьев, примерно 422 на человека: в семь раз больше прежней оценки. С начала земледелия их стало почти вдвое меньше.",
+   "en": "About 3 trillion trees, some 422 per person: seven times the earlier estimate. Since farming began their number has nearly halved."
+  },
+  "source": "https://earthsky.org/earth/earth-has-3-trillion-trees-says-study/",
+  "basedOn": "plants_043",
+  "refine": "rewrite",
+  "id": "cur_plants_20"
+ }
+]

@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая черта Александра Флеминга помогла ему в 1928 году открыть пенициллин?",
+   "en": "Which of Alexander Fleming's habits helped him discover penicillin in 1928?"
+  },
+  "options": [
+   {
+    "ru": "Неряшливость",
+    "en": "Untidiness"
+   },
+   {
+    "ru": "Чуткий нос",
+    "en": "A keen sense of smell"
+   },
+   {
+    "ru": "Ранний подъём",
+    "en": "Getting up early"
+   },
+   {
+    "ru": "Страх микробов",
+    "en": "A fear of germs"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Перед отпуском он бросил чашки с бактериями на столе. Вернувшись, увидел плесень, вокруг которой бактерии погибли.",
+   "en": "Before a holiday he left dishes of bacteria on his bench. When he came back, a mould had grown, and around it the bacteria were dead."
+  },
+  "source": "https://en.wikipedia.org/wiki/Alexander_Fleming",
+  "basedOn": "medicine_001",
+  "refine": "rewrite",
+  "id": "cur_medicine_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Эмблема Красного Креста, по официальной версии, — флаг какой страны с цветами наоборот?",
+   "en": "Officially, the Red Cross emblem is which country's flag with the colours swapped?"
+  },
+  "options": [
+   {
+    "ru": "Швейцарии",
+    "en": "Switzerland"
+   },
+   {
+    "ru": "Великобритании",
+    "en": "Great Britain"
+   },
+   {
+    "ru": "Дании",
+    "en": "Denmark"
+   },
+   {
+    "ru": "Грузии",
+    "en": "Georgia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Движение основали в Женеве в 1863 году. На флаге Швейцарии белый крест на красном, а на эмблеме — красный на белом.",
+   "en": "The movement was founded in Geneva in 1863. The Swiss flag has a white cross on red; the emblem has a red cross on white."
+  },
+  "source": "https://en.wikipedia.org/wiki/Emblems_of_the_International_Red_Cross_and_Red_Crescent_Movement",
+  "basedOn": "medicine_010",
+  "refine": "rewrite",
+  "id": "cur_medicine_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое качество хирурга ценилось выше всего до появления наркоза?",
+   "en": "Before anaesthesia, what did people value most in a surgeon?"
+  },
+  "options": [
+   {
+    "ru": "Скорость",
+    "en": "Speed"
+   },
+   {
+    "ru": "Высокий рост",
+    "en": "Being tall"
+   },
+   {
+    "ru": "Тихий голос",
+    "en": "A quiet voice"
+   },
+   {
+    "ru": "Леворукость",
+    "en": "Left-handedness"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пока не было наркоза, чем быстрее, тем меньше мучений. Шотландец Роберт Листон, по рассказам, просил студентов засекать время по часам.",
+   "en": "Before anaesthesia, faster meant less suffering. The Scot Robert Liston, the story goes, told his students to time him with pocket watches."
+  },
+  "source": "https://en.wikipedia.org/wiki/Robert_Liston",
+  "basedOn": "medicine_007",
+  "refine": "rewrite",
+  "id": "cur_medicine_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Луи Пастер придумал спасать продукты от порчи лёгким нагревом. Что он спасал так в 1864 году?",
+   "en": "Louis Pasteur found that gentle heating stops food going off. What did he save this way in 1864?"
+  },
+  "options": [
+   {
+    "ru": "Вино",
+    "en": "Wine"
+   },
+   {
+    "ru": "Молоко",
+    "en": "Milk"
+   },
+   {
+    "ru": "Мёд",
+    "en": "Honey"
+   },
+   {
+    "ru": "Сыр",
+    "en": "Cheese"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Французские вина скисали, и Пастер нагрел их до 50–60 °C: микробы гибли, а вкус не портился. Молоко так стали обрабатывать лишь много лет спустя.",
+   "en": "French wine kept souring, so Pasteur warmed it to 50-60 °C: the microbes died and the taste survived. Milk was pasteurized only years later."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pasteurization",
+  "basedOn": "medicine_013",
+  "refine": "rewrite",
+  "id": "cur_medicine_26"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Машину для сахарной ваты в 1897 году придумали кондитер Джон Уортон и… кто?",
+   "en": "The cotton candy machine was invented in 1897 by confectioner John Wharton and… who?"
+  },
+  "options": [
+   {
+    "ru": "Зубной врач",
+    "en": "A dentist"
+   },
+   {
+    "ru": "Часовой мастер",
+    "en": "A watchmaker"
+   },
+   {
+    "ru": "Пожарный",
+    "en": "A firefighter"
+   },
+   {
+    "ru": "Почтальон",
+    "en": "A postman"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Дантист Уильям Моррисон. Продавали её под названием «волшебная нить» (Fairy Floss), и в Австралии её так зовут до сих пор.",
+   "en": "Dentist William Morrison. It was sold as 'Fairy Floss', and Australians still call it that."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cotton_candy",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_medicine_27"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Слово «вакцина» пошло от латинского названия болезни одного животного. Какого?",
+   "en": "The word 'vaccine' comes from the Latin name of a disease of one animal. Which?"
+  },
+  "options": [
+   {
+    "ru": "Коровы",
+    "en": "The cow"
+   },
+   {
+    "ru": "Лошади",
+    "en": "The horse"
+   },
+   {
+    "ru": "Овцы",
+    "en": "The sheep"
+   },
+   {
+    "ru": "Свиньи",
+    "en": "The pig"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Дженнер прививал «коровью оспу» от доярки, заразившейся от коровы Блоссом. Шкура Блоссом и сейчас висит в медицинской школе в Лондоне.",
+   "en": "Jenner used cowpox from a milkmaid who caught it from a cow called Blossom. Blossom's hide still hangs in a London medical school."
+  },
+  "source": "https://en.wikipedia.org/wiki/Edward_Jenner",
+  "basedOn": "medicine_002",
+  "refine": "rewrite",
+  "id": "cur_medicine_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему француз Лаэннек в 1816 году придумал стетоскоп?",
+   "en": "Why did the Frenchman Laennec invent the stethoscope in 1816?"
+  },
+  "options": [
+   {
+    "ru": "Стеснялся прижать ухо к даме",
+    "en": "Shy to put his ear to a lady"
+   },
+   {
+    "ru": "Был глух на левое ухо с детства",
+    "en": "He was deaf in one ear"
+   },
+   {
+    "ru": "Так велел ему сам король",
+    "en": "The king ordered it"
+   },
+   {
+    "ru": "Боялся заразиться от больных",
+    "en": "He feared catching a disease"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он свернул в трубку лист бумаги и вдруг услышал сердце лучше, чем ухом.",
+   "en": "He rolled a sheet of paper into a tube and found he could hear the heart better than with his ear."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ren%C3%A9_Laennec",
+  "basedOn": "medicine_016",
+  "refine": "rewrite",
+  "id": "cur_medicine_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Под видом чего компания Bayer с 1898 года продавала героин?",
+   "en": "What did Bayer sell heroin as from 1898?"
+  },
+  "options": [
+   {
+    "ru": "Средство от кашля",
+    "en": "Cough medicine"
+   },
+   {
+    "ru": "Глазные капли",
+    "en": "Eye drops"
+   },
+   {
+    "ru": "Тоник для роста волос",
+    "en": "Hair growth tonic"
+   },
+   {
+    "ru": "Крем от загара",
+    "en": "Suntan cream"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его считали безопасной заменой морфину, пока не выяснилось, что он вызывает ещё более сильную зависимость.",
+   "en": "It was sold as a safe substitute for morphine until it turned out to be even more addictive."
+  },
+  "source": "https://en.wikipedia.org/wiki/Heroin",
+  "basedOn": "medicine_017",
+  "refine": "rewrite",
+  "id": "cur_medicine_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Ботулизм, а с ним и ботокс, назван по латинскому слову, означающему…",
+   "en": "Botulism, and so Botox, is named after the Latin word for…"
+  },
+  "options": [
+   {
+    "ru": "Колбаса",
+    "en": "Sausage"
+   },
+   {
+    "ru": "Сыр",
+    "en": "Cheese"
+   },
+   {
+    "ru": "Яд",
+    "en": "Poison"
+   },
+   {
+    "ru": "Морщина",
+    "en": "Wrinkle"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1820-х немецкий врач Кернер связал отравления с плохо приготовленными колбасами.",
+   "en": "In the 1820s German doctor Justinus Kerner linked the poisonings to badly made sausages."
+  },
+  "source": "https://en.wikipedia.org/wiki/Botulism",
+  "basedOn": "medicine_023",
+  "refine": "same",
+  "id": "cur_medicine_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем хирург Холстед в 1889 году заказал первые резиновые перчатки?",
+   "en": "Why did surgeon William Halsted order the first rubber surgical gloves in 1889?"
+  },
+  "options": [
+   {
+    "ru": "Берёг руки любимой медсестры",
+    "en": "To protect his beloved nurse's hands"
+   },
+   {
+    "ru": "Чтобы руки не мёрзли зимой",
+    "en": "To keep hands warm in winter"
+   },
+   {
+    "ru": "Прятал ожоги на своих руках",
+    "en": "To hide burns on his own hands"
+   },
+   {
+    "ru": "Так требовал новый закон штата",
+    "en": "A new state law required it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её кожа не выносила антисептиков. Через год они поженились, а от микробов перчатки стали защищать позже.",
+   "en": "Her skin could not stand the antiseptics. They married a year later; gloves against germs came after."
+  },
+  "source": "https://en.wikipedia.org/wiki/William_Stewart_Halsted",
+  "basedOn": "medicine_026",
+  "refine": "rewrite",
+  "id": "cur_medicine_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Дантист Хорас Уэллс в 1844 году додумался до обезболивания, увидев… что?",
+   "en": "In 1844 dentist Horace Wells came up with painless surgery after seeing… what?"
+  },
+  "options": [
+   {
+    "ru": "Шоу с веселящим газом",
+    "en": "A laughing gas show"
+   },
+   {
+    "ru": "Спящего пьяного матроса",
+    "en": "A sleeping drunk sailor"
+   },
+   {
+    "ru": "Сеанс гипнотизёра",
+    "en": "A hypnotist's act"
+   },
+   {
+    "ru": "Кошку, нюхавшую валерьянку",
+    "en": "A cat sniffing valerian"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На шоу надышавшийся газа зритель разбил колени о скамью и не почувствовал боли. Назавтра Уэллсу вырвали зуб под этим газом.",
+   "en": "A man on the gas at the show banged his knees on a bench and felt no pain. Next day Wells had his own tooth pulled under the gas."
+  },
+  "source": "https://en.wikipedia.org/wiki/Horace_Wells",
+  "basedOn": "medicine_025",
+  "refine": "rewrite",
+  "id": "cur_medicine_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где в 1930-х–1950-х стояли рентгеновские аппараты, куда мог заглянуть любой ребёнок?",
+   "en": "Where could any child look into an X-ray machine in the 1930s to 1950s?"
+  },
+  "options": [
+   {
+    "ru": "В обувных магазинах",
+    "en": "In shoe shops"
+   },
+   {
+    "ru": "В парикмахерских",
+    "en": "In barber shops"
+   },
+   {
+    "ru": "В кинотеатрах",
+    "en": "In cinemas"
+   },
+   {
+    "ru": "В магазинах игрушек",
+    "en": "In toy shops"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Покупатели смотрели, как сидят кости ног в новых ботинках, получая немалую дозу облучения.",
+   "en": "Customers watched their foot bones inside new shoes, taking a hefty dose of radiation."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shoe-fitting_fluoroscope",
+  "basedOn": "medicine_036",
+  "refine": "rewrite",
+  "id": "cur_medicine_12"
+ },
+ {
+  "id": "cur_medicine_13",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1847 году студенты-медики в США единогласно проголосовали принять в колледж женщину. Почему?",
+   "en": "In 1847 male medical students in the US voted unanimously to admit a woman. Why?"
+  },
+  "options": [
+   {
+    "ru": "Решили, что это шутка",
+    "en": "They thought it was a joke"
+   },
+   {
+    "ru": "Им пообещали стипендию",
+    "en": "They were promised grants"
+   },
+   {
+    "ru": "Она была дочерью ректора",
+    "en": "She was the dean's daughter"
+   },
+   {
+    "ru": "Не хватало студентов",
+    "en": "The college was short of students"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Элизабет Блэкуэлл приняли всерьёз, и в 1849 году она стала первой женщиной с дипломом врача в США.",
+   "en": "Elizabeth Blackwell took her place seriously, and in 1849 she became the first woman to earn a medical degree in the US."
+  },
+  "source": "https://en.wikipedia.org/wiki/Elizabeth_Blackwell",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Тёзка героя «Игры престолов», лондонский врач Джон Сноу в 1854 году показал, откуда идёт холера. Как?",
+   "en": "Namesake of the Game of Thrones hero, London doctor John Snow showed in 1854 where cholera came from. How?"
+  },
+  "options": [
+   {
+    "ru": "Нанёс умерших на карту",
+    "en": "He marked the dead on a map"
+   },
+   {
+    "ru": "Нюхал воздух в переулках",
+    "en": "He sniffed the air in alleys"
+   },
+   {
+    "ru": "Изучал крыс в подвалах",
+    "en": "He studied rats in cellars"
+   },
+   {
+    "ru": "Окуривал дома серой",
+    "en": "He fumigated homes with sulphur"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Точки сгрудились вокруг одной уличной колонки, и по его совету с неё сняли ручку. Сноу считают одним из отцов эпидемиологии.",
+   "en": "The dots clustered round one street pump, and on his advice its handle was removed. Snow is seen as a father of epidemiology."
+  },
+  "source": "https://en.wikipedia.org/wiki/John_Snow",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_medicine_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Британский армейский хирург Джеймс Барри прослужил почти полвека. Какая тайна открылась после его смерти в 1865 году?",
+   "en": "British army surgeon James Barry served for almost 50 years. What secret came out after Barry's death in 1865?"
+  },
+  "options": [
+   {
+    "ru": "При рождении был девочкой",
+    "en": "Barry was born a girl"
+   },
+   {
+    "ru": "У него не было диплома",
+    "en": "Barry had no medical degree"
+   },
+   {
+    "ru": "Он был сыном короля",
+    "en": "Barry was a king's son"
+   },
+   {
+    "ru": "Он был беглым каторжником",
+    "en": "Barry was an escaped convict"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Барри родился Маргарет Балкли: женщин тогда не учили на врачей. Он дослужился до второй по старшинству должности в армейской медицине.",
+   "en": "Barry was born Margaret Bulkley, when women could not train as doctors, and rose to the second-highest medical post in the army."
+  },
+  "source": "https://en.wikipedia.org/wiki/James_Barry_(surgeon)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_medicine_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Через несколько недель после открытия лучей Рентген снял ими руку своей жены. Что она сказала, увидев снимок?",
+   "en": "Weeks after discovering his rays, Röntgen took a picture of his wife's hand with them. What did she say when she saw it?"
+  },
+  "options": [
+   {
+    "ru": "«Я увидела свою смерть»",
+    "en": "'I have seen my death'"
+   },
+   {
+    "ru": "«Это настоящее колдовство!»",
+    "en": "'This is real witchcraft!'"
+   },
+   {
+    "ru": "«Где же моё кольцо?»",
+    "en": "'Where has my ring gone?'"
+   },
+   {
+    "ru": "«Сними меня ещё раз!»",
+    "en": "'Take me again!'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Берта увидела собственный скелет. А сам Рентген в 1901 году получил самую первую Нобелевскую премию по физике и не стал патентовать свои лучи.",
+   "en": "Bertha was looking at her own skeleton. In 1901 Röntgen won the very first Nobel Prize in Physics, and he never patented his rays."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen",
+  "basedOn": "medicine_005",
+  "refine": "rewrite",
+  "id": "cur_medicine_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Швед Арне Ларссон в 1958 году первым получил вживлённый кардиостимулятор и прожил ещё 43 года. Сколько их он сменил?",
+   "en": "In 1958 Swede Arne Larsson got the first implanted pacemaker and lived 43 more years. How many did he go through?"
+  },
+  "answer": 26,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "штук",
+   "en": "pacemakers"
+  },
+  "fact": {
+   "ru": "Первый отказал уже через три часа. А Ларссон умер в 86 лет, пережив и изобретателя стимулятора, и хирурга.",
+   "en": "The first one failed after three hours. Larsson died at 86, outliving both the inventor and the surgeon."
+  },
+  "source": "https://en.wikipedia.org/wiki/Artificial_cardiac_pacemaker",
+  "basedOn": "medicine_040",
+  "refine": "rewrite",
+  "id": "cur_medicine_17"
+ },
+ {
+  "id": "cur_medicine_23",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Австралиец Джеймс Харрисон всю взрослую жизнь сдавал плазму крови, хотя боялся иголок. Сколько раз всего?",
+   "en": "Australian James Harrison gave blood plasma all his adult life, though he was afraid of needles. How many times in all?"
+  },
+  "answer": 1173,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 150,
+  "unit": {
+   "ru": "раз",
+   "en": "times"
+  },
+  "fact": {
+   "ru": "1173 раза, раз в две недели с 1954 по 2018 год. По оценке службы крови Австралии, его плазма помогла спасти около 2,4 млн младенцев.",
+   "en": "1,173 times, every two weeks from 1954 to 2018. Australia's blood service credits his plasma with saving about 2.4 million babies."
+  },
+  "source": "https://lifeblood.com.au/news-and-stories/media-centre/james-harrison-man-golden-arm-retires",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1942 году американку Энн Миллер спасли от смертельной инфекции пенициллином. Какая часть его запаса в США на неё ушла?",
+   "en": "In 1942 penicillin saved American Anne Miller from a deadly infection. What share of the US supply did she need?"
+  },
+  "answer": 50,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "процентов",
+   "en": "percent"
+  },
+  "fact": {
+   "ru": "Половину: всего около столовой ложки. Наутро жар спал, и она прожила до 90 лет.",
+   "en": "Half: about a tablespoon. By the next morning her fever was gone, and she lived to 90."
+  },
+  "source": "https://time.com/4250235/penicillin-1942-history/",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_medicine_28"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1747 году врач Линд показал, что цингу лечат лимоны и апельсины. Сколько моряков было в его опыте?",
+   "en": "In 1747 Dr Lind showed lemons and oranges cure scurvy, one of the first controlled trials. How many sailors were in it?"
+  },
+  "answer": 12,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "моряков",
+   "en": "sailors"
+  },
+  "fact": {
+   "ru": "Всего 12, по двое на шесть средств: сидр, уксус, морская вода… Через шесть дней один из «цитрусовой» пары уже вернулся к службе.",
+   "en": "Just 12, two per remedy: cider, vinegar, seawater… After six days one of the citrus pair was already fit for duty."
+  },
+  "source": "https://en.wikipedia.org/wiki/James_Lind",
+  "basedOn": "medicine_045",
+  "refine": "rewrite",
+  "id": "cur_medicine_33"
+ }
+]

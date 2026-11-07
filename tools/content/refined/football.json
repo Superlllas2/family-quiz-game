@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что подсказало судье идею жёлтой и красной карточек?",
+   "en": "What gave a referee the idea for yellow and red cards?"
+  },
+  "options": [
+   {
+    "ru": "Игральные карты",
+    "en": "Playing cards"
+   },
+   {
+    "ru": "Морские сигнальные флаги",
+    "en": "Ships' signal flags"
+   },
+   {
+    "ru": "Трамвайные билеты",
+    "en": "Tram tickets"
+   },
+   {
+    "ru": "Светофор",
+    "en": "A traffic light"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Англичанин Кен Астон придумал их, стоя на светофоре в Лондоне, а впервые их показали на чемпионате мира 1970 года.",
+   "en": "English referee Ken Aston thought of them while waiting at London traffic lights; they debuted at the 1970 World Cup."
+  },
+  "source": "https://en.wikipedia.org/wiki/Penalty_card",
+  "basedOn": "football_002",
+  "refine": "same",
+  "id": "cur_football_01"
+ },
+ {
+  "id": "cur_football_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1966 году в Лондоне украли Кубок мира. Кто его нашёл?",
+   "en": "In 1966 the World Cup trophy was stolen in London. Who found it?"
+  },
+  "options": [
+   {
+    "ru": "Школьник",
+    "en": "A schoolboy"
+   },
+   {
+    "ru": "Полицейский",
+    "en": "A policeman"
+   },
+   {
+    "ru": "Дворник",
+    "en": "A street sweeper"
+   },
+   {
+    "ru": "Собака",
+    "en": "A dog"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Колли по кличке Пиклз через неделю после кражи унюхал под кустом кубок, завёрнутый в газету.",
+   "en": "A collie named Pickles sniffed it out under a hedge, wrapped in newspaper, a week after the theft."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pickles_(dog)",
+  "basedOn": "football_010",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто в 2010 году угадал исходы всех матчей Германии на чемпионате мира?",
+   "en": "Who correctly predicted every German game at the 2010 World Cup?"
+  },
+  "options": [
+   {
+    "ru": "Осьминог",
+    "en": "An octopus"
+   },
+   {
+    "ru": "Попугай",
+    "en": "A parrot"
+   },
+   {
+    "ru": "Черепаха",
+    "en": "A tortoise"
+   },
+   {
+    "ru": "Козёл",
+    "en": "A goat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Осьминог Пауль из аквариума в Оберхаузене выбирал кормушку с флагом и не ошибся ни разу из восьми, включая финал.",
+   "en": "Paul, from an aquarium in Oberhausen, picked a food box with a flag and got all eight right, the final included."
+  },
+  "source": "https://en.wikipedia.org/wiki/Paul_the_Octopus",
+  "basedOn": "football_005",
+  "refine": "rewrite",
+  "id": "cur_football_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 2000 году «Барселона» пообещала 13-летнему Месси контракт, но писать было не на чем. На чём его написали?",
+   "en": "In 2000 Barcelona promised 13-year-old Messi a contract, but had nothing to write on. What did they write it on?"
+  },
+  "options": [
+   {
+    "ru": "На бумажной салфетке",
+    "en": "A paper napkin"
+   },
+   {
+    "ru": "На билете в кино",
+    "en": "A cinema ticket"
+   },
+   {
+    "ru": "На подставке под пиво",
+    "en": "A beer mat"
+   },
+   {
+    "ru": "На футбольном мяче",
+    "en": "A football"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 2024 году эту салфетку продали на аукционе Bonhams за 762 400 фунтов — почти миллион долларов.",
+   "en": "In 2024 the napkin sold at a Bonhams auction for £762,400, almost a million dollars."
+  },
+  "source": "https://www.nbcnews.com/news/sports/deal-written-napkin-sent-lionel-messi-barcelona-sells-auction-965000-rcna152777",
+  "basedOn": "football_007",
+  "refine": "rewrite",
+  "id": "cur_football_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Американцы называют футбол «соккер». Откуда взялось это слово?",
+   "en": "Americans call football 'soccer'. Where does the word come from?"
+  },
+  "options": [
+   {
+    "ru": "Из английского «association»",
+    "en": "From 'association'"
+   },
+   {
+    "ru": "От английского «sock», носок",
+    "en": "From 'sock'"
+   },
+   {
+    "ru": "От фамилии первого тренера",
+    "en": "A first coach's surname"
+   },
+   {
+    "ru": "Из языка индейцев-ирокезов",
+    "en": "An Iroquois word"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это сленг английских школ и университетов 1880-х: от «association football» оставили «soc» и добавили «-er».",
+   "en": "It is 1880s English school and university slang: 'soc' from 'association football', plus '-er'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Names_for_association_football",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_football_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему мяч чемпионата мира 1970 года сделали чёрно-белым?",
+   "en": "Why was the 1970 World Cup ball black and white?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы мяч хорошо видели по ТВ",
+    "en": "To show up well on TV"
+   },
+   {
+    "ru": "Это фирменные цвета Adidas",
+    "en": "They are Adidas's colours"
+   },
+   {
+    "ru": "Так было дешевле красить кожу",
+    "en": "Cheaper to dye the leather"
+   },
+   {
+    "ru": "В честь шахматной доски",
+    "en": "As a nod to the chessboard"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мяч назвали Telstar в честь спутника, передававшего телесигнал: тогда цветной телевизор был редкостью.",
+   "en": "It was named Telstar after a TV satellite, at a time when colour television was still rare."
+  },
+  "source": "https://en.wikipedia.org/wiki/Adidas_Telstar",
+  "basedOn": "football_015",
+  "refine": "rewrite",
+  "id": "cur_football_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Криштиану Роналду родился в 1985 году. В честь кого отец дал ему имя Роналду?",
+   "en": "Cristiano Ronaldo was born in 1985. Who did his father name him Ronaldo after?"
+  },
+  "options": [
+   {
+    "ru": "Рональда Рейгана",
+    "en": "Ronald Reagan"
+   },
+   {
+    "ru": "Бразильца Роналдо",
+    "en": "Brazil's Ronaldo"
+   },
+   {
+    "ru": "Своего деда",
+    "en": "His own grandfather"
+   },
+   {
+    "ru": "Местного святого",
+    "en": "A local saint"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Отец восхищался президентом США Рональдом Рейганом, бывшим киноактёром. А бразильцу Роналдо тогда было всего восемь лет.",
+   "en": "His father admired US president Ronald Reagan, a former film actor. Brazil's Ronaldo was only eight at the time."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_football_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В финале ЧМ-2006, последнем матче карьеры, Зидана удалили за удар головой. Какую награду он всё же получил?",
+   "en": "In the 2006 World Cup final, his last game, Zidane was sent off for a headbutt. Which award did he still win?"
+  },
+  "options": [
+   {
+    "ru": "Мяч лучшего игрока турнира",
+    "en": "Best player of the tournament"
+   },
+   {
+    "ru": "Бутсу лучшего бомбардира",
+    "en": "The top scorer's Golden Boot"
+   },
+   {
+    "ru": "Приз лучшему игроку финала",
+    "en": "Man of the match in the final"
+   },
+   {
+    "ru": "Приз за честную игру",
+    "en": "The fair play award"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Голосовали журналисты, и многие отдали голоса ещё до конца финала. У Зидана 2012 очков, у капитана Италии Каннаваро — 1977.",
+   "en": "Journalists voted, many of them before the final was over. Zidane got 2,012 points, Italy's captain Cannavaro 1,977."
+  },
+  "source": "https://www.aljazeera.com/news/2006/7/12/zidane-wins-golden-ball-award",
+  "basedOn": "football_004",
+  "refine": "rewrite",
+  "id": "cur_football_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что было необычного в победе Дании на Евро-1992?",
+   "en": "What was odd about Denmark winning Euro 1992?"
+  },
+  "options": [
+   {
+    "ru": "Все голы забил один игрок",
+    "en": "One player scored all their goals"
+   },
+   {
+    "ru": "Она не пропустила ни одного гола",
+    "en": "They never conceded a goal"
+   },
+   {
+    "ru": "Она даже не прошла отбор",
+    "en": "They had not even qualified"
+   },
+   {
+    "ru": "Все матчи она выиграла по пенальти",
+    "en": "They won every game on penalties"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Датчан позвали за десять дней до старта вместо Югославии, которую отстранили из-за санкций ООН.",
+   "en": "Denmark were called up ten days before kick-off to replace Yugoslavia, banned under UN sanctions."
+  },
+  "source": "https://en.wikipedia.org/wiki/UEFA_Euro_1992",
+  "basedOn": "football_019",
+  "refine": "same",
+  "id": "cur_football_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Пенальти в 1890 году предложил ввести футболист. На какой позиции он играл?",
+   "en": "In 1890 a footballer proposed the penalty kick. What position did he play?"
+  },
+  "options": [
+   {
+    "ru": "Вратарь",
+    "en": "Goalkeeper"
+   },
+   {
+    "ru": "Нападающий",
+    "en": "Striker"
+   },
+   {
+    "ru": "Защитник",
+    "en": "Defender"
+   },
+   {
+    "ru": "Полузащитник",
+    "en": "Midfielder"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ирландский вратарь Уильям Маккрам устал смотреть, как защитники безнаказанно сносят нападающих у ворот.",
+   "en": "Irish goalkeeper William McCrum was tired of seeing defenders get away with fouls right in front of goal."
+  },
+  "source": "https://en.wikipedia.org/wiki/William_McCrum",
+  "basedOn": "football_023",
+  "refine": "rewrite",
+  "id": "cur_football_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "До появления замен в футболе что делала команда, если игрок получал травму?",
+   "en": "Before substitutes were allowed, what did a team do when a player got injured?"
+  },
+  "options": [
+   {
+    "ru": "Доигрывала в меньшинстве",
+    "en": "Played on a man down"
+   },
+   {
+    "ru": "Соперник тоже убирал игрока",
+    "en": "The rivals took a man off too"
+   },
+   {
+    "ru": "Матч переигрывали в другой день",
+    "en": "The game was replayed later"
+   },
+   {
+    "ru": "Судья останавливал матч",
+    "en": "The referee stopped the game"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Уйти значило оставить своих вдесятером, и раненые терпели: в финале Кубка Англии 1956 года Берт Траутман отыграл 15 минут со сломанной шеей.",
+   "en": "Leaving meant playing with ten, so the injured stayed on: in the 1956 FA Cup final Bert Trautmann played 15 minutes with a broken neck."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bert_Trautmann",
+  "basedOn": "football_032",
+  "refine": "rewrite",
+  "id": "cur_football_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Пеле выиграл свой первый чемпионат мира в 1958 году. Сколько ему тогда было лет?",
+   "en": "Pelé won his first World Cup in 1958. How old was he?"
+  },
+  "options": [
+   {
+    "ru": "17",
+    "en": "17"
+   },
+   {
+    "ru": "20",
+    "en": "20"
+   },
+   {
+    "ru": "23",
+    "en": "23"
+   },
+   {
+    "ru": "26",
+    "en": "26"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В финале со Швецией он забил дважды, а потом выиграл ещё два чемпионата: три титула у игрока есть только у него.",
+   "en": "He scored twice in the final against Sweden and went on to win two more: no other player has won three."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pelé",
+  "basedOn": "football_013",
+  "refine": "rewrite",
+  "id": "cur_football_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялся гимн «Ливерпуля» «You'll Never Walk Alone»?",
+   "en": "Where does Liverpool's anthem 'You'll Never Walk Alone' come from?"
+  },
+  "options": [
+   {
+    "ru": "Это песня из мюзикла",
+    "en": "A Broadway musical"
+   },
+   {
+    "ru": "Это старый церковный гимн",
+    "en": "An old church hymn"
+   },
+   {
+    "ru": "Это ранняя песня «Битлз»",
+    "en": "An early Beatles song"
+   },
+   {
+    "ru": "Это марш британской армии",
+    "en": "A British army march"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Песню из мюзикла «Карусель» 1945 года перепела ливерпульская группа Gerry and the Pacemakers, и её подхватили трибуны.",
+   "en": "It is from the 1945 musical Carousel; a 1963 cover by local band Gerry and the Pacemakers took it to the stands."
+  },
+  "source": "https://en.wikipedia.org/wiki/You%27ll_Never_Walk_Alone",
+  "basedOn": "football_037",
+  "refine": "rewrite",
+  "id": "cur_football_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Ювентус» начинал в розовых футболках. Почему он сменил их на чёрно-белые полосы?",
+   "en": "Juventus started out in pink shirts. Why did they switch to black-and-white stripes?"
+  },
+  "options": [
+   {
+    "ru": "Розовые выцвели от стирки",
+    "en": "The pink faded in the wash"
+   },
+   {
+    "ru": "Розовый высмеивали соперники",
+    "en": "Rivals laughed at the pink"
+   },
+   {
+    "ru": "Так решил новый спонсор",
+    "en": "A new sponsor wanted it"
+   },
+   {
+    "ru": "Чёрно-белые были дешевле",
+    "en": "Black and white was cheaper"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Англичанин из команды Джон Сэвидж попросил друга в Ноттингеме прислать новые, и тот отправил форму своего «Ноттс Каунти».",
+   "en": "Team member John Savage, an Englishman, asked a friend in Nottingham for new ones, who sent the kit of his club, Notts County."
+  },
+  "source": "https://en.wikipedia.org/wiki/Juventus_FC",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_football_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Финалисты первого ЧМ 1930 года, Уругвай и Аргентина, не смогли договориться, чьим мячом играть. Как решили спор?",
+   "en": "At the first World Cup final, in 1930, Uruguay and Argentina could not agree whose ball to use. How was it settled?"
+  },
+  "options": [
+   {
+    "ru": "Сыграли по тайму каждым",
+    "en": "One half with each ball"
+   },
+   {
+    "ru": "Купили новый мяч в Монтевидео",
+    "en": "Bought a new ball in Montevideo"
+   },
+   {
+    "ru": "Взяли нейтральный мяч судьи",
+    "en": "The referee brought his own"
+   },
+   {
+    "ru": "Мяч выбрал президент ФИФА",
+    "en": "FIFA's president picked one"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С аргентинским мячом в первом тайме Аргентина вела 2:1, а с уругвайским во втором Уругвай победил 4:2.",
+   "en": "With Argentina's ball in the first half Argentina led 2–1; with Uruguay's in the second, Uruguay won 4–2."
+  },
+  "source": "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup_final",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_football_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2002 году матч чемпионата Мадагаскара закончился со счётом 149:0. Как такое вышло?",
+   "en": "In 2002 a league game in Madagascar ended 149–0. How did that happen?"
+  },
+  "options": [
+   {
+    "ru": "Нарочно забивали в свои ворота",
+    "en": "Own goals scored on purpose"
+   },
+   {
+    "ru": "Проигравших было всего пятеро",
+    "en": "The losers had only five men"
+   },
+   {
+    "ru": "Матч доигрывали три дня подряд",
+    "en": "The game ran on for three days"
+   },
+   {
+    "ru": "Табло сломалось, и счёт не сбросили",
+    "en": "A broken scoreboard never reset"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так игроки SOE протестовали против судейства, лишившего их титула; соперники после начального удара мяча больше не получили.",
+   "en": "SOE were protesting refereeing that had cost them the title; their opponents never got the ball back after kick-off."
+  },
+  "source": "https://en.wikipedia.org/wiki/AS_Adema_149%E2%80%930_SO_l%27Emyrne",
+  "basedOn": "football_046",
+  "refine": "rewrite",
+  "id": "cur_football_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Германия разгромила Бразилию 7:1 в полуфинале ЧМ-2014. На какой минуте счёт стал уже 5:0?",
+   "en": "Germany beat Brazil 7–1 in the 2014 World Cup semi-final. In which minute was it already 5–0?"
+  },
+  "answer": 29,
+  "range": [
+   0,
+   90
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "минута",
+   "en": "minute"
+  },
+  "fact": {
+   "ru": "Четыре гола из пяти немцы забили за шесть минут — в Бразилии, на глазах у бразильских болельщиков.",
+   "en": "Four of the five came within six minutes, in Brazil, in front of Brazil's own fans."
+  },
+  "source": "https://en.wikipedia.org/wiki/Brazil_v_Germany_(2014_FIFA_World_Cup)",
+  "basedOn": "football_008",
+  "refine": "rewrite",
+  "id": "cur_football_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько голов Австралия забила Американскому Самоа в 2001 году?",
+   "en": "How many goals did Australia score against American Samoa in 2001?"
+  },
+  "answer": 31,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "голов",
+   "en": "goals"
+  },
+  "fact": {
+   "ru": "Арчи Томпсон забил 13 из них, а у Самоа из-за проблем с паспортами играли почти одни юниоры.",
+   "en": "Archie Thompson scored 13 of them alone, and passport trouble left Samoa fielding mostly teenagers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Australia_31%E2%80%930_American_Samoa",
+  "basedOn": "football_045",
+  "refine": "same",
+  "id": "cur_football_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Англичанин Стэнли Мэтьюз, первый обладатель «Золотого мяча», играл в высшей лиге очень долго. До скольких лет?",
+   "en": "England's Stanley Matthews, the first Ballon d'Or winner, played top-flight football for very long. Until what age?"
+  },
+  "answer": 50,
+  "range": [
+   20,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Последний матч он сыграл в 1965 году, через пять дней после 50-летия, а за месяц до того его посвятили в рыцари.",
+   "en": "His last game came in 1965, five days after his 50th birthday; a month earlier he had been knighted, still a player."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stanley_Matthews",
+  "basedOn": "football_043",
+  "refine": "rewrite",
+  "id": "cur_football_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Высота футбольных ворот — 244 см. А какова их ширина, в сантиметрах?",
+   "en": "A football goal is 244 cm high. How wide is it, in centimetres?"
+  },
+  "answer": 732,
+  "range": [
+   200,
+   1500
+  ],
+  "step": 4,
+  "tolerance": 80,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "7,32 м — это ровно 8 ярдов, а высота 2,44 м — 8 футов: размеры остались от английских правил XIX века.",
+   "en": "7.32 m is exactly 8 yards and the 2.44 m height is 8 feet: the sizes come from 19th-century English rules."
+  },
+  "source": "https://en.wikipedia.org/wiki/Goal_(sports)",
+  "basedOn": "football_039",
+  "refine": "rewrite",
+  "id": "cur_football_20"
+ }
+]

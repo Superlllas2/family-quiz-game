@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Короновать Наполеона в 1804 году в Париж приехал сам Папа Римский. Что сделал Наполеон?",
+   "en": "In 1804 the Pope himself came to Paris to crown Napoleon. What did Napoleon do?"
+  },
+  "options": [
+   {
+    "ru": "Сам надел на себя корону",
+    "en": "Put the crown on himself"
+   },
+   {
+    "ru": "Встал перед папой на колени",
+    "en": "Knelt before the Pope"
+   },
+   {
+    "ru": "Короновался в треуголке",
+    "en": "Was crowned in his bicorne hat"
+   },
+   {
+    "ru": "Велел папе ждать за дверью",
+    "en": "Made the Pope wait outside"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Папа лишь читал молитву. А на картине Давида Наполеон коронует Жозефину: сначала художник написал, как тот поднимает корону над собой.",
+   "en": "The Pope only said the prayer. In David's painting Napoleon crowns Josephine: the artist first painted him holding the crown over his own head."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Coronation_of_Napoleon",
+  "basedOn": "rulers_003",
+  "refine": "rewrite",
+  "id": "cur_rulers_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему Елизавета II ездила за границу без паспорта?",
+   "en": "Why did Elizabeth II travel abroad without a passport?"
+  },
+  "options": [
+   {
+    "ru": "Она ездила только по Содружеству",
+    "en": "She only visited Commonwealth lands"
+   },
+   {
+    "ru": "Она никогда не покидала Британию",
+    "en": "She never left Britain"
+   },
+   {
+    "ru": "Паспорта выдавались от её имени",
+    "en": "Passports were issued in her name"
+   },
+   {
+    "ru": "Её и так узнавал любой пограничник",
+    "en": "Every border guard knew her face"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Всем остальным членам королевской семьи, даже наследнику престола, паспорт нужен.",
+   "en": "Every other member of the royal family, even the heir to the throne, needs a passport."
+  },
+  "source": "https://www.royal.uk/passports",
+  "basedOn": "rulers_009",
+  "refine": "same",
+  "id": "cur_rulers_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Прусский король Фридрих Великий заставил подданных полюбить один овощ. Что туристы до сих пор кладут на его могилу?",
+   "en": "Frederick the Great of Prussia made his people love one vegetable. What do tourists still leave on his grave?"
+  },
+  "options": [
+   {
+    "ru": "Картофелины",
+    "en": "Potatoes"
+   },
+   {
+    "ru": "Морковки",
+    "en": "Carrots"
+   },
+   {
+    "ru": "Луковицы",
+    "en": "Onions"
+   },
+   {
+    "ru": "Кочаны капусты",
+    "en": "Cabbages"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 1746 года он издал 15 «картофельных указов», а крестьяне поначалу не хотели сажать картошку. На его могиле в Сан-Суси она лежит и сегодня.",
+   "en": "From 1746 he issued 15 'potato decrees', though peasants at first refused to plant them. Potatoes still lie on his grave at Sanssouci."
+  },
+  "source": "https://en.wikipedia.org/wiki/Potato_Edict",
+  "basedOn": "rulers_007",
+  "refine": "rewrite",
+  "id": "cur_rulers_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В шахматах «шах» — от персидского «король». Что тогда буквально значит «шах и мат»?",
+   "en": "In chess, 'check' comes from the Persian 'shah', meaning 'king'. So what does 'checkmate' literally mean?"
+  },
+  "options": [
+   {
+    "ru": "Король беспомощен",
+    "en": "The king is helpless"
+   },
+   {
+    "ru": "Королю пора бежать",
+    "en": "The king must run away now"
+   },
+   {
+    "ru": "Игра окончена",
+    "en": "The game is over"
+   },
+   {
+    "ru": "Победа за мной",
+    "en": "Victory is mine"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По словарю Барнхарта, персидское «мат» — «растерян, беспомощен». Есть и версия «король умер», от арабского «мата». Шахами звали правителей Ирана.",
+   "en": "Per the Barnhart dictionary, Persian 'mat' means 'at a loss, helpless'. Some read it as 'the king is dead', from Arabic. Shah was the title of Iran's rulers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Checkmate",
+  "basedOn": "rulers_012",
+  "refine": "rewrite",
+  "id": "cur_rulers_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Королева Виктория почти 40 лет носила траур по мужу. В каком платье её похоронили по её же воле?",
+   "en": "Queen Victoria wore mourning for her husband for almost 40 years. What dress was she buried in, by her own wish?"
+  },
+  "options": [
+   {
+    "ru": "В белом",
+    "en": "White"
+   },
+   {
+    "ru": "В чёрном",
+    "en": "Black"
+   },
+   {
+    "ru": "В пурпурном",
+    "en": "Purple"
+   },
+   {
+    "ru": "В сером",
+    "en": "Grey"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она велела устроить похороны «белые, а не чёрные». Её одели в белое платье и свадебную фату, а рядом положили халат Альберта.",
+   "en": "She asked for a funeral 'white instead of black'. She was dressed in white with her wedding veil, and Albert's dressing gown lay beside her."
+  },
+  "source": "https://en.wikipedia.org/wiki/Queen_Victoria",
+  "basedOn": "rulers_006",
+  "refine": "rewrite",
+  "id": "cur_rulers_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Хатшепсут была женщиной-фараоном. Что она надевала на официальных изображениях, как все фараоны?",
+   "en": "Hatshepsut was a female pharaoh. What did she wear in official images, like every pharaoh?"
+  },
+  "options": [
+   {
+    "ru": "Накладную бороду",
+    "en": "A false beard"
+   },
+   {
+    "ru": "Маску сокола",
+    "en": "A falcon mask"
+   },
+   {
+    "ru": "Венок из лотосов",
+    "en": "A lotus wreath"
+   },
+   {
+    "ru": "Золотую вуаль",
+    "en": "A golden veil"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Борода была знаком власти фараона. А после её смерти её имя и лица на стенах сбили зубилом, будто такого фараона и не было.",
+   "en": "The beard was a sign of a pharaoh's power. After her death her name and faces were chiselled off the walls, as if she had never ruled."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hatshepsut",
+  "basedOn": "rulers_018",
+  "refine": "rewrite",
+  "id": "cur_rulers_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что означает прозвище римского императора Калигулы?",
+   "en": "What does the Roman emperor Caligula's nickname mean?"
+  },
+  "options": [
+   {
+    "ru": "«Волчонок»",
+    "en": "Little wolf"
+   },
+   {
+    "ru": "«Орлёнок»",
+    "en": "Little eagle"
+   },
+   {
+    "ru": "«Сапожок»",
+    "en": "Little boot"
+   },
+   {
+    "ru": "«Львёнок»",
+    "en": "Little lion"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Малышом он жил в военных лагерях отца, и мать одевала его в солдатскую форму с крошечными сапогами-калигами.",
+   "en": "As a small boy he lived in his father's army camps, dressed by his mother in a mini soldier's outfit with tiny boots, caligae."
+  },
+  "source": "https://en.wikipedia.org/wiki/Caligula",
+  "basedOn": "rulers_017",
+  "refine": "same",
+  "id": "cur_rulers_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что случилось, когда правитель Мали Манса Муса проехал через Каир?",
+   "en": "What happened when Mansa Musa, ruler of Mali, passed through Cairo?"
+  },
+  "options": [
+   {
+    "ru": "Золото подешевело",
+    "en": "Gold lost value"
+   },
+   {
+    "ru": "В городе кончилась вода",
+    "en": "The city ran out of water"
+   },
+   {
+    "ru": "Город сдался без боя",
+    "en": "The city surrendered"
+   },
+   {
+    "ru": "Его не пустили в город",
+    "en": "He was refused entry"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По словам историка аль-Умари, в 1324 году он раздал столько золота, что оно стоило там дешевле ещё 12 лет.",
+   "en": "According to the historian al-Umari, he handed out so much gold in 1324 that it stayed cheaper there for 12 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mansa_Musa",
+  "basedOn": "rulers_021",
+  "refine": "rewrite",
+  "id": "cur_rulers_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кем работал Пу И, последний император Китая, после выхода из тюрьмы?",
+   "en": "What job did Puyi, China's last emperor, get after leaving prison?"
+  },
+  "options": [
+   {
+    "ru": "Поваром",
+    "en": "Cook"
+   },
+   {
+    "ru": "Садовником",
+    "en": "Gardener"
+   },
+   {
+    "ru": "Гидом в Запретном городе",
+    "en": "Forbidden City guide"
+   },
+   {
+    "ru": "Почтальоном",
+    "en": "Postman"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Императором он стал в два года, а в 1959-м его выпустили, и он поступил садовником в Пекине.",
+   "en": "He became emperor at two; released in 1959, he went to work as a gardener in Beijing."
+  },
+  "source": "https://en.wikipedia.org/wiki/Puyi",
+  "basedOn": "rulers_022",
+  "refine": "same",
+  "id": "cur_rulers_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего, как верил безумный французский король Карл VI, было сделано его тело?",
+   "en": "What did the mad King Charles VI of France believe his body was made of?"
+  },
+  "options": [
+   {
+    "ru": "Из воска",
+    "en": "Wax"
+   },
+   {
+    "ru": "Из сахара",
+    "en": "Sugar"
+   },
+   {
+    "ru": "Из соломы",
+    "en": "Straw"
+   },
+   {
+    "ru": "Из стекла",
+    "en": "Glass"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Он носил одежду, укреплённую железными прутьями, и не подпускал к себе советников, боясь разбиться.",
+   "en": "He wore clothes reinforced with iron rods and kept his advisers from coming near him, for fear he would shatter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Glass_delusion",
+  "basedOn": "rulers_025",
+  "refine": "same",
+  "id": "cur_rulers_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько длилось «правление» французского короля Людовика XIX?",
+   "en": "How long did the 'reign' of King Louis XIX of France last?"
+  },
+  "options": [
+   {
+    "ru": "Пару минут",
+    "en": "A few minutes"
+   },
+   {
+    "ru": "Ровно сто дней",
+    "en": "Exactly 100 days"
+   },
+   {
+    "ru": "Около полугода",
+    "en": "About six months"
+   },
+   {
+    "ru": "Почти три года",
+    "en": "Almost three years"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1830 году отец, Карл X, подписал отречение, а сын — своё следом. Говорят, он был королём минут двадцать, между подписями, но историки спорят, был ли вообще.",
+   "en": "In 1830 his father Charles X abdicated and the son signed his own right after. He is said to have been king for 20 minutes; historians doubt even that."
+  },
+  "source": "https://en.wikipedia.org/wiki/Louis_Antoine,_Duke_of_Angoul%C3%AAme",
+  "basedOn": "rulers_027",
+  "refine": "rewrite",
+  "id": "cur_rulers_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как провёл последние годы Шах-Джахан, построивший Тадж-Махал?",
+   "en": "How did Shah Jahan, who built the Taj Mahal, spend his last years?"
+  },
+  "options": [
+   {
+    "ru": "В путешествиях по Европе",
+    "en": "Travelling in Europe"
+   },
+   {
+    "ru": "Монахом в горах",
+    "en": "As a monk in the mountains"
+   },
+   {
+    "ru": "В изгнании в Персии",
+    "en": "In exile in Persia"
+   },
+   {
+    "ru": "Узником своего сына",
+    "en": "His own son's prisoner"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Сын Аурангзеб запер его в форте Агры, откуда старый император смотрел на Тадж-Махал.",
+   "en": "His son Aurangzeb locked him in Agra Fort, from where the old emperor could gaze at the Taj Mahal."
+  },
+  "source": "https://en.wikipedia.org/wiki/Shah_Jahan",
+  "basedOn": "rulers_031",
+  "refine": "rewrite",
+  "id": "cur_rulers_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем занимался «грум стула», один из самых влиятельных слуг Генриха VIII?",
+   "en": "What did the Groom of the Stool, one of Henry VIII's most powerful servants, do?"
+  },
+  "options": [
+   {
+    "ru": "Пробовал королевскую еду",
+    "en": "Tasted the king's food"
+   },
+   {
+    "ru": "Носил королевский трон",
+    "en": "Carried the royal throne"
+   },
+   {
+    "ru": "Ухаживал за конями",
+    "en": "Looked after the horses"
+   },
+   {
+    "ru": "Помогал королю в уборной",
+    "en": "Helped him on the toilet"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Он оставался с королём наедине, слышал все секреты и потому имел огромное влияние.",
+   "en": "He was alone with the king, heard all his secrets, and so had enormous influence."
+  },
+  "source": "https://en.wikipedia.org/wiki/Groom_of_the_Stool",
+  "basedOn": "rulers_038",
+  "refine": "rewrite",
+  "id": "cur_rulers_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В январе 1649 года, перед казнью, английский король Карл I попросил вторую рубашку. Зачем?",
+   "en": "In January 1649, before his execution, King Charles I of England asked for a second shirt. Why?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы дрожь не приняли за страх",
+    "en": "So no one took his shivers for fear"
+   },
+   {
+    "ru": "Чтобы смягчить удар палача",
+    "en": "To soften the axe's blow"
+   },
+   {
+    "ru": "Так требовал обычай казни королей",
+    "en": "Custom required it at a royal execution"
+   },
+   {
+    "ru": "Чтобы оставить её сыну на память",
+    "en": "To leave it to his son"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он боялся, что толпа увидит, как он дрожит от холода, и сочтёт это трусостью. После казни Англия 11 лет жила без короля.",
+   "en": "He feared the crowd would see him shiver from the cold and call it cowardice. After the execution England went 11 years without a king."
+  },
+  "source": "https://en.wikipedia.org/wiki/Execution_of_Charles_I",
+  "basedOn": "rulers_049",
+  "refine": "rewrite",
+  "id": "cur_rulers_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1905 году крупнейший ювелирный алмаз в истории, «Куллинан», отправили из Южной Африки в Лондон. Как?",
+   "en": "In 1905 the largest gem diamond ever found, the Cullinan, was sent from South Africa to London. How?"
+  },
+  "options": [
+   {
+    "ru": "Простой посылкой по почте",
+    "en": "In a plain box by post"
+   },
+   {
+    "ru": "На военном корабле под охраной",
+    "en": "On a warship under guard"
+   },
+   {
+    "ru": "В двойном дне чемодана",
+    "en": "In a false-bottomed suitcase"
+   },
+   {
+    "ru": "Зашитым в пальто курьера",
+    "en": "Sewn into a courier's coat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На пароходе в сейфе капитана под охраной везли подделку, а настоящий камень весом 621 грамм шёл заказной посылкой в простой коробке.",
+   "en": "A decoy sailed in the captain's safe under guard, while the real 621-gram stone went by registered post in a plain box."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cullinan_Diamond",
+  "basedOn": "rulers_040",
+  "refine": "rewrite",
+  "id": "cur_rulers_15"
+ },
+ {
+  "id": "cur_rulers_16",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что означает прозвище «Дракула» валашского князя Влада III?",
+   "en": "What does Dracula, the name of Vlad III of Wallachia, mean?"
+  },
+  "options": [
+   {
+    "ru": "Убийца дракона",
+    "en": "Dragon slayer"
+   },
+   {
+    "ru": "Сын дракона",
+    "en": "Son of the dragon"
+   },
+   {
+    "ru": "Ночной князь",
+    "en": "Prince of the night"
+   },
+   {
+    "ru": "Пьющий кровь",
+    "en": "Blood drinker"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Его отец вступил в рыцарский Орден Дракона и звался Дракул, а «Дракула» — «сын Дракула». В современном румынском drac — ещё и «чёрт».",
+   "en": "His father joined the knightly Order of the Dragon and was called Dracul; Dracula means 'son of Dracul'. In modern Romanian drac also means 'devil'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vlad_the_Impaler",
+  "basedOn": "rulers_024",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Людовик XIV стал королём Франции в четыре года. Сколько лет он правил?",
+   "en": "Louis XIV became King of France at the age of four. How many years did he reign?"
+  },
+  "answer": 72,
+  "range": [
+   10,
+   90
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "72 года, с 1643 по 1715-й. Он пережил сына и внука, и трон достался пятилетнему правнуку, Людовику XV.",
+   "en": "72 years, from 1643 to 1715. He outlived his son and grandson, so the throne went to his five-year-old great-grandson, Louis XV."
+  },
+  "source": "https://en.wikipedia.org/wiki/Louis_XIV",
+  "basedOn": "rulers_039",
+  "refine": "rewrite",
+  "id": "cur_rulers_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "У королевы Виктории было девять детей. А сколько у неё было внуков?",
+   "en": "Queen Victoria had nine children. How many grandchildren did she have?"
+  },
+  "answer": 42,
+  "range": [
+   10,
+   120
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "внуков",
+   "en": "grandchildren"
+  },
+  "fact": {
+   "ru": "Среди её внуков были германский кайзер, последняя русская императрица и королевы Испании, Норвегии, Румынии и Греции.",
+   "en": "Her grandchildren included the German Kaiser, the last Russian empress and queens of Spain, Norway, Romania and Greece."
+  },
+  "source": "https://en.wikipedia.org/wiki/Descendants_of_Queen_Victoria",
+  "basedOn": "rulers_041",
+  "refine": "rewrite",
+  "id": "cur_rulers_18"
+ },
+ {
+  "id": "cur_rulers_19",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "У короля Свазиленда (ныне Эсватини) Собузы II было 70 жён. Сколько у него было детей?",
+   "en": "King Sobhuza II of Swaziland (now Eswatini) had 70 wives. How many children did he have?"
+  },
+  "answer": 210,
+  "range": [
+   50,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 40,
+  "unit": {
+   "ru": "детей",
+   "en": "children"
+  },
+  "fact": {
+   "ru": "Так считает национальный фонд Эсватини; другие источники дают иные числа. Королём он стал в четыре месяца от роду и правил почти 83 года.",
+   "en": "That is the figure of Eswatini's National Trust Commission; other sources differ. He became king at four months old and reigned almost 83 years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sobhuza_II",
+  "basedOn": "rulers_043",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Елизавета II правила 70 лет. Сколько британских премьер-министров сменилось за это время?",
+   "en": "Elizabeth II reigned for 70 years. How many British prime ministers served in that time?"
+  },
+  "answer": 15,
+  "range": [
+   3,
+   50
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "премьеров",
+   "en": "PMs"
+  },
+  "fact": {
+   "ru": "Первым был Уинстон Черчилль, последней — Лиз Трасс: её королева назначила всего за два дня до своей смерти.",
+   "en": "The first was Winston Churchill and the last Liz Truss, whom the Queen appointed just two days before she died."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Elizabeth_II",
+  "basedOn": "rulers_042",
+  "refine": "rewrite",
+  "id": "cur_rulers_20"
+ }
+]

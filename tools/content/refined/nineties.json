@@ -1,0 +1,670 @@
+[
+ {
+  "id": "cur_nineties_01",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из каких двух слов склеено имя тамагочи — японского питомца в брелоке (1996)?",
+   "en": "Which two words make up the name Tamagotchi, the Japanese keyring pet of 1996?"
+  },
+  "options": [
+   {
+    "ru": "«Яйцо» и «часы»",
+    "en": "'Egg' and 'watch'"
+   },
+   {
+    "ru": "«Друг» и «часы»",
+    "en": "'Friend' and 'watch'"
+   },
+   {
+    "ru": "«Яйцо» и «малыш»",
+    "en": "'Egg' and 'baby'"
+   },
+   {
+    "ru": "«Питомец» и «игра»",
+    "en": "'Pet' and 'game'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Bandai объясняет так: «тамаго» по-японски яйцо, а «уотчи» — английское watch. Версия «яйцо + друг» популярна, но она не официальная.",
+   "en": "Bandai's explanation: tamago is Japanese for egg, and uotchi is the English 'watch'. 'Egg + friend' is a popular version, but not the official one."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tamagotchi",
+  "basedOn": "nineties_001",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_nineties_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "По холмам страны телепузиков скачут большие кролики. Кто они?",
+   "en": "Big rabbits hop across the hills of Teletubbyland. What are they?"
+  },
+  "options": [
+   {
+    "ru": "Живые кролики-великаны",
+    "en": "Real giant rabbits"
+   },
+   {
+    "ru": "Нарисованы на компьютере",
+    "en": "Drawn on a computer"
+   },
+   {
+    "ru": "Игрушки на моторчике",
+    "en": "Wind-up toys"
+   },
+   {
+    "ru": "Актёры в костюмах",
+    "en": "Actors in costumes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это настоящие кролики породы фландр. Снимали на ферме в Англии, а позже хозяйка залила площадку водой, чтобы туда не лезли чужие.",
+   "en": "They are real Flemish Giant rabbits. It was filmed on an English farm, and later the owner flooded the set to stop trespassers."
+  },
+  "source": "https://en.wikipedia.org/wiki/Teletubbies",
+  "basedOn": "nineties_014",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Стрижку «Рейчел» из «Друзей» в 90-е повторили миллионы женщин. Что о ней говорила сама Дженнифер Энистон?",
+   "en": "Millions of women copied 'the Rachel' haircut from Friends in the 90s. What did Jennifer Aniston herself say about it?"
+  },
+  "options": [
+   {
+    "ru": "«Уродливее стрижки я не видела»",
+    "en": "'The ugliest haircut I've ever seen'"
+   },
+   {
+    "ru": "«Лучшая стрижка за всю мою жизнь»",
+    "en": "'The best haircut of my entire life'"
+   },
+   {
+    "ru": "«Я придумала её сама»",
+    "en": "'I came up with it myself'"
+   },
+   {
+    "ru": "«Буду носить её всегда»",
+    "en": "'I'll wear it forever'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Стрижку придумал стилист Крис Макмиллан, и без него Энистон не могла её уложить. По одной оценке, её повторили не меньше 11 млн женщин.",
+   "en": "Stylist Chris McMillan created it, and Aniston couldn't style it without him. One estimate says at least 11 million women copied it."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Rachel",
+  "basedOn": "nineties_003",
+  "refine": "rewrite",
+  "id": "cur_nineties_21"
+ },
+ {
+  "id": "cur_nineties_04",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какая песня звучала в рекламе запуска Windows 95?",
+   "en": "Which song played in the Windows 95 launch advert?"
+  },
+  "options": [
+   {
+    "ru": "«Start Me Up», «Роллинг Стоунз»",
+    "en": "Start Me Up, The Rolling Stones"
+   },
+   {
+    "ru": "«Don't Stop Me Now», «Куин»",
+    "en": "Don't Stop Me Now, Queen"
+   },
+   {
+    "ru": "«Tomorrow Never Knows», «Битлз»",
+    "en": "Tomorrow Never Knows, The Beatles"
+   },
+   {
+    "ru": "«Jump», «Ван Хален»",
+    "en": "Jump, Van Halen"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её выбрали ради новой кнопки «Пуск» — по-английски Start. По слухам, права стоили 8–14 млн долларов; Microsoft называла 3 млн.",
+   "en": "It was chosen for the new Start button. Rumour put the price at 8 to 14 million dollars; Microsoft said 3 million."
+  },
+  "source": "https://en.wikipedia.org/wiki/Windows_95",
+  "basedOn": "nineties_027",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда в «Могучих рейнджерах» (1993) брали сцены боёв в костюмах?",
+   "en": "Where did Mighty Morphin Power Rangers (1993) get its fight scenes in costume?"
+  },
+  "options": [
+   {
+    "ru": "Из японского сериала",
+    "en": "A Japanese TV series"
+   },
+   {
+    "ru": "Из гонконгских боевиков",
+    "en": "Hong Kong action films"
+   },
+   {
+    "ru": "Из компьютерной игры",
+    "en": "A video game"
+   },
+   {
+    "ru": "Из старых фильмов о ниндзя",
+    "en": "Old ninja films"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Американских актёров снимали без шлемов, а драки вырезали из японского «Зюрейнджера»: под шлемом лица не видно.",
+   "en": "American actors were filmed without helmets, and the fights were cut from Japan's Zyuranger: a helmet hides who is inside."
+  },
+  "source": "https://en.wikipedia.org/wiki/Power_Rangers",
+  "basedOn": "nineties_026",
+  "refine": "rewrite",
+  "id": "cur_nineties_05"
+ },
+ {
+  "id": "cur_nineties_06",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Овечка Долли (1996) — первое млекопитающее, клонированное из клетки взрослого животного. В честь кого её назвали?",
+   "en": "Dolly the sheep (1996) was the first mammal cloned from an adult cell. Who was she named after?"
+  },
+  "options": [
+   {
+    "ru": "Певицы Долли Партон",
+    "en": "Singer Dolly Parton"
+   },
+   {
+    "ru": "Овечки из мультфильма",
+    "en": "A cartoon sheep"
+   },
+   {
+    "ru": "Дочери главного учёного",
+    "en": "The lead scientist's daughter"
+   },
+   {
+    "ru": "Бабушки одного из учёных",
+    "en": "A scientist's grandmother"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Клетку для неё взяли из молочной железы — отсюда шутка учёных с именем певицы. Долли — единственная выжившая из 277 попыток.",
+   "en": "Her cell came from a mammary gland, hence the scientists' joke with the singer's name. Dolly was the only survivor of 277 attempts."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dolly_(sheep)",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая организация в 1999 году запретила приносить на работу игрушку Furby?",
+   "en": "Which organisation banned Furby toys from its premises in 1999?"
+  },
+  "options": [
+   {
+    "ru": "АНБ США",
+    "en": "The NSA"
+   },
+   {
+    "ru": "Ватикан",
+    "en": "The Vatican"
+   },
+   {
+    "ru": "НАСА",
+    "en": "NASA"
+   },
+   {
+    "ru": "Банк Англии",
+    "en": "The Bank of England"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Боялись, что игрушка запомнит и повторит секреты. Но записывать звук Furby вообще не умел, и запрет потом сняли.",
+   "en": "They feared it would record and repeat secrets. But Furby could not record sound at all, and the ban was later lifted."
+  },
+  "source": "https://en.wikipedia.org/wiki/Furby",
+  "basedOn": "nineties_019",
+  "refine": "rewrite",
+  "id": "cur_nineties_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что такое Teen Spirit в названии хита Nirvana?",
+   "en": "What was the 'Teen Spirit' in Nirvana's hit title?"
+  },
+  "options": [
+   {
+    "ru": "Дезодорант",
+    "en": "A deodorant"
+   },
+   {
+    "ru": "Подростковый журнал",
+    "en": "A teen magazine"
+   },
+   {
+    "ru": "Школьный клуб",
+    "en": "A school club"
+   },
+   {
+    "ru": "Марка пива",
+    "en": "A beer brand"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Подруга написала на стене «Курт пахнет Teen Spirit», а Кобейн принял шутку за бунтарский лозунг.",
+   "en": "A friend wrote 'Kurt smells like Teen Spirit' on a wall; Cobain took it as a rebel slogan, not knowing it was a deodorant."
+  },
+  "source": "https://en.wikipedia.org/wiki/Smells_Like_Teen_Spirit",
+  "basedOn": "nineties_020",
+  "refine": "same",
+  "id": "cur_nineties_08"
+ },
+ {
+  "id": "cur_nineties_09",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что первым продали на eBay в 1995 году?",
+   "en": "What was the first item sold on eBay in 1995?"
+  },
+  "options": [
+   {
+    "ru": "Сломанную лазерную указку",
+    "en": "A broken laser pointer"
+   },
+   {
+    "ru": "Дозатор для конфет Pez",
+    "en": "A Pez sweet dispenser"
+   },
+   {
+    "ru": "Коллекционного плюшевого мишку",
+    "en": "A collectible teddy bear"
+   },
+   {
+    "ru": "Подержанный автомобиль",
+    "en": "A used car"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Лазерная указка ушла за 14,83 доллара. Основатель переспросил покупателя, понимает ли он, что она сломана. Тот ответил: «Я коллекционирую сломанные указки».",
+   "en": "The laser pointer sold for $14.83. The founder asked if the buyer knew it was broken. He replied: 'I'm a collector of broken laser pointers.'"
+  },
+  "source": "https://en.wikipedia.org/wiki/EBay",
+  "basedOn": "nineties_017",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Хит «Макарена» (1996) испанского дуэта Los del Río назван женским именем. Чьё это имя на самом деле?",
+   "en": "The 1996 hit 'Macarena' by the Spanish duo Los del Río is named after a woman. Whose name is it really?"
+  },
+  "options": [
+   {
+    "ru": "Дочери одного из певцов",
+    "en": "One singer's daughter"
+   },
+   {
+    "ru": "Танцовщицы, которую так звали",
+    "en": "A dancer of that name"
+   },
+   {
+    "ru": "Их первой учительницы музыки",
+    "en": "Their first music teacher"
+   },
+   {
+    "ru": "Героини испанского сериала",
+    "en": "A Spanish soap opera heroine"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Песню вдохновила венесуэльская учительница фламенко Диана, и в припеве сначала пели её имя. Потом Антонио Ромеро поменял его на имя дочери.",
+   "en": "A Venezuelan flamenco teacher, Diana, inspired it, and the chorus first sang her name. Antonio Romero later swapped in his daughter's name."
+  },
+  "source": "https://en.wikipedia.org/wiki/Macarena_(song)",
+  "basedOn": "nineties_030",
+  "refine": "rewrite",
+  "id": "cur_nineties_25"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда взялась знаменитая мелодия звонка Nokia (1994)?",
+   "en": "Where does the famous Nokia ringtone (1994) come from?"
+  },
+  "options": [
+   {
+    "ru": "Из испанского вальса",
+    "en": "A Spanish guitar waltz"
+   },
+   {
+    "ru": "Из финской народной песни",
+    "en": "A Finnish folk song"
+   },
+   {
+    "ru": "Из симфонии Бетховена",
+    "en": "A Beethoven symphony"
+   },
+   {
+    "ru": "Её сочинили для Nokia",
+    "en": "It was written for Nokia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это фраза из «Большого вальса» гитариста Франсиско Тарреги (1902). По оценке 2009 года, мелодия звучала в мире 20 тысяч раз в секунду.",
+   "en": "It is a phrase from Francisco Tárrega's Gran Vals for guitar (1902). A 2009 estimate said it played 20,000 times a second worldwide."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nokia_tune",
+  "basedOn": "nineties_031",
+  "refine": "rewrite",
+  "id": "cur_nineties_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Mattel судилась с группой Aqua из-за песни «Barbie Girl» и проиграла. Что Mattel сделала с песней в 2009 году?",
+   "en": "Mattel sued Aqua over 'Barbie Girl' and lost. What did Mattel do with the song in 2009?"
+  },
+  "options": [
+   {
+    "ru": "Взяла её в рекламу Барби",
+    "en": "Used it in a Barbie advert"
+   },
+   {
+    "ru": "Выкупила права на неё",
+    "en": "Bought the rights to it"
+   },
+   {
+    "ru": "Снова подала в суд",
+    "en": "Sued again"
+   },
+   {
+    "ru": "Выпустила куклу-солистку Aqua",
+    "en": "Made a doll of Aqua's singer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Судья закончил решение словами «Сторонам советуем остыть». А в 2009-м Mattel сама сняла рекламу и клип под датский хит, лишь поменяв слова.",
+   "en": "The judge ended his ruling: 'The parties are advised to chill.' In 2009 Mattel made its own ads and video to the Danish hit, with new lyrics."
+  },
+  "source": "https://en.wikipedia.org/wiki/Barbie_Girl",
+  "basedOn": "nineties_025",
+  "refine": "rewrite",
+  "id": "cur_nineties_12"
+ },
+ {
+  "id": "cur_nineties_13",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Хит Бритни «...Baby One More Time» сначала звался «Hit Me Baby…». Что, по одной версии, значило «hit me» у автора?",
+   "en": "Britney's '...Baby One More Time' was first titled 'Hit Me Baby…'. By one account, what did its writer mean by 'hit me'?"
+  },
+  "options": [
+   {
+    "ru": "«Позвони мне»",
+    "en": "'Call me'"
+   },
+   {
+    "ru": "«Удиви меня»",
+    "en": "'Surprise me'"
+   },
+   {
+    "ru": "«Поцелуй меня»",
+    "en": "'Kiss me'"
+   },
+   {
+    "ru": "«Обними меня»",
+    "en": "'Hug me'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так считает журналист Джон Сибрук: швед Макс Мартин тогда плохо знал английский. Лейбл убрал «Hit Me» из названия, чтобы его не поняли буквально.",
+   "en": "So says journalist John Seabrook: Swede Max Martin's English was then imperfect. The label cut 'Hit Me' from the title so no one took it literally."
+  },
+  "source": "https://en.wikipedia.org/wiki/...Baby_One_More_Time_(song)",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1997 году Джери из Spice Girls вышла на сцену в платье с британским флагом. Из чего сделали флаг?",
+   "en": "In 1997 Geri of the Spice Girls went on stage in a Union Jack dress. What was the flag made from?"
+  },
+  "options": [
+   {
+    "ru": "Из кухонного полотенца",
+    "en": "A tea towel"
+   },
+   {
+    "ru": "Из настоящего флага",
+    "en": "A real flag"
+   },
+   {
+    "ru": "Из футболки фаната",
+    "en": "A fan's T-shirt"
+   },
+   {
+    "ru": "Из шёлкового шейного платка",
+    "en": "A silk neck scarf"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сестра нашила полотенце на чёрное платье Gucci. В 1998 году платье ушло с аукциона за 41 320 фунтов — рекорд Гиннесса для одежды поп-звезды.",
+   "en": "Her sister sewed it onto a black Gucci dress. In 1998 it sold at auction for £41,320, a Guinness record for a pop star's clothing."
+  },
+  "source": "https://en.wikipedia.org/wiki/Union_Jack_dress",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_nineties_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как весь первый год после выхода «Ведьмы из Блэр» (1999) значились её актёры на сайте IMDb?",
+   "en": "For the first year after The Blair Witch Project (1999) came out, how did IMDb list its actors?"
+  },
+  "options": [
+   {
+    "ru": "«Пропали, вероятно, мертвы»",
+    "en": "'Missing, presumed dead'"
+   },
+   {
+    "ru": "«Настоящие охотники на ведьм»",
+    "en": "'Real witch hunters'"
+   },
+   {
+    "ru": "«Имена скрыты по решению суда»",
+    "en": "'Names withheld by court'"
+   },
+   {
+    "ru": "«Местные жители, не актёры»",
+    "en": "'Locals, not actors'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так раскручивали фильм, снятый как «найденная плёнка». Первоначальный бюджет — десятки тысяч долларов, а собрал он почти 250 миллионов.",
+   "en": "That was how the 'found footage' film was marketed. Its original budget was tens of thousands of dollars; it grossed almost 250 million."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Blair_Witch_Project",
+  "basedOn": "nineties_038",
+  "refine": "rewrite",
+  "id": "cur_nineties_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Создатель зелёного «кода» из «Матрицы» (1999) любит говорить, что код сделан из... Чего?",
+   "en": "The designer of The Matrix's green 'code' (1999) likes to say it is made of... What?"
+  },
+  "options": [
+   {
+    "ru": "Японских рецептов суши",
+    "en": "Japanese sushi recipes"
+   },
+   {
+    "ru": "Японских прогнозов погоды",
+    "en": "Japanese weather forecasts"
+   },
+   {
+    "ru": "Сценария самого фильма",
+    "en": "The film's own script"
+   },
+   {
+    "ru": "Цифр числа пи",
+    "en": "The digits of pi"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так говорит дизайнер Саймон Уайтли, у которого жена японка, хотя японцы с этим спорят. На деле там зеркальные японские знаки, латиница и цифры.",
+   "en": "So says designer Simon Whiteley, whose wife is Japanese, though Japanese readers dispute it. It is really mirrored kana, Latin letters and digits."
+  },
+  "source": "https://en.wikipedia.org/wiki/Matrix_digital_rain",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_nineties_23"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Форрест Гамп (1994) однажды просто побежал и бегал по Америке туда и обратно. Сколько месяцев длился его бег?",
+   "en": "Forrest Gump (1994) just started running and ran back and forth across America. For how many months did he run?"
+  },
+  "answer": 38,
+  "range": [
+   0,
+   120
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "мес.",
+   "en": "months"
+  },
+  "fact": {
+   "ru": "Он сам считает: 3 года, 2 месяца, 14 дней и 16 часов. Потом говорит, что устал и пойдёт домой. За это время он пересёк США несколько раз.",
+   "en": "He counts it himself: 3 years, 2 months, 14 days and 16 hours. Then he says he's tired and goes home. He crossed the USA several times."
+  },
+  "source": "https://screenrant.com/forrest-gump-run-how-long-route-where/",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_nineties_26"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Марафон — это 42 км. Какой длины тоннель под Ла-Маншем, открытый в 1994 году?",
+   "en": "A marathon is 42 km. How long is the Channel Tunnel, opened in 1994?"
+  },
+  "answer": 50,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Точнее, 50,5 км, и почти 38 км из них проходят под морским дном: это самый длинный подводный участок среди тоннелей мира.",
+   "en": "50.5 km to be exact, and almost 38 km of it runs under the seabed: the longest undersea section of any tunnel in the world."
+  },
+  "source": "https://en.wikipedia.org/wiki/Channel_Tunnel",
+  "basedOn": "nineties_041",
+  "refine": "rewrite",
+  "id": "cur_nineties_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Windows 95 продавали и на дискетах. Сколько их лежало в розничной коробке?",
+   "en": "Windows 95 was also sold on floppy disks. How many came in the retail box?"
+  },
+  "answer": 13,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "дискет",
+   "en": "disks"
+  },
+  "fact": {
+   "ru": "Их размечали в особом формате DMF на 1,68 МБ вместо обычных 1,44, иначе дискет понадобилось бы ещё больше.",
+   "en": "They used a special DMF format holding 1.68 MB instead of the usual 1.44, or even more disks would have been needed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Windows_95",
+  "basedOn": "nineties_047",
+  "refine": "same",
+  "id": "cur_nineties_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Парк юрского периода» (1993) идёт 127 минут. Сколько минут из них на экране динозавры?",
+   "en": "Jurassic Park (1993) runs 127 minutes. For how many of them are dinosaurs on screen?"
+  },
+  "answer": 15,
+  "range": [
+   0,
+   127
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "мин",
+   "en": "min"
+  },
+  "fact": {
+   "ru": "Всего около 15 минут: девять — механические куклы Стэна Уинстона и лишь шесть — компьютерная графика.",
+   "en": "About 15 minutes in all: nine of Stan Winston's animatronics and just six of computer graphics."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jurassic_Park_(film)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_nineties_24"
+ }
+]

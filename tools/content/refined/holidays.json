@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Раз в год в тайском городе Лопбури накрывают огромный стол с фруктами и овощами. Для кого?",
+   "en": "Once a year the Thai town of Lopburi lays out a huge table of fruit and vegetables. Who is it for?"
+  },
+  "options": [
+   {
+    "ru": "Для обезьян",
+    "en": "Monkeys"
+   },
+   {
+    "ru": "Для слонов",
+    "en": "Elephants"
+   },
+   {
+    "ru": "Для монахов",
+    "en": "Monks"
+   },
+   {
+    "ru": "Для бедняков",
+    "en": "The poor"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В городе живут тысячи макак. По рассказам, пир в 1980-х придумал владелец гостиницы, чтобы отблагодарить обезьян за туристов.",
+   "en": "Thousands of macaques live in the town. The story goes that a hotel owner came up with the feast in the 1980s to thank the monkeys for the tourists."
+  },
+  "source": "https://en.wikipedia.org/wiki/Monkey_Buffet_Festival",
+  "basedOn": "holidays_012",
+  "refine": "rewrite",
+  "id": "cur_holidays_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "За чем бегут вниз по крутому холму на ежегодном празднике в английском Глостершире?",
+   "en": "What do people chase down a steep hill at a yearly festival in Gloucestershire, England?"
+  },
+  "options": [
+   {
+    "ru": "За кругом сыра",
+    "en": "A cheese wheel"
+   },
+   {
+    "ru": "За живым поросёнком",
+    "en": "A live piglet"
+   },
+   {
+    "ru": "За пивной бочкой",
+    "en": "A rolling barrel"
+   },
+   {
+    "ru": "За огромной тыквой",
+    "en": "A giant pumpkin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сыр весит 3–4 кг и катится так быстро, что поймать его почти нельзя: приз достаётся тому, кто первым добежит до низа.",
+   "en": "The 3–4 kg cheese rolls so fast it is nearly uncatchable, so the prize goes to whoever reaches the bottom first."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cooper%27s_Hill_Cheese-Rolling_and_Wake",
+  "basedOn": "holidays_006",
+  "refine": "rewrite",
+  "id": "cur_holidays_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Каждый год перед Днём благодарения президенту США при журналистах приносят живую индейку. Что он с ней делает?",
+   "en": "Every year before Thanksgiving the US president is handed a live turkey in front of the press. What does he do with it?"
+  },
+  "options": [
+   {
+    "ru": "Милует её",
+    "en": "Pardons it"
+   },
+   {
+    "ru": "Отдаёт на кухню",
+    "en": "Sends it to the kitchen"
+   },
+   {
+    "ru": "Дарит зоопарку",
+    "en": "Gives it to a zoo"
+   },
+   {
+    "ru": "Взвешивает её",
+    "en": "Weighs it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Обычай закрепил Джордж Буш-старший в 1989 году. Птиц отправляют на фермы и в университеты, хотя раньше они часто не доживали и года.",
+   "en": "George H. W. Bush made it a fixture in 1989. The birds go to farms and universities, though early ones often died within a year."
+  },
+  "source": "https://en.wikipedia.org/wiki/National_Thanksgiving_Turkey_Presentation",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_holidays_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что едят на Рождество множество японских семей?",
+   "en": "What do many Japanese families eat for Christmas?"
+  },
+  "options": [
+   {
+    "ru": "Курицу из KFC",
+    "en": "KFC fried chicken"
+   },
+   {
+    "ru": "Пиццу из Pizza Hut",
+    "en": "Pizza Hut pizza"
+   },
+   {
+    "ru": "Бургеры McDonald's",
+    "en": "McDonald's burgers"
+   },
+   {
+    "ru": "Индейку с клюквой",
+    "en": "Turkey with cranberries"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1974 году KFC запустил рекламу «Кентукки на Рождество», и теперь праздничные вёдра заказывают за недели вперёд.",
+   "en": "A 1974 'Kentucky for Christmas' campaign started it; now festive buckets are ordered weeks in advance."
+  },
+  "source": "https://global.kfc.com/stories/how-kentucky-for-christmas-began-in-japan/",
+  "basedOn": "holidays_018",
+  "refine": "rewrite",
+  "id": "cur_holidays_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Каталонские дети на Рождество бьют палками полено. Что оно делает потом?",
+   "en": "Catalan children beat a log with sticks at Christmas. What does it do then?"
+  },
+  "options": [
+   {
+    "ru": "Какает сладостями",
+    "en": "Poops out sweets"
+   },
+   {
+    "ru": "Поёт песенку",
+    "en": "Sings a song"
+   },
+   {
+    "ru": "Превращается в ёлку",
+    "en": "Turns into a tree"
+   },
+   {
+    "ru": "Убегает в лес",
+    "en": "Runs off into the forest"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Полено по имени Кага Тио неделями «кормят» и укрывают пледом, а потом поют ему песенку и колотят палками.",
+   "en": "The log, Caga Tió, is 'fed' and tucked under a blanket for weeks, then sung to and whacked with sticks."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ti%C3%B3_de_Nadal",
+  "basedOn": "holidays_027",
+  "refine": "rewrite",
+  "id": "cur_holidays_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что миллионы шведов с 1960 года смотрят по телевизору каждый сочельник в три часа дня?",
+   "en": "What have millions of Swedes watched on TV at 3 pm every Christmas Eve since 1960?"
+  },
+  "options": [
+   {
+    "ru": "Мультики Диснея",
+    "en": "Disney cartoons"
+   },
+   {
+    "ru": "Речь короля",
+    "en": "The King's speech"
+   },
+   {
+    "ru": "Фильм «Один дома»",
+    "en": "Home Alone"
+   },
+   {
+    "ru": "Хоккей с Финляндией",
+    "en": "Ice hockey against Finland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это подборка старых мультфильмов с Дональдом Даком. Её смотрят около 40% шведов, а когда её пытались убрать или урезать, страна возмущалась.",
+   "en": "It is a set of old Donald Duck cartoons. About 40% of Swedes watch it, and every attempt to drop or cut it has caused an uproar."
+  },
+  "source": "https://en.wikipedia.org/wiki/From_All_of_Us_to_All_of_You",
+  "basedOn": "holidays_035",
+  "refine": "rewrite",
+  "id": "cur_holidays_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Большой парад Дня мёртвых в Мехико впервые прошёл в 2016 году. Что его вдохновило?",
+   "en": "Mexico City's big Day of the Dead parade began in 2016. What inspired it?"
+  },
+  "options": [
+   {
+    "ru": "Фильм о Джеймсе Бонде",
+    "en": "A James Bond film"
+   },
+   {
+    "ru": "Мультфильм «Тайна Коко»",
+    "en": "Pixar's Coco"
+   },
+   {
+    "ru": "Древний обряд ацтеков",
+    "en": "An ancient Aztec rite"
+   },
+   {
+    "ru": "Олимпиада в Мехико",
+    "en": "The Mexico City Olympics"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Парад придумали для начала фильма «007: Спектр» (2015), туристы стали его искать — и город сделал его настоящим.",
+   "en": "The parade was invented for the opening of Spectre (2015); tourists came looking for it, so the city made it real."
+  },
+  "source": "https://en.wikipedia.org/wiki/Day_of_the_Dead",
+  "basedOn": "holidays_037",
+  "refine": "same",
+  "id": "cur_holidays_08"
+ },
+ {
+  "id": "cur_holidays_22",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На китайский Новый год иероглиф «счастье» часто вешают на дверь вверх ногами. Почему?",
+   "en": "At Chinese New Year the character for 'luck' is often hung on the door upside down. Why?"
+  },
+  "options": [
+   {
+    "ru": "«Перевёрнут» звучит как «пришёл»",
+    "en": "'Upside down' sounds like 'arrived'"
+   },
+   {
+    "ru": "Чтобы его не украли соседи",
+    "en": "So the neighbours won't steal it"
+   },
+   {
+    "ru": "Так его лучше видят духи предков",
+    "en": "So the ancestors' spirits can read it"
+   },
+   {
+    "ru": "Чтобы сбить с толку злых духов",
+    "en": "To confuse evil spirits"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Перевёрнутый» и «пришёл» по-китайски звучат одинаково — «дао». Так что перевёрнутое «счастье» читается как «счастье пришло».",
+   "en": "In Chinese 'upside down' and 'to arrive' are both pronounced 'dao', so an upside-down 'luck' reads as 'luck has arrived'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fu_(character)",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Фонари на Хэллоуин в Ирландии вырезали задолго до тыкв. Из чего?",
+   "en": "In Ireland, Halloween lanterns were carved long before pumpkins. From what?"
+  },
+  "options": [
+   {
+    "ru": "Из репы",
+    "en": "Turnips"
+   },
+   {
+    "ru": "Из картошки",
+    "en": "Potatoes"
+   },
+   {
+    "ru": "Из яблок",
+    "en": "Apples"
+   },
+   {
+    "ru": "Из капусты",
+    "en": "Cabbages"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По легенде, пройдоха Джек обманул чёрта, и его не пустили ни в рай, ни в ад. С тех пор он бродит по земле с углём в выдолбленной репе.",
+   "en": "In legend, Stingy Jack tricked the Devil and was barred from both Heaven and Hell. He has wandered the Earth ever since, a coal in a hollow turnip."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jack-o%27-lantern",
+  "basedOn": "holidays_016",
+  "refine": "rewrite",
+  "id": "cur_holidays_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На китайский Новый год дарят деньги в красных конвертах. Чего в таком подарке быть не должно?",
+   "en": "At Chinese New Year people give money in red envelopes. What should such a gift never have?"
+  },
+  "options": [
+   {
+    "ru": "Цифры 4 в сумме",
+    "en": "A 4 in the amount"
+   },
+   {
+    "ru": "Цифры 8 в сумме",
+    "en": "An 8 in the amount"
+   },
+   {
+    "ru": "Новых купюр",
+    "en": "Brand-new notes"
+   },
+   {
+    "ru": "Чётной суммы",
+    "en": "An even amount"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Четыре» по-китайски звучит почти как «смерть». Сумма обычно чётная: нечётные дарят на похоронах. А за новыми купюрами стоят очереди в банках.",
+   "en": "'Four' sounds almost like 'death' in Chinese. The amount is usually even, as odd sums go with funerals, and people queue at banks for new notes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Red_envelope",
+  "basedOn": "holidays_010",
+  "refine": "rewrite",
+  "id": "cur_holidays_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Песню Jingle Bells поют на каждое Рождество. А о чём она на самом деле?",
+   "en": "Jingle Bells is sung every Christmas. What is it actually about?"
+  },
+  "options": [
+   {
+    "ru": "О катании на санях",
+    "en": "A sleigh ride"
+   },
+   {
+    "ru": "О Санта-Клаусе",
+    "en": "Santa Claus"
+   },
+   {
+    "ru": "О Рождестве в лесу",
+    "en": "Christmas in the woods"
+   },
+   {
+    "ru": "О зимней свадьбе",
+    "en": "A winter wedding"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её издали в 1857 году как «Сани в одну лошадь», и о Рождестве в ней ни слова. В 1965-м её сыграли в космосе астронавты «Джемини-6».",
+   "en": "It came out in 1857 as 'The One Horse Open Sleigh' and never mentions Christmas. In 1965 the Gemini 6 astronauts played it in space."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jingle_Bells",
+  "basedOn": "holidays_043",
+  "refine": "rewrite",
+  "id": "cur_holidays_12"
+ },
+ {
+  "id": "cur_holidays_13",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каждое Рождество военные ПВО Северной Америки «следят за полётом Санты». С чего это началось в 1955 году?",
+   "en": "Every Christmas, North America's air defence command 'tracks Santa'. How did it start in 1955?"
+  },
+  "options": [
+   {
+    "ru": "С ошибки в номере телефона",
+    "en": "A wrong phone number"
+   },
+   {
+    "ru": "С ложной тревоги на радаре",
+    "en": "A false alarm on radar"
+   },
+   {
+    "ru": "С письма девочки президенту",
+    "en": "A girl's letter to the president"
+   },
+   {
+    "ru": "С шутки генерала",
+    "en": "A general's joke"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В рекламе Sears был «номер Санты», на одну цифру отличавшийся от телефона штаба ПВО. По одной версии, номер напечатали с ошибкой, по другой — ошибся ребёнок.",
+   "en": "A Sears advert gave 'Santa's number', one digit off the air defence centre's line. One version says it was misprinted, another that a child misdialled."
+  },
+  "source": "https://en.wikipedia.org/wiki/NORAD_Tracks_Santa",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто приносит подарки итальянским детям в ночь на 6 января?",
+   "en": "Who brings Italian children presents on the night before 6 January?"
+  },
+  "options": [
+   {
+    "ru": "Ведьма Бефана",
+    "en": "Befana the witch"
+   },
+   {
+    "ru": "Три волхва",
+    "en": "The Three Wise Men"
+   },
+   {
+    "ru": "Святой Николай",
+    "en": "Saint Nicholas"
+   },
+   {
+    "ru": "Баббо Натале",
+    "en": "Babbo Natale"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бефана летает на метле и кладёт хорошим детям сладости, а непослушным — уголь. По легенде, она не пошла с волхвами к младенцу Христу и ищет его до сих пор.",
+   "en": "Befana flies on a broom, leaving sweets for good children and coal for naughty ones. In legend she turned the Magi away and still searches for the Christ Child."
+  },
+  "source": "https://en.wikipedia.org/wiki/Befana",
+  "basedOn": "holidays_029",
+  "refine": "rewrite",
+  "id": "cur_holidays_14"
+ },
+ {
+  "id": "cur_holidays_15",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Испанцы в новогоднюю полночь едят по виноградине на каждый удар часов. Кто, как говорят, раскрутил обычай в 1909-м?",
+   "en": "Spaniards eat a grape for each chime at New Year's midnight. Who, as the common story goes, promoted the custom in 1909?"
+  },
+  "options": [
+   {
+    "ru": "Виноградари Аликанте",
+    "en": "Alicante growers"
+   },
+   {
+    "ru": "Король Испании",
+    "en": "The King of Spain"
+   },
+   {
+    "ru": "Мадридские газеты",
+    "en": "Madrid newspapers"
+   },
+   {
+    "ru": "Католическая церковь",
+    "en": "The Catholic Church"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Обычай появился не позже 1895 года. По распространённой версии, в 1909-м виноградари Аликанте собрали огромный урожай и продвигали его, чтобы продать излишки.",
+   "en": "The custom dates from 1895 at the latest. The common story is that in 1909 Alicante growers with a huge surplus promoted it to sell their grapes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Twelve_Grapes",
+  "basedOn": "holidays_007",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_holidays_23",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Норвегия каждый год дарит Лондону огромную ель для Трафальгарской площади. За что?",
+   "en": "Every year Norway gives London a huge spruce for Trafalgar Square. What for?"
+  },
+  "options": [
+   {
+    "ru": "За помощь в войне",
+    "en": "Help in the war"
+   },
+   {
+    "ru": "За проигранное пари",
+    "en": "A lost bet"
+   },
+   {
+    "ru": "В счёт старого долга",
+    "en": "To pay off an old debt"
+   },
+   {
+    "ru": "В честь королевской свадьбы",
+    "en": "To mark a royal wedding"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 1947 года так Норвегия благодарит британцев за поддержку во Второй мировой войне. Ель обычно выше 20 метров, и ей 50–60 лет.",
+   "en": "Since 1947 it has been Norway's thanks for British support in the Second World War. The tree is usually over 20 m tall and 50 to 60 years old."
+  },
+  "source": "https://en.wikipedia.org/wiki/Trafalgar_Square_Christmas_tree",
+  "basedOn": "holidays_025",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_holidays_17",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В сутках 24 часа. А сколько часов новогодняя полночь идёт по Земле от первого часового пояса до последнего?",
+   "en": "A day has 24 hours. How many hours does New Year's midnight take to cross the Earth, first time zone to last?"
+  },
+  "answer": 26,
+  "range": [
+   0,
+   60
+  ],
+  "step": 0.25,
+  "tolerance": 1.75,
+  "unit": {
+   "ru": "часов",
+   "en": "hours"
+  },
+  "fact": {
+   "ru": "Первым полночь встречает остров Рождества в Кирибати (UTC+14), последними — необитаемые острова Бейкер и Хауленд (UTC−12).",
+   "en": "Kiribati's Christmas Island (UTC+14) sees midnight first; the uninhabited Baker and Howland Islands (UTC−12) see it last."
+  },
+  "source": "https://en.wikipedia.org/wiki/UTC%2B14:00",
+  "basedOn": "holidays_045",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_holidays_24",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В Мюнхене живёт около 1,5 млн человек. Сколько миллионов гостей приходит на Октоберфест за две с небольшим недели?",
+   "en": "About 1.5 million people live in Munich. How many million visitors come to Oktoberfest in its two-odd weeks?"
+  },
+  "answer": 7,
+  "range": [
+   0,
+   40
+  ],
+  "step": 0.25,
+  "tolerance": 2,
+  "unit": {
+   "ru": "млн гостей",
+   "en": "million visitors"
+  },
+  "fact": {
+   "ru": "Около 7 млн, почти впятеро больше, чем жителей (в 2026 году пришло 7,4 млн). А начинается «октябрьский» праздник в сентябре: ради тёплых вечеров.",
+   "en": "About 7 million, nearly five times the population (7.4 million came in 2026). And the 'October' festival starts in September, for the warmer evenings."
+  },
+  "source": "https://en.wikipedia.org/wiki/Oktoberfest",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_holidays_19",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "С 1966 по 2025 год в шведском Евле поставили к Рождеству 60 соломенных козлов. Скольких из них сожгли или повредили?",
+   "en": "From 1966 to 2025 the Swedish town of Gävle put up 60 straw Christmas goats. How many were burned or damaged?"
+  },
+  "answer": 43,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "козлов",
+   "en": "goats"
+  },
+  "fact": {
+   "ru": "43 из 60. Первого козла сожгли в ту же новогоднюю ночь 1966-го, а в 2025-м его просто повалила буря.",
+   "en": "43 of 60. The first goat was burned that very New Year's Eve in 1966; in 2025 a storm simply blew it over."
+  },
+  "source": "https://en.wikipedia.org/wiki/G%C3%A4vle_goat",
+  "basedOn": "holidays_047",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_holidays_20",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Шар на Таймс-сквер опускают в новогоднюю полночь. Легковушка весит около 1500 кг. А сколько весит шар?",
+   "en": "The Times Square ball drops at New Year's midnight. A car weighs about 1,500 kg. How much does the ball weigh?"
+  },
+  "answer": 5600,
+  "range": [
+   0,
+   20000
+  ],
+  "step": 100,
+  "tolerance": 1500,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Около 5600 кг: шар 3,8 м в диаметре покрыт 5280 круглыми пластинами из хрусталя. Первый шар 1907 года весил всего 320 кг.",
+   "en": "About 5,600 kg: the 3.8 m ball is covered in 5,280 round crystal panels. The first ball, in 1907, weighed just 320 kg."
+  },
+  "source": "https://en.wikipedia.org/wiki/Times_Square_Ball",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "У классической мексиканской пиньяты семь острых лучей. Что они, по традиции, означают?",
+   "en": "A classic Mexican piñata has seven points. What do they traditionally stand for?"
+  },
+  "options": [
+   {
+    "ru": "Семь смертных грехов",
+    "en": "The seven deadly sins"
+   },
+   {
+    "ru": "Семь дней недели",
+    "en": "The seven days of the week"
+   },
+   {
+    "ru": "Семь чудес света",
+    "en": "The seven wonders of the world"
+   },
+   {
+    "ru": "Семь цветов радуги",
+    "en": "The seven colours of the rainbow"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "А бьют её с завязанными глазами в знак веры: сладости внутри — искушения, а по другому толкованию — награда за стойкость.",
+   "en": "It is hit blindfolded as a sign of faith: the sweets inside are temptations or, in another reading, the reward for staying strong."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pi%C3%B1ata",
+  "basedOn": "holidays_013",
+  "refine": "rewrite",
+  "id": "cur_holidays_26"
+ }
+]

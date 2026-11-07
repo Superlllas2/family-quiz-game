@@ -1,0 +1,670 @@
+[
+ {
+  "id": "cur_earth_21",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Им трут пятки в ванной, а после извержений он плавает по океану целыми плотами. Что это за камень?",
+   "en": "People scrub their heels with it, and after eruptions it floats on the ocean in huge rafts. Which rock is it?"
+  },
+  "options": [
+   {
+    "ru": "Пемза",
+    "en": "Pumice"
+   },
+   {
+    "ru": "Обсидиан",
+    "en": "Obsidian"
+   },
+   {
+    "ru": "Базальт",
+    "en": "Basalt"
+   },
+   {
+    "ru": "Мрамор",
+    "en": "Marble"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пемза — застывшая вулканическая пена, вся в пузырьках. После извержения Кракатау её плоты почти год плыли через Индийский океан до Африки.",
+   "en": "Pumice is frozen volcanic froth, full of bubbles. After Krakatoa erupted, its rafts floated for almost a year across the Indian Ocean to Africa."
+  },
+  "source": "https://en.wikipedia.org/wiki/1883_eruption_of_Krakatoa",
+  "basedOn": "earth_011",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Посреди урагана ветер вдруг стих и выглянуло солнце. Что это значит?",
+   "en": "In the middle of a hurricane the wind suddenly drops and the sun comes out. What does it mean?"
+  },
+  "options": [
+   {
+    "ru": "Это «глаз», буря вернётся",
+    "en": "It's the eye; the storm will return"
+   },
+   {
+    "ru": "Скоро пойдёт сильный град",
+    "en": "Heavy hail is about to fall"
+   },
+   {
+    "ru": "Ураган выдохся и уходит прочь",
+    "en": "The hurricane has worn itself out"
+   },
+   {
+    "ru": "Сейчас начнётся смерч",
+    "en": "A tornado is about to start"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В «глазу» тихо и часто ясно, а самый свирепый ветер дует в стене туч вокруг. Люди выходят смотреть ущерб, и буря бьёт с другой стороны.",
+   "en": "The eye is calm and often clear; the fiercest winds are in the wall around it. People step out to check the damage, and the storm hits from the other side."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eye_(cyclone)",
+  "basedOn": "earth_006",
+  "refine": "rewrite",
+  "id": "cur_earth_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем туман отличается от облака?",
+   "en": "What is the difference between fog and a cloud?"
+  },
+  "options": [
+   {
+    "ru": "Только высотой",
+    "en": "Only the height"
+   },
+   {
+    "ru": "Туман бывает только над водой",
+    "en": "Fog only forms over water"
+   },
+   {
+    "ru": "Туман — это пыль в воздухе",
+    "en": "Fog is dust in the air"
+   },
+   {
+    "ru": "Облако из пара, туман из капель",
+    "en": "Clouds are steam, fog is drops"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Туман — это облако, лёгшее на землю. В пустынных горах Чили и Марокко его ловят сетками, и капли дают деревням питьевую воду.",
+   "en": "Fog is a cloud lying on the ground. In the desert hills of Chile and Morocco nets catch it, and the drops give villages drinking water."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fog_collection",
+  "basedOn": "earth_012",
+  "refine": "rewrite",
+  "id": "cur_earth_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Вершина горы ближе к Солнцу, чем долина. Почему же наверху холоднее?",
+   "en": "A mountain top is closer to the Sun than the valley. So why is it colder up there?"
+  },
+  "options": [
+   {
+    "ru": "Воздух вверху расширяется и стынет",
+    "en": "Rising air expands and cools"
+   },
+   {
+    "ru": "Там ближе к ледяному холоду космоса",
+    "en": "It is closer to the icy cold of space"
+   },
+   {
+    "ru": "Ветер сдувает с вершин тепло",
+    "en": "The wind blows the heat off the peaks"
+   },
+   {
+    "ru": "Горные камни не держат тепло",
+    "en": "Mountain rock can't hold heat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Солнце греет землю, а воздух греется уже от неё. Поднимаясь, воздух расширяется и в среднем остывает на 6,5° на каждый километр.",
+   "en": "The Sun warms the ground, and the ground warms the air. Rising air expands and cools, on average by 6.5° for every kilometre."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lapse_rate",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_earth_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Молния ударила в песчаный пляж. Что потом можно выкопать на этом месте?",
+   "en": "Lightning has struck a sandy beach. What can you later dig up on that spot?"
+  },
+  "options": [
+   {
+    "ru": "Мелкие алмазы",
+    "en": "Tiny diamonds"
+   },
+   {
+    "ru": "Крупинки золота",
+    "en": "Grains of gold"
+   },
+   {
+    "ru": "Стеклянные трубки",
+    "en": "Glass tubes"
+   },
+   {
+    "ru": "Кусочки морского янтаря",
+    "en": "Bits of sea amber"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Это фульгурит, «окаменевшая молния»: разряд за миг плавит кварцевый песок, и тот застывает ветвистой стеклянной трубкой.",
+   "en": "It is a fulgurite, 'fossil lightning': the bolt melts quartz sand in an instant, and it sets into a branching glass tube."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fulgurite",
+  "basedOn": "earth_024",
+  "refine": "rewrite",
+  "id": "cur_earth_06"
+ },
+ {
+  "id": "cur_earth_07",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какую форму на самом деле имеет крупная падающая капля дождя?",
+   "en": "What shape is a large falling raindrop really?"
+  },
+  "options": [
+   {
+    "ru": "Булочки",
+    "en": "A bun"
+   },
+   {
+    "ru": "Слезинки",
+    "en": "A teardrop"
+   },
+   {
+    "ru": "Иголки",
+    "en": "A needle"
+   },
+   {
+    "ru": "Пирамидки",
+    "en": "A pyramid"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Встречный воздух сплющивает крупную каплю снизу, а «слезой» она выглядит, только пока висит на кране.",
+   "en": "Rushing air flattens a large drop underneath; it only looks like a teardrop while hanging from a tap."
+  },
+  "source": "https://en.wikipedia.org/wiki/Raindrop",
+  "basedOn": "earth_037",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем ураган отличается от тайфуна?",
+   "en": "What is the difference between a hurricane and a typhoon?"
+  },
+  "options": [
+   {
+    "ru": "Только местом",
+    "en": "Only where it happens"
+   },
+   {
+    "ru": "Силой ветра",
+    "en": "Wind strength"
+   },
+   {
+    "ru": "Временем года",
+    "en": "Time of year"
+   },
+   {
+    "ru": "Направлением вращения",
+    "en": "Direction of spin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Над Атлантикой это ураган, на западе Тихого океана — тайфун, а в Индийском океане — циклон.",
+   "en": "Over the Atlantic it is a hurricane, in the western Pacific a typhoon, in the Indian Ocean a cyclone."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tropical_cyclone",
+  "basedOn": "earth_034",
+  "refine": "rewrite",
+  "id": "cur_earth_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько весит обычное пушистое облако размером около километра?",
+   "en": "How much does an ordinary fluffy cloud about a kilometre across weigh?"
+  },
+  "options": [
+   {
+    "ru": "Меньше килограмма",
+    "en": "Less than a kilogram"
+   },
+   {
+    "ru": "Как легковая машина",
+    "en": "As much as a car"
+   },
+   {
+    "ru": "Как сто слонов",
+    "en": "As much as 100 elephants"
+   },
+   {
+    "ru": "Ничего: это же пар",
+    "en": "Nothing, it is just vapour"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Около 500 тонн воды висит в воздухе каплями настолько мелкими, что их держат восходящие потоки.",
+   "en": "About 500 tonnes of water hang there as droplets so tiny that rising air keeps them aloft."
+  },
+  "source": "https://www.usgs.gov/special-topics/water-science-school/science/how-much-does-a-cloud-weigh",
+  "basedOn": "earth_017",
+  "refine": "same",
+  "id": "cur_earth_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какая вершина дальше всех от центра Земли?",
+   "en": "Which summit is farthest from the centre of the Earth?"
+  },
+  "options": [
+   {
+    "ru": "Эверест в Гималаях",
+    "en": "Everest, Himalayas"
+   },
+   {
+    "ru": "Чимборасо в Эквадоре",
+    "en": "Chimborazo, Ecuador"
+   },
+   {
+    "ru": "Килиманджаро в Африке",
+    "en": "Kilimanjaro, Africa"
+   },
+   {
+    "ru": "Монблан в Альпах",
+    "en": "Mont Blanc, Alps"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Земля сплюснута и у экватора толще, поэтому эквадорская вершина на 2 км дальше от центра, чем Эверест.",
+   "en": "The Earth bulges at the equator, so this Ecuadorian peak is 2 km farther from the centre than Everest."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chimborazo",
+  "basedOn": "earth_021",
+  "refine": "rewrite",
+  "id": "cur_earth_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Цунами» по-японски — «волна в гавани». Почему так назвали волну, что идёт из открытого моря?",
+   "en": "'Tsunami' is Japanese for 'harbour wave'. Why was a wave from the open sea named that?"
+  },
+  "options": [
+   {
+    "ru": "Рыбаки в море её не заметили",
+    "en": "Fishermen at sea never noticed it"
+   },
+   {
+    "ru": "Она зарождается в глубоких гаванях",
+    "en": "It forms in deep harbours"
+   },
+   {
+    "ru": "Её впервые описали смотрители порта",
+    "en": "Harbour masters first described it"
+   },
+   {
+    "ru": "Только гавани она и разрушает",
+    "en": "It only ever wrecks harbours"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В открытом море волна высотой около метра, хоть и мчится быстрее 800 км/ч. Рыбаки возвращались домой и находили гавань разрушенной.",
+   "en": "Out at sea the wave is only about a metre high, though it races at over 800 km/h. Fishermen came home to find the harbour wrecked."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tsunami",
+  "basedOn": "earth_004",
+  "refine": "rewrite",
+  "id": "cur_earth_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой была Сахара около 8000 лет назад?",
+   "en": "What was the Sahara like about 8,000 years ago?"
+  },
+  "options": [
+   {
+    "ru": "Саванной с озёрами",
+    "en": "A savanna with lakes"
+   },
+   {
+    "ru": "Покрытой ледником",
+    "en": "Covered by a glacier"
+   },
+   {
+    "ru": "Дном тёплого моря",
+    "en": "A warm sea floor"
+   },
+   {
+    "ru": "Такой же, как сейчас",
+    "en": "Just the same as today"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Муссоны тогда доходили далеко на север: в песках Сахары находят кости бегемотов, слонов и крокодилов.",
+   "en": "The monsoon reached much farther north then: bones of hippos, elephants and crocodiles turn up in the Sahara sands."
+  },
+  "source": "https://en.wikipedia.org/wiki/African_humid_period",
+  "basedOn": "earth_033",
+  "refine": "rewrite",
+  "id": "cur_earth_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько мостов пересекает Амазонку?",
+   "en": "How many bridges cross the Amazon?"
+  },
+  "options": [
+   {
+    "ru": "Ни одного",
+    "en": "None"
+   },
+   {
+    "ru": "Один",
+    "en": "One"
+   },
+   {
+    "ru": "Около двадцати",
+    "en": "About twenty"
+   },
+   {
+    "ru": "Больше сотни",
+    "en": "Over a hundred"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Построить их можно, но вдоль реки почти нет дорог и городов, поэтому все переправляются на паромах.",
+   "en": "They could be built, but the river runs through forest with few roads or towns, so people take ferries."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amazon_River",
+  "basedOn": "earth_035",
+  "refine": "same",
+  "id": "cur_earth_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что нашли в камнях на самой вершине Эвереста?",
+   "en": "What has been found in the rocks at the very top of Everest?"
+  },
+  "options": [
+   {
+    "ru": "Морские окаменелости",
+    "en": "Sea creature fossils"
+   },
+   {
+    "ru": "Кости динозавров",
+    "en": "Dinosaur bones"
+   },
+   {
+    "ru": "Метеоритное железо",
+    "en": "Meteorite iron"
+   },
+   {
+    "ru": "Монеты древних купцов",
+    "en": "Ancient traders' coins"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вершина — известняк, отложившийся на дне моря почти полмиллиарда лет назад: в нём есть остатки трилобитов и морских лилий.",
+   "en": "The summit is limestone laid down on a sea floor nearly half a billion years ago; it holds bits of trilobites and sea lilies."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mount_Everest",
+  "basedOn": "earth_036",
+  "refine": "rewrite",
+  "id": "cur_earth_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1943 году на кукурузном поле мексиканского фермера в земле открылась трещина. Что из неё выросло?",
+   "en": "In 1943 a crack opened in a Mexican farmer's cornfield. What grew out of it?"
+  },
+  "options": [
+   {
+    "ru": "Новый вулкан",
+    "en": "A new volcano"
+   },
+   {
+    "ru": "Горячий гейзер",
+    "en": "A hot geyser"
+   },
+   {
+    "ru": "Нефтяной фонтан",
+    "en": "An oil gusher"
+   },
+   {
+    "ru": "Подземная река",
+    "en": "An underground river"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вулкан Парикутин за сутки вырос на 50 м, за восемь месяцев — до 365 м. Девять лет извержений, и лава похоронила два городка.",
+   "en": "Parícutin grew 50 m in a day and 365 m in eight months. It erupted for nine years, and its lava buried two towns."
+  },
+  "source": "https://en.wikipedia.org/wiki/Par%C3%ADcutin",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_earth_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Ньютон сначала разделил радугу на пять цветов, а потом добавил оранжевый и синий. Почему цветов стало семь?",
+   "en": "Newton first split the rainbow into five colours, then added orange and indigo. Why seven?"
+  },
+  "options": [
+   {
+    "ru": "По числу нот в гамме",
+    "en": "Like the notes of a scale"
+   },
+   {
+    "ru": "По числу дней недели",
+    "en": "Like the days of the week"
+   },
+   {
+    "ru": "По числу известных планет",
+    "en": "Like the known planets"
+   },
+   {
+    "ru": "Столько видит глаз человека",
+    "en": "That's what the eye sees"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ньютон видел сходство света и музыки: семь цветов — как семь нот. А в настоящей радуге цвета перетекают друг в друга без границ.",
+   "en": "Newton saw light as akin to music: seven colours like seven notes. In a real rainbow the colours blend with no borders at all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rainbow",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_earth_16"
+ },
+ {
+  "id": "cur_earth_22",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему после дождя так узнаваемо пахнет мокрой землёй?",
+   "en": "Why does wet earth smell so distinctive after rain?"
+  },
+  "options": [
+   {
+    "ru": "Запах дают почвенные бактерии",
+    "en": "Soil bacteria make the smell"
+   },
+   {
+    "ru": "Дождь приносит запах из тучи",
+    "en": "The rain brings the smell from the cloud"
+   },
+   {
+    "ru": "Так пахнет сама дождевая вода",
+    "en": "Rainwater itself smells like that"
+   },
+   {
+    "ru": "От воды в почве ржавеет железо",
+    "en": "Water makes iron in the soil rust"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это геосмин от почвенных бактерий: капли выбивают его в воздух. Нос чует его даже в нескольких частях на триллион. Сам запах зовут «петрикор».",
+   "en": "It is geosmin from soil bacteria; raindrops fling it into the air. Our nose senses it at a few parts per trillion. The smell is called petrichor."
+  },
+  "source": "https://en.wikipedia.org/wiki/Geosmin",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Лава на Гавайях раскалена до 1100–1200 °C. А сколько градусов во внутреннем ядре Земли?",
+   "en": "Hawaiian lava is 1,100–1,200 °C. How hot is the Earth's inner core?"
+  },
+  "answer": 5400,
+  "range": [
+   0,
+   20000
+  ],
+  "step": 100,
+  "tolerance": 1200,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "Около 5400 °C — примерно как на поверхности Солнца. Но огромное давление не даёт железу ядра расплавиться.",
+   "en": "About 5,400 °C, roughly as hot as the surface of the Sun. Yet the huge pressure keeps the core's iron solid."
+  },
+  "source": "https://en.wikipedia.org/wiki/Earth%27s_inner_core",
+  "basedOn": "earth_050",
+  "refine": "rewrite",
+  "id": "cur_earth_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Лёд Антарктиды местами толщиной почти 5 км. На сколько метров поднялся бы океан, если бы он весь растаял?",
+   "en": "Antarctic ice is nearly 5 km thick in places. By how many metres would the sea rise if it all melted?"
+  },
+  "answer": 58,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Примерно на 58 м — как 20-этажный дом. Лёд Гренландии добавил бы ещё около 7 метров.",
+   "en": "About 58 m, the height of a 20-storey building. Greenland's ice would add about 7 m more."
+  },
+  "source": "https://nsidc.org/learn/parts-cryosphere/ice-sheets/ice-sheet-quick-facts",
+  "basedOn": "earth_047",
+  "refine": "rewrite",
+  "id": "cur_earth_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В океаны впадают тысячи рек. Какая доля всей речной воды, что они несут, приходится на одну Амазонку?",
+   "en": "Thousands of rivers flow into the oceans. What share of all the river water they carry comes from the Amazon alone?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "процентов",
+   "en": "%"
+  },
+  "fact": {
+   "ru": "Около 20% — больше, чем у семи следующих крупнейших рек вместе взятых. Каждую секунду Амазонка выносит в океан больше 200 000 м³ воды.",
+   "en": "About 20%, more than the next seven largest rivers combined. Every second the Amazon pours over 200,000 m³ of water into the ocean."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amazon_River",
+  "basedOn": "earth_042",
+  "refine": "rewrite",
+  "id": "cur_earth_23"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сухой лёд превращается в газ при −78 °C. Какой самый сильный мороз измерила метеостанция на Земле?",
+   "en": "Dry ice turns to gas at −78 °C. What is the coldest temperature a weather station on Earth has measured?"
+  },
+  "answer": 89,
+  "range": [
+   0,
+   150
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "° мороза",
+   "en": "°C below zero"
+  },
+  "fact": {
+   "ru": "−89,2 °C, в центре Антарктиды, в 1983 году. Спутники видели на поверхности снега и −98 °C, но это не воздух.",
+   "en": "−89.2 °C, in the heart of Antarctica in 1983. Satellites have seen −98 °C on the snow surface, but that is not the air."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lowest_temperature_recorded_on_Earth",
+  "basedOn": "earth_039",
+  "refine": "rewrite",
+  "id": "cur_earth_20"
+ }
+]

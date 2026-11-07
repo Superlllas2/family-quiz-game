@@ -1,0 +1,670 @@
+[
+ {
+  "id": "cur_ru_music_01",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Мелодию из «Тетриса» на Game Boy знает весь мир. Какая это русская песня?",
+   "en": "The world knows the tune from Tetris on the Game Boy. Which Russian song is it?"
+  },
+  "options": [
+   {
+    "ru": "«Коробейники»",
+    "en": "Korobeiniki"
+   },
+   {
+    "ru": "«Калинка»",
+    "en": "Kalinka"
+   },
+   {
+    "ru": "«Катюша»",
+    "en": "Katyusha"
+   },
+   {
+    "ru": "«Во поле берёза стояла»",
+    "en": "The Birch Tree in the Field"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это песня на стихи Некрасова 1861 года о бродячем торговце-коробейнике. Теперь она обязательна в каждой новой версии «Тетриса».",
+   "en": "It sets an 1861 Nekrasov poem about a travelling peddler. Today every new version of Tetris has to include it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Korobeiniki",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Песенка о медведях» из «Кавказской пленницы»: «…трутся спиной медведи…» Обо что?",
+   "en": "The Bear Song from Kidnapping, Caucasian Style: the bears rub their backs against… what?"
+  },
+  "options": [
+   {
+    "ru": "О земную ось",
+    "en": "The Earth's axis"
+   },
+   {
+    "ru": "О Северный полюс",
+    "en": "The North Pole"
+   },
+   {
+    "ru": "О старую ель",
+    "en": "An old fir tree"
+   },
+   {
+    "ru": "Об айсберг",
+    "en": "An iceberg"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так, по песне, медведи вращают Землю. В кадре поёт Наталья Варлей, но голос за кадром — Аиды Ведищевой.",
+   "en": "That, the song says, is how bears turn the Earth. Natalya Varley sings on screen, but the voice is Aida Vedishcheva's."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pesenka_o_medvedyakh",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_music_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Крошка Енот боялся «того, кто сидит в пруду», пока мама не научила его улыбаться. Кто там сидел?",
+   "en": "Little Raccoon feared \"the one who sits in the pond\" until his mother taught him to smile. Who was it?"
+  },
+  "options": [
+   {
+    "ru": "Его отражение",
+    "en": "His own reflection"
+   },
+   {
+    "ru": "Его собственная тень",
+    "en": "His own shadow"
+   },
+   {
+    "ru": "Большая жаба",
+    "en": "A big toad"
+   },
+   {
+    "ru": "Сердитый сом",
+    "en": "A grumpy old catfish"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он улыбнулся отражению — и оно улыбнулось в ответ. Отсюда песня Шаинского «Улыбка», а мультфильм 1974 года снят по книжке американки Лилиан Мур.",
+   "en": "He smiled at his reflection and it smiled back: hence Shainsky's song \"Smile\". The 1974 cartoon is based on a book by the American Lilian Moore."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Крошка_Енот",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_music_03"
+ },
+ {
+  "id": "cur_ru_music_04",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто придумал четыре строчки «Пусть всегда будет солнце, пусть всегда будет небо…»?",
+   "en": "Who came up with the four lines \"May there always be sunshine, may there always be sky…\"?"
+  },
+  "options": [
+   {
+    "ru": "Четырёхлетний мальчик",
+    "en": "A four-year-old boy"
+   },
+   {
+    "ru": "Корней Чуковский",
+    "en": "Korney Chukovsky"
+   },
+   {
+    "ru": "Поэт Лев Ошанин",
+    "en": "The poet Lev Oshanin"
+   },
+   {
+    "ru": "Школьная учительница пения",
+    "en": "A school singing teacher"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Костя Баранников, узнав, что значит «всегда». Стишок напечатали в 1928 году, Чуковский взял его в книгу «От двух до пяти», а Ошанин дописал песню.",
+   "en": "Kostya Barannikov, just told what \"always\" means. The rhyme was printed in 1928, Chukovsky quoted it in From Two to Five, and Oshanin built the song on it."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Пусть_всегда_будет_солнце",
+  "basedOn": "ru_music_047",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Песенка «В траве сидел кузнечик» впервые появилась в детской книжке. Кто из героев сочинил её там?",
+   "en": "The song \"A Grasshopper Sat in the Grass\" first appeared in a children's book. Which character wrote it there?"
+  },
+  "options": [
+   {
+    "ru": "Поэт Цветик",
+    "en": "Tsvetik the poet"
+   },
+   {
+    "ru": "Винни-Пух",
+    "en": "Winnie-the-Pooh"
+   },
+   {
+    "ru": "Кот Матроскин",
+    "en": "Matroskin the cat"
+   },
+   {
+    "ru": "Крокодил Гена",
+    "en": "Gena the crocodile"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Поэт Цветик из «Приключений Незнайки и его друзей» (1954), а на деле — сам Николай Носов. Знаменитую мелодию Шаинский написал в 1971 году для мультфильма.",
+   "en": "Tsvetik the poet in The Adventures of Dunno and His Friends (1954), really Nikolai Nosov. Shainsky wrote the famous tune for the 1971 cartoon."
+  },
+  "source": "https://ru.wikipedia.org/wiki/В_траве_сидел_кузнечик",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_music_21"
+ },
+ {
+  "id": "cur_ru_music_06",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Летом 2019 года Metallica на концерте в Москве спела песню по-русски. Какую?",
+   "en": "In summer 2019 Metallica sang a song in Russian at a concert in Moscow. Which one?"
+  },
+  "options": [
+   {
+    "ru": "«Группа крови»",
+    "en": "Blood Type"
+   },
+   {
+    "ru": "«Я свободен»",
+    "en": "I'm Free"
+   },
+   {
+    "ru": "«Звезда по имени Солнце»",
+    "en": "A Star Called the Sun"
+   },
+   {
+    "ru": "«Кукушка»",
+    "en": "Cuckoo"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В том туре гитарист Кирк Хэмметт и басист Роберт Трухильо пели песни местных артистов. 21 июля 2019 года в «Лужниках» выбрали «Кино».",
+   "en": "On that tour guitarist Kirk Hammett and bassist Robert Trujillo covered local artists' songs. At Luzhniki on 21 July 2019 they chose Kino."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Группа_крови_(песня)",
+  "basedOn": "ru_music_016",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1950-х рок-н-ролл и джаз, которых не было в советских магазинах, писали на самодельные пластинки. Из чего?",
+   "en": "In the 1950s Soviet fans copied rock'n'roll and jazz, absent from the shops, onto home-made records. Made of what?"
+  },
+  "options": [
+   {
+    "ru": "Из рентгеновских снимков",
+    "en": "Old X-ray films"
+   },
+   {
+    "ru": "Из переплавленных пластинок",
+    "en": "Melted-down records"
+   },
+   {
+    "ru": "Из обрезков киноплёнки",
+    "en": "Scraps of cine film"
+   },
+   {
+    "ru": "Из обложек тетрадей",
+    "en": "Exercise-book covers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Снимки брали в больницах, часто из мусора, и на дорожках просвечивали чьи-то кости. Это звали «музыкой на рёбрах»; диск выдерживал 5–10 проигрываний.",
+   "en": "The X-rays came from hospitals, often from the bin, so someone's bones showed through: \"music on ribs\". A disc lasted 5 to 10 plays."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ribs_(recordings)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_music_07"
+ },
+ {
+  "id": "cur_ru_music_22",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Название свердловской группы «Чайф» («Аргентина — Ямайка 5:0») сложили из двух слов. Каких?",
+   "en": "The name of the Sverdlovsk band Chaif (\"Argentina–Jamaica 5:0\") was made from two words. Which?"
+  },
+  "options": [
+   {
+    "ru": "«Чай» и «кайф»",
+    "en": "chai (tea) + kaif (a buzz)"
+   },
+   {
+    "ru": "«Чай» и «фанк»",
+    "en": "chai (tea) + funk"
+   },
+   {
+    "ru": "«Чай» и «фирма»",
+    "en": "chai (tea) + firma (firm)"
+   },
+   {
+    "ru": "«Чайная» и «фабрика»",
+    "en": "chainaya fabrika (tea factory)"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слово придумал поэт первого состава Вадим Кукушкин. На репетициях пили очень крепкий чай, и «идти на репетицию» называли «идти на чайф».",
+   "en": "Vadim Kukushkin, poet of the first line-up, coined it. Rehearsals ran on very strong tea, so going to rehearse was \"going to chaif\"."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Чайф",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Откуда название группы Юрия Шевчука «ДДТ»?",
+   "en": "Where does the name of Yuri Shevchuk's band DDT come from?"
+  },
+  "options": [
+   {
+    "ru": "От яда против насекомых",
+    "en": "An insect poison"
+   },
+   {
+    "ru": "От Дома детского творчества",
+    "en": "A children's arts centre"
+   },
+   {
+    "ru": "От инициалов основателей",
+    "en": "The founders' initials"
+   },
+   {
+    "ru": "От названия уфимского завода",
+    "en": "A factory in Ufa"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "ДДТ — дихлордифенилтрихлорэтан, порошок от насекомых, в народе «дуст». Группа появилась в Уфе в 1980 году, а это имя ей дали в 1982-м.",
+   "en": "DDT, dichlorodiphenyltrichloroethane, an insecticide powder. The band started in Ufa in 1980 and took the name in 1982."
+  },
+  "source": "https://ru.wikipedia.org/wiki/ДДТ_(группа)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_music_23"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Песня «Подмосковные вечера» сначала была о другом городе. О каком?",
+   "en": "The song \"Moscow Nights\" was first about a different city. Which one?"
+  },
+  "options": [
+   {
+    "ru": "О Ленинграде",
+    "en": "Leningrad"
+   },
+   {
+    "ru": "О Киеве",
+    "en": "Kyiv"
+   },
+   {
+    "ru": "О Сталинграде",
+    "en": "Stalingrad"
+   },
+   {
+    "ru": "Об Одессе",
+    "en": "Odesa"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Ленинградские вечера» переделали для фильма о Спартакиаде, где спортсмены отдыхают в Подмосковье. А первые такты песни — позывные радио «Маяк».",
+   "en": "\"Leningrad Evenings\" was reworked for a film about a sports festival near Moscow. Its opening bars are the call sign of Radio Mayak."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Подмосковные_вечера",
+  "basedOn": "ru_music_029",
+  "refine": "rewrite",
+  "id": "cur_ru_music_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Арлекино», прославившая Пугачёву, — переделка песни из какой страны?",
+   "en": "\"Arlekino\", the song that made Pugacheva famous, was a cover of a song from which country?"
+  },
+  "options": [
+   {
+    "ru": "Болгария",
+    "en": "Bulgaria"
+   },
+   {
+    "ru": "Италия",
+    "en": "Italy"
+   },
+   {
+    "ru": "Франция",
+    "en": "France"
+   },
+   {
+    "ru": "Польша",
+    "en": "Poland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Автор — болгарин Эмил Димитров, и с этой песней Пугачёва взяла Гран-при «Золотого Орфея» в Болгарии.",
+   "en": "Bulgarian singer Emil Dimitrov wrote it, and Pugacheva won the Golden Orpheus grand prix in Bulgaria with it."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Арлекино_(песня)",
+  "basedOn": "ru_music_017",
+  "refine": "same",
+  "id": "cur_ru_music_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чьим голосом поёт героиня Барбары Брыльской в «Иронии судьбы»?",
+   "en": "Whose voice sings for Barbara Brylska's character in The Irony of Fate?"
+  },
+  "options": [
+   {
+    "ru": "Анны Герман",
+    "en": "Anna German"
+   },
+   {
+    "ru": "Аллы Пугачёвой",
+    "en": "Alla Pugacheva"
+   },
+   {
+    "ru": "Софии Ротару",
+    "en": "Sofia Rotaru"
+   },
+   {
+    "ru": "Валентины Толкуновой",
+    "en": "Valentina Tolkunova"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Брыльская — полячка, и говорит она в фильме тоже чужим голосом: её озвучила Валентина Талызина.",
+   "en": "Brylska is Polish, so even her speaking voice in the film belongs to someone else: Valentina Talyzina."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Ирония_судьбы,_или_С_лёгким_паром!",
+  "basedOn": "ru_music_030",
+  "refine": "same",
+  "id": "cur_ru_music_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На пике славы «Ласковый май» порой выступал в нескольких городах в один вечер. Как это удавалось?",
+   "en": "At the peak of the craze Laskovy Mai sometimes played several cities on the same night. How?"
+  },
+  "options": [
+   {
+    "ru": "Ездили группы-двойники",
+    "en": "Look-alike bands toured"
+   },
+   {
+    "ru": "Летали между городами",
+    "en": "They flew between cities"
+   },
+   {
+    "ru": "Концерт шёл по телемосту",
+    "en": "The show went out by TV link"
+   },
+   {
+    "ru": "Пели по 10 минут",
+    "en": "They sang for 10 minutes each"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 1988 года продюсер Андрей Разин выпускал на гастроли сразу несколько фальшивых составов, певших под фонограмму Юры Шатунова.",
+   "en": "From 1988 producer Andrei Razin sent several fake line-ups on tour at once, all miming to Yura Shatunov's recordings."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Ласковый_май",
+  "basedOn": "ru_music_002",
+  "refine": "rewrite",
+  "id": "cur_ru_music_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Перед каждым стартом экипаж выходит к автобусу под одну песню, с 2009 года — гимн космонавтики. Какую?",
+   "en": "Before every launch the crew walks out to the bus to one song, since 2009 the cosmonauts' anthem. Which?"
+  },
+  "options": [
+   {
+    "ru": "«Я — Земля»",
+    "en": "I Am the Earth"
+   },
+   {
+    "ru": "«Знаете, каким он парнем был»",
+    "en": "You Know What a Guy He Was"
+   },
+   {
+    "ru": "«Звёздное лето»",
+    "en": "Starry Summer"
+   },
+   {
+    "ru": "«Трава у дома»",
+    "en": "Grass by the Home"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "«Трава у дома» группы «Земляне». А в стихах, из которых она выросла, о космосе не было ни слова: там были сарай и глаза коровы.",
+   "en": "Grass by the Home by Zemlyane. Yet the poem it grew from said nothing about space: it had a barn and a cow's eyes."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Трава_у_дома",
+  "basedOn": "ru_music_036",
+  "refine": "rewrite",
+  "id": "cur_ru_music_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Высоцкий написал сотни стихов, их знала вся страна. Сколько из них при его жизни напечатали в поэтическом сборнике?",
+   "en": "Vysotsky wrote hundreds of poems the whole country knew. How many were printed in a poetry collection in his lifetime?"
+  },
+  "options": [
+   {
+    "ru": "Одно",
+    "en": "One"
+   },
+   {
+    "ru": "Ни одного",
+    "en": "None"
+   },
+   {
+    "ru": "Около сотни",
+    "en": "About a hundred"
+   },
+   {
+    "ru": "Около трёхсот",
+    "en": "About three hundred"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Одно, и то с сокращениями: в сборнике «День поэзии» 1975 года. Остальное расходилось по стране на магнитофонных записях.",
+   "en": "One, and that one abridged, in the 1975 Day of Poetry collection. Everything else spread across the country on home tape recordings."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Высоцкий,_Владимир_Семёнович",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_music_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Битлз» так и не сыграли в СССР. Где в 2003 году Пол Маккартни спел москвичам «Back in the U.S.S.R.»?",
+   "en": "The Beatles never played in the USSR. Where did Paul McCartney sing \"Back in the U.S.S.R.\" to Moscow in 2003?"
+  },
+  "options": [
+   {
+    "ru": "На Красной площади",
+    "en": "On Red Square"
+   },
+   {
+    "ru": "В «Лужниках»",
+    "en": "At Luzhniki stadium"
+   },
+   {
+    "ru": "В Кремлёвском дворце",
+    "en": "In the Kremlin Palace"
+   },
+   {
+    "ru": "В Большом театре",
+    "en": "At the Bolshoi"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1960-х «Битлз» у нас клеймили, в 1980-х Маккартни не дали разрешения на концерт. «Тогда это была мистическая страна», — сказал он в 2003-м.",
+   "en": "Soviet officials once derided the Beatles, and in the 1980s McCartney was refused a concert. \"It was a mystical land then,\" he said in 2003."
+  },
+  "source": "https://en.wikipedia.org/wiki/Back_in_the_U.S.S.R.",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_music_25"
+ },
+ {
+  "id": "cur_ru_music_17",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В СССР жило около 250 млн человек. Сколько миллионов пластинок с песнями «Бременских музыкантов» продали за два года?",
+   "en": "The USSR had 250 million people. How many million records of the Bremen Town Musicians songs sold in two years?"
+  },
+  "answer": 28,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "млн",
+   "en": "million"
+  },
+  "fact": {
+   "ru": "28 миллионов. Почти все партии, от Трубадура до Атаманши разбойников, спел один Олег Анофриев, кроме Принцессы и Осла.",
+   "en": "28 million. Oleg Anofriev sang nearly every part himself, from the Troubadour to the robber chief, all but the Princess and the Donkey."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Bremen_Town_Musicians_(1969_film)",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Звезда обычно даёт в «Олимпийском» один концерт. Сколько аншлагов подряд дал там «Ласковый май» зимой 1989–1990?",
+   "en": "A star usually plays one concert at Olimpiysky. How many sell-outs in a row did Laskovy Mai play there in 1989–90?"
+  },
+  "answer": 13,
+  "range": [
+   0,
+   60
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "концертов",
+   "en": "concerts"
+  },
+  "fact": {
+   "ru": "13 сольных аншлагов, с 28 декабря 1989 по 10 января 1990 года: почти по концерту в день две недели.",
+   "en": "13 sold-out solo shows from 28 December 1989 to 10 January 1990: almost one a day for two weeks."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Ласковый_май",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_music_27"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Катюшу» сочинили в 1938 году. На сколько лет раньше появилась «Калинка», которую многие считают народной?",
+   "en": "Katyusha was written in 1938. How many years earlier did Kalinka, often taken for a folk song, appear?"
+  },
+  "answer": 78,
+  "range": [
+   0,
+   400
+  ],
+  "step": 2,
+  "tolerance": 16,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "На 78: её сочинил композитор Иван Ларионов в 1860 году для спектакля в Саратове, а мировым хитом её сделал ансамбль Александрова.",
+   "en": "78: composer Ivan Larionov wrote it in 1860 for a stage show in Saratov, and the Alexandrov Ensemble made it a world hit."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kalinka_(1860_song)",
+  "basedOn": "ru_music_046",
+  "refine": "rewrite",
+  "id": "cur_ru_music_20"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Полнометражный мультфильм идёт около 80 минут. Сколько минут длится «Летучий корабль» со всеми его шестью хитами?",
+   "en": "A feature-length cartoon runs about 80 minutes. How long is The Flying Ship, with all six of its hit songs?"
+  },
+  "answer": 18.5,
+  "range": [
+   0,
+   120
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "минут",
+   "en": "minutes"
+  },
+  "fact": {
+   "ru": "18,5 минуты на шесть песен, от «Бабок-Ёжек» до «Водяного». Водяного спел Анатолий Папанов, а Энтин, по его словам, сочинил эти стихи минут за десять в ванне.",
+   "en": "18.5 minutes for six songs. Anatoly Papanov sang the Water Spirit, whose lyrics Yuri Entin said he wrote in about ten minutes in the bath."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Летучий_корабль_(мультфильм)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_music_29"
+ }
+]
