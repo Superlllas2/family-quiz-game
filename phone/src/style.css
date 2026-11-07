@@ -1015,7 +1015,8 @@ h1 {
   font-size: 0.85rem;
 }
 
-/* ---- topicVote: four topic cards, a coloured band and a number coin each, like the TV's fan ---- */
+/* ---- topicVote: four topic cards two by two, in the TV's order, colours and shape (D128): a coloured band on top,
+   the number coin at its right end, the title under it. 1 2 on top, 3 4 below; 4 is the mixed door in plum ---- */
 
 .vote-title {
   font-size: clamp(1.2rem, 6vw, 1.7rem);
@@ -1025,8 +1026,9 @@ h1 {
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  gap: 14px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 14px 10px;
   padding: 2px 4px 6px;
 }
 
@@ -1034,11 +1036,11 @@ h1 {
   --band: var(--teal);
   min-height: 0;
   height: 100%;
-  padding: 8px 14px 8px 78px;
+  padding: 58px 12px 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 4px;
   text-align: left;
   border-radius: 16px;
@@ -1049,11 +1051,11 @@ h1 {
   content: '';
   position: absolute;
   left: 0;
+  right: 0;
   top: 0;
-  bottom: 0;
-  width: 62px;
+  height: 46px;
   background: var(--band);
-  border-right: var(--line) solid var(--ink);
+  border-bottom: var(--line) solid var(--ink);
 }
 
 .door-list .btn.door:nth-child(1) {
@@ -1072,17 +1074,16 @@ h1 {
 }
 
 .door-list .btn.door:nth-child(4) {
-  --band: var(--answer-b);
+  --band: var(--plum);
   --tilt: 0.7deg;
 }
 
 .door-num {
   position: absolute;
-  left: 11px;
-  top: 50%;
+  right: 8px;
+  top: 3px;
   width: 40px;
   height: 40px;
-  margin-top: -20px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -1110,9 +1111,10 @@ h1 {
 .door-title {
   font-family: var(--display);
   font-weight: 800;
-  font-size: clamp(0.98rem, 4.8vw, 1.25rem);
+  font-size: clamp(0.95rem, 4.6vw, 1.2rem);
   line-height: 1.15;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .input-status.door-status {
@@ -1287,8 +1289,8 @@ h1 {
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
   padding: 2px 2px 6px;
 }
 
@@ -1307,7 +1309,8 @@ h1 {
 .tf-text {
   font-family: var(--display);
   font-weight: 800;
-  font-size: clamp(2rem, 11vw, 2.8rem);
+  /* Half the width now (side by side, D128): "Правда" must fit in one line on a 360 px phone. */
+  font-size: clamp(1.3rem, 7vw, 2.2rem);
   line-height: 1;
 }
 

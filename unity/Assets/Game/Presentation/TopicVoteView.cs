@@ -7,16 +7,15 @@ namespace FamilyQuiz.Presentation
 {
     /// <summary>
     /// TopicVote (docs/02_show_flow.md, decisions/0017_game_night_ui.md): the round's banner with its multiplier sticker,
-    /// the topic cards fanned out like a board game's category cards (the last one is the mixed door) with the voters'
+    /// the topic cards two by two like the phone's buttons (D128: 1 2 on top, 3 4 below; the last one is the mixed door) with the voters'
     /// tokens on them, and the status corner: the vote clock and each player's token with its check once they voted.
     /// Reads GameState.Round; changes nothing.
     /// </summary>
     public sealed class TopicVoteView : MonoBehaviour
     {
-        private const float CardMaxWidth = 350f;
-        private const float CardHeight = 520f;
-        private const float FanDegrees = 4.5f;
-        private const float FanLift = 34f;
+        private const float CardGapX = 48f;
+        private const float CardGapY = 30f;
+        private const float CardTilt = 0.8f;
 
         private readonly List<TopicDoor> _doors = new List<TopicDoor>();
         private TvContext _context;
@@ -130,25 +129,31 @@ namespace FamilyQuiz.Presentation
             _status.SetClock(span > 0 ? (float)left / span : 0f, (left + 999) / 1000, left <= 3000);
         }
 
-        /// <summary>The cards fanned across the cards' zone: turned a little each, the middle ones a little higher.</summary>
+        /// <summary>
+        /// The cards two by two in the cards' zone, in the phone's order (D128): row by row, left to right. Each card is
+        /// turned a little, alternately, like cards laid on a table.
+        /// </summary>
         private void SyncDoors(int count)
         {
             if (_doors.Count == count) return;
             foreach (var door in _doors) Destroy(door.gameObject);
             _doors.Clear();
-            float zone = TvLayout.VoteCards.width;
-            float width = Mathf.Min(CardMaxWidth, (zone - 40f * (count + 1)) / Mathf.Max(1, count));
-            float step = count > 1 ? Mathf.Min(width + 50f, (zone - width) / (count - 1)) : 0f;
+            var zone = TvLayout.VoteCards;
+            int rows = Mathf.Max(1, (count + 1) / 2);
+            float width = (zone.width - CardGapX) / 2f;
+            float height = (zone.height - CardGapY * (rows - 1)) / rows;
             for (int i = 0; i < count; i++)
             {
                 var door = TopicDoor.Create(_doorsRoot, i);
-                float t = count > 1 ? (float)i / (count - 1) * 2f - 1f : 0f; // -1 .. 1
+                int row = i / 2;
+                int column = i % 2;
                 var rect = door.Rect;
-                rect.anchorMin = rect.anchorMax = new Vector2(0.5f, 0f);
-                rect.pivot = new Vector2(0.5f, 0f);
-                rect.anchoredPosition = new Vector2((i - (count - 1) / 2f) * step, 30f + FanLift * (1f - t * t));
-                rect.sizeDelta = new Vector2(width, CardHeight);
-                float tilt = -FanDegrees * t;
+                rect.anchorMin = rect.anchorMax = new Vector2(0f, 1f);
+                rect.pivot = new Vector2(0.5f, 0.5f);
+                rect.anchoredPosition = new Vector2(column * (width + CardGapX) + width / 2f,
+                    -(row * (height + CardGapY) + height / 2f));
+                rect.sizeDelta = new Vector2(width, height);
+                float tilt = (i % 2 == 0 ? -1f : 1f) * (row == 0 ? 1f : -1f) * CardTilt;
                 rect.localRotation = Quaternion.Euler(0, 0, tilt);
                 TvTween.On(rect).Tilt = tilt;
                 _doors.Add(door);

@@ -28,10 +28,10 @@ The phone is an input device (D88): it shows a screen only when the player has s
 | `lobby` | Lobby | "Ты в игре! / You're in!", list of players with a ready mark each, a Ready button that becomes Not ready once tapped; "Ждём игроков / Waiting for more players" while fewer than 2 are connected, else "Ждём остальных / Waiting for everyone" once ready | Ready or Not ready | `countdown` when everyone is ready |
 | `countdown` | StartCountdown, when everyone is ready | "Игра начинается / Starting" and a big 3, 2, 1, Not ready button | Not ready | `lobby` if stopped, else the next screen sent |
 | `watch` | Intro, QuestionShow, Reveal and Scores (no power up held), RoundEnd, FinalIntro, RaceReveal, Results (not the winner) | The player's character chip and "Смотри на экран / Eyes on the TV" | None | Next screen sent |
-| `topicVote` | TopicVote | Four topic buttons | Vote | `waiting` |
+| `topicVote` | TopicVote | Four topic buttons two by two, in the TV's order and colours: 1 and 2 on top, 3 and 4 (the mixed door, plum) below; a coloured band on top of each with the number coin (D128) | Vote | `waiting` |
 | `answerChoice` | Answer, multiple choice | Four buttons 2x2 with the option texts, each a quarter of the space below the top bar; the countdown. No question text: it is on the TV | Tap one | `waiting` |
 | `answerSlider` | Answer, closest value | Slider, big value with the unit, plus and minus, Lock, the countdown. No question text | Lock | `waiting` |
-| `answerTrueFalse` | RaceQuestion | Two buttons, top and bottom halves, "Правда / True" and "Ложь / False"; the countdown. No statement text | Tap one | `waiting` |
+| `answerTrueFalse` | RaceQuestion | Two buttons side by side: "Правда / True" on the left (green), "Ложь / False" on the right (red), as on the TV (D128, D129); the countdown. No statement text | Tap one | `waiting` |
 | `sabotage` | Overlay on any answer screen when hit | Freeze: ice layer with a tap counter. Slime: 3 blobs to swipe off. Fog: blur layer that clears in 3 s or faster by rubbing. Text: "{name} заморозил тебя! / {name} froze you!" | Clear it | The answer screen below |
 | `waiting` | After an input, until the phase ends | "Ответ принят / Locked: B" (or the value, the door, True or False) with the ack check mark | None | Next screen sent |
 | `result` | Reveal and Scores (one phaseId), only for a player holding a power up (Day 4) | The power up card, tap it, then a row of target buttons (greyed if hit or immune) | Use power up (optional) | Next screen sent |
@@ -53,7 +53,7 @@ The phone is an input device (D88): it shows a screen only when the player has s
 join -> pickCharacter -> lobby -> countdown -> watch (intro)
   -> [ topicVote -> waiting
        -> 4 x ( watch -> answerChoice | answerSlider -> waiting -> watch or result ) -> watch ] x 4
-  -> watch (final intro) -> up to 12 x ( answerTrueFalse -> waiting -> watch )
+  -> watch (final intro) -> up to 20 x ( answerTrueFalse -> waiting -> watch )
   -> results (winner) or watch -> poll -> pollDone -> lobby (everyone Ready again: countdown -> topicVote)
 countdown -> Not ready -> back to lobby.
 Back to lobby (TV settings panel) sends every phone to lobby from any screen.

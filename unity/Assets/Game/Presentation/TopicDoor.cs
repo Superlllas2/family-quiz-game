@@ -61,15 +61,16 @@ namespace FamilyQuiz.Presentation
                 }
             }
 
-            // Two rows of four at most; more squeeze together.
-            int perRow = Mathf.Max(1, Mathf.Min(4, voters.Count));
-            float width = _votes.rect.width > 0f ? _votes.rect.width : 260f;
+            // One row on the wide cards (D128), as many as fit; more wrap to a second row and squeeze together.
+            float width = _votes.rect.width > 0f ? _votes.rect.width : 600f;
+            int fit = Mathf.Max(1, Mathf.FloorToInt((width + VoterGap) / (VoterSize + VoterGap)));
+            int perRow = Mathf.Max(1, Mathf.Min(fit, voters.Count));
             float step = Mathf.Min(VoterSize + VoterGap, (width - VoterSize) / Mathf.Max(1, perRow - 1));
             for (int i = 0; i < _voters.Count; i++)
             {
-                int row = i / 4;
-                int col = i % 4;
-                int inRow = Mathf.Min(4, voters.Count - row * 4);
+                int row = i / fit;
+                int col = i % fit;
+                int inRow = Mathf.Min(fit, voters.Count - row * fit);
                 float rowWidth = VoterSize + (inRow - 1) * step;
                 var rect = _voters[i].Rect;
                 rect.anchorMin = rect.anchorMax = new Vector2(0.5f, 0f);

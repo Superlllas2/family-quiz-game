@@ -1,0 +1,559 @@
+<title>Game Night Scorecard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&family=Nunito:wght@700;800;900&family=Caveat:wght@700&display=swap">
+<style>
+/* Layout: cream question cards laid on a walnut table, one column, like the game's own board-game look (decision 0017). One deliberate look in both themes. */
+:root {
+  --walnut: #3a2819;
+  --walnut-2: #46301e;
+  --cream: #f6ead0;
+  --cream-2: #eedcb6;
+  --paper: #fffaf0;
+  --ink: #2a1f16;
+  --ink-soft: #6b5640;
+  --edge: #9c7849;
+  --red: #e4572e;
+  --red-ink: #a63a1a;
+  --cobalt: #3a6ea5;
+  --mustard: #f2b33d;
+  --green: #4f9d45;
+  --green-ink: #2f6a28;
+  --placeholder: #a8957b;
+  --display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --text: "Nunito", "Segoe UI", system-ui, sans-serif;
+  --hand: "Caveat", "Comic Sans MS", cursive;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { background: var(--walnut); }
+body {
+  margin: 0;
+  background-color: var(--walnut);
+  background-image:
+    repeating-linear-gradient(92deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 9px),
+    repeating-linear-gradient(88deg, rgba(0,0,0,0.06) 0 1px, transparent 1px 23px),
+    linear-gradient(180deg, var(--walnut-2), var(--walnut));
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding-block: 20px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.piece {
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 5px 0 var(--edge), 0 5px 0 3px var(--ink);
+}
+.ticket { padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; transform: rotate(-0.6deg); position: relative; }
+.ticket::before, .ticket::after {
+  content: ""; position: absolute; top: 50%; width: 18px; height: 18px; margin-top: -9px;
+  background: var(--walnut); border: 3px solid var(--ink); border-radius: 50%;
+}
+.ticket::before { left: -11px; }
+.ticket::after { right: -11px; }
+.ticket-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.eyebrow { font-family: var(--hand); font-size: 22px; color: var(--red); line-height: 1; }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(22px, 6vw, 30px); line-height: 1.1; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+.lead { margin: 0; color: var(--ink-soft); font-weight: 700; max-width: 60ch; }
+.lang { display: inline-flex; border: 3px solid var(--ink); border-radius: 999px; overflow: hidden; flex: none; }
+.lang button { font-family: var(--display); font-size: 13px; padding: 6px 12px; border: 0; background: var(--cream); color: var(--ink); cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--cream); }
+.status { font-size: 14px; padding: 8px 12px; border: 2px dashed var(--ink-soft); border-radius: 10px; color: var(--ink-soft); }
+.status.ok { border-color: var(--green); color: var(--green-ink); }
+.status.warn { border-color: var(--red); color: var(--red-ink); }
+
+.q { padding: 16px 16px 18px; display: flex; flex-direction: column; gap: 12px; }
+.q:nth-of-type(odd) { transform: rotate(0.35deg); }
+.q:nth-of-type(even) { transform: rotate(-0.3deg); }
+.q-head { display: flex; gap: 12px; align-items: flex-start; }
+.coin {
+  flex: none; width: 38px; height: 38px; border-radius: 50%; border: 3px solid var(--ink);
+  background: var(--mustard); display: grid; place-items: center;
+  font-family: var(--display); font-size: 13px; font-variant-numeric: tabular-nums;
+}
+.q-text { min-width: 0; display: flex; flex-direction: column; gap: 2px; padding-top: 3px; }
+.q-title { margin: 0; font-size: 18px; font-weight: 900; line-height: 1.3; text-wrap: balance; }
+.q-why { margin: 0; font-family: var(--hand); font-size: 19px; color: var(--ink-soft); line-height: 1.1; }
+.tiles { display: flex; flex-wrap: wrap; gap: 8px; }
+.tile {
+  min-width: 46px; height: 46px; padding: 0 10px; border: 3px solid var(--ink); border-radius: 10px;
+  background: var(--paper); color: var(--ink); font-family: var(--display); font-size: 15px;
+  font-variant-numeric: tabular-nums; cursor: pointer; box-shadow: 0 3px 0 var(--ink);
+}
+.tile:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--ink); }
+.tile[aria-pressed="true"] { background: var(--cobalt); color: var(--cream); }
+.ends { display: flex; justify-content: space-between; gap: 12px; font-family: var(--hand); font-size: 20px; color: var(--ink-soft); line-height: 1; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill {
+  border: 3px solid var(--ink); border-radius: 999px; background: var(--paper); color: var(--ink);
+  font-family: var(--text); font-weight: 900; font-size: 15px; padding: 9px 15px; cursor: pointer;
+  box-shadow: 0 3px 0 var(--ink); text-align: left;
+}
+.pill:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--ink); }
+.pill[aria-pressed="true"] { background: var(--cobalt); color: var(--cream); }
+.pill.na[aria-pressed="true"] { background: var(--ink-soft); }
+input[type="text"] {
+  width: 100%; font: inherit; font-weight: 800; font-size: 17px; color: var(--ink);
+  background: var(--paper); border: 3px solid var(--ink); border-radius: 10px; padding: 10px 12px;
+}
+input[type="text"]::placeholder { color: var(--placeholder); }
+:focus-visible { outline: 3px solid var(--mustard); outline-offset: 3px; }
+
+.send { padding: 18px; display: flex; flex-direction: column; gap: 12px; transform: rotate(-0.4deg); }
+.big {
+  font-family: var(--display); font-size: 18px; color: var(--cream); background: var(--red);
+  border: 3px solid var(--ink); border-radius: 14px; padding: 14px 18px; cursor: pointer; box-shadow: 0 5px 0 var(--ink);
+}
+.big:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--ink); }
+.big:disabled { opacity: 0.6; cursor: progress; }
+.big.alt { background: var(--green); }
+.small-btn {
+  font-family: var(--text); font-weight: 900; font-size: 15px; color: var(--ink); background: var(--paper);
+  border: 3px solid var(--ink); border-radius: 10px; padding: 9px 14px; cursor: pointer; box-shadow: 0 3px 0 var(--ink);
+}
+.err { color: var(--red-ink); font-weight: 800; margin: 0; }
+pre.copy {
+  margin: 0; white-space: pre-wrap; word-break: break-word; font-family: ui-monospace, Consolas, monospace;
+  font-size: 13px; font-weight: 600; background: var(--paper); border: 2px solid var(--ink); border-radius: 10px;
+  padding: 12px; max-height: 320px; overflow: auto;
+}
+.stamp {
+  align-self: center; font-family: var(--display); font-size: 26px; color: var(--green);
+  border: 4px solid var(--green); border-radius: 10px; padding: 8px 18px; transform: rotate(-6deg); letter-spacing: 0.04em;
+}
+.thanks { padding: 28px 20px; display: flex; flex-direction: column; gap: 16px; align-items: stretch; text-align: center; }
+.thanks p { margin: 0; }
+
+details.results { padding: 14px 16px; }
+details.results summary { font-family: var(--display); font-size: 15px; cursor: pointer; }
+.res-body { display: flex; flex-direction: column; gap: 14px; margin-top: 14px; }
+.res-q { display: flex; flex-direction: column; gap: 6px; padding-top: 12px; border-top: 2px dotted var(--cream-2); }
+.res-q h3 { margin: 0; font-size: 15px; font-weight: 900; }
+.res-line { display: grid; grid-template-columns: minmax(0, 9em) 1fr auto; gap: 8px; align-items: center; font-size: 14px; font-weight: 800; }
+.res-line span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.bar { height: 12px; background: var(--cream-2); border: 2px solid var(--ink); border-radius: 6px; overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--cobalt); }
+.num { font-family: var(--display); font-size: 13px; font-variant-numeric: tabular-nums; }
+.avg { font-family: var(--display); font-size: 22px; font-variant-numeric: tabular-nums; }
+.res-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.muted { color: var(--ink-soft); font-weight: 700; font-size: 14px; margin: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .q, .ticket, .send, .stamp { transform: none !important; }
+}
+</style>
+
+<div class="wrap" id="app">
+  <header class="ticket piece">
+    <div class="ticket-top">
+      <span class="eyebrow" data-t="eyebrow">после игры</span>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" id="lang-ru" data-lang="ru" aria-pressed="true">RU</button>
+        <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <h1 data-t="title">Анкета игрока</h1>
+    <p class="lead" data-t="lead">10 вопросов, около 2 минут. Мы поменяли то, на что вы жаловались в прошлый раз: проверяем, стало ли лучше. Без имени, отвечай сам.</p>
+    <div class="status" id="status" data-t="connecting">Подключаюсь…</div>
+  </header>
+
+  <form id="form" novalidate></form>
+
+  <section class="send piece" id="send">
+    <button type="button" class="big" id="submit" data-t="submit">Отправить</button>
+    <p class="err" id="send-err" hidden></p>
+    <div id="fallback" hidden>
+      <p class="muted" data-t="fallbackHelp">Сохранить здесь нельзя. Скопируй ответы и отправь их Илье в мессенджере.</p>
+      <div class="res-actions" style="margin-top:10px">
+        <button type="button" class="small-btn" id="copy-mine" data-t="copy">Скопировать ответы</button>
+      </div>
+      <pre class="copy" id="mine-text" style="margin-top:10px"></pre>
+    </div>
+  </section>
+
+  <section class="thanks piece" id="thanks" hidden>
+    <div class="stamp" data-t="stamp">ПРИНЯТО</div>
+    <p data-t="thanks">Спасибо! Ответы сохранены.</p>
+    <p class="muted" data-t="nextHelp">Передай телефон следующему игроку.</p>
+    <button type="button" class="big alt" id="next" data-t="next">Следующий игрок</button>
+  </section>
+
+  <details class="results piece" id="results" hidden>
+    <summary><span data-t="results">Итоги</span> (<span id="res-count" class="num">0</span>)</summary>
+    <div class="res-body" id="res-body"></div>
+  </details>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // Version 2 (Nov 7, 2026): short and targeted at the fixes made after game night 1 (playtests/2026-11-06/notes.md).
+  // Version 1 cards stay in the same collection; the results panel shows only this version.
+  var VERSION = 2;
+
+  var T = {
+    eyebrow: ["после игры", "after the game"],
+    title: ["Анкета игрока", "Player scorecard"],
+    lead: ["10 вопросов, около 2 минут. Мы поменяли то, на что вы жаловались в прошлый раз: проверяем, стало ли лучше. Без имени, отвечай сам.",
+           "10 questions, about 2 minutes. We changed what you complained about last time; this checks whether it got better. No name, answer on your own."],
+    connecting: ["Подключаюсь…", "Connecting…"],
+    canSave: ["Ответы сохранятся сюда. Имя не записывается.", "Answers are saved here. Your name is not stored."],
+    cannotSave: ["Сохранить здесь нельзя: в конце скопируй ответы и отправь их Илье.", "Saving is not available here: at the end, copy your answers and send them to Ilia."],
+    submit: ["Отправить", "Submit"],
+    saving: ["Сохраняю…", "Saving…"],
+    empty: ["Ответь хотя бы на один вопрос.", "Answer at least one question."],
+    saveFailed: ["Не получилось сохранить. Скопируй ответы ниже и отправь их Илье.", "Could not save. Copy your answers below and send them to Ilia."],
+    fallbackHelp: ["Сохранить здесь нельзя. Скопируй ответы и отправь их Илье в мессенджере.", "Saving is not available here. Copy your answers and send them to Ilia in a message."],
+    copy: ["Скопировать ответы", "Copy answers"],
+    copied: ["Скопировано", "Copied"],
+    copyFailed: ["Выдели текст ниже и скопируй вручную", "Select the text below and copy it by hand"],
+    stamp: ["ПРИНЯТО", "RECEIVED"],
+    thanks: ["Спасибо! Ответы сохранены.", "Thank you! Your answers are saved."],
+    nextHelp: ["Передай телефон следующему игроку.", "Pass the phone to the next player."],
+    next: ["Следующий игрок", "Next player"],
+    results: ["Итоги этой версии", "Results, this version"],
+    resNone: ["Пока нет ответов.", "No answers yet."],
+    resAvg: ["среднее", "average"],
+    copyAll: ["Скопировать все итоги", "Copy all results"],
+    linePh: ["Одна фраза", "One sentence"]
+  };
+
+  // Each question checks one change; `why` names the complaint it follows up (shown small under the question).
+  var Q = [
+    { id: "readTime", type: "choice",
+      t: ["Успевал(а) прочитать вопрос до того, как появились ответы?", "Did you have time to read the question before the options appeared?"],
+      why: ["в прошлый раз: «не успевал прочитать»", "last time: \"no time to read\""],
+      opts: [["no", "Нет", "No"], ["mostly", "Почти всегда", "Mostly"], ["yes", "Да, всегда", "Yes, always"], ["long", "Даже долго", "Too long now"]] },
+    { id: "voteTime", type: "choice",
+      t: ["Хватало времени прочитать все 4 темы при голосовании?", "Was there time to read all 4 topics in the vote?"],
+      why: ["было 10 секунд, стало 20", "it was 10 s, now 20 s"],
+      opts: [["no", "Нет", "No"], ["yes", "Да", "Yes"], ["long", "Слишком долго", "Too long"]] },
+    { id: "reveal", type: "choice",
+      t: ["После ответа было видно, какой ответ правильный и кто сколько получил?", "After answering, could you see the right answer and who got how many points?"],
+      why: ["в прошлый раз: «не видно правильный ответ и очки»", "last time: \"couldn't see the answer or the points\""],
+      opts: [["no", "Нет", "No"], ["partly", "Отчасти", "Partly"], ["yes", "Да", "Yes"]] },
+    { id: "layout", type: "choice",
+      t: ["Легко было найти на телефоне то, что видишь на ТВ (темы, Правда/Ложь)?", "Was it easy to find on the phone what you saw on the TV (topics, True/False)?"],
+      why: ["теперь одинаковое расположение на ТВ и телефоне", "the TV and the phone now share one layout"],
+      opts: [["no", "Нет", "No"], ["partly", "Отчасти", "Partly"], ["yes", "Да", "Yes"]] },
+    { id: "accidental", type: "choice",
+      t: ["Был ответ, который засчитался случайно?", "Did an answer ever count by accident?"],
+      why: ["теперь ответ засчитывается, когда отпускаешь палец", "an answer now counts when you lift your finger"],
+      opts: [["yes", "Да", "Yes"], ["no", "Нет", "No"]] },
+    { id: "powerUps", type: "scale", from: 1, to: 5, na: ["Не было бонусов", "No power ups for me"],
+      t: ["Бонусы: было понятно, за что их получаешь, и весело их кидать?", "Power ups: was it clear how you get them, and fun to throw them?"],
+      why: ["в прошлый раз: 1 из 5, «непонятно, откуда они»", "last time: 1 of 5, \"no idea where they come from\""],
+      lo: ["нет", "no"], hi: ["очень", "very"] },
+    { id: "race", type: "choice",
+      t: ["Финальная гонка по длине", "The final race, its length"],
+      why: ["в прошлый раз: «на один вдох»", "last time: \"over in one breath\""],
+      opts: [["short", "Всё ещё коротко", "Still too short"], ["right", "В самый раз", "Just right"], ["long", "Затянуто", "Dragged on"]] },
+    { id: "speed", type: "choice",
+      t: ["Быстрый ответ давал заметно больше очков?", "Did answering fast give noticeably more points?"],
+      why: ["в прошлый раз: «лидер меняется каждые два вопроса»", "last time: \"the lead flips every two questions\""],
+      opts: [["little", "Почти не важно", "Barely mattered"], ["right", "В меру", "About right"], ["much", "Слишком важно", "Too much"]] },
+    { id: "fun", type: "scale", from: 1, to: 10,
+      t: ["Насколько было весело в целом?", "How fun was it overall?"],
+      why: ["в прошлый раз: 7 из 10", "last time: 7 of 10"],
+      lo: ["скучно", "boring"], hi: ["супер", "brilliant"] },
+    { id: "oneThing", type: "text",
+      t: ["Одна вещь, которую поменять к следующему разу", "One thing to change before next time"],
+      why: ["", ""] }
+  ];
+
+  var lang = 0; // 0 = ru, 1 = en
+  var answers = {};
+  var db = null, canSave = false;
+  var form = document.getElementById("form");
+
+  function tr(key) { return (T[key] || ["", ""])[lang]; }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function optLabel(opts, v) {
+    for (var i = 0; i < opts.length; i++) if (opts[i][0] === v) return opts[i][1 + lang];
+    return v;
+  }
+
+  function render() {
+    form.textContent = "";
+    Q.forEach(function (q, i) {
+      var card = el("section", "q piece");
+      var head = el("div", "q-head");
+      head.appendChild(el("span", "coin", String(i + 1)));
+      var text = el("div", "q-text");
+      var title = el("h2", "q-title", q.t[lang]);
+      title.id = "qt-" + q.id;
+      text.appendChild(title);
+      if (q.why[lang]) text.appendChild(el("p", "q-why", q.why[lang]));
+      head.appendChild(text);
+      card.appendChild(head);
+      card.setAttribute("aria-labelledby", title.id);
+      card.appendChild(q.type === "scale" ? renderScale(q) : q.type === "choice" ? renderChoice(q) : renderText(q));
+      form.appendChild(card);
+    });
+    document.querySelectorAll("[data-t]").forEach(function (n) { n.textContent = tr(n.getAttribute("data-t")); });
+    document.documentElement.lang = lang ? "en" : "ru";
+    renderStatus();
+    renderResults();
+  }
+
+  function pressGroup(container, value) {
+    container.querySelectorAll("button[data-v]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-v") === String(value)));
+    });
+  }
+
+  function renderScale(q) {
+    var box = el("div");
+    box.style.display = "flex"; box.style.flexDirection = "column"; box.style.gap = "8px";
+    var tiles = el("div", "tiles");
+    tiles.setAttribute("role", "group");
+    for (var v = q.from; v <= q.to; v++) {
+      var b = el("button", "tile", String(v));
+      b.type = "button"; b.setAttribute("data-v", String(v)); b.id = "a-" + q.id + "-" + v;
+      tiles.appendChild(b);
+    }
+    box.appendChild(tiles);
+    var ends = el("div", "ends");
+    ends.appendChild(el("span", null, q.from + " · " + q.lo[lang]));
+    ends.appendChild(el("span", null, q.hi[lang] + " · " + q.to));
+    box.appendChild(ends);
+    if (q.na) {
+      var naBtn = el("button", "pill na", q.na[lang]);
+      naBtn.type = "button"; naBtn.setAttribute("data-v", "na"); naBtn.id = "a-" + q.id + "-na";
+      naBtn.style.alignSelf = "flex-start";
+      box.appendChild(naBtn);
+    }
+    box.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-v]");
+      if (!b) return;
+      var raw = b.getAttribute("data-v");
+      var val = raw === "na" ? "na" : Number(raw);
+      if (answers[q.id] === val) delete answers[q.id]; else answers[q.id] = val;
+      pressGroup(box, answers[q.id]);
+    });
+    pressGroup(box, answers[q.id]);
+    return box;
+  }
+
+  function renderChoice(q) {
+    var pills = el("div", "pills");
+    pills.setAttribute("role", "group");
+    q.opts.forEach(function (o) {
+      var b = el("button", "pill", o[1 + lang]);
+      b.type = "button"; b.setAttribute("data-v", o[0]); b.id = "a-" + q.id + "-" + o[0];
+      pills.appendChild(b);
+    });
+    pills.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-v]");
+      if (!b) return;
+      var v = b.getAttribute("data-v");
+      if (answers[q.id] === v) delete answers[q.id]; else answers[q.id] = v;
+      pressGroup(pills, answers[q.id]);
+    });
+    pressGroup(pills, answers[q.id]);
+    return pills;
+  }
+
+  function renderText(q) {
+    var input = el("input");
+    input.type = "text"; input.id = "a-" + q.id; input.maxLength = 120;
+    input.placeholder = tr("linePh");
+    input.value = answers[q.id] || "";
+    input.addEventListener("input", function () {
+      var v = input.value.trim();
+      if (v) answers[q.id] = v; else delete answers[q.id];
+    });
+    return input;
+  }
+
+  function answerText(a, l) {
+    var keep = lang; lang = l;
+    var out = [];
+    Q.forEach(function (q, i) {
+      var v = a[q.id], s;
+      if (v == null) s = "—";
+      else if (q.type === "scale") s = v === "na" ? q.na[lang] : v + " / " + q.to;
+      else if (q.type === "choice") s = optLabel(q.opts, v);
+      else s = v;
+      out.push((i + 1) + ". " + q.t[lang] + ": " + s);
+    });
+    lang = keep;
+    return out.join("\n");
+  }
+
+  function copyText(text, btn) {
+    var label = btn.textContent;
+    function done(ok) {
+      btn.textContent = ok ? tr("copied") : tr("copyFailed");
+      setTimeout(function () { btn.textContent = label; }, 2000);
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+    } catch (e) { done(false); }
+  }
+
+  var connecting = true;
+  function renderStatus() {
+    var s = document.getElementById("status");
+    if (connecting) { s.className = "status"; s.textContent = tr("connecting"); return; }
+    s.className = "status " + (canSave ? "ok" : "warn");
+    s.textContent = canSave ? tr("canSave") : tr("cannotSave");
+  }
+
+  function showFallback(msgKey) {
+    var err = document.getElementById("send-err");
+    if (msgKey) { err.textContent = tr(msgKey); err.hidden = false; }
+    document.getElementById("mine-text").textContent = answerText(answers, lang);
+    document.getElementById("fallback").hidden = false;
+  }
+
+  document.getElementById("submit").addEventListener("click", function () {
+    var btn = this;
+    var err = document.getElementById("send-err");
+    err.hidden = true;
+    if (!Object.keys(answers).length) { err.textContent = tr("empty"); err.hidden = false; return; }
+    if (!canSave) { showFallback(null); return; }
+    btn.disabled = true; btn.textContent = tr("saving");
+    var doc = {
+      v: VERSION,
+      night: localDate(),
+      submittedAt: new Date().toISOString(),
+      lang: lang ? "en" : "ru",
+      answers: JSON.parse(JSON.stringify(answers))
+    };
+    db.collection("scorecards").add(doc).then(function () {
+      btn.disabled = false; btn.textContent = tr("submit");
+      document.getElementById("form").hidden = true;
+      document.getElementById("send").hidden = true;
+      document.getElementById("thanks").hidden = false;
+      window.scrollTo(0, 0);
+    }, function (e) {
+      btn.disabled = false; btn.textContent = tr("submit");
+      showFallback("saveFailed");
+      try { console.warn("save failed", e && e.code, e && e.message); } catch (x) {}
+    });
+  });
+
+  document.getElementById("copy-mine").addEventListener("click", function () {
+    var t = answerText(answers, lang);
+    document.getElementById("mine-text").textContent = t;
+    copyText(t, this);
+  });
+
+  document.getElementById("next").addEventListener("click", function () {
+    answers = {};
+    document.getElementById("thanks").hidden = true;
+    document.getElementById("form").hidden = false;
+    document.getElementById("send").hidden = false;
+    document.getElementById("fallback").hidden = true;
+    document.getElementById("send-err").hidden = true;
+    render();
+    window.scrollTo(0, 0);
+  });
+
+  function localDate() {
+    var d = new Date();
+    function p(n) { return (n < 10 ? "0" : "") + n; }
+    return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate());
+  }
+
+  document.querySelectorAll(".lang button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      lang = b.getAttribute("data-lang") === "en" ? 1 : 0;
+      document.querySelectorAll(".lang button").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      render();
+    });
+  });
+
+  // ---------- results (owner and editors only), this version only ----------
+  var rows = [];
+  function renderResults() {
+    var box = document.getElementById("res-body");
+    var details = document.getElementById("results");
+    if (details.hidden) return;
+    document.getElementById("res-count").textContent = String(rows.length);
+    box.textContent = "";
+    if (!rows.length) { box.appendChild(el("p", "muted", tr("resNone"))); return; }
+    var all = rows.map(function (r) { return r.answers || {}; });
+    Q.forEach(function (q, i) {
+      var sec = el("div", "res-q");
+      sec.appendChild(el("h3", null, (i + 1) + ". " + q.t[lang]));
+      var vals = all.map(function (a) { return a[q.id]; }).filter(function (v) { return v != null; });
+      if (q.type === "scale") {
+        var nums = vals.filter(function (v) { return typeof v === "number"; });
+        var nas = vals.length - nums.length;
+        var avg = nums.length ? nums.reduce(function (s, v) { return s + v; }, 0) / nums.length : null;
+        var line = el("div");
+        line.appendChild(el("span", "avg", avg == null ? "—" : avg.toFixed(1)));
+        line.appendChild(el("span", "muted", "  " + tr("resAvg") + " · " + nums.join(", ") + (nas ? " · " + q.na[lang] + ": " + nas : "")));
+        sec.appendChild(line);
+      } else if (q.type === "choice") {
+        q.opts.forEach(function (o) { sec.appendChild(barLine(o[1 + lang], vals.filter(function (v) { return v === o[0]; }).length, all.length)); });
+      } else {
+        sec.appendChild(el("p", "muted", vals.length ? vals.join(" · ") : "—"));
+      }
+      box.appendChild(sec);
+    });
+    var act = el("div", "res-actions");
+    var cp = el("button", "small-btn", tr("copyAll"));
+    cp.type = "button";
+    cp.addEventListener("click", function () {
+      var t = rows.map(function (r, j) {
+        return "# " + (j + 1) + " · " + (r.night || "") + " · " + (r.submittedAt || "") + "\n" + answerText(r.answers || {}, lang);
+      }).join("\n\n");
+      copyText(t, cp);
+    });
+    act.appendChild(cp);
+    box.appendChild(act);
+  }
+  function barLine(label, n, total) {
+    var l = el("div", "res-line");
+    l.appendChild(el("span", null, label));
+    var bar = el("div", "bar"); var fill = el("i");
+    fill.style.width = total ? Math.round((n / total) * 100) + "%" : "0%";
+    bar.appendChild(fill); l.appendChild(bar);
+    l.appendChild(el("span", "num", String(n)));
+    return l;
+  }
+
+  render();
+
+  function setConnected(ok) { connecting = false; canSave = ok; renderStatus(); }
+
+  if (!window.claude || typeof window.claude.use !== "function") { setConnected(false); return; }
+
+  Promise.all([window.claude.use("db"), window.claude.use("user")]).then(function (res) {
+    db = res[0];
+    var user = res[1];
+    if (!db || !user) { setConnected(false); return; }
+    user.canEdit().then(function (isEditor) {
+      setConnected(!!isEditor);
+      if (!isEditor) return;
+      document.getElementById("results").hidden = false;
+      renderResults();
+      db.collection("scorecards").orderBy("submittedAt").onSnapshot(function (snap) {
+        rows = snap.docs.map(function (d) { return d.data(); }).filter(function (r) { return r.v === VERSION; });
+        renderResults();
+      }, function () { /* results stay as last shown */ });
+    }, function () { setConnected(false); });
+  }, function () { setConnected(false); });
+})();
+</script>

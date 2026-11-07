@@ -1,5 +1,5 @@
-// Screen `answerTrueFalse` (04 true or false, 06): two huge buttons, "Правда / True" in the top half (green) and
-// "Ложь / False" in the bottom half (red). No statement text: it is on the TV (D88). One tap locks: the tapped button
+// Screen `answerTrueFalse` (04 true or false, 06): two huge buttons side by side, "Правда / True" on the left (green)
+// and "Ложь / False" on the right (red), the same order and colours as the TV (D128, D129). No statement text: it is on the TV (D88). One tap locks: the tapped button
 // stays highlighted, the other dims, later taps are ignored. The answer clock starts when this screen is first drawn
 // for a phaseId. The countdown is in the top bar (app.tsx).
 

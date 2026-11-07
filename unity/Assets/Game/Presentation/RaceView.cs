@@ -8,7 +8,8 @@ namespace FamilyQuiz.Presentation
     /// <summary>
     /// The final race on the TV (docs/02_show_flow.md, decisions/0017_game_night_ui.md): FinalIntro (the title ribbon,
     /// the rules on a card, the track with every chip on its head start), RaceQuestion (the statement on a card with its
-    /// number on the ribbon, the clock token, chips that get their check on lock in, never what anyone chose) and
+    /// number on the ribbon, "True" and "False" side by side on its right end in the phone's order and colours (D128,
+    /// D129), the clock token, chips that get their check on lock in, never what anyone chose) and
     /// RaceReveal ("True" or "False" stamped on the card, and the chips of right answers slide one step forward). One
     /// view for the three phases, so the track and its slides carry over. Reads GameState; changes nothing.
     /// </summary>
@@ -23,6 +24,9 @@ namespace FamilyQuiz.Presentation
         private RectTransform _stamp;
         private TextMeshProUGUI _stampText;
         private UnityEngine.UI.Image _stampFrame;
+        private RectTransform _choices;
+        private TextMeshProUGUI _trueText;
+        private TextMeshProUGUI _falseText;
         private RaceTrack _track;
         private GamePhase _mode;
         private long _answerSpanMs;
@@ -51,12 +55,13 @@ namespace FamilyQuiz.Presentation
             _clock.gameObject.SetActive(question);
             _clock.SetClockVisible(question);
             _stamp.gameObject.SetActive(false);
+            _choices.gameObject.SetActive(question);
             _answerSpanMs = question ? AnswerClock.Span(state) : 0;
 
             Refresh();
             if (intro || question) _card.PopIn(0f);
-            // The stamp lands on the card's right end: the statement makes room for it on the reveal.
-            _card.ReserveRight(reveal ? 300f : 96f);
+            // The True and False pair, then the stamp, sit on the card's right end: the statement makes room for them.
+            _card.ReserveRight(question ? 340f : reveal ? 300f : 96f);
             if (reveal) Stamp(previous == GamePhase.RaceQuestion);
             var race = state.Race;
             int finish = _context.Game.Config.Race.FinishSteps;
@@ -90,6 +95,8 @@ namespace FamilyQuiz.Presentation
                     : null;
                 _card.ShowFront(statement != null ? statement.Statement.Get(lang) : string.Empty, number, null, null, null);
                 if (statement != null) _stampText.text = _context.T(statement.Answer ? "tv.race.true" : "tv.race.false");
+                _trueText.text = _context.T("tv.race.true");
+                _falseText.text = _context.T("tv.race.false");
             }
 
             _track.gameObject.SetActive(race != null);
@@ -141,6 +148,16 @@ namespace FamilyQuiz.Presentation
             if (slam) TvTween.On(_stamp).Slam(0.05f);
         }
 
+        private TextMeshProUGUI Choice(string name, float xMin, float xMax, Color fill, float tilt)
+        {
+            var piece = TvPiece.Card(name, _choices, fill, 14f, 5f).Tilt(tilt);
+            UiBuilder.Anchor(piece.Root, xMin, 0f, xMax, 1f);
+            var text = UiBuilder.Display("Word", piece.Content, 26, TvColors.TextOn(fill), TextAlignmentOptions.Center);
+            UiBuilder.Fit(text, 14, 26, 1);
+            UiBuilder.Anchor(text.rectTransform, 0.06f, 0.12f, 0.94f, 0.88f);
+            return text;
+        }
+
         private void Build()
         {
             var root = transform;
@@ -169,6 +186,16 @@ namespace FamilyQuiz.Presentation
             _stampText.characterSpacing = 4f;
             UiBuilder.Anchor(_stampText.rectTransform, 0.06f, 0.1f, 0.94f, 0.9f);
             _stamp.gameObject.SetActive(false);
+
+            // The phone's two buttons in miniature: True (green) left, False (red) right (D128, D129).
+            _choices = UiBuilder.Rect("Choices", _card.transform);
+            _choices.anchorMin = _choices.anchorMax = new Vector2(1f, 0.5f);
+            _choices.pivot = new Vector2(1f, 0.5f);
+            _choices.anchoredPosition = new Vector2(-24f, 0f);
+            _choices.sizeDelta = new Vector2(300f, 84f);
+            _trueText = Choice("True", 0f, 0.48f, TvColors.Green, -1.2f);
+            _falseText = Choice("False", 0.52f, 1f, TvColors.Red, 1f);
+            _choices.gameObject.SetActive(false);
 
             _title = TitleRibbon.Create(root, TvColors.Red);
             _clock = StatusStrip.Create(root, _context);

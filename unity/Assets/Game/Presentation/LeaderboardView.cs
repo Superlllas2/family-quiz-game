@@ -7,7 +7,8 @@ namespace FamilyQuiz.Presentation
 {
     /// <summary>
     /// Scores (docs/02_show_flow.md, decisions/0017_game_night_ui.md), on the Wide shot with the guests in full view: a
-    /// row of score cards along the bottom, one per player in rank order (shared ranks 1, 1, 3), each with the points
+    /// row of score cards along the bottom, one per player in rank order read left to right, 1st place on the right
+    /// (D128; shared ranks 1, 1, 3), each with the points
     /// just earned on a sticker; the cards start in the order before the question and glide to their new places. Above
     /// them the question card's back stays up: "Why?" and the fact. The title ribbon at the top right; power up tags
     /// for the hits used in this pick window under it.
@@ -24,6 +25,7 @@ namespace FamilyQuiz.Presentation
         private RectTransform _row;
         private HitList _hits;
         private float _rowStart;
+        private int _rowCount;
 
         public static LeaderboardView Create(Transform parent, TvContext context)
         {
@@ -144,11 +146,14 @@ namespace FamilyQuiz.Presentation
             width = Mathf.Min(MaxCardWidth, (zone - CardGap * (n - 1)) / n);
             height = TvLayout.ScoreRow.height;
             _rowStart = (zone - (width * n + CardGap * (n - 1))) / 2f;
+            _rowCount = n;
         }
 
+        /// <summary>The left edge of the card at this rank index (0 = 1st): 1st place is the rightmost card (D128).</summary>
         private float X(int index, float width)
         {
-            return _rowStart + Mathf.Max(0, index) * (width + CardGap);
+            int slot = _rowCount - 1 - Mathf.Clamp(index, 0, _rowCount - 1);
+            return _rowStart + slot * (width + CardGap);
         }
 
         private string TopicTitle(string topicId)

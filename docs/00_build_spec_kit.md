@@ -28,7 +28,7 @@ Update the Status column as you go; the kit is ready when every row says Done.
 | 1 | Vision and pillars | Game design | Done | `docs/01_vision.md` |
 | 2 | Show flow | Game design | Done for game night 1 | `docs/02_show_flow.md` |
 | 3 | Rules and numbers | Game design | Done for game night 1 | `docs/03_rules.md` + `content/config.json` |
-| 4 | Question format catalog | Game design | Done for game night 1 | `docs/04_formats.md` |
+| 4 | Question format catalog | Game design | Done for game night 1; picture and sound questions Done Nov 7, 2026 (D139, D140) | `docs/04_formats.md` |
 | 5 | Mini game catalog | Game design | Later | `docs/05_minigames.md` |
 | 6 | Phone screens and user flow | Game design | Done for game night 1 | `docs/06_phone_screens.md` |
 | 7 | Host bibles and line list | Game design | Later | `docs/07_hosts.md` |

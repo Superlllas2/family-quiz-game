@@ -41,10 +41,10 @@
 //   - Every other phase (Intro, QuestionShow, RoundEnd, FinalIntro, RaceReveal, Results), the moment between a
 //     phaseEnded and the next phaseStarted, and the time before the first phaseStarted are idle.
 // - Longest idle stretch: like IdleMeter, Intro, FinalIntro and Results count as idle in the idle share but are left
-//   out of the stretch and break it (a stretch never joins across them). Compared with the starting limit of 11 s
+//   out of the stretch and break it (a stretch never joins across them). Compared with the limit of 21 s
 //   (docs/19_acceptance.md, D56); OVER only when above it. A live log's `t` is the frame the line was written in, so
 //   a phase can last a few ms longer by `t` than its `durationMs` (RoundEnd 4004 ms for 4000): the current timers
-//   then read a few ms OVER the 11 s limit. The amount is printed; no tolerance is applied.
+//   then read a few ms OVER the limit when a stretch fills it exactly. The amount is printed; no tolerance is applied.
 // - Phase durations: every phase that started in the game's lines except Lobby and StartCountdown (those belong to
 //   the time between games), matched to its phaseEnded by phase name and phaseId. Budget and staging extra come from
 //   phaseStarted (Answer budgets are the base window before timer multipliers). A phase with no phaseEnded is counted
@@ -60,8 +60,8 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-/** The starting idle limit in ms (docs/19_acceptance.md, D42, D56). */
-export const IDLE_LIMIT_MS = 11000;
+/** The idle limit in ms (docs/19_acceptance.md, D42, D56; 21 s since D126). */
+export const IDLE_LIMIT_MS = 21000;
 
 /** Phases that count as idle but are left out of the longest stretch and break it (IdleMeter). */
 export const STRETCH_EXCLUDED = new Set(["Intro", "FinalIntro", "Results"]);
@@ -141,7 +141,7 @@ function stats(values) {
 const inc = (obj, key, by = 1) => { obj[key] = (obj[key] ?? 0) + by; };
 
 /** The idle share and longest stretch of one game window (lines already cut to the window). */
-export function idleTimeline(windowLines, { startT, endT, players, statusAtStart }) {
+export function idleTimeline(windowLines, { startT, endT, players, statusAtStart, idleLimitMs = IDLE_LIMIT_MS }) {
   const sorted = windowLines.map((e, i) => ({ e, i, t: Math.min(endT, Math.max(startT, e.t)) }))
     .sort((a, b) => a.t - b.t || a.i - b.i);
 
@@ -268,14 +268,14 @@ export function idleTimeline(windowLines, { startT, endT, players, statusAtStart
     idleMs,
     idleShare: gameMs > 0 ? idleMs / gameMs : 0,
     idleByPhase,
-    longestStretch: { ...longest, limitMs: IDLE_LIMIT_MS, over: longest.ms > IDLE_LIMIT_MS },
+    longestStretch: { ...longest, limitMs: idleLimitMs, over: longest.ms > idleLimitMs },
     lastRound,
     lastSlot,
   };
 }
 
 /** Every derived number of one game (from splitGames). */
-export function analyzeGame(game, names) {
+export function analyzeGame(game, names, { idleLimitMs = IDLE_LIMIT_MS } = {}) {
   const name = (id) => (id == null ? null : names.get(id) ?? id);
   const start = game.start;
   const players = Array.isArray(start.players) ? start.players : [];
@@ -286,7 +286,7 @@ export function analyzeGame(game, names) {
   const endT = ended ? ended.t : Math.max(startT, ...windowLines.map((e) => e.t));
   const status = ended ? (ended.reason === "backToLobby" ? "abandoned" : ended.reason ?? "finished") : "incomplete";
 
-  const idle = idleTimeline(windowLines, { startT, endT, players, statusAtStart: game.statusAtStart });
+  const idle = idleTimeline(windowLines, { startT, endT, players, statusAtStart: game.statusAtStart, idleLimitMs });
 
   // Phase durations, reasons.
   const phases = {};
@@ -431,10 +431,10 @@ export function summarizePolls(polls) {
 }
 
 /** The whole report of a log's text. */
-export function analyze(text) {
+export function analyze(text, { idleLimitMs = IDLE_LIMIT_MS } = {}) {
   const { events, skipped } = parseLines(text);
   const { games, names, outside } = splitGames(events);
-  const reports = games.map((g) => analyzeGame(g, names));
+  const reports = games.map((g) => analyzeGame(g, names, { idleLimitMs }));
   // Host lines and polls outside every game window (before the first game, or after a gameEnded).
   const outsideHost = {};
   const outsidePolls = outside.filter((e) => e.event === "poll");
