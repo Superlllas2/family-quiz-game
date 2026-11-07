@@ -120,7 +120,8 @@ namespace FamilyQuiz.Presentation
             _question = UiBuilder.Display("Question", _card.Content, 42, TvColors.Ink, TextAlignmentOptions.Left);
             UiBuilder.Anchor(_question.rectTransform, 0, 0, 1, 1);
             _question.rectTransform.offsetMin = new Vector2(60f, 18f);
-            _question.rectTransform.offsetMax = new Vector2(-96f, -32f);
+            // Under the tilted topic ribbon's lowest point, so the topic never covers the question (QuestionCardLayout).
+            _question.rectTransform.offsetMax = new Vector2(-96f, -QuestionCardLayout.QuestionTopInset());
             _question.lineSpacing = -6f;
 
             _why = UiBuilder.Hand("Why", _card.Content, 48, TvColors.Teal, TextAlignmentOptions.TopLeft);
@@ -150,12 +151,13 @@ namespace FamilyQuiz.Presentation
             _fuse.pixelsPerUnitMultiplier = 5f;
             UiBuilder.Anchor(_fuse.rectTransform, 0, 0, 1, 1);
 
-            _ribbon = TvPiece.Card("Ribbon", transform, TvColors.Teal, 10f, 5f).Tilt(-3f);
+            _ribbon = TvPiece.Card("Ribbon", transform, TvColors.Teal, 10f, QuestionCardLayout.RibbonEdge)
+                .Tilt(QuestionCardLayout.RibbonTilt);
             var ribbon = _ribbon.Root;
             ribbon.anchorMin = ribbon.anchorMax = new Vector2(0f, 1f);
             ribbon.pivot = new Vector2(0f, 0.5f);
-            ribbon.anchoredPosition = new Vector2(-18f, -6f); // sticks out 16 units: clear of the guests above
-            ribbon.sizeDelta = new Vector2(420f, 44f);
+            ribbon.anchoredPosition = new Vector2(QuestionCardLayout.RibbonX, QuestionCardLayout.RibbonY);
+            ribbon.sizeDelta = new Vector2(QuestionCardLayout.RibbonWidth, QuestionCardLayout.RibbonHeight);
             _topic = UiBuilder.Text("Topic", _ribbon.Content, 24, TvColors.Cream, true, TextAlignmentOptions.Left);
             UiBuilder.Fit(_topic, 16, 24, 1);
             UiBuilder.Anchor(_topic.rectTransform, 0, 0, 1, 1);
