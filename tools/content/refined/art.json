@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сегодня древнегреческие мраморные статуи белые. Какими их видели сами греки?",
+   "en": "Ancient Greek marble statues are white today. How did the Greeks themselves see them?"
+  },
+  "options": [
+   {
+    "ru": "Ярко раскрашенными",
+    "en": "Brightly painted"
+   },
+   {
+    "ru": "Такими же белыми",
+    "en": "Just as white"
+   },
+   {
+    "ru": "Сплошь позолоченными",
+    "en": "Gilded all over"
+   },
+   {
+    "ru": "Покрытыми чёрным лаком",
+    "en": "Coated in black lacquer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Краска выветрилась за века, но на мраморе находят её следы. Белыми статуи сочли учёные XVIII века, и такими их скопировал неоклассицизм.",
+   "en": "The paint weathered away, but traces are still found on the marble. 18th-century scholars took them for white, and neoclassicism copied that."
+  },
+  "source": "https://en.wikipedia.org/wiki/Polychrome_sculpture",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_art_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Ван Гог отрезал себе часть левого уха. Почему на его автопортрете повязка на правом?",
+   "en": "Van Gogh cut off part of his left ear. Why is the bandage on the right in his self-portrait?"
+  },
+  "options": [
+   {
+    "ru": "Писал себя в зеркале",
+    "en": "He painted from a mirror"
+   },
+   {
+    "ru": "Позже поранил правое",
+    "en": "He later hurt the right one"
+   },
+   {
+    "ru": "Хотел скрыть правду",
+    "en": "He wanted to hide the truth"
+   },
+   {
+    "ru": "Так требовал заказчик",
+    "en": "The buyer asked for it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Зеркало переворачивает лицо. А ухо он отрезал в Арле в декабре 1888 года, после ссоры с Гогеном.",
+   "en": "A mirror flips your face. He cut the ear in Arles in December 1888, after a quarrel with Gauguin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Self-Portrait_with_Bandaged_Ear",
+  "basedOn": "art_002",
+  "refine": "rewrite",
+  "id": "cur_art_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что случилось с картиной Бэнкси сразу после её продажи на аукционе в 2018 году?",
+   "en": "What happened to a Banksy painting right after it sold at auction in 2018?"
+  },
+  "options": [
+   {
+    "ru": "Изрезалась на полоски",
+    "en": "It shredded itself"
+   },
+   {
+    "ru": "Загорелась прямо в зале",
+    "en": "It caught fire"
+   },
+   {
+    "ru": "С неё стекла вся краска",
+    "en": "Its paint ran off"
+   },
+   {
+    "ru": "Её украли из зала",
+    "en": "It was stolen from the room"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бэнкси спрятал шредер в раме, а полуразрезанную работу в 2021 году перепродали почти в 18 раз дороже.",
+   "en": "Banksy had hidden a shredder in the frame; in 2021 the half-shredded work resold for almost 18 times more."
+  },
+  "source": "https://en.wikipedia.org/wiki/Love_Is_in_the_Bin",
+  "basedOn": "art_018",
+  "refine": "rewrite",
+  "id": "cur_art_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 2024 году банан, приклеенный к стене скотчем, купили как произведение искусства за 6,2 млн $. Что сделал покупатель?",
+   "en": "In 2024 a banana duct-taped to a wall sold as an artwork for $6.2 million. What did the buyer do?"
+  },
+  "options": [
+   {
+    "ru": "Съел его при всех",
+    "en": "Ate it in public"
+   },
+   {
+    "ru": "Покрыл его золотом",
+    "en": "Had it gilded"
+   },
+   {
+    "ru": "Заморозил в азоте",
+    "en": "Froze it in nitrogen"
+   },
+   {
+    "ru": "Подарил музею",
+    "en": "Gave it to a museum"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Криптопредприниматель Джастин Сан съел его на пресс-конференции. Покупают сертификат: банан художника Каттелана просто заменяют.",
+   "en": "Crypto entrepreneur Justin Sun ate it at a press conference. You buy a certificate: Cattelan's banana is simply replaced."
+  },
+  "source": "https://en.wikipedia.org/wiki/Comedian_(artwork)",
+  "basedOn": "art_038",
+  "refine": "rewrite",
+  "id": "cur_art_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Абстрактную картину Мондриана из цветных клейких лент около 75 лет показывали с ошибкой. С какой?",
+   "en": "An abstract Mondrian made of coloured tape was shown wrongly for about 75 years. What was wrong?"
+  },
+  "options": [
+   {
+    "ru": "Вверх ногами",
+    "en": "Upside down"
+   },
+   {
+    "ru": "Обратной стороной",
+    "en": "Back to front"
+   },
+   {
+    "ru": "Под чужим именем",
+    "en": "Under another name"
+   },
+   {
+    "ru": "Без одной полосы",
+    "en": "Missing a stripe"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ошибку объявили в 2022 году в Дюссельдорфе. Переворачивать «Нью-Йорк Сити I» не стали: ленты так ветхи, что картина может рассыпаться.",
+   "en": "Düsseldorf announced the error in 2022 but left New York City I as it is: the tapes are so fragile the work could fall apart."
+  },
+  "source": "https://en.wikipedia.org/wiki/New_York_City_I",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_art_27"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чего не видно на портрете «Моны Лизы»?",
+   "en": "What can't you see in the Mona Lisa?"
+  },
+  "options": [
+   {
+    "ru": "Бровей",
+    "en": "Eyebrows"
+   },
+   {
+    "ru": "Улыбки",
+    "en": "A smile"
+   },
+   {
+    "ru": "Рук",
+    "en": "Her hands"
+   },
+   {
+    "ru": "Пейзажа за спиной",
+    "en": "A landscape behind her"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Бровей и ресниц на ней не видно. Сканирование 2007 года показало, что они, возможно, были и со временем исчезли, может быть, от чисток.",
+   "en": "No eyebrows or eyelashes are visible. 2007 scans suggest they may have been there and faded, perhaps from cleaning."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mona_Lisa",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_art_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1990 году из музея Гарднер в Бостоне украли картины. Завещание хозяйки запрещает менять залы. Что висит на их месте?",
+   "en": "In 1990 paintings were stolen from Boston's Gardner Museum. Its founder's will bans changes. What hangs there now?"
+  },
+  "options": [
+   {
+    "ru": "Пустые рамы",
+    "en": "Empty frames"
+   },
+   {
+    "ru": "Точные копии",
+    "en": "Exact copies"
+   },
+   {
+    "ru": "Фотографии картин",
+    "en": "Photos of the paintings"
+   },
+   {
+    "ru": "Другие картины",
+    "en": "Other paintings"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пустые рамы ждут возвращения картин. Дело так и не раскрыто, а за помощь в их поиске музей обещает 10 млн долларов.",
+   "en": "The empty frames wait for the paintings to come back. The case is unsolved, and the museum offers a $10 million reward."
+  },
+  "source": "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft",
+  "basedOn": "art_024",
+  "refine": "rewrite",
+  "id": "cur_art_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему картину Рембрандта называют «Ночной дозор»?",
+   "en": "Why is Rembrandt's painting called The Night Watch?"
+  },
+  "options": [
+   {
+    "ru": "Её затемнил лак",
+    "en": "Varnish darkened it"
+   },
+   {
+    "ru": "Её писали ночами",
+    "en": "It was painted at night"
+   },
+   {
+    "ru": "Её прятали ночью",
+    "en": "It was hidden at night"
+   },
+   {
+    "ru": "Так звался отряд",
+    "en": "That was the unit's name"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Под тёмным лаком, снятым только в 1940-х, оказалась дневная сцена. А в 1715 году холст обрезали со всех сторон, видимо, чтобы встал между колоннами ратуши.",
+   "en": "Under the dark varnish, removed only in the 1940s, was a daytime scene. In 1715 it was trimmed on all sides, probably to fit between town hall columns."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Night_Watch",
+  "basedOn": "art_023",
+  "refine": "rewrite",
+  "id": "cur_art_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Художник Бёрн-Джонс, узнав, из чего сделана его коричневая краска, торжественно похоронил тюбик в саду. Из чего?",
+   "en": "When painter Burne-Jones learned what his brown paint was made of, he solemnly buried the tube in his garden. Of what?"
+  },
+  "options": [
+   {
+    "ru": "Из толчёных мумий",
+    "en": "Ground mummies"
+   },
+   {
+    "ru": "Из нильского ила",
+    "en": "Nile river mud"
+   },
+   {
+    "ru": "Из жжёного кофе",
+    "en": "Burnt coffee beans"
+   },
+   {
+    "ru": "Из ржавого железа",
+    "en": "Rusty iron"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Краска так и звалась — «мумия»: египетские мумии мололи со смолой и миррой. Продавать её перестали только к середине XX века.",
+   "en": "It was even called mummy brown: Egyptian mummies ground with pitch and myrrh. Suppliers stopped selling it only by the mid-1900s."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mummy_brown",
+  "basedOn": "art_028",
+  "refine": "rewrite",
+  "id": "cur_art_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "К 1652 году «Тайная вечеря» Леонардо сильно облупилась. Что с ней тогда сделали?",
+   "en": "By 1652 Leonardo's Last Supper had badly flaked. What was done to it then?"
+  },
+  "options": [
+   {
+    "ru": "Прорубили в ней дверь",
+    "en": "Cut a doorway through it"
+   },
+   {
+    "ru": "Закрасили белой известью",
+    "en": "Whitewashed it over"
+   },
+   {
+    "ru": "Разрезали и продали",
+    "en": "Cut it up and sold it"
+   },
+   {
+    "ru": "Завесили гобеленом",
+    "en": "Hid it behind a tapestry"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Проём потом заложили, но его арка видна внизу по центру. Леонардо писал темперой, как на досках, и краска стала осыпаться вскоре после работы.",
+   "en": "The doorway was later bricked up, but its arch still shows at the bottom centre. Leonardo used tempera, a paint for panels, and it began to flake soon after."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_art_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В апреле 1949 года голубь Пикассо стал эмблемой Конгресса сторонников мира. Как он назвал дочь, родившуюся накануне?",
+   "en": "In April 1949 Picasso's dove became the emblem of the Peace Congress. What did he name the daughter born the day before?"
+  },
+  "options": [
+   {
+    "ru": "Палома",
+    "en": "Paloma"
+   },
+   {
+    "ru": "Пас",
+    "en": "Paz"
+   },
+   {
+    "ru": "Кармен",
+    "en": "Carmen"
+   },
+   {
+    "ru": "Долорес",
+    "en": "Dolores"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Палома» по-испански «голубка», как в песне «Ла Палома». А позировал для литографии миланский голубь, подарок Матисса.",
+   "en": "'Paloma' is Spanish for dove. The model for the lithograph was a Milanese pigeon, a gift from Matisse."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dove_(Picasso)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_art_23"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Микеланджело четыре года расписывал потолок Сикстинской капеллы?",
+   "en": "How did Michelangelo spend four years painting the Sistine Chapel ceiling?"
+  },
+  "options": [
+   {
+    "ru": "Стоя, запрокинув голову",
+    "en": "Standing, head tilted back"
+   },
+   {
+    "ru": "Лёжа на спине на лесах",
+    "en": "Lying on his back on a scaffold"
+   },
+   {
+    "ru": "В люльке на верёвках",
+    "en": "In a cradle hung on ropes"
+   },
+   {
+    "ru": "Расписывал щиты на полу",
+    "en": "On panels laid on the floor"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Работу лёжа придумал биограф Джовио, а Вазари писал: стоя, запрокинув голову. Леса на верёвках от Браманте Микеланджело отверг.",
+   "en": "Lying down was biographer Giovio's idea; Vasari wrote he stood with his head tilted back. He rejected Bramante's rope-hung scaffold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling",
+  "basedOn": "art_005",
+  "refine": "rewrite",
+  "id": "cur_art_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Врач заметил, что Бог с ангелами в плаще на фреске «Сотворение Адама» по форме похож на часть тела. На какую?",
+   "en": "A doctor noticed that God and the angels in their cloak in The Creation of Adam are shaped like a body part. Which?"
+  },
+  "options": [
+   {
+    "ru": "На мозг",
+    "en": "A brain"
+   },
+   {
+    "ru": "На сердце",
+    "en": "A heart"
+   },
+   {
+    "ru": "На ухо",
+    "en": "An ear"
+   },
+   {
+    "ru": "На лёгкое",
+    "en": "A lung"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Врач Фрэнк Мешбергер написал об этом в 1990 году в журнале JAMA. А пальцы Бога и Адама на фреске так и не соприкасаются.",
+   "en": "Physician Frank Meshberger wrote about it in JAMA in 1990. And on the fresco the fingers of God and Adam never quite touch."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Creation_of_Adam",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_art_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1917 году Марсель Дюшан подписал «R. Mutt» и отправил на выставку свой «Фонтан». Что это было?",
+   "en": "In 1917 Marcel Duchamp signed 'R. Mutt' on his 'Fountain' and sent it to an exhibition. What was it?"
+  },
+  "options": [
+   {
+    "ru": "Писсуар",
+    "en": "A urinal"
+   },
+   {
+    "ru": "Садовая лейка",
+    "en": "A watering can"
+   },
+   {
+    "ru": "Ванна",
+    "en": "A bathtub"
+   },
+   {
+    "ru": "Дырявое ведро",
+    "en": "A leaky bucket"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На выставке его спрятали за перегородкой, а оригинал потерялся. В 2004 году 500 знатоков искусства назвали «Фонтан» самой влиятельной работой XX века.",
+   "en": "The show hid it behind a partition and the original was lost. In 2004, 500 art experts voted it the most influential artwork of the 20th century."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fountain_(Duchamp)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_art_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Лица президентов на горе Рашмор 14 лет высекали динамитом и бурами около 400 рабочих. Сколько из них погибло?",
+   "en": "About 400 workers spent 14 years carving Mount Rushmore's presidents with dynamite and drills. How many of them died?"
+  },
+  "options": [
+   {
+    "ru": "Ни одного",
+    "en": "None"
+   },
+   {
+    "ru": "Около десяти",
+    "en": "About ten"
+   },
+   {
+    "ru": "Около пятидесяти",
+    "en": "About fifty"
+   },
+   {
+    "ru": "Больше сотни",
+    "en": "Over a hundred"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ни одного, с 1927 по 1941 год. А динамитом с горы сняли около 410 тысяч тонн камня.",
+   "en": "Not one, from 1927 to 1941. Dynamite took about 410,000 tonnes of rock off the mountain."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mount_Rushmore",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_art_28"
+ },
+ {
+  "id": "cur_art_16",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Звёздная ночь» Ван Гога — вид из окна его палаты в лечебнице. Когда он писал картину?",
+   "en": "Van Gogh painted The Starry Night in an asylum, from the view out of his room's window. When did he paint it?"
+  },
+  "options": [
+   {
+    "ru": "Днём, в мастерской",
+    "en": "By day, in his studio"
+   },
+   {
+    "ru": "Ночью, при свечах",
+    "en": "At night, by candlelight"
+   },
+   {
+    "ru": "Ночью, при луне",
+    "en": "At night, by moonlight"
+   },
+   {
+    "ru": "Вечером, в больничном саду",
+    "en": "In the evening, in the garden"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Писать в палате ему не разрешали: картину он написал днём в мастерской на первом этаже, по наброскам вида из окна. А деревню придумал.",
+   "en": "He was not allowed to paint in his room: he painted it by day in his ground-floor studio, from sketches of the window view. The village is invented."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Starry_Night",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Лист А4 — около 30 см в высоту. А какой высоты «Мона Лиза» без рамы?",
+   "en": "An A4 sheet is about 30 cm tall. How tall is the Mona Lisa, without its frame?"
+  },
+  "answer": 77,
+  "range": [
+   10,
+   300
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "77 на 53 см, и написана она не на холсте, а на тополевой доске. Многие в Лувре удивляются, какая она маленькая.",
+   "en": "77 by 53 cm, and painted not on canvas but on a poplar panel. Many Louvre visitors are surprised how small it is."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mona_Lisa",
+  "basedOn": "art_040",
+  "refine": "rewrite",
+  "id": "cur_art_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Рослый мужчина — 180 см. А какой высоты мраморный «Давид» Микеланджело без постамента?",
+   "en": "A tall man is 180 cm. How tall is Michelangelo's marble David, without its pedestal?"
+  },
+  "answer": 517,
+  "range": [
+   100,
+   1200
+  ],
+  "step": 1,
+  "tolerance": 120,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "Сначала его готовили для крыши собора, видимо, поэтому голова и руки такие крупные: чтобы их было видно снизу.",
+   "en": "He was first meant for the cathedral roofline, probably why his head and hands are so big: to read from below."
+  },
+  "source": "https://en.wikipedia.org/wiki/David_(Michelangelo)",
+  "basedOn": "art_047",
+  "refine": "rewrite",
+  "id": "cur_art_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1958 году «Спасителя мира» продали за 45 фунтов как работу ученика. За сколько млн $ — в 2017-м, уже как Леонардо?",
+   "en": "In 1958 Salvator Mundi sold for £45 as a pupil's work. For how many million dollars did it sell in 2017 as a Leonardo?"
+  },
+  "answer": 450,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 10,
+  "tolerance": 120,
+  "unit": {
+   "ru": "млн $",
+   "en": "million $"
+  },
+  "fact": {
+   "ru": "450 млн с комиссией: рекорд для аукциона. Учёные до сих пор спорят, сколько в ней от Леонардо, а с 2017 года её никто публично не видел.",
+   "en": "$450 million with fees, an auction record. Scholars still argue how much of it is Leonardo's, and it has not been shown in public since 2017."
+  },
+  "source": "https://en.wikipedia.org/wiki/Salvator_Mundi_(Leonardo)",
+  "basedOn": "art_043",
+  "refine": "rewrite",
+  "id": "cur_art_25"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Большая волна» Хокусая входит в его знаменитую серию «36 видов горы Фудзи». Сколько в этой серии гравюр?",
+   "en": "Hokusai's Great Wave belongs to his famous series Thirty-six Views of Mount Fuji. How many prints are in it?"
+  },
+  "answer": 46,
+  "range": [
+   0,
+   120
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "гравюр",
+   "en": "prints"
+  },
+  "fact": {
+   "ru": "46: серия так хорошо продавалась, что издатель добавил ещё 10 гравюр, а название оставил.",
+   "en": "46: the series sold so well that the publisher added ten more prints and kept the title."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thirty-six_Views_of_Mount_Fuji",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_art_29"
+ }
+]

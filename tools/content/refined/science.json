@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Металлический поднос на ощупь холоднее деревянной доски. На чём быстрее растает кубик льда?",
+   "en": "A metal tray feels colder than a wooden board. On which will an ice cube melt faster?"
+  },
+  "options": [
+   {
+    "ru": "На металле: он проводит тепло",
+    "en": "Metal: it conducts heat"
+   },
+   {
+    "ru": "На дереве: оно теплее на ощупь",
+    "en": "Wood: it feels warmer"
+   },
+   {
+    "ru": "Одинаково: у них одна температура",
+    "en": "The same: both are room temperature"
+   },
+   {
+    "ru": "На дереве: металл копит холод",
+    "en": "Wood: metal stores the cold"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В комнате у обоих одна температура. Металл кажется холодным, потому что быстро уносит тепло руки, и так же быстро несёт тепло ко льду.",
+   "en": "Both are at room temperature. Metal feels cold because it carries heat away from your hand fast, and it carries heat to the ice just as fast."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thermal_conductivity",
+  "basedOn": "science_001",
+  "refine": "rewrite",
+  "id": "cur_science_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Астронавт на Луне выпустил из рук молоток и перо одновременно. Что упало первым?",
+   "en": "On the Moon an astronaut let go of a hammer and a feather at the same moment. Which landed first?"
+  },
+  "options": [
+   {
+    "ru": "Упали вместе",
+    "en": "They landed together"
+   },
+   {
+    "ru": "Молоток",
+    "en": "The hammer"
+   },
+   {
+    "ru": "Перо",
+    "en": "The feather"
+   },
+   {
+    "ru": "Ничего: на Луне всё парит",
+    "en": "Neither: things float on the Moon"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это Дэвид Скотт с «Аполлона-15», 1971 год: без воздуха всё падает одинаково, как и считал Галилей. Перо было соколиное: модуль звался «Сокол».",
+   "en": "David Scott of Apollo 15 did it in 1971: with no air, all things fall alike, as Galileo said. It was a falcon feather: their lander was the Falcon."
+  },
+  "source": "https://en.wikipedia.org/wiki/Apollo_15",
+  "basedOn": "science_005",
+  "refine": "rewrite",
+  "id": "cur_science_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Стеклянную бутылку с водой забыли в морозилке, и она лопнула. Почему?",
+   "en": "A glass bottle of water was left in the freezer, and it cracked. Why?"
+  },
+  "options": [
+   {
+    "ru": "Вода, замерзая, расширяется",
+    "en": "Water expands as it freezes"
+   },
+   {
+    "ru": "Стекло от холода сжимается",
+    "en": "Glass shrinks a lot in the cold"
+   },
+   {
+    "ru": "Холод делает стекло хрупким",
+    "en": "Cold makes glass brittle"
+   },
+   {
+    "ru": "Лёд тяжелее воды",
+    "en": "Ice is heavier than water"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Лёд занимает на 9% больше места, чем вода, из которой он вышел. Поэтому лёд плавает, а вода в трещинах за зиму раскалывает камни.",
+   "en": "Ice takes up 9% more room than the water it came from. That is why ice floats, and why water in cracks splits rocks over a winter."
+  },
+  "source": "https://en.wikipedia.org/wiki/Frost_weathering",
+  "basedOn": "science_002",
+  "refine": "rewrite",
+  "id": "cur_science_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему горящее масло на сковороде нельзя заливать водой?",
+   "en": "Why must you never pour water on burning oil in a pan?"
+  },
+  "options": [
+   {
+    "ru": "Вода вскипит и раскидает огонь",
+    "en": "It boils and sprays fire"
+   },
+   {
+    "ru": "Кислород из воды раздует пламя",
+    "en": "Water's oxygen feeds the flames"
+   },
+   {
+    "ru": "Вода не потушит, но и не навредит",
+    "en": "It does nothing either way"
+   },
+   {
+    "ru": "Сковорода от этого лопнет",
+    "en": "The pan will shatter"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вода тонет в масле и мгновенно превращается в пар, выбрасывая горящие брызги огненным шаром. Сковороду надо просто накрыть крышкой.",
+   "en": "Water sinks under the oil, flashes into steam and blasts burning drops out as a fireball. Just put a lid on the pan."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fire_classification",
+  "basedOn": "science_035",
+  "refine": "rewrite",
+  "id": "cur_science_04"
+ },
+ {
+  "id": "cur_science_21",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Зимой дверная ручка в квартире «бьёт током» куда чаще, чем летом. Почему?",
+   "en": "In winter a door handle at home gives you a shock far more often than in summer. Why?"
+  },
+  "options": [
+   {
+    "ru": "Сухой воздух не уносит заряд",
+    "en": "Dry air doesn't drain the charge"
+   },
+   {
+    "ru": "Холодный металл лучше проводит ток",
+    "en": "Cold metal conducts better"
+   },
+   {
+    "ru": "Зимой в проводке выше напряжение",
+    "en": "Mains voltage is higher in winter"
+   },
+   {
+    "ru": "Мороз сам заряжает металл ручки",
+    "en": "Frost charges the metal handle"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Влажный воздух понемногу уводит заряд. Пройдя по ковру в сухом воздухе, человек набирает до 35 000 вольт, а во влажном — около 1500.",
+   "en": "Moist air slowly leaks charge away. Walking across a carpet in dry air builds up to 35,000 volts on you; in humid air, about 1,500."
+  },
+  "source": "https://www.gndzero.com/blog/?p=86",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Птица сидит на голом проводе под напряжением, и ей ничего. Почему?",
+   "en": "A bird sits on a bare live power line and comes to no harm. Why?"
+  },
+  "options": [
+   {
+    "ru": "Она касается только одного провода",
+    "en": "It touches just one wire"
+   },
+   {
+    "ru": "Лапки птиц — хороший изолятор от тока",
+    "en": "Bird feet insulate it from the current"
+   },
+   {
+    "ru": "Перья гасят электрический заряд",
+    "en": "Feathers soak up the charge"
+   },
+   {
+    "ru": "Ток в проводах для птиц слишком слабый",
+    "en": "The current is too weak to hurt a bird"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ток идёт только там, где есть разница напряжений, а на одном проводе её нет. Но стоит птице коснуться крылом второго провода, и её убьёт.",
+   "en": "Current only flows where there is a voltage difference, and on one wire there is none. If a wing touches a second line, the bird is killed."
+  },
+  "source": "https://www.sciencefocus.com/science/why-dont-birds-get-electrocuted-while-perching-on-power-lines/",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_science_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Жарко. Вы открыли холодильник в закрытой кухне и ушли. Что будет с кухней?",
+   "en": "On a hot day you leave the fridge open in a closed kitchen. What happens to the kitchen?"
+  },
+  "options": [
+   {
+    "ru": "Станет теплее",
+    "en": "It gets warmer"
+   },
+   {
+    "ru": "Станет прохладнее",
+    "en": "It gets cooler"
+   },
+   {
+    "ru": "Ничего не изменится",
+    "en": "Nothing changes"
+   },
+   {
+    "ru": "Сначала замёрзнет, потом оттает",
+    "en": "It freezes, then thaws"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Холодильник не делает холод, а перекачивает тепло из камеры на решётку сзади. Открытый, он гоняет его по кругу и греет кухню мотором.",
+   "en": "A fridge does not make cold; it pumps heat out the back. Left open it just moves heat in a loop, and its motor adds more."
+  },
+  "source": "https://van.physics.illinois.edu/ask/listing/1790",
+  "basedOn": "science_021",
+  "refine": "same",
+  "id": "cur_science_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что мы на самом деле слышим, прижав к уху морскую раковину?",
+   "en": "What do we really hear when we hold a seashell to the ear?"
+  },
+  "options": [
+   {
+    "ru": "Шум вокруг, усиленный раковиной",
+    "en": "Room noise boosted by the shell"
+   },
+   {
+    "ru": "Песок, пересыпающийся внутри",
+    "en": "Sand shifting inside it"
+   },
+   {
+    "ru": "Ветер, запертый в завитках",
+    "en": "Wind trapped in its curls"
+   },
+   {
+    "ru": "Эхо моря, которое она запомнила",
+    "en": "An echo of the sea it remembers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Полость раковины резонирует с шумом вокруг. В шумной комнате «море» громче, а кружка или ладонь дают тот же эффект.",
+   "en": "The shell's cavity resonates with the noise around you: the sea gets louder in a noisy room, and a cup or cupped hand does the same."
+  },
+  "source": "https://en.wikipedia.org/wiki/Seashell_resonance",
+  "basedOn": "science_022",
+  "refine": "rewrite",
+  "id": "cur_science_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой формы пламя свечи на космической станции?",
+   "en": "What shape is a candle flame aboard a space station?"
+  },
+  "options": [
+   {
+    "ru": "Шар",
+    "en": "A ball"
+   },
+   {
+    "ru": "Длинная тонкая игла",
+    "en": "A long thin spike"
+   },
+   {
+    "ru": "Обычная капля",
+    "en": "The usual teardrop"
+   },
+   {
+    "ru": "Плоский диск",
+    "en": "A flat disc"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Без тяжести горячий воздух не поднимается и не тянет пламя вверх, поэтому оно горит голубоватым шаром.",
+   "en": "Without gravity, hot air doesn't rise and stretch the flame upward, so it burns as a bluish ball."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flame",
+  "basedOn": "science_026",
+  "refine": "same",
+  "id": "cur_science_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где должно быть солнце, чтобы вы увидели радугу?",
+   "en": "Where must the sun be for you to see a rainbow?"
+  },
+  "options": [
+   {
+    "ru": "За спиной",
+    "en": "Behind you"
+   },
+   {
+    "ru": "Прямо перед вами",
+    "en": "Right in front of you"
+   },
+   {
+    "ru": "Точно над головой",
+    "en": "Straight overhead"
+   },
+   {
+    "ru": "Где угодно",
+    "en": "Anywhere at all"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Радуга — это круг вокруг точки напротив солнца. С земли его закрывает горизонт, а из самолёта бывает видно кольцо целиком.",
+   "en": "A rainbow is a circle around the point opposite the sun; the ground hides half, but from a plane you can see the full ring."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rainbow",
+  "basedOn": "science_019",
+  "refine": "same",
+  "id": "cur_science_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой буквы нет ни в одном символе таблицы Менделеева?",
+   "en": "Which letter appears in no symbol of the periodic table?"
+  },
+  "options": [
+   {
+    "ru": "Буква J",
+    "en": "The letter J"
+   },
+   {
+    "ru": "Буква X",
+    "en": "The letter X"
+   },
+   {
+    "ru": "Буква Z",
+    "en": "The letter Z"
+   },
+   {
+    "ru": "Буква W",
+    "en": "The letter W"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "X есть у ксенона (Xe), Z — у цинка (Zn), а W — символ вольфрама. Кроме J, в таблице сейчас нет и буквы Q.",
+   "en": "X is in xenon (Xe), Z in zinc (Zn), and W is tungsten from its old name wolfram. Besides J, Q is missing too."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chemical_symbol",
+  "basedOn": "science_027",
+  "refine": "same",
+  "id": "cur_science_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где впервые обнаружили гелий?",
+   "en": "Where was helium first discovered?"
+  },
+  "options": [
+   {
+    "ru": "В свете Солнца",
+    "en": "In sunlight"
+   },
+   {
+    "ru": "В природном газе",
+    "en": "In natural gas"
+   },
+   {
+    "ru": "В вулканическом пепле",
+    "en": "In volcanic ash"
+   },
+   {
+    "ru": "В морской воде",
+    "en": "In sea water"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1868 году в спектре Солнца нашли неизвестную жёлтую линию. Отсюда и имя — от греческого «гелиос», солнце. На Земле гелий нашли лишь в 1895-м.",
+   "en": "In 1868 a strange yellow line showed up in sunlight, hence the name from Greek helios, sun. It was found on Earth only in 1895."
+  },
+  "source": "https://en.wikipedia.org/wiki/Helium",
+  "basedOn": "science_025",
+  "refine": "rewrite",
+  "id": "cur_science_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Если бросить «Ментос» в бутылку колы, из неё бьёт фонтан. Что его вызывает?",
+   "en": "Drop Mentos into a bottle of cola and a fountain shoots out. What causes it?"
+  },
+  "options": [
+   {
+    "ru": "Шершавая поверхность конфеты",
+    "en": "The candy's rough surface"
+   },
+   {
+    "ru": "Реакция мяты с кислотой колы",
+    "en": "Mint reacting with the cola's acid"
+   },
+   {
+    "ru": "Пищевая сода в конфете",
+    "en": "Baking soda in the candy"
+   },
+   {
+    "ru": "Конфета нагревает колу",
+    "en": "The candy warms the cola up"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это физика, а не химия: в конфете миллионы крошечных пор, и газ из колы мгновенно собирается на них в пузыри. В 2006 году это проверяли «Разрушители легенд».",
+   "en": "It is physics, not chemistry: the candy has millions of tiny pits where the cola's gas instantly forms bubbles. MythBusters tested it in 2006."
+  },
+  "source": "https://en.wikipedia.org/wiki/Diet_Coke_and_Mentos_eruption",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_science_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Вдохнув гелий из шарика, человек говорит смешным писклявым голосом. Почему?",
+   "en": "Breathe in helium from a balloon and your voice turns funny and squeaky. Why?"
+  },
+  "options": [
+   {
+    "ru": "Звук в гелии бежит быстрее",
+    "en": "Sound travels faster in helium"
+   },
+   {
+    "ru": "Гелий натягивает голосовые связки",
+    "en": "Helium tightens the vocal cords"
+   },
+   {
+    "ru": "Связки в гелии дрожат чаще",
+    "en": "The vocal cords vibrate faster"
+   },
+   {
+    "ru": "Холодный гелий сжимает горло",
+    "en": "Cold helium tightens the throat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Звук в гелии почти втрое быстрее, и горло усиливает высокие частоты. Связки дрожат как обычно: высота голоса почти та же, меняется тембр.",
+   "en": "Sound is nearly three times faster in helium, so the throat boosts higher tones. The cords vibrate as usual: the pitch barely moves, the timbre changes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Helium",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_science_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сырое яйцо тонет в стакане воды. Что заставит его всплыть?",
+   "en": "A raw egg sinks in a glass of water. What will make it float?"
+  },
+  "options": [
+   {
+    "ru": "Много соли",
+    "en": "Lots of salt"
+   },
+   {
+    "ru": "Подогреть воду",
+    "en": "Warming the water"
+   },
+   {
+    "ru": "Ложка масла",
+    "en": "A spoonful of oil"
+   },
+   {
+    "ru": "Быстро помешать",
+    "en": "Stirring it fast"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Солёная вода плотнее пресной и выталкивает сильнее. Поэтому в Мёртвом море можно лежать на воде, как на матрасе.",
+   "en": "Salty water is denser and pushes up harder, which is why you can lie on the Dead Sea like on a mattress."
+  },
+  "source": "https://en.wikipedia.org/wiki/Buoyancy",
+  "basedOn": "science_028",
+  "refine": "same",
+  "id": "cur_science_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Говорят, зеркало меняет местами лево и право. А что оно переворачивает на самом деле?",
+   "en": "They say a mirror swaps left and right. What does it really flip?"
+  },
+  "options": [
+   {
+    "ru": "Перед и зад",
+    "en": "Front and back"
+   },
+   {
+    "ru": "Лево и право",
+    "en": "Left and right"
+   },
+   {
+    "ru": "Верх и низ",
+    "en": "Up and down"
+   },
+   {
+    "ru": "Все три направления",
+    "en": "All three directions"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Правая рука в зеркале остаётся справа, голова сверху, а вот нос смотрит на вас: перевернулись перед и зад. «Левша» в зеркале — лишь иллюзия.",
+   "en": "Your right hand stays on the right and your head on top, but your nose points back at you: front and back are flipped. The left-right swap is an illusion."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mirror_image",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_science_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько килограммов весит весь воздух в комнате 4 × 5 м с потолком 2,5 м?",
+   "en": "How many kilograms does all the air in a 4 × 5 m room with a 2.5 m ceiling weigh?"
+  },
+  "answer": 60,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Кубометр воздуха весит около 1,2 кг, а в такой комнате их 50. Выходит вес взрослого человека.",
+   "en": "A cubic metre of air weighs about 1.2 kg, and the room holds 50 of them: as heavy as an adult."
+  },
+  "source": "https://en.wikipedia.org/wiki/Density_of_air",
+  "basedOn": "science_045",
+  "refine": "same",
+  "id": "cur_science_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Литровая банка воды весит 1 кг. Сколько килограммов весит такая же банка ртути?",
+   "en": "A litre jar of water weighs 1 kg. How many kilograms does the same jar of mercury weigh?"
+  },
+  "answer": 13.5,
+  "range": [
+   0,
+   50
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Ртуть в 13,5 раза плотнее воды: на ней плавают железные гири, а ведро на 10 литров весило бы 135 кг.",
+   "en": "Mercury is 13.5 times denser than water: iron weights float on it, and a 10 litre bucketful would weigh 135 kg."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mercury_(element)",
+  "basedOn": "science_048",
+  "refine": "rewrite",
+  "id": "cur_science_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Внизу, у моря, вода кипит при 100 °C. При скольких градусах она закипит на вершине Эвереста?",
+   "en": "At sea level water boils at 100 °C. At what temperature does it boil on top of Everest?"
+  },
+  "answer": 71,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "градусов",
+   "en": "°C"
+  },
+  "fact": {
+   "ru": "Около 71 °C: воздух там давит втрое слабее. Чай толком не заварить, а макароны варятся очень долго.",
+   "en": "About 71 °C: the air there presses only a third as hard. Tea won't brew properly and pasta takes ages."
+  },
+  "source": "https://en.wikipedia.org/wiki/Boiling_point",
+  "basedOn": "science_040",
+  "refine": "rewrite",
+  "id": "cur_science_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Вы стоите на берегу моря, глаза на высоте 1,7 м. Сколько километров до линии горизонта?",
+   "en": "You stand on a beach with your eyes 1.7 m up. How many kilometres away is the horizon?"
+  },
+  "answer": 5,
+  "range": [
+   0,
+   100
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Всего около 5 км, час пешком: дальше вода уходит за изгиб Земли. С мачты высотой 10 м его видно уже за 11 км.",
+   "en": "Only about 5 km, an hour's walk: beyond that the sea drops behind the Earth's curve. From a 10 m mast it is already 11 km off."
+  },
+  "source": "https://en.wikipedia.org/wiki/Horizon",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_science_20"
+ }
+]

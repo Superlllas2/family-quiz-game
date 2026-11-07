@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой город — столица Австралии?",
+   "en": "Which city is the capital of Australia?"
+  },
+  "options": [
+   {
+    "ru": "Сидней",
+    "en": "Sydney"
+   },
+   {
+    "ru": "Мельбурн",
+    "en": "Melbourne"
+   },
+   {
+    "ru": "Канберра",
+    "en": "Canberra"
+   },
+   {
+    "ru": "Перт",
+    "en": "Perth"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Сидней и Мельбурн так и не уступили друг другу, поэтому столицу построили с нуля между ними.",
+   "en": "Sydney and Melbourne would not let each other win, so a new capital was built between them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Canberra",
+  "basedOn": "countries_002",
+  "refine": "same",
+  "id": "cur_countries_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что с 1992 года нельзя купить в обычном магазине Сингапура?",
+   "en": "What can't you buy in an ordinary Singapore shop since 1992?"
+  },
+  "options": [
+   {
+    "ru": "Жевательную резинку",
+    "en": "Chewing gum"
+   },
+   {
+    "ru": "Шоколадные батончики",
+    "en": "Chocolate bars"
+   },
+   {
+    "ru": "Сладкую газировку",
+    "en": "Fizzy drinks"
+   },
+   {
+    "ru": "Леденцы на палочке",
+    "en": "Lollipops"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Запрет ввели после того, как вандалы залепляли жвачкой двери поездов метро. С 2004 года лечебную жвачку продают только в аптеках.",
+   "en": "The ban came after vandals jammed metro train doors with gum. Since 2004 medical gum has been sold, but only in pharmacies."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chewing_gum_sales_ban_in_Singapore",
+  "basedOn": "countries_007",
+  "refine": "rewrite",
+  "id": "cur_countries_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какое животное — национальный символ Шотландии?",
+   "en": "Which animal is the national animal of Scotland?"
+  },
+  "options": [
+   {
+    "ru": "Единорог",
+    "en": "The unicorn"
+   },
+   {
+    "ru": "Благородный олень",
+    "en": "The red deer"
+   },
+   {
+    "ru": "Беркут",
+    "en": "The golden eagle"
+   },
+   {
+    "ru": "Хайлендская корова",
+    "en": "The Highland cow"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На королевском гербе Великобритании шотландский единорог стоит напротив английского льва.",
+   "en": "On the UK's royal coat of arms the Scottish unicorn stands opposite the English lion."
+  },
+  "source": "https://en.wikipedia.org/wiki/National_symbols_of_Scotland",
+  "basedOn": "countries_009",
+  "refine": "same",
+  "id": "cur_countries_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Норвежская королевская гвардия в 2008 году посвятила в рыцари необычного «сослуживца». Кого?",
+   "en": "In 2008 Norway's King's Guard knighted a rather unusual 'comrade'. Who?"
+  },
+  "options": [
+   {
+    "ru": "Пингвина",
+    "en": "A penguin"
+   },
+   {
+    "ru": "Лося",
+    "en": "A moose"
+   },
+   {
+    "ru": "Сенбернара",
+    "en": "A St Bernard"
+   },
+   {
+    "ru": "Робота",
+    "en": "A robot"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это Нильс Олав из зоопарка Эдинбурга: имя и пост талисмана гвардии с 1972 года переходят от пингвина к пингвину. В 2023-м он стал генерал-майором.",
+   "en": "Nils Olav of Edinburgh Zoo: since 1972 the name and the post of Guard mascot have passed from penguin to penguin. In 2023 he became a major general."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nils_Olav",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_countries_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 2022 году Турция попросила ООН называть её Türkiye, а не Turkey. Какой неловкости хотели избежать?",
+   "en": "In 2022 Turkey asked the UN to call it Türkiye instead of Turkey. What awkwardness did it want to avoid?"
+  },
+  "options": [
+   {
+    "ru": "Так зовут птицу — индюка",
+    "en": "It is also the name of a bird"
+   },
+   {
+    "ru": "Его путали с Туркменией",
+    "en": "It got mixed up with Turkmenistan"
+   },
+   {
+    "ru": "Оно значит «чужая земля»",
+    "en": "It means 'foreign land'"
+   },
+   {
+    "ru": "В нём слышно ругательство",
+    "en": "It sounds like a swear word"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Власти говорили, что Türkiye лучше передаёт культуру народа, а гостелеканал TRT прямо назвал и вторую причину — птицу.",
+   "en": "Officials said Türkiye better expresses the nation's culture, and Turkey's state broadcaster openly named the other reason: the bird."
+  },
+  "source": "https://en.wikipedia.org/wiki/Name_of_Turkey",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_countries_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Только у одной страны флаг — не четырёхугольник. У какой?",
+   "en": "Only one country's flag is not a four-sided shape. Whose?"
+  },
+  "options": [
+   {
+    "ru": "Непала",
+    "en": "Nepal"
+   },
+   {
+    "ru": "Швейцарии",
+    "en": "Switzerland"
+   },
+   {
+    "ru": "Бутана",
+    "en": "Bhutan"
+   },
+   {
+    "ru": "Монголии",
+    "en": "Mongolia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это два вымпела, один над другим. Квадратный флаг Швейцарии — всё же четырёхугольник. А флаг Непала ещё и единственный, что выше, чем шире.",
+   "en": "It is two pennants, one above the other. Switzerland's square flag still has four sides. Nepal's is also the only flag taller than it is wide."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flag_of_Nepal",
+  "basedOn": "countries_016",
+  "refine": "rewrite",
+  "id": "cur_countries_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Символа какой части Великобритании нет на её флаге?",
+   "en": "Which nation of the UK has no symbol on the Union Jack?"
+  },
+  "options": [
+   {
+    "ru": "Уэльса",
+    "en": "Wales"
+   },
+   {
+    "ru": "Шотландии",
+    "en": "Scotland"
+   },
+   {
+    "ru": "Англии",
+    "en": "England"
+   },
+   {
+    "ru": "Северной Ирландии",
+    "en": "Northern Ireland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Когда в 1606 году появился первый общий флаг, Уэльс уже считался частью Английского королевства.",
+   "en": "When the first Union Flag appeared in 1606, Wales was already part of the Kingdom of England."
+  },
+  "source": "https://en.wikipedia.org/wiki/Union_Jack",
+  "basedOn": "countries_032",
+  "refine": "same",
+  "id": "cur_countries_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Перед матчами сборной Испании футболисты слушают гимн молча. Почему?",
+   "en": "Before Spain's national team plays, the players listen to the anthem in silence. Why?"
+  },
+  "options": [
+   {
+    "ru": "У гимна вообще нет слов",
+    "en": "The anthem has no words"
+   },
+   {
+    "ru": "Петь его — дурная примета",
+    "en": "Singing it is bad luck"
+   },
+   {
+    "ru": "Слова на старой латыни",
+    "en": "The words are in old Latin"
+   },
+   {
+    "ru": "Петь его может лишь король",
+    "en": "Only the king may sing it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мелодию напечатали ещё в 1761 году. Тексты к ней сочиняли не раз, но ни один не стал официальным, и с 1978 года гимн звучит без слов.",
+   "en": "The tune was printed as early as 1761. Lyrics were written more than once, but none became official, and since 1978 it has had no words."
+  },
+  "source": "https://en.wikipedia.org/wiki/Marcha_Real",
+  "basedOn": "countries_022",
+  "refine": "rewrite",
+  "id": "cur_countries_08"
+ },
+ {
+  "id": "cur_countries_09",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Каких питомцев в Швейцарии запрещено держать поодиночке?",
+   "en": "Which pet does Swiss law forbid you to keep on its own?"
+  },
+  "options": [
+   {
+    "ru": "Морских свинок",
+    "en": "Guinea pigs"
+   },
+   {
+    "ru": "Золотистых хомяков",
+    "en": "Golden hamsters"
+   },
+   {
+    "ru": "Степных черепах",
+    "en": "Tortoises"
+   },
+   {
+    "ru": "Садовых улиток",
+    "en": "Garden snails"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Свинки — стадные животные, и одиночество там считается вредом для их здоровья.",
+   "en": "Guinea pigs are herd animals, and being alone counts as harm to their well-being there."
+  },
+  "source": "https://en.wikipedia.org/wiki/Guinea_pig",
+  "basedOn": "countries_024",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Название «Пакистан» в 1933 году предложил кембриджский студент. Как он его составил?",
+   "en": "The name 'Pakistan' was proposed in 1933 by a Cambridge student. How did he make it up?"
+  },
+  "options": [
+   {
+    "ru": "Из букв названий областей",
+    "en": "From the letters of its regions"
+   },
+   {
+    "ru": "Перевёл на урду «свобода»",
+    "en": "Translated 'freedom' into Urdu"
+   },
+   {
+    "ru": "Взял имя легендарного царя",
+    "en": "From a legendary king's name"
+   },
+   {
+    "ru": "Назвал в честь горной реки",
+    "en": "After a mountain river"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "P — Пенджаб, A — Афгания, K — Кашмир, S — Синд, «тан» — Белуджистан. Заодно вышло «страна чистых»: «пак» значит «чистый».",
+   "en": "P for Punjab, A for Afghania, K for Kashmir, S for Sindh, 'tan' for Baluchistan. It also reads 'land of the pure': 'pak' means 'pure'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Choudhry_Rahmat_Ali",
+  "basedOn": "countries_027",
+  "refine": "rewrite",
+  "id": "cur_countries_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1667 году голландцы уступили англичанам будущий Нью-Йорк, а себе оставили другую колонию. Какую?",
+   "en": "In 1667 the Dutch let the English keep the future New York and kept another colony for themselves. Which?"
+  },
+  "options": [
+   {
+    "ru": "Суринам",
+    "en": "Suriname"
+   },
+   {
+    "ru": "Ямайку",
+    "en": "Jamaica"
+   },
+   {
+    "ru": "Кубу",
+    "en": "Cuba"
+   },
+   {
+    "ru": "Барбадос",
+    "en": "Barbados"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По Бредскому миру каждый оставил себе захваченное в войне. В Суринаме до сих пор государственный язык — нидерландский.",
+   "en": "Under the Treaty of Breda each side kept what it had taken in the war. Dutch is still Suriname's official language."
+  },
+  "source": "https://en.wikipedia.org/wiki/Treaty_of_Breda_(1667)",
+  "basedOn": "countries_033",
+  "refine": "rewrite",
+  "id": "cur_countries_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране больше всего жителей из тех, где французский — официальный язык?",
+   "en": "Which country with French as an official language has the most people?"
+  },
+  "options": [
+   {
+    "ru": "ДР Конго",
+    "en": "DR Congo"
+   },
+   {
+    "ru": "Франция",
+    "en": "France"
+   },
+   {
+    "ru": "Канада",
+    "en": "Canada"
+   },
+   {
+    "ru": "Бельгия",
+    "en": "Belgium"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В Демократической Республике Конго больше 100 миллионов человек, а Киншаса крупнее Парижа.",
+   "en": "The Democratic Republic of the Congo has over 100 million people, and Kinshasa is bigger than Paris."
+  },
+  "source": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo",
+  "basedOn": "countries_034",
+  "refine": "same",
+  "id": "cur_countries_12"
+ },
+ {
+  "id": "cur_countries_13",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В Финляндии штраф за сильное превышение скорости зависит не только от скорости. От чего ещё?",
+   "en": "In Finland the fine for serious speeding depends on more than the speed. On what else?"
+  },
+  "options": [
+   {
+    "ru": "От дохода водителя",
+    "en": "The driver's income"
+   },
+   {
+    "ru": "От цены машины",
+    "en": "The price of the car"
+   },
+   {
+    "ru": "От возраста водителя",
+    "en": "The driver's age"
+   },
+   {
+    "ru": "От погоды на дороге",
+    "en": "The weather on the road"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это «дневной штраф», его считают от заработка. В 2023 году миллионер Андерс Виклёф заплатил 121 000 евро за 82 км/ч там, где можно 50.",
+   "en": "It is a 'day-fine', worked out from earnings. In 2023 millionaire Anders Wiklöf paid 121,000 euros for doing 82 km/h in a 50 zone."
+  },
+  "source": "https://www.motor1.com/news/670856/finland-fines-driver-129k-for-speeding-20-mph-over-the-limit/",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что горное королевство Бутан разрешило у себя только в 1999 году?",
+   "en": "What did the mountain kingdom of Bhutan only allow in 1999?"
+  },
+  "options": [
+   {
+    "ru": "Телевидение",
+    "en": "Television"
+   },
+   {
+    "ru": "Иностранных туристов",
+    "en": "Foreign tourists"
+   },
+   {
+    "ru": "Автомобили",
+    "en": "Cars"
+   },
+   {
+    "ru": "Футбол",
+    "en": "Football"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С 1989 года телевизоры и спутниковые тарелки были запрещены ради местной культуры. Пробный эфир устроили в ночь финала ЧМ-1998.",
+   "en": "From 1989 TV sets and satellite dishes were banned to protect local culture. A trial broadcast ran on the night of the 1998 World Cup final."
+  },
+  "source": "https://en.wikipedia.org/wiki/Television_in_Bhutan",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_countries_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Английское слово copper, «медь», пришло из латыни. От названия какого острова?",
+   "en": "The English word 'copper' came from Latin. From the name of which island?"
+  },
+  "options": [
+   {
+    "ru": "Кипр",
+    "en": "Cyprus"
+   },
+   {
+    "ru": "Крит",
+    "en": "Crete"
+   },
+   {
+    "ru": "Корсика",
+    "en": "Corsica"
+   },
+   {
+    "ru": "Капри",
+    "en": "Capri"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Римляне звали медь aes cyprium, «кипрский металл»: там её добывали с древности. Поэтому и остров на флаге Кипра — медного цвета.",
+   "en": "The Romans called copper aes cyprium, 'metal of Cyprus', where it was mined since ancient times. So the island on Cyprus's flag is copper coloured."
+  },
+  "source": "https://en.wikipedia.org/wiki/Copper",
+  "basedOn": "countries_019",
+  "refine": "rewrite",
+  "id": "cur_countries_15"
+ },
+ {
+  "id": "cur_countries_16",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Звёзды на голубом круге флага Бразилии расположены не случайно. Что они изображают?",
+   "en": "The stars in the blue circle of Brazil's flag are not placed at random. What do they show?"
+  },
+  "options": [
+   {
+    "ru": "Небо над Рио в одно утро",
+    "en": "The sky over Rio one morning"
+   },
+   {
+    "ru": "Небо над Лиссабоном",
+    "en": "The sky over Lisbon"
+   },
+   {
+    "ru": "Большую Медведицу",
+    "en": "The Great Bear"
+   },
+   {
+    "ru": "Маршрут первых каравелл",
+    "en": "The route of the first ships"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это небо в 8:30 утра 15 ноября 1889 года, когда Бразилия стала республикой, но в зеркальном виде. Каждая звезда — штат или столичный округ.",
+   "en": "It is the sky at 8:30 am on 15 November 1889, when Brazil became a republic, shown mirrored. Each star is a state or the capital district."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flag_of_Brazil",
+  "basedOn": "countries_021",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В Новой Зеландии живёт около 5 миллионов человек. А сколько там миллионов овец?",
+   "en": "About 5 million people live in New Zealand. How many million sheep live there?"
+  },
+  "answer": 23,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "млн",
+   "en": "million"
+  },
+  "fact": {
+   "ru": "В 2024 году — около 23 миллионов. А в рекордном 1982 году было 70 миллионов, больше двадцати на каждого жителя.",
+   "en": "About 23 million in 2024. In the record year of 1982 there were 70 million, more than twenty for every person."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sheep_farming_in_New_Zealand",
+  "basedOn": "countries_010",
+  "refine": "rewrite",
+  "id": "cur_countries_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В Евросоюзе 27 стран. Сколько у него официальных языков?",
+   "en": "The European Union has 27 countries. How many official languages does it have?"
+  },
+  "answer": 24,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "языка",
+   "en": "languages"
+  },
+  "fact": {
+   "ru": "24: немецкий общий у Германии и Австрии, греческий — у Греции и Кипра. А люксембургского в списке нет вовсе, хотя Люксембург в ЕС.",
+   "en": "24: Germany and Austria share German, Greece and Cyprus share Greek. Luxembourgish is not on the list at all, though Luxembourg is a member."
+  },
+  "source": "https://en.wikipedia.org/wiki/Languages_of_the_European_Union",
+  "basedOn": "countries_045",
+  "refine": "rewrite",
+  "id": "cur_countries_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "У Исландии свой язык, парламент и футбольная сборная. Сколько тысяч человек живёт во всей стране?",
+   "en": "Iceland has its own language, parliament and football team. How many thousand people live in the whole country?"
+  },
+  "answer": 395,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 5,
+  "tolerance": 80,
+  "unit": {
+   "ru": "тыс.",
+   "en": "thousand"
+  },
+  "fact": {
+   "ru": "Около 395 тысяч — меньше, чем во многих городах. И армии у Исландии нет: она единственная в НАТО без своих войск.",
+   "en": "About 395,000, fewer than in many cities. Iceland has no army either: it is the only NATO member without a standing army."
+  },
+  "source": "https://en.wikipedia.org/wiki/Iceland",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_countries_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В Финляндии живёт около 5,6 миллиона человек. Сколько у них саун, в миллионах?",
+   "en": "About 5.6 million people live in Finland. How many million saunas do they have?"
+  },
+  "answer": 3,
+  "range": [
+   0,
+   20
+  ],
+  "step": 0.1,
+  "tolerance": 0.7,
+  "unit": {
+   "ru": "млн",
+   "en": "million"
+  },
+  "fact": {
+   "ru": "Больше трёх миллионов — примерно одна на двоих. Сауна есть даже в здании парламента, а в 2020 году её внесли в список наследия ЮНЕСКО.",
+   "en": "More than 3 million, about one for every two people. There is even one in Parliament House, and in 2020 UNESCO listed the sauna as heritage."
+  },
+  "source": "https://en.wikipedia.org/wiki/Finnish_sauna",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_countries_20"
+ }
+]

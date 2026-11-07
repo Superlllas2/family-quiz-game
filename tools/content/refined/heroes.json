@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Готэм, город Бэтмена, — старое шутливое прозвище настоящего города. Какого?",
+   "en": "Gotham, Batman's city, is an old joking nickname for a real city. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Нью-Йорка",
+    "en": "New York"
+   },
+   {
+    "ru": "Чикаго",
+    "en": "Chicago"
+   },
+   {
+    "ru": "Лондона",
+    "en": "London"
+   },
+   {
+    "ru": "Филадельфии",
+    "en": "Philadelphia"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так Нью-Йорк в 1807 году назвал писатель Вашингтон Ирвинг — в честь английской деревни Готэм, жители которой, по легенде, прикидывались дураками.",
+   "en": "Washington Irving called New York that in 1807, after the English village of Gotham, whose people, legend says, played the fool."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gotham_City",
+  "basedOn": "heroes_002",
+  "refine": "rewrite",
+  "id": "cur_heroes_01"
+ },
+ {
+  "id": "cur_heroes_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1969 году астронавты «Аполлона-10» назвали лунный модуль в честь пса из комиксов. Какого?",
+   "en": "In 1969 the Apollo 10 astronauts named their lunar module after a comic strip dog. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Снупи",
+    "en": "Snoopy"
+   },
+   {
+    "ru": "Плуто",
+    "en": "Pluto"
+   },
+   {
+    "ru": "Милу",
+    "en": "Snowy"
+   },
+   {
+    "ru": "Идефикс",
+    "en": "Dogmatix"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Модулю предстояло «вынюхать» место посадки, а командный модуль назвали «Чарли Браун». А лучших работников NASA награждали значком со Снупи.",
+   "en": "The module was to 'snoop' around the landing site; the command module was 'Charlie Brown'. NASA's best workers were given Snoopy pins."
+  },
+  "source": "https://en.wikipedia.org/wiki/Apollo_10",
+  "basedOn": "heroes_013",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Создатель Чудо-женщины, психолог Уильям Марстон, работал и над настоящим изобретением. Каким?",
+   "en": "Wonder Woman's creator, the psychologist William Marston, also worked on a real invention. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Детектор лжи",
+    "en": "The lie detector"
+   },
+   {
+    "ru": "Тест на IQ",
+    "en": "The IQ test"
+   },
+   {
+    "ru": "Слуховой аппарат",
+    "en": "The hearing aid"
+   },
+   {
+    "ru": "Снотворное",
+    "en": "The sleeping pill"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его тест по давлению крови стал частью полиграфа. А у Чудо-женщины есть золотое лассо: связанный им говорит только правду.",
+   "en": "His blood pressure test became part of the polygraph. And Wonder Woman has a golden lasso: whoever it binds must tell the truth."
+  },
+  "source": "https://en.wikipedia.org/wiki/William_Moulton_Marston",
+  "basedOn": "heroes_005",
+  "refine": "rewrite",
+  "id": "cur_heroes_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Имя Обеликса — от слова «обелиск». А что спрятано в имени Астерикса?",
+   "en": "Obelix's name comes from 'obelisk'. What is hidden in Asterix's name?"
+  },
+  "options": [
+   {
+    "ru": "Значок «звёздочка»",
+    "en": "The asterisk sign"
+   },
+   {
+    "ru": "Астероид",
+    "en": "An asteroid"
+   },
+   {
+    "ru": "Цветок астра",
+    "en": "The aster flower"
+   },
+   {
+    "ru": "Имя галльского вождя",
+    "en": "A Gaulish chief's name"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По-французски знак * — astérisque. А Обеликс — ещё и «обелюс», значок †. Окончание -икс намекает на галльских вождей вроде Верцингеторикса.",
+   "en": "In French the * sign is astérisque. Obelix is also the obelus, the † mark. The -ix ending hints at Gaulish chiefs such as Vercingetorix."
+  },
+  "source": "https://en.wikipedia.org/wiki/Asterix",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_heroes_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Бельгиец Пейо придумал имя смурфиков (по-французски «штрумпфы») за обедом с другом-художником. Как это вышло?",
+   "en": "Peyo named the Smurfs ('Schtroumpfs' in French) over a meal with a fellow cartoonist. How did it happen?"
+  },
+  "options": [
+   {
+    "ru": "Забыл слово «соль»",
+    "en": "He forgot the word 'salt'"
+   },
+   {
+    "ru": "Так лепетал его сын",
+    "en": "His baby son babbled it"
+   },
+   {
+    "ru": "Так звали его кота",
+    "en": "It was the name of his cat"
+   },
+   {
+    "ru": "Опечатался в меню",
+    "en": "A typo on the menu"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он попросил Андре Франкена: «Передай мне… штрумпф». В комиксе смурфики впервые появились в 1958 году.",
+   "en": "He asked André Franquin to 'pass the... schtroumpf'. The Smurfs first appeared in a comic in 1958."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Smurfs",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_heroes_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Питер Паркер, Брюс Бэннер, Рид Ричардс… Зачем Стэн Ли давал героям имя и фамилию на одну букву?",
+   "en": "Peter Parker, Bruce Banner, Reed Richards... Why did Stan Lee give heroes names starting with the same letter?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы самому не забыть",
+    "en": "So he wouldn't forget them"
+   },
+   {
+    "ru": "Так велел издатель",
+    "en": "The publisher insisted on it"
+   },
+   {
+    "ru": "Так короче на обложке",
+    "en": "It was shorter on covers"
+   },
+   {
+    "ru": "Ради шутки над читателями",
+    "en": "As a joke on the readers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Помогало не всегда: однажды он назвал Брюса Бэннера Бобом и выкрутился, объявив, что полное имя героя — Роберт Брюс Бэннер.",
+   "en": "It didn't always work: once he called Bruce Banner 'Bob', and got out of it by declaring the full name Robert Bruce Banner."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bruce_Banner",
+  "basedOn": "heroes_003",
+  "refine": "rewrite",
+  "id": "cur_heroes_06"
+ },
+ {
+  "id": "cur_heroes_07",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чего Супермен ещё не умел в первом комиксе 1938 года?",
+   "en": "What could Superman not do yet in his first comic in 1938?"
+  },
+  "options": [
+   {
+    "ru": "Летать",
+    "en": "Fly"
+   },
+   {
+    "ru": "Поднимать машину",
+    "en": "Lift a car"
+   },
+   {
+    "ru": "Перепрыгивать дома",
+    "en": "Leap over buildings"
+   },
+   {
+    "ru": "Отражать пули",
+    "en": "Shrug off bullets"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он только прыгал, зато очень высоко. А на обложке первого номера он поднимает над головой машину. Летать он стал лишь около 1940 года.",
+   "en": "He could only leap, though very high. The first issue's cover shows him lifting a car over his head. He only began to fly around 1940."
+  },
+  "source": "https://en.wikipedia.org/wiki/Superman",
+  "basedOn": "heroes_034",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какого цвета был Халк в самом первом комиксе 1962 года?",
+   "en": "What colour was the Hulk in his very first comic in 1962?"
+  },
+  "options": [
+   {
+    "ru": "Серого",
+    "en": "Grey"
+   },
+   {
+    "ru": "Красного",
+    "en": "Red"
+   },
+   {
+    "ru": "Синего",
+    "en": "Blue"
+   },
+   {
+    "ru": "Фиолетового",
+    "en": "Purple"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Стэн Ли выбрал серый как пугающий цвет, но в типографии Халк выходил то светлым, то тёмным, а местами даже зелёным. Ли перекрасил его в зелёный.",
+   "en": "Stan Lee chose grey as a scary colour, but the printing came out in light and dark shades, even green in places. Lee made him green."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hulk",
+  "basedOn": "heroes_016",
+  "refine": "rewrite",
+  "id": "cur_heroes_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В фильме Танос стёр половину всего живого ради «баланса». А ради чего он сделал это в комиксе 1991 года?",
+   "en": "In the film Thanos wiped out half of all life for 'balance'. Why did he do it in the 1991 comic?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы понравиться Смерти",
+    "en": "To win over Death herself"
+   },
+   {
+    "ru": "Чтобы спасти свою планету",
+    "en": "To save his home planet"
+   },
+   {
+    "ru": "Чтобы отомстить отцу",
+    "en": "To get back at his father"
+   },
+   {
+    "ru": "По приказу хозяина",
+    "en": "On his master's orders"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В комиксах Танос влюблён в Смерть, которая предстаёт в облике женщины, и «Перчатка бесконечности» — его способ доказать ей свою любовь.",
+   "en": "In the comics Thanos is in love with Death, who appears as a woman, and The Infinity Gauntlet is his way of proving his love to her."
+  },
+  "source": "https://en.wikipedia.org/wiki/Thanos",
+  "basedOn": "heroes_010",
+  "refine": "rewrite",
+  "id": "cur_heroes_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Издатель Marvel не верил в подростка-паука. Почему в 1962 году он всё же пустил его в журнал?",
+   "en": "Marvel's publisher didn't believe in a teenage spider hero. Why did he let him into a magazine in 1962?"
+  },
+  "options": [
+   {
+    "ru": "Журнал всё равно закрывали",
+    "en": "The magazine was closing anyway"
+   },
+   {
+    "ru": "Конкуренты готовили такого же",
+    "en": "Rivals had a similar hero"
+   },
+   {
+    "ru": "Так просили читатели в письмах",
+    "en": "Readers asked for him in letters"
+   },
+   {
+    "ru": "Стэн Ли пригрозил уйти",
+    "en": "Stan Lee threatened to quit"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Amazing Fantasy №15 был последним номером, но продался так хорошо, что через семь месяцев у Человека-паука появилась своя серия.",
+   "en": "Amazing Fantasy #15 was the last issue, but it sold so well that seven months later Spider-Man got his own series."
+  },
+  "source": "https://en.wikipedia.org/wiki/Amazing_Fantasy_15",
+  "basedOn": "heroes_022",
+  "refine": "rewrite",
+  "id": "cur_heroes_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Улыбку Джокера в 1940 году срисовали с героя фильма по роману Виктора Гюго. Какого романа?",
+   "en": "In 1940 the Joker's grin was copied from a character in a film of a Victor Hugo novel. Which novel?"
+  },
+  "options": [
+   {
+    "ru": "«Человек, который смеётся»",
+    "en": "The Man Who Laughs"
+   },
+   {
+    "ru": "«Собор Парижской Богоматери»",
+    "en": "The Hunchback of Notre-Dame"
+   },
+   {
+    "ru": "«Отверженные»",
+    "en": "Les Misérables"
+   },
+   {
+    "ru": "«Труженики моря»",
+    "en": "Toilers of the Sea"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В фильме 1928 года Конрад Фейдт играл Гуинплена, которому в детстве изрезали лицо в вечную улыбку.",
+   "en": "In the 1928 film Conrad Veidt played Gwynplaine, whose face was cut as a child into a permanent grin."
+  },
+  "source": "https://en.wikipedia.org/wiki/Joker_(character)",
+  "basedOn": "heroes_025",
+  "refine": "rewrite",
+  "id": "cur_heroes_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Где впервые появилась Харли Квинн, подружка Джокера?",
+   "en": "Where did Harley Quinn, the Joker's sidekick, first appear?"
+  },
+  "options": [
+   {
+    "ru": "В мультсериале",
+    "en": "In a cartoon series"
+   },
+   {
+    "ru": "В комиксе 1940-х",
+    "en": "In a 1940s comic book"
+   },
+   {
+    "ru": "В фильме 1989 года",
+    "en": "In the 1989 film"
+   },
+   {
+    "ru": "В видеоигре",
+    "en": "In a video game"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её придумали в 1992 году для мультсериала о Бэтмене как эпизодическую помощницу Джокера, но она так понравилась, что попала в комиксы.",
+   "en": "She was created for Batman: The Animated Series in 1992 as a minor henchwoman and proved so popular that the comics took her in."
+  },
+  "source": "https://en.wikipedia.org/wiki/Harley_Quinn",
+  "basedOn": "heroes_018",
+  "refine": "rewrite",
+  "id": "cur_heroes_23"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Одному из первых газетных комиксов (1895) мы обязаны выражением, которое знают все. Каким?",
+   "en": "We owe a phrase everyone knows to one of the first newspaper comics (1895). Which phrase?"
+  },
+  "options": [
+   {
+    "ru": "Жёлтая пресса",
+    "en": "Yellow press"
+   },
+   {
+    "ru": "Газетная утка",
+    "en": "Newspaper canard"
+   },
+   {
+    "ru": "Мыльная опера",
+    "en": "Soap opera"
+   },
+   {
+    "ru": "Звёздный час",
+    "en": "Finest hour"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мальчика в жёлтой рубашке, «Жёлтого малыша», печатали сразу две враждующие газеты, Пулитцера и Херста, и их скандальную прессу прозвали «жёлтой».",
+   "en": "The boy in a yellow shirt, the Yellow Kid, ran in two rival papers at once, Pulitzer's and Hearst's, and their lurid journalism was called 'yellow'."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Yellow_Kid",
+  "basedOn": "heroes_030",
+  "refine": "rewrite",
+  "id": "cur_heroes_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Гоку из манги Dragon Ball списан с героя знаменитой книги. Какого?",
+   "en": "Goku from the manga Dragon Ball is based on the hero of a famous book. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Царь обезьян",
+    "en": "The Monkey King"
+   },
+   {
+    "ru": "Тарзан",
+    "en": "Tarzan"
+   },
+   {
+    "ru": "Маугли",
+    "en": "Mowgli"
+   },
+   {
+    "ru": "Синдбад-мореход",
+    "en": "Sinbad the Sailor"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Гоку» — японское прочтение имени Сунь Укуна из китайского романа «Путешествие на Запад». У обоих хвост, летающее облако и посох, который растёт.",
+   "en": "'Goku' is the Japanese reading of Sun Wukong from the Chinese novel Journey to the West. Both have a tail, a flying cloud and a growing staff."
+  },
+  "source": "https://en.wikipedia.org/wiki/Goku",
+  "basedOn": "heroes_023",
+  "refine": "rewrite",
+  "id": "cur_heroes_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Создателя Тинтина звали Жорж Реми. Откуда взялся его псевдоним Эрже?",
+   "en": "Tintin's creator was called Georges Remi. Where does his pen name Hergé come from?"
+  },
+  "options": [
+   {
+    "ru": "Его инициалы наоборот",
+    "en": "His initials reversed"
+   },
+   {
+    "ru": "Кличка его собаки",
+    "en": "His dog's name"
+   },
+   {
+    "ru": "Название его деревни",
+    "en": "His village's name"
+   },
+   {
+    "ru": "Его прозвище в скаутах",
+    "en": "His Boy Scout nickname"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Инициалы Ж. Р. наоборот — R.G., а по-французски это читается «эр-же». Так он подписывал рисунки с 1924 года.",
+   "en": "His initials G.R. reversed are R.G., which in French sounds like 'air-zhay'. He signed his work that way from 1924."
+  },
+  "source": "https://en.wikipedia.org/wiki/Herg%C3%A9",
+  "basedOn": "heroes_032",
+  "refine": "rewrite",
+  "id": "cur_heroes_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кого Капитан Америка бьёт кулаком на обложке своего первого номера, вышедшего в декабре 1940 года?",
+   "en": "Who does Captain America punch on the cover of his first issue, out in December 1940?"
+  },
+  "options": [
+   {
+    "ru": "Гитлера",
+    "en": "Hitler"
+   },
+   {
+    "ru": "Муссолини",
+    "en": "Mussolini"
+   },
+   {
+    "ru": "Аль Капоне",
+    "en": "Al Capone"
+   },
+   {
+    "ru": "Дракулу",
+    "en": "Dracula"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "США вступили в войну лишь через год. Авторам приходили письма с угрозами, у редакции дежурила полиция, а мэр Нью-Йорка позвонил их поддержать.",
+   "en": "The US entered the war a year later. The creators got threatening letters, police guarded the office, and New York's mayor called to back them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Captain_America_Comics",
+  "basedOn": "heroes_033",
+  "refine": "rewrite",
+  "id": "cur_heroes_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 2024 году первый комикс о Супермене продали за 6 млн долларов. Сколько долларов получили авторы за эту историю?",
+   "en": "In 2024 the first Superman comic sold for $6 million. How many dollars did its creators get for that story?"
+  },
+  "answer": 130,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 5,
+  "tolerance": 50,
+  "unit": {
+   "ru": "долл.",
+   "en": "$"
+  },
+  "fact": {
+   "ru": "130 долларов: по 10 за каждую из 13 страниц. А права на Супермена по договору 1938 года остались у издательства.",
+   "en": "$130: $10 for each of the 13 pages. And under their 1938 contract the rights to Superman stayed with the publisher."
+  },
+  "source": "https://en.wikipedia.org/wiki/Action_Comics_1",
+  "basedOn": "heroes_040",
+  "refine": "rewrite",
+  "id": "cur_heroes_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Почти 50 лет Чарльз Шульц один, без помощников, рисовал ежедневный комикс Peanuts. Сколько всего вышло выпусков?",
+   "en": "For almost 50 years Charles Schulz drew the daily Peanuts strip alone, with no assistants. How many strips appeared?"
+  },
+  "answer": 17900,
+  "range": [
+   0,
+   50000
+  ],
+  "step": 100,
+  "tolerance": 3000,
+  "unit": {
+   "ru": "выпусков",
+   "en": "strips"
+  },
+  "fact": {
+   "ru": "Ровно 17 897. Шульц умер 12 февраля 2000 года, в ночь перед выходом последнего выпуска.",
+   "en": "Exactly 17,897. Schulz died on 12 February 2000, the night before the last strip ran."
+  },
+  "source": "https://en.wikipedia.org/wiki/Peanuts",
+  "basedOn": "heroes_043",
+  "refine": "rewrite",
+  "id": "cur_heroes_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Стэн Ли хотел бросить комиксы, но жена уговорила его напоследок написать что хочется. Сколько ему было в 1961 году?",
+   "en": "Stan Lee wanted to quit comics, but his wife told him to write what he liked first. How old was he in 1961?"
+  },
+  "answer": 38,
+  "range": [
+   10,
+   90
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years old"
+  },
+  "fact": {
+   "ru": "38 лет. Так с Джеком Кирби появилась «Фантастическая четвёрка», а за ней пошли новые герои. Из комиксов он так и не ушёл.",
+   "en": "38. That is how the Fantastic Four was born with Jack Kirby, new heroes followed, and he never left comics."
+  },
+  "source": "https://en.wikipedia.org/wiki/Stan_Lee",
+  "basedOn": "heroes_045",
+  "refine": "rewrite",
+  "id": "cur_heroes_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Первый «Железный человек» (2008) идёт 126 минут. Сколько минут длится «Мстители: Финал» (2019)?",
+   "en": "The first Iron Man (2008) runs 126 minutes. How many minutes does Avengers: Endgame (2019) run?"
+  },
+  "answer": 181,
+  "range": [
+   60,
+   400
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "мин",
+   "en": "min"
+  },
+  "fact": {
+   "ru": "181 минута, три часа с лишним. Зрителей это не отпугнуло: за первый уик-энд фильм собрал в мире 1,2 млрд долларов — больше всех в истории.",
+   "en": "181 minutes, just over three hours. That scared no one: its opening weekend took $1.2 billion worldwide, the biggest ever."
+  },
+  "source": "https://en.wikipedia.org/wiki/Avengers:_Endgame",
+  "basedOn": "heroes_044",
+  "refine": "rewrite",
+  "id": "cur_heroes_20"
+ }
+]

@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Цезаря предупреждали: «Берегись мартовских ид». Какой это день?",
+   "en": "Caesar was warned: 'Beware the Ides of March.' Which day is that?"
+  },
+  "options": [
+   {
+    "ru": "15 марта",
+    "en": "15 March"
+   },
+   {
+    "ru": "1 марта",
+    "en": "1 March"
+   },
+   {
+    "ru": "8 марта",
+    "en": "8 March"
+   },
+   {
+    "ru": "31 марта",
+    "en": "31 March"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Иды — середина месяца. По дороге в сенат Цезарь пошутил прорицателю: «Иды наступили». Тот ответил: «Наступили, но не прошли».",
+   "en": "The Ides were mid-month. On his way to the Senate Caesar joked to the seer, 'The Ides have come.' 'Come, but not gone,' came the reply."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ides_of_March",
+  "basedOn": "ancient_008",
+  "refine": "rewrite",
+  "id": "cur_ancient_01"
+ },
+ {
+  "id": "cur_ancient_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Терракотовую армию китайского императора нашли в 1974 году. Кто её нашёл?",
+   "en": "China's Terracotta Army was found in 1974. Who found it?"
+  },
+  "options": [
+   {
+    "ru": "Крестьяне, рывшие колодец",
+    "en": "Farmers digging a well"
+   },
+   {
+    "ru": "Археологи по старой карте",
+    "en": "Archaeologists with an old map"
+   },
+   {
+    "ru": "Строители новой дороги",
+    "en": "Workers building a road"
+   },
+   {
+    "ru": "Дети, игравшие в прятки",
+    "en": "Children playing hide-and-seek"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Братья Ян искали воду в полутора км от кургана Цинь Шихуанди. Воинов там, по оценкам, около 8000, и лица у них разные.",
+   "en": "The Yang brothers were looking for water 1.5 km from Qin Shi Huang's mound. There are thought to be about 8,000 soldiers, with different faces."
+  },
+  "source": "https://en.wikipedia.org/wiki/Terracotta_Army",
+  "basedOn": "ancient_042",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_ancient_21",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Пирамиды Гизы строили не рабы, а рабочие на пайке. Что им выдавали каждый день вместе с хлебом?",
+   "en": "The Giza pyramids were built by workers on rations, not slaves. What did they get every day along with bread?"
+  },
+  "options": [
+   {
+    "ru": "Пиво",
+    "en": "Beer"
+   },
+   {
+    "ru": "Вино",
+    "en": "Wine"
+   },
+   {
+    "ru": "Мёд",
+    "en": "Honey"
+   },
+   {
+    "ru": "Козье молоко",
+    "en": "Goat's milk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По 4–5 литров в день: густое пиво было и едой, и питьём. Рядом с пирамидами нашли посёлок строителей с пекарнями и пивоварнями.",
+   "en": "Some 4 to 5 litres a day: thick beer was food as well as drink. Next to the pyramids lies the builders' town, with bakeries and breweries."
+  },
+  "source": "https://en.wikipedia.org/wiki/Beer_in_ancient_Egypt",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Спартак поднял в Италии великое восстание рабов. Откуда он был родом?",
+   "en": "Spartacus led the great slave revolt in Italy. Where did he come from?"
+  },
+  "options": [
+   {
+    "ru": "Из Фракии",
+    "en": "Thrace"
+   },
+   {
+    "ru": "Из Спарты",
+    "en": "Sparta"
+   },
+   {
+    "ru": "Из Галлии",
+    "en": "Gaul"
+   },
+   {
+    "ru": "Из Карфагена",
+    "en": "Carthage"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он фракиец, с земель нынешней Болгарии; к Спарте он отношения не имел. Начав с 70 беглых гладиаторов, он собрал около 70 тысяч.",
+   "en": "He was a Thracian, from today's Bulgaria, nothing to do with Sparta. Starting with about 70 runaway gladiators, he gathered some 70,000."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spartacus",
+  "basedOn": "ancient_005",
+  "refine": "rewrite",
+  "id": "cur_ancient_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Когда египтяне готовили мумию, что они делали с мозгом?",
+   "en": "When the Egyptians made a mummy, what did they do with the brain?"
+  },
+  "options": [
+   {
+    "ru": "Вынимали через нос",
+    "en": "Out through the nose"
+   },
+   {
+    "ru": "Клали в отдельный сосуд",
+    "en": "Put it in its own jar"
+   },
+   {
+    "ru": "Оставляли в голове",
+    "en": "Left it in the head"
+   },
+   {
+    "ru": "Бальзамировали мёдом",
+    "en": "Embalmed it in honey"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Египтяне считали, что думает сердце: его оставляли в теле, а мозг считали ненужным и выбрасывали.",
+   "en": "Egyptians thought the heart did the thinking, so it stayed in the body while the brain was thrown away."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mummy",
+  "basedOn": "ancient_018",
+  "refine": "rewrite",
+  "id": "cur_ancient_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Архимед в ванне понял, как проверить, из чистого ли золота корона. Что он, по преданию, сделал потом?",
+   "en": "In his bath Archimedes saw how to test if a crown was pure gold. What, so the story goes, did he do next?"
+  },
+  "options": [
+   {
+    "ru": "Побежал по городу голым",
+    "en": "Ran through town naked"
+   },
+   {
+    "ru": "Окунул в ванну корону",
+    "en": "Dunked the crown in the bath"
+   },
+   {
+    "ru": "Позвал к себе учеников",
+    "en": "Called in his students"
+   },
+   {
+    "ru": "Записал опыт на стене",
+    "en": "Wrote it on the wall"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "С криком «Эврика!» — «Нашёл!». Вода, которую вытесняет корона, выдаёт её объём, а значит, и подмешанное серебро.",
+   "en": "Shouting 'Eureka!', 'I've found it!'. The water a crown displaces gives its volume, and so any silver mixed into the gold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eureka_(word)",
+  "basedOn": "ancient_025",
+  "refine": "rewrite",
+  "id": "cur_ancient_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Клеопатра жила ближе по времени к чему?",
+   "en": "Cleopatra lived closer in time to which of these?"
+  },
+  "options": [
+   {
+    "ru": "К изобретению колеса",
+    "en": "The invention of the wheel"
+   },
+   {
+    "ru": "К постройке пирамиды Хеопса",
+    "en": "The building of the Great Pyramid"
+   },
+   {
+    "ru": "К высадке людей на Луну",
+    "en": "The Moon landing"
+   },
+   {
+    "ru": "К изобретению письменности",
+    "en": "The invention of writing"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Когда родилась Клеопатра, пирамиде было уже около 2500 лет, а до полёта на Луну оставалось около 2000.",
+   "en": "When Cleopatra was born the pyramid was about 2,500 years old; the Moon landing was about 2,000 years away."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cleopatra",
+  "basedOn": "ancient_016",
+  "refine": "same",
+  "id": "cur_ancient_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Для чего римляне собирали мочу из общественных уборных?",
+   "en": "What did the Romans collect urine from public toilets for?"
+  },
+  "options": [
+   {
+    "ru": "Для строительного раствора",
+    "en": "Building mortar"
+   },
+   {
+    "ru": "Для краски стен",
+    "en": "Painting walls"
+   },
+   {
+    "ru": "Для стирки одежды",
+    "en": "Washing clothes"
+   },
+   {
+    "ru": "Для заправки ламп",
+    "en": "Fuelling lamps"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Аммиак в моче отбеливал шерсть; Веспасиан обложил её налогом, отсюда и пошло «Деньги не пахнут».",
+   "en": "Its ammonia brightened wool; Vespasian taxed it, and that gave us the saying: money does not smell."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pecunia_non_olet",
+  "basedOn": "ancient_019",
+  "refine": "same",
+  "id": "cur_ancient_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что сделал Ксеркс, когда буря разрушила его мост через Геллеспонт?",
+   "en": "What did Xerxes do when a storm wrecked his bridge over the Hellespont?"
+  },
+  "options": [
+   {
+    "ru": "Велел высечь море плетьми",
+    "en": "Had the sea whipped"
+   },
+   {
+    "ru": "Принёс в жертву белого коня",
+    "en": "Sacrificed a white horse"
+   },
+   {
+    "ru": "Отменил поход",
+    "en": "Called off the war"
+   },
+   {
+    "ru": "Переименовал пролив",
+    "en": "Renamed the strait"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По Геродоту, воду наказали тремястами ударами и бросили в неё кандалы, а мост построили заново.",
+   "en": "Herodotus says the water got 300 lashes and a pair of shackles thrown in, and the bridge was built again."
+  },
+  "source": "https://en.wikipedia.org/wiki/Xerxes%27_Pontoon_Bridges",
+  "basedOn": "ancient_034",
+  "refine": "rewrite",
+  "id": "cur_ancient_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что, по Геродоту, делали египтяне, когда в доме умирала кошка?",
+   "en": "What did Egyptians do, says Herodotus, when the family cat died?"
+  },
+  "options": [
+   {
+    "ru": "Отпускали птицу на волю",
+    "en": "Set a bird free"
+   },
+   {
+    "ru": "Красили дом в чёрный",
+    "en": "Painted the house black"
+   },
+   {
+    "ru": "Сбривали себе брови",
+    "en": "Shaved off their eyebrows"
+   },
+   {
+    "ru": "Сажали дерево",
+    "en": "Planted a tree"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Если умирала собака, брили голову и всё тело. А при пожаре, пишет Геродот, египтяне следили за кошками, а не тушили огонь.",
+   "en": "If a dog died, they shaved head and body. And in a fire, Herodotus says, Egyptians watched over the cats rather than fight the flames."
+  },
+  "source": "https://lexundria.com/hdt/2.66/mcly",
+  "basedOn": "ancient_031",
+  "refine": "rewrite",
+  "id": "cur_ancient_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем был вомиторий у римлян?",
+   "en": "What was a vomitorium in ancient Rome?"
+  },
+  "options": [
+   {
+    "ru": "Проходом для выхода зрителей",
+    "en": "An exit for the crowd"
+   },
+   {
+    "ru": "Комнатой, где тошнило на пирах",
+    "en": "A room to be sick at feasts"
+   },
+   {
+    "ru": "Тюрьмой для должников",
+    "en": "A debtors' prison"
+   },
+   {
+    "ru": "Кухней при храме",
+    "en": "A temple kitchen"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Через такие проходы амфитеатр «извергал» толпу на улицу, а комната для рвоты на пирах — выдумка нового времени.",
+   "en": "These passages let a theatre spew its crowd out; the room for vomiting at feasts is a modern myth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vomitorium",
+  "basedOn": "ancient_037",
+  "refine": "same",
+  "id": "cur_ancient_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Спартанских мальчиков нарочно недокармливали. Если такой мальчик крал еду, за что его секли?",
+   "en": "Spartan boys were kept hungry on purpose. If one stole food, what was he flogged for?"
+  },
+  "options": [
+   {
+    "ru": "За то, что попался",
+    "en": "For getting caught"
+   },
+   {
+    "ru": "За саму кражу",
+    "en": "For the theft itself"
+   },
+   {
+    "ru": "За кражу у соседей",
+    "en": "For robbing neighbours"
+   },
+   {
+    "ru": "За то, что съел один",
+    "en": "For eating it alone"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так их учили добывать еду самим. Пойманного, пишет Ксенофонт, били: значит, воровал неумело. В эту школу брали с 7 лет.",
+   "en": "It taught them to fend for themselves. A boy who was caught, Xenophon says, was beaten for stealing badly. School began at seven."
+  },
+  "source": "https://en.wikipedia.org/wiki/Agoge",
+  "basedOn": "ancient_023",
+  "refine": "rewrite",
+  "id": "cur_ancient_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Говорят, нос Большому сфинксу отбили из пушки солдаты Наполеона. Почему это, скорее всего, неправда?",
+   "en": "They say Napoleon's soldiers shot the Great Sphinx's nose off. Why is that most likely untrue?"
+  },
+  "options": [
+   {
+    "ru": "Нос пропал задолго до него",
+    "en": "It was gone long before him"
+   },
+   {
+    "ru": "Наполеон не был в Египте",
+    "en": "Napoleon never got to Egypt"
+   },
+   {
+    "ru": "Носа не было с самого начала",
+    "en": "It never had a nose"
+   },
+   {
+    "ru": "Нос осыпался от ветра",
+    "en": "Wind wore the nose away"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Наполеон пришёл в 1798 году, а сфинкс без носа уже на рисунке Нордена 1737 года. На лице следы долот: нос отбили вручную.",
+   "en": "Napoleon came in 1798, but Norden's 1737 drawing already shows no nose. Chisel marks on the face show it was hacked off by hand."
+  },
+  "source": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza",
+  "basedOn": "ancient_014",
+  "refine": "rewrite",
+  "id": "cur_ancient_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему в часе 60 минут? Это наследство...",
+   "en": "Why does an hour have 60 minutes? We inherited it from..."
+  },
+  "options": [
+   {
+    "ru": "Римлян",
+    "en": "The ancient Romans"
+   },
+   {
+    "ru": "Китайцев",
+    "en": "The Chinese"
+   },
+   {
+    "ru": "Майя",
+    "en": "The Maya"
+   },
+   {
+    "ru": "Вавилонян",
+    "en": "The Babylonians"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В Месопотамии считали шестидесятками: 60 делится на 2, 3, 4, 5, 6, 10, 12, и так удобно делить урожай и время.",
+   "en": "Mesopotamia counted in sixties: 60 splits by 2, 3, 4, 5, 6, 10 and 12, handy for sharing out time and grain."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sexagesimal",
+  "basedOn": "ancient_030",
+  "refine": "rewrite",
+  "id": "cur_ancient_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По слухам, император Калигула собирался сделать консулом Инцитата. Кем был Инцитат?",
+   "en": "Rumour has it Emperor Caligula planned to make Incitatus a consul. Who was Incitatus?"
+  },
+  "options": [
+   {
+    "ru": "Его любимым конём",
+    "en": "His favourite horse"
+   },
+   {
+    "ru": "Его поваром-греком",
+    "en": "His Greek cook"
+   },
+   {
+    "ru": "Пленным вождём галлов",
+    "en": "A captured Gallic chief"
+   },
+   {
+    "ru": "Знаменитым гладиатором",
+    "en": "A famous gladiator"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У коня были мраморное стойло, ясли из слоновой кости и пурпурные попоны. Скорее всего, так Калигула издевался над сенатом.",
+   "en": "The horse had a marble stall, an ivory manger and purple blankets. Most likely Caligula was mocking the Senate."
+  },
+  "source": "https://en.wikipedia.org/wiki/Incitatus",
+  "basedOn": "ancient_026",
+  "refine": "rewrite",
+  "id": "cur_ancient_26"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Александрийская библиотека пополняла собрание?",
+   "en": "How did the Library of Alexandria grow its collection?"
+  },
+  "options": [
+   {
+    "ru": "Забирала с кораблей в порту",
+    "en": "Took them off ships in port"
+   },
+   {
+    "ru": "Выигрывала в кости у купцов",
+    "en": "Won them from merchants at dice"
+   },
+   {
+    "ru": "Получала в дар от Рима",
+    "en": "Got them as gifts from Rome"
+   },
+   {
+    "ru": "Писала все книги сама",
+    "en": "Wrote all the books itself"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Книги, найденные на кораблях в порту, забирали и переписывали; оригиналы оставляли себе, а владельцам отдавали копии.",
+   "en": "Books found on ships in port were taken and copied; the library kept the originals and the owners got the copies."
+  },
+  "source": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
+  "basedOn": "ancient_024",
+  "refine": "rewrite",
+  "id": "cur_ancient_16"
+ },
+ {
+  "id": "cur_ancient_24",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В заговоре против Цезаря было около 60 сенаторов. Сколько ран от кинжалов нашли на его теле?",
+   "en": "About 60 senators were in the plot against Caesar. How many stab wounds were found on his body?"
+  },
+  "answer": 23,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "ран",
+   "en": "wounds"
+  },
+  "fact": {
+   "ru": "23 раны. Но вскрытие, первое известное в истории, показало: смертельной была лишь одна, второй удар, в грудь.",
+   "en": "23 wounds. Yet the autopsy, the first on record, found only one was fatal: the second blow, to the chest."
+  },
+  "source": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Стадион «Уэмбли» в Лондоне вмещает 90 000 зрителей. Сколько, по оценкам, вмещал римский Колизей?",
+   "en": "London's Wembley Stadium holds 90,000. How many spectators is the Roman Colosseum thought to have held?"
+  },
+  "answer": 65000,
+  "range": [
+   0,
+   200000
+  ],
+  "step": 1000,
+  "tolerance": 15000,
+  "unit": {
+   "ru": "зрителей",
+   "en": "spectators"
+  },
+  "fact": {
+   "ru": "От 50 до 80 тысяч, в среднем около 65 000. От солнца их закрывал огромный выдвижной тент, веларий.",
+   "en": "Estimates run from 50,000 to 80,000, some 65,000 on average. A huge retractable awning, the velarium, kept off the sun."
+  },
+  "source": "https://en.wikipedia.org/wiki/Colosseum",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ancient_25"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Стандартный слиток золота весит 12,4 кг. А сколько кг весит золотая маска Тутанхамона?",
+   "en": "A standard gold bar weighs 12.4 kg. How many kg does Tutankhamun's gold mask weigh?"
+  },
+  "answer": 10,
+  "range": [
+   0,
+   60
+  ],
+  "step": 0.5,
+  "tolerance": 3.5,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "10,23 кг: два слоя золота, а высота маски всего 54 см. В 2014 году ей отломали бороду и криво приклеили эпоксидным клеем.",
+   "en": "10.23 kg: two layers of gold in a mask just 54 cm tall. In 2014 its beard came off and was glued back crooked with epoxy."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mask_of_Tutankhamun",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ancient_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В фильме «300» Леонид держит Фермопилы с тремястами спартанцами. Сколько всего там было греков, по оценкам историков?",
+   "en": "In '300' Leonidas holds Thermopylae with 300 Spartans. By historians' estimates, how many Greeks were there in all?"
+  },
+  "answer": 7000,
+  "range": [
+   0,
+   20000
+  ],
+  "step": 100,
+  "tolerance": 2000,
+  "unit": {
+   "ru": "человек",
+   "en": "men"
+  },
+  "fact": {
+   "ru": "По оценкам, около 7000: Геродот насчитал 5200 без локров. Спартанцев правда было 300, и они остались прикрывать отход.",
+   "en": "About 7,000 by modern estimates; Herodotus counted 5,200 without the Locrians. There were indeed 300 Spartans, who stayed to cover the retreat."
+  },
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Thermopylae",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ancient_20"
+ }
+]

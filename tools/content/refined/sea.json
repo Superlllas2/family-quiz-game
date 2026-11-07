@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кит всплыл и пустил «фонтан». Что это на самом деле?",
+   "en": "A whale surfaces and blows a 'fountain'. What is it really?"
+  },
+  "options": [
+   {
+    "ru": "Его выдох",
+    "en": "Its breath out"
+   },
+   {
+    "ru": "Вода изо рта",
+    "en": "Water from its mouth"
+   },
+   {
+    "ru": "Вода из желудка",
+    "en": "Water from its stomach"
+   },
+   {
+    "ru": "Струя из жабр",
+    "en": "A jet from its gills"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кит с силой выдыхает через дыхало на макушке, и влага в тёплом выдохе тут же сгущается в облачко. Брызги дают лишь вода, стоявшая над дыхалом.",
+   "en": "The whale breathes out hard through the blowhole on top of its head, and the moisture in that warm breath condenses into a cloud. Only the splash is sea water."
+  },
+  "source": "https://en.wikipedia.org/wiki/Blowhole_(anatomy)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_sea_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько сердец у осьминога?",
+   "en": "How many hearts does an octopus have?"
+  },
+  "options": [
+   {
+    "ru": "Одно",
+    "en": "One"
+   },
+   {
+    "ru": "Два",
+    "en": "Two"
+   },
+   {
+    "ru": "Три",
+    "en": "Three"
+   },
+   {
+    "ru": "Восемь, по одному на щупальце",
+    "en": "Eight, one per arm"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Два качают кровь через жабры, третье — по всему телу. Пока осьминог плывёт, это третье сердце стоит, поэтому он больше любит ползать.",
+   "en": "Two pump blood through the gills, the third round the body. That third heart stops while the octopus swims, so it would rather crawl."
+  },
+  "source": "https://en.wikipedia.org/wiki/Octopus",
+  "basedOn": "sea_001",
+  "refine": "rewrite",
+  "id": "cur_sea_02"
+ },
+ {
+  "id": "cur_sea_03",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто самое крупное из известных нам животных, когда-либо живших на Земле?",
+   "en": "What is the largest animal known to have ever lived on Earth?"
+  },
+  "options": [
+   {
+    "ru": "Самый большой динозавр",
+    "en": "The biggest dinosaur"
+   },
+   {
+    "ru": "Синий кит",
+    "en": "The blue whale"
+   },
+   {
+    "ru": "Мегалодон",
+    "en": "Megalodon"
+   },
+   {
+    "ru": "Гигантский кальмар",
+    "en": "The giant squid"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Рекордсмен весил около 190 тонн, как три десятка слонов. Ископаемого кита перуцета в 2023 году сочли было тяжелее, но позже эту оценку оспорили.",
+   "en": "The record holder weighed about 190 t, like thirty elephants. In 2023 the fossil whale Perucetus was thought heavier, but that estimate was later disputed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Blue_whale",
+  "basedOn": "sea_006",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Морская звезда обхватила лучами моллюска и чуть-чуть раздвинула его створки. Как она его съест?",
+   "en": "A starfish grips a clam with its arms and opens the shell just a crack. How will it eat it?"
+  },
+  "options": [
+   {
+    "ru": "Выворачивает свой желудок",
+    "en": "Pushes its stomach out"
+   },
+   {
+    "ru": "Разгрызает раковину зубами",
+    "en": "Cracks the shell with its teeth"
+   },
+   {
+    "ru": "Высасывает через хоботок",
+    "en": "Sucks it out through a tube"
+   },
+   {
+    "ru": "Разбивает её о камень",
+    "en": "Smashes it on a rock"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она просовывает вывёрнутый наружу желудок в щель и переваривает моллюска прямо в его раковине. Хватает щели в доли миллиметра.",
+   "en": "It slips its stomach, turned inside out, into the gap and digests the clam inside its own shell. A gap a fraction of a millimetre wide is enough."
+  },
+  "source": "https://en.wikipedia.org/wiki/Starfish",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_sea_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто спит на воде, держась за лапы, чтобы течение не разнесло их?",
+   "en": "Who sleeps on the water holding paws so the current won't drift them apart?"
+  },
+  "options": [
+   {
+    "ru": "Бобры",
+    "en": "Beavers"
+   },
+   {
+    "ru": "Пингвины",
+    "en": "Penguins"
+   },
+   {
+    "ru": "Каланы",
+    "en": "Sea otters"
+   },
+   {
+    "ru": "Тюлени",
+    "en": "Seals"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Ещё каланы заворачиваются в водоросли как в одеяло, а раковины разбивают камнем у себя на животе.",
+   "en": "Sea otters also wrap themselves in kelp like a blanket, and crack shells on a stone resting on their belly."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sea_otter",
+  "basedOn": "sea_017",
+  "refine": "rewrite",
+  "id": "cur_sea_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как спят дельфины?",
+   "en": "How do dolphins sleep?"
+  },
+  "options": [
+   {
+    "ru": "Одной половиной мозга",
+    "en": "One half of the brain at a time"
+   },
+   {
+    "ru": "Совсем не спят",
+    "en": "They never sleep"
+   },
+   {
+    "ru": "Лёжа на дне, затаив дыхание",
+    "en": "On the seabed, holding their breath"
+   },
+   {
+    "ru": "Выбравшись на берег",
+    "en": "Up on the beach"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Дельфин дышит сознательно, поэтому одно полушарие всегда бодрствует и следит за дыханием.",
+   "en": "Dolphins breathe on purpose, so one half of the brain always stays awake to keep them breathing."
+  },
+  "source": "https://en.wikipedia.org/wiki/Unihemispheric_slow-wave_sleep",
+  "basedOn": "sea_038",
+  "refine": "rewrite",
+  "id": "cur_sea_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто в 2012 году в одиночку опустился на дно Марианской впадины?",
+   "en": "Who went down alone to the bottom of the Mariana Trench in 2012?"
+  },
+  "options": [
+   {
+    "ru": "Жак-Ив Кусто",
+    "en": "Jacques Cousteau"
+   },
+   {
+    "ru": "Джеймс Кэмерон",
+    "en": "James Cameron"
+   },
+   {
+    "ru": "Ричард Брэнсон",
+    "en": "Richard Branson"
+   },
+   {
+    "ru": "Илон Маск",
+    "en": "Elon Musk"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Это первое одиночное погружение туда и всего второе с людьми: первым был батискаф «Триест» в 1960 году.",
+   "en": "It was the first solo dive there and only the second crewed one: the first was the bathyscaphe Trieste in 1960."
+  },
+  "source": "https://en.wikipedia.org/wiki/Deepsea_Challenger",
+  "basedOn": "sea_031",
+  "refine": "same",
+  "id": "cur_sea_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что происходит с глазами камбалы, пока она растёт?",
+   "en": "What happens to a flounder's eyes as it grows up?"
+  },
+  "options": [
+   {
+    "ru": "Один переходит на другой бок",
+    "en": "One moves to the other side"
+   },
+   {
+    "ru": "Один навсегда зарастает кожей",
+    "en": "One gets covered over with skin"
+   },
+   {
+    "ru": "Между ними вырастает третий",
+    "en": "A third grows between them"
+   },
+   {
+    "ru": "Оба срастаются в один большой",
+    "en": "Both merge into one big eye"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Малёк плавает как обычная рыба, а потом ложится на бок, и нижний глаз перебирается наверх.",
+   "en": "The young fish swims like any other, then lies on its side, and the lower eye migrates to the top."
+  },
+  "source": "https://en.wikipedia.org/wiki/Flatfish",
+  "basedOn": "sea_035",
+  "refine": "rewrite",
+  "id": "cur_sea_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Медузу турритопсис называют «бессмертной». Что она делает, когда стареет или ранена?",
+   "en": "The Turritopsis jellyfish is called 'immortal'. What does it do when it is old or injured?"
+  },
+  "options": [
+   {
+    "ru": "Снова становится юной",
+    "en": "Turns young again"
+   },
+   {
+    "ru": "Делится на две новые",
+    "en": "Splits into two new ones"
+   },
+   {
+    "ru": "Засыпает на сотни лет",
+    "en": "Sleeps for centuries"
+   },
+   {
+    "ru": "Уплывает умирать в глубину",
+    "en": "Swims to the deep to die"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она превращается обратно в полип, с которого началась, и живёт заново. Но в природе большинство таких медуз раньше съедают.",
+   "en": "It turns back into the polyp it began as and starts its life again. In the wild, though, most get eaten before they can."
+  },
+  "source": "https://en.wikipedia.org/wiki/Turritopsis_dohrnii",
+  "basedOn": "sea_019",
+  "refine": "rewrite",
+  "id": "cur_sea_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что происходит с самцом у многих глубоководных удильщиков?",
+   "en": "What happens to the male of many deep sea anglerfish?"
+  },
+  "options": [
+   {
+    "ru": "Прирастает к самке",
+    "en": "He fuses to the female"
+   },
+   {
+    "ru": "Его съедает самка",
+    "en": "The female eats him"
+   },
+   {
+    "ru": "Сам становится самкой",
+    "en": "He turns into a female"
+   },
+   {
+    "ru": "Светится до самой смерти",
+    "en": "He glows until he dies"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Найти пару во тьме так трудно, что крошечный самец впивается в самку и срастается с ней навсегда.",
+   "en": "Finding a mate in the dark is so hard that the tiny male bites onto the female and fuses with her body for good."
+  },
+  "source": "https://en.wikipedia.org/wiki/Anglerfish",
+  "basedOn": "sea_025",
+  "refine": "rewrite",
+  "id": "cur_sea_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько проплыл шведский флагман «Ваза» в первом рейсе 1628 года?",
+   "en": "How far did the Swedish warship Vasa sail on her maiden voyage in 1628?"
+  },
+  "options": [
+   {
+    "ru": "Около 1,3 км",
+    "en": "About 1.3 km"
+   },
+   {
+    "ru": "Около 20 км",
+    "en": "About 20 km"
+   },
+   {
+    "ru": "До Финляндии",
+    "en": "To Finland"
+   },
+   {
+    "ru": "До Польши",
+    "en": "To Poland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слишком высокий и валкий корабль лёг на борт от порыва ветра прямо в гавани Стокгольма; подняли его через 333 года почти целым.",
+   "en": "Too tall and top heavy, she heeled over in a gust inside Stockholm harbour; she was raised 333 years later almost intact."
+  },
+  "source": "https://en.wikipedia.org/wiki/Vasa_(ship)",
+  "basedOn": "sea_030",
+  "refine": "same",
+  "id": "cur_sea_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто такая косатка?",
+   "en": "What is an orca?"
+  },
+  "options": [
+   {
+    "ru": "Крупнейший дельфин",
+    "en": "The largest dolphin"
+   },
+   {
+    "ru": "Особый вид акулы",
+    "en": "A kind of shark"
+   },
+   {
+    "ru": "Родственница тюленей",
+    "en": "A relative of seals"
+   },
+   {
+    "ru": "Небольшой усатый кит",
+    "en": "A small baleen whale"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Косатки живут семьями, и у каждой семьи свой набор звуков, как диалект.",
+   "en": "Orcas live in family pods, and each pod has its own set of calls, like a dialect."
+  },
+  "source": "https://en.wikipedia.org/wiki/Orca",
+  "basedOn": "sea_033",
+  "refine": "rewrite",
+  "id": "cur_sea_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему вода в море кажется синей?",
+   "en": "Why does sea water look blue?"
+  },
+  "options": [
+   {
+    "ru": "Вода гасит красный свет",
+    "en": "Water absorbs red light"
+   },
+   {
+    "ru": "В воде отражается небо",
+    "en": "It reflects the sky"
+   },
+   {
+    "ru": "Её окрашивает морская соль",
+    "en": "Sea salt tints it"
+   },
+   {
+    "ru": "В ней много синих водорослей",
+    "en": "It is full of blue algae"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Вода поглощает красные и жёлтые лучи, а сине-голубые отражает обратно. Небо добавляет оттенок, но считать, что всё дело в нём, — заблуждение.",
+   "en": "Water absorbs red and yellow light and scatters the blue back. The sky adds a tint, but thinking it is the whole story is a myth."
+  },
+  "source": "https://en.wikipedia.org/wiki/Color_of_water",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_sea_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "От чего зависит, кто вылупится из яйца морской черепахи: самец или самка?",
+   "en": "What decides whether a sea turtle egg hatches as a male or a female?"
+  },
+  "options": [
+   {
+    "ru": "От тепла песка",
+    "en": "The warmth of the sand"
+   },
+   {
+    "ru": "От размера яйца",
+    "en": "The size of the egg"
+   },
+   {
+    "ru": "От фазы Луны в ночь кладки",
+    "en": "The Moon's phase that night"
+   },
+   {
+    "ru": "От солёности воды",
+    "en": "How salty the water is"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В тёплом песке вылупляются самки, в прохладном — самцы. Учёные боятся, что из-за потепления самцов станет слишком мало.",
+   "en": "Warm sand gives females, cooler sand males. Scientists worry that a warming climate will leave too few males."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sea_turtle",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_sea_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто ближайший из ныне живущих родственников китов и дельфинов?",
+   "en": "Which living animal is the closest relative of whales and dolphins?"
+  },
+  "options": [
+   {
+    "ru": "Бегемот",
+    "en": "The hippo"
+   },
+   {
+    "ru": "Тюлень",
+    "en": "The seal"
+   },
+   {
+    "ru": "Морж",
+    "en": "The walrus"
+   },
+   {
+    "ru": "Ламантин",
+    "en": "The manatee"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Их общий предок жил около 55 млн лет назад. А тюлени и моржи ближе к куницам и енотам, ламантины — к слонам.",
+   "en": "Their common ancestor lived about 55 million years ago. Seals and walruses are closer to weasels and raccoons, manatees to elephants."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hippopotamus",
+  "basedOn": "sea_049",
+  "refine": "rewrite",
+  "id": "cur_sea_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "У кого самые большие глаза среди ныне живущих животных?",
+   "en": "Which living animal has the biggest eyes?"
+  },
+  "options": [
+   {
+    "ru": "У синего кита",
+    "en": "The blue whale"
+   },
+   {
+    "ru": "У кальмара",
+    "en": "A squid"
+   },
+   {
+    "ru": "У рыбы-меч",
+    "en": "The swordfish"
+   },
+   {
+    "ru": "У кашалота",
+    "en": "The sperm whale"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Глаз колоссального кальмара — около 30 см, с тарелку: видимо, чтобы издалека замечать в темноте охотящегося кашалота.",
+   "en": "A colossal squid's eye is about 30 cm across, like a dinner plate, probably to spot a hunting sperm whale far off in the dark."
+  },
+  "source": "https://en.wikipedia.org/wiki/Colossal_squid",
+  "basedOn": "sea_024",
+  "refine": "rewrite",
+  "id": "cur_sea_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько граммов соли растворено в литре обычной морской воды?",
+   "en": "How many grams of salt are dissolved in a litre of ordinary seawater?"
+  },
+  "answer": 35,
+  "range": [
+   0,
+   200
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "г",
+   "en": "g"
+  },
+  "fact": {
+   "ru": "Соль вымывают из горных пород дожди и реки; если рассыпать всю соль океана по суше, слой вышел бы выше 150 метров.",
+   "en": "Rain and rivers wash it out of rocks on land; spread all the ocean's salt over the land and it would be over 150 m deep."
+  },
+  "source": "https://www.usgs.gov/faqs/why-ocean-salty",
+  "basedOn": "sea_043",
+  "refine": "same",
+  "id": "cur_sea_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Обломки «Титаника» искали 73 года: так глубоко они лежат. На какой глубине?",
+   "en": "It took 73 years to find the Titanic's wreck, it lies so deep. At what depth?"
+  },
+  "answer": 3800,
+  "range": [
+   0,
+   10000
+  ],
+  "step": 100,
+  "tolerance": 700,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Около 3,8 км. Нашли его в 1985 году. Корабль раскололся надвое, и нос с кормой лежат на дне в 600 м друг от друга.",
+   "en": "About 3.8 km. It was found in 1985. The ship broke in two, and the bow and stern lie 600 m apart on the seabed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wreck_of_the_Titanic",
+  "basedOn": "sea_042",
+  "refine": "rewrite",
+  "id": "cur_sea_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Гренландская акула растёт меньше чем на 1 см в год. Сколько лет было самой старой из изученных, по оценке учёных?",
+   "en": "A Greenland shark grows less than 1 cm a year. How old was the oldest one studied, by scientists' estimate?"
+  },
+  "answer": 390,
+  "range": [
+   0,
+   1500
+  ],
+  "step": 10,
+  "tolerance": 120,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Около 390 лет, плюс-минус 120: возраст прочли по хрусталику глаза. Взрослеет эта акула только к 150 годам.",
+   "en": "About 390 years, give or take 120: the age was read from the lens of its eye. This shark only matures at about 150."
+  },
+  "source": "https://en.wikipedia.org/wiki/Greenland_shark",
+  "basedOn": "sea_039",
+  "refine": "rewrite",
+  "id": "cur_sea_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Цунами 2011 года в Японии поднималось до 40 м. А на какую высоту взлетела волна в заливе Литуя на Аляске в 1958-м?",
+   "en": "The 2011 tsunami in Japan reached up to 40 m. How high did the wave in Alaska's Lituya Bay climb in 1958?"
+  },
+  "answer": 524,
+  "range": [
+   0,
+   1500
+  ],
+  "step": 1,
+  "tolerance": 100,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "524 м по склону горы: в узкий залив рухнул огромный обвал. Рыбак с семилетним сыном на лодке пережили волну почти без царапин.",
+   "en": "524 m up the mountainside, after a huge rockfall crashed into the narrow bay. A fisherman and his seven-year-old son rode it out in their boat almost unhurt."
+  },
+  "source": "https://en.wikipedia.org/wiki/1958_Lituya_Bay_earthquake_and_megatsunami",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_sea_20"
+ }
+]

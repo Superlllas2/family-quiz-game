@@ -129,12 +129,16 @@ namespace FamilyQuiz.Tests
             double answer = Answer(f);
             double tol = Tolerance(f);
             var range = f.State.Question.Def.Range;
-            // Everyone is beyond the tolerance; P2 is the least far off.
-            double far = System.Math.Max(range[0], answer - tol * 1.5);
-            double farther = System.Math.Max(range[0], answer - tol * 1.8);
+            // Everyone is beyond the tolerance; P2 is the least far off. Guess on the side of the answer with more room, so
+            // any closest value question the bank deals can be tested.
+            int side = answer - range[0] >= range[1] - answer ? -1 : 1;
+            double edge = side < 0 ? range[0] : range[1];
+            double Clamp(double v) => System.Math.Min(range[1], System.Math.Max(range[0], v));
+            double far = Clamp(answer + side * tol * 1.5);
+            double farther = Clamp(answer + side * tol * 1.8);
             f.Value("c1", farther, 1000);
             f.Value("c2", far, 1000);
-            f.Value("c3", range[0], 1000);
+            f.Value("c3", edge, 1000);
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Reveal));
             if (far == farther) Assert.Inconclusive("range too narrow for this question");
             Assert.That(seats[1].Turn.Points, Is.EqualTo(Bonus(f)));

@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какого цвета волшебные туфельки Дороти в фильме «Волшебник страны Оз» (1939)?",
+   "en": "What colour are Dorothy's magic slippers in The Wizard of Oz (1939)?"
+  },
+  "options": [
+   {
+    "ru": "Красные",
+    "en": "Red"
+   },
+   {
+    "ru": "Серебряные",
+    "en": "Silver"
+   },
+   {
+    "ru": "Золотые",
+    "en": "Gold"
+   },
+   {
+    "ru": "Изумрудные",
+    "en": "Emerald green"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В книге Баума туфельки серебряные: в кино их сделали красными, чтобы похвастаться цветным «Техниколором».",
+   "en": "In Baum's book they are silver: the film made them red to show off Technicolor colour."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ruby_slippers",
+  "basedOn": "films_old_001",
+  "refine": "rewrite",
+  "id": "cur_films_old_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кевин в «Одном дома» пугает гостей гангстерским фильмом «Ангелы с грязными душами». Что это за фильм?",
+   "en": "In Home Alone, Kevin scares visitors with the gangster film Angels with Filthy Souls. What film is it?"
+  },
+  "options": [
+   {
+    "ru": "Его сняли для «Одного дома»",
+    "en": "Made for Home Alone"
+   },
+   {
+    "ru": "Гангстерская лента 1938 года",
+    "en": "A 1938 gangster film"
+   },
+   {
+    "ru": "Ранний фильм Мартина Скорсезе",
+    "en": "An early Scorsese film"
+   },
+   {
+    "ru": "Телесериал 1950-х",
+    "en": "A 1950s TV series"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его сняли за один день до начала съёмок, на чёрно-белую плёнку, а название пародирует настоящий фильм 1938 года «Ангелы с грязными лицами».",
+   "en": "It was shot in one day before filming began, in black and white; the title spoofs a real 1938 film, Angels with Dirty Faces."
+  },
+  "source": "https://en.wikipedia.org/wiki/Home_Alone",
+  "basedOn": "films_old_008",
+  "refine": "rewrite",
+  "id": "cur_films_old_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В «Инопланетянине» (1982) Эллиот приманивает пришельца конфетами Reese's Pieces. Почему не M&M's?",
+   "en": "In E.T. (1982), Elliott lures the alien with Reese's Pieces. Why not M&M's?"
+  },
+  "options": [
+   {
+    "ru": "Испугалась компания Mars",
+    "en": "Mars got cold feet"
+   },
+   {
+    "ru": "M&M's таяли под софитами",
+    "en": "M&M's melted under the lights"
+   },
+   {
+    "ru": "Спилберг не любил M&M's",
+    "en": "Spielberg disliked M&M's"
+   },
+   {
+    "ru": "Не разрешила цензура",
+    "en": "The censors said no"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Mars решила, что пришелец напугает детей. Конфеты дала компания Hershey, и после фильма Reese's Pieces стали раскупать.",
+   "en": "Mars thought the alien would frighten children. Hershey supplied its candy instead, and Reese's Pieces sales took off."
+  },
+  "source": "https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_films_old_21"
+ },
+ {
+  "id": "cur_films_old_04",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Машина времени в «Назад в будущее» — «Делориан». А чем она была в ранних вариантах сценария?",
+   "en": "The time machine in Back to the Future is a DeLorean. What was it in early drafts of the script?"
+  },
+  "options": [
+   {
+    "ru": "Холодильником",
+    "en": "A refrigerator"
+   },
+   {
+    "ru": "Телефонной будкой",
+    "en": "A phone booth"
+   },
+   {
+    "ru": "Поездом",
+    "en": "A train"
+   },
+   {
+    "ru": "Платяным шкафом",
+    "en": "A wardrobe"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Холодильник отвергли: боялись, что дети начнут залезать в холодильники. А «Делориан» с дверями-крыльями ещё и похож на НЛО.",
+   "en": "The fridge was dropped for fear children would climb into fridges. And the gull-winged DeLorean looks like a UFO."
+  },
+  "source": "https://en.wikipedia.org/wiki/Back_to_the_Future",
+  "basedOn": "films_old_020",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Психо» (1960) снят на чёрно-белую плёнку. Что изображало кровь в знаменитой сцене в душе?",
+   "en": "Psycho (1960) was shot in black and white. What played the blood in the famous shower scene?"
+  },
+  "options": [
+   {
+    "ru": "Шоколадный сироп",
+    "en": "Chocolate syrup"
+   },
+   {
+    "ru": "Кетчуп",
+    "en": "Ketchup"
+   },
+   {
+    "ru": "Свекольный сок",
+    "en": "Beetroot juice"
+   },
+   {
+    "ru": "Красное вино",
+    "en": "Red wine"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фильм чёрно-белый, а на плёнке густой шоколадный сироп выглядел и стекал куда правдоподобнее красной краски.",
+   "en": "The film is black and white, and thick chocolate syrup looked and flowed far more like blood than red paint."
+  },
+  "source": "https://ru.wikipedia.org/wiki/%D0%9F%D1%81%D0%B8%D1%85%D0%BE_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_1960)",
+  "basedOn": "films_old_019",
+  "refine": "rewrite",
+  "id": "cur_films_old_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Из чего делали статуэтки «Оскар» во время Второй мировой войны?",
+   "en": "What were Oscar statuettes made of during the Second World War?"
+  },
+  "options": [
+   {
+    "ru": "Из гипса",
+    "en": "Plaster"
+   },
+   {
+    "ru": "Из дерева",
+    "en": "Wood"
+   },
+   {
+    "ru": "Из стекла",
+    "en": "Glass"
+   },
+   {
+    "ru": "Из олова",
+    "en": "Tin"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Металла не хватало, поэтому три года вручали гипсовые фигурки, а после войны их меняли на металлические.",
+   "en": "Metal was scarce, so for three years winners got plaster statuettes, swapped for metal ones after the war."
+  },
+  "source": "https://en.wikipedia.org/wiki/Academy_Awards",
+  "basedOn": "films_old_035",
+  "refine": "rewrite",
+  "id": "cur_films_old_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой фразы на самом деле НЕТ в фильме «Касабланка» (1942)?",
+   "en": "Which famous line is NOT actually said in Casablanca (1942)?"
+  },
+  "options": [
+   {
+    "ru": "«Сыграй это ещё раз, Сэм»",
+    "en": "\"Play it again, Sam\""
+   },
+   {
+    "ru": "«За тебя, малыш»",
+    "en": "\"Here's looking at you, kid\""
+   },
+   {
+    "ru": "«Задержите обычных подозреваемых»",
+    "en": "\"Round up the usual suspects\""
+   },
+   {
+    "ru": "«У нас всегда будет Париж»",
+    "en": "\"We'll always have Paris\""
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ильза говорит просто «Сыграй это, Сэм», а версию с «ещё раз» закрепила пьеса Вуди Аллена 1969 года с таким названием.",
+   "en": "Ilsa just says \"Play it, Sam\"; the \"again\" version was cemented by Woody Allen's 1969 play of that title."
+  },
+  "source": "https://en.wikipedia.org/wiki/Play_It_Again,_Sam",
+  "basedOn": "films_old_018",
+  "refine": "same",
+  "id": "cur_films_old_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сдвиньте каждую букву имени компьютера HAL из «Космической одиссеи» на одну вперёд. Что выйдет?",
+   "en": "Shift each letter of HAL, the computer in 2001: A Space Odyssey, one step on. What do you get?"
+  },
+  "options": [
+   {
+    "ru": "Компания IBM",
+    "en": "IBM"
+   },
+   {
+    "ru": "Телеканал BBC",
+    "en": "BBC"
+   },
+   {
+    "ru": "Лига NBA",
+    "en": "NBA"
+   },
+   {
+    "ru": "Телеканал CNN",
+    "en": "CNN"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Артур Кларк уверял, что это совпадение: имя значит «эвристический алгоритмический», и его сменили бы, если бы заметили.",
+   "en": "Arthur C. Clarke said it was a coincidence: HAL means Heuristically programmed ALgorithmic, and they'd have renamed it had they noticed."
+  },
+  "source": "https://en.wikipedia.org/wiki/HAL_9000",
+  "basedOn": "films_old_025",
+  "refine": "rewrite",
+  "id": "cur_films_old_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Японское имя Годзиллы «Годзира» сложено из двух слов. Каких?",
+   "en": "Godzilla's Japanese name, Gojira, blends two words. Which?"
+  },
+  "options": [
+   {
+    "ru": "Горилла и кит",
+    "en": "Gorilla and whale"
+   },
+   {
+    "ru": "Ящерица и дракон",
+    "en": "Lizard and dragon"
+   },
+   {
+    "ru": "Медведь и акула",
+    "en": "Bear and shark"
+   },
+   {
+    "ru": "Тигр и змея",
+    "en": "Tiger and snake"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Горира» (горилла) плюс «кудзира» (кит): по легенде, так на студии Toho прозвали одного крепкого сотрудника, любителя китового мяса.",
+   "en": "Gorira (gorilla) plus kujira (whale): legend says it was the nickname of a burly Toho employee who loved whale meat."
+  },
+  "source": "https://en.wikipedia.org/wiki/Godzilla",
+  "basedOn": "films_old_022",
+  "refine": "same",
+  "id": "cur_films_old_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В «Пароходном Билле» (1928) на Бастера Китона падает стена дома. Как он уцелел?",
+   "en": "In Steamboat Bill, Jr. (1928) a house wall falls on Buster Keaton. How does he survive?"
+  },
+  "options": [
+   {
+    "ru": "Попал в открытое окно",
+    "en": "He fit through an open window"
+   },
+   {
+    "ru": "Стена была картонной",
+    "en": "The wall was cardboard"
+   },
+   {
+    "ru": "Его заменил манекен",
+    "en": "A dummy stood in for him"
+   },
+   {
+    "ru": "Отпрыгнул в последний миг",
+    "en": "He jumped clear at the last moment"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фасад был настоящий, весом две тонны, а место Китону отметили гвоздём. Говорят, встань он чуть в сторону — мог погибнуть.",
+   "en": "The two-ton facade was real, and a nail marked Keaton's spot. It is said that a few inches off, he could have been killed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Steamboat_Bill,_Jr.",
+  "basedOn": "films_old_031",
+  "refine": "rewrite",
+  "id": "cur_films_old_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как в «Крепком орешке» (1988) добились настоящего испуга Алана Рикмана при падении?",
+   "en": "How did Die Hard (1988) get Alan Rickman's real look of shock as he falls?"
+  },
+  "options": [
+   {
+    "ru": "Отпустили раньше счёта",
+    "en": "Let him go before 'three'"
+   },
+   {
+    "ru": "Выстрелили над ухом",
+    "en": "Fired a gun next to his ear"
+   },
+   {
+    "ru": "Включили сирену",
+    "en": "Set off a siren"
+   },
+   {
+    "ru": "Сказали, что он уволен",
+    "en": "Told him he was fired"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Рикману сказали, что отпустят на счёт «три», а отпустили раньше; режиссёр Мактирнан говорил, что такое не сыграешь.",
+   "en": "Rickman was told he'd drop on three but was let go earlier; director McTiernan said there was no way he could fake that."
+  },
+  "source": "https://en.wikipedia.org/wiki/Die_Hard",
+  "basedOn": "films_old_037",
+  "refine": "rewrite",
+  "id": "cur_films_old_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Пока для «Унесённых ветром» снимали пожар Атланты, продюсеру представили актрису из Англии. Что было дальше?",
+   "en": "While Gone with the Wind filmed the burning of Atlanta, the producer met an English actress. What happened next?"
+  },
+  "options": [
+   {
+    "ru": "Она сыграла Скарлетт",
+    "en": "She played Scarlett"
+   },
+   {
+    "ru": "Она сыграла Мелани",
+    "en": "She played Melanie"
+   },
+   {
+    "ru": "Она вызвала пожарных",
+    "en": "She called the fire brigade"
+   },
+   {
+    "ru": "Её сняли в массовке",
+    "en": "She became an extra"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это была Вивьен Ли, её привёл брат продюсера. До неё на роль Скарлетт опросили 1400 претенденток.",
+   "en": "It was Vivien Leigh, brought by the producer's brother. Before her, 1,400 hopefuls had been interviewed for Scarlett."
+  },
+  "source": "https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)",
+  "basedOn": "films_old_049",
+  "refine": "rewrite",
+  "id": "cur_films_old_22"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто на самом деле нарисовал портрет Розы, который в «Титанике» (1997) рисует Джек?",
+   "en": "Who really drew the portrait of Rose that Jack draws in Titanic (1997)?"
+  },
+  "options": [
+   {
+    "ru": "Режиссёр Кэмерон",
+    "en": "Cameron himself"
+   },
+   {
+    "ru": "Леонардо Ди Каприо",
+    "en": "Leonardo DiCaprio"
+   },
+   {
+    "ru": "Кейт Уинслет",
+    "en": "Kate Winslet"
+   },
+   {
+    "ru": "Нанятый художник",
+    "en": "A hired artist"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Кэмерон хорошо рисует: портрет Розы он нарисовал сам, а Кейт Уинслет позировала ему в купальнике.",
+   "en": "Cameron is a skilled artist: he drew the portrait of Rose himself while Kate Winslet posed in a bathing suit."
+  },
+  "source": "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
+  "basedOn": "films_old_016",
+  "refine": "rewrite",
+  "id": "cur_films_old_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему фильм «В джазе только девушки» (1959) сняли чёрно-белым?",
+   "en": "Why was Some Like It Hot (1959) shot in black and white?"
+  },
+  "options": [
+   {
+    "ru": "Мужской грим в цвете пугал",
+    "en": "Drag make-up looked awful"
+   },
+   {
+    "ru": "Так потребовала Мэрилин Монро",
+    "en": "Marilyn Monroe insisted on it"
+   },
+   {
+    "ru": "Не хватило денег на цвет",
+    "en": "No money left for colour"
+   },
+   {
+    "ru": "Так велела цензура",
+    "en": "The censors ordered it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По контракту Монро снималась только в цвете, но, увидев цветные пробы Кёртиса и Леммона в гриме, согласилась на ч/б.",
+   "en": "Monroe's contract required colour, but after seeing colour tests of Curtis and Lemmon in drag make-up she agreed to black and white."
+  },
+  "source": "https://en.wikipedia.org/wiki/Some_Like_It_Hot",
+  "basedOn": "films_old_032",
+  "refine": "rewrite",
+  "id": "cur_films_old_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Хичкок любил мелькать в кадре своих фильмов. Но «Спасательная шлюпка» (1944) вся идёт в лодке. Как он попал в кадр?",
+   "en": "Hitchcock liked to appear in his own films. But Lifeboat (1944) is set entirely in a boat at sea. How did he get in?"
+  },
+  "options": [
+   {
+    "ru": "В газетной рекламе",
+    "en": "In a newspaper ad"
+   },
+   {
+    "ru": "Трупом, плывущим мимо",
+    "en": "As a body floating by"
+   },
+   {
+    "ru": "Голосом по радио",
+    "en": "As a voice on the radio"
+   },
+   {
+    "ru": "Отражением в воде",
+    "en": "As a reflection in the sea"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Хичкок — на снимках «до» и «после» в газетной рекламе средства для похудения «Редуко».",
+   "en": "Hitchcock is in the 'before' and 'after' photos of a newspaper ad for the Reduco weight-loss cure."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_cameo_appearances_by_Alfred_Hitchcock",
+  "basedOn": "films_old_004",
+  "refine": "rewrite",
+  "id": "cur_films_old_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Вестерны Серджо Леоне с Клинтом Иствудом прозвали «спагетти-вестернами». Где снимали их пустыни?",
+   "en": "Sergio Leone's westerns with Clint Eastwood were called spaghetti westerns. Where were their deserts filmed?"
+  },
+  "options": [
+   {
+    "ru": "В Испании",
+    "en": "In Spain"
+   },
+   {
+    "ru": "В Италии",
+    "en": "In Italy"
+   },
+   {
+    "ru": "В Мексике",
+    "en": "In Mexico"
+   },
+   {
+    "ru": "В Техасе",
+    "en": "In Texas"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Пустыня Табернас в Альмерии и равнины под Бургосом изображали американский Юго-Запад, а городки-декорации стали парками.",
+   "en": "The Tabernas desert in Almería and the plains near Burgos played the American Southwest; the western sets became theme parks."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Good,_the_Bad_and_the_Ugly",
+  "basedOn": "films_old_023",
+  "refine": "rewrite",
+  "id": "cur_films_old_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Челюсти» планировали снять за 55 съёмочных дней. Сколько дней ушло на самом деле?",
+   "en": "Jaws was scheduled for 55 days of shooting. How many did it actually take?"
+  },
+  "answer": 159,
+  "range": [
+   55,
+   500
+  ],
+  "step": 1,
+  "tolerance": 30,
+  "unit": {
+   "ru": "дней",
+   "en": "days"
+  },
+  "fact": {
+   "ru": "Спилберг не пришёл на съёмку финального взрыва акулы: боялся, что измученная группа на радостях бросит его в воду.",
+   "en": "Spielberg skipped filming the shark's final explosion, fearing the worn-out crew would throw him in the water."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jaws_(film)",
+  "basedOn": "films_old_045",
+  "refine": "same",
+  "id": "cur_films_old_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сегодня церемония «Оскара» идёт больше трёх часов. Сколько минут длилась самая первая, в 1929 году?",
+   "en": "Today the Oscars ceremony runs over three hours. How many minutes did the very first one, in 1929, last?"
+  },
+  "answer": 15,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 10,
+  "unit": {
+   "ru": "минут",
+   "en": "minutes"
+  },
+  "fact": {
+   "ru": "Победителей объявили за три месяца до церемонии, так что интриги не было: ужин и быстрая раздача статуэток.",
+   "en": "Winners were announced three months in advance, so there was no suspense: a dinner and a quick handout."
+  },
+  "source": "https://en.wikipedia.org/wiki/1st_Academy_Awards",
+  "basedOn": "films_old_041",
+  "refine": "rewrite",
+  "id": "cur_films_old_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На экране Кинг-Конг — великан, лезущий на Эмпайр-стейт-билдинг. Какого роста была самая большая кукла Конга?",
+   "en": "On screen King Kong is a giant climbing the Empire State Building. How tall was the biggest Kong puppet?"
+  },
+  "answer": 46,
+  "range": [
+   0,
+   300
+  ],
+  "step": 1,
+  "tolerance": 15,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "Куклы ростом 36–46 см двигали вручную кадр за кадром, а для крупных планов построили огромные голову с плечами и лапу.",
+   "en": "The 36 to 46 cm puppets were moved by hand frame by frame; a giant head, shoulders and paw were built for close-ups."
+  },
+  "source": "https://en.wikipedia.org/wiki/King_Kong_(1933_film)",
+  "basedOn": "films_old_050",
+  "refine": "rewrite",
+  "id": "cur_films_old_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Настоящий «Титаник» тонул 2 часа 40 минут. Сколько минут длится фильм «Титаник» (1997)?",
+   "en": "The real Titanic took 2 hours 40 minutes to sink. How many minutes long is the film Titanic (1997)?"
+  },
+  "answer": 195,
+  "range": [
+   60,
+   400
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "минут",
+   "en": "minutes"
+  },
+  "fact": {
+   "ru": "195 минут, больше трёх часов: фильм идёт на 35 минут дольше, чем тонул настоящий лайнер.",
+   "en": "195 minutes, over three hours: the film runs 35 minutes longer than the real liner took to sink."
+  },
+  "source": "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
+  "basedOn": "films_old_046",
+  "refine": "rewrite",
+  "id": "cur_films_old_23"
+ }
+]

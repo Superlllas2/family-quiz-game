@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Кто победит в крестиках-ноликах, если оба игрока не ошибаются?",
+   "en": "Who wins at tic-tac-toe if both players play perfectly?"
+  },
+  "options": [
+   {
+    "ru": "Тот, кто ходит первым",
+    "en": "The first player"
+   },
+   {
+    "ru": "Никто: будет ничья",
+    "en": "Nobody: it's a draw"
+   },
+   {
+    "ru": "Тот, кто ходит вторым",
+    "en": "The second player"
+   },
+   {
+    "ru": "Тот, кто займёт центр",
+    "en": "Whoever takes the centre"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Игра настолько проста, что в 1952 году в неё уже безошибочно играл компьютер EDSAC: программа OXO.",
+   "en": "It is so simple that in 1952 the EDSAC computer already played it flawlessly, in a program called OXO."
+  },
+  "source": "https://en.wikipedia.org/wiki/OXO_(video_game)",
+  "basedOn": "board_006",
+  "refine": "rewrite",
+  "id": "cur_board_01"
+ },
+ {
+  "id": "cur_board_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На обычном игральном кубике выпала шестёрка. Сколько точек на грани, которая лежит снизу?",
+   "en": "You roll a six on an ordinary die. How many dots are on the face underneath?"
+  },
+  "options": [
+   {
+    "ru": "2",
+    "en": "2"
+   },
+   {
+    "ru": "5",
+    "en": "5"
+   },
+   {
+    "ru": "1",
+    "en": "1"
+   },
+   {
+    "ru": "3",
+    "en": "3"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Противоположные грани всегда дают 7: 1 и 6, 2 и 5, 3 и 4. А ещё кубики бывают зеркальными: западные обычно «правые», а китайские — «левые».",
+   "en": "Opposite faces always add up to 7: 1 and 6, 2 and 5, 3 and 4. Dice also come in mirror images: Western ones are usually right-handed, Chinese ones left-handed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dice",
+  "basedOn": "board_003",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Сколько ферзей одного цвета может одновременно стоять на шахматной доске?",
+   "en": "How many queens of one colour can be on a chessboard at the same time?"
+  },
+  "options": [
+   {
+    "ru": "Только один",
+    "en": "Only one"
+   },
+   {
+    "ru": "Не больше двух",
+    "en": "Two at most"
+   },
+   {
+    "ru": "До девяти",
+    "en": "Up to nine"
+   },
+   {
+    "ru": "До шестнадцати",
+    "en": "Up to sixteen"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Свой ферзь и 8 пешек, ставших ферзями. А перевёрнутую ладью на чемпионате Канады 2017 года судья ферзём не признал.",
+   "en": "Your own queen plus 8 promoted pawns. At the 2017 Canadian Championship an arbiter ruled an upside-down rook was still a rook."
+  },
+  "source": "https://en.wikipedia.org/wiki/Promotion_(chess)",
+  "basedOn": "board_007",
+  "refine": "rewrite",
+  "id": "cur_board_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Считается, что первые пазлы делали в Лондоне 1760-х как пособие для уроков. Что на них было?",
+   "en": "The first jigsaws are thought to have been made in 1760s London as a teaching aid. What did they show?"
+  },
+  "options": [
+   {
+    "ru": "Портрет короля",
+    "en": "The king's portrait"
+   },
+   {
+    "ru": "Азбука",
+    "en": "The alphabet"
+   },
+   {
+    "ru": "Карта стран",
+    "en": "A map of countries"
+   },
+   {
+    "ru": "Таблица умножения",
+    "en": "Times tables"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Гравёр Джон Спилсбери наклеивал карту на доску и выпиливал страны по границам: собирая её, дети учили географию.",
+   "en": "Engraver John Spilsbury mounted a map on wood and cut out the countries along their borders, so children learned geography putting it together."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jigsaw_puzzle",
+  "basedOn": "board_029",
+  "refine": "rewrite",
+  "id": "cur_board_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Эрнё Рубик сделал первый кубик в 1974 году и перемешал его. Как долго он сам потом его собирал?",
+   "en": "Ernő Rubik made the first cube in 1974 and scrambled it. How long did it take him to solve it?"
+  },
+  "options": [
+   {
+    "ru": "Минут десять",
+    "en": "About ten minutes"
+   },
+   {
+    "ru": "Около месяца",
+    "en": "About a month"
+   },
+   {
+    "ru": "Пару часов",
+    "en": "A couple of hours"
+   },
+   {
+    "ru": "Почти год",
+    "en": "Almost a year"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Изобретатель месяц собирал его методом проб и ошибок. Сегодня спидкуберы справляются за считаные секунды.",
+   "en": "The inventor needed a month of trial and error. Today speedcubers do it in a few seconds."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rubik%27s_Cube",
+  "basedOn": "board_005",
+  "refine": "rewrite",
+  "id": "cur_board_05"
+ },
+ {
+  "id": "cur_board_06",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Индийские «Змеи и лестницы» были уроком морали, и змей там было больше, чем лестниц. Почему?",
+   "en": "India's original Snakes and Ladders was a lesson in morals, with more snakes than ladders. Why?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы партия шла дольше",
+    "en": "To make the game last longer"
+   },
+   {
+    "ru": "Змея там — знак удачи",
+    "en": "Snakes meant good luck"
+   },
+   {
+    "ru": "Добро даётся труднее зла",
+    "en": "Being good is harder"
+   },
+   {
+    "ru": "Чтобы победа решалась удачей",
+    "en": "So luck would pick the winner"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Лестницы были добродетелями, а змеи — пороками. В английской версии игры их сделали поровну, и она стала добрее.",
+   "en": "Ladders stood for virtues and snakes for vices. The English version made them equal, and the game became more forgiving."
+  },
+  "source": "https://en.wikipedia.org/wiki/Snakes_and_ladders",
+  "basedOn": "board_011",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как изобретатель «Скрэббла» решил, сколько фишек с каждой буквой положить в набор?",
+   "en": "How did Scrabble's inventor decide how many tiles each letter gets?"
+  },
+  "options": [
+   {
+    "ru": "Сделал всех букв поровну",
+    "en": "He gave all letters equal numbers"
+   },
+   {
+    "ru": "Подсчитал буквы в газетах",
+    "en": "He counted letters in newspapers"
+   },
+   {
+    "ru": "Устроил опрос знакомых игроков",
+    "en": "He polled friends who played"
+   },
+   {
+    "ru": "Взял их из азбуки Морзе",
+    "en": "He took them from Morse code"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Архитектор Альфред Баттс вручную считал буквы в The New York Times и других изданиях. По этим подсчётам он назначил и очки: редкая буква стоит дороже.",
+   "en": "Architect Alfred Butts tallied letters by hand in The New York Times and other papers. The counts also set the points: rarer letters score more."
+  },
+  "source": "https://en.wikipedia.org/wiki/Scrabble",
+  "basedOn": "board_019",
+  "refine": "rewrite",
+  "id": "cur_board_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В средневековых шахматах эта фигура ходила лишь на одну клетку по диагонали. Какая?",
+   "en": "In medieval chess, which piece could move only one square diagonally?"
+  },
+  "options": [
+   {
+    "ru": "Слон",
+    "en": "Bishop"
+   },
+   {
+    "ru": "Ладья",
+    "en": "Rook"
+   },
+   {
+    "ru": "Ферзь",
+    "en": "Queen"
+   },
+   {
+    "ru": "Конь",
+    "en": "Knight"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Тогда это был визирь-советник. Сильнейшей фигурой ферзь стал в Испании в конце XV века, и новую игру прозвали «шахматами бешеной дамы».",
+   "en": "It was then a vizier. The queen became the strongest piece in Spain in the late 1400s, and the new game was nicknamed 'madwoman's chess'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Queen_(chess)",
+  "basedOn": "board_016",
+  "refine": "rewrite",
+  "id": "cur_board_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1904 году Элизабет Мэги запатентовала прабабушку «Монополии». Чему её игра должна была учить?",
+   "en": "In 1904 Elizabeth Magie patented Monopoly's great-grandmother. What was her game meant to teach?"
+  },
+  "options": [
+   {
+    "ru": "Как быстро разбогатеть",
+    "en": "How to get rich fast"
+   },
+   {
+    "ru": "Как вести семейный бюджет",
+    "en": "How to run a family budget"
+   },
+   {
+    "ru": "Что монополии — это зло",
+    "en": "That monopolies are evil"
+   },
+   {
+    "ru": "Как выгодно торговать землёй",
+    "en": "How to trade land for profit"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Рента в ней обогащала хозяев и разоряла арендаторов. В 1935-м Parker Brothers купили «Монополию» у Дэрроу, а патент Мэги 1923 года — за 500 долларов.",
+   "en": "In it, rent enriched owners and ruined tenants. In 1935 Parker Brothers bought Monopoly from Charles Darrow, and Magie's 1923 patent for $500."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Landlord%27s_Game",
+  "basedOn": "board_017",
+  "refine": "rewrite",
+  "id": "cur_board_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Во Вторую мировую британская разведка посылала «Монополию» пленным в немецкие лагеря. Что прятали в коробке?",
+   "en": "In WWII British intelligence sent Monopoly sets to prisoners in German camps. What was hidden inside?"
+  },
+  "options": [
+   {
+    "ru": "Плитки шоколада",
+    "en": "Bars of chocolate"
+   },
+   {
+    "ru": "Карты местности",
+    "en": "Maps of the area"
+   },
+   {
+    "ru": "Табак и бумагу",
+    "en": "Tobacco and papers"
+   },
+   {
+    "ru": "Письма от родных",
+    "en": "Letters from home"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "А ещё компасы и настоящие деньги. Наборы делала фирма Waddingtons, а рассылали их выдуманные благотворительные общества.",
+   "en": "Also compasses and real money. Waddingtons made the sets, and fake charities set up by the Secret Service sent them."
+  },
+  "source": "https://en.wikipedia.org/wiki/Monopoly_(game)",
+  "basedOn": "board_026",
+  "refine": "rewrite",
+  "id": "cur_board_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Слово «судоку» японское. А где придумали саму головоломку?",
+   "en": "'Sudoku' is a Japanese word. But where was the puzzle itself invented?"
+  },
+  "options": [
+   {
+    "ru": "В Японии",
+    "en": "In Japan"
+   },
+   {
+    "ru": "В Китае",
+    "en": "In China"
+   },
+   {
+    "ru": "В США",
+    "en": "In the USA"
+   },
+   {
+    "ru": "В Швейцарии",
+    "en": "In Switzerland"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "В 1979 году её напечатал американский журнал Dell как Number Place, автор — скорее всего, 74-летний архитектор Говард Гарнс. В Японию она попала в 1984-м.",
+   "en": "Dell Magazines printed it in 1979 as Number Place, most likely by Howard Garns, a 74-year-old architect. It reached Japan in 1984."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sudoku",
+  "basedOn": "board_018",
+  "refine": "rewrite",
+  "id": "cur_board_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2015 году новозеландец Найджел Ричардс стал чемпионом мира по «Скрэбблу» на французском. Чем он удивил?",
+   "en": "In 2015 New Zealander Nigel Richards won the French-language World Scrabble Championship. What was surprising?"
+  },
+  "options": [
+   {
+    "ru": "Ему было всего 12 лет",
+    "en": "He was only 12"
+   },
+   {
+    "ru": "Он почти не видит",
+    "en": "He is nearly blind"
+   },
+   {
+    "ru": "Он не знает французского",
+    "en": "He doesn't know French"
+   },
+   {
+    "ru": "Он играл впервые в жизни",
+    "en": "It was his first game ever"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Он около двух месяцев учил французский словарь игры. А в 2024 году выиграл и чемпионат на испанском, которого тоже не знает.",
+   "en": "He spent about two months learning the French word list. In 2024 he also won the Spanish championship, another language he doesn't speak."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nigel_Richards_(Scrabble_player)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_board_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В UNO вам положили «+2», а у вас тоже есть «+2». Что велят официальные правила?",
+   "en": "In UNO someone plays a Draw Two on you, and you have a Draw Two too. What do the official rules say?"
+  },
+  "options": [
+   {
+    "ru": "Отбить: следующий берёт 4",
+    "en": "Stack it: the next takes 4"
+   },
+   {
+    "ru": "Отбить, если цвет тот же",
+    "en": "Stack it if the colour matches"
+   },
+   {
+    "ru": "Взять 2 и пропустить ход",
+    "en": "Draw 2 and miss your turn"
+   },
+   {
+    "ru": "Взять 2 и ходить дальше",
+    "en": "Draw 2 and play on"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "«Переводить» карты — домашнее правило. В 2019 году Mattel прямо написала: класть «+2» или «+4» в ответ на «+2» и «+4» нельзя.",
+   "en": "Stacking is a house rule. In 2019 Mattel stated plainly that you cannot stack a Draw Two or a Draw Four."
+  },
+  "source": "https://en.wikipedia.org/wiki/Uno_(card_game)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_board_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сэм Лойд обещал 1000 долларов тому, кто в «пятнашках» поменяет местами только 14 и 15. Сколько ходов для этого нужно?",
+   "en": "Sam Loyd offered $1,000 to anyone who could swap just the 14 and 15 in the 15 puzzle. How many moves does it take?"
+  },
+  "options": [
+   {
+    "ru": "Хватит трёх ходов",
+    "en": "Three are enough"
+   },
+   {
+    "ru": "Ровно 15 ходов",
+    "en": "Exactly 15"
+   },
+   {
+    "ru": "Это невозможно",
+    "en": "It can't be done"
+   },
+   {
+    "ru": "Около сотни ходов",
+    "en": "About a hundred"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Ровно половина расстановок «пятнашек» не решается вообще. Это доказали ещё в 1879 году, так что приз Лойда ничем ему не грозил.",
+   "en": "Exactly half of all 15 puzzle layouts can never be solved. That was proved back in 1879, so Loyd's prize put him at no risk."
+  },
+  "source": "https://en.wikipedia.org/wiki/15_puzzle",
+  "basedOn": "board_031",
+  "refine": "rewrite",
+  "id": "cur_board_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В мае 1944-го в кроссвордах Daily Telegraph всплыли тайные коды высадки в Нормандии. Кем был составитель?",
+   "en": "In May 1944 secret D-Day codewords turned up in the Daily Telegraph crosswords. Who was the compiler?"
+  },
+  "options": [
+   {
+    "ru": "Немецким шпионом",
+    "en": "A German spy"
+   },
+   {
+    "ru": "Офицером штаба",
+    "en": "A staff officer"
+   },
+   {
+    "ru": "Директором школы",
+    "en": "A headmaster"
+   },
+   {
+    "ru": "Военным репортёром",
+    "en": "A war reporter"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "MI5 допросила Леонарда Доу и отпустила. Слова Utah, Omaha и Overlord он, видимо, брал у учеников, а те слышали их от солдат по соседству.",
+   "en": "MI5 questioned Leonard Dawe and let him go. Words like Utah, Omaha and Overlord likely came from his pupils, who heard them from nearby soldiers."
+  },
+  "source": "https://en.wikipedia.org/wiki/D-Day_Daily_Telegraph_crossword_security_alarm",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_board_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В «Дженге» башню разбирают, пока она не рухнет. А что значит название игры на суахили?",
+   "en": "In Jenga you take a tower apart until it falls. What does the game's Swahili name mean?"
+  },
+  "options": [
+   {
+    "ru": "Падать",
+    "en": "To fall"
+   },
+   {
+    "ru": "Шататься",
+    "en": "To wobble"
+   },
+   {
+    "ru": "Строить",
+    "en": "To build"
+   },
+   {
+    "ru": "Держать",
+    "en": "To hold"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Kujenga — «строить». Бруски нарочно делают чуть неровными, чтобы игра была труднее. Автор, Лесли Скотт, выросла в нынешней Танзании и знала суахили.",
+   "en": "Kujenga means 'to build'. The blocks are made slightly uneven on purpose to make it harder. Inventor Leslie Scott grew up in today's Tanzania speaking Swahili."
+  },
+  "source": "https://en.wikipedia.org/wiki/Jenga",
+  "basedOn": "board_020",
+  "refine": "rewrite",
+  "id": "cur_board_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "У кубика Рубика 43 квинтиллиона положений. За сколько ходов, самое большее, собирается любое из них?",
+   "en": "A Rubik's Cube has 43 quintillion positions. At most, how many moves does it take to solve any of them?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "ходов",
+   "en": "moves"
+  },
+  "fact": {
+   "ru": "Это «число Бога»; в 2010 году его доказали перебором, на который ушло около 35 лет процессорного времени Google.",
+   "en": "It's called God's number; it was proved in 2010 using about 35 years of computer time donated by Google."
+  },
+  "source": "https://en.wikipedia.org/wiki/Optimal_solutions_for_the_Rubik%27s_Cube",
+  "basedOn": "board_039",
+  "refine": "rewrite",
+  "id": "cur_board_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На 1-ю клетку доски кладут зерно, на каждую следующую — вдвое больше. На какой клетке их станет больше миллиона?",
+   "en": "One grain on the first square, then double on each next square. On which square do the grains first pass a million?"
+  },
+  "answer": 21,
+  "range": [
+   1,
+   64
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "клетка",
+   "en": "square"
+  },
+  "fact": {
+   "ru": "Уже на 21-й: 1 048 576. По легенде, так попросил награду изобретатель шахмат. На всей доске — больше 1400 годовых мировых урожаев пшеницы.",
+   "en": "Already on square 21: 1,048,576. Legend says the inventor of chess asked for this reward. The whole board: over 1,400 times the world's yearly wheat harvest."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wheat_and_chessboard_problem",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_board_22"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В наборе домино каждая пара чисел от «пусто» до шести встречается ровно по разу. Сколько в нём костей?",
+   "en": "In a domino set every pair of numbers from blank to six appears exactly once. How many tiles are there?"
+  },
+  "answer": 28,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "костей",
+   "en": "tiles"
+  },
+  "fact": {
+   "ru": "7 дублей и 21 разная пара. Имя игре, вероятно, дал венецианский карнавальный наряд: чёрный плащ с капюшоном и белая маска.",
+   "en": "Seven doubles and 21 mixed pairs. The name probably comes from a Venetian Carnival costume: a black hooded robe with a white mask."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dominoes",
+  "basedOn": "board_050",
+  "refine": "rewrite",
+  "id": "cur_board_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На шахматной доске 64 клетки. А сколько на ней всего квадратов любого размера, от 1×1 до 8×8?",
+   "en": "A chessboard has 64 squares. How many squares of any size, from 1×1 to 8×8, does it have in all?"
+  },
+  "answer": 204,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 2,
+  "tolerance": 30,
+  "unit": {
+   "ru": "квадратов",
+   "en": "squares"
+  },
+  "fact": {
+   "ru": "64 + 49 + 36 + 25 + 16 + 9 + 4 + 1 = 204: квадратов 2×2 на доске 49, 3×3 — 36, и так до одного большого 8×8.",
+   "en": "64 + 49 + 36 + 25 + 16 + 9 + 4 + 1 = 204: there are 49 squares of 2×2, 36 of 3×3, and so on down to one 8×8."
+  },
+  "source": "https://en.wikipedia.org/wiki/Square_pyramidal_number",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_board_20"
+ }
+]

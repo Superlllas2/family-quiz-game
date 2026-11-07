@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда телеигра «Поле чудес» взяла своё название?",
+   "en": "Where did the game show Pole Chudes ('Field of Wonders') get its name?"
+  },
+  "options": [
+   {
+    "ru": "Из сказки о Буратино",
+    "en": "From the Buratino tale"
+   },
+   {
+    "ru": "Из «Алисы в Стране чудес»",
+    "en": "From Alice in Wonderland"
+   },
+   {
+    "ru": "Из «Волшебника Изумрудного города»",
+    "en": "From The Wizard of the Emerald City"
+   },
+   {
+    "ru": "Из «Сказки о царе Салтане»",
+    "en": "From The Tale of Tsar Saltan"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Поле чудес — место в Стране Дураков из «Золотого ключика»: там Буратино закопал монеты, чтобы выросло денежное дерево.",
+   "en": "The Field of Wonders is in the Land of Fools in The Golden Key: Buratino buried his coins there to grow a money tree."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Поле_чудес",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_tv_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что показывали по телевизору утром 19 августа 1991 года, в первый день путча?",
+   "en": "What did Soviet TV show on the morning of 19 August 1991, the first day of the coup?"
+  },
+  "options": [
+   {
+    "ru": "«Лебединое озеро»",
+    "en": "Swan Lake"
+   },
+   {
+    "ru": "Мультфильм «Ну, погоди!»",
+    "en": "The cartoon Nu, Pogodi!"
+   },
+   {
+    "ru": "Хоккейный матч",
+    "en": "An ice hockey match"
+   },
+   {
+    "ru": "«Иронию судьбы»",
+    "en": "The Irony of Fate"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Балет крутили вместо обычных передач, и с тех пор «Лебединое озеро» по всем каналам — шутливый знак, что в стране что-то стряслось.",
+   "en": "The ballet replaced the usual programmes, and Swan Lake on every channel became a byword for something big happening."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Августовский_путч",
+  "basedOn": "ru_tv_005",
+  "refine": "rewrite",
+  "id": "cur_ru_tv_02"
+ },
+ {
+  "id": "cur_ru_tv_21",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Электроника и Серёжу Сыроежкина в фильме «Приключения Электроника» (1979) сыграли…",
+   "en": "In The Adventures of Elektronik (1979), the robot Elektronik and the boy Syroezhkin were played by…"
+  },
+  "options": [
+   {
+    "ru": "Братья-близнецы",
+    "en": "Twin brothers"
+   },
+   {
+    "ru": "Один мальчик, снятый дважды",
+    "en": "One boy, filmed twice"
+   },
+   {
+    "ru": "Брат и сестра",
+    "en": "A brother and sister"
+   },
+   {
+    "ru": "Отец и сын",
+    "en": "A father and son"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это Володя и Юра Торсуевы. А говорят и поют за них актрисы и певицы: песни Сыроежкина, например, исполняет Елена Камбурова.",
+   "en": "They were Volodya and Yura Torsuev. Actresses and singers speak and sing for them: Syroezhkin's songs, for one, are sung by Elena Kamburova."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Приключения_Электроника",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Почему «Голубой огонёк» назвали голубым?",
+   "en": "Why was the TV show Goluboy Ogonyok ('The Little Blue Light') called blue?"
+  },
+  "options": [
+   {
+    "ru": "Так светились чёрно-белые экраны",
+    "en": "Black-and-white screens glowed blue"
+   },
+   {
+    "ru": "Студию целиком выкрасили в голубой",
+    "en": "The studio was painted entirely in blue"
+   },
+   {
+    "ru": "Так горит газ на кухонной плите",
+    "en": "Gas burns blue on a kitchen stove"
+   },
+   {
+    "ru": "В студии горели голубые лампы",
+    "en": "The studio had blue lamps"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Экран чёрно-белого телевизора светился голубоватым светом. А начиналась передача в 1962 году как «Телевизионное кафе».",
+   "en": "A black-and-white TV screen gave off a bluish light. The show began in 1962 as 'Television Cafe'."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Голубой_огонёк",
+  "basedOn": "ru_tv_021",
+  "refine": "rewrite",
+  "id": "cur_ru_tv_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "После «Рабыни Изауры» одно бразильское слово стало у нас шуточным названием дачи. Какое?",
+   "en": "After Slave Isaura one Brazilian word became a joking Russian name for a dacha. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Фазенда",
+    "en": "Fazenda"
+   },
+   {
+    "ru": "Фавела",
+    "en": "Favela"
+   },
+   {
+    "ru": "Сельва",
+    "en": "Selva"
+   },
+   {
+    "ru": "Пампа",
+    "en": "Pampa"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Фазенда — это поместье, где страдала Изаура. Сериал в 1988–1989 годах смотрела вся страна, и слово прилипло к шести соткам.",
+   "en": "A fazenda is an estate like the one where Isaura suffered. The whole country watched the show in 1988 and 1989, and the word stuck to dachas."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Рабыня_Изаура_(телесериал)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_tv_06"
+ },
+ {
+  "id": "cur_ru_tv_24",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Снимать в Лондоне советскому «Шерлоку Холмсу» было нельзя. Где нашли Бейкер-стрит?",
+   "en": "The Soviet Sherlock Holmes could not film in London. Where did it find its Baker Street?"
+  },
+  "options": [
+   {
+    "ru": "В Риге",
+    "en": "In Riga"
+   },
+   {
+    "ru": "В Таллине",
+    "en": "In Tallinn"
+   },
+   {
+    "ru": "В Ленинграде",
+    "en": "In Leningrad"
+   },
+   {
+    "ru": "В Калининграде",
+    "en": "In Kaliningrad"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "На улице Яуниела. Та же улица сыграла Берн в «Семнадцати мгновениях весны», а Рейхенбахский водопад снимали в Абхазии.",
+   "en": "On Jauniela Street, which also played Bern in Seventeen Moments of Spring. The Reichenbach Falls were filmed in Abkhazia."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Приключения_Шерлока_Холмса_и_доктора_Ватсона_(телесериал)",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "На что намекало название КВН, когда игра только появилась?",
+   "en": "What did the name KVN hint at when the show first appeared?"
+  },
+  "options": [
+   {
+    "ru": "На телевизор «КВН-49»",
+    "en": "The KVN-49 TV set"
+   },
+   {
+    "ru": "На клуб в МГУ",
+    "en": "A Moscow University club"
+   },
+   {
+    "ru": "На фамилии трёх студентов",
+    "en": "Three students' surnames"
+   },
+   {
+    "ru": "На журнал «Крокодил»",
+    "en": "Krokodil magazine"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Телевизор назвали по фамилиям создателей — Кенигсон, Варшавский, Николаевский, а в народе читали «Купил, включил, не работает».",
+   "en": "The set was named after its designers' initials; people read KVN as \"Bought, switched on, doesn't work\"."
+  },
+  "source": "https://ru.wikipedia.org/wiki/КВН-49",
+  "basedOn": "ru_tv_016",
+  "refine": "rewrite",
+  "id": "cur_ru_tv_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«В СССР секса нет!» — сказала советская участница телемоста с США в 1986 году. О чём её спросили?",
+   "en": "'There is no sex in the USSR!' said a Soviet woman on a 1986 TV bridge with the US. What was she asked about?"
+  },
+  "options": [
+   {
+    "ru": "О рекламе на ТВ",
+    "en": "TV commercials"
+   },
+   {
+    "ru": "О западном кино",
+    "en": "Western films"
+   },
+   {
+    "ru": "Об уроках в школе",
+    "en": "School lessons"
+   },
+   {
+    "ru": "О моде на мини-юбки",
+    "en": "Miniskirt fashion"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Американка спросила, есть ли у нас реклама: у них она вся про секс. Из зала тут же крикнули: «Секс у нас есть, у нас рекламы нет!»",
+   "en": "An American asked whether the USSR had TV commercials, since hers were all about sex. Someone shouted: 'We have sex, we don't have commercials!'"
+  },
+  "source": "https://en.wikipedia.org/wiki/There_is_no_sex_in_the_USSR",
+  "basedOn": "ru_tv_034",
+  "refine": "rewrite",
+  "id": "cur_ru_tv_08"
+ },
+ {
+  "id": "cur_ru_tv_09",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В тёплый день 1957 года ТВ-викторина пообещала приз всем, кто придёт в студию в шубе и валенках. Чем всё кончилось?",
+   "en": "On a warm day in 1957 a TV quiz promised a prize to anyone who came in a fur coat and felt boots. What happened?"
+  },
+  "options": [
+   {
+    "ru": "Студию взяли штурмом",
+    "en": "The crowd stormed the studio"
+   },
+   {
+    "ru": "Не пришёл ни один человек",
+    "en": "Not a single person came"
+   },
+   {
+    "ru": "Пришли трое и поделили приз",
+    "en": "Three came and shared the prize"
+   },
+   {
+    "ru": "Эфир прервали из-за жары",
+    "en": "The broadcast was cut over the heat"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ведущий забыл главное условие — газету за 31 декабря. Толпа в шубах смела милицию, передачу закрыли, а через 4 года появился КВН.",
+   "en": "The host forgot the key condition, a newspaper of 31 December. The crowd swept past the police, the show was shut, and KVN came 4 years later."
+  },
+  "source": "https://ru.wikipedia.org/wiki/КВН",
+  "basedOn": "ru_tv_028",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Игроки «Поля чудес» десятилетиями везут Якубовичу подарки. Куда попадают многие из них?",
+   "en": "For decades Pole Chudes contestants have brought Yakubovich gifts. Where do many of them end up?"
+  },
+  "options": [
+   {
+    "ru": "В музей передачи",
+    "en": "In the show's museum"
+   },
+   {
+    "ru": "Домой к Якубовичу",
+    "en": "At Yakubovich's home"
+   },
+   {
+    "ru": "В детские дома",
+    "en": "In children's homes"
+   },
+   {
+    "ru": "В Музей кино",
+    "en": "In the Cinema Museum"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Музей подарков открыли в 2001 году на ВДНХ, а с 2015-го он в Останкине: там и первый чёрный ящик, и костюмы Якубовича.",
+   "en": "The gift museum opened at VDNKh in 2001 and moved to Ostankino in 2015. It also holds the first black box and Yakubovich's costumes."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Поле_чудес",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_tv_10"
+ },
+ {
+  "id": "cur_ru_tv_23",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "31 декабря 1991 года СССР уже не было. Кто вместо главы государства поздравил страну по ТВ с Новым годом?",
+   "en": "On 31 December 1991 the USSR was gone. Who, instead of the head of state, wished the country a happy New Year on TV?"
+  },
+  "options": [
+   {
+    "ru": "Сатирик Михаил Задорнов",
+    "en": "Comedian Mikhail Zadornov"
+   },
+   {
+    "ru": "Диктор Игорь Кириллов",
+    "en": "Newsreader Igor Kirillov"
+   },
+   {
+    "ru": "Певица Алла Пугачёва",
+    "en": "Singer Alla Pugacheva"
+   },
+   {
+    "ru": "Ведущий Леонид Якубович",
+    "en": "Host Leonid Yakubovich"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Задорнов так увлёкся шутками, что речь затянулась, и бой курантов в эфире прозвучал на минуту позже.",
+   "en": "Zadornov got so carried away with his jokes that the speech ran long, and the chimes went out on air a minute late."
+  },
+  "source": "https://www.vokrugsveta.ru/history/zadornov-mavrodi-kim-chen-yn-samye-neozhidannye-novogodnie-obrasheniya-pervykh-lic-i-ne-tolko-id6735326/",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2006 году Британия наградила советского Шерлока Холмса — Василия Ливанова. Чем?",
+   "en": "In 2006 Britain honoured the Soviet Sherlock Holmes, Vasily Livanov. With what?"
+  },
+  "options": [
+   {
+    "ru": "Орденом Британской империи",
+    "en": "The Order of the British Empire"
+   },
+   {
+    "ru": "Титулом сэра",
+    "en": "A knighthood"
+   },
+   {
+    "ru": "Почётным гражданством Лондона",
+    "en": "Honorary citizenship of London"
+   },
+   {
+    "ru": "Ключом от Бейкер-стрит",
+    "en": "The key to Baker Street"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он стал почётным членом ордена — за заслуги перед театром и искусством. А в 2007-м у посольства Британии в Москве поставили памятник Холмсу и Ватсону.",
+   "en": "He was made an honorary member for services to theatre and the arts. In 2007 a Holmes and Watson statue went up by the British Embassy in Moscow."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Ливанов,_Василий_Борисович",
+  "basedOn": "ru_tv_010",
+  "refine": "rewrite",
+  "id": "cur_ru_tv_13"
+ },
+ {
+  "id": "cur_ru_tv_25",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Кабачок „13 стульев“» 15 лет изображал польское кафе, где шутили паны и пани. Как к нему отнеслись в Польше?",
+   "en": "For 15 years 'Kabachok 13 Stulyev' played a Polish cafe full of joking Polish pans and panis. How did Poland react?"
+  },
+  "options": [
+   {
+    "ru": "Наградили актёров",
+    "en": "It gave the actors awards"
+   },
+   {
+    "ru": "Потребовали закрыть",
+    "en": "It demanded it be shut"
+   },
+   {
+    "ru": "Сняли свою версию",
+    "en": "It made its own Polish version"
+   },
+   {
+    "ru": "Запретили показ",
+    "en": "It banned the show"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1976 году участники «Кабачка» получили звание заслуженных деятелей культуры Польши.",
+   "en": "In 1976 the cast of Kabachok were named Honoured Cultural Workers of Poland."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Кабачок_«13_стульев»",
+  "basedOn": "ru_tv_007",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Алису Селезнёву в «Гостье из будущего» сыграла Наталья Гусева. Кем она стала, надолго оставив кино?",
+   "en": "Natalya Guseva played Alisa Selezneva in Guest from the Future. What did she become after leaving film for years?"
+  },
+  "options": [
+   {
+    "ru": "Биохимиком",
+    "en": "A biochemist"
+   },
+   {
+    "ru": "Ветеринаром",
+    "en": "A vet"
+   },
+   {
+    "ru": "Детским врачом",
+    "en": "A children's doctor"
+   },
+   {
+    "ru": "Учительницей",
+    "en": "A teacher"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она окончила институт тонкой химической технологии и с 1994 года работала биохимиком, в том числе в институте Гамалеи.",
+   "en": "She graduated from the Institute of Fine Chemical Technology and worked as a biochemist from 1994, including at the Gamaleya Institute."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Гусева,_Наталья_Евгеньевна",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_tv_16"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Якубович ведёт «Поле чудес» с 1991 года. А кто вёл самые первые выпуски?",
+   "en": "Yakubovich has hosted Pole Chudes since 1991. Who hosted the very first episodes?"
+  },
+  "options": [
+   {
+    "ru": "Владислав Листьев",
+    "en": "Vladislav Listyev"
+   },
+   {
+    "ru": "Александр Масляков",
+    "en": "Alexander Maslyakov"
+   },
+   {
+    "ru": "Валдис Пельш",
+    "en": "Valdis Pelsh"
+   },
+   {
+    "ru": "Владимир Ворошилов",
+    "en": "Vladimir Voroshilov"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Владислав Листьев, один из авторов игры. Владельцы «Колеса фортуны» к ней интереса не проявили, и игру собрали из нескольких зарубежных шоу.",
+   "en": "Vladislav Listyev, one of its creators. Wheel of Fortune's owners showed no interest, so the game was pieced together from several foreign shows."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Поле_чудес",
+  "basedOn": "ru_tv_027",
+  "refine": "rewrite",
+  "id": "cur_ru_tv_30"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В заставке «Что? Где? Когда?», кроме «Заратустры», звучит ария из «Пиковой дамы». С какой строчкой?",
+   "en": "Besides Zarathustra, the What? Where? When? opening plays an aria from The Queen of Spades. Which line?"
+  },
+  "options": [
+   {
+    "ru": "«Что наша жизнь? Игра!»",
+    "en": "'What is our life? A game!'"
+   },
+   {
+    "ru": "«Ах, истомилась я горем…»",
+    "en": "'Ah, I am worn out with grief…'"
+   },
+   {
+    "ru": "«Я вас люблю, люблю безмерно»",
+    "en": "'I love you, love you beyond measure'"
+   },
+   {
+    "ru": "«Прости, небесное созданье»",
+    "en": "'Forgive me, heavenly creature'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это ария Германа. А ещё в передаче звучит «Пляска смерти» Сен-Санса в исполнении группы Ekseption.",
+   "en": "It is Herman's aria. The show also plays Saint-Saëns's Danse Macabre as arranged by Ekseption."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Что%3F_Где%3F_Когда%3F",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_ru_tv_31"
+ },
+ {
+  "id": "cur_ru_tv_27",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сегодня экран ТВ — больше метра по диагонали. А какой был круглый экран самого популярного советского телевизора 1950-х?",
+   "en": "Today a living-room TV is over a metre across. How wide was the round screen of the most popular Soviet TV of the 1950s?"
+  },
+  "answer": 18,
+  "range": [
+   0,
+   120
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "см",
+   "en": "cm"
+  },
+  "fact": {
+   "ru": "18 см, а картинка — 14 на 10,5 см. Её увеличивали линзой, которую наполняли дистиллированной водой или глицерином.",
+   "en": "18 cm, with a 14 by 10.5 cm picture. People enlarged it with a lens filled with distilled water or glycerine."
+  },
+  "source": "https://ru.wikipedia.org/wiki/КВН-49",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Санта-Барбара» шла в США каждый будний день восемь с половиной лет. Сколько в ней серий?",
+   "en": "Santa Barbara aired every weekday in the US for eight and a half years. How many episodes did it have?"
+  },
+  "answer": 2137,
+  "range": [
+   137,
+   4137
+  ],
+  "step": 50,
+  "tolerance": 350,
+  "unit": {
+   "ru": "серий",
+   "en": "episodes"
+  },
+  "fact": {
+   "ru": "2137. Наш канал начал показ сразу с 217-й серии и остановился на 2040-й, так что ни начала, ни финала у нас не видели.",
+   "en": "2137. Russian TV started at episode 217 and stopped at 2040, so viewers here never saw the beginning or the end."
+  },
+  "source": "https://en.wikipedia.org/wiki/Santa_Barbara_(TV_series)",
+  "basedOn": "ru_tv_043",
+  "refine": "rewrite",
+  "id": "cur_ru_tv_33"
+ },
+ {
+  "id": "cur_ru_tv_29",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Брежнев обожал «Семнадцать мгновений весны»: 12 серий по часу с лишним. Сколько раз, по воспоминаниям, он их видел?",
+   "en": "Brezhnev loved Seventeen Moments of Spring: 12 episodes of over an hour. How often did he watch it all, by one account?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "раз",
+   "en": "times"
+  },
+  "fact": {
+   "ru": "Около двадцати раз, по воспоминаниям Анатолия Черняева. А во время первого показа в 1973 году, по рассказам, пустели улицы и падала преступность.",
+   "en": "Some twenty times, Anatoly Chernyaev recalled. During the first showing in 1973, it is said, streets emptied and crime dropped."
+  },
+  "source": "https://en.wikipedia.org/wiki/Seventeen_Moments_of_Spring",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1991 году ЦТ начало показ «Богатые тоже плачут» и прервало его: решили, что успеха не будет. После скольких серий?",
+   "en": "In 1991 Soviet TV began showing The Rich Also Cry and stopped, sure it would flop. After how many episodes?"
+  },
+  "answer": 8,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "серий",
+   "en": "episodes"
+  },
+  "fact": {
+   "ru": "После 8 серий, показанных за четыре дня. Зрители засыпали телевидение просьбами, и 21 декабря 1991 года сериал вернули.",
+   "en": "After 8 episodes, shown over four days. Viewers flooded TV with requests, and the series returned on 21 December 1991."
+  },
+  "source": "https://ru.wikipedia.org/wiki/Богатые_тоже_плачут",
+  "basedOn": "ru_tv_050",
+  "refine": "rewrite",
+  "id": "cur_ru_tv_34"
+ }
+]

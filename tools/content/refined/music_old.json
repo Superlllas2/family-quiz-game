@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Гордона Самнера прозвали Стинг — «жало». За что?",
+   "en": "Gordon Sumner got the nickname Sting. Why?"
+  },
+  "options": [
+   {
+    "ru": "За полосатый свитер",
+    "en": "A striped jumper"
+   },
+   {
+    "ru": "Его покусали осы",
+    "en": "Wasps once stung him"
+   },
+   {
+    "ru": "За резкий боксёрский удар",
+    "en": "His sharp boxing punch"
+   },
+   {
+    "ru": "За колючие шутки",
+    "en": "His barbed jokes"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Руководитель его джаз-бэнда сказал, что в полосатом свитере он похож на осу, и прозвище прилипло навсегда.",
+   "en": "His jazz bandleader said the striped jumper made him look like a wasp, and the name stuck for life."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sting_(musician)",
+  "basedOn": "music_old_033",
+  "refine": "rewrite",
+  "id": "cur_music_old_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Откуда у певицы Мадонны такое имя?",
+   "en": "Where did the singer Madonna get her name?"
+  },
+  "options": [
+   {
+    "ru": "Так её назвали родители",
+    "en": "Her parents gave it"
+   },
+   {
+    "ru": "Придумал её продюсер",
+    "en": "Her producer made it up"
+   },
+   {
+    "ru": "Прозвище из церковного хора",
+    "en": "A church choir nickname"
+   },
+   {
+    "ru": "Так её дразнили в школе",
+    "en": "A school teasing name"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Мадонна — её настоящее имя: Мадонна Луиза Чикконе, названа в честь мамы.",
+   "en": "Madonna is her real name: Madonna Louise Ciccone, named after her mother."
+  },
+  "source": "https://en.wikipedia.org/wiki/Madonna",
+  "basedOn": "music_old_011",
+  "refine": "rewrite",
+  "id": "cur_music_old_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Как Майкл Джексон на концертах наклонялся вперёд на 45 градусов и не падал?",
+   "en": "How did Michael Jackson lean forward 45 degrees on stage without falling?"
+  },
+  "options": [
+   {
+    "ru": "Ботинки цеплялись за сцену",
+    "en": "Shoes hooked into the stage"
+   },
+   {
+    "ru": "Магниты в подошвах ботинок",
+    "en": "Magnets hidden in his soles"
+   },
+   {
+    "ru": "Тренированные мышцы спины",
+    "en": "Years of back muscle training"
+   },
+   {
+    "ru": "Свинцовые грузы в каблуках",
+    "en": "Lead weights in his heels"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Из сцены выдвигались штыри, а в каблуках был паз. На эти ботинки Джексон в 1993 году получил патент. В клипе Smooth Criminal его держали тросы.",
+   "en": "Pegs rose from the stage and slotted into his heels; Jackson patented the shoes in 1993. In the Smooth Criminal video, cables held him."
+  },
+  "source": "https://en.wikipedia.org/wiki/Smooth_Criminal",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_music_old_03"
+ },
+ {
+  "id": "cur_music_old_04",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "ABBA выиграла «Евровидение» 1974 года с песней «Ватерлоо». В каком костюме вышел дирижёр?",
+   "en": "ABBA won Eurovision 1974 with 'Waterloo'. What costume did the conductor wear?"
+  },
+  "options": [
+   {
+    "ru": "Наполеона",
+    "en": "Napoleon"
+   },
+   {
+    "ru": "Викинга",
+    "en": "A Viking"
+   },
+   {
+    "ru": "Английского генерала",
+    "en": "A British general"
+   },
+   {
+    "ru": "Шведского короля",
+    "en": "A Swedish king"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Дирижёра звали Свен-Улоф Вальдофф. А ABBA пели по-английски, а не по-шведски: в те годы правила конкурса это разрешали.",
+   "en": "The conductor was Sven-Olof Walldoff. And ABBA sang in English, not Swedish: the contest rules allowed it in those years."
+  },
+  "source": "https://en.wikipedia.org/wiki/Waterloo_(ABBA_song)",
+  "basedOn": "music_old_001",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Мелодия Yesterday приснилась Полу Маккартни. Как он называл песню, пока не придумал слова?",
+   "en": "Paul McCartney dreamed the tune of Yesterday. What did he call it before he had the lyrics?"
+  },
+  "options": [
+   {
+    "ru": "«Яичница-болтунья»",
+    "en": "'Scrambled Eggs'"
+   },
+   {
+    "ru": "«Утро понедельника»",
+    "en": "'Monday Morning'"
+   },
+   {
+    "ru": "«Сладкий сон»",
+    "en": "'Sweet Dream'"
+   },
+   {
+    "ru": "«Чай с молоком»",
+    "en": "'Tea with Milk'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слова-заглушки были шуточным куплетом про яичницу. А Пол около месяца спрашивал знакомых музыкантов, не украл ли он мелодию.",
+   "en": "The stand-in words were a silly verse about scrambled eggs. And Paul spent about a month asking music people if he had stolen the tune."
+  },
+  "source": "https://en.wikipedia.org/wiki/Yesterday_(Beatles_song)",
+  "basedOn": "music_old_022",
+  "refine": "rewrite",
+  "id": "cur_music_old_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Мелодию Happy Birthday to You напечатали в 1893 году с другими словами. Для кого была та песня?",
+   "en": "The Happy Birthday tune was printed in 1893 with other words. Who was that song for?"
+  },
+  "options": [
+   {
+    "ru": "Для детского сада",
+    "en": "A kindergarten"
+   },
+   {
+    "ru": "Для школьного выпуска",
+    "en": "A school graduation"
+   },
+   {
+    "ru": "Для церковного хора",
+    "en": "A church choir"
+   },
+   {
+    "ru": "Для солдат в казарме",
+    "en": "Soldiers in barracks"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Песню «Доброе утро всем» приписывают сёстрам Хилл; одна руководила детсадом. Позже права на песню приносили Warner около $2 млн в год.",
+   "en": "Good Morning to All is credited to the Hill sisters, one a kindergarten head. Later the rights to the song earned Warner about $2 million a year."
+  },
+  "source": "https://en.wikipedia.org/wiki/Happy_Birthday_to_You",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_music_old_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему глаза Дэвида Боуи казались разного цвета?",
+   "en": "Why did David Bowie's eyes look like two different colours?"
+  },
+  "options": [
+   {
+    "ru": "Удар друга в школьной драке",
+    "en": "A punch in a school fight"
+   },
+   {
+    "ru": "Цветная контактная линза",
+    "en": "A coloured contact lens"
+   },
+   {
+    "ru": "Ожог от сценической пиротехники",
+    "en": "A burn from stage pyrotechnics"
+   },
+   {
+    "ru": "Глазные капли",
+    "en": "Eye drops he used"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Зрачок навсегда остался расширенным. Обидчик, Джордж Андервуд, потом рисовал обложки его альбомов.",
+   "en": "One pupil stayed dilated for good. The puncher, George Underwood, later designed his album covers."
+  },
+  "source": "https://en.wikipedia.org/wiki/David_Bowie",
+  "basedOn": "music_old_024",
+  "refine": "rewrite",
+  "id": "cur_music_old_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "О каком реальном событии песня Deep Purple Smoke on the Water?",
+   "en": "Which real event is Deep Purple's Smoke on the Water about?"
+  },
+  "options": [
+   {
+    "ru": "Пожар в казино на концерте",
+    "en": "A casino fire at a gig"
+   },
+   {
+    "ru": "Пожар на нефтяном танкере",
+    "en": "A burning oil tanker"
+   },
+   {
+    "ru": "Костры на большом рок-фестивале",
+    "en": "Bonfires at a rock festival"
+   },
+   {
+    "ru": "Извержение вулкана",
+    "en": "A volcanic eruption"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1971 году в Монтрё фанат выстрелил из ракетницы на концерте Фрэнка Заппы, и дым поплыл над Женевским озером.",
+   "en": "In Montreux in 1971 a fan fired a flare at a Frank Zappa gig, and smoke drifted over Lake Geneva."
+  },
+  "source": "https://en.wikipedia.org/wiki/Smoke_on_the_Water",
+  "basedOn": "music_old_037",
+  "refine": "rewrite",
+  "id": "cur_music_old_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первым клипом на канале MTV в 1981 году стала песня с говорящим названием. Какая?",
+   "en": "The first video ever shown on MTV in 1981 was a song with a telling title. Which?"
+  },
+  "options": [
+   {
+    "ru": "«Видео убило звезду радио»",
+    "en": "'Video Killed the Radio Star'"
+   },
+   {
+    "ru": "«Радио Га-Га» от группы Квин",
+    "en": "'Radio Ga Ga' by the band Queen"
+   },
+   {
+    "ru": "«Деньги ни за что»",
+    "en": "'Money for Nothing'"
+   },
+   {
+    "ru": "«На радио»",
+    "en": "'On the Radio'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Её спела группа Buggles ещё в 1979 году. А Queen в 1984-м ответили песней «Радио Га-Га» — в защиту радио от телевизора и клипов.",
+   "en": "The Buggles released it back in 1979. In 1984 Queen answered with Radio Ga Ga, defending radio against TV and music videos."
+  },
+  "source": "https://en.wikipedia.org/wiki/Video_Killed_the_Radio_Star",
+  "basedOn": "music_old_018",
+  "refine": "rewrite",
+  "id": "cur_music_old_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Led Zeppelin значит «свинцовый цеппелин». Откуда взялось такое название?",
+   "en": "Led Zeppelin means 'lead zeppelin'. Where did the name come from?"
+  },
+  "options": [
+   {
+    "ru": "Из шутки, что они рухнут",
+    "en": "A joke they'd flop"
+   },
+   {
+    "ru": "Из названия любимого паба",
+    "en": "Their favourite pub"
+   },
+   {
+    "ru": "Из фамилии их менеджера",
+    "en": "Their manager's surname"
+   },
+   {
+    "ru": "Из марки старого фургона",
+    "en": "Their old van's make"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Музыканты The Who, по одной из версий, шутили, что такая группа рухнет, как свинцовый шар. Из Lead убрали a, чтобы не читали «лид».",
+   "en": "By one account, members of the Who joked the band would go down like a lead balloon. The a was dropped so no one would say 'leed'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Led_Zeppelin",
+  "basedOn": "music_old_023",
+  "refine": "rewrite",
+  "id": "cur_music_old_10"
+ },
+ {
+  "id": "cur_music_old_11",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто на самом деле пел мужским голосом на пластинках Boney M.?",
+   "en": "Who really sang the male vocals on Boney M.'s records?"
+  },
+  "options": [
+   {
+    "ru": "Продюсер группы",
+    "en": "The band's producer"
+   },
+   {
+    "ru": "Танцор Бобби Фаррелл",
+    "en": "Dancer Bobby Farrell"
+   },
+   {
+    "ru": "Приглашённый оперный бас",
+    "en": "A hired opera bass"
+   },
+   {
+    "ru": "Солистка Лиз Митчелл",
+    "en": "Singer Liz Mitchell"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В студии мужские партии записывал продюсер Фрэнк Фариан, а Бобби Фаррелл, лицо и танцор группы, пел только на концертах.",
+   "en": "Producer Frank Farian sang the male parts in the studio, while Bobby Farrell, the band's face and dancer, sang only live."
+  },
+  "source": "https://en.wikipedia.org/wiki/Boney_M.",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Канадка Селин Дион выиграла «Евровидение» в 1988 году. За какую страну она выступала?",
+   "en": "Canadian Céline Dion won Eurovision in 1988. Which country did she sing for?"
+  },
+  "options": [
+   {
+    "ru": "За Швейцарию",
+    "en": "Switzerland"
+   },
+   {
+    "ru": "За Францию",
+    "en": "France"
+   },
+   {
+    "ru": "За Нидерланды",
+    "en": "The Netherlands"
+   },
+   {
+    "ru": "За Люксембург",
+    "en": "Luxembourg"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она пела по-французски «Не уходи без меня» и обошла Великобританию всего на одно очко.",
+   "en": "She sang 'Ne partez pas sans moi' in French and beat the United Kingdom by a single point."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_1988",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_music_old_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Хит Уитни Хьюстон I Will Always Love You сочинила Долли Партон. Почему она не отдала песню Элвису?",
+   "en": "Dolly Parton wrote Whitney Houston's hit I Will Always Love You. Why didn't she let Elvis have it?"
+  },
+  "options": [
+   {
+    "ru": "Хотели половину прав",
+    "en": "They wanted half the rights"
+   },
+   {
+    "ru": "Ей не нравился рок-н-ролл",
+    "en": "She disliked rock and roll"
+   },
+   {
+    "ru": "Песню уже купил Голливуд",
+    "en": "Hollywood had already bought it"
+   },
+   {
+    "ru": "Элвис хотел сменить слова",
+    "en": "Elvis wanted new lyrics"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Менеджер Элвиса требовал половину прав. Партон проплакала всю ночь, но отказала, а с кавера Хьюстон, по её словам, заработала «на целый Грейсленд».",
+   "en": "Elvis's manager wanted half the publishing. Parton cried all night but said no, and Houston's cover earned her 'enough to buy Graceland'."
+  },
+  "source": "https://en.wikipedia.org/wiki/I_Will_Always_Love_You",
+  "basedOn": "music_old_016",
+  "refine": "rewrite",
+  "id": "cur_music_old_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Хит «Ламбада» 1989 года оказался чужой песней. Откуда взялась его мелодия?",
+   "en": "The 1989 hit Lambada turned out to be someone else's song. Where did its tune come from?"
+  },
+  "options": [
+   {
+    "ru": "Из боливийской песни",
+    "en": "A Bolivian song"
+   },
+   {
+    "ru": "Из бразильского карнавала",
+    "en": "A Brazilian carnival"
+   },
+   {
+    "ru": "Из кубинской румбы",
+    "en": "A Cuban rumba"
+   },
+   {
+    "ru": "Из португальского фаду",
+    "en": "A Portuguese fado"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это медленная грустная «Ушла в слезах» группы Los Kjarkas (1981). Авторы «Ламбады» их не указали и проиграли суды о плагиате.",
+   "en": "It is Los Kjarkas' slow, sad 'Llorando se fue' (1981). Lambada's makers didn't credit them and lost plagiarism suits."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lambada_(song)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_music_old_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Песню Lucy in the Sky with Diamonds Джон Леннон, по его словам, сочинил под впечатлением от…",
+   "en": "John Lennon said he wrote Lucy in the Sky with Diamonds after seeing…"
+  },
+  "options": [
+   {
+    "ru": "Рисунка сына",
+    "en": "His son's drawing"
+   },
+   {
+    "ru": "Звёздного неба",
+    "en": "A starry sky"
+   },
+   {
+    "ru": "Ожерелья жены",
+    "en": "His wife's necklace"
+   },
+   {
+    "ru": "Сна о полёте",
+    "en": "A dream of flying"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Трёхлетний Джулиан нарисовал одноклассницу Люси. А в 1974 году в честь песни назвали скелет древней «Люси»: песню крутили в лагере учёных.",
+   "en": "Three-year-old Julian drew his classmate Lucy. In 1974 the ancient 'Lucy' skeleton was named after the song, playing in the scientists' camp."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lucy_in_the_Sky_with_Diamonds",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_music_old_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Кто придумал показывать руками буквы под песню Y.M.C.A.?",
+   "en": "Who came up with spelling out the letters with your arms to Y.M.C.A.?"
+  },
+  "options": [
+   {
+    "ru": "Зрители телешоу",
+    "en": "A TV show audience"
+   },
+   {
+    "ru": "Сами «Виллидж Пипл»",
+    "en": "Village People themselves"
+   },
+   {
+    "ru": "Хореограф группы",
+    "en": "The band's choreographer"
+   },
+   {
+    "ru": "Болельщики бейсбола",
+    "en": "Baseball fans"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1979 году на шоу American Bandstand группа хлопала над головой, зал принял это за букву Y и показал остальные. Группа повторила за залом.",
+   "en": "On American Bandstand in 1979 the band clapped overhead, the crowd took it for a Y and made the rest. The band copied the crowd."
+  },
+  "source": "https://en.wikipedia.org/wiki/Y.M.C.A._(song)",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_music_old_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Обычная песня идёт минуты три-четыре. Сколько секунд длится Bohemian Rhapsody группы Queen?",
+   "en": "An ordinary song runs three or four minutes. How many seconds long is Queen's Bohemian Rhapsody?"
+  },
+  "answer": 355,
+  "range": [
+   60,
+   900
+  ],
+  "step": 5,
+  "tolerance": 60,
+  "unit": {
+   "ru": "секунд",
+   "en": "seconds"
+  },
+  "fact": {
+   "ru": "Лейбл считал её слишком длинной для радио, но диджей Кенни Эверетт прокрутил её 14 раз за два дня.",
+   "en": "Executives said it was too long for radio, but DJ Kenny Everett played it 14 times in two days."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bohemian_Rhapsody",
+  "basedOn": "music_old_039",
+  "refine": "rewrite",
+  "id": "cur_music_old_17"
+ },
+ {
+  "id": "cur_music_old_18",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "All I Want for Christmas Is You Мэрайи Кэри вышла в 1994 году. Через сколько лет она впервые стала №1 в США?",
+   "en": "Mariah Carey's All I Want for Christmas Is You came out in 1994. How many years later did it first top the US chart?"
+  },
+  "answer": 25,
+  "range": [
+   0,
+   80
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Это случилось в декабре 2019-го. Песне понадобилось 35 недель в чарте — на тот момент самый медленный путь на первое место.",
+   "en": "It happened in December 2019. The song needed 35 weeks on the chart, at the time the slowest climb to No. 1 ever."
+  },
+  "source": "https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You",
+  "basedOn": "music_old_048",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Стиви Уандера тогда звали «Маленький Стиви». Сколько ему было лет, когда его песня впервые стала №1 в США?",
+   "en": "Stevie Wonder was billed as 'Little Stevie' then. How old was he when he first had a US No. 1 hit?"
+  },
+  "answer": 13,
+  "range": [
+   5,
+   40
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Хитом стала Fingertips 1963 года — живая запись концерта, где слепой мальчик играл на губной гармошке.",
+   "en": "The hit was Fingertips (1963), a live concert recording of the blind boy playing harmonica."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fingertips_(song)",
+  "basedOn": "music_old_044",
+  "refine": "rewrite",
+  "id": "cur_music_old_19"
+ },
+ {
+  "id": "cur_music_old_20",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Организаторы «Вудстока» в 1969 году обещали властям, что придёт не больше 50 тысяч. Сколько тысяч пришло?",
+   "en": "In 1969 Woodstock's organisers promised officials no more than 50,000 would come. How many thousand came?"
+  },
+  "answer": 460,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 100,
+  "unit": {
+   "ru": "тысяч",
+   "en": "thousand"
+  },
+  "fact": {
+   "ru": "По оценкам, от 460 до 500 тысяч. Одних билетов заранее продали около 186 тысяч, а потом заборы снесли, и фестиваль стал бесплатным.",
+   "en": "Estimates run from 460,000 to 500,000. About 186,000 advance tickets alone were sold, then the fences fell and it went free."
+  },
+  "source": "https://en.wikipedia.org/wiki/Woodstock",
+  "basedOn": null,
+  "refine": "new"
+ }
+]

@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Огромную надпись HOLLYWOOD на холмах Лос-Анджелеса поставили в 1923 году. Что она рекламировала?",
+   "en": "The giant HOLLYWOOD sign went up in the Los Angeles hills in 1923. What was it advertising?"
+  },
+  "options": [
+   {
+    "ru": "Новый жилой посёлок",
+    "en": "A new housing estate"
+   },
+   {
+    "ru": "Киностудию",
+    "en": "A film studio"
+   },
+   {
+    "ru": "Радиостанцию",
+    "en": "A radio station"
+   },
+   {
+    "ru": "Новый парк развлечений",
+    "en": "A new amusement park"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала на ней было написано HOLLYWOODLAND, как назывался посёлок; последние четыре буквы сняли только в 1949 году.",
+   "en": "It first read HOLLYWOODLAND, the name of the estate; the last four letters only came down in 1949."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hollywood_Sign",
+  "basedOn": "history20_007",
+  "refine": "rewrite",
+  "id": "cur_history20_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "За 14 лет до гибели «Титаника» вышел роман о «непотопляемом» лайнере, который тонет от айсберга. Как он звался?",
+   "en": "14 years before the Titanic sank, a novel told of an 'unsinkable' liner sunk by an iceberg. What was it called?"
+  },
+  "options": [
+   {
+    "ru": "«Титан»",
+    "en": "The Titan"
+   },
+   {
+    "ru": "«Атлантида»",
+    "en": "The Atlantis"
+   },
+   {
+    "ru": "«Посейдон»",
+    "en": "The Poseidon"
+   },
+   {
+    "ru": "«Колосс»",
+    "en": "The Colossus"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Роман Моргана Робертсона вышел в 1898 году. Его «Титан» тоже затонул в апреле в Северной Атлантике. После катастрофы книгу переиздали.",
+   "en": "Morgan Robertson's novel came out in 1898. His Titan also sank in April in the North Atlantic. After the disaster the book was reissued."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Wreck_of_the_Titan:_Or,_Futility",
+  "basedOn": "history20_002",
+  "refine": "rewrite",
+  "id": "cur_history20_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Рождество 1914 года: британские и немецкие солдаты вышли из окопов на перемирие. Во что, по рассказам, они играли?",
+   "en": "Christmas 1914: British and German soldiers left the trenches for a truce. What, by many accounts, did they play?"
+  },
+  "options": [
+   {
+    "ru": "В футбол",
+    "en": "Football"
+   },
+   {
+    "ru": "В крикет",
+    "en": "Cricket"
+   },
+   {
+    "ru": "В регби",
+    "en": "Rugby"
+   },
+   {
+    "ru": "В хоккей на траве",
+    "en": "Field hockey"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Перемирие было неофициальным, командиры его не одобряли, а мячом порой служила банка из-под тушёнки.",
+   "en": "The truce was unofficial and commanders frowned on it; sometimes the ball was a tin of bully beef."
+  },
+  "source": "https://en.wikipedia.org/wiki/Christmas_truce",
+  "basedOn": "history20_011",
+  "refine": "rewrite",
+  "id": "cur_history20_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В честь кого назван плюшевый мишка Тедди?",
+   "en": "Who is the teddy bear named after?"
+  },
+  "options": [
+   {
+    "ru": "Президента Теодора Рузвельта",
+    "en": "President Theodore Roosevelt"
+   },
+   {
+    "ru": "Мастерицы Маргарете Штайфф",
+    "en": "Toymaker Margarete Steiff"
+   },
+   {
+    "ru": "Медведя из Лондонского зоопарка",
+    "en": "A bear at London Zoo"
+   },
+   {
+    "ru": "Медвежонка из детской книжки",
+    "en": "A bear cub in a children's book"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1902 году Рузвельт на охоте отказался стрелять в привязанного медведя, и карикатура на это сделала историю знаменитой.",
+   "en": "In 1902 Roosevelt refused to shoot a bear tied up for him on a hunt, and a newspaper cartoon made the story famous."
+  },
+  "source": "https://en.wikipedia.org/wiki/Teddy_bear",
+  "basedOn": "history20_020",
+  "refine": "rewrite",
+  "id": "cur_history20_04"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1997 году Британия вернула Китаю Гонконг. Почему именно в этом году?",
+   "en": "In 1997 Britain handed Hong Kong back to China. Why that year?"
+  },
+  "options": [
+   {
+    "ru": "Истёк срок аренды",
+    "en": "A lease ran out"
+   },
+   {
+    "ru": "Так решил референдум",
+    "en": "A referendum decided it"
+   },
+   {
+    "ru": "Китай выкупил город",
+    "en": "China bought the city back"
+   },
+   {
+    "ru": "Так присудил суд ООН",
+    "en": "A UN court ruled so"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1898 году Британия взяла большую часть земель колонии в аренду ровно на 99 лет. Срок вышел, и Китаю вернули весь Гонконг.",
+   "en": "In 1898 Britain leased most of the colony's land for exactly 99 years. When the lease ran out, all of Hong Kong went back to China."
+  },
+  "source": "https://en.wikipedia.org/wiki/Handover_of_Hong_Kong",
+  "basedOn": "history20_010",
+  "refine": "rewrite",
+  "id": "cur_history20_05"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В феврале 1952 года принцесса Елизавета гостила в Кении. Где она ночевала в ночь, когда стала королевой?",
+   "en": "In February 1952 Princess Elizabeth was visiting Kenya. Where did she spend the night she became queen?"
+  },
+  "options": [
+   {
+    "ru": "В отеле на дереве",
+    "en": "In a hotel up a tree"
+   },
+   {
+    "ru": "В палатке в саванне",
+    "en": "In a tent on the savannah"
+   },
+   {
+    "ru": "В спальном вагоне",
+    "en": "In a sleeper train"
+   },
+   {
+    "ru": "На королевской яхте",
+    "en": "On the royal yacht"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Той ночью умер её отец, король Георг VI. Охотник Джим Корбетт записал: на дерево она поднялась принцессой, а спустилась королевой.",
+   "en": "Her father, King George VI, died that night. The hunter Jim Corbett wrote that she climbed up the tree a princess and came down a queen."
+  },
+  "source": "https://en.wikipedia.org/wiki/Treetops_Hotel",
+  "basedOn": "history20_034",
+  "refine": "rewrite",
+  "id": "cur_history20_06"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Почему пандемию гриппа 1918 года прозвали «испанкой»?",
+   "en": "Why was the 1918 flu pandemic called the Spanish flu?"
+  },
+  "options": [
+   {
+    "ru": "Испанские газеты о ней не молчали",
+    "en": "Spanish papers reported it openly"
+   },
+   {
+    "ru": "Первые больные появились в Мадриде",
+    "en": "The first cases were in Madrid"
+   },
+   {
+    "ru": "Её завезли в Европу испанские моряки",
+    "en": "Spanish sailors brought it to Europe"
+   },
+   {
+    "ru": "Её открыл испанский врач",
+    "en": "A Spanish doctor discovered it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шла война, и воюющие страны скрывали эпидемию, а нейтральная Испания писала о ней открыто. Первые подтверждённые случаи были в США.",
+   "en": "It was wartime: the warring countries hid the epidemic, while neutral Spain reported it openly. The first confirmed cases were in the US."
+  },
+  "source": "https://en.wikipedia.org/wiki/Spanish_flu",
+  "basedOn": "history20_016",
+  "refine": "rewrite",
+  "id": "cur_history20_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Дирижабль «Гинденбург» проектировали под негорючий гелий. Почему его всё же наполнили водородом?",
+   "en": "The Hindenburg airship was designed for non-flammable helium. Why was it filled with hydrogen after all?"
+  },
+  "options": [
+   {
+    "ru": "США запретили вывоз гелия",
+    "en": "The US banned helium exports"
+   },
+   {
+    "ru": "Гелий ещё не умели добывать",
+    "en": "Nobody could extract helium yet"
+   },
+   {
+    "ru": "Гелий разъедал бы оболочку",
+    "en": "Helium would eat the envelope"
+   },
+   {
+    "ru": "Гелий запретила Лига Наций",
+    "en": "The League of Nations banned helium"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Гелий в нужных объёмах был только у США, а их закон 1927 года запрещал его вывоз. Водород дешевле, но горит: в 1937 году дирижабль сгорел.",
+   "en": "Only the US had helium in such amounts, and its 1927 law banned exports. Hydrogen is cheaper but burns: in 1937 the airship went up in flames."
+  },
+  "source": "https://en.wikipedia.org/wiki/LZ_129_Hindenburg",
+  "basedOn": "history20_022",
+  "refine": "rewrite",
+  "id": "cur_history20_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В США с 1920 по 1933 год действовал сухой закон. Но виски всё равно можно было купить законно. Где?",
+   "en": "The US had Prohibition from 1920 to 1933. Yet you could still buy whiskey legally. Where?"
+  },
+  "options": [
+   {
+    "ru": "В аптеке",
+    "en": "At a pharmacy"
+   },
+   {
+    "ru": "На вокзале",
+    "en": "At a railway station"
+   },
+   {
+    "ru": "В булочной",
+    "en": "At a bakery"
+   },
+   {
+    "ru": "В парикмахерской",
+    "en": "At a barber's"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По рецепту врача, «от болезней»: их выписывали около 11 млн в год. По одной версии, на этом сеть аптек Walgreens выросла с 20 до 525 магазинов.",
+   "en": "On a doctor's prescription, 'as medicine': about 11 million a year. Some historians think this grew Walgreens from 20 to 525 stores."
+  },
+  "source": "https://en.wikipedia.org/wiki/Prohibition_in_the_United_States",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_history20_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1945 году два офицера США наспех провели по карте из журнала National Geographic линию, разделившую страну. Какую?",
+   "en": "In 1945 two American officers hastily drew a line on a National Geographic map that split a country in two. Which one?"
+  },
+  "options": [
+   {
+    "ru": "Корею",
+    "en": "Korea"
+   },
+   {
+    "ru": "Вьетнам",
+    "en": "Vietnam"
+   },
+   {
+    "ru": "Кипр",
+    "en": "Cyprus"
+   },
+   {
+    "ru": "Ирландию",
+    "en": "Ireland"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Линией стала 38-я параллель. Знатоков Кореи не спросили, и Дин Раск потом признал: зная её историю, он выбрал бы другую линию.",
+   "en": "The line was the 38th parallel. No Korea experts were asked, and Dean Rusk later admitted he would have picked another line had he known its history."
+  },
+  "source": "https://en.wikipedia.org/wiki/Division_of_Korea",
+  "basedOn": "history20_026",
+  "refine": "rewrite",
+  "id": "cur_history20_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 1916 году Германия первой ввела летнее время по всей стране. Зачем перевели часы?",
+   "en": "In 1916 Germany was the first to bring in daylight saving time nationwide. Why were the clocks changed?"
+  },
+  "options": [
+   {
+    "ru": "Чтобы экономить уголь",
+    "en": "To save coal"
+   },
+   {
+    "ru": "Ради удобства фермеров",
+    "en": "To help farmers"
+   },
+   {
+    "ru": "Чтобы жить по часам Лондона",
+    "en": "To match London's clocks"
+   },
+   {
+    "ru": "Чтобы армия вставала раньше",
+    "en": "To get troops up earlier"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шла война, и светлый вечер экономил топливо. А фермеры, вопреки мифу, летнее время как раз не любят: коровам часы не указ.",
+   "en": "It was wartime, and light evenings saved fuel. Farmers, despite the myth, have long opposed it: cows don't read clocks."
+  },
+  "source": "https://en.wikipedia.org/wiki/Daylight_saving_time",
+  "basedOn": "history20_033",
+  "refine": "rewrite",
+  "id": "cur_history20_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В какой стране первой в мире премьер-министром стала женщина, ещё в 1960 году?",
+   "en": "Which country was the first in the world to have a woman prime minister, back in 1960?"
+  },
+  "options": [
+   {
+    "ru": "Шри-Ланка",
+    "en": "Sri Lanka"
+   },
+   {
+    "ru": "Индия",
+    "en": "India"
+   },
+   {
+    "ru": "Израиль",
+    "en": "Israel"
+   },
+   {
+    "ru": "Великобритания",
+    "en": "The United Kingdom"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тогда страна звалась Цейлоном. Сиримаво Бандаранаике опередила Индиру Ганди почти на 6 лет, Голду Меир на 9, а Тэтчер на 19.",
+   "en": "It was then called Ceylon. Sirimavo Bandaranaike beat Indira Gandhi by almost 6 years, Golda Meir by 9 and Thatcher by 19."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sirimavo_Bandaranaike",
+  "basedOn": "history20_035",
+  "refine": "rewrite",
+  "id": "cur_history20_12"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Че Гевара — символ кубинской революции. А в какой стране он родился?",
+   "en": "Che Guevara is the face of the Cuban revolution. But in which country was he born?"
+  },
+  "options": [
+   {
+    "ru": "В Аргентине",
+    "en": "Argentina"
+   },
+   {
+    "ru": "На Кубе",
+    "en": "Cuba"
+   },
+   {
+    "ru": "В Мексике",
+    "en": "Mexico"
+   },
+   {
+    "ru": "В Венесуэле",
+    "en": "Venezuela"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он выучился на врача в Буэнос-Айресе, а прозвище «Че» получил за аргентинское словечко che, что-то вроде «эй».",
+   "en": "He trained as a doctor in Buenos Aires and got the nickname Che from the Argentine filler word che, something like 'hey'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Che_Guevara",
+  "basedOn": "history20_038",
+  "refine": "rewrite",
+  "id": "cur_history20_13"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Берлинскую стену в ноябре 1989 года открыли почти случайно. С чего всё началось?",
+   "en": "The Berlin Wall was opened almost by accident in November 1989. What set it off?"
+  },
+  "options": [
+   {
+    "ru": "Оговорка чиновника",
+    "en": "An official's slip"
+   },
+   {
+    "ru": "Пограничник перепутал приказ",
+    "en": "A guard misread his orders"
+   },
+   {
+    "ru": "Сбой сигнализации на границе",
+    "en": "A border alarm failure"
+   },
+   {
+    "ru": "Опечатка в газете",
+    "en": "A newspaper misprint"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Чиновник ГДР Шабовски сказал журналистам, что новые правила выезда действуют «немедленно». Той же ночью к ним хлынули толпы, и пограничники открыли проходы.",
+   "en": "East German official Schabowski told reporters the new travel rules applied 'immediately'. That night crowds rushed there, and the guards opened the gates."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall",
+  "basedOn": "history20_001",
+  "refine": "rewrite",
+  "id": "cur_history20_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чего больше всего привезли самолёты в Западный Берлин во время блокады 1948–1949 годов?",
+   "en": "What made up most of the cargo flown into West Berlin during the 1948–49 airlift?"
+  },
+  "options": [
+   {
+    "ru": "Угля",
+    "en": "Coal"
+   },
+   {
+    "ru": "Муки",
+    "en": "Flour"
+   },
+   {
+    "ru": "Сухого молока",
+    "en": "Powdered milk"
+   },
+   {
+    "ru": "Шоколада",
+    "en": "Chocolate"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Угля было около двух третей груза, а лётчик Гейл Халворсен сбрасывал детям конфеты на парашютиках из носовых платков.",
+   "en": "Coal was about two thirds of it, while pilot Gail Halvorsen dropped sweets to children on handkerchief parachutes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Berlin_Blockade",
+  "basedOn": "history20_024",
+  "refine": "same",
+  "id": "cur_history20_15"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Записи Марии Кюри хранят во Франции в ящиках, обшитых свинцом. Зачем?",
+   "en": "Marie Curie's notebooks are kept in France in lead-lined boxes. Why?"
+  },
+  "options": [
+   {
+    "ru": "Они радиоактивны",
+    "en": "They're radioactive"
+   },
+   {
+    "ru": "Чтобы не выцвели чернила",
+    "en": "So the ink won't fade"
+   },
+   {
+    "ru": "От сырости и плесени",
+    "en": "To protect them from damp"
+   },
+   {
+    "ru": "Чтобы их не украли",
+    "en": "So they can't be stolen"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Радий в них распадается вдвое лишь за 1600 лет, и читать их можно только в защитной одежде. Кюри первой в мире получила две Нобелевские премии.",
+   "en": "Radium takes 1,600 years to lose half its strength, so readers wear protective clothing. Curie was the first person to win two Nobel Prizes."
+  },
+  "source": "https://en.wikipedia.org/wiki/Marie_Curie",
+  "basedOn": "history20_025",
+  "refine": "rewrite",
+  "id": "cur_history20_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько спасательных шлюпок было на «Титанике»?",
+   "en": "How many lifeboats did the Titanic carry?"
+  },
+  "answer": 20,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "шлюпок",
+   "en": "lifeboats"
+  },
+  "fact": {
+   "ru": "Это даже больше, чем требовал закон: число шлюпок считали по тоннажу судна, а не по числу людей на борту.",
+   "en": "That was more than the law required: lifeboat rules went by a ship's tonnage, not by how many people it carried."
+  },
+  "source": "https://en.wikipedia.org/wiki/Lifeboats_of_the_Titanic",
+  "basedOn": "history20_042",
+  "refine": "same",
+  "id": "cur_history20_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Какой была средняя продолжительность жизни в мире в 1900 году?",
+   "en": "What was the average life expectancy in the world in 1900?"
+  },
+  "answer": 32,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Средняя была так низка из-за детской смертности; к концу века она примерно удвоилась.",
+   "en": "The average was so low mainly because so many children died young; by the century's end it had roughly doubled."
+  },
+  "source": "https://ourworldindata.org/life-expectancy",
+  "basedOn": "history20_049",
+  "refine": "same",
+  "id": "cur_history20_18"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Американки голосуют на выборах страны с 1920 года. Через сколько лет такое право получили женщины Швейцарии?",
+   "en": "American women have voted in national elections since 1920. How many years later did Swiss women get that right?"
+  },
+  "answer": 51,
+  "range": [
+   0,
+   120
+  ],
+  "step": 1,
+  "tolerance": 12,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Лишь в 1971 году, после референдума, где голосовали одни мужчины. А последний кантон пустил женщин на местные выборы в 1990-м, по решению суда.",
+   "en": "Only in 1971, after a referendum in which only men voted. The last canton let women vote locally only in 1990, on a court's order."
+  },
+  "source": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_Switzerland",
+  "basedOn": "history20_047",
+  "refine": "rewrite",
+  "id": "cur_history20_19"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Футбольное поле — около 105 метров в длину. Какой длины был дирижабль «Гинденбург»?",
+   "en": "A football pitch is about 105 metres long. How long was the Hindenburg airship?"
+  },
+  "answer": 245,
+  "range": [
+   0,
+   600
+  ],
+  "step": 5,
+  "tolerance": 40,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "245 метров: дирижабли этого класса — самые длинные летательные аппараты в истории. «Титаник» был длиннее всего на 24 метра.",
+   "en": "245 metres: airships of its class are the longest flying machines ever built. The Titanic was only 24 metres longer."
+  },
+  "source": "https://en.wikipedia.org/wiki/LZ_129_Hindenburg",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_history20_22"
+ }
+]

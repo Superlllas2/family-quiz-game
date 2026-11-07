@@ -1,0 +1,670 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что было на самом деле на знаменитом фото Несси 1934 года?",
+   "en": "What was really in the famous 1934 photo of Nessie?"
+  },
+  "options": [
+   {
+    "ru": "Игрушечная подлодка",
+    "en": "A toy submarine"
+   },
+   {
+    "ru": "Голова плывущего оленя",
+    "en": "A swimming deer's head"
+   },
+   {
+    "ru": "Всплывшее бревно",
+    "en": "A floating log"
+   },
+   {
+    "ru": "Спина тюленя",
+    "en": "A seal's back"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Обман раскрылся в 1994 году: к игрушечной подлодке из магазина приделали голову на шее из шпатлёвки.",
+   "en": "The hoax came out in 1994: a head and neck of wood putty had been fixed onto a toy submarine."
+  },
+  "source": "https://en.wikipedia.org/wiki/Loch_Ness_Monster",
+  "basedOn": "mysteries_006",
+  "refine": "rewrite",
+  "id": "cur_mysteries_01"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем два англичанина, признавшиеся в 1991 году, делали «круги на полях»?",
+   "en": "What did the two Englishmen who confessed in 1991 use to make crop circles?"
+  },
+  "options": [
+   {
+    "ru": "Доской и верёвкой",
+    "en": "A plank and rope"
+   },
+   {
+    "ru": "Вертолётным винтом",
+    "en": "A helicopter's rotor"
+   },
+   {
+    "ru": "Лазером",
+    "en": "A laser"
+   },
+   {
+    "ru": "Газонокосилкой",
+    "en": "A lawnmower"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Даг Бауэр и Дэйв Чорли начали ещё в 1970-х, а чтобы идти по прямой, целились проволочной петлёй на кепке.",
+   "en": "Doug Bower and Dave Chorley had been at it since the 1970s, aiming with a loop of wire fixed to a cap."
+  },
+  "source": "https://en.wikipedia.org/wiki/Crop_circle",
+  "basedOn": "mysteries_011",
+  "refine": "rewrite",
+  "id": "cur_mysteries_02"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Где в 2012 году нашли останки английского короля Ричарда III?",
+   "en": "Where were the remains of England's King Richard III found in 2012?"
+  },
+  "options": [
+   {
+    "ru": "Под парковкой",
+    "en": "Under a car park"
+   },
+   {
+    "ru": "В Темзе",
+    "en": "In the River Thames"
+   },
+   {
+    "ru": "Под футбольным полем",
+    "en": "Under a football pitch"
+   },
+   {
+    "ru": "В подвале Тауэра",
+    "en": "In the Tower's cellar"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Парковку построили на месте исчезнувшей монастырской церкви; в 2015 году короля перезахоронили в соборе Лестера.",
+   "en": "The car park stood on a lost friary church; in 2015 he was reburied in Leicester Cathedral."
+  },
+  "source": "https://en.wikipedia.org/wiki/Exhumation_and_reburial_of_Richard_III_of_England",
+  "basedOn": "mysteries_013",
+  "refine": "same",
+  "id": "cur_mysteries_03"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чью могилу так и не нашли, хотя её ищут даже со спутников?",
+   "en": "Whose grave has never been found, even with satellite searches?"
+  },
+  "options": [
+   {
+    "ru": "Чингисхана",
+    "en": "Genghis Khan"
+   },
+   {
+    "ru": "Тамерлана",
+    "en": "Timur the Lame"
+   },
+   {
+    "ru": "Тутанхамона",
+    "en": "Tutankhamun"
+   },
+   {
+    "ru": "Карла Великого",
+    "en": "Charlemagne"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По легенде, место похорон затоптали табуном коней, а многие монголы считают, что тревожить его нельзя.",
+   "en": "Legend says horses trampled the burial site flat, and many Mongolians feel it should never be disturbed."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tomb_of_Genghis_Khan",
+  "basedOn": "mysteries_012",
+  "refine": "rewrite",
+  "id": "cur_mysteries_04"
+ },
+ {
+  "id": "cur_mysteries_05",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1977 году астроном обвёл на распечатке телескопа странный сигнал из космоса и написал рядом одно слово. Какое?",
+   "en": "In 1977 an astronomer circled a strange space signal on a telescope printout and wrote one word beside it. Which?"
+  },
+  "options": [
+   {
+    "ru": "«Ого!»",
+    "en": "Wow!"
+   },
+   {
+    "ru": "«Эврика!»",
+    "en": "Eureka!"
+   },
+   {
+    "ru": "«Спасите!»",
+    "en": "Help!"
+   },
+   {
+    "ru": "«Привет!»",
+    "en": "Hello!"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так сигнал и прозвали — «Wow!». Он шёл все 72 секунды, что телескоп смотрел в ту точку неба, и больше не повторился ни разу.",
+   "en": "So it became the 'Wow!' signal. It lasted the whole 72 seconds the telescope watched that spot, and it has never come back."
+  },
+  "source": "https://en.wikipedia.org/wiki/Wow!_signal",
+  "basedOn": "mysteries_015",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_mysteries_06",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 1958 году в Калифорнии нашли огромные следы — так родилось имя «Бигфут». Чем их, по словам родных шутника, наделали?",
+   "en": "Huge footprints found in California in 1958 gave us the name 'Bigfoot'. What made them, says the prankster's family?"
+  },
+  "options": [
+   {
+    "ru": "Деревянными ступнями",
+    "en": "Carved wooden feet"
+   },
+   {
+    "ru": "Чучелом медвежьих лап",
+    "en": "Stuffed bear paws"
+   },
+   {
+    "ru": "Ботинками на ходулях",
+    "en": "Boots worn on stilts"
+   },
+   {
+    "ru": "Ластами для плавания",
+    "en": "Swimming flippers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Строитель Рэй Уоллес умер в 2002 году, и родные показали его грубые деревянные ступни: следы, по их словам, были розыгрышем. Не все с этим согласны.",
+   "en": "Builder Ray Wallace died in 2002, and his family showed his crude wooden feet, saying the tracks were a prank. Not everyone agrees."
+  },
+  "source": "https://en.wikipedia.org/wiki/Raymond_L._Wallace",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Марию Селесту» нашли в 1872 году целой, с запасом еды и воды, но без людей. Что было в трюме?",
+   "en": "The Mary Celeste was found in 1872 intact, with food and water aboard, but nobody on her. What was in her hold?"
+  },
+  "options": [
+   {
+    "ru": "Бочки спирта",
+    "en": "Barrels of alcohol"
+   },
+   {
+    "ru": "Бочки пороха",
+    "en": "Barrels of gunpowder"
+   },
+   {
+    "ru": "Ящики чая",
+    "en": "Chests of tea"
+   },
+   {
+    "ru": "Слитки золота",
+    "en": "Gold bars"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "1701 бочка спирта. Девять бочек потом оказались пусты; одна из версий: капитан побоялся взрыва паров и увёл всех в шлюпку, которая пропала.",
+   "en": "1,701 barrels of alcohol. Nine later proved empty; one theory says the captain feared the fumes would explode and took everyone into a boat that was lost."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mary_Celeste",
+  "basedOn": "mysteries_016",
+  "refine": "rewrite",
+  "id": "cur_mysteries_07"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой писатель в 1884 году прославил «Марию Селесту», сочинив о ней рассказ?",
+   "en": "Which writer made the Mary Celeste famous with an 1884 story about her?"
+  },
+  "options": [
+   {
+    "ru": "Конан Дойл",
+    "en": "Conan Doyle"
+   },
+   {
+    "ru": "Жюль Верн",
+    "en": "Jules Verne"
+   },
+   {
+    "ru": "Эдгар По",
+    "en": "Edgar Allan Poe"
+   },
+   {
+    "ru": "Чарльз Диккенс",
+    "en": "Charles Dickens"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Молодой врач выдал вымысел за «записки выжившего», многие поверили, а его ошибка в имени — «Мари Селеста» — прижилась.",
+   "en": "The young doctor wrote it as a survivor's statement, many took it as true, and his misspelt Marie Celeste stuck."
+  },
+  "source": "https://en.wikipedia.org/wiki/J._Habakuk_Jephson%27s_Statement",
+  "basedOn": "mysteries_017",
+  "refine": "rewrite",
+  "id": "cur_mysteries_08"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что говорят о Бермудском треугольнике страховщики «Ллойдс» и береговая охрана США?",
+   "en": "What do Lloyd's insurers and the US Coast Guard say about the Bermuda Triangle?"
+  },
+  "options": [
+   {
+    "ru": "Он не опаснее других морей",
+    "en": "It is no worse than other seas"
+   },
+   {
+    "ru": "Страховка там вдвое дороже",
+    "en": "Insurance there costs twice as much"
+   },
+   {
+    "ru": "Там отказывают компасы",
+    "en": "Compasses fail there"
+   },
+   {
+    "ru": "Суда обязаны его обходить",
+    "en": "Ships must sail around it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1975 году журналист Ларри Куше проверил истории из книг: цифры раздули, о штормах умолчали, а многие крушения были далеко от «треугольника».",
+   "en": "In 1975 journalist Larry Kusche checked the books' stories: numbers were inflated, storms left out, and many wrecks happened far from the Triangle."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bermuda_Triangle",
+  "basedOn": "mysteries_018",
+  "refine": "rewrite",
+  "id": "cur_mysteries_09"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2017 году учёные проверили ДНК «образцов йети» из музеев и монастырей. Кому они принадлежали?",
+   "en": "In 2017 scientists tested the DNA of yeti samples from museums and monasteries. What were they?"
+  },
+  "options": [
+   {
+    "ru": "Медведям и собаке",
+    "en": "Bears and a dog"
+   },
+   {
+    "ru": "Снежным барсам",
+    "en": "Snow leopards"
+   },
+   {
+    "ru": "Горным козлам",
+    "en": "Mountain goats"
+   },
+   {
+    "ru": "Неизвестному примату",
+    "en": "An unknown primate"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Восемь образцов принадлежали бурым медведям Гималаев и Тибета и белогрудому медведю, а «зуб йети» — собаке.",
+   "en": "Eight came from Himalayan and Tibetan brown bears and an Asian black bear; the yeti tooth was a dog's."
+  },
+  "source": "https://www.nationalgeographic.com/science/article/yeti-legends-real-animals-dna-bears-himalaya-science",
+  "basedOn": "mysteries_021",
+  "refine": "rewrite",
+  "id": "cur_mysteries_10"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В 2018 году учёные собрали ДНК из воды озера Лох-Несс. Чьей ДНК там оказалось очень много?",
+   "en": "In 2018 scientists sampled DNA from the water of Loch Ness. Which animal's DNA turned up in abundance?"
+  },
+  "options": [
+   {
+    "ru": "Угрей",
+    "en": "Eels"
+   },
+   {
+    "ru": "Тюленей",
+    "en": "Seals"
+   },
+   {
+    "ru": "Осьминогов",
+    "en": "Octopuses"
+   },
+   {
+    "ru": "Плезиозавров",
+    "en": "Plesiosaurs"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "ДНК рептилий не нашлось вовсе, зато угрей — полно, так что версию о гигантском угре учёные исключать не стали.",
+   "en": "There was no reptile DNA at all but lots of eel, so the team could not rule out a giant eel."
+  },
+  "source": "https://en.wikipedia.org/wiki/Loch_Ness_Monster",
+  "basedOn": "mysteries_022",
+  "refine": "same",
+  "id": "cur_mysteries_11"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "От чего на самом деле умер лорд Карнарвон, оплативший раскопки гробницы Тутанхамона?",
+   "en": "What really killed Lord Carnarvon, who funded the dig at Tutankhamun's tomb?"
+  },
+  "options": [
+   {
+    "ru": "Заражение от укуса комара",
+    "en": "An infected mosquito bite"
+   },
+   {
+    "ru": "Отравился ядом на стенах",
+    "en": "Poison on the tomb walls"
+   },
+   {
+    "ru": "Вдохнул плесень из саркофага",
+    "en": "Mould from the sarcophagus"
+   },
+   {
+    "ru": "Укус кобры у гробницы",
+    "en": "A cobra bite at the tomb"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Он порезал укус бритвой и получил заражение крови, а Говард Картер, вскрывший гробницу, прожил до 1939 года.",
+   "en": "He nicked the bite while shaving and got blood poisoning; Howard Carter, who opened the tomb, lived until 1939."
+  },
+  "source": "https://en.wikipedia.org/wiki/Curse_of_the_pharaohs",
+  "basedOn": "mysteries_023",
+  "refine": "rewrite",
+  "id": "cur_mysteries_12"
+ },
+ {
+  "id": "cur_mysteries_13",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что изначально означало «Эльдорадо» в легендах индейцев муисков?",
+   "en": "What did 'El Dorado' originally mean in the legends of the Muisca people?"
+  },
+  "options": [
+   {
+    "ru": "Вождь в золотой пыли",
+    "en": "A chief covered in gold dust"
+   },
+   {
+    "ru": "Золотой город в горах",
+    "en": "A golden city in the mountains"
+   },
+   {
+    "ru": "Река с золотым песком",
+    "en": "A river with golden sand"
+   },
+   {
+    "ru": "Золотой идол в храме",
+    "en": "A golden idol in a temple"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Новый вождь, обсыпанный золотом, бросал сокровища в озеро Гуатавита; конкистадоры превратили его в целую страну.",
+   "en": "A new chief, coated in gold, threw treasure into Lake Guatavita; conquistadors turned him into a whole land."
+  },
+  "source": "https://en.wikipedia.org/wiki/El_Dorado",
+  "basedOn": "mysteries_026",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как власти Страсбурга сначала «лечили» танцевальную чуму 1518 года?",
+   "en": "How did the authorities of Strasbourg first try to cure the dancing plague of 1518?"
+  },
+  "options": [
+   {
+    "ru": "Наняли им музыкантов",
+    "en": "Hired musicians for them"
+   },
+   {
+    "ru": "Штрафовали танцующих",
+    "en": "Fined the dancers"
+   },
+   {
+    "ru": "Обливали людей холодной водой",
+    "en": "Doused people with cold water"
+   },
+   {
+    "ru": "Закрыли городские ворота",
+    "en": "Shut the city gates"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Думали, что болезнь надо «вытанцевать», и даже построили сцену; сегодня это считают массовой истерией в голодный год.",
+   "en": "They thought the dancers had to dance it out and built a stage; today it is seen as mass hysteria in a famine year."
+  },
+  "source": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518",
+  "basedOn": "mysteries_027",
+  "refine": "rewrite",
+  "id": "cur_mysteries_14"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В Долине Смерти тяжёлые камни сами «ползут» по дну высохшего озера, оставляя длинные следы. Что их двигает?",
+   "en": "In Death Valley heavy stones 'crawl' across a dry lakebed by themselves, leaving long trails. What moves them?"
+  },
+  "options": [
+   {
+    "ru": "Тонкий лёд и ветер",
+    "en": "Thin ice and wind"
+   },
+   {
+    "ru": "Подземные толчки",
+    "en": "Small earthquakes"
+   },
+   {
+    "ru": "Магнитное поле Земли",
+    "en": "The magnetic field"
+   },
+   {
+    "ru": "Сильные ливни",
+    "en": "Heavy downpours"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Зимой лужа замерзает тонкой коркой, а лёгкий ветер толкает льдины, и они тащат камни по раскисшему дну.",
+   "en": "A winter pond freezes into thin panes, and a light breeze pushes them so they shove the stones across soft mud."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sailing_stones",
+  "basedOn": "mysteries_028",
+  "refine": "rewrite",
+  "id": "cur_mysteries_21"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "По преданиям жителей острова Пасхи, как многотонные моаи добрались от каменоломни до своих мест?",
+   "en": "According to Easter Island legends, how did the multi-ton moai get from the quarry to their places?"
+  },
+  "options": [
+   {
+    "ru": "Сами пришли пешком",
+    "en": "Walked by themselves"
+   },
+   {
+    "ru": "Их катили на брёвнах",
+    "en": "Rolled on logs"
+   },
+   {
+    "ru": "Их сплавили по морю",
+    "en": "Floated by sea"
+   },
+   {
+    "ru": "Их тащили по песку",
+    "en": "Dragged over the sand"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 2012 году 18 человек тремя верёвками раскачивали 4-тонную копию моаи, и она «прошагала» 100 метров меньше чем за час.",
+   "en": "In 2012, 18 people rocked a 4-tonne moai replica with three ropes, and it 'walked' 100 metres in under an hour."
+  },
+  "source": "https://www.heritagedaily.com/2012/10/easter-island-statues-walked-into-position-say-experts/61152",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_mysteries_16"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "«Голубые» камни Стоунхенджа привезли из Уэльса, за 240 км. А сколько км проделал Алтарный камень из Шотландии?",
+   "en": "Stonehenge's bluestones came from Wales, 240 km away. How many km did the Altar Stone travel from Scotland?"
+  },
+  "answer": 700,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 10,
+  "tolerance": 150,
+  "unit": {
+   "ru": "км",
+   "en": "km"
+  },
+  "fact": {
+   "ru": "Шеститонную плиту считали валлийской, пока в 2024 году анализ её кристаллов не указал на северо-восток Шотландии: не меньше 700 км.",
+   "en": "The six-tonne slab was thought to be Welsh until a 2024 study of its crystals pointed to north-east Scotland: at least 700 km away."
+  },
+  "source": "https://aber.ac.uk/en/news/archive/2024/08/title-274690-en.html",
+  "basedOn": "mysteries_046",
+  "refine": "rewrite",
+  "id": "cur_mysteries_17"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "В 1991 году туристы нашли во льду Альп тело и решили, что альпинист погиб недавно. Сколько лет было мумии Эци?",
+   "en": "In 1991 hikers found a body in Alpine ice and thought a climber had died recently. How old was the mummy, Ötzi?"
+  },
+  "answer": 5300,
+  "range": [
+   0,
+   20000
+  ],
+  "step": 100,
+  "tolerance": 1000,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Эци жил около 3300 года до н. э. — раньше пирамид. Убила его стрела в плечо, а при нём были медный топор и лук.",
+   "en": "Ötzi lived around 3300 BC, before the pyramids. An arrow in his shoulder killed him; he carried a copper axe and a bow."
+  },
+  "source": "https://en.wikipedia.org/wiki/%C3%96tzi",
+  "basedOn": "mysteries_043",
+  "refine": "rewrite",
+  "id": "cur_mysteries_18"
+ },
+ {
+  "id": "cur_mysteries_23",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Самый высокий из поставленных моаи — почти 10 м. А какой высоты самый большой, брошенный недоделанным в каменоломне?",
+   "en": "The tallest moai ever stood up is almost 10 m. How tall is the biggest one, left unfinished in the quarry?"
+  },
+  "answer": 21,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Около 21 метра — вдвое выше рекордного, а весил бы он больше 145 тонн. Почти 400 моаи так и остались в каменоломне Рано-Рараку.",
+   "en": "About 21 m, twice the record holder, and it would weigh over 145 tonnes. Almost 400 moai remain in the Rano Raraku quarry."
+  },
+  "source": "https://en.wikipedia.org/wiki/Moai",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Кракена из морских легенд, похоже, «списали» с гигантского кальмара. Какой он длины вместе со щупальцами, в метрах?",
+   "en": "The kraken of sailors' tales was probably a giant squid. How long is one, tentacles included, in metres?"
+  },
+  "answer": 12,
+  "range": [
+   0,
+   60
+  ],
+  "step": 0.5,
+  "tolerance": 4,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Самки дорастают до 12–13 м. Живым в природе гигантского кальмара впервые сфотографировали лишь в 2004 году, а в его глубинах сняли на видео — в 2012-м.",
+   "en": "Females reach 12-13 m. A live giant squid was first photographed in the wild only in 2004, and first filmed in its deep-sea home in 2012."
+  },
+  "source": "https://en.wikipedia.org/wiki/Giant_squid",
+  "basedOn": null,
+  "refine": "new",
+  "id": "cur_mysteries_24"
+ }
+]
