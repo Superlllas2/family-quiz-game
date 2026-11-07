@@ -119,9 +119,9 @@ The person at the laptop opens and closes it with the Tab key and uses it with t
 
 Phones keep only their own settings: language, more time, leave (`06_phone_screens.md`).
 
-## The question bank test (decisions/0020)
+## The question bank (D130)
 
-A test tool, not part of the finished game (`banks.chooseOnStart`). When the app starts, the TV asks "Какие вопросы играем?": **Все вопросы** (the full bank) or **Отборные** (the curated test bank, 12 topics). Phones can join meanwhile; Escape keeps the full bank. The pause menu's "Вопросы: …" changes it from the next game. The topic vote offers only the chosen bank's topics.
+The game plays one bank: the refined questions in `content/questions_refined.json`. There is no bank choice at start and none in the pause menu. The topic vote offers only the topics that have questions in it, and the mixed door. `content/questions.json`, the full bank, stays in the repo as the source the refining works from (`question_audit/refining_plan.md`); the game does not load it. A question whose full bank question (`basedOn`) a family saw before D130 counts as seen. (The bank test of decisions/0020, D116 to D118, offered both banks; D130 replaced it.)
 
 ## Pause menu (decisions/0018)
 

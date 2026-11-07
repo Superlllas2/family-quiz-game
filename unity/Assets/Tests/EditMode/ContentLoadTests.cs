@@ -46,8 +46,7 @@ namespace FamilyQuiz.Tests
             Assert.That(read, Is.EquivalentTo(new[]
             {
                 ConfigLoader.FileName, TopicLoader.FileName, QuestionLoader.FileName, RaceLoader.FileName, FactLoader.FileName, ShowScripts.FileName,
-                CharacterLoader.FileName, UiStrings.FileName, HostLineLoader.FileName, PollLoader.FileName,
-                ContentLoader.CuratedFileName
+                CharacterLoader.FileName, UiStrings.FileName, HostLineLoader.FileName, PollLoader.FileName
             }));
         }
 
@@ -279,7 +278,7 @@ namespace FamilyQuiz.Tests
         public void ADuplicateQuestionIdIsNamed()
         {
             var ex = QuestionError(GoodQuestion, GoodQuestion);
-            Assert.That(ex.Errors, Has.Some.EqualTo("questions.json geo_001: id is used twice"));
+            Assert.That(ex.Errors, Has.Some.EqualTo("questions_refined.json geo_001: id is used twice"));
         }
 
         [TestCase("space")]
@@ -287,21 +286,21 @@ namespace FamilyQuiz.Tests
         public void AnUnknownOrMixedTopicIsNamed(string topic)
         {
             var ex = QuestionError(Question(GoodQuestion, q => q["topic"] = topic));
-            Assert.That(ex.Message, Does.StartWith("questions.json geo_001: topic"));
+            Assert.That(ex.Message, Does.StartWith("questions_refined.json geo_001: topic"));
         }
 
         [Test]
         public void ABadDifficultyIsNamed()
         {
             var ex = QuestionError(Question(GoodQuestion, q => q["difficulty"] = "brutal"));
-            Assert.That(ex.Message, Is.EqualTo("questions.json geo_001: difficulty must be easy, medium or hard"));
+            Assert.That(ex.Message, Is.EqualTo("questions_refined.json geo_001: difficulty must be easy, medium or hard"));
         }
 
         [Test]
         public void TextOver120CharactersIsNamed()
         {
             var ex = QuestionError(Question(GoodQuestion, q => q["text"]["en"] = new string('a', ContentLimits.QuestionTextMax + 1)));
-            Assert.That(ex.Message, Does.StartWith("questions.json geo_001: text must be at most 120"));
+            Assert.That(ex.Message, Does.StartWith("questions_refined.json geo_001: text must be at most 120"));
         }
 
         [Test]
@@ -332,10 +331,10 @@ namespace FamilyQuiz.Tests
         public void AMissingSourceIsNamed()
         {
             var ex = QuestionError(Question(GoodQuestion, q => q.Remove("source")));
-            Assert.That(ex.Message, Does.StartWith("questions.json geo_001: "));
+            Assert.That(ex.Message, Does.StartWith("questions_refined.json geo_001: "));
             Assert.That(ex.Message, Does.Contain("source"));
             var empty = QuestionError(Question(GoodQuestion, q => q["source"] = ""));
-            Assert.That(empty.Message, Is.EqualTo("questions.json geo_001: source is missing"));
+            Assert.That(empty.Message, Is.EqualTo("questions_refined.json geo_001: source is missing"));
         }
 
         [Test]
@@ -364,7 +363,7 @@ namespace FamilyQuiz.Tests
         public void AnItemWithoutAnIdIsNamedByItsIndex()
         {
             var ex = QuestionError(GoodQuestion, Question(GoodClosest, q => q.Remove("id")));
-            Assert.That(ex.Message, Does.StartWith("questions.json #1: "));
+            Assert.That(ex.Message, Does.StartWith("questions_refined.json #1: "));
         }
 
         [Test]

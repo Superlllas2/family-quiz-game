@@ -19,23 +19,20 @@ namespace FamilyQuiz.Core.State
         /// <summary>free or aimUp (<see cref="TargetingModes"/>).</summary>
         public string Targeting { get; internal set; } = TargetingModes.Free;
 
-        /// <summary>The question bank (decisions/0020, D116): full or curated. A game plays the bank it started with.</summary>
-        public string Bank { get; internal set; } = BankIds.Full;
-
         /// <summary>The types a draw picks from: the switched on types, or none when power ups are off.</summary>
         public IReadOnlyList<string> DrawableTypes => PowerUpsEnabled ? (IReadOnlyList<string>)_types : new string[0];
 
         /// <summary>The defaults from config.json (powerUps.enabled, powerUps.types, powerUps.targeting).</summary>
-        public static TvSettings FromConfig(PowerUpsConfig config, string bank = BankIds.Full)
+        public static TvSettings FromConfig(PowerUpsConfig config)
         {
-            var s = new TvSettings { PowerUpsEnabled = config.Enabled, Targeting = config.Targeting, Bank = bank };
+            var s = new TvSettings { PowerUpsEnabled = config.Enabled, Targeting = config.Targeting };
             s.SetTypes(config.Types);
             return s;
         }
 
         public TvSettings Clone()
         {
-            var s = new TvSettings { PowerUpsEnabled = PowerUpsEnabled, Targeting = Targeting, Bank = Bank };
+            var s = new TvSettings { PowerUpsEnabled = PowerUpsEnabled, Targeting = Targeting };
             s.SetTypes(_types);
             return s;
         }

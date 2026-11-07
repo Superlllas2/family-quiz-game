@@ -56,6 +56,15 @@ test("the banks compare overall, per shared topic and per question pair", () => 
   assert.match(report(result), /Full bank against curated bank/);
 });
 
+test("a line without a bank counts by its question id (D130)", () => {
+  const text = [
+    line({ playerId: "p1", questionId: "cur_food_01", item: "fun", stars: 5 }),
+    line({ playerId: "p1", questionId: "food_001", item: "fun", stars: 3 }),
+  ].join("\n");
+  const { ratings } = collectRatings([{ session: "s", text }]);
+  assert.deepEqual(ratings.map((r) => r.bank), ["curated", "full"]);
+});
+
 test("the report says when feedback was never on", () => {
   assert.match(report(analyze([])), /Was question feedback switched on/);
   const { ratings } = collectRatings([{ session: "f", text: log }]);

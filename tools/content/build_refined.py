@@ -1,4 +1,5 @@
-# Generates content/questions_refined.json, the curated test bank (decisions/0020), from tools/content/refined. Run from
+# Generates content/questions_refined.json, the game's only question bank (D130; first the curated test bank of
+# decisions/0020), from tools/content/refined. Run from
 # the repo root:
 #   python tools/content/build_refined.py
 # Each tools/content/refined/<topic>.json holds 10 questions (3 easy, 5 medium multiple choice, 2 hard closest value)
@@ -29,6 +30,7 @@ def main():
     with open(os.path.join(ROOT, "content", "questions.json"), encoding="utf-8") as f:
         full = {q["id"]: q for q in json.load(f)}
     out = []
+    errors = []
     for topic in topics:
         path = os.path.join(REFINED, topic + ".json")
         if not os.path.exists(path):
@@ -37,6 +39,14 @@ def main():
             items = json.load(f)
         items = sorted(items, key=lambda q: ORDER[(q["format"], q["difficulty"])])
         for n, q in enumerate(items, 1):
+            # The game loads only this bank (D130), so the checks against the full bank live here.
+            based = q.get("basedOn")
+            if based is not None:
+                if based not in full:
+                    errors.append("%s #%d: basedOn %s is not a full bank question" % (topic, n, based))
+                    continue
+                if full[based]["topic"] != topic:
+                    errors.append("%s #%d: basedOn %s is a question of another topic" % (topic, n, based))
             if q["refine"] == "same":
                 src = full[q["basedOn"]]
                 q = {k: src[k] for k in (MC if src["format"] == "multipleChoice" else CV)} | {"basedOn": q["basedOn"], "refine": "same"}
@@ -46,6 +56,9 @@ def main():
             entry["basedOn"] = q.get("basedOn")
             entry["refine"] = q["refine"]
             out.append(entry)
+    if errors:
+        print("\n".join(errors))
+        sys.exit(1)
     target = os.path.join(ROOT, "content", "questions_refined.json")
     with open(target, "w", encoding="utf-8", newline="\n") as f:
         f.write("[\n" + ",\n".join(json.dumps(q, ensure_ascii=False) for q in out) + "\n]\n")

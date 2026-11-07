@@ -167,8 +167,7 @@ namespace FamilyQuiz.Telemetry
                         {
                             ["gameLang"] = started.GameLang,
                             ["powerUps"] = JArray.FromObject(started.PowerUps),
-                            ["targeting"] = started.Targeting,
-                            ["bank"] = started.Bank
+                            ["targeting"] = started.Targeting
                         }
                     }, started.Seed);
                     break;
@@ -292,7 +291,6 @@ namespace FamilyQuiz.Telemetry
                         ["stars"] = rated.Stars,
                         ["phaseId"] = rated.PhaseId
                     };
-                    if (rated.Bank != null) fields["bank"] = rated.Bank;
                     fields["correct"] = rated.Correct.HasValue ? (JToken)rated.Correct.Value : JValue.CreateNull();
                     _writer.Write(EventQuestionRated, fields);
                     break;

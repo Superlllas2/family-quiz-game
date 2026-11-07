@@ -57,7 +57,6 @@
   "feedback": { "enabled": false, "stars": 5, "items": ["fun", "guess", "fact"] },
   "music": { "volume": 0.35, "fadeSeconds": 2 },
   "sfx": { "volume": 0.6, "hostVoice": "e_bubbles" },
-  "banks": { "default": "curated", "chooseOnStart": false },
   "staging": {
     "extraSeconds": { "questionShow": 0, "reveal": 0, "scores": 0, "roundEnd": 0 },
     "lobby": { "seatPopSeconds": 0.5 },

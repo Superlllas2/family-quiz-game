@@ -38,7 +38,6 @@ namespace FamilyQuiz.Presentation
         private HostBubblesView _hosts;
         private TvSettingsPanel _settings;
         private TvPauseMenu _pauseMenu;
-        private TvBankChooser _bankChooser;
         private TvGraphicsPanel _graphics;
         private Action<IGameCommand> _send;
         private GameObject _relayBannerRoot;
@@ -76,8 +75,6 @@ namespace FamilyQuiz.Presentation
             _lobby.Refresh();
             // The 3D studio behind the overlay (decisions 0015, 0016), on unless switched off on this laptop.
             _stage.SetOn(_toggleFile.Load());
-            // The question bank test (decisions/0020, D118): ask which bank to play before anyone joins.
-            if (game.Config.Banks.ChooseOnStart) _bankChooser.SetOpen(true);
             OpenFromCommandLine();
         }
 
@@ -104,7 +101,6 @@ namespace FamilyQuiz.Presentation
         {
             _send = send;
             _settings.SetCommandSink(send);
-            _bankChooser.SetCommandSink(send);
         }
 
         /// <summary>The music slider and credit line of the TV settings panel (decisions/0019, D114, D115).</summary>
@@ -147,7 +143,6 @@ namespace FamilyQuiz.Presentation
             _hosts.HideAll();
             _settings.SetOpen(false);
             _pauseMenu.SetOpen(false);
-            _bankChooser.SetOpen(false);
             _graphics.SetOpen(false);
             _relayBannerRoot.SetActive(false);
             var title = _context.Has("tv.error.content") ? _context.T("tv.error.content") + "\n\n" : string.Empty;
@@ -215,7 +210,6 @@ namespace FamilyQuiz.Presentation
             _pauseMenu.SetOpen(_context.Game.State.Paused);
             // Settings, the running game's copy (GameStarted, GameEnded), seen questions: whatever changed shows at once.
             if (_settings.IsOpen) _settings.Refresh();
-            if (_bankChooser.IsOpen) _bankChooser.Refresh();
             if (_graphics.IsOpen && events.Count > 0) _graphics.Refresh();
         }
 
@@ -255,8 +249,8 @@ namespace FamilyQuiz.Presentation
         }
 
         /// <summary>
-        /// A developer aid for screenshots without a keyboard: "-tvOpen settings|graphics|bank" on the command line opens
-        /// that panel at start (and closes the bank chooser for the others).
+        /// A developer aid for screenshots without a keyboard: "-tvOpen settings|graphics" on the command line opens
+        /// that panel at start.
         /// </summary>
         private void OpenFromCommandLine()
         {
@@ -265,7 +259,6 @@ namespace FamilyQuiz.Presentation
             {
                 if (args[i] != "-tvOpen") continue;
                 string what = args[i + 1];
-                if (what != "bank") _bankChooser.SetOpen(false);
                 if (what == "settings") _settings.SetOpen(true);
                 else if (what == "graphics") _graphics.SetOpen(true);
             }
@@ -278,13 +271,6 @@ namespace FamilyQuiz.Presentation
             {
                 // Back to the pause menu.
                 _graphics.SetOpen(false);
-                return;
-            }
-
-            if (_bankChooser.IsOpen)
-            {
-                // Escape keeps the current bank (and stays paused when the chooser came from the pause menu).
-                _bankChooser.SetOpen(false);
                 return;
             }
 
@@ -325,12 +311,6 @@ namespace FamilyQuiz.Presentation
         {
             _settings.SetOpen(false);
             _graphics.SetOpen(true);
-        }
-
-        private void OnPauseBank()
-        {
-            _settings.SetOpen(false);
-            _bankChooser.SetOpen(true);
         }
 
         private void Enter(GamePhase phase)
@@ -500,10 +480,9 @@ namespace FamilyQuiz.Presentation
             _relayBannerRoot = banner.gameObject;
 
             // The pause menu under the settings panel, so Settings in the menu opens the panel over it (D106).
-            _pauseMenu = TvPauseMenu.Create(root, _context, OnPauseContinue, OnPauseNewGame, OnPauseSettings, OnPauseBank,
-                () => _bankChooser != null && _bankChooser.HasChoice, OnPauseGraphics);
+            _pauseMenu = TvPauseMenu.Create(root, _context, OnPauseContinue, OnPauseNewGame, OnPauseSettings,
+                OnPauseGraphics);
             _settings = TvSettingsPanel.Create(root, _context);
-            _bankChooser = TvBankChooser.Create(root, _context);
             _graphics = TvGraphicsPanel.Create(root, _context);
             _toggleFile = new StudioToggleFile(System.IO.Path.Combine(Application.persistentDataPath, StudioToggleFile.FileName));
             _stage = StudioStage.Create(_context, OnStudioVisible);

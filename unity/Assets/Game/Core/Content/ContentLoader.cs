@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace FamilyQuiz.Core.Content
 {
     /// <summary>
-    /// Loads and validates the content the game uses (docs/15_schemas.md): config.json, topics.json, questions.json,
+    /// Loads and validates the content the game uses (docs/15_schemas.md): config.json, topics.json, questions_refined.json (D130),
     /// race.json, facts.json, show_scripts.json, characters.json, ui_strings.json, host_lines.json and poll.json. Files are read through the injected reader,
     /// so Core never touches the disk. Any error throws a <see cref="ContentException"/> naming the file, the item id
     /// and the field; the game must not start then.
@@ -24,17 +24,10 @@ namespace FamilyQuiz.Core.Content
             var config = ConfigLoader.Parse(_read(ConfigLoader.FileName));
             var topics = TopicLoader.Parse(_read(TopicLoader.FileName));
             CheckMixedTopic(config, topics);
+            // One bank (D130): the refined questions. content/questions.json stays in the repo as the refining's source.
             var questions = QuestionLoader.Parse(_read(QuestionLoader.FileName), topics);
             CheckBankHoldsAGame(config, questions);
-            // The curated test bank (decisions/0020) is optional: without its file there is only the full bank.
-            var curatedText = ReadOptional(CuratedFileName);
-            IReadOnlyList<QuestionDef> curated = null;
-            if (curatedText != null)
-            {
-                curated = QuestionLoader.Parse(curatedText, topics, CuratedFileName);
-                CheckBankHoldsAGame(config, curated);
-                CheckCurated(curated, questions);
-            }
+            CheckRefine(questions);
             var race = RaceLoader.Parse(_read(RaceLoader.FileName), config);
             var scripts = ShowScripts.Parse(_read(ShowScripts.FileName), config);
             var characters = CharacterLoader.Parse(_read(CharacterLoader.FileName), config);
@@ -42,55 +35,22 @@ namespace FamilyQuiz.Core.Content
             var facts = FactLoader.Parse(_read(FactLoader.FileName));
             var hostLines = HostLineLoader.Parse(_read(HostLineLoader.FileName));
             var poll = PollLoader.Parse(_read(PollLoader.FileName));
-            return new GameContent(config, characters, questions, strings, topics, race, scripts, facts, hostLines, poll, curated);
-        }
-
-        /// <summary>The curated test bank (decisions/0020).</summary>
-        public const string CuratedFileName = "questions_refined.json";
-
-        private string ReadOptional(string name)
-        {
-            try
-            {
-                return _read(name);
-            }
-            catch (System.IO.IOException)
-            {
-                return null;
-            }
+            return new GameContent(config, characters, questions, strings, topics, race, scripts, facts, hostLines, poll);
         }
 
         /// <summary>
-        /// Curated ids never repeat a full bank id; basedOn names a full bank question for same and rewrite and is null
-        /// for new; a same question is an exact copy of its full bank question's text and answer.
+        /// refine says how a question came out of the refining: same, rewrite or new; a new question has basedOn null. The
+        /// checks against the full bank (basedOn names a full bank question of the same topic, a same question is an exact
+        /// copy) run in the content tools that build the bank (tools/content/check_bank.py --refined), not in the game.
         /// </summary>
-        private static void CheckCurated(IReadOnlyList<QuestionDef> curated, IReadOnlyList<QuestionDef> full)
+        private static void CheckRefine(IReadOnlyList<QuestionDef> questions)
         {
-            var errors = new ContentErrors(CuratedFileName);
-            var byId = new Dictionary<string, QuestionDef>();
-            foreach (var q in full) byId[q.Id] = q;
-            foreach (var q in curated)
+            var errors = new ContentErrors(QuestionLoader.FileName);
+            foreach (var q in questions)
             {
-                errors.Check(!byId.ContainsKey(q.Id), q.Id, "id is also a full bank id");
+                if (q.Refine == null && q.BasedOn == null) continue; // a hand written test question
                 errors.Check(q.Refine == "same" || q.Refine == "rewrite" || q.Refine == "new", q.Id, "refine must be same, rewrite or new");
-                if (q.Refine == "new")
-                {
-                    errors.Check(q.BasedOn == null, q.Id, "a new question has basedOn null");
-                    continue;
-                }
-
-                if (!byId.TryGetValue(q.BasedOn ?? "", out var original))
-                {
-                    errors.Add(q.Id, "basedOn \"" + q.BasedOn + "\" is not a full bank question");
-                    continue;
-                }
-
-                errors.Check(original.Topic == q.Topic, q.Id, "basedOn is a question of another topic");
-                if (q.Refine == "same")
-                {
-                    errors.Check(original.Text.Ru == q.Text.Ru && original.Text.En == q.Text.En && original.Correct == q.Correct
-                                 && original.Answer == q.Answer, q.Id, "a same question must be an exact copy of " + q.BasedOn);
-                }
+                if (q.Refine == "new") errors.Check(q.BasedOn == null, q.Id, "a new question has basedOn null");
             }
 
             errors.ThrowIfAny();

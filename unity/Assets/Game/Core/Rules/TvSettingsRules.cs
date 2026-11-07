@@ -14,12 +14,9 @@ namespace FamilyQuiz.Core.Rules
     public sealed class TvSettingsRules
     {
         private readonly GameState _state;
-        private readonly GameContent _content;
-
-        public TvSettingsRules(GameState state, GameContent content = null)
+        public TvSettingsRules(GameState state)
         {
             _state = state;
-            _content = content;
         }
 
         public void Change(ChangeTvSettings cmd, List<IGameEvent> output)
@@ -49,13 +46,6 @@ namespace FamilyQuiz.Core.Rules
             {
                 _state.FeedbackEnabled = cmd.FeedbackEnabled.Value;
                 Changed(SettingsChanged.SettingFeedback, cmd.FeedbackEnabled.Value ? "true" : "false", output);
-            }
-
-            // Only a bank that was loaded (the curated file is optional).
-            if (cmd.Bank != null && _content != null && _content.Bank(cmd.Bank).Id == cmd.Bank && cmd.Bank != pending.Bank)
-            {
-                pending.Bank = cmd.Bank;
-                Changed(SettingsChanged.SettingBank, cmd.Bank, output);
             }
 
             if (TargetingModes.IsValid(cmd.Targeting) && cmd.Targeting != pending.Targeting)

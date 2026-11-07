@@ -8,9 +8,8 @@ namespace FamilyQuiz.Core.Events
         public const string ModeStandard = "standard";
 
         public GameStarted(int game, int seed, string mode, IReadOnlyList<string> playerIds, string gameLang,
-            IReadOnlyList<string> powerUps = null, string targeting = null, string bank = null)
+            IReadOnlyList<string> powerUps = null, string targeting = null)
         {
-            Bank = bank;
             PowerUps = powerUps ?? new string[0];
             Targeting = targeting;
             Game = game;
@@ -19,9 +18,6 @@ namespace FamilyQuiz.Core.Events
             PlayerIds = playerIds;
             GameLang = gameLang;
         }
-
-        /// <summary>The question bank of this game (decisions/0020), full or curated.</summary>
-        public string Bank { get; }
 
         public int Game { get; }
         public int Seed { get; }

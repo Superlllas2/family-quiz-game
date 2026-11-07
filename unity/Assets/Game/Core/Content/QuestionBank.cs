@@ -4,20 +4,18 @@ using System.Linq;
 namespace FamilyQuiz.Core.Content
 {
     /// <summary>
-    /// One question bank (decisions/0020, D116): its questions and the topics a vote can offer from it (the topics that
-    /// have questions in it, in topics.json order, and the mixed topic).
+    /// The game's question bank (D130, content/questions_refined.json): its questions and the topics a vote can offer from
+    /// it (the topics that have questions in it, in topics.json order, and the mixed topic).
     /// </summary>
     public sealed class QuestionBank
     {
-        public QuestionBank(string id, IReadOnlyList<QuestionDef> questions, IReadOnlyList<TopicDef> allTopics)
+        public QuestionBank(IReadOnlyList<QuestionDef> questions, IReadOnlyList<TopicDef> allTopics)
         {
-            Id = id;
             Questions = questions;
             var used = new HashSet<string>(questions.Select(q => q.Topic));
             Topics = allTopics.Where(t => t.Mixed || used.Contains(t.Id)).ToList();
         }
 
-        public string Id { get; }
         public IReadOnlyList<QuestionDef> Questions { get; }
         public IReadOnlyList<TopicDef> Topics { get; }
     }

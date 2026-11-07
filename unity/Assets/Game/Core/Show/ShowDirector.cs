@@ -52,8 +52,8 @@ namespace FamilyQuiz.Core.Show
 
         private long Now => _clock.NowMs;
 
-        /// <summary>The question bank of the running game (decisions/0020): the one its settings copy names.</summary>
-        private QuestionBank Bank => _content.Bank(_state.Settings.Bank);
+        /// <summary>The question bank (D130): the refined questions and the topics a vote can offer from them.</summary>
+        private QuestionBank Bank => _content.Bank;
 
         /// <summary>Seconds from config to whole milliseconds.</summary>
         public static long ToMs(double seconds)
@@ -496,7 +496,7 @@ namespace FamilyQuiz.Core.Show
             bool? correct = turn != null && turn.Locked ? turn.Correct : (bool?)null;
             var def = question.Def;
             output.Add(new QuestionRated(player.PlayerId, def.Id, def.Topic, def.Format, def.Difficulty, cmd.Item, stars, correct,
-                _state.PhaseId, Bank.Id));
+                _state.PhaseId));
         }
 
         // ---------------------------------------------------------------- the clock
@@ -844,7 +844,7 @@ namespace FamilyQuiz.Core.Show
             }
 
             output.Add(new GameStarted(_state.GameNumber, _state.Seed, GameStarted.ModeStandard, ids, _state.GameLanguage,
-                _state.Settings.DrawableTypes, _state.Settings.Targeting, Bank.Id));
+                _state.Settings.DrawableTypes, _state.Settings.Targeting));
             foreach (var p in _state.Players) output.Add(new PlayerUpdated(p.PlayerId));
             NextSegment(at, output);
         }
@@ -975,8 +975,6 @@ namespace FamilyQuiz.Core.Show
                 output.Add(new QuestionFallback(round.Index + 1, slot + 1, topic.Id, def.Id, group));
             _usedInGame.Add(def.Id);
             _state.MutableSeenQuestionIds.Add(def.Id);
-            // A curated question and the full bank question it comes from count as one (decisions/0020, D117).
-            if (def.BasedOn != null) _state.MutableSeenQuestionIds.Add(def.BasedOn);
             output.Add(new SeenChanged(false));
 
             var order = def.Format == QuestionDef.MultipleChoice ? OptionShuffle.DisplayOrder(def.Options.Count, _random) : new int[0];

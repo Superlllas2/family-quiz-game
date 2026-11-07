@@ -13,7 +13,8 @@
 // - Questions and the audit are read from content/questions.json and docs/question_audit/sample_audit.json next to
 //   this script, when present. The audit covers a 600 question sample, so only part of the rated questions join it.
 // - --min: the fewest raters a question needs to appear in the best and worst lists (default 2).
-// - Banks (decisions/0020): each line carries bank (full or curated; older logs have none and count as full). The
+// - Banks (decisions/0020): Nov 6, 2026 lines carry bank (full or curated). Lines without it (before decision 0020, or
+//   after D130 made the refined questions the only bank) count by their question id: cur_... is curated, else full. The
 //   report compares the banks overall, per topic that both banks played, and per pair of questions: a curated question
 //   (content/questions_refined.json) next to the full bank question it is based on (refine same: the identical
 //   question; rewrite: the same fact asked better).
@@ -23,6 +24,9 @@ import { join, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
 
 export const ITEMS = ["fun", "guess", "fact"];
+
+/** The bank of a line without a bank field: the refined (curated) questions have cur_ ids (D130). */
+export const bankOf = (questionId) => (questionId.startsWith("cur_") ? "curated" : "full");
 
 /** Reads every questionRated line of the given texts ({session, text}) and keeps the latest per player, question and item. */
 export function collectRatings(logs) {
@@ -46,7 +50,7 @@ export function collectRatings(logs) {
       }
       lines++;
       const s = line.session ?? session;
-      latest.set(`${s}\n${line.playerId}\n${line.questionId}\n${line.item}`, { ...line, bank: line.bank ?? "full", session: s });
+      latest.set(`${s}\n${line.playerId}\n${line.questionId}\n${line.item}`, { ...line, bank: line.bank ?? bankOf(line.questionId), session: s });
     }
   }
   return { ratings: [...latest.values()], lines, skipped };

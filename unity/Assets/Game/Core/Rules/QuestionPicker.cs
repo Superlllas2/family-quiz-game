@@ -21,8 +21,9 @@ namespace FamilyQuiz.Core.Rules
         /// <param name="topicId">The chosen topic, or null for the mixed door (any topic).</param>
         /// <param name="group">The group the question came from (1 to 4).</param>
         /// <summary>
-        /// Seen: the question itself, or the full bank question a curated one comes from (decisions/0020, D117). When a
-        /// curated question is shown its basedOn is marked seen too, so the pair never comes twice to the same family.
+        /// Seen: the question itself, or the full bank question it comes from (decisions/0020, D117), so a family that
+        /// played the full bank before D130 does not get the same fact again. Only the question itself is marked seen
+        /// when it is shown: the game no longer plays the full bank.
         /// </summary>
         public static bool IsSeen(QuestionDef q, IReadOnlyCollection<string> seen)
         {

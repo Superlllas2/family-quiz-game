@@ -2,10 +2,13 @@ using System.Collections.Generic;
 
 namespace FamilyQuiz.Core.Content
 {
-    /// <summary>Parses and checks content/questions.json (docs/15_schemas.md, tools/validate_content.mjs).</summary>
+    /// <summary>
+    /// Parses and checks the game's question bank, content/questions_refined.json (D130; docs/15_schemas.md). The full
+    /// bank content/questions.json is the source the refining works from and is not loaded by the game.
+    /// </summary>
     public static class QuestionLoader
     {
-        public const string FileName = "questions.json";
+        public const string FileName = "questions_refined.json";
 
         public static IReadOnlyList<QuestionDef> Parse(string json, IReadOnlyList<TopicDef> topics, string fileName = FileName)
         {

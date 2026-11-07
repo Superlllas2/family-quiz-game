@@ -14,7 +14,8 @@ Check the content with `node tools/validate_content.mjs` after every edit. The T
 | --- | --- |
 | `content/config.json` | Every number (`03_rules.md`) |
 | `content/topics.json` | Topic list |
-| `content/questions.json` | Round questions (multiple choice, closest value) |
+| `content/questions_refined.json` | Round questions (multiple choice, closest value): the bank the game plays (D130). Same fields as `questions.json` below, plus `basedOn` and `refine` |
+| `content/questions.json` | The full bank: the refining's source, not loaded by the game (D130) |
 | `content/race.json` | True or false statements for the final race |
 | `content/facts.json` | Interesting facts, the winner's reward on Results (D87) |
 | `content/host_lines.json` | Host text lines and their triggers |
@@ -317,13 +318,13 @@ Allowed values:
 | --- | --- |
 | `playerLeft.reason` | `disconnected` (seat still held), `left` (tapped Leave), `seatExpired` |
 | `lobbyAction.action` | `ready`, `notReady` |
-| `settingsChanged.source` | `tv` (settings panel: `gameLang`, `powerUps`, `powerUpTypes`, `targeting`, `feedback`, `resetSeen`, `backToLobby`; pause menu: `newGame`; bank chooser: `bank`) or `phone` (with `playerId`: `lang`, `timerMultiplier`) |
+| `settingsChanged.source` | `tv` (settings panel: `gameLang`, `powerUps`, `powerUpTypes`, `targeting`, `feedback`, `resetSeen`, `backToLobby`; pause menu: `newGame`) or `phone` (with `playerId`: `lang`, `timerMultiplier`) |
 | `phaseStarted.budgetMs`, `stagingExtraMs` | The phase budget in ms with any staging extra included, and that extra alone (`staging.extraSeconds`, `21_staging.md`); 0 for phases without one. Answer budgets are the base window, before timer multipliers |
 | `phaseEnded.reason` | `timeout`, `allDone`, `cancelled` (countdown), `abandoned` (Back to lobby), `skip` (developer phase skip key only) |
 | `gameEnded.factId`, `tags` | Only with reason `finished`: the winner's fact id (or null) and playerId to funny tag id for every other player (D86, D87) |
 | `poll` | Never carries a player id |
 | `questionRated` | One line per accepted tap on the rating card (decisions/0018, D111): `playerId`, `questionId`, `topic`, `format`, `difficulty`, `item` (`fun`, `guess`, `fact`), `stars` (1 to 5), `phaseId`, `correct` (true, false, or null when the player sent no answer). The latest line per player, question and item counts |
-| `gameStarted.settings.bank`, `questionRated.bank` | The question bank of the game (decisions/0020): `full` or `curated` |
+| `gameStarted.settings.bank`, `questionRated.bank` | Logs from Nov 6, 2026 only (decisions/0020): `full` or `curated`. Not written since D130 (one bank); `tools/analyze_ratings.mjs` counts a line without it by its question id |
 | `gamePaused`, `gameResumed` | The pause menu opened or closed (D105): `phase`, `phaseId`. `t` runs on the core clock, which stands still while paused |
 | `gameEnded.reason` | `finished`, `backToLobby`, or `restart` (New game in the pause menu, D107) |
 
