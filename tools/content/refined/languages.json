@@ -1,0 +1,650 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На каком языке впервые появилось слово «робот»?",
+   "en": "In which language did the word 'robot' first appear?"
+  },
+  "options": [
+   {
+    "ru": "На чешском",
+    "en": "Czech"
+   },
+   {
+    "ru": "На английском",
+    "en": "English"
+   },
+   {
+    "ru": "На японском",
+    "en": "Japanese"
+   },
+   {
+    "ru": "На немецком",
+    "en": "German"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Его придумал Йозеф Чапек для пьесы брата Карела в 1920 году: от слова robota — «подневольный труд».",
+   "en": "Josef Čapek coined it for his brother Karel's 1920 play, from 'robota', meaning forced labour."
+  },
+  "source": "https://en.wikipedia.org/wiki/Robot",
+  "basedOn": "languages_002",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что значит японское слово «караоке»?",
+   "en": "What does the Japanese word 'karaoke' mean?"
+  },
+  "options": [
+   {
+    "ru": "«Пустой оркестр»",
+    "en": "Empty orchestra"
+   },
+   {
+    "ru": "«Поющий голос»",
+    "en": "Singing voice"
+   },
+   {
+    "ru": "«Ночное веселье»",
+    "en": "Night fun"
+   },
+   {
+    "ru": "«Громкая песня»",
+    "en": "Loud song"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "«Кара» — пустой, а «оке» — кусочек от «окэсутора», японского варианта слова «оркестр».",
+   "en": "'Kara' means empty and 'oke' is short for 'ōkesutora', the Japanese take on the word 'orchestra'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Karaoke",
+  "basedOn": "languages_009",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В честь кого назван сэндвич?",
+   "en": "Who is the sandwich named after?"
+  },
+  "options": [
+   {
+    "ru": "Английского графа",
+    "en": "An English earl"
+   },
+   {
+    "ru": "Американского повара",
+    "en": "An American cook"
+   },
+   {
+    "ru": "Голландского моряка",
+    "en": "A Dutch sailor"
+   },
+   {
+    "ru": "Французского короля",
+    "en": "A French king"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По легенде, граф Сэндвич не хотел вставать из-за карточного стола и просил мясо между ломтями хлеба.",
+   "en": "Legend says the Earl of Sandwich would not leave the card table and asked for meat between slices of bread."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sandwich",
+  "basedOn": "languages_011",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В каком языке вопрос начинают перевёрнутым знаком «¿»?",
+   "en": "Which language opens a question with an upside down question mark '¿'?"
+  },
+  "options": [
+   {
+    "ru": "В испанском",
+    "en": "Spanish"
+   },
+   {
+    "ru": "В португальском",
+    "en": "Portuguese"
+   },
+   {
+    "ru": "В итальянском",
+    "en": "Italian"
+   },
+   {
+    "ru": "Во французском",
+    "en": "French"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Испанская академия ввела его в 1754 году: вопрос там часто звучит теми же словами, что и утверждение.",
+   "en": "The Spanish Academy brought it in in 1754, since a Spanish question often uses the same words as a statement."
+  },
+  "source": "https://en.wikipedia.org/wiki/Inverted_question_and_exclamation_marks",
+  "basedOn": "languages_014",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой язык родной для самого большого числа людей на Земле?",
+   "en": "Which language has the most native speakers in the world?"
+  },
+  "options": [
+   {
+    "ru": "Китайский",
+    "en": "Mandarin Chinese"
+   },
+   {
+    "ru": "Английский",
+    "en": "English"
+   },
+   {
+    "ru": "Испанский",
+    "en": "Spanish"
+   },
+   {
+    "ru": "Хинди",
+    "en": "Hindi"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Английский выходит вперёд, только если считать всех, кто выучил его как второй язык.",
+   "en": "English only takes the lead when you count everyone who learned it as a second language."
+  },
+  "source": "https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers",
+  "basedOn": "languages_004",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "На каком языке говорят в Бразилии?",
+   "en": "What language do people speak in Brazil?"
+  },
+  "options": [
+   {
+    "ru": "На португальском",
+    "en": "Portuguese"
+   },
+   {
+    "ru": "На испанском",
+    "en": "Spanish"
+   },
+   {
+    "ru": "На французском",
+    "en": "French"
+   },
+   {
+    "ru": "На английском",
+    "en": "English"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "По договору 1494 года эти земли отошли Португалии. Сегодня по-португальски в Бразилии говорят примерно в 20 раз больше людей, чем в самой Португалии.",
+   "en": "A 1494 treaty gave these lands to Portugal. Today about 20 times as many people speak Portuguese in Brazil as in Portugal itself."
+  },
+  "source": "https://en.wikipedia.org/wiki/Portuguese_language",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Слово «кетчуп» пришло из Азии. Каким соусом он, по основной версии, был изначально?",
+   "en": "The word 'ketchup' came from Asia. What kind of sauce was it most likely at first?"
+  },
+  "options": [
+   {
+    "ru": "Рыбным",
+    "en": "Fish sauce"
+   },
+   {
+    "ru": "Томатным",
+    "en": "Tomato sauce"
+   },
+   {
+    "ru": "Манговым",
+    "en": "Mango sauce"
+   },
+   {
+    "ru": "Перечным",
+    "en": "Pepper sauce"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Скорее всего, слово из южнокитайского языка и значило рыбный рассол; первый рецепт с помидорами — 1812 года.",
+   "en": "It most likely comes from Hokkien for pickled fish brine; the first known tomato ketchup recipe dates from 1812."
+  },
+  "source": "https://en.wikipedia.org/wiki/Ketchup",
+  "basedOn": "languages_019",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Слова «томат», «чили» и «койот» пришли к нам из языка…",
+   "en": "The words 'tomato', 'chili' and 'coyote' come from the language of the…"
+  },
+  "options": [
+   {
+    "ru": "Ацтеков",
+    "en": "Aztecs"
+   },
+   {
+    "ru": "Инков",
+    "en": "Incas"
+   },
+   {
+    "ru": "Полинезийцев",
+    "en": "Polynesians"
+   },
+   {
+    "ru": "Индейцев сиу",
+    "en": "Sioux"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это язык науатль: tomatl, chīlli, coyōtl. Испанцы разнесли слова по миру, а сам язык жив в Мексике до сих пор.",
+   "en": "They are Nahuatl words: tomatl, chilli, coyotl. The Spanish spread them worldwide, and the language still lives in Mexico."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nahuatl",
+  "basedOn": "languages_020",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что по-японски значит «цундоку»?",
+   "en": "What does the Japanese word 'tsundoku' mean?"
+  },
+  "options": [
+   {
+    "ru": "Копить книги, не читая",
+    "en": "Buying books and never reading them"
+   },
+   {
+    "ru": "Читать в электричке",
+    "en": "Reading on the train"
+   },
+   {
+    "ru": "Засыпать над книгой",
+    "en": "Falling asleep over a book"
+   },
+   {
+    "ru": "Перечитывать любимое",
+    "en": "Rereading a favourite"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Шутливое слово эпохи Мэйдзи склеено из «складывать в стопку» и «читать».",
+   "en": "The joke word dates from Japan's Meiji era and glues together 'pile up' and 'read'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tsundoku",
+  "basedOn": "languages_026",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какие языки — ближайшие родственники венгерского?",
+   "en": "Which languages are the closest relatives of Hungarian?"
+  },
+  "options": [
+   {
+    "ru": "Хантыйский и мансийский",
+    "en": "Khanty and Mansi"
+   },
+   {
+    "ru": "Турецкий и азербайджанский",
+    "en": "Turkish and Azerbaijani"
+   },
+   {
+    "ru": "Румынский и итальянский",
+    "en": "Romanian and Italian"
+   },
+   {
+    "ru": "Немецкий и голландский",
+    "en": "German and Dutch"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Предки венгров жили за Уралом и пришли на Дунай лишь в конце IX века; ханты и манси живут в Западной Сибири.",
+   "en": "Hungarians' ancestors lived beyond the Urals and reached the Danube only in the late 800s; the Khanty and Mansi live in Siberia."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hungarian_language",
+  "basedOn": "languages_027",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Сколько тонов в китайском языке путунхуа?",
+   "en": "How many tones does Mandarin Chinese have?"
+  },
+  "options": [
+   {
+    "ru": "Два",
+    "en": "Two"
+   },
+   {
+    "ru": "Четыре",
+    "en": "Four"
+   },
+   {
+    "ru": "Семь",
+    "en": "Seven"
+   },
+   {
+    "ru": "Двенадцать",
+    "en": "Twelve"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Слог «ма» значит «мама», «конопля», «лошадь» или «ругать» — смотря каким тоном его произнести.",
+   "en": "The syllable 'ma' can mean mother, hemp, horse or scold, depending on the tone you say it in."
+  },
+  "source": "https://en.wikipedia.org/wiki/Standard_Chinese_phonology",
+  "basedOn": "languages_030",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как выглядит вопросительный знак в греческом языке?",
+   "en": "What does a question mark look like in Greek?"
+  },
+  "options": [
+   {
+    "ru": "Как наша точка с запятой",
+    "en": "Like our semicolon"
+   },
+   {
+    "ru": "Как перевёрнутый «?»",
+    "en": "Like an upside down '?'"
+   },
+   {
+    "ru": "Как двоеточие",
+    "en": "Like a colon"
+   },
+   {
+    "ru": "Как звёздочка",
+    "en": "Like an asterisk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "А работу точки с запятой у греков выполняет точка, поднятая к верху строки.",
+   "en": "And the job of a semicolon in Greek is done by a dot raised to the top of the line."
+  },
+  "source": "https://en.wikipedia.org/wiki/Greek_question_mark",
+  "basedOn": "languages_033",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Мы зовём знак @ «собакой». А как его называют итальянцы?",
+   "en": "Russians call the @ sign 'the little dog'. What do Italians call it?"
+  },
+  "options": [
+   {
+    "ru": "Улитка",
+    "en": "Snail"
+   },
+   {
+    "ru": "Обезьяний хвост",
+    "en": "Monkey's tail"
+   },
+   {
+    "ru": "Котёнок",
+    "en": "Kitten"
+   },
+   {
+    "ru": "Хобот слона",
+    "en": "Elephant's trunk"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "У голландцев это «обезьяний хвост», у датчан — «хобот», а в Израиле — «штрудель».",
+   "en": "The Dutch say 'monkey's tail', the Danes 'elephant's trunk', and Israelis 'strudel'."
+  },
+  "source": "https://en.wikipedia.org/wiki/At_sign",
+  "basedOn": "languages_034",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "К какому языку жестов ближе всего американский язык жестов?",
+   "en": "Which sign language is American Sign Language closest to?"
+  },
+  "options": [
+   {
+    "ru": "К французскому",
+    "en": "French"
+   },
+   {
+    "ru": "К британскому",
+    "en": "British"
+   },
+   {
+    "ru": "К австралийскому",
+    "en": "Australian"
+   },
+   {
+    "ru": "К испанскому",
+    "en": "Spanish"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Первым учителем первой школы для глухих в США, открытой в 1817 году, стал глухой француз Лоран Клерк.",
+   "en": "The first teacher at America's first school for the deaf, opened in 1817, was Laurent Clerc, a deaf Frenchman."
+  },
+  "source": "https://en.wikipedia.org/wiki/American_Sign_Language",
+  "basedOn": "languages_035",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Чем удивителен язык сильбо с Канарского острова Гомера?",
+   "en": "What is unusual about Silbo from the Canary island of La Gomera?"
+  },
+  "options": [
+   {
+    "ru": "На нём свистят",
+    "en": "It is whistled"
+   },
+   {
+    "ru": "На нём только поют",
+    "en": "It is only sung"
+   },
+   {
+    "ru": "На нём щёлкают языком",
+    "en": "It is clicked"
+   },
+   {
+    "ru": "Его пишут узелками",
+    "en": "It is written in knots"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Свистом передают испанские слова через глубокие ущелья, и с 1999 года его учат в школах острова.",
+   "en": "Whistles carry Spanish words across deep ravines, and since 1999 the island's schools teach it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Silbo_Gomero",
+  "basedOn": "languages_038",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "В Болгарии вам в ответ кивают головой. Что это, скорее всего, значит?",
+   "en": "In Bulgaria someone nods in answer to your question. What does it most likely mean?"
+  },
+  "options": [
+   {
+    "ru": "«Нет»",
+    "en": "'No'"
+   },
+   {
+    "ru": "«Да»",
+    "en": "'Yes'"
+   },
+   {
+    "ru": "«Не знаю»",
+    "en": "'I don't know'"
+   },
+   {
+    "ru": "«Повторите»",
+    "en": "'Say that again'"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "А «да» болгары показывают, качая головой из стороны в сторону. Поэтому они часто говорят и вслух: «да» или «не».",
+   "en": "Bulgarians show 'yes' by shaking the head from side to side. That's why they often say it out loud too: 'da' or 'ne'."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nod_(gesture)",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько букв в гавайском алфавите?",
+   "en": "How many letters are in the Hawaiian alphabet?"
+  },
+  "answer": 13,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "букв",
+   "en": "letters"
+  },
+  "fact": {
+   "ru": "Согласных всего восемь, считая гортанную смычку, и каждый слог кончается гласной: «алоха», «Гонолулу».",
+   "en": "There are only eight consonants, counting the glottal stop, and every syllable ends in a vowel: aloha, Honolulu."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hawaiian_language",
+  "basedOn": "languages_039",
+  "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько живых языков насчитывают в Папуа — Новой Гвинее?",
+   "en": "About how many living languages are spoken in Papua New Guinea?"
+  },
+  "answer": 840,
+  "range": [
+   0,
+   3000
+  ],
+  "step": 10,
+  "tolerance": 150,
+  "unit": {
+   "ru": "языков",
+   "en": "languages"
+  },
+  "fact": {
+   "ru": "Это больше, чем в любой другой стране: горы и джунгли веками отделяли соседние долины друг от друга.",
+   "en": "That is more than in any other country: mountains and jungle kept neighbouring valleys apart for centuries."
+  },
+  "source": "https://en.wikipedia.org/wiki/Languages_of_Papua_New_Guinea",
+  "basedOn": "languages_049",
+  "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Создатели корейской азбуки уверяли, что умный выучит её за одно утро. Сколько в ней основных букв?",
+   "en": "The makers of the Korean alphabet said a clever person learns it in one morning. How many basic letters does it have?"
+  },
+  "answer": 24,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "букв",
+   "en": "letters"
+  },
+  "fact": {
+   "ru": "14 согласных и 10 гласных. Король Седжон обнародовал азбуку в 1446 году, чтобы простые люди могли читать без тысяч иероглифов.",
+   "en": "14 consonants and 10 vowels. King Sejong proclaimed it in 1446 so ordinary people could read without thousands of Chinese characters."
+  },
+  "source": "https://en.wikipedia.org/wiki/Hangul",
+  "basedOn": "languages_044",
+  "refine": "rewrite"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Розеттский камень нашли в 1799 году. Через сколько лет с его помощью прочли египетские иероглифы?",
+   "en": "The Rosetta Stone was found in 1799. How many years later did it help crack Egyptian hieroglyphs?"
+  },
+  "answer": 23,
+  "range": [
+   0,
+   100
+  ],
+  "step": 1,
+  "tolerance": 8,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Шампольон объявил о разгадке в 1822 году. Ключом стал указ, записанный на камне тремя видами письма, включая греческое.",
+   "en": "Champollion announced it in 1822. The key was a decree written on the stone in three scripts, including Greek."
+  },
+  "source": "https://en.wikipedia.org/wiki/Rosetta_Stone",
+  "basedOn": "languages_047",
+  "refine": "rewrite"
+ }
+]

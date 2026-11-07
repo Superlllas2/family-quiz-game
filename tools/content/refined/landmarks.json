@@ -1,0 +1,650 @@
+[
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что на самом деле называется Биг-Беном?",
+   "en": "What is Big Ben, strictly speaking?"
+  },
+  "options": [
+   {
+    "ru": "Колокол",
+    "en": "The bell"
+   },
+   {
+    "ru": "Башня",
+    "en": "The tower"
+   },
+   {
+    "ru": "Главные ворота парламента",
+    "en": "Parliament's main gate"
+   },
+   {
+    "ru": "Мост рядом с башней",
+    "en": "The bridge next to it"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Биг-Бен — это 13,7-тонный колокол, а сама башня с 2012 года официально зовётся башней Елизаветы.",
+   "en": "Big Ben is the 13.7-tonne bell; the tower itself has officially been called the Elizabeth Tower since 2012."
+  },
+  "source": "https://en.wikipedia.org/wiki/Big_Ben",
+  "basedOn": "landmarks_002",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чьи лица высечены в скале горы Рашмор?",
+   "en": "Whose faces are carved into Mount Rushmore?"
+  },
+  "options": [
+   {
+    "ru": "Четырёх президентов США",
+    "en": "Four US presidents"
+   },
+   {
+    "ru": "Четырёх индейских вождей",
+    "en": "Four Native American chiefs"
+   },
+   {
+    "ru": "Четырёх генералов",
+    "en": "Four army generals"
+   },
+   {
+    "ru": "Четырёх изобретателей",
+    "en": "Four inventors"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Их задумывали высечь по пояс, но в 1941 году кончились деньги, и остались одни 18-метровые головы.",
+   "en": "They were meant to be carved down to the waist, but the money ran out in 1941, leaving just the 18-metre heads."
+  },
+  "source": "https://en.wikipedia.org/wiki/Mount_Rushmore",
+  "basedOn": "landmarks_003",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чем была Пизанская башня по замыслу строителей?",
+   "en": "What was the Leaning Tower of Pisa built to be?"
+  },
+  "options": [
+   {
+    "ru": "Колокольней собора",
+    "en": "The cathedral's bell tower"
+   },
+   {
+    "ru": "Маяком",
+    "en": "A lighthouse"
+   },
+   {
+    "ru": "Сторожевой башней",
+    "en": "A watchtower"
+   },
+   {
+    "ru": "Тюрьмой",
+    "en": "A prison"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Она накренилась из-за мягкого грунта ещё во время стройки, а почти вековой перерыв в работе дал земле осесть и спас её.",
+   "en": "It began to lean on soft ground while still being built; a pause of almost a century let the soil settle and saved it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa",
+  "basedOn": "landmarks_004",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что делает Тауэрский мост в Лондоне, чтобы пропустить высокое судно?",
+   "en": "What does London's Tower Bridge do to let a tall ship through?"
+  },
+  "options": [
+   {
+    "ru": "Поднимает половинки пролёта",
+    "en": "Raises its two road halves"
+   },
+   {
+    "ru": "Отплывает в сторону",
+    "en": "Floats aside"
+   },
+   {
+    "ru": "Поворачивается вокруг опоры",
+    "en": "Swings round on a pier"
+   },
+   {
+    "ru": "Опускается под воду",
+    "en": "Sinks under the water"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1952 году мост начал раскрываться под автобусом, и водитель успел перепрыгнуть щель.",
+   "en": "In 1952 it began to open under a bus, and the driver sped up and jumped the gap."
+  },
+  "source": "https://en.wikipedia.org/wiki/Tower_Bridge",
+  "basedOn": "landmarks_009",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Для чего строили римский Колизей?",
+   "en": "What was the Roman Colosseum built for?"
+  },
+  "options": [
+   {
+    "ru": "Для боёв гладиаторов",
+    "en": "Gladiator fights"
+   },
+   {
+    "ru": "Для заседаний сената",
+    "en": "Senate meetings"
+   },
+   {
+    "ru": "Для хлебного рынка",
+    "en": "A grain market"
+   },
+   {
+    "ru": "Для бань",
+    "en": "Public baths"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Римляне звали его просто амфитеатром, а «Колизеем» его прозвали, скорее всего, из-за колоссальной статуи Нерона по соседству.",
+   "en": "Romans just called it the amphitheatre; 'Colosseum' probably came from a colossal statue of Nero next to it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Colosseum",
+  "basedOn": "landmarks_011",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой замок вдохновил замок Спящей красавицы в Диснейленде?",
+   "en": "Which castle inspired Sleeping Beauty Castle at Disneyland?"
+  },
+  "options": [
+   {
+    "ru": "Нойшванштайн",
+    "en": "Neuschwanstein"
+   },
+   {
+    "ru": "Виндзорский замок",
+    "en": "Windsor Castle"
+   },
+   {
+    "ru": "Эдинбургский замок",
+    "en": "Edinburgh Castle"
+   },
+   {
+    "ru": "Замок Бран",
+    "en": "Bran Castle"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сам Людвиг II прожил в своём сказочном замке всего 172 дня, и к его смерти замок был далеко не достроен.",
+   "en": "King Ludwig II lived in his fairy-tale castle for just 172 days, and at his death it was still far from finished."
+  },
+  "source": "https://en.wikipedia.org/wiki/Neuschwanstein_Castle",
+  "basedOn": "landmarks_014",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Для чего задумывали шпиль Эмпайр-стейт-билдинг?",
+   "en": "What was the Empire State Building's spire first designed for?"
+  },
+  "options": [
+   {
+    "ru": "Для причаливания дирижаблей",
+    "en": "Docking airships"
+   },
+   {
+    "ru": "Для прожектора кораблям",
+    "en": "A searchlight for ships"
+   },
+   {
+    "ru": "Как гигантский флагшток",
+    "en": "A giant flagpole"
+   },
+   {
+    "ru": "Для телескопа обсерватории",
+    "en": "An observatory telescope"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Затея провалилась: на такой высоте ветер мотал дирижабли так, что пассажиров нельзя было высадить.",
+   "en": "It never worked: winds at that height tossed the airships about so much no one could get off."
+  },
+  "source": "https://en.wikipedia.org/wiki/Empire_State_Building",
+  "basedOn": "landmarks_016",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Куда переехал старый Лондонский мост, проданный в 1968 году?",
+   "en": "Where did old London Bridge end up after it was sold in 1968?"
+  },
+  "options": [
+   {
+    "ru": "В Аризону",
+    "en": "Arizona, USA"
+   },
+   {
+    "ru": "В Токио",
+    "en": "Tokyo"
+   },
+   {
+    "ru": "В Дубай",
+    "en": "Dubai"
+   },
+   {
+    "ru": "В Мельбурн",
+    "en": "Melbourne"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Покупатель Роберт Маккаллок вывез только облицовочные камни и одел ими новый бетонный мост, а канал под ним прокопали потом.",
+   "en": "Buyer Robert McCulloch shipped only the numbered facing stones to clad a new concrete bridge; the canal under it was dug later."
+  },
+  "source": "https://en.wikipedia.org/wiki/London_Bridge_(Lake_Havasu_City)",
+  "basedOn": "landmarks_017",
+  "refine": "rewrite"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что китайские строители добавляли в известковый раствор Великой стены?",
+   "en": "What food did Chinese builders add to mortar for the Great Wall?"
+  },
+  "options": [
+   {
+    "ru": "Клейкий рис",
+    "en": "Sticky rice"
+   },
+   {
+    "ru": "Мёд",
+    "en": "Honey"
+   },
+   {
+    "ru": "Верблюжье молоко",
+    "en": "Camel milk"
+   },
+   {
+    "ru": "Пиво",
+    "en": "Beer"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Рисовый отвар делает раствор прочнее и устойчивее к воде, поэтому кладка эпохи Мин держится до сих пор.",
+   "en": "Rice soup makes the lime mortar tougher and more water-resistant, which is why Ming-era walls still hold."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sticky_rice_mortar",
+  "basedOn": "landmarks_018",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как Крайслер-билдинг внезапно стал самым высоким зданием мира?",
+   "en": "How did the Chrysler Building suddenly become the world's tallest?"
+  },
+  "options": [
+   {
+    "ru": "Поднял шпиль, тайно собранный внутри",
+    "en": "Raised a spire built in secret inside"
+   },
+   {
+    "ru": "Достроил три этажа за ночь",
+    "en": "Added three floors overnight"
+   },
+   {
+    "ru": "Мерил высоту от подвала",
+    "en": "Measured from the basement"
+   },
+   {
+    "ru": "Подкупил городских геодезистов",
+    "en": "Bribed the city surveyors"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "В 1929 году шпиль подняли за полтора часа, обойдя соперника с Уолл-стрит, но в 1931-м рекорд забрал Эмпайр-стейт-билдинг.",
+   "en": "In 1929 the spire went up in about 90 minutes, beating a Wall Street rival, but the Empire State took the title in 1931."
+  },
+  "source": "https://en.wikipedia.org/wiki/Chrysler_Building",
+  "basedOn": "landmarks_023",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Писатель Мопассан, ненавидевший Эйфелеву башню, часто обедал в её ресторане. Почему?",
+   "en": "Maupassant hated the Eiffel Tower yet often ate in its restaurant. Why?"
+  },
+  "options": [
+   {
+    "ru": "Только оттуда её не видно",
+    "en": "It was the one spot he couldn't see it"
+   },
+   {
+    "ru": "Эйфель кормил его бесплатно",
+    "en": "Eiffel fed him for free"
+   },
+   {
+    "ru": "Там работал его брат-повар",
+    "en": "His brother was the chef"
+   },
+   {
+    "ru": "Это был самый дешёвый обед",
+    "en": "It was the cheapest lunch in Paris"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Так гласит легенда; а протест против «бесполезной и чудовищной» башни Мопассан подписал вместе с Гуно и архитектором Оперы Гарнье.",
+   "en": "So the story goes; he had signed the protest against the 'useless and monstrous' tower with Gounod and Garnier, the Opéra's architect."
+  },
+  "source": "https://en.wikipedia.org/wiki/Eiffel_Tower",
+  "basedOn": "landmarks_024",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Шпиль Нотр-Дама, рухнувший при пожаре 2019 года, был построен в каком веке?",
+   "en": "The Notre-Dame spire that fell in the 2019 fire dated from which century?"
+  },
+  "options": [
+   {
+    "ru": "В XIX веке",
+    "en": "The 19th"
+   },
+   {
+    "ru": "В XII веке",
+    "en": "The 12th"
+   },
+   {
+    "ru": "В XIII веке",
+    "en": "The 13th"
+   },
+   {
+    "ru": "В XVI веке",
+    "en": "The 16th"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Средневековый шпиль разобрали в конце XVIII века; новый поставил в 1859 году Виолле-ле-Дюк и придал свои черты статуе апостола у его основания.",
+   "en": "The medieval spire came down in the late 1700s; Viollet-le-Duc built the new one in 1859 and gave an apostle statue at its base his own face."
+  },
+  "source": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris",
+  "basedOn": "landmarks_026",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что идёт по синим трубам на фасаде парижского Центра Помпиду?",
+   "en": "The blue pipes on the outside of Paris's Centre Pompidou carry what?"
+  },
+  "options": [
+   {
+    "ru": "Воздух",
+    "en": "Air"
+   },
+   {
+    "ru": "Воду",
+    "en": "Water"
+   },
+   {
+    "ru": "Электричество",
+    "en": "Electricity"
+   },
+   {
+    "ru": "Газ",
+    "en": "Gas"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Здание вывернули наизнанку, а трубы раскрасили по назначению: синие — климат и вентиляция, зелёные — вода, жёлтые — электричество.",
+   "en": "The building is inside out, its pipes coloured by job: blue for air and climate, green for water, yellow for electricity."
+  },
+  "source": "https://en.wikipedia.org/wiki/Centre_Pompidou",
+  "basedOn": "landmarks_031",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что появляется на ступенях пирамиды Кукулькана в Чичен-Ице в дни равноденствия?",
+   "en": "What appears on the steps of El Castillo at Chichen Itza at the equinoxes?"
+  },
+  "options": [
+   {
+    "ru": "Тень ползущего змея",
+    "en": "The shadow of a crawling serpent"
+   },
+   {
+    "ru": "Радуга",
+    "en": "A rainbow"
+   },
+   {
+    "ru": "Отражение луны",
+    "en": "The Moon's reflection"
+   },
+   {
+    "ru": "Солнечный зайчик на вершине",
+    "en": "A beam of light on the top"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тени уступов складываются в тело змея, который будто сползает к каменной змеиной голове у подножия.",
+   "en": "The shadows of the terraces form a snake's body that seems to slither down to a stone serpent head at the base."
+  },
+  "source": "https://en.wikipedia.org/wiki/El_Castillo,_Chichen_Itza",
+  "basedOn": "landmarks_032",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Куда смотрит большинство статуй моаи на острове Пасхи?",
+   "en": "Which way do most of the moai statues on Easter Island face?"
+  },
+  "options": [
+   {
+    "ru": "Вглубь острова",
+    "en": "Inland"
+   },
+   {
+    "ru": "В открытый океан",
+    "en": "Out to sea"
+   },
+   {
+    "ru": "Друг на друга по кругу",
+    "en": "At each other in a circle"
+   },
+   {
+    "ru": "Прямо в небо",
+    "en": "Straight up at the sky"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Моаи изображали предков и стояли спиной к морю, словно охраняя деревни своих потомков.",
+   "en": "The moai stood for ancestors, backs to the sea, as if watching over their descendants' villages."
+  },
+  "source": "https://en.wikipedia.org/wiki/Moai",
+  "basedOn": "landmarks_033",
+  "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что находится на самой верхушке купола римского Пантеона?",
+   "en": "What is at the very top of the dome of Rome's Pantheon?"
+  },
+  "options": [
+   {
+    "ru": "Круглая дыра в небо",
+    "en": "A round hole open to the sky"
+   },
+   {
+    "ru": "Колокол",
+    "en": "A bell"
+   },
+   {
+    "ru": "Стеклянный фонарь",
+    "en": "A glass lantern"
+   },
+   {
+    "ru": "Статуя Юпитера",
+    "en": "A statue of Jupiter"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Отверстие никогда не закрывали: дождь льёт прямо в храм, а пол сделан с уклоном и стоками, чтобы вода уходила.",
+   "en": "It was never covered: rain pours straight in, and the floor slopes to drains that carry the water away."
+  },
+  "source": "https://en.wikipedia.org/wiki/Pantheon,_Rome",
+  "basedOn": "landmarks_035",
+  "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет пирамида Хеопса оставалась самым высоким сооружением, построенным людьми?",
+   "en": "For how many years was the Great Pyramid the tallest structure built by people?"
+  },
+  "answer": 3800,
+  "range": [
+   0,
+   6000
+  ],
+  "step": 50,
+  "tolerance": 700,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "Её обогнал лишь в Средние века шпиль английского собора, и тот потом рухнул, а пирамида стоит до сих пор.",
+   "en": "Only in the Middle Ages did an English cathedral spire beat it, and that spire later fell; the pyramid still stands."
+  },
+  "source": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+  "basedOn": "landmarks_050",
+  "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько лет прошло от закладки до завершения Кёльнского собора?",
+   "en": "How many years passed from start to finish of Cologne Cathedral?"
+  },
+  "answer": 632,
+  "range": [
+   0,
+   1000
+  ],
+  "step": 2,
+  "tolerance": 80,
+  "unit": {
+   "ru": "лет",
+   "en": "years"
+  },
+  "fact": {
+   "ru": "В 1473 году стройка встала, и почти 400 лет над недостроенной южной башней торчал средневековый подъёмный кран.",
+   "en": "Work stalled in 1473, and for some 400 years a medieval crane stood on the unfinished south tower."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cologne_Cathedral",
+  "basedOn": "landmarks_041",
+  "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Во сколько раз Сиднейский оперный театр обошёлся дороже первой сметы?",
+   "en": "How many times its first budget did the Sydney Opera House end up costing?"
+  },
+  "answer": 15,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "раз",
+   "en": "times"
+  },
+  "fact": {
+   "ru": "Смета 1957 года была 7 миллионов долларов, а итог — 102 миллиона, и строили его 14 лет вместо четырёх.",
+   "en": "The 1957 estimate was $7 million, the final bill $102 million, and it took 14 years instead of four."
+  },
+  "source": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
+  "basedOn": "landmarks_048",
+  "refine": "same"
+ },
+ {
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Эйфелева башня — 330 метров. Какой высоты небоскрёб Бурдж-Халифа в Дубае?",
+   "en": "The Eiffel Tower is 330 metres tall. How tall is the Burj Khalifa in Dubai?"
+  },
+  "answer": 828,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 4,
+  "tolerance": 80,
+  "unit": {
+   "ru": "м",
+   "en": "m"
+  },
+  "fact": {
+   "ru": "Это две с половиной Эйфелевы башни, а один только шпиль на вершине — выше 240 метров, и полезного места в нём почти нет.",
+   "en": "That's two and a half Eiffel Towers, and the spire alone is over 240 metres tall, with hardly any usable space."
+  },
+  "source": "https://en.wikipedia.org/wiki/Burj_Khalifa",
+  "basedOn": "landmarks_044",
+  "refine": "rewrite"
+ }
+]

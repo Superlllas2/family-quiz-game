@@ -22,9 +22,10 @@ namespace FamilyQuiz.Tests
             var content = TestContent.Shipped();
             var bank = content.Bank;
             Assert.That(bank.Questions, Is.SameAs(content.Questions));
-            Assert.That(bank.Questions.Count, Is.EqualTo(120));
+            // The refined bank grows topic by topic (D130), so these are floors: the first 12 topics of 10 questions.
+            Assert.That(bank.Questions.Count, Is.GreaterThanOrEqualTo(120));
             Assert.That(bank.Questions.All(q => q.Id.StartsWith("cur_")), Is.True, "no full bank question is loaded");
-            Assert.That(bank.Topics.Count(t => !t.Mixed), Is.EqualTo(12));
+            Assert.That(bank.Topics.Count(t => !t.Mixed), Is.GreaterThanOrEqualTo(12));
             Assert.That(bank.Topics.Any(t => t.Mixed), Is.True, "the mixed door stays");
         }
 
@@ -34,10 +35,13 @@ namespace FamilyQuiz.Tests
             var bank = TestContent.Shipped().Bank;
             foreach (var topic in bank.Topics.Where(t => !t.Mixed))
             {
+                // Whole rounds: k times 3 easy, 5 medium and 2 closest value (10 per topic at first, 20 and up under D130).
                 var qs = bank.Questions.Where(q => q.Topic == topic.Id).ToList();
-                Assert.That(qs.Count(q => q.Difficulty == "easy"), Is.EqualTo(3), topic.Id);
-                Assert.That(qs.Count(q => q.Difficulty == "medium"), Is.EqualTo(5), topic.Id);
-                Assert.That(qs.Count(q => q.Format == QuestionDef.ClosestValue), Is.EqualTo(2), topic.Id);
+                int k = qs.Count / 10;
+                Assert.That(k, Is.GreaterThanOrEqualTo(1), topic.Id);
+                Assert.That(qs.Count(q => q.Difficulty == "easy"), Is.EqualTo(3 * k), topic.Id);
+                Assert.That(qs.Count(q => q.Difficulty == "medium"), Is.EqualTo(5 * k), topic.Id);
+                Assert.That(qs.Count(q => q.Format == QuestionDef.ClosestValue), Is.EqualTo(2 * k), topic.Id);
             }
         }
 

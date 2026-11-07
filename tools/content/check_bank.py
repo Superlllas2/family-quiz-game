@@ -2,9 +2,10 @@
 # each a list of 50 questions without ids (build_questions.py gives the ids). Run from the repo root:
 #   python tools/content/check_bank.py                     every topic file there is
 #   python tools/content/check_bank.py tools/content/bank/space.json [...]
-#   python tools/content/check_bank.py --refined [files]   the refined test bank in tools/content/refined (decisions/0020):
-#                                                          10 questions per topic (3 easy, 5 medium, 2 hard) with
-#                                                          basedOn (a v4 question id or null) and refine (same, rewrite, new)
+#   python tools/content/check_bank.py --refined [files]   the refined bank in tools/content/refined (decisions/0020, D130):
+#                                                          whole rounds per topic, k times (3 easy, 5 medium, 2 hard), so 10
+#                                                          or 20 questions, with basedOn (a v4 question id or null) and
+#                                                          refine (same, rewrite, new)
 # Rules: the schema limits of docs/15_schemas.md, the kinds a round can use (config.json: easy and medium multiple
 # choice, hard closest value), and closest value sliders that leave room and never pay for a guess at either end.
 import json, os, re, sys
@@ -142,7 +143,12 @@ def check_file(path, topic_ids):
             if key in texts:
                 errs.append("%s repeats the question of %s[%d]" % (where, name, texts[key]))
             texts[key] = i
-    for kind, n in (REFINED_COUNTS if refined_mode else COUNTS).items():
+    counts = COUNTS
+    if refined_mode:
+        # A refined topic holds whole rounds: k times the 3, 5, 2 mix (D130 asks for at least 20, so k = 2 and up).
+        k = max(1, round(sum(count.values()) / sum(REFINED_COUNTS.values())))
+        counts = {kind: n * k for kind, n in REFINED_COUNTS.items()}
+    for kind, n in counts.items():
         if count.get(kind, 0) != n:
             errs.append("%s has %d %s %s questions, needs exactly %d" % (name, count.get(kind, 0), kind[1], kind[0], n))
     return errs

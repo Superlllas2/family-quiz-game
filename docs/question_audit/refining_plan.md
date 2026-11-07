@@ -1,6 +1,6 @@
 # Plan: refine the whole question bank (draft for Ilia, Nov 7, 2026)
 
-**Status:** a plan, nothing built yet. The pilot starts after Ilia approves it.
+**Status:** the pilot (step 1) is built, Nov 7: `pilot_languages_landmarks.md` here, with three open questions for Ilia. Steps 2 and 3 wait for his reading.
 
 ## Why
 

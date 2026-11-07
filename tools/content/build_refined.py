@@ -2,7 +2,7 @@
 # decisions/0020), from tools/content/refined. Run from
 # the repo root:
 #   python tools/content/build_refined.py
-# Each tools/content/refined/<topic>.json holds 10 questions (3 easy, 5 medium multiple choice, 2 hard closest value)
+# Each tools/content/refined/<topic>.json holds whole rounds: k times (3 easy, 5 medium multiple choice, 2 hard closest value)
 # with basedOn (the full bank question id it comes from, or null) and refine (same, rewrite, new); check_bank.py
 # --refined checks them first. Ids are cur_<topic>_NN in file order, sorted easy, medium, closest value. A "same"
 # question is copied again from content/questions.json, so it stays an exact copy of its full bank question.
