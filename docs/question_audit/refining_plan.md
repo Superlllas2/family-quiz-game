@@ -41,7 +41,8 @@ These replace anything above that disagrees.
    - The correct option is never the single, much longer option.
    - No one formula fills more than about a quarter of a topic (the word questions of `languages` are the exception).
    - Every new or changed fact is checked on the web, with the source in the question.
-3. **The set aside list** is `tools/content/set_aside.json` (id and reason). `build_refined.py` refuses a refined question based on a set aside one. The bank files and `content/questions.json` are not touched, so no id moves.
+3. **Answers after batch 1 (Ilia, Nov 7):** plombir comes back (kitchen_034, a borrowed word); Russian memes with foreign roots such as Превед and Ждун are allowed; the kitchen scope no longer mentions Russian and Soviet food; HBO's Chernobyl stays set aside. **All remaining topics are refined** in batches without a stop between them; Russian politics (`ru_politics`) is not refined.
+4. **The set aside list** is `tools/content/set_aside.json` (id and reason). `build_refined.py` refuses a refined question based on a set aside one. The bank files and `content/questions.json` are not touched, so no id moves.
 
 ## Setting questions aside
 
