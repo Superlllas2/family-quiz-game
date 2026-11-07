@@ -6,6 +6,10 @@
 # with basedOn (the full bank question id it comes from, or null) and refine (same, rewrite, new); check_bank.py
 # --refined checks them first. Ids are cur_<topic>_NN in file order, sorted easy, medium, closest value. A "same"
 # question is copied again from content/questions.json, so it stays an exact copy of its full bank question.
+# Ids are for good: a question keeps the "id" it has in its source file (seen lists on the laptops and the ratings in
+# the logs refer to it), and a question without one gets cur_<topic>_NN with the next number never used in the topic,
+# written back into its source file. tools/content/refined_last_ids.json remembers the highest number per topic, so a
+# replaced question's id is never reused.
 # tools/content/set_aside.json lists full bank questions kept out of the refined bank, each with its reason (for
 # example Russia outside the Russian topics); a refined question may not be based on one of them.
 import json, os, sys
@@ -15,6 +19,7 @@ import check_bank
 
 ROOT = os.getcwd()
 REFINED = os.path.join(ROOT, "tools", "content", "refined")
+NL = chr(10)
 ORDER = {("multipleChoice", "easy"): 0, ("multipleChoice", "medium"): 1, ("closestValue", "hard"): 2}
 MC = ["format", "difficulty", "text", "options", "correct", "fact", "source"]
 CV = ["format", "difficulty", "text", "answer", "range", "step", "tolerance", "unit", "fact", "source"]
@@ -33,7 +38,13 @@ def main():
         full = {q["id"]: q for q in json.load(f)}
     with open(os.path.join(ROOT, "tools", "content", "set_aside.json"), encoding="utf-8") as f:
         set_aside = json.load(f)
+    last_path = os.path.join(ROOT, "tools", "content", "refined_last_ids.json")
+    last = {}
+    if os.path.exists(last_path):
+        with open(last_path, encoding="utf-8") as f:
+            last = json.load(f)
     out = []
+    to_write = {}
     errors = ["set_aside.json: %s is not a full bank question" % i for i in set_aside if i not in full]
     for topic in topics:
         path = os.path.join(REFINED, topic + ".json")
@@ -41,7 +52,14 @@ def main():
             continue
         with open(path, encoding="utf-8") as f:
             items = json.load(f)
-        items = sorted(items, key=lambda q: ORDER[(q["format"], q["difficulty"])])
+        top = max([last.get(topic, 0)] + [int(q["id"].rsplit("_", 1)[1]) for q in items if "id" in q])
+        if any("id" not in q for q in items):
+            for q in sorted((q for q in items if "id" not in q), key=lambda q: ORDER[(q["format"], q["difficulty"])]):
+                top += 1
+                q["id"] = "cur_%s_%02d" % (topic, top)
+            to_write[path] = items
+        last[topic] = top
+        items = sorted(items, key=lambda q: (ORDER[(q["format"], q["difficulty"])], int(q["id"].rsplit("_", 1)[1])))
         for n, q in enumerate(items, 1):
             # The game loads only this bank (D130), so the checks against the full bank live here.
             based = q.get("basedOn")
@@ -53,11 +71,12 @@ def main():
                     errors.append("%s #%d: basedOn %s is a question of another topic" % (topic, n, based))
                 if based in set_aside:
                     errors.append("%s #%d: basedOn %s is set aside: %s" % (topic, n, based, set_aside[based]))
+            qid = q["id"]
             if q["refine"] == "same":
                 src = full[q["basedOn"]]
                 q = {k: src[k] for k in (MC if src["format"] == "multipleChoice" else CV)} | {"basedOn": q["basedOn"], "refine": "same"}
             keys = MC if q["format"] == "multipleChoice" else CV
-            entry = {"id": "cur_%s_%02d" % (topic, n), "topic": topic}
+            entry = {"id": qid, "topic": topic}
             entry.update({k: q[k] for k in keys})
             entry["basedOn"] = q.get("basedOn")
             entry["refine"] = q["refine"]
@@ -65,6 +84,11 @@ def main():
     if errors:
         print("\n".join(errors))
         sys.exit(1)
+    for path, items in to_write.items():
+        with open(path, "w", encoding="utf-8", newline=NL) as f:
+            f.write(json.dumps(items, ensure_ascii=False, indent=1) + NL)
+    with open(last_path, "w", encoding="utf-8", newline=NL) as f:
+        f.write(json.dumps(last, indent=1, sort_keys=True) + NL)
     target = os.path.join(ROOT, "content", "questions_refined.json")
     with open(target, "w", encoding="utf-8", newline="\n") as f:
         f.write("[\n" + ",\n".join(json.dumps(q, ensure_ascii=False) for q in out) + "\n]\n")

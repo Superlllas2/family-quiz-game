@@ -1,12 +1,336 @@
 [
-  {"format": "multipleChoice", "difficulty": "easy", "text": {"ru": "Чей тигр оказался в ванной у героев «Мальчишника в Вегасе»?", "en": "Whose tiger turns up in the bathroom in The Hangover?"}, "options": [{"ru": "Майка Тайсона", "en": "Mike Tyson's"}, {"ru": "Зигфрида и Роя", "en": "Siegfried and Roy's"}, {"ru": "Майкла Джексона", "en": "Michael Jackson's"}, {"ru": "Элвиса Пресли", "en": "Elvis Presley's"}], "correct": 0, "fact": {"ru": "Тайсон играет в фильме самого себя и в жизни правда держал бенгальских тигров: в 90-х у него их было трое.", "en": "Tyson plays himself, and he really did keep Bengal tigers: in the 1990s he owned three."}, "source": "https://en.wikipedia.org/wiki/The_Hangover", "basedOn": null, "refine": "new"},
-  {"format": "multipleChoice", "difficulty": "easy", "text": {"ru": "В 2017 году звёзды «Бонни и Клайда» объявили на «Оскаре» не тот лучший фильм. Какой?", "en": "In 2017 the stars of Bonnie and Clyde read out the wrong Best Picture at the Oscars. Which film?"}, "options": [{"ru": "Ла-Ла Ленд", "en": "La La Land"}, {"ru": "Прибытие", "en": "Arrival"}, {"ru": "Манчестер у моря", "en": "Manchester by the Sea"}, {"ru": "Скрытые фигуры", "en": "Hidden Figures"}], "correct": 0, "fact": {"ru": "Уоррену Битти дали конверт «Лучшая актриса» (Эмма Стоун, «Ла-Ла Ленд»), а победил «Лунный свет».", "en": "Warren Beatty had been handed the Best Actress envelope (Emma Stone, La La Land); the real winner was Moonlight."}, "source": "https://en.wikipedia.org/wiki/89th_Academy_Awards", "basedOn": "films_new_003", "refine": "rewrite"},
-  {"format": "multipleChoice", "difficulty": "easy", "text": {"ru": "Песни к фильмам о Бонде полвека не могли взять «Оскар». Кто сделал это первым?", "en": "Bond songs went half a century without an Oscar. Who was the first to win one?"}, "options": [{"ru": "Сэм Смит", "en": "Sam Smith"}, {"ru": "Пол Маккартни", "en": "Paul McCartney"}, {"ru": "Адель", "en": "Adele"}, {"ru": "Билли Айлиш", "en": "Billie Eilish"}], "correct": 2, "fact": {"ru": "Адель — за «Скайфолл» в 2013 году. Маккартни с «Live and Let Die» проиграл ещё в 1974-м, а Сэм Смит и Билли Айлиш победили после неё.", "en": "Adele, for Skyfall, in 2013. McCartney's Live and Let Die lost back in 1974; Sam Smith and Billie Eilish won after her."}, "source": "https://en.wikipedia.org/wiki/Skyfall_(Adele_song)", "basedOn": "films_new_013", "refine": "rewrite"},
-  {"format": "multipleChoice", "difficulty": "medium", "text": {"ru": "«Русский ковчег» Сокурова сняли в Эрмитаже за один день. Чем этот фильм уникален?", "en": "Sokurov's Russian Ark was shot in the Hermitage in a single day. What makes it unique?"}, "options": [{"ru": "Он полностью немой", "en": "It is entirely silent"}, {"ru": "Он снят при свечах", "en": "It was lit only by candles"}, {"ru": "Он снят в 3D", "en": "It was shot in 3D"}, {"ru": "Весь фильм — один дубль", "en": "The whole film is one take"}], "correct": 3, "fact": {"ru": "87 минут камера шла через 33 зала без единой склейки. Три дубля сорвались, а четвёртый удался, когда дневной свет почти кончился.", "en": "For 87 minutes the camera moved through 33 rooms without a cut. Three takes failed; the fourth worked as the daylight ran out."}, "source": "https://en.wikipedia.org/wiki/Russian_Ark", "basedOn": "films_new_036", "refine": "rewrite"},
-  {"format": "multipleChoice", "difficulty": "medium", "text": {"ru": "Для «Интерстеллара» Нолан вырастил 200 гектаров настоящей кукурузы. Чем это обернулось?", "en": "For Interstellar, Nolan grew 500 acres of real corn. How did that turn out?"}, "options": [{"ru": "Поле съела саранча", "en": "Locusts ate the field"}, {"ru": "Фермеры подали в суд", "en": "Local farmers sued"}, {"ru": "Фильм на ней заработал", "en": "The film made money on it"}, {"ru": "Её запретили продавать", "en": "Its sale was banned"}], "correct": 2, "fact": {"ru": "Урожай продали с прибылью. Совет вырастить кукурузу самим дал Зак Снайдер, который так же делал для «Человека из стали».", "en": "The crop was sold at a profit. Zack Snyder, who had done the same for Man of Steel, advised Nolan to grow his own."}, "source": "https://www.slashfilm.com/1742291/zack-snyder-helped-christopher-nolan-interstellar", "basedOn": null, "refine": "new"},
-  {"format": "multipleChoice", "difficulty": "medium", "text": {"ru": "Первая женщина с «Оскаром» за режиссуру обошла в тот год бывшего мужа — Кэмерона. Кто она?", "en": "The first woman to win Best Director beat her ex-husband, James Cameron, that year. Who is she?"}, "options": [{"ru": "София Коппола", "en": "Sofia Coppola"}, {"ru": "Кэтрин Бигелоу", "en": "Kathryn Bigelow"}, {"ru": "Грета Гервиг", "en": "Greta Gerwig"}, {"ru": "Джейн Кэмпион", "en": "Jane Campion"}], "correct": 1, "fact": {"ru": "В 2010 году её «Повелитель бури» победил «Аватар». Бигелоу и Кэмерон были женаты в 1989–1991 годах и остались друзьями.", "en": "In 2010 her The Hurt Locker beat Avatar. Bigelow and Cameron were married from 1989 to 1991 and stayed friends."}, "source": "https://en.wikipedia.org/wiki/Kathryn_Bigelow", "basedOn": "films_new_033", "refine": "rewrite"},
-  {"format": "multipleChoice", "difficulty": "medium", "text": {"ru": "Жёлтый костюм Невесты в «Убить Билла» повторяет костюм из фильма, который звезда не успела доснять. Чей?", "en": "The Bride's yellow suit in Kill Bill copies one from a film its star never finished. Whose?"}, "options": [{"ru": "Джеки Чана", "en": "Jackie Chan's"}, {"ru": "Чака Норриса", "en": "Chuck Norris's"}, {"ru": "Джета Ли", "en": "Jet Li's"}, {"ru": "Брюса Ли", "en": "Bruce Lee's"}], "correct": 3, "fact": {"ru": "В «Игре смерти» Брюс Ли сменил чёрный костюм на жёлтый: на нём лучше видны следы ног Карима Абдул-Джаббара.", "en": "In Game of Death, Bruce Lee swapped a black suit for yellow so Kareem Abdul-Jabbar's footprints would show up better."}, "source": "https://en.wikipedia.org/wiki/Game_of_Death", "basedOn": "films_new_027", "refine": "rewrite"},
-  {"format": "multipleChoice", "difficulty": "medium", "text": {"ru": "Что вместо пальцев у людей в одной из вселенных фильма «Всё везде и сразу»?", "en": "In one universe of Everything Everywhere All at Once, what do people have instead of fingers?"}, "options": [{"ru": "Сосиски", "en": "Hot dogs"}, {"ru": "Морковки", "en": "Carrots"}, {"ru": "Карандаши", "en": "Pencils"}, {"ru": "Ложки", "en": "Spoons"}], "correct": 0, "fact": {"ru": "Эта абсурдная комедия взяла 7 «Оскаров», включая лучший фильм, а Мишель Йео стала первой азиаткой — лучшей актрисой.", "en": "This absurdist comedy won 7 Oscars including Best Picture, and Michelle Yeoh became the first Asian Best Actress."}, "source": "https://en.wikipedia.org/wiki/Everything_Everywhere_All_at_Once", "basedOn": "films_new_019", "refine": "same"},
-  {"format": "closestValue", "difficulty": "hard", "text": {"ru": "На съёмках «Аватар: Путь воды» Кейт Уинслет задержала дыхание под водой. На сколько секунд?", "en": "Filming Avatar: The Way of Water, Kate Winslet held her breath underwater. For how many seconds?"}, "answer": 434, "range": [30, 1200], "step": 1, "tolerance": 90, "unit": {"ru": "секунд", "en": "seconds"}, "fact": {"ru": "Это 7 минут 14 секунд — дольше, чем Том Круз (около 6 минут) на съёмках «Миссия невыполнима: Племя изгоев».", "en": "That's 7 minutes 14 seconds, beating Tom Cruise's roughly 6 minutes for Mission: Impossible – Rogue Nation."}, "source": "https://www.moviemaker.com/james-cameron-kate-winslet-held-breath-7-minutes-and-14-seconds-avatar", "basedOn": "films_new_040", "refine": "same"},
-  {"format": "closestValue", "difficulty": "hard", "text": {"ru": "Сколько всего «Оскаров» получила трилогия «Властелин колец»?", "en": "How many Oscars did the Lord of the Rings trilogy win in total?"}, "answer": 17, "range": [0, 60], "step": 1, "tolerance": 7, "unit": {"ru": "наград", "en": "Oscars"}, "fact": {"ru": "Первые два фильма взяли 4 и 2 награды, а «Возвращение короля» — 11 из 11, повторив рекорд «Бен-Гура» и «Титаника».", "en": "The first two films won 4 and 2, then The Return of the King won all 11 of its nominations, tying Ben-Hur and Titanic."}, "source": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)", "basedOn": "films_new_039", "refine": "same"}
+ {
+  "id": "cur_films_new_01",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Чей тигр оказался в ванной у героев «Мальчишника в Вегасе»?",
+   "en": "Whose tiger turns up in the bathroom in The Hangover?"
+  },
+  "options": [
+   {
+    "ru": "Майка Тайсона",
+    "en": "Mike Tyson's"
+   },
+   {
+    "ru": "Зигфрида и Роя",
+    "en": "Siegfried and Roy's"
+   },
+   {
+    "ru": "Майкла Джексона",
+    "en": "Michael Jackson's"
+   },
+   {
+    "ru": "Элвиса Пресли",
+    "en": "Elvis Presley's"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Тайсон играет в фильме самого себя и в жизни правда держал бенгальских тигров: в 90-х у него их было трое.",
+   "en": "Tyson plays himself, and he really did keep Bengal tigers: in the 1990s he owned three."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Hangover",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_films_new_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "В 2017 году звёзды «Бонни и Клайда» объявили на «Оскаре» не тот лучший фильм. Какой?",
+   "en": "In 2017 the stars of Bonnie and Clyde read out the wrong Best Picture at the Oscars. Which film?"
+  },
+  "options": [
+   {
+    "ru": "Ла-Ла Ленд",
+    "en": "La La Land"
+   },
+   {
+    "ru": "Прибытие",
+    "en": "Arrival"
+   },
+   {
+    "ru": "Манчестер у моря",
+    "en": "Manchester by the Sea"
+   },
+   {
+    "ru": "Скрытые фигуры",
+    "en": "Hidden Figures"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Уоррену Битти дали конверт «Лучшая актриса» (Эмма Стоун, «Ла-Ла Ленд»), а победил «Лунный свет».",
+   "en": "Warren Beatty had been handed the Best Actress envelope (Emma Stone, La La Land); the real winner was Moonlight."
+  },
+  "source": "https://en.wikipedia.org/wiki/89th_Academy_Awards",
+  "basedOn": "films_new_003",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_films_new_03",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Песни к фильмам о Бонде полвека не могли взять «Оскар». Кто сделал это первым?",
+   "en": "Bond songs went half a century without an Oscar. Who was the first to win one?"
+  },
+  "options": [
+   {
+    "ru": "Сэм Смит",
+    "en": "Sam Smith"
+   },
+   {
+    "ru": "Пол Маккартни",
+    "en": "Paul McCartney"
+   },
+   {
+    "ru": "Адель",
+    "en": "Adele"
+   },
+   {
+    "ru": "Билли Айлиш",
+    "en": "Billie Eilish"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Адель — за «Скайфолл» в 2013 году. Маккартни с «Live and Let Die» проиграл ещё в 1974-м, а Сэм Смит и Билли Айлиш победили после неё.",
+   "en": "Adele, for Skyfall, in 2013. McCartney's Live and Let Die lost back in 1974; Sam Smith and Billie Eilish won after her."
+  },
+  "source": "https://en.wikipedia.org/wiki/Skyfall_(Adele_song)",
+  "basedOn": "films_new_013",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_films_new_04",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "«Русский ковчег» Сокурова сняли в Эрмитаже за один день. Чем этот фильм уникален?",
+   "en": "Sokurov's Russian Ark was shot in the Hermitage in a single day. What makes it unique?"
+  },
+  "options": [
+   {
+    "ru": "Он полностью немой",
+    "en": "It is entirely silent"
+   },
+   {
+    "ru": "Он снят при свечах",
+    "en": "It was lit only by candles"
+   },
+   {
+    "ru": "Он снят в 3D",
+    "en": "It was shot in 3D"
+   },
+   {
+    "ru": "Весь фильм — один дубль",
+    "en": "The whole film is one take"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "87 минут камера шла через 33 зала без единой склейки. Три дубля сорвались, а четвёртый удался, когда дневной свет почти кончился.",
+   "en": "For 87 minutes the camera moved through 33 rooms without a cut. Three takes failed; the fourth worked as the daylight ran out."
+  },
+  "source": "https://en.wikipedia.org/wiki/Russian_Ark",
+  "basedOn": "films_new_036",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_films_new_05",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Для «Интерстеллара» Нолан вырастил 200 гектаров настоящей кукурузы. Чем это обернулось?",
+   "en": "For Interstellar, Nolan grew 500 acres of real corn. How did that turn out?"
+  },
+  "options": [
+   {
+    "ru": "Поле съела саранча",
+    "en": "Locusts ate the field"
+   },
+   {
+    "ru": "Фермеры подали в суд",
+    "en": "Local farmers sued"
+   },
+   {
+    "ru": "Фильм на ней заработал",
+    "en": "The film made money on it"
+   },
+   {
+    "ru": "Её запретили продавать",
+    "en": "Its sale was banned"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Урожай продали с прибылью. Совет вырастить кукурузу самим дал Зак Снайдер, который так же делал для «Человека из стали».",
+   "en": "The crop was sold at a profit. Zack Snyder, who had done the same for Man of Steel, advised Nolan to grow his own."
+  },
+  "source": "https://www.slashfilm.com/1742291/zack-snyder-helped-christopher-nolan-interstellar",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_films_new_06",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Первая женщина с «Оскаром» за режиссуру обошла в тот год бывшего мужа — Кэмерона. Кто она?",
+   "en": "The first woman to win Best Director beat her ex-husband, James Cameron, that year. Who is she?"
+  },
+  "options": [
+   {
+    "ru": "София Коппола",
+    "en": "Sofia Coppola"
+   },
+   {
+    "ru": "Кэтрин Бигелоу",
+    "en": "Kathryn Bigelow"
+   },
+   {
+    "ru": "Грета Гервиг",
+    "en": "Greta Gerwig"
+   },
+   {
+    "ru": "Джейн Кэмпион",
+    "en": "Jane Campion"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "В 2010 году её «Повелитель бури» победил «Аватар». Бигелоу и Кэмерон были женаты в 1989–1991 годах и остались друзьями.",
+   "en": "In 2010 her The Hurt Locker beat Avatar. Bigelow and Cameron were married from 1989 to 1991 and stayed friends."
+  },
+  "source": "https://en.wikipedia.org/wiki/Kathryn_Bigelow",
+  "basedOn": "films_new_033",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_films_new_07",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Жёлтый костюм Невесты в «Убить Билла» повторяет костюм из фильма, который звезда не успела доснять. Чей?",
+   "en": "The Bride's yellow suit in Kill Bill copies one from a film its star never finished. Whose?"
+  },
+  "options": [
+   {
+    "ru": "Джеки Чана",
+    "en": "Jackie Chan's"
+   },
+   {
+    "ru": "Чака Норриса",
+    "en": "Chuck Norris's"
+   },
+   {
+    "ru": "Джета Ли",
+    "en": "Jet Li's"
+   },
+   {
+    "ru": "Брюса Ли",
+    "en": "Bruce Lee's"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В «Игре смерти» Брюс Ли сменил чёрный костюм на жёлтый: на нём лучше видны следы ног Карима Абдул-Джаббара.",
+   "en": "In Game of Death, Bruce Lee swapped a black suit for yellow so Kareem Abdul-Jabbar's footprints would show up better."
+  },
+  "source": "https://en.wikipedia.org/wiki/Game_of_Death",
+  "basedOn": "films_new_027",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_films_new_08",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что вместо пальцев у людей в одной из вселенных фильма «Всё везде и сразу»?",
+   "en": "In one universe of Everything Everywhere All at Once, what do people have instead of fingers?"
+  },
+  "options": [
+   {
+    "ru": "Сосиски",
+    "en": "Hot dogs"
+   },
+   {
+    "ru": "Морковки",
+    "en": "Carrots"
+   },
+   {
+    "ru": "Карандаши",
+    "en": "Pencils"
+   },
+   {
+    "ru": "Ложки",
+    "en": "Spoons"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Эта абсурдная комедия взяла 7 «Оскаров», включая лучший фильм, а Мишель Йео стала первой азиаткой — лучшей актрисой.",
+   "en": "This absurdist comedy won 7 Oscars including Best Picture, and Michelle Yeoh became the first Asian Best Actress."
+  },
+  "source": "https://en.wikipedia.org/wiki/Everything_Everywhere_All_at_Once",
+  "basedOn": "films_new_019",
+  "refine": "same"
+ },
+ {
+  "id": "cur_films_new_09",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "На съёмках «Аватар: Путь воды» Кейт Уинслет задержала дыхание под водой. На сколько секунд?",
+   "en": "Filming Avatar: The Way of Water, Kate Winslet held her breath underwater. For how many seconds?"
+  },
+  "answer": 434,
+  "range": [
+   30,
+   1200
+  ],
+  "step": 1,
+  "tolerance": 90,
+  "unit": {
+   "ru": "секунд",
+   "en": "seconds"
+  },
+  "fact": {
+   "ru": "Это 7 минут 14 секунд — дольше, чем Том Круз (около 6 минут) на съёмках «Миссия невыполнима: Племя изгоев».",
+   "en": "That's 7 minutes 14 seconds, beating Tom Cruise's roughly 6 minutes for Mission: Impossible – Rogue Nation."
+  },
+  "source": "https://www.moviemaker.com/james-cameron-kate-winslet-held-breath-7-minutes-and-14-seconds-avatar",
+  "basedOn": "films_new_040",
+  "refine": "same"
+ },
+ {
+  "id": "cur_films_new_10",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько всего «Оскаров» получила трилогия «Властелин колец»?",
+   "en": "How many Oscars did the Lord of the Rings trilogy win in total?"
+  },
+  "answer": 17,
+  "range": [
+   0,
+   60
+  ],
+  "step": 1,
+  "tolerance": 7,
+  "unit": {
+   "ru": "наград",
+   "en": "Oscars"
+  },
+  "fact": {
+   "ru": "Первые два фильма взяли 4 и 2 награды, а «Возвращение короля» — 11 из 11, повторив рекорд «Бен-Гура» и «Титаника».",
+   "en": "The first two films won 4 and 2, then The Return of the King won all 11 of its nominations, tying Ben-Hur and Titanic."
+  },
+  "source": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)",
+  "basedOn": "films_new_039",
+  "refine": "same"
+ }
 ]

@@ -1,5 +1,6 @@
 [
  {
+  "id": "cur_crime_01",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -35,6 +36,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_crime_02",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -70,6 +72,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_crime_03",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -105,6 +108,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_crime_04",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -140,6 +144,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_crime_05",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -175,6 +180,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_crime_06",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -210,6 +216,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_crime_07",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -245,6 +252,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_crime_08",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -280,6 +288,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_crime_09",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
@@ -307,6 +316,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_crime_10",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {

@@ -1,5 +1,6 @@
 [
  {
+  "id": "cur_languages_01",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -34,6 +35,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_languages_02",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -68,6 +70,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_languages_03",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -102,6 +105,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_languages_04",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -136,6 +140,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_languages_05",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -170,6 +175,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_languages_06",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -204,6 +210,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_languages_07",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -238,6 +245,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_languages_08",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -272,6 +280,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_languages_09",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -306,6 +315,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_languages_10",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -340,6 +350,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_languages_11",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -374,6 +385,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_languages_12",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -408,6 +420,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_languages_13",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -442,6 +455,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_languages_14",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -476,6 +490,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_languages_15",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -510,6 +525,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_languages_16",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -544,6 +560,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_languages_17",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
@@ -570,6 +587,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_languages_18",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
@@ -596,6 +614,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_languages_19",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
@@ -622,6 +641,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_languages_20",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {

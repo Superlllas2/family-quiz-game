@@ -59,7 +59,7 @@ def check_question(q, where, errs):
         return
     keys = MC_KEYS if kind[0] == "multipleChoice" else CV_KEYS
     if refined_mode:
-        keys = keys | {"basedOn", "refine"}
+        keys = keys | {"basedOn", "refine", "id"}
         if q.get("refine") not in REFINE_KINDS:
             errs.append(where + ".refine must be same, rewrite or new")
         based = q.get("basedOn")
@@ -70,7 +70,7 @@ def check_question(q, where, errs):
     extra = set(q) - keys
     if extra:
         errs.append(where + " has unknown fields " + ", ".join(sorted(extra)))
-    missing = (keys - {"kids", "basedOn"}) - set(q)
+    missing = (keys - {"kids", "basedOn", "id"}) - set(q)
     if missing:
         errs.append(where + " is missing " + ", ".join(sorted(missing)))
         return
@@ -132,9 +132,24 @@ def check_file(path, topic_ids):
         return [path + ": must be a JSON list"]
     count = {}
     texts = {}
+    ids = {}
+    based = {}
     for i, q in enumerate(data):
         where = "%s[%d]" % (name, i)
         check_question(q, where, errs)
+        if isinstance(q, dict) and refined_mode:
+            # A refined question keeps its id for good (seen lists and ratings refer to it); a new one gets none
+            # until build_refined.py gives it the next free number.
+            if "id" in q:
+                if not re.match(r"^cur_%s_\d{2,3}$" % re.escape(name), str(q["id"])):
+                    errs.append("%s.id must be cur_%s_NN" % (where, name))
+                elif q["id"] in ids:
+                    errs.append("%s repeats the id of %s[%d]" % (where, name, ids[q["id"]]))
+                ids[q.get("id")] = i
+            if q.get("basedOn"):
+                if q["basedOn"] in based:
+                    errs.append("%s is based on %s, like %s[%d]" % (where, q["basedOn"], name, based[q["basedOn"]]))
+                based[q["basedOn"]] = i
         if isinstance(q, dict):
             kind = (q.get("format"), q.get("difficulty"))
             count[kind] = count.get(kind, 0) + 1

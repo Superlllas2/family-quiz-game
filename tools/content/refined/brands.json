@@ -1,326 +1,336 @@
 [
-  {
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "«Мишленовские звёзды» ресторанам раздаёт компания, которая делает…",
-      "en": "The Michelin stars for restaurants come from a company that makes…"
-    },
-    "options": [
-      {
-        "ru": "Вино",
-        "en": "Wine"
-      },
-      {
-        "ru": "Газеты",
-        "en": "Newspapers"
-      },
-      {
-        "ru": "Кухонные ножи",
-        "en": "Kitchen knives"
-      },
-      {
-        "ru": "Шины",
-        "en": "Tyres"
-      }
-    ],
-    "correct": 3,
-    "fact": {
-      "ru": "В 1900 году путеводитель раздавали бесплатно: чем больше люди ездят по ресторанам, тем быстрее стираются шины.",
-      "en": "In 1900 the guide was free: the more people drove out to eat, the faster they wore out their tyres."
-    },
-    "source": "https://en.wikipedia.org/wiki/Michelin_Guide",
-    "basedOn": "brands_010",
-    "refine": "same"
+ {
+  "id": "cur_brands_01",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "«Мишленовские звёзды» ресторанам раздаёт компания, которая делает…",
+   "en": "The Michelin stars for restaurants come from a company that makes…"
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Основатель Nike хотел назвать фирму «Dimension Six». А в честь кого её назвали в итоге?",
-      "en": "Nike's founder wanted to call the firm Dimension Six. Who was it named after in the end?"
-    },
-    "options": [
-      {
-        "ru": "Богини охоты",
-        "en": "A goddess of hunting"
-      },
-      {
-        "ru": "Богини победы",
-        "en": "A goddess of victory"
-      },
-      {
-        "ru": "Олимпийской чемпионки",
-        "en": "An Olympic champion"
-      },
-      {
-        "ru": "Жены основателя",
-        "en": "The founder's wife"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Имя приснилось первому сотруднику Джеффу Джонсону: Ника — греческая богиня победы. Фил Найт согласился в последний момент.",
-      "en": "First employee Jeff Johnson dreamt it up: Nike is the Greek goddess of victory. Phil Knight agreed at the last minute."
-    },
-    "source": "https://en.wikipedia.org/wiki/Nike,_Inc.",
-    "basedOn": "brands_005",
-    "refine": "rewrite"
+  "options": [
+   {
+    "ru": "Вино",
+    "en": "Wine"
+   },
+   {
+    "ru": "Газеты",
+    "en": "Newspapers"
+   },
+   {
+    "ru": "Кухонные ножи",
+    "en": "Kitchen knives"
+   },
+   {
+    "ru": "Шины",
+    "en": "Tyres"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "В 1900 году путеводитель раздавали бесплатно: чем больше люди ездят по ресторанам, тем быстрее стираются шины.",
+   "en": "In 1900 the guide was free: the more people drove out to eat, the faster they wore out their tyres."
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Что выпускал Ферруччо Ламборгини, прежде чем взяться за спорткары?",
-      "en": "What did Ferruccio Lamborghini make before he turned to sports cars?"
-    },
-    "options": [
-      {
-        "ru": "Мотороллеры",
-        "en": "Scooters"
-      },
-      {
-        "ru": "Велосипеды",
-        "en": "Bicycles"
-      },
-      {
-        "ru": "Самолёты",
-        "en": "Aircraft"
-      },
-      {
-        "ru": "Тракторы",
-        "en": "Tractors"
-      }
-    ],
-    "correct": 3,
-    "fact": {
-      "ru": "Тракторы Lamborghini делают до сих пор. По легенде, Энцо Феррари отмахнулся от жалоб «тракториста» на сцепление, и тот построил свою машину.",
-      "en": "Lamborghini tractors are still made. Legend says Enzo Ferrari brushed off the 'tractor maker's' clutch complaints, so he built his own car."
-    },
-    "source": "https://en.wikipedia.org/wiki/Ferruccio_Lamborghini",
-    "basedOn": null,
-    "refine": "new"
+  "source": "https://en.wikipedia.org/wiki/Michelin_Guide",
+  "basedOn": "brands_010",
+  "refine": "same"
+ },
+ {
+  "id": "cur_brands_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Основатель Nike хотел назвать фирму «Dimension Six». А в честь кого её назвали в итоге?",
+   "en": "Nike's founder wanted to call the firm Dimension Six. Who was it named after in the end?"
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Как изначально расшифровывалось название LG?",
-      "en": "What did LG originally stand for?"
-    },
-    "options": [
-      {
-        "ru": "Лаки Голдстар",
-        "en": "Lucky Goldstar"
-      },
-      {
-        "ru": "Лайфс Гуд",
-        "en": "Life's Good"
-      },
-      {
-        "ru": "Лайт энд Голд",
-        "en": "Light & Gold"
-      },
-      {
-        "ru": "Ли Груп",
-        "en": "Lee Group"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Слились две фирмы: Lak-Hui («лаки») делала крем для лица, GoldStar — радиоприёмники; «Life's Good» придумали потом.",
-      "en": "Two firms: Lak-Hui (\"Lucky\") made face cream and GoldStar made radios; \"Life's Good\" came later."
-    },
-    "source": "https://en.wikipedia.org/wiki/LG_Corporation",
-    "basedOn": "brands_027",
-    "refine": "same"
+  "options": [
+   {
+    "ru": "Богини охоты",
+    "en": "A goddess of hunting"
+   },
+   {
+    "ru": "Богини победы",
+    "en": "A goddess of victory"
+   },
+   {
+    "ru": "Олимпийской чемпионки",
+    "en": "An Olympic champion"
+   },
+   {
+    "ru": "Жены основателя",
+    "en": "The founder's wife"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Имя приснилось первому сотруднику Джеффу Джонсону: Ника — греческая богиня победы. Фил Найт согласился в последний момент.",
+   "en": "First employee Jeff Johnson dreamt it up: Nike is the Greek goddess of victory. Phil Knight agreed at the last minute."
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "С чего начиналась Nokia в 1865 году?",
-      "en": "What did Nokia start out making in 1865?"
-    },
-    "options": [
-      {
-        "ru": "Бумажная масса",
-        "en": "Wood pulp for paper"
-      },
-      {
-        "ru": "Лыжи",
-        "en": "Skis"
-      },
-      {
-        "ru": "Телеграфные аппараты",
-        "en": "Telegraph machines"
-      },
-      {
-        "ru": "Рыболовные сети",
-        "en": "Fishing nets"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Сначала была целлюлозная фабрика; резиновые сапоги и кабели пришли со слиянием в 1967 году, а телефоны — в 1980-х.",
-      "en": "First a pulp mill; rubber boots and cables came with a 1967 merger, and mobile phones only in the 1980s."
-    },
-    "source": "https://en.wikipedia.org/wiki/Nokia",
-    "basedOn": "brands_016",
-    "refine": "same"
+  "source": "https://en.wikipedia.org/wiki/Nike,_Inc.",
+  "basedOn": "brands_005",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_brands_03",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что выпускал Ферруччо Ламборгини, прежде чем взяться за спорткары?",
+   "en": "What did Ferruccio Lamborghini make before he turned to sports cars?"
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Что создатель тубы Pringles завещал сделать со своим прахом?",
-      "en": "What did the man who designed the Pringles can want done with his ashes?"
-    },
-    "options": [
-      {
-        "ru": "Отправить в космос",
-        "en": "Sent into space"
-      },
-      {
-        "ru": "Развеять над картофельным полем",
-        "en": "Scattered over a potato field"
-      },
-      {
-        "ru": "Похоронить в банке Pringles",
-        "en": "Buried in a Pringles can"
-      },
-      {
-        "ru": "Замуровать в стену завода",
-        "en": "Sealed in the factory wall"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Химик Фредрик Баур умер в 2008 году; по дороге на похороны дети купили банку в обычном магазине.",
-      "en": "Chemist Fredric Baur died in 2008; on the way to the funeral his children bought a can at a shop."
-    },
-    "source": "https://en.wikipedia.org/wiki/Fredric_Baur",
-    "basedOn": "brands_033",
-    "refine": "same"
+  "options": [
+   {
+    "ru": "Мотороллеры",
+    "en": "Scooters"
+   },
+   {
+    "ru": "Велосипеды",
+    "en": "Bicycles"
+   },
+   {
+    "ru": "Самолёты",
+    "en": "Aircraft"
+   },
+   {
+    "ru": "Тракторы",
+    "en": "Tractors"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Тракторы Lamborghini делают до сих пор. По легенде, Энцо Феррари отмахнулся от жалоб «тракториста» на сцепление, и тот построил свою машину.",
+   "en": "Lamborghini tractors are still made. Legend says Enzo Ferrari brushed off the 'tractor maker's' clutch complaints, so he built his own car."
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Из чего сложено название IKEA?",
-      "en": "What is the name IKEA made of?"
-    },
-    "options": [
-      {
-        "ru": "Имена детей основателя",
-        "en": "Founder's children's names"
-      },
-      {
-        "ru": "«Дом и уют» по-шведски",
-        "en": "Swedish for 'home and comfort'"
-      },
-      {
-        "ru": "Имя и адрес основателя",
-        "en": "Founder's name and address"
-      },
-      {
-        "ru": "Название первой фабрики",
-        "en": "The first factory's name"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Ingvar Kamprad, ферма Elmtaryd, деревня Agunnaryd; основатель путал цифры, поэтому товарам дают имена, а не номера.",
-      "en": "Ingvar Kamprad, Elmtaryd farm, Agunnaryd village; dyslexic Kamprad also gave products names, not numbers."
-    },
-    "source": "https://en.wikipedia.org/wiki/IKEA",
-    "basedOn": "brands_037",
-    "refine": "rewrite"
+  "source": "https://en.wikipedia.org/wiki/Ferruccio_Lamborghini",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_brands_04",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как изначально расшифровывалось название LG?",
+   "en": "What did LG originally stand for?"
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Samsung сегодня — это телефоны и телевизоры. А чем она торговала, когда открылась в 1938 году?",
-      "en": "Samsung means phones and TVs today. What did it trade in when it opened in 1938?"
-    },
-    "options": [
-      {
-        "ru": "Сушёной рыбой",
-        "en": "Dried fish"
-      },
-      {
-        "ru": "Швейными машинками",
-        "en": "Sewing machines"
-      },
-      {
-        "ru": "Радиоприёмниками",
-        "en": "Radios"
-      },
-      {
-        "ru": "Велосипедами",
-        "en": "Bicycles"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Лавка в Тэгу продавала продукты; электроника появилась в конце 1960-х, начиная с чёрно-белого телевизора.",
-      "en": "It was a grocery trader in Daegu; electronics came in the late 1960s, starting with a black and white TV."
-    },
-    "source": "https://en.wikipedia.org/wiki/Samsung",
-    "basedOn": "brands_018",
-    "refine": "rewrite"
+  "options": [
+   {
+    "ru": "Лаки Голдстар",
+    "en": "Lucky Goldstar"
+   },
+   {
+    "ru": "Лайфс Гуд",
+    "en": "Life's Good"
+   },
+   {
+    "ru": "Лайт энд Голд",
+    "en": "Light & Gold"
+   },
+   {
+    "ru": "Ли Груп",
+    "en": "Lee Group"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Слились две фирмы: Lak-Hui («лаки») делала крем для лица, GoldStar — радиоприёмники; «Life's Good» придумали потом.",
+   "en": "Two firms: Lak-Hui (\"Lucky\") made face cream and GoldStar made radios; \"Life's Good\" came later."
   },
-  {
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько килограммов выдержит один кубик LEGO 2×2, прежде чем его раздавит?",
-      "en": "How many kilograms can a single 2×2 LEGO brick hold before it is crushed?"
-    },
-    "answer": 432,
-    "range": [
-      0,
-      2000
-    ],
-    "step": 4,
-    "tolerance": 100,
-    "unit": {
-      "ru": "кг",
-      "en": "kg"
-    },
-    "fact": {
-      "ru": "Так показали опыты Открытого университета: башня из 375 тысяч кубиков высотой 3,5 км раздавила бы нижний.",
-      "en": "Open University tests showed it: a tower of 375,000 bricks, 3.5 km tall, would crush the bottom one."
-    },
-    "source": "https://www.brothers-brick.com/2012/12/05/how-many-lego-bricks-stacked-vertically-would-crush-the-bottom-brick/",
-    "basedOn": null,
-    "refine": "new"
+  "source": "https://en.wikipedia.org/wiki/LG_Corporation",
+  "basedOn": "brands_027",
+  "refine": "same"
+ },
+ {
+  "id": "cur_brands_05",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "С чего начиналась Nokia в 1865 году?",
+   "en": "What did Nokia start out making in 1865?"
   },
-  {
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Видеоигры Nintendo делает с 1970-х, а саму фирму основали гораздо раньше. В каком году?",
-      "en": "Nintendo has made video games since the 1970s, but the firm itself is much older. When was it founded?"
-    },
-    "answer": 1889,
-    "range": [
-      1600,
-      2000
-    ],
-    "step": 1,
-    "tolerance": 20,
-    "unit": {
-      "ru": "год",
-      "en": "year"
-    },
-    "fact": {
-      "ru": "Фусадзиро Ямаути начал в Киото с игральных карт ханафуда — в год открытия Эйфелевой башни.",
-      "en": "Fusajiro Yamauchi began in Kyoto with hanafuda playing cards, the year the Eiffel Tower opened."
-    },
-    "source": "https://en.wikipedia.org/wiki/Nintendo",
-    "basedOn": "brands_042",
-    "refine": "rewrite"
-  }
+  "options": [
+   {
+    "ru": "Бумажная масса",
+    "en": "Wood pulp for paper"
+   },
+   {
+    "ru": "Лыжи",
+    "en": "Skis"
+   },
+   {
+    "ru": "Телеграфные аппараты",
+    "en": "Telegraph machines"
+   },
+   {
+    "ru": "Рыболовные сети",
+    "en": "Fishing nets"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Сначала была целлюлозная фабрика; резиновые сапоги и кабели пришли со слиянием в 1967 году, а телефоны — в 1980-х.",
+   "en": "First a pulp mill; rubber boots and cables came with a 1967 merger, and mobile phones only in the 1980s."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nokia",
+  "basedOn": "brands_016",
+  "refine": "same"
+ },
+ {
+  "id": "cur_brands_06",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что создатель тубы Pringles завещал сделать со своим прахом?",
+   "en": "What did the man who designed the Pringles can want done with his ashes?"
+  },
+  "options": [
+   {
+    "ru": "Отправить в космос",
+    "en": "Sent into space"
+   },
+   {
+    "ru": "Развеять над картофельным полем",
+    "en": "Scattered over a potato field"
+   },
+   {
+    "ru": "Похоронить в банке Pringles",
+    "en": "Buried in a Pringles can"
+   },
+   {
+    "ru": "Замуровать в стену завода",
+    "en": "Sealed in the factory wall"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Химик Фредрик Баур умер в 2008 году; по дороге на похороны дети купили банку в обычном магазине.",
+   "en": "Chemist Fredric Baur died in 2008; on the way to the funeral his children bought a can at a shop."
+  },
+  "source": "https://en.wikipedia.org/wiki/Fredric_Baur",
+  "basedOn": "brands_033",
+  "refine": "same"
+ },
+ {
+  "id": "cur_brands_07",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Из чего сложено название IKEA?",
+   "en": "What is the name IKEA made of?"
+  },
+  "options": [
+   {
+    "ru": "Имена детей основателя",
+    "en": "Founder's children's names"
+   },
+   {
+    "ru": "«Дом и уют» по-шведски",
+    "en": "Swedish for 'home and comfort'"
+   },
+   {
+    "ru": "Имя и адрес основателя",
+    "en": "Founder's name and address"
+   },
+   {
+    "ru": "Название первой фабрики",
+    "en": "The first factory's name"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Ingvar Kamprad, ферма Elmtaryd, деревня Agunnaryd; основатель путал цифры, поэтому товарам дают имена, а не номера.",
+   "en": "Ingvar Kamprad, Elmtaryd farm, Agunnaryd village; dyslexic Kamprad also gave products names, not numbers."
+  },
+  "source": "https://en.wikipedia.org/wiki/IKEA",
+  "basedOn": "brands_037",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_brands_08",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Samsung сегодня — это телефоны и телевизоры. А чем она торговала, когда открылась в 1938 году?",
+   "en": "Samsung means phones and TVs today. What did it trade in when it opened in 1938?"
+  },
+  "options": [
+   {
+    "ru": "Сушёной рыбой",
+    "en": "Dried fish"
+   },
+   {
+    "ru": "Швейными машинками",
+    "en": "Sewing machines"
+   },
+   {
+    "ru": "Радиоприёмниками",
+    "en": "Radios"
+   },
+   {
+    "ru": "Велосипедами",
+    "en": "Bicycles"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Лавка в Тэгу продавала продукты; электроника появилась в конце 1960-х, начиная с чёрно-белого телевизора.",
+   "en": "It was a grocery trader in Daegu; electronics came in the late 1960s, starting with a black and white TV."
+  },
+  "source": "https://en.wikipedia.org/wiki/Samsung",
+  "basedOn": "brands_018",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_brands_09",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько килограммов выдержит один кубик LEGO 2×2, прежде чем его раздавит?",
+   "en": "How many kilograms can a single 2×2 LEGO brick hold before it is crushed?"
+  },
+  "answer": 432,
+  "range": [
+   0,
+   2000
+  ],
+  "step": 4,
+  "tolerance": 100,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Так показали опыты Открытого университета: башня из 375 тысяч кубиков высотой 3,5 км раздавила бы нижний.",
+   "en": "Open University tests showed it: a tower of 375,000 bricks, 3.5 km tall, would crush the bottom one."
+  },
+  "source": "https://www.brothers-brick.com/2012/12/05/how-many-lego-bricks-stacked-vertically-would-crush-the-bottom-brick/",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_brands_10",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Видеоигры Nintendo делает с 1970-х, а саму фирму основали гораздо раньше. В каком году?",
+   "en": "Nintendo has made video games since the 1970s, but the firm itself is much older. When was it founded?"
+  },
+  "answer": 1889,
+  "range": [
+   1600,
+   2000
+  ],
+  "step": 1,
+  "tolerance": 20,
+  "unit": {
+   "ru": "год",
+   "en": "year"
+  },
+  "fact": {
+   "ru": "Фусадзиро Ямаути начал в Киото с игральных карт ханафуда — в год открытия Эйфелевой башни.",
+   "en": "Fusajiro Yamauchi began in Kyoto with hanafuda playing cards, the year the Eiffel Tower opened."
+  },
+  "source": "https://en.wikipedia.org/wiki/Nintendo",
+  "basedOn": "brands_042",
+  "refine": "rewrite"
+ }
 ]

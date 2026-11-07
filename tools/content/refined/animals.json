@@ -1,326 +1,336 @@
 [
-  {
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Какой формы какашки у вомбата?",
-      "en": "What shape is wombat poop?"
-    },
-    "options": [
-      {
-        "ru": "Звёздочки",
-        "en": "Stars"
-      },
-      {
-        "ru": "Кубики",
-        "en": "Cubes"
-      },
-      {
-        "ru": "Спиральки",
-        "en": "Spirals"
-      },
-      {
-        "ru": "Сердечки",
-        "en": "Hearts"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Кубики не скатываются с камней и брёвен, а вомбат метит ими границы своей территории.",
-      "en": "Cubes don't roll off rocks and logs, and wombats use them to mark the edges of their territory."
-    },
-    "source": "https://en.wikipedia.org/wiki/Wombat",
-    "basedOn": "animals_001",
-    "refine": "same"
+ {
+  "id": "cur_animals_01",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Какой формы какашки у вомбата?",
+   "en": "What shape is wombat poop?"
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Пчела нашла поле цветов. Как она объяснит другим пчёлам, куда лететь?",
-      "en": "A bee has found a field of flowers. How does it tell the other bees where to fly?"
-    },
-    "options": [
-      {
-        "ru": "Начертит карту на сотах",
-        "en": "It draws a map on the comb"
-      },
-      {
-        "ru": "Принесёт им лепесток",
-        "en": "It brings them a petal"
-      },
-      {
-        "ru": "Сменит цвет брюшка",
-        "en": "It changes colour"
-      },
-      {
-        "ru": "Станцует в улье",
-        "en": "It dances in the hive"
-      }
-    ],
-    "correct": 3,
-    "fact": {
-      "ru": "Угол виляющего танца к вертикали показывает направление относительно солнца, а его длительность — расстояние.",
-      "en": "The angle of the waggle run from the vertical gives the direction relative to the sun, and its length gives the distance."
-    },
-    "source": "https://en.wikipedia.org/wiki/Waggle_dance",
-    "basedOn": "animals_014",
-    "refine": "rewrite"
+  "options": [
+   {
+    "ru": "Звёздочки",
+    "en": "Stars"
+   },
+   {
+    "ru": "Кубики",
+    "en": "Cubes"
+   },
+   {
+    "ru": "Спиральки",
+    "en": "Spirals"
+   },
+   {
+    "ru": "Сердечки",
+    "en": "Hearts"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Кубики не скатываются с камней и брёвен, а вомбат метит ими границы своей территории.",
+   "en": "Cubes don't roll off rocks and logs, and wombats use them to mark the edges of their territory."
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "easy",
-    "text": {
-      "ru": "Что делает опоссум, когда очень напуган?",
-      "en": "What does an opossum do when it is badly frightened?"
-    },
-    "options": [
-      {
-        "ru": "Сворачивается в шар",
-        "en": "Rolls into a ball"
-      },
-      {
-        "ru": "Притворяется мёртвым",
-        "en": "Plays dead"
-      },
-      {
-        "ru": "Меняет цвет шерсти",
-        "en": "Changes fur colour"
-      },
-      {
-        "ru": "Громко лает",
-        "en": "Barks loudly"
-      }
-    ],
-    "correct": 1,
-    "fact": {
-      "ru": "Он валится набок с открытой пастью, сердце бьётся вдвое реже, из-под хвоста течёт вонючая жидкость. Так можно лежать часами.",
-      "en": "It flops on its side, mouth open, heart rate halved, oozing a foul-smelling fluid, and it can lie like that for hours."
-    },
-    "source": "https://en.wikipedia.org/wiki/Virginia_opossum",
-    "basedOn": null,
-    "refine": "new"
+  "source": "https://en.wikipedia.org/wiki/Wombat",
+  "basedOn": "animals_001",
+  "refine": "same"
+ },
+ {
+  "id": "cur_animals_02",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Пчела нашла поле цветов. Как она объяснит другим пчёлам, куда лететь?",
+   "en": "A bee has found a field of flowers. How does it tell the other bees where to fly?"
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Зачем ленивец примерно раз в неделю слезает с дерева?",
-      "en": "Why does a sloth climb down from its tree about once a week?"
-    },
-    "options": [
-      {
-        "ru": "Сходить в туалет",
-        "en": "To go to the toilet"
-      },
-      {
-        "ru": "Попить воды",
-        "en": "To drink water"
-      },
-      {
-        "ru": "Погреться на солнце",
-        "en": "To warm up in the sun"
-      },
-      {
-        "ru": "Почистить когти",
-        "en": "To clean its claws"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Ради этого он рискует жизнью: на земле его легко поймать, и учёные до сих пор спорят, зачем ему это.",
-      "en": "It risks its life for this, as it is easy prey on the ground, and scientists still argue about why it does it."
-    },
-    "source": "https://en.wikipedia.org/wiki/Sloth",
-    "basedOn": "animals_035",
-    "refine": "same"
+  "options": [
+   {
+    "ru": "Начертит карту на сотах",
+    "en": "It draws a map on the comb"
+   },
+   {
+    "ru": "Принесёт им лепесток",
+    "en": "It brings them a petal"
+   },
+   {
+    "ru": "Сменит цвет брюшка",
+    "en": "It changes colour"
+   },
+   {
+    "ru": "Станцует в улье",
+    "en": "It dances in the hive"
+   }
+  ],
+  "correct": 3,
+  "fact": {
+   "ru": "Угол виляющего танца к вертикали показывает направление относительно солнца, а его длительность — расстояние.",
+   "en": "The angle of the waggle run from the vertical gives the direction relative to the sun, and its length gives the distance."
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Какой вкус кошки не чувствуют вовсе?",
-      "en": "Which taste can cats not detect at all?"
-    },
-    "options": [
-      {
-        "ru": "Сладкий",
-        "en": "Sweet"
-      },
-      {
-        "ru": "Мясной (умами)",
-        "en": "Savoury (umami)"
-      },
-      {
-        "ru": "Горький",
-        "en": "Bitter"
-      },
-      {
-        "ru": "Кислый",
-        "en": "Sour"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Ген рецептора сладкого у всех кошачьих, от домашней кошки до тигра, «сломан»: хищнику, который ест одно мясо, он ни к чему.",
-      "en": "The sweet receptor gene is broken in all cats, from tabbies to tigers: a pure meat eater has no use for it."
-    },
-    "source": "https://en.wikipedia.org/wiki/Cat",
-    "basedOn": "animals_023",
-    "refine": "same"
+  "source": "https://en.wikipedia.org/wiki/Waggle_dance",
+  "basedOn": "animals_014",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_animals_03",
+  "format": "multipleChoice",
+  "difficulty": "easy",
+  "text": {
+   "ru": "Что делает опоссум, когда очень напуган?",
+   "en": "What does an opossum do when it is badly frightened?"
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Как защищается жук-бомбардир?",
-      "en": "How does a bombardier beetle defend itself?"
-    },
-    "options": [
-      {
-        "ru": "Кусает парализующим ядом",
-        "en": "Bites with paralysing venom"
-      },
-      {
-        "ru": "Прикидывается сухой веточкой",
-        "en": "Poses as a dry twig"
-      },
-      {
-        "ru": "Стреляет горячей едкой струёй",
-        "en": "Fires a hot, caustic spray"
-      },
-      {
-        "ru": "Слепит врага яркой вспышкой",
-        "en": "Blinds foes with a bright flash"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Внутри жука смешиваются два вещества, и реакция с хлопком нагревает струю почти до 100 °C.",
-      "en": "Two chemicals mix inside the beetle and the reaction heats the spray to nearly 100 °C, with an audible pop."
-    },
-    "source": "https://en.wikipedia.org/wiki/Bombardier_beetle",
-    "basedOn": "animals_036",
-    "refine": "rewrite"
+  "options": [
+   {
+    "ru": "Сворачивается в шар",
+    "en": "Rolls into a ball"
+   },
+   {
+    "ru": "Притворяется мёртвым",
+    "en": "Plays dead"
+   },
+   {
+    "ru": "Меняет цвет шерсти",
+    "en": "Changes fur colour"
+   },
+   {
+    "ru": "Громко лает",
+    "en": "Barks loudly"
+   }
+  ],
+  "correct": 1,
+  "fact": {
+   "ru": "Он валится набок с открытой пастью, сердце бьётся вдвое реже, из-под хвоста течёт вонючая жидкость. Так можно лежать часами.",
+   "en": "It flops on its side, mouth open, heart rate halved, oozing a foul-smelling fluid, and it can lie like that for hours."
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Божья коровка в опасности выпускает жёлтые капли. Откуда?",
-      "en": "A ladybird in danger oozes yellow drops. From where?"
-    },
-    "options": [
-      {
-        "ru": "Из коленок",
-        "en": "Its knees"
-      },
-      {
-        "ru": "Изо рта",
-        "en": "Its mouth"
-      },
-      {
-        "ru": "Из усиков",
-        "en": "Its antennae"
-      },
-      {
-        "ru": "Из-под крыльев",
-        "en": "Under its wings"
-      }
-    ],
-    "correct": 0,
-    "fact": {
-      "ru": "Это её кровь, горькая и ядовитая. Она выступает из суставов ног, и птицы быстро учатся не трогать яркого жука.",
-      "en": "It is her blood, bitter and toxic. It seeps from the leg joints, and birds soon learn to leave the bright beetle alone."
-    },
-    "source": "https://en.wikipedia.org/wiki/Coccinellidae",
-    "basedOn": null,
-    "refine": "new"
+  "source": "https://en.wikipedia.org/wiki/Virginia_opossum",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_animals_04",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Зачем ленивец примерно раз в неделю слезает с дерева?",
+   "en": "Why does a sloth climb down from its tree about once a week?"
   },
-  {
-    "format": "multipleChoice",
-    "difficulty": "medium",
-    "text": {
-      "ru": "Козе важно вовремя заметить волка. Какой формы у неё зрачки?",
-      "en": "A goat must spot a wolf in time. What shape are its pupils?"
-    },
-    "options": [
-      {
-        "ru": "Круглые",
-        "en": "Round"
-      },
-      {
-        "ru": "Вертикальные щёлочки",
-        "en": "Vertical slits"
-      },
-      {
-        "ru": "Прямоугольные",
-        "en": "Rectangular"
-      },
-      {
-        "ru": "В форме капли",
-        "en": "Teardrop-shaped"
-      }
-    ],
-    "correct": 2,
-    "fact": {
-      "ru": "Вытянутый поперёк зрачок даёт широкую панораму вдоль земли. Когда коза щиплет траву, глаза поворачиваются, и зрачки остаются ровными.",
-      "en": "A wide, horizontal pupil gives a panorama along the ground. When the goat grazes, its eyes rotate to keep the pupils level."
-    },
-    "source": "https://theconversation.com/revealed-why-animals-pupils-come-in-different-shapes-and-sizes-45796",
-    "basedOn": null,
-    "refine": "new"
+  "options": [
+   {
+    "ru": "Сходить в туалет",
+    "en": "To go to the toilet"
+   },
+   {
+    "ru": "Попить воды",
+    "en": "To drink water"
+   },
+   {
+    "ru": "Погреться на солнце",
+    "en": "To warm up in the sun"
+   },
+   {
+    "ru": "Почистить когти",
+    "en": "To clean its claws"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ради этого он рискует жизнью: на земле его легко поймать, и учёные до сих пор спорят, зачем ему это.",
+   "en": "It risks its life for this, as it is easy prey on the ground, and scientists still argue about why it does it."
   },
-  {
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сколько граммов весит страусиное яйцо?",
-      "en": "How much does an ostrich egg weigh, in grams?"
-    },
-    "answer": 1400,
-    "range": [
-      0,
-      5000
-    ],
-    "step": 50,
-    "tolerance": 400,
-    "unit": {
-      "ru": "г",
-      "en": "g"
-    },
-    "fact": {
-      "ru": "Это больше 20 куриных яиц, хотя по сравнению с весом самой птицы оно одно из самых маленьких.",
-      "en": "That's over 20 chicken eggs, yet compared with the bird's own weight it is one of the smallest eggs of all."
-    },
-    "source": "https://en.wikipedia.org/wiki/Common_ostrich",
-    "basedOn": "animals_044",
-    "refine": "same"
+  "source": "https://en.wikipedia.org/wiki/Sloth",
+  "basedOn": "animals_035",
+  "refine": "same"
+ },
+ {
+  "id": "cur_animals_05",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Какой вкус кошки не чувствуют вовсе?",
+   "en": "Which taste can cats not detect at all?"
   },
-  {
-    "format": "closestValue",
-    "difficulty": "hard",
-    "text": {
-      "ru": "Сердце человека весит около 300 граммов. А сколько килограммов весит сердце жирафа?",
-      "en": "A human heart weighs about 300 grams. How many kilograms does a giraffe's heart weigh?"
-    },
-    "answer": 11,
-    "range": [
-      0,
-      60
-    ],
-    "step": 0.5,
-    "tolerance": 4,
-    "unit": {
-      "ru": "кг",
-      "en": "kg"
-    },
-    "fact": {
-      "ru": "Оно длиной 60 см, со стенками до 7,5 см: чтобы кровь дошла до головы, нужно давление вдвое выше человеческого.",
-      "en": "It is 60 cm long with walls up to 7.5 cm thick: to get blood up to the head, it needs about twice a human's pressure."
-    },
-    "source": "https://en.wikipedia.org/wiki/Giraffe",
-    "basedOn": null,
-    "refine": "new"
-  }
+  "options": [
+   {
+    "ru": "Сладкий",
+    "en": "Sweet"
+   },
+   {
+    "ru": "Мясной (умами)",
+    "en": "Savoury (umami)"
+   },
+   {
+    "ru": "Горький",
+    "en": "Bitter"
+   },
+   {
+    "ru": "Кислый",
+    "en": "Sour"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Ген рецептора сладкого у всех кошачьих, от домашней кошки до тигра, «сломан»: хищнику, который ест одно мясо, он ни к чему.",
+   "en": "The sweet receptor gene is broken in all cats, from tabbies to tigers: a pure meat eater has no use for it."
+  },
+  "source": "https://en.wikipedia.org/wiki/Cat",
+  "basedOn": "animals_023",
+  "refine": "same"
+ },
+ {
+  "id": "cur_animals_06",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Как защищается жук-бомбардир?",
+   "en": "How does a bombardier beetle defend itself?"
+  },
+  "options": [
+   {
+    "ru": "Кусает парализующим ядом",
+    "en": "Bites with paralysing venom"
+   },
+   {
+    "ru": "Прикидывается сухой веточкой",
+    "en": "Poses as a dry twig"
+   },
+   {
+    "ru": "Стреляет горячей едкой струёй",
+    "en": "Fires a hot, caustic spray"
+   },
+   {
+    "ru": "Слепит врага яркой вспышкой",
+    "en": "Blinds foes with a bright flash"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Внутри жука смешиваются два вещества, и реакция с хлопком нагревает струю почти до 100 °C.",
+   "en": "Two chemicals mix inside the beetle and the reaction heats the spray to nearly 100 °C, with an audible pop."
+  },
+  "source": "https://en.wikipedia.org/wiki/Bombardier_beetle",
+  "basedOn": "animals_036",
+  "refine": "rewrite"
+ },
+ {
+  "id": "cur_animals_07",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Божья коровка в опасности выпускает жёлтые капли. Откуда?",
+   "en": "A ladybird in danger oozes yellow drops. From where?"
+  },
+  "options": [
+   {
+    "ru": "Из коленок",
+    "en": "Its knees"
+   },
+   {
+    "ru": "Изо рта",
+    "en": "Its mouth"
+   },
+   {
+    "ru": "Из усиков",
+    "en": "Its antennae"
+   },
+   {
+    "ru": "Из-под крыльев",
+    "en": "Under its wings"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Это её кровь, горькая и ядовитая. Она выступает из суставов ног, и птицы быстро учатся не трогать яркого жука.",
+   "en": "It is her blood, bitter and toxic. It seeps from the leg joints, and birds soon learn to leave the bright beetle alone."
+  },
+  "source": "https://en.wikipedia.org/wiki/Coccinellidae",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_animals_08",
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Козе важно вовремя заметить волка. Какой формы у неё зрачки?",
+   "en": "A goat must spot a wolf in time. What shape are its pupils?"
+  },
+  "options": [
+   {
+    "ru": "Круглые",
+    "en": "Round"
+   },
+   {
+    "ru": "Вертикальные щёлочки",
+    "en": "Vertical slits"
+   },
+   {
+    "ru": "Прямоугольные",
+    "en": "Rectangular"
+   },
+   {
+    "ru": "В форме капли",
+    "en": "Teardrop-shaped"
+   }
+  ],
+  "correct": 2,
+  "fact": {
+   "ru": "Вытянутый поперёк зрачок даёт широкую панораму вдоль земли. Когда коза щиплет траву, глаза поворачиваются, и зрачки остаются ровными.",
+   "en": "A wide, horizontal pupil gives a panorama along the ground. When the goat grazes, its eyes rotate to keep the pupils level."
+  },
+  "source": "https://theconversation.com/revealed-why-animals-pupils-come-in-different-shapes-and-sizes-45796",
+  "basedOn": null,
+  "refine": "new"
+ },
+ {
+  "id": "cur_animals_09",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сколько граммов весит страусиное яйцо?",
+   "en": "How much does an ostrich egg weigh, in grams?"
+  },
+  "answer": 1400,
+  "range": [
+   0,
+   5000
+  ],
+  "step": 50,
+  "tolerance": 400,
+  "unit": {
+   "ru": "г",
+   "en": "g"
+  },
+  "fact": {
+   "ru": "Это больше 20 куриных яиц, хотя по сравнению с весом самой птицы оно одно из самых маленьких.",
+   "en": "That's over 20 chicken eggs, yet compared with the bird's own weight it is one of the smallest eggs of all."
+  },
+  "source": "https://en.wikipedia.org/wiki/Common_ostrich",
+  "basedOn": "animals_044",
+  "refine": "same"
+ },
+ {
+  "id": "cur_animals_10",
+  "format": "closestValue",
+  "difficulty": "hard",
+  "text": {
+   "ru": "Сердце человека весит около 300 граммов. А сколько килограммов весит сердце жирафа?",
+   "en": "A human heart weighs about 300 grams. How many kilograms does a giraffe's heart weigh?"
+  },
+  "answer": 11,
+  "range": [
+   0,
+   60
+  ],
+  "step": 0.5,
+  "tolerance": 4,
+  "unit": {
+   "ru": "кг",
+   "en": "kg"
+  },
+  "fact": {
+   "ru": "Оно длиной 60 см, со стенками до 7,5 см: чтобы кровь дошла до головы, нужно давление вдвое выше человеческого.",
+   "en": "It is 60 cm long with walls up to 7.5 cm thick: to get blood up to the head, it needs about twice a human's pressure."
+  },
+  "source": "https://en.wikipedia.org/wiki/Giraffe",
+  "basedOn": null,
+  "refine": "new"
+ }
 ]

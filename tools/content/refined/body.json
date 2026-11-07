@@ -1,5 +1,6 @@
 [
  {
+  "id": "cur_body_01",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -34,6 +35,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_body_02",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -68,6 +70,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_body_03",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -102,6 +105,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_body_04",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -136,6 +140,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_body_05",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -170,6 +175,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_body_06",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -204,6 +210,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_body_07",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -238,6 +245,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_body_08",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -272,6 +280,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_body_09",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
@@ -298,6 +307,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_body_10",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {

@@ -1,5 +1,6 @@
 [
  {
+  "id": "cur_landmarks_01",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -34,6 +35,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_landmarks_02",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -68,6 +70,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_landmarks_03",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -102,6 +105,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_landmarks_04",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -136,6 +140,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_landmarks_05",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -170,6 +175,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_landmarks_06",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -204,6 +210,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_landmarks_07",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -238,6 +245,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_landmarks_08",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -272,6 +280,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_landmarks_09",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -306,6 +315,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_landmarks_10",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -340,6 +350,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_landmarks_11",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -374,6 +385,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_landmarks_12",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -408,6 +420,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_landmarks_13",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -442,6 +455,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_landmarks_14",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -476,6 +490,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_landmarks_15",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -510,6 +525,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_landmarks_16",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -544,6 +560,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_landmarks_17",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
@@ -570,6 +587,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_landmarks_18",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
@@ -596,6 +614,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_landmarks_19",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
@@ -622,6 +641,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_landmarks_20",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {

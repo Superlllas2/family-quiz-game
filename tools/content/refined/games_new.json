@@ -1,5 +1,6 @@
 [
  {
+  "id": "cur_games_new_01",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -34,6 +35,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_games_new_02",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -68,6 +70,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_games_new_03",
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
@@ -102,6 +105,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_games_new_04",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -136,6 +140,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_games_new_05",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -170,6 +175,7 @@
   "refine": "same"
  },
  {
+  "id": "cur_games_new_06",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -204,6 +210,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_games_new_07",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -238,6 +245,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_games_new_08",
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
@@ -272,6 +280,7 @@
   "refine": "new"
  },
  {
+  "id": "cur_games_new_09",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
@@ -298,6 +307,7 @@
   "refine": "rewrite"
  },
  {
+  "id": "cur_games_new_10",
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
