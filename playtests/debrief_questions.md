@@ -2,6 +2,8 @@
 
 A reusable template for the talk after a game night. Copy the answers into `playtests/<date>/notes.md` (step 2 of `docs/20_playtest.md`).
 
+The spoken script for the phone, a shorter version of parts B to D aimed at what changed since the last night, is https://claude.ai/artifact/FHfPeFMUtvM9weEqZ88tAF (version 2, Nov 7, 2026). Its cues name the decision or open question each answer feeds.
+
 ## What this does not ask
 
 Two things are already measured inside the game, so the debrief does not repeat them:
@@ -33,30 +35,46 @@ Between game 1 and game 2 (1 minute, out loud): "Did anything break? Is there on
 
 ## Part A: written scorecard (on your own, RU / EN)
 
-1. Насколько было весело в целом? / How fun was it overall? **1 to 10**
-2. Насколько вероятно, что ты предложишь эту игру своей семье или друзьям? / How likely are you to suggest this game to your own family or friends? **0 to 10**
-3. В следующий раз ты бы выбрал эту игру или…? / Next time, would you rather play this or…? **This game / Jackbox / Knowledge is Power / a board game / something else: ___**
-4. Длина одной игры (около 10 минут) / Length of one game (about 10 minutes): **Too short / Just right / Too long**
-5. Сколько игр подряд ты бы хотел сыграть? / How many games in a row would you want to play? **1 / 2 / 3 / 4+**
-6. Темп между вопросами / Pace between questions: **Too slow / Just right / Too fast**
-7. Понятно ли было… / Did you understand… (**Yes / Partly / No** for each)
-   - а) за что дают очки и почему быстрее значит больше / how points work and why faster gives more
-   - б) множители в раундах 3 и 4 (×1.5, ×2) / the multipliers in rounds 3 and 4 (×1.5, ×2)
-   - в) как получить и использовать бонус / how to get and use a power up
-   - г) ответ «ближе всех» (число) и как он считается / the "closest value" answer (a number) and how it is scored
-   - д) почему в финале кто-то стартует впереди / why some players start ahead in the final race
-8. До самого конца я чувствовал, что могу выиграть / Until the very end I felt I could win: **1 (not at all) to 5 (completely)**
-9. Финальная гонка была захватывающей / The final race was exciting: **1 to 5**
-10. Использовать бонусы было весело / Using power ups was fun: **1 to 5, or "didn't use one"**
-11. Получать бонус от другого было весело (а не обидно) / Getting hit by a power up was fun, not annoying: **1 to 5, or "never got hit"**
-12. Ведущие: я читал их реплики / The hosts: I read their lines: **Most / Some / Almost none**
-13. Реплики ведущих были смешными / The host lines were funny: **1 to 5, or "didn't read them"**
-14. Текст на ТВ было легко читать с моего места / TV text was easy to read from my seat: **1 to 5**
-15. Телефон реагировал сразу, нажатия не терялись / The phone reacted at once, no lost taps: **1 to 5**
-16. Музыка / The music: **Too loud / Just right / Too quiet / Didn't notice it**
-17. Как выглядит игра (ТВ и телефон) / How the game looks (TV and phone): **1 to 5**
-18. Расставь от лучшего к худшему / Rank from best (1) to worst (7): **topic vote, multiple choice, closest value, power ups, final race, hosts, results**
-19. Одно слово об игре / The game in one word: **___**
+**Version 2, Nov 7, 2026**, after the Nov 6 playtest (`playtests/2026-11-06/notes.md`). The online card is https://claude.ai/artifact/7Bm25ywE4ZoA2DEsRhUcnj; every row it saves carries `form: "v2"`, and its results show the Nov 6 answers beside every question marked (=), which is word for word on the Nov 6 card. The Nov 6 card (version 1) asked 19 items keyed A1 to A19; its rows have no `form` field. Keys are in brackets.
+
+*The whole game*
+1. (=) Насколько было весело в целом? / How fun was it overall? **1 to 10** (`fun`)
+2. (=) Насколько вероятно, что ты предложишь эту игру своей семье или друзьям? / How likely are you to suggest this game to your own family or friends? **0 to 10** (`recommend`)
+3. (=) Темп между вопросами / Pace between questions: **Too slow / Just right / Too fast** (`pace`)
+4. Длина одной игры (около 13 минут) / Length of one game (about 13 minutes): **Too short / Just right / Too long** (`length`; version 1 said "about 10 minutes")
+
+*A question*
+5. Голосование за тему: хватало времени прочитать все четыре темы? / Topic vote: was there time to read all four topics? **Too little / Enough / More than enough** (`voteTime`)
+6. Хватало времени прочитать вопрос до того, как открылись ответы? / Was there time to read the question before the answers opened? **Too little / Enough / More than enough** (`readTime`)
+7. После ответа было видно… / After the answer, could you see… (**Yes / Partly / No** for each; `reveal`)
+   - какой ответ правильный / which answer was right (`right`)
+   - кто ответил верно / who got it right (`who`)
+   - сколько очков получил каждый / how many points each player got (`points`)
+8. Легко было найти на телефоне то, что видишь на ТВ (темы, Правда и Ложь)? / Was it easy to find on the phone what you saw on the TV (the topics, True and False)? **Easy / Sometimes I had to look / Hard** (`layout`)
+9. Был ответ, который засчитался случайно или не тот, что ты хотел? / Did an answer ever count by accident, or a different one than you meant? **No / Once / More than once** (`accidental`)
+10. Быстрый ответ давал заметно больше очков? / Did answering fast give noticeably more points? **Yes, clearly / A little / It hardly mattered** (`speed`)
+11. (=) Понятно ли было… / Did you understand… (**Yes / Partly / No** for each; `rules`)
+   - за что дают очки и почему быстрее значит больше / how points work and why faster gives more (`scoring`)
+   - множители в раундах 3 и 4 (×1.5, ×2) / the multipliers in rounds 3 and 4 (×1.5, ×2) (`multipliers`)
+   - как получить и использовать бонус / how to get and use a power up (`powerUps`)
+   - ответ «ближе всех» (число) и как он считается / the "closest value" answer (a number) and how it is scored (`closest`)
+   - почему в финале кто-то стартует впереди / why some players start ahead in the final race (`headStart`)
+
+*Power ups*
+12. (=) Использовать бонусы было весело / Using power ups was fun: **1 to 5, or "didn't use one"** (`powerUse`)
+13. (=) Получать бонус от другого было весело, а не обидно / Getting hit by a power up was fun, not annoying: **1 to 5, or "never got hit"** (`powerHit`)
+14. Было видно на ТВ, кто кого атаковал? / Could you see on the TV who attacked whom? **Yes / Sometimes / No** (`powerSeen`)
+
+*The final race*
+15. (=) До самого конца я чувствовал, что могу выиграть / Until the very end I felt I could win: **1 to 5** (`couldWin`)
+16. Финальная гонка по длине / The final race, its length: **Too short / Just right / Too long** (`raceLength`)
+
+*To finish*
+17. (=) Текст на ТВ было легко читать с моего места / TV text was easy to read from my seat: **1 to 5** (`tvRead`)
+18. (=) Расставь части игры от лучшей к худшей / Rank from best (1) to worst (7): **topic vote, multiple choice, closest value, power ups, final race, hosts, results** (`rank`)
+19. Игра одним словом / The game in one word: **___** (`word`)
+
+Dropped from version 1, because the Nov 6 answers were clear or the subject is now in Part B: next time this or another game (`preferOver`: Knowledge is Power), games in a row (`gamesInRow`: 3), the final race was exciting (`race`: 5/5), host lines read and funny (`hostsRead`, `hostsFunny`: almost none, 1/5), the phone reacted at once (`phone`: 5/5), music (`music`: just right), how the game looks (`look`: 5/5).
 
 ---
 
@@ -73,18 +91,18 @@ Between game 1 and game 2 (1 minute, out loud): "Did anything break? Is there on
 - ★ Did the start feel like a show beginning, or like waiting? At which point did you want it to get going?
 - In the second game the intro was skipped. Did you miss it?
 
-### 3. Topic vote (10 s)
+### 3. Topic vote (20 s)
 
 - Did you understand that you were voting for the next topic? Did your vote feel like it mattered?
-- Was 10 s too long, right, or too short? Was it fun to see what others voted for?
+- Was 20 s too long, right, or too short? Was it fun to see what others voted for?
 
 ### 4. A question: show, answer, reveal, scores
 
-- ★ Timer (open decision D16: 15 s for multiple choice, 20 s for closest value). Did you have time to **read** the question before choosing, or did you tap in a hurry? Was the pressure fun or stressful? Did the timer ever feel too long?
-- ★ Where were you looking during a question: TV or phone? Was there a moment you needed both at once (open decision D15)?
+- ★ Timers (D126: 10 s to read the question, then 20 s to answer). Did you have time to **read** the question before choosing, or did you tap in a hurry? Was the pressure fun or stressful? Did the timer ever feel too long?
+- ★ Where were you looking during a question: TV or phone? Did you read the options on the TV or on the phone? Was there a moment you needed both at once (D15)?
 - Did the lock-in on the phone feel sure, or did you wonder whether your answer was taken? (Pillar 3)
 - When everyone had answered and the game moved on at once: did you notice, and did it feel good or rushed?
-- Reveal and Scores together last 7 s. Did you see who was right, your points, and the "Why?" fact? What did you miss?
+- Reveal and Scores together last 11 s (6 + 5, D126). Did you see who was right, your points, and the "Why?" fact? What did you miss?
 - Closest value: was the ruler on the TV clear? Did you understand why you got the points you got?
 - Did the fast and the slow players feel it was fair? Did anyone feel they had no chance because others were faster?
 - (If the star card was on) Did rating the question get in the way: covering the power up pick, taking your eyes off the TV, being boring after a while? Did you close it? (This asks whether the card hurts the fun, not about the questions.)
@@ -92,7 +110,7 @@ Between game 1 and game 2 (1 minute, out loud): "Did anything break? Is there on
 ### 5. Power ups (freeze, slime, fog)
 
 - ★ Was using a power up the best or the worst part of a round? Which one was most fun to send, and which was worst to receive?
-- ★ Targeting (open decision D14): did people gang up on someone? Was that funny or did it get sour? Should it be "only hit someone ahead of you"?
+- ★ Targeting (D14, free by default): did people gang up on someone? Was that funny or did it get sour? Should it be "only hit someone ahead of you"?
 - Freeze (6 taps), slime (3 blobs), fog (3 s): was each one too strong, too weak, or right? Did any of them make you miss the question entirely?
 - Did you see on the TV who attacked whom ("Dad → Freeze")? Did that make the moment, or did nobody notice?
 - Did you get a power up often enough? Did it feel random or earned?
@@ -104,11 +122,11 @@ Between game 1 and game 2 (1 minute, out loud): "Did anything break? Is there on
 - Did 4 rounds of 4 questions feel like the right amount before the final?
 - Did RoundEnd (4 s) feel like a breath or a wait?
 
-### 7. The final race (8 s per true or false statement)
+### 7. The final race (12 s per true or false statement)
 
 - ★ Last place, did you believe you could still win? Leader, did you feel your lead was safe or under threat?
 - Was it clear why some started ahead?
-- Was 8 s per statement right? Was the race too long, too short, or right (up to 12 statements)?
+- Was 12 s per statement right? Was the race too long, too short, or right (up to 12 statements)?
 - Was it the climax of the night, or did it feel like a separate small game?
 
 ### 8. Results and the poll
@@ -188,15 +206,16 @@ Between game 1 and game 2 (1 minute, out loud): "Did anything break? Is there on
 
 | What you learn | Where it goes |
 | --- | --- |
-| A6, B4 timer and pace questions, poll `time` | D16 keep, change or drop; `timers.answer.*`, `timers.questionShow`, `timers.reveal`, `timers.scores` |
-| B4 TV or phone, B5 targeting on the phone, poll `tvMissed` | D15 keep, change or drop (`powerUps.onPhone`) |
-| B5 ganging up, C last place and most attacked, poll `unfair` | D14 keep, change or drop (`powerUps.targeting`) |
-| B5 strength of each power up | `powerUps.freeze.taps`, `powerUps.slime.blobs`, `powerUps.fog.seconds`, draw chances, `powerUps.maxHitsPerQuestion` |
-| A8, A9, B7 and C last place | `race.*` (head start, finish steps, answer time) |
-| B2 Intro, B6 RoundEnd, B8 Results | `timers.intro`, `staging.intro.*`, `timers.roundEnd`, `timers.finalIntro`, `timers.results`, and the idle limit (D56) |
-| A12, A13, B9 hosts | Host lines in `content/`, bubble timing, whether voices move up in the plan |
-| A14, A15, B10, B11 | Bugs and readability fixes for the TV and phone |
-| A16, B12 | `music.volume` and the sound effect wish list |
-| A4, A5, B6 length and number of rounds | Rounds and questions per round in the show script |
-| A7 rules not understood | What the Intro, FinalIntro and the phone screens explain |
-| A1 to A3, A18, D | The top 3 problems in `notes.md` and the priorities for the next game night |
+| `pace`, `length`, `voteTime`, `readTime`, B3, B4 timers, poll `time` | D126 and D127 hold or change: `timers.topicVote`, `timers.questionShow`, `timers.answer.*`, `timers.reveal`, `timers.scores` |
+| `reveal`, B4 reveal | The open reveal item in `notes.md` (2): the right answer's contrast, who was right, points per player |
+| `layout`, B10, B11 | D128 and D129: does the phone match the TV |
+| B4 TV or phone, poll `tvMissed` | Open: answer options on the phone only (`notes.md` 2b); D15 keep or change (`powerUps.onPhone`) |
+| `accidental`, B11 | Open: an answer counts when the finger lifts (`notes.md` 6) |
+| `speed`, `rules.scoring` | Open: `scoring.speedPenalty` |
+| `powerUse`, `powerHit`, `powerSeen`, B5, C most attacked, poll `unfair` | Open: how the TV shows a hit and how you earn one; D14 targeting and `powerUps.maxHitsPerQuestion`; effect strengths |
+| `couldWin`, `raceLength`, B7, C last place | Open: `race.maxQuestions`, `race.finishSteps`, `race.maxHeadStart`; the size of `race.json` |
+| `tvRead`, B10 | Readability fixes for the TV |
+| B9 hosts | Host lines in `content/`, and whether voices move up in the plan |
+| B12 | `music.volume` and the sound effect wish list |
+| `rules` not understood | What the Intro, FinalIntro and the phone screens explain |
+| `fun`, `recommend`, `rank`, `word`, D | The top 3 problems in `notes.md` and the priorities for the next game night |
