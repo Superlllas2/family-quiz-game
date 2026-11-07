@@ -1,0 +1,822 @@
+<title>Game Night Scorecard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&family=Nunito:wght@700;800;900&family=Caveat:wght@700&display=swap">
+<style>
+/* Layout: cream question cards laid on a walnut table, one column, like the game's own board-game look (decision 0017). One deliberate look in both themes. */
+:root {
+  --walnut: #3a2819;
+  --walnut-2: #46301e;
+  --cream: #f6ead0;
+  --cream-2: #eedcb6;
+  --ink: #2a1f16;
+  --ink-soft: #6b5640;
+  --edge: #9c7849;
+  --red: #e4572e;
+  --cobalt: #3a6ea5;
+  --mustard: #f2b33d;
+  --green: #4f9d45;
+  --display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --text: "Nunito", "Segoe UI", system-ui, sans-serif;
+  --hand: "Caveat", "Comic Sans MS", cursive;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { background: var(--walnut); }
+body {
+  margin: 0;
+  background-color: var(--walnut);
+  background-image:
+    repeating-linear-gradient(92deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 9px),
+    repeating-linear-gradient(88deg, rgba(0,0,0,0.06) 0 1px, transparent 1px 23px),
+    linear-gradient(180deg, var(--walnut-2), var(--walnut));
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding-block: 20px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.piece {
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 5px 0 var(--edge), 0 5px 0 3px var(--ink);
+}
+/* header: a cinema-ticket look, like the room code on the TV */
+.ticket {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: rotate(-0.6deg);
+  position: relative;
+}
+.ticket::before, .ticket::after {
+  content: ""; position: absolute; top: 50%; width: 18px; height: 18px; margin-top: -9px;
+  background: var(--walnut); border: 3px solid var(--ink); border-radius: 50%;
+}
+.ticket::before { left: -11px; }
+.ticket::after { right: -11px; }
+.ticket-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.eyebrow { font-family: var(--hand); font-size: 22px; color: var(--red); line-height: 1; }
+h1 {
+  font-family: var(--display); font-weight: 800; font-size: clamp(22px, 6vw, 30px);
+  line-height: 1.1; margin: 0; text-wrap: balance; letter-spacing: -0.01em;
+}
+.lead { margin: 0; color: var(--ink-soft); font-weight: 700; max-width: 60ch; }
+.lang { display: inline-flex; border: 3px solid var(--ink); border-radius: 999px; overflow: hidden; flex: none; }
+.lang button {
+  font-family: var(--display); font-size: 13px; padding: 6px 12px; border: 0; background: var(--cream);
+  color: var(--ink); cursor: pointer;
+}
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--cream); }
+.status {
+  font-size: 14px; padding: 8px 12px; border: 2px dashed var(--ink-soft); border-radius: 10px; color: var(--ink-soft);
+}
+.status.ok { border-color: var(--green); color: #2f6a28; }
+.status.warn { border-color: var(--red); color: #a63a1a; }
+
+/* a part of the show: a label on the table between the cards */
+.part {
+  align-self: flex-start; font-family: var(--display); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--cream); background: var(--ink); border: 3px solid var(--cream); border-radius: 8px; padding: 5px 10px;
+  transform: rotate(-1deg); margin-top: 6px;
+}
+
+/* question cards */
+#form { display: flex; flex-direction: column; gap: 18px; }
+.q { padding: 16px 16px 18px; display: flex; flex-direction: column; gap: 12px; }
+.q:nth-of-type(odd) { transform: rotate(0.35deg); }
+.q:nth-of-type(even) { transform: rotate(-0.3deg); }
+.q-head { display: flex; gap: 12px; align-items: flex-start; }
+.coin {
+  flex: none; width: 38px; height: 38px; border-radius: 50%; border: 3px solid var(--ink);
+  background: var(--mustard); display: grid; place-items: center;
+  font-family: var(--display); font-size: 13px; font-variant-numeric: tabular-nums;
+}
+.q-title { margin: 0; font-size: 18px; font-weight: 900; line-height: 1.3; text-wrap: balance; min-width: 0; padding-top: 5px; }
+.hint { font-size: 14px; color: var(--ink-soft); font-weight: 700; margin: 0; }
+.tiles { display: flex; flex-wrap: wrap; gap: 8px; }
+.tile {
+  min-width: 46px; height: 46px; padding: 0 10px; border: 3px solid var(--ink); border-radius: 10px;
+  background: #fffaf0; color: var(--ink); font-family: var(--display); font-size: 15px;
+  font-variant-numeric: tabular-nums; cursor: pointer; box-shadow: 0 3px 0 var(--ink);
+  transition: transform 0.08s ease;
+}
+.tile:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--ink); }
+.tile[aria-pressed="true"] { background: var(--cobalt); color: var(--cream); }
+.ends { display: flex; justify-content: space-between; gap: 12px; font-family: var(--hand); font-size: 20px; color: var(--ink-soft); line-height: 1; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill {
+  border: 3px solid var(--ink); border-radius: 999px; background: #fffaf0; color: var(--ink);
+  font-family: var(--text); font-weight: 900; font-size: 15px; padding: 9px 15px; cursor: pointer;
+  box-shadow: 0 3px 0 var(--ink); text-align: left;
+}
+.pill:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--ink); }
+.pill[aria-pressed="true"] { background: var(--cobalt); color: var(--cream); }
+.pill.na[aria-pressed="true"] { background: var(--ink-soft); }
+.grid-rows { display: flex; flex-direction: column; gap: 12px; }
+.grid-row { display: flex; flex-direction: column; gap: 6px; padding-top: 10px; border-top: 2px dotted var(--cream-2); }
+.grid-row:first-child { border-top: 0; padding-top: 0; }
+.grid-row-label { font-weight: 800; font-size: 15px; }
+.grid-row .pill { padding: 7px 13px; font-size: 14px; }
+.grid-row .pill[data-v="yes"][aria-pressed="true"] { background: var(--green); }
+.grid-row .pill[data-v="partly"][aria-pressed="true"] { background: var(--mustard); color: var(--ink); }
+.grid-row .pill[data-v="no"][aria-pressed="true"] { background: var(--red); }
+input[type="text"] {
+  width: 100%; font: inherit; font-weight: 800; font-size: 17px; color: var(--ink);
+  background: #fffaf0; border: 3px solid var(--ink); border-radius: 10px; padding: 10px 12px;
+}
+input[type="text"]::placeholder { color: #a8957b; }
+.rank-list { display: flex; flex-direction: column; gap: 8px; }
+.rank-item {
+  display: flex; align-items: center; gap: 12px; width: 100%;
+  border: 3px solid var(--ink); border-radius: 12px; background: #fffaf0; color: var(--ink);
+  font: inherit; font-weight: 900; font-size: 16px; padding: 8px 12px; cursor: pointer; text-align: left;
+  box-shadow: 0 3px 0 var(--ink);
+}
+.rank-item .badge {
+  flex: none; width: 32px; height: 32px; border-radius: 50%; border: 3px dashed var(--ink-soft);
+  display: grid; place-items: center; font-family: var(--display); font-size: 13px; color: var(--ink-soft);
+}
+.rank-item.on .badge { border-style: solid; border-color: var(--ink); background: var(--red); color: var(--cream); }
+.linkish {
+  align-self: flex-start; background: none; border: 0; padding: 0; font: inherit; font-weight: 800; font-size: 14px;
+  color: var(--cobalt); text-decoration: underline; cursor: pointer;
+}
+:focus-visible { outline: 3px solid var(--mustard); outline-offset: 3px; }
+
+/* submit area */
+.send { padding: 18px; display: flex; flex-direction: column; gap: 12px; transform: rotate(-0.4deg); }
+.big {
+  font-family: var(--display); font-size: 18px; color: var(--cream); background: var(--red);
+  border: 3px solid var(--ink); border-radius: 14px; padding: 14px 18px; cursor: pointer;
+  box-shadow: 0 5px 0 var(--ink);
+}
+.big:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--ink); }
+.big:disabled { opacity: 0.6; cursor: progress; }
+.big.alt { background: var(--green); }
+.small-btn {
+  font-family: var(--text); font-weight: 900; font-size: 15px; color: var(--ink); background: #fffaf0;
+  border: 3px solid var(--ink); border-radius: 10px; padding: 9px 14px; cursor: pointer; box-shadow: 0 3px 0 var(--ink);
+}
+.small-btn[aria-pressed="true"] { background: var(--ink); color: var(--cream); }
+.err { color: #a63a1a; font-weight: 800; margin: 0; }
+pre.copy {
+  margin: 0; white-space: pre-wrap; word-break: break-word; font-family: ui-monospace, Consolas, monospace;
+  font-size: 13px; font-weight: 600; background: #fffaf0; border: 2px solid var(--ink); border-radius: 10px;
+  padding: 12px; max-height: 320px; overflow: auto;
+}
+.stamp {
+  align-self: center; font-family: var(--display); font-size: 26px; color: var(--green);
+  border: 4px solid var(--green); border-radius: 10px; padding: 8px 18px; transform: rotate(-6deg);
+  letter-spacing: 0.04em;
+}
+.thanks { padding: 28px 20px; display: flex; flex-direction: column; gap: 16px; align-items: stretch; text-align: center; }
+.thanks p { margin: 0; }
+
+/* results, for Ilia only */
+details.results { padding: 14px 16px; }
+details.results summary { font-family: var(--display); font-size: 15px; cursor: pointer; }
+.res-body { display: flex; flex-direction: column; gap: 14px; margin-top: 14px; }
+.res-q { display: flex; flex-direction: column; gap: 6px; padding-top: 12px; border-top: 2px dotted var(--cream-2); }
+.res-q h3 { margin: 0; font-size: 15px; font-weight: 900; }
+.res-line { display: grid; grid-template-columns: minmax(0, 9em) 1fr auto; gap: 8px; align-items: center; font-size: 14px; font-weight: 800; }
+.res-line span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.bar { height: 12px; background: var(--cream-2); border: 2px solid var(--ink); border-radius: 6px; overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--cobalt); }
+.num { font-family: var(--display); font-size: 13px; font-variant-numeric: tabular-nums; }
+.avg { font-family: var(--display); font-size: 22px; font-variant-numeric: tabular-nums; }
+.was { font-family: var(--hand); font-size: 19px; color: var(--red); line-height: 1.1; margin: 0; }
+.res-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.muted { color: var(--ink-soft); font-weight: 700; font-size: 14px; margin: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .q, .ticket, .send, .stamp, .part { transform: none !important; }
+  .tile, .pill, .big { transition: none; }
+}
+</style>
+
+<div class="wrap" id="app">
+  <header class="ticket piece">
+    <div class="ticket-top">
+      <span class="eyebrow" data-t="eyebrow">после игры</span>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" id="lang-ru" data-lang="ru" aria-pressed="true">RU</button>
+        <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <h1 data-t="title">Анкета игрока</h1>
+    <p class="lead" data-t="lead">19 коротких вопросов, около 4 минут. Без имени. Отвечай сам(а), до общего разговора, и только про сегодняшнюю игру. Любой вопрос можно пропустить.</p>
+    <div class="status" id="status" data-t="connecting">Подключаюсь…</div>
+  </header>
+
+  <div id="form"></div>
+
+  <section class="send piece" id="send">
+    <button type="button" class="big" id="submit" data-t="submit">Отправить</button>
+    <p class="err" id="send-err" hidden></p>
+    <div id="fallback" hidden>
+      <p class="muted" data-t="fallbackHelp">Сохранить здесь нельзя. Скопируй ответы и отправь их Илье в мессенджере.</p>
+      <div class="res-actions" style="margin-top:10px">
+        <button type="button" class="small-btn" id="copy-mine" data-t="copy">Скопировать ответы</button>
+      </div>
+      <pre class="copy" id="mine-text" style="margin-top:10px"></pre>
+    </div>
+  </section>
+
+  <section class="thanks piece" id="thanks" hidden>
+    <div class="stamp" data-t="stamp">ПРИНЯТО</div>
+    <p data-t="thanks">Спасибо! Ответы сохранены.</p>
+    <p class="muted" data-t="nextHelp">Передай телефон следующему игроку.</p>
+    <button type="button" class="big alt" id="next" data-t="next">Следующий игрок</button>
+  </section>
+
+  <details class="results piece" id="results" hidden>
+    <summary><span data-t="results">Итоги</span> (<span id="res-count" class="num">0</span>)</summary>
+    <div class="res-body">
+      <div class="res-actions" id="nights" role="group" aria-label="Game night"></div>
+      <div class="res-body" id="res-body" style="margin-top:0"></div>
+    </div>
+  </details>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // Version 2 of the card (Nov 7, 2026), written after the Nov 6 playtest (playtests/2026-11-06/notes.md).
+  // Every saved row carries form "v2". Night 1 rows have no form field; the results compare against them for the
+  // questions both cards share (same id, same scale).
+  var FORM = "v2";
+
+  var T = {
+    eyebrow: ["после игры", "after the game"],
+    title: ["Анкета игрока", "Player scorecard"],
+    lead: ["19 коротких вопросов, около 4 минут. Без имени. Отвечай сам(а), до общего разговора, и только про сегодняшнюю игру. Любой вопрос можно пропустить.",
+           "19 short questions, about 4 minutes. No name. Answer on your own, before the group talk, and only about tonight's game. Skip anything you like."],
+    connecting: ["Подключаюсь…", "Connecting…"],
+    canSave: ["Ответы сохранятся сюда. Имя не записывается.", "Answers are saved here. Your name is not stored."],
+    cannotSave: ["Сохранить здесь нельзя: в конце скопируй ответы и отправь их Илье.", "Saving is not available here: at the end, copy your answers and send them to Ilia."],
+    submit: ["Отправить", "Submit"],
+    saving: ["Сохраняю…", "Saving…"],
+    empty: ["Ответь хотя бы на один вопрос.", "Answer at least one question."],
+    saveFailed: ["Не получилось сохранить. Скопируй ответы ниже и отправь их Илье.", "Could not save. Copy your answers below and send them to Ilia."],
+    fallbackHelp: ["Сохранить здесь нельзя. Скопируй ответы и отправь их Илье в мессенджере.", "Saving is not available here. Copy your answers and send them to Ilia in a message."],
+    copy: ["Скопировать ответы", "Copy answers"],
+    copied: ["Скопировано", "Copied"],
+    copyFailed: ["Выдели текст ниже и скопируй вручную", "Select the text below and copy it by hand"],
+    stamp: ["ПРИНЯТО", "RECEIVED"],
+    thanks: ["Спасибо! Ответы сохранены.", "Thank you! Your answers are saved."],
+    nextHelp: ["Передай телефон следующему игроку.", "Pass the phone to the next player."],
+    next: ["Следующий игрок", "Next player"],
+    results: ["Итоги", "Results"],
+    resNone: ["Пока нет ответов.", "No answers yet."],
+    resAvg: ["среднее", "average"],
+    resRank: ["Средняя позиция (1 = лучшее)", "Average place (1 = best)"],
+    resWas: ["6 ноября", "Nov 6"],
+    rankWas: ["В скобках: 6 ноября", "In brackets: Nov 6"],
+    allNights: ["Все вечера", "Every night"],
+    copyAll: ["Скопировать итоги", "Copy these results"],
+    rankHelp: ["Нажимай по порядку: сначала самое лучшее, в конце самое слабое. Нажми ещё раз, чтобы убрать.",
+               "Tap in order: the best first, the weakest last. Tap again to remove."],
+    rankReset: ["Начать заново", "Start over"],
+    wordPh: ["Одно слово", "One word"]
+  };
+
+  // Parts of the show: a label goes on the table before the first question of each part.
+  var PARTS = {
+    overall: ["Вся игра", "The whole game"],
+    question: ["Вопрос и ответ", "A question"],
+    powerUps: ["Бонусы", "Power ups"],
+    race: ["Финальная гонка", "The final race"],
+    end: ["В конце", "To finish"]
+  };
+
+  var YPN = [["yes", "Да", "Yes"], ["partly", "Отчасти", "Partly"], ["no", "Нет", "No"]];
+  var TIME3 = [["short", "Не хватало", "Too little"], ["right", "Хватало", "Enough"], ["long", "Было даже много", "More than enough"]];
+
+  // cmp: the question is word for word on the Nov 6 card, so its results show the Nov 6 numbers too.
+  var Q = [
+    { id: "fun", part: "overall", type: "scale", from: 1, to: 10, cmp: true,
+      t: ["Насколько было весело в целом?", "How fun was it overall?"],
+      lo: ["скучно", "boring"], hi: ["супер", "brilliant"] },
+    { id: "recommend", type: "scale", from: 0, to: 10, cmp: true,
+      t: ["Насколько вероятно, что ты предложишь эту игру своей семье или друзьям?", "How likely are you to suggest this game to your own family or friends?"],
+      lo: ["точно нет", "never"], hi: ["обязательно", "definitely"] },
+    { id: "pace", type: "choice", cmp: true,
+      t: ["Темп между вопросами", "Pace between questions"],
+      opts: [["slow", "Слишком медленно", "Too slow"], ["right", "В самый раз", "Just right"], ["fast", "Слишком быстро", "Too fast"]] },
+    { id: "length", type: "choice",
+      t: ["Длина одной игры (около 13 минут)", "Length of one game (about 13 minutes)"],
+      opts: [["short", "Слишком короткая", "Too short"], ["right", "В самый раз", "Just right"], ["long", "Слишком длинная", "Too long"]] },
+
+    { id: "voteTime", part: "question", type: "choice",
+      t: ["Голосование за тему: хватало времени прочитать все четыре темы?", "Topic vote: was there time to read all four topics?"],
+      opts: TIME3 },
+    { id: "readTime", type: "choice",
+      t: ["Хватало времени прочитать вопрос до того, как открылись ответы?", "Was there time to read the question before the answers opened?"],
+      opts: TIME3 },
+    { id: "reveal", type: "grid",
+      t: ["После ответа было видно…", "After the answer, could you see…"],
+      rows: [["right", "какой ответ правильный", "which answer was right"],
+             ["who", "кто ответил верно", "who got it right"],
+             ["points", "сколько очков получил каждый", "how many points each player got"]] },
+    { id: "layout", type: "choice",
+      t: ["Легко было найти на телефоне то, что видишь на ТВ (темы, Правда и Ложь)?", "Was it easy to find on the phone what you saw on the TV (the topics, True and False)?"],
+      opts: [["easy", "Легко", "Easy"], ["search", "Иногда приходилось искать", "Sometimes I had to look"], ["hard", "Трудно", "Hard"]] },
+    { id: "accidental", type: "choice",
+      t: ["Был ответ, который засчитался случайно или не тот, что ты хотел(а)?", "Did an answer ever count by accident, or a different one than you meant?"],
+      opts: [["never", "Нет", "No"], ["once", "Один раз", "Once"], ["more", "Больше одного раза", "More than once"]] },
+    { id: "speed", type: "choice",
+      t: ["Быстрый ответ давал заметно больше очков?", "Did answering fast give noticeably more points?"],
+      opts: [["much", "Да, заметно", "Yes, clearly"], ["little", "Чуть-чуть", "A little"], ["none", "Почти не важно", "It hardly mattered"]] },
+    { id: "rules", type: "grid", cmp: true,
+      t: ["Понятно ли было…", "Did you understand…"],
+      rows: [["scoring", "за что дают очки и почему быстрее значит больше", "how points work and why faster gives more"],
+             ["multipliers", "множители в раундах 3 и 4 (×1.5, ×2)", "the multipliers in rounds 3 and 4 (×1.5, ×2)"],
+             ["powerUps", "как получить и использовать бонус", "how to get and use a power up"],
+             ["closest", "ответ «ближе всех» (число) и как он считается", "the \"closest value\" answer (a number) and how it is scored"],
+             ["headStart", "почему в финале кто-то стартует впереди", "why some players start ahead in the final race"]] },
+
+    { id: "powerUse", part: "powerUps", type: "scale", from: 1, to: 5, cmp: true, na: ["Не использовал(а) бонус", "Didn't use one"],
+      t: ["Использовать бонусы было весело", "Using power ups was fun"],
+      lo: ["нет", "no"], hi: ["очень", "very"] },
+    { id: "powerHit", type: "scale", from: 1, to: 5, cmp: true, na: ["Меня не атаковали", "Never got hit"],
+      t: ["Получать бонус от другого было весело, а не обидно", "Getting hit by a power up was fun, not annoying"],
+      lo: ["обидно", "annoying"], hi: ["весело", "fun"] },
+    { id: "powerSeen", type: "choice",
+      t: ["Было видно на ТВ, кто кого атаковал?", "Could you see on the TV who attacked whom?"],
+      opts: [["yes", "Да", "Yes"], ["sometimes", "Иногда", "Sometimes"], ["no", "Нет", "No"]] },
+
+    { id: "couldWin", part: "race", type: "scale", from: 1, to: 5, cmp: true,
+      t: ["До самого конца я чувствовал(а), что могу выиграть", "Until the very end I felt I could win"],
+      lo: ["совсем нет", "not at all"], hi: ["полностью", "completely"] },
+    { id: "raceLength", type: "choice",
+      t: ["Финальная гонка по длине", "The final race, its length"],
+      opts: [["short", "Слишком короткая", "Too short"], ["right", "В самый раз", "Just right"], ["long", "Слишком длинная", "Too long"]] },
+
+    { id: "tvRead", part: "end", type: "scale", from: 1, to: 5, cmp: true,
+      t: ["Текст на ТВ было легко читать с моего места", "TV text was easy to read from my seat"],
+      lo: ["трудно", "hard"], hi: ["легко", "easy"] },
+    { id: "rank", type: "rank", cmp: true,
+      t: ["Расставь части игры от лучшей к худшей", "Rank the parts of the game from best to worst"],
+      items: [["vote", "Голосование за тему", "Topic vote"], ["mc", "Вопросы с вариантами", "Multiple choice"],
+              ["closest", "Ответ «ближе всех»", "Closest value"], ["powerUps", "Бонусы", "Power ups"],
+              ["race", "Финальная гонка", "Final race"], ["hosts", "Ведущие", "Hosts"], ["results", "Итоги", "Results"]] },
+    { id: "word", type: "text",
+      t: ["Игра одним словом", "The game in one word"] }
+  ];
+
+  var lang = 0; // 0 = ru, 1 = en
+  var answers = {};
+  var db = null, canSave = false;
+  var form = document.getElementById("form");
+
+  function tr(key) { return (T[key] || ["", ""])[lang]; }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function optLabel(opts, v) {
+    for (var i = 0; i < opts.length; i++) if (opts[i][0] === v) return opts[i][1 + lang];
+    return v;
+  }
+
+  // ---------- form ----------
+  function render() {
+    form.textContent = "";
+    Q.forEach(function (q, i) {
+      if (q.part) form.appendChild(el("span", "part", PARTS[q.part][lang]));
+      var card = el("section", "q piece");
+      var head = el("div", "q-head");
+      head.appendChild(el("span", "coin", String(i + 1)));
+      var title = el("h2", "q-title", q.t[lang]);
+      title.id = "qt-" + q.id;
+      head.appendChild(title);
+      card.appendChild(head);
+      card.setAttribute("aria-labelledby", title.id);
+      var body;
+      if (q.type === "scale") body = renderScale(q);
+      else if (q.type === "choice") body = renderChoice(q);
+      else if (q.type === "grid") body = renderGrid(q);
+      else if (q.type === "rank") body = renderRank(q);
+      else body = renderText(q);
+      card.appendChild(body);
+      form.appendChild(card);
+    });
+    document.querySelectorAll("[data-t]").forEach(function (n) { n.textContent = tr(n.getAttribute("data-t")); });
+    document.documentElement.lang = lang ? "en" : "ru";
+    renderStatus();
+    renderResults();
+  }
+
+  function pressGroup(container, value) {
+    container.querySelectorAll("button[data-v]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-v") === String(value)));
+    });
+  }
+
+  function renderScale(q) {
+    var box = el("div");
+    box.style.display = "flex"; box.style.flexDirection = "column"; box.style.gap = "8px";
+    var tiles = el("div", "tiles");
+    tiles.setAttribute("role", "group");
+    for (var v = q.from; v <= q.to; v++) {
+      var b = el("button", "tile", String(v));
+      b.type = "button"; b.setAttribute("data-v", String(v)); b.id = "a-" + q.id + "-" + v;
+      tiles.appendChild(b);
+    }
+    box.appendChild(tiles);
+    var ends = el("div", "ends");
+    ends.appendChild(el("span", null, q.from + " · " + q.lo[lang]));
+    ends.appendChild(el("span", null, q.hi[lang] + " · " + q.to));
+    box.appendChild(ends);
+    if (q.na) {
+      var naBtn = el("button", "pill na", q.na[lang]);
+      naBtn.type = "button"; naBtn.setAttribute("data-v", "na"); naBtn.id = "a-" + q.id + "-na";
+      naBtn.style.alignSelf = "flex-start";
+      box.appendChild(naBtn);
+    }
+    box.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-v]");
+      if (!b) return;
+      var raw = b.getAttribute("data-v");
+      var val = raw === "na" ? "na" : Number(raw);
+      if (answers[q.id] === val) delete answers[q.id]; else answers[q.id] = val;
+      pressGroup(box, answers[q.id]);
+    });
+    pressGroup(box, answers[q.id]);
+    return box;
+  }
+
+  function renderChoice(q) {
+    var pills = el("div", "pills");
+    pills.setAttribute("role", "group");
+    q.opts.forEach(function (o) {
+      var b = el("button", "pill", o[1 + lang]);
+      b.type = "button"; b.setAttribute("data-v", o[0]); b.id = "a-" + q.id + "-" + o[0];
+      pills.appendChild(b);
+    });
+    pills.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-v]");
+      if (!b) return;
+      var v = b.getAttribute("data-v");
+      if (answers[q.id] === v) delete answers[q.id]; else answers[q.id] = v;
+      pressGroup(pills, answers[q.id]);
+    });
+    pressGroup(pills, answers[q.id]);
+    return pills;
+  }
+
+  function renderGrid(q) {
+    var box = el("div", "grid-rows");
+    var cur = answers[q.id] || {};
+    q.rows.forEach(function (r) {
+      var row = el("div", "grid-row");
+      row.appendChild(el("div", "grid-row-label", r[1 + lang]));
+      var pills = el("div", "pills");
+      pills.setAttribute("role", "group");
+      YPN.forEach(function (o) {
+        var b = el("button", "pill", o[1 + lang]);
+        b.type = "button"; b.setAttribute("data-v", o[0]); b.id = "a-" + q.id + "-" + r[0] + "-" + o[0];
+        pills.appendChild(b);
+      });
+      pills.addEventListener("click", function (e) {
+        var b = e.target.closest("button[data-v]");
+        if (!b) return;
+        var v = b.getAttribute("data-v");
+        var m = Object.assign({}, answers[q.id] || {});
+        if (m[r[0]] === v) delete m[r[0]]; else m[r[0]] = v;
+        if (Object.keys(m).length) answers[q.id] = m; else delete answers[q.id];
+        pressGroup(pills, m[r[0]]);
+      });
+      pressGroup(pills, cur[r[0]]);
+      row.appendChild(pills);
+      box.appendChild(row);
+    });
+    return box;
+  }
+
+  function renderRank(q) {
+    var box = el("div");
+    box.style.display = "flex"; box.style.flexDirection = "column"; box.style.gap = "10px";
+    box.appendChild(el("p", "hint", tr("rankHelp")));
+    var list = el("div", "rank-list");
+    q.items.forEach(function (it) {
+      var b = el("button", "rank-item");
+      b.type = "button"; b.setAttribute("data-k", it[0]); b.id = "a-" + q.id + "-" + it[0];
+      b.appendChild(el("span", "badge", ""));
+      b.appendChild(el("span", null, it[1 + lang]));
+      list.appendChild(b);
+    });
+    box.appendChild(list);
+    var reset = el("button", "linkish", tr("rankReset"));
+    reset.type = "button";
+    box.appendChild(reset);
+    function paint() {
+      var order = answers[q.id] || [];
+      list.querySelectorAll(".rank-item").forEach(function (b) {
+        var idx = order.indexOf(b.getAttribute("data-k"));
+        b.classList.toggle("on", idx >= 0);
+        b.querySelector(".badge").textContent = idx >= 0 ? String(idx + 1) : "";
+        b.setAttribute("aria-pressed", String(idx >= 0));
+      });
+    }
+    list.addEventListener("click", function (e) {
+      var b = e.target.closest(".rank-item");
+      if (!b) return;
+      var k = b.getAttribute("data-k");
+      var order = (answers[q.id] || []).slice();
+      var idx = order.indexOf(k);
+      if (idx >= 0) order.splice(idx, 1); else order.push(k);
+      if (order.length) answers[q.id] = order; else delete answers[q.id];
+      paint();
+    });
+    reset.addEventListener("click", function () { delete answers[q.id]; paint(); });
+    paint();
+    return box;
+  }
+
+  function renderText(q) {
+    var input = el("input");
+    input.type = "text"; input.id = "a-" + q.id; input.maxLength = 40;
+    input.placeholder = tr("wordPh");
+    input.value = answers[q.id] || "";
+    input.addEventListener("input", function () {
+      var v = input.value.trim();
+      if (v) answers[q.id] = v; else delete answers[q.id];
+    });
+    return input;
+  }
+
+  // ---------- text export ----------
+  function answerText(a, l) {
+    var keep = lang; lang = l;
+    var out = [];
+    Q.forEach(function (q, i) {
+      var v = a[q.id], s;
+      if (v == null) s = "—";
+      else if (q.type === "scale") s = v === "na" ? q.na[lang] : v + " / " + q.to;
+      else if (q.type === "choice") s = optLabel(q.opts, v);
+      else if (q.type === "grid") s = q.rows.map(function (r) { return "\n   - " + r[1 + lang] + ": " + (v[r[0]] ? optLabel(YPN, v[r[0]]) : "—"); }).join("");
+      else if (q.type === "rank") s = v.map(function (k, j) { return (j + 1) + ". " + optLabel(q.items, k); }).join(", ");
+      else s = v;
+      out.push((i + 1) + ". " + q.t[lang] + ": " + s);
+    });
+    lang = keep;
+    return out.join("\n");
+  }
+
+  function copyText(text, btn) {
+    var label = btn.textContent;
+    function done(ok) {
+      btn.textContent = ok ? tr("copied") : tr("copyFailed");
+      setTimeout(function () { btn.textContent = label; }, 2000);
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+    } catch (e) { done(false); }
+  }
+
+  // ---------- status & saving ----------
+  var connecting = true;
+  function renderStatus() {
+    var s = document.getElementById("status");
+    if (connecting) { s.className = "status"; s.textContent = tr("connecting"); return; }
+    s.className = "status " + (canSave ? "ok" : "warn");
+    s.textContent = canSave ? tr("canSave") : tr("cannotSave");
+  }
+
+  function showFallback(msgKey) {
+    var err = document.getElementById("send-err");
+    if (msgKey) { err.textContent = tr(msgKey); err.hidden = false; }
+    document.getElementById("mine-text").textContent = answerText(answers, lang);
+    document.getElementById("fallback").hidden = false;
+  }
+
+  document.getElementById("submit").addEventListener("click", function () {
+    var btn = this;
+    var err = document.getElementById("send-err");
+    err.hidden = true;
+    if (!Object.keys(answers).length) { err.textContent = tr("empty"); err.hidden = false; return; }
+    if (!canSave) { showFallback(null); return; }
+    btn.disabled = true; btn.textContent = tr("saving");
+    var doc = {
+      form: FORM,
+      night: localDate(),
+      submittedAt: new Date().toISOString(),
+      lang: lang ? "en" : "ru",
+      answers: JSON.parse(JSON.stringify(answers))
+    };
+    db.collection("scorecards").add(doc).then(function () {
+      btn.disabled = false; btn.textContent = tr("submit");
+      document.getElementById("form").hidden = true;
+      document.getElementById("send").hidden = true;
+      document.getElementById("thanks").hidden = false;
+      window.scrollTo(0, 0);
+    }, function (e) {
+      btn.disabled = false; btn.textContent = tr("submit");
+      showFallback("saveFailed");
+      try { console.warn("save failed", e && e.code, e && e.message); } catch (x) {}
+    });
+  });
+
+  document.getElementById("copy-mine").addEventListener("click", function () {
+    var t = answerText(answers, lang);
+    document.getElementById("mine-text").textContent = t;
+    copyText(t, this);
+  });
+
+  document.getElementById("next").addEventListener("click", function () {
+    answers = {};
+    document.getElementById("thanks").hidden = true;
+    document.getElementById("form").hidden = false;
+    document.getElementById("send").hidden = false;
+    document.getElementById("fallback").hidden = true;
+    document.getElementById("send-err").hidden = true;
+    render();
+    window.scrollTo(0, 0);
+  });
+
+  function localDate() {
+    var d = new Date();
+    function p(n) { return (n < 10 ? "0" : "") + n; }
+    return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate());
+  }
+
+  document.querySelectorAll(".lang button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      lang = b.getAttribute("data-lang") === "en" ? 1 : 0;
+      document.querySelectorAll(".lang button").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      render();
+    });
+  });
+
+  // ---------- results (owner and editors only) ----------
+  var rows = [];      // this card's rows (form v2)
+  var oldRows = [];   // the Nov 6 card's rows (no form field)
+  var night = null;   // the night shown; null = every night
+  var picked = false; // the viewer chose a night (or every night): later snapshots keep it
+
+  function scaleStats(vals) {
+    var nums = vals.filter(function (v) { return typeof v === "number"; });
+    return { nums: nums, nas: vals.length - nums.length,
+             avg: nums.length ? nums.reduce(function (s, v) { return s + v; }, 0) / nums.length : null };
+  }
+  function valuesOf(list, id) {
+    return list.map(function (r) { return (r.answers || {})[id]; }).filter(function (v) { return v != null; });
+  }
+  function rankStats(q, vals) {
+    return q.items.map(function (it) {
+      var places = vals.map(function (order) { return order.indexOf(it[0]); }).filter(function (x) { return x >= 0; });
+      var a = places.length ? places.reduce(function (s, x) { return s + x + 1; }, 0) / places.length : null;
+      return { key: it[0], label: it[1 + lang], avg: a };
+    });
+  }
+
+  function renderNights() {
+    var box = document.getElementById("nights");
+    box.textContent = "";
+    var nights = [];
+    rows.forEach(function (r) { if (r.night && nights.indexOf(r.night) < 0) nights.push(r.night); });
+    nights.sort();
+    if (nights.length < 2) return;
+    [null].concat(nights).forEach(function (n) {
+      var b = el("button", "small-btn", n || tr("allNights"));
+      b.type = "button"; b.id = "night-" + (n || "all");
+      b.setAttribute("aria-pressed", String(n === night));
+      b.addEventListener("click", function () { night = n; picked = true; renderResults(); });
+      box.appendChild(b);
+    });
+  }
+
+  function renderResults() {
+    var box = document.getElementById("res-body");
+    var details = document.getElementById("results");
+    if (details.hidden) return;
+    renderNights();
+    var shown = rows.filter(function (r) { return night == null || r.night === night; });
+    document.getElementById("res-count").textContent = String(shown.length);
+    box.textContent = "";
+    if (!shown.length) { box.appendChild(el("p", "muted", tr("resNone"))); return; }
+    Q.forEach(function (q, i) {
+      var sec = el("div", "res-q");
+      sec.appendChild(el("h3", null, (i + 1) + ". " + q.t[lang]));
+      var vals = valuesOf(shown, q.id);
+      var old = q.cmp && oldRows.length ? valuesOf(oldRows, q.id) : [];
+      if (q.type === "scale") {
+        var s = scaleStats(vals);
+        var line = el("div");
+        line.appendChild(el("span", "avg", s.avg == null ? "—" : s.avg.toFixed(1)));
+        line.appendChild(el("span", "muted", "  " + tr("resAvg") + " · " + s.nums.join(", ") + (s.nas ? " · " + q.na[lang] + ": " + s.nas : "")));
+        sec.appendChild(line);
+        if (old.length) {
+          var o = scaleStats(old);
+          sec.appendChild(el("p", "was", tr("resWas") + ": " + (o.avg == null ? "—" : o.avg.toFixed(1)) + " (" + o.nums.join(", ") + ")"));
+        }
+      } else if (q.type === "choice") {
+        q.opts.forEach(function (op) { sec.appendChild(barLine(op[1 + lang], vals.filter(function (v) { return v === op[0]; }).length, shown.length)); });
+        if (old.length) {
+          sec.appendChild(el("p", "was", tr("resWas") + ": " + q.opts.map(function (op) {
+            return op[1 + lang] + " " + old.filter(function (v) { return v === op[0]; }).length;
+          }).join(" · ")));
+        }
+      } else if (q.type === "grid") {
+        q.rows.forEach(function (r) {
+          function count(list) {
+            var c = { yes: 0, partly: 0, no: 0 };
+            list.forEach(function (m) { if (m[r[0]]) c[m[r[0]]]++; });
+            return YPN.map(function (o) { return optLabel(YPN, o[0]) + " " + c[o[0]]; }).join(" · ");
+          }
+          sec.appendChild(el("p", "muted", r[1 + lang] + ": " + count(vals)));
+          if (old.length) sec.appendChild(el("p", "was", tr("resWas") + ": " + count(old)));
+        });
+      } else if (q.type === "rank") {
+        sec.appendChild(el("p", "muted", tr("resRank")));
+        var before = old.length ? rankStats(q, old) : [];
+        rankStats(q, vals).sort(function (x, y) { return (x.avg == null) - (y.avg == null) || (x.avg || 0) - (y.avg || 0); })
+          .forEach(function (st) {
+            var l = el("div", "res-line");
+            l.appendChild(el("span", null, st.label));
+            var bar = el("div", "bar"); var fill = el("i");
+            fill.style.width = st.avg == null ? "0%" : Math.round(((8 - st.avg) / 7) * 100) + "%";
+            bar.appendChild(fill); l.appendChild(bar);
+            var prev = before.filter(function (b) { return b.key === st.key; })[0];
+            l.appendChild(el("span", "num", (st.avg == null ? "—" : st.avg.toFixed(1)) +
+              (prev && prev.avg != null ? " (" + prev.avg.toFixed(1) + ")" : "")));
+            sec.appendChild(l);
+          });
+        if (before.length) sec.appendChild(el("p", "was", tr("rankWas")));
+      } else {
+        sec.appendChild(el("p", "muted", vals.length ? vals.join(" · ") : "—"));
+      }
+      box.appendChild(sec);
+    });
+    var act = el("div", "res-actions");
+    var cp = el("button", "small-btn", tr("copyAll"));
+    cp.type = "button"; cp.id = "copy-all";
+    cp.addEventListener("click", function () {
+      var t = shown.map(function (r, j) {
+        return "# " + (j + 1) + " · " + (r.night || "") + " · " + (r.submittedAt || "") + "\n" + answerText(r.answers || {}, lang);
+      }).join("\n\n");
+      copyText(t, cp);
+    });
+    act.appendChild(cp);
+    box.appendChild(act);
+  }
+  function barLine(label, n, total) {
+    var l = el("div", "res-line");
+    l.appendChild(el("span", null, label));
+    var bar = el("div", "bar"); var fill = el("i");
+    fill.style.width = total ? Math.round((n / total) * 100) + "%" : "0%";
+    bar.appendChild(fill); l.appendChild(bar);
+    l.appendChild(el("span", "num", String(n)));
+    return l;
+  }
+
+  // ---------- boot ----------
+  render();
+
+  function setConnected(ok) {
+    connecting = false; canSave = ok; renderStatus();
+  }
+
+  if (!window.claude || typeof window.claude.use !== "function") { setConnected(false); return; }
+
+  Promise.all([window.claude.use("db"), window.claude.use("user")]).then(function (res) {
+    db = res[0];
+    var user = res[1];
+    if (!db || !user) { setConnected(false); return; }
+    user.canEdit().then(function (isEditor) {
+      setConnected(!!isEditor);
+      if (!isEditor) return;
+      var details = document.getElementById("results");
+      details.hidden = false;
+      renderResults();
+      db.collection("scorecards").orderBy("submittedAt").onSnapshot(function (snap) {
+        var all = snap.docs.map(function (d) { return d.data(); });
+        rows = all.filter(function (r) { return r.form === FORM; });
+        oldRows = all.filter(function (r) { return !r.form; });
+        if (!picked && rows.length) {
+          // Open on the latest night this card was used.
+          night = rows.reduce(function (m, r) { return r.night && r.night > m ? r.night : m; }, "") || null;
+        }
+        renderResults();
+      }, function () { /* results stay as last shown */ });
+    }, function () { setConnected(false); });
+  }, function () { setConnected(false); });
+})();
+</script>

@@ -1,0 +1,359 @@
+<title>Game Night Debrief Script</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&family=Nunito:wght@700;800;900&family=Caveat:wght@700&display=swap">
+<style>
+/* Layout: a host's cue cards on a walnut table, one column, read from a phone while recording. Same board-game look as the game (decision 0017); one deliberate look in both themes. */
+:root {
+  --walnut: #3a2819;
+  --walnut-2: #46301e;
+  --cream: #f6ead0;
+  --cream-2: #eedcb6;
+  --ink: #2a1f16;
+  --ink-soft: #6b5640;
+  --edge: #9c7849;
+  --red: #e4572e;
+  --cobalt: #3a6ea5;
+  --mustard: #f2b33d;
+  --green: #4f9d45;
+  --display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --text: "Nunito", "Segoe UI", system-ui, sans-serif;
+  --hand: "Caveat", "Comic Sans MS", cursive;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { background: var(--walnut); }
+body {
+  margin: 0;
+  background-color: var(--walnut);
+  background-image:
+    repeating-linear-gradient(92deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 9px),
+    repeating-linear-gradient(88deg, rgba(0,0,0,0.06) 0 1px, transparent 1px 23px),
+    linear-gradient(180deg, var(--walnut-2), var(--walnut));
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.wrap {
+  max-width: 680px; margin: 0 auto;
+  padding-block: 20px 96px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 18px;
+}
+.piece {
+  background: var(--cream); border: 3px solid var(--ink); border-radius: 14px;
+  box-shadow: 0 5px 0 var(--edge), 0 5px 0 3px var(--ink);
+}
+.ticket { padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; transform: rotate(-0.6deg); position: relative; }
+.ticket::before, .ticket::after {
+  content: ""; position: absolute; top: 50%; width: 18px; height: 18px; margin-top: -9px;
+  background: var(--walnut); border: 3px solid var(--ink); border-radius: 50%;
+}
+.ticket::before { left: -11px; }
+.ticket::after { right: -11px; }
+.eyebrow { font-family: var(--hand); font-size: 22px; color: var(--red); line-height: 1; }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(22px, 6vw, 30px); line-height: 1.1; margin: 0; text-wrap: balance; }
+.lead { margin: 0; color: var(--ink-soft); font-weight: 700; font-size: 15px; }
+.lead a { color: var(--cobalt); }
+.bar-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.chip {
+  font-family: var(--text); font-weight: 900; font-size: 14px; color: var(--ink); background: #fffaf0;
+  border: 3px solid var(--ink); border-radius: 999px; padding: 6px 12px; cursor: pointer; box-shadow: 0 3px 0 var(--ink);
+}
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--cream); }
+.progress { font-family: var(--display); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--ink-soft); margin-left: auto; }
+
+/* section label on the table */
+.label {
+  align-self: flex-start; font-family: var(--display); font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--cream); background: var(--ink); border: 3px solid var(--cream); border-radius: 8px; padding: 6px 10px;
+  transform: rotate(-1deg); margin-top: 8px;
+}
+.label .min { font-family: var(--hand); text-transform: none; letter-spacing: 0; font-size: 18px; color: var(--mustard); margin-left: 6px; }
+
+/* what was there last time: a sticky note before the section's cards */
+.note {
+  align-self: stretch; padding: 10px 14px; background: var(--mustard); border: 3px solid var(--ink); border-radius: 6px;
+  transform: rotate(0.5deg); display: flex; flex-direction: column; gap: 2px;
+}
+.note b { font-family: var(--hand); font-size: 20px; font-weight: 700; line-height: 1; }
+.note span { font-size: 14px; font-weight: 800; }
+
+/* cue cards */
+.cue { padding: 14px 14px 16px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; align-items: start; }
+.cue:nth-of-type(odd) { transform: rotate(0.3deg); }
+.cue:nth-of-type(even) { transform: rotate(-0.25deg); }
+.cue.done { opacity: 0.55; }
+.cue.done .ru { text-decoration: line-through; text-decoration-thickness: 2px; }
+.tick {
+  grid-row: span 4; width: 40px; height: 40px; border-radius: 50%; border: 3px solid var(--ink); background: var(--mustard);
+  font-family: var(--display); font-size: 13px; color: var(--ink); cursor: pointer; font-variant-numeric: tabular-nums; padding: 0;
+}
+.cue.done .tick { background: var(--green); color: var(--cream); }
+.ru { margin: 0; font-size: 19px; font-weight: 900; line-height: 1.3; text-wrap: pretty; padding-top: 6px; }
+.en { margin: 0; font-size: 14px; font-weight: 700; color: var(--ink-soft); }
+.feeds { margin: 2px 0 0; font-family: var(--hand); font-size: 18px; color: var(--cobalt); line-height: 1.1; }
+.who { margin: 0; font-family: var(--hand); font-size: 20px; color: var(--red); line-height: 1.1; }
+.say { padding: 16px 18px; display: flex; flex-direction: column; gap: 6px; transform: rotate(0.4deg); }
+.say .ru { padding-top: 0; font-size: 20px; }
+.prep { padding: 14px 18px; display: flex; flex-direction: column; gap: 8px; }
+.prep label { display: flex; gap: 10px; align-items: flex-start; font-weight: 800; font-size: 16px; cursor: pointer; }
+.prep input { width: 22px; height: 22px; accent-color: var(--green); flex: none; margin-top: 1px; }
+.prep a { color: var(--cobalt); }
+details.more { padding: 0; }
+details.more > summary {
+  list-style: none; cursor: pointer; padding: 14px 18px; font-family: var(--display); font-size: 15px;
+  display: flex; justify-content: space-between; gap: 12px; align-items: center;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::after { content: "+"; font-size: 22px; }
+details.more[open] > summary::after { content: "−"; }
+.more-body { display: flex; flex-direction: column; gap: 12px; padding: 0 14px 16px; }
+.more-body .cue { transform: none; border: 2px solid var(--ink); border-radius: 12px; box-shadow: none; background: #fffaf0; }
+.sub { margin: 4px 0 0; font-family: var(--display); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); }
+
+/* the follow-up reminder, always visible */
+.dock {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-top: 10px; padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+  background: var(--ink); color: var(--cream); border-top: 3px solid var(--mustard);
+}
+.dock-in { max-width: 680px; margin: 0 auto; display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.dock b { font-family: var(--display); font-size: 14px; color: var(--mustard); font-weight: 800; }
+.dock span { font-size: 14px; font-weight: 800; }
+:focus-visible { outline: 3px solid var(--mustard); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .cue, .ticket, .say, .label, .note { transform: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="ticket piece">
+    <span class="eyebrow">после игры · after the game</span>
+    <h1>Разговор после игры</h1>
+    <p class="lead">Second game night. Last time we talked for 31 minutes about everything; this time ask what changed since Nov 6 and whether it worked. Read the Russian line out loud; the English is underneath, the blue note says what the answer decides. Tap a number when you've asked it. About 20 minutes for the core.</p>
+    <div class="bar-row">
+      <button type="button" class="chip" id="reset">Clear ticks</button>
+      <span class="progress" id="progress">0 / 14 core</span>
+    </div>
+  </header>
+
+  <span class="label">Before you start</span>
+  <section class="prep piece" aria-label="Before you start">
+    <label><input type="checkbox" id="p1"> Everyone filled in the <a href="https://claude.ai/artifact/7Bm25ywE4ZoA2DEsRhUcnj" target="_blank" rel="noopener">scorecard</a>, on their own, before any talk</label>
+    <label><input type="checkbox" id="p2"> Scorecard results open (they show Nov 6 beside tonight) and the phone polls seen: pick 2 or 3 things to point at</label>
+    <label><input type="checkbox" id="p3"> Everyone agreed to the recording</label>
+    <label><input type="checkbox" id="p4"> Recording started, phone near the middle of the room</label>
+  </section>
+
+  <span class="label">Say first</span>
+  <section class="say piece">
+    <p class="ru">«Мы кое-что поменяли после прошлого раза. Скажите, что стало лучше, а что нет. Проблемы помогают больше, чем похвала. Рассказывайте про конкретные моменты.»</p>
+    <p class="en">We changed a few things since last time. Tell us what got better and what didn't. Problems help more than praise. Tell me about specific moments.</p>
+  </section>
+
+  <div id="core"></div>
+
+  <span class="label">If there's energy</span>
+  <details class="more piece" id="more-extra">
+    <summary>Things for later in the plan</summary>
+    <div class="more-body" id="extra"></div>
+  </details>
+  <details class="more piece" id="more-people">
+    <summary>One person at a time</summary>
+    <div class="more-body" id="people"></div>
+  </details>
+
+  <span class="label">At the end</span>
+  <section class="say piece">
+    <p class="ru">«Спасибо! Это очень поможет к следующей игре.»</p>
+    <p class="en">Thank you, this really helps for the next game night. Then stop the recording and send me the file path.</p>
+  </section>
+</div>
+
+<div class="dock" role="note">
+  <div class="dock-in">
+    <span><b>After every answer:</b> «Когда именно?» or «Почему?», once</span>
+    <span>Don't explain or defend</span>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  // Version 2 (Nov 7, 2026), after the Nov 6 playtest (playtests/2026-11-06/notes.md). Each cue: Russian, English,
+  // and what the answer feeds (a decision record or an open question in the notes).
+  var CORE = [
+    { label: "The pace", min: "5 min",
+      note: ["Nov 6", "Too fast everywhere: 9 of 10 poll answers said too little time. Now: topic vote 10 → 20 s, reading 4 → 10 s, reveal 3.5 → 6 s, scores 3.5 → 5 s, race 8 → 12 s."],
+      items: [
+      ["Хватало времени в этот раз? Где всё ещё было слишком быстро, а где уже слишком медленно?", "Was there enough time this time? Where was it still too fast, and where was it already too slow?", "D126 timers, per phase"],
+      ["Голосование за тему: успевали прочитать все четыре и подумать?", "Topic vote: could you read all four and think?", "timers.topicVote"],
+      ["Игра стала длиннее, около 13 минут. Это ощущалось?", "The game got longer, about 13 minutes. Did you feel it?", "D127: length is an outcome"]
+    ]},
+    { label: "After the answer", min: "4 min",
+      note: ["Nov 6", "The right answer was hard to see, nobody could tell who was right or the points, players shown as a letter only."],
+      items: [
+      ["После ответа: сразу было видно, какой ответ правильный, кто угадал и сколько очков получил? Что пропустили?", "After the answer: could you see at once which answer was right, who got it and how many points? What did you miss?", "the reveal, an open item"],
+      ["Таблица очков теперь идёт слева направо, первое место справа. Это читается?", "The scores row now reads left to right, first place on the right. Does that read?", "D128"]
+    ]},
+    { label: "TV and phone", min: "4 min",
+      note: ["Nov 6", "Topics were a fan on the TV and a list on the phone. Now the TV shows them two by two and True and False side by side; the phone matches only if its page was redeployed before tonight."],
+      items: [
+      ["На телефоне сразу находили то, что видели на ТВ: темы, Правда и Ложь? Где пришлось искать?", "On the phone, did you find right away what you saw on the TV: the topics, True and False? Where did you have to look?", "D128, D129"],
+      ["Во время вопроса куда смотрели: на ТВ или в телефон? Варианты читали на ТВ или на телефоне?", "During a question, where did you look: the TV or the phone? Did you read the options on the TV or on the phone?", "open: options on the phone only"],
+      ["Было, что ответ засчитался случайно или не тот?", "Did an answer ever count by accident, or the wrong one?", "open: answer when the finger lifts"]
+    ]},
+    { label: "Power ups and points", min: "4 min",
+      note: ["Nov 6", "Power ups felt random, weak and invisible on the TV. They wanted to gang up on the leader. Speed mattered too little."],
+      items: [
+      ["Было понятно, за что даётся бонус? Было видно на ТВ, кто кого атаковал?", "Was it clear how you earn a power up? Could you see on the TV who attacked whom?", "open: how the TV shows power ups"],
+      ["Хотели бы бить лидера вдвоём или втроём за один вопрос?", "Would you want two or three of you to hit the leader on the same question?", "open: powerUps.maxHitsPerQuestion"],
+      ["Быстрый ответ давал достаточно очков? Лидер менялся слишком часто?", "Did a fast answer give enough points? Did the lead change too often?", "open: scoring.speedPenalty"]
+    ]},
+    { label: "The race and the evening", min: "4 min", items: [
+      ["Финальная гонка: всё ещё «на одном дыхании»? Сколько утверждений было бы в самый раз?", "The final race: still over in one breath? How many statements would feel right?", "open: race length"],
+      ["Если поменять одну вещь к следующему разу, что это должно быть?", "If we could change one thing before next time, what should it be?", "top 3 problems"],
+      ["Что точно нельзя менять?", "What must we not change?", "the do-not-change list"]
+    ]}
+  ];
+
+  var EXTRA = [
+    { sub: "Questions", items: [
+      ["Вопросы в этот раз: были слишком сложные или слишком лёгкие? Какая тема зашла лучше всего?", "Tonight's questions: any too hard or too easy? Which topic worked best?", "the question bank refining"],
+      ["Было слишком много вопросов про Россию? Кто из вас мог бы выиграть тему, а кто нет?", "Too many questions about Russia? Which topics could each of you win, and which not?", "refining plan rules 1 and 4"],
+      ["Если будут вопросы с картинкой или мелодией: какие фильмы, песни, годы вам интересны?", "If there are picture and music questions: which films, songs and years would you like?", "D131 content"]
+    ]},
+    { sub: "Hosts and characters", items: [
+      ["Реплики ведущих успевали читать теперь, когда стало медленнее? Хоть одну запомнили?", "Could you read the hosts' lines now that it's slower? Do you remember one?", "host voices, priority"],
+      ["Ведущие, объявляющие выбранную тему с шуткой: это то, чего хочется?", "Hosts announcing the chosen topic with a joke: is that something you want?", "open: hosts announce the topic"],
+      ["Что сделало бы персонажа «твоим»: фото, цвет, голос, эмоции на фигурке?", "What would make a character yours: a photo, a colour, a voice, emotions on the figure?", "character customisation"]
+    ]},
+    { sub: "The show", items: [
+      ["Начало игры всё ещё слишком резкое? Чего не хватает?", "Does the start still feel too abrupt? What's missing?", "cinematic intro"],
+      ["Студия на ТВ: слишком темно? Где не хватало звука?", "The studio on the TV: too dark? Where was a sound missing?", "brighter studio, sound effects"],
+      ["Момент победы был достаточно большим?", "Did the winner moment feel big enough?", "Results"]
+    ]}
+  ];
+
+  var PEOPLE = [
+    ["Last place", "В какой момент ты перестал(а) верить, что можешь выиграть? Что удержало бы тебя в игре?", "At what point did you stop believing you could win? What would have kept you in?"],
+    ["The winner", "Победа ощущалась заслуженной или удачей? На тебя охотились бонусами?", "Did the win feel earned or lucky? Did people hunt you with power ups?"],
+    ["Most attacked", "Каково было получать бонус снова и снова? Смешно, обидно, нечестно?", "How did it feel to be hit again and again? Funny, annoying, unfair?"],
+    ["New this time", "Что было непонятно в первые минуты? Где не знал(а), куда нажать?", "What was unclear in the first minutes? Where didn't you know what to tap?"],
+    ["Least confident", "Что было трудно? Смогли бы играть родители или бабушки и дедушки?", "What was hard? Could parents or grandparents play this?"],
+    ["Konstantin", "Реплики звучат как ты? Какую ты бы никогда не сказал? Дай три свои фразы.", "Do the lines sound like you? Which would you never say? Give us three lines you would say."]
+  ];
+
+  var KEY = "debrief-ticks-v2";
+  var ticks = {};
+  try { ticks = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { ticks = {}; }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(ticks)); } catch (e) {} }
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  function cue(id, num, ru, en, feeds, who) {
+    var card = el("section", "cue piece");
+    var btn = el("button", "tick", num);
+    btn.type = "button"; btn.id = "t-" + id;
+    btn.setAttribute("aria-label", "Mark " + num + " as asked");
+    card.appendChild(btn);
+    if (who) card.appendChild(el("p", "who", who));
+    card.appendChild(el("p", "ru", "«" + ru + "»"));
+    card.appendChild(el("p", "en", en));
+    if (feeds) card.appendChild(el("p", "feeds", "→ " + feeds));
+    function paint() {
+      card.classList.toggle("done", !!ticks[id]);
+      btn.setAttribute("aria-pressed", String(!!ticks[id]));
+    }
+    btn.addEventListener("click", function () {
+      if (ticks[id]) delete ticks[id]; else ticks[id] = 1;
+      save(); paint(); progress();
+    });
+    paint();
+    return card;
+  }
+
+  var coreBox = document.getElementById("core");
+  coreBox.style.display = "flex"; coreBox.style.flexDirection = "column"; coreBox.style.gap = "18px";
+  var n = 0, coreIds = [];
+  CORE.forEach(function (g) {
+    var lab = el("span", "label", g.label);
+    lab.appendChild(el("span", "min", "~" + g.min));
+    coreBox.appendChild(lab);
+    if (g.note) {
+      var note = el("div", "note");
+      note.appendChild(el("b", null, g.note[0]));
+      note.appendChild(el("span", null, g.note[1]));
+      coreBox.appendChild(note);
+    }
+    g.items.forEach(function (q) {
+      n++;
+      var id = "c" + n; coreIds.push(id);
+      coreBox.appendChild(cue(id, String(n), q[0], q[1], q[2]));
+    });
+  });
+
+  var extraBox = document.getElementById("extra");
+  var m = 0;
+  EXTRA.forEach(function (g) {
+    extraBox.appendChild(el("p", "sub", g.sub));
+    g.items.forEach(function (q) { m++; extraBox.appendChild(cue("e" + m, "+", q[0], q[1], q[2])); });
+  });
+
+  var peopleBox = document.getElementById("people");
+  PEOPLE.forEach(function (p, i) { peopleBox.appendChild(cue("p" + i, "•", p[1], p[2], null, p[0])); });
+
+  ["p1", "p2", "p3", "p4"].forEach(function (id) {
+    var box = document.getElementById(id);
+    box.checked = !!ticks[id];
+    box.addEventListener("change", function () {
+      if (box.checked) ticks[id] = 1; else delete ticks[id];
+      save();
+    });
+  });
+
+  function progress() {
+    var done = coreIds.filter(function (id) { return ticks[id]; }).length;
+    document.getElementById("progress").textContent = done + " / " + coreIds.length + " core";
+  }
+  progress();
+
+  var resetBtn = document.getElementById("reset");
+  var armed = false, armTimer = null;
+  resetBtn.addEventListener("click", function () {
+    if (!armed) {
+      armed = true; resetBtn.textContent = "Tap again to clear"; resetBtn.setAttribute("aria-pressed", "true");
+      armTimer = setTimeout(function () { armed = false; resetBtn.textContent = "Clear ticks"; resetBtn.setAttribute("aria-pressed", "false"); }, 4000);
+      return;
+    }
+    clearTimeout(armTimer); armed = false;
+    ticks = {}; save();
+    document.querySelectorAll(".cue").forEach(function (c) { c.classList.remove("done"); });
+    document.querySelectorAll(".tick").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+    ["p1", "p2", "p3", "p4"].forEach(function (id) { document.getElementById(id).checked = false; });
+    resetBtn.textContent = "Clear ticks"; resetBtn.setAttribute("aria-pressed", "false");
+    progress();
+  });
+
+  // keep the screen on while reading, where the phone allows it
+  function wake() {
+    try {
+      if (navigator.wakeLock && document.visibilityState === "visible") {
+        navigator.wakeLock.request("screen").then(function () {}, function () {});
+      }
+    } catch (e) {}
+  }
+  wake();
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") wake(); });
+})();
+</script>
