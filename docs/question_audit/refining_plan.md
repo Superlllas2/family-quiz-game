@@ -1,6 +1,6 @@
 # Plan: refine the whole question bank (draft for Ilia, Nov 7, 2026)
 
-**Status:** the pilot (step 1) is built, Nov 7: `pilot_languages_landmarks.md` here, with three open questions for Ilia. Steps 2 and 3 wait for his reading.
+**Status:** steps 1 and 2 done, Nov 7: the pilot is `pilot_languages_landmarks.md` here, and Ilia's answers are in "Rules after the pilot" below. Step 3 (the other topics in batches) is next.
 
 ## Why
 
@@ -30,10 +30,23 @@ The same steps as the 12 curated topics (decision record 0020, D117), plus four 
 3. **Questions you can reason toward.** The players asked for more questions that let you work your way to the answer and fewer "you know it or you don't". The rubric's Guessability gets more weight when choosing.
 4. **Something for every age.** Each topic keeps a few questions younger players can win. The interview said Soviet film questions favour the older generation.
 
+## Rules after the pilot (Ilia, Nov 7)
+
+These replace anything above that disagrees.
+
+1. **Borrowed words may stay.** A Russian word or saying in a non-Russian topic is fine when its story is foreign (вокзал from London's Vauxhall, бутерброд from German) and an English speaker would understand the question. Questions about the Russian language itself (its alphabet, spelling, idioms) are still set aside.
+2. **A higher standard from now on.** Every refined question scores at least **70** (GOOD) on the audit rubric, easy questions included: an easy question earns it with a trap or a surprising fact. Scores use the audit's scale; a scorer whose scores run above the audit's on questions both scored subtracts the difference. Being strong in v4 is not enough: a question is kept as it is only if it already reaches 70, and otherwise rewritten or replaced.
+   - Put the hook in the question when the surprise is hidden in the fact.
+   - No closest value question asks for a bare year; give an anchor or ask for a quantity.
+   - The correct option is never the single, much longer option.
+   - No one formula fills more than about a quarter of a topic (the word questions of `languages` are the exception).
+   - Every new or changed fact is checked on the web, with the source in the question.
+3. **The set aside list** is `tools/content/set_aside.json` (id and reason). `build_refined.py` refuses a refined question based on a set aside one. The bank files and `content/questions.json` are not touched, so no id moves.
+
 ## Setting questions aside
 
-- A set aside question keeps its place in `tools/content/bank/<topic>.json` with `"setAside": "<reason>"`. The build scripts leave it out of the game's files.
-- So nothing is deleted. Removing the field brings a question back.
+- A set aside question keeps its place in `tools/content/bank/<topic>.json` and is listed in `tools/content/set_aside.json` with its reason (rule 3 above). The refined bank never uses it.
+- So nothing is deleted. Removing the line brings a question back.
 - `ru_politics` is set aside as a whole topic: no questions are built from it and it is left out of `topics.json`.
 - This only changes the tools and the source files, not the game's schema.
 

@@ -6,6 +6,8 @@
 # with basedOn (the full bank question id it comes from, or null) and refine (same, rewrite, new); check_bank.py
 # --refined checks them first. Ids are cur_<topic>_NN in file order, sorted easy, medium, closest value. A "same"
 # question is copied again from content/questions.json, so it stays an exact copy of its full bank question.
+# tools/content/set_aside.json lists full bank questions kept out of the refined bank, each with its reason (for
+# example Russia outside the Russian topics); a refined question may not be based on one of them.
 import json, os, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -29,8 +31,10 @@ def main():
         topics = [t["id"] for t in json.load(f)]
     with open(os.path.join(ROOT, "content", "questions.json"), encoding="utf-8") as f:
         full = {q["id"]: q for q in json.load(f)}
+    with open(os.path.join(ROOT, "tools", "content", "set_aside.json"), encoding="utf-8") as f:
+        set_aside = json.load(f)
     out = []
-    errors = []
+    errors = ["set_aside.json: %s is not a full bank question" % i for i in set_aside if i not in full]
     for topic in topics:
         path = os.path.join(REFINED, topic + ".json")
         if not os.path.exists(path):
@@ -47,6 +51,8 @@ def main():
                     continue
                 if full[based]["topic"] != topic:
                     errors.append("%s #%d: basedOn %s is a question of another topic" % (topic, n, based))
+                if based in set_aside:
+                    errors.append("%s #%d: basedOn %s is set aside: %s" % (topic, n, based, set_aside[based]))
             if q["refine"] == "same":
                 src = full[q["basedOn"]]
                 q = {k: src[k] for k in (MC if src["format"] == "multipleChoice" else CV)} | {"basedOn": q["basedOn"], "refine": "same"}

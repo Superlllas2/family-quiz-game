@@ -37,69 +37,69 @@
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Чьи лица высечены в скале горы Рашмор?",
-   "en": "Whose faces are carved into Mount Rushmore?"
+   "ru": "Статую Свободы США подарила Франция. А кто сконструировал её железный каркас?",
+   "en": "France gave the Statue of Liberty to the USA. Who designed its iron skeleton?"
   },
   "options": [
    {
-    "ru": "Четырёх президентов США",
-    "en": "Four US presidents"
+    "ru": "Гюстав Эйфель",
+    "en": "Gustave Eiffel"
    },
    {
-    "ru": "Четырёх индейских вождей",
-    "en": "Four Native American chiefs"
+    "ru": "Огюст Роден",
+    "en": "Auguste Rodin"
    },
    {
-    "ru": "Четырёх генералов",
-    "en": "Four army generals"
+    "ru": "Жюль Верн",
+    "en": "Jules Verne"
    },
    {
-    "ru": "Четырёх изобретателей",
-    "en": "Four inventors"
+    "ru": "Луи Пастер",
+    "en": "Louis Pasteur"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "Их задумывали высечь по пояс, но в 1941 году кончились деньги, и остались одни 18-метровые головы.",
-   "en": "They were meant to be carved down to the waist, but the money ran out in 1941, leaving just the 18-metre heads."
+   "ru": "Медная «кожа» статуи толщиной всего 2,4 мм, а зелёной она стала от окисления лет за двадцать.",
+   "en": "The statue's copper skin is only 2.4 mm thick, and it turned green from oxidation within about twenty years."
   },
-  "source": "https://en.wikipedia.org/wiki/Mount_Rushmore",
-  "basedOn": "landmarks_003",
+  "source": "https://en.wikipedia.org/wiki/Statue_of_Liberty",
+  "basedOn": "landmarks_005",
   "refine": "rewrite"
  },
  {
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Чем была Пизанская башня по замыслу строителей?",
-   "en": "What was the Leaning Tower of Pisa built to be?"
+   "ru": "Этот город инков веками скрывали джунгли, и мир узнал о нём только в 1911 году. Как он называется?",
+   "en": "Jungle hid this Inca city for centuries, and the world only heard of it in 1911. What is it called?"
   },
   "options": [
    {
-    "ru": "Колокольней собора",
-    "en": "The cathedral's bell tower"
+    "ru": "Мачу-Пикчу",
+    "en": "Machu Picchu"
    },
    {
-    "ru": "Маяком",
-    "en": "A lighthouse"
+    "ru": "Куско",
+    "en": "Cusco"
    },
    {
-    "ru": "Сторожевой башней",
-    "en": "A watchtower"
+    "ru": "Теночтитлан",
+    "en": "Tenochtitlan"
    },
    {
-    "ru": "Тюрьмой",
-    "en": "A prison"
+    "ru": "Эльдорадо",
+    "en": "El Dorado"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "Она накренилась из-за мягкого грунта ещё во время стройки, а почти вековой перерыв в работе дал земле осесть и спас её.",
-   "en": "It began to lean on soft ground while still being built; a pause of almost a century let the soil settle and saved it."
+   "ru": "Его построили около 1450 года, вероятно, как поместье императора Пачакутека, и покинули примерно тогда, когда пришли испанцы.",
+   "en": "It was built around 1450, probably as an estate for the emperor Pachacuti, and abandoned about when the Spanish arrived."
   },
-  "source": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa",
-  "basedOn": "landmarks_004",
-  "refine": "same"
+  "source": "https://en.wikipedia.org/wiki/Machu_Picchu",
+  "basedOn": "landmarks_007",
+  "refine": "rewrite"
  },
  {
   "format": "multipleChoice",
@@ -139,35 +139,35 @@
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Для чего строили римский Колизей?",
-   "en": "What was the Roman Colosseum built for?"
+   "ru": "Какого цвета мост Золотые Ворота в Сан-Франциско?",
+   "en": "What colour is the Golden Gate Bridge in San Francisco?"
   },
   "options": [
    {
-    "ru": "Для боёв гладиаторов",
-    "en": "Gladiator fights"
+    "ru": "Оранжевый",
+    "en": "Orange"
    },
    {
-    "ru": "Для заседаний сената",
-    "en": "Senate meetings"
+    "ru": "Золотой",
+    "en": "Gold"
    },
    {
-    "ru": "Для хлебного рынка",
-    "en": "A grain market"
+    "ru": "Серебристый",
+    "en": "Silver"
    },
    {
-    "ru": "Для бань",
-    "en": "Public baths"
+    "ru": "Бронзовый",
+    "en": "Bronze"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "Римляне звали его просто амфитеатром, а «Колизеем» его прозвали, скорее всего, из-за колоссальной статуи Нерона по соседству.",
-   "en": "Romans just called it the amphitheatre; 'Colosseum' probably came from a colossal statue of Nero next to it."
+   "ru": "Официально цвет зовётся «международный оранжевый», а «Золотыми воротами» пролив назвали ещё в 1846 году, за 90 лет до моста.",
+   "en": "The official colour is 'international orange'; the strait was named the Golden Gate back in 1846, 90 years before the bridge."
   },
-  "source": "https://en.wikipedia.org/wiki/Colosseum",
-  "basedOn": "landmarks_011",
-  "refine": "same"
+  "source": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
+  "basedOn": "landmarks_012",
+  "refine": "rewrite"
  },
  {
   "format": "multipleChoice",
@@ -411,35 +411,35 @@
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Что идёт по синим трубам на фасаде парижского Центра Помпиду?",
-   "en": "The blue pipes on the outside of Paris's Centre Pompidou carry what?"
+   "ru": "Небоскрёб в Дубае строили как «Бурдж Дубай», но в день открытия переименовали. В честь кого?",
+   "en": "The Dubai skyscraper was built as 'Burj Dubai' but renamed on opening day. In honour of whom?"
   },
   "options": [
    {
-    "ru": "Воздух",
-    "en": "Air"
+    "ru": "Правителя Абу-Даби",
+    "en": "The ruler of Abu Dhabi"
    },
    {
-    "ru": "Воду",
-    "en": "Water"
+    "ru": "Правителя Дубая",
+    "en": "The ruler of Dubai"
    },
    {
-    "ru": "Электричество",
-    "en": "Electricity"
+    "ru": "Своего архитектора",
+    "en": "Its architect"
    },
    {
-    "ru": "Газ",
-    "en": "Gas"
+    "ru": "Короля Саудовской Аравии",
+    "en": "The King of Saudi Arabia"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "Здание вывернули наизнанку, а трубы раскрасили по назначению: синие — климат и вентиляция, зелёные — вода, жёлтые — электричество.",
-   "en": "The building is inside out, its pipes coloured by job: blue for air and climate, green for water, yellow for electricity."
+   "ru": "Шейх Халифа, правитель соседнего Абу-Даби, незадолго до того помог Дубаю расплатиться с долгами в кризис.",
+   "en": "Sheikh Khalifa, ruler of neighbouring Abu Dhabi, had just helped Dubai pay its debts in the financial crisis."
   },
-  "source": "https://en.wikipedia.org/wiki/Centre_Pompidou",
-  "basedOn": "landmarks_031",
-  "refine": "same"
+  "source": "https://en.wikipedia.org/wiki/Burj_Khalifa",
+  "basedOn": "landmarks_006",
+  "refine": "rewrite"
  },
  {
   "format": "multipleChoice",
@@ -479,8 +479,8 @@
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Куда смотрит большинство статуй моаи на острове Пасхи?",
-   "en": "Which way do most of the moai statues on Easter Island face?"
+   "ru": "Статуи моаи на острове Пасхи изображают предков. Куда смотрит большинство из них?",
+   "en": "The moai statues of Easter Island stand for ancestors. Which way do most of them face?"
   },
   "options": [
    {
@@ -502,46 +502,46 @@
   ],
   "correct": 0,
   "fact": {
-   "ru": "Моаи изображали предков и стояли спиной к морю, словно охраняя деревни своих потомков.",
-   "en": "The moai stood for ancestors, backs to the sea, as if watching over their descendants' villages."
+   "ru": "Спиной к морю, словно охраняя деревни потомков. Только семь моаи площадки Аху-Акиви смотрят в сторону океана.",
+   "en": "Backs to the sea, as if guarding their descendants' villages. Only the seven moai of Ahu Akivi look out to the ocean."
   },
   "source": "https://en.wikipedia.org/wiki/Moai",
   "basedOn": "landmarks_033",
-  "refine": "same"
+  "refine": "rewrite"
  },
  {
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Что находится на самой верхушке купола римского Пантеона?",
-   "en": "What is at the very top of the dome of Rome's Pantheon?"
+   "ru": "Парфенон простоял почти целым две тысячи лет. Что разрушило его в 1687 году?",
+   "en": "The Parthenon stood almost whole for two thousand years. What wrecked it in 1687?"
   },
   "options": [
    {
-    "ru": "Круглая дыра в небо",
-    "en": "A round hole open to the sky"
+    "ru": "Взрыв пороха",
+    "en": "A gunpowder blast"
    },
    {
-    "ru": "Колокол",
-    "en": "A bell"
+    "ru": "Землетрясение",
+    "en": "An earthquake"
    },
    {
-    "ru": "Стеклянный фонарь",
-    "en": "A glass lantern"
+    "ru": "Удар молнии",
+    "en": "A lightning strike"
    },
    {
-    "ru": "Статуя Юпитера",
-    "en": "A statue of Jupiter"
+    "ru": "Пожар",
+    "en": "A fire"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "Отверстие никогда не закрывали: дождь льёт прямо в храм, а пол сделан с уклоном и стоками, чтобы вода уходила.",
-   "en": "It was never covered: rain pours straight in, and the floor slopes to drains that carry the water away."
+   "ru": "Турки устроили в храме пороховой склад, и в него попало ядро венецианцев, осаждавших Афины.",
+   "en": "The Ottomans kept gunpowder inside, and a shell from the Venetians besieging Athens hit it."
   },
-  "source": "https://en.wikipedia.org/wiki/Pantheon,_Rome",
-  "basedOn": "landmarks_035",
-  "refine": "same"
+  "source": "https://en.wikipedia.org/wiki/Parthenon",
+  "basedOn": "landmarks_015",
+  "refine": "rewrite"
  },
  {
   "format": "closestValue",

@@ -105,69 +105,69 @@
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "В каком языке вопрос начинают перевёрнутым знаком «¿»?",
-   "en": "Which language opens a question with an upside down question mark '¿'?"
+   "ru": "Что значит «эсперанто» — имя, которое получил придуманный язык?",
+   "en": "What does 'Esperanto', the name of the made-up language, mean?"
   },
   "options": [
    {
-    "ru": "В испанском",
-    "en": "Spanish"
+    "ru": "«Надеющийся»",
+    "en": "'One who hopes'"
    },
    {
-    "ru": "В португальском",
-    "en": "Portuguese"
+    "ru": "«Всеобщий»",
+    "en": "'Universal'"
    },
    {
-    "ru": "В итальянском",
-    "en": "Italian"
+    "ru": "«Мирный»",
+    "en": "'Peaceful'"
    },
    {
-    "ru": "Во французском",
-    "en": "French"
+    "ru": "«Новый»",
+    "en": "'New'"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "Испанская академия ввела его в 1754 году: вопрос там часто звучит теми же словами, что и утверждение.",
-   "en": "The Spanish Academy brought it in in 1754, since a Spanish question often uses the same words as a statement."
+   "ru": "Людвик Заменгоф выпустил первый учебник языка в 1887 году под псевдонимом «Доктор Эсперанто», и псевдоним стал названием языка.",
+   "en": "Ludwik Zamenhof published the first textbook in 1887 as 'Doktoro Esperanto', and the pen name became the language's name."
   },
-  "source": "https://en.wikipedia.org/wiki/Inverted_question_and_exclamation_marks",
-  "basedOn": "languages_014",
-  "refine": "same"
+  "source": "https://en.wikipedia.org/wiki/Esperanto",
+  "basedOn": "languages_042",
+  "refine": "rewrite"
  },
  {
   "format": "multipleChoice",
   "difficulty": "easy",
   "text": {
-   "ru": "Какой язык родной для самого большого числа людей на Земле?",
-   "en": "Which language has the most native speakers in the world?"
+   "ru": "Из какого языка пришло слово «бутерброд»?",
+   "en": "Which language gave Russian the word 'buterbrod' (open sandwich)?"
   },
   "options": [
    {
-    "ru": "Китайский",
-    "en": "Mandarin Chinese"
+    "ru": "Из немецкого",
+    "en": "German"
    },
    {
-    "ru": "Английский",
+    "ru": "Из французского",
+    "en": "French"
+   },
+   {
+    "ru": "Из английского",
     "en": "English"
    },
    {
-    "ru": "Испанский",
-    "en": "Spanish"
-   },
-   {
-    "ru": "Хинди",
-    "en": "Hindi"
+    "ru": "Из итальянского",
+    "en": "Italian"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "Английский выходит вперёд, только если считать всех, кто выучил его как второй язык.",
-   "en": "English only takes the lead when you count everyone who learned it as a second language."
+   "ru": "Butterbrot по-немецки — буквально «масло-хлеб», так что «бутерброд с маслом» говорит про масло дважды.",
+   "en": "German 'Butterbrot' literally means 'butter bread', so a Russian 'buterbrod with butter' says butter twice."
   },
-  "source": "https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers",
-  "basedOn": "languages_004",
-  "refine": "rewrite"
+  "source": "https://ru.wiktionary.org/wiki/бутерброд",
+  "basedOn": "languages_005",
+  "refine": "same"
  },
  {
   "format": "multipleChoice",
@@ -241,25 +241,25 @@
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Слова «томат», «чили» и «койот» пришли к нам из языка…",
-   "en": "The words 'tomato', 'chili' and 'coyote' come from the language of the…"
+   "ru": "Слова «томат», «чили» и «койот» пришли из Мексики. Из языка какого народа?",
+   "en": "The words 'tomato', 'chili' and 'coyote' came from Mexico. From the language of which people?"
   },
   "options": [
    {
     "ru": "Ацтеков",
-    "en": "Aztecs"
+    "en": "The Aztecs"
+   },
+   {
+    "ru": "Майя",
+    "en": "The Maya"
    },
    {
     "ru": "Инков",
-    "en": "Incas"
+    "en": "The Incas"
    },
    {
-    "ru": "Полинезийцев",
-    "en": "Polynesians"
-   },
-   {
-    "ru": "Индейцев сиу",
-    "en": "Sioux"
+    "ru": "Ольмеков",
+    "en": "The Olmecs"
    }
   ],
   "correct": 0,
@@ -269,109 +269,109 @@
   },
   "source": "https://en.wikipedia.org/wiki/Nahuatl",
   "basedOn": "languages_020",
-  "refine": "same"
- },
- {
-  "format": "multipleChoice",
-  "difficulty": "medium",
-  "text": {
-   "ru": "Что по-японски значит «цундоку»?",
-   "en": "What does the Japanese word 'tsundoku' mean?"
-  },
-  "options": [
-   {
-    "ru": "Копить книги, не читая",
-    "en": "Buying books and never reading them"
-   },
-   {
-    "ru": "Читать в электричке",
-    "en": "Reading on the train"
-   },
-   {
-    "ru": "Засыпать над книгой",
-    "en": "Falling asleep over a book"
-   },
-   {
-    "ru": "Перечитывать любимое",
-    "en": "Rereading a favourite"
-   }
-  ],
-  "correct": 0,
-  "fact": {
-   "ru": "Шутливое слово эпохи Мэйдзи склеено из «складывать в стопку» и «читать».",
-   "en": "The joke word dates from Japan's Meiji era and glues together 'pile up' and 'read'."
-  },
-  "source": "https://en.wikipedia.org/wiki/Tsundoku",
-  "basedOn": "languages_026",
   "refine": "rewrite"
  },
  {
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Какие языки — ближайшие родственники венгерского?",
-   "en": "Which languages are the closest relatives of Hungarian?"
+   "ru": "Откуда в русском взялось слово «вокзал»?",
+   "en": "Where does the Russian word 'vokzal' (railway station) come from?"
   },
   "options": [
    {
-    "ru": "Хантыйский и мансийский",
-    "en": "Khanty and Mansi"
+    "ru": "От лондонского сада развлечений",
+    "en": "A London pleasure garden"
    },
    {
-    "ru": "Турецкий и азербайджанский",
-    "en": "Turkish and Azerbaijani"
+    "ru": "От немецкого «зал ожидания»",
+    "en": "German for 'waiting hall'"
    },
    {
-    "ru": "Румынский и итальянский",
-    "en": "Romanian and Italian"
+    "ru": "От фамилии инженера",
+    "en": "An engineer's surname"
    },
    {
-    "ru": "Немецкий и голландский",
-    "en": "German and Dutch"
+    "ru": "От французского «путешествие»",
+    "en": "French for 'journey'"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "Предки венгров жили за Уралом и пришли на Дунай лишь в конце IX века; ханты и манси живут в Западной Сибири.",
-   "en": "Hungarians' ancestors lived beyond the Urals and reached the Danube only in the late 800s; the Khanty and Mansi live in Siberia."
+   "ru": "Здание станции в Павловске 1838 года назвали «Воксал» по лондонскому Воксхоллу: там играла музыка и гуляла публика.",
+   "en": "The 1838 station at Pavlovsk was named 'Voksal' after London's Vauxhall Gardens, with music and strolling crowds."
   },
-  "source": "https://en.wikipedia.org/wiki/Hungarian_language",
-  "basedOn": "languages_027",
-  "refine": "rewrite"
+  "source": "https://ru.wikipedia.org/wiki/Вокзал",
+  "basedOn": "languages_018",
+  "refine": "same"
  },
  {
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "Сколько тонов в китайском языке путунхуа?",
-   "en": "How many tones does Mandarin Chinese have?"
+   "ru": "Из какого языка японцы взяли слово «икура» — красная икра?",
+   "en": "Which language gave Japanese the word 'ikura', salmon roe?"
   },
   "options": [
    {
-    "ru": "Два",
-    "en": "Two"
+    "ru": "Из русского",
+    "en": "Russian"
    },
    {
-    "ru": "Четыре",
-    "en": "Four"
+    "ru": "Из китайского",
+    "en": "Chinese"
    },
    {
-    "ru": "Семь",
-    "en": "Seven"
+    "ru": "Из корейского",
+    "en": "Korean"
    },
    {
-    "ru": "Двенадцать",
-    "en": "Twelve"
+    "ru": "Из айнского",
+    "en": "Ainu"
    }
   ],
-  "correct": 1,
+  "correct": 0,
   "fact": {
-   "ru": "Слог «ма» значит «мама», «конопля», «лошадь» или «ругать» — смотря каким тоном его произнести.",
-   "en": "The syllable 'ma' can mean mother, hemp, horse or scold, depending on the tone you say it in."
+   "ru": "Это просто наше «икра»: в японском не бывает двух согласных подряд, и между «к» и «р» вставили «у».",
+   "en": "It is simply Russian 'ikra': Japanese avoids two consonants in a row, so a 'u' slipped in between."
   },
-  "source": "https://en.wikipedia.org/wiki/Standard_Chinese_phonology",
-  "basedOn": "languages_030",
+  "source": "https://en.wikipedia.org/wiki/Ikura",
+  "basedOn": "languages_036",
   "refine": "same"
+ },
+ {
+  "format": "multipleChoice",
+  "difficulty": "medium",
+  "text": {
+   "ru": "Что ещё значит «babushka» в английском, кроме бабушки?",
+   "en": "Besides 'grandmother', what does 'babushka' mean in English?"
+  },
+  "options": [
+   {
+    "ru": "Головной платок",
+    "en": "A headscarf"
+   },
+   {
+    "ru": "Кресло-качалка",
+    "en": "A rocking chair"
+   },
+   {
+    "ru": "Вязаный свитер",
+    "en": "A knitted sweater"
+   },
+   {
+    "ru": "Тёплые тапки",
+    "en": "Warm slippers"
+   }
+  ],
+  "correct": 0,
+  "fact": {
+   "ru": "Англоязычные назвали платок по русским бабушкам, которые повязывали его именно так.",
+   "en": "English speakers named the scarf after the Russian grandmothers who wore it tied that way."
+  },
+  "source": "https://en.wiktionary.org/wiki/babushka",
+  "basedOn": "languages_022",
+  "refine": "rewrite"
  },
  {
   "format": "multipleChoice",
@@ -445,35 +445,35 @@
   "format": "multipleChoice",
   "difficulty": "medium",
   "text": {
-   "ru": "К какому языку жестов ближе всего американский язык жестов?",
-   "en": "Which sign language is American Sign Language closest to?"
+   "ru": "Что по-японски значит «цундоку»?",
+   "en": "What does the Japanese word 'tsundoku' mean?"
   },
   "options": [
    {
-    "ru": "К французскому",
-    "en": "French"
+    "ru": "Копить книги, не читая",
+    "en": "Buying books and never reading them"
    },
    {
-    "ru": "К британскому",
-    "en": "British"
+    "ru": "Читать в электричке",
+    "en": "Reading on the train"
    },
    {
-    "ru": "К австралийскому",
-    "en": "Australian"
+    "ru": "Засыпать над книгой",
+    "en": "Falling asleep over a book"
    },
    {
-    "ru": "К испанскому",
-    "en": "Spanish"
+    "ru": "Перечитывать любимое",
+    "en": "Rereading a favourite"
    }
   ],
   "correct": 0,
   "fact": {
-   "ru": "Первым учителем первой школы для глухих в США, открытой в 1817 году, стал глухой француз Лоран Клерк.",
-   "en": "The first teacher at America's first school for the deaf, opened in 1817, was Laurent Clerc, a deaf Frenchman."
+   "ru": "Шутливое слово эпохи Мэйдзи склеено из «складывать в стопку» и «читать».",
+   "en": "The joke word dates from Japan's Meiji era and glues together 'pile up' and 'read'."
   },
-  "source": "https://en.wikipedia.org/wiki/American_Sign_Language",
-  "basedOn": "languages_035",
-  "refine": "same"
+  "source": "https://en.wikipedia.org/wiki/Tsundoku",
+  "basedOn": "languages_026",
+  "refine": "rewrite"
  },
  {
   "format": "multipleChoice",
@@ -573,60 +573,60 @@
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "Сколько живых языков насчитывают в Папуа — Новой Гвинее?",
-   "en": "About how many living languages are spoken in Papua New Guinea?"
+   "ru": "Луи Брайль придумал точечную азбуку для слепых, ещё будучи школьником. Сколько ему было лет?",
+   "en": "Louis Braille made his dot alphabet for the blind while still a schoolboy. How old was he?"
   },
-  "answer": 840,
+  "answer": 15,
   "range": [
    0,
-   3000
+   60
   ],
-  "step": 10,
-  "tolerance": 150,
+  "step": 1,
+  "tolerance": 7,
   "unit": {
-   "ru": "языков",
-   "en": "languages"
+   "ru": "лет",
+   "en": "years old"
   },
   "fact": {
-   "ru": "Это больше, чем в любой другой стране: горы и джунгли веками отделяли соседние долины друг от друга.",
-   "en": "That is more than in any other country: mountains and jungle kept neighbouring valleys apart for centuries."
+   "ru": "Он ослеп в детстве, поранив глаз шилом в мастерской отца. Свою систему из точек он показал друзьям в 1825 году.",
+   "en": "He went blind as a small child after hurting an eye with an awl in his father's workshop. He showed his dot system to friends in 1825."
   },
-  "source": "https://en.wikipedia.org/wiki/Languages_of_Papua_New_Guinea",
-  "basedOn": "languages_049",
-  "refine": "same"
+  "source": "https://en.wikipedia.org/wiki/Louis_Braille",
+  "basedOn": null,
+  "refine": "new"
  },
  {
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "Создатели корейской азбуки уверяли, что умный выучит её за одно утро. Сколько в ней основных букв?",
-   "en": "The makers of the Korean alphabet said a clever person learns it in one morning. How many basic letters does it have?"
+   "ru": "Самое длинное слово в словарях английского языка — название болезни лёгких. Сколько в нём букв?",
+   "en": "The longest word in English dictionaries names a lung disease. How many letters does it have?"
   },
-  "answer": 24,
+  "answer": 45,
   "range": [
    0,
-   100
+   150
   ],
   "step": 1,
-  "tolerance": 8,
+  "tolerance": 10,
   "unit": {
    "ru": "букв",
    "en": "letters"
   },
   "fact": {
-   "ru": "14 согласных и 10 гласных. Король Седжон обнародовал азбуку в 1446 году, чтобы простые люди могли читать без тысяч иероглифов.",
-   "en": "14 consonants and 10 vowels. King Sejong proclaimed it in 1446 so ordinary people could read without thousands of Chinese characters."
+   "ru": "Pneumonoultramicroscopicsilicovolcanoconiosis придумал в 1935 году глава клуба любителей головоломок, и слово пробилось в словари.",
+   "en": "Pneumonoultramicroscopicsilicovolcanoconiosis was coined in 1935 by the head of a puzzlers' league, and it made it into dictionaries."
   },
-  "source": "https://en.wikipedia.org/wiki/Hangul",
-  "basedOn": "languages_044",
-  "refine": "rewrite"
+  "source": "https://en.wikipedia.org/wiki/Pneumonoultramicroscopicsilicovolcanoconiosis",
+  "basedOn": null,
+  "refine": "new"
  },
  {
   "format": "closestValue",
   "difficulty": "hard",
   "text": {
-   "ru": "Розеттский камень нашли в 1799 году. Через сколько лет с его помощью прочли египетские иероглифы?",
-   "en": "The Rosetta Stone was found in 1799. How many years later did it help crack Egyptian hieroglyphs?"
+   "ru": "Розеттский камень нашли солдаты Наполеона в Египте в 1799 году. Через сколько лет с его помощью прочли иероглифы?",
+   "en": "Napoleon's soldiers found the Rosetta Stone in Egypt in 1799. How many years later did it help crack hieroglyphs?"
   },
   "answer": 23,
   "range": [
