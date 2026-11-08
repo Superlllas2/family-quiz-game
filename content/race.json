@@ -180,15 +180,6 @@
     "source": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth"
   },
   {
-    "id": "race_021",
-    "statement": {
-      "ru": "Гагарин облетел Землю за 108 минут.",
-      "en": "Gagarin flew round the Earth in 108 minutes."
-    },
-    "answer": true,
-    "source": "https://en.wikipedia.org/wiki/Vostok_1"
-  },
-  {
     "id": "race_022",
     "statement": {
       "ru": "На Марсе есть вулкан выше Эвереста.",
@@ -358,5 +349,554 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+    "id": "race_041",
+    "statement": {
+      "ru": "Солнце на самом деле белое, а не жёлтое.",
+      "en": "The Sun is really white, not yellow."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sun"
+  },
+  {
+    "id": "race_042",
+    "statement": {
+      "ru": "Быка злит красный цвет.",
+      "en": "Bulls are angered by the colour red."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_043",
+    "statement": {
+      "ru": "После смерти волосы и ногти продолжают расти.",
+      "en": "Hair and nails keep growing after death."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_044",
+    "statement": {
+      "ru": "Губка Боб живёт в ананасе.",
+      "en": "SpongeBob lives in a pineapple."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/SpongeBob_SquarePants_(character)"
+  },
+  {
+    "id": "race_045",
+    "statement": {
+      "ru": "Амазонка впадает в Тихий океан.",
+      "en": "The Amazon flows into the Pacific Ocean."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Amazon_River"
+  },
+  {
+    "id": "race_046",
+    "statement": {
+      "ru": "Микроволновка делает еду радиоактивной.",
+      "en": "A microwave oven makes food radioactive."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Microwave_oven"
+  },
+  {
+    "id": "race_047",
+    "statement": {
+      "ru": "Бабочки чувствуют вкус ногами.",
+      "en": "Butterflies taste with their feet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Butterfly"
+  },
+  {
+    "id": "race_048",
+    "statement": {
+      "ru": "Полярная звезда — самая яркая на ночном небе.",
+      "en": "The North Star is the brightest star in the night sky."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Polaris"
+  },
+  {
+    "id": "race_049",
+    "statement": {
+      "ru": "В школе Эйнштейн был двоечником по математике.",
+      "en": "At school Einstein was bad at maths."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Albert_Einstein"
+  },
+  {
+    "id": "race_050",
+    "statement": {
+      "ru": "Ваниль получают из орхидеи.",
+      "en": "Vanilla comes from an orchid."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vanilla"
+  },
+  {
+    "id": "race_051",
+    "statement": {
+      "ru": "Верблюд хранит воду в горбу.",
+      "en": "A camel stores water in its hump."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_052",
+    "statement": {
+      "ru": "Самая маленькая кость человека находится в ухе.",
+      "en": "The smallest bone in the human body is in the ear."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Stapes"
+  },
+  {
+    "id": "race_053",
+    "statement": {
+      "ru": "Рыбка Дори из «В поисках Немо» — рыба-клоун.",
+      "en": "Dory from Finding Nemo is a clownfish."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Finding_Nemo"
+  },
+  {
+    "id": "race_054",
+    "statement": {
+      "ru": "Монетка, брошенная с небоскрёба, может убить прохожего.",
+      "en": "A coin dropped from a skyscraper can kill someone below."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_055",
+    "statement": {
+      "ru": "На Луне играли в гольф.",
+      "en": "Someone has played golf on the Moon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Apollo_14"
+  },
+  {
+    "id": "race_056",
+    "statement": {
+      "ru": "Кольца есть только у Сатурна.",
+      "en": "Saturn is the only planet with rings."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ring_system"
+  },
+  {
+    "id": "race_057",
+    "statement": {
+      "ru": "Оксфордский университет старше империи ацтеков.",
+      "en": "Oxford University is older than the Aztec Empire."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/University_of_Oxford"
+  },
+  {
+    "id": "race_058",
+    "statement": {
+      "ru": "Дикобраз умеет стрелять иглами.",
+      "en": "A porcupine can shoot its quills."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_059",
+    "statement": {
+      "ru": "После бритья волосы отрастают гуще.",
+      "en": "Shaved hair grows back thicker."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_060",
+    "statement": {
+      "ru": "Первая компьютерная мышь была деревянной.",
+      "en": "The first computer mouse was made of wood."
+    },
+    "answer": true,
+    "source": "https://sri.com/hoi/computer-mouse-and-interactive-computing/"
+  },
+  {
+    "id": "race_061",
+    "statement": {
+      "ru": "Самое острое в перце чили — семена.",
+      "en": "The hottest part of a chilli pepper is its seeds."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Capsaicin"
+  },
+  {
+    "id": "race_062",
+    "statement": {
+      "ru": "В «Холодном сердце» Анна — старшая сестра Эльзы.",
+      "en": "In Frozen, Anna is Elsa's older sister."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Anna_(Frozen)"
+  },
+  {
+    "id": "race_063",
+    "statement": {
+      "ru": "Год на Меркурии короче ста земных дней.",
+      "en": "A year on Mercury is shorter than 100 Earth days."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mercury_(planet)"
+  },
+  {
+    "id": "race_064",
+    "statement": {
+      "ru": "Олимпийские игры ни разу не отменяли.",
+      "en": "The Olympic Games have never been cancelled."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Olympic_Games"
+  },
+  {
+    "id": "race_065",
+    "statement": {
+      "ru": "Человек произошёл от шимпанзе.",
+      "en": "Humans evolved from chimpanzees."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_066",
+    "statement": {
+      "ru": "Лошадь физически не способна к рвоте.",
+      "en": "A horse is physically unable to vomit."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Equine_anatomy"
+  },
+  {
+    "id": "race_067",
+    "statement": {
+      "ru": "В венах течёт синяя кровь.",
+      "en": "The blood in our veins is blue."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_068",
+    "statement": {
+      "ru": "Гладиаторы всегда бились насмерть.",
+      "en": "Gladiators always fought to the death."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gladiator"
+  },
+  {
+    "id": "race_069",
+    "statement": {
+      "ru": "У Луны есть тёмная сторона, куда никогда не светит Солнце.",
+      "en": "The Moon has a dark side that sunlight never reaches."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_070",
+    "statement": {
+      "ru": "«История игрушек» — первый полнометражный компьютерный мультфильм.",
+      "en": "Toy Story was the first feature-length computer-animated film."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Toy_Story"
+  },
+  {
+    "id": "race_071",
+    "statement": {
+      "ru": "Лемминги толпой бросаются с обрыва, чтобы покончить с собой.",
+      "en": "Lemmings jump off cliffs together in a mass suicide."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_072",
+    "statement": {
+      "ru": "Проглоченная жвачка переваривается семь лет.",
+      "en": "Swallowed chewing gum takes seven years to digest."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_073",
+    "statement": {
+      "ru": "Молния горячее поверхности Солнца.",
+      "en": "Lightning is hotter than the surface of the Sun."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lightning"
+  },
+  {
+    "id": "race_074",
+    "statement": {
+      "ru": "Килиманджаро находится в Кении.",
+      "en": "Kilimanjaro is in Kenya."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mount_Kilimanjaro"
+  },
+  {
+    "id": "race_075",
+    "statement": {
+      "ru": "Отец Симбы — Шрам.",
+      "en": "Simba's father is Scar."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mufasa"
+  },
+  {
+    "id": "race_076",
+    "statement": {
+      "ru": "У морских коньков потомство вынашивает папа.",
+      "en": "In seahorses, it is the father who carries the young."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Seahorse"
+  },
+  {
+    "id": "race_077",
+    "statement": {
+      "ru": "После еды надо выждать час, прежде чем купаться.",
+      "en": "You must wait an hour after eating before you swim."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_078",
+    "statement": {
+      "ru": "Пирамиды в Гизе — самые древние пирамиды Египта.",
+      "en": "The Giza pyramids are the oldest pyramids in Egypt."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pyramid_of_Djoser"
+  },
+  {
+    "id": "race_079",
+    "statement": {
+      "ru": "Бананы немного радиоактивны.",
+      "en": "Bananas are slightly radioactive."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Banana_equivalent_dose"
+  },
+  {
+    "id": "race_080",
+    "statement": {
+      "ru": "Сова может повернуть голову на полный круг.",
+      "en": "An owl can turn its head all the way round."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Owl"
+  },
+  {
+    "id": "race_081",
+    "statement": {
+      "ru": "Стрелка компаса указывает точно на географический Северный полюс.",
+      "en": "A compass needle points exactly at the geographic North Pole."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/North_Magnetic_Pole"
+  },
+  {
+    "id": "race_082",
+    "statement": {
+      "ru": "Тутанхамон стал фараоном ещё ребёнком.",
+      "en": "Tutankhamun became pharaoh as a child."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tutankhamun"
+  },
+  {
+    "id": "race_083",
+    "statement": {
+      "ru": "У Бэтмена есть суперспособности.",
+      "en": "Batman has superpowers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Batman"
+  },
+  {
+    "id": "race_084",
+    "statement": {
+      "ru": "Язык чувствует сладкое и горькое разными участками.",
+      "en": "The tongue tastes sweet and bitter in separate zones."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_085",
+    "statement": {
+      "ru": "Ногти на руках растут быстрее, чем на ногах.",
+      "en": "Fingernails grow faster than toenails."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nail_(anatomy)"
+  },
+  {
+    "id": "race_086",
+    "statement": {
+      "ru": "Футбол был на первой современной Олимпиаде 1896 года.",
+      "en": "Football was played at the first modern Olympics in 1896."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Football_at_the_Summer_Olympics"
+  },
+  {
+    "id": "race_087",
+    "statement": {
+      "ru": "Нил течёт с юга на север.",
+      "en": "The Nile flows from south to north."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nile"
+  },
+  {
+    "id": "race_088",
+    "statement": {
+      "ru": "Если поднять еду за пять секунд, микробы не успеют на неё попасть.",
+      "en": "Pick up dropped food within five seconds and germs have no time to get on it."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Five-second_rule"
+  },
+  {
+    "id": "race_089",
+    "statement": {
+      "ru": "Алмаз может сгореть, как уголь.",
+      "en": "A diamond can burn, like coal."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Diamond"
+  },
+  {
+    "id": "race_090",
+    "statement": {
+      "ru": "Микки-Маус — самый первый персонаж Диснея.",
+      "en": "Mickey Mouse was Disney's very first character."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Oswald_the_Lucky_Rabbit"
+  },
+  {
+    "id": "race_091",
+    "statement": {
+      "ru": "В космосе космонавты становятся чуть выше ростом.",
+      "en": "Astronauts get a little taller in space."
+    },
+    "answer": true,
+    "source": "https://www.space.com/19116-astronauts-taller-space-spines.html"
+  },
+  {
+    "id": "race_092",
+    "statement": {
+      "ru": "Макароны привёз в Италию из Китая Марко Поло.",
+      "en": "Marco Polo brought pasta to Italy from China."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pasta"
+  },
+  {
+    "id": "race_093",
+    "statement": {
+      "ru": "Детали LEGO 1958 года подходят к сегодняшним.",
+      "en": "LEGO bricks from 1958 still fit today's bricks."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lego"
+  },
+  {
+    "id": "race_094",
+    "statement": {
+      "ru": "В Южном полушарии вода в раковине всегда закручивается в другую сторону.",
+      "en": "In the Southern Hemisphere, water always swirls down a sink the other way."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_095",
+    "statement": {
+      "ru": "Винни-Пуха назвали в честь настоящей медведицы из зоопарка.",
+      "en": "Winnie-the-Pooh was named after a real female bear at a zoo."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Winnipeg_(bear)"
+  },
+  {
+    "id": "race_096",
+    "statement": {
+      "ru": "В космосе слышно, как гремит взрыв.",
+      "en": "In space you can hear an explosion boom."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sound"
+  },
+  {
+    "id": "race_097",
+    "statement": {
+      "ru": "Орех кешью растёт снаружи, на кончике сочного «яблока».",
+      "en": "A cashew nut grows on the outside, at the tip of a juicy 'apple'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cashew"
+  },
+  {
+    "id": "race_098",
+    "statement": {
+      "ru": "Чтение при тусклом свете портит зрение навсегда.",
+      "en": "Reading in dim light damages your eyesight for good."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_099",
+    "statement": {
+      "ru": "Стамбул стоит сразу в двух частях света.",
+      "en": "Istanbul lies on two continents."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Istanbul"
+  },
+  {
+    "id": "race_100",
+    "statement": {
+      "ru": "Ещё в древности был автомат, который за монету наливал святую воду.",
+      "en": "Already in ancient times there was a coin machine that poured out holy water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vending_machine"
+  },
+  {
+    "id": "race_101",
+    "statement": {
+      "ru": "Когда-то в теннис играли ладонью, без ракетки.",
+      "en": "Tennis was once played with the palm of the hand, without a racket."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jeu_de_paume"
   }
 ]
