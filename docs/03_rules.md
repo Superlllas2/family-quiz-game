@@ -15,7 +15,7 @@ Rank is the position by total score, highest first. Equal scores share the bette
 ### Multiple choice
 
 - Correct: `points = round(maxPoints × (1 − speedPenalty × t / T)) × roundMultiplier`
-  - `t` = milliseconds from the moment the options appeared on that phone to the tap, as measured by the phone. The clock starts when the options appear, sabotage or not. A sabotage therefore costs time, which can cost some speed points (about 75 for 3 s on a 20 s window), but it never takes points away directly.
+  - `t` = milliseconds from the moment the options appeared on that phone to the tap, as measured by the phone. The tap counts when the finger lifts inside the button (D143), so that is when `t` is taken. The clock starts when the options appear, sabotage or not. A sabotage therefore costs time, which can cost some speed points (about 120 for 3 s on a 20 s window with `speedPenalty` 0.8), but it never takes points away directly.
   - `T` = the player's personal answer window in milliseconds: the format's window times the player's timer multiplier. Last call does not change `T`.
   - `maxPoints` = 1000, `speedPenalty` = 0.8 (D144), so a correct answer at the buzzer earns 200
   - `t` is clamped to the range 0 to T
@@ -66,7 +66,7 @@ On closest value questions the same effects cover the slider instead of the butt
 - The effect lands on the target's phone at the start of the next Answer phase. Several effects on one phone play one after another, in the order they were used; the phone clears them in that order (D145). The TV shows one tag per hit with attacker, power up and target ("Аня → Слизь → Соня", D145), and fires the `powerUpUsed` host line trigger.
 - When a player draws a power up at Reveal, the TV says why on a tag in the power up's colour, as long as they hold it: "Аня получает: Слизь" and "За верный ответ", plus "Кто позади лидера, получает чаще" for a player who was not the leader (D145).
 - **Targeting:** free by default (`powerUps.targeting` = `free`): any other player. With `aimUp`, only players with a better rank than yours; tied players cannot target each other, and a leader cannot attack (in game night 1 the leader just keeps the power up).
-- **Caps:** at most 3 effects per target per question (`powerUps.maxHitsPerQuestion`, D145), so players can gang up on the leader. A target that is already hit, or immune, shows greyed out. After being hit, a player is immune for 1 question (`powerUps.immunityQuestions`).
+- **Caps:** at most 3 effects per target per question (`powerUps.maxHitsPerQuestion`, D145), so players can gang up on the leader. A target that already has `maxHitsPerQuestion` hits waiting, or is immune, shows greyed out. After being hit, a player is immune for 1 question (`powerUps.immunityQuestions`).
 - Using a power up on the last question of round 4 does nothing; the pick window is hidden on that question.
 
 ### Settings

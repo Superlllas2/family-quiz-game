@@ -73,7 +73,7 @@ describe('result: the power up pick (06)', () => {
     expect(texts(tree)[0]).toBe('Slime');
   });
 
-  it('tapping the card (on pointerdown) arms it', () => {
+  it('tapping the card (on release, D143) arms it', () => {
     const onArm = vi.fn();
     const tree = ResultScreen({
       lang: 'en', powerUp: 'fog', targets, armed: false, view: pickView(pickFor(null, 1), {}),

@@ -17,7 +17,7 @@ import {
 } from './protocol';
 import { cardShown, closeCard, ratingFor, shownStars, tapStar, type RatingState } from './rating';
 import { shownReady, toggleReady } from './readyToggle';
-import { attachEffect, clearEffect, effectForScreen, overlayShown, type ActiveEffect } from './sabotage';
+import { addEffect, clearShown, overlayShown, queueForScreen, shownEffect, type EffectQueue } from './sabotage';
 import { AnswerChoiceScreen } from './screens/AnswerChoiceScreen';
 import { AnswerSliderScreen } from './screens/AnswerSliderScreen';
 import { AnswerTrueFalseScreen } from './screens/AnswerTrueFalseScreen';
@@ -84,8 +84,16 @@ export function App({ deps }: { deps: AppDeps }) {
   const answeredPhase = useRef<PhaseId | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [leaveId, setLeaveId] = useState<string | null>(null);
-  /** The sabotage on this phone, tied to the phaseId showing when the `effect` arrived (sabotage.ts). */
-  const [effect, setEffect] = useState<ActiveEffect | null>(null);
+  /**
+   * The sabotage effects on this phone, played one after another, tied to the phaseId showing when they arrived
+   * (sabotage.ts, D145). A ref too: several effects arrive in one burst, and a clear must see the latest queue.
+   */
+  const [effects, setEffectsState] = useState<EffectQueue | null>(null);
+  const effectsRef = useRef<EffectQueue | null>(null);
+  const setEffects = (next: EffectQueue | null): void => {
+    effectsRef.current = next;
+    setEffectsState(next);
+  };
   /** The phaseId of the last screen, read when an `effect` arrives (the message handler is made once). */
   const phaseRef = useRef<PhaseId | null>(null);
   /** The power up pick and the poll; refs too, so a second tap before the re-render sees the first one. */
@@ -130,9 +138,9 @@ export function App({ deps }: { deps: AppDeps }) {
       // Always a new arrival time, also for a last call with the same phaseId (the countdown re-syncs).
       setCurrent({ screen: next, receivedAt: deps.now() });
       clock.arrived(next.phaseId);
-      // A last call (same phaseId) keeps the sabotage; any other phaseId drops it.
+      // A last call (same phaseId) keeps the sabotage queue; any other phaseId drops it.
       phaseRef.current = next.phaseId;
-      setEffect((e) => effectForScreen(e, next.phaseId));
+      setEffects(queueForScreen(effectsRef.current, next.phaseId));
       // From here the TV's own ready flag shows again.
       setReadyTap(null);
       // The pick status lives as long as pickCharacter is showing: its refresh after characterTaken may or may
@@ -148,6 +156,8 @@ export function App({ deps }: { deps: AppDeps }) {
     const onMessage = (msg: IncomingMessage): void => {
       switch (msg.type) {
         case 'snapshot':
+          // Right after a snapshot the TV sends again every effect not cleared yet, in order (D145): start over.
+          setEffects(null);
           if (msg.player) setPlayer(playerView(msg.player));
           if (msg.screen) showScreen(msg.screen);
           break;
@@ -163,7 +173,7 @@ export function App({ deps }: { deps: AppDeps }) {
           sender.handleAck(msg);
           break;
         case 'effect':
-          setEffect(attachEffect(msg, phaseRef.current, deps.now()));
+          setEffects(addEffect(effectsRef.current, msg, phaseRef.current, deps.now()));
           break;
         default:
           break; // welcome and refused are handled by the session.
@@ -180,7 +190,7 @@ export function App({ deps }: { deps: AppDeps }) {
           answeredPhase.current = null;
           clock.reset();
           phaseRef.current = null;
-          setEffect(null);
+          setEffects(null);
           pickRef.current = null;
           setPickState(null);
           pollRef.current = null;
@@ -241,7 +251,8 @@ export function App({ deps }: { deps: AppDeps }) {
 
   /**
    * Sends the one decision of the current phase from screen `screenId`. One tap locks: a second tap on the same phaseId
-   * is ignored. `ms` comes from the answer clock (0 on screens that do not start it).
+   * is ignored. `ms` comes from the answer clock (0 on screens that do not start it), read here: a PressButton calls
+   * this when the finger lifts inside it (D143), so `ms` is the moment the answer counts, not the touch.
    */
   const decide = (
     screenId: string,
@@ -249,7 +260,7 @@ export function App({ deps }: { deps: AppDeps }) {
     build: (inputId: string, phaseId: PhaseId, ms: number) => AckedMessage,
   ): void => {
     if (!screen || screen.id !== screenId) return;
-    if (overlayShown(effect, screen)) return; // the overlay takes every tap until it is cleared
+    if (overlayShown(effectsRef.current, screen)) return; // the overlay takes every tap until all effects are cleared
     const phaseId = screen.phaseId;
     if (answeredPhase.current === phaseId) return; // one tap locks
     answeredPhase.current = phaseId;
@@ -487,22 +498,26 @@ export function App({ deps }: { deps: AppDeps }) {
     // Answer screens sit in the answer area, always, so the answer screen is never remounted when an overlay comes
     // or goes. The sabotage overlay covers that area only: the top bar's countdown stays visible.
     if (ANSWER_SCREENS.includes(screen.id)) {
-      const hit = effect && overlayShown(effect, screen) ? effect : null;
+      // Several effects play one after another (D145): only the first not cleared shows; clearing it sends its
+      // `effectCleared` and the next one starts showing at once, in a fresh layer (the key changes).
+      const hit = overlayShown(effects, screen) ? shownEffect(effects) : null;
+      const phaseId = screen.phaseId;
       body = (
         <div class="answer-area">
           {body}
           {hit ? (
             <SabotageOverlay
-              key={`${hit.phaseId}-${hit.arrivedAt}`}
+              key={`${phaseId}-${hit.seq}-${hit.startedAt}`}
               lang={lang}
               effect={hit}
               now={deps.now}
               onCleared={() => {
-                const done = clearEffect(hit, deps.now());
+                const done = clearShown(effectsRef.current, hit.seq, deps.now());
                 if (!done) return;
-                setEffect((e) => (e && e.phaseId === hit.phaseId && e.arrivedAt === hit.arrivedAt ? done.effect : e));
-                // Telemetry only: acked like every input, but no status is shown.
-                sender.send(effectClearedInputMessage(deps.newInputId(), hit.phaseId, hit.effect, done.ms));
+                setEffects(done.queue);
+                // Telemetry only: acked like every input, but no status is shown. The TV takes clears in order only;
+                // clearShown only clears the one showing, so they go out in order.
+                sender.send(effectClearedInputMessage(deps.newInputId(), done.queue.phaseId, done.cleared.effect, done.ms));
               }}
             />
           ) : null}

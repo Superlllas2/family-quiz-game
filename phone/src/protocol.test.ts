@@ -174,18 +174,18 @@ describe('the rating card and the pause (D105, D109)', () => {
 describe('the effect message (sabotage on this phone)', () => {
   it('parses freeze, slime and fog with their params', () => {
     expect(parseIncoming('{"v":2,"type":"effect","effect":"freeze","from":"Papa","params":{"taps":6}}'))
-      .toStrictEqual({ type: 'effect', effect: 'freeze', from: 'Papa', params: { taps: 6, blobs: 3, seconds: 3 } });
+      .toStrictEqual({ type: 'effect', effect: 'freeze', from: 'Papa', params: { taps: 6, blobs: 5, seconds: 6 } });
     expect(parseIncoming('{"v":2,"type":"effect","effect":"slime","from":"Мама","params":{"blobs":4}}'))
-      .toStrictEqual({ type: 'effect', effect: 'slime', from: 'Мама', params: { taps: 6, blobs: 4, seconds: 3 } });
+      .toStrictEqual({ type: 'effect', effect: 'slime', from: 'Мама', params: { taps: 10, blobs: 4, seconds: 6 } });
     expect(parseIncoming('{"v":2,"type":"effect","effect":"fog","from":"Bo","params":{"seconds":2.5}}'))
-      .toStrictEqual({ type: 'effect', effect: 'fog', from: 'Bo', params: { taps: 6, blobs: 3, seconds: 2.5 } });
+      .toStrictEqual({ type: 'effect', effect: 'fog', from: 'Bo', params: { taps: 10, blobs: 5, seconds: 2.5 } });
   });
 
-  it('falls back to 6 taps, 3 blobs and 3 seconds for missing or broken params', () => {
+  it('falls back to the config defaults (D145: 10 taps, 5 blobs, 6 seconds) for missing or broken params', () => {
     expect(parseIncoming('{"v":2,"type":"effect","effect":"freeze"}'))
-      .toStrictEqual({ type: 'effect', effect: 'freeze', from: '', params: { taps: 6, blobs: 3, seconds: 3 } });
+      .toStrictEqual({ type: 'effect', effect: 'freeze', from: '', params: { taps: 10, blobs: 5, seconds: 6 } });
     expect(parseIncoming('{"v":2,"type":"effect","effect":"slime","from":5,"params":{"taps":0,"blobs":-2,"seconds":"x"}}'))
-      .toStrictEqual({ type: 'effect', effect: 'slime', from: '', params: { taps: 6, blobs: 3, seconds: 3 } });
+      .toStrictEqual({ type: 'effect', effect: 'slime', from: '', params: { taps: 10, blobs: 5, seconds: 6 } });
     // Counts are whole numbers.
     expect(parseIncoming('{"v":2,"type":"effect","effect":"freeze","params":{"taps":4.6,"blobs":2.2}}'))
       .toMatchObject({ params: { taps: 5, blobs: 2 } });

@@ -236,6 +236,14 @@ h1 {
   filter: saturate(0.25) brightness(0.62);
 }
 
+/* Answers count on release inside the button (D143). Nothing scrolls under the answer buttons and the topic doors, so
+   the browser may not turn a wobbling finger into a pan: that would cancel the press. Buttons in lists that scroll
+   (targets, poll, rating) keep `manipulation`, so a swipe there scrolls and presses nothing. */
+.answer-area .btn,
+.btn.door {
+  touch-action: none;
+}
+
 .btn:focus-visible {
   outline: 3px solid var(--mustard);
   outline-offset: 3px;

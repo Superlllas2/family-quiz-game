@@ -1,7 +1,7 @@
 // The rating card (D109) over `watch`, `waiting` and `result` in Reveal and Scores: a title, a close button and one
 // row of stars per item, the leftmost 1 and the rightmost `stars`, with the low and high labels under the ends.
-// A tap fills the row on pointerdown (PressButton), before the ack. The state lives in app.tsx (rating.ts); this view
-// uses no hooks, so tests can call it as a plain function.
+// A tap fills the row when the finger lifts (PressButton, D143), before the ack. The state lives in app.tsx
+// (rating.ts); this view uses no hooks, so tests can call it as a plain function.
 
 import { t } from '../i18n';
 import type { Lang, RateData } from '../protocol';

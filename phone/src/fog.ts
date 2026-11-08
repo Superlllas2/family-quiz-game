@@ -1,6 +1,6 @@
 // Fog (03 "Power ups"): a blur layer over the answer area whose opacity falls linearly to 0 over `seconds`
-// (`powerUps.fog.seconds`, sent in the `effect` params), counted from the moment the `effect` arrived. While the
-// player rubs (a finger down and moving), time counts FOG_RUB_SPEEDUP (2x) faster. Cleared at 0.
+// (`powerUps.fog.seconds`, sent in the `effect` params), counted from the moment this effect started showing (its
+// arrival, or the clear of the effect before it, D145). While the player rubs (a finger down and moving), time counts FOG_RUB_SPEEDUP (2x) faster. Cleared at 0.
 
 import { FOG_RUB_IDLE_MS, FOG_RUB_SPEEDUP } from './constants';
 
@@ -11,7 +11,7 @@ export interface FogState {
   lastAt: number;
 }
 
-/** `startAt` is the effect's arrival time, so an overlay drawn later counts the time already passed. */
+/** `startAt` is when the effect started showing, so an overlay drawn later counts the time already passed. */
 export function fogStart(seconds: number, startAt: number): FogState {
   const totalMs = Number.isFinite(seconds) && seconds > 0 ? seconds * 1000 : 0;
   return { totalMs, doneMs: 0, lastAt: startAt };

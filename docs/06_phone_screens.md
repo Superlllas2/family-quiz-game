@@ -10,6 +10,7 @@ The phone is an input device (D88): it shows a screen only when the player has s
 
 - Portrait only. Full height, no scrolling during play.
 - Touch feedback on `pointerdown`, never on click: the pressed button changes at once (scale 0.95, brighter), with no wait for the network.
+- A tap counts on release (D143): an answer, a vote, a power up or any other button tap is sent only when the finger lifts inside the button. Sliding off before lifting cancels it: the pressed look goes and nothing is sent (coming back onto the button before lifting does not bring it back). Enter or Space on a keyboard still press at once.
 - After an input, show "Отправлено / Sent" with a small spinner, then a check mark when the `ack` arrives. No ack within 1 s: resend once; still nothing after 3 s: show "Нет связи / No connection".
 - Top bar on every screen during a game: player name with their character chip and a gear icon for settings. No score or rank (D88).
 - Look (D100 to D102, `decisions/0017_game_night_ui.md`): board game pieces on a walnut table `#3A2418`, cream card stock `#F6EBD5`, ink `#2B1D16`; answer colors A `#E4572E` (triangle), B `#3A6EA5` (diamond), C `#F2B33D` (circle), D `#4F9D45` (square), the same as the TV; fonts Unbounded, Nunito and Caveat.
@@ -17,7 +18,7 @@ The phone is an input device (D88): it shows a screen only when the player has s
 - Every visible text comes from the phone's locale file (`phone/src/locales/ru.json`, `en.json`) or from content in the player's chosen language. Texts the TV app sends in screen data (`countdown.text`, `waiting.locked`, `results.fact`, `error.text`) come from `content/ui_strings.json` (D65). The phone page uses the game night fonts (D101): Unbounded, Nunito and Caveat, served from `phone/public/fonts`.
 - Request a Screen Wake Lock after the first tap, and again whenever the page becomes visible.
 - No sounds on the phone.
-- The answer clock (`ms`) starts when the options appear and keeps running under a sabotage overlay. A new `screen` message with the same phaseId (last call) updates the countdown but never restarts the clock.
+- The answer clock (`ms`) starts when the options appear, keeps running under a sabotage overlay, and is read when the answer counts: the moment the finger lifts (D143). A new `screen` message with the same phaseId (last call) updates the countdown but never restarts the clock.
 
 ## Screens
 
@@ -32,7 +33,7 @@ The phone is an input device (D88): it shows a screen only when the player has s
 | `answerChoice` | Answer, multiple choice | Four buttons 2x2 with the option texts, each a quarter of the space below the top bar; the countdown. No question text: it is on the TV | Tap one | `waiting` |
 | `answerSlider` | Answer, closest value | Slider, big value with the unit, plus and minus, Lock, the countdown. No question text | Lock | `waiting` |
 | `answerTrueFalse` | RaceQuestion | Two buttons side by side: "Правда / True" on the left (green), "Ложь / False" on the right (red), as on the TV (D128, D129); the countdown. No statement text | Tap one | `waiting` |
-| `sabotage` | Overlay on any answer screen when hit | Freeze: ice layer with a tap counter. Slime: 3 blobs to swipe off. Fog: blur layer that clears in 3 s or faster by rubbing. Text: "{name} заморозил тебя! / {name} froze you!" | Clear it | The answer screen below |
+| `sabotage` | Overlay on any answer screen when hit | Freeze: ice layer with a tap counter (`powerUps.freeze.taps` taps). Slime: `powerUps.slime.blobs` blobs to swipe off. Fog: blur layer that clears in `powerUps.fog.seconds` or faster by rubbing. The TV sends the numbers in the `effect` params. Text: "{name} заморозил тебя! / {name} froze you!". Several effects on one phone in one Answer phase (up to `powerUps.maxHitsPerQuestion`, D145) play one after another, in the order they arrived: when one is cleared the phone sends its `effectCleared` (its `ms` counted from when that effect started showing) and the next starts showing at once, with its own text and its own fog timer. The overlay takes every tap until the last one is cleared. A last call (same phaseId) keeps them; another phaseId drops them; after a reload the TV sends again every effect not cleared yet, in order | Clear it | The next effect, then the answer screen below |
 | `waiting` | After an input, until the phase ends | "Ответ принят / Locked: B" (or the value, the door, True or False) with the ack check mark | None | Next screen sent |
 | `result` | Reveal and Scores (one phaseId), only for a player holding a power up (Day 4) | The power up card, tap it, then a row of target buttons (greyed if hit or immune) | Use power up (optional) | Next screen sent |
 | `results` | Results, the winner only | "Победа! / You won!", "Твоя награда — интересный факт / Your prize: a fun fact" and the fact (D87) | None | `poll`, or `lobby` with the poll off |

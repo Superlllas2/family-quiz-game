@@ -19,7 +19,7 @@ namespace FamilyQuiz.Presentation
         private const float Edge = 8f;
         private const float SunkEdge = 2f;
         private const float PillHeight = 40f;
-        private const float PillWidth = 176f;
+        private const float PillWidth = 210f;
         private const float PillGap = 6f;
         private const float HaloSize = 10f;
 
@@ -118,15 +118,16 @@ namespace FamilyQuiz.Presentation
                 t.sizeDelta = new Vector2(PillHeight - 6f, PillHeight - 6f);
                 token.Set(picks[i].Label, picks[i].Color, true);
 
-                var points = UiBuilder.Display("Points", pill.Content, 20, TvColors.Ink, TextAlignmentOptions.Right);
+                var points = UiBuilder.Display("Points", pill.Content, 22, TvColors.Ink, TextAlignmentOptions.Right);
                 points.textWrappingMode = TextWrappingModes.NoWrap;
-                UiBuilder.Anchor(points.rectTransform, 0.62f, 0, 1, 1);
+                points.overflowMode = TextOverflowModes.Overflow;
+                UiBuilder.Anchor(points.rectTransform, 0.6f, 0, 1, 1);
                 points.rectTransform.offsetMax = new Vector2(-12f, 0f);
                 points.text = picks[i].Points;
 
                 var name = UiBuilder.Text("Name", pill.Content, 20, TvColors.Ink, true, TextAlignmentOptions.Left);
                 UiBuilder.Fit(name, 12, 20, 1);
-                UiBuilder.Anchor(name.rectTransform, 0, 0, 0.62f, 1);
+                UiBuilder.Anchor(name.rectTransform, 0, 0, 0.6f, 1);
                 name.rectTransform.offsetMin = new Vector2(PillHeight + 2f, 0f);
                 name.text = picks[i].Name;
 

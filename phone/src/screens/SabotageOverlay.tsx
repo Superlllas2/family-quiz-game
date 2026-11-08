@@ -1,6 +1,7 @@
 // The sabotage overlay (06 `sabotage`, 03 "Power ups"): drawn by app.tsx over the answer area (buttons or slider)
-// while the effect's phaseId is current and it is not cleared. It takes every tap on the answer area; the top bar and
-// its countdown stay visible above it. The answer clock keeps running underneath: this component never touches it.
+// while the effects' phaseId is current and one is not cleared yet. Several effects play one after another (D145):
+// app.tsx draws one layer per effect, keyed so the next effect gets a fresh layer with its own text and fog timer.
+// It takes every tap on the answer area; the top bar and its countdown stay visible above it. The answer clock keeps running underneath: this component never touches it.
 // Gesture rules are in freeze.ts, slime.ts and fog.ts; this file only feeds them pointer events and draws the result.
 // Each layer calls onCleared exactly once.
 
@@ -9,13 +10,13 @@ import { fogAdvance, fogCleared, fogOpacity, fogStart, isRubbing } from '../fog'
 import { freezeStart, iceBroken, iceCracks, iceLeft, tapIce } from '../freeze';
 import { t, type TextKey } from '../i18n';
 import type { Lang } from '../protocol';
-import { effectTextKey, type ActiveEffect } from '../sabotage';
+import { effectTextKey, type ShownEffect } from '../sabotage';
 import { blobLeft, slimeCleared, slimeLayout, slimeStart, swipe, type Point } from '../slime';
 
 interface Props {
   lang: Lang;
-  effect: ActiveEffect;
-  /** performance.now(), the same clock the effect's arrival time comes from. */
+  effect: ShownEffect;
+  /** performance.now(), the same clock the effect's start time comes from. */
   now(): number;
   onCleared(): void;
 }
@@ -45,7 +46,7 @@ function useOnce(onCleared: () => void): () => void {
 }
 
 /** "{name} froze you!" and a hint; no pointer events of its own, so a tap on the text counts on the layer. */
-function Caption(props: { lang: Lang; effect: ActiveEffect; hint: TextKey }) {
+function Caption(props: { lang: Lang; effect: ShownEffect; hint: TextKey }) {
   const { lang, effect } = props;
   const name = effect.from.trim() || t(lang, 'sabotage.someone');
   return (
@@ -159,7 +160,7 @@ function SlimeLayer(props: Props) {
 
 function FogLayer(props: Props) {
   const layer = useRef<HTMLDivElement>(null);
-  const fog = useRef(fogStart(props.effect.params.seconds, props.effect.arrivedAt));
+  const fog = useRef(fogStart(props.effect.params.seconds, props.effect.startedAt));
   const down = useRef(new Set<number>());
   const lastMove = useRef<number | null>(null);
   const cleared = useOnce(props.onCleared);

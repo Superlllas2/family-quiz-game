@@ -124,7 +124,7 @@ export function powerUpInputMessage(
   return { v, type: 'input', inputId, phaseId, kind: 'powerUp', powerUp, target };
 }
 
-/** A sabotage overlay was cleared, `ms` after the `effect` arrived (telemetry only). */
+/** A sabotage overlay was cleared, `ms` after that effect started showing (telemetry only, D145). */
 export function effectClearedInputMessage(
   inputId: string, phaseId: PhaseId, effect: PowerUpKind, ms: number,
 ): EffectClearedInputMessage {

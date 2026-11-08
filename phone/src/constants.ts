@@ -24,16 +24,17 @@ export const COUNTDOWN_TICK_MS = 100;
 
 // ---- sabotage overlays (03 "Power ups", 06 `sabotage`) ----
 // The TV app sends the real values in the `effect` params, from content/config.json `powerUps.freeze.taps`,
-// `powerUps.slime.blobs` and `powerUps.fog.seconds`. These are only the fallbacks for a message without them.
+// `powerUps.slime.blobs` and `powerUps.fog.seconds`. These are only the fallbacks for a message without them,
+// kept equal to the config values (D145).
 
 /** Freeze: taps on the ice to break it, if the `effect` params do not say. */
-export const DEFAULT_FREEZE_TAPS = 6;
+export const DEFAULT_FREEZE_TAPS = 10;
 
 /** Slime: blobs to wipe off, if the `effect` params do not say. */
-export const DEFAULT_SLIME_BLOBS = 3;
+export const DEFAULT_SLIME_BLOBS = 5;
 
 /** Fog: seconds until it has cleared by itself, if the `effect` params do not say. */
-export const DEFAULT_FOG_SECONDS = 3;
+export const DEFAULT_FOG_SECONDS = 6;
 
 /** Fog: rubbing makes the fog clear this many times faster (03: "Rubbing the screen clears it 2x faster"). */
 export const FOG_RUB_SPEEDUP = 2;
