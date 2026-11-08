@@ -17,7 +17,7 @@ Rank is the position by total score, highest first. Equal scores share the bette
 - Correct: `points = round(maxPoints × (1 − speedPenalty × t / T)) × roundMultiplier`
   - `t` = milliseconds from the moment the options appeared on that phone to the tap, as measured by the phone. The clock starts when the options appear, sabotage or not. A sabotage therefore costs time, which can cost some speed points (about 75 for 3 s on a 20 s window), but it never takes points away directly.
   - `T` = the player's personal answer window in milliseconds: the format's window times the player's timer multiplier. Last call does not change `T`.
-  - `maxPoints` = 1000, `speedPenalty` = 0.5, so a correct answer at the buzzer still earns 500
+  - `maxPoints` = 1000, `speedPenalty` = 0.8 (D144), so a correct answer at the buzzer earns 200
   - `t` is clamped to the range 0 to T
 - Wrong or no answer: 0. Points never go negative.
 - Round the result of the formula to the nearest 10 (`scoring.roundTo`) before applying the multiplier, so scores look clean.
@@ -45,9 +45,9 @@ Three power ups for game night 1. Each one costs the target a few seconds. It ne
 
 | Power up | Russian name | Effect on the target's phone during their next answer phase |
 | --- | --- | --- |
-| Freeze | Заморозка | Answer buttons are covered in ice. The player taps the ice 6 times (`powerUps.freeze.taps`) to break it, then can answer. |
-| Slime | Слизь | Three slime blobs (`powerUps.slime.blobs`) cover the buttons. The player swipes across each blob to wipe it away. |
-| Fog | Туман | The options are hidden behind fog for 3 s (`powerUps.fog.seconds`). Rubbing the screen clears it 2x faster. |
+| Freeze | Заморозка | Answer buttons are covered in ice. The player taps the ice 10 times (`powerUps.freeze.taps`, D145) to break it, then can answer. |
+| Slime | Слизь | Five slime blobs (`powerUps.slime.blobs`, D145) cover the buttons. The player swipes across each blob to wipe it away. |
+| Fog | Туман | The options are hidden behind fog for 6 s (`powerUps.fog.seconds`, D145). Rubbing the screen clears it 2x faster. |
 
 On closest value questions the same effects cover the slider instead of the buttons.
 
@@ -65,7 +65,7 @@ On closest value questions the same effects cover the slider instead of the butt
 - If the player does not pick, they keep it for a later question. Unused power ups are lost at the end of round 4.
 - The effect lands on the target's phone at the start of the next Answer phase. The TV shows a small icon next to the target's character and the attacker's name ("Dad → Freeze"), and fires the `powerUpUsed` host line trigger.
 - **Targeting:** free by default (`powerUps.targeting` = `free`): any other player. With `aimUp`, only players with a better rank than yours; tied players cannot target each other, and a leader cannot attack (in game night 1 the leader just keeps the power up).
-- **Caps:** at most 1 effect per target per question (`powerUps.maxHitsPerQuestion`). A target that is already hit, or immune, shows greyed out. After being hit, a player is immune for 1 question (`powerUps.immunityQuestions`).
+- **Caps:** at most 3 effects per target per question (`powerUps.maxHitsPerQuestion`, D145), so players can gang up on the leader. A target that is already hit, or immune, shows greyed out. After being hit, a player is immune for 1 question (`powerUps.immunityQuestions`).
 - Using a power up on the last question of round 4 does nothing; the pick window is hidden on that question.
 
 ### Settings
@@ -130,7 +130,7 @@ Starting values for playtests. Config validation also checks that each staging a
 | `topics.minUnseenToOffer` | 4 | Unseen questions a topic needs to be preferred for a door |
 | `topics.mixedTopicId` | mixed | Topic id of the mixed door |
 | `scoring.maxPoints` | 1000 | |
-| `scoring.speedPenalty` | 0.5 | Share lost at the buzzer |
+| `scoring.speedPenalty` | 0.8 | Share lost at the buzzer |
 | `scoring.roundTo` | 10 | |
 | `scoring.fastAnswerMs` | 2000 | A correct answer faster than this can fire `fastAnswer` |
 | `closestValue.closestBonus` | 200 | |
@@ -141,15 +141,15 @@ Starting values for playtests. Config validation also checks that each staging a
 | `powerUps.targeting` | free | free or aimUp, default for the TV settings panel |
 | `powerUps.drawChanceLeader` | 0.3 | Last place alone is always 1.0 |
 | `powerUps.maxHeld` | 1 | |
-| `powerUps.maxHitsPerQuestion` | 1 | |
+| `powerUps.maxHitsPerQuestion` | 3 | |
 | `powerUps.immunityQuestions` | 1 | |
 | `powerUps.onPhone` | true | Effects play on the phone (D15) |
-| `powerUps.freeze.taps` | 6 | |
-| `powerUps.slime.blobs` | 3 | |
-| `powerUps.fog.seconds` | 3 | |
-| `race.maxHeadStart` | 3 | Steps |
-| `race.finishSteps` | 10 | |
-| `race.maxQuestions` | 12 | |
+| `powerUps.freeze.taps` | 10 | |
+| `powerUps.slime.blobs` | 5 | |
+| `powerUps.fog.seconds` | 6 | |
+| `race.maxHeadStart` | 4 | Steps |
+| `race.finishSteps` | 15 | |
+| `race.maxQuestions` | 20 | |
 | `race.stepsPerCorrect` | 1 | |
 | `race.answer` | 12 | Seconds, times the player's timer multiplier |
 | `race.reveal` | 2 | Seconds |

@@ -17,7 +17,7 @@ Round 2  (multiplier 1.0)
 Round 3  (multiplier 1.5)
 Round 4  (multiplier 2.0)
 FinalIntro
-FinalRace                   up to 12 x RaceQuestion
+FinalRace                   up to 20 x RaceQuestion
 Results
 Poll
 Lobby                       back to the Lobby: everyone taps Ready again for the next game (no intro)

@@ -15,13 +15,16 @@ namespace FamilyQuiz.Tests
         private static ScoringConfig S => Config.Scoring;
         private static long T => LobbyFixture.Ms(Config.Timers.Answer.MultipleChoice);
         private static double RoundOne => Config.Rounds.Multipliers[0];
+        /// <summary>Points for a correct answer at the buzzer in round 1: maxPoints x (1 - speedPenalty), rounded to roundTo.</summary>
+        private static int AtTheBuzzer => (int)(Math.Round(S.MaxPoints * (1 - S.SpeedPenalty) / S.RoundTo, MidpointRounding.AwayFromZero) * S.RoundTo);
 
         [Test]
         public void TheConfigHasTheSpecsStartingValues()
         {
-            // 03_rules.md: maxPoints 1000 and speedPenalty 0.5, "so a correct answer at the buzzer still earns 500".
+            // 03_rules.md: maxPoints 1000 and speedPenalty 0.8 (D144), "so a correct answer at the buzzer earns 200".
             Assert.That(S.MaxPoints, Is.EqualTo(1000));
-            Assert.That(S.MaxPoints * (1 - S.SpeedPenalty), Is.EqualTo(500));
+            Assert.That(S.SpeedPenalty, Is.EqualTo(0.8));
+            Assert.That(Math.Round(S.MaxPoints * (1 - S.SpeedPenalty)), Is.EqualTo(200));
         }
 
         [Test]
@@ -31,9 +34,9 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void ACorrectAnswerAtTheFullWindowGetsHalf()
+        public void ACorrectAnswerAtTheBuzzerKeepsWhatTheSpeedPenaltyLeaves()
         {
-            Assert.That(Scoring.MultipleChoice(S, true, T, T, RoundOne), Is.EqualTo(500));
+            Assert.That(Scoring.MultipleChoice(S, true, T, T, RoundOne), Is.EqualTo(AtTheBuzzer));
         }
 
         [Test]
@@ -51,7 +54,7 @@ namespace FamilyQuiz.Tests
                 int points = Scoring.MultipleChoice(S, true, ms, T, RoundOne);
                 double raw = S.MaxPoints * (1 - S.SpeedPenalty * ms / (double)T);
                 Assert.That(points % S.RoundTo, Is.EqualTo(0), "ms " + ms);
-                Assert.That(Math.Abs(points - raw), Is.LessThanOrEqualTo(S.RoundTo / 2.0), "ms " + ms);
+                Assert.That(Math.Abs(points - raw), Is.LessThanOrEqualTo(S.RoundTo / 2.0 + 1e-9), "ms " + ms);
             }
         }
 
@@ -72,7 +75,7 @@ namespace FamilyQuiz.Tests
             double round3 = Config.Rounds.Multipliers[2];
             Assert.That(round3, Is.EqualTo(1.5));
             Assert.That(Scoring.MultipleChoice(S, true, 0, T, round3), Is.EqualTo(1500));
-            Assert.That(Scoring.MultipleChoice(S, true, T, T, round3), Is.EqualTo(750));
+            Assert.That(Scoring.MultipleChoice(S, true, T, T, round3), Is.EqualTo((int)Math.Round(AtTheBuzzer * round3, MidpointRounding.AwayFromZero)));
             long ms = T / 3;
             int one = Scoring.MultipleChoice(S, true, ms, T, RoundOne);
             Assert.That(Scoring.MultipleChoice(S, true, ms, T, round3), Is.EqualTo((int)Math.Round(one * round3, MidpointRounding.AwayFromZero)));
@@ -82,7 +85,7 @@ namespace FamilyQuiz.Tests
         public void MsIsClampedToTheWindow()
         {
             Assert.That(Scoring.MultipleChoice(S, true, -5000, T, RoundOne), Is.EqualTo(1000));
-            Assert.That(Scoring.MultipleChoice(S, true, T * 10, T, RoundOne), Is.EqualTo(500));
+            Assert.That(Scoring.MultipleChoice(S, true, T * 10, T, RoundOne), Is.EqualTo(AtTheBuzzer));
             Assert.That(Scoring.ClampMs(-1, T), Is.EqualTo(0));
             Assert.That(Scoring.ClampMs(T + 1, T), Is.EqualTo(T));
             Assert.That(Scoring.ClampMs(T - 1, T), Is.EqualTo(T - 1));
@@ -111,11 +114,12 @@ namespace FamilyQuiz.Tests
             Assert.That(seats[1].Turn.WindowMs, Is.EqualTo(2 * f.WindowMs));
             Assert.That(seats[1].Turn.DeadlineMs, Is.EqualTo(f.State.PhaseStartedAtMs + 2 * f.WindowMs));
 
-            // The same tap time scores more with the doubled window: at the base window, 750 instead of 500.
+            // The same tap time scores more with the doubled window: at the base window, 600 instead of 200
+            // (speedPenalty 0.8: 1 - 0.8 x 1/2 and 1 - 0.8).
             var a = f.Choice("c1", f.Right, f.WindowMs).OfType<AnswerLocked>().Single();
             var b = f.Choice("c2", f.Right, f.WindowMs).OfType<AnswerLocked>().Single();
-            Assert.That(a.Points, Is.EqualTo(500));
-            Assert.That(b.Points, Is.EqualTo(750));
+            Assert.That(a.Points, Is.EqualTo(200));
+            Assert.That(b.Points, Is.EqualTo(600));
         }
     }
 }

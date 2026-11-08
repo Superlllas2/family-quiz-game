@@ -139,10 +139,12 @@ namespace FamilyQuiz.Net
             if (player == null) return;
             Send(conn, new WelcomeMessage { PlayerId = player.PlayerId, Token = player.Token, Room = _roomCode() });
             Send(conn, new SnapshotMessage { Player = _screens.Player(player), Screen = _screens.CurrentScreen(player) });
-            // A reload under a sabotage that was not cleared yet gets the overlay back.
+            // A reload under sabotage gets back every effect not cleared yet, in order (D145: one after another).
             var turn = player.Turn;
-            if (_game.State.Phase == GamePhase.Answer && turn != null && turn.Effect != null && !turn.EffectCleared && !turn.Locked)
-                Send(conn, new EffectMessage { Effect = turn.Effect, From = turn.EffectFrom, Params = EffectParams(turn.Effect) });
+            if (_game.State.Phase == GamePhase.Answer && turn != null && !turn.Locked)
+                foreach (var effect in turn.Effects)
+                    if (!effect.Cleared)
+                        Send(conn, new EffectMessage { Effect = effect.PowerUp, From = effect.AttackerName, Params = EffectParams(effect.PowerUp) });
         }
 
         /// <summary>The player list or ready marks changed: every lobby screen shows them (D76). Game screens list nobody (D88).</summary>

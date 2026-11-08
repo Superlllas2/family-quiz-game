@@ -176,7 +176,8 @@ namespace FamilyQuiz.Tests.TvParts
             var s = new GameState();
             var p = Player(s, "a", true);
             Assert.IsNull(PowerUpHit.For(p, GamePhase.Answer));
-            p.Turn = new PlayerTurn { Effect = PowerUpTypes.Freeze, EffectFrom = "Dad" };
+            p.Turn = new PlayerTurn();
+            p.Turn.AddEffect(PowerUpTypes.Freeze, "Dad");
             var hit = PowerUpHit.For(p, GamePhase.Answer);
             Assert.AreEqual(PowerUpTypes.Freeze, hit.PowerUp);
             Assert.AreEqual("Dad", hit.AttackerName);
@@ -188,7 +189,8 @@ namespace FamilyQuiz.Tests.TvParts
         {
             var s = new GameState();
             var p = Player(s, "a", true);
-            p.Turn = new PlayerTurn { Effect = PowerUpTypes.Freeze, EffectFrom = "Dad" }; // last question's: not shown any more
+            p.Turn = new PlayerTurn();
+            p.Turn.AddEffect(PowerUpTypes.Freeze, "Dad"); // last question's: not shown any more
             Assert.IsNull(PowerUpHit.For(p, GamePhase.Reveal));
             p.MutablePendingEffects.Add(new PendingEffect(PowerUpTypes.Slime, "m", "Mum"));
             p.MutablePendingEffects.Add(new PendingEffect(PowerUpTypes.Fog, "g", "Gran"));

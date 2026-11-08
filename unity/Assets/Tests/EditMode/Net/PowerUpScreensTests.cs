@@ -110,7 +110,8 @@ namespace FamilyQuiz.Tests.NetScreens
             Assert.That((string)waiting["data"]["locked"], Is.EqualTo(names[powerUp] + " → Papa"));
             var kid = Last("c3");
             Assert.That((string)kid["id"], Is.EqualTo("result"));
-            Assert.That(kid["data"]["targets"].Single(t => (string)t["playerId"] == "p2")["available"].Value<bool>(), Is.False);
+            // One hit of powerUps.maxHitsPerQuestion (3, D145): Papa can still be hit by the others.
+            Assert.That(kid["data"]["targets"].Single(t => (string)t["playerId"] == "p2")["available"].Value<bool>(), Is.True);
 
             // Scores keeps the screens and the phaseId.
             Step(_f.RevealMs);

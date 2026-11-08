@@ -21,7 +21,7 @@
     "formatOrder": ["multipleChoice", "multipleChoice", "multipleChoice", "closestValue"]
   },
   "topics": { "doors": 4, "minUnseenToOffer": 4, "mixedTopicId": "mixed" },
-  "scoring": { "maxPoints": 1000, "speedPenalty": 0.5, "roundTo": 10, "fastAnswerMs": 2000 },
+  "scoring": { "maxPoints": 1000, "speedPenalty": 0.8, "roundTo": 10, "fastAnswerMs": 2000 },
   "closestValue": { "closestBonus": 200, "minPoints": 100, "exactShare": 0.05 },
   "powerUps": {
     "enabled": true,
@@ -29,17 +29,17 @@
     "targeting": "free",
     "drawChanceLeader": 0.3,
     "maxHeld": 1,
-    "maxHitsPerQuestion": 1,
+    "maxHitsPerQuestion": 3,
     "immunityQuestions": 1,
     "onPhone": true,
-    "freeze": { "taps": 6 },
-    "slime": { "blobs": 3 },
-    "fog": { "seconds": 3 }
+    "freeze": { "taps": 10 },
+    "slime": { "blobs": 5 },
+    "fog": { "seconds": 6 }
   },
   "race": {
-    "maxHeadStart": 3,
-    "finishSteps": 10,
-    "maxQuestions": 12,
+    "maxHeadStart": 4,
+    "finishSteps": 15,
+    "maxQuestions": 20,
     "stepsPerCorrect": 1,
     "answer": 12,
     "reveal": 2

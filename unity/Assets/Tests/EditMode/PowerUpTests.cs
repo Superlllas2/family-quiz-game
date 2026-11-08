@@ -246,15 +246,72 @@ namespace FamilyQuiz.Tests
         // ---------------------------------------------------------------- caps and immunity
 
         [Test]
-        public void OneHitPerTargetPerQuestion()
+        public void UpToMaxHitsPerTargetPerQuestion()
         {
-            var (f, seats) = FirstPickWindow();
-            Assert.That(LobbyFixture.AckOf(f.UsePowerUp("c1", seats[0].HeldPowerUp, seats[1].PlayerId)).Ok, Is.True);
-            var targets = f.Game.PowerUpTargets(seats[2]);
-            Assert.That(targets.Single(t => t.Target == seats[1]).Available, Is.False, "already hit: greyed");
-            Assert.That(targets.Single(t => t.Target == seats[0]).Available, Is.True);
-            Assert.That(LobbyFixture.AckOf(f.UsePowerUp("c3", seats[2].HeldPowerUp, seats[1].PlayerId)).Reason, Is.EqualTo(AckReasons.Immune));
-            Assert.That(LobbyFixture.AckOf(f.UsePowerUp("c3", seats[2].HeldPowerUp, seats[0].PlayerId)).Ok, Is.True);
+            // D145: up to powerUps.maxHitsPerQuestion (3) hits on one target per question, so players can gang up.
+            var (f, seats) = GangPickWindow();
+            int max = f.Config.PowerUps.MaxHitsPerQuestion;
+            Assert.That(max, Is.EqualTo(3));
+            var target = seats[4];
+            for (int i = 1; i <= max; i++)
+            {
+                Assert.That(f.Game.PowerUpTargets(seats[0]).Single(t => t.Target == target).Available, Is.True, "hit " + i + " still open");
+                Assert.That(LobbyFixture.AckOf(f.UsePowerUp("c" + (i + 1), seats[i].HeldPowerUp, target.PlayerId)).Ok, Is.True, "hit " + i);
+            }
+
+            Assert.That(f.Game.PowerUpTargets(seats[0]).Single(t => t.Target == target).Available, Is.False, "full: greyed");
+            Assert.That(f.Game.PowerUpTargets(seats[0]).Single(t => t.Target == seats[1]).Available, Is.True);
+            Assert.That(LobbyFixture.AckOf(f.UsePowerUp("c1", seats[0].HeldPowerUp, target.PlayerId)).Reason, Is.EqualTo(AckReasons.Immune));
+            Assert.That(target.PendingEffects.Count, Is.EqualTo(max));
+        }
+
+        [Test]
+        public void EveryHitLandsAndTheyAreClearedOneAfterAnother()
+        {
+            // D145: the effects on one phone play one after another, in the order they were used.
+            var (f, seats) = GangPickWindow();
+            var target = seats[4];
+            var used = new[] { seats[1].HeldPowerUp, seats[2].HeldPowerUp, seats[3].HeldPowerUp };
+            for (int i = 1; i <= 3; i++) f.UsePowerUp("c" + (i + 1), seats[i].HeldPowerUp, target.PlayerId);
+            f.RunUntilPhase(GamePhase.QuestionShow, 60000);
+            var events = f.Advance(f.QuestionShowMs);
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Answer));
+            var applied = events.OfType<PowerUpApplied>().ToList();
+            Assert.That(applied.Select(a => a.PowerUp), Is.EqualTo(used));
+            Assert.That(applied.Select(a => a.AttackerName), Is.EqualTo(new[] { "P2", "P3", "P4" }));
+            Assert.That(target.Turn.Effects.Select(e => e.PowerUp), Is.EqualTo(used));
+            Assert.That(target.Turn.Effect, Is.EqualTo(used[0]), "the first one shows first");
+            Assert.That(target.Turn.EffectFrom, Is.EqualTo("P2"));
+
+            long answer = f.State.PhaseId;
+            for (int i = 0; i < 3; i++)
+            {
+                Assert.That(target.Turn.EffectCleared, Is.False, "not all cleared before " + i);
+                var later = used.Skip(i + 1).FirstOrDefault(u => u != used[i]);
+                if (later != null)
+                    Assert.That(LobbyFixture.AckOf(f.Send(new ClearEffect("c5", f.NextInputId(), answer, later, 100))).Reason,
+                        Is.EqualTo(AckReasons.Invalid), "a later one first");
+                var cleared = f.Send(new ClearEffect("c5", f.NextInputId(), answer, used[i], 1000 + i));
+                Assert.That(LobbyFixture.AckOf(cleared).Ok, Is.True, "clear " + i);
+                Assert.That(cleared.OfType<EffectCleared>().Single().Effect, Is.EqualTo(used[i]));
+            }
+
+            Assert.That(target.Turn.EffectCleared, Is.True);
+            Assert.That(target.Turn.Effects.All(e => e.Cleared), Is.True);
+            Assert.That(LobbyFixture.AckOf(f.Send(new ClearEffect("c5", f.NextInputId(), answer, used[2], 10))).Reason,
+                Is.EqualTo(AckReasons.Invalid), "nothing left");
+        }
+
+        /// <summary>Q1 of a drawing game with five players: c1 to c4 right (all draw), c5 wrong. Reveal is open.</summary>
+        private static (LobbyFixture F, PlayerState[] Seats) GangPickWindow()
+        {
+            var f = Drawing();
+            var seats = f.ToFirstAnswer(5);
+            for (int i = 1; i <= 4; i++) f.Choice("c" + i, f.Right, 500 * i);
+            f.Choice("c5", f.Wrong, 1000);
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Reveal));
+            Assert.That(seats.Take(4).All(p => p.HeldPowerUp != null), Is.True);
+            return (f, seats);
         }
 
         [Test]

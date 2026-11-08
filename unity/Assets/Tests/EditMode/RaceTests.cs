@@ -17,29 +17,31 @@ namespace FamilyQuiz.Tests
 
         // ---------------------------------------------------------------- head starts
 
-        [TestCase(2, 1, 3)]
+        // race.maxHeadStart 4 (D146): floor(4 x rankFromBottom / (players - 1)).
+        [TestCase(2, 1, 4)]
         [TestCase(2, 2, 0)]
-        [TestCase(3, 1, 3)]
-        [TestCase(3, 2, 1)]
+        [TestCase(3, 1, 4)]
+        [TestCase(3, 2, 2)]
         [TestCase(3, 3, 0)]
         [TestCase(4, 2, 2)]
         [TestCase(4, 3, 1)]
-        [TestCase(6, 2, 2)]
+        [TestCase(6, 2, 3)]
         [TestCase(6, 5, 0)]
         [TestCase(6, 6, 0)]
-        [TestCase(8, 4, 1)]
+        [TestCase(8, 4, 2)]
         public void HeadStartFollowsTheFormula(int players, int rank, int expected)
         {
+            Assert.That(Race.MaxHeadStart, Is.EqualTo(4));
             Assert.That(RaceRules.HeadStart(rank, players, Race.MaxHeadStart), Is.EqualTo(expected));
         }
 
         [Test]
         public void TiedPlayersShareTheHigherHeadStartOfTheirGroup()
         {
-            // Scores 900, 900, 400 give ranks 1, 1, 3: head starts 3, 3, 0.
-            Assert.That(new[] { 1, 1, 3 }.Select(r => RaceRules.HeadStart(r, 3, Race.MaxHeadStart)), Is.EqualTo(new[] { 3, 3, 0 }));
-            // 500, 400, 400, 0: ranks 1, 2, 2, 4: 3, 2, 2, 0.
-            Assert.That(new[] { 1, 2, 2, 4 }.Select(r => RaceRules.HeadStart(r, 4, Race.MaxHeadStart)), Is.EqualTo(new[] { 3, 2, 2, 0 }));
+            // Scores 900, 900, 400 give ranks 1, 1, 3: head starts 4, 4, 0.
+            Assert.That(new[] { 1, 1, 3 }.Select(r => RaceRules.HeadStart(r, 3, Race.MaxHeadStart)), Is.EqualTo(new[] { 4, 4, 0 }));
+            // 500, 400, 400, 0: ranks 1, 2, 2, 4: 4, 2, 2, 0.
+            Assert.That(new[] { 1, 2, 2, 4 }.Select(r => RaceRules.HeadStart(r, 4, Race.MaxHeadStart)), Is.EqualTo(new[] { 4, 2, 2, 0 }));
         }
 
         [Test]
@@ -180,22 +182,22 @@ namespace FamilyQuiz.Tests
             f.Choice("c3", f.Wrong, 0);
             var events = f.SkipTo(GamePhase.FinalIntro);
             var started = events.OfType<RaceStarted>().Single();
-            Assert.That(started.HeadStarts[seats[0].PlayerId], Is.EqualTo(3));
-            Assert.That(started.HeadStarts[seats[1].PlayerId], Is.EqualTo(1));
+            Assert.That(started.HeadStarts[seats[0].PlayerId], Is.EqualTo(4));
+            Assert.That(started.HeadStarts[seats[1].PlayerId], Is.EqualTo(2));
             Assert.That(started.HeadStarts[seats[2].PlayerId], Is.EqualTo(0));
             Assert.That(started.LastPlaceCanWin, Is.True);
-            Assert.That(f.State.Race.Positions[seats[0].PlayerId], Is.EqualTo(3));
+            Assert.That(f.State.Race.Positions[seats[0].PlayerId], Is.EqualTo(4));
             Assert.That(f.State.PhaseEndsAtMs - f.State.PhaseStartedAtMs, Is.EqualTo(f.FinalIntroMs));
         }
 
         [Test]
-        public void OnlyTwoPlayersLeaderThreeOtherZeroAndEqualScoresBothThree()
+        public void OnlyTwoPlayersLeaderMaxOtherZeroAndEqualScoresBothMax()
         {
             var (f, seats) = ToFinalIntro(2, 1);
-            Assert.That(f.State.Race.HeadStarts.Values, Is.EqualTo(new[] { 3, 0 }));
+            Assert.That(f.State.Race.HeadStarts.Values, Is.EqualTo(new[] { 4, 0 }));
 
             var (g, _) = ToFinalIntro(2, 0);
-            Assert.That(g.State.Race.HeadStarts.Values, Is.EqualTo(new[] { 3, 3 }));
+            Assert.That(g.State.Race.HeadStarts.Values, Is.EqualTo(new[] { 4, 4 }));
             Assert.That(g.State.Race.LastPlaceCanWin, Is.True);
         }
 
@@ -210,7 +212,7 @@ namespace FamilyQuiz.Tests
             f.Choice("c2", f.Right, 500);
             f.Choice("c3", f.Wrong, 0);
             f.SkipTo(GamePhase.FinalIntro);
-            Assert.That(seats.Select(p => f.State.Race.HeadStarts[p.PlayerId]), Is.EqualTo(new[] { 3, 3, 0 }));
+            Assert.That(seats.Select(p => f.State.Race.HeadStarts[p.PlayerId]), Is.EqualTo(new[] { 4, 4, 0 }));
         }
 
         [Test]

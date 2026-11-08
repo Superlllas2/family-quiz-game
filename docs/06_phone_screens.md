@@ -53,7 +53,7 @@ The phone is an input device (D88): it shows a screen only when the player has s
 join -> pickCharacter -> lobby -> countdown -> watch (intro)
   -> [ topicVote -> waiting
        -> 4 x ( watch -> answerChoice | answerSlider -> waiting -> watch or result ) -> watch ] x 4
-  -> watch (final intro) -> up to 12 x ( answerTrueFalse -> waiting -> watch )
+  -> watch (final intro) -> up to 20 x ( answerTrueFalse -> waiting -> watch )
   -> results (winner) or watch -> poll -> pollDone -> lobby (everyone Ready again: countdown -> topicVote)
 countdown -> Not ready -> back to lobby.
 Back to lobby (TV settings panel) sends every phone to lobby from any screen.

@@ -91,6 +91,9 @@ namespace FamilyQuiz.Tests
             return extra ?? answer;
         }
 
+        private long _clearChainPhaseId;
+        private long _clearChainFromMs;
+
         /// <summary>
         /// The time of the extra input of this phase, or null: a power up in Reveal or Scores (0.3 to 5 s after Reveal
         /// starts, inside the 7 s window), the effect clear in Answer (1 to 3 s after the options appear), the poll
@@ -113,7 +116,8 @@ namespace FamilyQuiz.Tests
             if (_extraPhaseId != state.PhaseId)
             {
                 _extraPhaseId = state.PhaseId;
-                long start = state.Phase == GamePhase.Scores ? state.PhaseStartedAtMs : state.PhaseStartedAtMs;
+                // Several effects (D145) clear one after another: the next one counts from when the last was cleared.
+                long start = clear && _clearChainPhaseId == state.PhaseId ? _clearChainFromMs : state.PhaseStartedAtMs;
                 long delay = pick ? 300 + _random.Next(4700) : clear ? 1000 + _random.Next(2001) : 3000 + _random.Next(27001);
                 _extraAtMs = start + delay;
                 if (pick && state.Phase == GamePhase.Scores && _extraAtMs >= state.PhaseEndsAtMs) _extraAtMs = state.PhaseEndsAtMs - 1;
@@ -200,9 +204,15 @@ namespace FamilyQuiz.Tests
             {
                 case GamePhase.Answer:
                     // The effect took the planned time to clear; an answer planned before then comes right after it.
-                    long cleared = game.NowMs - state.PhaseStartedAtMs;
+                    long shownFrom = _clearChainPhaseId == state.PhaseId ? _clearChainFromMs : state.PhaseStartedAtMs;
+                    long cleared = game.NowMs - shownFrom;
+                    long sinceOptions = game.NowMs - state.PhaseStartedAtMs;
                     if (_plannedAtMs.HasValue && _plannedAtMs.Value < game.NowMs + 1) _plannedAtMs = game.NowMs + 1;
-                    if (_delayMs < cleared + 1) _delayMs = cleared + 1;
+                    if (_delayMs < sinceOptions + 1) _delayMs = sinceOptions + 1;
+                    // The next effect (if any) shows now and gets its own clear time.
+                    _clearChainPhaseId = state.PhaseId;
+                    _clearChainFromMs = game.NowMs;
+                    _extraPhaseId = -1;
                     return new ClearEffect(Conn, inputId, state.PhaseId, me.Turn.Effect, cleared);
                 case GamePhase.Poll:
                     var answers = new Dictionary<string, object>();

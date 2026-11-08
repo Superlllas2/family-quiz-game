@@ -74,11 +74,11 @@ namespace FamilyQuiz.Tests
 
             Assert.That(seats[0].Score, Is.EqualTo(1000));
             Assert.That(seats[1].Score, Is.EqualTo(0));
-            Assert.That(seats[2].Score, Is.EqualTo(500));
+            Assert.That(seats[2].Score, Is.EqualTo(200)); // at the buzzer: 1000 x (1 - 0.8)
             Assert.That(seats.Select(p => p.Streak), Is.EqualTo(new[] { 1, 0, 1 }));
             Assert.That(seats.Select(p => p.CorrectCount), Is.EqualTo(new[] { 1, 0, 1 }));
             Assert.That(seats.Select(p => p.Turn.Correct), Is.EqualTo(new[] { true, false, true }));
-            Assert.That(seats.Select(p => p.Turn.Points), Is.EqualTo(new[] { 1000, 0, 500 }));
+            Assert.That(seats.Select(p => p.Turn.Points), Is.EqualTo(new[] { 1000, 0, 200 }));
             Assert.That(seats.All(p => p.Turn.Revealed), Is.True);
 
             var changes = events.OfType<ScoreChanged>().ToList();
@@ -304,7 +304,7 @@ namespace FamilyQuiz.Tests
             var locked = f.Choice("c1", f.Right, f.WindowMs * 3).OfType<AnswerLocked>().Single();
             Assert.That(locked.Ms, Is.EqualTo(f.WindowMs));
             Assert.That(seats[0].Turn.RawMs, Is.EqualTo(f.WindowMs * 3));
-            Assert.That(locked.Points, Is.EqualTo(500));
+            Assert.That(locked.Points, Is.EqualTo(200));
         }
 
         // ---------------------------------------------------------------- last call (D74)

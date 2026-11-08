@@ -326,14 +326,16 @@ namespace FamilyQuiz.Core.Show
             if (cmd.PhaseId != _state.PhaseId)
                 return _closedInputPhaseId != 0 && cmd.PhaseId == _closedInputPhaseId ? AckReasons.Closed : AckReasons.Stale;
             var turn = player.Turn;
-            if (_state.Phase != GamePhase.Answer || turn == null || turn.Effect == null || turn.EffectCleared) return AckReasons.Invalid;
-            if (cmd.Effect != turn.Effect || !cmd.Ms.HasValue || cmd.Ms.Value < 0) return AckReasons.Invalid;
+            var current = turn?.CurrentEffect;
+            if (_state.Phase != GamePhase.Answer || current == null) return AckReasons.Invalid;
+            if (cmd.Effect != current.PowerUp || !cmd.Ms.HasValue || cmd.Ms.Value < 0) return AckReasons.Invalid;
             return null;
         }
 
+        /// <summary>Clears the effect showing now; the next one (if any) shows on the phone after it (D145).</summary>
         public void ApplyClearEffect(PlayerState player, ClearEffect cmd, List<IGameEvent> output)
         {
-            player.Turn.EffectCleared = true;
+            player.Turn.CurrentEffect.Cleared = true;
             output.Add(new EffectCleared(player.PlayerId, cmd.Effect, cmd.Ms.Value));
         }
 
@@ -364,8 +366,7 @@ namespace FamilyQuiz.Core.Show
                 if (p.PendingEffects.Count == 0 || p.Turn == null) continue;
                 foreach (var effect in p.PendingEffects)
                 {
-                    p.Turn.Effect = effect.PowerUp;
-                    p.Turn.EffectFrom = effect.AttackerName;
+                    p.Turn.AddEffect(effect.PowerUp, effect.AttackerName);
                     output.Add(new PowerUpApplied(p.PlayerId, effect.AttackerId, effect.AttackerName, effect.PowerUp, _state.PhaseId));
                 }
 

@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace FamilyQuiz.Core.State
 {
     /// <summary>
@@ -64,14 +67,27 @@ namespace FamilyQuiz.Core.State
         /// <summary>Closest value: one of the closest guesses (gets the closest bonus and the crown).</summary>
         public bool Closest { get; internal set; }
 
-        /// <summary>The power up that landed on this player when this Answer phase started, or null (one per question, maxHitsPerQuestion).</summary>
-        public string Effect { get; internal set; }
+        /// <summary>
+        /// The power ups that landed on this player when this Answer phase started, in the order they were used
+        /// (up to powerUps.maxHitsPerQuestion). The phone clears them one after another (D145).
+        /// </summary>
+        public IReadOnlyList<TurnEffect> Effects => _effects;
+
+        private readonly List<TurnEffect> _effects = new List<TurnEffect>();
+
+        internal void AddEffect(string powerUp, string attackerName) => _effects.Add(new TurnEffect(powerUp, attackerName));
+
+        /// <summary>The effect the phone shows now: the first one not cleared yet, or null.</summary>
+        public TurnEffect CurrentEffect => _effects.FirstOrDefault(e => !e.Cleared);
+
+        /// <summary>The power up showing now, or the last one once all are cleared; null when nothing landed.</summary>
+        public string Effect => (CurrentEffect ?? _effects.LastOrDefault())?.PowerUp;
 
         /// <summary>The attacker name of <see cref="Effect"/>.</summary>
-        public string EffectFrom { get; internal set; }
+        public string EffectFrom => (CurrentEffect ?? _effects.LastOrDefault())?.AttackerName;
 
-        /// <summary>True once the phone reported the effect cleared (input effectCleared).</summary>
-        public bool EffectCleared { get; internal set; }
+        /// <summary>True once the phone reported every effect cleared (input effectCleared).</summary>
+        public bool EffectCleared => _effects.Count > 0 && CurrentEffect == null;
 
         /// <summary>Closest value: the closest bonus included in Points (multiplier applied), else 0.</summary>
         public int Bonus { get; internal set; }
