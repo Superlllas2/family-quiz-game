@@ -49,6 +49,17 @@ namespace FamilyQuiz.Presentation
             UiBuilder.Fit(_fact, 20, large ? 40 : 32, large ? 4 : 3);
         }
 
+        /// <summary>
+        /// Answer of a multiple choice question (D141): the options are on the phones only, so the question is the one
+        /// thing to read on the TV and gets bigger type (up to 3 lines) on the larger card (TvLayout.AnswerCardLarge).
+        /// </summary>
+        public void SetAnswerLarge()
+        {
+            _large = false;
+            UiBuilder.Fit(_question, 34, 56, 3);
+            UiBuilder.Fit(_fact, 20, 32, 3);
+        }
+
         /// <summary>The front: question, topic ribbon, coin and the sticker (null multiplier hides it).</summary>
         public void ShowFront(string question, string topic, string coinNumber, string coinLabel, string multiplier)
         {

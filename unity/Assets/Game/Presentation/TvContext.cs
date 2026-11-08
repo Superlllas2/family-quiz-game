@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using FamilyQuiz.Core;
+using FamilyQuiz.Core.Events;
 using FamilyQuiz.Core.Content;
 using UnityEngine;
 
@@ -17,6 +18,9 @@ namespace FamilyQuiz.Presentation
 
         /// <summary>The game, or null before Attach (content error path).</summary>
         public Game Game { get; private set; }
+
+        /// <summary>The power ups drawn at this question's Reveal (PowerUpDrawn), for the TV's "why" tags (D145). The presenter fills and clears it.</summary>
+        public List<PowerUpDrawn> Draws { get; } = new List<PowerUpDrawn>();
 
         public string Lang => Game != null ? Game.State.GameLanguage : _lang;
 
@@ -58,11 +62,23 @@ namespace FamilyQuiz.Presentation
             return _strings.Format(key, Lang, new Dictionary<string, string> { { name1, value1 }, { name2, value2 } });
         }
 
-        /// <summary>A power up marker's text: "Dad → Freeze" (docs/03_rules.md, "Using").</summary>
+        public string Format(string key, string name1, string value1, string name2, string value2, string name3, string value3)
+        {
+            if (_strings == null) return string.Empty;
+            return _strings.Format(key, Lang, new Dictionary<string, string> { { name1, value1 }, { name2, value2 }, { name3, value3 } });
+        }
+
+        /// <summary>A power up hit's text: "Аня → Слизь → Соня" (docs/03_rules.md, "Using"; D145).</summary>
         public string HitText(PowerUpHit hit)
         {
             if (hit == null) return string.Empty;
-            return Format("tv.powerUps.hit", "name", hit.AttackerName, "powerUp", T("tv.powerUps." + hit.PowerUp));
+            return Format("tv.powerUps.hit", "name", hit.AttackerName, "powerUp", T("tv.powerUps." + hit.PowerUp), "target", hit.TargetName);
+        }
+
+        /// <summary>A power up draw's two lines: "Аня получает: Слизь" and why (D145).</summary>
+        public (string Title, string Reason) DrawText(string name, string powerUp, int rankBefore)
+        {
+            return (Format("tv.powerUps.drawn", "name", name, "powerUp", T("tv.powerUps." + powerUp)), T(PowerUpDrawReason.Key(rankBefore)));
         }
 
         /// <summary>The character's signature color from content/characters.json.</summary>

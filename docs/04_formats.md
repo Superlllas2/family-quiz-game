@@ -9,12 +9,12 @@ Game night 1 has three formats: multiple choice and closest value in rounds, tru
 | | |
 | --- | --- |
 | Used in | Round slots 1 to 3 |
-| TV | Question at the top (max 2 lines), four option tiles in a 2x2 grid labelled A, B, C, D, countdown bar, character chips along the bottom |
+| TV | The question, large, and four empty tiles in a 2x2 grid labelled A, B, C, D in the phone's colours: the option texts are on the phones only (D141). Countdown, players' tokens |
 | Phone | During QuestionShow: question text only. During Answer: four big buttons in a 2x2 grid, same order, letter and color as the TV, option text on each button |
 | Timer | 20 s (D140) times the player's timer multiplier, ends early when all locked in. Last call is off (`timers.lastCallEnabled`, D119) |
 | Input | One tap locks the answer. No changing after the tap |
 | Scoring | Speed curve, 500 to 1,000 points times the multiplier (`03_rules.md`) |
-| Reveal | Correct tile turns green and grows, wrong tiles fade; each phone shows its own result |
+| Reveal | The option texts appear on the tiles; the correct tile grows with a cream halo and the stamp, wrong tiles fade; each player sits on the tile they chose with token, name and points (D142); each phone shows its own result |
 | Options order | Shuffled per question with the seeded random generator; the same order on TV and all phones |
 
 ## Closest value in a range (`closestValue`)

@@ -40,8 +40,17 @@ namespace FamilyQuiz.Presentation
         /// <summary>Answer and Reveal: the question card under the guests.</summary>
         public static readonly Rect AnswerCard = new Rect(307f, 246f, 1306f, 146f);
 
-        /// <summary>Answer and Reveal: the four tiles, two by two, under the card.</summary>
+        /// <summary>Reveal: the four tiles with their texts, two by two, under the card.</summary>
         public static readonly Rect Tiles = new Rect(307f, 27f, 1306f, 196f);
+
+        /// <summary>
+        /// Answer of a multiple choice question (D141): the options are on the phones only, so the card grows and the
+        /// tiles under it are empty, A to D in the phone's 2 x 2 layout and colours. Reveal goes back to AnswerCard and Tiles.
+        /// </summary>
+        public static readonly Rect AnswerCardLarge = new Rect(307f, 200f, 1306f, 192f);
+
+        /// <summary>Answer of a multiple choice question (D141): the four empty tiles under the large card.</summary>
+        public static readonly Rect TilesEmpty = new Rect(307f, 27f, 1306f, 158f);
 
         /// <summary>A closest value question's ruler in Answer, and its pins and flag on Reveal.</summary>
         public static readonly Rect Ruler = new Rect(150f, 27f, 1620f, 186f);
@@ -87,6 +96,7 @@ namespace FamilyQuiz.Presentation
             return new[]
             {
                 new[] { Hosts, Status, ShowCard, ShowRuler },
+                new[] { Hosts, Status, Side, AnswerCardLarge, TilesEmpty },
                 new[] { Hosts, Status, Side, AnswerCard, Tiles },
                 new[] { Hosts, Status, Side, AnswerCard, Ruler },
                 new[] { Hosts, Status, Side, RulerReveal },

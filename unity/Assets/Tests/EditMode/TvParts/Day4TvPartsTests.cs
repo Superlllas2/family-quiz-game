@@ -168,36 +168,6 @@ namespace FamilyQuiz.Tests.TvParts
             Assert.IsFalse(SettingsChoices.TypeDiffers(s, PowerUpTypes.Slime));
         }
 
-        // ------------------------------------------------------------ power up markers
-
-        [Test]
-        public void InAnswerTheMarkerShowsTheEffectThatLanded()
-        {
-            var s = new GameState();
-            var p = Player(s, "a", true);
-            Assert.IsNull(PowerUpHit.For(p, GamePhase.Answer));
-            p.Turn = new PlayerTurn();
-            p.Turn.AddEffect(PowerUpTypes.Freeze, "Dad");
-            var hit = PowerUpHit.For(p, GamePhase.Answer);
-            Assert.AreEqual(PowerUpTypes.Freeze, hit.PowerUp);
-            Assert.AreEqual("Dad", hit.AttackerName);
-            Assert.IsNull(PowerUpHit.For(p, GamePhase.QuestionShow));
-        }
-
-        [Test]
-        public void InRevealAndScoresTheMarkerShowsTheNewestPendingHit()
-        {
-            var s = new GameState();
-            var p = Player(s, "a", true);
-            p.Turn = new PlayerTurn();
-            p.Turn.AddEffect(PowerUpTypes.Freeze, "Dad"); // last question's: not shown any more
-            Assert.IsNull(PowerUpHit.For(p, GamePhase.Reveal));
-            p.MutablePendingEffects.Add(new PendingEffect(PowerUpTypes.Slime, "m", "Mum"));
-            p.MutablePendingEffects.Add(new PendingEffect(PowerUpTypes.Fog, "g", "Gran"));
-            Assert.AreEqual(PowerUpTypes.Fog, PowerUpHit.For(p, GamePhase.Reveal).PowerUp);
-            Assert.AreEqual("Gran", PowerUpHit.For(p, GamePhase.Scores).AttackerName);
-            Assert.IsNull(PowerUpHit.For(p, GamePhase.RoundEnd));
-            Assert.IsNull(PowerUpHit.For(null, GamePhase.Scores));
-        }
+        // Power up markers: D0026TvPartsTests (every hit, attacker, power up and target).
     }
 }

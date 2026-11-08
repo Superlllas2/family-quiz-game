@@ -161,6 +161,7 @@ namespace FamilyQuiz.Presentation
                 switch (e)
                 {
                     case PhaseStarted started:
+                        if (started.Phase != GamePhase.Reveal && started.Phase != GamePhase.Scores) _context.Draws.Clear();
                         Enter(started.Phase);
                         dirty = false; // Enter draws the whole view
                         break;
@@ -179,6 +180,11 @@ namespace FamilyQuiz.Presentation
                         break;
                     case PowerUpApplied _:
                         if (_phase == GamePhase.Answer) _question.RefreshHits();
+                        break;
+                    case PowerUpDrawn drawn:
+                        _context.Draws.Add(drawn);
+                        if (_phase == GamePhase.Reveal) _question.RefreshHits();
+                        else if (_phase == GamePhase.Scores) _leaderboard.RefreshHits();
                         break;
                     case PowerUpUsed _:
                         if (_phase == GamePhase.Reveal) _question.RefreshHits();

@@ -63,7 +63,8 @@ On closest value questions the same effects cover the slider instead of the butt
 
 - The pick window is Reveal plus Scores. Both show the same result screen with the same phaseId, so a pick during Scores is valid. The phone shows the held power up; the player taps it, then taps a target. Two taps.
 - If the player does not pick, they keep it for a later question. Unused power ups are lost at the end of round 4.
-- The effect lands on the target's phone at the start of the next Answer phase. The TV shows a small icon next to the target's character and the attacker's name ("Dad → Freeze"), and fires the `powerUpUsed` host line trigger.
+- The effect lands on the target's phone at the start of the next Answer phase. Several effects on one phone play one after another, in the order they were used; the phone clears them in that order (D145). The TV shows one tag per hit with attacker, power up and target ("Аня → Слизь → Соня", D145), and fires the `powerUpUsed` host line trigger.
+- When a player draws a power up at Reveal, the TV says why on a tag in the power up's colour, as long as they hold it: "Аня получает: Слизь" and "За верный ответ", plus "Кто позади лидера, получает чаще" for a player who was not the leader (D145).
 - **Targeting:** free by default (`powerUps.targeting` = `free`): any other player. With `aimUp`, only players with a better rank than yours; tied players cannot target each other, and a leader cannot attack (in game night 1 the leader just keeps the power up).
 - **Caps:** at most 3 effects per target per question (`powerUps.maxHitsPerQuestion`, D145), so players can gang up on the leader. A target that is already hit, or immune, shows greyed out. After being hit, a player is immune for 1 question (`powerUps.immunityQuestions`).
 - Using a power up on the last question of round 4 does nothing; the pick window is hidden on that question.

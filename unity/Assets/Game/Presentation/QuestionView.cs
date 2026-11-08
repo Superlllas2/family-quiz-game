@@ -13,12 +13,15 @@ namespace FamilyQuiz.Presentation
     /// <list type="bullet">
     /// <item>QuestionShow: the question card, large, on the board of the Stage shot, with the read time burning down its
     /// fuse; a closest value question shows its ruler under it.</item>
-    /// <item>Answer: the card, small, under the guests of the Wide shot, and the four tiles under it (or the ruler); the
-    /// clock token and the players' tokens in the status corner, a token gets its check when its player locks in.
-    /// Never what anyone chose.</item>
-    /// <item>Reveal: the stamp slams onto the right tile, the others sink; each player's token sits on the tile they
-    /// picked and their points show as a sticker under their status token; then the card flips over to "Why?" and the
-    /// fact. A closest value Reveal shows the ruler with every guess on a pin, the flag and the crown instead.</item>
+    /// <item>Answer: the card under the guests of the Wide shot. Multiple choice (D141): the options are on the phones
+    /// only, so the card is larger and the four tiles under it are empty, A to D in the phone's layout and colours. A
+    /// closest value question keeps the small card and its ruler. The clock token and the players' tokens in the
+    /// status corner; a token gets its check when its player locks in. Never what anyone chose.</item>
+    /// <item>Reveal: the card goes back to its small size and the tiles get their texts; the stamp slams onto the right
+    /// tile, which grows and gets a cream halo, the others sink (D142); each player sits on the tile they picked as a
+    /// pill with their token, name and points, and their points also show as a sticker under their status token; then
+    /// the card flips over to "Why?" and the fact. A closest value Reveal shows the ruler with every guess on a pin, the
+    /// flag and the crown instead.</item>
     /// </list>
     /// Power up tags show under the status corner. Reads GameState; changes nothing.
     /// </summary>
@@ -66,22 +69,28 @@ namespace FamilyQuiz.Presentation
             bool closest = question != null && question.IsClosestValue;
             bool fresh = !(reveal && previous == GamePhase.Answer);
 
-            // The card: large on the board, small under the guests; its front each time the question is set up.
-            TvLayout.Put(_card.Rect, show ? TvLayout.ShowCard : TvLayout.AnswerCard);
-            _card.SetLarge(show);
+            // The card: large on the board, larger under the guests while the options are on the phones only (D141),
+            // small on Reveal; its front each time the question is set up.
+            bool bigAnswer = answer && question != null && !closest;
+            TvLayout.Put(_card.Rect, show ? TvLayout.ShowCard : bigAnswer ? TvLayout.AnswerCardLarge : TvLayout.AnswerCard);
+            if (bigAnswer) _card.SetAnswerLarge();
+            else _card.SetLarge(show);
             _card.gameObject.SetActive(!(reveal && closest));
             if (fresh) ShowFront(question);
             if (show || answer) _card.PopIn(show ? 0.2f : 0f);
 
             _tilesRoot.gameObject.SetActive(!show && !closest);
+            TvLayout.Put(_tilesRoot, answer ? TvLayout.TilesEmpty : TvLayout.Tiles);
             _stamp.gameObject.SetActive(false);
-            if (answer || (reveal && fresh))
+            if (answer || reveal)
             {
+                // Answer: empty tiles; Reveal: the texts appear on the tiles (D141).
                 for (int i = 0; i < OptionCount; i++)
                 {
                     bool has = question != null && question.Def.Options != null && i < question.Def.Options.Count;
                     _tiles[i].gameObject.SetActive(has);
-                    _tiles[i].ResetLook(has ? question.OptionText(i, _context.Lang) : string.Empty, answer, 0.15f + 0.08f * i);
+                    _tiles[i].ResetLook(has && reveal ? question.OptionText(i, _context.Lang) : string.Empty, true,
+                        (answer ? 0.15f : 0f) + 0.06f * i);
                 }
             }
 
@@ -219,6 +228,7 @@ namespace FamilyQuiz.Presentation
             _revealApplied = true;
             for (int i = 0; i < state.Players.Count && i < _status.Tokens.Count; i++) _status.Tokens[i].SetLocked(false);
             SetStickers(state, true);
+            if (!closest) SetPicks(state);
             if (closest)
             {
                 _valueLine.Show(state, true);
@@ -262,6 +272,28 @@ namespace FamilyQuiz.Presentation
                 }
 
                 _status.Tokens[i].SetSticker(text, fill, animate, 0.5f + 0.06f * i);
+            }
+        }
+
+        /// <summary>Each player who picked a tile sits on it with token, name and points (D142): top row on the top edge.</summary>
+        private void SetPicks(GameState state)
+        {
+            var byTile = RevealPicks.ByTile(state, OptionCount);
+            var names = new string[state.Players.Count];
+            for (int i = 0; i < names.Length; i++) names[i] = state.Players[i].Name;
+            var labels = TokenLabels.For(names);
+            for (int tile = 0; tile < OptionCount; tile++)
+            {
+                var picks = new List<(string Id, string Label, Color Color, string Name, string Points)>();
+                foreach (var p in byTile[tile])
+                {
+                    string points = p.Points > 0
+                        ? _context.Format("tv.reveal.points", "points", p.Points.ToString())
+                        : _context.T("tv.reveal.zero");
+                    picks.Add((p.PlayerId, labels[p.Seat], _context.ChipColor(p.CharacterId), p.Name, points));
+                }
+
+                _tiles[tile].SetPicks(picks, true, tile < 2);
             }
         }
 
