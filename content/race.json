@@ -898,5 +898,2705 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Jeu_de_paume"
+  },
+  {
+    "id": "race_102",
+    "statement": {
+      "ru": "Клеопатра происходила из греческой, а не египетской династии.",
+      "en": "Cleopatra came from a Greek dynasty, not an Egyptian one."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ptolemaic_dynasty"
+  },
+  {
+    "id": "race_103",
+    "statement": {
+      "ru": "Пока горел Рим, Нерон играл на скрипке.",
+      "en": "While Rome burned, Nero played the violin."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Violin"
+  },
+  {
+    "id": "race_104",
+    "statement": {
+      "ru": "Древние римляне считали штаны одеждой варваров.",
+      "en": "The ancient Romans saw trousers as clothing for barbarians."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Trousers"
+  },
+  {
+    "id": "race_105",
+    "statement": {
+      "ru": "Помпеи засыпало пеплом вулкана Этна.",
+      "en": "Pompeii was buried by ash from Mount Etna."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pompeii"
+  },
+  {
+    "id": "race_106",
+    "statement": {
+      "ru": "Юлия Цезаря в молодости взяли в плен пираты.",
+      "en": "As a young man, Julius Caesar was captured by pirates."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Julius_Caesar"
+  },
+  {
+    "id": "race_107",
+    "statement": {
+      "ru": "Юлий Цезарь был первым римским императором.",
+      "en": "Julius Caesar was the first Roman emperor."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Julius_Caesar"
+  },
+  {
+    "id": "race_108",
+    "statement": {
+      "ru": "Римляне ели сонь — маленьких грызунов — как лакомство.",
+      "en": "The Romans ate dormice, small rodents, as a delicacy."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/European_edible_dormouse"
+  },
+  {
+    "id": "race_109",
+    "statement": {
+      "ru": "Шумеры писали на папирусе.",
+      "en": "The Sumerians wrote on papyrus."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cuneiform"
+  },
+  {
+    "id": "race_110",
+    "statement": {
+      "ru": "Самой древней жалобе покупателя — на плохую медь — почти 4000 лет.",
+      "en": "The oldest known customer complaint, about bad copper, is almost 4,000 years old."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Complaint_tablet_to_Ea-nasir"
+  },
+  {
+    "id": "race_111",
+    "statement": {
+      "ru": "Вавилон стоял на берегу Нила.",
+      "en": "Babylon stood on the banks of the Nile."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Babylon"
+  },
+  {
+    "id": "race_112",
+    "statement": {
+      "ru": "По законам Хаммурапи строителя казнили, если его дом рухнул и убил хозяина.",
+      "en": "Under Hammurabi's laws, a builder was executed if his house fell and killed its owner."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
+  },
+  {
+    "id": "race_113",
+    "statement": {
+      "ru": "У римлян была особая цифра для нуля.",
+      "en": "The Romans had a special numeral for zero."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Roman_numerals"
+  },
+  {
+    "id": "race_114",
+    "statement": {
+      "ru": "«Эпос о Гильгамеше» старше «Илиады» Гомера.",
+      "en": "The Epic of Gilgamesh is older than Homer's Iliad."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh"
+  },
+  {
+    "id": "race_115",
+    "statement": {
+      "ru": "Аристотель был учеником Александра Македонского.",
+      "en": "Aristotle was a pupil of Alexander the Great."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Aristotle"
+  },
+  {
+    "id": "race_116",
+    "statement": {
+      "ru": "У индейцев майя был знак для нуля.",
+      "en": "The Maya had a sign for zero."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/0"
+  },
+  {
+    "id": "race_117",
+    "statement": {
+      "ru": "Римляне обедали, сидя на стульях за высоким столом.",
+      "en": "The Romans dined sitting on chairs at a high table."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Triclinium"
+  },
+  {
+    "id": "race_118",
+    "statement": {
+      "ru": "Ганнибал перевёл через Альпы боевых слонов.",
+      "en": "Hannibal took war elephants across the Alps."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hannibal%27s_crossing_of_the_Alps"
+  },
+  {
+    "id": "race_119",
+    "statement": {
+      "ru": "В древнегреческом театре женщин играли актрисы.",
+      "en": "In ancient Greek theatre, women's roles were played by actresses."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Theatre_of_ancient_Greece"
+  },
+  {
+    "id": "race_120",
+    "statement": {
+      "ru": "Александр Македонский назвал город в честь своего коня.",
+      "en": "Alexander the Great named a city after his horse."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bucephalus"
+  },
+  {
+    "id": "race_121",
+    "statement": {
+      "ru": "Римляне засыпали солью землю разрушенного Карфагена.",
+      "en": "The Romans sowed the land of ruined Carthage with salt."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Salting_the_earth"
+  },
+  {
+    "id": "race_122",
+    "statement": {
+      "ru": "Сократ по приговору суда выпил яд.",
+      "en": "Socrates drank poison as his court sentence."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Trial_of_Socrates"
+  },
+  {
+    "id": "race_123",
+    "statement": {
+      "ru": "Египтяне делили месяц на недели по семь дней.",
+      "en": "The Egyptians divided the month into seven-day weeks."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Egyptian_calendar"
+  },
+  {
+    "id": "race_124",
+    "statement": {
+      "ru": "В Афинах политика могли изгнать голосованием на черепках.",
+      "en": "In Athens a politician could be banished by a vote on pottery shards."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ostracism"
+  },
+  {
+    "id": "race_125",
+    "statement": {
+      "ru": "Викинги пили из черепов поверженных врагов.",
+      "en": "Vikings drank from the skulls of their slain enemies."
+    },
+    "answer": false,
+    "source": "https://blog.oup.com/2016/10/ten-myths-vikings/"
+  },
+  {
+    "id": "race_126",
+    "statement": {
+      "ru": "«Бочка» Диогена на самом деле была огромным глиняным кувшином.",
+      "en": "Diogenes' 'barrel' was really a huge clay jar."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Diogenes"
+  },
+  {
+    "id": "race_127",
+    "statement": {
+      "ru": "Железную деву применяли для пыток в Средние века.",
+      "en": "The iron maiden was used for torture in the Middle Ages."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Iron_maiden"
+  },
+  {
+    "id": "race_128",
+    "statement": {
+      "ru": "Гладиаторы ели в основном ячмень и бобы.",
+      "en": "Gladiators ate mostly barley and beans."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gladiator"
+  },
+  {
+    "id": "race_129",
+    "statement": {
+      "ru": "Существование короля Артура подтверждают документы его времени.",
+      "en": "Documents from his own time confirm that King Arthur existed."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Historicity_of_King_Arthur"
+  },
+  {
+    "id": "race_130",
+    "statement": {
+      "ru": "Жители Византии называли себя римлянами.",
+      "en": "The people of Byzantium called themselves Romans."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Byzantine_Empire"
+  },
+  {
+    "id": "race_131",
+    "statement": {
+      "ru": "В Средние века в Европе уже сажали картошку.",
+      "en": "Potatoes were already grown in medieval Europe."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/History_of_the_potato"
+  },
+  {
+    "id": "race_132",
+    "statement": {
+      "ru": "По легенде, яйца шелкопряда в Византию тайком привезли в бамбуковых посохах.",
+      "en": "Legend says silkworm eggs were smuggled into Byzantium inside bamboo canes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Smuggling_of_silkworm_eggs_into_the_Byzantine_Empire"
+  },
+  {
+    "id": "race_133",
+    "statement": {
+      "ru": "Чингисхан — это имя, данное ему при рождении.",
+      "en": "Genghis Khan was the name he was given at birth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Genghis_Khan"
+  },
+  {
+    "id": "race_134",
+    "statement": {
+      "ru": "Египтяне мумифицировали даже крокодилов.",
+      "en": "The Egyptians mummified even crocodiles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Animal_mummy"
+  },
+  {
+    "id": "race_135",
+    "statement": {
+      "ru": "Тутанхамона похоронили в пирамиде.",
+      "en": "Tutankhamun was buried in a pyramid."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tomb_of_Tutankhamun"
+  },
+  {
+    "id": "race_136",
+    "statement": {
+      "ru": "По-шведски суббота — «банный день».",
+      "en": "In Swedish, Saturday means 'bath day'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Saturday"
+  },
+  {
+    "id": "race_137",
+    "statement": {
+      "ru": "По легенде, основателей Рима вскормила медведица.",
+      "en": "Legend says the founders of Rome were nursed by a she-bear."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Capitoline_Wolf"
+  },
+  {
+    "id": "race_138",
+    "statement": {
+      "ru": "В средневековой Англии футбол запрещали королевскими указами.",
+      "en": "In medieval England football was banned by royal decrees."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Medieval_football"
+  },
+  {
+    "id": "race_139",
+    "statement": {
+      "ru": "Пергамент делали из коры деревьев.",
+      "en": "Parchment was made from tree bark."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Parchment"
+  },
+  {
+    "id": "race_140",
+    "statement": {
+      "ru": "Слово «карантин» происходит от «сорока дней».",
+      "en": "The word 'quarantine' comes from 'forty days'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Quarantine"
+  },
+  {
+    "id": "race_141",
+    "statement": {
+      "ru": "Средний викинг был ростом под два метра.",
+      "en": "The average Viking was nearly two metres tall."
+    },
+    "answer": false,
+    "source": "https://sciencenordic.com/archaeology-denmark-history/what-vikings-really-looked-like/1374457"
+  },
+  {
+    "id": "race_142",
+    "statement": {
+      "ru": "Очки изобрели ещё в Средние века.",
+      "en": "Eyeglasses were invented back in the Middle Ages."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Glasses"
+  },
+  {
+    "id": "race_143",
+    "statement": {
+      "ru": "В Средние века хвост бобра ели в пост вместо рыбы.",
+      "en": "In the Middle Ages beaver tail was eaten instead of fish during fasts."
+    },
+    "answer": true,
+    "source": "https://bestiary.ca/beasts/beastsource152.htm"
+  },
+  {
+    "id": "race_144",
+    "statement": {
+      "ru": "Ричард Львиное Сердце за всё правление прожил в Англии меньше года.",
+      "en": "Richard the Lionheart spent less than a year in England in his whole reign."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Richard_I_of_England"
+  },
+  {
+    "id": "race_145",
+    "statement": {
+      "ru": "Народ майя исчез без следа много веков назад.",
+      "en": "The Maya people vanished without trace centuries ago."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Maya_peoples"
+  },
+  {
+    "id": "race_146",
+    "statement": {
+      "ru": "Инки вели записи узелками на верёвках.",
+      "en": "The Incas kept records with knots on cords."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Quipu"
+  },
+  {
+    "id": "race_147",
+    "statement": {
+      "ru": "Средневековый рыцарский меч весил больше 10 кг.",
+      "en": "A medieval knight's sword weighed over 10 kg."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Longsword"
+  },
+  {
+    "id": "race_148",
+    "statement": {
+      "ru": "Атлеты на древних Олимпийских играх выступали голыми.",
+      "en": "Athletes at the ancient Olympic Games competed naked."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Athletic_nudity"
+  },
+  {
+    "id": "race_149",
+    "statement": {
+      "ru": "Ацтеки возили грузы на колёсных телегах.",
+      "en": "The Aztecs carried loads on wheeled carts."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Wheel"
+  },
+  {
+    "id": "race_150",
+    "statement": {
+      "ru": "Римский император Коммод сам выходил на арену гладиатором.",
+      "en": "The Roman emperor Commodus fought in the arena as a gladiator."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Commodus"
+  },
+  {
+    "id": "race_151",
+    "statement": {
+      "ru": "Печатать подвижными литерами начали в Китае раньше Гутенберга.",
+      "en": "Printing with movable type began in China before Gutenberg."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Movable_type"
+  },
+  {
+    "id": "race_152",
+    "statement": {
+      "ru": "Под полосатой шерстью у зебры кожа тоже в полоску.",
+      "en": "Under its striped coat, a zebra's skin is striped too."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Zebra#Stripes"
+  },
+  {
+    "id": "race_153",
+    "statement": {
+      "ru": "У жирафа в шее столько же позвонков, сколько у человека.",
+      "en": "A giraffe has as many neck bones as a human."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cervical_vertebrae"
+  },
+  {
+    "id": "race_154",
+    "statement": {
+      "ru": "Кряканье утки не даёт эха.",
+      "en": "A duck's quack doesn't echo."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Duck"
+  },
+  {
+    "id": "race_155",
+    "statement": {
+      "ru": "Коала — родственница медведей.",
+      "en": "The koala is a relative of bears."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Koala"
+  },
+  {
+    "id": "race_156",
+    "statement": {
+      "ru": "Отпечатки пальцев коалы почти не отличить от человеческих.",
+      "en": "A koala's fingerprints are almost impossible to tell from a human's."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fingerprint"
+  },
+  {
+    "id": "race_157",
+    "statement": {
+      "ru": "Бегемот потеет кровью.",
+      "en": "A hippo sweats blood."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hippopotamus"
+  },
+  {
+    "id": "race_158",
+    "statement": {
+      "ru": "Собаки потеют языком.",
+      "en": "Dogs sweat through their tongues."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dog_anatomy"
+  },
+  {
+    "id": "race_159",
+    "statement": {
+      "ru": "Щенки далматинца рождаются совсем белыми.",
+      "en": "Dalmatian puppies are born pure white."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dalmatian_dog"
+  },
+  {
+    "id": "race_160",
+    "statement": {
+      "ru": "Кошка мурлычет, только когда ей хорошо.",
+      "en": "A cat purrs only when it is happy."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Purr"
+  },
+  {
+    "id": "race_161",
+    "statement": {
+      "ru": "Трёхцветная кошка почти всегда — кошка, а не кот.",
+      "en": "A calico cat is almost always female."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Calico_cat"
+  },
+  {
+    "id": "race_162",
+    "statement": {
+      "ru": "Львы живут в тропических джунглях.",
+      "en": "Lions live in tropical jungles."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lion#Distribution_and_habitat"
+  },
+  {
+    "id": "race_163",
+    "statement": {
+      "ru": "Если побрить тигра, на коже тоже будут полоски.",
+      "en": "If you shaved a tiger, its skin would be striped too."
+    },
+    "answer": true,
+    "source": "https://wwf.org.au/blogs/10-facts-about-tigers-you-might-not-have-known/"
+  },
+  {
+    "id": "race_164",
+    "statement": {
+      "ru": "Слон пьёт воду прямо через хобот, как через соломинку.",
+      "en": "An elephant drinks water straight through its trunk, like a straw."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Elephant"
+  },
+  {
+    "id": "race_165",
+    "statement": {
+      "ru": "У страуса самые большие глаза среди всех сухопутных животных.",
+      "en": "The ostrich has the largest eyes of any land animal."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Common_ostrich"
+  },
+  {
+    "id": "race_166",
+    "statement": {
+      "ru": "От жабы, если взять её в руки, появляются бородавки.",
+      "en": "Handling a toad gives you warts."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Toad"
+  },
+  {
+    "id": "race_167",
+    "statement": {
+      "ru": "Удав убивает добычу, ломая ей кости.",
+      "en": "A boa kills its prey by breaking its bones."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Constriction"
+  },
+  {
+    "id": "race_168",
+    "statement": {
+      "ru": "Новокаледонские вороны мастерят крючки из веточек.",
+      "en": "New Caledonian crows make hooks out of twigs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/New_Caledonian_crow"
+  },
+  {
+    "id": "race_169",
+    "statement": {
+      "ru": "Глотая крупную добычу, змея вывихивает себе челюсть.",
+      "en": "To swallow big prey, a snake dislocates its jaw."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_170",
+    "statement": {
+      "ru": "Попугай какаду может прожить больше 80 лет.",
+      "en": "A cockatoo can live for more than 80 years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cookie_(cockatoo)"
+  },
+  {
+    "id": "race_171",
+    "statement": {
+      "ru": "Черепаха может вылезти из своего панциря.",
+      "en": "A turtle can climb out of its shell."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Turtle_shell"
+  },
+  {
+    "id": "race_172",
+    "statement": {
+      "ru": "Летучие мыши-вампиры отрыгивают кровь голодным соседям.",
+      "en": "Vampire bats bring up blood to feed hungry neighbours."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vampire_bat"
+  },
+  {
+    "id": "race_173",
+    "statement": {
+      "ru": "У северных оленей рога растут только у самцов.",
+      "en": "Only male reindeer grow antlers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Reindeer"
+  },
+  {
+    "id": "race_174",
+    "statement": {
+      "ru": "Лесная лягушка зимой промерзает насквозь, а весной оживает.",
+      "en": "The wood frog freezes solid in winter and comes back to life in spring."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wood_frog"
+  },
+  {
+    "id": "race_175",
+    "statement": {
+      "ru": "Пони — это жеребёнок, детёныш лошади.",
+      "en": "A pony is a foal, a baby horse."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pony"
+  },
+  {
+    "id": "race_176",
+    "statement": {
+      "ru": "Одна курица прожила без головы полтора года.",
+      "en": "A chicken lived for a year and a half without a head."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mike_the_Headless_Chicken"
+  },
+  {
+    "id": "race_177",
+    "statement": {
+      "ru": "Курица несёт яйца, только если рядом есть петух.",
+      "en": "A hen lays eggs only if there's a rooster around."
+    },
+    "answer": false,
+    "source": "https://www.irishexaminer.com/lifestyle/arid-30917660.html"
+  },
+  {
+    "id": "race_178",
+    "statement": {
+      "ru": "Самое быстрое животное на Земле — птица.",
+      "en": "The fastest animal on Earth is a bird."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Peregrine_falcon"
+  },
+  {
+    "id": "race_179",
+    "statement": {
+      "ru": "Морская свинка — родственница свиньи.",
+      "en": "A guinea pig is related to the pig."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Guinea_pig"
+  },
+  {
+    "id": "race_180",
+    "statement": {
+      "ru": "Крысы «хихикают», когда их щекочут.",
+      "en": "Rats 'giggle' when they are tickled."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rat"
+  },
+  {
+    "id": "race_181",
+    "statement": {
+      "ru": "Лягушка в медленно нагреваемой воде не заметит опасности и сварится.",
+      "en": "A frog in slowly heated water won't notice the danger and will boil."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Boiling_frog"
+  },
+  {
+    "id": "race_182",
+    "statement": {
+      "ru": "Ленивец может задержать дыхание под водой на 40 минут.",
+      "en": "A sloth can hold its breath underwater for 40 minutes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sloth"
+  },
+  {
+    "id": "race_183",
+    "statement": {
+      "ru": "Мыши больше всего на свете любят сыр.",
+      "en": "Mice love cheese more than anything."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_184",
+    "statement": {
+      "ru": "Есть ящерица, которая от врагов брызгает кровью из глаз.",
+      "en": "There is a lizard that squirts blood from its eyes at enemies."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Horned_lizard"
+  },
+  {
+    "id": "race_185",
+    "statement": {
+      "ru": "Енот полощет еду в воде, потому что у него мало слюны.",
+      "en": "A raccoon dunks its food in water because it lacks saliva."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Raccoon#Dousing"
+  },
+  {
+    "id": "race_186",
+    "statement": {
+      "ru": "Язык дятла обвивается вокруг черепа.",
+      "en": "A woodpecker's tongue wraps around its skull."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Woodpecker"
+  },
+  {
+    "id": "race_187",
+    "statement": {
+      "ru": "По родству гиена ближе к собакам, чем к кошкам.",
+      "en": "A hyena is more closely related to dogs than to cats."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hyena"
+  },
+  {
+    "id": "race_188",
+    "statement": {
+      "ru": "Птицы-фрегаты умеют спать прямо в полёте.",
+      "en": "Frigatebirds can sleep while flying."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Frigatebird"
+  },
+  {
+    "id": "race_189",
+    "statement": {
+      "ru": "У кенгуру сумка есть и у мам, и у пап.",
+      "en": "Both mother and father kangaroos have a pouch."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Kangaroo"
+  },
+  {
+    "id": "race_190",
+    "statement": {
+      "ru": "Олени каждый год сбрасывают рога и отращивают новые.",
+      "en": "Deer shed their antlers every year and grow new ones."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Deer"
+  },
+  {
+    "id": "race_191",
+    "statement": {
+      "ru": "Волки воют на луну.",
+      "en": "Wolves howl at the Moon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Wolf"
+  },
+  {
+    "id": "race_192",
+    "statement": {
+      "ru": "Лошадь умеет спать стоя.",
+      "en": "A horse can sleep standing up."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Horse"
+  },
+  {
+    "id": "race_193",
+    "statement": {
+      "ru": "Если потрогать птенца, родители его бросят.",
+      "en": "If you touch a baby bird, its parents will abandon it."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_194",
+    "statement": {
+      "ru": "Козы умеют лазать по деревьям.",
+      "en": "Goats can climb trees."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Goat"
+  },
+  {
+    "id": "race_195",
+    "statement": {
+      "ru": "В природе кролики питаются в основном морковкой.",
+      "en": "In the wild, rabbits live mainly on carrots."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rabbit"
+  },
+  {
+    "id": "race_196",
+    "statement": {
+      "ru": "Самый большой грызун на свете — капибара.",
+      "en": "The capybara is the biggest rodent in the world."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Capybara"
+  },
+  {
+    "id": "race_197",
+    "statement": {
+      "ru": "Слоны узнают себя в зеркале.",
+      "en": "Elephants recognise themselves in a mirror."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Elephant"
+  },
+  {
+    "id": "race_198",
+    "statement": {
+      "ru": "Аксолотль может отрастить потерянную лапу.",
+      "en": "An axolotl can grow back a lost leg."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Axolotl"
+  },
+  {
+    "id": "race_199",
+    "statement": {
+      "ru": "Кролики едят собственный помёт.",
+      "en": "Rabbits eat their own droppings."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rabbit"
+  },
+  {
+    "id": "race_200",
+    "statement": {
+      "ru": "Яйцо киви может весить четверть самой птицы.",
+      "en": "A kiwi's egg can weigh a quarter as much as the bird itself."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kiwi_(bird)"
+  },
+  {
+    "id": "race_201",
+    "statement": {
+      "ru": "Большая панда относится к отряду хищных.",
+      "en": "The giant panda belongs to the order Carnivora."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Giant_panda"
+  },
+  {
+    "id": "race_202",
+    "statement": {
+      "ru": "Зубная эмаль — самое твёрдое вещество в теле человека.",
+      "en": "Tooth enamel is the hardest substance in the human body."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tooth_enamel"
+  },
+  {
+    "id": "race_203",
+    "statement": {
+      "ru": "Самая большая мышца человека — бицепс.",
+      "en": "The biggest muscle in the human body is the biceps."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gluteus_maximus"
+  },
+  {
+    "id": "race_204",
+    "statement": {
+      "ru": "У мужчин на одно ребро меньше, чем у женщин.",
+      "en": "Men have one rib fewer than women."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rib_cage"
+  },
+  {
+    "id": "race_205",
+    "statement": {
+      "ru": "Картинка на сетчатке глаза перевёрнута вверх ногами.",
+      "en": "The image on the retina of the eye is upside down."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Retina"
+  },
+  {
+    "id": "race_206",
+    "statement": {
+      "ru": "Глазное яблоко у новорождённого уже взрослого размера.",
+      "en": "A newborn's eyeball is already full adult size."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Human_eye"
+  },
+  {
+    "id": "race_207",
+    "statement": {
+      "ru": "Один подросток однажды не спал 11 дней подряд.",
+      "en": "A teenager once stayed awake for 11 days in a row."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Randy_Gardner_sleep_deprivation_experiment"
+  },
+  {
+    "id": "race_208",
+    "statement": {
+      "ru": "Разбудить лунатика — значит навредить его здоровью.",
+      "en": "Waking a sleepwalker harms their health."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_209",
+    "statement": {
+      "ru": "Больше половины костей человека — в кистях и стопах.",
+      "en": "More than half of a person's bones are in the hands and feet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hand"
+  },
+  {
+    "id": "race_210",
+    "statement": {
+      "ru": "Зубы — это кости.",
+      "en": "Teeth are bones."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tooth"
+  },
+  {
+    "id": "race_211",
+    "statement": {
+      "ru": "Кровь вырабатывается внутри костей.",
+      "en": "Blood is produced inside the bones."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bone_marrow"
+  },
+  {
+    "id": "race_212",
+    "statement": {
+      "ru": "Микробов в теле в десять раз больше, чем собственных клеток.",
+      "en": "There are ten times more microbes in the body than its own cells."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_213",
+    "statement": {
+      "ru": "Ногти сделаны из того же вещества, что и рог носорога.",
+      "en": "Fingernails are made of the same stuff as a rhino's horn."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rhinoceros"
+  },
+  {
+    "id": "race_214",
+    "statement": {
+      "ru": "Ушная сера — это просто грязь в ушах.",
+      "en": "Earwax is just dirt in your ears."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Earwax"
+  },
+  {
+    "id": "race_215",
+    "statement": {
+      "ru": "Чихнуть с открытыми глазами невозможно.",
+      "en": "It is impossible to sneeze with your eyes open."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sneeze"
+  },
+  {
+    "id": "race_216",
+    "statement": {
+      "ru": "В желудке человека — настоящая соляная кислота.",
+      "en": "The human stomach contains real hydrochloric acid."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gastric_acid"
+  },
+  {
+    "id": "race_217",
+    "statement": {
+      "ru": "Мозг Эйнштейна был заметно тяжелее обычного.",
+      "en": "Einstein's brain was noticeably heavier than usual."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Brain_of_Albert_Einstein"
+  },
+  {
+    "id": "race_218",
+    "statement": {
+      "ru": "Глотая, человек на мгновение перестаёт дышать.",
+      "en": "When you swallow, you stop breathing for a moment."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Swallowing"
+  },
+  {
+    "id": "race_219",
+    "statement": {
+      "ru": "Люди делятся на «левополушарных» логиков и «правополушарных» творцов.",
+      "en": "People divide into 'left-brained' logical and 'right-brained' creative types."
+    },
+    "answer": false,
+    "source": "https://www.health.harvard.edu/blog/right-brainleft-brain-right-2017082512222"
+  },
+  {
+    "id": "race_220",
+    "statement": {
+      "ru": "Кадык есть и у женщин.",
+      "en": "Women have an Adam's apple too."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Adam%27s_apple"
+  },
+  {
+    "id": "race_221",
+    "statement": {
+      "ru": "Нормальная температура тела — ровно 36,6 °C.",
+      "en": "Normal body temperature is exactly 36.6 °C."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Human_body_temperature"
+  },
+  {
+    "id": "race_222",
+    "statement": {
+      "ru": "Взрослый в покое делает больше десяти тысяч вдохов в сутки.",
+      "en": "An adult at rest takes more than ten thousand breaths a day."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Respiratory_rate"
+  },
+  {
+    "id": "race_223",
+    "statement": {
+      "ru": "Дальтонизм у женщин встречается гораздо чаще, чем у мужчин.",
+      "en": "Colour blindness is much more common in women than in men."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Color_blindness"
+  },
+  {
+    "id": "race_224",
+    "statement": {
+      "ru": "Есть звук, который слышат подростки, но не слышат взрослые.",
+      "en": "There is a sound that teenagers can hear but adults can't."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Mosquito"
+  },
+  {
+    "id": "race_225",
+    "statement": {
+      "ru": "Когда человеку снятся самые яркие сны, его мышцы почти полностью отключаются.",
+      "en": "During a person's most vivid dreams, their muscles almost completely switch off."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rapid_eye_movement_sleep"
+  },
+  {
+    "id": "race_226",
+    "statement": {
+      "ru": "Из всех приматов подбородок есть только у человека.",
+      "en": "Of all the primates, only humans have a chin."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chin"
+  },
+  {
+    "id": "race_227",
+    "statement": {
+      "ru": "В выдыхаемом воздухе кислорода больше, чем углекислого газа.",
+      "en": "Exhaled air holds more oxygen than carbon dioxide."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Breathing"
+  },
+  {
+    "id": "race_228",
+    "statement": {
+      "ru": "Один сон длится всего несколько секунд.",
+      "en": "A single dream lasts only a few seconds."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dream"
+  },
+  {
+    "id": "race_229",
+    "statement": {
+      "ru": "Новорождённый видит так же чётко, как взрослый.",
+      "en": "A newborn baby sees as sharply as an adult."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Infant_visual_development"
+  },
+  {
+    "id": "race_230",
+    "statement": {
+      "ru": "Обычно одна ноздря дышит лучше другой, и они сменяют друг друга.",
+      "en": "Usually one nostril breathes better than the other, and they take turns."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nasal_cycle"
+  },
+  {
+    "id": "race_231",
+    "statement": {
+      "ru": "У ребёнка может быть группа крови, которой нет ни у мамы, ни у папы.",
+      "en": "A child can have a blood group that neither mum nor dad has."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/ABO_blood_group_system"
+  },
+  {
+    "id": "race_232",
+    "statement": {
+      "ru": "Плавно вести взглядом по пустой стене не выйдет — глаза прыгают рывками.",
+      "en": "You can't sweep your gaze smoothly across a blank wall: your eyes jump in jerks."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Smooth_pursuit"
+  },
+  {
+    "id": "race_233",
+    "statement": {
+      "ru": "Желудок находится внизу живота, под пупком.",
+      "en": "The stomach sits low in the belly, below the navel."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Stomach"
+  },
+  {
+    "id": "race_234",
+    "statement": {
+      "ru": "У рыжих волос на голове больше, чем у блондинов.",
+      "en": "Redheads have more hairs on their head than blondes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Human_hair_growth"
+  },
+  {
+    "id": "race_235",
+    "statement": {
+      "ru": "Можно зевнуть, просто прочитав о зевоте.",
+      "en": "You can yawn just from reading about yawning."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Yawn"
+  },
+  {
+    "id": "race_236",
+    "statement": {
+      "ru": "Самый частый цвет волос на Земле — светлый.",
+      "en": "The most common hair colour on Earth is blond."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Human_hair_color"
+  },
+  {
+    "id": "race_237",
+    "statement": {
+      "ru": "Волос, который мы видим над кожей, — уже мёртвый.",
+      "en": "The hair we see above the skin is already dead."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hair"
+  },
+  {
+    "id": "race_238",
+    "statement": {
+      "ru": "Больше всего гормона роста выделяется во сне.",
+      "en": "Most growth hormone is released during sleep."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Growth_hormone"
+  },
+  {
+    "id": "race_239",
+    "statement": {
+      "ru": "Сердце взрослого человека — размером с футбольный мяч.",
+      "en": "An adult's heart is the size of a football."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Heart"
+  },
+  {
+    "id": "race_240",
+    "statement": {
+      "ru": "Яйцеклетку человека можно разглядеть без микроскопа.",
+      "en": "A human egg cell can be seen without a microscope."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Egg_cell"
+  },
+  {
+    "id": "race_241",
+    "statement": {
+      "ru": "Нервные сигналы бегут по телу со скоростью света.",
+      "en": "Nerve signals travel through the body at the speed of light."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Nerve_conduction_velocity"
+  },
+  {
+    "id": "race_242",
+    "statement": {
+      "ru": "Худея, человек выдыхает бóльшую часть потерянного жира.",
+      "en": "When you lose weight, you breathe out most of the lost fat."
+    },
+    "answer": true,
+    "source": "https://www.sciencedaily.com/releases/2014/12/141216212041.htm"
+  },
+  {
+    "id": "race_243",
+    "statement": {
+      "ru": "В теле взрослого человека около 20 литров крови.",
+      "en": "An adult's body holds about 20 litres of blood."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Blood_volume"
+  },
+  {
+    "id": "race_244",
+    "statement": {
+      "ru": "Чтобы чихнуть, спящему человеку сначала придётся проснуться.",
+      "en": "To sneeze, a sleeping person first has to wake up."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sneeze"
+  },
+  {
+    "id": "race_245",
+    "statement": {
+      "ru": "Левое полушарие мозга управляет левой рукой.",
+      "en": "The left half of the brain controls the left hand."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lateralization_of_brain_function"
+  },
+  {
+    "id": "race_246",
+    "statement": {
+      "ru": "Коленные чашечки у малышей ещё из хряща, а не из кости.",
+      "en": "Toddlers' kneecaps are still cartilage, not bone."
+    },
+    "answer": true,
+    "source": "https://www.auntminnieeurope.com/clinical-news/article/15650292/uk-team-determines-age-of-patella-ossification"
+  },
+  {
+    "id": "race_247",
+    "statement": {
+      "ru": "Запах пота создают бактерии на коже.",
+      "en": "The smell of sweat is made by bacteria on the skin."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Body_odor"
+  },
+  {
+    "id": "race_248",
+    "statement": {
+      "ru": "У человека ровно пять чувств.",
+      "en": "Humans have exactly five senses."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_249",
+    "statement": {
+      "ru": "За равновесие тела отвечает внутреннее ухо.",
+      "en": "The inner ear is in charge of the body's balance."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vestibular_system"
+  },
+  {
+    "id": "race_250",
+    "statement": {
+      "ru": "Кровь красная из-за меди.",
+      "en": "Blood is red because of copper."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hemoglobin"
+  },
+  {
+    "id": "race_251",
+    "statement": {
+      "ru": "Каждый день у здорового человека выпадает около тысячи волос.",
+      "en": "A healthy person loses about a thousand hairs every day."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Human_hair_growth"
+  },
+  {
+    "id": "race_252",
+    "statement": {
+      "ru": "Шрек сначала был героем детской книжки с картинками.",
+      "en": "Shrek started out as the hero of a children's picture book."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shrek!"
+  },
+  {
+    "id": "race_253",
+    "statement": {
+      "ru": "Мультфильм «Тайна Коко» происходит в Японии.",
+      "en": "The cartoon Coco is set in Japan."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Coco_(2017_film)"
+  },
+  {
+    "id": "race_254",
+    "statement": {
+      "ru": "Микки Мауса чуть не назвали Мортимером.",
+      "en": "Mickey Mouse was almost called Mortimer."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Walt_Disney"
+  },
+  {
+    "id": "race_255",
+    "statement": {
+      "ru": "Уолт Дисней завещал заморозить своё тело.",
+      "en": "Walt Disney left instructions for his body to be frozen."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Walt_Disney"
+  },
+  {
+    "id": "race_256",
+    "statement": {
+      "ru": "Самый первый «Оскар» за лучший фильм получило немое кино.",
+      "en": "The very first Best Picture Oscar went to a silent film."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wings_(1927_film)"
+  },
+  {
+    "id": "race_257",
+    "statement": {
+      "ru": "Статуэтка «Оскар» отлита из чистого золота.",
+      "en": "The Oscar statuette is cast in solid gold."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Academy_Award"
+  },
+  {
+    "id": "race_258",
+    "statement": {
+      "ru": "Стич — инопланетный эксперимент под номером 626.",
+      "en": "Stitch is alien experiment number 626."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Stitch_(Lilo_%26_Stitch)"
+  },
+  {
+    "id": "race_259",
+    "statement": {
+      "ru": "В первой «Истории игрушек» Базз Лайтер сразу знает, что он игрушка.",
+      "en": "In the first Toy Story, Buzz Lightyear knows from the start that he is a toy."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Buzz_Lightyear"
+  },
+  {
+    "id": "race_260",
+    "statement": {
+      "ru": "Рататуй — это овощное блюдо.",
+      "en": "Ratatouille is a vegetable dish."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ratatouille"
+  },
+  {
+    "id": "race_261",
+    "statement": {
+      "ru": "Дарта Вейдера в первых фильмах играл и озвучивал один и тот же актёр.",
+      "en": "In the first films, one and the same actor played and voiced Darth Vader."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Darth_Vader"
+  },
+  {
+    "id": "race_262",
+    "statement": {
+      "ru": "Больше всех «Оскаров» в истории получил Уолт Дисней.",
+      "en": "Walt Disney won more Oscars than anyone else in history."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Walt_Disney"
+  },
+  {
+    "id": "race_263",
+    "statement": {
+      "ru": "«Холодное сердце» снято по сказке братьев Гримм.",
+      "en": "Frozen is based on a Brothers Grimm fairy tale."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Frozen_(2013_film)"
+  },
+  {
+    "id": "race_264",
+    "statement": {
+      "ru": "Студией Pixar когда-то владел Стив Джобс.",
+      "en": "Steve Jobs once owned the Pixar studio."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pixar"
+  },
+  {
+    "id": "race_265",
+    "statement": {
+      "ru": "Годзилла впервые появилась в американском фильме.",
+      "en": "Godzilla first appeared in an American film."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Godzilla_(1954_film)"
+  },
+  {
+    "id": "race_266",
+    "statement": {
+      "ru": "Дамблдора после второго фильма о Гарри Поттере стал играть другой актёр.",
+      "en": "After the second Harry Potter film, Dumbledore was played by a different actor."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Albus_Dumbledore"
+  },
+  {
+    "id": "race_267",
+    "statement": {
+      "ru": "«Унесённые ветром» — первый цветной фильм в истории.",
+      "en": "Gone with the Wind was the first colour film in history."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Becky_Sharp_(film)"
+  },
+  {
+    "id": "race_268",
+    "statement": {
+      "ru": "Тотошку в «Волшебнике страны Оз» играла собака-девочка.",
+      "en": "Toto in The Wizard of Oz was played by a female dog."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Terry_(dog)"
+  },
+  {
+    "id": "race_269",
+    "statement": {
+      "ru": "Молнию Маккуина назвали в честь актёра Стива Маккуина.",
+      "en": "Lightning McQueen was named after the actor Steve McQueen."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lightning_McQueen"
+  },
+  {
+    "id": "race_270",
+    "statement": {
+      "ru": "В «Корпорации монстров» город работает на энергии детского крика.",
+      "en": "In Monsters, Inc. the city runs on the energy of children's screams."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Monsters,_Inc."
+  },
+  {
+    "id": "race_271",
+    "statement": {
+      "ru": "Манеру Багза Банни грызть морковку взяли у Кларка Гейбла.",
+      "en": "Bugs Bunny's way of chewing a carrot was borrowed from Clark Gable."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bugs_Bunny"
+  },
+  {
+    "id": "race_272",
+    "statement": {
+      "ru": "Кота из «Тома и Джерри» сначала звали Джаспер.",
+      "en": "The cat in Tom and Jerry was first called Jasper."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tom_Cat"
+  },
+  {
+    "id": "race_273",
+    "statement": {
+      "ru": "Премию «Оскар» назвали в честь писателя Оскара Уайльда.",
+      "en": "The Oscar award was named after the writer Oscar Wilde."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Academy_Awards"
+  },
+  {
+    "id": "race_274",
+    "statement": {
+      "ru": "«Паразиты» — первый неанглоязычный фильм с «Оскаром» за лучший фильм.",
+      "en": "Parasite was the first non-English-language film to win Best Picture."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Parasite_(2019_film)"
+  },
+  {
+    "id": "race_275",
+    "statement": {
+      "ru": "Гудение светового меча сделали из звука старых кинопроекторов.",
+      "en": "The hum of a lightsaber was made from the sound of old film projectors."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lightsaber"
+  },
+  {
+    "id": "race_276",
+    "statement": {
+      "ru": "Обычное кино снимают со скоростью 60 кадров в секунду.",
+      "en": "Ordinary cinema films are shot at 60 frames per second."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Frame_rate"
+  },
+  {
+    "id": "race_277",
+    "statement": {
+      "ru": "Надпись на холме в Голливуде сначала была «Hollywoodland».",
+      "en": "The Hollywood sign on the hill first read \"Hollywoodland\"."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hollywood_Sign"
+  },
+  {
+    "id": "race_278",
+    "statement": {
+      "ru": "Дональд Дак ходит без штанов.",
+      "en": "Donald Duck goes around without trousers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Donald_Duck"
+  },
+  {
+    "id": "race_279",
+    "statement": {
+      "ru": "Скуби-Ду — сенбернар.",
+      "en": "Scooby-Doo is a St. Bernard."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Scooby-Doo_(character)"
+  },
+  {
+    "id": "race_280",
+    "statement": {
+      "ru": "Пумба из «Короля Льва» — бородавочник.",
+      "en": "Pumbaa from The Lion King is a warthog."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pumbaa"
+  },
+  {
+    "id": "race_281",
+    "statement": {
+      "ru": "Эмблема студии MGM — рычащий тигр.",
+      "en": "The MGM studio's emblem is a roaring tiger."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Leo_the_Lion_(MGM)"
+  },
+  {
+    "id": "race_282",
+    "statement": {
+      "ru": "Акулу в «Челюстях» сыграла дрессированная белая акула.",
+      "en": "The shark in Jaws was played by a trained great white."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Jaws_(film)"
+  },
+  {
+    "id": "race_283",
+    "statement": {
+      "ru": "Чарли Чаплин родился в Америке.",
+      "en": "Charlie Chaplin was born in America."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Charlie_Chaplin"
+  },
+  {
+    "id": "race_284",
+    "statement": {
+      "ru": "Настоящее имя Мэрилин Монро — Норма Джин.",
+      "en": "Marilyn Monroe's real name was Norma Jeane."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Marilyn_Monroe"
+  },
+  {
+    "id": "race_285",
+    "statement": {
+      "ru": "Стивен Спилберг — один из основателей студии DreamWorks.",
+      "en": "Steven Spielberg is one of the founders of DreamWorks."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/DreamWorks_Pictures"
+  },
+  {
+    "id": "race_286",
+    "statement": {
+      "ru": "Самый первый «Оскар» за лучший анимационный фильм получил «Шрек».",
+      "en": "The very first Oscar for Best Animated Feature went to Shrek."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Animated_Feature"
+  },
+  {
+    "id": "race_287",
+    "statement": {
+      "ru": "В «Красавице и Чудовище» есть говорящий подсвечник.",
+      "en": "Beauty and the Beast has a talking candlestick."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lumi%C3%A8re_(Beauty_and_the_Beast)"
+  },
+  {
+    "id": "race_288",
+    "statement": {
+      "ru": "«Волшебник страны Оз» 1939 года цветной от начала до конца.",
+      "en": "The 1939 Wizard of Oz is in colour from start to finish."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)"
+  },
+  {
+    "id": "race_289",
+    "statement": {
+      "ru": "Лампа с заставки Pixar — героиня собственного мультфильма.",
+      "en": "The lamp from the Pixar logo is the star of its own short film."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pixar"
+  },
+  {
+    "id": "race_290",
+    "statement": {
+      "ru": "Джинн в «Аладдине» исполняет сколько угодно желаний.",
+      "en": "The Genie in Aladdin grants as many wishes as you like."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Genie_(Aladdin)"
+  },
+  {
+    "id": "race_291",
+    "statement": {
+      "ru": "В рёве тираннозавра из «Парка юрского периода» есть визг слонёнка.",
+      "en": "The T. rex roar in Jurassic Park contains a baby elephant's squeal."
+    },
+    "answer": true,
+    "source": "https://slashfilm.com/1310511/jurassic-park-got-t-rex-roar-from-combination-of-three-different-animals"
+  },
+  {
+    "id": "race_292",
+    "statement": {
+      "ru": "Актёр, сыгравший Терминатора, был президентом США.",
+      "en": "The actor who played the Terminator was President of the United States."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Arnold_Schwarzenegger"
+  },
+  {
+    "id": "race_293",
+    "statement": {
+      "ru": "Джеймса Бонда в кино всегда играли британцы.",
+      "en": "James Bond has always been played by British actors."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/George_Lazenby"
+  },
+  {
+    "id": "race_294",
+    "statement": {
+      "ru": "В оригинале ковбоя Вуди озвучил Том Хэнкс.",
+      "en": "In the original version, Woody the cowboy is voiced by Tom Hanks."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Woody_(Toy_Story)"
+  },
+  {
+    "id": "race_295",
+    "statement": {
+      "ru": "Индиана Джонс больше всего боится пауков.",
+      "en": "Indiana Jones is most afraid of spiders."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Indiana_Jones_(character)"
+  },
+  {
+    "id": "race_296",
+    "statement": {
+      "ru": "Немое кино показывали в полной тишине.",
+      "en": "Silent films were shown in complete silence."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Silent_film"
+  },
+  {
+    "id": "race_297",
+    "statement": {
+      "ru": "Ширли Темпл получила особый детский «Оскар» в шесть лет.",
+      "en": "Shirley Temple received a special juvenile Oscar at the age of six."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shirley_Temple"
+  },
+  {
+    "id": "race_298",
+    "statement": {
+      "ru": "В книге, по которой сняли «Бэмби», Бэмби — косуля.",
+      "en": "In the book that Bambi is based on, Bambi is a roe deer."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bambi,_a_Life_in_the_Woods"
+  },
+  {
+    "id": "race_299",
+    "statement": {
+      "ru": "Тоторо — главный герой «Унесённых призраками».",
+      "en": "Totoro is the main character of Spirited Away."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Spirited_Away"
+  },
+  {
+    "id": "race_300",
+    "statement": {
+      "ru": "Хичкок получил «Оскар» как лучший режиссёр.",
+      "en": "Hitchcock won the Oscar for Best Director."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Alfred_Hitchcock"
+  },
+  {
+    "id": "race_301",
+    "statement": {
+      "ru": "Деревню хоббитов из «Властелина колец» можно посетить и сейчас.",
+      "en": "You can still visit the hobbit village from The Lord of the Rings today."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hobbiton_Movie_Set"
+  },
+  {
+    "id": "race_302",
+    "statement": {
+      "ru": "Зелёные и чёрные оливки растут на разных деревьях.",
+      "en": "Green and black olives grow on different trees."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Olive"
+  },
+  {
+    "id": "race_303",
+    "statement": {
+      "ru": "Ананас понемногу «переваривает» язык того, кто его ест.",
+      "en": "A pineapple slowly 'digests' the tongue of whoever eats it."
+    },
+    "answer": true,
+    "source": "https://www.chowhound.com/1865461/why-pineapple-burns-tongue-and-how-prevent"
+  },
+  {
+    "id": "race_304",
+    "statement": {
+      "ru": "Попкорн можно сделать из любой кукурузы.",
+      "en": "You can make popcorn from any kind of corn."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Popcorn"
+  },
+  {
+    "id": "race_305",
+    "statement": {
+      "ru": "Начос назвали в честь мексиканца по имени Начо.",
+      "en": "Nachos are named after a Mexican man called Nacho."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nachos"
+  },
+  {
+    "id": "race_306",
+    "statement": {
+      "ru": "Обжаривание мяса «запечатывает» соки внутри.",
+      "en": "Searing meat 'seals in' the juices."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Searing"
+  },
+  {
+    "id": "race_307",
+    "statement": {
+      "ru": "Красный краситель кармин делают из насекомых.",
+      "en": "The red dye carmine is made from insects."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Carmine"
+  },
+  {
+    "id": "race_308",
+    "statement": {
+      "ru": "Киви родом из Новой Зеландии.",
+      "en": "The kiwi fruit comes originally from New Zealand."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Kiwifruit"
+  },
+  {
+    "id": "race_309",
+    "statement": {
+      "ru": "Сырая красная фасоль ядовита.",
+      "en": "Raw red kidney beans are poisonous."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Phytohaemagglutinin"
+  },
+  {
+    "id": "race_310",
+    "statement": {
+      "ru": "Коричневые яйца полезнее белых.",
+      "en": "Brown eggs are healthier than white ones."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Eggs_as_food"
+  },
+  {
+    "id": "race_311",
+    "statement": {
+      "ru": "«Тирамису» по-итальянски значит «подними меня».",
+      "en": "'Tiramisu' means 'pick me up' in Italian."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tiramisu"
+  },
+  {
+    "id": "race_312",
+    "statement": {
+      "ru": "Если посолить воду, она закипит гораздо быстрее.",
+      "en": "Salting water makes it come to the boil much faster."
+    },
+    "answer": false,
+    "source": "https://www.livescience.com/56214-does-salt-make-water-boil-faster.html"
+  },
+  {
+    "id": "race_313",
+    "statement": {
+      "ru": "Желатин делают из кожи и костей животных.",
+      "en": "Gelatin is made from animal skin and bones."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gelatin"
+  },
+  {
+    "id": "race_314",
+    "statement": {
+      "ru": "Родина ананаса — Гавайи.",
+      "en": "The pineapple comes originally from Hawaii."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pineapple"
+  },
+  {
+    "id": "race_315",
+    "statement": {
+      "ru": "Жвачку раньше делали из сока тропического дерева.",
+      "en": "Chewing gum used to be made from the sap of a tropical tree."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chicle"
+  },
+  {
+    "id": "race_316",
+    "statement": {
+      "ru": "Бурый и белый рис — это разные растения.",
+      "en": "Brown rice and white rice come from different plants."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Brown_rice"
+  },
+  {
+    "id": "race_317",
+    "statement": {
+      "ru": "В вустерский соус кладут анчоусы.",
+      "en": "Worcestershire sauce contains anchovies."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Worcestershire_sauce"
+  },
+  {
+    "id": "race_318",
+    "statement": {
+      "ru": "Картофель родом из Ирландии.",
+      "en": "The potato comes originally from Ireland."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Potato"
+  },
+  {
+    "id": "race_319",
+    "statement": {
+      "ru": "На Сардинии делают сыр с живыми личинками мух.",
+      "en": "In Sardinia they make a cheese full of live fly maggots."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Casu_martzu"
+  },
+  {
+    "id": "race_320",
+    "statement": {
+      "ru": "Древние римляне ели помидоры.",
+      "en": "The ancient Romans ate tomatoes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tomato"
+  },
+  {
+    "id": "race_321",
+    "statement": {
+      "ru": "Острый перец чили привезли в Индию из Америки.",
+      "en": "Chilli peppers came to India from the Americas."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chili_pepper"
+  },
+  {
+    "id": "race_322",
+    "statement": {
+      "ru": "Белая корка на камамбере — это съедобная плесень.",
+      "en": "The white rind on Camembert is an edible mould."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Camembert"
+  },
+  {
+    "id": "race_323",
+    "statement": {
+      "ru": "Мармеладных мишек придумали в Германии.",
+      "en": "Gummy bears were invented in Germany."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Haribo"
+  },
+  {
+    "id": "race_324",
+    "statement": {
+      "ru": "Ацтеки ели шоколад плитками.",
+      "en": "The Aztecs ate chocolate in bars."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/History_of_chocolate"
+  },
+  {
+    "id": "race_325",
+    "statement": {
+      "ru": "Капитан Кук брал в плавания квашеную капусту от цинги.",
+      "en": "Captain Cook took sauerkraut on his voyages against scurvy."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sauerkraut"
+  },
+  {
+    "id": "race_326",
+    "statement": {
+      "ru": "Чёрный перец горошком — родственник болгарского перца.",
+      "en": "Black peppercorns are related to bell peppers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Black_pepper"
+  },
+  {
+    "id": "race_327",
+    "statement": {
+      "ru": "Кукурузные хлопья придумали для пациентов санатория.",
+      "en": "Corn flakes were invented for patients at a sanatorium."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Corn_flakes"
+  },
+  {
+    "id": "race_328",
+    "statement": {
+      "ru": "Корица — это молотые семена.",
+      "en": "Cinnamon is ground-up seeds."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cinnamon"
+  },
+  {
+    "id": "race_329",
+    "statement": {
+      "ru": "Лобстеры когда-то считались едой бедняков и слуг.",
+      "en": "Lobster was once seen as food for the poor and for servants."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lobster"
+  },
+  {
+    "id": "race_330",
+    "statement": {
+      "ru": "Если птица склюёт сырой рис, она может лопнуть.",
+      "en": "A bird that eats raw rice can burst."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_331",
+    "statement": {
+      "ru": "Первый зефир маршмеллоу делали из корня растения.",
+      "en": "The first marshmallows were made from a plant root."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Marshmallow"
+  },
+  {
+    "id": "race_332",
+    "statement": {
+      "ru": "Арбуз примерно наполовину состоит из воды.",
+      "en": "A watermelon is about half water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Watermelon"
+  },
+  {
+    "id": "race_333",
+    "statement": {
+      "ru": "Чёрную пасту часто красят чернилами каракатицы.",
+      "en": "Black pasta is often coloured with cuttlefish ink."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cephalopod_ink"
+  },
+  {
+    "id": "race_334",
+    "statement": {
+      "ru": "Рокфор делают из коровьего молока.",
+      "en": "Roquefort is made from cow's milk."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Roquefort"
+  },
+  {
+    "id": "race_335",
+    "statement": {
+      "ru": "Апельсин — гибрид помело и мандарина.",
+      "en": "The orange is a hybrid of the pomelo and the mandarin."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Orange_(fruit)"
+  },
+  {
+    "id": "race_336",
+    "statement": {
+      "ru": "Белый шоколад делают совсем без какао-бобов.",
+      "en": "White chocolate is made with nothing from cocoa beans."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/White_chocolate"
+  },
+  {
+    "id": "race_337",
+    "statement": {
+      "ru": "Дрожжи для теста — это живые грибы.",
+      "en": "Baker's yeast is a living fungus."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Yeast"
+  },
+  {
+    "id": "race_338",
+    "statement": {
+      "ru": "Живой омар ярко-красный.",
+      "en": "A live lobster is bright red."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lobster"
+  },
+  {
+    "id": "race_339",
+    "statement": {
+      "ru": "Если съесть очень много моркови, кожа может стать оранжевой.",
+      "en": "Eat a huge amount of carrots and your skin can turn orange."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Carotenosis"
+  },
+  {
+    "id": "race_340",
+    "statement": {
+      "ru": "«Пепперони» по-итальянски значит «колбаса».",
+      "en": "In Italian, 'pepperoni' means sausage."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pepperoni"
+  },
+  {
+    "id": "race_341",
+    "statement": {
+      "ru": "Позеленевшая картошка может быть ядовитой.",
+      "en": "Potatoes that have turned green can be poisonous."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Solanine"
+  },
+  {
+    "id": "race_342",
+    "statement": {
+      "ru": "Жжение от острого перца лучше всего гасит вода.",
+      "en": "Water is the best thing to put out the burn of hot peppers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Capsaicin"
+  },
+  {
+    "id": "race_343",
+    "statement": {
+      "ru": "Во Франции рецепт традиционного багета закреплён законом.",
+      "en": "In France the recipe of the traditional baguette is fixed by law."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Baguette"
+  },
+  {
+    "id": "race_344",
+    "statement": {
+      "ru": "В Евросоюзе магазинные яйца перед продажей обязательно моют.",
+      "en": "In the EU, shop eggs must be washed before they are sold."
+    },
+    "answer": false,
+    "source": "https://eur-lex.europa.eu/eli/reg_del/2023/2465/2024-10-14/eng/pdf"
+  },
+  {
+    "id": "race_345",
+    "statement": {
+      "ru": "Кетчуп когда-то продавали как лекарство.",
+      "en": "Ketchup was once sold as a medicine."
+    },
+    "answer": true,
+    "source": "https://www.popsci.com/science/ketchup-history-medicine/"
+  },
+  {
+    "id": "race_346",
+    "statement": {
+      "ru": "Красный сок из сырого стейка — это кровь.",
+      "en": "The red juice from a raw steak is blood."
+    },
+    "answer": false,
+    "source": "https://webarchive.library.unt.edu/web/20130217235322/http:/www.fsis.usda.gov/Fact_Sheets/Color_of_Meat_&_Poultry/index.asp"
+  },
+  {
+    "id": "race_347",
+    "statement": {
+      "ru": "Яблоко плавает в воде, потому что в нём много воздуха.",
+      "en": "An apple floats in water because it holds a lot of air."
+    },
+    "answer": true,
+    "source": "https://www.freshplaza.com/north-america/article/2162560/why-do-apples-float"
+  },
+  {
+    "id": "race_348",
+    "statement": {
+      "ru": "Если слишком долго взбивать сливки, получится масло.",
+      "en": "Whip cream for too long and you get butter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Whipped_cream"
+  },
+  {
+    "id": "race_349",
+    "statement": {
+      "ru": "Пятый вкус — умами — открыл японский учёный.",
+      "en": "The fifth taste, umami, was discovered by a Japanese scientist."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Umami"
+  },
+  {
+    "id": "race_350",
+    "statement": {
+      "ru": "Хлеб на закваске поднимается благодаря соде.",
+      "en": "Sourdough bread rises thanks to baking soda."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sourdough"
+  },
+  {
+    "id": "race_351",
+    "statement": {
+      "ru": "Первые кубики сахара сделали в Чехии.",
+      "en": "The first sugar cubes were made in what is now Czechia."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sugar_cube"
+  },
+  {
+    "id": "race_352",
+    "statement": {
+      "ru": "Галактику Андромеды можно увидеть без телескопа.",
+      "en": "You can see the Andromeda Galaxy without a telescope."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Andromeda_Galaxy"
+  },
+  {
+    "id": "race_353",
+    "statement": {
+      "ru": "Астронавты оставили на Луне зеркала, в которые до сих пор светят лазером.",
+      "en": "Astronauts left mirrors on the Moon that are still hit with lasers today."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lunar_Laser_Ranging_experiments"
+  },
+  {
+    "id": "race_354",
+    "statement": {
+      "ru": "Телескоп изобрёл Галилей.",
+      "en": "Galileo invented the telescope."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Telescope"
+  },
+  {
+    "id": "race_355",
+    "statement": {
+      "ru": "Облака Венеры состоят из серной кислоты.",
+      "en": "The clouds of Venus are made of sulphuric acid."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Atmosphere_of_Venus"
+  },
+  {
+    "id": "race_356",
+    "statement": {
+      "ru": "Звезду можно купить и официально назвать своим именем.",
+      "en": "You can buy a star and officially name it after yourself."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Stellar_designations_and_names"
+  },
+  {
+    "id": "race_357",
+    "statement": {
+      "ru": "Плутон до сих пор официально считается планетой.",
+      "en": "Pluto is still officially counted as a planet."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pluto"
+  },
+  {
+    "id": "race_358",
+    "statement": {
+      "ru": "На Титане, спутнике Сатурна, идут дожди из жидкого метана.",
+      "en": "On Titan, a moon of Saturn, it rains liquid methane."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Titan_(moon)"
+  },
+  {
+    "id": "race_359",
+    "statement": {
+      "ru": "На Венере Солнце встаёт на западе.",
+      "en": "On Venus the Sun rises in the west."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Venus"
+  },
+  {
+    "id": "race_360",
+    "statement": {
+      "ru": "Земля — самая плотная планета Солнечной системы.",
+      "en": "The Earth is the densest planet in the Solar System."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Earth"
+  },
+  {
+    "id": "race_361",
+    "statement": {
+      "ru": "Солнце в конце жизни станет чёрной дырой.",
+      "en": "At the end of its life the Sun will become a black hole."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sun"
+  },
+  {
+    "id": "race_362",
+    "statement": {
+      "ru": "«Хьюстон, у нас проблема» сказал Нил Армстронг на Луне.",
+      "en": "Neil Armstrong said 'Houston, we have a problem' on the Moon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Houston,_we_have_a_problem"
+  },
+  {
+    "id": "race_363",
+    "statement": {
+      "ru": "С открытия Нептуна прошёл всего один нептунианский год.",
+      "en": "Only one Neptunian year has passed since Neptune was discovered."
+    },
+    "answer": true,
+    "source": "https://www.space.com/12254-neptune-photos-hubble-telescope-discovery-anniversary.html"
+  },
+  {
+    "id": "race_364",
+    "statement": {
+      "ru": "Без скафандра в открытом космосе человек тут же взорвётся.",
+      "en": "Without a spacesuit in open space a person would explode at once."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Space_exposure"
+  },
+  {
+    "id": "race_365",
+    "statement": {
+      "ru": "Чайная ложка вещества нейтронной звезды весит миллиарды тонн.",
+      "en": "A teaspoon of neutron star matter weighs billions of tonnes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Neutron_star"
+  },
+  {
+    "id": "race_366",
+    "statement": {
+      "ru": "«Хаббл» летает вокруг Земли дальше Луны.",
+      "en": "Hubble orbits the Earth farther out than the Moon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope"
+  },
+  {
+    "id": "race_367",
+    "statement": {
+      "ru": "Корабль в поясе астероидов неизбежно врежется в камень.",
+      "en": "A spaceship in the asteroid belt is bound to hit a rock."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Asteroid_belt"
+  },
+  {
+    "id": "race_368",
+    "statement": {
+      "ru": "Растяжение тела у чёрной дыры учёные всерьёз зовут «спагеттификацией».",
+      "en": "Scientists really do call being stretched by a black hole 'spaghettification'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Spaghettification"
+  },
+  {
+    "id": "race_369",
+    "statement": {
+      "ru": "Спутник Юпитера Ганимед по размеру больше планеты Меркурий.",
+      "en": "Jupiter's moon Ganymede is bigger in size than the planet Mercury."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ganymede_(moon)"
+  },
+  {
+    "id": "race_370",
+    "statement": {
+      "ru": "Граница космоса проходит в 1000 км над Землёй.",
+      "en": "The edge of space lies 1,000 km above the Earth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/K%C3%A1rm%C3%A1n_line"
+  },
+  {
+    "id": "race_371",
+    "statement": {
+      "ru": "Все трое астронавтов «Аполлона-11» гуляли по Луне.",
+      "en": "All three Apollo 11 astronauts walked on the Moon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Apollo_11"
+  },
+  {
+    "id": "race_372",
+    "statement": {
+      "ru": "NASA потратило миллионы долларов на ручку для космоса.",
+      "en": "NASA spent millions of dollars on a pen for space."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Space_pen"
+  },
+  {
+    "id": "race_373",
+    "statement": {
+      "ru": "Солнечные пятна горячее остальной поверхности Солнца.",
+      "en": "Sunspots are hotter than the rest of the Sun's surface."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sunspot"
+  },
+  {
+    "id": "race_374",
+    "statement": {
+      "ru": "Солнце за год проходит через 13 созвездий.",
+      "en": "Over a year the Sun passes through 13 constellations."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ophiuchus"
+  },
+  {
+    "id": "race_375",
+    "statement": {
+      "ru": "Голубые звёзды горячее красных.",
+      "en": "Blue stars are hotter than red ones."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Stellar_classification"
+  },
+  {
+    "id": "race_376",
+    "statement": {
+      "ru": "Звёзды мерцают из-за воздуха Земли.",
+      "en": "Stars twinkle because of the Earth's air."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Twinkling"
+  },
+  {
+    "id": "race_377",
+    "statement": {
+      "ru": "МКС большую часть времени летает без экипажа.",
+      "en": "The ISS flies without a crew most of the time."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/International_Space_Station"
+  },
+  {
+    "id": "race_378",
+    "statement": {
+      "ru": "Если Солнце заменить чёрной дырой той же массы, Земля упадёт в неё.",
+      "en": "If the Sun were replaced by a black hole of the same mass, the Earth would fall into it."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Black_hole"
+  },
+  {
+    "id": "race_379",
+    "statement": {
+      "ru": "Уран вращается, лёжа на боку.",
+      "en": "Uranus spins lying on its side."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Uranus"
+  },
+  {
+    "id": "race_380",
+    "statement": {
+      "ru": "Флаг на Луне развевался от ветра.",
+      "en": "The flag on the Moon was waving in the wind."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories"
+  },
+  {
+    "id": "race_381",
+    "statement": {
+      "ru": "Экипаж «Аполлона-13» погиб.",
+      "en": "The crew of Apollo 13 died."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Apollo_13"
+  },
+  {
+    "id": "race_382",
+    "statement": {
+      "ru": "Астронавты оставили на Луне три автомобиля.",
+      "en": "Astronauts left three cars on the Moon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lunar_Roving_Vehicle"
+  },
+  {
+    "id": "race_383",
+    "statement": {
+      "ru": "В Юпитер поместилось бы больше тысячи Земель.",
+      "en": "More than a thousand Earths would fit inside Jupiter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jupiter"
+  },
+  {
+    "id": "race_384",
+    "statement": {
+      "ru": "Луна — самый большой спутник в Солнечной системе.",
+      "en": "The Moon is the biggest moon in the Solar System."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ganymede_(moon)"
+  },
+  {
+    "id": "race_385",
+    "statement": {
+      "ru": "На Юпитере можно встать на твёрдую поверхность.",
+      "en": "On Jupiter you could stand on a solid surface."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Jupiter"
+  },
+  {
+    "id": "race_386",
+    "statement": {
+      "ru": "МКС можно увидеть с Земли просто глазами.",
+      "en": "You can see the ISS from Earth with the naked eye."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/International_Space_Station"
+  },
+  {
+    "id": "race_387",
+    "statement": {
+      "ru": "Ракета «Сатурн-5» была выше статуи Свободы.",
+      "en": "The Saturn V rocket was taller than the Statue of Liberty."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Saturn_V"
+  },
+  {
+    "id": "race_388",
+    "statement": {
+      "ru": "Световой меч Люка Скайуокера со съёмок побывал в космосе.",
+      "en": "Luke Skywalker's lightsaber from the film set has been to space."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/STS-120"
+  },
+  {
+    "id": "race_389",
+    "statement": {
+      "ru": "Название «Плутон» придумала 11-летняя школьница.",
+      "en": "The name Pluto was thought up by an 11-year-old schoolgirl."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Venetia_Burney"
+  },
+  {
+    "id": "race_390",
+    "statement": {
+      "ru": "Хвост кометы всегда тянется позади неё.",
+      "en": "A comet's tail always trails behind it."
+    },
+    "answer": false,
+    "source": "https://www.skyandtelescope.com/astronomy-resources/astronomy-questions-answers/why-dont-we-on-earth-see-an-angled-view-of-comet-holmes-tail/"
+  },
+  {
+    "id": "race_391",
+    "statement": {
+      "ru": "Марсоход Curiosity работает на солнечных батареях.",
+      "en": "The Curiosity rover runs on solar panels."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Curiosity_(rover)"
+  },
+  {
+    "id": "race_392",
+    "statement": {
+      "ru": "Через 12 тысяч лет Полярной звездой станет Вега.",
+      "en": "In 12,000 years Vega will become the North Star."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vega"
+  },
+  {
+    "id": "race_393",
+    "statement": {
+      "ru": "Спутники Марса зовут Страх и Ужас.",
+      "en": "The moons of Mars are named Fear and Dread."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Moons_of_Mars"
+  },
+  {
+    "id": "race_394",
+    "statement": {
+      "ru": "В среднем ближе всего к Земле — Меркурий, а не Венера.",
+      "en": "On average the planet closest to the Earth is Mercury, not Venus."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mercury_(planet)"
+  },
+  {
+    "id": "race_395",
+    "statement": {
+      "ru": "Солнечное затмение случается в полнолуние.",
+      "en": "A solar eclipse happens at full moon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Solar_eclipse"
+  },
+  {
+    "id": "race_396",
+    "statement": {
+      "ru": "Солнечная система находится в самом центре Млечного Пути.",
+      "en": "The Solar System sits right at the centre of the Milky Way."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sun"
+  },
+  {
+    "id": "race_397",
+    "statement": {
+      "ru": "Луна вращается вокруг своей оси.",
+      "en": "The Moon spins on its own axis."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tidal_locking"
+  },
+  {
+    "id": "race_398",
+    "statement": {
+      "ru": "Кольца Сатурна — это сплошные твёрдые диски.",
+      "en": "Saturn's rings are solid discs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rings_of_Saturn"
+  },
+  {
+    "id": "race_399",
+    "statement": {
+      "ru": "Звёзды одного созвездия всегда находятся рядом друг с другом.",
+      "en": "The stars of one constellation are always close to each other."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Constellation"
+  },
+  {
+    "id": "race_400",
+    "statement": {
+      "ru": "На лунное затмение можно смотреть без защитных очков.",
+      "en": "You can watch a lunar eclipse without protective glasses."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lunar_eclipse"
+  },
+  {
+    "id": "race_401",
+    "statement": {
+      "ru": "Марс красный, потому что покрыт ржавчиной.",
+      "en": "Mars is red because it is covered in rust."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mars"
   }
 ]

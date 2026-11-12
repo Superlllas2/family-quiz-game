@@ -1,6 +1,6 @@
 # Plan: 3000 final race statements (D155, Nov 12, 2026)
 
-**Status:** the pilot batch (batch 1, 6 areas × 50) is being written. The game has 100 statements (`content/race.json`, D146); D155 asks for **3000**, so about 2900 new ones, written and checked in batches through the refining process (`refining_plan.md`), race statements first.
+**Status:** batch 1 (the pilot, 6 areas × 50) done Nov 12: `race.json` has 400 statements (`race_101` to `race_400`). Batches 2 to 6 wait for Ilia's read of the pilot. The game has 100 statements (`content/race.json`, D146); D155 asks for **3000**, so about 2900 new ones, written and checked in batches through the refining process (`refining_plan.md`), race statements first.
 
 ## What a good race statement is
 
@@ -37,6 +37,27 @@ About 32 areas, about 90 statements each, so no subject dominates an evening. Ar
 3. **An independent checker per two areas** who never saw the writers' reasoning reads every statement: is it clearly true or false, is the fact right per its source, would a family enjoy it (1 to 5). Statements marked wrong, ambiguous or 1 to 2 go back to the writer once, then are dropped.
 4. **`python tools/content/check_race.py --merge`** gives the new statements ids after the last one (`race_101` on) and appends them to `content/race.json`. An id is never reused or moved, so the seen lists on the laptops stay right.
 5. **A short report** per batch here: counts, true share, what was dropped and why, 5 best and 5 weakest.
+
+## Batch 1 report (Nov 12, 2026)
+
+300 new statements, 50 per area, 52 % true (each area 50 to 54 %). The longest Russian line is 76 characters.
+
+| Area | Facts wrong | Doubtful or arguable, fixed | Weak source, fixed | Too easy, replaced | Fun (checker, 1 to 5) |
+| --- | --- | --- | --- | --- | --- |
+| animals | 0 | 3 (koala, rabbits, a Russian-only pun) | 1 | 3 | 3.7 |
+| body | 0 | 3 (sleepwalkers, 36.6, the gut's length) | 0 | 5 | 3.4 |
+| food | 0 | 3 (instant noodles, black pasta, ketchup) | 1 | 7 | 3.5 |
+| space | 0 | 3 (cars on the Moon, black holes, Ganymede) | 2 | 2 | 3.7 |
+| ancient_medieval | 0 | 2 (silk smuggling, salting Carthage) | 1 | 4 | 3.3 |
+| films | 0 | 3 (Snow White first, Woody's voice, Shirley Temple) | 0 | 8 | 3.2 |
+
+Fun is the checker's score before the replacements. Writers dropped about 40 candidates on their own because sources disagreed (Nero's music in its first form, the Roman sponge, the Matrix sushi code, the Milky Way collision, spinach iron, Viking compass) or because a round question already used the fact.
+
+**What the checks taught, for batches 2 to 6:**
+- The race has no reveal text, so a statement must stand on its own: no fact whose truth depends on knowing an obscure exception (Snow White was "not the first" because of a lost 1917 film).
+- The English line must work too: no Russian-only puns (ворон / ворона).
+- "Comes from country X" and "the biggest planet" statements were the dullest; at most about 5 origin swaps per area.
+- Words like «у всех», «всегда», «любимая» either give the answer away or invite an argument.
 
 ## Not in this plan
 
