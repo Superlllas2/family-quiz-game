@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using FamilyQuiz.Presentation.Staging;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -8,7 +9,8 @@ namespace FamilyQuiz.Presentation.Graphics
     /// <summary>
     /// Puts <see cref="GraphicsOptions"/> on screen (decisions/0021): the window (display mode, resolution), VSync and
     /// the frame limit, texture detail and anisotropic filtering, and on the URP renderer the render scale, MSAA, shadows
-    /// and ambient occlusion; anti-aliasing on every camera; bloom and depth of field on the studio's film look volume.
+    /// and ambient occlusion; anti-aliasing on every camera; bloom and depth of field on the studio's film look volume;
+    /// the brightness (D161) on the studio's exposure, which <see cref="StudioStage"/> drives, so never on the UI.
     /// The studio loads later and cameras come and go, so cameras and volumes are checked again twice a second. In the
     /// editor the URP assets are put back on quit, so play mode never changes them.
     /// </summary>
@@ -173,6 +175,8 @@ namespace FamilyQuiz.Presentation.Graphics
                 if (profile.TryGet<Bloom>(out var bloom) && bloom.active != _options.Bloom) bloom.active = _options.Bloom;
                 if (profile.TryGet<DepthOfField>(out var dof) && dof.active != _options.DepthOfField) dof.active = _options.DepthOfField;
             }
+
+            foreach (var stage in FindObjectsByType<StudioStage>(FindObjectsSortMode.None)) stage.Brightness = (float)_options.Brightness;
         }
 
         private void Update()

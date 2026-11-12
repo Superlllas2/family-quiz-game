@@ -24,9 +24,11 @@ namespace FamilyQuiz.Tests.TvParts
             return plan;
         }
 
-        [TestCase(GamePhase.Lobby, Shot.Seats)]
+        [TestCase(GamePhase.Lobby, Shot.LobbyTour)] // D160: the camera tours the dim studio
         [TestCase(GamePhase.StartCountdown, Shot.Seats)]
         [TestCase(GamePhase.TopicVote, Shot.Curtain)]
+        [TestCase(GamePhase.TopicTie, Shot.Curtain)] // the TopicVote shot
+        [TestCase(GamePhase.Attacks, Shot.Wide)] // the Scores shot
         [TestCase(GamePhase.QuestionShow, Shot.Stage)]
         [TestCase(GamePhase.Answer, Shot.Wide)] // on the guests, the question card and tiles under them (0017)
         [TestCase(GamePhase.Reveal, Shot.Wide)]
@@ -40,6 +42,15 @@ namespace FamilyQuiz.Tests.TvParts
         public void EachPhaseHasItsShot(GamePhase phase, Shot shot)
         {
             Assert.That(In(phase, 1000).Current(1500).Shot, Is.EqualTo(shot));
+        }
+
+        [Test]
+        public void AJoiningPlayerNeverCutsTheLobbyTour()
+        {
+            // D160: the tour never cuts to a player who joins; a host greeting them does not cut either.
+            var plan = In(GamePhase.Lobby, 0);
+            plan.OnHostLine("konstantin", 4000);
+            Assert.That(plan.Current(100).Shot, Is.EqualTo(Shot.LobbyTour));
         }
 
         [Test]
@@ -112,10 +123,12 @@ namespace FamilyQuiz.Tests.TvParts
         [TestCase(GamePhase.Lobby)]
         [TestCase(GamePhase.StartCountdown)]
         [TestCase(GamePhase.TopicVote)]
+        [TestCase(GamePhase.TopicTie)]
         [TestCase(GamePhase.QuestionShow)]
         [TestCase(GamePhase.Answer)]
         [TestCase(GamePhase.Reveal)]
         [TestCase(GamePhase.Scores)]
+        [TestCase(GamePhase.Attacks)]
         [TestCase(GamePhase.RoundEnd)]
         [TestCase(GamePhase.Results)]
         public void NoHostSoloWherePlayersNeedTheSet(GamePhase phase)
@@ -150,7 +163,7 @@ namespace FamilyQuiz.Tests.TvParts
         {
             var plan = In(GamePhase.Poll, 0);
             plan.OnPhase(GamePhase.Lobby, 1000);
-            Assert.That(plan.Current(1100).Shot, Is.EqualTo(Shot.Seats));
+            Assert.That(plan.Current(1100).Shot, Is.EqualTo(Shot.LobbyTour));
             Assert.That(plan.LightLevel(1100), Is.EqualTo(0));
         }
 

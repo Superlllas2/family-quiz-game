@@ -20,12 +20,29 @@ namespace FamilyQuiz.Presentation.Staging
         public Transform StageShot;
         public Transform StagePushIn;
         public Transform WideShot;
+        /// <summary>The band seen from the floor (CAM_BandPreview); one of the Lobby tour's moves. Null in a scene built before D160.</summary>
+        public Transform BandShot;
         public float WideFieldOfView = 35f;
         public float SeatsFieldOfView = 34f;
         public float EstablishFieldOfView = 42f;
         public float HostSoloFieldOfView = 17f;
         public float CurtainFieldOfView = 38f;
         public float StageFieldOfView = 16f;
+
+        [Header("Lobby tour (D160, LobbyTourMoves): slow moves around the dim studio")]
+        // How far each sideways move travels from start to end, in metres (a dolly across the shot).
+        public float TourTruckMetres = 1.2f;
+        // How far each push in travels, in metres.
+        public float TourPushMetres = 0.9f;
+        // How far the camera turns over a move, in degrees, so the set slides past with some parallax.
+        public float TourPanDegrees = 4f;
+        // The desk move starts this far behind the host solo cameras, so both hosts and the desk are in frame.
+        public float TourDeskPullBackMetres = 2.2f;
+        // How far the wide from the back rises towards the establishing shot's start (0 none, 1 all the way).
+        public float TourBackRise = 0.35f;
+        public float TourDeskFieldOfView = 30f;
+        public float TourBandFieldOfView = 36f;
+        public Vector2 TourLens = new Vector2(50f, 2.8f);
 
         [Header("Lens (StudioLens): a bokeh focused on each shot's subject")]
         // Focal lengths in mm and f-stops, a little longer and wider open than the field of view alone gives, for the
@@ -52,7 +69,6 @@ namespace FamilyQuiz.Presentation.Staging
         public Light GuestKey;
         public Light HostKey;
         public Light[] StageLamps;
-        /// <summary>How far the studio is darkened at light level 0 (Seats), in exposure stops.</summary>
-        public float DarkStops = 2.2f;
+        // How far the studio is darkened at light level 0 is staging.lobby.darkStops in content/config.json (D160).
     }
 }

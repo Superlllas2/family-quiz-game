@@ -103,5 +103,62 @@ namespace FamilyQuiz.Tests.TvParts
             Assert.That(o.AntiAliasing, Is.EqualTo("msaa"));
             Assert.That(o.RenderScale, Is.EqualTo(100));
         }
+
+        // ------------------------------------------------------------ brightness (D161)
+
+        [Test]
+        public void BrightnessIsZeroByDefault()
+        {
+            Assert.That(new GraphicsOptions().Brightness, Is.EqualTo(0));
+        }
+
+        [Test]
+        public void BrightnessStepsAQuarterStopFromMinusOneToPlusTwo()
+        {
+            var steps = GraphicsOptions.BrightnessSteps;
+            Assert.That(steps.Length, Is.EqualTo(13));
+            Assert.That(steps[0], Is.EqualTo(-1));
+            Assert.That(steps[steps.Length - 1], Is.EqualTo(2));
+            for (int i = 1; i < steps.Length; i++) Assert.That(steps[i] - steps[i - 1], Is.EqualTo(0.25).Within(1e-12));
+            Assert.That(steps, Does.Contain(0.0));
+        }
+
+        [Test]
+        public void BrightnessStepsLikeTheOtherRows()
+        {
+            Assert.That(GraphicsOptions.Cycle(GraphicsOptions.BrightnessSteps, 0.0, 1), Is.EqualTo(0.25));
+            Assert.That(GraphicsOptions.Cycle(GraphicsOptions.BrightnessSteps, 0.0, -1), Is.EqualTo(-0.25));
+            Assert.That(GraphicsOptions.Cycle(GraphicsOptions.BrightnessSteps, 2.0, 1), Is.EqualTo(-1), "wraps round like every row");
+            Assert.That(GraphicsOptions.Cycle(GraphicsOptions.BrightnessSteps, -1.0, -1), Is.EqualTo(2));
+        }
+
+        [Test]
+        public void BrightnessIsNotPartOfTheQualityPreset()
+        {
+            var o = new GraphicsOptions { Brightness = 1.5 };
+            Assert.That(o.MatchingPreset(), Is.EqualTo("high"));
+            o.ApplyPreset("low");
+            Assert.That(o.Brightness, Is.EqualTo(1.5));
+        }
+
+        [Test]
+        public void BrightnessIsKeptOnTheLaptop()
+        {
+            var path = Path.Combine(_folder, GraphicsOptions.FileName);
+            new GraphicsOptions { Brightness = -0.75 }.Save(path);
+            Assert.That(GraphicsOptions.Load(path).Brightness, Is.EqualTo(-0.75));
+        }
+
+        [TestCase("{\"antiAliasing\":\"fxaa\"}")] // a file from before D161
+        [TestCase("{\"brightness\":7}")]
+        [TestCase("{\"brightness\":0.3}")]
+        [TestCase("{\"brightness\":\"bright\"}")]
+        public void AnOldFileOrAnUnknownBrightnessReadsAsZero(string text)
+        {
+            Directory.CreateDirectory(_folder);
+            var path = Path.Combine(_folder, GraphicsOptions.FileName);
+            File.WriteAllText(path, text);
+            Assert.That(GraphicsOptions.Load(path).Brightness, Is.EqualTo(0));
+        }
     }
 }

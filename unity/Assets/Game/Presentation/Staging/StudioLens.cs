@@ -47,6 +47,13 @@ namespace FamilyQuiz.Presentation.Staging
                     return;
             }
 
+            Focus(dof, lens, subject, camera);
+        }
+
+        /// <summary>A bokeh of lens (focal length in mm, f-stop) focused on subject, as seen from camera.</summary>
+        public static void Focus(DepthOfField dof, Vector2 lens, Vector3 subject, Transform camera)
+        {
+            if (dof == null) return;
             // Focus is the subject's depth along the lens axis, not its straight line distance.
             float distance = Mathf.Max(0.5f, Vector3.Dot(subject - camera.position, camera.forward));
             dof.mode.Override(DepthOfFieldMode.Bokeh);
@@ -60,16 +67,7 @@ namespace FamilyQuiz.Presentation.Staging
 
         private static Vector3 SeatCentre(StudioRig rig)
         {
-            var sum = Vector3.zero;
-            int n = 0;
-            foreach (var seat in rig.Seats)
-            {
-                if (seat == null) continue;
-                sum += seat.position;
-                n++;
-            }
-
-            return n > 0 ? sum / n + Vector3.up * 0.4f : Vector3.zero;
+            return LobbyTourMoves.SeatCentre(rig);
         }
 
         /// <summary>

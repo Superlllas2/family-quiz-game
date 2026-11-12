@@ -54,10 +54,14 @@ namespace FamilyQuiz.EditorTools.Studio
                         Practical = new Color(1f, 0.6f, 0.32f), PracticalScale = 1.25f,
                         Accent = new Color(1f, 0.6f, 0.32f), AccentIntensity = 8f, Strip = new Color(1f, 0.58f, 0.3f),
                         Window = new Color(0.45f, 0.58f, 1f), WindowIntensity = 1.8f,
-                        Fill = new Color(1f, 0.86f, 0.72f), FillIntensity = 2.4f,
+                        // D161 (Nov 12, 2026): more soft fill so the shadows read on a TV, the look kept: the audience
+                        // side fill 2.4 -> 3.2, the ambient about 0.7 stop up (0.06, 0.045, 0.035 before), a dim
+                        // fill from under the ceiling over each zone (none before) and the bounce 1.1 -> 1.25.
+                        Fill = new Color(1f, 0.86f, 0.72f), FillIntensity = 3.2f,
                         Key = new Color(1f, 0.86f, 0.7f), StageLamp = new Color(1f, 0.82f, 0.6f), StageLampIntensity = 32f,
                         Rim = new Color(1f, 0.84f, 0.66f), RimIntensity = 14f,
-                        Ambient = new Color(0.06f, 0.045f, 0.035f), CityEmission = 0.9f,
+                        Ambient = new Color(0.1f, 0.075f, 0.058f), CityEmission = 0.9f,
+                        CeilingFillIntensity = 2.5f, IndirectScale = 1.25f,
                         Contrast = 6f, Saturation = 0f, Temperature = 8f,
                         BloomIntensity = 0.7f, BloomThreshold = 0.9f,
                         FogDensity = 0.012f, FogColor = new Color(0.075f, 0.05f, 0.035f), BeamIntensity = 0.07f

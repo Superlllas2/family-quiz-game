@@ -122,6 +122,7 @@
   "tv.graphics.bloom": { "ru": "Свечение огней", "en": "Bloom" },
   "tv.graphics.depthOfField": { "ru": "Размытие фона", "en": "Depth of field" },
   "tv.graphics.anisotropic": { "ru": "Анизотропная фильтрация", "en": "Anisotropic filtering" },
+  "tv.graphics.brightness": { "ru": "Яркость", "en": "Brightness" },
   "tv.graphics.level.off": { "ru": "Выкл", "en": "Off" },
   "tv.graphics.level.low": { "ru": "Низкое", "en": "Low" },
   "tv.graphics.level.medium": { "ru": "Среднее", "en": "Medium" },

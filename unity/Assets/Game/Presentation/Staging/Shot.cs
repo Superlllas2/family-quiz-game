@@ -8,6 +8,9 @@ namespace FamilyQuiz.Presentation.Staging
         HostSolo,
         Curtain,
         Stage,
-        Wide
+        Wide,
+
+        /// <summary>The Lobby: slow moves around the dim studio (D160, LobbyTour). Last, so the other shots keep their numbers.</summary>
+        LobbyTour
     }
 }

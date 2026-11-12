@@ -1,4 +1,5 @@
 using System.IO;
+using FamilyQuiz.Core.Content;
 using FamilyQuiz.Presentation.Staging;
 using TMPro;
 using UnityEditor;
@@ -11,7 +12,8 @@ namespace FamilyQuiz.EditorTools.Studio
 {
     /// <summary>
     /// Renders every shot of the open Studio scene to PNG files, with stand in guests, hosts and answer cards, so the
-    /// three looks can be compared from screenshots (D99). Nothing is saved to the scene.
+    /// three looks can be compared from screenshots (D99), plus the start and end of every Lobby tour move (D160) at
+    /// the Lobby's darkness. Nothing is saved to the scene.
     /// </summary>
     public static class StudioCapture
     {
@@ -48,6 +50,7 @@ namespace FamilyQuiz.EditorTools.Studio
             float baseVignette = vignette != null ? vignette.intensity.value : 0f;
             float guestKey = rig.GuestKey.intensity;
             var dof = rig.Volume.sharedProfile.TryGet<DepthOfField>(out var d) ? d : null;
+            float darkStops = DarkStops();
 
             void Shot(string name, Transform pose, float fov, bool curtainOpen, bool showCards, bool dark, FamilyQuiz.Presentation.Staging.Shot lens = FamilyQuiz.Presentation.Staging.Shot.Stage)
             {
@@ -57,9 +60,9 @@ namespace FamilyQuiz.EditorTools.Studio
                 rig.CurtainLeft.localScale = new Vector3(curtainOpen ? 0.16f : 1f, 1f, 1f);
                 rig.CurtainRight.localScale = new Vector3(curtainOpen ? 0.16f : 1f, 1f, 1f);
                 cards.SetActive(showCards);
-                if (color != null) color.postExposure.value = baseExposure - (dark ? rig.DarkStops : 0f);
+                if (color != null) color.postExposure.value = (float)StudioExposure.PostExposure(baseExposure, dark ? 0 : 1, darkStops, 0);
                 if (vignette != null) vignette.intensity.value = dark ? Mathf.Max(baseVignette, 0.5f) : baseVignette;
-                rig.GuestKey.intensity = guestKey * (dark ? Mathf.Pow(2f, rig.DarkStops) : 1f);
+                rig.GuestKey.intensity = guestKey * (float)StudioExposure.KeyBoost(dark ? 0 : 1, darkStops);
                 Render(rig.Camera, Path.Combine(outDir, look + "_" + name + ".png"));
             }
 
@@ -81,10 +84,41 @@ namespace FamilyQuiz.EditorTools.Studio
                 Object.DestroyImmediate(pose.gameObject);
             }
 
+            // The Lobby tour (D160): the start and the end of each move, in the Lobby's dark studio.
+            var bandPose = rig.BandShot;
+            if (bandPose == null && band != null && bandTarget != null)
+            {
+                bandPose = new GameObject("BandPreviewPose").transform;
+                bandPose.SetPositionAndRotation(band.position, Quaternion.LookRotation(bandTarget.position - band.position));
+            }
+
+            var moves = LobbyTourMoves.Build(rig, bandPose);
+            var tourPose = new GameObject("TourPose").transform;
+            for (int i = 0; i < moves.Count; i++)
+            {
+                foreach (float t in new[] { 0f, 1f })
+                {
+                    moves[i].PoseAt(t, out var at, out var turn);
+                    tourPose.SetPositionAndRotation(at, turn);
+                    Shot("tour" + (i + 1) + "_" + moves[i].Name + (t < 0.5f ? "_start" : "_end"), tourPose, moves[i].FieldOfView, false, false, true,
+                        FamilyQuiz.Presentation.Staging.Shot.LobbyTour);
+                }
+            }
+
+            Object.DestroyImmediate(tourPose.gameObject);
+            if (bandPose != null && bandPose != rig.BandShot) Object.DestroyImmediate(bandPose.gameObject);
+            rig.GuestKey.intensity = guestKey;
             if (color != null) color.postExposure.value = baseExposure;
             if (vignette != null) vignette.intensity.value = baseVignette;
             Object.DestroyImmediate(stand);
             Debug.Log("Studio: captured look " + look + " to " + outDir);
+        }
+
+        /// <summary>staging.lobby.darkStops from the repo's content/config.json (D160).</summary>
+        private static float DarkStops()
+        {
+            var path = Path.Combine(FamilyQuiz.EditorTools.ContentCopy.SourceFolder, ConfigLoader.FileName);
+            return (float)ConfigLoader.Parse(File.ReadAllText(path)).Staging.Lobby.DarkStops;
         }
 
         private static Transform FindNamed(string name)
