@@ -2,7 +2,7 @@
 // The phone sends and receives the inner messages only; there is no envelope between relay and phone.
 
 import {
-  DEFAULT_FOG_SECONDS, DEFAULT_FREEZE_TAPS, DEFAULT_RATE_STARS, DEFAULT_SLIME_BLOBS, PROTOCOL_VERSION,
+  DEFAULT_FOG_SECONDS, DEFAULT_SABOTAGE_CAP_MS, DEFAULT_FREEZE_TAPS, DEFAULT_RATE_STARS, DEFAULT_SLIME_BLOBS, PROTOCOL_VERSION,
 } from './constants';
 
 export type Lang = 'ru' | 'en';
@@ -38,6 +38,10 @@ export interface ValueInputMessage {
 export interface TrueFalseInputMessage {
   v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'trueFalse'; answer: boolean; ms: number;
 }
+/** The Пас button in the final race (D157): locks the turn with no answer and no move. */
+export interface PassInputMessage {
+  v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'pass'; ms: number;
+}
 export interface PowerUpInputMessage {
   v: 2; type: 'input'; inputId: string; phaseId: PhaseId; kind: 'powerUp'; powerUp: PowerUpKind; target: string;
 }
@@ -50,7 +54,7 @@ export interface RateInputMessage {
 }
 /** Every `input` kind the phone sends (PROTOCOL.md section 3, `input` kinds). */
 export type InputMessage =
-  | ChoiceInputMessage | VoteInputMessage | ValueInputMessage | TrueFalseInputMessage
+  | ChoiceInputMessage | VoteInputMessage | ValueInputMessage | TrueFalseInputMessage | PassInputMessage
   | PowerUpInputMessage | EffectClearedInputMessage | RateInputMessage;
 export interface LobbyMessage { v: 2; type: 'lobby'; inputId: string; action: LobbyAction }
 export interface CharacterMessage { v: 2; type: 'character'; inputId: string; characterId: number }
@@ -95,6 +99,10 @@ export function trueFalseInputMessage(
   inputId: string, phaseId: PhaseId, answer: boolean, ms: number,
 ): TrueFalseInputMessage {
   return { v, type: 'input', inputId, phaseId, kind: 'trueFalse', answer, ms };
+}
+
+export function passInputMessage(inputId: string, phaseId: PhaseId, ms: number): PassInputMessage {
+  return { v, type: 'input', inputId, phaseId, kind: 'pass', ms };
 }
 
 export function lobbyMessage(inputId: string, action: LobbyAction): LobbyMessage {
@@ -181,6 +189,8 @@ export interface EffectParams {
   blobs: number;
   /** Fog: seconds until it has cleared by itself. */
   seconds: number;
+  /** The sabotage time left for this question from the moment this effect arrives (D148); then every effect melts. */
+  capMs: number;
 }
 export interface EffectMessage { type: 'effect'; effect: PowerUpKind; from: string; params: EffectParams }
 
@@ -281,7 +291,10 @@ function effectParams(x: unknown): EffectParams {
   const seconds = typeof p.seconds === 'number' && Number.isFinite(p.seconds) && p.seconds > 0
     ? p.seconds
     : DEFAULT_FOG_SECONDS;
-  return { taps: count(p.taps, DEFAULT_FREEZE_TAPS), blobs: count(p.blobs, DEFAULT_SLIME_BLOBS), seconds };
+  const capMs = typeof p.capMs === 'number' && Number.isFinite(p.capMs) && p.capMs >= 0
+    ? Math.round(p.capMs)
+    : DEFAULT_SABOTAGE_CAP_MS;
+  return { taps: count(p.taps, DEFAULT_FREEZE_TAPS), blobs: count(p.blobs, DEFAULT_SLIME_BLOBS), seconds, capMs };
 }
 
 // ---- defensive readers: a missing or broken field gets a harmless default, never a crash ----

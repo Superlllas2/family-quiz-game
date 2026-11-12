@@ -63,6 +63,7 @@
   "slider.plus": "More",
   "trueFalse.true": "True",
   "trueFalse.false": "False",
+  "trueFalse.pass": "Pass",
   "sabotage.freeze": "{name} froze you!",
   "sabotage.slime": "{name} slimed you!",
   "sabotage.fog": "{name} fogged you!",

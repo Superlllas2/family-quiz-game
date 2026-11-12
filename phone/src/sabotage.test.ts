@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import { AnswerClock, screenDrawn } from './answerClock';
 import type { EffectMessage, ScreenState } from './protocol';
-import { addEffect, clearShown, effectTextKey, overlayShown, queueForScreen, shownEffect } from './sabotage';
+import { addEffect, clearShown, effectTextKey, meltIfDue, overlayShown, queueForScreen, shownEffect } from './sabotage';
 
-const params = { taps: 10, blobs: 5, seconds: 6 };
+const params = { taps: 15, blobs: 6, seconds: 6, capMs: 12000 };
 const freeze: EffectMessage = { type: 'effect', effect: 'freeze', from: 'Papa', params };
 const slime: EffectMessage = { type: 'effect', effect: 'slime', from: 'Mama', params };
 const fog: EffectMessage = { type: 'effect', effect: 'fog', from: 'Bo', params };
@@ -133,5 +133,31 @@ describe('several effects on one phone play one after another (D145)', () => {
     expect(effectTextKey('freeze')).toBe('sabotage.freeze');
     expect(effectTextKey('slime')).toBe('sabotage.slime');
     expect(effectTextKey('fog')).toBe('sabotage.fog');
+  });
+});
+
+describe('the sabotage cap (D148)', () => {
+  it('every effect still waiting melts at capMs after the first one arrived, and nothing before', () => {
+    let q = addEffect(null, freeze, 16, 1000);
+    q = addEffect(q, slime, 16, 1000);
+    q = addEffect(q, fog, 16, 1000);
+    expect(meltIfDue(q, 12999)).toBe(q);
+    const melted = meltIfDue(q, 13000);
+    expect(melted?.waiting).toStrictEqual([]);
+    expect(shownEffect(melted)).toBeNull();
+    expect(overlayShown(melted, screen('answerChoice', 16))).toBe(false);
+  });
+
+  it('after a reload the TV sends what is left of the cap: the earliest end wins', () => {
+    const late = { ...freeze, params: { ...params, capMs: 4000 } };
+    let q = addEffect(null, late, 16, 5000);
+    q = addEffect(q, slime, 16, 5000);
+    expect(q?.capEndsAt).toBe(9000);
+  });
+
+  it('an effect cleared before the cap needs nothing more', () => {
+    const q = addEffect(null, freeze, 16, 1000);
+    const done = clearShown(q, 0, 4000);
+    expect(meltIfDue(done!.queue, 20000)?.waiting).toStrictEqual([]);
   });
 });

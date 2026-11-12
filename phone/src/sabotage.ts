@@ -6,6 +6,8 @@
 // phaseId (last call) keeps the queue, any other phaseId drops it. The overlay is drawn over the answer screen of that
 // phaseId and takes every tap until the queue is empty. The TV only accepts clears in order, so only the effect showing
 // can be cleared. The answer clock never stops for any of this (answerClock.ts is not touched here).
+// The cap (D148): each effect carries `capMs`, the sabotage time left from its arrival. When that runs out every effect
+// still waiting melts away at once, without an `effectCleared` (the TV knows the cap).
 
 import type { TextKey } from './i18n';
 import type { EffectMessage, EffectParams, PhaseId, PowerUpKind, ScreenState } from './protocol';
@@ -32,6 +34,8 @@ export interface EffectQueue {
   shownAt: number;
   /** The seq of the next effect to arrive. */
   nextSeq: number;
+  /** performance.now() when the cap runs out and every effect left melts (D148). */
+  capEndsAt: number;
 }
 
 /**
@@ -42,14 +46,24 @@ export function addEffect(
   queue: EffectQueue | null, msg: EffectMessage, phaseId: PhaseId | null, now: number,
 ): EffectQueue | null {
   if (phaseId === null) return queue;
-  const q = queue && queue.phaseId === phaseId ? queue : { phaseId, waiting: [], shownAt: now, nextSeq: 0 };
+  const capEndsAt = now + msg.params.capMs;
+  const q: EffectQueue = queue && queue.phaseId === phaseId
+    ? queue
+    : { phaseId, waiting: [], shownAt: now, nextSeq: 0, capEndsAt };
   const item: QueuedEffect = { seq: q.nextSeq, effect: msg.effect, from: msg.from, params: msg.params };
   return {
     phaseId,
     waiting: [...q.waiting, item],
     shownAt: q.waiting.length === 0 ? now : q.shownAt,
     nextSeq: q.nextSeq + 1,
+    capEndsAt: Math.min(q.capEndsAt, capEndsAt),
   };
+}
+
+/** At or after the cap (D148): the queue with every effect gone; before it, the queue as it is. */
+export function meltIfDue(queue: EffectQueue | null, now: number): EffectQueue | null {
+  if (!queue || queue.waiting.length === 0 || now < queue.capEndsAt) return queue;
+  return { ...queue, waiting: [], shownAt: now };
 }
 
 /** What is left of the queue when a screen with `phaseId` arrives. */

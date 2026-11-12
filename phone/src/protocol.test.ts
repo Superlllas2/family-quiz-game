@@ -4,7 +4,7 @@ import {
   effectClearedInputMessage, joinMessage, leaveMessage, lobbyData, lobbyMessage, parseIncoming, pickCharacterData,
   pausedData, pingMessage, playerView, pollData, pollMessage, powerUpInputMessage, rateData, rateInputMessage,
   rejoinMessage, resultData, resultsData,
-  settingsMessage, textData, topicVoteData, trueFalseInputMessage, valueInputMessage, voteInputMessage, waitingData,
+  passInputMessage, settingsMessage, textData, topicVoteData, trueFalseInputMessage, valueInputMessage, voteInputMessage, waitingData,
 } from './protocol';
 import { PROTOCOL_VERSION } from './constants';
 import { socketUrl } from './net/socketUrl';
@@ -45,6 +45,9 @@ describe('message builders match PROTOCOL.md section 3 exactly', () => {
     expect(JSON.stringify(trueFalseInputMessage('a4', 80, true, 2100)))
       .toBe('{"v":2,"type":"input","inputId":"a4","phaseId":80,"kind":"trueFalse","answer":true,"ms":2100}');
     expect(trueFalseInputMessage('a6', 80, false, 0).answer).toBe(false);
+    // The Пас button (D157), as in PROTOCOL.md.
+    expect(JSON.stringify(passInputMessage('a5', 82, 3900)))
+      .toBe('{"v":2,"type":"input","inputId":"a5","phaseId":82,"kind":"pass","ms":3900}');
   });
 
   it('lobby ready', () => {
@@ -174,18 +177,18 @@ describe('the rating card and the pause (D105, D109)', () => {
 describe('the effect message (sabotage on this phone)', () => {
   it('parses freeze, slime and fog with their params', () => {
     expect(parseIncoming('{"v":2,"type":"effect","effect":"freeze","from":"Papa","params":{"taps":6}}'))
-      .toStrictEqual({ type: 'effect', effect: 'freeze', from: 'Papa', params: { taps: 6, blobs: 5, seconds: 6 } });
-    expect(parseIncoming('{"v":2,"type":"effect","effect":"slime","from":"Мама","params":{"blobs":4}}'))
-      .toStrictEqual({ type: 'effect', effect: 'slime', from: 'Мама', params: { taps: 10, blobs: 4, seconds: 6 } });
+      .toStrictEqual({ type: 'effect', effect: 'freeze', from: 'Papa', params: { taps: 6, blobs: 6, seconds: 6, capMs: 12000 } });
+    expect(parseIncoming('{"v":2,"type":"effect","effect":"slime","from":"Мама","params":{"blobs":4,"capMs":9000}}'))
+      .toStrictEqual({ type: 'effect', effect: 'slime', from: 'Мама', params: { taps: 15, blobs: 4, seconds: 6, capMs: 9000 } });
     expect(parseIncoming('{"v":2,"type":"effect","effect":"fog","from":"Bo","params":{"seconds":2.5}}'))
-      .toStrictEqual({ type: 'effect', effect: 'fog', from: 'Bo', params: { taps: 10, blobs: 5, seconds: 2.5 } });
+      .toStrictEqual({ type: 'effect', effect: 'fog', from: 'Bo', params: { taps: 15, blobs: 6, seconds: 2.5, capMs: 12000 } });
   });
 
-  it('falls back to the config defaults (D145: 10 taps, 5 blobs, 6 seconds) for missing or broken params', () => {
+  it('falls back to the config defaults (D148: 15 taps, 6 blobs, 6 seconds, a 12 s cap) for missing or broken params', () => {
     expect(parseIncoming('{"v":2,"type":"effect","effect":"freeze"}'))
-      .toStrictEqual({ type: 'effect', effect: 'freeze', from: '', params: { taps: 10, blobs: 5, seconds: 6 } });
-    expect(parseIncoming('{"v":2,"type":"effect","effect":"slime","from":5,"params":{"taps":0,"blobs":-2,"seconds":"x"}}'))
-      .toStrictEqual({ type: 'effect', effect: 'slime', from: '', params: { taps: 10, blobs: 5, seconds: 6 } });
+      .toStrictEqual({ type: 'effect', effect: 'freeze', from: '', params: { taps: 15, blobs: 6, seconds: 6, capMs: 12000 } });
+    expect(parseIncoming('{"v":2,"type":"effect","effect":"slime","from":5,"params":{"taps":0,"blobs":-2,"seconds":"x","capMs":-1}}'))
+      .toStrictEqual({ type: 'effect', effect: 'slime', from: '', params: { taps: 15, blobs: 6, seconds: 6, capMs: 12000 } });
     // Counts are whole numbers.
     expect(parseIncoming('{"v":2,"type":"effect","effect":"freeze","params":{"taps":4.6,"blobs":2.2}}'))
       .toMatchObject({ params: { taps: 5, blobs: 2 } });

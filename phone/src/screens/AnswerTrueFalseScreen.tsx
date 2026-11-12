@@ -1,6 +1,7 @@
 // Screen `answerTrueFalse` (04 true or false, 06): two huge buttons side by side, "Правда / True" on the left (green)
 // and "Ложь / False" on the right (red), the same order and colours as the TV (D128, D129). No statement text: it is on the TV (D88). One tap locks: the tapped button
-// stays highlighted, the other dims, later taps are ignored. The answer clock starts when this screen is first drawn
+// stays highlighted, the other dims, later taps are ignored. Under them a wide neutral «Пас / Pass» button (D157): a
+// pass locks the turn with no answer and no move, so an unsure player is not punished with a step back. The answer clock starts when this screen is first drawn
 // for a phaseId. The countdown is in the top bar (app.tsx).
 
 import { useLayoutEffect } from 'preact/hooks';
@@ -21,10 +22,11 @@ interface Props {
   lang: Lang;
   screen: ScreenState;
   clock: AnswerClock;
-  /** The answer locked on this phaseId, if any. */
-  chosen: boolean | null;
+  /** The answer locked on this phaseId (true, false or a pass), if any. */
+  chosen: boolean | 'pass' | null;
   answerInput: TrackedInput | null;
   onAnswer(answer: boolean): void;
+  onPass(): void;
 }
 
 export function AnswerTrueFalseScreen(props: Props) {
@@ -51,6 +53,13 @@ export function AnswerTrueFalseScreen(props: Props) {
           );
         })}
       </div>
+      <PressButton
+        class={`answer tf-pass${chosen === null ? '' : chosen === 'pass' ? ' chosen' : ' dim'}`}
+        onPress={props.onPass}
+      >
+        <span class="tf-pass-text">{t(lang, 'trueFalse.pass')}</span>
+        {chosen === 'pass' ? <InputStatus lang={lang} input={props.answerInput} class="answer-status" /> : null}
+      </PressButton>
     </div>
   );
 }

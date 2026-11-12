@@ -12,12 +12,12 @@ import { addAttempt, armPick, canTarget, pickFor, pickView, type PickState } fro
 import {
   answerWindowMs, characterMessage, choiceInputMessage, effectClearedInputMessage, leaveMessage, lobbyData,
   lobbyMessage, playerView, pollData, pollMessage, powerUpInputMessage, rateData, rateInputMessage, resultData,
-  settingsMessage, trueFalseInputMessage, valueInputMessage, voteInputMessage,
+  passInputMessage, settingsMessage, trueFalseInputMessage, valueInputMessage, voteInputMessage,
   type AckedMessage, type IncomingMessage, type Lang, type PhaseId, type PlayerView, type ScreenState,
 } from './protocol';
 import { cardShown, closeCard, ratingFor, shownStars, tapStar, type RatingState } from './rating';
 import { shownReady, toggleReady } from './readyToggle';
-import { addEffect, clearShown, overlayShown, queueForScreen, shownEffect, type EffectQueue } from './sabotage';
+import { addEffect, clearShown, meltIfDue, overlayShown, queueForScreen, shownEffect, type EffectQueue } from './sabotage';
 import { AnswerChoiceScreen } from './screens/AnswerChoiceScreen';
 import { AnswerSliderScreen } from './screens/AnswerSliderScreen';
 import { AnswerTrueFalseScreen } from './screens/AnswerTrueFalseScreen';
@@ -77,7 +77,7 @@ export function App({ deps }: { deps: AppDeps }) {
   const [inputs, setInputs] = useState<Record<string, TrackedInput>>({});
   const [slots, setSlots] = useState<Partial<Record<Slot, SlotInput>>>({});
   /** What this phone sent for the current phase's one decision (door, choice, value, true or false). */
-  const [answer, setAnswer] = useState<{ phaseId: PhaseId; value: number | boolean } | null>(null);
+  const [answer, setAnswer] = useState<{ phaseId: PhaseId; value: number | boolean | 'pass' } | null>(null);
   /** The last Ready or Not ready tap, shown at once until the TV's next screen (D76). */
   const [readyTap, setReadyTap] = useState<boolean | null>(null);
   /** The phaseId already answered: set at once, so a second tap before the re-render is ignored too. */
@@ -215,6 +215,14 @@ export function App({ deps }: { deps: AppDeps }) {
     document.title = t(lang, 'app.title');
   }, [lang]);
 
+  // The sabotage cap (D148): when it runs out, every effect still on the screen melts away (no effectCleared).
+  useEffect(() => {
+    if (!effects || effects.waiting.length === 0) return undefined;
+    const timer = setTimeout(() => setEffects(meltIfDue(effectsRef.current, deps.now())),
+      Math.max(0, effects.capEndsAt - deps.now()));
+    return () => clearTimeout(timer);
+  }, [effects, deps]);
+
   const track = useCallback((input: TrackedInput) => {
     setInputs((all) => ({ ...all, [input.inputId]: input }));
   }, []);
@@ -256,7 +264,7 @@ export function App({ deps }: { deps: AppDeps }) {
    */
   const decide = (
     screenId: string,
-    value: number | boolean,
+    value: number | boolean | 'pass',
     build: (inputId: string, phaseId: PhaseId, ms: number) => AckedMessage,
   ): void => {
     if (!screen || screen.id !== screenId) return;
@@ -272,8 +280,10 @@ export function App({ deps }: { deps: AppDeps }) {
   /** What was sent on the current screen's phaseId, if it is of that type. */
   const sentNumber = (): number | null =>
     answer && screen && answer.phaseId === screen.phaseId && typeof answer.value === 'number' ? answer.value : null;
-  const sentBoolean = (): boolean | null =>
-    answer && screen && answer.phaseId === screen.phaseId && typeof answer.value === 'boolean' ? answer.value : null;
+  const sentTrueFalse = (): boolean | 'pass' | null =>
+    answer && screen && answer.phaseId === screen.phaseId && (typeof answer.value === 'boolean' || answer.value === 'pass')
+      ? answer.value
+      : null;
 
   const multiplier = player?.timerMultiplier ?? 1;
 
@@ -406,10 +416,11 @@ export function App({ deps }: { deps: AppDeps }) {
             lang={lang}
             screen={screen}
             clock={clock}
-            chosen={sentBoolean()}
+            chosen={sentTrueFalse()}
             answerInput={slotInput('answer')}
             onAnswer={(value) =>
               decide('answerTrueFalse', value, (id, phaseId, ms) => trueFalseInputMessage(id, phaseId, value, ms))}
+            onPass={() => decide('answerTrueFalse', 'pass', (id, phaseId, ms) => passInputMessage(id, phaseId, ms))}
           />
         );
         break;
