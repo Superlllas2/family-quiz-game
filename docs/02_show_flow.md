@@ -12,12 +12,12 @@ What the camera, the set, the guests and the band do in each phase is in `21_sta
 Lobby
 StartCountdown              3 s, starts when every connected player is ready; any Not ready stops it
 Intro
-Round 1  (multiplier 1.0)   TopicVote, then 4 x QuestionCycle, then RoundEnd
-Round 2  (multiplier 1.0)
-Round 3  (multiplier 1.5)
-Round 4  (multiplier 2.0)
+Round 1                     TopicVote (TopicTie on a tie), then 4 x QuestionCycle, then RoundEnd
+Round 2
+Round 3
+Round 4                     no round multipliers (D151): every question counts the same
 FinalIntro
-FinalRace                   up to 20 x RaceQuestion
+FinalRace                   RaceQuestion after RaceQuestion until someone reaches the finish (D157)
 Results
 Poll
 Lobby                       back to the Lobby: everyone taps Ready again for the next game (no intro)
@@ -31,25 +31,27 @@ Mini games are not in game night 1. When added later, one goes after rounds 1, 2
 
 | Phase | Suggested max duration (config key) | Ends early when | TV shows | Every phone shows |
 | --- | --- | --- | --- | --- |
-| Lobby | none | Every connected player tapped Ready and 2 or more are connected (`players.min`) | Room code, QR code, joined players as their characters with a ready mark each, "Tap Ready on your phone"; a host greets each new player (`playerJoined` line) | `join`, then `pickCharacter`, then `lobby` with Ready |
+| Lobby | none | Every connected player tapped Ready and 2 or more are connected (`players.min`) | The camera tours the dim studio in 5 s cuts (D160); fixed on screen: room code, QR code, joined players with a ready mark each, "Tap Ready on your phone"; a host greets each new player (`playerJoined` line) | `join`, then `pickCharacter`, then `lobby` with Ready |
 | StartCountdown | 3 s (`lobby.startCountdownSeconds`) | A connected player is not ready (taps Not ready, or a new player joined) or fewer than 2 are connected: back to Lobby | Big 3, 2, 1 and a short host line (`startCountdown`) | `countdown` with Not ready |
 | Intro | 30 s (`timers.intro`) | Never early | Title card and one `gameStart` line from each host, one after the other | `watch` (no prediction, D85) |
 | TopicVote | 20 s (`timers.topicVote`) | Every connected player voted | Four topic doors two by two (D128) and live vote counts | Four topic buttons. Votes arriving up to `net.inputGraceMs` after the 20 s still count (D84) |
-| QuestionShow | 10 s (`timers.questionShow`) | Never early | Question text, read time bar | `watch` (the question is on the TV only, D88) |
-| Answer | 20 s multiple choice (D140), 20 s closest value (`timers.answer.multipleChoice`, `timers.answer.closestValue`), times each player's timer multiplier | Every connected player locked in or passed their personal deadline. When all but one have locked in, the remaining player's time is cut to at most 5 s (`timers.lastCall`) | Question, options, countdown, character chips pop as players lock in (not what they chose) | Answer screen for the format (options, slider or True and False only, no question text); active sabotage effect on top if hit |
-| Reveal | 6 s (`timers.reveal`) | Never early | Correct answer highlighted, who got it right, points per player | `watch`; the power up pick if the player holds one (Day 4) |
-| Scores | 5 s (`timers.scores`) | Never early | Leaderboard rows move to new ranks | The same screen with the same phaseId: the power up pick continues (pick, then target) |
-| RoundEnd | 4 s (`timers.roundEnd`) | Never early | Round leaderboard, round winner, host line | `watch` |
-| FinalIntro | 8 s (`timers.finalIntro`) | Never early | Race track with head starts by rank, one line of rules | `watch` |
-| RaceQuestion | 12 s answer times each player's timer multiplier (`race.answer`) plus 2 s reveal (`race.reveal`) | Answer ends when every connected player answered or passed their personal deadline. No last call in the race | Statement with "True" and "False" side by side on its right end (D128, D129), track, players move on reveal | True and False buttons, then `watch` in the reveal |
+| TopicTie | 2.5 s (`timers.topicTie`), only when the vote tied or nobody voted (D153) | Never early | A spin between the tied doors (all four when nobody voted) that stops on the door the seeded random picked | `watch` |
+| QuestionShow | 12 s (`timers.questionShow`) | Never early | Question text, read time bar | `watch` (the question is on the TV only, D88) |
+| Answer | 20 s multiple choice (D140), 20 s closest value (`timers.answer.multipleChoice`, `timers.answer.closestValue`), times each player's timer multiplier | Every connected player locked in or passed their personal deadline. When all but one have locked in, the remaining player's time is cut to at most 5 s (`timers.lastCall`) | The question, very large, with no answer tiles (D150); countdown; character chips pop as players lock in (not what they chose); each sabotaged player's character wears its effects (D149) | Answer screen for the format (options or slider, no question text, D162); sabotage effects on top if hit, one after another, melting at the cap (D148) |
+| Reveal | 9 s (`timers.reveal`) | Never early | Correct answer highlighted, who got it right, points per player | `watch`; the power up pick if the player holds one (Day 4) |
+| Scores | 7 s (`timers.scores`) | Never early | Score cards in sofa order, each under its character, a crown on the leader's (D159); an arrow from attacker to target for every power up used (D149) | The same screen with the same phaseId: the power up pick continues (pick, then target) |
+| Attacks | 4 s (`timers.attacks`), only when a power up was used in this pick window (D149) | Never early | Every attack of this question at once: arrows from attackers to targets, the effect icons on the targets | The same screen and phaseId as Scores: the pick still counts |
+| RoundEnd | 6 s (`timers.roundEnd`) | Never early | Round leaderboard, round winner, host line | `watch` |
+| FinalIntro | 12 s (`timers.finalIntro`) | Never early | Race track with head starts by rank, the rules: right one step forward, wrong one step back, Пас stays (D157) | `watch` |
+| RaceQuestion | 12 s answer times each player's timer multiplier (`race.answer`) plus 4 s reveal (`race.reveal`) | Answer ends when every connected player answered, passed (Пас) or reached their personal deadline. No last call in the race | Statement with "True" and "False" side by side on its right end (D128, D129), track; on reveal players move forward or back | True and False side by side and Пас under them (D157), then `watch` in the reveal |
 | Results | 20 s (`timers.results`) | Never early | The winner (no places 2 and 3), two awards (most correct, best comeback), a funny tag for every other player (D86), a draining bar and "Back to the lobby in N" (D78) | The winner's phone: "You won!" and an interesting fact (D87). Everyone else: `watch` |
 | Poll | 90 s (`poll.maxSeconds`) | Every connected phone submitted | "Thanks! Fill in the poll on your phone" and a count of submitted polls | Poll questions, then "Thanks!" while others finish |
 
 After the Poll (with `poll.enabled` = false, after Results) the show returns to the Lobby (D76).
 
-A question cycle is QuestionShow, Answer, Reveal, Scores: about 26 s with a full multiple choice window (31 s for closest value), less when everyone answers early.
+A question cycle is QuestionShow, Answer, Reveal, Scores (and Attacks after an attack): at most 48 s with a full answer window and an attack, less when everyone answers early.
 
-**Game length without mini games:** measured from the end of the start countdown to the end of Results. A round takes at most about 3 minutes (vote 20 s, 4 cycles, round end 4 s), so 4 rounds, intro, final race and results come to about 12 to 14 minutes, and at most about 16 minutes with full answer windows (timers set again after the Nov 6, 2026 playtest, D126). Game length is an outcome, not a target (D127). The poll adds up to 90 s. The 15 to 19 minutes in the vision include 3 mini games, which come after game night 1.
+**Game length without mini games:** measured from the end of the start countdown to the end of Results. A round takes at most about 3.5 minutes (vote 20 s, 4 cycles, round end 6 s); with the longer race (D157) a game comes to about 15 to 18 minutes (timers set again after the Nov 8, 2026 playtest, D152). Game length is an outcome, not a target (D127). The poll adds up to 90 s. The 15 to 19 minutes in the vision include 3 mini games, which come after game night 1.
 
 ## Ranks
 
@@ -59,9 +61,15 @@ Rank is the position by total score, highest first. Equal scores share the bette
 
 1. **TopicVote:** four doors.
    - Door 4 is always the mixed door (`topics.mixedTopicId`, "Обо всём / A bit of everything", questions from any topic).
-   - Doors 1 to 3: the candidates are the topics not chosen earlier in this game. Among the candidates with at least 4 unseen questions (`topics.minUnseenToOffer`; any 4, of any format or difficulty), choose 3 with the seeded random generator.
-   - If fewer than 3 candidates qualify, fill the free doors with the other candidates that have the most unseen questions, then with topics chosen earlier in this game, most unseen first. Equal counts are ordered with the seeded random generator.
-   - Majority wins. Tie break: among the players who voted for one of the tied doors, the lowest ranked one decides; if several of them share the lowest rank, one of them is picked with the seeded random generator. If nobody voted, the seeded random generator picks one of the four doors.
+   - Doors 1 to 3 are the three shelves, always in this order (D154): door 1 `screen`, door 2 `knowledge`, door 3 `life` (the `shelf` of each topic in `topics.json`).
+   - For each shelf the candidates are its topics with at least 4 unseen questions (`topics.minUnseenToOffer`; any format or difficulty) that pass every rule:
+     1. not offered earlier in this game;
+     2. its `category` not chosen earlier in this game;
+     3. at most one `russian` topic among doors 1 to 3;
+     4. doors 1 to 3 not all `young` and not all `old`.
+   - Among the candidates, the topic offered longest ago comes first (a topic never offered counts as longest ago); equal ones in seeded random order. The offer history is saved in the seen file across games and evenings.
+   - When a shelf has no candidate, the rules are dropped one at a time from the last (4, then 3, then 2, then 1) until it has one; then the 4 unseen questions rule; a shelf with no topic at all takes one from another shelf.
+   - Majority wins. A tie, or nobody voted: the seeded random generator picks among the tied doors (all four when nobody voted), and TopicTie shows the spin (D153).
 2. **Questions:** 4 per round. The slots are, in order: easy multiple choice, medium multiple choice, medium multiple choice, hard closest value (`rounds.difficultyOrder`, `rounds.formatOrder`). For each slot, take a question of the slot's format and difficulty from the first of these groups that has one:
    1. unseen, from the chosen topic (any topic for the mixed door)
    2. unseen, from any topic
@@ -69,19 +77,19 @@ Rank is the position by total score, highest first. Equal scores share the bette
    4. seen, from any topic
 
    Within that group pick with the seeded random generator. A question is never used twice in the same game. Log a warning whenever group 1 had nothing.
-3. **Multiplier:** the round multiplier applies to every point earned in that round.
+3. **Multiplier:** none for now (D151): `rounds.multipliers` is 1 for every round.
 
 ## Seen questions
 
-Every game marks each question and race statement it uses as seen, when it is shown. The list is saved to disk, so it survives the next game, Back to lobby and app restarts. Only "Reset seen questions" in the TV settings panel clears it. The current bank holds exactly 2 Standard games without a repeat (16 medium questions, 24 race statements).
+Every game marks each question and race statement it uses as seen, when it is shown, and each topic offered on a door. The lists are saved to disk in the order they were seen, so they survive the next game, Back to lobby and app restarts. Only "Reset seen questions" in the TV settings panel clears them. When the unseen ones run out, the **least recently seen** comes back first (D155); seeing an item again moves it to the end of its list.
 
 ## The final race
 
-1. **Head start:** players are ranked by total score. The leader starts at step 3, last place at step 0, the others spread evenly between and rounded down (config `race.maxHeadStart` = 3, formula in `03_rules.md`). Equal scores get equal steps.
-2. **Questions:** true or false statements from `race.json`, unseen first, then seen, picked with the seeded random generator. Each player's window is 12 s (`race.answer`) times their timer multiplier. Correct moves the player 1 step (`race.stepsPerCorrect`). Wrong or no answer: no move.
-3. **Finish:** the race ends when a player reaches step 10 (`race.finishSteps`) or after 12 questions (`race.maxQuestions`). Several players may cross on the same question.
-4. **Winner:** the furthest player. Ties go to the higher total score before the race, then to the faster total answer time in the race, then to a seeded random pick.
-5. **Check:** at the start of the race, log `lastPlaceCanWin` = true when both hold: (the leader's head start minus last place's head start) is less than `race.maxQuestions`, and (`race.finishSteps` minus last place's head start) is at most `race.maxQuestions`. With the defaults (3 − 0 < 12 and 10 − 0 ≤ 12) this is always true; config validation refuses values that make it false for a head start gap of `race.maxHeadStart`.
+1. **Head start:** players are ranked by total score. The leader starts at step 4 (`race.maxHeadStart`), last place at step 0, the others spread evenly between and rounded down (formula in `03_rules.md`). Equal scores get equal steps.
+2. **Questions:** true or false statements from `race.json`: unseen first (seeded random), then the least recently seen (D155). Each player's window is 12 s (`race.answer`) times their timer multiplier. Correct moves the player 1 step forward (`race.stepsPerCorrect`); wrong moves them 1 step back (`race.stepsPerWrong`), never below 0; Пас or no answer: no move (D157).
+3. **Finish:** the race ends when a player reaches step 15 (`race.finishSteps`). There is no statement limit. Several players may cross on the same question. Safety stop: when no connected player answered or passed for 3 statements in a row (`race.idleStopStatements`), the race ends with the order as it stands.
+4. **Winner:** the furthest player. Ties go to the faster total answer time in the race, then to the higher total score before the race, then to a seeded random pick (D158).
+5. **Check:** `lastPlaceCanWin` is logged at the start of the race; with no statement limit it is always true.
 
 Ghosts and a chasing threat are left for after game night 1.
 

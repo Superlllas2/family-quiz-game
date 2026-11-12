@@ -29,12 +29,22 @@ Check the content with `node tools/validate_content.mjs` after every edit. The T
 
 ```json
 [
-  { "id": "geography", "title": { "ru": "География", "en": "Geography" } },
+  { "id": "geography", "title": { "ru": "География", "en": "Geography" },
+    "shelf": "knowledge", "category": "geography", "lean": "all", "russian": false },
   { "id": "mixed", "title": { "ru": "Обо всём", "en": "A bit of everything" }, "mixed": true }
 ]
 ```
 
-The topic with `"mixed": true` (id in `topics.mixedTopicId`) is the fourth door and draws from every topic.
+The topic with `"mixed": true` (id in `topics.mixedTopicId`) is the fourth door and draws from every topic; it has no shelf fields.
+
+Every other topic has (D154):
+
+| Field | Values | Meaning |
+| --- | --- | --- |
+| `shelf` | `screen`, `knowledge`, `life` | Which door it can stand on: door 1 screen (films, series, music, games), door 2 knowledge (history, science, nature, geography), door 3 life (food, brands, sport, people, oddities) |
+| `category` | a short id | Topics that feel alike share one (`film` for classic and modern films). Once a category is chosen in a game, no topic of it is offered again in that game |
+| `lean` | `young`, `old`, `all` | Who it suits more. A vote's three doors are never all `young` or all `old` |
+| `russian` | true or false | About Russia or the USSR. At most one per vote |
 
 ## questions.json
 

@@ -9,8 +9,8 @@ Game night 1 has three formats: multiple choice and closest value in rounds, tru
 | | |
 | --- | --- |
 | Used in | Round slots 1 to 3 |
-| TV | The question, large, and four empty tiles in a 2x2 grid labelled A, B, C, D in the phone's colours: the option texts are on the phones only (D141). Countdown, players' tokens |
-| Phone | During QuestionShow: question text only. During Answer: four big buttons in a 2x2 grid, same order, letter and color as the TV, option text on each button |
+| TV | During Answer: the question, very large, and no answer tiles (D150): the option texts are on the phones only (D141). Countdown, players' tokens. At Reveal the four options appear 2x2, A to D in the phone's colours, with the correct one marked (D142) |
+| Phone | During QuestionShow: `watch`; the phone never shows the question (D162). During Answer: four big buttons in a 2x2 grid, same order, letter and color as the TV, option text on each button |
 | Timer | 20 s (D140) times the player's timer multiplier, ends early when all locked in. Last call is off (`timers.lastCallEnabled`, D119) |
 | Input | One tap locks the answer. No changing after the tap |
 | Scoring | Speed curve, 500 to 1,000 points times the multiplier (`03_rules.md`) |
@@ -26,7 +26,7 @@ Game night 1 has three formats: multiple choice and closest value in rounds, tru
 | Phone | A horizontal slider across the full width from `range.min` to `range.max`, a big number above it showing the current value with its unit, plus and minus buttons for fine steps of `step`, and a Lock button. The slider starts in the middle |
 | Timer | 20 s times the player's timer multiplier, ends early when all locked in; last call cuts the last player to 5 s |
 | Input | Move the slider, then tap Lock. No changing after Lock. If time runs out without Lock, no answer |
-| Scoring | By distance with `tolerance`, plus +200 for the closest (`03_rules.md`) |
+| Scoring | By distance: from 1000 at the exact band down to 0 at 3× the `tolerance` (D156), plus +200 for the closest (`03_rules.md`) |
 | Reveal | The TV shows a number line with every player's guess as their character chip and the true answer as a flag; the closest chip gets a crown |
 
 ## True or false (`trueFalse`)
@@ -35,9 +35,9 @@ Game night 1 has three formats: multiple choice and closest value in rounds, tru
 | --- | --- |
 | Used in | The final race |
 | TV | The statement, the race track with all players |
-| Phone | Two huge buttons side by side: "Правда / True" on the left (green) and "Ложь / False" on the right (red), the same order and colours as the pair on the TV's statement card (D128, D129) |
+| Phone | Two huge buttons side by side: "Правда / True" on the left (green) and "Ложь / False" on the right (red), the same order and colours as the pair on the TV's statement card (D128, D129); a wide «Пас» button under them (D157) |
 | Timer | 12 s times the player's timer multiplier, ends early when all answered. No last call |
-| Scoring | Correct moves 1 step. No points |
+| Scoring | Correct moves 1 step forward, wrong 1 step back (never below 0), Пас or no answer stays (D157). No points |
 | Reveal | 2 s: the right answer is shown and players who were right move forward one step |
 
 ## Picture and sound questions (a `media` field)

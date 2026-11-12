@@ -122,7 +122,8 @@ The TV app starts and stops the countdown itself, never on a tap alone (D76): in
 | `choice` | `choice` (0 to 3, index in the displayed order), `ms` | `{"v":2,"type":"input","inputId":"a2","phaseId":16,"kind":"choice","choice":1,"ms":3410}` |
 | `value` | `value` (number), `ms` | `{"v":2,"type":"input","inputId":"a3","phaseId":31,"kind":"value","value":1889,"ms":11200}` |
 | `trueFalse` | `answer` (true or false), `ms` | `{"v":2,"type":"input","inputId":"a4","phaseId":80,"kind":"trueFalse","answer":true,"ms":2100}` |
-| `powerUp` | `powerUp` (`freeze`, `slime`, `fog`), `target` (playerId) | During Reveal and Scores (one phaseId) |
+| `pass` | `ms` | The Пас button in RaceQuestion (D157): locks the turn with no answer and no move. `{"v":2,"type":"input","inputId":"a5","phaseId":82,"kind":"pass","ms":3900}` |
+| `powerUp` | `powerUp` (`freeze`, `slime`, `fog`), `target` (playerId) | During Reveal, Scores and Attacks (one phaseId, D149) |
 | `effectCleared` | `effect`, `ms` (time to clear) | When a sabotage overlay is cleared, for telemetry |
 | `rate` | `item` (an id from the screen's `rate.items`), `stars` (1 to 5) | A tap on the rating card in Reveal and Scores (one phaseId), while question feedback is on (D109). Example: `{"v":2,"type":"input","inputId":"r1","phaseId":17,"kind":"rate","item":"fun","stars":4}` |
 
@@ -153,7 +154,7 @@ An object from poll question id to the answer: a string for `text` questions (ma
 | `snapshot` | `player`, `screen` | Right after `welcome`, and whenever the phone needs a full refresh |
 | `screen` | `phaseId`, `id`, `endsInMs` (or null), `data` | Every time this phone's screen changes, and at last call |
 | `ack` | `inputId`, `ok`, `reason` (if not ok) | After every `character`, `input`, `lobby`, `leave`, `poll` |
-| `effect` | `effect`, `from` (name), `params` | Sabotage starts on this phone, at the start of an Answer phase |
+| `effect` | `effect`, `from` (name), `params` | Sabotage starts on this phone, at the start of an Answer phase. `params`: `taps` (freeze), `blobs` (slime) or `seconds` (fog), and on every effect `capMs`: the sabotage time left for this question, counted from the moment the options appear (D148). At `capMs` the phone removes every effect still showing, without sending `effectCleared` |
 | `player` | the `player` object | When score, rank, held power up, character or settings change |
 | `pong` | `t` (echo), `tv` (TV clock ms) | Reply to `ping` |
 
@@ -189,7 +190,7 @@ The phone is an input device (D88): it shows a screen with a decision (join, cha
 
 While the game is paused (the pause menu on the laptop, D105) every phone gets `paused` with the current `phaseId`, whatever the phase; a phone that joins or reloads meanwhile gets it too. On Continue every phone gets its current screen again with the same `phaseId` and a fresh `endsInMs`.
 
-Which screen each phase sends: Lobby `lobby` (or `join`, `pickCharacter`), StartCountdown `countdown`, Intro `watch`, TopicVote `topicVote` then `waiting`, QuestionShow `watch`, Answer the answer screen then `waiting`, Reveal and Scores `watch` (or `result` with a power up), RoundEnd `watch`, FinalIntro `watch`, RaceQuestion `answerTrueFalse` then `waiting`, RaceReveal `watch`, Results `results` to the winner and `watch` to everyone else, Poll `poll` then `pollDone`.
+Which screen each phase sends: Lobby `lobby` (or `join`, `pickCharacter`), StartCountdown `countdown`, Intro `watch`, TopicVote `topicVote` then `waiting`, QuestionShow `watch`, Answer the answer screen then `waiting`, TopicTie `watch` (D153), Reveal, Scores and Attacks `watch` (or `result` with a power up; one phaseId, D149), RoundEnd `watch`, FinalIntro `watch`, RaceQuestion `answerTrueFalse` (True, False and Пас, D157) then `waiting`, RaceReveal `watch`, Results `results` to the winner and `watch` to everyone else, Poll `poll` then `pollDone`.
 
 | id | data |
 | --- | --- |

@@ -32,10 +32,10 @@ The phone is an input device (D88): it shows a screen only when the player has s
 | `topicVote` | TopicVote | Four topic buttons two by two, in the TV's order and colours: 1 and 2 on top, 3 and 4 (the mixed door, plum) below; a coloured band on top of each with the number coin (D128) | Vote | `waiting` |
 | `answerChoice` | Answer, multiple choice | Four buttons 2x2 with the option texts, each a quarter of the space below the top bar; the countdown. No question text: it is on the TV | Tap one | `waiting` |
 | `answerSlider` | Answer, closest value | Slider, big value with the unit, plus and minus, Lock, the countdown. No question text | Lock | `waiting` |
-| `answerTrueFalse` | RaceQuestion | Two buttons side by side: "Правда / True" on the left (green), "Ложь / False" on the right (red), as on the TV (D128, D129); the countdown. No statement text | Tap one | `waiting` |
+| `answerTrueFalse` | RaceQuestion | Two buttons side by side: "Правда / True" on the left (green), "Ложь / False" on the right (red), as on the TV (D128, D129); under them a wide "Пас / Pass" button in a neutral colour (D157); the countdown. No statement text | Tap one: True or False (`trueFalse`), or Пас (`pass`) | `waiting` |
 | `sabotage` | Overlay on any answer screen when hit | Freeze: ice layer with a tap counter (`powerUps.freeze.taps` taps). Slime: `powerUps.slime.blobs` blobs to swipe off. Fog: blur layer that clears in `powerUps.fog.seconds` or faster by rubbing. The TV sends the numbers in the `effect` params. Text: "{name} заморозил тебя! / {name} froze you!". Several effects on one phone in one Answer phase (up to `powerUps.maxHitsPerQuestion`, D145) play one after another, in the order they arrived: when one is cleared the phone sends its `effectCleared` (its `ms` counted from when that effect started showing) and the next starts showing at once, with its own text and its own fog timer. The overlay takes every tap until the last one is cleared. A last call (same phaseId) keeps them; another phaseId drops them; after a reload the TV sends again every effect not cleared yet, in order | Clear it | The next effect, then the answer screen below |
 | `waiting` | After an input, until the phase ends | "Ответ принят / Locked: B" (or the value, the door, True or False) with the ack check mark | None | Next screen sent |
-| `result` | Reveal and Scores (one phaseId), only for a player holding a power up (Day 4) | The power up card, tap it, then a row of target buttons (greyed if hit or immune) | Use power up (optional) | Next screen sent |
+| `result` | Reveal, Scores and Attacks (one phaseId, D149), only for a player holding a power up (Day 4) | The power up card, tap it, then a row of target buttons (greyed once a target has `powerUps.maxHitsPerQuestion` hits waiting, or is immune) | Use power up (optional) | Next screen sent |
 | `results` | Results, the winner only | "Победа! / You won!", "Твоя награда — интересный факт / Your prize: a fun fact" and the fact (D87) | None | `poll`, or `lobby` with the poll off |
 | `poll` | Poll | One question per page, seven pages (`20_playtest.md` lists them); Next and Submit | Answer | `pollDone` |
 | `pollDone` | After submitting, until the poll phase is over | "Спасибо! / Thanks!" | None | `lobby` once the poll phase is over (everyone submitted or 90 s passed) |
@@ -54,7 +54,7 @@ The phone is an input device (D88): it shows a screen only when the player has s
 join -> pickCharacter -> lobby -> countdown -> watch (intro)
   -> [ topicVote -> waiting
        -> 4 x ( watch -> answerChoice | answerSlider -> waiting -> watch or result ) -> watch ] x 4
-  -> watch (final intro) -> up to 20 x ( answerTrueFalse -> waiting -> watch )
+  -> watch (final intro) -> ( answerTrueFalse -> waiting -> watch ) until someone finishes
   -> results (winner) or watch -> poll -> pollDone -> lobby (everyone Ready again: countdown -> topicVote)
 countdown -> Not ready -> back to lobby.
 Back to lobby (TV settings panel) sends every phone to lobby from any screen.
