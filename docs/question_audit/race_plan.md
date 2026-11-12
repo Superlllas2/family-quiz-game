@@ -1,6 +1,6 @@
 # Plan: 3000 final race statements (D155, Nov 12, 2026)
 
-**Status:** batch 1 (the pilot, 6 areas × 50) done Nov 12: `race.json` has 400 statements (`race_101` to `race_400`). Batches 2 to 6 wait for Ilia's read of the pilot. The game has 100 statements (`content/race.json`, D146); D155 asks for **3000**, so about 2900 new ones, written and checked in batches through the refining process (`refining_plan.md`), race statements first.
+**Status:** done Nov 12, 2026. `content/race.json` has **3077 statements** (`race_001` to `race_3078`; `race_001`–`race_100` are the D146 ones). Batch 1 was the pilot; Ilia then asked for batches 2 to 6 "straight through, all in one run". The game has 100 statements (`content/race.json`, D146); D155 asks for **3000**, so about 2900 new ones, written and checked in batches through the refining process (`refining_plan.md`), race statements first.
 
 ## What a good race statement is
 
@@ -58,6 +58,33 @@ Fun is the checker's score before the replacements. Writers dropped about 40 can
 - The English line must work too: no Russian-only puns (ворон / ворона).
 - "Comes from country X" and "the biggest planet" statements were the dullest; at most about 5 origin swaps per area.
 - Words like «у всех», «всегда», «любимая» either give the answer away or invite an argument.
+
+## Batches 2 to 6 report (Nov 12, 2026)
+
+**2977 new statements in 73 area files** (`tools/content/race/`), plus the 100 from D146. 54 % true overall; every area file is between 45 % and 59 % true. Russian lines average 52 characters, the longest is 90. 2812 of the sources are Wikipedia pages; the rest are Guinness, Scientific American, NASA, Live Science, Mental Floss and similar.
+
+**How:** each area was split into two halves written in parallel (45 statements each), then a second set of 45 for the pilot areas and nine new areas (books, mythology, TV series, famous people, geography, art, sea life, small creatures, everyday science) to reach 3000. Every file then went to an independent checker who had not written it and who **deleted** anything wrong, contested, arguable, stale or dull, fixed wording and sources, and checked repeats against everything merged so far. Writers had already dropped facts whose sources disagreed or that a round question uses.
+
+**What the checkers removed:** of 3315 written in batches 2 to 6, about 340 (10 %) were deleted. No answer was found wrong. The deletions were facts with a contested source or rival "firsts" (the first TV picture, the first cash machine), wording a pedant could argue (Auckland "was" the capital, the Mongol Empire "twice" Rome), facts that go stale (the most popular baby name, Norway's EV share, Sagrada Família's build time), bare numbers, things everyone knows, cross-file repeats, and a few not right for a family evening (a chastity belt, Nike's slogan from an executed man's last words).
+
+**Rules added during the run** (followed by the later writers and checkers): at most about 4 "comes from country X" statements per file; at most 2 statements on one subject (Pokémon, Everest, Newton, Japan…); nothing that depends on a yearly number; the English line must work on its own (no Russian-only puns). `check_race.py --merge <files>` merges only the named, checked files; its Russia keyword search no longer matches Rossini or Prussia.
+
+| Area file | Kept | Area file | Kept | Area file | Kept |
+| --- | --- | --- | --- | --- | --- |
+| animals, animals_2 | 50, 40 | food, food_2 | 50, 42 | music_a, music_b | 43, 40 |
+| body, body_2 | 50, 36 | drinks_a, drinks_b | 41, 41 | games_a, games_b | 39, 41 |
+| space, space_2 | 50, 40 | plants_a, plants_b | 41, 39 | sport_a, sport_b | 43, 38 |
+| ancient_medieval, _2 | 50, 38 | earth_a, earth_b | 36, 40 | money_a, money_b | 41, 42 |
+| films, films_2 | 50, 37 | physics_a, physics_b | 37, 40 | records_a, records_b | 41, 38 |
+| sea_a, sea_b, sea_2 | 43, 42, 42 | chem_a, chem_b | 40, 34 | household_a, household_b | 37, 37 |
+| insects_a, insects_b, insects_2 | 45, 39, 43 | inventions_a, inventions_b | 41, 34 | holidays_a, holidays_b | 38, 39 |
+| medicine_a, medicine_b | 41, 42 | computers_a, computers_b | 38, 42 | transport_a, transport_b | 42, 41 |
+| modern_a, modern_b | 42, 39 | countries_a, countries_b, geo_2 | 40, 34, 40 | dinos_a, dinos_b | 40, 39 |
+| explorers_a, explorers_b | 39, 41 | landmarks_a, landmarks_b | 39, 42 | myths_a, myths_b | 40, 42 |
+| words_a, words_b | 44, 43 | art_a, art_b, art_2 | 41, 40, 41 | books_a, mythology_a | 41, 37 |
+| series_a, people_a | 39, 43 | science_2 | 37 | | |
+
+**Known limits:** the checker's repeat search is word based, so two statements on the same subject with different facts can still meet in one evening (136 such pairs were read and kept on purpose). Statements are drawn at random from the unseen ones, so an evening's race mixes all areas.
 
 ## Not in this plan
 
