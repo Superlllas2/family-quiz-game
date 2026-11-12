@@ -22615,5 +22615,743 @@
     },
     "answer": false,
     "source": "https://en.wikipedia.org/wiki/Chocolate_bloom"
+  },
+  {
+    "id": "race_2515",
+    "statement": {
+      "ru": "Средневековые рыцари, уходя в поход, надевали на жён пояс верности.",
+      "en": "Medieval knights going off to war locked their wives in chastity belts."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chastity_belt"
+  },
+  {
+    "id": "race_2516",
+    "statement": {
+      "ru": "Авраам Линкольн состоит в Национальном зале славы борьбы США.",
+      "en": "Abraham Lincoln is in the US National Wrestling Hall of Fame."
+    },
+    "answer": true,
+    "source": "https://nwhof.org/hall_of_fame/bio/128"
+  },
+  {
+    "id": "race_2517",
+    "statement": {
+      "ru": "Юлий Цезарь появился на свет с помощью кесарева сечения.",
+      "en": "Julius Caesar was born by caesarean section."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Caesarean_section"
+  },
+  {
+    "id": "race_2518",
+    "statement": {
+      "ru": "Над Колизеем натягивали огромный тент, чтобы зрителей не пекло солнце.",
+      "en": "A huge awning was stretched over the Colosseum to shade the spectators."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Colosseum"
+  },
+  {
+    "id": "race_2519",
+    "statement": {
+      "ru": "О пропавшем человеке можно заявить в полицию только через сутки.",
+      "en": "You can only report a missing person to the police after 24 hours."
+    },
+    "answer": false,
+    "source": "https://www.policenews.act.gov.au/node/466"
+  },
+  {
+    "id": "race_2520",
+    "statement": {
+      "ru": "Чарльз Дарвин и Авраам Линкольн родились в один и тот же день.",
+      "en": "Charles Darwin and Abraham Lincoln were born on the very same day."
+    },
+    "answer": true,
+    "source": "https://www.britannica.com/topic/The-Darwin-Lincoln-Double-Bicentennial-2222484"
+  },
+  {
+    "id": "race_2521",
+    "statement": {
+      "ru": "Музыканты «Титаника» продолжали играть, когда корабль уже тонул.",
+      "en": "The Titanic's musicians kept playing while the ship was sinking."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wallace_Hartley"
+  },
+  {
+    "id": "race_2522",
+    "statement": {
+      "ru": "Галилей прямо на суде инквизиции воскликнул: «А всё-таки она вертится!»",
+      "en": "Right at his trial before the Inquisition, Galileo cried: 'And yet it moves!'"
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Eppur_si_muove"
+  },
+  {
+    "id": "race_2523",
+    "statement": {
+      "ru": "Мозг Эйнштейна после его смерти забрал врач — не спросив разрешения семьи.",
+      "en": "After Einstein died, a doctor took his brain without asking his family."
+    },
+    "answer": true,
+    "source": "https://www.nationalgeographic.com/science/article/the-tragic-story-of-how-einsteins-brain-was-stolen-and-wasnt-even-special"
+  },
+  {
+    "id": "race_2524",
+    "statement": {
+      "ru": "Почти все, кто вскрывал гробницу Тутанхамона, вскоре умерли.",
+      "en": "Almost everyone who opened Tutankhamun's tomb soon died."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Curse_of_the_pharaohs"
+  },
+  {
+    "id": "race_2525",
+    "statement": {
+      "ru": "Генрих VIII казнил четырёх из своих шести жён.",
+      "en": "Henry VIII had four of his six wives executed."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Wives_of_Henry_VIII"
+  },
+  {
+    "id": "race_2526",
+    "statement": {
+      "ru": "У знаменитых «голов» острова Пасхи есть тела, скрытые в земле.",
+      "en": "The famous 'heads' of Easter Island have bodies hidden underground."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Moai"
+  },
+  {
+    "id": "race_2527",
+    "statement": {
+      "ru": "Яблоко, натолкнувшее Ньютона на мысль о тяготении, упало ему на голову.",
+      "en": "The apple that gave Newton the idea of gravity fell on his head."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Isaac_Newton"
+  },
+  {
+    "id": "race_2528",
+    "statement": {
+      "ru": "«Безумие — делать одно и то же и ждать другого результата», — сказал Эйнштейн.",
+      "en": "'Insanity is doing the same thing over and over and expecting different results,' said Einstein."
+    },
+    "answer": false,
+    "source": "https://quoteinvestigator.com/2017/03/23/same/"
+  },
+  {
+    "id": "race_2529",
+    "statement": {
+      "ru": "Выражение «выживает сильнейший» придумал Чарльз Дарвин.",
+      "en": "The phrase 'survival of the fittest' was coined by Charles Darwin."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Survival_of_the_fittest"
+  },
+  {
+    "id": "race_2530",
+    "statement": {
+      "ru": "Фраза «Знание — сила» принадлежит философу Фрэнсису Бэкону.",
+      "en": "The phrase 'Knowledge is power' comes from the philosopher Francis Bacon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Scientia_potentia_est"
+  },
+  {
+    "id": "race_2531",
+    "statement": {
+      "ru": "Король Кнуд велел морю отступить, потому что считал себя всемогущим.",
+      "en": "King Canute ordered the tide back because he thought he was all-powerful."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/King_Canute_and_the_tide"
+  },
+  {
+    "id": "race_2532",
+    "statement": {
+      "ru": "В крупных средневековых городах Европы было много общественных бань.",
+      "en": "Large medieval European towns had many public bathhouses."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_history"
+  },
+  {
+    "id": "race_2533",
+    "statement": {
+      "ru": "Знатные египтяне брили головы наголо и носили парики.",
+      "en": "Wealthy ancient Egyptians shaved their heads and wore wigs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wig"
+  },
+  {
+    "id": "race_2534",
+    "statement": {
+      "ru": "У древних римлян была богиня канализации.",
+      "en": "The ancient Romans had a goddess of the sewers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cloacina"
+  },
+  {
+    "id": "race_2535",
+    "statement": {
+      "ru": "Генри Форд говорил: «Спроси я людей, они попросили бы быструю лошадь».",
+      "en": "Henry Ford said: 'If I had asked people, they would have wanted a faster horse.'"
+    },
+    "answer": false,
+    "source": "https://quoteinvestigator.com/2011/07/28/ford-faster-horse/"
+  },
+  {
+    "id": "race_2536",
+    "statement": {
+      "ru": "Первый император Китая глотал ртуть, надеясь стать бессмертным.",
+      "en": "China's first emperor swallowed mercury, hoping to become immortal."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Qin_Shi_Huang"
+  },
+  {
+    "id": "race_2537",
+    "statement": {
+      "ru": "Британия и Испания однажды начали войну из-за отрезанного уха.",
+      "en": "Britain and Spain once went to war over a severed ear."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/War_of_Jenkins%27_Ear"
+  },
+  {
+    "id": "race_2538",
+    "statement": {
+      "ru": "Эдисон проучился в обычной школе всего несколько месяцев.",
+      "en": "Edison spent only a few months in an ordinary school."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Thomas_Edison"
+  },
+  {
+    "id": "race_2539",
+    "statement": {
+      "ru": "В 1938 году радиоспектакль «Война миров» вызвал панику по всей Америке.",
+      "en": "In 1938 the radio play The War of the Worlds caused panic across America."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_War_of_the_Worlds_(1938_radio_drama)"
+  },
+  {
+    "id": "race_2540",
+    "statement": {
+      "ru": "Королева Виктория первой из монархов поселилась в Букингемском дворце.",
+      "en": "Queen Victoria was the first monarch to live in Buckingham Palace."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Buckingham_Palace"
+  },
+  {
+    "id": "race_2541",
+    "statement": {
+      "ru": "Франция однажды воевала с Мексикой из-за разгромленной кондитерской.",
+      "en": "France once went to war with Mexico over a wrecked pastry shop."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pastry_War"
+  },
+  {
+    "id": "race_2542",
+    "statement": {
+      "ru": "Гладиаторы перед каждым боем кричали: «Идущие на смерть приветствуют тебя!»",
+      "en": "Before every fight gladiators shouted: 'Those about to die salute you!'"
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ave_Imperator,_morituri_te_salutant"
+  },
+  {
+    "id": "race_2543",
+    "statement": {
+      "ru": "Способ делать консервы изобрели, когда армия Франции объявила за него премию.",
+      "en": "Canning was invented after the French army offered a prize for a way to keep food."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nicolas_Appert"
+  },
+  {
+    "id": "race_2544",
+    "statement": {
+      "ru": "Если сидеть близко к телевизору, зрение испортится навсегда.",
+      "en": "Sitting close to the TV ruins your eyesight for good."
+    },
+    "answer": false,
+    "source": "https://www.scientificamerican.com/article/earth-talk-tv-eyesight/"
+  },
+  {
+    "id": "race_2545",
+    "statement": {
+      "ru": "Агата Кристи разбиралась в ядах, потому что работала в аптеке госпиталя.",
+      "en": "Agatha Christie knew about poisons because she worked in a hospital dispensary."
+    },
+    "answer": true,
+    "source": "https://www.chemistryworld.com/features/agatha-christie-the-queen-of-crime-chemistry/8911.article"
+  },
+  {
+    "id": "race_2546",
+    "statement": {
+      "ru": "Жанна д’Арк была дочерью знатного рыцаря.",
+      "en": "Joan of Arc was the daughter of a noble knight."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Joan_of_Arc"
+  },
+  {
+    "id": "race_2547",
+    "statement": {
+      "ru": "Наполеон родился всего через год после того, как Корсика стала французской.",
+      "en": "Napoleon was born just a year after Corsica became French."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Napoleon"
+  },
+  {
+    "id": "race_2548",
+    "statement": {
+      "ru": "Викторианские модницы удаляли себе рёбра, чтобы талия была тоньше.",
+      "en": "Victorian ladies had ribs removed to make their waists thinner."
+    },
+    "answer": false,
+    "source": "https://lancasterhistory.org/?p=3820"
+  },
+  {
+    "id": "race_2549",
+    "statement": {
+      "ru": "Король Франции Людовик XVI увлекался слесарным делом и сам мастерил замки.",
+      "en": "King Louis XVI of France loved metalwork and made locks himself."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lock_picking"
+  },
+  {
+    "id": "race_2550",
+    "statement": {
+      "ru": "Римским легионерам платили жалованье солью.",
+      "en": "Roman legionaries were paid their wages in salt."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Salary"
+  },
+  {
+    "id": "race_2551",
+    "statement": {
+      "ru": "Знатные римляне на пирах ели лёжа.",
+      "en": "Wealthy Romans ate lying down at feasts."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Triclinium"
+  },
+  {
+    "id": "race_2552",
+    "statement": {
+      "ru": "Кофе в детстве задерживает рост.",
+      "en": "Drinking coffee as a child stunts your growth."
+    },
+    "answer": false,
+    "source": "https://www.harvardhealth.org/diet-and-nutrition/can-coffee-really-stunt-your-growth-NVHUXLTO"
+  },
+  {
+    "id": "race_2553",
+    "statement": {
+      "ru": "«Я не согласен с вами, но умру за ваше право это говорить», — сказал Вольтер.",
+      "en": "'I disagree with you, but I'll die for your right to say it,' said Voltaire."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Evelyn_Beatrice_Hall"
+  },
+  {
+    "id": "race_2554",
+    "statement": {
+      "ru": "Шекспир не только писал пьесы, но и сам играл в них на сцене.",
+      "en": "Shakespeare not only wrote plays but acted in them on stage."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/William_Shakespeare"
+  },
+  {
+    "id": "race_2555",
+    "statement": {
+      "ru": "В Древнем Риме был праздник, когда рабы пировали вместе с хозяевами.",
+      "en": "Ancient Rome had a holiday when slaves feasted together with their masters."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Saturnalia"
+  },
+  {
+    "id": "race_2556",
+    "statement": {
+      "ru": "В книге «Государь» Макиавелли пишет: «Цель оправдывает средства».",
+      "en": "In The Prince, Machiavelli writes: 'The end justifies the means.'"
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_ends_justify_the_means"
+  },
+  {
+    "id": "race_2557",
+    "statement": {
+      "ru": "Над Марсом летал вертолёт, привезённый с Земли.",
+      "en": "A helicopter brought from Earth has flown over Mars."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)"
+  },
+  {
+    "id": "race_2558",
+    "statement": {
+      "ru": "Плутон больше Луны.",
+      "en": "Pluto is bigger than the Moon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pluto"
+  },
+  {
+    "id": "race_2559",
+    "statement": {
+      "ru": "Комету Галлея видно с Земли раз в десять лет.",
+      "en": "Halley's Comet can be seen from Earth once every ten years."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Halley%27s_Comet"
+  },
+  {
+    "id": "race_2560",
+    "statement": {
+      "ru": "Самые сильные ветры среди планет дуют на Нептуне.",
+      "en": "The strongest winds of any planet blow on Neptune."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Neptune"
+  },
+  {
+    "id": "race_2561",
+    "statement": {
+      "ru": "Сутки на Юпитере длиннее земных.",
+      "en": "A day on Jupiter is longer than a day on Earth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Jupiter"
+  },
+  {
+    "id": "race_2562",
+    "statement": {
+      "ru": "Астронавты «Аполлона-8» встретили Рождество на орбите Луны.",
+      "en": "The Apollo 8 astronauts spent Christmas Eve orbiting the Moon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Apollo_8"
+  },
+  {
+    "id": "race_2563",
+    "statement": {
+      "ru": "Солнце — самая большая звезда Млечного Пути.",
+      "en": "The Sun is the biggest star in the Milky Way."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_largest_stars"
+  },
+  {
+    "id": "race_2564",
+    "statement": {
+      "ru": "Прах человека, открывшего Плутон, долетел до Плутона.",
+      "en": "The ashes of the man who discovered Pluto have flown to Pluto."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Clyde_Tombaugh"
+  },
+  {
+    "id": "race_2565",
+    "statement": {
+      "ru": "Пояс астероидов — обломки взорвавшейся планеты.",
+      "en": "The asteroid belt is the wreckage of a planet that exploded."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Asteroid_belt"
+  },
+  {
+    "id": "race_2566",
+    "statement": {
+      "ru": "На Солнце приходится больше 99 % массы Солнечной системы.",
+      "en": "The Sun holds more than 99% of the Solar System's mass."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sun"
+  },
+  {
+    "id": "race_2567",
+    "statement": {
+      "ru": "Чёрную дыру уже сфотографировали.",
+      "en": "A black hole has already been photographed."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Event_Horizon_Telescope"
+  },
+  {
+    "id": "race_2568",
+    "statement": {
+      "ru": "На Марсе нашли живых микробов.",
+      "en": "Living microbes have been found on Mars."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Life_on_Mars"
+  },
+  {
+    "id": "race_2569",
+    "statement": {
+      "ru": "Ночью на Меркурии мороз ниже −150 °C.",
+      "en": "At night on Mercury it freezes below −150 °C."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mercury_(planet)"
+  },
+  {
+    "id": "race_2570",
+    "statement": {
+      "ru": "Луна каждую ночь восходит в одно и то же время.",
+      "en": "The Moon rises at the same time every night."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Moonrise_and_moonset"
+  },
+  {
+    "id": "race_2571",
+    "statement": {
+      "ru": "У Сатурна больше ста спутников.",
+      "en": "Saturn has more than a hundred moons."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Saturn"
+  },
+  {
+    "id": "race_2572",
+    "statement": {
+      "ru": "Хвост кометы — это огонь: комета горит.",
+      "en": "A comet's tail is fire: the comet is burning."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Comet"
+  },
+  {
+    "id": "race_2573",
+    "statement": {
+      "ru": "Спутник Сатурна Энцелад выбрасывает в космос фонтаны воды.",
+      "en": "Saturn's moon Enceladus shoots fountains of water into space."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Enceladus"
+  },
+  {
+    "id": "race_2574",
+    "statement": {
+      "ru": "Астронавты на МКС моются под душем.",
+      "en": "Astronauts on the ISS wash in a shower."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/International_Space_Station"
+  },
+  {
+    "id": "race_2575",
+    "statement": {
+      "ru": "На спутнике Юпитера Ио извергаются вулканы.",
+      "en": "Volcanoes erupt on Io, a moon of Jupiter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Io_(moon)"
+  },
+  {
+    "id": "race_2576",
+    "statement": {
+      "ru": "Темнота при полном солнечном затмении длится несколько часов.",
+      "en": "The darkness of a total solar eclipse lasts several hours."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Solar_eclipse"
+  },
+  {
+    "id": "race_2577",
+    "statement": {
+      "ru": "Все астероиды пояса вместе весят меньше Луны.",
+      "en": "All the asteroids of the belt together weigh less than the Moon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Asteroid_belt"
+  },
+  {
+    "id": "race_2578",
+    "statement": {
+      "ru": "«Космическое мороженое» — обычная еда астронавтов.",
+      "en": "Freeze-dried 'astronaut ice cream' is a regular food for astronauts."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Astronaut_ice_cream"
+  },
+  {
+    "id": "race_2579",
+    "statement": {
+      "ru": "Телескоп «Джеймс Уэбб» летает дальше Луны.",
+      "en": "The James Webb telescope flies farther away than the Moon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
+  },
+  {
+    "id": "race_2580",
+    "statement": {
+      "ru": "МКС размером с автобус.",
+      "en": "The ISS is the size of a bus."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/International_Space_Station"
+  },
+  {
+    "id": "race_2581",
+    "statement": {
+      "ru": "Кошка летала в космос и вернулась живой.",
+      "en": "A cat has flown into space and come back alive."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/F%C3%A9licette"
+  },
+  {
+    "id": "race_2582",
+    "statement": {
+      "ru": "Ракета летит, отталкиваясь от воздуха.",
+      "en": "A rocket flies by pushing against the air."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rocket"
+  },
+  {
+    "id": "race_2583",
+    "statement": {
+      "ru": "Зеркало телескопа «Джеймс Уэбб» покрыто золотом.",
+      "en": "The mirror of the James Webb telescope is coated in gold."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
+  },
+  {
+    "id": "race_2584",
+    "statement": {
+      "ru": "«Вояджер-1» долетит до ближайших звёзд лет через сто.",
+      "en": "Voyager 1 will reach the nearest stars in about a hundred years."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Voyager_1"
+  },
+  {
+    "id": "race_2585",
+    "statement": {
+      "ru": "Пауки на космической станции сплели паутину.",
+      "en": "Spiders have spun webs aboard a space station."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Skylab_3"
+  },
+  {
+    "id": "race_2586",
+    "statement": {
+      "ru": "Фазы Луны — это тень Земли на Луне.",
+      "en": "The phases of the Moon are the Earth's shadow on the Moon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lunar_phase"
+  },
+  {
+    "id": "race_2587",
+    "statement": {
+      "ru": "Илон Маск отправил в космос свой автомобиль.",
+      "en": "Elon Musk sent his own car into space."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Elon_Musk%27s_Tesla_Roadster"
+  },
+  {
+    "id": "race_2588",
+    "statement": {
+      "ru": "Люди видели, как комета врезалась в Юпитер.",
+      "en": "People have watched a comet crash into Jupiter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Comet_Shoemaker%E2%80%93Levy_9"
+  },
+  {
+    "id": "race_2589",
+    "statement": {
+      "ru": "Нептун сначала нашли расчётами на бумаге, а потом в телескоп.",
+      "en": "Neptune was first found by calculations on paper, then in a telescope."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Discovery_of_Neptune"
+  },
+  {
+    "id": "race_2590",
+    "statement": {
+      "ru": "Космические шаттлы летали до Луны.",
+      "en": "The Space Shuttles flew to the Moon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Space_Shuttle"
+  },
+  {
+    "id": "race_2591",
+    "statement": {
+      "ru": "Сутки на Марсе длиннее земных меньше чем на час.",
+      "en": "A day on Mars is less than an hour longer than a day on Earth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Timekeeping_on_Mars"
+  },
+  {
+    "id": "race_2592",
+    "statement": {
+      "ru": "Чёрная дыра — это пустая дыра в космосе, внутри ничего нет.",
+      "en": "A black hole is an empty hole in space with nothing inside."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Black_hole"
+  },
+  {
+    "id": "race_2593",
+    "statement": {
+      "ru": "Уран, когда его открыли, сначала приняли за комету.",
+      "en": "When Uranus was discovered, it was first taken for a comet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Uranus"
+  },
+  {
+    "id": "race_2594",
+    "statement": {
+      "ru": "Корабли «Аполлон» летели до Луны около месяца.",
+      "en": "The Apollo spacecraft took about a month to fly to the Moon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Apollo_8"
+  },
+  {
+    "id": "race_2595",
+    "statement": {
+      "ru": "Найдено уже больше 5000 планет у других звёзд.",
+      "en": "More than 5,000 planets around other stars have already been found."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Exoplanet"
+  },
+  {
+    "id": "race_2596",
+    "statement": {
+      "ru": "Ступени ракет SpaceX возвращаются и садятся стоя, чтобы лететь снова.",
+      "en": "SpaceX rocket stages come back and land upright to fly again."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Falcon_9"
   }
 ]
