@@ -25873,5 +25873,374 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Earthworm"
+  },
+  {
+    "id": "race_2877",
+    "statement": {
+      "ru": "Синюю краску ультрамарин делали из полудрагоценного камня — лазурита.",
+      "en": "Ultramarine blue paint was made from a semi-precious stone, lapis lazuli."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ultramarine"
+  },
+  {
+    "id": "race_2878",
+    "statement": {
+      "ru": "Шрифт Helvetica назван в честь своего создателя.",
+      "en": "The Helvetica typeface is named after its creator."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Helvetica"
+  },
+  {
+    "id": "race_2879",
+    "statement": {
+      "ru": "В «Менинах» Веласкес нарисовал среди придворных самого себя.",
+      "en": "In Las Meninas Velázquez painted himself among the courtiers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Las_Meninas"
+  },
+  {
+    "id": "race_2880",
+    "statement": {
+      "ru": "Знаменитая «Звёздная ночь» Ван Гога висит в Лувре.",
+      "en": "Van Gogh's famous The Starry Night hangs in the Louvre."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Starry_Night"
+  },
+  {
+    "id": "race_2881",
+    "statement": {
+      "ru": "Для «Американской готики» позировали сестра художника и его зубной врач.",
+      "en": "The models for American Gothic were the painter's sister and his dentist."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/American_Gothic"
+  },
+  {
+    "id": "race_2882",
+    "statement": {
+      "ru": "Прусскую синюю краску получили случайно, когда пытались сделать красную.",
+      "en": "Prussian blue was made by accident while trying to make a red dye."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Prussian_blue"
+  },
+  {
+    "id": "race_2883",
+    "statement": {
+      "ru": "Своё имя Микеланджело вырезал только на одной работе — «Пьете».",
+      "en": "Michelangelo carved his name on only one work, the Pietà."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pietà_(Michelangelo)"
+  },
+  {
+    "id": "race_2884",
+    "statement": {
+      "ru": "«Большую волну» Хокусай написал маслом на холсте.",
+      "en": "Hokusai painted The Great Wave in oil on canvas."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"
+  },
+  {
+    "id": "race_2885",
+    "statement": {
+      "ru": "Слово «граффити» пришло из английского языка.",
+      "en": "The word 'graffiti' comes from English."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Graffiti"
+  },
+  {
+    "id": "race_2886",
+    "statement": {
+      "ru": "Художник Христо однажды целиком завернул в ткань здание Рейхстага.",
+      "en": "The artist Christo once wrapped the whole Reichstag building in fabric."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wrapped_Reichstag"
+  },
+  {
+    "id": "race_2887",
+    "statement": {
+      "ru": "Бэтмен появился в комиксах раньше Супермена.",
+      "en": "Batman appeared in comics before Superman."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Batman"
+  },
+  {
+    "id": "race_2888",
+    "statement": {
+      "ru": "Молодой Микеланджело состарил свою статую, чтобы продать её как античную.",
+      "en": "Young Michelangelo aged a statue of his to sell it as an antique."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sleeping_Cupid_(Michelangelo)"
+  },
+  {
+    "id": "race_2889",
+    "statement": {
+      "ru": "Свои рисунки в метро Нью-Йорка Кит Харинг делал баллончиком с краской.",
+      "en": "Keith Haring made his New York subway drawings with spray paint."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Keith_Haring"
+  },
+  {
+    "id": "race_2890",
+    "statement": {
+      "ru": "Ярко-красную краску киноварь делали из минерала, в котором есть ртуть.",
+      "en": "Bright red vermilion paint was made from a mineral containing mercury."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vermilion"
+  },
+  {
+    "id": "race_2891",
+    "statement": {
+      "ru": "Первую в истории искусственную краску сделали ещё в Древнем Египте.",
+      "en": "The first man-made pigment in history was made in ancient Egypt."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Egyptian_blue"
+  },
+  {
+    "id": "race_2892",
+    "statement": {
+      "ru": "Тинтин из комиксов Эрже по профессии полицейский.",
+      "en": "Tintin from Hergé's comics is a policeman by trade."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tintin_(character)"
+  },
+  {
+    "id": "race_2893",
+    "statement": {
+      "ru": "Импрессионисты принципиально писали только в мастерской, а не на природе.",
+      "en": "The Impressionists painted only in the studio on principle, never outdoors."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Impressionism"
+  },
+  {
+    "id": "race_2894",
+    "statement": {
+      "ru": "Жёлтую краску делали из мочи коров, которых кормили листьями манго.",
+      "en": "A yellow paint was made from the urine of cows fed on mango leaves."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Indian_yellow"
+  },
+  {
+    "id": "race_2895",
+    "statement": {
+      "ru": "В Ренессанс ультрамарин был самой дешёвой синей краской.",
+      "en": "In the Renaissance ultramarine was the cheapest blue paint."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ultramarine"
+  },
+  {
+    "id": "race_2896",
+    "statement": {
+      "ru": "Мангу читают справа налево.",
+      "en": "Manga is read from right to left."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Manga"
+  },
+  {
+    "id": "race_2897",
+    "statement": {
+      "ru": "Комиксы про Астерикса и Обеликса придумали в Бельгии.",
+      "en": "The Asterix and Obelix comics were created in Belgium."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Asterix"
+  },
+  {
+    "id": "race_2898",
+    "statement": {
+      "ru": "Логотип «I ♥ NY» дизайнер нарисовал бесплатно.",
+      "en": "The designer drew the 'I ♥ NY' logo for free."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/I_Love_New_York"
+  },
+  {
+    "id": "race_2899",
+    "statement": {
+      "ru": "Человека-паука в первых комиксах рисовал сам Стэн Ли.",
+      "en": "Stan Lee himself drew the first Spider-Man comics."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Spider-Man"
+  },
+  {
+    "id": "race_2900",
+    "statement": {
+      "ru": "Охру, одну из древнейших красок, делали из цветочных лепестков.",
+      "en": "Ochre, one of the oldest paints, was made from flower petals."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ochre"
+  },
+  {
+    "id": "race_2901",
+    "statement": {
+      "ru": "В Вене есть музей, где выставлены одни подделки.",
+      "en": "Vienna has a museum that shows nothing but art fakes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Museum_of_Art_Fakes"
+  },
+  {
+    "id": "race_2902",
+    "statement": {
+      "ru": "На картине Босха есть ноты, написанные на чьих-то ягодицах.",
+      "en": "A Bosch painting shows sheet music written on someone's buttocks."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+  },
+  {
+    "id": "race_2903",
+    "statement": {
+      "ru": "Уорхол нарисовал 32 банки супа — по числу вкусов, которые тогда продавали.",
+      "en": "Warhol painted 32 soup cans, one for each flavour then on sale."
+    },
+    "answer": true,
+    "source": "https://www.moma.org/collection/works/79809"
+  },
+  {
+    "id": "race_2904",
+    "statement": {
+      "ru": "Огромную скульптуру «Боб» в Чикаго отлили из стекла.",
+      "en": "Chicago's giant 'Bean' sculpture is made of glass."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cloud_Gate"
+  },
+  {
+    "id": "race_2905",
+    "statement": {
+      "ru": "Любимая еда кота Гарфилда — рыба.",
+      "en": "Garfield the cat's favourite food is fish."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Garfield"
+  },
+  {
+    "id": "race_2906",
+    "statement": {
+      "ru": "Один художник писал портреты, составленные из фруктов и овощей.",
+      "en": "One painter made portraits out of fruit and vegetables."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Giuseppe_Arcimboldo"
+  },
+  {
+    "id": "race_2907",
+    "statement": {
+      "ru": "Голову Ники Самофракийской нашли и приставили к статуе.",
+      "en": "The head of the Winged Victory of Samothrace was found and put back on."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Winged_Victory_of_Samothrace"
+  },
+  {
+    "id": "race_2908",
+    "statement": {
+      "ru": "Джунгли для своих картин Анри Руссо видел в парижском ботаническом саду.",
+      "en": "Henri Rousseau saw the jungles for his paintings in a Paris botanical garden."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Henri_Rousseau"
+  },
+  {
+    "id": "race_2909",
+    "statement": {
+      "ru": "Шрифт Times New Roman создали для компьютеров.",
+      "en": "The Times New Roman typeface was made for computers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Times_New_Roman"
+  },
+  {
+    "id": "race_2910",
+    "statement": {
+      "ru": "Жёлтый смайлик нарисовали за десять минут и заплатили за него 45 долларов.",
+      "en": "The yellow smiley face was drawn in ten minutes for a fee of $45."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Smiley"
+  },
+  {
+    "id": "race_2911",
+    "statement": {
+      "ru": "«Девушку с жемчужной серёжкой» однажды купили на аукционе всего за пару гульденов.",
+      "en": "Girl with a Pearl Earring was once bought at auction for just a couple of guilders."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
+  },
+  {
+    "id": "race_2912",
+    "statement": {
+      "ru": "«Мыслитель» Родена высечен из мрамора.",
+      "en": "Rodin's The Thinker is carved from marble."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Thinker"
+  },
+  {
+    "id": "race_2913",
+    "statement": {
+      "ru": "Французский музей выяснил, что больше половины его картин — подделки.",
+      "en": "A French museum found that more than half of its paintings were fakes."
+    },
+    "answer": true,
+    "source": "https://www.irishtimes.com/news/world/europe/catastrophe-french-museum-discovers-over-half-its-collection-are-counterfeits-1.3478861"
+  },
+  {
+    "id": "race_2914",
+    "statement": {
+      "ru": "Ван Гог написал «Подсолнухи» в единственном экземпляре.",
+      "en": "Van Gogh painted his Sunflowers only once."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sunflowers_(Van_Gogh_series)"
+  },
+  {
+    "id": "race_2915",
+    "statement": {
+      "ru": "Мозаику уличного художника повесили на Международной космической станции.",
+      "en": "A street artist's mosaic was put up on the International Space Station."
+    },
+    "answer": true,
+    "source": "https://www.esa.int/ESA_Multimedia/Images/2015/03/Space2_on_Columbus"
+  },
+  {
+    "id": "race_2916",
+    "statement": {
+      "ru": "Леонардо закончил «Мону Лизу» за несколько недель.",
+      "en": "Leonardo finished the Mona Lisa in a few weeks."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mona_Lisa"
+  },
+  {
+    "id": "race_2917",
+    "statement": {
+      "ru": "На самом первом логотипе Apple был нарисован Ньютон под деревом.",
+      "en": "Apple's very first logo showed Newton under a tree."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Apple_Inc."
   }
 ]
