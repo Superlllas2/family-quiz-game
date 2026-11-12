@@ -19,6 +19,15 @@ namespace FamilyQuiz.Presentation
         /// <summary>How much further each lane arcs.</summary>
         public const float LaneBulge = 55f;
 
+        /// <summary>The space between arrow ends that share one piece.</summary>
+        public const float EndGap = 30f;
+
+        /// <summary>How far end number <paramref name="end"/> of <paramref name="ends"/> sits from the piece's anchor, centred.</summary>
+        public static float Spread(int end, int ends)
+        {
+            return ends <= 1 ? 0f : (end - (ends - 1) / 2f) * EndGap;
+        }
+
         public static float Bulge(float distance, int lane)
         {
             return BaseBulge + BulgePerUnit * Mathf.Max(0f, distance) + LaneBulge * Mathf.Max(0, lane);

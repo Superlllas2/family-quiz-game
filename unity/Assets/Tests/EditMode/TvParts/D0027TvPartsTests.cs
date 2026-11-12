@@ -202,6 +202,9 @@ namespace FamilyQuiz.Tests.TvParts
             Assert.That(arrows.Select(a => a.PowerUp), Is.EqualTo(new[] { PowerUpTypes.Slime, PowerUpTypes.Freeze, PowerUpTypes.Fog }));
             // a>c and c>a join the same two players: the second one takes the next lane so they never lie on each other.
             Assert.That(arrows.Select(a => a.Lane), Is.EqualTo(new[] { 0, 0, 1 }));
+            // c has three arrow ends (two in, one out), a two, b one: they sit side by side in the order used.
+            Assert.That(arrows.Select(a => a.TargetEnd + "/" + a.TargetEnds), Is.EqualTo(new[] { "0/3", "1/3", "1/2" }));
+            Assert.That(arrows.Select(a => a.AttackerEnd + "/" + a.AttackerEnds), Is.EqualTo(new[] { "0/2", "0/1", "2/3" }));
         }
 
         [Test]
@@ -235,6 +238,15 @@ namespace FamilyQuiz.Tests.TvParts
             Assert.That(points[6].x, Is.EqualTo(400f).Within(0.01f));
             Assert.That(points[6].y, Is.EqualTo(260f).Within(0.01f));
             Assert.That(points.All(p => p.y >= 200f - 0.01f), Is.True);
+        }
+
+        [Test]
+        public void ArrowEndsAtOnePieceSpreadAroundItsMiddle()
+        {
+            Assert.That(ArrowPath.Spread(0, 1), Is.EqualTo(0f));
+            Assert.That(ArrowPath.Spread(0, 2), Is.EqualTo(-ArrowPath.Spread(1, 2)));
+            Assert.That(ArrowPath.Spread(1, 3), Is.EqualTo(0f));
+            Assert.That(ArrowPath.Spread(2, 3) - ArrowPath.Spread(1, 3), Is.EqualTo(ArrowPath.EndGap));
         }
 
         [Test]

@@ -15,6 +15,8 @@ namespace FamilyQuiz.Presentation
             var arrows = new List<AttackArrow>();
             if (used == null || state == null) return arrows;
             var pairs = new Dictionary<string, int>();
+            var kept = new List<(PowerUpUsed Used, int Lane, int FromEnd, int ToEnd)>();
+            var ends = new Dictionary<string, int>();
             foreach (var u in used)
             {
                 if (u == null || u.PlayerId == u.TargetId) continue;
@@ -24,7 +26,17 @@ namespace FamilyQuiz.Presentation
                     : u.TargetId + "\n" + u.PlayerId;
                 pairs.TryGetValue(pair, out int lane);
                 pairs[pair] = lane + 1;
-                arrows.Add(new AttackArrow(u.PlayerId, u.TargetId, u.PowerUp, lane));
+                ends.TryGetValue(u.PlayerId, out int fromEnd);
+                ends[u.PlayerId] = fromEnd + 1;
+                ends.TryGetValue(u.TargetId, out int toEnd);
+                ends[u.TargetId] = toEnd + 1;
+                kept.Add((u, lane, fromEnd, toEnd));
+            }
+
+            foreach (var k in kept)
+            {
+                arrows.Add(new AttackArrow(k.Used.PlayerId, k.Used.TargetId, k.Used.PowerUp, k.Lane,
+                    k.FromEnd, ends[k.Used.PlayerId], k.ToEnd, ends[k.Used.TargetId]));
             }
 
             return arrows;

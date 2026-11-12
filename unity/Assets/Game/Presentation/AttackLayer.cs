@@ -14,9 +14,9 @@ namespace FamilyQuiz.Presentation
     public sealed class AttackLayer : MonoBehaviour
     {
         private const int Segments = 18;
-        private const float Thickness = 9f;
-        private const float InkThickness = 17f;
-        private const float HeadSize = 40f;
+        private const float Thickness = 11f;
+        private const float InkThickness = 19f;
+        private const float HeadSize = 52f;
         private const float FlySeconds = 0.45f;
 
         private readonly List<Arrow> _arrows = new List<Arrow>();
@@ -50,19 +50,18 @@ namespace FamilyQuiz.Presentation
         public void Show(IReadOnlyList<AttackArrow> arrows, Func<string, (RectTransform Rect, Vector2 Local)?> anchorOf,
             Vector2 side, float scale = 1f)
         {
-            var keep = new HashSet<string>();
             var fresh = new List<Arrow>();
             foreach (var a in arrows)
             {
                 var from = anchorOf(a.AttackerId);
                 var to = anchorOf(a.TargetId);
                 if (from == null || to == null) continue;
-                var p0 = ToLocal(from.Value.Rect, from.Value.Local);
-                var p1 = ToLocal(to.Value.Rect, to.Value.Local);
+                // Several arrows at one piece leave or land side by side along its edge.
+                var p0 = ToLocal(from.Value.Rect, from.Value.Local + new Vector2(ArrowPath.Spread(a.AttackerEnd, a.AttackerEnds), 0f));
+                var p1 = ToLocal(to.Value.Rect, to.Value.Local + new Vector2(ArrowPath.Spread(a.TargetEnd, a.TargetEnds), 0f));
                 float bulge = ArrowPath.Bulge(Vector2.Distance(p0, p1), a.Lane) * scale;
                 var points = ArrowPath.Points(p0, p1, side, bulge, Segments);
                 var old = _arrows.Find(x => x.Key == a.Key);
-                keep.Add(a.Key);
                 if (old != null && Same(old.Points, points))
                 {
                     fresh.Add(old);
@@ -72,7 +71,6 @@ namespace FamilyQuiz.Presentation
                 var arrow = Build(a, points);
                 // An arrow that only moved (a roster change) is redrawn in place; a new one flies.
                 arrow.Age = old != null ? FlySeconds : 0f;
-                if (old != null) Destroy(old.Root);
                 fresh.Add(arrow);
                 Apply(arrow);
             }

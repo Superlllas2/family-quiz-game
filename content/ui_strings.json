@@ -154,6 +154,7 @@
   "tv.reveal.stamp": { "ru": "ВЕРНО!", "en": "RIGHT!" },
   "tv.reveal.why": { "ru": "Почему?", "en": "Why?" },
   "tv.topicVote.hint": { "ru": "Голосуйте на телефонах", "en": "Vote on your phones" },
+  "tv.topicTie.hint": { "ru": "Тему выбирает жребий", "en": "The draw picks the topic" },
   "tv.lobby.ticketTop": { "ru": "Сегодня в эфире · вход по коду", "en": "On air tonight · entry by code" },
   "tv.lobby.players": { "ru": "{count} из {max}", "en": "{count} of {max}" },
   "tv.scores.subtitle": { "ru": "после вопроса {number} из {total}", "en": "after question {number} of {total}" },

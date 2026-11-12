@@ -27,7 +27,7 @@ namespace FamilyQuiz.Presentation
         public const float StickerHeight = 40f;
 
         /// <summary>The size of the effect icons under the token in Answer (D149).</summary>
-        public const float EffectSize = 34f;
+        public const float EffectSize = 46f;
 
         public static PlayerToken Create(Transform parent, string playerId)
         {

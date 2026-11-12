@@ -185,14 +185,14 @@ namespace FamilyQuiz.Presentation
             _crown = crown.rectTransform;
             _crown.anchorMin = _crown.anchorMax = new Vector2(0.5f, 1f);
             _crown.pivot = new Vector2(0.5f, 0.5f);
-            _crown.anchoredPosition = new Vector2(-4f, 4f);
+            _crown.anchoredPosition = new Vector2(-6f, 12f);
             _crown.sizeDelta = new Vector2(52f, 52f);
             _crown.localRotation = Quaternion.Euler(0, 0, 12f);
             TvTween.On(_crown).Tilt = 12f;
             _crown.gameObject.SetActive(false);
 
             // The effect icons hang on the card's bottom edge, in the middle (D149).
-            _effects = EffectBadges.Create(transform, 40f, 0.5f, 0f);
+            _effects = EffectBadges.Create(transform, 48f, 0.5f, 0f);
             _effects.Root.anchoredPosition = new Vector2(0f, 4f);
         }
     }

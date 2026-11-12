@@ -76,7 +76,7 @@ namespace FamilyQuiz.Presentation
             }
 
             _title.text = _context.Format("tv.topicVote.title", "round", (round.Index + 1).ToString());
-            _hint.text = _context.T("tv.topicVote.hint");
+            _hint.text = _context.T(_tie ? "tv.topicTie.hint" : "tv.topicVote.hint");
             bool multiplied = MultiplierSticker.Shows(round.Multiplier); // never while every multiplier is 1 (D151)
             _sticker.Root.gameObject.SetActive(multiplied);
             _stickerText.text = multiplied

@@ -34,7 +34,7 @@ namespace FamilyQuiz.Presentation
         private const float TileGapY = 30f;
 
         /// <summary>The arrows between the status tokens arc less than over the score row: there is less room.</summary>
-        private const float RevealArrowScale = 0.55f;
+        private const float RevealArrowScale = 0.75f;
 
         /// <summary>When the card flips to the fact on Reveal, after the stamp landed.</summary>
         private const float FlipDelaySeconds = 0.9f;
