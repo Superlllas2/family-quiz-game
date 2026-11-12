@@ -21877,5 +21877,743 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/The_Simpsons"
+  },
+  {
+    "id": "race_2433",
+    "statement": {
+      "ru": "Шипы на хвосте стегозавра учёные называют словом из комикса.",
+      "en": "Scientists call the spikes on Stegosaurus's tail by a word from a comic strip."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Thagomizer"
+  },
+  {
+    "id": "race_2434",
+    "statement": {
+      "ru": "Тираннозавр видел только то, что движется.",
+      "en": "A T. rex could only see things that moved."
+    },
+    "answer": false,
+    "source": "https://www.mentalfloss.com/article/31503/it-true-t-rex-could-only-see-things-were-moving"
+  },
+  {
+    "id": "race_2435",
+    "statement": {
+      "ru": "Дилофозавр плевался ядом в свою добычу.",
+      "en": "Dilophosaurus spat venom at its prey."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dilophosaurus"
+  },
+  {
+    "id": "race_2436",
+    "statement": {
+      "ru": "Бронтозавра больше ста лет считали тем же ящером, что и апатозавр.",
+      "en": "For more than a hundred years Brontosaurus was thought to be the same animal as Apatosaurus."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Brontosaurus"
+  },
+  {
+    "id": "race_2437",
+    "statement": {
+      "ru": "Трицератопс жил в юрском периоде.",
+      "en": "Triceratops lived in the Jurassic period."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Triceratops"
+  },
+  {
+    "id": "race_2438",
+    "statement": {
+      "ru": "Динозавры жили и в Антарктиде.",
+      "en": "Dinosaurs lived in Antarctica too."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cryolophosaurus"
+  },
+  {
+    "id": "race_2439",
+    "statement": {
+      "ru": "Яйца гигантских динозавров были крупнее любых птичьих яиц.",
+      "en": "The eggs of giant dinosaurs were bigger than any bird's egg."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dinosaur_egg"
+  },
+  {
+    "id": "race_2440",
+    "statement": {
+      "ru": "Первые люди застали последних динозавров.",
+      "en": "The first humans saw the last dinosaurs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dinosaur"
+  },
+  {
+    "id": "race_2441",
+    "statement": {
+      "ru": "Велоцираптор в переводе — «быстрый вор».",
+      "en": "The name Velociraptor means 'swift thief'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Velociraptor"
+  },
+  {
+    "id": "race_2442",
+    "statement": {
+      "ru": "Настоящие велоцирапторы жили в Северной Америке.",
+      "en": "Real Velociraptors lived in North America."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Velociraptor"
+  },
+  {
+    "id": "race_2443",
+    "statement": {
+      "ru": "Динозавров погубил ледниковый период.",
+      "en": "An ice age wiped out the dinosaurs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event"
+  },
+  {
+    "id": "race_2444",
+    "statement": {
+      "ru": "Перья нашли даже у хищного динозавра весом больше тонны.",
+      "en": "Feathers have been found even on a meat-eating dinosaur weighing over a tonne."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Yutyrannus"
+  },
+  {
+    "id": "race_2445",
+    "statement": {
+      "ru": "Утконосые динозавры были беззубыми, как утки.",
+      "en": "Duck-billed dinosaurs were toothless, like ducks."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hadrosauridae"
+  },
+  {
+    "id": "race_2446",
+    "statement": {
+      "ru": "Цвет некоторых динозавров учёные узнали по окаменелостям.",
+      "en": "Scientists have worked out the colour of some dinosaurs from their fossils."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sinosauropteryx"
+  },
+  {
+    "id": "race_2447",
+    "statement": {
+      "ru": "При динозаврах сутки были длиннее, чем сейчас.",
+      "en": "In the time of the dinosaurs, a day was longer than it is now."
+    },
+    "answer": false,
+    "source": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+  },
+  {
+    "id": "race_2448",
+    "statement": {
+      "ru": "В Боливии есть почти отвесная стена с тысячами следов динозавров.",
+      "en": "In Bolivia there is an almost vertical wall with thousands of dinosaur footprints."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cal_Orck%27o"
+  },
+  {
+    "id": "race_2449",
+    "statement": {
+      "ru": "Крокодилы появились уже после вымирания динозавров.",
+      "en": "Crocodiles appeared only after the dinosaurs died out."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Crocodylomorpha"
+  },
+  {
+    "id": "race_2450",
+    "statement": {
+      "ru": "Хищный динозавр компсогнат был размером со слона.",
+      "en": "The meat-eating dinosaur Compsognathus was the size of an elephant."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Compsognathus"
+  },
+  {
+    "id": "race_2451",
+    "statement": {
+      "ru": "Учёные изучают окаменевшие какашки динозавров.",
+      "en": "Scientists study fossilised dinosaur poo."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Coprolite"
+  },
+  {
+    "id": "race_2452",
+    "statement": {
+      "ru": "Самые большие динозавры были хищниками.",
+      "en": "The biggest dinosaurs were meat-eaters."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sauropoda"
+  },
+  {
+    "id": "race_2453",
+    "statement": {
+      "ru": "В Канаде шахтёр нашёл динозавра, сохранившегося вместе с кожей.",
+      "en": "In Canada a miner found a dinosaur preserved along with its skin."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Borealopelta"
+  },
+  {
+    "id": "race_2454",
+    "statement": {
+      "ru": "Тираннозавр мог прожить больше ста лет.",
+      "en": "A T. rex could live for more than a hundred years."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tyrannosaurus"
+  },
+  {
+    "id": "race_2455",
+    "statement": {
+      "ru": "Одного динозавра учёные назвали в честь Хогвартса.",
+      "en": "Scientists named a dinosaur after Hogwarts."
+    },
+    "answer": true,
+    "source": "https://phys.org/news/2006-05-dinosaur-hogwarts-school.html"
+  },
+  {
+    "id": "race_2456",
+    "statement": {
+      "ru": "Огромный скелет титанозавра в нью-йоркском музее собран из настоящих костей.",
+      "en": "The huge titanosaur skeleton in a New York museum is made of real fossil bones."
+    },
+    "answer": false,
+    "source": "https://www.pbs.org/newshour/science/massive-titanosaur-biggest-dinosaur-ever-found-squeezes-into-museum-of-natural-history"
+  },
+  {
+    "id": "race_2457",
+    "statement": {
+      "ru": "Одного панцирного динозавра назвали в честь монстра из «Охотников за привидениями».",
+      "en": "An armoured dinosaur was named after a monster from Ghostbusters."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Zuul"
+  },
+  {
+    "id": "race_2458",
+    "statement": {
+      "ru": "Динозавр ирритатор назван так, потому что учёных разозлила подделка черепа.",
+      "en": "The dinosaur Irritator got its name because a faked skull irritated the scientists."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Irritator"
+  },
+  {
+    "id": "race_2459",
+    "statement": {
+      "ru": "Динозавры ходили, волоча хвост по земле.",
+      "en": "Dinosaurs walked dragging their tails along the ground."
+    },
+    "answer": false,
+    "source": "https://hoopermuseum.carleton.ca/trackway/indi.htm"
+  },
+  {
+    "id": "race_2460",
+    "statement": {
+      "ru": "Шип с пальца игуанодона сначала посадили ему на нос.",
+      "en": "Iguanodon's thumb spike was first put on its nose."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Iguanodon"
+  },
+  {
+    "id": "race_2461",
+    "statement": {
+      "ru": "В «Парке юрского периода» пробелы в ДНК динозавров заполнили ДНК крокодила.",
+      "en": "In Jurassic Park, gaps in the dinosaur DNA were filled with crocodile DNA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Jurassic_Park"
+  },
+  {
+    "id": "race_2462",
+    "statement": {
+      "ru": "Скелет стегозавра продали на аукционе дороже 40 миллионов долларов.",
+      "en": "A Stegosaurus skeleton sold at auction for more than 40 million dollars."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Apex_(dinosaur)"
+  },
+  {
+    "id": "race_2463",
+    "statement": {
+      "ru": "Люди живут на Земле дольше, чем жили динозавры.",
+      "en": "Humans have been on Earth longer than the dinosaurs were."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dinosaur"
+  },
+  {
+    "id": "race_2464",
+    "statement": {
+      "ru": "В Китае настоящие кости динозавров толкли на лекарство.",
+      "en": "In China, real dinosaur bones were ground up for medicine."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Long_gu"
+  },
+  {
+    "id": "race_2465",
+    "statement": {
+      "ru": "Череп динозавра летал в космос.",
+      "en": "A dinosaur skull has flown into space."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Coelophysis"
+  },
+  {
+    "id": "race_2466",
+    "statement": {
+      "ru": "Первого динозавра учёные описали в XX веке.",
+      "en": "Scientists described the first dinosaur in the 20th century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Megalosaurus"
+  },
+  {
+    "id": "race_2467",
+    "statement": {
+      "ru": "В рычании рапторов из «Парка юрского периода» есть звуки спаривающихся черепах.",
+      "en": "The raptor calls in Jurassic Park include the sounds of mating tortoises."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jurassic_Park"
+  },
+  {
+    "id": "race_2468",
+    "statement": {
+      "ru": "Учёные когда-то думали, что огромные завроподы жили в воде.",
+      "en": "Scientists once thought the huge sauropods lived in water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sauropoda"
+  },
+  {
+    "id": "race_2469",
+    "statement": {
+      "ru": "У микрораптора было четыре крыла.",
+      "en": "Microraptor had four wings."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Microraptor"
+  },
+  {
+    "id": "race_2470",
+    "statement": {
+      "ru": "Астероид, погубивший динозавров, упал в Сахаре.",
+      "en": "The asteroid that killed the dinosaurs fell in the Sahara."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chicxulub_crater"
+  },
+  {
+    "id": "race_2471",
+    "statement": {
+      "ru": "Скелет титанозавра в нью-йоркском музее не влез в зал: голова торчит наружу.",
+      "en": "The titanosaur skeleton in a New York museum didn't fit its hall: its head sticks out."
+    },
+    "answer": true,
+    "source": "https://www.pbs.org/newshour/science/massive-titanosaur-biggest-dinosaur-ever-found-squeezes-into-museum-of-natural-history"
+  },
+  {
+    "id": "race_2472",
+    "statement": {
+      "ru": "Одного динозавра с хохолком прозвали в честь Элвиса Пресли.",
+      "en": "A crested dinosaur was nicknamed after Elvis Presley."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cryolophosaurus"
+  },
+  {
+    "id": "race_2473",
+    "statement": {
+      "ru": "Темпуру — японские овощи и рыбу в кляре — завезли в Японию португальцы.",
+      "en": "Tempura, Japan's battered fish and vegetables, was brought to Japan by the Portuguese."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tempura"
+  },
+  {
+    "id": "race_2474",
+    "statement": {
+      "ru": "Чиабатту пекут в Италии ещё со Средних веков.",
+      "en": "Ciabatta has been baked in Italy since the Middle Ages."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ciabatta"
+  },
+  {
+    "id": "race_2475",
+    "statement": {
+      "ru": "Тофу делают из риса.",
+      "en": "Tofu is made from rice."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tofu"
+  },
+  {
+    "id": "race_2476",
+    "statement": {
+      "ru": "Большая доза мускатного ореха может вызвать галлюцинации.",
+      "en": "A large dose of nutmeg can cause hallucinations."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nutmeg"
+  },
+  {
+    "id": "race_2477",
+    "statement": {
+      "ru": "Пасту карбонару ели ещё в Древнем Риме.",
+      "en": "Pasta carbonara was already eaten in ancient Rome."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Carbonara"
+  },
+  {
+    "id": "race_2478",
+    "statement": {
+      "ru": "В Сингапуре фрукт дуриан запрещено возить в метро.",
+      "en": "In Singapore you may not take a durian fruit on the metro."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Durian"
+  },
+  {
+    "id": "race_2479",
+    "statement": {
+      "ru": "Для ризотто берут длиннозёрный рис.",
+      "en": "Risotto is made with long-grain rice."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Risotto"
+  },
+  {
+    "id": "race_2480",
+    "statement": {
+      "ru": "Есть десерт, в котором мороженое запекают в горячей духовке.",
+      "en": "There is a dessert in which ice cream is baked in a hot oven."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Baked_Alaska"
+  },
+  {
+    "id": "race_2481",
+    "statement": {
+      "ru": "После индейки клонит в сон из-за особого вещества в её мясе.",
+      "en": "Turkey makes you sleepy because of a special substance in its meat."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tryptophan"
+  },
+  {
+    "id": "race_2482",
+    "statement": {
+      "ru": "Цвет желтка зависит от того, чем кормили курицу.",
+      "en": "The colour of an egg yolk depends on what the hen was fed."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Egg_yolk"
+  },
+  {
+    "id": "race_2483",
+    "statement": {
+      "ru": "Если потушить мясо в вине, весь алкоголь из него улетучится.",
+      "en": "Stew meat in wine and all the alcohol cooks off."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cooking_with_alcohol"
+  },
+  {
+    "id": "race_2484",
+    "statement": {
+      "ru": "«Аль денте» по-итальянски значит «на зуб».",
+      "en": "'Al dente' means 'to the tooth' in Italian."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Al_dente"
+  },
+  {
+    "id": "race_2485",
+    "statement": {
+      "ru": "Ролл «Калифорния» придумали в Японии.",
+      "en": "The California roll was invented in Japan."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/California_roll"
+  },
+  {
+    "id": "race_2486",
+    "statement": {
+      "ru": "В Японии готовить рыбу фугу можно только поварам с лицензией.",
+      "en": "In Japan only licensed chefs may prepare fugu (pufferfish)."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fugu"
+  },
+  {
+    "id": "race_2487",
+    "statement": {
+      "ru": "Бейглы перед выпечкой варят в воде.",
+      "en": "Bagels are boiled in water before they are baked."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bagel"
+  },
+  {
+    "id": "race_2488",
+    "statement": {
+      "ru": "Самая дорогая пряность в мире — ваниль.",
+      "en": "Vanilla is the most expensive spice in the world."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Vanilla"
+  },
+  {
+    "id": "race_2489",
+    "statement": {
+      "ru": "Карри попало в Японию от британцев.",
+      "en": "Curry came to Japan from the British."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Japanese_curry"
+  },
+  {
+    "id": "race_2490",
+    "statement": {
+      "ru": "Картошку фри придумали в США.",
+      "en": "French fries were invented in the USA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/French_fries"
+  },
+  {
+    "id": "race_2491",
+    "statement": {
+      "ru": "Для первой кореянки в космосе сделали специальное кимчи.",
+      "en": "Special kimchi was made for the first Korean in space."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Space_food"
+  },
+  {
+    "id": "race_2492",
+    "statement": {
+      "ru": "Если срезать плесень с хлеба, остальное можно спокойно есть.",
+      "en": "Cut the mould off bread and the rest is safe to eat."
+    },
+    "answer": false,
+    "source": "https://www.wgbh.org/news/2017-04-21/is-it-safe-to-eat-moldy-bread"
+  },
+  {
+    "id": "race_2493",
+    "statement": {
+      "ru": "Магазинный коричневый сахар — часто белый сахар с добавленной патокой.",
+      "en": "Shop brown sugar is often white sugar with molasses added."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Brown_sugar"
+  },
+  {
+    "id": "race_2494",
+    "statement": {
+      "ru": "На переваривание сельдерея уходит больше калорий, чем в нём есть.",
+      "en": "Digesting celery uses up more calories than it contains."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Negative-calorie_food"
+  },
+  {
+    "id": "race_2495",
+    "statement": {
+      "ru": "Шотландский хаггис по традиции варят в овечьем желудке.",
+      "en": "Scottish haggis is traditionally cooked in a sheep's stomach."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Haggis"
+  },
+  {
+    "id": "race_2496",
+    "statement": {
+      "ru": "Кокосовое молоко — это жидкость, которая плещется внутри ореха.",
+      "en": "Coconut milk is the liquid that sloshes inside a coconut."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Coconut_milk"
+  },
+  {
+    "id": "race_2497",
+    "statement": {
+      "ru": "В Нидерландах шоколадную посыпку едят на хлебе с маслом.",
+      "en": "In the Netherlands people eat chocolate sprinkles on buttered bread."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hagelslag"
+  },
+  {
+    "id": "race_2498",
+    "statement": {
+      "ru": "Лайм — это просто недозревший лимон.",
+      "en": "A lime is just an unripe lemon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lime_(fruit)"
+  },
+  {
+    "id": "race_2499",
+    "statement": {
+      "ru": "«Буррито» по-испански значит «ослик».",
+      "en": "'Burrito' means 'little donkey' in Spanish."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Burrito"
+  },
+  {
+    "id": "race_2500",
+    "statement": {
+      "ru": "Маргарин придумали по конкурсу, который объявил Наполеон III.",
+      "en": "Margarine was invented for a contest announced by Napoleon III."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Margarine"
+  },
+  {
+    "id": "race_2501",
+    "statement": {
+      "ru": "Сахар из свёклы и сахар из тростника — это разные вещества.",
+      "en": "Beet sugar and cane sugar are different substances."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sugar_beet"
+  },
+  {
+    "id": "race_2502",
+    "statement": {
+      "ru": "В настоящий пармезан добавляют фермент из желудка телят.",
+      "en": "Real Parmesan is made with an enzyme from calves' stomachs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Parmigiano_Reggiano"
+  },
+  {
+    "id": "race_2503",
+    "statement": {
+      "ru": "В Канаде есть стратегический запас кленового сиропа.",
+      "en": "Canada keeps a strategic reserve of maple syrup."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Global_Strategic_Maple_Syrup_Reserve"
+  },
+  {
+    "id": "race_2504",
+    "statement": {
+      "ru": "Сухие итальянские макароны обычно делают на яйцах.",
+      "en": "Dried Italian pasta is usually made with eggs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pasta"
+  },
+  {
+    "id": "race_2505",
+    "statement": {
+      "ru": "Горький миндаль в сыром виде ядовит.",
+      "en": "Raw bitter almonds are poisonous."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Almond"
+  },
+  {
+    "id": "race_2506",
+    "statement": {
+      "ru": "Ванильный вкус в магазинной еде обычно делают из бобровой струи.",
+      "en": "The vanilla flavour in shop food is usually made from beaver glands."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Castoreum"
+  },
+  {
+    "id": "race_2507",
+    "statement": {
+      "ru": "Кипрский сыр халуми можно жарить на гриле — он не растекается.",
+      "en": "Cypriot halloumi cheese can be grilled without melting away."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Halloumi"
+  },
+  {
+    "id": "race_2508",
+    "statement": {
+      "ru": "Сырую муку можно спокойно есть ложкой — она безопасна.",
+      "en": "Raw flour is perfectly safe to eat by the spoonful."
+    },
+    "answer": false,
+    "source": "https://www.foodsafetynews.com/2024/12/fda-urges-caution-dont-eat-raw-cookie-dough-when-baking-for-the-holidays"
+  },
+  {
+    "id": "race_2509",
+    "statement": {
+      "ru": "В Исландии едят акулу, которую месяцами квасят и сушат.",
+      "en": "In Iceland people eat shark that has been fermented and dried for months."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/H%C3%A1karl"
+  },
+  {
+    "id": "race_2510",
+    "statement": {
+      "ru": "Испанский суп гаспачо подают горячим.",
+      "en": "Spanish gazpacho soup is served hot."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gazpacho"
+  },
+  {
+    "id": "race_2511",
+    "statement": {
+      "ru": "«Вермишель» по-итальянски значит «червячки».",
+      "en": "'Vermicelli' means 'little worms' in Italian."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vermicelli"
+  },
+  {
+    "id": "race_2512",
+    "statement": {
+      "ru": "Китайские «столетние яйца» выдерживают сто лет.",
+      "en": "Chinese 'century eggs' are aged for a hundred years."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Century_egg"
+  },
+  {
+    "id": "race_2513",
+    "statement": {
+      "ru": "Настоящая валенсийская паэлья — с курицей и кроликом, без морепродуктов.",
+      "en": "Real Valencian paella has chicken and rabbit, not seafood."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Paella"
+  },
+  {
+    "id": "race_2514",
+    "statement": {
+      "ru": "Белый налёт на старом шоколаде — это плесень.",
+      "en": "The white coating on old chocolate is mould."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chocolate_bloom"
   }
 ]
