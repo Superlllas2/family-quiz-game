@@ -8008,5 +8008,4208 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Squid"
+  },
+  {
+    "id": "race_892",
+    "statement": {
+      "ru": "Гелий сначала нашли на Солнце и только потом — на Земле.",
+      "en": "Helium was found on the Sun first, and only later on Earth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Helium"
+  },
+  {
+    "id": "race_893",
+    "statement": {
+      "ru": "Воздух, которым мы дышим, в основном состоит из кислорода.",
+      "en": "The air we breathe is mostly oxygen."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Atmosphere_of_Earth"
+  },
+  {
+    "id": "race_894",
+    "statement": {
+      "ru": "Галлий плавится, если подержать его в руке.",
+      "en": "Gallium melts if you hold it in your hand."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gallium"
+  },
+  {
+    "id": "race_895",
+    "statement": {
+      "ru": "Чистый неон в трубке светится синим.",
+      "en": "Pure neon in a tube glows blue."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Neon_sign"
+  },
+  {
+    "id": "race_896",
+    "statement": {
+      "ru": "Когда-то алюминий стоил дороже золота.",
+      "en": "Aluminium once cost more than gold."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/History_of_aluminium"
+  },
+  {
+    "id": "race_897",
+    "statement": {
+      "ru": "Элемент уран назван в честь планеты Уран.",
+      "en": "The element uranium is named after the planet Uranus."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Uranium"
+  },
+  {
+    "id": "race_898",
+    "statement": {
+      "ru": "Сухой лёд — это замороженная вода.",
+      "en": "Dry ice is frozen water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dry_ice"
+  },
+  {
+    "id": "race_899",
+    "statement": {
+      "ru": "Литий такой лёгкий, что плавает в воде.",
+      "en": "Lithium is so light that it floats on water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lithium"
+  },
+  {
+    "id": "race_900",
+    "statement": {
+      "ru": "Углекислый газ легче воздуха.",
+      "en": "Carbon dioxide is lighter than air."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Carbon_dioxide"
+  },
+  {
+    "id": "race_901",
+    "statement": {
+      "ru": "Атом почти целиком состоит из пустоты.",
+      "en": "An atom is almost entirely empty space."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Atomic_nucleus"
+  },
+  {
+    "id": "race_902",
+    "statement": {
+      "ru": "Самый плотный металл на свете — свинец.",
+      "en": "Lead is the densest metal in the world."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Osmium"
+  },
+  {
+    "id": "race_903",
+    "statement": {
+      "ru": "Четыре химических элемента названы в честь одной шведской деревни.",
+      "en": "Four chemical elements are named after one Swedish village."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ytterby"
+  },
+  {
+    "id": "race_904",
+    "statement": {
+      "ru": "Возраст костей динозавров узнают радиоуглеродным методом.",
+      "en": "Dinosaur bones are dated with radiocarbon dating."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Radiocarbon_dating"
+  },
+  {
+    "id": "race_905",
+    "statement": {
+      "ru": "Во многих домашних датчиках дыма есть крупинка радиоактивного металла.",
+      "en": "Many home smoke detectors hold a speck of radioactive metal."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Smoke_detector"
+  },
+  {
+    "id": "race_906",
+    "statement": {
+      "ru": "Горящий магний можно потушить водой.",
+      "en": "Burning magnesium can be put out with water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Fire_classification"
+  },
+  {
+    "id": "race_907",
+    "statement": {
+      "ru": "Полоний назван в честь Польши.",
+      "en": "Polonium is named after Poland."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Polonium"
+  },
+  {
+    "id": "race_908",
+    "statement": {
+      "ru": "Серебро проводит электричество лучше, чем медь.",
+      "en": "Silver conducts electricity better than copper."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Silver"
+  },
+  {
+    "id": "race_909",
+    "statement": {
+      "ru": "«Карат» у золота и «карат» у бриллианта — одна и та же мера.",
+      "en": "A carat of gold and a carat of a diamond are the same measure."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Carat_(mass)"
+  },
+  {
+    "id": "race_910",
+    "statement": {
+      "ru": "В XIX веке модные зелёные обои красили краской с мышьяком.",
+      "en": "In the 19th century, fashionable green wallpaper was coloured with arsenic paint."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Scheele%27s_green"
+  },
+  {
+    "id": "race_911",
+    "statement": {
+      "ru": "Платина названа в честь философа Платона.",
+      "en": "Platinum is named after the philosopher Plato."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Platinum"
+  },
+  {
+    "id": "race_912",
+    "statement": {
+      "ru": "Фосфор впервые добыли из мочи.",
+      "en": "Phosphorus was first obtained from urine."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Phosphorus"
+  },
+  {
+    "id": "race_913",
+    "statement": {
+      "ru": "Металл никель назван в честь американской монеты.",
+      "en": "The metal nickel is named after the American coin."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Nickel"
+  },
+  {
+    "id": "race_914",
+    "statement": {
+      "ru": "Третий по количеству газ в сухом воздухе — аргон.",
+      "en": "The third most common gas in dry air is argon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Argon"
+  },
+  {
+    "id": "race_915",
+    "statement": {
+      "ru": "Самый распространённый металл в земной коре — железо.",
+      "en": "The most common metal in the Earth's crust is iron."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Abundance_of_elements_in_Earth%27s_crust"
+  },
+  {
+    "id": "race_916",
+    "statement": {
+      "ru": "Железная гиря плавает в ртути.",
+      "en": "An iron weight floats in mercury."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mercury_(element)"
+  },
+  {
+    "id": "race_917",
+    "statement": {
+      "ru": "Чистый водород пахнет тухлыми яйцами.",
+      "en": "Pure hydrogen smells of rotten eggs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hydrogen"
+  },
+  {
+    "id": "race_918",
+    "statement": {
+      "ru": "На сильном морозе оловянные вещи могут рассыпаться в порошок.",
+      "en": "In hard frost, tin objects can crumble into powder."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tin_pest"
+  },
+  {
+    "id": "race_919",
+    "statement": {
+      "ru": "Газ в кухонной плите пахнет сам по себе, без добавок.",
+      "en": "Kitchen stove gas has its smell by itself, with nothing added."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Odorizer"
+  },
+  {
+    "id": "race_920",
+    "statement": {
+      "ru": "Жидкий кислород притягивается магнитом.",
+      "en": "Liquid oxygen is attracted by a magnet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Liquid_oxygen"
+  },
+  {
+    "id": "race_921",
+    "statement": {
+      "ru": "Хлор — бесцветный газ, как воздух.",
+      "en": "Chlorine is a colourless gas, like air."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chlorine"
+  },
+  {
+    "id": "race_922",
+    "statement": {
+      "ru": "Название брома по-гречески значит «вонь».",
+      "en": "The name bromine comes from the Greek for 'stench'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bromine"
+  },
+  {
+    "id": "race_923",
+    "statement": {
+      "ru": "Учёным уже удавалось превратить другой металл в настоящее золото.",
+      "en": "Scientists have already turned another metal into real gold."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Synthesis_of_precious_metals"
+  },
+  {
+    "id": "race_924",
+    "statement": {
+      "ru": "Кислород назвали так, потому что думали, что он есть во всех кислотах.",
+      "en": "Oxygen got its name because people thought all acids contained it."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Oxygen"
+  },
+  {
+    "id": "race_925",
+    "statement": {
+      "ru": "У аквалангистов в баллонах — чистый кислород.",
+      "en": "Scuba divers' tanks hold pure oxygen."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Scuba_set"
+  },
+  {
+    "id": "race_926",
+    "statement": {
+      "ru": "Нержавеющей сталь делает добавка хрома.",
+      "en": "Added chromium is what makes stainless steel stainless."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Stainless_steel"
+  },
+  {
+    "id": "race_927",
+    "statement": {
+      "ru": "Титан тяжелее стали.",
+      "en": "Titanium is heavier than steel."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Titanium"
+  },
+  {
+    "id": "race_928",
+    "statement": {
+      "ru": "Есть химический элемент, названный в честь Альберта Эйнштейна.",
+      "en": "There is a chemical element named after Albert Einstein."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Einsteinium"
+  },
+  {
+    "id": "race_929",
+    "statement": {
+      "ru": "Чистый йод — это коричневая жидкость.",
+      "en": "Pure iodine is a brown liquid."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Iodine"
+  },
+  {
+    "id": "race_930",
+    "statement": {
+      "ru": "Название кобальта пошло от кобольда — проказливого горного духа.",
+      "en": "Cobalt's name comes from the kobold, a mischievous mine spirit."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cobalt"
+  },
+  {
+    "id": "race_931",
+    "statement": {
+      "ru": "Английское слово plumber («сантехник») происходит от латинского названия свинца.",
+      "en": "The English word plumber comes from the Latin name for lead."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Plumbing"
+  },
+  {
+    "id": "race_932",
+    "statement": {
+      "ru": "Пенопласт больше чем на 90 % состоит из воздуха.",
+      "en": "Styrofoam is more than 90% air."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Polystyrene"
+  },
+  {
+    "id": "race_933",
+    "statement": {
+      "ru": "На сильном морозе мыльный пузырь может замёрзнуть.",
+      "en": "In a hard frost a soap bubble can freeze."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Soap_bubble"
+  },
+  {
+    "id": "race_934",
+    "statement": {
+      "ru": "Высохшую акриловую краску легко смыть водой.",
+      "en": "Dried acrylic paint washes off easily with water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Acrylic_paint"
+  },
+  {
+    "id": "race_935",
+    "statement": {
+      "ru": "Бетон твердеет, потому что из него высыхает вода.",
+      "en": "Concrete hardens because the water dries out of it."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Concrete"
+  },
+  {
+    "id": "race_936",
+    "statement": {
+      "ru": "Первые автомобильные шины были белыми.",
+      "en": "The first car tyres were white."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Whitewall_tire"
+  },
+  {
+    "id": "race_937",
+    "statement": {
+      "ru": "Бумагу умеют делать из слоновьего навоза.",
+      "en": "Paper can be made from elephant dung."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dung_paper"
+  },
+  {
+    "id": "race_938",
+    "statement": {
+      "ru": "Шерсть овцы состоит из того же белка, что и ногти человека.",
+      "en": "Sheep's wool is made of the same protein as human nails."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wool"
+  },
+  {
+    "id": "race_939",
+    "statement": {
+      "ru": "Полиэстер впитывает воду лучше хлопка.",
+      "en": "Polyester soaks up water better than cotton."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Polyester"
+  },
+  {
+    "id": "race_940",
+    "statement": {
+      "ru": "Мыльные пузыри переливаются цветами, потому что в мыло добавляют краску.",
+      "en": "Soap bubbles shimmer with colours because dye is added to the soap."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Soap_bubble"
+  },
+  {
+    "id": "race_941",
+    "statement": {
+      "ru": "Бумажный стаканчик для горячего кофе изнутри обычно покрыт пластиком.",
+      "en": "A paper cup for hot coffee is usually lined with plastic inside."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Paper_cup"
+  },
+  {
+    "id": "race_942",
+    "statement": {
+      "ru": "Гофрированную бумагу сначала придумали как подкладку для цилиндров.",
+      "en": "Corrugated paper was first used as a lining for top hats."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Corrugated_fiberboard"
+  },
+  {
+    "id": "race_943",
+    "statement": {
+      "ru": "Ткань деним получила название от французского города Ним.",
+      "en": "Denim takes its name from the French town of Nîmes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Denim"
+  },
+  {
+    "id": "race_944",
+    "statement": {
+      "ru": "Если смешать хлорный отбеливатель с нашатырём, выйдет ядовитый газ.",
+      "en": "Mixing chlorine bleach with ammonia gives off a poisonous gas."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sodium_hypochlorite"
+  },
+  {
+    "id": "race_945",
+    "statement": {
+      "ru": "До изобретения тюбика художники хранили краски в свиных пузырях.",
+      "en": "Before the paint tube, artists kept their paints in pig bladders."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Oil_paint#Paint_tube"
+  },
+  {
+    "id": "race_946",
+    "statement": {
+      "ru": "Шёлк — растительное волокно, как лён и хлопок.",
+      "en": "Silk is a plant fibre, like linen and cotton."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Silk"
+  },
+  {
+    "id": "race_947",
+    "statement": {
+      "ru": "Первую пластмассу изобрели во время Второй мировой войны.",
+      "en": "The first plastic was invented during the Second World War."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Plastic"
+  },
+  {
+    "id": "race_948",
+    "statement": {
+      "ru": "Есть стеклянные капли, которые выдерживают удар молотка.",
+      "en": "There are glass drops that can survive a hammer blow."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Prince_Rupert%27s_drop"
+  },
+  {
+    "id": "race_949",
+    "statement": {
+      "ru": "Старые окна внизу толще, потому что стекло за века стекает вниз.",
+      "en": "Old windows are thicker at the bottom because glass flows down over the centuries."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Glass"
+  },
+  {
+    "id": "race_950",
+    "statement": {
+      "ru": "В чистом кислороде огонь гаснет.",
+      "en": "Fire goes out in pure oxygen."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Apollo_1"
+  },
+  {
+    "id": "race_951",
+    "statement": {
+      "ru": "Нейлон назвали по первым буквам Нью-Йорка и Лондона.",
+      "en": "Nylon is named after New York and London."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Nylon"
+  },
+  {
+    "id": "race_952",
+    "statement": {
+      "ru": "В кино бутылки, которые разбивают о голову, бывают из сахара.",
+      "en": "In films, bottles smashed over someone's head can be made of sugar."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sugar_glass"
+  },
+  {
+    "id": "race_953",
+    "statement": {
+      "ru": "Один из первых синтетических красителей открыли, когда искали лекарство от малярии.",
+      "en": "One of the first synthetic dyes was found while looking for a malaria drug."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mauveine"
+  },
+  {
+    "id": "race_954",
+    "statement": {
+      "ru": "Шерстяной свитер загорается легче хлопковой футболки.",
+      "en": "A wool jumper catches fire more easily than a cotton T-shirt."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Wool"
+  },
+  {
+    "id": "race_955",
+    "statement": {
+      "ru": "Купол римского Пантеона сделан из бетона без стальной арматуры.",
+      "en": "The dome of the Pantheon in Rome is made of concrete with no steel reinforcement."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pantheon,_Rome"
+  },
+  {
+    "id": "race_956",
+    "statement": {
+      "ru": "Резиновые мячи в Америке делали за 3000 лет до Колумба.",
+      "en": "Rubber balls were made in the Americas 3,000 years before Columbus."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mesoamerican_ballgame"
+  },
+  {
+    "id": "race_957",
+    "statement": {
+      "ru": "Флисовую кофту можно сделать из пластиковых бутылок.",
+      "en": "A fleece jacket can be made from plastic bottles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Polar_fleece"
+  },
+  {
+    "id": "race_958",
+    "statement": {
+      "ru": "Цемент и бетон — одно и то же.",
+      "en": "Cement and concrete are the same thing."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cement"
+  },
+  {
+    "id": "race_959",
+    "statement": {
+      "ru": "Американские доллары печатают на бумаге из хлопка.",
+      "en": "US dollar bills are printed on paper made from cotton."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/United_States_dollar"
+  },
+  {
+    "id": "race_960",
+    "statement": {
+      "ru": "Ржавчина занимает больше места, чем железо, из которого она появилась.",
+      "en": "Rust takes up more room than the iron it formed from."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rust"
+  },
+  {
+    "id": "race_961",
+    "statement": {
+      "ru": "В невесомости пламя свечи становится круглым, как шар.",
+      "en": "In weightlessness a candle flame turns round, like a ball."
+    },
+    "answer": true,
+    "source": "https://www.nasa.gov/image-article/candle-flame-1g-vs-microgravity/"
+  },
+  {
+    "id": "race_962",
+    "statement": {
+      "ru": "Лист бумаги невозможно сложить пополам больше семи раз.",
+      "en": "A sheet of paper can't be folded in half more than seven times."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mathematics_of_paper_folding"
+  },
+  {
+    "id": "race_963",
+    "statement": {
+      "ru": "В свече горит фитиль, а воск просто плавится и стекает.",
+      "en": "In a candle the wick burns, and the wax just melts and drips away."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Candle"
+  },
+  {
+    "id": "race_964",
+    "statement": {
+      "ru": "Треугольник из стрелок с цифрой на пластике значит, что его точно переработают.",
+      "en": "A triangle of arrows with a number on plastic means it will definitely be recycled."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Resin_identification_code"
+  },
+  {
+    "id": "race_965",
+    "statement": {
+      "ru": "В безопасных спичках красный фосфор нанесён на коробок, а не на головку.",
+      "en": "In safety matches the red phosphorus is on the box, not on the match head."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Safety_match"
+  },
+  {
+    "id": "race_966",
+    "statement": {
+      "ru": "Раскладку QWERTY придумали ещё в XIX веке — для пишущих машинок.",
+      "en": "The QWERTY layout was devised back in the 19th century, for typewriters."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/QWERTY"
+  },
+  {
+    "id": "race_967",
+    "statement": {
+      "ru": "Первый звонок с сотового телефона сделали главному конкуренту.",
+      "en": "The first call from a handheld mobile phone was made to the caller's chief rival."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Martin_Cooper_(inventor)"
+  },
+  {
+    "id": "race_968",
+    "statement": {
+      "ru": "Первое в мире SMS отправили с компьютера, а получили на телефон.",
+      "en": "The world's first text message was sent from a computer to a phone."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/SMS"
+  },
+  {
+    "id": "race_969",
+    "statement": {
+      "ru": "Компьютерную мышь назвали в честь Микки Мауса.",
+      "en": "The computer mouse was named after Mickey Mouse."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Computer_mouse"
+  },
+  {
+    "id": "race_970",
+    "statement": {
+      "ru": "В процессоре iPhone 15 Pro транзисторов больше, чем людей на Земле.",
+      "en": "The iPhone 15 Pro's processor has more transistors than there are people on Earth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Apple_A17"
+  },
+  {
+    "id": "race_971",
+    "statement": {
+      "ru": "Надкушенное яблоко Apple — дань памяти Алану Тьюрингу.",
+      "en": "Apple's bitten apple logo is a tribute to Alan Turing."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_972",
+    "statement": {
+      "ru": "Microsoft основали в Альбукерке — городе из сериала «Во все тяжкие».",
+      "en": "Microsoft was founded in Albuquerque, the city of Breaking Bad."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Microsoft"
+  },
+  {
+    "id": "race_973",
+    "statement": {
+      "ru": "Первый жёсткий диск вмещал целый гигабайт.",
+      "en": "The first hard disk held a whole gigabyte."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/IBM_305_RAMAC"
+  },
+  {
+    "id": "race_974",
+    "statement": {
+      "ru": "Первый телефон с камерой появился в Японии.",
+      "en": "The first phone with a camera appeared in Japan."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Camera_phone"
+  },
+  {
+    "id": "race_975",
+    "statement": {
+      "ru": "Компьютерную мышь изобрели в Apple.",
+      "en": "The computer mouse was invented at Apple."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Computer_mouse"
+  },
+  {
+    "id": "race_976",
+    "statement": {
+      "ru": "Цифровой фотоаппарат изобрели в компании Kodak.",
+      "en": "The digital camera was invented at Kodak."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Digital_camera"
+  },
+  {
+    "id": "race_977",
+    "statement": {
+      "ru": "Аккумулятор смартфона полезно разряжать до нуля перед зарядкой.",
+      "en": "It's good for a smartphone battery to run it down to zero before charging."
+    },
+    "answer": false,
+    "source": "https://batteryuniversity.com/article/how-to-prolong-lithium-based-batteries"
+  },
+  {
+    "id": "race_978",
+    "statement": {
+      "ru": "За изобретение литий-ионного аккумулятора дали Нобелевскую премию.",
+      "en": "The invention of the lithium-ion battery won a Nobel Prize."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lithium-ion_battery"
+  },
+  {
+    "id": "race_979",
+    "statement": {
+      "ru": "Первый цифровой фотоаппарат делал цветные снимки.",
+      "en": "The first digital camera took colour photos."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Steven_Sasson"
+  },
+  {
+    "id": "race_980",
+    "statement": {
+      "ru": "Аналитическую машину Бэббиджа должен был крутить паровой двигатель.",
+      "en": "Babbage's Analytical Engine was meant to be driven by a steam engine."
+    },
+    "answer": true,
+    "source": "https://interestingengineering.com/innovation/analytical-engine-the-greatest-mechanical-computer-never-built"
+  },
+  {
+    "id": "race_981",
+    "statement": {
+      "ru": "Первый плеер Walkman проигрывал компакт-диски.",
+      "en": "The first Walkman played CDs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Walkman"
+  },
+  {
+    "id": "race_982",
+    "statement": {
+      "ru": "Когда-то Microsoft вложила деньги в своего соперника Apple.",
+      "en": "Microsoft once invested money in its rival Apple."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Apple_Inc."
+  },
+  {
+    "id": "race_983",
+    "statement": {
+      "ru": "Батарейка AAA больше, чем батарейка AA.",
+      "en": "An AAA battery is bigger than an AA battery."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/AAA_battery"
+  },
+  {
+    "id": "race_984",
+    "statement": {
+      "ru": "Название iPod придумали, вспомнив фильм «Космическая одиссея 2001 года».",
+      "en": "The name iPod was inspired by the film 2001: A Space Odyssey."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/IPod"
+  },
+  {
+    "id": "race_985",
+    "statement": {
+      "ru": "Промокший телефон лучше всего сушить в пакете с рисом.",
+      "en": "The best way to dry a wet phone is in a bag of rice."
+    },
+    "answer": false,
+    "source": "https://support.apple.com/en-us/102643"
+  },
+  {
+    "id": "race_986",
+    "statement": {
+      "ru": "BlackBerry назвали так, потому что кнопки похожи на зёрнышки ежевики.",
+      "en": "BlackBerry got its name because its keys look like the little bumps of a blackberry."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/BlackBerry_Limited"
+  },
+  {
+    "id": "race_987",
+    "statement": {
+      "ru": "Самым первым персональным компьютером был IBM PC.",
+      "en": "The very first personal computer was the IBM PC."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/IBM_Personal_Computer"
+  },
+  {
+    "id": "race_988",
+    "statement": {
+      "ru": "Компьютер Macintosh назвали в честь непромокаемого плаща.",
+      "en": "The Macintosh computer was named after the rubberised raincoat."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Macintosh"
+  },
+  {
+    "id": "race_989",
+    "statement": {
+      "ru": "На клавишах F и J есть бугорки, чтобы находить их вслепую.",
+      "en": "The F and J keys have little bumps so you can find them without looking."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Touch_typing"
+  },
+  {
+    "id": "race_990",
+    "statement": {
+      "ru": "Первым смартфоном с сенсорным экраном был iPhone.",
+      "en": "The first smartphone with a touchscreen was the iPhone."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/IBM_Simon"
+  },
+  {
+    "id": "race_991",
+    "statement": {
+      "ru": "Кремниевую долину назвали в честь силикона.",
+      "en": "Silicon Valley is named after silicone, the rubbery material."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Silicon_Valley"
+  },
+  {
+    "id": "race_992",
+    "statement": {
+      "ru": "Microsoft начала продавать компьютерные мыши раньше, чем выпустила Windows.",
+      "en": "Microsoft was selling computer mice before it released Windows."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Microsoft_Mouse"
+  },
+  {
+    "id": "race_993",
+    "statement": {
+      "ru": "Первый мобильный телефон в продаже стоил около 400 долларов.",
+      "en": "The first mobile phone on sale cost about 400 dollars."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Motorola_DynaTAC"
+  },
+  {
+    "id": "race_994",
+    "statement": {
+      "ru": "Дизайн ноутбуков ThinkPad вдохновлён японской коробкой для обеда.",
+      "en": "The ThinkPad laptop's design was inspired by a Japanese lunchbox."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/ThinkPad"
+  },
+  {
+    "id": "race_995",
+    "statement": {
+      "ru": "Слово «гаджет» появилось вместе со смартфонами.",
+      "en": "The word 'gadget' appeared with smartphones."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gadget"
+  },
+  {
+    "id": "race_996",
+    "statement": {
+      "ru": "Android сначала задумывали как систему для фотоаппаратов.",
+      "en": "Android was first meant to be an operating system for cameras."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Android_(operating_system)"
+  },
+  {
+    "id": "race_997",
+    "statement": {
+      "ru": "Компьютеры Mac всегда работали на процессорах, которые делала сама Apple.",
+      "en": "Mac computers have always run on processors Apple made itself."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mac_transition_to_Intel_processors"
+  },
+  {
+    "id": "race_998",
+    "statement": {
+      "ru": "Первый пульт от телевизора был соединён с ним проводом.",
+      "en": "The first TV remote control was connected to the TV by a wire."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Remote_control"
+  },
+  {
+    "id": "race_999",
+    "statement": {
+      "ru": "Беспроводная зарядка передаёт энергию телефону через Wi-Fi.",
+      "en": "Wireless charging sends power to the phone over Wi-Fi."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Qi_(standard)"
+  },
+  {
+    "id": "race_1000",
+    "statement": {
+      "ru": "Рекламу первого «Макинтоша» снял режиссёр «Чужого».",
+      "en": "The ad for the first Macintosh was shot by the director of Alien."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/1984_(advertisement)"
+  },
+  {
+    "id": "race_1001",
+    "statement": {
+      "ru": "Первый микропроцессор Intel сделали по заказу японской фирмы для калькулятора.",
+      "en": "Intel's first microprocessor was made to order for a Japanese firm's calculator."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Intel_4004"
+  },
+  {
+    "id": "race_1002",
+    "statement": {
+      "ru": "Флеш-память назвали так из-за вспышки фотоаппарата.",
+      "en": "Flash memory was named after a camera flash."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Flash_memory"
+  },
+  {
+    "id": "race_1003",
+    "statement": {
+      "ru": "Предок IBM когда-то продавал мясорезки.",
+      "en": "IBM's forerunner once sold meat slicers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Computing-Tabulating-Recording_Company"
+  },
+  {
+    "id": "race_1004",
+    "statement": {
+      "ru": "Первое видео на YouTube — про слонов в зоопарке.",
+      "en": "The very first YouTube video is about elephants at a zoo."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Me_at_the_zoo"
+  },
+  {
+    "id": "race_1005",
+    "statement": {
+      "ru": "Язык JavaScript — это упрощённая версия языка Java.",
+      "en": "JavaScript is a simplified version of the Java language."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/JavaScript"
+  },
+  {
+    "id": "race_1006",
+    "statement": {
+      "ru": "Название Google — это число «гугол», написанное с ошибкой.",
+      "en": "The name Google is the number 'googol', misspelt."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Google"
+  },
+  {
+    "id": "race_1007",
+    "statement": {
+      "ru": "В Финляндии доступ в интернет — право жителей, записанное в законе.",
+      "en": "In Finland, internet access is a right written into law."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Right_to_Internet_access"
+  },
+  {
+    "id": "race_1008",
+    "statement": {
+      "ru": "Язык программирования Python назван в честь змеи.",
+      "en": "The Python programming language is named after the snake."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+    "id": "race_1009",
+    "statement": {
+      "ru": "Почти все статьи одного из крупнейших разделов Википедии написали боты.",
+      "en": "Almost all the articles in one of Wikipedia's biggest editions were written by bots."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cebuano_Wikipedia"
+  },
+  {
+    "id": "race_1010",
+    "statement": {
+      "ru": "Слово «спам» пришло из комедийного скетча про консервы.",
+      "en": "The word 'spam' comes from a comedy sketch about tinned meat."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Spamming"
+  },
+  {
+    "id": "race_1011",
+    "statement": {
+      "ru": "Первое сообщение в прародителе интернета оборвалось: компьютер упал после двух букв.",
+      "en": "The first message over the internet's ancestor was cut short: the computer crashed after two letters."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/ARPANET"
+  },
+  {
+    "id": "race_1012",
+    "statement": {
+      "ru": "Первую рекламную рассылку-спам разослали только в 2000-х.",
+      "en": "The first spam email was only sent in the 2000s."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Spamming"
+  },
+  {
+    "id": "race_1013",
+    "statement": {
+      "ru": "Вводя капчу, люди помогали оцифровывать старые книги и газеты.",
+      "en": "Typing in CAPTCHAs, people helped digitise old books and newspapers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/ReCAPTCHA"
+  },
+  {
+    "id": "race_1014",
+    "statement": {
+      "ru": "YouTube появился раньше Википедии.",
+      "en": "YouTube appeared before Wikipedia."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Wikipedia"
+  },
+  {
+    "id": "race_1015",
+    "statement": {
+      "ru": "Самый первый в мире сайт можно открыть и сегодня.",
+      "en": "The world's very first website can still be opened today."
+    },
+    "answer": true,
+    "source": "https://info.cern.ch/"
+  },
+  {
+    "id": "race_1016",
+    "statement": {
+      "ru": "Всемирную паутину придумали в американской военной лаборатории.",
+      "en": "The World Wide Web was invented in an American military lab."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/World_Wide_Web"
+  },
+  {
+    "id": "race_1017",
+    "statement": {
+      "ru": "Ранние эмодзи хранятся в нью-йоркском музее как произведение искусства.",
+      "en": "Early emoji are kept in a New York museum as works of art."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Emoji"
+  },
+  {
+    "id": "race_1018",
+    "statement": {
+      "ru": "Кнопка «Нравится» была в Facebook с первого дня.",
+      "en": "Facebook had the Like button from day one."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Facebook_like_button"
+  },
+  {
+    "id": "race_1019",
+    "statement": {
+      "ru": "Авторы одного из первых компьютерных вирусов вписали в него свой адрес и телефоны.",
+      "en": "The authors of one of the first computer viruses put their address and phone numbers in it."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Brain_(computer_virus)"
+  },
+  {
+    "id": "race_1020",
+    "statement": {
+      "ru": "Создатель Всемирной паутины запатентовал своё изобретение.",
+      "en": "The inventor of the World Wide Web patented his invention."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+  },
+  {
+    "id": "race_1021",
+    "statement": {
+      "ru": "Королева Елизавета II отправила электронное письмо ещё в 1970-х.",
+      "en": "Queen Elizabeth II sent an email back in the 1970s."
+    },
+    "answer": true,
+    "source": "https://internethalloffame.org/blog/2012/12/31/how-queen-england-beat-everyone-internet"
+  },
+  {
+    "id": "race_1022",
+    "statement": {
+      "ru": "Instagram купила компания Google.",
+      "en": "Instagram was bought by Google."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Instagram"
+  },
+  {
+    "id": "race_1023",
+    "statement": {
+      "ru": "Птицу с логотипа Twitter звали Ларри.",
+      "en": "The bird on Twitter's logo was called Larry."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Twitter"
+  },
+  {
+    "id": "race_1024",
+    "statement": {
+      "ru": "Первые чат-боты появились уже в XXI веке.",
+      "en": "The first chatbots only appeared in the 21st century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/ELIZA"
+  },
+  {
+    "id": "race_1025",
+    "statement": {
+      "ru": "Название Yahoo! связано с книгой «Путешествия Гулливера».",
+      "en": "The name Yahoo! is linked to the book Gulliver's Travels."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Yahoo"
+  },
+  {
+    "id": "race_1026",
+    "statement": {
+      "ru": "Компьютер обыграл чемпиона по го раньше, чем чемпиона мира по шахматам.",
+      "en": "A computer beat a Go champion before it beat a world chess champion."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol"
+  },
+  {
+    "id": "race_1027",
+    "statement": {
+      "ru": "Панорамы пустыни для Google Street View снимали с верблюда.",
+      "en": "Desert panoramas for Google Street View were shot from a camel."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Google_Street_View"
+  },
+  {
+    "id": "race_1028",
+    "statement": {
+      "ru": "Слово «мем» появилось вместе с интернетом.",
+      "en": "The word 'meme' was born with the internet."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Meme"
+  },
+  {
+    "id": "race_1029",
+    "statement": {
+      "ru": "Буква «T» в названии ChatGPT означает «трансформер».",
+      "en": "The T in ChatGPT stands for 'transformer'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/ChatGPT"
+  },
+  {
+    "id": "race_1030",
+    "statement": {
+      "ru": "Режим «инкогнито» прячет от провайдера, какие сайты вы открываете.",
+      "en": "Incognito mode hides the sites you visit from your internet provider."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Private_browsing"
+  },
+  {
+    "id": "race_1031",
+    "statement": {
+      "ru": "Хмурая мордочка кошки Grumpy Cat — от болезни, а не от характера.",
+      "en": "Grumpy Cat's frown came from an illness, not her temper."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Grumpy_Cat"
+  },
+  {
+    "id": "race_1032",
+    "statement": {
+      "ru": "Знак @ придумали специально для электронной почты.",
+      "en": "The @ sign was invented for email."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/At_sign"
+  },
+  {
+    "id": "race_1033",
+    "statement": {
+      "ru": "Технологию Wi-Fi помог создать радиоастроном.",
+      "en": "A radio astronomer helped create Wi-Fi."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/John_O%27Sullivan_(engineer)"
+  },
+  {
+    "id": "race_1034",
+    "statement": {
+      "ru": "Электронная почта моложе, чем сайты в интернете.",
+      "en": "Email is younger than websites."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Email"
+  },
+  {
+    "id": "race_1035",
+    "statement": {
+      "ru": "Первым программистом в истории часто называют дочь поэта Байрона.",
+      "en": "The first programmer in history is often said to be the poet Byron's daughter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ada_Lovelace"
+  },
+  {
+    "id": "race_1036",
+    "statement": {
+      "ru": "Слово «селфи» впервые появилось в США.",
+      "en": "The word 'selfie' first appeared in the USA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Selfie"
+  },
+  {
+    "id": "race_1037",
+    "statement": {
+      "ru": "Язык программирования Java назван в честь сорта кофе.",
+      "en": "The Java programming language is named after a coffee."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Java_(programming_language)"
+  },
+  {
+    "id": "race_1038",
+    "statement": {
+      "ru": "Собака из мема Doge — корги.",
+      "en": "The dog from the Doge meme is a corgi."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Doge_(meme)"
+  },
+  {
+    "id": "race_1039",
+    "statement": {
+      "ru": "Хакерская культура зародилась в клубе любителей игрушечных железных дорог.",
+      "en": "Hacker culture was born in a model railway club."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hacker_culture"
+  },
+  {
+    "id": "race_1040",
+    "statement": {
+      "ru": "Слово «алгоритм» происходит от имени греческого математика.",
+      "en": "The word 'algorithm' comes from the name of a Greek mathematician."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Algorithm"
+  },
+  {
+    "id": "race_1041",
+    "statement": {
+      "ru": "Интернет-адреса на .tv принадлежат крошечной стране в Тихом океане.",
+      "en": "Web addresses ending in .tv belong to a tiny Pacific country."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/.tv"
+  },
+  {
+    "id": "race_1042",
+    "statement": {
+      "ru": "ChatGPT набрал миллион пользователей всего за пять дней.",
+      "en": "ChatGPT reached a million users in just five days."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/ChatGPT"
+  },
+  {
+    "id": "race_1043",
+    "statement": {
+      "ru": "Слово «аватар» пришло в интернет из японского языка.",
+      "en": "The word 'avatar' came to the internet from Japanese."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Avatar_(computing)"
+  },
+  {
+    "id": "race_1044",
+    "statement": {
+      "ru": "Текст-заглушка «Lorem ipsum» взят из сочинения Цицерона.",
+      "en": "The placeholder text 'Lorem ipsum' comes from a work by Cicero."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lorem_ipsum"
+  },
+  {
+    "id": "race_1045",
+    "statement": {
+      "ru": "Видео «Чарли укусил меня за палец» продали больше чем за полмиллиона долларов.",
+      "en": "The 'Charlie Bit My Finger' video was sold for more than half a million dollars."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Charlie_Bit_My_Finger"
+  },
+  {
+    "id": "race_1046",
+    "statement": {
+      "ru": "Америку назвали в честь Колумба.",
+      "en": "America was named after Columbus."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Naming_of_the_Americas"
+  },
+  {
+    "id": "race_1047",
+    "statement": {
+      "ru": "Канарские острова назвали в честь канареек.",
+      "en": "The Canary Islands were named after canaries."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Canary_Islands"
+  },
+  {
+    "id": "race_1048",
+    "statement": {
+      "ru": "Капитана Кука убили пираты.",
+      "en": "Captain Cook was killed by pirates."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Death_of_James_Cook"
+  },
+  {
+    "id": "race_1049",
+    "statement": {
+      "ru": "Колумб переплывал Атлантику к Америке всего один раз.",
+      "en": "Columbus sailed across the Atlantic to America only once."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus"
+  },
+  {
+    "id": "race_1050",
+    "statement": {
+      "ru": "Марко Поло описал в своей книге бумажные деньги Китая.",
+      "en": "Marco Polo described China's paper money in his book."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Travels_of_Marco_Polo"
+  },
+  {
+    "id": "race_1051",
+    "statement": {
+      "ru": "Первое кругосветное плавание заняло меньше года.",
+      "en": "The first voyage around the world took less than a year."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Magellan_expedition"
+  },
+  {
+    "id": "race_1052",
+    "statement": {
+      "ru": "Знаменитый корабль «Баунти» плыл через океан за саженцами хлебного дерева.",
+      "en": "The famous ship Bounty sailed across the ocean to fetch breadfruit seedlings."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mutiny_on_the_Bounty"
+  },
+  {
+    "id": "race_1053",
+    "statement": {
+      "ru": "Сердце Ливингстона похоронено в Африке, а тело — в Лондоне.",
+      "en": "Livingstone's heart is buried in Africa and his body in London."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/David_Livingstone"
+  },
+  {
+    "id": "race_1054",
+    "statement": {
+      "ru": "Мыс Горн назвали так, потому что он похож на рог.",
+      "en": "Cape Horn got its name because it looks like a horn."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cape_Horn"
+  },
+  {
+    "id": "race_1055",
+    "statement": {
+      "ru": "Австралию когда-то называли Новой Голландией.",
+      "en": "Australia was once called New Holland."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/New_Holland_(Australia)"
+  },
+  {
+    "id": "race_1056",
+    "statement": {
+      "ru": "Васко да Гама доплыл до Индии через Суэцкий канал.",
+      "en": "Vasco da Gama sailed to India through the Suez Canal."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Vasco_da_Gama"
+  },
+  {
+    "id": "race_1057",
+    "statement": {
+      "ru": "Льюис и Кларк взяли в экспедицию через Америку собаку.",
+      "en": "Lewis and Clark took a dog on their expedition across America."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Seaman_(dog)"
+  },
+  {
+    "id": "race_1058",
+    "statement": {
+      "ru": "Самый старый сохранившийся глобус уже показывает Америку.",
+      "en": "The oldest surviving globe already shows America."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Erdapfel"
+  },
+  {
+    "id": "race_1059",
+    "statement": {
+      "ru": "Обещанную награду тому, кто первым увидит землю, Колумб забрал себе.",
+      "en": "Columbus kept for himself the reward promised to whoever sighted land first."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rodrigo_de_Triana"
+  },
+  {
+    "id": "race_1060",
+    "statement": {
+      "ru": "Огненную Землю назвали так из-за костров, которые видели моряки Магеллана.",
+      "en": "Tierra del Fuego was named after fires seen by Magellan's sailors."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tierra_del_Fuego"
+  },
+  {
+    "id": "race_1061",
+    "statement": {
+      "ru": "Название «Канада» — от испанского «здесь ничего нет».",
+      "en": "The name 'Canada' comes from Spanish for 'nothing here'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Name_of_Canada"
+  },
+  {
+    "id": "race_1062",
+    "statement": {
+      "ru": "Тасманию назвали в честь тасманийского дьявола.",
+      "en": "Tasmania was named after the Tasmanian devil."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tasmania"
+  },
+  {
+    "id": "race_1063",
+    "statement": {
+      "ru": "Капитан Кук плыл на Таити, чтобы увидеть, как Венера проходит по Солнцу.",
+      "en": "Captain Cook sailed to Tahiti to watch Venus pass across the Sun."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/First_voyage_of_James_Cook"
+  },
+  {
+    "id": "race_1064",
+    "statement": {
+      "ru": "Марко Поло подробно описал Великую Китайскую стену.",
+      "en": "Marco Polo described the Great Wall of China in detail."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Travels_of_Marco_Polo"
+  },
+  {
+    "id": "race_1065",
+    "statement": {
+      "ru": "«Кенгуру» на языке аборигенов значит «я вас не понимаю».",
+      "en": "In an Aboriginal language, 'kangaroo' means 'I don't understand you'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Kangaroo"
+  },
+  {
+    "id": "race_1066",
+    "statement": {
+      "ru": "Гавайи когда-то назывались Сандвичевыми островами.",
+      "en": "Hawaii was once called the Sandwich Islands."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hawaii"
+  },
+  {
+    "id": "race_1067",
+    "statement": {
+      "ru": "Магеллан был испанцем.",
+      "en": "Magellan was Spanish."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Magellan_expedition"
+  },
+  {
+    "id": "race_1068",
+    "statement": {
+      "ru": "Мыс Доброй Надежды сначала назвали мысом Бурь.",
+      "en": "The Cape of Good Hope was first named the Cape of Storms."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cape_of_Good_Hope"
+  },
+  {
+    "id": "race_1069",
+    "statement": {
+      "ru": "Стэнли отправился искать Ливингстона по приказу английской королевы.",
+      "en": "Stanley set out to find Livingstone on the orders of the Queen of England."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Henry_Morton_Stanley"
+  },
+  {
+    "id": "race_1070",
+    "statement": {
+      "ru": "Калифорнию назвали в честь сказочного острова из испанского романа.",
+      "en": "California was named after a fairy-tale island in a Spanish novel."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Name_of_California"
+  },
+  {
+    "id": "race_1071",
+    "statement": {
+      "ru": "На старинных картах часто писали «Здесь водятся драконы».",
+      "en": "Old maps often had the words 'Here be dragons' on them."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Here_be_dragons"
+  },
+  {
+    "id": "race_1072",
+    "statement": {
+      "ru": "Принц Генрих Мореплаватель сам водил корабли вдоль Африки.",
+      "en": "Prince Henry the Navigator himself sailed ships along Africa."
+    },
+    "answer": false,
+    "source": "https://www.biography.com/explorer/henry-the-navigator"
+  },
+  {
+    "id": "race_1073",
+    "statement": {
+      "ru": "Слово «гамак» пришло из языка индейцев.",
+      "en": "The word 'hammock' comes from a Native American language."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hammock"
+  },
+  {
+    "id": "race_1074",
+    "statement": {
+      "ru": "Морская миля короче обычной сухопутной мили.",
+      "en": "A nautical mile is shorter than an ordinary land mile."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Nautical_mile"
+  },
+  {
+    "id": "race_1075",
+    "statement": {
+      "ru": "Британскому моряку когда-то полагалось почти четыре литра пива в день.",
+      "en": "A British sailor was once entitled to almost four litres of beer a day."
+    },
+    "answer": true,
+    "source": "https://www.navalgazing.net/Naval-Rations-Part-1"
+  },
+  {
+    "id": "race_1076",
+    "statement": {
+      "ru": "Средневековые европейские карты мира обычно рисовали с востоком наверху.",
+      "en": "Medieval European world maps were usually drawn with east at the top."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/T_and_O_map"
+  },
+  {
+    "id": "race_1077",
+    "statement": {
+      "ru": "В экспедиции Льюиса и Кларка погибла почти половина отряда.",
+      "en": "Almost half of the Lewis and Clark expedition died on the way."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Charles_Floyd_(explorer)"
+  },
+  {
+    "id": "race_1078",
+    "statement": {
+      "ru": "Стэнли успел повоевать в Гражданской войне в США за обе стороны.",
+      "en": "Stanley fought on both sides in the American Civil War."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Henry_Morton_Stanley"
+  },
+  {
+    "id": "race_1079",
+    "statement": {
+      "ru": "Пирата Фрэнсиса Дрейка английская королева приказала казнить.",
+      "en": "The Queen of England ordered the pirate Francis Drake to be executed."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Francis_Drake"
+  },
+  {
+    "id": "race_1080",
+    "statement": {
+      "ru": "Корабли китайского адмирала Чжэн Хэ были намного больше кораблей Колумба.",
+      "en": "The ships of the Chinese admiral Zheng He were much bigger than Columbus's."
+    },
+    "answer": true,
+    "source": "https://www.digitalhistory.uh.edu/active_learning/explorations/1492/1492_zhenghe.cfm"
+  },
+  {
+    "id": "race_1081",
+    "statement": {
+      "ru": "Ибн Баттута проехал больше, чем Марко Поло.",
+      "en": "Ibn Battuta travelled farther than Marco Polo."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ibn_Battuta"
+  },
+  {
+    "id": "race_1082",
+    "statement": {
+      "ru": "Галапагосские острова назвали в честь игуан.",
+      "en": "The Galápagos Islands were named after iguanas."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Galápagos_Islands"
+  },
+  {
+    "id": "race_1083",
+    "statement": {
+      "ru": "Моряки на парусниках верили, что свист на палубе вызывает сильный ветер.",
+      "en": "On sailing ships, sailors believed whistling on deck would raise a strong wind."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sailors%27_superstitions"
+  },
+  {
+    "id": "race_1084",
+    "statement": {
+      "ru": "Голландцы отдали англичанам Манхэттен за островок с мускатным орехом.",
+      "en": "The Dutch gave Manhattan to the English in exchange for a tiny nutmeg island."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Run_(island)"
+  },
+  {
+    "id": "race_1085",
+    "statement": {
+      "ru": "Скотт взял в Антарктиду пони, чтобы тянуть сани.",
+      "en": "Scott took ponies to Antarctica to pull sledges."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Terra_Nova_expedition"
+  },
+  {
+    "id": "race_1086",
+    "statement": {
+      "ru": "Первой женщиной на вершине Эвереста стала американка.",
+      "en": "The first woman to reach the top of Everest was an American."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Junko_Tabei"
+  },
+  {
+    "id": "race_1087",
+    "statement": {
+      "ru": "Амундсен по дороге к полюсу кормил людей мясом ездовых собак.",
+      "en": "On the way to the Pole, Amundsen fed his men on the meat of their sled dogs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Amundsen%27s_South_Pole_expedition"
+  },
+  {
+    "id": "race_1088",
+    "statement": {
+      "ru": "Хейердал плыл на плоту «Кон-Тики» в одиночку.",
+      "en": "Heyerdahl sailed the Kon-Tiki raft alone."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Kon-Tiki_expedition"
+  },
+  {
+    "id": "race_1089",
+    "statement": {
+      "ru": "Тайских мальчиков выносили из затопленной пещеры под наркозом.",
+      "en": "The Thai boys were carried out of the flooded cave under anaesthetic."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tham_Luang_cave_rescue"
+  },
+  {
+    "id": "race_1090",
+    "statement": {
+      "ru": "В Антарктиде полярникам приходится остерегаться белых медведей.",
+      "en": "In Antarctica, scientists have to watch out for polar bears."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Polar_bear"
+  },
+  {
+    "id": "race_1091",
+    "statement": {
+      "ru": "Амундсен побывал и на Южном полюсе, и над Северным — на дирижабле.",
+      "en": "Amundsen made it to the South Pole and also over the North Pole, in an airship."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Norge_(airship)"
+  },
+  {
+    "id": "race_1092",
+    "statement": {
+      "ru": "Летом на Южном полюсе бывает плюсовая температура.",
+      "en": "In summer the temperature at the South Pole rises above zero."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/South_Pole"
+  },
+  {
+    "id": "race_1093",
+    "statement": {
+      "ru": "Корабль Шеклтона нашли на дне спустя больше ста лет, почти целым.",
+      "en": "Shackleton's ship was found on the seabed more than a century later, almost intact."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition"
+  },
+  {
+    "id": "race_1094",
+    "statement": {
+      "ru": "Под льдом на Северном полюсе океан мелкий — всего десятки метров.",
+      "en": "Under the ice at the North Pole the ocean is shallow, just tens of metres deep."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/North_Pole"
+  },
+  {
+    "id": "race_1095",
+    "statement": {
+      "ru": "Эдмунд Хиллари до Эвереста работал пчеловодом.",
+      "en": "Before Everest, Edmund Hillary worked as a beekeeper."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Edmund_Hillary"
+  },
+  {
+    "id": "race_1096",
+    "statement": {
+      "ru": "Эверест растёт и за год становится выше на целый метр.",
+      "en": "Everest is growing and gets a whole metre taller every year."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mount_Everest"
+  },
+  {
+    "id": "race_1097",
+    "statement": {
+      "ru": "Знак Южного полюса каждый год переносят на новое место.",
+      "en": "The South Pole marker is moved to a new spot every year."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/South_Pole"
+  },
+  {
+    "id": "race_1098",
+    "statement": {
+      "ru": "Плёнку экспедиции, пропавшей на воздушном шаре, проявили через 33 года.",
+      "en": "The film of an expedition lost in a balloon was developed 33 years later."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition"
+  },
+  {
+    "id": "race_1099",
+    "statement": {
+      "ru": "Через Атлантику на воздушном шаре перелетели раньше, чем на самолёте.",
+      "en": "The Atlantic was crossed by balloon before it was crossed by plane."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Double_Eagle_II"
+  },
+  {
+    "id": "race_1100",
+    "statement": {
+      "ru": "На Эверест поднялся 13-летний мальчик.",
+      "en": "A 13-year-old boy has climbed Everest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jordan_Romero"
+  },
+  {
+    "id": "race_1101",
+    "statement": {
+      "ru": "Мираж в пустыне существует только в голове путника.",
+      "en": "A desert mirage exists only in the traveller's head."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mirage"
+  },
+  {
+    "id": "race_1102",
+    "statement": {
+      "ru": "Нансен нарочно вморозил свой корабль в лёд, чтобы дрейфовать к полюсу.",
+      "en": "Nansen froze his ship into the ice on purpose, to drift towards the Pole."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nansen%27s_Fram_expedition"
+  },
+  {
+    "id": "race_1103",
+    "statement": {
+      "ru": "Ездовые собаки и сегодня возят сани на станциях Антарктиды.",
+      "en": "Sled dogs still pull sledges at Antarctic stations today."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sled_dog"
+  },
+  {
+    "id": "race_1104",
+    "statement": {
+      "ru": "Пири отморозил в Арктике почти все пальцы на ногах.",
+      "en": "Peary lost almost all his toes to frostbite in the Arctic."
+    },
+    "answer": true,
+    "source": "https://www.mentalfloss.com/history/robert-peary-north-pole-facts"
+  },
+  {
+    "id": "race_1105",
+    "statement": {
+      "ru": "В Антарктиде есть банкомат.",
+      "en": "There is a cash machine in Antarctica."
+    },
+    "answer": true,
+    "source": "https://www.mentalfloss.com/geography/worlds-loneliest-atm-antarctica"
+  },
+  {
+    "id": "race_1106",
+    "statement": {
+      "ru": "Рекорд ныряния на одном вдохе — около 50 метров.",
+      "en": "The record for a dive on a single breath is about 50 metres."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Free-diving"
+  },
+  {
+    "id": "race_1107",
+    "statement": {
+      "ru": "Отец одного из покорителей Марианской впадины первым поднялся в стратосферу.",
+      "en": "The father of one of the Mariana Trench pioneers was the first to rise into the stratosphere."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Auguste_Piccard"
+  },
+  {
+    "id": "race_1108",
+    "statement": {
+      "ru": "Хиллари доехал до Южного полюса на тракторах.",
+      "en": "Hillary drove to the South Pole on tractors."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Commonwealth_Trans-Antarctic_Expedition"
+  },
+  {
+    "id": "race_1109",
+    "statement": {
+      "ru": "Южный полюс лежит почти на уровне моря.",
+      "en": "The South Pole lies almost at sea level."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/South_Pole"
+  },
+  {
+    "id": "race_1110",
+    "statement": {
+      "ru": "Человек прыгнул с парашютом из стратосферы и разогнался быстрее звука.",
+      "en": "A man jumped with a parachute from the stratosphere and fell faster than sound."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Red_Bull_Stratos"
+  },
+  {
+    "id": "race_1111",
+    "statement": {
+      "ru": "Шеклтон потерял во льдах корабль и половину команды.",
+      "en": "Shackleton lost his ship and half his crew in the ice."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition"
+  },
+  {
+    "id": "race_1112",
+    "statement": {
+      "ru": "Тело Мэллори, пропавшего на Эвересте, нашли через 75 лет.",
+      "en": "The body of Mallory, who vanished on Everest, was found 75 years later."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/George_Mallory"
+  },
+  {
+    "id": "race_1113",
+    "statement": {
+      "ru": "Тайские мальчики просидели в пещере всего три дня.",
+      "en": "The Thai boys were stuck in the cave for only three days."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tham_Luang_cave_rescue"
+  },
+  {
+    "id": "race_1114",
+    "statement": {
+      "ru": "Во Вьетнаме есть пещера, внутри которой растёт лес.",
+      "en": "In Vietnam there is a cave with a forest growing inside."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hang_S%C6%A1n_%C4%90o%C3%B2ng"
+  },
+  {
+    "id": "race_1115",
+    "statement": {
+      "ru": "Американская подводная лодка прошла под Северным полюсом подо льдом.",
+      "en": "An American submarine passed under the North Pole beneath the ice."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/USS_Nautilus_(SSN-571)"
+  },
+  {
+    "id": "race_1116",
+    "statement": {
+      "ru": "Туристам в Антарктиде разрешают подходить к пингвинам вплотную.",
+      "en": "Tourists in Antarctica are allowed to walk right up to penguins."
+    },
+    "answer": false,
+    "source": "https://iaato.org/blog/dont-hug-the-penguins-and-other-rules-in-antarctica-3"
+  },
+  {
+    "id": "race_1117",
+    "statement": {
+      "ru": "Чилийские шахтёры провели под землёй 69 дней, и все выжили.",
+      "en": "The Chilean miners spent 69 days underground, and all of them survived."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/2010_Copiap%C3%B3_mining_accident"
+  },
+  {
+    "id": "race_1118",
+    "statement": {
+      "ru": "Воздушный шар облетел Землю без посадки ещё в XIX веке.",
+      "en": "A balloon flew around the Earth non-stop back in the 19th century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Breitling_Orbiter_3"
+  },
+  {
+    "id": "race_1119",
+    "statement": {
+      "ru": "Полярники на Южном полюсе выбегают из сауны на мороз −73 °C.",
+      "en": "At the South Pole, people run out of a sauna into −73 °C frost."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/300_Club"
+  },
+  {
+    "id": "race_1120",
+    "statement": {
+      "ru": "Самая длинная известная пещера мира — длиной около 10 км.",
+      "en": "The longest known cave in the world is about 10 km long."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mammoth_Cave_National_Park"
+  },
+  {
+    "id": "race_1121",
+    "statement": {
+      "ru": "Рыбак продрейфовал в лодке по Тихому океану больше года и выжил.",
+      "en": "A fisherman drifted in a boat across the Pacific for over a year and survived."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jos%C3%A9_Salvador_Alvarenga"
+  },
+  {
+    "id": "race_1122",
+    "statement": {
+      "ru": "Антарктида по международному договору принадлежит ООН.",
+      "en": "Under an international treaty, Antarctica belongs to the UN."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Antarctic_Treaty_System"
+  },
+  {
+    "id": "race_1123",
+    "statement": {
+      "ru": "У Антарктиды есть свой интернет-домен.",
+      "en": "Antarctica has its own internet domain."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/.aq"
+  },
+  {
+    "id": "race_1124",
+    "statement": {
+      "ru": "Девушка пережила авиакатастрофу над Амазонией и 11 дней шла через джунгли.",
+      "en": "A girl survived a plane crash over the Amazon and walked through the jungle for 11 days."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Juliane_Koepcke"
+  },
+  {
+    "id": "race_1125",
+    "statement": {
+      "ru": "Американец залез без верёвки на отвесную скалу почти в 900 метров.",
+      "en": "An American climbed a sheer cliff nearly 900 metres high without a rope."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Alex_Honnold"
+  },
+  {
+    "id": "race_1126",
+    "statement": {
+      "ru": "Стрелки часов крутятся «по часовой» вслед за тенью солнечных часов.",
+      "en": "Clock hands turn 'clockwise' because they copy the shadow on a sundial."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Clockwise"
+  },
+  {
+    "id": "race_1127",
+    "statement": {
+      "ru": "Паровую машину изобрёл Джеймс Уатт.",
+      "en": "The steam engine was invented by James Watt."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Steam_engine"
+  },
+  {
+    "id": "race_1128",
+    "statement": {
+      "ru": "Ньютон построил телескоп, в котором вместо линзы зеркало.",
+      "en": "Newton built a telescope that uses a mirror instead of a lens."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Newtonian_telescope"
+  },
+  {
+    "id": "race_1129",
+    "statement": {
+      "ru": "Гутенберг разбогател на своём печатном станке.",
+      "en": "Gutenberg grew rich from his printing press."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Johannes_Gutenberg"
+  },
+  {
+    "id": "race_1130",
+    "statement": {
+      "ru": "Печатный станок Гутенберга устроен как пресс, которым давили виноград.",
+      "en": "Gutenberg's printing press was modelled on the press used to squeeze grapes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Printing_press"
+  },
+  {
+    "id": "race_1131",
+    "statement": {
+      "ru": "Первый человек на фото попал в кадр, потому что несколько минут стоял на месте.",
+      "en": "The first person ever photographed only got in because he stood still for several minutes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/View_of_the_Boulevard_du_Temple"
+  },
+  {
+    "id": "race_1132",
+    "statement": {
+      "ru": "Цельсий сначала назначил 0° для кипения воды, а 100° — для замерзания.",
+      "en": "Celsius first set 0° for boiling water and 100° for freezing."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Anders_Celsius"
+  },
+  {
+    "id": "race_1133",
+    "statement": {
+      "ru": "Первая цветная фотография появилась только в XX веке.",
+      "en": "The first colour photograph was only taken in the 20th century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Color_photography"
+  },
+  {
+    "id": "race_1134",
+    "statement": {
+      "ru": "На почтовых марках Великобритании нет названия страны.",
+      "en": "British postage stamps don't show the country's name."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Postage_stamp"
+  },
+  {
+    "id": "race_1135",
+    "statement": {
+      "ru": "Наручные часы изобрели для лётчиков.",
+      "en": "The wristwatch was invented for pilots."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Wristwatch"
+  },
+  {
+    "id": "race_1136",
+    "statement": {
+      "ru": "На многих циферблатах четвёрку пишут как IIII, а не IV.",
+      "en": "Many clock faces write four as IIII, not IV."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Roman_numerals"
+  },
+  {
+    "id": "race_1137",
+    "statement": {
+      "ru": "Часы с кукушкой придумали в Швейцарии.",
+      "en": "The cuckoo clock was invented in Switzerland."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cuckoo_clock"
+  },
+  {
+    "id": "race_1138",
+    "statement": {
+      "ru": "Часовые пояса ввели ради железных дорог.",
+      "en": "Time zones were brought in for the railways."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Standard_time"
+  },
+  {
+    "id": "race_1139",
+    "statement": {
+      "ru": "Минутная стрелка появилась на часах одновременно с часовой.",
+      "en": "Clocks got their minute hand at the same time as the hour hand."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Clock_face"
+  },
+  {
+    "id": "race_1140",
+    "statement": {
+      "ru": "Компанию Goodyear основал Чарльз Гудьир.",
+      "en": "The Goodyear company was founded by Charles Goodyear."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Goodyear_Tire_and_Rubber_Company"
+  },
+  {
+    "id": "race_1141",
+    "statement": {
+      "ru": "В Англии перед паровой повозкой должен был идти человек с красным флагом.",
+      "en": "In England a man with a red flag had to walk in front of a steam road vehicle."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Locomotive_Acts"
+  },
+  {
+    "id": "race_1142",
+    "statement": {
+      "ru": "Автомобиль изобрёл Генри Форд.",
+      "en": "The car was invented by Henry Ford."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen"
+  },
+  {
+    "id": "race_1143",
+    "statement": {
+      "ru": "Велосипед изобрёл Леонардо да Винчи.",
+      "en": "The bicycle was invented by Leonardo da Vinci."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/History_of_the_bicycle"
+  },
+  {
+    "id": "race_1144",
+    "statement": {
+      "ru": "Первые велосипеды с педалями прозвали «костотрясами».",
+      "en": "The first bicycles with pedals were nicknamed 'boneshakers'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/History_of_the_bicycle"
+  },
+  {
+    "id": "race_1145",
+    "statement": {
+      "ru": "Надувные шины сначала придумали для автомобилей.",
+      "en": "Air-filled tyres were first invented for cars."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tire"
+  },
+  {
+    "id": "race_1146",
+    "statement": {
+      "ru": "Сэмюэл Морзе до телеграфа был известным художником.",
+      "en": "Before the telegraph, Samuel Morse was a well-known painter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Samuel_Morse"
+  },
+  {
+    "id": "race_1147",
+    "statement": {
+      "ru": "Азбуку Морзе придумали для радио.",
+      "en": "Morse code was invented for radio."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Morse_code"
+  },
+  {
+    "id": "race_1148",
+    "statement": {
+      "ru": "Английскую булавку изобрели в Англии.",
+      "en": "The safety pin was invented in England."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Safety_pin"
+  },
+  {
+    "id": "race_1149",
+    "statement": {
+      "ru": "Отис продавал свой лифт так: вставал в него и велел перерубить трос.",
+      "en": "Otis sold his lift by standing in it and having the rope cut."
+    },
+    "answer": true,
+    "source": "https://www.inventionandtech.com/content/oldest-otis-1"
+  },
+  {
+    "id": "race_1150",
+    "statement": {
+      "ru": "Первые зонты придумали, чтобы прятаться от дождя.",
+      "en": "The first umbrellas were made to keep off the rain."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Umbrella"
+  },
+  {
+    "id": "race_1151",
+    "statement": {
+      "ru": "Белл предлагал отвечать по телефону словом «Ахой».",
+      "en": "Bell suggested answering the phone with 'Ahoy'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ahoy"
+  },
+  {
+    "id": "race_1152",
+    "statement": {
+      "ru": "Динамит изобрели для войны.",
+      "en": "Dynamite was invented for war."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dynamite"
+  },
+  {
+    "id": "race_1153",
+    "statement": {
+      "ru": "В лампочках Эдисона нить делали из бамбука.",
+      "en": "Edison's light bulbs had filaments made from bamboo."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"
+  },
+  {
+    "id": "race_1154",
+    "statement": {
+      "ru": "Эдисон был горячим сторонником переменного тока.",
+      "en": "Edison was a keen champion of alternating current."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/War_of_the_currents"
+  },
+  {
+    "id": "race_1155",
+    "statement": {
+      "ru": "Кассовый аппарат придумал хозяин бара, чтобы бармены не воровали.",
+      "en": "The cash register was invented by a saloon owner to stop his barmen stealing."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cash_register"
+  },
+  {
+    "id": "race_1156",
+    "statement": {
+      "ru": "Раскладку QWERTY придумали для компьютеров.",
+      "en": "The QWERTY layout was designed for computers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/QWERTY"
+  },
+  {
+    "id": "race_1157",
+    "statement": {
+      "ru": "На первой туалетной бумаге в пачках стояло имя изобретателя.",
+      "en": "The first packaged toilet paper had its inventor's name on it."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Toilet_paper"
+  },
+  {
+    "id": "race_1158",
+    "statement": {
+      "ru": "Название «Наутилус» для подлодки первым придумал Жюль Верн.",
+      "en": "Jules Verne was the first to name a submarine Nautilus."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Nautilus_(fictional_submarine)"
+  },
+  {
+    "id": "race_1159",
+    "statement": {
+      "ru": "Боевую подводную лодку построили ещё в XVIII веке.",
+      "en": "A war submarine was already built in the 18th century."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Turtle_(submersible)"
+  },
+  {
+    "id": "race_1160",
+    "statement": {
+      "ru": "Парашют изобрели уже после появления самолётов.",
+      "en": "The parachute was invented only after aeroplanes appeared."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Parachute"
+  },
+  {
+    "id": "race_1161",
+    "statement": {
+      "ru": "Посудомойку изобрела женщина, у которой при мытье били дорогой фарфор.",
+      "en": "The dishwasher was invented by a woman whose fine china kept getting chipped in the wash."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Josephine_Cochrane"
+  },
+  {
+    "id": "race_1162",
+    "statement": {
+      "ru": "Шкалу Фаренгейта придумали в США.",
+      "en": "The Fahrenheit scale was invented in the USA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Fahrenheit"
+  },
+  {
+    "id": "race_1163",
+    "statement": {
+      "ru": "Спичку, которая зажигается трением, изобрёл аптекарь.",
+      "en": "The friction match was invented by a pharmacist."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/John_Walker_(inventor)"
+  },
+  {
+    "id": "race_1164",
+    "statement": {
+      "ru": "Левенгук, первым увидевший микробов, был торговцем тканями.",
+      "en": "Leeuwenhoek, the first to see microbes, was a cloth merchant."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek"
+  },
+  {
+    "id": "race_1165",
+    "statement": {
+      "ru": "Компас в Китае сначала служил для гаданий, а не для плавания.",
+      "en": "In China the compass was first used for fortune-telling, not for sailing."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Compass"
+  },
+  {
+    "id": "race_1166",
+    "statement": {
+      "ru": "Первая батарейка была стопкой металлических кружков и мокрых прокладок.",
+      "en": "The first battery was a stack of metal discs and wet pads."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Voltaic_pile"
+  },
+  {
+    "id": "race_1167",
+    "statement": {
+      "ru": "Стикеры Post-it стали жёлтыми случайно: такая бумага оказалась под рукой.",
+      "en": "Post-it notes turned out yellow by chance: that was the scrap paper at hand."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Post-it_note"
+  },
+  {
+    "id": "race_1168",
+    "statement": {
+      "ru": "Первые автомобильные дворники водитель двигал рукой, рычагом из салона.",
+      "en": "The first car windscreen wipers were worked by hand, with a lever inside the car."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Windscreen_wiper"
+  },
+  {
+    "id": "race_1169",
+    "statement": {
+      "ru": "Альберт Эйнштейн запатентовал холодильник.",
+      "en": "Albert Einstein patented a refrigerator."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Einstein_refrigerator"
+  },
+  {
+    "id": "race_1170",
+    "statement": {
+      "ru": "Первые электрические тостеры жарили хлеб сразу с обеих сторон.",
+      "en": "The first electric toasters toasted both sides of the bread at once."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Toaster"
+  },
+  {
+    "id": "race_1171",
+    "statement": {
+      "ru": "Голливудская актриса Хеди Ламарр запатентовала систему наведения торпед.",
+      "en": "Hollywood actress Hedy Lamarr patented a torpedo guidance system."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hedy_Lamarr"
+  },
+  {
+    "id": "race_1172",
+    "statement": {
+      "ru": "Шариковую ручку изобрёл француз Марсель Бик — отсюда марка BIC.",
+      "en": "The ballpoint pen was invented by Frenchman Marcel Bic, hence the BIC brand."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ballpoint_pen"
+  },
+  {
+    "id": "race_1173",
+    "statement": {
+      "ru": "Слово «zipper» для молнии придумала фирма, делавшая резиновые сапоги.",
+      "en": "The word 'zipper' was coined by a company that made rubber boots."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Zipper"
+  },
+  {
+    "id": "race_1174",
+    "statement": {
+      "ru": "Суперклей изобрели военные врачи, чтобы склеивать раны.",
+      "en": "Superglue was invented by army doctors to seal wounds."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cyanoacrylate"
+  },
+  {
+    "id": "race_1175",
+    "statement": {
+      "ru": "Идею телевидения изобретателю подсказали борозды на вспаханном поле.",
+      "en": "An inventor of television got the idea from the furrows of a ploughed field."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Philo_Farnsworth"
+  },
+  {
+    "id": "race_1176",
+    "statement": {
+      "ru": "Нарезанный хлеб начали продавать раньше, чем полетел первый самолёт.",
+      "en": "Sliced bread went on sale before the first aeroplane flew."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sliced_bread"
+  },
+  {
+    "id": "race_1177",
+    "statement": {
+      "ru": "В 1920-х домашний холодильник мог стоить дороже автомобиля «Форд».",
+      "en": "In the 1920s a home fridge could cost more than a Ford car."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Refrigerator"
+  },
+  {
+    "id": "race_1178",
+    "statement": {
+      "ru": "Целлофан изобрели как обёртку для конфет.",
+      "en": "Cellophane was invented as a wrapper for sweets."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cellophane"
+  },
+  {
+    "id": "race_1179",
+    "statement": {
+      "ru": "Танк назван по фамилии своего изобретателя.",
+      "en": "The tank is named after its inventor's surname."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tank"
+  },
+  {
+    "id": "race_1180",
+    "statement": {
+      "ru": "Кевлар изначально создавали для бронежилетов.",
+      "en": "Kevlar was first developed for bulletproof vests."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Stephanie_Kwolek"
+  },
+  {
+    "id": "race_1181",
+    "statement": {
+      "ru": "Электрические тостеры появились раньше, чем нарезанный хлеб в магазинах.",
+      "en": "Electric toasters existed before sliced bread was sold in shops."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Toaster"
+  },
+  {
+    "id": "race_1182",
+    "statement": {
+      "ru": "Чарльз Линдберг первым перелетел Атлантику без посадки.",
+      "en": "Charles Lindbergh was the first to fly across the Atlantic non-stop."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Transatlantic_flight"
+  },
+  {
+    "id": "race_1183",
+    "statement": {
+      "ru": "Шариковый дезодорант придумали по образцу шариковой ручки.",
+      "en": "The roll-on deodorant was modelled on the ballpoint pen."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Deodorant"
+  },
+  {
+    "id": "race_1184",
+    "statement": {
+      "ru": "Первые знаки «Стоп» были красными.",
+      "en": "The first stop signs were red."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Stop_sign"
+  },
+  {
+    "id": "race_1185",
+    "statement": {
+      "ru": "Бумажный фильтр для кофе хозяйка сделала из листа из тетради сына.",
+      "en": "The paper coffee filter began as a sheet a housewife tore from her son's exercise book."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Melitta_Bentz"
+  },
+  {
+    "id": "race_1186",
+    "statement": {
+      "ru": "Первая кредитная карта Diners Club была пластиковой.",
+      "en": "The first Diners Club credit card was made of plastic."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Diners_Club_International"
+  },
+  {
+    "id": "race_1187",
+    "statement": {
+      "ru": "Средство WD-40 придумали для смазки велосипедных цепей.",
+      "en": "WD-40 was invented to oil bicycle chains."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/WD-40"
+  },
+  {
+    "id": "race_1188",
+    "statement": {
+      "ru": "Машины с автоматической коробкой передач появились только в 1980-х.",
+      "en": "Cars with automatic gearboxes only appeared in the 1980s."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Automatic_transmission"
+  },
+  {
+    "id": "race_1189",
+    "statement": {
+      "ru": "Салфетки Kleenex сначала продавали, чтобы стирать с лица крем.",
+      "en": "Kleenex tissues were first sold for wiping cold cream off the face."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kleenex"
+  },
+  {
+    "id": "race_1190",
+    "statement": {
+      "ru": "Амелия Эрхарт первой в мире облетела Землю на самолёте.",
+      "en": "Amelia Earhart was the first person to fly around the world."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Amelia_Earhart"
+  },
+  {
+    "id": "race_1191",
+    "statement": {
+      "ru": "Корректор-«замазку» изобрела машинистка, уставшая от своих опечаток.",
+      "en": "Correction fluid was invented by a typist tired of her own typos."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Liquid_Paper"
+  },
+  {
+    "id": "race_1192",
+    "statement": {
+      "ru": "Впервые самолёт взлетел с корабля уже после Второй мировой войны.",
+      "en": "A plane first took off from a ship only after World War II."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Eugene_Burton_Ely"
+  },
+  {
+    "id": "race_1193",
+    "statement": {
+      "ru": "Марку «Мерседес» назвали в честь маленькой дочки торговца машинами.",
+      "en": "The Mercedes brand is named after a car dealer's young daughter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Merc%C3%A9d%C3%A8s_Jellinek"
+  },
+  {
+    "id": "race_1194",
+    "statement": {
+      "ru": "Подушки безопасности появились в машинах только в XXI веке.",
+      "en": "Airbags only appeared in cars in the 21st century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Airbag"
+  },
+  {
+    "id": "race_1195",
+    "statement": {
+      "ru": "Олимпиаду показывали по телевизору ещё до Второй мировой войны.",
+      "en": "The Olympics were shown on TV even before World War II."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/1936_Summer_Olympics"
+  },
+  {
+    "id": "race_1196",
+    "statement": {
+      "ru": "Клей для стикеров Post-it с самого начала задумывали слабым.",
+      "en": "The glue on Post-it notes was meant to be weak from the start."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Post-it_note"
+  },
+  {
+    "id": "race_1197",
+    "statement": {
+      "ru": "Застёжку-молнию изобрели в Японии.",
+      "en": "The zip fastener was invented in Japan."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Zipper"
+  },
+  {
+    "id": "race_1198",
+    "statement": {
+      "ru": "Полиэтиленовый пакет-«майку» изобрёл шведский инженер.",
+      "en": "The plastic carrier bag with handles was invented by a Swedish engineer."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Plastic_bag"
+  },
+  {
+    "id": "race_1199",
+    "statement": {
+      "ru": "Одноразовые бумажные стаканчики придумали для кофе навынос.",
+      "en": "Disposable paper cups were invented for takeaway coffee."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Paper_cup"
+  },
+  {
+    "id": "race_1200",
+    "statement": {
+      "ru": "Гнущуюся трубочку для напитков придумал отец, глядя на маленькую дочку.",
+      "en": "The bendy straw was invented by a father watching his little daughter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Drinking_straw"
+  },
+  {
+    "id": "race_1201",
+    "statement": {
+      "ru": "Мария-Антуанетта советовала голодным есть пирожные вместо хлеба.",
+      "en": "Marie Antoinette told the hungry to eat cake instead of bread."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Let_them_eat_cake"
+  },
+  {
+    "id": "race_1202",
+    "statement": {
+      "ru": "Наполеон в молодости написал любовную повесть.",
+      "en": "As a young man, Napoleon wrote a romance novella."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Clisson_et_Eugénie"
+  },
+  {
+    "id": "race_1203",
+    "statement": {
+      "ru": "Пираты часто казнили пленников, заставляя их пройти по доске за борт.",
+      "en": "Pirates often executed captives by making them walk the plank."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Walking_the_plank"
+  },
+  {
+    "id": "race_1204",
+    "statement": {
+      "ru": "Юный Людовик XIV сам танцевал в балете роль Солнца.",
+      "en": "As a teenager, Louis XIV himself danced the role of the Sun in a ballet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ballet_Royal_de_la_Nuit"
+  },
+  {
+    "id": "race_1205",
+    "statement": {
+      "ru": "Доктор Гильотен, давший имя гильотине, сам был на ней казнён.",
+      "en": "Doctor Guillotin, who gave the guillotine its name, was himself executed on it."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Joseph-Ignace_Guillotin"
+  },
+  {
+    "id": "race_1206",
+    "statement": {
+      "ru": "По пиратскому уставу за потерю руки или ноги полагалась выплата.",
+      "en": "Under pirate articles, a man who lost an arm or a leg was paid compensation."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pirate_code"
+  },
+  {
+    "id": "race_1207",
+    "statement": {
+      "ru": "Генрих VIII сочинил песню «Зелёные рукава».",
+      "en": "Henry VIII wrote the song Greensleeves."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Greensleeves"
+  },
+  {
+    "id": "race_1208",
+    "statement": {
+      "ru": "Леонардо да Винчи писал заметки зеркально — справа налево.",
+      "en": "Leonardo da Vinci wrote his notes in mirror writing, right to left."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mirror_writing"
+  },
+  {
+    "id": "race_1209",
+    "statement": {
+      "ru": "Галилея сожгли на костре за то, что Земля вертится.",
+      "en": "Galileo was burned at the stake for saying that the Earth moves."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Galileo_Galilei"
+  },
+  {
+    "id": "race_1210",
+    "statement": {
+      "ru": "В завещании Шекспир оставил жене свою «вторую по качеству кровать».",
+      "en": "In his will Shakespeare left his wife his 'second-best bed'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Anne_Hathaway_(wife_of_Shakespeare)"
+  },
+  {
+    "id": "race_1211",
+    "statement": {
+      "ru": "Гай Фокс, чья маска стала символом протеста, хотел взорвать парламент.",
+      "en": "Guy Fawkes, whose mask became a protest symbol, plotted to blow up Parliament."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Guy_Fawkes"
+  },
+  {
+    "id": "race_1212",
+    "statement": {
+      "ru": "Закон Венеции велел красить все гондолы в чёрный цвет.",
+      "en": "A Venetian law required gondolas to be painted black."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gondola"
+  },
+  {
+    "id": "race_1213",
+    "statement": {
+      "ru": "Оливер Кромвель короновался и стал королём Англии.",
+      "en": "Oliver Cromwell had himself crowned King of England."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Oliver_Cromwell"
+  },
+  {
+    "id": "race_1214",
+    "statement": {
+      "ru": "Анну Болейн казнили мечом: палача специально вызвали из Франции.",
+      "en": "Anne Boleyn was beheaded with a sword by an executioner brought from France."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Anne_Boleyn"
+  },
+  {
+    "id": "race_1215",
+    "statement": {
+      "ru": "Покахонтас вышла замуж за капитана Джона Смита.",
+      "en": "Pocahontas married Captain John Smith."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pocahontas"
+  },
+  {
+    "id": "race_1216",
+    "statement": {
+      "ru": "Пуритане в Англии XVII века запретили праздновать Рождество.",
+      "en": "In the 17th century, England's Puritan rulers banned Christmas."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Christmas"
+  },
+  {
+    "id": "race_1217",
+    "statement": {
+      "ru": "Пиратка Энн Бонни — выдуманная героиня приключенческих романов.",
+      "en": "The pirate Anne Bonny is a made-up character from adventure novels."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Anne_Bonny"
+  },
+  {
+    "id": "race_1218",
+    "statement": {
+      "ru": "Пиратским флотом из сотен кораблей в Китае командовала женщина.",
+      "en": "A woman commanded a pirate fleet of hundreds of ships in China."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Zheng_Yi_Sao"
+  },
+  {
+    "id": "race_1219",
+    "statement": {
+      "ru": "Когда штурмовали Бастилию, в ней томились сотни узников.",
+      "en": "When the Bastille was stormed, hundreds of prisoners were held there."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille"
+  },
+  {
+    "id": "race_1220",
+    "statement": {
+      "ru": "Некоторые фонтаны Версаля включали, лишь когда к ним подходил король.",
+      "en": "Some fountains at Versailles were turned on only as the king approached."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gardens_of_Versailles"
+  },
+  {
+    "id": "race_1221",
+    "statement": {
+      "ru": "Наполеону удалось сбежать с острова Святой Елены.",
+      "en": "Napoleon managed to escape from the island of Saint Helena."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Napoleon"
+  },
+  {
+    "id": "race_1222",
+    "statement": {
+      "ru": "У Марии-Антуанетты в Версале была своя деревенька с настоящей фермой.",
+      "en": "Marie Antoinette had her own little village with a working farm at Versailles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hameau_de_la_Reine"
+  },
+  {
+    "id": "race_1223",
+    "statement": {
+      "ru": "Первым хозяином Белого дома был Джордж Вашингтон.",
+      "en": "George Washington was the first president to live in the White House."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/White_House"
+  },
+  {
+    "id": "race_1224",
+    "statement": {
+      "ru": "После Французской революции во Франции ввели сутки из десяти часов.",
+      "en": "After the French Revolution, France brought in a day of ten hours."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Decimal_time"
+  },
+  {
+    "id": "race_1225",
+    "statement": {
+      "ru": "Бенджамин Франклин, тот, что на купюре в 100 долларов, был президентом США.",
+      "en": "Benjamin Franklin, the man on the 100-dollar bill, was a US president."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Benjamin_Franklin"
+  },
+  {
+    "id": "race_1226",
+    "statement": {
+      "ru": "Два президента США умерли в один день — в 50-летие Декларации независимости.",
+      "en": "Two US presidents died on the same day: the 50th anniversary of the Declaration of Independence."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Thomas_Jefferson"
+  },
+  {
+    "id": "race_1227",
+    "statement": {
+      "ru": "Декларацию независимости США подписали в городе Вашингтоне.",
+      "en": "The US Declaration of Independence was signed in the city of Washington."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence"
+  },
+  {
+    "id": "race_1228",
+    "statement": {
+      "ru": "Бороду Линкольн отпустил по совету 11-летней девочки.",
+      "en": "Lincoln grew his beard on the advice of an 11-year-old girl."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Grace_Bedell"
+  },
+  {
+    "id": "race_1229",
+    "statement": {
+      "ru": "Авраам Линкольн был самым низким президентом США.",
+      "en": "Abraham Lincoln was the shortest US president."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Abraham_Lincoln"
+  },
+  {
+    "id": "race_1230",
+    "statement": {
+      "ru": "Мексиканский президент похоронил свою ампутированную ногу с воинскими почестями.",
+      "en": "A Mexican president buried his amputated leg with full military honours."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Antonio_López_de_Santa_Anna"
+  },
+  {
+    "id": "race_1231",
+    "statement": {
+      "ru": "«Пони-экспресс», конная почта Дикого Запада, проработал больше 20 лет.",
+      "en": "The Pony Express, the Wild West's horseback mail, ran for over 20 years."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pony_Express"
+  },
+  {
+    "id": "race_1232",
+    "statement": {
+      "ru": "Великий император Индии Акбар был неграмотным.",
+      "en": "Akbar, the great emperor of India, was illiterate."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Akbar"
+  },
+  {
+    "id": "race_1233",
+    "statement": {
+      "ru": "Джека-потрошителя поймали и повесили.",
+      "en": "Jack the Ripper was caught and hanged."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Jack_the_Ripper"
+  },
+  {
+    "id": "race_1234",
+    "statement": {
+      "ru": "До четверти ковбоев Дикого Запада были чернокожими.",
+      "en": "Up to a quarter of Wild West cowboys were Black."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cowboy"
+  },
+  {
+    "id": "race_1235",
+    "statement": {
+      "ru": "Во время охоты на ведьм в Европе казнили миллионы людей.",
+      "en": "Millions of people were executed in Europe's witch hunts."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Witch_trials_in_the_early_modern_period"
+  },
+  {
+    "id": "race_1236",
+    "statement": {
+      "ru": "Знаменитая перестрелка у кораля «О-Кей» длилась около 30 секунд.",
+      "en": "The famous gunfight at the O.K. Corral lasted about 30 seconds."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gunfight_at_the_O.K._Corral"
+  },
+  {
+    "id": "race_1237",
+    "statement": {
+      "ru": "Салемских «ведьм» сжигали на кострах.",
+      "en": "The Salem 'witches' were burned at the stake."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Salem_witch_trials"
+  },
+  {
+    "id": "race_1238",
+    "statement": {
+      "ru": "В 1752 году британцы легли спать 2 сентября, а проснулись 14-го.",
+      "en": "In 1752 the British went to bed on 2 September and woke up on the 14th."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Calendar_(New_Style)_Act_1750"
+  },
+  {
+    "id": "race_1239",
+    "statement": {
+      "ru": "В викторианской Англии женщины голосовали на выборах в парламент.",
+      "en": "In Victorian England, women voted in parliamentary elections."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_the_United_Kingdom"
+  },
+  {
+    "id": "race_1240",
+    "statement": {
+      "ru": "В Лондоне XIX века устраивали вечеринки с разворачиванием мумий.",
+      "en": "In 19th-century London, people held parties where mummies were unwrapped."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Thomas_Pettigrew"
+  },
+  {
+    "id": "race_1241",
+    "statement": {
+      "ru": "Когда в Англии уже ходили пассажирские поезда, в Японии ещё были самураи.",
+      "en": "When passenger trains already ran in England, Japan still had samurai."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Samurai"
+  },
+  {
+    "id": "race_1242",
+    "statement": {
+      "ru": "Королевский двор Португалии однажды переехал жить в Бразилию.",
+      "en": "Portugal's royal court once moved to Brazil."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rio_de_Janeiro"
+  },
+  {
+    "id": "race_1243",
+    "statement": {
+      "ru": "На «Титанике» был бассейн.",
+      "en": "The Titanic had a swimming pool."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/RMS_Titanic"
+  },
+  {
+    "id": "race_1244",
+    "statement": {
+      "ru": "Первые шаги человека по Луне показывали по телевизору в цвете.",
+      "en": "Man's first steps on the Moon were shown on TV in colour."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Apollo_TV_camera"
+  },
+  {
+    "id": "race_1245",
+    "statement": {
+      "ru": "Уинстон Черчилль получил Нобелевскую премию по литературе.",
+      "en": "Winston Churchill won the Nobel Prize in Literature."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Winston_Churchill"
+  },
+  {
+    "id": "race_1246",
+    "statement": {
+      "ru": "Во Вторую мировую медведь числился солдатом польской армии.",
+      "en": "In the Second World War a bear was enlisted as a soldier in the Polish army."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wojtek_(bear)"
+  },
+  {
+    "id": "race_1247",
+    "statement": {
+      "ru": "Красный барон — знаменитый британский лётчик Первой мировой.",
+      "en": "The Red Baron was a famous British pilot of the First World War."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Manfred_von_Richthofen"
+  },
+  {
+    "id": "race_1248",
+    "statement": {
+      "ru": "Франклин Рузвельт четыре раза побеждал на выборах президента США.",
+      "en": "Franklin Roosevelt won the US presidential election four times."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt"
+  },
+  {
+    "id": "race_1249",
+    "statement": {
+      "ru": "Махатма Ганди получил Нобелевскую премию мира.",
+      "en": "Mahatma Gandhi won the Nobel Peace Prize."
+    },
+    "answer": false,
+    "source": "https://www.nobelprize.org/prizes/themes/mahatma-gandhi-the-missing-laureate/"
+  },
+  {
+    "id": "race_1250",
+    "statement": {
+      "ru": "В США в начале XX века детей иногда отправляли по почте посылкой.",
+      "en": "In the early 1900s, children were sometimes sent by parcel post in the US."
+    },
+    "answer": true,
+    "source": "https://www.mentalfloss.com/article/635706/when-usps-let-you-mail-children"
+  },
+  {
+    "id": "race_1251",
+    "statement": {
+      "ru": "Во Вторую мировую будущая королева Елизавета II выучилась на механика.",
+      "en": "During the Second World War, the future Queen Elizabeth II trained as a mechanic."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Elizabeth_II"
+  },
+  {
+    "id": "race_1252",
+    "statement": {
+      "ru": "Во Вторую мировую японцы посылали к Америке воздушные шары с бомбами.",
+      "en": "In the Second World War, Japan sent balloons carrying bombs to America."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fu-Go_balloon_bomb"
+  },
+  {
+    "id": "race_1253",
+    "statement": {
+      "ru": "Теодор Рузвельт был отцом Франклина Рузвельта.",
+      "en": "Theodore Roosevelt was Franklin Roosevelt's father."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt"
+  },
+  {
+    "id": "race_1254",
+    "statement": {
+      "ru": "Американцы отправили в космос шимпанзе раньше, чем своего астронавта.",
+      "en": "The Americans sent a chimpanzee into space before one of their astronauts."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ham_(chimpanzee)"
+  },
+  {
+    "id": "race_1255",
+    "statement": {
+      "ru": "Во Вторую мировую американцы обманывали врага надувными танками.",
+      "en": "In the Second World War the Americans fooled the enemy with inflatable tanks."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ghost_Army"
+  },
+  {
+    "id": "race_1256",
+    "statement": {
+      "ru": "Джон Кеннеди получил Пулитцеровскую премию за свою книгу.",
+      "en": "John F. Kennedy won a Pulitzer Prize for his book."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Profiles_in_Courage"
+  },
+  {
+    "id": "race_1257",
+    "statement": {
+      "ru": "Индия стала независимой ещё до начала Второй мировой войны.",
+      "en": "India became independent before the Second World War began."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+  },
+  {
+    "id": "race_1258",
+    "statement": {
+      "ru": "Теодор Рузвельт, раненный пулей, всё равно произнёс свою речь.",
+      "en": "Theodore Roosevelt was shot and still gave his speech."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Theodore_Roosevelt_assassination_attempt"
+  },
+  {
+    "id": "race_1259",
+    "statement": {
+      "ru": "Мать Тереза родилась в Индии.",
+      "en": "Mother Teresa was born in India."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mother_Teresa"
+  },
+  {
+    "id": "race_1260",
+    "statement": {
+      "ru": "Почтовый голубь получил военную награду за Первую мировую.",
+      "en": "A carrier pigeon received a military medal for the First World War."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cher_Ami"
+  },
+  {
+    "id": "race_1261",
+    "statement": {
+      "ru": "Первый американец в космосе облетел вокруг Земли.",
+      "en": "The first American in space flew around the Earth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mercury-Redstone_3"
+  },
+  {
+    "id": "race_1262",
+    "statement": {
+      "ru": "Мэрилин Монро и королева Елизавета II родились в один год.",
+      "en": "Marilyn Monroe and Queen Elizabeth II were born in the same year."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Marilyn_Monroe"
+  },
+  {
+    "id": "race_1263",
+    "statement": {
+      "ru": "Берлинскую стену построили, чтобы жители Запада не бежали на Восток.",
+      "en": "The Berlin Wall was built to stop people in the West fleeing to the East."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Berlin_Wall"
+  },
+  {
+    "id": "race_1264",
+    "statement": {
+      "ru": "Американские военные шифровали переговоры на языке индейцев навахо.",
+      "en": "The US military encoded its messages in the Navajo language."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Code_talker"
+  },
+  {
+    "id": "race_1265",
+    "statement": {
+      "ru": "Высадку на Луну снимал в студии режиссёр Стэнли Кубрик.",
+      "en": "The Moon landing was filmed in a studio by director Stanley Kubrick."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories"
+  },
+  {
+    "id": "race_1266",
+    "statement": {
+      "ru": "Во Вторую мировую немецкие бомбы попадали в Букингемский дворец.",
+      "en": "In the Second World War, German bombs hit Buckingham Palace."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Buckingham_Palace"
+  },
+  {
+    "id": "race_1267",
+    "statement": {
+      "ru": "Принцесса Диана была принцессой с самого рождения.",
+      "en": "Princess Diana was a princess from birth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Diana,_Princess_of_Wales"
+  },
+  {
+    "id": "race_1268",
+    "statement": {
+      "ru": "Японский солдат воевал в джунглях почти 30 лет после конца войны.",
+      "en": "A Japanese soldier kept fighting in the jungle for almost 30 years after the war."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hiroo_Onoda"
+  },
+  {
+    "id": "race_1269",
+    "statement": {
+      "ru": "Монеты и купюры евро появились ещё в 1990-х.",
+      "en": "Euro coins and banknotes appeared back in the 1990s."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Euro_banknotes"
+  },
+  {
+    "id": "race_1270",
+    "statement": {
+      "ru": "В начале Второй мировой детей из Лондона вывозили жить в деревню.",
+      "en": "At the start of the Second World War, London children were sent to live in the countryside."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Operation_Pied_Piper"
+  },
+  {
+    "id": "race_1271",
+    "statement": {
+      "ru": "Ринго Старр был барабанщиком «Битлз» с самого начала.",
+      "en": "Ringo Starr was the Beatles' drummer from the very start."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Beatles"
+  },
+  {
+    "id": "race_1272",
+    "statement": {
+      "ru": "В 1940-х в США сигареты рекламировали от имени врачей.",
+      "en": "In the 1940s, cigarettes in the US were advertised with doctors' endorsements."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tobacco_advertising"
+  },
+  {
+    "id": "race_1273",
+    "statement": {
+      "ru": "В 1900 году в Нью-Йорке автомобилей было больше, чем лошадей.",
+      "en": "In 1900 New York had more cars than horses."
+    },
+    "answer": false,
+    "source": "https://www.thehenryford.org/collections/explore/articles/horse-drawn-vehicles-in-the-city"
+  },
+  {
+    "id": "race_1274",
+    "statement": {
+      "ru": "Гавайи стали штатом США уже после Второй мировой войны.",
+      "en": "Hawaii became a US state after the Second World War."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hawaii_Admission_Act"
+  },
+  {
+    "id": "race_1275",
+    "statement": {
+      "ru": "Черчилль выиграл выборы сразу после победы над Германией.",
+      "en": "Churchill won the election right after the victory over Germany."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Winston_Churchill"
+  },
+  {
+    "id": "race_1276",
+    "statement": {
+      "ru": "Американские лётчики сбрасывали детям Берлина конфеты на парашютиках.",
+      "en": "American pilots dropped sweets on tiny parachutes to the children of Berlin."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gail_Halvorsen"
+  },
+  {
+    "id": "race_1277",
+    "statement": {
+      "ru": "Кеннеди сказал «Я берлинец», и немцы засмеялись: вышло «Я пончик».",
+      "en": "Kennedy said 'Ich bin ein Berliner' and the Germans laughed: it meant 'I am a doughnut'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ich_bin_ein_Berliner"
+  },
+  {
+    "id": "race_1278",
+    "statement": {
+      "ru": "Чехословакия разделилась на две страны без единого выстрела.",
+      "en": "Czechoslovakia split into two countries without a single shot fired."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dissolution_of_Czechoslovakia"
+  },
+  {
+    "id": "race_1279",
+    "statement": {
+      "ru": "Американский учебный фильм учил детей прятаться от атомной бомбы под партой.",
+      "en": "An American school film taught children to hide from an atomic bomb under their desks."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Duck_and_cover"
+  },
+  {
+    "id": "race_1280",
+    "statement": {
+      "ru": "США воевали в Первой мировой с самого первого дня.",
+      "en": "The USA fought in the First World War from the very first day."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/American_entry_into_World_War_I"
+  },
+  {
+    "id": "race_1281",
+    "statement": {
+      "ru": "Астронавт Джон Гленн снова полетел в космос в 77 лет.",
+      "en": "Astronaut John Glenn flew into space again at the age of 77."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/John_Glenn"
+  },
+  {
+    "id": "race_1282",
+    "statement": {
+      "ru": "Чтобы увидеть себя в полный рост, хватит зеркала в половину вашего роста.",
+      "en": "To see yourself head to toe, a mirror half your height is enough."
+    },
+    "answer": true,
+    "source": "https://www.physicsclassroom.com/class/refln/Lesson-2/What-Portion-of-a-Mirror-is-Required-to-View-an-Im"
+  },
+  {
+    "id": "race_1283",
+    "statement": {
+      "ru": "Если долго идти к радуге, до неё можно дойти.",
+      "en": "If you walk towards a rainbow long enough, you can reach it."
+    },
+    "answer": false,
+    "source": "https://www.livescience.com/32455-why-cant-we-reach-the-end-of-the-rainbow.html"
+  },
+  {
+    "id": "race_1284",
+    "statement": {
+      "ru": "Свет может «течь» по изогнутой струе воды, как по трубе.",
+      "en": "Light can 'flow' along a curving jet of water, as if through a pipe."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Optical_fiber"
+  },
+  {
+    "id": "race_1285",
+    "statement": {
+      "ru": "Бассейн кажется глубже, чем он есть на самом деле.",
+      "en": "A swimming pool looks deeper than it really is."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Refraction"
+  },
+  {
+    "id": "race_1286",
+    "statement": {
+      "ru": "Щелчок кнута — маленький звуковой удар: кончик летит быстрее звука.",
+      "en": "The crack of a whip is a tiny sonic boom: the tip moves faster than sound."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Whip"
+  },
+  {
+    "id": "race_1287",
+    "statement": {
+      "ru": "Закат красный, потому что к вечеру Солнце остывает.",
+      "en": "Sunsets are red because the Sun cools down by evening."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sunset"
+  },
+  {
+    "id": "race_1288",
+    "statement": {
+      "ru": "Огонь можно разжечь линзой, сделанной изо льда.",
+      "en": "You can start a fire with a lens made of ice."
+    },
+    "answer": true,
+    "source": "https://primitiveways.com/fire_from_ice.html"
+  },
+  {
+    "id": "race_1289",
+    "statement": {
+      "ru": "Кошачьи глаза в темноте светятся собственным светом.",
+      "en": "A cat's eyes glow in the dark with their own light."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tapetum_lucidum"
+  },
+  {
+    "id": "race_1290",
+    "statement": {
+      "ru": "За одну секунду свет успел бы облететь Землю семь раз.",
+      "en": "In one second, light could circle the Earth seven times."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Speed_of_light"
+  },
+  {
+    "id": "race_1291",
+    "statement": {
+      "ru": "Самолёт хлопает только в тот миг, когда преодолевает звуковой барьер.",
+      "en": "A plane makes its sonic boom only at the moment it breaks the sound barrier."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sonic_boom"
+  },
+  {
+    "id": "race_1292",
+    "statement": {
+      "ru": "В вогнутой стороне ложки вы отражаетесь вверх ногами.",
+      "en": "In the hollow side of a spoon your reflection is upside down."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Curved_mirror"
+  },
+  {
+    "id": "race_1293",
+    "statement": {
+      "ru": "Чем короче струна, тем ниже звук.",
+      "en": "The shorter the string, the lower the note."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/String_instrument"
+  },
+  {
+    "id": "race_1294",
+    "statement": {
+      "ru": "В воде свет движется медленнее, чем в воздухе.",
+      "en": "Light travels more slowly in water than in air."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Refractive_index"
+  },
+  {
+    "id": "race_1295",
+    "statement": {
+      "ru": "В холодном воздухе звук летит быстрее, чем в тёплом.",
+      "en": "Sound travels faster in cold air than in warm air."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Speed_of_sound"
+  },
+  {
+    "id": "race_1296",
+    "statement": {
+      "ru": "Певец может разбить винный бокал одним голосом, без усилителя.",
+      "en": "A singer can shatter a wine glass with the voice alone, without an amplifier."
+    },
+    "answer": true,
+    "source": "https://www.scientificamerican.com/article/fact-or-fiction-opera-singer-can-shatter-glass/"
+  },
+  {
+    "id": "race_1297",
+    "statement": {
+      "ru": "В лондонском соборе Святого Павла шёпот у одной стены слышно у противоположной.",
+      "en": "In St Paul's Cathedral in London, a whisper by one wall can be heard at the opposite wall."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Whispering_gallery"
+  },
+  {
+    "id": "race_1298",
+    "statement": {
+      "ru": "В слепых тестах скрипачи легко узнают скрипку Страдивари.",
+      "en": "In blind tests, violinists easily pick out a Stradivarius."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Stradivarius"
+  },
+  {
+    "id": "race_1299",
+    "statement": {
+      "ru": "В безэховой комнате человек может услышать стук своего сердца.",
+      "en": "In a soundproof, echo-free room you can hear your own heartbeat."
+    },
+    "answer": true,
+    "source": "https://www.popsci.com/story/science/anechoic-chamber-worlds-quietest-room/"
+  },
+  {
+    "id": "race_1300",
+    "statement": {
+      "ru": "Высокие звуки слышны дальше, чем низкие.",
+      "en": "High-pitched sounds carry farther than low ones."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Foghorn"
+  },
+  {
+    "id": "race_1301",
+    "statement": {
+      "ru": "Сирена приближающейся машины звучит выше, чем удаляющейся.",
+      "en": "A siren sounds higher when the vehicle is coming towards you than going away."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Doppler_effect"
+  },
+  {
+    "id": "race_1302",
+    "statement": {
+      "ru": "Белый на экране телефона складывается из красных, зелёных и синих точек.",
+      "en": "White on a phone screen is made of red, green and blue dots."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Subpixel_rendering"
+  },
+  {
+    "id": "race_1303",
+    "statement": {
+      "ru": "Наушники с шумоподавлением гасят шум, издавая свой «антизвук».",
+      "en": "Noise-cancelling headphones silence noise by playing their own 'anti-sound'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Active_noise_control"
+  },
+  {
+    "id": "race_1304",
+    "statement": {
+      "ru": "Первое, что Эдисон записал на свой фонограф, — детский стишок.",
+      "en": "The first thing Edison recorded on his phonograph was a nursery rhyme."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Phonograph"
+  },
+  {
+    "id": "race_1305",
+    "statement": {
+      "ru": "Громкий крик долетает быстрее тихого шёпота.",
+      "en": "A loud shout travels faster than a quiet whisper."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Speed_of_sound"
+  },
+  {
+    "id": "race_1306",
+    "statement": {
+      "ru": "Поляризационные очки убирают блики от воды и мокрой дороги.",
+      "en": "Polarised sunglasses remove glare from water and wet roads."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Polarization_(waves)"
+  },
+  {
+    "id": "race_1307",
+    "statement": {
+      "ru": "Смычок скрипки натирают пчелиным воском.",
+      "en": "A violin bow is rubbed with beeswax."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rosin"
+  },
+  {
+    "id": "race_1308",
+    "statement": {
+      "ru": "Под ультрафиолетовой лампой светятся многие белые футболки.",
+      "en": "Under an ultraviolet lamp, many white T-shirts glow."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Blacklight"
+  },
+  {
+    "id": "race_1309",
+    "statement": {
+      "ru": "Дорожка на каждой стороне виниловой пластинки — одна длинная спираль.",
+      "en": "The groove on each side of a vinyl record is one long spiral."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Phonograph_record"
+  },
+  {
+    "id": "race_1310",
+    "statement": {
+      "ru": "Чем больше колокол, тем выше его звук.",
+      "en": "The bigger the bell, the higher its note."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Handbell"
+  },
+  {
+    "id": "race_1311",
+    "statement": {
+      "ru": "Волос для смычка скрипки берут из конского хвоста.",
+      "en": "The hair on a violin bow comes from a horse's tail."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bow_(music)"
+  },
+  {
+    "id": "race_1312",
+    "statement": {
+      "ru": "Громкий крик в горах может сорвать лавину.",
+      "en": "A loud shout in the mountains can set off an avalanche."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Avalanche"
+  },
+  {
+    "id": "race_1313",
+    "statement": {
+      "ru": "Если быстро крутить круг в цветах радуги, он покажется почти белым.",
+      "en": "Spin a disc painted in rainbow colours fast and it looks nearly white."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Newton_disc"
+  },
+  {
+    "id": "race_1314",
+    "statement": {
+      "ru": "Свет лазера летит быстрее света обычного фонарика.",
+      "en": "Laser light travels faster than light from an ordinary torch."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Speed_of_light"
+  },
+  {
+    "id": "race_1315",
+    "statement": {
+      "ru": "Звук — это поток частичек воздуха, летящих от источника к уху.",
+      "en": "Sound is a stream of air particles flying from the source to your ear."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sound"
+  },
+  {
+    "id": "race_1316",
+    "statement": {
+      "ru": "Учёные замедлили луч света до скорости машины в городе.",
+      "en": "Scientists have slowed a beam of light to the speed of a car in town."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lene_Hau"
+  },
+  {
+    "id": "race_1317",
+    "statement": {
+      "ru": "Если ребёнок слушает Моцарта, он становится умнее.",
+      "en": "Listening to Mozart makes a child cleverer."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mozart_effect"
+  },
+  {
+    "id": "race_1318",
+    "statement": {
+      "ru": "Мембрану многих колонок делают из бумаги.",
+      "en": "The cone in many loudspeakers is made of paper."
+    },
+    "answer": true,
+    "source": "https://www.electronics-notes.com/articles/audio-video/loudspeaker/speaker-cone-diaphragm.php"
+  },
+  {
+    "id": "race_1319",
+    "statement": {
+      "ru": "Из нескольких лимонов можно собрать батарейку, которая зажжёт светодиод.",
+      "en": "A few lemons can be made into a battery that lights an LED."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lemon_battery"
+  },
+  {
+    "id": "race_1320",
+    "statement": {
+      "ru": "Единица напряжения «вольт» названа в честь английского учёного.",
+      "en": "The volt, the unit of voltage, is named after an English scientist."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Alessandro_Volta"
+  },
+  {
+    "id": "race_1321",
+    "statement": {
+      "ru": "Бутерброд, упавший со стола, чаще приземляется маслом вниз.",
+      "en": "Buttered toast that falls off a table lands butter side down more often than not."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Buttered_cat_paradox"
+  },
+  {
+    "id": "race_1322",
+    "statement": {
+      "ru": "Микроволновка греет еду изнутри наружу.",
+      "en": "A microwave oven heats food from the inside out."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Microwave_oven"
+  },
+  {
+    "id": "race_1323",
+    "statement": {
+      "ru": "На полюсе человек весит чуть больше, чем на экваторе.",
+      "en": "A person weighs slightly more at the Pole than at the equator."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gravity_of_Earth"
+  },
+  {
+    "id": "race_1324",
+    "statement": {
+      "ru": "Разрежь магнит пополам — и получишь отдельно северный и отдельно южный полюс.",
+      "en": "Cut a magnet in half and you get a separate north pole and a separate south pole."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Magnet"
+  },
+  {
+    "id": "race_1325",
+    "statement": {
+      "ru": "Воду можно вскипятить при комнатной температуре, если откачать воздух.",
+      "en": "Water can be made to boil at room temperature by pumping the air out."
+    },
+    "answer": true,
+    "source": "https://www.thenakedscientists.com/articles/questions/why-does-water-under-vacuum-boil-room-temperature"
+  },
+  {
+    "id": "race_1326",
+    "statement": {
+      "ru": "В американской розетке напряжение вдвое выше, чем в европейской.",
+      "en": "A US wall socket has twice the voltage of a European one."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mains_electricity_by_country"
+  },
+  {
+    "id": "race_1327",
+    "statement": {
+      "ru": "Электроны в проводе с током ползут медленнее улитки.",
+      "en": "The electrons in a wire carrying a current crawl along slower than a snail."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Drift_velocity"
+  },
+  {
+    "id": "race_1328",
+    "statement": {
+      "ru": "Прибавь огонь — и кипящая вода в открытой кастрюле станет горячее 100 °C.",
+      "en": "Turn up the flame and the boiling water in an open pan gets hotter than 100 °C."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Boiling"
+  },
+  {
+    "id": "race_1329",
+    "statement": {
+      "ru": "В скороварке вода кипит при температуре выше 100 °C.",
+      "en": "In a pressure cooker, water boils above 100 °C."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pressure_cooking"
+  },
+  {
+    "id": "race_1330",
+    "statement": {
+      "ru": "Шар для боулинга в воде всегда тонет.",
+      "en": "A bowling ball always sinks in water."
+    },
+    "answer": false,
+    "source": "https://teachchemistry.org/classroom-resources/bowling-ball-will-it-sink-or-float-in-water"
+  },
+  {
+    "id": "race_1331",
+    "statement": {
+      "ru": "Металлическая скрепка может лежать на поверхности воды и не тонуть.",
+      "en": "A metal paper clip can rest on the surface of water without sinking."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Surface_tension"
+  },
+  {
+    "id": "race_1332",
+    "statement": {
+      "ru": "Пуля из винтовки уходит в воду на глубину в десятки метров.",
+      "en": "A rifle bullet goes tens of metres deep into water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/MythBusters_(2005_season)"
+  },
+  {
+    "id": "race_1333",
+    "statement": {
+      "ru": "Лампы дневного света, воткнутые в землю под высоковольтной линией, светятся сами.",
+      "en": "Fluorescent tubes stuck in the ground under a high-voltage power line light up by themselves."
+    },
+    "answer": true,
+    "source": "https://hackaday.com/2009/04/10/field-a-fluorescent-array-wirelessly-powered"
+  },
+  {
+    "id": "race_1334",
+    "statement": {
+      "ru": "Сырое яйцо крутится на столе так же легко, как варёное.",
+      "en": "A raw egg spins on a table just as easily as a hard-boiled one."
+    },
+    "answer": false,
+    "source": "https://van.physics.illinois.edu/ask/listing/609"
+  },
+  {
+    "id": "race_1335",
+    "statement": {
+      "ru": "Когда машина резко трогается, шарик с гелием в салоне качается вперёд.",
+      "en": "When a car pulls away sharply, a helium balloon inside it leans forward."
+    },
+    "answer": true,
+    "source": "https://physicsqanda.sites.amherst.edu/Helans.htm"
+  },
+  {
+    "id": "race_1336",
+    "statement": {
+      "ru": "Алюминиевая банка притягивается к магниту.",
+      "en": "An aluminium can is attracted to a magnet."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Aluminium"
+  },
+  {
+    "id": "race_1337",
+    "statement": {
+      "ru": "Если сильно нагреть магнит, он перестанет притягивать.",
+      "en": "Heat a magnet strongly enough and it stops attracting."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Magnet"
+  },
+  {
+    "id": "race_1338",
+    "statement": {
+      "ru": "Праздничный шарик с гелием, отпущенный в небо, долетает до космоса.",
+      "en": "A helium party balloon let go into the sky flies all the way to space."
+    },
+    "answer": false,
+    "source": "https://www.sciencefocus.com/science/how-high-can-a-helium-balloon-float"
+  },
+  {
+    "id": "race_1339",
+    "statement": {
+      "ru": "Падая плашмя без парашюта, человек разгоняется примерно до 200 км/ч и не быстрее.",
+      "en": "Falling belly-down without a parachute, a person speeds up to about 200 km/h and no faster."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Terminal_velocity"
+  },
+  {
+    "id": "race_1340",
+    "statement": {
+      "ru": "Тающий кубик льда в стакане, полном до краёв, перельёт воду через край.",
+      "en": "A floating ice cube in a glass filled to the brim will make it overflow as it melts."
+    },
+    "answer": false,
+    "source": "https://www.howitworksdaily.com/if-my-glass-is-filled-with-ice-and-water-will-it-overflow-once-the-i"
+  },
+  {
+    "id": "race_1341",
+    "statement": {
+      "ru": "Две половинки шара, из которого откачали воздух, не смогли растащить 30 лошадей.",
+      "en": "Thirty horses could not pull apart two half-spheres with the air pumped out of them."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Magdeburg_hemispheres"
+  },
+  {
+    "id": "race_1342",
+    "statement": {
+      "ru": "Пальчиковая батарейка даёт вдвое больше вольт, чем мизинчиковая.",
+      "en": "An AA battery gives twice the voltage of an AAA battery."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/AAA_battery"
+  },
+  {
+    "id": "race_1343",
+    "statement": {
+      "ru": "Очень чистая дистиллированная вода плохо проводит ток.",
+      "en": "Very pure distilled water is a poor conductor of electricity."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Purified_water"
+  },
+  {
+    "id": "race_1344",
+    "statement": {
+      "ru": "В падающем лифте можно спастись, если подпрыгнуть за миг до удара.",
+      "en": "In a falling lift you can save yourself by jumping just before it hits the bottom."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/MythBusters_(2004_season)"
+  },
+  {
+    "id": "race_1345",
+    "statement": {
+      "ru": "На каждый квадратный сантиметр твоего тела давит около килограмма воздуха.",
+      "en": "About a kilogram of air presses on every square centimetre of your body."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Atmospheric_pressure"
+  },
+  {
+    "id": "race_1346",
+    "statement": {
+      "ru": "Линия, нарисованная простым карандашом, проводит электричество.",
+      "en": "A line drawn with an ordinary graphite pencil conducts electricity."
+    },
+    "answer": true,
+    "source": "https://learning.sciencemuseumgroup.org.uk/resources/graphite-circuits"
+  },
+  {
+    "id": "race_1347",
+    "statement": {
+      "ru": "Пуля, выпущенная вдоль земли, падает так же быстро, как просто уроненная.",
+      "en": "A bullet fired level with the ground falls as fast as one that is simply dropped."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/MythBusters_(2009_season)"
+  },
+  {
+    "id": "race_1348",
+    "statement": {
+      "ru": "Ледяная вода при 0 °C охлаждает сок так же сильно, как столько же льда.",
+      "en": "Ice-cold water at 0 °C chills juice as much as the same amount of ice."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Enthalpy_of_fusion"
+  },
+  {
+    "id": "race_1349",
+    "statement": {
+      "ru": "Литр воды при +4 °C весит больше, чем литр воды при 0 °C.",
+      "en": "A litre of water at 4 °C weighs more than a litre of water at 0 °C."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Properties_of_water"
+  },
+  {
+    "id": "race_1350",
+    "statement": {
+      "ru": "Подпрыгнув в вагоне ровно идущего поезда, приземлишься ближе к его хвосту.",
+      "en": "Jump up in the carriage of a steadily moving train and you land closer to its back."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Galileo%27s_ship"
+  },
+  {
+    "id": "race_1351",
+    "statement": {
+      "ru": "Верх колеса едущей машины движется вдвое быстрее самой машины.",
+      "en": "The top of a moving car's wheel travels twice as fast as the car."
+    },
+    "answer": true,
+    "source": "https://www.physicsclassroom.com/class/balance-and-rotation/lesson-1-rotational-kinematics/rolling"
+  },
+  {
+    "id": "race_1352",
+    "statement": {
+      "ru": "Комок пластилина в воде тонет, а лодочка из того же пластилина плавает.",
+      "en": "A lump of plasticine sinks in water, but a little boat made of the same plasticine floats."
+    },
+    "answer": true,
+    "source": "https://www.sciencelearn.org.nz/resources/3181-building-science-concepts-floating-and-sinking"
+  },
+  {
+    "id": "race_1353",
+    "statement": {
+      "ru": "На высоте 10 км, где летают самолёты, притяжение Земли почти пропадает.",
+      "en": "At 10 km up, where airliners fly, the Earth's pull almost disappears."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gravity_of_Earth"
+  },
+  {
+    "id": "race_1354",
+    "statement": {
+      "ru": "Надутый шарик, вынесенный на сильный мороз, становится меньше.",
+      "en": "A blown-up balloon taken out into a hard frost gets smaller."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Charles%27s_law"
+  },
+  {
+    "id": "race_1355",
+    "statement": {
+      "ru": "Снеговик в шубе растает быстрее, чем без неё.",
+      "en": "A snowman wearing a fur coat melts faster than one without."
+    },
+    "answer": false,
+    "source": "https://www.tes.com/news/snowman-science"
+  },
+  {
+    "id": "race_1356",
+    "statement": {
+      "ru": "Севшая батарейка, упав на стол, подпрыгивает выше новой.",
+      "en": "A used-up battery bounces higher off a table than a new one."
+    },
+    "answer": true,
+    "source": "https://theconversation.com/it-turns-out-theres-truth-to-dead-battery-bounce-after-all-38680"
+  },
+  {
+    "id": "race_1357",
+    "statement": {
+      "ru": "Корабль из бетона сразу утонет — он слишком тяжёлый.",
+      "en": "A ship made of concrete would sink at once: it is far too heavy."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Concrete_ship"
+  },
+  {
+    "id": "race_1358",
+    "statement": {
+      "ru": "На глубине 10 метров давление на ныряльщика вдвое больше, чем на поверхности.",
+      "en": "At 10 metres down, the pressure on a diver is twice that at the surface."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Atmospheric_pressure"
   }
 ]
