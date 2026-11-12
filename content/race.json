@@ -16585,5 +16585,3947 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Hispanophone"
+  },
+  {
+    "id": "race_1845",
+    "statement": {
+      "ru": "Святой Николай, ставший Санта-Клаусом, жил на землях нынешней Турции.",
+      "en": "Saint Nicholas, who became Santa Claus, lived in what is now Turkey."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Saint_Nicholas"
+  },
+  {
+    "id": "race_1846",
+    "statement": {
+      "ru": "В Библии сказано, что Иисус родился 25 декабря.",
+      "en": "The Bible says Jesus was born on 25 December."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Christmas"
+  },
+  {
+    "id": "race_1847",
+    "statement": {
+      "ru": "Финского Санта-Клауса зовут «Рождественский козёл».",
+      "en": "The Finnish Santa Claus is called the 'Christmas goat'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Joulupukki"
+  },
+  {
+    "id": "race_1848",
+    "statement": {
+      "ru": "Слово «Хеллоуин» означает «ночь ведьм».",
+      "en": "The word 'Halloween' means 'night of the witches'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Halloween"
+  },
+  {
+    "id": "race_1849",
+    "statement": {
+      "ru": "Ёлочный дождик сначала делали из настоящего серебра.",
+      "en": "Christmas tinsel was first made of real silver."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tinsel"
+  },
+  {
+    "id": "race_1850",
+    "statement": {
+      "ru": "Пасхального зайца придумали американские производители шоколада.",
+      "en": "The Easter Bunny was invented by American chocolate makers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Easter_Bunny"
+  },
+  {
+    "id": "race_1851",
+    "statement": {
+      "ru": "У Санта-Клауса есть настоящий канадский почтовый индекс — H0H 0H0.",
+      "en": "Santa Claus has a real Canadian postal code: H0H 0H0."
+    },
+    "answer": true,
+    "source": "https://www.canadapost-postescanada.ca/santa"
+  },
+  {
+    "id": "race_1852",
+    "statement": {
+      "ru": "Красноносого оленя Рудольфа придумали ещё в Средние века.",
+      "en": "Rudolph the Red-Nosed Reindeer was made up back in the Middle Ages."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rudolph_the_Red-Nosed_Reindeer"
+  },
+  {
+    "id": "race_1853",
+    "statement": {
+      "ru": "Искусственные ёлки из щетины придумала фирма, делавшая ёршики для унитаза.",
+      "en": "Bristle artificial Christmas trees were invented by a toilet brush company."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Artificial_Christmas_tree"
+  },
+  {
+    "id": "race_1854",
+    "statement": {
+      "ru": "«X» в слове Xmas — греческая буква, первая в слове «Христос».",
+      "en": "The 'X' in Xmas is the Greek letter that starts the word 'Christ'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Xmas"
+  },
+  {
+    "id": "race_1855",
+    "statement": {
+      "ru": "Китайский Новый год празднуют один день.",
+      "en": "Chinese New Year is celebrated for just one day."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chinese_New_Year"
+  },
+  {
+    "id": "race_1856",
+    "statement": {
+      "ru": "Омела, под которой целуются на Рождество, — растение-паразит.",
+      "en": "The mistletoe people kiss under at Christmas is a parasitic plant."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mistletoe"
+  },
+  {
+    "id": "race_1857",
+    "statement": {
+      "ru": "Валентинки придумали открыточные фабрики в XX веке.",
+      "en": "Valentine cards were invented by card companies in the 20th century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Valentine%27s_Day"
+  },
+  {
+    "id": "race_1858",
+    "statement": {
+      "ru": "На Хеллоуин играют в игру: ловить зубами яблоки в тазу с водой.",
+      "en": "At Halloween people play a game of catching apples in a tub of water with their teeth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Halloween"
+  },
+  {
+    "id": "race_1859",
+    "statement": {
+      "ru": "Остров Пасхи так назвали, потому что европейцы открыли его в Пасху.",
+      "en": "Easter Island got its name because Europeans found it on Easter Day."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Easter_Island"
+  },
+  {
+    "id": "race_1860",
+    "statement": {
+      "ru": "В Японии на День святого Валентина шоколад дарят в основном женщины.",
+      "en": "In Japan, it's mostly women who give chocolate on Valentine's Day."
+    },
+    "answer": true,
+    "source": "https://www.sbs.com.au/food/article/women-gifting-chocolates-to-men-how-japans-valentines-day-culture-has-changed/xjkcc6ml5"
+  },
+  {
+    "id": "race_1861",
+    "statement": {
+      "ru": "Обычай ставить свечи на торт в день рождения придумали в США.",
+      "en": "The custom of candles on a birthday cake was invented in the USA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Birthday_cake"
+  },
+  {
+    "id": "race_1862",
+    "statement": {
+      "ru": "Святой Валентин считается покровителем пчеловодов.",
+      "en": "Saint Valentine is a patron saint of beekeepers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Saint_Valentine"
+  },
+  {
+    "id": "race_1863",
+    "statement": {
+      "ru": "В Бразилии Новый год принято встречать в чёрном.",
+      "en": "In Brazil, people usually see in the New Year dressed in black."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/New_Year%27s_Eve_in_Copacabana"
+  },
+  {
+    "id": "race_1864",
+    "statement": {
+      "ru": "Китайский Новый год вызывает самую большую ежегодную миграцию людей в мире.",
+      "en": "Chinese New Year causes the largest yearly human migration in the world."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chunyun"
+  },
+  {
+    "id": "race_1865",
+    "statement": {
+      "ru": "День подарков в Британии, Boxing Day, назван в честь бокса.",
+      "en": "Britain's Boxing Day is named after the sport of boxing."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Boxing_Day"
+  },
+  {
+    "id": "race_1866",
+    "statement": {
+      "ru": "Во вьетнамском гороскопе вместо Кролика — Кот.",
+      "en": "The Vietnamese zodiac has the Cat instead of the Rabbit."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vietnamese_zodiac"
+  },
+  {
+    "id": "race_1867",
+    "statement": {
+      "ru": "Ёлку, которую продают к празднику, выращивают около года.",
+      "en": "A Christmas tree sold for the holidays takes about a year to grow."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Christmas_tree_cultivation"
+  },
+  {
+    "id": "race_1868",
+    "statement": {
+      "ru": "Наряжать ёлку в Британии стало модно благодаря немецкому мужу королевы Виктории.",
+      "en": "Decorating a Christmas tree became fashionable in Britain thanks to Queen Victoria's German husband."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Christmas_tree"
+  },
+  {
+    "id": "race_1869",
+    "statement": {
+      "ru": "Святой Патрик, покровитель Ирландии, был ирландцем.",
+      "en": "Saint Patrick, the patron saint of Ireland, was Irish."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Saint_Patrick"
+  },
+  {
+    "id": "race_1870",
+    "statement": {
+      "ru": "У британского монарха два дня рождения в году: настоящий и официальный.",
+      "en": "The British monarch has two birthdays a year: a real one and an official one."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Official_birthday"
+  },
+  {
+    "id": "race_1871",
+    "statement": {
+      "ru": "Шотландцы верят: к удаче, если первой в Новом году в дом войдёт блондинка.",
+      "en": "Scots believe it's lucky if a blonde woman is first through the door in the New Year."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/First-foot"
+  },
+  {
+    "id": "race_1872",
+    "statement": {
+      "ru": "В Корее раньше все прибавляли год к возрасту в один день — на Новый год.",
+      "en": "In Korea everyone used to add a year to their age on the same day: New Year's."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/East_Asian_age_reckoning"
+  },
+  {
+    "id": "race_1873",
+    "statement": {
+      "ru": "Канада празднует День благодарения в тот же день, что и США.",
+      "en": "Canada celebrates Thanksgiving on the same day as the USA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Thanksgiving_(Canada)"
+  },
+  {
+    "id": "race_1874",
+    "statement": {
+      "ru": "В 1957 году BBC показала репортаж о сборе спагетти с деревьев.",
+      "en": "In 1957 the BBC showed a report about harvesting spaghetti from trees."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Spaghetti-tree_hoax"
+  },
+  {
+    "id": "race_1875",
+    "statement": {
+      "ru": "Карнавал в Рио проходит в новогоднюю ночь.",
+      "en": "The Rio Carnival takes place on New Year's Eve."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rio_Carnival"
+  },
+  {
+    "id": "race_1876",
+    "statement": {
+      "ru": "Во Франции 1 апреля приклеивают людям на спину бумажную рыбку.",
+      "en": "In France on 1 April, people stick a paper fish on someone's back."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/April_Fools%27_Day"
+  },
+  {
+    "id": "race_1877",
+    "statement": {
+      "ru": "На индийском празднике Холи бросаются помидорами.",
+      "en": "At the Indian festival of Holi, people throw tomatoes at each other."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Holi"
+  },
+  {
+    "id": "race_1878",
+    "statement": {
+      "ru": "Burger King в шутку объявил о Воппере для левшей.",
+      "en": "Burger King once announced a Whopper for left-handers as a joke."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Whopper"
+  },
+  {
+    "id": "race_1879",
+    "statement": {
+      "ru": "Самый продаваемый сингл в истории — рождественская песня.",
+      "en": "The best-selling single in history is a Christmas song."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/White_Christmas_(song)"
+  },
+  {
+    "id": "race_1880",
+    "statement": {
+      "ru": "Индейку по-английски зовут turkey, потому что она родом из Турции.",
+      "en": "The turkey is called 'turkey' in English because it comes from Turkey."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Turkey_(bird)"
+  },
+  {
+    "id": "race_1881",
+    "statement": {
+      "ru": "Голландский Синтерклас приезжает с Северного полюса на оленях.",
+      "en": "The Dutch Sinterklaas arrives from the North Pole on reindeer."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sinterklaas"
+  },
+  {
+    "id": "race_1882",
+    "statement": {
+      "ru": "В Японии в новогоднюю ночь в храмах бьют в колокол 108 раз.",
+      "en": "In Japan on New Year's Eve, temple bells are struck 108 times."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/New_Year%27s_Eve"
+  },
+  {
+    "id": "race_1883",
+    "statement": {
+      "ru": "Если положить в микроволновку разрезанную виноградину, она может заискрить.",
+      "en": "A grape cut in half can make sparks in a microwave oven."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Microwave_oven"
+  },
+  {
+    "id": "race_1884",
+    "statement": {
+      "ru": "Горящее на сковороде масло лучше всего залить водой.",
+      "en": "Burning oil in a frying pan is best put out with water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Grease_fire"
+  },
+  {
+    "id": "race_1885",
+    "statement": {
+      "ru": "Фольгу надо класть блестящей стороной к еде, иначе та хуже пропечётся.",
+      "en": "Foil must go shiny side towards the food, or the food cooks worse."
+    },
+    "answer": false,
+    "source": "https://www.americastestkitchen.com/cookscountry/how_tos/10246-sticking-point"
+  },
+  {
+    "id": "race_1886",
+    "statement": {
+      "ru": "Энергетики в Британии следят за сериалами: после них вся страна включает чайники.",
+      "en": "British power engineers watch the soaps: when one ends, the whole country switches on kettles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/TV_pickup"
+  },
+  {
+    "id": "race_1887",
+    "statement": {
+      "ru": "Первые зеркала делали из вулканического стекла.",
+      "en": "The first mirrors were made of volcanic glass."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mirror"
+  },
+  {
+    "id": "race_1888",
+    "statement": {
+      "ru": "Если в жару открыть холодильник нараспашку, на кухне станет прохладнее.",
+      "en": "On a hot day, leaving the fridge door wide open will cool the kitchen."
+    },
+    "answer": false,
+    "source": "https://van.physics.illinois.edu/ask/listing/1790"
+  },
+  {
+    "id": "race_1889",
+    "statement": {
+      "ru": "Когда-то зеркала делали с помощью ртути.",
+      "en": "Mirrors were once made using mercury."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mirror"
+  },
+  {
+    "id": "race_1890",
+    "statement": {
+      "ru": "Мокрую зубную щётку лучше хранить в закрытом футляре.",
+      "en": "A wet toothbrush is best kept in a closed case."
+    },
+    "answer": false,
+    "source": "https://webarchive.library.unt.edu/web/20201221153136/https://www.cdc.gov/oralhealth/infectioncontrol/faqs/toothbrush-handling.html"
+  },
+  {
+    "id": "race_1891",
+    "statement": {
+      "ru": "Посудомоечная машина моет посуду кипятком.",
+      "en": "A dishwasher washes the dishes in boiling water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dishwasher"
+  },
+  {
+    "id": "race_1892",
+    "statement": {
+      "ru": "У фанатов «Автостопом по галактике» есть праздник — День полотенца.",
+      "en": "Fans of The Hitchhiker's Guide to the Galaxy have a holiday called Towel Day."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Towel_Day"
+  },
+  {
+    "id": "race_1893",
+    "statement": {
+      "ru": "Лёд когда-то возили на парусниках из Америки в Индию.",
+      "en": "Ice was once shipped by sailing ship from America to India."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ice_trade"
+  },
+  {
+    "id": "race_1894",
+    "statement": {
+      "ru": "Электрический чайник изобрели позже телевизора.",
+      "en": "The electric kettle was invented after television."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Kettle"
+  },
+  {
+    "id": "race_1895",
+    "statement": {
+      "ru": "Прообраз скороварки придумали ещё в XVII веке.",
+      "en": "The forerunner of the pressure cooker was invented back in the 17th century."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Denis_Papin"
+  },
+  {
+    "id": "race_1896",
+    "statement": {
+      "ru": "Домашние холодильники появились раньше телефона.",
+      "en": "Home refrigerators appeared before the telephone."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Refrigerator"
+  },
+  {
+    "id": "race_1897",
+    "statement": {
+      "ru": "«Ожог» замороженных продуктов в морозилке — это в основном высыхание.",
+      "en": "'Freezer burn' on frozen food is mostly drying out."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Freezer_burn"
+  },
+  {
+    "id": "race_1898",
+    "statement": {
+      "ru": "Палочки для еды придумали в Японии.",
+      "en": "Chopsticks were invented in Japan."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chopsticks"
+  },
+  {
+    "id": "race_1899",
+    "statement": {
+      "ru": "По преданию, ножи со скруглённым концом ввёл кардинал Ришельё.",
+      "en": "Legend says Cardinal Richelieu introduced table knives with rounded tips."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Table_knife"
+  },
+  {
+    "id": "race_1900",
+    "statement": {
+      "ru": "Электрическая плита появилась раньше газовой.",
+      "en": "The electric stove appeared before the gas stove."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Kitchen_stove"
+  },
+  {
+    "id": "race_1901",
+    "statement": {
+      "ru": "Палочки, воткнутые стоймя в рис, напоминают в Азии о похоронах.",
+      "en": "In Asia, chopsticks stuck upright in rice are a reminder of funerals."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chopsticks"
+  },
+  {
+    "id": "race_1902",
+    "statement": {
+      "ru": "Столовый уксус убивает микробы не хуже хлорки.",
+      "en": "Table vinegar kills germs as well as bleach does."
+    },
+    "answer": false,
+    "source": "https://www.healthline.com/health/is-vinegar-a-disinfectant"
+  },
+  {
+    "id": "race_1903",
+    "statement": {
+      "ru": "Древние римляне чистили зубы толчёными костями и ракушками.",
+      "en": "The ancient Romans cleaned their teeth with crushed bones and shells."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Toothpaste"
+  },
+  {
+    "id": "race_1904",
+    "statement": {
+      "ru": "Лосося можно приготовить в посудомоечной машине.",
+      "en": "You can cook salmon in a dishwasher."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dishwasher_salmon"
+  },
+  {
+    "id": "race_1905",
+    "statement": {
+      "ru": "Стоматологи советуют после чистки зубов только сплюнуть пасту, без полоскания.",
+      "en": "Dentists advise just spitting out the toothpaste after brushing, without rinsing."
+    },
+    "answer": true,
+    "source": "https://www.nhs.uk/live-well/healthy-teeth-and-gums/how-to-keep-your-teeth-clean/"
+  },
+  {
+    "id": "race_1906",
+    "statement": {
+      "ru": "В самолёте содержимое туалета выбрасывается прямо в небо.",
+      "en": "On a plane, what you flush down the toilet is dumped straight into the sky."
+    },
+    "answer": false,
+    "source": "https://www.snopes.com/fact-check/airplanes-dump-waste-in-flight/"
+  },
+  {
+    "id": "race_1907",
+    "statement": {
+      "ru": "Фарфор в Европе открыл алхимик, которого король запер, чтобы тот делал золото.",
+      "en": "European porcelain was discovered by an alchemist whom a king locked up to make gold."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Meissen_porcelain"
+  },
+  {
+    "id": "race_1908",
+    "statement": {
+      "ru": "Накипь в чайнике — по сути то же вещество, что и мел.",
+      "en": "The scale in a kettle is basically the same substance as chalk."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Limescale"
+  },
+  {
+    "id": "race_1909",
+    "statement": {
+      "ru": "Сырую курицу перед готовкой безопаснее промыть под краном.",
+      "en": "It is safer to rinse raw chicken under the tap before cooking."
+    },
+    "answer": false,
+    "source": "https://www.gov.uk/government/publications/campylobacter/campylobacter"
+  },
+  {
+    "id": "race_1910",
+    "statement": {
+      "ru": "В японских туалетах бывает кнопка, которая включает звук смыва для приличия.",
+      "en": "Japanese toilets can have a button that plays a flushing sound for modesty."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Toilets_in_Japan"
+  },
+  {
+    "id": "race_1911",
+    "statement": {
+      "ru": "Стоматологи советуют менять зубную щётку раз в год.",
+      "en": "Dentists advise changing your toothbrush once a year."
+    },
+    "answer": false,
+    "source": "https://www.mouthhealthy.org/all-topics-a-z/toothbrushes"
+  },
+  {
+    "id": "race_1912",
+    "statement": {
+      "ru": "Изгиб трубы под раковиной нужен, чтобы в доме не пахло канализацией.",
+      "en": "The bend in the pipe under a sink is there to keep sewer smells out of the house."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Trap_(plumbing)"
+  },
+  {
+    "id": "race_1913",
+    "statement": {
+      "ru": "Пищевую плёнку «Саран» сначала придумали для защиты пулемётов от ржавчины.",
+      "en": "Saran cling film was first made to protect machine guns from rust."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Saran_(plastic)"
+  },
+  {
+    "id": "race_1914",
+    "statement": {
+      "ru": "В доме больше всего микробов находят в туалете.",
+      "en": "The most germs in a home are found in the toilet."
+    },
+    "answer": false,
+    "source": "https://www.nsf.org/consumer-resources/articles/germiest-items-home"
+  },
+  {
+    "id": "race_1915",
+    "statement": {
+      "ru": "Нержавейку для вилок и ножей изобрели, когда искали сталь для оружейных стволов.",
+      "en": "Stainless steel for cutlery was invented while looking for a better steel for gun barrels."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Harry_Brearley"
+  },
+  {
+    "id": "race_1916",
+    "statement": {
+      "ru": "Бытовая хлорка для уборки — это в основном вода.",
+      "en": "Household bleach is mostly water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bleach"
+  },
+  {
+    "id": "race_1917",
+    "statement": {
+      "ru": "На индукционной плите можно вскипятить воду в стеклянной кастрюле.",
+      "en": "On an induction hob you can boil water in a glass pot."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Induction_cooking"
+  },
+  {
+    "id": "race_1918",
+    "statement": {
+      "ru": "На первом патенте рулона туалетной бумаги лист свисает наружу, от стены.",
+      "en": "On the first patent for the toilet roll, the paper hangs over the front, away from the wall."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Toilet_paper_orientation"
+  },
+  {
+    "id": "race_1919",
+    "statement": {
+      "ru": "Листерин когда-то продавали и как средство для мытья полов.",
+      "en": "Listerine was once also sold as a floor cleaner."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Listerine"
+  },
+  {
+    "id": "race_1920",
+    "statement": {
+      "ru": "Маленький кармашек на джинсах придумали для карманных часов.",
+      "en": "The tiny pocket on jeans was made for a pocket watch."
+    },
+    "answer": true,
+    "source": "https://www.mentalfloss.com/article/75081/whats-purpose-teeny-pocket-pair-blue-jeans"
+  },
+  {
+    "id": "race_1921",
+    "statement": {
+      "ru": "Ножницы придумали только в Средние века.",
+      "en": "Scissors were only invented in the Middle Ages."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Scissors"
+  },
+  {
+    "id": "race_1922",
+    "statement": {
+      "ru": "Дырочку в колпачке ручки делают, чтобы проглотивший его мог дышать.",
+      "en": "The hole in a pen cap is there so that someone who swallows it can still breathe."
+    },
+    "answer": true,
+    "source": "https://www.rd.com/article/hole-in-pen-cap/"
+  },
+  {
+    "id": "race_1923",
+    "statement": {
+      "ru": "Мохер — это шерсть ангорского кролика.",
+      "en": "Mohair is the wool of the Angora rabbit."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mohair"
+  },
+  {
+    "id": "race_1924",
+    "statement": {
+      "ru": "На мужской и женской одежде пуговицы пришивают с разных сторон.",
+      "en": "Men's and women's clothes have their buttons on opposite sides."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Button"
+  },
+  {
+    "id": "race_1925",
+    "statement": {
+      "ru": "Котелок придумали, чтобы ветки не сбивали шляпу с головы егерей.",
+      "en": "The bowler hat was designed so branches wouldn't knock gamekeepers' hats off."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bowler_hat"
+  },
+  {
+    "id": "race_1926",
+    "statement": {
+      "ru": "Чем темнее солнечные очки, тем лучше они защищают от ультрафиолета.",
+      "en": "The darker the sunglasses, the better they protect against UV."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sunglasses"
+  },
+  {
+    "id": "race_1927",
+    "statement": {
+      "ru": "Самые первые сапоги-«веллингтоны» шили из резины.",
+      "en": "The very first Wellington boots were made of rubber."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Wellington_boot"
+  },
+  {
+    "id": "race_1928",
+    "statement": {
+      "ru": "Кровати IKEA называют в честь мест в Норвегии.",
+      "en": "IKEA names its beds after places in Norway."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/IKEA"
+  },
+  {
+    "id": "race_1929",
+    "statement": {
+      "ru": "Чарльз Дарвин поставил своё кресло на колёсики.",
+      "en": "Charles Darwin put wheels on his chair."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Office_chair"
+  },
+  {
+    "id": "race_1930",
+    "statement": {
+      "ru": "Замки «Йель» назвали в честь Йельского университета.",
+      "en": "Yale locks are named after Yale University."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pin_tumbler_lock"
+  },
+  {
+    "id": "race_1931",
+    "statement": {
+      "ru": "Красную дорожку впервые расстелили для голливудских звёзд.",
+      "en": "The red carpet was first rolled out for Hollywood stars."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Red_carpet"
+  },
+  {
+    "id": "race_1932",
+    "statement": {
+      "ru": "Раньше женские карманы были отдельными мешочками, привязанными под юбкой.",
+      "en": "Women's pockets used to be separate pouches tied on under the skirt."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pocket"
+  },
+  {
+    "id": "race_1933",
+    "statement": {
+      "ru": "Сапоги-«веллингтоны» назвали в честь столицы Новой Зеландии.",
+      "en": "Wellington boots are named after the capital of New Zealand."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Wellington_boot"
+  },
+  {
+    "id": "race_1934",
+    "statement": {
+      "ru": "В старой Европе маленьких мальчиков одевали в платья.",
+      "en": "In old Europe, little boys were dressed in gowns."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Breeching_(boys)"
+  },
+  {
+    "id": "race_1935",
+    "statement": {
+      "ru": "В древнем Китае судьи носили тёмные очки, чтобы скрыть свои чувства.",
+      "en": "In ancient China, judges wore dark glasses to hide their feelings."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sunglasses"
+  },
+  {
+    "id": "race_1936",
+    "statement": {
+      "ru": "В Египте больше 1500 лет назад носили носки с отдельным большим пальцем — под сандалии.",
+      "en": "In Egypt more than 1,500 years ago, people wore socks with a separate big toe, to go with sandals."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sock"
+  },
+  {
+    "id": "race_1937",
+    "statement": {
+      "ru": "Скотч изобрели в Шотландии.",
+      "en": "Scotch tape was invented in Scotland."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Scotch_Tape"
+  },
+  {
+    "id": "race_1938",
+    "statement": {
+      "ru": "Пуговицы с самого начала придумали, чтобы застёгивать одежду.",
+      "en": "Buttons were invented from the start to fasten clothes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Button"
+  },
+  {
+    "id": "race_1939",
+    "statement": {
+      "ru": "Богатые римляне носили ключи на пальце, как кольца.",
+      "en": "Wealthy Romans wore their keys on their fingers, as rings."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Key_(lock)"
+  },
+  {
+    "id": "race_1940",
+    "statement": {
+      "ru": "В Англии больше ста лет брали налог на обои.",
+      "en": "England taxed wallpaper for more than a hundred years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wallpaper"
+  },
+  {
+    "id": "race_1941",
+    "statement": {
+      "ru": "Крючок на конце рулетки болтается, потому что плохо приклёпан.",
+      "en": "The hook at the end of a tape measure wobbles because it is badly riveted."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tape_measure"
+  },
+  {
+    "id": "race_1942",
+    "statement": {
+      "ru": "Знаменитую кушетку Фрейду подарила пациентка.",
+      "en": "Freud's famous couch was a gift from a patient."
+    },
+    "answer": true,
+    "source": "https://www.freud.org.uk/about-us/the-house/sigmund-freuds-famous-psychoanalytic-couch/"
+  },
+  {
+    "id": "race_1943",
+    "statement": {
+      "ru": "В Британии свет включают клавишей вверх, как в США.",
+      "en": "In Britain you switch the light on by flicking the switch up, as in the USA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Light_switch"
+  },
+  {
+    "id": "race_1944",
+    "statement": {
+      "ru": "Британские размеры обуви отмеряют длиной ячменного зерна.",
+      "en": "British shoe sizes go up by the length of a grain of barley."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shoe_size"
+  },
+  {
+    "id": "race_1945",
+    "statement": {
+      "ru": "Форму цвета хаки впервые надели солдаты Первой мировой.",
+      "en": "Khaki uniforms were first worn by First World War soldiers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Khaki"
+  },
+  {
+    "id": "race_1946",
+    "statement": {
+      "ru": "В Венеции носили туфли на платформе высотой до полуметра.",
+      "en": "In Venice, women wore platform shoes up to half a metre high."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chopine"
+  },
+  {
+    "id": "race_1947",
+    "statement": {
+      "ru": "Подушками пользовались уже 9000 лет назад.",
+      "en": "People were already using pillows 9,000 years ago."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pillow"
+  },
+  {
+    "id": "race_1948",
+    "statement": {
+      "ru": "Слово «хаки» означает «цвет травы».",
+      "en": "The word 'khaki' means 'the colour of grass'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Khaki"
+  },
+  {
+    "id": "race_1949",
+    "statement": {
+      "ru": "Римляне, уходя из крепости, закопали больше 800 тысяч гвоздей.",
+      "en": "Leaving a fortress, the Romans buried more than 800,000 nails."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Inchtuthil"
+  },
+  {
+    "id": "race_1950",
+    "statement": {
+      "ru": "У каждого шотландского клана своя клетка уже тысячу лет.",
+      "en": "Each Scottish clan has had its own tartan for a thousand years."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tartan"
+  },
+  {
+    "id": "race_1951",
+    "statement": {
+      "ru": "Туфли с длинными острыми носами в Средние века носили только бедняки.",
+      "en": "In the Middle Ages, shoes with long pointed toes were worn only by the poor."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Poulaine"
+  },
+  {
+    "id": "race_1952",
+    "statement": {
+      "ru": "Авраам Линкольн хранил письма и бумаги в своей шляпе.",
+      "en": "Abraham Lincoln kept letters and papers in his hat."
+    },
+    "answer": true,
+    "source": "https://www.abrahamlincolnonline.org/lincoln/gallery/hallway.htm"
+  },
+  {
+    "id": "race_1953",
+    "statement": {
+      "ru": "Крестовые шурупы появились раньше шурупов с прямой прорезью.",
+      "en": "Cross-head screws came before screws with a straight slot."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_screw_drives"
+  },
+  {
+    "id": "race_1954",
+    "statement": {
+      "ru": "Кашемир — шерсть особой породы овец.",
+      "en": "Cashmere is the wool of a special breed of sheep."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cashmere_wool"
+  },
+  {
+    "id": "race_1955",
+    "statement": {
+      "ru": "В Китае веками спали на твёрдых подушках из керамики.",
+      "en": "For centuries, people in China slept on hard ceramic pillows."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pillow"
+  },
+  {
+    "id": "race_1956",
+    "statement": {
+      "ru": "Шлёпанцы-вьетнамки носили ещё в Древнем Египте.",
+      "en": "Flip-flops were already worn in ancient Egypt."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Flip-flops"
+  },
+  {
+    "id": "race_1957",
+    "statement": {
+      "ru": "Ракушки каури веками служили деньгами в Африке и Азии.",
+      "en": "Cowrie shells served as money in Africa and Asia for centuries."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shell_money"
+  },
+  {
+    "id": "race_1958",
+    "statement": {
+      "ru": "В Японии принято оставлять официанту 15 % чаевых.",
+      "en": "In Japan it is customary to leave the waiter a 15 % tip."
+    },
+    "answer": false,
+    "source": "https://www.nerdwallet.com/article/travel/tipping-in-japan"
+  },
+  {
+    "id": "race_1959",
+    "statement": {
+      "ru": "Американская монетка в 1 цент сделана в основном из меди.",
+      "en": "The American 1-cent coin is made mostly of copper."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Penny_(United_States_coin)"
+  },
+  {
+    "id": "race_1960",
+    "statement": {
+      "ru": "«Богат, как Крёз» — это про выдуманного героя греческих мифов.",
+      "en": "'As rich as Croesus' is about a made-up hero of Greek myths."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Croesus"
+  },
+  {
+    "id": "race_1961",
+    "statement": {
+      "ru": "Японская монета в 1 иену может лежать на воде и не тонуть.",
+      "en": "A Japanese 1-yen coin can rest on water without sinking."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/1_yen_coin"
+  },
+  {
+    "id": "race_1962",
+    "statement": {
+      "ru": "Самая сильная инфляция в истории была в Германии в 1920-х.",
+      "en": "The worst inflation in history was in Germany in the 1920s."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hyperinflation"
+  },
+  {
+    "id": "race_1963",
+    "statement": {
+      "ru": "На купюре в 1 доллар изображён Авраам Линкольн.",
+      "en": "Abraham Lincoln is on the 1-dollar bill."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Banknotes_of_the_United_States_dollar"
+  },
+  {
+    "id": "race_1964",
+    "statement": {
+      "ru": "Первый банкомат принимал чеки, помеченные радиоактивным веществом.",
+      "en": "The first cash machine took cheques marked with a radioactive substance."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Automated_teller_machine"
+  },
+  {
+    "id": "race_1965",
+    "statement": {
+      "ru": "Купюры евро тем больше по размеру, чем крупнее номинал.",
+      "en": "The bigger the value of a euro banknote, the bigger the note."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Euro_banknotes"
+  },
+  {
+    "id": "race_1966",
+    "statement": {
+      "ru": "Английское слово tips — это сокращение от «To Insure Promptness».",
+      "en": "The English word 'tips' is short for 'To Insure Promptness'."
+    },
+    "answer": false,
+    "source": "https://barrypopik.com/blog/to_insure_promptness_tip_false_etymology"
+  },
+  {
+    "id": "race_1967",
+    "statement": {
+      "ru": "Слово «доллар» происходит от названия старинной монеты из Чехии.",
+      "en": "The word 'dollar' comes from the name of an old coin from Czechia."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Thaler"
+  },
+  {
+    "id": "race_1968",
+    "statement": {
+      "ru": "Шанс выиграть джекпот лотереи Powerball — примерно один на миллион.",
+      "en": "The chance of winning the Powerball jackpot is about one in a million."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Powerball"
+  },
+  {
+    "id": "race_1969",
+    "statement": {
+      "ru": "У монет евро одна сторона общая, а другую каждая страна рисует сама.",
+      "en": "Euro coins have one common side, and each country designs the other."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Euro_coins"
+  },
+  {
+    "id": "race_1970",
+    "statement": {
+      "ru": "Американские купюры тем длиннее, чем крупнее их номинал.",
+      "en": "The higher the value of an American banknote, the longer it is."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Banknotes_of_the_United_States_dollar"
+  },
+  {
+    "id": "race_1971",
+    "statement": {
+      "ru": "Во Вторую мировую нацисты печатали фальшивые британские фунты.",
+      "en": "In the Second World War the Nazis printed fake British pounds."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Operation_Bernhard"
+  },
+  {
+    "id": "race_1972",
+    "statement": {
+      "ru": "Первые в Европе бумажные деньги выпустил Банк Англии.",
+      "en": "The first paper money in Europe was issued by the Bank of England."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Stockholms_Banco"
+  },
+  {
+    "id": "race_1973",
+    "statement": {
+      "ru": "Колумбийский университет в Нью-Йорке основали на деньги лотереи.",
+      "en": "Columbia University in New York was founded with lottery money."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lottery"
+  },
+  {
+    "id": "race_1974",
+    "statement": {
+      "ru": "Первые монеты в истории отчеканили в Древнем Египте.",
+      "en": "The first coins in history were struck in ancient Egypt."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Coin"
+  },
+  {
+    "id": "race_1975",
+    "statement": {
+      "ru": "Самый старый из работающих банков открылся ещё до плавания Колумба.",
+      "en": "The oldest bank still working opened before Columbus sailed to America."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bank"
+  },
+  {
+    "id": "race_1976",
+    "statement": {
+      "ru": "Знак фунта £ — это буква P от слова «pound».",
+      "en": "The pound sign £ is a letter P, from the word 'pound'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pound_sign"
+  },
+  {
+    "id": "race_1977",
+    "statement": {
+      "ru": "Слово «банк» происходит от итальянского слова, означавшего скамью менялы.",
+      "en": "The word 'bank' comes from an Italian word for a money changer's bench or table."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bank"
+  },
+  {
+    "id": "race_1978",
+    "statement": {
+      "ru": "Слово «иена» по-японски значит «золото».",
+      "en": "The word 'yen' means 'gold' in Japanese."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Japanese_yen"
+  },
+  {
+    "id": "race_1979",
+    "statement": {
+      "ru": "В Тибете и Монголии расплачивались плитками прессованного чая.",
+      "en": "In Tibet and Mongolia people paid with bricks of pressed tea."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tea_brick"
+  },
+  {
+    "id": "race_1980",
+    "statement": {
+      "ru": "Евро — денежная единица всех стран Евросоюза.",
+      "en": "The euro is the currency of every country in the European Union."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Eurozone"
+  },
+  {
+    "id": "race_1981",
+    "statement": {
+      "ru": "Магнитную полосу к банковской карте впервые прикрепили утюгом.",
+      "en": "The first magnetic stripe was attached to a card with a clothes iron."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Magnetic_stripe_card"
+  },
+  {
+    "id": "race_1982",
+    "statement": {
+      "ru": "Купюры в 2 доллара перестали печатать ещё в XIX веке.",
+      "en": "2-dollar bills stopped being printed back in the 19th century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Banknotes_of_the_United_States_dollar"
+  },
+  {
+    "id": "race_1983",
+    "statement": {
+      "ru": "Ватикан выпускает свои монеты евро.",
+      "en": "Vatican City issues its own euro coins."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Euro_coins"
+  },
+  {
+    "id": "race_1984",
+    "statement": {
+      "ru": "Елизавета II изображена на деньгах большего числа стран, чем кто-либо.",
+      "en": "Elizabeth II has appeared on the money of more countries than anyone else."
+    },
+    "answer": true,
+    "source": "https://www.guinnessworldrecords.com/world-records/most-currencies-featuring-the-same-individual"
+  },
+  {
+    "id": "race_1985",
+    "statement": {
+      "ru": "Первые пластиковые банкноты выпустили в США.",
+      "en": "The first plastic banknotes were issued in the USA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Polymer_banknote"
+  },
+  {
+    "id": "race_1986",
+    "statement": {
+      "ru": "В Шотландии свои банкноты печатают обычные коммерческие банки.",
+      "en": "In Scotland, ordinary high-street banks print their own banknotes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Banknotes_of_the_pound_sterling"
+  },
+  {
+    "id": "race_1987",
+    "statement": {
+      "ru": "На британских банкнотах изображают только королей и королев.",
+      "en": "Only kings and queens are pictured on British banknotes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Banknotes_of_the_pound_sterling"
+  },
+  {
+    "id": "race_1988",
+    "statement": {
+      "ru": "Банк Англии выпускает банкноты в 100 миллионов фунтов.",
+      "en": "The Bank of England issues banknotes worth 100 million pounds."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Banknotes_of_the_pound_sterling"
+  },
+  {
+    "id": "race_1989",
+    "statement": {
+      "ru": "Аль Капоне посадили в тюрьму за убийства.",
+      "en": "Al Capone was sent to prison for murders."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Al_Capone"
+  },
+  {
+    "id": "race_1990",
+    "statement": {
+      "ru": "Копилки в виде свиньи придумали в XX веке.",
+      "en": "Pig-shaped money boxes were invented in the 20th century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Piggy_bank"
+  },
+  {
+    "id": "race_1991",
+    "statement": {
+      "ru": "Английские слова money и mint пошли от имени римской богини.",
+      "en": "The English words 'money' and 'mint' come from the name of a Roman goddess."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Juno_(mythology)"
+  },
+  {
+    "id": "race_1992",
+    "statement": {
+      "ru": "Американские монеты в 10 и 25 центов и сейчас делают из серебра.",
+      "en": "American 10- and 25-cent coins are still made of silver today."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Coinage_Act_of_1965"
+  },
+  {
+    "id": "race_1993",
+    "statement": {
+      "ru": "В 2025 году США перестали чеканить монетку в 1 цент.",
+      "en": "In 2025 the USA stopped minting the 1-cent coin."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Penny_(United_States_coin)"
+  },
+  {
+    "id": "race_1994",
+    "statement": {
+      "ru": "Пираты обычно зарывали добычу в сундуках на островах.",
+      "en": "Pirates usually buried their loot in chests on islands."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Buried_treasure"
+  },
+  {
+    "id": "race_1995",
+    "statement": {
+      "ru": "В древней Спарте вместо золотых монет ходили тяжёлые железные деньги.",
+      "en": "Ancient Sparta used heavy iron money instead of gold coins."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lycurgus_of_Sparta"
+  },
+  {
+    "id": "race_1996",
+    "statement": {
+      "ru": "В Англии когда-то был налог на окна.",
+      "en": "England once had a tax on windows."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Window_tax"
+  },
+  {
+    "id": "race_1997",
+    "statement": {
+      "ru": "В Австралии отчеканили золотую монету весом в целую тонну.",
+      "en": "Australia has minted a gold coin that weighs a whole tonne."
+    },
+    "answer": true,
+    "source": "https://perthmint.com/visit/attractions/one-tonne-gold-coin/"
+  },
+  {
+    "id": "race_1998",
+    "statement": {
+      "ru": "Volkswagen по-немецки значит «быстрая машина».",
+      "en": "Volkswagen means 'fast car' in German."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Volkswagen"
+  },
+  {
+    "id": "race_1999",
+    "statement": {
+      "ru": "Компания Toyota начинала с ткацких станков.",
+      "en": "Toyota started out making weaving looms."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Toyota_Industries"
+  },
+  {
+    "id": "race_2000",
+    "statement": {
+      "ru": "Стрелка в логотипе Amazon ведёт от буквы A к букве Z.",
+      "en": "The arrow in the Amazon logo runs from the A to the Z."
+    },
+    "answer": true,
+    "source": "https://turnerduckworth.com/work/amazon"
+  },
+  {
+    "id": "race_2001",
+    "statement": {
+      "ru": "Гарцующий конь Ferrari раньше был нарисован на боевом самолёте.",
+      "en": "Ferrari's prancing horse was first painted on a fighter plane."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ferrari"
+  },
+  {
+    "id": "race_2002",
+    "statement": {
+      "ru": "Adidas — это сокращение от «All Day I Dream About Sport».",
+      "en": "Adidas is short for 'All Day I Dream About Sport'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Adidas"
+  },
+  {
+    "id": "race_2003",
+    "statement": {
+      "ru": "Батончик Snickers назван в честь лошади.",
+      "en": "The Snickers bar is named after a horse."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Snickers"
+  },
+  {
+    "id": "race_2004",
+    "statement": {
+      "ru": "Четыре кольца Audi означают четыре колеса машины.",
+      "en": "Audi's four rings stand for a car's four wheels."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Audi"
+  },
+  {
+    "id": "race_2005",
+    "statement": {
+      "ru": "Швейцарскую фирму Rolex основали в Лондоне.",
+      "en": "The Swiss firm Rolex was founded in London."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rolex"
+  },
+  {
+    "id": "race_2006",
+    "statement": {
+      "ru": "Название Sony сложено из фамилий двух основателей.",
+      "en": "The name Sony is made from its two founders' surnames."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sony"
+  },
+  {
+    "id": "race_2007",
+    "statement": {
+      "ru": "Nokia названа в честь финского городка.",
+      "en": "Nokia is named after a small town in Finland."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nokia"
+  },
+  {
+    "id": "race_2008",
+    "statement": {
+      "ru": "Поначалу Coca-Cola была зелёного цвета.",
+      "en": "Coca-Cola was green at first."
+    },
+    "answer": false,
+    "source": "https://www.snopes.com/fact-check/green-coca-cola/"
+  },
+  {
+    "id": "race_2009",
+    "statement": {
+      "ru": "Число 57 на этикетке Heinz — это точное число его продуктов.",
+      "en": "The 57 on the Heinz label is the exact number of its products."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Heinz_57"
+  },
+  {
+    "id": "race_2010",
+    "statement": {
+      "ru": "Во многих странах Мистера Пропера зовут Мистер Клин.",
+      "en": "In many countries, Mr. Proper is called Mr. Clean."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mr._Clean"
+  },
+  {
+    "id": "race_2011",
+    "statement": {
+      "ru": "Батончик Mars назван в честь планеты.",
+      "en": "The Mars bar is named after the planet."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mars_Inc."
+  },
+  {
+    "id": "race_2012",
+    "statement": {
+      "ru": "Под маркой Peugeot делают ещё и перечные мельницы.",
+      "en": "Pepper mills are also made under the Peugeot name."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Peugeot"
+  },
+  {
+    "id": "race_2013",
+    "statement": {
+      "ru": "Nivea названа в честь жены основателя.",
+      "en": "Nivea is named after its founder's wife."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Nivea"
+  },
+  {
+    "id": "race_2014",
+    "statement": {
+      "ru": "Магазин Zara поначалу назывался Zorba.",
+      "en": "The Zara shop was first called Zorba."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Zara_(retailer)"
+  },
+  {
+    "id": "race_2015",
+    "statement": {
+      "ru": "Эмблема BMW изображает вращающийся пропеллер.",
+      "en": "The BMW badge shows a spinning propeller."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/BMW"
+  },
+  {
+    "id": "race_2016",
+    "statement": {
+      "ru": "Три полоски Adidas купил у финской фирмы за две бутылки виски и деньги.",
+      "en": "Adidas bought its three stripes from a Finnish firm for two bottles of whisky and some cash."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Adidas"
+  },
+  {
+    "id": "race_2017",
+    "statement": {
+      "ru": "Фирма Canon названа в честь пушки.",
+      "en": "Canon is named after a cannon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Canon_Inc."
+  },
+  {
+    "id": "race_2018",
+    "statement": {
+      "ru": "Pepsi сначала называлась «Напиток Брэда».",
+      "en": "Pepsi was first called 'Brad's Drink'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pepsi"
+  },
+  {
+    "id": "race_2019",
+    "statement": {
+      "ru": "Danone назван в честь дочери основателя.",
+      "en": "Danone is named after the founder's daughter."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Danone"
+  },
+  {
+    "id": "race_2020",
+    "statement": {
+      "ru": "Много лет в горе на упаковке Toblerone прятался медведь.",
+      "en": "For years a bear was hidden in the mountain on the Toblerone box."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Toblerone"
+  },
+  {
+    "id": "race_2021",
+    "statement": {
+      "ru": "Полковника Сандерса из KFC придумали рекламщики.",
+      "en": "KFC's Colonel Sanders was invented by advertisers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Colonel_Sanders"
+  },
+  {
+    "id": "race_2022",
+    "statement": {
+      "ru": "Нефтяная компания Shell названа в честь торговли ракушками.",
+      "en": "The oil company Shell is named after a trade in seashells."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shell_plc"
+  },
+  {
+    "id": "race_2023",
+    "statement": {
+      "ru": "Mitsubishi по-японски значит «восходящее солнце».",
+      "en": "Mitsubishi means 'rising sun' in Japanese."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mitsubishi"
+  },
+  {
+    "id": "race_2024",
+    "statement": {
+      "ru": "Звёзды на эмблеме Subaru — это Большая Медведица.",
+      "en": "The stars on the Subaru badge are the Big Dipper."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Subaru"
+  },
+  {
+    "id": "race_2025",
+    "statement": {
+      "ru": "В логотипе FedEx между буквами спрятана стрелка.",
+      "en": "An arrow is hidden between the letters of the FedEx logo."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/FedEx"
+  },
+  {
+    "id": "race_2026",
+    "statement": {
+      "ru": "Фирма Yamaha начинала с мотоциклов.",
+      "en": "Yamaha started out making motorcycles."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Yamaha_Corporation"
+  },
+  {
+    "id": "race_2027",
+    "statement": {
+      "ru": "Настоящее имя Коко Шанель — Габриэль.",
+      "en": "Coco Chanel's real name was Gabrielle."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Coco_Chanel"
+  },
+  {
+    "id": "race_2028",
+    "statement": {
+      "ru": "На эмблеме Alfa Romeo — змея с человеком в пасти.",
+      "en": "The Alfa Romeo badge shows a snake with a person in its mouth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Alfa_Romeo"
+  },
+  {
+    "id": "race_2029",
+    "statement": {
+      "ru": "Буквы H&M — инициалы двух основателей фирмы.",
+      "en": "The letters H&M are the initials of the firm's two founders."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/H%26M"
+  },
+  {
+    "id": "race_2030",
+    "statement": {
+      "ru": "Основатель IKEA открыл свою фирму в 17 лет.",
+      "en": "The founder of IKEA started his company at 17."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ingvar_Kamprad"
+  },
+  {
+    "id": "race_2031",
+    "statement": {
+      "ru": "Haribo назван в честь мармеладного мишки с упаковки.",
+      "en": "Haribo is named after the gummy bear on its packet."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Haribo"
+  },
+  {
+    "id": "race_2032",
+    "statement": {
+      "ru": "Фирма Puma сначала называлась Ruda.",
+      "en": "The Puma company was first called Ruda."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Puma_(brand)"
+  },
+  {
+    "id": "race_2033",
+    "statement": {
+      "ru": "В McDonald's в Индии продают «Биг-Мак» с говядиной.",
+      "en": "McDonald's in India sells a beef Big Mac."
+    },
+    "answer": false,
+    "source": "https://www.tastingtable.com/1892829/mcdonalds-menu-india-no-beef/"
+  },
+  {
+    "id": "race_2034",
+    "statement": {
+      "ru": "Volvo по-латыни значит «я качусь».",
+      "en": "Volvo means 'I roll' in Latin."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Volvo"
+  },
+  {
+    "id": "race_2035",
+    "statement": {
+      "ru": "Starbucks назван по фамилии своего основателя.",
+      "en": "Starbucks is named after its founder's surname."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Starbucks"
+  },
+  {
+    "id": "race_2036",
+    "statement": {
+      "ru": "Крокодил Lacoste — это прозвище самого теннисиста Рене Лакоста.",
+      "en": "The Lacoste crocodile was the nickname of tennis player René Lacoste himself."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lacoste"
+  },
+  {
+    "id": "race_2037",
+    "statement": {
+      "ru": "В Японии Kit Kat дарят на удачу: название похоже на «точно победишь».",
+      "en": "In Japan Kit Kat is a good-luck gift: its name sounds like 'surely win'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kit_Kat"
+  },
+  {
+    "id": "race_2038",
+    "statement": {
+      "ru": "В Австралии Burger King называется Hungry Jack's.",
+      "en": "In Australia, Burger King is called Hungry Jack's."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hungry_Jack%27s"
+  },
+  {
+    "id": "race_2039",
+    "statement": {
+      "ru": "В логотипе Baskin-Robbins спрятано число 31.",
+      "en": "The number 31 is hidden in the Baskin-Robbins logo."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Baskin-Robbins"
+  },
+  {
+    "id": "race_2040",
+    "statement": {
+      "ru": "Самая большая пицца в мире была больше баскетбольной площадки.",
+      "en": "The world's largest pizza was bigger than a basketball court."
+    },
+    "answer": true,
+    "source": "https://www.foxnews.com/lifestyle/pizza-hut-youtube-star-airrack-make-worlds-largest-pizza-california.amp"
+  },
+  {
+    "id": "race_2041",
+    "statement": {
+      "ru": "Самому старому мужчине в истории было больше 130 лет.",
+      "en": "The oldest man in history lived past 130."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Jiroemon_Kimura"
+  },
+  {
+    "id": "race_2042",
+    "statement": {
+      "ru": "У одного человека ногти на одной руке вместе были длиннее 9 метров.",
+      "en": "One man's fingernails on a single hand measured over 9 metres in total."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shridhar_Chillal"
+  },
+  {
+    "id": "race_2043",
+    "statement": {
+      "ru": "Рекорд задержки дыхания — всего около пяти минут.",
+      "en": "The breath-holding record is only about five minutes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Static_apnea"
+  },
+  {
+    "id": "race_2044",
+    "statement": {
+      "ru": "Автомобиль на суше разгонялся быстрее скорости звука.",
+      "en": "A car has gone faster than the speed of sound on land."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/ThrustSSC"
+  },
+  {
+    "id": "race_2045",
+    "statement": {
+      "ru": "Самая высокая женщина в истории была выше самого высокого мужчины.",
+      "en": "The tallest woman in history was taller than the tallest man."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Zeng_Jinlian"
+  },
+  {
+    "id": "race_2046",
+    "statement": {
+      "ru": "Поезд разгонялся быстрее 1000 км/ч.",
+      "en": "A train has gone faster than 1,000 km/h."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Land_speed_record_for_rail_vehicles"
+  },
+  {
+    "id": "race_2047",
+    "statement": {
+      "ru": "Велосипедистка разогналась почти до 300 км/ч.",
+      "en": "A cyclist has reached almost 300 km/h."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Denise_Mueller-Korenek"
+  },
+  {
+    "id": "race_2048",
+    "statement": {
+      "ru": "Бумажный самолётик продержался в воздухе больше минуты.",
+      "en": "A paper plane has stayed in the air for more than a minute."
+    },
+    "answer": false,
+    "source": "https://kids.guinnessworldrecords.com/news/2023/12/paper-plane-records-that-made-history-and-how-you-can-break-one-761876"
+  },
+  {
+    "id": "race_2049",
+    "statement": {
+      "ru": "Бумажный самолётик пролетел больше 80 метров.",
+      "en": "A paper plane has flown more than 80 metres."
+    },
+    "answer": true,
+    "source": "https://kids.guinnessworldrecords.com/news/2023/1/his-paper-plane-flew-88-metres-732788"
+  },
+  {
+    "id": "race_2050",
+    "statement": {
+      "ru": "Самое просматриваемое видео на YouTube — клип «Despacito».",
+      "en": "The most-viewed video on YouTube is the Despacito music video."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Baby_Shark"
+  },
+  {
+    "id": "race_2051",
+    "statement": {
+      "ru": "Самый маленький взрослый в истории был ростом меньше 60 сантиметров.",
+      "en": "The shortest adult in history was under 60 cm tall."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chandra_Bahadur_Dangi"
+  },
+  {
+    "id": "race_2052",
+    "statement": {
+      "ru": "«Титаник» — самый длинный корабль в истории.",
+      "en": "The Titanic is the longest ship ever built."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Seawise_Giant"
+  },
+  {
+    "id": "race_2053",
+    "statement": {
+      "ru": "Один пловец проплыл по Амазонке больше 5000 километров.",
+      "en": "One swimmer swam more than 5,000 km down the Amazon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Martin_Strel"
+  },
+  {
+    "id": "race_2054",
+    "statement": {
+      "ru": "Самая большая плитка шоколада весила как взрослый человек.",
+      "en": "The biggest chocolate bar weighed as much as a grown man."
+    },
+    "answer": false,
+    "source": "https://www.guinnessworldrecords.com/world-records/largest-chocolate-bar"
+  },
+  {
+    "id": "race_2055",
+    "statement": {
+      "ru": "На самолёте с педалями человек перелетел с Крита на Санторини.",
+      "en": "A man flew from Crete to Santorini in a pedal-powered plane."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/MIT_Daedalus"
+  },
+  {
+    "id": "race_2056",
+    "statement": {
+      "ru": "Самому молодому нобелевскому лауреату было больше 30 лет.",
+      "en": "The youngest Nobel laureate was over 30."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Malala_Yousafzai"
+  },
+  {
+    "id": "race_2057",
+    "statement": {
+      "ru": "У самой маленькой серийной машины не было задней передачи.",
+      "en": "The smallest production car had no reverse gear."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Peel_P50"
+  },
+  {
+    "id": "race_2058",
+    "statement": {
+      "ru": "Лыжники-рекордсмены разгоняются примерно до 100 км/ч.",
+      "en": "Record-setting skiers reach about 100 km/h."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Speed_skiing"
+  },
+  {
+    "id": "race_2059",
+    "statement": {
+      "ru": "В самом длинном лимузине есть бассейн и вертолётная площадка.",
+      "en": "The longest limousine has a swimming pool and a helipad."
+    },
+    "answer": true,
+    "source": "https://www.upi.com/Odd_News/2022/03/09/Worlds-longest-car-restored-measures-over-100-feet-long/9131646848981/"
+  },
+  {
+    "id": "race_2060",
+    "statement": {
+      "ru": "Рекордный поцелуй длился больше двух суток.",
+      "en": "The record kiss lasted more than two days."
+    },
+    "answer": true,
+    "source": "https://www.nbcnews.com/news/photo/smooooooooooch-thai-couple-kisses-58-hours-sets-new-world-record-flna1c8380649"
+  },
+  {
+    "id": "race_2061",
+    "statement": {
+      "ru": "Человек прожил под водой целый год, ни разу не поднявшись.",
+      "en": "A man has lived underwater for a whole year without surfacing."
+    },
+    "answer": false,
+    "source": "https://divemagazine.com/scuba-diving-news/new-guinness-world-record-for-living-underwater"
+  },
+  {
+    "id": "race_2062",
+    "statement": {
+      "ru": "Самая тяжёлая тыква весила больше тонны.",
+      "en": "The heaviest pumpkin weighed more than a tonne."
+    },
+    "answer": true,
+    "source": "https://www.guinnessworldrecords.com/world-records/heaviest-pumpkin"
+  },
+  {
+    "id": "race_2063",
+    "statement": {
+      "ru": "Самая старая черепаха в мире живёт на Галапагосах.",
+      "en": "The world's oldest tortoise lives on the Galápagos."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Jonathan_(tortoise)"
+  },
+  {
+    "id": "race_2064",
+    "statement": {
+      "ru": "Самая долгая пробка на дороге длилась больше недели.",
+      "en": "The longest traffic jam on record lasted more than a week."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/China_National_Highway_110_traffic_jam"
+  },
+  {
+    "id": "race_2065",
+    "statement": {
+      "ru": "Самые длинные усы в мире короче школьной линейки.",
+      "en": "The world's longest moustache is shorter than a school ruler."
+    },
+    "answer": false,
+    "source": "https://www.guinnessworldrecords.com/news/2019/9/10-of-the-worlds-biggest-hair-records-589939"
+  },
+  {
+    "id": "race_2066",
+    "statement": {
+      "ru": "Несколько лет самым популярным фото в Instagram было яйцо.",
+      "en": "For years the most-liked photo on Instagram was a picture of an egg."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/World_record_egg"
+  },
+  {
+    "id": "race_2067",
+    "statement": {
+      "ru": "Прыгун с шестом взлетал выше 10 метров.",
+      "en": "A pole vaulter has cleared more than 10 metres."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Armand_Duplantis"
+  },
+  {
+    "id": "race_2068",
+    "statement": {
+      "ru": "Самый длинный фильм в мире идёт больше месяца.",
+      "en": "The longest film ever made runs for more than a month."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Logistics_(film)"
+  },
+  {
+    "id": "race_2069",
+    "statement": {
+      "ru": "Рекордный прыжок в длину длиннее городского автобуса.",
+      "en": "The long jump record is longer than a city bus."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Long_jump"
+  },
+  {
+    "id": "race_2070",
+    "statement": {
+      "ru": "В Германии на органе играют пьесу, которая продлится 639 лет.",
+      "en": "In Germany an organ is playing a piece that will last 639 years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/As_Slow_as_Possible"
+  },
+  {
+    "id": "race_2071",
+    "statement": {
+      "ru": "Самая старая кошка в истории прожила меньше 20 лет.",
+      "en": "The oldest cat on record lived less than 20 years."
+    },
+    "answer": false,
+    "source": "https://www.guinnessworldrecords.com/news/2022/11/worlds-oldest-cat-confirmed-at-almost-27-years-old-726391"
+  },
+  {
+    "id": "race_2072",
+    "statement": {
+      "ru": "Один человек простоял на одной ноге больше трёх суток.",
+      "en": "A man stood on one leg for more than three days."
+    },
+    "answer": true,
+    "source": "https://guinnessworldrecords.com/world-records/209621-longest-duration-balancing-on-one-foot"
+  },
+  {
+    "id": "race_2073",
+    "statement": {
+      "ru": "В самой большой коллекции резиновых уточек меньше тысячи штук.",
+      "en": "The biggest collection of rubber ducks has fewer than a thousand ducks."
+    },
+    "answer": false,
+    "source": "https://www.guinnessworldrecords.com/news/2023/10/rubber-duck-collector-waddles-her-way-into-the-record-books-759321"
+  },
+  {
+    "id": "race_2074",
+    "statement": {
+      "ru": "Письмо в бутылке нашли больше чем через сто лет после броска в море.",
+      "en": "A message in a bottle was found more than 100 years after it was thrown into the sea."
+    },
+    "answer": true,
+    "source": "https://guinnessworldrecords.com/news/2016/3/mysterious-postcard-found-on-german-shore-is-confirmed-as-oldest-message-in-a-bot-420594"
+  },
+  {
+    "id": "race_2075",
+    "statement": {
+      "ru": "Канатоходец прошёл по канату прямо над Ниагарским водопадом.",
+      "en": "A tightrope walker crossed on a wire right over Niagara Falls."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nik_Wallenda"
+  },
+  {
+    "id": "race_2076",
+    "statement": {
+      "ru": "Рекорд по домино — около тысячи костяшек, поваленных разом.",
+      "en": "The record for dominoes toppled in one go is about a thousand."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Domino_Day"
+  },
+  {
+    "id": "race_2077",
+    "statement": {
+      "ru": "На вершину Эвереста поднимался 80-летний альпинист.",
+      "en": "An 80-year-old climber has reached the top of Everest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Yuichiro_Miura"
+  },
+  {
+    "id": "race_2078",
+    "statement": {
+      "ru": "Один человек больше года не ел твёрдой пищи — под присмотром врачей.",
+      "en": "A man ate no solid food for over a year, under doctors' care."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Angus_Barbieri%27s_fast"
+  },
+  {
+    "id": "race_2079",
+    "statement": {
+      "ru": "Самая высокая снежная баба была выше десятиэтажного дома.",
+      "en": "The tallest snowwoman ever was taller than a ten-storey building."
+    },
+    "answer": true,
+    "source": "https://www.guinnessworldrecords.com/world-records/tallest-snowman"
+  },
+  {
+    "id": "race_2080",
+    "statement": {
+      "ru": "В один самолёт однажды поместилось больше тысячи пассажиров.",
+      "en": "A single plane once carried more than a thousand passengers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Operation_Solomon"
+  },
+  {
+    "id": "race_2081",
+    "statement": {
+      "ru": "В компании из 23 человек у двоих совпадёт день рождения с шансом больше 50 %.",
+      "en": "In a group of 23 people, the chance that two share a birthday is over 50%."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Birthday_problem"
+  },
+  {
+    "id": "race_2082",
+    "statement": {
+      "ru": "Миллион секунд — это больше месяца.",
+      "en": "A million seconds is more than a month."
+    },
+    "answer": false,
+    "source": "https://danielmiessler.com/blog/million-billion-trillion"
+  },
+  {
+    "id": "race_2083",
+    "statement": {
+      "ru": "Слово «гугол» — число с сотней нулей — придумал девятилетний мальчик.",
+      "en": "The word 'googol', a number with a hundred zeros, was coined by a nine-year-old boy."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Googol"
+  },
+  {
+    "id": "race_2084",
+    "statement": {
+      "ru": "Единица — простое число.",
+      "en": "One is a prime number."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Prime_number"
+  },
+  {
+    "id": "race_2085",
+    "statement": {
+      "ru": "Лист бумаги, сложенный пополам 42 раза, стал бы толще, чем расстояние до Луны.",
+      "en": "A sheet of paper folded in half 42 times would be thicker than the distance to the Moon."
+    },
+    "answer": true,
+    "source": "https://www.scientificamerican.com/article/how-many-paper-folds-would-get-you-to-the-moon/"
+  },
+  {
+    "id": "race_2086",
+    "statement": {
+      "ru": "Если монета пять раз подряд упала орлом, в шестой раз решка вероятнее.",
+      "en": "If a coin lands heads five times in a row, tails is more likely on the sixth toss."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy"
+  },
+  {
+    "id": "race_2087",
+    "statement": {
+      "ru": "Эйнштейн родился в День числа π — 14 марта.",
+      "en": "Einstein was born on Pi Day, 14 March."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pi_Day"
+  },
+  {
+    "id": "race_2088",
+    "statement": {
+      "ru": "Ноль — чётное число.",
+      "en": "Zero is an even number."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Parity_of_zero"
+  },
+  {
+    "id": "race_2089",
+    "statement": {
+      "ru": "Атомов во всей видимой Вселенной больше, чем гугол.",
+      "en": "There are more atoms in the observable universe than a googol."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Observable_universe"
+  },
+  {
+    "id": "race_2090",
+    "statement": {
+      "ru": "Хорошо перетасованная колода почти наверняка лежит в порядке, которого ещё не было.",
+      "en": "A well-shuffled deck is almost certainly in an order that has never existed before."
+    },
+    "answer": true,
+    "source": "https://puzzlewocky.com/brain-teasers/probability-puzzles/every-shuffle-of-a-deck-of-cards-is-probably-unique-in-history/"
+  },
+  {
+    "id": "race_2091",
+    "statement": {
+      "ru": "Существует самое большое простое число.",
+      "en": "There is a largest prime number."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Euclid%27s_theorem"
+  },
+  {
+    "id": "race_2092",
+    "statement": {
+      "ru": "Приз за одной из трёх дверей; ведущий, зная где он, открыл пустую — менять выбор выгоднее.",
+      "en": "Prize behind one of three doors; the host, knowing where, opens an empty one: switching is the better bet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Monty_Hall_problem"
+  },
+  {
+    "id": "race_2093",
+    "statement": {
+      "ru": "Число 0,999… с бесконечными девятками в точности равно 1.",
+      "en": "0.999... with endless nines is exactly equal to 1."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/0.999..."
+  },
+  {
+    "id": "race_2094",
+    "statement": {
+      "ru": "Комбинация 1-2-3-4-5-6 в лотерее выпадает реже других.",
+      "en": "In a lottery, 1-2-3-4-5-6 comes up less often than other combinations."
+    },
+    "answer": false,
+    "source": "https://www.mathsisfun.com/data/lottery.html"
+  },
+  {
+    "id": "race_2095",
+    "statement": {
+      "ru": "Минут в часе 60, потому что в Древней Месопотамии считали шестидесятками.",
+      "en": "There are 60 minutes in an hour because people in ancient Mesopotamia counted in sixties."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sexagesimal"
+  },
+  {
+    "id": "race_2096",
+    "statement": {
+      "ru": "Одна бесконечность может быть больше другой.",
+      "en": "One infinity can be bigger than another."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument"
+  },
+  {
+    "id": "race_2097",
+    "statement": {
+      "ru": "Если сложить все числа от 1 до 100, получится больше 10 000.",
+      "en": "Adding up all the numbers from 1 to 100 gives more than 10,000."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss"
+  },
+  {
+    "id": "race_2098",
+    "statement": {
+      "ru": "Изобретатель знака «=» выбрал две параллельные черты: ничто не бывает равнее их.",
+      "en": "The inventor of '=' chose two parallel lines because no two things could be more equal."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Equals_sign"
+  },
+  {
+    "id": "race_2099",
+    "statement": {
+      "ru": "В Китае восьмёрку считают несчастливым числом.",
+      "en": "In China, eight is considered an unlucky number."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chinese_numerology"
+  },
+  {
+    "id": "race_2100",
+    "statement": {
+      "ru": "111 111 111 × 111 111 111 — это 12 345 678 987 654 321.",
+      "en": "111,111,111 x 111,111,111 = 12,345,678,987,654,321."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Repunit"
+  },
+  {
+    "id": "race_2101",
+    "statement": {
+      "ru": "Цифры на кнопках телефона и калькулятора расположены одинаково.",
+      "en": "The digits on a phone keypad and a calculator are laid out the same way."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Telephone_keypad"
+  },
+  {
+    "id": "race_2102",
+    "statement": {
+      "ru": "При броске двух кубиков чаще всего выпадает сумма 7.",
+      "en": "When you roll two dice, the most common total is 7."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Craps"
+  },
+  {
+    "id": "race_2103",
+    "statement": {
+      "ru": "В реальных таблицах — цены, население городов — числа чаще начинаются с 1, чем с 9.",
+      "en": "In real data like prices and city populations, numbers start with 1 more often than with 9."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Benford%27s_law"
+  },
+  {
+    "id": "race_2104",
+    "statement": {
+      "ru": "Теорему Пифагора первым открыл сам Пифагор.",
+      "en": "Pythagoras was the first to discover the Pythagorean theorem."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pythagorean_theorem"
+  },
+  {
+    "id": "race_2105",
+    "statement": {
+      "ru": "2100 год будет високосным.",
+      "en": "The year 2100 will be a leap year."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Leap_year"
+  },
+  {
+    "id": "race_2106",
+    "statement": {
+      "ru": "Удвоив зёрна на 64 клетках шахматной доски, получишь больше мирового урожая пшеницы.",
+      "en": "Doubling grains across the 64 squares of a chessboard gives more than the world's wheat harvest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wheat_and_chessboard_problem"
+  },
+  {
+    "id": "race_2107",
+    "statement": {
+      "ru": "Шанс выбросить две шестёрки на двух кубиках — один к двенадцати.",
+      "en": "The chance of rolling double six with two dice is one in twelve."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Craps"
+  },
+  {
+    "id": "race_2108",
+    "statement": {
+      "ru": "По-французски 80 дословно звучит как «четыре двадцатки».",
+      "en": "In French, 80 is literally 'four twenties'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/French_language"
+  },
+  {
+    "id": "race_2109",
+    "statement": {
+      "ru": "Цена выросла на 10 %, потом упала на 10 % — и стала прежней.",
+      "en": "A price rises 10% and then falls 10%, ending up where it started."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Percentage"
+  },
+  {
+    "id": "race_2110",
+    "statement": {
+      "ru": "На пальцах двух рук можно досчитать до 1023.",
+      "en": "You can count to 1023 on the fingers of two hands."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Finger_binary"
+  },
+  {
+    "id": "race_2111",
+    "statement": {
+      "ru": "В двоичной системе запись «10» означает десять.",
+      "en": "In binary, '10' means ten."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Binary_number"
+  },
+  {
+    "id": "race_2112",
+    "statement": {
+      "ru": "Бита и мяч стоят 1,10 $, бита на доллар дороже — значит, мяч стоит 10 центов.",
+      "en": "A bat and a ball cost $1.10; the bat costs $1 more, so the ball costs 10 cents."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cognitive_reflection_test"
+  },
+  {
+    "id": "race_2113",
+    "statement": {
+      "ru": "Слово «калькулятор» происходит от латинского слова «камешек».",
+      "en": "The word 'calculator' comes from the Latin word for pebble."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Calculus"
+  },
+  {
+    "id": "race_2114",
+    "statement": {
+      "ru": "Шанс угадать 6 чисел из 49 — примерно один к тысяче.",
+      "en": "The chance of guessing 6 numbers out of 49 is about one in a thousand."
+    },
+    "answer": false,
+    "source": "https://www.mathsisfun.com/data/lottery.html"
+  },
+  {
+    "id": "race_2115",
+    "statement": {
+      "ru": "Если сложить все числа на рулетке, получится 666.",
+      "en": "Add up all the numbers on a roulette wheel and you get 666."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/666_(number)"
+  },
+  {
+    "id": "race_2116",
+    "statement": {
+      "ru": "Кувшинки удваиваются за день и закрыли пруд за 48 дней; половину — за 24 дня.",
+      "en": "Water lilies double every day and cover a pond in 48 days, so they covered half in 24."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cognitive_reflection_test"
+  },
+  {
+    "id": "race_2117",
+    "statement": {
+      "ru": "Французское слово billion означает миллион миллионов.",
+      "en": "In French, a 'billion' is a million million."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Long_and_short_scales"
+  },
+  {
+    "id": "race_2118",
+    "statement": {
+      "ru": "Миллиард секунд — это больше 30 лет.",
+      "en": "A billion seconds is more than 30 years."
+    },
+    "answer": true,
+    "source": "https://danielmiessler.com/blog/million-billion-trillion"
+  },
+  {
+    "id": "race_2119",
+    "statement": {
+      "ru": "На первый чемпионат мира в Уругвай сборные Европы плыли на корабле.",
+      "en": "European teams sailed to Uruguay by ship for the first World Cup."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup"
+  },
+  {
+    "id": "race_2120",
+    "statement": {
+      "ru": "Женщины впервые выступили на Олимпиаде только после Второй мировой войны.",
+      "en": "Women first competed at the Olympics only after World War II."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/1900_Summer_Olympics"
+  },
+  {
+    "id": "race_2121",
+    "statement": {
+      "ru": "Настоящее имя Пеле — Эдсон, в честь изобретателя Эдисона.",
+      "en": "Pelé's real name is Edson, after the inventor Edison."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pel%C3%A9"
+  },
+  {
+    "id": "race_2122",
+    "statement": {
+      "ru": "Марадона забил свой гол «рукой Бога» в ворота сборной Германии.",
+      "en": "Maradona scored his 'Hand of God' goal against Germany."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hand_of_God_goal"
+  },
+  {
+    "id": "race_2123",
+    "statement": {
+      "ru": "На Олимпиаде 1900 года спортсмены стреляли по живым голубям.",
+      "en": "At the 1900 Olympics, shooters fired at live pigeons."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/1900_Summer_Olympics"
+  },
+  {
+    "id": "race_2124",
+    "statement": {
+      "ru": "Чемпион мира по футболу сейчас забирает настоящий кубок себе навсегда.",
+      "en": "Today the football world champion keeps the real trophy for good."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup_Trophy"
+  },
+  {
+    "id": "race_2125",
+    "statement": {
+      "ru": "Первым официальным талисманом Олимпиады была такса.",
+      "en": "The first official Olympic mascot was a dachshund."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Olympic_mascots"
+  },
+  {
+    "id": "race_2126",
+    "statement": {
+      "ru": "Мяч для взрослого футбольного матча весит около килограмма.",
+      "en": "A ball for an adult football match weighs about a kilogram."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ball_(association_football)"
+  },
+  {
+    "id": "race_2127",
+    "statement": {
+      "ru": "На первой современной Олимпиаде победителям вручали серебряные медали.",
+      "en": "At the first modern Olympics, winners were given silver medals."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/1896_Summer_Olympics"
+  },
+  {
+    "id": "race_2128",
+    "statement": {
+      "ru": "Олимпийский девиз звучит так: «Главное не победа, а участие».",
+      "en": "The Olympic motto is 'The important thing is not winning but taking part'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Olympic_symbols"
+  },
+  {
+    "id": "race_2129",
+    "statement": {
+      "ru": "В детстве Месси лечили гормоном роста — он рос слишком медленно.",
+      "en": "As a child, Messi was treated with growth hormone because he grew too slowly."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lionel_Messi"
+  },
+  {
+    "id": "race_2130",
+    "statement": {
+      "ru": "Первая современная Олимпиада прошла в Париже — на родине Кубертена.",
+      "en": "The first modern Olympics were held in Paris, Coubertin's home city."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/1896_Summer_Olympics"
+  },
+  {
+    "id": "race_2131",
+    "statement": {
+      "ru": "Аэропорт на острове Мадейра носит имя Криштиану Роналду.",
+      "en": "The airport on the island of Madeira is named after Cristiano Ronaldo."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Madeira_Airport"
+  },
+  {
+    "id": "race_2132",
+    "statement": {
+      "ru": "Самый первый матч сборных в истории футбола закончился 0:0.",
+      "en": "The very first international football match ended 0–0."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/1872_Scotland_v_England_football_match"
+  },
+  {
+    "id": "race_2133",
+    "statement": {
+      "ru": "Олимпиада 1900 года в Париже длилась всего около двух недель.",
+      "en": "The 1900 Paris Olympics lasted only about two weeks."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/1900_Summer_Olympics"
+  },
+  {
+    "id": "race_2134",
+    "statement": {
+      "ru": "Первый кубок чемпионата мира украли в Бразилии, и его так и не нашли.",
+      "en": "The first World Cup trophy was stolen in Brazil and never found."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jules_Rimet_Trophy"
+  },
+  {
+    "id": "race_2135",
+    "statement": {
+      "ru": "Голландский «Аякс» назвали в честь чистящего средства.",
+      "en": "The Dutch club Ajax was named after a cleaning product."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/AFC_Ajax"
+  },
+  {
+    "id": "race_2136",
+    "statement": {
+      "ru": "Раньше ничейный матч на крупном турнире могли решить жребием.",
+      "en": "A drawn match at a major tournament could once be decided by drawing lots."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Penalty_shoot-out_(association_football)"
+  },
+  {
+    "id": "race_2137",
+    "statement": {
+      "ru": "Кубертен подобрал цвета колец и фона так, чтобы из них складывался флаг любой страны.",
+      "en": "Coubertin chose the colours of the rings and background so that every country's flag could be made from them."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Olympic_symbols"
+  },
+  {
+    "id": "race_2138",
+    "statement": {
+      "ru": "Вратарь когда-то мог брать мяч руками на всей своей половине поля.",
+      "en": "A goalkeeper was once allowed to handle the ball anywhere in his own half."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Goalkeeper_(association_football)"
+  },
+  {
+    "id": "race_2139",
+    "statement": {
+      "ru": "Олимпийские кольца были символом ещё древнегреческих Игр.",
+      "en": "The Olympic rings were already a symbol of the ancient Greek Games."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Olympic_symbols"
+  },
+  {
+    "id": "race_2140",
+    "statement": {
+      "ru": "На Олимпиаде было синхронное плавание для одной пловчихи.",
+      "en": "The Olympics once had synchronised swimming for a single swimmer."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Synchronized_swimming_at_the_Summer_Olympics"
+  },
+  {
+    "id": "race_2141",
+    "statement": {
+      "ru": "Вратарю можно взять мяч в руки после паса ногой от своего защитника.",
+      "en": "A goalkeeper may pick up the ball after a teammate passes it back with his foot."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Goalkeeper_(association_football)"
+  },
+  {
+    "id": "race_2142",
+    "statement": {
+      "ru": "Победителя олимпийского марафона 1904 года взбадривали крысиным ядом.",
+      "en": "The winner of the 1904 Olympic marathon was pepped up with rat poison."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Athletics_at_the_1904_Summer_Olympics_%E2%80%93_Men%27s_marathon"
+  },
+  {
+    "id": "race_2143",
+    "statement": {
+      "ru": "Англия выигрывала чемпионат мира по футболу больше одного раза.",
+      "en": "England have won the football World Cup more than once."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup"
+  },
+  {
+    "id": "race_2144",
+    "statement": {
+      "ru": "Брейк-данс был олимпийским видом спорта.",
+      "en": "Breakdancing has been an Olympic sport."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Breaking_at_the_2024_Summer_Olympics"
+  },
+  {
+    "id": "race_2145",
+    "statement": {
+      "ru": "Одной из олимпийских чемпионок по скейтборду было всего 13 лет.",
+      "en": "One Olympic skateboarding champion was just 13."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Momiji_Nishiya"
+  },
+  {
+    "id": "race_2146",
+    "statement": {
+      "ru": "Из аута можно забить гол прямо в ворота соперника.",
+      "en": "You can score directly into the opponents' goal from a throw-in."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Throw-in"
+  },
+  {
+    "id": "race_2147",
+    "statement": {
+      "ru": "Конные соревнования Олимпиады в Мельбурне проводили в Швеции.",
+      "en": "The equestrian events of the Melbourne Olympics were held in Sweden."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Equestrian_events_at_the_1956_Summer_Olympics"
+  },
+  {
+    "id": "race_2148",
+    "statement": {
+      "ru": "Размер футбольного поля в правилах задан точно, до метра.",
+      "en": "The rules of football fix the size of the pitch exactly, to the metre."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Football_pitch"
+  },
+  {
+    "id": "race_2149",
+    "statement": {
+      "ru": "Медали Олимпиады в Токио сделали из металла старых телефонов.",
+      "en": "The Tokyo Olympic medals were made from the metal of old phones."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/2020_Summer_Olympics"
+  },
+  {
+    "id": "race_2150",
+    "statement": {
+      "ru": "Криштиану Роналду начинал карьеру в «Манчестер Юнайтед».",
+      "en": "Cristiano Ronaldo began his career at Manchester United."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+  },
+  {
+    "id": "race_2151",
+    "statement": {
+      "ru": "Погасший олимпийский огонь в Монреале однажды зажгли от зажигалки.",
+      "en": "In Montreal the Olympic flame went out and was relit with a cigarette lighter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/1976_Summer_Olympics"
+  },
+  {
+    "id": "race_2152",
+    "statement": {
+      "ru": "Чемпионат мира по футболу 2022 года прошёл, как обычно, летом.",
+      "en": "The 2022 football World Cup was held in summer, as usual."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup"
+  },
+  {
+    "id": "race_2153",
+    "statement": {
+      "ru": "Один бразильский вратарь забил за карьеру больше ста голов.",
+      "en": "A Brazilian goalkeeper scored over a hundred goals in his career."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rog%C3%A9rio_Ceni"
+  },
+  {
+    "id": "race_2154",
+    "statement": {
+      "ru": "Пловец на Олимпиаде в Сиднее проплыл стометровку почти за две минуты.",
+      "en": "A swimmer at the Sydney Olympics took almost two minutes for 100 metres."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Eric_Moussambani"
+  },
+  {
+    "id": "race_2155",
+    "statement": {
+      "ru": "Олимпиада «Токио-2020», как и сказано в названии, прошла в 2020 году.",
+      "en": "The Tokyo 2020 Olympics took place, as the name says, in 2020."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/2020_Summer_Olympics"
+  },
+  {
+    "id": "race_2156",
+    "statement": {
+      "ru": "Лондонский «Арсенал» основали рабочие оружейного завода.",
+      "en": "London's Arsenal was founded by workers at an arms factory."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Arsenal_F.C."
+  },
+  {
+    "id": "race_2157",
+    "statement": {
+      "ru": "Парад спортсменов на открытии Олимпиады в Париже прошёл на стадионе.",
+      "en": "At the Paris Olympics opening, the athletes' parade was held in a stadium."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/2024_Summer_Olympics_opening_ceremony"
+  },
+  {
+    "id": "race_2158",
+    "statement": {
+      "ru": "Гол прямо с углового в Латинской Америке называют «олимпийским».",
+      "en": "In Latin America a goal straight from a corner is called an 'Olympic goal'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Olympic_goal"
+  },
+  {
+    "id": "race_2159",
+    "statement": {
+      "ru": "Афины принимали летнюю Олимпиаду только один раз.",
+      "en": "Athens has hosted the Summer Olympics only once."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/2004_Summer_Olympics"
+  },
+  {
+    "id": "race_2160",
+    "statement": {
+      "ru": "Первым талисманом чемпионата мира по футболу был лев.",
+      "en": "The first World Cup mascot was a lion."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_official_mascots"
+  },
+  {
+    "id": "race_2161",
+    "statement": {
+      "ru": "Талисманы Олимпиады в Париже-2024 — это петухи.",
+      "en": "The Paris 2024 Olympic mascots are roosters."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Olympic_mascots"
+  },
+  {
+    "id": "race_2162",
+    "statement": {
+      "ru": "Баскетбол придумал уроженец Канады.",
+      "en": "Basketball was invented by a man born in Canada."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/James_Naismith"
+  },
+  {
+    "id": "race_2163",
+    "statement": {
+      "ru": "Теннисный счёт в гейме идёт так: 15, 30, 45.",
+      "en": "Tennis scoring in a game goes 15, 30, 45."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tennis_scoring_system"
+  },
+  {
+    "id": "race_2164",
+    "statement": {
+      "ru": "Пит-стоп в «Формуле-1» может длиться меньше двух секунд.",
+      "en": "A Formula One pit stop can take less than two seconds."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pit_stop"
+  },
+  {
+    "id": "race_2165",
+    "statement": {
+      "ru": "В профессиональном сумо борцов делят на весовые категории.",
+      "en": "Professional sumo wrestlers are split into weight classes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sumo"
+  },
+  {
+    "id": "race_2166",
+    "statement": {
+      "ru": "Скейтборд придумали сёрферы, чтобы кататься, когда на море нет волн.",
+      "en": "The skateboard was invented by surfers to ride when there were no waves."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Skateboarding"
+  },
+  {
+    "id": "race_2167",
+    "statement": {
+      "ru": "Сёрфинг придумали в Австралии.",
+      "en": "Surfing was invented in Australia."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Surfing"
+  },
+  {
+    "id": "race_2168",
+    "statement": {
+      "ru": "Перед схваткой борцы сумо бросают на помост соль.",
+      "en": "Before a bout, sumo wrestlers throw salt into the ring."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Glossary_of_sumo_terms"
+  },
+  {
+    "id": "race_2169",
+    "statement": {
+      "ru": "Хоккейный матч делится на два тайма.",
+      "en": "An ice hockey game is split into two halves."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ice_hockey"
+  },
+  {
+    "id": "race_2170",
+    "statement": {
+      "ru": "Каждый игрок команды-победителя может провести день с Кубком Стэнли.",
+      "en": "Every player on the winning team gets to spend a day with the Stanley Cup."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Stanley_Cup"
+  },
+  {
+    "id": "race_2171",
+    "statement": {
+      "ru": "В гольфе «альбатрос» — результат лучше, чем «орёл».",
+      "en": "In golf an 'albatross' is a better score than an 'eagle'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Glossary_of_golf"
+  },
+  {
+    "id": "race_2172",
+    "statement": {
+      "ru": "Тайгер — настоящее имя гольфиста Тайгера Вудса.",
+      "en": "Tiger is golfer Tiger Woods's real first name."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tiger_Woods"
+  },
+  {
+    "id": "race_2173",
+    "statement": {
+      "ru": "Мяч для гольфа внутри полый.",
+      "en": "A golf ball is hollow inside."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Golf_ball"
+  },
+  {
+    "id": "race_2174",
+    "statement": {
+      "ru": "В настольный теннис сначала играли книгами вместо ракеток.",
+      "en": "Table tennis was first played with books instead of bats."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Table_tennis"
+  },
+  {
+    "id": "race_2175",
+    "statement": {
+      "ru": "Пинг-понг — это китайское название настольного тенниса.",
+      "en": "Ping-pong is the Chinese name for table tennis."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Table_tennis"
+  },
+  {
+    "id": "race_2176",
+    "statement": {
+      "ru": "На Уимблдоне игроки обязаны выходить почти во всём белом.",
+      "en": "At Wimbledon players must wear almost entirely white."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Championships,_Wimbledon"
+  },
+  {
+    "id": "race_2177",
+    "statement": {
+      "ru": "Рафаэль Надаль выиграл «Ролан Гаррос» больше десяти раз.",
+      "en": "Rafael Nadal won the French Open more than ten times."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rafael_Nadal"
+  },
+  {
+    "id": "race_2178",
+    "statement": {
+      "ru": "Красный грунт кортов «Ролан Гаррос» — это толчёный кирпич.",
+      "en": "The red clay of the Roland Garros courts is crushed brick."
+    },
+    "answer": true,
+    "source": "https://www.rolandgarros.com/en-us/page/roland-garros-tournament-clay-the-hallowed-red-dirt"
+  },
+  {
+    "id": "race_2179",
+    "statement": {
+      "ru": "В большом теннисе запрещено подавать снизу.",
+      "en": "In tennis it is against the rules to serve underarm."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Serve_(tennis)"
+  },
+  {
+    "id": "race_2180",
+    "statement": {
+      "ru": "В главной бейсбольной лиге США отбивают алюминиевыми битами.",
+      "en": "In Major League Baseball, batters use aluminium bats."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Baseball_bat"
+  },
+  {
+    "id": "race_2181",
+    "statement": {
+      "ru": "Волан в бадминтоне может лететь быстрее 400 км/ч.",
+      "en": "A badminton shuttlecock can fly faster than 400 km/h."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shuttlecock"
+  },
+  {
+    "id": "race_2182",
+    "statement": {
+      "ru": "В регби разрешено бросать мяч партнёру вперёд.",
+      "en": "In rugby you are allowed to throw the ball forward to a teammate."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Forward_pass"
+  },
+  {
+    "id": "race_2183",
+    "statement": {
+      "ru": "Майкл Джордан на время ушёл из баскетбола в профессиональный бейсбол.",
+      "en": "Michael Jordan once left basketball for a while to play professional baseball."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Michael_Jordan"
+  },
+  {
+    "id": "race_2184",
+    "statement": {
+      "ru": "Баскетбольное кольцо висит выше трёх метров.",
+      "en": "A basketball hoop hangs higher than three metres."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Basketball_court"
+  },
+  {
+    "id": "race_2185",
+    "statement": {
+      "ru": "В дартсе больше всего очков за один бросок даёт попадание в яблочко.",
+      "en": "In darts, the bullseye scores the most points for a single dart."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Darts"
+  },
+  {
+    "id": "race_2186",
+    "statement": {
+      "ru": "Первую игру в баскетбол сыграли футбольным мячом.",
+      "en": "The first basketball game was played with a football."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/James_Naismith"
+  },
+  {
+    "id": "race_2187",
+    "statement": {
+      "ru": "В боулинге страйк — это когда все кегли сбиты вторым броском.",
+      "en": "In bowling, a strike is knocking down all the pins with your second ball."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Strike_(bowling)"
+  },
+  {
+    "id": "race_2188",
+    "statement": {
+      "ru": "Внутри первых мячей для регби был свиной пузырь.",
+      "en": "The first rugby balls had a pig's bladder inside."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rugby_ball"
+  },
+  {
+    "id": "race_2189",
+    "statement": {
+      "ru": "Мышцы болят на следующий день после тренировки из-за молочной кислоты.",
+      "en": "Muscles ache the day after exercise because of lactic acid."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Delayed_onset_muscle_soreness"
+  },
+  {
+    "id": "race_2190",
+    "statement": {
+      "ru": "За «Тур де Франс» гонщики проезжают больше 10 000 км.",
+      "en": "Tour de France riders cover more than 10,000 km in the race."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tour_de_France"
+  },
+  {
+    "id": "race_2191",
+    "statement": {
+      "ru": "Матч по крикету может длиться пять дней.",
+      "en": "A cricket match can last five days."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Test_cricket"
+  },
+  {
+    "id": "race_2192",
+    "statement": {
+      "ru": "При рождении Мухаммеда Али звали Кассиус Клей.",
+      "en": "Muhammad Ali was born Cassius Clay."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Muhammad_Ali"
+  },
+  {
+    "id": "race_2193",
+    "statement": {
+      "ru": "В «Формуле-1» болиды дозаправляют топливом прямо во время гонки.",
+      "en": "In Formula One, cars are refuelled during the race."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pit_stop"
+  },
+  {
+    "id": "race_2194",
+    "statement": {
+      "ru": "Первую официальную участницу Бостонского марафона пытались стащить с трассы.",
+      "en": "The first official female entrant of the Boston Marathon was nearly dragged off the course by an organiser."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kathrine_Switzer"
+  },
+  {
+    "id": "race_2195",
+    "statement": {
+      "ru": "Дзюдо придумали в Китае.",
+      "en": "Judo was invented in China."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Judo"
+  },
+  {
+    "id": "race_2196",
+    "statement": {
+      "ru": "Слово «кэдди» в гольфе пошло от французского «кадет».",
+      "en": "The golf word 'caddie' comes from the French 'cadet'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Glossary_of_golf"
+  },
+  {
+    "id": "race_2197",
+    "statement": {
+      "ru": "В кёрлинге лёд натирают щётками, чтобы затормозить камень.",
+      "en": "In curling, players sweep the ice to slow the stone down."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Curling"
+  },
+  {
+    "id": "race_2198",
+    "statement": {
+      "ru": "Сёрфер прокатился на волне выше 20 метров.",
+      "en": "A surfer has ridden a wave over 20 metres high."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Surfing"
+  },
+  {
+    "id": "race_2199",
+    "statement": {
+      "ru": "В заплыве вольным стилем можно плыть хоть брассом.",
+      "en": "In a freestyle race you could swim breaststroke if you liked."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Front_crawl"
+  },
+  {
+    "id": "race_2200",
+    "statement": {
+      "ru": "Первого в мире нарушителя скорости оштрафовали за езду 13 км/ч.",
+      "en": "The world's first speeder was fined for driving at 13 km/h."
+    },
+    "answer": true,
+    "source": "https://guinnessworldrecords.com/world-records/414379-first-person-charged-with-a-speeding-offence"
+  },
+  {
+    "id": "race_2201",
+    "statement": {
+      "ru": "По левой стороне дороги ездит меньше десятой части людей на Земле.",
+      "en": "Less than a tenth of the world's people drive on the left."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+  },
+  {
+    "id": "race_2202",
+    "statement": {
+      "ru": "Около 1900 года в США электромобилей было больше, чем бензиновых машин.",
+      "en": "Around 1900 there were more electric cars in the USA than petrol ones."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/History_of_the_electric_vehicle"
+  },
+  {
+    "id": "race_2203",
+    "statement": {
+      "ru": "Звонок по мобильному на заправке может поджечь пары бензина.",
+      "en": "A mobile phone call at a petrol station can ignite the petrol fumes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/MythBusters_(2003_season)"
+  },
+  {
+    "id": "race_2204",
+    "statement": {
+      "ru": "Автомобильный номер в Дубае продали дороже, чем за 10 миллионов долларов.",
+      "en": "A car number plate in Dubai sold for more than 10 million dollars."
+    },
+    "answer": true,
+    "source": "https://www.thedrive.com/news/worlds-most-expensive-license-plate-brings-15m-at-dubai-auction"
+  },
+  {
+    "id": "race_2205",
+    "statement": {
+      "ru": "Самая продаваемая модель машины в истории — «Форд Т».",
+      "en": "The best-selling car model in history is the Ford Model T."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_best-selling_automobiles"
+  },
+  {
+    "id": "race_2206",
+    "statement": {
+      "ru": "Первые в мире городские маршруты общественного транспорта придумал Блез Паскаль.",
+      "en": "The world's first public transport on city routes was thought up by Blaise Pascal."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols"
+  },
+  {
+    "id": "race_2207",
+    "statement": {
+      "ru": "Первые автобаны в Германии начали строить при Гитлере.",
+      "en": "Germany's first autobahns were built under Hitler."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Autobahns_of_Germany"
+  },
+  {
+    "id": "race_2208",
+    "statement": {
+      "ru": "Первый серийный электромобиль в истории выпустила Tesla.",
+      "en": "The first mass-produced electric car in history was made by Tesla."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/History_of_the_electric_vehicle"
+  },
+  {
+    "id": "race_2209",
+    "statement": {
+      "ru": "Лондонские такси по закону обязаны быть чёрными.",
+      "en": "By law, London taxis have to be black."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hackney_carriage"
+  },
+  {
+    "id": "race_2210",
+    "statement": {
+      "ru": "Первый автомобиль Карла Бенца был трёхколёсным.",
+      "en": "Karl Benz's first car had three wheels."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen"
+  },
+  {
+    "id": "race_2211",
+    "statement": {
+      "ru": "Ремень безопасности изобрели для автомобилей.",
+      "en": "The seat belt was invented for cars."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Seat_belt"
+  },
+  {
+    "id": "race_2212",
+    "statement": {
+      "ru": "Дорожные катафоты придумали, увидев в свете фар глаза кошки.",
+      "en": "Road reflectors were thought up after seeing a cat's eyes in the headlights."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cat%27s_eye_(road)"
+  },
+  {
+    "id": "race_2213",
+    "statement": {
+      "ru": "Первые автомобильные номера появились в США.",
+      "en": "The first car number plates appeared in the USA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Vehicle_registration_plate"
+  },
+  {
+    "id": "race_2214",
+    "statement": {
+      "ru": "Круиз-контроль изобрёл слепой инженер.",
+      "en": "Cruise control was invented by a blind engineer."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ralph_Teetor"
+  },
+  {
+    "id": "race_2215",
+    "statement": {
+      "ru": "Подушка безопасности надувается примерно за секунду.",
+      "en": "An airbag inflates in about one second."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Airbag"
+  },
+  {
+    "id": "race_2216",
+    "statement": {
+      "ru": "Камеру для ловли нарушителей скорости придумал автогонщик.",
+      "en": "The speed camera was invented by a racing driver."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Maurice_Gatsonides"
+  },
+  {
+    "id": "race_2217",
+    "statement": {
+      "ru": "В Японии ездят по правой стороне дороги.",
+      "en": "In Japan people drive on the right."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+  },
+  {
+    "id": "race_2218",
+    "statement": {
+      "ru": "В Японии зелёный сигнал светофора называют синим.",
+      "en": "In Japan the green traffic light is called blue."
+    },
+    "answer": true,
+    "source": "https://www.mentalfloss.com/article/515205/why-does-japan-have-blue-traffic-lights-instead-green"
+  },
+  {
+    "id": "race_2219",
+    "statement": {
+      "ru": "Первая поездка на машине через всю Америку заняла меньше недели.",
+      "en": "The first car trip across America took less than a week."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Horatio_Nelson_Jackson"
+  },
+  {
+    "id": "race_2220",
+    "statement": {
+      "ru": "Один американец проехал на своей «Вольво» больше 5 миллионов километров.",
+      "en": "An American drove his Volvo more than 5 million kilometres."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Irv_Gordon"
+  },
+  {
+    "id": "race_2221",
+    "statement": {
+      "ru": "На немецких автобанах нигде нет ограничения скорости.",
+      "en": "There is no speed limit anywhere on German autobahns."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Autobahns_of_Germany"
+  },
+  {
+    "id": "race_2222",
+    "statement": {
+      "ru": "В столице Бутана нет ни одного светофора.",
+      "en": "The capital of Bhutan has no traffic lights at all."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Thimphu"
+  },
+  {
+    "id": "race_2223",
+    "statement": {
+      "ru": "Электромобиль обычно легче такой же бензиновой машины.",
+      "en": "An electric car is usually lighter than a similar petrol car."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Electric_car"
+  },
+  {
+    "id": "race_2224",
+    "statement": {
+      "ru": "Кузовные панели восточногерманского «Трабанта» делали из пластмассы.",
+      "en": "The body panels of the East German Trabant were made of plastic."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Trabant"
+  },
+  {
+    "id": "race_2225",
+    "statement": {
+      "ru": "Бензин делают из нефти, которая получилась из динозавров.",
+      "en": "Petrol is made from oil that formed from dinosaurs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Petroleum"
+  },
+  {
+    "id": "race_2226",
+    "statement": {
+      "ru": "Обшивка кузова DeLorean из «Назад в будущее» — из нержавеющей стали.",
+      "en": "The DeLorean from Back to the Future has stainless steel body panels."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/DeLorean_DMC-12"
+  },
+  {
+    "id": "race_2227",
+    "statement": {
+      "ru": "В США каждую пятую милю хайвеев строили прямой, чтобы там садились самолёты.",
+      "en": "In the USA, one mile in five of the highways was built straight so planes could land."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Interstate_Highway_System"
+  },
+  {
+    "id": "race_2228",
+    "statement": {
+      "ru": "Слово AMBULANCE на капоте пишут задом наперёд ради зеркал.",
+      "en": "The word AMBULANCE is written backwards on the bonnet for the sake of mirrors."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ambulance"
+  },
+  {
+    "id": "race_2229",
+    "statement": {
+      "ru": "Соль на дороге растапливает лёд при любом морозе.",
+      "en": "Road salt melts ice in any frost."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Road_salt"
+  },
+  {
+    "id": "race_2230",
+    "statement": {
+      "ru": "В одном штате США взрослым водителям ремень безопасности — по желанию.",
+      "en": "In one US state, wearing a seat belt is optional for adult drivers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Seat_belt_laws_in_the_United_States"
+  },
+  {
+    "id": "race_2231",
+    "statement": {
+      "ru": "Многие модели Lamborghini названы в честь скаковых лошадей.",
+      "en": "Many Lamborghini models are named after racehorses."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lamborghini"
+  },
+  {
+    "id": "race_2232",
+    "statement": {
+      "ru": "Классический «Жук» Volkswagen выпускали ещё в XXI веке.",
+      "en": "The classic Volkswagen Beetle was still being made in the 21st century."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Volkswagen_Beetle"
+  },
+  {
+    "id": "race_2233",
+    "statement": {
+      "ru": "Самые первые машины заводили поворотом ключа.",
+      "en": "The very first cars were started by turning a key."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Starter_(engine)"
+  },
+  {
+    "id": "race_2234",
+    "statement": {
+      "ru": "Один из первых дизельных моторов работал на арахисовом масле.",
+      "en": "One of the first diesel engines ran on peanut oil."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rudolf_Diesel"
+  },
+  {
+    "id": "race_2235",
+    "statement": {
+      "ru": "Светофор изобрёл Томас Эдисон.",
+      "en": "The traffic light was invented by Thomas Edison."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Traffic_light"
+  },
+  {
+    "id": "race_2236",
+    "statement": {
+      "ru": "В одном городе США на светофоре зелёный горит над красным.",
+      "en": "In one US town, a traffic light has green above red."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tipperary_Hill"
+  },
+  {
+    "id": "race_2237",
+    "statement": {
+      "ru": "Hummer сначала был машиной для звёзд, а уже потом — для армии.",
+      "en": "The Hummer was a car for celebrities first and only later for the army."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hummer"
+  },
+  {
+    "id": "race_2238",
+    "statement": {
+      "ru": "В первой поездке на машине через всю Америку был пёс в очках.",
+      "en": "On the first car trip across America there was a dog in goggles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Horatio_Nelson_Jackson"
+  },
+  {
+    "id": "race_2239",
+    "statement": {
+      "ru": "Обычная машина стоит на парковке меньше половины времени.",
+      "en": "An ordinary car spends less than half its time parked."
+    },
+    "answer": false,
+    "source": "https://usa.streetsblog.org/2016/03/10/its-true-the-typical-car-is-parked-95-percent-of-the-time"
+  },
+  {
+    "id": "race_2240",
+    "statement": {
+      "ru": "Лицензия на жёлтое такси в Нью-Йорке стоила больше миллиона долларов.",
+      "en": "A licence for a New York yellow cab once cost more than a million dollars."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Taxicabs_of_New_York_City"
+  },
+  {
+    "id": "race_2241",
+    "statement": {
+      "ru": "Человечек на светофорах Восточной Германии носит шляпу.",
+      "en": "The little man on East German traffic lights wears a hat."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ampelm%C3%A4nnchen"
+  },
+  {
+    "id": "race_2242",
+    "statement": {
+      "ru": "Метро Нью-Йорка на ночь закрывается.",
+      "en": "The New York subway closes for the night."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/New_York_City_Subway"
+  },
+  {
+    "id": "race_2243",
+    "statement": {
+      "ru": "В Токио есть работники, которые заталкивают пассажиров в переполненные вагоны.",
+      "en": "Tokyo has staff whose job is to push passengers into packed train cars."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Oshiya"
+  },
+  {
+    "id": "race_2244",
+    "statement": {
+      "ru": "На высоте сильный пассажир может открыть дверь самолёта.",
+      "en": "At cruising altitude a strong passenger can open the plane's door."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Plug_door"
+  },
+  {
+    "id": "race_2245",
+    "statement": {
+      "ru": "В Таиланде поезд идёт прямо через рынок, и торговцы убирают навесы с путей.",
+      "en": "In Thailand a train runs right through a market, and traders pull their awnings off the tracks."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Maeklong_Railway_Market"
+  },
+  {
+    "id": "race_2246",
+    "statement": {
+      "ru": "Сигнал бедствия «Мэйдэй» пошёл от английского названия месяца мая.",
+      "en": "The distress call 'Mayday' comes from the English name of the month of May."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mayday"
+  },
+  {
+    "id": "race_2247",
+    "statement": {
+      "ru": "В Германии слонёнок выпрыгнул из подвесного поезда в реку — и выжил.",
+      "en": "In Germany a baby elephant jumped from a suspended train into a river and survived."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tuffi"
+  },
+  {
+    "id": "race_2248",
+    "statement": {
+      "ru": "Схема лондонского метро нарисована точно в масштабе города.",
+      "en": "The London Tube map is drawn exactly to the city's scale."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/London_Underground"
+  },
+  {
+    "id": "race_2249",
+    "statement": {
+      "ru": "В туалетах самолётов до сих пор ставят пепельницы, хотя курить там нельзя.",
+      "en": "Plane toilets still have ashtrays, even though smoking is banned there."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Aircraft_lavatory"
+  },
+  {
+    "id": "race_2250",
+    "statement": {
+      "ru": "Шины авиалайнеров накачивают гелием, чтобы самолёт был легче.",
+      "en": "Airliner tyres are filled with helium to make the plane lighter."
+    },
+    "answer": false,
+    "source": "https://www.physlink.com/education/askexperts/ae192.cfm"
+  },
+  {
+    "id": "race_2251",
+    "statement": {
+      "ru": "В обычный авиалайнер молния попадает в среднем раз в год.",
+      "en": "An airliner is struck by lightning about once a year on average."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lightning_strike"
+  },
+  {
+    "id": "race_2252",
+    "statement": {
+      "ru": "Братья Райт до самолётов делали велосипеды.",
+      "en": "Before aeroplanes, the Wright brothers made bicycles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wright_brothers"
+  },
+  {
+    "id": "race_2253",
+    "statement": {
+      "ru": "Самолёт, у которого отказали все двигатели, сразу падает камнем.",
+      "en": "A plane whose engines have all failed drops like a stone."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gimli_Glider"
+  },
+  {
+    "id": "race_2254",
+    "statement": {
+      "ru": "«Конкорд» прилетал в Нью-Йорк по местному времени раньше, чем вылетал из Лондона.",
+      "en": "By local time, Concorde landed in New York earlier than it took off from London."
+    },
+    "answer": true,
+    "source": "https://thepointsguy.com/news/what-routes-did-concorde-fly/"
+  },
+  {
+    "id": "race_2255",
+    "statement": {
+      "ru": "«Восточный экспресс» ходил из Парижа в Пекин.",
+      "en": "The Orient Express ran from Paris to Beijing."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Orient_Express"
+  },
+  {
+    "id": "race_2256",
+    "statement": {
+      "ru": "В Гибралтаре взлётную полосу много лет пересекала обычная улица.",
+      "en": "In Gibraltar an ordinary street crossed the airport runway for many years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gibraltar_International_Airport"
+  },
+  {
+    "id": "race_2257",
+    "statement": {
+      "ru": "Атомная подводная лодка везёт с собой весь кислород для похода в баллонах.",
+      "en": "A nuclear submarine carries all the oxygen for its patrol in tanks."
+    },
+    "answer": false,
+    "source": "https://www.scienceabc.com/eyeopeners/how-do-people-get-oxygen-and-drinking-water-inside-a-submarine"
+  },
+  {
+    "id": "race_2258",
+    "statement": {
+      "ru": "Самый короткий регулярный авиарейс длится меньше двух минут.",
+      "en": "The shortest scheduled flight lasts under two minutes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Westray_to_Papa_Westray_flight"
+  },
+  {
+    "id": "race_2259",
+    "statement": {
+      "ru": "Пешком человек тратит меньше сил на километр, чем на велосипеде.",
+      "en": "Walking uses less energy per kilometre than cycling."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bicycle_performance"
+  },
+  {
+    "id": "race_2260",
+    "statement": {
+      "ru": "Первыми стюардессами брали только медсестёр.",
+      "en": "The first air stewardesses had to be nurses."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ellen_Church"
+  },
+  {
+    "id": "race_2261",
+    "statement": {
+      "ru": "Воздушный шар с корзиной поворачивают рулём, как лодку.",
+      "en": "A hot-air balloon is turned with a rudder, like a boat."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hot_air_balloon"
+  },
+  {
+    "id": "race_2262",
+    "statement": {
+      "ru": "Одна стюардесса пережила гибель и «Титаника», и его брата «Британика».",
+      "en": "One stewardess survived the sinking of both the Titanic and her sister ship Britannic."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Violet_Jessop"
+  },
+  {
+    "id": "race_2263",
+    "statement": {
+      "ru": "Первой потопить военный корабль подлодке удалось ещё в Гражданскую войну в США.",
+      "en": "A submarine first sank a warship as early as the American Civil War."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/H._L._Hunley_(submarine)"
+  },
+  {
+    "id": "race_2264",
+    "statement": {
+      "ru": "Японское слово «синкансэн» означает «поезд-пуля».",
+      "en": "The Japanese word 'shinkansen' means 'bullet train'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Shinkansen"
+  },
+  {
+    "id": "race_2265",
+    "statement": {
+      "ru": "В Нидерландах велосипедов больше, чем жителей.",
+      "en": "The Netherlands has more bicycles than people."
+    },
+    "answer": true,
+    "source": "https://english.rvo.nl/sites/default/files/2024-07/Cycling%20Guide%202024.pdf"
+  },
+  {
+    "id": "race_2266",
+    "statement": {
+      "ru": "Автопилот в самолётах появился только в эпоху компьютеров.",
+      "en": "The autopilot appeared in aircraft only in the computer age."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Autopilot"
+  },
+  {
+    "id": "race_2267",
+    "statement": {
+      "ru": "Колёса поезда чуть конусные — так они сами держатся середины колеи.",
+      "en": "Train wheels are slightly cone-shaped, so they keep themselves centred on the track."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hunting_oscillation"
+  },
+  {
+    "id": "race_2268",
+    "statement": {
+      "ru": "«Чёрные ящики» ставят в нос самолёта — там они целее.",
+      "en": "Black boxes are fitted in the plane's nose, where they're safest."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Flight_recorder"
+  },
+  {
+    "id": "race_2269",
+    "statement": {
+      "ru": "Первый водородный шар, приземлившись, крестьяне в испуге растерзали вилами.",
+      "en": "When the first hydrogen balloon landed, frightened villagers tore it apart with pitchforks."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jacques_Charles"
+  },
+  {
+    "id": "race_2270",
+    "statement": {
+      "ru": "Велосипед изобрели раньше паровоза.",
+      "en": "The bicycle was invented before the steam locomotive."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dandy_horse"
+  },
+  {
+    "id": "race_2271",
+    "statement": {
+      "ru": "Венецианскую гондолу нарочно строят кривой: один борт длиннее другого.",
+      "en": "A Venetian gondola is built lopsided on purpose: one side is longer than the other."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gondola"
+  },
+  {
+    "id": "race_2272",
+    "statement": {
+      "ru": "Самолёт, севший на реку Гудзон, спас лишь половину пассажиров.",
+      "en": "When a plane landed on the Hudson River, only half the people on board survived."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/US_Airways_Flight_1549"
+  },
+  {
+    "id": "race_2273",
+    "statement": {
+      "ru": "Дирижабли когда-то возили пассажиров через Атлантику по расписанию.",
+      "en": "Airships once carried passengers across the Atlantic on a timetable."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/LZ_127_Graf_Zeppelin"
+  },
+  {
+    "id": "race_2274",
+    "statement": {
+      "ru": "Дирижабль «Гинденбург» загорелся посреди океана, вдали от людей.",
+      "en": "The Hindenburg airship caught fire in the middle of the ocean, far from anyone."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hindenburg_disaster"
+  },
+  {
+    "id": "race_2275",
+    "statement": {
+      "ru": "Один из первых паровозов в Америке проиграл гонку лошади.",
+      "en": "One of America's first locomotives lost a race to a horse."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tom_Thumb_(locomotive)"
+  },
+  {
+    "id": "race_2276",
+    "statement": {
+      "ru": "Самый первый в мире паровоз назывался «Ракета».",
+      "en": "The world's very first steam locomotive was called the Rocket."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Richard_Trevithick"
+  },
+  {
+    "id": "race_2277",
+    "statement": {
+      "ru": "В иллюминаторе самолёта есть крошечная дырочка — так и задумано.",
+      "en": "A plane window has a tiny hole in it, and it's there on purpose."
+    },
+    "answer": true,
+    "source": "https://www.mentalfloss.com/transportation/planes-airports/why-airplane-windows-have-tiny-holes"
+  },
+  {
+    "id": "race_2278",
+    "statement": {
+      "ru": "Лондонский Хитроу — самый загруженный аэропорт мира.",
+      "en": "London Heathrow is the world's busiest airport."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_busiest_airports_by_passenger_traffic"
+  },
+  {
+    "id": "race_2279",
+    "statement": {
+      "ru": "Больше половины путей лондонского метро проходит над землёй.",
+      "en": "More than half of the London Underground runs above ground."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/London_Underground"
+  },
+  {
+    "id": "race_2280",
+    "statement": {
+      "ru": "Вертолёт поднял человека в воздух раньше, чем полетел самолёт братьев Райт.",
+      "en": "A helicopter lifted a person into the air before the Wright brothers' plane flew."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Paul_Cornu"
+  },
+  {
+    "id": "race_2281",
+    "statement": {
+      "ru": "Огромный самолёт миллиардера Говарда Хьюза был построен из дерева.",
+      "en": "Billionaire Howard Hughes's giant aeroplane was built of wood."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hughes_H-4_Hercules"
+  },
+  {
+    "id": "race_2282",
+    "statement": {
+      "ru": "Японские машинисты на ходу показывают пальцем на сигналы и называют их вслух.",
+      "en": "Japanese train drivers point at signals and call them out loud."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pointing_and_calling"
   }
 ]
