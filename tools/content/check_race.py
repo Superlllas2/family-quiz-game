@@ -2,6 +2,7 @@
 #   python tools/content/check_race.py                 every area file in tools/content/race plus content/race.json
 #   python tools/content/check_race.py --merge         the same, then gives every new statement an id after the last one
 #                                                      and appends it to content/race.json (only when there are no errors)
+#   python tools/content/check_race.py --merge sea_a sea_b  merges only those area files (the others may still be unchecked)
 # An area file is a list of {"statement": {"ru", "en"}, "answer": bool, "source": "https://...", "why": "..."}; "why"
 # (one line for the checker) stays in the area file and never goes to race.json. A merged statement gets its "id" written
 # back into the area file, so a second merge skips it and an id never moves.
@@ -42,6 +43,7 @@ def load(path):
 
 def main():
     merge = "--merge" in sys.argv
+    only = [a for a in sys.argv[1:] if not a.startswith("--")]
     errs, warns = [], []
     race = load(RACE)
     areas = {os.path.basename(p)[:-5]: load(p) for p in sorted(glob.glob(os.path.join(AREAS, "*.json")))}
@@ -144,6 +146,8 @@ def main():
     if merge and pending:
         last = max(int(r["id"].split("_")[1]) for r in race)
         for area, lst in areas.items():
+            if only and area not in only:
+                continue
             changed = False
             for s in lst:
                 if s.get("id") in merged_ids:
@@ -156,7 +160,7 @@ def main():
                 write(os.path.join(AREAS, area + ".json"), lst)
         with open(RACE, "w", encoding="utf-8") as f:
             f.write(json.dumps(race, ensure_ascii=False, indent=2) + "\n")
-        print("merged: race.json now has %d statements" % len(race))
+        print("merged %s: race.json now has %d statements" % (", ".join(only) or "every area file", len(race)))
 
 
 def write(path, lst):

@@ -3598,5 +3598,4415 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Mars"
+  },
+  {
+    "id": "race_402",
+    "statement": {
+      "ru": "Кофейные зёрна — это косточки ягод кофейного дерева.",
+      "en": "Coffee beans are the seeds of the coffee plant's berries."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Coffee_bean"
+  },
+  {
+    "id": "race_403",
+    "statement": {
+      "ru": "Ройбуш — это сорт чёрного чая.",
+      "en": "Rooibos is a kind of black tea."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rooibos"
+  },
+  {
+    "id": "race_404",
+    "statement": {
+      "ru": "В растениях кофеин работает как яд против насекомых.",
+      "en": "In plants, caffeine works as a poison against insects."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Caffeine"
+  },
+  {
+    "id": "race_405",
+    "statement": {
+      "ru": "Чашка кофе отнимает у тела больше воды, чем даёт.",
+      "en": "A cup of coffee takes more water out of the body than it gives."
+    },
+    "answer": false,
+    "source": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/"
+  },
+  {
+    "id": "race_406",
+    "statement": {
+      "ru": "Название чая «улун» по-китайски значит «чёрный дракон».",
+      "en": "The name of oolong tea means 'black dragon' in Chinese."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Oolong"
+  },
+  {
+    "id": "race_407",
+    "statement": {
+      "ru": "Плоды какао растут прямо на стволе дерева.",
+      "en": "Cacao pods grow right on the tree trunk."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cauliflory"
+  },
+  {
+    "id": "race_408",
+    "statement": {
+      "ru": "Белый чай делают из лепестков белых цветов.",
+      "en": "White tea is made from the petals of white flowers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/White_tea"
+  },
+  {
+    "id": "race_409",
+    "statement": {
+      "ru": "В банке «Ред Булла» вдвое больше кофеина, чем в чашке кофе.",
+      "en": "A can of Red Bull has twice the caffeine of a cup of coffee."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Red_Bull"
+  },
+  {
+    "id": "race_410",
+    "statement": {
+      "ru": "В Париже XVII века лимонад разносили торговцы с баками за спиной.",
+      "en": "In 17th-century Paris, lemonade was sold by vendors with tanks on their backs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lemonade"
+  },
+  {
+    "id": "race_411",
+    "statement": {
+      "ru": "Кофеин полностью уходит из организма примерно за час.",
+      "en": "Caffeine completely leaves the body in about an hour."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Caffeine"
+  },
+  {
+    "id": "race_412",
+    "statement": {
+      "ru": "«Доктор Пеппер» появился раньше кока-колы.",
+      "en": "Dr Pepper appeared before Coca-Cola."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dr_Pepper"
+  },
+  {
+    "id": "race_413",
+    "statement": {
+      "ru": "Кофе попал в Европу из Америки, как картошка и какао.",
+      "en": "Coffee reached Europe from the Americas, like potatoes and cocoa."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/History_of_coffee"
+  },
+  {
+    "id": "race_414",
+    "statement": {
+      "ru": "Больше всех в мире чая на человека пьют англичане.",
+      "en": "The British drink the most tea per person in the world."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_by_tea_consumption_per_capita"
+  },
+  {
+    "id": "race_415",
+    "statement": {
+      "ru": "В кока-коле когда-то был кокаин.",
+      "en": "Coca-Cola once contained cocaine."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Coca-Cola"
+  },
+  {
+    "id": "race_416",
+    "statement": {
+      "ru": "«Ред Булл» сделан по образцу тайского энергетика.",
+      "en": "Red Bull was modelled on a Thai energy drink."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Red_Bull"
+  },
+  {
+    "id": "race_417",
+    "statement": {
+      "ru": "Зуб, оставленный на ночь в газировке, растворится.",
+      "en": "A tooth left overnight in a fizzy drink will dissolve."
+    },
+    "answer": false,
+    "source": "https://www.sciencefocus.com/the-human-body/can-a-tooth-left-in-cola-overnight-dissolve/"
+  },
+  {
+    "id": "race_418",
+    "statement": {
+      "ru": "Таурин из энергетиков впервые нашли в бычьей желчи.",
+      "en": "Taurine, found in energy drinks, was first discovered in ox bile."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Taurine"
+  },
+  {
+    "id": "race_419",
+    "statement": {
+      "ru": "Морская вода утоляет жажду, если пить её маленькими глотками.",
+      "en": "Seawater quenches thirst if you drink it in small sips."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Seawater"
+  },
+  {
+    "id": "race_420",
+    "statement": {
+      "ru": "Апельсиновый сок «не из концентрата» могут хранить в цистернах до года.",
+      "en": "Not-from-concentrate orange juice can be kept in tanks for up to a year."
+    },
+    "answer": true,
+    "source": "https://orangebook.tetrapak.com/chapter/fruit-processing"
+  },
+  {
+    "id": "race_421",
+    "statement": {
+      "ru": "Козье молоко — безлактозное.",
+      "en": "Goat's milk is lactose-free."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lactose_intolerance"
+  },
+  {
+    "id": "race_422",
+    "statement": {
+      "ru": "Грейпфрутовый сок может усилить действие некоторых лекарств.",
+      "en": "Grapefruit juice can boost the effect of some medicines."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Grapefruit%E2%80%93drug_interactions"
+  },
+  {
+    "id": "race_423",
+    "statement": {
+      "ru": "В зёрнах арабики больше кофеина, чем в зёрнах робусты.",
+      "en": "Arabica beans have more caffeine than robusta beans."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Coffee_bean"
+  },
+  {
+    "id": "race_424",
+    "statement": {
+      "ru": "Большинство взрослых на Земле плохо переваривают молочный сахар.",
+      "en": "Most adults on Earth digest milk sugar poorly."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lactose_intolerance"
+  },
+  {
+    "id": "race_425",
+    "statement": {
+      "ru": "Пуэр — японский чай.",
+      "en": "Pu'er is a Japanese tea."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pu%27er_tea"
+  },
+  {
+    "id": "race_426",
+    "statement": {
+      "ru": "Первые «молочные коктейли» в XIX веке делали с виски.",
+      "en": "The first 'milkshakes', in the 19th century, were made with whiskey."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Milkshake"
+  },
+  {
+    "id": "race_427",
+    "statement": {
+      "ru": "«Гаторейд» придумали для астронавтов NASA.",
+      "en": "Gatorade was invented for NASA astronauts."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gatorade"
+  },
+  {
+    "id": "race_428",
+    "statement": {
+      "ru": "Миндальное молоко пили ещё в Средние века.",
+      "en": "People drank almond milk as far back as the Middle Ages."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Almond_milk"
+  },
+  {
+    "id": "race_429",
+    "statement": {
+      "ru": "Кофе без кофеина обычно делают из сорта, где кофеина нет от природы.",
+      "en": "Decaf coffee is usually made from a variety that has no caffeine by nature."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Decaffeination"
+  },
+  {
+    "id": "race_430",
+    "statement": {
+      "ru": "Солдаты Первой мировой пили растворимый кофе.",
+      "en": "Soldiers in the First World War drank instant coffee."
+    },
+    "answer": true,
+    "source": "https://www.kcur.org/2017-04-07/in-wwi-trenches-instant-coffee-gave-troops-a-much-needed-boost"
+  },
+  {
+    "id": "race_431",
+    "statement": {
+      "ru": "В банке колы всего около двух чайных ложек сахара.",
+      "en": "A can of cola holds only about two teaspoons of sugar."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Coca-Cola"
+  },
+  {
+    "id": "race_432",
+    "statement": {
+      "ru": "Пузырьки в газировке — тот же газ, что мы выдыхаем.",
+      "en": "The bubbles in fizzy drinks are the same gas we breathe out."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Carbonated_water"
+  },
+  {
+    "id": "race_433",
+    "statement": {
+      "ru": "Какао и кокос растут на одном и том же дереве.",
+      "en": "Cocoa and coconuts grow on the same tree."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Coconut"
+  },
+  {
+    "id": "race_434",
+    "statement": {
+      "ru": "Шарики в бабл-ти делают из корня тропического растения.",
+      "en": "The balls in bubble tea are made from the root of a tropical plant."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bubble_tea"
+  },
+  {
+    "id": "race_435",
+    "statement": {
+      "ru": "Мате заваривают из листьев того же куста, что и чёрный чай.",
+      "en": "Mate is brewed from the leaves of the same bush as black tea."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mate_(drink)"
+  },
+  {
+    "id": "race_436",
+    "statement": {
+      "ru": "Бах написал шуточную кантату о любви к кофе.",
+      "en": "Bach wrote a comic cantata about a love of coffee."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Coffee_Cantata"
+  },
+  {
+    "id": "race_437",
+    "statement": {
+      "ru": "В чайных пакетиках обычно лежат целые чайные листья.",
+      "en": "Tea bags usually hold whole tea leaves."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tea_bag"
+  },
+  {
+    "id": "race_438",
+    "statement": {
+      "ru": "Страховой рынок Lloyd's родился в лондонской кофейне.",
+      "en": "The insurance market Lloyd's was born in a London coffee house."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lloyd%27s_of_London"
+  },
+  {
+    "id": "race_439",
+    "statement": {
+      "ru": "В Тибете чай пьют со сливочным маслом и солью.",
+      "en": "In Tibet, tea is drunk with butter and salt."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Butter_tea"
+  },
+  {
+    "id": "race_440",
+    "statement": {
+      "ru": "Эспрессо — это особый сорт кофейных зёрен.",
+      "en": "Espresso is a special variety of coffee bean."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Espresso"
+  },
+  {
+    "id": "race_441",
+    "statement": {
+      "ru": "Чайный куст, если его не стричь, может вырасти выше 10 метров.",
+      "en": "Left unpruned, a tea bush can grow taller than 10 metres."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Camellia_sinensis"
+  },
+  {
+    "id": "race_442",
+    "statement": {
+      "ru": "В опыте учёных какао из оранжевой чашки показалось вкуснее, чем из белой.",
+      "en": "In an experiment, hot chocolate tasted better from an orange cup than a white one."
+    },
+    "answer": true,
+    "source": "https://www.sciencedaily.com/releases/2013/01/130103073238.htm"
+  },
+  {
+    "id": "race_443",
+    "statement": {
+      "ru": "Чтобы сделать винные пробки, пробковый дуб приходится срубить.",
+      "en": "To make wine corks, the cork oak has to be cut down."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Quercus_suber"
+  },
+  {
+    "id": "race_444",
+    "statement": {
+      "ru": "Бутылку шампанского можно открыть ударом сабли.",
+      "en": "A bottle of champagne can be opened with a blow of a sabre."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sabrage"
+  },
+  {
+    "id": "race_445",
+    "statement": {
+      "ru": "Текилу делают из кактуса.",
+      "en": "Tequila is made from a cactus."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tequila"
+  },
+  {
+    "id": "race_446",
+    "statement": {
+      "ru": "Слово «алкоголь» сначала означало порошок для подводки глаз.",
+      "en": "The word 'alcohol' first meant a powder used as eyeliner."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Alcohol_(chemistry)"
+  },
+  {
+    "id": "race_447",
+    "statement": {
+      "ru": "Брют — самое сладкое шампанское.",
+      "en": "Brut is the sweetest kind of champagne."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Champagne"
+  },
+  {
+    "id": "race_448",
+    "statement": {
+      "ru": "Британским морякам выдавали ежедневную порцию рома до 1970 года.",
+      "en": "British sailors were given a daily ration of rum until 1970."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Black_Tot_Day"
+  },
+  {
+    "id": "race_449",
+    "statement": {
+      "ru": "В бутылке настоящей текилы обязательно плавает червяк.",
+      "en": "A bottle of real tequila always has a worm in it."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tequila"
+  },
+  {
+    "id": "race_450",
+    "statement": {
+      "ru": "В бокале пива Guinness пузырьки у стенок опускаются вниз.",
+      "en": "In a glass of Guinness, the bubbles by the sides sink downwards."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Guinness"
+  },
+  {
+    "id": "race_451",
+    "statement": {
+      "ru": "Перри — это сидр, только из вишни.",
+      "en": "Perry is like cider, only made from cherries."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Perry"
+  },
+  {
+    "id": "race_452",
+    "statement": {
+      "ru": "Застольный тост назвали в честь поджаренного хлеба.",
+      "en": "The drinking toast is named after a piece of toasted bread."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Toast_(honor)"
+  },
+  {
+    "id": "race_453",
+    "statement": {
+      "ru": "Японское сакэ по способу изготовления ближе к вину, чем к пиву.",
+      "en": "Japanese sake is made in a way closer to wine than to beer."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sake"
+  },
+  {
+    "id": "race_454",
+    "statement": {
+      "ru": "Джин-тоник придумали британцы в Индии, чтобы пить лекарство от малярии.",
+      "en": "The British in India invented the gin and tonic to take their malaria medicine."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gin_and_tonic"
+  },
+  {
+    "id": "race_455",
+    "statement": {
+      "ru": "Шампанское делают только из белого винограда.",
+      "en": "Champagne is made only from white grapes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Champagne"
+  },
+  {
+    "id": "race_456",
+    "statement": {
+      "ru": "Полный рецепт ликёра «Шартрёз» знают только два монаха.",
+      "en": "Only two monks know the full recipe of Chartreuse liqueur."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chartreuse_(liqueur)"
+  },
+  {
+    "id": "race_457",
+    "statement": {
+      "ru": "Джеймс Бонд просит свой мартини размешать, а не взбалтывать.",
+      "en": "James Bond asks for his martini stirred, not shaken."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Shaken,_not_stirred"
+  },
+  {
+    "id": "race_458",
+    "statement": {
+      "ru": "Ром делают из кокосов.",
+      "en": "Rum is made from coconuts."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rum"
+  },
+  {
+    "id": "race_459",
+    "statement": {
+      "ru": "Грог назван по прозвищу британского адмирала.",
+      "en": "Grog is named after a British admiral's nickname."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Grog"
+  },
+  {
+    "id": "race_460",
+    "statement": {
+      "ru": "Коктейль «Кир» назван в честь мэра французского города.",
+      "en": "The Kir cocktail is named after the mayor of a French city."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kir_(cocktail)"
+  },
+  {
+    "id": "race_461",
+    "statement": {
+      "ru": "Ирландцы пишут whisky, а шотландцы — whiskey.",
+      "en": "The Irish spell it 'whisky', the Scots 'whiskey'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Whisky"
+  },
+  {
+    "id": "race_462",
+    "statement": {
+      "ru": "Вино мадера специально нагревают, как будто оно плывёт в тропиках.",
+      "en": "Madeira wine is deliberately heated, as if it were sailing through the tropics."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Madeira_wine"
+  },
+  {
+    "id": "race_463",
+    "statement": {
+      "ru": "Коктейль «Беллини» назван в честь композитора.",
+      "en": "The Bellini cocktail is named after a composer."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bellini_(cocktail)"
+  },
+  {
+    "id": "race_464",
+    "statement": {
+      "ru": "Итальянское слово «фиаско» сначала означало бутылку в соломенной оплётке.",
+      "en": "The Italian word 'fiasco' first meant a straw-covered bottle."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fiasco_(bottle)"
+  },
+  {
+    "id": "race_465",
+    "statement": {
+      "ru": "Пузырьки в шампанское закачивают из баллона, как в газировку.",
+      "en": "The bubbles are pumped into champagne from a gas cylinder, like soda."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Traditional_method"
+  },
+  {
+    "id": "race_466",
+    "statement": {
+      "ru": "Пиво IPA назвали так, потому что его возили в Индию.",
+      "en": "IPA beer got its name because it was shipped to India."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/India_pale_ale"
+  },
+  {
+    "id": "race_467",
+    "statement": {
+      "ru": "Из перегонного куба виски выходит прозрачным, как вода.",
+      "en": "Whisky comes out of the still as clear as water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Whisky"
+  },
+  {
+    "id": "race_468",
+    "statement": {
+      "ru": "Древние греки считали варварством разбавлять вино водой.",
+      "en": "The ancient Greeks thought it barbaric to dilute wine with water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ancient_Greece_and_wine"
+  },
+  {
+    "id": "race_469",
+    "statement": {
+      "ru": "Шумеры пили пиво через соломинку.",
+      "en": "The Sumerians drank beer through a straw."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Drinking_straw"
+  },
+  {
+    "id": "race_470",
+    "statement": {
+      "ru": "Кальвадос делают из винограда.",
+      "en": "Calvados is made from grapes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Calvados_(brandy)"
+  },
+  {
+    "id": "race_471",
+    "statement": {
+      "ru": "Традицию обливать всех шампанским на пьедестале начал автогонщик.",
+      "en": "The tradition of spraying champagne on the podium was started by a racing driver."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dan_Gurney"
+  },
+  {
+    "id": "race_472",
+    "statement": {
+      "ru": "Мохито придумали в Мексике.",
+      "en": "The mojito was invented in Mexico."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mojito"
+  },
+  {
+    "id": "race_473",
+    "statement": {
+      "ru": "Древние римляне подслащивали вино сиропом, сваренным в свинцовых котлах.",
+      "en": "The ancient Romans sweetened wine with syrup boiled in lead pots."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Defrutum"
+  },
+  {
+    "id": "race_474",
+    "statement": {
+      "ru": "Ледяное вино делают, добавляя в вино лёд.",
+      "en": "Ice wine is made by adding ice to wine."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ice_wine"
+  },
+  {
+    "id": "race_475",
+    "statement": {
+      "ru": "Огромные бутылки шампанского называют «Навуходоносор» и «Мафусаил».",
+      "en": "Huge champagne bottles are called 'Nebuchadnezzar' and 'Methuselah'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wine_bottle"
+  },
+  {
+    "id": "race_476",
+    "statement": {
+      "ru": "Чем дольше виски стоит в закрытой бутылке, тем он становится старше и лучше.",
+      "en": "The longer whisky sits in a sealed bottle, the older and better it gets."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Whisky"
+  },
+  {
+    "id": "race_477",
+    "statement": {
+      "ru": "Японский тост «кампай» буквально значит «осуши бокал».",
+      "en": "The Japanese toast 'kanpai' literally means 'empty the glass'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Toast_(honor)"
+  },
+  {
+    "id": "race_478",
+    "statement": {
+      "ru": "Больше всех вина в мире делает Китай.",
+      "en": "China makes more wine than any other country."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions"
+  },
+  {
+    "id": "race_479",
+    "statement": {
+      "ru": "Некоторые дорогие сладкие вина делают из винограда, покрытого плесенью.",
+      "en": "Some expensive sweet wines are made from grapes covered in mould."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Noble_rot"
+  },
+  {
+    "id": "race_480",
+    "statement": {
+      "ru": "Слово «вермут» происходит от немецкого названия полыни.",
+      "en": "The word 'vermouth' comes from the German name for wormwood."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vermouth"
+  },
+  {
+    "id": "race_481",
+    "statement": {
+      "ru": "По баварскому закону 1516 года пиво варили только из воды, ячменя и хмеля.",
+      "en": "Under a Bavarian law of 1516, beer could be brewed only from water, barley and hops."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Reinheitsgebot"
+  },
+  {
+    "id": "race_482",
+    "statement": {
+      "ru": "В Испании сидр принято наливать в стакан с высоты поднятой руки.",
+      "en": "In Spain cider is traditionally poured into the glass from a raised arm's height."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cider"
+  },
+  {
+    "id": "race_483",
+    "statement": {
+      "ru": "Бочка в одном немецком замке вмещает больше 200 тысяч литров вина.",
+      "en": "A barrel in a German castle holds over 200,000 litres of wine."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Heidelberg_Tun"
+  },
+  {
+    "id": "race_484",
+    "statement": {
+      "ru": "Гром — это звук, с которым сталкиваются облака.",
+      "en": "Thunder is the sound of clouds bumping into each other."
+    },
+    "answer": false,
+    "source": "https://www.weather.gov/safety/lightning-science-thunder"
+  },
+  {
+    "id": "race_485",
+    "statement": {
+      "ru": "Снежинки на самом деле прозрачные — белым снег только кажется.",
+      "en": "Snowflakes are really clear; snow only looks white."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Snow"
+  },
+  {
+    "id": "race_486",
+    "statement": {
+      "ru": "Северный ветер дует на север.",
+      "en": "A north wind blows towards the north."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Wind_direction"
+  },
+  {
+    "id": "race_487",
+    "statement": {
+      "ru": "Бывают градины крупнее грейпфрута.",
+      "en": "Hailstones can be bigger than a grapefruit."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hail"
+  },
+  {
+    "id": "race_488",
+    "statement": {
+      "ru": "Мобильный телефон в руке притягивает молнию.",
+      "en": "A mobile phone in your hand attracts lightning."
+    },
+    "answer": false,
+    "source": "https://www.weather.gov/safety/lightning-myths"
+  },
+  {
+    "id": "race_489",
+    "statement": {
+      "ru": "Облака состоят из водяного пара.",
+      "en": "Clouds are made of water vapour."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cloud"
+  },
+  {
+    "id": "race_490",
+    "statement": {
+      "ru": "Самое жаркое время лета приходится на самый длинный день года.",
+      "en": "The hottest part of summer falls on the longest day of the year."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Seasonal_lag"
+  },
+  {
+    "id": "race_491",
+    "statement": {
+      "ru": "Если гром слышен через 3 секунды после вспышки, гроза примерно в километре.",
+      "en": "If thunder comes 3 seconds after the flash, the storm is about a kilometre away."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Thunder"
+  },
+  {
+    "id": "race_492",
+    "statement": {
+      "ru": "Небо голубое, потому что в нём отражается океан.",
+      "en": "The sky is blue because it reflects the ocean."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rayleigh_scattering"
+  },
+  {
+    "id": "race_493",
+    "statement": {
+      "ru": "В Сахаре иногда идёт снег.",
+      "en": "It sometimes snows in the Sahara."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ain_Sefra"
+  },
+  {
+    "id": "race_494",
+    "statement": {
+      "ru": "Ураганы называют в честь учёных, которые их заметили первыми.",
+      "en": "Hurricanes are named after the scientists who spotted them first."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tropical_cyclone_naming"
+  },
+  {
+    "id": "race_495",
+    "statement": {
+      "ru": "Ураганам когда-то давали только женские имена.",
+      "en": "Hurricanes were once given only women's names."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/History_of_tropical_cyclone_naming"
+  },
+  {
+    "id": "race_496",
+    "statement": {
+      "ru": "Роса — это капли, которые ночью падают с неба.",
+      "en": "Dew is drops that fall from the sky at night."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dew"
+  },
+  {
+    "id": "race_497",
+    "statement": {
+      "ru": "Молния может ударить, даже когда над головой ясное небо.",
+      "en": "Lightning can strike even when the sky overhead is clear."
+    },
+    "answer": true,
+    "source": "https://www.weather.gov/safety/lightning-myths"
+  },
+  {
+    "id": "race_498",
+    "statement": {
+      "ru": "Больше всего торнадо в мире бывает в США.",
+      "en": "The USA has more tornadoes than any other country."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tornado"
+  },
+  {
+    "id": "race_499",
+    "statement": {
+      "ru": "Открытые окна спасают дом от торнадо: давление выравнивается.",
+      "en": "Open windows save a house from a tornado by equalising the pressure."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tornado"
+  },
+  {
+    "id": "race_500",
+    "statement": {
+      "ru": "При −40 градусах Цельсий и Фаренгейт показывают одно и то же.",
+      "en": "At −40 degrees, Celsius and Fahrenheit show the same number."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fahrenheit"
+  },
+  {
+    "id": "race_501",
+    "statement": {
+      "ru": "На Северном полюсе холоднее, чем на Южном.",
+      "en": "The North Pole is colder than the South Pole."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/South_Pole"
+  },
+  {
+    "id": "race_502",
+    "statement": {
+      "ru": "Верхушка грозового облака бывает выше Эвереста.",
+      "en": "The top of a thundercloud can be higher than Everest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cumulonimbus_cloud"
+  },
+  {
+    "id": "race_503",
+    "statement": {
+      "ru": "Бывает розовый снег — его окрашивают водоросли.",
+      "en": "There is pink snow, coloured by algae."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chlamydomonas_nivalis"
+  },
+  {
+    "id": "race_504",
+    "statement": {
+      "ru": "Большинство молний бьёт в землю.",
+      "en": "Most lightning strikes the ground."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lightning"
+  },
+  {
+    "id": "race_505",
+    "statement": {
+      "ru": "В Южном полушарии ураганы закручиваются по часовой стрелке.",
+      "en": "In the Southern Hemisphere, hurricanes spin clockwise."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tropical_cyclone"
+  },
+  {
+    "id": "race_506",
+    "statement": {
+      "ru": "Иногда на небе видно сразу три солнца.",
+      "en": "Sometimes you can see three suns in the sky at once."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sun_dog"
+  },
+  {
+    "id": "race_507",
+    "statement": {
+      "ru": "Капля дождя падает быстрее 100 км/ч.",
+      "en": "A raindrop falls faster than 100 km/h."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Raindrop"
+  },
+  {
+    "id": "race_508",
+    "statement": {
+      "ru": "В Нью-Йорке за год выпадает больше дождя, чем в Лондоне.",
+      "en": "New York gets more rain in a year than London."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Climate_of_New_York_City"
+  },
+  {
+    "id": "race_509",
+    "statement": {
+      "ru": "Бывает гроза с молниями прямо во время снегопада.",
+      "en": "A thunderstorm with lightning can happen during a snowfall."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Thundersnow"
+  },
+  {
+    "id": "race_510",
+    "statement": {
+      "ru": "Бывает дождь, который испаряется, не долетев до земли.",
+      "en": "Some rain evaporates before it reaches the ground."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Virga"
+  },
+  {
+    "id": "race_511",
+    "statement": {
+      "ru": "Температуру воздуха для прогноза меряют на самом солнцепёке.",
+      "en": "Weather stations measure air temperature in full sunshine."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Stevenson_screen"
+  },
+  {
+    "id": "race_512",
+    "statement": {
+      "ru": "В Долине Смерти в США воздух нагревался выше +50 °C.",
+      "en": "In Death Valley, USA, the air has been hotter than 50 °C."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Highest_temperature_recorded_on_Earth"
+  },
+  {
+    "id": "race_513",
+    "statement": {
+      "ru": "В Великобритании торнадо случаются каждый год.",
+      "en": "Britain has tornadoes every year."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tornado"
+  },
+  {
+    "id": "race_514",
+    "statement": {
+      "ru": "Если стрелка барометра быстро падает, жди ясной погоды.",
+      "en": "If the barometer needle drops fast, expect clear weather."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Barometer"
+  },
+  {
+    "id": "race_515",
+    "statement": {
+      "ru": "В облаках вода может оставаться жидкой даже при −30 °C.",
+      "en": "In clouds, water can stay liquid even at −30 °C."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cloud_physics"
+  },
+  {
+    "id": "race_516",
+    "statement": {
+      "ru": "Одна молния может протянуться больше чем на 700 километров.",
+      "en": "A single lightning flash can stretch more than 700 kilometres."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lightning"
+  },
+  {
+    "id": "race_517",
+    "statement": {
+      "ru": "У снежинки-звёздочки восемь лучей.",
+      "en": "A star-shaped snowflake has eight arms."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Snowflake"
+  },
+  {
+    "id": "race_518",
+    "statement": {
+      "ru": "Бывает, что вместе с дождём с неба падают рыбы.",
+      "en": "Sometimes fish fall from the sky along with the rain."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rain_of_animals"
+  },
+  {
+    "id": "race_519",
+    "statement": {
+      "ru": "Бывает белая радуга.",
+      "en": "There is such a thing as a white rainbow."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fogbow"
+  },
+  {
+    "id": "race_520",
+    "statement": {
+      "ru": "Гавайский вулкан Мауна-Кеа выше Эвереста, если мерить от подножия на дне.",
+      "en": "Measured from its base on the sea floor, Hawaii's Mauna Kea is taller than Everest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mauna_Kea"
+  },
+  {
+    "id": "race_521",
+    "statement": {
+      "ru": "Сталактиты растут из пола пещеры вверх.",
+      "en": "Stalactites grow upward from the cave floor."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Stalactite"
+  },
+  {
+    "id": "race_522",
+    "statement": {
+      "ru": "Внутреннее ядро Земли — твёрдый шар, а не жидкость.",
+      "en": "The Earth's inner core is a solid ball, not a liquid."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Earth%27s_inner_core"
+  },
+  {
+    "id": "race_523",
+    "statement": {
+      "ru": "Алмаз выдержит любой удар молотка.",
+      "en": "A diamond will survive any hammer blow."
+    },
+    "answer": false,
+    "source": "https://www.sciencing.com/1891384/myth-diamond-believe-tough"
+  },
+  {
+    "id": "race_524",
+    "statement": {
+      "ru": "Тихий океан в самом широком месте больше чем в пять раз шире Луны.",
+      "en": "At its widest, the Pacific Ocean is more than five times wider than the Moon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pacific_Ocean"
+  },
+  {
+    "id": "race_525",
+    "statement": {
+      "ru": "В Антарктиде есть действующий вулкан.",
+      "en": "Antarctica has an active volcano."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mount_Erebus"
+  },
+  {
+    "id": "race_526",
+    "statement": {
+      "ru": "Большая часть лавы на Земле извергается на суше.",
+      "en": "Most of the Earth's lava erupts on land."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Submarine_volcano"
+  },
+  {
+    "id": "race_527",
+    "statement": {
+      "ru": "Больше двух третей пресной воды Земли заморожено во льдах.",
+      "en": "More than two thirds of the Earth's fresh water is frozen in ice."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fresh_water"
+  },
+  {
+    "id": "race_528",
+    "statement": {
+      "ru": "Изумруд — это зелёный алмаз.",
+      "en": "An emerald is a green diamond."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Beryl"
+  },
+  {
+    "id": "race_529",
+    "statement": {
+      "ru": "В драгоценном опале есть вода.",
+      "en": "A precious opal contains water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Opal"
+  },
+  {
+    "id": "race_530",
+    "statement": {
+      "ru": "Рубин и сапфир — это один и тот же минерал.",
+      "en": "Ruby and sapphire are the same mineral."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Corundum"
+  },
+  {
+    "id": "race_531",
+    "statement": {
+      "ru": "Гималаи давно перестали расти.",
+      "en": "The Himalayas stopped growing long ago."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Himalayas"
+  },
+  {
+    "id": "race_532",
+    "statement": {
+      "ru": "Янтарь можно поджечь, и он будет гореть.",
+      "en": "Amber can be set alight and will burn."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Amber"
+  },
+  {
+    "id": "race_533",
+    "statement": {
+      "ru": "Зыбучий песок может затянуть человека с головой.",
+      "en": "Quicksand can suck a person under, head and all."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Quicksand"
+  },
+  {
+    "id": "race_534",
+    "statement": {
+      "ru": "Самый высокий водопад на Земле находится под водой.",
+      "en": "The tallest waterfall on Earth is under water."
+    },
+    "answer": true,
+    "source": "https://oceanservice.noaa.gov/facts/largest-waterfall.html"
+  },
+  {
+    "id": "race_535",
+    "statement": {
+      "ru": "Сахара — это в основном песчаные дюны.",
+      "en": "The Sahara is mostly sand dunes."
+    },
+    "answer": false,
+    "source": "https://www.iflscience.com/the-sahara-desert-isnt-as-sandy-as-you-think-it-is-78474"
+  },
+  {
+    "id": "race_536",
+    "statement": {
+      "ru": "В Сахаре есть горы выше трёх километров.",
+      "en": "The Sahara has mountains more than three kilometres high."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Emi_Koussi"
+  },
+  {
+    "id": "race_537",
+    "statement": {
+      "ru": "Айсберги состоят из замёрзшей солёной морской воды.",
+      "en": "Icebergs are made of frozen salty seawater."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Iceberg"
+  },
+  {
+    "id": "race_538",
+    "statement": {
+      "ru": "Солнце тоже вызывает приливы на Земле.",
+      "en": "The Sun causes tides on Earth too."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tide"
+  },
+  {
+    "id": "race_539",
+    "statement": {
+      "ru": "Больше всего гейзеров в мире — в Исландии.",
+      "en": "Iceland has the most geysers in the world."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Geyser"
+  },
+  {
+    "id": "race_540",
+    "statement": {
+      "ru": "Исландию медленно разрывают две расходящиеся плиты.",
+      "en": "Iceland is slowly being pulled apart by two plates moving away from each other."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mid-Atlantic_Ridge"
+  },
+  {
+    "id": "race_541",
+    "statement": {
+      "ru": "Землетрясения чаще случаются в жаркую безветренную погоду.",
+      "en": "Earthquakes happen more often in hot, still weather."
+    },
+    "answer": false,
+    "source": "https://www.ktvu.com/news/usgs-earthquake-weather-doesnt-exist"
+  },
+  {
+    "id": "race_542",
+    "statement": {
+      "ru": "Самая длинная горная цепь Земли скрыта под водой.",
+      "en": "The longest mountain range on Earth is hidden under water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mid-ocean_ridge"
+  },
+  {
+    "id": "race_543",
+    "statement": {
+      "ru": "Йеллоустонский вулкан давно потух.",
+      "en": "The Yellowstone volcano went extinct long ago."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Yellowstone_Caldera"
+  },
+  {
+    "id": "race_544",
+    "statement": {
+      "ru": "Бывают пляжи с зелёным песком.",
+      "en": "There are beaches with green sand."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Papak%C5%8Dlea_Beach"
+  },
+  {
+    "id": "race_545",
+    "statement": {
+      "ru": "Гавайские острова выросли из коралловых рифов.",
+      "en": "The Hawaiian Islands grew out of coral reefs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hawaiian_Islands"
+  },
+  {
+    "id": "race_546",
+    "statement": {
+      "ru": "Часть песка на тропических пляжах — это помёт рыб-попугаев.",
+      "en": "Some of the sand on tropical beaches is parrotfish poo."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Parrotfish"
+  },
+  {
+    "id": "race_547",
+    "statement": {
+      "ru": "Алмазы образуются из сжатого угля.",
+      "en": "Diamonds form from compressed coal."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Diamond"
+  },
+  {
+    "id": "race_548",
+    "statement": {
+      "ru": "Подо льдом Антарктиды прячутся сотни озёр с жидкой водой.",
+      "en": "Hundreds of lakes of liquid water hide under the ice of Antarctica."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Subglacial_lake"
+  },
+  {
+    "id": "race_549",
+    "statement": {
+      "ru": "Северный полюс находится на суше.",
+      "en": "The North Pole is on land."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/North_Pole"
+  },
+  {
+    "id": "race_550",
+    "statement": {
+      "ru": "В одной пещере в Мексике есть кристаллы длиннее 10 метров.",
+      "en": "A cave in Mexico has crystals more than 10 metres long."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cave_of_the_Crystals"
+  },
+  {
+    "id": "race_551",
+    "statement": {
+      "ru": "Учёные умеют предсказать сильное землетрясение за несколько дней.",
+      "en": "Scientists can predict a big earthquake a few days ahead."
+    },
+    "answer": false,
+    "source": "https://www.usgs.gov/faqs/can-you-predict-earthquakes"
+  },
+  {
+    "id": "race_552",
+    "statement": {
+      "ru": "Река Конго дважды пересекает экватор.",
+      "en": "The Congo River crosses the equator twice."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Congo_River"
+  },
+  {
+    "id": "race_553",
+    "statement": {
+      "ru": "Фудзияма — потухший вулкан.",
+      "en": "Mount Fuji is an extinct volcano."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mount_Fuji"
+  },
+  {
+    "id": "race_554",
+    "statement": {
+      "ru": "Бывают озёра с ярко-розовой водой.",
+      "en": "Some lakes have bright pink water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lake_Hillier"
+  },
+  {
+    "id": "race_555",
+    "statement": {
+      "ru": "Мёртвое море соединено с океаном.",
+      "en": "The Dead Sea is connected to the ocean."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dead_Sea"
+  },
+  {
+    "id": "race_556",
+    "statement": {
+      "ru": "Есть вулкан, чья чёрная лава, остывая, становится белой как снег.",
+      "en": "There is a volcano whose black lava turns snow-white as it cools."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ol_Doinyo_Lengai"
+  },
+  {
+    "id": "race_557",
+    "statement": {
+      "ru": "Один грамм золота можно расплющить в лист площадью в квадратный метр.",
+      "en": "One gram of gold can be beaten into a sheet a square metre in size."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gold"
+  },
+  {
+    "id": "race_558",
+    "statement": {
+      "ru": "Мрамор — это застывшая вулканическая лава.",
+      "en": "Marble is hardened volcanic lava."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Marble"
+  },
+  {
+    "id": "race_559",
+    "statement": {
+      "ru": "Белые скалы Дувра сложены из остатков крошечных водорослей.",
+      "en": "The White Cliffs of Dover are made of the remains of tiny algae."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/White_Cliffs_of_Dover"
+  },
+  {
+    "id": "race_560",
+    "statement": {
+      "ru": "Медоносная пчела, ужалив человека, улетает живой и может жалить снова.",
+      "en": "A honeybee that stings a person flies off alive and can sting again."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bee_sting"
+  },
+  {
+    "id": "race_561",
+    "statement": {
+      "ru": "Взрослая подёнка живёт с пустым желудком — он заполнен воздухом.",
+      "en": "An adult mayfly lives with an empty gut, filled with air."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mayfly"
+  },
+  {
+    "id": "race_562",
+    "statement": {
+      "ru": "По числу точек на спинке божьей коровки можно узнать её возраст.",
+      "en": "You can tell a ladybird's age by the number of its spots."
+    },
+    "answer": false,
+    "source": "https://www.reconnectwithnature.org/headlines/news/myth-buster-can-you-tell-a-ladybug-s-age-by-its-spots"
+  },
+  {
+    "id": "race_563",
+    "statement": {
+      "ru": "Муравьи-листорезы несут листья домой, чтобы выращивать на них грибы.",
+      "en": "Leafcutter ants carry leaves home to grow fungus on them."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Leafcutter_ant"
+  },
+  {
+    "id": "race_564",
+    "statement": {
+      "ru": "Комар может заразить человека ВИЧ, если до этого укусил больного.",
+      "en": "A mosquito can give someone HIV after biting an infected person."
+    },
+    "answer": false,
+    "source": "https://www.healthline.com/health/can-mosquitoes-transmit-hiv"
+  },
+  {
+    "id": "race_565",
+    "statement": {
+      "ru": "Таракан без головы может прожить несколько недель.",
+      "en": "A cockroach can live for weeks without its head."
+    },
+    "answer": true,
+    "source": "https://www.scientificamerican.com/article/fact-or-fiction-cockroach-can-live-without-head/"
+  },
+  {
+    "id": "race_566",
+    "statement": {
+      "ru": "Учёные до сих пор не могут объяснить, как летает шмель.",
+      "en": "Scientists still can't explain how a bumblebee flies."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bumblebee"
+  },
+  {
+    "id": "race_567",
+    "statement": {
+      "ru": "У сверчка уши — на передних ногах.",
+      "en": "A cricket's ears are on its front legs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cricket_(insect)"
+  },
+  {
+    "id": "race_568",
+    "statement": {
+      "ru": "Дыры в шерстяном свитере прогрызают взрослые бабочки моли.",
+      "en": "The holes in a wool jumper are chewed by adult clothes moths."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tineola_bisselliella"
+  },
+  {
+    "id": "race_569",
+    "statement": {
+      "ru": "Когда-то жили родичи стрекоз с размахом крыльев около 70 см.",
+      "en": "Relatives of dragonflies once lived with a wingspan of about 70 cm."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Meganeura"
+  },
+  {
+    "id": "race_570",
+    "statement": {
+      "ru": "Обычная комнатная муха живёт около года.",
+      "en": "An ordinary housefly lives for about a year."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Housefly"
+  },
+  {
+    "id": "race_571",
+    "statement": {
+      "ru": "Есть цикады, которые 17 лет сидят под землёй, а потом вылезают все разом.",
+      "en": "Some cicadas spend 17 years underground, then all come out at once."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Periodical_cicadas"
+  },
+  {
+    "id": "race_572",
+    "statement": {
+      "ru": "Одна пчела за всю жизнь приносит целую столовую ложку мёда.",
+      "en": "One bee makes a whole tablespoon of honey in its lifetime."
+    },
+    "answer": false,
+    "source": "https://carolinahoneybees.com/how-much-honey-does-a-bee-make/"
+  },
+  {
+    "id": "race_573",
+    "statement": {
+      "ru": "Светлячки — это жуки.",
+      "en": "Fireflies are beetles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Firefly"
+  },
+  {
+    "id": "race_574",
+    "statement": {
+      "ru": "Одна и та же бабочка-монарх летит из Канады в Мексику и обратно.",
+      "en": "The same monarch butterfly flies from Canada to Mexico and back."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Monarch_butterfly_migration"
+  },
+  {
+    "id": "race_575",
+    "statement": {
+      "ru": "Ближайшая родня термитов — тараканы, а не муравьи.",
+      "en": "Termites' closest relatives are cockroaches, not ants."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Termite"
+  },
+  {
+    "id": "race_576",
+    "statement": {
+      "ru": "Вошь умеет перепрыгивать с головы на голову.",
+      "en": "A head louse can jump from one head to another."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Head_louse"
+  },
+  {
+    "id": "race_577",
+    "statement": {
+      "ru": "В блошиных цирках выступали настоящие блохи.",
+      "en": "Real fleas performed in flea circuses."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Flea_circus"
+  },
+  {
+    "id": "race_578",
+    "statement": {
+      "ru": "Стрекоза умеет летать задом наперёд.",
+      "en": "A dragonfly can fly backwards."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dragonfly"
+  },
+  {
+    "id": "race_579",
+    "statement": {
+      "ru": "Глаз стрекозы состоит примерно из сотни крошечных глазков.",
+      "en": "A dragonfly's eye is made of about a hundred tiny eyes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dragonfly"
+  },
+  {
+    "id": "race_580",
+    "statement": {
+      "ru": "Бывает, что бабочки пьют слёзы черепах.",
+      "en": "Butterflies sometimes drink the tears of turtles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lachryphagy"
+  },
+  {
+    "id": "race_581",
+    "statement": {
+      "ru": "У человека мышц больше, чем у гусеницы.",
+      "en": "A human has more muscles than a caterpillar."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pieter_Lyonet"
+  },
+  {
+    "id": "race_582",
+    "statement": {
+      "ru": "Каждый четвёртый известный вид животных — жук.",
+      "en": "One in four known animal species is a beetle."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Beetle"
+  },
+  {
+    "id": "race_583",
+    "statement": {
+      "ru": "Навозный жук ночью находит дорогу по Млечному Пути.",
+      "en": "At night a dung beetle finds its way by the Milky Way."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dung_beetle"
+  },
+  {
+    "id": "race_584",
+    "statement": {
+      "ru": "Все муравьи на Земле вместе весят больше, чем все люди.",
+      "en": "All the ants on Earth together weigh more than all the people."
+    },
+    "answer": false,
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9586285"
+  },
+  {
+    "id": "race_585",
+    "statement": {
+      "ru": "В наводнение огненные муравьи сцепляются в живой плот и плывут.",
+      "en": "In a flood, fire ants link up into a living raft and float."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Red_imported_fire_ant"
+  },
+  {
+    "id": "race_586",
+    "statement": {
+      "ru": "Осы строят гнёзда из бумаги, которую делают сами, жуя древесину.",
+      "en": "Wasps build nests from paper they make themselves by chewing wood."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Paper_wasp"
+  },
+  {
+    "id": "race_587",
+    "statement": {
+      "ru": "Шмели надкусывают листья растений, чтобы те быстрее зацвели.",
+      "en": "Bumblebees nibble plant leaves to make them flower sooner."
+    },
+    "answer": true,
+    "source": "https://www.sciencenews.org/article/pollen-deprived-bumblebees-may-speed-plant-blooming-biting-leaves"
+  },
+  {
+    "id": "race_588",
+    "statement": {
+      "ru": "Одиночную и стайную саранчу когда-то считали разными видами.",
+      "en": "Solitary and swarming locusts were once thought to be different species."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Locust"
+  },
+  {
+    "id": "race_589",
+    "statement": {
+      "ru": "Цветы какао опыляют крошечные мошки.",
+      "en": "Cocoa flowers are pollinated by tiny midges."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Theobroma_cacao"
+  },
+  {
+    "id": "race_590",
+    "statement": {
+      "ru": "Мухи-журчалки, похожие на ос, тоже больно жалят.",
+      "en": "Hoverflies, which look like wasps, sting painfully too."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hoverfly"
+  },
+  {
+    "id": "race_591",
+    "statement": {
+      "ru": "Кровь у кузнечика красная, как у человека.",
+      "en": "A grasshopper's blood is red, like a human's."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hemolymph"
+  },
+  {
+    "id": "race_592",
+    "statement": {
+      "ru": "Комариный писк — это голос комара.",
+      "en": "A mosquito's whine is its voice."
+    },
+    "answer": false,
+    "source": "https://www.discoverwildlife.com/animal-facts/insects-invertebrates/why-do-mosquitos-whine"
+  },
+  {
+    "id": "race_593",
+    "statement": {
+      "ru": "Самка богомола всегда съедает самца после спаривания.",
+      "en": "A female mantis always eats the male after mating."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mantis"
+  },
+  {
+    "id": "race_594",
+    "statement": {
+      "ru": "Если потрогать крылья бабочки, она больше не сможет летать.",
+      "en": "If you touch a butterfly's wings, it can never fly again."
+    },
+    "answer": false,
+    "source": "https://lepsoc.org/frequently-asked-questions/"
+  },
+  {
+    "id": "race_595",
+    "statement": {
+      "ru": "Уховёртки нарочно заползают людям в уши.",
+      "en": "Earwigs crawl into people's ears on purpose."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Earwig"
+  },
+  {
+    "id": "race_596",
+    "statement": {
+      "ru": "Чем теплее, тем чаще стрекочет сверчок.",
+      "en": "The warmer it is, the faster a cricket chirps."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cricket_(insect)"
+  },
+  {
+    "id": "race_597",
+    "statement": {
+      "ru": "В Антарктиде живёт насекомое, которого больше нигде нет.",
+      "en": "An insect lives in Antarctica that is found nowhere else."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Belgica_antarctica"
+  },
+  {
+    "id": "race_598",
+    "statement": {
+      "ru": "Бабочка тутового шелкопряда разучилась летать.",
+      "en": "The domestic silk moth has lost the ability to fly."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bombyx_mori"
+  },
+  {
+    "id": "race_599",
+    "statement": {
+      "ru": "Тля может родиться уже беременной.",
+      "en": "An aphid can be born already pregnant."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Aphid"
+  },
+  {
+    "id": "race_600",
+    "statement": {
+      "ru": "Бабочки живут всего один день.",
+      "en": "Butterflies live for only one day."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Butterfly"
+  },
+  {
+    "id": "race_601",
+    "statement": {
+      "ru": "Когда светлячок светится, его брюшко нагревается, как лампочка.",
+      "en": "When a firefly glows, its belly heats up like a light bulb."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Firefly"
+  },
+  {
+    "id": "race_602",
+    "statement": {
+      "ru": "Бабочка-монарх ядовита для птиц.",
+      "en": "A monarch butterfly is poisonous to birds."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Monarch_butterfly"
+  },
+  {
+    "id": "race_603",
+    "statement": {
+      "ru": "Есть тараканы, которые громко шипят, выдувая воздух.",
+      "en": "Some cockroaches hiss loudly by blowing out air."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Madagascar_hissing_cockroach"
+  },
+  {
+    "id": "race_604",
+    "statement": {
+      "ru": "У трутней — пчёл-самцов — нет жала.",
+      "en": "Drones, the male bees, have no sting."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Drone_(bee)"
+  },
+  {
+    "id": "race_605",
+    "statement": {
+      "ru": "Тихоходки выживали в открытом космосе.",
+      "en": "Tardigrades have survived in open space."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tardigrade"
+  },
+  {
+    "id": "race_606",
+    "statement": {
+      "ru": "Паук-сенокосец — самый ядовитый паук, просто не может прокусить кожу.",
+      "en": "The daddy longlegs spider has the deadliest venom, it just can't bite through skin."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pholcidae"
+  },
+  {
+    "id": "race_607",
+    "statement": {
+      "ru": "Скорпион светится в ультрафиолете.",
+      "en": "A scorpion glows under ultraviolet light."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Scorpion"
+  },
+  {
+    "id": "race_608",
+    "statement": {
+      "ru": "Если разрезать дождевого червя пополам, получатся два червя.",
+      "en": "Cut an earthworm in half and you get two worms."
+    },
+    "answer": false,
+    "source": "https://www.sciencefocus.com/nature/how-many-times-can-a-worm-be-split-in-half-and-still-grow-back/"
+  },
+  {
+    "id": "race_609",
+    "statement": {
+      "ru": "Каждая садовая улитка — одновременно и самец, и самка.",
+      "en": "Every garden snail is both male and female at once."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cornu_aspersum"
+  },
+  {
+    "id": "race_610",
+    "statement": {
+      "ru": "Укус тарантула смертелен для человека.",
+      "en": "A tarantula bite can kill a person."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tarantula"
+  },
+  {
+    "id": "race_611",
+    "statement": {
+      "ru": "Леопардовые слизни спариваются, вися в воздухе на нитке слизи.",
+      "en": "Leopard slugs mate hanging in mid-air from a rope of slime."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Limax_maximus"
+  },
+  {
+    "id": "race_612",
+    "statement": {
+      "ru": "Клещ умеет прыгать на свою жертву.",
+      "en": "A tick can jump onto its victim."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tick"
+  },
+  {
+    "id": "race_613",
+    "statement": {
+      "ru": "Большинство бактерий в теле человека вредны.",
+      "en": "Most of the bacteria in the human body are harmful."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bacteria"
+  },
+  {
+    "id": "race_614",
+    "statement": {
+      "ru": "Есть паук, который питается в основном растениями.",
+      "en": "There is a spider that lives mainly on plants."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bagheera_kiplingi"
+  },
+  {
+    "id": "race_615",
+    "statement": {
+      "ru": "Скорпионы откладывают яйца.",
+      "en": "Scorpions lay eggs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Scorpion"
+  },
+  {
+    "id": "race_616",
+    "statement": {
+      "ru": "Есть паук, который живёт под водой в домике из пузыря воздуха.",
+      "en": "There is a spider that lives underwater in a home made of an air bubble."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Diving_bell_spider"
+  },
+  {
+    "id": "race_617",
+    "statement": {
+      "ru": "Кишечная палочка водится только у больных людей.",
+      "en": "E. coli bacteria are found only in sick people."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Escherichia_coli"
+  },
+  {
+    "id": "race_618",
+    "statement": {
+      "ru": "Бактерии мельче вирусов.",
+      "en": "Bacteria are smaller than viruses."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Virus"
+  },
+  {
+    "id": "race_619",
+    "statement": {
+      "ru": "Самец паука-павлина танцует перед самкой, чтобы ей понравиться.",
+      "en": "A male peacock spider dances for the female to win her over."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Maratus"
+  },
+  {
+    "id": "race_620",
+    "statement": {
+      "ru": "Плесень на хлебе — это колония бактерий.",
+      "en": "The mould on bread is a colony of bacteria."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mold"
+  },
+  {
+    "id": "race_621",
+    "statement": {
+      "ru": "Пауки умеют летать на паутинках за сотни километров.",
+      "en": "Spiders can fly hundreds of kilometres on threads of silk."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ballooning_(spider)"
+  },
+  {
+    "id": "race_622",
+    "statement": {
+      "ru": "Главная еда паука-птицееда — птицы.",
+      "en": "The bird-eating spider's main food is birds."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Goliath_birdeater"
+  },
+  {
+    "id": "race_623",
+    "statement": {
+      "ru": "Один паук в Австралии прожил 43 года.",
+      "en": "One spider in Australia lived to the age of 43."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Number_16_(spider)"
+  },
+  {
+    "id": "race_624",
+    "statement": {
+      "ru": "На лицах у многих взрослых живут крошечные клещи.",
+      "en": "Many adults have tiny mites living on their faces."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Demodex"
+  },
+  {
+    "id": "race_625",
+    "statement": {
+      "ru": "Сколопендра умеет ловить летучих мышей.",
+      "en": "A giant centipede can catch bats."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Scolopendra_gigantea"
+  },
+  {
+    "id": "race_626",
+    "statement": {
+      "ru": "Пылевые клещи кусают людей во сне.",
+      "en": "Dust mites bite people in their sleep."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/House_dust_mite"
+  },
+  {
+    "id": "race_627",
+    "statement": {
+      "ru": "Ядовитые «клыки» сколопендры — это бывшие ноги.",
+      "en": "A centipede's venomous 'fangs' are really modified legs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Centipede"
+  },
+  {
+    "id": "race_628",
+    "statement": {
+      "ru": "Есть многоножка, у которой больше тысячи ног.",
+      "en": "There is a millipede with more than a thousand legs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Eumillipes"
+  },
+  {
+    "id": "race_629",
+    "statement": {
+      "ru": "Яд большинства скорпионов может убить человека.",
+      "en": "Most scorpions have venom that can kill a person."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Scorpion"
+  },
+  {
+    "id": "race_630",
+    "statement": {
+      "ru": "Мокрица — ракообразное, родственница крабов.",
+      "en": "A woodlouse is a crustacean, a relative of crabs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Woodlouse"
+  },
+  {
+    "id": "race_631",
+    "statement": {
+      "ru": "Мороз в морозилке убивает бактерии в еде.",
+      "en": "The cold in a freezer kills the bacteria in food."
+    },
+    "answer": false,
+    "source": "https://guilford.ces.ncsu.edu/news/put-a-freeze-on-foodborne-illness/"
+  },
+  {
+    "id": "race_632",
+    "statement": {
+      "ru": "Одна бактерия выдерживает радиацию в 1000 раз сильнее смертельной для человека.",
+      "en": "There is a bacterium that survives 1,000 times the radiation dose that kills a human."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Deinococcus_radiodurans"
+  },
+  {
+    "id": "race_633",
+    "statement": {
+      "ru": "Слизевик без всякого мозга находит кратчайший путь в лабиринте.",
+      "en": "A slime mould, with no brain at all, finds the shortest path through a maze."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Physarum_polycephalum"
+  },
+  {
+    "id": "race_634",
+    "statement": {
+      "ru": "Тихоходку можно разглядеть только в электронный микроскоп.",
+      "en": "A tardigrade can only be seen with an electron microscope."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tardigrade"
+  },
+  {
+    "id": "race_635",
+    "statement": {
+      "ru": "Есть бактерия, которую видно без микроскопа.",
+      "en": "There is a bacterium you can see without a microscope."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Thiomargarita_magnifica"
+  },
+  {
+    "id": "race_636",
+    "statement": {
+      "ru": "Слизень — близкий родственник дождевого червя.",
+      "en": "A slug is a close relative of the earthworm."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Slug"
+  },
+  {
+    "id": "race_637",
+    "statement": {
+      "ru": "Если взвесить всё живое на Земле, бактерии уступят только растениям.",
+      "en": "Weigh all life on Earth, and only plants outweigh the bacteria."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bacteria"
+  },
+  {
+    "id": "race_638",
+    "statement": {
+      "ru": "Последняя научная книга Дарвина была о дождевых червях.",
+      "en": "Darwin's last scientific book was about earthworms."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Formation_of_Vegetable_Mould_Through_the_Action_of_Worms"
+  },
+  {
+    "id": "race_639",
+    "statement": {
+      "ru": "Клещи водятся даже в Антарктиде.",
+      "en": "Ticks are found even in Antarctica."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tick"
+  },
+  {
+    "id": "race_640",
+    "statement": {
+      "ru": "Пиявка — родственница дождевого червя.",
+      "en": "A leech is a relative of the earthworm."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Leech"
+  },
+  {
+    "id": "race_641",
+    "statement": {
+      "ru": "Все пиявки живут в воде.",
+      "en": "All leeches live in water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Leech"
+  },
+  {
+    "id": "race_642",
+    "statement": {
+      "ru": "Клещ напивается крови за пару минут.",
+      "en": "A tick fills up on blood in a couple of minutes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tick"
+  },
+  {
+    "id": "race_643",
+    "statement": {
+      "ru": "У дождевого червя есть глаза.",
+      "en": "An earthworm has eyes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Earthworm"
+  },
+  {
+    "id": "race_644",
+    "statement": {
+      "ru": "Вставные зубы Джорджа Вашингтона были деревянными.",
+      "en": "George Washington's false teeth were made of wood."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/George_Washington%27s_teeth"
+  },
+  {
+    "id": "race_645",
+    "statement": {
+      "ru": "Пиявок и сегодня применяют в больницах.",
+      "en": "Leeches are still used in hospitals today."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hirudo_medicinalis"
+  },
+  {
+    "id": "race_646",
+    "statement": {
+      "ru": "В Европе толчёную мумию продавали в аптеках как лекарство.",
+      "en": "In Europe, ground-up mummy was sold in pharmacies as a medicine."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mummia"
+  },
+  {
+    "id": "race_647",
+    "statement": {
+      "ru": "Клятва Гиппократа начинается с клятвы богу Аполлону.",
+      "en": "The Hippocratic Oath begins by swearing by the god Apollo."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hippocratic_Oath"
+  },
+  {
+    "id": "race_648",
+    "statement": {
+      "ru": "Пластырь Band-Aid придумали для раненых солдат на войне.",
+      "en": "The Band-Aid was invented for soldiers wounded in war."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Band-Aid"
+  },
+  {
+    "id": "race_649",
+    "statement": {
+      "ru": "Рентген назвал свои лучи «икс», потому что не понимал, что это такое.",
+      "en": "Röntgen called his rays 'X' because he didn't know what they were."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/X-ray"
+  },
+  {
+    "id": "race_650",
+    "statement": {
+      "ru": "Чёрную смерть — великую эпидемию чумы — вызывал вирус.",
+      "en": "The Black Death, the great plague epidemic, was caused by a virus."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Black_Death"
+  },
+  {
+    "id": "race_651",
+    "statement": {
+      "ru": "Хирург армии Наполеона придумал «летучие» кареты скорой помощи.",
+      "en": "A surgeon in Napoleon's army invented 'flying ambulances'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dominique_Jean_Larrey"
+  },
+  {
+    "id": "race_652",
+    "statement": {
+      "ru": "Самая первая вакцина в истории была от кори.",
+      "en": "The very first vaccine in history was against measles."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Smallpox_vaccine"
+  },
+  {
+    "id": "race_653",
+    "statement": {
+      "ru": "Ополаскиватель «Листерин» назван в честь хирурга.",
+      "en": "Listerine mouthwash is named after a surgeon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Listerine"
+  },
+  {
+    "id": "race_654",
+    "statement": {
+      "ru": "Предок аспирина — вещество из коры дуба.",
+      "en": "Aspirin's ancestor is a substance from oak bark."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Aspirin"
+  },
+  {
+    "id": "race_655",
+    "statement": {
+      "ru": "Флоренс Найтингейл носила в кармане ручную сову.",
+      "en": "Florence Nightingale carried a pet owl in her pocket."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Florence_Nightingale"
+  },
+  {
+    "id": "race_656",
+    "statement": {
+      "ru": "Пенициллин открыли уже после Второй мировой войны.",
+      "en": "Penicillin was discovered after the Second World War."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/History_of_penicillin"
+  },
+  {
+    "id": "race_657",
+    "statement": {
+      "ru": "Врач открыл хлороформный наркоз, надышавшись хлороформом с коллегами.",
+      "en": "A doctor discovered chloroform anaesthesia by inhaling it with his colleagues."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/James_Young_Simpson"
+  },
+  {
+    "id": "race_658",
+    "statement": {
+      "ru": "Королева Виктория запретила обезболивание при родах.",
+      "en": "Queen Victoria banned pain relief in childbirth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Queen_Victoria"
+  },
+  {
+    "id": "race_659",
+    "statement": {
+      "ru": "Первый публичный наркоз эфиром показали в Лондоне.",
+      "en": "The first public operation under ether was shown in London."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ether_Dome"
+  },
+  {
+    "id": "race_660",
+    "statement": {
+      "ru": "Считалось, что прикосновение короля исцеляет от болезни.",
+      "en": "People believed a king's touch could cure a disease."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Royal_touch"
+  },
+  {
+    "id": "race_661",
+    "statement": {
+      "ru": "Наполеон велел привить своих солдат от оспы.",
+      "en": "Napoleon had his soldiers vaccinated against smallpox."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Edward_Jenner"
+  },
+  {
+    "id": "race_662",
+    "statement": {
+      "ru": "Врача, призвавшего мыть руки, коллеги сразу признали героем.",
+      "en": "The doctor who urged handwashing was hailed a hero by colleagues at once."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis"
+  },
+  {
+    "id": "race_663",
+    "statement": {
+      "ru": "Изобретатель первой вакцины выяснил, как кукушонок выталкивает яйца из гнезда.",
+      "en": "The inventor of the first vaccine found out how a cuckoo chick pushes eggs out of the nest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Edward_Jenner"
+  },
+  {
+    "id": "race_664",
+    "statement": {
+      "ru": "Вакцину от полиомиелита давали детям на кусочке сахара.",
+      "en": "Polio vaccine was given to children on a sugar cube."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Polio_vaccine"
+  },
+  {
+    "id": "race_665",
+    "statement": {
+      "ru": "Морфий назвали по фамилии химика, который его открыл.",
+      "en": "Morphine was named after the chemist who discovered it."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Morphine"
+  },
+  {
+    "id": "race_666",
+    "statement": {
+      "ru": "Создатели инсулина продали патент на него за миллион долларов.",
+      "en": "The discoverers of insulin sold its patent for a million dollars."
+    },
+    "answer": false,
+    "source": "https://www.healio.com/news/hematology-oncology/20120325/frederick-banting-discovered-insulin-in-1921"
+  },
+  {
+    "id": "race_667",
+    "statement": {
+      "ru": "Лекарственный инсулин сегодня производят микробы.",
+      "en": "Medical insulin today is made by microbes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Insulin_(medication)"
+  },
+  {
+    "id": "race_668",
+    "statement": {
+      "ru": "Бактерии впервые увидели в микроскоп только в XX веке.",
+      "en": "Bacteria were first seen under a microscope only in the 20th century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek"
+  },
+  {
+    "id": "race_669",
+    "statement": {
+      "ru": "Когда-то врачи советовали астматикам курить особые сигареты.",
+      "en": "Doctors once advised asthma patients to smoke special cigarettes."
+    },
+    "answer": true,
+    "source": "https://www.australianpharmacist.com.au/the-original-puffer-2/"
+  },
+  {
+    "id": "race_670",
+    "statement": {
+      "ru": "Название «малярия» означает «плохая вода».",
+      "en": "The name 'malaria' means 'bad water'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Malaria"
+  },
+  {
+    "id": "race_671",
+    "statement": {
+      "ru": "В XVII веке человеку перелили кровь ягнёнка.",
+      "en": "In the 17th century a person was given a transfusion of lamb's blood."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jean-Baptiste_Denys"
+  },
+  {
+    "id": "race_672",
+    "statement": {
+      "ru": "Воду с радием продавали как полезное лекарство.",
+      "en": "Water with radium in it was sold as a healthy medicine."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Radithor"
+  },
+  {
+    "id": "race_673",
+    "statement": {
+      "ru": "На посохе Асклепия, символе медицины, обвились две змеи.",
+      "en": "On the Rod of Asclepius, the symbol of medicine, two snakes are coiled."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rod_of_Asclepius"
+  },
+  {
+    "id": "race_674",
+    "statement": {
+      "ru": "Раньше цирюльники не только стригли, но и пускали кровь.",
+      "en": "Barbers once cut hair and also let blood."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Barber_surgeon"
+  },
+  {
+    "id": "race_675",
+    "statement": {
+      "ru": "Первым медицинским градусникам хватало минуты, чтобы измерить температуру.",
+      "en": "The first medical thermometers took a minute to measure a temperature."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Medical_thermometer"
+  },
+  {
+    "id": "race_676",
+    "statement": {
+      "ru": "Знаменитый древнеримский врач Гален лечил гладиаторов.",
+      "en": "Galen, the famous doctor of Ancient Rome, treated gladiators."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Galen"
+  },
+  {
+    "id": "race_677",
+    "statement": {
+      "ru": "Первый ребёнок «из пробирки» родился в США.",
+      "en": "The first 'test-tube baby' was born in the USA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Louise_Brown"
+  },
+  {
+    "id": "race_678",
+    "statement": {
+      "ru": "Белые халаты врачи носят уже тысячу лет.",
+      "en": "Doctors have worn white coats for a thousand years."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/White_coat"
+  },
+  {
+    "id": "race_679",
+    "statement": {
+      "ru": "Лицо манекена для искусственного дыхания взяли с посмертной маски.",
+      "en": "The face of the CPR training dummy was taken from a death mask."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Resusci_Anne"
+  },
+  {
+    "id": "race_680",
+    "statement": {
+      "ru": "Хирургические маски впервые надели во время «испанки» 1918 года.",
+      "en": "Surgical masks were first worn during the 1918 Spanish flu."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Surgical_mask"
+  },
+  {
+    "id": "race_681",
+    "statement": {
+      "ru": "Древние египтяне делали протезы пальцев ног из дерева и кожи.",
+      "en": "The ancient Egyptians made artificial toes out of wood and leather."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Prosthesis"
+  },
+  {
+    "id": "race_682",
+    "statement": {
+      "ru": "Рентген стали применять в медицине лишь через полвека после открытия.",
+      "en": "X-rays were put to medical use only half a century after their discovery."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/X-ray"
+  },
+  {
+    "id": "race_683",
+    "statement": {
+      "ru": "Веками верили, что зубы портят крошечные черви.",
+      "en": "For centuries people believed tiny worms caused tooth decay."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tooth_worm"
+  },
+  {
+    "id": "race_684",
+    "statement": {
+      "ru": "Лучшую плесень для пенициллина нашли на дыне с рынка.",
+      "en": "The best mould for making penicillin was found on a melon from a market."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/History_of_penicillin"
+  },
+  {
+    "id": "race_685",
+    "statement": {
+      "ru": "Простуду вызывает сам холод, а не вирусы.",
+      "en": "A cold is caused by the cold itself, not by viruses."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Common_cold"
+  },
+  {
+    "id": "race_686",
+    "statement": {
+      "ru": "Опоясывающий лишай вызывает тот же вирус, что и ветрянку.",
+      "en": "Shingles is caused by the same virus as chickenpox."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shingles"
+  },
+  {
+    "id": "race_687",
+    "statement": {
+      "ru": "Когда идёт кровь из носа, голову надо запрокинуть назад.",
+      "en": "When your nose bleeds, you should tilt your head back."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Nosebleed"
+  },
+  {
+    "id": "race_688",
+    "statement": {
+      "ru": "Обычное мыло отмывает руки так же хорошо, как антибактериальное.",
+      "en": "Ordinary soap cleans hands just as well as antibacterial soap."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Antibacterial_soap"
+  },
+  {
+    "id": "race_689",
+    "statement": {
+      "ru": "Антибиотики убивают вирусы.",
+      "en": "Antibiotics kill viruses."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Common_cold"
+  },
+  {
+    "id": "race_690",
+    "statement": {
+      "ru": "Печень белого медведя ядовита для человека.",
+      "en": "A polar bear's liver is poisonous to humans."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hypervitaminosis_A"
+  },
+  {
+    "id": "race_691",
+    "statement": {
+      "ru": "Большие дозы витамина C защищают от простуды.",
+      "en": "Big doses of vitamin C protect you from catching a cold."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Common_cold"
+  },
+  {
+    "id": "race_692",
+    "statement": {
+      "ru": "Корь в разы заразнее гриппа.",
+      "en": "Measles is many times more contagious than flu."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Measles"
+  },
+  {
+    "id": "race_693",
+    "statement": {
+      "ru": "На свежий ожог лучше всего намазать сливочное масло.",
+      "en": "The best thing to put on a fresh burn is butter."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Burn"
+  },
+  {
+    "id": "race_694",
+    "statement": {
+      "ru": "Если рано давать малышу арахис, риск аллергии на него ниже.",
+      "en": "Giving a baby peanuts early lowers the risk of a peanut allergy."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Peanut_allergy"
+  },
+  {
+    "id": "race_695",
+    "statement": {
+      "ru": "Ожог медузы проходит, если на него помочиться.",
+      "en": "Peeing on a jellyfish sting makes it stop hurting."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_696",
+    "statement": {
+      "ru": "Можно умереть, выпив слишком много обычной воды.",
+      "en": "You can die from drinking too much plain water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Water_intoxication"
+  },
+  {
+    "id": "race_697",
+    "statement": {
+      "ru": "При укусе змеи яд надо высосать из ранки ртом.",
+      "en": "After a snakebite, you should suck the venom out with your mouth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Snakebite"
+  },
+  {
+    "id": "race_698",
+    "statement": {
+      "ru": "Простуду могут вызывать больше двухсот разных вирусов.",
+      "en": "More than two hundred different viruses can cause a cold."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Common_cold"
+  },
+  {
+    "id": "race_699",
+    "statement": {
+      "ru": "Во время эпилептического припадка можно проглотить свой язык.",
+      "en": "During an epileptic seizure, a person can swallow their own tongue."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_700",
+    "statement": {
+      "ru": "Выбитый зуб можно спасти, если довезти его до врача в молоке.",
+      "en": "A knocked-out tooth can be saved if you take it to the dentist in milk."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tooth_avulsion"
+  },
+  {
+    "id": "race_701",
+    "statement": {
+      "ru": "Врачи советуют мыть руки столько, сколько дважды спеть «С днём рождения».",
+      "en": "Doctors advise washing your hands for as long as it takes to sing 'Happy Birthday' twice."
+    },
+    "answer": true,
+    "source": "https://www.cdc.gov/clean-hands/about/index.html"
+  },
+  {
+    "id": "race_702",
+    "statement": {
+      "ru": "При «сенной лихорадке» у человека поднимается температура.",
+      "en": "Hay fever gives you a raised temperature."
+    },
+    "answer": false,
+    "source": "https://acaai.org/allergies/types/hay-fever-rhinitis"
+  },
+  {
+    "id": "race_703",
+    "statement": {
+      "ru": "Массаж сердца советуют делать в ритме песни «Stayin' Alive».",
+      "en": "CPR chest compressions are taught to the beat of the song 'Stayin' Alive'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Stayin%27_Alive"
+  },
+  {
+    "id": "race_704",
+    "statement": {
+      "ru": "Солнце сквозь оконное стекло помогает коже вырабатывать витамин D.",
+      "en": "Sunlight through a glass window helps your skin make vitamin D."
+    },
+    "answer": false,
+    "source": "https://www.rnz.co.nz/news/world/520743/why-you-can-get-sunburnt-through-a-window-but-it-won-t-help-with-your-vitamin-d-needs"
+  },
+  {
+    "id": "race_705",
+    "statement": {
+      "ru": "Корь может стереть иммунитету память о болезнях, которыми человек уже переболел.",
+      "en": "Measles can wipe the immune system's memory of illnesses a person has already had."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Measles"
+  },
+  {
+    "id": "race_706",
+    "statement": {
+      "ru": "В пасмурный день обгореть на солнце невозможно.",
+      "en": "On an overcast day it is impossible to get sunburnt."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sunburn"
+  },
+  {
+    "id": "race_707",
+    "statement": {
+      "ru": "Голубой свет вечером мешает организму вырабатывать гормон сна.",
+      "en": "Blue light in the evening hinders the body from making its sleep hormone."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Melatonin"
+  },
+  {
+    "id": "race_708",
+    "statement": {
+      "ru": "Прививка от гриппа может вызвать сам грипп.",
+      "en": "A flu jab can give you the flu."
+    },
+    "answer": false,
+    "source": "https://www.cdc.gov/flu/prevention/misconceptions.html"
+  },
+  {
+    "id": "race_709",
+    "statement": {
+      "ru": "Дети, которые больше гуляют на улице, реже становятся близорукими.",
+      "en": "Children who spend more time outdoors are less likely to become short-sighted."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Near-sightedness"
+  },
+  {
+    "id": "race_710",
+    "statement": {
+      "ru": "Малярию вызывает одноклеточный паразит.",
+      "en": "Malaria is caused by a single-celled parasite."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Malaria"
+  },
+  {
+    "id": "race_711",
+    "statement": {
+      "ru": "Обмороженные руки надо хорошенько растереть снегом.",
+      "en": "Frostbitten hands should be rubbed hard with snow."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Frostbite"
+  },
+  {
+    "id": "race_712",
+    "statement": {
+      "ru": "После укуса клеща может появиться аллергия на красное мясо.",
+      "en": "A tick bite can leave you allergic to red meat."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Alpha-gal_syndrome"
+  },
+  {
+    "id": "race_713",
+    "statement": {
+      "ru": "Горячая вода смывает микробов с рук гораздо лучше прохладной.",
+      "en": "Hot water washes germs off your hands far better than cool water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_714",
+    "statement": {
+      "ru": "Если симптомы бешенства уже появились, человек почти всегда погибает.",
+      "en": "Once rabies symptoms have appeared, the person almost always dies."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rabies"
+  },
+  {
+    "id": "race_715",
+    "statement": {
+      "ru": "Дефибриллятор заводит сердце, когда на мониторе уже прямая линия.",
+      "en": "A defibrillator restarts the heart when the monitor already shows a flat line."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Asystole"
+  },
+  {
+    "id": "race_716",
+    "statement": {
+      "ru": "Бывает аллергия на холод: от мороза на коже вскакивают волдыри.",
+      "en": "There is such a thing as a cold allergy: frost brings up welts on the skin."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cold_urticaria"
+  },
+  {
+    "id": "race_717",
+    "statement": {
+      "ru": "Язву желудка вызывает острая еда.",
+      "en": "Stomach ulcers are caused by spicy food."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Peptic_ulcer_disease"
+  },
+  {
+    "id": "race_718",
+    "statement": {
+      "ru": "Резкий запах «хлорки» в бассейне идёт от хлора, смешанного с потом и мочой.",
+      "en": "The strong 'chlorine' smell at a pool comes from chlorine mixed with sweat and urine."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chloramines"
+  },
+  {
+    "id": "race_719",
+    "statement": {
+      "ru": "Обожжённое место лучше всего сразу обложить льдом.",
+      "en": "The best first aid for a burn is to cover it with ice straight away."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Burn"
+  },
+  {
+    "id": "race_720",
+    "statement": {
+      "ru": "Мёд опасен для младенцев до года.",
+      "en": "Honey is dangerous for babies under one year old."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Infant_botulism"
+  },
+  {
+    "id": "race_721",
+    "statement": {
+      "ru": "Врачи советуют чистить уши изнутри ватными палочками.",
+      "en": "Doctors recommend cleaning inside your ears with cotton buds."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cotton_swab"
+  },
+  {
+    "id": "race_722",
+    "statement": {
+      "ru": "К антибиотикам привыкает организм человека, а не бактерии.",
+      "en": "It is the human body that gets used to antibiotics, not the bacteria."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Antimicrobial_resistance"
+  },
+  {
+    "id": "race_723",
+    "statement": {
+      "ru": "Главный виновник аллергии на домашнюю пыль — крошечные клещи.",
+      "en": "The main culprit behind house dust allergy is tiny mites."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/House_dust_mite"
+  },
+  {
+    "id": "race_724",
+    "statement": {
+      "ru": "Столбняк вызывает ржавчина на гвозде.",
+      "en": "Tetanus is caused by the rust on a nail."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tetanus"
+  },
+  {
+    "id": "race_725",
+    "statement": {
+      "ru": "Зелёные сопли — верный знак бактериальной инфекции.",
+      "en": "Green snot is a sure sign of a bacterial infection."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_726",
+    "statement": {
+      "ru": "«Кишечный грипп» вызывает тот же вирус, что и обычный грипп.",
+      "en": "'Stomach flu' is caused by the same virus as ordinary flu."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gastroenteritis"
+  },
+  {
+    "id": "race_727",
+    "statement": {
+      "ru": "Подсолнух — это один большой цветок.",
+      "en": "A sunflower is one big flower."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Helianthus_annuus"
+  },
+  {
+    "id": "race_728",
+    "statement": {
+      "ru": "В Америке растёт сосна старше египетских пирамид.",
+      "en": "There is a pine tree in America older than the Egyptian pyramids."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pinus_longaeva"
+  },
+  {
+    "id": "race_729",
+    "statement": {
+      "ru": "Листья зелёные, потому что лучше всего поглощают зелёный свет.",
+      "en": "Leaves are green because they absorb green light best."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chlorophyll"
+  },
+  {
+    "id": "race_730",
+    "statement": {
+      "ru": "В сильный мороз ствол дерева может лопнуть с треском, как выстрел.",
+      "en": "In a hard frost a tree trunk can split with a crack like a gunshot."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Frost_crack"
+  },
+  {
+    "id": "race_731",
+    "statement": {
+      "ru": "Гвоздь, вбитый в ствол дерева, с годами поднимается всё выше.",
+      "en": "A nail driven into a tree trunk rises higher over the years."
+    },
+    "answer": false,
+    "source": "https://archive.lib.msu.edu/tic/wetrt/article/1990jun68.pdf"
+  },
+  {
+    "id": "race_732",
+    "statement": {
+      "ru": "Роза и яблоня — растения из одного семейства.",
+      "en": "The rose and the apple tree belong to the same plant family."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rosaceae"
+  },
+  {
+    "id": "race_733",
+    "statement": {
+      "ru": "Дырки в листьях монстеры — признак болезни.",
+      "en": "The holes in monstera leaves are a sign of disease."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Monstera_deliciosa"
+  },
+  {
+    "id": "race_734",
+    "statement": {
+      "ru": "Древесина дерева в основном сделана из воздуха.",
+      "en": "A tree's wood is made mostly out of air."
+    },
+    "answer": true,
+    "source": "https://www.canr.msu.edu/news/where_do_trees_get_their_mass_from"
+  },
+  {
+    "id": "race_735",
+    "statement": {
+      "ru": "В природе растут голубые розы.",
+      "en": "Blue roses grow in nature."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Blue_rose"
+  },
+  {
+    "id": "race_736",
+    "statement": {
+      "ru": "Лиственница — хвойное дерево, которое на зиму сбрасывает иголки.",
+      "en": "The larch is a conifer that drops its needles for the winter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Larix"
+  },
+  {
+    "id": "race_737",
+    "statement": {
+      "ru": "Комнатные цветы заметно очищают воздух в квартире.",
+      "en": "House plants noticeably clean the air in a flat."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/NASA_Clean_Air_Study"
+  },
+  {
+    "id": "race_738",
+    "statement": {
+      "ru": "Красные «лепестки» пуансеттии — на самом деле листья.",
+      "en": "The red 'petals' of a poinsettia are actually leaves."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Poinsettia"
+  },
+  {
+    "id": "race_739",
+    "statement": {
+      "ru": "По кольцам на спиле пальмы можно узнать её возраст.",
+      "en": "You can tell a palm tree's age by counting the rings in its trunk."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Arecaceae"
+  },
+  {
+    "id": "race_740",
+    "statement": {
+      "ru": "В Юте растёт роща из 47 000 осин — и всё это одно дерево.",
+      "en": "In Utah there is a grove of 47,000 aspens, and it is all one tree."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pando_(tree)"
+  },
+  {
+    "id": "race_741",
+    "statement": {
+      "ru": "Бонсай — это особый карликовый сорт деревьев.",
+      "en": "Bonsai is a special dwarf variety of tree."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bonsai"
+  },
+  {
+    "id": "race_742",
+    "statement": {
+      "ru": "Гинкго росли на Земле ещё при динозаврах.",
+      "en": "Ginkgo trees were already growing on Earth in the time of the dinosaurs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ginkgo_biloba"
+  },
+  {
+    "id": "race_743",
+    "statement": {
+      "ru": "Каштаны, которые жарят на улицах, растут на конском каштане.",
+      "en": "The chestnuts roasted in the street grow on the horse chestnut tree."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
+  },
+  {
+    "id": "race_744",
+    "statement": {
+      "ru": "Несколько деревьев гинкго пережили атомный взрыв в Хиросиме.",
+      "en": "Several ginkgo trees survived the atomic bomb in Hiroshima."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ginkgo_biloba"
+  },
+  {
+    "id": "race_745",
+    "statement": {
+      "ru": "Узамбарская фиалка — близкая родственница садовых фиалок.",
+      "en": "The African violet is a close relative of garden violets."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Saintpaulia"
+  },
+  {
+    "id": "race_746",
+    "statement": {
+      "ru": "Самое маленькое цветковое растение меньше рисового зёрнышка.",
+      "en": "The smallest flowering plant is smaller than a grain of rice."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wolffia"
+  },
+  {
+    "id": "race_747",
+    "statement": {
+      "ru": "Самое одинокое дерево в Сахаре сбил грузовик.",
+      "en": "The loneliest tree in the Sahara was knocked down by a truck."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tree_of_Ténéré"
+  },
+  {
+    "id": "race_748",
+    "statement": {
+      "ru": "С возрастом большое дерево набирает за год всё меньше древесины.",
+      "en": "As a big tree gets older, it adds less and less wood each year."
+    },
+    "answer": false,
+    "source": "https://www.usgs.gov/publications/rate-tree-carbon-accumulation-increases-continuously-tree-size"
+  },
+  {
+    "id": "race_749",
+    "statement": {
+      "ru": "Гортензия бывает голубой или розовой — смотря какая почва.",
+      "en": "A hydrangea turns out blue or pink depending on the soil."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hydrangea"
+  },
+  {
+    "id": "race_750",
+    "statement": {
+      "ru": "Леса Амазонии дают больше четверти кислорода Земли.",
+      "en": "The Amazon rainforest produces more than a quarter of Earth's oxygen."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Amazon_rainforest"
+  },
+  {
+    "id": "race_751",
+    "statement": {
+      "ru": "Деревьев на Земле больше, чем звёзд в Млечном Пути.",
+      "en": "There are more trees on Earth than stars in the Milky Way."
+    },
+    "answer": true,
+    "source": "https://www.worldatlas.com/articles/did-you-know-that-there-are-more-trees-on-earth-than-stars-in-the-milky-way.html"
+  },
+  {
+    "id": "race_752",
+    "statement": {
+      "ru": "Клевер с четырьмя листиками — это особый вид клевера.",
+      "en": "The four-leaf clover is a separate species of clover."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Four-leaf_clover"
+  },
+  {
+    "id": "race_753",
+    "statement": {
+      "ru": "Лист одной пальмы бывает длиной 25 метров.",
+      "en": "One kind of palm can have a leaf 25 metres long."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Raphia_regalis"
+  },
+  {
+    "id": "race_754",
+    "statement": {
+      "ru": "Цветы на дереве сакуры держатся около двух месяцев.",
+      "en": "The blossoms on a cherry blossom tree last about two months."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cherry_blossom"
+  },
+  {
+    "id": "race_755",
+    "statement": {
+      "ru": "В Антарктиде растут цветковые растения.",
+      "en": "Flowering plants grow in Antarctica."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Flora_of_Antarctica"
+  },
+  {
+    "id": "race_756",
+    "statement": {
+      "ru": "Деревья выше 90 метров растут только в Америке.",
+      "en": "Trees taller than 90 metres grow only in America."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Menara_(tree)"
+  },
+  {
+    "id": "race_757",
+    "statement": {
+      "ru": "Есть растение, которое цветёт раз в жизни, через десятки лет, и сразу погибает.",
+      "en": "There is a plant that flowers once in its life, after decades, and then dies at once."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Puya_raimondii"
+  },
+  {
+    "id": "race_758",
+    "statement": {
+      "ru": "Пуансеттия смертельно ядовита: пара листьев может убить ребёнка.",
+      "en": "The poinsettia is deadly: a couple of leaves can kill a child."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Poinsettia"
+  },
+  {
+    "id": "race_759",
+    "statement": {
+      "ru": "Есть дерево, древесина которого тонет в воде.",
+      "en": "There is a tree whose wood sinks in water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lignum_vitae"
+  },
+  {
+    "id": "race_760",
+    "statement": {
+      "ru": "Самые высокие деревья на Земле — баобабы.",
+      "en": "The tallest trees on Earth are baobabs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Adansonia"
+  },
+  {
+    "id": "race_761",
+    "statement": {
+      "ru": "Есть дерево, у которого красный сок, похожий на кровь.",
+      "en": "There is a tree with red sap that looks like blood."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dracaena_cinnabari"
+  },
+  {
+    "id": "race_762",
+    "statement": {
+      "ru": "Если снять кору кольцом вокруг ствола, дерево проживёт как ни в чём не бывало.",
+      "en": "If you strip a ring of bark all the way round the trunk, the tree lives on as if nothing happened."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Girdling"
+  },
+  {
+    "id": "race_763",
+    "statement": {
+      "ru": "У пихты шишки торчат на ветках вверх, как свечки.",
+      "en": "Fir cones stand upright on the branches like candles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fir"
+  },
+  {
+    "id": "race_764",
+    "statement": {
+      "ru": "Корни дерева уходят в землю так же глубоко, как высоко само дерево.",
+      "en": "A tree's roots go as deep into the ground as the tree is tall."
+    },
+    "answer": false,
+    "source": "https://naturalresources.extension.iastate.edu/forestry/tree_biology/101.html"
+  },
+  {
+    "id": "race_765",
+    "statement": {
+      "ru": "Бывают деревья-«мальчики» и деревья-«девочки».",
+      "en": "Some trees are 'boys' and some are 'girls'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dioecy"
+  },
+  {
+    "id": "race_766",
+    "statement": {
+      "ru": "Лист гигантской кувшинки может выдержать ребёнка.",
+      "en": "A giant water lily leaf can hold up a child."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Victoria_amazonica"
+  },
+  {
+    "id": "race_767",
+    "statement": {
+      "ru": "Есть дерево, на котором растут 40 разных сортов фруктов.",
+      "en": "There is a tree that grows 40 different varieties of fruit."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tree_of_40_Fruit"
+  },
+  {
+    "id": "race_768",
+    "statement": {
+      "ru": "Зёрна пшеницы из египетских гробниц прорастают даже через 3000 лет.",
+      "en": "Wheat grains from Egyptian tombs still sprout after 3,000 years."
+    },
+    "answer": false,
+    "source": "https://www.scientificamerican.com/article/fake-news-wheat-buried-with-mummies-can-grow/"
+  },
+  {
+    "id": "race_769",
+    "statement": {
+      "ru": "Некоторые грибы светятся в темноте.",
+      "en": "Some mushrooms glow in the dark."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fungus"
+  },
+  {
+    "id": "race_770",
+    "statement": {
+      "ru": "Перекати-поле катится по степи в поисках воды.",
+      "en": "A tumbleweed rolls across the plains in search of water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tumbleweed"
+  },
+  {
+    "id": "race_771",
+    "statement": {
+      "ru": "Грибы, как и растения, питаются солнечным светом.",
+      "en": "Fungi, like plants, feed on sunlight."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Fungus"
+  },
+  {
+    "id": "race_772",
+    "statement": {
+      "ru": "Агар-агар для мармелада делают из грибов.",
+      "en": "Agar for jelly sweets is made from mushrooms."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Agar"
+  },
+  {
+    "id": "race_773",
+    "statement": {
+      "ru": "Учёные оживили мох, пролежавший во льдах Антарктиды 1500 лет.",
+      "en": "Scientists revived moss that had lain frozen in Antarctica for 1,500 years."
+    },
+    "answer": true,
+    "source": "https://www.scientificamerican.com/article/1500-year-old-antarctic-moss-brought-back-to-life/"
+  },
+  {
+    "id": "race_774",
+    "statement": {
+      "ru": "Дикие кактусы растут только в жарких пустынях.",
+      "en": "Wild cacti grow only in hot deserts."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cactus"
+  },
+  {
+    "id": "race_775",
+    "statement": {
+      "ru": "Семена орхидеи размером с горошину.",
+      "en": "Orchid seeds are the size of a pea."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Orchidaceae"
+  },
+  {
+    "id": "race_776",
+    "statement": {
+      "ru": "Лишайник — это союз гриба и водоросли.",
+      "en": "A lichen is a partnership of a fungus and an alga."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lichen"
+  },
+  {
+    "id": "race_777",
+    "statement": {
+      "ru": "Грибы ближе по родству к животным, чем к растениям.",
+      "en": "Fungi are more closely related to animals than to plants."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fungus"
+  },
+  {
+    "id": "race_778",
+    "statement": {
+      "ru": "Венерина мухоловка родом всего из двух штатов США.",
+      "en": "The Venus flytrap is native to only two US states."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Venus_flytrap"
+  },
+  {
+    "id": "race_779",
+    "statement": {
+      "ru": "Газонная трава растёт от кончиков листьев.",
+      "en": "Lawn grass grows from the tips of its blades."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Poaceae"
+  },
+  {
+    "id": "race_780",
+    "statement": {
+      "ru": "Гигантская бурая водоросль может вырасти за день на полметра.",
+      "en": "Giant kelp can grow half a metre in a single day."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Macrocystis"
+  },
+  {
+    "id": "race_781",
+    "statement": {
+      "ru": "Один-единственный гриб в США раскинулся под землёй почти на 10 км².",
+      "en": "A single fungus in the USA spreads underground over nearly 10 square kilometres."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Armillaria_ostoyae"
+  },
+  {
+    "id": "race_782",
+    "statement": {
+      "ru": "Корень мандрагоры кричит, когда его выдёргивают из земли.",
+      "en": "A mandrake root screams when it is pulled out of the ground."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mandragora_officinarum"
+  },
+  {
+    "id": "race_783",
+    "statement": {
+      "ru": "Ядовитый плющ — родственник кешью.",
+      "en": "Poison ivy is a relative of the cashew."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Toxicodendron_radicans"
+  },
+  {
+    "id": "race_784",
+    "statement": {
+      "ru": "Самое большое семя на свете весит больше 10 кг.",
+      "en": "The biggest seed in the world weighs more than 10 kg."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lodoicea"
+  },
+  {
+    "id": "race_785",
+    "statement": {
+      "ru": "Мухоморами раньше травили мух — их крошили в молоко.",
+      "en": "People once killed flies with fly agaric crumbled into milk."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Amanita_muscaria"
+  },
+  {
+    "id": "race_786",
+    "statement": {
+      "ru": "Ягоды, которые едят птицы, безопасны и для человека.",
+      "en": "Berries that birds eat are safe for people too."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Toxicodendron_radicans"
+  },
+  {
+    "id": "race_787",
+    "statement": {
+      "ru": "Муравьи разносят семена растений, утаскивая их в муравейник.",
+      "en": "Ants spread plant seeds by carrying them into their nest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Myrmecochory"
+  },
+  {
+    "id": "race_788",
+    "statement": {
+      "ru": "Плод «бешеного огурца» выстреливает семенами на несколько метров.",
+      "en": "The squirting cucumber shoots its seeds several metres."
+    },
+    "answer": true,
+    "source": "https://www.ox.ac.uk/news/2024-11-26-new-study-reveals-explosive-secret-squirting-cucumber"
+  },
+  {
+    "id": "race_789",
+    "statement": {
+      "ru": "Колючки кактуса — это видоизменённые листья.",
+      "en": "A cactus's spines are modified leaves."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cactus"
+  },
+  {
+    "id": "race_790",
+    "statement": {
+      "ru": "Мох на деревьях растёт только с северной стороны.",
+      "en": "Moss grows only on the north side of trees."
+    },
+    "answer": false,
+    "source": "https://www.mentalfloss.com/article/56243/does-moss-really-only-grow-north-side-trees"
+  },
+  {
+    "id": "race_791",
+    "statement": {
+      "ru": "Ядовитый гриб можно узнать по неприятному вкусу.",
+      "en": "You can tell a poisonous mushroom by its bad taste."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mushroom_poisoning"
+  },
+  {
+    "id": "race_792",
+    "statement": {
+      "ru": "Кувшин хищного непентеса бывает таким большим, что в него попадают крысы.",
+      "en": "A carnivorous pitcher plant's pitcher can be big enough to trap rats."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nepenthes_rajah"
+  },
+  {
+    "id": "race_793",
+    "statement": {
+      "ru": "Нашествие кактусов в Австралии остановили гусеницы бабочки.",
+      "en": "An invasion of cacti in Australia was stopped by moth caterpillars."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cactoblastis_cactorum"
+  },
+  {
+    "id": "race_794",
+    "statement": {
+      "ru": "Некоторым семенам, чтобы прорасти, нужен лесной пожар.",
+      "en": "Some seeds need a wildfire to sprout."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fire_ecology"
+  },
+  {
+    "id": "race_795",
+    "statement": {
+      "ru": "Венерина мухоловка ловит в основном мух.",
+      "en": "A Venus flytrap mostly catches flies."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Venus_flytrap"
+  },
+  {
+    "id": "race_796",
+    "statement": {
+      "ru": "Некоторые виды бамбука цветут раз в сто с лишним лет.",
+      "en": "Some kinds of bamboo flower only once in over a hundred years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bamboo"
+  },
+  {
+    "id": "race_797",
+    "statement": {
+      "ru": "Учёные вырастили финиковую пальму из семечка возрастом 2000 лет.",
+      "en": "Scientists grew a date palm from a 2,000-year-old seed."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Judean_date_palm"
+  },
+  {
+    "id": "race_798",
+    "statement": {
+      "ru": "Волоски крапивы работают как шприц: кончик обламывается и впрыскивает яд.",
+      "en": "Nettle hairs work like a syringe: the tip snaps off and injects the sting."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Urtica_dioica"
+  },
+  {
+    "id": "race_799",
+    "statement": {
+      "ru": "Кактус возле компьютера защищает от излучения монитора.",
+      "en": "A cactus next to a computer protects you from the monitor's radiation."
+    },
+    "answer": false,
+    "source": "https://www.kaspersky.com/blog/cacti-against-radiation-myth-or-truth/47053/"
+  },
+  {
+    "id": "race_800",
+    "statement": {
+      "ru": "Листья пустынной вельвичии растут всю её жизнь — сотни лет.",
+      "en": "The leaves of the desert welwitschia keep growing all its life, for hundreds of years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Welwitschia"
+  },
+  {
+    "id": "race_801",
+    "statement": {
+      "ru": "Если в отвар попал ядовитый гриб, серебряная ложка потемнеет.",
+      "en": "If a poisonous mushroom gets into a broth, a silver spoon turns dark."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mushroom_poisoning"
+  },
+  {
+    "id": "race_802",
+    "statement": {
+      "ru": "Дикий бамбук растёт только в Азии.",
+      "en": "Wild bamboo grows only in Asia."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bamboo"
+  },
+  {
+    "id": "race_803",
+    "statement": {
+      "ru": "Хищные растения растут только в тропиках.",
+      "en": "Carnivorous plants grow only in the tropics."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Carnivorous_plant"
+  },
+  {
+    "id": "race_804",
+    "statement": {
+      "ru": "Есть растение, которое годами лежит сухим шариком, а в воде за часы раскрывается.",
+      "en": "There is a plant that lies dry as a ball for years and opens up in water within hours."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Selaginella_lepidophylla"
+  },
+  {
+    "id": "race_805",
+    "statement": {
+      "ru": "В Первую мировую мох сфагнум прикладывали к ранам вместо ваты.",
+      "en": "In the First World War, sphagnum moss was used on wounds instead of cotton."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Moss"
+  },
+  {
+    "id": "race_806",
+    "statement": {
+      "ru": "Кокос может переплыть по морю на другой остров и прорасти там.",
+      "en": "A coconut can float across the sea to another island and sprout there."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Coconut"
+  },
+  {
+    "id": "race_807",
+    "statement": {
+      "ru": "Китовая акула охотится на тюленей.",
+      "en": "A whale shark hunts seals."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Whale_shark"
+  },
+  {
+    "id": "race_808",
+    "statement": {
+      "ru": "Акула за жизнь может сменить больше десяти тысяч зубов.",
+      "en": "A shark can go through more than ten thousand teeth in its life."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shark"
+  },
+  {
+    "id": "race_809",
+    "statement": {
+      "ru": "Морской конёк — это рыба.",
+      "en": "A seahorse is a fish."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Seahorse"
+  },
+  {
+    "id": "race_810",
+    "statement": {
+      "ru": "Стив Ирвин, «Охотник на крокодилов», погиб от зубов крокодила.",
+      "en": "Steve Irwin, the Crocodile Hunter, was killed by a crocodile."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Steve_Irwin"
+  },
+  {
+    "id": "race_811",
+    "statement": {
+      "ru": "Мегалодон до сих пор водится в глубинах океана.",
+      "en": "Megalodon still lives in the depths of the ocean."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Megalodon"
+  },
+  {
+    "id": "race_812",
+    "statement": {
+      "ru": "Рыба-фугу надувается, заглатывая воду.",
+      "en": "A pufferfish blows itself up by gulping water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tetraodontidae"
+  },
+  {
+    "id": "race_813",
+    "statement": {
+      "ru": "Электрический угорь бьёт током сильнее, чем напряжение в розетке.",
+      "en": "An electric eel's shock has a higher voltage than a wall socket."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Electric_eel"
+  },
+  {
+    "id": "race_814",
+    "statement": {
+      "ru": "Яд рыбы-фугу разрушается, если её как следует проварить.",
+      "en": "Pufferfish poison is destroyed if you cook the fish well enough."
+    },
+    "answer": false,
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK507714/"
+  },
+  {
+    "id": "race_815",
+    "statement": {
+      "ru": "Лосось мечет икру в открытом океане.",
+      "en": "Salmon spawn out in the open ocean."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Salmon"
+  },
+  {
+    "id": "race_816",
+    "statement": {
+      "ru": "Рыба-капля при опасности раздувается, как шар.",
+      "en": "A blobfish puffs up like a ball when in danger."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Psychrolutes_marcidus"
+  },
+  {
+    "id": "race_817",
+    "statement": {
+      "ru": "Тихоокеанские лососи погибают вскоре после нереста.",
+      "en": "Pacific salmon die soon after spawning."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Salmon"
+  },
+  {
+    "id": "race_818",
+    "statement": {
+      "ru": "Морские рыбы пьют морскую воду.",
+      "en": "Sea fish drink sea water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fish_physiology"
+  },
+  {
+    "id": "race_819",
+    "statement": {
+      "ru": "Европейские угри плывут на нерест через Атлантику, в Саргассово море.",
+      "en": "European eels swim across the Atlantic to spawn in the Sargasso Sea."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/European_eel"
+  },
+  {
+    "id": "race_820",
+    "statement": {
+      "ru": "Рыбы дышат кислородом, который отщепляют от молекул воды.",
+      "en": "Fish breathe oxygen that they split off water molecules."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gill"
+  },
+  {
+    "id": "race_821",
+    "statement": {
+      "ru": "Рыба-капля в своей родной глубине выглядит как обычная рыба.",
+      "en": "Down in its home depths, a blobfish looks like an ordinary fish."
+    },
+    "answer": true,
+    "source": "https://www.discoverwildlife.com/animal-facts/fish/why-is-the-blobfish-so-ugly"
+  },
+  {
+    "id": "race_822",
+    "statement": {
+      "ru": "Рыбу-попугая назвали так за то, что она подражает звукам.",
+      "en": "The parrotfish got its name because it imitates sounds."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Parrotfish"
+  },
+  {
+    "id": "race_823",
+    "statement": {
+      "ru": "Некоторые рыбы-попугаи спят в «спальном мешке» из собственной слизи.",
+      "en": "Some parrotfish sleep in a 'sleeping bag' made of their own slime."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Parrotfish"
+  },
+  {
+    "id": "race_824",
+    "statement": {
+      "ru": "Скат — близкий родственник камбалы.",
+      "en": "A ray is a close relative of the flounder."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Batoidea"
+  },
+  {
+    "id": "race_825",
+    "statement": {
+      "ru": "Рыба-меч подогревает себе глаза особым органом.",
+      "en": "A swordfish warms its eyes with a special organ."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Swordfish"
+  },
+  {
+    "id": "race_826",
+    "statement": {
+      "ru": "Пираньи водятся в реках Африки.",
+      "en": "Piranhas live in the rivers of Africa."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Piranha"
+  },
+  {
+    "id": "race_827",
+    "statement": {
+      "ru": "Рыба-брызгун сбивает насекомых струёй воды изо рта.",
+      "en": "An archerfish knocks insects down with a jet of water from its mouth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Archerfish"
+  },
+  {
+    "id": "race_828",
+    "statement": {
+      "ru": "Золотая рыбка видит мир чёрно-белым.",
+      "en": "A goldfish sees the world in black and white."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Goldfish"
+  },
+  {
+    "id": "race_829",
+    "statement": {
+      "ru": "Сельди издают звуки, выпуская газ из-под хвоста.",
+      "en": "Herrings make sounds by letting out gas from their rear end."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/List_of_Ig_Nobel_Prize_winners"
+  },
+  {
+    "id": "race_830",
+    "statement": {
+      "ru": "Анчоусы — это мальки сардин.",
+      "en": "Anchovies are baby sardines."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Anchovy"
+  },
+  {
+    "id": "race_831",
+    "statement": {
+      "ru": "Рыба-луна вымётывает до 300 миллионов икринок за раз.",
+      "en": "An ocean sunfish lays up to 300 million eggs at a time."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ocean_sunfish"
+  },
+  {
+    "id": "race_832",
+    "statement": {
+      "ru": "Латимерия вымерла вместе с динозаврами.",
+      "en": "The coelacanth died out along with the dinosaurs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Coelacanth"
+  },
+  {
+    "id": "race_833",
+    "statement": {
+      "ru": "Скат-манта бывает шириной в семь метров.",
+      "en": "A manta ray can be seven metres wide."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Manta_ray"
+  },
+  {
+    "id": "race_834",
+    "statement": {
+      "ru": "Электрический угорь — близкий родственник обычного угря.",
+      "en": "The electric eel is a close relative of the common eel."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Electric_eel"
+  },
+  {
+    "id": "race_835",
+    "statement": {
+      "ru": "У многих сомов вкусовые рецепторы — по всему телу.",
+      "en": "Many catfish have taste receptors all over their bodies."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Catfish"
+  },
+  {
+    "id": "race_836",
+    "statement": {
+      "ru": "Самые быстрые рыбы плавают быстрее 200 км/ч.",
+      "en": "The fastest fish swim at over 200 km/h."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Fastest_animals"
+  },
+  {
+    "id": "race_837",
+    "statement": {
+      "ru": "Во Франции есть сомы, которые выпрыгивают на берег за голубями.",
+      "en": "In France, some catfish lunge out onto the shore to catch pigeons."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wels_catfish"
+  },
+  {
+    "id": "race_838",
+    "statement": {
+      "ru": "Рыбу-хирурга назвали так за то, что она лечит других рыб.",
+      "en": "The surgeonfish got its name because it treats other fish."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Acanthuridae"
+  },
+  {
+    "id": "race_839",
+    "statement": {
+      "ru": "Акулы невосприимчивы к раку.",
+      "en": "Sharks are immune to cancer."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Shark_cartilage"
+  },
+  {
+    "id": "race_840",
+    "statement": {
+      "ru": "У мурены в глотке есть вторые челюсти, которые выскакивают за добычей.",
+      "en": "A moray eel has a second set of jaws in its throat that shoot out to grab prey."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Moray_eel"
+  },
+  {
+    "id": "race_841",
+    "statement": {
+      "ru": "Мурена — это морская змея.",
+      "en": "A moray is a sea snake."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Moray_eel"
+  },
+  {
+    "id": "race_842",
+    "statement": {
+      "ru": "Детёныши песчаной акулы поедают друг друга ещё в утробе матери.",
+      "en": "Sand tiger shark pups eat each other while still inside their mother."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sand_tiger_shark"
+  },
+  {
+    "id": "race_843",
+    "statement": {
+      "ru": "Большая белая акула — самая крупная акула на свете.",
+      "en": "The great white is the biggest shark in the world."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Whale_shark"
+  },
+  {
+    "id": "race_844",
+    "statement": {
+      "ru": "Древние римляне лечили головную боль электрическим скатом.",
+      "en": "Ancient Romans treated headaches with an electric ray."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Electric_ray"
+  },
+  {
+    "id": "race_845",
+    "statement": {
+      "ru": "Летучая рыба машет плавниками, как птица крыльями.",
+      "en": "A flying fish flaps its fins like a bird flaps its wings."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Flying_fish"
+  },
+  {
+    "id": "race_846",
+    "statement": {
+      "ru": "Летучая рыба может пролететь над водой 400 метров.",
+      "en": "A flying fish can travel 400 metres above the water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Flying_fish"
+  },
+  {
+    "id": "race_847",
+    "statement": {
+      "ru": "Свет «фонарика» глубоководного удильщика дают бактерии.",
+      "en": "The light in a deep-sea anglerfish's lure comes from bacteria."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Anglerfish"
+  },
+  {
+    "id": "race_848",
+    "statement": {
+      "ru": "Рыба-прилипала питается кровью акулы, к которой присосалась.",
+      "en": "A remora feeds on the blood of the shark it clings to."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Remora"
+  },
+  {
+    "id": "race_849",
+    "statement": {
+      "ru": "Илистый прыгун может проводить на суше большую часть жизни.",
+      "en": "A mudskipper can spend most of its life on land."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mudskipper"
+  },
+  {
+    "id": "race_850",
+    "statement": {
+      "ru": "У осьминога больше нейронов в щупальцах, чем в голове.",
+      "en": "An octopus has more neurons in its arms than in its head."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Octopus"
+  },
+  {
+    "id": "race_851",
+    "statement": {
+      "ru": "Тюлень-крабоед питается в основном крабами.",
+      "en": "The crabeater seal lives mainly on crabs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Crabeater_seal"
+  },
+  {
+    "id": "race_852",
+    "statement": {
+      "ru": "Медуза живёт без мозга.",
+      "en": "A jellyfish lives without a brain."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jellyfish"
+  },
+  {
+    "id": "race_853",
+    "statement": {
+      "ru": "Медузы появились на Земле позже динозавров.",
+      "en": "Jellyfish appeared on Earth after the dinosaurs."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Jellyfish"
+  },
+  {
+    "id": "race_854",
+    "statement": {
+      "ru": "Кораллы — это животные.",
+      "en": "Corals are animals."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Coral"
+  },
+  {
+    "id": "race_855",
+    "statement": {
+      "ru": "Большой Барьерный риф видно из космоса.",
+      "en": "The Great Barrier Reef can be seen from space."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Great_Barrier_Reef"
+  },
+  {
+    "id": "race_856",
+    "statement": {
+      "ru": "Омары кричат, когда их бросают в кипяток.",
+      "en": "Lobsters scream when they are dropped into boiling water."
+    },
+    "answer": false,
+    "source": "https://www.tastingtable.com/1772753/do-lobsters-scream-cooked-myth"
+  },
+  {
+    "id": "race_857",
+    "statement": {
+      "ru": "Дельфины зовут друг друга по «именам» — особым свистам.",
+      "en": "Dolphins call each other by 'names': their own special whistles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dolphin"
+  },
+  {
+    "id": "race_858",
+    "statement": {
+      "ru": "Осьминог может прожить полвека.",
+      "en": "An octopus can live for half a century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Octopus"
+  },
+  {
+    "id": "race_859",
+    "statement": {
+      "ru": "Бивень нарвала — это зуб.",
+      "en": "A narwhal's tusk is a tooth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Narwhal"
+  },
+  {
+    "id": "race_860",
+    "statement": {
+      "ru": "Белухи рождаются белоснежными.",
+      "en": "Beluga whales are born snow white."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Beluga_whale"
+  },
+  {
+    "id": "race_861",
+    "statement": {
+      "ru": "Некоторые кальмары умеют вылетать из воды и пролетать десятки метров.",
+      "en": "Some squid can leap out of the water and fly for tens of metres."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Squid"
+  },
+  {
+    "id": "race_862",
+    "statement": {
+      "ru": "Нарвал — выдуманное животное, как единорог.",
+      "en": "The narwhal is a made-up animal, like the unicorn."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Narwhal"
+  },
+  {
+    "id": "race_863",
+    "statement": {
+      "ru": "Японский краб-паук в размахе ног бывает шире трёх метров.",
+      "en": "A Japanese spider crab's legs can span more than three metres."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Japanese_spider_crab"
+  },
+  {
+    "id": "race_864",
+    "statement": {
+      "ru": "Детёныш кита обычно появляется на свет головой вперёд.",
+      "en": "A baby whale is usually born head first."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cetacea"
+  },
+  {
+    "id": "race_865",
+    "statement": {
+      "ru": "Рак-богомол может ударом разбить стекло аквариума.",
+      "en": "A mantis shrimp can break aquarium glass with a punch."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mantis_shrimp"
+  },
+  {
+    "id": "race_866",
+    "statement": {
+      "ru": "Самое глубокое место океана — около трёх километров.",
+      "en": "The deepest point of the ocean is about three kilometres down."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mariana_Trench"
+  },
+  {
+    "id": "race_867",
+    "statement": {
+      "ru": "На кончике каждого луча морской звезды есть глаз.",
+      "en": "A starfish has an eye at the tip of each arm."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Starfish"
+  },
+  {
+    "id": "race_868",
+    "statement": {
+      "ru": "Касатки живут только в тёплых морях.",
+      "en": "Orcas live only in warm seas."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Orca"
+  },
+  {
+    "id": "race_869",
+    "statement": {
+      "ru": "Морские черепахи «плачут» — так из них выходит лишняя соль.",
+      "en": "Sea turtles 'cry' to get rid of extra salt."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sea_turtle"
+  },
+  {
+    "id": "race_870",
+    "statement": {
+      "ru": "Моржи живут и в Арктике, и в Антарктиде.",
+      "en": "Walruses live in both the Arctic and the Antarctic."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Walrus"
+  },
+  {
+    "id": "race_871",
+    "statement": {
+      "ru": "На дне Марианской впадины побывало больше людей, чем ходило по Луне.",
+      "en": "More people have been to the bottom of the Mariana Trench than have walked on the Moon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Challenger_Deep"
+  },
+  {
+    "id": "race_872",
+    "statement": {
+      "ru": "Морская черепаха может спрятать голову в панцирь.",
+      "en": "A sea turtle can pull its head into its shell."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sea_turtle"
+  },
+  {
+    "id": "race_873",
+    "statement": {
+      "ru": "Гренландский кит может прожить больше 200 лет.",
+      "en": "A bowhead whale can live for more than 200 years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bowhead_whale"
+  },
+  {
+    "id": "race_874",
+    "statement": {
+      "ru": "Белуха умеет поворачивать голову и кивать.",
+      "en": "A beluga whale can turn its head and nod."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Beluga_whale"
+  },
+  {
+    "id": "race_875",
+    "statement": {
+      "ru": "Синий кит питается в основном рыбой.",
+      "en": "The blue whale lives mainly on fish."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Blue_whale"
+  },
+  {
+    "id": "race_876",
+    "statement": {
+      "ru": "Калан носит с собой камень в кармане под лапой.",
+      "en": "A sea otter carries a stone in a pocket under its foreleg."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sea_otter"
+  },
+  {
+    "id": "race_877",
+    "statement": {
+      "ru": "Петь умеют только самки горбатых китов.",
+      "en": "Only female humpback whales sing."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Whale_song"
+  },
+  {
+    "id": "race_878",
+    "statement": {
+      "ru": "Раки-отшельники выстраиваются в очередь по размеру, чтобы обменяться раковинами.",
+      "en": "Hermit crabs line up by size to swap shells."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hermit_crab"
+  },
+  {
+    "id": "race_879",
+    "statement": {
+      "ru": "Мидии держатся за камни корнями.",
+      "en": "Mussels hold on to rocks with roots."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mussel"
+  },
+  {
+    "id": "race_880",
+    "statement": {
+      "ru": "У краба есть зубы — прямо в желудке.",
+      "en": "A crab has teeth, right in its stomach."
+    },
+    "answer": true,
+    "source": "https://www.smithsonianmag.com/smart-news/ghost-crabs-use-teeth-their-stomachs-ward-predators-180973109/"
+  },
+  {
+    "id": "race_881",
+    "statement": {
+      "ru": "Тюлени рожают детёнышей прямо в воде.",
+      "en": "Seals give birth right in the water."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pinniped"
+  },
+  {
+    "id": "race_882",
+    "statement": {
+      "ru": "Из китового уса делали корсеты.",
+      "en": "Corsets used to be made with whalebone (baleen)."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Baleen"
+  },
+  {
+    "id": "race_883",
+    "statement": {
+      "ru": "Калана от холода спасает толстый слой жира.",
+      "en": "A thick layer of blubber keeps the sea otter warm."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sea_otter"
+  },
+  {
+    "id": "race_884",
+    "statement": {
+      "ru": "Амбра, которую ценят парфюмеры, рождается в кишечнике кашалота.",
+      "en": "Ambergris, prized by perfume makers, forms in a sperm whale's gut."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ambergris"
+  },
+  {
+    "id": "race_885",
+    "statement": {
+      "ru": "Каракатица в родстве ближе к медузе, чем к улитке.",
+      "en": "A cuttlefish is more closely related to a jellyfish than to a snail."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cuttlefish"
+  },
+  {
+    "id": "race_886",
+    "statement": {
+      "ru": "Морской огурец дышит через задний проход.",
+      "en": "A sea cucumber breathes through its bottom."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sea_cucumber"
+  },
+  {
+    "id": "race_887",
+    "statement": {
+      "ru": "Криль — это мелкая рыбка.",
+      "en": "Krill are tiny fish."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Krill"
+  },
+  {
+    "id": "race_888",
+    "statement": {
+      "ru": "Устрица может за жизнь сменить пол.",
+      "en": "An oyster can change sex during its life."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Oyster"
+  },
+  {
+    "id": "race_889",
+    "statement": {
+      "ru": "Мечехвост — это разновидность краба.",
+      "en": "A horseshoe crab is a kind of crab."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Horseshoe_crab"
+  },
+  {
+    "id": "race_890",
+    "statement": {
+      "ru": "В Амазонке живут розовые дельфины.",
+      "en": "Pink dolphins live in the Amazon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Amazon_river_dolphin"
+  },
+  {
+    "id": "race_891",
+    "statement": {
+      "ru": "Пищевод кальмара проходит сквозь его мозг.",
+      "en": "A squid's gullet passes through its brain."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Squid"
   }
 ]
