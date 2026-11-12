@@ -12211,5 +12211,4379 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Atmospheric_pressure"
+  },
+  {
+    "id": "race_1359",
+    "statement": {
+      "ru": "«Мона Лиза» написана на холсте.",
+      "en": "The Mona Lisa is painted on canvas."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mona_Lisa"
+  },
+  {
+    "id": "race_1360",
+    "statement": {
+      "ru": "Прежде чем стать художником, Ван Гог был проповедником у шахтёров.",
+      "en": "Before he became a painter, Van Gogh was a preacher among coal miners."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+  },
+  {
+    "id": "race_1361",
+    "statement": {
+      "ru": "Голых людей на «Страшном суде» Микеланджело позже прикрыли нарисованной одеждой.",
+      "en": "The naked figures in Michelangelo's Last Judgment were later covered with painted-on clothes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Last_Judgment_(Michelangelo)"
+  },
+  {
+    "id": "race_1362",
+    "statement": {
+      "ru": "Леонардо да Винчи закончил больше сотни картин.",
+      "en": "Leonardo da Vinci finished more than a hundred paintings."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
+  },
+  {
+    "id": "race_1363",
+    "statement": {
+      "ru": "Рембрандт — это имя художника, а не фамилия.",
+      "en": "Rembrandt is the painter's first name, not his surname."
+    },
+    "answer": true,
+    "source": "https://www.mentalfloss.com/article/81770/15-facts-about-rembrandt-his-birthday"
+  },
+  {
+    "id": "race_1364",
+    "statement": {
+      "ru": "«Герника» Пикассо — яркая картина в красных и жёлтых тонах.",
+      "en": "Picasso's Guernica is a bright painting in reds and yellows."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+  },
+  {
+    "id": "race_1365",
+    "statement": {
+      "ru": "«Мона Лиза» какое-то время висела в спальне Наполеона.",
+      "en": "For a while the Mona Lisa hung in Napoleon's bedroom."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mona_Lisa"
+  },
+  {
+    "id": "race_1366",
+    "statement": {
+      "ru": "Художник Караваджо убил человека и бежал из Рима.",
+      "en": "The painter Caravaggio killed a man and fled Rome."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Caravaggio"
+  },
+  {
+    "id": "race_1367",
+    "statement": {
+      "ru": "Картина Дали с растекающимися часами — огромная, во всю стену.",
+      "en": "Dalí's painting of the melting clocks is huge, the size of a whole wall."
+    },
+    "answer": false,
+    "source": "https://www.britannica.com/topic/The-Persistence-of-Memory"
+  },
+  {
+    "id": "race_1368",
+    "statement": {
+      "ru": "Фрида Кало собиралась стать врачом, но попала в аварию.",
+      "en": "Frida Kahlo was going to be a doctor, but then she was in an accident."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Frida_Kahlo"
+  },
+  {
+    "id": "race_1369",
+    "statement": {
+      "ru": "Слово «импрессионизм» художники придумали себе сами как гордое название.",
+      "en": "The Impressionists made up the word 'Impressionism' themselves as a proud name."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Impressionism"
+  },
+  {
+    "id": "race_1370",
+    "statement": {
+      "ru": "Коричневую краску сепию делали из чернил каракатицы.",
+      "en": "The brown paint sepia was made from cuttlefish ink."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sepia_(color)"
+  },
+  {
+    "id": "race_1371",
+    "statement": {
+      "ru": "Пикассо за всю жизнь создал меньше тысячи работ.",
+      "en": "Picasso made fewer than a thousand works in his whole life."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pablo_Picasso"
+  },
+  {
+    "id": "race_1372",
+    "statement": {
+      "ru": "Картины Уорхола с Мэрилин Монро однажды прострелили из револьвера.",
+      "en": "Warhol's paintings of Marilyn Monroe were once shot through with a revolver."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shot_Marilyns"
+  },
+  {
+    "id": "race_1373",
+    "statement": {
+      "ru": "Мунк написал «Крик» в одном-единственном экземпляре.",
+      "en": "Munch made The Scream as one single painting, with no other versions."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Scream"
+  },
+  {
+    "id": "race_1374",
+    "statement": {
+      "ru": "Старые мастера замешивали краски на яичном желтке.",
+      "en": "The old masters mixed their paints with egg yolk."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tempera"
+  },
+  {
+    "id": "race_1375",
+    "statement": {
+      "ru": "Дега больше всего любил рисовать боксёров.",
+      "en": "Degas's favourite subject was boxers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Edgar_Degas"
+  },
+  {
+    "id": "race_1376",
+    "statement": {
+      "ru": "Бэнкси тайком вешал свои картины в музеях Нью-Йорка.",
+      "en": "Banksy secretly hung his own pictures in New York museums."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Banksy"
+  },
+  {
+    "id": "race_1377",
+    "statement": {
+      "ru": "После смерти Вермеера о нём почти на двести лет забыли.",
+      "en": "After Vermeer died, he was almost forgotten for two hundred years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Johannes_Vermeer"
+  },
+  {
+    "id": "race_1378",
+    "statement": {
+      "ru": "Рембрандт до самой смерти жил в богатстве.",
+      "en": "Rembrandt lived in wealth until the day he died."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rembrandt"
+  },
+  {
+    "id": "race_1379",
+    "statement": {
+      "ru": "Поллок писал картины, разбрызгивая краску на холст, лежащий на полу.",
+      "en": "Pollock painted by dripping paint onto a canvas lying on the floor."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jackson_Pollock"
+  },
+  {
+    "id": "race_1380",
+    "statement": {
+      "ru": "Золото на «Поцелуе» Климта — это просто жёлтая краска.",
+      "en": "The gold in Klimt's The Kiss is just yellow paint."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)"
+  },
+  {
+    "id": "race_1381",
+    "statement": {
+      "ru": "Сальвадор Дали работал над мультфильмом вместе с Уолтом Диснеем.",
+      "en": "Salvador Dalí worked on a cartoon together with Walt Disney."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Destino"
+  },
+  {
+    "id": "race_1382",
+    "statement": {
+      "ru": "Моне и Мане — один и тот же художник, просто имя пишут по-разному.",
+      "en": "Monet and Manet are the same painter; his name is just spelled two ways."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/%C3%89douard_Manet"
+  },
+  {
+    "id": "race_1383",
+    "statement": {
+      "ru": "Белую краску художники веками делали из свинца.",
+      "en": "For centuries, painters' white paint was made from lead."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lead_white"
+  },
+  {
+    "id": "race_1384",
+    "statement": {
+      "ru": "Рафаэль дожил до глубокой старости.",
+      "en": "Raphael lived to a ripe old age."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Raphael"
+  },
+  {
+    "id": "race_1385",
+    "statement": {
+      "ru": "Уорхол годами складывал всякий хлам в коробки и набил их больше шестисот.",
+      "en": "For years Warhol packed odds and ends into boxes and filled more than six hundred."
+    },
+    "answer": true,
+    "source": "https://www.npr.org/2013/11/02/242174661/dead-bees-nail-clippings-and-priceless-art-in-warhols-time-capsules"
+  },
+  {
+    "id": "race_1386",
+    "statement": {
+      "ru": "Фрида Кало писала в основном огромные фрески на стенах.",
+      "en": "Frida Kahlo painted mostly huge murals on walls."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Frida_Kahlo"
+  },
+  {
+    "id": "race_1387",
+    "statement": {
+      "ru": "Матисс в старости создавал картины, вырезая их ножницами из бумаги.",
+      "en": "In old age Matisse made pictures by cutting them out of paper with scissors."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Henri_Matisse"
+  },
+  {
+    "id": "race_1388",
+    "statement": {
+      "ru": "«Тайная вечеря» Леонардо написана по сырой штукатурке, как обычная фреска.",
+      "en": "Leonardo's Last Supper was painted on wet plaster, like an ordinary fresco."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)"
+  },
+  {
+    "id": "race_1389",
+    "statement": {
+      "ru": "Когда-то на Олимпийских играх давали медали за живопись.",
+      "en": "Medals were once given for painting at the Olympic Games."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Art_competitions_at_the_Summer_Olympics"
+  },
+  {
+    "id": "race_1390",
+    "statement": {
+      "ru": "Масляные краски изобрели только в XIX веке.",
+      "en": "Oil paints were invented only in the 19th century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Oil_paint"
+  },
+  {
+    "id": "race_1391",
+    "statement": {
+      "ru": "Под трубкой на знаменитой картине Магритта написано «Это не трубка».",
+      "en": "Under the pipe in Magritte's famous painting are the words 'This is not a pipe'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Treachery_of_Images"
+  },
+  {
+    "id": "race_1392",
+    "statement": {
+      "ru": "Вермеер оставил после себя больше пятисот картин.",
+      "en": "Vermeer left behind more than five hundred paintings."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Johannes_Vermeer"
+  },
+  {
+    "id": "race_1393",
+    "statement": {
+      "ru": "Уинстон Черчилль написал больше 500 картин.",
+      "en": "Winston Churchill painted more than 500 pictures."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Winston_Churchill_as_a_painter"
+  },
+  {
+    "id": "race_1394",
+    "statement": {
+      "ru": "Рубенс прославился портретами очень худых женщин.",
+      "en": "Rubens was famous for painting very thin women."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Peter_Paul_Rubens"
+  },
+  {
+    "id": "race_1395",
+    "statement": {
+      "ru": "На картине Боттичелли Венера выходит из моря верхом на дельфине.",
+      "en": "In Botticelli's painting, Venus rises from the sea riding a dolphin."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Birth_of_Venus"
+  },
+  {
+    "id": "race_1396",
+    "statement": {
+      "ru": "Право на сверхчёрный Vantablack в искусстве получил всего один художник.",
+      "en": "Only one artist got the right to use the ultra-black Vantablack in art."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vantablack"
+  },
+  {
+    "id": "race_1397",
+    "statement": {
+      "ru": "Гоген уехал от цивилизации писать картины в Африку.",
+      "en": "Gauguin left civilisation behind to paint in Africa."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Paul_Gauguin"
+  },
+  {
+    "id": "race_1398",
+    "statement": {
+      "ru": "Сёра писал картины из тысяч крошечных цветных точек.",
+      "en": "Seurat made his paintings out of thousands of tiny coloured dots."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pointillism"
+  },
+  {
+    "id": "race_1399",
+    "statement": {
+      "ru": "«Ночной дозор» Рембрандта обрезали, чтобы он влез на новое место.",
+      "en": "Rembrandt's Night Watch was cut down to fit in a new place."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Night_Watch"
+  },
+  {
+    "id": "race_1400",
+    "statement": {
+      "ru": "Таможня США не признала скульптуру искусством и взяла пошлину как за металл.",
+      "en": "US customs refused to accept a sculpture as art and charged duty on it as metal."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bird_in_Space"
+  },
+  {
+    "id": "race_1401",
+    "statement": {
+      "ru": "Моментальную фотографию Polaroid изобрели в Японии.",
+      "en": "Polaroid instant photography was invented in Japan."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Edwin_H._Land"
+  },
+  {
+    "id": "race_1402",
+    "statement": {
+      "ru": "Фото «Обед на небоскрёбе» — монтаж: рабочие на балке не сидели.",
+      "en": "The photo Lunch atop a Skyscraper is a montage: the workers never sat on that beam."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lunch_atop_a_Skyscraper"
+  },
+  {
+    "id": "race_1403",
+    "statement": {
+      "ru": "Венеру Милосскую откопал крестьянин на греческом острове.",
+      "en": "The Venus de Milo was dug up by a farmer on a Greek island."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Venus_de_Milo"
+  },
+  {
+    "id": "race_1404",
+    "statement": {
+      "ru": "Уборщица в лондонской галерее выбросила экспонат — мешок с мусором.",
+      "en": "A cleaner at a London gallery threw away an exhibit: a bag of rubbish."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Gustav_Metzger"
+  },
+  {
+    "id": "race_1405",
+    "statement": {
+      "ru": "Коринфскую колонну, по легенде, подсказала корзинка на могиле девушки.",
+      "en": "Legend says the Corinthian column was inspired by a basket on a girl's grave."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Corinthian_order"
+  },
+  {
+    "id": "race_1406",
+    "statement": {
+      "ru": "Сквозь здание Рейксмузеума в Амстердаме проходит велодорожка.",
+      "en": "A cycle path runs right through the Rijksmuseum building in Amsterdam."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rijksmuseum"
+  },
+  {
+    "id": "race_1407",
+    "statement": {
+      "ru": "Название фирмы Kodak — фамилия её основателя.",
+      "en": "The name Kodak is its founder's surname."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Kodak"
+  },
+  {
+    "id": "race_1408",
+    "statement": {
+      "ru": "Готические соборы узнают по толстым стенам и крошечным окнам.",
+      "en": "Gothic cathedrals are known for their thick walls and tiny windows."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gothic_architecture"
+  },
+  {
+    "id": "race_1409",
+    "statement": {
+      "ru": "Брутализм назван так за грубый, «жестокий» вид зданий.",
+      "en": "Brutalism is named after the brutal, harsh look of its buildings."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Brutalist_architecture"
+  },
+  {
+    "id": "race_1410",
+    "statement": {
+      "ru": "Подростки положили на пол музея очки — и посетители приняли их за экспонат.",
+      "en": "Teenagers put a pair of glasses on a museum floor, and visitors took them for an exhibit."
+    },
+    "answer": true,
+    "source": "https://www.atlasobscura.com/articles/everyone-thought-it-was-art-when-these-clever-teens-put-glasses-on-museum-floor"
+  },
+  {
+    "id": "race_1411",
+    "statement": {
+      "ru": "Лувр открыт для посетителей каждый день, без выходных.",
+      "en": "The Louvre is open to visitors every day of the week."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Louvre"
+  },
+  {
+    "id": "race_1412",
+    "statement": {
+      "ru": "Ле Корбюзье — настоящее имя знаменитого архитектора.",
+      "en": "Le Corbusier is the famous architect's real name."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Le_Corbusier"
+  },
+  {
+    "id": "race_1413",
+    "statement": {
+      "ru": "Музей Гуггенхайма в Бильбао снаружи покрыт титаном.",
+      "en": "The Guggenheim Museum in Bilbao is covered with titanium on the outside."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Guggenheim_Museum_Bilbao"
+  },
+  {
+    "id": "race_1414",
+    "statement": {
+      "ru": "Смитсоновский институт основан на деньги британца, ни разу не бывавшего в США.",
+      "en": "The Smithsonian was founded with the money of a Briton who never visited the USA."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/James_Smithson"
+  },
+  {
+    "id": "race_1415",
+    "statement": {
+      "ru": "Античные греческие статуи задумывались чисто белыми, без всякой краски.",
+      "en": "Ancient Greek statues were meant to be pure white, with no paint at all."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Polychrome"
+  },
+  {
+    "id": "race_1416",
+    "statement": {
+      "ru": "Готический стиль так назван, потому что его придумали готы.",
+      "en": "The Gothic style is so called because the Goths invented it."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gothic_architecture"
+  },
+  {
+    "id": "race_1417",
+    "statement": {
+      "ru": "«Собака из шариков» Джеффа Кунса сделана из надутой резины.",
+      "en": "Jeff Koons's Balloon Dog is made of inflated rubber."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Balloon_Dog"
+  },
+  {
+    "id": "race_1418",
+    "statement": {
+      "ru": "Стиль модерн любит прямые линии и прямые углы.",
+      "en": "Art Nouveau loves straight lines and right angles."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Art_Nouveau"
+  },
+  {
+    "id": "race_1419",
+    "statement": {
+      "ru": "Ватиканские музеи начались с покупки одной-единственной статуи.",
+      "en": "The Vatican Museums began with the purchase of a single statue."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vatican_Museums"
+  },
+  {
+    "id": "race_1420",
+    "statement": {
+      "ru": "Моментальное фото придумали после вопроса трёхлетней дочки изобретателя.",
+      "en": "Instant photography was thought up after a question from the inventor's three-year-old daughter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Edwin_H._Land"
+  },
+  {
+    "id": "race_1421",
+    "statement": {
+      "ru": "Вход в музеи Смитсоновского института в Вашингтоне платный.",
+      "en": "Entry to the Smithsonian museums in Washington costs money."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Smithsonian_Institution"
+  },
+  {
+    "id": "race_1422",
+    "statement": {
+      "ru": "Глыбу для «Давида» Микеланджело до него бросили другие скульпторы.",
+      "en": "The block Michelangelo used for David had been given up on by other sculptors."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/David_(Michelangelo)"
+  },
+  {
+    "id": "race_1423",
+    "statement": {
+      "ru": "Из берлинского музея украли золотую монету весом сто килограммов.",
+      "en": "A gold coin weighing 100 kilograms was stolen from a Berlin museum."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Big_Maple_Leaf"
+  },
+  {
+    "id": "race_1424",
+    "statement": {
+      "ru": "Украденную из Вены золотую солонку Челлини нашли закопанной в лесу.",
+      "en": "Cellini's gold salt cellar, stolen in Vienna, was found buried in a forest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cellini_Salt_Cellar"
+  },
+  {
+    "id": "race_1425",
+    "statement": {
+      "ru": "«Поцелуй» Родена изображает Ромео и Джульетту.",
+      "en": "Rodin's The Kiss shows Romeo and Juliet."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Kiss_(Rodin_sculpture)"
+  },
+  {
+    "id": "race_1426",
+    "statement": {
+      "ru": "Фотобудки-автоматы появились только в 1990-х.",
+      "en": "Photo booths only appeared in the 1990s."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Photo_booth"
+  },
+  {
+    "id": "race_1427",
+    "statement": {
+      "ru": "Венера Милосская отлита из бронзы.",
+      "en": "The Venus de Milo is cast in bronze."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Venus_de_Milo"
+  },
+  {
+    "id": "race_1428",
+    "statement": {
+      "ru": "Фото скачущей лошади доказали: на миг она отрывает от земли все четыре ноги.",
+      "en": "Photos of a galloping horse proved that for a moment all four hooves leave the ground."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Horse_in_Motion"
+  },
+  {
+    "id": "race_1429",
+    "statement": {
+      "ru": "Британский музей выставляет больше половины своей коллекции.",
+      "en": "The British Museum puts more than half of its collection on display."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/British_Museum"
+  },
+  {
+    "id": "race_1430",
+    "statement": {
+      "ru": "В Бостоне есть музей, который собирает только плохие картины.",
+      "en": "Boston has a museum that collects only bad paintings."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Museum_of_Bad_Art"
+  },
+  {
+    "id": "race_1431",
+    "statement": {
+      "ru": "У «Моисея» Микеланджело на голове рога.",
+      "en": "Michelangelo's Moses has horns on his head."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Moses_(Michelangelo)"
+  },
+  {
+    "id": "race_1432",
+    "statement": {
+      "ru": "Лувр стал музеем во время Французской революции.",
+      "en": "The Louvre became a museum during the French Revolution."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Louvre"
+  },
+  {
+    "id": "race_1433",
+    "statement": {
+      "ru": "Девочку с обложки National Geographic с зелёными глазами так и не нашли.",
+      "en": "The green-eyed girl from the National Geographic cover was never found."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Afghan_Girl"
+  },
+  {
+    "id": "race_1434",
+    "statement": {
+      "ru": "Знаменитый снимок «Восход Земли» сделан человеком, стоявшим на Луне.",
+      "en": "The famous Earthrise photo was taken by someone standing on the Moon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Earthrise"
+  },
+  {
+    "id": "race_1435",
+    "statement": {
+      "ru": "«Мыслитель» Родена сначала назывался «Поэт».",
+      "en": "Rodin's The Thinker was first called The Poet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Thinker"
+  },
+  {
+    "id": "race_1436",
+    "statement": {
+      "ru": "Первый фотоаппарат Kodak после съёмки целиком отправляли на завод.",
+      "en": "After shooting, the whole first Kodak camera was mailed back to the factory."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kodak"
+  },
+  {
+    "id": "race_1437",
+    "statement": {
+      "ru": "Слово «камера» на латыни означало «комната».",
+      "en": "The word 'camera' meant 'room' in Latin."
+    },
+    "answer": true,
+    "source": "https://en.wiktionary.org/wiki/camera"
+  },
+  {
+    "id": "race_1438",
+    "statement": {
+      "ru": "Дорические колонны — самые пышные: с завитками и листьями.",
+      "en": "Doric columns are the fanciest kind, with scrolls and leaves."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Doric_order"
+  },
+  {
+    "id": "race_1439",
+    "statement": {
+      "ru": "Первый известный в истории музей устроила вавилонская принцесса.",
+      "en": "The earliest known museum in history was set up by a Babylonian princess."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ennigaldi-Nanna%27s_museum"
+  },
+  {
+    "id": "race_1440",
+    "statement": {
+      "ru": "Ватикан по площади меньше, чем Центральный парк в Нью-Йорке.",
+      "en": "Vatican City is smaller than New York's Central Park."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vatican_City"
+  },
+  {
+    "id": "race_1441",
+    "statement": {
+      "ru": "Голливуд — отдельный город рядом с Лос-Анджелесом.",
+      "en": "Hollywood is a separate city next to Los Angeles."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hollywood,_Los_Angeles"
+  },
+  {
+    "id": "race_1442",
+    "statement": {
+      "ru": "Главы Андорры — президент Франции и испанский епископ.",
+      "en": "Andorra's heads of state are the President of France and a Spanish bishop."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Co-princes_of_Andorra"
+  },
+  {
+    "id": "race_1443",
+    "statement": {
+      "ru": "У флага Парагвая лицевая и обратная стороны разные.",
+      "en": "The flag of Paraguay looks different on its front and back."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Paraguay"
+  },
+  {
+    "id": "race_1444",
+    "statement": {
+      "ru": "Техас — самый большой по площади штат США.",
+      "en": "Texas is the largest US state by area."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_area"
+  },
+  {
+    "id": "race_1445",
+    "statement": {
+      "ru": "Люксембург — единственное великое герцогство в мире.",
+      "en": "Luxembourg is the only grand duchy in the world."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Grand_duchy"
+  },
+  {
+    "id": "race_1446",
+    "statement": {
+      "ru": "Зебра с обложки «Битлз» Abbey Road находится в Ливерпуле.",
+      "en": "The zebra crossing from the Beatles' Abbey Road cover is in Liverpool."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Abbey_Road_Studios"
+  },
+  {
+    "id": "race_1447",
+    "statement": {
+      "ru": "Нью-Йорк когда-то был столицей США.",
+      "en": "New York was once the capital of the United States."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Federal_Hall"
+  },
+  {
+    "id": "race_1448",
+    "statement": {
+      "ru": "В Ирландии, в отличие от Британии, ездят по правой стороне.",
+      "en": "Unlike in Britain, people in Ireland drive on the right."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic"
+  },
+  {
+    "id": "race_1449",
+    "statement": {
+      "ru": "Вся Швеция за одну ночь пересела с левой стороны дороги на правую.",
+      "en": "All of Sweden switched from driving on the left to the right in one night."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dagen_H"
+  },
+  {
+    "id": "race_1450",
+    "statement": {
+      "ru": "Швейцария входит в Евросоюз.",
+      "en": "Switzerland is a member of the European Union."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Switzerland%E2%80%93European_Union_relations"
+  },
+  {
+    "id": "race_1451",
+    "statement": {
+      "ru": "Король и правительство Нидерландов работают в Амстердаме.",
+      "en": "The Dutch king and government work in Amsterdam."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Amsterdam"
+  },
+  {
+    "id": "race_1452",
+    "statement": {
+      "ru": "Весь Евросоюз по площади больше Канады.",
+      "en": "The whole European Union is bigger than Canada."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/European_Union"
+  },
+  {
+    "id": "race_1453",
+    "statement": {
+      "ru": "В Мексике живёт больше людей, чем в Германии.",
+      "en": "More people live in Mexico than in Germany."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population"
+  },
+  {
+    "id": "race_1454",
+    "statement": {
+      "ru": "Бразилия граничит со всеми странами Южной Америки.",
+      "en": "Brazil borders every country in South America."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Brazil"
+  },
+  {
+    "id": "race_1455",
+    "statement": {
+      "ru": "Бразилия получила своё имя от дерева.",
+      "en": "Brazil got its name from a tree."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Brazil"
+  },
+  {
+    "id": "race_1456",
+    "statement": {
+      "ru": "Название «Венесуэла» значит «маленькая Испания».",
+      "en": "The name 'Venezuela' means 'little Spain'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Venezuela"
+  },
+  {
+    "id": "race_1457",
+    "statement": {
+      "ru": "Аргентина названа в честь серебра.",
+      "en": "Argentina is named after silver."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Argentina"
+  },
+  {
+    "id": "race_1458",
+    "statement": {
+      "ru": "Лас-Вегас — столица штата Невада.",
+      "en": "Las Vegas is the capital of the state of Nevada."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Carson_City,_Nevada"
+  },
+  {
+    "id": "race_1459",
+    "statement": {
+      "ru": "В Чикаго каждый год красят реку в зелёный цвет.",
+      "en": "Every year Chicago dyes its river green."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chicago_River"
+  },
+  {
+    "id": "race_1460",
+    "statement": {
+      "ru": "Полосы на флаге США — по одной на каждый штат.",
+      "en": "The stripes on the US flag stand for one state each."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States"
+  },
+  {
+    "id": "race_1461",
+    "statement": {
+      "ru": "В гимне Греции больше 150 куплетов.",
+      "en": "The Greek national anthem has more than 150 verses."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hymn_to_Liberty"
+  },
+  {
+    "id": "race_1462",
+    "statement": {
+      "ru": "Самая северная столица мира — Осло.",
+      "en": "The world's northernmost capital is Oslo."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_northernmost_items"
+  },
+  {
+    "id": "race_1463",
+    "statement": {
+      "ru": "В Монако иностранцев живёт больше, чем граждан Монако.",
+      "en": "More foreigners than citizens live in Monaco."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Monaco"
+  },
+  {
+    "id": "race_1464",
+    "statement": {
+      "ru": "Флаги Монако и Индонезии почти не отличить.",
+      "en": "The flags of Monaco and Indonesia are almost identical."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Monaco"
+  },
+  {
+    "id": "race_1465",
+    "statement": {
+      "ru": "Чтобы стать лондонским таксистом, хватает пары недель учёбы.",
+      "en": "A couple of weeks of study is enough to become a London cabbie."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Taxis_of_London"
+  },
+  {
+    "id": "race_1466",
+    "statement": {
+      "ru": "Куба по площади больше Великобритании.",
+      "en": "Cuba is bigger than Great Britain."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area"
+  },
+  {
+    "id": "race_1467",
+    "statement": {
+      "ru": "Из Лихтенштейна до моря не добраться, не пересекая хотя бы двух границ.",
+      "en": "From Liechtenstein you must cross at least two borders to reach the sea."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Landlocked_country"
+  },
+  {
+    "id": "race_1468",
+    "statement": {
+      "ru": "В Квебеке два официальных языка — французский и английский.",
+      "en": "Quebec has two official languages, French and English."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Charter_of_the_French_Language"
+  },
+  {
+    "id": "race_1469",
+    "statement": {
+      "ru": "У Франции больше часовых поясов, чем у любой другой страны.",
+      "en": "France has more time zones than any other country."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Time_in_France"
+  },
+  {
+    "id": "race_1470",
+    "statement": {
+      "ru": "Елисейские поля — большой парк в центре Парижа.",
+      "en": "The Champs-Élysées is a big park in the centre of Paris."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Champs-%C3%89lys%C3%A9es"
+  },
+  {
+    "id": "race_1471",
+    "statement": {
+      "ru": "Пуэрто-Рико — один из штатов США.",
+      "en": "Puerto Rico is one of the US states."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Puerto_Rico"
+  },
+  {
+    "id": "race_1472",
+    "statement": {
+      "ru": "Уолл-стрит названа так из-за стены, что когда-то там стояла.",
+      "en": "Wall Street is named after a wall that once stood there."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Wall_Street"
+  },
+  {
+    "id": "race_1473",
+    "statement": {
+      "ru": "Американцев с ирландскими корнями больше, чем жителей Ирландии.",
+      "en": "There are more Americans with Irish roots than people in Ireland."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Irish_Americans"
+  },
+  {
+    "id": "race_1474",
+    "statement": {
+      "ru": "Куба и Гаити делят один остров.",
+      "en": "Cuba and Haiti share one island."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hispaniola"
+  },
+  {
+    "id": "race_1475",
+    "statement": {
+      "ru": "В Лондоне живёт больше людей, чем во всей Шотландии.",
+      "en": "More people live in London than in the whole of Scotland."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Scotland"
+  },
+  {
+    "id": "race_1476",
+    "statement": {
+      "ru": "Фамилия исландца обычно образована от имени его отца.",
+      "en": "An Icelander's surname is usually made from his father's first name."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Icelandic_name"
+  },
+  {
+    "id": "race_1477",
+    "statement": {
+      "ru": "Столица Швейцарии — Женева.",
+      "en": "The capital of Switzerland is Geneva."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bern"
+  },
+  {
+    "id": "race_1478",
+    "statement": {
+      "ru": "Испанский городок Льивия со всех сторон окружён Францией.",
+      "en": "The Spanish town of Llívia is surrounded on all sides by France."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ll%C3%ADvia"
+  },
+  {
+    "id": "race_1479",
+    "statement": {
+      "ru": "Англия и Португалия — союзники уже больше 600 лет.",
+      "en": "England and Portugal have been allies for more than 600 years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Anglo-Portuguese_Alliance"
+  },
+  {
+    "id": "race_1480",
+    "statement": {
+      "ru": "На флаге Австралии изображён кенгуру.",
+      "en": "The flag of Australia shows a kangaroo."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Australia"
+  },
+  {
+    "id": "race_1481",
+    "statement": {
+      "ru": "В Непале часы сдвинуты от Гринвича на 5 часов 45 минут.",
+      "en": "Nepal's clocks are set 5 hours 45 minutes ahead of Greenwich."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nepal_Standard_Time"
+  },
+  {
+    "id": "race_1482",
+    "statement": {
+      "ru": "Полное название Бангкока — самое длинное название места в Книге рекордов.",
+      "en": "Bangkok's full name is the longest place name in the Guinness World Records."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bangkok"
+  },
+  {
+    "id": "race_1483",
+    "statement": {
+      "ru": "Мадагаскар — остров в Тихом океане.",
+      "en": "Madagascar is an island in the Pacific Ocean."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Madagascar"
+  },
+  {
+    "id": "race_1484",
+    "statement": {
+      "ru": "Улан-Батор — самая холодная столица мира.",
+      "en": "Ulaanbaatar is the coldest capital city in the world."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ulaanbaatar"
+  },
+  {
+    "id": "race_1485",
+    "statement": {
+      "ru": "У ЮАР сразу три столицы.",
+      "en": "South Africa has three capital cities."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/South_Africa"
+  },
+  {
+    "id": "race_1486",
+    "statement": {
+      "ru": "Самая населённая страна Африки — Египет.",
+      "en": "The most populous country in Africa is Egypt."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Demographics_of_Nigeria"
+  },
+  {
+    "id": "race_1487",
+    "statement": {
+      "ru": "Государство Кирибати лежит сразу во всех четырёх полушариях.",
+      "en": "The country of Kiribati lies in all four hemispheres at once."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kiribati"
+  },
+  {
+    "id": "race_1488",
+    "statement": {
+      "ru": "Тимбукту — выдуманный город из сказок.",
+      "en": "Timbuktu is a made-up city from fairy tales."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Timbuktu"
+  },
+  {
+    "id": "race_1489",
+    "statement": {
+      "ru": "Однажды Самоа целиком пропустило один день календаря.",
+      "en": "Samoa once skipped a whole day of its calendar."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Samoa"
+  },
+  {
+    "id": "race_1490",
+    "statement": {
+      "ru": "Столица Объединённых Арабских Эмиратов — Дубай.",
+      "en": "The capital of the United Arab Emirates is Dubai."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Abu_Dhabi"
+  },
+  {
+    "id": "race_1491",
+    "statement": {
+      "ru": "Мальдивы — самая низменная страна мира.",
+      "en": "The Maldives is the lowest-lying country in the world."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Maldives"
+  },
+  {
+    "id": "race_1492",
+    "statement": {
+      "ru": "В эфиопском календаре 13 месяцев.",
+      "en": "The Ethiopian calendar has 13 months."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ethiopian_calendar"
+  },
+  {
+    "id": "race_1493",
+    "statement": {
+      "ru": "Бали — отдельная островная страна.",
+      "en": "Bali is a separate island country."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bali"
+  },
+  {
+    "id": "race_1494",
+    "statement": {
+      "ru": "Часть Египта находится в Азии.",
+      "en": "Part of Egypt lies in Asia."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Egypt"
+  },
+  {
+    "id": "race_1495",
+    "statement": {
+      "ru": "Новый год раньше всех на Земле встречают в Японии.",
+      "en": "Japan is the first place on Earth to see in the New Year."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Kiritimati"
+  },
+  {
+    "id": "race_1496",
+    "statement": {
+      "ru": "Лесото со всех сторон окружено одной страной — ЮАР.",
+      "en": "Lesotho is completely surrounded by one country, South Africa."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lesotho"
+  },
+  {
+    "id": "race_1497",
+    "statement": {
+      "ru": "Мумбаи раньше назывался Калькуттой.",
+      "en": "Mumbai used to be called Calcutta."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mumbai"
+  },
+  {
+    "id": "race_1498",
+    "statement": {
+      "ru": "Название «Касабланка» переводится как «белый дом».",
+      "en": "The name Casablanca means 'white house'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Casablanca"
+  },
+  {
+    "id": "race_1499",
+    "statement": {
+      "ru": "Название «Пекин» означает «южная столица».",
+      "en": "The name Beijing means 'southern capital'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Beijing"
+  },
+  {
+    "id": "race_1500",
+    "statement": {
+      "ru": "У полиции Дубая есть «Ламборгини» и «Бугатти».",
+      "en": "Dubai's police have a Lamborghini and a Bugatti."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dubai_Police_Force"
+  },
+  {
+    "id": "race_1501",
+    "statement": {
+      "ru": "Саудовская Аравия — крупнейшая страна мира без постоянных рек.",
+      "en": "Saudi Arabia is the largest country in the world without any permanent rivers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Saudi_Arabia"
+  },
+  {
+    "id": "race_1502",
+    "statement": {
+      "ru": "У Монголии есть выход к морю.",
+      "en": "Mongolia has a coastline on the sea."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mongolia"
+  },
+  {
+    "id": "race_1503",
+    "statement": {
+      "ru": "В австралийском городке Кубер-Педи люди живут под землёй.",
+      "en": "In the Australian town of Coober Pedy people live underground."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Coober_Pedy"
+  },
+  {
+    "id": "race_1504",
+    "statement": {
+      "ru": "Название «Сингапур» означает «город тигров».",
+      "en": "The name Singapore means 'city of tigers'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Singapore"
+  },
+  {
+    "id": "race_1505",
+    "statement": {
+      "ru": "Самая большая по площади страна Африки — ЮАР.",
+      "en": "The largest country in Africa by area is South Africa."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Algeria"
+  },
+  {
+    "id": "race_1506",
+    "statement": {
+      "ru": "Столица Либерии названа в честь президента США.",
+      "en": "The capital of Liberia is named after a US president."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Monrovia"
+  },
+  {
+    "id": "race_1507",
+    "statement": {
+      "ru": "Сиам — старое название Вьетнама.",
+      "en": "Siam is the old name of Vietnam."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Thailand"
+  },
+  {
+    "id": "race_1508",
+    "statement": {
+      "ru": "Камерун назван в честь креветок.",
+      "en": "Cameroon is named after shrimps."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cameroon"
+  },
+  {
+    "id": "race_1509",
+    "statement": {
+      "ru": "На флаге Бутана изображён дракон.",
+      "en": "The flag of Bhutan shows a dragon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Bhutan"
+  },
+  {
+    "id": "race_1510",
+    "statement": {
+      "ru": "В Токио с пригородами живёт больше людей, чем во всей Австралии.",
+      "en": "More people live in Greater Tokyo than in all of Australia."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Greater_Tokyo_Area"
+  },
+  {
+    "id": "race_1511",
+    "statement": {
+      "ru": "Шри-Ланку раньше называли Бирмой.",
+      "en": "Sri Lanka used to be called Burma."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sri_Lanka"
+  },
+  {
+    "id": "race_1512",
+    "statement": {
+      "ru": "В нескольких километрах от центра столицы Кении живут дикие львы.",
+      "en": "Wild lions live a few kilometres from the centre of Kenya's capital."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nairobi_National_Park"
+  },
+  {
+    "id": "race_1513",
+    "statement": {
+      "ru": "Япония по площади больше Германии.",
+      "en": "Japan is larger in area than Germany."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Japan"
+  },
+  {
+    "id": "race_1514",
+    "statement": {
+      "ru": "Марио назвали в честь хозяина здания, которое Nintendo снимала в Америке.",
+      "en": "Mario was named after the landlord of the building Nintendo rented in America."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mario"
+  },
+  {
+    "id": "race_1515",
+    "statement": {
+      "ru": "Когда-то у Nintendo была своя служба такси.",
+      "en": "Nintendo once ran its own taxi company."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/History_of_Nintendo"
+  },
+  {
+    "id": "race_1516",
+    "statement": {
+      "ru": "В Fortnite игроки в начале матча прыгают с самолёта.",
+      "en": "In Fortnite, players jump out of a plane at the start of a match."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Fortnite_Battle_Royale"
+  },
+  {
+    "id": "race_1517",
+    "statement": {
+      "ru": "Pac-Man придумали, чтобы в игровые залы ходило больше женщин.",
+      "en": "Pac-Man was designed to bring more women into arcades."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pac-Man"
+  },
+  {
+    "id": "race_1518",
+    "statement": {
+      "ru": "Все четыре привидения в Pac-Man гоняются за героем одинаково.",
+      "en": "All four ghosts in Pac-Man chase the hero in the same way."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pac-Man"
+  },
+  {
+    "id": "race_1519",
+    "statement": {
+      "ru": "Roblox вышел раньше, чем Minecraft.",
+      "en": "Roblox came out before Minecraft."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Roblox"
+  },
+  {
+    "id": "race_1520",
+    "statement": {
+      "ru": "В своей первой игре Марио был сантехником.",
+      "en": "In his first game, Mario was a plumber."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mario"
+  },
+  {
+    "id": "race_1521",
+    "statement": {
+      "ru": "13-летний мальчик первым из людей довёл классический «Тетрис» до зависания.",
+      "en": "A 13-year-old boy was the first person to play classic Tetris until it crashed."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Willis_Gibson"
+  },
+  {
+    "id": "race_1522",
+    "statement": {
+      "ru": "В Америке Game Boy продавали в одной коробке с «Тетрисом».",
+      "en": "In America, the Game Boy was sold in one box with Tetris."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Game_Boy"
+  },
+  {
+    "id": "race_1523",
+    "statement": {
+      "ru": "Сутки в Minecraft длятся целый час реального времени.",
+      "en": "A full day in Minecraft lasts a whole hour of real time."
+    },
+    "answer": false,
+    "source": "https://minecraft.wiki/w/Daylight_cycle"
+  },
+  {
+    "id": "race_1524",
+    "statement": {
+      "ru": "Идею покемонов подсказало детское увлечение их автора — ловля насекомых.",
+      "en": "The idea for Pokémon came from its creator's childhood hobby: catching insects."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pok%C3%A9mon"
+  },
+  {
+    "id": "race_1525",
+    "statement": {
+      "ru": "У лисёнка Тейлза из игр про Соника три хвоста.",
+      "en": "Tails the fox from the Sonic games has three tails."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tails_(Sonic_the_Hedgehog)"
+  },
+  {
+    "id": "race_1526",
+    "statement": {
+      "ru": "Соник впервые появился в гонке — подвеской на зеркале машины.",
+      "en": "Sonic first appeared in a racing game, as an ornament hanging from a car mirror."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rad_Mobile"
+  },
+  {
+    "id": "race_1527",
+    "statement": {
+      "ru": "Покемоны сначала появились в мультсериале, а потом уже в играх.",
+      "en": "Pokémon first appeared in a cartoon series and only later in games."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_(TV_series)"
+  },
+  {
+    "id": "race_1528",
+    "statement": {
+      "ru": "Принцессу Зельду назвали в честь жены американского писателя.",
+      "en": "Princess Zelda was named after an American writer's wife."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Princess_Zelda"
+  },
+  {
+    "id": "race_1529",
+    "statement": {
+      "ru": "Игру The Sims придумали после того, как дом её автора сгорел при пожаре.",
+      "en": "The Sims was conceived after its creator's house burned down in a fire."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Sims"
+  },
+  {
+    "id": "race_1530",
+    "statement": {
+      "ru": "В The Sims человечки бессмертны.",
+      "en": "In The Sims, the little people are immortal."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Sims_(video_game)"
+  },
+  {
+    "id": "race_1531",
+    "statement": {
+      "ru": "Название Xbox — сокращение от DirectX Box.",
+      "en": "The name Xbox is short for DirectX Box."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Xbox_(console)"
+  },
+  {
+    "id": "race_1532",
+    "statement": {
+      "ru": "Первый Game Boy показывал игры в цвете.",
+      "en": "The first Game Boy showed games in colour."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Game_Boy"
+  },
+  {
+    "id": "race_1533",
+    "statement": {
+      "ru": "Концерт внутри Fortnite одновременно смотрели больше 10 миллионов игроков.",
+      "en": "More than 10 million players watched a concert inside Fortnite at the same time."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fortnite_Marshmello_concert"
+  },
+  {
+    "id": "race_1534",
+    "statement": {
+      "ru": "Приставку Wii продали большим тиражом, чем PlayStation 2.",
+      "en": "The Wii sold more units than the PlayStation 2."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_best-selling_game_consoles"
+  },
+  {
+    "id": "race_1535",
+    "statement": {
+      "ru": "Название Sega — сокращение от английского Service Games.",
+      "en": "The name Sega is short for Service Games."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sega"
+  },
+  {
+    "id": "race_1536",
+    "statement": {
+      "ru": "Киберспорт уже входит в программу летних Олимпийских игр.",
+      "en": "Esports are already part of the Summer Olympic Games."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Olympic_Esports_Games"
+  },
+  {
+    "id": "race_1537",
+    "statement": {
+      "ru": "Создатель джойстика PlayStation задумал кружок как «да», а крестик — как «нет».",
+      "en": "The PlayStation controller's designer meant the circle as 'yes' and the cross as 'no'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/PlayStation_(console)"
+  },
+  {
+    "id": "race_1538",
+    "statement": {
+      "ru": "Pong — самая первая видеоигра в истории.",
+      "en": "Pong was the very first video game in history."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tennis_for_Two"
+  },
+  {
+    "id": "race_1539",
+    "statement": {
+      "ru": "На Азиатских играх 2022 года за киберспорт давали медали.",
+      "en": "Medals were awarded for esports at the 2022 Asian Games."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Esports_at_the_2022_Asian_Games"
+  },
+  {
+    "id": "race_1540",
+    "statement": {
+      "ru": "В самой первой игре Donkey Kong горилла утащила принцессу Пич.",
+      "en": "In the very first Donkey Kong game, the gorilla carries off Princess Peach."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pauline_(Nintendo)"
+  },
+  {
+    "id": "race_1541",
+    "statement": {
+      "ru": "Ещё в 1972 году турнир по видеоиграм спонсировал журнал Rolling Stone.",
+      "en": "As early as 1972, a video game tournament was sponsored by Rolling Stone magazine."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Spacewar!"
+  },
+  {
+    "id": "race_1542",
+    "statement": {
+      "ru": "«Донки» в имени Донки Конга должно было означать «упрямый».",
+      "en": "'Donkey' in Donkey Kong's name was meant to mean 'stubborn'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Donkey_Kong_(character)"
+  },
+  {
+    "id": "race_1543",
+    "statement": {
+      "ru": "Херобрина официально добавили в Minecraft сами разработчики.",
+      "en": "Herobrine was officially added to Minecraft by its developers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Herobrine"
+  },
+  {
+    "id": "race_1544",
+    "statement": {
+      "ru": "Призовой фонд одного турнира по Dota 2 доходил до 40 миллионов долларов.",
+      "en": "The prize pool of one Dota 2 tournament reached 40 million dollars."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_International_(esports)"
+  },
+  {
+    "id": "race_1545",
+    "statement": {
+      "ru": "Крэш Бандикут — это ёж.",
+      "en": "Crash Bandicoot is a hedgehog."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Crash_Bandicoot_(character)"
+  },
+  {
+    "id": "race_1546",
+    "statement": {
+      "ru": "В Нью-Йорке пинбол был запрещён больше 30 лет.",
+      "en": "Pinball was banned in New York City for more than 30 years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pinball"
+  },
+  {
+    "id": "race_1547",
+    "statement": {
+      "ru": "Йоши из игр про Марио — черепаха.",
+      "en": "Yoshi from the Mario games is a turtle."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Yoshi"
+  },
+  {
+    "id": "race_1548",
+    "statement": {
+      "ru": "Американская Super Mario Bros. 2 — перерисованная японская игра совсем не про Марио.",
+      "en": "The American Super Mario Bros. 2 is a redrawn Japanese game that wasn't about Mario at all."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Super_Mario_Bros._2"
+  },
+  {
+    "id": "race_1549",
+    "statement": {
+      "ru": "Рекорд прохождения первой Super Mario Bros. — больше часа.",
+      "en": "The speedrun record for the first Super Mario Bros. is over an hour."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Super_Mario_Bros._speedrunning"
+  },
+  {
+    "id": "race_1550",
+    "statement": {
+      "ru": "Почти треть игроков в видеоигры в США — люди от 50 лет и старше.",
+      "en": "Almost a third of video game players in the USA are 50 or older."
+    },
+    "answer": true,
+    "source": "https://www.theesa.com/resources/essential-facts-about-the-us-video-game-industry/2024-data/"
+  },
+  {
+    "id": "race_1551",
+    "statement": {
+      "ru": "Angry Birds придумали в Японии.",
+      "en": "Angry Birds was created in Japan."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Angry_Birds"
+  },
+  {
+    "id": "race_1552",
+    "statement": {
+      "ru": "Nintendo Switch — первая приставка Nintendo на картриджах.",
+      "en": "The Nintendo Switch is Nintendo's first console to use cartridges."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Nintendo_64"
+  },
+  {
+    "id": "race_1553",
+    "statement": {
+      "ru": "По правилам «Монополии» деньги штрафов копятся на поле «Бесплатная стоянка».",
+      "en": "By the rules of Monopoly, fine money piles up on the Free Parking square."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Monopoly_(game)"
+  },
+  {
+    "id": "race_1554",
+    "statement": {
+      "ru": "Кубик Рубика придумали в Японии.",
+      "en": "The Rubik's Cube was invented in Japan."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rubik%27s_Cube"
+  },
+  {
+    "id": "race_1555",
+    "statement": {
+      "ru": "Йо-йо летало в космос на американском шаттле.",
+      "en": "A yo-yo has flown into space on an American Space Shuttle."
+    },
+    "answer": true,
+    "source": "https://artsandculture.google.com/story/toys-in-space-smithsonian-national-air-and-space-museum/cgXxkg5p2YrIKA?hl=en"
+  },
+  {
+    "id": "race_1556",
+    "statement": {
+      "ru": "Барби надела скафандр астронавта раньше, чем человек ступил на Луну.",
+      "en": "Barbie put on an astronaut's spacesuit before a human set foot on the Moon."
+    },
+    "answer": true,
+    "source": "https://www.smithsonianmag.com/blogs/air-space-museum/2023/07/19/barbie-an-astronaut-for-the-ages/"
+  },
+  {
+    "id": "race_1557",
+    "statement": {
+      "ru": "В маджонг играют уже больше двух тысяч лет.",
+      "en": "People have been playing mahjong for more than two thousand years."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mahjong"
+  },
+  {
+    "id": "race_1558",
+    "statement": {
+      "ru": "Сидя в тюрьме в «Монополии», игрок всё равно собирает арендную плату.",
+      "en": "While sitting in jail in Monopoly, a player still collects rent."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Monopoly_(game)"
+  },
+  {
+    "id": "race_1559",
+    "statement": {
+      "ru": "Йо-йо придумали на Филиппинах как оружие для охоты.",
+      "en": "The yo-yo was invented in the Philippines as a hunting weapon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Yo-yo"
+  },
+  {
+    "id": "race_1560",
+    "statement": {
+      "ru": "Для первого Мистера Картофельная Голова нужна была настоящая картошка.",
+      "en": "With the first Mr. Potato Head, you had to use a real potato."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mr._Potato_Head"
+  },
+  {
+    "id": "race_1561",
+    "statement": {
+      "ru": "Настоящий плюшевый Винни-Пух Кристофера Робина хранится в Лондоне.",
+      "en": "Christopher Robin's real toy Winnie-the-Pooh is kept in London."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Christopher_Robin_Milne"
+  },
+  {
+    "id": "race_1562",
+    "statement": {
+      "ru": "Игрушку-пружину слинки придумал морской инженер, уронив пружину с полки.",
+      "en": "The Slinky was invented by a naval engineer who knocked a spring off a shelf."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Slinky"
+  },
+  {
+    "id": "race_1563",
+    "statement": {
+      "ru": "В «Четыре в ряд» при идеальной игре всегда побеждает второй игрок.",
+      "en": "In Connect Four, with perfect play, the second player always wins."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Connect_Four"
+  },
+  {
+    "id": "race_1564",
+    "statement": {
+      "ru": "Мост через ущелье Ниагары начали строить с нитки воздушного змея.",
+      "en": "A bridge over the Niagara Gorge was started with a kite string."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Niagara_Falls_Suspension_Bridge"
+  },
+  {
+    "id": "race_1565",
+    "statement": {
+      "ru": "Игру «Скрэббл» придумал учитель английского языка.",
+      "en": "Scrabble was invented by an English teacher."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Scrabble"
+  },
+  {
+    "id": "race_1566",
+    "statement": {
+      "ru": "Человек уже собрал кубик Рубика быстрее, чем за три секунды.",
+      "en": "A person has already solved a Rubik's Cube in under three seconds."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rubik%27s_Cube"
+  },
+  {
+    "id": "race_1567",
+    "statement": {
+      "ru": "Мистер Картофельная Голова впервые появился в мультфильме «История игрушек».",
+      "en": "Mr. Potato Head first appeared in the cartoon Toy Story."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mr._Potato_Head"
+  },
+  {
+    "id": "race_1568",
+    "statement": {
+      "ru": "Возможных шахматных партий больше, чем атомов во Вселенной.",
+      "en": "There are more possible games of chess than atoms in the universe."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shannon_number"
+  },
+  {
+    "id": "race_1569",
+    "statement": {
+      "ru": "Снежный шар запатентовал мастер, который пытался сделать ярче лампу для хирургов.",
+      "en": "The snow globe was patented by a craftsman trying to make a brighter surgical lamp."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Snow_globe"
+  },
+  {
+    "id": "race_1570",
+    "statement": {
+      "ru": "В «Твистере» игроки ставят руки и ноги на цветные квадраты.",
+      "en": "In Twister, players put their hands and feet on coloured squares."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Twister_(game)"
+  },
+  {
+    "id": "race_1571",
+    "statement": {
+      "ru": "Колоду Таро придумали для карточной игры, а гадать на ней стали позже.",
+      "en": "Tarot cards were made for a card game; fortune-telling with them came later."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tarot"
+  },
+  {
+    "id": "race_1572",
+    "statement": {
+      "ru": "В колоде UNO столько же карт, сколько в обычной колоде, — 52.",
+      "en": "An UNO deck has as many cards as an ordinary deck: 52."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Uno_(card_game)"
+  },
+  {
+    "id": "race_1573",
+    "statement": {
+      "ru": "Писатель Герберт Уэллс сочинил правила игры в оловянных солдатиков.",
+      "en": "The writer H. G. Wells wrote rules for playing with toy soldiers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Little_Wars"
+  },
+  {
+    "id": "race_1574",
+    "statement": {
+      "ru": "Внутри «Волшебного экрана» линии рисуют чернилами.",
+      "en": "Inside an Etch A Sketch, the lines are drawn in ink."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Etch_A_Sketch"
+  },
+  {
+    "id": "race_1575",
+    "statement": {
+      "ru": "Аукционный дом однажды выиграл крупную сделку в «камень, ножницы, бумага».",
+      "en": "An auction house once won a big sale at rock, paper, scissors."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rock_paper_scissors"
+  },
+  {
+    "id": "race_1576",
+    "statement": {
+      "ru": "Плюшевым мишкам больше двухсот лет.",
+      "en": "Teddy bears are more than two hundred years old."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Teddy_bear"
+  },
+  {
+    "id": "race_1577",
+    "statement": {
+      "ru": "В гробницу Тутанхамона положили настольную игру.",
+      "en": "A board game was placed in Tutankhamun's tomb."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Senet"
+  },
+  {
+    "id": "race_1578",
+    "statement": {
+      "ru": "Джокер — самая древняя карта колоды.",
+      "en": "The joker is the oldest card in the deck."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Joker_(playing_card)"
+  },
+  {
+    "id": "race_1579",
+    "statement": {
+      "ru": "Правила игры возрастом 4500 лет восстановили по глиняной табличке.",
+      "en": "The rules of a 4,500-year-old game were worked out from a clay tablet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Royal_Game_of_Ur"
+  },
+  {
+    "id": "race_1580",
+    "statement": {
+      "ru": "Шахматную доску кладут так, чтобы справа внизу была чёрная клетка.",
+      "en": "A chessboard is set so that the bottom right square is dark."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chessboard"
+  },
+  {
+    "id": "race_1581",
+    "statement": {
+      "ru": "Слово OK разрешили в английском «Скрэббле» только в 2018 году.",
+      "en": "The word OK was only allowed in English Scrabble in 2018."
+    },
+    "answer": true,
+    "source": "https://www.smithsonianmag.com/smart-news/scrabble-300-words-offical-dictionary-180970398/"
+  },
+  {
+    "id": "race_1582",
+    "statement": {
+      "ru": "Внутри «шара предсказаний» плавает обычный кубик с шестью гранями.",
+      "en": "Inside a Magic 8 Ball floats an ordinary six-sided die."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Magic_8_Ball"
+  },
+  {
+    "id": "race_1583",
+    "statement": {
+      "ru": "Карточную игру UNO придумал парикмахер.",
+      "en": "The card game UNO was invented by a barber."
+    },
+    "answer": true,
+    "source": "https://www.museumofplay.org/toys/uno/"
+  },
+  {
+    "id": "race_1584",
+    "statement": {
+      "ru": "Кен появился в продаже раньше Барби.",
+      "en": "Ken went on sale before Barbie."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Barbie"
+  },
+  {
+    "id": "race_1585",
+    "statement": {
+      "ru": "Водяной пистолет Super Soaker изобрёл инженер NASA.",
+      "en": "The Super Soaker water gun was invented by a NASA engineer."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Super_Soaker"
+  },
+  {
+    "id": "race_1586",
+    "statement": {
+      "ru": "LEGO с самого начала делала пластиковые кубики.",
+      "en": "LEGO made plastic bricks right from the start."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lego"
+  },
+  {
+    "id": "race_1587",
+    "statement": {
+      "ru": "Игральные кости в казино делают прозрачными.",
+      "en": "Casino dice are made transparent."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dice"
+  },
+  {
+    "id": "race_1588",
+    "statement": {
+      "ru": "Первый кроссворд напечатала газета ещё в XVIII веке.",
+      "en": "The first crossword was printed in a newspaper back in the 18th century."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Crossword"
+  },
+  {
+    "id": "race_1589",
+    "statement": {
+      "ru": "Игральные карты придумали в Китае.",
+      "en": "Playing cards were invented in China."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Playing_card"
+  },
+  {
+    "id": "race_1590",
+    "statement": {
+      "ru": "На доске для го меньше клеток, чем на шахматной.",
+      "en": "A Go board has fewer squares than a chessboard."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Go_(game)"
+  },
+  {
+    "id": "race_1591",
+    "statement": {
+      "ru": "Калейдоскоп изобрели чуть больше двухсот лет назад.",
+      "en": "The kaleidoscope was invented just over two hundred years ago."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kaleidoscope"
+  },
+  {
+    "id": "race_1592",
+    "statement": {
+      "ru": "«Твистер» стал хитом после того, как в него сыграли в ночном телешоу.",
+      "en": "Twister became a hit after it was played on a late-night TV show."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Twister_(game)"
+  },
+  {
+    "id": "race_1593",
+    "statement": {
+      "ru": "«Волшебный экран» для рисования придумал француз.",
+      "en": "The Etch A Sketch drawing toy was invented by a Frenchman."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Etch_A_Sketch"
+  },
+  {
+    "id": "race_1594",
+    "statement": {
+      "ru": "Статуя Свободы держит факел в левой руке.",
+      "en": "The Statue of Liberty holds her torch in her left hand."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+  },
+  {
+    "id": "race_1595",
+    "statement": {
+      "ru": "Пизанская башня — это колокольня.",
+      "en": "The Leaning Tower of Pisa is a bell tower."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa"
+  },
+  {
+    "id": "race_1596",
+    "statement": {
+      "ru": "Тадж-Махал построили как дворец, в котором жил правитель.",
+      "en": "The Taj Mahal was built as a palace for a ruler to live in."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Taj_Mahal"
+  },
+  {
+    "id": "race_1597",
+    "statement": {
+      "ru": "Однажды стая скворцов, усевшись на стрелку, заставила часы Биг-Бена отстать.",
+      "en": "A flock of starlings once made Big Ben's clock run slow by sitting on its hand."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Big_Ben"
+  },
+  {
+    "id": "race_1598",
+    "statement": {
+      "ru": "Небоскрёб Эмпайр-стейт-билдинг строили больше десяти лет.",
+      "en": "The Empire State Building took over ten years to build."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Empire_State_Building"
+  },
+  {
+    "id": "race_1599",
+    "statement": {
+      "ru": "Самая большая по объёму пирамида в мире стоит в Мексике.",
+      "en": "The world's largest pyramid by volume is in Mexico."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Cholula"
+  },
+  {
+    "id": "race_1600",
+    "statement": {
+      "ru": "На горе Рашмор высечены лица пяти президентов США.",
+      "en": "Mount Rushmore shows the faces of five US presidents."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mount_Rushmore"
+  },
+  {
+    "id": "race_1601",
+    "statement": {
+      "ru": "Версаль начинался с маленького охотничьего домика.",
+      "en": "The Palace of Versailles began as a small hunting lodge."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Palace_of_Versailles"
+  },
+  {
+    "id": "race_1602",
+    "statement": {
+      "ru": "Колизей в плане — идеальный круг.",
+      "en": "Seen from above, the Colosseum is a perfect circle."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Colosseum"
+  },
+  {
+    "id": "race_1603",
+    "statement": {
+      "ru": "Архитектор Сиднейской оперы так и не увидел её достроенной.",
+      "en": "The Sydney Opera House's architect never saw it finished."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/J%C3%B8rn_Utzon"
+  },
+  {
+    "id": "race_1604",
+    "statement": {
+      "ru": "В небоскрёбе «Тайбэй 101» висит огромный шар, который гасит качку.",
+      "en": "The Taipei 101 skyscraper has a giant hanging ball that damps its sway."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Taipei_101"
+  },
+  {
+    "id": "race_1605",
+    "statement": {
+      "ru": "Замок Нойшванштайн построили рыцари в Средние века.",
+      "en": "Neuschwanstein Castle was built by knights in the Middle Ages."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Neuschwanstein_Castle"
+  },
+  {
+    "id": "race_1606",
+    "statement": {
+      "ru": "Атомиум в Брюсселе — это огромная модель молекулы воды.",
+      "en": "Brussels' Atomium is a giant model of a water molecule."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Atomium"
+  },
+  {
+    "id": "race_1607",
+    "statement": {
+      "ru": "Ход часов Биг-Бена подправляют, кладя на маятник монетки.",
+      "en": "Big Ben's clock is adjusted by putting coins on its pendulum."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Big_Ben"
+  },
+  {
+    "id": "race_1608",
+    "statement": {
+      "ru": "Пизанскую башню выпрямили, и теперь она стоит ровно.",
+      "en": "The Leaning Tower of Pisa has been straightened and now stands upright."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa"
+  },
+  {
+    "id": "race_1609",
+    "statement": {
+      "ru": "Наполеон увёз колесницу с Бранденбургских ворот в Париж.",
+      "en": "Napoleon took the chariot from the Brandenburg Gate to Paris."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Brandenburg_Gate"
+  },
+  {
+    "id": "race_1610",
+    "statement": {
+      "ru": "Белый дом покрасили в белый, чтобы скрыть следы пожара.",
+      "en": "The White House was painted white to hide fire damage."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/White_House"
+  },
+  {
+    "id": "race_1611",
+    "statement": {
+      "ru": "Великая пирамида в Гизе когда-то была гладкой и белой.",
+      "en": "The Great Pyramid of Giza was once smooth and white."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+  },
+  {
+    "id": "race_1612",
+    "statement": {
+      "ru": "Статую Христа над Рио-де-Жанейро отлили из бронзы.",
+      "en": "The Christ the Redeemer statue above Rio was cast in bronze."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)"
+  },
+  {
+    "id": "race_1613",
+    "statement": {
+      "ru": "Солнце, отражённое лондонским небоскрёбом, однажды оплавило машину.",
+      "en": "Sunlight reflected off a London skyscraper once melted parts of a parked car."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/20_Fenchurch_Street"
+  },
+  {
+    "id": "race_1614",
+    "statement": {
+      "ru": "Писающий мальчик в Брюсселе выше взрослого человека.",
+      "en": "The Manneken Pis statue in Brussels is taller than a grown man."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Manneken_Pis"
+  },
+  {
+    "id": "race_1615",
+    "statement": {
+      "ru": "Замок Святого Ангела в Риме строили как гробницу императора.",
+      "en": "Rome's Castel Sant'Angelo was built as an emperor's tomb."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Castel_Sant%27Angelo"
+  },
+  {
+    "id": "race_1616",
+    "statement": {
+      "ru": "Сиднейский оперный театр построили к Олимпиаде 2000 года.",
+      "en": "The Sydney Opera House was built for the 2000 Olympics."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sydney_Opera_House"
+  },
+  {
+    "id": "race_1617",
+    "statement": {
+      "ru": "У Писающего мальчика около тысячи костюмов.",
+      "en": "The Manneken Pis has about a thousand costumes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Manneken_Pis"
+  },
+  {
+    "id": "race_1618",
+    "statement": {
+      "ru": "Эмпайр-стейт-билдинг — самое высокое здание Нью-Йорка.",
+      "en": "The Empire State Building is the tallest building in New York."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/One_World_Trade_Center"
+  },
+  {
+    "id": "race_1619",
+    "statement": {
+      "ru": "Под Триумфальной аркой в Париже однажды пролетел самолёт.",
+      "en": "A plane once flew through the Arc de Triomphe in Paris."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Arc_de_Triomphe"
+  },
+  {
+    "id": "race_1620",
+    "statement": {
+      "ru": "Статую Свободы привезли в Америку целиком, не разбирая.",
+      "en": "The Statue of Liberty was shipped to America in one piece."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+  },
+  {
+    "id": "race_1621",
+    "statement": {
+      "ru": "Кёльнский собор когда-то был самым высоким зданием в мире.",
+      "en": "Cologne Cathedral was once the tallest building in the world."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cologne_Cathedral"
+  },
+  {
+    "id": "race_1622",
+    "statement": {
+      "ru": "В Британии законом запрещено умирать в здании парламента.",
+      "en": "In Britain it is against the law to die in the Houses of Parliament."
+    },
+    "answer": false,
+    "source": "https://obiterj.blogspot.com/2013/04/legal-curiosities-fact-or-fable.html"
+  },
+  {
+    "id": "race_1623",
+    "statement": {
+      "ru": "Лондонский Тауэр — это одна высокая башня.",
+      "en": "The Tower of London is a single tall tower."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tower_of_London"
+  },
+  {
+    "id": "race_1624",
+    "statement": {
+      "ru": "Собор Парижской Богоматери построили меньше чем за двадцать лет.",
+      "en": "Notre-Dame de Paris was built in under twenty years."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris"
+  },
+  {
+    "id": "race_1625",
+    "statement": {
+      "ru": "Президентов на горе Рашмор собирались высечь по пояс.",
+      "en": "The Mount Rushmore presidents were meant to be carved down to the waist."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mount_Rushmore"
+  },
+  {
+    "id": "race_1626",
+    "statement": {
+      "ru": "В сказочном замке Нойшванштайн был телефон.",
+      "en": "The fairy-tale castle of Neuschwanstein had a telephone."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Neuschwanstein_Castle"
+  },
+  {
+    "id": "race_1627",
+    "statement": {
+      "ru": "Собор Святой Софии в Стамбуле изначально строили как мечеть.",
+      "en": "Hagia Sophia in Istanbul was first built as a mosque."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hagia_Sophia"
+  },
+  {
+    "id": "race_1628",
+    "statement": {
+      "ru": "В лондонском Тауэре держат воронов: по легенде, без них падёт королевство.",
+      "en": "The Tower of London keeps ravens: legend says the kingdom falls without them."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ravens_of_the_Tower_of_London"
+  },
+  {
+    "id": "race_1629",
+    "statement": {
+      "ru": "Белый дом больше Букингемского дворца.",
+      "en": "The White House is bigger than Buckingham Palace."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Buckingham_Palace"
+  },
+  {
+    "id": "race_1630",
+    "statement": {
+      "ru": "Архитектор Гауди погиб, попав под трамвай.",
+      "en": "The architect Gaudí died after being hit by a tram."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD"
+  },
+  {
+    "id": "race_1631",
+    "statement": {
+      "ru": "Пирамиды Гизы стоят в глубокой пустыне, далеко от городов.",
+      "en": "The Giza pyramids stand deep in the desert, far from any city."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Giza_pyramid_complex"
+  },
+  {
+    "id": "race_1632",
+    "statement": {
+      "ru": "В одном французском замке есть лестница из двух спиралей, которые не встречаются.",
+      "en": "A French château has a staircase of two spirals that never meet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ch%C3%A2teau_de_Chambord"
+  },
+  {
+    "id": "race_1633",
+    "statement": {
+      "ru": "Через Панамский канал однажды проплыл человек — и заплатил за проезд.",
+      "en": "A man once swam through the Panama Canal — and paid the toll."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Richard_Halliburton"
+  },
+  {
+    "id": "race_1634",
+    "statement": {
+      "ru": "Корабли в Суэцком канале поднимают шлюзами, как в Панамском.",
+      "en": "Ships in the Suez Canal are raised by locks, as in the Panama Canal."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Suez_Canal"
+  },
+  {
+    "id": "race_1635",
+    "statement": {
+      "ru": "В Перу есть мост из травы, который каждый год сплетают заново.",
+      "en": "In Peru there is a bridge made of grass that is woven anew every year."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Q%27eswachaka"
+  },
+  {
+    "id": "race_1636",
+    "statement": {
+      "ru": "Тауэрский мост в Лондоне построили ещё в Средние века.",
+      "en": "London's Tower Bridge was built back in the Middle Ages."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tower_Bridge"
+  },
+  {
+    "id": "race_1637",
+    "statement": {
+      "ru": "Нерон сам первым ударил киркой, когда начинали рыть канал в Греции.",
+      "en": "Nero himself struck the first blow with a pickaxe when digging began on a canal in Greece."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Corinth_Canal"
+  },
+  {
+    "id": "race_1638",
+    "statement": {
+      "ru": "Римские акведуки гнали воду в города с помощью насосов.",
+      "en": "Roman aqueducts pushed water into cities with pumps."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Roman_aqueduct"
+  },
+  {
+    "id": "race_1639",
+    "statement": {
+      "ru": "В поездах на Тибет у каждого пассажира есть подача кислорода.",
+      "en": "On trains to Tibet every passenger has their own oxygen supply."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Qinghai%E2%80%93Tibet_railway"
+  },
+  {
+    "id": "race_1640",
+    "statement": {
+      "ru": "Панамериканское шоссе непрерывно тянется от Аляски до Аргентины.",
+      "en": "The Pan-American Highway runs unbroken from Alaska to Argentina."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dari%C3%A9n_Gap"
+  },
+  {
+    "id": "race_1641",
+    "statement": {
+      "ru": "Мультфильм «Тачки» рассказывает о городке на знаменитом шоссе 66.",
+      "en": "The cartoon Cars is about a little town on the famous Route 66."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/U.S._Route_66"
+  },
+  {
+    "id": "race_1642",
+    "statement": {
+      "ru": "Мост Золотые Ворота и сегодня — самый длинный подвесной мост в мире.",
+      "en": "The Golden Gate Bridge is still the longest suspension bridge in the world today."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
+  },
+  {
+    "id": "race_1643",
+    "statement": {
+      "ru": "В Индии есть мосты, выращенные из живых корней деревьев.",
+      "en": "In India there are bridges grown from the living roots of trees."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Living_root_bridge"
+  },
+  {
+    "id": "race_1644",
+    "statement": {
+      "ru": "Шоссе 66 тянется от Нью-Йорка до Лос-Анджелеса.",
+      "en": "Route 66 runs from New York to Los Angeles."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/U.S._Route_66"
+  },
+  {
+    "id": "race_1645",
+    "statement": {
+      "ru": "После землетрясения пролёт строящегося японского моста стал длиннее на метр.",
+      "en": "After an earthquake, the span of a Japanese bridge under construction grew by a metre."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Akashi_Kaiky%C5%8D_Bridge"
+  },
+  {
+    "id": "race_1646",
+    "statement": {
+      "ru": "Тоннель под Ла-Маншем рыли только с английской стороны.",
+      "en": "The Channel Tunnel was dug from the English side only."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Channel_Tunnel"
+  },
+  {
+    "id": "race_1647",
+    "statement": {
+      "ru": "Виадук Мийо во Франции выше Эйфелевой башни.",
+      "en": "The Millau Viaduct in France is taller than the Eiffel Tower."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Millau_Viaduct"
+  },
+  {
+    "id": "race_1648",
+    "statement": {
+      "ru": "Мост Вздохов в Венеции назван так из-за вздохов влюблённых.",
+      "en": "Venice's Bridge of Sighs got its name from the sighs of lovers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bridge_of_Sighs"
+  },
+  {
+    "id": "race_1649",
+    "statement": {
+      "ru": "Сиднейский мост через гавань местные прозвали «вешалкой».",
+      "en": "Locals nicknamed the Sydney Harbour Bridge 'the Coathanger'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sydney_Harbour_Bridge"
+  },
+  {
+    "id": "race_1650",
+    "statement": {
+      "ru": "Через тоннель под Ла-Маншем проложена автомобильная дорога.",
+      "en": "A road for cars runs through the Channel Tunnel."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Channel_Tunnel"
+  },
+  {
+    "id": "race_1651",
+    "statement": {
+      "ru": "По Бруклинскому мосту провели 21 слона, чтобы показать, что он прочный.",
+      "en": "21 elephants were led across the Brooklyn Bridge to show it was sturdy."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Brooklyn_Bridge"
+  },
+  {
+    "id": "race_1652",
+    "statement": {
+      "ru": "Великая Китайская стена — это одна сплошная стена без разрывов.",
+      "en": "The Great Wall of China is one solid wall without any gaps."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+  },
+  {
+    "id": "race_1653",
+    "statement": {
+      "ru": "На старинном мосту Понте-Веккьо во Флоренции стоят ювелирные лавки.",
+      "en": "On the old Ponte Vecchio bridge in Florence there are jewellers' shops."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ponte_Vecchio"
+  },
+  {
+    "id": "race_1654",
+    "statement": {
+      "ru": "Строители моста Золотые Ворота, упавшие в сетку, вступали в особый клуб.",
+      "en": "Golden Gate Bridge builders who fell into the safety net joined a special club."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
+  },
+  {
+    "id": "race_1655",
+    "statement": {
+      "ru": "В галереях на верху Тауэрского моста есть стеклянный пол.",
+      "en": "The high walkways of Tower Bridge have a glass floor."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tower_Bridge"
+  },
+  {
+    "id": "race_1656",
+    "statement": {
+      "ru": "Панамский канал вдвое длиннее Суэцкого.",
+      "en": "The Panama Canal is twice as long as the Suez Canal."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Panama_Canal"
+  },
+  {
+    "id": "race_1657",
+    "statement": {
+      "ru": "Великую Китайскую стену строили и достраивали больше двух тысяч лет.",
+      "en": "The Great Wall of China was built and extended over more than two thousand years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+  },
+  {
+    "id": "race_1658",
+    "statement": {
+      "ru": "Высеченный в скалах город Петра находится в Египте.",
+      "en": "Petra, the city carved into the rocks, is in Egypt."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Petra"
+  },
+  {
+    "id": "race_1659",
+    "statement": {
+      "ru": "Висячие сады Семирамиды держались на огромных цепях.",
+      "en": "The Hanging Gardens of Babylon hung from huge chains."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hanging_Gardens_of_Babylon"
+  },
+  {
+    "id": "race_1660",
+    "statement": {
+      "ru": "Фасад храма в древней Петре появляется в фильме об Индиане Джонсе.",
+      "en": "The façade of a temple in ancient Petra appears in an Indiana Jones film."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Al-Khazneh"
+  },
+  {
+    "id": "race_1661",
+    "statement": {
+      "ru": "Стоунхендж построили друиды.",
+      "en": "Stonehenge was built by the Druids."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Stonehenge"
+  },
+  {
+    "id": "race_1662",
+    "statement": {
+      "ru": "Ангкор-Ват строили как индуистский храм — буддийским он стал позже.",
+      "en": "Angkor Wat was built as a Hindu temple — it only became Buddhist later."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Angkor_Wat"
+  },
+  {
+    "id": "race_1663",
+    "statement": {
+      "ru": "Колосс Родосский стоял, расставив ноги над входом в гавань.",
+      "en": "The Colossus of Rhodes stood astride the harbour entrance."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Colossus_of_Rhodes"
+  },
+  {
+    "id": "race_1664",
+    "statement": {
+      "ru": "Стоунхендж однажды продали на аукционе.",
+      "en": "Stonehenge was once sold at an auction."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cecil_Chubb"
+  },
+  {
+    "id": "race_1665",
+    "statement": {
+      "ru": "В бетоне плотины Гувера замурованы погибшие строители.",
+      "en": "Dead workers are entombed in the concrete of the Hoover Dam."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hoover_Dam"
+  },
+  {
+    "id": "race_1666",
+    "statement": {
+      "ru": "Из семи чудес света древности до наших дней дошло только одно.",
+      "en": "Of the Seven Wonders of the Ancient World, only one has survived to this day."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World"
+  },
+  {
+    "id": "race_1667",
+    "statement": {
+      "ru": "Пирамиду Хеопса строили больше трёхсот лет.",
+      "en": "The Great Pyramid of Giza took more than three hundred years to build."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+  },
+  {
+    "id": "race_1668",
+    "statement": {
+      "ru": "Обломки Александрийского маяка нашли на дне моря.",
+      "en": "Pieces of the Lighthouse of Alexandria were found on the seabed."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria"
+  },
+  {
+    "id": "race_1669",
+    "statement": {
+      "ru": "Великий шёлковый путь — это одна длинная мощёная дорога.",
+      "en": "The Silk Road was one long paved road."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Silk_Road"
+  },
+  {
+    "id": "race_1670",
+    "statement": {
+      "ru": "Огромная плотина в Китае чуть-чуть замедлила вращение Земли.",
+      "en": "A huge dam in China has slowed the Earth's spin by a tiny bit."
+    },
+    "answer": true,
+    "source": "https://www.jpl.nasa.gov/news/nasa-details-earthquake-effects-on-the-earth"
+  },
+  {
+    "id": "race_1671",
+    "statement": {
+      "ru": "Стена Адриана, построенная римлянами, проходит через Италию.",
+      "en": "Hadrian's Wall, built by the Romans, runs across Italy."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hadrian%27s_Wall"
+  },
+  {
+    "id": "race_1672",
+    "statement": {
+      "ru": "Слово «мавзолей» произошло от имени древнего правителя.",
+      "en": "The word 'mausoleum' comes from the name of an ancient ruler."
+    },
+    "answer": true,
+    "source": "https://en.wiktionary.org/wiki/mausoleum"
+  },
+  {
+    "id": "race_1673",
+    "statement": {
+      "ru": "Новые семь чудес света в 2007 году выбрали голосованием по интернету и телефону.",
+      "en": "The New Seven Wonders of the World were chosen in 2007 by an internet and phone vote."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/New7Wonders_of_the_World"
+  },
+  {
+    "id": "race_1674",
+    "statement": {
+      "ru": "В Испании до сих пор работает маяк, построенный ещё римлянами.",
+      "en": "In Spain a lighthouse built by the Romans is still working today."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tower_of_Hercules"
+  },
+  {
+    "id": "race_1675",
+    "statement": {
+      "ru": "Сальери был учителем Бетховена.",
+      "en": "Salieri was one of Beethoven's teachers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Antonio_Salieri"
+  },
+  {
+    "id": "race_1676",
+    "statement": {
+      "ru": "Опера как жанр родилась во Франции.",
+      "en": "Opera as an art form was born in France."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Opera"
+  },
+  {
+    "id": "race_1677",
+    "statement": {
+      "ru": "Композитор Вивальди был католическим священником.",
+      "en": "The composer Vivaldi was a Catholic priest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Antonio_Vivaldi"
+  },
+  {
+    "id": "race_1678",
+    "statement": {
+      "ru": "Элвис Пресли сам сочинял свои главные хиты.",
+      "en": "Elvis Presley wrote his biggest hits himself."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Elvis_Presley"
+  },
+  {
+    "id": "race_1679",
+    "statement": {
+      "ru": "Песня Чака Берри летит в космосе на борту «Вояджера».",
+      "en": "A Chuck Berry song is flying through space aboard Voyager."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Voyager_Golden_Record"
+  },
+  {
+    "id": "race_1680",
+    "statement": {
+      "ru": "Бах и Гендель дружили и часто играли вместе.",
+      "en": "Bach and Handel were friends and often played together."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach"
+  },
+  {
+    "id": "race_1681",
+    "statement": {
+      "ru": "Гитарист Queen Брайан Мэй — доктор астрофизики.",
+      "en": "Queen guitarist Brian May has a PhD in astrophysics."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Brian_May"
+  },
+  {
+    "id": "race_1682",
+    "statement": {
+      "ru": "Джаз родился в Чикаго.",
+      "en": "Jazz was born in Chicago."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Jazz"
+  },
+  {
+    "id": "race_1683",
+    "statement": {
+      "ru": "«Полковник» Паркер, менеджер Элвиса, был нелегалом из Нидерландов.",
+      "en": "Colonel Parker, Elvis's manager, was an illegal immigrant from the Netherlands."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Colonel_Tom_Parker"
+  },
+  {
+    "id": "race_1684",
+    "statement": {
+      "ru": "Фестиваль «Вудсток» проходил в городке Вудсток.",
+      "en": "The Woodstock festival took place in the town of Woodstock."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Woodstock"
+  },
+  {
+    "id": "race_1685",
+    "statement": {
+      "ru": "Луи Армстронг взял первые уроки корнета в приюте для трудных подростков.",
+      "en": "Louis Armstrong had his first cornet lessons in a home for troubled boys."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Louis_Armstrong"
+  },
+  {
+    "id": "race_1686",
+    "statement": {
+      "ru": "Сальери отравил Моцарта.",
+      "en": "Salieri poisoned Mozart."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Antonio_Salieri"
+  },
+  {
+    "id": "race_1687",
+    "statement": {
+      "ru": "«Марсельезу» сочинили в Марселе.",
+      "en": "La Marseillaise was written in Marseille."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/La_Marseillaise"
+  },
+  {
+    "id": "race_1688",
+    "statement": {
+      "ru": "The Beatles получили «Оскар».",
+      "en": "The Beatles won an Oscar."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Let_It_Be_(1970_film)"
+  },
+  {
+    "id": "race_1689",
+    "statement": {
+      "ru": "Боб Дилан получил Нобелевскую премию мира.",
+      "en": "Bob Dylan won the Nobel Peace Prize."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bob_Dylan"
+  },
+  {
+    "id": "race_1690",
+    "statement": {
+      "ru": "ABBA назвали в честь шведского города.",
+      "en": "ABBA was named after a Swedish town."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/ABBA"
+  },
+  {
+    "id": "race_1691",
+    "statement": {
+      "ru": "Череп Гайдна почти 150 лет хранился отдельно от тела.",
+      "en": "Haydn's skull was kept apart from his body for almost 150 years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Joseph_Haydn"
+  },
+  {
+    "id": "race_1692",
+    "statement": {
+      "ru": "«Болеро» Равеля длится больше часа.",
+      "en": "Ravel's Boléro lasts more than an hour."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bol%C3%A9ro"
+  },
+  {
+    "id": "race_1693",
+    "statement": {
+      "ru": "Фредди Меркьюри родился в Африке, на Занзибаре.",
+      "en": "Freddie Mercury was born in Africa, on Zanzibar."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Freddie_Mercury"
+  },
+  {
+    "id": "race_1694",
+    "statement": {
+      "ru": "Луи Армстронг прославился игрой на саксофоне.",
+      "en": "Louis Armstrong became famous for playing the saxophone."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Louis_Armstrong"
+  },
+  {
+    "id": "race_1695",
+    "statement": {
+      "ru": "Мелодию гимна США сочинили в Лондоне для мужского клуба.",
+      "en": "The tune of the US anthem was written in London for a gentlemen's club."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Star-Spangled_Banner"
+  },
+  {
+    "id": "race_1696",
+    "statement": {
+      "ru": "Шуберт написал «Аве Марию» для церковной службы.",
+      "en": "Schubert wrote his Ave Maria for a church service."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ave_Maria_(Schubert)"
+  },
+  {
+    "id": "race_1697",
+    "statement": {
+      "ru": "Фирма грамзаписи отказала The Beatles: мол, гитарные группы выходят из моды.",
+      "en": "A record company turned the Beatles down, saying guitar groups were on the way out."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Beatles%27_Decca_audition"
+  },
+  {
+    "id": "race_1698",
+    "statement": {
+      "ru": "Мелодию «My Way» сочинил сам Фрэнк Синатра.",
+      "en": "Frank Sinatra composed the tune of 'My Way' himself."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/My_Way"
+  },
+  {
+    "id": "race_1699",
+    "statement": {
+      "ru": "ABBA спрашивали разрешения на своё название у фирмы рыбных консервов.",
+      "en": "ABBA had to ask a fish-canning company for permission to use their name."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/ABBA"
+  },
+  {
+    "id": "race_1700",
+    "statement": {
+      "ru": "Опера «Аида» Верди происходит в Древней Греции.",
+      "en": "Verdi's opera Aida is set in ancient Greece."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Aida"
+  },
+  {
+    "id": "race_1701",
+    "statement": {
+      "ru": "Джими Хендрикс поджигал свою гитару прямо на сцене.",
+      "en": "Jimi Hendrix set his own guitar on fire on stage."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jimi_Hendrix"
+  },
+  {
+    "id": "race_1702",
+    "statement": {
+      "ru": "Россини сочинял «Севильского цирюльника» несколько лет.",
+      "en": "Rossini spent several years writing The Barber of Seville."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Barber_of_Seville"
+  },
+  {
+    "id": "race_1703",
+    "statement": {
+      "ru": "У Элвиса Пресли был брат-близнец.",
+      "en": "Elvis Presley had a twin brother."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Elvis_Presley"
+  },
+  {
+    "id": "race_1704",
+    "statement": {
+      "ru": "Свадебный марш Мендельсона написан к свадьбе самого композитора.",
+      "en": "Mendelssohn wrote his Wedding March for his own wedding."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Wedding_March_(Mendelssohn)"
+  },
+  {
+    "id": "race_1705",
+    "statement": {
+      "ru": "The Rolling Stones назвались в честь песни Мадди Уотерса.",
+      "en": "The Rolling Stones named themselves after a Muddy Waters song."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Rolling_Stones"
+  },
+  {
+    "id": "race_1706",
+    "statement": {
+      "ru": "Псевдоним Эдит Пиаф означает «соловей».",
+      "en": "Édith Piaf's stage name means 'nightingale'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/%C3%89dith_Piaf"
+  },
+  {
+    "id": "race_1707",
+    "statement": {
+      "ru": "Гимн Лихтенштейна поют на мелодию британского гимна.",
+      "en": "Liechtenstein's anthem is sung to the tune of the British anthem."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Oben_am_jungen_Rhein"
+  },
+  {
+    "id": "race_1708",
+    "statement": {
+      "ru": "Мэрилин Монро спела «Happy Birthday, Mr. President» на инаугурации Кеннеди.",
+      "en": "Marilyn Monroe sang 'Happy Birthday, Mr. President' at Kennedy's inauguration."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Happy_Birthday,_Mr._President"
+  },
+  {
+    "id": "race_1709",
+    "statement": {
+      "ru": "Бетховен посвятил Третью симфонию Наполеону, а потом вычеркнул его имя.",
+      "en": "Beethoven dedicated his Third Symphony to Napoleon, then struck out his name."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Symphony_No._3_(Beethoven)"
+  },
+  {
+    "id": "race_1710",
+    "statement": {
+      "ru": "Знаменитый язык — логотип Rolling Stones — нарисовал Энди Уорхол.",
+      "en": "The Rolling Stones' famous tongue logo was drawn by Andy Warhol."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Rolling_Stones"
+  },
+  {
+    "id": "race_1711",
+    "statement": {
+      "ru": "«Реквием» Моцарта дописал другой композитор.",
+      "en": "Mozart's Requiem was finished by another composer."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Requiem_(Mozart)"
+  },
+  {
+    "id": "race_1712",
+    "statement": {
+      "ru": "«Турецкий марш» написал турецкий композитор.",
+      "en": "The 'Turkish March' was written by a Turkish composer."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Piano_Sonata_No._11_(Mozart)"
+  },
+  {
+    "id": "race_1713",
+    "statement": {
+      "ru": "Музыка, под которую невеста идёт к алтарю в американских фильмах, — из оперы Вагнера.",
+      "en": "The music brides walk down the aisle to in American films comes from a Wagner opera."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bridal_Chorus"
+  },
+  {
+    "id": "race_1714",
+    "statement": {
+      "ru": "Рэй Чарльз ослеп уже взрослым, на пике славы.",
+      "en": "Ray Charles went blind as an adult, at the height of his fame."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ray_Charles"
+  },
+  {
+    "id": "race_1715",
+    "statement": {
+      "ru": "«Музыку на воде» Гендель написал для королевской прогулки по Темзе.",
+      "en": "Handel wrote his Water Music for a royal boat trip on the Thames."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Water_Music"
+  },
+  {
+    "id": "race_1716",
+    "statement": {
+      "ru": "Название Led Zeppelin пошло от шутки, что группа рухнет, как свинцовый воздушный шар.",
+      "en": "The name Led Zeppelin comes from a joke that the band would go down like a lead balloon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Led_Zeppelin"
+  },
+  {
+    "id": "race_1717",
+    "statement": {
+      "ru": "Элла Фицджеральд вышла на свой первый конкурс танцевать, а в итоге запела.",
+      "en": "Ella Fitzgerald went on stage at her first talent contest to dance, but sang instead."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ella_Fitzgerald"
+  },
+  {
+    "id": "race_1718",
+    "statement": {
+      "ru": "На терменвоксе играют, вообще не касаясь инструмента.",
+      "en": "The theremin is played without touching the instrument at all."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Theremin"
+  },
+  {
+    "id": "race_1719",
+    "statement": {
+      "ru": "Волынку придумали в Шотландии.",
+      "en": "The bagpipes were invented in Scotland."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bagpipes"
+  },
+  {
+    "id": "race_1720",
+    "statement": {
+      "ru": "Последний клип Фредди Меркьюри сняли чёрно-белым, чтобы скрыть болезнь.",
+      "en": "Freddie Mercury's last music video was shot in black and white to hide his illness."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/These_Are_the_Days_of_Our_Lives"
+  },
+  {
+    "id": "race_1721",
+    "statement": {
+      "ru": "Танец из Gangnam Style изображает езду на мотоцикле.",
+      "en": "The Gangnam Style dance imitates riding a motorbike."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gangnam_Style"
+  },
+  {
+    "id": "race_1722",
+    "statement": {
+      "ru": "Тур Тейлор Свифт The Eras Tour собрал больше денег, чем любой тур в истории.",
+      "en": "Taylor Swift's Eras Tour earned more money than any tour in history."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Eras_Tour"
+  },
+  {
+    "id": "race_1723",
+    "statement": {
+      "ru": "Лунную походку придумал Майкл Джексон.",
+      "en": "Michael Jackson invented the moonwalk."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Moonwalk_(dance)"
+  },
+  {
+    "id": "race_1724",
+    "statement": {
+      "ru": "Губная гармошка звучит и на выдохе, и на вдохе.",
+      "en": "A harmonica plays notes both when you blow and when you breathe in."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Harmonica"
+  },
+  {
+    "id": "race_1725",
+    "statement": {
+      "ru": "В «Евровидении» могут участвовать только европейские страны.",
+      "en": "Only European countries can take part in Eurovision."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Australia_in_the_Eurovision_Song_Contest"
+  },
+  {
+    "id": "race_1726",
+    "statement": {
+      "ru": "Название BTS означает «Пуленепробиваемые бойскауты».",
+      "en": "The name BTS means 'Bulletproof Boy Scouts'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/BTS"
+  },
+  {
+    "id": "race_1727",
+    "statement": {
+      "ru": "Фредди Меркьюри написал песню о своей кошке.",
+      "en": "Freddie Mercury wrote a song about his cat."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Innuendo_(album)"
+  },
+  {
+    "id": "race_1728",
+    "statement": {
+      "ru": "Для диджериду ищут стволы, выеденные изнутри термитами.",
+      "en": "For a didgeridoo, makers look for tree trunks hollowed out by termites."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Didgeridoo"
+  },
+  {
+    "id": "race_1729",
+    "statement": {
+      "ru": "В клипе Thriller Майкл Джексон превращается в вампира.",
+      "en": "In the Thriller video Michael Jackson turns into a vampire."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Michael_Jackson%27s_Thriller_(music_video)"
+  },
+  {
+    "id": "race_1730",
+    "statement": {
+      "ru": "Название альбома Тейлор Свифт «1989» — год её рождения.",
+      "en": "Taylor Swift's album '1989' is named after the year she was born."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/1989_(Taylor_Swift_album)"
+  },
+  {
+    "id": "race_1731",
+    "statement": {
+      "ru": "Пластины настоящего ксилофона — металлические.",
+      "en": "The bars of a real xylophone are made of metal."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Xylophone"
+  },
+  {
+    "id": "race_1732",
+    "statement": {
+      "ru": "Билли Айлиш спела песню к фильму о Джеймсе Бонде.",
+      "en": "Billie Eilish sang the theme song for a James Bond film."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/No_Time_to_Die_(song)"
+  },
+  {
+    "id": "race_1733",
+    "statement": {
+      "ru": "Песня на «Евровидении» может длиться до пяти минут.",
+      "en": "A Eurovision song can last up to five minutes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest"
+  },
+  {
+    "id": "race_1734",
+    "statement": {
+      "ru": "Группа BTS выступала с речью в ООН.",
+      "en": "BTS gave a speech at the United Nations."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/BTS"
+  },
+  {
+    "id": "race_1735",
+    "statement": {
+      "ru": "Виниловую пластинку проигрыватель читает лазером.",
+      "en": "A record player reads a vinyl record with a laser."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Phonograph_record"
+  },
+  {
+    "id": "race_1736",
+    "statement": {
+      "ru": "Клип группы a-ha «Take On Me» превращает людей в карандашный рисунок.",
+      "en": "The video for a-ha's 'Take On Me' turns people into a pencil drawing."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Take_On_Me"
+  },
+  {
+    "id": "race_1737",
+    "statement": {
+      "ru": "Песня «Despacito» исполняется на португальском.",
+      "en": "The song 'Despacito' is sung in Portuguese."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Despacito"
+  },
+  {
+    "id": "race_1738",
+    "statement": {
+      "ru": "Группа OK Go сняла клип, танцуя на беговых дорожках.",
+      "en": "The band OK Go made a music video dancing on treadmills."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Here_It_Goes_Again"
+  },
+  {
+    "id": "race_1739",
+    "statement": {
+      "ru": "Spotify придумали в США.",
+      "en": "Spotify was created in the USA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Spotify"
+  },
+  {
+    "id": "race_1740",
+    "statement": {
+      "ru": "Эд Ширан появился в сериале «Игра престолов».",
+      "en": "Ed Sheeran appeared in the series Game of Thrones."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ed_Sheeran"
+  },
+  {
+    "id": "race_1741",
+    "statement": {
+      "ru": "Курт Кобейн был барабанщиком Nirvana.",
+      "en": "Kurt Cobain was Nirvana's drummer."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Nirvana_(band)"
+  },
+  {
+    "id": "race_1742",
+    "statement": {
+      "ru": "Укулеле придумали на Гавайях по образцу португальского инструмента.",
+      "en": "The ukulele was created in Hawaii, modelled on a Portuguese instrument."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ukulele"
+  },
+  {
+    "id": "race_1743",
+    "statement": {
+      "ru": "Фортепиано появилось раньше скрипки.",
+      "en": "The piano appeared before the violin."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Violin"
+  },
+  {
+    "id": "race_1744",
+    "statement": {
+      "ru": "Звук волынки не прерывается, даже когда волынщик вдыхает.",
+      "en": "A bagpipe's sound doesn't stop even when the piper breathes in."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bagpipes"
+  },
+  {
+    "id": "race_1745",
+    "statement": {
+      "ru": "Вувузелы прославились на чемпионате мира по футболу в Бразилии.",
+      "en": "Vuvuzelas became famous at the football World Cup in Brazil."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Vuvuzela"
+  },
+  {
+    "id": "race_1746",
+    "statement": {
+      "ru": "Автотюн придумал инженер, который раньше искал нефть.",
+      "en": "Auto-Tune was invented by an engineer who used to search for oil."
+    },
+    "answer": true,
+    "source": "https://daily.redbullmusicacademy.com/2017/09/instrumental-instruments-auto-tune"
+  },
+  {
+    "id": "race_1747",
+    "statement": {
+      "ru": "На гитаре самые толстые струны звучат выше всех.",
+      "en": "On a guitar, the thickest strings play the highest notes."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/String_vibration"
+  },
+  {
+    "id": "race_1748",
+    "statement": {
+      "ru": "Рэпер Кендрик Ламар получил Пулитцеровскую премию.",
+      "en": "The rapper Kendrick Lamar won a Pulitzer Prize."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kendrick_Lamar"
+  },
+  {
+    "id": "race_1749",
+    "statement": {
+      "ru": "Песню We Are the World звёзды записывали целый месяц.",
+      "en": "The stars spent a whole month recording 'We Are the World'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/We_Are_the_World"
+  },
+  {
+    "id": "race_1750",
+    "statement": {
+      "ru": "Псевдоним Леди Гаги взят из песни Queen.",
+      "en": "Lady Gaga's stage name comes from a Queen song."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lady_Gaga"
+  },
+  {
+    "id": "race_1751",
+    "statement": {
+      "ru": "Уилл Смит со своим дуэтом получил самую первую «Грэмми» за рэп.",
+      "en": "Will Smith and his duo won the very first Grammy for rap."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/DJ_Jazzy_Jeff_%26_The_Fresh_Prince"
+  },
+  {
+    "id": "race_1752",
+    "statement": {
+      "ru": "Струны из кетгута раньше делали из кошачьих кишок.",
+      "en": "Catgut strings used to be made from cats' guts."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Catgut"
+  },
+  {
+    "id": "race_1753",
+    "statement": {
+      "ru": "Барабанщик Def Leppard много лет играет с одной рукой.",
+      "en": "Def Leppard's drummer has played with one arm for many years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rick_Allen_(drummer)"
+  },
+  {
+    "id": "race_1754",
+    "statement": {
+      "ru": "Жест «коза» на рок-концертах придумал Оззи Осборн.",
+      "en": "Ozzy Osbourne came up with the 'devil horns' hand sign at rock concerts."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sign_of_the_horns"
+  },
+  {
+    "id": "race_1755",
+    "statement": {
+      "ru": "Первые стил-драмы на Тринидаде делали из бочек из-под нефти.",
+      "en": "The first steel drums in Trinidad were made from oil barrels."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Steelpan"
+  },
+  {
+    "id": "race_1756",
+    "statement": {
+      "ru": "Мадонна сыграла главную роль в фильме «Эвита».",
+      "en": "Madonna played the title role in the film 'Evita'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Evita_(1996_film)"
+  },
+  {
+    "id": "race_1757",
+    "statement": {
+      "ru": "Фил Коллинз выступил на Live Aid и в Лондоне, и в США в один день.",
+      "en": "Phil Collins played Live Aid in both London and the USA on the same day."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Live_Aid"
+  },
+  {
+    "id": "race_1758",
+    "statement": {
+      "ru": "Слово «бумеранг» пришло из языка индейцев Америки.",
+      "en": "The word 'boomerang' comes from a Native American language."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Boomerang"
+  },
+  {
+    "id": "race_1759",
+    "statement": {
+      "ru": "Панамы так назвали, потому что их плетут в Панаме.",
+      "en": "Panama hats got their name because they are woven in Panama."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Panama_hat"
+  },
+  {
+    "id": "race_1760",
+    "statement": {
+      "ru": "Английское слово news сложено из первых букв сторон света.",
+      "en": "The English word 'news' is made from the first letters of the compass points."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/News"
+  },
+  {
+    "id": "race_1761",
+    "statement": {
+      "ru": "Оранжевый цвет назван в честь апельсина, а не наоборот.",
+      "en": "The colour orange is named after the fruit, not the other way round."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Orange_(colour)"
+  },
+  {
+    "id": "race_1762",
+    "statement": {
+      "ru": "Слово «барбекю» — от французского «от бороды до хвоста».",
+      "en": "The word 'barbecue' comes from the French for 'from beard to tail'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Barbecue"
+  },
+  {
+    "id": "race_1763",
+    "statement": {
+      "ru": "Слово «пижама» пришло из персидского и значит «одежда для ног».",
+      "en": "'Pyjamas' comes from Persian and means 'leg garment'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pajamas"
+  },
+  {
+    "id": "race_1764",
+    "statement": {
+      "ru": "Силуэт назван в честь скупого французского министра финансов.",
+      "en": "The silhouette is named after a stingy French finance minister."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/%C3%89tienne_de_Silhouette"
+  },
+  {
+    "id": "race_1765",
+    "statement": {
+      "ru": "«Гиппопотам» по-гречески значит «водяная корова».",
+      "en": "'Hippopotamus' is Greek for 'water cow'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hippopotamus"
+  },
+  {
+    "id": "race_1766",
+    "statement": {
+      "ru": "Смокинг назван в честь пиджака, в котором курили.",
+      "en": "In many languages a tuxedo is called a 'smoking', after a jacket worn for smoking."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Black_tie"
+  },
+  {
+    "id": "race_1767",
+    "statement": {
+      "ru": "Слово «катамаран» пришло из древнегреческого.",
+      "en": "The word 'catamaran' comes from ancient Greek."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Catamaran"
+  },
+  {
+    "id": "race_1768",
+    "statement": {
+      "ru": "Слово «вандал» — это название древнего германского племени.",
+      "en": "The word 'vandal' is the name of an ancient Germanic tribe."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vandalism"
+  },
+  {
+    "id": "race_1769",
+    "statement": {
+      "ru": "Слово «картофель» произошло от итальянского названия трюфеля.",
+      "en": "The German and Russian word for potato comes from the Italian for 'truffle'."
+    },
+    "answer": true,
+    "source": "https://en.wiktionary.org/wiki/Kartoffel"
+  },
+  {
+    "id": "race_1770",
+    "statement": {
+      "ru": "Слово «свитер» происходит от английского «потеть».",
+      "en": "The word 'sweater' comes from the English 'to sweat'."
+    },
+    "answer": true,
+    "source": "https://en.wiktionary.org/wiki/sweater"
+  },
+  {
+    "id": "race_1771",
+    "statement": {
+      "ru": "Слово «зомби» придумали в Голливуде.",
+      "en": "The word 'zombie' was invented in Hollywood."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Zombie"
+  },
+  {
+    "id": "race_1772",
+    "statement": {
+      "ru": "Слово «бойкот» — это фамилия управляющего поместьем в Ирландии.",
+      "en": "The word 'boycott' is the surname of a land agent in Ireland."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Charles_Boycott"
+  },
+  {
+    "id": "race_1773",
+    "statement": {
+      "ru": "«Шезлонг» по-французски значит «длинный стул».",
+      "en": "'Chaise longue' is French for 'long chair'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chaise_longue"
+  },
+  {
+    "id": "race_1774",
+    "statement": {
+      "ru": "«Карате» по-японски значит «удар ногой».",
+      "en": "'Karate' is Japanese for 'kick'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Karate"
+  },
+  {
+    "id": "race_1775",
+    "statement": {
+      "ru": "Гольф — это сокращение фразы «только для джентльменов».",
+      "en": "'Golf' is short for 'gentlemen only, ladies forbidden'."
+    },
+    "answer": false,
+    "source": "https://en.wiktionary.org/wiki/golf"
+  },
+  {
+    "id": "race_1776",
+    "statement": {
+      "ru": "Слово «шоколад» придумали швейцарцы.",
+      "en": "The word 'chocolate' was coined by the Swiss."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chocolate"
+  },
+  {
+    "id": "race_1777",
+    "statement": {
+      "ru": "Джакузи — это фамилия итальянских братьев.",
+      "en": "Jacuzzi is the surname of Italian brothers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jacuzzi"
+  },
+  {
+    "id": "race_1778",
+    "statement": {
+      "ru": "«Орангутан» в переводе значит «рыжая обезьяна».",
+      "en": "'Orangutan' translates as 'red ape'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Orangutan"
+  },
+  {
+    "id": "race_1779",
+    "statement": {
+      "ru": "«Бус» в слове «автобус» — от латинского «для всех».",
+      "en": "The word 'bus' comes from the Latin for 'for all'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bus"
+  },
+  {
+    "id": "race_1780",
+    "statement": {
+      "ru": "Слово «ресторан» сначала означало подкрепляющий бульон.",
+      "en": "The word 'restaurant' first meant a restoring broth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Restaurant"
+  },
+  {
+    "id": "race_1781",
+    "statement": {
+      "ru": "Саксофон назван по фамилии своего изобретателя.",
+      "en": "The saxophone is named after its inventor."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Saxophone"
+  },
+  {
+    "id": "race_1782",
+    "statement": {
+      "ru": "Слово «юмор» сначала означало «смех».",
+      "en": "The word 'humour' first meant 'laughter'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Humour"
+  },
+  {
+    "id": "race_1783",
+    "statement": {
+      "ru": "Слово «каникулы» происходит от латинского «маленькая собачка».",
+      "en": "The Russian word for school holidays, 'kanikuly', comes from the Latin for 'little dog'."
+    },
+    "answer": true,
+    "source": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BD%D0%B8%D0%BA%D1%83%D0%BB%D1%8B"
+  },
+  {
+    "id": "race_1784",
+    "statement": {
+      "ru": "Слово «трагедия» по-гречески значит «песнь козла».",
+      "en": "'Tragedy' is Greek for 'goat song'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tragedy"
+  },
+  {
+    "id": "race_1785",
+    "statement": {
+      "ru": "Слово «джунгли» пришло из Африки.",
+      "en": "The word 'jungle' comes from Africa."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Jungle"
+  },
+  {
+    "id": "race_1786",
+    "statement": {
+      "ru": "Шрапнель назвали в честь города, где её придумали.",
+      "en": "Shrapnel is named after the town where it was invented."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Shrapnel_shell"
+  },
+  {
+    "id": "race_1787",
+    "statement": {
+      "ru": "Слово «лазер» — это сокращение.",
+      "en": "The word 'laser' is an abbreviation."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Laser"
+  },
+  {
+    "id": "race_1788",
+    "statement": {
+      "ru": "Немецкий титул «кайзер» произошёл от имени Цезаря.",
+      "en": "The German title 'Kaiser' comes from the name Caesar."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kaiser"
+  },
+  {
+    "id": "race_1789",
+    "statement": {
+      "ru": "Слово «сноб» — сокращение латинского «без знатности».",
+      "en": "The word 'snob' is short for the Latin 'without nobility'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/False_etymology"
+  },
+  {
+    "id": "race_1790",
+    "statement": {
+      "ru": "Слово «динозавр» значит «древний ящер».",
+      "en": "The word 'dinosaur' means 'ancient lizard'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dinosaur"
+  },
+  {
+    "id": "race_1791",
+    "statement": {
+      "ru": "Никотин назван в честь французского посла.",
+      "en": "Nicotine is named after a French ambassador."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jean_Nicot"
+  },
+  {
+    "id": "race_1792",
+    "statement": {
+      "ru": "«Кимоно» по-японски значит «шёлковое платье».",
+      "en": "'Kimono' is Japanese for 'silk dress'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Kimono"
+  },
+  {
+    "id": "race_1793",
+    "statement": {
+      "ru": "Слово «тату» пришло из японского языка.",
+      "en": "The word 'tattoo' comes from Japanese."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tattoo"
+  },
+  {
+    "id": "race_1794",
+    "statement": {
+      "ru": "Слово «ураган» — это имя древнегреческого бога ветра.",
+      "en": "The word 'hurricane' is the name of an ancient Greek wind god."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Huracan"
+  },
+  {
+    "id": "race_1795",
+    "statement": {
+      "ru": "Слово «шампунь» пришло из Индии, где так называли массаж головы.",
+      "en": "The word 'shampoo' comes from India, where it meant a head massage."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shampoo"
+  },
+  {
+    "id": "race_1796",
+    "statement": {
+      "ru": "Бадминтон назван по фамилии изобретателя игры.",
+      "en": "Badminton is named after the inventor of the game."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Badminton"
+  },
+  {
+    "id": "race_1797",
+    "statement": {
+      "ru": "Слово «доллар» родом из маленького городка в нынешней Чехии.",
+      "en": "The word 'dollar' comes from a small town in today's Czech Republic."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dollar"
+  },
+  {
+    "id": "race_1798",
+    "statement": {
+      "ru": "Слово «джинсы» произошло от названия итальянского города Генуя.",
+      "en": "The word 'jeans' comes from the name of the Italian city of Genoa."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jeans"
+  },
+  {
+    "id": "race_1799",
+    "statement": {
+      "ru": "Слово «аллигатор» по-испански значит «большая змея».",
+      "en": "'Alligator' comes from the Spanish for 'big snake'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Alligator"
+  },
+  {
+    "id": "race_1800",
+    "statement": {
+      "ru": "Лимузин назван по фамилии своего изобретателя.",
+      "en": "The limousine is named after its inventor."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Limousine"
+  },
+  {
+    "id": "race_1801",
+    "statement": {
+      "ru": "Слово «мускул» происходит от латинского «мышонок».",
+      "en": "The word 'muscle' comes from the Latin for 'little mouse'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Muscle"
+  },
+  {
+    "id": "race_1802",
+    "statement": {
+      "ru": "Глухие во всём мире общаются на одном и том же языке жестов.",
+      "en": "Deaf people all over the world use one and the same sign language."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sign_language"
+  },
+  {
+    "id": "race_1803",
+    "statement": {
+      "ru": "Американский язык жестов ближе к французскому, чем к британскому.",
+      "en": "American Sign Language is closer to French Sign Language than to British Sign Language."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/American_Sign_Language"
+  },
+  {
+    "id": "race_1804",
+    "statement": {
+      "ru": "Клингонский язык придумали для «Звёздных войн».",
+      "en": "The Klingon language was made up for Star Wars."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Klingon_language"
+  },
+  {
+    "id": "race_1805",
+    "statement": {
+      "ru": "Английский — родной язык для большего числа людей, чем любой другой.",
+      "en": "English is the native language of more people than any other language."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/English_language"
+  },
+  {
+    "id": "race_1806",
+    "statement": {
+      "ru": "Знак & — это слитно написанное латинское слово «et», то есть «и».",
+      "en": "The & sign is the Latin word 'et', meaning 'and', written as one symbol."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ampersand"
+  },
+  {
+    "id": "race_1807",
+    "statement": {
+      "ru": "Сигнал SOS — это сокращение от «Спасите наши души».",
+      "en": "SOS is short for 'Save Our Souls'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/SOS"
+  },
+  {
+    "id": "race_1808",
+    "statement": {
+      "ru": "Корейский алфавит придумал король.",
+      "en": "The Korean alphabet was invented by a king."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hangul"
+  },
+  {
+    "id": "race_1809",
+    "statement": {
+      "ru": "Древние римляне уже писали букву J.",
+      "en": "The ancient Romans already wrote the letter J."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/J"
+  },
+  {
+    "id": "race_1810",
+    "statement": {
+      "ru": "Больше всего языков в мире — в Папуа — Новой Гвинее.",
+      "en": "Papua New Guinea has more languages than any other country."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Languages_of_Papua_New_Guinea"
+  },
+  {
+    "id": "race_1811",
+    "statement": {
+      "ru": "Название «Австралия» значит «страна кенгуру».",
+      "en": "The name 'Australia' means 'land of kangaroos'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Name_of_Australia"
+  },
+  {
+    "id": "race_1812",
+    "statement": {
+      "ru": "В испанском вопрос начинается с перевёрнутого вопросительного знака.",
+      "en": "In Spanish a question starts with an upside-down question mark."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Upside-down_question_and_exclamation_marks"
+  },
+  {
+    "id": "race_1813",
+    "statement": {
+      "ru": "Самая распространённая фамилия в мире — Смит.",
+      "en": "The most common surname in the world is Smith."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Wang_(surname)"
+  },
+  {
+    "id": "race_1814",
+    "statement": {
+      "ru": "В финском языке «он» и «она» — одно и то же слово.",
+      "en": "In Finnish, 'he' and 'she' are the same word."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Finnish_grammar"
+  },
+  {
+    "id": "race_1815",
+    "statement": {
+      "ru": "Баскский язык — близкий родственник испанского.",
+      "en": "Basque is a close relative of Spanish."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Basque_language"
+  },
+  {
+    "id": "race_1816",
+    "statement": {
+      "ru": "В немецком все существительные пишутся с большой буквы.",
+      "en": "In German, every noun is written with a capital letter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/German_orthography"
+  },
+  {
+    "id": "race_1817",
+    "statement": {
+      "ru": "Письменность впервые появилась в Китае.",
+      "en": "Writing first appeared in China."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/History_of_writing"
+  },
+  {
+    "id": "race_1818",
+    "statement": {
+      "ru": "В тайском письме между словами пробелов не ставят.",
+      "en": "Thai writing puts no spaces between words."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Thai_script"
+  },
+  {
+    "id": "race_1819",
+    "statement": {
+      "ru": "В Индии единственный государственный язык — хинди.",
+      "en": "Hindi is India's only official language."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Languages_of_India"
+  },
+  {
+    "id": "race_1820",
+    "statement": {
+      "ru": "Венгерский язык — родственник финского.",
+      "en": "Hungarian is related to Finnish."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hungarian_language"
+  },
+  {
+    "id": "race_1821",
+    "statement": {
+      "ru": "На эсперанто говорят больше 100 миллионов человек.",
+      "en": "More than 100 million people speak Esperanto."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Esperanto"
+  },
+  {
+    "id": "race_1822",
+    "statement": {
+      "ru": "«Сахара» по-арабски значит просто «пустыня».",
+      "en": "In Arabic, 'Sahara' simply means 'desert'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sahara"
+  },
+  {
+    "id": "race_1823",
+    "statement": {
+      "ru": "Греческий алфавит произошёл от латинского.",
+      "en": "The Greek alphabet came from the Latin one."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Greek_alphabet"
+  },
+  {
+    "id": "race_1824",
+    "statement": {
+      "ru": "Имя Ванесса придумал автор «Путешествий Гулливера».",
+      "en": "The name Vanessa was invented by the author of Gulliver's Travels."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vanessa_(name)"
+  },
+  {
+    "id": "race_1825",
+    "statement": {
+      "ru": "Арабский пишут слева направо, как английский.",
+      "en": "Arabic is written from left to right, like English."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Arabic_script"
+  },
+  {
+    "id": "race_1826",
+    "statement": {
+      "ru": "Каждый пятый житель Южной Кореи носит фамилию Ким.",
+      "en": "One in five South Koreans has the surname Kim."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kim_(Korean_surname)"
+  },
+  {
+    "id": "race_1827",
+    "statement": {
+      "ru": "В Китае фамилию пишут после имени, как в Европе.",
+      "en": "In China the surname is written after the given name, as in Europe."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chinese_name"
+  },
+  {
+    "id": "race_1828",
+    "statement": {
+      "ru": "Каждый египетский иероглиф обозначал целое слово.",
+      "en": "Every Egyptian hieroglyph stood for a whole word."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Egyptian_hieroglyphs"
+  },
+  {
+    "id": "race_1829",
+    "statement": {
+      "ru": "Иван, Джон, Хуан и Жан — это одно и то же имя.",
+      "en": "Ivan, John, Juan and Jean are the same name."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/John_(given_name)"
+  },
+  {
+    "id": "race_1830",
+    "statement": {
+      "ru": "Самый изучаемый иностранный язык в мире — китайский.",
+      "en": "Chinese is the most studied foreign language in the world."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/English_language"
+  },
+  {
+    "id": "race_1831",
+    "statement": {
+      "ru": "Японцы пишут, смешивая иероглифы с двумя разными азбуками.",
+      "en": "Japanese is written by mixing Chinese characters with two different syllabaries."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Japanese_writing_system"
+  },
+  {
+    "id": "race_1832",
+    "statement": {
+      "ru": "В английском у каждого существительного есть род — мужской или женский.",
+      "en": "In English every noun has a gender, masculine or feminine."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gender_in_English"
+  },
+  {
+    "id": "race_1833",
+    "statement": {
+      "ru": "У испанцев обычно две фамилии — от отца и от матери.",
+      "en": "Spaniards usually have two surnames, one from the father and one from the mother."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Spanish_naming_customs"
+  },
+  {
+    "id": "race_1834",
+    "statement": {
+      "ru": "Название «Нидерланды» значит «горные земли».",
+      "en": "The name 'Netherlands' means 'mountain lands'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Netherlands"
+  },
+  {
+    "id": "race_1835",
+    "statement": {
+      "ru": "В арабском письме буква меняет вид в зависимости от места в слове.",
+      "en": "In Arabic writing a letter changes its shape depending on where it is in the word."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Arabic_script"
+  },
+  {
+    "id": "race_1836",
+    "statement": {
+      "ru": "Знак & придумали вместе с пишущими машинками.",
+      "en": "The & sign was invented along with typewriters."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ampersand"
+  },
+  {
+    "id": "race_1837",
+    "statement": {
+      "ru": "Толкин придумывал эльфийские языки ещё до «Хоббита».",
+      "en": "Tolkien was inventing Elvish languages even before The Hobbit."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tolkien%27s_legendarium"
+  },
+  {
+    "id": "race_1838",
+    "statement": {
+      "ru": "Название «Пуэрто-Рико» значит «бедный порт».",
+      "en": "The name 'Puerto Rico' means 'poor port'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Puerto_Rico"
+  },
+  {
+    "id": "race_1839",
+    "statement": {
+      "ru": "Иврит много веков был только книжным языком, а потом снова стал разговорным.",
+      "en": "For centuries Hebrew was only a language of books, then it became spoken again."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Revival_of_the_Hebrew_language"
+  },
+  {
+    "id": "race_1840",
+    "statement": {
+      "ru": "В английском алфавите буква W называется «двойная V».",
+      "en": "In the English alphabet the letter W is called 'double V'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/W"
+  },
+  {
+    "id": "race_1841",
+    "statement": {
+      "ru": "В азбуке Морзе буква E — это одна-единственная точка.",
+      "en": "In Morse code the letter E is a single dot."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Morse_code"
+  },
+  {
+    "id": "race_1842",
+    "statement": {
+      "ru": "«Гамлета» перевели на клингонский язык.",
+      "en": "Hamlet has been translated into Klingon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Klingon_Hamlet"
+  },
+  {
+    "id": "race_1843",
+    "statement": {
+      "ru": "Есть люди, для которых эсперанто — родной язык.",
+      "en": "There are people whose native language is Esperanto."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Esperanto"
+  },
+  {
+    "id": "race_1844",
+    "statement": {
+      "ru": "В Мексике по-испански говорит больше людей, чем в Испании.",
+      "en": "More people speak Spanish in Mexico than in Spain."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hispanophone"
   }
 ]
