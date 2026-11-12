@@ -26242,5 +26242,338 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Apple_Inc."
+  },
+  {
+    "id": "race_2918",
+    "statement": {
+      "ru": "Отпустите подвешенную пружинку-радугу — и её нижний конец на миг зависнет в воздухе",
+      "en": "Drop a hanging Slinky and its bottom end hangs in mid-air for a moment."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Slinky"
+  },
+  {
+    "id": "race_2919",
+    "statement": {
+      "ru": "Термос держит тепло благодаря слою пенопласта между стенками",
+      "en": "A vacuum flask keeps drinks hot thanks to a layer of foam between its walls."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Vacuum_flask"
+  },
+  {
+    "id": "race_2920",
+    "statement": {
+      "ru": "Некоторые леденцы, если раскусить их в полной темноте, вспыхивают искрами",
+      "en": "Some hard sweets give off sparks of light if you bite them in total darkness."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Triboluminescence"
+  },
+  {
+    "id": "race_2921",
+    "statement": {
+      "ru": "Светящаяся палочка в тепле светит дольше, чем на холоде",
+      "en": "A glow stick lasts longer in the warm than in the cold."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Glow_stick"
+  },
+  {
+    "id": "race_2922",
+    "statement": {
+      "ru": "Кристалл в кварцевых часах колеблется ровно раз в секунду, в такт стрелке",
+      "en": "The crystal in a quartz watch vibrates exactly once a second, in step with the hand."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Crystal_oscillator"
+  },
+  {
+    "id": "race_2923",
+    "statement": {
+      "ru": "Если быстро шагать, по ванне с кашей из крахмала и воды можно пройти, как по суше",
+      "en": "Walk briskly and you can cross a tub of cornflour-and-water mix as if on dry land."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Non-Newtonian_fluid"
+  },
+  {
+    "id": "race_2924",
+    "statement": {
+      "ru": "Суперклей застывает, когда из него испаряется вода",
+      "en": "Superglue sets as the water in it evaporates."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cyanoacrylate"
+  },
+  {
+    "id": "race_2925",
+    "statement": {
+      "ru": "Когда включён душ, занавеска сама тянется внутрь, к человеку",
+      "en": "When the shower is running, the curtain billows inward, towards you."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Shower-curtain_effect"
+  },
+  {
+    "id": "race_2926",
+    "statement": {
+      "ru": "Обычная лампа накаливания превращает в свет больше половины энергии",
+      "en": "An ordinary incandescent bulb turns more than half its energy into light."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"
+  },
+  {
+    "id": "race_2927",
+    "statement": {
+      "ru": "На раскалённой сковороде капля воды живёт дольше, чем на просто горячей",
+      "en": "On a red-hot pan a drop of water lasts longer than on one that is merely hot."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Leidenfrost_effect"
+  },
+  {
+    "id": "race_2928",
+    "statement": {
+      "ru": "Если отматывать скотч в вакууме, он испускает рентгеновские лучи",
+      "en": "Unrolling sticky tape in a vacuum gives off X-rays."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Triboluminescence"
+  },
+  {
+    "id": "race_2929",
+    "statement": {
+      "ru": "Чтобы найти себя по GPS, телефон посылает сигнал на спутник",
+      "en": "To find itself by GPS, a phone sends a signal up to a satellite."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Global_Positioning_System"
+  },
+  {
+    "id": "race_2930",
+    "statement": {
+      "ru": "Лобовое стекло машины при ударе рассыпается на мелкие кубики",
+      "en": "A car's windscreen shatters into small cubes when hit."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Laminated_glass"
+  },
+  {
+    "id": "race_2931",
+    "statement": {
+      "ru": "«Умный пластилин» отскакивает от пола, как мяч, а оставленный — растекается лужей",
+      "en": "Silly Putty bounces like a ball, but left alone it spreads into a puddle."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Silly_Putty"
+  },
+  {
+    "id": "race_2932",
+    "statement": {
+      "ru": "Мяч для сквоша перед игрой охлаждают, чтобы он лучше прыгал",
+      "en": "Squash balls are chilled before play so they bounce better."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Squash_(sport)"
+  },
+  {
+    "id": "race_2933",
+    "statement": {
+      "ru": "Белое облачко в середине кубика льда — это пузырьки воздуха",
+      "en": "The white cloud in the middle of an ice cube is tiny air bubbles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ice_cube"
+  },
+  {
+    "id": "race_2934",
+    "statement": {
+      "ru": "Мокрое бельё может высохнуть на морозе, так и не оттаяв",
+      "en": "Wet laundry can dry out in a frost without ever thawing."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Clothes_line"
+  },
+  {
+    "id": "race_2935",
+    "statement": {
+      "ru": "Свежий снег отражает звук, поэтому после снегопада всё слышно дальше",
+      "en": "Fresh snow reflects sound, so after a snowfall you can hear further."
+    },
+    "answer": false,
+    "source": "https://www.montrealsciencecentre.com/blog/why-does-everything-get-so-quiet-after-a-snow-fall"
+  },
+  {
+    "id": "race_2936",
+    "statement": {
+      "ru": "Теннисные мячи продают в герметичных банках под давлением",
+      "en": "Tennis balls are sold in sealed, pressurised cans."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tennis_ball"
+  },
+  {
+    "id": "race_2937",
+    "statement": {
+      "ru": "На весах в лифте, который трогается вверх, вы весите меньше",
+      "en": "On scales in a lift that starts going up, you weigh less."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Apparent_weight"
+  },
+  {
+    "id": "race_2938",
+    "statement": {
+      "ru": "В высокогорном Денвере бейсбольный мяч улетает дальше, чем на уровне моря",
+      "en": "In high-altitude Denver a baseball flies further than at sea level."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Coors_Field"
+  },
+  {
+    "id": "race_2939",
+    "statement": {
+      "ru": "Бензиновый мотор превращает в движение три четверти энергии топлива",
+      "en": "A petrol car engine turns three quarters of the fuel's energy into motion."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Engine_efficiency"
+  },
+  {
+    "id": "race_2940",
+    "statement": {
+      "ru": "Игрушечная «пьющая птичка» кивает часами без батареек и пружин",
+      "en": "The toy 'drinking bird' bobs for hours with no batteries or springs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Drinking_bird"
+  },
+  {
+    "id": "race_2941",
+    "statement": {
+      "ru": "Едешь вдвое быстрее — и сопротивление воздуха растёт тоже вдвое",
+      "en": "Drive twice as fast and air resistance also doubles."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Drag_(physics)"
+  },
+  {
+    "id": "race_2942",
+    "statement": {
+      "ru": "«Лава» в лава-лампе — это воск, который греет лампочка снизу",
+      "en": "The 'lava' in a lava lamp is wax warmed by a bulb underneath."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Lava_lamp"
+  },
+  {
+    "id": "race_2943",
+    "statement": {
+      "ru": "Коньки скользят, потому что лезвие давлением растапливает лёд",
+      "en": "Skates glide because the blade's pressure melts the ice."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Ice_skating"
+  },
+  {
+    "id": "race_2944",
+    "statement": {
+      "ru": "Гибкий магнит на холодильнике притягивает только одной стороной",
+      "en": "A flexible fridge magnet sticks with one side only."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Halbach_array"
+  },
+  {
+    "id": "race_2945",
+    "statement": {
+      "ru": "Дизельный мотор поджигает топливо без искры — одним сжатием воздуха",
+      "en": "A diesel engine ignites its fuel with no spark, just by squeezing the air."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Diesel_engine"
+  },
+  {
+    "id": "race_2946",
+    "statement": {
+      "ru": "На OLED-экране телефона чёрные точки просто погашены и энергию не тратят",
+      "en": "On a phone's OLED screen, black pixels are simply switched off and use no power."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/OLED"
+  },
+  {
+    "id": "race_2947",
+    "statement": {
+      "ru": "Автомобильный аккумулятор быстрее садится, если поставить его на бетон",
+      "en": "A car battery runs down faster if you stand it on concrete."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_2948",
+    "statement": {
+      "ru": "QR-код можно прочитать, даже если почти треть его испорчена",
+      "en": "A QR code can still be read with almost a third of it damaged."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/QR_code"
+  },
+  {
+    "id": "race_2949",
+    "statement": {
+      "ru": "Электрочайник выключается сам по таймеру, спрятанному внутри",
+      "en": "An electric kettle switches itself off by a timer hidden inside."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Kettle"
+  },
+  {
+    "id": "race_2950",
+    "statement": {
+      "ru": "Настоящий водяной пар невидим: белое облачко над чайником — уже капельки",
+      "en": "Real steam is invisible: the white cloud over a kettle is already droplets."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Steam"
+  },
+  {
+    "id": "race_2951",
+    "statement": {
+      "ru": "Чем сильнее нагревается солнечная панель, тем лучше она работает",
+      "en": "The hotter a solar panel gets, the better it works."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Solar_cell_efficiency"
+  },
+  {
+    "id": "race_2952",
+    "statement": {
+      "ru": "Размешайте какао и стучите ложкой по чашке — звук будет становиться выше",
+      "en": "Stir cocoa powder into a cup and tap it with a spoon: the note keeps rising."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hot_chocolate_effect"
+  },
+  {
+    "id": "race_2953",
+    "statement": {
+      "ru": "Велосипед держит равновесие на ходу только за счёт вращения колёс, как волчок",
+      "en": "A moving bicycle stays upright only because its wheels spin like a top."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_2954",
+    "statement": {
+      "ru": "В камере телефона можно увидеть свет пульта от телевизора, невидимый глазу",
+      "en": "Through a phone camera you can see a TV remote's light, invisible to the eye."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Remote_control"
   }
 ]
