@@ -268,7 +268,7 @@ Texts the phone page draws on its own (buttons, reconnecting, the messages for `
 
 `startCountdown` plays one line when the countdown begins. The host who says it is still inside the gap when the Intro starts 3 s later, so the other host says the first `gameStart` line; the Intro rule is otherwise unchanged.
 
-Lines show in the game language, with `{name}` and `{target}` filled in.
+Lines show in the main language, or in the second language when the second language is on (D166), with `{name}` and `{target}` filled in.
 
 ## show_scripts.json
 

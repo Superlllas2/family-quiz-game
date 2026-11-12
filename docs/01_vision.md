@@ -23,7 +23,8 @@ Real time 3D (D43): a realistic world with cartoon guests (D62). An original lat
 ## Languages
 
 - Russian and English.
-- The game language (TV text, host text) is set in the TV settings panel on the laptop. Default: Russian. No phone has special rights.
+- The main language (TV text, host text) is set in the TV settings panel on the laptop. Default: Russian. No phone has special rights.
+- A second language toggle in the same panel shows the other language under the main one on the question, answers, fact, race statement and topic names; with it on, host lines show in the second language (D163 to D166).
 - Each player picks their own language for their phone in the phone settings. Default: the game language.
 - Host voices, when they exist, are in Russian, with English subtitles on the TV when switched on. Version 1 has text only hosts.
 

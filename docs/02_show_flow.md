@@ -116,7 +116,8 @@ The person at the laptop opens and closes it with the Tab key and uses it with t
 
 | Setting | Default | Takes effect |
 | --- | --- | --- |
-| Game language RU or EN (TV text, host text) | Russian | At once |
+| Main language RU or EN (TV text, host text) | Russian | At once |
+| Second language on or off: the other language under the main one on the question, answers, fact, race statement and topic names (TV labels stay in the main language); host lines switch to the second language (D163 to D168) | `language.secondLanguage` (off); kept for every game until the app closes (D167) | At once |
 | Power ups on or off | `powerUps.enabled` | Next game start |
 | Each power up on or off (freeze, slime, fog) | `powerUps.types` | Next game start |
 | Targeting free or aim up | `powerUps.targeting` | Next game start |
