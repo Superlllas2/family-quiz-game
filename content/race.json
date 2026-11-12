@@ -24073,5 +24073,707 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Sperm_whale"
+  },
+  {
+    "id": "race_2677",
+    "statement": {
+      "ru": "Джордж Оруэлл — настоящее имя автора «1984».",
+      "en": "George Orwell is the real name of the author of 1984."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/George_Orwell"
+  },
+  {
+    "id": "race_2678",
+    "statement": {
+      "ru": "Маленький принц прилетел на Землю с Марса.",
+      "en": "The Little Prince came to Earth from Mars."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Little_Prince"
+  },
+  {
+    "id": "race_2679",
+    "statement": {
+      "ru": "Кафка завещал другу сжечь все свои неопубликованные рукописи.",
+      "en": "Kafka asked a friend to burn all his unpublished manuscripts after his death."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Max_Brod"
+  },
+  {
+    "id": "race_2680",
+    "statement": {
+      "ru": "Брэм Стокер писал «Дракулу», путешествуя по Трансильвании.",
+      "en": "Bram Stoker wrote Dracula while travelling around Transylvania."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bram_Stoker"
+  },
+  {
+    "id": "race_2681",
+    "statement": {
+      "ru": "В первой версии сказки о трёх медведях к ним забралась старуха, а не девочка.",
+      "en": "In the first version of the Three Bears tale, the intruder was an old woman, not a girl."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Goldilocks_and_the_Three_Bears"
+  },
+  {
+    "id": "race_2682",
+    "statement": {
+      "ru": "Хоббиты у Толкина ходят в крепких кожаных башмаках.",
+      "en": "Tolkien's hobbits wear sturdy leather boots."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hobbit"
+  },
+  {
+    "id": "race_2683",
+    "statement": {
+      "ru": "Чудовище в романе Мэри Шелли умеет только рычать.",
+      "en": "The monster in Mary Shelley's novel can only growl."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Frankenstein%27s_monster"
+  },
+  {
+    "id": "race_2684",
+    "statement": {
+      "ru": "Вторая половина имени Винни-Пуха взята от лебедя.",
+      "en": "The 'Pooh' in Winnie-the-Pooh came from a swan."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Winnie-the-Pooh"
+  },
+  {
+    "id": "race_2685",
+    "statement": {
+      "ru": "Братья Гримм начали составлять огромный словарь немецкого языка.",
+      "en": "The Brothers Grimm started a huge dictionary of the German language."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Brothers_Grimm"
+  },
+  {
+    "id": "race_2686",
+    "statement": {
+      "ru": "Джейн Остин издавала свои романы анонимно.",
+      "en": "Jane Austen published her novels anonymously."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Jane_Austen"
+  },
+  {
+    "id": "race_2687",
+    "statement": {
+      "ru": "Д'Артаньян — один из трёх мушкетёров из названия романа.",
+      "en": "D'Artagnan is one of the three musketeers of the novel's title."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Three_Musketeers"
+  },
+  {
+    "id": "race_2688",
+    "statement": {
+      "ru": "В старой сказке о Белоснежке у каждого из семи гномов было имя.",
+      "en": "In the original Snow White fairy tale, each of the seven dwarfs had a name."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Snow_White"
+  },
+  {
+    "id": "race_2689",
+    "statement": {
+      "ru": "Толкин и Клайв Льюис, автор «Нарнии», были близкими друзьями.",
+      "en": "Tolkien and C. S. Lewis, author of Narnia, were close friends."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/C._S._Lewis"
+  },
+  {
+    "id": "race_2690",
+    "statement": {
+      "ru": "Пеппи Длинныйчулок может поднять свою лошадь.",
+      "en": "Pippi Longstocking can lift her own horse."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pippi_Longstocking"
+  },
+  {
+    "id": "race_2691",
+    "statement": {
+      "ru": "Агата Кристи написала всего около десятка детективных романов.",
+      "en": "Agatha Christie wrote only about a dozen detective novels."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Agatha_Christie"
+  },
+  {
+    "id": "race_2692",
+    "statement": {
+      "ru": "Картинки к «Маленькому принцу» нарисовал приглашённый художник.",
+      "en": "The pictures in The Little Prince were drawn by a hired illustrator."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Little_Prince"
+  },
+  {
+    "id": "race_2693",
+    "statement": {
+      "ru": "Андерсен так загостился у Диккенса, что его попросили уехать.",
+      "en": "Andersen overstayed at Dickens's home so long that he was asked to leave."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hans_Christian_Andersen"
+  },
+  {
+    "id": "race_2694",
+    "statement": {
+      "ru": "Мальчишки отдавали Тому Сойеру свои сокровища за право покрасить забор.",
+      "en": "Boys gave Tom Sawyer their treasures for the right to whitewash his fence."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Adventures_of_Tom_Sawyer"
+  },
+  {
+    "id": "race_2695",
+    "statement": {
+      "ru": "Прообраз муми-тролля Туве Янссон нарисовала на стене уличного туалета.",
+      "en": "Tove Jansson drew the forerunner of the Moomins on an outhouse wall."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tove_Jansson"
+  },
+  {
+    "id": "race_2696",
+    "statement": {
+      "ru": "В Страну чудес Алиса попадает через зеркало.",
+      "en": "Alice gets into Wonderland through a mirror."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland"
+  },
+  {
+    "id": "race_2697",
+    "statement": {
+      "ru": "Обеликс стал силачом, упав в детстве в котёл с волшебным зельем.",
+      "en": "Obelix became super strong by falling into a cauldron of magic potion as a baby."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Obelix"
+  },
+  {
+    "id": "race_2698",
+    "statement": {
+      "ru": "Доктор Сьюз, автор детских книг, был врачом.",
+      "en": "Dr. Seuss, the children's author, was a medical doctor."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dr._Seuss"
+  },
+  {
+    "id": "race_2699",
+    "statement": {
+      "ru": "Кристофер Робин из «Винни-Пуха» — выдуманный мальчик.",
+      "en": "Christopher Robin in Winnie-the-Pooh is a made-up boy."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Winnie-the-Pooh"
+  },
+  {
+    "id": "race_2700",
+    "statement": {
+      "ru": "В сказке Шарля Перро Красную Шапочку спасают охотники.",
+      "en": "In Charles Perrault's tale, hunters rescue Little Red Riding Hood."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Little_Red_Riding_Hood"
+  },
+  {
+    "id": "race_2701",
+    "statement": {
+      "ru": "Роулинг подарила Гарри Поттеру свой день рождения — 31 июля.",
+      "en": "Rowling gave Harry Potter her own birthday, 31 July."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Harry_Potter_(character)"
+  },
+  {
+    "id": "race_2702",
+    "statement": {
+      "ru": "Братья Гримм сами сочинили почти все свои сказки.",
+      "en": "The Brothers Grimm made up nearly all of their fairy tales themselves."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Brothers_Grimm"
+  },
+  {
+    "id": "race_2703",
+    "statement": {
+      "ru": "У Шерлока Холмса в книгах Конан Дойла есть старший брат.",
+      "en": "In Conan Doyle's stories, Sherlock Holmes has an older brother."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mycroft_Holmes"
+  },
+  {
+    "id": "race_2704",
+    "statement": {
+      "ru": "Стивен Кинг несколько лет тайно издавал книги под чужим именем.",
+      "en": "Stephen King secretly published books under another name for several years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Richard_Bachman"
+  },
+  {
+    "id": "race_2705",
+    "statement": {
+      "ru": "Роальд Даль, автор «Чарли и шоколадной фабрики», родился в Норвегии.",
+      "en": "Roald Dahl, author of Charlie and the Chocolate Factory, was born in Norway."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Roald_Dahl"
+  },
+  {
+    "id": "race_2706",
+    "statement": {
+      "ru": "Дамблдор — это английское диалектное слово, означающее «шмель».",
+      "en": "Dumbledore is an English dialect word for a bumblebee."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Albus_Dumbledore"
+  },
+  {
+    "id": "race_2707",
+    "statement": {
+      "ru": "Медвежонок Паддингтон приехал в Лондон из Африки.",
+      "en": "Paddington Bear came to London from Africa."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Paddington_Bear"
+  },
+  {
+    "id": "race_2708",
+    "statement": {
+      "ru": "В книге Коллоди Пиноккио убивает Говорящего Сверчка молотком.",
+      "en": "In Collodi's book, Pinocchio kills the Talking Cricket with a mallet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Talking_Cricket"
+  },
+  {
+    "id": "race_2709",
+    "statement": {
+      "ru": "Хемингуэй написал десятки вариантов концовки «Прощай, оружие!».",
+      "en": "Hemingway wrote dozens of endings for A Farewell to Arms."
+    },
+    "answer": true,
+    "source": "https://theworld.org/stories/2012-07-05/hemingways-farewell-arms-and-all-47-endings-be-released"
+  },
+  {
+    "id": "race_2710",
+    "statement": {
+      "ru": "Над «Рождественской песнью» Диккенс работал больше пяти лет.",
+      "en": "Dickens spent more than five years writing A Christmas Carol."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/A_Christmas_Carol"
+  },
+  {
+    "id": "race_2711",
+    "statement": {
+      "ru": "Доктор Сьюз на спор написал книгу всего из 50 разных слов.",
+      "en": "Dr. Seuss wrote a book using only 50 different words, on a bet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Green_Eggs_and_Ham"
+  },
+  {
+    "id": "race_2712",
+    "statement": {
+      "ru": "В книге Баума Изумрудный город кажется зелёным из-за очков.",
+      "en": "In Baum's book, the Emerald City only looks green because of tinted glasses."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Emerald_City"
+  },
+  {
+    "id": "race_2713",
+    "statement": {
+      "ru": "Псевдоним «Марк Твен» — это крик лоцмана, мерившего глубину реки.",
+      "en": "'Mark Twain' was the call of a riverboat leadsman sounding the river's depth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mark_Twain"
+  },
+  {
+    "id": "race_2714",
+    "statement": {
+      "ru": "В сказке Андерсена Русалочка в конце выходит замуж за принца.",
+      "en": "In Andersen's tale, the Little Mermaid marries the prince in the end."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Little_Mermaid"
+  },
+  {
+    "id": "race_2715",
+    "statement": {
+      "ru": "Андерсен был сыном богатого купца.",
+      "en": "Hans Christian Andersen was the son of a rich merchant."
+    },
+    "answer": false,
+    "source": "https://andersen.sdu.dk/liv/biografi/index_e.html"
+  },
+  {
+    "id": "race_2716",
+    "statement": {
+      "ru": "Автор «Мэри Поппинс» Памела Трэверс родилась в США.",
+      "en": "P. L. Travers, author of Mary Poppins, was born in the USA."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/P._L._Travers"
+  },
+  {
+    "id": "race_2717",
+    "statement": {
+      "ru": "Сёстры Бронте издавали свои романы под мужскими именами.",
+      "en": "The Brontë sisters published their novels under men's names."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bront%C3%AB_family"
+  },
+  {
+    "id": "race_2718",
+    "statement": {
+      "ru": "Афина появилась на свет из головы Зевса — сразу в доспехах.",
+      "en": "Athena was born from Zeus's head, already in armour."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Athena"
+  },
+  {
+    "id": "race_2719",
+    "statement": {
+      "ru": "Одиссей сказал циклопу, что его зовут «Никто».",
+      "en": "Odysseus told the Cyclops that his name was 'Nobody'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Polyphemus"
+  },
+  {
+    "id": "race_2720",
+    "statement": {
+      "ru": "Древние греки изображали сирен птицами с женскими головами.",
+      "en": "The ancient Greeks pictured the Sirens as birds with women's heads."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Siren_(mythology)"
+  },
+  {
+    "id": "race_2721",
+    "statement": {
+      "ru": "Чтобы не слышать пения сирен, Одиссей залепил себе уши воском.",
+      "en": "Odysseus plugged his own ears with wax so as not to hear the Sirens."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Siren_(mythology)"
+  },
+  {
+    "id": "race_2722",
+    "statement": {
+      "ru": "Троянская война началась со спора богинь из-за золотого яблока.",
+      "en": "The Trojan War began with goddesses quarrelling over a golden apple."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Apple_of_Discord"
+  },
+  {
+    "id": "race_2723",
+    "statement": {
+      "ru": "Титан Атлант, по мифу, держит на плечах земной шар.",
+      "en": "In the myth, the Titan Atlas holds the Earth on his shoulders."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Atlas_(mythology)"
+  },
+  {
+    "id": "race_2724",
+    "statement": {
+      "ru": "Женой хромого бога-кузнеца Гефеста была Афродита.",
+      "en": "The wife of Hephaestus, the lame smith god, was Aphrodite."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hephaestus"
+  },
+  {
+    "id": "race_2725",
+    "statement": {
+      "ru": "Геракл — сын Зевса и его жены Геры.",
+      "en": "Heracles is the son of Zeus and his wife Hera."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Heracles"
+  },
+  {
+    "id": "race_2726",
+    "statement": {
+      "ru": "Золотое руно — шкура барана, который умел летать.",
+      "en": "The Golden Fleece came from a ram that could fly."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chrysomallos"
+  },
+  {
+    "id": "race_2727",
+    "statement": {
+      "ru": "Прикованному Прометею орёл каждый день клевал сердце.",
+      "en": "Every day an eagle pecked at the chained Prometheus's heart."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Prometheus"
+  },
+  {
+    "id": "race_2728",
+    "statement": {
+      "ru": "Тантал в царстве мёртвых вечно вкатывает в гору камень.",
+      "en": "In the underworld Tantalus forever rolls a boulder uphill."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tantalus"
+  },
+  {
+    "id": "race_2729",
+    "statement": {
+      "ru": "По мифу, глаза на хвосте павлина — от стоглазого великана.",
+      "en": "In the myth, the eyes on a peacock's tail came from a hundred-eyed giant."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Argus_Panoptes"
+  },
+  {
+    "id": "race_2730",
+    "statement": {
+      "ru": "Орфей сумел вывести свою жену Эвридику из царства мёртвых.",
+      "en": "Orpheus managed to lead his wife Eurydice out of the underworld."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Orpheus"
+  },
+  {
+    "id": "race_2731",
+    "statement": {
+      "ru": "Слово «музей» происходит от греческих муз.",
+      "en": "The word 'museum' comes from the Greek Muses."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Museum"
+  },
+  {
+    "id": "race_2732",
+    "statement": {
+      "ru": "Загадку Сфинкса разгадал Геракл.",
+      "en": "Heracles solved the riddle of the Sphinx."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Sphinx"
+  },
+  {
+    "id": "race_2733",
+    "statement": {
+      "ru": "Январь назван в честь римского бога с двумя лицами.",
+      "en": "January is named after a Roman god with two faces."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Janus"
+  },
+  {
+    "id": "race_2734",
+    "statement": {
+      "ru": "Слово «вулкан» происходит от имени римского бога огня.",
+      "en": "The word 'volcano' comes from the name of the Roman god of fire."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Volcano"
+  },
+  {
+    "id": "race_2735",
+    "statement": {
+      "ru": "У молота Тора, по мифу, слишком короткая рукоять.",
+      "en": "In the myth, Thor's hammer has a handle that is too short."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mj%C3%B6lnir"
+  },
+  {
+    "id": "race_2736",
+    "statement": {
+      "ru": "В скандинавских мифах Локи — брат Тора.",
+      "en": "In Norse myths, Loki is Thor's brother."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Loki"
+  },
+  {
+    "id": "race_2737",
+    "statement": {
+      "ru": "Один, главный бог скандинавов, отдал свой глаз ради мудрости.",
+      "en": "Odin, chief of the Norse gods, gave up one of his eyes for wisdom."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Odin"
+  },
+  {
+    "id": "race_2738",
+    "statement": {
+      "ru": "Мировое древо скандинавских мифов Иггдрасиль — это дуб.",
+      "en": "Yggdrasil, the world tree of Norse myth, is an oak."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Yggdrasil"
+  },
+  {
+    "id": "race_2739",
+    "statement": {
+      "ru": "По скандинавским мифам, в конце света Одина проглотит волк.",
+      "en": "In Norse myth, at the end of the world Odin is swallowed by a wolf."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Odin"
+  },
+  {
+    "id": "race_2740",
+    "statement": {
+      "ru": "Египтяне верили, что сердце умершего взвешивают против пера.",
+      "en": "The Egyptians believed a dead person's heart was weighed against a feather."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Anubis"
+  },
+  {
+    "id": "race_2741",
+    "statement": {
+      "ru": "У египетского бога Анубиса голова сокола.",
+      "en": "The Egyptian god Anubis has a falcon's head."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Anubis"
+  },
+  {
+    "id": "race_2742",
+    "statement": {
+      "ru": "Колумб записал, что видел русалок — только не таких красивых, как на картинах.",
+      "en": "Columbus wrote that he saw mermaids, only not as pretty as in paintings."
+    },
+    "answer": true,
+    "source": "https://www.history.com/this-day-in-history/january-9/columbus-mistakes-manatees-for-mermaids"
+  },
+  {
+    "id": "race_2743",
+    "statement": {
+      "ru": "Китайских драконов обычно изображают с крыльями.",
+      "en": "Chinese dragons are usually drawn with wings."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chinese_dragon"
+  },
+  {
+    "id": "race_2744",
+    "statement": {
+      "ru": "По легенде, василиск вылупляется из яйца, которое высидел петух.",
+      "en": "Legend says a basilisk hatches from an egg sat on by a rooster."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Basilisk"
+  },
+  {
+    "id": "race_2745",
+    "statement": {
+      "ru": "В Китае дракон издавна считается символом зла.",
+      "en": "In China the dragon has long been a symbol of evil."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chinese_dragon"
+  },
+  {
+    "id": "race_2746",
+    "statement": {
+      "ru": "В японских легендах у лисы-оборотня бывает до девяти хвостов.",
+      "en": "In Japanese legends a shapeshifting fox can have up to nine tails."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kitsune"
+  },
+  {
+    "id": "race_2747",
+    "statement": {
+      "ru": "Кракен — морское чудовище из японских легенд.",
+      "en": "The kraken is a sea monster from Japanese legends."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Kraken"
+  },
+  {
+    "id": "race_2748",
+    "statement": {
+      "ru": "Японский сказочный герой Момотаро родился из персика.",
+      "en": "Momotaro, the Japanese folk hero, was born from a peach."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Momotar%C5%8D"
+  },
+  {
+    "id": "race_2749",
+    "statement": {
+      "ru": "Жену короля Артура звали Изольда.",
+      "en": "King Arthur's wife was called Isolde."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Guinevere"
+  },
+  {
+    "id": "race_2750",
+    "statement": {
+      "ru": "В китайской легенде на Луне живёт кролик.",
+      "en": "In a Chinese legend, a rabbit lives on the Moon."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Moon_rabbit"
+  },
+  {
+    "id": "race_2751",
+    "statement": {
+      "ru": "Робин Гуд — герой шотландских легенд.",
+      "en": "Robin Hood is a hero of Scottish legends."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Robin_Hood"
+  },
+  {
+    "id": "race_2752",
+    "statement": {
+      "ru": "Стол короля Артура сделали круглым, чтобы все рыцари сидели на равных.",
+      "en": "King Arthur's table was made round so that all the knights sat as equals."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Round_Table"
+  },
+  {
+    "id": "race_2753",
+    "statement": {
+      "ru": "Маленький Джон из шайки Робин Гуда был великаном.",
+      "en": "Little John of Robin Hood's band was a giant of a man."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Little_John"
+  },
+  {
+    "id": "race_2754",
+    "statement": {
+      "ru": "По китайской легенде, чудовище Нянь боится красного цвета.",
+      "en": "In a Chinese legend, the monster Nian is afraid of the colour red."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nian"
   }
 ]

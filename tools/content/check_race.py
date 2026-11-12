@@ -20,7 +20,7 @@ STOP = set("""a an the is are was were be been of in on at to for by with and or
 had can could not no do does did one two three into over under more most less only all any every their they them he she his her
 you your we our who which what when where there here so if but about after before up out per also just very""".split())
 RUSSIA = re.compile(r"russia|soviet|ussr|moscow|petersburg|kremlin|siberia|\btsar|putin|lenin|stalin|gagarin|"
-                    r"росси|русск|советск|ссср|москв|петербург|кремл|сибир|царь|ленин|сталин|гагарин", re.I)
+                    r"росси[яийюе]|(?<![а-яё])русск|советск|ссср|москв|петербург|кремл|сибир|царь|ленин|сталин|гагарин", re.I)
 
 
 def words(text):
