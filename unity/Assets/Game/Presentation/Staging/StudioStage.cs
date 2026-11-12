@@ -13,7 +13,10 @@ namespace FamilyQuiz.Presentation.Staging
     /// <summary>
     /// The 3D set behind the TV overlay (docs/21_staging.md, "Game night 1 version"; 0015, 0016). Loads the Studio
     /// scene additively when switched on, then every frame puts the camera on the shot ShotPlan picks, opens and
-    /// closes the curtain, brings the studio lights up and down, and plays the guests and hosts from the events.
+    /// closes the curtain, brings the studio lights up and down, and plays the guests and hosts from the events. In
+    /// the Lobby the camera tours the dim studio (D160, LobbyTour), fading through black between its moves; the
+    /// overlay (room code, QR code, players) is UI and never fades. The Graphics panel's Brightness (D161) adds to the
+    /// studio's exposure here.
     /// A listener only: it reads the game and the events it is handed and never changes state or holds a phase.
     /// Switched off, it hides the studio and the flat views show as before.
     /// </summary>
@@ -57,6 +60,11 @@ namespace FamilyQuiz.Presentation.Staging
         private ColorAdjustments _color;
         private Vignette _vignette;
         private DepthOfField _dof;
+        private Color _baseFilter = Color.white;
+        private List<TourMove> _tourMoves = new List<TourMove>();
+        private LobbyTour _tour;
+        private float _tourStartTime;
+        private float _tourAlpha = 1f;
 
         public static StudioStage Create(TvContext context, Action<bool> visibleChanged)
         {
@@ -72,6 +80,9 @@ namespace FamilyQuiz.Presentation.Staging
         public bool Visible => _visible;
 
         public bool IsOn => _on;
+
+        /// <summary>Stops added to the studio's exposure (D161); set by the GraphicsApplier, never touches the UI.</summary>
+        public float Brightness { get; set; }
 
         public void SetOn(bool on)
         {
@@ -176,10 +187,14 @@ namespace FamilyQuiz.Presentation.Staging
             profile.TryGet(out _dof);
             _baseExposure = _color != null ? _color.postExposure.value : 0f;
             _baseVignette = _vignette != null ? _vignette.intensity.value : 0f;
+            _baseFilter = _color != null ? _color.colorFilter.value : Color.white;
             _guestKey = _rig.GuestKey != null ? _rig.GuestKey.intensity : 0f;
             _hostKey = _rig.HostKey != null ? _rig.HostKey.intensity : 0f;
             _stageLamps = new float[_rig.StageLamps != null ? _rig.StageLamps.Length : 0];
             for (int i = 0; i < _stageLamps.Length; i++) _stageLamps[i] = _rig.StageLamps[i].intensity;
+
+            _tourMoves = LobbyTourMoves.Build(_rig, _rig.BandShot != null ? _rig.BandShot : BandPoseFromMarkers());
+            _tour = null;
 
             _cast = new GameObject("Cast").transform;
             SceneManager.MoveGameObjectToScene(_cast.gameObject, _studioScene);
@@ -197,6 +212,32 @@ namespace FamilyQuiz.Presentation.Staging
             }
 
             ApplyVisibility();
+        }
+
+        /// <summary>A scene built before D160 has no BandShot: the band preview markers of Studio.fbx stand in.</summary>
+        private Transform BandPoseFromMarkers()
+        {
+            Transform cam = null, target = null;
+            foreach (var root in _studioScene.GetRootGameObjects())
+            foreach (var t in root.GetComponentsInChildren<Transform>(true))
+            {
+                if (t.name == "CAM_BandPreview") cam = t;
+                else if (t.name == "CAMT_BandPreview") target = t;
+            }
+
+            if (cam == null || target == null) return null;
+            var pose = new GameObject("BandShot").transform;
+            pose.SetParent(_rig.transform, false);
+            pose.SetPositionAndRotation(cam.position, Quaternion.LookRotation(target.position - cam.position));
+            return pose;
+        }
+
+        private LobbyTour Tour()
+        {
+            if (_tour != null) return _tour;
+            var lobby = _context.Game.Content.Config.Staging.Lobby;
+            _tour = new LobbyTour((long)(lobby.CutSeconds * 1000), (long)(lobby.FadeSeconds * 1000), _tourMoves.Count);
+            return _tour;
         }
 
         private void ApplyVisibility()
@@ -405,6 +446,10 @@ namespace FamilyQuiz.Presentation.Staging
             var choice = _plan.Current(now);
             if (choice.Shot == Shot.Establish && _lastShot != Shot.Establish)
                 foreach (var g in _guests.Values) g.Play(GuestView.Move.Wave);
+            // The tour runs on real time, not the core clock: the Lobby has no timer, and the core clock stands still
+            // until the relay connects (D160).
+            if (choice.Shot == Shot.LobbyTour && _lastShot != Shot.LobbyTour) _tourStartTime = Time.unscaledTime;
+            _tourAlpha = 1f;
             _lastShot = choice.Shot;
             PlaceCamera(choice, now, state);
             Curtain(state, now);
@@ -421,6 +466,19 @@ namespace FamilyQuiz.Presentation.Staging
             Quaternion rotation;
             switch (choice.Shot)
             {
+                case Shot.LobbyTour:
+                    if (_tourMoves.Count == 0) break; // no markers: hold the wide
+                {
+                    var frame = Tour().At((long)((Time.unscaledTime - _tourStartTime) * 1000f));
+                    var move = _tourMoves[frame.Move];
+                    move.PoseAt((float)frame.Progress, out var at, out var look);
+                    StudioLens.Drift(_rig, ref at, ref look, Time.unscaledTime, 7f);
+                    cam.transform.SetPositionAndRotation(at, look);
+                    cam.fieldOfView = move.FieldOfView;
+                    StudioLens.Focus(_dof, _rig.TourLens, move.Subject, cam.transform);
+                    _tourAlpha = (float)frame.Alpha;
+                    return;
+                }
                 case Shot.Seats:
                     pose = _rig.SeatsShot;
                     fov = _rig.SeatsFieldOfView;
@@ -503,9 +561,16 @@ namespace FamilyQuiz.Presentation.Staging
         private void Lights(double level, GameState state, long now)
         {
             float dark = (float)(1.0 - level);
-            if (_color != null) _color.postExposure.Override(_baseExposure - _rig.DarkStops * dark);
+            double darkStops = _context.Game.Content.Config.Staging.Lobby.DarkStops;
+            if (_color != null)
+            {
+                _color.postExposure.Override((float)StudioExposure.PostExposure(_baseExposure, level, darkStops, Brightness));
+                // The Lobby tour's fades through black, in the picture only: the overlay is UI and stays.
+                _color.colorFilter.Override(new Color(_baseFilter.r * _tourAlpha, _baseFilter.g * _tourAlpha, _baseFilter.b * _tourAlpha, _baseFilter.a));
+            }
+
             if (_vignette != null) _vignette.intensity.Override(Mathf.Lerp(_baseVignette, Mathf.Max(_baseVignette, 0.5f), dark));
-            float boost = Mathf.Pow(2f, _rig.DarkStops * dark);
+            float boost = (float)StudioExposure.KeyBoost(level, darkStops);
             if (_rig.GuestKey != null) _rig.GuestKey.intensity = _guestKey * boost;
             if (_rig.HostKey != null) _rig.HostKey.intensity = _hostKey * boost;
 

@@ -323,6 +323,26 @@ namespace FamilyQuiz.EditorTools.Studio
                 }
                 else Debug.LogWarning("Studio: no light for marker " + pair.Key);
             }
+
+            AddCeilingFill(look, markers, parent);
+        }
+
+        /// <summary>
+        /// Soft fill from above (D161): one broad, dim, baked area light under the ceiling over each zone, aimed straight
+        /// down, so the shadows read on a TV. Placed from the set's markers, so it follows the layout.
+        /// </summary>
+        private static void AddCeilingFill(StudioLook look, Dictionary<string, Transform> markers, Transform parent)
+        {
+            if (look.CeilingFillIntensity <= 0f) return;
+            var seats = Enumerable.Range(1, 8).Select(i => Find(markers, "Seat_" + i).position).Aggregate(Vector3.zero, (a, b) => a + b) / 8f;
+            var desk = (Find(markers, "Host_konstantin").position + Find(markers, "Host_ilja").position) * 0.5f;
+            var curtain = (Find(markers, "Dyn_CurtainL").position + Find(markers, "Dyn_CurtainR").position) * 0.5f;
+            var curtainCam = Find(markers, "CAM_Curtain").position;
+            var apron = curtain + Vector3.ProjectOnPlane(curtainCam - curtain, Vector3.up).normalized * 3f; // over the apron, not behind the curtain
+            var band = Find(markers, "CAMT_BandPreview").position;
+            var down = Quaternion.LookRotation(Vector3.down, Vector3.forward);
+            foreach (var (name, at) in new[] { ("CeilingFillSeats", seats), ("CeilingFillDesk", desk), ("CeilingFillStage", apron), ("CeilingFillBand", band) })
+                Area(parent, name, new Vector3(at.x, look.CeilingFillHeight, at.z), down, look.CeilingFillSize, look.Fill, look.CeilingFillIntensity, 10f);
         }
 
         private static Light NewLight(Transform parent, string name, LightType type, Color color, float intensity, float range,
@@ -484,6 +504,7 @@ namespace FamilyQuiz.EditorTools.Studio
             rig.CurtainShot = Shot("Curtain");
             rig.StageShot = Shot("Stage");
             rig.StagePushIn = Shot("StagePushIn");
+            rig.BandShot = Shot("BandPreview"); // one of the Lobby tour's moves (D160)
             camera.transform.SetPositionAndRotation(rig.WideShot.position, rig.WideShot.rotation);
             camera.fieldOfView = rig.WideFieldOfView;
         }
@@ -589,7 +610,7 @@ namespace FamilyQuiz.EditorTools.Studio
             settings.aoExponentDirect = 0.4f;
             settings.filteringMode = LightingSettings.FilterMode.Auto;
             settings.directionalityMode = LightmapsMode.CombinedDirectional;
-            settings.indirectScale = 1.1f;
+            settings.indirectScale = look.IndirectScale;
             EditorUtility.SetDirty(settings);
             AssetDatabase.SaveAssets();
             return settings;

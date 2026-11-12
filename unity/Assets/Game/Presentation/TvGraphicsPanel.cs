@@ -17,7 +17,7 @@ namespace FamilyQuiz.Presentation
         private const float PanelWidth = 1000f;
         private const float Padding = 40f;
         private const float RowsTop = 112f;
-        private const float RowStep = 60f;
+        private const float RowStep = 56f; // 14 rows fit 1080 with the ribbon on top (60 before D161 added Brightness)
         private const float LabelWidth = 440f;
         private const float ArrowWidth = 58f;
         private const float ValueWidth = 330f;
@@ -122,6 +122,9 @@ namespace FamilyQuiz.Presentation
             Add("tv.graphics.vsync", o => OnOff(o.VSync), (o, s) => o.VSync = !o.VSync, false);
             Add("tv.graphics.frameLimit", o => o.VSync ? T("tv.graphics.byVsync") : o.FrameLimit <= 0 ? T("tv.graphics.unlimited") : o.FrameLimit.ToString(),
                 (o, s) => o.FrameLimit = GraphicsOptions.Cycle(GraphicsOptions.FrameLimits, o.FrameLimit, s), false);
+            // D161: stops on the studio's exposure only, never the UI; not part of the quality presets.
+            Add("tv.graphics.brightness", o => BrightnessText(o.Brightness),
+                (o, s) => o.Brightness = GraphicsOptions.Cycle(GraphicsOptions.BrightnessSteps, o.Brightness, s), false);
             Add("tv.graphics.preset", o => T("tv.graphics.level." + o.Preset), (o, s) =>
             {
                 var next = GraphicsOptions.Cycle(GraphicsOptions.Presets, o.Preset == GraphicsOptions.Custom ? "high" : o.Preset, s);
@@ -145,6 +148,14 @@ namespace FamilyQuiz.Presentation
         private void Add(string labelKey, Func<GraphicsOptions, string> value, Action<GraphicsOptions, int> step, bool changesPreset = true)
         {
             _rows.Add(new Row { LabelKey = labelKey, Value = value, Step = step, ChangesPreset = changesPreset });
+        }
+
+        /// <summary>Stops with their sign: -0.5, 0, +1.25.</summary>
+        private static string BrightnessText(double stops)
+        {
+            if (stops == 0) return "0";
+            var text = Math.Abs(stops).ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+            return (stops < 0 ? "-" : "+") + text;
         }
 
         private string ResolutionText(GraphicsOptions o)

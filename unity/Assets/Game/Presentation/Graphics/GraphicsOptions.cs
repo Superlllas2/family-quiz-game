@@ -26,6 +26,10 @@ namespace FamilyQuiz.Presentation.Graphics
         public static readonly int[] RenderScales = { 50, 60, 70, 80, 90, 100 };
         public static readonly int[] AnisoLevels = { 0, 2, 4, 8, 16 };
 
+        /// <summary>Brightness in stops (D161): −1 to +2 in steps of 0.25. Quarters are exact in binary, so they compare equal.</summary>
+        public static readonly double[] BrightnessSteps =
+            { -1, -0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2 };
+
         /// <summary>A preset that no longer matches the detail settings after a change.</summary>
         public const string Custom = "custom";
 
@@ -57,6 +61,12 @@ namespace FamilyQuiz.Presentation.Graphics
         public bool Bloom = true;
         public bool DepthOfField = true;
         public int Anisotropic = 8;
+
+        /// <summary>
+        /// Stops added to the studio's exposure only, never the UI (D161), for a TV that shows the dim studio too dark.
+        /// Not part of the quality presets.
+        /// </summary>
+        public double Brightness;
 
         public GraphicsOptions Clone()
         {
@@ -159,6 +169,10 @@ namespace FamilyQuiz.Presentation.Graphics
                 o.Bloom = (bool?)j["bloom"] ?? o.Bloom;
                 o.DepthOfField = (bool?)j["depthOfField"] ?? o.DepthOfField;
                 o.Anisotropic = Pick(AnisoLevels, (int?)j["anisotropic"] ?? o.Anisotropic, o.Anisotropic);
+                // A file from before D161 has no brightness: 0. A value off the steps also reads as 0.
+                var brightness = j["brightness"];
+                if (brightness != null && (brightness.Type == JTokenType.Float || brightness.Type == JTokenType.Integer))
+                    o.Brightness = Pick(BrightnessSteps, (double)brightness, o.Brightness);
                 o.Preset = o.MatchingPreset();
             }
             catch (Exception e) when (e is IOException || e is UnauthorizedAccessException || e is Newtonsoft.Json.JsonException
@@ -181,7 +195,7 @@ namespace FamilyQuiz.Presentation.Graphics
                     ["windowChosen"] = WindowChosen, ["displayMode"] = DisplayMode, ["width"] = Width, ["height"] = Height, ["vsync"] = VSync,
                     ["frameLimit"] = FrameLimit, ["textures"] = Textures, ["shadows"] = Shadows, ["antiAliasing"] = AntiAliasing,
                     ["renderScale"] = RenderScale, ["ambientOcclusion"] = AmbientOcclusion, ["bloom"] = Bloom,
-                    ["depthOfField"] = DepthOfField, ["anisotropic"] = Anisotropic
+                    ["depthOfField"] = DepthOfField, ["anisotropic"] = Anisotropic, ["brightness"] = Brightness
                 };
                 File.WriteAllText(path, j.ToString());
             }

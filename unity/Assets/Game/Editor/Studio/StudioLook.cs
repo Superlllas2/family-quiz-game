@@ -28,7 +28,17 @@ namespace FamilyQuiz.EditorTools.Studio
         // Realtime rim lights from behind the guests and the hosts, to separate them from the back wall.
         public Color Rim = new Color(0.85f, 0.88f, 1f);
         public float RimIntensity = 16f;
+        // The flat ambient (environment) light, baked into the lightmaps and the probes: the floor under every shadow.
         public Color Ambient;
+        // Soft fill from above (D161): broad, dim, baked area lights under the ceiling over the seats, the desk, the
+        // curtain stage and the band, so the shadows read on a TV while the warm practical pools stay the brightest
+        // thing in the room. 0 leaves them out. Size in metres, height of the lights above the floor in metres.
+        public float CeilingFillIntensity;
+        public Vector2 CeilingFillSize = new Vector2(6f, 4f);
+        public float CeilingFillHeight = 5.2f;
+        // How much the bounced light counts in the bake (LightingSettings.indirectScale): more lifts the shadows evenly
+        // in the colours of the room.
+        public float IndirectScale = 1.1f;
         public float CityEmission = 1.6f;
 
         // Film look (URP post processing).

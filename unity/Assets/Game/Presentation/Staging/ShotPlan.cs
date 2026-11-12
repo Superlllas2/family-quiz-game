@@ -7,13 +7,15 @@ namespace FamilyQuiz.Presentation.Staging
     /// D91, D95 to D97). Plain C#: fed the phase changes and the host lines that start, asked once per frame on the core
     /// clock. A listener only: shots follow phases, so a phase change always cuts, and nothing here holds a phase.
     /// <list type="bullet">
-    /// <item>Lobby and StartCountdown: Seats, the studio dark (light level 0).</item>
+    /// <item>Lobby: LobbyTour, slow moves around the dim studio (D160, replacing D91's Seats); StartCountdown: Seats.
+    /// Both with the studio dark (light level 0, staging.lobby.darkStops). A joining player never cuts the tour.</item>
     /// <item>Intro: HostSolo on each host while their gameStart line shows (the studio still dark), then Establish for
     /// establishMs with the lights coming up over its first lightsUpMs, then Wide. Lines after Establish has begun
     /// never cut back.</item>
     /// <item>FinalIntro: HostSolo while a line shows (the finalStart line), Wide otherwise.</item>
     /// <item>QuestionShow: Stage, the question card on the board. Answer: Wide, on the guests, with the question card and
     /// the tiles under them (decisions/0017_game_night_ui.md).</item>
+    /// <item>TopicTie: Curtain, like TopicVote. Attacks: Wide, like Scores.</item>
     /// <item>Every other phase: its own shot, whatever the hosts say.</item>
     /// </list>
     /// </summary>
@@ -66,6 +68,7 @@ namespace FamilyQuiz.Presentation.Staging
             switch (_phase)
             {
                 case GamePhase.Lobby:
+                    return ShotChoice.Of(Shot.LobbyTour);
                 case GamePhase.StartCountdown:
                     return ShotChoice.Of(Shot.Seats);
                 case GamePhase.Intro:
@@ -74,6 +77,7 @@ namespace FamilyQuiz.Presentation.Staging
                 case GamePhase.FinalIntro:
                     return LineShowing(nowMs) ? ShotChoice.Solo(_lineHost) : ShotChoice.Of(Shot.Wide);
                 case GamePhase.TopicVote:
+                case GamePhase.TopicTie:
                     return ShotChoice.Of(Shot.Curtain);
                 case GamePhase.QuestionShow:
                     return ShotChoice.Of(Shot.Stage);
@@ -82,7 +86,7 @@ namespace FamilyQuiz.Presentation.Staging
             }
         }
 
-        /// <summary>0 for a dark studio (only the seat lamps), 1 for the studio fully lit.</summary>
+        /// <summary>0 for a dark studio (staging.lobby.darkStops down, the seat lamps kept), 1 for the studio fully lit.</summary>
         public double LightLevel(long nowMs)
         {
             Advance(nowMs);
