@@ -25486,5 +25486,392 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Television_advertisement"
+  },
+  {
+    "id": "race_2834",
+    "statement": {
+      "ru": "У пчелы пять глаз.",
+      "en": "A bee has five eyes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bee"
+  },
+  {
+    "id": "race_2835",
+    "statement": {
+      "ru": "У комнатной мухи четыре крыла.",
+      "en": "A housefly has four wings."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Fly"
+  },
+  {
+    "id": "race_2836",
+    "statement": {
+      "ru": "Есть муравьи, которые взрываются, защищая своё гнездо.",
+      "en": "There are ants that blow themselves up to defend their nest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Colobopsis_explodens"
+  },
+  {
+    "id": "race_2837",
+    "statement": {
+      "ru": "Паук выпускает паутину изо рта.",
+      "en": "A spider lets out its silk from its mouth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Spinneret_(spider)"
+  },
+  {
+    "id": "race_2838",
+    "statement": {
+      "ru": "Дождевой червь дышит кожей.",
+      "en": "An earthworm breathes through its skin."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Earthworm"
+  },
+  {
+    "id": "race_2839",
+    "statement": {
+      "ru": "Улитка может вылезти из раковины и найти себе побольше.",
+      "en": "A snail can crawl out of its shell and find a bigger one."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gastropod_shell"
+  },
+  {
+    "id": "race_2840",
+    "statement": {
+      "ru": "Японские пчёлы убивают шершня, облепив его и перегрев своим теплом.",
+      "en": "Japanese bees kill a hornet by covering it in a ball and overheating it."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Apis_cerana_japonica"
+  },
+  {
+    "id": "race_2841",
+    "statement": {
+      "ru": "У блохи есть крылья.",
+      "en": "A flea has wings."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Flea"
+  },
+  {
+    "id": "race_2842",
+    "statement": {
+      "ru": "Есть осы, которые делают мёд.",
+      "en": "There are wasps that make honey."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mexican_honey_wasp"
+  },
+  {
+    "id": "race_2843",
+    "statement": {
+      "ru": "Стрекоза может больно ужалить человека.",
+      "en": "A dragonfly can give a person a painful sting."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dragonfly"
+  },
+  {
+    "id": "race_2844",
+    "statement": {
+      "ru": "Есть гусеницы, которые прячутся от птиц, притворяясь птичьим помётом.",
+      "en": "Some caterpillars hide from birds by looking like bird droppings."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Papilio_cresphontes"
+  },
+  {
+    "id": "race_2845",
+    "statement": {
+      "ru": "Клещ — это насекомое.",
+      "en": "A tick is an insect."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tick"
+  },
+  {
+    "id": "race_2846",
+    "statement": {
+      "ru": "Навозный жук может тянуть груз в тысячу раз тяжелее себя.",
+      "en": "A dung beetle can pull a load a thousand times its own weight."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Onthophagus_taurus"
+  },
+  {
+    "id": "race_2847",
+    "statement": {
+      "ru": "Тутовый шелкопряд — это червяк.",
+      "en": "The silkworm is a worm."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bombyx_mori"
+  },
+  {
+    "id": "race_2848",
+    "statement": {
+      "ru": "Муравьи пасут тлю и собирают её сладкие выделения.",
+      "en": "Ants herd aphids and collect their sweet droppings."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Trophobiosis"
+  },
+  {
+    "id": "race_2849",
+    "statement": {
+      "ru": "Личинка божьей коровки похожа на маленькую божью коровку.",
+      "en": "A ladybird larva looks like a tiny ladybird."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Coccinella_septempunctata"
+  },
+  {
+    "id": "race_2850",
+    "statement": {
+      "ru": "Есть осы, которые узнают друг друга по лицу.",
+      "en": "There are wasps that recognise each other by their faces."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Polistes_fuscatus"
+  },
+  {
+    "id": "race_2851",
+    "statement": {
+      "ru": "Оса, ужалив, теряет жало и погибает.",
+      "en": "A wasp loses its sting and dies after stinging."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Stinger"
+  },
+  {
+    "id": "race_2852",
+    "statement": {
+      "ru": "Взрослая бабочка павлиноглазка атлас вообще не ест.",
+      "en": "An adult atlas moth never eats at all."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Atlas_moth"
+  },
+  {
+    "id": "race_2853",
+    "statement": {
+      "ru": "Взрослая бабочка-капустница грызёт листья капусты.",
+      "en": "An adult cabbage white butterfly chews cabbage leaves."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Pieris_rapae"
+  },
+  {
+    "id": "race_2854",
+    "statement": {
+      "ru": "Есть палочник длиной больше полуметра.",
+      "en": "There is a stick insect more than half a metre long."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Phryganistria_chinensis"
+  },
+  {
+    "id": "race_2855",
+    "statement": {
+      "ru": "Кузнечик стрекочет ртом.",
+      "en": "A grasshopper chirps with its mouth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Grasshopper"
+  },
+  {
+    "id": "race_2856",
+    "statement": {
+      "ru": "Бо́льшую часть жизни стрекоза проводит под водой.",
+      "en": "A dragonfly spends most of its life underwater."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Dragonfly"
+  },
+  {
+    "id": "race_2857",
+    "statement": {
+      "ru": "У бабочки два крыла.",
+      "en": "A butterfly has two wings."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Butterfly"
+  },
+  {
+    "id": "race_2858",
+    "statement": {
+      "ru": "Насекомые дышат через дырочки в боках.",
+      "en": "Insects breathe through little holes in their sides."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Respiratory_system_of_insects"
+  },
+  {
+    "id": "race_2859",
+    "statement": {
+      "ru": "Комары-самцы тоже пьют кровь.",
+      "en": "Male mosquitoes drink blood too."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mosquito"
+  },
+  {
+    "id": "race_2860",
+    "statement": {
+      "ru": "Глаза улитки — на верхних рожках.",
+      "en": "A snail's eyes are on its upper horns."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cornu_aspersum"
+  },
+  {
+    "id": "race_2861",
+    "statement": {
+      "ru": "Слизень — это детёныш улитки, у которого ещё не выросла раковина.",
+      "en": "A slug is a baby snail whose shell hasn't grown yet."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Slug"
+  },
+  {
+    "id": "race_2862",
+    "statement": {
+      "ru": "Некоторые самки светлячков подманивают чужих самцов вспышками и съедают их.",
+      "en": "Some female fireflies lure males of other species with flashes and eat them."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Photuris"
+  },
+  {
+    "id": "race_2863",
+    "statement": {
+      "ru": "Шершень — это просто крупный самец обычной осы.",
+      "en": "A hornet is just a big male of the common wasp."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hornet"
+  },
+  {
+    "id": "race_2864",
+    "statement": {
+      "ru": "Есть бактерии, которые питаются пластиком.",
+      "en": "There are bacteria that feed on plastic."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Ideonella_sakaiensis"
+  },
+  {
+    "id": "race_2865",
+    "statement": {
+      "ru": "Большинство видов пчёл живут большими семьями.",
+      "en": "Most kinds of bee live in big colonies."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bee"
+  },
+  {
+    "id": "race_2866",
+    "statement": {
+      "ru": "Есть микробы, которые живут в воде горячее 100 °C.",
+      "en": "Some microbes live in water hotter than 100 °C."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Hyperthermophile"
+  },
+  {
+    "id": "race_2867",
+    "statement": {
+      "ru": "Постельные клопы умеют летать.",
+      "en": "Bed bugs can fly."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bed_bug"
+  },
+  {
+    "id": "race_2868",
+    "statement": {
+      "ru": "Хоботок комара — это пучок из шести иголок.",
+      "en": "A mosquito's proboscis is a bundle of six needles."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mosquito"
+  },
+  {
+    "id": "race_2869",
+    "statement": {
+      "ru": "У медицинской пиявки всего один зуб.",
+      "en": "A medicinal leech has just one tooth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hirudo_medicinalis"
+  },
+  {
+    "id": "race_2870",
+    "statement": {
+      "ru": "Термитам переваривать дерево помогают микробы в их животе.",
+      "en": "Microbes in a termite's gut help it digest wood."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Termite"
+  },
+  {
+    "id": "race_2871",
+    "statement": {
+      "ru": "Опарыши сами собой заводятся в гнилом мясе.",
+      "en": "Maggots appear in rotting meat all by themselves."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Spontaneous_generation"
+  },
+  {
+    "id": "race_2872",
+    "statement": {
+      "ru": "Пчелиная матка и рабочие пчёлы выводятся из одинаковых яиц.",
+      "en": "A queen bee and the worker bees hatch from the same kind of eggs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Western_honey_bee"
+  },
+  {
+    "id": "race_2873",
+    "statement": {
+      "ru": "Взрослый майский жук живёт несколько лет.",
+      "en": "An adult cockchafer lives for several years."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Common_cockchafer"
+  },
+  {
+    "id": "race_2874",
+    "statement": {
+      "ru": "Бабочка «мёртвая голова» ворует мёд из ульев.",
+      "en": "The death's-head hawkmoth steals honey from beehives."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Death%27s-head_hawkmoth"
+  },
+  {
+    "id": "race_2875",
+    "statement": {
+      "ru": "Каждый паук плетёт паутину-ловушку.",
+      "en": "Every spider spins a web to catch prey."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Jumping_spider"
+  },
+  {
+    "id": "race_2876",
+    "statement": {
+      "ru": "Есть дождевой червь длиной до трёх метров.",
+      "en": "There is an earthworm up to three metres long."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Earthworm"
   }
 ]
