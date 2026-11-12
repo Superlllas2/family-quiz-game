@@ -88,7 +88,7 @@ namespace FamilyQuiz.Presentation
             foreach (var runner in _runners) runner.Place(race.PositionOf(runner.PlayerId), finishSteps);
         }
 
-        /// <summary>Runners whose step changed slide to it after delay seconds; the others stay.</summary>
+        /// <summary>Runners whose step changed slide to it after delay seconds, forward or back; the others stay.</summary>
         public void SlideAll(RaceState race, int finishSteps, float delay)
         {
             foreach (var runner in _runners) runner.Slide(race.PositionOf(runner.PlayerId), finishSteps, delay);

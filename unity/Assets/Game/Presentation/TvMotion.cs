@@ -34,6 +34,15 @@ namespace FamilyQuiz.Presentation
         /// <summary>Race chips take this long to slide to their new step; well inside the race reveal.</summary>
         public const float RaceMoveSeconds = 0.6f;
 
+        /// <summary>TopicTie (D153): the door the spin lights grows to this size.</summary>
+        public const float TieLitScale = 1.04f;
+
+        /// <summary>TopicTie: the chosen door's size once the spin stopped on it.</summary>
+        public const float TieWinnerScale = 1.08f;
+
+        /// <summary>TopicTie: opacity of the doors out of the tie, and of the losers once the spin stopped.</summary>
+        public const float TieDimAlpha = 0.35f;
+
         /// <summary>Opacity of a disconnected player's chip.</summary>
         public const float DisconnectedAlpha = 0.35f;
     }

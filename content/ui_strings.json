@@ -38,11 +38,14 @@
   "tv.roundEnd.title": { "ru": "Раунд {round} окончен", "en": "Round {round} is over" },
   "tv.roundEnd.winner": { "ru": "Лучший в раунде: {names}", "en": "Best this round: {names}" },
   "tv.finalIntro.title": { "ru": "Финальная гонка", "en": "The final race" },
-  "tv.finalIntro.rules": { "ru": "Правда или ложь? Верный ответ — шаг вперёд. Первый на финише побеждает!", "en": "True or false? A right answer is one step forward. First to the finish wins!" },
+  "tv.finalIntro.rules": { "ru": "Правда или ложь? Первый на финише побеждает!", "en": "True or false? First to the finish wins!" },
+  "tv.finalIntro.moves": { "ru": "Верно — шаг вперёд, неверно — шаг назад, «Пас» — стоишь на месте.", "en": "Right: one step forward. Wrong: one step back. Pass: you stay put." },
   "tv.race.statementNumber": { "ru": "Утверждение {number}", "en": "Statement {number}" },
   "tv.race.true": { "ru": "Правда", "en": "True" },
   "tv.race.false": { "ru": "Ложь", "en": "False" },
   "tv.race.finish": { "ru": "Финиш", "en": "Finish" },
+  "tv.race.pass": { "ru": "Пас", "en": "Pass" },
+  "tv.race.stepBack": { "ru": "−1", "en": "−1" },
   "tv.closestValue.answer": { "ru": "{value} {unit}", "en": "{value} {unit}" },
   "tv.awards.bestComeback": { "ru": "Лучший камбэк: {names}", "en": "Best comeback: {names}" },
   "tv.tags.mostMisses": { "ru": "Мастер промахов", "en": "Master of misses" },
@@ -152,7 +155,10 @@
   "tv.reveal.stamp": { "ru": "ВЕРНО!", "en": "RIGHT!" },
   "tv.reveal.why": { "ru": "Почему?", "en": "Why?" },
   "tv.topicVote.hint": { "ru": "Голосуйте на телефонах", "en": "Vote on your phones" },
+  "tv.topicTie.hint": { "ru": "Тему выбирает жребий", "en": "The draw picks the topic" },
   "tv.lobby.ticketTop": { "ru": "Сегодня в эфире · вход по коду", "en": "On air tonight · entry by code" },
   "tv.lobby.players": { "ru": "{count} из {max}", "en": "{count} of {max}" },
-  "tv.scores.subtitle": { "ru": "после вопроса {number} из {total}", "en": "after question {number} of {total}" }
+  "tv.scores.subtitle": { "ru": "после вопроса {number} из {total}", "en": "after question {number} of {total}" },
+  "tv.attacks.title": { "ru": "Атаки", "en": "Attacks" },
+  "tv.attacks.subtitle": { "ru": "сработают в следующем вопросе", "en": "they hit in the next question" }
 }

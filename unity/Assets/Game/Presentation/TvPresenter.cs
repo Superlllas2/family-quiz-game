@@ -71,6 +71,7 @@ namespace FamilyQuiz.Presentation
         public void Attach(Game game)
         {
             _context.Attach(game);
+            _context.SyncSeats();
             Relabel();
             _lobby.Refresh();
             // The 3D studio behind the overlay (decisions 0015, 0016), on unless switched off on this laptop.
@@ -155,13 +156,18 @@ namespace FamilyQuiz.Presentation
         {
             if (_broken || _context.Game == null || events == null || events.Count == 0) return;
             _stage.OnEvents(events);
+            // The seats follow the roster before any view reads them (the Scores row in sofa order, D159).
+            _context.SyncSeats();
             bool dirty = false;
             foreach (var e in events)
             {
                 switch (e)
                 {
                     case PhaseStarted started:
-                        if (started.Phase != GamePhase.Reveal && started.Phase != GamePhase.Scores) _context.Draws.Clear();
+                        // The draws' tags and the attack arrows last through the pick window (Reveal, Scores, Attacks);
+                        // the arrows stay until the next Answer starts (D149).
+                        if (!IsPickWindow(started.Phase)) _context.Draws.Clear();
+                        if (started.Phase == GamePhase.Answer || started.Phase == GamePhase.Lobby) _context.Attacks.Clear();
                         Enter(started.Phase);
                         dirty = false; // Enter draws the whole view
                         break;
@@ -184,11 +190,13 @@ namespace FamilyQuiz.Presentation
                     case PowerUpDrawn drawn:
                         _context.Draws.Add(drawn);
                         if (_phase == GamePhase.Reveal) _question.RefreshHits();
-                        else if (_phase == GamePhase.Scores) _leaderboard.RefreshHits();
+                        else if (_phase == GamePhase.Scores || _phase == GamePhase.Attacks) _leaderboard.RefreshHits();
                         break;
-                    case PowerUpUsed _:
+                    case PowerUpUsed used:
+                        // Its arrow flies at once (D149).
+                        _context.Attacks.Add(used);
                         if (_phase == GamePhase.Reveal) _question.RefreshHits();
-                        else if (_phase == GamePhase.Scores) _leaderboard.RefreshHits();
+                        else if (_phase == GamePhase.Scores || _phase == GamePhase.Attacks) _leaderboard.RefreshHits();
                         break;
                     case PollSubmitted _:
                         if (_phase == GamePhase.Poll) _poll.Refresh();
@@ -235,6 +243,7 @@ namespace FamilyQuiz.Presentation
                     _countdown.Tick();
                     break;
                 case GamePhase.TopicVote:
+                case GamePhase.TopicTie:
                     _topicVote.Tick();
                     break;
                 case GamePhase.Results:
@@ -340,6 +349,11 @@ namespace FamilyQuiz.Presentation
                     Show(_topicVote.gameObject);
                     _topicVote.Enter();
                     break;
+                case GamePhase.TopicTie:
+                    // The vote view stays up for the spin (D153).
+                    Show(_topicVote.gameObject);
+                    _topicVote.EnterTie();
+                    break;
                 case GamePhase.QuestionShow:
                 case GamePhase.Answer:
                 case GamePhase.Reveal:
@@ -349,6 +363,11 @@ namespace FamilyQuiz.Presentation
                 case GamePhase.Scores:
                     Show(_leaderboard.gameObject);
                     _leaderboard.Enter();
+                    break;
+                case GamePhase.Attacks:
+                    // The Scores view stays up with every attack at once (D149).
+                    Show(_leaderboard.gameObject);
+                    _leaderboard.EnterAttacks();
                     break;
                 case GamePhase.RoundEnd:
                     Show(_roundEnd.gameObject);
@@ -384,6 +403,7 @@ namespace FamilyQuiz.Presentation
                     _intro.Refresh();
                     break;
                 case GamePhase.TopicVote:
+                case GamePhase.TopicTie:
                     _topicVote.Refresh();
                     break;
                 case GamePhase.QuestionShow:
@@ -392,6 +412,7 @@ namespace FamilyQuiz.Presentation
                     _question.Refresh();
                     break;
                 case GamePhase.Scores:
+                case GamePhase.Attacks:
                     _leaderboard.Refresh();
                     break;
                 case GamePhase.RoundEnd:
@@ -411,6 +432,12 @@ namespace FamilyQuiz.Presentation
             }
         }
 
+        /// <summary>Reveal, Scores and Attacks share one phaseId: the power up pick window (docs/03_rules.md, "Using").</summary>
+        private static bool IsPickWindow(GamePhase phase)
+        {
+            return phase == GamePhase.Reveal || phase == GamePhase.Scores || phase == GamePhase.Attacks;
+        }
+
         private void Relabel()
         {
             _lobby.Relabel();
@@ -424,8 +451,8 @@ namespace FamilyQuiz.Presentation
         }
 
         /// <summary>
-        /// Shows one view and hides the others. A view that stays (QuestionShow, Answer, Reveal; FinalIntro, RaceQuestion,
-        /// RaceReveal) is not toggled, so a pop that started in the same batch (the last lock in, then Reveal) keeps playing.
+        /// Shows one view and hides the others. A view that stays (TopicVote, TopicTie; QuestionShow, Answer, Reveal;
+        /// Scores, Attacks; FinalIntro, RaceQuestion, RaceReveal) is not toggled, so a pop that started in the same batch (the last lock in, then Reveal) keeps playing.
         /// </summary>
         private void Show(GameObject view)
         {

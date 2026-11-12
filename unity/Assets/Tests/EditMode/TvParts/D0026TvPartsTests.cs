@@ -22,33 +22,7 @@ namespace FamilyQuiz.Tests.TvParts
             p.Turn = new PlayerTurn { Locked = choice.HasValue, Choice = choice, Correct = correct, Points = points };
         }
 
-        // ------------------------------------------------------------ D141: the Answer layout
-
-        [Test]
-        public void TheAnswerCardIsLargerAndTheEmptyTilesSmallerThanOnReveal()
-        {
-            Assert.That(TvLayout.AnswerCardLarge.height, Is.GreaterThan(TvLayout.AnswerCard.height + 40f));
-            Assert.That(TvLayout.TilesEmpty.height, Is.LessThan(TvLayout.Tiles.height));
-            Assert.That(TvLayout.TilesEmpty.yMax, Is.LessThan(TvLayout.AnswerCardLarge.yMin));
-            // Still under the guests of the Wide shot (they sit from about 33 % of the frame height).
-            Assert.That(TvLayout.AnswerCardLarge.yMax / TvLayout.Height, Is.LessThan(0.38f));
-            Assert.That(TvLayout.PhaseSets().Any(set => set.Contains(TvLayout.AnswerCardLarge) && set.Contains(TvLayout.TilesEmpty)), Is.True);
-        }
-
-        [Test]
-        public void TheLargeAnswerCardHasRoomForTwoLinesOfBigType()
-        {
-            // Two lines of the largest Answer type (56 units, line spacing -6) need about 112.
-            float room = TvLayout.AnswerCardLarge.height - 18f - QuestionCardLayout.QuestionTopInset();
-            Assert.That(room, Is.GreaterThanOrEqualTo(112f));
-        }
-
-        [Test]
-        public void TheEmptyTilesFitTheirLetterDiscs()
-        {
-            // Two rows with the 30 unit gap; each tile holds its 58 unit letter disc.
-            Assert.That((TvLayout.TilesEmpty.height - 30f) / 2f, Is.GreaterThanOrEqualTo(62f));
-        }
+        // D141's empty tiles and larger card are replaced by D150 (D0027TvPartsTests).
 
         // ------------------------------------------------------------ D142: who picked which tile
 

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -5,8 +6,9 @@ namespace FamilyQuiz.Presentation
 {
     /// <summary>
     /// One player's card in the Scores row (decisions/0017_game_night_ui.md): cream card stock with the rank on a coin,
-    /// the player's token, name and score, and the points just earned on a sticker. It glides along the row from its old
-    /// place to its new one while the score counts up, on unscaled time.
+    /// the player's token, name and score, and the points just earned on a sticker; a crown on the token for the leader
+    /// (D159) and, in Attacks, the icons of the power ups that hit the player (D149). The score counts up on unscaled
+    /// time (it can also glide from one place to another; in sofa order it stays where it is).
     /// </summary>
     public sealed class ScoreCard : MonoBehaviour
     {
@@ -18,6 +20,8 @@ namespace FamilyQuiz.Presentation
         private TextMeshProUGUI _score;
         private TvPiece _sticker;
         private TextMeshProUGUI _stickerText;
+        private RectTransform _crown;
+        private EffectBadges _effects;
         private float _fromX;
         private float _toX;
         private int _fromScore;
@@ -29,6 +33,30 @@ namespace FamilyQuiz.Presentation
         public string PlayerId { get; private set; }
 
         public RectTransform Rect => (RectTransform)transform;
+
+        /// <summary>Where an attack arrow starts or lands: the middle of the card's top edge, in the card's local space.</summary>
+        public Vector2 ArrowPoint
+        {
+            get
+            {
+                var r = Rect.rect;
+                return new Vector2(r.center.x, r.yMax - 22f);
+            }
+        }
+
+        /// <summary>The leader's crown on the token (D159); it slams on after delay when animated.</summary>
+        public void SetCrown(bool on, bool animate, float delay = 0f)
+        {
+            bool was = _crown.gameObject.activeSelf;
+            _crown.gameObject.SetActive(on);
+            if (on && animate && !was) TvTween.On(_crown).Slam(delay, 0.4f);
+        }
+
+        /// <summary>The power ups waiting for this player at the next Answer (D149); null or empty hides them.</summary>
+        public void SetEffects(IReadOnlyList<string> powerUps)
+        {
+            _effects.Set(powerUps);
+        }
 
         public static ScoreCard Create(Transform parent, string playerId)
         {
@@ -150,6 +178,22 @@ namespace FamilyQuiz.Presentation
             _stickerText = UiBuilder.Display("Text", _sticker.Content, 22, TvColors.Cream, TextAlignmentOptions.Center);
             UiBuilder.Fit(_stickerText, 12, 22, 1);
             UiBuilder.Anchor(_stickerText.rectTransform, 0.05f, 0.08f, 0.95f, 0.92f);
+
+            // The crown sits on top of the token, a little turned (D159).
+            var crown = UiBuilder.Image("Crown", _token.Rect, TvColors.Crown, TvIcons.Crown);
+            crown.type = UnityEngine.UI.Image.Type.Simple;
+            _crown = crown.rectTransform;
+            _crown.anchorMin = _crown.anchorMax = new Vector2(0.5f, 1f);
+            _crown.pivot = new Vector2(0.5f, 0.5f);
+            _crown.anchoredPosition = new Vector2(-6f, 12f);
+            _crown.sizeDelta = new Vector2(52f, 52f);
+            _crown.localRotation = Quaternion.Euler(0, 0, 12f);
+            TvTween.On(_crown).Tilt = 12f;
+            _crown.gameObject.SetActive(false);
+
+            // The effect icons hang on the card's bottom edge, in the middle (D149).
+            _effects = EffectBadges.Create(transform, 48f, 0.5f, 0f);
+            _effects.Root.anchoredPosition = new Vector2(0f, 4f);
         }
     }
 }

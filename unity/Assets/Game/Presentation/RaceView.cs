@@ -10,8 +10,10 @@ namespace FamilyQuiz.Presentation
     /// the rules on a card, the track with every chip on its head start), RaceQuestion (the statement on a card with its
     /// number on the ribbon, "True" and "False" side by side on its right end in the phone's order and colours (D128,
     /// D129), the clock token, chips that get their check on lock in, never what anyone chose) and
-    /// RaceReveal ("True" or "False" stamped on the card, and the chips of right answers slide one step forward). One
-    /// view for the three phases, so the track and its slides carry over. Reads GameState; changes nothing.
+    /// RaceReveal ("True" or "False" stamped on the card; the chips of right answers slide one step forward, those of
+    /// wrong answers one step back, never below the start, D157; a pass gets a «Пас» mark and stays). FinalIntro's card
+    /// says how the moves work. One view for the three phases, so the track and its slides carry over. Reads
+    /// GameState; changes nothing.
     /// </summary>
     public sealed class RaceView : MonoBehaviour
     {
@@ -72,6 +74,8 @@ namespace FamilyQuiz.Presentation
                 else _track.PlaceAll(race, finish);
             }
 
+            if (reveal) SetMarks(true);
+
             Tick();
         }
 
@@ -85,7 +89,8 @@ namespace FamilyQuiz.Presentation
             _title.Set(_context.T("tv.finalIntro.title"), null);
             if (_mode == GamePhase.FinalIntro)
             {
-                _card.ShowFront(_context.T("tv.finalIntro.rules"), null, null, null, null);
+                // The rules and the moves (D157): right one step forward, wrong one step back, Пас stays.
+                _card.ShowFront(_context.T("tv.finalIntro.rules") + "\n" + _context.T("tv.finalIntro.moves"), null, null, null, null);
             }
             else
             {
@@ -106,6 +111,31 @@ namespace FamilyQuiz.Presentation
             {
                 var player = state.FindById(runner.PlayerId);
                 runner.Chip.SetLocked(_mode == GamePhase.RaceQuestion && player?.Turn != null && player.Turn.Locked);
+            }
+
+            SetMarks(false);
+        }
+
+        /// <summary>On RaceReveal, what each turn did (D157): «Пас» for a pass, −1 for a step back; nothing otherwise.</summary>
+        private void SetMarks(bool animate)
+        {
+            var state = _context.Game.State;
+            foreach (var runner in _track.Runners)
+            {
+                var player = state.FindById(runner.PlayerId);
+                var kind = _mode == GamePhase.RaceReveal ? RaceMark.For(player?.Turn) : RaceMark.Kind.None;
+                switch (kind)
+                {
+                    case RaceMark.Kind.Pass:
+                        runner.SetMark(_context.T("tv.race.pass"), TvColors.Cream, animate);
+                        break;
+                    case RaceMark.Kind.Back:
+                        runner.SetMark(_context.T("tv.race.stepBack"), TvColors.Red, animate);
+                        break;
+                    default:
+                        runner.SetMark(null, TvColors.Cream, false);
+                        break;
+                }
             }
         }
 
