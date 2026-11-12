@@ -23353,5 +23353,725 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Falcon_9"
+  },
+  {
+    "id": "race_2597",
+    "statement": {
+      "ru": "Анаконда — самая длинная змея в мире.",
+      "en": "The anaconda is the longest snake in the world."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Reticulated_python"
+  },
+  {
+    "id": "race_2598",
+    "statement": {
+      "ru": "Пятнистая гиена в основном доедает чужую добычу.",
+      "en": "The spotted hyena mostly eats other animals' leftovers."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Spotted_hyena"
+  },
+  {
+    "id": "race_2599",
+    "statement": {
+      "ru": "Овцы могут узнать знакомого человека по фотографии.",
+      "en": "Sheep can recognise a familiar person from a photo."
+    },
+    "answer": true,
+    "source": "https://www.cam.ac.uk/research/news/sheep-are-able-to-recognise-human-faces-from-photographs"
+  },
+  {
+    "id": "race_2600",
+    "statement": {
+      "ru": "Бурый медведь питается в основном мясом.",
+      "en": "The brown bear eats mostly meat."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Brown_bear"
+  },
+  {
+    "id": "race_2601",
+    "statement": {
+      "ru": "Ворон может научиться говорить слова, как попугай.",
+      "en": "A raven can learn to say words, like a parrot."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Common_raven"
+  },
+  {
+    "id": "race_2602",
+    "statement": {
+      "ru": "Глотая еду, лягушка помогает себе глазами.",
+      "en": "When swallowing, a frog helps itself with its eyes."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Frog"
+  },
+  {
+    "id": "race_2603",
+    "statement": {
+      "ru": "Шиншилла купается не в воде, а в пыли.",
+      "en": "A chinchilla bathes in dust, not water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chinchilla"
+  },
+  {
+    "id": "race_2604",
+    "statement": {
+      "ru": "Новорождённая панда весит около килограмма.",
+      "en": "A newborn giant panda weighs about a kilogram."
+    },
+    "answer": false,
+    "source": "https://www.guinnessworldrecords.com/world-records/101013-smallest-placental-mammal-baby-relative-to-adult-body-size"
+  },
+  {
+    "id": "race_2605",
+    "statement": {
+      "ru": "Лягушки-древолазы получают свой яд из еды.",
+      "en": "Poison dart frogs get their poison from their food."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Poison_dart_frog"
+  },
+  {
+    "id": "race_2606",
+    "statement": {
+      "ru": "Ехидна — зверь, который откладывает яйца.",
+      "en": "The echidna is a mammal that lays eggs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Echidna"
+  },
+  {
+    "id": "race_2607",
+    "statement": {
+      "ru": "Лошадь умеет дышать только носом.",
+      "en": "A horse can breathe only through its nose."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Respiratory_system_of_the_horse"
+  },
+  {
+    "id": "race_2608",
+    "statement": {
+      "ru": "Белые кошки с голубыми глазами часто рождаются глухими.",
+      "en": "White cats with blue eyes are often born deaf."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cat_coat_genetics"
+  },
+  {
+    "id": "race_2609",
+    "statement": {
+      "ru": "Роскошный хвост с «глазами» у павлинов носит самка.",
+      "en": "Among peafowl, the showy tail with 'eyes' belongs to the female."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Peafowl"
+  },
+  {
+    "id": "race_2610",
+    "statement": {
+      "ru": "Индейку впервые одомашнили в Мексике.",
+      "en": "The turkey was first domesticated in Mexico."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Domestic_turkey"
+  },
+  {
+    "id": "race_2611",
+    "statement": {
+      "ru": "У жирафа тёмно-фиолетовый язык.",
+      "en": "A giraffe has a dark purple tongue."
+    },
+    "answer": true,
+    "source": "https://www.sciencefocus.com/nature/why-do-giraffes-have-purple-tongues"
+  },
+  {
+    "id": "race_2612",
+    "statement": {
+      "ru": "Есть ящерица, которая умеет бегать по воде.",
+      "en": "There is a lizard that can run on water."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Common_basilisk"
+  },
+  {
+    "id": "race_2613",
+    "statement": {
+      "ru": "Бобры питаются в основном рыбой.",
+      "en": "Beavers live mainly on fish."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Beaver"
+  },
+  {
+    "id": "race_2614",
+    "statement": {
+      "ru": "Сенбернары-спасатели носили на шее бочонок с бренди.",
+      "en": "St Bernard rescue dogs carried a barrel of brandy around their necks."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/St._Bernard_(dog)"
+  },
+  {
+    "id": "race_2615",
+    "statement": {
+      "ru": "Есть змеи, которые планируют с дерева на дерево.",
+      "en": "There are snakes that glide from tree to tree."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Chrysopelea"
+  },
+  {
+    "id": "race_2616",
+    "statement": {
+      "ru": "Лев — самая крупная кошка на Земле.",
+      "en": "The lion is the biggest cat on Earth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lion"
+  },
+  {
+    "id": "race_2617",
+    "statement": {
+      "ru": "Тигры боятся воды и плохо плавают.",
+      "en": "Tigers are afraid of water and swim badly."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tiger"
+  },
+  {
+    "id": "race_2618",
+    "statement": {
+      "ru": "Летучие мыши — грызуны.",
+      "en": "Bats are rodents."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bat"
+  },
+  {
+    "id": "race_2619",
+    "statement": {
+      "ru": "Есть птица, которая умеет подражать звуку бензопилы.",
+      "en": "There is a bird that can imitate a chainsaw."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Superb_lyrebird"
+  },
+  {
+    "id": "race_2620",
+    "statement": {
+      "ru": "Шимпанзе в десять раз сильнее человека.",
+      "en": "A chimpanzee is ten times stronger than a human."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chimpanzee"
+  },
+  {
+    "id": "race_2621",
+    "statement": {
+      "ru": "У самца утконоса на задних лапах ядовитые шпоры.",
+      "en": "A male platypus has venomous spurs on its hind legs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Platypus"
+  },
+  {
+    "id": "race_2622",
+    "statement": {
+      "ru": "Сипуха может охотиться в полной темноте — на слух.",
+      "en": "A barn owl can hunt in complete darkness, by sound alone."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Western_barn_owl"
+  },
+  {
+    "id": "race_2623",
+    "statement": {
+      "ru": "Белка спит в дупле всю зиму, как ёж.",
+      "en": "A red squirrel sleeps in its tree hole all winter, like a hedgehog."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Red_squirrel"
+  },
+  {
+    "id": "race_2624",
+    "statement": {
+      "ru": "У коровы есть верхние передние зубы.",
+      "en": "A cow has upper front teeth."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dental_pad"
+  },
+  {
+    "id": "race_2625",
+    "statement": {
+      "ru": "Носорог — родственник лошади.",
+      "en": "The rhino is a relative of the horse."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Odd-toed_ungulate"
+  },
+  {
+    "id": "race_2626",
+    "statement": {
+      "ru": "Мул — помесь лошади и зебры.",
+      "en": "A mule is a cross between a horse and a zebra."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mule"
+  },
+  {
+    "id": "race_2627",
+    "statement": {
+      "ru": "Гусёнок может принять за маму человека.",
+      "en": "A gosling can take a human for its mother."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Imprinting_(psychology)"
+  },
+  {
+    "id": "race_2628",
+    "statement": {
+      "ru": "Есть козы, которые от испуга каменеют и падают.",
+      "en": "There are goats that go stiff and fall over when startled."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Myotonic_goat"
+  },
+  {
+    "id": "race_2629",
+    "statement": {
+      "ru": "Взрослые кошки мяукают в основном людям, а не друг другу.",
+      "en": "Grown cats meow mostly at people, hardly ever at each other."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cat_communication"
+  },
+  {
+    "id": "race_2630",
+    "statement": {
+      "ru": "Гепард умеет мурлыкать, как домашняя кошка.",
+      "en": "A cheetah can purr like a house cat."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cheetah"
+  },
+  {
+    "id": "race_2631",
+    "statement": {
+      "ru": "Есть порода собак, которая вместо лая издаёт что-то вроде йодля.",
+      "en": "There is a dog breed that yodels instead of barking."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Basenji"
+  },
+  {
+    "id": "race_2632",
+    "statement": {
+      "ru": "Кролик — грызун.",
+      "en": "A rabbit is a rodent."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Rabbit"
+  },
+  {
+    "id": "race_2633",
+    "statement": {
+      "ru": "Зайчата рождаются голыми и слепыми.",
+      "en": "Baby hares are born naked and blind."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hare"
+  },
+  {
+    "id": "race_2634",
+    "statement": {
+      "ru": "У верблюда-дромедара два горба.",
+      "en": "A dromedary camel has two humps."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Dromedary"
+  },
+  {
+    "id": "race_2635",
+    "statement": {
+      "ru": "Геккон держится на стекле присосками на лапах.",
+      "en": "A gecko clings to glass with suction cups on its feet."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Gecko"
+  },
+  {
+    "id": "race_2636",
+    "statement": {
+      "ru": "Аллигаторы и кайманы проливают слёзы, когда едят.",
+      "en": "Alligators and caimans shed tears while they eat."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Crocodile_tears"
+  },
+  {
+    "id": "race_2637",
+    "statement": {
+      "ru": "Есть дюны, песок которых громко гудит.",
+      "en": "There are dunes whose sand booms loudly."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Singing_sand"
+  },
+  {
+    "id": "race_2638",
+    "statement": {
+      "ru": "Старые слоны уходят умирать на особое «кладбище слонов».",
+      "en": "Old elephants go off to die in a special 'elephants' graveyard'."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Elephants%27_graveyard"
+  },
+  {
+    "id": "race_2639",
+    "statement": {
+      "ru": "Из градирен электростанций валит дым.",
+      "en": "Cooling towers at power stations pour out smoke."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cooling_tower"
+  },
+  {
+    "id": "race_2640",
+    "statement": {
+      "ru": "Голуби выкармливают птенцов «молоком».",
+      "en": "Pigeons feed their chicks 'milk'."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Crop_milk"
+  },
+  {
+    "id": "race_2641",
+    "statement": {
+      "ru": "Пузырьки в кипящей воде — это воздух.",
+      "en": "The bubbles in boiling water are air."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Nucleate_boiling"
+  },
+  {
+    "id": "race_2642",
+    "statement": {
+      "ru": "В полнолуние рождается заметно больше детей.",
+      "en": "Noticeably more babies are born at full moon."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lunar_effect"
+  },
+  {
+    "id": "race_2643",
+    "statement": {
+      "ru": "В снежной хижине-иглу бывает на десятки градусов теплее, чем снаружи.",
+      "en": "Inside a snow igloo it can be tens of degrees warmer than outside."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Igloo"
+  },
+  {
+    "id": "race_2644",
+    "statement": {
+      "ru": "Полярное сияние можно увидеть только за Полярным кругом.",
+      "en": "The northern lights can only be seen beyond the Arctic Circle."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/May_2024_solar_storms"
+  },
+  {
+    "id": "race_2645",
+    "statement": {
+      "ru": "Глаза у совы неподвижны — поворачивать приходится голову.",
+      "en": "An owl's eyes are fixed in place, so it has to turn its head."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Owl"
+  },
+  {
+    "id": "race_2646",
+    "statement": {
+      "ru": "Запах скунса отлично смывает томатный сок.",
+      "en": "Tomato juice washes off a skunk's smell perfectly."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Skunk"
+  },
+  {
+    "id": "race_2647",
+    "statement": {
+      "ru": "В кино орлов часто озвучивают криком ястреба.",
+      "en": "In films, eagles are often given a hawk's cry."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Red-tailed_hawk"
+  },
+  {
+    "id": "race_2648",
+    "statement": {
+      "ru": "На кошачью мяту реагирует каждая кошка.",
+      "en": "Every cat reacts to catnip."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Catnip"
+  },
+  {
+    "id": "race_2649",
+    "statement": {
+      "ru": "Над одним озером в Венесуэле молнии сверкают около 150 ночей в году.",
+      "en": "Over one lake in Venezuela, lightning flashes on about 150 nights a year."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Catatumbo_lightning"
+  },
+  {
+    "id": "race_2650",
+    "statement": {
+      "ru": "Волчьей стаей правит вожак-альфа, отвоевавший власть в драках.",
+      "en": "A wolf pack is ruled by an alpha who won power in fights."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_2651",
+    "statement": {
+      "ru": "Шмели чувствуют электрическое поле цветка.",
+      "en": "Bumblebees can sense a flower's electric field."
+    },
+    "answer": true,
+    "source": "https://www.nationalgeographic.com/science/article/bees-can-sense-the-electric-fields-of-flowers"
+  },
+  {
+    "id": "race_2652",
+    "statement": {
+      "ru": "Монетка на рельсах может пустить поезд под откос.",
+      "en": "A coin left on the rails can derail a train."
+    },
+    "answer": false,
+    "source": "https://www.livescience.com/34248-can-a-penny-on-the-tracks-derail-a-train.html"
+  },
+  {
+    "id": "race_2653",
+    "statement": {
+      "ru": "На шерсти ленивца растут водоросли.",
+      "en": "Algae grow in a sloth's fur."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sloth"
+  },
+  {
+    "id": "race_2654",
+    "statement": {
+      "ru": "Гигантская тридакна может захлопнуть створки и удержать ныряльщика.",
+      "en": "A giant clam can snap shut and trap a diver."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Giant_clam"
+  },
+  {
+    "id": "race_2655",
+    "statement": {
+      "ru": "Многие пауки съедают свою старую паутину.",
+      "en": "Many spiders eat their old webs."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Spider_web"
+  },
+  {
+    "id": "race_2656",
+    "statement": {
+      "ru": "Пчёлы видят ультрафиолет.",
+      "en": "Bees can see ultraviolet light."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bee_learning_and_communication"
+  },
+  {
+    "id": "race_2657",
+    "statement": {
+      "ru": "На морозе железо холоднее деревяшки, лежащей рядом.",
+      "en": "In the frost, a piece of iron is colder than a piece of wood lying next to it."
+    },
+    "answer": false,
+    "source": "https://thermtest.com/thermal-resources/thermal-conductivity-experiments/touch-metal-touch-wood"
+  },
+  {
+    "id": "race_2658",
+    "statement": {
+      "ru": "Метеор раскаляется в основном от трения о воздух.",
+      "en": "A meteor heats up mainly from friction with the air."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_2659",
+    "statement": {
+      "ru": "Яйцо можно поставить стоймя только в день равноденствия.",
+      "en": "An egg can be stood on its end only on the day of the equinox."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Egg_balancing"
+  },
+  {
+    "id": "race_2660",
+    "statement": {
+      "ru": "Тело человека светится, но в тысячу раз слабее, чем способен увидеть глаз.",
+      "en": "The human body glows, but a thousand times too dimly for the eye to see."
+    },
+    "answer": true,
+    "source": "https://www.livescience.com/7799-strange-humans-glow-visible-light.html"
+  },
+  {
+    "id": "race_2661",
+    "statement": {
+      "ru": "Тряпка с хлороформом усыпляет человека за пару секунд.",
+      "en": "A rag soaked in chloroform knocks a person out in a couple of seconds."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Chloroform"
+  },
+  {
+    "id": "race_2662",
+    "statement": {
+      "ru": "Комары находят человека по углекислому газу, который он выдыхает.",
+      "en": "Mosquitoes find people by the carbon dioxide they breathe out."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mosquito"
+  },
+  {
+    "id": "race_2663",
+    "statement": {
+      "ru": "Есть добавка, от которой вода в бассейне окрашивается вокруг писающего.",
+      "en": "There is an additive that makes pool water change colour around someone peeing."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Urine-indicator_dye"
+  },
+  {
+    "id": "race_2664",
+    "statement": {
+      "ru": "Змеи совершенно глухие.",
+      "en": "Snakes are completely deaf."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_2665",
+    "statement": {
+      "ru": "От попадания пули человек отлетает назад, как в кино.",
+      "en": "A person hit by a bullet flies backwards, like in the films."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_2666",
+    "statement": {
+      "ru": "Бывает лёд, который горит.",
+      "en": "There is a kind of ice that burns."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Methane_clathrate"
+  },
+  {
+    "id": "race_2667",
+    "statement": {
+      "ru": "Днём сова почти слепа.",
+      "en": "In daylight an owl is almost blind."
+    },
+    "answer": false,
+    "source": "https://abcbirds.org/news/owl-be-seeing-you-amazing-facts-about-owl-eyes/"
+  },
+  {
+    "id": "race_2668",
+    "statement": {
+      "ru": "Самцы мышей поют самкам ультразвуковые песни.",
+      "en": "Male mice sing ultrasonic songs to females."
+    },
+    "answer": true,
+    "source": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0030386"
+  },
+  {
+    "id": "race_2669",
+    "statement": {
+      "ru": "Северный магнитный полюс Земли — на самом деле южный полюс магнита.",
+      "en": "The Earth's north magnetic pole is really the south pole of a magnet."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/North_magnetic_pole"
+  },
+  {
+    "id": "race_2670",
+    "statement": {
+      "ru": "Ежа полезно угостить блюдцем молока.",
+      "en": "It's good to treat a hedgehog to a saucer of milk."
+    },
+    "answer": false,
+    "source": "https://www.wildlifeonline.me.uk/animals/article/european-hedgehog-interaction-with-humans-supplemental-feeding"
+  },
+  {
+    "id": "race_2671",
+    "statement": {
+      "ru": "Под земной корой — сплошной океан жидкой магмы.",
+      "en": "Under the Earth's crust lies one big ocean of liquid magma."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mantle_(geology)"
+  },
+  {
+    "id": "race_2672",
+    "statement": {
+      "ru": "Полярные сияния бывают и на Юпитере.",
+      "en": "Jupiter has auroras too."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Aurora"
+  },
+  {
+    "id": "race_2673",
+    "statement": {
+      "ru": "Гепард умеет чирикать, как птица.",
+      "en": "A cheetah can chirp like a bird."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Cheetah"
+  },
+  {
+    "id": "race_2674",
+    "statement": {
+      "ru": "Зарница — это особая беззвучная молния.",
+      "en": "Heat lightning is a special kind of silent lightning."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Heat_lightning"
+  },
+  {
+    "id": "race_2675",
+    "statement": {
+      "ru": "Ветряки губят больше птиц, чем кошки.",
+      "en": "Wind turbines kill more birds than cats do."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_common_misconceptions_about_science,_technology,_and_mathematics"
+  },
+  {
+    "id": "race_2676",
+    "statement": {
+      "ru": "Самый большой мозг на Земле — у кашалота.",
+      "en": "The sperm whale has the largest brain on Earth."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Sperm_whale"
   }
 ]
