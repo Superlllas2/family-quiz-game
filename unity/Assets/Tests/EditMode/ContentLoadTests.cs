@@ -186,10 +186,21 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void TheRaceMustLetLastPlaceWin()
+        public void TheRaceHasNoStatementLimitAndChecksItsNewKeys()
         {
-            var ex = ConfigError(c => c["race"]["finishSteps"] = 40);
-            Assert.That(ex.Message, Does.Contain("finishSteps must be at most maxQuestions"));
+            // D157: race.maxQuestions is gone; a long finish is fine now.
+            Assert.That(ConfigLoader.Parse(Config(c => c["race"]["finishSteps"] = 40)).Race.FinishSteps, Is.EqualTo(40));
+            Assert.That(ConfigError(c => c["race"]["stepsPerWrong"] = -1).Message, Does.Contain("race.stepsPerWrong"));
+            Assert.That(ConfigError(c => c["race"]["idleStopStatements"] = 0).Message, Does.Contain("race.idleStopStatements"));
+            Assert.That(ConfigError(c => ((JObject)c["race"]).Remove("idleStopStatements")).Message, Does.Contain("missing key"));
+        }
+
+        [Test]
+        public void TheSabotageCapMustLeaveTimeToAnswer()
+        {
+            // D148: the cap is below the shortest answer window.
+            Assert.That(ConfigError(c => c["powerUps"]["maxSabotageSeconds"] = 20).Message, Does.Contain("powerUps.maxSabotageSeconds"));
+            Assert.That(ConfigError(c => c["staging"]["lobby"]["fadeSeconds"] = 3).Message, Does.Contain("staging.lobby.fadeSeconds"));
         }
 
         [Test]
@@ -238,7 +249,7 @@ namespace FamilyQuiz.Tests
         // ---------------------------------------------------------------- questions.json
 
         private static readonly IReadOnlyList<TopicDef> Topics = TopicLoader.Parse(
-            "[{\"id\":\"geography\",\"title\":{\"ru\":\"География\",\"en\":\"Geography\"}}," +
+            "[{\"id\":\"geography\",\"title\":{\"ru\":\"География\",\"en\":\"Geography\"},\"shelf\":\"knowledge\",\"category\":\"geography\",\"lean\":\"all\"}," +
             "{\"id\":\"mixed\",\"title\":{\"ru\":\"Обо всём\",\"en\":\"A bit of everything\"},\"mixed\":true}]");
 
         private const string GoodQuestion =
@@ -428,20 +439,20 @@ namespace FamilyQuiz.Tests
         public void TheRealRaceFileLoads()
         {
             var race = RaceLoader.Parse(TestContent.Read(RaceLoader.FileName), RealConfig);
-            Assert.That(race.Count, Is.GreaterThanOrEqualTo(2 * RealConfig.Race.MaxQuestions), "the bank holds 2 games");
+            Assert.That(race.Count, Is.GreaterThanOrEqualTo(100), "D146: at least 100 statements");
         }
 
         [Test]
         public void ARaceFileNeedsOneRaceOfStatements()
         {
-            var ex = Assert.Throws<ContentException>(() => RaceLoader.Parse(Statements(RealConfig.Race.MaxQuestions - 1), RealConfig));
-            Assert.That(ex.Message, Does.Contain("race.maxQuestions"));
+            var ex = Assert.Throws<ContentException>(() => RaceLoader.Parse(Statements(RealConfig.Race.FinishSteps - 1), RealConfig));
+            Assert.That(ex.Message, Does.Contain("race.finishSteps"));
         }
 
         [Test]
         public void BrokenStatementsAreNamedByIdAndField()
         {
-            var ex = Assert.Throws<ContentException>(() => RaceLoader.Parse(Statements(RealConfig.Race.MaxQuestions, i => i == 2
+            var ex = Assert.Throws<ContentException>(() => RaceLoader.Parse(Statements(RealConfig.Race.FinishSteps, i => i == 2
                 ? s => s["statement"] = new JObject { ["ru"] = "", ["en"] = "x" }
                 : i == 3 ? s => s["id"] = "race_1" : i == 4 ? (Action<JObject>)(s => s["answer"] = "yes") : null), RealConfig));
             Assert.That(ex.Message, Does.Contain("race.json race_2: statement must have non empty ru and en"));

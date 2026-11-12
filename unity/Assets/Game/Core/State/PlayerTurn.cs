@@ -31,6 +31,9 @@ namespace FamilyQuiz.Core.State
         /// <summary>Closest value: the locked guess, or null.</summary>
         public double? Value { get; internal set; }
 
+        /// <summary>Race: true once the player tapped Пас (D157): locked, no answer, no move.</summary>
+        public bool Passed { get; internal set; }
+
         /// <summary>Race: the locked true or false, or null.</summary>
         public bool? TrueFalse { get; internal set; }
 
@@ -53,8 +56,8 @@ namespace FamilyQuiz.Core.State
         public bool Revealed { get; internal set; }
 
         /// <summary>
-        /// Right answer. Closest value: the distance score is above 0 (the closest bonus alone does not make a guess
-        /// correct). Race: the statement was judged right.
+        /// Right answer. Closest value: the guess is within the tolerance (D83; it may score points further out, D156,
+        /// and the closest bonus alone never makes a guess correct). Race: the statement was judged right.
         /// </summary>
         public bool Correct { get; internal set; }
 

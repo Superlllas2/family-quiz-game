@@ -97,7 +97,8 @@ namespace FamilyQuiz.Bootstrap
             var (seenQuestions, seenRace, seenFacts) = _seen.Load();
             TvLog.Info("Seen questions: " + seenQuestions.Count + ", race statements: " + seenRace.Count + ", facts: "
                        + seenFacts.Count + " (" + _seen.Path + ")");
-            _game = new Game(content, _clock, _random, () => _random.Next(int.MaxValue), seenQuestions, seenRace, seenFacts);
+            _game = new Game(content, _clock, _random, () => _random.Next(int.MaxValue), seenQuestions, seenRace, seenFacts,
+                _seen.LoadedTopics);
             _seen.Attach(_game);
             _telemetry = new TelemetryListener(_game, _eventLog);
             // Host lines (docs/15_schemas.md, "Selection"): the bags survive across evenings in host_bags.json.

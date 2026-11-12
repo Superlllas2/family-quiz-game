@@ -8,8 +8,9 @@ namespace FamilyQuiz.Core.State
     {
         private readonly List<PlayerState> _players = new List<PlayerState>();
         private readonly HashSet<string> _openConns = new HashSet<string>();
-        private readonly HashSet<string> _seenQuestionIds = new HashSet<string>();
-        private readonly HashSet<string> _seenRaceIds = new HashSet<string>();
+        private readonly SeenList _seenQuestionIds = new SeenList();
+        private readonly SeenList _seenRaceIds = new SeenList();
+        private readonly SeenList _seenTopicIds = new SeenList();
         private readonly List<string> _mostCorrectIds = new List<string>();
         private readonly List<string> _bestComebackIds = new List<string>();
         private readonly Dictionary<string, int> _ranksAfterRound2 = new Dictionary<string, int>();
@@ -89,15 +90,23 @@ namespace FamilyQuiz.Core.State
         /// <summary>The final race of this game, or null before it starts.</summary>
         public RaceState Race { get; internal set; }
 
-        /// <summary>Question ids already shown, across games and app restarts until "Reset seen questions" (SeenChanged).</summary>
+        /// <summary>Question ids already shown, oldest first (a <see cref="SeenList"/>), across games and app restarts until "Reset seen questions" (SeenChanged).</summary>
         public IReadOnlyCollection<string> SeenQuestionIds => _seenQuestionIds;
 
-        internal HashSet<string> MutableSeenQuestionIds => _seenQuestionIds;
+        internal SeenList MutableSeenQuestionIds => _seenQuestionIds;
 
         /// <summary>Race statement ids already shown, kept like <see cref="SeenQuestionIds"/>.</summary>
         public IReadOnlyCollection<string> SeenRaceIds => _seenRaceIds;
 
-        internal HashSet<string> MutableSeenRaceIds => _seenRaceIds;
+        internal SeenList MutableSeenRaceIds => _seenRaceIds;
+
+        /// <summary>
+        /// Topic ids offered on a door, oldest offer first (D154): the vote offers the topic offered longest ago first. Kept
+        /// like <see cref="SeenQuestionIds"/>.
+        /// </summary>
+        public IReadOnlyCollection<string> SeenTopicIds => _seenTopicIds;
+
+        internal SeenList MutableSeenTopicIds => _seenTopicIds;
 
         /// <summary>Fact ids already given to a winner, kept like <see cref="SeenQuestionIds"/> (D87).</summary>
         public IReadOnlyCollection<string> SeenFactIds => _seenFactIds;

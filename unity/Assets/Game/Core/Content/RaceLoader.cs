@@ -21,9 +21,10 @@ namespace FamilyQuiz.Core.Content
                 list.Add(s);
             }
 
-            // One race never repeats a statement: the file needs race.maxQuestions of them.
-            errors.Check(list.Count >= config.Race.MaxQuestions, "-",
-                "needs at least race.maxQuestions (" + config.Race.MaxQuestions + ") statements for one race, has " + list.Count);
+            // The race has no statement limit (D157); it reuses statements only after every one was played in it, so the
+            // file needs at least enough for the leader-less path to the finish: race.finishSteps.
+            errors.Check(list.Count >= config.Race.FinishSteps, "-",
+                "needs at least race.finishSteps (" + config.Race.FinishSteps + ") statements for one race, has " + list.Count);
             errors.ThrowIfAny();
             return list;
         }

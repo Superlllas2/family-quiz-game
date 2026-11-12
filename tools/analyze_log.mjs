@@ -60,8 +60,8 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-/** The idle limit in ms (docs/19_acceptance.md, D42, D56; 21 s since D126). */
-export const IDLE_LIMIT_MS = 21000;
+/** The idle limit in ms (docs/19_acceptance.md, D42, D56; 32 s since D152). */
+export const IDLE_LIMIT_MS = 32000;
 
 /** Phases that count as idle but are left out of the longest stretch and break it (IdleMeter). */
 export const STRETCH_EXCLUDED = new Set(["Intro", "FinalIntro", "Results"]);

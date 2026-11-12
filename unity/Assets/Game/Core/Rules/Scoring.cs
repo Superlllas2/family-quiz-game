@@ -30,24 +30,23 @@ namespace FamilyQuiz.Core.Rules
         }
 
         /// <summary>
-        /// Closest value distance points (docs/03_rules.md, D83). With d = |guess - answer| and the exact band
-        /// e = exactShare x tolerance: d above the tolerance scores 0; d up to e scores maxPoints; in between the points fall
-        /// in a straight line from maxPoints at e to minPoints at the tolerance edge (included). Rounded to the nearest
+        /// Closest value distance points (docs/03_rules.md, D83, D156). With d = |guess - answer|, the exact band
+        /// e = exactShare x tolerance and the zero point z = zeroAtTolerances x tolerance: d up to e scores maxPoints; from
+        /// there the points fall in a straight line to 0 at z; d at z or beyond scores 0. Rounded to the nearest
         /// scoring.roundTo before the multiplier. No speed component. The closest bonus is apart (<see cref="ClosestBonus"/>).
+        /// A guess can score beyond the tolerance without being correct (<see cref="ClosestValueCorrect"/>).
         /// </summary>
         public static int ClosestValue(ScoringConfig scoring, ClosestValueConfig closest, double guess, double answer,
             double tolerance, double multiplier)
         {
-            if (!ClosestValueCorrect(guess, answer, tolerance)) return 0;
+            if (tolerance <= 0) return 0;
             double d = Distance(guess, answer);
             double exact = Math.Round(closest.ExactShare * tolerance, FloatDecimals);
+            double zero = Math.Round(closest.ZeroAtTolerances * tolerance, FloatDecimals);
             double raw;
             if (d <= exact) raw = scoring.MaxPoints;
-            else
-            {
-                double share = (tolerance - d) / (tolerance - exact);
-                raw = Math.Round(closest.MinPoints + (scoring.MaxPoints - closest.MinPoints) * share, FloatDecimals);
-            }
+            else if (d >= zero || zero <= exact) raw = 0;
+            else raw = Math.Round(scoring.MaxPoints * (zero - d) / (zero - exact), FloatDecimals);
 
             double rounded = RoundTo(raw, scoring.RoundTo);
             double points = Math.Round(rounded * multiplier, MidpointRounding.AwayFromZero);

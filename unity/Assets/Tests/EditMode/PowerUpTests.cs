@@ -193,6 +193,26 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
+        public void AnAttackAddsTheAttacksPhaseOnTheSamePhaseIdAndThePickStillCountsThere()
+        {
+            // D149: a power up used in Reveal or Scores brings the Attacks phase after Scores.
+            var (f, seats) = FirstPickWindow();
+            long window = f.State.PhaseId;
+            Assert.That(LobbyFixture.AckOf(f.UsePowerUp("c1", seats[0].HeldPowerUp, seats[1].PlayerId)).Ok, Is.True);
+            f.Advance(f.RevealMs);
+            var events = f.Advance(f.ScoresMs);
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Attacks));
+            Assert.That(f.State.PhaseId, Is.EqualTo(window), "Attacks keeps the pick window's phaseId");
+            Assert.That(events.OfType<PhaseStarted>().Single().BudgetMs, Is.EqualTo(f.AttacksMs));
+            Assert.That(f.Game.PickWindowOpen, Is.True);
+            Assert.That(LobbyFixture.AckOf(f.UsePowerUp("c3", seats[2].HeldPowerUp, seats[0].PlayerId)).Ok, Is.True, "a late pick");
+            f.Advance(f.AttacksMs);
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.QuestionShow));
+            var late = f.Send(new UsePowerUp("c2", f.NextInputId(), window, PowerUpTypes.Fog, seats[0].PlayerId));
+            Assert.That(LobbyFixture.AckOf(late).Reason, Is.EqualTo(AckReasons.Closed).Or.EqualTo(AckReasons.NoPowerUp));
+        }
+
+        [Test]
         public void AfterScoresThePickIsClosed()
         {
             var (f, seats) = FirstPickWindow();
@@ -339,40 +359,27 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void AfterBeingHitAPlayerIsImmuneForOneQuestion()
+        public void AfterBeingHitAPlayerCanBeHitAgainOnTheNextQuestion()
         {
+            // D148: no immunity after a hit (powerUps.immunityQuestions 0).
             var (f, seats) = FirstPickWindow();
+            Assert.That(f.Config.PowerUps.ImmunityQuestions, Is.EqualTo(0));
             f.UsePowerUp("c1", seats[0].HeldPowerUp, seats[1].PlayerId); // lands on question 2
             f.RunUntilPhase(GamePhase.Answer, 60000);
             f.Choice("c1", f.Right, 500);
             f.Choice("c2", f.Right, 600);
             f.Choice("c3", f.Right, 700);
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Reveal));
-            // A pick now lands on question 3; P2 was hit on question 2: immune.
-            Assert.That(f.Game.PowerUpTargets(seats[0]).Single(t => t.Target == seats[1]).Available, Is.False);
-            Assert.That(LobbyFixture.AckOf(f.UsePowerUp("c1", seats[0].HeldPowerUp, seats[1].PlayerId)).Reason, Is.EqualTo(AckReasons.Immune));
-
-            f.RunUntilPhase(GamePhase.Answer, 60000);
-            f.Choice("c1", f.Right, 500);
-            f.Choice("c2", f.Wrong, 600);
-            f.Choice("c3", f.Wrong, 700);
-            // A pick now lands on question 4: the immunity is over.
-            Assert.That(Targeting.Immune(2, 4, 1), Is.False);
             Assert.That(f.Game.PowerUpTargets(seats[0]).Single(t => t.Target == seats[1]).Available, Is.True);
-            Assert.That(LobbyFixture.AckOf(f.UsePowerUp("c1", seats[0].HeldPowerUp, seats[1].PlayerId)).Ok, Is.True);
         }
 
-        [TestCase(null, 3, 1, false)]
-        [TestCase(2, 3, 1, true)]
-        [TestCase(2, 4, 1, false)]
-        [TestCase(2, 4, 2, true)]
-        [TestCase(2, 3, 0, false)]
-        public void ImmunityCountsQuestionsAfterTheHit(int? lastHit, int landsOn, int immunity, bool immune)
+        [Test]
+        public void WithImmunityConfiguredAHitPlayerIsImmuneForThatManyQuestions()
         {
-            Assert.That(Targeting.Immune(lastHit, landsOn, immunity), Is.EqualTo(immune));
+            Assert.That(Targeting.Immune(2, 3, 1), Is.True);
+            Assert.That(Targeting.Immune(2, 4, 1), Is.False);
+            Assert.That(Targeting.Immune(2, 3, 0), Is.False);
         }
-
-        // ---------------------------------------------------------------- targeting
 
         [Test]
         public void FreeTargetingAllowsAnyOtherPlayer()
@@ -507,7 +514,7 @@ namespace FamilyQuiz.Tests
             var started = startEvents.OfType<GameStarted>().Single();
             Assert.That(started.PowerUps, Is.Empty);
             f.Advance(f.IntroMs);
-            f.Advance(f.VoteEndMs);
+            f.EndVote();
             f.Advance(f.QuestionShowMs);
             f.Choice("c1", f.Right, 500);
             var events = f.Choice("c2", f.Right, 500);

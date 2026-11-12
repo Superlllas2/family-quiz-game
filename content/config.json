@@ -3,26 +3,28 @@
   "timers": {
     "intro": 30,
     "topicVote": 20,
-    "questionShow": 10,
+    "questionShow": 12,
     "answer": { "multipleChoice": 20, "closestValue": 20 },
     "lastCall": 5,
     "lastCallEnabled": false,
-    "reveal": 6,
-    "scores": 5,
-    "roundEnd": 4,
-    "finalIntro": 8,
+    "reveal": 9,
+    "scores": 7,
+    "attacks": 4,
+    "topicTie": 2.5,
+    "roundEnd": 6,
+    "finalIntro": 12,
     "results": 20
   },
   "rounds": {
     "count": 4,
     "questionsPerRound": 4,
-    "multipliers": [1, 1, 1.5, 2],
+    "multipliers": [1, 1, 1, 1],
     "difficultyOrder": ["easy", "medium", "medium", "hard"],
     "formatOrder": ["multipleChoice", "multipleChoice", "multipleChoice", "closestValue"]
   },
   "topics": { "doors": 4, "minUnseenToOffer": 4, "mixedTopicId": "mixed" },
   "scoring": { "maxPoints": 1000, "speedPenalty": 0.8, "roundTo": 10, "fastAnswerMs": 2000 },
-  "closestValue": { "closestBonus": 200, "minPoints": 100, "exactShare": 0.05 },
+  "closestValue": { "closestBonus": 200, "zeroAtTolerances": 3, "exactShare": 0.05 },
   "powerUps": {
     "enabled": true,
     "types": ["freeze", "slime", "fog"],
@@ -30,19 +32,21 @@
     "drawChanceLeader": 0.3,
     "maxHeld": 1,
     "maxHitsPerQuestion": 3,
-    "immunityQuestions": 1,
+    "immunityQuestions": 0,
+    "maxSabotageSeconds": 12,
     "onPhone": true,
-    "freeze": { "taps": 10 },
-    "slime": { "blobs": 5 },
+    "freeze": { "taps": 15 },
+    "slime": { "blobs": 6 },
     "fog": { "seconds": 6 }
   },
   "race": {
     "maxHeadStart": 4,
     "finishSteps": 15,
-    "maxQuestions": 20,
     "stepsPerCorrect": 1,
+    "stepsPerWrong": 1,
+    "idleStopStatements": 3,
     "answer": 12,
-    "reveal": 2
+    "reveal": 4
   },
   "players": {
     "min": 2,
@@ -59,7 +63,7 @@
   "sfx": { "volume": 0.6, "hostVoice": "e_bubbles" },
   "staging": {
     "extraSeconds": { "questionShow": 0, "reveal": 0, "scores": 0, "roundEnd": 0 },
-    "lobby": { "seatPopSeconds": 0.5 },
+    "lobby": { "seatPopSeconds": 0.5, "cutSeconds": 5, "fadeSeconds": 0.5, "darkStops": 1 },
     "intro": { "establishSeconds": 6, "lightsUpSeconds": 1.5 },
     "questionShow": { "curtainOpenSeconds": 1.2, "questionInSeconds": 0.4 },
     "answer": { "suspenseRiseSeconds": 5 },

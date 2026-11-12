@@ -28,7 +28,8 @@ namespace FamilyQuiz.Core.Show
         private readonly Func<int> _newSeed;
         private readonly HashSet<string> _usedInGame = new HashSet<string>();
         private readonly HashSet<string> _usedRaceInGame = new HashSet<string>();
-        private readonly HashSet<string> _chosenTopics = new HashSet<string>();
+        private readonly HashSet<string> _offeredTopics = new HashSet<string>();
+        private readonly HashSet<string> _chosenCategories = new HashSet<string>();
         private readonly List<string> _segments = new List<string>();
         private IRandom _random;
         private int _segmentIndex;
@@ -69,8 +70,11 @@ namespace FamilyQuiz.Core.Show
         // ---------------------------------------------------------------- seen lists
 
         /// <summary>The seen lists saved by an earlier session (docs/02_show_flow.md, "Seen questions").</summary>
-        public void LoadSeen(IEnumerable<string> questions, IEnumerable<string> race, IEnumerable<string> facts = null)
+        public void LoadSeen(IEnumerable<string> questions, IEnumerable<string> race, IEnumerable<string> facts = null,
+            IEnumerable<string> topics = null)
         {
+            if (topics != null)
+                foreach (var id in topics) _state.MutableSeenTopicIds.Add(id);
             if (facts != null)
                 foreach (var id in facts) _state.MutableSeenFactIds.Add(id);
             if (questions != null)
@@ -85,6 +89,7 @@ namespace FamilyQuiz.Core.Show
             _state.MutableSeenQuestionIds.Clear();
             _state.MutableSeenRaceIds.Clear();
             _state.MutableSeenFactIds.Clear();
+            _state.MutableSeenTopicIds.Clear();
             output.Add(new SeenChanged(true));
             output.Add(new SettingsChanged(SettingsChanged.SourceTv, null, SettingsChanged.SettingResetSeen, "true"));
         }
@@ -189,8 +194,9 @@ namespace FamilyQuiz.Core.Show
         private string CheckRaceAnswer(PlayerState player, SubmitAnswer cmd)
         {
             var turn = player.Turn;
-            if (cmd.Kind != InputKinds.TrueFalse || turn == null || turn.Locked || !cmd.Answer.HasValue || !cmd.Ms.HasValue)
-                return AckReasons.Invalid;
+            if (turn == null || turn.Locked || !cmd.Ms.HasValue) return AckReasons.Invalid;
+            // True or False, or the Пас button (D157), which carries no answer.
+            if (cmd.Kind == InputKinds.TrueFalse ? !cmd.Answer.HasValue : cmd.Kind != InputKinds.Pass) return AckReasons.Invalid;
             return Now >= turn.DeadlineMs + _config.Net.InputGraceMs ? AckReasons.Closed : null;
         }
 
@@ -242,6 +248,13 @@ namespace FamilyQuiz.Core.Show
         {
             var turn = player.Turn;
             Lock(turn, cmd);
+            if (cmd.Kind == InputKinds.Pass)
+            {
+                turn.Passed = true;
+                output.Add(new AnswerLocked(player.PlayerId, _state.PhaseId, InputKinds.Pass, -1, turn.Ms.Value, false, 0));
+                return;
+            }
+
             bool answer = cmd.Answer.Value;
             turn.TrueFalse = answer;
             bool correct = answer == _state.Race.Statement.Answer;
@@ -261,19 +274,23 @@ namespace FamilyQuiz.Core.Show
         // ---------------------------------------------------------------- power ups (docs/03_rules.md, "Power ups")
 
         /// <summary>
-        /// The pick window is open: Reveal or Scores of a round question, power ups on in this game, and not the last
+        /// The pick window is open: Reveal, Scores or Attacks (D149) of a round question, power ups on in this game, and not the last
         /// question of the last round (there the pick is hidden, docs/03_rules.md "Using").
         /// </summary>
         public bool PickWindowOpen
         {
             get
             {
-                if (_state.Phase != GamePhase.Reveal && _state.Phase != GamePhase.Scores) return false;
+                if (!InPickPhase) return false;
                 var question = _state.Question;
                 if (question == null || _state.Settings.DrawableTypes.Count == 0) return false;
                 return !IsLastQuestionOfGame(question);
             }
         }
+
+        /// <summary>Reveal, Scores or Attacks: the phases that share one phaseId and the result screen (D28, D149).</summary>
+        private bool InPickPhase =>
+            _state.Phase == GamePhase.Reveal || _state.Phase == GamePhase.Scores || _state.Phase == GamePhase.Attacks;
 
         /// <summary>The game question number a power up used now lands on: the next question.</summary>
         public int LandsOnQuestion => (_state.Question?.Number ?? 0) + 1;
@@ -468,8 +485,7 @@ namespace FamilyQuiz.Core.Show
         /// has its own phases, so it never gets a card).
         /// </summary>
         public bool RatingOpen =>
-            _state.FeedbackEnabled && _state.Question != null &&
-            (_state.Phase == GamePhase.Reveal || _state.Phase == GamePhase.Scores);
+            _state.FeedbackEnabled && _state.Question != null && InPickPhase;
 
         /// <summary>
         /// Why a rating tap is refused, or null: wrong phaseId (stale, or closed for the Scores that just ended), no card
@@ -767,15 +783,50 @@ namespace FamilyQuiz.Core.Show
                     BeginScores(at, output);
                     break;
                 case GamePhase.Scores:
-                    _closedPickPhaseId = _state.PhaseId;
-                    if (_questionIndex + 1 < _state.QuestionCount) BeginQuestionShow(at, output);
-                    else BeginRoundEnd(at, output);
+                    if (AnyPowerUpUsedInThisPickWindow()) BeginAttacks(at, output);
+                    else EndPickWindow(at, output);
+                    break;
+                case GamePhase.Attacks:
+                    EndPickWindow(at, output);
+                    break;
+                case GamePhase.TopicTie:
+                    BeginQuestionShow(at, output);
                     break;
                 case GamePhase.RaceReveal:
                     if (_state.Race.Finished) NextSegment(at, output);
                     else BeginRaceQuestion(at, output);
                     break;
             }
+        }
+
+        /// <summary>The pick window (Reveal, Scores and maybe Attacks) is over: the next question, or the round end.</summary>
+        private void EndPickWindow(long at, List<IGameEvent> output)
+        {
+            _closedPickPhaseId = _state.PhaseId;
+            if (_questionIndex + 1 < _state.QuestionCount) BeginQuestionShow(at, output);
+            else BeginRoundEnd(at, output);
+        }
+
+        private bool AnyPowerUpUsedInThisPickWindow()
+        {
+            foreach (var p in _state.Players)
+            {
+                if (p.UsedPowerUpInPhaseId == _state.PhaseId) return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>Attacks (D149): keeps the phaseId of Reveal and Scores, like Scores does (D28), so the pick runs on.</summary>
+        private void BeginAttacks(long at, List<IGameEvent> output)
+        {
+            long budget = ToMs(_config.Timers.Attacks);
+            _state.Phase = GamePhase.Attacks;
+            _state.PhaseStartedAtMs = at;
+            _state.PhaseBudgetMs = budget;
+            _state.PhaseStagingExtraMs = 0;
+            _state.PhaseEndsAtMs = at + budget;
+            output.Add(new PhaseStarted(GamePhase.Attacks, _state.PhaseId, budget, 0, _state.PhaseEndsAtMs));
         }
 
         private void EndTurnPhase(string reason, long at, List<IGameEvent> output)
@@ -814,7 +865,8 @@ namespace FamilyQuiz.Core.Show
             _state.MutableRanksAfterRound2.Clear();
             _usedInGame.Clear();
             _usedRaceInGame.Clear();
-            _chosenTopics.Clear();
+            _offeredTopics.Clear();
+            _chosenCategories.Clear();
             _roundIndex = -1;
             _questionIndex = -1;
 
@@ -912,8 +964,20 @@ namespace FamilyQuiz.Core.Show
             _questionIndex = -1;
             _state.Question = null;
             foreach (var p in _state.Players) p.Turn = null;
-            var doors = TopicPicker.Doors(Bank.Topics, Bank.Questions, _config.Topics, _chosenTopics,
-                _state.SeenQuestionIds, _random);
+            var history = new TopicPicker.History
+            {
+                OfferedInGame = _offeredTopics, ChosenCategories = _chosenCategories, OfferedEver = _state.SeenTopicIds
+            };
+            var doors = TopicPicker.Doors(Bank.Topics, Bank.Questions, _config.Topics, history, _state.SeenQuestionIds, _random);
+            // Every regular door counts as offered now, in this game and in the saved offer history (D154).
+            foreach (var t in doors)
+            {
+                if (t.Mixed) continue;
+                _offeredTopics.Add(t.Id);
+                _state.MutableSeenTopicIds.Add(t.Id);
+            }
+
+            output.Add(new SeenChanged(false));
             var round = new RoundState(_roundIndex, _config.Rounds.Multipliers[_roundIndex], doors);
             _state.Round = round;
             // Votes get the same network grace as answers (D84): the timer shows timers.topicVote, and the phase waits
@@ -941,25 +1005,22 @@ namespace FamilyQuiz.Core.Show
             bool nobodyVoted = most == 0;
             bool tie = !nobodyVoted && counts.Count(c => c == most) > 1;
 
-            int door = TopicPicker.ResolveVote(votes, round.Doors.Count, RankOf, _random);
+            int door = TopicPicker.ResolveVote(votes, round.Doors.Count, _random);
             round.ChosenDoor = door;
+            round.TiedDoors = tie || nobodyVoted ? TopicPicker.TiedDoors(votes, round.Doors.Count) : new List<int>();
             foreach (var v in votes)
             {
                 if (v.Value != door) _state.FindById(v.Key).Stats.LostVotes++;
             }
 
-            _chosenTopics.Add(round.Topic.Id);
+            if (!round.Topic.Mixed && round.Topic.Category != null) _chosenCategories.Add(round.Topic.Category);
             output.Add(new TopicChosen(round.Index + 1, door, round.Topic.Id, tie, nobodyVoted));
 
             _closedInputPhaseId = _state.PhaseId;
             EndPhase(reason, at, output);
-            BeginQuestionShow(at, output);
-        }
-
-        private int RankOf(string playerId)
-        {
-            var player = _state.FindById(playerId);
-            return player == null ? int.MaxValue : Ranking.SharedRank(_state, player);
+            // A tie, or nobody voted: the spin shows the random pick (D153).
+            if (round.TiedDoors.Count > 1) BeginTimed(GamePhase.TopicTie, at, ToMs(_config.Timers.TopicTie), 0, output);
+            else BeginQuestionShow(at, output);
         }
 
         private void BeginQuestionShow(long at, List<IGameEvent> output)
@@ -1187,6 +1248,12 @@ namespace FamilyQuiz.Core.Show
         {
             var race = _state.Race;
             var statement = RaceRules.PickStatement(_content.Race, _state.SeenRaceIds, _usedRaceInGame, _random);
+            if (statement == null)
+            {
+                // A race longer than the whole file (no statement limit, D157): start over with the least recently seen.
+                _usedRaceInGame.Clear();
+                statement = RaceRules.PickStatement(_content.Race, _state.SeenRaceIds, _usedRaceInGame, _random);
+            }
             race.StatementNumber++;
             race.Statement = statement;
             _usedRaceInGame.Add(statement.Id);
@@ -1200,24 +1267,31 @@ namespace FamilyQuiz.Core.Show
             BeginTimed(GamePhase.RaceReveal, at, ToMs(_config.Race.Reveal), 0, output);
             var race = _state.Race;
             var cfg = _config.Race;
+            bool anyoneActed = false;
             foreach (var p in _state.Players)
             {
                 var turn = p.Turn;
                 if (turn == null) continue;
-                bool correct = turn.Locked && turn.TrueFalse == race.Statement.Answer;
+                bool answered = turn.Locked && !turn.Passed;
+                bool correct = answered && turn.TrueFalse == race.Statement.Answer;
                 turn.Correct = correct;
                 turn.Revealed = true;
-                // Total answer time (second race tie break): the answer's ms, or the whole window without an answer.
+                if (turn.Locked && p.Connected) anyoneActed = true;
+                // Total answer time (the first race tie break, D158): the answer's or the pass's ms, else the whole window.
                 long ms = turn.Locked ? turn.Ms ?? turn.WindowMs : turn.WindowMs;
                 race.MutableAnswerMs[p.PlayerId] = (race.AnswerMs.TryGetValue(p.PlayerId, out var sum) ? sum : 0) + ms;
                 int from = race.PositionOf(p.PlayerId);
-                race.MutablePositions[p.PlayerId] = RaceRules.Move(from, correct, cfg);
+                var outcome = turn.Passed ? RaceOutcome.Pass : !answered ? RaceOutcome.None : correct ? RaceOutcome.Right : RaceOutcome.Wrong;
+                race.MutablePositions[p.PlayerId] = RaceRules.Move(from, outcome, cfg);
                 p.Stats.RaceSteps += race.PositionOf(p.PlayerId) - from;
-                CountStats(p, turn);
+                if (!turn.Passed) CountStats(p, turn);
             }
 
+            race.IdleStatements = anyoneActed ? 0 : race.IdleStatements + 1;
             var seated = _state.Players.Select(p => p.PlayerId).ToList();
-            race.Finished = RaceRules.IsFinished(seated.Select(race.PositionOf), race.StatementNumber, cfg);
+            bool atFinish = RaceRules.IsFinished(seated.Select(race.PositionOf), cfg);
+            race.StoppedIdle = !atFinish && race.IdleStatements >= cfg.IdleStopStatements;
+            race.Finished = atFinish || race.StoppedIdle;
             if (race.Finished)
             {
                 race.MutablePlacement.Clear();

@@ -18,7 +18,16 @@ namespace FamilyQuiz.Core.Content
             {
                 errors.Check(ids.Add(topic.Id), id, "id is used twice");
                 errors.CheckText(id, "title", topic.Title, ContentLimits.TopicTitleMax);
-                if (topic.Mixed) mixed++;
+                if (topic.Mixed)
+                {
+                    mixed++;
+                }
+                else
+                {
+                    errors.Check(TopicShelves.IsShelf(topic.Shelf), id, "shelf must be screen, knowledge or life");
+                    errors.Check(!string.IsNullOrEmpty(topic.Category), id, "category must not be empty");
+                    errors.Check(TopicShelves.IsLean(topic.Lean), id, "lean must be young, old or all");
+                }
                 list.Add(topic);
             }
 

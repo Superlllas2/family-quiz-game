@@ -44,8 +44,17 @@ namespace FamilyQuiz.Core.State
         /// <summary>1 based number of the current statement in the race; 0 before the first.</summary>
         public int StatementNumber { get; internal set; }
 
-        /// <summary>True once a player reached race.finishSteps or race.maxQuestions statements were played.</summary>
+        /// <summary>
+        /// True once a player reached race.finishSteps, or race.idleStopStatements statements in a row had no answer and no
+        /// pass from any connected player (D157).
+        /// </summary>
         public bool Finished { get; internal set; }
+
+        /// <summary>Statements in a row, up to now, where no connected player answered or passed (the safety stop, D157).</summary>
+        public int IdleStatements { get; internal set; }
+
+        /// <summary>True when the race ended on the safety stop rather than at the finish.</summary>
+        public bool StoppedIdle { get; internal set; }
 
         /// <summary>Set when the race finishes: every player from first to last by the race order (winner first).</summary>
         public IReadOnlyList<string> Placement => _placement;

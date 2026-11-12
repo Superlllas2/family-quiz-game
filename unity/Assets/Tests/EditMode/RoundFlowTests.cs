@@ -138,30 +138,41 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void ATiedVoteGoesToTheLowestRankedVoterInAGame()
+        public void ATiedVoteIsPickedAtRandomAmongTheTiedDoorsAndTheSpinShowsIt()
+        {
+            // D153: P1 on door 0, P3 on door 2, P2 does not vote: a 1 to 1 tie, the seeded random picks 0 or 2.
+            var winners = new HashSet<int>();
+            for (int seed = 1; seed <= 30; seed++)
+            {
+                var f = new LobbyFixture(seed);
+                f.ToFirstVote(3);
+                f.Vote("c1", 0);
+                f.Vote("c3", 2);
+                var events = f.Advance(f.VoteEndMs);
+                var chosen = events.OfType<TopicChosen>().Single();
+                Assert.That(chosen.ByTieBreak, Is.True);
+                Assert.That(chosen.Door, Is.EqualTo(0).Or.EqualTo(2));
+                winners.Add(chosen.Door);
+                Assert.That(f.State.Phase, Is.EqualTo(GamePhase.TopicTie));
+                Assert.That(f.State.Round.TiedDoors, Is.EqualTo(new[] { 0, 2 }));
+                Assert.That(f.State.PhaseEndsAtMs - f.State.PhaseStartedAtMs, Is.EqualTo(f.TopicTieMs));
+                f.Advance(f.TopicTieMs);
+                Assert.That(f.State.Phase, Is.EqualTo(GamePhase.QuestionShow));
+            }
+
+            Assert.That(winners, Is.EquivalentTo(new[] { 0, 2 }));
+        }
+
+        [Test]
+        public void AClearVoteHasNoSpin()
         {
             var f = new LobbyFixture(3);
-            var seats = f.ToFirstVote(3);
-            // Round 1: P1 answers right, P2 and P3 do not: ranks 1, 2, 2.
-            f.Vote("c1", 0);
-            f.Vote("c2", 0);
-            f.Vote("c3", 0);
-            f.SkipTo(GamePhase.Answer);
-            f.Choice("c1", f.Right, 0);
-            f.Choice("c2", f.Wrong, 0);
-            f.Choice("c3", f.Wrong, 0);
-            f.SkipTo(GamePhase.TopicVote);
-            Assert.That(Ranking.SharedRank(f.State, seats[0]), Is.EqualTo(1));
-            Assert.That(Ranking.SharedRank(f.State, seats[2]), Is.EqualTo(2));
-
-            // Round 2: P1 on door 0, P3 on door 2, P2 does not vote: a 1 to 1 tie, P3 is ranked lower and decides.
-            f.Vote("c1", 0);
+            f.ToFirstVote(3);
+            f.Vote("c1", 1);
+            f.Vote("c2", 1);
             f.Vote("c3", 2);
-            var events = f.Advance(f.VoteEndMs);
-            var chosen = events.OfType<TopicChosen>().Single();
-            Assert.That(chosen.ByTieBreak, Is.True);
-            Assert.That(chosen.Door, Is.EqualTo(2));
-            Assert.That(chosen.Round, Is.EqualTo(2));
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.QuestionShow), "everyone voted: the vote ends at once, no TopicTie");
+            Assert.That(f.State.Round.TiedDoors, Is.Empty);
         }
 
         [Test]

@@ -142,13 +142,20 @@ namespace FamilyQuiz.Tests.NetScreens
                 default: Assert.That((double)effect["params"]["seconds"], Is.EqualTo(cfg.Fog.Seconds)); break;
             }
 
+            // D148: the whole sabotage cap at the start of Answer.
+            long capMs = (long)System.Math.Round(cfg.MaxSabotageSeconds * 1000);
+            Assert.That((long)effect["params"]["capMs"], Is.EqualTo(capMs));
+
             Assert.That(_sender.MessagesTo("c3", "effect"), Is.Empty);
 
             // A reload before clearing: the snapshot, then the effect again.
             var token = _f.State.FindByConn("c2").Token;
+            Step(3000);
             Do(_f.Game.Handle(new ConnectionOpened("c2b")));
             Do(_f.Game.Handle(new PlayerRejoin("c2b", token)));
-            Assert.That((string)_sender.MessagesTo("c2b").Last()["type"], Is.EqualTo("effect"));
+            var again = _sender.MessagesTo("c2b").Last();
+            Assert.That((string)again["type"], Is.EqualTo("effect"));
+            Assert.That((long)again["params"]["capMs"], Is.EqualTo(capMs - 3000), "after a reload: what is left of the cap");
 
             // Cleared: telemetry only, the phone still answers.
             var cleared = Phone("c2b", "{'v':2,'type':'input','inputId':'e1','phaseId':" + _f.State.PhaseId

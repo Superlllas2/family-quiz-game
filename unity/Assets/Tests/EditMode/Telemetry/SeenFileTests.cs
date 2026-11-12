@@ -78,15 +78,18 @@ namespace FamilyQuiz.Tests.Telemetry
             var seenQuestions = first.State.SeenQuestionIds.ToList();
             var seenRace = first.State.SeenRaceIds.ToList();
             var seenFacts = first.State.SeenFactIds.ToList();
+            var seenTopics = first.State.SeenTopicIds.ToList();
             Assert.That(seenFacts.Count, Is.EqualTo(1), "the winner's fact (D87)");
+            Assert.That(seenTopics.Count, Is.EqualTo(3 * first.Config.Rounds.Count), "three regular doors per vote, none twice in a game (D154)");
             Assert.That(File.Exists(_path), Is.True);
 
             // The app restarts: the next Game starts from the file.
             var restarted = new SeenFile(_path);
             var (questions, race, facts) = restarted.Load();
             Assert.That(facts, Is.EquivalentTo(seenFacts));
-            Assert.That(questions, Is.EquivalentTo(seenQuestions));
-            Assert.That(race, Is.EquivalentTo(seenRace));
+            Assert.That(questions, Is.EqualTo(seenQuestions), "kept in the order seen (D155)");
+            Assert.That(race, Is.EqualTo(seenRace));
+            Assert.That(restarted.LoadedTopics, Is.EqualTo(seenTopics));
             var second = new LobbyFixture(4, seenQuestions: questions, seenRace: race);
             restarted.Attach(second.Game);
             Assert.That(second.State.SeenQuestionIds, Is.EquivalentTo(seenQuestions));
@@ -97,6 +100,9 @@ namespace FamilyQuiz.Tests.Telemetry
             Assert.That(afterF, Is.Empty);
             Assert.That(afterQ, Is.Empty);
             Assert.That(afterR, Is.Empty);
+            var cleared = new SeenFile(_path);
+            cleared.Load();
+            Assert.That(cleared.LoadedTopics, Is.Empty);
             Assert.That(File.Exists(_path + ".tmp"), Is.False);
         }
     }

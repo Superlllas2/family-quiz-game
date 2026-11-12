@@ -71,9 +71,9 @@ namespace FamilyQuiz.Tests
         [Test]
         public void TheRoundMultiplierAppliesAfterRounding()
         {
-            // Round 3 multiplies every point by 1.5 (docs/19_acceptance.md).
-            double round3 = Config.Rounds.Multipliers[2];
-            Assert.That(round3, Is.EqualTo(1.5));
+            // Every round multiplier is 1 for now (D151); the rule still holds for a mode that sets 1.5.
+            Assert.That(Config.Rounds.Multipliers, Is.All.EqualTo(1.0));
+            double round3 = 1.5;
             Assert.That(Scoring.MultipleChoice(S, true, 0, T, round3), Is.EqualTo(1500));
             Assert.That(Scoring.MultipleChoice(S, true, T, T, round3), Is.EqualTo((int)Math.Round(AtTheBuzzer * round3, MidpointRounding.AwayFromZero)));
             long ms = T / 3;
@@ -107,7 +107,7 @@ namespace FamilyQuiz.Tests
             Assert.That(two, Is.EqualTo(2));
             f.Send(new FamilyQuiz.Core.Commands.ChangeSettings("c2", null, two));
             f.StartNextGame();
-            f.Advance(f.VoteEndMs);
+            f.EndVote();
             f.Advance(f.QuestionShowMs);
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.Answer));
             Assert.That(seats[0].Turn.WindowMs, Is.EqualTo(f.WindowMs));

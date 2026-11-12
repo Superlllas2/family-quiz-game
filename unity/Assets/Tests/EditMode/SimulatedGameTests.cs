@@ -28,9 +28,10 @@ namespace FamilyQuiz.Tests
 
         /// <summary>
         /// The idle limit of docs/19_acceptance.md: a starting value set again with the timers (D56). The current timers
-        /// give exactly 21 s (QuestionShow 10 + Reveal 6 + Scores 5; set again Nov 7, 2026 after the first playtest, D126).
+        /// give exactly 32 s (QuestionShow 12 + Reveal 9 + Scores 7 + Attacks 4; set again Nov 12, 2026 after the second
+        /// playtest, D152).
         /// </summary>
-        private const long IdleLimitMs = 21000;
+        private const long IdleLimitMs = 32000;
 
         private const long MaxEndAfterLastLockMs = 200;
 
@@ -194,9 +195,8 @@ namespace FamilyQuiz.Tests
             var race = f.State.Race;
             Assert.That(race.Finished, Is.True);
             bool someoneFinished = race.Positions.Values.Any(v => v >= f.Config.Race.FinishSteps);
-            Assert.That(race.StatementNumber, Is.LessThanOrEqualTo(f.Config.Race.MaxQuestions));
-            Assert.That(someoneFinished || race.StatementNumber == f.Config.Race.MaxQuestions, Is.True,
-                "the race ends at the finish or after race.maxQuestions");
+            Assert.That(someoneFinished || race.StoppedIdle, Is.True,
+                "the race ends at the finish, or on the safety stop when nobody answers (D157)");
             if (someoneFinished && race.StatementNumber > 1)
             {
                 // Nobody had finished one statement earlier, or the race would have ended there.
@@ -265,12 +265,18 @@ namespace FamilyQuiz.Tests
 
         private static void CheckGame(LobbyFixture f, GameRecord r, bool intro)
         {
-            Assert.That(r.Phases.Select(p => p.Phase), Is.EqualTo(ExpectedOrder(f, r, intro)), "game " + r.Game + " phase order");
+            // TopicTie (D153) and Attacks (D149) come only sometimes: the order without them is fixed, and each one only
+            // ever follows its phase.
+            Assert.That(r.Phases.Select(p => p.Phase).Where(p => p != GamePhase.TopicTie && p != GamePhase.Attacks),
+                Is.EqualTo(ExpectedOrder(f, r, intro)), "game " + r.Game + " phase order");
 
             for (int i = 1; i < r.Phases.Count; i++)
             {
                 var p = r.Phases[i];
-                long expectedId = p.Phase == GamePhase.Scores ? r.Phases[i - 1].PhaseId : r.Phases[i - 1].PhaseId + 1;
+                if (p.Phase == GamePhase.TopicTie) Assert.That(r.Phases[i - 1].Phase, Is.EqualTo(GamePhase.TopicVote));
+                if (p.Phase == GamePhase.Attacks) Assert.That(r.Phases[i - 1].Phase, Is.EqualTo(GamePhase.Scores));
+                bool sharesId = p.Phase == GamePhase.Scores || p.Phase == GamePhase.Attacks;
+                long expectedId = sharesId ? r.Phases[i - 1].PhaseId : r.Phases[i - 1].PhaseId + 1;
                 Assert.That(p.PhaseId, Is.EqualTo(expectedId), "phaseId of " + p.Phase);
             }
 

@@ -51,14 +51,11 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void LastPlaceCanWinChecksBothConditions()
+        public void LastPlaceCanAlwaysWinWithoutAStatementLimit()
         {
-            Assert.That(RaceRules.LastPlaceCanWin(new[] { 3, 1, 0 }, Race), Is.True);
-            var far = new RaceConfig { MaxHeadStart = 3, FinishSteps = 13, MaxQuestions = 12, StepsPerCorrect = 1 };
-            Assert.That(RaceRules.LastPlaceCanWin(new[] { 3, 0 }, far), Is.False, "finishSteps - 0 > maxQuestions");
-            Assert.That(RaceRules.LastPlaceCanWin(new[] { 3, 3 }, far), Is.True, "13 - 3 <= 12");
-            var gap = new RaceConfig { MaxHeadStart = 12, FinishSteps = 12, MaxQuestions = 12, StepsPerCorrect = 1 };
-            Assert.That(RaceRules.LastPlaceCanWin(new[] { 12, 0 }, gap), Is.False, "a gap of maxQuestions");
+            // D157: no statement limit, so any head start gap can be closed.
+            Assert.That(RaceRules.LastPlaceCanWin(new[] { 4, 1, 0 }, Race), Is.True);
+            Assert.That(RaceRules.LastPlaceCanWin(new[] { 14, 0 }, Race), Is.True);
         }
 
         // ---------------------------------------------------------------- order and winner
@@ -79,12 +76,13 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void ATieGoesToTheHigherScoreBeforeTheRaceThenTheFasterRace()
+        public void ATieGoesToTheFasterRaceThenTheHigherScoreBeforeTheRace()
         {
-            var order = Order(new Dictionary<string, int> { { "a", 10 }, { "b", 10 }, { "c", 10 } },
-                new Dictionary<string, int> { { "a", 900 }, { "b", 1200 }, { "c", 900 } },
-                new Dictionary<string, long> { { "a", 30000 }, { "b", 50000 }, { "c", 20000 } });
-            Assert.That(order, Is.EqualTo(new[] { "b", "c", "a" }));
+            // D158: the Nov 8 game 2 finish: the faster player wins even with fewer points before the race.
+            var order = Order(new Dictionary<string, int> { { "ilia", 15 }, { "l1zer", 15 }, { "c", 15 }, { "d", 15 } },
+                new Dictionary<string, int> { { "ilia", 9000 }, { "l1zer", 6000 }, { "c", 900 }, { "d", 1200 } },
+                new Dictionary<string, long> { { "ilia", 22167 }, { "l1zer", 20032 }, { "c", 30000 }, { "d", 30000 } });
+            Assert.That(order, Is.EqualTo(new[] { "l1zer", "ilia", "d", "c" }));
         }
 
         [Test]
@@ -105,14 +103,22 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void TheRaceEndsAtTheFinishOrAfterMaxQuestions()
+        public void TheRaceEndsOnlyAtTheFinish()
         {
-            Assert.That(RaceRules.IsFinished(new[] { 9, 3 }, 6, Race), Is.False);
-            Assert.That(RaceRules.IsFinished(new[] { Race.FinishSteps, 3 }, 6, Race), Is.True);
-            Assert.That(RaceRules.IsFinished(new[] { 4, 3 }, Race.MaxQuestions, Race), Is.True);
-            Assert.That(RaceRules.Move(Race.FinishSteps - 1, true, Race), Is.EqualTo(Race.FinishSteps));
-            Assert.That(RaceRules.Move(Race.FinishSteps, true, Race), Is.EqualTo(Race.FinishSteps), "never past the finish");
-            Assert.That(RaceRules.Move(4, false, Race), Is.EqualTo(4));
+            Assert.That(RaceRules.IsFinished(new[] { Race.FinishSteps - 1, 3 }, Race), Is.False);
+            Assert.That(RaceRules.IsFinished(new[] { Race.FinishSteps, 3 }, Race), Is.True);
+        }
+
+        [Test]
+        public void RightMovesForwardWrongMovesBackPassAndNoAnswerStay()
+        {
+            Assert.That(RaceRules.Move(4, RaceOutcome.Right, Race), Is.EqualTo(4 + Race.StepsPerCorrect));
+            Assert.That(RaceRules.Move(Race.FinishSteps - 1, RaceOutcome.Right, Race), Is.EqualTo(Race.FinishSteps));
+            Assert.That(RaceRules.Move(Race.FinishSteps, RaceOutcome.Right, Race), Is.EqualTo(Race.FinishSteps), "never past the finish");
+            Assert.That(RaceRules.Move(4, RaceOutcome.Wrong, Race), Is.EqualTo(4 - Race.StepsPerWrong));
+            Assert.That(RaceRules.Move(0, RaceOutcome.Wrong, Race), Is.EqualTo(0), "never below 0");
+            Assert.That(RaceRules.Move(4, RaceOutcome.Pass, Race), Is.EqualTo(4));
+            Assert.That(RaceRules.Move(4, RaceOutcome.None, Race), Is.EqualTo(4));
         }
 
         // ---------------------------------------------------------------- statements
@@ -140,17 +146,22 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void WhenUnseenRunOutSeenOnesArePickedBySeedWithoutRepeats()
+        public void WhenUnseenRunOutTheLeastRecentlySeenComesFirstWithoutRepeats()
         {
+            // D155: seen in the order r4, r2, r6, r1, r5, r3; r2 seen again last.
             var all = Statements(6);
-            var seen = new HashSet<string>(all.Select(s => s.Id));
+            var seen = new SeenList();
+            foreach (var id in new[] { "r4", "r2", "r6", "r1", "r5", "r3", "r2" }) seen.Add(id);
             var used = new HashSet<string>();
+            var picked = new List<string>();
             for (int i = 0; i < 6; i++)
             {
                 var s = RaceRules.PickStatement(all, seen, used, new SeededRandom(i));
                 Assert.That(used.Add(s.Id), Is.True);
+                picked.Add(s.Id);
             }
 
+            Assert.That(picked, Is.EqualTo(new[] { "r4", "r6", "r1", "r5", "r3", "r2" }));
             Assert.That(RaceRules.PickStatement(all, seen, used, new SeededRandom(1)), Is.Null);
         }
 
@@ -233,7 +244,7 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void ARightAnswerMovesStepsPerCorrectAndAWrongOrNoAnswerDoesNot()
+        public void ARightAnswerMovesForwardAWrongOneBackAndNoAnswerStays()
         {
             var (f, seats) = ToFinalIntro(3, 0);
             f.Advance(f.FinalIntroMs);
@@ -245,7 +256,7 @@ namespace FamilyQuiz.Tests
             var revealed = events.OfType<RaceRevealed>().Single();
             Assert.That(revealed.Answer, Is.EqualTo(right));
             Assert.That(f.State.Race.Positions[seats[0].PlayerId], Is.EqualTo(start + f.Config.Race.StepsPerCorrect));
-            Assert.That(f.State.Race.Positions[seats[1].PlayerId], Is.EqualTo(start));
+            Assert.That(f.State.Race.Positions[seats[1].PlayerId], Is.EqualTo(start - f.Config.Race.StepsPerWrong));
             Assert.That(f.State.Race.Positions[seats[2].PlayerId], Is.EqualTo(start));
             Assert.That(seats[0].Turn.Correct, Is.True);
             Assert.That(seats.All(p => p.Score == 0), Is.True, "the race gives no points");
@@ -312,12 +323,52 @@ namespace FamilyQuiz.Tests
         }
 
         [Test]
-        public void ARaceWithoutAWinnerOnTheTrackEndsAfterMaxQuestions()
+        public void ARaceNobodyAnswersStopsAfterTheIdleStatements()
         {
             var (f, seats) = ToFinalIntro(2, 1);
             var events = f.SkipTo(GamePhase.Results);
-            Assert.That(events.OfType<PhaseStarted>().Count(p => p.Phase == GamePhase.RaceQuestion), Is.EqualTo(f.Config.Race.MaxQuestions));
+            Assert.That(events.OfType<PhaseStarted>().Count(p => p.Phase == GamePhase.RaceQuestion),
+                Is.EqualTo(f.Config.Race.IdleStopStatements));
+            Assert.That(f.State.Race.StoppedIdle, Is.True);
             Assert.That(f.State.WinnerId, Is.EqualTo(seats[0].PlayerId), "nobody moved: the head start leader wins");
+        }
+
+        [Test]
+        public void ThereIsNoStatementLimitWhileSomeoneAnswers()
+        {
+            // Both always pass: nobody moves, but someone acted, so the safety stop never comes (D157).
+            var (f, _) = ToFinalIntro(2, 0);
+            f.Advance(f.FinalIntroMs);
+            int statements = 0;
+            while (f.State.Phase == GamePhase.RaceQuestion && statements < 60)
+            {
+                statements++;
+                f.Pass("c1", 1000);
+                f.Pass("c2", 1200);
+                Assert.That(f.State.Phase, Is.EqualTo(GamePhase.RaceReveal), "a pass from everyone ends the statement early");
+                f.Advance(f.RaceRevealMs);
+            }
+
+            Assert.That(statements, Is.EqualTo(60), "60 statements and still running (more than race.json holds)");
+            Assert.That(f.State.Phase, Is.EqualTo(GamePhase.RaceQuestion));
+        }
+
+        [Test]
+        public void WrongMovesBackPassStaysAndAWrongAtZeroStaysAtZero()
+        {
+            var (f, seats) = ToFinalIntro(2, 1); // seat 0 leads: head start maxHeadStart, seat 1 on 0
+            f.Advance(f.FinalIntroMs);
+            bool right = f.State.Race.Statement.Answer;
+            f.TrueFalse("c1", !right, 1000);
+            f.TrueFalse("c2", !right, 1000);
+            f.Advance(f.RaceRevealMs);
+            Assert.That(f.State.Race.PositionOf(seats[0].PlayerId), Is.EqualTo(f.Config.Race.MaxHeadStart - f.Config.Race.StepsPerWrong));
+            Assert.That(f.State.Race.PositionOf(seats[1].PlayerId), Is.EqualTo(0));
+            f.Pass("c1", 900);
+            f.TrueFalse("c2", f.State.Race.Statement.Answer, 1000);
+            f.Advance(f.RaceRevealMs);
+            Assert.That(f.State.Race.PositionOf(seats[0].PlayerId), Is.EqualTo(f.Config.Race.MaxHeadStart - f.Config.Race.StepsPerWrong));
+            Assert.That(f.State.Race.PositionOf(seats[1].PlayerId), Is.EqualTo(f.Config.Race.StepsPerCorrect));
         }
 
         [Test]
@@ -331,8 +382,11 @@ namespace FamilyQuiz.Tests
             Assert.That(LobbyFixture.AckOf(f.TrueFalse("c1", true, null)).Reason, Is.EqualTo(AckReasons.Invalid), "ms is needed");
             var noAnswer = f.Send(new SubmitAnswer("c1", "x", raceId, InputKinds.TrueFalse, null, 100));
             Assert.That(LobbyFixture.AckOf(noAnswer).Reason, Is.EqualTo(AckReasons.Invalid));
+            Assert.That(LobbyFixture.AckOf(f.Send(new SubmitAnswer("c1", "p0", raceId, InputKinds.Pass, null, null))).Reason,
+                Is.EqualTo(AckReasons.Invalid), "a pass needs ms too");
             Assert.That(LobbyFixture.AckOf(f.TrueFalse("c1", true, 100)).Ok, Is.True);
             Assert.That(LobbyFixture.AckOf(f.TrueFalse("c1", false, 100)).Reason, Is.EqualTo(AckReasons.Invalid), "one answer");
+            Assert.That(LobbyFixture.AckOf(f.Pass("c1", 100)).Reason, Is.EqualTo(AckReasons.Invalid), "no pass after an answer");
             f.Advance(f.RaceWindowMs + f.GraceMs);
             Assert.That(f.State.Phase, Is.EqualTo(GamePhase.RaceReveal));
             var late = f.Send(new SubmitAnswer("c2", "late", raceId, InputKinds.TrueFalse, null, 100, answer: true));
@@ -344,13 +398,13 @@ namespace FamilyQuiz.Tests
         {
             var (f, _) = ToFinalIntro(2, 0);
             var events = f.SkipTo(GamePhase.Results);
-            Assert.That(f.State.SeenRaceIds.Count, Is.EqualTo(f.Config.Race.MaxQuestions));
+            Assert.That(f.State.SeenRaceIds.Count, Is.EqualTo(f.Config.Race.IdleStopStatements));
             // One SeenChanged per statement, and one for the winner's fact when Results starts (D87).
-            Assert.That(events.OfType<SeenChanged>().Count(), Is.EqualTo(f.Config.Race.MaxQuestions + 1));
+            Assert.That(events.OfType<SeenChanged>().Count(), Is.EqualTo(f.Config.Race.IdleStopStatements + 1));
         }
 
         [Test]
-        public void WhenUnseenStatementsRunOutTheRaceUsesSeenOnes()
+        public void WhenUnseenStatementsRunOutTheRaceUsesTheLeastRecentlySeen()
         {
             var all = TestContent.Content().Race.Select(s => s.Id).ToList();
             var (f, _) = ToFinalIntro(2, 0, seenRace: all);
@@ -363,8 +417,7 @@ namespace FamilyQuiz.Tests
                 f.Advance(50);
             }
 
-            Assert.That(ids.Count, Is.EqualTo(f.Config.Race.MaxQuestions));
-            Assert.That(ids.Distinct().Count(), Is.EqualTo(ids.Count), "never twice in one race");
+            Assert.That(ids, Is.EqualTo(all.Take(f.Config.Race.IdleStopStatements)), "oldest first, in the saved order");
         }
 
         [Test]
@@ -377,7 +430,7 @@ namespace FamilyQuiz.Tests
             var shown = f.State.SeenRaceIds.Except(seen).ToList();
             Assert.That(shown, Is.EquivalentTo(all.Skip(all.Count - f12())));
 
-            int f12() => TestContent.Config().Race.MaxQuestions;
+            int f12() => TestContent.Config().Race.IdleStopStatements;
         }
     }
 }

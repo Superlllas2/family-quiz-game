@@ -18,6 +18,10 @@ namespace FamilyQuiz.Core.Content
         [JsonProperty("lastCallEnabled", Required = Required.Always)] public bool LastCallEnabled { get; set; }
         [JsonProperty("reveal", Required = Required.Always)] public double Reveal { get; set; }
         [JsonProperty("scores", Required = Required.Always)] public double Scores { get; set; }
+        /// <summary>The Attacks phase after Scores, only when a power up was used in that pick window (D149).</summary>
+        [JsonProperty("attacks", Required = Required.Always)] public double Attacks { get; set; }
+        /// <summary>The TopicTie spin after a tied vote or a vote nobody joined (D153).</summary>
+        [JsonProperty("topicTie", Required = Required.Always)] public double TopicTie { get; set; }
         [JsonProperty("roundEnd", Required = Required.Always)] public double RoundEnd { get; set; }
         [JsonProperty("finalIntro", Required = Required.Always)] public double FinalIntro { get; set; }
         [JsonProperty("results", Required = Required.Always)] public double Results { get; set; }

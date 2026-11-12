@@ -12,6 +12,8 @@ namespace FamilyQuiz.Core.Content
         [JsonProperty("maxHeld", Required = Required.Always)] public int MaxHeld { get; set; }
         [JsonProperty("maxHitsPerQuestion", Required = Required.Always)] public int MaxHitsPerQuestion { get; set; }
         [JsonProperty("immunityQuestions", Required = Required.Always)] public int ImmunityQuestions { get; set; }
+        /// <summary>Most seconds of sabotage per player per question, from the moment the options appear (D148).</summary>
+        [JsonProperty("maxSabotageSeconds", Required = Required.Always)] public double MaxSabotageSeconds { get; set; }
         [JsonProperty("onPhone", Required = Required.Always)] public bool OnPhone { get; set; }
         [JsonProperty("freeze", Required = Required.Always)] public FreezeConfig Freeze { get; set; }
         [JsonProperty("slime", Required = Required.Always)] public SlimeConfig Slime { get; set; }

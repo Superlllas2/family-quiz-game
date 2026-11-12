@@ -21,54 +21,69 @@ namespace FamilyQuiz.Core.Rules
         }
 
         /// <summary>
-        /// Both conditions of docs/02_show_flow.md "Check": (leader's head start - last place's head start) is less than
-        /// race.maxQuestions, and (race.finishSteps - last place's head start) is at most race.maxQuestions.
+        /// docs/02_show_flow.md "Check": with no statement limit (D157) last place can always still win, so this is
+        /// always true. Kept as a function so the race start keeps logging it.
         /// </summary>
         public static bool LastPlaceCanWin(IEnumerable<int> headStarts, RaceConfig race)
         {
-            var list = headStarts.ToList();
-            if (list.Count == 0) return true;
-            int leader = list.Max();
-            int last = list.Min();
-            return leader - last < race.MaxQuestions && race.FinishSteps - last <= race.MaxQuestions;
+            return true;
         }
 
         /// <summary>
-        /// The next statement: unseen first, then seen, never one already used in this race; the seeded random generator
-        /// picks within the group. Null when every statement was used.
+        /// The next statement (D155): an unseen one picked by the seeded random generator; when none is left, the least
+        /// recently seen one. Never one already used in this race. Null when every statement was used.
         /// </summary>
         public static RaceStatementDef PickStatement(IReadOnlyList<RaceStatementDef> statements, IReadOnlyCollection<string> seen,
             ICollection<string> usedInGame, IRandom random)
         {
             var unseen = new List<RaceStatementDef>();
-            var seenOnes = new List<RaceStatementDef>();
+            RaceStatementDef oldest = null;
+            long oldestStamp = long.MaxValue;
             foreach (var s in statements)
             {
                 if (usedInGame.Contains(s.Id)) continue;
-                if (seen.Contains(s.Id)) seenOnes.Add(s);
-                else unseen.Add(s);
+                long? stamp = State.SeenList.LastSeenIn(seen, s.Id);
+                if (!stamp.HasValue)
+                {
+                    unseen.Add(s);
+                }
+                else if (stamp.Value < oldestStamp)
+                {
+                    oldest = s;
+                    oldestStamp = stamp.Value;
+                }
             }
 
-            var group = unseen.Count > 0 ? unseen : seenOnes;
-            return group.Count == 0 ? null : group[random.Next(group.Count)];
-        }
-
-        /// <summary>The new step after a statement: one race.stepsPerCorrect move for a right answer, never past the finish.</summary>
-        public static int Move(int position, bool correct, RaceConfig race)
-        {
-            if (!correct) return position;
-            return Math.Min(race.FinishSteps, position + race.StepsPerCorrect);
-        }
-
-        /// <summary>The race ends when a player reached race.finishSteps or race.maxQuestions statements were played.</summary>
-        public static bool IsFinished(IEnumerable<int> positions, int statementsPlayed, RaceConfig race)
-        {
-            return statementsPlayed >= race.MaxQuestions || positions.Any(p => p >= race.FinishSteps);
+            if (unseen.Count > 0) return unseen[random.Next(unseen.Count)];
+            return oldest;
         }
 
         /// <summary>
-        /// Every player from first to last: furthest first; ties by the higher total score before the race, then the
-        /// faster total answer time in the race, then a seeded random pick. The first one is the race (and game) winner.
+        /// The new step after a statement (D157): a right answer moves race.stepsPerCorrect forward, never past the finish;
+        /// a wrong one race.stepsPerWrong back, never below 0; a pass or no answer stays.
+        /// </summary>
+        public static int Move(int position, RaceOutcome outcome, RaceConfig race)
+        {
+            switch (outcome)
+            {
+                case RaceOutcome.Right:
+                    return Math.Min(race.FinishSteps, position + race.StepsPerCorrect);
+                case RaceOutcome.Wrong:
+                    return Math.Max(0, position - race.StepsPerWrong);
+                default:
+                    return position;
+            }
+        }
+
+        /// <summary>The race ends when a player reached race.finishSteps (D157: no statement limit).</summary>
+        public static bool IsFinished(IEnumerable<int> positions, RaceConfig race)
+        {
+            return positions.Any(p => p >= race.FinishSteps);
+        }
+
+        /// <summary>
+        /// Every player from first to last (D158): furthest first; ties by the faster total answer time in the race, then
+        /// the higher total score before the race, then a seeded random pick. The first one is the race (and game) winner.
         /// </summary>
         public static List<string> Order(IReadOnlyList<string> playerIds, IReadOnlyDictionary<string, int> positions,
             IReadOnlyDictionary<string, int> scoresBefore, IReadOnlyDictionary<string, long> answerMs, IRandom random)
@@ -79,8 +94,8 @@ namespace FamilyQuiz.Core.Rules
                 : OptionShuffle.DisplayOrder(playerIds.Count, random).Select(i => playerIds[i]).ToList();
             return shuffled
                 .OrderByDescending(id => Get(positions, id))
-                .ThenByDescending(id => Get(scoresBefore, id))
                 .ThenBy(id => answerMs.TryGetValue(id, out var ms) ? ms : long.MaxValue)
+                .ThenByDescending(id => Get(scoresBefore, id))
                 .ToList();
         }
 

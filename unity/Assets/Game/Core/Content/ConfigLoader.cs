@@ -18,18 +18,18 @@ namespace FamilyQuiz.Core.Content
         {
             "configVersion", "timers.intro", "timers.topicVote", "timers.questionShow", "timers.answer.multipleChoice",
             "timers.answer.closestValue", "timers.lastCall", "timers.reveal", "timers.scores", "timers.roundEnd",
-            "timers.finalIntro", "timers.results", "rounds.count", "rounds.questionsPerRound", "rounds.multipliers",
+            "timers.finalIntro", "timers.results", "timers.attacks", "timers.topicTie", "rounds.count", "rounds.questionsPerRound", "rounds.multipliers",
             "rounds.difficultyOrder", "rounds.formatOrder", "topics.doors", "topics.minUnseenToOffer", "topics.mixedTopicId",
             "scoring.maxPoints", "scoring.speedPenalty", "scoring.roundTo", "scoring.fastAnswerMs", "closestValue.closestBonus",
-            "closestValue.minPoints", "closestValue.exactShare",
+            "closestValue.zeroAtTolerances", "closestValue.exactShare", "powerUps.maxSabotageSeconds",
             "powerUps.enabled", "powerUps.types", "powerUps.targeting", "powerUps.drawChanceLeader", "powerUps.maxHeld",
             "powerUps.maxHitsPerQuestion", "powerUps.immunityQuestions", "powerUps.onPhone", "powerUps.freeze.taps",
-            "powerUps.slime.blobs", "powerUps.fog.seconds", "race.maxHeadStart", "race.finishSteps", "race.maxQuestions",
+            "powerUps.slime.blobs", "powerUps.fog.seconds", "race.maxHeadStart", "race.finishSteps", "race.stepsPerWrong", "race.idleStopStatements",
             "race.stepsPerCorrect", "race.answer", "race.reveal", "players.min", "players.max", "players.timerMultiplierOptions",
             "players.seatHoldSeconds", "lobby.startCountdownSeconds", "net.inputGraceMs", "net.tvReconnectSeconds",
             "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds", "feedback.enabled", "feedback.stars", "feedback.items", "music.volume", "music.fadeSeconds", "sfx.volume", "sfx.hostVoice", "timers.lastCallEnabled",
             "staging.extraSeconds.questionShow", "staging.extraSeconds.reveal", "staging.extraSeconds.scores",
-            "staging.extraSeconds.roundEnd", "staging.lobby.seatPopSeconds", "staging.intro.establishSeconds",
+            "staging.extraSeconds.roundEnd", "staging.lobby.seatPopSeconds", "staging.lobby.cutSeconds", "staging.lobby.fadeSeconds", "staging.lobby.darkStops", "staging.intro.establishSeconds",
             "staging.intro.lightsUpSeconds", "staging.questionShow.curtainOpenSeconds", "staging.questionShow.questionInSeconds",
             "staging.answer.suspenseRiseSeconds", "staging.reveal.cardsUpSeconds", "staging.reveal.reactionSeconds",
             "staging.scores.overlayInSeconds", "staging.results.winnerWalkSeconds"
@@ -77,6 +77,8 @@ namespace FamilyQuiz.Core.Content
             Positive(e, "timers.roundEnd", t.RoundEnd);
             Positive(e, "timers.finalIntro", t.FinalIntro);
             Positive(e, "timers.results", t.Results);
+            Positive(e, "timers.attacks", t.Attacks);
+            Positive(e, "timers.topicTie", t.TopicTie);
 
             var r = c.Rounds;
             e.Check(r.Count >= 1, "rounds.count", "must be 1 or more");
@@ -142,15 +144,15 @@ namespace FamilyQuiz.Core.Content
                 "must be shorter than Results");
 
             e.Check(c.ClosestValue.ClosestBonus >= 0, "closestValue.closestBonus", "must be 0 or more");
-            e.Check(c.ClosestValue.MinPoints >= 0 && c.ClosestValue.MinPoints <= s.MaxPoints, "closestValue.minPoints",
-                "must be 0 to scoring.maxPoints");
+            e.Check(c.ClosestValue.ZeroAtTolerances >= 1, "closestValue.zeroAtTolerances", "must be 1 or more");
             e.Check(c.ClosestValue.ExactShare >= 0 && c.ClosestValue.ExactShare < 1, "closestValue.exactShare",
                 "must be 0 or more and below 1");
             var race = c.Race;
             e.Check(race.MaxHeadStart >= 0, "race.maxHeadStart", "must be 0 or more");
             e.Check(race.FinishSteps > race.MaxHeadStart, "race.finishSteps", "must be more than race.maxHeadStart");
-            e.Check(race.MaxQuestions >= 1, "race.maxQuestions", "must be 1 or more");
             e.Check(race.StepsPerCorrect >= 1, "race.stepsPerCorrect", "must be 1 or more");
+            e.Check(race.StepsPerWrong >= 0, "race.stepsPerWrong", "must be 0 or more");
+            e.Check(race.IdleStopStatements >= 1, "race.idleStopStatements", "must be 1 or more");
             Positive(e, "race.answer", race.Answer);
             Positive(e, "race.reveal", race.Reveal);
 
@@ -169,6 +171,14 @@ namespace FamilyQuiz.Core.Content
             e.Check(pu.Freeze.Taps >= 1, "powerUps.freeze.taps", "must be 1 or more");
             e.Check(pu.Slime.Blobs >= 1, "powerUps.slime.blobs", "must be 1 or more");
             Positive(e, "powerUps.fog.seconds", pu.Fog.Seconds);
+            Positive(e, "powerUps.maxSabotageSeconds", pu.MaxSabotageSeconds);
+            e.Check(pu.MaxSabotageSeconds < Math.Min(t.Answer.MultipleChoice, t.Answer.ClosestValue), "powerUps.maxSabotageSeconds",
+                "must leave time to answer: less than the shortest answer window");
+            var lobby = c.Staging.Lobby;
+            Positive(e, "staging.lobby.cutSeconds", lobby.CutSeconds);
+            e.Check(lobby.FadeSeconds >= 0 && 2 * lobby.FadeSeconds < lobby.CutSeconds, "staging.lobby.fadeSeconds",
+                "must be 0 or more, and both fades must fit inside a cut");
+            e.Check(lobby.DarkStops >= 0, "staging.lobby.darkStops", "must be 0 or more");
 
             e.Check(c.Hosts.MinGapSeconds >= 0, "hosts.minGapSeconds", "must be 0 or more");
             Positive(e, "hosts.bubbleSeconds", c.Hosts.BubbleSeconds);
@@ -187,12 +197,6 @@ namespace FamilyQuiz.Core.Content
                     e.Check(!string.IsNullOrEmpty(item) && items.Add(item), "feedback.items", "\"" + item + "\" must be a new, non empty id");
             }
 
-            // lastPlaceCanWin (docs/02_show_flow.md) with the largest head start gap: leader maxHeadStart, last place 0.
-            double maxHeadStart = Num(root, "race.maxHeadStart");
-            double maxQuestions = Num(root, "race.maxQuestions");
-            e.Check(maxHeadStart < maxQuestions, "race", "last place could not win: maxHeadStart must be less than maxQuestions");
-            e.Check(Num(root, "race.finishSteps") <= maxQuestions, "race",
-                "last place could not win: finishSteps must be at most maxQuestions");
         }
 
         private static void Positive(ContentErrors e, string key, double value)

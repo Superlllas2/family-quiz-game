@@ -4,420 +4,660 @@
     "title": {
       "ru": "Старое кино",
       "en": "Classic films"
-    }
+    },
+    "shelf": "screen",
+    "category": "film",
+    "lean": "old",
+    "russian": false
   },
   {
     "id": "films_new",
     "title": {
       "ru": "Новое кино",
       "en": "Modern films"
-    }
+    },
+    "shelf": "screen",
+    "category": "film",
+    "lean": "young",
+    "russian": false
   },
   {
     "id": "soviet_film",
     "title": {
       "ru": "Советское кино",
       "en": "Soviet cinema"
-    }
+    },
+    "shelf": "screen",
+    "category": "film",
+    "lean": "old",
+    "russian": true
   },
   {
     "id": "series",
     "title": {
       "ru": "Сериалы",
       "en": "TV series"
-    }
+    },
+    "shelf": "screen",
+    "category": "tv",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "ru_tv",
     "title": {
       "ru": "Наше телевидение",
       "en": "Soviet and Russian TV"
-    }
+    },
+    "shelf": "screen",
+    "category": "tv",
+    "lean": "old",
+    "russian": true
   },
   {
     "id": "cartoons",
     "title": {
       "ru": "Мультфильмы",
       "en": "Cartoons"
-    }
+    },
+    "shelf": "screen",
+    "category": "animation",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "heroes",
     "title": {
       "ru": "Супергерои и комиксы",
       "en": "Superheroes and comics"
-    }
+    },
+    "shelf": "screen",
+    "category": "comics",
+    "lean": "young",
+    "russian": false
   },
   {
     "id": "games_retro",
     "title": {
       "ru": "Ретро-игры",
       "en": "Retro video games"
-    }
+    },
+    "shelf": "screen",
+    "category": "videogames",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "games_new",
     "title": {
       "ru": "Современные видеоигры",
       "en": "Modern video games"
-    }
+    },
+    "shelf": "screen",
+    "category": "videogames",
+    "lean": "young",
+    "russian": false
   },
   {
     "id": "board",
     "title": {
       "ru": "Настольные игры",
       "en": "Board games and puzzles"
-    }
+    },
+    "shelf": "screen",
+    "category": "board",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "music_old",
     "title": {
       "ru": "Хиты XX века",
       "en": "20th century hits"
-    }
+    },
+    "shelf": "screen",
+    "category": "music",
+    "lean": "old",
+    "russian": false
   },
   {
     "id": "music_new",
     "title": {
       "ru": "Современная музыка",
       "en": "Modern music"
-    }
+    },
+    "shelf": "screen",
+    "category": "music",
+    "lean": "young",
+    "russian": false
   },
   {
     "id": "ru_music",
     "title": {
       "ru": "Русская музыка",
       "en": "Russian music"
-    }
+    },
+    "shelf": "screen",
+    "category": "music",
+    "lean": "all",
+    "russian": true
   },
   {
     "id": "classical",
     "title": {
       "ru": "Классика и опера",
       "en": "Classical music and opera"
-    }
+    },
+    "shelf": "screen",
+    "category": "music",
+    "lean": "old",
+    "russian": false
   },
   {
     "id": "art",
     "title": {
       "ru": "Картины и художники",
       "en": "Art and artists"
-    }
+    },
+    "shelf": "screen",
+    "category": "art",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "landmarks",
     "title": {
       "ru": "Чудеса архитектуры",
       "en": "Landmarks and buildings"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "places",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "money",
     "title": {
       "ru": "Деньги",
       "en": "Money"
-    }
+    },
+    "shelf": "life",
+    "category": "money",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "brands",
     "title": {
       "ru": "Бренды и компании",
       "en": "Brands and companies"
-    }
+    },
+    "shelf": "life",
+    "category": "money",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "ancient",
     "title": {
       "ru": "Древний мир",
       "en": "The ancient world"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "history",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "mythology",
     "title": {
       "ru": "Мифология",
       "en": "Mythology"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "myths",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "medieval",
     "title": {
       "ru": "Средневековье",
       "en": "The Middle Ages"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "history",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "history20",
     "title": {
       "ru": "XX век",
       "en": "The 20th century"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "history",
+    "lean": "old",
+    "russian": false
   },
   {
     "id": "ussr",
     "title": {
       "ru": "СССР",
       "en": "The USSR"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "history",
+    "lean": "old",
+    "russian": true
   },
   {
     "id": "nineties",
     "title": {
       "ru": "Девяностые",
       "en": "The 90s"
-    }
+    },
+    "shelf": "life",
+    "category": "decades",
+    "lean": "old",
+    "russian": false
   },
   {
     "id": "ru_history",
     "title": {
       "ru": "История России",
       "en": "Russian history"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "history",
+    "lean": "old",
+    "russian": true
   },
   {
     "id": "ru_politics",
     "title": {
       "ru": "Российская политика",
       "en": "Russian politics"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "history",
+    "lean": "old",
+    "russian": true
   },
   {
     "id": "rulers",
     "title": {
       "ru": "Короли и правители",
       "en": "Kings and rulers"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "history",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "conspiracy",
     "title": {
       "ru": "Теории заговора",
       "en": "Conspiracy theories"
-    }
+    },
+    "shelf": "life",
+    "category": "oddities",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "mysteries",
     "title": {
       "ru": "Загадки истории",
       "en": "Unsolved mysteries"
-    }
+    },
+    "shelf": "life",
+    "category": "oddities",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "crime",
     "title": {
       "ru": "Аферы и ограбления",
       "en": "Heists and cons"
-    }
+    },
+    "shelf": "life",
+    "category": "crime",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "misconceptions",
     "title": {
       "ru": "Мифы и враньё",
       "en": "Myths and nonsense"
-    }
+    },
+    "shelf": "life",
+    "category": "oddities",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "body",
     "title": {
       "ru": "Как устроен человек",
       "en": "The human body"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "body",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "medicine",
     "title": {
       "ru": "Медицина",
       "en": "A history of medicine"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "body",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "space",
     "title": {
       "ru": "Космос",
       "en": "Space"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "space",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "science",
     "title": {
       "ru": "Как это работает",
       "en": "How things work"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "science",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "inventions",
     "title": {
       "ru": "Кто это придумал?",
       "en": "Who invented that?"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "science",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "gadgets",
     "title": {
       "ru": "Гаджеты и компьютеры",
       "en": "Gadgets and computers"
-    }
+    },
+    "shelf": "life",
+    "category": "tech",
+    "lean": "young",
+    "russian": false
   },
   {
     "id": "memes",
     "title": {
       "ru": "Интернет и мемы",
       "en": "The internet and memes"
-    }
+    },
+    "shelf": "screen",
+    "category": "internet",
+    "lean": "young",
+    "russian": false
   },
   {
     "id": "noughties",
     "title": {
       "ru": "Нулевые",
       "en": "The 2000s"
-    }
+    },
+    "shelf": "life",
+    "category": "decades",
+    "lean": "young",
+    "russian": false
   },
   {
     "id": "animals",
     "title": {
       "ru": "Странные звери",
       "en": "Weird animals"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "nature",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "sea",
     "title": {
       "ru": "Под водой",
       "en": "Under the sea"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "nature",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "dinosaurs",
     "title": {
       "ru": "Динозавры",
       "en": "Dinosaurs and lost beasts"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "nature",
+    "lean": "young",
+    "russian": false
   },
   {
     "id": "earth",
     "title": {
       "ru": "Земля и погода",
       "en": "Earth and weather"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "nature",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "plants",
     "title": {
       "ru": "Растения и грибы",
       "en": "Plants and fungi"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "nature",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "world",
     "title": {
       "ru": "Вокруг света",
       "en": "Around the world"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "geography",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "countries",
     "title": {
       "ru": "Страны и флаги",
       "en": "Countries and flags"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "geography",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "ru_places",
     "title": {
       "ru": "По России",
       "en": "Across Russia"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "geography",
+    "lean": "all",
+    "russian": true
   },
   {
     "id": "languages",
     "title": {
       "ru": "Языки и слова",
       "en": "Languages and words"
-    }
+    },
+    "shelf": "knowledge",
+    "category": "languages",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "holidays",
     "title": {
       "ru": "Праздники мира",
       "en": "Holidays around the world"
-    }
+    },
+    "shelf": "life",
+    "category": "holidays",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "kitchen",
     "title": {
       "ru": "Что на ужин",
       "en": "What's for dinner"
-    }
+    },
+    "shelf": "life",
+    "category": "food",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "drinks",
     "title": {
       "ru": "Напитки",
       "en": "Drinks"
-    }
+    },
+    "shelf": "life",
+    "category": "food",
+    "lean": "old",
+    "russian": false
   },
   {
     "id": "fashion",
     "title": {
       "ru": "Мода и стиль",
       "en": "Fashion and style"
-    }
+    },
+    "shelf": "life",
+    "category": "fashion",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "transport",
     "title": {
       "ru": "Машины, поезда, самолёты",
       "en": "Cars, trains and planes"
-    }
+    },
+    "shelf": "life",
+    "category": "transport",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "people",
     "title": {
       "ru": "Великие люди",
       "en": "Famous people"
-    }
+    },
+    "shelf": "life",
+    "category": "people",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "football",
     "title": {
       "ru": "Футбол",
       "en": "Football"
-    }
+    },
+    "shelf": "life",
+    "category": "sport",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "olympics",
     "title": {
       "ru": "Олимпийские игры",
       "en": "The Olympics"
-    }
+    },
+    "shelf": "life",
+    "category": "sport",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "records",
     "title": {
       "ru": "Спорт и рекорды",
       "en": "Sports and records"
-    }
+    },
+    "shelf": "life",
+    "category": "sport",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "books_old",
     "title": {
       "ru": "Классическая литература",
       "en": "Classic literature"
-    }
+    },
+    "shelf": "screen",
+    "category": "books",
+    "lean": "old",
+    "russian": false
   },
   {
     "id": "books_new",
     "title": {
       "ru": "Современные книги",
       "en": "Modern books"
-    }
+    },
+    "shelf": "screen",
+    "category": "books",
+    "lean": "young",
+    "russian": false
   },
   {
     "id": "fairytales",
     "title": {
       "ru": "Сказки",
       "en": "Fairy tales"
-    }
+    },
+    "shelf": "screen",
+    "category": "fairytales",
+    "lean": "all",
+    "russian": false
   },
   {
     "id": "mixed",

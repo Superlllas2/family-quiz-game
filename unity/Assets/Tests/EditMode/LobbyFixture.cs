@@ -64,6 +64,8 @@ namespace FamilyQuiz.Tests
         public long VoteEndMs => TopicVoteMs + Config.Net.InputGraceMs;
         public long RoundEndMs => Ms(Config.Timers.RoundEnd) + Ms(Config.Staging.ExtraSeconds.RoundEnd);
         public long FinalIntroMs => Ms(Config.Timers.FinalIntro);
+        public long AttacksMs => Ms(Config.Timers.Attacks);
+        public long TopicTieMs => Ms(Config.Timers.TopicTie);
         public long RaceWindowMs => Ms(Config.Race.Answer);
         public long RaceRevealMs => Ms(Config.Race.Reveal);
         public long ClosestWindowMs => Ms(Config.Timers.Answer.ClosestValue);
@@ -157,6 +159,12 @@ namespace FamilyQuiz.Tests
                 answer: answer));
         }
 
+        /// <summary>The Пас button for the current race statement (D157).</summary>
+        public IReadOnlyList<IGameEvent> Pass(string conn, long? ms, string inputId = null)
+        {
+            return Game.Handle(new SubmitAnswer(conn, inputId ?? NextInputId(), State.PhaseId, InputKinds.Pass, null, ms));
+        }
+
         /// <summary>The right display index of the current question.</summary>
         public int Right => State.Question.CorrectDisplayIndex;
 
@@ -212,11 +220,19 @@ namespace FamilyQuiz.Tests
         public PlayerState[] ToFirstAnswer(int count)
         {
             var seats = ToFirstVote(count);
-            Advance(VoteEndMs);
+            EndVote();
             Assert.That(State.Phase, Is.EqualTo(GamePhase.QuestionShow));
             Advance(QuestionShowMs);
             Assert.That(State.Phase, Is.EqualTo(GamePhase.Answer));
             return seats;
+        }
+
+        /// <summary>Runs the topic vote timer out (nobody else votes), and the TopicTie spin if one follows (D153).</summary>
+        public List<IGameEvent> EndVote()
+        {
+            var events = new List<IGameEvent>(Advance(VoteEndMs));
+            if (State.Phase == GamePhase.TopicTie) events.AddRange(Advance(TopicTieMs));
+            return events;
         }
 
         /// <summary>Steps the clock in 50 ms frames until the given phase starts again (at most maxMs of game clock).</summary>

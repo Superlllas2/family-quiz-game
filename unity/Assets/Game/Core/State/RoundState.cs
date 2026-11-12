@@ -36,6 +36,12 @@ namespace FamilyQuiz.Core.State
 
         public int? ChosenDoor { get; internal set; }
 
+        /// <summary>
+        /// Set when the vote ends: the doors the spin runs between (D153), in door order. Empty without a tie; every door
+        /// when nobody voted.
+        /// </summary>
+        public IReadOnlyList<int> TiedDoors { get; internal set; } = new int[0];
+
         /// <summary>The chosen door's topic, or null while the vote runs.</summary>
         public TopicDef Topic => ChosenDoor.HasValue ? Doors[ChosenDoor.Value] : null;
 

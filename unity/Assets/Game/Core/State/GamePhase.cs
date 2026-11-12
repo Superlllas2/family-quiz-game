@@ -22,6 +22,15 @@ namespace FamilyQuiz.Core.State
         RaceQuestion,
         RaceReveal,
         Results,
-        Poll
+        Poll,
+
+        /// <summary>The spin after a tied topic vote, or one nobody joined (D153). Phones show watch.</summary>
+        TopicTie,
+
+        /// <summary>
+        /// After Scores, only when a power up was used in that pick window (D149): every attack of the question at once.
+        /// Keeps the phaseId of Reveal and Scores, so the pick window runs through it.
+        /// </summary>
+        Attacks
     }
 }

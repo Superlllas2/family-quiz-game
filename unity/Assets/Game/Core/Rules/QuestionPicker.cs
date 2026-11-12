@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using FamilyQuiz.Core.Content;
 
 namespace FamilyQuiz.Core.Rules
@@ -8,8 +9,8 @@ namespace FamilyQuiz.Core.Rules
     /// Picks the question for a round slot (docs/02_show_flow.md, "Rules inside a round", 2). The slot's format and
     /// difficulty come from rounds.formatOrder and rounds.difficultyOrder. The question comes from the first of these
     /// groups that has one: 1 unseen from the chosen topic (any topic for the mixed door), 2 unseen from any topic, 3 seen
-    /// from the chosen topic, 4 seen from any topic. Never a question already used in this game. Within the group the
-    /// game's seeded random picks.
+    /// from the chosen topic, 4 seen from any topic. Never a question already used in this game. Within an unseen
+    /// group the game's seeded random picks; within a seen group the least recently seen one (D155).
     /// </summary>
     public static class QuestionPicker
     {
@@ -50,10 +51,20 @@ namespace FamilyQuiz.Core.Rules
             {
                 if (groups[i].Count == 0) continue;
                 group = i + 1;
-                return groups[i][random.Next(groups[i].Count)];
+                // Unseen groups: the seeded random. Seen groups: the least recently seen (D155).
+                if (group == GroupUnseenTopic || group == GroupUnseenAny) return groups[i][random.Next(groups[i].Count)];
+                return groups[i].OrderBy(q => LastSeen(q, seen)).First();
             }
 
             throw new InvalidOperationException("questions.json has no unused " + format + " question of difficulty " + difficulty);
+        }
+
+        /// <summary>When the question (or the full bank question it comes from) was last seen; the more recent of the two.</summary>
+        private static long LastSeen(QuestionDef q, IReadOnlyCollection<string> seen)
+        {
+            long own = State.SeenList.LastSeenIn(seen, q.Id) ?? -1;
+            long based = q.BasedOn != null ? State.SeenList.LastSeenIn(seen, q.BasedOn) ?? -1 : -1;
+            return System.Math.Max(own, based);
         }
 
         private static bool Contains(IReadOnlyCollection<string> set, string id)

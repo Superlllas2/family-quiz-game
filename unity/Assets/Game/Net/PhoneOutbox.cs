@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using FamilyQuiz.Core;
 using FamilyQuiz.Core.Content;
 using FamilyQuiz.Core.Events;
+using FamilyQuiz.Core.Show;
 using FamilyQuiz.Core.State;
 using FamilyQuiz.Net.Protocol;
 
@@ -152,7 +153,8 @@ namespace FamilyQuiz.Net
         {
             // Game screens list nobody (D88), except the power up targets of the pick window.
             var phase = _game.State.Phase;
-            if (phase == GamePhase.Lobby || phase == GamePhase.Reveal || phase == GamePhase.Scores) SendScreenToEveryone();
+            if (phase == GamePhase.Lobby || phase == GamePhase.Reveal || phase == GamePhase.Scores || phase == GamePhase.Attacks)
+                SendScreenToEveryone();
         }
 
         /// <summary>The "effect" message with its params from config (PROTOCOL.md section 4).</summary>
@@ -162,16 +164,33 @@ namespace FamilyQuiz.Net
             Send(target.Conn, new EffectMessage { Effect = effect, From = from, Params = EffectParams(effect) });
         }
 
+        /// <summary>
+        /// The effect's strength from config, plus capMs (D148): the sabotage time left for this question, from now. At
+        /// the start of Answer that is the whole powerUps.maxSabotageSeconds; after a reload, what remains of it.
+        /// </summary>
         private object EffectParams(string effect)
         {
             var cfg = _game.Config.PowerUps;
+            Dictionary<string, object> p;
             switch (effect)
             {
-                case PowerUpTypes.Freeze: return new Dictionary<string, object> { { "taps", cfg.Freeze.Taps } };
-                case PowerUpTypes.Slime: return new Dictionary<string, object> { { "blobs", cfg.Slime.Blobs } };
-                case PowerUpTypes.Fog: return new Dictionary<string, object> { { "seconds", cfg.Fog.Seconds } };
-                default: return new Dictionary<string, object>();
+                case PowerUpTypes.Freeze: p = new Dictionary<string, object> { { "taps", cfg.Freeze.Taps } }; break;
+                case PowerUpTypes.Slime: p = new Dictionary<string, object> { { "blobs", cfg.Slime.Blobs } }; break;
+                case PowerUpTypes.Fog: p = new Dictionary<string, object> { { "seconds", cfg.Fog.Seconds } }; break;
+                default: p = new Dictionary<string, object>(); break;
             }
+
+            p["capMs"] = SabotageCapLeftMs();
+            return p;
+        }
+
+        private long SabotageCapLeftMs()
+        {
+            long cap = ShowDirector.ToMs(_game.Config.PowerUps.MaxSabotageSeconds);
+            var question = _game.State.Question;
+            if (question == null || _game.State.Phase != GamePhase.Answer) return cap;
+            long elapsed = _game.NowMs - question.AnswerStartedAtMs;
+            return Math.Max(0, cap - Math.Max(0, elapsed));
         }
 
         private void SendScreenToEveryone()

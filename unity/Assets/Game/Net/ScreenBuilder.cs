@@ -21,6 +21,7 @@ namespace FamilyQuiz.Net
         private const string WaitingValueKey = "screen.waiting.value";
         private const string TrueKey = "screen.trueFalse.true";
         private const string FalseKey = "screen.trueFalse.false";
+        private const string PassKey = "screen.trueFalse.pass";
         private const string WaitingPowerUpKey = "screen.waiting.powerUp";
         private const string PowerUpNameKeyPrefix = "screen.powerUps.";
         private const string PausedTextKey = "screen.paused.text";
@@ -103,6 +104,7 @@ namespace FamilyQuiz.Net
                     break;
                 case GamePhase.Reveal:
                 case GamePhase.Scores:
+                case GamePhase.Attacks:
                     // The power up pick (one phaseId over Reveal and Scores): "result" for a holder with someone to aim
                     // at, "waiting" once they used it, "watch" for everyone else (D88).
                     // Each of them carries the rating card while question feedback is on (D109).
@@ -144,6 +146,7 @@ namespace FamilyQuiz.Net
                 case GamePhase.RoundEnd:
                 case GamePhase.FinalIntro:
                 case GamePhase.RaceReveal:
+                case GamePhase.TopicTie:
                     id = ScreenIds.Watch;
                     data = new WatchScreenData();
                     break;
@@ -341,6 +344,7 @@ namespace FamilyQuiz.Net
                 case GamePhase.TopicVote:
                     return state.Round.Votes.TryGetValue(player.PlayerId, out var door) ? state.Round.Doors[door].Title.Get(player.Lang) : "";
                 case GamePhase.RaceQuestion:
+                    if (player.Turn != null && player.Turn.Passed) return Text(PassKey, player.Lang);
                     return player.Turn?.TrueFalse == true ? Text(TrueKey, player.Lang) : Text(FalseKey, player.Lang);
                 default:
                     if (state.Question != null && state.Question.IsClosestValue)

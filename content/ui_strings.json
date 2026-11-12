@@ -26,6 +26,7 @@
   "screen.waiting.value": { "ru": "{value} {unit}", "en": "{value} {unit}" },
   "screen.trueFalse.true": { "ru": "Правда", "en": "True" },
   "screen.trueFalse.false": { "ru": "Ложь", "en": "False" },
+  "screen.trueFalse.pass": { "ru": "Пас", "en": "Pass" },
   "screen.waiting.powerUp": { "ru": "{powerUp} → {target}", "en": "{powerUp} → {target}" },
   "screen.powerUps.freeze": { "ru": "Заморозка", "en": "Freeze" },
   "screen.powerUps.slime": { "ru": "Слизь", "en": "Slime" },

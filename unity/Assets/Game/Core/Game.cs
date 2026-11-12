@@ -31,9 +31,10 @@ namespace FamilyQuiz.Core
         /// <param name="seenQuestions">Question ids seen in earlier sessions (docs/02_show_flow.md, "Seen questions"), or null.</param>
         /// <param name="seenRace">Race statement ids seen in earlier sessions, or null.</param>
         /// <param name="seenFacts">Winner fact ids given in earlier sessions, or null.</param>
+        /// <param name="seenTopics">Topic ids offered on a door in earlier sessions, oldest first (D154), or null.</param>
         public Game(GameContent content, IClock clock, IRandom tokenRandom, Func<int> newSeed,
             IEnumerable<string> seenQuestions = null, IEnumerable<string> seenRace = null,
-            IEnumerable<string> seenFacts = null)
+            IEnumerable<string> seenFacts = null, IEnumerable<string> seenTopics = null)
         {
             Content = content ?? throw new ArgumentNullException(nameof(content));
             Config = content.Config ?? throw new ArgumentNullException(nameof(content.Config));
@@ -44,7 +45,7 @@ namespace FamilyQuiz.Core
             State.Settings = State.PendingSettings.Clone();
             _roster = new Roster(State, Config, content.Characters, clock, tokenRandom);
             _director = new ShowDirector(State, content, clock, newSeed);
-            _director.LoadSeen(seenQuestions, seenRace, seenFacts);
+            _director.LoadSeen(seenQuestions, seenRace, seenFacts, seenTopics);
             _inputs = new InputRules(State, _director, content.Characters);
             _settings = new SettingsRules(State, Config);
             _tvSettings = new TvSettingsRules(State);

@@ -101,7 +101,9 @@ def main():
             f.write("\n")
     dump("questions.json", questions)
     dump("race.json", race)
-    dump("topics.json", [{"id": t["id"], "title": loc(t["ru"], t["en"])} for t in topics]
+    # The shelf fields (D154) come with each topic: shelf, category, lean, russian.
+    dump("topics.json", [{"id": t["id"], "title": loc(t["ru"], t["en"]), "shelf": t["shelf"], "category": t["category"],
+                          "lean": t["lean"], "russian": t["russian"]} for t in topics]
          + [{"id": MIXED[0], "title": loc(MIXED[1], MIXED[2]), "mixed": True}])
     from collections import Counter
     print(len(questions), "questions in", len(topics), "topics,", len(race), "race statements;",

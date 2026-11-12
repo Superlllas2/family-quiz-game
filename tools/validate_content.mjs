@@ -20,6 +20,14 @@ const topics = load("topics.json");
 const topicIds = new Set(topics.map((t) => t.id));
 topics.forEach((t) => { if (!isLoc(t.title, 30)) err("topics.json", t.id, "title must have ru and en, max 30"); });
 if (topics.filter((t) => t.mixed).length !== 1) err("topics.json", "-", "exactly one topic must be mixed");
+// The three shelves (D154): every regular topic has a shelf, a category, a lean and a russian flag.
+for (const t of topics) {
+  if (t.mixed) continue;
+  if (!["screen", "knowledge", "life"].includes(t.shelf)) err("topics.json", t.id, "shelf must be screen, knowledge or life");
+  if (typeof t.category !== "string" || !t.category) err("topics.json", t.id, "category must not be empty");
+  if (!["young", "old", "all"].includes(t.lean)) err("topics.json", t.id, "lean must be young, old or all");
+  if (typeof t.russian !== "boolean") err("topics.json", t.id, "russian must be true or false");
+}
 
 const ids = new Set();
 const unique = (file, id) => { if (ids.has(id)) err(file, id, "duplicate id"); ids.add(id); };
@@ -118,18 +126,18 @@ const cfg = load("config.json");
 const REQUIRED = [
   "configVersion", "timers.intro", "timers.topicVote", "timers.questionShow", "timers.answer.multipleChoice",
   "timers.answer.closestValue", "timers.lastCall", "timers.reveal", "timers.scores", "timers.roundEnd",
-  "timers.finalIntro", "timers.results", "rounds.count", "rounds.questionsPerRound", "rounds.multipliers",
+  "timers.finalIntro", "timers.results", "timers.attacks", "timers.topicTie", "rounds.count", "rounds.questionsPerRound", "rounds.multipliers",
   "rounds.difficultyOrder", "rounds.formatOrder", "topics.doors", "topics.minUnseenToOffer", "topics.mixedTopicId",
   "scoring.maxPoints", "scoring.speedPenalty", "scoring.roundTo", "scoring.fastAnswerMs", "closestValue.closestBonus",
-  "closestValue.minPoints", "closestValue.exactShare",
+  "closestValue.zeroAtTolerances", "closestValue.exactShare", "powerUps.maxSabotageSeconds",
   "powerUps.enabled", "powerUps.types", "powerUps.targeting", "powerUps.drawChanceLeader", "powerUps.maxHeld",
   "powerUps.maxHitsPerQuestion", "powerUps.immunityQuestions", "powerUps.onPhone", "powerUps.freeze.taps",
-  "powerUps.slime.blobs", "powerUps.fog.seconds", "race.maxHeadStart", "race.finishSteps", "race.maxQuestions",
+  "powerUps.slime.blobs", "powerUps.fog.seconds", "race.maxHeadStart", "race.finishSteps", "race.stepsPerWrong", "race.idleStopStatements",
   "race.stepsPerCorrect", "race.answer", "race.reveal", "players.min", "players.max", "players.timerMultiplierOptions",
   "players.seatHoldSeconds", "lobby.startCountdownSeconds", "net.inputGraceMs", "net.tvReconnectSeconds",
   "hosts.minGapSeconds", "hosts.bubbleSeconds", "hosts.streakTrigger", "poll.enabled", "poll.maxSeconds", "feedback.enabled", "feedback.stars", "feedback.items", "music.volume", "music.fadeSeconds", "sfx.volume", "sfx.hostVoice", "timers.lastCallEnabled",
   "staging.extraSeconds.questionShow", "staging.extraSeconds.reveal", "staging.extraSeconds.scores",
-  "staging.extraSeconds.roundEnd", "staging.lobby.seatPopSeconds", "staging.intro.establishSeconds",
+  "staging.extraSeconds.roundEnd", "staging.lobby.seatPopSeconds", "staging.lobby.cutSeconds", "staging.lobby.fadeSeconds", "staging.lobby.darkStops", "staging.intro.establishSeconds",
   "staging.intro.lightsUpSeconds", "staging.questionShow.curtainOpenSeconds", "staging.questionShow.questionInSeconds",
   "staging.answer.suspenseRiseSeconds", "staging.reveal.cardsUpSeconds", "staging.reveal.reactionSeconds",
   "staging.scores.overlayInSeconds", "staging.results.winnerWalkSeconds",
@@ -155,11 +163,15 @@ fit(st.intro?.establishSeconds < tm.intro, "staging.intro.establishSeconds", "mu
 fit(st.intro?.lightsUpSeconds >= 0 && st.intro?.lightsUpSeconds <= st.intro?.establishSeconds, "staging.intro.lightsUpSeconds", "must fit inside the establishing shot");
 fit(st.results?.winnerWalkSeconds < tm.results, "staging.results.winnerWalkSeconds", "must be shorter than Results");
 
-// lastPlaceCanWin (docs/02_show_flow.md): with the largest head start gap (leader maxHeadStart, last place 0),
-// (leader head start - last place head start) < maxQuestions and (finishSteps - last place head start) <= maxQuestions.
+// The race (D157): no statement limit, so last place can always still win. The new keys are checked here.
 const r = cfg.race ?? {};
-if (!(r.maxHeadStart - 0 < r.maxQuestions)) err("config.json", "race", "last place could not win: maxHeadStart must be less than maxQuestions");
-if (!(r.finishSteps - 0 <= r.maxQuestions)) err("config.json", "race", "last place could not win: finishSteps must be at most maxQuestions");
+fit(Number.isInteger(r.stepsPerWrong) && r.stepsPerWrong >= 0, "race.stepsPerWrong", "must be 0 or more");
+fit(Number.isInteger(r.idleStopStatements) && r.idleStopStatements >= 1, "race.idleStopStatements", "must be 1 or more");
+// The sabotage cap (D148) leaves time to answer; the Lobby fades fit inside a cut (D160).
+fit(cfg.powerUps?.maxSabotageSeconds > 0 && cfg.powerUps?.maxSabotageSeconds < Math.min(tm.answer?.multipleChoice, tm.answer?.closestValue),
+  "powerUps.maxSabotageSeconds", "must leave time to answer: less than the shortest answer window");
+fit(st.lobby?.fadeSeconds >= 0 && 2 * st.lobby?.fadeSeconds < st.lobby?.cutSeconds, "staging.lobby.fadeSeconds", "must be 0 or more, and both fades must fit inside a cut");
+fit(cfg.closestValue?.zeroAtTolerances >= 1, "closestValue.zeroAtTolerances", "must be 1 or more");
 
 // UI strings (docs/15_schemas.md, D65): dotted lower camel case keys, both languages non empty, same placeholders.
 // show_scripts.json (docs/15_schemas.md): known segments; standard has rounds.count rounds and one results.
@@ -176,7 +188,7 @@ else {
   if (scripts.standard.filter((s) => s === "results").length !== 1) err("show_scripts.json", "standard", "must hold exactly one results");
 }
 
-// One Standard game without a repeat: every slot kind rounds.count times, and race.maxQuestions statements.
+// One Standard game without a repeat: every slot kind rounds.count times, and race.finishSteps statements.
 const slotNeeds = {};
 (cfg.rounds?.formatOrder ?? []).forEach((f, i) => {
   const key = f + " " + cfg.rounds.difficultyOrder[i];
@@ -187,7 +199,7 @@ for (const [key, need] of Object.entries(slotNeeds)) {
   const have = questions.filter((q) => q.format === format && q.difficulty === difficulty).length;
   if (have < need) err("questions.json", "-", `needs at least ${need} ${format} questions of difficulty ${difficulty} for one game, has ${have}`);
 }
-if (race.length < (cfg.race?.maxQuestions ?? 0)) err("race.json", "-", "needs at least race.maxQuestions statements for one race");
+if (race.length < (cfg.race?.finishSteps ?? 0)) err("race.json", "-", "needs at least race.finishSteps statements for one race");
 
 const ui = load("ui_strings.json");
 const holes = (s) => (s.match(/\{[a-zA-Z]+\}/g) ?? []).sort().join(",");

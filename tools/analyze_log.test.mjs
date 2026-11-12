@@ -133,9 +133,9 @@ test("two games in one file, the second abandoned, names and connections carried
 })
 
 test("the default idle limit is 21 s (D126): an 11.5 s stretch is not over", () => {
-  assert.equal(IDLE_LIMIT_MS, 21000);
+  assert.equal(IDLE_LIMIT_MS, 32000);
   const [g1] = analyze(fixture("two_games.jsonl")).games;
-  assert.equal(g1.idle.longestStretch.limitMs, 21000);
+  assert.equal(g1.idle.longestStretch.limitMs, 32000);
   assert.equal(g1.idle.longestStretch.over, false);
 });
 
