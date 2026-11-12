@@ -24775,5 +24775,716 @@
     },
     "answer": true,
     "source": "https://en.wikipedia.org/wiki/Nian"
+  },
+  {
+    "id": "race_2755",
+    "statement": {
+      "ru": "Аляска — одновременно самый западный и самый восточный штат США.",
+      "en": "Alaska is both the westernmost and the easternmost US state."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Alaska"
+  },
+  {
+    "id": "race_2756",
+    "statement": {
+      "ru": "Самая южная точка Африки — мыс Доброй Надежды.",
+      "en": "The southernmost point of Africa is the Cape of Good Hope."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Cape_Agulhas"
+  },
+  {
+    "id": "race_2757",
+    "statement": {
+      "ru": "Граница Непала и Китая проходит прямо через вершину Эвереста.",
+      "en": "The border between Nepal and China runs right across the summit of Everest."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mount_Everest"
+  },
+  {
+    "id": "race_2758",
+    "statement": {
+      "ru": "Гора Эверест названа в честь первого человека, поднявшегося на неё.",
+      "en": "Mount Everest is named after the first person to climb it."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mount_Everest"
+  },
+  {
+    "id": "race_2759",
+    "statement": {
+      "ru": "Таиланд долгое время был колонией Франции.",
+      "en": "Thailand was a French colony for a long time."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Thailand"
+  },
+  {
+    "id": "race_2760",
+    "statement": {
+      "ru": "Вершина горы Фудзи принадлежит синтоистскому святилищу.",
+      "en": "The top of Mount Fuji belongs to a Shinto shrine."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Fujisan_Hong%C5%AB_Sengen_Taisha"
+  },
+  {
+    "id": "race_2761",
+    "statement": {
+      "ru": "Соединённое Королевство состоит из трёх частей: Англии, Шотландии и Уэльса.",
+      "en": "The United Kingdom is made up of three parts: England, Scotland and Wales."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Countries_of_the_United_Kingdom"
+  },
+  {
+    "id": "race_2762",
+    "statement": {
+      "ru": "В Норвегии есть деревня, название которой — одна буква.",
+      "en": "There is a village in Norway whose name is a single letter."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/%C3%85,_Moskenes"
+  },
+  {
+    "id": "race_2763",
+    "statement": {
+      "ru": "Лондон старше Рима.",
+      "en": "London is older than Rome."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/London"
+  },
+  {
+    "id": "race_2764",
+    "statement": {
+      "ru": "В Судане пирамид больше, чем в Египте.",
+      "en": "There are more pyramids in Sudan than in Egypt."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Nubian_pyramids"
+  },
+  {
+    "id": "race_2765",
+    "statement": {
+      "ru": "Внутри Италии целиком помещаются две другие страны.",
+      "en": "Two other countries lie entirely inside Italy."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Enclave_and_exclave"
+  },
+  {
+    "id": "race_2766",
+    "statement": {
+      "ru": "На флаге Мексики орёл держит в клюве змею.",
+      "en": "On the flag of Mexico an eagle holds a snake in its beak."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Mexico"
+  },
+  {
+    "id": "race_2767",
+    "statement": {
+      "ru": "Самое большое пресное озеро мира — африканское озеро Виктория.",
+      "en": "The world's largest freshwater lake is Africa's Lake Victoria."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lake_Victoria"
+  },
+  {
+    "id": "race_2768",
+    "statement": {
+      "ru": "На флаге Кипра нарисована карта самого острова.",
+      "en": "The flag of Cyprus shows a map of the island itself."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Cyprus"
+  },
+  {
+    "id": "race_2769",
+    "statement": {
+      "ru": "Боливия названа в честь серебряных рудников.",
+      "en": "Bolivia is named after its silver mines."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Bolivia"
+  },
+  {
+    "id": "race_2770",
+    "statement": {
+      "ru": "Средиземное море когда-то почти полностью пересохло.",
+      "en": "The Mediterranean Sea once dried up almost completely."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Messinian_salinity_crisis"
+  },
+  {
+    "id": "race_2771",
+    "statement": {
+      "ru": "У Австрии есть выход к морю.",
+      "en": "Austria has a coastline on the sea."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Austria"
+  },
+  {
+    "id": "race_2772",
+    "statement": {
+      "ru": "Карибский остров Сен-Мартен поделён между Францией и Нидерландами.",
+      "en": "The Caribbean island of Saint Martin is split between France and the Netherlands."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Saint_Martin_(island)"
+  },
+  {
+    "id": "race_2773",
+    "statement": {
+      "ru": "Мексика находится в Южной Америке.",
+      "en": "Mexico is in South America."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mexico"
+  },
+  {
+    "id": "race_2774",
+    "statement": {
+      "ru": "Новая Зеландия — последняя крупная суша, которую заселили люди.",
+      "en": "New Zealand was the last large landmass to be settled by people."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/New_Zealand"
+  },
+  {
+    "id": "race_2775",
+    "statement": {
+      "ru": "Во всей Австралии часы показывают одно и то же время.",
+      "en": "Clocks show the same time all over Australia."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Time_in_Australia"
+  },
+  {
+    "id": "race_2776",
+    "statement": {
+      "ru": "Филиппины названы в честь испанского короля.",
+      "en": "The Philippines are named after a Spanish king."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Philippines"
+  },
+  {
+    "id": "race_2777",
+    "statement": {
+      "ru": "Канарские острова ближе к Испании, чем к Африке.",
+      "en": "The Canary Islands are closer to Spain than to Africa."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Canary_Islands"
+  },
+  {
+    "id": "race_2778",
+    "statement": {
+      "ru": "В Ватикане есть банкомат с инструкциями на латыни.",
+      "en": "In Vatican City there is a cash machine with instructions in Latin."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Vatican_City"
+  },
+  {
+    "id": "race_2779",
+    "statement": {
+      "ru": "Ниагарский водопад — самый высокий водопад в мире.",
+      "en": "Niagara Falls is the highest waterfall in the world."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Niagara_Falls"
+  },
+  {
+    "id": "race_2780",
+    "statement": {
+      "ru": "В Канаде есть городок, в названии которого два восклицательных знака.",
+      "en": "Canada has a town with two exclamation marks in its name."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Saint-Louis-du-Ha!_Ha!"
+  },
+  {
+    "id": "race_2781",
+    "statement": {
+      "ru": "Венеция стоит на одном большом острове.",
+      "en": "Venice stands on one big island."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Venice"
+  },
+  {
+    "id": "race_2782",
+    "statement": {
+      "ru": "Один город в США переименовали в честь радиовикторины.",
+      "en": "A town in the USA renamed itself after a radio quiz show."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Truth_or_Consequences,_New_Mexico"
+  },
+  {
+    "id": "race_2783",
+    "statement": {
+      "ru": "Япония состоит из четырёх островов.",
+      "en": "Japan consists of four islands."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Japan"
+  },
+  {
+    "id": "race_2784",
+    "statement": {
+      "ru": "Португалия граничит всего с одной страной.",
+      "en": "Portugal borders only one country."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Portugal"
+  },
+  {
+    "id": "race_2785",
+    "statement": {
+      "ru": "Нил впадает в Красное море.",
+      "en": "The Nile flows into the Red Sea."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Nile"
+  },
+  {
+    "id": "race_2786",
+    "statement": {
+      "ru": "На острове Питкэрн живут потомки мятежников с корабля «Баунти».",
+      "en": "The people of Pitcairn Island are descendants of the Bounty mutineers."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pitcairn_Islands"
+  },
+  {
+    "id": "race_2787",
+    "statement": {
+      "ru": "Через Африку проходят и экватор, и нулевой меридиан.",
+      "en": "Both the equator and the prime meridian cross Africa."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Africa"
+  },
+  {
+    "id": "race_2788",
+    "statement": {
+      "ru": "Между Египтом и Суданом есть ничейная земля: её не хочет ни одна из двух стран.",
+      "en": "Between Egypt and Sudan there is a no-man's land that neither country wants."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bir_Tawil"
+  },
+  {
+    "id": "race_2789",
+    "statement": {
+      "ru": "От Австралии до Новой Зеландии можно доплыть на пароме за пару часов.",
+      "en": "You can get from Australia to New Zealand by ferry in a couple of hours."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tasman_Sea"
+  },
+  {
+    "id": "race_2790",
+    "statement": {
+      "ru": "Дунай протекает через четыре столицы.",
+      "en": "The Danube flows through four capital cities."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Danube"
+  },
+  {
+    "id": "race_2791",
+    "statement": {
+      "ru": "Самый южный штат США — Флорида.",
+      "en": "Florida is the southernmost US state."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/List_of_extreme_points_of_the_United_States"
+  },
+  {
+    "id": "race_2792",
+    "statement": {
+      "ru": "Гибралтарский пролив отделяет Европу от Азии.",
+      "en": "The Strait of Gibraltar separates Europe from Asia."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Strait_of_Gibraltar"
+  },
+  {
+    "id": "race_2793",
+    "statement": {
+      "ru": "Все «Макдоналдсы» Исландии закрылись ещё в 2009 году.",
+      "en": "All of Iceland's McDonald's closed back in 2009."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_with_McDonald%27s_restaurants"
+  },
+  {
+    "id": "race_2794",
+    "statement": {
+      "ru": "До острова Тристан-да-Кунья можно добраться только на корабле.",
+      "en": "The island of Tristan da Cunha can only be reached by ship."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Tristan_da_Cunha"
+  },
+  {
+    "id": "race_2795",
+    "statement": {
+      "ru": "Сериал «Друзья» шёл двадцать сезонов.",
+      "en": "Friends ran for twenty seasons."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Friends"
+  },
+  {
+    "id": "race_2796",
+    "statement": {
+      "ru": "Скрудж Макдак — родной дядя Дональда Дака.",
+      "en": "Scrooge McDuck is Donald Duck's uncle."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Scrooge_McDuck"
+  },
+  {
+    "id": "race_2797",
+    "statement": {
+      "ru": "Сквидвард из «Губки Боба» — кальмар.",
+      "en": "Squidward from SpongeBob is a squid."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Squidward_Tentacles"
+  },
+  {
+    "id": "race_2798",
+    "statement": {
+      "ru": "Первого Кермита сшили из старого пальто мамы его создателя.",
+      "en": "The first Kermit the Frog was made from his creator's mother's old coat."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kermit_the_Frog"
+  },
+  {
+    "id": "race_2799",
+    "statement": {
+      "ru": "Хью Лори, сыгравший доктора Хауса, — американец.",
+      "en": "Hugh Laurie, who played Dr. House, is American."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Hugh_Laurie"
+  },
+  {
+    "id": "race_2800",
+    "statement": {
+      "ru": "Первая серия «Доктора Кто» вышла на следующий день после убийства Кеннеди.",
+      "en": "The first episode of Doctor Who aired the day after Kennedy was shot."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/An_Unearthly_Child"
+  },
+  {
+    "id": "race_2801",
+    "statement": {
+      "ru": "Все щенки из «Щенячьего патруля» — одной породы.",
+      "en": "All the pups in PAW Patrol are the same breed."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/PAW_Patrol"
+  },
+  {
+    "id": "race_2802",
+    "statement": {
+      "ru": "Актриса, сыгравшая Эми в «Теории большого взрыва», — доктор нейробиологии.",
+      "en": "The actress who plays Amy in The Big Bang Theory has a PhD in neuroscience."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Mayim_Bialik"
+  },
+  {
+    "id": "race_2803",
+    "statement": {
+      "ru": "Летние каникулы Финеса и Ферба длятся 104 дня.",
+      "en": "Phineas and Ferb's summer holidays last 104 days."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Phineas_and_Ferb"
+  },
+  {
+    "id": "race_2804",
+    "statement": {
+      "ru": "Лиза Симпсон старше своего брата Барта.",
+      "en": "Lisa Simpson is older than her brother Bart."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Lisa_Simpson"
+  },
+  {
+    "id": "race_2805",
+    "statement": {
+      "ru": "«Симпсоны» начинались как короткие сценки внутри чужого шоу.",
+      "en": "The Simpsons began as short sketches inside another TV show."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Simpsons_shorts"
+  },
+  {
+    "id": "race_2806",
+    "statement": {
+      "ru": "«Игру престолов» снимали в основном в Новой Зеландии.",
+      "en": "Game of Thrones was filmed mainly in New Zealand."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Game_of_Thrones"
+  },
+  {
+    "id": "race_2807",
+    "statement": {
+      "ru": "Актёры, сыгравшие Джона Сноу и Игритт в «Игре престолов», поженились.",
+      "en": "The actors who played Jon Snow and Ygritte in Game of Thrones got married."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Kit_Harington"
+  },
+  {
+    "id": "race_2808",
+    "statement": {
+      "ru": "Лысину героини Одиннадцать в «Очень странных делах» нарисовали на компьютере.",
+      "en": "Eleven's shaved head in Stranger Things was added by computer."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Eleven_(Stranger_Things)"
+  },
+  {
+    "id": "race_2809",
+    "statement": {
+      "ru": "Демогоргон из «Очень странных дел» назван в честь монстра из настольной игры.",
+      "en": "The Demogorgon in Stranger Things is named after a monster from a tabletop game."
+    },
+    "answer": true,
+    "source": "https://www.mentalfloss.com/article/87800/otherworldly-history-demogorgon"
+  },
+  {
+    "id": "race_2810",
+    "statement": {
+      "ru": "«Тома и Джерри» придумали на студии Уолта Диснея.",
+      "en": "Tom and Jerry was created at Walt Disney's studio."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Tom_and_Jerry"
+  },
+  {
+    "id": "race_2811",
+    "statement": {
+      "ru": "В Австралии сняли с эфира серию «Свинки Пеппы», где пауки безобидны.",
+      "en": "Australia pulled a Peppa Pig episode that said spiders are harmless."
+    },
+    "answer": true,
+    "source": "https://www.mentalfloss.com/article/504219/peppa-pig-episode-kids-australia-cant-see"
+  },
+  {
+    "id": "race_2812",
+    "statement": {
+      "ru": "Шелдон из «Теории большого взрыва» обожает водить машину.",
+      "en": "Sheldon from The Big Bang Theory loves driving."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Euclid_Alternative"
+  },
+  {
+    "id": "race_2813",
+    "statement": {
+      "ru": "Сьюзан Бойл выиграла шоу «Британия ищет таланты».",
+      "en": "Susan Boyle won Britain's Got Talent."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Susan_Boyle"
+  },
+  {
+    "id": "race_2814",
+    "statement": {
+      "ru": "Роуэн Аткинсон, мистер Бин, по образованию инженер-электрик.",
+      "en": "Rowan Atkinson, Mr. Bean, trained as an electrical engineer."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Rowan_Atkinson"
+  },
+  {
+    "id": "race_2815",
+    "statement": {
+      "ru": "В «Офисе» Джим прячет степлер Дуайта в желе.",
+      "en": "In The Office, Jim hides Dwight's stapler in jelly."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Pilot_(The_Office)"
+  },
+  {
+    "id": "race_2816",
+    "statement": {
+      "ru": "Доктор Ватсон в «Шерлоке» BBC был ранен во Вьетнаме.",
+      "en": "Dr. Watson in the BBC's Sherlock was wounded in Vietnam."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/A_Study_in_Pink"
+  },
+  {
+    "id": "race_2817",
+    "statement": {
+      "ru": "«Флинстоуны» — первый мультсериал, который ставили в вечерний прайм-тайм.",
+      "en": "The Flintstones was the first cartoon series shown in evening prime time."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Flintstones"
+  },
+  {
+    "id": "race_2818",
+    "statement": {
+      "ru": "Солнце в «Телепузиках» — лицо настоящего младенца.",
+      "en": "The sun in Teletubbies is a real baby's face."
+    },
+    "answer": true,
+    "source": "https://www.huffingtonpost.co.uk/2015/05/18/identity-of-teletubbies-iconic-sun-baby-revealed-for-first-time_n_7318406.html"
+  },
+  {
+    "id": "race_2819",
+    "statement": {
+      "ru": "Мыльные оперы так назвали, потому что их спонсировали производители мыла.",
+      "en": "Soap operas got their name because soap makers sponsored them."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Soap_opera"
+  },
+  {
+    "id": "race_2820",
+    "statement": {
+      "ru": "Элмо из «Улицы Сезам» — синий.",
+      "en": "Elmo from Sesame Street is blue."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Elmo"
+  },
+  {
+    "id": "race_2821",
+    "statement": {
+      "ru": "Большую Птицу из «Улицы Сезам» один актёр играл почти 50 лет.",
+      "en": "One actor played Big Bird on Sesame Street for almost 50 years."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Caroll_Spinney"
+  },
+  {
+    "id": "race_2822",
+    "statement": {
+      "ru": "«Дикий ангел» с Натальей Орейро — мексиканский сериал.",
+      "en": "Wild Angel, starring Natalia Oreiro, is a Mexican series."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Mu%C3%B1eca_brava"
+  },
+  {
+    "id": "race_2823",
+    "statement": {
+      "ru": "Шоу «Голос» придумали в Нидерландах.",
+      "en": "The Voice was invented in the Netherlands."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_Voice_(franchise)"
+  },
+  {
+    "id": "race_2824",
+    "statement": {
+      "ru": "Фрай из «Футурамы» пролежал замороженным сто лет.",
+      "en": "Fry from Futurama was frozen for a hundred years."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Philip_J._Fry"
+  },
+  {
+    "id": "race_2825",
+    "statement": {
+      "ru": "Компьютер IBM обыграл лучших игроков телевикторины Jeopardy!",
+      "en": "An IBM computer beat the best players of the TV quiz Jeopardy!"
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/IBM_Watson"
+  },
+  {
+    "id": "race_2826",
+    "statement": {
+      "ru": "Малдер и Скалли из «Секретных материалов» — агенты ЦРУ.",
+      "en": "Mulder and Scully from The X-Files are CIA agents."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_X-Files"
+  },
+  {
+    "id": "race_2827",
+    "statement": {
+      "ru": "Мультсериал «Блуи» — про семью собак, которая живёт в Австралии.",
+      "en": "Bluey is a cartoon about a family of dogs who live in Australia."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bluey_(TV_series)"
+  },
+  {
+    "id": "race_2828",
+    "statement": {
+      "ru": "Шоу «Форт Боярд» снимают в павильоне на суше.",
+      "en": "Fort Boyard is filmed in a studio on dry land."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Fort_Boyard_(TV_series)"
+  },
+  {
+    "id": "race_2829",
+    "statement": {
+      "ru": "Злодеи в «Скуби-Ду» обычно оказываются настоящими привидениями.",
+      "en": "The villains in Scooby-Doo usually turn out to be real ghosts."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/Scooby-Doo"
+  },
+  {
+    "id": "race_2830",
+    "statement": {
+      "ru": "Уолтера Уайта из «Во все тяжкие» сыграл папа из «Малкольма в центре внимания».",
+      "en": "Walter White in Breaking Bad was played by the dad from Malcolm in the Middle."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Bryan_Cranston"
+  },
+  {
+    "id": "race_2831",
+    "statement": {
+      "ru": "Британский «Офис» — переделка американского сериала.",
+      "en": "The British Office is a remake of an American series."
+    },
+    "answer": false,
+    "source": "https://en.wikipedia.org/wiki/The_Office_(American_TV_series)"
+  },
+  {
+    "id": "race_2832",
+    "statement": {
+      "ru": "У Росса из «Друзей» жила обезьянка.",
+      "en": "Ross from Friends had a pet monkey."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/The_One_with_the_Monkey"
+  },
+  {
+    "id": "race_2833",
+    "statement": {
+      "ru": "Первая телереклама в США рекламировала часы.",
+      "en": "The first TV advert in the USA was for watches."
+    },
+    "answer": true,
+    "source": "https://en.wikipedia.org/wiki/Television_advertisement"
   }
 ]
