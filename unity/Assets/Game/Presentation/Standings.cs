@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using FamilyQuiz.Core.Rules;
 using FamilyQuiz.Core.State;
 
 namespace FamilyQuiz.Presentation
@@ -13,6 +14,18 @@ namespace FamilyQuiz.Presentation
         public static List<PlayerState> ByScore(GameState state)
         {
             return By(state, p => p.Score);
+        }
+
+        /// <summary>The leaders who wear the crown on Scores (D159): every player on shared rank 1, in join order.</summary>
+        public static List<PlayerState> Leaders(GameState state)
+        {
+            var leaders = new List<PlayerState>();
+            foreach (var p in state.Players)
+            {
+                if (Ranking.SharedRank(state, p) == 1) leaders.Add(p);
+            }
+
+            return leaders;
         }
 
         /// <summary>The order before the current question: each score minus the points this question gave.</summary>

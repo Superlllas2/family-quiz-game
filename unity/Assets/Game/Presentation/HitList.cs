@@ -9,7 +9,7 @@ namespace FamilyQuiz.Presentation
     /// The power up tags under the status corner (docs/03_rules.md, "Earning" and "Using"; decisions/0017, D145), in the
     /// power up's colour with a player's token:
     /// <list type="bullet">
-    /// <item>Reveal and Scores: who drew a power up and why ("Аня получает: Слизь", "За верный ответ"), while they
+    /// <item>Reveal, Scores and Attacks: who drew a power up and why ("Аня получает: Слизь", "За верный ответ"), while they
     /// still hold it, then every hit used in the pick window that lands at the next Answer.</item>
     /// <item>Answer: every hit that landed, "Аня → Слизь → Соня", one tag per hit.</item>
     /// </list>
@@ -45,7 +45,7 @@ namespace FamilyQuiz.Presentation
         public void Refresh(GameState state, GamePhase phase)
         {
             var entries = new List<Entry>();
-            if (phase == GamePhase.Reveal || phase == GamePhase.Scores)
+            if (phase == GamePhase.Reveal || phase == GamePhase.Scores || phase == GamePhase.Attacks)
             {
                 foreach (var d in _context.Draws)
                 {

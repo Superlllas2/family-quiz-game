@@ -49,14 +49,21 @@ namespace FamilyQuiz.Presentation
             UiBuilder.Fit(_fact, 20, large ? 40 : 32, large ? 4 : 3);
         }
 
+        /// <summary>The question's largest type in Answer (D150): as large as fits on the card.</summary>
+        public const float AnswerMaxFontSize = 96f;
+
+        /// <summary>The smallest it shrinks to for a long question.</summary>
+        public const float AnswerMinFontSize = 40f;
+
         /// <summary>
-        /// Answer of a multiple choice question (D141): the options are on the phones only, so the question is the one
-        /// thing to read on the TV and gets bigger type (up to 3 lines) on the larger card (TvLayout.AnswerCardLarge).
+        /// Answer of a multiple choice question (D150): the options are on the phones only and the TV shows no tiles,
+        /// so the question is the one thing to read and is set very large (up to 4 lines, shrinking to fit) on the card
+        /// that takes the tiles' room (TvLayout.AnswerCardLarge).
         /// </summary>
         public void SetAnswerLarge()
         {
             _large = false;
-            UiBuilder.Fit(_question, 34, 56, 3);
+            UiBuilder.Fit(_question, AnswerMinFontSize, AnswerMaxFontSize, 4);
             UiBuilder.Fit(_fact, 20, 32, 3);
         }
 

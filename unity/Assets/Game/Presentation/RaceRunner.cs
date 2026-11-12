@@ -1,10 +1,12 @@
+using TMPro;
 using UnityEngine;
 
 namespace FamilyQuiz.Presentation
 {
     /// <summary>
-    /// One player's chip on the race track, in its own lane, in the cell of its step. It can slide forward to a new step
-    /// on unscaled time after a short wait; hidden mid slide it jumps to the end. It never holds a phase.
+    /// One player's chip on the race track, in its own lane, in the cell of its step. It slides to a new step, forward
+    /// or back (D157: a wrong answer is a step back), on unscaled time after a short wait; hidden mid slide it jumps to
+    /// the end. A small mark on its corner says what the turn did on RaceReveal («Пас», −1). It never holds a phase.
     /// </summary>
     public sealed class RaceRunner : MonoBehaviour
     {
@@ -18,6 +20,8 @@ namespace FamilyQuiz.Presentation
         private float _to;
         private float _age;
         private bool _moving;
+        private TvPiece _mark;
+        private TextMeshProUGUI _markText;
 
         public string PlayerId { get; private set; }
 
@@ -35,7 +39,31 @@ namespace FamilyQuiz.Presentation
             runner.PlayerId = playerId;
             runner.Chip = CharacterChip.Create(rect, playerId, NameSize);
             UiBuilder.Anchor(runner.Chip.Rect, 0, 0, 1, 1);
+            runner._mark = TvPiece.Card("Mark", rect, TvColors.Cream, 10f, 4f).Tilt(6f);
+            var mark = runner._mark.Root;
+            mark.anchorMin = mark.anchorMax = new Vector2(1f, 1f);
+            mark.pivot = new Vector2(0.75f, 0.6f);
+            mark.anchoredPosition = Vector2.zero;
+            mark.sizeDelta = new Vector2(76f, 34f);
+            TvTween.On(mark).Tilt = 6f;
+            runner._markText = UiBuilder.Display("Text", runner._mark.Content, 22, TvColors.Ink, TextAlignmentOptions.Center);
+            UiBuilder.Fit(runner._markText, 12, 22, 1);
+            UiBuilder.Anchor(runner._markText.rectTransform, 0.06f, 0.06f, 0.94f, 0.94f);
+            mark.gameObject.SetActive(false);
             return runner;
+        }
+
+        /// <summary>A small tag on the chip's top right corner; null or empty hides it.</summary>
+        public void SetMark(string text, Color fill, bool animate)
+        {
+            bool show = !string.IsNullOrEmpty(text);
+            bool was = _mark.Root.gameObject.activeSelf;
+            _mark.Root.gameObject.SetActive(show);
+            if (!show) return;
+            _markText.text = text;
+            _markText.color = TvColors.TextOn(fill);
+            _mark.SetFill(fill);
+            if (animate && !was) TvTween.On(_mark.Root).Slam(TvMotion.RaceMoveDelaySeconds, 0.35f);
         }
 
         /// <summary>The lane: top edge and height in pixels from the top of the lanes.</summary>

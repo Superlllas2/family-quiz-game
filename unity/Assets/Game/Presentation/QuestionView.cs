@@ -13,23 +13,28 @@ namespace FamilyQuiz.Presentation
     /// <list type="bullet">
     /// <item>QuestionShow: the question card, large, on the board of the Stage shot, with the read time burning down its
     /// fuse; a closest value question shows its ruler under it.</item>
-    /// <item>Answer: the card under the guests of the Wide shot. Multiple choice (D141): the options are on the phones
-    /// only, so the card is larger and the four tiles under it are empty, A to D in the phone's layout and colours. A
+    /// <item>Answer: the card under the guests of the Wide shot. Multiple choice (D150): the options are on the phones
+    /// only and the TV shows no tiles at all, so the card takes their room and the question is set very large. A
     /// closest value question keeps the small card and its ruler. The clock token and the players' tokens in the
-    /// status corner; a token gets its check when its player locks in. Never what anyone chose.</item>
+    /// status corner; a token gets its check when its player locks in, and wears the icons of the power ups that hit
+    /// its player (D149). Never what anyone chose.</item>
     /// <item>Reveal: the card goes back to its small size and the tiles get their texts; the stamp slams onto the right
     /// tile, which grows and gets a cream halo, the others sink (D142); each player sits on the tile they picked as a
     /// pill with their token, name and points, and their points also show as a sticker under their status token; then
     /// the card flips over to "Why?" and the fact. A closest value Reveal shows the ruler with every guess on a pin, the
     /// flag and the crown instead.</item>
     /// </list>
-    /// Power up tags show under the status corner. Reads GameState; changes nothing.
+    /// Power up tags show under the status corner, and on Reveal an arrow from attacker to target for every power up
+    /// used (D149). Reads GameState; changes nothing.
     /// </summary>
     public sealed class QuestionView : MonoBehaviour
     {
         private const int OptionCount = 4;
         private const float TileGapX = 26f;
         private const float TileGapY = 30f;
+
+        /// <summary>The arrows between the status tokens arc less than over the score row: there is less room.</summary>
+        private const float RevealArrowScale = 0.55f;
 
         /// <summary>When the card flips to the fact on Reveal, after the stamp landed.</summary>
         private const float FlipDelaySeconds = 0.9f;
@@ -41,6 +46,7 @@ namespace FamilyQuiz.Presentation
         private ValueLine _valueLine;
         private StatusStrip _status;
         private HitList _hits;
+        private AttackLayer _arrows;
         private RectTransform _stamp;
         private TextMeshProUGUI _stampText;
         private GamePhase _mode;
@@ -69,8 +75,8 @@ namespace FamilyQuiz.Presentation
             bool closest = question != null && question.IsClosestValue;
             bool fresh = !(reveal && previous == GamePhase.Answer);
 
-            // The card: large on the board, larger under the guests while the options are on the phones only (D141),
-            // small on Reveal; its front each time the question is set up.
+            // The card: large on the board, very large under the guests while the options are on the phones only and the
+            // TV shows no tiles (D150), small on Reveal; its front each time the question is set up.
             bool bigAnswer = answer && question != null && !closest;
             TvLayout.Put(_card.Rect, show ? TvLayout.ShowCard : bigAnswer ? TvLayout.AnswerCardLarge : TvLayout.AnswerCard);
             if (bigAnswer) _card.SetAnswerLarge();
@@ -79,18 +85,16 @@ namespace FamilyQuiz.Presentation
             if (fresh) ShowFront(question);
             if (show || answer) _card.PopIn(show ? 0.2f : 0f);
 
-            _tilesRoot.gameObject.SetActive(!show && !closest);
-            TvLayout.Put(_tilesRoot, answer ? TvLayout.TilesEmpty : TvLayout.Tiles);
+            // No tiles in Answer (D150); on Reveal the options appear on them (D142).
+            _tilesRoot.gameObject.SetActive(reveal && !closest);
             _stamp.gameObject.SetActive(false);
-            if (answer || reveal)
+            if (reveal)
             {
-                // Answer: empty tiles; Reveal: the texts appear on the tiles (D141).
                 for (int i = 0; i < OptionCount; i++)
                 {
                     bool has = question != null && question.Def.Options != null && i < question.Def.Options.Count;
                     _tiles[i].gameObject.SetActive(has);
-                    _tiles[i].ResetLook(has && reveal ? question.OptionText(i, _context.Lang) : string.Empty, true,
-                        (answer ? 0.15f : 0f) + 0.06f * i);
+                    _tiles[i].ResetLook(has ? question.OptionText(i, _context.Lang) : string.Empty, true, 0.06f * i);
                 }
             }
 
@@ -146,8 +150,32 @@ namespace FamilyQuiz.Presentation
         /// </summary>
         public void RefreshHits()
         {
+            var state = _context.Game.State;
             if (_mode == GamePhase.QuestionShow) _hits.Clear();
-            else _hits.Refresh(_context.Game.State, _mode);
+            else _hits.Refresh(state, _mode);
+
+            // D149: the arrows of this pick window on Reveal, between the status tokens; in Answer each hit player's
+            // token wears the icons of the power ups that landed on them, until Reveal.
+            if (_mode == GamePhase.Reveal) _arrows.Show(_context.Arrows(), TokenAnchor, Vector2.down, RevealArrowScale);
+            else _arrows.Clear();
+            for (int i = 0; i < state.Players.Count && i < _status.Tokens.Count; i++)
+            {
+                List<string> effects = null;
+                if (_mode == GamePhase.Answer)
+                {
+                    effects = new List<string>();
+                    foreach (var hit in PowerUpHit.All(state.Players[i], GamePhase.Answer)) effects.Add(hit.PowerUp);
+                }
+
+                _status.Tokens[i].SetEffects(effects);
+            }
+        }
+
+        private (RectTransform Rect, Vector2 Local)? TokenAnchor(string playerId)
+        {
+            var token = _status.Find(playerId);
+            if (token == null) return null;
+            return (token.Rect, token.ArrowPointBelow);
         }
 
         public void OnAnswerLocked(string playerId)
@@ -196,7 +224,7 @@ namespace FamilyQuiz.Presentation
             }
 
             var state = _context.Game.State;
-            string multiplier = question.Multiplier > 1.0001
+            string multiplier = MultiplierSticker.Shows(question.Multiplier)
                 ? _context.Format("tv.question.multiplier", "multiplier", NumberText.Format(question.Multiplier))
                 : null;
             _card.ShowFront(question.Def.Text.Get(_context.Lang), TopicTitle(question.Def.Topic),
@@ -357,6 +385,7 @@ namespace FamilyQuiz.Presentation
 
             _status = StatusStrip.Create(root, _context);
             _hits = HitList.Create(root, _context);
+            _arrows = AttackLayer.Create(root);
         }
     }
 }

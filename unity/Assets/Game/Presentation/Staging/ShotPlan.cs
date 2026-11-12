@@ -74,6 +74,7 @@ namespace FamilyQuiz.Presentation.Staging
                 case GamePhase.FinalIntro:
                     return LineShowing(nowMs) ? ShotChoice.Solo(_lineHost) : ShotChoice.Of(Shot.Wide);
                 case GamePhase.TopicVote:
+                case GamePhase.TopicTie: // the vote view stays up for the spin (D153)
                     return ShotChoice.Of(Shot.Curtain);
                 case GamePhase.QuestionShow:
                     return ShotChoice.Of(Shot.Stage);

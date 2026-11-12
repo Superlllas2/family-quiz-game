@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using FamilyQuiz.Core;
 using FamilyQuiz.Core.Events;
 using FamilyQuiz.Core.Content;
+using FamilyQuiz.Presentation.Staging;
 using UnityEngine;
 
 namespace FamilyQuiz.Presentation
@@ -21,6 +22,33 @@ namespace FamilyQuiz.Presentation
 
         /// <summary>The power ups drawn at this question's Reveal (PowerUpDrawn), for the TV's "why" tags (D145). The presenter fills and clears it.</summary>
         public List<PowerUpDrawn> Draws { get; } = new List<PowerUpDrawn>();
+
+        /// <summary>
+        /// The power ups used in this pick window (PowerUpUsed), in order, for the attack arrows (D149). The presenter
+        /// fills it and clears it when the next Answer starts.
+        /// </summary>
+        public List<PowerUpUsed> Attacks { get; } = new List<PowerUpUsed>();
+
+        /// <summary>
+        /// Which seat each player sits in, the same fill order as the 3D studio's (docs/21_staging.md, "Seats"), so the
+        /// Scores row stands in sofa order (D159) with the studio on or off. The presenter syncs it with the roster.
+        /// </summary>
+        public SeatMap Seats { get; } = new SeatMap(SofaOrder.SeatsLeftToRight.Length);
+
+        /// <summary>The attack arrows of this pick window.</summary>
+        public List<AttackArrow> Arrows()
+        {
+            return AttackArrows.Build(Attacks, Game?.State);
+        }
+
+        /// <summary>Seats new players and frees the seats of players who left.</summary>
+        public void SyncSeats()
+        {
+            if (Game == null) return;
+            var ids = new List<string>();
+            foreach (var p in Game.State.Players) ids.Add(p.PlayerId);
+            Seats.Sync(ids);
+        }
 
         public string Lang => Game != null ? Game.State.GameLanguage : _lang;
 

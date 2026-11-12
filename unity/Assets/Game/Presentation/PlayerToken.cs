@@ -16,6 +16,7 @@ namespace FamilyQuiz.Presentation
         private TvPiece _sticker;
         private TextMeshProUGUI _stickerText;
         private CanvasGroup _group;
+        private EffectBadges _effects;
         private bool _locked;
 
         public string PlayerId { get; private set; }
@@ -24,6 +25,9 @@ namespace FamilyQuiz.Presentation
 
         /// <summary>The sticker's height under the token, in canvas units: room to leave below a row of tokens.</summary>
         public const float StickerHeight = 40f;
+
+        /// <summary>The size of the effect icons under the token in Answer (D149).</summary>
+        public const float EffectSize = 34f;
 
         public static PlayerToken Create(Transform parent, string playerId)
         {
@@ -65,6 +69,29 @@ namespace FamilyQuiz.Presentation
             _stickerText.color = TvColors.TextOn(fill);
             _sticker.SetFill(fill);
             if (animate) TvTween.On(_sticker.Root).Pop(delay);
+        }
+
+        /// <summary>The power ups that hit this player (D149), as icons under the token; null or empty hides them.</summary>
+        public void SetEffects(System.Collections.Generic.IReadOnlyList<string> powerUps)
+        {
+            if (_effects == null)
+            {
+                if (powerUps == null || powerUps.Count == 0) return;
+                _effects = EffectBadges.Create(transform, EffectSize, 0.5f, 0f);
+                _effects.Root.anchoredPosition = new Vector2(0f, -EffectSize / 2f + 4f);
+            }
+
+            _effects.Set(powerUps);
+        }
+
+        /// <summary>Where an attack arrow starts or lands under the token and its sticker, in the token's local space.</summary>
+        public Vector2 ArrowPointBelow
+        {
+            get
+            {
+                var r = Rect.rect;
+                return new Vector2(r.center.x, r.yMin - StickerHeight + 4f);
+            }
         }
 
         public void Bounce()

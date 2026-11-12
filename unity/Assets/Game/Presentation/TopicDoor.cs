@@ -7,7 +7,8 @@ namespace FamilyQuiz.Presentation
     /// <summary>
     /// One topic card of the TopicVote (decisions/0017_game_night_ui.md): a board game category card in cream with a
     /// coloured header, its number on a coin, the topic title, and the tokens of the players who voted for it along its
-    /// bottom.
+    /// bottom. In TopicTie (D153) the spin lights it up with a mustard halo, dims it when it is out of the tie, and the
+    /// winner stands out bigger.
     /// </summary>
     public sealed class TopicDoor : MonoBehaviour
     {
@@ -22,6 +23,9 @@ namespace FamilyQuiz.Presentation
         private TextMeshProUGUI _title;
         private TextMeshProUGUI _count;
         private RectTransform _votes;
+        private TvPiece _halo;
+        private CanvasGroup _group;
+        private bool _winner;
 
         public RectTransform Rect => (RectTransform)transform;
 
@@ -31,6 +35,28 @@ namespace FamilyQuiz.Presentation
             var door = rect.gameObject.AddComponent<TopicDoor>();
             door.Build(index);
             return door;
+        }
+
+        /// <summary>
+        /// The spin's look (D153): lit with the halo, dimmed (out of the tie, or the loser at the end) or plain; the
+        /// winner gets the halo, grows and slams down once.
+        /// </summary>
+        public void SetSpin(bool lit, bool dim, bool winner)
+        {
+            _halo.Root.gameObject.SetActive(lit || winner);
+            _group.alpha = dim ? TvMotion.TieDimAlpha : 1f;
+            float scale = winner ? TvMotion.TieWinnerScale : lit ? TvMotion.TieLitScale : 1f;
+            if (winner && !_winner) TvTween.On(Rect).Slam(0f, 0.4f);
+            _winner = winner;
+            _card.Root.localScale = new Vector3(scale, scale, 1f);
+            _halo.Root.localScale = new Vector3(scale, scale, 1f);
+        }
+
+        /// <summary>Back to the plain look of the vote.</summary>
+        public void ClearSpin()
+        {
+            _winner = false;
+            SetSpin(false, false, false);
         }
 
         public void Set(string title, Color header, string count)
@@ -85,6 +111,17 @@ namespace FamilyQuiz.Presentation
 
         private void Build(int index)
         {
+            _group = gameObject.AddComponent<CanvasGroup>();
+            _group.blocksRaycasts = false;
+            _group.interactable = false;
+
+            // The spin's halo behind the card (D153).
+            _halo = TvPiece.Card("Halo", transform, TvColors.Mustard, 30f, 0f);
+            UiBuilder.Anchor(_halo.Root, 0, 0, 1, 1);
+            _halo.Root.offsetMin = new Vector2(-16f, -20f);
+            _halo.Root.offsetMax = new Vector2(16f, 16f);
+            _halo.Root.gameObject.SetActive(false);
+
             _card = TvPiece.Card("Card", transform, TvColors.Cream, 22f, 10f);
             UiBuilder.Anchor(_card.Root, 0, 0, 1, 1);
 

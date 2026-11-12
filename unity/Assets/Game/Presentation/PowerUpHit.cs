@@ -5,7 +5,7 @@ namespace FamilyQuiz.Presentation
 {
     /// <summary>
     /// One power up hit the TV shows (docs/03_rules.md, "Using"; D145: "Аня → Слизь → Соня"): in Answer every effect
-    /// that landed on the player, in Reveal and Scores every one used on them that lands at the next Answer, in the
+    /// that landed on the player, in Reveal, Scores and Attacks (D149) every one used on them that lands at the next Answer, in the
     /// order they were used. Plain C#, so it is tested without the engine.
     /// </summary>
     public sealed class PowerUpHit
@@ -36,6 +36,7 @@ namespace FamilyQuiz.Presentation
                     break;
                 case GamePhase.Reveal:
                 case GamePhase.Scores:
+                case GamePhase.Attacks:
                     foreach (var e in player.PendingEffects)
                         hits.Add(new PowerUpHit(e.PowerUp, e.AttackerName ?? string.Empty, target));
                     break;

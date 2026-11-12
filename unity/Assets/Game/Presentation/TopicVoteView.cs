@@ -9,6 +9,8 @@ namespace FamilyQuiz.Presentation
     /// TopicVote (docs/02_show_flow.md, decisions/0017_game_night_ui.md): the round's banner with its multiplier sticker,
     /// the topic cards two by two like the phone's buttons (D128: 1 2 on top, 3 4 below; the last one is the mixed door) with the voters'
     /// tokens on them, and the status corner: the vote clock and each player's token with its check once they voted.
+    /// TopicTie (D153, only on a tie or when nobody voted) keeps the view up without the clock: a highlight spins
+    /// between the tied doors, slowing down, and stops on the chosen door, which then stands out.
     /// Reads GameState.Round; changes nothing.
     /// </summary>
     public sealed class TopicVoteView : MonoBehaviour
@@ -26,6 +28,7 @@ namespace FamilyQuiz.Presentation
         private TextMeshProUGUI _stickerText;
         private RectTransform _doorsRoot;
         private StatusStrip _status;
+        private bool _tie;
 
         public static TopicVoteView Create(Transform parent, TvContext context)
         {
@@ -38,6 +41,7 @@ namespace FamilyQuiz.Presentation
 
         public void Enter()
         {
+            _tie = false;
             foreach (var door in _doors) Destroy(door.gameObject);
             _doors.Clear();
             _status.Sync(_context.Game.State);
@@ -46,6 +50,14 @@ namespace FamilyQuiz.Presentation
             TvTween.On(_banner.Root).Rise(0f);
             if (_sticker.Root.gameObject.activeSelf) TvTween.On(_sticker.Root).Slam(0.5f);
             for (int i = 0; i < _doors.Count; i++) TvTween.On(_doors[i].Rect).Pop(0.15f + 0.1f * i, 0.5f);
+            Tick();
+        }
+
+        /// <summary>Called on PhaseStarted(TopicTie): the vote view stays and the spin starts (D153).</summary>
+        public void EnterTie()
+        {
+            _tie = true;
+            Refresh();
             Tick();
         }
 
@@ -65,7 +77,7 @@ namespace FamilyQuiz.Presentation
 
             _title.text = _context.Format("tv.topicVote.title", "round", (round.Index + 1).ToString());
             _hint.text = _context.T("tv.topicVote.hint");
-            bool multiplied = round.Multiplier > 1.0001;
+            bool multiplied = MultiplierSticker.Shows(round.Multiplier); // never while every multiplier is 1 (D151)
             _sticker.Root.gameObject.SetActive(multiplied);
             _stickerText.text = multiplied
                 ? _context.Format("tv.question.multiplier", "multiplier", NumberText.Format(round.Multiplier))
@@ -116,6 +128,13 @@ namespace FamilyQuiz.Presentation
         {
             var game = _context.Game;
             var state = game.State;
+            if (_tie)
+            {
+                _status.SetClockVisible(false);
+                Spin(state, game.NowMs);
+                return;
+            }
+
             if (!state.PhaseEndsAtMs.HasValue)
             {
                 _status.SetClockVisible(false);
@@ -127,6 +146,25 @@ namespace FamilyQuiz.Presentation
             long span = end - state.PhaseStartedAtMs;
             long left = System.Math.Max(0, end - game.NowMs);
             _status.SetClock(span > 0 ? (float)left / span : 0f, (left + 999) / 1000, left <= 3000);
+        }
+
+        /// <summary>The TopicTie spin from the core clock: the lit door, then the chosen one standing out (D153).</summary>
+        private void Spin(FamilyQuiz.Core.State.GameState state, long now)
+        {
+            var round = state.Round;
+            if (round == null || !round.ChosenDoor.HasValue) return;
+            long span = state.PhaseEndsAtMs.HasValue ? state.PhaseEndsAtMs.Value - state.PhaseStartedAtMs : 0;
+            float fraction = span > 0 ? Mathf.Clamp01((float)(now - state.PhaseStartedAtMs) / span) : 1f;
+            int chosen = round.ChosenDoor.Value;
+            int lit = TopicTieSpin.DoorAt(round.TiedDoors, chosen, fraction);
+            bool stopped = TopicTieSpin.HopAt(fraction) >= TopicTieSpin.Hops;
+            for (int d = 0; d < _doors.Count; d++)
+            {
+                bool tied = false;
+                foreach (var t in round.TiedDoors) tied |= t == d;
+                bool winner = stopped && d == chosen;
+                _doors[d].SetSpin(!stopped && d == lit, !tied || (stopped && d != chosen), winner);
+            }
         }
 
         /// <summary>
